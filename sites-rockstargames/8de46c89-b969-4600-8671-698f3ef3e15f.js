@@ -20,12 +20,12 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         useHardwareConcurrency: () => g,
         useMemoryStatus: () => b,
-        useNetworkStatus: () => l,
-        useSaveData: () => f
+        useNetworkStatus: () => f,
+        useSaveData: () => l
       });
-      var r = n(62229);
+      var a = n(62229);
 
-      function a(e, t, n) {
+      function r(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -37,10 +37,10 @@ _global.SENTRY_RELEASE = {
       function o(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          t && (r = r.filter((function(t) {
+          var a = Object.getOwnPropertySymbols(e);
+          t && (a = a.filter((function(t) {
             return Object.getOwnPropertyDescriptor(e, t).enumerable
-          }))), n.push.apply(n, r)
+          }))), n.push.apply(n, a)
         }
         return n
       }
@@ -49,35 +49,35 @@ _global.SENTRY_RELEASE = {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {};
           t % 2 ? o(n, !0).forEach((function(t) {
-            a(e, t, n[t])
+            r(e, t, n[t])
           })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : o(n).forEach((function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
           }))
         }
         return e
       }
-      var d, u, s, c, l = function(e) {
+      var u, c, d, s, f = function(e) {
           var t, n = {
-              unsupported: d = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
-              effectiveConnectionType: d ? e : navigator.connection.effectiveType
+              unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
+              effectiveConnectionType: u ? e : navigator.connection.effectiveType
             },
-            a = function(e) {
+            r = function(e) {
               if (Array.isArray(e)) return e
-            }(t = (0, r.useState)(n)) || function(e) {
+            }(t = (0, a.useState)(n)) || function(e) {
               if (Symbol.iterator in Object(e) || "[object Arguments]" === Object.prototype.toString.call(e)) {
                 var t = [],
                   n = !0,
-                  r = !1,
-                  a = void 0;
+                  a = !1,
+                  r = void 0;
                 try {
                   for (var o, i = e[Symbol.iterator](); !(n = (o = i.next()).done) && (t.push(o.value), 2 !== t.length); n = !0);
                 } catch (e) {
-                  r = !0, a = e
+                  a = !0, r = e
                 } finally {
                   try {
                     n || null == i.return || i.return()
                   } finally {
-                    if (r) throw a
+                    if (a) throw r
                   }
                 }
                 return t
@@ -85,13 +85,13 @@ _global.SENTRY_RELEASE = {
             }(t) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
-            o = a[0],
-            u = a[1];
-          return (0, r.useEffect)((function() {
-            if (!d) {
+            o = r[0],
+            c = r[1];
+          return (0, a.useEffect)((function() {
+            if (!u) {
               var e = navigator.connection,
                 t = function() {
-                  u({
+                  c({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -101,22 +101,22 @@ _global.SENTRY_RELEASE = {
                 }
             }
           }), []), i({}, o, {
-            setNetworkStatus: u
+            setNetworkStatus: c
           })
         },
-        f = function() {
+        l = function() {
           return {
-            unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: u ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: c ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (s = !("undefined" != typeof navigator && "deviceMemory" in navigator)) c = {
-        unsupported: s
+      if (d = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
+        unsupported: d
       };
       else {
         var y = "memory" in performance ? performance.memory : null;
-        c = {
-          unsupported: s,
+        s = {
+          unsupported: d,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: y ? y.totalJSHeapSize : null,
           usedJSHeapSize: y ? y.usedJSHeapSize : null,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       var p, b = function(e) {
-        return s && e ? i({}, c, {}, e) : i({}, c)
+        return d && e ? i({}, s, {}, e) : i({}, s)
       };
       p = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,

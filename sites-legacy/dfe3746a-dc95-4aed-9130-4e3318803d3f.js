@@ -37,16 +37,16 @@ _global.SENTRY_RELEASE = {
           t: a
         } = e;
         const [, n] = (0, r.h)(), [k, v] = (0, i.useSearchParams)(), {
-          pathname: y
+          pathname: b
         } = (0, i.useLocation)(), {
-          data: b,
+          data: y,
           loading: g
         } = (0, s.useQuery)(u.MetaUrlInfo, {
           variables: {
-            url: y.replace(/\/$/, "")
+            url: b.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), p = (0, s.useLocale)(), h = b?.metaUrlInfo?.tina;
+        }), p = (0, s.useLocale)(), h = y?.metaUrlInfo?.tina;
         return (0, t.useEffect)((() => {
           const e = k.get("video");
           if (!e || !h) return void n(null);

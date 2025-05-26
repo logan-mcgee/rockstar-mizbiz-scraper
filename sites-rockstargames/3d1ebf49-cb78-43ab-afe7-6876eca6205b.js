@@ -28,16 +28,16 @@ _global.SENTRY_RELEASE = {
         i = t(82943),
         r = t.n(i),
         c = t(39034),
-        b = t(17268),
-        u = t(85164);
-      var g = t(52542),
-        f = t(25854);
+        u = t(17268),
+        b = t(85164);
+      var f = t(52542),
+        g = t(25854);
       const m = (0, d.withIntl)((() => {
         const e = (0, d.useIntl)(),
           a = (0, n.useLocale)(),
           [t, i] = ((0, n.useQueryParams)(), (0, s.useState)({})),
           {
-            data: g,
+            data: f,
             loading: m
           } = (0, n.useQuery)(r(), {
             variables: t,
@@ -54,40 +54,40 @@ _global.SENTRY_RELEASE = {
         }), [a]);
         const {
           content: y
-        } = g?.companyInfo ?? "", _ = g?.meta ?? "";
-        return (0, f.jsx)(f.Fragment, {
-          children: !m && g ? (0, f.jsxs)("div", {
-            className: u.A.safetyPageContainerStyles,
+        } = f?.companyInfo ?? "", _ = f?.meta ?? "";
+        return (0, g.jsx)(g.Fragment, {
+          children: !m && f ? (0, g.jsxs)("div", {
+            className: b.A.safetyPageContainerStyles,
             "data-context": "safetyPage",
-            children: [(0, f.jsxs)("div", {
-              className: u.A.mainContent,
-              children: [(0, f.jsx)(c.A, {
+            children: [(0, g.jsxs)("div", {
+              className: b.A.mainContent,
+              children: [(0, g.jsx)(c.A, {
                 heading: _?.title,
                 description: _?.description
-              }), (0, f.jsx)("div", {
+              }), (0, g.jsx)("div", {
                 className: "rockstargames-sites-rockstargamesa2528e5e73ca386e983044e5a393ede0",
                 style: {
                   "--community-guidelines-img-desktop": "url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/72b457b42c3becc6e865b1087b44be46.svg)",
                   "--community-guidelines-img-mobile": "url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0bd156f6c18d0106ca44d072d26154ba.svg)"
                 },
                 "aria-label": e.formatMessage(l.A.community_guidelines_image_alt_text)
-              }), (0, f.jsx)("div", {
-                className: u.A.bodyContent,
-                children: (0, f.jsx)("span", {
+              }), (0, g.jsx)("div", {
+                className: b.A.bodyContent,
+                children: (0, g.jsx)("span", {
                   dangerouslySetInnerHTML: {
                     __html: y
                   }
                 })
               })]
-            }), (0, f.jsx)(b.A, {
+            }), (0, g.jsx)(u.A, {
               page: "community-guidelines"
             })]
-          }) : (0, f.jsx)("div", {
-            className: u.A.loading,
-            children: (0, f.jsx)(o.A, {})
+          }) : (0, g.jsx)("div", {
+            className: b.A.loading,
+            children: (0, g.jsx)(o.A, {})
           })
         })
-      }), g)
+      }), f)
     }
   }
 ]);

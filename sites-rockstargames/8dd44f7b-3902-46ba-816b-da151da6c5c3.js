@@ -32,7 +32,7 @@ _global.SENTRY_RELEASE = {
         MotionContext: () => r,
         MotionValue: () => Je,
         PresenceContext: () => a,
-        Reorder: () => ha,
+        Reorder: () => da,
         SwitchLayoutGroupContext: () => V,
         VisualElement: () => Sr,
         addPointerEvent: () => oe,
@@ -71,8 +71,8 @@ _global.SENTRY_RELEASE = {
         startOptimizedAppearAnimation: () => Vl,
         transform: () => sa,
         unwrapMotionComponent: () => bl,
-        useAnimation: () => hl,
-        useAnimationControls: () => dl,
+        useAnimation: () => dl,
+        useAnimationControls: () => hl,
         useAnimationFrame: () => ol,
         useCycle: () => fl,
         useDeprecatedAnimatedState: () => kl,
@@ -97,7 +97,7 @@ _global.SENTRY_RELEASE = {
         useSpring: () => ga,
         useTime: () => il,
         useTransform: () => la,
-        useUnmountEffect: () => he,
+        useUnmountEffect: () => de,
         useVelocity: () => va,
         useViewportScroll: () => nl,
         useVisualElementContext: () => s,
@@ -123,11 +123,11 @@ _global.SENTRY_RELEASE = {
           strict: !1
         });
 
-      function d(t) {
+      function h(t) {
         return "object" == typeof t && Object.prototype.hasOwnProperty.call(t, "current")
       }
 
-      function h(t) {
+      function d(t) {
         return "string" == typeof t || Array.isArray(t)
       }
 
@@ -137,7 +137,7 @@ _global.SENTRY_RELEASE = {
       const f = ["initial", "animate", "exit", "whileHover", "whileDrag", "whileTap", "whileFocus", "whileInView"];
 
       function m(t) {
-        return p(t.animate) || f.some((e => h(t[e])))
+        return p(t.animate) || f.some((e => d(t[e])))
       }
 
       function g(t) {
@@ -222,8 +222,8 @@ _global.SENTRY_RELEASE = {
                     animate: n
                   } = t;
                   return {
-                    initial: !1 === e || h(e) ? e : void 0,
-                    animate: h(n) ? n : void 0
+                    initial: !1 === e || d(e) ? e : void 0,
+                    animate: d(n) ? n : void 0
                   }
                 }
                 return !1 !== t.inherit ? e : {}
@@ -240,16 +240,16 @@ _global.SENTRY_RELEASE = {
           if (!A && l) {
             k.visualElement = function(t, e, n, r) {
               const l = s(),
-                d = (0, o.useContext)(c),
-                h = (0, o.useContext)(a),
+                h = (0, o.useContext)(c),
+                d = (0, o.useContext)(a),
                 p = (0, o.useContext)(i).reducedMotion,
                 f = (0, o.useRef)();
-              r = r || d.renderer, !f.current && r && (f.current = r(t, {
+              r = r || h.renderer, !f.current && r && (f.current = r(t, {
                 visualState: e,
                 parent: l,
                 props: n,
-                presenceId: h ? h.id : void 0,
-                blockInitialAnimation: !!h && !1 === h.initial,
+                presenceId: d ? d.id : void 0,
+                blockInitialAnimation: !!d && !1 === d.initial,
                 reducedMotionConfig: p
               }));
               const m = f.current;
@@ -270,7 +270,7 @@ _global.SENTRY_RELEASE = {
             value: k
           }, p(g, y, L, function(t, e, n) {
             return (0, o.useCallback)((o => {
-              o && t.mount && t.mount(o), e && (o ? e.mount(o) : e.unmount()), n && ("function" == typeof n ? n(o) : d(n) && (n.current = o))
+              o && t.mount && t.mount(o), e && (o ? e.mount(o) : e.unmount()), n && ("function" == typeof n ? n(o) : h(n) && (n.current = o))
             }), [e])
           }(R, k.visualElement, w), R, A, k.visualElement)))
         }));
@@ -452,7 +452,7 @@ _global.SENTRY_RELEASE = {
         a.length = 0;
         let u = !1,
           c = !1,
-          d = !0;
+          h = !0;
         for (const t in e) {
           const n = e[t];
           if (z(t)) {
@@ -460,13 +460,13 @@ _global.SENTRY_RELEASE = {
             continue
           }
           const o = at[t],
-            h = W(n, o);
+            d = W(n, o);
           if (F.has(t)) {
-            if (u = !0, s[t] = h, a.push(t), !d) continue;
-            n !== (o.default || 0) && (d = !1)
-          } else t.startsWith("origin") ? (c = !0, l[t] = h) : i[t] = h
+            if (u = !0, s[t] = d, a.push(t), !h) continue;
+            n !== (o.default || 0) && (h = !1)
+          } else t.startsWith("origin") ? (c = !0, l[t] = d) : i[t] = d
         }
-        if (e.transform || (u || o ? i.transform = $(t, n, d, o) : i.transform && (i.transform = "none")), c) {
+        if (e.transform || (u || o ? i.transform = $(t, n, h, o) : i.transform && (i.transform = "none")), c) {
           const {
             originX: t = "50%",
             originY: e = "50%",
@@ -487,7 +487,7 @@ _global.SENTRY_RELEASE = {
         for (const o in e) j(e[o]) || O(o, n) || (t[o] = e[o])
       }
 
-      function dt(t, e, n) {
+      function ht(t, e, n) {
         const i = {},
           r = function(t, e, n) {
             const i = {};
@@ -504,10 +504,10 @@ _global.SENTRY_RELEASE = {
           }(t, e, n);
         return t.drag && !1 !== t.dragListener && (i.draggable = !1, r.userSelect = r.WebkitUserSelect = r.WebkitTouchCallout = "none", r.touchAction = !0 === t.drag ? "none" : "pan-" + ("x" === t.drag ? "y" : "x")), i.style = r, i
       }
-      const ht = new Set(["initial", "style", "values", "variants", "transition", "transformTemplate", "transformValues", "custom", "inherit", "layout", "layoutId", "layoutDependency", "onLayoutAnimationStart", "onLayoutAnimationComplete", "onLayoutMeasure", "onBeforeLayoutMeasure", "onAnimationStart", "onAnimationComplete", "onUpdate", "onDragStart", "onDrag", "onDragEnd", "onMeasureDragConstraints", "onDirectionLock", "onDragTransitionEnd", "drag", "dragControls", "dragListener", "dragConstraints", "dragDirectionLock", "dragSnapToOrigin", "_dragX", "_dragY", "dragElastic", "dragMomentum", "dragPropagation", "dragTransition", "onHoverStart", "onHoverEnd", "layoutScroll", "whileInView", "onViewportEnter", "onViewportLeave", "viewport", "whileTap", "onTap", "onTapStart", "onTapCancel", "animate", "exit", "variants", "whileHover", "whileTap", "whileFocus", "whileDrag", "whileInView", "onPan", "onPanStart", "onPanSessionStart", "onPanEnd"]);
+      const dt = new Set(["initial", "style", "values", "variants", "transition", "transformTemplate", "transformValues", "custom", "inherit", "layout", "layoutId", "layoutDependency", "onLayoutAnimationStart", "onLayoutAnimationComplete", "onLayoutMeasure", "onBeforeLayoutMeasure", "onAnimationStart", "onAnimationComplete", "onUpdate", "onDragStart", "onDrag", "onDragEnd", "onMeasureDragConstraints", "onDirectionLock", "onDragTransitionEnd", "drag", "dragControls", "dragListener", "dragConstraints", "dragDirectionLock", "dragSnapToOrigin", "_dragX", "_dragY", "dragElastic", "dragMomentum", "dragPropagation", "dragTransition", "onHoverStart", "onHoverEnd", "layoutScroll", "whileInView", "onViewportEnter", "onViewportLeave", "viewport", "whileTap", "onTap", "onTapStart", "onTapCancel", "animate", "exit", "variants", "whileHover", "whileTap", "whileFocus", "whileDrag", "whileInView", "onPan", "onPanStart", "onPanSessionStart", "onPanEnd"]);
 
       function pt(t) {
-        return ht.has(t)
+        return dt.has(t)
       }
       let ft = t => !pt(t);
 
@@ -545,24 +545,24 @@ _global.SENTRY_RELEASE = {
         pathSpacing: s = 1,
         pathOffset: a = 0,
         ...l
-      }, u, c, d) {
-        if (lt(t, l, u, d), c) return void(t.style.viewBox && (t.attrs.viewBox = t.style.viewBox));
+      }, u, c, h) {
+        if (lt(t, l, u, h), c) return void(t.style.viewBox && (t.attrs.viewBox = t.style.viewBox));
         t.attrs = t.style, t.style = {};
         const {
-          attrs: h,
+          attrs: d,
           style: p,
           dimensions: f
         } = t;
-        h.transform && (f && (p.transform = h.transform), delete h.transform), f && (void 0 !== o || void 0 !== i || p.transform) && (p.transformOrigin = function(t, e, n) {
+        d.transform && (f && (p.transform = d.transform), delete d.transform), f && (void 0 !== o || void 0 !== i || p.transform) && (p.transformOrigin = function(t, e, n) {
           return `${vt(e,t.x,t.width)} ${vt(n,t.y,t.height)}`
-        }(f, void 0 !== o ? o : .5, void 0 !== i ? i : .5)), void 0 !== e && (h.x = e), void 0 !== n && (h.y = n), void 0 !== r && function(t, e, n = 1, o = 0, i = !0) {
+        }(f, void 0 !== o ? o : .5, void 0 !== i ? i : .5)), void 0 !== e && (d.x = e), void 0 !== n && (d.y = n), void 0 !== r && function(t, e, n = 1, o = 0, i = !0) {
           t.pathLength = 1;
           const r = i ? yt : xt;
           t[r.offset] = nt.transform(-o);
           const s = nt.transform(e),
             a = nt.transform(n);
           t[r.array] = `${s} ${a}`
-        }(h, r, s, a, !1)
+        }(d, r, s, a, !1)
       }
       const bt = () => ({
           ...ut(),
@@ -596,7 +596,7 @@ _global.SENTRY_RELEASE = {
         return (e, n, i, r, {
           latestValues: s
         }, a) => {
-          const l = (R(e) ? Pt : dt)(n, s, a, e),
+          const l = (R(e) ? Pt : ht)(n, s, a, e),
             u = {
               ...gt(n, "string" == typeof e, t),
               ...l,
@@ -676,8 +676,8 @@ _global.SENTRY_RELEASE = {
         e && u && !l && !1 !== t.inherit && (void 0 === s && (s = e.initial), void 0 === a && (a = e.animate));
         let c = !!n && !1 === n.initial;
         c = c || !1 === s;
-        const d = c ? a : s;
-        return d && "boolean" != typeof d && !p(d) && (Array.isArray(d) ? d : [d]).forEach((e => {
+        const h = c ? a : s;
+        return h && "boolean" != typeof h && !p(h) && (Array.isArray(h) ? h : [h]).forEach((e => {
           const n = Lt(t, e);
           if (!n) return;
           const {
@@ -857,9 +857,9 @@ _global.SENTRY_RELEASE = {
           Ht(o) && !ue() && (t.animationState && t.animationState.setActive($t.Hover, e), n && n(o, i))
         }
       }
-      const de = (t, e) => !!e && (t === e || de(t, e.parentElement));
+      const he = (t, e) => !!e && (t === e || he(t, e.parentElement));
 
-      function he(t) {
+      function de(t) {
         return (0, o.useEffect)((() => () => t()), [])
       }
       const pe = (t, e) => n => e(t(n)),
@@ -976,22 +976,22 @@ _global.SENTRY_RELEASE = {
               l.current && l.current(), l.current = null
             }
 
-            function d() {
+            function h() {
               return c(), a.current = !1, r.animationState && r.animationState.setActive($t.Tap, !1), !ue()
             }
 
-            function h(e, o) {
-              d() && (de(r.current, e.target) ? t && t(e, o) : n && n(e, o))
+            function d(e, o) {
+              h() && (he(r.current, e.target) ? t && t(e, o) : n && n(e, o))
             }
 
             function p(t, e) {
-              d() && n && n(t, e)
+              h() && n && n(t, e)
             }
 
             function f(t, n) {
-              c(), a.current || (a.current = !0, l.current = fe(oe(window, "pointerup", h, u), oe(window, "pointercancel", p, u)), r.animationState && r.animationState.setActive($t.Tap, !0), e && e(t, n))
+              c(), a.current || (a.current = !0, l.current = fe(oe(window, "pointerup", d, u), oe(window, "pointercancel", p, u)), r.animationState && r.animationState.setActive($t.Tap, !0), e && e(t, n))
             }
-            ie(r, "pointerdown", s ? f : void 0, u), he(c)
+            ie(r, "pointerdown", s ? f : void 0, u), de(c)
           })),
           focus: Ve((function({
             whileFocus: t,
@@ -1279,11 +1279,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function dn(t) {
+      function hn(t) {
         return cn(t).values
       }
 
-      function hn(t) {
+      function dn(t) {
         const {
           values: e,
           numColors: n,
@@ -1301,11 +1301,11 @@ _global.SENTRY_RELEASE = {
             var e, n;
             return isNaN(t) && J(t) && ((null === (e = t.match(q)) || void 0 === e ? void 0 : e.length) || 0) + ((null === (n = t.match(Z)) || void 0 === n ? void 0 : n.length) || 0) > 0
           },
-          parse: dn,
-          createTransformer: hn,
+          parse: hn,
+          createTransformer: dn,
           getAnimatableNone: function(t) {
-            const e = dn(t);
-            return hn(t)(e.map(pn))
+            const e = hn(t);
+            return dn(t)(e.map(pn))
           }
         },
         mn = new Set(["brightness", "contrast", "saturate", "opacity"]);
@@ -1680,8 +1680,8 @@ _global.SENTRY_RELEASE = {
             damping: l,
             mass: u,
             velocity: c,
-            duration: d,
-            isResolvedFromDuration: h
+            duration: h,
+            isResolvedFromDuration: d
           } = function(t) {
             let e = {
               velocity: 0,
@@ -1769,7 +1769,7 @@ _global.SENTRY_RELEASE = {
         return g(), {
           next: t => {
             const o = p(t);
-            if (h) s.done = t >= d;
+            if (d) s.done = t >= h;
             else {
               let i = f;
               if (0 !== t)
@@ -1845,8 +1845,8 @@ _global.SENTRY_RELEASE = {
         onPlay: l,
         onStop: u,
         onComplete: c,
-        onRepeat: d,
-        onUpdate: h,
+        onRepeat: h,
+        onUpdate: d,
         type: p = "keyframes",
         ...f
       }) {
@@ -1871,11 +1871,11 @@ _global.SENTRY_RELEASE = {
             const t = A.next(Math.max(0, n));
             y = t.value, x && (y = x(y)), E = P ? t.done : n <= 0
           }
-          h && h(y), E && (0 === w && (b = void 0 !== b ? b : n), w < o ? function(t, e, n, o) {
+          d && d(y), E && (0 === w && (b = void 0 !== b ? b : n), w < o ? function(t, e, n, o) {
             return o ? t >= e + n : t <= -n
           }(n, b, r, P) && (w++, "reverse" === i ? (P = w % 2 == 0, n = function(t, e = 0, n = 0, o = !0) {
             return o ? Bo(e + -t, e, n) : e - (t - e) + n
-          }(n, b, r, P)) : (n = Bo(n, b, r), "mirror" === i && A.flipTarget()), E = !1, d && d()) : (v.stop(), c && c()))
+          }(n, b, r, P)) : (n = Bo(n, b, r), "mirror" === i && A.flipTarget()), E = !1, h && h()) : (v.stop(), c && c()))
         })), v.start()), {
           stop: () => {
             u && u(), v.stop()
@@ -2015,9 +2015,9 @@ _global.SENTRY_RELEASE = {
             }(e, t, n, r),
             u = l[0],
             c = l[l.length - 1],
-            d = qo(t, u),
-            h = qo(t, c);
-          Un(d === h, `You are trying to animate ${t} from "${u}" to "${c}". ${u} is not an animatable value - to enable this animation set ${u} to a value animatable to ${c} via the \`style\` property.`);
+            h = qo(t, u),
+            d = qo(t, c);
+          Un(h === d, `You are trying to animate ${t} from "${u}" to "${c}". ${u} is not an animatable value - to enable this animation set ${u} to a value animatable to ${c} via the \`style\` property.`);
           let p = {
             keyframes: l,
             velocity: e.getVelocity(),
@@ -2030,7 +2030,7 @@ _global.SENTRY_RELEASE = {
               i(), r.onComplete && r.onComplete()
             }
           };
-          if (!d || !h || zn.current || !1 === r.type) return zo(p);
+          if (!h || !d || zn.current || !1 === r.type) return zo(p);
           if ("inertia" === r.type) {
             const t = function({
               keyframes: t,
@@ -2044,8 +2044,8 @@ _global.SENTRY_RELEASE = {
               restDelta: l = 1,
               modifyTarget: u,
               driver: c,
-              onUpdate: d,
-              onComplete: h,
+              onUpdate: h,
+              onComplete: d,
               onStop: p
             }) {
               const f = t[0];
@@ -2067,9 +2067,9 @@ _global.SENTRY_RELEASE = {
                   driver: c,
                   onUpdate: e => {
                     var n;
-                    null == d || d(e), null === (n = t.onUpdate) || void 0 === n || n.call(t, e)
+                    null == h || h(e), null === (n = t.onUpdate) || void 0 === n || n.call(t, e)
                   },
-                  onComplete: h,
+                  onComplete: d,
                   onStop: p
                 })
               }
@@ -2093,7 +2093,7 @@ _global.SENTRY_RELEASE = {
                 const o = v(t),
                   s = o === n ? -1 : 1;
                 let a, c;
-                const d = t => {
+                const h = t => {
                   a = c, c = t, e = Ke(t - a, De.delta), (1 === s && t > o || -1 === s && t < o) && x({
                     keyframes: [t, o],
                     velocity: e
@@ -2107,7 +2107,7 @@ _global.SENTRY_RELEASE = {
                   power: i,
                   restDelta: l,
                   modifyTarget: u,
-                  onUpdate: g(t) ? d : void 0
+                  onUpdate: g(t) ? h : void 0
                 })
               }
               return {
@@ -2244,11 +2244,11 @@ _global.SENTRY_RELEASE = {
         const u = t.getValue("willChange");
         o && (s = o);
         const c = [],
-          d = i && (null === (r = t.animationState) || void 0 === r ? void 0 : r.getState()[i]);
+          h = i && (null === (r = t.animationState) || void 0 === r ? void 0 : r.getState()[i]);
         for (const e in l) {
           const o = t.getValue(e),
             i = l[e];
-          if (!o || void 0 === i || d && li(d, e)) continue;
+          if (!o || void 0 === i || h && li(h, e)) continue;
           let r = {
             delay: n,
             elapsed: 0,
@@ -2283,9 +2283,9 @@ _global.SENTRY_RELEASE = {
       }
       const ui = [$t.Animate, $t.InView, $t.Focus, $t.Hover, $t.Tap, $t.Drag, $t.Exit],
         ci = [...ui].reverse(),
-        di = ui.length;
+        hi = ui.length;
 
-      function hi(t = !1) {
+      function di(t = !1) {
         return {
           isActive: t,
           protectedKeys: {},
@@ -2306,13 +2306,13 @@ _global.SENTRY_RELEASE = {
                 }) => ii(t, e, n))))
               }(t);
               const n = {
-                [$t.Animate]: hi(!0),
-                [$t.InView]: hi(),
-                [$t.Hover]: hi(),
-                [$t.Tap]: hi(),
-                [$t.Drag]: hi(),
-                [$t.Focus]: hi(),
-                [$t.Exit]: hi()
+                [$t.Animate]: di(!0),
+                [$t.InView]: di(),
+                [$t.Hover]: di(),
+                [$t.Tap]: di(),
+                [$t.Drag]: di(),
+                [$t.Focus]: di(),
+                [$t.Exit]: di()
               };
               let o = !0;
               const i = (e, n) => {
@@ -2337,18 +2337,18 @@ _global.SENTRY_RELEASE = {
                   l = t.getVariantContext(!0) || {},
                   u = [],
                   c = new Set;
-                let d = {},
+                let h = {},
                   f = 1 / 0;
-                for (let e = 0; e < di; e++) {
+                for (let e = 0; e < hi; e++) {
                   const v = ci[e],
                     y = n[v],
                     x = void 0 !== a[v] ? a[v] : l[v],
-                    w = h(x),
+                    w = d(x),
                     b = v === s ? y.isActive : null;
                   !1 === b && (f = e);
                   let E = x === l[v] && x !== a[v] && w;
                   if (E && o && t.manuallyAnimateOnMount && (E = !1), y.protectedKeys = {
-                      ...d
+                      ...h
                     }, !y.isActive && null === b || !x && !y.prevProp || p(x) || "boolean" == typeof x) continue;
                   const P = (m = y.prevProp, "string" == typeof(g = x) ? g !== m : !!Array.isArray(g) && !ke(g, m));
                   let S = P || v === s && y.isActive && !E && w || e > f && w;
@@ -2366,10 +2366,10 @@ _global.SENTRY_RELEASE = {
                   for (const t in C) {
                     const e = V[t],
                       n = A[t];
-                    d.hasOwnProperty(t) || (e !== n ? Rt(e) && Rt(n) ? !ke(e, n) || P ? M(t) : y.protectedKeys[t] = !0 : void 0 !== e ? M(t) : c.add(t) : void 0 !== e && c.has(t) ? M(t) : y.protectedKeys[t] = !0)
+                    h.hasOwnProperty(t) || (e !== n ? Rt(e) && Rt(n) ? !ke(e, n) || P ? M(t) : y.protectedKeys[t] = !0 : void 0 !== e ? M(t) : c.add(t) : void 0 !== e && c.has(t) ? M(t) : y.protectedKeys[t] = !0)
                   }
-                  y.prevProp = x, y.prevResolvedValues = V, y.isActive && (d = {
-                    ...d,
+                  y.prevProp = x, y.prevResolvedValues = V, y.isActive && (h = {
+                    ...h,
                     ...V
                   }), o && t.blockInitialAnimation && (S = !1), S && !E && u.push(...T.map((t => ({
                     animation: t,
@@ -2817,7 +2817,7 @@ _global.SENTRY_RELEASE = {
           } = this.getProps(), {
             layout: n
           } = this.visualElement.projection || {}, o = this.constraints;
-          t && d(t) ? this.constraints || (this.constraints = this.resolveRefConstraints()) : this.constraints = !(!t || !n) && function(t, {
+          t && h(t) ? this.constraints || (this.constraints = this.resolveRefConstraints()) : this.constraints = !(!t || !n) && function(t, {
             top: e,
             left: n,
             bottom: o,
@@ -2844,7 +2844,7 @@ _global.SENTRY_RELEASE = {
             dragConstraints: t,
             onMeasureDragConstraints: e
           } = this.getProps();
-          if (!t || !d(t)) return !1;
+          if (!t || !h(t)) return !1;
           const n = t.current;
           Nn(null !== n, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
           const {
@@ -2897,7 +2897,7 @@ _global.SENTRY_RELEASE = {
             });
             const u = o ? 200 : 1e6,
               c = o ? 40 : 1e7,
-              d = {
+              h = {
                 type: "inertia",
                 velocity: n ? t[s] : 0,
                 bounceStiffness: u,
@@ -2908,7 +2908,7 @@ _global.SENTRY_RELEASE = {
                 ...i,
                 ...l
               };
-            return this.startAxisValueAnimation(s, d)
+            return this.startAxisValueAnimation(s, h)
           }));
           return Promise.all(l).then(s)
         }
@@ -2951,7 +2951,7 @@ _global.SENTRY_RELEASE = {
           } = this.getProps(), {
             projection: o
           } = this.visualElement;
-          if (!d(n) || !o || !this.constraints) return;
+          if (!h(n) || !o || !this.constraints) return;
           this.stopAnimation();
           const i = {
             x: 0,
@@ -3000,7 +3000,7 @@ _global.SENTRY_RELEASE = {
               const {
                 dragConstraints: t
               } = this.getProps();
-              d(t) && (this.constraints = this.resolveRefConstraints())
+              h(t) && (this.constraints = this.resolveRefConstraints())
             },
             {
               projection: o
@@ -3073,7 +3073,7 @@ _global.SENTRY_RELEASE = {
             l.current = new gi(t, c, {
               transformPagePoint: u
             })
-          }), he((() => l.current && l.current.end()))
+          }), de((() => l.current && l.current.end()))
         })),
         drag: Ve((function(t) {
           const {
@@ -3107,19 +3107,19 @@ _global.SENTRY_RELEASE = {
           t.set(e, !1), t.set(e)
         },
         cr = t => t === Y || t === nt;
-      var dr;
+      var hr;
       ! function(t) {
         t.width = "width", t.height = "height", t.left = "left", t.right = "right", t.top = "top", t.bottom = "bottom"
-      }(dr || (dr = {}));
-      const hr = (t, e) => parseFloat(t.split(", ")[e]),
+      }(hr || (hr = {}));
+      const dr = (t, e) => parseFloat(t.split(", ")[e]),
         pr = (t, e) => (n, {
           transform: o
         }) => {
           if ("none" === o || !o) return 0;
           const i = o.match(/^matrix3d\((.+)\)$/);
-          if (i) return hr(i[1], e); {
+          if (i) return dr(i[1], e); {
             const e = o.match(/^matrix\((.+)\)$/);
-            return e ? hr(e[1], t) : 0
+            return e ? dr(e[1], t) : 0
           }
         },
         fr = new Set(["x", "y", "z"]),
@@ -3173,25 +3173,25 @@ _global.SENTRY_RELEASE = {
               if (!t.hasValue(i)) return;
               let u = n[i],
                 c = Sn(u);
-              const d = e[i];
-              let h;
-              if (Rt(d)) {
-                const t = d.length,
-                  e = null === d[0] ? 1 : 0;
-                u = d[e], c = Sn(u);
-                for (let n = e; n < t; n++) h ? Nn(Sn(d[n]) === h, "All keyframes must be of the same type") : (h = Sn(d[n]), Nn(h === c || cr(c) && cr(h), "Keyframes must be of the same dimension as the current value"))
-              } else h = Sn(d);
-              if (c !== h)
-                if (cr(c) && cr(h)) {
+              const h = e[i];
+              let d;
+              if (Rt(h)) {
+                const t = h.length,
+                  e = null === h[0] ? 1 : 0;
+                u = h[e], c = Sn(u);
+                for (let n = e; n < t; n++) d ? Nn(Sn(h[n]) === d, "All keyframes must be of the same type") : (d = Sn(h[n]), Nn(d === c || cr(c) && cr(d), "Keyframes must be of the same dimension as the current value"))
+              } else d = Sn(h);
+              if (c !== d)
+                if (cr(c) && cr(d)) {
                   const t = l.get();
-                  "string" == typeof t && l.set(parseFloat(t)), "string" == typeof d ? e[i] = parseFloat(d) : Array.isArray(d) && h === nt && (e[i] = d.map(parseFloat))
-                } else(null == c ? void 0 : c.transform) && (null == h ? void 0 : h.transform) && (0 === u || 0 === d) ? 0 === u ? l.set(h.transform(u)) : e[i] = c.transform(d) : (s || (r = function(t) {
+                  "string" == typeof t && l.set(parseFloat(t)), "string" == typeof h ? e[i] = parseFloat(h) : Array.isArray(h) && d === nt && (e[i] = h.map(parseFloat))
+                } else(null == c ? void 0 : c.transform) && (null == d ? void 0 : d.transform) && (0 === u || 0 === h) ? 0 === u ? l.set(d.transform(u)) : e[i] = c.transform(h) : (s || (r = function(t) {
                   const e = [];
                   return mr.forEach((n => {
                     const o = t.getValue(n);
                     void 0 !== o && (e.push([n, o.get()]), o.set(n.startsWith("scale") ? 1 : 0))
                   })), e.length && t.render(), e
-                }(t), s = !0), a.push(i), o[i] = void 0 !== o[i] ? o[i] : e[i], ur(l, d))
+                }(t), s = !0), a.push(i), o[i] = void 0 !== o[i] ? o[i] : e[i], ur(l, h))
             })), a.length) {
             const n = a.indexOf("height") >= 0 ? window.pageYOffset : null,
               i = ((t, e, n) => {
@@ -3328,7 +3328,7 @@ _global.SENTRY_RELEASE = {
             this.projection.setOptions({
               layoutId: e,
               layout: n,
-              alwaysMeasureLayout: Boolean(o) || a && d(a),
+              alwaysMeasureLayout: Boolean(o) || a && h(a),
               visualElement: this,
               scheduleRender: () => this.scheduleRender(),
               animationType: "string" == typeof n ? n : "both",
@@ -3413,7 +3413,7 @@ _global.SENTRY_RELEASE = {
           for (let t = 0; t < Vr; t++) {
             const e = Tr[t],
               n = this.props[e];
-            (h(n) || !1 === n) && (o[e] = n)
+            (d(n) || !1 === n) && (o[e] = n)
           }
           return o
         }
@@ -3617,17 +3617,17 @@ _global.SENTRY_RELEASE = {
               u = n.x.scale * e.x,
               c = n.y.scale * e.y;
             s[0 + l] /= u, s[1 + l] /= c;
-            const d = _n(u, c, .5);
-            "number" == typeof s[2 + l] && (s[2 + l] /= d), "number" == typeof s[3 + l] && (s[3 + l] /= d);
-            let h = a(s);
+            const h = _n(u, c, .5);
+            "number" == typeof s[2 + l] && (s[2 + l] /= h), "number" == typeof s[3 + l] && (s[3 + l] /= h);
+            let d = a(s);
             if (i) {
               let t = 0;
-              h = h.replace(Dr, (() => {
+              d = d.replace(Dr, (() => {
                 const e = r[t];
                 return t++, e
               }))
             }
-            return h
+            return d
           }
         };
       class Ir extends o.Component {
@@ -3918,8 +3918,8 @@ _global.SENTRY_RELEASE = {
               if (this.isTreeAnimationBlocked()) return this.target = void 0, void(this.relativeTarget = void 0);
               const c = null !== (r = null !== (i = this.options.transition) && void 0 !== i ? i : s.getDefaultTransition()) && void 0 !== r ? r : Ts,
                 {
-                  onLayoutAnimationStart: d,
-                  onLayoutAnimationComplete: h
+                  onLayoutAnimationStart: h,
+                  onLayoutAnimationComplete: d
                 } = s.getProps(),
                 p = !this.targetLayout || !ns(this.targetLayout, o) || n,
                 f = !e && n;
@@ -3927,8 +3927,8 @@ _global.SENTRY_RELEASE = {
                 this.resumeFrom && (this.resumingFrom = this.resumeFrom, this.resumingFrom.resumingFrom = void 0), this.setAnimationOrigin(t, f);
                 const e = {
                   ...Jo(c, "layout"),
-                  onPlay: d,
-                  onComplete: h
+                  onPlay: h,
+                  onComplete: d
                 };
                 s.shouldReduceMotion && (e.delay = 0, e.type = !1), this.startAnimation(e)
               } else e || 0 !== this.animationProgress || vs(this), this.isLead() && (null === (u = (l = this.options).onExitComplete) || void 0 === u || u.call(l));
@@ -3975,7 +3975,7 @@ _global.SENTRY_RELEASE = {
           }
           didUpdate() {
             if (this.isUpdateBlocked()) return this.unblockUpdate(), this.clearAllSnapshots(), void this.nodes.forEach(ms);
-            this.isUpdating && (this.isUpdating = !1, this.potentialNodes.size && (this.potentialNodes.forEach(Vs), this.potentialNodes.clear()), this.nodes.forEach(gs), this.nodes.forEach(ds), this.nodes.forEach(hs), this.clearAllSnapshots(), He.update(), He.preRender(), He.render())
+            this.isUpdating && (this.isUpdating = !1, this.potentialNodes.size && (this.potentialNodes.forEach(Vs), this.potentialNodes.clear()), this.nodes.forEach(gs), this.nodes.forEach(hs), this.nodes.forEach(ds), this.clearAllSnapshots(), He.update(), He.preRender(), He.render())
           }
           clearAllSnapshots() {
             this.nodes.forEach(fs), this.sharedNodes.forEach(bs)
@@ -4189,8 +4189,8 @@ _global.SENTRY_RELEASE = {
             });
             const u = this.treeScale.x,
               c = this.treeScale.y,
-              d = this.projectionTransform;
-            Vi(this.projectionDelta, this.layoutCorrected, l, this.latestValues), this.projectionTransform = rs(this.projectionDelta, this.treeScale), this.projectionTransform === d && this.treeScale.x === u && this.treeScale.y === c || (this.hasProjected = !0, this.scheduleRender(), this.notifyListeners("projectionUpdate", l))
+              h = this.projectionTransform;
+            Vi(this.projectionDelta, this.layoutCorrected, l, this.latestValues), this.projectionTransform = rs(this.projectionDelta, this.treeScale), this.projectionTransform === h && this.treeScale.x === u && this.treeScale.y === c || (this.hasProjected = !0, this.scheduleRender(), this.notifyListeners("projectionUpdate", l))
           }
           hide() {
             this.isVisible = !1
@@ -4227,12 +4227,12 @@ _global.SENTRY_RELEASE = {
             const l = Ii(),
               u = (null == i ? void 0 : i.source) !== (null === (n = this.layout) || void 0 === n ? void 0 : n.source),
               c = ((null === (o = this.getStack()) || void 0 === o ? void 0 : o.members.length) || 0) <= 1,
-              d = Boolean(u && !c && !0 === this.options.crossfade && !this.path.some(Ss));
+              h = Boolean(u && !c && !0 === this.options.crossfade && !this.path.some(Ss));
             this.animationProgress = 0, this.mixTargetDelta = e => {
               var n;
               const o = e / 1e3;
-              var i, h, p, f;
-              Es(a.x, t.x, o), Es(a.y, t.y, o), this.setTargetDelta(a), this.relativeTarget && this.relativeTargetOrigin && this.layout && (null === (n = this.relativeParent) || void 0 === n ? void 0 : n.layout) && (Mi(l, this.layout.layoutBox, this.relativeParent.layout.layoutBox), i = this.relativeTarget, h = this.relativeTargetOrigin, p = l, f = o, Ps(i.x, h.x, p.x, f), Ps(i.y, h.y, p.y, f)), u && (this.animationValues = s, function(t, e, n, o, i, r) {
+              var i, d, p, f;
+              Es(a.x, t.x, o), Es(a.y, t.y, o), this.setTargetDelta(a), this.relativeTarget && this.relativeTargetOrigin && this.layout && (null === (n = this.relativeParent) || void 0 === n ? void 0 : n.layout) && (Mi(l, this.layout.layoutBox, this.relativeParent.layout.layoutBox), i = this.relativeTarget, d = this.relativeTargetOrigin, p = l, f = o, Ps(i.x, d.x, p.x, f), Ps(i.y, d.y, p.y, f)), u && (this.animationValues = s, function(t, e, n, o, i, r) {
                 i ? (t.opacity = _n(0, void 0 !== n.opacity ? n.opacity : 1, Hr(o)), t.opacityExit = _n(void 0 !== e.opacity ? e.opacity : 1, 0, Yr(o))) : r && (t.opacity = _n(void 0 !== e.opacity ? e.opacity : 1, void 0 !== n.opacity ? n.opacity : 1, o));
                 for (let i = 0; i < Nr; i++) {
                   const r = `border${Ur[i]}Radius`;
@@ -4240,7 +4240,7 @@ _global.SENTRY_RELEASE = {
                     a = Wr(n, r);
                   void 0 === s && void 0 === a || (s || (s = 0), a || (a = 0), 0 === s || 0 === a || zr(s) === zr(a) ? (t[r] = Math.max(_n($r(s), $r(a), o), 0), (et.test(a) || et.test(s)) && (t[r] += "%")) : t[r] = a)
                 }(e.rotate || n.rotate) && (t.rotate = _n(e.rotate || 0, n.rotate || 0, o))
-              }(s, r, this.latestValues, o, d, c)), this.root.scheduleUpdateProjection(), this.scheduleRender(), this.animationProgress = o
+              }(s, r, this.latestValues, o, h, c)), this.root.scheduleUpdateProjection(), this.scheduleRender(), this.animationProgress = o
             }, this.mixTargetDelta(0)
           }
           startAnimation(t) {
@@ -4397,11 +4397,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function ds(t) {
+      function hs(t) {
         t.updateLayout()
       }
 
-      function hs(t) {
+      function ds(t) {
         var e, n, o;
         const i = (null === (e = t.resumeFrom) || void 0 === e ? void 0 : e.snapshot) || t.snapshot;
         if (t.isLead() && t.layout && i && t.hasListeners("didUpdate")) {
@@ -4670,7 +4670,7 @@ _global.SENTRY_RELEASE = {
       }) => {
         const u = b($s),
           c = (0, o.useId)(),
-          d = (0, o.useMemo)((() => ({
+          h = (0, o.useMemo)((() => ({
             id: c,
             initial: e,
             isPresent: n,
@@ -4690,7 +4690,7 @@ _global.SENTRY_RELEASE = {
         }), [n]), "popLayout" === l && (t = o.createElement(Us, {
           isPresent: n
         }, t)), o.createElement(a.Provider, {
-          value: d
+          value: h
         }, t)
       };
 
@@ -4711,14 +4711,14 @@ _global.SENTRY_RELEASE = {
           let [l] = Os();
           const c = (0, o.useContext)(S).forceRender;
           c && (l = c);
-          const d = Fs(),
-            h = function(t) {
+          const h = Fs(),
+            d = function(t) {
               const e = [];
               return o.Children.forEach(t, (t => {
                 (0, o.isValidElement)(t) && e.push(t)
               })), e
             }(t);
-          let p = h;
+          let p = d;
           const f = new Set,
             m = (0, o.useRef)(p),
             g = (0, o.useRef)(new Map).current,
@@ -4730,8 +4730,8 @@ _global.SENTRY_RELEASE = {
                     const n = zs(t);
                     e.set(n, t)
                   }))
-                }(h, g), m.current = p
-            })), he((() => {
+                }(d, g), m.current = p
+            })), de((() => {
               v.current = !0, g.clear(), f.clear()
             })), v.current) return o.createElement(o.Fragment, null, p.map((t => o.createElement(Ns, {
             key: zs(t),
@@ -4742,7 +4742,7 @@ _global.SENTRY_RELEASE = {
           }, t))));
           p = [...p];
           const y = m.current.map(zs),
-            x = h.map(zs),
+            x = d.map(zs),
             w = y.length;
           for (let t = 0; t < w; t++) {
             const e = y[t]; - 1 === x.indexOf(e) && f.add(e)
@@ -4759,7 +4759,7 @@ _global.SENTRY_RELEASE = {
                 g.delete(t), f.delete(t);
                 const e = m.current.findIndex((e => e.key === t));
                 if (m.current.splice(e, 1), !f.size) {
-                  if (m.current = h, !1 === d.current) return;
+                  if (m.current = d, !1 === h.current) return;
                   l(), i && i()
                 }
               },
@@ -4812,12 +4812,12 @@ _global.SENTRY_RELEASE = {
             id: e,
             group: Xs(i) && r.group || Gs()
           });
-          const d = (0, o.useMemo)((() => ({
+          const h = (0, o.useMemo)((() => ({
             ...u.current,
             forceRender: a
           })), [l]);
           return o.createElement(S.Provider, {
-            value: d
+            value: h
           }, t)
         };
       let qs = 0;
@@ -4888,7 +4888,7 @@ _global.SENTRY_RELEASE = {
             u = [],
             c = (0, o.useRef)(!1);
           Nn(Boolean(r), "Reorder.Group must be provided a values prop");
-          const d = {
+          const h = {
             axis: n,
             registerItem: (t, e) => {
               e && -1 === u.findIndex((e => t === e.value)) && (u.push({
@@ -4927,7 +4927,7 @@ _global.SENTRY_RELEASE = {
             ...s,
             ref: a
           }, o.createElement(ta.Provider, {
-            value: d
+            value: h
           }, t))
         }));
 
@@ -4998,7 +4998,7 @@ _global.SENTRY_RELEASE = {
       function ca(t, e = 0) {
         return j(t) ? t : ia(e)
       }
-      const da = (0, o.forwardRef)((function({
+      const ha = (0, o.forwardRef)((function({
           children: t,
           style: e = {},
           value: n,
@@ -5009,11 +5009,11 @@ _global.SENTRY_RELEASE = {
         }, l) {
           const u = b((() => Ds(i))),
             c = (0, o.useContext)(ta),
-            d = {
+            h = {
               x: ca(e.x),
               y: ca(e.y)
             },
-            h = la([d.x, d.y], (([t, e]) => t || e ? 1 : "unset")),
+            d = la([h.x, h.y], (([t, e]) => t || e ? 1 : "unset")),
             p = (0, o.useRef)(null);
           Nn(Boolean(c), "Reorder.Item must be a child of Reorder.Group");
           const {
@@ -5029,16 +5029,16 @@ _global.SENTRY_RELEASE = {
             dragSnapToOrigin: !0,
             style: {
               ...e,
-              x: d.x,
-              y: d.y,
-              zIndex: h
+              x: h.x,
+              y: h.y,
+              zIndex: d
             },
             layout: s,
             onDrag: (t, e) => {
               const {
                 velocity: o
               } = e;
-              o[f] && g(n, d[f].get(), o[f]), r && r(t, e)
+              o[f] && g(n, h[f].get(), o[f]), r && r(t, e)
             },
             onLayoutMeasure: t => {
               p.current = t
@@ -5046,9 +5046,9 @@ _global.SENTRY_RELEASE = {
             ref: l
           }, t)
         })),
-        ha = {
+        da = {
           Group: ea,
-          Item: da
+          Item: ha
         },
         pa = {
           renderer: kr,
@@ -5189,8 +5189,8 @@ _global.SENTRY_RELEASE = {
           l = n.time;
         i.current = t[`scroll${s}`], i.scrollLength = t[`scroll${r}`] - t[`client${r}`], i.offset.length = 0, i.offset[0] = 0, i.offset[1] = i.scrollLength, i.progress = Aa(0, i.scrollLength, i.current);
         const u = o - l;
-        var c, d;
-        i.velocity = u > Ca ? 0 : (c = i.current - a, (d = u) ? c * (1e3 / d) : 0)
+        var c, h;
+        i.velocity = u > Ca ? 0 : (c = i.current - a, (h = u) ? c * (1e3 / h) : 0)
       }
       const Ra = t => t,
         Da = (t, e, n) => -n * t + n * e + t;
@@ -5296,8 +5296,8 @@ _global.SENTRY_RELEASE = {
         };
         e[r].offset.length = 0;
         let c = !e[r].interpolate;
-        const d = o.length;
-        for (let t = 0; t < d; t++) {
+        const h = o.length;
+        for (let t = 0; t < h; t++) {
           const n = Ya(o[t], u[s], l[s], a[r]);
           c || n === e[r].interpolatorOffsets[t] || (c = !0), e[r].offset[t] = n
         }
@@ -5315,7 +5315,7 @@ _global.SENTRY_RELEASE = {
             }(n, r);
             return s = a(s), Da(t[r], t[r + 1], s)
           }
-        }(Ia(d), e[r].offset), e[r].interpolatorOffsets = [...e[r].offset]), e[r].progress = e[r].interpolate(e[r].current)
+        }(Ia(h), e[r].offset), e[r].interpolatorOffsets = [...e[r].offset]), e[r].progress = e[r].interpolate(e[r].current)
       }
       const _a = new WeakMap,
         qa = new WeakMap,
@@ -5408,10 +5408,10 @@ _global.SENTRY_RELEASE = {
         }
         var a, l, u;
         const c = _a.get(n),
-          d = requestAnimationFrame(c);
+          h = requestAnimationFrame(c);
         return () => {
           var e;
-          "function" != typeof t && t.stop(), cancelAnimationFrame(d);
+          "function" != typeof t && t.stop(), cancelAnimationFrame(h);
           const o = Za.get(n);
           if (!o) return;
           if (o.delete(s), o.size) return;
@@ -5562,11 +5562,11 @@ _global.SENTRY_RELEASE = {
         return o
       }
 
-      function dl() {
+      function hl() {
         const t = b(cl);
         return (0, o.useEffect)(t.mount, []), t
       }
-      const hl = dl,
+      const dl = hl,
         pl = (t, e, n) => {
           const o = e - t;
           return ((n - t) % o + o) % o + t

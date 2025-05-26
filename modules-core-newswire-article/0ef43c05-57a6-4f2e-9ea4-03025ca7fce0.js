@@ -84,9 +84,9 @@ _global.SENTRY_RELEASE = {
         }
       }
       var c = {};
-      n(c, "NoChoiceTransactionType", (() => f)), n(c, "ConfirmedTransactionType", (() => d)), n(c, "canStoreCookie", (() => h));
-      const f = "NO_CHOICE",
-        d = "CONFIRMED",
+      n(c, "NoChoiceTransactionType", (() => d)), n(c, "ConfirmedTransactionType", (() => f)), n(c, "canStoreCookie", (() => h));
+      const d = "NO_CHOICE",
+        f = "CONFIRMED",
         p = {
           AlwaysActive: "always active"
         };
@@ -102,7 +102,7 @@ _global.SENTRY_RELEASE = {
         }
         if (r.Status === p.AlwaysActive) return !0;
         const o = n.ConsentIntegrationData.consentPayload.purposes.find((e => e.Id === r.PurposeId));
-        return o?.TransactionType === d
+        return o?.TransactionType === f
       }
       t(e.exports, r), t(e.exports, c)
     },
@@ -171,8 +171,8 @@ _global.SENTRY_RELEASE = {
         s = p(n(3154)),
         l = p(n(66010)),
         c = p(n(79967)),
-        f = p(n(88433)),
-        d = n(73614);
+        d = p(n(88433)),
+        f = n(73614);
 
       function p(e) {
         return e && e.__esModule ? e : {
@@ -226,7 +226,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentWillUnmount",
           value: function() {
-            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, f.default)()
+            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, d.default)()
           }
         }, {
           key: "process",
@@ -240,12 +240,12 @@ _global.SENTRY_RELEASE = {
               a = t.onReady,
               u = this._parent,
               c = this._child,
-              p = (0, d.innerWidth)(u),
-              b = (0, d.innerHeight)(u);
+              p = (0, f.innerWidth)(u),
+              b = (0, f.innerHeight)(u);
             if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var w = (0, f.default)();
+              var w = (0, d.default)();
               this.pid = w;
               var m = function() {
                   return w !== e.pid
@@ -317,24 +317,24 @@ _global.SENTRY_RELEASE = {
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
               l = this.state,
               c = l.fontSize,
-              f = l.ready,
-              d = r({}, a, {
+              d = l.ready,
+              f = r({}, a, {
                 fontSize: c
               }),
               p = {
-                display: f ? "block" : "inline-block"
+                display: d ? "block" : "inline-block"
               };
             return "single" === u && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
                 return e._parent = t
               },
-              style: d
+              style: f
             }, s), i.default.createElement("div", {
               ref: function(t) {
                 return e._child = t
               },
               style: p
-            }, o && "function" == typeof n ? f ? n(o) : o : n))
+            }, o && "function" == typeof n ? d ? n(o) : o : n))
           }
         }]), t
       }(i.default.Component);
@@ -494,13 +494,13 @@ _global.SENTRY_RELEASE = {
         l = !1,
         c = -1;
 
-      function f() {
-        l && u && (l = !1, u.length ? s = u.concat(s) : c = -1, s.length && d())
+      function d() {
+        l && u && (l = !1, u.length ? s = u.concat(s) : c = -1, s.length && f())
       }
 
-      function d() {
+      function f() {
         if (!l) {
-          var e = a(f);
+          var e = a(d);
           l = !0;
           for (var t = s.length; t;) {
             for (u = s, s = []; ++c < t;) u && u[c].run();
@@ -532,7 +532,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        s.push(new p(e, t)), 1 !== s.length || l || a(d)
+        s.push(new p(e, t)), 1 !== s.length || l || a(f)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {

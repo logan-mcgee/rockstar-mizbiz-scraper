@@ -67,9 +67,9 @@ _global.SENTRY_RELEASE = {
         } = e;
         const f = (0, m.useIntl)(),
           {
-            track: b
+            track: v
           } = (0, r.useGtmTrack)(),
-          v = void 0 !== t ? "games" : "videos",
+          b = void 0 !== t ? "games" : "videos",
           [j, _] = (0, i.useState)(),
           [h, N] = (0, i.useState)(),
           [x, y] = (0, i.useState)(0),
@@ -94,7 +94,7 @@ _global.SENTRY_RELEASE = {
           j?.slideTo(e)
         };
         let z;
-        return z = "games" === v ? (0, k.jsx)(k.Fragment, {
+        return z = "games" === b ? (0, k.jsx)(k.Fragment, {
           children: t.results.map(((e, a) => "775700as" !== e.id && (0, k.jsx)(s.qr, {
             className: g.slide,
             onFocus: () => V(a),
@@ -153,19 +153,19 @@ _global.SENTRY_RELEASE = {
                 modules: [n.Vx],
                 slideClass: (0, o.classList)("swiper-slide"),
                 onSlideNextTransitionEnd: () => {
-                  b({
+                  v({
                     event: "carousel_next",
                     element_placement: u?.toLowerCase() ?? ""
                   })
                 },
                 onSlidePrevTransitionEnd: () => {
-                  b({
+                  v({
                     event: "carousel_previous",
                     element_placement: u?.toLowerCase() ?? ""
                   })
                 },
                 onSlideChangeTransitionEnd: () => {
-                  b({
+                  v({
                     event: "carousel_swipe",
                     element_placement: u?.toLowerCase() ?? ""
                   })
@@ -277,7 +277,7 @@ _global.SENTRY_RELEASE = {
           {
             setBodyIsLocked: f
           } = (0, n.useBodyScrollable)("VideoCarousel"),
-          [b, v] = (0, i.useState)(0),
+          [v, b] = (0, i.useState)(0),
           [j, _] = (0, i.useState)(0),
           h = (0, i.useRef)(null),
           N = (0, i.useRef)(null);
@@ -291,11 +291,11 @@ _global.SENTRY_RELEASE = {
           });
           const t = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
             i = () => {
-              v(b - 1 < 0 ? 0 : b - 1), _(0)
+              b(v - 1 < 0 ? 0 : v - 1), _(0)
             },
             s = () => {
-              const e = b + 1 >= a.length - 1 ? a.length - 1 : b + 1;
-              v(e), _(0)
+              const e = v + 1 >= a.length - 1 ? a.length - 1 : v + 1;
+              b(e), _(0)
             },
             n = e => {
               _(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !N.current?.classList.contains(g.dragging) || t() && f(!0)
@@ -315,7 +315,7 @@ _global.SENTRY_RELEASE = {
           return N.current.addEventListener("transitionend", c), e.on("swiperight", i), e.on("swipeleft", s), e.on("pan", n), e.on("panend", d), e.on("press tap", r), e.on("pressup", m), () => {
             e.off("swiperight", i), e.off("swipeleft", s), e.off("pan", n), e.off("panend", d), e.off("press tap", r), e.off("pressup", m), N.current && N.current.removeEventListener("transitionend", c), _(0)
           }
-        }), [h.current, b]);
+        }), [h.current, v]);
         const x = e => {
           const a = "VI" === e.game?.titleSlug;
           return [e?.titleHomepage ?? e?.title, a ? "/VI" : `/videos/${e.id}`, a ? "_blank" : "_self", r(a ? u.learn_more : u.watch_more)]
@@ -329,7 +329,7 @@ _global.SENTRY_RELEASE = {
               className: `${g.items} ${0!==j?g.dragging:""}`,
               ref: N,
               style: {
-                transform: `translateX(calc(-${100*b}% + ${j}px))`
+                transform: `translateX(calc(-${100*v}% + ${j}px))`
               },
               children: a.map(((e, a) => {
                 const [t, i, s] = x(e);
@@ -338,10 +338,10 @@ _global.SENTRY_RELEASE = {
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": i,
                   to: i,
-                  className: b === a ? g.active : "",
+                  className: v === a ? g.active : "",
                   role: "link",
                   title: t,
-                  tabIndex: b === a ? 0 : -1,
+                  tabIndex: v === a ? 0 : -1,
                   target: s,
                   children: (0, p.jsx)(l.s, {
                     video: e,
@@ -357,14 +357,14 @@ _global.SENTRY_RELEASE = {
               children: a.map(((e, a) => {
                 const [i, s, n, d] = x(e);
                 return (0, p.jsxs)(m.A, {
-                  className: [g.info, a === b ? g.active : ""].join(" "),
+                  className: [g.info, a === v ? g.active : ""].join(" "),
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
                   "data-gtm-label": s,
                   to: s,
                   role: "link",
                   title: i,
-                  tabIndex: b === a ? 0 : -1,
+                  tabIndex: v === a ? 0 : -1,
                   target: n,
                   children: [(0, p.jsxs)("div", {
                     className: g.title,
@@ -400,8 +400,8 @@ _global.SENTRY_RELEASE = {
                 "data-gtm-category": "Marquee",
                 "data-gtm-action": "Dot click",
                 "data-gtm-label": `Dot clicked to ${a}`,
-                onClick: () => v(a),
-                className: b === a ? g.active : "",
+                onClick: () => b(a),
+                className: v === a ? g.active : "",
                 type: "button"
               }, e.id)))
             })]
@@ -577,11 +577,11 @@ _global.SENTRY_RELEASE = {
           skip: !Object.entries(k).length,
           autoSetLoading: !0
         }), {
-          search: b
+          search: v
         } = (0, s.useLocation)();
         if ((0, i.useEffect)((() => {
             window.scrollTo(0, 0)
-          }), [b]), (0, i.useEffect)((() => (t([{
+          }), [v]), (0, i.useEffect)((() => (t([{
             href: "/videos",
             title: a("Videos")
           }]), () => {
@@ -606,7 +606,7 @@ _global.SENTRY_RELEASE = {
           })]
         });
         const {
-          games: v,
+          games: b,
           gtao: j,
           gtaVI: _,
           latest: h,
@@ -630,7 +630,7 @@ _global.SENTRY_RELEASE = {
                 vids: N.results,
                 title: a("Videos from %s").replace("%s", "Red Dead Online")
               }), (0, l.jsx)(d.A, {
-                games: v,
+                games: b,
                 title: a("By Game")
               })]
             })]

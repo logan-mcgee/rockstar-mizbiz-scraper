@@ -78,9 +78,9 @@ _global.SENTRY_RELEASE = {
         createIntl: () => r.E,
         defineMessages: () => n.YK,
         englishLocale: () => f,
-        getCookieValueByName: () => b,
+        getCookieValueByName: () => p,
         getLocale: () => g,
-        localeCookieHandler: () => p,
+        localeCookieHandler: () => b,
         locales: () => h,
         onLanguageChange: () => D,
         splitLocale: () => E,
@@ -98,16 +98,16 @@ _global.SENTRY_RELEASE = {
       const c = (e, o) => {
           e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
-        b = e => {
+        p = e => {
           const o = document.cookie.split("; "),
             t = `${e}=`,
             n = o.find((e => e.startsWith(t))),
             s = n?.substring(t.length, n.length);
           return s
         },
-        p = function(e, o) {
+        b = function(e, o) {
           let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-          const n = b(e);
+          const n = p(e);
           return n && !t || c(e, o), [n, (s = e, e => {
             c(s, e)
           })];
@@ -209,9 +209,9 @@ _global.SENTRY_RELEASE = {
           })(e), s = f;
           let r = s;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = b(a);
+            i = p(a);
           r = o.currentSite?.site === d.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || s : h.find((e => e.iso === i)) || s;
-          const [l, u] = p(a, r.iso);
+          const [l, u] = b(a, r.iso);
           return [r, u]
         };
       var k = t(56481);

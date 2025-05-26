@@ -25,59 +25,59 @@ _global.SENTRY_RELEASE = {
         return e
       }
 
-      function r(e, r) {
-        const a = (r = r || {}).delimiter || ".",
-          o = r.maxDepth,
-          s = r.transformKey || n,
+      function a(e, a) {
+        const r = (a = a || {}).delimiter || ".",
+          o = a.maxDepth,
+          s = a.transformKey || n,
           l = {};
         return function e(n, c, i) {
           i = i || 1, Object.keys(n).forEach((function(d) {
             const u = n[d],
-              f = r.safe && Array.isArray(u),
+              f = a.safe && Array.isArray(u),
               p = Object.prototype.toString.call(u),
               m = t(u),
               y = "[object Object]" === p || "[object Array]" === p,
-              b = c ? c + a + s(d) : s(d);
-            if (!f && !m && y && Object.keys(u).length && (!r.maxDepth || i < o)) return e(u, b, i + 1);
+              b = c ? c + r + s(d) : s(d);
+            if (!f && !m && y && Object.keys(u).length && (!a.maxDepth || i < o)) return e(u, b, i + 1);
             l[b] = u
           }))
         }(e), l
       }
-      e.exports = r, r.flatten = r, r.unflatten = function e(a, o) {
+      e.exports = a, a.flatten = a, a.unflatten = function e(r, o) {
         const s = (o = o || {}).delimiter || ".",
           l = o.overwrite || !1,
           c = o.transformKey || n,
           i = {};
-        if (t(a) || "[object Object]" !== Object.prototype.toString.call(a)) return a;
+        if (t(r) || "[object Object]" !== Object.prototype.toString.call(r)) return r;
 
         function d(e) {
           const t = Number(e);
           return isNaN(t) || -1 !== e.indexOf(".") || o.object ? e : t
         }
-        return a = Object.keys(a).reduce((function(e, t) {
-          const n = Object.prototype.toString.call(a[t]);
+        return r = Object.keys(r).reduce((function(e, t) {
+          const n = Object.prototype.toString.call(r[t]);
           return "[object Object]" !== n && "[object Array]" !== n || function(e) {
             const t = Object.prototype.toString.call(e),
               n = "[object Object]" === t;
             return !e || ("[object Array]" === t ? !e.length : n ? !Object.keys(e).length : void 0)
-          }(a[t]) ? (e[t] = a[t], e) : function(e, t, n) {
-            return Object.keys(n).reduce((function(t, r) {
-              return t[e + s + r] = n[r], t
+          }(r[t]) ? (e[t] = r[t], e) : function(e, t, n) {
+            return Object.keys(n).reduce((function(t, a) {
+              return t[e + s + a] = n[a], t
             }), t)
-          }(t, e, r(a[t], o))
-        }), {}), Object.keys(a).forEach((function(t) {
+          }(t, e, a(r[t], o))
+        }), {}), Object.keys(r).forEach((function(t) {
           const n = t.split(s).map(c);
-          let r = d(n.shift()),
+          let a = d(n.shift()),
             u = d(n[0]),
             f = i;
           for (; void 0 !== u;) {
-            if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(f[r]),
+            if ("__proto__" === a) return;
+            const e = Object.prototype.toString.call(f[a]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!l && !t && void 0 !== f[r]) return;
-            (l && !t || !l && null == f[r]) && (f[r] = "number" != typeof u || o.object ? {} : []), f = f[r], n.length > 0 && (r = d(n.shift()), u = d(n[0]))
+            if (!l && !t && void 0 !== f[a]) return;
+            (l && !t || !l && null == f[a]) && (f[a] = "number" != typeof u || o.object ? {} : []), f = f[a], n.length > 0 && (a = d(n.shift()), u = d(n[0]))
           }
-          f[r] = e(a[t], o)
+          f[a] = e(r[t], o)
         })), i
       }
     },
@@ -87,51 +87,51 @@ _global.SENTRY_RELEASE = {
         h: () => l,
         Wx: () => d
       });
-      var r = n(62229),
-        a = n(95966);
+      var a = n(62229),
+        r = n(95966);
       n(98397), n(25854);
-      const o = (0, a.setContextItem)({
-          context: (0, r.createContext)(void 0),
+      const o = (0, r.setContextItem)({
+          context: (0, a.createContext)(void 0),
           key: "gtmContext22"
         }),
         s = {
           track: () => null
         },
-        l = () => (0, r.useContext)(o) ?? s;
-      (0, a.setMakeVarItem)({
+        l = () => (0, a.useContext)(o) ?? s;
+      (0, r.setMakeVarItem)({
         key: "navOpenReactive",
-        value: (0, a.makeVar)(null)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(null)
+      }), (0, r.setMakeVarItem)({
         key: "jumpScMenuFocusReactive",
-        value: (0, a.makeVar)(!1)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(!1)
+      }), (0, r.setMakeVarItem)({
         key: "hasNotificationsReactive",
-        value: (0, a.makeVar)(!1)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(!1)
+      }), (0, r.setMakeVarItem)({
         key: "currentCharIdReactive",
-        value: (0, a.makeVar)((0, a.webSettingsReactive)()?.currentCharId)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)((0, r.webSettingsReactive)()?.currentCharId)
+      }), (0, r.setMakeVarItem)({
         key: "selectedCharacterTupleReactive",
-        value: (0, a.makeVar)(null)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(null)
+      }), (0, r.setMakeVarItem)({
         key: "rockstarIdReactive",
-        value: (0, a.makeVar)(null)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(null)
+      }), (0, r.setMakeVarItem)({
         key: "charactersNeededReactive",
-        value: (0, a.makeVar)(!1)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(!1)
+      }), (0, r.setMakeVarItem)({
         key: "crewsNeededReactive",
-        value: (0, a.makeVar)(!1)
-      }), (0, a.setMakeVarItem)({
+        value: (0, r.makeVar)(!1)
+      }), (0, r.setMakeVarItem)({
         key: "userDataReactive",
-        value: (0, a.makeVar)(null)
+        value: (0, r.makeVar)(null)
       }), n(93830), n(4895);
       const c = {},
-        i = (0, a.setContextItem)({
-          context: (0, r.createContext)(c),
+        i = (0, r.setContextItem)({
+          context: (0, a.createContext)(c),
           key: "userContext"
         }),
-        d = () => (0, r.useContext)(i)
+        d = () => (0, a.useContext)(i)
     },
     63516: (e, t, n) => {
       "use strict";
@@ -147,13 +147,13 @@ _global.SENTRY_RELEASE = {
         useTinaPayload: () => f.i,
         useTranslations: () => b
       });
-      var r = n(62229),
-        a = n(16188),
-        o = n.n(a);
+      var a = n(62229),
+        r = n(16188),
+        o = n.n(r);
       var s = n(95966),
         l = n(25854);
       const c = (0, s.setContextItem)({
-          context: (0, r.createContext)(),
+          context: (0, a.createContext)(),
           key: "tinaParser"
         }),
         {
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        u = () => (0, r.useContext)(c);
+        u = () => (0, a.useContext)(c);
       var f = n(27538),
         p = n(24784),
         m = n.n(p),
@@ -179,18 +179,18 @@ _global.SENTRY_RELEASE = {
           payload: t,
           variables: n
         } = e;
-        const r = ((e, t) => {
+        const a = ((e, t) => {
             const n = {};
-            return o().cloneDeepWith(e, ((e, r, a) => {
-              r === t && e && (n[a.key] = e)
+            return o().cloneDeepWith(e, ((e, a, r) => {
+              a === t && e && (n[r.key] = e)
             })), n
           })(t, y.Qw),
-          a = JSON.parse(JSON.stringify(o().merge(JSON.parse(JSON.stringify(r)), JSON.parse(JSON.stringify(n?.keys ?? {}))))),
+          r = JSON.parse(JSON.stringify(o().merge(JSON.parse(JSON.stringify(a)), JSON.parse(JSON.stringify(n?.keys ?? {}))))),
           s = JSON.parse(JSON.stringify(t));
         return o().cloneDeepWith(s, ((e, t, n) => {
           (e => {
             if (!e || !o().has(e, "key") || e.translated) return;
-            const t = a[e.key] ?? null;
+            const t = r[e.key] ?? null;
             if (!t) return;
             const n = m()(t);
             Object.keys(n).map((t => {
@@ -209,7 +209,7 @@ _global.SENTRY_RELEASE = {
           let {
             threshold: t = .6,
             children: n,
-            gtm: a = {}
+            gtm: r = {}
           } = e;
           const {
             track: o
@@ -217,10 +217,10 @@ _global.SENTRY_RELEASE = {
             ref: c,
             scrollTracked: i
           } = (0, s.useScrollTracking)(t);
-          return (0, r.useEffect)((() => {
+          return (0, a.useEffect)((() => {
             i && o({
               ...h,
-              ...a
+              ...r
             })
           }), [i]), (0, l.jsx)("section", {
             ref: c,
@@ -231,27 +231,27 @@ _global.SENTRY_RELEASE = {
           let {
             impressionTracking: t,
             gtm: n = {},
-            children: r
+            children: a
           } = e;
           return t?.shouldTrack ? (0, l.jsx)(v, {
             threshold: t?.threshold,
             gtm: n,
-            children: r
-          }) : r
+            children: a
+          }) : a
         },
         j = e => {
           let {
             components: t,
             payload: n,
-            componentProps: a = {}
+            componentProps: r = {}
           } = e;
-          const s = (0, r.useMemo)((() => (o().cloneDeepWith(n, ((e, r) => {
-            "_template" !== r || Number.isInteger(Number(e)) || o().get(t, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", n), console.error("Components:", t))
+          const s = (0, a.useMemo)((() => (o().cloneDeepWith(n, ((e, a) => {
+            "_template" !== a || Number.isInteger(Number(e)) || o().get(t, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", n), console.error("Components:", t))
           })), (e => {
             let {
               components: t,
               payload: n,
-              componentProps: a
+              componentProps: r
             } = e;
             const s = e => {
               let c = "";
@@ -278,10 +278,10 @@ _global.SENTRY_RELEASE = {
                 }),
                 f = [...e?.translations ?? []].reverse(),
                 p = `componentProps_${(0,g.A)()}`;
-              return (0, r.createElement)(u, {
+              return (0, a.createElement)(u, {
                 ...n?.meta,
                 ...e,
-                ...a,
+                ...r,
                 t: e => f.find((t => t?._key === e))?.value ?? e,
                 key: p
               }, c)
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
           })({
             components: t,
             payload: n,
-            componentProps: a
+            componentProps: r
           }))), [JSON.stringify(n), JSON.stringify(t)]);
           return s
         },
@@ -298,23 +298,23 @@ _global.SENTRY_RELEASE = {
           let {
             tina: t,
             components: n = {},
-            componentProps: a = {}
+            componentProps: r = {}
           } = e;
           const s = (0, f.i)(),
-            [c, i] = (0, r.useState)(null),
-            [p, m] = (0, r.useState)(null);
-          (0, r.useEffect)((() => {
+            [c, i] = (0, a.useState)(null),
+            [p, m] = (0, a.useState)(null);
+          (0, a.useEffect)((() => {
             t?.payload && i(t.payload), t?.variables && m(t.variables)
           }), [t]);
-          const [y] = (0, r.useState)({
+          const [y] = (0, a.useState)({
             ...n,
             ...u() ?? {}
           }), g = (e => {
             let {
               payload: t
             } = e;
-            const [n, a] = (0, r.useState)(t);
-            return (0, r.useEffect)((() => {
+            const [n, r] = (0, a.useState)(t);
+            return (0, a.useEffect)((() => {
               const e = o().debounce((() => {
                 const e = JSON.parse(JSON.stringify(t));
                 o().cloneDeepWith(e, ((e, t, n) => {
@@ -337,7 +337,7 @@ _global.SENTRY_RELEASE = {
                       _template: e?._template
                     })
                   })(n)
-                })), a(e)
+                })), r(e)
               }), 250);
               return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
             }), [t]), n
@@ -347,11 +347,11 @@ _global.SENTRY_RELEASE = {
             payload: c,
             variables: p
           });
-          return (0, r.useMemo)((() => {
+          return (0, a.useMemo)((() => {
             if (!c) return null;
             const e = k,
               n = c?.meta?.prod ?? c?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
-              r = {
+              a = {
                 ...c,
                 meta: {
                   ...c?.meta ?? {},
@@ -359,14 +359,14 @@ _global.SENTRY_RELEASE = {
                 }
               };
             return (0, l.jsx)(f.o, {
-              payload: r,
+              payload: a,
               children: (0, l.jsx)(d, {
                 components: y,
                 children: (0, l.jsx)(j, {
                   payload: e,
                   components: y,
                   componentProps: {
-                    ...a,
+                    ...r,
                     tina: t
                   }
                 })
@@ -379,20 +379,20 @@ _global.SENTRY_RELEASE = {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-            r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => {},
-            a = {
+            a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : () => {},
+            r = {
               ...n
             };
           if (t > 0) {
-            const o = M(e, t - 1, n, r);
-            a = {
-              ...a,
-              ...r(e, {
+            const o = M(e, t - 1, n, a);
+            r = {
+              ...r,
+              ...a(e, {
                 templates: o
               })
             }
           }
-          return a
+          return r
         },
         S = M
     }

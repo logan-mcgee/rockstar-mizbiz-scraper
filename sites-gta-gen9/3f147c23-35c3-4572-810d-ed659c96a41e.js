@@ -58,14 +58,14 @@ _global.SENTRY_RELEASE = {
         __importDefault: () => k,
         __importStar: () => I,
         __makeTemplateObject: () => M,
-        __metadata: () => d,
+        __metadata: () => p,
         __param: () => s,
         __propKey: () => f,
         __read: () => w,
         __rest: () => i,
         __rewriteRelativeImportExtension: () => N,
         __runInitializers: () => u,
-        __setFunctionName: () => p,
+        __setFunctionName: () => d,
         __spread: () => g,
         __spreadArray: () => j,
         __spreadArrays: () => m,
@@ -129,15 +129,15 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var c, s = n.kind, l = "getter" === s ? "get" : "setter" === s ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
+        for (var c, s = n.kind, l = "getter" === s ? "get" : "setter" === s ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
           var y = {};
           for (var _ in n) y[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) y.access[_] = n.access[_];
           y.addInitializer = function(e) {
-            if (p) throw new TypeError("Cannot add initializers after decoration has completed");
+            if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var b = (0, r[d])("accessor" === s ? {
+          var b = (0, r[p])("accessor" === s ? {
             get: f.get,
             set: f.set
           } : f[l], y);
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
             (c = i(b.get)) && (f.get = c), (c = i(b.set)) && (f.set = c), (c = i(b.init)) && o.unshift(c)
           } else(c = i(b)) && ("field" === s ? o.unshift(c) : f[l] = c)
         }
-        u && Object.defineProperty(u, n.name, f), p = !0
+        u && Object.defineProperty(u, n.name, f), d = !0
       }
 
       function u(e, t, r) {
@@ -159,14 +159,14 @@ _global.SENTRY_RELEASE = {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
-      function p(e, t, r) {
+      function d(e, t, r) {
         return "symbol" == typeof t && (t = t.description ? "[".concat(t.description, "]") : ""), Object.defineProperty(e, "name", {
           configurable: !0,
           value: r ? "".concat(r, " ", t) : t
         })
       }
 
-      function d(e, t) {
+      function p(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
@@ -555,8 +555,8 @@ _global.SENTRY_RELEASE = {
         __esDecorate: l,
         __runInitializers: u,
         __propKey: f,
-        __setFunctionName: p,
-        __metadata: d,
+        __setFunctionName: d,
+        __metadata: p,
         __awaiter: y,
         __generator: _,
         __createBinding: b,
@@ -653,10 +653,10 @@ _global.SENTRY_RELEASE = {
           let a = 0;
           for (; a < c - 2 && !(o < t[a + 1]); a++);
           let f = u(0, 1, (0, i.q)(t[a], t[a + 1], o));
-          const p = function(e, t) {
+          const d = function(e, t) {
             return s(e) ? e[l(0, e.length, t)] : e
           }(r, a);
-          return f = p(f), (0, n.j)(e[a], e[a + 1], f)
+          return f = d(f), (0, n.j)(e[a], e[a + 1], f)
         }
       }
     }

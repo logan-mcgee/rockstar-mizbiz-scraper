@@ -17,39 +17,39 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [3461], {
     3461: (e, t) => {
-      var n = [],
-        a = function() {
+      var a = [],
+        n = function() {
           var e, t;
-          for (t = 0; t < n.length; t += 1) e = n[t], o(e) && (e.style.maxWidth = "", l(e, e.clientHeight, 0, e.clientWidth))
+          for (t = 0; t < a.length; t += 1) e = a[t], o(e) && (e.style.maxWidth = "", l(e, e.clientHeight, 0, e.clientWidth))
         },
-        l = function(e, t, n, a) {
+        l = function(e, t, a, n) {
           var o;
-          n >= a ? e.style.maxWidth = a + "px" : (o = (n + a) / 2, e.style.maxWidth = o + "px", e.clientHeight > t ? l(e, t, o + 1, a) : l(e, t, n + 1, o))
+          a >= n ? e.style.maxWidth = n + "px" : (o = (a + n) / 2, e.style.maxWidth = o + "px", e.clientHeight > t ? l(e, t, o + 1, n) : l(e, t, a + 1, o))
         },
         o = function(e) {
-          var t, n, a, l, o;
-          return o = e.innerHTML, a = e.innerHTML.split(" "), (l = document.createElement("span")).id = "element-first-word", l.innerHTML = a[0], a = a.slice(1), e.innerHTML = "", e.appendChild(l), e.innerHTML += " " + a.join(" "), t = (l = document.getElementById("element-first-word")).offsetHeight, n = e.offsetHeight, e.innerHTML = o, n - 10 > t
+          var t, a, n, l, o;
+          return o = e.innerHTML, n = e.innerHTML.split(" "), (l = document.createElement("span")).id = "element-first-word", l.innerHTML = n[0], n = n.slice(1), e.innerHTML = "", e.appendChild(l), e.innerHTML += " " + n.join(" "), t = (l = document.getElementById("element-first-word")).offsetHeight, a = e.offsetHeight, e.innerHTML = o, a - 10 > t
         };
       t.balanceText = function(e) {
         e ? function(e) {
           selectorArray = e.split(",");
           for (var t = 0; t < selectorArray.length; t += 1)
-            for (var a = document.querySelectorAll(selectorArray[t].trim()), l = 0; l < a.length; l += 1) {
-              var o = a[l];
-              n.push(o)
+            for (var n = document.querySelectorAll(selectorArray[t].trim()), l = 0; l < n.length; l += 1) {
+              var o = n[l];
+              a.push(o)
             }
-        }(e) : n = document.querySelectorAll(".balance-text"), a();
-        var t, l, o, r, d = (t = function() {
-          a()
+        }(e) : a = document.querySelectorAll(".balance-text"), n();
+        var t, l, o, d, r = (t = function() {
+          n()
         }, l = 100, function() {
           var e = this,
-            n = arguments,
-            a = o && !r;
-          clearTimeout(r), r = setTimeout((function() {
-            r = null, o || t.apply(e, n)
-          }), l), a && t.apply(e, n)
+            a = arguments,
+            n = o && !d;
+          clearTimeout(d), d = setTimeout((function() {
+            d = null, o || t.apply(e, a)
+          }), l), n && t.apply(e, a)
         });
-        window.addEventListener("resize", d)
+        window.addEventListener("resize", r)
       }
     }
   }

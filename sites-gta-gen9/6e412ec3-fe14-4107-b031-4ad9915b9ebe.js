@@ -47,9 +47,9 @@ _global.SENTRY_RELEASE = {
           findDOMNode: null
         },
         a = Symbol.for("react.portal"),
-        f = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        d = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
 
-      function d(e, t) {
+      function f(e, t) {
         return "font" === e ? "" : "string" == typeof t ? "use-credentials" === t ? t : "" : void 0
       }
       t.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = s, t.createPortal = function(e, t) {
@@ -66,12 +66,12 @@ _global.SENTRY_RELEASE = {
           }
         }(e, t, null, n)
       }, t.flushSync = function(e) {
-        var t = f.T,
+        var t = d.T,
           n = s.p;
         try {
-          if (f.T = null, s.p = 2, e) return e()
+          if (d.T = null, s.p = 2, e) return e()
         } finally {
-          f.T = t, s.p = n, s.d.f()
+          d.T = t, s.p = n, s.d.f()
         }
       }, t.preconnect = function(e, t) {
         "string" == typeof e && (t = t ? "string" == typeof(t = t.crossOrigin) ? "use-credentials" === t ? t : "" : void 0 : null, s.d.C(e, t))
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
       }, t.preinit = function(e, t) {
         if ("string" == typeof e && t && "string" == typeof t.as) {
           var n = t.as,
-            i = d(n, t.crossOrigin),
+            i = f(n, t.crossOrigin),
             r = "string" == typeof t.integrity ? t.integrity : void 0,
             o = "string" == typeof t.fetchPriority ? t.fetchPriority : void 0;
           "style" === n ? s.d.S(e, "string" == typeof t.precedence ? t.precedence : void 0, {
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
         if ("string" == typeof e)
           if ("object" == typeof t && null !== t) {
             if (null == t.as || "script" === t.as) {
-              var n = d(t.as, t.crossOrigin);
+              var n = f(t.as, t.crossOrigin);
               s.d.M(e, {
                 crossOrigin: n,
                 integrity: "string" == typeof t.integrity ? t.integrity : void 0,
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
       }, t.preload = function(e, t) {
         if ("string" == typeof e && "object" == typeof t && null !== t && "string" == typeof t.as) {
           var n = t.as,
-            i = d(n, t.crossOrigin);
+            i = f(n, t.crossOrigin);
           s.d.L(e, n, {
             crossOrigin: i,
             integrity: "string" == typeof t.integrity ? t.integrity : void 0,
@@ -125,7 +125,7 @@ _global.SENTRY_RELEASE = {
       }, t.preloadModule = function(e, t) {
         if ("string" == typeof e)
           if (t) {
-            var n = d(t.as, t.crossOrigin);
+            var n = f(t.as, t.crossOrigin);
             s.d.m(e, {
               as: "string" == typeof t.as && "script" !== t.as ? t.as : void 0,
               crossOrigin: n,
@@ -137,9 +137,9 @@ _global.SENTRY_RELEASE = {
       }, t.unstable_batchedUpdates = function(e, t) {
         return e(t)
       }, t.useFormState = function(e, t, n) {
-        return f.H.useFormState(e, t, n)
+        return d.H.useFormState(e, t, n)
       }, t.useFormStatus = function() {
-        return f.H.useHostTransitionStatus()
+        return d.H.useHostTransitionStatus()
       }, t.version = "19.1.0"
     },
     78275: (e, t, n) => {

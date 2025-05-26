@@ -31,8 +31,8 @@ _global.SENTRY_RELEASE = {
           image: s,
           logoHorizontalPosition: a,
           logoVerticalPosition: l,
-          enableOverlay: o = !1,
-          overlayBackground: d = "rgba(0,0,0,0.25)"
+          enableOverlay: d = !1,
+          overlayBackground: o = "rgba(0,0,0,0.25)"
         } = e;
         const g = (0, c.S1)(s ?? {}),
           m = (0, r.useGetCdnSource)(t?.mobile ?? null),
@@ -40,9 +40,9 @@ _global.SENTRY_RELEASE = {
           b = g?.src?.mobile,
           f = g?.src?.desktop ?? b;
         return (0, i.jsx)("div", {
-          className: n()("rockstargames-sites-gta-gen9dd3eed68318843fe25f147a11901017e", o ? "rockstargames-sites-gta-gen9d1ac49cbb3da8269c13f1ccc1b515fb4" : ""),
+          className: n()("rockstargames-sites-gta-gen9dd3eed68318843fe25f147a11901017e", d ? "rockstargames-sites-gta-gen9d1ac49cbb3da8269c13f1ccc1b515fb4" : ""),
           style: {
-            "--overlay-background-color": d
+            "--overlay-background-color": o
           },
           children: (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9b5e649bc428f66ddfa8db02936f5b69d",
@@ -60,8 +60,8 @@ _global.SENTRY_RELEASE = {
           })
         })
       };
-      var o = s(62229),
-        d = s(78170),
+      var d = s(62229),
+        o = s(78170),
         g = s(74523);
 
       function m(e, t) {
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
         const a = function(e, t) {
           return +m(e) - +m(t)
         }(e, t) / 1e3;
-        return (0, d.u)(s?.roundingMethod)(a)
+        return (0, o.u)(s?.roundingMethod)(a)
       }
       var b = s(95966),
         f = s(81788);
@@ -150,13 +150,13 @@ _global.SENTRY_RELEASE = {
             theme: a,
             includeSeconds: c = !1,
             showBackground: l,
-            backgroundColor: d,
+            backgroundColor: o,
             successBgImages: g,
             failureBgImages: m
           } = e;
           const {
             isMobile: x
-          } = (0, b.useWindowResize)(), [w, k] = (0, o.useState)(!1), p = (0, r.useGetCdnSource)(g?.imageLeft?.mobile ?? null), v = (0, r.useGetCdnSource)(g?.imageLeft?.desktop ?? p), j = (0, r.useGetCdnSource)(g?.imageRight?.mobile ?? null), N = (0, r.useGetCdnSource)(g?.imageRight?.desktop ?? j), y = (0, r.useGetCdnSource)(m?.imageLeft?.mobile ?? null), M = (0, r.useGetCdnSource)(m?.imageLeft?.desktop ?? y), C = (0, r.useGetCdnSource)(m?.imageRight?.mobile ?? null), S = (0, r.useGetCdnSource)(m?.imageRight?.desktop ?? C), B = (0, o.useCallback)(((e, t) => {
+          } = (0, b.useWindowResize)(), [w, k] = (0, d.useState)(!1), p = (0, r.useGetCdnSource)(g?.imageLeft?.mobile ?? null), v = (0, r.useGetCdnSource)(g?.imageLeft?.desktop ?? p), j = (0, r.useGetCdnSource)(g?.imageRight?.mobile ?? null), N = (0, r.useGetCdnSource)(g?.imageRight?.desktop ?? j), y = (0, r.useGetCdnSource)(m?.imageLeft?.mobile ?? null), M = (0, r.useGetCdnSource)(m?.imageLeft?.desktop ?? y), C = (0, r.useGetCdnSource)(m?.imageRight?.mobile ?? null), S = (0, r.useGetCdnSource)(m?.imageRight?.desktop ?? C), B = (0, d.useCallback)(((e, t) => {
             const s = u(e, new Date);
             return s <= 0 ? (k(!0), {
               days: "00",
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
               minutes: String(Math.floor(s % 3600 / 60)).padStart(2, "0"),
               seconds: t ? String(Math.floor(s % 60)).padStart(2, "0") : "00"
             }
-          }), []), [I, L] = (0, o.useState)((() => B(t, c)));
-          return (0, o.useEffect)((() => {
+          }), []), [I, L] = (0, d.useState)((() => B(t, c)));
+          return (0, d.useEffect)((() => {
             const e = setInterval((() => {
               L(B(t, c))
             }), c ? 1e3 : 6e4);
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
               "--counter-text-stroke-width": a?.enableTextStroke ? a?.textStrokeWidth : "unset",
               "--counter-text-shadow": a?.enableTextShadow ? a.textShadow : "unset",
               "--counter-text-gradient": a?.enableTextGradient ? a.textGradient : "none",
-              "--counter-background-color": l ? d : "none",
+              "--counter-background-color": l ? o : "none",
               "--counter-orientation": "vertical" === a?.counterOrientation ? "column" : "row"
             },
             children: ["active" === s && (0, i.jsxs)(i.Fragment, {
@@ -360,11 +360,11 @@ _global.SENTRY_RELEASE = {
           } = e;
           const c = (0, f.useIntl)(),
             l = a ? "rockstargames-sites-gta-gen9a237ddf12d1e317c6389b99dab0ebaaf" : "",
-            o = r ? "rockstargames-sites-gta-gen9cf16fb2f605281b22e08858bd0b10be8" : "";
+            d = r ? "rockstargames-sites-gta-gen9cf16fb2f605281b22e08858bd0b10be8" : "";
           return (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9ea109f400f7e49404883a62664e5c4f9",
             children: (0, i.jsxs)("div", {
-              className: n()("rockstargames-sites-gta-gen9a4776cf49ea083284f9d403b204c9b78", l, o),
+              className: n()("rockstargames-sites-gta-gen9a4776cf49ea083284f9d403b204c9b78", l, d),
               children: [(0, i.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9fe16bcb2866e77749008c06e96e776c2",
                 children: [(0, i.jsx)("h4", {
@@ -426,14 +426,14 @@ _global.SENTRY_RELEASE = {
             initialTitle: r,
             initialDate: c
           } = e;
-          const l = (0, o.useRef)(null),
-            d = (0, o.useRef)(null),
-            [g, m] = (0, o.useState)(!1),
+          const l = (0, d.useRef)(null),
+            o = (0, d.useRef)(null),
+            [g, m] = (0, d.useState)(!1),
             {
               isMobile: u
             } = (0, k.G4)();
-          if ((0, k.T0)(l), (0, o.useEffect)((() => {
-              u && l.current && d.current && (l.current.scrollLeft = d.current.getBoundingClientRect().left - window.innerWidth / 2, l.current.addEventListener("scroll", (e => {
+          if ((0, k.T0)(l), (0, d.useEffect)((() => {
+              u && l.current && o.current && (l.current.scrollLeft = o.current.getBoundingClientRect().left - window.innerWidth / 2, l.current.addEventListener("scroll", (e => {
                 const t = e.target;
                 t && Math.ceil(t.scrollLeft + t.clientWidth) >= t.scrollWidth ? m(!0) : m(!1)
               })))
@@ -463,14 +463,14 @@ _global.SENTRY_RELEASE = {
                 children: [(0, i.jsxs)("div", {
                   className: y.milestoneFlags,
                   children: [-1 === b ? (0, i.jsx)("div", {
-                    ref: d,
+                    ref: o,
                     className: y.milestoneFlag,
                     "data-testid": "marker",
                     children: (0, i.jsx)(N, {})
                   }) : (0, i.jsx)("div", {
                     className: y.milestoneFlag
                   }), n.map(((e, t) => t === b ? (0, i.jsx)("div", {
-                    ref: d,
+                    ref: o,
                     className: y.milestoneFlag,
                     "data-testid": "marker",
                     children: (0, i.jsx)(N, {})
@@ -598,15 +598,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: a
-          } = (0, b.useWindowResize)(), n = (0, f.useIntl)(), r = (0, o.useRef)(null), c = (0, o.useRef)(null), l = (0, o.useRef)(null), d = (0, o.useRef)(), [g, m] = (0, o.useState)(!1), [u, _] = (0, o.useState)(), [h, x] = (0, o.useState)(!1), [w, k] = (0, o.useState)(!1), {
+          } = (0, b.useWindowResize)(), n = (0, f.useIntl)(), r = (0, d.useRef)(null), c = (0, d.useRef)(null), l = (0, d.useRef)(null), o = (0, d.useRef)(), [g, m] = (0, d.useState)(!1), [u, _] = (0, d.useState)(), [h, x] = (0, d.useState)(!1), [w, k] = (0, d.useState)(!1), {
             track: p
-          } = (0, B.useGtmTrack)(), v = d?.current?.swiper, j = t?.heading, N = t?.cards;
-          (0, o.useEffect)((() => {
+          } = (0, B.useGtmTrack)(), v = o?.current?.swiper, j = t?.heading, N = t?.cards;
+          (0, d.useEffect)((() => {
             if (v && "number" == typeof v?.params?.slidesPerView) {
               const e = v.slides?.length;
               m(e > v.params.slidesPerView)
             }
-          }), [N, v?.params.slidesPerView]), (0, o.useEffect)((() => {
+          }), [N, v?.params.slidesPerView]), (0, d.useEffect)((() => {
             _({
               nextEl: c.current,
               prevEl: r.current
@@ -669,7 +669,7 @@ _global.SENTRY_RELEASE = {
                   })]
                 }), (0, i.jsxs)(S.RC, {
                   slidesPerView: 1.25,
-                  ref: d,
+                  ref: o,
                   onSlideChange: e => {
                     x(e.isBeginning), k(e.isEnd)
                   },
@@ -870,8 +870,8 @@ _global.SENTRY_RELEASE = {
             className: s = "",
             consoleBtn: a,
             icon: l = "",
-            img: o,
-            labelColor: d = "#000",
+            img: d,
+            labelColor: o = "#000",
             onClick: g,
             secondText: m,
             size: u,
@@ -882,13 +882,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const x = [n.plusButton, n[_] ?? "", n[u] ?? "", n[a] ?? "", s].join(" "),
             w = {
-              "--hvr-color": t ?? d,
-              "--hvr-bg-color": d ?? t,
-              "--hvr-border-color": t ?? d
+              "--hvr-color": t ?? o,
+              "--hvr-bg-color": o ?? t,
+              "--hvr-border-color": t ?? o
             },
             k = (0, r.jsxs)(r.Fragment, {
-              children: [o ? (0, r.jsx)("img", {
-                src: o,
+              children: [d ? (0, r.jsx)("img", {
+                src: d,
                 alt: ""
               }) : "", (0, r.jsxs)("div", {
                 className: n.btnText,
@@ -939,7 +939,7 @@ _global.SENTRY_RELEASE = {
     },
     27538: (e, t, s) => {
       s.d(t, {
-        i: () => o,
+        i: () => d,
         o: () => l
       });
       var a = s(62229),
@@ -962,15 +962,15 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        o = () => (0, a.useContext)(c)
+        d = () => (0, a.useContext)(c)
     },
     38558: (e, t, s) => {
       s.d(t, {
         C1: () => l,
         S1: () => i,
         XC: () => m,
-        jS: () => o,
-        qg: () => d,
+        jS: () => d,
+        qg: () => o,
         z0: () => g
       });
       var a = s(62229),
@@ -990,31 +990,31 @@ _global.SENTRY_RELEASE = {
             mobile: s = null,
             desktop: i = null,
             ariaLabel: l = null,
-            sources: o = null,
-            prod: d = null
+            sources: d = null,
+            prod: o = null
           } = e;
           const g = (0, n.useLocale)(),
             {
               meta: m = {}
             } = (0, r.i)() ?? {},
-            [u, b] = (0, a.useState)(d ?? m?.cdn ?? m?.prod ?? !0);
+            [u, b] = (0, a.useState)(o ?? m?.cdn ?? m?.prod ?? !0);
           (0, a.useEffect)((() => {
-            b(d ?? m?.cdn ?? m?.prod ?? !0)
-          }), [d, m]);
+            b(o ?? m?.cdn ?? m?.prod ?? !0)
+          }), [o, m]);
           const f = (0, a.useCallback)((e => {
-            const t = null !== o,
+            const t = null !== d,
               s = e?.previewSrc ?? e ?? null;
             if (null === s || "string" != typeof s) return null;
             if (s.startsWith("http")) return c(s);
             const a = `${t?(0,n.getCdnPrefix)(u):""}${s}`;
             return c(a)
-          }), [u, o]);
+          }), [u, d]);
           return {
             alt: t,
             ariaLabel: l,
             src: {
-              mobile: f(o?.[g]?.mobile ?? o?.en_us?.mobile ?? s),
-              desktop: f(o?.[g]?.desktop ?? o?.en_us?.desktop ?? i)
+              mobile: f(d?.[g]?.mobile ?? d?.en_us?.mobile ?? s),
+              desktop: f(d?.[g]?.desktop ?? d?.en_us?.desktop ?? i)
             }
           }
         },
@@ -1028,7 +1028,7 @@ _global.SENTRY_RELEASE = {
             l(s?.cdn ?? s?.prod ?? !1)
           }), [s]), e ? e?.startsWith("http") ? c(e) : c(`${(0,n.getCdnPrefix)(i)}${e}`) : null
         },
-        o = () => {
+        d = () => {
           const e = (0, r.i)() ?? {},
             {
               meta: t = {}
@@ -1040,7 +1040,7 @@ _global.SENTRY_RELEASE = {
             return e ? e?.startsWith("http") ? c(e) : c(`${(0,n.getCdnPrefix)(a)}${e}`) : null
           }), [s])
         },
-        d = e => e.full_src,
+        o = e => e.full_src,
         g = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,n.getCdnPrefix)(!1)}${t}`

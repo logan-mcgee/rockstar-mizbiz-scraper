@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
         function o() {
           for (var e = "", t = 0; t < arguments.length; t++) {
             var a = arguments[t];
-            a && (e = l(e, r(a)))
+            a && (e = d(e, r(a)))
           }
           return e
         }
@@ -36,11 +36,11 @@ _global.SENTRY_RELEASE = {
           if (Array.isArray(e)) return o.apply(null, e);
           if (e.toString !== Object.prototype.toString && !e.toString.toString().includes("[native code]")) return e.toString();
           var t = "";
-          for (var a in e) n.call(e, a) && e[a] && (t = l(t, a));
+          for (var a in e) n.call(e, a) && e[a] && (t = d(t, a));
           return t
         }
 
-        function l(e, t) {
+        function d(e, t) {
           return t ? e ? e + " " + t : e + t : e
         }
         e.exports ? (o.default = o, e.exports = o) : void 0 === (a = function() {

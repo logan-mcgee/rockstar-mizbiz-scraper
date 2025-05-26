@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
         r = t(82943),
         i = t.n(r),
         c = t(39034),
-        u = t(85164),
-        f = t(17268),
+        f = t(85164),
+        u = t(17268),
         b = t(52542),
         y = t(25854);
       const g = (0, d.withIntl)((() => {
@@ -57,27 +57,27 @@ _global.SENTRY_RELEASE = {
         } = b?.companyInfo ?? "", p = b?.meta ?? "";
         return (0, y.jsx)(y.Fragment, {
           children: !g && b ? (0, y.jsxs)("div", {
-            className: u.A.safetyPageContainerStyles,
+            className: f.A.safetyPageContainerStyles,
             "data-context": "safetyPage",
             children: [(0, y.jsxs)("div", {
-              className: u.A.mainContent,
+              className: f.A.mainContent,
               children: [(0, y.jsx)(c.A, {
                 heading: p?.title,
                 description: p?.description,
                 lastUpdatedDate: e.formatMessage(n.A.resources_last_updated_date)
               }), (0, y.jsx)("div", {
-                className: u.A.bodyContent,
+                className: f.A.bodyContent,
                 children: (0, y.jsx)("span", {
                   dangerouslySetInnerHTML: {
                     __html: _
                   }
                 })
               })]
-            }), (0, y.jsx)(f.A, {
+            }), (0, y.jsx)(u.A, {
               page: "resources"
             })]
           }) : (0, y.jsx)("div", {
-            className: u.A.loading,
+            className: f.A.loading,
             children: (0, y.jsx)(l.A, {})
           })
         })

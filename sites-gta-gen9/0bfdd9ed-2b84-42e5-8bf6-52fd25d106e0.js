@@ -74,21 +74,21 @@ _global.SENTRY_RELEASE = {
           const s = r.createContext(a),
             u = t.length;
           t = [...t, a];
-          const i = n => {
+          const c = n => {
             const {
               scope: t,
               children: a,
-              ...i
-            } = n, c = t?.[e]?.[u] || s, l = r.useMemo((() => i), Object.values(i));
-            return (0, o.jsx)(c.Provider, {
+              ...c
+            } = n, i = t?.[e]?.[u] || s, l = r.useMemo((() => c), Object.values(c));
+            return (0, o.jsx)(i.Provider, {
               value: l,
               children: a
             })
           };
-          return i.displayName = n + "Provider", [i, function(t, o) {
-            const i = o?.[e]?.[u] || s,
-              c = r.useContext(i);
-            if (c) return c;
+          return c.displayName = n + "Provider", [c, function(t, o) {
+            const c = o?.[e]?.[u] || s,
+              i = r.useContext(c);
+            if (i) return i;
             if (void 0 !== a) return a;
             throw new Error(`\`${t}\` must be used within \`${n}\``)
           }]
@@ -122,14 +122,14 @@ _global.SENTRY_RELEASE = {
     30822: (e, n, t) => {
       var r;
       t.d(n, {
-        B: () => i
+        B: () => c
       });
       var o = t(62229),
         a = t(85307),
         s = (r || (r = t.t(o, 2)))[" useId ".trim().toString()] || (() => {}),
         u = 0;
 
-      function i(e) {
+      function c(e) {
         const [n, t] = o.useState(s());
         return (0, a.N)((() => {
           e || t((e => e ?? String(u++)))
@@ -148,9 +148,9 @@ _global.SENTRY_RELEASE = {
             present: n,
             children: t
           } = e, s = function(e) {
-            const [n, t] = r.useState(), o = r.useRef(null), s = r.useRef(e), i = r.useRef("none"), c = e ? "mounted" : "unmounted", [l, d] = function(e, n) {
+            const [n, t] = r.useState(), o = r.useRef(null), s = r.useRef(e), c = r.useRef("none"), i = e ? "mounted" : "unmounted", [l, d] = function(e, n) {
               return r.useReducer(((e, t) => n[e][t] ?? e), e)
-            }(c, {
+            }(i, {
               mounted: {
                 UNMOUNT: "unmounted",
                 ANIMATION_OUT: "unmountSuspended"
@@ -165,12 +165,12 @@ _global.SENTRY_RELEASE = {
             });
             return r.useEffect((() => {
               const e = u(o.current);
-              i.current = "mounted" === l ? e : "none"
+              c.current = "mounted" === l ? e : "none"
             }), [l]), (0, a.N)((() => {
               const n = o.current,
                 t = s.current;
               if (t !== e) {
-                const r = i.current,
+                const r = c.current,
                   o = u(n);
                 d(e ? "MOUNT" : "none" === o || "none" === n?.display ? "UNMOUNT" : t && r !== o ? "ANIMATION_OUT" : "UNMOUNT"), s.current = e
               }
@@ -188,7 +188,7 @@ _global.SENTRY_RELEASE = {
                     }
                   },
                   a = e => {
-                    e.target === n && (i.current = u(o.current))
+                    e.target === n && (c.current = u(o.current))
                   };
                 return n.addEventListener("animationstart", a), n.addEventListener("animationcancel", r), n.addEventListener("animationend", r), () => {
                   t.clearTimeout(e), n.removeEventListener("animationstart", a), n.removeEventListener("animationcancel", r), n.removeEventListener("animationend", r)
@@ -201,15 +201,15 @@ _global.SENTRY_RELEASE = {
                 o.current = e ? getComputedStyle(e) : null, t(e)
               }), [])
             }
-          }(n), i = "function" == typeof t ? t({
+          }(n), c = "function" == typeof t ? t({
             present: s.isPresent
-          }) : r.Children.only(t), c = (0, o.s)(s.ref, function(e) {
+          }) : r.Children.only(t), i = (0, o.s)(s.ref, function(e) {
             let n = Object.getOwnPropertyDescriptor(e.props, "ref")?.get,
               t = n && "isReactWarning" in n && n.isReactWarning;
             return t ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, t = n && "isReactWarning" in n && n.isReactWarning, t ? e.props.ref : e.props.ref || e.ref)
-          }(i));
-          return "function" == typeof t || s.isPresent ? r.cloneElement(i, {
-            ref: c
+          }(c));
+          return "function" == typeof t || s.isPresent ? r.cloneElement(c, {
+            ref: i
           }) : null
         };
 
@@ -233,7 +233,7 @@ _global.SENTRY_RELEASE = {
         onChange: t = () => {},
         caller: r
       }) {
-        const [a, u, i] = function({
+        const [a, u, c] = function({
           defaultProp: e,
           onChange: n
         }) {
@@ -246,26 +246,26 @@ _global.SENTRY_RELEASE = {
         }({
           defaultProp: n,
           onChange: t
-        }), c = void 0 !== e, l = c ? e : a; {
+        }), i = void 0 !== e, l = i ? e : a; {
           const n = o.useRef(void 0 !== e);
           o.useEffect((() => {
             const e = n.current;
-            if (e !== c) {
+            if (e !== i) {
               const n = e ? "controlled" : "uncontrolled",
-                t = c ? "controlled" : "uncontrolled";
+                t = i ? "controlled" : "uncontrolled";
               console.warn(`${r} is changing from ${n} to ${t}. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.`)
             }
-            n.current = c
-          }), [c, r])
+            n.current = i
+          }), [i, r])
         }
         const d = o.useCallback((n => {
-          if (c) {
+          if (i) {
             const t = function(e) {
               return "function" == typeof e
             }(n) ? n(e) : n;
-            t !== e && i.current?.(t)
+            t !== e && c.current?.(t)
           } else u(n)
-        }), [c, e, u, i]);
+        }), [i, e, u, c]);
         return [l, d]
       }
       Symbol("RADIX:SYNC_STATE")
@@ -284,7 +284,7 @@ _global.SENTRY_RELEASE = {
     },
     80355: (e, n, t) => {
       t.d(n, {
-        N: () => i
+        N: () => c
       });
       var r = t(62229),
         o = t(29818),
@@ -292,10 +292,10 @@ _global.SENTRY_RELEASE = {
         s = t(23135),
         u = t(25854);
 
-      function i(e) {
+      function c(e) {
         const n = e + "CollectionProvider",
-          [t, i] = (0, o.A)(n),
-          [c, l] = t(n, {
+          [t, c] = (0, o.A)(n),
+          [i, l] = t(n, {
             collectionRef: {
               current: null
             },
@@ -306,7 +306,7 @@ _global.SENTRY_RELEASE = {
               scope: n,
               children: t
             } = e, o = r.useRef(null), a = r.useRef(new Map).current;
-            return (0, u.jsx)(c, {
+            return (0, u.jsx)(i, {
               scope: n,
               itemMap: a,
               collectionRef: o,
@@ -327,27 +327,27 @@ _global.SENTRY_RELEASE = {
             })
           }));
         p.displayName = f;
-        const b = e + "CollectionItemSlot",
-          y = "data-radix-collection-item",
-          g = (0, s.TL)(b),
+        const y = e + "CollectionItemSlot",
+          b = "data-radix-collection-item",
+          g = (0, s.TL)(y),
           M = r.forwardRef(((e, n) => {
             const {
               scope: t,
               children: o,
               ...s
-            } = e, i = r.useRef(null), c = (0, a.s)(n, i), d = l(b, t);
-            return r.useEffect((() => (d.itemMap.set(i, {
-              ref: i,
+            } = e, c = r.useRef(null), i = (0, a.s)(n, c), d = l(y, t);
+            return r.useEffect((() => (d.itemMap.set(c, {
+              ref: c,
               ...s
             }), () => {
-              d.itemMap.delete(i)
+              d.itemMap.delete(c)
             }))), (0, u.jsx)(g, {
-              [y]: "",
-              ref: c,
+              [b]: "",
+              ref: i,
               children: o
             })
           }));
-        return M.displayName = b, [{
+        return M.displayName = y, [{
           Provider: d,
           Slot: p,
           ItemSlot: M
@@ -356,16 +356,16 @@ _global.SENTRY_RELEASE = {
           return r.useCallback((() => {
             const e = t.collectionRef.current;
             if (!e) return [];
-            const n = Array.from(e.querySelectorAll(`[${y}]`));
+            const n = Array.from(e.querySelectorAll(`[${b}]`));
             return Array.from(t.itemMap.values()).sort(((e, t) => n.indexOf(e.ref.current) - n.indexOf(t.ref.current)))
           }), [t.collectionRef, t.itemMap])
-        }, i]
+        }, c]
       }
       Map
     },
     85100: (e, n, t) => {
       t.d(n, {
-        hO: () => i,
+        hO: () => c,
         sG: () => u
       });
       var r = t(62229),
@@ -390,7 +390,7 @@ _global.SENTRY_RELEASE = {
           }
         }), {});
 
-      function i(e, n) {
+      function c(e, n) {
         e && o.flushSync((() => e.dispatchEvent(n)))
       }
     },

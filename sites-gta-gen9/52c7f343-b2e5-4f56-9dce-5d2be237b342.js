@@ -44,7 +44,7 @@ _global.SENTRY_RELEASE = {
     2190: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => d
       });
       var s = t(9623),
         n = t(2918),
@@ -83,13 +83,13 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        l = e => {
+        d = e => {
           let {
             altText: a = "",
             text: t,
             onClick: s,
-            btnColor: l = "#fff",
-            labelColor: d = "#000",
+            btnColor: d = "#fff",
+            labelColor: l = "#000",
             type: m = "",
             icon: g,
             size: u,
@@ -103,9 +103,9 @@ _global.SENTRY_RELEASE = {
           const {
             track: x
           } = (0, n.useGtmTrack)(), y = [i.A.plusButton, i.A[m] ?? "", i.A[u] ?? "", i.A[b] ?? ""].join(" "), _ = {
-            "--hvr-color": l ?? d,
-            "--hvr-bg-color": d ?? l,
-            "--hvr-border-color": l ?? d
+            "--hvr-color": d ?? l,
+            "--hvr-bg-color": l ?? d,
+            "--hvr-border-color": d ?? l
           }, j = (0, r.jsxs)(r.Fragment, {
             children: [p ? (0, r.jsx)("img", {
               src: p,
@@ -166,8 +166,8 @@ _global.SENTRY_RELEASE = {
         r = t(95966),
         c = t(2918),
         o = t(55799),
-        l = t(25583),
-        d = t(64784),
+        d = t(25583),
+        l = t(64784),
         m = t(57685);
       var g = t(25854);
       const u = n.withFadeIn((e => {
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
             }
           }) : "", (0, g.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9a95bcbbeab940098ba29db3fb16c5efb",
-            children: [(0, g.jsx)(d.A, {
+            children: [(0, g.jsx)(l.A, {
               brands: a
             }), (0, g.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9f311b2fc36099e756cef43769555fe37",
@@ -221,7 +221,7 @@ _global.SENTRY_RELEASE = {
                   __html: t
                 }
               }) : ""]
-            }), (0, g.jsx)(l.A, {
+            }), (0, g.jsx)(d.A, {
               ctas: n
             }), (0, g.jsx)(m.A, {
               disclaimer: u
@@ -264,8 +264,8 @@ _global.SENTRY_RELEASE = {
     8678: (e, a, t) => {
       "use strict";
       t.d(a, {
-        B: () => d,
-        Y: () => l
+        B: () => l,
+        Y: () => d
       });
       var s = t(62229),
         n = t(9623),
@@ -276,30 +276,30 @@ _global.SENTRY_RELEASE = {
           context: (0, s.createContext)(),
           key: "gen9Data"
         }),
-        l = () => (0, s.useContext)(o),
-        d = e => {
+        d = () => (0, s.useContext)(o),
+        l = e => {
           let {
             children: a
           } = e;
-          const [t, l] = (0, s.useState)(null), [d] = (0, n.useSearchParams)(), {
+          const [t, d] = (0, s.useState)(null), [l] = (0, n.useSearchParams)(), {
             setActiveSection: m
           } = (0, r.E_)(), {
             pauseUserShouldSeeMore: g
           } = (0, i.useScroll)(), u = (0, s.useCallback)((e => {
-            if (e !== d.get("section")) return void m(e);
-            const a = document.getElementsByName(d.get("section"))?.[0];
-            a && (g(), m(d.get("section")), a.scrollIntoView({
+            if (e !== l.get("section")) return void m(e);
+            const a = document.getElementsByName(l.get("section"))?.[0];
+            a && (g(), m(l.get("section")), a.scrollIntoView({
               behavior: "auto"
             }))
-          }), [d.get("section"), t]);
+          }), [l.get("section"), t]);
           (0, s.useEffect)((() => {
-            d.get("section") && u(d.get("section"))
-          }), [d.get("section")]);
+            l.get("section") && u(l.get("section"))
+          }), [l.get("section")]);
           const f = (0, s.useMemo)((() => ({
             announcePresence: u,
             section: t,
-            setSection: l
-          })), [u, t, l]);
+            setSection: d
+          })), [u, t, d]);
           return (0, c.jsx)(o.Provider, {
             value: f,
             children: a
@@ -372,8 +372,8 @@ _global.SENTRY_RELEASE = {
             className: t = "",
             consoleBtn: s,
             icon: o = "",
-            img: l,
-            labelColor: d = "#000",
+            img: d,
+            labelColor: l = "#000",
             onClick: m,
             secondText: g,
             size: u,
@@ -384,13 +384,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const k = [n.plusButton, n[p] ?? "", n[u] ?? "", n[s] ?? "", t].join(" "),
             h = {
-              "--hvr-color": a ?? d,
-              "--hvr-bg-color": d ?? a,
-              "--hvr-border-color": a ?? d
+              "--hvr-color": a ?? l,
+              "--hvr-bg-color": l ?? a,
+              "--hvr-border-color": a ?? l
             },
             x = (0, i.jsxs)(i.Fragment, {
-              children: [l ? (0, i.jsx)("img", {
-                src: l,
+              children: [d ? (0, i.jsx)("img", {
+                src: d,
                 alt: ""
               }) : "", (0, i.jsxs)("div", {
                 className: n.btnText,
@@ -494,7 +494,7 @@ _global.SENTRY_RELEASE = {
         r = t(62459),
         c = t(28136),
         o = t(73817),
-        l = t(25854);
+        d = t(25854);
       jest.mock("@rsgweb/locale-tools", (() => ({
         ...jest.requireActual("@rsgweb/locale-tools"),
         useIntl: () => ({
@@ -528,7 +528,7 @@ _global.SENTRY_RELEASE = {
         const e = jest.fn(),
           a = jest.fn(),
           t = jest.fn(),
-          d = jest.fn();
+          l = jest.fn();
         beforeAll((() => {
           Object.defineProperty(HTMLMediaElement.prototype, "play", {
             configurable: !0,
@@ -550,9 +550,9 @@ _global.SENTRY_RELEASE = {
         })), beforeEach((() => {
           n.useGtmTrack.mockReturnValue({
             track: e
-          }), i.useGetCdnSource.mockImplementation(a), c.getVideoUrl.mockImplementation(t), r.isReducedMotionPreferred.mockImplementation(d), e.mockClear(), a.mockClear(), t.mockClear(), d.mockClear()
+          }), i.useGetCdnSource.mockImplementation(a), c.getVideoUrl.mockImplementation(t), r.isReducedMotionPreferred.mockImplementation(l), e.mockClear(), a.mockClear(), t.mockClear(), l.mockClear()
         })), test("it renders fallback image when variant is image", (() => {
-          d.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          l.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, d.jsx)(o.default, {
             variant: "image",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -561,7 +561,7 @@ _global.SENTRY_RELEASE = {
           const e = s.nj.getByAltText("Fallback Image");
           expect(e).toBeInTheDocument(), expect(e).toHaveAttribute("src", "fallback.jpg")
         })), test("it renders video when variant is video and reduced notion is not preferred", (() => {
-          d.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          l.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, d.jsx)(o.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -570,7 +570,7 @@ _global.SENTRY_RELEASE = {
           const e = s.nj.getByTestId("hero-video");
           expect(e).toBeInTheDocument()
         })), test("it toggles play/pause state when play/pause button is clicked", (() => {
-          d.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          l.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, d.jsx)(o.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -586,7 +586,7 @@ _global.SENTRY_RELEASE = {
             text: "toggle pause"
           }))
         })), test("it renders video play/pause button with correct icon", (() => {
-          d.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          l.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, d.jsx)(o.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -597,10 +597,10 @@ _global.SENTRY_RELEASE = {
           });
           expect(s.nj.getByTitle("Play Video")).toBeInTheDocument(), s.rC.click(e), expect(s.nj.getByTitle("Pause Video")).toBeInTheDocument(), s.rC.click(e), expect(s.nj.getByTitle("Play Video")).toBeInTheDocument()
         })), test("it attaches and remove event listeners correctly", (() => {
-          d.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4");
+          l.mockReturnValue(!1), t.mockReturnValue("mock-video-url.mp4");
           const {
             unmount: e
-          } = (0, s.XX)((0, l.jsx)(o.default, {
+          } = (0, s.XX)((0, d.jsx)(o.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -608,7 +608,7 @@ _global.SENTRY_RELEASE = {
           })), a = s.nj.getByTestId("hero-video");
           expect(a.addEventListener).toHaveBeenCalledWith("play", expect.any(Function)), expect(a.addEventListener).toHaveBeenCalledWith("pause", expect.any(Function)), e(), expect(a.removeEventListener).toHaveBeenCalledWith("play", expect.any(Function)), expect(a.removeEventListener).toHaveBeenCalledWith("pause", expect.any(Function))
         })), test("it does not render video when reduced motion is preferred", (() => {
-          d.mockReturnValue(!0), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          l.mockReturnValue(!0), t.mockReturnValue("mock-video-url.mp4"), a.mockReturnValue("fallback.jpg"), (0, s.XX)((0, d.jsx)(o.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -727,7 +727,7 @@ _global.SENTRY_RELEASE = {
           onThresholdReached: t,
           children: r
         } = e;
-        const [c, o] = (0, s.useState)([]), [l, d] = (0, s.useState)(new Set);
+        const [c, o] = (0, s.useState)([]), [d, l] = (0, s.useState)(new Set);
         return (0, s.useEffect)((() => {
           const e = Array.from(new Set(a));
           e.sort(((e, a) => e - a)), o(e)
@@ -738,7 +738,7 @@ _global.SENTRY_RELEASE = {
           children: [c.map((e => (0, i.jsx)(n.InView, {
             threshold: e,
             onChange: a => ((e, a) => {
-              e && !l.has(a) && d((e => {
+              e && !d.has(a) && l((e => {
                 const s = new Set(e);
                 return c.forEach((e => {
                   e <= a && !s.has(e) && (s.add(e), t(e))
@@ -781,8 +781,8 @@ _global.SENTRY_RELEASE = {
         r = t(27654),
         c = t(83974),
         o = t(81788),
-        l = t(95966),
-        d = t(10619),
+        d = t(95966),
+        l = t(10619),
         m = t(1225),
         g = t(2918),
         u = t(32807);
@@ -824,7 +824,7 @@ _global.SENTRY_RELEASE = {
           track: x
         } = (0, g.useGtmTrack)(), {
           windowWidth: y
-        } = (0, l.useWindowResize)(), _ = (0, o.useIntl)(), j = {
+        } = (0, d.useWindowResize)(), _ = (0, o.useIntl)(), j = {
           "--promo-background": a ?? "var(--black-200)",
           "--promo-order": "left" === n ? "row" : "row-reverse"
         }, N = t(40844), S = () => {}, w = (0, u.A)().data, C = !!w?.length, T = (0, s.useMemo)((() => C ? (e => {
@@ -908,7 +908,7 @@ _global.SENTRY_RELEASE = {
                 }), (0, p.jsx)("p", {
                   children: _.formatMessage(f.discover_callout_description)
                 })]
-              }), (0, p.jsx)(d.A, {
+              }), (0, p.jsx)(l.A, {
                 to: "/gta-online/career-progress",
                 text: _.formatMessage(f.discover_callout_cta_label),
                 onClick: A && (() => x({
@@ -957,7 +957,7 @@ _global.SENTRY_RELEASE = {
       }));
       c.displayName = "LiteMotion";
       const o = c,
-        l = {
+        d = {
           visible: {
             opacity: 1
           },
@@ -965,7 +965,7 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        d = {
+        l = {
           ease: "easeIn",
           duration: .4
         },
@@ -975,14 +975,14 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, r.jsx)(i.motion.div, Object.assign({
             className: "rockstargames-sites-gta-gen9f38982805188b64825a72d2c5fac938c",
-            variants: l,
+            variants: d,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: d
+            transition: l
           }, {
             children: a
           }))
@@ -1224,8 +1224,8 @@ _global.SENTRY_RELEASE = {
         r = t(48782),
         c = t(2918),
         o = t(55799),
-        l = t(92440),
-        d = t(43851),
+        d = t(92440),
+        l = t(43851),
         m = t(52066),
         g = t(2190);
       const u = {
@@ -1263,8 +1263,8 @@ _global.SENTRY_RELEASE = {
             className: a,
             images: t
           } = e;
-          const s = (0, l.useGetCdnSource)(t?.mobile?.full_src ?? null),
-            n = (0, l.useGetCdnSource)(t?.desktop?.full_src ?? s);
+          const s = (0, d.useGetCdnSource)(t?.mobile?.full_src ?? null),
+            n = (0, d.useGetCdnSource)(t?.desktop?.full_src ?? s);
           return (0, b.jsxs)("div", {
             className: [a, u.responsiveImages].join(" "),
             children: [s ? (0, b.jsx)("div", {
@@ -1286,7 +1286,7 @@ _global.SENTRY_RELEASE = {
             buynowbtn: i = null,
             description: r = null,
             images: o,
-            links: l = [],
+            links: d = [],
             title: m = null
           } = e;
           const {
@@ -1367,7 +1367,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           };
-          return (0, b.jsx)(d.qr, {
+          return (0, b.jsx)(l.qr, {
             children: (0, b.jsxs)("div", {
               className: u.card,
               children: [(0, b.jsxs)("div", {
@@ -1396,9 +1396,9 @@ _global.SENTRY_RELEASE = {
                         __html: r
                       }
                     })]
-                  }), l.length ? (0, b.jsx)("div", {
+                  }), d.length ? (0, b.jsx)("div", {
                     className: u.platforms,
-                    children: l.map(((e, a) => (0, b.jsx)("div", {
+                    children: d.map(((e, a) => (0, b.jsx)("div", {
                       className: u[e.platform],
                       children: e.platform ? (0, b.jsx)("img", {
                         src: t(85394)(`./${e.platform}.svg`),
@@ -1473,7 +1473,7 @@ _global.SENTRY_RELEASE = {
                     initial: !1,
                     children: (0, b.jsx)("div", {
                       className: u.linkList,
-                      children: l.length ? l.map(((e, a) => {
+                      children: d.length ? d.map(((e, a) => {
                         return (0, b.jsx)(g.A, {
                           type: "blackBtn",
                           size: "large",
@@ -1538,7 +1538,7 @@ _global.SENTRY_RELEASE = {
           const {
             track: r
           } = (0, c.useGtmTrack)(), {
-            ref: l,
+            ref: d,
             inView: g
           } = (0, o.useInView)({
             threshold: .6
@@ -1550,7 +1550,7 @@ _global.SENTRY_RELEASE = {
             }), p(!0))
           }), [g]), (0, b.jsxs)("div", {
             className: u.buyNowArea,
-            ref: l,
+            ref: d,
             children: [(0, b.jsxs)("div", {
               className: u.topArea,
               children: [n ? (0, b.jsx)("h2", {
@@ -1563,7 +1563,7 @@ _global.SENTRY_RELEASE = {
                   className: u.nextBtn
                 })]
               })]
-            }), a?.length ? (0, b.jsx)(d.RC, {
+            }), a?.length ? (0, b.jsx)(l.RC, {
               grabCursor: !0,
               navigation: {
                 nextEl: `.${u.nextBtn}`,
@@ -1611,7 +1611,7 @@ _global.SENTRY_RELEASE = {
         Yh: () => r.Y,
         qj: () => g,
         hY: () => o,
-        hI: () => d
+        hI: () => l
       });
       var s = t(95966);
       const n = (0, s.makeVar)({
@@ -1666,9 +1666,9 @@ _global.SENTRY_RELEASE = {
         });
         return e?.tinaModulesTree ?? null
       };
-      var l = t(62229);
-      const d = () => {
-        const [e] = (0, l.useState)([{
+      var d = t(62229);
+      const l = () => {
+        const [e] = (0, d.useState)([{
           title: "Overview",
           to: "/gta-v"
         }, {
@@ -1692,7 +1692,7 @@ _global.SENTRY_RELEASE = {
       var m = t(44527);
       const g = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : " > ";
-        const [t, n] = (0, l.useState)(null), {
+        const [t, n] = (0, d.useState)(null), {
           data: i
         } = (0, s.useQuery)(m.TinaModulesTree, {
           variables: {
@@ -1700,7 +1700,7 @@ _global.SENTRY_RELEASE = {
           },
           skip: !e
         });
-        return (0, l.useEffect)((() => {
+        return (0, d.useEffect)((() => {
           const e = i?.tinaModulesTree?.[0]?.tree ?? null;
           e && n(e.map((e => {
             let {
@@ -1916,7 +1916,7 @@ _global.SENTRY_RELEASE = {
     51243: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => l,
+        A: () => d,
         X: () => o
       });
       var s = t(92440),
@@ -1944,7 +1944,7 @@ _global.SENTRY_RELEASE = {
             });
           return o?.tinaModulesInfo ?? null
         },
-        l = (0, i.A)((e => {
+        d = (0, i.A)((e => {
           let {
             components: a = {},
             id: t = null,
@@ -1989,11 +1989,11 @@ _global.SENTRY_RELEASE = {
           style: c = {}
         } = e;
         const o = t ?? a?.text ?? null,
-          l = i ? `<h5>${i}</h5>${o}` : o;
+          d = i ? `<h5>${i}</h5>${o}` : o;
         return o ? (0, n.jsx)("div", {
           className: (0, s.classList)("rockstargames-sites-gta-gen9ea50fcaddd007d5cdd83d75dc493e28b", r),
           dangerouslySetInnerHTML: {
-            __html: l
+            __html: d
           },
           style: c
         }) : null
@@ -2037,8 +2037,8 @@ _global.SENTRY_RELEASE = {
         const {
           announcePresence: o
         } = (0, i.Yh)(), {
-          ref: l,
-          inView: d
+          ref: d,
+          inView: l
         } = (0, n.useInView)({
           rootMargin: "0px 0px -700px 0px",
           threshold: 0,
@@ -2047,12 +2047,12 @@ _global.SENTRY_RELEASE = {
         return (0, s.useEffect)((() => {
           o(c)
         }), [c]), (0, s.useEffect)((() => {
-          d && o(c)
-        }), [d]), (0, r.jsx)("span", {
+          l && o(c)
+        }), [l]), (0, r.jsx)("span", {
           style: a,
           className: "rockstargames-sites-gta-gen9e2fa43158653af56030934673d242e25",
           name: c,
-          ref: l,
+          ref: d,
           children: t
         })
       }
@@ -2088,7 +2088,7 @@ _global.SENTRY_RELEASE = {
     67578: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => d
       });
       var s = t(92440),
         n = t(9623),
@@ -2124,7 +2124,7 @@ _global.SENTRY_RELEASE = {
             }
           })
         },
-        l = e => {
+        d = e => {
           let {
             blurb: a,
             hero: t,
@@ -2162,12 +2162,12 @@ _global.SENTRY_RELEASE = {
           fillRule: r = "evenodd",
           height: c = "20",
           viewBox: o = "0 0 20 20",
-          width: l = "20"
+          width: d = "20"
         } = e;
         return (0, s.jsxs)("svg", {
           className: t,
           height: c,
-          width: l,
+          width: d,
           viewBox: o,
           xmlns: "http://www.w3.org/2000/svg",
           children: [(0, s.jsx)("title", {
@@ -2184,7 +2184,7 @@ _global.SENTRY_RELEASE = {
     70818: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => d
+        A: () => l
       });
       var s = t(62229),
         n = t(17048),
@@ -2215,14 +2215,14 @@ _global.SENTRY_RELEASE = {
       };
       var o = t(25854);
       const {
-        sanitize: l
-      } = i(), d = e => {
+        sanitize: d
+      } = i(), l = e => {
         let {
           list: a,
           string: t,
           starColor: n,
           style: i,
-          className: d,
+          className: l,
           game: m,
           noImg: g,
           columns: u,
@@ -2247,16 +2247,16 @@ _global.SENTRY_RELEASE = {
             children: b.map(((e, a) => (0, o.jsx)("li", {
               style: k,
               dangerouslySetInnerHTML: {
-                __html: l(e.content)
+                __html: d(e.content)
               }
             }, a)))
           })
         }) : (0, o.jsx)("ul", {
           style: (0, r.safeStyles)(i),
-          className: (0, r.classList)(c.itemList, c.custom, g ? c.noImg : "", n ? c[n] : "", m ? c[m] : "", d ?? ""),
+          className: (0, r.classList)(c.itemList, c.custom, g ? c.noImg : "", n ? c[n] : "", m ? c[m] : "", l ?? ""),
           children: v.map(((e, a) => (0, o.jsx)("li", {
             dangerouslySetInnerHTML: {
-              __html: l(e?.content ?? e)
+              __html: d(e?.content ?? e)
             }
           }, a)))
         })
@@ -2301,7 +2301,7 @@ _global.SENTRY_RELEASE = {
         BrandMessage: () => i,
         BuyNow: () => r.A,
         ClaimCountdown: () => o,
-        CommunityChallenges: () => d(),
+        CommunityChallenges: () => l(),
         Disclaimer: () => g.A,
         DiscoverCallout: () => m.A,
         ElevatorPitch: () => V,
@@ -2322,10 +2322,10 @@ _global.SENTRY_RELEASE = {
         Summary: () => Y,
         SummaryCard: () => Q,
         Tile: () => J,
-        TinaWrapper: () => le.A,
+        TinaWrapper: () => de.A,
         TitleImage: () => $,
         ValueProp: () => te,
-        VideoPlayerWrapper: () => de.A
+        VideoPlayerWrapper: () => le.A
       });
       var s = t(64784);
       var n = t(25854);
@@ -2386,8 +2386,8 @@ _global.SENTRY_RELEASE = {
           })]
         })
       };
-      var l = t(5162),
-        d = t.n(l),
+      var d = t(5162),
+        l = t.n(d),
         m = t(28197),
         g = t(57685),
         u = t(97458),
@@ -2475,8 +2475,8 @@ _global.SENTRY_RELEASE = {
             ctas: r = [],
             expandingButtonLabel: c = "Subscribe",
             platformsAndLinks: o = [],
-            description: l,
-            title: d,
+            description: d,
+            title: l,
             legalText: m,
             shardsSection: g = {},
             className: u
@@ -2561,11 +2561,11 @@ _global.SENTRY_RELEASE = {
                       variants: h,
                       children: [(0, n.jsx)("h1", {
                         dangerouslySetInnerHTML: {
-                          __html: d
+                          __html: l
                         }
                       }), (0, n.jsx)("p", {
                         dangerouslySetInnerHTML: {
-                          __html: l
+                          __html: d
                         }
                       })]
                     }), r.length > 0 && (0, n.jsx)(y.motion.div, {
@@ -2583,11 +2583,11 @@ _global.SENTRY_RELEASE = {
                   variants: h,
                   children: [(0, n.jsx)("h1", {
                     dangerouslySetInnerHTML: {
-                      __html: d
+                      __html: l
                     }
                   }), (0, n.jsx)("p", {
                     dangerouslySetInnerHTML: {
-                      __html: l
+                      __html: d
                     }
                   })]
                 }), r.length > 0 && (0, n.jsx)(y.motion.div, {
@@ -2750,9 +2750,9 @@ _global.SENTRY_RELEASE = {
           {
             isTablet: o
           } = (0, j.useWindowResize)(),
-          [l, d] = (0, c.useState)(0);
+          [d, l] = (0, c.useState)(0);
         return (0, c.useEffect)((() => {
-          d(o ? .5 * window.innerHeight : .25 * window.innerHeight)
+          l(o ? .5 * window.innerHeight : .25 * window.innerHeight)
         }), [o, window.innerHeight]), (0, n.jsxs)("figure", {
           className: "rockstargames-sites-gta-gen9da9cf7137b4554af52a7376b73f95862",
           children: [(0, n.jsx)("div", {
@@ -2766,7 +2766,7 @@ _global.SENTRY_RELEASE = {
                 mode: "multi",
                 className: "rockstargames-sites-gta-gen9f290924e1a03efbb505d8c6febcbf732",
                 forceSingleModeWidth: !0,
-                max: l,
+                max: d,
                 children: (0, n.jsx)("div", {
                   className: "rockstargames-sites-gta-gen9ac5bf2f3514347bbf41536621f9ee6ea",
                   dangerouslySetInnerHTML: t ? {
@@ -2825,16 +2825,16 @@ _global.SENTRY_RELEASE = {
             id: o = ""
           } = e;
           const {
-            track: l
+            track: d
           } = (0, H.useGtmTrack)(), {
-            isTablet: d
+            isTablet: l
           } = (0, j.useWindowResize)(), {
             ref: m
           } = (0, O.useInView)({
             threshold: .6,
             triggerOnce: !0,
             onChange: e => {
-              e && l({
+              e && d({
                 event: "page_section_impression",
                 element_placement: a?.toLowerCase()
               })
@@ -2854,10 +2854,10 @@ _global.SENTRY_RELEASE = {
             (0, c.useEffect)((() => (window.addEventListener("scroll", s), window.addEventListener("resize", s), () => {
               window.removeEventListener("scroll", s), window.removeEventListener("resize", s)
             })), [s])
-          })(d, g, u), (0, n.jsx)(D.A, {
+          })(l, g, u), (0, n.jsx)(D.A, {
             thresholds: [.5, 1],
             onThresholdReached: e => {
-              l({
+              d({
                 event: "page_section_scroll",
                 element_placement: a?.toLowerCase(),
                 scroll_depth: 100 * e + "%"
@@ -2887,7 +2887,7 @@ _global.SENTRY_RELEASE = {
                 })
               }), (0, n.jsx)("div", {
                 ref: u,
-                className: F()(z.rightColumn, d ? z.shadow : null, z.borderGrey),
+                className: F()(z.rightColumn, l ? z.shadow : null, z.borderGrey),
                 children: s && (0, n.jsx)(_.TinaParser, {
                   components: v,
                   tina: {
@@ -3010,8 +3010,8 @@ _global.SENTRY_RELEASE = {
             imgPosition: r = "top",
             cardSize: c = "medium",
             enableFullBleed: o,
-            background: l = "var(--foundry-alias-color-background-bold-layer-2)",
-            backgroundSize: d = "cover",
+            background: d = "var(--foundry-alias-color-background-bold-layer-2)",
+            backgroundSize: l = "cover",
             backgroundImage: m,
             backgroundPosition: g = "center",
             backgroundRepeat: u = "no-repeat",
@@ -3021,8 +3021,8 @@ _global.SENTRY_RELEASE = {
             p = (0, _.useGetCdnSource)(i?.desktop ?? b),
             v = (0, _.useGetCdnSource)(m ?? null),
             k = {
-              background: l,
-              backgroundSize: d,
+              background: d,
+              backgroundSize: l,
               backgroundImage: m ? `url(${v})` : void 0,
               backgroundPosition: g,
               backgroundRepeat: u,
@@ -3101,16 +3101,16 @@ _global.SENTRY_RELEASE = {
                 element_placement: a.toLowerCase()
               })
             }
-          }), [o, l] = (0, c.useState)([]);
+          }), [o, d] = (0, c.useState)([]);
           (0, c.useEffect)((() => {
-            l(t.map((e => {
+            d(t.map((e => {
               let {
                 jumpToSectionId: a = ""
               } = e;
               return a
             })))
           }), [t]);
-          const d = (0, c.useCallback)((e => {
+          const l = (0, c.useCallback)((e => {
             const t = e + 1;
             i({
               event: "card_click",
@@ -3135,7 +3135,7 @@ _global.SENTRY_RELEASE = {
             className: "rockstargames-sites-gta-gen9ee4924ba29def53eb12a10d11c8f705d",
             children: t.map(((e, a) => (0, n.jsxs)("button", {
               className: "rockstargames-sites-gta-gen9f971bd8827552a1baadea8776cdada8a",
-              onClick: () => d(a),
+              onClick: () => l(a),
               children: [e?.iconImgSrc && (0, n.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9cce42e1c4264e5b1460e981b29b85809",
                 children: (0, n.jsx)(ae, {
@@ -3164,8 +3164,8 @@ _global.SENTRY_RELEASE = {
         oe = () => (0, n.jsx)("h2", {
           children: "Section"
         });
-      var le = t(11405),
-        de = t(1239)
+      var de = t(11405),
+        le = t(1239)
     },
     73817: (e, a, t) => {
       "use strict";
@@ -3178,8 +3178,8 @@ _global.SENTRY_RELEASE = {
         r = t(81788),
         c = t(28136),
         o = t(62459),
-        l = t(58422),
-        d = t(16014),
+        d = t(58422),
+        l = t(16014),
         m = t(25854);
       const g = e => {
         let {
@@ -3215,18 +3215,18 @@ _global.SENTRY_RELEASE = {
           console.error("Error loading video: ", e)
         }
         return (0, m.jsxs)("div", {
-          className: d.default.heroContainer,
+          className: l.default.heroContainer,
           children: [(0, m.jsx)("div", {
-            className: d.default.heroVideoWrapper,
+            className: l.default.heroVideoWrapper,
             children: "image" === a || w ? (0, m.jsx)("img", {
-              className: d.default.heroBackgroundImg,
+              className: l.default.heroBackgroundImg,
               src: T,
               alt: f
             }) : (0, m.jsxs)(m.Fragment, {
               children: [(0, m.jsxs)("video", {
                 ref: j,
                 "data-testid": "hero-video",
-                className: d.default.heroVideo,
+                className: l.default.heroVideo,
                 autoPlay: !0,
                 loop: !0,
                 muted: !0,
@@ -3237,7 +3237,7 @@ _global.SENTRY_RELEASE = {
                 }), A(o.messages.video_hero_support_message)]
               }), (0, m.jsx)("button", {
                 role: "button",
-                className: d.default.heroVideoPlayPauseBtn,
+                className: l.default.heroVideoPlayPauseBtn,
                 onClick: () => {
                   if (!M && j.current) {
                     let e = "";
@@ -3249,11 +3249,11 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 "aria-hidden": !0,
-                children: N ? (0, m.jsx)(l.Pause, {
+                children: N ? (0, m.jsx)(d.Pause, {
                   alt: A(o.messages.video_hero_pause_button_label),
                   height: "24",
                   width: "24"
-                }) : (0, m.jsx)(l.Play, {
+                }) : (0, m.jsx)(d.Play, {
                   alt: A(o.messages.video_hero_play_button_label),
                   height: "24",
                   width: "24"
@@ -3261,16 +3261,16 @@ _global.SENTRY_RELEASE = {
               })]
             })
           }), (0, m.jsx)("div", {
-            className: d.default.heroOverlay,
+            className: l.default.heroOverlay,
             style: {
               "--overlay-bg": y ?? "var(--gradient-black-200-bottom, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%))"
             }
           }), (b || v || k || h) && (0, m.jsx)("div", {
-            className: d.default.heroContentWrapper,
+            className: l.default.heroContentWrapper,
             children: (0, m.jsxs)("div", {
-              className: d.default.heroContent,
+              className: l.default.heroContent,
               children: [b && (0, m.jsx)("img", {
-                className: d.default.heroContentImg,
+                className: l.default.heroContentImg,
                 src: C ?? b,
                 alt: p
               }), v && (0, m.jsx)("h1", {
@@ -3279,7 +3279,7 @@ _global.SENTRY_RELEASE = {
                 children: k
               }), x && (0, m.jsx)("a", {
                 href: x,
-                className: d.default.heroCTA,
+                className: l.default.heroCTA,
                 children: h
               })]
             })
@@ -3302,12 +3302,12 @@ _global.SENTRY_RELEASE = {
           fillRule: r = "evenodd",
           height: c = "20",
           viewBox: o = "0 0 20 20",
-          width: l = "20"
+          width: d = "20"
         } = e;
         return (0, s.jsxs)("svg", {
           className: t,
           height: c,
-          width: l,
+          width: d,
           viewBox: o,
           xmlns: "http://www.w3.org/2000/svg",
           children: [(0, s.jsx)("title", {
@@ -3360,13 +3360,13 @@ _global.SENTRY_RELEASE = {
           text: a,
           cta: c,
           to: o,
-          className: l = "",
-          style: d = {}
+          className: d = "",
+          style: l = {}
         } = e;
         return (0, r.jsxs)(s.A, {
-          className: (0, n.classList)(i.linkoutSection, l),
+          className: (0, n.classList)(i.linkoutSection, d),
           to: o,
-          style: d,
+          style: l,
           children: [a && (0, r.jsx)("div", {
             className: i.text,
             children: a
@@ -4304,8 +4304,8 @@ _global.SENTRY_RELEASE = {
         r = t(14341),
         c = t(96644),
         o = t(51243),
-        l = t(38558),
-        d = t(2918);
+        d = t(38558),
+        l = t(2918);
       var m = t(25854);
       const g = e => {
           let {
@@ -4315,7 +4315,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, d.useGtmTrack)();
+          } = (0, l.useGtmTrack)();
           let c = {
             hero: {}
           };
@@ -4324,7 +4324,7 @@ _global.SENTRY_RELEASE = {
           }));
           const {
             src: o
-          } = (0, l.S1)(c?.thumb ?? {});
+          } = (0, d.S1)(c?.thumb ?? {});
           return (0, m.jsx)(r.A, {
             to: a.to,
             onClick: () => {
@@ -4358,22 +4358,22 @@ _global.SENTRY_RELEASE = {
             title: n
           } = e;
           const r = i().map(a, "guide_id"),
-            l = (0, o.X)({
+            d = (0, o.X)({
               ids: r
             }),
-            d = t?.[0]?.title ?? n,
+            l = t?.[0]?.title ?? n,
             [u, f] = (0, s.useState)(null);
           return (0, s.useEffect)((() => {
-            const e = l?.map(((e, a) => (0, m.jsx)(g, {
+            const e = d?.map(((e, a) => (0, m.jsx)(g, {
               guide: e,
-              parentTitle: d,
+              parentTitle: l,
               index: a
             }, e.id)));
             f(e)
-          }), [l]), (0, m.jsx)(c.A, {
+          }), [d]), (0, m.jsx)(c.A, {
             size: "lg",
             slideChildren: u,
-            title: d
+            title: l
           })
         }
     },
@@ -4514,7 +4514,7 @@ _global.SENTRY_RELEASE = {
     92580: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => d
       });
       var s = t(92440),
         n = t(95966),
@@ -4529,18 +4529,18 @@ _global.SENTRY_RELEASE = {
       };
       var c = t(25854),
         o = t(62229);
-      const l = e => {
+      const d = e => {
         let {
           bg: a,
           image_text_groups: t = [],
-          style: l = {},
-          className: d = ""
+          style: d = {},
+          className: l = ""
         } = e;
         const m = (0, s.useGetCdnSource)(a?.image?.mobile?.full_src ?? null),
           g = (0, s.useGetCdnSource)(a?.image?.desktop?.full_src ?? null) ?? m;
         return t.length ? (0, c.jsxs)("div", {
-          className: (0, n.classList)(r.imageTextGroupGroup, d),
-          style: l,
+          className: (0, n.classList)(r.imageTextGroupGroup, l),
+          style: d,
           children: [m ? (0, c.jsx)("div", {
             className: [r.bgMobile, r.bg].join(" "),
             style: {
@@ -4573,8 +4573,8 @@ _global.SENTRY_RELEASE = {
         r = t(52066),
         c = t(43851),
         o = t(2918),
-        l = t(95966),
-        d = t(48782);
+        d = t(95966),
+        l = t(48782);
       var m = t(25854);
       const g = e => {
           let {
@@ -4606,11 +4606,11 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        u = (0, d.A)((e => {
+        u = (0, l.A)((e => {
           let {
             description: a,
             slideChildren: t,
-            size: d,
+            size: l,
             title: u,
             name: f,
             customSlidesPerView: b = null,
@@ -4696,7 +4696,7 @@ _global.SENTRY_RELEASE = {
               element_placement: (f || u).toLowerCase()
             }), M(!0))
           }), [F, t]);
-          let K = "custom" === d ? {
+          let K = "custom" === l ? {
             "--custom-aspect-ratio": y,
             ...k
           } : {
@@ -4714,14 +4714,14 @@ _global.SENTRY_RELEASE = {
             ee = `${u.trim().toLowerCase().replace(/\s+/g,"-")}-deck`;
           return (0, m.jsxs)("section", {
             "aria-label": u,
-            className: (0, l.classList)("rockstargames-sites-gta-gen9f20b52f7c3f9003cd00811a47a04bf10", h),
-            "data-size": d,
+            className: (0, d.classList)("rockstargames-sites-gta-gen9f20b52f7c3f9003cd00811a47a04bf10", h),
+            "data-size": l,
             "data-testid": ee,
-            "data-sm": x?.sm ? x?.sm : d,
-            "data-md": x?.md ? x?.md : d,
-            "data-lg": x?.lg ? x?.lg : d,
-            "data-xl": x?.xl ? x?.xl : d,
-            "data-xxl": x?.xxl ? x?.xxl : d,
+            "data-sm": x?.sm ? x?.sm : l,
+            "data-md": x?.md ? x?.md : l,
+            "data-lg": x?.lg ? x?.lg : l,
+            "data-xl": x?.xl ? x?.xl : l,
+            "data-xxl": x?.xxl ? x?.xxl : l,
             "data-has-covercard": $,
             "data-new-carousel-nav": !0,
             id: `${u}-carousel`,
@@ -4784,7 +4784,7 @@ _global.SENTRY_RELEASE = {
               navigation: G,
               modules: [r.Vx],
               breakpoints: Q,
-              slideClass: (0, l.classList)("swiper-slide", v),
+              slideClass: (0, d.classList)("swiper-slide", v),
               onSlideNextTransitionEnd: () => {
                 N({
                   event: "carousel_next",
@@ -4819,8 +4819,8 @@ _global.SENTRY_RELEASE = {
         r = t.n(i),
         c = t(35136),
         o = t(14341),
-        l = t(2918),
-        d = t(41163);
+        d = t(2918),
+        l = t(41163);
       const m = {
         pillBtn: "rockstargames-sites-gta-gen9aa77a5ebc89b1f82d5b2d2b285dbb5f9",
         selected: "rockstargames-sites-gta-gen9d90123bfede42f33615d4b38c7fa4bd5",
@@ -4856,9 +4856,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, l.useGtmTrack)(), [c, u] = (0, s.useState)(n === i), {
+          } = (0, d.useGtmTrack)(), [c, u] = (0, s.useState)(n === i), {
             state: f
-          } = (0, d.E_)(), {
+          } = (0, l.E_)(), {
             activeSection: b
           } = f;
           return (0, s.useEffect)((() => u(i !== b ? b === n : i === n)), [b]), (0, g.jsx)(o.A, {
@@ -4900,9 +4900,9 @@ _global.SENTRY_RELEASE = {
             currentId: a,
             group: t
           } = e;
-          const [n, i] = (0, s.useState)(null), [l, b] = (0, s.useState)(null), {
+          const [n, i] = (0, s.useState)(null), [d, b] = (0, s.useState)(null), {
             state: v
-          } = (0, d.E_)(), {
+          } = (0, l.E_)(), {
             activeSection: k
           } = v;
           return (0, s.useEffect)((() => {
@@ -4936,7 +4936,7 @@ _global.SENTRY_RELEASE = {
                     className: [m.guideLink, a === n ? m.guideLinkCurrent : ""].join(" "),
                     to: r,
                     children: i
-                  }), t === l && s?.length ? (0, g.jsx)(p, {
+                  }), t === d && s?.length ? (0, g.jsx)(p, {
                     sections: s
                   }) : ""]
                 }, i)
@@ -4948,13 +4948,13 @@ _global.SENTRY_RELEASE = {
           let {
             currentId: a
           } = e;
-          const t = (0, d.hY)(),
+          const t = (0, l.hY)(),
             {
               state: {
                 headerHeight: s,
                 headerHidden: n
               }
-            } = (0, d.E_)();
+            } = (0, l.E_)();
           return (0, g.jsx)("div", {
             className: [m.guideNav, n ? m.headerHidden : ""].join(" "),
             style: {
@@ -4978,8 +4978,8 @@ _global.SENTRY_RELEASE = {
         r = t(2918),
         c = t(55799),
         o = t(70454),
-        l = t(24036),
-        d = t.n(l);
+        d = t(24036),
+        l = t.n(d);
       const m = {
         pillBtn: "rockstargames-sites-gta-gen9f6996f4c3f7191c2ab9f2d8a7ac4d378",
         selected: "rockstargames-sites-gta-gen9a094d48286b9bf724d77a89550401953",
@@ -5008,7 +5008,7 @@ _global.SENTRY_RELEASE = {
             className: m.accordionHeader,
             children: (0, g.jsxs)(o.Trigger, {
               ref: a,
-              className: d()(m.accordionTrigger, s),
+              className: l()(m.accordionTrigger, s),
               ...i,
               children: [t, (0, g.jsx)(n.ChevronDownIcon, {
                 className: m.accordionChevron,
@@ -5024,7 +5024,7 @@ _global.SENTRY_RELEASE = {
             ...n
           } = e;
           return (0, g.jsx)(o.Content, {
-            className: d()(m.accordionContent, s),
+            className: l()(m.accordionContent, s),
             ...n,
             ref: a,
             children: (0, g.jsx)("div", {
@@ -5039,15 +5039,15 @@ _global.SENTRY_RELEASE = {
             description: t,
             disclaimer: n,
             faqList: i = [],
-            initialLength: l = 6,
-            addedLength: d = 6,
+            initialLength: d = 6,
+            addedLength: l = 6,
             title: b,
             tinaModulesInfo: p,
             style: v
           } = e;
           const {
             track: k
-          } = (0, r.useGtmTrack)(), [h, x] = (0, s.useState)(l), [y, _] = (0, s.useState)(void 0), [j, N] = (0, s.useState)(!1), S = (0, s.useRef)(null), w = (0, s.useRef)([]), {
+          } = (0, r.useGtmTrack)(), [h, x] = (0, s.useState)(d), [y, _] = (0, s.useState)(void 0), [j, N] = (0, s.useState)(!1), S = (0, s.useRef)(null), w = (0, s.useRef)([]), {
             ref: C
           } = (0, c.useInView)({
             threshold: .6,
@@ -5061,7 +5061,7 @@ _global.SENTRY_RELEASE = {
           });
           return (0, s.useEffect)((() => {
             if (j) {
-              const e = h - d;
+              const e = h - l;
               w.current[e] && w.current[e].focus(), N(!1)
             }
           }), [h]), (0, g.jsxs)("div", {
@@ -5122,7 +5122,7 @@ _global.SENTRY_RELEASE = {
                       event: "view_all",
                       text: "view more",
                       element_placement: "faqs"
-                    }), x((e => e + d)), N(!0)
+                    }), x((e => e + l)), N(!0)
                   },
                   ref: S,
                   children: [(0, g.jsx)("span", {

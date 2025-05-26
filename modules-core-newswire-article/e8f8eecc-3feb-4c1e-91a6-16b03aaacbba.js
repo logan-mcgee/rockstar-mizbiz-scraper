@@ -31,8 +31,8 @@ _global.SENTRY_RELEASE = {
         NewswireTitle: () => H,
         PctBar: () => $
       });
-      var l = n(58906);
-      const a = {
+      var a = n(58906);
+      const l = {
         gtao: "Grand Theft Auto Online",
         gtav: "Grand Theft Auto V",
         gtaplus: "GTA+",
@@ -76,9 +76,9 @@ _global.SENTRY_RELEASE = {
         warriors: "Warriors",
         lossantoscustoms: "Los Santos Customs"
       };
-      Object.keys(a).map((e => ({
+      Object.keys(l).map((e => ({
         value: e,
-        label: a[e]
+        label: l[e]
       })));
       var o = n(38558),
         i = n(25854);
@@ -130,17 +130,17 @@ _global.SENTRY_RELEASE = {
             name: "type",
             label: "Text",
             component: "group",
-            fields: [(0, l.om)(), (0, l.KO)(), (0, l.A_)(), (0, l.bY)({
+            fields: [(0, a.om)(), (0, a.KO)(), (0, a.A_)(), (0, a.bY)({
               filter: "grid"
-            }), (0, l.sE)({
+            }), (0, a.sE)({
               filter: "grid"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               style: {
                 "--max-width-dynamic": "var(--max-width-static)"
               }
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Text]` : "New [Text]"
             })
           }
@@ -149,25 +149,25 @@ _global.SENTRY_RELEASE = {
           let {
             game: t = null,
             label: n = "Image",
-            description: a = ""
+            description: l = ""
           } = e;
           return {
             name: "imageWithBadge",
             label: n,
-            description: a,
+            description: l,
             component: "group",
-            fields: [(0, l.om)(), (0, l.CT)({
+            fields: [(0, a.om)(), (0, a.CT)({
               game: t
-            }), (0, l.ho)(), (0, l.bY)({
+            }), (0, a.ho)(), (0, a.bY)({
               filter: "image"
-            }), (0, l.sE)({
+            }), (0, a.sE)({
               filter: "image"
             })],
-            defaultItem: () => (0, l.Q)({
-              image: (0, l.Q)(l.m9),
+            defaultItem: () => (0, a.Q)({
+              image: (0, a.Q)(a.m9),
               badgeType: "rdr2" === t ? "badge3" : ""
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Image]` : "New [Image]"
             })
           }
@@ -181,16 +181,16 @@ _global.SENTRY_RELEASE = {
           name: "plainImage",
           label: "Image",
           component: "group",
-          fields: [(0, l.om)(), (0, l.CT)({
+          fields: [(0, a.om)(), (0, a.CT)({
             game: t,
             label: "Sources"
-          }), (0, l.sE)({
+          }), (0, a.sE)({
             filter: "image"
           })],
-          defaultItem: () => (0, l.Q)({
+          defaultItem: () => (0, a.Q)({
             alt: ""
           }),
-          itemProps: e => (0, l.Rv)(e, {
+          itemProps: e => (0, a.Rv)(e, {
             label: e?.name ? `${e.name} [Image]` : "New [Image]"
           })
         }
@@ -202,8 +202,8 @@ _global.SENTRY_RELEASE = {
             game: t = null,
             parent: n = null
           } = e;
-          const a = [(0, l.om)()];
-          return "gtao" !== t && "gtav" !== t || a.push({
+          const l = [(0, a.om)()];
+          return "gtao" !== t && "gtav" !== t || l.push({
             name: "starColor",
             label: "Star Color",
             description: 'If "none", it will use default bullet styles',
@@ -251,7 +251,7 @@ _global.SENTRY_RELEASE = {
               value: "gtaplus",
               label: "GTA+ Icon"
             }]
-          }), a.push((0, l.z9)({
+          }), l.push((0, a.z9)({
             label: "Title",
             name: "title",
             component: "text"
@@ -270,30 +270,30 @@ _global.SENTRY_RELEASE = {
             label: "List Items",
             component: "blocks",
             templates: [(0, c.A)({})]
-          }, (0, l.sE)({
+          }, (0, a.sE)({
             parent: n
           })), {
             name: "unorderedList",
             label: "Unordered List",
             component: "group",
-            fields: a,
-            defaultItem: () => (0, l.Q)({
+            fields: l,
+            defaultItem: () => (0, a.Q)({
               content: p.A,
               columns: 1,
               mobileColumns: 1,
               starColor: "noImg",
               listItems: []
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Unordered List]` : "New [Unordered List]"
             })
           }
         },
         g = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "0";
-          return (0, l.Q)({
+          return (0, a.Q)({
             title: `Item ${e}`,
-            image: (0, l.Q)(l.m9),
+            image: (0, a.Q)(a.m9),
             _template: t
           })
         },
@@ -332,7 +332,7 @@ _global.SENTRY_RELEASE = {
             name: "discountsGridList",
             label: "Discount Items Grid",
             component: "group",
-            fields: [(0, l.om)(), {
+            fields: [(0, a.om)(), {
               name: "type",
               label: "Image Filter",
               description: "Adds a filter to RDO discount images",
@@ -346,13 +346,13 @@ _global.SENTRY_RELEASE = {
               }]
             }, f({
               name: "discountsGridList.columns"
-            }), (0, l.Xt)({
+            }), (0, a.Xt)({
               game: t,
               name: "discountsGridList.content",
               label: "Grid Items",
               filter: "discounts"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               type: "",
               columns: {
                 mobile: 1,
@@ -362,7 +362,7 @@ _global.SENTRY_RELEASE = {
                 content: [g(1), g(2), g(3), g(4)]
               }
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Discount Items Grid]` : "New [Discount Items Grid]"
             })
           }
@@ -375,15 +375,15 @@ _global.SENTRY_RELEASE = {
             name: "limitedGridList",
             label: "Limited Time Items Grid",
             component: "group",
-            fields: [(0, l.om)(), f({
+            fields: [(0, a.om)(), f({
               name: "limitedGridList.columns"
-            }), (0, l.Xt)({
+            }), (0, a.Xt)({
               game: t,
               name: "limitedGridList.content",
               label: "Grid Items",
               filter: "discounts"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               columns: {
                 mobile: 1,
                 desktop: 1
@@ -392,7 +392,7 @@ _global.SENTRY_RELEASE = {
                 content: [g(1), g(2), g(3), g(4)]
               }
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Limited Time Items Grid]` : "New [Limited Time Items Grid]"
             })
           }
@@ -406,7 +406,7 @@ _global.SENTRY_RELEASE = {
             name: "limitedList",
             label: n,
             component: "group",
-            fields: [(0, l.om)(), {
+            fields: [(0, a.om)(), {
               name: "size",
               label: "Carousel Size",
               description: "What size carousel should this be? (Small & Large are both 1 Per Page on mobile, however Small should be used as 16x9 on mobile and Large should be used as 1x1 on mobile.)",
@@ -426,21 +426,21 @@ _global.SENTRY_RELEASE = {
               label: "Disable Infinite Scroll?",
               description: "Should infinite scroll be DISABLED for this carousel?",
               component: "toggle"
-            }, (0, l.Xt)({
+            }, (0, a.Xt)({
               game: t,
               name: "limitedList.content",
               label: "List Items",
               perPage: null,
               filter: "discounts"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               name: "Large Carousel",
               noInfiniteScroll: !1,
               limitedList: {
                 content: [g(1), g(2), g(3), g(4)]
               }
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [${n}]` : `New [${n}]`
             })
           }
@@ -468,23 +468,23 @@ _global.SENTRY_RELEASE = {
                   name: "title_and_description",
                   label: "Title & Description",
                   component: "group",
-                  fields: [(0, l.z9)({
+                  fields: [(0, a.z9)({
                     name: "title_and_description.title",
                     label: "Title",
                     component: "text"
-                  }), (0, l.z9)({
+                  }), (0, a.z9)({
                     name: "title_and_description.description",
                     label: "Description",
                     component: "html"
                   })],
-                  defaultItem: () => (0, l.Q)({
+                  defaultItem: () => (0, a.Q)({
                     title_and_description: {
                       title: "DISCOUNTS",
                       description: null
                     }
                   }),
-                  itemProps: e => (0, l.Rv)(e, {
-                    label: e?.[l.Qw]?.title_and_description?.title ? `${e[l.Qw].title_and_description.title} [Discounts Title & Description]` : "New [Discounts Title & Description]"
+                  itemProps: e => (0, a.Rv)(e, {
+                    label: e?.[a.Qw]?.title_and_description?.title ? `${e[a.Qw].title_and_description.title} [Discounts Title & Description]` : "New [Discounts Title & Description]"
                   })
                 }, v({
                   game: n,
@@ -506,15 +506,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           return {
             label: "Discounts",
-            fields: [(0, l.om)(), y({
+            fields: [(0, a.om)(), y({
               game: t
-            }), (0, l.sE)({
+            }), (0, a.sE)({
               filter: n
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               renderTemplate: t
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Discounts]` : "New [Discounts]"
             })
           }
@@ -527,11 +527,11 @@ _global.SENTRY_RELEASE = {
         };
         return {
           label: "Donate",
-          fields: [...(0, l.om)(e), ...(0, l.Y4)(e)],
-          defaultItem: () => (0, l.Q)({
+          fields: [...(0, a.om)(e), ...(0, a.Y4)(e)],
+          defaultItem: () => (0, a.Q)({
             content: ""
           }),
-          itemProps: e => (0, l.Rv)(e, {
+          itemProps: e => (0, a.Rv)(e, {
             label: (0, x._e)(e?.translationName ?? e?.content ?? "Donate")
           })
         }
@@ -558,7 +558,7 @@ _global.SENTRY_RELEASE = {
             component: "blocks",
             templates: [G()]
           }];
-          return t || n.push((0, l.z9)({
+          return t || n.push((0, a.z9)({
             name: "title",
             label: "Title",
             description: "This gets displayed in the text overlay (when collapsed) as well as at the top of the main content (when expanded). On Newswire it will display in between the image and text content.",
@@ -570,7 +570,7 @@ _global.SENTRY_RELEASE = {
             component: "toggle"
           }), n.push({
             label: "Content",
-            name: l.ZH,
+            name: a.ZH,
             component: "blocks",
             description: "If clicking the card triggers a modal, select content to go inside the modal.",
             templates: e
@@ -649,7 +649,7 @@ _global.SENTRY_RELEASE = {
             component: "date",
             dateFormat: "YYYY-MM-DD",
             timeFormat: "hh:mm:ss"
-          }, (0, l.pr)(), (0, l.f6)()), n
+          }, (0, a.pr)(), (0, a.f6)()), n
         },
         S = e => {
           let {
@@ -658,14 +658,14 @@ _global.SENTRY_RELEASE = {
           return {
             label: "GTAO Event Section",
             fields: C(t),
-            defaultItem: () => (0, l.Q)({
-              textOverlayProps: (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
+              textOverlayProps: (0, a.Q)({
                 hasTextOverlay: !0,
                 hasHoverAnimation: !0
               })
             }),
-            itemProps: e => (0, l.Rv)(e, {
-              label: `${e?.[l.Qw]?.title??"New"} [Event Section]`
+            itemProps: e => (0, a.Rv)(e, {
+              label: `${e?.[a.Qw]?.title??"New"} [Event Section]`
             })
           }
         },
@@ -676,15 +676,15 @@ _global.SENTRY_RELEASE = {
           return {
             label: "GTAO Event Hero",
             fields: C(t, !0),
-            defaultItem: () => (0, l.Q)({
-              textOverlayProps: (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
+              textOverlayProps: (0, a.Q)({
                 hasTextOverlay: !0,
                 hasHoverAnimation: !0
               }),
               isFeatured: !0
             }),
-            itemProps: e => (0, l.Rv)(e, {
-              label: `${e?.[l.Qw]?.title??"New"} [Event Hero]`
+            itemProps: e => (0, a.Rv)(e, {
+              label: `${e?.[a.Qw]?.title??"New"} [Event Hero]`
             })
           }
         },
@@ -695,7 +695,7 @@ _global.SENTRY_RELEASE = {
           };
           return {
             label: "Gaming Rewards",
-            fields: [(0, l.om)(e), (0, l.z9)({
+            fields: [(0, a.om)(e), (0, a.z9)({
               name: "headline",
               label: "Headline",
               component: "text"
@@ -704,29 +704,29 @@ _global.SENTRY_RELEASE = {
               label: "Top Section",
               component: "group",
               description: "The section below the image and above the list items",
-              fields: [(0, l.z9)({
+              fields: [(0, a.z9)({
                 name: "text",
                 label: "Top Text Section",
                 component: "html"
-              }), (0, l.sE)(e)]
+              }), (0, a.sE)(e)]
             }, b(e), {
               name: "bottom",
               label: "Bottom Section",
               component: "group",
               description: "Text to be displayed below the list items",
-              fields: [(0, l.z9)({
+              fields: [(0, a.z9)({
                 name: "text",
                 label: "Bottom Text Section",
                 component: "html"
-              }), (0, l.sE)(e)]
+              }), (0, a.sE)(e)]
             }, u(e), {
               name: "rewards",
               label: "Rewards",
               description: "Gaming rewards options",
               component: "select",
               options: ["none", "gtaPlus", "primeGaming", "psPlus"]
-            }, (0, l.sE)(e)],
-            defaultItem: () => (0, l.Q)({
+            }, (0, a.sE)(e)],
+            defaultItem: () => (0, a.Q)({
               name: "Prime Gaming",
               plainImage: {
                 name: "Social Club x Prime Gaming",
@@ -736,14 +736,14 @@ _global.SENTRY_RELEASE = {
                   height: "auto"
                 }
               },
-              top: (0, l.Q)(),
-              bottom: (0, l.Q)({
+              top: (0, a.Q)(),
+              bottom: (0, a.Q)({
                 style: {
                   "--font-size-multiplier": .75
                 }
               })
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e?.name ? `${e.name} [Gaming Rewards]` : "New [Gaming Rewards]"
             })
           }
@@ -789,7 +789,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return {
             label: "Lead Gif Asset",
-            fields: [(0, l.om)(), {
+            fields: [(0, a.om)(), {
               name: "src.gifHash",
               label: "Gif Sources",
               component: "group",
@@ -800,15 +800,15 @@ _global.SENTRY_RELEASE = {
                 parent: t,
                 group: "desktop"
               }).fields]
-            }, (0, l.F2)({
+            }, (0, a.F2)({
               parent: t,
               filter: "image"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               content: A.A,
               name: "Hero Gif"
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e.name
             })
           }
@@ -817,22 +817,22 @@ _global.SENTRY_RELEASE = {
           let {
             game: t = null,
             parent: n = null,
-            post: a = null
+            post: l = null
           } = e;
           return {
             label: "Lead Image Asset",
-            fields: [(0, l.om)(), (0, l.CT)({
+            fields: [(0, a.om)(), (0, a.CT)({
               game: t
-            }), (0, l.F2)({
+            }), (0, a.F2)({
               parent: n,
               filter: "image"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               content: A.A,
               name: "Hero Image",
-              image: l.m9
+              image: a.m9
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e.name
             })
           }
@@ -844,49 +844,49 @@ _global.SENTRY_RELEASE = {
           } = e;
           return {
             label: "Lead Video Asset",
-            fields: [(0, l.om)(), {
+            fields: [(0, a.om)(), {
               name: "video",
               label: "Video Source",
               component: "group",
               fields: (0, N.RockstarVideoPlayer)().fields
-            }, (0, l.F2)({
+            }, (0, a.F2)({
               parent: t,
               filter: "image"
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               content: A.A,
               name: "Hero Video"
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: e.name
             })
           }
         },
         Q = () => ({
           label: "Marquee",
-          fields: [(0, l.sE)({
+          fields: [(0, a.sE)({
             filter: "gridItem"
           }), {
             label: "Text",
             name: "text",
             component: "text"
           }],
-          defaultItem: () => (0, l.Q)(),
-          itemProps: e => (0, l.Rv)(e)
+          defaultItem: () => (0, a.Q)(),
+          itemProps: e => (0, a.Rv)(e)
         }),
         H = e => {
           let {
             defaults: t = {},
             templates: n = {},
-            itemsDescription: a = ""
+            itemsDescription: l = ""
           } = e;
           const o = [{
             label: "Items",
-            description: a,
-            name: l.ZH,
+            description: l,
+            name: a.ZH,
             component: "blocks",
             templates: n
-          }, (0, l.sE)({
+          }, (0, a.sE)({
             filter: "title"
           }), {
             label: "Variant",
@@ -904,13 +904,13 @@ _global.SENTRY_RELEASE = {
           return {
             label: "Title",
             component: "group",
-            fields: [...o, (0, l.Zn)({
+            fields: [...o, (0, a.Zn)({
               fields: o
             })],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               style: t?.style ?? {}
             }),
-            itemProps: e => (0, l.Rv)(e)
+            itemProps: e => (0, a.Rv)(e)
           }
         },
         $ = function() {
@@ -933,12 +933,12 @@ _global.SENTRY_RELEASE = {
               label: "Primary Color",
               component: "color"
             }],
-            defaultItem: () => (0, l.Q)({
+            defaultItem: () => (0, a.Q)({
               percent: 0,
               bgColor: "",
               primaryColor: ""
             }),
-            itemProps: e => (0, l.Rv)(e, {
+            itemProps: e => (0, a.Rv)(e, {
               label: `${e?.pct??"PCT"} % Bar`
             })
           }
@@ -949,7 +949,7 @@ _global.SENTRY_RELEASE = {
         OD: () => i,
         lv: () => s,
         pP: () => m,
-        wC: () => a,
+        wC: () => l,
         PE: () => v,
         rB: () => d,
         yh: () => w,
@@ -959,11 +959,11 @@ _global.SENTRY_RELEASE = {
         rJ: () => T,
         pT: () => g,
         lV: () => x,
-        PA: () => l,
+        PA: () => a,
         My: () => b,
         _e: () => f
       }), n(16188);
-      const l = e => {
+      const a = e => {
           let {
             element: t
           } = e;
@@ -972,18 +972,18 @@ _global.SENTRY_RELEASE = {
               block: "center",
               inline: "center"
             })), 100),
-            l = e => {
-              e.target === document && (clearInterval(n), document.removeEventListener("scroll", l))
+            a = e => {
+              e.target === document && (clearInterval(n), document.removeEventListener("scroll", a))
             };
-          document.addEventListener("scroll", l)
+          document.addEventListener("scroll", a)
         },
-        a = function() {
+        l = function() {
           let {
             paramName: e = "section"
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           const t = new URLSearchParams(document.location.search),
             n = document.getElementById(t.get(e) || e);
-          n && (l({
+          n && (a({
             element: n
           }), o(n))
         },
@@ -1000,8 +1000,8 @@ _global.SENTRY_RELEASE = {
         };
       class i {
         constructor(e, t, n) {
-          let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-          this.name = e, this.friendlyName = t, this.id = n, this.alias = l
+          let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+          this.name = e, this.friendlyName = t, this.id = n, this.alias = a
         }
       }
       const s = Object.freeze({
@@ -1039,9 +1039,9 @@ _global.SENTRY_RELEASE = {
       const p = e => {
           const t = document.cookie.split("; "),
             n = `${e}=`,
-            l = t.find((e => e.startsWith(n))),
-            a = l?.substring(n.length, l.length);
-          return a
+            a = t.find((e => e.startsWith(n))),
+            l = a?.substring(n.length, a.length);
+          return l
         },
         b = (e, t) => {
           e && void 0 !== t && (0, c.canStoreCookie)(e) && p(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,u.F)()}; path=/;`)
@@ -1073,8 +1073,8 @@ _global.SENTRY_RELEASE = {
             headers: {}
           }).then((e => e.arrayBuffer())).then((e => {
             const t = window.URL.createObjectURL(new Blob([e])),
-              l = document.createElement("a");
-            l.href = t, l.setAttribute("download", n), document.body.appendChild(l), l.click(), document.body.removeChild(l)
+              a = document.createElement("a");
+            a.href = t, a.setAttribute("download", n), document.body.appendChild(a), a.click(), document.body.removeChild(a)
           })).catch((e => {
             console.log(e)
           }))
@@ -1104,9 +1104,9 @@ _global.SENTRY_RELEASE = {
     },
     87171: (e, t, n) => {
       n.d(t, {
-        F: () => l
+        F: () => a
       });
-      const l = () => {
+      const a = () => {
         const e = window.location.hostname.split(".");
         return e.slice(e.length - 2).join(".")
       }

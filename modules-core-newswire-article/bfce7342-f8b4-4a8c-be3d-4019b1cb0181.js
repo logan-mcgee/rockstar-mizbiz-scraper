@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     13586: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => l,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -36,8 +36,8 @@ _global.SENTRY_RELEASE = {
         default: () => p
       });
       var _ = "关闭弹窗",
-        l = "按 {shortcut}",
-        a = "放大",
+        a = "按 {shortcut}",
+        l = "放大",
         n = "按 {shortcut}",
         i = "缩小",
         b = "按 {shortcut}",
@@ -52,8 +52,8 @@ _global.SENTRY_RELEASE = {
         c = "替代文本：{alt}",
         p = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: b,

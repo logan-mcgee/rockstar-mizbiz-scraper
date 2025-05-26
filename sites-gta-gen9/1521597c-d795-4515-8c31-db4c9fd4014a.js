@@ -94,12 +94,12 @@ _global.SENTRY_RELEASE = {
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", d.locale);
           var c = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", c);
-          var u = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", u);
-          var f = d.dataLocale,
-            p = _[f];
-          (0, n.invariant)(!!p, "Missing locale data for ".concat(f));
-          var y = p[c][u];
+          var f = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", f);
+          var u = d.dataLocale,
+            p = _[u];
+          (0, n.invariant)(!!p, "Missing locale data for ".concat(u));
+          var y = p[c][f];
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {

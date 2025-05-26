@@ -32,14 +32,14 @@ _global.SENTRY_RELEASE = {
         proto: !0
       }, {
         toSpliced: function(r, e) {
-          var t, n, o, y, v = s(this),
-            d = i(v),
-            h = c(r, d),
+          var t, n, o, y, d = s(this),
+            v = i(d),
+            h = c(r, v),
             g = arguments.length,
             b = 0;
-          for (0 === g ? t = n = 0 : 1 === g ? (t = 0, n = d - h) : (t = g - 2, n = l(p(u(e), 0), d - h)), o = a(d + t - n), y = f(o); b < h; b++) y[b] = v[b];
+          for (0 === g ? t = n = 0 : 1 === g ? (t = 0, n = v - h) : (t = g - 2, n = l(p(u(e), 0), v - h)), o = a(v + t - n), y = f(o); b < h; b++) y[b] = d[b];
           for (; b < h + t; b++) y[b] = arguments[b - h + 2];
-          for (; b < o; b++) y[b] = v[b + n - t];
+          for (; b < o; b++) y[b] = d[b + n - t];
           return y
         }
       }), o("toSpliced")
@@ -80,17 +80,17 @@ _global.SENTRY_RELEASE = {
         p = a("".charCodeAt),
         l = a([].join),
         y = "".toWellFormed,
-        v = y && s((function() {
+        d = y && s((function() {
           return "1" !== o(y, 1)
         }));
       n({
         target: "String",
         proto: !0,
-        forced: v
+        forced: d
       }, {
         toWellFormed: function() {
           var r = c(i(this));
-          if (v) return o(y, r);
+          if (d) return o(y, r);
           for (var e = r.length, t = u(e), n = 0; n < e; n++) {
             var a = p(r, n);
             55296 != (63488 & a) ? t[n] = f(r, n) : a >= 56320 || n + 1 >= e || 56320 != (64512 & p(r, n + 1)) ? t[n] = "�" : (t[n] = f(r, n), t[++n] = f(r, n))
@@ -148,13 +148,13 @@ _global.SENTRY_RELEASE = {
         p = t(42155),
         l = t(90341),
         y = t(96415),
-        v = "Object already initialized",
-        d = c.TypeError,
+        d = "Object already initialized",
+        v = c.TypeError,
         h = c.WeakMap;
       if (i || p.state) {
         var g = p.state || (p.state = new h);
         g.get = g.get, g.has = g.has, g.set = g.set, n = function(r, e) {
-          if (g.has(r)) throw new d(v);
+          if (g.has(r)) throw new v(d);
           return e.facade = r, g.set(r, e), e
         }, o = function(r) {
           return g.get(r) || {}
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
       } else {
         var b = l("state");
         y[b] = !0, n = function(r, e) {
-          if (f(r, b)) throw new d(v);
+          if (f(r, b)) throw new v(d);
           return e.facade = r, u(r, b, e), e
         }, o = function(r) {
           return f(r, b) ? r[b] : {}
@@ -182,7 +182,7 @@ _global.SENTRY_RELEASE = {
         getterFor: function(r) {
           return function(e) {
             var t;
-            if (!s(e) || (t = o(e)).type !== r) throw new d("Incompatible receiver, " + r + " required");
+            if (!s(e) || (t = o(e)).type !== r) throw new v("Incompatible receiver, " + r + " required");
             return t
           }
         }
@@ -200,8 +200,8 @@ _global.SENTRY_RELEASE = {
         p = t(64349),
         l = t(53832),
         y = t(67571),
-        v = t(45594),
-        d = t(69497),
+        d = t(45594),
+        v = t(69497),
         h = "DOMException",
         g = a("Error"),
         b = a(h),
@@ -217,20 +217,20 @@ _global.SENTRY_RELEASE = {
         w = m.prototype = b.prototype,
         E = "stack" in new g(h),
         x = "stack" in new b(1, 2),
-        A = b && v && Object.getOwnPropertyDescriptor(o, h),
+        A = b && d && Object.getOwnPropertyDescriptor(o, h),
         O = !(!A || A.writable && A.configurable),
         R = E && !O && !x;
       n({
         global: !0,
         constructor: !0,
-        forced: d || R
+        forced: v || R
       }, {
         DOMException: R ? m : b
       });
       var S = a(h),
         T = S.prototype;
       if (T.constructor !== S)
-        for (var _ in d || c(T, "constructor", i(1, S)), l)
+        for (var _ in v || c(T, "constructor", i(1, S)), l)
           if (s(l, _)) {
             var I = l[_],
               M = I.s;
@@ -611,25 +611,25 @@ _global.SENTRY_RELEASE = {
         p = f.enforce,
         l = f.get,
         y = String,
-        v = Object.defineProperty,
-        d = n("".slice),
+        d = Object.defineProperty,
+        v = n("".slice),
         h = n("".replace),
         g = n([].join),
         b = c && !o((function() {
-          return 8 !== v((function() {}), "length", {
+          return 8 !== d((function() {}), "length", {
             value: 8
           }).length
         })),
         m = String(String).split("String"),
         w = r.exports = function(r, e, t) {
-          "Symbol(" === d(y(e), 0, 7) && (e = "[" + h(y(e), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), t && t.getter && (e = "get " + e), t && t.setter && (e = "set " + e), (!i(r, "name") || s && r.name !== e) && (c ? v(r, "name", {
+          "Symbol(" === v(y(e), 0, 7) && (e = "[" + h(y(e), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), t && t.getter && (e = "get " + e), t && t.setter && (e = "set " + e), (!i(r, "name") || s && r.name !== e) && (c ? d(r, "name", {
             value: e,
             configurable: !0
-          }) : r.name = e), b && t && i(t, "arity") && r.length !== t.arity && v(r, "length", {
+          }) : r.name = e), b && t && i(t, "arity") && r.length !== t.arity && d(r, "length", {
             value: t.arity
           });
           try {
-            t && i(t, "constructor") && t.constructor ? c && v(r, "prototype", {
+            t && i(t, "constructor") && t.constructor ? c && d(r, "prototype", {
               writable: !1
             }) : r.prototype && (r.prototype = void 0)
           } catch (r) {}
@@ -945,8 +945,8 @@ _global.SENTRY_RELEASE = {
             value: r
           })
         })), i(e, 1);
-        for (var o, c = a(r), s = a(t), y = 0, v = 0, d = !1, h = n.length; y < h;) o = n[y++], d || o.key === c ? (d = !0, f(this, o.key)) : v++;
-        for (; v < h;)(o = n[v++]).key === c && o.value === s || u(this, o.key, o.value)
+        for (var o, c = a(r), s = a(t), y = 0, d = 0, v = !1, h = n.length; y < h;) o = n[y++], v || o.key === c ? (v = !0, f(this, o.key)) : d++;
+        for (; d < h;)(o = n[d++]).key === c && o.value === s || u(this, o.key, o.value)
       }), {
         enumerable: !0,
         unsafe: !0
@@ -1185,7 +1185,7 @@ _global.SENTRY_RELEASE = {
         p = /^\s*(?:class|function)\b/,
         l = n(p.exec),
         y = !p.test(u),
-        v = function(r) {
+        d = function(r) {
           if (!a(r)) return !1;
           try {
             return f(u, [], r), !0
@@ -1193,7 +1193,7 @@ _global.SENTRY_RELEASE = {
             return !1
           }
         },
-        d = function(r) {
+        v = function(r) {
           if (!a(r)) return !1;
           switch (i(r)) {
             case "AsyncFunction":
@@ -1207,12 +1207,12 @@ _global.SENTRY_RELEASE = {
             return !0
           }
         };
-      d.sham = !0, r.exports = !f || o((function() {
+      v.sham = !0, r.exports = !f || o((function() {
         var r;
-        return v(v.call) || !v(Object) || !v((function() {
+        return d(d.call) || !d(Object) || !d((function() {
           r = !0
         })) || r
-      })) ? d : v
+      })) ? v : d
     },
     56019: (r, e, t) => {
       var n = t(80079),
@@ -1303,8 +1303,8 @@ _global.SENTRY_RELEASE = {
         p = t(56639),
         l = t(80869),
         y = t(54135),
-        v = t(14742),
-        d = t(97789),
+        d = t(14742),
+        v = t(97789),
         h = t(20958),
         g = t(19590),
         b = t(33019),
@@ -1341,7 +1341,7 @@ _global.SENTRY_RELEASE = {
       m && w || (m = function(r) {
         h(arguments.length, 1);
         var e = f(r) ? r : A(r),
-          t = v(arguments, 1);
+          t = d(arguments, 1);
         return T[++S] = function() {
           s(e, void 0, t)
         }, o(S), S
@@ -1351,8 +1351,8 @@ _global.SENTRY_RELEASE = {
         E.nextTick(M(r))
       } : x && x.now ? o = function(r) {
         x.now(M(r))
-      } : O && !g ? (i = (a = new O).port2, a.port1.onmessage = D, o = u(i.postMessage, i)) : c.addEventListener && f(c.postMessage) && !c.importScripts && n && "file:" !== n.protocol && !l(k) ? (o = k, c.addEventListener("message", D, !1)) : o = _ in d("script") ? function(r) {
-        y.appendChild(d("script"))[_] = function() {
+      } : O && !g ? (i = (a = new O).port2, a.port1.onmessage = D, o = u(i.postMessage, i)) : c.addEventListener && f(c.postMessage) && !c.importScripts && n && "file:" !== n.protocol && !l(k) ? (o = k, c.addEventListener("message", D, !1)) : o = _ in v("script") ? function(r) {
+        y.appendChild(v("script"))[_] = function() {
           y.removeChild(this), I(r)
         }
       } : function(r) {
@@ -1396,12 +1396,12 @@ _global.SENTRY_RELEASE = {
         s = t(46282),
         u = t(51806);
       r.exports = function(r, e) {
-        var t, f, p, l, y, v = r.target,
-          d = r.global,
+        var t, f, p, l, y, d = r.target,
+          v = r.global,
           h = r.stat;
-        if (t = d ? n : h ? n[v] || c(v, {}) : n[v] && n[v].prototype)
+        if (t = v ? n : h ? n[d] || c(d, {}) : n[d] && n[d].prototype)
           for (f in e) {
-            if (l = e[f], p = r.dontCallGetSet ? (y = o(t, f)) && y.value : t[f], !u(d ? f : v + (h ? "." : "#") + f, r.forced) && void 0 !== p) {
+            if (l = e[f], p = r.dontCallGetSet ? (y = o(t, f)) && y.value : t[f], !u(v ? f : d + (h ? "." : "#") + f, r.forced) && void 0 !== p) {
               if (typeof l == typeof p) continue;
               s(l, p)
             }(r.sham || p && p.sham) && a(l, "sham", !0), i(t, f, l, r)
@@ -1425,12 +1425,12 @@ _global.SENTRY_RELEASE = {
         p = "prototype",
         l = "script",
         y = f("IE_PROTO"),
-        v = function() {},
-        d = function(r) {
+        d = function() {},
+        v = function(r) {
           return "<" + l + ">" + r + "</" + l + ">"
         },
         h = function(r) {
-          r.write(d("")), r.close();
+          r.write(v("")), r.close();
           var e = r.parentWindow.Object;
           return r = null, e
         },
@@ -1439,13 +1439,13 @@ _global.SENTRY_RELEASE = {
             n = new ActiveXObject("htmlfile")
           } catch (r) {}
           var r, e, t;
-          g = "undefined" != typeof document ? document.domain && n ? h(n) : (e = u("iframe"), t = "java" + l + ":", e.style.display = "none", s.appendChild(e), e.src = String(t), (r = e.contentWindow.document).open(), r.write(d("document.F=Object")), r.close(), r.F) : h(n);
+          g = "undefined" != typeof document ? document.domain && n ? h(n) : (e = u("iframe"), t = "java" + l + ":", e.style.display = "none", s.appendChild(e), e.src = String(t), (r = e.contentWindow.document).open(), r.write(v("document.F=Object")), r.close(), r.F) : h(n);
           for (var o = i.length; o--;) delete g[p][i[o]];
           return g()
         };
       c[y] = !0, r.exports = Object.create || function(r, e) {
         var t;
-        return null !== r ? (v[p] = o(r), t = new v, v[p] = null, t[y] = r) : t = g(), void 0 === e ? t : a.f(t, e)
+        return null !== r ? (d[p] = o(r), t = new d, d[p] = null, t[y] = r) : t = g(), void 0 === e ? t : a.f(t, e)
       }
     },
     67016: (r, e, t) => {
@@ -1459,8 +1459,8 @@ _global.SENTRY_RELEASE = {
         p = t(5727),
         l = t(56011),
         y = t(92947),
-        v = t(34308),
-        d = t(99755),
+        d = t(34308),
+        v = t(99755),
         h = t(78110),
         g = t(19529),
         b = t(70325),
@@ -1504,7 +1504,7 @@ _global.SENTRY_RELEASE = {
             var e = new i.Set([7]),
               t = r(e),
               n = r(D(7));
-            return t === e || !t.has(7) || !v(n) || 7 != +n
+            return t === e || !t.has(7) || !d(n) || 7 != +n
           })) && r
         },
         er = function(r, e) {
@@ -1561,7 +1561,7 @@ _global.SENTRY_RELEASE = {
           return W(e, r, n), n
         },
         fr = function(r, e) {
-          if (d(r) && ir("Symbol"), !v(r)) return r;
+          if (v(r) && ir("Symbol"), !d(r)) return r;
           if (e) {
             if (F(e, r)) return B(e, r)
           } else e = new L;
@@ -1627,7 +1627,7 @@ _global.SENTRY_RELEASE = {
             case "BigUint64Array":
               u = "DataView" === y ? r.byteLength : r.length, o = function(r, e, t, n, o) {
                 var a = i[e];
-                return v(a) || cr(e), new a(ur(r.buffer, o), t, n)
+                return d(a) || cr(e), new a(ur(r.buffer, o), t, n)
               }(r, y, r.byteOffset, u, e);
               break;
             case "DOMQuad":
@@ -1779,7 +1779,7 @@ _global.SENTRY_RELEASE = {
           var e, t, n = A(arguments.length, 1) > 1 && !y(arguments[1]) ? g(arguments[1]) : void 0,
             o = n ? n.transfer : void 0;
           void 0 !== o && (t = function(r, e) {
-            if (!v(r)) throw new P("Transfer option cannot be converted to a sequence");
+            if (!d(r)) throw new P("Transfer option cannot be converted to a sequence");
             var t = [];
             h(r, (function(r) {
               H(t, g(r))
@@ -2011,10 +2011,10 @@ _global.SENTRY_RELEASE = {
         p = t(76085),
         l = t(76853),
         y = TypeError,
-        v = function(r, e) {
+        d = function(r, e) {
           this.stopped = r, this.result = e
         },
-        d = v.prototype;
+        v = d.prototype;
       r.exports = function(r, e, t) {
         var h, g, b, m, w, E, x, A = t && t.that,
           O = !(!t || !t.AS_ENTRIES),
@@ -2023,7 +2023,7 @@ _global.SENTRY_RELEASE = {
           T = !(!t || !t.INTERRUPTED),
           _ = n(e, A),
           I = function(r) {
-            return h && l(h, "normal", r), new v(!0, r)
+            return h && l(h, "normal", r), new d(!0, r)
           },
           M = function(r) {
             return O ? (a(r), T ? _(r[0], r[1], I) : _(r[0], r[1])) : T ? _(r, I) : _(r)
@@ -2034,8 +2034,8 @@ _global.SENTRY_RELEASE = {
           if (!(g = p(r))) throw new y(i(r) + " is not iterable");
           if (c(g)) {
             for (b = 0, m = s(r); m > b; b++)
-              if ((w = M(r[b])) && u(d, w)) return w;
-            return new v(!1)
+              if ((w = M(r[b])) && u(v, w)) return w;
+            return new d(!1)
           }
           h = f(r, g)
         }
@@ -2045,9 +2045,9 @@ _global.SENTRY_RELEASE = {
           } catch (r) {
             l(h, "throw", r)
           }
-          if ("object" == typeof w && w && u(d, w)) return w
+          if ("object" == typeof w && w && u(v, w)) return w
         }
-        return new v(!1)
+        return new d(!1)
       }
     },
     78339: (r, e, t) => {
@@ -2081,8 +2081,8 @@ _global.SENTRY_RELEASE = {
         p = t(56639),
         l = t(70325),
         y = t(44085),
-        v = t(79705),
-        d = t(26510),
+        d = t(79705),
+        v = t(26510),
         h = t(90300),
         g = t(35499),
         b = t(85769),
@@ -2146,7 +2146,7 @@ _global.SENTRY_RELEASE = {
             get: function() {
               return f(this) ? this[j] : void 0
             }
-          }), L) s[n] && v(s[n], j, n);
+          }), L) s[n] && d(s[n], j, n);
       r.exports = {
         NATIVE_ARRAY_BUFFER_VIEWS: N,
         TYPED_ARRAY_TAG: U && j,
@@ -2171,7 +2171,7 @@ _global.SENTRY_RELEASE = {
                   } catch (r) {}
                 }
               }
-            M[r] && !t || d(M, r, t ? e : N && S[r] || e, n)
+            M[r] && !t || v(M, r, t ? e : N && S[r] || e, n)
           }
         },
         exportTypedArrayStaticMethod: function(r, e, t) {
@@ -2185,10 +2185,10 @@ _global.SENTRY_RELEASE = {
                   } catch (r) {}
               if (I[r] && !t) return;
               try {
-                return d(I, r, t ? e : N && I[r] || e)
+                return v(I, r, t ? e : N && I[r] || e)
               } catch (r) {}
             }
-            for (n in L) !(o = s[n]) || o[r] && !t || d(o, r, e)
+            for (n in L) !(o = s[n]) || o[r] && !t || v(o, r, e)
           }
         },
         getTypedArrayConstructor: B,

@@ -26,8 +26,8 @@ _global.SENTRY_RELEASE = {
         a = n(53310),
         s = new a,
         l = s.getBrowser(),
-        d = s.getCPU(),
-        u = s.getDevice(),
+        u = s.getCPU(),
+        d = s.getDevice(),
         c = s.getEngine(),
         b = s.getOS(),
         w = s.getUA(),
@@ -55,8 +55,8 @@ _global.SENTRY_RELEASE = {
         p = Object.freeze({
           ClientUAInstance: s,
           browser: l,
-          cpu: d,
-          device: u,
+          cpu: u,
+          device: d,
           engine: c,
           os: b,
           ua: w,
@@ -269,11 +269,11 @@ _global.SENTRY_RELEASE = {
         le = function(e) {
           return e.name === j.Yandex
         },
-        de = function(e) {
+        ue = function(e) {
           var i = e.name;
           return i === j.Safari || i === j.MobileSafari
         },
-        ue = function(e) {
+        de = function(e) {
           return e.name === j.MobileSafari
         },
         ce = function(e) {
@@ -346,7 +346,7 @@ _global.SENTRY_RELEASE = {
           isConsole: H(n),
           isWearable: G(n),
           isEmbedded: Y(n),
-          isMobileSafari: ue(r) || Oe(),
+          isMobileSafari: de(r) || Oe(),
           isChromium: ae(r),
           isMobile: q(n) || Oe(),
           isMobileOnly: B(n),
@@ -358,7 +358,7 @@ _global.SENTRY_RELEASE = {
           isIOS: ie(t) || Oe(),
           isChrome: te(r),
           isFirefox: oe(r),
-          isSafari: de(r),
+          isSafari: ue(r),
           isOpera: ce(r),
           isIE: be(r),
           osVersion: ne(t),
@@ -387,23 +387,23 @@ _global.SENTRY_RELEASE = {
           isSamsungBrowser: me(r)
         }
       }
-      var Ce = D(u),
-        Pe = H(u),
-        Ae = G(u),
-        Te = Y(u),
-        Ie = ue(l) || Oe(),
+      var Ce = D(d),
+        Pe = H(d),
+        Ae = G(d),
+        Te = Y(d),
+        Ie = de(l) || Oe(),
         Ve = ae(l),
-        je = q(u) || Oe(),
-        We = B(u),
-        Ne = z(u) || Oe(),
-        Fe = R(u),
-        Ue = R(u),
+        je = q(d) || Oe(),
+        We = B(d),
+        Ne = z(d) || Oe(),
+        Fe = R(d),
+        Ue = R(d),
         Le = K(b),
         Be = ee(b),
         ze = ie(b) || Oe(),
         qe = te(l),
         De = oe(l),
-        Re = de(l),
+        Re = ue(l),
         Ge = ce(l),
         He = be(l),
         Ye = ne(b),
@@ -411,19 +411,19 @@ _global.SENTRY_RELEASE = {
         Ze = fe(l),
         Xe = pe(l),
         Ke = ge(l),
-        Qe = $(u),
-        Je = Z(u),
+        Qe = $(d),
+        Je = Z(d),
         ei = he(c),
         ii = ve(c),
         ni = Me(w),
         ri = se(l) || ke(w),
         ti = le(l),
-        oi = X(u),
+        oi = X(d),
         ai = xe(),
         si = Oe(),
         li = Ee(),
-        di = Se(),
-        ui = ye(),
+        ui = Se(),
+        di = ye(),
         ci = ke(w),
         bi = se(l) && !ke(w),
         wi = Q(b),
@@ -538,8 +538,8 @@ _global.SENTRY_RELEASE = {
             }
           }(n.type),
           l = s.isBrowser,
-          d = s.isMobile,
-          u = s.isTablet,
+          u = s.isMobile,
+          d = s.isTablet,
           c = s.isSmartTV,
           b = s.isConsole,
           w = s.isWearable,
@@ -574,7 +574,7 @@ _global.SENTRY_RELEASE = {
             osVersion: F(n.version),
             userAgent: F(r)
           }
-        }(b, t, o, a) : d || u ? function(e, i, n, r) {
+        }(b, t, o, a) : u || d ? function(e, i, n, r) {
           return function(e) {
             for (var i = 1; i < arguments.length; i++) {
               var n = null != arguments[i] ? arguments[i] : {};
@@ -625,7 +625,7 @@ _global.SENTRY_RELEASE = {
           })
         }
         console.error("No valid user agent string was provided")
-      }, i.getUA = ni, i.isAndroid = Le, i.isBrowser = Fe, i.isChrome = qe, i.isChromium = Ve, i.isConsole = Pe, i.isDesktop = Ue, i.isEdge = ri, i.isEdgeChromium = ci, i.isElectron = ui, i.isEmbedded = Te, i.isFirefox = De, i.isIE = He, i.isIOS = ze, i.isIOS13 = ai, i.isIPad13 = si, i.isIPhone13 = li, i.isIPod13 = di, i.isLegacyEdge = bi, i.isMIUI = fi, i.isMacOs = mi, i.isMobile = je, i.isMobileOnly = We, i.isMobileSafari = Ie, i.isOpera = Ge, i.isSafari = Re, i.isSamsungBrowser = pi, i.isSmartTV = Ce, i.isTablet = Ne, i.isWearable = Ae, i.isWinPhone = Be, i.isWindows = wi, i.isYandex = ti, i.mobileModel = Je, i.mobileVendor = Qe, i.osName = $e, i.osVersion = Ye, i.parseUserAgent = f, i.setUserAgent = function(e) {
+      }, i.getUA = ni, i.isAndroid = Le, i.isBrowser = Fe, i.isChrome = qe, i.isChromium = Ve, i.isConsole = Pe, i.isDesktop = Ue, i.isEdge = ri, i.isEdgeChromium = ci, i.isElectron = di, i.isEmbedded = Te, i.isFirefox = De, i.isIE = He, i.isIOS = ze, i.isIOS13 = ai, i.isIPad13 = si, i.isIPhone13 = li, i.isIPod13 = ui, i.isLegacyEdge = bi, i.isMIUI = fi, i.isMacOs = mi, i.isMobile = je, i.isMobileOnly = We, i.isMobileSafari = Ie, i.isOpera = Ge, i.isSafari = Re, i.isSamsungBrowser = pi, i.isSmartTV = Ce, i.isTablet = Ne, i.isWearable = Ae, i.isWinPhone = Be, i.isWindows = wi, i.isYandex = ti, i.mobileModel = Je, i.mobileVendor = Qe, i.osName = $e, i.osVersion = Ye, i.parseUserAgent = f, i.setUserAgent = function(e) {
         return m(e)
       }, i.useDeviceData = gi, i.useDeviceSelectors = function(e) {
         var i = gi(e || window.navigator.userAgent);
@@ -759,8 +759,8 @@ _global.SENTRY_RELEASE = {
         var a = "function",
           s = "undefined",
           l = "object",
-          d = "string",
-          u = "major",
+          u = "string",
+          d = "major",
           c = "model",
           b = "name",
           w = "type",
@@ -800,21 +800,21 @@ _global.SENTRY_RELEASE = {
             return i
           },
           H = function(e, i) {
-            return typeof e === d && -1 !== Y(i).indexOf(Y(e))
+            return typeof e === u && -1 !== Y(i).indexOf(Y(e))
           },
           Y = function(e) {
             return e.toLowerCase()
           },
           $ = function(e, i) {
-            if (typeof e === d) return e = e.replace(/^\s\s*/, ""), typeof i === s ? e : e.substring(0, 500)
+            if (typeof e === u) return e = e.replace(/^\s\s*/, ""), typeof i === s ? e : e.substring(0, 500)
           },
           Z = function(e, i) {
-            for (var n, r, t, s, d, u, c = 0; c < i.length && !d;) {
+            for (var n, r, t, s, u, d, c = 0; c < i.length && !u;) {
               var b = i[c],
                 w = i[c + 1];
-              for (n = r = 0; n < b.length && !d && b[n];)
-                if (d = b[n++].exec(e))
-                  for (t = 0; t < w.length; t++) u = d[++r], typeof(s = w[t]) === l && s.length > 0 ? 2 === s.length ? typeof s[1] == a ? this[s[0]] = s[1].call(this, u) : this[s[0]] = s[1] : 3 === s.length ? typeof s[1] !== a || s[1].exec && s[1].test ? this[s[0]] = u ? u.replace(s[1], s[2]) : o : this[s[0]] = u ? s[1].call(this, u, s[2]) : o : 4 === s.length && (this[s[0]] = u ? s[3].call(this, u.replace(s[1], s[2])) : o) : this[s] = u || o;
+              for (n = r = 0; n < b.length && !u && b[n];)
+                if (u = b[n++].exec(e))
+                  for (t = 0; t < w.length; t++) d = u[++r], typeof(s = w[t]) === l && s.length > 0 ? 2 === s.length ? typeof s[1] == a ? this[s[0]] = s[1].call(this, d) : this[s[0]] = s[1] : 3 === s.length ? typeof s[1] !== a || s[1].exec && s[1].test ? this[s[0]] = d ? d.replace(s[1], s[2]) : o : this[s[0]] = d ? s[1].call(this, d, s[2]) : o : 4 === s.length && (this[s[0]] = d ? s[3].call(this, d.replace(s[1], s[2])) : o) : this[s] = d || o;
               c += 2
             }
           },
@@ -1492,7 +1492,7 @@ _global.SENTRY_RELEASE = {
               k = n && n.userAgent == r;
             return this.getBrowser = function() {
               var e, i = {};
-              return i[b] = o, i[f] = o, Z.call(i, r, y.browser), i[u] = typeof(e = i[f]) === d ? e.replace(/[^\d\.]/g, "").split(".")[0] : o, k && n && n.brave && typeof n.brave.isBrave == a && (i[b] = "Brave"), i
+              return i[b] = o, i[f] = o, Z.call(i, r, y.browser), i[d] = typeof(e = i[f]) === u ? e.replace(/[^\d\.]/g, "").split(".")[0] : o, k && n && n.brave && typeof n.brave.isBrave == a && (i[b] = "Brave"), i
             }, this.getCPU = function() {
               var e = {};
               return e[p] = o, Z.call(e, r, y.cpu), e
@@ -1517,10 +1517,10 @@ _global.SENTRY_RELEASE = {
             }, this.getUA = function() {
               return r
             }, this.setUA = function(e) {
-              return r = typeof e === d && e.length > 500 ? $(e, 500) : e, this
+              return r = typeof e === u && e.length > 500 ? $(e, 500) : e, this
             }, this.setUA(r), this
           };
-        J.VERSION = "1.0.40", J.BROWSER = G([b, f, u]), J.CPU = G([p]), J.DEVICE = G([c, m, w, g, h, y, v, k, x]), J.ENGINE = J.OS = G([b, f]), typeof i !== s ? (e.exports && (i = e.exports = J), i.UAParser = J) : n.amdO ? (r = function() {
+        J.VERSION = "1.0.40", J.BROWSER = G([b, f, d]), J.CPU = G([p]), J.DEVICE = G([c, m, w, g, h, y, v, k, x]), J.ENGINE = J.OS = G([b, f]), typeof i !== s ? (e.exports && (i = e.exports = J), i.UAParser = J) : n.amdO ? (r = function() {
           return J
         }.call(i, n, i, e)) === o || (e.exports = r) : typeof t !== s && (t.UAParser = J);
         var ee = typeof t !== s && (t.jQuery || t.Zepto);

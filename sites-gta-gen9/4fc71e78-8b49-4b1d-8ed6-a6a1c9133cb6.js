@@ -52,22 +52,22 @@ _global.SENTRY_RELEASE = {
         }
       }();
       var l, s = [],
-        u = !1,
-        d = -1;
-
-      function f() {
-        u && l && (u = !1, l.length ? s = l.concat(s) : d = -1, s.length && c())
-      }
+        d = !1,
+        u = -1;
 
       function c() {
-        if (!u) {
-          var e = i(f);
-          u = !0;
+        d && l && (d = !1, l.length ? s = l.concat(s) : u = -1, s.length && f())
+      }
+
+      function f() {
+        if (!d) {
+          var e = i(c);
+          d = !0;
           for (var t = s.length; t;) {
-            for (l = s, s = []; ++d < t;) l && l[d].run();
-            d = -1, t = s.length
+            for (l = s, s = []; ++u < t;) l && l[u].run();
+            u = -1, t = s.length
           }
-          l = null, u = !1,
+          l = null, d = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === o || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        s.push(new b(e, t)), 1 !== s.length || u || i(c)
+        s.push(new b(e, t)), 1 !== s.length || d || i(f)
       }, b.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {

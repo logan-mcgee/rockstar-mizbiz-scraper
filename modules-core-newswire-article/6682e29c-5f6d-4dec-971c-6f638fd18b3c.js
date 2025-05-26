@@ -18,13 +18,13 @@ _global.SENTRY_RELEASE = {
   [4684], {
     54684: (o, e, t) => {
       t.r(e), t.d(e, {
-        Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Label: () => a,
+        Lightbox_Close_Button_Tooltip: () => _,
         Lightbox_Dialog_Description: () => L,
         Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => g,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => c,
+        Lightbox_Download_Button_Tooltip: () => c,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -35,8 +35,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => p
       });
-      var _ = "Cerrar",
-        a = "Presiona {shortcut}",
+      var a = "Cerrar",
+        _ = "Presiona {shortcut}",
         l = "Acercar",
         i = "Presiona {shortcut}",
         n = "Alejar",
@@ -46,13 +46,13 @@ _global.SENTRY_RELEASE = {
         r = "Nivel del zoom",
         u = "{zoom}%",
         g = "Descargar",
-        f = "Descargar",
-        c = "Abrir imagen",
+        c = "Descargar",
+        f = "Abrir imagen",
         h = "Imagen",
         L = "Texto alt: {alt}",
         p = {
-          Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Close_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: _,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: n,
@@ -62,8 +62,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: g,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: c,
+          Lightbox_Download_Button_Tooltip: c,
+          Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: h,
           Lightbox_Dialog_Description: L
         }

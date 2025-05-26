@@ -24,10 +24,10 @@ _global.SENTRY_RELEASE = {
 
       function s() {}
       s.resetWarningCache = n, e.exports = function() {
-        function e(e, a, t, n, s, d) {
-          if (d !== o) {
-            var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw r.name = "Invariant Violation", r
+        function e(e, a, t, n, s, r) {
+          if (r !== o) {
+            var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw d.name = "Invariant Violation", d
           }
         }
 

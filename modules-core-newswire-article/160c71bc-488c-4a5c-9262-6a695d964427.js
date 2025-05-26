@@ -19,15 +19,15 @@ _global.SENTRY_RELEASE = {
     57727: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
@@ -36,8 +36,8 @@ _global.SENTRY_RELEASE = {
         default: () => p
       });
       var _ = "Закрыть всплывающее окно",
-        l = "Нажмите {shortcut}",
-        a = "Увеличить размер изображения",
+        a = "Нажмите {shortcut}",
+        l = "Увеличить размер изображения",
         n = "Нажмите {shortcut}",
         i = "Уменьшить размер изображения",
         d = "Нажмите {shortcut}",
@@ -48,12 +48,12 @@ _global.SENTRY_RELEASE = {
         g = "Загрузить",
         h = "Загрузить",
         L = "Открыть изображение в всплывающем окне",
-        f = "Всплывающее окно",
-        c = "Замещающий текст: {alt}",
+        c = "Всплывающее окно",
+        f = "Замещающий текст: {alt}",
         p = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: d,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }

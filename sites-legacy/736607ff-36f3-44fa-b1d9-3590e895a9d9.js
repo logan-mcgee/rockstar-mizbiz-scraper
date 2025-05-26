@@ -71,10 +71,10 @@ _global.SENTRY_RELEASE = {
         a = t(66920),
         i = t(45379),
         l = t(62229),
-        u = t(40148),
-        d = t(87171);
+        d = t(40148),
+        u = t(87171);
       const c = (e, o) => {
-          e && o ? document.cookie = `${e}=${o}; domain=${(0,d.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
+          e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
         f = e => {
           const o = document.cookie.split("; "),
@@ -176,7 +176,7 @@ _global.SENTRY_RELEASE = {
         _ = () => {
           const {
             location: e
-          } = window, o = (0, u.A)(), t = (e => {
+          } = window, o = (0, d.A)(), t = (e => {
             const o = h.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               n = "detect-locals" === t[0] ? 1 : 0;
@@ -188,9 +188,9 @@ _global.SENTRY_RELEASE = {
           let s = r;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = f(a);
-          s = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === i)) || r;
-          const [l, d] = p(a, s.iso);
-          return [s, d]
+          s = o.currentSite?.site === d.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === i)) || r;
+          const [l, u] = p(a, s.iso);
+          return [s, u]
         };
       var g = t(56481);
       const y = () => "en-US";
@@ -255,23 +255,23 @@ _global.SENTRY_RELEASE = {
             track: t,
             parent: n = ""
           } = e;
-          const r = (0, u.A)(),
+          const r = (0, d.A)(),
             [s, a] = _(),
             {
               subdomaincom: i,
               iso: l
             } = o,
-            d = (e => {
+            u = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
-              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), r.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
+              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), r.currentSite?.site === d.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(i);
           t?.({
             event: "cta_other",
-            link_url: d,
+            link_url: u,
             text: i,
             element_placement: n
-          }), a(l), window.location.href = d
+          }), a(l), window.location.href = u
         }
     },
     38525: (e, o, t) => {
@@ -356,23 +356,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function u(e, o, t) {
+      function d(e, o, t) {
         var n, s = {},
-          u = null,
-          d = null;
-        for (n in void 0 !== t && (u = "" + t), void 0 !== o.key && (u = "" + o.key), void 0 !== o.ref && (d = o.ref), o) a.call(o, n) && !l.hasOwnProperty(n) && (s[n] = o[n]);
+          d = null,
+          u = null;
+        for (n in void 0 !== t && (d = "" + t), void 0 !== o.key && (d = "" + o.key), void 0 !== o.ref && (u = o.ref), o) a.call(o, n) && !l.hasOwnProperty(n) && (s[n] = o[n]);
         if (e && e.defaultProps)
           for (n in o = e.defaultProps) void 0 === s[n] && (s[n] = o[n]);
         return {
           $$typeof: r,
           type: e,
-          key: u,
-          ref: d,
+          key: d,
+          ref: u,
           props: s,
           _owner: i.current
         }
       }
-      o.Fragment = s, o.jsx = u, o.jsxs = u
+      o.Fragment = s, o.jsx = d, o.jsxs = d
     },
     55400: (e, o, t) => {
       var n = {

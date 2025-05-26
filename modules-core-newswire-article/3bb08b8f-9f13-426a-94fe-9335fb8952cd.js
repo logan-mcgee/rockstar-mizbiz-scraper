@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
         r = t(52066),
         o = t(43851),
         l = t(85239),
-        n = t(95966);
-      const d = {
+        d = t(95966);
+      const n = {
         panoramaCarouselWrapper: "rockstargames-modules-core-newswire-articleb4ada92c1921a931c699aafbbfb90d13",
         "swiper-navigation-disabled": "rockstargames-modules-core-newswire-articled20ad0b7e7720a75082106c87130274f",
         "swiper-rtl": "rockstargames-modules-core-newswire-articlec658d9e1c69cce7a4a70ef2d52858eba",
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
             children: r
           } = e;
           return (0, i.jsx)("div", {
-            className: (0, n.classList)(s, a ? d.fadeIn : "", t ? d.active : ""),
+            className: (0, d.classList)(s, a ? n.fadeIn : "", t ? n.active : ""),
             children: r
           })
         },
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
             currentSlide: a
           } = e;
           return (0, i.jsx)("div", {
-            className: d.customPagination,
+            className: n.customPagination,
             children: (0, i.jsx)("span", {
               children: a?.itemName ?? "Item"
             })
@@ -75,7 +75,7 @@ _global.SENTRY_RELEASE = {
           return a && a?.content ? (0, i.jsx)(c, {
             shouldFade: a?.fadeIn,
             condition: a?.fadeIn,
-            className: (0, n.classList)(d.slot, d[t], d[s]),
+            className: (0, d.classList)(n.slot, n[t], n[s]),
             children: (0, i.jsx)(l.A, {
               ...a.content[0]
             })
@@ -88,12 +88,12 @@ _global.SENTRY_RELEASE = {
             foregroundContent: s
           } = e;
           return (0, i.jsxs)("div", {
-            className: d.slideContent,
+            className: n.slideContent,
             children: [t && (0, i.jsx)(c, {
               shouldFade: t?.fadeIn,
               condition: a,
               children: (0, i.jsx)("div", {
-                className: d.backgroundContent,
+                className: n.backgroundContent,
                 children: (0, i.jsx)(l.A, {
                   ...t.imageWithBadge
                 })
@@ -102,7 +102,7 @@ _global.SENTRY_RELEASE = {
               shouldFade: s?.fadeIn,
               condition: a,
               children: (0, i.jsx)("div", {
-                className: d.foregroundContent,
+                className: n.foregroundContent,
                 children: (0, i.jsx)(l.A, {
                   ...s.imageWithBadge
                 })
@@ -119,7 +119,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [m, g] = (0, s.useState)(null);
           return c ? (0, i.jsx)("div", {
-            className: d.panoramaCarouselWrapper,
+            className: n.panoramaCarouselWrapper,
             children: (0, i.jsxs)(o.RC, {
               modules: [r.Vx],
               loop: a,
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
                 }
               },
               children: [(0, i.jsxs)("div", {
-                className: (0, n.classList)(d.slotContainer, d.top),
+                className: (0, d.classList)(n.slotContainer, n.top),
                 children: [(0, i.jsx)(b, {
                   item: m?.topLeftSlot,
                   vertical: "top",
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
                   })
                 }
               }, e?.key))), (0, i.jsxs)("div", {
-                className: (0, n.classList)(d.slotContainer, d.bottom),
+                className: (0, d.classList)(n.slotContainer, n.bottom),
                 children: [(0, i.jsx)(b, {
                   item: m?.bottomLeftSlot,
                   vertical: "bottom",

@@ -82,7 +82,7 @@ _global.SENTRY_RELEASE = {
           stepIconroles: "rockstargames-sites-gta-gen9ea5b759ebe95532d36d128e2a7c66bdb"
         };
       var f = t(25854);
-      const b = e => {
+      const i = e => {
           let {
             mutation: a,
             query: t,
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
             t: r
           } = e;
           const n = (0, o.useQueryParams)(),
-            [d, b] = (0, s.useState)({}),
+            [d, i] = (0, s.useState)({}),
             {
               data: l
             } = (0, o.useQuery)(t, {
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
               skip: !Object.entries(d).length
             });
           return (0, s.useEffect)((() => {
-            b({
+            i({
               step: n.get("step")
             })
           }), [n.get("step")]), (0, f.jsxs)("div", {
@@ -110,7 +110,7 @@ _global.SENTRY_RELEASE = {
               dangerouslySetInnerHTML: {
                 __html: r("online-feedback-desc")
               }
-            }), l && (0, f.jsx)(i, {
+            }), l && (0, f.jsx)(b, {
               mutation: a,
               tree: l.tree,
               type: c,
@@ -118,7 +118,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        i = e => {
+        b = e => {
           let {
             mutation: a,
             tree: t,
@@ -163,14 +163,14 @@ _global.SENTRY_RELEASE = {
             t: c
           } = e;
           const {
-            formatMessage: b
+            formatMessage: i
           } = (0, r.useIntl)(), {
-            loggedIn: i
+            loggedIn: b
           } = (0, n.useRockstarUser)(), l = (0, s.useRef)(), [p, {
             data: m,
             error: u
           }] = (0, o.useMutation)(t);
-          return i ? m?.submittal?.id ? (0, f.jsx)("div", {
+          return b ? m?.submittal?.id ? (0, f.jsx)("div", {
             className: g.success,
             dangerouslySetInnerHTML: {
               __html: c("feedback.enter_success")
@@ -199,7 +199,7 @@ _global.SENTRY_RELEASE = {
               type: "submit",
               children: c("SUBMIT")
             })]
-          }) : b(d.gtao_feedback_login_cta_text)
+          }) : i(d.gtao_feedback_login_cta_text)
         },
         p = e => {
           let {
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
             query: t,
             type: s
           } = e;
-          return (0, o.withTranslations)(b, "rdo" === s ? "rdr2" : s)({
+          return (0, o.withTranslations)(i, "rdo" === s ? "rdr2" : s)({
             mutation: a,
             query: t,
             type: s

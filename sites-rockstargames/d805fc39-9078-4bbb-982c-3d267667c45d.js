@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
     41454: (e, a, t) => {
       var s = t(62229),
         r = Symbol.for("react.element"),
-        d = Symbol.for("react.fragment"),
-        o = Object.prototype.hasOwnProperty,
+        o = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
         n = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -33,30 +33,30 @@ _global.SENTRY_RELEASE = {
         };
 
       function c(e, a, t) {
-        var s, d = {},
+        var s, o = {},
           c = null,
           f = null;
-        for (s in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (f = a.ref), a) o.call(a, s) && !l.hasOwnProperty(s) && (d[s] = a[s]);
+        for (s in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (f = a.ref), a) d.call(a, s) && !l.hasOwnProperty(s) && (o[s] = a[s]);
         if (e && e.defaultProps)
-          for (s in a = e.defaultProps) void 0 === d[s] && (d[s] = a[s]);
+          for (s in a = e.defaultProps) void 0 === o[s] && (o[s] = a[s]);
         return {
           $$typeof: r,
           type: e,
           key: c,
           ref: f,
-          props: d,
+          props: o,
           _owner: n.current
         }
       }
-      a.Fragment = d, a.jsx = c, a.jsxs = c
+      a.Fragment = o, a.jsx = c, a.jsxs = c
     },
     67365: (e, a, t) => {
       t.r(a), t.d(a, {
-        default: () => d
+        default: () => o
       });
       var s = t(9623);
       var r = t(25854);
-      const d = () => {
+      const o = () => {
         const [e] = (0, s.useSearchParams)(), a = e.get("src") ?? null;
         if (!a) return null;
         const {

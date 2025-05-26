@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       C.r(l), C.d(l, {
         AccessibilityIcon: () => n,
         ActivityLogIcon: () => c,
-        AlignBaselineIcon: () => a,
+        AlignBaselineIcon: () => f,
         AlignBottomIcon: () => w,
         AlignCenterHorizontallyIcon: () => h,
         AlignCenterVerticallyIcon: () => s,
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
         BlendingModeIcon: () => re,
         BookmarkFilledIcon: () => ce,
         BookmarkIcon: () => ne,
-        BorderAllIcon: () => ae,
+        BorderAllIcon: () => fe,
         BorderBottomIcon: () => we,
         BorderDashedIcon: () => he,
         BorderDottedIcon: () => se,
@@ -73,7 +73,7 @@ _global.SENTRY_RELEASE = {
         CaretSortIcon: () => Cl,
         CaretUpIcon: () => rl,
         ChatBubbleIcon: () => nl,
-        CheckCircledIcon: () => al,
+        CheckCircledIcon: () => fl,
         CheckIcon: () => cl,
         CheckboxIcon: () => wl,
         ChevronDownIcon: () => hl,
@@ -101,7 +101,7 @@ _global.SENTRY_RELEASE = {
         CookieIcon: () => rC,
         CopyIcon: () => nC,
         CornerBottomLeftIcon: () => cC,
-        CornerBottomRightIcon: () => aC,
+        CornerBottomRightIcon: () => fC,
         CornerTopLeftIcon: () => wC,
         CornerTopRightIcon: () => hC,
         CornersIcon: () => sC,
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
         DotFilledIcon: () => nt,
         DotIcon: () => rt,
         DotsHorizontalIcon: () => ct,
-        DotsVerticalIcon: () => at,
+        DotsVerticalIcon: () => ft,
         DoubleArrowDownIcon: () => wt,
         DoubleArrowLeftIcon: () => ht,
         DoubleArrowRightIcon: () => st,
@@ -155,7 +155,7 @@ _global.SENTRY_RELEASE = {
         EyeOpenIcon: () => rr,
         FaceIcon: () => nr,
         FigmaLogoIcon: () => cr,
-        FileIcon: () => ar,
+        FileIcon: () => fr,
         FileMinusIcon: () => wr,
         FilePlusIcon: () => hr,
         FileTextIcon: () => sr,
@@ -182,7 +182,7 @@ _global.SENTRY_RELEASE = {
         HeightIcon: () => ro,
         HobbyKnifeIcon: () => no,
         HomeIcon: () => co,
-        IconJarLogoIcon: () => fo,
+        IconJarLogoIcon: () => ao,
         IdCardIcon: () => vo,
         ImageIcon: () => go,
         InfoCircledIcon: () => uo,
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
         LinkNone2Icon: () => tn,
         LinkedInLogoIcon: () => on,
         ListBulletIcon: () => cn,
-        LockClosedIcon: () => an,
+        LockClosedIcon: () => fn,
         LockOpen1Icon: () => wn,
         LockOpen2Icon: () => hn,
         LoopIcon: () => sn,
@@ -235,7 +235,7 @@ _global.SENTRY_RELEASE = {
         PauseIcon: () => ri,
         Pencil1Icon: () => ni,
         Pencil2Icon: () => ci,
-        PersonIcon: () => ai,
+        PersonIcon: () => fi,
         PieChartIcon: () => wi,
         PilcrowIcon: () => hi,
         PinBottomIcon: () => si,
@@ -261,7 +261,7 @@ _global.SENTRY_RELEASE = {
         RulerSquareIcon: () => Cc,
         ScissorsIcon: () => rc,
         SectionIcon: () => nc,
-        SewingPinFilledIcon: () => ac,
+        SewingPinFilledIcon: () => fc,
         SewingPinIcon: () => cc,
         ShadowIcon: () => wc,
         ShadowInnerIcon: () => hc,
@@ -289,7 +289,7 @@ _global.SENTRY_RELEASE = {
         StitchesLogoIcon: () => rd,
         StopIcon: () => nd,
         StopwatchIcon: () => cd,
-        StretchHorizontallyIcon: () => ad,
+        StretchHorizontallyIcon: () => fd,
         StretchVerticallyIcon: () => wd,
         StrikethroughIcon: () => hd,
         SunIcon: () => sd,
@@ -311,31 +311,31 @@ _global.SENTRY_RELEASE = {
         ThickArrowRightIcon: () => qd,
         ThickArrowUpIcon: () => Kd,
         TimerIcon: () => Xd,
-        TokensIcon: () => ea,
-        TrackNextIcon: () => Ca,
-        TrackPreviousIcon: () => ra,
-        TransformIcon: () => na,
-        TransparencyGridIcon: () => ca,
-        TrashIcon: () => aa,
-        TriangleDownIcon: () => wa,
-        TriangleLeftIcon: () => ha,
-        TriangleRightIcon: () => sa,
-        TriangleUpIcon: () => La,
-        TwitterLogoIcon: () => Ha,
-        UnderlineIcon: () => Ma,
-        UpdateIcon: () => Ra,
-        UploadIcon: () => xa,
-        ValueIcon: () => ba,
-        ValueNoneIcon: () => Ia,
-        VercelLogoIcon: () => ja,
-        VideoIcon: () => ka,
-        ViewGridIcon: () => Ta,
-        ViewHorizontalIcon: () => Da,
-        ViewNoneIcon: () => _a,
-        ViewVerticalIcon: () => Fa,
-        WidthIcon: () => Na,
-        ZoomInIcon: () => Wa,
-        ZoomOutIcon: () => qa
+        TokensIcon: () => ef,
+        TrackNextIcon: () => Cf,
+        TrackPreviousIcon: () => rf,
+        TransformIcon: () => nf,
+        TransparencyGridIcon: () => df,
+        TrashIcon: () => af,
+        TriangleDownIcon: () => vf,
+        TriangleLeftIcon: () => gf,
+        TriangleRightIcon: () => uf,
+        TriangleUpIcon: () => mf,
+        TwitterLogoIcon: () => pf,
+        UnderlineIcon: () => Zf,
+        UpdateIcon: () => Vf,
+        UploadIcon: () => Ef,
+        ValueIcon: () => Bf,
+        ValueNoneIcon: () => Of,
+        VercelLogoIcon: () => yf,
+        VideoIcon: () => Sf,
+        ViewGridIcon: () => Af,
+        ViewHorizontalIcon: () => zf,
+        ViewNoneIcon: () => Pf,
+        ViewVerticalIcon: () => Gf,
+        WidthIcon: () => Uf,
+        ZoomInIcon: () => Qf,
+        ZoomOutIcon: () => Jf
       });
       var t = C(62229);
 
@@ -387,7 +387,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         d = ["color"],
-        a = (0, t.forwardRef)((function(e, l) {
+        f = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, d);
@@ -406,11 +406,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        f = ["color"],
+        a = ["color"],
         w = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, f);
+            n = r(e, a);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -927,7 +927,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         de = ["color"],
-        ae = (0, t.forwardRef)((function(e, l) {
+        fe = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, de);
@@ -1009,11 +1009,11 @@ _global.SENTRY_RELEASE = {
             fill: o
           }))
         })),
-        fe = ["color"],
+        ae = ["color"],
         we = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fe);
+            n = r(e, ae);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -2601,7 +2601,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dl = ["color"],
-        al = (0, t.forwardRef)((function(e, l) {
+        fl = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dl);
@@ -2620,11 +2620,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fl = ["color"],
+        al = ["color"],
         wl = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fl);
+            n = r(e, al);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -3144,7 +3144,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dC = ["color"],
-        aC = (0, t.forwardRef)((function(e, l) {
+        fC = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dC);
@@ -3163,11 +3163,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fC = ["color"],
+        aC = ["color"],
         wC = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fC);
+            n = r(e, aC);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -3682,7 +3682,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dt = ["color"],
-        at = (0, t.forwardRef)((function(e, l) {
+        ft = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dt);
@@ -3701,11 +3701,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        ft = ["color"],
+        at = ["color"],
         wt = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ft);
+            n = r(e, at);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -4342,7 +4342,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dr = ["color"],
-        ar = (0, t.forwardRef)((function(e, l) {
+        fr = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dr);
@@ -4361,11 +4361,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fr = ["color"],
+        ar = ["color"],
         wr = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fr);
+            n = r(e, ar);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -4892,11 +4892,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        ao = ["color"],
-        fo = (0, t.forwardRef)((function(e, l) {
+        fo = ["color"],
+        ao = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ao);
+            n = r(e, fo);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -5413,7 +5413,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dn = ["color"],
-        an = (0, t.forwardRef)((function(e, l) {
+        fn = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dn);
@@ -5432,11 +5432,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fn = ["color"],
+        an = ["color"],
         wn = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fn);
+            n = r(e, an);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -5951,7 +5951,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         di = ["color"],
-        ai = (0, t.forwardRef)((function(e, l) {
+        fi = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, di);
@@ -5970,11 +5970,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fi = ["color"],
+        ai = ["color"],
         wi = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fi);
+            n = r(e, ai);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -6491,7 +6491,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dc = ["color"],
-        ac = (0, t.forwardRef)((function(e, l) {
+        fc = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dc);
@@ -6510,11 +6510,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fc = ["color"],
+        ac = ["color"],
         wc = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fc);
+            n = r(e, ac);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7239,7 +7239,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         dd = ["color"],
-        ad = (0, t.forwardRef)((function(e, l) {
+        fd = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, dd);
@@ -7258,11 +7258,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fd = ["color"],
+        ad = ["color"],
         wd = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fd);
+            n = r(e, ad);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7679,7 +7679,7 @@ _global.SENTRY_RELEASE = {
           }))
         })),
         $d = ["color"],
-        ea = (0, t.forwardRef)((function(e, l) {
+        ef = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
             n = r(e, $d);
@@ -7698,11 +7698,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        la = ["color"],
-        Ca = (0, t.forwardRef)((function(e, l) {
+        lf = ["color"],
+        Cf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, la);
+            n = r(e, lf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7718,11 +7718,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        ta = ["color"],
-        ra = (0, t.forwardRef)((function(e, l) {
+        tf = ["color"],
+        rf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ta);
+            n = r(e, tf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7738,11 +7738,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        oa = ["color"],
-        na = (0, t.forwardRef)((function(e, l) {
+        of = ["color"],
+        nf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, oa);
+            n = r(e, of);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7758,11 +7758,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        ia = ["color"],
-        ca = (0, t.forwardRef)((function(e, l) {
+        cf = ["color"],
+        df = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ia);
+            n = r(e, cf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7779,11 +7779,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        da = ["color"],
-        aa = (0, t.forwardRef)((function(e, l) {
+        ff = ["color"],
+        af = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, da);
+            n = r(e, ff);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7799,11 +7799,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        fa = ["color"],
-        wa = (0, t.forwardRef)((function(e, l) {
+        wf = ["color"],
+        vf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, fa);
+            n = r(e, wf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7817,11 +7817,11 @@ _global.SENTRY_RELEASE = {
             fill: o
           }))
         })),
-        va = ["color"],
-        ha = (0, t.forwardRef)((function(e, l) {
+        hf = ["color"],
+        gf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, va);
+            n = r(e, hf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7835,11 +7835,11 @@ _global.SENTRY_RELEASE = {
             fill: o
           }))
         })),
-        ga = ["color"],
-        sa = (0, t.forwardRef)((function(e, l) {
+        sf = ["color"],
+        uf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ga);
+            n = r(e, sf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7853,11 +7853,11 @@ _global.SENTRY_RELEASE = {
             fill: o
           }))
         })),
-        ua = ["color"],
-        La = (0, t.forwardRef)((function(e, l) {
+        Lf = ["color"],
+        mf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ua);
+            n = r(e, Lf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7871,11 +7871,11 @@ _global.SENTRY_RELEASE = {
             fill: o
           }))
         })),
-        ma = ["color"],
-        Ha = (0, t.forwardRef)((function(e, l) {
+        Hf = ["color"],
+        pf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ma);
+            n = r(e, Hf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7891,11 +7891,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        pa = ["color"],
-        Ma = (0, t.forwardRef)((function(e, l) {
+        Mf = ["color"],
+        Zf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, pa);
+            n = r(e, Mf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7911,11 +7911,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Za = ["color"],
-        Ra = (0, t.forwardRef)((function(e, l) {
+        Rf = ["color"],
+        Vf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Za);
+            n = r(e, Rf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7931,11 +7931,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Va = ["color"],
-        xa = (0, t.forwardRef)((function(e, l) {
+        xf = ["color"],
+        Ef = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Va);
+            n = r(e, xf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7951,11 +7951,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Ea = ["color"],
-        ba = (0, t.forwardRef)((function(e, l) {
+        bf = ["color"],
+        Bf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Ea);
+            n = r(e, bf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7971,11 +7971,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Ba = ["color"],
-        Ia = (0, t.forwardRef)((function(e, l) {
+        If = ["color"],
+        Of = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Ba);
+            n = r(e, If);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -7991,11 +7991,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Oa = ["color"],
-        ja = (0, t.forwardRef)((function(e, l) {
+        jf = ["color"],
+        yf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Oa);
+            n = r(e, jf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8011,11 +8011,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        ya = ["color"],
-        ka = (0, t.forwardRef)((function(e, l) {
+        kf = ["color"],
+        Sf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, ya);
+            n = r(e, kf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8031,11 +8031,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Sa = ["color"],
-        Ta = (0, t.forwardRef)((function(e, l) {
+        Tf = ["color"],
+        Af = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Sa);
+            n = r(e, Tf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8051,11 +8051,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Aa = ["color"],
-        Da = (0, t.forwardRef)((function(e, l) {
+        Df = ["color"],
+        zf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Aa);
+            n = r(e, Df);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8071,11 +8071,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        za = ["color"],
-        _a = (0, t.forwardRef)((function(e, l) {
+        _f = ["color"],
+        Pf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, za);
+            n = r(e, _f);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8091,11 +8091,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Pa = ["color"],
-        Fa = (0, t.forwardRef)((function(e, l) {
+        Ff = ["color"],
+        Gf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Pa);
+            n = r(e, Ff);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8111,11 +8111,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Ga = ["color"],
-        Na = (0, t.forwardRef)((function(e, l) {
+        Nf = ["color"],
+        Uf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Ga);
+            n = r(e, Nf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8131,11 +8131,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Ua = ["color"],
-        Wa = (0, t.forwardRef)((function(e, l) {
+        Wf = ["color"],
+        Qf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Ua);
+            n = r(e, Wf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",
@@ -8151,11 +8151,11 @@ _global.SENTRY_RELEASE = {
             clipRule: "evenodd"
           }))
         })),
-        Qa = ["color"],
-        qa = (0, t.forwardRef)((function(e, l) {
+        qf = ["color"],
+        Jf = (0, t.forwardRef)((function(e, l) {
           var C = e.color,
             o = void 0 === C ? "currentColor" : C,
-            n = r(e, Qa);
+            n = r(e, qf);
           return (0, t.createElement)("svg", Object.assign({
             width: "15",
             height: "15",

@@ -59,8 +59,8 @@ _global.SENTRY_RELEASE = {
         u = Math.min;
       t.exports = function(t, r, e) {
         var c, s, f, p, l, v, d = 0,
-          b = !1,
           y = !1,
+          b = !1,
           x = !0;
         if ("function" != typeof t) throw new TypeError("Expected a function");
 
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
 
         function _(t) {
           var e = t - v;
-          return void 0 === v || e >= r || e < 0 || y && t - d >= f
+          return void 0 === v || e >= r || e < 0 || b && t - d >= f
         }
 
         function g() {
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
           if (_(t)) return j(t);
           l = setTimeout(g, function(t) {
             var e = r - (t - v);
-            return y ? u(e, f - (t - d)) : e
+            return b ? u(e, f - (t - d)) : e
           }(t))
         }
 
@@ -93,13 +93,13 @@ _global.SENTRY_RELEASE = {
             e = _(t);
           if (c = arguments, s = this, v = t, e) {
             if (void 0 === l) return function(t) {
-              return d = t, l = setTimeout(g, r), b ? h(t) : p
+              return d = t, l = setTimeout(g, r), y ? h(t) : p
             }(v);
-            if (y) return clearTimeout(l), l = setTimeout(g, r), h(v)
+            if (b) return clearTimeout(l), l = setTimeout(g, r), h(v)
           }
           return void 0 === l && (l = setTimeout(g, r)), p
         }
-        return r = a(r) || 0, n(e) && (b = !!e.leading, f = (y = "maxWait" in e) ? i(a(e.maxWait) || 0, r) : f, x = "trailing" in e ? !!e.trailing : x), w.cancel = function() {
+        return r = a(r) || 0, n(e) && (y = !!e.leading, f = (b = "maxWait" in e) ? i(a(e.maxWait) || 0, r) : f, x = "trailing" in e ? !!e.trailing : x), w.cancel = function() {
           void 0 !== l && clearTimeout(l), d = 0, c = v = s = l = void 0
         }, w.flush = function() {
           return void 0 === l ? p : j(o())
@@ -178,12 +178,12 @@ _global.SENTRY_RELEASE = {
         l = e(87472),
         v = e(46359),
         d = e(47301),
-        b = e(45049),
-        y = e(15236),
+        y = e(45049),
+        b = e(15236),
         x = e(5574);
       t.exports = function(t, r, e, h, _, g, j) {
-        var w = y(t, e),
-          m = y(r, e),
+        var w = b(t, e),
+          m = b(r, e),
           O = j.get(m);
         if (O) n(t, e, O);
         else {
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
           if (M) {
             var S = s(m),
               E = !S && p(m),
-              T = !S && !E && b(m);
+              T = !S && !E && y(m);
             A = m, S || E || T ? s(w) ? A = w : f(w) ? A = i(w) : E ? (M = !1, A = o(m, !0)) : T ? (M = !1, A = a(m, !0)) : A = [] : d(m) || c(m) ? (A = w, c(w) ? A = x(w) : v(w) && !l(w) || (A = u(m))) : M = !1
           }
           M && (j.set(m, A), _(A, m, h, g, j), j.delete(m)), n(t, e, A)
@@ -756,8 +756,8 @@ _global.SENTRY_RELEASE = {
         l = "[object Set]",
         v = "[object WeakMap]",
         d = "[object DataView]",
-        b = s(n),
-        y = s(o),
+        y = s(n),
+        b = s(o),
         x = s(a),
         h = s(i),
         _ = s(u),
@@ -767,9 +767,9 @@ _global.SENTRY_RELEASE = {
           e = "[object Object]" == r ? t.constructor : void 0,
           n = e ? s(e) : "";
         if (n) switch (n) {
-          case b:
-            return d;
           case y:
+            return d;
+          case b:
             return f;
           case x:
             return p;
@@ -802,8 +802,8 @@ _global.SENTRY_RELEASE = {
         l = e(55100),
         v = e(63363),
         d = e(41403),
-        b = e(13299),
-        y = e(35509),
+        y = e(13299),
+        b = e(35509),
         x = e(71059),
         h = e(78967),
         _ = e(76906),
@@ -824,7 +824,7 @@ _global.SENTRY_RELEASE = {
         if (!j(r)) return r;
         var C = h(r);
         if (C) {
-          if (k = b(r), !D) return s(r, k)
+          if (k = y(r), !D) return s(r, k)
         } else {
           var U = d(r),
             N = U == M || "[object GeneratorFunction]" == U;
@@ -833,7 +833,7 @@ _global.SENTRY_RELEASE = {
             if (k = F || N ? {} : x(r), !D) return F ? p(r, u(k, r)) : f(r, i(k, r))
           } else {
             if (!E[U]) return P ? r : {};
-            k = y(r, U, D)
+            k = b(r, U, D)
           }
         }
         z || (z = new n);
@@ -1552,8 +1552,8 @@ _global.SENTRY_RELEASE = {
           l = !e && !f && !p && c(t),
           v = e || f || p || l,
           d = v ? n(t.length, String) : [],
-          b = d.length;
-        for (var y in t) !r && !s.call(t, y) || v && ("length" == y || p && ("offset" == y || "parent" == y) || l && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || u(y, b)) || d.push(y);
+          y = d.length;
+        for (var b in t) !r && !s.call(t, b) || v && ("length" == b || p && ("offset" == b || "parent" == b) || l && ("buffer" == b || "byteLength" == b || "byteOffset" == b) || u(b, y)) || d.push(b);
         return d
       }
     },
@@ -1724,8 +1724,8 @@ _global.SENTRY_RELEASE = {
             d = e;
           if ("__proto__" === v || "constructor" === v || "prototype" === v) return t;
           if (s != p) {
-            var b = l[v];
-            void 0 === (d = c ? c(b, v, l) : void 0) && (d = i(b) ? b : a(r[s + 1]) ? [] : {})
+            var y = l[v];
+            void 0 === (d = c ? c(y, v, l) : void 0) && (d = i(y) ? y : a(r[s + 1]) ? [] : {})
           }
           n(l, v, d), l = l[v]
         }
