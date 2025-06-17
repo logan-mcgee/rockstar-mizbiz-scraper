@@ -27,11 +27,11 @@ _global.SENTRY_RELEASE = {
             var t = String(e),
               l = t.split(/[ce]/),
               n = l[1] || 0,
-              o = String(n ? Number(l[0]) * Math.pow(10, n) : t).split("."),
-              d = o[0],
-              s = !o[1],
-              r = d.slice(-6);
-            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == n && 0 != d && 0 == r && s || n < 0 || n > 5 ? "many" : "other"
+              d = String(n ? Number(l[0]) * Math.pow(10, n) : t).split("."),
+              o = d[0],
+              s = !d[1],
+              r = o.slice(-6);
+            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == n && 0 != o && 0 == r && s || n < 0 || n > 5 ? "many" : "other"
           }
         },
         locale: "it"

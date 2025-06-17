@@ -19,17 +19,17 @@ _global.SENTRY_RELEASE = {
     87144: e => {
       var t, n, r = e.exports = {};
 
-      function a() {
+      function o() {
         throw new Error("setTimeout has not been defined")
       }
 
-      function o() {
+      function a() {
         throw new Error("clearTimeout has not been defined")
       }
 
       function i(e) {
         if (t === setTimeout) return setTimeout(e, 0);
-        if ((t === a || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
+        if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
           return t(e, 0)
         } catch (n) {
@@ -41,36 +41,36 @@ _global.SENTRY_RELEASE = {
         }
       }! function() {
         try {
-          t = "function" == typeof setTimeout ? setTimeout : a
+          t = "function" == typeof setTimeout ? setTimeout : o
         } catch (e) {
-          t = a
+          t = o
         }
         try {
-          n = "function" == typeof clearTimeout ? clearTimeout : o
+          n = "function" == typeof clearTimeout ? clearTimeout : a
         } catch (e) {
-          n = o
+          n = a
         }
       }();
       var l, s = [],
-        d = !1,
-        u = -1;
-
-      function c() {
-        d && l && (d = !1, l.length ? s = l.concat(s) : u = -1, s.length && f())
-      }
+        u = !1,
+        d = -1;
 
       function f() {
-        if (!d) {
-          var e = i(c);
-          d = !0;
+        u && l && (u = !1, l.length ? s = l.concat(s) : d = -1, s.length && c())
+      }
+
+      function c() {
+        if (!u) {
+          var e = i(f);
+          u = !0;
           for (var t = s.length; t;) {
-            for (l = s, s = []; ++u < t;) l && l[u].run();
-            u = -1, t = s.length
+            for (l = s, s = []; ++d < t;) l && l[d].run();
+            d = -1, t = s.length
           }
-          l = null, d = !1,
+          l = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
-              if ((n === o || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+              if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
               try {
                 return n(e)
               } catch (t) {
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        s.push(new b(e, t)), 1 !== s.length || d || i(f)
+        s.push(new b(e, t)), 1 !== s.length || u || i(c)
       }, b.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {

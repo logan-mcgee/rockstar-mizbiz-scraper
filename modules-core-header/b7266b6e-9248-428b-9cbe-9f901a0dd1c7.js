@@ -21,44 +21,44 @@ _global.SENTRY_RELEASE = {
         Root: () => d,
         Slot: () => d,
         Slottable: () => c,
-        createSlot: () => o,
+        createSlot: () => a,
         createSlottable: () => f
       });
       var r = n(71127),
-        a = n(86410),
-        l = n(25854);
+        l = n(86410),
+        o = n(25854);
 
-      function o(e) {
+      function a(e) {
         const t = i(e),
           n = r.forwardRef(((e, n) => {
             const {
-              children: a,
-              ...o
-            } = e, d = r.Children.toArray(a), i = d.find(u);
+              children: l,
+              ...a
+            } = e, d = r.Children.toArray(l), i = d.find(u);
             if (i) {
               const e = i.props.children,
-                a = d.map((t => t === i ? r.Children.count(e) > 1 ? r.Children.only(null) : r.isValidElement(e) ? e.props.children : null : t));
-              return (0, l.jsx)(t, {
-                ...o,
+                l = d.map((t => t === i ? r.Children.count(e) > 1 ? r.Children.only(null) : r.isValidElement(e) ? e.props.children : null : t));
+              return (0, o.jsx)(t, {
+                ...a,
                 ref: n,
-                children: r.isValidElement(e) ? r.cloneElement(e, void 0, a) : null
+                children: r.isValidElement(e) ? r.cloneElement(e, void 0, l) : null
               })
             }
-            return (0, l.jsx)(t, {
-              ...o,
+            return (0, o.jsx)(t, {
+              ...a,
               ref: n,
-              children: a
+              children: l
             })
           }));
         return n.displayName = `${e}.Slot`, n
       }
-      var d = o("Slot");
+      var d = a("Slot");
 
       function i(e) {
         const t = r.forwardRef(((e, t) => {
           const {
             children: n,
-            ...l
+            ...o
           } = e;
           if (r.isValidElement(n)) {
             const e = function(e) {
@@ -66,26 +66,26 @@ _global.SENTRY_RELEASE = {
                   n = t && "isReactWarning" in t && t.isReactWarning;
                 return n ? e.ref : (t = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref)
               }(n),
-              o = function(e, t) {
+              a = function(e, t) {
                 const n = {
                   ...t
                 };
                 for (const r in t) {
-                  const a = e[r],
-                    l = t[r];
-                  /^on[A-Z]/.test(r) ? a && l ? n[r] = (...e) => {
-                    l(...e), a(...e)
-                  } : a && (n[r] = a) : "style" === r ? n[r] = {
-                    ...a,
-                    ...l
-                  } : "className" === r && (n[r] = [a, l].filter(Boolean).join(" "))
+                  const l = e[r],
+                    o = t[r];
+                  /^on[A-Z]/.test(r) ? l && o ? n[r] = (...e) => {
+                    o(...e), l(...e)
+                  } : l && (n[r] = l) : "style" === r ? n[r] = {
+                    ...l,
+                    ...o
+                  } : "className" === r && (n[r] = [l, o].filter(Boolean).join(" "))
                 }
                 return {
                   ...e,
                   ...n
                 }
-              }(l, n.props);
-            return n.type !== r.Fragment && (o.ref = t ? (0, a.t)(t, e) : e), r.cloneElement(n, o)
+              }(o, n.props);
+            return n.type !== r.Fragment && (a.ref = t ? (0, l.t)(t, e) : e), r.cloneElement(n, a)
           }
           return r.Children.count(n) > 1 ? r.Children.only(null) : null
         }));
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
       function f(e) {
         const t = ({
           children: e
-        }) => (0, l.jsx)(l.Fragment, {
+        }) => (0, o.jsx)(o.Fragment, {
           children: e
         });
         return t.displayName = `${e}.Slottable`, t.__radixId = s, t
@@ -109,34 +109,34 @@ _global.SENTRY_RELEASE = {
     },
     86410: (e, t, n) => {
       n.d(t, {
-        s: () => o,
-        t: () => l
+        s: () => a,
+        t: () => o
       });
       var r = n(71127);
 
-      function a(e, t) {
+      function l(e, t) {
         if ("function" == typeof e) return e(t);
         null != e && (e.current = t)
       }
 
-      function l(...e) {
+      function o(...e) {
         return t => {
           let n = !1;
           const r = e.map((e => {
-            const r = a(e, t);
+            const r = l(e, t);
             return n || "function" != typeof r || (n = !0), r
           }));
           if (n) return () => {
             for (let t = 0; t < r.length; t++) {
               const n = r[t];
-              "function" == typeof n ? n() : a(e[t], null)
+              "function" == typeof n ? n() : l(e[t], null)
             }
           }
         }
       }
 
-      function o(...e) {
-        return r.useCallback(l(...e), e)
+      function a(...e) {
+        return r.useCallback(o(...e), e)
       }
     }
   }

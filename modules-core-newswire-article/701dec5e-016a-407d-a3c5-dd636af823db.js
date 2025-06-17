@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         a = Symbol.for("react.profiler"),
         l = Symbol.for("react.provider"),
         c = Symbol.for("react.context"),
-        f = Symbol.for("react.forward_ref"),
-        s = Symbol.for("react.suspense"),
+        s = Symbol.for("react.forward_ref"),
+        f = Symbol.for("react.suspense"),
         i = Symbol.for("react.memo"),
         d = Symbol.for("react.lazy"),
         p = Symbol.iterator,
@@ -81,8 +81,8 @@ _global.SENTRY_RELEASE = {
         var c = arguments.length - 2;
         if (1 === c) u.children = n;
         else if (1 < c) {
-          for (var f = Array(c), s = 0; s < c; s++) f[s] = arguments[s + 2];
-          u.children = f
+          for (var s = Array(c), f = 0; f < c; f++) s[f] = arguments[f + 2];
+          u.children = s
         }
         if (e && e.defaultProps)
           for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
@@ -143,13 +143,13 @@ _global.SENTRY_RELEASE = {
           }
         }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace($, "$&/") + "/") + e)), t.push(a)), 1;
         if (c = 0, u = "" === u ? "." : u + ":", g(e))
-          for (var f = 0; f < e.length; f++) {
-            var s = u + C(l = e[f], f);
-            c += j(l, t, o, s, a)
-          } else if (s = function(e) {
+          for (var s = 0; s < e.length; s++) {
+            var f = u + C(l = e[s], s);
+            c += j(l, t, o, f, a)
+          } else if (f = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
-            }(e), "function" == typeof s)
-            for (e = s.call(e), f = 0; !(l = e.next()).done;) c += j(l = l.value, t, o, s = u + C(l, f++), a);
+            }(e), "function" == typeof f)
+            for (e = f.call(e), s = 0; !(l = e.next()).done;) c += j(l = l.value, t, o, f = u + C(l, s++), a);
           else if ("object" === l) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return c
       }
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
           if (!R(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = w, t.StrictMode = u, t.Suspense = s, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.cloneElement = function(e, t, n) {
+      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = w, t.StrictMode = u, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = b({}, e.props),
           u = e.key,
@@ -216,13 +216,13 @@ _global.SENTRY_RELEASE = {
           l = e._owner;
         if (null != t) {
           if (void 0 !== t.ref && (a = t.ref, l = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
-          for (f in t) S.call(t, f) && !E.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== c ? c[f] : t[f])
+          for (s in t) S.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== c ? c[s] : t[s])
         }
-        var f = arguments.length - 2;
-        if (1 === f) o.children = n;
-        else if (1 < f) {
-          c = Array(f);
-          for (var s = 0; s < f; s++) c[s] = arguments[s + 2];
+        var s = arguments.length - 2;
+        if (1 === s) o.children = n;
+        else if (1 < s) {
+          c = Array(s);
+          for (var f = 0; f < s; f++) c[f] = arguments[f + 2];
           o.children = c
         }
         return {
@@ -256,7 +256,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: f,
+          $$typeof: s,
           render: e
         }
       }, t.isValidElement = R, t.lazy = function(e) {

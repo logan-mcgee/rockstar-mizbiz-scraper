@@ -18,51 +18,51 @@ _global.SENTRY_RELEASE = {
   [1563], {
     11563: (e, a, t) => {
       t(45008), t(33480), t(93887), t(352), t(86011), t(76412), t(29829), t(72485), t(2280), t(20293), t(31650), t(49207), t(8125), t(14978), t(67016), t(97752), t(49301), t(23e3), t(92227);
-      var o = t(95966),
-        d = t(14120),
+      var d = t(95966),
+        o = t(14120),
         l = t(9623),
         n = t(81788),
         r = t(2918),
         s = t(41120),
         i = t(52542),
         u = t(25854);
-      const b = window?.env?.graphEnv ?? "prod",
-        f = (0, n.withIntl)((() => {
+      const f = window?.env?.graphEnv ?? "prod",
+        b = (0, n.withIntl)((() => {
           const [e, a] = (0, l.useSearchParams)(), [{
             iso: t
-          }] = (0, n.getLocale)(), d = "true" === e.get("autoplay"), i = e.get("id"), b = e.get("resolution") ?? null, f = e.get("locale") ?? "en_us", y = Number(e.get("start") ?? 0);
-          return (0, u.jsx)(o.ResizeProvider, {
+          }] = (0, n.getLocale)(), o = "true" === e.get("autoplay"), i = e.get("id"), f = e.get("resolution") ?? null, b = e.get("locale") ?? "en_us", c = Number(e.get("start") ?? 0);
+          return (0, u.jsx)(d.ResizeProvider, {
             children: (0, u.jsx)(r.GtmProvider, {
               children: (0, u.jsx)(s.A, {
-                autoplay: d,
+                autoplay: o,
                 context: "embed",
-                locale: f,
+                locale: b,
                 id: i,
-                resolution: b,
-                start: y,
+                resolution: f,
+                start: c,
                 wrapper: !1,
                 videoChangeCallback: e => {
                   a({
-                    autoplay: d,
+                    autoplay: o,
                     id: e,
-                    resolution: b
+                    resolution: f
                   })
                 }
               })
             })
           })
         }), i),
-        y = (0, o.withRockstarGraph)((() => (0, u.jsx)(l.BrowserRouter, {
-          children: (0, u.jsx)(f, {})
+        c = (0, d.withRockstarGraph)((() => (0, u.jsx)(l.BrowserRouter, {
+          children: (0, u.jsx)(b, {})
         })), {
-          env: b
+          env: f
         }),
-        c = window?.env?.gtmId ?? null;
-      (0, o.gtmInit)({
-        id: c
+        y = window?.env?.gtmId ?? null;
+      (0, d.gtmInit)({
+        id: y
       });
       const g = document.createElement("main");
-      document.body.appendChild(g), (0, d.H)(g).render((0, u.jsx)(y, {}))
+      document.body.appendChild(g), (0, o.H)(g).render((0, u.jsx)(c, {}))
     }
   }
 ]);

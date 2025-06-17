@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => m,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => h,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => m
       });
       var _ = "Chiudi lightbox",
         a = "Premi {shortcut}",
@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
         h = "Scarica",
         f = "Apri immagine in lightbox",
         L = "Immagine lightbox",
-        m = "Testo alternativo: {alt}",
-        c = {
+        c = "Testo alternativo: {alt}",
+        m = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: m
+          Lightbox_Dialog_Description: c
         }
     }
   }

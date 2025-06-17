@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [4153], {
     84153: (o, t, e) => {
       e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => a,
-        Lightbox_Close_Button_Tooltip: () => _,
+        Lightbox_Close_Button_Label: () => _,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
@@ -35,8 +35,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => r,
         default: () => p
       });
-      var a = "Zamknij podgląd",
-        _ = "Naciśnij {shortcut}",
+      var _ = "Zamknij podgląd",
+        a = "Naciśnij {shortcut}",
         l = "Powiększ",
         i = "Naciśnij {shortcut}",
         n = "Pomniejsz",
@@ -51,8 +51,8 @@ _global.SENTRY_RELEASE = {
         L = "Podgląd obrazu",
         c = "Tekst alternatywny: {alt}",
         p = {
-          Lightbox_Close_Button_Label: a,
-          Lightbox_Close_Button_Tooltip: _,
+          Lightbox_Close_Button_Label: _,
+          Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: n,

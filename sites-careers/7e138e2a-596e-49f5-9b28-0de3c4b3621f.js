@@ -1,9 +1,9 @@
 ! function() {
   try {
-    var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      e = (new n.Error).stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "7e138e2a-596e-49f5-9b28-0de3c4b3621f", n._sentryDebugIdIdentifier = "sentry-dbid-7e138e2a-596e-49f5-9b28-0de3c4b3621f")
-  } catch (n) {}
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+      n = (new e.Error).stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "7e138e2a-596e-49f5-9b28-0de3c4b3621f", e._sentryDebugIdIdentifier = "sentry-dbid-7e138e2a-596e-49f5-9b28-0de3c4b3621f")
+  } catch (e) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
 _sentryModuleMetadataGlobal._sentryModuleMetadata = _sentryModuleMetadataGlobal._sentryModuleMetadata || {}, _sentryModuleMetadataGlobal._sentryModuleMetadata[(new _sentryModuleMetadataGlobal.Error).stack] = Object.assign({}, _sentryModuleMetadataGlobal._sentryModuleMetadata[(new _sentryModuleMetadataGlobal.Error).stack], {
@@ -16,68 +16,68 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
   [6518], {
-    802: (n, e, t) => {
-      function r(n) {
-        return r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(n) {
-          return typeof n
-        } : function(n) {
-          return n && "function" == typeof Symbol && n.constructor === Symbol && n !== Symbol.prototype ? "symbol" : typeof n
-        }, r(n)
+    802: (e, n, t) => {
+      function r(e) {
+        return r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+          return typeof e
+        } : function(e) {
+          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+        }, r(e)
       }
-      t.d(e, {
+      t.d(n, {
         A: () => r
       })
     },
-    1916: (n, e, t) => {
-      function r(n, e) {
-        return r = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(n, e) {
-          return n.__proto__ = e, n
-        }, r(n, e)
+    1916: (e, n, t) => {
+      function r(e, n) {
+        return r = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, n) {
+          return e.__proto__ = n, e
+        }, r(e, n)
       }
-      t.d(e, {
+      t.d(n, {
         A: () => r
       })
     },
-    2773: (n, e, t) => {
-      function r(n, e) {
-        if (null == n) return {};
+    2773: (e, n, t) => {
+      function r(e, n) {
+        if (null == e) return {};
         var t = {};
-        for (var r in n)
-          if ({}.hasOwnProperty.call(n, r)) {
-            if (-1 !== e.indexOf(r)) continue;
-            t[r] = n[r]
+        for (var r in e)
+          if ({}.hasOwnProperty.call(e, r)) {
+            if (-1 !== n.indexOf(r)) continue;
+            t[r] = e[r]
           } return t
       }
-      t.d(e, {
+      t.d(n, {
         A: () => r
       })
     },
-    6146: (n, e, t) => {
+    6146: (e, n, t) => {
       function r() {
-        return r = Object.assign ? Object.assign.bind() : function(n) {
-          for (var e = 1; e < arguments.length; e++) {
-            var t = arguments[e];
-            for (var r in t)({}).hasOwnProperty.call(t, r) && (n[r] = t[r])
+        return r = Object.assign ? Object.assign.bind() : function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = arguments[n];
+            for (var r in t)({}).hasOwnProperty.call(t, r) && (e[r] = t[r])
           }
-          return n
+          return e
         }, r.apply(null, arguments)
       }
-      t.d(e, {
+      t.d(n, {
         A: () => r
       })
     },
-    6518: (n, e, t) => {
-      t.r(e), t.d(e, {
-        AutoFocusInside: () => Zn,
+    6518: (e, n, t) => {
+      t.r(n), t.d(n, {
+        AutoFocusInside: () => Xe,
         FocusLockUI: () => I,
-        FreeFocusInside: () => re,
+        FreeFocusInside: () => tn,
         InFocusGuard: () => b,
-        MoveFocusInside: () => ee,
-        default: () => me,
-        useFocusController: () => ie,
-        useFocusInside: () => $n,
-        useFocusScope: () => ce,
-        useFocusState: () => ve
+        MoveFocusInside: () => en,
+        default: () => mn,
+        useFocusController: () => un,
+        useFocusInside: () => Ze,
+        useFocusScope: () => cn,
+        useFocusState: () => vn
       });
       var r = t(2773),
         o = t(6146),
@@ -88,8 +88,8 @@ _global.SENTRY_RELEASE = {
         f = "data-no-focus-lock",
         d = "data-autofocus-inside";
 
-      function s(n, e) {
-        return "function" == typeof n ? n(e) : n && (n.current = e), n
+      function s(e, n) {
+        return "function" == typeof e ? e(n) : e && (e.current = n), e
       }
       var l = "undefined" != typeof window ? u.useLayoutEffect : u.useEffect,
         v = new WeakMap;
@@ -102,9 +102,9 @@ _global.SENTRY_RELEASE = {
           top: "1px",
           left: "1px"
         },
-        p = function(n) {
-          var e = n.children,
-            t = void 0 === e ? null : e;
+        p = function(e) {
+          var n = e.children,
+            t = void 0 === n ? null : n;
           return i().createElement(u.Fragment, null, i().createElement("div", {
             key: "guard-first",
             "data-focus-guard": !0,
@@ -121,93 +121,93 @@ _global.SENTRY_RELEASE = {
       const b = p;
       var y = t(3514);
 
-      function h(n) {
-        return n
+      function h(e) {
+        return e
       }
 
-      function g(n, e) {
-        void 0 === e && (e = h);
+      function g(e, n) {
+        void 0 === n && (n = h);
         var t = [],
           r = !1;
         return {
           read: function() {
             if (r) throw new Error("Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.");
-            return t.length ? t[t.length - 1] : n
+            return t.length ? t[t.length - 1] : e
           },
-          useMedium: function(n) {
-            var o = e(n, r);
+          useMedium: function(e) {
+            var o = n(e, r);
             return t.push(o),
               function() {
-                t = t.filter((function(n) {
-                  return n !== o
+                t = t.filter((function(e) {
+                  return e !== o
                 }))
               }
           },
-          assignSyncMedium: function(n) {
+          assignSyncMedium: function(e) {
             for (r = !0; t.length;) {
-              var e = t;
-              t = [], e.forEach(n)
+              var n = t;
+              t = [], n.forEach(e)
             }
             t = {
-              push: function(e) {
-                return n(e)
+              push: function(n) {
+                return e(n)
               },
               filter: function() {
                 return t
               }
             }
           },
-          assignMedium: function(n) {
+          assignMedium: function(e) {
             r = !0;
-            var e = [];
+            var n = [];
             if (t.length) {
               var o = t;
-              t = [], o.forEach(n), e = t
+              t = [], o.forEach(e), n = t
             }
             var u = function() {
-                var t = e;
-                e = [], t.forEach(n)
+                var t = n;
+                n = [], t.forEach(e)
               },
               i = function() {
                 return Promise.resolve().then(u)
               };
             i(), t = {
-              push: function(n) {
-                e.push(n), i()
+              push: function(e) {
+                n.push(e), i()
               },
-              filter: function(n) {
-                return e = e.filter(n), t
+              filter: function(e) {
+                return n = n.filter(e), t
               }
             }
           }
         }
       }
 
-      function E(n, e) {
-        return void 0 === e && (e = h), g(n, e)
+      function E(e, n) {
+        return void 0 === n && (n = h), g(e, n)
       }
-      var w = E({}, (function(n) {
+      var w = E({}, (function(e) {
           return {
-            target: n.target,
-            currentTarget: n.currentTarget
+            target: e.target,
+            currentTarget: e.currentTarget
           }
         })),
         M = E(),
         x = E(),
-        O = function(n) {
-          void 0 === n && (n = {});
-          var e = g(null);
-          return e.options = (0, y.__assign)({
+        O = function(e) {
+          void 0 === e && (e = {});
+          var n = g(null);
+          return n.options = (0, y.__assign)({
             async: !0,
             ssr: !1
-          }, n), e
+          }, e), n
         }({
           async: !0,
           ssr: "undefined" != typeof document
         }),
         N = (0, u.createContext)(void 0),
         F = [],
-        A = (0, u.forwardRef)((function(n, e) {
+        A = (0, u.forwardRef)((function(e, n) {
           var t, r, f, d, p, b, y, h = (0, u.useState)(),
             g = h[0],
             E = h[1],
@@ -215,71 +215,71 @@ _global.SENTRY_RELEASE = {
             A = (0, u.useRef)(!1),
             I = (0, u.useRef)(null),
             T = (0, u.useState)({})[1],
-            k = n.children,
-            S = n.disabled,
+            k = e.children,
+            S = e.disabled,
             _ = void 0 !== S && S,
-            C = n.noFocusGuards,
+            C = e.noFocusGuards,
             D = void 0 !== C && C,
-            L = n.persistentFocus,
+            L = e.persistentFocus,
             P = void 0 !== L && L,
-            R = n.crossFrame,
+            R = e.crossFrame,
             G = void 0 === R || R,
-            j = n.autoFocus,
+            j = e.autoFocus,
             B = void 0 === j || j,
-            U = (n.allowTextSelection, n.group),
-            W = n.className,
-            q = n.whiteList,
-            H = n.hasPositiveIndices,
-            V = n.shards,
+            U = (e.allowTextSelection, e.group),
+            W = e.className,
+            q = e.whiteList,
+            H = e.hasPositiveIndices,
+            V = e.shards,
             Y = void 0 === V ? F : V,
-            K = n.as,
+            K = e.as,
             z = void 0 === K ? "div" : K,
-            J = n.lockProps,
+            J = e.lockProps,
             Q = void 0 === J ? {} : J,
-            X = n.sideCar,
-            Z = n.returnFocus,
+            X = e.sideCar,
+            Z = e.returnFocus,
             $ = void 0 !== Z && Z,
-            nn = n.focusOptions,
-            en = n.onActivation,
-            tn = n.onDeactivation,
-            rn = (0, u.useState)({})[0],
-            on = (0, u.useCallback)((function(n) {
-              var e = n.captureFocusRestore;
+            ee = e.focusOptions,
+            ne = e.onActivation,
+            te = e.onDeactivation,
+            re = (0, u.useState)({})[0],
+            oe = (0, u.useCallback)((function(e) {
+              var n = e.captureFocusRestore;
               if (!I.current) {
                 var t, r = null == (t = document) ? void 0 : t.activeElement;
-                I.current = r, r !== document.body && (I.current = e(r))
+                I.current = r, r !== document.body && (I.current = n(r))
               }
-              x.current && en && en(x.current), A.current = !0, T()
-            }), [en]),
-            un = (0, u.useCallback)((function() {
-              A.current = !1, tn && tn(x.current), T()
-            }), [tn]),
-            cn = (0, u.useCallback)((function(n) {
-              var e = I.current;
-              if (e) {
-                var t = ("function" == typeof e ? e() : e) || document.body,
+              x.current && ne && ne(x.current), A.current = !0, T()
+            }), [ne]),
+            ue = (0, u.useCallback)((function() {
+              A.current = !1, te && te(x.current), T()
+            }), [te]),
+            ie = (0, u.useCallback)((function(e) {
+              var n = I.current;
+              if (n) {
+                var t = ("function" == typeof n ? n() : n) || document.body,
                   r = "function" == typeof $ ? $(t) : $;
                 if (r) {
                   var o = "object" == typeof r ? r : void 0;
-                  I.current = null, n ? Promise.resolve().then((function() {
+                  I.current = null, e ? Promise.resolve().then((function() {
                     return t.focus(o)
                   })) : t.focus(o)
                 }
               }
             }), [$]),
-            an = (0, u.useCallback)((function(n) {
-              A.current && w.useMedium(n)
+            ce = (0, u.useCallback)((function(e) {
+              A.current && w.useMedium(e)
             }), []),
-            fn = M.useMedium,
-            dn = (0, u.useCallback)((function(n) {
-              x.current !== n && (x.current = n, E(n))
+            ae = M.useMedium,
+            fe = (0, u.useCallback)((function(e) {
+              x.current !== e && (x.current = e, E(e))
             }), []),
-            sn = (0, o.A)(((t = {})[a] = _ && "disabled", t[c] = U, t), Q),
-            ln = !0 !== D,
-            vn = ln && "tail" !== D,
-            mn = (r = [e, dn], d = f || null, p = function(n) {
-              return r.forEach((function(e) {
-                return s(e, n)
+            de = (0, o.A)(((t = {})[a] = _ && "disabled", t[c] = U, t), Q),
+            se = !0 !== D,
+            le = se && "tail" !== D,
+            ve = (r = [n, fe], d = f || null, p = function(e) {
+              return r.forEach((function(n) {
+                return s(n, e)
               }))
             }, (b = (0, u.useState)((function() {
               return {
@@ -289,27 +289,27 @@ _global.SENTRY_RELEASE = {
                   get current() {
                     return b.value
                   },
-                  set current(n) {
-                    var e = b.value;
-                    e !== n && (b.value = n, b.callback(n, e))
+                  set current(e) {
+                    var n = b.value;
+                    n !== e && (b.value = e, b.callback(e, n))
                   }
                 }
               }
             }))[0]).callback = p, y = b.facade, l((function() {
-              var n = v.get(y);
-              if (n) {
-                var e = new Set(n),
+              var e = v.get(y);
+              if (e) {
+                var n = new Set(e),
                   t = new Set(r),
                   o = y.current;
-                e.forEach((function(n) {
-                  t.has(n) || s(n, null)
-                })), t.forEach((function(n) {
-                  e.has(n) || s(n, o)
+                n.forEach((function(e) {
+                  t.has(e) || s(e, null)
+                })), t.forEach((function(e) {
+                  n.has(e) || s(e, o)
                 }))
               }
               v.set(y, r)
             }), [r]), y),
-            pn = (0, u.useMemo)((function() {
+            me = (0, u.useMemo)((function() {
               return {
                 observed: x,
                 shards: Y,
@@ -317,7 +317,7 @@ _global.SENTRY_RELEASE = {
                 active: A.current
               }
             }), [_, A.current, Y, g]);
-          return i().createElement(u.Fragment, null, ln && [i().createElement("div", {
+          return i().createElement(u.Fragment, null, se && [i().createElement("div", {
             key: "guard-first",
             "data-focus-guard": !0,
             tabIndex: _ ? -1 : 0,
@@ -328,7 +328,7 @@ _global.SENTRY_RELEASE = {
             tabIndex: _ ? -1 : 1,
             style: m
           }) : null], !_ && i().createElement(X, {
-            id: rn,
+            id: re,
             sideCar: O,
             observed: g,
             disabled: _,
@@ -337,20 +337,20 @@ _global.SENTRY_RELEASE = {
             autoFocus: B,
             whiteList: q,
             shards: Y,
-            onActivation: on,
-            onDeactivation: un,
-            returnFocus: cn,
-            focusOptions: nn,
+            onActivation: oe,
+            onDeactivation: ue,
+            returnFocus: ie,
+            focusOptions: ee,
             noFocusGuards: D
           }), i().createElement(z, (0, o.A)({
-            ref: mn
-          }, sn, {
+            ref: ve
+          }, de, {
             className: W,
-            onBlur: fn,
-            onFocus: an
+            onBlur: ae,
+            onFocus: ce
           }), i().createElement(N.Provider, {
-            value: pn
-          }, k)), vn && i().createElement("div", {
+            value: me
+          }, k)), le && i().createElement("div", {
             "data-focus-guard": !0,
             tabIndex: _ ? -1 : 0,
             style: m
@@ -360,312 +360,312 @@ _global.SENTRY_RELEASE = {
       const I = A;
       var T = t(1916),
         k = t(7845);
-      var S = function(n) {
-          for (var e = Array(n.length), t = 0; t < n.length; ++t) e[t] = n[t];
-          return e
+      var S = function(e) {
+          for (var n = Array(e.length), t = 0; t < e.length; ++t) n[t] = e[t];
+          return n
         },
-        _ = function(n) {
-          return Array.isArray(n) ? n : [n]
+        _ = function(e) {
+          return Array.isArray(e) ? e : [e]
         },
-        C = function(n) {
-          return Array.isArray(n) ? n[0] : n
+        C = function(e) {
+          return Array.isArray(e) ? e[0] : e
         },
-        D = function(n) {
-          return n.parentNode && n.parentNode.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? n.parentNode.host : n.parentNode
+        D = function(e) {
+          return e.parentNode && e.parentNode.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? e.parentNode.host : e.parentNode
         },
-        L = function(n) {
-          return n === document || n && n.nodeType === Node.DOCUMENT_NODE
+        L = function(e) {
+          return e === document || e && e.nodeType === Node.DOCUMENT_NODE
         },
-        P = function(n, e) {
-          var t = n.get(e);
+        P = function(e, n) {
+          var t = e.get(n);
           if (void 0 !== t) return t;
-          var r = function(n, e) {
-            return !n || L(n) || ! function(n) {
-              if (n.nodeType !== Node.ELEMENT_NODE) return !1;
-              var e = window.getComputedStyle(n, null);
-              return !(!e || !e.getPropertyValue || "none" !== e.getPropertyValue("display") && "hidden" !== e.getPropertyValue("visibility"))
-            }(n) && ! function(n) {
-              return n.hasAttribute("inert")
-            }(n) && e(D(n))
-          }(e, P.bind(void 0, n));
-          return n.set(e, r), r
+          var r = function(e, n) {
+            return !e || L(e) || ! function(e) {
+              if (e.nodeType !== Node.ELEMENT_NODE) return !1;
+              var n = window.getComputedStyle(e, null);
+              return !(!n || !n.getPropertyValue || "none" !== n.getPropertyValue("display") && "hidden" !== n.getPropertyValue("visibility"))
+            }(e) && ! function(e) {
+              return e.hasAttribute("inert")
+            }(e) && n(D(e))
+          }(n, P.bind(void 0, e));
+          return e.set(n, r), r
         },
-        R = function(n, e) {
-          var t = n.get(e);
+        R = function(e, n) {
+          var t = e.get(n);
           if (void 0 !== t) return t;
-          var r = function(n, e) {
-            return !(n && !L(n)) || !!U(n) && e(D(n))
-          }(e, R.bind(void 0, n));
-          return n.set(e, r), r
+          var r = function(e, n) {
+            return !(e && !L(e)) || !!U(e) && n(D(e))
+          }(n, R.bind(void 0, e));
+          return e.set(n, r), r
         },
-        G = function(n) {
-          return n.dataset
+        G = function(e) {
+          return e.dataset
         },
-        j = function(n) {
-          return "INPUT" === n.tagName
+        j = function(e) {
+          return "INPUT" === e.tagName
         },
-        B = function(n) {
-          return j(n) && "radio" === n.type
+        B = function(e) {
+          return j(e) && "radio" === e.type
         },
-        U = function(n) {
-          var e = n.getAttribute("data-no-autofocus");
-          return ![!0, "true", ""].includes(e)
+        U = function(e) {
+          var n = e.getAttribute("data-no-autofocus");
+          return ![!0, "true", ""].includes(n)
         },
-        W = function(n) {
-          var e;
-          return Boolean(n && (null === (e = G(n)) || void 0 === e ? void 0 : e.focusGuard))
+        W = function(e) {
+          var n;
+          return Boolean(e && (null === (n = G(e)) || void 0 === n ? void 0 : n.focusGuard))
         },
-        q = function(n) {
-          return !W(n)
+        q = function(e) {
+          return !W(e)
         },
-        H = function(n) {
-          return Boolean(n)
+        H = function(e) {
+          return Boolean(e)
         },
-        V = function(n, e) {
-          var t = Math.max(0, n.tabIndex),
-            r = Math.max(0, e.tabIndex),
+        V = function(e, n) {
+          var t = Math.max(0, e.tabIndex),
+            r = Math.max(0, n.tabIndex),
             o = t - r,
-            u = n.index - e.index;
+            u = e.index - n.index;
           if (o) {
             if (!t) return 1;
             if (!r) return -1
           }
           return o || u
         },
-        Y = function(n, e, t) {
-          return S(n).map((function(n, e) {
-            var r = function(n) {
-              return n.tabIndex < 0 && !n.hasAttribute("tabindex") ? 0 : n.tabIndex
-            }(n);
+        Y = function(e, n, t) {
+          return S(e).map((function(e, n) {
+            var r = function(e) {
+              return e.tabIndex < 0 && !e.hasAttribute("tabindex") ? 0 : e.tabIndex
+            }(e);
             return {
-              node: n,
-              index: e,
-              tabIndex: t && -1 === r ? (n.dataset || {}).focusGuard ? 0 : -1 : r
+              node: e,
+              index: n,
+              tabIndex: t && -1 === r ? (e.dataset || {}).focusGuard ? 0 : -1 : r
             }
-          })).filter((function(n) {
-            return !e || n.tabIndex >= 0
+          })).filter((function(e) {
+            return !n || e.tabIndex >= 0
           })).sort(V)
         },
         K = ["button:enabled", "select:enabled", "textarea:enabled", "input:enabled", "a[href]", "area[href]", "summary", "iframe", "object", "embed", "audio[controls]", "video[controls]", "[tabindex]", "[contenteditable]", "[autofocus]"].join(","),
         z = "".concat(K, ", [data-focus-guard]"),
-        J = function(n, e) {
-          return S((n.shadowRoot || n).children).reduce((function(n, t) {
-            return n.concat(t.matches(e ? z : K) ? [t] : [], J(t))
+        J = function(e, n) {
+          return S((e.shadowRoot || e).children).reduce((function(e, t) {
+            return e.concat(t.matches(n ? z : K) ? [t] : [], J(t))
           }), [])
         },
-        Q = function(n, e) {
-          return n.reduce((function(n, t) {
-            var r, o = J(t, e),
-              u = (r = []).concat.apply(r, o.map((function(n) {
-                return function(n, e) {
+        Q = function(e, n) {
+          return e.reduce((function(e, t) {
+            var r, o = J(t, n),
+              u = (r = []).concat.apply(r, o.map((function(e) {
+                return function(e, n) {
                   var t;
-                  return n instanceof HTMLIFrameElement && (null === (t = n.contentDocument) || void 0 === t ? void 0 : t.body) ? Q([n.contentDocument.body], e) : [n]
-                }(n, e)
+                  return e instanceof HTMLIFrameElement && (null === (t = e.contentDocument) || void 0 === t ? void 0 : t.body) ? Q([e.contentDocument.body], n) : [e]
+                }(e, n)
               })));
-            return n.concat(u, t.parentNode ? S(t.parentNode.querySelectorAll(K)).filter((function(n) {
-              return n === t
+            return e.concat(u, t.parentNode ? S(t.parentNode.querySelectorAll(K)).filter((function(e) {
+              return e === t
             })) : [])
           }), [])
         },
-        X = function(n, e) {
-          return S(n).filter((function(n) {
-            return P(e, n)
-          })).filter((function(n) {
-            return function(n) {
-              return !((j(n) || function(n) {
-                return "BUTTON" === n.tagName
-              }(n)) && ("hidden" === n.type || n.disabled))
-            }(n)
+        X = function(e, n) {
+          return S(e).filter((function(e) {
+            return P(n, e)
+          })).filter((function(e) {
+            return function(e) {
+              return !((j(e) || function(e) {
+                return "BUTTON" === e.tagName
+              }(e)) && ("hidden" === e.type || e.disabled))
+            }(e)
           }))
         },
-        Z = function(n, e) {
-          return void 0 === e && (e = new Map), S(n).filter((function(n) {
-            return R(e, n)
+        Z = function(e, n) {
+          return void 0 === n && (n = new Map), S(e).filter((function(e) {
+            return R(n, e)
           }))
         },
-        $ = function(n, e, t) {
-          return Y(X(Q(n, t), e), !0, t)
+        $ = function(e, n, t) {
+          return Y(X(Q(e, t), n), !0, t)
         },
-        nn = function(n, e) {
-          return Y(X(Q(n), e), !1)
+        ee = function(e, n) {
+          return Y(X(Q(e), n), !1)
         },
-        en = function(n, e) {
-          return n.shadowRoot ? en(n.shadowRoot, e) : !(void 0 === Object.getPrototypeOf(n).contains || !Object.getPrototypeOf(n).contains.call(n, e)) || S(n.children).some((function(n) {
+        ne = function(e, n) {
+          return e.shadowRoot ? ne(e.shadowRoot, n) : !(void 0 === Object.getPrototypeOf(e).contains || !Object.getPrototypeOf(e).contains.call(e, n)) || S(e.children).some((function(e) {
             var t;
-            if (n instanceof HTMLIFrameElement) {
-              var r = null === (t = n.contentDocument) || void 0 === t ? void 0 : t.body;
-              return !!r && en(r, e)
+            if (e instanceof HTMLIFrameElement) {
+              var r = null === (t = e.contentDocument) || void 0 === t ? void 0 : t.body;
+              return !!r && ne(r, n)
             }
-            return en(n, e)
+            return ne(e, n)
           }))
         },
-        tn = function(n) {
-          if (void 0 === n && (n = document), n && n.activeElement) {
-            var e = n.activeElement;
-            return e.shadowRoot ? tn(e.shadowRoot) : e instanceof HTMLIFrameElement && function() {
+        te = function(e) {
+          if (void 0 === e && (e = document), e && e.activeElement) {
+            var n = e.activeElement;
+            return n.shadowRoot ? te(n.shadowRoot) : n instanceof HTMLIFrameElement && function() {
               try {
-                return e.contentWindow.document
-              } catch (n) {
+                return n.contentWindow.document
+              } catch (e) {
                 return
               }
-            }() ? tn(e.contentWindow.document) : e
+            }() ? te(n.contentWindow.document) : n
           }
         },
-        rn = function(n) {
-          return n.parentNode ? rn(n.parentNode) : n
+        re = function(e) {
+          return e.parentNode ? re(e.parentNode) : e
         },
-        on = function(n) {
-          return _(n).filter(Boolean).reduce((function(n, e) {
-            var t = e.getAttribute(c);
-            return n.push.apply(n, t ? function(n) {
-              for (var e = new Set, t = n.length, r = 0; r < t; r += 1)
+        oe = function(e) {
+          return _(e).filter(Boolean).reduce((function(e, n) {
+            var t = n.getAttribute(c);
+            return e.push.apply(e, t ? function(e) {
+              for (var n = new Set, t = e.length, r = 0; r < t; r += 1)
                 for (var o = r + 1; o < t; o += 1) {
-                  var u = n[r].compareDocumentPosition(n[o]);
-                  (u & Node.DOCUMENT_POSITION_CONTAINED_BY) > 0 && e.add(o), (u & Node.DOCUMENT_POSITION_CONTAINS) > 0 && e.add(r)
+                  var u = e[r].compareDocumentPosition(e[o]);
+                  (u & Node.DOCUMENT_POSITION_CONTAINED_BY) > 0 && n.add(o), (u & Node.DOCUMENT_POSITION_CONTAINS) > 0 && n.add(r)
                 }
-              return n.filter((function(n, t) {
-                return !e.has(t)
+              return e.filter((function(e, t) {
+                return !n.has(t)
               }))
-            }(S(rn(e).querySelectorAll("[".concat(c, '="').concat(t, '"]:not([').concat(a, '="disabled"])')))) : [e]), n
+            }(S(re(n).querySelectorAll("[".concat(c, '="').concat(t, '"]:not([').concat(a, '="disabled"])')))) : [n]), e
           }), [])
         },
-        un = function(n, e) {
-          return void 0 === e && (e = tn(C(n).ownerDocument)), !(!e || e.dataset && e.dataset.focusGuard) && on(n).some((function(n) {
-            return en(n, e) || function(n, e) {
-              return Boolean(S(n.querySelectorAll("iframe")).some((function(n) {
-                return function(n, e) {
-                  return n === e
-                }(n, e)
+        ue = function(e, n) {
+          return void 0 === n && (n = te(C(e).ownerDocument)), !(!n || n.dataset && n.dataset.focusGuard) && oe(e).some((function(e) {
+            return ne(e, n) || function(e, n) {
+              return Boolean(S(e.querySelectorAll("iframe")).some((function(e) {
+                return function(e, n) {
+                  return e === n
+                }(e, n)
               })))
-            }(n, e)
+            }(e, n)
           }))
         },
-        cn = function(n, e) {
-          n && ("focus" in n && n.focus(e), "contentWindow" in n && n.contentWindow && n.contentWindow.focus())
+        ie = function(e, n) {
+          e && ("focus" in e && e.focus(n), "contentWindow" in e && e.contentWindow && e.contentWindow.focus())
         },
-        an = function(n, e) {
-          return B(n) && n.name ? function(n, e) {
-            return e.filter(B).filter((function(e) {
-              return e.name === n.name
-            })).filter((function(n) {
-              return n.checked
-            }))[0] || n
-          }(n, e) : n
+        ce = function(e, n) {
+          return B(e) && e.name ? function(e, n) {
+            return n.filter(B).filter((function(n) {
+              return n.name === e.name
+            })).filter((function(e) {
+              return e.checked
+            }))[0] || e
+          }(e, n) : e
         },
-        fn = function(n) {
-          return n[0] && n.length > 1 ? an(n[0], n) : n[0]
+        ae = function(e) {
+          return e[0] && e.length > 1 ? ce(e[0], e) : e[0]
         },
-        dn = function(n, e) {
-          return n.indexOf(an(e, n))
+        fe = function(e, n) {
+          return e.indexOf(ce(n, e))
         },
-        sn = "NEW_FOCUS",
-        ln = function(n, e, t) {
-          var r, o = n.map((function(n) {
-              return n.node
+        de = "NEW_FOCUS",
+        se = function(e, n, t) {
+          var r, o = e.map((function(e) {
+              return e.node
             })),
-            u = Z(o.filter((r = t, function(n) {
-              var e, t = null === (e = G(n)) || void 0 === e ? void 0 : e.autofocus;
-              return n.autofocus || void 0 !== t && "false" !== t || r.indexOf(n) >= 0
+            u = Z(o.filter((r = t, function(e) {
+              var n, t = null === (n = G(e)) || void 0 === n ? void 0 : n.autofocus;
+              return e.autofocus || void 0 !== t && "false" !== t || r.indexOf(e) >= 0
             })));
-          return u && u.length ? fn(u) : fn(Z(e))
+          return u && u.length ? ae(u) : ae(Z(n))
         },
-        vn = function(n, e) {
-          return void 0 === e && (e = []), e.push(n), n.parentNode && vn(n.parentNode.host || n.parentNode, e), e
+        le = function(e, n) {
+          return void 0 === n && (n = []), n.push(e), e.parentNode && le(e.parentNode.host || e.parentNode, n), n
         },
-        mn = function(n, e) {
-          for (var t = vn(n), r = vn(e), o = 0; o < t.length; o += 1) {
+        ve = function(e, n) {
+          for (var t = le(e), r = le(n), o = 0; o < t.length; o += 1) {
             var u = t[o];
             if (r.indexOf(u) >= 0) return u
           }
           return !1
         },
-        pn = function(n, e, t) {
-          var r = _(n),
-            o = _(e),
+        me = function(e, n, t) {
+          var r = _(e),
+            o = _(n),
             u = r[0],
             i = !1;
-          return o.filter(Boolean).forEach((function(n) {
-            i = mn(i || n, n) || i, t.filter(Boolean).forEach((function(n) {
-              var e = mn(u, n);
-              e && (i = !i || en(e, i) ? e : mn(e, i))
+          return o.filter(Boolean).forEach((function(e) {
+            i = ve(i || e, e) || i, t.filter(Boolean).forEach((function(e) {
+              var n = ve(u, e);
+              n && (i = !i || ne(n, i) ? n : ve(n, i))
             }))
           })), i
         },
-        bn = function(n, e) {
-          return n.reduce((function(n, t) {
-            return n.concat(function(n, e) {
-              return X((t = n.querySelectorAll("[".concat(d, "]")), S(t).map((function(n) {
-                return Q([n])
-              })).reduce((function(n, e) {
-                return n.concat(e)
-              }), [])), e);
+        pe = function(e, n) {
+          return e.reduce((function(e, t) {
+            return e.concat(function(e, n) {
+              return X((t = e.querySelectorAll("[".concat(d, "]")), S(t).map((function(e) {
+                return Q([e])
+              })).reduce((function(e, n) {
+                return e.concat(n)
+              }), [])), n);
               var t
-            }(t, e))
+            }(t, n))
           }), [])
         },
-        yn = function(n, e) {
-          var t = tn(_(n).length > 0 ? document : C(n).ownerDocument),
-            r = on(n).filter(q),
-            o = pn(t || n, n, r),
+        be = function(e, n) {
+          var t = te(_(e).length > 0 ? document : C(e).ownerDocument),
+            r = oe(e).filter(q),
+            o = me(t || e, e, r),
             u = new Map,
-            i = nn(r, u),
-            c = i.filter((function(n) {
-              var e = n.node;
-              return q(e)
+            i = ee(r, u),
+            c = i.filter((function(e) {
+              var n = e.node;
+              return q(n)
             }));
           if (c[0]) {
-            var a, f, d, s = nn([o], u).map((function(n) {
-                return n.node
+            var a, f, d, s = ee([o], u).map((function(e) {
+                return e.node
               })),
-              l = (a = s, f = c, d = new Map, f.forEach((function(n) {
-                return d.set(n.node, n)
-              })), a.map((function(n) {
-                return d.get(n)
+              l = (a = s, f = c, d = new Map, f.forEach((function(e) {
+                return d.set(e.node, e)
+              })), a.map((function(e) {
+                return d.get(e)
               })).filter(H)),
-              v = l.map((function(n) {
-                return n.node
+              v = l.map((function(e) {
+                return e.node
               })),
-              m = l.filter((function(n) {
-                return n.tabIndex >= 0
-              })).map((function(n) {
-                return n.node
+              m = l.filter((function(e) {
+                return e.tabIndex >= 0
+              })).map((function(e) {
+                return e.node
               })),
-              p = function(n, e, t, r, o) {
-                var u = n.length,
-                  i = n[0],
-                  c = n[u - 1],
+              p = function(e, n, t, r, o) {
+                var u = e.length,
+                  i = e[0],
+                  c = e[u - 1],
                   a = W(r);
-                if (!(r && n.indexOf(r) >= 0)) {
+                if (!(r && e.indexOf(r) >= 0)) {
                   var f = void 0 !== r ? t.indexOf(r) : -1,
                     d = o ? t.indexOf(o) : f,
-                    s = o ? n.indexOf(o) : -1;
-                  if (-1 === f) return -1 !== s ? s : sn;
-                  if (-1 === s) return sn;
+                    s = o ? e.indexOf(o) : -1;
+                  if (-1 === f) return -1 !== s ? s : de;
+                  if (-1 === s) return de;
                   var l, v, m = f - d,
                     p = t.indexOf(i),
                     b = t.indexOf(c),
-                    y = (l = t, v = new Set, l.forEach((function(n) {
-                      return v.add(an(n, l))
-                    })), l.filter((function(n) {
-                      return v.has(n)
+                    y = (l = t, v = new Set, l.forEach((function(e) {
+                      return v.add(ce(e, l))
+                    })), l.filter((function(e) {
+                      return v.has(e)
                     }))),
                     h = void 0 !== r ? y.indexOf(r) : -1,
                     g = o ? y.indexOf(o) : h,
-                    E = y.filter((function(n) {
-                      return n.tabIndex >= 0
+                    E = y.filter((function(e) {
+                      return e.tabIndex >= 0
                     })),
                     w = void 0 !== r ? E.indexOf(r) : -1,
                     M = o ? E.indexOf(o) : w,
                     x = w >= 0 && M >= 0 ? M - w : g - h;
                   if (!m && s >= 0) return s;
-                  if (0 === e.length) return s;
-                  var O = dn(n, e[0]),
-                    N = dn(n, e[e.length - 1]);
+                  if (0 === n.length) return s;
+                  var O = fe(e, n[0]),
+                    N = fe(e, n[n.length - 1]);
                   return f <= p && a && Math.abs(m) > 1 ? N : f >= b && a && Math.abs(m) > 1 ? O : m && Math.abs(x) > 1 ? s : f <= p ? N : f > b ? O : m ? Math.abs(m) > 1 ? s : (u + s + m) % u : void 0
                 }
-              }(v, m, s, t, e);
-            if (p === sn) {
-              var b = ln(i, m, bn(r, u)) || ln(i, v, bn(r, u));
+              }(v, m, s, t, n);
+            if (p === de) {
+              var b = se(i, m, pe(r, u)) || se(i, v, pe(r, u));
               return b ? {
                 node: b
               } : void console.warn("focus-lock: cannot find any node to move focus into")
@@ -673,51 +673,51 @@ _global.SENTRY_RELEASE = {
             return void 0 === p ? p : l[p]
           }
         },
-        hn = 0,
-        gn = !1,
-        En = function(n, e, t) {
+        ye = 0,
+        he = !1,
+        ge = function(e, n, t) {
           void 0 === t && (t = {});
-          var r = yn(n, e);
-          if (!gn && r) {
-            if (hn > 2) return console.error("FocusLock: focus-fighting detected. Only one focus management system could be active. See https://github.com/theKashey/focus-lock/#focus-fighting"), gn = !0, void setTimeout((function() {
-              gn = !1
+          var r = be(e, n);
+          if (!he && r) {
+            if (ye > 2) return console.error("FocusLock: focus-fighting detected. Only one focus management system could be active. See https://github.com/theKashey/focus-lock/#focus-fighting"), he = !0, void setTimeout((function() {
+              he = !1
             }), 1);
-            hn++, cn(r.node, t.focusOptions), hn--
+            ye++, ie(r.node, t.focusOptions), ye--
           }
         };
 
-      function wn(n) {
-        if (!n) return null;
+      function Ee(e) {
+        if (!e) return null;
         if ("undefined" == typeof WeakRef) return function() {
-          return n || null
+          return e || null
         };
-        var e = n ? new WeakRef(n) : null;
+        var n = e ? new WeakRef(e) : null;
         return function() {
-          return (null == e ? void 0 : e.deref()) || null
+          return (null == n ? void 0 : n.deref()) || null
         }
       }
-      var Mn = function(n) {
-          var e = function(n) {
-            if (!n) return null;
-            for (var e = [], t = n; t && t !== document.body;) e.push({
-              current: wn(t),
-              parent: wn(t.parentElement),
-              left: wn(t.previousElementSibling),
-              right: wn(t.nextElementSibling)
+      var we = function(e) {
+          var n = function(e) {
+            if (!e) return null;
+            for (var n = [], t = e; t && t !== document.body;) n.push({
+              current: Ee(t),
+              parent: Ee(t.parentElement),
+              left: Ee(t.previousElementSibling),
+              right: Ee(t.nextElementSibling)
             }), t = t.parentElement;
             return {
-              element: wn(n),
-              stack: e,
-              ownerDocument: n.ownerDocument
+              element: Ee(e),
+              stack: n,
+              ownerDocument: e.ownerDocument
             }
-          }(n);
+          }(e);
           return function() {
-            return function(n) {
-              var e, t, r, o, u;
-              if (n)
-                for (var i = n.stack, c = n.ownerDocument, a = new Map, f = 0, d = i; f < d.length; f++) {
+            return function(e) {
+              var n, t, r, o, u;
+              if (e)
+                for (var i = e.stack, c = e.ownerDocument, a = new Map, f = 0, d = i; f < d.length; f++) {
                   var s = d[f],
-                    l = null === (e = s.parent) || void 0 === e ? void 0 : e.call(s);
+                    l = null === (n = s.parent) || void 0 === n ? void 0 : n.call(s);
                   if (l && c.contains(l)) {
                     for (var v = null === (t = s.left) || void 0 === t ? void 0 : t.call(s), m = s.current(), p = l.contains(m) ? m : void 0, b = null === (r = s.right) || void 0 === r ? void 0 : r.call(s), y = $([l], a), h = null !== (u = null !== (o = null != p ? p : null == v ? void 0 : v.nextElementSibling) && void 0 !== o ? o : b) && void 0 !== u ? u : v; h;) {
                       for (var g = 0, E = y; g < E.length; g++) {
@@ -729,27 +729,27 @@ _global.SENTRY_RELEASE = {
                     if (y.length) return y[0].node
                   }
                 }
-            }(e)
+            }(n)
           }
         },
-        xn = function(n, e, t) {
-          void 0 === e && (e = {});
-          var r = function(n) {
+        Me = function(e, n, t) {
+          void 0 === n && (n = {});
+          var r = function(e) {
               return Object.assign({
                 scope: document.body,
                 cycle: !0,
                 onlyTabbable: !0
-              }, n)
-            }(e),
-            o = function(n, e, t) {
-              if (!n || !e) return console.error("no element or scope given"), {};
-              var r = _(e);
-              if (r.every((function(e) {
-                  return !en(e, n)
+              }, e)
+            }(n),
+            o = function(e, n, t) {
+              if (!e || !n) return console.error("no element or scope given"), {};
+              var r = _(n);
+              if (r.every((function(n) {
+                  return !ne(n, e)
                 }))) return console.error("Active element is not contained in the scope"), {};
-              var o = t ? $(r, new Map) : nn(r, new Map),
-                u = o.findIndex((function(e) {
-                  return e.node === n
+              var o = t ? $(r, new Map) : ee(r, new Map),
+                u = o.findIndex((function(n) {
+                  return n.node === e
                 }));
               return -1 !== u ? {
                 prev: o[u - 1],
@@ -757,69 +757,69 @@ _global.SENTRY_RELEASE = {
                 first: o[0],
                 last: o[o.length - 1]
               } : void 0
-            }(n, r.scope, r.onlyTabbable);
+            }(e, r.scope, r.onlyTabbable);
           if (o) {
             var u = t(o, r.cycle);
-            u && cn(u.node, r.focusOptions)
+            u && ie(u.node, r.focusOptions)
           }
         },
-        On = function(n, e, t) {
-          var r, o, u, i, c = (o = n, u = null === (r = e.onlyTabbable) || void 0 === r || r, {
-            first: (i = u ? $(_(o), new Map) : nn(_(o), new Map))[0],
+        xe = function(e, n, t) {
+          var r, o, u, i, c = (o = e, u = null === (r = n.onlyTabbable) || void 0 === r || r, {
+            first: (i = u ? $(_(o), new Map) : ee(_(o), new Map))[0],
             last: i[i.length - 1]
           })[t];
-          c && cn(c.node, e.focusOptions)
+          c && ie(c.node, n.focusOptions)
         };
 
-      function Nn(n) {
-        setTimeout(n, 1)
+      function Oe(e) {
+        setTimeout(e, 1)
       }
-      var Fn = function(n, e) {
+      var Ne = function(e, n) {
           var t = {};
-          return t[n] = e, t
+          return t[e] = n, t
         },
-        An = function(n) {
-          return n && "current" in n ? n.current : n
+        Fe = function(e) {
+          return e && "current" in e ? e.current : e
         },
-        In = function() {
+        Ae = function() {
           return document && document.activeElement === document.body
         },
-        Tn = null,
-        kn = null,
-        Sn = function() {
+        Ie = null,
+        Te = null,
+        ke = function() {
           return null
         },
-        _n = null,
-        Cn = !1,
-        Dn = !1,
-        Ln = function() {
+        Se = null,
+        _e = !1,
+        Ce = !1,
+        De = function() {
           return !0
         };
 
-      function Pn(n, e, t, r) {
+      function Le(e, n, t, r) {
         var o = null,
-          u = n;
+          u = e;
         do {
           var i = r[u];
           if (i.guard) i.node.dataset.focusAutoGuard && (o = i);
           else {
             if (!i.lockItem) break;
-            if (u !== n) return;
+            if (u !== e) return;
             o = null
           }
-        } while ((u += t) !== e);
+        } while ((u += t) !== n);
         o && (o.node.tabIndex = 0)
       }
-      var Rn = function n(e, t, r) {
-          return t && (t.host === e && (!t.activeElement || r.contains(t.activeElement)) || t.parentNode && n(e, t.parentNode, r))
+      var Pe = function e(n, t, r) {
+          return t && (t.host === n && (!t.activeElement || r.contains(t.activeElement)) || t.parentNode && e(n, t.parentNode, r))
         },
-        Gn = function(n) {
-          return nn(n, new Map)
+        Re = function(e) {
+          return ee(e, new Map)
         },
-        jn = function() {
-          var n, e, t, r, o, u, i, c = !1;
-          if (Tn) {
-            var a = Tn,
+        Ge = function() {
+          var e, n, t, r, o, u, i, c = !1;
+          if (Ie) {
+            var a = Ie,
               d = a.observed,
               s = a.persistentFocus,
               l = a.autoFocus,
@@ -827,131 +827,131 @@ _global.SENTRY_RELEASE = {
               m = a.crossFrame,
               p = a.focusOptions,
               b = a.noFocusGuards,
-              y = d || _n && _n.portaledElement;
-            if (In() && kn && kn !== document.body && (!document.body.contains(kn) || !Gn([(i = kn).parentNode]).some((function(n) {
-                return n.node === i
+              y = d || Se && Se.portaledElement;
+            if (Ae() && Te && Te !== document.body && (!document.body.contains(Te) || !Re([(i = Te).parentNode]).some((function(e) {
+                return e.node === i
               })))) {
-              var h = Sn();
+              var h = ke();
               h && h.focus()
             }
             var g = document && document.activeElement;
             if (y) {
-              var E = [y].concat(v.map(An).filter(Boolean));
-              if (g && ! function(n) {
-                  return (Tn.whiteList || Ln)(n)
+              var E = [y].concat(v.map(Fe).filter(Boolean));
+              if (g && ! function(e) {
+                  return (Ie.whiteList || De)(e)
                 }(g) || (s || function() {
-                  if (!(m ? Boolean(Cn) : "meanwhile" === Cn) || !b || !kn || Dn) return !1;
-                  var n = Gn(E),
-                    e = n.findIndex((function(n) {
-                      return n.node === kn
+                  if (!(m ? Boolean(_e) : "meanwhile" === _e) || !b || !Te || Ce) return !1;
+                  var e = Re(E),
+                    n = e.findIndex((function(e) {
+                      return e.node === Te
                     }));
-                  return 0 === e || e === n.length - 1
-                }() || !(In() || function(n) {
-                  void 0 === n && (n = document);
-                  var e = tn(n);
-                  return !!e && S(n.querySelectorAll("[".concat(f, "]"))).some((function(n) {
-                    return en(n, e)
+                  return 0 === n || n === e.length - 1
+                }() || !(Ae() || function(e) {
+                  void 0 === e && (e = document);
+                  var n = te(e);
+                  return !!n && S(e.querySelectorAll("[".concat(f, "]"))).some((function(e) {
+                    return ne(e, n)
                   }))
-                }()) || !kn && l) && (y && !(un(E) || g && function(n, e) {
-                  return e.some((function(e) {
-                    return Rn(n, e, e)
+                }()) || !Te && l) && (y && !(ue(E) || g && function(e, n) {
+                  return n.some((function(n) {
+                    return Pe(e, n, n)
                   }))
-                }(g, E) || (u = g, _n && _n.portaledElement === u)) && (document && !kn && g && !l ? (g.blur && g.blur(), document.body.focus()) : (c = En(E, kn, {
+                }(g, E) || (u = g, Se && Se.portaledElement === u)) && (document && !Te && g && !l ? (g.blur && g.blur(), document.body.focus()) : (c = ge(E, Te, {
                   focusOptions: p
-                }), _n = {})), (kn = document && document.activeElement) !== document.body && (Sn = Mn(kn)), Cn = !1), document && g !== document.activeElement && document.querySelector("[data-focus-auto-guard]")) {
+                }), Se = {})), (Te = document && document.activeElement) !== document.body && (ke = we(Te)), _e = !1), document && g !== document.activeElement && document.querySelector("[data-focus-auto-guard]")) {
                 var w = document && document.activeElement,
-                  M = (e = on(n = E).filter(q), t = pn(n, n, e), r = Y(Q([t], !0), !0, !0), o = Q(e, !1), r.map((function(n) {
-                    var e = n.node;
+                  M = (n = oe(e = E).filter(q), t = me(e, e, n), r = Y(Q([t], !0), !0, !0), o = Q(n, !1), r.map((function(e) {
+                    var n = e.node;
                     return {
-                      node: e,
-                      index: n.index,
-                      lockItem: o.indexOf(e) >= 0,
-                      guard: W(e)
+                      node: n,
+                      index: e.index,
+                      lockItem: o.indexOf(n) >= 0,
+                      guard: W(n)
                     }
                   }))),
-                  x = M.map((function(n) {
-                    return n.node
+                  x = M.map((function(e) {
+                    return e.node
                   })).indexOf(w);
-                x > -1 && (M.filter((function(n) {
-                  var e = n.guard,
-                    t = n.node;
-                  return e && t.dataset.focusAutoGuard
-                })).forEach((function(n) {
-                  return n.node.removeAttribute("tabIndex")
-                })), Pn(x, M.length, 1, M), Pn(x, -1, -1, M))
+                x > -1 && (M.filter((function(e) {
+                  var n = e.guard,
+                    t = e.node;
+                  return n && t.dataset.focusAutoGuard
+                })).forEach((function(e) {
+                  return e.node.removeAttribute("tabIndex")
+                })), Le(x, M.length, 1, M), Le(x, -1, -1, M))
               }
             }
           }
           return c
         },
-        Bn = function(n) {
-          jn() && n && (n.stopPropagation(), n.preventDefault())
+        je = function(e) {
+          Ge() && e && (e.stopPropagation(), e.preventDefault())
         },
-        Un = function() {
-          return Nn(jn)
+        Be = function() {
+          return Oe(Ge)
         },
-        Wn = function() {
-          Dn = !0
+        Ue = function() {
+          Ce = !0
         },
-        qn = function() {
-          Dn = !1, Cn = "just", Nn((function() {
-            Cn = "meanwhile"
+        We = function() {
+          Ce = !1, _e = "just", Oe((function() {
+            _e = "meanwhile"
           }))
         },
-        Hn = {
-          moveFocusInside: En,
-          focusInside: un,
-          focusNextElement: function(n, e) {
-            void 0 === e && (e = {}), xn(n, e, (function(n, e) {
-              var t = n.next,
-                r = n.first;
-              return t || e && r
+        qe = {
+          moveFocusInside: ge,
+          focusInside: ue,
+          focusNextElement: function(e, n) {
+            void 0 === n && (n = {}), Me(e, n, (function(e, n) {
+              var t = e.next,
+                r = e.first;
+              return t || n && r
             }))
           },
-          focusPrevElement: function(n, e) {
-            void 0 === e && (e = {}), xn(n, e, (function(n, e) {
-              var t = n.prev,
-                r = n.last;
-              return t || e && r
+          focusPrevElement: function(e, n) {
+            void 0 === n && (n = {}), Me(e, n, (function(e, n) {
+              var t = e.prev,
+                r = e.last;
+              return t || n && r
             }))
           },
-          focusFirstElement: function(n, e) {
-            void 0 === e && (e = {}), On(n, e, "first")
+          focusFirstElement: function(e, n) {
+            void 0 === n && (n = {}), xe(e, n, "first")
           },
-          focusLastElement: function(n, e) {
-            void 0 === e && (e = {}), On(n, e, "last")
+          focusLastElement: function(e, n) {
+            void 0 === n && (n = {}), xe(e, n, "last")
           },
-          captureFocusRestore: Mn
+          captureFocusRestore: we
         };
-      w.assignSyncMedium((function(n) {
-        var e = n.target,
-          t = n.currentTarget;
-        t.contains(e) || (_n = {
+      w.assignSyncMedium((function(e) {
+        var n = e.target,
+          t = e.currentTarget;
+        t.contains(n) || (Se = {
           observerNode: t,
-          portaledElement: e
+          portaledElement: n
         })
-      })), M.assignMedium(Un), x.assignMedium((function(n) {
-        return n(Hn)
+      })), M.assignMedium(Be), x.assignMedium((function(e) {
+        return e(qe)
       }));
-      const Vn = (Yn = function(n) {
-        return n.filter((function(n) {
-          return !n.disabled
+      const He = (Ve = function(e) {
+        return e.filter((function(e) {
+          return !e.disabled
         }))
-      }, Kn = function(n) {
-        var e = n.slice(-1)[0];
-        e && !Tn && (document.addEventListener("focusin", Bn), document.addEventListener("focusout", Un), window.addEventListener("focus", Wn), window.addEventListener("blur", qn));
-        var t = Tn,
-          r = t && e && e.id === t.id;
-        Tn = e, t && !r && (t.onDeactivation(), n.filter((function(n) {
-          return n.id === t.id
-        })).length || t.returnFocus(!e)), e ? (kn = null, r && t.observed === e.observed || e.onActivation(Hn), jn(), Nn(jn)) : (document.removeEventListener("focusin", Bn), document.removeEventListener("focusout", Un), window.removeEventListener("focus", Wn), window.removeEventListener("blur", qn), kn = null)
-      }, function(n) {
-        var e, t = [];
+      }, Ye = function(e) {
+        var n = e.slice(-1)[0];
+        n && !Ie && (document.addEventListener("focusin", je), document.addEventListener("focusout", Be), window.addEventListener("focus", Ue), window.addEventListener("blur", We));
+        var t = Ie,
+          r = t && n && n.id === t.id;
+        Ie = n, t && !r && (t.onDeactivation(), e.filter((function(e) {
+          return e.id === t.id
+        })).length || t.returnFocus(!n)), n ? (Te = null, r && t.observed === n.observed || n.onActivation(qe), Ge(), Oe(Ge)) : (document.removeEventListener("focusin", je), document.removeEventListener("focusout", Be), window.removeEventListener("focus", Ue), window.removeEventListener("blur", We), Te = null)
+      }, function(e) {
+        var n, t = [];
 
         function r() {
-          e = Yn(t.map((function(n) {
-            return n.props
-          }))), Kn(e)
+          n = Ve(t.map((function(e) {
+            return e.props
+          }))), Ye(n)
         }
         var o = function(o) {
           var u, c;
@@ -960,7 +960,7 @@ _global.SENTRY_RELEASE = {
             return o.apply(this, arguments) || this
           }
           c = o, (u = a).prototype = Object.create(c.prototype), u.prototype.constructor = u, (0, T.A)(u, c), a.peek = function() {
-            return e
+            return n
           };
           var f = a.prototype;
           return f.componentDidMount = function() {
@@ -968,159 +968,159 @@ _global.SENTRY_RELEASE = {
           }, f.componentDidUpdate = function() {
             r()
           }, f.componentWillUnmount = function() {
-            var n = t.indexOf(this);
-            t.splice(n, 1), r()
+            var e = t.indexOf(this);
+            t.splice(e, 1), r()
           }, f.render = function() {
-            return i().createElement(n, this.props)
+            return i().createElement(e, this.props)
           }, a
         }(u.PureComponent);
-        return (0, k.A)(o, "displayName", "SideEffect(" + function(n) {
-          return n.displayName || n.name || "Component"
-        }(n) + ")"), o
+        return (0, k.A)(o, "displayName", "SideEffect(" + function(e) {
+          return e.displayName || e.name || "Component"
+        }(e) + ")"), o
       })((function() {
         return null
       }));
-      var Yn, Kn, zn = (0, u.forwardRef)((function(n, e) {
+      var Ve, Ye, Ke = (0, u.forwardRef)((function(e, n) {
           return i().createElement(I, (0, o.A)({
-            sideCar: Vn,
-            ref: e
-          }, n))
+            sideCar: He,
+            ref: n
+          }, e))
         })),
-        Jn = I.propTypes || {};
-      Jn.sideCar, (0, r.A)(Jn, ["sideCar"]), zn.propTypes = {};
-      const Qn = zn;
-      var Xn = function(n) {
-        var e = n.disabled,
-          t = void 0 !== e && e,
-          r = n.children,
-          u = n.className,
+        ze = I.propTypes || {};
+      ze.sideCar, (0, r.A)(ze, ["sideCar"]), Ke.propTypes = {};
+      const Je = Ke;
+      var Qe = function(e) {
+        var n = e.disabled,
+          t = void 0 !== n && n,
+          r = e.children,
+          u = e.className,
           c = void 0 === u ? void 0 : u;
-        return i().createElement("div", (0, o.A)({}, Fn(d, !t), {
+        return i().createElement("div", (0, o.A)({}, Ne(d, !t), {
           className: c
         }), r)
       };
-      Xn.propTypes = {};
-      const Zn = Xn;
-      var $n = function(n) {
+      Qe.propTypes = {};
+      const Xe = Qe;
+      var Ze = function(e) {
         (0, u.useEffect)((function() {
-          var e = !0;
+          var n = !0;
           return x.useMedium((function(t) {
-              var r = n && n.current;
-              e && r && (t.focusInside(r) || t.moveFocusInside(r, null))
+              var r = e && e.current;
+              n && r && (t.focusInside(r) || t.moveFocusInside(r, null))
             })),
             function() {
-              e = !1
+              n = !1
             }
-        }), [n])
+        }), [e])
       };
 
-      function ne(n) {
-        var e = n.disabled,
-          t = void 0 !== e && e,
-          r = n.className,
-          c = n.children,
+      function $e(e) {
+        var n = e.disabled,
+          t = void 0 !== n && n,
+          r = e.className,
+          c = e.children,
           a = (0, u.useRef)(null);
-        return $n(t ? void 0 : a), i().createElement("div", (0, o.A)({}, Fn(d, !t), {
+        return Ze(t ? void 0 : a), i().createElement("div", (0, o.A)({}, Ne(d, !t), {
           ref: a,
           className: r
         }), c)
       }
-      ne.propTypes = {};
-      const ee = ne;
-      var te = function(n) {
-        var e = n.children,
-          t = n.className;
-        return i().createElement("div", (0, o.A)({}, Fn(f, !0), {
+      $e.propTypes = {};
+      const en = $e;
+      var nn = function(e) {
+        var n = e.children,
+          t = e.className;
+        return i().createElement("div", (0, o.A)({}, Ne(f, !0), {
           className: t
-        }), e)
+        }), n)
       };
-      te.propTypes = {};
-      const re = te;
-      var oe = function(n) {
-          return n.map(An).filter(Boolean)
+      nn.propTypes = {};
+      const tn = nn;
+      var rn = function(e) {
+          return e.map(Fe).filter(Boolean)
         },
-        ue = function(n) {
-          return new Promise((function(e) {
+        on = function(e) {
+          return new Promise((function(n) {
             return x.useMedium((function() {
-              e(n.apply(void 0, arguments))
+              n(e.apply(void 0, arguments))
             }))
           }))
         },
-        ie = function() {
-          for (var n = arguments.length, e = new Array(n), t = 0; t < n; t++) e[t] = arguments[t];
-          if (!e.length) throw new Error("useFocusController requires at least one target element");
-          var r = (0, u.useRef)(e);
-          return r.current = e, (0, u.useMemo)((function() {
+        un = function() {
+          for (var e = arguments.length, n = new Array(e), t = 0; t < e; t++) n[t] = arguments[t];
+          if (!n.length) throw new Error("useFocusController requires at least one target element");
+          var r = (0, u.useRef)(n);
+          return r.current = n, (0, u.useMemo)((function() {
             return {
-              autoFocus: function(n) {
-                return void 0 === n && (n = {}), ue((function(e) {
-                  return e.moveFocusInside(oe(r.current), null, n)
+              autoFocus: function(e) {
+                return void 0 === e && (e = {}), on((function(n) {
+                  return n.moveFocusInside(rn(r.current), null, e)
                 }))
               },
-              focusNext: function(n) {
-                return ue((function(e) {
-                  e.moveFocusInside(oe(r.current), null), e.focusNextElement(document.activeElement, (0, o.A)({
-                    scope: oe(r.current)
-                  }, n))
+              focusNext: function(e) {
+                return on((function(n) {
+                  n.moveFocusInside(rn(r.current), null), n.focusNextElement(document.activeElement, (0, o.A)({
+                    scope: rn(r.current)
+                  }, e))
                 }))
               },
-              focusPrev: function(n) {
-                return ue((function(e) {
-                  e.moveFocusInside(oe(r.current), null), e.focusPrevElement(document.activeElement, (0, o.A)({
-                    scope: oe(r.current)
-                  }, n))
+              focusPrev: function(e) {
+                return on((function(n) {
+                  n.moveFocusInside(rn(r.current), null), n.focusPrevElement(document.activeElement, (0, o.A)({
+                    scope: rn(r.current)
+                  }, e))
                 }))
               },
-              focusFirst: function(n) {
-                return ue((function(e) {
-                  e.focusFirstElement(oe(r.current), n)
+              focusFirst: function(e) {
+                return on((function(n) {
+                  n.focusFirstElement(rn(r.current), e)
                 }))
               },
-              focusLast: function(n) {
-                return ue((function(e) {
-                  e.focusLastElement(oe(r.current), n)
+              focusLast: function(e) {
+                return on((function(n) {
+                  n.focusLastElement(rn(r.current), e)
                 }))
               }
             }
           }), [])
         },
-        ce = function() {
-          var n = (0, u.useContext)(N);
-          if (!n) throw new Error("FocusLock is required to operate with FocusScope");
-          return ie.apply(void 0, [n.observed].concat(n.shards))
+        cn = function() {
+          var e = (0, u.useContext)(N);
+          if (!e) throw new Error("FocusLock is required to operate with FocusScope");
+          return un.apply(void 0, [e.observed].concat(e.shards))
         },
-        ae = {
-          emit: function(n) {
-            for (var e = arguments.length, t = new Array(e > 1 ? e - 1 : 0), r = 1; r < e; r++) t[r - 1] = arguments[r];
-            for (var o = 0, u = this.events[n] || [], i = u.length; o < i; o++) u[o].apply(u, t)
+        an = {
+          emit: function(e) {
+            for (var n = arguments.length, t = new Array(n > 1 ? n - 1 : 0), r = 1; r < n; r++) t[r - 1] = arguments[r];
+            for (var o = 0, u = this.events[e] || [], i = u.length; o < i; o++) u[o].apply(u, t)
           },
           events: {},
-          on: function(n, e) {
+          on: function(e, n) {
             var t, r = this;
-            return ((t = this.events)[n] || (t[n] = [])).push(e),
+            return ((t = this.events)[e] || (t[e] = [])).push(n),
               function() {
                 var t;
-                r.events[n] = null == (t = r.events[n]) ? void 0 : t.filter((function(n) {
-                  return e !== n
+                r.events[e] = null == (t = r.events[e]) ? void 0 : t.filter((function(e) {
+                  return n !== e
                 }))
               }
           }
         },
-        fe = 0,
-        de = function(n) {
-          return ae.emit("assign", n.target)
+        fn = 0,
+        dn = function(e) {
+          return an.emit("assign", e.target)
         },
-        se = function(n) {
-          return ae.emit("reset", n.target)
+        sn = function(e) {
+          return an.emit("reset", e.target)
         },
-        le = function(n, e) {
-          return n === e ? "self" : e.contains(n) ? "within" : "within-boundary"
+        ln = function(e, n) {
+          return e === n ? "self" : n.contains(e) ? "within" : "within-boundary"
         },
-        ve = function(n) {
-          void 0 === n && (n = {});
-          var e = (0, u.useState)(!1),
-            t = e[0],
-            r = e[1],
+        vn = function(e) {
+          void 0 === e && (e = {});
+          var n = (0, u.useState)(!1),
+            t = n[0],
+            r = n[1],
             o = (0, u.useState)(""),
             i = o[0],
             c = o[1],
@@ -1129,31 +1129,31 @@ _global.SENTRY_RELEASE = {
             d = (0, u.useRef)(!1);
           (0, u.useEffect)((function() {
             if (a.current) {
-              var e = a.current === document.activeElement || a.current.contains(document.activeElement);
-              r(e), c(le(document.activeElement, a.current)), e && n.onFocus && n.onFocus()
+              var n = a.current === document.activeElement || a.current.contains(document.activeElement);
+              r(n), c(ln(document.activeElement, a.current)), n && e.onFocus && e.onFocus()
             }
           }), []);
-          var s = (0, u.useCallback)((function(n) {
+          var s = (0, u.useCallback)((function(e) {
             f.current = {
               focused: !0,
-              state: le(n.target, n.currentTarget)
+              state: ln(e.target, e.currentTarget)
             }
           }), []);
           return (0, u.useEffect)((function() {
-            return fe || (document.addEventListener("focusin", de), document.addEventListener("focusout", se)), fe += 1,
+            return fn || (document.addEventListener("focusin", dn), document.addEventListener("focusout", sn)), fn += 1,
               function() {
-                (fe -= 1) || (document.removeEventListener("focusin", de), document.removeEventListener("focusout", se))
+                (fn -= 1) || (document.removeEventListener("focusin", dn), document.removeEventListener("focusout", sn))
               }
           }), []), (0, u.useEffect)((function() {
-            var e = ae.on("reset", (function() {
+            var n = an.on("reset", (function() {
                 f.current = {}
               })),
-              t = ae.on("assign", (function() {
-                var e = f.current.focused || !1;
-                r(e), c(f.current.state || ""), e !== d.current && (d.current = e, e ? n.onFocus && n.onFocus() : n.onBlur && n.onBlur())
+              t = an.on("assign", (function() {
+                var n = f.current.focused || !1;
+                r(n), c(f.current.state || ""), n !== d.current && (d.current = n, n ? e.onFocus && e.onFocus() : e.onBlur && e.onBlur())
               }));
             return function() {
-              e(), t()
+              n(), t()
             }
           }), []), {
             active: t,
@@ -1162,41 +1162,41 @@ _global.SENTRY_RELEASE = {
             ref: a
           }
         };
-      const me = Qn
+      const mn = Je
     },
-    7845: (n, e, t) => {
-      t.d(e, {
+    7845: (e, n, t) => {
+      t.d(n, {
         A: () => o
       });
       var r = t(8730);
 
-      function o(n, e, t) {
-        return (e = (0, r.A)(e)) in n ? Object.defineProperty(n, e, {
+      function o(e, n, t) {
+        return (n = (0, r.A)(n)) in e ? Object.defineProperty(e, n, {
           value: t,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : n[e] = t, n
+        }) : e[n] = t, e
       }
     },
-    8730: (n, e, t) => {
-      t.d(e, {
+    8730: (e, n, t) => {
+      t.d(n, {
         A: () => o
       });
       var r = t(802);
 
-      function o(n) {
-        var e = function(n) {
-          if ("object" != (0, r.A)(n) || !n) return n;
-          var e = n[Symbol.toPrimitive];
-          if (void 0 !== e) {
-            var t = e.call(n, "string");
+      function o(e) {
+        var n = function(e) {
+          if ("object" != (0, r.A)(e) || !e) return e;
+          var n = e[Symbol.toPrimitive];
+          if (void 0 !== n) {
+            var t = n.call(e, "string");
             if ("object" != (0, r.A)(t)) return t;
             throw new TypeError("@@toPrimitive must return a primitive value.")
           }
-          return String(n)
-        }(n);
-        return "symbol" == (0, r.A)(e) ? e : e + ""
+          return String(e)
+        }(e);
+        return "symbol" == (0, r.A)(n) ? n : n + ""
       }
     }
   }

@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [8557], {
     38557: (o, t, e) => {
       e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => a,
-        Lightbox_Close_Button_Tooltip: () => l,
+        Lightbox_Close_Button_Label: () => l,
+        Lightbox_Close_Button_Tooltip: () => _,
         Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => _,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -35,9 +35,9 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => r,
         default: () => x
       });
-      var a = "Fermer la lightbox",
-        l = "Appuyer sur {shortcut}",
-        _ = "Zoom avant",
+      var l = "Fermer la lightbox",
+        _ = "Appuyer sur {shortcut}",
+        a = "Zoom avant",
         i = "Appuyer sur {shortcut}",
         n = "Zoom arrière",
         b = "Appuyer sur {shortcut}",
@@ -51,9 +51,9 @@ _global.SENTRY_RELEASE = {
         L = "Image de la lightbox",
         p = "Text alternatif : {alt}",
         x = {
-          Lightbox_Close_Button_Label: a,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: _,
+          Lightbox_Close_Button_Label: l,
+          Lightbox_Close_Button_Tooltip: _,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,

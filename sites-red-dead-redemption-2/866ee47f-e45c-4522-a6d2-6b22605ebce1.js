@@ -25,24 +25,24 @@ _global.SENTRY_RELEASE = {
         r = t(45771),
         o = t(78939),
         i = t(27353),
-        s = function() {
+        d = function() {
           function e(a, t) {
             if (void 0 === this.constructor) throw TypeError("Constructor Intl.DisplayNames requires 'new'");
             var l = (0, n.CanonicalizeLocaleList)(a);
             t = (0, n.GetOptionsObject)(t);
             var r = Object.create(null),
               o = e.localeData,
-              s = (0, n.GetOption)(t, "localeMatcher", "string", ["lookup", "best fit"], "best fit");
-            r.localeMatcher = s;
-            var d = (0, i.ResolveLocale)(Array.from(e.availableLocales), l, r, [], e.localeData, e.getDefaultLocale),
+              d = (0, n.GetOption)(t, "localeMatcher", "string", ["lookup", "best fit"], "best fit");
+            r.localeMatcher = d;
+            var s = (0, i.ResolveLocale)(Array.from(e.availableLocales), l, r, [], e.localeData, e.getDefaultLocale),
               c = (0, n.GetOption)(t, "style", "string", ["narrow", "short", "long"], "long");
             u(this, "style", c);
             var f = (0, n.GetOption)(t, "type", "string", ["language", "region", "script", "currency", "calendar", "dateTimeField"], void 0);
             if (void 0 === f) throw TypeError('Intl.DisplayNames constructor requires "type" option');
-            u(this, "type", f), u(this, "fallback", (0, n.GetOption)(t, "fallback", "string", ["code", "none"], "code")), u(this, "locale", d.locale);
-            var p = d.dataLocale,
+            u(this, "type", f), u(this, "fallback", (0, n.GetOption)(t, "fallback", "string", ["code", "none"], "code")), u(this, "locale", s.locale);
+            var p = s.dataLocale,
               y = o[p];
-            (0, n.invariant)(!!y, "Missing locale data for ".concat(p)), u(this, "localeData", y), (0, n.invariant)(void 0 !== y, "locale data for ".concat(d.locale, " does not exist."));
+            (0, n.invariant)(!!y, "Missing locale data for ".concat(p)), u(this, "localeData", y), (0, n.invariant)(void 0 !== y, "locale data for ".concat(s.locale, " does not exist."));
             var g = y.types;
             (0, n.invariant)("object" == typeof g && null != g, "invalid types data");
             var b = g[f];
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
               var r = n[l],
                 o = r.data,
                 i = r.locale,
-                s = new Intl.Locale(i).minimize().toString();
-              e.localeData[i] = e.localeData[s] = o, e.availableLocales.add(s), e.availableLocales.add(i), e.__defaultLocale || (e.__defaultLocale = s)
+                d = new Intl.Locale(i).minimize().toString();
+              e.localeData[i] = e.localeData[d] = o, e.availableLocales.add(d), e.availableLocales.add(i), e.__defaultLocale || (e.__defaultLocale = d)
             }
           }, e.prototype.of = function(e) {
             f(this, "of");
@@ -87,8 +87,8 @@ _global.SENTRY_RELEASE = {
                     return (0, o.IsValidDateTimeFieldCode)(a)
                 }
               }(a, t)) throw RangeError("invalid code for Intl.DisplayNames.prototype.of");
-            var l, i = (0, n.getMultiInternalSlots)(d, this, "localeData", "style", "fallback"),
-              s = i.localeData,
+            var l, i = (0, n.getMultiInternalSlots)(s, this, "localeData", "style", "fallback"),
+              d = i.localeData,
               u = i.style,
               p = i.fallback,
               y = (0, r.CanonicalCodeForDisplayNames)(a, t);
@@ -98,52 +98,52 @@ _global.SENTRY_RELEASE = {
               if (void 0 !== o) return o;
               var i = /-([a-z]{2}|\d{3})\b/i.exec(l);
               if (i) {
-                var s = l.substring(0, i.index) + l.substring(i.index + i[0].length),
-                  d = i[1],
-                  c = r[t][s] || r.long[s];
-                if (void 0 === c || !d) return c;
+                var d = l.substring(0, i.index) + l.substring(i.index + i[0].length),
+                  s = i[1],
+                  c = r[t][d] || r.long[d];
+                if (void 0 === c || !s) return c;
                 var u = a.types.region,
-                  f = u[t][d] || u.long[d];
-                if (f || "code" === n) return a.patterns.locale.replace("{0}", c).replace("{1}", f || d)
+                  f = u[t][s] || u.long[s];
+                if (f || "code" === n) return a.patterns.locale.replace("{0}", c).replace("{1}", f || s)
               }
-            }(c(this, "languageDisplay"), s, u, y, p);
+            }(c(this, "languageDisplay"), d, u, y, p);
             else {
-              var g = s.types[a];
+              var g = d.types[a];
               l = g[u][y] || g.long[y]
             }
             return void 0 !== l ? l : "code" === p ? t : void 0
           }, e.prototype.resolvedOptions = function() {
-            return f(this, "resolvedOptions"), l.__assign({}, (0, n.getMultiInternalSlots)(d, this, "locale", "style", "type", "fallback", "languageDisplay"))
+            return f(this, "resolvedOptions"), l.__assign({}, (0, n.getMultiInternalSlots)(s, this, "locale", "style", "type", "fallback", "languageDisplay"))
           }, e.getDefaultLocale = function() {
             return e.__defaultLocale
           }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.polyfilled = !0, e
         }();
-      a.DisplayNames = s;
+      a.DisplayNames = d;
       try {
-        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(s.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(d.prototype, Symbol.toStringTag, {
           value: "Intl.DisplayNames",
           configurable: !0,
           enumerable: !1,
           writable: !1
-        }), Object.defineProperty(s, "length", {
+        }), Object.defineProperty(d, "length", {
           value: 2,
           writable: !1,
           enumerable: !1,
           configurable: !0
         })
       } catch (e) {}
-      var d = new WeakMap;
+      var s = new WeakMap;
 
       function c(e, a) {
-        return (0, n.getInternalSlot)(d, e, a)
+        return (0, n.getInternalSlot)(s, e, a)
       }
 
       function u(e, a, t) {
-        (0, n.setInternalSlot)(d, e, a, t)
+        (0, n.setInternalSlot)(s, e, a, t)
       }
 
       function f(e, a) {
-        if (!(e instanceof s)) throw TypeError("Method Intl.DisplayNames.prototype.".concat(a, " called on incompatible receiver"))
+        if (!(e instanceof d)) throw TypeError("Method Intl.DisplayNames.prototype.".concat(a, " called on incompatible receiver"))
       }
     },
     45771: (e, a, t) => {
@@ -155,9 +155,9 @@ _global.SENTRY_RELEASE = {
           if (t = a, !r.test(t)) throw RangeError("invalid region");
           return a.toUpperCase()
         }
-        var t, s;
+        var t, d;
         if ("script" === e) {
-          if (s = a, !o.test(s)) throw RangeError("invalid script");
+          if (d = a, !o.test(d)) throw RangeError("invalid script");
           return "".concat(a[0].toUpperCase()).concat(a.slice(1).toLowerCase())
         }
         if ("calendar" === e) {

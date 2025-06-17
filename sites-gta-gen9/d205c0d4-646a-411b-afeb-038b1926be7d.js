@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => _,
-        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Description: () => x,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => p
       });
       var a = "Cerrar Lightbox",
         _ = "Pulsa {shortcut}",
@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
         h = "Descargar",
         L = "Abrir imagen en Lightbox",
         f = "Imagen en Lightbox",
-        c = "Texto alternativo: {alt}",
-        x = {
+        x = "Texto alternativo: {alt}",
+        p = {
           Lightbox_Close_Button_Label: a,
           Lightbox_Close_Button_Tooltip: _,
           Lightbox_Zoom_In_Button_Label: l,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Description: x
         }
     }
   }

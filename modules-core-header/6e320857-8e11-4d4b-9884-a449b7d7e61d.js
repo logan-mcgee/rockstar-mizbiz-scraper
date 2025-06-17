@@ -41,8 +41,8 @@ _global.SENTRY_RELEASE = {
         d = r(19202),
         l = r(27114),
         i = r(72480),
-        u = r(74406),
-        c = r(45421),
+        c = r(74406),
+        u = r(45421),
         p = r(34902),
         f = r(36146),
         v = r(85100),
@@ -52,8 +52,8 @@ _global.SENTRY_RELEASE = {
         _ = r(19690),
         y = r(25854),
         P = "Popover",
-        [w, C] = (0, s.A)(P, [c.Bk]),
-        m = (0, c.Bk)(),
+        [w, C] = (0, s.A)(P, [u.Bk]),
+        m = (0, u.Bk)(),
         [x, M] = w(P),
         O = e => {
           const {
@@ -69,11 +69,11 @@ _global.SENTRY_RELEASE = {
             onChange: s,
             caller: P
           });
-          return (0, y.jsx)(c.bL, {
+          return (0, y.jsx)(u.bL, {
             ...l,
             children: (0, y.jsx)(x, {
               scope: o,
-              contentId: (0, u.useId)(),
+              contentId: (0, c.useId)(),
               triggerRef: i,
               open: v,
               onOpenChange: g,
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
             onCustomAnchorAdd: d,
             onCustomAnchorRemove: l
           } = a;
-          return t.useEffect((() => (d(), () => l())), [d, l]), (0, y.jsx)(c.Mz, {
+          return t.useEffect((() => (d(), () => l())), [d, l]), (0, y.jsx)(u.Mz, {
             ...s,
             ...n,
             ref: o
@@ -118,7 +118,7 @@ _global.SENTRY_RELEASE = {
             ref: l,
             onClick: (0, n.m)(e.onClick, s.onOpenToggle)
           });
-          return s.hasCustomAnchor ? i : (0, y.jsx)(c.Mz, {
+          return s.hasCustomAnchor ? i : (0, y.jsx)(u.Mz, {
             asChild: !0,
             ...d,
             children: i
@@ -231,7 +231,7 @@ _global.SENTRY_RELEASE = {
             onOpenAutoFocus: n,
             onCloseAutoFocus: a,
             disableOutsidePointerEvents: s,
-            onEscapeKeyDown: u,
+            onEscapeKeyDown: c,
             onPointerDownOutside: p,
             onFocusOutside: f,
             onInteractOutside: v,
@@ -247,11 +247,11 @@ _global.SENTRY_RELEASE = {
               asChild: !0,
               disableOutsidePointerEvents: s,
               onInteractOutside: v,
-              onEscapeKeyDown: u,
+              onEscapeKeyDown: c,
               onPointerDownOutside: p,
               onFocusOutside: f,
               onDismiss: () => h.onOpenChange(!1),
-              children: (0, y.jsx)(c.UC, {
+              children: (0, y.jsx)(u.UC, {
                 "data-state": U(h.open),
                 role: "dialog",
                 id: h.contentId,
@@ -289,7 +289,7 @@ _global.SENTRY_RELEASE = {
           __scopePopover: r,
           ...t
         } = e, n = m(r);
-        return (0, y.jsx)(c.i3, {
+        return (0, y.jsx)(u.i3, {
           ...n,
           ...t,
           ref: o

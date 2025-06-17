@@ -43,8 +43,8 @@ _global.SENTRY_RELEASE = {
           "string" == typeof a && (a = [a]);
           for (var t = 0, L = a; t < L.length; t++) {
             var k = L[t],
-              e = (0, r.emitUnicodeLocaleId)((0, b.CanonicalizeUnicodeLocaleId)((0, m.parseUnicodeLocaleId)(k)));
-            n.indexOf(e) < 0 && n.push(e)
+              u = (0, r.emitUnicodeLocaleId)((0, b.CanonicalizeUnicodeLocaleId)((0, m.parseUnicodeLocaleId)(k)));
+            n.indexOf(u) < 0 && n.push(u)
           }
           return n
         }(a)
@@ -9047,8 +9047,8 @@ _global.SENTRY_RELEASE = {
         r = /^[a-z0-9]{2,8}$/i,
         m = /^[a-z0-9]{3,8}$/i,
         k = /^[a-z0-9][a-z]$/i,
-        e = /^[a-z0-9]{3,8}$/i,
-        u = /^[a-z]{4}$/i,
+        u = /^[a-z0-9]{3,8}$/i,
+        e = /^[a-z]{4}$/i,
         s = /^[0-9a-svwyz]$/i,
         i = /^([a-z]{2}|[0-9]{3})$/i,
         l = /^([a-z0-9]{5,8}|[0-9][a-z0-9]{3})$/i,
@@ -9064,7 +9064,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function c(a) {
-        return u.test(a)
+        return e.test(a)
       }
 
       function p(a) {
@@ -9115,7 +9115,7 @@ _global.SENTRY_RELEASE = {
         var t;
         if (k.test(a[0])) {
           t = a.shift();
-          for (var L = []; a.length && e.test(a[0]);) L.push(a.shift());
+          for (var L = []; a.length && u.test(a[0]);) L.push(a.shift());
           var b = "";
           return L.length && (b = L.join(n.SEPARATOR)), [t, b]
         }
@@ -9159,20 +9159,20 @@ _global.SENTRY_RELEASE = {
         value: !0
       }), n.emitUnicodeLanguageId = b, n.emitUnicodeLocaleId = function(a) {
         for (var n = a.lang, t = a.extensions, r = [b(n)], m = 0, k = t; m < k.length; m++) {
-          var e = k[m];
-          switch (r.push(e.type), e.type) {
+          var u = k[m];
+          switch (r.push(u.type), u.type) {
             case "u":
-              r.push.apply(r, L.__spreadArray(L.__spreadArray([], e.attributes, !1), e.keywords.reduce((function(a, n) {
+              r.push.apply(r, L.__spreadArray(L.__spreadArray([], u.attributes, !1), u.keywords.reduce((function(a, n) {
                 return a.concat(n)
               }), []), !1));
               break;
             case "t":
-              r.push.apply(r, L.__spreadArray([b(e.lang)], e.fields.reduce((function(a, n) {
+              r.push.apply(r, L.__spreadArray([b(u.lang)], u.fields.reduce((function(a, n) {
                 return a.concat(n)
               }), []), !1));
               break;
             default:
-              r.push(e.value)
+              r.push(u.value)
           }
         }
         return r.filter(Boolean).join("-")
@@ -9192,12 +9192,12 @@ _global.SENTRY_RELEASE = {
             var L = t[n];
             switch (L.type) {
               case "u":
-                L.keywords = e(L.keywords), L.attributes && (L.attributes = (b = L.attributes, Object.keys(b.reduce((function(a, n) {
+                L.keywords = u(L.keywords), L.attributes && (L.attributes = (b = L.attributes, Object.keys(b.reduce((function(a, n) {
                   return a[n.toLowerCase()] = 1, a
                 }), {})).sort()));
                 break;
               case "t":
-                L.lang && (L.lang = l(L.lang)), L.fields = e(L.fields);
+                L.lang && (L.lang = l(L.lang)), L.fields = u(L.fields);
                 break;
               default:
                 L.value = L.value.toLowerCase()
@@ -9214,15 +9214,15 @@ _global.SENTRY_RELEASE = {
         m = t(63728),
         k = t(69693);
 
-      function e(a) {
+      function u(a) {
         for (var n = {}, t = [], L = 0, b = a; L < b.length; L++) {
           var r = b[L];
           r[0] in n || (n[r[0]] = 1, r[1] && "true" !== r[1] ? t.push([r[0].toLowerCase(), r[1].toLowerCase()]) : t.push([r[0].toLowerCase()]))
         }
-        return t.sort(u)
+        return t.sort(e)
       }
 
-      function u(a, n) {
+      function e(a, n) {
         return a[0] < n[0] ? -1 : a[0] > n[0] ? 1 : 0
       }
 
@@ -9241,11 +9241,11 @@ _global.SENTRY_RELEASE = {
       function l(a) {
         var n = a;
         if (a.variants.length)
-          for (var t = "", L = 0, e = a.variants; L < e.length; L++) {
-            var u = e[L];
+          for (var t = "", L = 0, u = a.variants; L < u.length; L++) {
+            var e = u[L];
             if (t = b.languageAlias[(0, r.emitUnicodeLanguageId)({
                 lang: a.lang,
-                variants: [u]
+                variants: [e]
               })]) {
               n = {
                 lang: (d = (0, k.parseUnicodeLanguageId)(t.split(k.SEPARATOR))).lang,
@@ -9313,8 +9313,8 @@ _global.SENTRY_RELEASE = {
         }
         if (n.script && (n.script = n.script[0].toUpperCase() + n.script.slice(1).toLowerCase(), b.scriptAlias[n.script] && (n.script = b.scriptAlias[n.script])), n.variants.length) {
           for (var w = 0; w < n.variants.length; w++)
-            if (u = n.variants[w].toLowerCase(), b.variantAlias[u]) {
-              var N = b.variantAlias[u];
+            if (e = n.variants[w].toLowerCase(), b.variantAlias[e]) {
+              var N = b.variantAlias[e];
               (0, k.isUnicodeVariantSubtag)(N) ? n.variants[w] = N: (0, k.isUnicodeLanguageSubtag)(N) && (n.lang = N)
             } n.variants.sort()
         }

@@ -33,14 +33,14 @@ _global.SENTRY_RELEASE = {
         }) : e[t] = n)(e, "symbol" != typeof t ? t + "" : t, n),
         r = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function c(e) {
-        l = e
+        d = e
       }
 
-      function h(e, t, n = {}, i = l) {
+      function h(e, t, n = {}, i = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== i) {
           const o = e.getBoundingClientRect();
           return t(i, {
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(d+=1,a.set(n,d.toString())),a.get(n)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(l+=1,a.set(n,l.toString())),a.get(n)):"0"):e[t]}`;
               var n
             })).toString()
           }(e);
@@ -162,8 +162,8 @@ _global.SENTRY_RELEASE = {
             root: s,
             rootMargin: r,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: c,
             initialInView: h,
             fallbackInView: u,
@@ -184,13 +184,13 @@ _global.SENTRY_RELEASE = {
         root: s,
         triggerOnce: r,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: c
       } = {}) {
         var u;
         const [b, f] = i.useState(null), p = i.useRef(c), [y, g] = i.useState({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         });
         p.current = c, i.useEffect((() => {
@@ -207,14 +207,14 @@ _global.SENTRY_RELEASE = {
             threshold: e,
             trackVisibility: n,
             delay: t
-          }, l), () => {
+          }, d), () => {
             i && i()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, o, r, a, n, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, s, o, r, a, n, d, t]);
         const v = null == (u = y.entry) ? void 0 : u.target,
           w = i.useRef(void 0);
         b || !v || r || a || w.current === v || (w.current = v, g({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         }));
         const M = [f, y.inView, y.entry];

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      a = (new e.Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "963ee1d1-f6b0-4f58-8cbb-b1b72698371e", e._sentryDebugIdIdentifier = "sentry-dbid-963ee1d1-f6b0-4f58-8cbb-b1b72698371e")
+      t = (new e.Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "963ee1d1-f6b0-4f58-8cbb-b1b72698371e", e._sentryDebugIdIdentifier = "sentry-dbid-963ee1d1-f6b0-4f58-8cbb-b1b72698371e")
   } catch (e) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};

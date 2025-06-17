@@ -1,8 +1,8 @@
 ! function() {
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      t = (new o.Error).stack;
-    t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "6e38859f-3be8-4e6b-b40e-506e5471c014", o._sentryDebugIdIdentifier = "sentry-dbid-6e38859f-3be8-4e6b-b40e-506e5471c014")
+      e = (new o.Error).stack;
+    e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "6e38859f-3be8-4e6b-b40e-506e5471c014", o._sentryDebugIdIdentifier = "sentry-dbid-6e38859f-3be8-4e6b-b40e-506e5471c014")
   } catch (o) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
@@ -16,32 +16,32 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [823], {
-    823: (o, t, e) => {
-      e.r(t), e.d(t, {
+    823: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => f,
-        Lightbox_Reset_Zoom_Button_Label: () => d,
+        Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => i,
-        Lightbox_Zoom_Out_Button__Tooltip: () => b,
+        Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => p
       });
       var _ = "Lightbox schließen",
         l = "{shortcut} drücken",
         a = "Heranzoomen",
         n = "{shortcut} drücken",
         i = "Herauszoomen",
-        b = "{shortcut} drücken",
-        d = "Zurücksetzen",
+        d = "{shortcut} drücken",
+        b = "Zurücksetzen",
         s = "{shortcut} drücken",
         u = "Zoomstufe",
         r = "{zoom} %",
@@ -49,15 +49,15 @@ _global.SENTRY_RELEASE = {
         h = "Herunterladen",
         f = "Bild in Lightbox öffnen",
         L = "Bild im Großformat",
-        p = "Alternativtext: {alt}",
-        c = {
+        c = "Alternativtext: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: i,
-          Lightbox_Zoom_Out_Button__Tooltip: b,
-          Lightbox_Reset_Zoom_Button_Label: d,
+          Lightbox_Zoom_Out_Button__Tooltip: d,
+          Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: r,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

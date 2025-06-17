@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       t.r(a), t.d(a, {
         AgeGate: () => f
       });
-      var l = t(62229),
-        d = t(6926),
+      var d = t(62229),
+        l = t(6926),
         s = t(96672),
         n = t(20148),
         r = t(42451),
@@ -50,12 +50,12 @@ _global.SENTRY_RELEASE = {
             data: y
           } = (0, c.useRockstarUser)(), {
             track: p
-          } = (0, c.useGtmTrack)(), h = (0, o.getCookieValueByName)("UAGC"), [_, M] = (0, l.useState)("1" === (v = h) ? g.PASSED : "0" === v ? g.FAILED : g.NOT_SUBMITTED);
+          } = (0, c.useGtmTrack)(), h = (0, o.getCookieValueByName)("UAGC"), [_, M] = (0, d.useState)("1" === (v = h) ? g.PASSED : "0" === v ? g.FAILED : g.NOT_SUBMITTED);
           var v;
-          const [w, k] = (0, l.useState)(), I = (0, l.createRef)(), x = (0, l.createRef)(), D = (0, l.createRef)(), {
+          const [w, k] = (0, d.useState)(), I = (0, d.createRef)(), x = (0, d.createRef)(), D = (0, d.createRef)(), {
             style: j
           } = f;
-          return (0, l.useEffect)((() => {
+          return (0, d.useEffect)((() => {
             p({
               event: "age_gate_popup",
               element_placement: b.element_placement ?? ""
@@ -82,10 +82,10 @@ _global.SENTRY_RELEASE = {
               onSubmit: async e => {
                 e.preventDefault();
                 const t = new Date(D?.current?.value, I?.current?.value, x?.current?.value),
-                  l = (0, d.j)(new Date, {
+                  d = (0, l.j)(new Date, {
                     years: 150
                   }),
-                  c = (0, s.f)(t) && (0, n.d)(t, l);
+                  c = (0, s.f)(t) && (0, n.d)(t, d);
                 if (k(c), c) {
                   const e = (0, r.V)(new Date, t) >= a;
                   p(e ? {
@@ -96,8 +96,8 @@ _global.SENTRY_RELEASE = {
                     element_placement: b.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
-                  const l = e ? "1" : "0";
-                  (0, o.setCookieValue)("UAGC", l), M(l)
+                  const d = e ? "1" : "0";
+                  (0, o.setCookieValue)("UAGC", d), M(d)
                 }
               },
               "data-testid": "agegate-form",

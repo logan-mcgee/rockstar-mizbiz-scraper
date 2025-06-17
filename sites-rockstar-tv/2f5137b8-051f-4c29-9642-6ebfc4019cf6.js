@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
           return "morePrecision" === e.roundingType ? t.roundingPriority = "morePrecision" : "lessPrecision" === e.roundingType ? t.roundingPriority = "lessPrecision" : t.roundingPriority = "auto", t
         }
       });
-      var s = {
+      var c = {
         enumerable: !1,
         configurable: !0,
         get: function() {
@@ -125,14 +125,14 @@ _global.SENTRY_RELEASE = {
         }
       };
       try {
-        Object.defineProperty(s.get, "name", {
+        Object.defineProperty(c.get, "name", {
           configurable: !0,
           enumerable: !1,
           writable: !1,
           value: "get format"
         })
       } catch (e) {}
-      Object.defineProperty(a.NumberFormat.prototype, "format", s), (0, o.defineProperty)(a.NumberFormat, "supportedLocalesOf", {
+      Object.defineProperty(a.NumberFormat.prototype, "format", c), (0, o.defineProperty)(a.NumberFormat, "supportedLocalesOf", {
         value: function(e, t) {
           return (0, o.SupportedLocales)(a.NumberFormat.availableLocales, (0, o.CanonicalizeLocaleList)(e), t)
         }

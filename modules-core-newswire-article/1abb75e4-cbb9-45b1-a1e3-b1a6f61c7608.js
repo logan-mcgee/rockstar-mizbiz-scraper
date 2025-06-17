@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => _,
-        Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => c,
+        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         g = "Scarica",
         h = "Scarica",
         L = "Apri immagine in lightbox",
-        c = "Immagine lightbox",
-        f = "Testo alternativo: {alt}",
+        f = "Immagine lightbox",
+        c = "Testo alternativo: {alt}",
         m = {
           Lightbox_Close_Button_Label: a,
           Lightbox_Close_Button_Tooltip: _,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: c,
-          Lightbox_Dialog_Description: f
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: c
         }
     }
   }

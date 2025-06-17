@@ -40,20 +40,20 @@ _global.SENTRY_RELEASE = {
         s = r(29818),
         d = r(19202),
         l = r(27114),
-        i = r(72480),
-        u = r(74406),
-        c = r(45421),
+        c = r(72480),
+        i = r(74406),
+        u = r(45421),
         p = r(34902),
         f = r(36146),
         v = r(85100),
         g = r(21222),
         h = r(52806),
-        b = r(98463),
-        _ = r(19690),
+        _ = r(98463),
+        b = r(19690),
         y = r(25854),
         P = "Popover",
-        [w, m] = (0, s.A)(P, [c.Bk]),
-        C = (0, c.Bk)(),
+        [w, m] = (0, s.A)(P, [u.Bk]),
+        C = (0, u.Bk)(),
         [O, x] = w(P),
         M = e => {
           const {
@@ -63,18 +63,18 @@ _global.SENTRY_RELEASE = {
             defaultOpen: a,
             onOpenChange: s,
             modal: d = !1
-          } = e, l = C(o), i = t.useRef(null), [p, f] = t.useState(!1), [v, g] = (0, h.i)({
+          } = e, l = C(o), c = t.useRef(null), [p, f] = t.useState(!1), [v, g] = (0, h.i)({
             prop: n,
             defaultProp: a ?? !1,
             onChange: s,
             caller: P
           });
-          return (0, y.jsx)(c.bL, {
+          return (0, y.jsx)(u.bL, {
             ...l,
             children: (0, y.jsx)(O, {
               scope: o,
-              contentId: (0, u.useId)(),
-              triggerRef: i,
+              contentId: (0, i.useId)(),
+              triggerRef: c,
               open: v,
               onOpenChange: g,
               onOpenToggle: t.useCallback((() => g((e => !e))), [g]),
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
             onCustomAnchorAdd: d,
             onCustomAnchorRemove: l
           } = a;
-          return t.useEffect((() => (d(), () => l())), [d, l]), (0, y.jsx)(c.Mz, {
+          return t.useEffect((() => (d(), () => l())), [d, l]), (0, y.jsx)(u.Mz, {
             ...s,
             ...n,
             ref: o
@@ -108,7 +108,7 @@ _global.SENTRY_RELEASE = {
           const {
             __scopePopover: r,
             ...t
-          } = e, s = x(A, r), d = C(r), l = (0, a.s)(o, s.triggerRef), i = (0, y.jsx)(v.sG.button, {
+          } = e, s = x(A, r), d = C(r), l = (0, a.s)(o, s.triggerRef), c = (0, y.jsx)(v.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": s.open,
@@ -118,10 +118,10 @@ _global.SENTRY_RELEASE = {
             ref: l,
             onClick: (0, n.m)(e.onClick, s.onOpenToggle)
           });
-          return s.hasCustomAnchor ? i : (0, y.jsx)(c.Mz, {
+          return s.hasCustomAnchor ? c : (0, y.jsx)(u.Mz, {
             asChild: !0,
             ...d,
-            children: i
+            children: c
           })
         }));
       E.displayName = A;
@@ -178,8 +178,8 @@ _global.SENTRY_RELEASE = {
             l = t.useRef(!1);
           return t.useEffect((() => {
             const e = s.current;
-            if (e) return (0, b.Eq)(e)
-          }), []), (0, y.jsx)(_.RemoveScroll, {
+            if (e) return (0, _.Eq)(e)
+          }), []), (0, y.jsx)(b.RemoveScroll, {
             as: S,
             allowPinchZoom: !0,
             children: (0, y.jsx)(U, {
@@ -231,13 +231,13 @@ _global.SENTRY_RELEASE = {
             onOpenAutoFocus: n,
             onCloseAutoFocus: a,
             disableOutsidePointerEvents: s,
-            onEscapeKeyDown: u,
+            onEscapeKeyDown: i,
             onPointerDownOutside: p,
             onFocusOutside: f,
             onInteractOutside: v,
             ...g
-          } = e, h = x(T, r), b = C(r);
-          return (0, l.Oh)(), (0, y.jsx)(i.n, {
+          } = e, h = x(T, r), _ = C(r);
+          return (0, l.Oh)(), (0, y.jsx)(c.n, {
             asChild: !0,
             loop: !0,
             trapped: t,
@@ -247,15 +247,15 @@ _global.SENTRY_RELEASE = {
               asChild: !0,
               disableOutsidePointerEvents: s,
               onInteractOutside: v,
-              onEscapeKeyDown: u,
+              onEscapeKeyDown: i,
               onPointerDownOutside: p,
               onFocusOutside: f,
               onDismiss: () => h.onOpenChange(!1),
-              children: (0, y.jsx)(c.UC, {
+              children: (0, y.jsx)(u.UC, {
                 "data-state": z(h.open),
                 role: "dialog",
                 id: h.contentId,
-                ...b,
+                ..._,
                 ...g,
                 ref: o,
                 style: {
@@ -289,7 +289,7 @@ _global.SENTRY_RELEASE = {
           __scopePopover: r,
           ...t
         } = e, n = C(r);
-        return (0, y.jsx)(c.i3, {
+        return (0, y.jsx)(u.i3, {
           ...n,
           ...t,
           ref: o
@@ -324,23 +324,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function i(e, o, r) {
+      function c(e, o, r) {
         var t, a = {},
-          i = null,
-          u = null;
-        for (t in void 0 !== r && (i = "" + r), void 0 !== o.key && (i = "" + o.key), void 0 !== o.ref && (u = o.ref), o) s.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
+          c = null,
+          i = null;
+        for (t in void 0 !== r && (c = "" + r), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (i = o.ref), o) s.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
         if (e && e.defaultProps)
           for (t in o = e.defaultProps) void 0 === a[t] && (a[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
-          key: i,
-          ref: u,
+          key: c,
+          ref: i,
           props: a,
           _owner: d.current
         }
       }
-      o.Fragment = a, o.jsx = i, o.jsxs = i
+      o.Fragment = a, o.jsx = c, o.jsxs = c
     }
   }
 ]);

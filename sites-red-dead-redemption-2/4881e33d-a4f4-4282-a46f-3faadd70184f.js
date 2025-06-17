@@ -24,10 +24,10 @@ _global.SENTRY_RELEASE = {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var t = String(e),
-              d = t.split(/[ce]/),
-              l = d[1] || 0,
-              n = String(l ? Number(d[0]) * Math.pow(10, l) : t).split("."),
+            var d = String(e),
+              t = d.split(/[ce]/),
+              l = t[1] || 0,
+              n = String(l ? Number(t[0]) * Math.pow(10, l) : d).split("."),
               o = n[0],
               s = !n[1],
               r = o.slice(-6);

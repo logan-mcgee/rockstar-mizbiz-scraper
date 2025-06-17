@@ -26,14 +26,14 @@ _global.SENTRY_RELEASE = {
           s = n.getDefaultLocale,
           c = n.getInternalSlots,
           d = (0, l.CanonicalizeLocaleList)(t),
-          f = Object.create(null),
-          b = (0, l.CoerceOptionsToObject)(a),
+          b = Object.create(null),
+          f = (0, l.CoerceOptionsToObject)(a),
           g = c(e);
         g.initializedPluralRules = !0;
-        var p = (0, l.GetOption)(b, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        f.localeMatcher = p;
-        var y = (0, r.ResolveLocale)(o, d, f, i, u, s);
-        return g.locale = y.locale, g.type = (0, l.GetOption)(b, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, l.SetNumberFormatDigitOptions)(g, b, 0, 3, "standard"), e
+        var p = (0, l.GetOption)(f, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        b.localeMatcher = p;
+        var y = (0, r.ResolveLocale)(o, d, b, i, u, s);
+        return g.locale = y.locale, g.type = (0, l.GetOption)(f, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, l.SetNumberFormatDigitOptions)(g, f, 0, 3, "standard"), e
       };
       var l = a(64480),
         r = a(27353)

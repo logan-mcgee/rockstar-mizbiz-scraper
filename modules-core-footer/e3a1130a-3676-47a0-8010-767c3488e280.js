@@ -21,34 +21,34 @@ _global.SENTRY_RELEASE = {
     },
     41454: (e, r, t) => {
       var n = t(71127),
-        a = Symbol.for("react.element"),
-        o = Symbol.for("react.fragment"),
+        o = Symbol.for("react.element"),
+        a = Symbol.for("react.fragment"),
         l = Object.prototype.hasOwnProperty,
         f = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        u = {
+        c = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, r, t) {
-        var n, o = {},
-          s = null,
-          c = null;
-        for (n in void 0 !== t && (s = "" + t), void 0 !== r.key && (s = "" + r.key), void 0 !== r.ref && (c = r.ref), r) l.call(r, n) && !u.hasOwnProperty(n) && (o[n] = r[n]);
+      function u(e, r, t) {
+        var n, a = {},
+          u = null,
+          s = null;
+        for (n in void 0 !== t && (u = "" + t), void 0 !== r.key && (u = "" + r.key), void 0 !== r.ref && (s = r.ref), r) l.call(r, n) && !c.hasOwnProperty(n) && (a[n] = r[n]);
         if (e && e.defaultProps)
-          for (n in r = e.defaultProps) void 0 === o[n] && (o[n] = r[n]);
+          for (n in r = e.defaultProps) void 0 === a[n] && (a[n] = r[n]);
         return {
-          $$typeof: a,
+          $$typeof: o,
           type: e,
-          key: s,
-          ref: c,
-          props: o,
+          key: u,
+          ref: s,
+          props: a,
           _owner: f.current
         }
       }
-      r.Fragment = o, r.jsx = s, r.jsxs = s
+      r.Fragment = a, r.jsx = u, r.jsxs = u
     },
     98398: e => {
       var r = function(e) {
@@ -68,13 +68,13 @@ _global.SENTRY_RELEASE = {
         var t
       }
 
-      function a(e, r, t) {
+      function o(e, r, t) {
         return e.concat(r).map((function(e) {
           return n(e, t)
         }))
       }
 
-      function o(e) {
+      function a(e) {
         return Object.keys(e).concat(function(e) {
           return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(e).filter((function(r) {
             return Object.propertyIsEnumerable.call(e, r)
@@ -90,23 +90,23 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function f(e, t, u) {
-        (u = u || {}).arrayMerge = u.arrayMerge || a, u.isMergeableObject = u.isMergeableObject || r, u.cloneUnlessOtherwiseSpecified = n;
-        var s = Array.isArray(t);
-        return s === Array.isArray(e) ? s ? u.arrayMerge(e, t, u) : function(e, r, t) {
-          var a = {};
-          return t.isMergeableObject(e) && o(e).forEach((function(r) {
-            a[r] = n(e[r], t)
-          })), o(r).forEach((function(o) {
+      function f(e, t, c) {
+        (c = c || {}).arrayMerge = c.arrayMerge || o, c.isMergeableObject = c.isMergeableObject || r, c.cloneUnlessOtherwiseSpecified = n;
+        var u = Array.isArray(t);
+        return u === Array.isArray(e) ? u ? c.arrayMerge(e, t, c) : function(e, r, t) {
+          var o = {};
+          return t.isMergeableObject(e) && a(e).forEach((function(r) {
+            o[r] = n(e[r], t)
+          })), a(r).forEach((function(a) {
             (function(e, r) {
               return l(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, o) || (l(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
+            })(e, a) || (l(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
               if (!r.customMerge) return f;
               var t = r.customMerge(e);
               return "function" == typeof t ? t : f
-            }(o, t)(e[o], r[o], t) : a[o] = n(r[o], t))
-          })), a
-        }(e, t, u) : n(t, u)
+            }(a, t)(e[a], r[a], t) : o[a] = n(r[a], t))
+          })), o
+        }(e, t, c) : n(t, c)
       }
       f.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
@@ -114,8 +114,8 @@ _global.SENTRY_RELEASE = {
           return f(e, t, r)
         }), {})
       };
-      var u = f;
-      e.exports = u
+      var c = f;
+      e.exports = c
     }
   }
 ]);

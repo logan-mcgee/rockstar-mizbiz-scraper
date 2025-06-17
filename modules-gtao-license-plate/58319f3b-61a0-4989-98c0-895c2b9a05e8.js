@@ -27,9 +27,9 @@ _global.SENTRY_RELEASE = {
             var l = String(e).split("."),
               t = l[0],
               o = !l[1],
-              n = t.slice(-1),
-              d = t.slice(-2);
-            return a ? "other" : o && 1 == n && 11 != d ? "one" : o && n >= 2 && n <= 4 && (d < 12 || d > 14) ? "few" : o && 0 == n || o && n >= 5 && n <= 9 || o && d >= 11 && d <= 14 ? "many" : "other"
+              d = t.slice(-1),
+              n = t.slice(-2);
+            return a ? "other" : o && 1 == d && 11 != n ? "one" : o && d >= 2 && d <= 4 && (n < 12 || n > 14) ? "few" : o && 0 == d || o && d >= 5 && d <= 9 || o && n >= 11 && n <= 14 ? "many" : "other"
           }
         },
         locale: "ru"

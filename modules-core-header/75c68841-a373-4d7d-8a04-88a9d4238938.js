@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
@@ -29,18 +29,18 @@ _global.SENTRY_RELEASE = {
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
-        Lightbox_Zoom_Out_Button_Label: () => i,
-        Lightbox_Zoom_Out_Button__Tooltip: () => d,
+        Lightbox_Zoom_Out_Button_Label: () => d,
+        Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => x
+        default: () => p
       });
       var _ = "關閉燈箱",
         a = "按 {shortcut}",
         l = "放大",
         n = "按 {shortcut}",
-        i = "縮小",
-        d = "按 {shortcut}",
+        d = "縮小",
+        i = "按 {shortcut}",
         b = "重設",
         s = "按 {shortcut}",
         u = "縮放比例",
@@ -49,14 +49,14 @@ _global.SENTRY_RELEASE = {
         h = "下載",
         L = "在燈箱中開啟圖片",
         f = "圖片燈箱",
-        p = "圖片替代文字：{alt}",
-        x = {
+        c = "圖片替代文字：{alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: n,
-          Lightbox_Zoom_Out_Button_Label: i,
-          Lightbox_Zoom_Out_Button__Tooltip: d,
+          Lightbox_Zoom_Out_Button_Label: d,
+          Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: u,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

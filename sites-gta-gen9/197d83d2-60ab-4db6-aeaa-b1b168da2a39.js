@@ -170,10 +170,10 @@ _global.SENTRY_RELEASE = {
           width: "auto",
           height: "auto"
         },
-        w = function(t, e, i) {
+        b = function(t, e, i) {
           return Math.max(Math.min(t, i), e)
         },
-        b = function(t, e, i) {
+        w = function(t, e, i) {
           var s = Math.round(t / e);
           return s * e + i * (s - 1)
         },
@@ -373,9 +373,9 @@ _global.SENTRY_RELEASE = {
               c = d.lockAspectRatioExtraWidth,
               f = p.width,
               g = p.height,
-              w = u || 0,
-              b = c || 0;
-            return v("right", h) && (f = p.width + (t - p.x) * n / s, l && (g = (f - b) / this.ratio + w)), v("left", h) && (f = p.width - (t - p.x) * n / s, l && (g = (f - b) / this.ratio + w)), v("bottom", h) && (g = p.height + (e - p.y) * r / s, l && (f = (g - w) * this.ratio + b)), v("top", h) && (g = p.height - (e - p.y) * r / s, l && (f = (g - w) * this.ratio + b)), {
+              b = u || 0,
+              w = c || 0;
+            return v("right", h) && (f = p.width + (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("left", h) && (f = p.width - (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("bottom", h) && (g = p.height + (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), v("top", h) && (g = p.height - (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), {
               newWidth: f,
               newHeight: g
             }
@@ -393,14 +393,14 @@ _global.SENTRY_RELEASE = {
             if (n) {
               var f = (d - u) * this.ratio + c,
                 g = (l - u) * this.ratio + c,
-                b = (h - c) / this.ratio + u,
+                w = (h - c) / this.ratio + u,
                 v = (p - c) / this.ratio + u,
                 y = Math.max(h, f),
                 m = Math.min(p, g),
-                z = Math.max(d, b),
+                z = Math.max(d, w),
                 x = Math.min(l, v);
-              t = w(t, y, m), e = w(e, z, x)
-            } else t = w(t, h, p), e = w(e, d, l);
+              t = b(t, y, m), e = b(e, z, x)
+            } else t = b(t, h, p), e = b(e, d, l);
             return {
               newWidth: t,
               newHeight: e
@@ -482,7 +482,7 @@ _global.SENTRY_RELEASE = {
                 c = d.width,
                 f = d.height,
                 g = this.getParentSize(),
-                w = function(t, e, i, s, o, n, r) {
+                b = function(t, e, i, s, o, n, r) {
                   return s = x(s, t.width, e, i), o = x(o, t.height, e, i), n = x(n, t.width, e, i), r = x(r, t.height, e, i), {
                     maxWidth: void 0 === s ? void 0 : Number(s),
                     maxHeight: void 0 === o ? void 0 : Number(o),
@@ -490,7 +490,7 @@ _global.SENTRY_RELEASE = {
                     minHeight: void 0 === r ? void 0 : Number(r)
                   }
                 }(g, this.window.innerWidth, this.window.innerHeight, s, o, n, a);
-              s = w.maxWidth, o = w.maxHeight, n = w.minWidth, a = w.minHeight;
+              s = b.maxWidth, o = b.maxHeight, n = b.minWidth, a = b.minHeight;
               var v = this.calculateNewSizeFromDirection(h, p),
                 z = v.newHeight,
                 S = v.newWidth,
@@ -504,8 +504,8 @@ _global.SENTRY_RELEASE = {
                 height: a
               });
               if (S = M.newWidth, z = M.newHeight, this.props.grid) {
-                var W = b(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
-                  E = b(z, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
+                var W = w(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
+                  E = w(z, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
                   _ = this.props.snapGap || 0;
                 S = 0 === _ || Math.abs(W - S) <= _ ? W : S, z = 0 === _ || Math.abs(E - z) <= _ ? E : z
               }

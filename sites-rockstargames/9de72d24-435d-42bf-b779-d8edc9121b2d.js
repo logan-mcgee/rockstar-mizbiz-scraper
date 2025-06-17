@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
     },
     41454: (e, a, t) => {
       var o = t(62229),
-        d = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
+        n = Symbol.for("react.element"),
+        d = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
         l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
@@ -32,31 +32,31 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function f(e, a, t) {
-        var o, n = {},
-          f = null,
-          i = null;
-        for (o in void 0 !== t && (f = "" + t), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (n[o] = a[o]);
+      function i(e, a, t) {
+        var o, d = {},
+          i = null,
+          f = null;
+        for (o in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (d[o] = a[o]);
         if (e && e.defaultProps)
-          for (o in a = e.defaultProps) void 0 === n[o] && (n[o] = a[o]);
+          for (o in a = e.defaultProps) void 0 === d[o] && (d[o] = a[o]);
         return {
-          $$typeof: d,
+          $$typeof: n,
           type: e,
-          key: f,
-          ref: i,
-          props: n,
+          key: i,
+          ref: f,
+          props: d,
           _owner: l.current
         }
       }
-      a.Fragment = n, a.jsx = f, a.jsxs = f
+      a.Fragment = d, a.jsx = i, a.jsxs = i
     },
     68159: (e, a, t) => {
       t.r(a), t.d(a, {
         default: () => r
       });
       var o = t(62229),
-        d = t(9623),
-        n = t(25854);
+        n = t(9623),
+        d = t(25854);
       const r = e => {
         let {
           basename: a,
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
             location: e,
             action: a
           })
-        }))), [r]), (0, n.jsx)(d.Router, {
+        }))), [r]), (0, d.jsx)(n.Router, {
           basename: a,
           location: l.location,
           navigationType: l.action,

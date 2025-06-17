@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
       var o = i(2229),
         n = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var o, t = {},
           l = null,
           f = null;
-        for (o in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, o) && !d.hasOwnProperty(o) && (t[o] = a[o]);
+        for (o in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (t[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: l,
           ref: f,
           props: t,
-          _owner: s.current
+          _owner: d.current
         }
       }
       a.jsx = t, a.jsxs = t
@@ -83,14 +83,14 @@ _global.SENTRY_RELEASE = {
         videoDesktop: "rockstargames-modules-core-gif-viewereb026b8ffe62b23b039f9a358c313b09",
         mutable: "rockstargames-modules-core-gif-viewera093729df8a4878dc8a2f4ff1af1eada"
       };
-      var s = i(4235),
-        d = i(5854);
+      var d = i(4235),
+        s = i(5854);
       const t = e => {
           let {
             hashes: a,
             hover: i,
             loop: n,
-            sound: s
+            sound: d
           } = e;
           const {
             desktop: t = null,
@@ -99,20 +99,20 @@ _global.SENTRY_RELEASE = {
             autoPlay: !i,
             hover: i,
             loop: n,
-            sound: s,
+            sound: d,
             muted: c
           };
-          return (0, d.jsxs)("div", {
+          return (0, s.jsxs)("div", {
             onClick: () => u(!c),
-            children: [t && (0, d.jsx)(l, {
+            children: [t && (0, s.jsx)(l, {
               className: [f ? r.hiddenMobile : "", r.videoDesktop].join(" "),
               hash: t,
               ...m
-            }), f && (0, d.jsx)(l, {
+            }), f && (0, s.jsx)(l, {
               className: [t ? r.hiddenLarge : "", r.videoMobile].join(" "),
               hash: f,
               ...m
-            }), m.sound ? (0, d.jsx)("div", {
+            }), m.sound ? (0, s.jsx)("div", {
               className: [r.muteBtn, c ? "" : r.unMuted].join(" ")
             }) : ""]
           })
@@ -129,16 +129,16 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             data: m
-          } = (0, n.useQuery)(s.GifInfo, {
+          } = (0, n.useQuery)(d.GifInfo, {
             variables: {
               hash: i
             }
           }), b = (0, o.useRef)();
-          return m ? (0, d.jsx)("div", {
+          return m ? (0, s.jsx)("div", {
             className: [a, r.video, u ? r.mutable : ""].join(" "),
             onMouseEnter: () => t && void b.current.play(),
             onMouseLeave: () => t && (b.current.pause(), void(b.current.currentTime = 0)),
-            children: (0, d.jsx)("video", {
+            children: (0, s.jsx)("video", {
               ref: b,
               src: m.gifInfo.file,
               autoPlay: l,
@@ -154,7 +154,7 @@ _global.SENTRY_RELEASE = {
             style: i,
             title: o,
             caption: n,
-            hero: s = !1,
+            hero: d = !1,
             loop: l = !0,
             sound: f = !1,
             hover: c = !1
@@ -163,16 +163,16 @@ _global.SENTRY_RELEASE = {
           const u = "object" == typeof a ? a : Object.keys(a).map((e => ({
             [e]: a[e]
           })));
-          return (0, d.jsxs)("figure", {
-            className: `${r.gifWrapper} ${s?r.gifWrapperHero:""}`,
+          return (0, s.jsxs)("figure", {
+            className: `${r.gifWrapper} ${d?r.gifWrapperHero:""}`,
             style: i,
-            children: [(0, d.jsx)(t, {
+            children: [(0, s.jsx)(t, {
               hashes: u,
               hover: c,
               loop: l,
               sound: f,
               title: o ?? "R* Games"
-            }), n && (0, d.jsx)("figcaption", {
+            }), n && (0, s.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
                 __html: n
               }
@@ -389,19 +389,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
         var r = o[a] || new Set,
-          s = new Set,
-          d = new Set;
+          d = new Set,
+          s = new Set;
         for (r.forEach((function(e) {
-            d.add(e)
-          })); d.size > 0;) {
-          var t = d;
-          d = new Set, t.forEach((function(e) {
-            s.has(e) || (s.add(e), (o[e] || new Set).forEach((function(e) {
-              d.add(e)
+            s.add(e)
+          })); s.size > 0;) {
+          var t = s;
+          s = new Set, t.forEach((function(e) {
+            d.has(e) || (d.add(e), (o[e] || new Set).forEach((function(e) {
+              s.add(e)
             })))
           }))
         }
-        return s.forEach((function(a) {
+        return d.forEach((function(a) {
           var o = n(e, a);
           o && i.definitions.push(o)
         })), i
@@ -416,22 +416,22 @@ _global.SENTRY_RELEASE = {
     5670: (e, a, i) => {
       "use strict";
       i.r(a), i.d(a, {
-        default: () => s
+        default: () => d
       });
       var o = i(9623),
         n = i(1936),
         r = i(5854);
-      const s = () => {
+      const d = () => {
         const {
           hashId: e
-        } = (0, o.useParams)(), [a] = (0, o.useSearchParams)(), i = !("false" === a.get("loop")), s = "true" === a.get("sound"), d = a.has("hover");
+        } = (0, o.useParams)(), [a] = (0, o.useSearchParams)(), i = !("false" === a.get("loop")), d = "true" === a.get("sound"), s = a.has("hover");
         return (0, r.jsx)(n.A, {
           hash: {
             desktop: e
           },
-          hover: d,
+          hover: s,
           loop: i,
-          sound: s
+          sound: d
         })
       }
     },

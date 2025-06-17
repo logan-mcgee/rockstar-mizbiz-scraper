@@ -26,7 +26,7 @@ _global.SENTRY_RELEASE = {
         if (e === u) return !0;
         if (e && u && "object" == typeof e && "object" == typeof u) {
           if (e.constructor !== u.constructor) return !1;
-          var i, f, s, l;
+          var i, f, s, c;
           if (Array.isArray(e)) {
             if ((i = e.length) != u.length) return !1;
             for (f = i; 0 != f--;)
@@ -35,15 +35,15 @@ _global.SENTRY_RELEASE = {
           }
           if (r && e instanceof Map && u instanceof Map) {
             if (e.size !== u.size) return !1;
-            for (l = e.entries(); !(f = l.next()).done;)
+            for (c = e.entries(); !(f = c.next()).done;)
               if (!u.has(f.value[0])) return !1;
-            for (l = e.entries(); !(f = l.next()).done;)
+            for (c = e.entries(); !(f = c.next()).done;)
               if (!a(f.value[1], u.get(f.value[0]))) return !1;
             return !0
           }
           if (n && e instanceof Set && u instanceof Set) {
             if (e.size !== u.size) return !1;
-            for (l = e.entries(); !(f = l.next()).done;)
+            for (c = e.entries(); !(f = c.next()).done;)
               if (!u.has(f.value[0])) return !1;
             return !0
           }
@@ -124,14 +124,14 @@ _global.SENTRY_RELEASE = {
           if ("function" == typeof e) return f(e, t);
           null != e && (e.current = t)
         },
-        l = function(e) {
+        c = function(e) {
           return e.reduce((function(e, t) {
             var r = t[0],
               n = t[1];
             return e[r] = n, e
           }), {})
         },
-        c = "undefined" != typeof window && window.document && window.document.createElement ? n.useLayoutEffect : n.useEffect,
+        l = "undefined" != typeof window && window.document && window.document.createElement ? n.useLayoutEffect : n.useEffect,
         d = r(44853),
         p = r(9005),
         y = r(28901),
@@ -171,10 +171,10 @@ _global.SENTRY_RELEASE = {
                     r = Object.keys(t.elements);
                   d.flushSync((function() {
                     f({
-                      styles: l(r.map((function(e) {
+                      styles: c(r.map((function(e) {
                         return [e, t.styles[e] || {}]
                       }))),
-                      attributes: l(r.map((function(e) {
+                      attributes: c(r.map((function(e) {
                         return [e, t.attributes[e]]
                       })))
                     })
@@ -196,9 +196,9 @@ _global.SENTRY_RELEASE = {
               return b()(o.current, e) ? o.current || e : (o.current = e, e)
             }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
             g = n.useRef();
-          return c((function() {
+          return l((function() {
             g.current && g.current.setOptions(y)
-          }), [y]), c((function() {
+          }), [y]), l((function() {
             if (null != e && null != t) {
               var n = (r.createPopper || p.createPopper)(e, t, y);
               return g.current = n,
@@ -226,8 +226,8 @@ _global.SENTRY_RELEASE = {
           a = e.strategy,
           u = void 0 === a ? "absolute" : a,
           f = e.modifiers,
-          l = void 0 === f ? w : f,
-          c = e.referenceElement,
+          c = void 0 === f ? w : f,
+          l = e.referenceElement,
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
@@ -246,7 +246,7 @@ _global.SENTRY_RELEASE = {
               placement: r,
               strategy: u,
               onFirstUpdate: d,
-              modifiers: [].concat(l, [{
+              modifiers: [].concat(c, [{
                 name: "arrow",
                 enabled: null != S,
                 options: {
@@ -254,8 +254,8 @@ _global.SENTRY_RELEASE = {
                 }
               }])
             }
-          }), [r, u, d, l, S]),
-          P = g(c || b, M, O),
+          }), [r, u, d, c, S]),
+          P = g(l || b, M, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,

@@ -26,10 +26,10 @@ _global.SENTRY_RELEASE = {
           fn: function(e, a) {
             var t = String(e).split("."),
               l = t[0],
-              d = !t[1],
-              n = l.slice(-1),
+              n = !t[1],
+              d = l.slice(-1),
               o = l.slice(-2);
-            return a ? "other" : 1 == e && d ? "one" : d && n >= 2 && n <= 4 && (o < 12 || o > 14) ? "few" : d && 1 != l && (0 == n || 1 == n) || d && n >= 5 && n <= 9 || d && o >= 12 && o <= 14 ? "many" : "other"
+            return a ? "other" : 1 == e && n ? "one" : n && d >= 2 && d <= 4 && (o < 12 || o > 14) ? "few" : n && 1 != l && (0 == d || 1 == d) || n && d >= 5 && d <= 9 || n && o >= 12 && o <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

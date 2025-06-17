@@ -78,9 +78,9 @@ _global.SENTRY_RELEASE = {
         createIntl: () => s.E,
         defineMessages: () => n.YK,
         englishLocale: () => m,
-        getCookieValueByName: () => b,
+        getCookieValueByName: () => f,
         getLocale: () => _,
-        localeCookieHandler: () => f,
+        localeCookieHandler: () => p,
         locales: () => w,
         onLanguageChange: () => D,
         splitLocale: () => E,
@@ -98,22 +98,22 @@ _global.SENTRY_RELEASE = {
       const c = (e, o) => {
           e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
-        b = e => {
+        f = e => {
           const o = document.cookie.split("; "),
             t = `${e}=`,
             n = o.find((e => e.startsWith(t))),
             r = n?.substring(t.length, n.length);
           return r
         },
-        f = function(e, o) {
+        p = function(e, o) {
           let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-          const n = b(e);
+          const n = f(e);
           return n && !t || c(e, o), [n, (r = e, e => {
             c(r, e)
           })];
           var r
         },
-        p = [{
+        b = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -192,9 +192,9 @@ _global.SENTRY_RELEASE = {
           support: "zh",
           iso: "zh-CN"
         }],
-        m = p[0],
+        m = b[0],
         h = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        w = p,
+        w = b,
         _ = () => {
           const {
             location: e
@@ -209,9 +209,9 @@ _global.SENTRY_RELEASE = {
           })(e), r = m;
           let s = r;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = b(a);
+            i = f(a);
           s = o.currentSite?.site === d.C.www ? w.find((e => e.subdomaincom === n)) || w.find((e => e.subdomaincom === t)) || r : w.find((e => e.iso === i)) || r;
-          const [l, u] = f(a, s.iso);
+          const [l, u] = p(a, s.iso);
           return [s, u]
         };
       var g = t(56481);

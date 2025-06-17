@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => x
+        default: () => c
       });
       var _ = "關閉燈箱",
         a = "按 {shortcut}",
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
         h = "在燈箱中開啟圖片",
         L = "圖片燈箱",
         p = "圖片替代文字：{alt}",
-        x = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,

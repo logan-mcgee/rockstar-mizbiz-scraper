@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => x
+        default: () => p
       });
       var _ = "라이트박스 닫기",
         a = "{shortcut} 누르기",
@@ -46,11 +46,11 @@ _global.SENTRY_RELEASE = {
         u = "줌 레벨",
         g = "{zoom}%",
         r = "다운로드",
-        h = "다운로드",
-        f = "라이트박스에서 이미지 열기",
+        f = "다운로드",
+        h = "라이트박스에서 이미지 열기",
         L = "라이트박스 이미지",
-        p = "대체 문구: {alt}",
-        x = {
+        c = "대체 문구: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: h,
           Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

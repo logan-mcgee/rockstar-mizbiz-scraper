@@ -1,8 +1,8 @@
 ! function() {
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      e = (new o.Error).stack;
-    e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "8d5080c8-6030-40e5-a792-101a2ecebe10", o._sentryDebugIdIdentifier = "sentry-dbid-8d5080c8-6030-40e5-a792-101a2ecebe10")
+      t = (new o.Error).stack;
+    t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "8d5080c8-6030-40e5-a792-101a2ecebe10", o._sentryDebugIdIdentifier = "sentry-dbid-8d5080c8-6030-40e5-a792-101a2ecebe10")
   } catch (o) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
@@ -16,15 +16,15 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [3672], {
-    21291: (o, e, t) => {
-      t.r(e), t.d(e, {
+    21291: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => a,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Dialog_Description: () => l,
         Lightbox_Dialog_Title: () => i,
         Lightbox_Download_Button_Label: () => n,
-        Lightbox_Download_Button_Tooltip: () => d,
-        Lightbox_Open_Button_Label: () => b,
+        Lightbox_Download_Button_Tooltip: () => b,
+        Lightbox_Open_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
         Lightbox_Zoom_In_Button_Label: () => g,
@@ -36,12 +36,12 @@ _global.SENTRY_RELEASE = {
         default: () => p
       });
       var _ = "Close lightbox",
-        l = "Press {shortcut}",
-        a = "Alt text: {alt}",
+        a = "Press {shortcut}",
+        l = "Alt text: {alt}",
         i = "Image lightbox",
         n = "Download",
-        d = "Download",
-        b = "Open image in lightbox",
+        b = "Download",
+        d = "Open image in lightbox",
         s = "Reset",
         u = "Press {shortcut}",
         g = "Zoom in",
@@ -52,12 +52,12 @@ _global.SENTRY_RELEASE = {
         c = "{zoom}%",
         p = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Dialog_Description: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Dialog_Description: l,
           Lightbox_Dialog_Title: i,
           Lightbox_Download_Button_Label: n,
-          Lightbox_Download_Button_Tooltip: d,
-          Lightbox_Open_Button_Label: b,
+          Lightbox_Download_Button_Tooltip: b,
+          Lightbox_Open_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_In_Button_Label: g,

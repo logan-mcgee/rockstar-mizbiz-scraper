@@ -20,9 +20,9 @@ _global.SENTRY_RELEASE = {
       var t = "undefined" != typeof Element,
         r = "function" == typeof Map,
         n = "function" == typeof Set,
-        a = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
+        o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
 
-      function o(e, u) {
+      function a(e, u) {
         if (e === u) return !0;
         if (e && u && "object" == typeof e && "object" == typeof u) {
           if (e.constructor !== u.constructor) return !1;
@@ -30,7 +30,7 @@ _global.SENTRY_RELEASE = {
           if (Array.isArray(e)) {
             if ((f = e.length) != u.length) return !1;
             for (i = f; 0 != i--;)
-              if (!o(e[i], u[i])) return !1;
+              if (!a(e[i], u[i])) return !1;
             return !0
           }
           if (r && e instanceof Map && u instanceof Map) {
@@ -38,7 +38,7 @@ _global.SENTRY_RELEASE = {
             for (l = e.entries(); !(i = l.next()).done;)
               if (!u.has(i.value[0])) return !1;
             for (l = e.entries(); !(i = l.next()).done;)
-              if (!o(i.value[1], u.get(i.value[0]))) return !1;
+              if (!a(i.value[1], u.get(i.value[0]))) return !1;
             return !0
           }
           if (n && e instanceof Set && u instanceof Set) {
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
               if (!u.has(i.value[0])) return !1;
             return !0
           }
-          if (a && ArrayBuffer.isView(e) && ArrayBuffer.isView(u)) {
+          if (o && ArrayBuffer.isView(e) && ArrayBuffer.isView(u)) {
             if ((f = e.length) != u.length) return !1;
             for (i = f; 0 != i--;)
               if (e[i] !== u[i]) return !1;
@@ -61,14 +61,14 @@ _global.SENTRY_RELEASE = {
             if (!Object.prototype.hasOwnProperty.call(u, s[i])) return !1;
           if (t && e instanceof Element) return !1;
           for (i = f; 0 != i--;)
-            if (("_owner" !== s[i] && "__v" !== s[i] && "__o" !== s[i] || !e.$$typeof) && !o(e[s[i]], u[s[i]])) return !1;
+            if (("_owner" !== s[i] && "__v" !== s[i] && "__o" !== s[i] || !e.$$typeof) && !a(e[s[i]], u[s[i]])) return !1;
           return !0
         }
         return e != e && u != u
       }
       e.exports = function(e, t) {
         try {
-          return o(e, t)
+          return a(e, t)
         } catch (e) {
           if ((e.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
           throw e
@@ -88,8 +88,8 @@ _global.SENTRY_RELEASE = {
         usePopper: () => g
       });
       var n = r(71127),
-        a = n.createContext(),
-        o = n.createContext();
+        o = n.createContext(),
+        a = n.createContext();
 
       function u(e) {
         var t = e.children,
@@ -105,9 +105,9 @@ _global.SENTRY_RELEASE = {
         var s = n.useCallback((function(e) {
           i.current || f(e)
         }), []);
-        return n.createElement(a.Provider, {
+        return n.createElement(o.Provider, {
           value: u
-        }, n.createElement(o.Provider, {
+        }, n.createElement(a.Provider, {
           value: s
         }, t))
       }
@@ -139,8 +139,8 @@ _global.SENTRY_RELEASE = {
         m = [],
         g = function(e, t, r) {
           void 0 === r && (r = {});
-          var a = n.useRef(null),
-            o = {
+          var o = n.useRef(null),
+            a = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
@@ -149,7 +149,7 @@ _global.SENTRY_RELEASE = {
             u = n.useState({
               styles: {
                 popper: {
-                  position: o.strategy,
+                  position: a.strategy,
                   left: "0",
                   top: "0"
                 },
@@ -185,16 +185,16 @@ _global.SENTRY_RELEASE = {
             }), []),
             y = n.useMemo((function() {
               var e = {
-                onFirstUpdate: o.onFirstUpdate,
-                placement: o.placement,
-                strategy: o.strategy,
-                modifiers: [].concat(o.modifiers, [s, {
+                onFirstUpdate: a.onFirstUpdate,
+                placement: a.placement,
+                strategy: a.strategy,
+                modifiers: [].concat(a.modifiers, [s, {
                   name: "applyStyles",
                   enabled: !1
                 }])
               };
-              return b()(a.current, e) ? a.current || e : (a.current = e, e)
-            }), [o.onFirstUpdate, o.placement, o.strategy, o.modifiers, s]),
+              return b()(o.current, e) ? o.current || e : (o.current = e, e)
+            }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
             g = n.useRef();
           return c((function() {
             g.current && g.current.setOptions(y)
@@ -223,15 +223,15 @@ _global.SENTRY_RELEASE = {
       function M(e) {
         var t = e.placement,
           r = void 0 === t ? "bottom" : t,
-          o = e.strategy,
-          u = void 0 === o ? "absolute" : o,
+          a = e.strategy,
+          u = void 0 === a ? "absolute" : a,
           i = e.modifiers,
           l = void 0 === i ? w : i,
           c = e.referenceElement,
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          b = n.useContext(a),
+          b = n.useContext(o),
           m = n.useState(null),
           M = m[0],
           _ = m[1],
@@ -283,17 +283,17 @@ _global.SENTRY_RELEASE = {
       function S(e) {
         var t = e.children,
           r = e.innerRef,
-          a = n.useContext(o),
+          o = n.useContext(a),
           u = n.useCallback((function(e) {
-            s(r, e), i(a, e)
-          }), [r, a]);
+            s(r, e), i(o, e)
+          }), [r, o]);
         return n.useEffect((function() {
           return function() {
             return s(r, null)
           }
         }), []), n.useEffect((function() {
-          E()(Boolean(a), "`Reference` should not be used outside of a `Manager` component.")
-        }), [a]), f(t)({
+          E()(Boolean(o), "`Reference` should not be used outside of a `Manager` component.")
+        }), [o]), f(t)({
           ref: u
         })
       }

@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         default: () => l
       });
       var o = t(62229),
-        d = t(9623),
-        n = t(25854);
+        n = t(9623),
+        d = t(25854);
       const l = e => {
         let {
           basename: a,
@@ -38,7 +38,7 @@ _global.SENTRY_RELEASE = {
             location: e,
             action: a
           })
-        }))), [l]), (0, n.jsx)(d.Router, {
+        }))), [l]), (0, d.jsx)(n.Router, {
           basename: a,
           location: s.location,
           navigationType: s.action,

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      e = (new o.Error).stack;
-    e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "b3c11cf0-7db8-4386-aee4-4ecd338b51ea", o._sentryDebugIdIdentifier = "sentry-dbid-b3c11cf0-7db8-4386-aee4-4ecd338b51ea")
+      t = (new o.Error).stack;
+    t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "b3c11cf0-7db8-4386-aee4-4ecd338b51ea", o._sentryDebugIdIdentifier = "sentry-dbid-b3c11cf0-7db8-4386-aee4-4ecd338b51ea")
   } catch (o) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
@@ -16,15 +16,15 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [823], {
-    823: (o, e, t) => {
-      t.r(e), t.d(e, {
+    823: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -46,8 +46,8 @@ _global.SENTRY_RELEASE = {
         u = "Zoomstufe",
         r = "{zoom} %",
         g = "Herunterladen",
-        f = "Herunterladen",
-        h = "Bild in Lightbox öffnen",
+        h = "Herunterladen",
+        f = "Bild in Lightbox öffnen",
         L = "Bild im Großformat",
         c = "Alternativtext: {alt}",
         p = {
@@ -62,8 +62,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: g,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: c
         }

@@ -120,14 +120,14 @@ _global.SENTRY_RELEASE = {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var s = (0, n.SingularRelativeTimeUnit)(a),
           u = i(e),
-          c = u.fields,
-          d = u.style,
+          d = u.fields,
+          c = u.style,
           f = u.numeric,
           b = u.pluralRules,
           y = u.numberFormat,
           v = s;
-        "short" === d ? v = "".concat(s, "-short") : "narrow" === d && (v = "".concat(s, "-narrow")), v in c || (v = s);
-        var m = c[v];
+        "short" === c ? v = "".concat(s, "-short") : "narrow" === c && (v = "".concat(s, "-narrow")), v in d || (v = s);
+        var m = d[v];
         if ("auto" === f && (0, r.ToString)(t) in m) return [{
           type: "literal",
           value: m[(0, r.ToString)(t)]
@@ -181,10 +181,10 @@ _global.SENTRY_RELEASE = {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var s = 0, u = a; s < u.length; s++) {
-              var c = u[s];
+              var d = u[s];
               n.push({
-                type: c.type,
-                value: c.value,
+                type: d.type,
+                value: d.value,
                 unit: t
               })
             }
@@ -201,8 +201,8 @@ _global.SENTRY_RELEASE = {
         var i = l.getInternalSlots,
           s = l.availableLocales,
           u = l.relevantExtensionKeys,
-          c = l.localeData,
-          d = l.getDefaultLocale,
+          d = l.localeData,
+          c = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
         var b = (0, r.CanonicalizeLocaleList)(t),
@@ -213,11 +213,11 @@ _global.SENTRY_RELEASE = {
         var p = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== p && !o.test(p)) throw new RangeError("Invalid numbering system ".concat(p));
         y.nu = p;
-        var g = (0, n.ResolveLocale)(s, b, y, u, c, d),
+        var g = (0, n.ResolveLocale)(s, b, y, u, d, c),
           w = g.locale,
           h = g.nu;
         f.locale = w, f.style = (0, r.GetOption)(v, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(v, "numeric", "string", ["always", "auto"], "always");
-        var _ = c[g.dataLocale];
+        var _ = d[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(64480),

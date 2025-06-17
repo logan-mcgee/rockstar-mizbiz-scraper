@@ -18,9 +18,9 @@ _global.SENTRY_RELEASE = {
   [7353], {
     27353: (e, d, a) => {
       a.r(d), a.d(d, {
-        LookupSupportedLocales: () => f,
+        LookupSupportedLocales: () => m,
         ResolveLocale: () => g,
-        match: () => m
+        match: () => f
       });
       var n = a(23514),
         r = {
@@ -2460,7 +2460,7 @@ _global.SENTRY_RELEASE = {
         });
         var o, c, y = u.locale,
           g = r[y],
-          f = {
+          m = {
             locale: "en",
             dataLocale: y
           };
@@ -2482,7 +2482,7 @@ _global.SENTRY_RELEASE = {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var m = [], S = function(e) {
+        for (var f = [], S = function(e) {
             var d = null !== (i = null == g ? void 0 : g[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
@@ -2502,9 +2502,9 @@ _global.SENTRY_RELEASE = {
               })
             }
             var u, o, y = a[e];
-            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && m.push(r), f[e] = n
+            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && f.push(r), m[e] = n
           }, L = 0, G = n; L < G.length; L++) S(G[L]);
-        return m.length > 0 && (y = function(e, d, a) {
+        return f.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", r = 0, _ = []; r < _.length; r++) {
             n += "-".concat(_[r])
@@ -2518,10 +2518,10 @@ _global.SENTRY_RELEASE = {
           if ("-u" === n) return l(e);
           var y = e.indexOf("-x-");
           return l(-1 === y ? e + n : e.slice(0, y) + n + e.slice(y))
-        }(y, 0, m)), f.locale = y, f
+        }(y, 0, f)), m.locale = y, m
       }
 
-      function f(e, d) {
+      function m(e, d) {
         for (var a = [], n = 0, r = d; n < r.length; n++) {
           var _ = M(e, r[n].replace(t, ""));
           _ && a.push(_)
@@ -2529,7 +2529,7 @@ _global.SENTRY_RELEASE = {
         return a
       }
 
-      function m(e, d, a, n) {
+      function f(e, d, a, n) {
         return g(d, (r = e, Intl.getCanonicalLocales(r)), {
           localeMatcher: (null == n ? void 0 : n.algorithm) || "best fit"
         }, [], {}, (function() {

@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       t.r(a), t.d(a, {
         default: () => l
       });
-      var d = t(62229),
-        s = t(9623),
+      var s = t(62229),
+        d = t(9623),
         o = t(2918);
       const l = () => {
         const {
@@ -32,10 +32,10 @@ _global.SENTRY_RELEASE = {
           accountSynced: l
         } = e ?? {}, {
           setCharactersNeeded: n
-        } = (0, o.useRockstarUserState)(), r = (0, s.useNavigate)();
-        return (0, d.useLayoutEffect)((() => (n("gtao"), () => {
+        } = (0, o.useRockstarUserState)(), r = (0, d.useNavigate)();
+        return (0, s.useLayoutEffect)((() => (n("gtao"), () => {
           n(null)
-        })), []), (0, d.useEffect)((() => {
+        })), []), (0, s.useEffect)((() => {
           !1 !== a ? l && r(t ? "./benefits" : "./join", {
             replace: !0
           }) : r("./join", {

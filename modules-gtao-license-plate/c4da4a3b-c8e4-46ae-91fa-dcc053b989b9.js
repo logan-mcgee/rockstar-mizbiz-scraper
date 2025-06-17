@@ -1,8 +1,8 @@
 ! function() {
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-      t = (new o.Error).stack;
-    t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "c4da4a3b-c8e4-46ae-91fa-dcc053b989b9", o._sentryDebugIdIdentifier = "sentry-dbid-c4da4a3b-c8e4-46ae-91fa-dcc053b989b9")
+      e = (new o.Error).stack;
+    e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "c4da4a3b-c8e4-46ae-91fa-dcc053b989b9", o._sentryDebugIdIdentifier = "sentry-dbid-c4da4a3b-c8e4-46ae-91fa-dcc053b989b9")
   } catch (o) {}
 }();
 var _sentryModuleMetadataGlobal = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [4684], {
-    54684: (o, t, e) => {
-      e.r(t), e.d(t, {
+    54684: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => _,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         u = "Descargar",
         h = "Descargar",
         L = "Abrir imagen",
-        f = "Imagen",
-        c = "Texto alt: {alt}",
+        c = "Imagen",
+        f = "Texto alt: {alt}",
         p = {
           Lightbox_Close_Button_Label: a,
           Lightbox_Close_Button_Tooltip: _,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: u,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }

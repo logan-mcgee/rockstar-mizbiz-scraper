@@ -16,19 +16,19 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9746], {
-    67365: (e, a, d) => {
-      d.r(a), d.d(a, {
+    67365: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => o
       });
-      var s = d(9623);
-      var t = d(25854);
+      var d = s(9623);
+      var t = s(25854);
       const o = () => {
-        const [e] = (0, s.useSearchParams)(), a = e.get("src") ?? null;
+        const [e] = (0, d.useSearchParams)(), a = e.get("src") ?? null;
         if (!a) return null;
         const {
-          hostname: d
+          hostname: s
         } = new URL(a);
-        return ["media.rockstargames.com", "www.rockstargames.com"].includes(d) ? (0, t.jsx)("div", {
+        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, t.jsx)("div", {
           className: "rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e",
           children: (0, t.jsx)("div", {
             className: "rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8",

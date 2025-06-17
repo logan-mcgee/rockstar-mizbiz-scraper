@@ -34,10 +34,10 @@ _global.SENTRY_RELEASE = {
         UNSAFE_NavigationContext: () => s,
         UNSAFE_RouteContext: () => d,
         UNSAFE_logV6DeprecationWarnings: () => Q,
-        UNSAFE_mapRouteProperties: () => fe,
+        UNSAFE_mapRouteProperties: () => he,
         UNSAFE_useRouteId: () => A,
         UNSAFE_useRoutesImpl: () => k,
-        createMemoryRouter: () => he,
+        createMemoryRouter: () => fe,
         createPath: () => n.AO,
         createRoutesFromChildren: () => pe,
         createRoutesFromElements: () => pe,
@@ -58,9 +58,9 @@ _global.SENTRY_RELEASE = {
         useAsyncValue: () => V,
         useBlocker: () => Y,
         useHref: () => v,
-        useInRouterContext: () => f,
+        useInRouterContext: () => h,
         useLoaderData: () => I,
-        useLocation: () => h,
+        useLocation: () => f,
         useMatch: () => g,
         useMatches: () => H,
         useNavigate: () => b,
@@ -103,7 +103,7 @@ _global.SENTRY_RELEASE = {
         let {
           relative: r
         } = void 0 === t ? {} : t;
-        f() || (0, n.Oi)(!1);
+        h() || (0, n.Oi)(!1);
         let {
           basename: o,
           navigator: i
@@ -121,12 +121,12 @@ _global.SENTRY_RELEASE = {
         })
       }
 
-      function f() {
+      function h() {
         return null != a.useContext(c)
       }
 
-      function h() {
-        return f() || (0, n.Oi)(!1), a.useContext(c).location
+      function f() {
+        return h() || (0, n.Oi)(!1), a.useContext(c).location
       }
 
       function m() {
@@ -134,10 +134,10 @@ _global.SENTRY_RELEASE = {
       }
 
       function g(e) {
-        f() || (0, n.Oi)(!1);
+        h() || (0, n.Oi)(!1);
         let {
           pathname: t
-        } = h();
+        } = f();
         return a.useMemo((() => (0, n.B6)(e, (0, n.RO)(t))), [t, e])
       }
 
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
             }, n)))
           }), [e, t])
         }() : function() {
-          f() || (0, n.Oi)(!1);
+          h() || (0, n.Oi)(!1);
           let e = a.useContext(i),
             {
               basename: t,
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
             } = a.useContext(d),
             {
               pathname: u
-            } = h(),
+            } = f(),
             c = JSON.stringify((0, n.yD)(l, r.v7_relativeSplatPath)),
             p = a.useRef(!1);
           return y((() => {
@@ -215,7 +215,7 @@ _global.SENTRY_RELEASE = {
           matches: i
         } = a.useContext(d), {
           pathname: l
-        } = h(), u = JSON.stringify((0, n.yD)(i, o.v7_relativeSplatPath));
+        } = f(), u = JSON.stringify((0, n.yD)(i, o.v7_relativeSplatPath));
         return a.useMemo((() => (0, n.Gh)(e, JSON.parse(u), l, "path" === r)), [e, u, l, r])
       }
 
@@ -224,7 +224,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function k(e, t, r, i) {
-        f() || (0, n.Oi)(!1);
+        h() || (0, n.Oi)(!1);
         let {
           navigator: l,
           static: u
@@ -232,7 +232,7 @@ _global.SENTRY_RELEASE = {
           matches: p
         } = a.useContext(d), v = p[p.length - 1], m = v ? v.params : {}, g = (v && v.pathname, v ? v.pathnameBase : "/");
         v && v.route;
-        let y, b = h();
+        let y, b = f();
         if (t) {
           var E;
           let e = "string" == typeof t ? (0, n.Rr)(t) : t;
@@ -368,16 +368,16 @@ _global.SENTRY_RELEASE = {
           let i, l = !1,
             p = null,
             v = null;
-          var f;
-          r && (i = s && n.route.id ? s[n.route.id] : void 0, p = n.route.errorElement || O, c && (d < 0 && 0 === o ? (q[f = "route-fallback"] || (q[f] = !0), l = !0, v = null) : d === o && (l = !0, v = n.route.hydrateFallbackElement || null)));
-          let h = t.concat(u.slice(0, o + 1)),
+          var h;
+          r && (i = s && n.route.id ? s[n.route.id] : void 0, p = n.route.errorElement || O, c && (d < 0 && 0 === o ? (q[h = "route-fallback"] || (q[h] = !0), l = !0, v = null) : d === o && (l = !0, v = n.route.hydrateFallbackElement || null)));
+          let f = t.concat(u.slice(0, o + 1)),
             m = () => {
               let t;
               return t = i ? p : l ? v : n.route.Component ? a.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, a.createElement(M, {
                 match: n,
                 routeContext: {
                   outlet: e,
-                  matches: h,
+                  matches: f,
                   isDataRoute: null != r
                 },
                 children: t
@@ -391,7 +391,7 @@ _global.SENTRY_RELEASE = {
             children: m(),
             routeContext: {
               outlet: null,
-              matches: h,
+              matches: f,
               isDataRoute: !0
             }
           }) : m()
@@ -622,7 +622,7 @@ _global.SENTRY_RELEASE = {
           state: o,
           relative: i
         } = e;
-        f() || (0, n.Oi)(!1);
+        h() || (0, n.Oi)(!1);
         let {
           future: l,
           static: u
@@ -630,7 +630,7 @@ _global.SENTRY_RELEASE = {
           matches: c
         } = a.useContext(d), {
           pathname: p
-        } = h(), v = b(), m = (0, n.Gh)(t, (0, n.yD)(c, l.v7_relativeSplatPath), p, "path" === i), g = JSON.stringify(m);
+        } = f(), v = b(), m = (0, n.Gh)(t, (0, n.yD)(c, l.v7_relativeSplatPath), p, "path" === i), g = JSON.stringify(m);
         return a.useEffect((() => v(JSON.parse(g), {
           replace: r,
           state: o,
@@ -656,9 +656,9 @@ _global.SENTRY_RELEASE = {
           static: d = !1,
           future: p
         } = e;
-        f() && (0, n.Oi)(!1);
+        h() && (0, n.Oi)(!1);
         let v = t.replace(/^\/*/, "/"),
-          h = a.useMemo((() => ({
+          f = a.useMemo((() => ({
             basename: v,
             navigator: u,
             static: d,
@@ -687,7 +687,7 @@ _global.SENTRY_RELEASE = {
           }
         }), [v, m, g, y, b, E, l]);
         return null == _ ? null : a.createElement(s.Provider, {
-          value: h
+          value: f
         }, a.createElement(c.Provider, {
           children: r,
           value: _
@@ -811,7 +811,7 @@ _global.SENTRY_RELEASE = {
         return U(e)
       }
 
-      function fe(e) {
+      function he(e) {
         let t = {
           hasErrorBoundary: null != e.ErrorBoundary || null != e.errorElement
         };
@@ -827,7 +827,7 @@ _global.SENTRY_RELEASE = {
         }), t
       }
 
-      function he(e, t) {
+      function fe(e, t) {
         return (0, n.aE)({
           basename: null == t ? void 0 : t.basename,
           future: o({}, null == t ? void 0 : t.future, {
@@ -839,7 +839,7 @@ _global.SENTRY_RELEASE = {
           }),
           hydrationData: null == t ? void 0 : t.hydrationData,
           routes: e,
-          mapRouteProperties: fe,
+          mapRouteProperties: he,
           dataStrategy: null == t ? void 0 : t.dataStrategy,
           patchRoutesOnNavigation: null == t ? void 0 : t.patchRoutesOnNavigation
         }).initialize()

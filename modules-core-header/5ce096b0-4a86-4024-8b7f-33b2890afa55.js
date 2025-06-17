@@ -63,8 +63,8 @@ _global.SENTRY_RELEASE = {
         a = n(86410),
         s = n(29818),
         i = n(74406),
-        u = n(52806),
-        c = n(19202),
+        c = n(52806),
+        u = n(19202),
         l = n(72480),
         d = n(34902),
         f = n(36146),
@@ -84,8 +84,8 @@ _global.SENTRY_RELEASE = {
             open: r,
             defaultOpen: a,
             onOpenChange: s,
-            modal: c = !0
-          } = e, l = o.useRef(null), d = o.useRef(null), [f, p] = (0, u.i)({
+            modal: u = !0
+          } = e, l = o.useRef(null), d = o.useRef(null), [f, p] = (0, c.i)({
             prop: r,
             defaultProp: a ?? !1,
             onChange: s,
@@ -101,7 +101,7 @@ _global.SENTRY_RELEASE = {
             open: f,
             onOpenChange: p,
             onOpenToggle: o.useCallback((() => p((e => !e))), [p]),
-            modal: c,
+            modal: u,
             children: n
           })
         };
@@ -256,7 +256,7 @@ _global.SENTRY_RELEASE = {
             trapFocus: r,
             onOpenAutoFocus: s,
             onCloseAutoFocus: i,
-            ...u
+            ...c
           } = e, d = w(k, n), f = o.useRef(null), p = (0, a.s)(t, f);
           return (0, g.Oh)(), (0, b.jsxs)(b.Fragment, {
             children: [(0, b.jsx)(l.n, {
@@ -265,13 +265,13 @@ _global.SENTRY_RELEASE = {
               trapped: r,
               onMountAutoFocus: s,
               onUnmountAutoFocus: i,
-              children: (0, b.jsx)(c.qW, {
+              children: (0, b.jsx)(u.qW, {
                 role: "dialog",
                 id: d.contentId,
                 "aria-describedby": d.descriptionId,
                 "aria-labelledby": d.titleId,
                 "data-state": H(d.open),
-                ...u,
+                ...c,
                 ref: p,
                 onDismiss: () => d.onOpenChange(!1)
               })
@@ -372,8 +372,8 @@ _global.SENTRY_RELEASE = {
         a = n(85100),
         s = n(27734),
         i = n(25854),
-        u = "focusScope.autoFocusOnMount",
-        c = "focusScope.autoFocusOnUnmount",
+        c = "focusScope.autoFocusOnMount",
+        u = "focusScope.autoFocusOnUnmount",
         l = {
           bubbles: !1,
           cancelable: !0
@@ -428,8 +428,8 @@ _global.SENTRY_RELEASE = {
               y.add(I);
               const e = document.activeElement;
               if (!h.contains(e)) {
-                const t = new CustomEvent(u, l);
-                h.addEventListener(u, D), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(c, l);
+                h.addEventListener(c, D), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -442,11 +442,11 @@ _global.SENTRY_RELEASE = {
                 }), document.activeElement === e && m(h))
               }
               return () => {
-                h.removeEventListener(u, D), setTimeout((() => {
-                  const t = new CustomEvent(c, l);
-                  h.addEventListener(c, _), h.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
+                h.removeEventListener(c, D), setTimeout((() => {
+                  const t = new CustomEvent(u, l);
+                  h.addEventListener(u, _), h.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
                     select: !0
-                  }), h.removeEventListener(c, _), y.remove(I)
+                  }), h.removeEventListener(u, _), y.remove(I)
                 }), 0)
               }
             }
@@ -542,7 +542,7 @@ _global.SENTRY_RELEASE = {
     },
     98463: (e, t, n) => {
       n.d(t, {
-        Eq: () => u
+        Eq: () => c
       });
       var o = new WeakMap,
         r = new WeakMap,
@@ -551,14 +551,14 @@ _global.SENTRY_RELEASE = {
         i = function(e) {
           return e && (e.host || i(e.parentNode))
         },
-        u = function(e, t, n) {
+        c = function(e, t, n) {
           void 0 === n && (n = "data-aria-hidden");
-          var u = Array.from(Array.isArray(e) ? e : [e]),
-            c = t || function(e) {
+          var c = Array.from(Array.isArray(e) ? e : [e]),
+            u = t || function(e) {
               return "undefined" == typeof document ? null : (Array.isArray(e) ? e[0] : e).ownerDocument.body
             }(e);
-          return c ? (u.push.apply(u, Array.from(c.querySelectorAll("[aria-live]"))), function(e, t, n, u) {
-            var c = function(e, t) {
+          return u ? (c.push.apply(c, Array.from(u.querySelectorAll("[aria-live]"))), function(e, t, n, c) {
+            var u = function(e, t) {
               return t.map((function(t) {
                 if (e.contains(t)) return t;
                 var n = i(t);
@@ -571,20 +571,20 @@ _global.SENTRY_RELEASE = {
             var l = a[n],
               d = [],
               f = new Set,
-              p = new Set(c),
+              p = new Set(u),
               g = function(e) {
                 e && !f.has(e) && (f.add(e), g(e.parentNode))
               };
-            c.forEach(g);
+            u.forEach(g);
             var m = function(e) {
               e && !p.has(e) && Array.prototype.forEach.call(e.children, (function(e) {
                 if (f.has(e)) m(e);
                 else try {
-                  var t = e.getAttribute(u),
+                  var t = e.getAttribute(c),
                     a = null !== t && "false" !== t,
                     s = (o.get(e) || 0) + 1,
                     i = (l.get(e) || 0) + 1;
-                  o.set(e, s), l.set(e, i), d.push(e), 1 === s && a && r.set(e, !0), 1 === i && e.setAttribute(n, "true"), a || e.setAttribute(u, "true")
+                  o.set(e, s), l.set(e, i), d.push(e), 1 === s && a && r.set(e, !0), 1 === i && e.setAttribute(n, "true"), a || e.setAttribute(c, "true")
                 } catch (t) {
                   console.error("aria-hidden: cannot operate on ", e, t)
                 }
@@ -595,10 +595,10 @@ _global.SENTRY_RELEASE = {
                 d.forEach((function(e) {
                   var t = o.get(e) - 1,
                     a = l.get(e) - 1;
-                  o.set(e, t), l.set(e, a), t || (r.has(e) || e.removeAttribute(u), r.delete(e)), a || e.removeAttribute(n)
+                  o.set(e, t), l.set(e, a), t || (r.has(e) || e.removeAttribute(c), r.delete(e)), a || e.removeAttribute(n)
                 })), --s || (o = new WeakMap, o = new WeakMap, r = new WeakMap, a = {})
               }
-          }(u, c, n, "aria-hidden")) : function() {
+          }(c, u, n, "aria-hidden")) : function() {
             return null
           }
         }

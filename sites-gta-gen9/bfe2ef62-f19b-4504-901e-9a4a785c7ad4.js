@@ -91,8 +91,8 @@ _global.SENTRY_RELEASE = {
       var c = t(31879),
         g = t.n(c),
         b = t(92440),
-        f = t(95966);
-      const m = e => {
+        m = t(95966);
+      const u = e => {
           let {
             impressionTracking: a,
             gtm: t = {},
@@ -104,7 +104,7 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        u = e => {
+        f = e => {
           let {
             to: a,
             children: t
@@ -144,16 +144,16 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, i.jsx)("div", {
             style: t,
-            className: (0, f.classList)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", l),
+            className: (0, m.classList)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", l),
             id: d,
             "data-testid": "standard-group-of-items",
-            children: a.map((e => (0, i.jsx)(m, {
+            children: a.map((e => (0, i.jsx)(u, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, i.jsx)(u, {
+              children: (0, i.jsx)(f, {
                 to: e?.to,
                 children: (0, i.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                  className: (0, m.classList)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, i.jsx)(y, {

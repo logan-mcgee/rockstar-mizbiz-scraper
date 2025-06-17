@@ -135,8 +135,8 @@ _global.SENTRY_RELEASE = {
           d = u.fields,
           c = u.style,
           f = u.numeric,
-          b = u.pluralRules,
-          y = u.numberFormat,
+          y = u.pluralRules,
+          b = u.numberFormat,
           v = s;
         "short" === c ? v = "".concat(s, "-short") : "narrow" === c && (v = "".concat(s, "-narrow")), v in d || (v = s);
         var p = d[v];
@@ -147,12 +147,12 @@ _global.SENTRY_RELEASE = {
         var m = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
         var g = p[m],
-          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
+          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: y.format(Math.abs(t)),
+            value: b.format(Math.abs(t)),
             unit: a
           }],
-          h = g[b.select(t)];
+          h = g[y.select(t)];
         return (0, o.MakePartsList)(h, s, w)
       };
       var r = a(64480),
@@ -205,15 +205,15 @@ _global.SENTRY_RELEASE = {
           c = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
-        var b = (0, r.CanonicalizeLocaleList)(t),
-          y = Object.create(null),
+        var y = (0, r.CanonicalizeLocaleList)(t),
+          b = Object.create(null),
           v = (0, r.CoerceOptionsToObject)(a),
           p = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        y.localeMatcher = p;
+        b.localeMatcher = p;
         var m = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
-        y.nu = m;
-        var g = (0, n.ResolveLocale)(s, b, y, u, d, c),
+        b.nu = m;
+        var g = (0, n.ResolveLocale)(s, y, b, u, d, c),
           w = g.locale,
           h = g.nu;
         f.locale = w, f.style = (0, r.GetOption)(v, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(v, "numeric", "string", ["always", "auto"], "always");

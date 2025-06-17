@@ -353,7 +353,7 @@ _global.SENTRY_RELEASE = {
     79583: (e, a, n) => {
       "use strict";
       n.d(a, {
-        A: () => p
+        A: () => b
       });
       var s = n(62229),
         t = n(9623),
@@ -480,7 +480,7 @@ _global.SENTRY_RELEASE = {
         };
       var k = n(43053),
         _ = n.n(k);
-      const p = (0, o.A)((e => {
+      const b = (0, o.A)((e => {
         let {
           noCountrySelector: a,
           localeOverride: n,
@@ -488,9 +488,9 @@ _global.SENTRY_RELEASE = {
           jsonType: m,
           metaUrlOverride: k
         } = e;
-        const p = (0, l.useIntl)(),
-          y = (0, t.useNavigate)(),
-          b = (0, t.useLocation)(),
+        const b = (0, l.useIntl)(),
+          p = (0, t.useNavigate)(),
+          y = (0, t.useLocation)(),
           v = (0, i.useLocale)(),
           h = (0, i.useQueryParams)(),
           N = (0, s.useRef)(),
@@ -501,8 +501,8 @@ _global.SENTRY_RELEASE = {
               o = s ?? t ?? null,
               r = h.get("country");
             if (e) {
-              const a = `${b.pathname}${h.get("country")?`?country=${r}`:""}${n}`;
-              y(a), e.preventDefault()
+              const a = `${y.pathname}${h.get("country")?`?country=${r}`:""}${n}`;
+              p(a), e.preventDefault()
             }
             o && window.scroll(0, o.offsetTop - N.current.getBoundingClientRect().height - 60)
           },
@@ -533,13 +533,13 @@ _global.SENTRY_RELEASE = {
                 const a = h.get("country"),
                   n = e.href.split("#")[1],
                   s = document.getElementsByTagName("base")[0]?.getAttribute("href");
-                e.setAttribute("href", `${s}${b.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${n}`)
+                e.setAttribute("href", `${s}${y.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${n}`)
               }
             })(e), e.addEventListener("click", (e => {
               M(e, !1)
             }))
-          })), "" !== b.hash && setTimeout((() => {
-            M(!1, b.hash)
+          })), "" !== y.hash && setTimeout((() => {
+            M(!1, y.hash)
           }), 10)
         }), [j]);
         const {
@@ -559,11 +559,11 @@ _global.SENTRY_RELEASE = {
             }), void 0 !== a && a ? "" : (0, c.jsx)("nav", {
               className: g.nav,
               children: ["us", "br", "cz", "de", "es", "fr", "it", "jp", "kr", "mx", "nl", "pl", "ru", "sa", "tw", "zh"].map(((e, a) => {
-                const n = p.formatMessage(u.rockstargames_company_info_display_for_country, {
-                  country: p.formatMessage(u[`rockstargames_company_info_${e}`])
+                const n = b.formatMessage(u.rockstargames_company_info_display_for_country, {
+                  country: b.formatMessage(u[`rockstargames_company_info_${e}`])
                 });
                 return (0, c.jsx)(r.A, {
-                  to: `${b.pathname}?country=${e}`,
+                  to: `${y.pathname}?country=${e}`,
                   className: g[e],
                   title: n,
                   children: (0, c.jsx)(d, {

@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
         l = Symbol.for("react.provider"),
         f = Symbol.for("react.context"),
         s = Symbol.for("react.forward_ref"),
-        i = Symbol.for("react.suspense"),
-        c = Symbol.for("react.memo"),
+        c = Symbol.for("react.suspense"),
+        i = Symbol.for("react.memo"),
         d = Symbol.for("react.lazy"),
         p = Symbol.iterator,
         y = {
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
         var f = arguments.length - 2;
         if (1 === f) u.children = n;
         else if (1 < f) {
-          for (var s = Array(f), i = 0; i < f; i++) s[i] = arguments[i + 2];
+          for (var s = Array(f), c = 0; c < f; c++) s[c] = arguments[c + 2];
           u.children = s
         }
         if (e && e.defaultProps)
@@ -144,12 +144,12 @@ _global.SENTRY_RELEASE = {
         }(a, o + (!a.key || f && f.key === a.key ? "" : ("" + a.key).replace($, "$&/") + "/") + e)), t.push(a)), 1;
         if (f = 0, u = "" === u ? "." : u + ":", w(e))
           for (var s = 0; s < e.length; s++) {
-            var i = u + C(l = e[s], s);
-            f += j(l, t, o, i, a)
-          } else if (i = function(e) {
+            var c = u + C(l = e[s], s);
+            f += j(l, t, o, c, a)
+          } else if (c = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
-            }(e), "function" == typeof i)
-            for (e = i.call(e), s = 0; !(l = e.next()).done;) f += j(l = l.value, t, o, i = u + C(l, s++), a);
+            }(e), "function" == typeof c)
+            for (e = c.call(e), s = 0; !(l = e.next()).done;) f += j(l = l.value, t, o, c = u + C(l, s++), a);
           else if ("object" === l) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return f
       }
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
           if (!R(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = i, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.cloneElement = function(e, t, n) {
+      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = b({}, e.props),
           u = e.key,
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
         if (1 === s) o.children = n;
         else if (1 < s) {
           f = Array(s);
-          for (var i = 0; i < s; i++) f[i] = arguments[i + 2];
+          for (var c = 0; c < s; c++) f[c] = arguments[c + 2];
           o.children = f
         }
         return {
@@ -270,7 +270,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.memo = function(e, t) {
         return {
-          $$typeof: c,
+          $$typeof: i,
           type: e,
           compare: void 0 === t ? null : t
         }

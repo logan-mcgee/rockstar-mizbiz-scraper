@@ -252,15 +252,15 @@ _global.SENTRY_RELEASE = {
           }
         }), [e]), s
       }
-      var b = "(prefers-color-scheme: dark)",
-        p = "usehooks-ts-dark-mode";
+      var p = "(prefers-color-scheme: dark)",
+        b = "usehooks-ts-dark-mode";
 
-      function m(e, t = p) {
+      function m(e, t = b) {
         (0, r.useRef)(0).current++;
         const n = "boolean" == typeof e ? e : null == e ? void 0 : e.defaultValue,
-          o = "boolean" == typeof e ? t ?? p : (null == e ? void 0 : e.localStorageKey) ?? p,
+          o = "boolean" == typeof e ? t ?? b : (null == e ? void 0 : e.localStorageKey) ?? b,
           i = "boolean" == typeof e ? void 0 : (null == e ? void 0 : e.initializeWithValue) ?? void 0,
-          s = w(b, {
+          s = w(p, {
             initializeWithValue: i,
             defaultValue: n
           }),
@@ -496,16 +496,16 @@ _global.SENTRY_RELEASE = {
             t.disconnect()
           }
         }), [v, JSON.stringify(u), s, a, w, c]);
-        const b = (0, r.useRef)(null);
+        const p = (0, r.useRef)(null);
         if ((0, r.useEffect)((() => {
             var e;
-            v || !(null == (e = y.entry) ? void 0 : e.target) || c || w || b.current === y.entry.target || (b.current = y.entry.target, h({
+            v || !(null == (e = y.entry) ? void 0 : e.target) || c || w || p.current === y.entry.target || (p.current = y.entry.target, h({
               isIntersecting: l,
               entry: void 0
             }))
           }), [v, y.entry, c, w, l]), o) return y.entry;
-        const p = [f, !!y.isIntersecting, y.entry];
-        return p.ref = p[0], p.isIntersecting = p[1], p.entry = p[2], p
+        const b = [f, !!y.isIntersecting, y.entry];
+        return b.ref = b[0], b.isIntersecting = b[1], b.entry = b[2], b
       }
 
       function W() {
@@ -971,20 +971,20 @@ _global.SENTRY_RELEASE = {
           w = !0;
         if ("function" != typeof e) throw new TypeError("Expected a function");
 
-        function b(t) {
+        function p(t) {
           var n = r,
             i = o;
           return r = o = void 0, c = t, u = e.apply(i, n)
         }
 
-        function p(e) {
+        function b(e) {
           var n = e - a;
           return void 0 === a || n >= t || n < 0 || d && e - c >= i
         }
 
         function m() {
           var e = y();
-          if (p(e)) return k(e);
+          if (b(e)) return k(e);
           s = setTimeout(m, function(e) {
             var n = t - (e - a);
             return d ? v(n, i - (e - c)) : n
@@ -992,17 +992,17 @@ _global.SENTRY_RELEASE = {
         }
 
         function k(e) {
-          return s = void 0, w && r ? b(e) : (r = o = void 0, u)
+          return s = void 0, w && r ? p(e) : (r = o = void 0, u)
         }
 
         function S() {
           var e = y(),
-            n = p(e);
+            n = b(e);
           if (r = arguments, o = this, a = e, n) {
             if (void 0 === s) return function(e) {
-              return c = e, s = setTimeout(m, t), l ? b(e) : u
+              return c = e, s = setTimeout(m, t), l ? p(e) : u
             }(a);
-            if (d) return s = setTimeout(m, t), b(a)
+            if (d) return s = setTimeout(m, t), p(a)
           }
           return void 0 === s && (s = setTimeout(m, t)), u
         }

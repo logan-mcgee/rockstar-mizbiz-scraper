@@ -171,10 +171,10 @@ _global.SENTRY_RELEASE = {
         a = t(6920),
         i = t(5379),
         l = t(2229),
-        u = t(148),
-        d = t(7171);
+        d = t(148),
+        u = t(7171);
       const c = (e, o) => {
-          e && o ? document.cookie = `${e}=${o}; domain=${(0,d.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
+          e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
         b = e => {
           const o = document.cookie.split("; "),
@@ -276,7 +276,7 @@ _global.SENTRY_RELEASE = {
         _ = () => {
           const {
             location: e
-          } = window, o = (0, u.A)(), t = (e => {
+          } = window, o = (0, d.A)(), t = (e => {
             const o = w.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               n = "detect-locals" === t[0] ? 1 : 0;
@@ -288,9 +288,9 @@ _global.SENTRY_RELEASE = {
           let s = r;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = b(a);
-          s = o.currentSite?.site === u.C.www ? w.find((e => e.subdomaincom === n)) || w.find((e => e.subdomaincom === t)) || r : w.find((e => e.iso === i)) || r;
-          const [l, d] = f(a, s.iso);
-          return [s, d]
+          s = o.currentSite?.site === d.C.www ? w.find((e => e.subdomaincom === n)) || w.find((e => e.subdomaincom === t)) || r : w.find((e => e.iso === i)) || r;
+          const [l, u] = f(a, s.iso);
+          return [s, u]
         };
       var g = t(6481);
       const k = () => "en-US";
@@ -355,23 +355,23 @@ _global.SENTRY_RELEASE = {
             track: t,
             parent: n = ""
           } = e;
-          const r = (0, u.A)(),
+          const r = (0, d.A)(),
             [s, a] = _(),
             {
               subdomaincom: i,
               iso: l
             } = o,
-            d = (e => {
+            u = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
-              return w.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), r.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
+              return w.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), r.currentSite?.site === d.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(i);
           t?.({
             event: "cta_other",
-            link_url: d,
+            link_url: u,
             text: i,
             element_placement: n
-          }), a(l), window.location.href = d
+          }), a(l), window.location.href = u
         }
     },
     8525: (e, o, t) => {

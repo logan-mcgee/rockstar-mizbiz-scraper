@@ -27,15 +27,15 @@ _global.SENTRY_RELEASE = {
         r = i(95966),
         d = i(2918),
         l = i(44606),
-        c = i(61844),
-        o = i(46368),
-        m = i.n(o);
+        o = i(61844),
+        c = i(46368),
+        m = i.n(c);
       var u = i(25854);
       const k = (0, r.withTranslations)((e => {
         let {
           section: a = "",
           relativeTo: i = "",
-          tagId: o = null,
+          tagId: c = null,
           metaUrl: k = "/newswire",
           t: g
         } = e;
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
           {
             tagId: N = null
           } = (0, t.useParams)(),
-          [_, w] = (0, n.useState)(N ?? o ?? p.get("tag_id")),
+          [_, w] = (0, n.useState)(N ?? c ?? p.get("tag_id")),
           [y, S] = (0, n.useState)(1),
           [h, x] = (0, n.useState)(20),
           [F, j] = (0, n.useState)([]),
@@ -65,8 +65,8 @@ _global.SENTRY_RELEASE = {
             }
           });
         return (0, n.useEffect)((() => {
-          S(1), j([]), x(20), w(N ?? o ?? p.get("tag_id")), A()
-        }), [p.get("tag_id"), N, o]), (0, n.useEffect)((() => {
+          S(1), j([]), x(20), w(N ?? c ?? p.get("tag_id")), A()
+        }), [p.get("tag_id"), N, c]), (0, n.useEffect)((() => {
           const e = F;
           E?.posts?.paging && M(E?.posts?.paging), E?.posts?.results && j(e.concat(E?.posts?.results))
         }), [E]), (0, n.useEffect)((() => {
@@ -77,7 +77,7 @@ _global.SENTRY_RELEASE = {
           })()
         }), []), F.length ? (0, u.jsxs)("div", {
           "data-testid": "newswire-list",
-          children: [(0, u.jsx)(c.A, {
+          children: [(0, u.jsx)(o.A, {
             section: a,
             posts: F,
             relativeTo: i,
@@ -116,7 +116,7 @@ _global.SENTRY_RELEASE = {
         r = i(2918),
         d = i(14341),
         l = i(13344);
-      const c = {
+      const o = {
         newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
         info: "rockstargames-sites-rockstargamesea1c51ae745531c2aeabbe3fcf603842",
         title: "rockstargames-sites-rockstargamesf1dfe59c3d981dbe132559620885ecea",
@@ -126,7 +126,7 @@ _global.SENTRY_RELEASE = {
         top: "rockstargames-sites-rockstargameseee9c5d3b714a61ac265369800a6d4e0",
         startAnimation: "rockstargames-sites-rockstargamesa56af3c95449fe8452485dfb6c89fc29"
       };
-      var o = i(25854);
+      var c = i(25854);
       const m = e => {
         let {
           section: a = "",
@@ -157,35 +157,35 @@ _global.SENTRY_RELEASE = {
             element_placement: a
           })
         }), [m]);
-        return (0, o.jsx)(d.A, {
+        return (0, c.jsx)(d.A, {
           to: m.url,
-          className: [c.newswireBlock, u ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
+          className: [o.newswireBlock, u ? o.newswireBlockNoSpecialOrder : "", null !== b ? o.startAnimation : ""].join(" "),
           focused: k,
           onClick: w,
-          children: (0, o.jsxs)(o.Fragment, {
-            children: [0 !== i || v.get("tag_id") ? (0, o.jsx)("div", {
-              className: c.preview,
+          children: (0, c.jsxs)(c.Fragment, {
+            children: [0 !== i || v.get("tag_id") ? (0, c.jsx)("div", {
+              className: o.preview,
               style: _.default
-            }) : (0, o.jsxs)(o.Fragment, {
-              children: [(0, o.jsx)("div", {
-                className: c.previewMobile,
+            }) : (0, c.jsxs)(c.Fragment, {
+              children: [(0, c.jsx)("div", {
+                className: o.previewMobile,
                 style: _.mobile
-              }), (0, o.jsx)("div", {
-                className: c.preview,
+              }), (0, c.jsx)("div", {
+                className: o.preview,
                 style: _.default
               })]
-            }), (0, o.jsxs)("div", {
-              className: c.info,
-              children: [(0, o.jsxs)("div", {
-                className: c.top,
-                children: [m.primary_tags.length ? (0, o.jsx)(l.A, {
+            }), (0, c.jsxs)("div", {
+              className: o.info,
+              children: [(0, c.jsxs)("div", {
+                className: o.top,
+                children: [m.primary_tags.length ? (0, c.jsx)(l.A, {
                   title: m.primary_tags[m.primary_tags.length > 1 && 722 === m.primary_tags[0].id ? 1 : 0].name
-                }) : "", (0, o.jsx)("time", {
+                }) : "", (0, c.jsx)("time", {
                   dateTime: m.created,
                   children: m.created_formatted
                 })]
-              }), (0, o.jsx)("h5", {
-                className: c.title,
+              }), (0, c.jsx)("h5", {
+                className: o.title,
                 dangerouslySetInnerHTML: {
                   __html: m.title
                 }
@@ -226,7 +226,7 @@ _global.SENTRY_RELEASE = {
     41515: (e, a, i) => {
       "use strict";
       i.r(a), i.d(a, {
-        default: () => c
+        default: () => o
       });
       var n = i(62229),
         t = i(6958),
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
         r = i(92951),
         d = i(4281);
       var l = i(25854);
-      const c = (0, s.withTranslations)((e => {
+      const o = (0, s.withTranslations)((e => {
         let {
           t: a
         } = e;
@@ -277,19 +277,19 @@ _global.SENTRY_RELEASE = {
           context: r = "",
           to: d,
           onClick: l,
-          target: c = "_self",
-          ...o
+          target: o = "_self",
+          ...c
         } = e;
         const m = [t.button, t[r], a].join(" ");
         return d ? (0, s.jsx)(n.A, {
-          ...o,
+          ...c,
           to: d,
           className: m,
           onClick: l,
-          target: c,
+          target: o,
           children: i
         }) : (0, s.jsx)("button", {
-          ...o,
+          ...c,
           type: "button",
           className: m,
           onClick: l,
@@ -903,7 +903,7 @@ _global.SENTRY_RELEASE = {
     61844: (e, a, i) => {
       "use strict";
       i.d(a, {
-        A: () => c
+        A: () => o
       });
       var n = i(62229),
         t = i(95966),
@@ -939,15 +939,15 @@ _global.SENTRY_RELEASE = {
           newswireBlocks: "rockstargames-sites-rockstargamesea687097d9239d4830bc03090f0116f2",
           noSpecialOrder: "rockstargames-sites-rockstargamesd301334a72b626f8cc2f5b9733299e76"
         },
-        c = (0, t.withGtmTracking)((e => {
+        o = (0, t.withGtmTracking)((e => {
           let {
             section: a = "",
             noSpecialOrder: i = !1,
             posts: t,
             gtmTrack: r,
-            relativeTo: c
+            relativeTo: o
           } = e;
-          const [o, m] = (0, n.useState)(null);
+          const [c, m] = (0, n.useState)(null);
           return (0, n.useEffect)((() => {
             if (!t.length) return;
             const e = {
@@ -972,7 +972,7 @@ _global.SENTRY_RELEASE = {
               index: n,
               noSpecialOrder: i,
               post: e,
-              focused: n === o
+              focused: n === c
             }, e.id)))
           })
         }))

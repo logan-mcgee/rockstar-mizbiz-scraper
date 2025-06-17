@@ -39,17 +39,17 @@ _global.SENTRY_RELEASE = {
               a.push(o)
             }
         }(e) : a = document.querySelectorAll(".balance-text"), n();
-        var t, l, o, d, r = (t = function() {
+        var t, l, o, r, d = (t = function() {
           n()
         }, l = 100, function() {
           var e = this,
             a = arguments,
-            n = o && !d;
-          clearTimeout(d), d = setTimeout((function() {
-            d = null, o || t.apply(e, a)
+            n = o && !r;
+          clearTimeout(r), r = setTimeout((function() {
+            r = null, o || t.apply(e, a)
           }), l), n && t.apply(e, a)
         });
-        window.addEventListener("resize", r)
+        window.addEventListener("resize", d)
       }
     }
   }

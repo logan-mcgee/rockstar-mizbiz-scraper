@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     36839: (e, a, n) => {
       "use strict";
       n.r(a), n.d(a, {
-        default: () => u
+        default: () => c
       });
       var i = n(62229),
         t = n(92440),
@@ -35,29 +35,29 @@ _global.SENTRY_RELEASE = {
           setBrand: o
         } = e;
         const {
-          data: c
+          data: u
         } = (0, r.useQuery)(l.MetaUrlInfo, {
           variables: {
             url: d
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), [u, f] = (0, i.useState)(null);
+        }), [c, f] = (0, i.useState)(null);
         return (0, i.useEffect)((() => {
-          const e = c?.metaUrlInfo?.tina ?? null,
+          const e = u?.metaUrlInfo?.tina ?? null,
             a = e?.payload?.meta?.brand ?? null;
           a && o?.(a), e && f(e)
-        }), [c]), u ? (0, s.jsx)("div", {
+        }), [u]), c ? (0, s.jsx)("div", {
           "data-root": n,
           className: "rockstargames-sites-rockstargamesb682ae1b0f926c7f6b70f0415bef334f",
           children: (0, s.jsx)(t.TinaParser, {
             components: a,
-            tina: u
+            tina: c
           })
         }) : null
       }));
-      var c = n(94057);
-      const u = () => (0, s.jsx)(o, {
-        componentsForTinaParser: c.componentsForTinaParser,
+      var u = n(94057);
+      const c = () => (0, s.jsx)(o, {
+        componentsForTinaParser: u.componentsForTinaParser,
         root: "/",
         url: "/refund-policy"
       })
