@@ -1,0 +1,545 @@
+.siteHeaderContainer .rockstargames-modules-core-headerc4f15625f88eb02acfbc8ca67b037e73 {
+  align-items: center;
+  display: flex;
+  gap: var(--rem-15);
+  grid-area: actions;
+  justify-content: flex-end
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd9b00ef4e9bc668dcc3dd569ef1e2eca {
+  align-items: center;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  background: var(--black-65);
+  border: 1px solid var(--white-100);
+  border-radius: var(--border-radius-sm);
+  color: var(--white-100);
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: calc(var(--base-rem-size) * .75);
+  font-style: normal;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  line-height: 100%;
+  padding: var(--rem-05) var(--rem-075);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  white-space: nowrap
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd9b00ef4e9bc668dcc3dd569ef1e2eca:hover {
+  background-color: var(--white-100);
+  color: var(--black-200)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd9b00ef4e9bc668dcc3dd569ef1e2eca.rockstargames-modules-core-headerf88340f4aed2ac9af614a8c30dac6a86 {
+  background-color: #fcaf17;
+  border: 1px solid transparent;
+  color: var(--black-200)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd9b00ef4e9bc668dcc3dd569ef1e2eca.rockstargames-modules-core-headerf88340f4aed2ac9af614a8c30dac6a86:hover {
+  background-color: #e19808;
+  border: 1px solid #e19808
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headercbbfe1886a9116f22ee660d6e782abb5 {
+  font-size: var(--base-rem-size);
+  margin: var(--padding-sm) var(--padding-md);
+  padding: var(--base-rem-size)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d:focus,
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d.rockstargames-modules-core-headerd58298b0610cb77e0a7d26a8735a93fd {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab3b2e0ecc987b715403e7c4b132f95d.rockstargames-modules-core-headerd58298b0610cb77e0a7d26a8735a93fd img {
+  filter: invert()
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerab5088afc99154e0b25d9940005de113 {
+  align-items: center;
+  display: flex
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerfd31178b39e75b430b16a32f5ed36e2e {
+  background: transparent;
+  border: none;
+  height: var(--rem-125);
+  padding: 0;
+  width: var(--rem-125)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerfd31178b39e75b430b16a32f5ed36e2e img {
+  height: 100%;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerfd31178b39e75b430b16a32f5ed36e2e:hover {
+  cursor: pointer
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd4f3148e5037527a409f7b661459772d {
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, .15)), #000;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--global-navigation-box-shadow);
+  display: flex;
+  justify-content: center;
+  width: 100vw
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headera634f4a0c4a48cbcc350732d51cb090b {
+  align-items: center;
+  display: flex;
+  gap: var(--grid-gap-static-xs);
+  max-width: 1920px;
+  padding: var(--padding-sm) var(--padding-sides);
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headere1e68d34808ed306bca03b05f5b2b02d {
+  background: #282828
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headere823c5118fac77772d262996cc811242 {
+  align-items: center;
+  display: flex;
+  gap: var(--grid-gap-static-xs);
+  padding: var(--padding-sm) var(--padding-sides)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headereac76768521427c950890d0981c8604c {
+  border-bottom: 1px solid var(--global-navigation-border-color);
+  padding: 20px 0
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerecdd68bbe17f44b9e70ff88f2b2a9b79 button {
+  background: transparent;
+  border: none;
+  display: block;
+  height: var(--rem-15);
+  padding: 0;
+  width: var(--rem-15)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerecdd68bbe17f44b9e70ff88f2b2a9b79 img {
+  height: var(--rem-15);
+  width: var(--rem-15)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headere4d62dd5ace547da9e7b6fb79bbe72ad button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: var(--rem-15);
+  margin-left: var(--rem-15);
+  padding: 0;
+  width: var(--rem-15)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headere4d62dd5ace547da9e7b6fb79bbe72ad img {
+  height: var(--rem-15);
+  width: var(--rem-15)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd94a8a649b5f5cd1fa547c9308ee4457 {
+  flex-grow: 1;
+  margin-right: var(--margin-md)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd94a8a649b5f5cd1fa547c9308ee4457 input {
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, .15)), #000;
+  border: 1px solid transparent;
+  color: var(--white-100);
+  font-family: var(--font-family-h);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 100%;
+  letter-spacing: -.025em;
+  line-height: 100%;
+  outline: 0;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd94a8a649b5f5cd1fa547c9308ee4457 input::-moz-placeholder {
+  color: var(--text-light);
+  opacity: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd94a8a649b5f5cd1fa547c9308ee4457 input::placeholder {
+  color: var(--text-light);
+  opacity: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headera195beaac090ea8f2494f17d66774cb9 input {
+  font-size: var(--rem-1)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerea293624c20a9003528f8f987ca1a72a {
+  display: flex;
+  position: relative;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3 {
+  display: flex;
+  position: relative;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3:after,
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3:before {
+  bottom: 0;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity .2s ease-in-out;
+  width: var(--rem-4);
+  z-index: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3:before {
+  background: linear-gradient(-90deg, transparent 20%, var(--black-200) 100%);
+  left: 0
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3:after {
+  background: linear-gradient(90deg, transparent 20%, var(--black-200) 100%);
+  opacity: 0;
+  right: 0
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3.rockstargames-modules-core-headerfe78fb2c62f5bb25362c8c0cc57d0531:before {
+  opacity: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb2545197a446a380d2e8d73ec8cac0b3.rockstargames-modules-core-headere566b42b19ba5c234f6aa6ce1019f147:after {
+  opacity: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb642c9d9226db09086ecfa05185cc13a {
+  align-items: flex-start;
+  display: flex;
+  gap: var(--grid-gap-xs);
+  overflow-x: scroll;
+  padding-inline: 32px;
+  -ms-overflow-style: none;
+  scrollbar-width: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb642c9d9226db09086ecfa05185cc13a ::-webkit-scrollbar {
+  display: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a:focus,
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a.rockstargames-modules-core-headerd58298b0610cb77e0a7d26a8735a93fd {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerdfec712d8c92dbc76894b8566afe3f9a.rockstargames-modules-core-headerd58298b0610cb77e0a7d26a8735a93fd img {
+  filter: invert()
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerded9b5c5e36e41a53dcdccf1a0fe2766 {
+  transition: transform .2s ease-in-out !important
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerded9b5c5e36e41a53dcdccf1a0fe2766.rockstargames-modules-core-headerace76bca2cab08dbc01f04d6bb22972c {
+  transform: rotate(180deg)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a {
+  align-items: flex-start;
+  background: var(--black-100);
+  border: 1px solid var(--global-navigation-border-color);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--global-navigation-box-shadow);
+  display: inline-flex;
+  flex-direction: column;
+  max-height: var(--radix-popover-content-available-height);
+  min-width: var(--sub-nav-min-width);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+  scrollbar-width: auto;
+  z-index: 999
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a::-webkit-scrollbar {
+  width: 8px
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a::-webkit-scrollbar-track {
+  background: transparent
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border: none;
+  border-radius: 10px
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a a[data-ui-name=sub-menu-item]:focus-visible,
+.siteHeaderContainer .rockstargames-modules-core-headerf28d98973e2133109615a7d820b4257a div[data-ui-name=sub-menu-item] button:focus-visible {
+  background-color: var(--white-15);
+  border: 1px solid var(--white-100);
+  border-radius: 6px;
+  outline: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headercbf7a2945565eaca09b784a902ac191b {
+  background: unset;
+  border: none;
+  color: var(--white-100);
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  font-size: var(--nav-link-size);
+  padding: var(--grid-gap-sm);
+  text-align: left;
+  text-decoration: none;
+  transition: color .3s ease-in-out;
+  white-space: nowrap;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headercbf7a2945565eaca09b784a902ac191b:hover {
+  background-color: var(--white-15)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headercbf7a2945565eaca09b784a902ac191b:after {
+  content: none
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb471c4190fc8e65979506ca527760dda {
+  animation: rockstargames-modules-core-headerb66ae794e4fe420fc94052d205a7ff94 .5s ease-out;
+  max-height: var(--radix-popover-content-available-height);
+  transform-origin: var(--radix-popover-content-transform-origin);
+  width: var(--radix-popover-trigger-width)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headereb547eb575435a51cbf0873f194d4107 {
+  background-color: #b01414;
+  padding: var(--padding-xs) var(--padding-sides)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg) no-repeat 50%/contain;
+  cursor: pointer;
+  height: var(--rem-15);
+  position: relative;
+  width: var(--rem-15)
+}
+
+@keyframes rockstargames-modules-core-headerb0f6d946f0bad4946fbb51263581486d {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(-2px, 3px)
+  }
+
+  40% {
+    transform: translate(-1px, -1px)
+  }
+
+  60% {
+    transform: translate(1px, 2px)
+  }
+
+  80% {
+    transform: translate(1px, 1px)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+@keyframes rockstargames-modules-core-headercdcb55dce84a52e009b660df5f30da27 {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(1px, -2px)
+  }
+
+  40% {
+    transform: translate(-1px, 1px)
+  }
+
+  60% {
+    transform: translate(-1px, -1px)
+  }
+
+  80% {
+    transform: translateY(1px)
+  }
+
+  to {
+    transform: translate(0)
+  }
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:after,
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:before {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c46845952588bf44125a37117d4da32c.svg) no-repeat 50%/contain;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  transition: filter .1s;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:before {
+  z-index: -1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:after {
+  z-index: -2
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:hover:after,
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:hover:before {
+  opacity: 1
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:hover:before {
+  animation: rockstargames-modules-core-headerb0f6d946f0bad4946fbb51263581486d .4s 2 both;
+  filter: invert(55%) sepia(80%) saturate(301%) hue-rotate(148deg) brightness(93%) contrast(91%)
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8:hover:after {
+  animation: rockstargames-modules-core-headercdcb55dce84a52e009b660df5f30da27 .4s 2 both;
+  filter: invert(48%) sepia(83%) saturate(4695%) hue-rotate(329deg) brightness(84%) contrast(107%)
+}
+
+@media (max-width:1023px) {
+  .siteHeaderContainer .rockstargames-modules-core-headeraa43ee879b21fbda8dda46987f91dbe8 {
+    pointer-events: none
+  }
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb849f786b7df4a944d31e8d270e88402 {
+  align-items: center;
+  display: flex;
+  gap: var(--rem-075);
+  grid-area: home;
+  height: inherit
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd4e4d5dba7484c7a542e229dfbce0fa5 {
+  display: flex
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd9361f5f553f030e6a2739115afe41a7 {
+  background-color: var(--white-40);
+  height: var(--rem-15);
+  width: 1px
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeref458606d6bf19c4a61b18feb8aaf80a {
+  align-items: center;
+  display: flex;
+  height: 33px
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headeref458606d6bf19c4a61b18feb8aaf80a>* {
+  max-height: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headercca5aace5aea24ffadc1b682e19098c1 {
+  background: none;
+  border: none;
+  padding: 0
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerfe87bc51f19ebbbaeda0ea6abe883764 {
+  min-width: var(--sub-nav-min-width);
+  z-index: 1
+}
+
+/*# sourceMappingURL=0b7c6b739ca7c4028a37a76ae61d20c6.css.map*/
