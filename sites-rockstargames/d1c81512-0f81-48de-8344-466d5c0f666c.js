@@ -5,12 +5,12 @@ try {
 } catch (a) {} {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   a._sentryModuleMetadata = a._sentryModuleMetadata || {}, a._sentryModuleMetadata[(new a.Error).stack] = Object.assign({}, a._sentryModuleMetadata[(new a.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [2398], {
     75270: () => {

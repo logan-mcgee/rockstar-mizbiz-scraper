@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [3622], {
     3622: (o, e, t) => {
@@ -20,8 +20,8 @@ try {
         Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => g,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => b,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => c
+        default: () => x
       });
       var _ = "Fermer la lightbox",
         i = "Appuyer sur {shortcut}",
@@ -43,11 +43,11 @@ try {
         b = "Niveau de zoom",
         u = "{zoom} %",
         g = "Télécharger",
-        h = "Télécharger",
-        f = "Ouvrir l'image dans la lightbox",
+        f = "Télécharger",
+        h = "Ouvrir l'image dans la lightbox",
         L = "Image de la lightbox",
         p = "Text alternatif : {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -59,8 +59,8 @@ try {
           Lightbox_Zoom_Slider_Label: b,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: g,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: h,
           Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: p
         }

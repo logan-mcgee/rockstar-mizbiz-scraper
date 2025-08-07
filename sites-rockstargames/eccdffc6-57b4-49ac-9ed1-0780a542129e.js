@@ -5,17 +5,17 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7185, 9566], {
     27185: (e, n, t) => {
       t.r(n), t.d(n, {
-        useHardwareConcurrency: () => b,
+        useHardwareConcurrency: () => v,
         useMemoryStatus: () => g,
         useNetworkStatus: () => d,
         useSaveData: () => l
@@ -53,10 +53,10 @@ try {
         }
         return e
       }
-      var c, s, u, f, d = function(e) {
+      var f, c, s, u, d = function(e) {
           var n, t = {
-              unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
-              effectiveConnectionType: c ? e : navigator.connection.effectiveType
+              unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
+              effectiveConnectionType: f ? e : navigator.connection.effectiveType
             },
             o = function(e) {
               if (Array.isArray(e)) return e
@@ -83,12 +83,12 @@ try {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
             a = o[0],
-            s = o[1];
+            c = o[1];
           return (0, r.useEffect)((function() {
-            if (!c) {
+            if (!f) {
               var e = navigator.connection,
                 n = function() {
-                  s({
+                  c({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -98,22 +98,22 @@ try {
                 }
             }
           }), []), i({}, a, {
-            setNetworkStatus: s
+            setNetworkStatus: c
           })
         },
         l = function() {
           return {
-            unsupported: s = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: s ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: c ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) f = {
-        unsupported: u
+      if (s = !("undefined" != typeof navigator && "deviceMemory" in navigator)) u = {
+        unsupported: s
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
-        f = {
-          unsupported: u,
+        u = {
+          unsupported: s,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
           usedJSHeapSize: p ? p.usedJSHeapSize : null,
@@ -121,7 +121,7 @@ try {
         }
       }
       var y, g = function(e) {
-        return u && e ? i({}, f, {}, e) : i({}, f)
+        return s && e ? i({}, u, {}, e) : i({}, u)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,
@@ -129,7 +129,7 @@ try {
       } : {
         unsupported: !0
       };
-      var b = function() {
+      var v = function() {
         return i({}, y)
       }
     }

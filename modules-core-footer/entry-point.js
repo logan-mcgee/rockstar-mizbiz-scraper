@@ -1,29 +1,29 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a4b7f50d-28f0-40c5-9195-dbb6f909fb77", e._sentryDebugIdIdentifier = "sentry-dbid-a4b7f50d-28f0-40c5-9195-dbb6f909fb77")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "dabbbb89-2940-413b-83b9-d6d2b1002abc", e._sentryDebugIdIdentifier = "sentry-dbid-dabbbb89-2940-413b-83b9-d6d2b1002abc")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, System.register([], (function(e, a) {
   return {
     execute: function() {
       e((() => {
-        var e, r, d, t, c, f, o = {
+        var e, r, d, t, f, c, o = {
             9944: (e, a, r) => {
               a.y = function(e, a) {
                 var r = document.createElement("a");
                 r.href = e;
-                for (var d = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, t = 0, c = d.length; t !== a && c >= 0;) "/" === d[--c] && t++;
+                for (var d = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, t = 0, f = d.length; t !== a && f >= 0;) "/" === d[--f] && t++;
                 if (t !== a) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + a + ") is greater than the number of directories (" + t + ") in the URL path " + e);
-                var f = d.slice(0, c + 1);
-                return r.protocol + "//" + r.host + f
+                var c = d.slice(0, f + 1);
+                return r.protocol + "//" + r.host + c
               };
               Number.isInteger
             },
@@ -48,7 +48,7 @@ try {
                 t = (e, a) => (r.R = a, a = r.o(d, e) ? d[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
                 })), r.R = void 0, a),
-                c = (e, a) => {
+                f = (e, a) => {
                   if (r.S) {
                     var d = "default",
                       t = r.S[d];
@@ -58,7 +58,7 @@ try {
                 };
               r.d(a, {
                 get: () => t,
-                init: () => c
+                init: () => f
               })
             }
           },
@@ -87,132 +87,132 @@ try {
           }
           var t = Object.create(null);
           b.r(t);
-          var c = {};
+          var f = {};
           e = e || [null, r({}), r([]), r(r)];
-          for (var f = 2 & d && a;
-            "object" == typeof f && !~e.indexOf(f); f = r(f)) Object.getOwnPropertyNames(f).forEach((e => c[e] = () => a[e]));
-          return c.default = () => a, b.d(t, c), t
+          for (var c = 2 & d && a;
+            "object" == typeof c && !~e.indexOf(c); c = r(c)) Object.getOwnPropertyNames(c).forEach((e => f[e] = () => a[e]));
+          return f.default = () => a, b.d(t, f), t
         }, b.d = (e, a) => {
           for (var r in a) b.o(a, r) && !b.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: a[r]
           })
         }, b.f = {}, b.e = e => Promise.all(Object.keys(b.f).reduce(((a, r) => (b.f[r](e, a), a)), [])), b.u = e => "js/" + {
-          114: "b6b3e4184c363d837664ddc35d689f3c",
-          131: "7172eef2aaae1148377dfff2bbc451a6",
-          278: "954bfd797c0d5e0155f06244855c224e",
-          299: "3d788ce7a17ea592a7cbdb96ea60d9ff",
-          314: "70799ba54f58ae8e7c62e20321ff73c8",
-          377: "63ca583d12ef6fa4602420db6e8a48a6",
-          662: "1998b0a70f3e43eeeee2038e6acc1f9e",
-          824: "caf025814d0aea4b0aa8e7c51b6b8427",
-          888: "bebb2dff67ca2108b453bb3db65d2636",
-          907: "6a8e28a6e731e100df7a00ab75670a71",
-          969: "131cb3e7e397a7946eaf4fb3028839db",
-          1054: "1c91abd45dc7a0ae344dc9d6c098af21",
-          1138: "6bbe1ede29099905eb282be30ed9715e",
-          1154: "ee535f50effe884ac3dcfaae65077f62",
-          1242: "b4d74503b2b0db7902152101eed24f28",
-          1379: "d69b753ab87979468264f9772aeacfe6",
-          1607: "925495674a38d219687943a377b1a549",
-          1689: "c4271e98474e4e8a77d292a4095e8e0b",
-          1822: "4af3fb506fa6abefa049632b1e923c95",
-          1868: "00bf220fb9e8102c6d466ac90f8a6088",
-          2156: "1460b0590d5e8f55f1382ee5f6e7e700",
-          2171: "00a6ef5a9dba2ea520464d242cc01353",
-          2221: "629ee91694b07728fd59606b0f0ec566",
-          2243: "572b755ab73dc789b4ec1a4b968f8bca",
-          2315: "0c5259bcf553fbc10efc96e885c6dde5",
-          2343: "708a8c80be6aceba364751598343b399",
-          2347: "4962143c10a8d9fc98bc34d5a7051c54",
-          2365: "073ecb4e7f1355d278e7ba5c0e3494b7",
-          2398: "419906fc186042758419f0270c3939ca",
-          2466: "6d9a07d7c758a089b751785499954956",
-          2642: "6baf6e5747c66ad2699a6eaf2e9f114f",
-          2678: "f25fba0821aa210cf8ab66104065bd4b",
-          2864: "f2f322ddf9c44b4243b31475b48901af",
-          2941: "6bf828b5adceb2586b4430c87aba230f",
-          3034: "a0432ea46eb9fd34a383345dc11ffc2d",
-          3197: "a9721402f46b787ee91f0de217148ef2",
-          3343: "48c652fcffec06c5b2d29f3265a47a24",
-          3370: "9889f48150a81fd081d10f8fc506b9c9",
-          3475: "5feb954b82a77e91f62773924d7f6dfb",
-          3486: "8035d770f0bdae908a6c82c27730a6a1",
-          3622: "2c0b8952cf7498b2dd2d73fa53a2b0a6",
-          3697: "dbe466b2221821d13e46f4aa244525b0",
-          3885: "c1079ec41bb8e030655467b80a644317",
-          3941: "91b0b8a509af97806644406e3eabaac1",
-          4011: "ad337e3a0572cae07dc4e58b60ab35a9",
-          4186: "4b681d7333fad6d9276d0a6f1ce023b5",
-          4220: "611c88314fd23983fa7cc89d2a8f65b0",
-          4528: "c1c34cae7d161923d61be8829d50d13d",
-          4621: "8e43bf1667751f6b585249059cfb4648",
-          4700: "70549fc5da46cef6eaeeda2847998562",
-          4710: "9db5f15c47c2dfbbe4c408437da6af69",
-          4731: "dd243848b598e9bf7ee46c5eb9ac455e",
-          4799: "20bc66d8c50b23ca25cbd4f4d331481a",
-          4851: "82370960f5bb33c5b3654a9913a4fd18",
-          4861: "c15b4d063fa3a6431033a5ee3d54caef",
-          4913: "835a3ea578acc1ba3ef1d3bc7ad9c704",
-          5018: "d83dff15b53308273b0a7d9599aaf9c7",
-          5233: "2ac050c2d5e189664afc6d473cccfac8",
-          5247: "99fb4d68ac96fa72d41dd3b789a5d9b0",
-          5259: "5b0697d68aa9bbe414806f817d435fe4",
-          5491: "3e39e781aa711e6593d8b906fc2045c7",
-          5530: "1edf19ded004e5bed4dd36290d8c1447",
-          5639: "539b233af94d7e23d4ebe77283100a3f",
-          5663: "3242eab6b2e9c92c7bc2341bccadc685",
-          5742: "03f44521299bd9b2672233aae1d35b29",
-          5830: "7734e9d1c68cbbbac970f4d2377eab3d",
-          5832: "f4a274dd0471dc94db4603ac239017b1",
-          5959: "ced83a879fce3791e719d77227bf06ae",
-          6019: "7731a26616d0dfa2a01c8e71f866852f",
-          6067: "b2ff7c80debdbc981451d529b8c1d165",
-          6192: "e3f72f24bfa317ae00dd4cf75e4f8f3b",
-          6204: "bcf2020e28af350ea1f4b0b1ae16b354",
-          6267: "9547a25caf9a531ff438715a742aa943",
-          6280: "5ab0de9f36cbf7f2f5ed9143d980e9d9",
-          6285: "6a53436fab37c6f362a957260a21a690",
-          6361: "1be4e12e759fc6537f5312585f83db4c",
-          6642: "de8637ce370bf9d3cb7171220d09c045",
-          6664: "e7ae91b453762727c544ded777ef7a07",
-          6871: "2baa674c4542e8aaefd619180917cc11",
-          6879: "9d052ca8db9111e869407fb9ec997fc0",
-          6891: "b7ad3386d3533cac68024cfd3d5d6d83",
-          6940: "88f7f7367f0cda57b1cdf5e6b7b2fc68",
-          6997: "06eee56dd83cb26ef8da5f3f18a4aff0",
-          7010: "7daad8cd40a1e98073d961a53b5d5544",
-          7039: "b31e1c2041834a53c8e9deaba779b61b",
-          7073: "a30cb076301a574b35f7c6d246f50e53",
-          7436: "20f12b12a3285a14ca9cf2a8fa38cd68",
-          7452: "598476fb5255f23cbe2dbbbd16778e31",
-          7453: "6b688b9e3b1f37a64cfa5ebf4694a663",
-          7858: "03704a61902fa81068a022d1e8dff862",
-          7970: "40cb4c264f98592d1e2248f49e134b8f",
-          8272: "6b04974521373cbd0184c26a32d354f8",
-          8391: "ac409d12679916e1d0cb03cf9222f690",
-          8755: "5e9d3ea030ece3dc582d55ec5d75e5e1",
-          8773: "9119934d5ef8bd2e37d14034c6ea0e4c",
-          8880: "bf7beb73312b3423b2bb2bb18e2a9147",
-          8970: "0ef2d338a7f29ca753a82e8ec1dfe039",
-          9022: "e70dfb2ae8606a071fbc81351c26889d",
-          9028: "2084e3d72a3a7f6f1b1ff07d687beadb",
-          9126: "32bfc47ff2b25a67e8525b4cb90e60ec",
-          9368: "6315367884d39111f5dd7a7e000c1aa2",
-          9377: "a6a420e783112a39f7f789e84e05113c",
-          9474: "a92ee40668b7a3d1721cde31874c5261",
-          9482: "2a1f34cd799856970aca79e735e7acbe",
-          9603: "520d6892bad8f89d7d932bf9194b6c99",
-          9615: "146b47ca8418930350452320757a8536",
-          9642: "e07ee588fbf02a55174140a3e0f11b7d",
-          9728: "0ac31e1905088f9a3228e8978cbde916",
-          9773: "6c5f90d84062c7b38095d710ee89f2a0",
-          9936: "01fa55a6e65eed25ae7dccf381bf1cd2",
-          9990: "612d7e478c3a249322f9a2781523cc54"
+          114: "4edd07a0af2ec3086198c0fc5d720955",
+          131: "25382c89668b1c45b8d8f23483d25482",
+          278: "802d5d27d8a9892a5c1e6fbddeac3f6c",
+          299: "c3402d4fb2aadf5d85e3b942478a1f62",
+          314: "4e6765dd31212e805dd122a20f15a55e",
+          377: "6c662ece9d6feeb50d8353b9c64abf08",
+          662: "9d8946ff7b84191698ffcb3ff81c15a4",
+          824: "435a82c52d46d11b43d7888812e0f3ad",
+          888: "107c8b5129bffabed6e727ff22829794",
+          907: "1bb7d5245b50a85027b476415f6b616a",
+          969: "4a37ec089bf38d8a32d0ffeed5e1d881",
+          1054: "7d45e32d6f284dd278ae9867260aa1de",
+          1138: "63fec090fb37280cf9da46c25ed4dbdb",
+          1154: "a5441d719cf5bd56b99f75d5183a4f11",
+          1242: "18cd77b123761e3fd885c3d313bb0ea1",
+          1379: "e067f9c157a2e486d595d54f252cfeaf",
+          1607: "d84f89dfd54a6530a9a327d8130334da",
+          1689: "16802e82b54ea47e6824e28345775c89",
+          1822: "f9b165a0312afd6ff20ec923a9b9803b",
+          1868: "0110dabfa58363f50bff6e181b66d74f",
+          2156: "a53ae58563590388a038645463f4adc0",
+          2171: "2e9942489fb00aaec83bab88ed6bddb2",
+          2221: "dc75dacbc772321ff8c4a77b1bb1d18c",
+          2243: "839cc7aaf64105b7043824ef91038f36",
+          2315: "ccd1edffff148b041b0c0cab2dd408ab",
+          2343: "8ea9f8a91b23713b2547abdc1f1bf24a",
+          2347: "fc980e15c2fe2480eb91747ba628781d",
+          2365: "8dc1b03df15649c7ca199dde7c77f989",
+          2398: "c4b2344b29bcfaa51d8dbd428d6027f6",
+          2466: "4658efbcecd2e79aea8040e1e8613cc0",
+          2642: "1095736f692b352c367b0085c2077f56",
+          2678: "1ae3aea64fe1edb963da18f22c24ad5d",
+          2864: "2df1c326e9a37d2998f514e4ebf2d789",
+          2941: "c222be74e4560c2d00fbc5db493fdab6",
+          3034: "43d6a1604cb12abf865debd0009b8716",
+          3197: "627a611ce52da4f7ff00a09c662bf360",
+          3343: "1066e7bbd4f3bfbbb953c80f03dbc5af",
+          3370: "0fa7d8365805425c87a6ebcd338fb5f7",
+          3475: "e22e9ed5802f39c786222329f4baac29",
+          3486: "0833b7329905ff55006f0a7397de3fc6",
+          3622: "b6fe79d13590fb662ceb4f451e9e9b1b",
+          3697: "d5acfb7533232781423a185ac523a030",
+          3885: "53e2360a71da24c0d3d007466e5e4076",
+          3941: "dbd94e5b71dd5c734ab873635290d608",
+          4011: "a9651aae29d59ee323a79a0e0b8c9d41",
+          4186: "615c47ca57165372e4112c013fb5ad4b",
+          4220: "178649ecaa0d0caba36cf1e3f218db87",
+          4528: "6f23f89269415fe354618d30dcdbd915",
+          4621: "996f15147ab823417b25605e61776fd9",
+          4700: "f56e7747f269e31e186108a831864db7",
+          4710: "c4287e3cca8e5c626e839f41f73aa508",
+          4731: "9f4daf244722c927ac3b8fccdc57279e",
+          4799: "2b3eea92f7d3943ab040519a142d5f6a",
+          4851: "554bf53d9ee1f2f0abd8751221377173",
+          4861: "6afee73b1fed1c8ba7cd3be737708b52",
+          4913: "765f6c501b3a31c3325ff9c5ce6c08c3",
+          5018: "988767ccdcfd05c3526c1ae786d309f1",
+          5233: "ce2fac4150cf20e914463e9f80193814",
+          5247: "9a20bd23bb37c53355735f525cbe51da",
+          5259: "b9ce9fc31645cacfed5d3ecd92a54944",
+          5491: "7aecf731781af7da0439b85d2bea38f9",
+          5530: "ff3fb755fa35595c5bd5cd4cfa404681",
+          5639: "a6e3550d5b691c59150c1949c92363ff",
+          5663: "1ee5635a0a8f82a1527a5104b72859f8",
+          5742: "23f04f290c2df1ac30c24b3340e48b65",
+          5830: "73c5620110d82e65c54f76488ca66f9d",
+          5832: "382b53371ec10149b138b412e9be21de",
+          5959: "d0b2e4232c336e16d51d19063d49737c",
+          6019: "51a211b5daf965ab6b0fe317eac75328",
+          6067: "2aaa278be049360423d0663b2848bb25",
+          6192: "f30923b9613be8fbffc86478fc83256e",
+          6204: "e955f4d115e3f8e94474f1ce9d8d514c",
+          6267: "73fe3be18833dc295da7aed8a936cdf9",
+          6280: "a9d0fb632ba1f275475d43a7b0c871f1",
+          6285: "6535d7f069e3b0fd17b67a4f95f4e325",
+          6361: "956d63e4e38f01d1bae033df6e9ba9bd",
+          6642: "72d74eb352700a32650ffd7d7c940c61",
+          6664: "8f8f82d245376b8f59dd57d07b86eb81",
+          6871: "61c205b2601185be688d553cac04d04b",
+          6879: "ece2893b5d337b9fc210e58bda826cc1",
+          6891: "54e0c75204c5ef0adbf1f3e01c03392a",
+          6940: "c731b6bd49df2b31930074b6ad1e4024",
+          6997: "0a7a0e22fa665c48c7e58852e605d59e",
+          7010: "61982d04caa5e38eae53312e150b1e5b",
+          7039: "47b99b0dd1191ee8c6b0eb7184e16546",
+          7073: "d142abda7650b84eff98de4413adb5fb",
+          7436: "4d4382f3b85bf026505a099e20bba4e6",
+          7452: "56512ad0b0e3cad04232fe8c24b0a733",
+          7453: "d4a38cd89b02dfa43838c5179075d07f",
+          7858: "c760a1442b0bddfc33e2291355b87133",
+          7970: "b7fa6addb3b3aa3607301e59503acf47",
+          8272: "f4c6b2dafc9337c659cebd818c336126",
+          8391: "81c5b9f347d77fbb5b79198b80448f96",
+          8755: "960a556b746c634ff5493ae12edce5b5",
+          8773: "3ed571d4c39c1b756c62967d57d993e9",
+          8880: "22546fb79bf17b5221d2d53cd5009aa3",
+          8970: "53b84ea4986b3ab31fdd705ff3117982",
+          9022: "9e5e4ac5a4ae291c0b271754e0f4389c",
+          9028: "c8660b9124baa06995b6608b9c16e810",
+          9126: "32d979f0011cb549f0be6be7390a9cba",
+          9368: "7abacd52073ced077f8aa081e257499f",
+          9377: "d9bf6bb043acb8e773193d59165652a4",
+          9474: "d927b9962f5d928ec4cc2f0b098334bc",
+          9482: "9f7793bab3d878e704eb02e827ffc48b",
+          9603: "e64d5507223f96b84fabfc4390af24d0",
+          9615: "d3584b05b9e31eaf7ebbda58a23e0890",
+          9642: "e06afa6d7f82f4fd3ae84ae5a5f1ceac",
+          9728: "b0fc525bfadcf0a9cb50393397b9275a",
+          9773: "e0d085bafc6fba5ced67abe0d186891e",
+          9936: "a1dc1422ee6e18daa2a30d5b3d31512d",
+          9990: "58a5c94b141b56267cf5f874f47163b1"
         } [e] + ".js", b.miniCssF = e => "css/" + {
           1689: "cea1a81b81d394e799ca4dbdb9603b59",
           2988: "450cc2b1c47be1e723f0b0d53ea4743d",
-          5491: "88e36d3e8ead8d1497bdc62b7972f433",
+          5491: "4a56bf49c7bb3a8a5e5469972d81811d",
           6192: "1b6a05f8cdb2244907347e6834e933b8",
           6642: "f1da5b48170e8eff07c31868b9c22f2e"
         } [e] + ".css", b.g = function() {
@@ -222,29 +222,29 @@ try {
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), b.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a), d = {}, t = "@rockstargames/modules-core-footer:", b.l = (e, a, r, c) => {
+        }(), b.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a), d = {}, t = "@rockstargames/modules-core-footer:", b.l = (e, a, r, f) => {
           if (d[e]) d[e].push(a);
           else {
-            var f, o;
+            var c, o;
             if (void 0 !== r)
               for (var n = document.getElementsByTagName("script"), i = 0; i < n.length; i++) {
                 var s = n[i];
                 if (s.getAttribute("src") == e || s.getAttribute("data-webpack") == t + r) {
-                  f = s;
+                  c = s;
                   break
                 }
               }
-            f || (o = !0, (f = document.createElement("script")).charset = "utf-8", f.timeout = 120, b.nc && f.setAttribute("nonce", b.nc), f.setAttribute("data-webpack", t + r), f.src = e), d[e] = [a];
+            c || (o = !0, (c = document.createElement("script")).charset = "utf-8", c.timeout = 120, b.nc && c.setAttribute("nonce", b.nc), c.setAttribute("data-webpack", t + r), c.src = e), d[e] = [a];
             var l = (a, r) => {
-                f.onerror = f.onload = null, clearTimeout(u);
+                c.onerror = c.onload = null, clearTimeout(u);
                 var t = d[e];
-                if (delete d[e], f.parentNode && f.parentNode.removeChild(f), t && t.forEach((e => e(r))), a) return a(r)
+                if (delete d[e], c.parentNode && c.parentNode.removeChild(c), t && t.forEach((e => e(r))), a) return a(r)
               },
               u = setTimeout(l.bind(null, void 0, {
                 type: "timeout",
-                target: f
+                target: c
               }), 12e4);
-            f.onerror = l.bind(null, f.onerror), f.onload = l.bind(null, f.onload), o && document.head.appendChild(f)
+            c.onerror = l.bind(null, c.onerror), c.onload = l.bind(null, c.onload), o && document.head.appendChild(c)
           }
         }, b.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -252,11 +252,11 @@ try {
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, b.nmd = e => (e.paths = [], e.children || (e.children = []), e), c = {}, f = {}, b.f.remotes = (e, a) => {
-          b.o(c, e) && c[e].forEach((e => {
+        }, b.nmd = e => (e.paths = [], e.children || (e.children = []), e), f = {}, c = {}, b.f.remotes = (e, a) => {
+          b.o(f, e) && f[e].forEach((e => {
             var r = b.R;
             r || (r = []);
-            var d = f[e];
+            var d = c[e];
             if (!(r.indexOf(d) >= 0)) {
               if (r.push(d), d.p) return a.push(d.p);
               var t = a => {
@@ -264,24 +264,24 @@ try {
                     throw a
                   }, d.p = 0
                 },
-                c = (e, r, c, f, o, n) => {
+                f = (e, r, f, c, o, n) => {
                   try {
-                    var b = e(r, c);
-                    if (!b || !b.then) return o(b, f, n);
-                    var i = b.then((e => o(e, f)), t);
+                    var b = e(r, f);
+                    if (!b || !b.then) return o(b, c, n);
+                    var i = b.then((e => o(e, c)), t);
                     if (!n) return i;
                     a.push(d.p = i)
                   } catch (e) {
                     t(e)
                   }
                 },
-                o = (e, a, t) => c(a.get, d[1], r, 0, n, t),
+                o = (e, a, t) => f(a.get, d[1], r, 0, n, t),
                 n = a => {
                   d.p = 1, b.m[e] = e => {
                     e.exports = a()
                   }
                 };
-              c(b, d[2], 0, 0, ((e, a, r) => e ? c(b.I, d[0], 0, e, o, r) : t()), 1)
+              f(b, d[2], 0, 0, ((e, a, r) => e ? f(b.I, d[0], 0, e, o, r) : t()), 1)
             }
           }))
         }, (() => {
@@ -294,14 +294,14 @@ try {
             if (t || (t = a[r] = {}), !(d.indexOf(t) >= 0)) {
               if (d.push(t), e[r]) return e[r];
               b.o(b.S, r) || (b.S[r] = {});
-              var c = b.S[r],
-                f = "@rockstargames/modules-core-footer",
+              var f = b.S[r],
+                c = "@rockstargames/modules-core-footer",
                 o = (e, a, r, d) => {
-                  var t = c[e] = c[e] || {},
+                  var t = f[e] = f[e] || {},
                     o = t[a];
-                  (!o || !o.loaded && (!d != !o.eager ? d : f > o.from)) && (t[a] = {
+                  (!o || !o.loaded && (!d != !o.eager ? d : c > o.from)) && (t[a] = {
                     get: r,
-                    from: f,
+                    from: c,
                     eager: !!d
                   })
                 },
@@ -332,12 +332,12 @@ try {
               for (var d = 0;;) {
                 if (d >= a.length) return d < r.length && "u" != (typeof r[d])[0];
                 var t = a[d],
-                  c = (typeof t)[0];
-                if (d >= r.length) return "u" == c;
-                var f = r[d],
-                  o = (typeof f)[0];
-                if (c != o) return "o" == c && "n" == o || "s" == o || "u" == c;
-                if ("o" != c && "u" != c && t != f) return t < f;
+                  f = (typeof t)[0];
+                if (d >= r.length) return "u" == f;
+                var c = r[d],
+                  o = (typeof c)[0];
+                if (f != o) return "o" == f && "n" == o || "s" == o || "u" == f;
+                if ("o" != f && "u" != f && t != c) return t < c;
                 d++
               }
             },
@@ -347,29 +347,29 @@ try {
               if (1 === e.length) return "*";
               if (a + .5) {
                 d += 0 == a ? ">=" : -1 == a ? "<" : 1 == a ? "^" : 2 == a ? "~" : a > 0 ? "=" : "!=";
-                for (var t = 1, c = 1; c < e.length; c++) t--, d += "u" == (typeof(o = e[c]))[0] ? "-" : (t > 0 ? "." : "") + (t = 2, o);
+                for (var t = 1, f = 1; f < e.length; f++) t--, d += "u" == (typeof(o = e[f]))[0] ? "-" : (t > 0 ? "." : "") + (t = 2, o);
                 return d
               }
-              var f = [];
-              for (c = 1; c < e.length; c++) {
-                var o = e[c];
-                f.push(0 === o ? "not(" + n() + ")" : 1 === o ? "(" + n() + " || " + n() + ")" : 2 === o ? f.pop() + " " + f.pop() : r(o))
+              var c = [];
+              for (f = 1; f < e.length; f++) {
+                var o = e[f];
+                c.push(0 === o ? "not(" + n() + ")" : 1 === o ? "(" + n() + " || " + n() + ")" : 2 === o ? c.pop() + " " + c.pop() : r(o))
               }
               return n();
 
               function n() {
-                return f.pop().replace(/^\((.+)\)$/, "$1")
+                return c.pop().replace(/^\((.+)\)$/, "$1")
               }
             },
             d = (a, r) => {
               if (0 in a) {
                 r = e(r);
                 var t = a[0],
-                  c = t < 0;
-                c && (t = -t - 1);
-                for (var f = 0, o = 1, n = !0;; o++, f++) {
+                  f = t < 0;
+                f && (t = -t - 1);
+                for (var c = 0, o = 1, n = !0;; o++, c++) {
                   var b, i, s = o < a.length ? (typeof a[o])[0] : "";
-                  if (f >= r.length || "o" == (i = (typeof(b = r[f]))[0])) return !n || ("u" == s ? o > t && !c : "" == s != c);
+                  if (c >= r.length || "o" == (i = (typeof(b = r[c]))[0])) return !n || ("u" == s ? o > t && !f : "" == s != f);
                   if ("u" == i) {
                     if (!n || "u" != s) return !1
                   } else if (n)
@@ -377,55 +377,55 @@ try {
                       if (o <= t) {
                         if (b != a[o]) return !1
                       } else {
-                        if (c ? b > a[o] : b < a[o]) return !1;
+                        if (f ? b > a[o] : b < a[o]) return !1;
                         b != a[o] && (n = !1)
                       }
                   else if ("s" != s && "n" != s) {
-                    if (c || o <= t) return !1;
+                    if (f || o <= t) return !1;
                     n = !1, o--
                   } else {
-                    if (o <= t || i < s != c) return !1;
+                    if (o <= t || i < s != f) return !1;
                     n = !1
                   } else "s" != s && "n" != s && (n = !1, o--)
                 }
               }
               var l = [],
                 u = l.pop.bind(l);
-              for (f = 1; f < a.length; f++) {
-                var p = a[f];
+              for (c = 1; c < a.length; c++) {
+                var p = a[c];
                 l.push(1 == p ? u() | u() : 2 == p ? u() & u() : p ? d(p, r) : !u())
               }
               return !!u()
             },
             t = (e, a) => e && b.o(e, a),
-            c = e => (e.loaded = 1, e.get()),
-            f = e => Object.keys(e).reduce(((a, r) => (e[r].eager && (a[r] = e[r]), a)), {}),
+            f = e => (e.loaded = 1, e.get()),
+            c = e => Object.keys(e).reduce(((a, r) => (e[r].eager && (a[r] = e[r]), a)), {}),
             o = e => {
               throw new Error(e)
             },
-            n = e => function(a, r, d, t, c) {
-              var f = b.I(a);
-              return f && f.then && !d ? f.then(e.bind(e, a, b.S[a], r, !1, t, c)) : e(a, b.S[a], r, d, t, c)
+            n = e => function(a, r, d, t, f) {
+              var c = b.I(a);
+              return c && c.then && !d ? c.then(e.bind(e, a, b.S[a], r, !1, t, f)) : e(a, b.S[a], r, d, t, f)
             },
             i = (e, a, r) => r ? r() : ((e, a) => o("Shared module " + a + " doesn't exist in shared scope " + e))(e, a),
             s = n(((e, n, b, s, l, u) => {
               if (!t(n, b)) return i(e, b, u);
-              var p = ((e, r, t, c) => {
-                var o = c ? f(e[r]) : e[r];
+              var p = ((e, r, t, f) => {
+                var o = f ? c(e[r]) : e[r];
                 return (r = Object.keys(o).reduce(((e, r) => !d(t, r) || e && !a(e, r) ? e : r), 0)) && o[r]
               })(n, b, l, s);
-              return p ? c(p) : u ? u() : void o(((e, a, d, t, c) => {
-                var f = e[d];
-                return "No satisfying version (" + r(t) + ")" + (c ? " for eager consumption" : "") + " of shared module " + d + " found in shared scope " + a + ".\nAvailable versions: " + Object.keys(f).map((e => e + " from " + f[e].from)).join(", ")
+              return p ? f(p) : u ? u() : void o(((e, a, d, t, f) => {
+                var c = e[d];
+                return "No satisfying version (" + r(t) + ")" + (f ? " for eager consumption" : "") + " of shared module " + d + " found in shared scope " + a + ".\nAvailable versions: " + Object.keys(c).map((e => e + " from " + c[e].from)).join(", ")
               })(n, e, b, l, s))
             })),
             l = n(((e, o, n, b, s, l) => {
               if (!t(o, n)) return i(e, n, l);
               var u, p = ((e, r, d) => {
-                var t = d ? f(e[r]) : e[r];
+                var t = d ? c(e[r]) : e[r];
                 return Object.keys(t).reduce(((e, r) => !e || !t[e].loaded && a(e, r) ? r : e), 0)
               })(o, n, b);
-              return d(s, p) || (u = ((e, a, d, t) => "Unsatisfied version " + d + " from " + (d && e[a][d].from) + " of shared singleton module " + a + " (required " + r(t) + ")")(o, n, p, s), "undefined" != typeof console && console.warn && console.warn(u)), c(o[n][p])
+              return d(s, p) || (u = ((e, a, d, t) => "Unsatisfied version " + d + " from " + (d && e[a][d].from) + " of shared singleton module " + a + " (required " + r(t) + ")")(o, n, p, s), "undefined" != typeof console && console.warn && console.warn(u)), f(o[n][p])
             })),
             u = {},
             p = {
@@ -488,26 +488,26 @@ try {
                   t = b.p + d;
                 if (((e, a) => {
                     for (var r = document.getElementsByTagName("link"), d = 0; d < r.length; d++) {
-                      var t = (f = r[d]).getAttribute("data-href") || f.getAttribute("href");
-                      if ("stylesheet" === f.rel && (t === e || t === a)) return f
+                      var t = (c = r[d]).getAttribute("data-href") || c.getAttribute("href");
+                      if ("stylesheet" === c.rel && (t === e || t === a)) return c
                     }
-                    var c = document.getElementsByTagName("style");
-                    for (d = 0; d < c.length; d++) {
-                      var f;
-                      if ((t = (f = c[d]).getAttribute("data-href")) === e || t === a) return f
+                    var f = document.getElementsByTagName("style");
+                    for (d = 0; d < f.length; d++) {
+                      var c;
+                      if ((t = (c = f[d]).getAttribute("data-href")) === e || t === a) return c
                     }
                   })(d, t)) return a();
                 ((e, a, r, d, t) => {
-                  var c = document.createElement("link");
-                  c.rel = "stylesheet", c.type = "text/css", b.nc && (c.nonce = b.nc), c.onerror = c.onload = r => {
-                    if (c.onerror = c.onload = null, "load" === r.type) d();
+                  var f = document.createElement("link");
+                  f.rel = "stylesheet", f.type = "text/css", b.nc && (f.nonce = b.nc), f.onerror = f.onload = r => {
+                    if (f.onerror = f.onload = null, "load" === r.type) d();
                     else {
-                      var f = r && r.type,
+                      var c = r && r.type,
                         o = r && r.target && r.target.href || a,
-                        n = new Error("Loading CSS chunk " + e + " failed.\n(" + f + ": " + o + ")");
-                      n.name = "ChunkLoadError", n.code = "CSS_CHUNK_LOAD_FAILED", n.type = f, n.request = o, c.parentNode && c.parentNode.removeChild(c), t(n)
+                        n = new Error("Loading CSS chunk " + e + " failed.\n(" + c + ": " + o + ")");
+                      n.name = "ChunkLoadError", n.code = "CSS_CHUNK_LOAD_FAILED", n.type = c, n.request = o, f.parentNode && f.parentNode.removeChild(f), t(n)
                     }
-                  }, c.href = a, document.head.appendChild(c)
+                  }, f.href = a, document.head.appendChild(f)
                 })(e, t, 0, a, r)
               })))(a).then((() => {
                 e[a] = 0
@@ -528,27 +528,27 @@ try {
             else {
               var t = new Promise(((r, t) => d = e[a] = [r, t]));
               r.push(d[2] = t);
-              var c = b.p + b.u(a),
-                f = new Error;
-              b.l(c, (r => {
+              var f = b.p + b.u(a),
+                c = new Error;
+              b.l(f, (r => {
                 if (b.o(e, a) && (0 !== (d = e[a]) && (e[a] = void 0), d)) {
                   var t = r && ("load" === r.type ? "missing" : r.type),
-                    c = r && r.target && r.target.src;
-                  f.message = "Loading chunk " + a + " failed.\n(" + t + ": " + c + ")", f.name = "ChunkLoadError", f.type = t, f.request = c, d[1](f)
+                    f = r && r.target && r.target.src;
+                  c.message = "Loading chunk " + a + " failed.\n(" + t + ": " + f + ")", c.name = "ChunkLoadError", c.type = t, c.request = f, d[1](c)
                 }
               }), "chunk-" + a, a)
             }
           };
           var a = (a, r) => {
-              var d, t, c = r[0],
-                f = r[1],
+              var d, t, f = r[0],
+                c = r[1],
                 o = r[2],
                 n = 0;
-              if (c.some((a => 0 !== e[a]))) {
-                for (d in f) b.o(f, d) && (b.m[d] = f[d]);
+              if (f.some((a => 0 !== e[a]))) {
+                for (d in c) b.o(c, d) && (b.m[d] = c[d]);
                 o && o(b)
               }
-              for (a && a(r); n < c.length; n++) t = c[n], b.o(e, t) && e[t] && e[t][0](), e[t] = 0
+              for (a && a(r); n < f.length; n++) t = f[n], b.o(e, t) && e[t] && e[t][0](), e[t] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || [];
           r.forEach(a.bind(null, 0)), r.push = a.bind(null, r.push.bind(r))

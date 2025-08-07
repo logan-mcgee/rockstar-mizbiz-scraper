@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [314], {
     26326: (e, t, a) => {
@@ -22,9 +22,9 @@ try {
           i = n(e);
         if ((0, l.invariant)("Object" === (0, l.Type)(i), "pl has to be an object"), (0, l.invariant)("initializedPluralRules" in i, "pluralrules must be initialized"), !t.isFinite()) return "other";
         var u = i.locale,
-          c = i.type,
-          s = (0, l.FormatNumericToString)(i, t).formattedString;
-        return o(u, c, t, (0, r.GetOperands)(s))
+          s = i.type,
+          c = (0, l.FormatNumericToString)(i, t).formattedString;
+        return o(u, s, t, (0, r.GetOperands)(c))
       };
       var l = a(20114),
         r = a(37582)
@@ -47,19 +47,19 @@ try {
         (0, l.invariant)(t.isFinite(), "n should be finite");
         var a, r, n, o = e.indexOf("."),
           i = ""; - 1 === o ? (a = t, r = l.ZERO, n = 0) : (a = e.slice(0, o), i = e.slice(o, e.length), r = (0, l.ToNumber)(i), n = i.length);
-        var u, c, s = (0, l.ToNumber)(a).abs();
-        if (r.isZero()) u = 0, c = l.ZERO;
+        var u, s, c = (0, l.ToNumber)(a).abs();
+        if (r.isZero()) u = 0, s = l.ZERO;
         else {
           var d = i.replace(/0+$/, "");
-          u = d.length, c = (0, l.ToNumber)(d)
+          u = d.length, s = (0, l.ToNumber)(d)
         }
         return {
           Number: t,
-          IntegerDigits: s.toNumber(),
+          IntegerDigits: c.toNumber(),
           NumberOfFractionDigits: n,
           NumberOfFractionDigitsWithoutTrailing: u,
           FractionDigits: r.toNumber(),
-          FractionDigitsWithoutTrailing: c.toNumber()
+          FractionDigitsWithoutTrailing: s.toNumber()
         }
       };
       var l = a(20114)
@@ -75,16 +75,16 @@ try {
         i = l.__importDefault(a(34523));
 
       function u(e, t) {
-        if (!(e instanceof s)) throw new TypeError("Method Intl.PluralRules.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof c)) throw new TypeError("Method Intl.PluralRules.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
-      function c(e, t, a, l) {
+      function s(e, t, a, l) {
         var r = l.IntegerDigits,
           n = l.NumberOfFractionDigits,
           o = l.FractionDigits;
-        return s.localeData[e].fn(n ? "".concat(r, ".").concat(o) : r, "ordinal" === t)
+        return c.localeData[e].fn(n ? "".concat(r, ".").concat(o) : r, "ordinal" === t)
       }
-      var s = function() {
+      var c = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.PluralRules must be called with 'new'");
           return (0, n.InitializePluralRules)(this, t, a, {
@@ -108,7 +108,7 @@ try {
           var t = (0, r.ToNumber)(e);
           return (0, o.ResolvePlural)(this, t, {
             getInternalSlots: i.default,
-            PluralRuleSelect: c
+            PluralRuleSelect: s
           })
         }, e.prototype.toString = function() {
           return "[object Intl.PluralRules]"
@@ -126,33 +126,33 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e
       }();
-      t.PluralRules = s;
+      t.PluralRules = c;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(s.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(c.prototype, Symbol.toStringTag, {
           value: "Intl.PluralRules",
           writable: !1,
           enumerable: !1,
           configurable: !0
         });
         try {
-          Object.defineProperty(s, "length", {
+          Object.defineProperty(c, "length", {
             value: 0,
             writable: !1,
             enumerable: !1,
             configurable: !0
           })
         } catch (e) {}
-        Object.defineProperty(s.prototype.constructor, "length", {
+        Object.defineProperty(c.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(s.supportedLocalesOf, "length", {
+        }), Object.defineProperty(c.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(s, "name", {
+        }), Object.defineProperty(c, "name", {
           value: "PluralRules",
           writable: !1,
           enumerable: !1,
@@ -167,16 +167,16 @@ try {
         var o = n.availableLocales,
           i = n.relevantExtensionKeys,
           u = n.localeData,
-          c = n.getDefaultLocale,
-          s = n.getInternalSlots,
+          s = n.getDefaultLocale,
+          c = n.getInternalSlots,
           d = (0, l.CanonicalizeLocaleList)(t),
           f = Object.create(null),
           b = (0, l.CoerceOptionsToObject)(a),
-          g = s(e);
+          g = c(e);
         g.initializedPluralRules = !0;
         var p = (0, l.GetOption)(b, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
         f.localeMatcher = p;
-        var y = (0, r.ResolveLocale)(o, d, f, i, u, c);
+        var y = (0, r.ResolveLocale)(o, d, f, i, u, s);
         return g.locale = y.locale, g.type = (0, l.GetOption)(b, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, l.SetNumberFormatDigitOptions)(g, b, 0, 3, "standard"), e
       };
       var l = a(20114),

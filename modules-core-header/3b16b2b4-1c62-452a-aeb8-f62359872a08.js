@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [5775, 8156], {
     38156: (e, t, n) => {
@@ -21,9 +21,9 @@ try {
       var o = n(71127),
         r = n.t(o, 2),
         s = n(92600),
-        a = r[" useEffectEvent ".trim().toString()],
+        l = r[" useEffectEvent ".trim().toString()],
         c = r[" useInsertionEffect ".trim().toString()],
-        l = r[" useInsertionEffect ".trim().toString()] || s.N;
+        a = r[" useInsertionEffect ".trim().toString()] || s.N;
 
       function u({
         prop: e,
@@ -31,16 +31,16 @@ try {
         onChange: n = () => {},
         caller: r
       }) {
-        const [s, a, c] = function({
+        const [s, l, c] = function({
           defaultProp: e,
           onChange: t
         }) {
-          const [n, r] = o.useState(e), s = o.useRef(n), a = o.useRef(t);
-          return l((() => {
-            a.current = t
+          const [n, r] = o.useState(e), s = o.useRef(n), l = o.useRef(t);
+          return a((() => {
+            l.current = t
           }), [t]), o.useEffect((() => {
-            s.current !== n && (a.current?.(n), s.current = n)
-          }), [n, s]), [n, r, a]
+            s.current !== n && (l.current?.(n), s.current = n)
+          }), [n, s]), [n, r, l]
         }({
           defaultProp: t,
           onChange: n
@@ -62,20 +62,20 @@ try {
               return "function" == typeof e
             }(t) ? t(e) : t;
             n !== e && c.current?.(n)
-          } else a(t)
-        }), [u, e, a, c]);
+          } else l(t)
+        }), [u, e, l, c]);
         return [d, f]
       }
       var d = Symbol("RADIX:SYNC_STATE");
 
       function f(e, t, n, r) {
         const {
-          prop: l,
+          prop: a,
           defaultProp: u,
           onChange: f,
           caller: i
-        } = t, b = void 0 !== l, g = function(e) {
-          if ("function" == typeof a) return a(e);
+        } = t, b = void 0 !== a, g = function(e) {
+          if ("function" == typeof l) return l(e);
           const t = o.useRef((() => {
             throw new Error("Cannot call an event handler while rendering.")
           }));
@@ -85,7 +85,7 @@ try {
             t.current = e
           })), o.useMemo((() => (...e) => t.current?.(...e)), [])
         }(f); {
-          const e = o.useRef(void 0 !== l);
+          const e = o.useRef(void 0 !== a);
           o.useEffect((() => {
             const t = e.current;
             if (t !== b) {
@@ -112,16 +112,16 @@ try {
         o.useEffect((() => {
           m.current !== w && (m.current = w, b || g(w))
         }), [g, w, m, b]);
-        const E = o.useMemo((() => void 0 !== l ? {
+        const E = o.useMemo((() => void 0 !== a ? {
           ...h,
-          state: l
-        } : h), [h, l]);
+          state: a
+        } : h), [h, a]);
         return o.useEffect((() => {
-          b && !Object.is(l, h.state) && y({
+          b && !Object.is(a, h.state) && y({
             type: d,
-            state: l
+            state: a
           })
-        }), [l, h.state, b]), [E, y]
+        }), [a, h.state, b]), [E, y]
       }
     },
     92600: (e, t, n) => {

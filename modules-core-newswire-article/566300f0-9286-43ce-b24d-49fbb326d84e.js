@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [954, 6018, 6913], {
     2851: (e, t) => {
@@ -97,22 +97,22 @@ try {
         }
       }();
       var a, s = [],
-        c = !1,
-        l = -1;
+        l = !1,
+        c = -1;
 
       function f() {
-        c && a && (c = !1, a.length ? s = a.concat(s) : l = -1, s.length && d())
+        l && a && (l = !1, a.length ? s = a.concat(s) : c = -1, s.length && d())
       }
 
       function d() {
-        if (!c) {
+        if (!l) {
           var e = u(f);
-          c = !0;
+          l = !0;
           for (var t = s.length; t;) {
-            for (a = s, s = []; ++l < t;) a && a[l].run();
-            l = -1, t = s.length
+            for (a = s, s = []; ++c < t;) a && a[c].run();
+            c = -1, t = s.length
           }
-          a = null, c = !1,
+          a = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -138,7 +138,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        s.push(new p(e, t)), 1 !== s.length || c || u(d)
+        s.push(new p(e, t)), 1 !== s.length || l || u(d)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
@@ -177,14 +177,14 @@ try {
         })
       }
       var r = {};
-      n(r, "ONETRUST_LOADED_EVENT", (() => i)), n(r, "WRAPPER_CALLED_EVENT", (() => u)), n(r, "CONSENT_CHANGED_EVENT", (() => a)), n(r, "init", (() => c));
+      n(r, "ONETRUST_LOADED_EVENT", (() => i)), n(r, "WRAPPER_CALLED_EVENT", (() => u)), n(r, "CONSENT_CHANGED_EVENT", (() => a)), n(r, "init", (() => l));
       const o = window.document.currentScript?.nonce,
         i = "ONETRUST_LOADED_EVENT",
         u = "WRAPPER_CALLED_EVENT",
         a = "CONSENT_CHANGED_EVENT";
       let s = !0;
 
-      function c(e) {
+      function l(e) {
         const t = window.document.head,
           n = window.document.createElement("script");
         if (n.setAttribute("id", "onetrust-sdk-stub"), n.setAttribute("src", "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"), n.setAttribute("type", "text/javascript"), n.setAttribute("charset", "UTF-8"), n.setAttribute("data-document-language", "true"), o && (n.nonce = o), !e) throw new Error("You must specify the OneTrust script ID");
@@ -200,8 +200,8 @@ try {
           }))
         }
       }
-      var l = {};
-      n(l, "NoChoiceTransactionType", (() => f)), n(l, "ConfirmedTransactionType", (() => d)), n(l, "canStoreCookie", (() => h));
+      var c = {};
+      n(c, "NoChoiceTransactionType", (() => f)), n(c, "ConfirmedTransactionType", (() => d)), n(c, "canStoreCookie", (() => h));
       const f = "NO_CHOICE",
         d = "CONFIRMED",
         p = {
@@ -220,7 +220,7 @@ try {
         const o = n.ConsentIntegrationData.consentPayload.purposes.find((e => e.Id === r.PurposeId));
         return o?.TransactionType === d
       }
-      t(e.exports, r), t(e.exports, l)
+      t(e.exports, r), t(e.exports, c)
     },
     46511: (e, t, n) => {
       "use strict";
@@ -249,8 +249,8 @@ try {
         u = p(n(18626)),
         a = p(n(2851)),
         s = p(n(88694)),
-        c = p(n(4246)),
-        l = p(n(6451)),
+        l = p(n(4246)),
+        c = p(n(6451)),
         f = p(n(93677)),
         d = n(67354);
 
@@ -281,7 +281,7 @@ try {
             ready: !1
           }, n.handleWindowResize = function() {
             n.process()
-          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, l.default)(n.handleWindowResize, e.throttle), n
+          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, c.default)(n.handleWindowResize, e.throttle), n
         }
         return function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -319,7 +319,7 @@ try {
               i = t.forceSingleModeWidth,
               u = t.onReady,
               a = this._parent,
-              l = this._child,
+              c = this._child,
               p = (0, d.innerWidth)(a),
               w = (0, d.innerHeight)(a);
             if (w <= 0 || isNaN(w)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
@@ -331,14 +331,14 @@ try {
                   return b !== e.pid
                 },
                 g = "multi" === o ? function() {
-                  return y(l, w)
+                  return y(c, w)
                 } : function() {
-                  return h(l, p)
+                  return h(c, p)
                 },
                 _ = "multi" === o ? function() {
-                  return h(l, p)
+                  return h(c, p)
                 } : function() {
-                  return y(l, w)
+                  return y(c, w)
                 },
                 v = void 0,
                 T = n,
@@ -346,7 +346,7 @@ try {
               this.setState({
                 ready: !1
               }), (0, s.default)([function(t) {
-                return (0, c.default)((function() {
+                return (0, l.default)((function() {
                   return T <= O
                 }), (function(t) {
                   if (m()) return t(!0);
@@ -357,7 +357,7 @@ try {
                   }))
                 }), t)
               }, function(t) {
-                return "single" === o && i || _() ? t() : (T = n, O = v, (0, c.default)((function() {
+                return "single" === o && i || _() ? t() : (T = n, O = v, (0, l.default)((function() {
                   return T < O
                 }), (function(t) {
                   if (m()) return t(!0);
@@ -395,11 +395,11 @@ try {
                 for (var r in e) t.indexOf(r) >= 0 || Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
                 return n
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
-              c = this.state,
-              l = c.fontSize,
-              f = c.ready,
+              l = this.state,
+              c = l.fontSize,
+              f = l.ready,
               d = r({}, u, {
-                fontSize: l
+                fontSize: c
               }),
               p = {
                 display: f ? "block" : "inline-block"
@@ -547,23 +547,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, n) {
+      function l(e, t, n) {
         var r, i = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) u.call(t, r) && !s.hasOwnProperty(r) && (i[r] = t[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) u.call(t, r) && !s.hasOwnProperty(r) && (i[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === i[r] && (i[r] = t[r]);
         return {
           $$typeof: o,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: i,
           _owner: a.current
         }
       }
-      t.Fragment = i, t.jsx = c, t.jsxs = c
+      t.Fragment = i, t.jsx = l, t.jsxs = l
     },
     93677: (e, t) => {
       "use strict";

@@ -5,19 +5,19 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [9368], {
     39368: (e, d, a) => {
       a.r(d), a.d(d, {
-        LookupSupportedLocales: () => g,
+        LookupSupportedLocales: () => f,
         ResolveLocale: () => m,
-        match: () => S
+        match: () => g
       });
       var n = a(91299),
         r = {
@@ -2457,7 +2457,7 @@ try {
         });
         var o, c, y = u.locale,
           m = r[y],
-          g = {
+          f = {
             locale: "en",
             dataLocale: y
           };
@@ -2479,7 +2479,7 @@ try {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var S = [], L = function(e) {
+        for (var g = [], S = function(e) {
             var d = null !== (i = null == m ? void 0 : m[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
@@ -2499,9 +2499,9 @@ try {
               })
             }
             var u, o, y = a[e];
-            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && S.push(r), g[e] = n
-          }, f = 0, G = n; f < G.length; f++) L(G[f]);
-        return S.length > 0 && (y = function(e, d, a) {
+            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && g.push(r), f[e] = n
+          }, L = 0, G = n; L < G.length; L++) S(G[L]);
+        return g.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", r = 0, _ = []; r < _.length; r++) {
             n += "-".concat(_[r])
@@ -2515,10 +2515,10 @@ try {
           if ("-u" === n) return l(e);
           var y = e.indexOf("-x-");
           return l(-1 === y ? e + n : e.slice(0, y) + n + e.slice(y))
-        }(y, 0, S)), g.locale = y, g
+        }(y, 0, g)), f.locale = y, f
       }
 
-      function g(e, d) {
+      function f(e, d) {
         for (var a = [], n = 0, r = d; n < r.length; n++) {
           var _ = M(e, r[n].replace(t, ""));
           _ && a.push(_)
@@ -2526,7 +2526,7 @@ try {
         return a
       }
 
-      function S(e, d, a, n) {
+      function g(e, d, a, n) {
         return m(d, (r = e, Intl.getCanonicalLocales(r)), {
           localeMatcher: (null == n ? void 0 : n.algorithm) || "best fit"
         }, [], {}, (function() {

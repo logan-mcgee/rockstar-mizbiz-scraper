@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [8773], {
     2562: (e, o, t) => {
@@ -196,10 +196,10 @@ try {
         i = t(46644),
         a = t(44047),
         l = t(71127),
-        d = t(32779),
-        u = t(2562);
+        u = t(32779),
+        d = t(2562);
       const c = (e, o) => {
-          e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
+          e && o ? document.cookie = `${e}=${o}; domain=${(0,d.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
         p = e => {
           const o = document.cookie.split("; "),
@@ -301,7 +301,7 @@ try {
         g = () => {
           const {
             location: e
-          } = window, o = (0, d.A)(), t = (e => {
+          } = window, o = (0, u.A)(), t = (e => {
             const o = h.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               n = "detect-locals" === t[0] ? 1 : 0;
@@ -313,9 +313,9 @@ try {
           let r = s;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
             a = p(i);
-          r = o.currentSite?.site === d.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || s : h.find((e => e.iso === a)) || s;
-          const [l, u] = f(i, r.iso);
-          return [r, u]
+          r = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || s : h.find((e => e.iso === a)) || s;
+          const [l, d] = f(i, r.iso);
+          return [r, d]
         };
       var k = t(47781);
       const _ = () => "en-US";
@@ -380,7 +380,7 @@ try {
             track: t,
             parent: n = ""
           } = e;
-          const s = (0, d.A)(),
+          const s = (0, u.A)(),
             [, r] = g(),
             {
               subdomaincom: i,
@@ -389,7 +389,7 @@ try {
             l = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
-              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === d.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
+              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(i);
           t?.({
             event: "cta_other",

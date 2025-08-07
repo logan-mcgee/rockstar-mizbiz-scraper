@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [7039], {
     7039: (o, t, e) => {
@@ -18,8 +18,8 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => i,
-        Lightbox_Dialog_Title: () => a,
-        Lightbox_Download_Button_Label: () => n,
+        Lightbox_Dialog_Title: () => n,
+        Lightbox_Download_Button_Label: () => a,
         Lightbox_Download_Button_Tooltip: () => b,
         Lightbox_Open_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -29,14 +29,14 @@ try {
         Lightbox_Zoom_Out_Button_Label: () => r,
         Lightbox_Zoom_Out_Button__Tooltip: () => f,
         Lightbox_Zoom_Slider_Label: () => L,
-        Lightbox_Zoom_Slider_Tooltip: () => c,
-        default: () => p
+        Lightbox_Zoom_Slider_Tooltip: () => p,
+        default: () => x
       });
       var _ = "Close lightbox",
         l = "Press {shortcut}",
         i = "Alt text: {alt}",
-        a = "Image lightbox",
-        n = "Download",
+        n = "Image lightbox",
+        a = "Download",
         b = "Download",
         d = "Open image in lightbox",
         s = "Reset",
@@ -46,13 +46,13 @@ try {
         r = "Zoom out",
         f = "Press {shortcut}",
         L = "Zoom level",
-        c = "{zoom}%",
-        p = {
+        p = "{zoom}%",
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Dialog_Description: i,
-          Lightbox_Dialog_Title: a,
-          Lightbox_Download_Button_Label: n,
+          Lightbox_Dialog_Title: n,
+          Lightbox_Download_Button_Label: a,
           Lightbox_Download_Button_Tooltip: b,
           Lightbox_Open_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Label: s,
@@ -62,7 +62,7 @@ try {
           Lightbox_Zoom_Out_Button_Label: r,
           Lightbox_Zoom_Out_Button__Tooltip: f,
           Lightbox_Zoom_Slider_Label: L,
-          Lightbox_Zoom_Slider_Tooltip: c
+          Lightbox_Zoom_Slider_Tooltip: p
         }
     }
   }

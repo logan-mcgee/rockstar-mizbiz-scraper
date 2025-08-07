@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9697], {
     49697: (e, t, r) => {
@@ -31,10 +31,10 @@ try {
         UNSAFE_NavigationContext: () => s,
         UNSAFE_RouteContext: () => d,
         UNSAFE_logV6DeprecationWarnings: () => Q,
-        UNSAFE_mapRouteProperties: () => he,
+        UNSAFE_mapRouteProperties: () => fe,
         UNSAFE_useRouteId: () => A,
         UNSAFE_useRoutesImpl: () => k,
-        createMemoryRouter: () => fe,
+        createMemoryRouter: () => he,
         createPath: () => n.AO,
         createRoutesFromChildren: () => pe,
         createRoutesFromElements: () => pe,
@@ -55,9 +55,9 @@ try {
         useAsyncValue: () => V,
         useBlocker: () => Y,
         useHref: () => v,
-        useInRouterContext: () => h,
+        useInRouterContext: () => f,
         useLoaderData: () => I,
-        useLocation: () => f,
+        useLocation: () => h,
         useMatch: () => g,
         useMatches: () => H,
         useNavigate: () => E,
@@ -100,7 +100,7 @@ try {
         let {
           relative: r
         } = void 0 === t ? {} : t;
-        h() || (0, n.Oi)(!1);
+        f() || (0, n.Oi)(!1);
         let {
           basename: o,
           navigator: i
@@ -118,12 +118,12 @@ try {
         })
       }
 
-      function h() {
+      function f() {
         return null != a.useContext(c)
       }
 
-      function f() {
-        return h() || (0, n.Oi)(!1), a.useContext(c).location
+      function h() {
+        return f() || (0, n.Oi)(!1), a.useContext(c).location
       }
 
       function m() {
@@ -131,10 +131,10 @@ try {
       }
 
       function g(e) {
-        h() || (0, n.Oi)(!1);
+        f() || (0, n.Oi)(!1);
         let {
           pathname: t
-        } = f();
+        } = h();
         return a.useMemo((() => (0, n.B6)(e, (0, n.RO)(t))), [t, e])
       }
 
@@ -158,7 +158,7 @@ try {
             }, n)))
           }), [e, t])
         }() : function() {
-          h() || (0, n.Oi)(!1);
+          f() || (0, n.Oi)(!1);
           let e = a.useContext(i),
             {
               basename: t,
@@ -170,7 +170,7 @@ try {
             } = a.useContext(d),
             {
               pathname: u
-            } = f(),
+            } = h(),
             c = JSON.stringify((0, n.yD)(l, r.v7_relativeSplatPath)),
             p = a.useRef(!1);
           return y((() => {
@@ -212,7 +212,7 @@ try {
           matches: i
         } = a.useContext(d), {
           pathname: l
-        } = f(), u = JSON.stringify((0, n.yD)(i, o.v7_relativeSplatPath));
+        } = h(), u = JSON.stringify((0, n.yD)(i, o.v7_relativeSplatPath));
         return a.useMemo((() => (0, n.Gh)(e, JSON.parse(u), l, "path" === r)), [e, u, l, r])
       }
 
@@ -221,7 +221,7 @@ try {
       }
 
       function k(e, t, r, i) {
-        h() || (0, n.Oi)(!1);
+        f() || (0, n.Oi)(!1);
         let {
           navigator: l,
           static: u
@@ -229,7 +229,7 @@ try {
           matches: p
         } = a.useContext(d), v = p[p.length - 1], m = v ? v.params : {}, g = (v && v.pathname, v ? v.pathnameBase : "/");
         v && v.route;
-        let y, E = f();
+        let y, E = h();
         if (t) {
           var b;
           let e = "string" == typeof t ? (0, n.Rr)(t) : t;
@@ -365,16 +365,16 @@ try {
           let i, l = !1,
             p = null,
             v = null;
-          var h;
-          r && (i = s && n.route.id ? s[n.route.id] : void 0, p = n.route.errorElement || O, c && (d < 0 && 0 === o ? (q[h = "route-fallback"] || (q[h] = !0), l = !0, v = null) : d === o && (l = !0, v = n.route.hydrateFallbackElement || null)));
-          let f = t.concat(u.slice(0, o + 1)),
+          var f;
+          r && (i = s && n.route.id ? s[n.route.id] : void 0, p = n.route.errorElement || O, c && (d < 0 && 0 === o ? (q[f = "route-fallback"] || (q[f] = !0), l = !0, v = null) : d === o && (l = !0, v = n.route.hydrateFallbackElement || null)));
+          let h = t.concat(u.slice(0, o + 1)),
             m = () => {
               let t;
               return t = i ? p : l ? v : n.route.Component ? a.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, a.createElement(U, {
                 match: n,
                 routeContext: {
                   outlet: e,
-                  matches: f,
+                  matches: h,
                   isDataRoute: null != r
                 },
                 children: t
@@ -388,7 +388,7 @@ try {
             children: m(),
             routeContext: {
               outlet: null,
-              matches: f,
+              matches: h,
               isDataRoute: !0
             }
           }) : m()
@@ -619,7 +619,7 @@ try {
           state: o,
           relative: i
         } = e;
-        h() || (0, n.Oi)(!1);
+        f() || (0, n.Oi)(!1);
         let {
           future: l,
           static: u
@@ -627,7 +627,7 @@ try {
           matches: c
         } = a.useContext(d), {
           pathname: p
-        } = f(), v = E(), m = (0, n.Gh)(t, (0, n.yD)(c, l.v7_relativeSplatPath), p, "path" === i), g = JSON.stringify(m);
+        } = h(), v = E(), m = (0, n.Gh)(t, (0, n.yD)(c, l.v7_relativeSplatPath), p, "path" === i), g = JSON.stringify(m);
         return a.useEffect((() => v(JSON.parse(g), {
           replace: r,
           state: o,
@@ -653,9 +653,9 @@ try {
           static: d = !1,
           future: p
         } = e;
-        h() && (0, n.Oi)(!1);
+        f() && (0, n.Oi)(!1);
         let v = t.replace(/^\/*/, "/"),
-          f = a.useMemo((() => ({
+          h = a.useMemo((() => ({
             basename: v,
             navigator: u,
             static: d,
@@ -684,7 +684,7 @@ try {
           }
         }), [v, m, g, y, E, b, l]);
         return null == R ? null : a.createElement(s.Provider, {
-          value: f
+          value: h
         }, a.createElement(c.Provider, {
           children: r,
           value: R
@@ -808,7 +808,7 @@ try {
         return N(e)
       }
 
-      function he(e) {
+      function fe(e) {
         let t = {
           hasErrorBoundary: null != e.ErrorBoundary || null != e.errorElement
         };
@@ -824,7 +824,7 @@ try {
         }), t
       }
 
-      function fe(e, t) {
+      function he(e, t) {
         return (0, n.aE)({
           basename: null == t ? void 0 : t.basename,
           future: o({}, null == t ? void 0 : t.future, {
@@ -836,7 +836,7 @@ try {
           }),
           hydrationData: null == t ? void 0 : t.hydrationData,
           routes: e,
-          mapRouteProperties: he,
+          mapRouteProperties: fe,
           dataStrategy: null == t ? void 0 : t.dataStrategy,
           patchRoutesOnNavigation: null == t ? void 0 : t.patchRoutesOnNavigation
         }).initialize()

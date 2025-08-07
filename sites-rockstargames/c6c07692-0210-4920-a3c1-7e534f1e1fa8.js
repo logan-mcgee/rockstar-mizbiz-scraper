@@ -1,16 +1,16 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "dc4b7edd-6e20-4138-9e5b-e07459847267", e._sentryDebugIdIdentifier = "sentry-dbid-dc4b7edd-6e20-4138-9e5b-e07459847267")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "c6c07692-0210-4920-a3c1-7e534f1e1fa8", e._sentryDebugIdIdentifier = "sentry-dbid-c6c07692-0210-4920-a3c1-7e534f1e1fa8")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [686, 1634, 6175, 8305], {
     21861: (e, a, s) => {
@@ -787,10 +787,7 @@ try {
         g = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/19e49c29158167ee504ea2946045293a.svg";
       var h = s(52542),
         k = s(70954);
-      let f = {
-        brandLogo: "rockstargames-sites-rockstargamesaf71a274ec221dd5496e00f0129fe119",
-        cta: "rockstargames-sites-rockstargamesaa37858750f636072a9fc568f3208bbc"
-      };
+      let f = "rockstargames-sites-rockstargamesaf71a274ec221dd5496e00f0129fe119";
       const b = "nav-dropdown",
         y = e => {
           let {
@@ -923,13 +920,13 @@ try {
               l(e), u(a?.value || "")
             }
           }), [n, i, d, m]);
-          const h = (e, a) => {
+          const h = (e, a, s) => {
             if (!e) return;
-            const s = t(e, a);
-            s && (s.startsWith("http") ? window.location.href = s : p(s))
+            const n = t(e, a);
+            n && (s?.(), n.startsWith("http") ? window.location.href = n : p(n))
           };
           return (0, k.jsx)(g.SearchBar, {
-            onSearch: (e, a) => h(e, a),
+            onSearch: h,
             query: c,
             onQueryChange: l,
             target: _,
@@ -952,7 +949,7 @@ try {
             site: s
           } = e;
           return (0, k.jsx)("img", {
-            className: f.brandLogo,
+            className: f,
             src: a,
             alt: s,
             "data-brand": s
@@ -967,233 +964,227 @@ try {
             searchConfig: c,
             onSearch: d,
             getQueryFromUrl: h,
-            errorMessage: b,
-            localisedStrings: w
+            errorMessage: f,
+            localisedStrings: b
           } = e;
-          const S = s,
-            R = (0, t.useLocale)(),
-            C = (0, o.useLocation)(),
+          const w = s,
+            S = (0, t.useLocale)(),
+            R = (0, o.useLocation)(),
             {
-              loggedIn: M,
-              data: z
+              loggedIn: C,
+              data: M
             } = (0, u.useRockstarUser)(),
-            N = (0, r.useMemo)((() => (0, t.getConfigForDomain)()), []),
+            z = (0, r.useMemo)((() => (0, t.getConfigForDomain)()), []),
             {
-              currentCharId: I,
+              currentCharId: N,
               setSelectedCharacterTuple: E
             } = (0, u.useRockstarUserState)(),
-            P = (0, r.useMemo)((() => {
+            I = (0, r.useMemo)((() => {
               const e = a.reduce(((e, a) => {
-                const s = a.appearancePaths.find((e => (0, o.matchPath)(e, C.pathname)));
+                const s = a.appearancePaths.find((e => (0, o.matchPath)(e, R.pathname)));
                 return s && void 0 === e ? {
                   ...a,
                   matchedPath: s
                 } : void 0 === e ? void 0 : e
               }), void 0);
               return e
-            }), [a, C.pathname]);
+            }), [a, R.pathname]);
           (0, r.useEffect)((() => {
-            const e = z?.characters?.gtao ?? [];
-            if (null !== M && !e.length) return void E(!1);
-            if (null == I || !e.length) return;
-            const a = e?.[I] ?? e?.[0] ?? null;
+            const e = M?.characters?.gtao ?? [];
+            if (null !== C && !e.length) return void E(!1);
+            if (null == N || !e.length) return;
+            const a = e?.[N] ?? e?.[0] ?? null;
             E(!!a?.platform && [a.platform, a.characterSlot])
-          }), [I, z, M]);
-          const T = P?.matchedPath.options.isSearchPage || !1,
-            L = (0, r.useMemo)((() => _.locales.find((e => e.iso.toLowerCase() === (0, t.toScLocaleString)(R)))?.label), [_.locales]);
-          return (0, k.jsx)(S.Root, {
-            brand: P?.brand ? (0, k.jsx)(j, {
-              brand: P.brand,
-              site: P.site
+          }), [N, M, C]);
+          const P = I?.matchedPath.options.isSearchPage || !1,
+            T = (0, r.useMemo)((() => _.locales.find((e => e.iso.toLowerCase() === (0, t.toScLocaleString)(S)))?.label), [_.locales]);
+          return (0, k.jsx)(w.Root, {
+            brand: I?.brand ? (0, k.jsx)(j, {
+              brand: I.brand,
+              site: I.site
             }) : null,
             mode: "transparent-dark",
-            children: (0, k.jsxs)(S.Header, {
-              children: [(0, k.jsx)(S.SiteTitle, {
-                quickAccessHidden: P?.hideQuickAccess,
+            children: (0, k.jsxs)(w.Header, {
+              children: [(0, k.jsx)(w.SiteTitle, {
+                quickAccessHidden: I?.hideQuickAccess,
                 href: (0, t.getBase)(),
-                children: C.pathname.length > 0 && !P?.hideQuickAccess && (0, k.jsxs)(S.QuickMenu, {
-                  children: [(0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                children: R.pathname.length > 0 && !I?.hideQuickAccess && (0, k.jsxs)(w.QuickMenu, {
+                  children: [(0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: m,
-                          alt: w.quickMenuHome
-                        }), w.quickMenuHome]
+                          alt: b.quickMenuHome
+                        }), b.quickMenuHome]
                       })
                     })
-                  }), (0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                  }), (0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/games",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: p,
-                          alt: w.quickMenuGames
-                        }), w.quickMenuGames]
+                          alt: b.quickMenuGames
+                        }), b.quickMenuGames]
                       })
                     })
-                  }), (0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                  }), (0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/newswire",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: g,
-                          alt: w.quickMenuNewswire
-                        }), w.quickMenuNewswire]
+                          alt: b.quickMenuNewswire
+                        }), b.quickMenuNewswire]
                       })
                     })
                   })]
                 })
-              }), (0, k.jsxs)(S.MobileMenu, {
-                children: ["careers" !== P.site && (0, k.jsxs)(k.Fragment, {
+              }), (0, k.jsxs)(w.MobileMenu, {
+                children: ["careers" !== I.site && (0, k.jsxs)(k.Fragment, {
                   children: [(0, k.jsx)(x, {
                     globalNavigationComponent: s,
                     searchConfig: c,
                     onSearch: d,
                     getQueryFromUrl: h,
-                    isSearchPage: T,
-                    errorMessage: b
-                  }), (0, k.jsx)(S.SearchError, {
-                    errorMessage: b
+                    isSearchPage: P,
+                    errorMessage: f
+                  }), (0, k.jsx)(w.SearchError, {
+                    errorMessage: f
                   })]
-                }), (0, k.jsx)(S.MobileMenuNav, {
-                  children: P?.links.map((e => (0, k.jsx)(y, {
-                    globalNavigationComponent: S,
+                }), (0, k.jsx)(w.MobileMenuNav, {
+                  children: I?.links.map((e => (0, k.jsx)(y, {
+                    globalNavigationComponent: w,
                     gamesMenuComponent: n,
                     link: e
                   }, e.text)))
-                }), P?.cta && (0, k.jsx)(S.CallToAction, {
-                  variant: P.cta.variant,
-                  href: `${P.cta.location.domain}${P.cta.location.path}`,
-                  children: P.cta.text
-                }), !P?.hideQuickAccess && (0, k.jsxs)(S.QuickMenu, {
-                  children: [(0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                }), I?.cta && (0, k.jsx)(w.CallToAction, {
+                  variant: I.cta.variant,
+                  href: `${I.cta.location.domain}${I.cta.location.path}`,
+                  children: I.cta.text
+                }), !I?.hideQuickAccess && (0, k.jsxs)(w.QuickMenu, {
+                  children: [(0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: m,
-                          alt: w.quickMenuHome
-                        }), w.quickMenuHome]
+                          alt: b.quickMenuHome
+                        }), b.quickMenuHome]
                       })
                     })
-                  }), (0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                  }), (0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/games",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: p,
-                          alt: w.quickMenuGames
-                        }), w.quickMenuGames]
+                          alt: b.quickMenuGames
+                        }), b.quickMenuGames]
                       })
                     })
-                  }), (0, k.jsx)(S.MenuItem, {
-                    children: (0, k.jsx)(S.MenuLink, {
+                  }), (0, k.jsx)(w.MenuItem, {
+                    children: (0, k.jsx)(w.MenuLink, {
                       asChild: !0,
                       children: (0, k.jsxs)(o.Link, {
                         to: "/newswire",
                         children: [(0, k.jsx)("img", {
-                          className: f.siteTitleIcon,
                           src: g,
-                          alt: w.quickMenuNewswire
-                        }), w.quickMenuNewswire]
+                          alt: b.quickMenuNewswire
+                        }), b.quickMenuNewswire]
                       })
                     })
                   })]
                 })]
-              }), (0, k.jsx)(S.Menu, {
-                children: P?.links.map((e => (0, k.jsx)(y, {
-                  globalNavigationComponent: S,
+              }), (0, k.jsx)(w.Menu, {
+                children: I?.links.map((e => (0, k.jsx)(y, {
+                  globalNavigationComponent: w,
                   gamesMenuComponent: n,
                   link: e
                 }, e.text)))
-              }), (0, k.jsxs)(S.Actions, {
-                children: [(0, k.jsx)(S.Breakpoint, {
+              }), (0, k.jsxs)(w.Actions, {
+                children: [(0, k.jsx)(w.Breakpoint, {
                   showOn: "desktop",
-                  children: P?.cta && (0, k.jsx)(S.CallToAction, {
-                    variant: P.cta.variant,
-                    href: `${P.cta.location.domain}${P.cta.location.path}`,
-                    children: P.cta.text
+                  children: I?.cta && (0, k.jsx)(w.CallToAction, {
+                    variant: I.cta.variant,
+                    href: `${I.cta.location.domain}${I.cta.location.path}`,
+                    children: I.cta.text
                   })
-                }), "careers" !== P.site && (0, k.jsxs)(S.Search, {
-                  isSearchPage: T,
-                  children: [(0, k.jsx)(S.SearchContainer, {
+                }), "careers" !== I.site && (0, k.jsxs)(w.Search, {
+                  isSearchPage: P,
+                  children: [(0, k.jsx)(w.SearchContainer, {
                     children: (0, k.jsx)(x, {
                       globalNavigationComponent: s,
                       searchConfig: c,
                       onSearch: d,
                       getQueryFromUrl: h,
-                      isSearchPage: T,
-                      errorMessage: b
+                      isSearchPage: P,
+                      errorMessage: f
                     })
-                  }), (0, k.jsx)(S.SearchError, {
-                    errorMessage: b
+                  }), (0, k.jsx)(w.SearchError, {
+                    errorMessage: f
                   })]
-                }), (0, k.jsxs)(S.AvatarMenu, {
-                  avatarIconUrl: z?.avatar,
-                  isLoggedIn: M,
-                  children: [M && (0, k.jsx)(v, {
+                }), (0, k.jsxs)(w.AvatarMenu, {
+                  avatarIconUrl: M?.avatar,
+                  isLoggedIn: C,
+                  children: [C && (0, k.jsx)(v, {
                     globalNavigationComponent: s
-                  }), (0, k.jsx)(S.AvatarMenuSection, {
+                  }), (0, k.jsx)(w.AvatarMenuSection, {
                     value: "open",
-                    children: (0, k.jsx)(S.MenuList, {
-                      children: (0, k.jsx)(S.AvatarMenuSectionContent, {
-                        children: M ? (0, k.jsxs)(k.Fragment, {
-                          children: [z.nickname && (0, k.jsx)(S.AvatarMenuSectionHeader, {
-                            children: z.nickname
+                    children: (0, k.jsx)(w.MenuList, {
+                      children: (0, k.jsx)(w.AvatarMenuSectionContent, {
+                        children: C ? (0, k.jsxs)(k.Fragment, {
+                          children: [M.nickname && (0, k.jsx)(w.AvatarMenuSectionHeader, {
+                            children: M.nickname
                           }), i.loggedInLinks.map((e => (0, k.jsx)(y, {
-                            globalNavigationComponent: S,
+                            globalNavigationComponent: w,
                             link: e
                           }, e.text))), (0, k.jsx)(y, {
-                            globalNavigationComponent: S,
+                            globalNavigationComponent: w,
                             link: i.helpItem
-                          }), (0, k.jsx)(S.MenuItem, {
-                            children: (0, k.jsx)(S.MenuLink, {
-                              href: `${N.logout}?returnUrl=${C.pathname}`,
-                              children: w.avatarMenuSignOut
+                          }), (0, k.jsx)(w.MenuItem, {
+                            children: (0, k.jsx)(w.MenuLink, {
+                              href: `${z.logout}?returnUrl=${R.pathname}`,
+                              children: b.avatarMenuSignOut
                             })
                           })]
                         }) : (0, k.jsxs)(k.Fragment, {
-                          children: [(0, k.jsx)(S.MenuItem, {
-                            children: (0, k.jsx)(S.MenuLink, {
-                              href: `${N.login}?returnUrl=${C.pathname}&lang=${(0,t.toScLocaleString)(R)}`,
-                              children: w.avatarMenuSignIn
+                          children: [(0, k.jsx)(w.MenuItem, {
+                            children: (0, k.jsx)(w.MenuLink, {
+                              href: `${z.login}?returnUrl=${R.pathname}&lang=${(0,t.toScLocaleString)(S)}`,
+                              children: b.avatarMenuSignIn
                             })
-                          }), (0, k.jsx)(S.MenuItem, {
-                            children: (0, k.jsx)(S.MenuLink, {
-                              href: `${N.signup}&returnUrl=${C.pathname}&lang=${(0,t.toScLocaleString)(R)}`,
-                              children: w.avatarMenuSignUp
+                          }), (0, k.jsx)(w.MenuItem, {
+                            children: (0, k.jsx)(w.MenuLink, {
+                              href: `${z.signup}&returnUrl=${R.pathname}&lang=${(0,t.toScLocaleString)(S)}`,
+                              children: b.avatarMenuSignUp
                             })
                           }), (0, k.jsx)(y, {
-                            globalNavigationComponent: S,
+                            globalNavigationComponent: w,
                             link: i.helpItem
                           })]
                         })
                       })
                     })
-                  }), (0, k.jsxs)(S.AvatarMenuSection, {
-                    children: [(0, k.jsx)(S.AvatarMenuSectionHeaderDropdown, {
-                      children: (0, k.jsxs)(S.AvatarMenuLanguageLabel, {
+                  }), (0, k.jsxs)(w.AvatarMenuSection, {
+                    children: [(0, k.jsx)(w.AvatarMenuSectionHeaderDropdown, {
+                      children: (0, k.jsxs)(w.AvatarMenuLanguageLabel, {
                         "data-testid": "header-language-current",
                         children: [(0, k.jsx)(l.Globe, {
-                          label: w.avatarMenuSelectLanguage
-                        }), L ?? w.avatarMenuSelectLanguage]
+                          label: b.avatarMenuSelectLanguage
+                        }), T ?? b.avatarMenuSelectLanguage]
                       })
-                    }), (0, k.jsx)(S.AvatarMenuSectionContent, {
-                      children: (0, k.jsx)(S.MenuList, {
-                        children: _.locales.map((e => (0, k.jsx)(S.MenuItem, {
+                    }), (0, k.jsx)(w.AvatarMenuSectionContent, {
+                      children: (0, k.jsx)(w.MenuList, {
+                        children: _.locales.map((e => (0, k.jsx)(w.MenuItem, {
                           testId: `header-language-selector-${e.subdomaincom}`,
-                          children: (0, k.jsx)(S.MenuLink, {
+                          children: (0, k.jsx)(w.MenuLink, {
                             onClick: () => (0, _.onLanguageChange)({
                               selectedLocale: e
                             }),
@@ -1218,7 +1209,7 @@ try {
             history: (0, M.createBrowserHistory)()
           }))
         },
-        I = () => {
+        E = () => {
           const {
             pathname: e
           } = (0, o.useLocation)();
@@ -1229,7 +1220,7 @@ try {
             }), 0)
           }), [e]), null
         },
-        E = (0, r.forwardRef)(((e, a) => {
+        I = (0, r.forwardRef)(((e, a) => {
           const {
             threshold: s,
             callback: t,
@@ -1301,11 +1292,11 @@ try {
             }), "function" == typeof t && t(a)
           }), c), n
         }));
-      E.displayName = "ScrollTracker";
-      const P = E;
+      I.displayName = "ScrollTracker";
+      const P = I;
       var T = s(95945),
-        L = s.n(T),
-        G = s(63582);
+        G = s.n(T),
+        L = s(63582);
       const A = e => {
           let {
             modal: a
@@ -1335,8 +1326,8 @@ try {
             top: j
           } = l, S = g?.indexOf(h), [R, C] = (0, r.useState)(g?.length || 0), {
             track: M
-          } = (0, u.useGtmTrack)(), z = null !== g && (g?.length || 0) > 1 && ("flag_bg" === f || "fob" === w?.size), N = window.location.href.includes("cms5"), [I, E] = (0, o.useSearchParams)(), [P, T] = (0, r.useState)(!1), [A, q] = (0, r.useState)(!1), [U, B] = (0, r.useState)(), D = e => {
-            "number" == typeof e && g && e < g.length && e > -1 && E({
+          } = (0, u.useGtmTrack)(), z = null !== g && (g?.length || 0) > 1 && ("flag_bg" === f || "fob" === w?.size), N = window.location.href.includes("cms5"), [E, I] = (0, o.useSearchParams)(), [P, T] = (0, r.useState)(!1), [A, q] = (0, r.useState)(!1), [U, B] = (0, r.useState)(), D = e => {
+            "number" == typeof e && g && e < g.length && e > -1 && I({
               info: g[e].toString()
             })
           }, H = () => {
@@ -1365,7 +1356,7 @@ try {
           }), [S, g]), (0, r.useEffect)((() => {
             const e = g?.findIndex((e => e === h));
             "number" == typeof e && (q(e <= 0), T(e >= R - 1))
-          }), [g, h, R, I]);
+          }), [g, h, R, E]);
           const [F] = (0, r.useState)({
             y: j,
             x,
@@ -1462,7 +1453,7 @@ try {
             },
             ae = p ? 0 : 1,
             se = (0, r.useRef)(null),
-            te = (0, k.jsx)(G.motion.button, {
+            te = (0, k.jsx)(L.motion.button, {
               className: "rockstargames-sites-rockstargamesf462dceb5efde1dd4885f34f45132e3d",
               "aria-label": "Close",
               initial: {
@@ -1479,13 +1470,13 @@ try {
               onKeyUp: ee
             });
           let ne = null;
-          return ne = N ? r.Fragment : L(), (0, r.useMemo)((() => (0, k.jsx)("div", {
+          return ne = N ? r.Fragment : G(), (0, r.useMemo)((() => (0, k.jsx)("div", {
             className: "rockstargames-sites-rockstargamesa1a5465ff4d4669854d9beb4e863413e",
             "data-show-nav": z,
             "data-aspect-ratio": v,
             children: (0, k.jsx)(ne, {
               children: (0, k.jsxs)("div", {
-                children: [(0, k.jsx)(G.motion.div, {
+                children: [(0, k.jsx)(L.motion.div, {
                   className: "rockstargames-sites-rockstargamescf4f951d4ea408858a9b48c822007342",
                   initial: {
                     opacity: 0
@@ -1495,7 +1486,7 @@ try {
                   onClick: () => X()
                 }), z && (0, k.jsxs)("div", {
                   className: "rockstargames-sites-rockstargamesd5753adf78798ed2e5e2ab02678cfe1b",
-                  children: [(0, k.jsxs)(G.motion.div, {
+                  children: [(0, k.jsxs)(L.motion.div, {
                     className: "rockstargames-sites-rockstargamesdbb0055ba799f28f1a2e41026b8781e8",
                     initial: {
                       opacity: 0
@@ -1527,7 +1518,7 @@ try {
                       "data-autofocus": !0
                     })]
                   }), te]
-                }), (0, k.jsx)(G.motion.div, {
+                }), (0, k.jsx)(L.motion.div, {
                   className: "rockstargames-sites-rockstargamese708da42918d8bbff9a8e1a36a2c4366",
                   ref: O,
                   initial: "initial",
@@ -1535,12 +1526,12 @@ try {
                   variants: W,
                   transition: Q,
                   style: _,
-                  children: (0, k.jsxs)(G.motion.div, {
+                  children: (0, k.jsxs)(L.motion.div, {
                     className: (0, t.classList)("rockstargames-sites-rockstargamesa7d77f83f629e9ae93f6934c8ba007b0", n),
                     id: "modal",
                     "data-testid": "modal",
                     role: "dialog",
-                    children: [!z && te, (0, k.jsx)(G.motion.div, {
+                    children: [!z && te, (0, k.jsx)(L.motion.div, {
                       className: (0, t.classList)("rockstargames-sites-rockstargamesf26fc1babb8dd1284d4c03b3dabff714", d),
                       initial: {
                         opacity: ae
@@ -1858,7 +1849,7 @@ try {
                     userProfileLink: m?.profile_link,
                     hasNotifications: p
                   })
-                }), l, (0, k.jsx)(I, {}), (0, k.jsx)(Y, {
+                }), l, (0, k.jsx)(E, {}), (0, k.jsx)(Y, {
                   headerHidden: n
                 }), !t && (0, k.jsx)(X(), {
                   onLanguageChange: _.onLanguageChange

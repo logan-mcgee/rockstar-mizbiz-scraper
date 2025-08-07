@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [6871, 9252], {
     66871: (e, t, a) => {
@@ -46,9 +46,9 @@ try {
               let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
               const [t, a] = (0, r.useState)([]), [o, i] = (0, r.useState)([]), [u, l] = (0, r.useState)(null), {
                 data: d,
-                loggedIn: p
+                loggedIn: f
               } = D(), {
-                hasGtaPlus: f
+                hasGtaPlus: p
               } = d ?? {}, m = (0, n.bn)(), k = (e, r) => {
                 const n = [];
                 e.forEach((e => {
@@ -62,11 +62,11 @@ try {
                 })), a([...t, ...n])
               };
               (0, r.useEffect)((() => {
-                if (d && null !== p) {
+                if (d && null !== f) {
                   const e = h(d);
                   o.length && e && k(o, e), l(e)
                 } else e || o.length && k(o)
-              }), [d, p, o]), (0, r.useEffect)((() => {
+              }), [d, f, o]), (0, r.useEffect)((() => {
                 const e = o.filter((e => -1 === t.indexOf(e)));
                 i(e)
               }), [t]);
@@ -91,8 +91,8 @@ try {
                   s.push(`${a}_${r}`), t.includes(r) || t.push(r)
                 })), {
                   member_id: e.id ?? void 0,
-                  login_state: p ?? !1,
-                  gta_plus_active: !!p && Boolean(f),
+                  login_state: f ?? !1,
+                  gta_plus_active: !!f && Boolean(p),
                   platforms_played: t.length ? t.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
                   games_played: s.length ? s.join("|").toUpperCase() : void 0,
                   gtao_platforms_played: a.length ? a.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
@@ -102,9 +102,9 @@ try {
               };
               return {
                 track: e => {
-                  const t = "boolean" == typeof p,
+                  const t = "boolean" == typeof f,
                     a = Boolean(d && u);
-                  if (!t || !0 === p && !a) {
+                  if (!t || !0 === f && !a) {
                     const t = [...o];
                     return t.push({
                       ...e
@@ -127,11 +127,11 @@ try {
           track: () => null
         },
         d = () => (0, r.useContext)(i) ?? l,
-        p = (0, s.setMakeVarItem)({
+        f = (0, s.setMakeVarItem)({
           key: "navOpenReactive",
           value: (0, s.makeVar)(null)
         }),
-        f = e => p(e),
+        p = e => f(e),
         m = (0, s.setMakeVarItem)({
           key: "jumpScMenuFocusReactive",
           value: (0, s.makeVar)(!1)
@@ -175,7 +175,7 @@ try {
           const e = (0, s.useReactiveVar)(x),
             t = (0, s.useReactiveVar)(S),
             a = (0, s.useReactiveVar)(v),
-            r = (0, s.useReactiveVar)(p),
+            r = (0, s.useReactiveVar)(f),
             n = (0, s.useReactiveVar)(h),
             c = (0, s.useReactiveVar)(w);
           return {
@@ -191,7 +191,7 @@ try {
             setCrewsNeeded: I,
             setCurrentCharId: y,
             setHasNotifications: g,
-            setNavOpen: f,
+            setNavOpen: p,
             setSelectedCharacterTuple: b,
             setUserData: E,
             setJumpScMenuFocus: k
@@ -209,7 +209,7 @@ try {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, f] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), h = void 0 === p, [g, v] = (0, r.useState)(1);
+          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [f, p] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), h = void 0 === f, [g, v] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
             "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
@@ -263,7 +263,7 @@ try {
                     token: l
                   })
                 } catch (e) {}
-              })(), k(!0)), !e && m && f(!1), e) {
+              })(), k(!0)), !e && m && p(!1), e) {
               const e = (e => {
                 let {
                   bearerToken: t
@@ -299,7 +299,7 @@ try {
             }
           }), [o, m]), (0, r.useEffect)((() => {
             (async () => {
-              if (p && i && n && !i?.crews) {
+              if (f && i && n && !i?.crews) {
                 const e = await (async e => {
                   let {
                     pingBearer: t,
@@ -324,9 +324,9 @@ try {
                 }), v((e => e - 1))
               }
             })()
-          }), [i?.nickname, n, p]), (0, r.useEffect)((() => {
+          }), [i?.nickname, n, f]), (0, r.useEffect)((() => {
             (async () => {
-              if (!p || !i || i?.gamesPlayed) return;
+              if (!f || !i || i?.gamesPlayed) return;
               const e = await (async e => {
                 let {
                   pingBearer: t
@@ -345,9 +345,9 @@ try {
                 gamesPlayed: e
               }), v((e => e - 1))
             })()
-          }), [i?.nickname, p]), (0, r.useEffect)((() => {
+          }), [i?.nickname, f]), (0, r.useEffect)((() => {
             (async () => {
-              if (p && i && "gtao" === a && !i?.characters?.gtao) {
+              if (f && i && "gtao" === a && !i?.characters?.gtao) {
                 const {
                   gtaoCharacters: e,
                   linkedAccounts: t
@@ -406,10 +406,10 @@ try {
                     gtaoCharacters: n,
                     linkedAccounts: u.linkedAccounts
                   };
-                  const p = a;
-                  let f = "",
+                  const f = a;
+                  let p = "",
                     m = "";
-                  return d?.map((e => ("xbl" === e?.onlineService ? f = e.userName : "np" === e?.onlineService && (m = e.userName), e))), n.sort(((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter))), n.map(((e, t) => (e.platformUsername = p, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = m || p), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = f || p), e))), {
+                  return d?.map((e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (m = e.userName), e))), n.sort(((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter))), n.map(((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = m || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e))), {
                     gtaoCharacters: n,
                     linkedAccounts: d
                   }
@@ -429,11 +429,11 @@ try {
                 }), v((e => e - 1))
               }
             })()
-          }), [a, i?.nickname, p]), (0, r.useEffect)((() => {
-            i?.id && i?.nonExpiredToken && (f(!0), C(i.id))
+          }), [a, i?.nickname, f]), (0, r.useEffect)((() => {
+            i?.id && i?.nonExpiredToken && (p(!0), C(i.id))
           }), [JSON.stringify(i)]), {
             data: i,
-            loggedIn: p,
+            loggedIn: f,
             loading: h
           }
         },

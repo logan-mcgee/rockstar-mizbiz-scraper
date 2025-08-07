@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [507, 2888], {
     5060: (e, t, n) => {
@@ -47,8 +47,8 @@ try {
         filterEventProps: () => l,
         get: () => P,
         merge: () => p,
-        mergeProps: () => c,
-        omit: () => g,
+        mergeProps: () => f,
+        omit: () => b,
         range: () => h,
         set: () => v,
         throttle: () => j
@@ -71,7 +71,7 @@ try {
         }
       }
 
-      function c(...e) {
+      function f(...e) {
         const t = {
           ...e[0]
         };
@@ -85,7 +85,7 @@ try {
         }
         return t
       }
-      const f = /^(on.*)$/,
+      const c = /^(on.*)$/,
         d = /^(onPress.*)$/;
 
       function l(e, {
@@ -95,7 +95,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (d.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (d.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : c.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -106,10 +106,10 @@ try {
       function h(e) {
         return u(e)
       }
-      var b = n(52953);
+      var g = n(52953);
 
-      function g(e, ...t) {
-        return b(e, ...t)
+      function b(e, ...t) {
+        return g(e, ...t)
       }
       var y = n(87090);
 
@@ -191,9 +191,9 @@ try {
           return T(s + e) + T(s - e) - o
         }
         const a = T(I(s * s - i)),
-          c = s ? Math.atan(I(-i) / s) : -R / 2;
-        let f;
-        return f = n < 0 ? (s > 0 ? 2 * R : R) - c : o < 0 ? (s > 0 ? 2 * R : -3 * R) + c : (s > 0 ? 0 : R) + c, 2 * a * Math.cos(f / 3) - o
+          f = s ? Math.atan(I(-i) / s) : -R / 2;
+        let c;
+        return c = n < 0 ? (s > 0 ? 2 * R : R) - f : o < 0 ? (s > 0 ? 2 * R : -3 * R) + f : (s > 0 ? 0 : R) + f, 2 * a * Math.cos(c / 3) - o
       }, N = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function C(e, t, n, r) {
@@ -203,17 +203,17 @@ try {
           s = 6 * (n - 2 * e),
           i = 3 * e,
           a = o * o,
-          c = s * s,
-          f = s / o,
-          d = 3 * s * i / a - c * s / (a * o),
-          l = 2 * i / o - c / a,
+          f = s * s,
+          c = s / o,
+          d = 3 * s * i / a - f * s / (a * o),
+          l = 2 * i / o - f / a,
           u = l * l * l,
           h = 3 / o,
-          b = 3 * t - 3 * r + 1,
-          g = r - 2 * t,
+          g = 3 * t - 3 * r + 1,
+          b = r - 2 * t,
           y = 3 * t,
           p = o ? D : A;
-        return e => 0 === e || 1 === e ? e : N(p(e, d, h, u, f), b, g, y)
+        return e => 0 === e || 1 === e ? e : N(p(e, d, h, u, c), g, b, y)
       }
     }
   }

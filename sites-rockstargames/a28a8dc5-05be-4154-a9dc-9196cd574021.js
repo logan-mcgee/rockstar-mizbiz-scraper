@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [2941], {
     22941: (o, t, e) => {
@@ -18,12 +18,12 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => f,
-        Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => L,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
-        Lightbox_Reset_Zoom_Button_Tooltip: () => s,
+        Lightbox_Dialog_Title: () => L,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Reset_Zoom_Button_Label: () => s,
+        Lightbox_Reset_Zoom_Button_Tooltip: () => b,
         Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => n,
@@ -38,14 +38,14 @@ try {
         a = "{shortcut} 누르기",
         n = "축소",
         d = "{shortcut} 누르기",
-        b = "초기화",
-        s = "{shortcut} 누르기",
+        s = "초기화",
+        b = "{shortcut} 누르기",
         g = "줌 레벨",
         u = "{zoom}%",
+        f = "다운로드",
         r = "다운로드",
-        h = "다운로드",
-        L = "라이트박스에서 이미지 열기",
-        f = "라이트박스 이미지",
+        h = "라이트박스에서 이미지 열기",
+        L = "라이트박스 이미지",
         p = "대체 문구: {alt}",
         c = {
           Lightbox_Close_Button_Label: _,
@@ -54,14 +54,14 @@ try {
           Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
-          Lightbox_Reset_Zoom_Button_Tooltip: s,
+          Lightbox_Reset_Zoom_Button_Label: s,
+          Lightbox_Reset_Zoom_Button_Tooltip: b,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: f,
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: p
         }
     }

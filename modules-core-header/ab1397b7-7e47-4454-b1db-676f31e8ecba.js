@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [5247], {
     85247: (o, t, e) => {
@@ -25,18 +25,18 @@ try {
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
-        Lightbox_Zoom_Out_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Tooltip: () => n,
+        Lightbox_Zoom_Out_Button_Label: () => a,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => x
       });
       var _ = "ライトボックスを閉じる",
         l = "{shortcut}を押す",
         i = "ズームイン",
-        a = "{shortcut}を押す",
-        n = "ズームアウト",
+        n = "{shortcut}を押す",
+        a = "ズームアウト",
         b = "{shortcut}を押す",
         d = "リセット",
         s = "{shortcut}を押す",
@@ -47,12 +47,12 @@ try {
         L = "ライトボックス内のイメージを開く",
         f = "ライトボックスのイメージ",
         p = "Altテキスト：{alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: a,
-          Lightbox_Zoom_Out_Button_Label: n,
+          Lightbox_Zoom_In_Button_Tooltip: n,
+          Lightbox_Zoom_Out_Button_Label: a,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: s,

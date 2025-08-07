@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [507], {
     32888: (e, t, n) => {
@@ -23,9 +23,9 @@ try {
         debounce: () => M,
         filterEventProps: () => l,
         get: () => P,
-        merge: () => p,
-        mergeProps: () => c,
-        omit: () => g,
+        merge: () => b,
+        mergeProps: () => d,
+        omit: () => _,
         range: () => h,
         set: () => v,
         throttle: () => k
@@ -48,7 +48,7 @@ try {
         }
       }
 
-      function c(...e) {
+      function d(...e) {
         const t = {
           ...e[0]
         };
@@ -62,7 +62,7 @@ try {
         }
         return t
       }
-      const d = /^(on.*)$/,
+      const c = /^(on.*)$/,
         f = /^(onPress.*)$/;
 
       function l(e, {
@@ -72,7 +72,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (f.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : d.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (f.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : c.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -83,15 +83,15 @@ try {
       function h(e) {
         return u(e)
       }
-      var b = n(52953);
+      var g = n(52953);
 
-      function g(e, ...t) {
-        return b(e, ...t)
+      function _(e, ...t) {
+        return g(e, ...t)
       }
-      var _ = n(87090);
+      var p = n(87090);
 
-      function p(e, t) {
-        return _(e, t)
+      function b(e, t) {
+        return p(e, t)
       }
       var y = n(98097);
 
@@ -168,9 +168,9 @@ try {
           return I(s + e) + I(s - e) - o
         }
         const i = I(R(s * s - a)),
-          c = s ? Math.atan(R(-a) / s) : -A / 2;
-        let d;
-        return d = n < 0 ? (s > 0 ? 2 * A : A) - c : o < 0 ? (s > 0 ? 2 * A : -3 * A) + c : (s > 0 ? 0 : A) + c, 2 * i * Math.cos(d / 3) - o
+          d = s ? Math.atan(R(-a) / s) : -A / 2;
+        let c;
+        return c = n < 0 ? (s > 0 ? 2 * A : A) - d : o < 0 ? (s > 0 ? 2 * A : -3 * A) + d : (s > 0 ? 0 : A) + d, 2 * i * Math.cos(c / 3) - o
       }, N = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function C(e, t, n, r) {
@@ -180,17 +180,17 @@ try {
           s = 6 * (n - 2 * e),
           a = 3 * e,
           i = o * o,
-          c = s * s,
-          d = s / o,
-          f = 3 * s * a / i - c * s / (i * o),
-          l = 2 * a / o - c / i,
+          d = s * s,
+          c = s / o,
+          f = 3 * s * a / i - d * s / (i * o),
+          l = 2 * a / o - d / i,
           u = l * l * l,
           h = 3 / o,
-          b = 3 * t - 3 * r + 1,
-          g = r - 2 * t,
-          _ = 3 * t,
-          p = o ? D : T;
-        return e => 0 === e || 1 === e ? e : N(p(e, f, h, u, d), b, g, _)
+          g = 3 * t - 3 * r + 1,
+          _ = r - 2 * t,
+          p = 3 * t,
+          b = o ? D : T;
+        return e => 0 === e || 1 === e ? e : N(b(e, f, h, u, c), g, _, p)
       }
     }
   }

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [7547], {
     59928: (e, s, a) => {
@@ -88,8 +88,8 @@ try {
       var o = a(31879),
         m = a.n(o),
         g = a(92440),
-        u = a(95966);
-      const f = e => {
+        f = a(95966);
+      const u = e => {
           let {
             impressionTracking: s,
             gtm: a = {},
@@ -141,16 +141,16 @@ try {
           } = e;
           return (0, i.jsx)("div", {
             style: a,
-            className: (0, u.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", l),
+            className: (0, f.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", l),
             id: r,
             "data-testid": "standard-group-of-items",
-            children: s.map((e => (0, i.jsx)(f, {
+            children: s.map((e => (0, i.jsx)(u, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, i.jsx)(p, {
                 to: e?.to,
                 children: (0, i.jsxs)("div", {
-                  className: (0, u.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                  className: (0, f.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, i.jsx)(b, {

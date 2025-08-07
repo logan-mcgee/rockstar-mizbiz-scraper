@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [8588], {
     76207: (e, o, r) => {
@@ -36,9 +36,9 @@ try {
         a = r(21423),
         s = r(91173),
         d = r(74687),
-        c = r(22759),
-        i = r(22259),
-        l = r(74406),
+        i = r(22759),
+        l = r(22259),
+        c = r(74406),
         u = r(54917),
         p = r(34902),
         f = r(79315),
@@ -60,18 +60,18 @@ try {
             defaultOpen: a,
             onOpenChange: s,
             modal: d = !1
-          } = e, c = m(o), i = n.useRef(null), [p, f] = n.useState(!1), [v, h] = (0, g.useControllableState)({
+          } = e, i = m(o), l = n.useRef(null), [p, f] = n.useState(!1), [v, h] = (0, g.useControllableState)({
             prop: t,
             defaultProp: a ?? !1,
             onChange: s,
             caller: C
           });
           return (0, w.jsx)(u.bL, {
-            ...c,
+            ...i,
             children: (0, w.jsx)(x, {
               scope: o,
-              contentId: (0, l.useId)(),
-              triggerRef: i,
+              contentId: (0, c.useId)(),
+              triggerRef: l,
               open: v,
               onOpenChange: h,
               onOpenToggle: n.useCallback((() => h((e => !e))), [h]),
@@ -91,9 +91,9 @@ try {
             ...t
           } = e, a = O(A, r), s = m(r), {
             onCustomAnchorAdd: d,
-            onCustomAnchorRemove: c
+            onCustomAnchorRemove: i
           } = a;
-          return n.useEffect((() => (d(), () => c())), [d, c]), (0, w.jsx)(u.Mz, {
+          return n.useEffect((() => (d(), () => i())), [d, i]), (0, w.jsx)(u.Mz, {
             ...s,
             ...t,
             ref: o
@@ -105,20 +105,20 @@ try {
           const {
             __scopePopover: r,
             ...n
-          } = e, s = O(j, r), d = m(r), c = (0, a.s)(o, s.triggerRef), i = (0, w.jsx)(v.sG.button, {
+          } = e, s = O(j, r), d = m(r), i = (0, a.s)(o, s.triggerRef), l = (0, w.jsx)(v.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": s.open,
             "aria-controls": s.contentId,
             "data-state": U(s.open),
             ...n,
-            ref: c,
+            ref: i,
             onClick: (0, t.m)(e.onClick, s.onOpenToggle)
           });
-          return s.hasCustomAnchor ? i : (0, w.jsx)(u.Mz, {
+          return s.hasCustomAnchor ? l : (0, w.jsx)(u.Mz, {
             asChild: !0,
             ...d,
-            children: i
+            children: l
           })
         }));
       E.displayName = j;
@@ -172,7 +172,7 @@ try {
           const r = O(T, e.__scopePopover),
             s = n.useRef(null),
             d = (0, a.s)(o, s),
-            c = n.useRef(!1);
+            i = n.useRef(!1);
           return n.useEffect((() => {
             const e = s.current;
             if (e) return (0, b.Eq)(e)
@@ -185,13 +185,13 @@ try {
               trapFocus: r.open,
               disableOutsidePointerEvents: !0,
               onCloseAutoFocus: (0, t.m)(e.onCloseAutoFocus, (e => {
-                e.preventDefault(), c.current || r.triggerRef.current?.focus()
+                e.preventDefault(), i.current || r.triggerRef.current?.focus()
               })),
               onPointerDownOutside: (0, t.m)(e.onPointerDownOutside, (e => {
                 const o = e.detail.originalEvent,
                   r = 0 === o.button && !0 === o.ctrlKey,
                   n = 2 === o.button || r;
-                c.current = n
+                i.current = n
               }), {
                 checkForDefaultPrevented: !1
               }),
@@ -228,13 +228,13 @@ try {
             onOpenAutoFocus: t,
             onCloseAutoFocus: a,
             disableOutsidePointerEvents: s,
-            onEscapeKeyDown: l,
+            onEscapeKeyDown: c,
             onPointerDownOutside: p,
             onFocusOutside: f,
             onInteractOutside: v,
             ...h
           } = e, g = O(T, r), b = m(r);
-          return (0, c.Oh)(), (0, w.jsx)(i.n, {
+          return (0, i.Oh)(), (0, w.jsx)(l.n, {
             asChild: !0,
             loop: !0,
             trapped: n,
@@ -244,7 +244,7 @@ try {
               asChild: !0,
               disableOutsidePointerEvents: s,
               onInteractOutside: v,
-              onEscapeKeyDown: l,
+              onEscapeKeyDown: c,
               onPointerDownOutside: p,
               onFocusOutside: f,
               onDismiss: () => g.onOpenChange(!1),

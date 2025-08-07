@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -126,9 +126,9 @@ try {
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
           c = l.localeData,
-          d = l.getDefaultLocale,
-          f = i(e);
-        f.initializedRelativeTimeFormat = !0;
+          f = l.getDefaultLocale,
+          d = i(e);
+        d.initializedRelativeTimeFormat = !0;
         var y = (0, r.CanonicalizeLocaleList)(t),
           m = Object.create(null),
           p = (0, r.CoerceOptionsToObject)(a),
@@ -137,12 +137,12 @@ try {
         var b = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         m.nu = b;
-        var g = (0, n.ResolveLocale)(u, y, m, s, c, d),
+        var g = (0, n.ResolveLocale)(u, y, m, s, c, f),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+        d.locale = w, d.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
       };
       var r = a(20114),
         n = a(39368),
@@ -169,14 +169,14 @@ try {
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
           c = s.fields,
-          d = s.style,
-          f = s.numeric,
+          f = s.style,
+          d = s.numeric,
           y = s.pluralRules,
           m = s.numberFormat,
           p = u;
-        "short" === d ? p = "".concat(u, "-short") : "narrow" === d && (p = "".concat(u, "-narrow")), p in c || (p = u);
+        "short" === f ? p = "".concat(u, "-short") : "narrow" === f && (p = "".concat(u, "-narrow")), p in c || (p = u);
         var v = c[p];
-        if ("auto" === f && (0, r.ToString)(t) in v) return [{
+        if ("auto" === d && (0, r.ToString)(t) in v) return [{
           type: "literal",
           value: v[(0, r.ToString)(t)]
         }];

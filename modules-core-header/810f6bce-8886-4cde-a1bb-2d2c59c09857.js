@@ -1,16 +1,16 @@
 try {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     e = (new a.Error).stack;
-  e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "84b11ece-5385-4144-862e-30e8f697e9d0", a._sentryDebugIdIdentifier = "sentry-dbid-84b11ece-5385-4144-862e-30e8f697e9d0")
+  e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "810f6bce-8886-4cde-a1bb-2d2c59c09857", a._sentryDebugIdIdentifier = "sentry-dbid-810f6bce-8886-4cde-a1bb-2d2c59c09857")
 } catch (a) {} {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   a._sentryModuleMetadata = a._sentryModuleMetadata || {}, a._sentryModuleMetadata[(new a.Error).stack] = Object.assign({}, a._sentryModuleMetadata[(new a.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [8846], {
     10046: a => {
@@ -84,7 +84,7 @@ try {
             opacity: 0
           }
         },
-        O = {
+        R = {
           open: {
             height: "auto",
             width: "100%",
@@ -102,7 +102,7 @@ try {
             }
           }
         },
-        R = {
+        O = {
           open: {
             transform: "translateY(0%)",
             display: "block"
@@ -124,13 +124,13 @@ try {
             f = t(10046),
             [L, j] = (0, s.useState)(!1),
             [S, N] = (0, s.useState)(!1),
-            [P, O] = (0, s.useState)(["open"]),
+            [P, R] = (0, s.useState)(["open"]),
             {
               isNavHidden: D
             } = (0, s.useContext)(c.PY),
             G = a => {
               const e = ["open", ...a.filter((a => "open" !== a))];
-              O(e)
+              R(e)
             },
             z = () => {
               j(!1), N(!1)
@@ -226,7 +226,7 @@ try {
                             children: p.formatMessage(m.A.nav_avatarmenu_title)
                           })
                         }), (0, h.jsxs)(d.motion.div, {
-                          variants: R,
+                          variants: O,
                           initial: "closed",
                           animate: "open",
                           exit: "closed",
@@ -324,7 +324,7 @@ try {
             asChild: !0,
             ...t,
             children: (0, h.jsx)(d.motion.div, {
-              variants: O,
+              variants: R,
               initial: "closed",
               animate: i ? "open" : "closed",
               transition: {
@@ -377,8 +377,8 @@ try {
         maxPayne: () => P,
         maxPayne2: () => B,
         maxPayne3: () => A,
-        midnightclub: () => O,
-        midnightclub2: () => R,
+        midnightclub: () => R,
+        midnightclub2: () => O,
         midnightclub3: () => D,
         midnightclubStreetRacing: () => G,
         oni: () => z,
@@ -386,8 +386,8 @@ try {
         redDeadRedemption: () => V,
         redDeadRedemption2: () => q,
         redDeadRedemptionUndeadNightmare: () => H,
-        redDeadRevolver: () => F,
-        rsg: () => $,
+        redDeadRevolver: () => $,
+        rsg: () => F,
         skateAndDestroy: () => J,
         smugglersRun: () => W,
         smugglersRun2: () => U,
@@ -401,7 +401,7 @@ try {
       var n = {};
       t.r(n), t.d(n, {
         GamesMenu: () => Aa,
-        GamesMenuItem: () => Oa,
+        GamesMenuItem: () => Ra,
         default: () => Da
       });
       var o = t(71127),
@@ -3048,7 +3048,7 @@ try {
             ga: "cta_buy"
           }
         }),
-        O = () => ({
+        R = () => ({
           site: "midnightclub",
           appearancePaths: {
             [r.C.www]: [{
@@ -3059,7 +3059,7 @@ try {
           brand: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fce5da0e35899b99c836bd73e2f7aa7a.png",
           links: []
         }),
-        R = () => ({
+        O = () => ({
           site: "midnightclub2",
           appearancePaths: {
             [r.C.www]: [{
@@ -3563,7 +3563,7 @@ try {
           brand: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/27bc39e322a4e55dc8b34fa4543269b8.svg",
           links: []
         }),
-        F = () => ({
+        $ = () => ({
           site: "reddeadrevolver",
           appearancePaths: {
             [r.C.www]: [{
@@ -3574,7 +3574,7 @@ try {
           brand: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8f508003b671cb320749ffc1eb2aab25.svg",
           links: []
         }),
-        $ = a => ({
+        F = a => ({
           site: "rsg",
           appearancePaths: {
             [r.C.www]: [{
@@ -4075,7 +4075,8 @@ try {
             text: a.formatMessage(ha.games_menu_vi),
             gaText: "Grand Theft Auto VI",
             path: "/VI",
-            isLegacy: !0,
+            useLocale: !0,
+            externalRoute: !0,
             dataTestId: "VI"
           }, {
             titleSlug: "gta-v",
@@ -4161,14 +4162,14 @@ try {
                 title: a.text,
                 gaText: a.gaText,
                 gaBreadCrumb: `Games > ${a.gaText}`,
-                path: (l ? "" : g) + a.path,
+                path: (!l || a.externalRoute ? a.useLocale ? `${g}${i}` : g : "") + a.path,
                 dataTestId: a.dataTestId,
                 onNavigate: e
               }, a.titleSlug)))
             })]
           })
         },
-        Oa = a => {
+        Ra = a => {
           let {
             onNavigate: e,
             dataTestId: t
@@ -4180,7 +4181,7 @@ try {
             {
               inMobileMenu: r
             } = (0, o.useContext)(Ma.xN);
-          return r ? (0, va.jsx)(Ra, {
+          return r ? (0, va.jsx)(Oa, {
             onNavigate: e
           }) : (0, va.jsxs)(wa.Dr, {
             children: [(0, va.jsx)(wa.cQ, {
@@ -4197,7 +4198,7 @@ try {
             })]
           })
         },
-        Ra = a => {
+        Oa = a => {
           let {
             onNavigate: e
           } = a;
@@ -4248,7 +4249,7 @@ try {
                   title: a.text,
                   gaText: a.gaText,
                   gaBreadCrumb: `Games > ${a.gaText}`,
-                  path: (g ? "" : c) + a.path,
+                  path: (!g || a.externalRoute ? a.useLocale ? `${c}${l}` : c : "") + a.path,
                   dataTestId: a.dataTestId,
                   onNavigate: e,
                   onClick: i
@@ -4257,7 +4258,7 @@ try {
             })]
           })
         },
-        Da = Ra,
+        Da = Oa,
         Ga = () => {
           const a = (() => {
             const a = (0, r.A)(),
@@ -4531,13 +4532,13 @@ try {
                 invalidChars: [...new Set(e)].join(", ")
               })), !1) : (b(""), !0)
             }), []),
-            O = (0, o.useCallback)(((a, e) => {
+            R = (0, o.useCallback)(((a, e) => {
               if (A(a) && e) {
                 const t = B(L.targets, e);
                 return t ? f(a, t.location) : null
               }
             }), [L]),
-            R = (0, o.useMemo)((() => ({
+            O = (0, o.useMemo)((() => ({
               loggedInLinks: la(u, g, c, _).map(p),
               helpItem: p(ca(u))
             })), [u, g, c, _]);
@@ -4554,8 +4555,8 @@ try {
             globalNavigationComponent: t,
             searchConfig: L,
             gamesMenuComponent: n,
-            avatarMenuData: R,
-            onSearch: O,
+            avatarMenuData: O,
+            onSearch: R,
             getQueryFromUrl: P,
             errorMessage: h,
             localisedStrings: j,
@@ -4709,8 +4710,8 @@ try {
     },
     42549: (a, e, t) => {
       t.d(e, {
-        B: () => p,
-        s: () => v
+        B: () => v,
+        s: () => u
       });
       var s = t(71127),
         n = t(73012),
@@ -4722,12 +4723,11 @@ try {
         g = t(70954);
       let c = "rockstargames-modules-core-headeredd6d5149d36c2b3d89460393482b5a1",
         _ = "rockstargames-modules-core-headera0afcf77006159d689145a562371f6af",
-        m = "rockstargames-modules-core-headeree781136421e86f1ba76f28f45009bfd",
-        u = "rockstargames-modules-core-headere3008521b763b81f3b4f2c3659d22cc2";
-      const v = (0, s.createContext)({
+        m = "rockstargames-modules-core-headeree781136421e86f1ba76f28f45009bfd";
+      const u = (0, s.createContext)({
           inQuickMenu: !1
         }),
-        p = a => {
+        v = a => {
           let {
             children: e
           } = a;
@@ -4744,8 +4744,8 @@ try {
               y: 0,
               transition: r.b.staggerFade
             }
-          }, p = d()(c, t ? _ : m), f = d()(u, t ? _ : m);
-          return t ? (0, g.jsx)(v.Provider, {
+          }, v = d()(c, t ? _ : m);
+          return t ? (0, g.jsx)(u.Provider, {
             value: {
               inQuickMenu: !0
             },
@@ -4753,26 +4753,19 @@ try {
               asChild: !0,
               children: (0, g.jsx)(o.motion.div, {
                 variants: i,
-                className: p,
-                children: s.Children.map(e, (a => (0, g.jsx)(o.motion.li, {
-                  variants: i,
-                  className: f,
-                  children: a
-                })))
+                className: v,
+                children: e
               })
             })
-          }) : (0, g.jsx)(v.Provider, {
+          }) : (0, g.jsx)(u.Provider, {
             value: {
               inQuickMenu: !0
             },
             children: (0, g.jsx)(l.Root, {
               asChild: !0,
               children: (0, g.jsx)("div", {
-                className: p,
-                children: s.Children.map(e, (a => (0, g.jsx)(o.motion.li, {
-                  className: f,
-                  children: a
-                })))
+                className: v,
+                children: e
               })
             })
           })
@@ -4870,11 +4863,11 @@ try {
     61225: (a, e, t) => {
       t.d(e, {
         jd: () => H,
-        W1: () => F,
+        W1: () => $,
         rm: () => Z,
         Dr: () => J,
         w4: () => aa,
-        cO: () => $,
+        cO: () => F,
         aC: () => X,
         cQ: () => W
       });
@@ -4916,8 +4909,8 @@ try {
         P = "rockstargames-modules-core-headerec5d2c793461b20aed9bb78b399482ad",
         B = "rockstargames-modules-core-headerfaca5fabb7852e77e62aa1da55dfad31",
         A = "rockstargames-modules-core-headerc55155ed6163d24327c5172a998ff912",
-        O = "rockstargames-modules-core-headerfe55c83723647f4df2a5ba88baa866e2",
-        R = "rockstargames-modules-core-headere02f603679059fd953b6b8ba3a637b60",
+        R = "rockstargames-modules-core-headerfe55c83723647f4df2a5ba88baa866e2",
+        O = "rockstargames-modules-core-headere02f603679059fd953b6b8ba3a637b60",
         D = "rockstargames-modules-core-headeree8b6e236dcc760405f887886740a954",
         G = "rockstargames-modules-core-headerc640bf864619b6a2296140ddb12e8475",
         z = "rockstargames-modules-core-headerbba8a763e416f3af074bb59987ec7834",
@@ -4932,7 +4925,7 @@ try {
         H = (0, s.createContext)({
           isHidden: !1
         }),
-        F = a => {
+        $ = a => {
           let {
             children: e
           } = a;
@@ -4986,7 +4979,7 @@ try {
                 value: r,
                 onValueChange: d,
                 tabIndex: -1,
-                children: [(0, w.jsxs)($, {
+                children: [(0, w.jsxs)(F, {
                   ref: m,
                   className: y,
                   children: [l, c?.length > 0 && (0, w.jsxs)(J, {
@@ -4995,13 +4988,13 @@ try {
                       children: t.formatMessage(h.A.nav_more_dropdown)
                     }), (0, w.jsx)(Z, {
                       children: (0, w.jsx)(X, {
-                        children: (0, w.jsx)($, {
+                        children: (0, w.jsx)(F, {
                           children: c
                         })
                       })
                     })]
                   })]
-                }), (0, w.jsx)($, {
+                }), (0, w.jsx)(F, {
                   ref: u,
                   className: C,
                   "aria-hidden": "true",
@@ -5016,7 +5009,7 @@ try {
             })
           })
         },
-        $ = (0, s.forwardRef)((function(a, e) {
+        F = (0, s.forwardRef)((function(a, e) {
           let {
             children: t,
             className: s,
@@ -5084,8 +5077,8 @@ try {
             onPointerLeave: V,
             className: c()(B, {
               [A]: r,
-              [R]: l,
-              [O]: g,
+              [O]: l,
+              [R]: g,
               [D]: m,
               [G]: i,
               [z]: u > 1
@@ -5147,33 +5140,36 @@ try {
           } = (0, s.useContext)(H), {
             inAvatarMenu: b
           } = (0, s.useContext)(p.QY), M = [d, l, g].includes(u);
-          return h ? null : (0, w.jsx)(o.Content, {
-            forceMount: i || f || void 0,
-            ref: e,
-            className: c()({
-              [T]: !f,
-              [I]: f,
-              [L]: i && !f,
-              [j]: b
-            }),
-            onPointerEnter: V,
-            onPointerLeave: V,
-            onPointerDown: V,
-            onPointerDownOutside: i ? V : null,
-            style: {
-              left: v?.current?.offsetLeft,
-              top: (v?.current?.offsetHeight ?? 0) + 3
-            },
-            asChild: !0,
-            ...r,
-            children: (0, w.jsx)(m.motion.div, {
-              variants: n || i || f ? Q : U,
-              initial: "closed",
-              animate: M ? "open" : "closed",
-              transition: {
-                duration: .2
+          return h ? null : (0, w.jsx)(m.AnimatePresence, {
+            children: M && (0, w.jsx)(o.Content, {
+              forceMount: !0,
+              ref: e,
+              className: c()({
+                [T]: !f,
+                [I]: f,
+                [L]: i && !f,
+                [j]: b
+              }),
+              onPointerEnter: V,
+              onPointerLeave: V,
+              onPointerDown: V,
+              onPointerDownOutside: i ? V : null,
+              style: {
+                left: v?.current?.offsetLeft,
+                top: (v?.current?.offsetHeight ?? 0) + 3
               },
-              children: t
+              asChild: !0,
+              ...r,
+              children: (0, w.jsx)(m.motion.div, {
+                variants: n || i || f ? Q : U,
+                initial: "closed",
+                animate: "open",
+                exit: "closed",
+                transition: {
+                  duration: .2
+                },
+                children: t
+              })
             })
           })
         })),
@@ -5251,8 +5247,8 @@ try {
             } = (0, s.useContext)(K),
             L = c()({
               [A]: b,
-              [R]: x,
-              [O]: k,
+              [O]: x,
+              [R]: k,
               [D]: T,
               [G]: M,
               [z]: I > 1

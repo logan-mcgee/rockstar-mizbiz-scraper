@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [648], {
     15485: (e, n, t) => {
@@ -29,7 +29,7 @@ try {
     },
     40648: (e, n, t) => {
       t.r(n), t.d(n, {
-        Content: () => be,
+        Content: () => Ce,
         Indicator: () => Re,
         Item: () => we,
         Link: () => Me,
@@ -46,7 +46,7 @@ try {
         Root: () => pe,
         Sub: () => ge,
         Trigger: () => he,
-        Viewport: () => Ce,
+        Viewport: () => be,
         createNavigationMenuScope: () => T
       });
       var o = t(71127),
@@ -67,7 +67,7 @@ try {
         h = t(63694),
         M = t(70954),
         R = "NavigationMenu",
-        [b, C, y] = (0, v.N)(R),
+        [C, b, y] = (0, v.N)(R),
         [x, N, E] = (0, v.N)(R),
         [_, T] = (0, a.A)(R, [y, E]),
         [j, I] = _(R),
@@ -83,7 +83,7 @@ try {
             orientation: v = "horizontal",
             dir: p,
             ...g
-          } = e, [m, w] = o.useState(null), h = (0, c.s)(n, (e => w(e))), b = (0, l.jH)(p), C = o.useRef(0), y = o.useRef(0), x = o.useRef(0), [N, E] = o.useState(!0), [_, T] = (0, u.useControllableState)({
+          } = e, [m, w] = o.useState(null), h = (0, c.s)(n, (e => w(e))), C = (0, l.jH)(p), b = o.useRef(0), y = o.useRef(0), x = o.useRef(0), [N, E] = o.useState(!0), [_, T] = (0, u.useControllableState)({
             prop: r,
             onChange: e => {
               const n = f > 0;
@@ -96,24 +96,24 @@ try {
           }), [T]), I = o.useCallback((e => {
             window.clearTimeout(y.current), T(e)
           }), [T]), k = o.useCallback((e => {
-            _ === e ? window.clearTimeout(y.current) : C.current = window.setTimeout((() => {
+            _ === e ? window.clearTimeout(y.current) : b.current = window.setTimeout((() => {
               window.clearTimeout(y.current), T(e)
             }), d)
           }), [_, T, d]);
           return o.useEffect((() => () => {
-            window.clearTimeout(C.current), window.clearTimeout(y.current), window.clearTimeout(x.current)
+            window.clearTimeout(b.current), window.clearTimeout(y.current), window.clearTimeout(x.current)
           }), []), (0, M.jsx)(A, {
             scope: t,
             isRootMenu: !0,
             value: _,
-            dir: b,
+            dir: C,
             orientation: v,
             rootNavigationMenu: m,
             onTriggerEnter: e => {
-              window.clearTimeout(C.current), N ? k(e) : I(e)
+              window.clearTimeout(b.current), N ? k(e) : I(e)
             },
             onTriggerLeave: () => {
-              window.clearTimeout(C.current), j()
+              window.clearTimeout(b.current), j()
             },
             onContentEnter: () => window.clearTimeout(y.current),
             onContentLeave: j,
@@ -124,7 +124,7 @@ try {
             children: (0, M.jsx)(s.sG.nav, {
               "aria-label": "Main",
               "data-orientation": v,
-              dir: b,
+              dir: C,
               ...g,
               ref: h
             })
@@ -179,7 +179,7 @@ try {
             onTriggerLeave: v,
             onContentEnter: p,
             onContentLeave: m
-          } = e, [h, R] = o.useState(null), [C, y] = o.useState(new Map), [x, N] = o.useState(null);
+          } = e, [h, R] = o.useState(null), [b, y] = o.useState(new Map), [x, N] = o.useState(null);
           return (0, M.jsx)(j, {
             scope: n,
             isRootMenu: t,
@@ -205,11 +205,11 @@ try {
             onViewportContentRemove: o.useCallback((e => {
               y((n => n.has(e) ? (n.delete(e), new Map(n)) : n))
             }), []),
-            children: (0, M.jsx)(b.Provider, {
+            children: (0, M.jsx)(C.Provider, {
               scope: n,
               children: (0, M.jsx)(k, {
                 scope: n,
-                items: C,
+                items: b,
                 children: s
               })
             })
@@ -230,7 +230,7 @@ try {
               position: "relative"
             },
             ref: r.onIndicatorTrackChange,
-            children: (0, M.jsx)(b.Slot, {
+            children: (0, M.jsx)(C.Slot, {
               scope: t,
               children: r.isRootMenu ? (0, M.jsx)(re, {
                 asChild: !0,
@@ -294,7 +294,7 @@ try {
             ...a
           } = e, u = I($, e.__scopeNavigationMenu), l = G($, e.__scopeNavigationMenu), d = o.useRef(null), f = (0, c.s)(d, l.triggerRef, n), v = de(u.baseId, l.value), p = fe(u.baseId, l.value), g = o.useRef(!1), m = o.useRef(!1), w = l.value === u.value;
           return (0, M.jsxs)(M.Fragment, {
-            children: [(0, M.jsx)(b.ItemSlot, {
+            children: [(0, M.jsx)(C.ItemSlot, {
               scope: t,
               value: l.value,
               children: (0, M.jsx)(ie, {
@@ -404,7 +404,7 @@ try {
           const {
             __scopeNavigationMenu: t,
             ...r
-          } = e, a = I(B, t), i = C(t), [u, c] = o.useState(null), [l, d] = o.useState(null), f = "horizontal" === a.orientation, v = Boolean(a.value);
+          } = e, a = I(B, t), i = b(t), [u, c] = o.useState(null), [l, d] = o.useState(null), f = "horizontal" === a.orientation, v = Boolean(a.value);
           o.useEffect((() => {
             const e = i(),
               n = e.find((e => e.value === a.value))?.ref.current;
@@ -495,7 +495,7 @@ try {
             onRootContentClose: l,
             onContentFocusOutside: d,
             ...f
-          } = e, v = I(Z, t), g = o.useRef(null), m = (0, c.s)(g, n), w = de(v.baseId, r), h = fe(v.baseId, r), R = C(t), b = o.useRef(null), {
+          } = e, v = I(Z, t), g = o.useRef(null), m = (0, c.s)(g, n), w = de(v.baseId, r), h = fe(v.baseId, r), R = b(t), C = o.useRef(null), {
             onItemDismiss: y
           } = v;
           o.useEffect((() => {
@@ -514,7 +514,7 @@ try {
               t = e.indexOf(v.previousValue),
               o = r === v.value,
               a = t === e.indexOf(r);
-            if (!o && !a) return b.current;
+            if (!o && !a) return C.current;
             const i = (() => {
               if (n !== t) {
                 if (o && -1 !== t) return n > t ? "from-end" : "from-start";
@@ -522,7 +522,7 @@ try {
               }
               return null
             })();
-            return b.current = i, i
+            return C.current = i, i
           }), [v.previousValue, v.value, v.dir, R, r]);
           return (0, M.jsx)(re, {
             asChild: !0,
@@ -587,7 +587,7 @@ try {
             __scopeNavigationMenu: t,
             children: r,
             ...a
-          } = e, u = I(ne, t), l = (0, c.s)(n, u.onViewportChange), f = S(Z, e.__scopeNavigationMenu), [v, p] = o.useState(null), [g, m] = o.useState(null), w = v ? v?.width + "px" : void 0, h = v ? v?.height + "px" : void 0, R = Boolean(u.value), b = R ? u.value : u.previousValue;
+          } = e, u = I(ne, t), l = (0, c.s)(n, u.onViewportChange), f = S(Z, e.__scopeNavigationMenu), [v, p] = o.useState(null), [g, m] = o.useState(null), w = v ? v?.width + "px" : void 0, h = v ? v?.height + "px" : void 0, R = Boolean(u.value), C = R ? u.value : u.previousValue;
           return ce(g, (() => {
             g && p({
               width: g.offsetWidth,
@@ -611,7 +611,7 @@ try {
               forceMount: t,
               ...o
             }]) => {
-              const r = b === e;
+              const r = C === e;
               return (0, M.jsx)(d.C, {
                 present: t || r,
                 children: (0, M.jsx)(ee, {
@@ -720,8 +720,8 @@ try {
         he = H,
         Me = W,
         Re = q,
-        be = X,
-        Ce = te
+        Ce = X,
+        be = te
     },
     50438: (e, n, t) => {
       t.d(n, {

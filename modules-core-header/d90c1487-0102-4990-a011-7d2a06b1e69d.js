@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [4105], {
     5060: (e, t, n) => {
@@ -64,8 +64,8 @@ try {
         debounce: () => j,
         filterEventProps: () => l,
         get: () => P,
-        merge: () => p,
-        mergeProps: () => c,
+        merge: () => _,
+        mergeProps: () => d,
         omit: () => y,
         range: () => h,
         set: () => v,
@@ -75,7 +75,7 @@ try {
         o = n(5060);
       const s = new Map;
 
-      function a(e, t) {
+      function i(e, t) {
         if (e === t) return e;
         const n = s.get(e);
         if (n) return n.forEach((e => e(t))), t;
@@ -83,13 +83,13 @@ try {
         return r ? (r.forEach((t => t(e))), e) : t
       }
 
-      function i(...e) {
+      function a(...e) {
         return (...t) => {
           for (const n of e) "function" == typeof n && n(...t)
         }
       }
 
-      function c(...e) {
+      function d(...e) {
         const t = {
           ...e[0]
         };
@@ -98,13 +98,13 @@ try {
           for (const e in r) {
             const n = t[e],
               s = r[e];
-            "function" == typeof n && "function" == typeof s && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = i(n, s) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof s ? "id" === e && n && s ? t.id = a(n, s) : t[e] = void 0 !== s ? s : n : t[e] = (0, o.A)(n, s)
+            "function" == typeof n && "function" == typeof s && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = a(n, s) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof s ? "id" === e && n && s ? t.id = i(n, s) : t[e] = void 0 !== s ? s : n : t[e] = (0, o.A)(n, s)
           }
         }
         return t
       }
       const f = /^(on.*)$/,
-        d = /^(onPress.*)$/;
+        c = /^(onPress.*)$/;
 
       function l(e, {
         onPress: t
@@ -113,7 +113,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (d.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (c.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -129,15 +129,15 @@ try {
       function y(e, ...t) {
         return g(e, ...t)
       }
-      var b = n(87090);
+      var p = n(87090);
 
-      function p(e, t) {
-        return b(e, t)
+      function _(e, t) {
+        return p(e, t)
       }
-      var _ = n(98097);
+      var b = n(98097);
 
       function w(e) {
-        return _(e)
+        return b(e)
       }
       var m = n(76030);
 
@@ -196,15 +196,15 @@ try {
         PI: R
       } = Math, D = (e, t, n, r, o) => {
         const s = t + n * e,
-          a = s ** 2 + r;
-        if (a > 0) {
-          const e = I(a);
+          i = s ** 2 + r;
+        if (i > 0) {
+          const e = I(i);
           return T(s + e) + T(s - e) - o
         }
-        const i = T(I(s * s - a)),
-          c = s ? Math.atan(I(-a) / s) : -R / 2;
+        const a = T(I(s * s - i)),
+          d = s ? Math.atan(I(-i) / s) : -R / 2;
         let f;
-        return f = n < 0 ? (s > 0 ? 2 * R : R) - c : o < 0 ? (s > 0 ? 2 * R : -3 * R) + c : (s > 0 ? 0 : R) + c, 2 * i * Math.cos(f / 3) - o
+        return f = n < 0 ? (s > 0 ? 2 * R : R) - d : o < 0 ? (s > 0 ? 2 * R : -3 * R) + d : (s > 0 ? 0 : R) + d, 2 * a * Math.cos(f / 3) - o
       }, N = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function C(e, t, n, r) {
@@ -212,19 +212,19 @@ try {
         if (e === t && n === r) return A;
         const o = 6 * (3 * e - 3 * n + 1),
           s = 6 * (n - 2 * e),
-          a = 3 * e,
-          i = o * o,
-          c = s * s,
+          i = 3 * e,
+          a = o * o,
+          d = s * s,
           f = s / o,
-          d = 3 * s * a / i - c * s / (i * o),
-          l = 2 * a / o - c / i,
+          c = 3 * s * i / a - d * s / (a * o),
+          l = 2 * i / o - d / a,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           y = r - 2 * t,
-          b = 3 * t,
-          p = o ? D : A;
-        return e => 0 === e || 1 === e ? e : N(p(e, d, h, u, f), g, y, b)
+          p = 3 * t,
+          _ = o ? D : A;
+        return e => 0 === e || 1 === e ? e : N(_(e, c, h, u, f), g, y, p)
       }
     }
   }

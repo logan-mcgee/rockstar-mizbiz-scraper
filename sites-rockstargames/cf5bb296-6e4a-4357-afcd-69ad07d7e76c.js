@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9499], {
     1157: e => {
@@ -48,12 +48,12 @@ try {
       });
       var t = s(62229),
         r = s(95966);
-      const c = {
+      const o = {
         img: "rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df",
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0"
       };
-      var o = s(70954);
+      var c = s(70954);
       (0, r.importAll)(s(86751));
       const m = e => {
         let {
@@ -69,13 +69,13 @@ try {
           return a && (e = n ? s(24865)(`./${i}/mobile.jpg`) : s(53781)(`./${i}/desktop.jpg`)), e || (e = s(39294)(`./${i}.jpg`), e += `?im=Resize=${m}`), e
         }), [n, i]), [f] = (0, r.usePreloadImg)(g);
         let p = g;
-        return (0, o.jsx)("div", {
+        return (0, c.jsx)("div", {
           role: "img",
           "aria-label": d,
           style: {
             backgroundImage: `url(${p})`
           },
-          className: [c.img, f ? c.startAnimation : "", a ? c.wide : ""].join(" ")
+          className: [o.img, f ? o.startAnimation : "", a ? o.wide : ""].join(" ")
         })
       }
     },
@@ -268,20 +268,20 @@ try {
           definitions: [r(e, a)]
         };
         e.hasOwnProperty("loc") && (s.loc = e.loc);
-        var c = t[a] || new Set,
-          o = new Set,
+        var o = t[a] || new Set,
+          c = new Set,
           m = new Set;
-        for (c.forEach((function(e) {
+        for (o.forEach((function(e) {
             m.add(e)
           })); m.size > 0;) {
           var d = m;
           m = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (t[e] || new Set).forEach((function(e) {
+            c.has(e) || (c.add(e), (t[e] || new Set).forEach((function(e) {
               m.add(e)
             })))
           }))
         }
-        return o.forEach((function(a) {
+        return c.forEach((function(a) {
           var t = r(e, a);
           t && s.definitions.push(t)
         })), s
@@ -325,11 +325,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -338,7 +338,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 24865
+      }, r.resolve = o, e.exports = r, r.id = 24865
     },
     26788: e => {
       "use strict";
@@ -355,8 +355,8 @@ try {
       });
       var t = s(62229),
         r = s(95945),
-        c = s.n(r);
-      const o = {
+        o = s.n(r);
+      const c = {
         dropdownWrapper: "rockstargames-sites-rockstargamesbbf48ac7e790ff47ad1d5ee6fb7da4d9",
         items: "rockstargames-sites-rockstargamesa9afd60434d032bdba4ce040dbeb13b7",
         open: "rockstargames-sites-rockstargamesdf17f0cb21e0947d4f391f915bd797d2",
@@ -372,16 +372,16 @@ try {
         } = e;
         const [d, i] = (0, t.useState)(!1);
         let n = null;
-        return n = c(), (0, m.jsx)(n, {
+        return n = o(), (0, m.jsx)(n, {
           disabled: !d,
           children: (0, m.jsxs)("div", {
-            className: [o.dropdownWrapper, d ? o.open : "", void 0 !== s ? s : ""].join(" "),
+            className: [c.dropdownWrapper, d ? c.open : "", void 0 !== s ? s : ""].join(" "),
             children: [(0, m.jsx)("button", {
-              className: o.opener,
+              className: c.opener,
               onClick: () => i(!d),
               children: r
             }), d && (0, m.jsx)("div", {
-              className: o.items,
+              className: c.items,
               onClick: () => i(!1),
               children: a
             })]
@@ -537,11 +537,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -550,7 +550,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 39294
+      }, r.resolve = o, e.exports = r, r.id = 39294
     },
     42043: e => {
       "use strict";
@@ -582,11 +582,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -595,7 +595,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 53781
+      }, r.resolve = o, e.exports = r, r.id = 53781
     },
     57258: e => {
       "use strict";
@@ -739,11 +739,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -752,7 +752,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 86751
+      }, r.resolve = o, e.exports = r, r.id = 86751
     },
     89273: e => {
       "use strict";
@@ -793,9 +793,9 @@ try {
       });
       var t = s(27743),
         r = s(95966),
-        c = s(33919),
-        o = s(12978),
-        m = s.n(o),
+        o = s(33919),
+        c = s(12978),
+        m = s.n(c),
         d = s(10670),
         i = s(70954);
       const n = (0, r.withTranslations)((e => {
@@ -809,22 +809,22 @@ try {
         });
         if (!s) return null;
         const {
-          manuals: o
+          manuals: c
         } = s;
         return (0, i.jsxs)("div", {
-          className: c.A.manuals,
+          className: o.A.manuals,
           children: [(0, i.jsx)("h2", {
             children: a("Manuals")
           }), (0, i.jsx)("div", {
-            className: c.A.list,
-            children: o.map((e => (0, i.jsxs)("div", {
-              className: c.A.item,
+            className: o.A.list,
+            children: c.map((e => (0, i.jsxs)("div", {
+              className: o.A.item,
               children: [(0, i.jsx)(d.A, {
                 title: e.game.title,
                 titleSlug: e.game.title_slug
               }), (0, i.jsx)(t.A, {
                 title: e.game.title,
-                className: c.A.dropdown,
+                className: o.A.dropdown,
                 children: e.manuals_platforms.map((e => (0, i.jsxs)("p", {
                   children: [(0, i.jsx)("span", {
                     children: e.platform

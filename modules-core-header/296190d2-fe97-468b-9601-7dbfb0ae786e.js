@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [954, 1154, 5716, 8573, 8773], {
     2562: (e, o, t) => {
@@ -180,7 +180,7 @@ try {
         createDevLocaleHook: () => D,
         createIntl: () => s.E,
         defineMessages: () => r.YK,
-        englishLocale: () => m,
+        englishLocale: () => b,
         getCookieValueByName: () => p,
         getLocale: () => _,
         localeCookieHandler: () => f,
@@ -216,7 +216,7 @@ try {
           })];
           var n
         },
-        b = [{
+        m = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -295,9 +295,9 @@ try {
           support: "zh",
           iso: "zh-CN"
         }],
-        m = b[0],
+        b = m[0],
         w = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        h = b,
+        h = m,
         _ = () => {
           const {
             location: e
@@ -309,7 +309,7 @@ try {
           })(e), r = (e => {
             const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
             return o?.split("=")[1]
-          })(e), n = m;
+          })(e), n = b;
           let s = n;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
             a = p(i);

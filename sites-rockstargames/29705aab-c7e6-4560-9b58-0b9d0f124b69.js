@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [1784], {
     1157: e => {
@@ -59,19 +59,19 @@ try {
         let {
           isWideCard: a = !1,
           size: d = 640,
-          title: c,
-          titleSlug: o
+          title: o,
+          titleSlug: c
         } = e;
         const {
           isMobile: m
         } = (0, s.useWindowResize)(), l = (0, i.useMemo)((() => {
           let e = "";
-          return a && (e = m ? t(24865)(`./${o}/mobile.jpg`) : t(53781)(`./${o}/desktop.jpg`)), e || (e = t(39294)(`./${o}.jpg`), e += `?im=Resize=${d}`), e
-        }), [m, o]), [g] = (0, s.usePreloadImg)(l);
+          return a && (e = m ? t(24865)(`./${c}/mobile.jpg`) : t(53781)(`./${c}/desktop.jpg`)), e || (e = t(39294)(`./${c}.jpg`), e += `?im=Resize=${d}`), e
+        }), [m, c]), [g] = (0, s.usePreloadImg)(l);
         let u = l;
         return (0, r.jsx)("div", {
           role: "img",
-          "aria-label": c,
+          "aria-label": o,
           style: {
             backgroundImage: `url(${u})`
           },
@@ -109,8 +109,8 @@ try {
         n = t(95966),
         r = t(81788),
         d = t(32698),
-        c = t.n(d),
-        o = t(18444),
+        o = t.n(d),
+        c = t(18444),
         m = t(95882),
         l = t(30760);
       const g = {
@@ -161,7 +161,7 @@ try {
           N = (0, i.useRef)(null);
         (0, i.useEffect)((() => {
           if (!h.current || !N.current) return;
-          const e = new(c())(h.current);
+          const e = new(o())(h.current);
           e.get("press").set({
             time: 0
           }), e.get("tap").set({
@@ -184,14 +184,14 @@ try {
             d = e => {
               "press" === e.type && h.current?.classList.add(`${g.disableClick}`), "tap" === e.type && (h.current?.classList.remove(`${g.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
             },
-            o = () => {
+            c = () => {
               t() && f(!1), h.current && h.current.classList.remove(`${g.disableClick}`)
             },
             m = () => {
               t() && f(!1)
             };
-          return N.current.addEventListener("transitionend", m), e.on("swiperight", i), e.on("swipeleft", s), e.on("pan", n), e.on("panend", r), e.on("press tap", d), e.on("pressup", o), () => {
-            e.off("swiperight", i), e.off("swipeleft", s), e.off("pan", n), e.off("panend", r), e.off("press tap", d), e.off("pressup", o), N.current && N.current.removeEventListener("transitionend", m), _(0)
+          return N.current.addEventListener("transitionend", m), e.on("swiperight", i), e.on("swipeleft", s), e.on("pan", n), e.on("panend", r), e.on("press tap", d), e.on("pressup", c), () => {
+            e.off("swiperight", i), e.off("swipeleft", s), e.off("pan", n), e.off("panend", r), e.off("press tap", d), e.off("pressup", c), N.current && N.current.removeEventListener("transitionend", m), _(0)
           }
         }), [h.current, v]);
         const x = e => {
@@ -211,7 +211,7 @@ try {
               },
               children: a.map(((e, a) => {
                 const [t, i, s] = x(e);
-                return (0, p.jsx)(o.A, {
+                return (0, p.jsx)(c.A, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": i,
@@ -234,7 +234,7 @@ try {
               className: g.text,
               children: a.map(((e, a) => {
                 const [i, s, n, r] = x(e);
-                return (0, p.jsxs)(o.A, {
+                return (0, p.jsxs)(c.A, {
                   className: [g.info, a === v ? g.active : ""].join(" "),
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
@@ -305,8 +305,8 @@ try {
         n = t(95966),
         r = t(2918),
         d = t(18444),
-        c = t(88816);
-      const o = {
+        o = t(88816);
+      const c = {
         newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
         info: "rockstargames-sites-rockstargamesea1c51ae745531c2aeabbe3fcf603842",
         title: "rockstargames-sites-rockstargamesf1dfe59c3d981dbe132559620885ecea",
@@ -349,33 +349,33 @@ try {
         }), [l]);
         return (0, m.jsx)(d.A, {
           to: l.url,
-          className: [o.newswireBlock, g ? o.newswireBlockNoSpecialOrder : "", null !== b ? o.startAnimation : ""].join(" "),
+          className: [c.newswireBlock, g ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
           focused: u,
           onClick: h,
           children: (0, m.jsxs)(m.Fragment, {
             children: [0 !== t || p.get("tag_id") ? (0, m.jsx)("div", {
-              className: o.preview,
+              className: c.preview,
               style: _.default
             }) : (0, m.jsxs)(m.Fragment, {
               children: [(0, m.jsx)("div", {
-                className: o.previewMobile,
+                className: c.previewMobile,
                 style: _.mobile
               }), (0, m.jsx)("div", {
-                className: o.preview,
+                className: c.preview,
                 style: _.default
               })]
             }), (0, m.jsxs)("div", {
-              className: o.info,
+              className: c.info,
               children: [(0, m.jsxs)("div", {
-                className: o.top,
-                children: [l.primary_tags.length ? (0, m.jsx)(c.A, {
+                className: c.top,
+                children: [l.primary_tags.length ? (0, m.jsx)(o.A, {
                   title: l.primary_tags[l.primary_tags.length > 1 && 722 === l.primary_tags[0].id ? 1 : 0].name
                 }) : "", (0, m.jsx)("time", {
                   dateTime: l.created,
                   children: l.created_formatted
                 })]
               }), (0, m.jsx)("h5", {
-                className: o.title,
+                className: c.title,
                 dangerouslySetInnerHTML: {
                   __html: l.title
                 }
@@ -434,7 +434,7 @@ try {
       "use strict";
       t.d(a, {
         s: () => d,
-        N: () => c
+        N: () => o
       });
       var i = t(95966),
         s = t(18444);
@@ -462,15 +462,15 @@ try {
             }
           })
         },
-        c = e => {
+        o = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
             video: i,
-            size: c,
-            toExplicit: o
+            size: o,
+            toExplicit: c
           } = e;
-          const m = o ?? `/videos/${i.id}`,
+          const m = c ?? `/videos/${i.id}`,
             l = {
               className: n.videoPreview,
               "data-gtm-category": "Videos",
@@ -481,7 +481,7 @@ try {
               className: n.card,
               children: [(0, r.jsx)(d, {
                 video: i,
-                size: c
+                size: o
               }), (0, r.jsxs)("div", {
                 className: n.info,
                 children: [a ? (0, r.jsx)("div", {
@@ -1194,8 +1194,8 @@ try {
         for (n.forEach((function(e) {
             d.add(e)
           })); d.size > 0;) {
-          var c = d;
-          d = new Set, c.forEach((function(e) {
+          var o = d;
+          d = new Set, o.forEach((function(e) {
             r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
               d.add(e)
             })))
@@ -1223,8 +1223,8 @@ try {
         n = t(33820),
         r = t(95966),
         d = t(2918),
-        c = t(95882),
-        o = t(67982),
+        o = t(95882),
+        c = t(67982),
         m = t(46368),
         l = t.n(m);
       var g = t(70954);
@@ -1274,12 +1274,12 @@ try {
           })()
         }), []), S.length ? (0, g.jsxs)("div", {
           "data-testid": "newswire-list",
-          children: [(0, g.jsx)(o.A, {
+          children: [(0, g.jsx)(c.A, {
             section: a,
             posts: S,
             relativeTo: t,
             noSpecialOrder: null !== _
-          }), null !== z && z.nextPage ? (0, g.jsx)(c.A, {
+          }), null !== z && z.nextPage ? (0, g.jsx)(o.A, {
             className: "rockstargames-sites-rockstargamese125d510192feb4ce2844cb97084b838",
             "data-testid": "more-stories",
             onClick: e => {
@@ -1929,8 +1929,8 @@ try {
         for (n.forEach((function(e) {
             d.add(e)
           })); d.size > 0;) {
-          var c = d;
-          d = new Set, c.forEach((function(e) {
+          var o = d;
+          d = new Set, o.forEach((function(e) {
             r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
               d.add(e)
             })))
@@ -1967,7 +1967,7 @@ try {
     67982: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => o
+        A: () => c
       });
       var i = t(62229),
         s = t(95966),
@@ -1999,17 +1999,17 @@ try {
           })]
         })
       })), t(88816);
-      const c = {
+      const o = {
           newswireBlocks: "rockstargames-sites-rockstargamesea687097d9239d4830bc03090f0116f2",
           noSpecialOrder: "rockstargames-sites-rockstargamesd301334a72b626f8cc2f5b9733299e76"
         },
-        o = (0, s.withGtmTracking)((e => {
+        c = (0, s.withGtmTracking)((e => {
           let {
             section: a = "",
             noSpecialOrder: t = !1,
             posts: s,
             gtmTrack: r,
-            relativeTo: o
+            relativeTo: c
           } = e;
           const [m, l] = (0, i.useState)(null);
           return (0, i.useEffect)((() => {
@@ -2030,7 +2030,7 @@ try {
             })), r(e), l(s.length)
           }), [s.length]), (0, d.jsx)("div", {
             "data-testid": "newswire-blocks-container",
-            className: [c.newswireBlocks, t ? c.noSpecialOrder : "", c.contextHome].join(" "),
+            className: [o.newswireBlocks, t ? o.noSpecialOrder : "", o.contextHome].join(" "),
             children: s.map(((e, i) => (0, d.jsx)(n.A, {
               section: a,
               index: i,
@@ -2079,8 +2079,8 @@ try {
         n = t(18444),
         r = t(95882),
         d = t(67982),
-        c = t(16551),
-        o = t(91430),
+        o = t(16551),
+        c = t(91430),
         m = t(19829),
         l = t(60090);
       const g = "rockstargames-sites-rockstargamesbba7a3e75f52ac91a881d61421836e58",
@@ -2107,7 +2107,7 @@ try {
               })
             }), (0, k.jsx)("div", {
               className: u,
-              children: a.map((e => (0, k.jsx)(o.N, {
+              children: a.map((e => (0, k.jsx)(c.N, {
                 game: e
               }, e.id)))
             }), (0, k.jsx)(r.A, {
@@ -2188,7 +2188,7 @@ try {
           children: [(0, k.jsxs)("div", {
             className: "rockstargames-sites-rockstargamesa9f290c70f40a29f685537afe8addab4",
             "data-testid": "homepageBody",
-            children: [(0, k.jsx)(c.A, {
+            children: [(0, k.jsx)(o.A, {
               videos: r.results,
               t: a
             }), (0, k.jsxs)("div", {
@@ -2320,15 +2320,15 @@ try {
           title: r,
           style: d
         } = e;
-        const c = (0, n.jsxs)("div", {
+        const o = (0, n.jsxs)("div", {
           style: d,
           className: [s.tag, a].join(" "),
           children: [(0, n.jsx)("i", {}), r]
         });
         return void 0 !== t ? (0, n.jsx)(i.A, {
           to: t,
-          children: c
-        }) : c
+          children: o
+        }) : o
       }
     },
     89273: e => {
@@ -2359,22 +2359,22 @@ try {
         } = e;
         const {
           titleSlug: d,
-          urlOfficial: c = ""
-        } = a, o = ["VI"].includes(d.toUpperCase());
+          urlOfficial: o = ""
+        } = a, c = ["VI"].includes(d.toUpperCase());
         return (0, r.jsx)(s.A, {
           "data-gtm-category": "Games",
           "data-gtm-action": "Game Click-through",
           "data-gtm-label": d,
           "data-testid": `${d}-gamecard`,
-          to: t ?? c,
+          to: t ?? o,
           target: "_self",
-          className: [n.fobLink, o ? n.wide : ""].join(" "),
-          reloadDocument: o,
+          className: [n.fobLink, c ? n.wide : ""].join(" "),
+          reloadDocument: c,
           children: (0, r.jsx)(i.A, {
             title: a.title,
             titleSlug: d,
-            isWideCard: o,
-            size: o ? 1740 : 480
+            isWideCard: c,
+            size: c ? 1740 : 480
           })
         })
       }
@@ -2408,8 +2408,8 @@ try {
           children: t,
           context: r = "",
           to: d,
-          onClick: c,
-          target: o = "_self",
+          onClick: o,
+          target: c = "_self",
           ...m
         } = e;
         const l = [s.button, s[r], a].join(" ");
@@ -2417,14 +2417,14 @@ try {
           ...m,
           to: d,
           className: l,
-          onClick: c,
-          target: o,
+          onClick: o,
+          target: c,
           children: t
         }) : (0, n.jsx)("button", {
           ...m,
           type: "button",
           className: l,
-          onClick: c,
+          onClick: o,
           children: t
         })
       }

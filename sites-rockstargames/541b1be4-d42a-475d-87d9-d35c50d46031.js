@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [686, 8305], {
     21861: (e, t, a) => {
@@ -39,11 +39,11 @@ try {
           value: (0, r.makeVar)((0, r.webSettingsReactive)()?.currentCharId)
         }),
         l = e => d(e),
-        p = (0, r.setMakeVarItem)({
+        f = (0, r.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, r.makeVar)(null)
         }),
-        f = e => p(e),
+        p = e => f(e),
         k = (0, r.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, r.makeVar)(null)
@@ -69,7 +69,7 @@ try {
             a = (0, r.useReactiveVar)(d),
             k = (0, r.useReactiveVar)(s),
             b = (0, r.useReactiveVar)(i),
-            x = (0, r.useReactiveVar)(p);
+            x = (0, r.useReactiveVar)(f);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -84,7 +84,7 @@ try {
             setCurrentCharId: l,
             setHasNotifications: u,
             setNavOpen: n,
-            setSelectedCharacterTuple: f,
+            setSelectedCharacterTuple: p,
             setUserData: w,
             setJumpScMenuFocus: o
           }
@@ -105,7 +105,7 @@ try {
       a.d(t, {
         UN: () => d,
         iR: () => b,
-        h: () => p,
+        h: () => f,
         Wx: () => x
       });
       var r = a(62229),
@@ -133,11 +133,11 @@ try {
           const d = function() {
               let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
               const [t, a] = (0, r.useState)([]), [i, u] = (0, r.useState)([]), [d, l] = (0, r.useState)(null), {
-                data: p,
-                loggedIn: f
+                data: f,
+                loggedIn: p
               } = (0, n.useRockstarUser)(), {
                 hasGtaPlus: k
-              } = p ?? {}, m = (0, c.bn)(), h = (e, r) => {
+              } = f ?? {}, m = (0, c.bn)(), h = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === t.indexOf(e)) {
@@ -150,11 +150,11 @@ try {
                 })), a([...t, ...n])
               };
               (0, r.useEffect)((() => {
-                if (p && null !== f) {
-                  const e = g(p);
+                if (f && null !== p) {
+                  const e = g(f);
                   i.length && e && h(i, e), l(e)
                 } else e || i.length && h(i)
-              }), [p, f, i]), (0, r.useEffect)((() => {
+              }), [f, p, i]), (0, r.useEffect)((() => {
                 const e = i.filter((e => -1 === t.indexOf(e)));
                 u(e)
               }), [t]);
@@ -179,8 +179,8 @@ try {
                   s.push(`${a}_${r}`), t.includes(r) || t.push(r)
                 })), {
                   member_id: e.id ?? void 0,
-                  login_state: f ?? !1,
-                  gta_plus_active: !!f && Boolean(k),
+                  login_state: p ?? !1,
+                  gta_plus_active: !!p && Boolean(k),
                   platforms_played: t.length ? t.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
                   games_played: s.length ? s.join("|").toUpperCase() : void 0,
                   gtao_platforms_played: a.length ? a.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
@@ -190,9 +190,9 @@ try {
               };
               return {
                 track: e => {
-                  const t = "boolean" == typeof f,
-                    a = Boolean(p && d);
-                  if (!t || !0 === f && !a) {
+                  const t = "boolean" == typeof p,
+                    a = Boolean(f && d);
+                  if (!t || !0 === p && !a) {
                     const t = [...i];
                     return t.push({
                       ...e
@@ -214,8 +214,8 @@ try {
         l = {
           track: () => null
         },
-        p = () => (0, r.useContext)(u) ?? l;
-      var f = a(21861);
+        f = () => (0, r.useContext)(u) ?? l;
+      var p = a(21861);
       var k = a(17330),
         m = a.n(k);
       var h = a(39445),
@@ -228,7 +228,7 @@ try {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = (0, f.A)(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [d] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [p, k] = (0, r.useState)(), [v, y] = (0, r.useState)(!1), w = void 0 === p, [b, x] = (0, r.useState)(1);
+          } = (0, p.A)(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [d] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [f, k] = (0, r.useState)(), [v, y] = (0, r.useState)(!1), w = void 0 === f, [b, x] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
             "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
@@ -318,7 +318,7 @@ try {
             }
           }), [o, v]), (0, r.useEffect)((() => {
             (async () => {
-              if (p && i && n && !i?.crews) {
+              if (f && i && n && !i?.crews) {
                 const e = await (async e => {
                   let {
                     pingBearer: t,
@@ -343,9 +343,9 @@ try {
                 }), x((e => e - 1))
               }
             })()
-          }), [i?.nickname, n, p]), (0, r.useEffect)((() => {
+          }), [i?.nickname, n, f]), (0, r.useEffect)((() => {
             (async () => {
-              if (!p || !i || i?.gamesPlayed) return;
+              if (!f || !i || i?.gamesPlayed) return;
               const e = await (async e => {
                 let {
                   pingBearer: t
@@ -364,9 +364,9 @@ try {
                 gamesPlayed: e
               }), x((e => e - 1))
             })()
-          }), [i?.nickname, p]), (0, r.useEffect)((() => {
+          }), [i?.nickname, f]), (0, r.useEffect)((() => {
             (async () => {
-              if (p && i && "gtao" === a && !i?.characters?.gtao) {
+              if (f && i && "gtao" === a && !i?.characters?.gtao) {
                 const {
                   gtaoCharacters: e,
                   linkedAccounts: t
@@ -425,10 +425,10 @@ try {
                     gtaoCharacters: n,
                     linkedAccounts: u.linkedAccounts
                   };
-                  const p = a;
-                  let f = "",
+                  const f = a;
+                  let p = "",
                     k = "";
-                  return l?.map((e => ("xbl" === e?.onlineService ? f = e.userName : "np" === e?.onlineService && (k = e.userName), e))), n.sort(((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter))), n.map(((e, t) => (e.platformUsername = p, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = k || p), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = f || p), e))), {
+                  return l?.map((e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (k = e.userName), e))), n.sort(((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter))), n.map(((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = k || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e))), {
                     gtaoCharacters: n,
                     linkedAccounts: l
                   }
@@ -448,11 +448,11 @@ try {
                 }), x((e => e - 1))
               }
             })()
-          }), [a, i?.nickname, p]), (0, r.useEffect)((() => {
-            i?.id && i?.nonExpiredToken && (k(!0), (0, f.K)(i.id))
+          }), [a, i?.nickname, f]), (0, r.useEffect)((() => {
+            i?.id && i?.nonExpiredToken && (k(!0), (0, p.K)(i.id))
           }), [JSON.stringify(i)]), {
             data: i,
-            loggedIn: p,
+            loggedIn: f,
             loading: w
           }
         },

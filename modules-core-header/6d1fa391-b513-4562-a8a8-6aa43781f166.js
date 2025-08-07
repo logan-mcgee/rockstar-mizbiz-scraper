@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [8773], {
     2562: (e, o, t) => {
@@ -137,9 +137,9 @@ try {
         createIntl: () => s.E,
         defineMessages: () => n.YK,
         englishLocale: () => b,
-        getCookieValueByName: () => f,
+        getCookieValueByName: () => p,
         getLocale: () => g,
-        localeCookieHandler: () => p,
+        localeCookieHandler: () => f,
         locales: () => w,
         onLanguageChange: () => L,
         splitLocale: () => j,
@@ -157,16 +157,16 @@ try {
       const c = (e, o) => {
           e && o ? document.cookie = `${e}=${o}; domain=${(0,u.F)()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${o})`)
         },
-        f = e => {
+        p = e => {
           const o = document.cookie.split("; "),
             t = `${e}=`,
             n = o.find((e => e.startsWith(t))),
             r = n?.substring(t.length, n.length);
           return r
         },
-        p = function(e, o) {
+        f = function(e, o) {
           let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-          const n = f(e);
+          const n = p(e);
           return n && !t || c(e, o), [n, (r = e, e => {
             c(r, e)
           })];
@@ -268,9 +268,9 @@ try {
           })(e), r = b;
           let s = r;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = f(a);
+            i = p(a);
           s = o.currentSite?.site === d.C.www ? w.find((e => e.subdomaincom === n)) || w.find((e => e.subdomaincom === t)) || r : w.find((e => e.iso === i)) || r;
-          const [l, u] = p(a, s.iso);
+          const [l, u] = f(a, s.iso);
           return [s, u]
         };
       var k = t(47781);

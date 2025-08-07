@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [5959], {
     70954: (e, r, t) => {
@@ -30,7 +30,7 @@ try {
         t = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function n(e, r) {
-        return !1 !== r.clone && r.isMergeableObject(e) ? f((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
+        return !1 !== r.clone && r.isMergeableObject(e) ? c((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
         var t
       }
 
@@ -48,7 +48,7 @@ try {
         }(e))
       }
 
-      function c(e, r) {
+      function f(e, r) {
         try {
           return r in e
         } catch (e) {
@@ -56,7 +56,7 @@ try {
         }
       }
 
-      function f(e, t, l) {
+      function c(e, t, l) {
         (l = l || {}).arrayMerge = l.arrayMerge || o, l.isMergeableObject = l.isMergeableObject || r, l.cloneUnlessOtherwiseSpecified = n;
         var u = Array.isArray(t);
         return u === Array.isArray(e) ? u ? l.arrayMerge(e, t, l) : function(e, r, t) {
@@ -65,30 +65,30 @@ try {
             o[r] = n(e[r], t)
           })), a(r).forEach((function(a) {
             (function(e, r) {
-              return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, a) || (c(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
-              if (!r.customMerge) return f;
+              return f(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
+            })(e, a) || (f(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
+              if (!r.customMerge) return c;
               var t = r.customMerge(e);
-              return "function" == typeof t ? t : f
+              return "function" == typeof t ? t : c
             }(a, t)(e[a], r[a], t) : o[a] = n(r[a], t))
           })), o
         }(e, t, l) : n(t, l)
       }
-      f.all = function(e, r) {
+      c.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce((function(e, t) {
-          return f(e, t, r)
+          return c(e, t, r)
         }), {})
       };
-      var l = f;
+      var l = c;
       e.exports = l
     },
     92834: (e, r, t) => {
       var n = t(71127),
         o = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
-        c = Object.prototype.hasOwnProperty,
-        f = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = Object.prototype.hasOwnProperty,
+        c = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -100,7 +100,7 @@ try {
         var n, a = {},
           u = null,
           s = null;
-        for (n in void 0 !== t && (u = "" + t), void 0 !== r.key && (u = "" + r.key), void 0 !== r.ref && (s = r.ref), r) c.call(r, n) && !l.hasOwnProperty(n) && (a[n] = r[n]);
+        for (n in void 0 !== t && (u = "" + t), void 0 !== r.key && (u = "" + r.key), void 0 !== r.ref && (s = r.ref), r) f.call(r, n) && !l.hasOwnProperty(n) && (a[n] = r[n]);
         if (e && e.defaultProps)
           for (n in r = e.defaultProps) void 0 === a[n] && (a[n] = r[n]);
         return {
@@ -109,7 +109,7 @@ try {
           key: u,
           ref: s,
           props: a,
-          _owner: f.current
+          _owner: c.current
         }
       }
       r.Fragment = a, r.jsx = u, r.jsxs = u

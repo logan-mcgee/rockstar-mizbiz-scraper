@@ -1,61 +1,61 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "226041a1-50f0-47bc-9850-d1704bd9d905", e._sentryDebugIdIdentifier = "sentry-dbid-226041a1-50f0-47bc-9850-d1704bd9d905")
+    o = (new e.Error).stack;
+  o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "226041a1-50f0-47bc-9850-d1704bd9d905", e._sentryDebugIdIdentifier = "sentry-dbid-226041a1-50f0-47bc-9850-d1704bd9d905")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [7818], {
-    23916: (e, a, o) => {
-      var n = o(95966),
-        t = o(40748),
-        d = o(63473),
-        r = o(70954);
+    23916: (e, o, n) => {
+      var a = n(95966),
+        t = n(40748),
+        d = n(63473),
+        r = n(70954);
       const {
         graphEnv: s
-      } = (0, n.getConfigForDomain)(), i = e => {
+      } = (0, a.getConfigForDomain)(), i = e => {
         let {
-          navData: a,
-          location: o,
+          navData: o,
+          location: n,
           onNavigate: t,
           searchConfig: i,
           routeOptions: l
         } = e;
-        const f = (0, n.withRockstarGraph)(d.A, {
+        const f = (0, a.withRockstarGraph)(d.A, {
           env: s
         });
         return (0, r.jsx)(f, {
-          navData: a,
-          location: o,
+          navData: o,
+          location: n,
           onNavigate: t,
           searchConfig: i,
           routeOptions: l
         })
       }, {
         graphEnv: l
-      } = (0, n.getConfigForDomain)();
+      } = (0, a.getConfigForDomain)();
 
       function f() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const a = (0, t.H)(e),
-          o = (0, n.withRockstarGraph)(i, {
+        const o = (0, t.H)(e),
+          n = (0, a.withRockstarGraph)(i, {
             env: l
           });
-        a.render((0, r.jsx)(o, {}))
+        o.render((0, r.jsx)(n, {}))
       }
       "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", f) : f()
     },
-    40748: (e, a, o) => {
-      var n = o(18429);
-      a.H = n.createRoot, n.hydrateRoot
+    40748: (e, o, n) => {
+      var a = n(18429);
+      o.H = a.createRoot, a.hydrateRoot
     }
   }
 ]);

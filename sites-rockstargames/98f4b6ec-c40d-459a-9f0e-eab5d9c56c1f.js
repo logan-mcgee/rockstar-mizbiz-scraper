@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [4446], {
     4446: (e, n, t) => {
@@ -40,8 +40,8 @@ try {
             g = e.enabled,
             p = e.shards,
             m = e.sideCar,
-            b = e.noIsolation,
-            w = e.inert,
+            w = e.noIsolation,
+            b = e.inert,
             y = e.allowPinchZoom,
             E = e.as,
             _ = void 0 === E ? "div" : E,
@@ -54,8 +54,8 @@ try {
             sideCar: u,
             removeScrollBar: v,
             shards: p,
-            noIsolation: b,
-            inert: w,
+            noIsolation: w,
+            inert: b,
             setCallbacks: l,
             allowPinchZoom: !!y,
             lockRef: t,
@@ -131,14 +131,14 @@ try {
         },
         p = h(),
         m = "data-scroll-locked",
-        b = function(e, n, t, r) {
+        w = function(e, n, t, r) {
           var o = e.left,
             i = e.top,
             u = e.right,
             d = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body[").concat(m, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(m, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
         },
-        w = function() {
+        b = function() {
           var e = parseInt(document.body.getAttribute(m) || "0", 10);
           return isFinite(e) ? e : 0
         },
@@ -148,9 +148,9 @@ try {
             r = e.gapMode,
             a = void 0 === r ? "margin" : r;
           o.useEffect((function() {
-            return document.body.setAttribute(m, (w() + 1).toString()),
+            return document.body.setAttribute(m, (b() + 1).toString()),
               function() {
-                var e = w() - 1;
+                var e = b() - 1;
                 e <= 0 ? document.body.removeAttribute(m) : document.body.setAttribute(m, e.toString())
               }
           }), []);
@@ -175,7 +175,7 @@ try {
             }(a)
           }), [a]);
           return o.createElement(p, {
-            styles: b(c, !n, a, t ? "" : "!important")
+            styles: w(c, !n, a, t ? "" : "!important")
           })
         },
         E = !1;

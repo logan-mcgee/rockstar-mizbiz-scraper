@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [8773], {
     2562: (e, o, t) => {
@@ -180,10 +180,10 @@ try {
         createDevLocaleHook: () => D,
         createIntl: () => r.E,
         defineMessages: () => n.YK,
-        englishLocale: () => m,
+        englishLocale: () => b,
         getCookieValueByName: () => p,
         getLocale: () => g,
-        localeCookieHandler: () => b,
+        localeCookieHandler: () => f,
         locales: () => h,
         onLanguageChange: () => C,
         splitLocale: () => j,
@@ -208,7 +208,7 @@ try {
             s = n?.substring(t.length, n.length);
           return s
         },
-        b = function(e, o) {
+        f = function(e, o) {
           let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
           const n = p(e);
           return n && !t || c(e, o), [n, (s = e, e => {
@@ -216,7 +216,7 @@ try {
           })];
           var s
         },
-        f = [{
+        m = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -295,9 +295,9 @@ try {
           support: "zh",
           iso: "zh-CN"
         }],
-        m = f[0],
+        b = m[0],
         w = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        h = f,
+        h = m,
         g = () => {
           const {
             location: e
@@ -309,12 +309,12 @@ try {
           })(e), n = (e => {
             const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
             return o?.split("=")[1]
-          })(e), s = m;
+          })(e), s = b;
           let r = s;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
             a = p(i);
           r = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === n)) || h.find((e => e.subdomaincom === t)) || s : h.find((e => e.iso === a)) || s;
-          const [l, d] = b(i, r.iso);
+          const [l, d] = f(i, r.iso);
           return [r, d]
         };
       var k = t(47781);

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6846], {
     22259: (e, t, n) => {
@@ -34,8 +34,8 @@ try {
             trapped: d = !1,
             onMountAutoFocus: g,
             onUnmountAutoFocus: v,
-            ...b
-          } = e, [h, E] = o.useState(null), D = (0, s.c)(g), w = (0, s.c)(v), _ = o.useRef(null), I = (0, r.s)(t, (e => E(e))), C = o.useRef({
+            ...h
+          } = e, [b, E] = o.useState(null), D = (0, s.c)(g), w = (0, s.c)(v), _ = o.useRef(null), I = (0, r.s)(t, (e => E(e))), C = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -47,39 +47,39 @@ try {
           o.useEffect((() => {
             if (d) {
               let e = function(e) {
-                  if (C.paused || !h) return;
+                  if (C.paused || !b) return;
                   const t = e.target;
-                  h.contains(t) ? _.current = t : m(_.current, {
+                  b.contains(t) ? _.current = t : m(_.current, {
                     select: !0
                   })
                 },
                 t = function(e) {
-                  if (C.paused || !h) return;
+                  if (C.paused || !b) return;
                   const t = e.relatedTarget;
-                  null !== t && (h.contains(t) || m(_.current, {
+                  null !== t && (b.contains(t) || m(_.current, {
                     select: !0
                   }))
                 },
                 n = function(e) {
                   if (document.activeElement === document.body)
-                    for (const t of e) t.removedNodes.length > 0 && m(h)
+                    for (const t of e) t.removedNodes.length > 0 && m(b)
                 };
               document.addEventListener("focusin", e), document.addEventListener("focusout", t);
               const o = new MutationObserver(n);
-              return h && o.observe(h, {
+              return b && o.observe(b, {
                 childList: !0,
                 subtree: !0
               }), () => {
                 document.removeEventListener("focusin", e), document.removeEventListener("focusout", t), o.disconnect()
               }
             }
-          }), [d, h, C.paused]), o.useEffect((() => {
-            if (h) {
+          }), [d, b, C.paused]), o.useEffect((() => {
+            if (b) {
               y.add(C);
               const e = document.activeElement;
-              if (!h.contains(e)) {
+              if (!b.contains(e)) {
                 const t = new CustomEvent(c, l);
-                h.addEventListener(c, D), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                b.addEventListener(c, D), b.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -87,20 +87,20 @@ try {
                     if (m(o, {
                         select: t
                       }), document.activeElement !== n) return
-                }(f(h).filter((e => "A" !== e.tagName)), {
+                }(f(b).filter((e => "A" !== e.tagName)), {
                   select: !0
-                }), document.activeElement === e && m(h))
+                }), document.activeElement === e && m(b))
               }
               return () => {
-                h.removeEventListener(c, D), setTimeout((() => {
+                b.removeEventListener(c, D), setTimeout((() => {
                   const t = new CustomEvent(u, l);
-                  h.addEventListener(u, w), h.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
+                  b.addEventListener(u, w), b.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
                     select: !0
-                  }), h.removeEventListener(u, w), y.remove(C)
+                  }), b.removeEventListener(u, w), y.remove(C)
                 }), 0)
               }
             }
-          }), [h, D, w, C]);
+          }), [b, D, w, C]);
           const R = o.useCallback((e => {
             if (!n && !d) return;
             if (C.paused) return;
@@ -121,7 +121,7 @@ try {
           }), [n, d, C.paused]);
           return (0, i.jsx)(a.sG.div, {
             tabIndex: -1,
-            ...b,
+            ...h,
             ref: I,
             onKeyDown: R
           })
@@ -247,10 +247,10 @@ try {
         m = n(19690),
         y = n(85435),
         v = n(21222),
-        b = n(70954),
-        h = "Dialog",
-        [E, D] = (0, s.A)(h),
-        [w, _] = E(h),
+        h = n(70954),
+        b = "Dialog",
+        [E, D] = (0, s.A)(b),
+        [w, _] = E(b),
         I = e => {
           const {
             __scopeDialog: t,
@@ -263,9 +263,9 @@ try {
             prop: r,
             defaultProp: a ?? !1,
             onChange: s,
-            caller: h
+            caller: b
           });
-          return (0, b.jsx)(w, {
+          return (0, h.jsx)(w, {
             scope: t,
             triggerRef: l,
             contentRef: d,
@@ -279,14 +279,14 @@ try {
             children: n
           })
         };
-      I.displayName = h;
+      I.displayName = b;
       var C = "DialogTrigger",
         R = o.forwardRef(((e, t) => {
           const {
             __scopeDialog: n,
             ...o
           } = e, s = _(C, n), i = (0, a.s)(t, s.triggerRef);
-          return (0, b.jsx)(p.sG.button, {
+          return (0, h.jsx)(p.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": s.open,
@@ -309,12 +309,12 @@ try {
             children: r,
             container: a
           } = e, s = _(x, t);
-          return (0, b.jsx)(A, {
+          return (0, h.jsx)(A, {
             scope: t,
             forceMount: n,
-            children: o.Children.map(r, (e => (0, b.jsx)(f.C, {
+            children: o.Children.map(r, (e => (0, h.jsx)(f.C, {
               present: n || s.open,
-              children: (0, b.jsx)(d.Portal, {
+              children: (0, h.jsx)(d.Portal, {
                 asChild: !0,
                 container: a,
                 children: e
@@ -331,9 +331,9 @@ try {
               ...r
             } = e,
             a = _(F, e.__scopeDialog);
-          return a.modal ? (0, b.jsx)(f.C, {
+          return a.modal ? (0, h.jsx)(f.C, {
             present: o || a.open,
-            children: (0, b.jsx)(j, {
+            children: (0, h.jsx)(j, {
               ...r,
               ref: t
             })
@@ -346,11 +346,11 @@ try {
             __scopeDialog: n,
             ...o
           } = e, r = _(F, n);
-          return (0, b.jsx)(m.RemoveScroll, {
+          return (0, h.jsx)(m.RemoveScroll, {
             as: O,
             allowPinchZoom: !0,
             shards: [r.contentRef],
-            children: (0, b.jsx)(p.sG.div, {
+            children: (0, h.jsx)(p.sG.div, {
               "data-state": H(r.open),
               ...o,
               ref: t,
@@ -369,12 +369,12 @@ try {
               ...r
             } = e,
             a = _(k, e.__scopeDialog);
-          return (0, b.jsx)(f.C, {
+          return (0, h.jsx)(f.C, {
             present: o || a.open,
-            children: a.modal ? (0, b.jsx)(P, {
+            children: a.modal ? (0, h.jsx)(P, {
               ...r,
               ref: t
-            }) : (0, b.jsx)(L, {
+            }) : (0, h.jsx)(L, {
               ...r,
               ref: t
             })
@@ -388,7 +388,7 @@ try {
           return o.useEffect((() => {
             const e = s.current;
             if (e) return (0, y.Eq)(e)
-          }), []), (0, b.jsx)(W, {
+          }), []), (0, h.jsx)(W, {
             ...e,
             ref: i,
             trapFocus: n.open,
@@ -408,7 +408,7 @@ try {
           const n = _(k, e.__scopeDialog),
             r = o.useRef(!1),
             a = o.useRef(!1);
-          return (0, b.jsx)(W, {
+          return (0, h.jsx)(W, {
             ...e,
             ref: t,
             trapFocus: !1,
@@ -432,14 +432,14 @@ try {
             onCloseAutoFocus: i,
             ...c
           } = e, d = _(k, n), f = o.useRef(null), p = (0, a.s)(t, f);
-          return (0, g.Oh)(), (0, b.jsxs)(b.Fragment, {
-            children: [(0, b.jsx)(l.n, {
+          return (0, g.Oh)(), (0, h.jsxs)(h.Fragment, {
+            children: [(0, h.jsx)(l.n, {
               asChild: !0,
               loop: !0,
               trapped: r,
               onMountAutoFocus: s,
               onUnmountAutoFocus: i,
-              children: (0, b.jsx)(u.qW, {
+              children: (0, h.jsx)(u.qW, {
                 role: "dialog",
                 id: d.contentId,
                 "aria-describedby": d.descriptionId,
@@ -449,10 +449,10 @@ try {
                 ref: p,
                 onDismiss: () => d.onOpenChange(!1)
               })
-            }), (0, b.jsxs)(b.Fragment, {
-              children: [(0, b.jsx)(z, {
+            }), (0, h.jsxs)(h.Fragment, {
+              children: [(0, h.jsx)(z, {
                 titleId: d.titleId
-              }), (0, b.jsx)(J, {
+              }), (0, h.jsx)(J, {
                 contentRef: f,
                 descriptionId: d.descriptionId
               })]
@@ -465,7 +465,7 @@ try {
             __scopeDialog: n,
             ...o
           } = e, r = _(K, n);
-          return (0, b.jsx)(p.sG.h2, {
+          return (0, h.jsx)(p.sG.h2, {
             id: r.titleId,
             ...o,
             ref: t
@@ -478,7 +478,7 @@ try {
             __scopeDialog: n,
             ...o
           } = e, r = _(G, n);
-          return (0, b.jsx)(p.sG.p, {
+          return (0, h.jsx)(p.sG.p, {
             id: r.descriptionId,
             ...o,
             ref: t
@@ -491,7 +491,7 @@ try {
             __scopeDialog: n,
             ...o
           } = e, a = _(U, n);
-          return (0, b.jsx)(p.sG.button, {
+          return (0, h.jsx)(p.sG.button, {
             type: "button",
             ...o,
             ref: t,

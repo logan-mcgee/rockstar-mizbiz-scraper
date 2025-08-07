@@ -5,19 +5,19 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7185, 9566], {
     27185: (e, n, t) => {
       t.r(n), t.d(n, {
-        useHardwareConcurrency: () => b,
+        useHardwareConcurrency: () => v,
         useMemoryStatus: () => g,
-        useNetworkStatus: () => f,
+        useNetworkStatus: () => c,
         useSaveData: () => l
       });
       var r = t(62229);
@@ -53,10 +53,10 @@ try {
         }
         return e
       }
-      var d, s, u, c, f = function(e) {
+      var f, s, u, d, c = function(e) {
           var n, t = {
-              unsupported: d = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
-              effectiveConnectionType: d ? e : navigator.connection.effectiveType
+              unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
+              effectiveConnectionType: f ? e : navigator.connection.effectiveType
             },
             o = function(e) {
               if (Array.isArray(e)) return e
@@ -85,7 +85,7 @@ try {
             a = o[0],
             s = o[1];
           return (0, r.useEffect)((function() {
-            if (!d) {
+            if (!f) {
               var e = navigator.connection,
                 n = function() {
                   s({
@@ -107,12 +107,12 @@ try {
             saveData: s ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) c = {
+      if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) d = {
         unsupported: u
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
-        c = {
+        d = {
           unsupported: u,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
@@ -121,7 +121,7 @@ try {
         }
       }
       var y, g = function(e) {
-        return u && e ? i({}, c, {}, e) : i({}, c)
+        return u && e ? i({}, d, {}, e) : i({}, d)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,
@@ -129,7 +129,7 @@ try {
       } : {
         unsupported: !0
       };
-      var b = function() {
+      var v = function() {
         return i({}, y)
       }
     }

@@ -1,65 +1,65 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2bb3c6d1-e5a1-4053-97e6-fa54c6f71de0", e._sentryDebugIdIdentifier = "sentry-dbid-2bb3c6d1-e5a1-4053-97e6-fa54c6f71de0")
+    o = (new e.Error).stack;
+  o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "2bb3c6d1-e5a1-4053-97e6-fa54c6f71de0", e._sentryDebugIdIdentifier = "sentry-dbid-2bb3c6d1-e5a1-4053-97e6-fa54c6f71de0")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [954, 4171, 5716, 6552, 8573], {
-    51347: (e, a, o) => {
-      o.d(a, {
+    51347: (e, o, t) => {
+      t.d(o, {
         hO: () => l,
         sG: () => s
       });
-      var t = o(71127),
-        r = o(18429),
-        d = o(21222),
-        n = o(70954),
-        s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce(((e, a) => {
-          const o = (0, d.createSlot)(`Primitive.${a}`),
-            r = t.forwardRef(((e, t) => {
+      var r = t(71127),
+        a = t(18429),
+        d = t(21222),
+        n = t(70954),
+        s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce(((e, o) => {
+          const t = (0, d.createSlot)(`Primitive.${o}`),
+            a = r.forwardRef(((e, r) => {
               const {
-                asChild: r,
+                asChild: a,
                 ...d
-              } = e, s = r ? o : a;
+              } = e, s = a ? t : o;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(s, {
                 ...d,
-                ref: t
+                ref: r
               })
             }));
-          return r.displayName = `Primitive.${a}`, {
+          return a.displayName = `Primitive.${o}`, {
             ...e,
-            [a]: r
+            [o]: a
           }
         }), {});
 
-      function l(e, a) {
-        e && r.flushSync((() => e.dispatchEvent(a)))
+      function l(e, o) {
+        e && a.flushSync((() => e.dispatchEvent(o)))
       }
     },
-    70954: (e, a, o) => {
-      e.exports = o(92834)
+    70954: (e, o, t) => {
+      e.exports = t(92834)
     },
-    92600: (e, a, o) => {
-      o.d(a, {
-        N: () => r
+    92600: (e, o, t) => {
+      t.d(o, {
+        N: () => a
       });
-      var t = o(71127),
-        r = globalThis?.document ? t.useLayoutEffect : () => {}
+      var r = t(71127),
+        a = globalThis?.document ? r.useLayoutEffect : () => {}
     },
-    92834: (e, a, o) => {
-      var t = o(71127),
-        r = Symbol.for("react.element"),
+    92834: (e, o, t) => {
+      var r = t(71127),
+        a = Symbol.for("react.element"),
         d = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        s = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -67,15 +67,15 @@ try {
           __source: !0
         };
 
-      function f(e, a, o) {
-        var t, d = {},
+      function f(e, o, t) {
+        var r, d = {},
           f = null,
           i = null;
-        for (t in void 0 !== o && (f = "" + o), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (i = a.ref), a) n.call(a, t) && !l.hasOwnProperty(t) && (d[t] = a[t]);
+        for (r in void 0 !== t && (f = "" + t), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, r) && !l.hasOwnProperty(r) && (d[r] = o[r]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === d[t] && (d[t] = a[t]);
+          for (r in o = e.defaultProps) void 0 === d[r] && (d[r] = o[r]);
         return {
-          $$typeof: r,
+          $$typeof: a,
           type: e,
           key: f,
           ref: i,
@@ -83,28 +83,28 @@ try {
           _owner: s.current
         }
       }
-      a.Fragment = d, a.jsx = f, a.jsxs = f
+      o.Fragment = d, o.jsx = f, o.jsxs = f
     },
-    96552: (e, a, o) => {
-      o.r(a), o.d(a, {
+    96552: (e, o, t) => {
+      t.r(o), t.d(o, {
         Portal: () => l,
         Root: () => f
       });
-      var t = o(71127),
-        r = o(18429),
-        d = o(51347),
-        n = o(92600),
-        s = o(70954),
-        l = t.forwardRef(((e, a) => {
+      var r = t(71127),
+        a = t(18429),
+        d = t(51347),
+        n = t(92600),
+        s = t(70954),
+        l = r.forwardRef(((e, o) => {
           const {
-            container: o,
+            container: t,
             ...l
-          } = e, [f, i] = t.useState(!1);
+          } = e, [f, i] = r.useState(!1);
           (0, n.N)((() => i(!0)), []);
-          const u = o || f && globalThis?.document?.body;
-          return u ? r.createPortal((0, s.jsx)(d.sG.div, {
+          const u = t || f && globalThis?.document?.body;
+          return u ? a.createPortal((0, s.jsx)(d.sG.div, {
             ...l,
-            ref: a
+            ref: o
           }), u) : null
         }));
       l.displayName = "Portal";

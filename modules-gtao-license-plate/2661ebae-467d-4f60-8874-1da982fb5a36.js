@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [7039], {
     7039: (o, t, e) => {
@@ -25,9 +25,9 @@ try {
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => u,
-        Lightbox_Zoom_In_Button_Tooltip: () => h,
-        Lightbox_Zoom_Out_Button_Label: () => L,
-        Lightbox_Zoom_Out_Button__Tooltip: () => f,
+        Lightbox_Zoom_In_Button_Tooltip: () => f,
+        Lightbox_Zoom_Out_Button_Label: () => h,
+        Lightbox_Zoom_Out_Button__Tooltip: () => L,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => p,
         default: () => x
@@ -42,9 +42,9 @@ try {
         b = "Reset",
         g = "Press {shortcut}",
         u = "Zoom in",
-        h = "Press {shortcut}",
-        L = "Zoom out",
         f = "Press {shortcut}",
+        h = "Zoom out",
+        L = "Press {shortcut}",
         r = "Zoom level",
         p = "{zoom}%",
         x = {
@@ -58,9 +58,9 @@ try {
           Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_In_Button_Label: u,
-          Lightbox_Zoom_In_Button_Tooltip: h,
-          Lightbox_Zoom_Out_Button_Label: L,
-          Lightbox_Zoom_Out_Button__Tooltip: f,
+          Lightbox_Zoom_In_Button_Tooltip: f,
+          Lightbox_Zoom_Out_Button_Label: h,
+          Lightbox_Zoom_Out_Button__Tooltip: L,
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: p
         }

@@ -1,27 +1,27 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "85bf6611-d7c8-4290-a220-1aa4c588ce5c", e._sentryDebugIdIdentifier = "sentry-dbid-85bf6611-d7c8-4290-a220-1aa4c588ce5c")
+    r = (new e.Error).stack;
+  r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "85bf6611-d7c8-4290-a220-1aa4c588ce5c", e._sentryDebugIdIdentifier = "sentry-dbid-85bf6611-d7c8-4290-a220-1aa4c588ce5c")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd",
+    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "481a8939e4cf70a1b263cf01cb4b1a83d2a29ebd"
+  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [954, 5716, 6247, 8573, 8628], {
-    18628: (e, a, r) => {
-      r.r(a), r.d(a, {
+    18628: (e, r, d) => {
+      d.r(r), d.d(r, {
         Root: () => l,
         VISUALLY_HIDDEN_STYLES: () => n,
         VisuallyHidden: () => s
       });
-      var o = r(71127),
-        d = r(51347),
-        t = r(70954),
+      var o = d(71127),
+        a = d(51347),
+        t = d(70954),
         n = Object.freeze({
           position: "absolute",
           border: 0,
@@ -34,9 +34,9 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        s = o.forwardRef(((e, a) => (0, t.jsx)(d.sG.span, {
+        s = o.forwardRef(((e, r) => (0, t.jsx)(a.sG.span, {
           ...e,
-          ref: a,
+          ref: r,
           style: {
             ...n,
             ...e.style
@@ -45,43 +45,43 @@ try {
       s.displayName = "VisuallyHidden";
       var l = s
     },
-    51347: (e, a, r) => {
-      r.d(a, {
+    51347: (e, r, d) => {
+      d.d(r, {
         hO: () => l,
         sG: () => s
       });
-      var o = r(71127),
-        d = r(18429),
-        t = r(21222),
-        n = r(70954),
-        s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce(((e, a) => {
-          const r = (0, t.createSlot)(`Primitive.${a}`),
-            d = o.forwardRef(((e, o) => {
+      var o = d(71127),
+        a = d(18429),
+        t = d(21222),
+        n = d(70954),
+        s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce(((e, r) => {
+          const d = (0, t.createSlot)(`Primitive.${r}`),
+            a = o.forwardRef(((e, o) => {
               const {
-                asChild: d,
+                asChild: a,
                 ...t
-              } = e, s = d ? r : a;
+              } = e, s = a ? d : r;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(s, {
                 ...t,
                 ref: o
               })
             }));
-          return d.displayName = `Primitive.${a}`, {
+          return a.displayName = `Primitive.${r}`, {
             ...e,
-            [a]: d
+            [r]: a
           }
         }), {});
 
-      function l(e, a) {
-        e && d.flushSync((() => e.dispatchEvent(a)))
+      function l(e, r) {
+        e && a.flushSync((() => e.dispatchEvent(r)))
       }
     },
-    70954: (e, a, r) => {
-      e.exports = r(92834)
+    70954: (e, r, d) => {
+      e.exports = d(92834)
     },
-    92834: (e, a, r) => {
-      var o = r(71127),
-        d = Symbol.for("react.element"),
+    92834: (e, r, d) => {
+      var o = d(71127),
+        a = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
         s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
@@ -92,15 +92,15 @@ try {
           __source: !0
         };
 
-      function i(e, a, r) {
+      function i(e, r, d) {
         var o, t = {},
           i = null,
           f = null;
-        for (o in void 0 !== r && (i = "" + r), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) n.call(a, o) && !l.hasOwnProperty(o) && (t[o] = a[o]);
+        for (o in void 0 !== d && (i = "" + d), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) n.call(r, o) && !l.hasOwnProperty(o) && (t[o] = r[o]);
         if (e && e.defaultProps)
-          for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
+          for (o in r = e.defaultProps) void 0 === t[o] && (t[o] = r[o]);
         return {
-          $$typeof: d,
+          $$typeof: a,
           type: e,
           key: i,
           ref: f,
@@ -108,7 +108,7 @@ try {
           _owner: s.current
         }
       }
-      a.Fragment = t, a.jsx = i, a.jsxs = i
+      r.Fragment = t, r.jsx = i, r.jsxs = i
     }
   }
 ]);

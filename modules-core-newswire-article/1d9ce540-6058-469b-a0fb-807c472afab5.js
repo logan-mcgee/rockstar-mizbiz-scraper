@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [6618], {
     11028: e => {
@@ -30,12 +30,12 @@ try {
         return function e(n, i, l) {
           l = l || 1, Object.keys(n).forEach((function(u) {
             const d = n[u],
-              p = r.safe && Array.isArray(d),
-              f = Object.prototype.toString.call(d),
+              f = r.safe && Array.isArray(d),
+              p = Object.prototype.toString.call(d),
               m = t(d),
-              y = "[object Object]" === f || "[object Array]" === f,
+              y = "[object Object]" === p || "[object Array]" === p,
               g = i ? i + a + s(u) : s(u);
-            if (!p && !m && y && Object.keys(d).length && (!r.maxDepth || l < o)) return e(d, g, l + 1);
+            if (!f && !m && y && Object.keys(d).length && (!r.maxDepth || l < o)) return e(d, g, l + 1);
             c[g] = d
           }))
         }(e), c
@@ -66,15 +66,15 @@ try {
           const n = t.split(s).map(i);
           let r = u(n.shift()),
             d = u(n[0]),
-            p = l;
+            f = l;
           for (; void 0 !== d;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(p[r]),
+            const e = Object.prototype.toString.call(f[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!c && !t && void 0 !== p[r]) return;
-            (c && !t || !c && null == p[r]) && (p[r] = "number" != typeof d || o.object ? {} : []), p = p[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
+            if (!c && !t && void 0 !== f[r]) return;
+            (c && !t || !c && null == f[r]) && (f[r] = "number" != typeof d || o.object ? {} : []), f = f[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
           }
-          p[r] = e(a[t], o)
+          f[r] = e(a[t], o)
         })), l
       }
     },
@@ -83,13 +83,13 @@ try {
       n.r(t), n.d(t, {
         InViewTracker: () => v,
         TinaParser: () => w,
-        TinaPayloadProvider: () => p.o,
+        TinaPayloadProvider: () => f.o,
         recursiveNestedTemplates: () => x,
         useGenerateCdnSource: () => O.jS,
         useGetCdnSource: () => O.C1,
         useImageParser: () => O.S1,
         useTinaComponents: () => d,
-        useTinaPayload: () => p.i,
+        useTinaPayload: () => f.i,
         useTranslations: () => g
       });
       var r = n(62229),
@@ -115,9 +115,9 @@ try {
           })
         },
         d = () => (0, r.useContext)(i);
-      var p = n(50911),
-        f = n(11028),
-        m = n.n(f),
+      var f = n(50911),
+        p = n(11028),
+        m = n.n(p),
         y = n(13727);
       const g = e => {
         let {
@@ -221,14 +221,14 @@ try {
                     whatever: 1
                   }
                 }),
-                p = [...e?.translations ?? []].reverse(),
-                f = `componentProps_${(0,b.A)()}`;
+                f = [...e?.translations ?? []].reverse(),
+                p = `componentProps_${(0,b.A)()}`;
               return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
                 ...a,
-                t: e => p.find((t => t?._key === e))?.value ?? e,
-                key: f
+                t: e => f.find((t => t?._key === e))?.value ?? e,
+                key: p
               }, i)
             };
             return n?.[y.ZH]?.length ? s(n) : null
@@ -245,9 +245,9 @@ try {
             components: n = {},
             componentProps: a = {}
           } = e;
-          const s = (0, p.i)(),
+          const s = (0, f.i)(),
             [i, l] = (0, r.useState)(null),
-            [f, m] = (0, r.useState)(null);
+            [p, m] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
             t?.payload && l(t.payload), t?.variables && m(t.variables)
           }), [t]);
@@ -290,7 +290,7 @@ try {
             payload: i
           }), k = g({
             payload: i,
-            variables: f
+            variables: p
           });
           return (0, r.useMemo)((() => {
             if (!i) return null;
@@ -303,7 +303,7 @@ try {
                   prod: n
                 }
               };
-            return (0, c.jsx)(p.o, {
+            return (0, c.jsx)(f.o, {
               payload: r,
               children: (0, c.jsx)(u, {
                 components: y,

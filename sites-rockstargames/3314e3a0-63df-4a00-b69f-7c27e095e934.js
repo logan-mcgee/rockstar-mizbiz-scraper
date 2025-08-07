@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [969], {
     70969: (o, t, e) => {
@@ -18,12 +18,12 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => f,
-        Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => L,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
-        Lightbox_Reset_Zoom_Button_Tooltip: () => s,
+        Lightbox_Dialog_Title: () => L,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Reset_Zoom_Button_Label: () => s,
+        Lightbox_Reset_Zoom_Button_Tooltip: () => b,
         Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => a,
@@ -38,14 +38,14 @@ try {
         n = "按 {shortcut}",
         a = "縮小",
         d = "按 {shortcut}",
-        b = "重設",
-        s = "按 {shortcut}",
+        s = "重設",
+        b = "按 {shortcut}",
         g = "縮放比例",
         u = "{zoom}%",
+        f = "下載",
         r = "下載",
-        h = "下載",
-        L = "在燈箱中開啟圖片",
-        f = "圖片燈箱",
+        h = "在燈箱中開啟圖片",
+        L = "圖片燈箱",
         p = "圖片替代文字：{alt}",
         x = {
           Lightbox_Close_Button_Label: _,
@@ -54,14 +54,14 @@ try {
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: a,
           Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
-          Lightbox_Reset_Zoom_Button_Tooltip: s,
+          Lightbox_Reset_Zoom_Button_Label: s,
+          Lightbox_Reset_Zoom_Button_Tooltip: b,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: f,
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: p
         }
     }

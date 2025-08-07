@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "be5f2d7609076d5a1ed53045b22c8612e2fd03cd"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9829], {
     19829: (e, s, t) => {
@@ -45,7 +45,7 @@ try {
         })
       };
       var _ = t(68378);
-      const m = e => {
+      const f = e => {
           let {
             button: s,
             closeDialog: t,
@@ -89,7 +89,7 @@ try {
             children: n
           })
         },
-        f = {
+        m = {
           pillBtn: "rockstargames-sites-rockstargamesb403f298c2eff00899432c93daa15aec",
           selected: "rockstargames-sites-rockstargamesa6cab397bf3a16564fcc531ef4c16130",
           dialog: "rockstargames-sites-rockstargamesd2c9ef0a70d425745a27c169c594199a",
@@ -127,7 +127,7 @@ try {
           };
           if (n) return (0, g.jsxs)("dialog", {
             ref: u,
-            className: f.dialog,
+            className: m.dialog,
             onClick: e => (e => {
               if (!e.currentTarget) return;
               const s = e.currentTarget.getBoundingClientRect();
@@ -135,21 +135,21 @@ try {
             })(e),
             "data-testid": "alert-dialog",
             children: [s && (0, g.jsx)("i", {
-              className: [f.icon, f[s]].join(" ")
+              className: [m.icon, m[s]].join(" ")
             }), (0, g.jsxs)("div", {
-              className: [f.content, d?.content].join(" "),
+              className: [m.content, d?.content].join(" "),
               children: [(0, g.jsx)("h3", {
-                className: [f.heading, d?.heading].join(" "),
+                className: [m.heading, d?.heading].join(" "),
                 children: t
               }), a && (0, g.jsx)("div", {
-                className: [f.message, d?.message].join(" "),
+                className: [m.message, d?.message].join(" "),
                 dangerouslySetInnerHTML: {
                   __html: a
                 }
               })]
             }), r && (0, g.jsx)("div", {
-              className: f.actions,
-              children: r.slice(0, 2).map(((e, s) => (0, g.jsx)(m, {
+              className: m.actions,
+              children: r.slice(0, 2).map(((e, s) => (0, g.jsx)(f, {
                 style: e?.style ?? (0 === s ? "primary" : "secondary"),
                 button: e,
                 closeDialog: _
@@ -270,8 +270,8 @@ try {
             urls: i,
             handleSubscribeButton: n,
             isButtonLoading: u,
-            showDialog: m,
-            setShowDialog: f,
+            showDialog: f,
+            setShowDialog: m,
             dialog: h,
             isSubscribed: w,
             variant: E
@@ -286,7 +286,7 @@ try {
           }), N = h?.buttons || [{
             buttonText: v.formatMessage(p.ns_ok_button_text),
             onClick: () => {
-              f(!1)
+              m(!1)
             },
             testId: "ok-btn",
             style: "secondary"
@@ -381,8 +381,8 @@ try {
               }, {
                 ...N[1]
               }],
-              showDialog: m,
-              onClose: () => f(!1)
+              showDialog: f,
+              onClose: () => m(!1)
             })]
           })
         },
@@ -441,7 +441,7 @@ try {
         }),
         v = e => R(e),
         M = (e, s) => {
-          const [t, n] = (0, c.useState)(), [o, l] = (0, c.useState)(!1), [d, u] = (0, c.useState)(!1), [g, b] = (0, c.useState)(!1), [_, m] = (0, c.useState)(!1), f = (0, i.useReactiveVar)(R), k = (0, a.useIntl)(), {
+          const [t, n] = (0, c.useState)(), [o, l] = (0, c.useState)(!1), [d, u] = (0, c.useState)(!1), [g, b] = (0, c.useState)(!1), [_, f] = (0, c.useState)(!1), m = (0, i.useReactiveVar)(R), k = (0, a.useIntl)(), {
             track: h
           } = (0, r.useGtmTrack)(), x = {
             preferences: `https://${e.sc}.rockstargames.com/settings/email`,
@@ -468,15 +468,15 @@ try {
             section_layout: s.loggedIn ? "signed in" : "signed out",
             element_placement: "newsletter subscribe",
             text: "subscribe now"
-          }), s.loggedIn || (window.location.href = x.auth), s.loggedIn && s.isAMinor ? (y(E.ERROR_GENERIC), m(!1), void h({
+          }), s.loggedIn || (window.location.href = x.auth), s.loggedIn && s.isAMinor ? (y(E.ERROR_GENERIC), f(!1), void h({
             event: "alert_error",
             text: "error message with no preferences link",
             element_placement: "newsletter subscribe"
-          })) : s.loggedIn && !f || s.loggedIn && 3 == f ? void await D() : s.loggedIn && f ? (h({
+          })) : s.loggedIn && !m || s.loggedIn && 3 == m ? void await D() : s.loggedIn && m ? (h({
             event: "alert_update",
             text: "alert - user already subscribed",
             element_placement: "newsletter subscribe"
-          }), y(E.ALREADY_SUBSCRIBED), void m(!1)) : void 0), D = async () => {
+          }), y(E.ALREADY_SUBSCRIBED), void f(!1)) : void 0), D = async () => {
             const {
               error: e = null,
               result: t
@@ -511,12 +511,12 @@ try {
             }
           };
           return (0, c.useEffect)((() => {
-            l(1 === f)
-          }), [f]), (0, c.useEffect)((() => {
+            l(1 === m)
+          }), [m]), (0, c.useEffect)((() => {
             (async () => {
               await (async () => {
                 s.loggedIn ? await (async () => {
-                  if (-1 === f) return;
+                  if (-1 === m) return;
                   v(-1), b(!0);
                   const {
                     error: t = null,
@@ -572,7 +572,7 @@ try {
             isSubscribed: o,
             setShowDialog: u,
             showDialog: d,
-            subscriptionStatus: f,
+            subscriptionStatus: m,
             urls: x,
             setDialog: n
           }
@@ -592,8 +592,8 @@ try {
             b = (0, o.useLocation)(),
             {
               loggedIn: _,
-              data: m,
-              loading: f
+              data: f,
+              loading: m
             } = (0, r.useRockstarUser)(),
             k = "true" === d.get("marketing"),
             p = {
@@ -604,11 +604,11 @@ try {
               sc: s.sites.socialClub
             },
             h = {
-              ...m,
+              ...f,
               isFromAuth: k || !1,
               loggedIn: _,
               pingBearer: e,
-              userLoading: f
+              userLoading: m
             },
             x = M(p, h),
             {
@@ -626,7 +626,7 @@ try {
             children: (0, g.jsx)(w, {
               handleSubscribeButton: S,
               loggedIn: _ || !1,
-              loading: f || v,
+              loading: m || v,
               urls: I,
               isButtonLoading: R,
               setShowDialog: C,

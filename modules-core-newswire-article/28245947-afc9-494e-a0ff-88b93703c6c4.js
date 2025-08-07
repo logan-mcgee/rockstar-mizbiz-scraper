@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [3727], {
     13727: (e, t, a) => {
@@ -21,7 +21,7 @@ try {
         Y4: () => de,
         f6: () => ce,
         KO: () => me,
-        CT: () => he,
+        CT: () => fe,
         pr: () => ve,
         Xt: () => Se,
         ho: () => ye,
@@ -206,13 +206,13 @@ try {
           description: "Distance from left for LAYERS (recommended to use %)",
           component: "text"
         },
-        h = {
+        f = {
           label: "Right",
           name: "right",
           description: "Distance from right for LAYERS (recommended to use %)",
           component: "text"
         },
-        f = {
+        h = {
           label: "Bottom",
           name: "bottom",
           description: "Distance from bottom for LAYERS (recommended to use %)",
@@ -679,9 +679,9 @@ try {
             }, {
               ...b
             }, {
-              ...h
-            }, {
               ...f
+            }, {
+              ...h
             }, {
               ...v
             }, {
@@ -1037,7 +1037,7 @@ try {
           name: "style.--linear-gradient",
           component: "text"
         }],
-        he = e => {
+        fe = e => {
           let {
             game: t = null,
             label: a = "Image Configuration"
@@ -1155,8 +1155,8 @@ try {
           }
         };
       a(81788);
-      var fe = a(54108);
-      (0, fe.cG)("Background Image Gradient"), (0, fe.ri)("Background Image Gradient"), (0, fe.cG)("Background Image Gradient");
+      var he = a(54108);
+      (0, he.cG)("Background Image Gradient"), (0, he.ri)("Background Image Gradient"), (0, he.cG)("Background Image Gradient");
       const ve = () => ({
           name: "impressionTracking",
           label: "Impression Tracking",
@@ -1187,7 +1187,7 @@ try {
             label: "Title",
             name: "title",
             component: "text"
-          }), he({
+          }), fe({
             game: t,
             label: "Image Sources"
           })];
@@ -1339,7 +1339,7 @@ try {
           error: g,
           children: b
         } = e;
-        const h = () => r ? (0, i.jsx)(n.c, {
+        const f = () => r ? (0, i.jsx)(n.c, {
           defaultSize: {
             width: a || "100%",
             height: o || "500px"
@@ -1359,7 +1359,7 @@ try {
               className: "rockstargames-modules-core-newswire-articlea0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
               children: u ?? s?.description
             })]
-          }), (0, i.jsx)(h, {}), (g || c?.error) && (0, i.jsx)("div", {
+          }), (0, i.jsx)(f, {}), (g || c?.error) && (0, i.jsx)("div", {
             className: "FieldError_sc_custom",
             children: g ?? c?.error
           })]
