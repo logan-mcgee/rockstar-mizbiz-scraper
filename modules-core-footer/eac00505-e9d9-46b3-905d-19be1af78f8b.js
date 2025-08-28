@@ -1,16 +1,16 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "eac00505-e9d9-46b3-905d-19be1af78f8b", e._sentryDebugIdIdentifier = "sentry-dbid-eac00505-e9d9-46b3-905d-19be1af78f8b")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "eac00505-e9d9-46b3-905d-19be1af78f8b", e._sentryDebugIdIdentifier = "sentry-dbid-eac00505-e9d9-46b3-905d-19be1af78f8b")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [9022], {
     5598: () => {

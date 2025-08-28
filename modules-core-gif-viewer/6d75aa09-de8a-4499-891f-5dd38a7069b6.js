@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-gif-viewer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -38,21 +38,21 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
-          c = s.fields,
-          d = s.style,
+          d = s.fields,
+          c = s.style,
           f = s.numeric,
           v = s.pluralRules,
           y = s.numberFormat,
-          m = u;
-        "short" === d ? m = "".concat(u, "-short") : "narrow" === d && (m = "".concat(u, "-narrow")), m in c || (m = u);
-        var p = c[m];
-        if ("auto" === f && (0, r.ToString)(t) in p) return [{
+          b = u;
+        "short" === c ? b = "".concat(u, "-short") : "narrow" === c && (b = "".concat(u, "-narrow")), b in d || (b = u);
+        var m = d[b];
+        if ("auto" === f && (0, r.ToString)(t) in m) return [{
           type: "literal",
-          value: p[(0, r.ToString)(t)]
+          value: m[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = p[b],
+        var p = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (p = "past");
+        var g = m[p],
           w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
             value: y.format(Math.abs(t)),
@@ -169,10 +169,10 @@ try {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var u = 0, s = a; u < s.length; u++) {
-              var c = s[u];
+              var d = s[u];
               n.push({
-                type: c.type,
-                value: c.value,
+                type: d.type,
+                value: d.value,
                 unit: t
               })
             }
@@ -189,23 +189,23 @@ try {
         var i = l.getInternalSlots,
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
-          c = l.localeData,
-          d = l.getDefaultLocale,
+          d = l.localeData,
+          c = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
         var v = (0, r.CanonicalizeLocaleList)(t),
           y = Object.create(null),
-          m = (0, r.CoerceOptionsToObject)(a),
-          p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        y.localeMatcher = p;
-        var b = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        y.nu = b;
-        var g = (0, n.ResolveLocale)(u, v, y, s, c, d),
+          b = (0, r.CoerceOptionsToObject)(a),
+          m = (0, r.GetOption)(b, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        y.localeMatcher = m;
+        var p = (0, r.GetOption)(b, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== p && !o.test(p)) throw new RangeError("Invalid numbering system ".concat(p));
+        y.nu = p;
+        var g = (0, n.ResolveLocale)(u, v, y, s, d, c),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
-        var _ = c[g.dataLocale];
+        f.locale = w, f.style = (0, r.GetOption)(b, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(b, "numeric", "string", ["always", "auto"], "always");
+        var _ = d[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(1973),

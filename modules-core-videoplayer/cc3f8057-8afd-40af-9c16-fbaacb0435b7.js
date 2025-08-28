@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [3343], {
     45915: (e, a, t) => {
@@ -95,15 +95,15 @@ try {
             (0, r.invariant)(!!y, "Missing locale data for ".concat(p)), f(this, "localeData", y), (0, r.invariant)(void 0 !== y, "locale data for ".concat(d.locale, " does not exist."));
             var g = y.types;
             (0, r.invariant)("object" == typeof g && null != g, "invalid types data");
-            var v = g[u];
-            (0, r.invariant)("object" == typeof v && null != v, "invalid typeFields data");
-            var b = (0, r.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
+            var b = g[u];
+            (0, r.invariant)("object" == typeof b && null != b, "invalid typeFields data");
+            var v = (0, r.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
             if ("language" === u) {
-              f(this, "languageDisplay", b);
-              var h = g[u][b];
+              f(this, "languageDisplay", v);
+              var h = g[u][v];
               (0, r.invariant)("object" == typeof h && null != h, "invalid language typeFields data")
             }
-            var m = "language" === u ? g[u][b][c] : g[u][c];
+            var m = "language" === u ? g[u][v][c] : g[u][c];
             (0, r.invariant)("object" == typeof m && null != m, "invalid styleFields data"), f(this, "fields", m)
           }
           return e.supportedLocalesOf = function(a, t) {

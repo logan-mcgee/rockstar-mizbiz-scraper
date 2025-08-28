@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-rockstar-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_rockstar_tv = self.webpackChunk_rockstargames_sites_rockstar_tv || []).push([
   [2864], {
     6570: () => {
@@ -21,11 +21,11 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var d = String(e).split("."),
-              t = d[0],
-              n = !d[1],
-              l = t.slice(-1),
-              o = t.slice(-2);
+            var t = String(e).split("."),
+              d = t[0],
+              n = !t[1],
+              l = d.slice(-1),
+              o = d.slice(-2);
             return a ? "other" : n && 1 == l && 11 != o ? "one" : n && l >= 2 && l <= 4 && (o < 12 || o > 14) ? "few" : n && 0 == l || n && l >= 5 && l <= 9 || n && o >= 11 && o <= 14 ? "many" : "other"
           }
         },

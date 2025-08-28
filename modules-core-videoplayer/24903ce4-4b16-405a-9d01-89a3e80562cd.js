@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -132,11 +132,11 @@ try {
         var y = (0, r.CanonicalizeLocaleList)(t),
           p = Object.create(null),
           v = (0, r.CoerceOptionsToObject)(a),
-          m = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        p.localeMatcher = m;
-        var b = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        p.nu = b;
+          b = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        p.localeMatcher = b;
+        var m = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
+        p.nu = m;
         var g = (0, n.ResolveLocale)(u, y, p, s, c, d),
           w = g.locale,
           h = g.nu;
@@ -175,14 +175,14 @@ try {
           p = s.numberFormat,
           v = u;
         "short" === d ? v = "".concat(u, "-short") : "narrow" === d && (v = "".concat(u, "-narrow")), v in c || (v = u);
-        var m = c[v];
-        if ("auto" === f && (0, r.ToString)(t) in m) return [{
+        var b = c[v];
+        if ("auto" === f && (0, r.ToString)(t) in b) return [{
           type: "literal",
-          value: m[(0, r.ToString)(t)]
+          value: b[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = m[b],
+        var m = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
+        var g = b[m],
           w = "function" == typeof p.formatToParts ? p.formatToParts(Math.abs(t)) : [{
             type: "literal",
             value: p.format(Math.abs(t)),

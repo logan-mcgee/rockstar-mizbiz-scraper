@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-rockstar-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_rockstar_tv = self.webpackChunk_rockstargames_sites_rockstar_tv || []).push([
   [8970], {
     2320: (e, t, a) => {
@@ -34,7 +34,7 @@ try {
         r = a(9368);
 
       function o(e, t) {
-        if (!(e instanceof _)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof c)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
       function i(e) {
@@ -50,7 +50,7 @@ try {
       function s(e, t, a) {
         var n = a.length;
         if (0 === n) return [];
-        if (2 === n) return c((0, l.getInternalSlot)(e, t, "templatePair"), {
+        if (2 === n) return _((0, l.getInternalSlot)(e, t, "templatePair"), {
           0: {
             type: "element",
             value: a[0]
@@ -63,7 +63,7 @@ try {
         for (var r = {
             type: "element",
             value: a[n - 1]
-          }, o = n - 2; o >= 0;) r = c(0 === o ? (0, l.getInternalSlot)(e, t, "templateStart") : o < n - 2 ? (0, l.getInternalSlot)(e, t, "templateMiddle") : (0, l.getInternalSlot)(e, t, "templateEnd"), {
+          }, o = n - 2; o >= 0;) r = _(0 === o ? (0, l.getInternalSlot)(e, t, "templateStart") : o < n - 2 ? (0, l.getInternalSlot)(e, t, "templateMiddle") : (0, l.getInternalSlot)(e, t, "templateEnd"), {
           0: {
             type: "element",
             value: a[o]
@@ -73,7 +73,7 @@ try {
         return r
       }
 
-      function c(e, t) {
+      function _(e, t) {
         for (var a = [], n = 0, r = (0, l.PartitionPattern)(e); n < r.length; n++) {
           var o = r[n],
             i = o.type;
@@ -89,7 +89,7 @@ try {
         }
         return a
       }
-      var _ = function() {
+      var c = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.ListFormat must be called with 'new'");
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "initializedListFormat", !0);
@@ -98,15 +98,15 @@ try {
             i = (0, l.GetOptionsObject)(a),
             s = (0, l.GetOption)(i, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
           o.localeMatcher = s;
-          var c = e.localeData,
-            _ = (0, r.ResolveLocale)(e.availableLocales, n, o, e.relevantExtensionKeys, c, e.getDefaultLocale);
-          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", _.locale);
+          var _ = e.localeData,
+            c = (0, r.ResolveLocale)(e.availableLocales, n, o, e.relevantExtensionKeys, _, e.getDefaultLocale);
+          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", c.locale);
           var d = (0, l.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", d);
           var f = (0, l.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", f);
-          var u = _.dataLocale,
-            p = c[u];
+          var u = c.dataLocale,
+            p = _[u];
           (0, l.invariant)(!!p, "Missing locale data for ".concat(u));
           var y = p[d][f];
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
@@ -122,9 +122,9 @@ try {
           o(this, "format");
           var a = s(e.__INTERNAL_SLOT_MAP__, this, i(t));
           if (!Array.isArray(a)) return [a];
-          for (var l = [], r = 0, c = a; r < c.length; r++) {
-            var _ = c[r];
-            l.push(n.__assign({}, _))
+          for (var l = [], r = 0, _ = a; r < _.length; r++) {
+            var c = _[r];
+            l.push(n.__assign({}, c))
           }
           return l
         }, e.prototype.resolvedOptions = function() {
@@ -148,19 +148,19 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e.__INTERNAL_SLOT_MAP__ = new WeakMap, e
       }();
-      t.default = _;
+      t.default = c;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(_.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(c.prototype, Symbol.toStringTag, {
           value: "Intl.ListFormat",
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(_.prototype.constructor, "length", {
+        }), Object.defineProperty(c.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(_.supportedLocalesOf, "length", {
+        }), Object.defineProperty(c.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,

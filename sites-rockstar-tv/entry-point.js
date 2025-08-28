@@ -1,16 +1,16 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a4fde6dc-85cf-485a-bd78-5531647c5111", e._sentryDebugIdIdentifier = "sentry-dbid-a4fde6dc-85cf-485a-bd78-5531647c5111")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "971864cd-dc05-4036-a374-5a435feca6bc", e._sentryDebugIdIdentifier = "sentry-dbid-971864cd-dc05-4036-a374-5a435feca6bc")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-rockstar-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, System.register(["@rockstargames/modules-core-videoplayer"], (function(e, a) {
   var r = {};
   return Object.defineProperty(r, "__esModule", {
@@ -41,7 +41,7 @@ try {
             5819: (e, a, r) => {
               "use strict";
               var t = {
-                  "./index": () => Promise.all([r.e(8564), r.e(2229), r.e(9623), r.e(9351)]).then((() => () => r(9532)))
+                  "./index": () => Promise.all([r.e(8564), r.e(2229), r.e(9623), r.e(3379)]).then((() => () => r(8284)))
                 },
                 d = (e, a) => (r.R = a, a = r.o(t, e) ? t[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -110,91 +110,91 @@ try {
             get: a[r]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((a, r) => (s.f[r](e, a), a)), [])), s.u = e => "js/" + {
-          114: "606e115cb558048a4d127dadfce92cd2",
-          131: "2b7ac179828b389bded2b7058a251865",
-          278: "e6ffd77ac14bc80315aa2efd1d89fc7c",
-          299: "a09bb87d66159e36ea528e7079c70885",
-          314: "645a764dfab0251821b1dd840a12c2aa",
-          662: "da6ea6b1078b5b7b239f70126e10bb7a",
-          824: "341262e2b7d1002b0a1c8bac74136694",
-          907: "e3ea7fa11fb7d8dd07ae02b24501d502",
-          1054: "976aa387f70a49c22971c29d3267ffcb",
-          1138: "aaaf9b91c16e595af86ec58a5730ed4a",
-          1242: "b35374d0f054b4b640025d581156b9cf",
-          1822: "dd877e018f2fcb19cffe32c9bf271583",
-          1868: "821a22a4a0628b41ffde5d6a3ac87292",
-          2156: "a08123d1f650aa9dc46ea471f848cfb2",
-          2171: "3e4e80090d91bfa762ca099181b2f92d",
-          2221: "e881bc9926bf88d7814d00ea84145334",
-          2243: "053d4b617f342967d5631af0d3774bba",
-          2347: "fe8bf3c4abcd8302698d7321dcc01900",
-          2365: "27223be2380b5f2286bd89822984c5d8",
-          2398: "39b26d2b11f9cd3192a4560ab73f376e",
-          2466: "6a9f996fa6a9fa4ca0909e191bcbf24f",
-          2642: "b4b4c4d848ea0cef6d6d4f5b5e415e17",
-          2678: "ab99b0ca5247198ed200a4bb53206c26",
-          2864: "ce0027b0a12f979c1a618500543f361f",
-          3034: "508f6e07c912b7d06ba69ffbbff03e13",
-          3197: "76ece46e224018f788aad014c6bbad6a",
-          3343: "c42877ec38177d4351701e56f34afc6a",
-          3370: "aa930caf212d1f5a898c6d0029d0d482",
-          3475: "66d5efa264ff46c840e59977574a0ed5",
-          3486: "82ec416873cc26940e28cea5a89a031f",
-          3697: "4a9f8da8b83cadaed4ca792b8435a568",
-          3885: "3bc0c787ba3eb02ae5515e3fc2642286",
-          3941: "b21de718fee20d327b8a3e01b3d06228",
-          4011: "c652dc101cfeb636f3b758bed3741707",
-          4528: "09d5cfed34712085c5c397c551e91247",
-          4621: "7fedeba0ba8bf07ca805ff883037f093",
-          4700: "b6e7446d143d415a409e06aaac12f154",
-          4710: "d1edf4e10ee939b39ee01656deff5acb",
-          4731: "d2f2c6bf5e602dea424ba6b235cc5d6c",
-          4780: "3559216a8f6cd8b85bc83cc24721356c",
-          4799: "ef1e5858e9994a2dc06a726a6072209e",
-          4851: "3998479fca3e4a59bef5bf211f293984",
-          4861: "87561007c1741be7e18b38cc661576b3",
-          4913: "3d5f70e5d4baeb4925da5218efe3d5c8",
-          5018: "d90b9962139cf3f00d5a9a47d47cd045",
-          5233: "ff75c837f5c4f7040d10dec1c35cad19",
-          5259: "968ddc5648e8d16f851fcc0616e794e6",
-          5530: "74d9260eab6ba5101eb9692b8ee1e468",
-          5639: "9cc560abc239020b610bd6fd936828a9",
-          5663: "f523a262e4241c61a70f6ca17728d03d",
-          5742: "110b9daa1f8dd3124690c82cf4744a7c",
-          5830: "5398706bd9b193e4873725f191f0ea12",
-          5832: "5c1373c17b45581c7c355784cf217a73",
-          6267: "eb73ab5b42f6c39ed46151b636c58965",
-          6280: "1771e4e541891287e4573f770d54548b",
-          6285: "998603deff87790651a8995c9b97b35d",
-          6361: "3247a59d87f7f82c6cf9ef5e97c80100",
-          6664: "2a61c5b403fa04bba142c35baa62fe72",
-          6879: "75da53d0ab0be7fc4c4217c6c79f1776",
-          6891: "2eb7459e7eb38c18101ac0731ea5da83",
-          6997: "a9c5748d52e7257e1f6e5997a0971cc5",
-          7010: "d90d5a16c4781cd8c297fac46c685d43",
-          7073: "c876e01c279eeae6b5c33f773089ee39",
-          7436: "a65b561dc44b17547d769b21a313dcf7",
-          7452: "179e2b0e42e143eeeb9dfc3350b42725",
-          7453: "79d6a808a155e5060a03d4d408b57b5e",
-          7970: "f582753d53f7fc6483ecb87957fc3cfe",
-          8272: "b364e4e4543afde2729cfea9ac30eddf",
-          8391: "a2bdc687d1c97d73e70074699e4a8e44",
-          8564: "1ee9e3cb5448ad05d9ad17676c639f60",
-          8711: "2716255814703b011c8a76a846dc01b9",
-          8755: "2bcd2c28259527bacd77ac2668d8da86",
-          8880: "81921f204318a82c43e30c88c76f7c98",
-          8970: "9177ef43b692123c25d03f23a244d9e3",
-          9022: "09963859885884aed6b8bd95c8c3dafa",
-          9028: "b2d168c92a995f1e8286545d78866cc3",
-          9126: "43ebc89efcbbf0080c2fab07f80b400e",
-          9351: "170976d42badac40c40305fdcd81e40f",
-          9368: "d4db88c863bfed3f406ddf5d802442f1",
-          9377: "0af13caec2c19d546b77e0d6c3ac0dc5",
-          9507: "2303a1f3e7b556d295fe4891667720f8",
-          9615: "3d961d300857697043f6b7d843bc972e",
-          9728: "6abd30f8b47b1e8f3f5b20974fa433d4",
-          9936: "7f6cd9dcd6a3037acf28ed3571e3744f",
-          9990: "5b47e644670032131540717ff8991cda"
+          114: "9d7414c555b0e64faf24a29386e8b240",
+          131: "dbc3edee63298253a02bfda24789eb9e",
+          278: "64872a3b6fe821fced42a51a974bcae6",
+          299: "8e05b5fa34f098803d9023e8c59b7d81",
+          314: "6da8f738136032da9124e9785394d1a7",
+          662: "c420a79e742167c5cd19b721710ff24f",
+          824: "ff2d5404efb2dbc72bc609baf95cd4fc",
+          907: "b6d03053856d7888bd97a79f47bca168",
+          1054: "eac1986b3b3e5e316b92849c02786696",
+          1138: "1dce93a3c27449702a9be10e34b040e5",
+          1242: "27e881092c4308e5b7cc154f66904321",
+          1822: "028d63960ca4601928e94c1486d1d627",
+          1868: "8926e0d2f9c739f296d0076bf4d1d4e9",
+          2156: "62361c9f449e1e9d73e7cfcd7a68b5dd",
+          2171: "2a03b658604287b4bc78a6f0b9eca2b9",
+          2221: "ad500d8329fc5c2621100f1e0c3c9f29",
+          2243: "811459603286fd86dbe9c36a8a94de15",
+          2347: "d59a79fe9b179aec18b796d04a489c38",
+          2365: "64ebd58608aea834afecaba252071dc4",
+          2398: "ba8ae30b73f73b42c8d53f7694c687b8",
+          2466: "ff41874992dcce15497404e798e7e69f",
+          2642: "5ca33a5ee3cf542fab1bd51d023d60c0",
+          2678: "42198fbbe4558fa7d45fa53910666261",
+          2864: "86649adedf4b2345fbaf9ead5cb18926",
+          3034: "f41136937a0c09a5f0fb773d39729924",
+          3197: "6424aa51045d3e778416a309a6ea0c0f",
+          3343: "5fdf91421e559c748a0182dcb4a2455a",
+          3370: "1f824f0564689bd999d30dbb190f2f81",
+          3379: "23135f1fec8942603265bb529b07a20d",
+          3475: "7941890b012961bec62e4ccd15d9688e",
+          3486: "02567b06a50e1c66e63e704d4bd695fe",
+          3697: "4e547afe12e21423d0634a2532167645",
+          3885: "ad5436f36d6fff2f96e275dfba2b56b7",
+          3941: "4663587430989643864618f36a70eb63",
+          4011: "54f7cd7f01225bea40b35d8f301fba33",
+          4528: "1850c3a2e0d80f7ddbc61d073731e9f6",
+          4621: "2d0664d671a7b118aa3048d0216ec4be",
+          4700: "d215a72073b2f336ea75458652fbeac2",
+          4710: "da05035f3f2bb65aa35bda031110c433",
+          4731: "b41e7286e24ad794ebf884f48dd54440",
+          4780: "0cf5732db614d67dc7cdb69199ec84c9",
+          4799: "08d9acbe47d5d1122834cdaa435ae091",
+          4851: "4a6572b3cb6c09b084b68fa7f74fd97d",
+          4861: "db83cce8548fecc05b33c0d3a65a4480",
+          4913: "76a5c86e8e9e5f858b731384149a7740",
+          5018: "63638236800928e2a8f1c0171f871f9b",
+          5233: "ce27e2c9fdf6c3fa746395252da5c741",
+          5259: "55f711856b2d3d974e9602d3a79f7011",
+          5530: "e6664711bfaa3c79336501f1a51b09b3",
+          5639: "09dd33e7d5c1e2f266c0842e84240e1d",
+          5663: "d6287fc383ebce8c7d476fb501c44eda",
+          5742: "21fded1474e452b365047e065bab715d",
+          5830: "b5722b9a8726ea53347ea5da87c823ae",
+          5832: "75f81565f018a22a3088de1876e775e6",
+          6267: "00bf348dcb6ab7ca8b1e817283cb08b3",
+          6280: "9ff1567326ed11a3233ca847d2cf6a26",
+          6285: "1b6edb95399ec4e17345d77ca75c55ee",
+          6361: "40bbadd6f5c7158230a80a40405b7621",
+          6664: "53fe6103d4a7559725dd26e1ff054a03",
+          6879: "04e2ea1011a58ea1a909ebc3b8435d6c",
+          6891: "826504397eabfbcfe724d5bc79de74a3",
+          6997: "5862b56d2bff34ba65ad54ac532a76b8",
+          7010: "40404dc3b274efbf10afe8cc90f275ae",
+          7073: "40c9da7f709f5a9fdff6e22a626ad2a6",
+          7436: "4704d576a415ec5d4a787b6aff07cb61",
+          7452: "ca7615d0b8a856a905ec242bb05dea32",
+          7453: "ecb8cdd3cdac398a504c319d84fd5006",
+          7970: "c31eda004b1fbdbd572ffb6c94017ec4",
+          8272: "e9c946f7e3d75e276766af024b082e07",
+          8391: "a57aab83eb3618056372d6f53275c644",
+          8564: "dffcbf7449506d90fb91924a271f50f4",
+          8711: "13e14b51792c88e3d602265fda11b0a3",
+          8755: "1208c4c01d3d6241d638f38b3cc2b086",
+          8880: "499b586d23b7125aa5b99893c39b645a",
+          8970: "f7a287039358e4dc65c33ac4224e32d9",
+          9022: "17e1b16a278c35390a7fa4897fb69ef1",
+          9028: "9e52e53c5987be7a7e3a07f8eb85c659",
+          9126: "e854a5102f8f19a93c2dc4c1e3b2504f",
+          9368: "bc66a4838e125f9e91746915582524b3",
+          9377: "6dc151f3825bd3ccde3d93bc233b819b",
+          9507: "7a904b7f2d9f04a46db06f66b7764d6b",
+          9615: "91f086525f6e754a026fdd194bd44f4b",
+          9728: "df52816e95ce4fb038fb358e2e1c2cb9",
+          9936: "87cb8d86b7f7b5538e2770dc06048f7e",
+          9990: "a152c045bd77e279c02b1b25e2ab66f2"
         } [e] + ".js", s.miniCssF = e => "css/d3aed2f918e98d6df62a73adec6169ce.css", s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -233,7 +233,7 @@ try {
             value: !0
           })
         }, s.nmd = e => (e.paths = [], e.children || (e.children = []), e), n = {
-          9351: [1879]
+          3379: [1879]
         }, c = {
           1879: ["default", "./index", 5136]
         }, s.f.remotes = (e, a) => {
@@ -421,7 +421,7 @@ try {
             },
             o = {
               2229: [2229],
-              9351: [5966],
+              3379: [5966],
               9623: [9623]
             },
             i = {};
@@ -456,7 +456,7 @@ try {
             };
             s.f.miniCss = (a, r) => {
               e[a] ? r.push(e[a]) : 0 !== e[a] && {
-                9351: 1
+                3379: 1
               } [a] && r.push(e[a] = (e => new Promise(((a, r) => {
                 var t = s.miniCssF(e),
                   d = s.p + t;

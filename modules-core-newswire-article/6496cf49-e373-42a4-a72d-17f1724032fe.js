@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [9728], {
     49728: (e, t, r) => {
@@ -80,8 +80,8 @@ try {
         useNavigate: () => yt,
         useNavigation: () => Ot,
         useNavigationType: () => pt,
-        useOutlet: () => bt,
-        useOutletContext: () => wt,
+        useOutlet: () => wt,
+        useOutletContext: () => bt,
         useParams: () => Et,
         useResolvedPath: () => St,
         useRevalidator: () => Ft,
@@ -305,12 +305,12 @@ try {
             t = null == e ? null : e - v;
           v = e, h && h({
             action: c,
-            location: b.location,
+            location: w.location,
             delta: t
           })
         }
 
-        function w(e) {
+        function b(e) {
           let t = "null" !== o.location.origin ? o.location.origin : o.location.href,
             r = "string" == typeof e ? e : m(e);
           return r = r.replace(/ $/, "%20"), d(t, "No window.location.(origin|href) available to create URL for href: " + r), new URL(r, t)
@@ -318,7 +318,7 @@ try {
         null == v && (v = 0, u.replaceState(i({}, u.state, {
           idx: v
         }), ""));
-        let b = {
+        let w = {
           get action() {
             return c
           },
@@ -332,9 +332,9 @@ try {
             }
           },
           createHref: e => t(o, e),
-          createURL: w,
+          createURL: b,
           encodeLocation(e) {
-            let t = w(e);
+            let t = b(e);
             return {
               pathname: t.pathname,
               search: t.search,
@@ -343,10 +343,10 @@ try {
           },
           push: function(e, t) {
             c = n.Push;
-            let a = p(b.location, e, t);
+            let a = p(w.location, e, t);
             r && r(a, e), v = y() + 1;
             let i = f(a, v),
-              s = b.createHref(a);
+              s = w.createHref(a);
             try {
               u.pushState(i, "", s)
             } catch (e) {
@@ -355,33 +355,33 @@ try {
             }
             l && h && h({
               action: c,
-              location: b.location,
+              location: w.location,
               delta: 1
             })
           },
           replace: function(e, t) {
             c = n.Replace;
-            let a = p(b.location, e, t);
+            let a = p(w.location, e, t);
             r && r(a, e), v = y();
             let o = f(a, v),
-              i = b.createHref(a);
+              i = w.createHref(a);
             u.replaceState(o, "", i), l && h && h({
               action: c,
-              location: b.location,
+              location: w.location,
               delta: 0
             })
           },
           go: e => u.go(e)
         };
-        return b
+        return w
       }
       var g;
       ! function(e) {
         e.data = "data", e.deferred = "deferred", e.redirect = "redirect", e.error = "error"
       }(g || (g = {}));
-      const w = new Set(["lazy", "caseSensitive", "path", "id", "index", "children"]);
+      const b = new Set(["lazy", "caseSensitive", "path", "id", "index", "children"]);
 
-      function b(e, t, r, n) {
+      function w(e, t, r, n) {
         return void 0 === r && (r = []), void 0 === n && (n = {}), e.map(((e, a) => {
           let o = [...r, String(a)],
             s = "string" == typeof e.id ? e.id : o.join("-");
@@ -397,7 +397,7 @@ try {
               id: s,
               children: void 0
             });
-            return n[s] = r, e.children && (r.children = b(e.children, t, o, n)), r
+            return n[s] = r, e.children && (r.children = w(e.children, t, o, n)), r
           }
         }))
       }
@@ -823,7 +823,7 @@ try {
           })
         } else o = pe;
         let s, l, u, c = {},
-          f = b(e.routes, o, void 0, c),
+          f = w(e.routes, o, void 0, c),
           m = e.basename || "/",
           v = e.dataStrategy || Ce,
           y = e.patchRoutesOnNavigation,
@@ -1110,8 +1110,8 @@ try {
             u = t.matches || u, v = t.pendingActionResult, l = et(r, a.submission), c = !1, p.active = !1, y = _e(e.history, y.url, y.signal)
           }
           let {
-            shortCircuited: w,
-            matches: b,
+            shortCircuited: b,
+            matches: w,
             loaderData: S,
             errors: R
           } = await async function(t, r, n, a, o, l, u, c, d, h, p) {
@@ -1159,9 +1159,9 @@ try {
               }
               n = e.matches
             }
-            let w = s || f,
-              [b, E] = be(e.history, O, n, y, r, x.v7_partialHydration && !0 === d, x.v7_skipActionErrorRevalidation, K, $, V, ee, Q, G, w, m, p);
-            if (st((e => !(n && n.some((t => t.route.id === e))) || b && b.some((t => t.route.id === e)))), q = ++Y, 0 === b.length && 0 === E.length) {
+            let b = s || f,
+              [w, E] = we(e.history, O, n, y, r, x.v7_partialHydration && !0 === d, x.v7_skipActionErrorRevalidation, K, $, V, ee, Q, G, b, m, p);
+            if (st((e => !(n && n.some((t => t.route.id === e))) || w && w.some((t => t.route.id === e)))), q = ++Y, 0 === w.length && 0 === E.length) {
               let e = Ve();
               return oe(r, i({
                 matches: n,
@@ -1202,7 +1202,7 @@ try {
             let {
               loaderResults: R,
               fetcherResults: D
-            } = await we(O, n, b, E, t);
+            } = await be(O, n, w, E, t);
             if (t.signal.aborted) return {
               shortCircuited: !0
             };
@@ -1238,8 +1238,8 @@ try {
               fetchers: new Map(O.fetchers)
             } : {})
           }(y, r, u, p.active, l, a && a.submission, a && a.fetcherSubmission, a && a.replace, a && !0 === a.initialHydration, c, v);
-          w || (U = null, oe(r, i({
-            matches: b || u
+          b || (U = null, oe(r, i({
+            matches: w || u
           }, je(v), {
             loaderData: S,
             errors: R
@@ -1276,11 +1276,11 @@ try {
           U = null;
           let g = !0 === f || o.response.headers.has("X-Remix-Replace") ? n.Replace : n.Push,
             {
-              formMethod: w,
-              formAction: b,
+              formMethod: b,
+              formAction: w,
               formEncType: E
             } = O.navigation;
-          !u && !c && w && b && E && (u = Ze(O.navigation));
+          !u && !c && b && w && E && (u = Ze(O.navigation));
           let S = u || c;
           if (ue.has(o.response.status) && S && Je(S.formMethod)) await ie(g, y, {
             submission: i({}, S, {
@@ -1312,7 +1312,7 @@ try {
                   let o = {};
                   for (let e in n) {
                     let t = void 0 !== a[e] && "hasErrorBoundary" !== e;
-                    h(!t, 'Route "' + a.id + '" has a static property "' + e + '" defined but its lazy function is also returning a value for this property. The lazy route property "' + e + '" will be ignored.'), t || w.has(e) || (o[e] = n[e])
+                    h(!t, 'Route "' + a.id + '" has a static property "' + e + '" defined but its lazy function is also returning a value for this property. The lazy route property "' + e + '" will be ignored.'), t || b.has(e) || (o[e] = n[e])
                   }
                   Object.assign(a, o), Object.assign(a, i({}, t(a), {
                     lazy: void 0
@@ -1429,7 +1429,7 @@ try {
             } else u[e] = await Pe(t);
           return u
         }
-        async function we(t, r, n, a, o) {
+        async function be(t, r, n, a, o) {
           let i = t.matches,
             s = ve("loader", 0, o, n, r, null),
             l = Promise.all(a.map((async t => {
@@ -1817,7 +1817,7 @@ try {
               flushSync: i
             });
             let g = Qe(c, p),
-              w = !0 === (o && o.preventScrollReset);
+              b = !0 === (o && o.preventScrollReset);
             v && Je(v.formMethod) ? async function(t, r, n, a, o, i, l, u, c) {
               function h(e) {
                 if (!e.route.action && !e.route.lazy) {
@@ -1865,30 +1865,30 @@ try {
               }
               J.set(t, v);
               let g = Y,
-                w = (await ve("action", 0, y, [a], o, t))[a.route.id];
+                b = (await ve("action", 0, y, [a], o, t))[a.route.id];
               if (y.signal.aborted) return void(J.get(t) === v && J.delete(t));
               if (x.v7_fetcherPersist && ee.has(t)) {
-                if (Ke(w) || We(w)) return void Re(t, rt(void 0))
+                if (Ke(b) || We(b)) return void Re(t, rt(void 0))
               } else {
-                if (Ke(w)) return J.delete(t), q > g ? void Re(t, rt(void 0)) : (G.add(t), Re(t, tt(c)), le(y, w, !1, {
+                if (Ke(b)) return J.delete(t), q > g ? void Re(t, rt(void 0)) : (G.add(t), Re(t, tt(c)), le(y, b, !1, {
                   fetcherSubmission: c,
                   preventScrollReset: u
                 }));
-                if (We(w)) return void De(t, r, w.error)
+                if (We(b)) return void De(t, r, b.error)
               }
-              if (He(w)) throw Ne(400, {
+              if (He(b)) throw Ne(400, {
                 type: "defer-action"
               });
-              let b = O.navigation.location || O.location,
-                S = _e(e.history, b, v.signal),
+              let w = O.navigation.location || O.location,
+                S = _e(e.history, w, v.signal),
                 R = s || f,
                 D = "idle" !== O.navigation.state ? E(R, O.navigation.location, m) : O.matches;
               d(D, "Didn't find any matches after fetcher action");
               let C = ++Y;
               X.set(t, C);
-              let P = tt(c, w.data);
+              let P = tt(c, b.data);
               O.fetchers.set(t, P);
-              let [k, L] = be(e.history, O, D, c, b, !1, x.v7_skipActionErrorRevalidation, K, $, V, ee, Q, G, R, m, [a.route.id, w]);
+              let [k, L] = we(e.history, O, D, c, w, !1, x.v7_skipActionErrorRevalidation, K, $, V, ee, Q, G, R, m, [a.route.id, b]);
               L.filter((e => e.key !== t)).forEach((e => {
                 let t = e.key,
                   r = O.fetchers.get(t),
@@ -1902,7 +1902,7 @@ try {
               let {
                 loaderResults: T,
                 fetcherResults: A
-              } = await we(O, D, k, L, S);
+              } = await be(O, D, k, L, S);
               if (v.signal.aborted) return;
               v.signal.removeEventListener("abort", _), X.delete(t), J.delete(t), L.forEach((e => J.delete(e.key)));
               let M = Be(T);
@@ -1917,7 +1917,7 @@ try {
                 errors: N
               } = Me(O, D, T, void 0, L, A, te);
               if (O.fetchers.has(t)) {
-                let e = rt(w.data);
+                let e = rt(b.data);
                 O.fetchers.set(t, e)
               }
               Ge(C), "loading" === O.navigation.state && C > q ? (d(F, "Expected pending action"), U && U.abort(), oe(O.navigation.location, {
@@ -1930,7 +1930,7 @@ try {
                 loaderData: Ue(O.loaderData, j, D, N),
                 fetchers: new Map(O.fetchers)
               }), K = !1)
-            }(t, r, p, g, c, h.active, i, w, v): (Q.set(t, {
+            }(t, r, p, g, c, h.active, i, b, v): (Q.set(t, {
               routeId: r,
               path: p
             }), async function(t, r, n, a, o, i, s, l, u) {
@@ -1962,7 +1962,7 @@ try {
                 })) : void(We(m) ? De(t, r, m.error) : (d(!He(m), "Unhandled fetcher deferred data"), Re(t, rt(m.data))));
                 Re(t, rt(void 0))
               }
-            }(t, r, p, g, c, h.active, i, w, v))
+            }(t, r, p, g, c, h.active, i, b, v))
           },
           revalidate: function() {
             Se(), ae({
@@ -1998,7 +1998,7 @@ try {
           _internalFetchControllers: J,
           _internalActiveDeferreds: te,
           _internalSetRoutes: function(e) {
-            c = {}, s = b(e, o, void 0, c)
+            c = {}, s = w(e, o, void 0, c)
           }
         }, u
       }
@@ -2117,21 +2117,21 @@ try {
         }
       }
 
-      function we(e, t, r) {
+      function be(e, t, r) {
         void 0 === r && (r = !1);
         let n = e.findIndex((e => e.route.id === t));
         return n >= 0 ? e.slice(0, r ? n + 1 : n) : e
       }
 
-      function be(e, t, r, n, a, o, s, l, u, c, d, h, f, p, m, v) {
+      function we(e, t, r, n, a, o, s, l, u, c, d, h, f, p, m, v) {
         let y = v ? We(v[1]) ? v[1].error : v[1].data : void 0,
           g = e.createURL(t.location),
-          w = e.createURL(a),
-          b = r;
-        o && t.errors ? b = we(r, Object.keys(t.errors)[0], !0) : v && We(v[1]) && (b = we(r, v[0]));
+          b = e.createURL(a),
+          w = r;
+        o && t.errors ? w = be(r, Object.keys(t.errors)[0], !0) : v && We(v[1]) && (w = be(r, v[0]));
         let S = v ? v[1].statusCode : void 0,
           R = s && S && S >= 400,
-          x = b.filter(((e, r) => {
+          x = w.filter(((e, r) => {
             let {
               route: a
             } = e;
@@ -2148,12 +2148,12 @@ try {
             return Re(e, i({
               currentUrl: g,
               currentParams: s.params,
-              nextUrl: w,
+              nextUrl: b,
               nextParams: c.params
             }, n, {
               actionResult: y,
               actionStatus: S,
-              defaultShouldRevalidate: !R && (l || g.pathname + g.search === w.pathname + w.search || g.search !== w.search || Se(s, c))
+              defaultShouldRevalidate: !R && (l || g.pathname + g.search === b.pathname + b.search || g.search !== b.search || Se(s, c))
             }))
           })),
           D = [];
@@ -2174,7 +2174,7 @@ try {
           f.has(a) ? v = !1 : c.has(a) ? (c.delete(a), v = !0) : v = u && "idle" !== u.state && void 0 === u.data ? l : Re(h, i({
             currentUrl: g,
             currentParams: t.matches[t.matches.length - 1].params,
-            nextUrl: w,
+            nextUrl: b,
             nextParams: r[r.length - 1].params
           }, n, {
             actionResult: y,
@@ -2219,7 +2219,7 @@ try {
           let t = n[e];
           d(t, "No route found to patch children into: routeId = " + e), t.children || (t.children = []), i = t.children
         } else i = r;
-        let s = b(t.filter((e => !i.some((t => De(e, t))))), a, [e || "_", "patch", String((null == (o = i) ? void 0 : o.length) || "0")], n);
+        let s = w(t.filter((e => !i.some((t => De(e, t))))), a, [e || "_", "patch", String((null == (o = i) ? void 0 : o.length) || "0")], n);
         i.push(...s)
       }
 
@@ -2752,11 +2752,11 @@ try {
       }
       const gt = a.createContext(null);
 
-      function wt() {
+      function bt() {
         return a.useContext(gt)
       }
 
-      function bt(e) {
+      function wt(e) {
         let t = a.useContext(ut).outlet;
         return t ? a.createElement(gt.Provider, {
           value: e
@@ -2808,15 +2808,15 @@ try {
           let e = h.replace(/^\//, "").split("/");
           g = "/" + y.replace(/^\//, "").split("/").slice(e.length).join("/")
         }
-        let w = !s && r && r.matches && r.matches.length > 0 ? r.matches : E(e, {
+        let b = !s && r && r.matches && r.matches.length > 0 ? r.matches : E(e, {
             pathname: g
           }),
-          b = Lt(w && w.map((e => Object.assign({}, e, {
+          w = Lt(b && b.map((e => Object.assign({}, e, {
             params: Object.assign({}, c, e.params),
             pathname: K([h, i.encodeLocation ? i.encodeLocation(e.pathname).pathname : e.pathname]),
             pathnameBase: "/" === e.pathnameBase ? h : K([h, i.encodeLocation ? i.encodeLocation(e.pathnameBase).pathname : e.pathnameBase])
           }))), l, r, o);
-        return t && b ? a.createElement(lt.Provider, {
+        return t && w ? a.createElement(lt.Provider, {
           value: {
             location: nt({
               pathname: "/",
@@ -2827,7 +2827,7 @@ try {
             }, f),
             navigationType: n.Pop
           }
-        }, b) : b
+        }, w) : w
       }
 
       function Dt() {
@@ -3143,7 +3143,7 @@ try {
       }
 
       function Zt(e) {
-        return bt(e.context)
+        return wt(e.context)
       }
 
       function er(e) {
@@ -3177,7 +3177,7 @@ try {
           hash: m = "",
           state: y = null,
           key: g = "default"
-        } = o, w = a.useMemo((() => {
+        } = o, b = a.useMemo((() => {
           let e = N(f, c);
           return null == e ? null : {
             location: {
@@ -3190,11 +3190,11 @@ try {
             navigationType: i
           }
         }), [c, f, p, m, y, g, i]);
-        return null == w ? null : a.createElement(st.Provider, {
+        return null == b ? null : a.createElement(st.Provider, {
           value: h
         }, a.createElement(lt.Provider, {
           children: r,
-          value: w
+          value: b
         }))
       }
 
@@ -3382,10 +3382,10 @@ try {
         }), []))
       }
       let gr = null;
-      const wr = new Set(["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"]);
+      const br = new Set(["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"]);
 
-      function br(e) {
-        return null == e || wr.has(e) ? e : null
+      function wr(e) {
+        return null == e || br.has(e) ? e : null
       }
       const Er = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset", "viewTransition"],
         Sr = ["aria-current", "caseSensitive", "className", "end", "style", "to", "viewTransition", "children"],
@@ -3491,11 +3491,11 @@ try {
           isTransitioning: !1
         }), [d, h] = a.useState(), [f, p] = a.useState(), [m, v] = a.useState(), y = a.useRef(new Map), {
           v7_startTransition: g
-        } = n || {}, w = a.useCallback((e => {
+        } = n || {}, b = a.useCallback((e => {
           g ? function(e) {
             _r ? _r(e) : e()
           }(e) : e()
-        }), [g]), b = a.useCallback(((e, t) => {
+        }), [g]), w = a.useCallback(((e, t) => {
           let {
             deletedFetchers: n,
             flushSync: a,
@@ -3536,16 +3536,16 @@ try {
               currentLocation: o.currentLocation,
               nextLocation: o.nextLocation
             }))
-          } else a ? Mr((() => i(e))) : w((() => i(e)))
-        }), [r.window, f, d, y, w]);
-        a.useLayoutEffect((() => r.subscribe(b)), [r, b]), a.useEffect((() => {
+          } else a ? Mr((() => i(e))) : b((() => i(e)))
+        }), [r.window, f, d, y, b]);
+        a.useLayoutEffect((() => r.subscribe(w)), [r, w]), a.useEffect((() => {
           u.isTransitioning && !u.flushSync && h(new Ur)
         }), [u]), a.useEffect((() => {
           if (d && s && r.window) {
             let e = s,
               t = d.promise,
               n = r.window.document.startViewTransition((async () => {
-                w((() => i(e))), await t
+                b((() => i(e))), await t
               }));
             n.finished.finally((() => {
               h(void 0), p(void 0), l(void 0), c({
@@ -3553,7 +3553,7 @@ try {
               })
             })), p(n)
           }
-        }), [w, s, d, r.window]), a.useEffect((() => {
+        }), [b, s, d, r.window]), a.useEffect((() => {
           d && s && o.location.key === s.location.key && d.resolve()
         }), [d, f, o.location, s]), a.useEffect((() => {
           !u.isTransitioning && m && (l(m.state), c({
@@ -3765,11 +3765,11 @@ try {
           }), f = ft(), p = a.useContext(ot), {
             navigator: m,
             basename: v
-          } = a.useContext(st), y = null != p && dn(h) && !0 === u, g = m.encodeLocation ? m.encodeLocation(h).pathname : h.pathname, w = f.pathname, b = p && p.navigation && p.navigation.location ? p.navigation.location.pathname : null;
-          n || (w = w.toLowerCase(), b = b ? b.toLowerCase() : null, g = g.toLowerCase()), b && v && (b = N(b, v) || b);
+          } = a.useContext(st), y = null != p && dn(h) && !0 === u, g = m.encodeLocation ? m.encodeLocation(h).pathname : h.pathname, b = f.pathname, w = p && p.navigation && p.navigation.location ? p.navigation.location.pathname : null;
+          n || (b = b.toLowerCase(), w = w ? w.toLowerCase() : null, g = g.toLowerCase()), w && v && (w = N(w, v) || w);
           const E = "/" !== g && g.endsWith("/") ? g.length - 1 : g.length;
-          let S, R = w === g || !i && w.startsWith(g) && "/" === w.charAt(E),
-            x = null != b && (b === g || !i && b.startsWith(g) && "/" === b.charAt(g.length)),
+          let S, R = b === g || !i && b.startsWith(g) && "/" === b.charAt(E),
+            x = null != w && (w === g || !i && w.startsWith(g) && "/" === w.charAt(g.length)),
             D = {
               isActive: R,
               isPending: x,
@@ -3926,7 +3926,7 @@ try {
             let r, n, a, o, i;
             if (vr(s = e) && "form" === s.tagName.toLowerCase()) {
               let i = e.getAttribute("action");
-              n = i ? N(i, t) : null, r = e.getAttribute("method") || pr, a = br(e.getAttribute("enctype")) || mr, o = new FormData(e)
+              n = i ? N(i, t) : null, r = e.getAttribute("method") || pr, a = wr(e.getAttribute("enctype")) || mr, o = new FormData(e)
             } else if (function(e) {
                 return vr(e) && "button" === e.tagName.toLowerCase()
               }(e) || function(e) {
@@ -3935,7 +3935,7 @@ try {
               let i = e.form;
               if (null == i) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
               let s = e.getAttribute("formaction") || i.getAttribute("action");
-              if (n = s ? N(s, t) : null, r = e.getAttribute("formmethod") || i.getAttribute("method") || pr, a = br(e.getAttribute("formenctype")) || br(i.getAttribute("enctype")) || mr, o = new FormData(i, e), ! function() {
+              if (n = s ? N(s, t) : null, r = e.getAttribute("formmethod") || i.getAttribute("method") || pr, a = wr(e.getAttribute("formenctype")) || wr(i.getAttribute("enctype")) || mr, o = new FormData(i, e), ! function() {
                   if (null === gr) try {
                     new FormData(document.createElement("form"), 0), gr = !1
                   } catch (e) {

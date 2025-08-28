@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-red-dead-online",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [8626], {
     18626: (e, n, t) => {
@@ -22,14 +22,14 @@ try {
     },
     69364: (e, n, t) => {
       "use strict";
-      var d = t(66915);
+      var a = t(66915);
 
-      function a() {}
+      function d() {}
 
       function o() {}
-      o.resetWarningCache = a, e.exports = function() {
-        function e(e, n, t, a, o, s) {
-          if (s !== d) {
+      o.resetWarningCache = d, e.exports = function() {
+        function e(e, n, t, d, o, s) {
+          if (s !== a) {
             var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw r.name = "Invariant Violation", r
           }
@@ -60,7 +60,7 @@ try {
           shape: n,
           exact: n,
           checkPropTypes: o,
-          resetWarningCache: a
+          resetWarningCache: d
         };
         return t.PropTypes = t, t
       }

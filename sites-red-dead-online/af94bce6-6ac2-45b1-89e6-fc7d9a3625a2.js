@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-red-dead-online",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [3343], {
     45915: (e, a, t) => {
@@ -86,25 +86,25 @@ try {
             r.localeMatcher = s;
             var d = (0, o.ResolveLocale)(Array.from(e.availableLocales), n, r, [], e.localeData, e.getDefaultLocale),
               c = (0, l.GetOption)(t, "style", "string", ["narrow", "short", "long"], "long");
-            u(this, "style", c);
-            var f = (0, l.GetOption)(t, "type", "string", ["language", "region", "script", "currency", "calendar", "dateTimeField"], void 0);
-            if (void 0 === f) throw TypeError('Intl.DisplayNames constructor requires "type" option');
-            u(this, "type", f), u(this, "fallback", (0, l.GetOption)(t, "fallback", "string", ["code", "none"], "code")), u(this, "locale", d.locale);
+            f(this, "style", c);
+            var u = (0, l.GetOption)(t, "type", "string", ["language", "region", "script", "currency", "calendar", "dateTimeField"], void 0);
+            if (void 0 === u) throw TypeError('Intl.DisplayNames constructor requires "type" option');
+            f(this, "type", u), f(this, "fallback", (0, l.GetOption)(t, "fallback", "string", ["code", "none"], "code")), f(this, "locale", d.locale);
             var p = d.dataLocale,
               y = i[p];
-            (0, l.invariant)(!!y, "Missing locale data for ".concat(p)), u(this, "localeData", y), (0, l.invariant)(void 0 !== y, "locale data for ".concat(d.locale, " does not exist."));
+            (0, l.invariant)(!!y, "Missing locale data for ".concat(p)), f(this, "localeData", y), (0, l.invariant)(void 0 !== y, "locale data for ".concat(d.locale, " does not exist."));
             var g = y.types;
             (0, l.invariant)("object" == typeof g && null != g, "invalid types data");
-            var v = g[f];
-            (0, l.invariant)("object" == typeof v && null != v, "invalid typeFields data");
-            var b = (0, l.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
-            if ("language" === f) {
-              u(this, "languageDisplay", b);
-              var h = g[f][b];
+            var b = g[u];
+            (0, l.invariant)("object" == typeof b && null != b, "invalid typeFields data");
+            var v = (0, l.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
+            if ("language" === u) {
+              f(this, "languageDisplay", v);
+              var h = g[u][v];
               (0, l.invariant)("object" == typeof h && null != h, "invalid language typeFields data")
             }
-            var _ = "language" === f ? g[f][b][c] : g[f][c];
-            (0, l.invariant)("object" == typeof _ && null != _, "invalid styleFields data"), u(this, "fields", _)
+            var _ = "language" === u ? g[u][v][c] : g[u][c];
+            (0, l.invariant)("object" == typeof _ && null != _, "invalid styleFields data"), f(this, "fields", _)
           }
           return e.supportedLocalesOf = function(a, t) {
             return (0, l.SupportedLocales)(e.availableLocales, (0, l.CanonicalizeLocaleList)(a), t)
@@ -118,7 +118,7 @@ try {
               e.localeData[o] = e.localeData[s] = i, e.availableLocales.add(s), e.availableLocales.add(o), e.__defaultLocale || (e.__defaultLocale = s)
             }
           }, e.prototype.of = function(e) {
-            f(this, "of");
+            u(this, "of");
             var a = c(this, "type"),
               t = (0, l.ToString)(e);
             if (! function(e, a) {
@@ -139,7 +139,7 @@ try {
               }(a, t)) throw RangeError("invalid code for Intl.DisplayNames.prototype.of");
             var n, o = (0, l.getMultiInternalSlots)(d, this, "localeData", "style", "fallback"),
               s = o.localeData,
-              u = o.style,
+              f = o.style,
               p = o.fallback,
               y = (0, r.CanonicalCodeForDisplayNames)(a, t);
             if ("language" === a) n = function(e, a, t, n, l) {
@@ -152,18 +152,18 @@ try {
                   d = o[1],
                   c = r[t][s] || r.long[s];
                 if (void 0 === c || !d) return c;
-                var u = a.types.region,
-                  f = u[t][d] || u.long[d];
-                if (f || "code" === l) return a.patterns.locale.replace("{0}", c).replace("{1}", f || d)
+                var f = a.types.region,
+                  u = f[t][d] || f.long[d];
+                if (u || "code" === l) return a.patterns.locale.replace("{0}", c).replace("{1}", u || d)
               }
-            }(c(this, "languageDisplay"), s, u, y, p);
+            }(c(this, "languageDisplay"), s, f, y, p);
             else {
               var g = s.types[a];
-              n = g[u][y] || g.long[y]
+              n = g[f][y] || g.long[y]
             }
             return void 0 !== n ? n : "code" === p ? t : void 0
           }, e.prototype.resolvedOptions = function() {
-            return f(this, "resolvedOptions"), n.__assign({}, (0, l.getMultiInternalSlots)(d, this, "locale", "style", "type", "fallback", "languageDisplay"))
+            return u(this, "resolvedOptions"), n.__assign({}, (0, l.getMultiInternalSlots)(d, this, "locale", "style", "type", "fallback", "languageDisplay"))
           }, e.getDefaultLocale = function() {
             return e.__defaultLocale
           }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.polyfilled = !0, e
@@ -188,11 +188,11 @@ try {
         return (0, l.getInternalSlot)(d, e, a)
       }
 
-      function u(e, a, t) {
+      function f(e, a, t) {
         (0, l.setInternalSlot)(d, e, a, t)
       }
 
-      function f(e, a) {
+      function u(e, a) {
         if (!(e instanceof s)) throw TypeError("Method Intl.DisplayNames.prototype.".concat(a, " called on incompatible receiver"))
       }
     }

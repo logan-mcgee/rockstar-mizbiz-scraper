@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [6940], {
     36940: (o, t, e) => {
@@ -22,12 +22,12 @@ try {
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => r,
         Lightbox_Open_Button_Label: () => f,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
-        Lightbox_Zoom_In_Button_Tooltip: () => n,
-        Lightbox_Zoom_Out_Button_Label: () => a,
-        Lightbox_Zoom_Out_Button__Tooltip: () => d,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_Out_Button_Label: () => n,
+        Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => p
@@ -35,10 +35,10 @@ try {
       var i = "Chiudi lightbox",
         _ = "Premi {shortcut}",
         l = "Aumenta zoom",
-        n = "Premi {shortcut}",
-        a = "Diminuisci zoom",
-        d = "Premi {shortcut}",
-        b = "Ripristina",
+        a = "Premi {shortcut}",
+        n = "Diminuisci zoom",
+        b = "Premi {shortcut}",
+        d = "Ripristina",
         s = "Premi {shortcut}",
         g = "Livello zoom",
         u = "{zoom}%",
@@ -51,10 +51,10 @@ try {
           Lightbox_Close_Button_Label: i,
           Lightbox_Close_Button_Tooltip: _,
           Lightbox_Zoom_In_Button_Label: l,
-          Lightbox_Zoom_In_Button_Tooltip: n,
-          Lightbox_Zoom_Out_Button_Label: a,
-          Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Zoom_Out_Button_Label: n,
+          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,

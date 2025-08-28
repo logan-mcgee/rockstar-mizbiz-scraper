@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "793af7f1166af90e36185780de33260abbd44330",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "793af7f1166af90e36185780de33260abbd44330"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9474], {
     19474: (o, t, e) => {
@@ -20,8 +20,8 @@ try {
         Lightbox_Dialog_Description: () => x,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => u,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => s,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => p
       });
       var _ = "Fechar lightbox",
         i = "Pressionar {shortcut}",
@@ -43,11 +43,11 @@ try {
         g = "Nível de zoom",
         r = "{zoom}%",
         u = "Baixar",
-        f = "Baixar",
-        h = "Abrir imagem na lightbox",
+        h = "Baixar",
+        f = "Abrir imagem na lightbox",
         L = "lightbox da imagem",
         x = "Texto alternativo: {alt}",
-        c = {
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: a,
@@ -59,8 +59,8 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: u,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: x
         }

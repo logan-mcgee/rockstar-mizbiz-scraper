@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
+    release: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
+  id: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [5775, 8156], {
     38156: (e, t, n) => {
@@ -21,8 +21,8 @@ try {
       var o = n(71127),
         r = n.t(o, 2),
         s = n(92600),
-        l = r[" useEffectEvent ".trim().toString()],
-        c = r[" useInsertionEffect ".trim().toString()],
+        c = r[" useEffectEvent ".trim().toString()],
+        l = r[" useInsertionEffect ".trim().toString()],
         a = r[" useInsertionEffect ".trim().toString()] || s.N;
 
       function u({
@@ -31,16 +31,16 @@ try {
         onChange: n = () => {},
         caller: r
       }) {
-        const [s, l, c] = function({
+        const [s, c, l] = function({
           defaultProp: e,
           onChange: t
         }) {
-          const [n, r] = o.useState(e), s = o.useRef(n), l = o.useRef(t);
+          const [n, r] = o.useState(e), s = o.useRef(n), c = o.useRef(t);
           return a((() => {
-            l.current = t
+            c.current = t
           }), [t]), o.useEffect((() => {
-            s.current !== n && (l.current?.(n), s.current = n)
-          }), [n, s]), [n, r, l]
+            s.current !== n && (c.current?.(n), s.current = n)
+          }), [n, s]), [n, r, c]
         }({
           defaultProp: t,
           onChange: n
@@ -61,9 +61,9 @@ try {
             const n = function(e) {
               return "function" == typeof e
             }(t) ? t(e) : t;
-            n !== e && c.current?.(n)
-          } else l(t)
-        }), [u, e, l, c]);
+            n !== e && l.current?.(n)
+          } else c(t)
+        }), [u, e, c, l]);
         return [d, f]
       }
       var d = Symbol("RADIX:SYNC_STATE");
@@ -75,11 +75,11 @@ try {
           onChange: f,
           caller: i
         } = t, b = void 0 !== a, g = function(e) {
-          if ("function" == typeof l) return l(e);
+          if ("function" == typeof c) return c(e);
           const t = o.useRef((() => {
             throw new Error("Cannot call an event handler while rendering.")
           }));
-          return "function" == typeof c ? c((() => {
+          return "function" == typeof l ? l((() => {
             t.current = e
           })) : (0, s.N)((() => {
             t.current = e

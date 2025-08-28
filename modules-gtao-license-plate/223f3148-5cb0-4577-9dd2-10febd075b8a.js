@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -125,24 +125,24 @@ try {
         var i = l.getInternalSlots,
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
-          d = l.localeData,
-          f = l.getDefaultLocale,
-          c = i(e);
-        c.initializedRelativeTimeFormat = !0;
-        var p = (0, r.CanonicalizeLocaleList)(t),
-          y = Object.create(null),
-          m = (0, r.CoerceOptionsToObject)(a),
-          v = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        y.localeMatcher = v;
-        var b = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        y.nu = b;
-        var g = (0, n.ResolveLocale)(u, p, y, s, d, f),
+          c = l.localeData,
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          p = Object.create(null),
+          y = (0, r.CoerceOptionsToObject)(a),
+          m = (0, r.GetOption)(y, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        p.localeMatcher = m;
+        var v = (0, r.GetOption)(y, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
+        p.nu = v;
+        var g = (0, n.ResolveLocale)(u, b, p, s, c, d),
           w = g.locale,
           h = g.nu;
-        c.locale = w, c.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), c.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
-        var _ = d[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), c.fields = _, c.numberFormat = (0, r.createMemoizedNumberFormat)(t), c.pluralRules = (0, r.createMemoizedPluralRules)(t), c.numberingSystem = h, e
+        f.locale = w, f.style = (0, r.GetOption)(y, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(y, "numeric", "string", ["always", "auto"], "always");
+        var _ = c[g.dataLocale];
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(20114),
         n = a(39368),
@@ -168,27 +168,27 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
-          d = s.fields,
-          f = s.style,
-          c = s.numeric,
-          p = s.pluralRules,
-          y = s.numberFormat,
-          m = u;
-        "short" === f ? m = "".concat(u, "-short") : "narrow" === f && (m = "".concat(u, "-narrow")), m in d || (m = u);
-        var v = d[m];
-        if ("auto" === c && (0, r.ToString)(t) in v) return [{
+          c = s.fields,
+          d = s.style,
+          f = s.numeric,
+          b = s.pluralRules,
+          p = s.numberFormat,
+          y = u;
+        "short" === d ? y = "".concat(u, "-short") : "narrow" === d && (y = "".concat(u, "-narrow")), y in c || (y = u);
+        var m = c[y];
+        if ("auto" === f && (0, r.ToString)(t) in m) return [{
           type: "literal",
-          value: v[(0, r.ToString)(t)]
+          value: m[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = v[b],
-          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
+        var v = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
+        var g = m[v],
+          w = "function" == typeof p.formatToParts ? p.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: y.format(Math.abs(t)),
+            value: p.format(Math.abs(t)),
             unit: a
           }],
-          h = g[p.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, u, w)
       };
       var r = a(20114),
@@ -208,10 +208,10 @@ try {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var u = 0, s = a; u < s.length; u++) {
-              var d = s[u];
+              var c = s[u];
               n.push({
-                type: d.type,
-                value: d.value,
+                type: c.type,
+                value: c.value,
                 unit: t
               })
             }

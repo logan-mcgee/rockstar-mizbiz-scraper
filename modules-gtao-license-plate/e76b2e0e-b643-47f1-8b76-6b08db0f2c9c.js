@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [5830], {
     404: (e, n) => {
@@ -192,10 +192,10 @@ try {
     99677: (e, n, r) => {
       Object.defineProperty(n, "__esModule", {
         value: !0
-      }), n._shouldPolyfillWithoutLocale = f, n.shouldPolyfill = function(e) {
+      }), n._shouldPolyfillWithoutLocale = t, n.shouldPolyfill = function(e) {
         void 0 === e && (e = "en");
         try {
-          if (f() || ! function(e) {
+          if (t() || ! function(e) {
               if (!e) return !0;
               var n = Array.isArray(e) ? e : [e];
               return Intl.DisplayNames.supportedLocalesOf(n).length === n.length
@@ -207,7 +207,7 @@ try {
       var a = r(39368),
         s = r(18187);
 
-      function f() {
+      function t() {
         return !Intl.DisplayNames || !(!(e = Intl.DisplayNames) || e.polyfilled) && "CA" === new e(["en"], {
           type: "region"
         }).of("CA") || function() {

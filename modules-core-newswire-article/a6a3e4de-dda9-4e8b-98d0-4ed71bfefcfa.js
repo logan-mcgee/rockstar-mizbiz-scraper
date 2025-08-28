@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [7039], {
     7039: (o, e, t) => {
@@ -18,11 +18,11 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => i,
-        Lightbox_Dialog_Title: () => n,
-        Lightbox_Download_Button_Label: () => a,
+        Lightbox_Dialog_Title: () => a,
+        Lightbox_Download_Button_Label: () => n,
         Lightbox_Download_Button_Tooltip: () => d,
-        Lightbox_Open_Button_Label: () => s,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Open_Button_Label: () => b,
+        Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => u,
         Lightbox_Zoom_In_Button_Tooltip: () => r,
@@ -35,11 +35,11 @@ try {
       var _ = "Close lightbox",
         l = "Press {shortcut}",
         i = "Alt text: {alt}",
-        n = "Image lightbox",
-        a = "Download",
+        a = "Image lightbox",
+        n = "Download",
         d = "Download",
-        s = "Open image in lightbox",
-        b = "Reset",
+        b = "Open image in lightbox",
+        s = "Reset",
         g = "Press {shortcut}",
         u = "Zoom in",
         r = "Press {shortcut}",
@@ -51,11 +51,11 @@ try {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Dialog_Description: i,
-          Lightbox_Dialog_Title: n,
-          Lightbox_Download_Button_Label: a,
+          Lightbox_Dialog_Title: a,
+          Lightbox_Download_Button_Label: n,
           Lightbox_Download_Button_Tooltip: d,
-          Lightbox_Open_Button_Label: s,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Open_Button_Label: b,
+          Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_In_Button_Label: u,
           Lightbox_Zoom_In_Button_Tooltip: r,

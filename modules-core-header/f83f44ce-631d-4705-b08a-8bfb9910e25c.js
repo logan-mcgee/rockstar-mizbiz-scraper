@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
+    release: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
+  id: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [1607], {
     11607: (o, e, t) => {
@@ -24,8 +24,8 @@ try {
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => l,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => r,
@@ -34,8 +34,8 @@ try {
       });
       var _ = "Cerrar",
         i = "Presiona {shortcut}",
-        l = "Acercar",
-        a = "Presiona {shortcut}",
+        a = "Acercar",
+        l = "Presiona {shortcut}",
         n = "Alejar",
         b = "Presiona {shortcut}",
         d = "Restablecer",
@@ -50,8 +50,8 @@ try {
         p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: l,
-          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,

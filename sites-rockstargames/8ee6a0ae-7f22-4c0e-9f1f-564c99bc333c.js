@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "793af7f1166af90e36185780de33260abbd44330",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "793af7f1166af90e36185780de33260abbd44330"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [844, 8463], {
     40844: (e, t, i) => {
@@ -186,18 +186,18 @@ try {
         onChange: h
       } = {}) {
         var u;
-        const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+        const [f, b] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        b.current = h, n.useEffect((() => {
+        p.current = h, n.useEffect((() => {
           if (a || !f) return;
           let n;
           return n = c(f, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), p.current && p.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }), {
             root: r,
             rootMargin: s,
@@ -214,7 +214,7 @@ try {
           inView: !!d,
           entry: void 0
         }));
-        const k = [p, g.inView, g.entry];
+        const k = [b, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

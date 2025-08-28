@@ -5,19 +5,19 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [9368], {
     39368: (e, d, a) => {
       a.r(d), a.d(d, {
-        LookupSupportedLocales: () => m,
-        ResolveLocale: () => f,
-        match: () => g
+        LookupSupportedLocales: () => g,
+        ResolveLocale: () => m,
+        match: () => f
       });
       var n = a(91299),
         r = {
@@ -2439,7 +2439,7 @@ try {
         }
       }
 
-      function f(e, d, a, n, r, _) {
+      function m(e, d, a, n, r, _) {
         var i, u;
         u = "lookup" === a.localeMatcher ? function(e, d, a) {
           for (var n = {
@@ -2456,8 +2456,8 @@ try {
           extension: ""
         });
         var o, c, y = u.locale,
-          f = r[y],
-          m = {
+          m = r[y],
+          g = {
             locale: "en",
             dataLocale: y
           };
@@ -2479,8 +2479,8 @@ try {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var g = [], S = function(e) {
-            var d = null !== (i = null == f ? void 0 : f[e]) && void 0 !== i ? i : [];
+        for (var f = [], S = function(e) {
+            var d = null !== (i = null == m ? void 0 : m[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
             s(void 0 === n || "string" == typeof n, "value must be a string or undefined");
@@ -2499,9 +2499,9 @@ try {
               })
             }
             var u, o, y = a[e];
-            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && g.push(r), m[e] = n
+            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && f.push(r), g[e] = n
           }, L = 0, G = n; L < G.length; L++) S(G[L]);
-        return g.length > 0 && (y = function(e, d, a) {
+        return f.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", r = 0, _ = []; r < _.length; r++) {
             n += "-".concat(_[r])
@@ -2515,10 +2515,10 @@ try {
           if ("-u" === n) return l(e);
           var y = e.indexOf("-x-");
           return l(-1 === y ? e + n : e.slice(0, y) + n + e.slice(y))
-        }(y, 0, g)), m.locale = y, m
+        }(y, 0, f)), g.locale = y, g
       }
 
-      function m(e, d) {
+      function g(e, d) {
         for (var a = [], n = 0, r = d; n < r.length; n++) {
           var _ = M(e, r[n].replace(t, ""));
           _ && a.push(_)
@@ -2526,8 +2526,8 @@ try {
         return a
       }
 
-      function g(e, d, a, n) {
-        return f(d, (r = e, Intl.getCanonicalLocales(r)), {
+      function f(e, d, a, n) {
+        return m(d, (r = e, Intl.getCanonicalLocales(r)), {
           localeMatcher: (null == n ? void 0 : n.algorithm) || "best fit"
         }, [], {}, (function() {
           return a

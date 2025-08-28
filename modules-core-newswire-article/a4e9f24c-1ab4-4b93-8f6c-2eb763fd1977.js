@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -129,18 +129,18 @@ try {
           f = l.getDefaultLocale,
           d = i(e);
         d.initializedRelativeTimeFormat = !0;
-        var y = (0, r.CanonicalizeLocaleList)(t),
-          m = Object.create(null),
-          p = (0, r.CoerceOptionsToObject)(a),
-          v = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        m.localeMatcher = v;
-        var b = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        m.nu = b;
-        var g = (0, n.ResolveLocale)(u, y, m, s, c, f),
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          y = Object.create(null),
+          m = (0, r.CoerceOptionsToObject)(a),
+          p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        y.localeMatcher = p;
+        var v = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
+        y.nu = v;
+        var g = (0, n.ResolveLocale)(u, b, y, s, c, f),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
       };
@@ -171,24 +171,24 @@ try {
           c = s.fields,
           f = s.style,
           d = s.numeric,
-          y = s.pluralRules,
-          m = s.numberFormat,
-          p = u;
-        "short" === f ? p = "".concat(u, "-short") : "narrow" === f && (p = "".concat(u, "-narrow")), p in c || (p = u);
-        var v = c[p];
-        if ("auto" === d && (0, r.ToString)(t) in v) return [{
+          b = s.pluralRules,
+          y = s.numberFormat,
+          m = u;
+        "short" === f ? m = "".concat(u, "-short") : "narrow" === f && (m = "".concat(u, "-narrow")), m in c || (m = u);
+        var p = c[m];
+        if ("auto" === d && (0, r.ToString)(t) in p) return [{
           type: "literal",
-          value: v[(0, r.ToString)(t)]
+          value: p[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = v[b],
-          w = "function" == typeof m.formatToParts ? m.formatToParts(Math.abs(t)) : [{
+        var v = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
+        var g = p[v],
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: m.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
-          h = g[y.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, u, w)
       };
       var r = a(20114),

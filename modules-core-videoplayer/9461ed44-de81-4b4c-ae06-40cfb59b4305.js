@@ -5,47 +5,47 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [954], {
     70954: (e, d, o) => {
       e.exports = o(92834)
     },
     92834: (e, d, o) => {
-      var r = o(62229),
-        n = Symbol.for("react.element"),
-        t = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
-        l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+      var a = o(62229),
+        r = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        t = Object.prototype.hasOwnProperty,
+        f = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, d, o) {
-        var r, t = {},
-          f = null,
+      function s(e, d, o) {
+        var a, n = {},
+          s = null,
           i = null;
-        for (r in void 0 !== o && (f = "" + o), void 0 !== d.key && (f = "" + d.key), void 0 !== d.ref && (i = d.ref), d) a.call(d, r) && !s.hasOwnProperty(r) && (t[r] = d[r]);
+        for (a in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (i = d.ref), d) t.call(d, a) && !l.hasOwnProperty(a) && (n[a] = d[a]);
         if (e && e.defaultProps)
-          for (r in d = e.defaultProps) void 0 === t[r] && (t[r] = d[r]);
+          for (a in d = e.defaultProps) void 0 === n[a] && (n[a] = d[a]);
         return {
-          $$typeof: n,
+          $$typeof: r,
           type: e,
-          key: f,
+          key: s,
           ref: i,
-          props: t,
-          _owner: l.current
+          props: n,
+          _owner: f.current
         }
       }
-      d.Fragment = t, d.jsx = f, d.jsxs = f
+      d.Fragment = n, d.jsx = s, d.jsxs = s
     }
   }
 ]);

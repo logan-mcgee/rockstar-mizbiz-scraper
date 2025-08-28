@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [954, 6913], {
     13404: e => {
@@ -24,7 +24,7 @@ try {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function s(e) {
+      function a(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -48,23 +48,23 @@ try {
           r = i
         }
       }();
-      var a, f = [],
-        u = !1,
-        l = -1;
-
-      function d() {
-        u && a && (u = !1, a.length ? f = a.concat(f) : l = -1, f.length && c())
-      }
+      var s, u = [],
+        l = !1,
+        f = -1;
 
       function c() {
-        if (!u) {
-          var e = s(d);
-          u = !0;
-          for (var t = f.length; t;) {
-            for (a = f, f = []; ++l < t;) a && a[l].run();
-            l = -1, t = f.length
+        l && s && (l = !1, s.length ? u = s.concat(u) : f = -1, u.length && d())
+      }
+
+      function d() {
+        if (!l) {
+          var e = a(c);
+          l = !0;
+          for (var t = u.length; t;) {
+            for (s = u, u = []; ++f < t;) s && s[f].run();
+            f = -1, t = u.length
           }
-          a = null, u = !1,
+          s = null, l = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
               if ((r === i || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        f.push(new y(e, t)), 1 !== f.length || u || s(c)
+        u.push(new y(e, t)), 1 !== u.length || l || a(d)
       }, y.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = p, n.addListener = p, n.once = p, n.off = p, n.removeListener = p, n.removeAllListeners = p, n.emit = p, n.prependListener = p, n.prependOnceListener = p, n.listeners = function(e) {
@@ -114,32 +114,32 @@ try {
       var n = r(62229),
         o = Symbol.for("react.element"),
         i = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        a = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        a = Object.prototype.hasOwnProperty,
+        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        u = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function u(e, t, r) {
+      function l(e, t, r) {
         var n, i = {},
-          u = null,
-          l = null;
-        for (n in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) s.call(t, n) && !f.hasOwnProperty(n) && (i[n] = t[n]);
+          l = null,
+          f = null;
+        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) a.call(t, n) && !u.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
           $$typeof: o,
           type: e,
-          key: u,
-          ref: l,
+          key: l,
+          ref: f,
           props: i,
-          _owner: a.current
+          _owner: s.current
         }
       }
-      t.Fragment = i, t.jsx = u, t.jsxs = u
+      t.Fragment = i, t.jsx = l, t.jsxs = l
     }
   }
 ]);

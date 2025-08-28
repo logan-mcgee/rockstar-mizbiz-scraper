@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [4394], {
     4394: (e, a, t) => {
@@ -305,7 +305,7 @@ try {
           })), "custom" !== e.type && l("paginationRender", s[0])
         }
 
-        function v() {
+        function b() {
           a.params.pagination = n(a, a.originalParams.pagination, a.params.pagination, {
             el: "swiper-pagination"
           });
@@ -319,7 +319,7 @@ try {
           })))
         }
 
-        function b() {
+        function v() {
           const e = a.params.pagination;
           if (p()) return;
           let t = a.pagination.el;
@@ -337,7 +337,7 @@ try {
             t.classList.remove(e.horizontalClass, e.verticalClass), t.classList.add(a.isHorizontal() ? e.horizontalClass : e.verticalClass)
           }))
         })), s("init", (() => {
-          !1 === a.params.pagination.enabled ? h() : (v(), f(), g())
+          !1 === a.params.pagination.enabled ? h() : (b(), f(), g())
         })), s("activeIndexChange", (() => {
           void 0 === a.snapIndex && g()
         })), s("snapIndexChange", (() => {
@@ -345,7 +345,7 @@ try {
         })), s("snapGridLengthChange", (() => {
           f(), g()
         })), s("destroy", (() => {
-          b()
+          v()
         })), s("enable disable", (() => {
           let {
             el: e
@@ -367,7 +367,7 @@ try {
           let {
             el: e
           } = a.pagination;
-          e && (e = (0, i.m)(e), e.forEach((e => e.classList.add(a.params.pagination.paginationDisabledClass)))), b()
+          e && (e = (0, i.m)(e), e.forEach((e => e.classList.add(a.params.pagination.paginationDisabledClass)))), v()
         };
         Object.assign(a.pagination, {
           enable: () => {
@@ -375,13 +375,13 @@ try {
             let {
               el: e
             } = a.pagination;
-            e && (e = (0, i.m)(e), e.forEach((e => e.classList.remove(a.params.pagination.paginationDisabledClass)))), v(), f(), g()
+            e && (e = (0, i.m)(e), e.forEach((e => e.classList.remove(a.params.pagination.paginationDisabledClass)))), b(), f(), g()
           },
           disable: h,
           render: f,
           update: g,
-          init: v,
-          destroy: b
+          init: b,
+          destroy: v
         })
       }
 
@@ -444,13 +444,13 @@ try {
           }))
         }
 
-        function v(e, a) {
+        function b(e, a) {
           (e = (0, i.m)(e)).forEach((e => {
             e.setAttribute("aria-label", a)
           }))
         }
 
-        function b(e) {
+        function v(e) {
           (e = (0, i.m)(e)).forEach((e => {
             e.setAttribute("aria-disabled", !0)
           }))
@@ -483,7 +483,7 @@ try {
           return E() && a.params.pagination.clickable
         }
         const C = (e, a, t) => {
-            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), v(e, t),
+            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), b(e, t),
               function(e, a) {
                 (e = (0, i.m)(e)).forEach((e => {
                   e.setAttribute("aria-controls", a)
@@ -521,7 +521,7 @@ try {
             const t = a.slides.length;
             e.slideLabelMessage && a.slides.forEach(((s, i) => {
               const n = a.params.loop ? parseInt(s.getAttribute("data-swiper-slide-index"), 10) : i;
-              v(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, t))
+              b(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, t))
             }))
           };
         n("beforeInit", (() => {
@@ -531,7 +531,7 @@ try {
             const e = a.params.a11y;
             a.el.append(d);
             const t = a.el;
-            e.containerRoleDescriptionMessage && f(t, e.containerRoleDescriptionMessage), e.containerMessage && v(t, e.containerMessage), e.containerRole && g(t, e.containerRole);
+            e.containerRoleDescriptionMessage && f(t, e.containerRoleDescriptionMessage), e.containerMessage && b(t, e.containerMessage), e.containerRole && g(t, e.containerRole);
             const n = a.wrapperEl,
               l = e.id || n.getAttribute("id") || `swiper-wrapper-${r=16,void 0===r&&(r=16),"x".repeat(r).replace(/x/g,(()=>Math.round(16*Math.random()).toString(16)))}`;
             var r;
@@ -562,13 +562,13 @@ try {
               nextEl: e,
               prevEl: t
             } = a.navigation;
-            t && (a.isBeginning ? (b(t), m(t)) : (h(t), u(t))), e && (a.isEnd ? (b(e), m(e)) : (h(e), u(e)))
+            t && (a.isBeginning ? (v(t), m(t)) : (h(t), u(t))), e && (a.isEnd ? (v(e), m(e)) : (h(e), u(e)))
           }()
         })), n("paginationUpdate", (() => {
           a.params.a11y.enabled && function() {
             const e = a.params.a11y;
             E() && a.pagination.bullets.forEach((t => {
-              a.params.pagination.clickable && (u(t), a.params.pagination.renderBullet || (g(t, "button"), v(t, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.h)(t) + 1)))), t.matches(r(a.params.pagination.bulletActiveClass)) ? t.setAttribute("aria-current", "true") : t.removeAttribute("aria-current")
+              a.params.pagination.clickable && (u(t), a.params.pagination.renderBullet || (g(t, "button"), b(t, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.h)(t) + 1)))), t.matches(r(a.params.pagination.bulletActiveClass)) ? t.setAttribute("aria-current", "true") : t.removeAttribute("aria-current")
             }))
           }()
         })), n("destroy", (() => {

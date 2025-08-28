@@ -5,19 +5,19 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "23734b3e70371e18a05f141b62211d2d95128dc9",
+    release: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139",
     packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "23734b3e70371e18a05f141b62211d2d95128dc9"
+  id: "b3bd47b24b7b42d8940ac28238cd2e138ae3f139"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [2941], {
     22941: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => r,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => p
       });
       var _ = "라이트박스 닫기",
         l = "{shortcut} 누르기",
@@ -46,8 +46,8 @@ try {
         r = "다운로드",
         L = "라이트박스에서 이미지 열기",
         f = "라이트박스 이미지",
-        p = "대체 문구: {alt}",
-        c = {
+        c = "대체 문구: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
@@ -62,7 +62,7 @@ try {
           Lightbox_Download_Button_Tooltip: r,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

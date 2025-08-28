@@ -5,42 +5,42 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [7851], {
-    27851: (e, d, t) => {
-      t(10790), t(75826), t(58533), t(79910), t(6637), t(19954), t(86099), t(85311), t(7250), t(83711), t(81016), t(38069), t(95303), t(32372), t(15674), t(35610), t(73783), t(29090), t(24165);
-      var o = t(95966),
-        n = t(40748),
-        a = t(9623),
-        l = t(81788),
-        s = t(2918),
-        r = t(54156),
-        i = t(52542),
-        c = t(70954);
+    27851: (e, d, a) => {
+      a(10790), a(75826), a(58533), a(79910), a(6637), a(19954), a(86099), a(85311), a(7250), a(83711), a(81016), a(38069), a(95303), a(32372), a(15674), a(35610), a(73783), a(29090), a(24165);
+      var t = a(95966),
+        o = a(40748),
+        n = a(9623),
+        l = a(81788),
+        s = a(2918),
+        r = a(54156),
+        i = a(52542),
+        c = a(70954);
       const f = window?.env?.graphEnv ?? "prod",
         u = (0, l.withIntl)((() => {
-          const [e, d] = (0, a.useSearchParams)(), [{
-            iso: t
-          }] = (0, l.getLocale)(), n = "true" === e.get("autoplay"), i = e.get("id"), f = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", g = Number(e.get("start") ?? 0);
-          return (0, c.jsx)(o.ResizeProvider, {
+          const [e, d] = (0, n.useSearchParams)(), [{
+            iso: a
+          }] = (0, l.getLocale)(), o = "true" === e.get("autoplay"), i = e.get("id"), f = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
+          return (0, c.jsx)(t.ResizeProvider, {
             children: (0, c.jsx)(s.GtmProvider, {
               children: (0, c.jsx)(r.A, {
-                autoplay: n,
+                autoplay: o,
                 context: "embed",
                 locale: u,
                 id: i,
                 resolution: f,
-                start: g,
+                start: b,
                 wrapper: !1,
                 videoChangeCallback: e => {
                   d({
-                    autoplay: n,
+                    autoplay: o,
                     id: e,
                     resolution: f
                   })
@@ -49,17 +49,17 @@ try {
             })
           })
         }), i),
-        g = (0, o.withRockstarGraph)((() => (0, c.jsx)(a.BrowserRouter, {
+        b = (0, t.withRockstarGraph)((() => (0, c.jsx)(n.BrowserRouter, {
           children: (0, c.jsx)(u, {})
         })), {
           env: f
         }),
-        b = window?.env?.gtmId ?? null;
-      (0, o.gtmInit)({
-        id: b
+        g = window?.env?.gtmId ?? null;
+      (0, t.gtmInit)({
+        id: g
       });
       const p = document.createElement("main");
-      document.body.appendChild(p), (0, n.H)(p).render((0, c.jsx)(g, {}))
+      document.body.appendChild(p), (0, o.H)(p).render((0, c.jsx)(b, {}))
     }
   }
 ]);

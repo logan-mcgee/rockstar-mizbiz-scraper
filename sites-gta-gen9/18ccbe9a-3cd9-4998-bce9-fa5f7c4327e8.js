@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "e9ec16f9fe241f7e8169df2a1c5f1f8c74b65018",
     packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "e9ec16f9fe241f7e8169df2a1c5f1f8c74b65018"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [1645], {
     94026: (e, a, s) => {
@@ -21,8 +21,8 @@ try {
         c = s(9623),
         n = s(81788),
         r = s(2918),
-        d = s(95966);
-      const o = (0, n.defineMessages)({
+        o = s(95966);
+      const d = (0, n.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
             defaultMessage: "Sign in to your Rockstar Games Account to submit feedback."
@@ -86,13 +86,13 @@ try {
             type: c,
             t: n
           } = e;
-          const r = (0, d.useQueryParams)(),
-            [o, i] = (0, t.useState)({}),
+          const r = (0, o.useQueryParams)(),
+            [d, i] = (0, t.useState)({}),
             {
               data: p
-            } = (0, d.useQuery)(s, {
-              variables: o,
-              skip: !Object.entries(o).length
+            } = (0, o.useQuery)(s, {
+              variables: d,
+              skip: !Object.entries(d).length
             });
           return (0, t.useEffect)((() => {
             i({
@@ -127,7 +127,7 @@ try {
               className: g[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
-            d = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, f.jsxs)(c.NavLink, {
+            o = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, f.jsxs)(c.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: g[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -145,8 +145,8 @@ try {
               children: r
             }), (0, f.jsx)("div", {
               className: g.stepsNext,
-              children: d
-            }), d.length ? "" : (0, f.jsx)(p, {
+              children: o
+            }), o.length ? "" : (0, f.jsx)(p, {
               feedbackStep: s.path[s.path.length - 1].id,
               mutation: a,
               t: n
@@ -166,7 +166,7 @@ try {
           } = (0, r.useRockstarUser)(), p = (0, t.useRef)(), [m, {
             data: l,
             error: k
-          }] = (0, d.useMutation)(s);
+          }] = (0, o.useMutation)(s);
           return b ? l?.submittal?.id ? (0, f.jsx)("div", {
             className: g.success,
             dangerouslySetInnerHTML: {
@@ -196,7 +196,7 @@ try {
               type: "submit",
               children: c("SUBMIT")
             })]
-          }) : i(o.gtao_feedback_login_cta_text)
+          }) : i(d.gtao_feedback_login_cta_text)
         },
         m = e => {
           let {
@@ -204,7 +204,7 @@ try {
             query: s,
             type: t
           } = e;
-          return (0, d.withTranslations)(i, "rdo" === t ? "rdr2" : t)({
+          return (0, o.withTranslations)(i, "rdo" === t ? "rdr2" : t)({
             mutation: a,
             query: s,
             type: t

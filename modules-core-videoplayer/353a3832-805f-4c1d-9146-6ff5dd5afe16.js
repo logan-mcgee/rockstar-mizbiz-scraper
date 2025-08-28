@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [954, 1325, 7354], {
     27354: (e, a, t) => {
@@ -46,18 +46,18 @@ try {
           const {
             data: y
           } = (0, c.useRockstarUser)(), {
-            track: _
-          } = (0, c.useGtmTrack)(), h = (0, o.getCookieValueByName)("UAGC"), [b, v] = (0, r.useState)("1" === (w = h) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
+            track: b
+          } = (0, c.useGtmTrack)(), _ = (0, o.getCookieValueByName)("UAGC"), [h, v] = (0, r.useState)("1" === (w = _) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, r.useState)(), x = (0, r.createRef)(), E = (0, r.createRef)(), j = (0, r.createRef)(), {
             style: D
           } = g;
           return (0, r.useEffect)((() => {
-            _({
+            b({
               event: "age_gate_popup",
               element_placement: p.element_placement ?? ""
             })
-          }), []), b === u.PASSED || !1 === y?.isAMinor ? t : b === u.FAILED ? (0, f.jsxs)("div", {
+          }), []), h === u.PASSED || !1 === y?.isAMinor ? t : h === u.FAILED ? (0, f.jsxs)("div", {
             className: i.agegate,
             style: D,
             children: [g?.header, (0, f.jsx)("h2", {
@@ -85,7 +85,7 @@ try {
                   c = (0, s.f)(t) && (0, d.d)(t, r);
                 if (I(c), c) {
                   const e = (0, l.V)(new Date, t) >= a;
-                  _(e ? {
+                  b(e ? {
                     event: "age_gate_passed",
                     element_placement: p.element_placement ?? ""
                   } : {

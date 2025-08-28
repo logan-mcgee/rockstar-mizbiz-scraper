@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "793af7f1166af90e36185780de33260abbd44330",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "793af7f1166af90e36185780de33260abbd44330"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [544], {
     1157: e => {
@@ -44,7 +44,7 @@ try {
     10670: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => r
+        A: () => d
       });
       var i = t(62229),
         s = t(95966);
@@ -53,23 +53,23 @@ try {
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0"
       };
-      var d = t(70954);
+      var r = t(70954);
       (0, s.importAll)(t(86751));
-      const r = e => {
+      const d = e => {
         let {
           isWideCard: a = !1,
-          size: r = 640,
+          size: d = 640,
           title: m,
-          titleSlug: c
+          titleSlug: o
         } = e;
         const {
-          isMobile: o
+          isMobile: c
         } = (0, s.useWindowResize)(), l = (0, i.useMemo)((() => {
           let e = "";
-          return a && (e = o ? t(24865)(`./${c}/mobile.jpg`) : t(53781)(`./${c}/desktop.jpg`)), e || (e = t(39294)(`./${c}.jpg`), e += `?im=Resize=${r}`), e
-        }), [o, c]), [g] = (0, s.usePreloadImg)(l);
+          return a && (e = c ? t(24865)(`./${o}/mobile.jpg`) : t(53781)(`./${o}/desktop.jpg`)), e || (e = t(39294)(`./${o}.jpg`), e += `?im=Resize=${d}`), e
+        }), [c, o]), [g] = (0, s.usePreloadImg)(l);
         let p = l;
-        return (0, d.jsx)("div", {
+        return (0, r.jsx)("div", {
           role: "img",
           "aria-label": m,
           style: {
@@ -998,19 +998,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = i[a] || new Set,
-          d = new Set,
-          r = new Set;
+          r = new Set,
+          d = new Set;
         for (n.forEach((function(e) {
-            r.add(e)
-          })); r.size > 0;) {
-          var m = r;
-          r = new Set, m.forEach((function(e) {
-            d.has(e) || (d.add(e), (i[e] || new Set).forEach((function(e) {
-              r.add(e)
+            d.add(e)
+          })); d.size > 0;) {
+          var m = d;
+          d = new Set, m.forEach((function(e) {
+            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+              d.add(e)
             })))
           }))
         }
-        return d.forEach((function(a) {
+        return r.forEach((function(a) {
           var i = s(e, a);
           i && t.definitions.push(i)
         })), t
@@ -1034,10 +1034,10 @@ try {
       var i = t(62229),
         s = t(9623),
         n = t(95966),
-        d = t(2918),
-        r = t(18444),
+        r = t(2918),
+        d = t(18444),
         m = t(88816);
-      const c = {
+      const o = {
         newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
         info: "rockstargames-sites-rockstargamesea1c51ae745531c2aeabbe3fcf603842",
         title: "rockstargames-sites-rockstargamesf1dfe59c3d981dbe132559620885ecea",
@@ -1047,7 +1047,7 @@ try {
         top: "rockstargames-sites-rockstargameseee9c5d3b714a61ac265369800a6d4e0",
         startAnimation: "rockstargames-sites-rockstargamesa56af3c95449fe8452485dfb6c89fc29"
       };
-      var o = t(70954);
+      var c = t(70954);
       const l = e => {
         let {
           section: a = "",
@@ -1058,7 +1058,7 @@ try {
         } = e;
         const {
           track: u
-        } = (0, d.useGtmTrack)(), [k] = (0, s.useSearchParams)(), f = l.preview_images_parsed.newswire_block, b = {
+        } = (0, r.useGtmTrack)(), [k] = (0, s.useSearchParams)(), f = l.preview_images_parsed.newswire_block, b = {
           default: 0 !== t || g ? f.square || f.d16x9 || f._fallback : f.d16x9 || f.square || f._fallback,
           mobile: f.square || f._fallback
         }, [v, j] = (0, n.usePreloadImg)(b.default), h = {
@@ -1078,35 +1078,35 @@ try {
             element_placement: a?.toLowerCase()
           })
         }), [l]);
-        return (0, o.jsx)(r.A, {
+        return (0, c.jsx)(d.A, {
           to: l.url,
-          className: [c.newswireBlock, g ? c.newswireBlockNoSpecialOrder : "", null !== v ? c.startAnimation : ""].join(" "),
+          className: [o.newswireBlock, g ? o.newswireBlockNoSpecialOrder : "", null !== v ? o.startAnimation : ""].join(" "),
           focused: p,
           onClick: _,
-          children: (0, o.jsxs)(o.Fragment, {
-            children: [0 !== t || k.get("tag_id") ? (0, o.jsx)("div", {
-              className: c.preview,
+          children: (0, c.jsxs)(c.Fragment, {
+            children: [0 !== t || k.get("tag_id") ? (0, c.jsx)("div", {
+              className: o.preview,
               style: h.default
-            }) : (0, o.jsxs)(o.Fragment, {
-              children: [(0, o.jsx)("div", {
-                className: c.previewMobile,
+            }) : (0, c.jsxs)(c.Fragment, {
+              children: [(0, c.jsx)("div", {
+                className: o.previewMobile,
                 style: h.mobile
-              }), (0, o.jsx)("div", {
-                className: c.preview,
+              }), (0, c.jsx)("div", {
+                className: o.preview,
                 style: h.default
               })]
-            }), (0, o.jsxs)("div", {
-              className: c.info,
-              children: [(0, o.jsxs)("div", {
-                className: c.top,
-                children: [l.primary_tags.length ? (0, o.jsx)(m.A, {
+            }), (0, c.jsxs)("div", {
+              className: o.info,
+              children: [(0, c.jsxs)("div", {
+                className: o.top,
+                children: [l.primary_tags.length ? (0, c.jsx)(m.A, {
                   title: l.primary_tags[l.primary_tags.length > 1 && 722 === l.primary_tags[0].id ? 1 : 0].name
-                }) : "", (0, o.jsx)("time", {
+                }) : "", (0, c.jsx)("time", {
                   dateTime: l.created,
                   children: l.created_formatted
                 })]
-              }), (0, o.jsx)("h5", {
-                className: c.title,
+              }), (0, c.jsx)("h5", {
+                className: o.title,
                 dangerouslySetInnerHTML: {
                   __html: l.title
                 }
@@ -1164,7 +1164,7 @@ try {
     30760: (e, a, t) => {
       "use strict";
       t.d(a, {
-        s: () => r,
+        s: () => d,
         N: () => m
       });
       var i = t(95966),
@@ -1178,16 +1178,16 @@ try {
         screencapLoaded: "rockstargames-sites-rockstargamesb8d4ef3e1a73c58f4002eab351d4eec2",
         gameTitle: "rockstargames-sites-rockstargamesa1fe577b937c0e16250bf38e9d775061"
       };
-      var d = t(70954);
-      const r = e => {
+      var r = t(70954);
+      const d = e => {
           let {
             video: a,
             size: t = 640
           } = e;
           const s = () => a.screencap.includes("akamai") ? `${a.screencap}?im=Resize=${t}` : a.screencap,
-            [r] = (0, i.usePreloadImg)(s());
-          return (0, d.jsx)("div", {
-            className: [n.screencap, r ? n.screencapLoaded : ""].join(" "),
+            [d] = (0, i.usePreloadImg)(s());
+          return (0, r.jsx)("div", {
+            className: [n.screencap, d ? n.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s()}) center/cover`
             }
@@ -1199,28 +1199,28 @@ try {
             openInNewWindow: t = !1,
             video: i,
             size: m,
-            toExplicit: c
+            toExplicit: o
           } = e;
-          const o = c ?? `/videos/${i.id}`,
+          const c = o ?? `/videos/${i.id}`,
             l = {
               className: n.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": o
+              "data-gtm-label": c
             },
-            g = (0, d.jsxs)("div", {
+            g = (0, r.jsxs)("div", {
               className: n.card,
-              children: [(0, d.jsx)(r, {
+              children: [(0, r.jsx)(d, {
                 video: i,
                 size: m
-              }), (0, d.jsxs)("div", {
+              }), (0, r.jsxs)("div", {
                 className: n.info,
-                children: [a ? (0, d.jsx)("div", {
+                children: [a ? (0, r.jsx)("div", {
                   className: n.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: i.game.title
                   }
-                }) : "", (0, d.jsx)("h5", {
+                }) : "", (0, r.jsx)("h5", {
                   className: n.title,
                   dangerouslySetInnerHTML: {
                     __html: i.title
@@ -1228,13 +1228,13 @@ try {
                 })]
               })]
             });
-          return t ? (0, d.jsx)("a", {
-            href: o,
+          return t ? (0, r.jsx)("a", {
+            href: c,
             target: "_blank",
             ...l,
             children: g
-          }) : (0, d.jsx)(s.A, {
-            to: o,
+          }) : (0, r.jsx)(s.A, {
+            to: c,
             ...l,
             children: g
           })
@@ -1349,8 +1349,8 @@ try {
       var i = t(62229),
         s = t(9623),
         n = t(21094);
-      const d = "rockstargames-sites-rockstargamesb013d77f453d7053bbcf06f173ff326c";
-      var r = t(70954);
+      const r = "rockstargames-sites-rockstargamesb013d77f453d7053bbcf06f173ff326c";
+      var d = t(70954);
       const m = e => {
           let {
             children: a,
@@ -1359,7 +1359,7 @@ try {
             page: s,
             className: n
           } = e;
-          return (0, r.jsx)("a", {
+          return (0, d.jsx)("a", {
             href: "#",
             className: s === t.page ? `rockstargames-sites-rockstargamesb577d5726806ec872ecdb8a46905734f ${n??""}` : "",
             onClick: e => {
@@ -1368,7 +1368,7 @@ try {
             children: a
           })
         },
-        c = e => {
+        o = e => {
           let {
             data: a,
             onPageUpdate: t,
@@ -1377,31 +1377,31 @@ try {
           if (1 === a.pageCount) return null;
           const s = new Array(Math.min(a.pageCount, 8)),
             n = Math.max(a.pageCount - 8, 1),
-            c = Math.max(2, a.page - 4),
-            o = Array.from(s, ((e, a) => a + Math.min(n, c)));
-          return (0, r.jsxs)("div", {
+            o = Math.max(2, a.page - 4),
+            c = Array.from(s, ((e, a) => a + Math.min(n, o)));
+          return (0, d.jsxs)("div", {
             className: `rockstargames-sites-rockstargamese480f25872ae2a8b3fcd1e492d838301 ${i??""}`,
-            children: [a.pageCount > 8 ? (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(m, {
+            children: [a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
+              children: [(0, d.jsx)(m, {
                 data: a,
                 onPageUpdate: t,
                 page: 1,
                 children: "1"
-              }), 2 !== o[0] ? (0, r.jsx)("div", {
-                className: d,
+              }), 2 !== c[0] ? (0, d.jsx)("div", {
+                className: r,
                 children: "..."
               }) : ""]
-            }) : "", o.map((e => (0, r.jsx)(m, {
+            }) : "", c.map((e => (0, d.jsx)(m, {
               data: a,
               onPageUpdate: t,
               page: e,
               className: i,
               children: e
-            }, e))), a.pageCount > 8 ? (0, r.jsxs)(r.Fragment, {
-              children: [o.slice(-1)[0] + 1 < a.pageCount ? (0, r.jsx)("div", {
-                className: d,
+            }, e))), a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
+              children: [c.slice(-1)[0] + 1 < a.pageCount ? (0, d.jsx)("div", {
+                className: r,
                 children: "..."
-              }) : "", (0, r.jsx)(m, {
+              }) : "", (0, d.jsx)(m, {
                 data: a,
                 onPageUpdate: t,
                 page: a.pageCount,
@@ -1410,7 +1410,7 @@ try {
             }) : ""]
           })
         };
-      var o = t(43885),
+      var c = t(43885),
         l = t(30760),
         g = t(91430),
         p = t(95966),
@@ -1424,42 +1424,42 @@ try {
             searchResponse: t,
             activeTab: i
           } = e;
-          const [d, m] = (0, s.useSearchParams)();
-          let o;
+          const [r, m] = (0, s.useSearchParams)();
+          let c;
           switch (i) {
             case "posts":
-              o = t.posts.results.map((e => (0, r.jsx)(n.A, {
+              c = t.posts.results.map((e => (0, d.jsx)(n.A, {
                 post: e,
                 noSpecialOrder: !0
               }, e.id)));
               break;
             case "games":
-              o = t.games.results.map((e => (0, r.jsx)(g.N, {
+              c = t.games.results.map((e => (0, d.jsx)(g.N, {
                 game: e
               }, e.id)));
               break;
             case "videos":
-              o = t.videos.results.map((e => (0, r.jsx)(l.N, {
+              c = t.videos.results.map((e => (0, d.jsx)(l.N, {
                 video: e
               }, e.id)));
               break;
             default:
-              o = null
+              c = null
           }
-          return (0, r.jsxs)(r.Fragment, {
-            children: [a ? "" : (0, r.jsx)("section", {
+          return (0, d.jsxs)(d.Fragment, {
+            children: [a ? "" : (0, d.jsx)("section", {
               className: "rockstargames-sites-rockstargamesfd11aba08f1048b65f7622be1a6b951d",
-              children: (0, r.jsx)("div", {
+              children: (0, d.jsx)("div", {
                 className: "rockstargames-sites-rockstargamesf0dd8d4498e6c2c72fa698ba6fa3ad15",
-                children: o
+                children: c
               })
-            }), t[i]?.paging ? (0, r.jsx)("section", {
+            }), t[i]?.paging ? (0, d.jsx)("section", {
               className: "rockstargames-sites-rockstargamesa181f90d52be1b1d67d871d5df02c04e",
-              children: (0, r.jsx)(c, {
+              children: (0, d.jsx)(o, {
                 data: t[i].paging,
                 onPageUpdate: e => {
                   m({
-                    ...Object.fromEntries([...d]),
+                    ...Object.fromEntries([...r]),
                     page: e
                   }), window.scrollTo(0, 0)
                 }
@@ -1477,7 +1477,7 @@ try {
             },
             setSearch: s,
             setTitle: n
-          } = (0, u.b)(), d = (0, p.useQueryParams)(), [m, c] = (0, i.useState)(null), [l, g] = (0, i.useState)({}), [j, h] = (0, i.useState)(d.get("tab") ?? "games"), {
+          } = (0, u.b)(), r = (0, p.useQueryParams)(), [m, o] = (0, i.useState)(null), [l, g] = (0, i.useState)({}), [j, h] = (0, i.useState)(r.get("tab") ?? "games"), {
             data: _ = {},
             loading: N
           } = (0, p.useQuery)(k.SearchData, {
@@ -1487,46 +1487,46 @@ try {
           });
           return (0, i.useEffect)((() => {
             const e = {
-              q: d.get("q"),
-              page: Number(d.get("page") ?? 1),
+              q: r.get("q"),
+              page: Number(r.get("page") ?? 1),
               withGames: !0,
               withPosts: !0,
               withVideos: !0
             };
-            g(e), s(d.get("q"))
-          }), [d.get("q"), d.get("page"), d.get("tab"), j]), (0, i.useEffect)((() => {
+            g(e), s(r.get("q"))
+          }), [r.get("q"), r.get("page"), r.get("tab"), j]), (0, i.useEffect)((() => {
             const e = Object.entries(_).find((e => {
               let [, a] = e;
               return a?.paging?.count > 0
             }))?.[0];
-            h(d.get("tab") ?? e ?? "games")
-          }), [_, d.get("tab")]), (0, i.useEffect)((() => {
-            void 0 !== _?.games?.paging?.count && (c((_?.games?.paging?.count ?? 0) + (_?.videos?.paging?.count ?? 0) + (_?.posts?.paging?.count ?? 0)), n(_?.meta?.title.replace("%s", t)))
-          }), [_, j]), Object.entries(l).length ? l.q ? null === m || N ? null : (0, r.jsxs)("div", {
+            h(r.get("tab") ?? e ?? "games")
+          }), [_, r.get("tab")]), (0, i.useEffect)((() => {
+            void 0 !== _?.games?.paging?.count && (o((_?.games?.paging?.count ?? 0) + (_?.videos?.paging?.count ?? 0) + (_?.posts?.paging?.count ?? 0)), n(_?.meta?.title.replace("%s", t)))
+          }), [_, j]), Object.entries(l).length ? l.q ? null === m || N ? null : (0, d.jsxs)("div", {
             className: f,
-            children: [(0, r.jsx)("section", {
+            children: [(0, d.jsx)("section", {
               className: b,
-              children: (0, r.jsxs)("div", {
+              children: (0, d.jsxs)("div", {
                 className: "rockstargames-sites-rockstargamese054deca2519c2462fc96246266a5fbc",
-                children: [(0, r.jsxs)("h4", {
+                children: [(0, d.jsxs)("h4", {
                   children: [N ? a("search-active") : "", N || m ? N ? "" : a("Search results for:") : a("search-over-empty")]
-                }), (0, r.jsx)("h1", {
-                  children: a("%s").replace("%s", d.get("q"))
+                }), (0, d.jsx)("h1", {
+                  children: a("%s").replace("%s", r.get("q"))
                 })]
               })
-            }), !N && m ? (0, r.jsx)(v, {
+            }), !N && m ? (0, d.jsx)(v, {
               searchResponse: _,
               searchTerm: t,
               activeTab: j,
               t: a
             }) : ""]
-          }) : (0, r.jsx)("div", {
+          }) : (0, d.jsx)("div", {
             className: f,
-            children: (0, r.jsxs)("section", {
+            children: (0, d.jsxs)("section", {
               className: b,
-              children: [(0, r.jsx)("h3", {
+              children: [(0, d.jsx)("h3", {
                 children: a("Search")
-              }), (0, r.jsx)(o.A, {})]
+              }), (0, d.jsx)(c.A, {})]
             })
           }) : null
         }))
@@ -1724,24 +1724,24 @@ try {
     88816: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => d
+        A: () => r
       });
       var i = t(18444);
       const s = {
         tag: "rockstargames-sites-rockstargamesb660bb706132d84852c02df01cc6ed5a"
       };
       var n = t(70954);
-      const d = e => {
+      const r = e => {
         let {
           className: a,
           href: t,
-          title: d,
-          style: r
+          title: r,
+          style: d
         } = e;
         const m = (0, n.jsxs)("div", {
-          style: r,
+          style: d,
           className: [s.tag, a].join(" "),
-          children: [(0, n.jsx)("i", {}), d]
+          children: [(0, n.jsx)("i", {}), r]
         });
         return void 0 !== t ? (0, n.jsx)(i.A, {
           to: t,
@@ -1761,7 +1761,7 @@ try {
       "use strict";
       t.d(a, {
         s: () => i.A,
-        N: () => r
+        N: () => d
       });
       var i = t(10670),
         s = t(18444);
@@ -1769,30 +1769,30 @@ try {
         fobLink: "rockstargames-sites-rockstargamesd30ff40ba02b7ed14124da3ca9cd4f2b",
         wide: "rockstargames-sites-rockstargamesc9686ec502f78b05e47568667e90bd17"
       };
-      var d = t(70954);
-      const r = e => {
+      var r = t(70954);
+      const d = e => {
         let {
           game: a,
           to: t
         } = e;
         const {
-          titleSlug: r,
+          titleSlug: d,
           urlOfficial: m = ""
-        } = a, c = ["VI"].includes(r.toUpperCase());
-        return (0, d.jsx)(s.A, {
+        } = a, o = ["VI"].includes(d.toUpperCase());
+        return (0, r.jsx)(s.A, {
           "data-gtm-category": "Games",
           "data-gtm-action": "Game Click-through",
-          "data-gtm-label": r,
-          "data-testid": `${r}-gamecard`,
+          "data-gtm-label": d,
+          "data-testid": `${d}-gamecard`,
           to: t ?? m,
           target: "_self",
-          className: [n.fobLink, c ? n.wide : ""].join(" "),
-          reloadDocument: c,
-          children: (0, d.jsx)(i.A, {
+          className: [n.fobLink, o ? n.wide : ""].join(" "),
+          reloadDocument: o,
+          children: (0, r.jsx)(i.A, {
             title: a.title,
-            titleSlug: r,
-            isWideCard: c,
-            size: c ? 1740 : 480
+            titleSlug: d,
+            isWideCard: o,
+            size: o ? 1740 : 480
           })
         })
       }

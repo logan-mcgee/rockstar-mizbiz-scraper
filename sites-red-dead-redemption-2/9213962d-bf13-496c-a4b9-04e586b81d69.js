@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "61ad12580c14ee5147480faf673e214137f57fe1",
     packageName: "@rockstargames/sites-red-dead-redemption-2",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "61ad12580c14ee5147480faf673e214137f57fe1"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [2315], {
     8855: (e, t, r) => {
@@ -147,41 +147,41 @@ try {
           value: e[0].value
         }];
         for (var f = [], m = 0, p = e; m < p.length; m++) {
-          var d = p[m];
-          if ((0, i.eW)(d)) f.push({
+          var g = p[m];
+          if ((0, i.eW)(g)) f.push({
             type: n.literal,
-            value: d.value
+            value: g.value
           });
-          else if ((0, i.jA)(d)) "number" == typeof h && f.push({
+          else if ((0, i.jA)(g)) "number" == typeof h && f.push({
             type: n.literal,
             value: r.getNumberFormat(t).format(h)
           });
           else {
-            var g = d.value;
-            if (!u || !(g in u)) throw new o.Ei(g, c);
-            var y = u[g];
-            if ((0, i.Im)(d)) y && "string" != typeof y && "number" != typeof y || (y = "string" == typeof y || "number" == typeof y ? String(y) : ""), f.push({
+            var d = g.value;
+            if (!u || !(d in u)) throw new o.Ei(d, c);
+            var y = u[d];
+            if ((0, i.Im)(g)) y && "string" != typeof y && "number" != typeof y || (y = "string" == typeof y || "number" == typeof y ? String(y) : ""), f.push({
               type: "string" == typeof y ? n.literal : n.object,
               value: y
             });
-            else if ((0, i.tv)(d)) {
-              var E = "string" == typeof d.style ? l.date[d.style] : (0, i.Tu)(d.style) ? d.style.parsedOptions : void 0;
+            else if ((0, i.tv)(g)) {
+              var E = "string" == typeof g.style ? l.date[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : void 0;
               f.push({
                 type: n.literal,
                 value: r.getDateTimeFormat(t, E).format(y)
               })
-            } else if ((0, i.Qh)(d)) E = "string" == typeof d.style ? l.time[d.style] : (0, i.Tu)(d.style) ? d.style.parsedOptions : l.time.medium, f.push({
+            } else if ((0, i.Qh)(g)) E = "string" == typeof g.style ? l.time[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : l.time.medium, f.push({
               type: n.literal,
               value: r.getDateTimeFormat(t, E).format(y)
             });
-            else if ((0, i.oF)(d))(E = "string" == typeof d.style ? l.number[d.style] : (0, i.N1)(d.style) ? d.style.parsedOptions : void 0) && E.scale && (y *= E.scale || 1), f.push({
+            else if ((0, i.oF)(g))(E = "string" == typeof g.style ? l.number[g.style] : (0, i.N1)(g.style) ? g.style.parsedOptions : void 0) && E.scale && (y *= E.scale || 1), f.push({
               type: n.literal,
               value: r.getNumberFormat(t, E).format(y)
             });
             else {
-              if ((0, i.xm)(d)) {
-                var b = d.children,
-                  _ = d.value,
+              if ((0, i.xm)(g)) {
+                var b = g.children,
+                  _ = g.value,
                   v = u[_];
                 if (!a(v)) throw new o.Zo(_, "function", c);
                 var T = v(s(b, t, r, l, u, h).map((function(e) {
@@ -194,20 +194,20 @@ try {
                   }
                 })))
               }
-              if ((0, i.Jp)(d)) {
-                if (!(H = d.options[y] || d.options.other)) throw new o.$x(d.value, y, Object.keys(d.options), c);
+              if ((0, i.Jp)(g)) {
+                if (!(H = g.options[y] || g.options.other)) throw new o.$x(g.value, y, Object.keys(g.options), c);
                 f.push.apply(f, s(H.value, t, r, l, u))
-              } else if ((0, i.N6)(d)) {
+              } else if ((0, i.N6)(g)) {
                 var H;
-                if (!(H = d.options["=".concat(y)])) {
+                if (!(H = g.options["=".concat(y)])) {
                   if (!Intl.PluralRules) throw new o.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', o.O4.MISSING_INTL_API, c);
                   var A = r.getPluralRules(t, {
-                    type: d.pluralType
-                  }).select(y - (d.offset || 0));
-                  H = d.options[A] || d.options.other
+                    type: g.pluralType
+                  }).select(y - (g.offset || 0));
+                  H = g.options[A] || g.options.other
                 }
-                if (!H) throw new o.$x(d.value, y, Object.keys(d.options), c);
-                f.push.apply(f, s(H.value, t, r, l, u, y - (d.offset || 0)))
+                if (!H) throw new o.$x(g.value, y, Object.keys(g.options), c);
+                f.push.apply(f, s(H.value, t, r, l, u, y - (g.offset || 0)))
               }
             }
           }
@@ -279,9 +279,9 @@ try {
           }
           var a = h(r);
           c && (a = a.concat(c(r)));
-          for (var s = l(t), d = l(r), g = 0; g < a.length; ++g) {
-            var y = a[g];
-            if (!(o[y] || n && n[y] || d && d[y] || s && s[y])) {
+          for (var s = l(t), g = l(r), d = 0; d < a.length; ++d) {
+            var y = a[d];
+            if (!(o[y] || n && n[y] || g && g[y] || s && s[y])) {
               var E = f(r, y);
               try {
                 u(t, y, E)
@@ -632,8 +632,8 @@ try {
             f = e.messages,
             m = e.defaultLocale,
             p = e.defaultFormats,
-            d = e.fallbackOnEmptyString,
-            g = e.onError,
+            g = e.fallbackOnEmptyString,
+            d = e.onError,
             y = e.timeZone,
             E = e.defaultRichTextElements;
           void 0 === r && (r = {
@@ -647,11 +647,11 @@ try {
           if (Array.isArray(T) && 1 === T.length && T[0].type === i.ZE.literal) return T[0].value;
           if (!o && T && "string" == typeof T && !E) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
           if (o = (0, n.__assign)((0, n.__assign)({}, E), o || {}), c = h(c, y), p = h(p, y), !T) {
-            if (!1 === d && "" === T) return T;
-            if ((!_ || u && u.toLowerCase() !== m.toLowerCase()) && g(new a.sb(r, u)), _) try {
+            if (!1 === g && "" === T) return T;
+            if ((!_ || u && u.toLowerCase() !== m.toLowerCase()) && d(new a.sb(r, u)), _) try {
               return t.getMessageFormat(_, m, p, l).format(o)
             } catch (e) {
-              return g(new a.Ho('Error formatting default message for: "'.concat(v, '", rendering default message verbatim'), u, r, e)), "string" == typeof _ ? _ : v
+              return d(new a.Ho('Error formatting default message for: "'.concat(v, '", rendering default message verbatim'), u, r, e)), "string" == typeof _ ? _ : v
             }
             return v
           }
@@ -660,12 +660,12 @@ try {
               formatters: t
             }, l || {})).format(o)
           } catch (e) {
-            g(new a.Ho('Error formatting message: "'.concat(v, '", using ').concat(_ ? "default message" : "id", " as fallback."), u, r, e))
+            d(new a.Ho('Error formatting message: "'.concat(v, '", using ').concat(_ ? "default message" : "id", " as fallback."), u, r, e))
           }
           if (_) try {
             return t.getMessageFormat(_, m, p, l).format(o)
           } catch (e) {
-            g(new a.Ho('Error formatting the default message for: "'.concat(v, '", rendering message verbatim'), u, r, e))
+            d(new a.Ho('Error formatting the default message for: "'.concat(v, '", rendering message verbatim'), u, r, e))
           }
           return "string" == typeof T ? T : "string" == typeof _ ? _ : v
         },
@@ -702,7 +702,7 @@ try {
         return String(l)
       }
 
-      function d(e, t) {
+      function g(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var i = r[0],
           o = r[1],
@@ -716,7 +716,7 @@ try {
         return String(l)
       }
 
-      function g(e, t) {
+      function d(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var i = r[0],
           o = r[1],
@@ -911,8 +911,8 @@ try {
                   formatRelativeTime: C.bind(null, i, r.getRelativeTimeFormat),
                   formatDate: p.bind(null, i, r.getDateTimeFormat),
                   formatDateToParts: y.bind(null, i, r.getDateTimeFormat),
-                  formatTime: d.bind(null, i, r.getDateTimeFormat),
-                  formatDateTimeRange: g.bind(null, i, r.getDateTimeFormat),
+                  formatTime: g.bind(null, i, r.getDateTimeFormat),
+                  formatDateTimeRange: d.bind(null, i, r.getDateTimeFormat),
                   formatTimeToParts: E.bind(null, i, r.getDateTimeFormat),
                   formatPlural: R.bind(null, i, r.getPluralRules),
                   formatMessage: c.bind(null, i, r),
@@ -1086,9 +1086,9 @@ try {
         oF: () => h,
         N1: () => y,
         N6: () => p,
-        jA: () => d,
+        jA: () => g,
         Jp: () => m,
-        xm: () => g,
+        xm: () => d,
         Qh: () => f,
         qg: () => ae
       });
@@ -1122,11 +1122,11 @@ try {
         return e.type === i.plural
       }
 
-      function d(e) {
+      function g(e) {
         return e.type === i.pound
       }
 
-      function g(e) {
+      function d(e) {
         return e.type === i.tag
       }
 
@@ -1998,8 +1998,8 @@ try {
               if ((H = this.tryParseArgumentClose(a)).err) return H;
               var p = F(a, this.clonePosition());
               if (f && Z(null == f ? void 0 : f.style, "::", 0)) {
-                var d = z(f.style.slice(2));
-                if ("number" === h) return (T = this.parseNumberSkeletonFromString(d, f.styleLocation)).err ? T : {
+                var g = z(f.style.slice(2));
+                if ("number" === h) return (T = this.parseNumberSkeletonFromString(g, f.styleLocation)).err ? T : {
                   val: {
                     type: i.number,
                     value: r,
@@ -2008,9 +2008,9 @@ try {
                   },
                   err: null
                 };
-                if (0 === d.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
-                var g = d;
-                this.locale && (g = function(e, t) {
+                if (0 === g.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
+                var d = g;
+                this.locale && (d = function(e, t) {
                   for (var r = "", n = 0; n < e.length; n++) {
                     var i = e.charAt(n);
                     if ("j" === i) {
@@ -2023,12 +2023,12 @@ try {
                     } else r += "J" === i ? "H" : i
                   }
                   return r
-                }(d, this.locale));
+                }(g, this.locale));
                 var y = {
                   type: o.dateTime,
-                  pattern: g,
+                  pattern: d,
                   location: f.styleLocation,
-                  parsedOptions: this.shouldParseSkeletons ? v(g) : {}
+                  parsedOptions: this.shouldParseSkeletons ? v(d) : {}
                 };
                 return {
                   val: {
@@ -2164,8 +2164,8 @@ try {
             if (!this.bumpIf("{")) return this.error("select" === t ? n.EXPECT_SELECT_ARGUMENT_SELECTOR_FRAGMENT : n.EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT, F(this.clonePosition(), this.clonePosition()));
             var p = this.parseMessage(e + 1, t, r);
             if (p.err) return p;
-            var d = this.tryParseArgumentClose(m);
-            if (d.err) return d;
+            var g = this.tryParseArgumentClose(m);
+            if (g.err) return g;
             s.push([u, {
               value: p.val,
               location: F(m, this.clonePosition())
@@ -2264,7 +2264,7 @@ try {
         e.forEach((function(e) {
           if (delete e.location, m(e) || p(e))
             for (var t in e.options) delete e.options[t].location, oe(e.options[t].value);
-          else h(e) && y(e.style) || (c(e) || f(e)) && E(e.style) ? delete e.style.location : g(e) && oe(e.children)
+          else h(e) && y(e.style) || (c(e) || f(e)) && E(e.style) ? delete e.style.location : d(e) && oe(e.children)
         }))
       }
 
@@ -2451,8 +2451,8 @@ try {
         f = r ? Symbol.for("react.forward_ref") : 60112,
         m = r ? Symbol.for("react.suspense") : 60113,
         p = r ? Symbol.for("react.suspense_list") : 60120,
-        d = r ? Symbol.for("react.memo") : 60115,
-        g = r ? Symbol.for("react.lazy") : 60116,
+        g = r ? Symbol.for("react.memo") : 60115,
+        d = r ? Symbol.for("react.lazy") : 60116,
         y = r ? Symbol.for("react.block") : 60121,
         E = r ? Symbol.for("react.fundamental") : 60117,
         b = r ? Symbol.for("react.responder") : 60118,
@@ -2475,8 +2475,8 @@ try {
                   switch (e = e && e.$$typeof) {
                     case u:
                     case f:
-                    case g:
                     case d:
+                    case g:
                     case l:
                       return e;
                     default:
@@ -2492,7 +2492,7 @@ try {
       function T(e) {
         return v(e) === c
       }
-      t.AsyncMode = h, t.ConcurrentMode = c, t.ContextConsumer = u, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = o, t.Lazy = g, t.Memo = d, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
+      t.AsyncMode = h, t.ConcurrentMode = c, t.ContextConsumer = u, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = o, t.Lazy = d, t.Memo = g, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
         return T(e) || v(e) === h
       }, t.isConcurrentMode = T, t.isContextConsumer = function(e) {
         return v(e) === u
@@ -2505,9 +2505,9 @@ try {
       }, t.isFragment = function(e) {
         return v(e) === o
       }, t.isLazy = function(e) {
-        return v(e) === g
-      }, t.isMemo = function(e) {
         return v(e) === d
+      }, t.isMemo = function(e) {
+        return v(e) === g
       }, t.isPortal = function(e) {
         return v(e) === i
       }, t.isProfiler = function(e) {
@@ -2517,7 +2517,7 @@ try {
       }, t.isSuspense = function(e) {
         return v(e) === m
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === d || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === _ || e.$$typeof === y)
+        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === d || e.$$typeof === g || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === _ || e.$$typeof === y)
       }, t.typeOf = v
     },
     83262: (e, t, r) => {

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "793af7f1166af90e36185780de33260abbd44330",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "793af7f1166af90e36185780de33260abbd44330"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [3404], {
     13404: e => {
@@ -48,23 +48,23 @@ try {
           n = i
         }
       }();
-      var a, f = [],
-        u = !1,
+      var a, u = [],
+        f = !1,
         l = -1;
 
-      function d() {
-        u && a && (u = !1, a.length ? f = a.concat(f) : l = -1, f.length && c())
+      function c() {
+        f && a && (f = !1, a.length ? u = a.concat(u) : l = -1, u.length && d())
       }
 
-      function c() {
-        if (!u) {
-          var e = s(d);
-          u = !0;
-          for (var t = f.length; t;) {
-            for (a = f, f = []; ++l < t;) a && a[l].run();
-            l = -1, t = f.length
+      function d() {
+        if (!f) {
+          var e = s(c);
+          f = !0;
+          for (var t = u.length; t;) {
+            for (a = u, u = []; ++l < t;) a && a[l].run();
+            l = -1, t = u.length
           }
-          a = null, u = !1,
+          a = null, f = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        f.push(new h(e, t)), 1 !== f.length || u || s(c)
+        u.push(new h(e, t)), 1 !== u.length || f || s(d)
       }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = g, r.addListener = g, r.once = g, r.off = g, r.removeListener = g, r.removeAllListeners = g, r.emit = g, r.prependListener = g, r.prependOnceListener = g, r.listeners = function(e) {

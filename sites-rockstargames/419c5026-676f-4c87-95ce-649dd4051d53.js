@@ -5,32 +5,32 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "793af7f1166af90e36185780de33260abbd44330",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "793af7f1166af90e36185780de33260abbd44330"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [954, 1165, 3546], {
-    53546: (e, t, o) => {
-      o.r(t), o.d(t, {
+    53546: (e, t, a) => {
+      a.r(t), a.d(t, {
         default: () => s
       });
-      var a = o(62229),
-        n = o(9623),
-        r = o(70954);
+      var o = a(62229),
+        n = a(9623),
+        r = a(70954);
       const s = e => {
         let {
           basename: t,
-          children: o,
+          children: a,
           history: s
         } = e;
-        const [d, f] = (0, a.useState)({
+        const [d, f] = (0, o.useState)({
           action: s.action,
           location: s.location
         });
-        return (0, a.useLayoutEffect)((() => s.listen(((e, t) => {
+        return (0, o.useLayoutEffect)((() => s.listen(((e, t) => {
           f({
             location: e,
             action: t
@@ -40,19 +40,19 @@ try {
           location: d.location,
           navigationType: d.action,
           navigator: s,
-          children: o
+          children: a
         })
       }
     },
-    70954: (e, t, o) => {
-      e.exports = o(92834)
+    70954: (e, t, a) => {
+      e.exports = a(92834)
     },
-    92834: (e, t, o) => {
-      var a = o(62229),
+    92834: (e, t, a) => {
+      var o = a(62229),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        d = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -60,13 +60,13 @@ try {
           __source: !0
         };
 
-      function l(e, t, o) {
-        var a, r = {},
+      function l(e, t, a) {
+        var o, r = {},
           l = null,
           i = null;
-        for (a in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, a) && !f.hasOwnProperty(a) && (r[a] = t[a]);
+        for (o in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !f.hasOwnProperty(o) && (r[o] = t[o]);
         if (e && e.defaultProps)
-          for (a in t = e.defaultProps) void 0 === r[a] && (r[a] = t[a]);
+          for (o in t = e.defaultProps) void 0 === r[o] && (r[o] = t[o]);
         return {
           $$typeof: n,
           type: e,

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [4731], {
     6254: (e, t, r) => {
@@ -34,10 +34,10 @@ try {
         var y, w = (0, i.createMemoizedNumberFormat)(p, A),
           T = d.fractionalSecondDigits;
         if (void 0 !== T) {
-          var P = Object.create(null);
-          P.minimumIntegerDigits = T, P.useGrouping = !1, y = (0, i.createMemoizedNumberFormat)(p, P)
+          var b = Object.create(null);
+          b.minimumIntegerDigits = T, b.useGrouping = !1, y = (0, i.createMemoizedNumberFormat)(p, b)
         }
-        for (var b = (0, o.ToLocalTime)(r, d.calendar, d.timeZone, {
+        for (var P = (0, o.ToLocalTime)(r, d.calendar, d.timeZone, {
             tzData: m
           }), D = [], _ = 0, E = t; _ < E.length; _++) {
           var N = E[_],
@@ -47,13 +47,13 @@ try {
             value: N.value
           });
           else if ("fractionalSecondDigits" === M) {
-            var S = new n.default(b.millisecond).times(10).pow((T || 0) - 3).floor().toNumber();
+            var S = new n.default(P.millisecond).times(10).pow((T || 0) - 3).floor().toNumber();
             D.push({
               type: "fractionalSecond",
               value: y.format(S)
             })
           } else if ("dayPeriod" === M) {
-            var F = b[O = d.dayPeriod];
+            var F = P[O = d.dayPeriod];
             D.push({
               type: M,
               value: F
@@ -64,24 +64,24 @@ try {
               L = h.gmtFormat,
               R = h.hourFormat,
               C = k[d.timeZone || f()];
-            F = C && C[O] ? C[O][+b.inDST] : u(L, R, b.timeZoneOffset, O), D.push({
+            F = C && C[O] ? C[O][+P.inDST] : u(L, R, P.timeZoneOffset, O), D.push({
               type: M,
               value: F
             })
           } else if (s.DATE_TIME_PROPS.indexOf(M) > -1) {
-            F = "", O = d[M], S = b[M], "year" === M && S <= 0 && (S = 1 - S), "month" === M && S++;
+            F = "", O = d[M], S = P[M], "year" === M && S <= 0 && (S = 1 - S), "month" === M && S++;
             var j = d.hourCycle;
             "hour" !== M || "h11" !== j && "h12" !== j || 0 == (S %= 12) && "h12" === j && (S = 12), "hour" === M && "h24" === j && 0 === S && (S = 24), "numeric" === O ? F = v.format(S) : "2-digit" === O ? (F = w.format(S)).length > 2 && (F = F.slice(F.length - 2, F.length)) : "narrow" !== O && "short" !== O && "long" !== O || (F = "era" === M ? h[M][O][S] : "month" === M ? h.month[O][S - 1] : h[M][O][S]), D.push({
               type: M,
               value: F
             })
-          } else "ampm" === M ? (F = void 0, F = (S = b.hour) > 11 ? h.pm : h.am, D.push({
+          } else "ampm" === M ? (F = void 0, F = (S = P.hour) > 11 ? h.pm : h.am, D.push({
             type: "dayPeriod",
             value: F
-          })) : "relatedYear" === M ? (S = b.relatedYear, F = v.format(S), D.push({
+          })) : "relatedYear" === M ? (S = P.relatedYear, F = v.format(S), D.push({
             type: "relatedYear",
             value: F
-          })) : "yearName" === M && (S = b.yearName, F = v.format(S), D.push({
+          })) : "yearName" === M && (S = P.yearName, F = v.format(S), D.push({
             type: "yearName",
             value: F
           }))
@@ -1045,8 +1045,8 @@ try {
           y = Math.floor,
           w = Math.pow,
           T = /^0b([01]+(\.[01]*)?|\.[01]+)(p[+-]?\d+)?$/i,
-          P = /^0x([0-9a-f]+(\.[0-9a-f]*)?|\.[0-9a-f]+)(p[+-]?\d+)?$/i,
-          b = /^0o([0-7]+(\.[0-7]*)?|\.[0-7]+)(p[+-]?\d+)?$/i,
+          b = /^0x([0-9a-f]+(\.[0-9a-f]*)?|\.[0-9a-f]+)(p[+-]?\d+)?$/i,
+          P = /^0o([0-7]+(\.[0-7]*)?|\.[0-7]+)(p[+-]?\d+)?$/i,
           D = /^(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i,
           _ = 1e7,
           E = l.length - 1,
@@ -1475,7 +1475,7 @@ try {
             for (; !e[0] && e.length > 1;) e.shift()
           }
           return function(a, i, o, s, c, u) {
-            var l, f, m, d, h, p, g, v, A, w, T, P, b, D, E, N, M, S, F, O, k = a.constructor,
+            var l, f, m, d, h, p, g, v, A, w, T, b, P, D, E, N, M, S, F, O, k = a.constructor,
               L = a.s == i.s ? 1 : -1,
               C = a.d,
               j = i.d;
@@ -1488,10 +1488,10 @@ try {
                   (m < M || d) && D--; m++) E = d * u + (C[m] || 0), w[m] = E / j | 0, d = E % j | 0;
                 p = d || m < M
               } else {
-                for ((d = u / (j[0] + 1) | 0) > 1 && (j = e(j, d, u), C = e(C, d, u), F = j.length, M = C.length), N = F, P = (T = C.slice(0, F)).length; P < F;) T[P++] = 0;
+                for ((d = u / (j[0] + 1) | 0) > 1 && (j = e(j, d, u), C = e(C, d, u), F = j.length, M = C.length), N = F, b = (T = C.slice(0, F)).length; b < F;) T[b++] = 0;
                 (O = j.slice()).unshift(0), S = j[0], j[1] >= u / 2 && ++S;
                 do {
-                  d = 0, (l = t(j, T, F, P)) < 0 ? (b = T[0], F != P && (b = b * u + (T[1] || 0)), (d = b / S | 0) > 1 ? (d >= u && (d = u - 1), 1 == (l = t(g = e(j, d, u), T, v = g.length, P = T.length)) && (d--, r(g, F < v ? O : j, v, u))) : (0 == d && (l = d = 1), g = j.slice()), (v = g.length) < P && g.unshift(0), r(T, g, P, u), -1 == l && (l = t(j, T, F, P = T.length)) < 1 && (d++, r(T, F < P ? O : j, P, u)), P = T.length) : 0 === l && (d++, T = [0]), w[m++] = d, l && T[0] ? T[P++] = C[N] || 0 : (T = [C[N]], P = 1)
+                  d = 0, (l = t(j, T, F, b)) < 0 ? (P = T[0], F != b && (P = P * u + (T[1] || 0)), (d = P / S | 0) > 1 ? (d >= u && (d = u - 1), 1 == (l = t(g = e(j, d, u), T, v = g.length, b = T.length)) && (d--, r(g, F < v ? O : j, v, u))) : (0 == d && (l = d = 1), g = j.slice()), (v = g.length) < b && g.unshift(0), r(T, g, b, u), -1 == l && (l = t(j, T, F, b = T.length)) < 1 && (d++, r(T, F < b ? O : j, b, u)), b = T.length) : 0 === l && (d++, T = [0]), w[m++] = d, l && T[0] ? T[b++] = C[N] || 0 : (T = [C[N]], b = 1)
                 } while ((N++ < M || void 0 !== T[0]) && D--);
                 p = void 0 !== T[0]
               }
@@ -1667,10 +1667,10 @@ try {
           if (t.indexOf("_") > -1) {
             if (t = t.replace(/(\d)_(?=\d)/g, "$1"), D.test(t)) return W(e, t)
           } else if ("Infinity" === t || "NaN" === t) return +t || (e.s = NaN), e.e = NaN, e.d = null, e;
-          if (P.test(t)) r = 16, t = t.toLowerCase();
+          if (b.test(t)) r = 16, t = t.toLowerCase();
           else if (T.test(t)) r = 2;
           else {
-            if (!b.test(t)) throw Error(p + t);
+            if (!P.test(t)) throw Error(p + t);
             r = 8
           }
           for ((o = t.search(/p/i)) > 0 ? (u = +t.slice(o + 1), t = t.substring(2, o)) : t = t.slice(2), s = (o = t.indexOf(".")) >= 0, a = e.constructor, s && (o = (c = (t = t.replace(".", "")).length) - o, n = G(a, new a(r), o, 2 * o)), o = f = (l = k(t, r, _)).length - 1; 0 === l[o]; --o) l.pop();
@@ -1854,11 +1854,11 @@ try {
           return new this(e).log(t)
         }
 
-        function Pe(e) {
+        function be(e) {
           return new this(e).log(2)
         }
 
-        function be(e) {
+        function Pe(e) {
           return new this(e).log(10)
         }
 
@@ -1967,7 +1967,7 @@ try {
             if ("bigint" === a) return e < 0 ? (e = -e, i.s = -1) : i.s = 1, W(i, e.toString());
             throw Error(p + e)
           }
-          if (n.prototype = M, n.ROUND_UP = 0, n.ROUND_DOWN = 1, n.ROUND_CEIL = 2, n.ROUND_FLOOR = 3, n.ROUND_HALF_UP = 4, n.ROUND_HALF_DOWN = 5, n.ROUND_HALF_EVEN = 6, n.ROUND_HALF_CEIL = 7, n.ROUND_HALF_FLOOR = 8, n.EUCLID = 9, n.config = n.set = me, n.clone = e, n.isDecimal = ye, n.abs = ee, n.acos = te, n.acosh = re, n.add = ae, n.asin = ie, n.asinh = ne, n.atan = oe, n.atanh = se, n.atan2 = ce, n.cbrt = ue, n.ceil = le, n.clamp = fe, n.cos = de, n.cosh = he, n.div = pe, n.exp = ge, n.floor = ve, n.hypot = Ae, n.ln = we, n.log = Te, n.log10 = be, n.log2 = Pe, n.max = De, n.min = _e, n.mod = Ee, n.mul = Ne, n.pow = Me, n.random = Se, n.round = Fe, n.sign = Oe, n.sin = ke, n.sinh = Le, n.sqrt = Re, n.sub = Ce, n.sum = je, n.tan = Ie, n.tanh = xe, n.trunc = Ze, void 0 === t && (t = {}), t && !0 !== t.defaults)
+          if (n.prototype = M, n.ROUND_UP = 0, n.ROUND_DOWN = 1, n.ROUND_CEIL = 2, n.ROUND_FLOOR = 3, n.ROUND_HALF_UP = 4, n.ROUND_HALF_DOWN = 5, n.ROUND_HALF_EVEN = 6, n.ROUND_HALF_CEIL = 7, n.ROUND_HALF_FLOOR = 8, n.EUCLID = 9, n.config = n.set = me, n.clone = e, n.isDecimal = ye, n.abs = ee, n.acos = te, n.acosh = re, n.add = ae, n.asin = ie, n.asinh = ne, n.atan = oe, n.atanh = se, n.atan2 = ce, n.cbrt = ue, n.ceil = le, n.clamp = fe, n.cos = de, n.cosh = he, n.div = pe, n.exp = ge, n.floor = ve, n.hypot = Ae, n.ln = we, n.log = Te, n.log10 = Pe, n.log2 = be, n.max = De, n.min = _e, n.mod = Ee, n.mul = Ne, n.pow = Me, n.random = Se, n.round = Fe, n.sign = Oe, n.sin = ke, n.sinh = Le, n.sqrt = Re, n.sub = Ce, n.sum = je, n.tan = Ie, n.tanh = xe, n.trunc = Ze, void 0 === t && (t = {}), t && !0 !== t.defaults)
             for (i = ["precision", "rounding", "toExpNeg", "toExpPos", "maxE", "minE", "modulo", "crypto"], r = 0; r < i.length;) t.hasOwnProperty(a = i[r++]) || (t[a] = this[a]);
           return n.config(t), n
         }(m)).prototype.constructor = i, i.default = i.Decimal = i, l = new i(l), f = new i(f), void 0 === (a = function() {
@@ -2006,14 +2006,14 @@ try {
             var T = w in p ? p[w] : void 0;
             if (void 0 !== c && void 0 === T) v = !0;
             else if (c = T, "ampm" === w) {
-              var P = m.hour,
-                b = d.hour;
-              (P > 11 && b < 11 || P < 11 && b > 11) && (g = !1)
+              var b = m.hour,
+                P = d.hour;
+              (b > 11 && P < 11 || b < 11 && P > 11) && (g = !1)
             } else if ("dayPeriod" === w);
             else if ("fractionalSecondDigits" === w) {
               var D = f.fractionalSecondDigits;
-              void 0 === D && (D = 3), P = Math.floor(m.millisecond * Math.pow(10, D - 3)), b = Math.floor(d.millisecond * Math.pow(10, D - 3)), (0, a.SameValue)(P, b) || (g = !1)
-            } else P = m[w], b = d[w], (0, a.SameValue)(P, b) || (g = !1)
+              void 0 === D && (D = 3), b = Math.floor(m.millisecond * Math.pow(10, D - 3)), P = Math.floor(d.millisecond * Math.pow(10, D - 3)), (0, a.SameValue)(b, P) || (g = !1)
+            } else b = m[w], P = d[w], (0, a.SameValue)(b, P) || (g = !1)
           }
         }
         if (g) {
@@ -2065,25 +2065,25 @@ try {
           y = m.tzData,
           w = m.uppercaseLinks,
           T = (0, a.CanonicalizeLocaleList)(t),
-          P = (0, c.ToDateTimeOptions)(r, "any", "date"),
-          b = Object.create(null),
-          D = (0, a.GetOption)(P, "localeMatcher", "string", ["lookup", "best fit"], "best fit");
-        b.localeMatcher = D;
-        var _ = (0, a.GetOption)(P, "calendar", "string", void 0, void 0);
+          b = (0, c.ToDateTimeOptions)(r, "any", "date"),
+          P = Object.create(null),
+          D = (0, a.GetOption)(b, "localeMatcher", "string", ["lookup", "best fit"], "best fit");
+        P.localeMatcher = D;
+        var _ = (0, a.GetOption)(b, "calendar", "string", void 0, void 0);
         if (void 0 !== _ && !f.test(_)) throw new RangeError("Malformed calendar");
         var E = d(e);
-        b.ca = _;
-        var N = (0, a.GetOption)(P, "numberingSystem", "string", void 0, void 0);
+        P.ca = _;
+        var N = (0, a.GetOption)(b, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== N && !f.test(N)) throw new RangeError("Malformed numbering system");
-        b.nu = N;
-        var M = (0, a.GetOption)(P, "hour12", "boolean", void 0, void 0),
-          S = (0, a.GetOption)(P, "hourCycle", "string", ["h11", "h12", "h23", "h24"], void 0);
-        void 0 !== M && (S = null), b.hc = S;
-        var F = (0, i.ResolveLocale)(h, T, b, A, p, g);
+        P.nu = N;
+        var M = (0, a.GetOption)(b, "hour12", "boolean", void 0, void 0),
+          S = (0, a.GetOption)(b, "hourCycle", "string", ["h11", "h12", "h23", "h24"], void 0);
+        void 0 !== M && (S = null), P.hc = S;
+        var F = (0, i.ResolveLocale)(h, T, P, A, p, g);
         E.locale = F.locale, _ = F.ca, E.calendar = _, E.hourCycle = F.hc, E.numberingSystem = F.nu;
         var O = F.dataLocale;
         E.dataLocale = O;
-        var k = P.timeZone;
+        var k = b.timeZone;
         if (void 0 !== k) {
           if (k = String(k), !(0, a.IsValidTimeZoneName)(k, {
               zoneNamesFromData: Object.keys(y),
@@ -2094,34 +2094,34 @@ try {
             uppercaseLinks: w
           })
         } else k = v();
-        E.timeZone = k, (b = Object.create(null)).weekday = (0, a.GetOption)(P, "weekday", "string", ["narrow", "short", "long"], void 0), b.era = (0, a.GetOption)(P, "era", "string", ["narrow", "short", "long"], void 0), b.year = (0, a.GetOption)(P, "year", "string", ["2-digit", "numeric"], void 0), b.month = (0, a.GetOption)(P, "month", "string", ["2-digit", "numeric", "narrow", "short", "long"], void 0), b.day = (0, a.GetOption)(P, "day", "string", ["2-digit", "numeric"], void 0), b.hour = (0, a.GetOption)(P, "hour", "string", ["2-digit", "numeric"], void 0), b.minute = (0, a.GetOption)(P, "minute", "string", ["2-digit", "numeric"], void 0), b.second = (0, a.GetOption)(P, "second", "string", ["2-digit", "numeric"], void 0), b.timeZoneName = (0, a.GetOption)(P, "timeZoneName", "string", ["long", "short", "longOffset", "shortOffset", "longGeneric", "shortGeneric"], void 0), b.fractionalSecondDigits = (0, a.GetNumberOption)(P, "fractionalSecondDigits", 1, 3, void 0);
+        E.timeZone = k, (P = Object.create(null)).weekday = (0, a.GetOption)(b, "weekday", "string", ["narrow", "short", "long"], void 0), P.era = (0, a.GetOption)(b, "era", "string", ["narrow", "short", "long"], void 0), P.year = (0, a.GetOption)(b, "year", "string", ["2-digit", "numeric"], void 0), P.month = (0, a.GetOption)(b, "month", "string", ["2-digit", "numeric", "narrow", "short", "long"], void 0), P.day = (0, a.GetOption)(b, "day", "string", ["2-digit", "numeric"], void 0), P.hour = (0, a.GetOption)(b, "hour", "string", ["2-digit", "numeric"], void 0), P.minute = (0, a.GetOption)(b, "minute", "string", ["2-digit", "numeric"], void 0), P.second = (0, a.GetOption)(b, "second", "string", ["2-digit", "numeric"], void 0), P.timeZoneName = (0, a.GetOption)(b, "timeZoneName", "string", ["long", "short", "longOffset", "shortOffset", "longGeneric", "shortGeneric"], void 0), P.fractionalSecondDigits = (0, a.GetNumberOption)(b, "fractionalSecondDigits", 1, 3, void 0);
         var L = p[O];
         (0, a.invariant)(!!L, "Missing locale data for ".concat(O));
         var R = L.formats[_];
         if (!R) throw new RangeError('Calendar "'.concat(_, '" is not supported. Try setting "calendar" to 1 of the following: ').concat(Object.keys(L.formats).join(", ")));
-        var C = (0, a.GetOption)(P, "formatMatcher", "string", ["basic", "best fit"], "best fit"),
-          j = (0, a.GetOption)(P, "dateStyle", "string", ["full", "long", "medium", "short"], void 0);
+        var C = (0, a.GetOption)(b, "formatMatcher", "string", ["basic", "best fit"], "best fit"),
+          j = (0, a.GetOption)(b, "dateStyle", "string", ["full", "long", "medium", "short"], void 0);
         E.dateStyle = j;
-        var I, x, Z, B = (0, a.GetOption)(P, "timeStyle", "string", ["full", "long", "medium", "short"], void 0);
+        var I, x, Z, B = (0, a.GetOption)(b, "timeStyle", "string", ["full", "long", "medium", "short"], void 0);
         if (E.timeStyle = B, void 0 === j && void 0 === B)
-          if ("basic" === C) I = (0, n.BasicFormatMatcher)(b, R);
+          if ("basic" === C) I = (0, n.BasicFormatMatcher)(P, R);
           else {
             if (function(e) {
                 for (var t = 0, r = ["hour", "minute", "second"]; t < r.length; t++)
                   if (void 0 !== e[r[t]]) return !0;
                 return !1
-              }(b)) {
+              }(P)) {
               var G = l(E.hourCycle, L.hourCycle, M);
-              b.hour12 = "h11" === G || "h12" === G
+              P.hour12 = "h11" === G || "h12" === G
             }
-            I = (0, o.BestFitFormatMatcher)(b, R)
+            I = (0, o.BestFitFormatMatcher)(P, R)
           }
         else {
           for (var z = 0, U = u.DATE_TIME_PROPS; z < U.length; z++)
-            if (void 0 !== (q = b[H = U[z]])) throw new TypeError("Intl.DateTimeFormat can't set option ".concat(H, " when ").concat(j ? "dateStyle" : "timeStyle", " is used"));
+            if (void 0 !== (q = P[H = U[z]])) throw new TypeError("Intl.DateTimeFormat can't set option ".concat(H, " when ").concat(j ? "dateStyle" : "timeStyle", " is used"));
           I = (0, s.DateTimeStyleFormat)(j, B, L)
         }
-        for (var H in E.format = I, b) {
+        for (var H in E.format = I, P) {
           var q;
           void 0 !== (q = I[H]) && (E[H] = q)
         }

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [4156], {
     4633: e => {
@@ -1004,7 +1004,7 @@ try {
         };
       var b = l(98324);
       const y = "rockstargames-modules-core-videoplayerd8d9ad003eb5b094a636f36119a162cf",
-        h = () => {
+        f = () => {
           const {
             state: e,
             setState: a,
@@ -1014,7 +1014,7 @@ try {
             playing: r,
             controlsActive: n
           } = e, [s, d] = (0, t.useState)(null), _ = (0, t.useRef)(null), {
-            formatMessage: h
+            formatMessage: f
           } = (0, c.useIntl)();
           return (0, t.useEffect)((() => {
             d((e => {
@@ -1042,7 +1042,7 @@ try {
             }));
             return () => e.revert()
           }), [_?.current, n]), (0, i.jsx)("button", {
-            "aria-label": h(r ? v.videoplayer_pause_button_label : v.videoplayer_play_button_label),
+            "aria-label": f(r ? v.videoplayer_pause_button_label : v.videoplayer_play_button_label),
             className: "rockstargames-modules-core-videoplayerf5797419bd63cef5e61c3e4908183d85",
             onClick: () => {
               a("showTitle", !1), a("playing", !0), a("running", !0), a("volume", 1), l({
@@ -1064,7 +1064,7 @@ try {
             })
           })
         },
-        f = e => {
+        h = e => {
           let {
             alt: a = "",
             className: l = "",
@@ -1154,7 +1154,7 @@ try {
             text: "rockstar"
           });
           let c, u;
-          return "clr" === l ? (u = (0, i.jsx)(f, {
+          return "clr" === l ? (u = (0, i.jsx)(h, {
             className: [C.brand, C[l]].join(" ")
           }), c = "https://circolocorecords.com") : (u = (0, i.jsx)(g, {
             className: [C.brand, C[l]].join(" ")
@@ -1212,7 +1212,7 @@ try {
         },
         j = () => (0, i.jsxs)("div", {
           className: "rockstargames-modules-core-videoplayerbd453eb9633925a3cf21d24f220cb103",
-          children: [(0, i.jsx)(x, {}), (0, i.jsx)(w, {}), (0, i.jsx)(h, {})]
+          children: [(0, i.jsx)(x, {}), (0, i.jsx)(w, {}), (0, i.jsx)(f, {})]
         });
       var N = l(44459),
         M = l(48946);
@@ -1500,8 +1500,8 @@ try {
             [m, b] = (0, t.useState)(0),
             {
               state: y,
-              setState: h,
-              trackGaQuartile: f
+              setState: f,
+              trackGaQuartile: h
             } = (0, p.Tc)(),
             {
               accentColor: g,
@@ -1525,7 +1525,7 @@ try {
                 x: t,
                 width: o
               } = a.current.getBoundingClientRect();
-              l = (e - t) / o, l = Math.min(1, Math.max(0, l)), h("progressBarState", {
+              l = (e - t) / o, l = Math.min(1, Math.max(0, l)), f("progressBarState", {
                 percent: l
               })
             },
@@ -1555,17 +1555,17 @@ try {
                   t = e.currentTime,
                   i = Math.floor(t / l * 100),
                   d = Math.floor(l),
-                  c = e => f("video_threshold", d, e);
+                  c = e => h("video_threshold", d, e);
                 i > n && (!a[90] && i >= 90 ? (c(90), a[90] = !0) : !a[75] && i >= 75 && i < 90 ? (c(75), a[75] = !0) : !a[50] && i >= 50 && i < 75 ? (c(50), a[50] = !0) : !a[25] && i >= 25 && i < 50 && (c(25), a[25] = !0), r(a), s(i))
               };
             return e?.addEventListener("timeupdate", a), () => {
               e?.removeEventListener("timeupdate", a)
             }
           }), [S, o, n]), (0, t.useEffect)((() => {
-            w || M.percent || !j || h("controlsActive", !x)
+            w || M.percent || !j || f("controlsActive", !x)
           }), [x, w, M.percent, j]), (0, t.useEffect)((() => {
             const e = M.percent ? M.percent * L.duration : k;
-            h("currentTime", e)
+            f("currentTime", e)
           }), [M.percent, L.duration]), (0, t.useEffect)((() => {
             const a = e?.current;
             if (!a) return;
@@ -1760,12 +1760,12 @@ try {
               const a = _.current.getBoundingClientRect(),
                 l = (e.clientX - a.left) / a.width * 100,
                 t = Math.min(1, Math.max(0, 1 * l / 100));
-              f(t)
+              h(t)
             }
-          }, h = e => {
-            const a = Math.min(1, Math.max(0, b + e));
-            f(a)
           }, f = e => {
+            const a = Math.min(1, Math.max(0, b + e));
+            h(a)
+          }, h = e => {
             s(e > .01 ? e : 0), m("volume", e > .01 ? e : 0)
           }, g = (0, t.useCallback)((e => {
             e.preventDefault(), e.stopPropagation(), y(e)
@@ -1788,7 +1788,7 @@ try {
               onClick: () => {
                 b > 0 && r(b);
                 const e = b > 0 ? 0 : o;
-                f(e), m("volume", e)
+                h(e), m("volume", e)
               },
               onKeyDown: e => {
                 W(e.target) || (e.preventDefault(), b > 0 && r(b), m("volume", b > 0 ? 0 : o))
@@ -1818,11 +1818,11 @@ try {
                 if (!W(e.target)) switch (e.code) {
                   case "ArrowRight":
                   case "ArrowUp":
-                    h(.05);
+                    f(.05);
                     break;
                   case "ArrowLeft":
                   case "ArrowDown":
-                    h(-.05)
+                    f(-.05)
                 }
               },
               children: [(0, i.jsx)("div", {
@@ -1953,11 +1953,11 @@ try {
             trackGa: b
           } = (0, p.Tc)(), {
             fileIndex: y,
-            videoData: h,
-            videoRef: f
+            videoData: f,
+            videoRef: h
           } = _, {
             video: g
-          } = h;
+          } = f;
           return (0, t.useEffect)((() => {
             if (!s.length) return;
             const e = s.find((e => e.value === g?.files[y].resolution)),
@@ -2251,11 +2251,11 @@ try {
             trackGa: b
           } = (0, p.Tc)(), {
             fileIndex: y,
-            videoData: h,
-            videoRef: f
+            videoData: f,
+            videoRef: h
           } = _, {
             video: g
-          } = h;
+          } = f;
           return (0, t.useEffect)((() => {
             if (!s.length) return;
             const e = s.find((e => e.value === g?.files[y].resolution)),
@@ -2307,7 +2307,7 @@ try {
                     b({
                       event: "video_quality",
                       text: a.resolution
-                    }), v("savedTime", f?.current?.currentTime), v("fileIndex", l), "function" == typeof o && o()
+                    }), v("savedTime", h?.current?.currentTime), v("fileIndex", l), "function" == typeof o && o()
                   })(e),
                   children: [(0, i.jsxs)("span", {
                     className: ve.buttonLabel,
@@ -2323,7 +2323,7 @@ try {
             })]
           }) : null
         },
-        he = e => {
+        fe = e => {
           let {
             alt: a = "",
             className: l = "",
@@ -2360,7 +2360,7 @@ try {
             })]
           })
         },
-        fe = e => {
+        he = e => {
           let {
             className: a = "",
             clipRule: l = "evenodd",
@@ -2456,10 +2456,10 @@ try {
             hideTooltip: n.isCaptionsMenuOpen,
             children: [(0, i.jsxs)("span", {
               className: Ce.label,
-              children: [(0, i.jsx)(he, {
+              children: [(0, i.jsx)(fe, {
                 className: Ce.icon,
                 isFilled: !(!n.isCaptionsMenuOpen && !d)
-              }), !!d && (0, i.jsx)(fe, {
+              }), !!d && (0, i.jsx)(he, {
                 className: Ce.underline,
                 fill: s
               }), a && (0, i.jsx)("span", {
@@ -2514,7 +2514,7 @@ try {
                   },
                   tabIndex: 0,
                   children: (0, i.jsx)(ae, {})
-                }) : (0, i.jsx)(he, {}), s(ge.videoplayer_captions_menu_header)]
+                }) : (0, i.jsx)(fe, {}), s(ge.videoplayer_captions_menu_header)]
               })
             }), (0, i.jsx)("section", {
               className: Ce.options,
@@ -2861,18 +2861,18 @@ try {
           } = (0, c.useIntl)(), {
             state: b,
             trackGa: y,
-            menuStates: h
+            menuStates: f
           } = (0, p.Tc)(), {
-            shareData: f,
+            shareData: h,
             timing: g
           } = b;
           if ((0, t.useEffect)((() => {
               s(!1)
-            }), [o, f?.embed]), !f) return null;
+            }), [o, h?.embed]), !h) return null;
           const {
             title: C,
             url: k
-          } = f, x = [{
+          } = h, x = [{
             icon: (0, i.jsx)(je, {}),
             name: "facebook",
             template: "https://www.facebook.com/sharer/sharer.php?u={url}"
@@ -2891,7 +2891,7 @@ try {
               className: Ve.embedIcon
             }),
             name: "embed",
-            template: f.embed,
+            template: h.embed,
             actionText: m(Re.videoplayer_share_time_copied)
           }], j = () => Math.floor(g.current), N = e => {
             let a = "?";
@@ -2919,7 +2919,7 @@ try {
               }
             })
           }));
-          return h?.isShareMenuOpen ? (0, i.jsxs)(i.Fragment, {
+          return f?.isShareMenuOpen ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("header", {
               className: Ve.header,
               children: (0, i.jsxs)("div", {
@@ -2983,7 +2983,7 @@ try {
                       className: (0, d.classList)(Ve.buttonLink, Ve[a]),
                       name: a,
                       onClick: async () => {
-                        await navigator.clipboard.writeText(f.embed), S(a)
+                        await navigator.clipboard.writeText(h.embed), S(a)
                       },
                       type: "button",
                       tabIndex: 0,
@@ -2997,12 +2997,12 @@ try {
               }), (0, i.jsxs)("div", {
                 className: Ve.copyLink,
                 children: [(0, i.jsx)("input", {
-                  value: N(f.url),
+                  value: N(h.url),
                   readOnly: !0
                 }), navigator?.clipboard?.writeText && (0, i.jsx)("button", {
                   type: "button",
                   onClick: async () => {
-                    await navigator.clipboard.writeText(N(f.url)), y({
+                    await navigator.clipboard.writeText(N(h.url)), y({
                       event: "video_share",
                       text: "Share URL copied"
                     }), s(!0)
@@ -3228,8 +3228,8 @@ try {
             windowWidth: b
           } = (0, d.useWindowResize)(), {
             state: y,
-            toggleMenu: h,
-            menuStates: f
+            toggleMenu: f,
+            menuStates: h
           } = (0, p.Tc)(), {
             airplayAvailable: g,
             captions: C,
@@ -3243,7 +3243,7 @@ try {
           } = (0, ee.useGSAP)(), M = w?.current ? .5 * w.current.clientHeight : "200", L = ["downloads", "share", "airplay", "quality", "captions"], S = ["captions", "quality", "downloads", "share", "airplay"], E = N((e => {
             const a = .125,
               l = "none";
-            f?.isAnyMenuOpen ? f[e] ? (0, p.CN)() ? u.gsap.timeline({
+            h?.isAnyMenuOpen ? h[e] ? (0, p.CN)() ? u.gsap.timeline({
               overwrite: "auto"
             }).to(v?.current, {
               "--backdrop-opacity": 0,
@@ -3251,18 +3251,18 @@ try {
               duration: a,
               ease: l,
               onComplete: () => {
-                v?.current?.close(), h(e, !1)
+                v?.current?.close(), f(e, !1)
               }
             }) : u.gsap.to(v?.current, {
               duration: a,
               ease: l,
               opacity: 1,
               onComplete: () => {
-                v?.current?.close(), h(e, !1)
+                v?.current?.close(), f(e, !1)
               }
             }) : (0, p.CN)() ? u.gsap.timeline({
               onStart: () => {
-                h(e, !0)
+                f(e, !0)
               },
               duration: a,
               ease: l,
@@ -3279,7 +3279,7 @@ try {
               ease: l,
               opacity: 0,
               onComplete: () => {
-                v?.current?.close(), h(e, !0), u.gsap.to(v?.current, {
+                v?.current?.close(), f(e, !0), u.gsap.to(v?.current, {
                   delay: .05,
                   onStart: () => {
                     v?.current?.show()
@@ -3299,7 +3299,7 @@ try {
               bottom: "-100%"
             }, {
               onStart: () => {
-                v?.current?.showModal(), h(e, !0)
+                v?.current?.showModal(), f(e, !0)
               },
               "--backdrop-opacity": .8,
               bottom: 0,
@@ -3312,7 +3312,7 @@ try {
               ease: l,
               opacity: 1,
               onStart: () => {
-                v?.current?.show(), h(e, !0)
+                v?.current?.show(), f(e, !0)
               }
             }))
           }));
@@ -3397,10 +3397,10 @@ try {
                   }
                 })), o(e.filter((e => e)))
               } else o([]);
-              !d.length && f?.isEllipsisMenuOpen ? (h("isEllipsisMenuOpen", !1), a([])) : a(d.map((e => u?.get(e)))?.filter((e => e)) || [])
+              !d.length && h?.isEllipsisMenuOpen ? (f("isEllipsisMenuOpen", !1), a([])) : a(d.map((e => u?.get(e)))?.filter((e => e)) || [])
             }));
             return () => e.revert()
-          }), [r, b, k?.current, s, f?.isEllipsisMenuOpen, f?.isCaptionsMenuOpen, f?.isQualityMenuOpen, f?.isDownloadMenuOpen, f?.isShareMenuOpen, f?.isAirPlayMenuOpen]), (0, i.jsxs)(i.Fragment, {
+          }), [r, b, k?.current, s, h?.isEllipsisMenuOpen, h?.isCaptionsMenuOpen, h?.isQualityMenuOpen, h?.isDownloadMenuOpen, h?.isShareMenuOpen, h?.isAirPlayMenuOpen]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("dialog", {
               "data-testid": "menu-handler-dialog",
               className: "rockstargames-modules-core-videoplayerd5e74e0ede826b8de9962b746a1b02ef",
@@ -3413,7 +3413,7 @@ try {
               style: {
                 "--options-height": `${M}px`
               },
-              children: [l.concat(e).map((e => e.content)), e.length > 0 && f?.isEllipsisMenuOpen && (0, i.jsxs)("div", {
+              children: [l.concat(e).map((e => e.content)), e.length > 0 && h?.isEllipsisMenuOpen && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("header", {
                   className: "rockstargames-modules-core-videoplayeraa248530d71bb9ad7c3a60badcc5c8f5",
                   children: (0, i.jsxs)("div", {
@@ -3593,14 +3593,14 @@ try {
             playing: m,
             savedTime: b,
             videoData: y,
-            volume: h
+            volume: f
           } = e, {
-            video: f
+            video: h
           } = y, [g, C] = (0, t.useState)(null), k = (0, t.useRef)(null), x = (0, t.useRef)(null), [w, j] = (0, t.useState)("");
           (0, t.useEffect)((() => {
-            const e = f?.files?.[u]?.src ?? null;
+            const e = h?.files?.[u]?.src ?? null;
             e && C(e)
-          }), [u, f]), (0, t.useEffect)((() => {
+          }), [u, h]), (0, t.useEffect)((() => {
             a("videoRef", k)
           }), [k]), (0, t.useEffect)((() => {
             d && k.current && (k.current.currentTime = d, a("currentTime", null))
@@ -3693,7 +3693,7 @@ try {
               autoPlay: !0,
               className: Ke.rockstarVideoElement,
               src: g,
-              muted: 0 === h,
+              muted: 0 === f,
               playsInline: !0,
               "x-webkit-airplay": "allow",
               onPlay: () => {
@@ -3804,17 +3804,17 @@ try {
             playing: m,
             running: b,
             videoRef: y,
-            volume: h
-          } = e, [f, g] = (0, t.useState)(!1), C = (0, t.useRef)(), k = (0, t.useRef)(), w = () => document?.fullscreenEnabled ?? !1, j = () => "string" == typeof document.fullscreenElement?.nodeName, N = () => {
+            volume: f
+          } = e, [h, g] = (0, t.useState)(!1), C = (0, t.useRef)(), k = (0, t.useRef)(), w = () => document?.fullscreenEnabled ?? !1, j = () => "string" == typeof document.fullscreenElement?.nodeName, N = () => {
             C.current && clearInterval(C?.current)
           }, M = () => {
             N(), a("idle", !1), C.current = setTimeout((() => {
-              f || a("idle", !0)
+              h || a("idle", !0)
             }), 3e3)
           };
           return (0, t.useEffect)((() => {
             M()
-          }), [f]), (0, t.useEffect)((() => {
+          }), [h]), (0, t.useEffect)((() => {
             g(v || l?.isAnyMenuOpen || !m)
           }), [v, l?.isAnyMenuOpen, m]), (0, t.useEffect)((() => {
             a("playerRef", k)
@@ -3852,8 +3852,8 @@ try {
           }), [n, _, m, y?.current]), (0, t.useEffect)((() => {
             c && y?.current && (y.current.currentTime = c)
           }), [c, y?.current]), (0, t.useEffect)((() => {
-            y?.current && (y.current.volume = h)
-          }), [h, y]), (0, t.useEffect)((() => {
+            y?.current && (y.current.volume = f)
+          }), [f, y]), (0, t.useEffect)((() => {
             d || a("isAnyMenuOpen", !1)
           }), [d]), (0, t.useEffect)((() => {
             v && (a("fullscreen", !1), a("isAnyMenuOpen", !1), a("controlsActive", !0), a("progressBarState", {}))
@@ -3906,10 +3906,10 @@ try {
             videoChangeCallback: m,
             onVideoComplete: b,
             locale: y = la,
-            titleCrop: h
+            titleCrop: f
           } = e;
           const {
-            state: f,
+            state: h,
             setState: g,
             trackGa: C
           } = (0, p.Tc)(), [k] = (0, o.useSearchParams)(), x = (0, p.zY)({
@@ -3921,7 +3921,7 @@ try {
             fileIndex: S,
             running: E,
             videoData: R
-          } = f, {
+          } = h, {
             loading: V,
             video: B
           } = R, T = (0, o.useNavigate)(), {
@@ -4023,7 +4023,7 @@ try {
           }), [_]), !B || V ? (0, i.jsx)(M.A, {
             hero: u,
             wrapper: v,
-            titleCrop: h,
+            titleCrop: f,
             children: (0, i.jsx)(N.A, {})
           }) : ["gtaosession", "gtaostream", "community"].includes(B.groupType) || B.youtubeOnly ? B.agegated ? (0, i.jsx)(s.AgeGate, {
             children: (0, i.jsx)(Je, {
@@ -4034,7 +4034,7 @@ try {
           }) : w || E ? B.agegated ? (0, i.jsx)(M.A, {
             hero: u,
             wrapper: v,
-            titleCrop: h,
+            titleCrop: f,
             children: (0, i.jsx)(s.AgeGate, {
               options: {
                 bgImg: B.screencap
@@ -4047,12 +4047,12 @@ try {
           }) : (0, i.jsx)(M.A, {
             hero: u,
             wrapper: v,
-            titleCrop: h,
+            titleCrop: f,
             children: (0, i.jsx)(Ye, {})
           }) : (0, i.jsx)(M.A, {
             hero: u,
             wrapper: v,
-            titleCrop: h,
+            titleCrop: f,
             children: (0, i.jsx)(j, {})
           })
         },

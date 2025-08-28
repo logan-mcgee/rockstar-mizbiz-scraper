@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [7413, 9794], {
     14681: e => {
@@ -19,53 +19,53 @@ try {
         n = "function" == typeof Set,
         o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
 
-      function u(e, a) {
-        if (e === a) return !0;
-        if (e && a && "object" == typeof e && "object" == typeof a) {
-          if (e.constructor !== a.constructor) return !1;
+      function a(e, u) {
+        if (e === u) return !0;
+        if (e && u && "object" == typeof e && "object" == typeof u) {
+          if (e.constructor !== u.constructor) return !1;
           var f, i, s, c;
           if (Array.isArray(e)) {
-            if ((f = e.length) != a.length) return !1;
+            if ((f = e.length) != u.length) return !1;
             for (i = f; 0 != i--;)
-              if (!u(e[i], a[i])) return !1;
+              if (!a(e[i], u[i])) return !1;
             return !0
           }
-          if (r && e instanceof Map && a instanceof Map) {
-            if (e.size !== a.size) return !1;
+          if (r && e instanceof Map && u instanceof Map) {
+            if (e.size !== u.size) return !1;
             for (c = e.entries(); !(i = c.next()).done;)
-              if (!a.has(i.value[0])) return !1;
+              if (!u.has(i.value[0])) return !1;
             for (c = e.entries(); !(i = c.next()).done;)
-              if (!u(i.value[1], a.get(i.value[0]))) return !1;
+              if (!a(i.value[1], u.get(i.value[0]))) return !1;
             return !0
           }
-          if (n && e instanceof Set && a instanceof Set) {
-            if (e.size !== a.size) return !1;
+          if (n && e instanceof Set && u instanceof Set) {
+            if (e.size !== u.size) return !1;
             for (c = e.entries(); !(i = c.next()).done;)
-              if (!a.has(i.value[0])) return !1;
+              if (!u.has(i.value[0])) return !1;
             return !0
           }
-          if (o && ArrayBuffer.isView(e) && ArrayBuffer.isView(a)) {
-            if ((f = e.length) != a.length) return !1;
+          if (o && ArrayBuffer.isView(e) && ArrayBuffer.isView(u)) {
+            if ((f = e.length) != u.length) return !1;
             for (i = f; 0 != i--;)
-              if (e[i] !== a[i]) return !1;
+              if (e[i] !== u[i]) return !1;
             return !0
           }
-          if (e.constructor === RegExp) return e.source === a.source && e.flags === a.flags;
-          if (e.valueOf !== Object.prototype.valueOf && "function" == typeof e.valueOf && "function" == typeof a.valueOf) return e.valueOf() === a.valueOf();
-          if (e.toString !== Object.prototype.toString && "function" == typeof e.toString && "function" == typeof a.toString) return e.toString() === a.toString();
-          if ((f = (s = Object.keys(e)).length) !== Object.keys(a).length) return !1;
+          if (e.constructor === RegExp) return e.source === u.source && e.flags === u.flags;
+          if (e.valueOf !== Object.prototype.valueOf && "function" == typeof e.valueOf && "function" == typeof u.valueOf) return e.valueOf() === u.valueOf();
+          if (e.toString !== Object.prototype.toString && "function" == typeof e.toString && "function" == typeof u.toString) return e.toString() === u.toString();
+          if ((f = (s = Object.keys(e)).length) !== Object.keys(u).length) return !1;
           for (i = f; 0 != i--;)
-            if (!Object.prototype.hasOwnProperty.call(a, s[i])) return !1;
+            if (!Object.prototype.hasOwnProperty.call(u, s[i])) return !1;
           if (t && e instanceof Element) return !1;
           for (i = f; 0 != i--;)
-            if (("_owner" !== s[i] && "__v" !== s[i] && "__o" !== s[i] || !e.$$typeof) && !u(e[s[i]], a[s[i]])) return !1;
+            if (("_owner" !== s[i] && "__v" !== s[i] && "__o" !== s[i] || !e.$$typeof) && !a(e[s[i]], u[s[i]])) return !1;
           return !0
         }
-        return e != e && a != a
+        return e != e && u != u
       }
       e.exports = function(e, t) {
         try {
-          return u(e, t)
+          return a(e, t)
         } catch (e) {
           if ((e.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
           throw e
@@ -79,19 +79,19 @@ try {
     99794: (e, t, r) => {
       "use strict";
       r.r(t), r.d(t, {
-        Manager: () => a,
+        Manager: () => u,
         Popper: () => E,
         Reference: () => k,
-        usePopper: () => b
+        usePopper: () => g
       });
       var n = r(62229),
         o = n.createContext(),
-        u = n.createContext();
+        a = n.createContext();
 
-      function a(e) {
+      function u(e) {
         var t = e.children,
           r = n.useState(null),
-          a = r[0],
+          u = r[0],
           f = r[1],
           i = n.useRef(!1);
         n.useEffect((function() {
@@ -103,8 +103,8 @@ try {
           i.current || f(e)
         }), []);
         return n.createElement(o.Provider, {
-          value: a
-        }, n.createElement(u.Provider, {
+          value: u
+        }, n.createElement(a.Provider, {
           value: s
         }, t))
       }
@@ -132,21 +132,21 @@ try {
         d = r(44853),
         p = r(9005),
         y = r(14681),
-        m = r.n(y),
-        g = [],
-        b = function(e, t, r) {
+        b = r.n(y),
+        m = [],
+        g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
-            u = {
+            a = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || g
+              modifiers: r.modifiers || m
             },
-            a = n.useState({
+            u = n.useState({
               styles: {
                 popper: {
-                  position: u.strategy,
+                  position: a.strategy,
                   left: "0",
                   top: "0"
                 },
@@ -156,8 +156,8 @@ try {
               },
               attributes: {}
             }),
-            f = a[0],
-            i = a[1],
+            f = u[0],
+            i = u[1],
             s = n.useMemo((function() {
               return {
                 name: "updateState",
@@ -182,33 +182,33 @@ try {
             }), []),
             y = n.useMemo((function() {
               var e = {
-                onFirstUpdate: u.onFirstUpdate,
-                placement: u.placement,
-                strategy: u.strategy,
-                modifiers: [].concat(u.modifiers, [s, {
+                onFirstUpdate: a.onFirstUpdate,
+                placement: a.placement,
+                strategy: a.strategy,
+                modifiers: [].concat(a.modifiers, [s, {
                   name: "applyStyles",
                   enabled: !1
                 }])
               };
-              return m()(o.current, e) ? o.current || e : (o.current = e, e)
-            }), [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, s]),
-            b = n.useRef();
+              return b()(o.current, e) ? o.current || e : (o.current = e, e)
+            }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
+            g = n.useRef();
           return l((function() {
-            b.current && b.current.setOptions(y)
+            g.current && g.current.setOptions(y)
           }), [y]), l((function() {
             if (null != e && null != t) {
               var n = (r.createPopper || p.createPopper)(e, t, y);
-              return b.current = n,
+              return g.current = n,
                 function() {
-                  n.destroy(), b.current = null
+                  n.destroy(), g.current = null
                 }
             }
           }), [e, t, r.createPopper]), {
-            state: b.current ? b.current.state : null,
+            state: g.current ? g.current.state : null,
             styles: f.styles,
             attributes: f.attributes,
-            update: b.current ? b.current.update : null,
-            forceUpdate: b.current ? b.current.forceUpdate : null
+            update: g.current ? g.current.update : null,
+            forceUpdate: g.current ? g.current.forceUpdate : null
           }
         },
         v = function() {},
@@ -220,18 +220,18 @@ try {
       function E(e) {
         var t = e.placement,
           r = void 0 === t ? "bottom" : t,
-          u = e.strategy,
-          a = void 0 === u ? "absolute" : u,
+          a = e.strategy,
+          u = void 0 === a ? "absolute" : a,
           i = e.modifiers,
           c = void 0 === i ? w : i,
           l = e.referenceElement,
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          m = n.useContext(o),
-          g = n.useState(null),
-          E = g[0],
-          _ = g[1],
+          b = n.useContext(o),
+          m = n.useState(null),
+          E = m[0],
+          _ = m[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -241,7 +241,7 @@ try {
         var O = n.useMemo((function() {
             return {
               placement: r,
-              strategy: a,
+              strategy: u,
               onFirstUpdate: d,
               modifiers: [].concat(c, [{
                 name: "arrow",
@@ -251,8 +251,8 @@ try {
                 }
               }])
             }
-          }), [r, a, d, c, k]),
-          P = b(l || m, E, O),
+          }), [r, u, d, c, k]),
+          P = g(l || b, E, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,
@@ -280,8 +280,8 @@ try {
       function k(e) {
         var t = e.children,
           r = e.innerRef,
-          o = n.useContext(u),
-          a = n.useCallback((function(e) {
+          o = n.useContext(a),
+          u = n.useCallback((function(e) {
             s(r, e), i(o, e)
           }), [r, o]);
         return n.useEffect((function() {
@@ -291,7 +291,7 @@ try {
         }), []), n.useEffect((function() {
           S()(Boolean(o), "`Reference` should not be used outside of a `Manager` component.")
         }), [o]), f(t)({
-          ref: a
+          ref: u
         })
       }
     }

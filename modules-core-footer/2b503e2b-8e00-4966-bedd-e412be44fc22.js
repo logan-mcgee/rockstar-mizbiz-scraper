@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [8391], {
     3659: (e, t, a) => {
@@ -125,24 +125,24 @@ try {
         var i = l.getInternalSlots,
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
-          f = l.localeData,
-          c = l.getDefaultLocale,
-          d = i(e);
-        d.initializedRelativeTimeFormat = !0;
-        var y = (0, r.CanonicalizeLocaleList)(t),
-          b = Object.create(null),
+          c = l.localeData,
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          y = Object.create(null),
           m = (0, r.CoerceOptionsToObject)(a),
           p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        b.localeMatcher = p;
+        y.localeMatcher = p;
         var v = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
-        b.nu = v;
-        var g = (0, n.ResolveLocale)(u, y, b, s, f, c),
+        y.nu = v;
+        var g = (0, n.ResolveLocale)(u, b, y, s, c, d),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
-        var _ = f[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        var _ = c[g.dataLocale];
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(20114),
         n = a(39368),
@@ -168,27 +168,27 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
-          f = s.fields,
-          c = s.style,
-          d = s.numeric,
-          y = s.pluralRules,
-          b = s.numberFormat,
+          c = s.fields,
+          d = s.style,
+          f = s.numeric,
+          b = s.pluralRules,
+          y = s.numberFormat,
           m = u;
-        "short" === c ? m = "".concat(u, "-short") : "narrow" === c && (m = "".concat(u, "-narrow")), m in f || (m = u);
-        var p = f[m];
-        if ("auto" === d && (0, r.ToString)(t) in p) return [{
+        "short" === d ? m = "".concat(u, "-short") : "narrow" === d && (m = "".concat(u, "-narrow")), m in c || (m = u);
+        var p = c[m];
+        if ("auto" === f && (0, r.ToString)(t) in p) return [{
           type: "literal",
           value: p[(0, r.ToString)(t)]
         }];
         var v = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
         var g = p[v],
-          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: b.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
-          h = g[y.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, u, w)
       };
       var r = a(20114),
@@ -208,10 +208,10 @@ try {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var u = 0, s = a; u < s.length; u++) {
-              var f = s[u];
+              var c = s[u];
               n.push({
-                type: f.type,
-                value: f.value,
+                type: c.type,
+                value: c.value,
                 unit: t
               })
             }

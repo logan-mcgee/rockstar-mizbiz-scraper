@@ -5,12 +5,12 @@ try {
 } catch (r) {} {
   let r = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   r._sentryModuleMetadata = r._sentryModuleMetadata || {}, r._sentryModuleMetadata[(new r.Error).stack] = Object.assign({}, r._sentryModuleMetadata[(new r.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [6806], {
     401: (r, e, t) => {
@@ -159,17 +159,17 @@ try {
         p = a("".charCodeAt),
         l = a([].join),
         y = "".toWellFormed,
-        d = y && s((function() {
+        v = y && s((function() {
           return "1" !== o(y, 1)
         }));
       n({
         target: "String",
         proto: !0,
-        forced: d
+        forced: v
       }, {
         toWellFormed: function() {
           var r = c(i(this));
-          if (d) return o(y, r);
+          if (v) return o(y, r);
           for (var e = r.length, t = u(e), n = 0; n < e; n++) {
             var a = p(r, n);
             55296 != (63488 & a) ? t[n] = f(r, n) : a >= 56320 || n + 1 >= e || 56320 != (64512 & p(r, n + 1)) ? t[n] = "�" : (t[n] = f(r, n), t[++n] = f(r, n))
@@ -245,7 +245,7 @@ try {
         p = /^\s*(?:class|function)\b/,
         l = n(p.exec),
         y = !p.test(u),
-        d = function(r) {
+        v = function(r) {
           if (!a(r)) return !1;
           try {
             return f(u, [], r), !0
@@ -253,7 +253,7 @@ try {
             return !1
           }
         },
-        v = function(r) {
+        d = function(r) {
           if (!a(r)) return !1;
           switch (i(r)) {
             case "AsyncFunction":
@@ -267,12 +267,12 @@ try {
             return !0
           }
         };
-      v.sham = !0, r.exports = !f || o((function() {
+      d.sham = !0, r.exports = !f || o((function() {
         var r;
-        return d(d.call) || !d(Object) || !d((function() {
+        return v(v.call) || !v(Object) || !v((function() {
           r = !0
         })) || r
-      })) ? v : d
+      })) ? d : v
     },
     12743: (r, e, t) => {
       var n = t(94753),
@@ -338,8 +338,8 @@ try {
         p = t(77897),
         l = t(11337),
         y = t(33321),
-        d = t(8558),
-        v = t(401),
+        v = t(8558),
+        d = t(401),
         h = t(79048),
         g = t(94779),
         b = t(31679),
@@ -383,7 +383,7 @@ try {
             var e = new i.Set([7]),
               t = r(e),
               n = r(k(7));
-            return t === e || !t.has(7) || !d(n) || 7 != +n
+            return t === e || !t.has(7) || !v(n) || 7 != +n
           })) && r
         },
         er = function(r, e) {
@@ -440,7 +440,7 @@ try {
           return W(e, r, n), n
         },
         fr = function(r, e) {
-          if (v(r) && ir("Symbol"), !d(r)) return r;
+          if (d(r) && ir("Symbol"), !v(r)) return r;
           if (e) {
             if (F(e, r)) return B(e, r)
           } else e = new L;
@@ -506,7 +506,7 @@ try {
             case "BigUint64Array":
               u = "DataView" === y ? r.byteLength : r.length, o = function(r, e, t, n, o) {
                 var a = i[e];
-                return d(a) || cr(e), new a(ur(r.buffer, o), t, n)
+                return v(a) || cr(e), new a(ur(r.buffer, o), t, n)
               }(r, y, r.byteOffset, u, e);
               break;
             case "DOMQuad":
@@ -658,7 +658,7 @@ try {
           var e, t, n = A(arguments.length, 1) > 1 && !y(arguments[1]) ? g(arguments[1]) : void 0,
             o = n ? n.transfer : void 0;
           void 0 !== o && (t = function(r, e) {
-            if (!d(r)) throw new P("Transfer option cannot be converted to a sequence");
+            if (!v(r)) throw new P("Transfer option cannot be converted to a sequence");
             var t = [];
             h(r, (function(r) {
               H(t, g(r))
@@ -736,8 +736,8 @@ try {
         p = t(76869),
         l = t(22795),
         y = t(82521),
-        d = t(86644),
-        v = t(48379),
+        v = t(86644),
+        d = t(48379),
         h = t(93640),
         g = t(91948),
         b = t(10293),
@@ -774,7 +774,7 @@ try {
       m && w || (m = function(r) {
         h(arguments.length, 1);
         var e = f(r) ? r : A(r),
-          t = d(arguments, 1);
+          t = v(arguments, 1);
         return T[++S] = function() {
           s(e, void 0, t)
         }, o(S), S
@@ -784,8 +784,8 @@ try {
         E.nextTick(D(r))
       } : x && x.now ? o = function(r) {
         x.now(D(r))
-      } : O && !g ? (i = (a = new O).port2, a.port1.onmessage = k, o = u(i.postMessage, i)) : c.addEventListener && f(c.postMessage) && !c.importScripts && n && "file:" !== n.protocol && !l(M) ? (o = M, c.addEventListener("message", k, !1)) : o = I in v("script") ? function(r) {
-        y.appendChild(v("script"))[I] = function() {
+      } : O && !g ? (i = (a = new O).port2, a.port1.onmessage = k, o = u(i.postMessage, i)) : c.addEventListener && f(c.postMessage) && !c.importScripts && n && "file:" !== n.protocol && !l(M) ? (o = M, c.addEventListener("message", k, !1)) : o = I in d("script") ? function(r) {
+        y.appendChild(d("script"))[I] = function() {
           y.removeChild(this), _(r)
         }
       } : function(r) {
@@ -1147,8 +1147,8 @@ try {
         p = t(76869),
         l = t(31679),
         y = t(95699),
-        d = t(55303),
-        v = t(24940),
+        v = t(55303),
+        d = t(24940),
         h = t(35246),
         g = t(4949),
         b = t(5647),
@@ -1212,7 +1212,7 @@ try {
             get: function() {
               return f(this) ? this[j] : void 0
             }
-          }), L) s[n] && d(s[n], j, n);
+          }), L) s[n] && v(s[n], j, n);
       r.exports = {
         NATIVE_ARRAY_BUFFER_VIEWS: N,
         TYPED_ARRAY_TAG: U && j,
@@ -1237,7 +1237,7 @@ try {
                   } catch (r) {}
                 }
               }
-            D[r] && !t || v(D, r, t ? e : N && S[r] || e, n)
+            D[r] && !t || d(D, r, t ? e : N && S[r] || e, n)
           }
         },
         exportTypedArrayStaticMethod: function(r, e, t) {
@@ -1251,10 +1251,10 @@ try {
                   } catch (r) {}
               if (_[r] && !t) return;
               try {
-                return v(_, r, t ? e : N && _[r] || e)
+                return d(_, r, t ? e : N && _[r] || e)
               } catch (r) {}
             }
-            for (n in L) !(o = s[n]) || o[r] && !t || v(o, r, e)
+            for (n in L) !(o = s[n]) || o[r] && !t || d(o, r, e)
           }
         },
         getTypedArrayConstructor: B,
@@ -1695,13 +1695,13 @@ try {
         p = t(73617),
         l = t(54395),
         y = t(68321),
-        d = "Object already initialized",
-        v = c.TypeError,
+        v = "Object already initialized",
+        d = c.TypeError,
         h = c.WeakMap;
       if (i || p.state) {
         var g = p.state || (p.state = new h);
         g.get = g.get, g.has = g.has, g.set = g.set, n = function(r, e) {
-          if (g.has(r)) throw new v(d);
+          if (g.has(r)) throw new d(v);
           return e.facade = r, g.set(r, e), e
         }, o = function(r) {
           return g.get(r) || {}
@@ -1711,7 +1711,7 @@ try {
       } else {
         var b = l("state");
         y[b] = !0, n = function(r, e) {
-          if (f(r, b)) throw new v(d);
+          if (f(r, b)) throw new d(v);
           return e.facade = r, u(r, b, e), e
         }, o = function(r) {
           return f(r, b) ? r[b] : {}
@@ -1729,7 +1729,7 @@ try {
         getterFor: function(r) {
           return function(e) {
             var t;
-            if (!s(e) || (t = o(e)).type !== r) throw new v("Incompatible receiver, " + r + " required");
+            if (!s(e) || (t = o(e)).type !== r) throw new d("Incompatible receiver, " + r + " required");
             return t
           }
         }
@@ -1753,12 +1753,12 @@ try {
         p = "prototype",
         l = "script",
         y = f("IE_PROTO"),
-        d = function() {},
-        v = function(r) {
+        v = function() {},
+        d = function(r) {
           return "<" + l + ">" + r + "</" + l + ">"
         },
         h = function(r) {
-          r.write(v("")), r.close();
+          r.write(d("")), r.close();
           var e = r.parentWindow.Object;
           return r = null, e
         },
@@ -1767,13 +1767,13 @@ try {
             n = new ActiveXObject("htmlfile")
           } catch (r) {}
           var r, e, t;
-          g = "undefined" != typeof document ? document.domain && n ? h(n) : (e = u("iframe"), t = "java" + l + ":", e.style.display = "none", s.appendChild(e), e.src = String(t), (r = e.contentWindow.document).open(), r.write(v("document.F=Object")), r.close(), r.F) : h(n);
+          g = "undefined" != typeof document ? document.domain && n ? h(n) : (e = u("iframe"), t = "java" + l + ":", e.style.display = "none", s.appendChild(e), e.src = String(t), (r = e.contentWindow.document).open(), r.write(d("document.F=Object")), r.close(), r.F) : h(n);
           for (var o = i.length; o--;) delete g[p][i[o]];
           return g()
         };
       c[y] = !0, r.exports = Object.create || function(r, e) {
         var t;
-        return null !== r ? (d[p] = o(r), t = new d, d[p] = null, t[y] = r) : t = g(), void 0 === e ? t : a.f(t, e)
+        return null !== r ? (v[p] = o(r), t = new v, v[p] = null, t[y] = r) : t = g(), void 0 === e ? t : a.f(t, e)
       }
     },
     65738: (r, e, t) => {
@@ -1857,25 +1857,25 @@ try {
         p = f.enforce,
         l = f.get,
         y = String,
-        d = Object.defineProperty,
-        v = n("".slice),
+        v = Object.defineProperty,
+        d = n("".slice),
         h = n("".replace),
         g = n([].join),
         b = c && !o((function() {
-          return 8 !== d((function() {}), "length", {
+          return 8 !== v((function() {}), "length", {
             value: 8
           }).length
         })),
         m = String(String).split("String"),
         w = r.exports = function(r, e, t) {
-          "Symbol(" === v(y(e), 0, 7) && (e = "[" + h(y(e), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), t && t.getter && (e = "get " + e), t && t.setter && (e = "set " + e), (!i(r, "name") || s && r.name !== e) && (c ? d(r, "name", {
+          "Symbol(" === d(y(e), 0, 7) && (e = "[" + h(y(e), /^Symbol\(([^)]*)\).*$/, "$1") + "]"), t && t.getter && (e = "get " + e), t && t.setter && (e = "set " + e), (!i(r, "name") || s && r.name !== e) && (c ? v(r, "name", {
             value: e,
             configurable: !0
-          }) : r.name = e), b && t && i(t, "arity") && r.length !== t.arity && d(r, "length", {
+          }) : r.name = e), b && t && i(t, "arity") && r.length !== t.arity && v(r, "length", {
             value: t.arity
           });
           try {
-            t && i(t, "constructor") && t.constructor ? c && d(r, "prototype", {
+            t && i(t, "constructor") && t.constructor ? c && v(r, "prototype", {
               writable: !1
             }) : r.prototype && (r.prototype = void 0)
           } catch (r) {}
@@ -1932,8 +1932,8 @@ try {
             value: r
           })
         })), i(e, 1);
-        for (var o, c = a(r), s = a(t), y = 0, d = 0, v = !1, h = n.length; y < h;) o = n[y++], v || o.key === c ? (v = !0, f(this, o.key)) : d++;
-        for (; d < h;)(o = n[d++]).key === c && o.value === s || u(this, o.key, o.value)
+        for (var o, c = a(r), s = a(t), y = 0, v = 0, d = !1, h = n.length; y < h;) o = n[y++], d || o.key === c ? (d = !0, f(this, o.key)) : v++;
+        for (; v < h;)(o = n[v++]).key === c && o.value === s || u(this, o.key, o.value)
       }), {
         enumerable: !0,
         unsafe: !0
@@ -1958,12 +1958,12 @@ try {
         s = t(1008),
         u = t(96272);
       r.exports = function(r, e) {
-        var t, f, p, l, y, d = r.target,
-          v = r.global,
+        var t, f, p, l, y, v = r.target,
+          d = r.global,
           h = r.stat;
-        if (t = v ? n : h ? n[d] || c(d, {}) : n[d] && n[d].prototype)
+        if (t = d ? n : h ? n[v] || c(v, {}) : n[v] && n[v].prototype)
           for (f in e) {
-            if (l = e[f], p = r.dontCallGetSet ? (y = o(t, f)) && y.value : t[f], !u(v ? f : d + (h ? "." : "#") + f, r.forced) && void 0 !== p) {
+            if (l = e[f], p = r.dontCallGetSet ? (y = o(t, f)) && y.value : t[f], !u(d ? f : v + (h ? "." : "#") + f, r.forced) && void 0 !== p) {
               if (typeof l == typeof p) continue;
               s(l, p)
             }(r.sham || p && p.sham) && a(l, "sham", !0), i(t, f, l, r)
@@ -2047,10 +2047,10 @@ try {
         p = t(99535),
         l = t(12743),
         y = TypeError,
-        d = function(r, e) {
+        v = function(r, e) {
           this.stopped = r, this.result = e
         },
-        v = d.prototype;
+        d = v.prototype;
       r.exports = function(r, e, t) {
         var h, g, b, m, w, E, x, A = t && t.that,
           O = !(!t || !t.AS_ENTRIES),
@@ -2059,7 +2059,7 @@ try {
           T = !(!t || !t.INTERRUPTED),
           I = n(e, A),
           _ = function(r) {
-            return h && l(h, "normal", r), new d(!0, r)
+            return h && l(h, "normal", r), new v(!0, r)
           },
           D = function(r) {
             return O ? (a(r), T ? I(r[0], r[1], _) : I(r[0], r[1])) : T ? I(r, _) : I(r)
@@ -2070,8 +2070,8 @@ try {
           if (!(g = p(r))) throw new y(i(r) + " is not iterable");
           if (c(g)) {
             for (b = 0, m = s(r); m > b; b++)
-              if ((w = D(r[b])) && u(v, w)) return w;
-            return new d(!1)
+              if ((w = D(r[b])) && u(d, w)) return w;
+            return new v(!1)
           }
           h = f(r, g)
         }
@@ -2081,9 +2081,9 @@ try {
           } catch (r) {
             l(h, "throw", r)
           }
-          if ("object" == typeof w && w && u(v, w)) return w
+          if ("object" == typeof w && w && u(d, w)) return w
         }
-        return new d(!1)
+        return new v(!1)
       }
     },
     79365: (r, e, t) => {
@@ -2140,14 +2140,14 @@ try {
         proto: !0
       }, {
         toSpliced: function(r, e) {
-          var t, n, o, y, d = s(this),
-            v = i(d),
-            h = c(r, v),
+          var t, n, o, y, v = s(this),
+            d = i(v),
+            h = c(r, d),
             g = arguments.length,
             b = 0;
-          for (0 === g ? t = n = 0 : 1 === g ? (t = 0, n = v - h) : (t = g - 2, n = l(p(u(e), 0), v - h)), o = a(v + t - n), y = f(o); b < h; b++) y[b] = d[b];
+          for (0 === g ? t = n = 0 : 1 === g ? (t = 0, n = d - h) : (t = g - 2, n = l(p(u(e), 0), d - h)), o = a(d + t - n), y = f(o); b < h; b++) y[b] = v[b];
           for (; b < h + t; b++) y[b] = arguments[b - h + 2];
-          for (; b < o; b++) y[b] = d[b + n - t];
+          for (; b < o; b++) y[b] = v[b + n - t];
           return y
         }
       }), o("toSpliced")
@@ -2431,8 +2431,8 @@ try {
         p = t(31719),
         l = t(51918),
         y = t(6405),
-        d = t(51384),
-        v = t(79615),
+        v = t(51384),
+        d = t(79615),
         h = "DOMException",
         g = a("Error"),
         b = a(h),
@@ -2448,20 +2448,20 @@ try {
         w = m.prototype = b.prototype,
         E = "stack" in new g(h),
         x = "stack" in new b(1, 2),
-        A = b && d && Object.getOwnPropertyDescriptor(o, h),
+        A = b && v && Object.getOwnPropertyDescriptor(o, h),
         O = !(!A || A.writable && A.configurable),
         R = E && !O && !x;
       n({
         global: !0,
         constructor: !0,
-        forced: v || R
+        forced: d || R
       }, {
         DOMException: R ? m : b
       });
       var S = a(h),
         T = S.prototype;
       if (T.constructor !== S)
-        for (var I in v || c(T, "constructor", i(1, S)), l)
+        for (var I in d || c(T, "constructor", i(1, S)), l)
           if (s(l, I)) {
             var _ = l[I],
               D = _.s;

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [8019], {
     8019: (e, a, n) => {
@@ -68,20 +68,20 @@ try {
         const [, n] = (0, r.h)(), [k, v] = (0, t.useSearchParams)(), {
           pathname: y
         } = (0, t.useLocation)(), {
-          data: g,
-          loading: p
+          data: b,
+          loading: g
         } = (0, o.useQuery)(u.MetaUrlInfo, {
           variables: {
             url: y.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), b = (0, o.useLocale)(), h = g?.metaUrlInfo?.tina;
+        }), p = (0, o.useLocale)(), h = b?.metaUrlInfo?.tina;
         return (0, i.useEffect)((() => {
           const e = k.get("video");
           if (!e || !h) return void n(null);
           const i = Number(h?.payload?.content[0].content[0]?.tag ?? 0);
           let t;
-          t = 40 === i && "ru_ru" === b ? "en_us" : b;
+          t = 40 === i && "ru_ru" === p ? "en_us" : p;
           const d = (0, m.jsx)(c.VideoWithPlaylist, {
               tagIds: [i],
               locale: t,
@@ -103,7 +103,7 @@ try {
             title: "Video Modal",
             contentClassName: "rockstargames-sites-legacyc5573c7aa0bd0a87733a56baa8e82d49"
           })
-        }), [k.get("video"), b, h]), (0, i.useEffect)((() => () => n(null)), []), p || h ? p ? (0, m.jsx)("div", {
+        }), [k.get("video"), p, h]), (0, i.useEffect)((() => () => n(null)), []), g || h ? g ? (0, m.jsx)("div", {
           className: "rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56",
           children: (0, m.jsx)(d.A, {})
         }) : (0, m.jsx)(s.TinaParser, {

@@ -5,20 +5,20 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "e9ec16f9fe241f7e8169df2a1c5f1f8c74b65018",
     packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "e9ec16f9fe241f7e8169df2a1c5f1f8c74b65018"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [844, 8463], {
     18463: (e, t, i) => {
       i.r(t), i.d(t, {
-        InView: () => u,
-        defaultFallbackInView: () => c,
-        observe: () => h,
-        useInView: () => f
+        InView: () => f,
+        defaultFallbackInView: () => h,
+        observe: () => c,
+        useInView: () => u
       });
       var n = i(62229),
         s = Object.defineProperty,
@@ -30,14 +30,14 @@ try {
         }) : e[t] = i)(e, "symbol" != typeof t ? t + "" : t, i),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
-      function c(e) {
-        l = e
+      function h(e) {
+        d = e
       }
 
-      function h(e, t, i = {}, n = l) {
+      function c(e, t, i = {}, n = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const s = e.getBoundingClientRect();
           return t(n, {
@@ -53,11 +53,11 @@ try {
         const {
           id: s,
           observer: r,
-          elements: c
+          elements: h
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(l+=1,a.set(i,l.toString())),a.get(i)):"0"):e[t]}`;
               var i
             })).toString()
           }(e);
@@ -81,13 +81,13 @@ try {
             }, o.set(t, i)
           }
           return i
-        }(i), h = c.get(e) || [];
-        return c.has(e) || c.set(e, h), h.push(t), r.observe(e),
+        }(i), c = h.get(e) || [];
+        return h.has(e) || h.set(e, c), c.push(t), r.observe(e),
           function() {
-            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), r.unobserve(e)), 0 === c.size && (r.disconnect(), o.delete(s))
+            c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), r.unobserve(e)), 0 === h.size && (r.disconnect(), o.delete(s))
           }
       }
-      var u = class extends n.Component {
+      var f = class extends n.Component {
         constructor(e) {
           super(e), r(this, "node", null), r(this, "_unobserveCb", null), r(this, "handleNode", (e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -126,7 +126,7 @@ try {
             delay: s,
             fallbackInView: r
           } = this.props;
-          this._unobserveCb = h(this.node, this.handleChange, {
+          this._unobserveCb = c(this.node, this.handleChange, {
             threshold: e,
             root: t,
             rootMargin: i,
@@ -159,21 +159,21 @@ try {
             root: r,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
-            delay: c,
-            initialInView: h,
-            fallbackInView: u,
-            ...f
+            skip: l,
+            trackVisibility: d,
+            delay: h,
+            initialInView: c,
+            fallbackInView: f,
+            ...u
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...f
+            ...u
           }, e)
         }
       };
 
-      function f({
+      function u({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -181,19 +181,19 @@ try {
         root: r,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
-        onChange: c
+        initialInView: l,
+        fallbackInView: d,
+        onChange: h
       } = {}) {
-        var u;
-        const [f, p] = n.useState(null), b = n.useRef(c), [g, y] = n.useState({
-          inView: !!d,
+        var f;
+        const [u, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+          inView: !!l,
           entry: void 0
         });
-        b.current = c, n.useEffect((() => {
-          if (a || !f) return;
+        b.current = h, n.useEffect((() => {
+          if (a || !u) return;
           let n;
-          return n = h(f, ((e, t) => {
+          return n = c(u, ((e, t) => {
             y({
               inView: e,
               entry: t
@@ -204,14 +204,14 @@ try {
             threshold: e,
             trackVisibility: i,
             delay: t
-          }, l), () => {
+          }, d), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, l, t]);
-        const w = null == (u = g.entry) ? void 0 : u.target,
+        }), [Array.isArray(e) ? e.toString() : e, u, r, s, o, a, i, d, t]);
+        const w = null == (f = g.entry) ? void 0 : f.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
-          inView: !!d,
+        u || !w || o || a || v.current === w || (v.current = w, y({
+          inView: !!l,
           entry: void 0
         }));
         const k = [p, g.inView, g.entry];

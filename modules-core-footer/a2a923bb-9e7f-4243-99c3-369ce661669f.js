@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [8970], {
     52320: (e, t, a) => {
@@ -34,7 +34,7 @@ try {
         r = a(39368);
 
       function o(e, t) {
-        if (!(e instanceof f)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof c)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
       function i(e) {
@@ -89,7 +89,7 @@ try {
         }
         return a
       }
-      var f = function() {
+      var c = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.ListFormat must be called with 'new'");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "initializedListFormat", !0);
@@ -99,16 +99,16 @@ try {
             s = (0, n.GetOption)(i, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
           o.localeMatcher = s;
           var _ = e.localeData,
-            f = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, _, e.getDefaultLocale);
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", f.locale);
-          var c = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", c);
+            c = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, _, e.getDefaultLocale);
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", c.locale);
+          var f = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", f);
           var d = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", d);
-          var u = f.dataLocale,
+          var u = c.dataLocale,
             p = _[u];
           (0, n.invariant)(!!p, "Missing locale data for ".concat(u));
-          var y = p[c][d];
+          var y = p[f][d];
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {
@@ -123,8 +123,8 @@ try {
           var a = s(e.__INTERNAL_SLOT_MAP__, this, i(t));
           if (!Array.isArray(a)) return [a];
           for (var n = [], r = 0, _ = a; r < _.length; r++) {
-            var f = _[r];
-            n.push(l.__assign({}, f))
+            var c = _[r];
+            n.push(l.__assign({}, c))
           }
           return n
         }, e.prototype.resolvedOptions = function() {
@@ -148,19 +148,19 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e.__INTERNAL_SLOT_MAP__ = new WeakMap, e
       }();
-      t.default = f;
+      t.default = c;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(f.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(c.prototype, Symbol.toStringTag, {
           value: "Intl.ListFormat",
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(f.prototype.constructor, "length", {
+        }), Object.defineProperty(c.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(f.supportedLocalesOf, "length", {
+        }), Object.defineProperty(c.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,

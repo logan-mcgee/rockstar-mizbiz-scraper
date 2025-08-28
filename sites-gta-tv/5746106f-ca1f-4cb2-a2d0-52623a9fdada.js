@@ -5,12 +5,12 @@ try {
 } catch (a) {} {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   a._sentryModuleMetadata = a._sentryModuleMetadata || {}, a._sentryModuleMetadata[(new a.Error).stack] = Object.assign({}, a._sentryModuleMetadata[(new a.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-gta-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_gta_tv = self.webpackChunk_rockstargames_sites_gta_tv || []).push([
   [5018], {
     404: (a, n) => {
@@ -60,7 +60,7 @@ try {
                 L = P(a), b.push(L);
                 break;
               default:
-                if (!s.test(m)) throw new RangeError("Malformed extension type");
+                if (!e.test(m)) throw new RangeError("Malformed extension type");
                 if (m in r) throw new RangeError("There can only be 1 -".concat(m, "- extension"));
                 var k = {
                   type: m,
@@ -80,8 +80,8 @@ try {
         m = /^[a-z0-9]{3,8}$/i,
         k = /^[a-z0-9][a-z]$/i,
         u = /^[a-z0-9]{3,8}$/i,
-        e = /^[a-z]{4}$/i,
-        s = /^[0-9a-svwyz]$/i,
+        s = /^[a-z]{4}$/i,
+        e = /^[0-9a-svwyz]$/i,
         i = /^([a-z]{2}|[0-9]{3})$/i,
         d = /^([a-z0-9]{5,8}|[0-9][a-z0-9]{3})$/i,
         l = /^([a-z]{2,3}|[a-z]{5,8})$/i,
@@ -96,7 +96,7 @@ try {
       }
 
       function c(a) {
-        return e.test(a)
+        return s.test(a)
       }
 
       function p(a) {
@@ -228,7 +228,7 @@ try {
                 L.value = L.value.toLowerCase()
             }
           }
-          a.extensions.sort(s)
+          a.extensions.sort(e)
         }
         var b;
         return a
@@ -244,14 +244,14 @@ try {
           var r = b[L];
           r[0] in n || (n[r[0]] = 1, r[1] && "true" !== r[1] ? t.push([r[0].toLowerCase(), r[1].toLowerCase()]) : t.push([r[0].toLowerCase()]))
         }
-        return t.sort(e)
-      }
-
-      function e(a, n) {
-        return a[0] < n[0] ? -1 : a[0] > n[0] ? 1 : 0
+        return t.sort(s)
       }
 
       function s(a, n) {
+        return a[0] < n[0] ? -1 : a[0] > n[0] ? 1 : 0
+      }
+
+      function e(a, n) {
         return a.type < n.type ? -1 : a.type > n.type ? 1 : 0
       }
 
@@ -267,10 +267,10 @@ try {
         var n = a;
         if (a.variants.length)
           for (var t = "", L = 0, u = a.variants; L < u.length; L++) {
-            var e = u[L];
+            var s = u[L];
             if (t = b.languageAlias[(0, r.emitUnicodeLanguageId)({
                 lang: a.lang,
-                variants: [e]
+                variants: [s]
               })]) {
               n = {
                 lang: (l = (0, k.parseUnicodeLanguageId)(t.split(k.SEPARATOR))).lang,
@@ -282,14 +282,14 @@ try {
             }
           }
         if (n.script && n.region) {
-          var s = b.languageAlias[(0, r.emitUnicodeLanguageId)({
+          var e = b.languageAlias[(0, r.emitUnicodeLanguageId)({
             lang: n.lang,
             script: n.script,
             region: n.region,
             variants: []
           })];
-          s && (n = {
-            lang: (l = (0, k.parseUnicodeLanguageId)(s.split(k.SEPARATOR))).lang,
+          e && (n = {
+            lang: (l = (0, k.parseUnicodeLanguageId)(e.split(k.SEPARATOR))).lang,
             script: l.script,
             region: l.region,
             variants: n.variants
@@ -338,8 +338,8 @@ try {
         }
         if (n.script && (n.script = n.script[0].toUpperCase() + n.script.slice(1).toLowerCase(), b.scriptAlias[n.script] && (n.script = b.scriptAlias[n.script])), n.variants.length) {
           for (var w = 0; w < n.variants.length; w++)
-            if (e = n.variants[w].toLowerCase(), b.variantAlias[e]) {
-              var N = b.variantAlias[e];
+            if (s = n.variants[w].toLowerCase(), b.variantAlias[s]) {
+              var N = b.variantAlias[s];
               (0, k.isUnicodeVariantSubtag)(N) ? n.variants[w] = N: (0, k.isUnicodeLanguageSubtag)(N) && (n.lang = N)
             } n.variants.sort()
         }

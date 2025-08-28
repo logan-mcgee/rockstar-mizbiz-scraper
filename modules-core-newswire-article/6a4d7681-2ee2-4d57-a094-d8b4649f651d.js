@@ -1,57 +1,57 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    s = (new e.Error).stack;
-  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "6a4d7681-2ee2-4d57-a094-d8b4649f651d", e._sentryDebugIdIdentifier = "sentry-dbid-6a4d7681-2ee2-4d57-a094-d8b4649f651d")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "6a4d7681-2ee2-4d57-a094-d8b4649f651d", e._sentryDebugIdIdentifier = "sentry-dbid-6a4d7681-2ee2-4d57-a094-d8b4649f651d")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [7547], {
-    59928: (e, s, a) => {
-      a.r(s), a.d(s, {
+    59928: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => h
       });
-      var t = a(19991),
-        l = a(80195),
-        r = a(16046);
+      var t = s(19991),
+        l = s(80195),
+        r = s(16046);
       const d = {
         padding: "rockstargames-modules-core-newswire-articleac767e959939b4d56b2358cb263d07ad",
         carouselWrapper: "rockstargames-modules-core-newswire-articlefabefc39343f6c494eb3d049757d89c5",
         carouselTitle: "rockstargames-modules-core-newswire-articlee9e0ef1bfc3699b1e50c33dd0ce8e76a"
       };
-      var i = a(70954);
+      var i = s(70954);
       const n = e => {
           let {
-            to: s,
-            children: a
+            to: a,
+            children: s
           } = e;
-          return s ? (0, i.jsx)("a", {
-            href: s,
+          return a ? (0, i.jsx)("a", {
+            href: a,
             target: "_blank",
-            children: a
-          }) : a
+            children: s
+          }) : s
         },
         c = e => {
           let {
-            items: s = [],
-            text: a = {},
+            items: a = [],
+            text: s = {},
             style: c,
             className: o = "",
             id: m = null
           } = e;
-          return s?.length ? (0, i.jsxs)("div", {
+          return a?.length ? (0, i.jsxs)("div", {
             id: m,
             "data-testid": `carousel${o&&`-${o}`}-group-of-items`,
             children: [(0, i.jsx)(r.A, {
               style: c,
               className: [o, d.carouselWrapper].join(" "),
-              children: s.map((e => (0, i.jsxs)("div", {
+              children: a.map((e => (0, i.jsxs)("div", {
                 id: e?.id ?? null,
                 children: [(0, i.jsx)(l.A, {
                   image: e?.image,
@@ -76,84 +76,84 @@ try {
                   }
                 })]
               }, e?.key ?? e?.title)))
-            }), a?.title || a?.description ? (0, i.jsx)("div", {
+            }), s?.title || s?.description ? (0, i.jsx)("div", {
               className: d.padding,
-              style: a?.style ?? {},
+              style: s?.style ?? {},
               children: (0, i.jsx)(t.A, {
-                item: a
+                item: s
               })
             }) : ""]
           }) : null
         };
-      var o = a(31879),
-        m = a.n(o),
-        g = a(92440),
-        f = a(95966);
-      const u = e => {
+      var o = s(31879),
+        m = s.n(o),
+        g = s(92440),
+        u = s(95966);
+      const f = e => {
           let {
-            impressionTracking: s,
-            gtm: a = {},
+            impressionTracking: a,
+            gtm: s = {},
             children: t
           } = e;
-          return s?.shouldTrack ? (0, i.jsx)(g.InViewTracker, {
-            threshold: s?.threshold,
-            gtm: a,
+          return a?.shouldTrack ? (0, i.jsx)(g.InViewTracker, {
+            threshold: a?.threshold,
+            gtm: s,
             children: t
           }) : t
         },
-        p = e => {
-          let {
-            to: s,
-            children: a
-          } = e;
-          return s ? (0, i.jsx)("a", {
-            href: s,
-            target: "_blank",
-            rel: "noreferrer",
-            children: a
-          }) : a
-        },
         b = e => {
           let {
-            item: s
+            to: a,
+            children: s
           } = e;
-          return s?.videoId ? (0, i.jsx)(m(), {
+          return a ? (0, i.jsx)("a", {
+            href: a,
+            target: "_blank",
+            rel: "noreferrer",
+            children: s
+          }) : s
+        },
+        p = e => {
+          let {
+            item: a
+          } = e;
+          return a?.videoId ? (0, i.jsx)(m(), {
             context: "site",
             autoplay: !1,
-            id: s.videoId
+            id: a.videoId
           }) : (0, i.jsx)(l.A, {
-            image: s?.image,
-            badge: s?.badge ?? s?.image?.badge,
+            image: a?.image,
+            badge: a?.badge ?? a?.image?.badge,
             badgeType: "badge3",
-            role: s?.role ?? s?.image?.role,
-            splitter: s?.splitter ?? s?.image?.splitter,
-            ariaLabel: s?.image?.ariaLabel,
-            style: s?.style,
-            className: s?.className
+            role: a?.role ?? a?.image?.role,
+            splitter: a?.splitter ?? a?.image?.splitter,
+            ariaLabel: a?.image?.ariaLabel,
+            style: a?.style,
+            className: a?.className
           })
         },
         y = e => {
           let {
-            items: s,
-            style: a = {},
+            items: a,
+            style: s = {},
             className: l = "",
             id: r = null
           } = e;
           return (0, i.jsx)("div", {
-            style: a,
-            className: (0, f.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", l),
+            style: s,
+            className: (0, u.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", l),
             id: r,
             "data-testid": "standard-group-of-items",
-            children: s.map((e => (0, i.jsx)(u, {
+            children: a.map((e => (0, i.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, i.jsx)(p, {
+              children: (0, i.jsx)(b, {
                 to: e?.to,
                 children: (0, i.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                  className: (0, u.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, i.jsx)(b, {
+                  children: [e?.image || e?.videoId ? (0, i.jsx)(p, {
                     item: e
                   }) : "", e.title || e.description ? (0, i.jsx)(t.A, {
                     item: e,
@@ -166,8 +166,8 @@ try {
         },
         h = e => {
           let {
-            children: s = null,
-            text: a = {},
+            children: a = null,
+            text: s = {},
             items: t = [],
             renderTemplate: l = "",
             style: r = {},
@@ -178,20 +178,20 @@ try {
           switch (l) {
             case "carousel":
               return (0, i.jsx)(c, {
-                text: a,
+                text: s,
                 items: t,
                 style: r,
                 id: d,
-                children: s
+                children: a
               });
             case "carousel-panorama":
               return (0, i.jsx)(c, {
-                text: a,
+                text: s,
                 items: t,
                 style: r,
                 className: "panorama",
                 id: d,
-                children: s
+                children: a
               });
             default:
               return (0, i.jsx)(y, {
@@ -199,7 +199,7 @@ try {
                 style: r,
                 id: d,
                 ...n,
-                children: s
+                children: a
               })
           }
         }

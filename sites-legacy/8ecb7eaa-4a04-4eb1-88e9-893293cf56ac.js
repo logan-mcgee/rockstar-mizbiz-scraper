@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [2014, 9633], {
     99633: (e, t, i) => {
@@ -24,8 +24,8 @@ try {
         l = i(92440),
         n = i(4394),
         r = i(23205),
-        c = i(87052),
-        g = i(2918);
+        g = i(87052),
+        c = i(2918);
       const o = (0, h.defineMessages)({
           cph_highlights_heading: {
             id: "cph_highlights_heading",
@@ -83,11 +83,11 @@ try {
             isActive: l,
             index: n,
             highlightsCount: r,
-            ...g
+            ...c
           } = e;
           const d = (0, h.useIntl)(),
             u = (0, a.useRef)(null);
-          return (0, p.jsxs)(c.motion.div, {
+          return (0, p.jsxs)(g.motion.div, {
             "aria-hidden": !l,
             "aria-label": d.formatMessage(o.cph_highlights_group_aria, {
               index: n + 1,
@@ -103,13 +103,13 @@ try {
             variants: f,
             animate: l ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...g,
+            ...c,
             children: [t && (0, p.jsx)("h1", {
               children: t || d.formatMessage(o.cph_highlights_heading)
             }), i && (0, p.jsx)("h2", {
               className: _.heading,
               children: i
-            }), (0, p.jsx)(c.motion.div, {
+            }), (0, p.jsx)(g.motion.div, {
               ref: u,
               className: _.summaryText,
               dangerouslySetInnerHTML: {
@@ -151,7 +151,7 @@ try {
             }),
             {
               track: f
-            } = (0, g.useGtmTrack)(),
+            } = (0, c.useGtmTrack)(),
             [x, y] = (0, a.useState)(!1),
             [v, k] = (0, a.useState)(!1),
             [w, j] = (0, a.useState)(0),
@@ -200,7 +200,7 @@ try {
                 k(!1)
               },
               children: [t.length > 1 && (0, p.jsxs)(p.Fragment, {
-                children: [(0, p.jsx)(c.motion.button, {
+                children: [(0, p.jsx)(g.motion.button, {
                   ref: R,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_previous),
@@ -212,7 +212,7 @@ try {
                     }), E && E.slidePrev()
                   },
                   disabled: w < 1
-                }), (0, p.jsx)(c.motion.button, {
+                }), (0, p.jsx)(g.motion.button, {
                   ref: P,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_next),

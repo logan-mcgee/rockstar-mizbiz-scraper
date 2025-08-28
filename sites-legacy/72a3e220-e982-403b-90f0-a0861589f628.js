@@ -5,18 +5,18 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "dde524f11ca2e811c948d868f62c7d544de61cc3",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "dde524f11ca2e811c948d868f62c7d544de61cc3"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [2014, 9633], {
     99633: (e, t, i) => {
       i.r(t), i.d(t, {
         Highlights: () => x,
-        HighlightsItem: () => m
+        HighlightsItem: () => b
       });
       var a = i(62229),
         s = i(55799),
@@ -75,7 +75,7 @@ try {
             }
           }
         },
-        m = (0, h.withIntl)((e => {
+        b = (0, h.withIntl)((e => {
           let {
             heading: t,
             title: i,
@@ -113,13 +113,13 @@ try {
               ref: u,
               className: _.summaryText,
               dangerouslySetInnerHTML: {
-                __html: (m = s, m ? m.split(/\r?\n/).filter((e => e.trim())).map((e => `<p>${e}</p>`)).join("") : "")
+                __html: (b = s, b ? b.split(/\r?\n/).filter((e => e.trim())).map((e => `<p>${e}</p>`)).join("") : "")
               }
             })]
           });
-          var m
+          var b
         }), d),
-        b = {
+        m = {
           pillBtn: "rockstargames-sites-legacyf7e754149270d537b3a078a3e18e4b37",
           selected: "rockstargames-sites-legacyb5436dde7bfb2a5e32493563610709a5",
           mainContainer: "rockstargames-sites-legacyb8cfa1eb3403128e589e14c5f7fad547",
@@ -188,11 +188,11 @@ try {
               }))
             }
           })), [E]), t?.length ? (0, p.jsxs)("section", {
-            className: b.mainContainer,
+            className: m.mainContainer,
             ref: _,
             children: [(0, p.jsxs)("div", {
               ref: M,
-              className: b.mainCarousel,
+              className: m.mainCarousel,
               onMouseEnter: () => {
                 k(!0)
               },
@@ -204,7 +204,7 @@ try {
                   ref: R,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_previous),
-                  className: [b.controlBtn, b.prevBtn, v ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.prevBtn, v ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_previous",
@@ -216,7 +216,7 @@ try {
                   ref: P,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_next),
-                  className: [b.controlBtn, b.nextBtn, v ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.nextBtn, v ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_next",
@@ -271,9 +271,9 @@ try {
                 }, `${e.title}-${t}`)))
               })]
             }), (0, p.jsxs)("div", {
-              className: b.contentContainer,
+              className: m.contentContainer,
               children: [(0, p.jsx)("div", {
-                className: b.carouselContainer,
+                className: m.carouselContainer,
                 children: (0, p.jsx)(r.RC, {
                   onInit: e => {
                     T.current = e
@@ -296,7 +296,7 @@ try {
                           card_name: t[e]?.title
                         }), j(e), N.current?.slideTo(e), T.current?.slideTo(e)
                       })(i),
-                      className: `${i===w?b.active:""}`,
+                      className: `${i===w?m.active:""}`,
                       "aria-label": e.title,
                       "aria-current": i === w,
                       children: (0, p.jsx)("img", {
@@ -307,8 +307,8 @@ try {
                   }, e.key)))
                 })
               }), (0, p.jsx)("div", {
-                className: b.textContainer,
-                children: t.map(((e, a) => (0, p.jsx)(m, {
+                className: m.textContainer,
+                children: t.map(((e, a) => (0, p.jsx)(b, {
                   heading: i,
                   title: e.title,
                   summary: e.summary,

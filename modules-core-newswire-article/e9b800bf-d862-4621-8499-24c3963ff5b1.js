@@ -5,12 +5,12 @@ try {
 } catch (t) {} {
   let t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   t._sentryModuleMetadata = t._sentryModuleMetadata || {}, t._sentryModuleMetadata[(new t.Error).stack] = Object.assign({}, t._sentryModuleMetadata[(new t.Error).stack], {
-    release: "4e734f43fc53879f76d3e1ad3d0f71361f833d25",
+    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "4e734f43fc53879f76d3e1ad3d0f71361f833d25"
+  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [2209], {
     59740: (t, e, i) => {
@@ -169,11 +169,11 @@ try {
         w = function(t, e, i) {
           return Math.max(Math.min(t, i), e)
         },
-        v = function(t, e, i) {
+        b = function(t, e, i) {
           var s = Math.round(t / e);
           return s * e + i * (s - 1)
         },
-        b = function(t, e) {
+        v = function(t, e) {
           return new RegExp(t, "i").test(e)
         },
         m = function(t) {
@@ -345,8 +345,8 @@ try {
           }, e.prototype.calculateNewMaxFromBoundary = function(t, e) {
             var i, s, o = this.props.boundsByDirection,
               n = this.state.direction,
-              r = o && b("left", n),
-              h = o && b("top", n);
+              r = o && v("left", n),
+              h = o && v("top", n);
             if ("parent" === this.props.bounds) {
               var a = this.parentNode;
               a && (i = r ? this.resizableRight - this.parentLeft : a.offsetWidth + (this.parentLeft - this.resizableLeft), s = h ? this.resizableBottom - this.parentTop : a.offsetHeight + (this.parentTop - this.resizableTop))
@@ -370,8 +370,8 @@ try {
               f = p.width,
               g = p.height,
               w = u || 0,
-              v = c || 0;
-            return b("right", a) && (f = p.width + (t - p.x) * n / s, l && (g = (f - v) / this.ratio + w)), b("left", a) && (f = p.width - (t - p.x) * n / s, l && (g = (f - v) / this.ratio + w)), b("bottom", a) && (g = p.height + (e - p.y) * r / s, l && (f = (g - w) * this.ratio + v)), b("top", a) && (g = p.height - (e - p.y) * r / s, l && (f = (g - w) * this.ratio + v)), {
+              b = c || 0;
+            return v("right", a) && (f = p.width + (t - p.x) * n / s, l && (g = (f - b) / this.ratio + w)), v("left", a) && (f = p.width - (t - p.x) * n / s, l && (g = (f - b) / this.ratio + w)), v("bottom", a) && (g = p.height + (e - p.y) * r / s, l && (f = (g - w) * this.ratio + b)), v("top", a) && (g = p.height - (e - p.y) * r / s, l && (f = (g - w) * this.ratio + b)), {
               newWidth: f,
               newHeight: g
             }
@@ -389,12 +389,12 @@ try {
             if (n) {
               var f = (d - u) * this.ratio + c,
                 g = (l - u) * this.ratio + c,
-                v = (a - c) / this.ratio + u,
-                b = (p - c) / this.ratio + u,
+                b = (a - c) / this.ratio + u,
+                v = (p - c) / this.ratio + u,
                 m = Math.max(a, f),
                 y = Math.min(p, g),
-                z = Math.max(d, v),
-                x = Math.min(l, b);
+                z = Math.max(d, b),
+                x = Math.min(l, v);
               t = w(t, m, y), e = w(e, z, x)
             } else t = w(t, a, p), e = w(e, d, l);
             return {
@@ -487,9 +487,9 @@ try {
                   }
                 }(g, this.window.innerWidth, this.window.innerHeight, s, o, n, h);
               s = w.maxWidth, o = w.maxHeight, n = w.minWidth, h = w.minHeight;
-              var b = this.calculateNewSizeFromDirection(a, p),
-                z = b.newHeight,
-                S = b.newWidth,
+              var v = this.calculateNewSizeFromDirection(a, p),
+                z = v.newHeight,
+                S = v.newWidth,
                 R = this.calculateNewMaxFromBoundary(s, o);
               this.props.snap && this.props.snap.x && (S = y(S, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (z = y(z, this.props.snap.y, this.props.snapGap));
               var W = this.calculateNewSizeFromAspectRatio(S, z, {
@@ -500,8 +500,8 @@ try {
                 height: h
               });
               if (S = W.newWidth, z = W.newHeight, this.props.grid) {
-                var M = v(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
-                  E = v(z, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
+                var M = b(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
+                  E = b(z, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
                   N = this.props.snapGap || 0;
                 S = 0 === N || Math.abs(M - S) <= N ? M : S, z = 0 === N || Math.abs(E - z) <= N ? E : z
               }
