@@ -1,0 +1,51 @@
+try {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "f75ca0d3-9c7b-4e60-90e0-5ef46c81d72c", e._sentryDebugIdIdentifier = "sentry-dbid-f75ca0d3-9c7b-4e60-90e0-5ef46c81d72c")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    packageName: "@rockstargames/modules-core-header",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+}, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
+  [2295, 4618, 4676, 7533, 9980], {
+    42295: (e, d, o) => {
+      e.exports = o(69245)
+    },
+    69245: (e, d, o) => {
+      var r = o(71127),
+        a = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        t = Object.prototype.hasOwnProperty,
+        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
+          key: !0,
+          ref: !0,
+          __self: !0,
+          __source: !0
+        };
+
+      function l(e, d, o) {
+        var r, n = {},
+          l = null,
+          i = null;
+        for (r in void 0 !== o && (l = "" + o), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (i = d.ref), d) t.call(d, r) && !s.hasOwnProperty(r) && (n[r] = d[r]);
+        if (e && e.defaultProps)
+          for (r in d = e.defaultProps) void 0 === n[r] && (n[r] = d[r]);
+        return {
+          $$typeof: a,
+          type: e,
+          key: l,
+          ref: i,
+          props: n,
+          _owner: f.current
+        }
+      }
+      d.Fragment = n, d.jsx = l, d.jsxs = l
+    }
+  }
+]);

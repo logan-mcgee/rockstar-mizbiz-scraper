@@ -1,519 +1,473 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7980350b-7843-454a-ae92-3d915a9d04a7", e._sentryDebugIdIdentifier = "sentry-dbid-7980350b-7843-454a-ae92-3d915a9d04a7")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f0dd0e1a-8f6b-403c-b9d5-ef4dc4de9277", e._sentryDebugIdIdentifier = "sentry-dbid-f0dd0e1a-8f6b-403c-b9d5-ef4dc4de9277")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "1abf2adfc44dda687079577dcca1257a51fb3eb0",
+    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
     packageName: "@rockstargames/modules-core-footer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "1abf2adfc44dda687079577dcca1257a51fb3eb0"
+  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
 }, System.register([], (function(e, a) {
   return {
     execute: function() {
       e((() => {
-        var e, r, t, d, f, c, o = {
-            9944: (e, a, r) => {
+        var e, r, d, t, f, c, o, n, b, i, s, l, u, p, h, m, g, y, v, w, k, _, E, P, S, j = {
+            17411: (e, a, r) => {
+              const d = r(77027).y;
+              a.w = function(e) {
+                if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
+                r.p = d(r.y.meta.url, e)
+              }
+            },
+            28419: (e, a, r) => {
+              (0, r(17411).w)(1)
+            },
+            77027: (e, a, r) => {
               a.y = function(e, a) {
                 var r = document.createElement("a");
                 r.href = e;
-                for (var t = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, d = 0, f = t.length; d !== a && f >= 0;) "/" === t[--f] && d++;
-                if (d !== a) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + a + ") is greater than the number of directories (" + d + ") in the URL path " + e);
-                var c = t.slice(0, f + 1);
+                for (var d = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, t = 0, f = d.length; t !== a && f >= 0;) "/" === d[--f] && t++;
+                if (t !== a) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + a + ") is greater than the number of directories (" + t + ") in the URL path " + e);
+                var c = d.slice(0, f + 1);
                 return r.protocol + "//" + r.host + c
               };
               Number.isInteger
             },
-            21998: (e, a, r) => {
-              (0, r(82788).w)(1)
-            },
-            37389: (e, a, r) => {
-              r(21998)
-            },
-            82788: (e, a, r) => {
-              const t = r(9944).y;
-              a.w = function(e) {
-                if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
-                r.p = t(r.y.meta.url, e)
-              }
+            93032: (e, a, r) => {
+              r(28419)
             },
             98478: (e, a, r) => {
               "use strict";
-              var t = {
-                  "./root": () => Promise.all([r.e(564), r.e(789), r.e(1127), r.e(9623), r.e(5966), r.e(6783), r.e(6192)]).then((() => () => r(13438)))
+              var d = {
+                  "./root": () => Promise.all([r.e(78), r.e(8853), r.e(1127), r.e(8429), r.e(9623), r.e(1788), r.e(5966), r.e(8322), r.e(3569)]).then((() => () => r(32841)))
                 },
-                d = (e, a) => (r.R = a, a = r.o(t, e) ? t[e]() : Promise.resolve().then((() => {
+                t = (e, a) => (r.R = a, a = r.o(d, e) ? d[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
                 })), r.R = void 0, a),
                 f = (e, a) => {
                   if (r.S) {
-                    var t = "default",
-                      d = r.S[t];
-                    if (d && d !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-                    return r.S[t] = e, r.I(t, a)
+                    var d = "default",
+                      t = r.S[d];
+                    if (t && t !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+                    return r.S[d] = e, r.I(d, a)
                   }
                 };
               r.d(a, {
-                get: () => d,
+                get: () => t,
                 init: () => f
               })
             }
           },
-          n = {};
+          O = {};
 
-        function b(e) {
-          var a = n[e];
+        function T(e) {
+          var a = O[e];
           if (void 0 !== a) return a.exports;
-          var r = n[e] = {
+          var r = O[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return o[e].call(r.exports, r, r.exports, b), r.loaded = !0, r.exports
+          return j[e].call(r.exports, r, r.exports, T), r.loaded = !0, r.exports
         }
-        return b.m = o, b.c = n, b.y = a, b.amdO = {}, b.n = e => {
+        return T.m = j, T.c = O, T.y = a, T.amdO = {}, T.n = e => {
           var a = e && e.__esModule ? () => e.default : () => e;
-          return b.d(a, {
+          return T.d(a, {
             a
           }), a
-        }, r = Object.getPrototypeOf ? e => Object.getPrototypeOf(e) : e => e.__proto__, b.t = function(a, t) {
-          if (1 & t && (a = this(a)), 8 & t) return a;
+        }, r = Object.getPrototypeOf ? e => Object.getPrototypeOf(e) : e => e.__proto__, T.t = function(a, d) {
+          if (1 & d && (a = this(a)), 8 & d) return a;
           if ("object" == typeof a && a) {
-            if (4 & t && a.__esModule) return a;
-            if (16 & t && "function" == typeof a.then) return a
+            if (4 & d && a.__esModule) return a;
+            if (16 & d && "function" == typeof a.then) return a
           }
-          var d = Object.create(null);
-          b.r(d);
+          var t = Object.create(null);
+          T.r(t);
           var f = {};
           e = e || [null, r({}), r([]), r(r)];
-          for (var c = 2 & t && a;
-            "object" == typeof c && !~e.indexOf(c); c = r(c)) Object.getOwnPropertyNames(c).forEach((e => f[e] = () => a[e]));
-          return f.default = () => a, b.d(d, f), d
-        }, b.d = (e, a) => {
-          for (var r in a) b.o(a, r) && !b.o(e, r) && Object.defineProperty(e, r, {
+          for (var c = 2 & d && a;
+            ("object" == typeof c || "function" == typeof c) && !~e.indexOf(c); c = r(c)) Object.getOwnPropertyNames(c).forEach((e => f[e] = () => a[e]));
+          return f.default = () => a, T.d(t, f), t
+        }, T.d = (e, a) => {
+          for (var r in a) T.o(a, r) && !T.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: a[r]
           })
-        }, b.f = {}, b.e = e => Promise.all(Object.keys(b.f).reduce(((a, r) => (b.f[r](e, a), a)), [])), b.u = e => "js/" + {
-          114: "d8af9d37cd1552229f96549332f44ce6",
-          131: "9d951182be4e16e41fde21bd6c6d0439",
-          278: "b64ce2a03b1931036d73e5c9fd5af74e",
-          299: "f07bd745a85fe7e599907c37eb2c6884",
-          314: "e5ab0aad54b0eb2af7fb3ce6ff3930d6",
-          377: "f2e65d323fc39c1a849bd144ae4cda90",
-          564: "31c8580a49f4b26cb9999b32995e47dc",
-          662: "c00b1e857dce04f462914cfc083c6796",
-          789: "b62457cd1769c348b3ef7ee7ecfd3f00",
-          824: "74bdfd58ba088e0df65aa682c50710e3",
-          842: "57a0226408586d628bfce92f2f546ff3",
-          888: "87f94a2f633ace19831e1d1825dbcd26",
-          907: "11e2174b2e6b4705c3865684b6c271a0",
-          969: "0b7dd89a5a31da8ac4a8aeacd27b2874",
-          1054: "2b25fcaac4ac694a92efcbbdd88a9710",
-          1138: "8ab6cb1008311830446924e304229294",
-          1242: "c216113e40bca05665009474be667a15",
-          1379: "20ab9f403b5b3119772abe5f145a0e45",
-          1503: "ad1478865ef5327b4dd5f352851c2635",
-          1607: "000b774f6cea3846e103d458fa18b62e",
-          1822: "5616e428b56c6872f03a2b34792e0238",
-          1868: "e78044e2e1b22643d55faafad6b27e00",
-          2156: "53a741d9faa9b9f074be009c8d0750fc",
-          2171: "199c0fa1a019c7c93e50e182dde38222",
-          2221: "8ee6b4c1a1b38831fc9f8f81f795a7bb",
-          2243: "6bbe45e2d34eef3bc8eda1eafb36c700",
-          2315: "1ff08a78e420652c4b8e8d8c7fbc24d7",
-          2343: "ac7053bfd481dd6570664dfe6918a81b",
-          2347: "9ee3253659f49155bbd1600b043a4fd2",
-          2365: "df62b25d3f0fb623658200e5078538d4",
-          2398: "483db85a1283f106a61336a0dc8cda57",
-          2466: "a6fe1b7aa4a3876721c212b6a55f4811",
-          2642: "ec8caac9112621f9fcb58fe76a56b2a5",
-          2678: "ab11341d8c2d2811d1611c2ff27044de",
-          2864: "cd002a6cc23abbae7b3e7a8e58f13e91",
-          2941: "4c8799e03bd6dc29a6d366b09ed1917f",
-          3034: "c0641b8af32a0121415a1454c4666b2f",
-          3197: "97460e0a9f84e304eaee119a38546132",
-          3304: "03fef4dfdb78ae21b920985aed8cd1e6",
-          3343: "f60e9f185a68309a4719b0f9a5d2a9cd",
-          3370: "1554955b7764f9ecc90109f293fb5fa9",
-          3475: "d72bb672cda08a33230d638df3e12f79",
-          3486: "951300f5042698dcd1364013ab7a365b",
-          3622: "661b5376d36abc4d927cf98f7fed017d",
-          3697: "7fafd3671b0e54f9ac96b4be114d37d3",
-          3884: "d7def86174ce7f0b6a39d6f8bd176839",
-          3885: "39afc4876b5f0e2f371db6c54fdd7fd7",
-          3941: "2e14a0b11864ed0e0376781193786d30",
-          4011: "dca13d83da8b4686dec5ecbc00b28c5f",
-          4186: "afe99a234b469d602a53b8b6be8b6329",
-          4220: "58c260ac1deaf2b50c7634ce4ff95db9",
-          4375: "ae2073356d56a083aab72edaec87ba07",
-          4528: "a2cb336fadde7d66a3b617c91d397465",
-          4621: "d6434ffa1a0baad1c5c380253d4e17de",
-          4700: "b95a03c55dea33190818ddfa885841c3",
-          4710: "568d432b6483d8b0eefc1e4cbdee203e",
-          4731: "58788bacea7f655a2f48c5c748054e6a",
-          4799: "fab929969945cb2933e9c529924be34c",
-          4851: "268ee73e8c1712142aaac53c05a31584",
-          4861: "ba19efd403c234e78ff4257e166c50d6",
-          4913: "029967c724617a66e27c106f1ebd061e",
-          5018: "8366a25cfdbdf8c171886b4631482c53",
-          5233: "2f3d1538e70299fa557d888a0ca07673",
-          5247: "2cca2d1cb08ff25a04e48472630bcdb6",
-          5259: "55d383049ca7fdf33406609a40afe89e",
-          5530: "c5f2647cd19c56bdbfd1d1042139c676",
-          5639: "164281e8f03a4a047da2fc53fc9e5769",
-          5663: "b730bfc6215b409ccf22af673a5d2732",
-          5742: "0c2136fcb20fec96d6142ddab3f9ab8d",
-          5830: "963dc3667a33a359059d77f18182f730",
-          5832: "df61b5832ae37abf966746fe8e0401fb",
-          5959: "afb2bf4090eba744fda197556d2d8263",
-          6019: "0349ae3f6353c81b4efca1c3f21be710",
-          6192: "206b5b6e61170de53bc0d43037342d8d",
-          6204: "92f956d886f5d7ef9430a5ab99170926",
-          6267: "1e55fe049759b2f9519c3cf8c6411ae5",
-          6280: "07a10858118500cb8d7df96c51efb04d",
-          6285: "7376bbbc3678fb1fa16dbffd9af404b5",
-          6361: "f47d9b8a9659a929ae6c630a70f70b8c",
-          6664: "386ecaca28ec05862bbcfec19cf4707b",
-          6756: "1b8e5072fbfcae159c44497c6b44c13b",
-          6783: "c108364c5273ed1f179da11e5b30bfe7",
-          6871: "d31b0d9f0ae43788f3eaf5e1b51a747a",
-          6879: "33ffd564a91eec47fd5e453aa7ad1aaa",
-          6891: "5153b6a782190c1c85f4a43a8fc2a903",
-          6940: "874393eea5d95dfff32d0c7e10361402",
-          6997: "5e00dbccccc386fed96f8538af4b67bb",
-          7010: "705c38031e55f91defdacb67883b2eb2",
-          7039: "fa48defa4d53ca18c4144abf8ae59287",
-          7073: "c0c1fcaa58126568d9710d489744748f",
-          7436: "4aa2ecc24eed0ad2db0ef72f63b64ca1",
-          7452: "808b210b531f9e74cc138a6bd21b1fe5",
-          7453: "c5b4939542503ed490bd95179d2e0387",
-          7634: "2f2a4eb986a3f6c3810599340aa0bcc8",
-          7858: "85dcd061ad1533bb00bfc1e676c6bed8",
-          7970: "6243b5577ed86d995dcc38b948096207",
-          8272: "f0d16bdbeb7346549385474dccec67ac",
-          8391: "8c5788fa4583a35b5af52825a04aeeb3",
-          8755: "e9f7fa363cead02e232a9f3d07f46396",
-          8880: "918ea41b5058f40261357098cefb377b",
-          8970: "aa5ab03df4e5b1f9a1507d1ca9de0fca",
-          9022: "1257ad2e612e18602422d0da0fad1059",
-          9028: "7727f8c9e25024722db29d411fb52d09",
-          9126: "dc00578f508f3f4ea367562d35069374",
-          9368: "fb4046846e4ceaf03d7d1cf061a40c5a",
-          9377: "2de4d4d94ab89c31407a7489ac1ab79f",
-          9474: "517ecca71905a7ca6900f9fc77fc7bfb",
-          9482: "9d06671d599ff5f9513d780e04310ba2",
-          9615: "cb1488644609d34048bbaf21816723ce",
-          9642: "f897cbff2488bb65179218c142b7e1d9",
-          9660: "824435d3eeec3638fc728d897606165d",
-          9728: "44f966513abf999e611267e96c062519",
-          9936: "4fb0b10f73bdc0cb59dccc6b53b49862",
-          9990: "f06deae970cf38ccf246b325e13076b6"
-        } [e] + ".js", b.miniCssF = e => "css/" + {
-          564: "5075b0c2b29453b760055a96fbaa9148",
-          842: "519cb65eb44cd032a6c75cb79e545988",
-          2988: "450cc2b1c47be1e723f0b0d53ea4743d",
-          3304: "15de871a0a890def31d5a640eaca176a",
-          6192: "1b6a05f8cdb2244907347e6834e933b8"
-        } [e] + ".css", b.g = function() {
+        }, T.f = {}, T.e = e => Promise.all(Object.keys(T.f).reduce(((a, r) => (T.f[r](e, a), a)), [])), T.u = e => "js/" + {
+          68: "1a01e724e83b17f1e05236bdaee151af",
+          78: "42948ffb9e2283b3643240eefc712912",
+          131: "27ee58dea56eb6ac20de73c096f8e063",
+          173: "fcf462b92b372e53300dcb8594e7aa62",
+          278: "bd4c26082348e58f620d873678e97aab",
+          299: "4382d71fd040c28e2239fea1e9949bdc",
+          314: "51e08b9c54baf1bff45b2b303b769181",
+          450: "eea9b915e33e8d95a579b6224e010f6a",
+          662: "b74f2f36b833de0993798cb618d54170",
+          824: "fd6c167159cbbe5981c7b1427965a4ab",
+          907: "5d0e78d812875e1fd28901320ba34331",
+          1054: "e4bd555585f7fb619e16809beb8b83f8",
+          1098: "0be7ebb895abe9043ba247a4ff8d1bc1",
+          1242: "8ef2f2aea3778e8afb3c2969b42e2610",
+          1758: "a419f8df16b83eeedd455d575cccec70",
+          1822: "742e8edb215c67c10055be5edb9a8477",
+          1868: "16181a6b114a6e15820cdd52187c7740",
+          2148: "9abf565614624fb30b16245241592c59",
+          2156: "a66fb83d97bd424ddb3ef7b4fce86d8b",
+          2171: "27cce48a009a70603b8ff877b7247463",
+          2221: "970bec768486f3cf5feaba1b415d3ba6",
+          2234: "67a37f6d3fd6f903f6bcceba6b59858f",
+          2243: "e8e68e843d500dd2629f29946c6017bc",
+          2306: "9628a16f8cb7763a4eba97565d12dda2",
+          2347: "3f487cb908fed946751bcbe5840dc57b",
+          2365: "7996c5daa6beafe021dbd4e1d49cd4e4",
+          2398: "4afb98ff8b176c642bbfd77b1e1e25ce",
+          2466: "0bb4f0a6c522ed07838ca3bb31b30c1c",
+          2642: "f05e9d98178ad277def5f88fd60b1a8f",
+          2678: "c5fbed4f07654024101af5a83a42b900",
+          2864: "85903b361257db72196500fc969d51ef",
+          3034: "018de185b5ae7799e6741f67406da8ad",
+          3197: "232c5c6236d8bd255355809e39e82f29",
+          3343: "809bebc571ea085c988f3c8e7c20a339",
+          3370: "3fc6b63de04500a64bdf188a095554cc",
+          3421: "ad59e33c1c6799463c46c894b41dfcb8",
+          3475: "117e50cbef0cf9c03b9bb614e6acebfb",
+          3486: "49b9a8a67186fcaf69ddecee7490351b",
+          3569: "a084e1311e85b59ed0bd19566896d5c4",
+          3697: "9f4de6043c99857daa3c1d0c84582988",
+          3817: "1b2b6bb8b8841018576dc7e7aff1a7d2",
+          3885: "70813b73108b474214809455f0f9bc6d",
+          3896: "b5ce705dbd4387d20c4b9ffac71a65e6",
+          3941: "8fea4b4df8a411e1366dd5dbbeb1a2d4",
+          4011: "efc1cb298f8e19bb9648f4d72265cdd5",
+          4528: "964f19b0948f0f4d166f4da48459fa01",
+          4578: "d0a489d74de374cbe135e969f86be88d",
+          4621: "d8f99f954d39027d8df283995e37687a",
+          4700: "0f7e313fb49a1aaf2a3dd1ac3cae5665",
+          4710: "02dd202bdda0ce1a7fb9a7a0a65f4db6",
+          4731: "b222bcaa1f26eb7935c6c3dc612d28ba",
+          4799: "506be9b8a629254db00f3fe628445334",
+          4851: "43e02a4f51df204f75126a6efb1cb124",
+          4861: "a3151638327b1f1751e9a90a8902b2b0",
+          4913: "59611f8ca058b9d15a65ca52de5937dc",
+          5018: "759380a24b54aebcd56ae8398e83aa52",
+          5233: "a839843e4b9dc02b20de790e05279898",
+          5259: "b0b9bf21051f88d419c889e0b3a700f4",
+          5265: "f510469b1b88d61896ae4b085f726764",
+          5326: "b630d171065159412a1967e2982593ce",
+          5389: "754b0617c4ea9448978445fbe248fb72",
+          5415: "a5ae8e2ac24ab6e08515b534c0dd782b",
+          5530: "1571cbc9e4df839065e2aec5c2b3429c",
+          5639: "e26dbf38f6a84d7b766a79b1d4a56cd5",
+          5663: "39d09275ee2238b047bcec32127b2f90",
+          5742: "cd93c74295f7676ec3024077d536b3b1",
+          5802: "a1db136e84949892ee0dbf92b78e2db0",
+          5830: "f8b0014af37c4335906607120baae305",
+          5832: "53ff3c244763bde2dee2863a9a6e4d06",
+          5859: "70c5fb864f43c77005e6e4e27a549d3e",
+          5941: "a816d035be32903f7351c6df7906f246",
+          6070: "40a18d4ca010dacafdf8e7d21c14a7e3",
+          6200: "665f0fe40aef2ae3edb8933657332da5",
+          6267: "5d9649cc25ca3d1a5b97a5cf54584ea3",
+          6280: "ae929b0666e1e59512c42211d86c1a40",
+          6285: "799087f39eb867458b5fde143d774e31",
+          6313: "3bc49e6d651f47f309e24a29f337c5f7",
+          6361: "fafe54276731d8578969021e72578589",
+          6471: "79f0e60eab4bbedf6327fe609877d307",
+          6664: "c11f8039446de64f1f897b0bb846ddde",
+          6879: "2a5bec7306f8be06a1b08fefdff31633",
+          6891: "00f560b31e2f357c05e3986e73951c30",
+          6997: "ca16d8b5ddf1c0534ce8b2ec23b11b4a",
+          7010: "9941e376ab3341abc3a2209b62b23202",
+          7073: "c20499ffb16e0e3ee04f0455f2c7b50a",
+          7407: "b514da938ae86abe5baf20130444257a",
+          7436: "a20a4f2ec439196844732d2fca7b8ce4",
+          7452: "1e4aa8172d47eddadd1a910507766961",
+          7453: "9ca7b57d3ec52f8308334d9010b21eb3",
+          7970: "08ba795e2685b8fd64bb3a0a82e5d22c",
+          8068: "aec328e1141ea6928ff0b3043d1d433e",
+          8240: "8c6ce772848151867fd55f4ee317d1dc",
+          8272: "4cd863ad83d80b03546038c8f9f5636e",
+          8322: "712fdd53b88e78efb7423f7114a05458",
+          8325: "64647feeb297eb01c467591418774c4b",
+          8391: "4e5221693cac95e8dc03394c2b07085b",
+          8431: "a1aa1059bda53270d02932a4d9f4b11d",
+          8755: "bbc75f1a70f40f7bb8eb1998a35963e1",
+          8833: "8efebe94d8a4175fe7eaa0bc44eddc4b",
+          8845: "900a1a9817e51f35073dc2ad05d5fdc6",
+          8853: "f0ba32ea8acff718b51326ae1f833a20",
+          8880: "fc0344fe40a0445c4661541eab40d875",
+          8938: "c1a7a10929a3986b0619ca3229f63802",
+          8970: "8c48c58e1d0041d1055948dec29057b1",
+          9022: "4e40e49bf243ae64583deedaf7f8e705",
+          9028: "ebd02d0cdc1d81c6af14064d96e9398d",
+          9126: "571df947d5960fcb660f0c0c3d530b74",
+          9377: "287c5710fe9fa95afdf9ffb9e21f3d65",
+          9512: "6b06e385aab67a6c594f28ca05100c7a",
+          9587: "ac7a129a4757f97de36c175e7e72153e",
+          9615: "964226b7c015480d5dc7ec503f05ccd5",
+          9757: "f5dc5dd8fd3a0262325468bca4557b6d",
+          9760: "96f58497d1c12d2befbf0ba7e54e6daf",
+          9936: "198f3289d86a13908b0c97efd46b9298",
+          9990: "3032855e3348c6f0eb0652e2e518bb65"
+        } [e] + ".js", T.miniCssF = e => "css/" + {
+          78: "b490be6a51bf0a073eb4be4f7ffc4e20",
+          3569: "1b6a05f8cdb2244907347e6834e933b8",
+          3730: "450cc2b1c47be1e723f0b0d53ea4743d",
+          3817: "bdca58a4a308e1a92902aefed5e5c870",
+          6313: "8c05b91799d18e27afe9cd6f65586f62"
+        } [e] + ".css", T.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), b.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a), t = {}, d = "@rockstargames/modules-core-footer:", b.l = (e, a, r, f) => {
-          if (t[e]) t[e].push(a);
+        }(), T.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a), d = {}, t = "@rockstargames/modules-core-footer:", T.l = (e, a, r, f) => {
+          if (d[e]) d[e].push(a);
           else {
             var c, o;
             if (void 0 !== r)
-              for (var n = document.getElementsByTagName("script"), i = 0; i < n.length; i++) {
-                var s = n[i];
-                if (s.getAttribute("src") == e || s.getAttribute("data-webpack") == d + r) {
-                  c = s;
+              for (var n = document.getElementsByTagName("script"), b = 0; b < n.length; b++) {
+                var i = n[b];
+                if (i.getAttribute("src") == e || i.getAttribute("data-webpack") == t + r) {
+                  c = i;
                   break
                 }
               }
-            c || (o = !0, (c = document.createElement("script")).charset = "utf-8", c.timeout = 120, b.nc && c.setAttribute("nonce", b.nc), c.setAttribute("data-webpack", d + r), c.src = e), t[e] = [a];
-            var l = (a, r) => {
-                c.onerror = c.onload = null, clearTimeout(u);
-                var d = t[e];
-                if (delete t[e], c.parentNode && c.parentNode.removeChild(c), d && d.forEach((e => e(r))), a) return a(r)
+            c || (o = !0, (c = document.createElement("script")).charset = "utf-8", c.timeout = 120, T.nc && c.setAttribute("nonce", T.nc), c.setAttribute("data-webpack", t + r), c.src = e), d[e] = [a];
+            var s = (a, r) => {
+                c.onerror = c.onload = null, clearTimeout(l);
+                var t = d[e];
+                if (delete d[e], c.parentNode && c.parentNode.removeChild(c), t && t.forEach((e => e(r))), a) return a(r)
               },
-              u = setTimeout(l.bind(null, void 0, {
+              l = setTimeout(s.bind(null, void 0, {
                 type: "timeout",
                 target: c
               }), 12e4);
-            c.onerror = l.bind(null, c.onerror), c.onload = l.bind(null, c.onload), o && document.head.appendChild(c)
+            c.onerror = s.bind(null, c.onerror), c.onload = s.bind(null, c.onload), o && document.head.appendChild(c)
           }
-        }, b.r = e => {
+        }, T.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, b.nmd = e => (e.paths = [], e.children || (e.children = []), e), f = {}, c = {}, b.f.remotes = (e, a) => {
-          b.o(f, e) && f[e].forEach((e => {
-            var r = b.R;
-            r || (r = []);
-            var t = c[e];
-            if (!(r.indexOf(t) >= 0)) {
-              if (r.push(t), t.p) return a.push(t.p);
-              var d = a => {
-                  a || (a = new Error("Container missing")), "string" == typeof a.message && (a.message += '\nwhile loading "' + t[1] + '" from ' + t[2]), b.m[e] = () => {
-                    throw a
-                  }, t.p = 0
-                },
-                f = (e, r, f, c, o, n) => {
-                  try {
-                    var b = e(r, f);
-                    if (!b || !b.then) return o(b, c, n);
-                    var i = b.then((e => o(e, c)), d);
-                    if (!n) return i;
-                    a.push(t.p = i)
-                  } catch (e) {
-                    d(e)
-                  }
-                },
-                o = (e, a, d) => f(a.get, t[1], r, 0, n, d),
-                n = a => {
-                  t.p = 1, b.m[e] = e => {
-                    e.exports = a()
-                  }
-                };
-              f(b, t[2], 0, 0, ((e, a, r) => e ? f(b.I, t[0], 0, e, o, r) : d()), 1)
-            }
-          }))
-        }, (() => {
-          b.S = {};
+        }, T.nmd = e => (e.paths = [], e.children || (e.children = []), e), (() => {
+          T.S = {};
           var e = {},
             a = {};
-          b.I = (r, t) => {
-            t || (t = []);
-            var d = a[r];
-            if (d || (d = a[r] = {}), !(t.indexOf(d) >= 0)) {
-              if (t.push(d), e[r]) return e[r];
-              b.o(b.S, r) || (b.S[r] = {});
-              var f = b.S[r],
+          T.I = (r, d) => {
+            d || (d = []);
+            var t = a[r];
+            if (t || (t = a[r] = {}), !(d.indexOf(t) >= 0)) {
+              if (d.push(t), e[r]) return e[r];
+              T.o(T.S, r) || (T.S[r] = {});
+              var f = T.S[r],
                 c = "@rockstargames/modules-core-footer",
-                o = (e, a, r, t) => {
-                  var d = f[e] = f[e] || {},
-                    o = d[a];
-                  (!o || !o.loaded && (!t != !o.eager ? t : c > o.from)) && (d[a] = {
+                o = (e, a, r, d) => {
+                  var t = f[e] = f[e] || {},
+                    o = t[a];
+                  (!o || !o.loaded && (!d != !o.eager ? d : c > o.from)) && (t[a] = {
                     get: r,
                     from: c,
-                    eager: !!t
+                    eager: !!d
                   })
                 },
                 n = [];
-              return "default" === r && (o("@foundry/react", "4.3.1", (() => Promise.all([b.e(7634), b.e(7858), b.e(564), b.e(789), b.e(842), b.e(1127), b.e(8429), b.e(8628)]).then((() => () => b(842))))), o("@rsgweb/locale-tools", "1.0.0", (() => Promise.all([b.e(7858), b.e(2315), b.e(1127), b.e(1503)]).then((() => () => b(58718))))), o("@rsgweb/modules-core-user-action-menu", "0.0.0", (() => Promise.all([b.e(2343), b.e(7634), b.e(789), b.e(9660), b.e(1127), b.e(1379), b.e(8429), b.e(9623), b.e(5966), b.e(3304), b.e(6783), b.e(2988)]).then((() => () => b(85302))))), o("@rsgweb/rockstar-account", "0.0.0", (() => Promise.all([b.e(2343), b.e(6204), b.e(1127), b.e(1379), b.e(9623), b.e(5966), b.e(9482)]).then((() => () => b(66871))))), o("@rsgweb/utils", "1.0.0", (() => Promise.all([b.e(2343), b.e(1127), b.e(1379), b.e(9623), b.e(5959)]).then((() => () => b(81635))))), o("react-dom", "18.3.1", (() => Promise.all([b.e(6019), b.e(1127)]).then((() => () => b(66019))))), o("react-dom", "19.1.0", (() => Promise.all([b.e(1127), b.e(6756)]).then((() => () => b(96756))))), o("react-router-dom", "6.30.0", (() => Promise.all([b.e(9728), b.e(1127), b.e(8429)]).then((() => () => b(49728))))), o("react", "18.3.1", (() => b.e(1138).then((() => () => b(11138)))))), e[r] = n.length ? Promise.all(n).then((() => e[r] = 1)) : 1
+              return "default" === r && (o("@foundry/react", "5.2.1", (() => Promise.all([T.e(8833), T.e(9512), T.e(78), T.e(8853), T.e(3817), T.e(1127), T.e(8429), T.e(8628)]).then((() => () => T(37473))))), o("@rsgweb/locale-tools", "1.0.0", (() => Promise.all([T.e(9512), T.e(9587), T.e(1127), T.e(8240)]).then((() => () => T(12841))))), o("@rsgweb/modules-core-user-action-menu", "0.0.0", (() => Promise.all([T.e(6200), T.e(8833), T.e(8853), T.e(1127), T.e(2148), T.e(8429), T.e(9623), T.e(1788), T.e(5966), T.e(6313), T.e(8322), T.e(3730)]).then((() => () => T(67293))))), o("@rsgweb/rockstar-account", "0.0.0", (() => Promise.all([T.e(6200), T.e(8068), T.e(1127), T.e(2148), T.e(9623), T.e(5966), T.e(5326)]).then((() => () => T(76070))))), o("@rsgweb/utils", "1.0.0", (() => Promise.all([T.e(6200), T.e(450), T.e(1127), T.e(2148), T.e(9623), T.e(1788), T.e(5941)]).then((() => () => T(89757))))), o("react-dom", "18.3.1", (() => Promise.all([T.e(1098), T.e(1127)]).then((() => () => T(71098))))), o("react-dom", "19.1.0", (() => Promise.all([T.e(1127), T.e(3421)]).then((() => () => T(83421))))), o("react-router-dom", "6.30.0", (() => Promise.all([T.e(5389), T.e(1127), T.e(8429)]).then((() => () => T(15389))))), o("react", "18.3.1", (() => T.e(8431).then((() => () => T(48431)))))), e[r] = n.length ? Promise.all(n).then((() => e[r] = 1)) : 1
             }
           }
         })(), (() => {
           var e;
-          b.g.importScripts && (e = b.g.location + "");
-          var a = b.g.document;
+          T.g.importScripts && (e = T.g.location + "");
+          var a = T.g.document;
           if (!e && a && (a.currentScript && "SCRIPT" === a.currentScript.tagName.toUpperCase() && (e = a.currentScript.src), !e)) {
             var r = a.getElementsByTagName("script");
             if (r.length)
-              for (var t = r.length - 1; t > -1 && (!e || !/^http(s?):/.test(e));) e = r[t--].src
+              for (var d = r.length - 1; d > -1 && (!e || !/^http(s?):/.test(e));) e = r[d--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), b.p = e
-        })(), (() => {
-          var e = e => {
-              var a = e => e.split(".").map((e => +e == e ? +e : e)),
-                r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
-                t = r[1] ? a(r[1]) : [];
-              return r[2] && (t.length++, t.push.apply(t, a(r[2]))), r[3] && (t.push([]), t.push.apply(t, a(r[3]))), t
-            },
-            a = (a, r) => {
-              a = e(a), r = e(r);
-              for (var t = 0;;) {
-                if (t >= a.length) return t < r.length && "u" != (typeof r[t])[0];
-                var d = a[t],
-                  f = (typeof d)[0];
-                if (t >= r.length) return "u" == f;
-                var c = r[t],
-                  o = (typeof c)[0];
-                if (f != o) return "o" == f && "n" == o || "s" == o || "u" == f;
-                if ("o" != f && "u" != f && d != c) return d < c;
-                t++
-              }
-            },
-            r = e => {
-              var a = e[0],
-                t = "";
-              if (1 === e.length) return "*";
-              if (a + .5) {
-                t += 0 == a ? ">=" : -1 == a ? "<" : 1 == a ? "^" : 2 == a ? "~" : a > 0 ? "=" : "!=";
-                for (var d = 1, f = 1; f < e.length; f++) d--, t += "u" == (typeof(o = e[f]))[0] ? "-" : (d > 0 ? "." : "") + (d = 2, o);
-                return t
-              }
-              var c = [];
-              for (f = 1; f < e.length; f++) {
-                var o = e[f];
-                c.push(0 === o ? "not(" + n() + ")" : 1 === o ? "(" + n() + " || " + n() + ")" : 2 === o ? c.pop() + " " + c.pop() : r(o))
-              }
-              return n();
-
-              function n() {
-                return c.pop().replace(/^\((.+)\)$/, "$1")
-              }
-            },
-            t = (a, r) => {
-              if (0 in a) {
-                r = e(r);
-                var d = a[0],
-                  f = d < 0;
-                f && (d = -d - 1);
-                for (var c = 0, o = 1, n = !0;; o++, c++) {
-                  var b, i, s = o < a.length ? (typeof a[o])[0] : "";
-                  if (c >= r.length || "o" == (i = (typeof(b = r[c]))[0])) return !n || ("u" == s ? o > d && !f : "" == s != f);
-                  if ("u" == i) {
-                    if (!n || "u" != s) return !1
-                  } else if (n)
-                    if (s == i)
-                      if (o <= d) {
-                        if (b != a[o]) return !1
-                      } else {
-                        if (f ? b > a[o] : b < a[o]) return !1;
-                        b != a[o] && (n = !1)
-                      }
-                  else if ("s" != s && "n" != s) {
-                    if (f || o <= d) return !1;
-                    n = !1, o--
-                  } else {
-                    if (o <= d || i < s != f) return !1;
-                    n = !1
-                  } else "s" != s && "n" != s && (n = !1, o--)
-                }
-              }
-              var l = [],
-                u = l.pop.bind(l);
-              for (c = 1; c < a.length; c++) {
-                var p = a[c];
-                l.push(1 == p ? u() | u() : 2 == p ? u() & u() : p ? t(p, r) : !u())
-              }
-              return !!u()
-            },
-            d = (e, a) => e && b.o(e, a),
-            f = e => (e.loaded = 1, e.get()),
-            c = e => Object.keys(e).reduce(((a, r) => (e[r].eager && (a[r] = e[r]), a)), {}),
-            o = e => {
-              throw new Error(e)
-            },
-            n = e => function(a, r, t, d, f) {
-              var c = b.I(a);
-              return c && c.then && !t ? c.then(e.bind(e, a, b.S[a], r, !1, d, f)) : e(a, b.S[a], r, t, d, f)
-            },
-            i = (e, a, r) => r ? r() : ((e, a) => o("Shared module " + a + " doesn't exist in shared scope " + e))(e, a),
-            s = n(((e, n, b, s, l, u) => {
-              if (!d(n, b)) return i(e, b, u);
-              var p = ((e, r, d, f) => {
-                var o = f ? c(e[r]) : e[r];
-                return (r = Object.keys(o).reduce(((e, r) => !t(d, r) || e && !a(e, r) ? e : r), 0)) && o[r]
-              })(n, b, l, s);
-              return p ? f(p) : u ? u() : void o(((e, a, t, d, f) => {
-                var c = e[t];
-                return "No satisfying version (" + r(d) + ")" + (f ? " for eager consumption" : "") + " of shared module " + t + " found in shared scope " + a + ".\nAvailable versions: " + Object.keys(c).map((e => e + " from " + c[e].from)).join(", ")
-              })(n, e, b, l, s))
-            })),
-            l = n(((e, o, n, b, s, l) => {
-              if (!d(o, n)) return i(e, n, l);
-              var u, p = ((e, r, t) => {
-                var d = t ? c(e[r]) : e[r];
-                return Object.keys(d).reduce(((e, r) => !e || !d[e].loaded && a(e, r) ? r : e), 0)
-              })(o, n, b);
-              return t(s, p) || (u = ((e, a, t, d) => "Unsatisfied version " + t + " from " + (t && e[a][t].from) + " of shared singleton module " + a + " (required " + r(d) + ")")(o, n, p, s), "undefined" != typeof console && console.warn && console.warn(u)), f(o[n][p])
-            })),
-            u = {},
-            p = {
-              71127: () => l("default", "react", !1, [1, 18, 2, 0], (() => b.e(1138).then((() => () => b(11138))))),
-              9623: () => s("default", "react-router-dom", !1, [1, 6, 11, 2], (() => Promise.all([b.e(9728), b.e(8429)]).then((() => () => b(49728))))),
-              95966: () => s("default", "@rsgweb/utils", !1, [1, "workspace:^"], (() => Promise.all([b.e(2343), b.e(1379)]).then((() => () => b(81635))))),
-              2918: () => s("default", "@rsgweb/rockstar-account", !1, [1, "workspace:^"], (() => Promise.all([b.e(2343), b.e(6204), b.e(1379), b.e(6871)]).then((() => () => b(66871))))),
-              15636: () => s("default", "@foundry/react", !1, [1, 4, 3, 1], (() => Promise.all([b.e(7634), b.e(7858), b.e(564), b.e(842), b.e(8429), b.e(8628)]).then((() => () => b(842))))),
-              81788: () => s("default", "@rsgweb/locale-tools", !1, [1, "workspace:^"], (() => Promise.all([b.e(7858), b.e(2315), b.e(3884)]).then((() => () => b(58718))))),
-              20270: () => s("default", "@rsgweb/modules-core-user-action-menu", !1, [1, "workspace:^"], (() => Promise.all([b.e(2343), b.e(7634), b.e(9660), b.e(1379), b.e(8429), b.e(3304)]).then((() => () => b(85302))))),
-              18429: () => l("default", "react-dom", !1, [1, 18, 2, 0], (() => b.e(6019).then((() => () => b(66019))))),
-              78628: () => l("default", "react-dom", !1, [1, 18, 2, 0], (() => b.e(4375).then((() => () => b(96756)))))
-            },
-            h = {
-              1127: [71127],
-              5966: [95966],
-              6192: [20270],
-              6783: [2918, 15636, 81788],
-              8429: [18429],
-              8628: [78628],
-              9623: [9623]
-            },
-            m = {};
-          b.f.consumes = (e, a) => {
-            b.o(h, e) && h[e].forEach((e => {
-              if (b.o(u, e)) return a.push(u[e]);
-              if (!m[e]) {
-                var r = a => {
-                  u[e] = 0, b.m[e] = r => {
-                    delete b.c[e], r.exports = a()
-                  }
-                };
-                m[e] = !0;
-                var t = a => {
-                  delete u[e], b.m[e] = r => {
-                    throw delete b.c[e], a
-                  }
-                };
-                try {
-                  var d = p[e]();
-                  d.then ? a.push(u[e] = d.then(r).catch(t)) : r(d)
-                } catch (e) {
-                  t(e)
-                }
-              }
-            }))
+          e = e.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), T.p = e
+        })(), f = e => {
+          var a = e => e.split(".").map((e => +e == e ? +e : e)),
+            r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
+            d = r[1] ? a(r[1]) : [];
+          return r[2] && (d.length++, d.push.apply(d, a(r[2]))), r[3] && (d.push([]), d.push.apply(d, a(r[3]))), d
+        }, c = (e, a) => {
+          e = f(e), a = f(a);
+          for (var r = 0;;) {
+            if (r >= e.length) return r < a.length && "u" != (typeof a[r])[0];
+            var d = e[r],
+              t = (typeof d)[0];
+            if (r >= a.length) return "u" == t;
+            var c = a[r],
+              o = (typeof c)[0];
+            if (t != o) return "o" == t && "n" == o || "s" == o || "u" == t;
+            if ("o" != t && "u" != t && d != c) return d < c;
+            r++
           }
-        })(), (() => {
+        }, o = e => {
+          var a = e[0],
+            r = "";
+          if (1 === e.length) return "*";
+          if (a + .5) {
+            r += 0 == a ? ">=" : -1 == a ? "<" : 1 == a ? "^" : 2 == a ? "~" : a > 0 ? "=" : "!=";
+            for (var d = 1, t = 1; t < e.length; t++) d--, r += "u" == (typeof(c = e[t]))[0] ? "-" : (d > 0 ? "." : "") + (d = 2, c);
+            return r
+          }
+          var f = [];
+          for (t = 1; t < e.length; t++) {
+            var c = e[t];
+            f.push(0 === c ? "not(" + n() + ")" : 1 === c ? "(" + n() + " || " + n() + ")" : 2 === c ? f.pop() + " " + f.pop() : o(c))
+          }
+          return n();
+
+          function n() {
+            return f.pop().replace(/^\((.+)\)$/, "$1")
+          }
+        }, n = (e, a) => {
+          if (0 in e) {
+            a = f(a);
+            var r = e[0],
+              d = r < 0;
+            d && (r = -r - 1);
+            for (var t = 0, c = 1, o = !0;; c++, t++) {
+              var b, i, s = c < e.length ? (typeof e[c])[0] : "";
+              if (t >= a.length || "o" == (i = (typeof(b = a[t]))[0])) return !o || ("u" == s ? c > r && !d : "" == s != d);
+              if ("u" == i) {
+                if (!o || "u" != s) return !1
+              } else if (o)
+                if (s == i)
+                  if (c <= r) {
+                    if (b != e[c]) return !1
+                  } else {
+                    if (d ? b > e[c] : b < e[c]) return !1;
+                    b != e[c] && (o = !1)
+                  }
+              else if ("s" != s && "n" != s) {
+                if (d || c <= r) return !1;
+                o = !1, c--
+              } else {
+                if (c <= r || i < s != d) return !1;
+                o = !1
+              } else "s" != s && "n" != s && (o = !1, c--)
+            }
+          }
+          var l = [],
+            u = l.pop.bind(l);
+          for (t = 1; t < e.length; t++) {
+            var p = e[t];
+            l.push(1 == p ? u() | u() : 2 == p ? u() & u() : p ? n(p, a) : !u())
+          }
+          return !!u()
+        }, b = (e, a) => e && T.o(e, a), i = e => (e.loaded = 1, e.get()), s = e => Object.keys(e).reduce(((a, r) => (e[r].eager && (a[r] = e[r]), a)), {}), l = (e, a, r, d) => {
+          var t = d ? s(e[a]) : e[a];
+          return (a = Object.keys(t).reduce(((e, a) => !n(r, a) || e && !c(e, a) ? e : a), 0)) && t[a]
+        }, u = (e, a, r) => {
+          var d = r ? s(e[a]) : e[a];
+          return Object.keys(d).reduce(((e, a) => !e || !d[e].loaded && c(e, a) ? a : e), 0)
+        }, p = (e, a, r, d) => "Unsatisfied version " + r + " from " + (r && e[a][r].from) + " of shared singleton module " + a + " (required " + o(d) + ")", h = (e, a, r, d, t) => {
+          var f = e[r];
+          return "No satisfying version (" + o(d) + ")" + (t ? " for eager consumption" : "") + " of shared module " + r + " found in shared scope " + a + ".\nAvailable versions: " + Object.keys(f).map((e => e + " from " + f[e].from)).join(", ")
+        }, m = e => {
+          throw new Error(e)
+        }, g = e => {
+          "undefined" != typeof console && console.warn && console.warn(e)
+        }, v = (e, a, r) => r ? r() : ((e, a) => m("Shared module " + a + " doesn't exist in shared scope " + e))(e, a), w = (y = e => function(a, r, d, t, f) {
+          var c = T.I(a);
+          return c && c.then && !d ? c.then(e.bind(e, a, T.S[a], r, !1, t, f)) : e(a, T.S[a], r, d, t, f)
+        })(((e, a, r, d, t, f) => {
+          if (!b(a, r)) return v(e, r, f);
+          var c = l(a, r, t, d);
+          return c ? i(c) : f ? f() : void m(h(a, e, r, t, d))
+        })), k = y(((e, a, r, d, t, f) => {
+          if (!b(a, r)) return v(e, r, f);
+          var c = u(a, r, d);
+          return n(t, c) || g(p(a, r, c, t)), i(a[r][c])
+        })), _ = {}, E = {
+          71127: () => k("default", "react", !1, [1, 18, 2, 0], (() => T.e(8431).then((() => () => T(48431))))),
+          18429: () => k("default", "react-dom", !1, [1, 18, 2, 0], (() => T.e(1098).then((() => () => T(71098))))),
+          9623: () => w("default", "react-router-dom", !1, [1, 6, 11, 2], (() => Promise.all([T.e(5389), T.e(8429)]).then((() => () => T(15389))))),
+          81788: () => w("default", "@rsgweb/locale-tools", !1, [1, "workspace:^"], (() => Promise.all([T.e(9512), T.e(9587), T.e(5859)]).then((() => () => T(12841))))),
+          95966: () => w("default", "@rsgweb/utils", !1, [1, "workspace:^"], (() => Promise.all([T.e(6200), T.e(450), T.e(2148), T.e(1788), T.e(9757)]).then((() => () => T(89757))))),
+          2918: () => w("default", "@rsgweb/rockstar-account", !1, [1, "workspace:^"], (() => Promise.all([T.e(6200), T.e(8068), T.e(2148), T.e(6070)]).then((() => () => T(76070))))),
+          86695: () => w("default", "@foundry/react", !1, [2, 5, 2], (() => Promise.all([T.e(8833), T.e(9512), T.e(78), T.e(3817), T.e(8628)]).then((() => () => T(37473))))),
+          20270: () => w("default", "@rsgweb/modules-core-user-action-menu", !1, [1, "workspace:^"], (() => Promise.all([T.e(6200), T.e(8833), T.e(2148), T.e(6313)]).then((() => () => T(67293))))),
+          78628: () => k("default", "react-dom", !1, [1, 18, 2, 0], (() => T.e(5802).then((() => () => T(83421)))))
+        }, P = {
+          1127: [71127],
+          1788: [81788],
+          3569: [20270],
+          5966: [95966],
+          8322: [2918, 86695],
+          8429: [18429],
+          8628: [78628],
+          9623: [9623]
+        }, S = {}, T.f.consumes = (e, a) => {
+          T.o(P, e) && P[e].forEach((e => {
+            if (T.o(_, e)) return a.push(_[e]);
+            if (!S[e]) {
+              var r = a => {
+                _[e] = 0, T.m[e] = r => {
+                  delete T.c[e], r.exports = a()
+                }
+              };
+              S[e] = !0;
+              var d = a => {
+                delete _[e], T.m[e] = r => {
+                  throw delete T.c[e], a
+                }
+              };
+              try {
+                var t = E[e]();
+                t.then ? a.push(_[e] = t.then(r).catch(d)) : r(t)
+              } catch (e) {
+                d(e)
+              }
+            }
+          }))
+        }, (() => {
           if ("undefined" != typeof document) {
             var e = {
               417: 0
             };
-            b.f.miniCss = (a, r) => {
+            T.f.miniCss = (a, r) => {
               e[a] ? r.push(e[a]) : 0 !== e[a] && {
-                564: 1,
-                842: 1,
-                2988: 1,
-                3304: 1,
-                6192: 1
+                78: 1,
+                3569: 1,
+                3730: 1,
+                3817: 1,
+                6313: 1
               } [a] && r.push(e[a] = (e => new Promise(((a, r) => {
-                var t = b.miniCssF(e),
-                  d = b.p + t;
+                var d = T.miniCssF(e),
+                  t = T.p + d;
                 if (((e, a) => {
-                    for (var r = document.getElementsByTagName("link"), t = 0; t < r.length; t++) {
-                      var d = (c = r[t]).getAttribute("data-href") || c.getAttribute("href");
-                      if ("stylesheet" === c.rel && (d === e || d === a)) return c
+                    for (var r = document.getElementsByTagName("link"), d = 0; d < r.length; d++) {
+                      var t = (c = r[d]).getAttribute("data-href") || c.getAttribute("href");
+                      if ("stylesheet" === c.rel && (t === e || t === a)) return c
                     }
                     var f = document.getElementsByTagName("style");
-                    for (t = 0; t < f.length; t++) {
+                    for (d = 0; d < f.length; d++) {
                       var c;
-                      if ((d = (c = f[t]).getAttribute("data-href")) === e || d === a) return c
+                      if ((t = (c = f[d]).getAttribute("data-href")) === e || t === a) return c
                     }
-                  })(t, d)) return a();
-                ((e, a, r, t, d) => {
+                  })(d, t)) return a();
+                ((e, a, r, d, t) => {
                   var f = document.createElement("link");
-                  f.rel = "stylesheet", f.type = "text/css", b.nc && (f.nonce = b.nc), f.onerror = f.onload = r => {
-                    if (f.onerror = f.onload = null, "load" === r.type) t();
+                  f.rel = "stylesheet", f.type = "text/css", T.nc && (f.nonce = T.nc), f.onerror = f.onload = r => {
+                    if (f.onerror = f.onload = null, "load" === r.type) d();
                     else {
                       var c = r && r.type,
                         o = r && r.target && r.target.href || a,
                         n = new Error("Loading CSS chunk " + e + " failed.\n(" + c + ": " + o + ")");
-                      n.name = "ChunkLoadError", n.code = "CSS_CHUNK_LOAD_FAILED", n.type = c, n.request = o, f.parentNode && f.parentNode.removeChild(f), d(n)
+                      n.name = "ChunkLoadError", n.code = "CSS_CHUNK_LOAD_FAILED", n.type = c, n.request = o, f.parentNode && f.parentNode.removeChild(f), t(n)
                     }
                   }, f.href = a, document.head.appendChild(f)
-                })(e, d, 0, a, r)
+                })(e, t, 0, a, r)
               })))(a).then((() => {
                 e[a] = 0
               }), (r => {
@@ -525,39 +479,37 @@ try {
           var e = {
             417: 0
           };
-          b.f.j = (a, r) => {
-            var t = b.o(e, a) ? e[a] : void 0;
-            if (0 !== t)
-              if (t) r.push(t[2]);
-              else if (/^(1127|2988|5966|8429|8628|9623)$/.test(a)) e[a] = 0;
+          T.f.j = (a, r) => {
+            var d = T.o(e, a) ? e[a] : void 0;
+            if (0 !== d)
+              if (d) r.push(d[2]);
+              else if (/^(1127|1788|3730|5966|8429|8628|9623)$/.test(a)) e[a] = 0;
             else {
-              var d = new Promise(((r, d) => t = e[a] = [r, d]));
-              r.push(t[2] = d);
-              var f = b.p + b.u(a),
+              var t = new Promise(((r, t) => d = e[a] = [r, t]));
+              r.push(d[2] = t);
+              var f = T.p + T.u(a),
                 c = new Error;
-              b.l(f, (r => {
-                if (b.o(e, a) && (0 !== (t = e[a]) && (e[a] = void 0), t)) {
-                  var d = r && ("load" === r.type ? "missing" : r.type),
+              T.l(f, (r => {
+                if (T.o(e, a) && (0 !== (d = e[a]) && (e[a] = void 0), d)) {
+                  var t = r && ("load" === r.type ? "missing" : r.type),
                     f = r && r.target && r.target.src;
-                  c.message = "Loading chunk " + a + " failed.\n(" + d + ": " + f + ")", c.name = "ChunkLoadError", c.type = d, c.request = f, t[1](c)
+                  c.message = "Loading chunk " + a + " failed.\n(" + t + ": " + f + ")", c.name = "ChunkLoadError", c.type = t, c.request = f, d[1](c)
                 }
               }), "chunk-" + a, a)
             }
           };
           var a = (a, r) => {
-              var t, d, f = r[0],
-                c = r[1],
-                o = r[2],
+              var d, t, [f, c, o] = r,
                 n = 0;
               if (f.some((a => 0 !== e[a]))) {
-                for (t in c) b.o(c, t) && (b.m[t] = c[t]);
-                o && o(b)
+                for (d in c) T.o(c, d) && (T.m[d] = c[d]);
+                o && o(T)
               }
-              for (a && a(r); n < f.length; n++) d = f[n], b.o(e, d) && e[d] && e[d][0](), e[d] = 0
+              for (a && a(r); n < f.length; n++) t = f[n], T.o(e, t) && e[t] && e[t][0](), e[t] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || [];
           r.forEach(a.bind(null, 0)), r.push = a.bind(null, r.push.bind(r))
-        })(), b.nc = void 0, b(37389), b(98478)
+        })(), T.nc = void 0, T(93032), T(98478)
       })())
     }
   }
