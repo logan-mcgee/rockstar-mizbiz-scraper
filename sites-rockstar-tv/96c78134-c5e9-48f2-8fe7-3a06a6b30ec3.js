@@ -1,16 +1,16 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "96c78134-c5e9-48f2-8fe7-3a06a6b30ec3", e._sentryDebugIdIdentifier = "sentry-dbid-96c78134-c5e9-48f2-8fe7-3a06a6b30ec3")
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "96c78134-c5e9-48f2-8fe7-3a06a6b30ec3", e._sentryDebugIdIdentifier = "sentry-dbid-96c78134-c5e9-48f2-8fe7-3a06a6b30ec3")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstar-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstar_tv = self.webpackChunk_rockstargames_sites_rockstar_tv || []).push([
   [4528], {
     8501: () => {

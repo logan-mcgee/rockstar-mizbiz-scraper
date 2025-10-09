@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-videoplayer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [1703], {
     1915: (e, t, n) => {
@@ -36,7 +36,7 @@ try {
     },
     3497: (e, t, n) => {
       n.d(t, {
-        V: () => s
+        V: () => d
       });
       var a = n(5e3),
         o = n(6712);
@@ -46,13 +46,13 @@ try {
         return n < 0 ? -1 : n > 0 ? 1 : n
       }
 
-      function s(e, t, n) {
-        const [o, s] = (0, a.x)(n?.in, e, t), d = r(o, s), f = Math.abs(function(e, t, n) {
+      function d(e, t, n) {
+        const [o, d] = (0, a.x)(n?.in, e, t), s = r(o, d), f = Math.abs(function(e, t, n) {
           const [o, r] = (0, a.x)(n?.in, e, t);
           return o.getFullYear() - r.getFullYear()
-        }(o, s));
-        o.setFullYear(1584), s.setFullYear(1584);
-        const i = d * (f - +(r(o, s) === -d));
+        }(o, d));
+        o.setFullYear(1584), d.setFullYear(1584);
+        const i = s * (f - +(r(o, d) === -s));
         return 0 === i ? 0 : i
       }
     },
@@ -69,7 +69,7 @@ try {
     },
     5413: (e, t, n) => {
       n.d(t, {
-        j: () => d
+        j: () => s
       });
       var a = n(7044),
         o = n(6712);
@@ -81,27 +81,27 @@ try {
         }(e, -t, n)
       }
 
-      function s(e, t, n) {
+      function d(e, t, n) {
         return function(e, t, n) {
           const r = (0, o.a)(e, n?.in);
           if (isNaN(t)) return (0, a.w)(n?.in || e, NaN);
           if (!t) return r;
-          const s = r.getDate(),
-            d = (0, a.w)(n?.in || e, r.getTime());
-          return d.setMonth(r.getMonth() + t + 1, 0), s >= d.getDate() ? d : (r.setFullYear(d.getFullYear(), d.getMonth(), s), r)
+          const d = r.getDate(),
+            s = (0, a.w)(n?.in || e, r.getTime());
+          return s.setMonth(r.getMonth() + t + 1, 0), d >= s.getDate() ? s : (r.setFullYear(s.getFullYear(), s.getMonth(), d), r)
         }(e, -t, n)
       }
 
-      function d(e, t, n) {
+      function s(e, t, n) {
         const {
           years: o = 0,
-          months: d = 0,
+          months: s = 0,
           weeks: f = 0,
           days: i = 0,
           hours: u = 0,
           minutes: l = 0,
           seconds: c = 0
-        } = t, y = r(s(e, d + 12 * o, n), i + 7 * f, n), b = 1e3 * (c + 60 * (l + 60 * u));
+        } = t, y = r(d(e, s + 12 * o, n), i + 7 * f, n), b = 1e3 * (c + 60 * (l + 60 * u));
         return (0, a.w)(n?.in || e, +y - b)
       }
     },

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-gta-tv",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_tv = self.webpackChunk_rockstargames_sites_gta_tv || []).push([
   [4578], {
     4578: (e, d, a) => {
@@ -2479,7 +2479,7 @@ try {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var S = [], f = function(e) {
+        for (var S = [], L = function(e) {
             var d = null !== (i = null == g ? void 0 : g[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
@@ -2500,7 +2500,7 @@ try {
             }
             var u, o, y = a[e];
             s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, _ = void 0), _ && S.push(_), m[e] = n
-          }, L = 0, G = n; L < G.length; L++) f(G[L]);
+          }, f = 0, G = n; f < G.length; f++) L(G[f]);
         return S.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", _ = 0, r = []; _ < r.length; _++) {

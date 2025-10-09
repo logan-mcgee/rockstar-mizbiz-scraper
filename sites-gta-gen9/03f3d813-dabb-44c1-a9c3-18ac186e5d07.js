@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [6327, 8708], {
     76327: (e, t, i) => {
@@ -18,7 +18,7 @@ try {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => f
       });
       var n = i(62229),
         s = Object.defineProperty,
@@ -164,16 +164,16 @@ try {
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...b
+            ...f
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...f
           }, e)
         }
       };
 
-      function b({
+      function f({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -186,14 +186,14 @@ try {
         onChange: h
       } = {}) {
         var u;
-        const [b, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
+        const [f, b] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
         p.current = h, n.useEffect((() => {
-          if (a || !b) return;
+          if (a || !f) return;
           let n;
-          return n = c(b, ((e, t) => {
+          return n = c(f, ((e, t) => {
             y({
               inView: e,
               entry: t
@@ -207,14 +207,14 @@ try {
           }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, r, s, o, a, i, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        b || !w || o || a || v.current === w || (v.current = w, y({
+        f || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!d,
           entry: void 0
         }));
-        const k = [f, g.inView, g.entry];
+        const k = [b, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

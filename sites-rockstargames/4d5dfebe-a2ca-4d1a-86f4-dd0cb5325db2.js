@@ -1,31 +1,31 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "4d5dfebe-a2ca-4d1a-86f4-dd0cb5325db2", e._sentryDebugIdIdentifier = "sentry-dbid-4d5dfebe-a2ca-4d1a-86f4-dd0cb5325db2")
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "4d5dfebe-a2ca-4d1a-86f4-dd0cb5325db2", e._sentryDebugIdIdentifier = "sentry-dbid-4d5dfebe-a2ca-4d1a-86f4-dd0cb5325db2")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [981], {
-    40981: (e, a, d) => {
-      d.r(a), d.d(a, {
+    40981: (e, d, a) => {
+      a.r(d), a.d(d, {
         default: () => o
       });
-      var s = d(62229),
-        t = d(9623),
-        n = d(2918);
+      var s = a(62229),
+        t = a(9623),
+        n = a(2918);
       const o = () => {
         const {
           data: e,
-          loggedIn: a
+          loggedIn: d
         } = (0, n.useRockstarUser)(), {
-          hasGtaPlus: d,
+          hasGtaPlus: a,
           accountSynced: o
         } = e ?? {}, {
           setCharactersNeeded: f,
@@ -34,12 +34,12 @@ try {
         return (0, s.useLayoutEffect)((() => (f("gtao"), l("true"), () => {
           f(null), l(null)
         })), []), (0, s.useEffect)((() => {
-          !1 !== a ? o && r(d ? "./benefits" : "./join", {
+          !1 !== d ? o && r(a ? "./benefits" : "./join", {
             replace: !0
           }) : r("./join", {
             replace: !0
           })
-        }), [d, o, a, r]), null
+        }), [a, o, d, r]), null
       }
     }
   }

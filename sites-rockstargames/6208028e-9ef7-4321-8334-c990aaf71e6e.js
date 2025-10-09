@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [8850], {
     1157: e => {
@@ -27,8 +27,8 @@ try {
         o = t(2918),
         c = t(95966),
         m = t(81788),
-        i = t(87731),
-        d = t.n(i),
+        d = t(87731),
+        i = t.n(d),
         n = t(14200),
         g = t(29625),
         p = t(91179);
@@ -68,7 +68,7 @@ try {
               formatMessage: t
             } = (0, m.useIntl)(),
             {
-              track: i
+              track: d
             } = (0, o.useGtmTrack)(),
             {
               setBodyIsLocked: b
@@ -79,7 +79,7 @@ try {
             x = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             if (!h.current || !x.current) return;
-            const a = new(d())(h.current);
+            const a = new(i())(h.current);
             a.get("press").set({
               time: 0
             }), a.get("tap").set({
@@ -102,14 +102,14 @@ try {
               m = e => {
                 "press" === e.type && h.current?.classList.add(`${f.disableClick}`), "tap" === e.type && (h.current?.classList.remove(`${f.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
-              i = () => {
+              d = () => {
                 t() && b(!1), h.current && h.current.classList.remove(`${f.disableClick}`)
               },
               n = () => {
                 t() && b(!1)
               };
-            return x.current.addEventListener("transitionend", n), a.on("swiperight", s), a.on("swipeleft", r), a.on("pan", o), a.on("panend", c), a.on("press tap", m), a.on("pressup", i), () => {
-              a.off("swiperight", s), a.off("swipeleft", r), a.off("pan", o), a.off("panend", c), a.off("press tap", m), a.off("pressup", i), x.current && x.current.removeEventListener("transitionend", n), _(0)
+            return x.current.addEventListener("transitionend", n), a.on("swiperight", s), a.on("swipeleft", r), a.on("pan", o), a.on("panend", c), a.on("press tap", m), a.on("pressup", d), () => {
+              a.off("swiperight", s), a.off("swipeleft", r), a.off("pan", o), a.off("panend", c), a.off("press tap", m), a.off("pressup", d), x.current && x.current.removeEventListener("transitionend", n), _(0)
             }
           }), [h.current, u]);
           const y = e => {
@@ -173,18 +173,18 @@ try {
                       })]
                     }), (0, s.jsx)(g.A, {
                       className: f.cta,
-                      onClick: (d = o, () => {
-                        i({
+                      onClick: (i = o, () => {
+                        d({
                           event: "cta_watch_video",
                           text: "watch now",
-                          link_url: d,
+                          link_url: i,
                           element_placement: "video carousel"
                         })
                       }),
                       children: m
                     })]
                   }, e.id);
-                  var d
+                  var i
                 }))
               }), (0, s.jsx)("section", {
                 className: f.dots,
@@ -267,14 +267,14 @@ try {
         isWideCard: e = !1,
         size: a = 640,
         title: m,
-        titleSlug: i
+        titleSlug: d
       }) => {
         const {
-          isMobile: d
+          isMobile: i
         } = (0, o.useWindowResize)(), n = (0, r.useMemo)((() => {
           let s = "";
-          return e && (s = d ? t(24865)(`./${i}/mobile.jpg`) : t(53781)(`./${i}/desktop.jpg`)), s || (s = t(39294)(`./${i}.jpg`), s += `?im=Resize=${a}`), s
-        }), [d, i]), [g] = (0, o.usePreloadImg)(n);
+          return e && (s = i ? t(24865)(`./${d}/mobile.jpg`) : t(53781)(`./${d}/desktop.jpg`)), s || (s = t(39294)(`./${d}.jpg`), s += `?im=Resize=${a}`), s
+        }), [i, d]), [g] = (0, o.usePreloadImg)(n);
         let p = n;
         return (0, s.jsx)("div", {
           role: "img",
@@ -352,19 +352,19 @@ try {
           context: t = "",
           to: c,
           onClick: m,
-          target: i = "_self",
-          ...d
+          target: d = "_self",
+          ...i
         }) => {
           const n = [o.button, o[t], e].join(" ");
           return c ? (0, s.jsx)(r.A, {
-            ...d,
+            ...i,
             to: c,
             className: n,
             onClick: m,
-            target: i,
+            target: d,
             children: a
           }) : (0, s.jsx)("button", {
-            ...d,
+            ...i,
             type: "button",
             className: n,
             onClick: m,
@@ -526,7 +526,7 @@ try {
           const {
             titleSlug: t,
             urlOfficial: m = ""
-          } = e, i = ["VI"].includes(t.toUpperCase());
+          } = e, d = ["VI"].includes(t.toUpperCase());
           return (0, r.jsx)(o.A, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
@@ -534,13 +534,13 @@ try {
             "data-testid": `${t}-gamecard`,
             to: a ?? m,
             target: "_self",
-            className: [c.fobLink, i ? c.wide : ""].join(" "),
-            reloadDocument: i,
+            className: [c.fobLink, d ? c.wide : ""].join(" "),
+            reloadDocument: d,
             children: (0, r.jsx)(s.A, {
               title: e.title,
               titleSlug: t,
-              isWideCard: i,
-              size: i ? 1740 : 480
+              isWideCard: d,
+              size: d ? 1740 : 480
             })
           })
         }
@@ -718,7 +718,7 @@ try {
       "use strict";
       t.d(a, {
         s: () => m,
-        N: () => i
+        N: () => d
       });
       var s = t(42295),
         r = t(95966),
@@ -745,19 +745,19 @@ try {
             }
           })
         },
-        i = ({
+        d = ({
           gameTitleNecessary: e = !0,
           openInNewWindow: a = !1,
           video: t,
           size: r,
-          toExplicit: i
+          toExplicit: d
         }) => {
-          const d = i ?? `/videos/${t.id}`,
+          const i = d ?? `/videos/${t.id}`,
             n = {
               className: c.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": d
+              "data-gtm-label": i
             },
             g = (0, s.jsxs)("div", {
               className: c.card,
@@ -780,12 +780,12 @@ try {
               })]
             });
           return a ? (0, s.jsx)("a", {
-            href: d,
+            href: i,
             target: "_blank",
             ...n,
             children: g
           }) : (0, s.jsx)(o.A, {
-            to: d,
+            to: i,
             ...n,
             children: g
           })

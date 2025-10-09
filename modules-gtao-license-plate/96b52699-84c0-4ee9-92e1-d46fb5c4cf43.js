@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [8391], {
     11269: (e, t) => {
@@ -151,17 +151,17 @@ try {
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
         var p = (0, r.CanonicalizeLocaleList)(t),
-          b = Object.create(null),
-          y = (0, r.CoerceOptionsToObject)(a),
-          m = (0, r.GetOption)(y, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        b.localeMatcher = m;
-        var v = (0, r.GetOption)(y, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
-        b.nu = v;
-        var g = (0, n.ResolveLocale)(u, p, b, s, c, d),
+          y = Object.create(null),
+          m = (0, r.CoerceOptionsToObject)(a),
+          v = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        y.localeMatcher = v;
+        var b = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
+        y.nu = b;
+        var g = (0, n.ResolveLocale)(u, p, y, s, c, d),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(y, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(y, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
@@ -198,20 +198,20 @@ try {
           d = s.style,
           f = s.numeric,
           p = s.pluralRules,
-          b = s.numberFormat,
-          y = u;
-        "short" === d ? y = "".concat(u, "-short") : "narrow" === d && (y = "".concat(u, "-narrow")), y in c || (y = u);
-        var m = c[y];
-        if ("auto" === f && (0, r.ToString)(t) in m) return [{
+          y = s.numberFormat,
+          m = u;
+        "short" === d ? m = "".concat(u, "-short") : "narrow" === d && (m = "".concat(u, "-narrow")), m in c || (m = u);
+        var v = c[m];
+        if ("auto" === f && (0, r.ToString)(t) in v) return [{
           type: "literal",
-          value: m[(0, r.ToString)(t)]
+          value: v[(0, r.ToString)(t)]
         }];
-        var v = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
-        var g = m[v],
-          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
+        var b = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
+        var g = v[b],
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: b.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
           h = g[p.select(t)];

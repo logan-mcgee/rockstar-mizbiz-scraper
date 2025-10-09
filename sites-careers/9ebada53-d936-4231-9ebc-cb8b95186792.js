@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-careers",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
   [8391], {
     1269: (e, t) => {
@@ -31,14 +31,14 @@ try {
         var s = (0, n.SingularRelativeTimeUnit)(a),
           u = i(e),
           c = u.fields,
-          f = u.style,
-          d = u.numeric,
+          d = u.style,
+          f = u.numeric,
           b = u.pluralRules,
           y = u.numberFormat,
           p = s;
-        "short" === f ? p = "".concat(s, "-short") : "narrow" === f && (p = "".concat(s, "-narrow")), p in c || (p = s);
+        "short" === d ? p = "".concat(s, "-short") : "narrow" === d && (p = "".concat(s, "-narrow")), p in c || (p = s);
         var v = c[p];
-        if ("auto" === d && (0, r.ToString)(t) in v) return [{
+        if ("auto" === f && (0, r.ToString)(t) in v) return [{
           type: "literal",
           value: v[(0, r.ToString)(t)]
         }];
@@ -173,9 +173,9 @@ try {
           s = l.availableLocales,
           u = l.relevantExtensionKeys,
           c = l.localeData,
-          f = l.getDefaultLocale,
-          d = i(e);
-        d.initializedRelativeTimeFormat = !0;
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
         var b = (0, r.CanonicalizeLocaleList)(t),
           y = Object.create(null),
           p = (0, r.CoerceOptionsToObject)(a),
@@ -184,12 +184,12 @@ try {
         var m = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
         y.nu = m;
-        var g = (0, n.ResolveLocale)(s, b, y, u, c, f),
+        var g = (0, n.ResolveLocale)(s, b, y, u, c, d),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var T = c[g.dataLocale];
-        return (0, r.invariant)(!!T, "Missing locale data for ".concat(g.dataLocale)), d.fields = T, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        return (0, r.invariant)(!!T, "Missing locale data for ".concat(g.dataLocale)), f.fields = T, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(2306),
         n = a(4578),

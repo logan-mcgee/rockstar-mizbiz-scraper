@@ -5,23 +5,23 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5415], {
     75415: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => _,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Description: () => m,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => m
+        default: () => p
       });
       var i = "Chiudi lightbox",
         _ = "Premi {shortcut}",
@@ -44,10 +44,10 @@ try {
         u = "{zoom}%",
         r = "Scarica",
         h = "Scarica",
-        f = "Apri immagine in lightbox",
-        L = "Immagine lightbox",
-        c = "Testo alternativo: {alt}",
-        m = {
+        L = "Apri immagine in lightbox",
+        f = "Immagine lightbox",
+        m = "Testo alternativo: {alt}",
+        p = {
           Lightbox_Close_Button_Label: i,
           Lightbox_Close_Button_Tooltip: _,
           Lightbox_Zoom_In_Button_Label: a,
@@ -60,9 +60,9 @@ try {
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: c
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: m
         }
     }
   }

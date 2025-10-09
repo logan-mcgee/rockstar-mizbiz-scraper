@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [9760], {
     9760: (o, t, e) => {
@@ -20,15 +20,15 @@ try {
         Lightbox_Dialog_Description: () => i,
         Lightbox_Dialog_Title: () => n,
         Lightbox_Download_Button_Label: () => a,
-        Lightbox_Download_Button_Tooltip: () => s,
-        Lightbox_Open_Button_Label: () => d,
+        Lightbox_Download_Button_Tooltip: () => d,
+        Lightbox_Open_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => u,
         Lightbox_Zoom_In_Button_Tooltip: () => h,
         Lightbox_Zoom_Out_Button_Label: () => L,
-        Lightbox_Zoom_Out_Button__Tooltip: () => f,
-        Lightbox_Zoom_Slider_Label: () => r,
+        Lightbox_Zoom_Out_Button__Tooltip: () => r,
+        Lightbox_Zoom_Slider_Label: () => f,
         Lightbox_Zoom_Slider_Tooltip: () => p,
         default: () => x
       });
@@ -37,15 +37,15 @@ try {
         i = "Alt text: {alt}",
         n = "Image lightbox",
         a = "Download",
-        s = "Download",
-        d = "Open image in lightbox",
+        d = "Download",
+        s = "Open image in lightbox",
         b = "Reset",
         g = "Press {shortcut}",
         u = "Zoom in",
         h = "Press {shortcut}",
         L = "Zoom out",
-        f = "Press {shortcut}",
-        r = "Zoom level",
+        r = "Press {shortcut}",
+        f = "Zoom level",
         p = "{zoom}%",
         x = {
           Lightbox_Close_Button_Label: _,
@@ -53,15 +53,15 @@ try {
           Lightbox_Dialog_Description: i,
           Lightbox_Dialog_Title: n,
           Lightbox_Download_Button_Label: a,
-          Lightbox_Download_Button_Tooltip: s,
-          Lightbox_Open_Button_Label: d,
+          Lightbox_Download_Button_Tooltip: d,
+          Lightbox_Open_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_In_Button_Label: u,
           Lightbox_Zoom_In_Button_Tooltip: h,
           Lightbox_Zoom_Out_Button_Label: L,
-          Lightbox_Zoom_Out_Button__Tooltip: f,
-          Lightbox_Zoom_Slider_Label: r,
+          Lightbox_Zoom_Out_Button__Tooltip: r,
+          Lightbox_Zoom_Slider_Label: f,
           Lightbox_Zoom_Slider_Tooltip: p
         }
     }

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [9587], {
     9872: (e, t, r) => {
@@ -222,8 +222,8 @@ try {
         g = r ? Symbol.for("react.memo") : 60115,
         d = r ? Symbol.for("react.lazy") : 60116,
         y = r ? Symbol.for("react.block") : 60121,
-        b = r ? Symbol.for("react.fundamental") : 60117,
-        E = r ? Symbol.for("react.responder") : 60118,
+        E = r ? Symbol.for("react.fundamental") : 60117,
+        b = r ? Symbol.for("react.responder") : 60118,
         _ = r ? Symbol.for("react.scope") : 60119;
 
       function v(e) {
@@ -285,7 +285,7 @@ try {
       }, t.isSuspense = function(e) {
         return v(e) === m
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === d || e.$$typeof === g || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === b || e.$$typeof === E || e.$$typeof === _ || e.$$typeof === y)
+        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === d || e.$$typeof === g || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === _ || e.$$typeof === y)
       }, t.typeOf = v
     },
     24944: (e, t, r) => {
@@ -612,26 +612,26 @@ try {
               value: y
             });
             else if ((0, i.tv)(g)) {
-              var b = "string" == typeof g.style ? l.date[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : void 0;
+              var E = "string" == typeof g.style ? l.date[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : void 0;
               f.push({
                 type: n.literal,
-                value: r.getDateTimeFormat(t, b).format(y)
+                value: r.getDateTimeFormat(t, E).format(y)
               })
-            } else if ((0, i.Qh)(g)) b = "string" == typeof g.style ? l.time[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : l.time.medium, f.push({
+            } else if ((0, i.Qh)(g)) E = "string" == typeof g.style ? l.time[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : l.time.medium, f.push({
               type: n.literal,
-              value: r.getDateTimeFormat(t, b).format(y)
+              value: r.getDateTimeFormat(t, E).format(y)
             });
-            else if ((0, i.oF)(g))(b = "string" == typeof g.style ? l.number[g.style] : (0, i.N1)(g.style) ? g.style.parsedOptions : void 0) && b.scale && (y *= b.scale || 1), f.push({
+            else if ((0, i.oF)(g))(E = "string" == typeof g.style ? l.number[g.style] : (0, i.N1)(g.style) ? g.style.parsedOptions : void 0) && E.scale && (y *= E.scale || 1), f.push({
               type: n.literal,
-              value: r.getNumberFormat(t, b).format(y)
+              value: r.getNumberFormat(t, E).format(y)
             });
             else {
               if ((0, i.xm)(g)) {
-                var E = g.children,
+                var b = g.children,
                   _ = g.value,
                   v = u[_];
                 if (!a(v)) throw new o.Zo(_, "function", c);
-                var T = v(s(E, t, r, l, u, h).map((function(e) {
+                var T = v(s(b, t, r, l, u, h).map((function(e) {
                   return e.value
                 })));
                 Array.isArray(T) || (T = [T]), f.push.apply(f, T.map((function(e) {
@@ -729,9 +729,9 @@ try {
           for (var s = l(t), g = l(r), d = 0; d < a.length; ++d) {
             var y = a[d];
             if (!(o[y] || n && n[y] || g && g[y] || s && s[y])) {
-              var b = f(r, y);
+              var E = f(r, y);
               try {
-                u(t, y, b)
+                u(t, y, E)
               } catch (e) {}
             }
           }
@@ -780,18 +780,18 @@ try {
             g = e.fallbackOnEmptyString,
             d = e.onError,
             y = e.timeZone,
-            b = e.defaultRichTextElements;
+            E = e.defaultRichTextElements;
           void 0 === r && (r = {
             id: ""
           });
-          var E = r.id,
+          var b = r.id,
             _ = r.defaultMessage;
-          (0, s.V1)(!!E, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
-          var v = String(E),
+          (0, s.V1)(!!b, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
+          var v = String(b),
             T = f && Object.prototype.hasOwnProperty.call(f, v) && f[v];
           if (Array.isArray(T) && 1 === T.length && T[0].type === i.ZE.literal) return T[0].value;
-          if (!o && T && "string" == typeof T && !b) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
-          if (o = (0, n.__assign)((0, n.__assign)({}, b), o || {}), c = h(c, y), p = h(p, y), !T) {
+          if (!o && T && "string" == typeof T && !E) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
+          if (o = (0, n.__assign)((0, n.__assign)({}, E), o || {}), c = h(c, y), p = h(p, y), !T) {
             if (!1 === g && "" === T) return T;
             if ((!_ || u && u.toLowerCase() !== m.toLowerCase()) && d(new a.sb(r, u)), _) try {
               return t.getMessageFormat(_, m, p, l).format(o)
@@ -891,7 +891,7 @@ try {
         return []
       }
 
-      function b(e, t) {
+      function E(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var i = r[0],
           o = r[1],
@@ -904,13 +904,13 @@ try {
         }
         return []
       }
-      var E = r(93189),
+      var b = r(93189),
         _ = ["style", "type", "fallback", "languageDisplay"];
 
       function v(e, t, r, n) {
         var i = e.locale,
           o = e.onError;
-        Intl.DisplayNames || o(new E.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', E.O4.MISSING_INTL_API));
+        Intl.DisplayNames || o(new b.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', b.O4.MISSING_INTL_API));
         var l = (0, s.J9)(n, _);
         try {
           return t(i, l).of(r)
@@ -933,7 +933,7 @@ try {
       function S(e, t, r, i) {
         var o = e.locale,
           l = e.onError;
-        void 0 === i && (i = {}), Intl.ListFormat || l(new E.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', E.O4.MISSING_INTL_API));
+        void 0 === i && (i = {}), Intl.ListFormat || l(new b.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', b.O4.MISSING_INTL_API));
         var u = (0, s.J9)(i, T);
         try {
           var h = {},
@@ -992,7 +992,7 @@ try {
       function R(e, t, r, n) {
         var i = e.locale,
           o = e.onError;
-        void 0 === n && (n = {}), Intl.PluralRules || o(new E.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', E.O4.MISSING_INTL_API));
+        void 0 === n && (n = {}), Intl.PluralRules || o(new b.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', b.O4.MISSING_INTL_API));
         var l = (0, s.J9)(n, L);
         try {
           return t(i, l).select(r)
@@ -1004,7 +1004,7 @@ try {
       var M = ["numeric", "style"];
 
       function C(e, t, r, n, i) {
-        void 0 === i && (i = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new E.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', E.O4.MISSING_INTL_API));
+        void 0 === i && (i = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new b.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', b.O4.MISSING_INTL_API));
         try {
           return function(e, t, r) {
             var n = e.locale,
@@ -1058,7 +1058,7 @@ try {
                   formatDateToParts: y.bind(null, i, r.getDateTimeFormat),
                   formatTime: g.bind(null, i, r.getDateTimeFormat),
                   formatDateTimeRange: d.bind(null, i, r.getDateTimeFormat),
-                  formatTimeToParts: b.bind(null, i, r.getDateTimeFormat),
+                  formatTimeToParts: E.bind(null, i, r.getDateTimeFormat),
                   formatPlural: R.bind(null, i, r.getPluralRules),
                   formatMessage: c.bind(null, i, r),
                   $t: c.bind(null, i, r),
@@ -1254,7 +1254,7 @@ try {
         ZE: () => i,
         Im: () => u,
         tv: () => c,
-        Tu: () => b,
+        Tu: () => E,
         eW: () => l,
         oF: () => h,
         N1: () => y,
@@ -1307,7 +1307,7 @@ try {
         return !(!e || "object" != typeof e || e.type !== o.number)
       }
 
-      function b(e) {
+      function E(e) {
         return !(!e || "object" != typeof e || e.type !== o.dateTime)
       }! function(e) {
         e[e.EXPECT_ARGUMENT_CLOSING_BRACE = 1] = "EXPECT_ARGUMENT_CLOSING_BRACE", e[e.EMPTY_ARGUMENT = 2] = "EMPTY_ARGUMENT", e[e.MALFORMED_ARGUMENT = 3] = "MALFORMED_ARGUMENT", e[e.EXPECT_ARGUMENT_TYPE = 4] = "EXPECT_ARGUMENT_TYPE", e[e.INVALID_ARGUMENT_TYPE = 5] = "INVALID_ARGUMENT_TYPE", e[e.EXPECT_ARGUMENT_STYLE = 6] = "EXPECT_ARGUMENT_STYLE", e[e.INVALID_NUMBER_SKELETON = 7] = "INVALID_NUMBER_SKELETON", e[e.INVALID_DATE_TIME_SKELETON = 8] = "INVALID_DATE_TIME_SKELETON", e[e.EXPECT_NUMBER_SKELETON = 9] = "EXPECT_NUMBER_SKELETON", e[e.EXPECT_DATE_TIME_SKELETON = 10] = "EXPECT_DATE_TIME_SKELETON", e[e.UNCLOSED_QUOTE_IN_ARGUMENT_STYLE = 11] = "UNCLOSED_QUOTE_IN_ARGUMENT_STYLE", e[e.EXPECT_SELECT_ARGUMENT_OPTIONS = 12] = "EXPECT_SELECT_ARGUMENT_OPTIONS", e[e.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE = 13] = "EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE", e[e.INVALID_PLURAL_ARGUMENT_OFFSET_VALUE = 14] = "INVALID_PLURAL_ARGUMENT_OFFSET_VALUE", e[e.EXPECT_SELECT_ARGUMENT_SELECTOR = 15] = "EXPECT_SELECT_ARGUMENT_SELECTOR", e[e.EXPECT_PLURAL_ARGUMENT_SELECTOR = 16] = "EXPECT_PLURAL_ARGUMENT_SELECTOR", e[e.EXPECT_SELECT_ARGUMENT_SELECTOR_FRAGMENT = 17] = "EXPECT_SELECT_ARGUMENT_SELECTOR_FRAGMENT", e[e.EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT = 18] = "EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT", e[e.INVALID_PLURAL_ARGUMENT_SELECTOR = 19] = "INVALID_PLURAL_ARGUMENT_SELECTOR", e[e.DUPLICATE_PLURAL_ARGUMENT_SELECTOR = 20] = "DUPLICATE_PLURAL_ARGUMENT_SELECTOR", e[e.DUPLICATE_SELECT_ARGUMENT_SELECTOR = 21] = "DUPLICATE_SELECT_ARGUMENT_SELECTOR", e[e.MISSING_OTHER_CLAUSE = 22] = "MISSING_OTHER_CLAUSE", e[e.INVALID_TAG = 23] = "INVALID_TAG", e[e.INVALID_TAG_NAME = 25] = "INVALID_TAG_NAME", e[e.UNMATCHED_CLOSING_TAG = 26] = "UNMATCHED_CLOSING_TAG", e[e.UNCLOSED_TAG = 27] = "UNCLOSED_TAG"
@@ -1315,7 +1315,7 @@ try {
         function(e) {
           e[e.number = 0] = "number", e[e.dateTime = 1] = "dateTime"
         }(o || (o = {}));
-      var E = /[ \xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/,
+      var b = /[ \xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/,
         _ = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
 
       function v(e) {
@@ -1890,8 +1890,8 @@ try {
         var r, n = e.language;
         return "root" !== n && (r = e.maximize().region), (C[r || ""] || C[n || ""] || C["".concat(n, "-001")] || C["001"])[0]
       }
-      var O = new RegExp("^".concat(E.source, "*")),
-        D = new RegExp("".concat(E.source, "*$"));
+      var O = new RegExp("^".concat(b.source, "*")),
+        D = new RegExp("".concat(b.source, "*$"));
 
       function F(e, t) {
         return {
@@ -2224,18 +2224,18 @@ try {
             case "plural":
             case "selectordinal":
             case "select":
-              var b = this.clonePosition();
-              if (this.bumpSpace(), !this.bumpIf(",")) return this.error(n.EXPECT_SELECT_ARGUMENT_OPTIONS, F(b, (0, s.__assign)({}, b)));
+              var E = this.clonePosition();
+              if (this.bumpSpace(), !this.bumpIf(",")) return this.error(n.EXPECT_SELECT_ARGUMENT_OPTIONS, F(E, (0, s.__assign)({}, E)));
               this.bumpSpace();
-              var E = this.parseIdentifierIfPossible(),
+              var b = this.parseIdentifierIfPossible(),
                 _ = 0;
-              if ("select" !== h && "offset" === E.value) {
+              if ("select" !== h && "offset" === b.value) {
                 if (!this.bumpIf(":")) return this.error(n.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, F(this.clonePosition(), this.clonePosition()));
                 var T;
                 if (this.bumpSpace(), (T = this.tryParseDecimalInteger(n.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, n.INVALID_PLURAL_ARGUMENT_OFFSET_VALUE)).err) return T;
-                this.bumpSpace(), E = this.parseIdentifierIfPossible(), _ = T.val
+                this.bumpSpace(), b = this.parseIdentifierIfPossible(), _ = T.val
               }
-              var H, A = this.tryParsePluralOrSelectOptions(e, h, t, E);
+              var H, A = this.tryParsePluralOrSelectOptions(e, h, t, b);
               if (A.err) return A;
               if ((H = this.tryParseArgumentClose(a)).err) return H;
               var S = F(a, this.clonePosition());
@@ -2437,7 +2437,7 @@ try {
         e.forEach((function(e) {
           if (delete e.location, m(e) || p(e))
             for (var t in e.options) delete e.options[t].location, oe(e.options[t].value);
-          else h(e) && y(e.style) || (c(e) || f(e)) && b(e.style) ? delete e.style.location : d(e) && oe(e.children)
+          else h(e) && y(e.style) || (c(e) || f(e)) && E(e.style) ? delete e.style.location : d(e) && oe(e.children)
         }))
       }
 

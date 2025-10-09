@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [392], {
     392: (e, l, a) => {
@@ -141,14 +141,14 @@ try {
           }),
           defaultItem: () => (0, t.Q)()
         }),
-        c = () => ({
+        p = () => ({
           name: "modal",
           label: "Modal Content",
           description: "Modify modal content details in here.",
           component: "group",
           fields: []
         }),
-        p = () => ({
+        c = () => ({
           name: "helperText",
           label: "Helper Link Section",
           component: "group",
@@ -265,7 +265,7 @@ try {
               description: "Modify expanding platform button details in here.",
               component: "group",
               fields: [b()]
-            }, c()],
+            }, p()],
             itemProps: e => (0, t.Rv)(e, {
               label: `${e?.name??"New"} [SubHero Button]`
             }),
@@ -338,14 +338,14 @@ try {
             itemProps: e => (0, t.Rv)(e, {
               label: `${e?.name??"New"} ${e.type??""} [Platform]`
             })
-          }, p()],
+          }, c()],
           itemProps: e => (0, t.Rv)(e, {
             label: `${e?.name??"New"} [Sub Hero]`
           }),
           defaultItem: {
             description: "",
             buttons: [],
-            helperLink: (0, t.Q)(p().defaultItem ?? {})
+            helperLink: (0, t.Q)(c().defaultItem ?? {})
           }
         }),
         f = () => ({

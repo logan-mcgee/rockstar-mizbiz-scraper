@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [1586, 2295, 9205], {
     41586: (e, a, s) => {
@@ -52,23 +52,23 @@ try {
           __source: !0
         };
 
-      function c(e, a, s) {
+      function l(e, a, s) {
         var r, n = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== s && (c = "" + s), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (l = a.ref), a) o.call(a, r) && !f.hasOwnProperty(r) && (n[r] = a[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== s && (l = "" + s), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) o.call(a, r) && !f.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
           $$typeof: t,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: n,
           _owner: d.current
         }
       }
-      a.Fragment = n, a.jsx = c, a.jsxs = c
+      a.Fragment = n, a.jsx = l, a.jsxs = l
     }
   }
 ]);

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7359], {
     97359: (e, n, t) => {
@@ -26,15 +26,15 @@ try {
         return "function" == typeof e ? e(n) : e && (e.current = n), e
       }
       var u = "undefined" != typeof window ? o.useLayoutEffect : o.useEffect,
-        l = new WeakMap;
+        d = new WeakMap;
 
-      function d(e) {
+      function l(e) {
         return e
       }
       var s = function(e) {
           void 0 === e && (e = {});
           var n = function(e, n) {
-            void 0 === n && (n = d);
+            void 0 === n && (n = l);
             var t = [],
               r = !1;
             return {
@@ -104,7 +104,7 @@ try {
               onTouchMoveCapture: f
             }),
             c = a[0],
-            d = a[1],
+            l = a[1],
             h = e.forwardProps,
             v = e.children,
             g = e.className,
@@ -141,7 +141,7 @@ try {
                 }
               }))[0]).callback = r, a.facade);
               return u((function() {
-                var n = l.get(c);
+                var n = d.get(c);
                 if (n) {
                   var t = new Set(n),
                     r = new Set(e),
@@ -152,7 +152,7 @@ try {
                     t.has(e) || i(e, o)
                   }))
                 }
-                l.set(c, e)
+                d.set(c, e)
               }), [e]), c
             }([t, n]),
             L = (0, r.__assign)((0, r.__assign)({}, M), c);
@@ -162,7 +162,7 @@ try {
             shards: w,
             noIsolation: y,
             inert: E,
-            setCallbacks: d,
+            setCallbacks: l,
             allowPinchZoom: !!_,
             lockRef: t,
             gapMode: S
@@ -241,8 +241,8 @@ try {
           var o = e.left,
             i = e.top,
             u = e.right,
-            l = e.gap;
-          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body[").concat(y, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(y, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
+            d = e.gap;
+          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body[").concat(y, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(y, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
         },
         _ = function() {
           var e = parseInt(document.body.getAttribute(y) || "0", 10);
@@ -372,19 +372,19 @@ try {
               }
           }
         }), [e.inert, e.lockRef.current, e.shards]);
-        var l = o.useCallback((function(e, n) {
+        var d = o.useCallback((function(e, n) {
             if ("touches" in e && 2 === e.touches.length || "wheel" === e.type && e.ctrlKey) return !u.current.allowPinchZoom;
             var r, o = x(e),
               c = t.current,
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
-              l = "deltaY" in e ? e.deltaY : c[1] - o[1],
-              d = e.target,
-              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === s && "range" === d.type) return !1;
-            var f = T(s, d);
+              d = "deltaY" in e ? e.deltaY : c[1] - o[1],
+              l = e.target,
+              s = Math.abs(i) > Math.abs(d) ? "h" : "v";
+            if ("touches" in e && "h" === s && "range" === l.type) return !1;
+            var f = T(s, l);
             if (!f) return !0;
-            if (f ? r = s : (r = "v" === s ? "h" : "v", f = T(s, d)), !f) return !1;
-            if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
+            if (f ? r = s : (r = "v" === s ? "h" : "v", f = T(s, l)), !f) return !1;
+            if (!a.current && "changedTouches" in e && (i || d) && (a.current = r), !r) return !0;
             var h = a.current || r;
             return function(e, n, t, r) {
               var o = function(e, n) {
@@ -394,19 +394,19 @@ try {
                 c = t.target,
                 i = n.contains(c),
                 u = !1,
-                l = a > 0,
-                d = 0,
+                d = a > 0,
+                l = 0,
                 s = 0;
               do {
                 var f = N(e, c),
                   h = f[0],
                   v = f[1] - f[2] - o * h;
-                (h || v) && L(e, c) && (d += v, s += h), c = c instanceof ShadowRoot ? c.host : c.parentNode
+                (h || v) && L(e, c) && (l += v, s += h), c = c instanceof ShadowRoot ? c.host : c.parentNode
               } while (!i && c !== document.body || i && (n.contains(c) || n === c));
-              return (l && (Math.abs(d) < 1 || !1) || !l && (Math.abs(s) < 1 || !1)) && (u = !0), u
-            }(h, n, e, "h" === h ? i : l)
+              return (d && (Math.abs(l) < 1 || !1) || !d && (Math.abs(s) < 1 || !1)) && (u = !0), u
+            }(h, n, e, "h" === h ? i : d)
           }), []),
-          d = o.useCallback((function(e) {
+          l = o.useCallback((function(e) {
             var t = e;
             if (W.length && W[W.length - 1] === i) {
               var r = "deltaY" in t ? I(t) : x(t),
@@ -419,7 +419,7 @@ try {
                 var a = (u.current.shards || []).map(P).filter(Boolean).filter((function(e) {
                   return e.contains(t.target)
                 }));
-                (a.length > 0 ? l(t, a[0]) : !u.current.noIsolation) && t.cancelable && t.preventDefault()
+                (a.length > 0 ? d(t, a[0]) : !u.current.noIsolation) && t.cancelable && t.preventDefault()
               }
             }
           }), []),
@@ -441,21 +441,21 @@ try {
             t.current = x(e), a.current = void 0
           }), []),
           h = o.useCallback((function(n) {
-            s(n.type, I(n), n.target, l(n, e.lockRef.current))
+            s(n.type, I(n), n.target, d(n, e.lockRef.current))
           }), []),
           v = o.useCallback((function(n) {
-            s(n.type, x(n), n.target, l(n, e.lockRef.current))
+            s(n.type, x(n), n.target, d(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return W.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", d, M), document.addEventListener("touchmove", d, M), document.addEventListener("touchstart", f, M),
+            }), document.addEventListener("wheel", l, M), document.addEventListener("touchmove", l, M), document.addEventListener("touchstart", f, M),
             function() {
               W = W.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", d, M), document.removeEventListener("touchmove", d, M), document.removeEventListener("touchstart", f, M)
+              })), document.removeEventListener("wheel", l, M), document.removeEventListener("touchmove", l, M), document.removeEventListener("touchstart", f, M)
             }
         }), []);
         var g = e.removeScrollBar,

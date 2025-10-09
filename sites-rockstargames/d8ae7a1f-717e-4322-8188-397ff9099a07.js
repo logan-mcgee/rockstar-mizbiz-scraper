@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7131], {
     1157: e => {
@@ -226,20 +226,20 @@ try {
           definitions: [r(e, a)]
         };
         e.hasOwnProperty("loc") && (s.loc = e.loc);
-        var c = t[a] || new Set,
-          o = new Set,
+        var o = t[a] || new Set,
+          c = new Set,
           m = new Set;
-        for (c.forEach((function(e) {
+        for (o.forEach((function(e) {
             m.add(e)
           })); m.size > 0;) {
           var d = m;
           m = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (t[e] || new Set).forEach((function(e) {
+            c.has(e) || (c.add(e), (t[e] || new Set).forEach((function(e) {
               m.add(e)
             })))
           }))
         }
-        return o.forEach((function(a) {
+        return c.forEach((function(a) {
           var t = r(e, a);
           t && s.definitions.push(t)
         })), s
@@ -268,13 +268,13 @@ try {
       });
       var t = s(42295),
         r = s(62229),
-        c = s(95966);
-      const o = {
+        o = s(95966);
+      const c = {
         img: "rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0",
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f"
       };
-      (0, c.importAll)(s(86751));
+      (0, o.importAll)(s(86751));
       const m = ({
         isWideCard: e = !1,
         size: a = 640,
@@ -283,10 +283,10 @@ try {
       }) => {
         const {
           isMobile: i
-        } = (0, c.useWindowResize)(), n = (0, r.useMemo)((() => {
+        } = (0, o.useWindowResize)(), n = (0, r.useMemo)((() => {
           let t = "";
           return e && (t = i ? s(24865)(`./${d}/mobile.jpg`) : s(53781)(`./${d}/desktop.jpg`)), t || (t = s(39294)(`./${d}.jpg`), t += `?im=Resize=${a}`), t
-        }), [i, d]), [g] = (0, c.usePreloadImg)(n);
+        }), [i, d]), [g] = (0, o.usePreloadImg)(n);
         let f = n;
         return (0, t.jsx)("div", {
           role: "img",
@@ -294,7 +294,7 @@ try {
           style: {
             backgroundImage: `url(${f})`
           },
-          className: [o.img, g ? o.startAnimation : "", e ? o.wide : ""].join(" ")
+          className: [c.img, g ? c.startAnimation : "", e ? c.wide : ""].join(" ")
         })
       }
     },
@@ -390,11 +390,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -403,7 +403,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 24865
+      }, r.resolve = o, e.exports = r, r.id = 24865
     },
     26788: e => {
       "use strict";
@@ -491,11 +491,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -504,7 +504,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 39294
+      }, r.resolve = o, e.exports = r, r.id = 39294
     },
     42043: e => {
       "use strict";
@@ -525,8 +525,8 @@ try {
       });
       var t = s(42295),
         r = s(62229),
-        c = s(2765),
-        o = s.n(c);
+        o = s(2765),
+        c = s.n(o);
       const m = {
           dropdownWrapper: "rockstargames-sites-rockstargamesbbf48ac7e790ff47ad1d5ee6fb7da4d9",
           items: "rockstargames-sites-rockstargamesa9afd60434d032bdba4ce040dbeb13b7",
@@ -539,21 +539,21 @@ try {
           className: a,
           title: s
         }) => {
-          const [c, d] = (0, r.useState)(!1);
+          const [o, d] = (0, r.useState)(!1);
           let i = null;
-          return i = o(), (0, t.jsx)(i, {
-            active: c,
+          return i = c(), (0, t.jsx)(i, {
+            active: o,
             focusTrapOptions: {
               onDeactivate: () => d(!1),
               clickOutsideDeactivates: !0
             },
             children: (0, t.jsxs)("div", {
-              className: [m.dropdownWrapper, c ? m.open : "", void 0 !== a ? a : ""].join(" "),
+              className: [m.dropdownWrapper, o ? m.open : "", void 0 !== a ? a : ""].join(" "),
               children: [(0, t.jsx)("button", {
                 className: m.opener,
-                onClick: () => d(!c),
+                onClick: () => d(!o),
                 children: s
-              }), c && (0, t.jsx)("div", {
+              }), o && (0, t.jsx)("div", {
                 className: m.items,
                 onClick: () => d(!1),
                 children: e
@@ -580,11 +580,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -593,7 +593,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 53781
+      }, r.resolve = o, e.exports = r, r.id = 53781
     },
     57258: e => {
       "use strict";
@@ -741,11 +741,11 @@ try {
       };
 
       function r(e) {
-        var a = c(e);
+        var a = o(e);
         return s(a)
       }
 
-      function c(e) {
+      function o(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -754,7 +754,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = c, e.exports = r, r.id = 86751
+      }, r.resolve = o, e.exports = r, r.id = 86751
     },
     87131: (e, a, s) => {
       "use strict";
@@ -763,17 +763,17 @@ try {
       });
       var t = s(42295),
         r = s(47524),
-        c = s(95966),
-        o = s(20204),
+        o = s(95966),
+        c = s(20204),
         m = s(12978),
         d = s.n(m),
         i = s(18670);
-      const n = (0, c.withTranslations)((({
+      const n = (0, o.withTranslations)((({
         t: e
       }) => {
         const {
           data: a
-        } = (0, c.useQuery)(d(), {
+        } = (0, o.useQuery)(d(), {
           autoSetLoading: !0
         });
         if (!a) return null;
@@ -781,19 +781,19 @@ try {
           manuals: s
         } = a;
         return (0, t.jsxs)("div", {
-          className: o.Ay.manuals,
+          className: c.Ay.manuals,
           children: [(0, t.jsx)("h2", {
             children: e("Manuals")
           }), (0, t.jsx)("div", {
-            className: o.Ay.list,
+            className: c.Ay.list,
             children: s.map((e => (0, t.jsxs)("div", {
-              className: o.Ay.item,
+              className: c.Ay.item,
               children: [(0, t.jsx)(i.A, {
                 title: e.game.title,
                 titleSlug: e.game.titleSlug
               }), (0, t.jsx)(r.A, {
                 title: e.game.title,
-                className: o.Ay.dropdown,
+                className: c.Ay.dropdown,
                 children: e.manuals_platforms.map((e => (0, t.jsxs)("p", {
                   children: [(0, t.jsx)("span", {
                     children: e.platform

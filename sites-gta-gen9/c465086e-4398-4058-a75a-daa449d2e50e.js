@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [8431], {
     14910: (e, t) => {
@@ -34,17 +34,17 @@ try {
           enqueueReplaceState: function() {},
           enqueueSetState: function() {}
         },
-        b = Object.assign,
-        _ = {};
+        _ = Object.assign,
+        b = {};
 
       function h(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
 
       function m() {}
 
       function g(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
       h.prototype.isReactComponent = {}, h.prototype.setState = function(e, t) {
         if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -53,7 +53,7 @@ try {
         this.updater.enqueueForceUpdate(this, e, "forceUpdate")
       }, m.prototype = h.prototype;
       var v = g.prototype = new m;
-      v.constructor = g, b(v, h.prototype), v.isPureReactComponent = !0;
+      v.constructor = g, _(v, h.prototype), v.isPureReactComponent = !0;
       var w = Array.isArray,
         S = Object.prototype.hasOwnProperty,
         k = {
@@ -208,7 +208,7 @@ try {
         }
       }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-        var o = b({}, e.props),
+        var o = _({}, e.props),
           u = e.key,
           a = e.ref,
           f = e._owner;

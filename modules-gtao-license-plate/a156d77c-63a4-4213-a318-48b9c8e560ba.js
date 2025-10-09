@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [9760], {
     9760: (o, t, e) => {
@@ -20,8 +20,8 @@ try {
         Lightbox_Dialog_Description: () => i,
         Lightbox_Dialog_Title: () => a,
         Lightbox_Download_Button_Label: () => n,
-        Lightbox_Download_Button_Tooltip: () => b,
-        Lightbox_Open_Button_Label: () => d,
+        Lightbox_Download_Button_Tooltip: () => d,
+        Lightbox_Open_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => u,
@@ -37,8 +37,8 @@ try {
         i = "Alt text: {alt}",
         a = "Image lightbox",
         n = "Download",
-        b = "Download",
-        d = "Open image in lightbox",
+        d = "Download",
+        b = "Open image in lightbox",
         s = "Reset",
         g = "Press {shortcut}",
         u = "Zoom in",
@@ -53,8 +53,8 @@ try {
           Lightbox_Dialog_Description: i,
           Lightbox_Dialog_Title: a,
           Lightbox_Download_Button_Label: n,
-          Lightbox_Download_Button_Tooltip: b,
-          Lightbox_Open_Button_Label: d,
+          Lightbox_Download_Button_Tooltip: d,
+          Lightbox_Open_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_In_Button_Label: u,

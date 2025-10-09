@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [2726], {
     2333: (e, t, r) => {
@@ -46,15 +46,15 @@ try {
               s = void 0 === i ? "dataLayer" : i,
               a = e.auth,
               u = void 0 === a ? "" : a,
-              c = e.preview,
-              d = void 0 === c ? "" : c,
+              d = e.preview,
+              c = void 0 === d ? "" : d,
               f = this.gtm({
                 id: t,
                 events: n,
                 dataLayer: o || void 0,
                 dataLayerName: s,
                 auth: u,
-                preview: d
+                preview: c
               });
             o && document.head.appendChild(f.dataScript), document.head.insertBefore(f.script(), document.head.childNodes[0]), document.body.insertBefore(f.noScript(), document.body.childNodes[0])
           },
@@ -91,14 +91,14 @@ try {
         })
       }
       var n = {};
-      r(n, "ONETRUST_LOADED_EVENT", (() => i)), r(n, "WRAPPER_CALLED_EVENT", (() => s)), r(n, "CONSENT_CHANGED_EVENT", (() => a)), r(n, "init", (() => c));
+      r(n, "ONETRUST_LOADED_EVENT", (() => i)), r(n, "WRAPPER_CALLED_EVENT", (() => s)), r(n, "CONSENT_CHANGED_EVENT", (() => a)), r(n, "init", (() => d));
       const o = window.document.currentScript?.nonce,
         i = "ONETRUST_LOADED_EVENT",
         s = "WRAPPER_CALLED_EVENT",
         a = "CONSENT_CHANGED_EVENT";
       let u = !0;
 
-      function c(e) {
+      function d(e) {
         const t = window.document.head,
           r = window.document.createElement("script");
         if (r.setAttribute("id", "onetrust-sdk-stub"), r.setAttribute("src", "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"), r.setAttribute("type", "text/javascript"), r.setAttribute("charset", "UTF-8"), r.setAttribute("data-document-language", "true"), o && (r.nonce = o), !e) throw new Error("You must specify the OneTrust script ID");
@@ -114,8 +114,8 @@ try {
           }))
         }
       }
-      var d = {};
-      r(d, "NoChoiceTransactionType", (() => f)), r(d, "ConfirmedTransactionType", (() => l)), r(d, "canStoreCookie", (() => p));
+      var c = {};
+      r(c, "NoChoiceTransactionType", (() => f)), r(c, "ConfirmedTransactionType", (() => l)), r(c, "canStoreCookie", (() => p));
       const f = "NO_CHOICE",
         l = "CONFIRMED",
         h = {
@@ -134,7 +134,7 @@ try {
         const o = r.ConsentIntegrationData.consentPayload.purposes.find((e => e.Id === n.PurposeId));
         return o?.TransactionType === l
       }
-      t(e.exports, n), t(e.exports, d)
+      t(e.exports, n), t(e.exports, c)
     },
     6347: (e, t, r) => {
       "use strict";
@@ -289,9 +289,9 @@ try {
             }(),
             a = "FormData" in n,
             u = "ArrayBuffer" in n;
-          if (u) var c = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
-            d = ArrayBuffer.isView || function(e) {
-              return e && c.indexOf(Object.prototype.toString.call(e)) > -1
+          if (u) var d = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
+            c = ArrayBuffer.isView || function(e) {
+              return e && d.indexOf(Object.prototype.toString.call(e)) > -1
             };
 
           function f(e) {
@@ -358,7 +358,7 @@ try {
           function g() {
             return this.bodyUsed = !1, this._initBody = function(e) {
               var t;
-              this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : s && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : a && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : o && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : u && s && (t = e) && DataView.prototype.isPrototypeOf(t) ? (this._bodyArrayBuffer = w(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : u && (ArrayBuffer.prototype.isPrototypeOf(e) || d(e)) ? this._bodyArrayBuffer = w(e) : this._bodyText = e = Object.prototype.toString.call(e) : (this._noBody = !0, this._bodyText = ""), this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : o && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
+              this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : s && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : a && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : o && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : u && s && (t = e) && DataView.prototype.isPrototypeOf(t) ? (this._bodyArrayBuffer = w(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : u && (ArrayBuffer.prototype.isPrototypeOf(e) || c(e)) ? this._bodyArrayBuffer = w(e) : this._bodyText = e = Object.prototype.toString.call(e) : (this._noBody = !0, this._bodyText = ""), this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : o && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
             }, s && (this.blob = function() {
               var e = y(this);
               if (e) return e;
@@ -493,15 +493,15 @@ try {
             return new Promise((function(o, i) {
               var a = new E(e, r);
               if (a.signal && a.signal.aborted) return i(new t.DOMException("Aborted", "AbortError"));
-              var c = new XMLHttpRequest;
+              var d = new XMLHttpRequest;
 
-              function d() {
-                c.abort()
+              function c() {
+                d.abort()
               }
-              if (c.onload = function() {
+              if (d.onload = function() {
                   var e, t, r = {
-                    statusText: c.statusText,
-                    headers: (e = c.getAllResponseHeaders() || "", t = new p, e.replace(/\r?\n[\t ]+/g, " ").split("\r").map((function(e) {
+                    statusText: d.statusText,
+                    headers: (e = d.getAllResponseHeaders() || "", t = new p, e.replace(/\r?\n[\t ]+/g, " ").split("\r").map((function(e) {
                       return 0 === e.indexOf("\n") ? e.substr(1, e.length) : e
                     })).forEach((function(e) {
                       var r = e.split(":"),
@@ -516,42 +516,42 @@ try {
                       }
                     })), t)
                   };
-                  0 === a.url.indexOf("file://") && (c.status < 200 || c.status > 599) ? r.status = 200 : r.status = c.status, r.url = "responseURL" in c ? c.responseURL : r.headers.get("X-Request-URL");
-                  var n = "response" in c ? c.response : c.responseText;
+                  0 === a.url.indexOf("file://") && (d.status < 200 || d.status > 599) ? r.status = 200 : r.status = d.status, r.url = "responseURL" in d ? d.responseURL : r.headers.get("X-Request-URL");
+                  var n = "response" in d ? d.response : d.responseText;
                   setTimeout((function() {
                     o(new T(n, r))
                   }), 0)
-                }, c.onerror = function() {
+                }, d.onerror = function() {
                   setTimeout((function() {
                     i(new TypeError("Network request failed"))
                   }), 0)
-                }, c.ontimeout = function() {
+                }, d.ontimeout = function() {
                   setTimeout((function() {
                     i(new TypeError("Network request timed out"))
                   }), 0)
-                }, c.onabort = function() {
+                }, d.onabort = function() {
                   setTimeout((function() {
                     i(new t.DOMException("Aborted", "AbortError"))
                   }), 0)
-                }, c.open(a.method, function(e) {
+                }, d.open(a.method, function(e) {
                   try {
                     return "" === e && n.location.href ? n.location.href : e
                   } catch (t) {
                     return e
                   }
-                }(a.url), !0), "include" === a.credentials ? c.withCredentials = !0 : "omit" === a.credentials && (c.withCredentials = !1), "responseType" in c && (s ? c.responseType = "blob" : u && (c.responseType = "arraybuffer")), r && "object" == typeof r.headers && !(r.headers instanceof p || n.Headers && r.headers instanceof n.Headers)) {
+                }(a.url), !0), "include" === a.credentials ? d.withCredentials = !0 : "omit" === a.credentials && (d.withCredentials = !1), "responseType" in d && (s ? d.responseType = "blob" : u && (d.responseType = "arraybuffer")), r && "object" == typeof r.headers && !(r.headers instanceof p || n.Headers && r.headers instanceof n.Headers)) {
                 var h = [];
                 Object.getOwnPropertyNames(r.headers).forEach((function(e) {
-                  h.push(f(e)), c.setRequestHeader(e, l(r.headers[e]))
+                  h.push(f(e)), d.setRequestHeader(e, l(r.headers[e]))
                 })), a.headers.forEach((function(e, t) {
-                  -1 === h.indexOf(t) && c.setRequestHeader(t, e)
+                  -1 === h.indexOf(t) && d.setRequestHeader(t, e)
                 }))
               } else a.headers.forEach((function(e, t) {
-                c.setRequestHeader(t, e)
+                d.setRequestHeader(t, e)
               }));
-              a.signal && (a.signal.addEventListener("abort", d), c.onreadystatechange = function() {
-                4 === c.readyState && a.signal.removeEventListener("abort", d)
-              }), c.send(void 0 === a._bodyInit ? null : a._bodyInit)
+              a.signal && (a.signal.addEventListener("abort", c), d.onreadystatechange = function() {
+                4 === d.readyState && a.signal.removeEventListener("abort", c)
+              }), d.send(void 0 === a._bodyInit ? null : a._bodyInit)
             }))
           }
           x.polyfill = !0, n.fetch || (n.fetch = x, n.Headers = p, n.Request = E, n.Response = T), t.Headers = p, t.Request = E, t.Response = T, t.fetch = x
@@ -571,8 +571,8 @@ try {
         s = r(21429),
         a = r(57308),
         u = r(7569),
-        c = r(86570),
-        d = r(15492),
+        d = r(86570),
+        c = r(15492),
         f = r(74197);
 
       function l(e) {
@@ -602,7 +602,7 @@ try {
           function r() {
             t = void 0
           }(0, o.V1)(e && ("function" == typeof e.sha256 || "function" == typeof e.generateHash), 43);
-          var p = (0, c.o)(h, e),
+          var p = (0, d.o)(h, e),
             y = p.sha256,
             b = p.generateHash,
             m = void 0 === b ? function(e) {
@@ -621,24 +621,24 @@ try {
             (0, o.V1)(i, 44);
             var s = e.query;
             return new a.c((function(o) {
-              var a, c, h = !1,
+              var a, d, h = !1,
                 p = !1,
                 y = function(t, n) {
                   var o = t.response,
                     s = t.networkError;
                   if (!h && (o && o.errors || s)) {
                     h = !0;
-                    var d = [],
+                    var c = [],
                       f = o && o.errors;
-                    (0, u.E)(f) && d.push.apply(d, f);
+                    (0, u.E)(f) && c.push.apply(c, f);
                     var y = void 0;
-                    "string" != typeof(null == s ? void 0 : s.result) && (y = s && s.result && s.result.errors), (0, u.E)(y) && d.push.apply(d, y);
+                    "string" != typeof(null == s ? void 0 : s.result) && (y = s && s.result && s.result.errors), (0, u.E)(y) && c.push.apply(c, y);
                     var m = {
                       response: o,
                       networkError: s,
                       operation: e,
-                      graphQLErrors: (0, u.E)(d) ? d : void 0,
-                      meta: l(d)
+                      graphQLErrors: (0, u.E)(c) ? c : void 0,
+                      meta: l(c)
                     };
                     if ((E = !w(m)) || r(), g(m)) return a && a.unsubscribe(), e.setContext({
                       http: {
@@ -649,7 +649,7 @@ try {
                         method: "POST"
                       }
                     }), p && e.setContext({
-                      fetchOptions: c
+                      fetchOptions: d
                     }), void(a = i(e).subscribe(b))
                   }
                   n()
@@ -683,14 +683,14 @@ try {
                 }(e) && (e.setContext((function(e) {
                   var t = e.fetchOptions,
                     r = void 0 === t ? {} : t;
-                  return c = r, {
+                  return d = r, {
                     fetchOptions: (0, n.__assign)((0, n.__assign)({}, r), {
                       method: "GET"
                     })
                   }
                 })), p = !0), E ? function(e) {
                   if (!e || "object" != typeof e) return _(e);
-                  t || (t = new d.A(f.v["PersistedQueryLink.persistedQueryHashes"] || 2e3));
+                  t || (t = new c.A(f.v["PersistedQueryLink.persistedQueryHashes"] || 2e3));
                   var r = t.get(e);
                   return r || t.set(e, r = _(e)), r
                 }(s).then((function(t) {
@@ -729,12 +729,12 @@ try {
         a = !0,
         u = !1;
 
-      function c(e) {
+      function d(e) {
         return e.replace(/[\s,]+/g, " ").trim()
       }
 
-      function d(e) {
-        var t, r, d, f = c(e);
+      function c(e) {
+        var t, r, c, f = d(e);
         if (!i.has(f)) {
           var l = (0, o.parse)(e, {
             experimentalFragmentVariables: u,
@@ -751,16 +751,16 @@ try {
             }));
             var r = e.loc;
             return r && (delete r.startToken, delete r.endToken), e
-          }((t = l, r = new Set, d = [], t.definitions.forEach((function(e) {
+          }((t = l, r = new Set, c = [], t.definitions.forEach((function(e) {
             if ("FragmentDefinition" === e.kind) {
               var t = e.name.value,
-                n = c((i = e.loc).source.body.substring(i.start, i.end)),
+                n = d((i = e.loc).source.body.substring(i.start, i.end)),
                 o = s.get(t);
-              o && !o.has(n) ? a && console.warn("Warning: fragment with name " + t + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || s.set(t, o = new Set), o.add(n), r.has(n) || (r.add(n), d.push(e))
-            } else d.push(e);
+              o && !o.has(n) ? a && console.warn("Warning: fragment with name " + t + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || s.set(t, o = new Set), o.add(n), r.has(n) || (r.add(n), c.push(e))
+            } else c.push(e);
             var i
           })), (0, n.__assign)((0, n.__assign)({}, t), {
-            definitions: d
+            definitions: c
           }))))
         }
         return i.get(f)
@@ -772,7 +772,7 @@ try {
         var n = e[0];
         return t.forEach((function(t, r) {
           t && "Document" === t.kind ? n += t.loc.source.body : n += t, n += e[r + 1]
-        })), d(n)
+        })), c(n)
       }
       var l, h = f;
       (l = f || (f = {})).gql = h, l.resetCaches = function() {
@@ -799,13 +799,13 @@ try {
             r = e.children,
             a = (0, s.l)(),
             u = i.useContext(a),
-            c = i.useMemo((function() {
+            d = i.useMemo((function() {
               return (0, n.__assign)((0, n.__assign)({}, u), {
                 client: t || u.client
               })
             }), [u, t]);
-          return (0, o.V1)(c.client, 55), i.createElement(a.Provider, {
-            value: c
+          return (0, o.V1)(d.client, 55), i.createElement(a.Provider, {
+            value: d
           }, r)
         }
     },

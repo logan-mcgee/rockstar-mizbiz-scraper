@@ -5,24 +5,24 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-red-dead-online",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [7465], {
     8405: (e, n, t) => {
       "use strict";
       var a = t(85126);
 
-      function o() {}
+      function d() {}
 
-      function s() {}
-      s.resetWarningCache = o, e.exports = function() {
-        function e(e, n, t, o, s, d) {
-          if (d !== a) {
+      function o() {}
+      o.resetWarningCache = d, e.exports = function() {
+        function e(e, n, t, d, o, s) {
+          if (s !== a) {
             var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw r.name = "Invariant Violation", r
           }
@@ -52,8 +52,8 @@ try {
           oneOfType: n,
           shape: n,
           exact: n,
-          checkPropTypes: s,
-          resetWarningCache: o
+          checkPropTypes: o,
+          resetWarningCache: d
         };
         return t.PropTypes = t, t
       }

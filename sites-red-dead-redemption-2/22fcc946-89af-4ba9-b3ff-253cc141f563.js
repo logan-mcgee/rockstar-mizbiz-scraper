@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-red-dead-redemption-2",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [8391], {
     11269: (e, t) => {
@@ -114,10 +114,10 @@ try {
           else {
             (0, r.invariant)("0" === l.type, "Malformed pattern ".concat(e));
             for (var s = 0, u = a; s < u.length; s++) {
-              var c = u[s];
+              var d = u[s];
               n.push({
-                type: c.type,
-                value: c.value,
+                type: d.type,
+                value: d.value,
                 unit: t
               })
             }
@@ -146,10 +146,10 @@ try {
         var l = i.getInternalSlots,
           s = i.availableLocales,
           u = i.relevantExtensionKeys,
-          c = i.localeData,
-          f = i.getDefaultLocale,
-          d = l(e);
-        d.initializedRelativeTimeFormat = !0;
+          d = i.localeData,
+          c = i.getDefaultLocale,
+          f = l(e);
+        f.initializedRelativeTimeFormat = !0;
         var p = (0, r.CanonicalizeLocaleList)(t),
           y = Object.create(null),
           m = (0, r.CoerceOptionsToObject)(a),
@@ -158,12 +158,12 @@ try {
         var b = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         y.nu = b;
-        var g = (0, n.ResolveLocale)(s, p, y, u, c, f),
+        var g = (0, n.ResolveLocale)(s, p, y, u, d, c),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
-        var _ = c[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        var _ = d[g.dataLocale];
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(62306),
         n = a(74578),
@@ -194,15 +194,15 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var s = (0, n.SingularRelativeTimeUnit)(a),
           u = l(e),
-          c = u.fields,
-          f = u.style,
-          d = u.numeric,
+          d = u.fields,
+          c = u.style,
+          f = u.numeric,
           p = u.pluralRules,
           y = u.numberFormat,
           m = s;
-        "short" === f ? m = "".concat(s, "-short") : "narrow" === f && (m = "".concat(s, "-narrow")), m in c || (m = s);
-        var v = c[m];
-        if ("auto" === d && (0, r.ToString)(t) in v) return [{
+        "short" === c ? m = "".concat(s, "-short") : "narrow" === c && (m = "".concat(s, "-narrow")), m in d || (m = s);
+        var v = d[m];
+        if ("auto" === f && (0, r.ToString)(t) in v) return [{
           type: "literal",
           value: v[(0, r.ToString)(t)]
         }];

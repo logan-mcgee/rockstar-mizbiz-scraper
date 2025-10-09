@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-gif-viewer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [8391], {
     1269: (e, t) => {
@@ -31,14 +31,14 @@ try {
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
           c = s.fields,
-          f = s.style,
-          d = s.numeric,
+          d = s.style,
+          f = s.numeric,
           v = s.pluralRules,
           y = s.numberFormat,
           m = u;
-        "short" === f ? m = "".concat(u, "-short") : "narrow" === f && (m = "".concat(u, "-narrow")), m in c || (m = u);
+        "short" === d ? m = "".concat(u, "-short") : "narrow" === d && (m = "".concat(u, "-narrow")), m in c || (m = u);
         var p = c[m];
-        if ("auto" === d && (0, r.ToString)(t) in p) return [{
+        if ("auto" === f && (0, r.ToString)(t) in p) return [{
           type: "literal",
           value: p[(0, r.ToString)(t)]
         }];
@@ -173,9 +173,9 @@ try {
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
           c = l.localeData,
-          f = l.getDefaultLocale,
-          d = i(e);
-        d.initializedRelativeTimeFormat = !0;
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
         var v = (0, r.CanonicalizeLocaleList)(t),
           y = Object.create(null),
           m = (0, r.CoerceOptionsToObject)(a),
@@ -184,12 +184,12 @@ try {
         var b = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         y.nu = b;
-        var g = (0, n.ResolveLocale)(u, v, y, s, c, f),
+        var g = (0, n.ResolveLocale)(u, v, y, s, c, d),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(5932),
         n = a(4578),

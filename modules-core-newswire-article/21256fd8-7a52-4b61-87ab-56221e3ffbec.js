@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [2171], {
     79682: () => {
@@ -21,12 +21,12 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var n = String(e).split("."),
-              l = n[0],
-              d = !n[1],
-              t = l.slice(-1),
-              o = l.slice(-2);
-            return a ? "other" : 1 == e && d ? "one" : d && t >= 2 && t <= 4 && (o < 12 || o > 14) ? "few" : d && 1 != l && (0 == t || 1 == t) || d && t >= 5 && t <= 9 || d && o >= 12 && o <= 14 ? "many" : "other"
+            var d = String(e).split("."),
+              n = d[0],
+              l = !d[1],
+              t = n.slice(-1),
+              o = n.slice(-2);
+            return a ? "other" : 1 == e && l ? "one" : l && t >= 2 && t <= 4 && (o < 12 || o > 14) ? "few" : l && 1 != n && (0 == t || 1 == t) || l && t >= 5 && t <= 9 || l && o >= 12 && o <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

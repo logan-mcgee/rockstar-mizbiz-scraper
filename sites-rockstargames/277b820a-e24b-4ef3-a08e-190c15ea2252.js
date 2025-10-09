@@ -5,27 +5,27 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [8461], {
     90842: (e, a, t) => {
       t.r(a), t.d(a, {
-        default: () => d
+        default: () => s
       });
       var n = t(42295),
         o = t(62229),
-        s = t(9623);
-      const d = ({
+        d = t(9623);
+      const s = ({
         basename: e,
         children: a,
         history: t
       }) => {
-        const [d, i] = (0, o.useState)({
+        const [s, i] = (0, o.useState)({
           action: t.action,
           location: t.location
         });
@@ -34,10 +34,10 @@ try {
             location: e,
             action: a
           })
-        }))), [t]), (0, n.jsx)(s.Router, {
+        }))), [t]), (0, n.jsx)(d.Router, {
           basename: e,
-          location: d.location,
-          navigationType: d.action,
+          location: s.location,
+          navigationType: s.action,
           navigator: t,
           children: a
         })

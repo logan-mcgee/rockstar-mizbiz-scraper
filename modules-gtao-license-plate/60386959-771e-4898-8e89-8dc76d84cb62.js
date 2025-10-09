@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [3421, 5802], {
     6025: (e, t, n) => {
@@ -43,8 +43,8 @@ try {
           p: 0,
           findDOMNode: null
         },
-        d = Symbol.for("react.portal"),
-        f = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
+        f = Symbol.for("react.portal"),
+        d = i.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;
 
       function a(e, t) {
         return "font" === e ? "" : "string" == typeof t ? "use-credentials" === t ? t : "" : void 0
@@ -55,7 +55,7 @@ try {
         return function(e, t, n) {
           var i = 3 < arguments.length && void 0 !== arguments[3] ? arguments[3] : null;
           return {
-            $$typeof: d,
+            $$typeof: f,
             key: null == i ? null : "" + i,
             children: e,
             containerInfo: t,
@@ -63,12 +63,12 @@ try {
           }
         }(e, t, null, n)
       }, t.flushSync = function(e) {
-        var t = f.T,
+        var t = d.T,
           n = s.p;
         try {
-          if (f.T = null, s.p = 2, e) return e()
+          if (d.T = null, s.p = 2, e) return e()
         } finally {
-          f.T = t, s.p = n, s.d.f()
+          d.T = t, s.p = n, s.d.f()
         }
       }, t.preconnect = function(e, t) {
         "string" == typeof e && (t = t ? "string" == typeof(t = t.crossOrigin) ? "use-credentials" === t ? t : "" : void 0 : null, s.d.C(e, t))
@@ -134,9 +134,9 @@ try {
       }, t.unstable_batchedUpdates = function(e, t) {
         return e(t)
       }, t.useFormState = function(e, t, n) {
-        return f.H.useFormState(e, t, n)
+        return d.H.useFormState(e, t, n)
       }, t.useFormStatus = function() {
-        return f.H.useHostTransitionStatus()
+        return d.H.useHostTransitionStatus()
       }, t.version = "19.1.0"
     },
     83421: (e, t, n) => {

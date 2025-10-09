@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-legacy",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [6327, 8708], {
     76327: (e, t, i) => {
@@ -29,8 +29,8 @@ try {
           value: i
         }) : e[t] = i)(e, "symbol" != typeof t ? t + "" : t, i),
         o = new Map,
-        a = new WeakMap,
-        d = 0,
+        d = new WeakMap,
+        a = 0,
         l = void 0;
 
       function h(e) {
@@ -57,7 +57,7 @@ try {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(d.has(i)||(a+=1,d.set(i,a.toString())),d.get(i)):"0"):e[t]}`;
               var i
             })).toString()
           }(e);
@@ -158,8 +158,8 @@ try {
             threshold: s,
             root: r,
             rootMargin: o,
-            onChange: a,
-            skip: d,
+            onChange: d,
+            skip: a,
             trackVisibility: l,
             delay: h,
             initialInView: c,
@@ -180,18 +180,18 @@ try {
         rootMargin: s,
         root: r,
         triggerOnce: o,
-        skip: a,
-        initialInView: d,
+        skip: d,
+        initialInView: a,
         fallbackInView: l,
         onChange: h
       } = {}) {
         var u;
         const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
-          inView: !!d,
+          inView: !!a,
           entry: void 0
         });
         b.current = h, n.useEffect((() => {
-          if (a || !f) return;
+          if (d || !f) return;
           let n;
           return n = c(f, ((e, t) => {
             y({
@@ -207,11 +207,11 @@ try {
           }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, f, r, s, o, d, i, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
-          inView: !!d,
+        f || !w || o || d || v.current === w || (v.current = w, y({
+          inView: !!a,
           entry: void 0
         }));
         const k = [p, g.inView, g.entry];

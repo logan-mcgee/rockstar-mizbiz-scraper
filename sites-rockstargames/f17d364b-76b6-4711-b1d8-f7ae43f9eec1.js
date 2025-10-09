@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [2864], {
     41007: () => {
@@ -21,11 +21,11 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var t = String(e).split("."),
-              d = t[0],
-              n = !t[1],
-              s = d.slice(-1),
-              l = d.slice(-2);
+            var d = String(e).split("."),
+              t = d[0],
+              n = !d[1],
+              s = t.slice(-1),
+              l = t.slice(-2);
             return a ? "other" : n && 1 == s && 11 != l ? "one" : n && s >= 2 && s <= 4 && (l < 12 || l > 14) ? "few" : n && 0 == s || n && s >= 5 && s <= 9 || n && l >= 11 && l <= 14 ? "many" : "other"
           }
         },

@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-gif-viewer",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [8755], {
     2762: () => {
@@ -21,14 +21,14 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var n = String(e),
-              t = n.split(/[ce]/),
-              d = t[1] || 0,
-              l = String(d ? Number(t[0]) * Math.pow(10, d) : n).split("."),
+            var d = String(e),
+              n = d.split(/[ce]/),
+              t = n[1] || 0,
+              l = String(t ? Number(n[0]) * Math.pow(10, t) : d).split("."),
               o = l[0],
-              f = !l[1],
-              s = o.slice(-6);
-            return a ? "other" : 0 == o || 1 == o ? "one" : 0 == d && 0 != o && 0 == s && f || d < 0 || d > 5 ? "many" : "other"
+              s = !l[1],
+              f = o.slice(-6);
+            return a ? "other" : 0 == o || 1 == o ? "one" : 0 == t && 0 != o && 0 == f && s || t < 0 || t > 5 ? "many" : "other"
           }
         },
         locale: "pt"

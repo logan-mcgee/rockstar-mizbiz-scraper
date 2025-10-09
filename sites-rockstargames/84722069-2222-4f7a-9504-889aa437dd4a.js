@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-rockstargames",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7880], {
     29625: (e, s, a) => {
@@ -29,21 +29,21 @@ try {
           context: a = "",
           to: o,
           onClick: r,
-          target: c = "_self",
-          ...i
+          target: i = "_self",
+          ...l
         }) => {
-          const l = [n.button, n[a], e].join(" ");
+          const c = [n.button, n[a], e].join(" ");
           return o ? (0, t.jsx)(d.A, {
-            ...i,
+            ...l,
             to: o,
-            className: l,
+            className: c,
             onClick: r,
-            target: c,
+            target: i,
             children: s
           }) : (0, t.jsx)("button", {
-            ...i,
+            ...l,
             type: "button",
-            className: l,
+            className: c,
             onClick: r,
             children: s
           })
@@ -51,15 +51,15 @@ try {
     },
     47248: (e, s, a) => {
       a.r(s), a.d(s, {
-        default: () => i
+        default: () => l
       });
       var t = a(42295),
         d = a(62229),
         n = a(7607),
         o = a(95966),
         r = a(87790),
-        c = a(1973);
-      const i = (0, o.withTranslations)((({
+        i = a(1973);
+      const l = (0, o.withTranslations)((({
         t: e
       }) => {
         const {
@@ -79,7 +79,7 @@ try {
               section: "Newswire",
               t: e
             })
-          }), (0, t.jsx)(c.A, {})]
+          }), (0, t.jsx)(i.A, {})]
         })
       }))
     }

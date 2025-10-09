@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [8970], {
     28423: (e, t, a) => {
@@ -101,14 +101,14 @@ try {
           var _ = e.localeData,
             d = (0, r.ResolveLocale)(e.availableLocales, n, o, e.relevantExtensionKeys, _, e.getDefaultLocale);
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", d.locale);
-          var c = (0, l.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", c);
-          var f = (0, l.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
-          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", f);
+          var f = (0, l.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", f);
+          var c = (0, l.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
+          (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", c);
           var u = d.dataLocale,
             p = _[u];
           (0, l.invariant)(!!p, "Missing locale data for ".concat(u));
-          var y = p[c][f];
+          var y = p[f][c];
           (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, l.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {

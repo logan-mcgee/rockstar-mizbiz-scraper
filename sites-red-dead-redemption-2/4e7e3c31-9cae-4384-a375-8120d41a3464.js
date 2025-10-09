@@ -5,12 +5,12 @@ try {
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/sites-red-dead-redemption-2",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [8431], {
     14910: (e, t) => {
@@ -21,8 +21,8 @@ try {
         a = Symbol.for("react.profiler"),
         f = Symbol.for("react.provider"),
         i = Symbol.for("react.context"),
-        c = Symbol.for("react.forward_ref"),
-        s = Symbol.for("react.suspense"),
+        s = Symbol.for("react.forward_ref"),
+        c = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
         d = Symbol.for("react.lazy"),
         p = Symbol.iterator,
@@ -75,8 +75,8 @@ try {
         var i = arguments.length - 2;
         if (1 === i) u.children = n;
         else if (1 < i) {
-          for (var c = Array(i), s = 0; s < i; s++) c[s] = arguments[s + 2];
-          u.children = c
+          for (var s = Array(i), c = 0; c < i; c++) s[c] = arguments[c + 2];
+          u.children = s
         }
         if (e && e.defaultProps)
           for (o in i = e.defaultProps) void 0 === u[o] && (u[o] = i[o]);
@@ -137,13 +137,13 @@ try {
           }
         }(a, o + (!a.key || i && i.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
         if (i = 0, u = "" === u ? "." : u + ":", g(e))
-          for (var c = 0; c < e.length; c++) {
-            var s = u + j(f = e[c], c);
-            i += I(f, t, o, s, a)
-          } else if (s = function(e) {
+          for (var s = 0; s < e.length; s++) {
+            var c = u + j(f = e[s], s);
+            i += I(f, t, o, c, a)
+          } else if (c = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
-            }(e), "function" == typeof s)
-            for (e = s.call(e), c = 0; !(f = e.next()).done;) i += I(f = f.value, t, o, s = u + j(f, c++), a);
+            }(e), "function" == typeof c)
+            for (e = c.call(e), s = 0; !(f = e.next()).done;) i += I(f = f.value, t, o, c = u + j(f, s++), a);
           else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return i
       }
@@ -206,7 +206,7 @@ try {
           if (!$(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = s, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
+      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = _({}, e.props),
           u = e.key,
@@ -214,13 +214,13 @@ try {
           f = e._owner;
         if (null != t) {
           if (void 0 !== t.ref && (a = t.ref, f = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var i = e.type.defaultProps;
-          for (c in t) S.call(t, c) && !E.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== i ? i[c] : t[c])
+          for (s in t) S.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== i ? i[s] : t[s])
         }
-        var c = arguments.length - 2;
-        if (1 === c) o.children = n;
-        else if (1 < c) {
-          i = Array(c);
-          for (var s = 0; s < c; s++) i[s] = arguments[s + 2];
+        var s = arguments.length - 2;
+        if (1 === s) o.children = n;
+        else if (1 < s) {
+          i = Array(s);
+          for (var c = 0; c < s; c++) i[c] = arguments[c + 2];
           o.children = i
         }
         return {
@@ -254,7 +254,7 @@ try {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: c,
+          $$typeof: s,
           render: e
         }
       }, t.isValidElement = $, t.lazy = function(e) {

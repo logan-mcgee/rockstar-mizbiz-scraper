@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [9760], {
     9760: (o, t, e) => {
@@ -29,8 +29,8 @@ try {
         Lightbox_Zoom_Out_Button_Label: () => h,
         Lightbox_Zoom_Out_Button__Tooltip: () => L,
         Lightbox_Zoom_Slider_Label: () => f,
-        Lightbox_Zoom_Slider_Tooltip: () => c,
-        default: () => p
+        Lightbox_Zoom_Slider_Tooltip: () => p,
+        default: () => x
       });
       var _ = "Close lightbox",
         l = "Press {shortcut}",
@@ -46,8 +46,8 @@ try {
         h = "Zoom out",
         L = "Press {shortcut}",
         f = "Zoom level",
-        c = "{zoom}%",
-        p = {
+        p = "{zoom}%",
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Dialog_Description: i,
@@ -62,7 +62,7 @@ try {
           Lightbox_Zoom_Out_Button_Label: h,
           Lightbox_Zoom_Out_Button__Tooltip: L,
           Lightbox_Zoom_Slider_Label: f,
-          Lightbox_Zoom_Slider_Tooltip: c
+          Lightbox_Zoom_Slider_Tooltip: p
         }
     }
   }

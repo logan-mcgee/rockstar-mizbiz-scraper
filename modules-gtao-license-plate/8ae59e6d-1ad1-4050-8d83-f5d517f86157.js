@@ -5,12 +5,12 @@ try {
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "e75daf86583d2f46160d46d6e78dabbc975e828b",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-gtao-license-plate",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "e75daf86583d2f46160d46d6e78dabbc975e828b"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [5265], {
     5265: (o, t, e) => {
@@ -18,10 +18,10 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -43,9 +43,9 @@ try {
         g = "Poziom powiększenia",
         u = "{zoom}%",
         r = "Pobierz",
-        h = "Pobierz",
-        L = "Otwórz obraz w podglądzie",
-        f = "Podgląd obrazu",
+        f = "Pobierz",
+        h = "Otwórz obraz w podglądzie",
+        L = "Podgląd obrazu",
         p = "Tekst alternatywny: {alt}",
         x = {
           Lightbox_Close_Button_Label: _,
@@ -59,9 +59,9 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: f,
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: p
         }
     }

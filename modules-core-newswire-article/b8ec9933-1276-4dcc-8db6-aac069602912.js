@@ -1,27 +1,27 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "b8ec9933-1276-4dcc-8db6-aac069602912", o._sentryDebugIdIdentifier = "sentry-dbid-b8ec9933-1276-4dcc-8db6-aac069602912")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "b8ec9933-1276-4dcc-8db6-aac069602912", o._sentryDebugIdIdentifier = "sentry-dbid-b8ec9933-1276-4dcc-8db6-aac069602912")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
-    release: "7e6a862245c0f03cf7f976b07fd639dca846e391",
+    release: "sentry-release-id",
     packageName: "@rockstargames/modules-core-newswire-article",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
-  id: "7e6a862245c0f03cf7f976b07fd639dca846e391"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [8325], {
-    38325: (o, t, e) => {
-      e.r(t), e.d(t, {
+    38325: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => r,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => p
+        default: () => c
       });
       var _ = "Fermer la lightbox",
         i = "Appuyer sur {shortcut}",
@@ -44,10 +44,10 @@ try {
         u = "{zoom} %",
         g = "Télécharger",
         h = "Télécharger",
-        f = "Ouvrir l'image dans la lightbox",
-        L = "Image de la lightbox",
-        c = "Text alternatif : {alt}",
-        p = {
+        L = "Ouvrir l'image dans la lightbox",
+        f = "Image de la lightbox",
+        p = "Text alternatif : {alt}",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -60,9 +60,9 @@ try {
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: c
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: p
         }
     }
   }
