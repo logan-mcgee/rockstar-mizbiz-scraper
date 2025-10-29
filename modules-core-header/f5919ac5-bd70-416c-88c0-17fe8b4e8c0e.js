@@ -15,28 +15,28 @@ try {
   [4905], {
     34905: (e, d, a) => {
       a.r(d), a.d(d, {
-        Portal: () => f,
-        Root: () => r
+        Portal: () => r,
+        Root: () => f
       });
       var o = a(71127),
         t = a(18429),
         n = a(81664),
         s = a(63155),
         l = a(42295),
-        f = o.forwardRef(((e, d) => {
+        r = o.forwardRef(((e, d) => {
           const {
             container: a,
-            ...f
-          } = e, [r, i] = o.useState(!1);
-          (0, s.N)((() => i(!0)), []);
-          const c = a || r && globalThis?.document?.body;
-          return c ? t.createPortal((0, l.jsx)(n.sG.div, {
-            ...f,
+            ...r
+          } = e, [f, c] = o.useState(!1);
+          (0, s.N)((() => c(!0)), []);
+          const i = a || f && globalThis?.document?.body;
+          return i ? t.createPortal((0, l.jsx)(n.sG.div, {
+            ...r,
             ref: d
-          }), c) : null
+          }), i) : null
         }));
-      f.displayName = "Portal";
-      var r = f
+      r.displayName = "Portal";
+      var f = r
     }
   }
 ]);

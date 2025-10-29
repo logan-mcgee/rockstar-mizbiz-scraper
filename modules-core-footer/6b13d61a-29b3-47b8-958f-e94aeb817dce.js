@@ -186,7 +186,7 @@ try {
         getUriForGraphEnv: () => i,
         gql: () => Le.J1,
         gtmInit: () => Fe,
-        importAll: () => fe,
+        importAll: () => he,
         isGen9Platform: () => ve,
         makeVar: () => k.UT,
         mutateWebSettings: () => Xe,
@@ -214,7 +214,7 @@ try {
         usePrevious: () => O.ZC,
         useQuery: () => U,
         useQueryParams: () => O.sq,
-        useReactiveVar: () => h.q,
+        useReactiveVar: () => f.q,
         useRockstarEventDispatcher: () => O.OH,
         useRockstarEventSubscriber: () => O.zP,
         useRockstarToken: () => N.e9,
@@ -263,24 +263,24 @@ try {
       var u = o(9482),
         p = o(52690),
         g = o(42295),
-        f = o(71127),
-        h = o(93452);
+        h = o(71127),
+        f = o(93452);
       const m = (0, u.A)({
-          context: (0, f.createContext)({}),
+          context: (0, h.createContext)({}),
           key: "graphContextGet"
         }),
-        w = () => (0, f.useContext)(m),
+        w = () => (0, h.useContext)(m),
         b = (0, u.A)({
-          context: (0, f.createContext)({}),
+          context: (0, h.createContext)({}),
           key: "graphContextSet"
         }),
-        y = () => (0, f.useContext)(b),
+        y = () => (0, h.useContext)(b),
         v = ({
           children: e,
           state: t
         }) => {
-          (0, h.q)(t);
-          const o = (0, f.useCallback)((e => {
+          (0, f.q)(t);
+          const o = (0, h.useCallback)((e => {
             const o = {
               ...t(),
               ...e
@@ -330,7 +330,7 @@ try {
               error: s,
               ...i
             } = (0, E.IT)(e, n);
-          return (0, f.useEffect)((() => {
+          return (0, h.useEffect)((() => {
             if (r && n.setTitleDataPath) {
               const e = l().get(r, n.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -338,7 +338,7 @@ try {
                 title: e
               })
             }
-          }), [r]), (0, f.useEffect)((() => (n.autoSetLoading && window.postMessage({
+          }), [r]), (0, h.useEffect)((() => (n.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: a
           }), () => {
@@ -346,7 +346,7 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          })), [a]), (0, f.useEffect)((() => {
+          })), [a]), (0, h.useEffect)((() => {
             if (n.autoSetError && s) throw new Error(String(s))
           }), [s]), {
             loading: a,
@@ -355,7 +355,7 @@ try {
             ...i
           }
         },
-        L = (0, f.createContext)((() => ({
+        L = (0, h.createContext)((() => ({
           data: null
         }))),
         R = new Promise((e => {
@@ -371,7 +371,7 @@ try {
           reset: () => null,
           client: window?.["apollo-client"] ?? (window["apollo-client"] = new P.R(_))
         }],
-        M = (0, f.createContext)((() => T)),
+        M = (0, h.createContext)((() => T)),
         I = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = ({
           children: e
         }) => (0, g.jsx)(M.Provider, {
@@ -381,8 +381,8 @@ try {
             children: e
           })
         })),
-        U = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, f.useContext)(L)(e, t)),
-        D = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, f.useContext)(M)(e));
+        U = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, h.useContext)(L)(e, t)),
+        D = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, h.useContext)(M)(e));
       var N = o(20772),
         B = o(6347);
       var $ = o(83605),
@@ -402,7 +402,7 @@ try {
               ...e,
               uri: o
             },
-            [r] = (0, f.useState)(new S.D({
+            [r] = (0, h.useState)(new S.D({
               typePolicies: t
             })),
             a = W.concat((({
@@ -467,9 +467,9 @@ try {
         Q = (0, k.UT)({}),
         Y = "data-disallow-body-scroll",
         J = e => {
-          const t = (0, h.q)(Q),
+          const t = (0, f.q)(Q),
             o = Object.values(t).some((e => !!e));
-          return (0, f.useEffect)((() => {
+          return (0, h.useEffect)((() => {
             o ? document.documentElement.setAttribute(Y, "true") : document.documentElement.removeAttribute(Y)
           }), [o]), {
             bodyShouldLock: o,
@@ -588,13 +588,13 @@ try {
           clientId: a
         } = (0, s.A)(), i = await o(), c = new URL(`tpa/${e}/link`, `https://${r}.rockstargames.com`);
         return c.searchParams.append("cid", a), c.searchParams.append("lang", n), c.searchParams.append("returnUrl", t ?? window.location.pathname), i && "boolean" != typeof i && "string" == typeof i.bearerToken && c.searchParams.append("accessToken", i.bearerToken), c
-      }, fe = e => e.keys().forEach(e), he = [{
+      }, he = e => e.keys().forEach(e), fe = [{
         key: "dev",
         path: "https://media-dev-rockstargames-com.akamaized.net"
       }, {
         key: "prod",
         path: "https://media-rockstargames-com.akamaized.net"
-      }], me = (e = !0) => he.filter((t => t.key === (e ? "prod" : "dev")))[0]?.path ?? null, we = e => {
+      }], me = (e = !0) => fe.filter((t => t.key === (e ? "prod" : "dev")))[0]?.path ?? null, we = e => {
         e.preventDefault();
         const t = e.currentTarget.href,
           o = (e => {
@@ -653,7 +653,7 @@ try {
           }
         }))(e, t),
         je = (e, t = 250) => o => ((e, t, o) => {
-          const [n, r] = (0, f.useState)(t), a = e => {
+          const [n, r] = (0, h.useState)(t), a = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
@@ -671,7 +671,7 @@ try {
               }
             })), t) : t
           };
-          return (0, f.useEffect)((() => {
+          return (0, h.useEffect)((() => {
             const e = l().debounce((() => {
               r(a(t))
             }), o);
@@ -709,16 +709,16 @@ query Translations($locale: String!, $config: String!) {
         })(e, o, t);
       var Me = o(95342);
       const Ie = (0, u.A)({
-          context: (0, f.createContext)({}),
+          context: (0, h.createContext)({}),
           key: "gtmDatalayer"
         }),
-        Ue = () => (0, f.useContext)(Ie),
+        Ue = () => (0, h.useContext)(Ie),
         De = ({
           children: e,
           ...t
         }) => {
           const o = Ue() ?? {},
-            n = (0, f.useMemo)((() => ({
+            n = (0, h.useMemo)((() => ({
               ...o,
               ...t
             })), [o, t]);
@@ -733,7 +733,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, Be.useLocation)();
-          return (0, f.useEffect)((() => {
+          return (0, h.useEffect)((() => {
             Ee({
               event: "trackPageview"
             })
@@ -775,7 +775,7 @@ query Translations($locale: String!, $config: String!) {
           }), We(o), o
         },
         Ve = () => ({
-          webSettings: (0, h.q)(We),
+          webSettings: (0, f.q)(We),
           webSettingsReactive: We,
           mutateWebSettings: Xe
         });

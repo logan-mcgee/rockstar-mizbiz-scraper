@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => x
+        default: () => c
       });
       var _ = "關閉燈箱",
         l = "按 {shortcut}",
@@ -47,7 +47,7 @@ try {
         L = "在燈箱中開啟圖片",
         f = "圖片燈箱",
         p = "圖片替代文字：{alt}",
-        x = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,

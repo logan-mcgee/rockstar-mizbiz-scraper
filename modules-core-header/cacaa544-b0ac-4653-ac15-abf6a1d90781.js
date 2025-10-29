@@ -87,13 +87,13 @@ try {
         debounce: () => v,
         filterEventProps: () => a.b,
         get: () => m,
-        getOrSet: () => d,
+        getOrSet: () => c,
         joinStrings: () => R,
         merge: () => g,
         mergeProps: () => s.v,
         omit: () => u,
         range: () => f,
-        set: () => b,
+        set: () => w,
         throttle: () => E
       });
       var r = n(55311);
@@ -104,11 +104,11 @@ try {
       var s = n(35205),
         a = n(52360);
       const i = "__FOUNDRY_ACCENT__",
-        d = (e, t) => r.X ? t() : (window[i] || (window[i] = new Map), window[i].has(e) || window[i].set(e, t()), window[i].get(e));
-      var c = n(98312);
+        c = (e, t) => r.X ? t() : (window[i] || (window[i] = new Map), window[i].has(e) || window[i].set(e, t()), window[i].get(e));
+      var d = n(98312);
 
       function f(e) {
-        return c(e)
+        return d(e)
       }
       var l = n(41972);
 
@@ -125,10 +125,10 @@ try {
       function p(e) {
         return _(e)
       }
-      var w = n(10533);
+      var b = n(10533);
 
-      function b(e, t, n, r) {
-        return w(e, t, n, r)
+      function w(e, t, n, r) {
+        return b(e, t, n, r)
       }
       var y = n(10613);
 
@@ -195,9 +195,9 @@ try {
           return k(s + e) + k(s - e) - o
         }
         const i = k(S(s * s - a)),
-          d = s ? Math.atan(S(-a) / s) : -T / 2;
-        let c;
-        return c = n < 0 ? (s > 0 ? 2 * T : T) - d : o < 0 ? (s > 0 ? 2 * T : -3 * T) + d : (s > 0 ? 0 : T) + d, 2 * i * Math.cos(c / 3) - o
+          c = s ? Math.atan(S(-a) / s) : -T / 2;
+        let d;
+        return d = n < 0 ? (s > 0 ? 2 * T : T) - c : o < 0 ? (s > 0 ? 2 * T : -3 * T) + c : (s > 0 ? 0 : T) + c, 2 * i * Math.cos(d / 3) - o
       }, I = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function N(e, t, n, r) {
@@ -207,17 +207,17 @@ try {
           s = 6 * (n - 2 * e),
           a = 3 * e,
           i = o * o,
-          d = s * s,
-          c = s / o,
-          f = 3 * s * a / i - d * s / (i * o),
-          l = 2 * a / o - d / i,
+          c = s * s,
+          d = s / o,
+          f = 3 * s * a / i - c * s / (i * o),
+          l = 2 * a / o - c / i,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? x : j;
-        return e => 0 === e || 1 === e ? e : I(w(e, f, h, u, c), g, _, p)
+          b = o ? x : j;
+        return e => 0 === e || 1 === e ? e : I(b(e, f, h, u, d), g, _, p)
       }
       const R = (...e) => e.filter((e => e)).join(" ")
     }

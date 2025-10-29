@@ -28,7 +28,7 @@ try {
         joinStrings: () => z,
         merge: () => m,
         mergeProps: () => c,
-        omit: () => b,
+        omit: () => w,
         range: () => p,
         set: () => P,
         throttle: () => T
@@ -92,10 +92,10 @@ try {
       function p(e) {
         return _(e)
       }
-      var w = n(41972);
+      var b = n(41972);
 
-      function b(e, ...t) {
-        return w(e, ...t)
+      function w(e, ...t) {
+        return b(e, ...t)
       }
       var y = n(56265);
 
@@ -198,8 +198,8 @@ try {
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? D : N;
-        return e => 0 === e || 1 === e ? e : O(w(e, f, h, u, c), g, _, p)
+          b = o ? D : N;
+        return e => 0 === e || 1 === e ? e : O(b(e, f, h, u, c), g, _, p)
       }
       const z = (...e) => e.filter((e => e)).join(" ")
     }

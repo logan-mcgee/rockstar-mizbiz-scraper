@@ -61,12 +61,12 @@ try {
         IS_SERVER: () => r.X,
         PromiseState: () => j,
         breakpoints: () => o,
-        clone: () => b,
+        clone: () => w,
         cubicBezier: () => A,
         debounce: () => M,
         filterEventProps: () => d,
         get: () => E,
-        getOrSet: () => c,
+        getOrSet: () => f,
         joinStrings: () => C,
         merge: () => p,
         mergeProps: () => s.v,
@@ -97,8 +97,8 @@ try {
           others: r
         }
       }
-      const f = "__FOUNDRY_ACCENT__",
-        c = (e, t) => r.X ? t() : (window[f] || (window[f] = new Map), window[f].has(e) || window[f].set(e, t()), window[f].get(e));
+      const c = "__FOUNDRY_ACCENT__",
+        f = (e, t) => r.X ? t() : (window[c] || (window[c] = new Map), window[c].has(e) || window[c].set(e, t()), window[c].get(e));
       var l = n(98312);
 
       function u(e) {
@@ -114,10 +114,10 @@ try {
       function p(e, t) {
         return _(e, t)
       }
-      var w = n(31454);
+      var b = n(31454);
 
-      function b(e) {
-        return w(e)
+      function w(e) {
+        return b(e)
       }
       var y = n(10533);
 
@@ -190,8 +190,8 @@ try {
         }
         const a = T(x(s * s - i)),
           d = s ? Math.atan(x(-i) / s) : -I / 2;
-        let f;
-        return f = n < 0 ? (s > 0 ? 2 * I : I) - d : o < 0 ? (s > 0 ? 2 * I : -3 * I) + d : (s > 0 ? 0 : I) + d, 2 * a * Math.cos(f / 3) - o
+        let c;
+        return c = n < 0 ? (s > 0 ? 2 * I : I) - d : o < 0 ? (s > 0 ? 2 * I : -3 * I) + d : (s > 0 ? 0 : I) + d, 2 * a * Math.cos(c / 3) - o
       }, R = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function A(e, t, n, r) {
@@ -202,16 +202,16 @@ try {
           i = 3 * e,
           a = o * o,
           d = s * s,
-          f = s / o,
-          c = 3 * s * i / a - d * s / (a * o),
+          c = s / o,
+          f = 3 * s * i / a - d * s / (a * o),
           l = 2 * i / o - d / a,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? N : S;
-        return e => 0 === e || 1 === e ? e : R(w(e, c, h, u, f), g, _, p)
+          b = o ? N : S;
+        return e => 0 === e || 1 === e ? e : R(b(e, f, h, u, c), g, _, p)
       }
       const C = (...e) => e.filter((e => e)).join(" ")
     }

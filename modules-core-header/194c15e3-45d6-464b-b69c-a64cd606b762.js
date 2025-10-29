@@ -28,7 +28,7 @@ try {
         joinStrings: () => z,
         merge: () => m,
         mergeProps: () => c,
-        omit: () => b,
+        omit: () => w,
         range: () => p,
         set: () => P,
         throttle: () => T
@@ -69,8 +69,8 @@ try {
         }
         return t
       }
-      const f = /^(on.*)$/,
-        l = /^(onPress.*)$/;
+      const l = /^(on.*)$/,
+        f = /^(onPress.*)$/;
 
       function u(e, {
         onPress: t
@@ -79,7 +79,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (f.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : l.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -92,10 +92,10 @@ try {
       function p(e) {
         return _(e)
       }
-      var w = n(41972);
+      var b = n(41972);
 
-      function b(e, ...t) {
-        return w(e, ...t)
+      function w(e, ...t) {
+        return b(e, ...t)
       }
       var y = n(56265);
 
@@ -191,15 +191,15 @@ try {
           a = o * o,
           d = s * s,
           c = s / o,
-          f = 3 * s * i / a - d * s / (a * o),
-          l = 2 * i / o - d / a,
-          u = l * l * l,
+          l = 3 * s * i / a - d * s / (a * o),
+          f = 2 * i / o - d / a,
+          u = f * f * f,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? D : N;
-        return e => 0 === e || 1 === e ? e : O(w(e, f, h, u, c), g, _, p)
+          b = o ? D : N;
+        return e => 0 === e || 1 === e ? e : O(b(e, l, h, u, c), g, _, p)
       }
       const z = (...e) => e.filter((e => e)).join(" ")
     }

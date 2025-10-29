@@ -23,8 +23,8 @@ try {
       });
       var a = r(42295),
         n = r(71127),
-        o = r(95966),
-        c = r(72148);
+        c = r(95966),
+        o = r(72148);
       const s = {
           pcalt: "PC",
           pc: "PC",
@@ -33,7 +33,7 @@ try {
           xboxone: "XBOX ONE",
           xboxsx: "XBOX SERIES X|S"
         },
-        i = (0, o.setContextItem)({
+        i = (0, c.setContextItem)({
           context: (0, n.createContext)(void 0),
           key: "gtmContext22"
         }),
@@ -47,12 +47,12 @@ try {
                 loggedIn: f
               } = V(), {
                 hasGtaPlus: p
-              } = d ?? {}, m = (0, c.bn)(), g = (e, a) => {
+              } = d ?? {}, m = (0, o.bn)(), g = (e, a) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === t.indexOf(e)) {
                     const t = a ?? {};
-                    (0, o.track)({
+                    (0, c.track)({
                       ...e,
                       ...t
                     }), n.push(e)
@@ -73,15 +73,15 @@ try {
                   r = [],
                   a = [],
                   n = [];
-                return Object.entries(e?.characters ?? []).forEach((([e, o]) => {
-                  o.length && o.forEach((o => {
-                    const c = (e => "pcalt" === e ? "pc" : e.toString())(o.platform);
+                return Object.entries(e?.characters ?? []).forEach((([e, c]) => {
+                  c.length && c.forEach((c => {
+                    const o = (e => "pcalt" === e ? "pc" : e.toString())(c.platform);
                     if ("gtao" === e) {
-                      r.includes(c) || r.push(c), a.includes(c) || "1" !== o.stats?.overview?.hasGtaPlus?.value || a.push(c);
-                      const t = `${e}_${o.platform}`;
+                      r.includes(o) || r.push(o), a.includes(o) || "1" !== c.stats?.overview?.hasGtaPlus?.value || a.push(o);
+                      const t = `${e}_${c.platform}`;
                       n.includes(t) || n.push(t)
                     }
-                    t.includes(c) || t.push(c)
+                    t.includes(o) || t.push(o)
                   }))
                 })), Object.entries(e?.gamesPlayed ?? []).forEach((([e, r]) => {
                   n.push(`${e}_${r}`), t.includes(r) || t.push(r)
@@ -106,7 +106,7 @@ try {
                       ...e
                     }), i(t)
                   }
-                  return (0, o.track)({
+                  return (0, c.track)({
                     ...e,
                     ...u
                   })
@@ -123,64 +123,64 @@ try {
           track: () => null
         },
         d = () => (0, n.useContext)(i) ?? l,
-        f = (0, o.setMakeVarItem)({
+        f = (0, c.setMakeVarItem)({
           key: "navOpenReactive",
-          value: (0, o.makeVar)(null)
+          value: (0, c.makeVar)(null)
         }),
         p = e => f(e),
-        m = (0, o.setMakeVarItem)({
+        m = (0, c.setMakeVarItem)({
           key: "jumpScMenuFocusReactive",
-          value: (0, o.makeVar)(!1)
+          value: (0, c.makeVar)(!1)
         }),
         g = e => m(e),
-        h = (0, o.setMakeVarItem)({
+        h = (0, c.setMakeVarItem)({
           key: "currentCharIdReactive",
-          value: (0, o.makeVar)((0, o.webSettingsReactive)()?.currentCharId)
+          value: (0, c.makeVar)((0, c.webSettingsReactive)()?.currentCharId)
         }),
         k = e => h(e),
-        y = (0, o.setMakeVarItem)({
+        y = (0, c.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
-          value: (0, o.makeVar)(null)
+          value: (0, c.makeVar)(null)
         }),
-        v = e => y(e),
-        b = (0, o.setMakeVarItem)({
+        b = e => y(e),
+        v = (0, c.setMakeVarItem)({
           key: "rockstarIdReactive",
-          value: (0, o.makeVar)(null)
+          value: (0, c.makeVar)(null)
         }),
-        w = (0, o.setMakeVarItem)({
+        w = (0, c.setMakeVarItem)({
           key: "charactersNeededReactive",
-          value: (0, o.makeVar)(!1)
+          value: (0, c.makeVar)(!1)
         }),
         _ = e => w(e),
-        S = (0, o.setMakeVarItem)({
+        S = (0, c.setMakeVarItem)({
           key: "crewsNeededReactive",
-          value: (0, o.makeVar)(!1)
+          value: (0, c.makeVar)(!1)
         }),
         x = e => S(e),
-        E = (0, o.setMakeVarItem)({
+        E = (0, c.setMakeVarItem)({
           key: "userDataReactive",
-          value: (0, o.makeVar)(null)
+          value: (0, c.makeVar)(null)
         }),
         C = e => E(e),
         M = () => {
-          const e = (0, o.useReactiveVar)(w),
-            t = (0, o.useReactiveVar)(S),
-            r = (0, o.useReactiveVar)(h),
-            a = (0, o.useReactiveVar)(f),
-            n = (0, o.useReactiveVar)(y);
+          const e = (0, c.useReactiveVar)(w),
+            t = (0, c.useReactiveVar)(S),
+            r = (0, c.useReactiveVar)(h),
+            a = (0, c.useReactiveVar)(f),
+            n = (0, c.useReactiveVar)(y);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: r,
             navOpen: a,
-            userData: (0, o.useReactiveVar)(E),
+            userData: (0, c.useReactiveVar)(E),
             selectedCharacterTuple: n,
-            jumpScMenuFocus: (0, o.useReactiveVar)(m),
+            jumpScMenuFocus: (0, c.useReactiveVar)(m),
             setCharactersNeeded: _,
             setCrewsNeeded: x,
             setCurrentCharId: k,
             setNavOpen: p,
-            setSelectedCharacterTuple: v,
+            setSelectedCharacterTuple: b,
             setUserData: C,
             setJumpScMenuFocus: g
           }
@@ -196,7 +196,7 @@ try {
             charactersNeeded: t,
             crewsNeeded: r,
             currentCharId: a
-          } = M(), c = (0, o.useRockstarToken)(), [s, i] = (0, n.useState)({
+          } = M(), o = (0, c.useRockstarToken)(), [s, i] = (0, n.useState)({
             id: 0,
             avatar: "",
             bearer_token_expired: !0,
@@ -206,7 +206,7 @@ try {
             nonExpiredToken: !1,
             profile_link: "https://",
             accountSynced: !1
-          }), [u] = (0, o.useRockstarTokenReactive)(), l = (0, o.useRockstarTokenPing)(), [d, f] = (0, n.useState)(), [p, m] = (0, n.useState)(!1), g = void 0 === d, [h, k] = (0, n.useState)(1);
+          }), [u] = (0, c.useRockstarTokenReactive)(), l = (0, c.useRockstarTokenPing)(), [d, f] = (0, n.useState)(), [p, m] = (0, n.useState)(!1), g = void 0 === d, [h, k] = (0, n.useState)(1);
           return (0, n.useEffect)((() => {
             "gtao" !== t || s?.characters?.gtao || (i((e => ({
               ...e,
@@ -225,10 +225,10 @@ try {
           }), [h]), (0, n.useEffect)((() => {
             e && u(e)
           }), [e]), (0, n.useEffect)((() => {
-            "" !== c || l()
-          }), [c]), (0, n.useEffect)((() => {
-            if ("" === c) return;
-            const e = !!c;
+            "" !== o || l()
+          }), [o]), (0, n.useEffect)((() => {
+            if ("" === o) return;
+            const e = !!o;
             if (e || p || ((async () => {
                 try {
                   await (async ({
@@ -237,7 +237,7 @@ try {
                     const {
                       gateway: t,
                       silentCheck: r
-                    } = (0, o.getConfigForDomain)(), a = {
+                    } = (0, c.getConfigForDomain)(), a = {
                       method: "POST",
                       body: `fingerprint=${await O().get().then((e=>e))}`,
                       credentials: "include",
@@ -247,8 +247,8 @@ try {
                       }
                     }, n = await fetch(r, a);
                     if (200 !== n.status) return void e(!1);
-                    const c = `${t}?code=${await n.json()}`,
-                      s = await fetch(c, {
+                    const o = `${t}?code=${await n.json()}`,
+                      s = await fetch(o, {
                         credentials: "include"
                       }),
                       {
@@ -266,10 +266,10 @@ try {
                 const t = (0, A.s)(e),
                   {
                     host: r
-                  } = (0, o.getConfigForDomain)(),
+                  } = (0, c.getConfigForDomain)(),
                   a = parseInt(t.nameid),
                   n = t["scAuth.Nickname"],
-                  c = "True" === (t?.["scAuth.IsAMinor"] ?? "True"),
+                  o = "True" === (t?.["scAuth.IsAMinor"] ?? "True"),
                   s = new Date(t["scAuth.MemberSince"]),
                   i = new Date,
                   u = (0, R.M)(i, s) < 12,
@@ -279,20 +279,20 @@ try {
                   nonExpiredToken: (t?.exp ?? 0) - l > 0,
                   avatar: t["scAuth.AvatarUrl"],
                   bearer_token_expired: t.exp > Date.now(),
-                  isAMinor: c,
+                  isAMinor: o,
                   isNewAccount: u,
                   nickname: n,
                   profile_link: `https://${r}.rockstargames.com/member/${n}?id=${a}`
                 }
               })({
-                bearerToken: c
+                bearerToken: o
               });
               i((t => ({
                 ...t,
                 ...e
               })))
             }
-          }), [c, p]), (0, n.useEffect)((() => {
+          }), [o, p]), (0, n.useEffect)((() => {
             (async () => {
               if (d && s && r && !s?.crews && s?.characters) {
                 const e = await (async ({
@@ -301,7 +301,7 @@ try {
                 }) => {
                   const {
                     crews: r
-                  } = await (0, o.coreScApiFetch)("crew/forMember", {
+                  } = await (0, c.coreScApiFetch)("crew/forMember", {
                     pingBearer: e,
                     query: {
                       userId: t
@@ -323,7 +323,7 @@ try {
               if (!d || !s || null != s?.hasNotification) return;
               const e = await (async ({
                 pingBearer: e
-              }) => await (0, o.coreScApiFetch)("notification/count", {
+              }) => await (0, c.coreScApiFetch)("notification/count", {
                 pingBearer: e
               }))({
                 pingBearer: l
@@ -342,7 +342,7 @@ try {
               }) => {
                 const {
                   all: t
-                } = await (0, o.coreScApiFetch)("profile/lastPlayed", {
+                } = await (0, c.coreScApiFetch)("profile/lastPlayed", {
                   pingBearer: e
                 });
                 return t
@@ -366,12 +366,12 @@ try {
                   rockstarId: r
                 }) => {
                   const a = [],
-                    n = await (0, o.coreScApiFetch)("profile/playedplatforms?game=gtav", {
+                    n = await (0, c.coreScApiFetch)("profile/playedplatforms?game=gtav", {
                       pingBearer: e
                     });
                   await (n?.platforms?.reduce((async (t, r) => {
                     if (await t, ["ps3", "xbox", "xbox360"].includes(r)) return;
-                    const n = await (0, o.coreScApiFetch)(`games/gtao/characters?platform=${r}`, {
+                    const n = await (0, c.coreScApiFetch)(`games/gtao/characters?platform=${r}`, {
                       pingBearer: e
                     });
                     n?.status && n?.result?.map((e => {
@@ -380,24 +380,24 @@ try {
                       } = e, {
                         overview: n
                       } = t, {
-                        rank: o
+                        rank: c
                       } = n;
-                      if ("0" === o.value) return;
-                      const c = ["ps4", "ps5"].includes(r) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
+                      if ("0" === c.value) return;
+                      const o = ["ps4", "ps5"].includes(r) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
                       return a.push({
                         ...e,
-                        mugshotUrl: c,
+                        mugshotUrl: o,
                         platform: r
                       }), e
                     }))
                   }), Promise.resolve()));
                   const {
-                    status: c,
+                    status: o,
                     accounts: s
-                  } = await (0, o.coreScApiFetch)(`profile/getprofile?nickname=${t}&maxFriends=0`, {
+                  } = await (0, c.coreScApiFetch)(`profile/getprofile?nickname=${t}&maxFriends=0`, {
                     pingBearer: e
                   });
-                  if (!c || !s.length) return {
+                  if (!o || !s.length) return {
                     gtaoCharacters: a,
                     linkedAccounts: []
                   };
@@ -438,7 +438,7 @@ try {
               }
             })()
           }), [t, s?.nickname, d]), (0, n.useEffect)((() => {
-            s?.id && s?.nonExpiredToken && (f(!0), b(s.id))
+            s?.id && s?.nonExpiredToken && (f(!0), v(s.id))
           }), [JSON.stringify(s)]), {
             data: s,
             loggedIn: d,
@@ -446,7 +446,7 @@ try {
           }
         },
         T = {},
-        P = (0, o.setContextItem)({
+        P = (0, c.setContextItem)({
           context: (0, n.createContext)(T),
           key: "userContext"
         }),
@@ -457,13 +457,13 @@ try {
           const r = j({
               privateToken: t
             }),
-            o = (0, n.useMemo)((() => ({
+            c = (0, n.useMemo)((() => ({
               ...r,
               privateToken: t,
               hasProvider: !0
             })), [r]);
           return (0, a.jsx)(P.Provider, {
-            value: o,
+            value: c,
             children: e
           })
         },
@@ -475,8 +475,8 @@ try {
     69245: (e, t, r) => {
       var a = r(71127),
         n = Symbol.for("react.element"),
-        o = Symbol.for("react.fragment"),
-        c = Object.prototype.hasOwnProperty,
+        c = Symbol.for("react.fragment"),
+        o = Object.prototype.hasOwnProperty,
         s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         i = {
           key: !0,
@@ -486,22 +486,22 @@ try {
         };
 
       function u(e, t, r) {
-        var a, o = {},
+        var a, c = {},
           u = null,
           l = null;
-        for (a in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) c.call(t, a) && !i.hasOwnProperty(a) && (o[a] = t[a]);
+        for (a in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) o.call(t, a) && !i.hasOwnProperty(a) && (c[a] = t[a]);
         if (e && e.defaultProps)
-          for (a in t = e.defaultProps) void 0 === o[a] && (o[a] = t[a]);
+          for (a in t = e.defaultProps) void 0 === c[a] && (c[a] = t[a]);
         return {
           $$typeof: n,
           type: e,
           key: u,
           ref: l,
-          props: o,
+          props: c,
           _owner: s.current
         }
       }
-      t.Fragment = o, t.jsx = u, t.jsxs = u
+      t.Fragment = c, t.jsx = u, t.jsxs = u
     },
     79465: e => {
       var t = function(e) {
@@ -527,7 +527,7 @@ try {
         }))
       }
 
-      function o(e) {
+      function c(e) {
         return Object.keys(e).concat(function(e) {
           return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(e).filter((function(t) {
             return Object.propertyIsEnumerable.call(e, t)
@@ -535,7 +535,7 @@ try {
         }(e))
       }
 
-      function c(e, t) {
+      function o(e, t) {
         try {
           return t in e
         } catch (e) {
@@ -548,16 +548,16 @@ try {
         var u = Array.isArray(r);
         return u === Array.isArray(e) ? u ? i.arrayMerge(e, r, i) : function(e, t, r) {
           var n = {};
-          return r.isMergeableObject(e) && o(e).forEach((function(t) {
+          return r.isMergeableObject(e) && c(e).forEach((function(t) {
             n[t] = a(e[t], r)
-          })), o(t).forEach((function(o) {
+          })), c(t).forEach((function(c) {
             (function(e, t) {
-              return c(e, t) && !(Object.hasOwnProperty.call(e, t) && Object.propertyIsEnumerable.call(e, t))
-            })(e, o) || (c(e, o) && r.isMergeableObject(t[o]) ? n[o] = function(e, t) {
+              return o(e, t) && !(Object.hasOwnProperty.call(e, t) && Object.propertyIsEnumerable.call(e, t))
+            })(e, c) || (o(e, c) && r.isMergeableObject(t[c]) ? n[c] = function(e, t) {
               if (!t.customMerge) return s;
               var r = t.customMerge(e);
               return "function" == typeof r ? r : s
-            }(o, r)(e[o], t[o], r) : n[o] = a(t[o], r))
+            }(c, r)(e[c], t[c], r) : n[c] = a(t[c], r))
           })), n
         }(e, r, i) : a(r, i)
       }

@@ -16,15 +16,15 @@ try {
     28845: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => i,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => x,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => i,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
@@ -33,8 +33,8 @@ try {
         default: () => p
       });
       var _ = "Fechar lightbox",
-        i = "Pressionar {shortcut}",
-        a = "Aproximar zoom",
+        a = "Pressionar {shortcut}",
+        i = "Aproximar zoom",
         l = "Pressionar {shortcut}",
         n = "Afastar zoom",
         d = "Pressionar {shortcut}",
@@ -44,13 +44,13 @@ try {
         g = "{zoom}%",
         u = "Baixar",
         h = "Baixar",
-        f = "Abrir imagem na lightbox",
-        L = "lightbox da imagem",
+        L = "Abrir imagem na lightbox",
+        f = "lightbox da imagem",
         x = "Texto alternativo: {alt}",
         p = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: d,
@@ -60,8 +60,8 @@ try {
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: u,
           Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: L,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
           Lightbox_Dialog_Description: x
         }
     }

@@ -26,9 +26,9 @@ try {
               t = o[1] || 0,
               n = String(t ? Number(o[0]) * Math.pow(10, t) : d).split("."),
               l = n[0],
-              f = !n[1],
-              s = l.slice(-6);
-            return a ? "other" : 0 == l || 1 == l ? "one" : 0 == t && 0 != l && 0 == s && f || t < 0 || t > 5 ? "many" : "other"
+              s = !n[1],
+              f = l.slice(-6);
+            return a ? "other" : 0 == l || 1 == l ? "one" : 0 == t && 0 != l && 0 == f && s || t < 0 || t > 5 ? "many" : "other"
           }
         },
         locale: "pt"

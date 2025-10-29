@@ -29,7 +29,7 @@ try {
         merge: () => m,
         mergeProps: () => c,
         omit: () => w,
-        range: () => p,
+        range: () => _,
         set: () => P,
         throttle: () => T
       });
@@ -87,15 +87,15 @@ try {
       }
       const h = "__FOUNDRY_ACCENT__",
         g = (e, t) => r ? t() : (window[h] || (window[h] = new Map), window[h].has(e) || window[h].set(e, t()), window[h].get(e));
-      var _ = n(98312);
+      var b = n(98312);
 
-      function p(e) {
-        return _(e)
+      function _(e) {
+        return b(e)
       }
-      var b = n(41972);
+      var p = n(41972);
 
       function w(e, ...t) {
-        return b(e, ...t)
+        return p(e, ...t)
       }
       var y = n(56265);
 
@@ -196,10 +196,10 @@ try {
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
-          _ = r - 2 * t,
-          p = 3 * t,
-          b = o ? D : N;
-        return e => 0 === e || 1 === e ? e : O(b(e, f, h, u, c), g, _, p)
+          b = r - 2 * t,
+          _ = 3 * t,
+          p = o ? D : N;
+        return e => 0 === e || 1 === e ? e : O(p(e, f, h, u, c), g, b, _)
       }
       const z = (...e) => e.filter((e => e)).join(" ")
     }

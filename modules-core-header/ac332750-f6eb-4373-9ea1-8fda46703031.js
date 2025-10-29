@@ -44,8 +44,8 @@ try {
         }), {}),
         d = n(76286),
         a = "focusScope.autoFocusOnMount",
-        f = "focusScope.autoFocusOnUnmount",
-        i = {
+        i = "focusScope.autoFocusOnUnmount",
+        f = {
           bubbles: !1,
           cancelable: !0
         },
@@ -99,7 +99,7 @@ try {
               b.add(k);
               const e = document.activeElement;
               if (!_.contains(e)) {
-                const t = new CustomEvent(a, i);
+                const t = new CustomEvent(a, f);
                 _.addEventListener(a, h), _.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
@@ -114,10 +114,10 @@ try {
               }
               return () => {
                 _.removeEventListener(a, h), setTimeout((() => {
-                  const t = new CustomEvent(f, i);
-                  _.addEventListener(f, w), _.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
+                  const t = new CustomEvent(i, f);
+                  _.addEventListener(i, w), _.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
                     select: !0
-                  }), _.removeEventListener(f, w), b.remove(k)
+                  }), _.removeEventListener(i, w), b.remove(k)
                 }), 0)
               }
             }
@@ -228,15 +228,15 @@ try {
       function a(e, t, n) {
         var o, u = {},
           a = null,
-          f = null;
-        for (o in void 0 !== n && (a = "" + n), void 0 !== t.key && (a = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, o) && !d.hasOwnProperty(o) && (u[o] = t[o]);
+          i = null;
+        for (o in void 0 !== n && (a = "" + n), void 0 !== t.key && (a = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !d.hasOwnProperty(o) && (u[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === u[o] && (u[o] = t[o]);
         return {
           $$typeof: r,
           type: e,
           key: a,
-          ref: f,
+          ref: i,
           props: u,
           _owner: c.current
         }

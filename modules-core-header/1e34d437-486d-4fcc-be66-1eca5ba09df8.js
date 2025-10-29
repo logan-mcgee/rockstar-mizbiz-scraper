@@ -74,7 +74,7 @@ try {
           defaultProp: a,
           onChange: f,
           caller: i
-        } = t, g = void 0 !== l, b = function(e) {
+        } = t, b = void 0 !== l, g = function(e) {
           if ("function" == typeof c) return c(e);
           const t = o.useRef((() => {
             throw new Error("Cannot call an event handler while rendering.")
@@ -88,13 +88,13 @@ try {
           const e = o.useRef(void 0 !== l);
           o.useEffect((() => {
             const t = e.current;
-            if (t !== g) {
+            if (t !== b) {
               const e = t ? "controlled" : "uncontrolled",
-                n = g ? "controlled" : "uncontrolled";
+                n = b ? "controlled" : "uncontrolled";
               console.warn(`${i} is changing from ${e} to ${n}. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.`)
             }
-            e.current = g
-          }), [g, i])
+            e.current = b
+          }), [b, i])
         }
         const p = [{
           ...n,
@@ -107,21 +107,21 @@ try {
             state: n.state
           };
           const o = e(t, n);
-          return g && !Object.is(o.state, t.state) && b(o.state), o
+          return b && !Object.is(o.state, t.state) && g(o.state), o
         }), ...p), w = h.state, m = o.useRef(w);
         o.useEffect((() => {
-          m.current !== w && (m.current = w, g || b(w))
-        }), [b, w, m, g]);
+          m.current !== w && (m.current = w, b || g(w))
+        }), [g, w, m, b]);
         const E = o.useMemo((() => void 0 !== l ? {
           ...h,
           state: l
         } : h), [h, l]);
         return o.useEffect((() => {
-          g && !Object.is(l, h.state) && y({
+          b && !Object.is(l, h.state) && y({
             type: u,
             state: l
           })
-        }), [l, h.state, g]), [E, y]
+        }), [l, h.state, b]), [E, y]
       }
     },
     63155: (e, t, n) => {

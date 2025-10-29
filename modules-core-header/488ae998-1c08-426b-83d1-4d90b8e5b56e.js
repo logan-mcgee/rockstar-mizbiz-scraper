@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => p
+        default: () => c
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
@@ -47,7 +47,7 @@ try {
         L = "Apri immagine in lightbox",
         f = "Immagine lightbox",
         m = "Testo alternativo: {alt}",
-        p = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,

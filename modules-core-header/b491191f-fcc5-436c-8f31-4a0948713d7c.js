@@ -61,10 +61,10 @@ try {
         IS_SERVER: () => r.X,
         PromiseState: () => j,
         breakpoints: () => o,
-        clone: () => y,
+        clone: () => b,
         cubicBezier: () => A,
         debounce: () => M,
-        filterEventProps: () => d,
+        filterEventProps: () => c,
         get: () => E,
         getOrSet: () => f,
         joinStrings: () => C,
@@ -84,7 +84,7 @@ try {
       const i = /^(on.*)$/,
         a = /^(onPress.*)$/;
 
-      function d(e, {
+      function c(e, {
         onPress: t
       } = {
         onPress: !0
@@ -97,8 +97,8 @@ try {
           others: r
         }
       }
-      const c = "__FOUNDRY_ACCENT__",
-        f = (e, t) => r.X ? t() : (window[c] || (window[c] = new Map), window[c].has(e) || window[c].set(e, t()), window[c].get(e));
+      const d = "__FOUNDRY_ACCENT__",
+        f = (e, t) => r.X ? t() : (window[d] || (window[d] = new Map), window[d].has(e) || window[d].set(e, t()), window[d].get(e));
       var l = n(98312);
 
       function u(e) {
@@ -116,13 +116,13 @@ try {
       }
       var w = n(31454);
 
-      function y(e) {
+      function b(e) {
         return w(e)
       }
-      var b = n(10533);
+      var y = n(10533);
 
       function m(e, t, n, r) {
-        return b(e, t, n, r)
+        return y(e, t, n, r)
       }
       var v = n(10613);
 
@@ -189,9 +189,9 @@ try {
           return T(s + e) + T(s - e) - o
         }
         const a = T(x(s * s - i)),
-          d = s ? Math.atan(x(-i) / s) : -I / 2;
-        let c;
-        return c = n < 0 ? (s > 0 ? 2 * I : I) - d : o < 0 ? (s > 0 ? 2 * I : -3 * I) + d : (s > 0 ? 0 : I) + d, 2 * a * Math.cos(c / 3) - o
+          c = s ? Math.atan(x(-i) / s) : -I / 2;
+        let d;
+        return d = n < 0 ? (s > 0 ? 2 * I : I) - c : o < 0 ? (s > 0 ? 2 * I : -3 * I) + c : (s > 0 ? 0 : I) + c, 2 * a * Math.cos(d / 3) - o
       }, R = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function A(e, t, n, r) {
@@ -201,17 +201,17 @@ try {
           s = 6 * (n - 2 * e),
           i = 3 * e,
           a = o * o,
-          d = s * s,
-          c = s / o,
-          f = 3 * s * i / a - d * s / (a * o),
-          l = 2 * i / o - d / a,
+          c = s * s,
+          d = s / o,
+          f = 3 * s * i / a - c * s / (a * o),
+          l = 2 * i / o - c / a,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
           w = o ? N : S;
-        return e => 0 === e || 1 === e ? e : R(w(e, f, h, u, c), g, _, p)
+        return e => 0 === e || 1 === e ? e : R(w(e, f, h, u, d), g, _, p)
       }
       const C = (...e) => e.filter((e => e)).join(" ")
     }

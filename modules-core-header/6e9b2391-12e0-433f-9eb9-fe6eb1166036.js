@@ -27,8 +27,8 @@ try {
         getOrSet: () => g,
         joinStrings: () => z,
         merge: () => m,
-        mergeProps: () => f,
-        omit: () => b,
+        mergeProps: () => c,
+        omit: () => w,
         range: () => p,
         set: () => P,
         throttle: () => T
@@ -55,7 +55,7 @@ try {
         }
       }
 
-      function f(...e) {
+      function c(...e) {
         const t = {
           ...e[0]
         };
@@ -69,7 +69,7 @@ try {
         }
         return t
       }
-      const c = /^(on.*)$/,
+      const f = /^(on.*)$/,
         l = /^(onPress.*)$/;
 
       function u(e, {
@@ -79,7 +79,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : c.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -92,10 +92,10 @@ try {
       function p(e) {
         return _(e)
       }
-      var w = n(41972);
+      var b = n(41972);
 
-      function b(e, ...t) {
-        return w(e, ...t)
+      function w(e, ...t) {
+        return b(e, ...t)
       }
       var y = n(56265);
 
@@ -178,8 +178,8 @@ try {
         }
         const a = R(A(s * s - i)),
           d = s ? Math.atan(A(-i) / s) : -C / 2;
-        let f;
-        return f = n < 0 ? (s > 0 ? 2 * C : C) - d : o < 0 ? (s > 0 ? 2 * C : -3 * C) + d : (s > 0 ? 0 : C) + d, 2 * a * Math.cos(f / 3) - o
+        let c;
+        return c = n < 0 ? (s > 0 ? 2 * C : C) - d : o < 0 ? (s > 0 ? 2 * C : -3 * C) + d : (s > 0 ? 0 : C) + d, 2 * a * Math.cos(c / 3) - o
       }, O = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function F(e, t, n, r) {
@@ -190,16 +190,16 @@ try {
           i = 3 * e,
           a = o * o,
           d = s * s,
-          f = s / o,
-          c = 3 * s * i / a - d * s / (a * o),
+          c = s / o,
+          f = 3 * s * i / a - d * s / (a * o),
           l = 2 * i / o - d / a,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? D : N;
-        return e => 0 === e || 1 === e ? e : O(w(e, c, h, u, f), g, _, p)
+          b = o ? D : N;
+        return e => 0 === e || 1 === e ? e : O(b(e, f, h, u, c), g, _, p)
       }
       const z = (...e) => e.filter((e => e)).join(" ")
     }

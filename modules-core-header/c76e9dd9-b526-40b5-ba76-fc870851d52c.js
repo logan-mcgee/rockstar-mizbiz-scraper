@@ -61,7 +61,7 @@ try {
         IS_SERVER: () => r.X,
         PromiseState: () => j,
         breakpoints: () => o,
-        clone: () => b,
+        clone: () => w,
         cubicBezier: () => A,
         debounce: () => M,
         filterEventProps: () => d,
@@ -114,10 +114,10 @@ try {
       function p(e, t) {
         return _(e, t)
       }
-      var w = n(31454);
+      var b = n(31454);
 
-      function b(e) {
-        return w(e)
+      function w(e) {
+        return b(e)
       }
       var y = n(10533);
 
@@ -210,8 +210,8 @@ try {
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          w = o ? N : S;
-        return e => 0 === e || 1 === e ? e : R(w(e, f, h, u, c), g, _, p)
+          b = o ? N : S;
+        return e => 0 === e || 1 === e ? e : R(b(e, f, h, u, c), g, _, p)
       }
       const C = (...e) => e.filter((e => e)).join(" ")
     }
