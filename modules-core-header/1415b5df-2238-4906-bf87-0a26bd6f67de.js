@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => c
+        default: () => x
       });
       var _ = "Zamknij podgląd",
         i = "Naciśnij {shortcut}",
@@ -47,7 +47,7 @@ try {
         h = "Otwórz obraz w podglądzie",
         L = "Podgląd obrazu",
         p = "Tekst alternatywny: {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,

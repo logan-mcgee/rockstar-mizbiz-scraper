@@ -17,11 +17,11 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => i,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => p
+        default: () => c
       });
       var _ = "ライトボックスを閉じる",
         l = "{shortcut}を押す",
@@ -43,11 +43,11 @@ try {
         u = "ズームの度合",
         g = "{zoom}%",
         h = "ダウンロード",
-        f = "ダウンロード",
-        r = "ライトボックス内のイメージを開く",
-        L = "ライトボックスのイメージ",
-        c = "Altテキスト：{alt}",
-        p = {
+        r = "ダウンロード",
+        L = "ライトボックス内のイメージを開く",
+        f = "ライトボックスのイメージ",
+        p = "Altテキスト：{alt}",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
@@ -59,10 +59,10 @@ try {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: c
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: p
         }
     }
   }

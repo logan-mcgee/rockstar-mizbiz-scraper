@@ -45,7 +45,7 @@ try {
         n = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
         d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        c = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -55,15 +55,15 @@ try {
       function l(e, a, s) {
         var r, n = {},
           l = null,
-          c = null;
-        for (r in void 0 !== s && (l = "" + s), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) o.call(a, r) && !f.hasOwnProperty(r) && (n[r] = a[r]);
+          f = null;
+        for (r in void 0 !== s && (l = "" + s), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (f = a.ref), a) o.call(a, r) && !c.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
           $$typeof: t,
           type: e,
           key: l,
-          ref: c,
+          ref: f,
           props: n,
           _owner: d.current
         }

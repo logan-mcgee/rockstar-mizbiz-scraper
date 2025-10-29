@@ -23,8 +23,8 @@ try {
         r = t(2649),
         l = t(1915),
         o = t(3497),
-        i = t(5966),
-        c = t(2918);
+        c = t(5966),
+        i = t(2918);
       const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,7 +35,7 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, i.withTranslations)((({
+        g = (0, c.withTranslations)((({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
@@ -44,15 +44,15 @@ try {
         }) => {
           const {
             data: p
-          } = (0, c.useRockstarUser)(), {
-            track: y
-          } = (0, c.useGtmTrack)(), b = (0, i.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+          } = (0, i.useRockstarUser)(), {
+            track: b
+          } = (0, i.useGtmTrack)(), y = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
           } = t;
           return (0, n.useEffect)((() => {
-            y({
+            b({
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
@@ -84,7 +84,7 @@ try {
                   n = (0, r.f)(t) && (0, l.d)(t, s);
                 if (k(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
-                  y(a ? {
+                  b(a ? {
                     event: "age_gate_passed",
                     element_placement: g.element_placement ?? ""
                   } : {
@@ -93,7 +93,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";
-                  (0, i.setCookieValue)("UAGC", s), _(s)
+                  (0, c.setCookieValue)("UAGC", s), _(s)
                 }
               },
               "data-testid": "agegate-form",

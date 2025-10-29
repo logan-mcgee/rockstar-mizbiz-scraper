@@ -150,15 +150,15 @@ try {
           c = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
-        var y = (0, r.CanonicalizeLocaleList)(t),
-          b = Object.create(null),
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          y = Object.create(null),
           p = (0, r.CoerceOptionsToObject)(a),
           v = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        b.localeMatcher = v;
+        y.localeMatcher = v;
         var m = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
-        b.nu = m;
-        var g = (0, n.ResolveLocale)(s, y, b, u, d, c),
+        y.nu = m;
+        var g = (0, n.ResolveLocale)(s, b, y, u, d, c),
           w = g.locale,
           h = g.nu;
         f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
@@ -197,8 +197,8 @@ try {
           d = u.fields,
           c = u.style,
           f = u.numeric,
-          y = u.pluralRules,
-          b = u.numberFormat,
+          b = u.pluralRules,
+          y = u.numberFormat,
           p = s;
         "short" === c ? p = "".concat(s, "-short") : "narrow" === c && (p = "".concat(s, "-narrow")), p in d || (p = s);
         var v = d[p];
@@ -209,12 +209,12 @@ try {
         var m = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
         var g = v[m],
-          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: b.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
-          h = g[y.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, s, w)
       };
       var r = a(62306),

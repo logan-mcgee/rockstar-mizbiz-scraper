@@ -18,10 +18,10 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => L,
-        Lightbox_Download_Button_Label: () => f,
-        Lightbox_Download_Button_Tooltip: () => r,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Dialog_Title: () => f,
+        Lightbox_Download_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => c
       });
       var _ = "关闭弹窗",
         i = "按 {shortcut}",
@@ -42,12 +42,12 @@ try {
         s = "按 {shortcut}",
         g = "缩放比例",
         u = "{zoom}%",
-        f = "下载",
         r = "下载",
-        h = "在弹窗中打开图片",
-        L = "图片弹窗",
+        h = "下载",
+        L = "在弹窗中打开图片",
+        f = "图片弹窗",
         p = "替代文本：{alt}",
-        x = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -58,10 +58,10 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: f,
-          Lightbox_Download_Button_Tooltip: r,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: L,
+          Lightbox_Download_Button_Label: r,
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
           Lightbox_Dialog_Description: p
         }
     }

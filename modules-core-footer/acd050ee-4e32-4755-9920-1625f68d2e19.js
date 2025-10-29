@@ -17,11 +17,11 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Description: () => x,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => p
       });
       var _ = "Cerrar Lightbox",
         i = "Pulsa {shortcut}",
@@ -43,11 +43,11 @@ try {
         g = "Nivel de zoom",
         u = "{zoom}%",
         r = "Descargar",
-        f = "Descargar",
-        h = "Abrir imagen en Lightbox",
-        L = "Imagen en Lightbox",
-        c = "Texto alternativo: {alt}",
-        x = {
+        h = "Descargar",
+        L = "Abrir imagen en Lightbox",
+        f = "Imagen en Lightbox",
+        x = "Texto alternativo: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -59,10 +59,10 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: c
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: x
         }
     }
   }

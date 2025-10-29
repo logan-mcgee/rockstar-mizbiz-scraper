@@ -43,7 +43,7 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         FormattedMessage: () => n.A,
-        POSIXLocales: () => y,
+        POSIXLocales: () => b,
         ReactIntlProviderForMocking: () => i.A,
         createDevLocaleHook: () => E,
         createIntl: () => a.E,
@@ -53,7 +53,7 @@ try {
         getLocale: () => h,
         linkWithLocale: () => P,
         localeCookieHandler: () => p,
-        locales: () => b,
+        locales: () => y,
         onLanguageChange: () => S,
         splitLocale: () => k,
         useIntl: () => s.A,
@@ -180,13 +180,13 @@ try {
           store: "zh-CN"
         }],
         _ = m[0],
-        y = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        b = m,
+        b = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        y = m,
         h = () => {
           const {
             location: e
           } = window, t = (0, u.A)(), r = (e => {
-            const t = b.map((e => e.subdomaincom)),
+            const t = y.map((e => e.subdomaincom)),
               r = e.pathname.substring(1).split("/"),
               o = "detect-locals" === r[0] ? 1 : 0;
             return -1 !== t.indexOf(r[o]) ? r[o] : null
@@ -197,7 +197,7 @@ try {
           let a = n;
           const s = `rockstarweb_lang.${t.cookieIdentifier}`,
             i = d(s);
-          a = t.currentSite?.site === u.C.www ? b.find((e => e.subdomaincom === o)) || b.find((e => e.subdomaincom === r)) || n : b.find((e => e.iso === i)) || n;
+          a = t.currentSite?.site === u.C.www ? y.find((e => e.subdomaincom === o)) || y.find((e => e.subdomaincom === r)) || n : y.find((e => e.iso === i)) || n;
           const [, c] = p(s, a.iso);
           return [a, c]
         };
@@ -343,7 +343,7 @@ try {
             i = (e => {
               let t = location.pathname.replace(/^\/|\/$/g, "");
               const r = t.split("/");
-              return b.map((e => e.subdomaincom)).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
+              return y.map((e => e.subdomaincom)).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
             })(a);
           t?.({
             event: "cta_other",
@@ -480,11 +480,11 @@ try {
         __classPrivateFieldGet: () => T,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => L,
-        __createBinding: () => y,
+        __createBinding: () => b,
         __decorate: () => i,
         __disposeResources: () => U,
         __esDecorate: () => l,
-        __exportStar: () => b,
+        __exportStar: () => y,
         __extends: () => n,
         __generator: () => _,
         __importDefault: () => D,
@@ -569,15 +569,15 @@ try {
             if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(s(e || null))
           };
-          var y = (0, r[p])("accessor" === c ? {
+          var b = (0, r[p])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[l], m);
           if ("accessor" === c) {
-            if (void 0 === y) continue;
-            if (null === y || "object" != typeof y) throw new TypeError("Object expected");
-            (i = s(y.get)) && (f.get = i), (i = s(y.set)) && (f.set = i), (i = s(y.init)) && n.unshift(i)
-          } else(i = s(y)) && ("field" === c ? n.unshift(i) : f[l] = i)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (i = s(b.get)) && (f.get = i), (i = s(b.set)) && (f.set = i), (i = s(b.init)) && n.unshift(i)
+          } else(i = s(b)) && ("field" === c ? n.unshift(i) : f[l] = i)
         }
         u && Object.defineProperty(u, o.name, f), d = !0
       }
@@ -702,7 +702,7 @@ try {
           }
         }
       }
-      var y = Object.create ? function(e, t, r, o) {
+      var b = Object.create ? function(e, t, r, o) {
         void 0 === o && (o = r);
         var n = Object.getOwnPropertyDescriptor(t, r);
         n && !("get" in n ? !t.__esModule : n.writable || n.configurable) || (n = {
@@ -715,8 +715,8 @@ try {
         void 0 === o && (o = r), e[o] = t[r]
       };
 
-      function b(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || y(t, e, r)
+      function y(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function h(e) {
@@ -889,7 +889,7 @@ try {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && y(t, e, r[o]);
+          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && b(t, e, r[o]);
         return S(t, e), t
       }
 
@@ -991,8 +991,8 @@ try {
         __metadata: p,
         __awaiter: m,
         __generator: _,
-        __createBinding: y,
-        __exportStar: b,
+        __createBinding: b,
+        __exportStar: y,
         __values: h,
         __read: w,
         __spread: v,

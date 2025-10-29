@@ -16,26 +16,26 @@ try {
     30068: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => u,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => p
       });
       var _ = "Cerrar",
-        i = "Presiona {shortcut}",
-        n = "Acercar",
         a = "Presiona {shortcut}",
+        i = "Acercar",
+        n = "Presiona {shortcut}",
         l = "Alejar",
         b = "Presiona {shortcut}",
         d = "Restablecer",
@@ -43,15 +43,15 @@ try {
         g = "Nivel del zoom",
         r = "{zoom}%",
         u = "Descargar",
-        f = "Descargar",
-        h = "Abrir imagen",
-        L = "Imagen",
-        p = "Texto alt: {alt}",
-        c = {
+        h = "Descargar",
+        L = "Abrir imagen",
+        f = "Imagen",
+        c = "Texto alt: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
@@ -59,10 +59,10 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: u,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: p
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: c
         }
     }
   }

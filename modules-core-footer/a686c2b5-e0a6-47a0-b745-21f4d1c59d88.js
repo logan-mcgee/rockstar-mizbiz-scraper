@@ -147,9 +147,9 @@ try {
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
           c = l.localeData,
-          f = l.getDefaultLocale,
-          d = i(e);
-        d.initializedRelativeTimeFormat = !0;
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
         var y = (0, r.CanonicalizeLocaleList)(t),
           m = Object.create(null),
           p = (0, r.CoerceOptionsToObject)(a),
@@ -158,12 +158,12 @@ try {
         var b = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         m.nu = b;
-        var g = (0, n.ResolveLocale)(u, y, m, s, c, f),
+        var g = (0, n.ResolveLocale)(u, y, m, s, c, d),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(62306),
         n = a(74578),
@@ -195,14 +195,14 @@ try {
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
           c = s.fields,
-          f = s.style,
-          d = s.numeric,
+          d = s.style,
+          f = s.numeric,
           y = s.pluralRules,
           m = s.numberFormat,
           p = u;
-        "short" === f ? p = "".concat(u, "-short") : "narrow" === f && (p = "".concat(u, "-narrow")), p in c || (p = u);
+        "short" === d ? p = "".concat(u, "-short") : "narrow" === d && (p = "".concat(u, "-narrow")), p in c || (p = u);
         var v = c[p];
-        if ("auto" === d && (0, r.ToString)(t) in v) return [{
+        if ("auto" === f && (0, r.ToString)(t) in v) return [{
           type: "literal",
           value: v[(0, r.ToString)(t)]
         }];

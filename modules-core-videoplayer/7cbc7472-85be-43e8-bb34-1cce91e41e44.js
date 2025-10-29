@@ -13,23 +13,23 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [5055], {
-    7436: (e, d, t) => {
-      var o = t(2295),
-        a = t(5966),
-        n = t(9827),
-        l = t(9623),
-        r = t(1788),
-        s = t(2918),
-        i = t(4994),
-        c = t(2542);
+    7436: (e, d, a) => {
+      var t = a(2295),
+        o = a(5966),
+        n = a(9827),
+        l = a(9623),
+        r = a(1788),
+        s = a(2918),
+        i = a(4994),
+        c = a(2542);
       const u = window?.env?.graphEnv ?? "prod",
         f = (0, r.withIntl)((() => {
           const [e, d] = (0, l.useSearchParams)(), [{
-            iso: t
+            iso: a
           }] = (0, r.getLocale)(), n = "true" === e.get("autoplay"), c = e.get("id"), u = e.get("resolution") ?? null, f = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
-          return (0, o.jsx)(a.ResizeProvider, {
-            children: (0, o.jsx)(s.GtmProvider, {
-              children: (0, o.jsx)(i.A, {
+          return (0, t.jsx)(o.ResizeProvider, {
+            children: (0, t.jsx)(s.GtmProvider, {
+              children: (0, t.jsx)(i.A, {
                 autoplay: n,
                 context: "embed",
                 locale: f,
@@ -48,21 +48,21 @@ try {
             })
           })
         }), c),
-        b = (0, a.withRockstarGraph)((() => (0, o.jsx)(l.BrowserRouter, {
-          children: (0, o.jsx)(f, {})
+        b = (0, o.withRockstarGraph)((() => (0, t.jsx)(l.BrowserRouter, {
+          children: (0, t.jsx)(f, {})
         })), {
           env: u
         }),
         g = window?.env?.gtmId ?? null;
-      (0, a.gtmInit)({
+      (0, o.gtmInit)({
         id: g
       });
       const y = document.createElement("main");
-      document.body.appendChild(y), (0, n.H)(y).render((0, o.jsx)(b, {}))
+      document.body.appendChild(y), (0, n.H)(y).render((0, t.jsx)(b, {}))
     },
-    9827: (e, d, t) => {
-      var o = t(4853);
-      d.H = o.createRoot, o.hydrateRoot
+    9827: (e, d, a) => {
+      var t = a(4853);
+      d.H = t.createRoot, t.hydrateRoot
     }
   }
 ]);

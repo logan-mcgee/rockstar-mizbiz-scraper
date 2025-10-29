@@ -25,10 +25,10 @@ try {
               n = t.split(/[ce]/),
               d = n[1] || 0,
               l = String(d ? Number(n[0]) * Math.pow(10, d) : t).split("."),
-              f = l[0],
-              o = !l[1],
-              s = f.slice(-6);
-            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && o ? "one" : 0 == d && 0 != f && 0 == s && o || d < 0 || d > 5 ? "many" : "other"
+              o = l[0],
+              s = !l[1],
+              f = o.slice(-6);
+            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == d && 0 != o && 0 == f && s || d < 0 || d > 5 ? "many" : "other"
           }
         },
         locale: "it"

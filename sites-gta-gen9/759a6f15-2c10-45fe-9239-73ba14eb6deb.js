@@ -75,13 +75,13 @@ try {
           labelColor: d = "#000",
           onClick: i,
           secondText: b,
-          size: f,
-          text: g,
+          size: g,
+          text: f,
           to: u,
           type: p = "",
           ariaLabel: k
         }) => {
-          const m = [r.plusButton, r[p] ?? "", r[f] ?? "", r[a] ?? "", t].join(" "),
+          const m = [r.plusButton, r[p] ?? "", r[g] ?? "", r[a] ?? "", t].join(" "),
             h = {
               "--hvr-color": e ?? d,
               "--hvr-bg-color": d ?? e,
@@ -94,7 +94,7 @@ try {
               }) : "", (0, s.jsxs)("div", {
                 className: r.btnText,
                 icon: n,
-                children: [g, b ? (0, s.jsx)("span", {
+                children: [f, b ? (0, s.jsx)("span", {
                   children: b
                 }) : ""]
               })]
@@ -142,7 +142,7 @@ try {
       a.d(t, {
         C1: () => c,
         S1: () => o,
-        XC: () => f,
+        XC: () => g,
         jS: () => d,
         qg: () => i,
         z0: () => b
@@ -170,18 +170,18 @@ try {
             {
               meta: b = {}
             } = (0, r.i)() ?? {},
-            [f, g] = (0, s.useState)(d ?? b?.cdn ?? b?.prod ?? !0);
+            [g, f] = (0, s.useState)(d ?? b?.cdn ?? b?.prod ?? !0);
           (0, s.useEffect)((() => {
-            g(d ?? b?.cdn ?? b?.prod ?? !0)
+            f(d ?? b?.cdn ?? b?.prod ?? !0)
           }), [d, b]);
           const u = (0, s.useCallback)((e => {
             const t = null !== c,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
             if (a.startsWith("http")) return l(a);
-            const s = `${t?(0,n.getCdnPrefix)(f):""}${a}`;
+            const s = `${t?(0,n.getCdnPrefix)(g):""}${a}`;
             return l(s)
-          }), [f, c]);
+          }), [g, c]);
           return {
             alt: e,
             ariaLabel: o,
@@ -217,7 +217,7 @@ try {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,n.getCdnPrefix)(!1)}${t}`
         },
-        f = e => e.meta.uploads_directory
+        g = e => e.meta.uploads_directory
     },
     74767: (e, t, a) => {
       a.d(t, {

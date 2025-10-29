@@ -20,11 +20,11 @@ try {
         throw new Error("setTimeout has not been defined")
       }
 
-      function i() {
+      function a() {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function a(e) {
+      function i(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -43,9 +43,9 @@ try {
           t = o
         }
         try {
-          n = "function" == typeof clearTimeout ? clearTimeout : i
+          n = "function" == typeof clearTimeout ? clearTimeout : a
         } catch (e) {
-          n = i
+          n = a
         }
       }();
       var s, f = [],
@@ -58,7 +58,7 @@ try {
 
       function c() {
         if (!u) {
-          var e = a(l);
+          var e = i(l);
           u = !0;
           for (var t = f.length; t;) {
             for (s = f, f = []; ++d < t;) s && s[d].run();
@@ -67,7 +67,7 @@ try {
           s = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
-              if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+              if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
               try {
                 return n(e)
               } catch (t) {
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        f.push(new h(e, t)), 1 !== f.length || u || a(c)
+        f.push(new h(e, t)), 1 !== f.length || u || i(c)
       }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = g, r.addListener = g, r.once = g, r.off = g, r.removeListener = g, r.removeAllListeners = g, r.emit = g, r.prependListener = g, r.prependOnceListener = g, r.listeners = function(e) {

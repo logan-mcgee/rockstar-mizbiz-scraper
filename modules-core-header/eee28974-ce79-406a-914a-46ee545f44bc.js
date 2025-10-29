@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "eee28974-ce79-406a-914a-46ee545f44bc", o._sentryDebugIdIdentifier = "sentry-dbid-eee28974-ce79-406a-914a-46ee545f44bc")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "eee28974-ce79-406a-914a-46ee545f44bc", o._sentryDebugIdIdentifier = "sentry-dbid-eee28974-ce79-406a-914a-46ee545f44bc")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,15 +13,15 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6471], {
-    96471: (o, t, e) => {
-      e.r(t), e.d(t, {
+    96471: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => i,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => x
       });
       var _ = "Закрыть всплывающее окно",
         l = "Нажмите {shortcut}",
@@ -43,11 +43,11 @@ try {
         u = "Масштаб",
         g = "{zoom}%",
         h = "Загрузить",
-        f = "Загрузить",
-        r = "Открыть изображение в всплывающем окне",
-        L = "Всплывающее окно",
+        r = "Загрузить",
+        L = "Открыть изображение в всплывающем окне",
+        f = "Всплывающее окно",
         p = "Замещающий текст: {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
@@ -59,9 +59,9 @@ try {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: L,
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
           Lightbox_Dialog_Description: p
         }
     }

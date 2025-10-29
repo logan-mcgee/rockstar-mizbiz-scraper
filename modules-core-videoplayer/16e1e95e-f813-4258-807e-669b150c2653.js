@@ -15,33 +15,33 @@ try {
   [1773, 4154], {
     4154: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => i
+        useGSAP: () => c
       });
       var d = t(2229),
         r = t(3581),
-        o = t.n(r);
-      let s = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
-        a = e => e && !Array.isArray(e) && "object" == typeof e,
+        a = t.n(r);
+      let o = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         l = {},
-        u = o();
-      const i = (e, n = f) => {
+        u = a();
+      const c = (e, n = f) => {
         let t = l;
-        a(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : a(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: r,
-          revertOnUpdate: o
-        } = t, i = (0, d.useRef)(!1), c = (0, d.useRef)(u.context((() => {}), r)), y = (0, d.useRef)((e => c.current.add(null, e))), p = n && n.length && !o;
-        return p && s((() => (i.current = !0, () => c.current.revert())), f), s((() => {
-          if (e && c.current.add(e, r), !p || !i.current) return () => c.current.revert()
+          revertOnUpdate: a
+        } = t, c = (0, d.useRef)(!1), i = (0, d.useRef)(u.context((() => {}), r)), y = (0, d.useRef)((e => i.current.add(null, e))), p = n && n.length && !a;
+        return p && o((() => (c.current = !0, () => i.current.revert())), f), o((() => {
+          if (e && i.current.add(e, r), !p || !c.current) return () => i.current.revert()
         }), n), {
-          context: c.current,
+          context: i.current,
           contextSafe: y.current
         }
       };
-      i.register = e => {
+      c.register = e => {
         u = e
-      }, i.headless = !0
+      }, c.headless = !0
     }
   }
 ]);

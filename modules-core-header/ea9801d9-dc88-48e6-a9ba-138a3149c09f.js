@@ -18,10 +18,10 @@ try {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => i,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => x
       });
       var _ = "關閉燈箱",
         l = "按 {shortcut}",
@@ -43,11 +43,11 @@ try {
         u = "縮放比例",
         g = "{zoom}%",
         h = "下載",
-        f = "下載",
-        r = "在燈箱中開啟圖片",
-        L = "圖片燈箱",
+        r = "下載",
+        L = "在燈箱中開啟圖片",
+        f = "圖片燈箱",
         p = "圖片替代文字：{alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
@@ -59,9 +59,9 @@ try {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: L,
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
           Lightbox_Dialog_Description: p
         }
     }

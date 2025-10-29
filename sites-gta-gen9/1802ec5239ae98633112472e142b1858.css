@@ -1,0 +1,330 @@
+.rockstargames-sites-gta-gen9b0ff0045ed0326a46ca1e0867d2050c1 {
+  display: block
+}
+
+.rockstargames-sites-gta-gen9f54750ef62f8600000c94f0caba85986 {
+  --rpLevelSize: var(--foundry-global-spacing-dimensions-500);
+  --rpLevelSizeMobile: var(--foundry-global-spacing-dimensions-400);
+  align-items: center;
+  display: flex;
+  height: var(--rpLevelSize);
+  justify-content: center;
+  position: relative;
+  width: var(--rpLevelSize)
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-gen9f54750ef62f8600000c94f0caba85986 {
+    height: var(--rpLevelSizeMobile);
+    width: var(--rpLevelSizeMobile)
+  }
+}
+
+.rockstargames-sites-gta-gen9a3beb1e9c88e2938879ea4df25b63eb1 {
+  aspect-ratio: 1/1;
+  height: var(--rpLevelSize);
+  position: absolute;
+  z-index: 0
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-gen9a3beb1e9c88e2938879ea4df25b63eb1 {
+    height: var(--rpLevelSizeMobile)
+  }
+}
+
+.rockstargames-sites-gta-gen9d9ea5cdf174033003a8670f31ae66a59 {
+  color: #fff;
+  font-family: var(--gta-font-family-h);
+  font-size: var(--foundry-alias-font-size-heading-04);
+  font-weight: var(--foundry-alias-font-weight-regular);
+  height: var(--rpLevelSize);
+  left: 50%;
+  line-height: var(--rpLevelSize);
+  margin-top: var(--foundry-global-spacing-dimensions-25);
+  position: relative;
+  text-align: center;
+  transform: translateX(-50%);
+  width: var(--rpLevelSize);
+  z-index: 1
+}
+
+[data-mac-browser=true] .rockstargames-sites-gta-gen9d9ea5cdf174033003a8670f31ae66a59 {
+  line-height: var(--rem-2)
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-gen9d9ea5cdf174033003a8670f31ae66a59 {
+    font-size: var(--foundry-global-font-size-400);
+    height: var(--rpLevelSizeMobile);
+    line-height: var(--rpLevelSizeMobile);
+    width: var(--rpLevelSizeMobile)
+  }
+
+  [data-mac-browser=true] .rockstargames-sites-gta-gen9d9ea5cdf174033003a8670f31ae66a59 {
+    line-height: calc(var(--base-rem-size) * 2.8)
+  }
+
+  [data-size=small] .rockstargames-sites-gta-gen9d9ea5cdf174033003a8670f31ae66a59 {
+    font-size: var(--foundry-global-font-size-225)
+  }
+}
+
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384 {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384 img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384:focus,
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384.rockstargames-sites-gta-gen9bea9f79c808d1708a75dce73f5536429 {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.rockstargames-sites-gta-gen9a15bc230de8682280107c3a04e2e7384.rockstargames-sites-gta-gen9bea9f79c808d1708a75dce73f5536429 img {
+  filter: invert()
+}
+
+.rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1 {
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #e03232;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --pc-legacy: #b2b2b2;
+  --pc-enhanced: #beb279;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --scroll-thumb-color: #7d7d7d;
+  --scroll-track-color: transparent;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gradient-overlay-right: linear-gradient(270deg, rgba(0, 0, 0, .9), transparent);
+  --promo-banner-z-index: 11500;
+  --text-section-max-width: 640px;
+  --base-pixel-size: 12px;
+  --base-rem-size: 0.75rem;
+  --half-rem-size: calc(var(--base-rem-size) / 2);
+  --twice-rem-size: calc(var(--base-rem-size) * 2);
+  --section-margin-bottom: calc(var(--base-rem-size) * 4);
+  --header-height: 80px;
+  --breadcrumbs-height: calc(var(--base-pixel-size) * 3.5);
+  --max-width: 1920px;
+  --standard-color: #fcaf17;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: #0b0b0b;
+  --card-background-color: #000;
+  --border-color: #282828;
+  --privacy-banner-height: 0px;
+  --game-header-height: 50px;
+  --standard-grid-gap: calc(var(--base-rem-size) * 2);
+  --image-margin-bottom: inherit;
+  --image-rounding: 0px;
+  --image-rounding-static: 16px;
+  --image-rounding-static-sm: 8px;
+  --image-rounding-static-xs: 4px;
+  --grid-gap-static-xs: 0.5rem;
+  --grid-gap-static-sm: 1rem;
+  --grid-gap-static-md: 2rem;
+  --grid-gap-static-lg: 4rem;
+  --grid-gap-static-xl: 8rem;
+  --max-width-static: 640px;
+  --max-width-static-md: 1088px;
+  --max-width-static-lg: 1920px;
+  --max-width-static-xl: 2560px;
+  --margin-static: 0 0 2rem;
+  --h2-margin: 2rem 0 0 0;
+  --padding-sides: var(--grid-gap-static-lg);
+  --padding-top-bottom: var(--padding-sides);
+  --padding-static: var(--padding-sides);
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, .15)), #000;
+  border: 1px solid var(--border-color, #282828);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  overflow: hidden;
+  width: -moz-max-content;
+  width: max-content
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1 {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1 {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    --grid-gap-static-lg: 2rem;
+    --grid-gap-static-xl: 4rem
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1 {
+    --max-width-static-md: 1440px
+  }
+}
+
+.rockstargames-sites-gta-gen9a0e1daf7fc3c029353d5ef13f291348f {
+  align-items: center;
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) 100%), var(--black-100);
+  background-color: var(--white-100);
+  background-image: url(data:image/jpeg;base64,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);
+  background-position: 50%;
+  background-size: 100% 100%;
+  display: flex;
+  flex-shrink: 0;
+  height: var(--foundry-global-spacing-dimensions-1100);
+  justify-content: center;
+  width: var(--foundry-global-spacing-dimensions-1100)
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-gen9a0e1daf7fc3c029353d5ef13f291348f {
+    height: var(--foundry-global-spacing-dimensions-1400);
+    width: var(--foundry-global-spacing-dimensions-1400)
+  }
+}
+
+.rockstargames-sites-gta-gen9b2d75ee6d468c7fde9ad28ba90ca2804 {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%
+}
+
+.rockstargames-sites-gta-gen9fbe57172570573357e040787d9307835 {
+  flex-direction: column;
+  min-width: 158px;
+  padding: var(--grid-gap-xs, 10px) var(--padding-xs, 10px)
+}
+
+.rockstargames-sites-gta-gen9fbe57172570573357e040787d9307835,
+.rockstargames-sites-gta-gen9d9b917b7fb3a2b20d4af0d526ddbb8ff {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between
+}
+
+.rockstargames-sites-gta-gen9d9b917b7fb3a2b20d4af0d526ddbb8ff {
+  width: 100%
+}
+
+.rockstargames-sites-gta-gen9d9b917b7fb3a2b20d4af0d526ddbb8ff img {
+  align-items: center;
+  border-radius: var(--border-radius-xs, 2px);
+  display: flex;
+  flex-direction: column;
+  height: 1rem;
+  justify-content: center;
+  min-width: 4rem
+}
+
+.rockstargames-sites-gta-gen9cd5023e2864561e1f962ac435e70156b {
+  color: var(--white-100, #fff);
+  font-family: var(--font-family-h, "HelveticaNowText");
+  font-size: var(--foundry-alias-font-size-body-caption);
+  letter-spacing: -.3px;
+  width: 100%
+}
+
+.rockstargames-sites-gta-gen9e8daa457f5b09f3a79915a1355aa3332,
+.rockstargames-sites-gta-gen9cd5023e2864561e1f962ac435e70156b {
+  font-weight: var(--foundry-alias-font-weight-regular)
+}
+
+.rockstargames-sites-gta-gen9e8daa457f5b09f3a79915a1355aa3332 {
+  color: var(--foundry-alias-color-text-subdued);
+  font-family: var(--font-family-body, "HelveticaNowText");
+  font-size: var(--foundry-alias-font-size-body-metadata);
+  font-style: normal;
+  letter-spacing: -.375px;
+  line-height: 150%
+}
+
+/*# sourceMappingURL=1802ec5239ae98633112472e142b1858.css.map*/

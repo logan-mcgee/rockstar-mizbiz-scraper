@@ -320,7 +320,7 @@ try {
           })))
         }
 
-        function h() {
+        function b() {
           const e = t.params.pagination;
           if (p()) return;
           let a = t.pagination.el;
@@ -338,7 +338,7 @@ try {
             a.classList.remove(e.horizontalClass, e.verticalClass), a.classList.add(t.isHorizontal() ? e.horizontalClass : e.verticalClass)
           }))
         })), s("init", (() => {
-          !1 === t.params.pagination.enabled ? b() : (v(), f(), g())
+          !1 === t.params.pagination.enabled ? h() : (v(), f(), g())
         })), s("activeIndexChange", (() => {
           void 0 === t.snapIndex && g()
         })), s("snapIndexChange", (() => {
@@ -346,7 +346,7 @@ try {
         })), s("snapGridLengthChange", (() => {
           f(), g()
         })), s("destroy", (() => {
-          h()
+          b()
         })), s("enable disable", (() => {
           let {
             el: e
@@ -363,12 +363,12 @@ try {
             l(!0 === e ? "paginationShow" : "paginationHide"), n.forEach((e => e.classList.toggle(t.params.pagination.hiddenClass)))
           }
         }));
-        const b = () => {
+        const h = () => {
           t.el.classList.add(t.params.pagination.paginationDisabledClass);
           let {
             el: e
           } = t.pagination;
-          e && (e = (0, i.m)(e), e.forEach((e => e.classList.add(t.params.pagination.paginationDisabledClass)))), h()
+          e && (e = (0, i.m)(e), e.forEach((e => e.classList.add(t.params.pagination.paginationDisabledClass)))), b()
         };
         Object.assign(t.pagination, {
           enable: () => {
@@ -378,11 +378,11 @@ try {
             } = t.pagination;
             e && (e = (0, i.m)(e), e.forEach((e => e.classList.remove(t.params.pagination.paginationDisabledClass)))), v(), f(), g()
           },
-          disable: b,
+          disable: h,
           render: f,
           update: g,
           init: v,
-          destroy: h
+          destroy: b
         })
       }
 
@@ -540,13 +540,13 @@ try {
           }))
         }
 
-        function h(e) {
+        function b(e) {
           (e = (0, i.m)(e)).forEach((e => {
             e.setAttribute("aria-disabled", !0)
           }))
         }
 
-        function b(e) {
+        function h(e) {
           (e = (0, i.m)(e)).forEach((e => {
             e.setAttribute("aria-disabled", !1)
           }))
@@ -652,7 +652,7 @@ try {
               nextEl: e,
               prevEl: a
             } = t.navigation;
-            a && (t.isBeginning ? (h(a), m(a)) : (b(a), u(a))), e && (t.isEnd ? (h(e), m(e)) : (b(e), u(e)))
+            a && (t.isBeginning ? (b(a), m(a)) : (h(a), u(a))), e && (t.isEnd ? (b(e), m(e)) : (h(e), u(e)))
           }()
         })), n("paginationUpdate", (() => {
           t.params.a11y.enabled && function() {

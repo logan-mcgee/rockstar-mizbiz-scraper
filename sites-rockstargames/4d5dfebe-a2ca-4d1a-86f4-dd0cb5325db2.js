@@ -28,18 +28,18 @@ try {
           hasGtaPlus: a,
           accountSynced: o
         } = e ?? {}, {
-          setCharactersNeeded: f,
-          setCrewsNeeded: l
-        } = (0, n.useRockstarUserState)(), r = (0, t.useNavigate)();
-        return (0, s.useLayoutEffect)((() => (f("gtao"), l("true"), () => {
-          f(null), l(null)
+          setCharactersNeeded: l,
+          setCrewsNeeded: r
+        } = (0, n.useRockstarUserState)(), f = (0, t.useNavigate)();
+        return (0, s.useLayoutEffect)((() => (l("gtao"), r("true"), () => {
+          l(null), r(null)
         })), []), (0, s.useEffect)((() => {
-          !1 !== d ? o && r(a ? "./benefits" : "./join", {
+          !1 !== d ? o && f(a ? "./benefits" : "./join", {
             replace: !0
-          }) : r("./join", {
+          }) : f("./join", {
             replace: !0
           })
-        }), [a, o, d, r]), null
+        }), [a, o, d, f]), null
       }
     }
   }

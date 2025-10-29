@@ -186,16 +186,16 @@ try {
             h = r.territoryAlias[b],
             y = void 0;
           if (h) {
-            var f = h.split(" ");
-            y = f[0];
-            var k = L.likelySubtags[(0, o.emitUnicodeLanguageId)({
+            var k = h.split(" ");
+            y = k[0];
+            var f = L.likelySubtags[(0, o.emitUnicodeLanguageId)({
               lang: t.lang,
               script: t.script,
               variants: []
             })];
-            if (k) {
-              var p = (0, i.parseUnicodeLanguageId)(k.split(i.SEPARATOR)).region;
-              p && f.indexOf(p) > -1 && (y = p)
+            if (f) {
+              var p = (0, i.parseUnicodeLanguageId)(f.split(i.SEPARATOR)).region;
+              p && k.indexOf(p) > -1 && (y = p)
             }
           }
           y && (t.region = y), t.region = t.region.toUpperCase()
@@ -12943,11 +12943,11 @@ try {
         return l.test(a)
       }
 
-      function f(a) {
+      function k(a) {
         return d.test(a)
       }
 
-      function k(a) {
+      function f(a) {
         "string" == typeof a && (a = a.split(t.SEPARATOR));
         var n, e, r = a.shift();
         if (!r) throw new RangeError("Missing unicode_language_subtag");
@@ -12957,7 +12957,7 @@ try {
         };
         if (!b(r)) throw new RangeError("Malformed unicode_language_subtag");
         a.length && y(a[0]) && (n = a.shift()), a.length && h(a[0]) && (e = a.shift());
-        for (var i = {}; a.length && f(a[0]);) {
+        for (var i = {}; a.length && k(a[0]);) {
           var L = a.shift();
           if (L in i) throw new RangeError('Duplicate variant "'.concat(L, '"'));
           i[L] = 1
@@ -13000,7 +13000,7 @@ try {
       function w(a) {
         var n;
         try {
-          n = k(a)
+          n = f(a)
         } catch (a) {}
         for (var e = []; a.length && g.test(a[0]);) {
           for (var r = a.shift(), i = []; a.length && L.test(a[0]);) i.push(a.shift());
@@ -13030,14 +13030,14 @@ try {
       }
       t.SEPARATOR = "-", t.isUnicodeLanguageSubtag = b, t.isStructurallyValidLanguageTag = function(a) {
         try {
-          k(a.split(t.SEPARATOR))
+          f(a.split(t.SEPARATOR))
         } catch (a) {
           return !1
         }
         return !0
-      }, t.isUnicodeRegionSubtag = h, t.isUnicodeScriptSubtag = y, t.isUnicodeVariantSubtag = f, t.parseUnicodeLanguageId = k, t.parseUnicodeLocaleId = function(a) {
+      }, t.isUnicodeRegionSubtag = h, t.isUnicodeScriptSubtag = y, t.isUnicodeVariantSubtag = k, t.parseUnicodeLanguageId = f, t.parseUnicodeLocaleId = function(a) {
         var n = a.split(t.SEPARATOR),
-          r = k(n);
+          r = f(n);
         return e.__assign({
           lang: r
         }, function(a) {
@@ -13136,7 +13136,7 @@ try {
         __metadata: () => c,
         __param: () => s,
         __propKey: () => m,
-        __read: () => k,
+        __read: () => f,
         __rest: () => L,
         __rewriteRelativeImportExtension: () => U,
         __runInitializers: () => u,
@@ -13144,7 +13144,7 @@ try {
         __spread: () => p,
         __spreadArray: () => w,
         __spreadArrays: () => D,
-        __values: () => f,
+        __values: () => k,
         default: () => E
       });
       var e = function(a, t) {
@@ -13362,7 +13362,7 @@ try {
         for (var n in a) "default" === n || Object.prototype.hasOwnProperty.call(t, n) || h(t, a, n)
       }
 
-      function f(a) {
+      function k(a) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           n = t && a[t],
           e = 0;
@@ -13378,7 +13378,7 @@ try {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function k(a, t) {
+      function f(a, t) {
         var n = "function" == typeof Symbol && a[Symbol.iterator];
         if (!n) return a;
         var e, r, i = n.call(a),
@@ -13401,7 +13401,7 @@ try {
       }
 
       function p() {
-        for (var a = [], t = 0; t < arguments.length; t++) a = a.concat(k(arguments[t]));
+        for (var a = [], t = 0; t < arguments.length; t++) a = a.concat(f(arguments[t]));
         return a
       }
 
@@ -13487,7 +13487,7 @@ try {
       function N(a) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var t, n = a[Symbol.asyncIterator];
-        return n ? n.call(a) : (a = f(a), t = {}, e("next"), e("throw"), e("return"), t[Symbol.asyncIterator] = function() {
+        return n ? n.call(a) : (a = k(a), t = {}, e("next"), e("throw"), e("return"), t[Symbol.asyncIterator] = function() {
           return this
         }, t);
 
@@ -13636,8 +13636,8 @@ try {
         __generator: b,
         __createBinding: h,
         __exportStar: y,
-        __values: f,
-        __read: k,
+        __values: k,
+        __read: f,
         __spread: p,
         __spreadArrays: D,
         __spreadArray: w,
@@ -13786,7 +13786,7 @@ try {
         SetNumberFormatUnitOptions: () => Oa,
         SupportedLocales: () => Ja,
         TimeClip: () => o,
-        TimeFromYear: () => f,
+        TimeFromYear: () => k,
         ToNumber: () => L,
         ToObject: () => s,
         ToRawFixed: () => la,
@@ -13794,8 +13794,8 @@ try {
         ToString: () => i,
         Type: () => d,
         WeekDay: () => h,
-        YearFromTime: () => k,
-        _formatToParts: () => ka,
+        YearFromTime: () => f,
+        _formatToParts: () => fa,
         defineProperty: () => ia,
         getInternalSlot: () => na,
         getMagnitude: () => Q,
@@ -13826,11 +13826,11 @@ try {
         return Date.UTC(a, 0) / c
       }
 
-      function f(a) {
+      function k(a) {
         return Date.UTC(a, 0)
       }
 
-      function k(a) {
+      function f(a) {
         return new Date(a).getUTCFullYear()
       }
 
@@ -13839,11 +13839,11 @@ try {
       }
 
       function D(a) {
-        return b(a) - y(k(a))
+        return b(a) - y(f(a))
       }
 
       function w(a) {
-        return 365 === p(k(a)) ? 0 : 1
+        return 365 === p(f(a)) ? 0 : 1
       }
 
       function A(a) {
@@ -14285,9 +14285,9 @@ try {
         },
         ha = new RegExp("^".concat(ga.source)),
         ya = new RegExp("".concat(ga.source, "$")),
-        fa = /[#0](?:[\.,][#0]+)*/g;
+        ka = /[#0](?:[\.,][#0]+)*/g;
 
-      function ka(a, t, n, e) {
+      function fa(a, t, n, e) {
         var r, i, L = a.sign,
           o = a.exponent,
           s = a.magnitude,
@@ -14326,14 +14326,14 @@ try {
           } else r = e.currency
         }
         i = c || ("decimal" === u || "unit" === u || "currency" === u && "name" === e.currencyDisplay ? Da((t.numbers.decimal[m] || t.numbers.decimal[d]).standard, L) : Da("currency" === u ? (h = t.numbers.currency[m] || t.numbers.currency[d])[e.currencySign] : t.numbers.percent[m] || t.numbers.percent[d], L));
-        var b = fa.exec(i)[0];
-        if (i = i.replace(fa, "{0}").replace(/'(.)'/g, "$1"), "currency" === u && "name" !== e.currencyDisplay) {
+        var b = ka.exec(i)[0];
+        if (i = i.replace(ka, "{0}").replace(/'(.)'/g, "$1"), "currency" === u && "name" !== e.currencyDisplay) {
           var h, y = (h = t.numbers.currency[m] || t.numbers.currency[d]).currencySpacing.afterInsertBetween;
           y && !ya.test(r) && (i = i.replace("¤{0}", "¤".concat(y, "{0}")));
-          var f = h.currencySpacing.beforeInsertBetween;
-          f && !ha.test(r) && (i = i.replace("{0}¤", "{0}".concat(f, "¤")))
+          var k = h.currencySpacing.beforeInsertBetween;
+          k && !ha.test(r) && (i = i.replace("{0}¤", "{0}".concat(k, "¤")))
         }
-        for (var k = i.split(/({c:[^}]+}|\{0\}|[¤%\-\+])/g), p = [], D = t.numbers.symbols[m] || t.numbers.symbols[d], w = 0, A = k; w < A.length; w++)
+        for (var f = i.split(/({c:[^}]+}|\{0\}|[¤%\-\+])/g), p = [], D = t.numbers.symbols[m] || t.numbers.symbols[d], w = 0, A = f; w < A.length; w++)
           if (q = A[w]) switch (q) {
             case "{0}":
               p.push.apply(p, pa(D, a, l, o, m, !c && Boolean(e.useGrouping), b, u));
@@ -14457,13 +14457,13 @@ try {
           var b = "currency" === o && null != a.currencyGroup ? a.currencyGroup : a.group,
             h = [],
             y = L.split(".")[0].split(","),
-            f = 3,
-            k = 3;
-          y.length > 1 && (f = y[y.length - 1].length), y.length > 2 && (k = y[y.length - 2].length);
-          var p = d.length - f;
+            k = 3,
+            f = 3;
+          y.length > 1 && (k = y[y.length - 1].length), y.length > 2 && (f = y[y.length - 2].length);
+          var p = d.length - k;
           if (p > 0) {
-            for (h.push(d.slice(p, p + f)), p -= k; p > 0; p -= k) h.push(d.slice(p, p + k));
-            h.push(d.slice(0, p + k))
+            for (h.push(d.slice(p, p + k)), p -= f; p > 0; p -= f) h.push(d.slice(p, p + f));
+            h.push(d.slice(0, p + f))
           } else h.push(d);
           for (; h.length > 0;) {
             var D = h.pop();
@@ -14555,7 +14555,7 @@ try {
           default:
             i = 0 === t || isNaN(t) ? 0 : t > 0 ? 1 : -1
         }
-        return ka({
+        return fa({
           roundedNumber: t,
           formattedString: r,
           exponent: g,
@@ -17164,17 +17164,17 @@ try {
                 void 0 !== y && ("" !== y ? ~g.indexOf(y) && (b = y, h = "-".concat(d, "-").concat(b)) : ~y.indexOf("true") && (b = "true", h = "-".concat(d)))
               }
               if (d in n) {
-                var f = n[d];
-                xa("string" == typeof f || null == f, "optionsValue must be String, Undefined or Null"), ~g.indexOf(f) && f !== b && (b = f, h = "")
+                var k = n[d];
+                xa("string" == typeof k || null == k, "optionsValue must be String, Undefined or Null"), ~g.indexOf(k) && k !== b && (b = k, h = "")
               }
               s[d] = b, l += h
             }
             if (l.length > 2) {
-              var k = o.indexOf("-x-");
-              if (-1 === k) o += l;
+              var f = o.indexOf("-x-");
+              if (-1 === f) o += l;
               else {
-                var p = o.slice(0, k),
-                  D = o.slice(k, o.length);
+                var p = o.slice(0, f),
+                  D = o.slice(f, o.length);
                 o = p + l + D
               }
               o = Intl.getCanonicalLocales(o)[0]
@@ -17183,29 +17183,29 @@ try {
           }(Array.from(o), m, c, ["nu"], L, l),
           y = L[h.dataLocale];
         La(!!y, "Missing locale data for ".concat(h.dataLocale));
-        var f = i(a);
-        f.locale = h.locale, f.dataLocale = h.dataLocale, f.numberingSystem = h.nu, f.dataLocaleData = y, Oa(a, d, {
+        var k = i(a);
+        k.locale = h.locale, k.dataLocale = h.dataLocale, k.numberingSystem = h.nu, k.dataLocaleData = y, Oa(a, d, {
           getInternalSlots: i
         });
-        var k, p, D = f.style;
+        var f, p, D = k.style;
         if ("currency" === D) {
-          var w = da(f.currency, {
+          var w = da(k.currency, {
             currencyDigitsData: u
           });
-          k = w, p = w
-        } else k = 0, p = "percent" === D ? 0 : 3;
+          f = w, p = w
+        } else f = 0, p = "percent" === D ? 0 : 3;
         var A = E(d, "notation", "string", ["standard", "scientific", "engineering", "compact"], "standard");
-        f.notation = A, Fa(f, d, k, p, A);
+        k.notation = A, Fa(k, d, f, p, A);
         var v = U(d, "roundingIncrement", 1, 5e3, 1);
         if (-1 === Xa.indexOf(v)) throw new RangeError("Invalid rounding increment value: ".concat(v, ".\nValid values are ").concat(Xa, "."));
-        if (1 !== v && "fractionDigits" !== f.roundingType) throw new TypeError("For roundingIncrement > 1 only fractionDigits is a valid roundingType");
-        if (1 !== v && f.maximumFractionDigits !== f.minimumFractionDigits) throw new RangeError("With roundingIncrement > 1, maximumFractionDigits and minimumFractionDigits must be equal.");
-        f.roundingIncrement = v;
+        if (1 !== v && "fractionDigits" !== k.roundingType) throw new TypeError("For roundingIncrement > 1 only fractionDigits is a valid roundingType");
+        if (1 !== v && k.maximumFractionDigits !== k.minimumFractionDigits) throw new RangeError("With roundingIncrement > 1, maximumFractionDigits and minimumFractionDigits must be equal.");
+        k.roundingIncrement = v;
         var M = E(d, "trailingZeroDisplay", "string", ["auto", "stripIfInteger"], "auto");
-        f.trailingZeroDisplay = M;
+        k.trailingZeroDisplay = M;
         var N = E(d, "compactDisplay", "string", ["short", "long"], "short"),
           C = "auto";
-        return "compact" === A && (f.compactDisplay = N, C = "min2"), f.useGrouping = R(d, "useGrouping", ["min2", "auto", "always"], "always", !1, C), f.signDisplay = E(d, "signDisplay", "string", ["auto", "never", "always", "exceptZero", "negative"], "auto"), f.roundingMode = E(d, "roundingMode", "string", ["ceil", "floor", "expand", "trunc", "halfCeil", "halfFloor", "halfExpand", "halfTrunc", "halfEven"], "halfExpand"), a
+        return "compact" === A && (k.compactDisplay = N, C = "min2"), k.useGrouping = R(d, "useGrouping", ["min2", "auto", "always"], "always", !1, C), k.signDisplay = E(d, "signDisplay", "string", ["auto", "never", "always", "exceptZero", "negative"], "auto"), k.roundingMode = E(d, "roundingMode", "string", ["ceil", "floor", "expand", "trunc", "halfCeil", "halfFloor", "halfExpand", "halfTrunc", "halfEven"], "halfExpand"), a
       }
 
       function Wa(a) {
@@ -17345,14 +17345,14 @@ try {
         return i.sort(), b(i, n)
       }
 
-      function f(a) {
+      function k(a) {
         var t, n = (0, o.default)(a),
           e = n.hourCycle,
           r = n.locale;
         return "root" !== r && (t = a.maximize().region), b((0, s.getHourCyclesPreferenceDataForLocaleOrRegion)(r, t), e)
       }
 
-      function k(a) {
+      function f(a) {
         var t, n = (0, o.default)(a),
           r = n.numberingSystem,
           i = n.locale,
@@ -17412,20 +17412,20 @@ try {
           m.hc = b;
           var h = (0, i.GetOption)(u, "caseFirst", "string", ["upper", "lower", "false"], void 0);
           m.kf = h;
-          var y, f = (0, i.GetOption)(u, "numeric", "boolean", void 0, void 0);
-          void 0 !== f && (y = String(f)), m.kn = y;
-          var k = (0, i.GetOption)(u, "numberingSystem", "string", void 0, void 0);
-          if (void 0 !== k && !d.test(k)) throw new RangeError("Invalid numberingSystem");
-          m.nu = k;
+          var y, k = (0, i.GetOption)(u, "numeric", "boolean", void 0, void 0);
+          void 0 !== k && (y = String(k)), m.kn = y;
+          var f = (0, i.GetOption)(u, "numberingSystem", "string", void 0, void 0);
+          if (void 0 !== f && !d.test(f)) throw new RangeError("Invalid numberingSystem");
+          m.nu = f;
           var p = function(a, t, n) {
             for (var e, r = [], o = (0, L.parseUnicodeLocaleId)(a), s = 0, l = o.extensions; s < l.length; s++) {
               var u = l[s];
               "u" === u.type && (e = u, Array.isArray(u.keywords) && (r = u.keywords))
             }
             for (var m = Object.create(null), d = 0, c = n; d < c.length; d++) {
-              for (var g = c[d], b = void 0, h = void 0, y = 0, f = r; y < f.length; y++) {
-                var k = f[y];
-                k[0] === g && (b = (h = k)[1])
+              for (var g = c[d], b = void 0, h = void 0, y = 0, k = r; y < k.length; y++) {
+                var f = k[y];
+                f[0] === g && (b = (h = f)[1])
               }(0, i.invariant)(g in t, "".concat(g, " must be in options"));
               var p = t[g];
               void 0 !== p && ((0, i.invariant)("string" == typeof p, "Value for ".concat(g, " must be a string")), b = p, h ? h[1] = b : r.push([g, b])), m[g] = b
@@ -17566,18 +17566,18 @@ try {
           configurable: !0
         }), a.prototype.getHourCycles = function() {
           if (void 0 === (0, o.default)(this).initializedLocale) throw new TypeError("Error uninitialized locale");
-          return f(this)
+          return k(this)
         }, Object.defineProperty(a.prototype, "hourCycles", {
           get: function() {
-            return f(this)
+            return k(this)
           },
           enumerable: !1,
           configurable: !0
         }), a.prototype.getNumberingSystems = function() {
-          return k(this)
+          return f(this)
         }, Object.defineProperty(a.prototype, "numberingSystems", {
           get: function() {
-            return k(this)
+            return f(this)
           },
           enumerable: !1,
           configurable: !0

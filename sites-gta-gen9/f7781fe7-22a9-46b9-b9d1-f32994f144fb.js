@@ -32,13 +32,13 @@ try {
         wC: () => a,
         PE: () => x,
         rB: () => d,
-        tC: () => f,
+        tC: () => w,
         yh: () => v,
         Ap: () => p,
         Xs: () => k,
         kx: () => S,
         rJ: () => C,
-        pT: () => w,
+        pT: () => f,
         lV: () => P,
         PA: () => n,
         My: () => g,
@@ -128,7 +128,7 @@ try {
         };
       var h = o(81788),
         m = o(45547);
-      const f = async ({
+      const w = async ({
         service: e,
         returnUrl: t,
         pingBearer: o
@@ -140,7 +140,7 @@ try {
           clientId: r
         } = (0, m.A)(), s = await o(), i = new URL(`tpa/${e}/link`, `https://${a}.rockstargames.com`);
         return i.searchParams.append("cid", r), i.searchParams.append("lang", n), i.searchParams.append("returnUrl", t ?? window.location.pathname), s && "boolean" != typeof s && "string" == typeof s.bearerToken && i.searchParams.append("accessToken", s.bearerToken), i
-      }, w = e => e.keys().forEach(e), b = e => e.replace(/(<([^>]+)>)/gi, ""), y = [{
+      }, f = e => e.keys().forEach(e), b = e => e.replace(/(<([^>]+)>)/gi, ""), y = [{
         key: "dev",
         path: "https://media-dev-rockstargames-com.akamaized.net"
       }, {
@@ -217,7 +217,7 @@ try {
         importAll: () => q.pT,
         isGen9Platform: () => q.lV,
         makeVar: () => k.UT,
-        mutateWebSettings: () => we,
+        mutateWebSettings: () => fe,
         newswirePost: () => G,
         oneTrustInit: () => $,
         safeStyles: () => c,
@@ -253,9 +253,9 @@ try {
         useScAuthLinks: () => ne.N6,
         useScroll: () => ae.Ll,
         useScrollTracking: () => ne.GA,
-        useState: () => w,
+        useState: () => f,
         useWindowResize: () => ye.G4,
-        webSettingsReactive: () => fe,
+        webSettingsReactive: () => we,
         withAutoRouteTracking: () => ce,
         withGtmTracking: () => Y,
         withMediaBasedProps: () => K,
@@ -293,11 +293,11 @@ try {
         g = o(42295),
         h = o(62229),
         m = o(93452);
-      const f = (0, u.A)({
+      const w = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "graphContextGet"
         }),
-        w = () => (0, h.useContext)(f),
+        f = () => (0, h.useContext)(w),
         b = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "graphContextSet"
@@ -315,7 +315,7 @@ try {
             };
             t(o)
           }), [t]);
-          return (0, g.jsx)(f.Provider, {
+          return (0, g.jsx)(w.Provider, {
             value: t(),
             children: (0, g.jsx)(b.Provider, {
               value: o,
@@ -576,25 +576,25 @@ query Translations($locale: String!, $config: String!) {
       } catch (e) {
         me = {}
       }
-      const fe = (0, k.UT)(me),
-        we = ({
+      const we = (0, k.UT)(me),
+        fe = ({
           key: e,
           value: t
         }) => {
           if (null == e) throw Error("You have to specify a key and a value.");
           const o = {
-            ...fe() ?? {}
+            ...we() ?? {}
           };
           return o[e] = t, null === t && delete o[e], pe.A.set(he, JSON.stringify(o), {
             expires: 30,
             domain: (0, ge.F)(),
             path: "/"
-          }), fe(o), o
+          }), we(o), o
         },
         be = () => ({
-          webSettings: (0, m.q)(fe),
-          webSettingsReactive: fe,
-          mutateWebSettings: we
+          webSettings: (0, m.q)(we),
+          webSettingsReactive: we,
+          mutateWebSettings: fe
         });
       var ye = o(50437)
     },
@@ -737,17 +737,17 @@ query Translations($locale: String!, $config: String!) {
         m = new Promise((e => {
           e()
         })),
-        f = {
+        w = {
           cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new r.D)
         },
-        w = [() => m, {
+        f = [() => m, {
           data: null,
           loading: !1,
           called: !1,
           reset: () => null,
-          client: window?.["apollo-client"] ?? (window["apollo-client"] = new s.R(f))
+          client: window?.["apollo-client"] ?? (window["apollo-client"] = new s.R(w))
         }],
-        b = (0, a.createContext)((() => w)),
+        b = (0, a.createContext)((() => f)),
         y = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = ({
           children: e
         }) => (0, n.jsx)(b.Provider, {

@@ -17,11 +17,11 @@ try {
       t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => L,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => p
+        default: () => c
       });
       var _ = "Cerrar",
         i = "Presiona {shortcut}",
@@ -44,10 +44,10 @@ try {
         g = "{zoom}%",
         u = "Descargar",
         h = "Descargar",
-        f = "Abrir imagen",
-        L = "Imagen",
-        c = "Texto alt: {alt}",
-        p = {
+        L = "Abrir imagen",
+        f = "Imagen",
+        p = "Texto alt: {alt}",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: a,
@@ -60,9 +60,9 @@ try {
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: u,
           Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: L,
-          Lightbox_Dialog_Description: c
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: p
         }
     }
   }

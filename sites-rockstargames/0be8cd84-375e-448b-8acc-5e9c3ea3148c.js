@@ -13,24 +13,24 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [439], {
-    10439: (e, a, d) => {
-      function t(e) {
-        var a, d, n = "";
+    10439: (e, a, t) => {
+      function d(e) {
+        var a, t, n = "";
         if ("string" == typeof e || "number" == typeof e) n += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
             var s = e.length;
-            for (a = 0; a < s; a++) e[a] && (d = t(e[a])) && (n && (n += " "), n += d)
+            for (a = 0; a < s; a++) e[a] && (t = d(e[a])) && (n && (n += " "), n += t)
           } else
-            for (d in e) e[d] && (n && (n += " "), n += d);
+            for (t in e) e[t] && (n && (n += " "), n += t);
         return n
       }
 
       function n() {
-        for (var e, a, d = 0, n = "", s = arguments.length; d < s; d++)(e = arguments[d]) && (a = t(e)) && (n && (n += " "), n += a);
+        for (var e, a, t = 0, n = "", s = arguments.length; t < s; t++)(e = arguments[t]) && (a = d(e)) && (n && (n += " "), n += a);
         return n
       }
-      d.r(a), d.d(a, {
+      t.r(a), t.d(a, {
         clsx: () => n,
         default: () => s
       });

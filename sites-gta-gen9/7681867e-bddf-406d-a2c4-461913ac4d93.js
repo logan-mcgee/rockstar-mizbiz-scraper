@@ -50,19 +50,19 @@ try {
       }();
       var s, d = [],
         u = !1,
-        f = -1;
+        l = -1;
 
-      function l() {
-        u && s && (u = !1, s.length ? d = s.concat(d) : f = -1, d.length && c())
+      function f() {
+        u && s && (u = !1, s.length ? d = s.concat(d) : l = -1, d.length && c())
       }
 
       function c() {
         if (!u) {
-          var e = a(l);
+          var e = a(f);
           u = !0;
           for (var t = d.length; t;) {
-            for (s = d, d = []; ++f < t;) s && s[f].run();
-            f = -1, t = d.length
+            for (s = d, d = []; ++l < t;) s && s[l].run();
+            l = -1, t = d.length
           }
           s = null, u = !1,
             function(e) {

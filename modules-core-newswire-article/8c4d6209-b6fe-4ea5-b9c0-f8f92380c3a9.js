@@ -147,11 +147,11 @@ try {
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
         }),
-        _ = (0, s.setMakeVarItem)({
+        b = (0, s.setMakeVarItem)({
           key: "charactersNeededReactive",
           value: (0, s.makeVar)(!1)
         }),
-        b = e => _(e),
+        _ = e => b(e),
         x = (0, s.setMakeVarItem)({
           key: "crewsNeededReactive",
           value: (0, s.makeVar)(!1)
@@ -163,7 +163,7 @@ try {
         }),
         E = e => C(e),
         I = () => {
-          const e = (0, s.useReactiveVar)(_),
+          const e = (0, s.useReactiveVar)(b),
             t = (0, s.useReactiveVar)(x),
             a = (0, s.useReactiveVar)(k),
             r = (0, s.useReactiveVar)(f),
@@ -176,7 +176,7 @@ try {
             userData: (0, s.useReactiveVar)(C),
             selectedCharacterTuple: n,
             jumpScMenuFocus: (0, s.useReactiveVar)(m),
-            setCharactersNeeded: b,
+            setCharactersNeeded: _,
             setCrewsNeeded: S,
             setCurrentCharId: g,
             setNavOpen: p,

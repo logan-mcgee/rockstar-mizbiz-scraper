@@ -15,17 +15,17 @@ try {
   [8461], {
     90842: (e, a, t) => {
       t.r(a), t.d(a, {
-        default: () => s
+        default: () => d
       });
       var n = t(42295),
         o = t(62229),
-        d = t(9623);
-      const s = ({
+        s = t(9623);
+      const d = ({
         basename: e,
         children: a,
         history: t
       }) => {
-        const [s, i] = (0, o.useState)({
+        const [d, i] = (0, o.useState)({
           action: t.action,
           location: t.location
         });
@@ -34,10 +34,10 @@ try {
             location: e,
             action: a
           })
-        }))), [t]), (0, n.jsx)(d.Router, {
+        }))), [t]), (0, n.jsx)(s.Router, {
           basename: e,
-          location: s.location,
-          navigationType: s.action,
+          location: d.location,
+          navigationType: d.action,
           navigator: t,
           children: a
         })

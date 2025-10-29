@@ -21,26 +21,26 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         FormattedMessage: () => n.A,
-        POSIXLocales: () => _,
+        POSIXLocales: () => b,
         ReactIntlProviderForMocking: () => i.A,
         createDevLocaleHook: () => E,
-        createIntl: () => s.E,
+        createIntl: () => a.E,
         defineMessages: () => o.YK,
         englishLocale: () => y,
         getCookieValueByName: () => d,
         getLocale: () => h,
         linkWithLocale: () => P,
         localeCookieHandler: () => p,
-        locales: () => b,
+        locales: () => _,
         onLanguageChange: () => S,
         splitLocale: () => k,
-        useIntl: () => a.A,
+        useIntl: () => s.A,
         withIntl: () => j
       });
       var o = r(4944),
         n = r(2486),
-        s = r(7497),
-        a = r(597),
+        a = r(7497),
+        s = r(597),
         i = r(9872),
         c = r(2295),
         l = r(2229),
@@ -158,13 +158,13 @@ try {
           store: "zh-CN"
         }],
         y = m[0],
-        _ = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        b = m,
+        b = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        _ = m,
         h = () => {
           const {
             location: e
           } = window, t = (0, u.A)(), r = (e => {
-            const t = b.map((e => e.subdomaincom)),
+            const t = _.map((e => e.subdomaincom)),
               r = e.pathname.substring(1).split("/"),
               o = "detect-locals" === r[0] ? 1 : 0;
             return -1 !== t.indexOf(r[o]) ? r[o] : null
@@ -172,12 +172,12 @@ try {
             const t = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
             return t?.split("=")[1]
           })(e), n = y;
-          let s = n;
-          const a = `rockstarweb_lang.${t.cookieIdentifier}`,
-            i = d(a);
-          s = t.currentSite?.site === u.C.www ? b.find((e => e.subdomaincom === o)) || b.find((e => e.subdomaincom === r)) || n : b.find((e => e.iso === i)) || n;
-          const [, c] = p(a, s.iso);
-          return [s, c]
+          let a = n;
+          const s = `rockstarweb_lang.${t.cookieIdentifier}`,
+            i = d(s);
+          a = t.currentSite?.site === u.C.www ? _.find((e => e.subdomaincom === o)) || _.find((e => e.subdomaincom === r)) || n : _.find((e => e.iso === i)) || n;
+          const [, c] = p(s, a.iso);
+          return [a, c]
         };
       var w = r(5422);
       const v = () => "en-US";
@@ -193,7 +193,7 @@ try {
 
       function j(e, t, r, o) {
         return n => {
-          const s = (0, l.useMemo)((() => {
+          const a = (0, l.useMemo)((() => {
             if (t) return function(e, t) {
               return function(e, t) {
                 const r = t ?? h()[0].iso ?? v(),
@@ -210,12 +210,12 @@ try {
             }(t, r)
           }), [r]);
           return (0, c.jsx)(i.A, {
-            locale: s?.locale || v(),
+            locale: a?.locale || v(),
             messages: {
-              ...s?.messages
+              ...a?.messages
             },
             onError: o,
-            children: s && (0, c.jsx)(e, {
+            children: a && (0, c.jsx)(e, {
               ...n
             })
           }, "intl-provider")
@@ -278,20 +278,20 @@ try {
           }
           if (o)
             for (const [n, {
-                regex: s,
-                isSubdomain: a,
+                regex: a,
+                isSubdomain: s,
                 isLocaleInUrl: i,
                 fieldName: c,
                 externalPaths: l
               }] of Object.entries(x)) {
-              if (!s.test(e.toLowerCase())) continue;
+              if (!a.test(e.toLowerCase())) continue;
               const u = r[n];
               if (!u) continue;
               let f = "";
               "en" !== t.subdomaincom && i && (f = `/${t[c||"subdomaincom"]}`, "circoloco" === n && "/" === o.pathname && (f += "/"));
               const d = o.host.split(".");
               let p = "";
-              return "www" !== n || l?.some((e => e.test(o.pathname))) ? (p += `https://${u}`, p += a ? `.${d.at(-2)}.${d.at(-1)}` : `.${d.at(-1)}`, {
+              return "www" !== n || l?.some((e => e.test(o.pathname))) ? (p += `https://${u}`, p += s ? `.${d.at(-2)}.${d.at(-1)}` : `.${d.at(-1)}`, {
                 link: `${p}${f}${"/"===o.pathname?"":o.pathname}${o.search}`,
                 isExternal: !0
               }) : {
@@ -315,20 +315,20 @@ try {
           const o = (0, u.A)(),
             [, n] = h(),
             {
-              subdomaincom: s,
-              iso: a
+              subdomaincom: a,
+              iso: s
             } = e,
             i = (e => {
               let t = location.pathname.replace(/^\/|\/$/g, "");
               const r = t.split("/");
-              return b.map((e => e.subdomaincom)).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
-            })(s);
+              return _.map((e => e.subdomaincom)).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
+            })(a);
           t?.({
             event: "cta_other",
             link_url: i,
-            text: s,
+            text: a,
             element_placement: r?.toLowerCase()
-          }), n(a), window.location.href = i
+          }), n(s), window.location.href = i
         }
     },
     3019: (e, t, r) => {
@@ -465,7 +465,7 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         __addDisposableResource: () => N,
-        __assign: () => s,
+        __assign: () => a,
         __asyncDelegator: () => E,
         __asyncGenerator: () => k,
         __asyncValues: () => x,
@@ -474,11 +474,11 @@ try {
         __classPrivateFieldGet: () => T,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => L,
-        __createBinding: () => _,
+        __createBinding: () => b,
         __decorate: () => i,
         __disposeResources: () => U,
         __esDecorate: () => l,
-        __exportStar: () => b,
+        __exportStar: () => _,
         __extends: () => n,
         __generator: () => y,
         __importDefault: () => D,
@@ -488,7 +488,7 @@ try {
         __param: () => c,
         __propKey: () => f,
         __read: () => w,
-        __rest: () => a,
+        __rest: () => s,
         __rewriteRelativeImportExtension: () => A,
         __runInitializers: () => u,
         __setFunctionName: () => d,
@@ -517,15 +517,15 @@ try {
         }
         o(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r)
       }
-      var s = function() {
-        return s = Object.assign || function(e) {
+      var a = function() {
+        return a = Object.assign || function(e) {
           for (var t, r = 1, o = arguments.length; r < o; r++)
             for (var n in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
           return e
-        }, s.apply(this, arguments)
+        }, a.apply(this, arguments)
       };
 
-      function a(e, t) {
+      function s(e, t) {
         var r = {};
         for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -536,12 +536,12 @@ try {
       }
 
       function i(e, t, r, o) {
-        var n, s = arguments.length,
-          a = s < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, r) : o;
-        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, r, o);
+        var n, a = arguments.length,
+          s = a < 3 ? t : null === o ? o = Object.getOwnPropertyDescriptor(t, r) : o;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(e, t, r, o);
         else
-          for (var i = e.length - 1; i >= 0; i--)(n = e[i]) && (a = (s < 3 ? n(a) : s > 3 ? n(t, r, a) : n(t, r)) || a);
-        return s > 3 && a && Object.defineProperty(t, r, a), a
+          for (var i = e.length - 1; i >= 0; i--)(n = e[i]) && (s = (a < 3 ? n(s) : a > 3 ? n(t, r, s) : n(t, r)) || s);
+        return a > 3 && s && Object.defineProperty(t, r, s), s
       }
 
       function c(e, t) {
@@ -550,8 +550,8 @@ try {
         }
       }
 
-      function l(e, t, r, o, n, s) {
-        function a(e) {
+      function l(e, t, r, o, n, a) {
+        function s(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
@@ -561,17 +561,17 @@ try {
           for (var y in o.access) m.access[y] = o.access[y];
           m.addInitializer = function(e) {
             if (d) throw new TypeError("Cannot add initializers after decoration has completed");
-            s.push(a(e || null))
+            a.push(s(e || null))
           };
-          var _ = (0, r[p])("accessor" === c ? {
+          var b = (0, r[p])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[l], m);
           if ("accessor" === c) {
-            if (void 0 === _) continue;
-            if (null === _ || "object" != typeof _) throw new TypeError("Object expected");
-            (i = a(_.get)) && (f.get = i), (i = a(_.set)) && (f.set = i), (i = a(_.init)) && n.unshift(i)
-          } else(i = a(_)) && ("field" === c ? n.unshift(i) : f[l] = i)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (i = s(b.get)) && (f.get = i), (i = s(b.set)) && (f.set = i), (i = s(b.init)) && n.unshift(i)
+          } else(i = s(b)) && ("field" === c ? n.unshift(i) : f[l] = i)
         }
         u && Object.defineProperty(u, o.name, f), d = !0
       }
@@ -597,12 +597,12 @@ try {
       }
 
       function m(e, t, r, o) {
-        return new(r || (r = Promise))((function(n, s) {
-          function a(e) {
+        return new(r || (r = Promise))((function(n, a) {
+          function s(e) {
             try {
               c(o.next(e))
             } catch (e) {
-              s(e)
+              a(e)
             }
           }
 
@@ -610,7 +610,7 @@ try {
             try {
               c(o.throw(e))
             } catch (e) {
-              s(e)
+              a(e)
             }
           }
 
@@ -618,14 +618,14 @@ try {
             var t;
             e.done ? n(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
               e(t)
-            }))).then(a, i)
+            }))).then(s, i)
           }
           c((o = o.apply(e, t || [])).next())
         }))
       }
 
       function y(e, t) {
-        var r, o, n, s = {
+        var r, o, n, a = {
             label: 0,
             sent: function() {
               if (1 & n[0]) throw n[1];
@@ -634,16 +634,16 @@ try {
             trys: [],
             ops: []
           },
-          a = Object.create(("function" == typeof Iterator ? Iterator : Object).prototype);
-        return a.next = i(0), a.throw = i(1), a.return = i(2), "function" == typeof Symbol && (a[Symbol.iterator] = function() {
+          s = Object.create(("function" == typeof Iterator ? Iterator : Object).prototype);
+        return s.next = i(0), s.throw = i(1), s.return = i(2), "function" == typeof Symbol && (s[Symbol.iterator] = function() {
           return this
-        }), a;
+        }), s;
 
         function i(i) {
           return function(c) {
             return function(i) {
               if (r) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, i[0] && (s = 0)), s;) try {
+              for (; s && (s = 0, i[0] && (a = 0)), a;) try {
                 if (r = 1, o && (n = 2 & i[0] ? o.return : i[0] ? o.throw || ((n = o.return) && n.call(o), 0) : o.next) && !(n = n.call(o, i[1])).done) return n;
                 switch (o = 0, n && (i = [2 & i[0], n.value]), i[0]) {
                   case 0:
@@ -651,37 +651,37 @@ try {
                     n = i;
                     break;
                   case 4:
-                    return s.label++, {
+                    return a.label++, {
                       value: i[1],
                       done: !1
                     };
                   case 5:
-                    s.label++, o = i[1], i = [0];
+                    a.label++, o = i[1], i = [0];
                     continue;
                   case 7:
-                    i = s.ops.pop(), s.trys.pop();
+                    i = a.ops.pop(), a.trys.pop();
                     continue;
                   default:
-                    if (!((n = (n = s.trys).length > 0 && n[n.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
-                      s = 0;
+                    if (!((n = (n = a.trys).length > 0 && n[n.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
+                      a = 0;
                       continue
                     }
                     if (3 === i[0] && (!n || i[1] > n[0] && i[1] < n[3])) {
-                      s.label = i[1];
+                      a.label = i[1];
                       break
                     }
-                    if (6 === i[0] && s.label < n[1]) {
-                      s.label = n[1], n = i;
+                    if (6 === i[0] && a.label < n[1]) {
+                      a.label = n[1], n = i;
                       break
                     }
-                    if (n && s.label < n[2]) {
-                      s.label = n[2], s.ops.push(i);
+                    if (n && a.label < n[2]) {
+                      a.label = n[2], a.ops.push(i);
                       break
                     }
-                    n[2] && s.ops.pop(), s.trys.pop();
+                    n[2] && a.ops.pop(), a.trys.pop();
                     continue
                 }
-                i = t.call(e, s)
+                i = t.call(e, a)
               } catch (e) {
                 i = [6, e], o = 0
               } finally {
@@ -696,7 +696,7 @@ try {
           }
         }
       }
-      var _ = Object.create ? function(e, t, r, o) {
+      var b = Object.create ? function(e, t, r, o) {
         void 0 === o && (o = r);
         var n = Object.getOwnPropertyDescriptor(t, r);
         n && !("get" in n ? !t.__esModule : n.writable || n.configurable) || (n = {
@@ -709,8 +709,8 @@ try {
         void 0 === o && (o = r), e[o] = t[r]
       };
 
-      function b(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || _(t, e, r)
+      function _(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function h(e) {
@@ -732,23 +732,23 @@ try {
       function w(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
-        var o, n, s = r.call(e),
-          a = [];
+        var o, n, a = r.call(e),
+          s = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(o = s.next()).done;) a.push(o.value)
+            (void 0 === t || t-- > 0) && !(o = a.next()).done;) s.push(o.value)
         } catch (e) {
           n = {
             error: e
           }
         } finally {
           try {
-            o && !o.done && (r = s.return) && r.call(s)
+            o && !o.done && (r = a.return) && r.call(a)
           } finally {
             if (n) throw n.error
           }
         }
-        return a
+        return s
       }
 
       function v() {
@@ -761,13 +761,13 @@ try {
         var o = Array(e),
           n = 0;
         for (t = 0; t < r; t++)
-          for (var s = arguments[t], a = 0, i = s.length; a < i; a++, n++) o[n] = s[a];
+          for (var a = arguments[t], s = 0, i = a.length; s < i; s++, n++) o[n] = a[s];
         return o
       }
 
       function O(e, t, r) {
         if (r || 2 === arguments.length)
-          for (var o, n = 0, s = t.length; n < s; n++) !o && n in t || (o || (o = Array.prototype.slice.call(t, 0, n)), o[n] = t[n]);
+          for (var o, n = 0, a = t.length; n < a; n++) !o && n in t || (o || (o = Array.prototype.slice.call(t, 0, n)), o[n] = t[n]);
         return e.concat(o || Array.prototype.slice.call(t))
       }
 
@@ -778,8 +778,8 @@ try {
       function k(e, t, r) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var o, n = r.apply(e, t || []),
-          s = [];
-        return o = Object.create(("function" == typeof AsyncIterator ? AsyncIterator : Object).prototype), a("next"), a("throw"), a("return", (function(e) {
+          a = [];
+        return o = Object.create(("function" == typeof AsyncIterator ? AsyncIterator : Object).prototype), s("next"), s("throw"), s("return", (function(e) {
           return function(t) {
             return Promise.resolve(t).then(e, l)
           }
@@ -787,19 +787,19 @@ try {
           return this
         }, o;
 
-        function a(e, t) {
+        function s(e, t) {
           n[e] && (o[e] = function(t) {
             return new Promise((function(r, o) {
-              s.push([e, t, r, o]) > 1 || i(e, t)
+              a.push([e, t, r, o]) > 1 || i(e, t)
             }))
           }, t && (o[e] = t(o[e])))
         }
 
         function i(e, t) {
           try {
-            (r = n[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(c, l) : u(s[0][2], r)
+            (r = n[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(c, l) : u(a[0][2], r)
           } catch (e) {
-            u(s[0][3], e)
+            u(a[0][3], e)
           }
           var r
         }
@@ -813,7 +813,7 @@ try {
         }
 
         function u(e, t) {
-          e(t), s.shift(), s.length && i(s[0][0], s[0][1])
+          e(t), a.shift(), a.length && i(a[0][0], a[0][1])
         }
       }
 
@@ -883,7 +883,7 @@ try {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && _(t, e, r[o]);
+          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && b(t, e, r[o]);
         return S(t, e), t
       }
 
@@ -954,8 +954,8 @@ try {
           for (; r = e.stack.pop();) try {
             if (!r.async && 1 === o) return o = 0, e.stack.push(r), Promise.resolve().then(n);
             if (r.dispose) {
-              var s = r.dispose.call(r.value);
-              if (r.async) return o |= 2, Promise.resolve(s).then(n, (function(e) {
+              var a = r.dispose.call(r.value);
+              if (r.async) return o |= 2, Promise.resolve(a).then(n, (function(e) {
                 return t(e), n()
               }))
             } else o |= 1
@@ -968,14 +968,14 @@ try {
       }
 
       function A(e, t) {
-        return "string" == typeof e && /^\.\.?\//.test(e) ? e.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (function(e, r, o, n, s) {
-          return r ? t ? ".jsx" : ".js" : !o || n && s ? o + n + "." + s.toLowerCase() + "js" : e
+        return "string" == typeof e && /^\.\.?\//.test(e) ? e.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (function(e, r, o, n, a) {
+          return r ? t ? ".jsx" : ".js" : !o || n && a ? o + n + "." + a.toLowerCase() + "js" : e
         })) : e
       }
       const M = {
         __extends: n,
-        __assign: s,
-        __rest: a,
+        __assign: a,
+        __rest: s,
         __decorate: i,
         __param: c,
         __esDecorate: l,
@@ -985,8 +985,8 @@ try {
         __metadata: p,
         __awaiter: m,
         __generator: y,
-        __createBinding: _,
-        __exportStar: b,
+        __createBinding: b,
+        __exportStar: _,
         __values: h,
         __read: w,
         __spread: v,
@@ -1037,8 +1037,8 @@ try {
       "use strict";
       var o = r(2229),
         n = Symbol.for("react.element"),
-        s = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
+        a = Symbol.for("react.fragment"),
+        s = Object.prototype.hasOwnProperty,
         i = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         c = {
           key: !0,
@@ -1048,27 +1048,27 @@ try {
         };
 
       function l(e, t, r) {
-        var o, s = {},
+        var o, a = {},
           l = null,
           u = null;
-        for (o in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) a.call(t, o) && !c.hasOwnProperty(o) && (s[o] = t[o]);
+        for (o in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) s.call(t, o) && !c.hasOwnProperty(o) && (a[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === s[o] && (s[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === a[o] && (a[o] = t[o]);
         return {
           $$typeof: n,
           type: e,
           key: l,
           ref: u,
-          props: s,
+          props: a,
           _owner: i.current
         }
       }
-      t.Fragment = s, t.jsx = l, t.jsxs = l
+      t.Fragment = a, t.jsx = l, t.jsxs = l
     },
     9867: (e, t, r) => {
       "use strict";
       r.d(t, {
-        A: () => s,
+        A: () => a,
         C: () => o
       });
       const o = {
@@ -1091,19 +1091,19 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        s = () => {
+        a = () => {
           let e;
           const {
             location: t
           } = window, r = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = n.findIndex((t => Object.entries(t.sites).findIndex((([t, o]) => o === r && (e = {
             site: t,
             subDomain: o
-          }, !0))) >= 0)), s = n[o >= 0 ? o : 0];
+          }, !0))) >= 0)), a = n[o >= 0 ? o : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...s,
+            ...a,
             currentSite: e
           }
         }

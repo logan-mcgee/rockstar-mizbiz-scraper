@@ -20,8 +20,8 @@ try {
         Lightbox_Dialog_Description: () => m,
         Lightbox_Dialog_Title: () => L,
         Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => c
+        default: () => p
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
@@ -43,11 +43,11 @@ try {
         g = "Livello zoom",
         u = "{zoom}%",
         r = "Scarica",
-        f = "Scarica",
-        h = "Apri immagine in lightbox",
+        h = "Scarica",
+        f = "Apri immagine in lightbox",
         L = "Immagine lightbox",
         m = "Testo alternativo: {alt}",
-        c = {
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -59,8 +59,8 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: f,
           Lightbox_Dialog_Title: L,
           Lightbox_Dialog_Description: m
         }

@@ -1,0 +1,681 @@
+._1238r70 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+._1238r70[data-use-padding="true"] {
+  padding-inline: var(--padding-sides);
+  max-width: calc(var(--content-max-width) + var(--padding-sides) * 2);
+}
+
+._1238r70[data-use-padding="false"] {
+  max-width: 2560px;
+  padding-inline: 7.5vw;
+}
+
+._1238r71 {
+  display: flex !important;
+  flex-direction: column;
+  background-color: var(--foundry-global-color-black-static-100-43aea341);
+  border-radius: var(--foundry-global-border-radius-100-742803b2);
+  overflow: hidden;
+}
+
+._1238r72 {
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-image: var(--engagement-image);
+  width: 100%;
+}
+
+._1238r74 {
+  position: relative;
+  width: 100%;
+}
+
+._1238r74.loader {
+  display: grid;
+  align-content: center;
+}
+
+._1238r75 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-between;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  top: 0;
+  gap: var(--foundry-global-spacing-gap-250-ee21f32b);
+  padding: 0;
+}
+
+._1238r76 {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+._1238r77 {
+  display: flex;
+  opacity: 1;
+}
+
+._1238r78 {
+  transform: translate(0, 0);
+}
+
+._1238r79 {
+  opacity: 0;
+}
+
+._1238r7a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry-global-spacing-gap-400-f21302a9);
+  max-width: 700px;
+}
+
+._1238r7b {
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+._1238r7f {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry-global-spacing-gap-250-ee21f32b);
+}
+
+._1238r7g {
+  align-items: flex-start;
+}
+
+._1238r7i {
+  padding: 0 var(--foundry-global-spacing-gap-600-d02b9116);
+}
+
+._1238r7j {
+  gap: var(--foundry-global-spacing-dimensions-250-1db78665);
+  display: flex;
+  flex-direction: column;
+}
+
+._1238r7k {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+._1238r7l.override p {
+  font-size: var(--foundry-alias-font-size-body-body-sm-2a8e6da3);
+  color: var(--foundry-global-color-alpha-adaptive-65-5c75d572);
+  letter-spacing: -0.55px;
+}
+
+._1238r7l .faq,
+._1238r7l a {
+  color: var(--foundry-global-color-white-static-100-d44db539);
+  font-weight: var(--foundry-alias-font-weight-bold-751d319e);
+  text-decoration: underline;
+}
+
+._1238r7m {
+  width: fit-content;
+  background-color: var(--foundry-global-color-grey-static-300-60d2d1b8);
+}
+
+._1238r7n {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry-global-spacing-dimensions-250-1db78665);
+}
+
+._1238r7o {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry-global-spacing-dimensions-250-1db78665);
+}
+
+._1238r7o a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+._1238r7p {
+  height: var(--foundry-global-spacing-dimensions-600-552f3071);
+  width: var(--foundry-global-spacing-dimensions-600-552f3071);
+}
+
+._1238r7q {
+  color: var(--foundry-alias-color-icon-success-e23133ed);
+}
+
+._1238r7r {
+  color: var(--foundry-alias-color-icon-danger-615a4836);
+}
+
+._1238r7s {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+._1238r7t {
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0;
+}
+
+._1238r7u {
+  position: relative;
+}
+
+._1238r7v {
+  margin-bottom: auto;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+._1238r7v .swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  gap: var(--foundry-global-spacing-dimensions-100-97e13da9);
+  will-change: transform;
+  align-items: center;
+}
+
+._1238r7v .swiper-slide {
+  width: fit-content;
+}
+
+._1238r7w {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease-in-out;
+  border-radius: 0;
+  border: none;
+  left: 0;
+  margin-left: calc(var(--foundry-global-spacing-dimensions-400-b120da78) * -3);
+  transform: translateX(100%);
+  background: linear-gradient(90deg, var(--foundry-global-color-black-static-100-43aea341) 0%, transparent 100%);
+  display: none;
+}
+
+._1238r7w:focus {
+  outline: none;
+  border: none;
+}
+
+._1238r7w:focus,
+._1238r7w:hover {
+  background: linear-gradient(90deg, var(--foundry-global-color-black-static-100-43aea341) 0%, transparent 100%);
+}
+
+._1238r7w[data-hidden="true"] {
+  display: none;
+}
+
+._1238r7x {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease-in-out;
+  border-radius: 0;
+  border: none;
+  right: calc(var(--foundry-global-spacing-dimensions-400-b120da78) * -3);
+  transform: translateX(-100%);
+  background: linear-gradient(270deg, var(--foundry-global-color-black-static-100-43aea341) 0%, transparent 100%);
+  display: none;
+}
+
+._1238r7x:focus {
+  outline: none;
+  border: none;
+}
+
+._1238r7x:focus,
+._1238r7x:hover {
+  background: linear-gradient(270deg, var(--foundry-global-color-black-static-100-43aea341) 0%, transparent 100%);
+}
+
+._1238r7x[data-hidden="true"] {
+  display: none;
+}
+
+._1238r7y {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+._1238r711 {
+  background-color: var(--foundry-global-color-grey-adaptive-1000-020dfb1f);
+}
+
+._1238r712 {
+  padding: 0;
+  display: flex;
+  gap: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+}
+
+._1238r712 button {
+  padding: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  background: var(--foundry-global-color-grey-adaptive-1000-020dfb1f);
+  border-radius: var(--foundry-global-border-radius-50-5b3f01bf);
+}
+
+._1238r712 img {
+  display: block;
+  height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  max-width: 100%;
+  object-fit: contain;
+}
+
+._1238r713.override {
+  font-weight: var(--foundry-alias-font-weight-bold-751d319e);
+  font-size: var(--foundry-alias-font-size-heading-04-1fdd08c0);
+  letter-spacing: var(--foundry-global-font-letter-spacing-25-e01b7d49);
+  line-height: var(--foundry-global-font-line-height-120-114ddbcd);
+  color: var(--foundry-alias-color-text-header-c0780da4);
+}
+
+[data-font="chalet"] ._1238r713 {
+  font-family: ChaletComprime;
+  font-size: var(--foundry-alias-font-size-heading-02-0fd2c0d9);
+  line-height: var(--foundry-global-font-line-height-110-f2a1d21c);
+}
+
+@media (max-width: 1279.98px) {
+  ._1238r71 {
+    height: auto;
+    flex-direction: row;
+    padding-bottom: var(--foundry-global-spacing-gap-400-f21302a9);
+  }
+
+  ._1238r71.loader {
+    border: none;
+    background-color: inherit;
+  }
+
+  ._1238r72 {
+    display: none;
+  }
+
+  ._1238r74.loader {
+    min-height: 50px;
+    background: none;
+    border: none;
+  }
+
+  ._1238r75 {
+    transition: transform 0.3s ease-out, opacity 0.2s ease-out;
+  }
+
+  ._1238r75.landingSlide {
+    position: relative;
+    height: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  ._1238r70[data-use-padding="false"] {
+    padding-inline: 13vw;
+  }
+
+  ._1238r72 {
+    flex: 1;
+  }
+
+  ._1238r74 {
+    flex: 1.5;
+  }
+}
+
+@media (min-width: 1920px) {
+  ._1238r70[data-use-padding="false"] {
+    padding-inline: min(16vw, calc(2560px * (16 / 100)));
+  }
+
+  ._1238r74 {
+    flex: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  ._1238r71 {
+    flex-direction: row;
+    height: 31.8rem;
+  }
+
+  ._1238r73 {
+    display: none;
+  }
+
+  ._1238r75 {
+    position: absolute;
+    max-height: 100%;
+    top: 50%;
+  }
+
+  ._1238r76 {
+    transform: translate(100%, -50%);
+  }
+}
+
+@media (min-width: 2560px) {
+  ._1238r71 {
+    flex-direction: row;
+    height: 41.8rem;
+  }
+
+  ._1238r72 {
+    flex: 1;
+  }
+
+  ._1238r74 {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 2559px) {
+  ._1238r72 {
+    aspect-ratio: 1 / 1;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  ._1238r77 {
+    transform: translate(100%, -50%);
+  }
+
+  ._1238r78 {
+    transform: translate(0, -50%);
+  }
+
+  ._1238r79 {
+    transform: translate(-100%, -50%);
+  }
+}
+
+@media (max-width: 1279.98px) {
+  ._1238r77 {
+    transform: translateY(100%);
+  }
+}
+
+@media (min-width: 1440px) {
+  ._1238r7w {
+    margin-left: calc(var(--foundry-global-spacing-dimensions-800-bbdfa298) * -2);
+  }
+
+  ._1238r7x {
+    right: calc(var(--foundry-global-spacing-dimensions-800-bbdfa298) * -2);
+  }
+}
+
+.foundry_v1yii71 {
+  width: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+}
+
+.foundry_v1yii72 {
+  width: var(--foundry-global-spacing-dimensions-250-1db78665);
+  height: var(--foundry-global-spacing-dimensions-250-1db78665);
+}
+
+.foundry_v1yii73 {
+  width: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+  height: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+}
+
+.foundry_v1yii74 {
+  width: var(--foundry-global-spacing-dimensions-400-b120da78);
+  height: var(--foundry-global-spacing-dimensions-400-b120da78);
+}
+
+:root {
+  --__foundry-global-platform-scales-ratio: 1
+}
+
+:root {
+  --foundry-global-font-line-height-150: 150%;
+  --foundry-global-font-line-height-130: 130%;
+  --foundry-global-font-line-height-120: 120%;
+  --foundry-global-font-line-height-110: 110%;
+  --foundry-global-font-line-height-100: 100%;
+  --foundry-global-font-letter-spacing-neg-50: -0.005em;
+  --foundry-global-font-letter-spacing-neg-75: -0.0075em;
+  --foundry-global-font-letter-spacing-neg-100: -0.01em;
+  --foundry-global-font-letter-spacing-neg-150: -0.015em;
+  --foundry-global-font-letter-spacing-neg-250: -0.025em;
+  --foundry-global-font-letter-spacing-250: 0.025em;
+  --foundry-global-font-letter-spacing-200: 0.02em;
+  --foundry-global-font-letter-spacing-100: 0.01em;
+  --foundry-global-font-letter-spacing-25: 0.0025em;
+  --foundry-global-font-letter-spacing-0: 0em;
+  --foundry-global-font-weight-700: 700;
+  --foundry-global-font-weight-400: 400;
+  --foundry-global-font-family-consolas: "Consolas";
+  --foundry-global-font-family-helvetica-now-text: "Helvetica Now Text";
+  --foundry-global-font-family-helvetica-now-display: "Helvetica Now Display";
+  --foundry-global-font-family-arial: "Arial";
+  --foundry-global-border-width-50: 4px;
+  --foundry-global-border-width-33: 3px;
+  --foundry-global-border-width-25: 2px;
+  --foundry-global-border-width-10: 1px;
+  --foundry-global-border-width-0: 0px;
+  --foundry-global-border-radius-pill: 1000px;
+  --foundry-global-border-radius-circle: 9999px;
+  --foundry-global-border-radius-400: 32px;
+  --foundry-global-border-radius-300: 24px;
+  --foundry-global-border-radius-200: 16px;
+  --foundry-global-border-radius-150: 12px;
+  --foundry-global-border-radius-100: 8px;
+  --foundry-global-border-radius-50: 4px;
+  --foundry-global-border-radius-25: 2px;
+  --foundry-global-border-radius-0: 0px;
+  --foundry-alias-font-line-height-body: var(--foundry-global-font-line-height-150);
+  --foundry-alias-font-line-height-heading: var(--foundry-global-font-line-height-130);
+  --foundry-alias-font-weight-bold: var(--foundry-global-font-weight-700);
+  --foundry-alias-font-weight-regular: var(--foundry-global-font-weight-400);
+  --foundry-alias-font-letter-spacing-label-fallback: var(--foundry-global-font-letter-spacing-200);
+  --foundry-alias-font-letter-spacing-label-primary: var(--foundry-global-font-letter-spacing-200);
+  --foundry-alias-font-letter-spacing-body-fallback: var(--foundry-global-font-letter-spacing-neg-250);
+  --foundry-alias-font-letter-spacing-body-primary: var(--foundry-global-font-letter-spacing-neg-250);
+  --foundry-alias-font-letter-spacing-heading-fallback: var(--foundry-global-font-letter-spacing-neg-250);
+  --foundry-alias-font-letter-spacing-heading-primary: var(--foundry-global-font-letter-spacing-neg-250);
+  --foundry-alias-font-family-code-fallback: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-code-primary: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-body-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-body-primary: var(--foundry-global-font-family-helvetica-now-text);
+  --foundry-alias-font-family-heading-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-heading-primary: var(--foundry-global-font-family-helvetica-now-display);
+  --__foundry-global-platform-scales-scale-6250: calc(500px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-6000: calc(480px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5750: calc(460px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5500: calc(440px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5250: calc(420px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5000: calc(400px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4750: calc(380px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4500: calc(360px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4250: calc(340px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4125: calc(330px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4000: calc(320px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3750: calc(300px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3500: calc(280px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3350: calc(268px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3150: calc(252px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3000: calc(240px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2750: calc(220px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2500: calc(200px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2400: calc(192px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2350: calc(188px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2200: calc(176px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2000: calc(160px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1800: calc(144px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1700: calc(136px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1600: calc(128px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1400: calc(112px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1200: calc(96px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1150: calc(92px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1100: calc(88px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1000: calc(80px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-950: calc(76px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-900: calc(72px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-800: calc(64px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-750: calc(60px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-700: calc(56px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-650: calc(52px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-600: calc(48px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-550: calc(44px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-500: calc(40px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-450: calc(36px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-400: calc(32px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-350: calc(28px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-300: calc(24px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-250: calc(20px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-225: calc(18px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-200: calc(16px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-175: calc(14px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-150: calc(12px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-125: calc(10px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-100: calc(8px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-75: calc(6px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-50: calc(4px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-33: calc(3px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-25: calc(2px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-10: calc(1px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-0: calc(0px * var(--__foundry-global-platform-scales-ratio));
+  --foundry-global-font-spacing-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-font-size-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-font-size-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-font-size-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-font-size-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-font-size-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-font-size-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-font-size-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-font-size-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-font-size-225: var(--__foundry-global-platform-scales-scale-225);
+  --foundry-global-font-size-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-font-size-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-font-size-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-6250: var(--__foundry-global-platform-scales-scale-6250);
+  --foundry-global-spacing-dimensions-6000: var(--__foundry-global-platform-scales-scale-6000);
+  --foundry-global-spacing-dimensions-5750: var(--__foundry-global-platform-scales-scale-5750);
+  --foundry-global-spacing-dimensions-5500: var(--__foundry-global-platform-scales-scale-5500);
+  --foundry-global-spacing-dimensions-5250: var(--__foundry-global-platform-scales-scale-5250);
+  --foundry-global-spacing-dimensions-5000: var(--__foundry-global-platform-scales-scale-5000);
+  --foundry-global-spacing-dimensions-4750: var(--__foundry-global-platform-scales-scale-4750);
+  --foundry-global-spacing-dimensions-4500: var(--__foundry-global-platform-scales-scale-4500);
+  --foundry-global-spacing-dimensions-4250: var(--__foundry-global-platform-scales-scale-4250);
+  --foundry-global-spacing-dimensions-4125: var(--__foundry-global-platform-scales-scale-4125);
+  --foundry-global-spacing-dimensions-4000: var(--__foundry-global-platform-scales-scale-4000);
+  --foundry-global-spacing-dimensions-3750: var(--__foundry-global-platform-scales-scale-3750);
+  --foundry-global-spacing-dimensions-3500: var(--__foundry-global-platform-scales-scale-3500);
+  --foundry-global-spacing-dimensions-3350: var(--__foundry-global-platform-scales-scale-3350);
+  --foundry-global-spacing-dimensions-3150: var(--__foundry-global-platform-scales-scale-3150);
+  --foundry-global-spacing-dimensions-3000: var(--__foundry-global-platform-scales-scale-3000);
+  --foundry-global-spacing-dimensions-2750: var(--__foundry-global-platform-scales-scale-2750);
+  --foundry-global-spacing-dimensions-2500: var(--__foundry-global-platform-scales-scale-2500);
+  --foundry-global-spacing-dimensions-2400: var(--__foundry-global-platform-scales-scale-2400);
+  --foundry-global-spacing-dimensions-2350: var(--__foundry-global-platform-scales-scale-2350);
+  --foundry-global-spacing-dimensions-2200: var(--__foundry-global-platform-scales-scale-2200);
+  --foundry-global-spacing-dimensions-2000: var(--__foundry-global-platform-scales-scale-2000);
+  --foundry-global-spacing-dimensions-1800: var(--__foundry-global-platform-scales-scale-1800);
+  --foundry-global-spacing-dimensions-1700: var(--__foundry-global-platform-scales-scale-1700);
+  --foundry-global-spacing-dimensions-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-dimensions-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-dimensions-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-dimensions-1150: var(--__foundry-global-platform-scales-scale-1150);
+  --foundry-global-spacing-dimensions-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-dimensions-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-dimensions-950: var(--__foundry-global-platform-scales-scale-950);
+  --foundry-global-spacing-dimensions-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-dimensions-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-dimensions-750: var(--__foundry-global-platform-scales-scale-750);
+  --foundry-global-spacing-dimensions-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-dimensions-650: var(--__foundry-global-platform-scales-scale-650);
+  --foundry-global-spacing-dimensions-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-dimensions-550: var(--__foundry-global-platform-scales-scale-550);
+  --foundry-global-spacing-dimensions-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-dimensions-450: var(--__foundry-global-platform-scales-scale-450);
+  --foundry-global-spacing-dimensions-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-dimensions-350: var(--__foundry-global-platform-scales-scale-350);
+  --foundry-global-spacing-dimensions-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-dimensions-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-dimensions-225: var(--__foundry-global-platform-scales-scale-225);
+  --foundry-global-spacing-dimensions-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-dimensions-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-dimensions-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-125: var(--__foundry-global-platform-scales-scale-125);
+  --foundry-global-spacing-dimensions-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-dimensions-75: var(--__foundry-global-platform-scales-scale-75);
+  --foundry-global-spacing-dimensions-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-dimensions-33: var(--__foundry-global-platform-scales-scale-33);
+  --foundry-global-spacing-dimensions-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-global-spacing-dimensions-10: var(--__foundry-global-platform-scales-scale-10);
+  --foundry-global-spacing-gap-2500: var(--__foundry-global-platform-scales-scale-2500);
+  --foundry-global-spacing-gap-2400: var(--__foundry-global-platform-scales-scale-2400);
+  --foundry-global-spacing-gap-2350: var(--__foundry-global-platform-scales-scale-2350);
+  --foundry-global-spacing-gap-2200: var(--__foundry-global-platform-scales-scale-2200);
+  --foundry-global-spacing-gap-2000: var(--__foundry-global-platform-scales-scale-2000);
+  --foundry-global-spacing-gap-1800: var(--__foundry-global-platform-scales-scale-1800);
+  --foundry-global-spacing-gap-1700: var(--__foundry-global-platform-scales-scale-1700);
+  --foundry-global-spacing-gap-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-gap-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-gap-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-gap-1150: var(--__foundry-global-platform-scales-scale-1150);
+  --foundry-global-spacing-gap-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-gap-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-gap-950: var(--__foundry-global-platform-scales-scale-950);
+  --foundry-global-spacing-gap-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-gap-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-gap-750: var(--__foundry-global-platform-scales-scale-750);
+  --foundry-global-spacing-gap-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-gap-650: var(--__foundry-global-platform-scales-scale-650);
+  --foundry-global-spacing-gap-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-gap-550: var(--__foundry-global-platform-scales-scale-550);
+  --foundry-global-spacing-gap-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-gap-450: var(--__foundry-global-platform-scales-scale-450);
+  --foundry-global-spacing-gap-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-gap-350: var(--__foundry-global-platform-scales-scale-350);
+  --foundry-global-spacing-gap-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-gap-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-gap-225: var(--__foundry-global-platform-scales-scale-225);
+  --foundry-global-spacing-gap-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-gap-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-gap-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-gap-125: var(--__foundry-global-platform-scales-scale-125);
+  --foundry-global-spacing-gap-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-gap-75: var(--__foundry-global-platform-scales-scale-75);
+  --foundry-global-spacing-gap-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-gap-33: var(--__foundry-global-platform-scales-scale-33);
+  --foundry-global-spacing-gap-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-global-spacing-gap-10: var(--__foundry-global-platform-scales-scale-10);
+  --foundry-alias-font-size-body-code: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-body-body-xs: var(--foundry-global-font-size-150);
+  --foundry-alias-font-size-body-body-sm: var(--foundry-global-font-size-175);
+  --foundry-alias-font-size-body-body-md: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-body-body-lg: var(--foundry-global-font-size-225);
+  --foundry-alias-font-size-heading-06: var(--foundry-global-font-size-250);
+  --foundry-alias-font-size-heading-05: var(--foundry-global-font-size-300);
+  --foundry-alias-font-size-heading-04: var(--foundry-global-font-size-400);
+  --foundry-alias-font-size-heading-03: var(--foundry-global-font-size-500);
+  --foundry-alias-font-size-heading-02: var(--foundry-global-font-size-600);
+  --foundry-alias-font-size-heading-01: var(--foundry-global-font-size-700);
+  --foundry-alias-font-size-heading-display: var(--foundry-global-font-size-800);
+  --foundry-alias-font-spacing-paragraph: var(--foundry-global-font-spacing-400)
+}
+
+/*# sourceMappingURL=f9c77f0c92c32584fcabab2f8a06d7de.css.map*/

@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => c
       });
       var _ = "라이트박스 닫기",
         i = "{shortcut} 누르기",
@@ -47,7 +47,7 @@ try {
         h = "라이트박스에서 이미지 열기",
         L = "라이트박스 이미지",
         p = "대체 문구: {alt}",
-        x = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,

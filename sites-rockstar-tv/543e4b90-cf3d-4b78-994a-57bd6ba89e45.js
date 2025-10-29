@@ -33,8 +33,8 @@ try {
           c = u.fields,
           d = u.style,
           f = u.numeric,
-          v = u.pluralRules,
-          b = u.numberFormat,
+          b = u.pluralRules,
+          v = u.numberFormat,
           y = s;
         "short" === d ? y = "".concat(s, "-short") : "narrow" === d && (y = "".concat(s, "-narrow")), y in c || (y = s);
         var p = c[y];
@@ -45,12 +45,12 @@ try {
         var m = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
         var g = p[m],
-          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
+          w = "function" == typeof v.formatToParts ? v.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: b.format(Math.abs(t)),
+            value: v.format(Math.abs(t)),
             unit: a
           }],
-          h = g[v.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, s, w)
       };
       var r = a(2306),
@@ -176,15 +176,15 @@ try {
           d = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
-        var v = (0, r.CanonicalizeLocaleList)(t),
-          b = Object.create(null),
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          v = Object.create(null),
           y = (0, r.CoerceOptionsToObject)(a),
           p = (0, r.GetOption)(y, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        b.localeMatcher = p;
+        v.localeMatcher = p;
         var m = (0, r.GetOption)(y, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
-        b.nu = m;
-        var g = (0, n.ResolveLocale)(s, v, b, u, c, d),
+        v.nu = m;
+        var g = (0, n.ResolveLocale)(s, b, v, u, c, d),
           w = g.locale,
           h = g.nu;
         f.locale = w, f.style = (0, r.GetOption)(y, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(y, "numeric", "string", ["always", "auto"], "always");
