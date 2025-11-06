@@ -19,11 +19,11 @@ try {
         Root: () => E
       });
       var o = n(71127),
-        d = n(95362),
-        s = n(78004),
-        r = n(76286),
-        u = n(42295),
-        c = "focusScope.autoFocusOnMount",
+        s = n(95362),
+        d = n(78004),
+        c = n(76286),
+        r = n(42295),
+        u = "focusScope.autoFocusOnMount",
         a = "focusScope.autoFocusOnUnmount",
         i = {
           bubbles: !1,
@@ -36,7 +36,7 @@ try {
             onMountAutoFocus: m,
             onUnmountAutoFocus: y,
             ...E
-          } = e, [g, h] = o.useState(null), w = (0, r.c)(m), T = (0, r.c)(y), _ = o.useRef(null), L = (0, d.s)(t, (e => h(e))), N = o.useRef({
+          } = e, [g, h] = o.useState(null), w = (0, c.c)(m), T = (0, c.c)(y), _ = o.useRef(null), L = (0, s.s)(t, (e => h(e))), N = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -79,8 +79,8 @@ try {
               v.add(N);
               const e = document.activeElement;
               if (!g.contains(e)) {
-                const t = new CustomEvent(c, i);
-                g.addEventListener(c, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(u, i);
+                g.addEventListener(u, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -93,7 +93,7 @@ try {
                 }), document.activeElement === e && b(g))
               }
               return () => {
-                g.removeEventListener(c, w), setTimeout((() => {
+                g.removeEventListener(u, w), setTimeout((() => {
                   const t = new CustomEvent(a, i);
                   g.addEventListener(a, T), g.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
                     select: !0
@@ -109,18 +109,18 @@ try {
               o = document.activeElement;
             if (t && o) {
               const t = e.currentTarget,
-                [d, s] = function(e) {
+                [s, d] = function(e) {
                   const t = l(e);
                   return [p(t, e), p(t.reverse(), e)]
                 }(t);
-              d && s ? e.shiftKey || o !== s ? e.shiftKey && o === d && (e.preventDefault(), n && b(s, {
+              s && d ? e.shiftKey || o !== d ? e.shiftKey && o === s && (e.preventDefault(), n && b(d, {
                 select: !0
-              })) : (e.preventDefault(), n && b(d, {
+              })) : (e.preventDefault(), n && b(s, {
                 select: !0
               })) : o === t && e.preventDefault()
             }
           }), [n, f, N.paused]);
-          return (0, u.jsx)(s.sG.div, {
+          return (0, r.jsx)(d.sG.div, {
             tabIndex: -1,
             ...E,
             ref: L,

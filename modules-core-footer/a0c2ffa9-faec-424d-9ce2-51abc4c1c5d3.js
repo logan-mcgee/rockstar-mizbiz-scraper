@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b40b50db-bcf8-4df8-be0f-10fe8f88be3a", e._sentryDebugIdIdentifier = "sentry-dbid-b40b50db-bcf8-4df8-be0f-10fe8f88be3a")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a0c2ffa9-faec-424d-9ce2-51abc4c1c5d3", e._sentryDebugIdIdentifier = "sentry-dbid-a0c2ffa9-faec-424d-9ce2-51abc4c1c5d3")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,10 +12,111 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [9757], {
+  [5941, 9757], {
+    42295: (e, t, o) => {
+      e.exports = o(69245)
+    },
+    69245: (e, t, o) => {
+      var n = o(71127),
+        r = Symbol.for("react.element"),
+        a = Symbol.for("react.fragment"),
+        s = Object.prototype.hasOwnProperty,
+        i = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        c = {
+          key: !0,
+          ref: !0,
+          __self: !0,
+          __source: !0
+        };
+
+      function l(e, t, o) {
+        var n, a = {},
+          l = null,
+          d = null;
+        for (n in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, n) && !c.hasOwnProperty(n) && (a[n] = t[n]);
+        if (e && e.defaultProps)
+          for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
+        return {
+          $$typeof: r,
+          type: e,
+          key: l,
+          ref: d,
+          props: a,
+          _owner: i.current
+        }
+      }
+      t.Fragment = a, t.jsx = l, t.jsxs = l
+    },
+    79465: e => {
+      var t = function(e) {
+          return function(e) {
+            return !!e && "object" == typeof e
+          }(e) && ! function(e) {
+            var t = Object.prototype.toString.call(e);
+            return "[object RegExp]" === t || "[object Date]" === t || function(e) {
+              return e.$$typeof === o
+            }(e)
+          }(e)
+        },
+        o = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
+
+      function n(e, t) {
+        return !1 !== t.clone && t.isMergeableObject(e) ? i((o = e, Array.isArray(o) ? [] : {}), e, t) : e;
+        var o
+      }
+
+      function r(e, t, o) {
+        return e.concat(t).map((function(e) {
+          return n(e, o)
+        }))
+      }
+
+      function a(e) {
+        return Object.keys(e).concat(function(e) {
+          return Object.getOwnPropertySymbols ? Object.getOwnPropertySymbols(e).filter((function(t) {
+            return Object.propertyIsEnumerable.call(e, t)
+          })) : []
+        }(e))
+      }
+
+      function s(e, t) {
+        try {
+          return t in e
+        } catch (e) {
+          return !1
+        }
+      }
+
+      function i(e, o, c) {
+        (c = c || {}).arrayMerge = c.arrayMerge || r, c.isMergeableObject = c.isMergeableObject || t, c.cloneUnlessOtherwiseSpecified = n;
+        var l = Array.isArray(o);
+        return l === Array.isArray(e) ? l ? c.arrayMerge(e, o, c) : function(e, t, o) {
+          var r = {};
+          return o.isMergeableObject(e) && a(e).forEach((function(t) {
+            r[t] = n(e[t], o)
+          })), a(t).forEach((function(a) {
+            (function(e, t) {
+              return s(e, t) && !(Object.hasOwnProperty.call(e, t) && Object.propertyIsEnumerable.call(e, t))
+            })(e, a) || (s(e, a) && o.isMergeableObject(t[a]) ? r[a] = function(e, t) {
+              if (!t.customMerge) return i;
+              var o = t.customMerge(e);
+              return "function" == typeof o ? o : i
+            }(a, o)(e[a], t[a], o) : r[a] = n(t[a], o))
+          })), r
+        }(e, o, c) : n(o, c)
+      }
+      i.all = function(e, t) {
+        if (!Array.isArray(e)) throw new Error("first argument should be an array");
+        return e.reduce((function(e, o) {
+          return i(e, o, t)
+        }), {})
+      };
+      var c = i;
+      e.exports = c
+    },
     79867: (e, t, o) => {
       o.d(t, {
-        A: () => r,
+        A: () => a,
         C: () => n
       });
       const n = {
@@ -26,7 +127,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        a = [{
+        r = [{
           id: "prod",
           sites: {
             www: "www",
@@ -38,19 +139,19 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        r = () => {
+        a = () => {
           let e;
           const {
             location: t
-          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), n = a.findIndex((t => Object.entries(t.sites).findIndex((([t, n]) => n === o && (e = {
+          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), n = r.findIndex((t => Object.entries(t.sites).findIndex((([t, n]) => n === o && (e = {
             site: t,
             subDomain: n
-          }, !0))) >= 0)), r = a[n >= 0 ? n : 0];
+          }, !0))) >= 0)), a = r[n >= 0 ? n : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...r,
+            ...a,
             currentSite: e
           }
         }
@@ -59,84 +160,85 @@ try {
       o.r(t), o.d(t, {
         ApolloClient: () => P.R,
         ApolloProvider: () => C.X,
-        DataLayerProvider: () => _e,
-        GraphOperationsProvider: () => U,
-        InMemoryCache: () => S.D,
-        Platform: () => ae,
-        Platforms: () => re,
-        ReactiveStateProvider: () => y,
+        DataLayerProvider: () => De,
+        GraphOperationsProvider: () => I,
+        InMemoryCache: () => k.D,
+        Platform: () => re,
+        Platforms: () => ae,
+        ReactiveStateProvider: () => v,
         ResizeProvider: () => He.uU,
-        RockstarGraphProvider: () => W,
-        RockstarTokenProvider: () => B.ec,
+        RockstarGraphProvider: () => X,
+        RockstarTokenProvider: () => N.ec,
         ScrollProvider: () => Me.N2,
         coreScApiFetch: () => n.A,
         detectIfWeShouldAnchorSomewhere: () => oe,
-        downloadFile: () => fe,
+        downloadFile: () => we,
         findPlatform: () => ie,
         generateTpaLink: () => ge,
-        getAccentColor: () => a,
-        getBase: () => r.A,
-        getCdnPrefix: () => we,
+        getAccentColor: () => r,
+        getBase: () => a.A,
+        getCdnPrefix: () => me,
         getConfigForDomain: () => s.A,
-        getCookieValueByName: () => ce,
+        getCookieValueByName: () => de,
         getGen8Consoles: () => be,
-        getGen9Consoles: () => ve,
+        getGen9Consoles: () => ye,
         getLanguageLabel: () => xe,
         getUriForGraphEnv: () => i,
-        gql: () => Re.J1,
-        gtmInit: () => $e,
-        importAll: () => he,
-        isGen9Platform: () => ye,
-        makeVar: () => k.UT,
-        mutateWebSettings: () => Ve,
+        gql: () => Le.J1,
+        gtmInit: () => Fe,
+        importAll: () => fe,
+        isGen9Platform: () => ve,
+        makeVar: () => S.UT,
+        mutateWebSettings: () => We,
         newswirePost: () => Z,
         oneTrustInit: () => K,
-        safeStyles: () => c,
+        safeStyles: () => d,
         scrollToElement: () => te,
         setContextItem: () => u.A,
         setCookieValue: () => ue,
         setMakeVarItem: () => p.A,
         supportedBrowsers: () => ee,
-        toScLocaleString: () => Be.t,
-        track: () => Ee,
-        useApolloClient: () => V,
-        useBase: () => L.RK,
+        toScLocaleString: () => Ne.t,
+        track: () => Ae,
+        useApolloClient: () => W,
+        useBase: () => O.RK,
         useBodyScrollable: () => Y,
-        useDataLayer: () => De,
-        useHasReduceMotionPreference: () => L.vx,
-        useHasSaveDataPreference: () => L.sb,
-        useLocale: () => L.Ym,
-        useMutateState: () => v,
-        useMutation: () => _,
-        useNewswirePost: () => L.CA,
-        usePreloadImg: () => L.OG,
-        usePrevious: () => L.ZC,
-        useQuery: () => D,
-        useQueryParams: () => L.sq,
-        useReactiveVar: () => m.q,
-        useRockstarEventDispatcher: () => L.OH,
-        useRockstarEventSubscriber: () => L.zP,
-        useRockstarToken: () => B.e9,
-        useRockstarTokenPing: () => B.Es,
-        useRockstarTokenReactive: () => B.bD,
-        useRockstarWebSettings: () => We,
-        useScApi: () => L.Cb,
-        useScAuthLinks: () => L.N6,
+        useDataLayer: () => Ue,
+        useHasReduceMotionPreference: () => O.vx,
+        useHasSaveDataPreference: () => O.sb,
+        useLocale: () => O.Ym,
+        useMutateState: () => y,
+        useMutation: () => D,
+        useNewswirePost: () => O.CA,
+        usePreloadImg: () => O.OG,
+        usePrevious: () => O.ZC,
+        useQuery: () => U,
+        useQueryParams: () => O.sq,
+        useReactiveVar: () => h.q,
+        useRockstarEventDispatcher: () => O.OH,
+        useRockstarEventSubscriber: () => O.zP,
+        useRockstarToken: () => N.e9,
+        useRockstarTokenPing: () => N.Es,
+        useRockstarTokenReactive: () => N.bD,
+        useRockstarWebSettings: () => Xe,
+        useScApi: () => O.Cb,
+        useScAuthLinks: () => O.N6,
         useScroll: () => Me.Ll,
-        useScrollTracking: () => L.GA,
-        useState: () => f,
+        useScrollTracking: () => O.GA,
+        useScrollVisibility: () => O.JE,
+        useState: () => w,
         useWindowResize: () => He.G4,
-        webSettingsReactive: () => Xe,
-        withAutoRouteTracking: () => Ge,
-        withGtmTracking: () => Le,
-        withMediaBasedProps: () => Te,
+        webSettingsReactive: () => Ve,
+        withAutoRouteTracking: () => $e,
+        withGtmTracking: () => Oe,
+        withMediaBasedProps: () => je,
         withReactiveState: () => x,
         withRockstarGraph: () => H,
-        withTranslations: () => Oe
+        withTranslations: () => Te
       });
       var n = o(60099);
-      const a = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var r = o(60309),
+      const r = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
+      var a = o(60309),
         s = o(45547);
       const i = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
@@ -153,40 +255,40 @@ try {
         }
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
-      var d = o(15076),
-        l = o.n(d);
-      const c = e => {
+      var c = o(15076),
+        l = o.n(c);
+      const d = e => {
         const t = l().clone(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
       var u = o(9482),
         p = o(52690),
         g = o(42295),
-        h = o(71127),
-        m = o(93452);
-      const w = (0, u.A)({
-          context: (0, h.createContext)({}),
+        f = o(71127),
+        h = o(93452);
+      const m = (0, u.A)({
+          context: (0, f.createContext)({}),
           key: "graphContextGet"
         }),
-        f = () => (0, h.useContext)(w),
+        w = () => (0, f.useContext)(m),
         b = (0, u.A)({
-          context: (0, h.createContext)({}),
+          context: (0, f.createContext)({}),
           key: "graphContextSet"
         }),
-        v = () => (0, h.useContext)(b),
-        y = ({
+        y = () => (0, f.useContext)(b),
+        v = ({
           children: e,
           state: t
         }) => {
-          (0, m.q)(t);
-          const o = (0, h.useCallback)((e => {
+          (0, h.q)(t);
+          const o = (0, f.useCallback)((e => {
             const o = {
               ...t(),
               ...e
             };
             t(o)
           }), [t]);
-          return (0, g.jsx)(w.Provider, {
+          return (0, g.jsx)(m.Provider, {
             value: t(),
             children: (0, g.jsx)(b.Provider, {
               value: o,
@@ -197,22 +299,22 @@ try {
         x = (e, {
           state: t
         }) => function(o) {
-          return (0, g.jsx)(y, {
+          return (0, g.jsx)(v, {
             state: t,
             children: (0, g.jsx)(e, {
               ...o
             })
           })
         };
-      var k = o(21823),
-        S = o(19757),
+      var S = o(21823),
+        k = o(19757),
         P = o(75102),
         C = o(88718),
-        A = o(13585),
-        E = o(46277),
-        L = o(72148);
-      const T = (e, t) => {
-          const o = (0, L.Ym)(),
+        E = o(13585),
+        A = o(46277),
+        O = o(56088);
+      const j = (e, t) => {
+          const o = (0, O.Ym)(),
             n = {
               autoSetError: !0,
               autoSetLoading: !1,
@@ -224,75 +326,75 @@ try {
               }
             },
             {
-              data: a,
-              loading: r,
+              data: r,
+              loading: a,
               error: s,
               ...i
-            } = (0, E.IT)(e, n);
-          return (0, h.useEffect)((() => {
-            if (a && n.setTitleDataPath) {
-              const e = l().get(a, n.setTitleDataPath) ?? null;
+            } = (0, A.IT)(e, n);
+          return (0, f.useEffect)((() => {
+            if (r && n.setTitleDataPath) {
+              const e = l().get(r, n.setTitleDataPath) ?? null;
               e && window.postMessage({
                 type: "graph.titleUpdate",
                 title: e
               })
             }
-          }), [a]), (0, h.useEffect)((() => (n.autoSetLoading && window.postMessage({
+          }), [r]), (0, f.useEffect)((() => (n.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
-            loading: r
+            loading: a
           }), () => {
             n.autoSetLoading && window.postMessage({
               type: "graph.loadingUpdate",
               loading: !1
             })
-          })), [r]), (0, h.useEffect)((() => {
+          })), [a]), (0, f.useEffect)((() => {
             if (n.autoSetError && s) throw new Error(String(s))
           }), [s]), {
-            loading: r,
+            loading: a,
             error: s,
-            data: a,
+            data: r,
             ...i
           }
         },
-        R = (0, h.createContext)((() => ({
+        L = (0, f.createContext)((() => ({
           data: null
         }))),
-        j = new Promise((e => {
+        R = new Promise((e => {
           e()
         })),
-        I = {
-          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new S.D)
+        _ = {
+          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new k.D)
         },
-        O = [() => j, {
+        T = [() => R, {
           data: null,
           loading: !1,
           called: !1,
           reset: () => null,
-          client: window?.["apollo-client"] ?? (window["apollo-client"] = new P.R(I))
+          client: window?.["apollo-client"] ?? (window["apollo-client"] = new P.R(_))
         }],
-        M = (0, h.createContext)((() => O)),
-        U = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = ({
+        M = (0, f.createContext)((() => T)),
+        I = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = ({
           children: e
         }) => (0, g.jsx)(M.Provider, {
-          value: A.n,
-          children: (0, g.jsx)(R.Provider, {
-            value: T,
+          value: E.n,
+          children: (0, g.jsx)(L.Provider, {
+            value: j,
             children: e
           })
         })),
-        D = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, h.useContext)(R)(e, t)),
-        _ = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, h.useContext)(M)(e));
-      var B = o(20772),
-        N = o(6347);
-      var G = o(83605),
-        $ = o(61162),
-        F = o.n($);
+        U = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, f.useContext)(L)(e, t)),
+        D = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, f.useContext)(M)(e));
+      var N = o(20772),
+        B = o(6347);
+      var $ = o(83605),
+        F = o(61162),
+        G = o.n(F);
       var z = o(62944),
         q = o(42887);
-      const X = (0, z.e)({
+      const V = (0, z.e)({
           sha256: q.sc
         }),
-        V = ({
+        W = ({
           graphOptions: e,
           typePolicies: t = {}
         }) => {
@@ -301,12 +403,12 @@ try {
               ...e,
               uri: o
             },
-            [a] = (0, h.useState)(new S.D({
+            [r] = (0, f.useState)(new k.D({
               typePolicies: t
             })),
-            r = X.concat((({
+            a = V.concat((({
               token: e
-            }) => (0, N.o)(((t, {
+            }) => (0, B.o)(((t, {
               headers: o
             }) => {
               const n = e?.() ?? null;
@@ -318,29 +420,29 @@ try {
               } : null
             })))({
               token: e?.token
-            }).concat((e => (0, G.$)({
+            }).concat((e => (0, $.$)({
               ...e,
-              fetch: F()
+              fetch: G()
             }))(n)));
           return new P.R({
-            cache: a,
-            link: r
+            cache: r,
+            link: a
           })
         },
-        W = ({
+        X = ({
           children: e,
           graphOptions: t,
           typePolicies: o
         }) => {
-          const n = V({
+          const n = W({
             graphOptions: t,
             typePolicies: o ?? {}
           });
-          return (0, g.jsx)(B.ec, {
+          return (0, g.jsx)(N.ec, {
             token: t?.token,
             children: (0, g.jsx)(C.X, {
               client: n,
-              children: (0, g.jsx)(U, {
+              children: (0, g.jsx)(I, {
                 children: e
               })
             })
@@ -349,9 +451,9 @@ try {
         H = (e, {
           env: t = "prod"
         }) => {
-          const o = (0, k.UT)("");
+          const o = (0, S.UT)("");
           return function(n) {
-            return (0, g.jsx)(W, {
+            return (0, g.jsx)(X, {
               graphOptions: {
                 env: t,
                 useGETForQueries: !0,
@@ -363,12 +465,12 @@ try {
             })
           }
         },
-        Q = (0, k.UT)({}),
+        Q = (0, S.UT)({}),
         J = "data-disallow-body-scroll",
         Y = e => {
-          const t = (0, m.q)(Q),
+          const t = (0, h.q)(Q),
             o = Object.values(t).some((e => !!e));
-          return (0, h.useEffect)((() => {
+          return (0, f.useEffect)((() => {
             o ? document.documentElement.setAttribute(J, "true") : document.documentElement.removeAttribute(J)
           }), [o]), {
             bodyShouldLock: o,
@@ -422,57 +524,57 @@ try {
             }
           }
         };
-      class ae {
+      class re {
         name;
         friendlyName;
         id;
         onlineService;
         aliasOnlineService;
         alias;
-        constructor(e, t, o, n, a = null, r = null) {
-          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = a, this.alias = r
+        constructor(e, t, o, n, r = null, a = null) {
+          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = r, this.alias = a
         }
       }
-      const re = Object.freeze({
-          pc: new ae("pc", "PC Legacy", 8, "sc"),
-          ps: new ae("ps", "PlayStation", 3, "np", "ps"),
-          ps3: new ae("ps3", "PlayStation 3", 2, "np", "ps"),
-          ps4: new ae("ps4", "PlayStation 4", 11, "np", "ps"),
-          ps5: new ae("ps5", "PlayStation 5", 20, "np", "ps"),
-          xbox: new ae("xbox", "Xbox", 4, "xbl"),
-          xbox360: new ae("xbox360", "Xbox 360", 1, "xbl"),
-          xboxone: new ae("xboxone", "Xbox One", 12, "xbl"),
-          xboxsx: new ae("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
-          switch: new ae("switch", "Nintendo Switch™", 18, "nintendoswitch"),
-          nintendoswitch: new ae("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
-          applestore: new ae("applestore", "App Store", 102, "applestore"),
-          googleplay: new ae("googleplay", "Google Play", 1023, "googleplay"),
-          appStore: new ae("app_store", "App Store", 102, "applestore"),
-          googlePlay: new ae("ggle_play", "Google Play", 1023, "googleplay"),
-          pcalt: new ae("pcalt", "PC Enhanced", 22, "sc")
+      const ae = Object.freeze({
+          pc: new re("pc", "PC Legacy", 8, "sc"),
+          ps: new re("ps", "PlayStation", 3, "np", "ps"),
+          ps3: new re("ps3", "PlayStation 3", 2, "np", "ps"),
+          ps4: new re("ps4", "PlayStation 4", 11, "np", "ps"),
+          ps5: new re("ps5", "PlayStation 5", 20, "np", "ps"),
+          xbox: new re("xbox", "Xbox", 4, "xbl"),
+          xbox360: new re("xbox360", "Xbox 360", 1, "xbl"),
+          xboxone: new re("xboxone", "Xbox One", 12, "xbl"),
+          xboxsx: new re("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
+          switch: new re("switch", "Nintendo Switch™", 18, "nintendoswitch"),
+          nintendoswitch: new re("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
+          applestore: new re("applestore", "App Store", 102, "applestore"),
+          googleplay: new re("googleplay", "Google Play", 1023, "googleplay"),
+          appStore: new re("app_store", "App Store", 102, "applestore"),
+          googlePlay: new re("ggle_play", "Google Play", 1023, "googleplay"),
+          pcalt: new re("pcalt", "PC Enhanced", 22, "sc")
         }),
-        se = Object.freeze(Object.values(re));
+        se = Object.freeze(Object.values(ae));
 
       function ie(e) {
         if (!e) return;
-        if (e instanceof ae) return e;
+        if (e instanceof re) return e;
         const t = e.toString().toLowerCase();
         return se.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase()))
       }
-      var de = o(6306);
+      var ce = o(6306);
       const le = () => {
           const e = window.location.hostname.split(".");
           return e.slice(e.length - 2).join(".")
         },
-        ce = e => {
+        de = e => {
           const t = document.cookie.split("; "),
             o = `${e}=`,
             n = t.find((e => e.startsWith(o))),
-            a = n?.substring(o.length, n.length);
-          return a
+            r = n?.substring(o.length, n.length);
+          return r
         },
         ue = (e, t) => {
-          e && void 0 !== t && (0, de.canStoreCookie)(e) && ce(e) !== t && (document.cookie = `${e}=${t}; domain=${le()}; path=/;`)
+          e && void 0 !== t && (0, ce.canStoreCookie)(e) && de(e) !== t && (document.cookie = `${e}=${t}; domain=${le()}; path=/;`)
         };
       var pe = o(81788);
       const ge = async ({
@@ -483,17 +585,17 @@ try {
         const [{
           iso: n
         }] = (0, pe.getLocale)(), {
-          authHost: a,
-          clientId: r
-        } = (0, s.A)(), i = await o(), d = new URL(`tpa/${e}/link`, `https://${a}.rockstargames.com`);
-        return d.searchParams.append("cid", r), d.searchParams.append("lang", n), d.searchParams.append("returnUrl", t ?? window.location.pathname), i && "boolean" != typeof i && "string" == typeof i.bearerToken && d.searchParams.append("accessToken", i.bearerToken), d
-      }, he = e => e.keys().forEach(e), me = [{
+          authHost: r,
+          clientId: a
+        } = (0, s.A)(), i = await o(), c = new URL(`tpa/${e}/link`, `https://${r}.rockstargames.com`);
+        return c.searchParams.append("cid", a), c.searchParams.append("lang", n), c.searchParams.append("returnUrl", t ?? window.location.pathname), i && "boolean" != typeof i && "string" == typeof i.bearerToken && c.searchParams.append("accessToken", i.bearerToken), c
+      }, fe = e => e.keys().forEach(e), he = [{
         key: "dev",
         path: "https://media-dev-rockstargames-com.akamaized.net"
       }, {
         key: "prod",
         path: "https://media-rockstargames-com.akamaized.net"
-      }], we = (e = !0) => me.filter((t => t.key === (e ? "prod" : "dev")))[0]?.path ?? null, fe = e => {
+      }], me = (e = !0) => he.filter((t => t.key === (e ? "prod" : "dev")))[0]?.path ?? null, we = e => {
         e.preventDefault();
         const t = e.currentTarget.href,
           o = (e => {
@@ -511,7 +613,7 @@ try {
         })).catch((e => {
           console.log(e)
         }))
-      }, be = () => [re.xbox360.name, re.xboxone.name, re.ps3.name, re.ps4.name, re.pc.name], ve = () => [re.xboxsx.name, re.ps5.name, re.pcalt.name], ye = e => ve().includes(e), xe = e => {
+      }, be = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name], ye = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name], ve = e => ye().includes(e), xe = e => {
         const t = new Map([
           ["en-us", "English (United States)"],
           ["de-de", "Deutsch (Deutschland)"],
@@ -530,33 +632,33 @@ try {
         ]);
         return t.has(e) ? t.get(e) : e
       };
-      var ke = o(89864),
-        Se = o.n(ke);
+      var Se = o(89864),
+        ke = o.n(Se);
       const Pe = (0, o(79867).A)(),
         Ce = Pe?.id,
-        Ae = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        Ee = e => {
+        Ee = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        Ae = e => {
           const t = {
             ...e,
             environment: Ce,
-            display_type: Ae
+            display_type: Ee
           };
-          Se().dataLayer({
+          ke().dataLayer({
             dataLayer: t
           })
         },
-        Le = e => t => ((e, t) => (0, g.jsx)(e, {
+        Oe = e => t => ((e, t) => (0, g.jsx)(e, {
           ...t,
           gtmTrack: e => {
-            Ee(e)
+            Ae(e)
           }
         }))(e, t),
-        Te = (e, t = 250) => o => ((e, t, o) => {
-          const [n, a] = (0, h.useState)(t), r = e => {
+        je = (e, t = 250) => o => ((e, t, o) => {
+          const [n, r] = (0, f.useState)(t), a = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
-              const e = o.map((e => r(e)));
+              const e = o.map((e => a(e)));
               t = {
                 ...t,
                 items: e
@@ -570,30 +672,30 @@ try {
               }
             })), t) : t
           };
-          return (0, h.useEffect)((() => {
+          return (0, f.useEffect)((() => {
             const e = l().debounce((() => {
-              a(r(t))
+              r(a(t))
             }), o);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           })), (0, g.jsx)(e, {
             ...n
           })
         })(e, o, t);
-      var Re = o(40445),
-        je = o(26675);
-      const Ie = Re.J1`
+      var Le = o(40445),
+        Re = o(26675);
+      const _e = Le.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key
         value
     }
 }`,
-        Oe = (e, t = "default") => o => ((e, t, o) => {
+        Te = (e, t = "default") => o => ((e, t, o) => {
           const n = ((e = "default") => {
-            const t = (0, je.A)(),
+            const t = (0, Re.A)(),
               {
                 data: o
-              } = D(Ie, {
+              } = U(_e, {
                 variables: {
                   config: e,
                   locale: t
@@ -607,76 +709,76 @@ query Translations($locale: String!, $config: String!) {
           }) : null
         })(e, o, t);
       var Me = o(95342);
-      const Ue = (0, u.A)({
-          context: (0, h.createContext)({}),
+      const Ie = (0, u.A)({
+          context: (0, f.createContext)({}),
           key: "gtmDatalayer"
         }),
-        De = () => (0, h.useContext)(Ue),
-        _e = ({
+        Ue = () => (0, f.useContext)(Ie),
+        De = ({
           children: e,
           ...t
         }) => {
-          const o = De() ?? {},
-            n = (0, h.useMemo)((() => ({
+          const o = Ue() ?? {},
+            n = (0, f.useMemo)((() => ({
               ...o,
               ...t
             })), [o, t]);
-          return (0, g.jsx)(Ue.Provider, {
+          return (0, g.jsx)(Ie.Provider, {
             value: n,
             children: e
           })
         };
-      var Be = o(17954),
-        Ne = o(9623);
-      const Ge = e => t => ((e, t) => {
+      var Ne = o(17954),
+        Be = o(9623);
+      const $e = e => t => ((e, t) => {
           const {
             pathname: o
-          } = (0, Ne.useLocation)();
-          return (0, h.useEffect)((() => {
-            Ee({
+          } = (0, Be.useLocation)();
+          return (0, f.useEffect)((() => {
+            Ae({
               event: "trackPageview"
             })
           }), [o]), (0, g.jsx)(e, {
             ...t
           })
         })(e, t),
-        $e = ({
+        Fe = ({
           id: e
         }) => {
           if (!e) return;
           const t = {
             gtmId: e
           };
-          Se().initialize(t)
+          ke().initialize(t)
         };
-      var Fe = o(37980);
+      var Ge = o(37980);
       const ze = "rockstar-games-web";
       let qe;
       try {
-        const e = Fe.A.get(ze) ?? "";
+        const e = Ge.A.get(ze) ?? "";
         qe = null !== e ? JSON.parse(e) : {}
       } catch (e) {
         qe = {}
       }
-      const Xe = (0, k.UT)(qe),
-        Ve = ({
+      const Ve = (0, S.UT)(qe),
+        We = ({
           key: e,
           value: t
         }) => {
           if (null == e) throw Error("You have to specify a key and a value.");
           const o = {
-            ...Xe() ?? {}
+            ...Ve() ?? {}
           };
-          return o[e] = t, null === t && delete o[e], Fe.A.set(ze, JSON.stringify(o), {
+          return o[e] = t, null === t && delete o[e], Ge.A.set(ze, JSON.stringify(o), {
             expires: 30,
             domain: le(),
             path: "/"
-          }), Xe(o), o
+          }), Ve(o), o
         },
-        We = () => ({
-          webSettings: (0, m.q)(Xe),
-          webSettingsReactive: Xe,
-          mutateWebSettings: Ve
+        Xe = () => ({
+          webSettings: (0, h.q)(Ve),
+          webSettingsReactive: Ve,
+          mutateWebSettings: We
         });
       var He = o(50437)
     }

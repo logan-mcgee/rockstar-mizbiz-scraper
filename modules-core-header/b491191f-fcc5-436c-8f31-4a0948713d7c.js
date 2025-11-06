@@ -61,7 +61,7 @@ try {
         IS_SERVER: () => r.X,
         PromiseState: () => j,
         breakpoints: () => o,
-        clone: () => b,
+        clone: () => y,
         cubicBezier: () => A,
         debounce: () => M,
         filterEventProps: () => c,
@@ -116,13 +116,13 @@ try {
       }
       var w = n(31454);
 
-      function b(e) {
+      function y(e) {
         return w(e)
       }
-      var y = n(10533);
+      var b = n(10533);
 
       function m(e, t, n, r) {
-        return y(e, t, n, r)
+        return b(e, t, n, r)
       }
       var v = n(10613);
 

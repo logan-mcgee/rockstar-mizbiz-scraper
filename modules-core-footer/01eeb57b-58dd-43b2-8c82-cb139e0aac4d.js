@@ -35,7 +35,7 @@ try {
         f = t(2918),
         d = t(95966),
         m = t(81788);
-      const u = (0, m.defineMessages)({
+      const b = (0, m.defineMessages)({
           footer_rockstar_games: {
             id: "footer_rockstar_games",
             description: "Rockstar Games name in the site footer",
@@ -147,7 +147,7 @@ try {
             defaultMessage: "Privacy"
           }
         }),
-        b = JSON.parse('{"de-DE":{"footer_careers":"Karriere","footer_community_guidelines_label_text":"Community-Richtlinien","footer_community_resources_label_text":"Community-Ressourcen","footer_contact_label_text":"Kontakt","footer_cookie_policy_label_text":"Cookie-Richtlinie","footer_cookie_settings_label_text":"Cookie-Einstellungen","footer_corporate":"Unternehmen","footer_donotsellmyinfo":"Meine Informationen nicht verkaufen oder teilen","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Rechtliches","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Datenschutz","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Unternehmensinfo","footer_section_contact_us":"Kontaktiere uns","footer_section_organization_info":"Unternehmensinfo","footer_section_social_icons":"Social Media","footer_subscribe":"Abonnieren"},"en-US":{"footer_careers":"Careers","footer_community_guidelines_label_text":"Community Guidelines","footer_community_resources_label_text":"Community Resources","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Cookie Policy","footer_cookie_settings_label_text":"Cookie Settings","footer_corporate":"Corporate","footer_donotsellmyinfo":"Do Not Sell or Share My Personal Information","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Company Info","footer_section_contact_us":"Contact Us","footer_section_organization_info":"Organization Info","footer_section_social_icons":"Social Media","footer_subscribe":"Subscribe"},"es-ES":{"footer_careers":"Trabajos","footer_community_guidelines_label_text":"Directrices de la comunidad","footer_community_resources_label_text":"Recursos de la comunidad","footer_contact_label_text":"Contacto","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Ajustes de cookies","footer_corporate":"Compañía","footer_donotsellmyinfo":"No vender ni compartir mis datos personales","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Aviso legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nueva York","footer_locations_paris":"París","footer_privacy":"Privacidad","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Información de la compañía","footer_section_contact_us":"Contacte con nosotros","footer_section_organization_info":"Información de la organización","footer_section_social_icons":"Red social","footer_subscribe":"Suscríbete"},"es-MX":{"footer_careers":"Empleos","footer_community_guidelines_label_text":"Directrices de la comunidad","footer_community_resources_label_text":"Recursos para la comunidad","footer_contact_label_text":"Contacto","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Configuración de cookies","footer_corporate":"Corporativo","footer_donotsellmyinfo":"No vender ni compartir mis datos personales","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nueva York","footer_locations_paris":"París","footer_privacy":"Privacidad","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Información de la compañía","footer_section_contact_us":"Contáctanos","footer_section_organization_info":"Información de la organización","footer_section_social_icons":"Redes sociales","footer_subscribe":"Suscríbete"},"fr-FR":{"footer_careers":"Carrières","footer_community_guidelines_label_text":"Règles de la communauté","footer_community_resources_label_text":"Ressources de la communauté","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Politique en matière de cookies","footer_cookie_settings_label_text":"Paramètres des cookies","footer_corporate":"Société","footer_donotsellmyinfo":"Ne pas vendre ni partager mes données personnelles","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Mentions légales","footer_locations_bogota":"Bogota","footer_locations_london":"Londres","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Confidentialité","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Infos relatives à la société","footer_section_contact_us":"Nous contacter","footer_section_organization_info":"Infos relatives à la société","footer_section_social_icons":"Réseaux sociaux","footer_subscribe":"S\'abonner"},"it-IT":{"footer_careers":"Carriere","footer_community_guidelines_label_text":"Linee guida della comunità","footer_community_resources_label_text":"Risorse della comunità","footer_contact_label_text":"Contatti","footer_cookie_policy_label_text":"Politica sui cookie","footer_cookie_settings_label_text":"Impostazioni dei cookie","footer_corporate":"Informazioni sulla società","footer_donotsellmyinfo":"Non vendere o condividere i miei dati personali","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Note legali","footer_locations_bogota":"Bogotá","footer_locations_london":"Londra","footer_locations_new_york":"New York","footer_locations_paris":"Parigi","footer_privacy":"Politica sulla privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Informazioni sull’azienda","footer_section_contact_us":"Contattaci","footer_section_organization_info":"Informazioni sull’organizzazione","footer_section_social_icons":"Social Media","footer_subscribe":"Iscriviti"},"ja-JP":{"footer_careers":"キャリア","footer_community_guidelines_label_text":"コミュニティガイドライン","footer_community_resources_label_text":"コミュニティリソース","footer_contact_label_text":"お問い合わせ","footer_cookie_policy_label_text":"Cookieポリシー","footer_cookie_settings_label_text":"Cookie設定","footer_corporate":"会社情報","footer_donotsellmyinfo":"個人情報を共有もしくは売らないでください","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"利用規約","footer_locations_bogota":"ボゴタ","footer_locations_london":"ロンドン","footer_locations_new_york":"ニューヨーク","footer_locations_paris":"パリ","footer_privacy":"プライバシー","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"会社情報","footer_section_contact_us":"お問い合わせ","footer_section_organization_info":"組織情報","footer_section_social_icons":"ソーシャルメディア","footer_subscribe":"サブスクリプション登録"},"ko-KR":{"footer_careers":"채용","footer_community_guidelines_label_text":"커뮤니티 가이드라인","footer_community_resources_label_text":"커뮤니티 정보","footer_contact_label_text":"문의","footer_cookie_policy_label_text":"쿠키 정책","footer_cookie_settings_label_text":"쿠키 설정","footer_corporate":"기업","footer_donotsellmyinfo":"내 개인 정보 판매 및 공유 안 함","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"법률 관련","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"개인 정보","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"회사정보","footer_section_contact_us":"문의","footer_section_organization_info":"기관정보","footer_section_social_icons":"SNS","footer_subscribe":"구독하기"},"pl-PL":{"footer_careers":"Oferty pracy","footer_community_guidelines_label_text":"Regulamin społeczności","footer_community_resources_label_text":"Zasoby społeczności","footer_contact_label_text":"Kontakt","footer_cookie_policy_label_text":"Polityka plików cookie","footer_cookie_settings_label_text":"Ustawienia plików cookie","footer_corporate":"O firmie","footer_donotsellmyinfo":"Zabraniam sprzedaży i udostępniania moich danych","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Informacje prawne","footer_locations_bogota":"Bogota","footer_locations_london":"Londyn","footer_locations_new_york":"Nowy Jork","footer_locations_paris":"Paryż","footer_privacy":"Polityka prywatności","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Informacje o firmie","footer_section_contact_us":"Kontakt","footer_section_organization_info":"Informacje o organizacji","footer_section_social_icons":"Media społecznościowe","footer_subscribe":"Subskrybuj"},"pt-BR":{"footer_careers":"Carreira","footer_community_guidelines_label_text":"Regras da Comunidade","footer_community_resources_label_text":"Recursos da Comunidade","footer_contact_label_text":"Contato","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Configurações de cookies","footer_corporate":"Corporativo","footer_donotsellmyinfo":"Não vendam ou compartilhem minhas informações pessoais","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Aviso legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nova York","footer_locations_paris":"Paris","footer_privacy":"Privacidade","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Corporativo","footer_section_contact_us":"Contato","footer_section_organization_info":"Organização","footer_section_social_icons":"Redes sociais","footer_subscribe":"Inscrever-se"},"ru-RU":{"footer_careers":"Карьера","footer_community_guidelines_label_text":"Правила сообщества","footer_community_resources_label_text":"Ресурсы сообщества","footer_contact_label_text":"Связаться с нами","footer_cookie_policy_label_text":"Политика использования файлов Cookie","footer_cookie_settings_label_text":"Настройки файлов Cookie","footer_corporate":"О корпорации","footer_donotsellmyinfo":"Я запрещаю продавать и разглашать свою личную информацию","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Юридическая информация","footer_locations_bogota":"Богота","footer_locations_london":"Лондон","footer_locations_new_york":"Нью-Йорк","footer_locations_paris":"Париж","footer_privacy":"Конфиденциальность","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Информация о компании","footer_section_contact_us":"Связаться с нами","footer_section_organization_info":"Информация об организации","footer_section_social_icons":"Социальные сети","footer_subscribe":"Оформить подписку"},"zh-CN":{"footer_careers":"工作机会","footer_community_guidelines_label_text":"社区指南","footer_community_resources_label_text":"社区资源","footer_contact_label_text":"联系我们","footer_cookie_policy_label_text":"Cookie 政策","footer_cookie_settings_label_text":"Cookie 设置","footer_corporate":"公司","footer_donotsellmyinfo":"请勿出售或分享我的个人信息","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"法律声明","footer_locations_bogota":"波哥大","footer_locations_london":"伦敦","footer_locations_new_york":"纽约","footer_locations_paris":"巴黎","footer_privacy":"隐私","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"公司信息","footer_section_contact_us":"联系我们","footer_section_organization_info":"机构信息","footer_section_social_icons":"社交媒体","footer_subscribe":"订阅"},"zh-TW":{"footer_careers":"工作機會","footer_community_guidelines_label_text":"社群守則","footer_community_resources_label_text":"社群資源","footer_contact_label_text":"聯絡方式","footer_cookie_policy_label_text":"Cookie 政策","footer_cookie_settings_label_text":"Cookie 設定","footer_corporate":"公司資訊","footer_donotsellmyinfo":"不要販售或分享我的個人資訊","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"法律聲明","footer_locations_bogota":"波哥大","footer_locations_london":"倫敦","footer_locations_new_york":"紐約","footer_locations_paris":"巴黎","footer_privacy":"隱私權政策","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"公司資訊","footer_section_contact_us":"聯絡我們","footer_section_organization_info":"組織資訊","footer_section_social_icons":"社群媒體","footer_subscribe":"訂閱"}}'),
+        u = JSON.parse('{"de-DE":{"footer_careers":"Karriere","footer_community_guidelines_label_text":"Community-Richtlinien","footer_community_resources_label_text":"Community-Ressourcen","footer_contact_label_text":"Kontakt","footer_cookie_policy_label_text":"Cookie-Richtlinie","footer_cookie_settings_label_text":"Cookie-Einstellungen","footer_corporate":"Unternehmen","footer_donotsellmyinfo":"Meine Informationen nicht verkaufen oder teilen","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Rechtliches","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Datenschutz","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Unternehmensinfo","footer_section_contact_us":"Kontaktiere uns","footer_section_organization_info":"Unternehmensinfo","footer_section_social_icons":"Social Media","footer_subscribe":"Abonnieren"},"en-US":{"footer_careers":"Careers","footer_community_guidelines_label_text":"Community Guidelines","footer_community_resources_label_text":"Community Resources","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Cookie Policy","footer_cookie_settings_label_text":"Cookie Settings","footer_corporate":"Corporate","footer_donotsellmyinfo":"Do Not Sell or Share My Personal Information","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Company Info","footer_section_contact_us":"Contact Us","footer_section_organization_info":"Organization Info","footer_section_social_icons":"Social Media","footer_subscribe":"Subscribe"},"es-ES":{"footer_careers":"Trabajos","footer_community_guidelines_label_text":"Directrices de la comunidad","footer_community_resources_label_text":"Recursos de la comunidad","footer_contact_label_text":"Contacto","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Ajustes de cookies","footer_corporate":"Compañía","footer_donotsellmyinfo":"No vender ni compartir mis datos personales","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Aviso legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nueva York","footer_locations_paris":"París","footer_privacy":"Privacidad","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Información de la compañía","footer_section_contact_us":"Contacte con nosotros","footer_section_organization_info":"Información de la organización","footer_section_social_icons":"Red social","footer_subscribe":"Suscríbete"},"es-MX":{"footer_careers":"Empleos","footer_community_guidelines_label_text":"Directrices de la comunidad","footer_community_resources_label_text":"Recursos para la comunidad","footer_contact_label_text":"Contacto","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Configuración de cookies","footer_corporate":"Corporativo","footer_donotsellmyinfo":"No vender ni compartir mis datos personales","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nueva York","footer_locations_paris":"París","footer_privacy":"Privacidad","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Información de la compañía","footer_section_contact_us":"Contáctanos","footer_section_organization_info":"Información de la organización","footer_section_social_icons":"Redes sociales","footer_subscribe":"Suscríbete"},"fr-FR":{"footer_careers":"Carrières","footer_community_guidelines_label_text":"Règles de la communauté","footer_community_resources_label_text":"Ressources de la communauté","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Politique en matière de cookies","footer_cookie_settings_label_text":"Paramètres des cookies","footer_corporate":"Société","footer_donotsellmyinfo":"Ne pas vendre ni partager mes données personnelles","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Mentions légales","footer_locations_bogota":"Bogota","footer_locations_london":"Londres","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Confidentialité","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Infos relatives à la société","footer_section_contact_us":"Nous contacter","footer_section_organization_info":"Infos relatives à la société","footer_section_social_icons":"Réseaux sociaux","footer_subscribe":"S\'abonner"},"it-IT":{"footer_careers":"Carriere","footer_community_guidelines_label_text":"Linee guida della comunità","footer_community_resources_label_text":"Risorse della comunità","footer_contact_label_text":"Contatti","footer_cookie_policy_label_text":"Politica sui cookie","footer_cookie_settings_label_text":"Impostazioni dei cookie","footer_corporate":"Informazioni sulla società","footer_donotsellmyinfo":"Non vendere o condividere i miei dati personali","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Note legali","footer_locations_bogota":"Bogotá","footer_locations_london":"Londra","footer_locations_new_york":"New York","footer_locations_paris":"Parigi","footer_privacy":"Politica sulla privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Informazioni sull’azienda","footer_section_contact_us":"Contattaci","footer_section_organization_info":"Informazioni sull’organizzazione","footer_section_social_icons":"Social Media","footer_subscribe":"Iscriviti"},"ja-JP":{"footer_careers":"キャリア","footer_community_guidelines_label_text":"コミュニティガイドライン","footer_community_resources_label_text":"コミュニティリソース","footer_contact_label_text":"お問い合わせ","footer_cookie_policy_label_text":"Cookieポリシー","footer_cookie_settings_label_text":"Cookie設定","footer_corporate":"会社情報","footer_donotsellmyinfo":"個人情報を共有もしくは売らないでください","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"利用規約","footer_locations_bogota":"ボゴタ","footer_locations_london":"ロンドン","footer_locations_new_york":"ニューヨーク","footer_locations_paris":"パリ","footer_privacy":"プライバシー","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"会社情報","footer_section_contact_us":"お問い合わせ","footer_section_organization_info":"組織情報","footer_section_social_icons":"ソーシャルメディア","footer_subscribe":"サブスクリプション登録"},"ko-KR":{"footer_careers":"채용","footer_community_guidelines_label_text":"커뮤니티 가이드라인","footer_community_resources_label_text":"커뮤니티 정보","footer_contact_label_text":"문의","footer_cookie_policy_label_text":"쿠키 정책","footer_cookie_settings_label_text":"쿠키 설정","footer_corporate":"기업","footer_donotsellmyinfo":"내 개인 정보 판매 및 공유 안 함","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"법률 관련","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"개인 정보","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"회사정보","footer_section_contact_us":"문의","footer_section_organization_info":"기관정보","footer_section_social_icons":"SNS","footer_subscribe":"구독하기"},"pl-PL":{"footer_careers":"Oferty pracy","footer_community_guidelines_label_text":"Regulamin społeczności","footer_community_resources_label_text":"Zasoby społeczności","footer_contact_label_text":"Kontakt","footer_cookie_policy_label_text":"Polityka plików cookie","footer_cookie_settings_label_text":"Ustawienia plików cookie","footer_corporate":"O firmie","footer_donotsellmyinfo":"Zabraniam sprzedaży i udostępniania moich danych","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Informacje prawne","footer_locations_bogota":"Bogota","footer_locations_london":"Londyn","footer_locations_new_york":"Nowy Jork","footer_locations_paris":"Paryż","footer_privacy":"Polityka prywatności","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Informacje o firmie","footer_section_contact_us":"Kontakt","footer_section_organization_info":"Informacje o organizacji","footer_section_social_icons":"Media społecznościowe","footer_subscribe":"Subskrybuj"},"pt-BR":{"footer_careers":"Carreira","footer_community_guidelines_label_text":"Regras da Comunidade","footer_community_resources_label_text":"Recursos da Comunidade","footer_contact_label_text":"Contato","footer_cookie_policy_label_text":"Política de cookies","footer_cookie_settings_label_text":"Configurações de cookies","footer_corporate":"Corporativo","footer_donotsellmyinfo":"Não vendam ou compartilhem minhas informações pessoais","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Aviso legal","footer_locations_bogota":"Bogotá","footer_locations_london":"Londres","footer_locations_new_york":"Nova York","footer_locations_paris":"Paris","footer_privacy":"Privacidade","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Corporativo","footer_section_contact_us":"Contato","footer_section_organization_info":"Organização","footer_section_social_icons":"Redes sociais","footer_subscribe":"Inscrever-se"},"ru-RU":{"footer_careers":"Карьера","footer_community_guidelines_label_text":"Правила сообщества","footer_community_resources_label_text":"Ресурсы сообщества","footer_contact_label_text":"Связаться с нами","footer_cookie_policy_label_text":"Политика использования файлов Cookie","footer_cookie_settings_label_text":"Настройки файлов Cookie","footer_corporate":"О корпорации","footer_donotsellmyinfo":"Я запрещаю продавать и разглашать свою личную информацию","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Юридическая информация","footer_locations_bogota":"Богота","footer_locations_london":"Лондон","footer_locations_new_york":"Нью-Йорк","footer_locations_paris":"Париж","footer_privacy":"Конфиденциальность","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Информация о компании","footer_section_contact_us":"Связаться с нами","footer_section_organization_info":"Информация об организации","footer_section_social_icons":"Социальные сети","footer_subscribe":"Оформить подписку"},"zh-CN":{"footer_careers":"工作机会","footer_community_guidelines_label_text":"社区指南","footer_community_resources_label_text":"社区资源","footer_contact_label_text":"联系我们","footer_cookie_policy_label_text":"Cookie 政策","footer_cookie_settings_label_text":"Cookie 设置","footer_corporate":"公司","footer_donotsellmyinfo":"请勿出售或分享我的个人信息","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"法律声明","footer_locations_bogota":"波哥大","footer_locations_london":"伦敦","footer_locations_new_york":"纽约","footer_locations_paris":"巴黎","footer_privacy":"隐私","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"公司信息","footer_section_contact_us":"联系我们","footer_section_organization_info":"机构信息","footer_section_social_icons":"社交媒体","footer_subscribe":"订阅"},"zh-TW":{"footer_careers":"工作機會","footer_community_guidelines_label_text":"社群守則","footer_community_resources_label_text":"社群資源","footer_contact_label_text":"聯絡方式","footer_cookie_policy_label_text":"Cookie 政策","footer_cookie_settings_label_text":"Cookie 設定","footer_corporate":"公司資訊","footer_donotsellmyinfo":"不要販售或分享我的個人資訊","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"法律聲明","footer_locations_bogota":"波哥大","footer_locations_london":"倫敦","footer_locations_new_york":"紐約","footer_locations_paris":"巴黎","footer_privacy":"隱私權政策","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"公司資訊","footer_section_contact_us":"聯絡我們","footer_section_organization_info":"組織資訊","footer_section_social_icons":"社群媒體","footer_subscribe":"訂閱"}}'),
         g = {
           additionalInfoEstablishedDate: "rockstargames-modules-core-footerd0a638805e7b844a609f1e8bfbf5fc5f",
           additionalInfoLocationsListElement: "rockstargames-modules-core-footerf21eb2a6c202cb30e8b192c4bda3731d",
@@ -177,9 +177,9 @@ try {
             {
               track: d
             } = (0, f.useGtmTrack)(),
-            b = {
-              text: r.formatMessage(u.footer_community_resources_label_text),
-              defaultText: u.footer_community_resources_label_text.defaultMessage,
+            u = {
+              text: r.formatMessage(b.footer_community_resources_label_text),
+              defaultText: b.footer_community_resources_label_text.defaultMessage,
               url: "/community-resources"
             },
             p = (o, e, t, a) => () => {
@@ -198,7 +198,7 @@ try {
             children: [(0, a.jsxs)("div", {
               className: g.siteFooterFirstRow,
               children: [(0, a.jsx)("nav", {
-                "aria-label": r.formatMessage(u.footer_section_contact_us),
+                "aria-label": r.formatMessage(b.footer_section_contact_us),
                 className: g.contactUsLinks,
                 children: (0, a.jsxs)("ul", {
                   children: [(0, a.jsx)("li", {
@@ -206,21 +206,21 @@ try {
                       "data-testid": "footer-contact-link",
                       onClick: p("cta_other", "/contact", "contact", "footer"),
                       to: `${o}/contact`,
-                      children: r.formatMessage(u.footer_contact_label_text)
+                      children: r.formatMessage(b.footer_contact_label_text)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-careers-link",
                       onClick: p("cta_other", "/careers", "careers", "footer"),
                       to: `${o}/careers`,
-                      children: r.formatMessage(u.footer_careers)
+                      children: r.formatMessage(b.footer_careers)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-community-guidelines-link",
-                      onClick: p("cta_other", b.url, b.defaultText, "footer"),
-                      to: `${o}${b.url}`,
-                      children: b.text
+                      onClick: p("cta_other", u.url, u.defaultText, "footer"),
+                      to: `${o}${u.url}`,
+                      children: u.text
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
@@ -228,7 +228,7 @@ try {
                       onClick: p("cta_subscribe_news", `https://${k}.rockstargames.com/settings/email`, "subscribe", "footer"),
                       target: "_blank",
                       to: `https://${k}.rockstargames.com/settings/email`,
-                      children: r.formatMessage(u.footer_subscribe)
+                      children: r.formatMessage(b.footer_subscribe)
                     })
                   })]
                 })
@@ -241,7 +241,7 @@ try {
             }), (0, a.jsxs)("div", {
               className: g.siteFooterSecondRow,
               children: [(0, a.jsx)("nav", {
-                "aria-label": r.formatMessage(u.footer_section_company_info),
+                "aria-label": r.formatMessage(b.footer_section_company_info),
                 className: g.companyInfoLinks,
                 children: (0, a.jsxs)("ul", {
                   className: g.companyInfoLinksListElement,
@@ -250,14 +250,14 @@ try {
                       "data-testid": "footer-corporate-link",
                       onClick: p("cta_other", "/corpinfo", "corporate", "footer"),
                       to: `${o}/corpinfo`,
-                      children: r.formatMessage(u.footer_corporate)
+                      children: r.formatMessage(b.footer_corporate)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-privacy-link",
                       onClick: p("cta_other", "/privacy", "privacy", "footer"),
                       to: `${o}/privacy`,
-                      children: r.formatMessage(u.footer_privacy)
+                      children: r.formatMessage(b.footer_privacy)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)("button", {
@@ -270,33 +270,33 @@ try {
                           element_placement: "footer"?.toLowerCase()
                         }), window.OneTrust?.ToggleInfoDisplay()
                       },
-                      children: r.formatMessage(u.footer_cookie_settings_label_text)
+                      children: r.formatMessage(b.footer_cookie_settings_label_text)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-cookie-policy-link",
                       onClick: p("cta_other", "/cookies", "cookie policy", "footer"),
                       to: `${o}/cookies`,
-                      children: r.formatMessage(u.footer_cookie_policy_label_text)
+                      children: r.formatMessage(b.footer_cookie_policy_label_text)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-legal-link",
                       onClick: p("cta_other", "/legal", "legal", "footer"),
                       to: `${o}/legal`,
-                      children: r.formatMessage(u.footer_legal)
+                      children: r.formatMessage(b.footer_legal)
                     })
                   }), (0, a.jsx)("li", {
                     children: (0, a.jsx)(c.A, {
                       "data-testid": "footer-ccpa-link",
                       onClick: p("cta_other", "/ccpa", "do not sell my info", "footer"),
                       to: `${o}/ccpa`,
-                      children: r.formatMessage(u.footer_donotsellmyinfo)
+                      children: r.formatMessage(b.footer_donotsellmyinfo)
                     })
                   })]
                 })
               }), (0, a.jsx)("nav", {
-                "aria-label": r.formatMessage(u.footer_section_social_icons),
+                "aria-label": r.formatMessage(b.footer_section_social_icons),
                 className: g.socialIconLinks,
                 children: (0, a.jsxs)("ul", {
                   className: g.socialIconLinksListElement,
@@ -416,35 +416,35 @@ try {
                 })
               })]
             }), (0, a.jsxs)("section", {
-              "aria-label": r.formatMessage(u.footer_section_organization_info),
+              "aria-label": r.formatMessage(b.footer_section_organization_info),
               className: g.siteFooterThirdRow,
               children: [(0, a.jsx)(n.Text, {
-                children: r.formatMessage(u.footer_rockstar_games)
+                children: r.formatMessage(b.footer_rockstar_games)
               }), (0, a.jsxs)("ul", {
                 className: g.additionalInfoLocationsListElement,
                 children: [(0, a.jsx)("li", {
                   children: (0, a.jsx)(n.Text, {
-                    children: r.formatMessage(u.footer_locations_new_york)
+                    children: r.formatMessage(b.footer_locations_new_york)
                   })
                 }), (0, a.jsx)("li", {
                   children: (0, a.jsx)(n.Text, {
-                    children: r.formatMessage(u.footer_locations_london)
+                    children: r.formatMessage(b.footer_locations_london)
                   })
                 }), (0, a.jsx)("li", {
                   children: (0, a.jsx)(n.Text, {
-                    children: r.formatMessage(u.footer_locations_paris)
+                    children: r.formatMessage(b.footer_locations_paris)
                   })
                 }), (0, a.jsx)("li", {
                   children: (0, a.jsx)(n.Text, {
-                    children: r.formatMessage(u.footer_locations_bogota)
+                    children: r.formatMessage(b.footer_locations_bogota)
                   })
                 })]
               }), (0, a.jsxs)("span", {
                 className: g.additionalInfoEstablishedDate,
                 children: [(0, a.jsx)("span", {
-                  children: r.formatMessage(u.footer_established_date_roman)
+                  children: r.formatMessage(b.footer_established_date_roman)
                 }), (0, a.jsx)(_, {
-                  children: r.formatMessage(u.footer_established_date_numerical)
+                  children: r.formatMessage(b.footer_established_date_numerical)
                 })]
               })]
             })]
@@ -492,7 +492,7 @@ try {
               })
             })
           })
-        }), b)
+        }), u)
     }
   }
 ]);

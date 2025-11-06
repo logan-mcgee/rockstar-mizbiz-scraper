@@ -32,15 +32,15 @@ try {
       function l(e, d, o) {
         var a, n = {},
           l = null,
-          i = null;
-        for (a in void 0 !== o && (l = "" + o), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (i = d.ref), d) t.call(d, a) && !s.hasOwnProperty(a) && (n[a] = d[a]);
+          c = null;
+        for (a in void 0 !== o && (l = "" + o), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (c = d.ref), d) t.call(d, a) && !s.hasOwnProperty(a) && (n[a] = d[a]);
         if (e && e.defaultProps)
           for (a in d = e.defaultProps) void 0 === n[a] && (n[a] = d[a]);
         return {
           $$typeof: r,
           type: e,
           key: l,
-          ref: i,
+          ref: c,
           props: n,
           _owner: f.current
         }

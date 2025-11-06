@@ -44,7 +44,7 @@ try {
       t.r(o), t.d(o, {
         FormattedMessage: () => r.A,
         POSIXLocales: () => w,
-        ReactIntlProviderForMocking: () => i.A,
+        ReactIntlProviderForMocking: () => a.A,
         createDevLocaleHook: () => O,
         createIntl: () => n.E,
         defineMessages: () => s.YK,
@@ -56,18 +56,18 @@ try {
         locales: () => h,
         onLanguageChange: () => j,
         splitLocale: () => E,
-        useIntl: () => a.A,
+        useIntl: () => i.A,
         withIntl: () => v
       });
       var s = t(24944),
         r = t(62486),
         n = t(47497),
-        a = t(30597),
-        i = t(9872),
+        i = t(30597),
+        a = t(9872),
         l = t(42295),
         c = t(71127),
-        d = t(79867);
-      const u = (e, o) => {
+        u = t(79867);
+      const d = (e, o) => {
           if (!e || !o) return void console.log(`Couldn't set cookie (${e}) to value (${o})`);
           const t = window.location.hostname.split("."),
             s = t.slice(t.length - 2).join(".");
@@ -82,8 +82,8 @@ try {
         },
         p = (e, o, t = !1) => {
           const s = m(e);
-          return s && !t || u(e, o), [s, (r = e, e => {
-            u(r, e)
+          return s && !t || d(e, o), [s, (r = e, e => {
+            d(r, e)
           })];
           var r
         },
@@ -185,7 +185,7 @@ try {
         g = () => {
           const {
             location: e
-          } = window, o = (0, d.A)(), t = (e => {
+          } = window, o = (0, u.A)(), t = (e => {
             const o = h.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               s = "detect-locals" === t[0] ? 1 : 0;
@@ -195,10 +195,10 @@ try {
             return o?.split("=")[1]
           })(e), r = f;
           let n = r;
-          const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = m(a);
-          n = o.currentSite?.site === d.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === i)) || r;
-          const [, l] = p(a, n.iso);
+          const i = `rockstarweb_lang.${o.cookieIdentifier}`,
+            a = m(i);
+          n = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === a)) || r;
+          const [, l] = p(i, n.iso);
           return [n, l]
         };
       var k = t(55422);
@@ -231,7 +231,7 @@ try {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, l.jsx)(i.A, {
+          return (0, l.jsx)(a.A, {
             locale: n?.locale || _(),
             messages: {
               ...n?.messages
@@ -291,7 +291,7 @@ try {
         L = e => {
           const [o] = g(), {
             sites: t
-          } = (0, d.A)();
+          } = (0, u.A)();
           let s;
           try {
             s = new URL(e)
@@ -301,20 +301,20 @@ try {
           if (s)
             for (const [r, {
                 regex: n,
-                isSubdomain: a,
-                isLocaleInUrl: i,
+                isSubdomain: i,
+                isLocaleInUrl: a,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries(x)) {
               if (!n.test(e.toLowerCase())) continue;
-              const d = t[r];
-              if (!d) continue;
-              let u = "";
-              "en" !== o.subdomaincom && i && (u = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (u += "/"));
+              const u = t[r];
+              if (!u) continue;
+              let d = "";
+              "en" !== o.subdomaincom && a && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (d += "/"));
               const m = s.host.split(".");
               let p = "";
-              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (p += `https://${d}`, p += a ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
-                link: `${p}${u}${"/"===s.pathname?"":s.pathname}${s.search}`,
+              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (p += `https://${u}`, p += i ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
+                link: `${p}${d}${"/"===s.pathname?"":s.pathname}${s.search}`,
                 isExternal: !0
               }) : {
                 link: `${p}${"/"===s.pathname?"":s.pathname}${s.search}`,
@@ -334,23 +334,23 @@ try {
           track: o,
           parent: t = ""
         }) => {
-          const s = (0, d.A)(),
+          const s = (0, u.A)(),
             [, r] = g(),
             {
               subdomaincom: n,
-              iso: a
+              iso: i
             } = e,
-            i = (e => {
+            a = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
-              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === d.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
+              return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(n);
           o?.({
             event: "cta_other",
-            link_url: i,
+            link_url: a,
             text: n,
             element_placement: t?.toLowerCase()
-          }), r(a), window.location.href = i
+          }), r(i), window.location.href = a
         }
     },
     33019: (e, o, t) => {

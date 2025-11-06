@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    d = (new e.Error).stack;
-  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "f660fccb-7a70-4c82-9575-5fd134ba9149", e._sentryDebugIdIdentifier = "sentry-dbid-f660fccb-7a70-4c82-9575-5fd134ba9149")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f660fccb-7a70-4c82-9575-5fd134ba9149", e._sentryDebugIdIdentifier = "sentry-dbid-f660fccb-7a70-4c82-9575-5fd134ba9149")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,27 +13,27 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [9735], {
-    52116: (e, d, a) => {
-      a.r(d), a.d(d, {
+    52116: (e, a, d) => {
+      d.r(a), d.d(a, {
         Portal: () => r,
         Root: () => f
       });
-      var o = a(71127),
-        t = a(18429),
-        n = a(12255),
-        s = a(63155),
-        l = a(42295),
-        r = o.forwardRef(((e, d) => {
+      var o = d(71127),
+        t = d(18429),
+        n = d(12255),
+        s = d(63155),
+        l = d(42295),
+        r = o.forwardRef(((e, a) => {
           const {
-            container: a,
+            container: d,
             ...r
-          } = e, [f, i] = o.useState(!1);
-          (0, s.N)((() => i(!0)), []);
-          const c = a || f && globalThis?.document?.body;
-          return c ? t.createPortal((0, l.jsx)(n.sG.div, {
+          } = e, [f, c] = o.useState(!1);
+          (0, s.N)((() => c(!0)), []);
+          const i = d || f && globalThis?.document?.body;
+          return i ? t.createPortal((0, l.jsx)(n.sG.div, {
             ...r,
-            ref: d
-          }), c) : null
+            ref: a
+          }), i) : null
         }));
       r.displayName = "Portal";
       var f = r

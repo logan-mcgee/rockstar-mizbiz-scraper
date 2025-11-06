@@ -49,22 +49,22 @@ try {
         }
       }();
       var s, u = [],
-        d = !1,
+        c = !1,
         l = -1;
 
-      function c() {
-        d && s && (d = !1, s.length ? u = s.concat(u) : l = -1, u.length && f())
+      function d() {
+        c && s && (c = !1, s.length ? u = s.concat(u) : l = -1, u.length && f())
       }
 
       function f() {
-        if (!d) {
-          var e = a(c);
-          d = !0;
+        if (!c) {
+          var e = a(d);
+          c = !0;
           for (var t = u.length; t;) {
             for (s = u, u = []; ++l < t;) s && s[l].run();
             l = -1, t = u.length
           }
-          s = null, d = !1,
+          s = null, c = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -85,15 +85,15 @@ try {
         this.fun = e, this.array = t
       }
 
-      function b() {}
+      function y() {}
       r.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new h(e, t)), 1 !== u.length || d || a(f)
+        u.push(new h(e, t)), 1 !== u.length || c || a(f)
       }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = b, r.addListener = b, r.once = b, r.off = b, r.removeListener = b, r.removeAllListeners = b, r.emit = b, r.prependListener = b, r.prependOnceListener = b, r.listeners = function(e) {
+      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {
         return []
       }, r.binding = function(e) {
         throw new Error("process.binding is not supported")

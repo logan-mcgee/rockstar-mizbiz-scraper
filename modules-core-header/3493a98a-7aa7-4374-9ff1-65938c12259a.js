@@ -39,8 +39,8 @@ try {
             [t]: r
           }
         }), {}),
-        d = n(76286),
-        a = "focusScope.autoFocusOnMount",
+        a = n(76286),
+        d = "focusScope.autoFocusOnMount",
         i = "focusScope.autoFocusOnUnmount",
         f = {
           bubbles: !1,
@@ -53,7 +53,7 @@ try {
             onMountAutoFocus: l,
             onUnmountAutoFocus: v,
             ...E
-          } = e, [g, h] = o.useState(null), w = (0, d.c)(l), T = (0, d.c)(v), _ = o.useRef(null), N = (0, r.s)(t, (e => h(e))), k = o.useRef({
+          } = e, [g, h] = o.useState(null), w = (0, a.c)(l), T = (0, a.c)(v), _ = o.useRef(null), N = (0, r.s)(t, (e => h(e))), k = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -96,8 +96,8 @@ try {
               b.add(k);
               const e = document.activeElement;
               if (!g.contains(e)) {
-                const t = new CustomEvent(a, f);
-                g.addEventListener(a, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(d, f);
+                g.addEventListener(d, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -110,7 +110,7 @@ try {
                 }), document.activeElement === e && y(g))
               }
               return () => {
-                g.removeEventListener(a, w), setTimeout((() => {
+                g.removeEventListener(d, w), setTimeout((() => {
                   const t = new CustomEvent(i, f);
                   g.addEventListener(i, T), g.dispatchEvent(t), t.defaultPrevented || y(e ?? document.body, {
                     select: !0

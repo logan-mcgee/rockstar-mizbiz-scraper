@@ -17,7 +17,7 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => r,
@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => p
       });
       var _ = "關閉燈箱",
         l = "按 {shortcut}",
@@ -46,8 +46,8 @@ try {
         r = "下載",
         L = "在燈箱中開啟圖片",
         f = "圖片燈箱",
-        p = "圖片替代文字：{alt}",
-        c = {
+        c = "圖片替代文字：{alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
@@ -62,7 +62,7 @@ try {
           Lightbox_Download_Button_Tooltip: r,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

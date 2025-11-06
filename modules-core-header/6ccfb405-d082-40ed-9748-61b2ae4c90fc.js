@@ -61,8 +61,8 @@ try {
         i = n(85426),
         s = n(74406),
         l = n(79158),
-        d = n(89749),
-        c = n(56041),
+        c = n(89749),
+        d = n(56041),
         u = n(34902),
         f = n(53146),
         p = n(78004),
@@ -81,8 +81,8 @@ try {
             open: r,
             defaultOpen: a,
             onOpenChange: i,
-            modal: d = !0
-          } = e, c = o.useRef(null), u = o.useRef(null), [f, p] = (0, l.useControllableState)({
+            modal: c = !0
+          } = e, d = o.useRef(null), u = o.useRef(null), [f, p] = (0, l.useControllableState)({
             prop: r,
             defaultProp: a ?? !1,
             onChange: i,
@@ -90,7 +90,7 @@ try {
           });
           return (0, b.jsx)(w, {
             scope: t,
-            triggerRef: c,
+            triggerRef: d,
             contentRef: u,
             contentId: (0, s.useId)(),
             titleId: (0, s.useId)(),
@@ -98,7 +98,7 @@ try {
             open: f,
             onOpenChange: p,
             onOpenToggle: o.useCallback((() => p((e => !e))), [p]),
-            modal: d,
+            modal: c,
             children: n
           })
         };
@@ -256,13 +256,13 @@ try {
             ...l
           } = e, u = A(T, n), f = o.useRef(null), p = (0, a.s)(t, f);
           return (0, g.Oh)(), (0, b.jsxs)(b.Fragment, {
-            children: [(0, b.jsx)(c.FocusScope, {
+            children: [(0, b.jsx)(d.FocusScope, {
               asChild: !0,
               loop: !0,
               trapped: r,
               onMountAutoFocus: i,
               onUnmountAutoFocus: s,
-              children: (0, b.jsx)(d.qW, {
+              children: (0, b.jsx)(c.qW, {
                 role: "dialog",
                 id: u.contentId,
                 "aria-describedby": u.descriptionId,
@@ -374,11 +374,11 @@ try {
         l = function(e, t, n) {
           void 0 === n && (n = "data-aria-hidden");
           var l = Array.from(Array.isArray(e) ? e : [e]),
-            d = t || function(e) {
+            c = t || function(e) {
               return "undefined" == typeof document ? null : (Array.isArray(e) ? e[0] : e).ownerDocument.body
             }(e);
-          return d ? (l.push.apply(l, Array.from(d.querySelectorAll("[aria-live]"))), function(e, t, n, l) {
-            var d = function(e, t) {
+          return c ? (l.push.apply(l, Array.from(c.querySelectorAll("[aria-live]"))), function(e, t, n, l) {
+            var c = function(e, t) {
               return t.map((function(t) {
                 if (e.contains(t)) return t;
                 var n = s(t);
@@ -388,14 +388,14 @@ try {
               }))
             }(t, Array.isArray(e) ? e : [e]);
             a[n] || (a[n] = new WeakMap);
-            var c = a[n],
+            var d = a[n],
               u = [],
               f = new Set,
-              p = new Set(d),
+              p = new Set(c),
               g = function(e) {
                 e && !f.has(e) && (f.add(e), g(e.parentNode))
               };
-            d.forEach(g);
+            c.forEach(g);
             var y = function(e) {
               e && !p.has(e) && Array.prototype.forEach.call(e.children, (function(e) {
                 if (f.has(e)) y(e);
@@ -403,8 +403,8 @@ try {
                   var t = e.getAttribute(l),
                     a = null !== t && "false" !== t,
                     i = (o.get(e) || 0) + 1,
-                    s = (c.get(e) || 0) + 1;
-                  o.set(e, i), c.set(e, s), u.push(e), 1 === i && a && r.set(e, !0), 1 === s && e.setAttribute(n, "true"), a || e.setAttribute(l, "true")
+                    s = (d.get(e) || 0) + 1;
+                  o.set(e, i), d.set(e, s), u.push(e), 1 === i && a && r.set(e, !0), 1 === s && e.setAttribute(n, "true"), a || e.setAttribute(l, "true")
                 } catch (t) {
                   console.error("aria-hidden: cannot operate on ", e, t)
                 }
@@ -414,11 +414,11 @@ try {
               function() {
                 u.forEach((function(e) {
                   var t = o.get(e) - 1,
-                    a = c.get(e) - 1;
-                  o.set(e, t), c.set(e, a), t || (r.has(e) || e.removeAttribute(l), r.delete(e)), a || e.removeAttribute(n)
+                    a = d.get(e) - 1;
+                  o.set(e, t), d.set(e, a), t || (r.has(e) || e.removeAttribute(l), r.delete(e)), a || e.removeAttribute(n)
                 })), --i || (o = new WeakMap, o = new WeakMap, r = new WeakMap, a = {})
               }
-          }(l, d, n, "aria-hidden")) : function() {
+          }(l, c, n, "aria-hidden")) : function() {
             return null
           }
         }

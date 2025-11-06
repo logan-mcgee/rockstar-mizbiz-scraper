@@ -24,7 +24,7 @@ try {
         debounce: () => P,
         filterEventProps: () => d,
         get: () => E,
-        getOrSet: () => c,
+        getOrSet: () => l,
         joinStrings: () => C,
         merge: () => w,
         mergeProps: () => s.v,
@@ -55,8 +55,8 @@ try {
           others: r
         }
       }
-      const l = "__FOUNDRY_ACCENT__",
-        c = (e, t) => r.X ? t() : (window[l] || (window[l] = new Map), window[l].has(e) || window[l].set(e, t()), window[l].get(e));
+      const c = "__FOUNDRY_ACCENT__",
+        l = (e, t) => r.X ? t() : (window[c] || (window[c] = new Map), window[c].has(e) || window[c].set(e, t()), window[c].get(e));
       var f = n(98312);
 
       function u(e) {
@@ -148,8 +148,8 @@ try {
         }
         const a = T(x(s * s - i)),
           d = s ? Math.atan(x(-i) / s) : -I / 2;
-        let l;
-        return l = n < 0 ? (s > 0 ? 2 * I : I) - d : o < 0 ? (s > 0 ? 2 * I : -3 * I) + d : (s > 0 ? 0 : I) + d, 2 * a * Math.cos(l / 3) - o
+        let c;
+        return c = n < 0 ? (s > 0 ? 2 * I : I) - d : o < 0 ? (s > 0 ? 2 * I : -3 * I) + d : (s > 0 ? 0 : I) + d, 2 * a * Math.cos(c / 3) - o
       }, D = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function O(e, t, n, r) {
@@ -160,8 +160,8 @@ try {
           i = 3 * e,
           a = o * o,
           d = s * s,
-          l = s / o,
-          c = 3 * s * i / a - d * s / (a * o),
+          c = s / o,
+          l = 3 * s * i / a - d * s / (a * o),
           f = 2 * i / o - d / a,
           u = f * f * f,
           h = 3 / o,
@@ -169,7 +169,7 @@ try {
           g = r - 2 * t,
           w = 3 * t,
           b = o ? R : S;
-        return e => 0 === e || 1 === e ? e : D(b(e, c, h, u, l), _, g, w)
+        return e => 0 === e || 1 === e ? e : D(b(e, l, h, u, c), _, g, w)
       }
       const C = (...e) => e.filter((e => e)).join(" ")
     }

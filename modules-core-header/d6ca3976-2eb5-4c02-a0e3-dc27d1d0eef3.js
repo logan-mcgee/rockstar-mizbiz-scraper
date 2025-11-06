@@ -32,15 +32,15 @@ try {
       function s(e, n, t) {
         var r, l = {},
           s = null,
-          f = null;
-        for (r in void 0 !== t && (s = "" + t), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (f = n.ref), n) a.call(n, r) && !i.hasOwnProperty(r) && (l[r] = n[r]);
+          c = null;
+        for (r in void 0 !== t && (s = "" + t), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (c = n.ref), n) a.call(n, r) && !i.hasOwnProperty(r) && (l[r] = n[r]);
         if (e && e.defaultProps)
           for (r in n = e.defaultProps) void 0 === l[r] && (l[r] = n[r]);
         return {
           $$typeof: o,
           type: e,
           key: s,
-          ref: f,
+          ref: c,
           props: l,
           _owner: d.current
         }
@@ -51,9 +51,9 @@ try {
       t.r(n), t.d(n, {
         Root: () => d,
         Slot: () => d,
-        Slottable: () => c,
+        Slottable: () => f,
         createSlot: () => a,
-        createSlottable: () => f
+        createSlottable: () => c
       });
       var r = t(71127),
         o = t(95362),
@@ -125,7 +125,7 @@ try {
       }
       var s = Symbol("radix.slottable");
 
-      function f(e) {
+      function c(e) {
         const n = ({
           children: e
         }) => (0, l.jsx)(l.Fragment, {
@@ -133,7 +133,7 @@ try {
         });
         return n.displayName = `${e}.Slottable`, n.__radixId = s, n
       }
-      var c = f("Slottable");
+      var f = c("Slottable");
 
       function u(e) {
         return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === s

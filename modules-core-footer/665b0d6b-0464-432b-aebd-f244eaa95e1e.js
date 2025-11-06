@@ -30,7 +30,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => x
       });
       var _ = "Cerrar",
         a = "Presiona {shortcut}",
@@ -47,7 +47,7 @@ try {
         L = "Abrir imagen",
         f = "Imagen",
         p = "Texto alt: {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: i,

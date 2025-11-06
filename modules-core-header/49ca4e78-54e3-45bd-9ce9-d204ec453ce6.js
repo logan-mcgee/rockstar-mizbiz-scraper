@@ -28,7 +28,7 @@ try {
         joinStrings: () => z,
         merge: () => m,
         mergeProps: () => d,
-        omit: () => b,
+        omit: () => y,
         range: () => p,
         set: () => P,
         throttle: () => T
@@ -94,13 +94,13 @@ try {
       }
       var w = n(41972);
 
-      function b(e, ...t) {
+      function y(e, ...t) {
         return w(e, ...t)
       }
-      var y = n(56265);
+      var b = n(56265);
 
       function m(e, t) {
-        return y(e, t)
+        return b(e, t)
       }
       var v = n(31454);
 

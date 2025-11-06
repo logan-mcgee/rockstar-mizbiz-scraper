@@ -67,11 +67,11 @@ try {
             ...r
           } = e, [i, f] = o.useState(!1);
           (0, s.N)((() => f(!0)), []);
-          const u = a || i && globalThis?.document?.body;
-          return u ? t.createPortal((0, l.jsx)(n.sG.div, {
+          const c = a || i && globalThis?.document?.body;
+          return c ? t.createPortal((0, l.jsx)(n.sG.div, {
             ...r,
             ref: d
-          }), u) : null
+          }), c) : null
         }));
       r.displayName = "Portal";
       var i = r

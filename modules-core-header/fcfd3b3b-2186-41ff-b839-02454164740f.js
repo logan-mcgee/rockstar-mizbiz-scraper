@@ -27,8 +27,8 @@ try {
         getOrSet: () => g,
         joinStrings: () => z,
         merge: () => m,
-        mergeProps: () => c,
-        omit: () => w,
+        mergeProps: () => f,
+        omit: () => b,
         range: () => p,
         set: () => P,
         throttle: () => T
@@ -49,13 +49,13 @@ try {
         return r ? (r.forEach((t => t(e))), e) : t
       }
 
-      function d(...e) {
+      function c(...e) {
         return (...t) => {
           for (const n of e) "function" == typeof n && n(...t)
         }
       }
 
-      function c(...e) {
+      function f(...e) {
         const t = {
           ...e[0]
         };
@@ -64,12 +64,12 @@ try {
           for (const e in r) {
             const n = t[e],
               o = r[e];
-            "function" == typeof n && "function" == typeof o && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = d(n, o) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof o ? "id" === e && n && o ? t.id = a(n, o) : t[e] = void 0 !== o ? o : n : t[e] = (0, s.clsx)(n, o)
+            "function" == typeof n && "function" == typeof o && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = c(n, o) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof o ? "id" === e && n && o ? t.id = a(n, o) : t[e] = void 0 !== o ? o : n : t[e] = (0, s.clsx)(n, o)
           }
         }
         return t
       }
-      const f = /^(on.*)$/,
+      const d = /^(on.*)$/,
         l = /^(onPress.*)$/;
 
       function u(e, {
@@ -79,7 +79,7 @@ try {
       }) {
         const n = {},
           r = {};
-        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : f.test(o) ? n[o] = e[o] : r[o] = e[o]);
+        for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l.test(o) ? t ? n[o] = e[o] : r[o] = e[o] : d.test(o) ? n[o] = e[o] : r[o] = e[o]);
         return {
           events: n,
           others: r
@@ -92,10 +92,10 @@ try {
       function p(e) {
         return _(e)
       }
-      var b = n(41972);
+      var w = n(41972);
 
-      function w(e, ...t) {
-        return b(e, ...t)
+      function b(e, ...t) {
+        return w(e, ...t)
       }
       var y = n(56265);
 
@@ -177,9 +177,9 @@ try {
           return R(s + e) + R(s - e) - o
         }
         const a = R(A(s * s - i)),
-          d = s ? Math.atan(A(-i) / s) : -C / 2;
-        let c;
-        return c = n < 0 ? (s > 0 ? 2 * C : C) - d : o < 0 ? (s > 0 ? 2 * C : -3 * C) + d : (s > 0 ? 0 : C) + d, 2 * a * Math.cos(c / 3) - o
+          c = s ? Math.atan(A(-i) / s) : -C / 2;
+        let f;
+        return f = n < 0 ? (s > 0 ? 2 * C : C) - c : o < 0 ? (s > 0 ? 2 * C : -3 * C) + c : (s > 0 ? 0 : C) + c, 2 * a * Math.cos(f / 3) - o
       }, O = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function F(e, t, n, r) {
@@ -189,17 +189,17 @@ try {
           s = 6 * (n - 2 * e),
           i = 3 * e,
           a = o * o,
-          d = s * s,
-          c = s / o,
-          f = 3 * s * i / a - d * s / (a * o),
-          l = 2 * i / o - d / a,
+          c = s * s,
+          f = s / o,
+          d = 3 * s * i / a - c * s / (a * o),
+          l = 2 * i / o - c / a,
           u = l * l * l,
           h = 3 / o,
           g = 3 * t - 3 * r + 1,
           _ = r - 2 * t,
           p = 3 * t,
-          b = o ? D : N;
-        return e => 0 === e || 1 === e ? e : O(b(e, f, h, u, c), g, _, p)
+          w = o ? D : N;
+        return e => 0 === e || 1 === e ? e : O(w(e, d, h, u, f), g, _, p)
       }
       const z = (...e) => e.filter((e => e)).join(" ")
     }

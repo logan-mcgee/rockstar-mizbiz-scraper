@@ -39,15 +39,15 @@ try {
       function i(e, n, t) {
         var r, a = {},
           i = null,
-          d = null;
-        for (r in void 0 !== t && (i = "" + t), void 0 !== n.key && (i = "" + n.key), void 0 !== n.ref && (d = n.ref), n) u.call(n, r) && !c.hasOwnProperty(r) && (a[r] = n[r]);
+          f = null;
+        for (r in void 0 !== t && (i = "" + t), void 0 !== n.key && (i = "" + n.key), void 0 !== n.ref && (f = n.ref), n) u.call(n, r) && !c.hasOwnProperty(r) && (a[r] = n[r]);
         if (e && e.defaultProps)
           for (r in n = e.defaultProps) void 0 === a[r] && (a[r] = n[r]);
         return {
           $$typeof: o,
           type: e,
           key: i,
-          ref: d,
+          ref: f,
           props: a,
           _owner: s.current
         }
@@ -118,9 +118,9 @@ try {
               scope: t,
               children: a,
               ...c
-            } = n, i = t?.[e]?.[s] || u, d = r.useMemo((() => c), Object.values(c));
+            } = n, i = t?.[e]?.[s] || u, f = r.useMemo((() => c), Object.values(c));
             return (0, o.jsx)(i.Provider, {
-              value: d,
+              value: f,
               children: a
             })
           };
@@ -207,8 +207,8 @@ try {
               }))
             }(n, Array.isArray(e) ? e : [e]);
             a[t] || (a[t] = new WeakMap);
-            var d = a[t],
-              f = [],
+            var f = a[t],
+              d = [],
               l = new Set,
               p = new Set(i),
               y = function(e) {
@@ -222,8 +222,8 @@ try {
                   var n = e.getAttribute(c),
                     a = null !== n && "false" !== n,
                     u = (r.get(e) || 0) + 1,
-                    s = (d.get(e) || 0) + 1;
-                  r.set(e, u), d.set(e, s), f.push(e), 1 === u && a && o.set(e, !0), 1 === s && e.setAttribute(t, "true"), a || e.setAttribute(c, "true")
+                    s = (f.get(e) || 0) + 1;
+                  r.set(e, u), f.set(e, s), d.push(e), 1 === u && a && o.set(e, !0), 1 === s && e.setAttribute(t, "true"), a || e.setAttribute(c, "true")
                 } catch (n) {
                   console.error("aria-hidden: cannot operate on ", e, n)
                 }
@@ -231,10 +231,10 @@ try {
             };
             return h(n), l.clear(), u++,
               function() {
-                f.forEach((function(e) {
+                d.forEach((function(e) {
                   var n = r.get(e) - 1,
-                    a = d.get(e) - 1;
-                  r.set(e, n), d.set(e, a), n || (o.has(e) || e.removeAttribute(c), o.delete(e)), a || e.removeAttribute(t)
+                    a = f.get(e) - 1;
+                  r.set(e, n), f.set(e, a), n || (o.has(e) || e.removeAttribute(c), o.delete(e)), a || e.removeAttribute(t)
                 })), --u || (r = new WeakMap, r = new WeakMap, o = new WeakMap, a = {})
               }
           }(c, i, t, "aria-hidden")) : function() {

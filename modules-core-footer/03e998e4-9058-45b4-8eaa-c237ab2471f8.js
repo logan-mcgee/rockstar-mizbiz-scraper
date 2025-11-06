@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "0fb1ecb2-db9f-4018-a621-632d34905a1e", e._sentryDebugIdIdentifier = "sentry-dbid-0fb1ecb2-db9f-4018-a621-632d34905a1e")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "03e998e4-9058-45b4-8eaa-c237ab2471f8", e._sentryDebugIdIdentifier = "sentry-dbid-03e998e4-9058-45b4-8eaa-c237ab2471f8")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [2148], {
+  [6088], {
     9482: (e, t, n) => {
       n.d(t, {
         A: () => s
@@ -45,12 +45,12 @@ try {
         a = n(93452),
         i = n(9482),
         c = n(58128),
-        d = n(45547);
-      const u = {
+        u = n(45547);
+      const d = {
           token: (0, o.UT)("")
         },
         l = (0, i.A)({
-          context: (0, s.createContext)(u),
+          context: (0, s.createContext)(d),
           key: "utilsTokenProvider"
         }),
         w = ({
@@ -79,7 +79,7 @@ try {
           }) => {
             const {
               pingBearer: t
-            } = (0, d.A)();
+            } = (0, u.A)();
             try {
               const n = e?.() ?? "";
               if (n) {
@@ -129,23 +129,23 @@ try {
           graphEnv: a,
           queryManifest: i,
           scHost: c,
-          hostname: d,
-          cdnBase: u,
+          hostname: u,
+          cdnBase: d,
           key: l,
           marketingAuthTLD: w
         }) => {
           const m = r?.apiHost ?? e,
             f = r?.authHost ?? t,
-            h = r?.cdnBase ?? u,
+            h = r?.cdnBase ?? d,
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: v,
-            hostname: d,
+            hostname: u,
             cdnBase: h,
             key: l,
             clientId: g,
@@ -158,7 +158,7 @@ try {
             signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${y}`
+            pingBearer: `https://${p}/${b}`
           }
         },
         a = [o({
@@ -239,7 +239,7 @@ try {
             max: 99999
           }
         },
-        d = () => {
+        u = () => {
           const e = window.innerWidth,
             t = window.innerHeight,
             n = c;
@@ -262,31 +262,31 @@ try {
             windowHeight: t
           }
         },
-        u = (0, i.A)({
-          context: (0, s.createContext)(d()),
+        d = (0, i.A)({
+          context: (0, s.createContext)(u()),
           key: "resizeContext"
         }),
         {
           Consumer: l
-        } = u,
-        w = (0, a.UT)(d()),
+        } = d,
+        w = (0, a.UT)(u()),
         m = ({
           children: e
         }) => {
           const t = (0, o.q)(w);
           return (0, s.useEffect)((() => {
             const e = () => {
-              w(d())
+              w(u())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, r.jsx)(u.Provider, {
+          }), []), (0, r.jsx)(d.Provider, {
             value: t,
             children: e
           })
         },
-        f = () => (0, s.useContext)(u)
+        f = () => (0, s.useContext)(d)
     },
     52690: (e, t, n) => {
       n.d(t, {
@@ -299,99 +299,24 @@ try {
           domain: n = "default"
         }) => (r()?.[n] || (r()[n] = {}), r()?.[n]?.[e] || (r()[n][e] = t), r()[n][e])
     },
-    60099: (e, t, n) => {
-      n.d(t, {
-        A: () => m
-      });
-      var r = n(42887),
-        s = n(79465),
-        o = n.n(s),
-        a = n(15076),
-        i = n.n(a),
-        c = n(45547),
-        d = n(17954);
-      const {
-        apiHost: u
-      } = (0, c.A)(), l = (0, d.t)(document.documentElement.lang), w = {}, m = async (e, {
-        fetchOptions: t = {},
-        finalFetchOptions: n = {},
-        query: s = null,
-        pingBearer: a,
-        requireBearerToken: c = !0,
-        useCache: d = !0
-      } = {}) => {
-        try {
-          const {
-            bearerToken: m = null
-          } = await (a?.()) ?? {}, f = {
-            "X-Requested-With": "XMLHttpRequest",
-            "X-AMC": !0,
-            "Content-Type": "application/json",
-            ...l && {
-              "X-lang": l
-            }
-          };
-          let h = `${u}/${e}`;
-          if (null === s || i().isEmpty(s) || (h += `?${new URLSearchParams(s)}`), !m && c) return null;
-          m && (f.Authorization = `Bearer ${m}`);
-          const g = {
-              headers: f
-            },
-            p = o().all([g, t, n]),
-            v = JSON.stringify({
-              ...p,
-              url: h
-            }),
-            y = await (0, r.sc)(v);
-          if (d) {
-            if (w[y]?.response) return w[y].response;
-            if (w[y]?.loading) return {
-              error: null,
-              result: null
-            };
-            w[y] = {
-              loading: !0
-            }
-          }
-          const b = await fetch(h, p),
-            k = await b.json();
-          return d && (w[y] = {
-            response: k,
-            loading: !1
-          }), k
-        } catch (t) {
-          console.error(`ScApi fetch error ${e}:`, t)
-        }
-      }
-    },
-    60309: (e, t, n) => {
-      n.d(t, {
-        A: () => r
-      });
-      const r = () => {
-        const e = document.currentScript,
-          t = e?.src ? new URL(e.src).origin : "";
-        let n = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${t}/`;
-        return n.endsWith("/") || (n = `${n}/`), n
-      }
-    },
-    72148: (e, t, n) => {
+    56088: (e, t, n) => {
       n.d(t, {
         RK: () => s,
-        bn: () => L,
+        bn: () => T,
         ri: () => a,
         vx: () => x,
         sb: () => S,
         Ym: () => i.A,
-        CA: () => b.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => c,
         ZC: () => l,
-        sq: () => u,
+        sq: () => d,
         OH: () => v,
-        zP: () => y,
+        zP: () => b,
         Cb: () => f,
-        N6: () => E,
-        GA: () => M
+        N6: () => k,
+        GA: () => M,
+        JE: () => A
       });
       const r = (0, n(60309).A)(),
         s = () => r;
@@ -432,11 +357,11 @@ try {
           }
         }), [e]), [t, a]
       };
-      var d = n(9623);
-      const u = () => {
+      var u = n(9623);
+      const d = () => {
           const {
             search: e
-          } = (0, d.useLocation)();
+          } = (0, u.useLocation)();
           return new URLSearchParams(e)
         },
         l = e => {
@@ -454,31 +379,31 @@ try {
       }) => {
         const s = (0, w.Es)(),
           [a, i] = (0, o.useState)(null),
-          [c, d] = (0, o.useState)(!1),
-          [u, l] = (0, o.useState)(null),
+          [c, u] = (0, o.useState)(!1),
+          [d, l] = (0, o.useState)(null),
           f = (0, o.useCallback)((async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: a = {}
               } = t;
-              l(null), i(null), d(!0);
+              l(null), i(null), u(!0);
               const c = await (0, m.A)(o ?? e, {
                 pingBearer: s,
                 fetchOptions: n,
                 finalFetchOptions: a,
                 query: r
               });
-              return c?.status || l(JSON.stringify(c?.error)), i(c), d(!1), c
+              return c?.status || l(JSON.stringify(c?.error)), i(c), u(!1), c
             } catch (e) {
-              l(String(e)), d(!1)
+              l(String(e)), u(!1)
             }
             return null
           }), [e, n, r]);
         return (0, o.useEffect)((() => {
-          null === a && null === u && !c && t && f()
-        }), [t, a, u, c, f]), {
+          null === a && null === d && !c && t && f()
+        }), [t, a, d, c, f]), {
           data: a,
-          error: u,
+          error: d,
           loading: c,
           fetch: f
         }
@@ -505,7 +430,7 @@ try {
             dispatch: e
           })), [])
         },
-        y = (e, t) => {
+        b = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)((() => {
             const n = p(e);
@@ -519,13 +444,13 @@ try {
             }
           }), [e, t]), (0, o.useMemo)((() => ({})), [])
         };
-      var b = n(89656),
-        k = (n(95342), n(17954));
-      const E = e => {
+      var y = n(89656),
+        E = (n(95342), n(17954));
+      const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, i.A)(), s = (0, k.t)(r);
+        } = (0, h.A)(), r = (0, i.A)(), s = (0, E.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -561,8 +486,8 @@ try {
           }), []), e
         };
       var C = n(25906),
-        T = n(81878);
-      const L = () => {
+        L = n(81878);
+      const T = () => {
           const [e, t] = (0, o.useState)(!1), {
             deviceMemory: n
           } = (0, C.XB)(), {
@@ -575,13 +500,13 @@ try {
             const o = (() => {
               const e = e => !1 === e;
               if (i) return !1;
-              if (T.n8 || T.lT || T.w || T.UX) return !1;
-              const t = "Safari" === T.C0,
-                o = "Firefox" === T.C0,
+              if (L.n8 || L.lT || L.w || L.UX) return !1;
+              const t = "Safari" === L.C0,
+                o = "Firefox" === L.C0,
                 c = r && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(r),
-                d = s && s >= 4,
-                u = n && n >= 4;
-              return !(e(!a) || e(c) || e(d) || !t && !o && e(u))
+                u = s && s >= 4,
+                d = n && n >= 4;
+              return !(e(!a) || e(c) || e(u) || !t && !o && e(d))
             })();
             o !== e && t(o)
           };
@@ -610,7 +535,107 @@ try {
             ref: r,
             scrollTracked: t
           }
+        },
+        A = (e = 0) => {
+          const t = (0, o.useRef)(null),
+            [n, r] = (0, o.useState)(!1),
+            s = () => {
+              const n = t.current;
+              if (!n) return;
+              const s = n.getBoundingClientRect(),
+                o = window.innerHeight || document.documentElement.clientHeight,
+                a = (Math.min(s.bottom, o) - Math.max(s.top, 0)) / s.height;
+              r(a > e)
+            };
+          return (0, o.useEffect)((() => {
+            s();
+            const e = () => requestAnimationFrame(s);
+            return window.addEventListener("scroll", e, {
+              passive: !0
+            }), window.addEventListener("resize", e), () => {
+              window.removeEventListener("scroll", e), window.removeEventListener("resize", e)
+            }
+          }), [e]), {
+            ref: t,
+            inView: n
+          }
         }
+    },
+    60099: (e, t, n) => {
+      n.d(t, {
+        A: () => m
+      });
+      var r = n(42887),
+        s = n(79465),
+        o = n.n(s),
+        a = n(15076),
+        i = n.n(a),
+        c = n(45547),
+        u = n(17954);
+      const {
+        apiHost: d
+      } = (0, c.A)(), l = (0, u.t)(document.documentElement.lang), w = {}, m = async (e, {
+        fetchOptions: t = {},
+        finalFetchOptions: n = {},
+        query: s = null,
+        pingBearer: a,
+        requireBearerToken: c = !0,
+        useCache: u = !0
+      } = {}) => {
+        try {
+          const {
+            bearerToken: m = null
+          } = await (a?.()) ?? {}, f = {
+            "X-Requested-With": "XMLHttpRequest",
+            "X-AMC": !0,
+            "Content-Type": "application/json",
+            ...l && {
+              "X-lang": l
+            }
+          };
+          let h = `${d}/${e}`;
+          if (null === s || i().isEmpty(s) || (h += `?${new URLSearchParams(s)}`), !m && c) return null;
+          m && (f.Authorization = `Bearer ${m}`);
+          const g = {
+              headers: f
+            },
+            p = o().all([g, t, n]),
+            v = JSON.stringify({
+              ...p,
+              url: h
+            }),
+            b = await (0, r.sc)(v);
+          if (u) {
+            if (w[b]?.response) return w[b].response;
+            if (w[b]?.loading) return {
+              error: null,
+              result: null
+            };
+            w[b] = {
+              loading: !0
+            }
+          }
+          const y = await fetch(h, p),
+            E = await y.json();
+          return u && (w[b] = {
+            response: E,
+            loading: !1
+          }), E
+        } catch (t) {
+          console.error(`ScApi fetch error ${e}:`, t)
+        }
+      }
+    },
+    60309: (e, t, n) => {
+      n.d(t, {
+        A: () => r
+      });
+      const r = () => {
+        const e = document.currentScript,
+          t = e?.src ? new URL(e.src).origin : "";
+        let n = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${t}/`;
+        return n.endsWith("/") || (n = `${n}/`), n
+      }
     },
     89656: (e, t, n) => {
       n.r(t), n.d(t, {
@@ -650,12 +675,12 @@ try {
           key: "freezeUserShouldSeeMoreReactive",
           value: (0, a.UT)(!1)
         }),
-        d = e => c(e),
-        u = (0, i.A)({
+        u = e => c(e),
+        d = (0, i.A)({
           context: (0, s.createContext)(null),
           key: "scrollContext"
         }),
-        l = () => (0, s.useContext)(u),
+        l = () => (0, s.useContext)(d),
         w = ({
           children: e
         }) => {
@@ -676,12 +701,12 @@ try {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [l, m]), (0, s.useMemo)((() => (0, r.jsx)(u.Provider, {
+          }), [l, m]), (0, s.useMemo)((() => (0, r.jsx)(d.Provider, {
             value: {
               freezeUserShouldSeeMore: m,
               pageYOffset: t,
               pauseUserShouldSeeMore: h,
-              setFreezeUserShouldSeeMore: d,
+              setFreezeUserShouldSeeMore: u,
               userShouldSeeMore: a
             },
             children: e

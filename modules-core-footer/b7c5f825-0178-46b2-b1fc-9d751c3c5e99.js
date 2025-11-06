@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ecef9e5f-c927-415c-b213-78a47a178a3f", e._sentryDebugIdIdentifier = "sentry-dbid-ecef9e5f-c927-415c-b213-78a47a178a3f")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b7c5f825-0178-46b2-b1fc-9d751c3c5e99", e._sentryDebugIdIdentifier = "sentry-dbid-b7c5f825-0178-46b2-b1fc-9d751c3c5e99")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -43,8 +43,8 @@ try {
       });
       var o = {};
       s.r(o), s.d(o, {
-        avatar: () => fe,
-        avatarBG: () => me,
+        avatar: () => me,
+        avatarBG: () => fe,
         avatarImg: () => ge,
         avatarPlatform: () => pe,
         platformTag: () => ke,
@@ -85,8 +85,8 @@ try {
         d = s(55488),
         _ = s(81788),
         u = s(78795),
-        f = s(2918);
-      const m = (0, _.defineMessages)({
+        m = s(2918);
+      const f = (0, _.defineMessages)({
           language_selector_default: {
             id: "language_selector_default",
             description: "The default option for the language selector.",
@@ -120,7 +120,7 @@ try {
         }) => {
           const {
             track: p
-          } = (0, f.useGtmTrack)(), k = (0, _.useIntl)(), [h] = (0, _.getLocale)(), [b, v] = (0, n.useState)(!1), w = (0, n.useRef)(null), [y, C] = (0, n.useState)(0), x = "ontouchstart" in window || navigator?.maxTouchPoints > 0 || navigator?.msMaxTouchPoints > 0, S = e => {
+          } = (0, m.useGtmTrack)(), k = (0, _.useIntl)(), [h] = (0, _.getLocale)(), [b, v] = (0, n.useState)(!1), w = (0, n.useRef)(null), [y, C] = (0, n.useState)(0), x = "ontouchstart" in window || navigator?.maxTouchPoints > 0 || navigator?.msMaxTouchPoints > 0, S = e => {
             if (s && s(!1), h.subdomaincom === e || "none" === e) return void(s && s(!1));
             const a = _.locales.find((a => a.subdomaincom === e));
             a && c?.({
@@ -148,14 +148,14 @@ try {
                     const a = e.currentTarget.value;
                     S(a)
                   },
-                  "aria-label": k.formatMessage(m.language_selector_default),
+                  "aria-label": k.formatMessage(f.language_selector_default),
                   "data-testid": `${o}-language-selector-button`,
                   children: [(0, r.jsx)("option", {
                     className: g.selectBoxOption,
                     value: "none",
                     "data-testid": `${o}-language-selector-current`,
                     children: _.locales.find((e => e.subdomaincom === h.subdomaincom))?.label ?? (0, r.jsx)(_.FormattedMessage, {
-                      ...m.language_selector_default
+                      ...f.language_selector_default
                     })
                   }), _.locales.map((({
                     label: e,
@@ -178,11 +178,11 @@ try {
                 },
                 "data-testid": `${o}-language-selector-button`,
                 type: "button",
-                "aria-label": k.formatMessage(m.language_selector_default),
+                "aria-label": k.formatMessage(f.language_selector_default),
                 children: [(0, r.jsx)("i", {}), (0, r.jsx)("span", {
                   "data-testid": `${o}-language-selector-current`,
                   children: _.locales.find((e => e.subdomaincom === h.subdomaincom))?.label ?? (0, r.jsx)(_.FormattedMessage, {
-                    ...m.language_selector_default
+                    ...f.language_selector_default
                   })
                 })]
               }), (0, r.jsx)("div", {
@@ -221,7 +221,7 @@ try {
                 defaultValue: _.locales.find((e => e.subdomaincom === h.subdomaincom))?.subdomaincom,
                 children: [(0, r.jsxs)(l.Dropdown.Trigger, {
                   children: [(0, r.jsx)(l.Dropdown.TriggerText, {
-                    placeholder: k.formatMessage(m.language_selector_default)
+                    placeholder: k.formatMessage(f.language_selector_default)
                   }), (0, r.jsx)(l.Dropdown.TriggerIcon, {})]
                 }), (0, r.jsx)(l.Dropdown.Portal, {
                   children: (0, r.jsx)(l.Dropdown.Content, {
@@ -555,11 +555,11 @@ try {
           onClickCallback: l = () => {},
           tabIndex: d,
           reloadDocument: u = !1,
-          onNavigate: m
+          onNavigate: f
         }) => {
           const {
             track: g
-          } = (0, f.useGtmTrack)(), p = (0, R.A)(), k = (0, _.useIntl)();
+          } = (0, m.useGtmTrack)(), p = (0, R.A)(), k = (0, _.useIntl)();
           let h = s;
           t && (h = t.domain === p.currentSite?.site ? t.path : `https://${p.sites[t.domain]}.rockstargames.com${t.path}`);
           const b = {
@@ -578,7 +578,7 @@ try {
             onClick: e => {
               g(b), l(e)
             },
-            onNavigate: m,
+            onNavigate: f,
             children: [e, n && (0, r.jsx)("div", {
               className: "rockstargames-modules-core-footeradbacfbbfe7d2627fa0c2a2ffd219474",
               children: (0, r.jsx)("span", {
@@ -600,7 +600,7 @@ try {
           children: d = [],
           activeSubNavId: _,
           setActiveSubNavId: u,
-          setSubNavExtraHeight: m,
+          setSubNavExtraHeight: f,
           reloadDocument: g = !1,
           onClickCallback: p = () => {},
           onNavigate: k
@@ -610,9 +610,9 @@ try {
             windowHeight: b
           } = (0, v.useWindowResize)(), {
             track: w
-          } = (0, f.useGtmTrack)(), {
+          } = (0, m.useGtmTrack)(), {
             navOpen: y
-          } = (0, f.useRockstarUserState)(), C = (0, n.useRef)(null), [x, S] = (0, n.useState)(0), [N, j] = (0, n.useState)(0), [M, I] = (0, n.useState)(!0);
+          } = (0, m.useRockstarUserState)(), C = (0, n.useRef)(null), [x, S] = (0, n.useState)(0), [N, j] = (0, n.useState)(0), [M, I] = (0, n.useState)(!0);
           return (0, n.useEffect)((() => {
             _ !== e && !1 === M && I(!0), _ === e && I(!1)
           }), [_]), (0, n.useEffect)((() => {
@@ -632,7 +632,7 @@ try {
               tabIndex: y ? 0 : -1,
               "data-children-hidden": M,
               onClick: a => {
-                a.stopPropagation(), w(c), _ === e ? (u(-1), m(0)) : (u(e), m(x + N + N))
+                a.stopPropagation(), w(c), _ === e ? (u(-1), f(0)) : (u(e), f(x + N + N))
               },
               children: [(0, r.jsx)("span", {
                 className: "rockstargames-modules-core-footerb94730a01d5e9223b69cbc2f20f23bcd",
@@ -683,12 +683,12 @@ try {
             setLanguageSelectorOpened: l,
             activeSubNavId: d,
             setActiveSubNavId: u,
-            subNavExtraHeight: m,
+            subNavExtraHeight: f,
             setSubNavExtraHeight: g
           } = E(), {
             setSelectedCharacterTuple: p,
             navOpen: k
-          } = (0, f.useRockstarUserState)(), b = (0, v.useLocale)(), w = (0, v.toScLocaleString)(b), [y, C] = (0, n.useState)(""), x = `${e.login}?returnUrl=${y}&lang=${w}`, S = `${e.signup}&returnUrl=${y}&lang=${w}`, N = (0, n.useMemo)((() => (0, R.A)()), []), j = (0, n.useMemo)((() => {
+          } = (0, m.useRockstarUserState)(), b = (0, v.useLocale)(), w = (0, v.toScLocaleString)(b), [y, C] = (0, n.useState)(""), x = `${e.login}?returnUrl=${y}&lang=${w}`, S = `${e.signup}&returnUrl=${y}&lang=${w}`, N = (0, n.useMemo)((() => (0, R.A)()), []), j = (0, n.useMemo)((() => {
             const e = ((e, a, s) => [{
               text: e.formatMessage(T.sc_link_sign_in),
               href: a,
@@ -737,7 +737,7 @@ try {
                 "data-logged-in": "false",
                 ref: P,
                 style: {
-                  "--navWrap-max-height": `${m+M}px`
+                  "--navWrap-max-height": `${f+M}px`
                 },
                 children: j.map((e => (0, n.createElement)(O, {
                   ...e,
@@ -766,7 +766,7 @@ try {
             })]
           })
         };
-      var U = s(72148),
+      var U = s(56088),
         F = s(10439);
       const W = new Map;
 
@@ -936,11 +936,11 @@ try {
             {
               currentCharId: i,
               setCurrentCharId: l
-            } = (0, f.useRockstarUserState)(),
+            } = (0, m.useRockstarUserState)(),
             d = (0, n.createRef)(),
             {
               platform: u,
-              platformUsername: m,
+              platformUsername: f,
               mugshotUrl: g,
               stats: p
             } = e,
@@ -967,7 +967,7 @@ try {
                   className: le.avatarImg,
                   src: k,
                   alt: c.formatMessage(T.profile_selector_mugshot, {
-                    userName: m
+                    userName: f
                   }),
                   onError: () => {
                     h(s(5931))
@@ -986,7 +986,7 @@ try {
                   className: le.scUserName,
                   "data-size": "small",
                   "data-testid": de,
-                  children: m
+                  children: f
                 })]
               }), (0, r.jsx)("div", {
                 className: le.scRp,
@@ -998,8 +998,8 @@ try {
             })]
           })
         };
-      var fe = "ay40go2",
-        me = "var(--ay40go1)",
+      var me = "ay40go2",
+        fe = "var(--ay40go1)",
         ge = "ay40go3",
         pe = "ay40go4",
         ke = "ay40go5",
@@ -1027,9 +1027,9 @@ try {
         }) => {
           const {
             data: a
-          } = (0, f.useRockstarUser)(), {
+          } = (0, m.useRockstarUser)(), {
             track: t
-          } = (0, f.useGtmTrack)(), o = (0, _.useIntl)(), [c, i] = (0, n.useState)([]), [l, d] = (0, n.useState)(null), [u, m] = (0, n.useState)(null), [g, p] = (0, n.useState)(!1), [k, h] = (0, n.useState)(-1), [b, v] = (0, n.useState)([]), [w, y] = (0, n.useState)(0), C = s(5931), {
+          } = (0, m.useGtmTrack)(), o = (0, _.useIntl)(), [c, i] = (0, n.useState)([]), [l, d] = (0, n.useState)(null), [u, f] = (0, n.useState)(null), [g, p] = (0, n.useState)(!1), [k, h] = (0, n.useState)(-1), [b, v] = (0, n.useState)([]), [w, y] = (0, n.useState)(0), C = s(5931), {
             platform: x
           } = e, [S, N] = (0, n.useState)("0"), [j, M] = (0, n.useState)("0"), I = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
@@ -1060,7 +1060,7 @@ try {
             })), N(I(e.stats.overview.bank.value)), M(I(e.stats.overview.cash.value)), y(parseInt(e.stats.overview.rank.value))
           }), [e, a.nickname]), (0, n.useEffect)((() => {
             c && c.forEach((e => {
-              !0 === e.isPrimary && (d(e.crewTag), m(e.crewColour), h(e.rankOrder), p(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && p(!0))
+              !0 === e.isPrimary && (d(e.crewTag), f(e.crewColour), h(e.rankOrder), p(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && p(!0))
             }))
           }), [c]), (0, n.useEffect)((() => {
             const e = [];
@@ -1166,8 +1166,8 @@ try {
         }) => {
           const d = (0, n.createRef)(),
             _ = (0, U.ri)(d, !1),
-            [u, f] = (0, n.useState)(!1),
-            [m, g] = (0, n.useState)(!1),
+            [u, m] = (0, n.useState)(!1),
+            [f, g] = (0, n.useState)(!1),
             [p, k] = (0, n.useState)(0),
             [h, b] = (0, n.useState)(0),
             [v, w] = (0, n.useState)([s]),
@@ -1190,18 +1190,18 @@ try {
                 c = Math.abs(h - s);
               c > e ? (o > 0 ? (() => {
                 if (!0 === u) return;
-                f(!0);
+                m(!0);
                 const e = p - 1 < 0 ? 0 : p - 1;
                 k(e), C(v[e]), t && t(e)
               })() : (() => {
                 if (!0 === u) return;
-                f(!0);
+                m(!0);
                 let e = p + 1 >= v.length ? v.length - 1 : p + 1;
                 e < 0 && (e = 0), k(e), C(v[e]), t && t(e)
               })(), b(0)) : C(v[p] + c * o)
             },
             D = () => {
-              !0 !== u && !0 !== l && (f(!0), !0 !== u && (C(v[p]), b(0)), g(!1))
+              !0 !== u && !0 !== l && (m(!0), !0 !== u && (C(v[p]), b(0)), g(!1))
             };
           return (0, n.useEffect)((() => {
             const e = [];
@@ -1217,7 +1217,7 @@ try {
             j(s + a)
           }), [M]), (0, n.useEffect)((() => {
             !1 !== u && setTimeout((() => {
-              f(!1)
+              m(!1)
             }), a)
           }), [u, a]), (0, n.useEffect)((() => {
             w(c.map(((e, a) => (e => {
@@ -1258,7 +1258,7 @@ try {
                 },
                 children: c.map(((e, a) => (0, r.jsx)("div", {
                   onClick: () => (e => {
-                    null === o || m || o(e)
+                    null === o || f || o(e)
                   })(a),
                   className: Fe.scCustomSwiperItem,
                   ref: M[a],
@@ -1299,7 +1299,7 @@ try {
           isMobileMode: l,
           setIsMobileMode: d,
           location: u,
-          onNavigate: m
+          onNavigate: f
         }) => {
           const {
             windowWidth: g,
@@ -1317,10 +1317,10 @@ try {
             webSettings: P
           } = (0, v.useRockstarWebSettings)(), {
             track: A
-          } = (0, f.useGtmTrack)(), z = (0, v.useRockstarTokenPing)(), {
+          } = (0, m.useGtmTrack)(), z = (0, v.useRockstarTokenPing)(), {
             data: H,
             loggedIn: $
-          } = (0, f.useRockstarUser)(), {
+          } = (0, m.useRockstarUser)(), {
             charactersNeeded: F,
             currentCharId: W,
             hasNotifications: V,
@@ -1329,7 +1329,7 @@ try {
             setHasNotifications: Z,
             setSelectedCharacterTuple: q,
             setUserData: K
-          } = (0, f.useRockstarUserState)(), [J, Y] = (0, n.useState)(null), [Q, ee] = (0, n.useState)(!1), [ae, se] = (0, n.useState)(!1), [te, oe] = (0, n.useState)(0), ce = (0, n.createRef)(), ie = (0, U.ri)(ce, !1), re = (0, n.createRef)(), [ne, le] = (0, n.useState)(0), [de, _e] = (0, n.useState)([]), [fe, me] = (0, n.useState)(244), ge = (0, n.useRef)(null), pe = (0, n.useMemo)((() => (0, R.A)()), []), ke = (0, n.useMemo)((() => ((e, a, s, t, o) => [{
+          } = (0, m.useRockstarUserState)(), [J, Y] = (0, n.useState)(null), [Q, ee] = (0, n.useState)(!1), [ae, se] = (0, n.useState)(!1), [te, oe] = (0, n.useState)(0), ce = (0, n.createRef)(), ie = (0, U.ri)(ce, !1), re = (0, n.createRef)(), [ne, le] = (0, n.useState)(0), [de, _e] = (0, n.useState)([]), [me, fe] = (0, n.useState)(244), ge = (0, n.useRef)(null), pe = (0, n.useMemo)((() => (0, R.A)()), []), ke = (0, n.useMemo)((() => ((e, a, s, t, o) => [{
             text: e.formatMessage(T.sc_link_account),
             target: "_self",
             dataTestId: "accountButton",
@@ -1448,7 +1448,7 @@ try {
             },
             dataTestId: "logoutButton"
           }])(k, e, H, V, M, window)), [k, e, H, V, M, pe]), he = () => {
-            se(o + fe * te < ie)
+            se(o + me * te < ie)
           }, be = () => {
             if (re.current) {
               const {
@@ -1485,7 +1485,7 @@ try {
             })()
           }), [H, G]), (0, n.useEffect)((() => {
             he()
-          }), [fe]), (0, n.useEffect)((() => {
+          }), [me]), (0, n.useEffect)((() => {
             s(!0), d(g < 768), d(g < 768 || p < 649)
           }), [g, p]), (0, n.useEffect)((() => {
             let e = de.length - 1;
@@ -1538,7 +1538,7 @@ try {
                   children: de.map((e => (0, r.jsx)(ue, {
                     tabIndex: a ? -1 : 0,
                     characterData: e,
-                    setMobileCardWidth: me
+                    setMobileCardWidth: fe
                   }, `${e.platformUsername}-${e.platform}-${e.characterSlot}`)))
                 }), l && (0, r.jsx)("div", {
                   className: Ve.scCharacterList,
@@ -1560,7 +1560,7 @@ try {
                     disableSwiper: ae,
                     children: de.filter(((e, a) => a !== W)).map((e => (0, n.createElement)(ue, {
                       characterData: e,
-                      setMobileCardWidth: me,
+                      setMobileCardWidth: fe,
                       key: `${e.platformUsername}-${e.platform}-${e.characterSlot}`,
                       tabIndex: a ? -1 : 0
                     })))
@@ -1598,7 +1598,7 @@ try {
                   activeSubNavId: y,
                   setActiveSubNavId: C,
                   setSubNavExtraHeight: S,
-                  onNavigate: m,
+                  onNavigate: f,
                   key: e.text
                 })))
               })]
@@ -1640,20 +1640,20 @@ try {
             setActiveSubNavId: l,
             navOpened: d,
             setAccountNavOpened: u,
-            charListHidden: m,
+            charListHidden: f,
             setCharListHidden: g
           } = E(), [p, k] = (0, n.useState)(!1), {
             navHidden: h = !1
           } = (0, v.useState)(), {
             loggedIn: w
-          } = (0, f.useRockstarUser)(), {
+          } = (0, m.useRockstarUser)(), {
             currentCharId: y,
             navOpen: C,
             setNavOpen: x,
             userData: S
-          } = (0, f.useRockstarUserState)(), {
+          } = (0, m.useRockstarUserState)(), {
             track: N
-          } = (0, f.useGtmTrack)(), [j, M] = (0, n.useState)(!1), I = (0, n.useRef)(), [P, A] = (0, n.useState)(0), L = (0, n.createRef)(), [R, D] = (0, n.useState)(!1), [B, z] = (0, n.useState)(0), [H, O] = (0, n.useState)(!1), {
+          } = (0, m.useGtmTrack)(), [j, M] = (0, n.useState)(!1), I = (0, n.useRef)(), [P, A] = (0, n.useState)(0), L = (0, n.createRef)(), [R, D] = (0, n.useState)(!1), [B, z] = (0, n.useState)(0), [H, O] = (0, n.useState)(!1), {
             mutateWebSettings: U,
             webSettings: F
           } = (0, v.useRockstarWebSettings)(), W = (0, n.useCallback)((e => {
@@ -1670,8 +1670,8 @@ try {
               event: "account_synced"
             })
           }), [y, w, S?.accountSynced]), (0, n.useEffect)((() => {
-            I.current && (!1 === m && !1 === j && (I.current.style.height = `${I.current.scrollHeight}px`), !0 === m && (I.current.style.height = null))
-          }), [m, I, j]), (0, n.useEffect)((() => {
+            I.current && (!1 === f && !1 === j && (I.current.style.height = `${I.current.scrollHeight}px`), !0 === f && (I.current.style.height = null))
+          }), [f, I, j]), (0, n.useEffect)((() => {
             const e = () => {
                 x(!1), W(!0)
               },
@@ -1701,9 +1701,9 @@ try {
           }), [L, t]), (0, n.useEffect)((() => {
             C || (l(-1), i(!1))
           }), [C]), (0, n.useEffect)((() => {
-            c && (m || W(!0), d && (u(!1), l(-1)))
+            c && (f || W(!0), d && (u(!1), l(-1)))
           }), [c]), (0, n.useEffect)((() => {
-            d && (c && i(!1), m || W(!0))
+            d && (c && i(!1), f || W(!0))
           }), [d]), void 0 === w ? null : (0, r.jsxs)(b.A, {
             enabled: !!C,
             removeScrollBar: !1,
@@ -1733,7 +1733,7 @@ try {
                 })
               }), w ? (0, r.jsx)(Ge, {
                 sc: Ze,
-                charListHidden: m,
+                charListHidden: f,
                 hideCharacterList: W,
                 refCharacterListDesktop: I,
                 menuPadding: P,
@@ -1762,17 +1762,17 @@ try {
             {
               data: t,
               loggedIn: o
-            } = (0, f.useRockstarUser)(),
+            } = (0, m.useRockstarUser)(),
             {
               charactersNeeded: c,
               currentCharId: i,
               navOpen: l,
               setNavOpen: d
-            } = (0, f.useRockstarUserState)(),
+            } = (0, m.useRockstarUserState)(),
             {
               track: u
-            } = (0, f.useGtmTrack)(),
-            [m, g] = (0, n.useState)(),
+            } = (0, m.useGtmTrack)(),
+            [f, g] = (0, n.useState)(),
             [p, k] = (0, n.useState)(!1),
             [h, b] = (0, n.useState)([]);
           (0, n.useEffect)((() => {
@@ -1809,7 +1809,7 @@ try {
             "data-logged-in": Boolean(o),
             children: [(0, r.jsx)("img", {
               className: "rockstargames-modules-core-footera917b58ca28b68550a1aa5d99c7eb998",
-              src: m,
+              src: f,
               alt: t?.nickname || "",
               onError: () => {
                 let e = null;
@@ -1853,11 +1853,11 @@ try {
           const e = (0, _.useIntl)(),
             {
               track: a
-            } = (0, f.useGtmTrack)(),
+            } = (0, m.useGtmTrack)(),
             [s, t] = (0, n.useState)(null),
             [o, c] = (0, n.useState)(0),
             [i, l] = (0, n.useState)(!1),
-            [u, m] = (0, n.useState)(!1),
+            [u, f] = (0, n.useState)(!1),
             g = (0, n.createRef)(),
             [p, k] = (0, n.useState)([]),
             [h, b] = (0, n.useState)(244),
@@ -1869,12 +1869,12 @@ try {
             {
               data: S,
               loggedIn: N
-            } = (0, f.useRockstarUser)(),
+            } = (0, m.useRockstarUser)(),
             {
               charactersNeeded: j,
               currentCharId: M,
               setCurrentCharId: I
-            } = (0, f.useRockstarUserState)(),
+            } = (0, m.useRockstarUserState)(),
             {
               charListHidden: P,
               setCharListHidden: A
@@ -1885,7 +1885,7 @@ try {
             let e = p.length - 1;
             e < 0 && (e = 0), c(e);
             const a = p.length > 0 ? p[M] ?? p[0] : null;
-            a && (t(a), p.length > 1 ? m(!0) : m(!1))
+            a && (t(a), p.length > 1 ? f(!0) : f(!1))
           }), [M, p]), (0, n.useEffect)((() => {
             k(S?.characters?.[j] ?? [])
           }), [S, j]), (0, n.useEffect)((() => {
