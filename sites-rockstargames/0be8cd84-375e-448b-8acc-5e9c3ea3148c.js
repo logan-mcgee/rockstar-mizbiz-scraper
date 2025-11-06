@@ -14,27 +14,27 @@ try {
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [439], {
     10439: (e, a, t) => {
-      function d(e) {
-        var a, t, n = "";
-        if ("string" == typeof e || "number" == typeof e) n += e;
+      function n(e) {
+        var a, t, s = "";
+        if ("string" == typeof e || "number" == typeof e) s += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
-            var s = e.length;
-            for (a = 0; a < s; a++) e[a] && (t = d(e[a])) && (n && (n += " "), n += t)
+            var d = e.length;
+            for (a = 0; a < d; a++) e[a] && (t = n(e[a])) && (s && (s += " "), s += t)
           } else
-            for (t in e) e[t] && (n && (n += " "), n += t);
-        return n
+            for (t in e) e[t] && (s && (s += " "), s += t);
+        return s
       }
 
-      function n() {
-        for (var e, a, t = 0, n = "", s = arguments.length; t < s; t++)(e = arguments[t]) && (a = d(e)) && (n && (n += " "), n += a);
-        return n
+      function s() {
+        for (var e, a, t = 0, s = "", d = arguments.length; t < d; t++)(e = arguments[t]) && (a = n(e)) && (s && (s += " "), s += a);
+        return s
       }
       t.r(a), t.d(a, {
-        clsx: () => n,
-        default: () => s
+        clsx: () => s,
+        default: () => d
       });
-      const s = n
+      const d = s
     }
   }
 ]);

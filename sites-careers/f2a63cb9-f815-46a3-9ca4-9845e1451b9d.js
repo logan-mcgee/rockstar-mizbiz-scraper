@@ -18,7 +18,7 @@ try {
       t.r(o), t.d(o, {
         FormattedMessage: () => r.A,
         POSIXLocales: () => w,
-        ReactIntlProviderForMocking: () => i.A,
+        ReactIntlProviderForMocking: () => a.A,
         createDevLocaleHook: () => O,
         createIntl: () => n.E,
         defineMessages: () => s.YK,
@@ -30,14 +30,14 @@ try {
         locales: () => h,
         onLanguageChange: () => j,
         splitLocale: () => E,
-        useIntl: () => a.A,
+        useIntl: () => i.A,
         withIntl: () => v
       });
       var s = t(4944),
         r = t(2486),
         n = t(7497),
-        a = t(597),
-        i = t(9872),
+        i = t(597),
+        a = t(9872),
         l = t(2295),
         c = t(2229),
         u = t(9867);
@@ -169,10 +169,10 @@ try {
             return o?.split("=")[1]
           })(e), r = f;
           let n = r;
-          const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = m(a);
-          n = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === i)) || r;
-          const [, l] = p(a, n.iso);
+          const i = `rockstarweb_lang.${o.cookieIdentifier}`,
+            a = m(i);
+          n = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === a)) || r;
+          const [, l] = p(i, n.iso);
           return [n, l]
         };
       var k = t(5422);
@@ -205,7 +205,7 @@ try {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, l.jsx)(i.A, {
+          return (0, l.jsx)(a.A, {
             locale: n?.locale || _(),
             messages: {
               ...n?.messages
@@ -275,8 +275,8 @@ try {
           if (s)
             for (const [r, {
                 regex: n,
-                isSubdomain: a,
-                isLocaleInUrl: i,
+                isSubdomain: i,
+                isLocaleInUrl: a,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries(x)) {
@@ -284,10 +284,10 @@ try {
               const u = t[r];
               if (!u) continue;
               let d = "";
-              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (d += "/"));
+              "en" !== o.subdomaincom && a && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (d += "/"));
               const m = s.host.split(".");
               let p = "";
-              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (p += `https://${u}`, p += a ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
+              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (p += `https://${u}`, p += i ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
                 link: `${p}${d}${"/"===s.pathname?"":s.pathname}${s.search}`,
                 isExternal: !0
               }) : {
@@ -312,19 +312,19 @@ try {
             [, r] = g(),
             {
               subdomaincom: n,
-              iso: a
+              iso: i
             } = e,
-            i = (e => {
+            a = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
               return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(n);
           o?.({
             event: "cta_other",
-            link_url: i,
+            link_url: a,
             text: n,
             element_placement: t?.toLowerCase()
-          }), r(a), window.location.href = i
+          }), r(i), window.location.href = a
         }
     },
     3019: (e, o, t) => {

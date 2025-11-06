@@ -19,8 +19,8 @@ try {
       });
       var t = s(42295),
         i = s(26708),
-        d = s(10632),
-        l = s(24769);
+        l = s(10632),
+        d = s(24769);
       const r = {
           carouselTitle: "rockstargames-sites-gta-gen9e9e0ef1bfc3699b1e50c33dd0ce8e76a",
           carouselWrapper: "rockstargames-sites-gta-gen9fabefc39343f6c494eb3d049757d89c5",
@@ -43,12 +43,12 @@ try {
         }) => e?.length ? (0, t.jsxs)("div", {
           id: o,
           "data-testid": `carousel${c&&`-${c}`}-group-of-items`,
-          children: [(0, t.jsx)(l.A, {
+          children: [(0, t.jsx)(d.A, {
             style: s,
             className: [c, r.carouselWrapper].join(" "),
             children: e.map((e => (0, t.jsxs)("div", {
               id: e?.id ?? null,
-              children: [(0, t.jsx)(d.A, {
+              children: [(0, t.jsx)(l.A, {
                 image: e?.image,
                 badge: e?.badge ?? e?.image?.badge,
                 badgeType: "badge3",
@@ -82,8 +82,8 @@ try {
       var o = s(31879),
         g = s.n(o),
         m = s(92440),
-        f = s(4572),
-        b = s.n(f);
+        b = s(4572),
+        f = s.n(b);
       const p = ({
           impressionTracking: e,
           gtm: a = {},
@@ -108,7 +108,7 @@ try {
           context: "site",
           autoplay: !1,
           id: e.videoId
-        }) : (0, t.jsx)(d.A, {
+        }) : (0, t.jsx)(l.A, {
           image: e?.image,
           badge: e?.badge ?? e?.image?.badge,
           badgeType: "badge3",
@@ -122,11 +122,11 @@ try {
           items: e,
           style: a = {},
           className: s = "",
-          id: d = null
+          id: l = null
         }) => (0, t.jsx)("div", {
           style: a,
-          className: b()("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
-          id: d,
+          className: f()("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
+          id: l,
           "data-testid": "standard-group-of-items",
           children: e.map((e => (0, t.jsx)(p, {
             impressionTracking: e?.impressionTracking,
@@ -134,7 +134,7 @@ try {
             children: (0, t.jsx)(u, {
               to: e?.to,
               children: (0, t.jsxs)("div", {
-                className: b()("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                className: f()("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                 style: e?.style ?? {},
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(y, {
@@ -152,8 +152,8 @@ try {
           text: a = {},
           items: s = [],
           renderTemplate: i = "",
-          style: d = {},
-          id: l = null,
+          style: l = {},
+          id: d = null,
           ...r
         }) => {
           if (!s.length) return null;
@@ -162,24 +162,24 @@ try {
               return (0, t.jsx)(c, {
                 text: a,
                 items: s,
-                style: d,
-                id: l,
+                style: l,
+                id: d,
                 children: e
               });
             case "carousel-panorama":
               return (0, t.jsx)(c, {
                 text: a,
                 items: s,
-                style: d,
+                style: l,
                 className: "panorama",
-                id: l,
+                id: d,
                 children: e
               });
             default:
               return (0, t.jsx)(h, {
                 items: s,
-                style: d,
-                id: l,
+                style: l,
+                id: d,
                 ...r,
                 children: e
               })

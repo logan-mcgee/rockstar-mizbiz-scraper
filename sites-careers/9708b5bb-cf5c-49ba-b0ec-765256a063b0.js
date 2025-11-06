@@ -53,10 +53,10 @@ try {
         l = -1;
 
       function f() {
-        u && i && (u = !1, i.length ? s = i.concat(s) : l = -1, s.length && d())
+        u && i && (u = !1, i.length ? s = i.concat(s) : l = -1, s.length && p())
       }
 
-      function d() {
+      function p() {
         if (!u) {
           var e = c(f);
           u = !0;
@@ -81,7 +81,7 @@ try {
         }
       }
 
-      function p(e, t) {
+      function d(e, t) {
         this.fun = e, this.array = t
       }
 
@@ -90,8 +90,8 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        s.push(new p(e, t)), 1 !== s.length || u || c(d)
-      }, p.prototype.run = function() {
+        s.push(new d(e, t)), 1 !== s.length || u || c(p)
+      }, d.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
         return []
@@ -109,9 +109,9 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         GoogleReCaptcha: () => m,
-        GoogleReCaptchaConsumer: () => d,
+        GoogleReCaptchaConsumer: () => p,
         GoogleReCaptchaContext: () => f,
-        GoogleReCaptchaProvider: () => p,
+        GoogleReCaptchaProvider: () => d,
         useGoogleReCaptcha: () => y,
         withGoogleReCaptcha: () => Z
       });
@@ -152,9 +152,9 @@ try {
             u = s.nonce,
             l = void 0 === u ? "" : u,
             f = s.defer,
-            d = void 0 !== f && f,
-            p = s.async,
-            y = void 0 !== p && p,
+            p = void 0 !== f && f,
+            d = s.async,
+            y = void 0 !== d && d,
             m = s.id,
             h = void 0 === m ? "" : m,
             b = s.appendTo,
@@ -170,7 +170,7 @@ try {
                 useRecaptchaNet: a
               }),
               w = document.createElement("script");
-            w.id = g, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === b ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+            w.id = g, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!p, w.async = !!y, w.onload = o, ("body" === b ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
           }
         },
         l = function(e) {
@@ -182,14 +182,14 @@ try {
             throw Error("GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider")
           }
         }),
-        d = f.Consumer;
+        p = f.Consumer;
 
-      function p(e) {
+      function d(e) {
         var t = e.reCaptchaKey,
           r = e.useEnterprise,
           c = void 0 !== r && r,
-          d = e.useRecaptchaNet,
-          p = void 0 !== d && d,
+          p = e.useRecaptchaNet,
+          d = void 0 !== p && p,
           y = e.scriptProps,
           m = e.language,
           h = e.container,
@@ -216,7 +216,7 @@ try {
                 render: (null == h ? void 0 : h.element) ? "explicit" : t,
                 onLoadCallbackName: r,
                 useEnterprise: c,
-                useRecaptchaNet: p,
+                useRecaptchaNet: d,
                 scriptProps: y,
                 language: m,
                 onLoad: function() {
@@ -236,7 +236,7 @@ try {
               }
           }
           l("<GoogleReCaptchaProvider /> recaptcha key not provided")
-        }), [c, p, S, E, m, t, null == h ? void 0 : h.element]);
+        }), [c, d, S, E, m, t, null == h ? void 0 : h.element]);
         var T = (0, o.useCallback)((function(e) {
             if (!v || !v.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
             return v.execute(C.current, {
@@ -572,7 +572,7 @@ try {
         },
         Z = function(e) {
           var t = function(t) {
-            return a().createElement(d, null, (function(r) {
+            return a().createElement(p, null, (function(r) {
               return a().createElement(e, i({}, t, {
                 googleReCaptchaProps: r
               }))

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "6ef5b32a-3434-48e8-8cc3-76f19fbb4755", e._sentryDebugIdIdentifier = "sentry-dbid-6ef5b32a-3434-48e8-8cc3-76f19fbb4755")
+    n = (new e.Error).stack;
+  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "6ef5b32a-3434-48e8-8cc3-76f19fbb4755", e._sentryDebugIdIdentifier = "sentry-dbid-6ef5b32a-3434-48e8-8cc3-76f19fbb4755")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,26 +13,26 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [6019], {
-    7959: (e, a, n) => {
+    7959: (e, n, a) => {
       "use strict";
-      n.d(a, {
+      a.d(n, {
         A: () => o
       });
-      var i = n(42295),
-        t = n(62229);
-      (0, n(81788).createDevLocaleHook)({
+      var i = a(42295),
+        t = a(62229);
+      (0, a(81788).createDevLocaleHook)({
         us: {
           legacy_header_cta_href_reddeadredemption: "./?section=order"
         }
       });
-      var d = n(95966);
+      var d = a(95966);
       const l = (0, d.makeVar)({
           brand: null,
           headerHidden: !1
         }),
-        r = (e, a) => l({
+        r = (e, n) => l({
           ...l(),
-          [e]: a
+          [e]: n
         }),
         s = () => {
           const e = (0, d.useReactiveVar)(l);
@@ -41,44 +41,44 @@ try {
             state: e
           }
         };
-      n(31445);
+      a(31445);
       const o = ({
         children: e,
-        brandStyles: a,
-        setHeaderHidden: n
+        brandStyles: n,
+        setHeaderHidden: a
       }) => {
         const {
           setState: d
         } = s();
         return (0, t.useLayoutEffect)((() => {
-          d("brand", a)
+          d("brand", n)
         }), []), (0, i.jsx)("div", {
           className: "rockstargames-sites-legacybdf41fef2e2c09dce092e29717248436",
-          "data-brand": a,
+          "data-brand": n,
           children: e
         })
       }
     },
-    33373: (e, a, n) => {
+    33373: (e, n, a) => {
       "use strict";
-      n.d(a, {
+      a.d(n, {
         A: () => k
       });
-      var i = n(42295),
-        t = n(62229),
-        d = n(9623),
-        l = n(72408),
-        r = n(34100),
-        s = n(12294),
-        o = n(92440),
-        c = n(95966),
-        u = n(31879),
-        f = n(98260),
-        m = n(392);
+      var i = a(42295),
+        t = a(62229),
+        d = a(9623),
+        l = a(72408),
+        r = a(34100),
+        s = a(12294),
+        o = a(92440),
+        c = a(95966),
+        u = a(31879),
+        f = a(98260),
+        m = a(392);
       const k = (0, c.withTranslations)((({
         t: e
       }) => {
-        const [, a] = (0, s.h)(), [n, k] = (0, d.useSearchParams)(), {
+        const [, n] = (0, s.h)(), [a, k] = (0, d.useSearchParams)(), {
           pathname: v
         } = (0, d.useLocation)(), {
           data: b,
@@ -90,8 +90,8 @@ try {
           setTitleDataPath: "metaUrlInfo.title"
         }), g = (0, c.useLocale)(), p = b?.metaUrlInfo?.tina;
         return (0, t.useEffect)((() => {
-          const t = n.get("video");
-          if (!t || !p) return void a(null);
+          const t = a.get("video");
+          if (!t || !p) return void n(null);
           const d = Number(p?.payload?.content[0].content[0]?.tag ?? 0);
           let l;
           l = 40 === d && "ru_ru" === g ? "en_us" : g;
@@ -107,7 +107,7 @@ try {
               left: window.innerWidth / 2,
               top: window.innerHeight / 2
             };
-          a({
+          n({
             content: r,
             rect: s,
             onClose: () => {
@@ -116,7 +116,7 @@ try {
             title: "Video Modal",
             contentClassName: "rockstargames-sites-legacyc5573c7aa0bd0a87733a56baa8e82d49"
           })
-        }), [n.get("video"), g, p]), (0, t.useEffect)((() => () => a(null)), []), y || p ? y ? (0, i.jsx)("div", {
+        }), [a.get("video"), g, p]), (0, t.useEffect)((() => () => n(null)), []), y || p ? y ? (0, i.jsx)("div", {
           className: "rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56",
           children: (0, i.jsx)(l.A, {})
         }) : (0, i.jsx)(o.TinaParser, {
@@ -125,17 +125,17 @@ try {
         }) : (0, i.jsx)(r.A, {})
       }))
     },
-    86019: (e, a, n) => {
+    86019: (e, n, a) => {
       "use strict";
-      n.r(a), n.d(a, {
+      a.r(n), a.d(n, {
         default: () => o
       });
-      var i = n(42295),
-        t = n(9623),
-        d = n(34100),
-        l = n(57386),
-        r = n(33373),
-        s = n(7959);
+      var i = a(42295),
+        t = a(9623),
+        d = a(34100),
+        l = a(57386),
+        r = a(33373),
+        s = a(7959);
       const o = (0, l.A)((() => {
         const e = [{
           path: "/",
@@ -158,7 +158,7 @@ try {
       }))
     },
     98260: e => {
-      var a = {
+      var n = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -369,21 +369,21 @@ try {
         }
       };
 
-      function n(e, a) {
-        if ("FragmentSpread" === e.kind) a.add(e.name.value);
+      function a(e, n) {
+        if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var i = e.type;
-          "NamedType" === i.kind && a.add(i.name.value)
+          "NamedType" === i.kind && n.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          n(e, a)
+          a(e, n)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          n(e, a)
+          a(e, n)
         })), e.definitions && e.definitions.forEach((function(e) {
-          n(e, a)
+          a(e, n)
         }))
       }
-      a.loc.source = {
+      n.loc.source = {
         body: "query MetaUrlInfo($url: String, $locale: String!, $cache: Boolean = true) {\n    metaUrlInfo(url: $url, locale: $locale, cache: $cache) {\n        url\n        title\n        description\n        id\n        keywords\n        tina {\n            payload\n            variables {\n                keys\n            }\n        }\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
@@ -393,24 +393,24 @@ try {
       };
       var i = {};
 
-      function t(e, a) {
-        for (var n = 0; n < e.definitions.length; n++) {
-          var i = e.definitions[n];
-          if (i.name && i.name.value == a) return i
+      function t(e, n) {
+        for (var a = 0; a < e.definitions.length; a++) {
+          var i = e.definitions[a];
+          if (i.name && i.name.value == n) return i
         }
       }
-      a.definitions.forEach((function(e) {
+      n.definitions.forEach((function(e) {
         if (e.name) {
-          var a = new Set;
-          n(e, a), i[e.name.value] = a
+          var n = new Set;
+          a(e, n), i[e.name.value] = n
         }
-      })), e.exports = a, e.exports.MetaUrlInfo = function(e, a) {
-        var n = {
+      })), e.exports = n, e.exports.MetaUrlInfo = function(e, n) {
+        var a = {
           kind: e.kind,
-          definitions: [t(e, a)]
+          definitions: [t(e, n)]
         };
-        e.hasOwnProperty("loc") && (n.loc = e.loc);
-        var d = i[a] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var d = i[n] || new Set,
           l = new Set,
           r = new Set;
         for (d.forEach((function(e) {
@@ -423,11 +423,11 @@ try {
             })))
           }))
         }
-        return l.forEach((function(a) {
-          var i = t(e, a);
-          i && n.definitions.push(i)
-        })), n
-      }(a, "MetaUrlInfo")
+        return l.forEach((function(n) {
+          var i = t(e, n);
+          i && a.definitions.push(i)
+        })), a
+      }(n, "MetaUrlInfo")
     }
   }
 ]);

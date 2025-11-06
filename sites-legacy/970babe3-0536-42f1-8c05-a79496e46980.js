@@ -13,28 +13,28 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [439], {
-    10439: (e, a, d) => {
-      function n(e) {
-        var a, d, t = "";
-        if ("string" == typeof e || "number" == typeof e) t += e;
+    10439: (e, a, n) => {
+      function t(e) {
+        var a, n, d = "";
+        if ("string" == typeof e || "number" == typeof e) d += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
             var s = e.length;
-            for (a = 0; a < s; a++) e[a] && (d = n(e[a])) && (t && (t += " "), t += d)
+            for (a = 0; a < s; a++) e[a] && (n = t(e[a])) && (d && (d += " "), d += n)
           } else
-            for (d in e) e[d] && (t && (t += " "), t += d);
-        return t
+            for (n in e) e[n] && (d && (d += " "), d += n);
+        return d
       }
 
-      function t() {
-        for (var e, a, d = 0, t = "", s = arguments.length; d < s; d++)(e = arguments[d]) && (a = n(e)) && (t && (t += " "), t += a);
-        return t
+      function d() {
+        for (var e, a, n = 0, d = "", s = arguments.length; n < s; n++)(e = arguments[n]) && (a = t(e)) && (d && (d += " "), d += a);
+        return d
       }
-      d.r(a), d.d(a, {
-        clsx: () => t,
+      n.r(a), n.d(a, {
+        clsx: () => d,
         default: () => s
       });
-      const s = t
+      const s = d
     }
   }
 ]);

@@ -34,20 +34,20 @@ try {
           d = u.style,
           f = u.numeric,
           v = u.pluralRules,
-          y = u.numberFormat,
-          p = s;
-        "short" === d ? p = "".concat(s, "-short") : "narrow" === d && (p = "".concat(s, "-narrow")), p in c || (p = s);
-        var b = c[p];
-        if ("auto" === f && (0, r.ToString)(t) in b) return [{
+          b = u.numberFormat,
+          y = s;
+        "short" === d ? y = "".concat(s, "-short") : "narrow" === d && (y = "".concat(s, "-narrow")), y in c || (y = s);
+        var p = c[y];
+        if ("auto" === f && (0, r.ToString)(t) in p) return [{
           type: "literal",
-          value: b[(0, r.ToString)(t)]
+          value: p[(0, r.ToString)(t)]
         }];
         var m = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
-        var g = b[m],
-          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
+        var g = p[m],
+          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: y.format(Math.abs(t)),
+            value: b.format(Math.abs(t)),
             unit: a
           }],
           h = g[v.select(t)];
@@ -177,17 +177,17 @@ try {
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
         var v = (0, r.CanonicalizeLocaleList)(t),
-          y = Object.create(null),
-          p = (0, r.CoerceOptionsToObject)(a),
-          b = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        y.localeMatcher = b;
-        var m = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
+          b = Object.create(null),
+          y = (0, r.CoerceOptionsToObject)(a),
+          p = (0, r.GetOption)(y, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        b.localeMatcher = p;
+        var m = (0, r.GetOption)(y, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
-        y.nu = m;
-        var g = (0, n.ResolveLocale)(s, v, y, u, c, d),
+        b.nu = m;
+        var g = (0, n.ResolveLocale)(s, v, b, u, c, d),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(y, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(y, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };

@@ -17,8 +17,8 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => p,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
@@ -45,8 +45,8 @@ try {
         u = "Télécharger",
         h = "Télécharger",
         L = "Ouvrir l'image dans la lightbox",
-        p = "Image de la lightbox",
-        f = "Text alternatif : {alt}",
+        f = "Image de la lightbox",
+        p = "Text alternatif : {alt}",
         c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
@@ -61,8 +61,8 @@ try {
           Lightbox_Download_Button_Label: u,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
-          Lightbox_Dialog_Title: p,
-          Lightbox_Dialog_Description: f
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: p
         }
     }
   }

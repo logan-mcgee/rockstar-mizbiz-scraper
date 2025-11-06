@@ -51,7 +51,7 @@ try {
     },
     64324: (e, s, a) => {
       a.r(s), a.d(s, {
-        default: () => p
+        default: () => f
       });
       var t = a(42295),
         r = a(62229),
@@ -114,19 +114,19 @@ try {
         {
           host: b
         } = (0, o.getConfigForDomain)(),
-        p = (0, c.withIntl)((() => {
+        f = (0, c.withIntl)((() => {
           const e = (0, c.useIntl)(),
             {
               track: s
             } = (0, n.useGtmTrack)(),
             [a, k] = (0, r.useState)(""),
-            p = `https://${b}.rockstargames.com/settings/email`,
-            f = (0, o.useRockstarTokenPing)(),
+            f = `https://${b}.rockstargames.com/settings/email`,
+            p = (0, o.useRockstarTokenPing)(),
             [g] = (0, i.useSearchParams)(),
             h = {
               event: "cta_other",
               text: u.email_settings_cta.defaultMessage,
-              link_url: p,
+              link_url: f,
               element_placement: "unsubscribe"
             },
             x = {
@@ -140,7 +140,7 @@ try {
                   fetchOptions: {
                     method: "POST"
                   },
-                  pingBearer: f,
+                  pingBearer: p,
                   requireBearerToken: !1,
                   query: {
                     token: e
@@ -171,7 +171,7 @@ try {
                 })]
               }), (0, t.jsx)("div", {
                 children: (0, t.jsx)(d.A, {
-                  to: p,
+                  to: f,
                   onClick: h ? () => s({
                     ...h
                   }) : () => {},

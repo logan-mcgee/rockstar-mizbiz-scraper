@@ -18,7 +18,7 @@ try {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => f
+        useInView: () => b
       });
       var n = i(62229),
         r = Object.defineProperty,
@@ -164,16 +164,16 @@ try {
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...f
+            ...b
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...f
+            ...b
           }, e)
         }
       };
 
-      function f({
+      function b({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -186,18 +186,18 @@ try {
         onChange: h
       } = {}) {
         var u;
-        const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+        const [b, p] = n.useState(null), f = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        b.current = h, n.useEffect((() => {
-          if (a || !f) return;
+        f.current = h, n.useEffect((() => {
+          if (a || !b) return;
           let n;
-          return n = c(f, ((e, t) => {
+          return n = c(b, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), f.current && f.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }), {
             root: s,
             rootMargin: r,
@@ -207,10 +207,10 @@ try {
           }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, f, s, r, o, a, i, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
+        b || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!d,
           entry: void 0
         }));

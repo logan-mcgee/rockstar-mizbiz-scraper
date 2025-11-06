@@ -151,17 +151,17 @@ try {
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
         var y = (0, r.CanonicalizeLocaleList)(t),
-          p = Object.create(null),
-          v = (0, r.CoerceOptionsToObject)(a),
-          m = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        p.localeMatcher = m;
-        var b = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        p.nu = b;
-        var g = (0, n.ResolveLocale)(s, y, p, u, c, d),
+          b = Object.create(null),
+          p = (0, r.CoerceOptionsToObject)(a),
+          v = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        b.localeMatcher = v;
+        var m = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
+        b.nu = m;
+        var g = (0, n.ResolveLocale)(s, y, b, u, c, d),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(v, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(v, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var T = c[g.dataLocale];
         return (0, r.invariant)(!!T, "Missing locale data for ".concat(g.dataLocale)), f.fields = T, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
@@ -198,20 +198,20 @@ try {
           d = u.style,
           f = u.numeric,
           y = u.pluralRules,
-          p = u.numberFormat,
-          v = s;
-        "short" === d ? v = "".concat(s, "-short") : "narrow" === d && (v = "".concat(s, "-narrow")), v in c || (v = s);
-        var m = c[v];
-        if ("auto" === f && (0, r.ToString)(t) in m) return [{
+          b = u.numberFormat,
+          p = s;
+        "short" === d ? p = "".concat(s, "-short") : "narrow" === d && (p = "".concat(s, "-narrow")), p in c || (p = s);
+        var v = c[p];
+        if ("auto" === f && (0, r.ToString)(t) in v) return [{
           type: "literal",
-          value: m[(0, r.ToString)(t)]
+          value: v[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = m[b],
-          w = "function" == typeof p.formatToParts ? p.formatToParts(Math.abs(t)) : [{
+        var m = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
+        var g = v[m],
+          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: p.format(Math.abs(t)),
+            value: b.format(Math.abs(t)),
             unit: a
           }],
           h = g[y.select(t)];

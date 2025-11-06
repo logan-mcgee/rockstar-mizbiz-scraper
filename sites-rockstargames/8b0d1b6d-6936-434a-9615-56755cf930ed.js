@@ -19,8 +19,8 @@ try {
         US: () => n,
         xW: () => o,
         HZ: () => l,
-        X6: () => s,
-        yU: () => c
+        X6: () => c,
+        yU: () => s
       });
       var a = {
           mobile: "screen and (max-width: 1023px)",
@@ -43,8 +43,8 @@ try {
           typography: "foundry_nu8bkp3"
         },
         l = "--foundry-platform-scales-ratio-65afb887",
-        s = "foundry_nu8bkp4",
-        c = "foundry_nu8bkp3"
+        c = "foundry_nu8bkp4",
+        s = "foundry_nu8bkp3"
     },
     33736: (e, t, r) => {
       r.d(t, {
@@ -57,7 +57,7 @@ try {
         n = (r(10131), r(39447)),
         o = r(62229),
         l = r(4218);
-      const s = (0, o.createContext)({
+      const c = (0, o.createContext)({
           colorScheme: "dark",
           defaultColorScheme: "dark",
           contrastMode: "normal",
@@ -68,7 +68,7 @@ try {
           platformScaleBreakpoints: l.Cb,
           locale: "en-US"
         }),
-        c = () => (0, o.useContext)(s),
+        s = () => (0, o.useContext)(c),
         d = () => {
           const {
             colorScheme: e,
@@ -78,9 +78,9 @@ try {
             platformScale: n,
             defaultPlatformScale: o,
             platformScaleRatios: l,
-            platformScaleBreakpoints: s,
+            platformScaleBreakpoints: c,
             locale: d
-          } = c();
+          } = s();
           return {
             colorScheme: e,
             defaultColorScheme: t,
@@ -89,20 +89,20 @@ try {
             platformScale: n,
             defaultPlatformScale: o,
             platformScaleRatios: l,
-            platformScaleBreakpoints: s,
+            platformScaleBreakpoints: c,
             locale: d
           }
         },
         i = () => {
           const {
             platformScale: e
-          } = c();
+          } = s();
           return e
         },
         f = () => {
           const {
             locale: e
-          } = c();
+          } = s();
           return e
         };
       var u = r(37792);
@@ -114,13 +114,13 @@ try {
         const a = e => u.X || !window.matchMedia ? t : window.matchMedia(e).matches,
           [n, l] = (0, o.useState)((() => r ? a(e) : t));
 
-        function s() {
+        function c() {
           l(a(e))
         }
         return (0, o.useEffect)((() => {
           const t = window.matchMedia?.(e);
-          return s(), t?.addListener ? t?.addListener(s) : t?.addEventListener("change", s), () => {
-            t?.removeListener ? t?.removeListener(s) : t?.removeEventListener("change", s)
+          return c(), t?.addListener ? t?.addListener(c) : t?.addEventListener("change", c), () => {
+            t?.removeListener ? t?.removeListener(c) : t?.removeEventListener("change", c)
           }
         }), [e]), n
       }
@@ -148,7 +148,7 @@ try {
           children: e,
           className: t,
           container: r = y(),
-          asChild: c,
+          asChild: s,
           colorScheme: d,
           defaultColorScheme: i,
           contrastMode: f,
@@ -183,35 +183,35 @@ try {
                   ...e.platformScaleBreakpoints
                 })), [e.platformScaleBreakpoints]),
                 [a, n] = (0, o.useState)(e.platformScale || e.defaultPlatformScale),
-                s = (0, o.useCallback)((t => {
+                c = (0, o.useCallback)((t => {
                   n(t), e.onPlatformScaleChange?.(t)
                 }), [e.onPlatformScaleChange]),
-                c = (0, o.useRef)([]),
+                s = (0, o.useRef)([]),
                 d = () => {
                   if (!S.X3) {
                     for (const {
                         handler: e,
                         matchMedia: t
                       }
-                      of c.current) t.removeEventListener("change", e);
-                    c.current = []
+                      of s.current) t.removeEventListener("change", e);
+                    s.current = []
                   }
                 };
-              return (0, o.useEffect)((() => (e.platformScale ? s(e.platformScale) : (() => {
+              return (0, o.useEffect)((() => (e.platformScale ? c(e.platformScale) : (() => {
                 if (!S.X3) {
                   d();
                   for (const e in r) {
                     const t = window.matchMedia(r[e]),
                       a = t => {
-                        t.matches && s(e)
+                        t.matches && c(e)
                       };
-                    t.addEventListener("change", a), t.matches && s(e), c.current.push({
+                    t.addEventListener("change", a), t.matches && c(e), s.current.push({
                       handler: a,
                       matchMedia: t
                     })
                   }
                 }
-              })(), d)), [r, e.platformScale, s]), {
+              })(), d)), [r, e.platformScale, c]), {
                 scale: a,
                 ratio: t[a]
               }
@@ -234,10 +234,10 @@ try {
               defaultContrastMode: a = "normal"
             }) {
               const n = p("(prefers-color-scheme: light)"),
-                s = p("(prefers-color-scheme: dark)"),
-                c = p("(prefers-contrast: more)"),
-                d = "system" !== e && e || n && "light" || s && "dark" || t,
-                i = r || c && "more" || a,
+                c = p("(prefers-color-scheme: dark)"),
+                s = p("(prefers-contrast: more)"),
+                d = "system" !== e && e || n && "light" || c && "dark" || t,
+                i = r || s && "more" || a,
                 f = (0, o.useMemo)((() => h(d, i)), [d, i]),
                 u = (0, o.useMemo)((() => ((e, t) => {
                   const r = h(e, t);
@@ -261,18 +261,18 @@ try {
             appearanceClass: r,
             otherAppearanceClasses: a,
             locale: n,
-            className: s
+            className: c
           }) => {
-            const c = m(s),
+            const s = m(c),
               d = m(e.current);
             (0, o.useEffect)((() => {
-              e.current?.classList.contains(l.X6) || e.current?.classList.add(l.X6), e.current?.classList.contains(l.yU) || e.current?.classList.add(l.yU), e.current?.classList.add(r), e.current?.classList.remove(...a), c && s && e.current?.classList.contains(c) ? e.current?.classList.replace(c, s) : c && !s && e.current?.classList.contains(c) ? e.current?.classList.remove(c) : s && e.current?.classList.add(s)
-            }), [r, s]), (0, o.useEffect)((() => {
+              e.current?.classList.contains(l.X6) || e.current?.classList.add(l.X6), e.current?.classList.contains(l.yU) || e.current?.classList.add(l.yU), e.current?.classList.add(r), e.current?.classList.remove(...a), s && c && e.current?.classList.contains(s) ? e.current?.classList.replace(s, c) : s && !c && e.current?.classList.contains(s) ? e.current?.classList.remove(s) : c && e.current?.classList.add(c)
+            }), [r, c]), (0, o.useEffect)((() => {
               e.current?.setAttribute("lang", n)
             }), [n]), (0, o.useEffect)((() => {
               e.current?.style.setProperty(l.HZ, t.toString())
             }), [t]), (0, o.useEffect)((() => {
-              d?.classList.remove(l.X6), d?.classList.remove(l.yU), d?.classList.remove(r), d?.style.removeProperty(l.HZ), s && d?.classList.remove(s)
+              d?.classList.remove(l.X6), d?.classList.remove(l.yU), d?.classList.remove(r), d?.style.removeProperty(l.HZ), c && d?.classList.remove(c)
             }), [d])
           })({
             locale: w,
@@ -280,8 +280,8 @@ try {
             appearanceClass: P,
             otherAppearanceClasses: W,
             currentScale: E,
-            container: c ? x : L
-          }), (0, a.jsx)(s.Provider, {
+            container: s ? x : L
+          }), (0, a.jsx)(c.Provider, {
             value: {
               locale: w,
               defaultColorScheme: i,
@@ -293,7 +293,7 @@ try {
               platformScaleRatios: b,
               platformScaleBreakpoints: g
             },
-            children: c ? (0, a.jsx)(n.DX, {
+            children: s ? (0, a.jsx)(n.DX, {
               ref: _,
               children: e
             }) : e
@@ -302,7 +302,7 @@ try {
     },
     39447: (e, t, r) => {
       r.d(t, {
-        DX: () => s,
+        DX: () => c,
         Dc: () => i,
         TL: () => l,
         xV: () => f
@@ -312,15 +312,15 @@ try {
         o = r(42295);
 
       function l(e) {
-        const t = c(e),
+        const t = s(e),
           r = a.forwardRef(((e, r) => {
             const {
               children: n,
               ...l
-            } = e, s = a.Children.toArray(n), c = s.find(u);
-            if (c) {
-              const e = c.props.children,
-                n = s.map((t => t === c ? a.Children.count(e) > 1 ? a.Children.only(null) : a.isValidElement(e) ? e.props.children : null : t));
+            } = e, c = a.Children.toArray(n), s = c.find(u);
+            if (s) {
+              const e = s.props.children,
+                n = c.map((t => t === s ? a.Children.count(e) > 1 ? a.Children.only(null) : a.isValidElement(e) ? e.props.children : null : t));
               return (0, o.jsx)(t, {
                 ...l,
                 ref: r,
@@ -335,9 +335,9 @@ try {
           }));
         return r.displayName = `${e}.Slot`, r
       }
-      var s = l("Slot");
+      var c = l("Slot");
 
-      function c(e) {
+      function s(e) {
         const t = a.forwardRef(((e, t) => {
           const {
             children: r,

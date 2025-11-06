@@ -44,8 +44,8 @@ try {
         s = m(r(97465)),
         i = m(r(11524)),
         l = m(r(52321)),
-        d = m(r(92701)),
-        c = m(r(51364)),
+        c = m(r(92701)),
+        d = m(r(51364)),
         u = m(r(34738)),
         f = r(96143);
 
@@ -62,7 +62,7 @@ try {
       function h(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var g = function(e) {
+      var b = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -76,7 +76,7 @@ try {
             ready: !1
           }, r.handleWindowResize = function() {
             r.process()
-          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), r.handleWindowResize = (0, c.default)(r.handleWindowResize, e.throttle), r
+          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), r.handleWindowResize = (0, d.default)(r.handleWindowResize, e.throttle), r
         }
         return function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -114,26 +114,26 @@ try {
               o = t.forceSingleModeWidth,
               s = t.onReady,
               i = this._parent,
-              c = this._child,
+              d = this._child,
               m = (0, f.innerWidth)(i),
-              g = (0, f.innerHeight)(i);
-            if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              b = (0, f.innerHeight)(i);
+            if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (m <= 0 || isNaN(m)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, u.default)();
-              this.pid = b;
+              var g = (0, u.default)();
+              this.pid = g;
               var w = function() {
-                  return b !== e.pid
+                  return g !== e.pid
                 },
                 y = "multi" === a ? function() {
-                  return h(c, g)
+                  return h(d, b)
                 } : function() {
-                  return p(c, m)
+                  return p(d, m)
                 },
                 v = "multi" === a ? function() {
-                  return p(c, m)
+                  return p(d, m)
                 } : function() {
-                  return h(c, g)
+                  return h(d, b)
                 },
                 x = void 0,
                 k = r,
@@ -141,7 +141,7 @@ try {
               this.setState({
                 ready: !1
               }), (0, l.default)([function(t) {
-                return (0, d.default)((function() {
+                return (0, c.default)((function() {
                   return k <= _
                 }), (function(t) {
                   if (w()) return t(!0);
@@ -152,14 +152,14 @@ try {
                   }))
                 }), t)
               }, function(t) {
-                return "single" === a && o || v() ? t() : (k = r, _ = x, (0, d.default)((function() {
+                return "single" === a && o || v() ? t() : (k = r, _ = x, (0, c.default)((function() {
                   return k < _
                 }), (function(t) {
                   if (w()) return t(!0);
                   x = parseInt((k + _) / 2, 10), e.setState({
                     fontSize: x
                   }, (function() {
-                    return b !== e.pid ? t(!0) : (v() ? k = x + 1 : _ = x - 1, t())
+                    return g !== e.pid ? t(!0) : (v() ? k = x + 1 : _ = x - 1, t())
                   }))
                 }), t))
               }, function(t) {
@@ -190,11 +190,11 @@ try {
                 for (var n in e) t.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (r[n] = e[n]);
                 return r
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
-              d = this.state,
-              c = d.fontSize,
-              u = d.ready,
+              c = this.state,
+              d = c.fontSize,
+              u = c.ready,
               f = n({}, s, {
-                fontSize: c
+                fontSize: d
               }),
               m = {
                 display: u ? "block" : "inline-block"
@@ -213,7 +213,7 @@ try {
           }
         }]), t
       }(o.default.Component);
-      g.propTypes = {
+      b.propTypes = {
         children: s.default.node,
         text: s.default.string,
         min: s.default.number,
@@ -222,7 +222,7 @@ try {
         forceSingleModeWidth: s.default.bool,
         throttle: s.default.number,
         onReady: s.default.func
-      }, g.defaultProps = {
+      }, b.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -230,7 +230,7 @@ try {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = g
+      }, t.default = b
     },
     4407: (e, t, r) => {
       "use strict";
@@ -248,17 +248,17 @@ try {
           style: s
         }) => {
           const [i, l] = (0, o.usePreloadImg)(a);
-          let d = a;
-          !1 === i && ("rockstargames-modules-core-newswire-articlea6a06e2d5c4f1811ea39d17312ca2e67" === t && (d = r(28839)), d = r(9333));
+          let c = a;
+          !1 === i && ("rockstargames-modules-core-newswire-articlea6a06e2d5c4f1811ea39d17312ca2e67" === t && (c = r(28839)), c = r(9333));
           const {
-            width: c,
+            width: d,
             height: u
           } = l, f = {
-            "--aspect-ratio": Number.isNaN(c / u) ? "" : c / u,
+            "--aspect-ratio": Number.isNaN(d / u) ? "" : d / u,
             ...s
           };
           return (0, n.jsx)("img", {
-            src: d,
+            src: c,
             className: t ?? "",
             alt: e,
             style: f
@@ -268,16 +268,16 @@ try {
           className: e,
           style: t = {},
           image: l = {},
-          imageStyle: d = {}
+          imageStyle: c = {}
         }) => {
           let {
-            alt: c,
+            alt: d,
             src: u
           } = (0, a.S1)(l);
           const {
             isMobile: f
           } = (0, o.useWindowResize)();
-          u.desktop || u.mobile || (c = "", u = {
+          u.desktop || u.mobile || (d = "", u = {
             mobile: r(28839),
             desktop: r(9333)
           });
@@ -287,11 +287,11 @@ try {
             style: t,
             children: (0, n.jsx)(i, {
               style: {
-                ...d,
+                ...c,
                 ...l?.style
               },
               src: f ? u.mobile || u.desktop : u?.desktop || u?.mobile,
-              alt: c,
+              alt: d,
               className: e
             })
           })
@@ -316,8 +316,8 @@ try {
         s = r(4572),
         i = r.n(s),
         l = r(84927),
-        d = r(4407);
-      const c = ({
+        c = r(4407);
+      const d = ({
           hero: e,
           children: t
         }) => e ? (0, n.jsx)("div", {
@@ -334,9 +334,9 @@ try {
           className: m = "",
           attributes: p = {},
           role: h,
-          hero: g = !1
+          hero: b = !1
         }) => {
-          const b = (0, a.useMemo)((() => {
+          const g = (0, a.useMemo)((() => {
             if (u?.badge || u?.discountTxt || e || r) return (0, n.jsx)(l.A, {
               badge: u?.discountTxt ?? u?.badge ?? e ?? r,
               badgeType: t,
@@ -344,20 +344,20 @@ try {
               role: u?.role ?? h
             })
           }), [e, t, r, u, h, s]);
-          return (0, n.jsx)(c, {
-            hero: g,
+          return (0, n.jsx)(d, {
+            hero: b,
             children: (0, n.jsx)("figure", {
               children: (0, n.jsxs)("div", {
-                className: i()("rockstargames-modules-core-newswire-articled9ac792281efe15bcd4589b028d1c27b", g ? "rockstargames-modules-core-newswire-articlee430c4662cd185f58259d4a8d8b322de" : "", p?.hiddenMobile ? "hiddenMobile" : "", p?.hiddenLarge ? "hiddenLarge" : "", p?.className, m),
+                className: i()("rockstargames-modules-core-newswire-articled9ac792281efe15bcd4589b028d1c27b", b ? "rockstargames-modules-core-newswire-articlee430c4662cd185f58259d4a8d8b322de" : "", p?.hiddenMobile ? "hiddenMobile" : "", p?.hiddenLarge ? "hiddenLarge" : "", p?.className, m),
                 style: (0, o.safeStyles)({
                   ...f,
                   ...p?.style
                 }),
                 ...p,
-                children: [(0, n.jsx)(d.A, {
+                children: [(0, n.jsx)(c.A, {
                   image: u,
                   className: m
-                }), b, u?.caption && (0, n.jsx)("figcaption", {
+                }), g, u?.caption && (0, n.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: u.caption
                   }
@@ -399,8 +399,8 @@ try {
         C1: () => l,
         S1: () => i,
         XC: () => f,
-        jS: () => d,
-        qg: () => c,
+        jS: () => c,
+        qg: () => d,
         z0: () => u
       });
       var n = r(62229),
@@ -420,16 +420,16 @@ try {
           desktop: r = null,
           ariaLabel: i = null,
           sources: l = null,
-          prod: d = null
+          prod: c = null
         }) => {
-          const c = (0, a.useLocale)(),
+          const d = (0, a.useLocale)(),
             {
               meta: u = {}
             } = (0, o.i)() ?? {},
-            [f, m] = (0, n.useState)(d ?? u?.cdn ?? u?.prod ?? !0);
+            [f, m] = (0, n.useState)(c ?? u?.cdn ?? u?.prod ?? !0);
           (0, n.useEffect)((() => {
-            m(d ?? u?.cdn ?? u?.prod ?? !0)
-          }), [d, u]);
+            m(c ?? u?.cdn ?? u?.prod ?? !0)
+          }), [c, u]);
           const p = (0, n.useCallback)((e => {
             const t = null !== l,
               r = e?.previewSrc ?? e ?? null;
@@ -442,8 +442,8 @@ try {
             alt: e,
             ariaLabel: i,
             src: {
-              mobile: p(l?.[c]?.mobile ?? l?.en_us?.mobile ?? t),
-              desktop: p(l?.[c]?.desktop ?? l?.en_us?.desktop ?? r)
+              mobile: p(l?.[d]?.mobile ?? l?.en_us?.mobile ?? t),
+              desktop: p(l?.[d]?.desktop ?? l?.en_us?.desktop ?? r)
             }
           }
         },
@@ -457,7 +457,7 @@ try {
             l(r?.cdn ?? r?.prod ?? !1)
           }), [r]), e ? e?.startsWith("http") ? s(e) : s(`${(0,a.getCdnPrefix)(i)}${e}`) : null
         },
-        d = () => {
+        c = () => {
           const e = (0, o.i)() ?? {},
             {
               meta: t = {}
@@ -468,7 +468,7 @@ try {
             return e ? e?.startsWith("http") ? s(e) : s(`${(0,a.getCdnPrefix)(n)}${e}`) : null
           }), [r])
         },
-        c = e => e.full_src,
+        d = e => e.full_src,
         u = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,a.getCdnPrefix)(!1)}${t}`
@@ -637,11 +637,11 @@ try {
           badge: e,
           badgeType: t,
           role: l,
-          splitter: d
+          splitter: c
         }) => {
-          const c = [];
-          return d ? e.split(d).map(((e, t) => c.push(e))) : c.push(e), (0, n.jsxs)(i, {
-            splitter: d,
+          const d = [];
+          return c ? e.split(c).map(((e, t) => d.push(e))) : d.push(e), (0, n.jsxs)(i, {
+            splitter: c,
             role: l,
             wrapper: e => (0, n.jsx)("div", {
               className: `${s.badge} ${t?s[t]:""} `,
@@ -655,18 +655,18 @@ try {
                 }
               })
             }), (0, n.jsx)(o.A, {
-              className: `${d||l?"":s.badge} ${t?s[t]:""}`,
+              className: `${c||l?"":s.badge} ${t?s[t]:""}`,
               min: 8,
               max: 1e3,
-              mode: d || l ? "single" : "multi",
-              children: c[0]
+              mode: c || l ? "single" : "multi",
+              children: d[0]
             }), (0, n.jsx)(n.Fragment, {
-              children: c.shift() && d && c.length >= 1 && (0, n.jsx)(o.A, {
+              children: d.shift() && c && d.length >= 1 && (0, n.jsx)(o.A, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
                 forceSingleModeWidth: !0,
-                children: c.join(" ")
+                children: d.join(" ")
               })
             })]
           }, "badge-wrapper")
@@ -675,7 +675,7 @@ try {
     89477: (e, t, r) => {
       "use strict";
       r.r(t), r.d(t, {
-        default: () => g
+        default: () => b
       });
       var n = r(42295),
         a = r(62229),
@@ -683,8 +683,8 @@ try {
         s = r(24162),
         i = r(10632),
         l = r(4572),
-        d = r.n(l);
-      const c = {
+        c = r.n(l);
+      const d = {
           active: "rockstargames-modules-core-newswire-articleff176766f8bcd61f0d409caa3d43cdef",
           backgroundContent: "rockstargames-modules-core-newswire-articlefbee414bfae93f3621f4445ff9c4bf7c",
           bottom: "rockstargames-modules-core-newswire-articlee515362b60fbd4b87445a327de93234e",
@@ -707,13 +707,13 @@ try {
           className: r,
           children: a
         }) => (0, n.jsx)("div", {
-          className: d()(r, e ? c.fadeIn : "", t ? c.active : ""),
+          className: c()(r, e ? d.fadeIn : "", t ? d.active : ""),
           children: a
         }),
         f = ({
           currentSlide: e
         }) => (0, n.jsx)("div", {
-          className: c.customPagination,
+          className: d.customPagination,
           children: (0, n.jsx)("span", {
             children: e?.itemName ?? "Item"
           })
@@ -725,7 +725,7 @@ try {
         }) => e && e?.content ? (0, n.jsx)(u, {
           shouldFade: e?.fadeIn,
           condition: e?.fadeIn,
-          className: d()(c.slot, c[t], c[r]),
+          className: c()(d.slot, d[t], d[r]),
           children: (0, n.jsx)(i.A, {
             ...e.content[0]
           })
@@ -735,12 +735,12 @@ try {
           backgroundContent: t,
           foregroundContent: r
         }) => (0, n.jsxs)("div", {
-          className: c.slideContent,
+          className: d.slideContent,
           children: [t && (0, n.jsx)(u, {
             shouldFade: t?.fadeIn,
             condition: e,
             children: (0, n.jsx)("div", {
-              className: c.backgroundContent,
+              className: d.backgroundContent,
               children: (0, n.jsx)(i.A, {
                 ...t.imageWithBadge
               })
@@ -749,7 +749,7 @@ try {
             shouldFade: r?.fadeIn,
             condition: e,
             children: (0, n.jsx)("div", {
-              className: c.foregroundContent,
+              className: d.foregroundContent,
               children: (0, n.jsx)(i.A, {
                 ...r.imageWithBadge
               })
@@ -764,7 +764,7 @@ try {
         }) => {
           const [l, u] = (0, a.useState)(null);
           return i ? (0, n.jsx)("div", {
-            className: c.panoramaCarouselWrapper,
+            className: d.panoramaCarouselWrapper,
             children: (0, n.jsxs)(s.RC, {
               modules: [o.Vx],
               loop: e,
@@ -790,7 +790,7 @@ try {
                 }
               },
               children: [(0, n.jsxs)("div", {
-                className: d()(c.slotContainer, c.top),
+                className: c()(d.slotContainer, d.top),
                 children: [(0, n.jsx)(m, {
                   item: l?.topLeftSlot,
                   vertical: "top",
@@ -812,7 +812,7 @@ try {
                   ...e
                 })
               }, e?.key))), (0, n.jsxs)("div", {
-                className: d()(c.slotContainer, c.bottom),
+                className: c()(d.slotContainer, d.bottom),
                 children: [(0, n.jsx)(m, {
                   item: l?.bottomLeftSlot,
                   vertical: "bottom",
@@ -828,7 +828,7 @@ try {
             })
           }) : null
         },
-        g = ({
+        b = ({
           type: e = null,
           className: t,
           style: r,

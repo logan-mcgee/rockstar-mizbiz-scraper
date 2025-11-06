@@ -19,9 +19,9 @@ try {
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
-        s = Symbol.for("react.provider"),
+        f = Symbol.for("react.provider"),
         c = Symbol.for("react.context"),
-        f = Symbol.for("react.forward_ref"),
+        s = Symbol.for("react.forward_ref"),
         i = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
         d = Symbol.for("react.lazy"),
@@ -69,14 +69,14 @@ try {
       function R(e, t, n) {
         var o, u = {},
           a = null,
-          s = null;
+          f = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (s = t.ref), void 0 !== t.key && (a = "" + t.key), t) k.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
+          for (o in void 0 !== t.ref && (f = t.ref), void 0 !== t.key && (a = "" + t.key), t) k.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
         var c = arguments.length - 2;
         if (1 === c) u.children = n;
         else if (1 < c) {
-          for (var f = Array(c), i = 0; i < c; i++) f[i] = arguments[i + 2];
-          u.children = f
+          for (var s = Array(c), i = 0; i < c; i++) s[i] = arguments[i + 2];
+          u.children = s
         }
         if (e && e.defaultProps)
           for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
@@ -84,7 +84,7 @@ try {
           $$typeof: r,
           type: e,
           key: a,
-          ref: s,
+          ref: f,
           props: u,
           _owner: S.current
         }
@@ -108,11 +108,11 @@ try {
       }
 
       function I(e, t, o, u, a) {
-        var s = typeof e;
-        "undefined" !== s && "boolean" !== s || (e = null);
+        var f = typeof e;
+        "undefined" !== f && "boolean" !== f || (e = null);
         var c = !1;
         if (null === e) c = !0;
-        else switch (s) {
+        else switch (f) {
           case "string":
           case "number":
             c = !0;
@@ -137,14 +137,14 @@ try {
           }
         }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
         if (c = 0, u = "" === u ? "." : u + ":", w(e))
-          for (var f = 0; f < e.length; f++) {
-            var i = u + j(s = e[f], f);
-            c += I(s, t, o, i, a)
+          for (var s = 0; s < e.length; s++) {
+            var i = u + j(f = e[s], s);
+            c += I(f, t, o, i, a)
           } else if (i = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof i)
-            for (e = i.call(e), f = 0; !(s = e.next()).done;) c += I(s = s.value, t, o, i = u + j(s, f++), a);
-          else if ("object" === s) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+            for (e = i.call(e), s = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, i = u + j(f, s++), a);
+          else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return c
       }
 
@@ -211,16 +211,16 @@ try {
         var o = b({}, e.props),
           u = e.key,
           a = e.ref,
-          s = e._owner;
+          f = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, s = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
-          for (f in t) k.call(t, f) && !E.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== c ? c[f] : t[f])
+          if (void 0 !== t.ref && (a = t.ref, f = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
+          for (s in t) k.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== c ? c[s] : t[s])
         }
-        var f = arguments.length - 2;
-        if (1 === f) o.children = n;
-        else if (1 < f) {
-          c = Array(f);
-          for (var i = 0; i < f; i++) c[i] = arguments[i + 2];
+        var s = arguments.length - 2;
+        if (1 === s) o.children = n;
+        else if (1 < s) {
+          c = Array(s);
+          for (var i = 0; i < s; i++) c[i] = arguments[i + 2];
           o.children = c
         }
         return {
@@ -229,7 +229,7 @@ try {
           key: u,
           ref: a,
           props: o,
-          _owner: s
+          _owner: f
         }
       }, t.createContext = function(e) {
         return (e = {
@@ -242,7 +242,7 @@ try {
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: s,
+          $$typeof: f,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {
@@ -254,7 +254,7 @@ try {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: f,
+          $$typeof: s,
           render: e
         }
       }, t.isValidElement = $, t.lazy = function(e) {

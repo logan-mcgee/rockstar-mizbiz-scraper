@@ -20,8 +20,8 @@ try {
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
         f = Symbol.for("react.provider"),
-        c = Symbol.for("react.context"),
-        s = Symbol.for("react.forward_ref"),
+        s = Symbol.for("react.context"),
+        c = Symbol.for("react.forward_ref"),
         i = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
         d = Symbol.for("react.lazy"),
@@ -72,14 +72,14 @@ try {
           f = null;
         if (null != t)
           for (o in void 0 !== t.ref && (f = t.ref), void 0 !== t.key && (a = "" + t.key), t) k.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
-        var c = arguments.length - 2;
-        if (1 === c) u.children = n;
-        else if (1 < c) {
-          for (var s = Array(c), i = 0; i < c; i++) s[i] = arguments[i + 2];
-          u.children = s
+        var s = arguments.length - 2;
+        if (1 === s) u.children = n;
+        else if (1 < s) {
+          for (var c = Array(s), i = 0; i < s; i++) c[i] = arguments[i + 2];
+          u.children = c
         }
         if (e && e.defaultProps)
-          for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
+          for (o in s = e.defaultProps) void 0 === u[o] && (u[o] = s[o]);
         return {
           $$typeof: r,
           type: e,
@@ -110,21 +110,21 @@ try {
       function I(e, t, o, u, a) {
         var f = typeof e;
         "undefined" !== f && "boolean" !== f || (e = null);
-        var c = !1;
-        if (null === e) c = !0;
+        var s = !1;
+        if (null === e) s = !0;
         else switch (f) {
           case "string":
           case "number":
-            c = !0;
+            s = !0;
             break;
           case "object":
             switch (e.$$typeof) {
               case r:
               case n:
-                c = !0
+                s = !0
             }
         }
-        if (c) return a = a(c = e), e = "" === u ? "." + j(c, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
+        if (s) return a = a(s = e), e = "" === u ? "." + j(s, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
           return e
         }))) : null != a && ($(a) && (a = function(e, t) {
           return {
@@ -135,17 +135,17 @@ try {
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
-        if (c = 0, u = "" === u ? "." : u + ":", g(e))
-          for (var s = 0; s < e.length; s++) {
-            var i = u + j(f = e[s], s);
-            c += I(f, t, o, i, a)
+        }(a, o + (!a.key || s && s.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
+        if (s = 0, u = "" === u ? "." : u + ":", g(e))
+          for (var c = 0; c < e.length; c++) {
+            var i = u + j(f = e[c], c);
+            s += I(f, t, o, i, a)
           } else if (i = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof i)
-            for (e = i.call(e), s = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, i = u + j(f, s++), a);
+            for (e = i.call(e), c = 0; !(f = e.next()).done;) s += I(f = f.value, t, o, i = u + j(f, c++), a);
           else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
-        return c
+        return s
       }
 
       function O(e, t, r) {
@@ -213,15 +213,15 @@ try {
           a = e.ref,
           f = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, f = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
-          for (s in t) k.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== c ? c[s] : t[s])
+          if (void 0 !== t.ref && (a = t.ref, f = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var s = e.type.defaultProps;
+          for (c in t) k.call(t, c) && !E.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== s ? s[c] : t[c])
         }
-        var s = arguments.length - 2;
-        if (1 === s) o.children = n;
-        else if (1 < s) {
-          c = Array(s);
-          for (var i = 0; i < s; i++) c[i] = arguments[i + 2];
-          o.children = c
+        var c = arguments.length - 2;
+        if (1 === c) o.children = n;
+        else if (1 < c) {
+          s = Array(c);
+          for (var i = 0; i < c; i++) s[i] = arguments[i + 2];
+          o.children = s
         }
         return {
           $$typeof: r,
@@ -233,7 +233,7 @@ try {
         }
       }, t.createContext = function(e) {
         return (e = {
-          $$typeof: c,
+          $$typeof: s,
           _currentValue: e,
           _currentValue2: e,
           _threadCount: 0,
@@ -254,7 +254,7 @@ try {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: s,
+          $$typeof: c,
           render: e
         }
       }, t.isValidElement = $, t.lazy = function(e) {

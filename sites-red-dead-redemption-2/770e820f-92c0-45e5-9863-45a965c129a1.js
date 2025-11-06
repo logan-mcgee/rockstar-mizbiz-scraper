@@ -44,69 +44,69 @@ try {
         return e = d(e, [0, e[0] >>> 1]), e = d(e = s(e, [4283543511, 3981806797]), [0, e[0] >>> 1]), d(e = s(e, [3301882366, 444984403]), [0, e[0] >>> 1])
       }
 
-      function f(e) {
+      function h(e) {
         return e.length > 32 ? function(e, t) {
           t = t || 0;
           let n, r = (e = e || "").length % 16,
             a = e.length - r,
             i = [0, t],
             o = [0, t],
-            f = [0, 0],
             h = [0, 0],
+            f = [0, 0],
             g = [2277735313, 289559509],
             p = [1291169091, 658871167];
-          for (n = 0; n < a; n += 16) f = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], h = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], f = s(f, g), f = l(f, 31), f = s(f, p), i = d(i, f), i = l(i, 27), i = c(i, o), i = c(s(i, [0, 5]), [0, 1390208809]), h = s(h, p), h = l(h, 33), h = s(h, g), o = d(o, h), o = l(o, 31), o = c(o, i), o = c(s(o, [0, 5]), [0, 944331445]);
-          switch (f = [0, 0], h = [0, 0], r) {
+          for (n = 0; n < a; n += 16) h = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], f = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], h = s(h, g), h = l(h, 31), h = s(h, p), i = d(i, h), i = l(i, 27), i = c(i, o), i = c(s(i, [0, 5]), [0, 1390208809]), f = s(f, p), f = l(f, 33), f = s(f, g), o = d(o, f), o = l(o, 31), o = c(o, i), o = c(s(o, [0, 5]), [0, 944331445]);
+          switch (h = [0, 0], f = [0, 0], r) {
             case 15:
-              h = d(h, u([0, e.charCodeAt(n + 14)], 48));
+              f = d(f, u([0, e.charCodeAt(n + 14)], 48));
               break;
             case 14:
-              h = d(h, u([0, e.charCodeAt(n + 13)], 40));
+              f = d(f, u([0, e.charCodeAt(n + 13)], 40));
               break;
             case 13:
-              h = d(h, u([0, e.charCodeAt(n + 12)], 32));
+              f = d(f, u([0, e.charCodeAt(n + 12)], 32));
               break;
             case 12:
-              h = d(h, u([0, e.charCodeAt(n + 11)], 24));
+              f = d(f, u([0, e.charCodeAt(n + 11)], 24));
               break;
             case 11:
-              h = d(h, u([0, e.charCodeAt(n + 10)], 16));
+              f = d(f, u([0, e.charCodeAt(n + 10)], 16));
               break;
             case 10:
-              h = d(h, u([0, e.charCodeAt(n + 9)], 8));
+              f = d(f, u([0, e.charCodeAt(n + 9)], 8));
               break;
             case 9:
-              h = d(h, [0, e.charCodeAt(n + 8)]), h = s(h, p), h = l(h, 33), h = s(h, g), o = d(o, h);
+              f = d(f, [0, e.charCodeAt(n + 8)]), f = s(f, p), f = l(f, 33), f = s(f, g), o = d(o, f);
               break;
             case 8:
-              f = d(f, u([0, e.charCodeAt(n + 7)], 56));
+              h = d(h, u([0, e.charCodeAt(n + 7)], 56));
               break;
             case 7:
-              f = d(f, u([0, e.charCodeAt(n + 6)], 48));
+              h = d(h, u([0, e.charCodeAt(n + 6)], 48));
               break;
             case 6:
-              f = d(f, u([0, e.charCodeAt(n + 5)], 40));
+              h = d(h, u([0, e.charCodeAt(n + 5)], 40));
               break;
             case 5:
-              f = d(f, u([0, e.charCodeAt(n + 4)], 32));
+              h = d(h, u([0, e.charCodeAt(n + 4)], 32));
               break;
             case 4:
-              f = d(f, u([0, e.charCodeAt(n + 3)], 24));
+              h = d(h, u([0, e.charCodeAt(n + 3)], 24));
               break;
             case 3:
-              f = d(f, u([0, e.charCodeAt(n + 2)], 16));
+              h = d(h, u([0, e.charCodeAt(n + 2)], 16));
               break;
             case 2:
-              f = d(f, u([0, e.charCodeAt(n + 1)], 8));
+              h = d(h, u([0, e.charCodeAt(n + 1)], 8));
               break;
             case 1:
-              f = d(f, [0, e.charCodeAt(n)]), f = s(f, g), f = l(f, 31), f = s(f, p), i = d(i, f)
+              h = d(h, [0, e.charCodeAt(n)]), h = s(h, g), h = l(h, 31), h = s(h, p), i = d(i, h)
           }
           return i = d(i, [0, e.length]), o = d(o, [0, e.length]), i = c(i, o), o = c(o, i), i = m(i), o = m(o), i = c(i, o), o = c(o, i), ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8)
         }(e, 31) : e
       }
 
-      function h(e) {
+      function f(e) {
         const t = [...e];
         return function() {
           const e = [/palemoon/i];
@@ -224,9 +224,9 @@ try {
           return e
         }();
         r.appendChild(i);
-        let f = [];
-        for (let e = 0, t = n.length; e < t; e++) u(m[n[e]]) && f.push(n[e]);
-        return r.removeChild(i), r.removeChild(a), f
+        let h = [];
+        for (let e = 0, t = n.length; e < t; e++) u(m[n[e]]) && h.push(n[e]);
+        return r.removeChild(i), r.removeChild(a), h
       }
       r = e.exports, Object.defineProperty(r, "__esModule", {
         value: !0,
@@ -254,7 +254,7 @@ try {
                 const r = n.components,
                   i = {
                     fp: {
-                      user_agent: f(navigator.userAgent),
+                      user_agent: h(navigator.userAgent),
                       language: navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || "",
                       pixel_ratio: window.devicePixelRatio || "",
                       timezone_offset: (new Date).getTimezoneOffset(),
@@ -265,17 +265,17 @@ try {
                       cpu_class: r.cpuClass.value ? r.cpuClass.value : "unknown",
                       navigator_platform: r.platform.value ? r.platform.value : "unknown",
                       do_not_track: navigator.doNotTrack ? navigator.doNotTrack : "unknown",
-                      regular_plugins: f(h(r.plugins.value).join(";")),
+                      regular_plugins: h(f(r.plugins.value).join(";")),
                       canvas: null,
                       webgl: null,
-                      adblock: f(p()),
+                      adblock: h(p()),
                       has_lied_os: v(a),
                       touch_support: [r.touchSupport.value.maxTouchPoints, r.touchSupport.value.touchEvent, r.touchSupport.value.touchStart].join(";"),
                       device_name: b(e, a),
-                      js_fonts: f(y().join(";"))
+                      js_fonts: h(y().join(";"))
                     }
                   };
-                g() ? i.fp.canvas = f(function() {
+                g() ? i.fp.canvas = h(function() {
                     let e = [],
                       t = document.createElement("canvas");
                     t.width = 2e3, t.height = 200, t.style.display = "inline";
@@ -291,7 +291,7 @@ try {
                       e = !1
                     }
                     return !!window.WebGLRenderingContext && !!e
-                  }() ? i.fp.webgl = f(function() {
+                  }() ? i.fp.webgl = h(function() {
                     let e, t = function(t) {
                       return e.clearColor(0, 0, 0, 1), e.enable(e.DEPTH_TEST), e.depthFunc(e.LEQUAL), e.clear(e.COLOR_BUFFER_BIT | e.DEPTH_BUFFER_BIT), "[" + t[0] + ", " + t[1] + "]"
                     };
@@ -415,16 +415,16 @@ try {
         return 32 == (t %= 64) ? [e[1], e[0]] : t < 32 ? [e[0] << t | e[1] >>> 32 - t, e[1] << t | e[0] >>> 32 - t] : (t -= 32, [e[1] << t | e[0] >>> 32 - t, e[0] << t | e[1] >>> 32 - t])
       }
 
-      function f(e, t) {
+      function h(e, t) {
         return 0 == (t %= 64) ? e : t < 32 ? [e[0] << t | e[1] >>> 32 - t, e[1] << t] : [e[1] << t - 32, 0]
       }
 
-      function h(e, t) {
+      function f(e, t) {
         return [e[0] ^ t[0], e[1] ^ t[1]]
       }
 
       function g(e) {
-        return e = h(e, [0, e[0] >>> 1]), e = h(e = d(e, [4283543511, 3981806797]), [0, e[0] >>> 1]), h(e = d(e, [3301882366, 444984403]), [0, e[0] >>> 1])
+        return e = f(e, [0, e[0] >>> 1]), e = f(e = d(e, [4283543511, 3981806797]), [0, e[0] >>> 1]), f(e = d(e, [3301882366, 444984403]), [0, e[0] >>> 1])
       }
 
       function p(e, t) {
@@ -437,40 +437,40 @@ try {
           s = [0, 0],
           l = [2277735313, 289559509],
           p = [1291169091, 658871167];
-        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = m(c = d(c, l), 31), i = u(i = m(i = h(i, c = d(c, p)), 27), o), i = u(d(i, [0, 5]), [0, 1390208809]), s = m(s = d(s, p), 33), o = u(o = m(o = h(o, s = d(s, l)), 31), i), o = u(d(o, [0, 5]), [0, 944331445]);
+        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = m(c = d(c, l), 31), i = u(i = m(i = f(i, c = d(c, p)), 27), o), i = u(d(i, [0, 5]), [0, 1390208809]), s = m(s = d(s, p), 33), o = u(o = m(o = f(o, s = d(s, l)), 31), i), o = u(d(o, [0, 5]), [0, 944331445]);
         switch (c = [0, 0], s = [0, 0], r) {
           case 15:
-            s = h(s, f([0, e.charCodeAt(n + 14)], 48));
+            s = f(s, h([0, e.charCodeAt(n + 14)], 48));
           case 14:
-            s = h(s, f([0, e.charCodeAt(n + 13)], 40));
+            s = f(s, h([0, e.charCodeAt(n + 13)], 40));
           case 13:
-            s = h(s, f([0, e.charCodeAt(n + 12)], 32));
+            s = f(s, h([0, e.charCodeAt(n + 12)], 32));
           case 12:
-            s = h(s, f([0, e.charCodeAt(n + 11)], 24));
+            s = f(s, h([0, e.charCodeAt(n + 11)], 24));
           case 11:
-            s = h(s, f([0, e.charCodeAt(n + 10)], 16));
+            s = f(s, h([0, e.charCodeAt(n + 10)], 16));
           case 10:
-            s = h(s, f([0, e.charCodeAt(n + 9)], 8));
+            s = f(s, h([0, e.charCodeAt(n + 9)], 8));
           case 9:
-            s = d(s = h(s, [0, e.charCodeAt(n + 8)]), p), o = h(o, s = d(s = m(s, 33), l));
+            s = d(s = f(s, [0, e.charCodeAt(n + 8)]), p), o = f(o, s = d(s = m(s, 33), l));
           case 8:
-            c = h(c, f([0, e.charCodeAt(n + 7)], 56));
+            c = f(c, h([0, e.charCodeAt(n + 7)], 56));
           case 7:
-            c = h(c, f([0, e.charCodeAt(n + 6)], 48));
+            c = f(c, h([0, e.charCodeAt(n + 6)], 48));
           case 6:
-            c = h(c, f([0, e.charCodeAt(n + 5)], 40));
+            c = f(c, h([0, e.charCodeAt(n + 5)], 40));
           case 5:
-            c = h(c, f([0, e.charCodeAt(n + 4)], 32));
+            c = f(c, h([0, e.charCodeAt(n + 4)], 32));
           case 4:
-            c = h(c, f([0, e.charCodeAt(n + 3)], 24));
+            c = f(c, h([0, e.charCodeAt(n + 3)], 24));
           case 3:
-            c = h(c, f([0, e.charCodeAt(n + 2)], 16));
+            c = f(c, h([0, e.charCodeAt(n + 2)], 16));
           case 2:
-            c = h(c, f([0, e.charCodeAt(n + 1)], 8));
+            c = f(c, h([0, e.charCodeAt(n + 1)], 8));
           case 1:
-            c = d(c = h(c, [0, e.charCodeAt(n)]), l), i = h(i, c = d(c = m(c, 31), p))
+            c = d(c = f(c, [0, e.charCodeAt(n)]), l), i = f(i, c = d(c = m(c, 31), p))
         }
-        return i = u(i = h(i, [0, e.length]), o = h(o, [0, e.length])), o = u(o, i), i = u(i = g(i), o = g(o)), o = u(o, i), ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8)
+        return i = u(i = f(i, [0, e.length]), o = f(o, [0, e.length])), o = u(o, i), i = u(i = g(i), o = g(o)), o = u(o, i), ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8)
       }
 
       function v(e) {
@@ -1001,8 +1001,8 @@ try {
                       d = void 0 === u ? "mmMwWLliI0fiflO&1" : u,
                       m = e.createElement("span");
                     m.textContent = d, m.style.whiteSpace = "nowrap";
-                    for (var f = 0, h = Object.keys(l); f < h.length; f++) {
-                      var g = h[f],
+                    for (var h = 0, f = Object.keys(l); h < f.length; h++) {
+                      var g = f[h],
                         p = l[g];
                       void 0 !== p && (m.style[g] = p)
                     }
@@ -1313,8 +1313,8 @@ try {
               u = ee.cosh || te,
               d = ee.tan || te,
               m = ee.tanh || te,
-              f = ee.exp || te,
-              h = ee.expm1 || te,
+              h = ee.exp || te,
+              f = ee.expm1 || te,
               g = ee.log1p || te;
             return {
               acos: t(.12312423423423424),
@@ -1335,8 +1335,8 @@ try {
               tan: d(-1e300),
               tanh: m(1),
               tanhPf: (ee.exp(2) - 1) / (ee.exp(2) + 1),
-              exp: f(1),
-              expm1: h(1),
+              exp: h(1),
+              expm1: f(1),
               expm1Pf: ee.exp(1) - 1,
               log1p: g(10),
               log1pPf: ee.log(11),

@@ -27,7 +27,7 @@ try {
         MotionConfigContext: () => o,
         MotionContext: () => i,
         MotionGlobalConfig: () => ps,
-        MotionValue: () => ws,
+        MotionValue: () => Ps,
         PresenceContext: () => r,
         Reorder: () => Jr,
         SwitchLayoutGroupContext: () => T,
@@ -56,12 +56,12 @@ try {
         color: () => en,
         complex: () => yn,
         createBox: () => po,
-        createDomMotionComponent: () => wr,
+        createDomMotionComponent: () => Pr,
         createMotionComponent: () => C,
         createScopedAnimate: () => ol,
         cubicBezier: () => Le,
         delay: () => mi,
-        disableInstantTransitions: () => bl,
+        disableInstantTransitions: () => wl,
         distance: () => Ys,
         distance2D: () => Gs,
         domAnimation: () => Qr,
@@ -74,18 +74,18 @@ try {
         frameData: () => Ht,
         inView: () => hl,
         interpolate: () => Tn,
-        invariant: () => Pe,
+        invariant: () => be,
         isBrowser: () => a,
         isDragActive: () => re,
         isMotionComponent: () => yl,
         isMotionValue: () => I,
         isValidMotionProp: () => ft,
-        m: () => br,
+        m: () => wr,
         makeUseVisualState: () => It,
         mirrorEasing: () => Oe,
         mix: () => nn,
-        motion: () => Pr,
-        motionValue: () => bs,
+        motion: () => br,
+        motionValue: () => ws,
         optimizedAppearDataAttribute: () => d,
         pipe: () => ee,
         progress: () => En,
@@ -114,7 +114,7 @@ try {
         useForceUpdate: () => Sr,
         useInView: () => dl,
         useInstantLayoutTransition: () => xl,
-        useInstantTransition: () => wl,
+        useInstantTransition: () => Pl,
         useIsPresent: () => Oo,
         useIsomorphicLayoutEffect: () => l,
         useMotionTemplate: () => ea,
@@ -175,10 +175,10 @@ try {
         return Boolean(v(t) || t.variants)
       }
 
-      function P(t) {
+      function b(t) {
         return Array.isArray(t) ? t.join(" ") : t
       }
-      const w = {
+      const P = {
           animation: ["animate", "variants", "whileHover", "whileTap", "exit", "whileInView", "whileFocus", "whileDrag"],
           exit: ["exit"],
           drag: ["drag", "dragControls"],
@@ -189,14 +189,14 @@ try {
           inView: ["whileInView", "onViewportEnter", "onViewportLeave"],
           layout: ["layout", "layoutId"]
         },
-        b = {};
-      for (const t in w) b[t] = {
-        isEnabled: e => w[t].some((t => !!e[t]))
+        w = {};
+      for (const t in P) w[t] = {
+        isEnabled: e => P[t].some((t => !!e[t]))
       };
 
       function E(t) {
-        for (const e in t) b[e] = {
-          ...b[e],
+        for (const e in t) w[e] = {
+          ...w[e],
           ...t[e]
         }
       }
@@ -220,9 +220,9 @@ try {
               layoutId: V(m)
             },
             {
-              isStatic: w
+              isStatic: P
             } = x,
-            b = function(t) {
+            w = function(t) {
               const {
                 initial: e,
                 animate: n
@@ -242,11 +242,11 @@ try {
               return (0, s.useMemo)((() => ({
                 initial: e,
                 animate: n
-              })), [P(e), P(n)])
+              })), [b(e), b(n)])
             }(m),
-            E = c(m, w);
-          if (!w && a) {
-            b.visualElement = function(t, e, n, a) {
+            E = c(m, P);
+          if (!P && a) {
+            w.visualElement = function(t, e, n, a) {
               const {
                 visualElement: c
               } = (0, s.useContext)(i), h = (0, s.useContext)(u), p = (0, s.useContext)(r), f = (0, s.useContext)(o).reducedMotion, m = (0, s.useRef)();
@@ -271,18 +271,18 @@ try {
             }(h, E, x, e);
             const n = (0, s.useContext)(T),
               a = (0, s.useContext)(u).strict;
-            b.visualElement && (y = b.visualElement.loadFeatures(x, a, t, n))
+            w.visualElement && (y = w.visualElement.loadFeatures(x, a, t, n))
           }
           return s.createElement(i.Provider, {
-            value: b
-          }, y && b.visualElement ? s.createElement(y, {
-            visualElement: b.visualElement,
+            value: w
+          }, y && w.visualElement ? s.createElement(y, {
+            visualElement: w.visualElement,
             ...x
           }) : null, n(h, m, function(t, e, n) {
             return (0, s.useCallback)((s => {
               s && t.mount && t.mount(s), e && (s ? e.mount(s) : e.unmount()), n && ("function" == typeof n ? n(s) : p(n) && (n.current = s))
             }), [e])
-          }(E, b.visualElement, g), E, w, b.visualElement))
+          }(E, w.visualElement, g), E, P, w.visualElement))
         }));
         return m[A] = h, m
       }
@@ -536,12 +536,12 @@ try {
           offset: "stroke-dashoffset",
           array: "stroke-dasharray"
         },
-        Pt = {
+        bt = {
           offset: "strokeDashoffset",
           array: "strokeDasharray"
         };
 
-      function wt(t, {
+      function Pt(t, {
         attrX: e,
         attrY: n,
         attrScale: s,
@@ -563,14 +563,14 @@ try {
           return `${vt(e,t.x,t.width)} ${vt(n,t.y,t.height)}`
         }(m, void 0 !== o ? o : .5, void 0 !== i ? i : .5)), void 0 !== e && (p.x = e), void 0 !== n && (p.y = n), void 0 !== s && (p.scale = s), void 0 !== r && function(t, e, n = 1, s = 0, o = !0) {
           t.pathLength = 1;
-          const i = o ? xt : Pt;
+          const i = o ? xt : bt;
           t[i.offset] = st.transform(-s);
           const r = st.transform(e),
             a = st.transform(n);
           t[i.array] = `${r} ${a}`
         }(p, r, a, l, !1)
       }
-      const bt = () => ({
+      const wt = () => ({
           ...ct(),
           attrs: {}
         }),
@@ -578,8 +578,8 @@ try {
 
       function St(t, e, n, o) {
         const i = (0, s.useMemo)((() => {
-          const n = bt();
-          return wt(n, e, {
+          const n = wt();
+          return Pt(n, e, {
             enableHardwareAcceleration: !1
           }, Et(o), t.transformTemplate), {
             ...n.attrs,
@@ -786,7 +786,7 @@ try {
         Gt = {
           useVisualState: It({
             scrapeMotionValuesFromProps: kt,
-            createRenderState: bt,
+            createRenderState: wt,
             onMount: (t, e, {
               renderState: n,
               latestValues: s
@@ -803,7 +803,7 @@ try {
                   }
                 }
               })), zt.render((() => {
-                wt(n, s, {
+                Pt(n, s, {
                   enableHardwareAcceleration: !1
                 }, Et(e.tagName), t.transformTemplate), Vt(e, n)
               }))
@@ -1115,9 +1115,9 @@ try {
         }(t))
       }
       let xe = Ut,
-        Pe = Ut;
-      const we = t => 1e3 * t,
-        be = t => t / 1e3,
+        be = Ut;
+      const Pe = t => 1e3 * t,
+        we = t => t / 1e3,
         Ee = {
           current: !1
         },
@@ -1207,11 +1207,11 @@ try {
         },
         qe = t => {
           if (Array.isArray(t)) {
-            Pe(4 === t.length, "Cubic bezier arrays must contain four numerical values.");
+            be(4 === t.length, "Cubic bezier arrays must contain four numerical values.");
             const [e, n, s, o] = t;
             return Le(e, n, s, o)
           }
-          return "string" == typeof t ? (Pe(void 0 !== Xe[t], `Invalid easing type '${t}'`), Xe[t]) : t
+          return "string" == typeof t ? (be(void 0 !== Xe[t], `Invalid easing type '${t}'`), Xe[t]) : t
         },
         _e = (t, e) => n => Boolean(Q(n) && J.test(n) && n.startsWith(t) || e && Object.prototype.hasOwnProperty.call(n, e)),
         Ze = (t, e, n) => s => {
@@ -1283,7 +1283,7 @@ try {
       function an(t) {
         const e = (n = t, rn.find((t => t.test(n))));
         var n;
-        Pe(Boolean(e), `'${t}' is not an animatable color. Use the equivalent color code instead.`);
+        be(Boolean(e), `'${t}' is not an animatable color. Use the equivalent color code instead.`);
         let s = e.parse(t);
         return e === tn && (s = function({
           hue: t,
@@ -1391,9 +1391,9 @@ try {
         vn = (t, e) => n => `${n>0?e:t}`;
 
       function xn(t, e) {
-        return "number" == typeof t ? n => nn(t, e, n) : en.test(t) ? ln(t, e) : t.startsWith("var(") ? vn(t, e) : bn(t, e)
+        return "number" == typeof t ? n => nn(t, e, n) : en.test(t) ? ln(t, e) : t.startsWith("var(") ? vn(t, e) : wn(t, e)
       }
-      const Pn = (t, e) => {
+      const bn = (t, e) => {
           const n = [...t],
             s = n.length,
             o = t.map(((t, n) => xn(t, e[n])));
@@ -1402,7 +1402,7 @@ try {
             return n
           }
         },
-        wn = (t, e) => {
+        Pn = (t, e) => {
           const n = {
               ...t,
               ...e
@@ -1414,11 +1414,11 @@ try {
             return n
           }
         },
-        bn = (t, e) => {
+        wn = (t, e) => {
           const n = yn.createTransformer(e),
             s = pn(t),
             o = pn(e);
-          return s.numVars === o.numVars && s.numColors === o.numColors && s.numNumbers >= o.numNumbers ? ee(Pn(s.values, o.values), n) : (xe(!0, `Complex values '${t}' and '${e}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.`), vn(t, e))
+          return s.numVars === o.numVars && s.numColors === o.numColors && s.numNumbers >= o.numNumbers ? ee(bn(s.values, o.values), n) : (xe(!0, `Complex values '${t}' and '${e}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.`), vn(t, e))
         },
         En = (t, e, n) => {
           const s = e - t;
@@ -1432,11 +1432,11 @@ try {
         mixer: o
       } = {}) {
         const i = t.length;
-        if (Pe(i === e.length, "Both input and output ranges must be the same length"), 1 === i) return () => e[0];
+        if (be(i === e.length, "Both input and output ranges must be the same length"), 1 === i) return () => e[0];
         t[0] > t[i - 1] && (t = [...t].reverse(), e = [...e].reverse());
         const r = function(t, e, n) {
             const s = [],
-              o = n || ("number" == typeof(i = t[0]) ? Sn : "string" == typeof i ? en.test(i) ? ln : bn : Array.isArray(i) ? Pn : "object" == typeof i ? wn : Sn);
+              o = n || ("number" == typeof(i = t[0]) ? Sn : "string" == typeof i ? en.test(i) ? ln : wn : Array.isArray(i) ? bn : "object" == typeof i ? Pn : Sn);
             var i;
             const r = t.length - 1;
             for (let n = 0; n < r; n++) {
@@ -1559,9 +1559,9 @@ try {
                 mass: s = 1
               }) {
                 let o, i;
-                xe(t <= we(Bn), "Spring duration must be 10 seconds or less");
+                xe(t <= Pe(Bn), "Spring duration must be 10 seconds or less");
                 let r = 1 - e;
-                r = Y(jn, Fn, r), t = Y(Ln, Bn, be(t)), r < 1 ? (o = e => {
+                r = Y(jn, Fn, r), t = Y(Ln, Bn, we(t)), r < 1 ? (o = e => {
                   const s = e * r,
                     o = s * t,
                     i = s - n,
@@ -1581,7 +1581,7 @@ try {
                   for (let n = 1; n < In; n++) s -= t(s) / e(s);
                   return s
                 }(o, i, 5 / t);
-                if (t = we(t), isNaN(a)) return {
+                if (t = Pe(t), isNaN(a)) return {
                   stiffness: 100,
                   damping: 10,
                   duration: t
@@ -1603,12 +1603,12 @@ try {
             return e
           }({
             ...s,
-            velocity: -be(s.velocity || 0)
+            velocity: -we(s.velocity || 0)
           }),
           p = h || 0,
           f = l / (2 * Math.sqrt(a * u)),
           m = i - o,
-          g = be(Math.sqrt(a / u)),
+          g = we(Math.sqrt(a / u)),
           y = Math.abs(m) < 5;
         let v;
         if (n || (n = y ? .01 : 2), e || (e = y ? .005 : .5), f < 1) {
@@ -1673,10 +1673,10 @@ try {
               n = v(t);
             d.done = Math.abs(e) <= u, d.value = d.done ? g : n
           };
-        let P, w;
-        const b = t => {
+        let b, P;
+        const w = t => {
           var e;
-          e = d.value, (void 0 !== a && e < a || void 0 !== l && e > l) && (P = t, w = zn({
+          e = d.value, (void 0 !== a && e < a || void 0 !== l && e > l) && (b = t, P = zn({
             keyframes: [d.value, p(d.value)],
             velocity: Dn(v, t, d.value),
             damping: o,
@@ -1685,11 +1685,11 @@ try {
             restSpeed: c
           }))
         };
-        return b(0), {
+        return w(0), {
           calculatedDuration: null,
           next: t => {
             let e = !1;
-            return w || void 0 !== P || (e = !0, x(t), b(t)), void 0 !== P && t > P ? w.next(t - P) : (!e && x(t), d)
+            return P || void 0 !== b || (e = !0, x(t), w(t)), void 0 !== b && t > b ? P.next(t - b) : (!e && x(t), d)
           }
         }
       }
@@ -1744,16 +1744,16 @@ try {
         let v;
         y();
         const x = Xn[o] || Vn;
-        let P;
-        x !== Vn && "number" != typeof s[0] && (P = Tn([0, 100], s, {
+        let b;
+        x !== Vn && "number" != typeof s[0] && (b = Tn([0, 100], s, {
           clamp: !1
         }), s = [0, 100]);
-        const w = x({
+        const P = x({
           ...d,
           keyframes: s
         });
-        let b;
-        "mirror" === a && (b = x({
+        let w;
+        "mirror" === a && (w = x({
           ...d,
           keyframes: [...s].reverse(),
           velocity: -(d.velocity || 0)
@@ -1762,10 +1762,10 @@ try {
           S = null,
           T = null,
           A = null;
-        null === w.calculatedDuration && i && (w.calculatedDuration = Gn(w));
+        null === P.calculatedDuration && i && (P.calculatedDuration = Gn(P));
         const {
           calculatedDuration: C
-        } = w;
+        } = P;
         let V = 1 / 0,
           M = 1 / 0;
         null !== C && (V = C + r, M = V * (i + 1) - r);
@@ -1777,18 +1777,18 @@ try {
               o = m >= 0 ? n < 0 : n > M;
             k = Math.max(n, 0), "finished" === E && null === S && (k = M);
             let l = k,
-              u = w;
+              u = P;
             if (i) {
               const t = Math.min(k, M) / V;
               let e = Math.floor(t),
                 n = t % 1;
-              !n && t >= 1 && (n = 1), 1 === n && e--, e = Math.min(e, i + 1), Boolean(e % 2) && ("reverse" === a ? (n = 1 - n, r && (n -= r / V)) : "mirror" === a && (u = b)), l = Y(0, 1, n) * V
+              !n && t >= 1 && (n = 1), 1 === n && e--, e = Math.min(e, i + 1), Boolean(e % 2) && ("reverse" === a ? (n = 1 - n, r && (n -= r / V)) : "mirror" === a && (u = w)), l = Y(0, 1, n) * V
             }
             const c = o ? {
               done: !1,
               value: s[0]
             } : u.next(l);
-            P && (c.value = P(c.value));
+            b && (c.value = b(c.value));
             let {
               done: d
             } = c;
@@ -1815,20 +1815,20 @@ try {
         const F = {
           then: (t, e) => f.then(t, e),
           get time() {
-            return be(k)
+            return we(k)
           },
           set time(t) {
-            t = we(t), k = t, null === S && v && 0 !== m ? T = v.now() - t / m : S = t
+            t = Pe(t), k = t, null === S && v && 0 !== m ? T = v.now() - t / m : S = t
           },
           get duration() {
-            const t = null === w.calculatedDuration ? Gn(w) : w.calculatedDuration;
-            return be(t)
+            const t = null === P.calculatedDuration ? Gn(P) : P.calculatedDuration;
+            return we(t)
           },
           get speed() {
             return m
           },
           set speed(t) {
-            t !== m && v && (m = t, F.time = be(k))
+            t !== m && v && (m = t, F.time = we(k))
           },
           get state() {
             return E
@@ -1939,7 +1939,7 @@ try {
           let {
             elapsed: a = 0
           } = s;
-          a -= we(r);
+          a -= Pe(r);
           const l = function(t, e, n, s) {
               const o = ns(e, n);
               let i;
@@ -1987,7 +1987,7 @@ try {
             }(i) || (p = {
               ...p,
               ...es(t, p)
-            }), p.duration && (p.duration = we(p.duration)), p.repeatDelay && (p.repeatDelay = we(p.repeatDelay)), !h || !d || Ee.current || !1 === i.type || ps.skipAnimations) return function({
+            }), p.duration && (p.duration = Pe(p.duration)), p.repeatDelay && (p.repeatDelay = Pe(p.repeatDelay)), !h || !d || Ee.current || !1 === i.type || ps.skipAnimations) return function({
             keyframes: t,
             delay: e,
             onUpdate: n,
@@ -2073,10 +2073,10 @@ try {
                 then: (t, e) => r.then(t, e),
                 attachTimeline: t => (f.timeline = t, f.onfinish = null, Ut),
                 get time() {
-                  return be(f.currentTime || 0)
+                  return we(f.currentTime || 0)
                 },
                 set time(t) {
-                  f.currentTime = we(t)
+                  f.currentTime = Pe(t)
                 },
                 get speed() {
                   return f.playbackRate
@@ -2085,7 +2085,7 @@ try {
                   f.playbackRate = t
                 },
                 get duration() {
-                  return be(h)
+                  return we(h)
                 },
                 play: () => {
                   a || (f.play(), $t(m))
@@ -2153,10 +2153,10 @@ try {
           this.subscriptions.length = 0
         }
       }
-      const Ps = {
+      const bs = {
         current: void 0
       };
-      class ws {
+      class Ps {
         constructor(t, e = {}) {
           var n;
           this.version = "10.18.0", this.timeDelta = 0, this.lastUpdated = 0, this.canTrackVelocity = !1, this.events = {}, this.updateAndNotify = (t, e = !0) => {
@@ -2200,7 +2200,7 @@ try {
           this.updateAndNotify(t), this.prev = t, this.stop(), this.stopPassiveEffect && this.stopPassiveEffect()
         }
         get() {
-          return Ps.current && Ps.current.push(this), this.current
+          return bs.current && bs.current.push(this), this.current
         }
         getPrevious() {
           return this.prev
@@ -2229,8 +2229,8 @@ try {
         }
       }
 
-      function bs(t, e) {
-        return new ws(t, e)
+      function ws(t, e) {
+        return new Ps(t, e)
       }
       const Es = t => e => e.test(t),
         Ss = [G, st, nt, et, it, ot, {
@@ -2242,7 +2242,7 @@ try {
         Cs = t => As.find(Es(t));
 
       function Vs(t, e, n) {
-        t.hasValue(e) ? t.getValue(e).set(n) : t.addValue(e, bs(n))
+        t.hasValue(e) ? t.getValue(e).set(n) : t.addValue(e, ws(n))
       }
 
       function Ms(t, e) {
@@ -2277,7 +2277,7 @@ try {
             const r = i[a],
               l = e[r];
             let u = null;
-            Array.isArray(l) && (u = l[0]), null === u && (u = null !== (o = null !== (s = n[r]) && void 0 !== s ? s : t.readValue(r)) && void 0 !== o ? o : e[r]), null != u && ("string" == typeof u && (gs(u) || cs(u)) ? u = parseFloat(u) : !Cs(u) && yn.test(l) && (u = us(r, l)), t.addValue(r, bs(u, {
+            Array.isArray(l) && (u = l[0]), null === u && (u = null !== (o = null !== (s = n[r]) && void 0 !== s ? s : t.readValue(r)) && void 0 !== o ? o : e[r]), null != u && ("string" == typeof u && (gs(u) || cs(u)) ? u = parseFloat(u) : !Cs(u) && yn.test(l) && (u = us(r, l)), t.addValue(r, ws(u, {
               owner: t
             })), void 0 === n[r] && (n[r] = u), null !== u && t.setBaseTarget(r, u))
           }
@@ -2470,18 +2470,18 @@ try {
                       const y = Ws[e],
                         v = n[y],
                         x = void 0 !== a[y] ? a[y] : l[y],
-                        P = f(x),
-                        w = y === r ? v.isActive : null;
-                      !1 === w && (d = e);
-                      let b = x === l[y] && x !== a[y] && P;
-                      if (b && s && t.manuallyAnimateOnMount && (b = !1), v.protectedKeys = {
+                        b = f(x),
+                        P = y === r ? v.isActive : null;
+                      !1 === P && (d = e);
+                      let w = x === l[y] && x !== a[y] && b;
+                      if (w && s && t.manuallyAnimateOnMount && (w = !1), v.protectedKeys = {
                           ...h
-                        }, !v.isActive && null === w || !x && !v.prevProp || m(x) || "boolean" == typeof x) continue;
-                      let E = (p = v.prevProp, ("string" == typeof(g = x) ? g !== p : !!Array.isArray(g) && !ye(g, p)) || y === r && v.isActive && !b && P || e > d && P),
+                        }, !v.isActive && null === P || !x && !v.prevProp || m(x) || "boolean" == typeof x) continue;
+                      let E = (p = v.prevProp, ("string" == typeof(g = x) ? g !== p : !!Array.isArray(g) && !ye(g, p)) || y === r && v.isActive && !w && b || e > d && b),
                         S = !1;
                       const T = Array.isArray(x) ? x : [x];
                       let A = T.reduce(o, {});
-                      !1 === w && (A = {});
+                      !1 === P && (A = {});
                       const {
                         prevResolvedValues: C = {}
                       } = v, V = {
@@ -2500,7 +2500,7 @@ try {
                       v.prevProp = x, v.prevResolvedValues = A, v.isActive && (h = {
                         ...h,
                         ...A
-                      }), s && t.blockInitialAnimation && (E = !1), !E || b && !S || u.push(...T.map((t => ({
+                      }), s && t.blockInitialAnimation && (E = !1), !E || w && !S || u.push(...T.map((t => ({
                         animation: t,
                         options: {
                           type: y,
@@ -2705,12 +2705,12 @@ try {
         let n = t.length - 1,
           s = null;
         const o = Js(t);
-        for (; n >= 0 && (s = t[n], !(o.timestamp - s.timestamp > we(e)));) n--;
+        for (; n >= 0 && (s = t[n], !(o.timestamp - s.timestamp > Pe(e)));) n--;
         if (!s) return {
           x: 0,
           y: 0
         };
-        const i = be(o.timestamp - s.timestamp);
+        const i = we(o.timestamp - s.timestamp);
         if (0 === i) return {
           x: 0,
           y: 0
@@ -2827,23 +2827,23 @@ try {
       }
 
       function xo(t) {
-        return Po(t.x) || Po(t.y)
+        return bo(t.x) || bo(t.y)
       }
 
-      function Po(t) {
+      function bo(t) {
         return t && "0%" !== t
       }
 
-      function wo(t, e, n) {
+      function Po(t, e, n) {
         return n + e * (t - n)
       }
 
-      function bo(t, e, n, s, o) {
-        return void 0 !== o && (t = wo(t, o, s)), wo(t, n, s) + e
+      function wo(t, e, n, s, o) {
+        return void 0 !== o && (t = Po(t, o, s)), Po(t, n, s) + e
       }
 
       function Eo(t, e = 0, n = 1, s, o) {
-        t.min = bo(t.min, e, n, s, o), t.max = bo(t.max, e, n, s, o)
+        t.min = wo(t.min, e, n, s, o), t.max = wo(t.max, e, n, s, o)
       }
 
       function So(t, {
@@ -3046,7 +3046,7 @@ try {
           } = this.getProps();
           if (!t || !p(t)) return !1;
           const n = t.current;
-          Pe(null !== n, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
+          be(null !== n, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
           const {
             projection: s
           } = this.visualElement;
@@ -3411,7 +3411,7 @@ try {
       }
 
       function ni(t, e, n, s, o) {
-        return t = wo(t -= e, 1 / n, s), void 0 !== o && (t = wo(t, 1 / o, s)), t
+        return t = Po(t -= e, 1 / n, s), void 0 !== o && (t = Po(t, 1 / o, s)), t
       }
 
       function si(t, e, [n, s, o], i, r) {
@@ -3546,22 +3546,22 @@ try {
       }
 
       function yi(t, e, n) {
-        const s = I(t) ? t : bs(t);
+        const s = I(t) ? t : ws(t);
         return s.start(fs("", s, e, n)), s.animation
       }
       const vi = ["", "X", "Y", "Z"],
         xi = {
           visibility: "hidden"
         };
-      let Pi = 0;
-      const wi = {
+      let bi = 0;
+      const Pi = {
         type: "projectionFrame",
         totalNodes: 0,
         resolvedTargetDeltas: 0,
         recalculatedProjection: 0
       };
 
-      function bi({
+      function wi({
         attachResizeListener: t,
         defaultParent: e,
         measureScroll: n,
@@ -3570,14 +3570,14 @@ try {
       }) {
         return class {
           constructor(t = {}, n = (null == e ? void 0 : e())) {
-            this.id = Pi++, this.animationId = 0, this.children = new Set, this.options = {}, this.isTreeAnimating = !1, this.isAnimationBlocked = !1, this.isLayoutDirty = !1, this.isProjectionDirty = !1, this.isSharedProjectionDirty = !1, this.isTransformDirty = !1, this.updateManuallyBlocked = !1, this.updateBlockedByResize = !1, this.isUpdating = !1, this.isSVG = !1, this.needsReset = !1, this.shouldResetTransform = !1, this.treeScale = {
+            this.id = bi++, this.animationId = 0, this.children = new Set, this.options = {}, this.isTreeAnimating = !1, this.isAnimationBlocked = !1, this.isLayoutDirty = !1, this.isProjectionDirty = !1, this.isSharedProjectionDirty = !1, this.isTransformDirty = !1, this.updateManuallyBlocked = !1, this.updateBlockedByResize = !1, this.isUpdating = !1, this.isSVG = !1, this.needsReset = !1, this.shouldResetTransform = !1, this.treeScale = {
               x: 1,
               y: 1
             }, this.eventHandlers = new Map, this.hasTreeAnimated = !1, this.updateScheduled = !1, this.projectionUpdateScheduled = !1, this.checkUpdateFailed = () => {
               this.isUpdating && (this.isUpdating = !1, this.clearAllSnapshots())
             }, this.updateProjection = () => {
               var t;
-              this.projectionUpdateScheduled = !1, wi.totalNodes = wi.resolvedTargetDeltas = wi.recalculatedProjection = 0, this.nodes.forEach(Ti), this.nodes.forEach(Ri), this.nodes.forEach(Li), this.nodes.forEach(Ai), t = wi, window.MotionDebug && window.MotionDebug.record(t)
+              this.projectionUpdateScheduled = !1, Pi.totalNodes = Pi.resolvedTargetDeltas = Pi.recalculatedProjection = 0, this.nodes.forEach(Ti), this.nodes.forEach(Ri), this.nodes.forEach(Li), this.nodes.forEach(Ai), t = Pi, window.MotionDebug && window.MotionDebug.record(t)
             }, this.hasProjected = !1, this.isVisible = !0, this.animationProgress = 0, this.sharedNodes = new Map, this.latestValues = t, this.root = n ? n.root || n : this, this.path = n ? [...n.path, n] : [], this.parent = n, this.depth = n ? n.depth + 1 : 0;
             for (let t = 0; t < this.path.length; t++) this.path[t].shouldResetTransform = !0;
             this.root === this && (this.nodes = new fi)
@@ -3836,7 +3836,7 @@ try {
                   const t = this.getClosestProjectingParent();
                   t && Boolean(t.resumingFrom) === Boolean(this.resumingFrom) && !t.options.layoutScroll && t.target && 1 !== this.animationProgress ? (this.relativeParent = t, this.forceRelativeParentToResolveTarget(), this.relativeTarget = po(), this.relativeTargetOrigin = po(), ro(this.relativeTargetOrigin, this.target, t.target), ei(this.relativeTarget, this.relativeTargetOrigin)) : this.relativeParent = this.relativeTarget = void 0
                 }
-                wi.resolvedTargetDeltas++
+                Pi.resolvedTargetDeltas++
               }
             }
           }
@@ -3920,7 +3920,7 @@ try {
               }
             });
             const u = this.projectionTransform;
-            so(this.projectionDelta, this.layoutCorrected, l, this.latestValues), this.projectionTransform = di(this.projectionDelta, this.treeScale), this.projectionTransform === u && this.treeScale.x === r && this.treeScale.y === a || (this.hasProjected = !0, this.scheduleRender(), this.notifyListeners("projectionUpdate", l)), wi.recalculatedProjection++
+            so(this.projectionDelta, this.layoutCorrected, l, this.latestValues), this.projectionTransform = di(this.projectionDelta, this.treeScale), this.projectionTransform === u && this.treeScale.x === r && this.treeScale.y === a || (this.hasProjected = !0, this.scheduleRender(), this.notifyListeners("projectionUpdate", l)), Pi.recalculatedProjection++
           }
           hide() {
             this.isVisible = !1
@@ -4215,7 +4215,7 @@ try {
       }
 
       function Ti(t) {
-        wi.totalNodes++, t.parent && (t.isProjecting() || (t.isProjectionDirty = t.parent.isProjectionDirty), t.isSharedProjectionDirty || (t.isSharedProjectionDirty = Boolean(t.isProjectionDirty || t.parent.isProjectionDirty || t.parent.isSharedProjectionDirty)), t.isTransformDirty || (t.isTransformDirty = t.parent.isTransformDirty))
+        Pi.totalNodes++, t.parent && (t.isProjecting() || (t.isProjectionDirty = t.parent.isProjectionDirty), t.isSharedProjectionDirty || (t.isSharedProjectionDirty = Boolean(t.isProjectionDirty || t.parent.isProjectionDirty || t.parent.isSharedProjectionDirty)), t.isTransformDirty || (t.isTransformDirty = t.parent.isTransformDirty))
       }
 
       function Ai(t) {
@@ -4286,7 +4286,7 @@ try {
       function $i(t, e, n) {
         return "position" === t || "preserve-aspect" === t && !eo(ci(e), ci(n), .2)
       }
-      const Hi = bi({
+      const Hi = wi({
           attachResizeListener: (t, e) => _t(t, "resize", e),
           measureScroll: () => ({
             x: document.documentElement.scrollLeft || document.body.scrollLeft,
@@ -4297,7 +4297,7 @@ try {
         Yi = {
           current: void 0
         },
-        Gi = bi({
+        Gi = wi({
           measureScroll: t => ({
             x: t.scrollLeft,
             y: t.scrollTop
@@ -4377,7 +4377,7 @@ try {
         qi = /var\((--[a-zA-Z0-9-_]+),? ?([a-zA-Z0-9 ()%#.,-]+)?\)/;
 
       function _i(t, e, n = 1) {
-        Pe(n <= 4, `Max CSS variable fallback depth detected in property "${t}". This may indicate a circular fallback dependency.`);
+        be(n <= 4, `Max CSS variable fallback depth detected in property "${t}". This may indicate a circular fallback dependency.`);
         const [s, o] = function(t) {
           const e = qi.exec(t);
           if (!e) return [, ];
@@ -4464,7 +4464,7 @@ try {
                 const t = h.length,
                   e = null === h[0] ? 1 : 0;
                 u = h[e], c = Ts(u);
-                for (let n = e; n < t && null !== h[n]; n++) d ? Pe(Ts(h[n]) === d, "All keyframes must be of the same type") : (d = Ts(h[n]), Pe(d === c || Ji(c) && Ji(d), "Keyframes must be of the same dimension as the current value"))
+                for (let n = e; n < t && null !== h[n]; n++) d ? be(Ts(h[n]) === d, "All keyframes must be of the same type") : (d = Ts(h[n]), be(d === c || Ji(c) && Ji(d), "Keyframes must be of the same dimension as the current value"))
               } else d = Ts(h);
               if (c !== d)
                 if (Ji(c) && Ji(d)) {
@@ -4530,7 +4530,7 @@ try {
           } else ir.current = !1
       }
       const lr = new WeakMap,
-        ur = Object.keys(b),
+        ur = Object.keys(w),
         cr = ur.length,
         hr = ["AnimationStart", "AnimationComplete", "Update", "BeforeLayoutMeasure", "LayoutMeasure", "LayoutAnimationStart", "LayoutAnimationComplete"],
         dr = y.length;
@@ -4600,7 +4600,7 @@ try {
                 Feature: o,
                 ProjectionNode: a,
                 MeasureLayout: l
-              } = b[n];
+              } = w[n];
             a && (i = a), s(e) && (!this.features[n] && o && (this.features[n] = new o(this)), l && (r = l))
           }
           if (("html" === this.type || "svg" === this.type) && !this.projection && i) {
@@ -4664,7 +4664,7 @@ try {
               const i = e[o],
                 r = n[o];
               if (I(i)) t.addValue(o, i), ms(s) && s.add(o);
-              else if (I(r)) t.addValue(o, bs(i, {
+              else if (I(r)) t.addValue(o, ws(i, {
                 owner: t
               })), ms(s) && s.remove(o);
               else if (r !== i)
@@ -4673,7 +4673,7 @@ try {
                   !e.hasAnimated && e.set(i)
                 } else {
                   const e = t.getStaticValue(o);
-                  t.addValue(o, bs(void 0 !== e ? e : i, {
+                  t.addValue(o, ws(void 0 !== e ? e : i, {
                     owner: t
                   }))
                 }
@@ -4729,7 +4729,7 @@ try {
         getValue(t, e) {
           if (this.props.values && this.props.values[t]) return this.props.values[t];
           let n = this.values.get(t);
-          return void 0 === n && void 0 !== e && (n = bs(e, {
+          return void 0 === n && void 0 !== e && (n = ws(e, {
             owner: this
           }), this.addValue(t, n)), n
         }
@@ -4878,7 +4878,7 @@ try {
           return kt(t, e)
         }
         build(t, e, n, s) {
-          wt(t, e, n, this.isSVGTag, s.transformTemplate)
+          Pt(t, e, n, this.isSVGTag, s.transformTemplate)
         }
         renderInstance(t, e, n, s) {
           Vt(t, e, 0, s)
@@ -4904,14 +4904,14 @@ try {
           ...Xi,
           ...vr
         },
-        Pr = M(((t, e) => qt(t, e, xr, yr)));
+        br = M(((t, e) => qt(t, e, xr, yr)));
 
-      function wr(t) {
+      function Pr(t) {
         return C(qt(t, {
           forwardMotionProps: !1
         }, xr, yr))
       }
-      const br = M(qt);
+      const wr = M(qt);
 
       function Er() {
         const t = (0, s.useRef)(!1);
@@ -5028,7 +5028,7 @@ try {
           presenceAffectsLayout: r = !0,
           mode: a = "sync"
         }) => {
-          Pe(!i, "Replace exitBeforeEnter with mode='wait'");
+          be(!i, "Replace exitBeforeEnter with mode='wait'");
           const u = (0, s.useContext)(S).forceRender || Sr()[0],
             c = Er(),
             h = function(t) {
@@ -5202,10 +5202,10 @@ try {
           values: i,
           ...r
         }, a) {
-          const l = Rt((() => Pr(e))),
+          const l = Rt((() => br(e))),
             u = [],
             c = (0, s.useRef)(!1);
-          Pe(Boolean(i), "Reorder.Group must be provided a values prop");
+          be(Boolean(i), "Reorder.Group must be provided a values prop");
           const h = {
             axis: n,
             registerItem: (t, e) => {
@@ -5259,7 +5259,7 @@ try {
       }
 
       function Hr(t) {
-        const e = Rt((() => bs(t))),
+        const e = Rt((() => ws(t))),
           {
             isStatic: n
           } = (0, s.useContext)(o);
@@ -5299,9 +5299,9 @@ try {
 
       function qr(t, e, n, s) {
         if ("function" == typeof t) return function(t) {
-          Ps.current = [], t();
-          const e = Xr(Ps.current, t);
-          return Ps.current = void 0, e
+          bs.current = [], t();
+          const e = Xr(bs.current, t);
+          return bs.current = void 0, e
         }(t);
         const o = "function" == typeof e ? e : Gr(e, n, s);
         return Array.isArray(t) ? _r(t, o) : _r([t], (([t]) => o(t)))
@@ -5329,14 +5329,14 @@ try {
           layout: r = !0,
           ...a
         }, l) {
-          const u = Rt((() => Pr(o))),
+          const u = Rt((() => br(o))),
             c = (0, s.useContext)(Wr),
             h = {
               x: Zr(e.x),
               y: Zr(e.y)
             },
             d = qr([h.x, h.y], (([t, e]) => t || e ? 1 : "unset"));
-          Pe(Boolean(c), "Reorder.Item must be a child of Reorder.Group");
+          be(Boolean(c), "Reorder.Item must be a child of Reorder.Group");
           const {
             axis: p,
             registerItem: f,
@@ -5410,7 +5410,7 @@ try {
               onUpdate: s
             }), !Ht.isProcessing) {
             const t = performance.now() - Ht.timestamp;
-            t < 30 && (i.current.time = be(t))
+            t < 30 && (i.current.time = we(t))
           }
           return r.get()
         }), a)), [JSON.stringify(e)]), l((() => {
@@ -5433,7 +5433,7 @@ try {
         var s;
         if ("string" == typeof t) {
           let o = document;
-          e && (Pe(Boolean(e.current), "Scope provided, but no element detected."), o = e.current), n ? (null !== (s = n[t]) && void 0 !== s || (n[t] = o.querySelectorAll(t)), t = n[t]) : t = o.querySelectorAll(t)
+          e && (be(Boolean(e.current), "Scope provided, but no element detected."), o = e.current), n ? (null !== (s = n[t]) && void 0 !== s || (n[t] = o.querySelectorAll(t)), t = n[t]) : t = o.querySelectorAll(t)
         } else t instanceof Element && (t = [t]);
         return Array.from(t || [])
       }
@@ -5570,15 +5570,15 @@ try {
         }
         return "number" == typeof t && (s = e * t), n + s
       }
-      const Pa = [0, 0];
+      const ba = [0, 0];
 
-      function wa(t, e, n, s) {
-        let o = Array.isArray(t) ? t : Pa,
+      function Pa(t, e, n, s) {
+        let o = Array.isArray(t) ? t : ba,
           i = 0,
           r = 0;
         return "number" == typeof t ? o = [t, t] : "string" == typeof t && (o = (t = t.trim()).includes(" ") ? t.split(" ") : [t, va[t] ? t : "0"]), i = xa(o[0], n, s), r = xa(o[1], e), i - r
       }
-      const ba = {
+      const wa = {
         x: 0,
         y: 0
       };
@@ -5629,7 +5629,7 @@ try {
                   }
                 }
                 return n
-              }(o, t) : ba, l = o === t ? {
+              }(o, t) : wa, l = o === t ? {
                 width: t.scrollWidth,
                 height: t.scrollHeight
               } : function(t) {
@@ -5645,7 +5645,7 @@ try {
               let c = !e[i].interpolate;
               const h = s.length;
               for (let t = 0; t < h; t++) {
-                const n = wa(s[t], u[r], l[r], a[i]);
+                const n = Pa(s[t], u[r], l[r], a[i]);
                 c || n === e[i].interpolatorOffsets[t] || (c = !0), e[i].offset[t] = n
               }
               c && (e[i].interpolate = Tn(e[i].offset, Cn(s)), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
@@ -5718,10 +5718,10 @@ try {
         xe(Boolean(!e || e.current), `You have defined a ${t} options but the provided ref is not yet hydrated, probably because it's defined higher up the tree. Try calling useScroll() in the same component as the ref, or setting its \`layoutEffect: false\` option.`)
       }
       const ka = () => ({
-        scrollX: bs(0),
-        scrollY: bs(0),
-        scrollXProgress: bs(0),
-        scrollYProgress: bs(0)
+        scrollX: ws(0),
+        scrollY: ws(0),
+        scrollXProgress: ws(0),
+        scrollYProgress: ws(0)
       });
 
       function Da({
@@ -5774,7 +5774,7 @@ try {
         const t = Hr(0);
         return Ba((e => t.set(e))), t
       }
-      class Fa extends ws {
+      class Fa extends Ps {
         constructor() {
           super(...arguments), this.members = [], this.transforms = new Set
         }
@@ -5816,7 +5816,7 @@ try {
               e.delete(t)
             }),
             start(n, s) {
-              Pe(t, "controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+              be(t, "controls.start() should only be called after a component has mounted. Consider calling within a useEffect hook.");
               const o = [];
               return e.forEach((t => {
                 o.push(Us(t, n, {
@@ -5824,7 +5824,7 @@ try {
                 }))
               })), Promise.all(o)
             },
-            set: n => (Pe(t, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook."), e.forEach((t => {
+            set: n => (be(t, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook."), e.forEach((t => {
               ! function(t, e) {
                 Array.isArray(e) ? ks(t, e) : "string" == typeof e ? ks(t, [e]) : Ms(t, e)
               }(t, n)
@@ -5949,7 +5949,7 @@ try {
         return {
           type: "keyframes",
           ease: t => n.next(s * t).value / e,
-          duration: be(s)
+          duration: we(s)
         }
       }
 
@@ -6010,7 +6010,7 @@ try {
       function sl(t, e, n, s) {
         const o = ia(t, s),
           i = o.length;
-        Pe(Boolean(i), "No valid element provided.");
+        be(Boolean(i), "No valid element provided.");
         const r = [];
         for (let t = 0; t < i; t++) {
           const s = o[t];
@@ -6079,16 +6079,16 @@ try {
                       const e = {
                         ...p
                       };
-                      void 0 !== g && (e.duration = we(g));
+                      void 0 !== g && (e.duration = Pe(g));
                       const n = Ya(e, t);
                       f = n.ease, g = n.duration
                     }
                     null != g || (g = o);
                     const x = c + y,
-                      P = x + g;
+                      b = x + g;
                     1 === u.length && 0 === u[0] && (u[1] = 1);
-                    const w = u.length - a.length;
-                    w > 0 && An(u, w), 1 === a.length && a.unshift(null), _a(s, a, f, u, x, P), m = Math.max(y + g, m), h = Math.max(P, h)
+                    const P = u.length - a.length;
+                    P > 0 && An(u, P), 1 === a.length && a.unshift(null), _a(s, a, f, u, x, b), m = Math.max(y + g, m), h = Math.max(b, h)
                   };
                   if (I(d)) g(p, f, Ja("default", Ka(d, r)));
                   else {
@@ -6249,14 +6249,14 @@ try {
       }
 
       function xl() {
-        return Pl
+        return bl
       }
 
-      function Pl(t) {
+      function bl(t) {
         Yi.current && (Yi.current.isUpdating = !1, Yi.current.blockUpdate(), t && t())
       }
 
-      function wl() {
+      function Pl() {
         const [t, e] = Sr(), n = xl(), o = (0, s.useRef)();
         return (0, s.useEffect)((() => {
           zt.postRender((() => zt.postRender((() => {
@@ -6269,7 +6269,7 @@ try {
         }
       }
 
-      function bl() {
+      function wl() {
         Ee.current = !1
       }
 
@@ -6387,7 +6387,7 @@ try {
         const {
           visualElement: o
         } = (0, s.useContext)(i);
-        return Pe(!(!t && !o), "If no scale values are provided, useInvertedScale must be used within a child of another motion component."), xe(Fl, "useInvertedScale is deprecated and will be removed in 3.0. Use the layout prop instead."), Fl = !0, t ? (e = t.scaleX || e, n = t.scaleY || n) : o && (e = o.getValue("scaleX", 1), n = o.getValue("scaleY", 1)), {
+        return be(!(!t && !o), "If no scale values are provided, useInvertedScale must be used within a child of another motion component."), xe(Fl, "useInvertedScale is deprecated and will be removed in 3.0. Use the layout prop instead."), Fl = !0, t ? (e = t.scaleX || e, n = t.scaleY || n) : o && (e = o.getValue("scaleX", 1), n = o.getValue("scaleY", 1)), {
           scaleX: qr(e, jl),
           scaleY: qr(n, jl)
         }
@@ -6396,7 +6396,7 @@ try {
       const Ul = ({
           children: t
         }) => (s.useEffect((() => {
-          Pe(!1, "AnimateSharedLayout is deprecated: https://www.framer.com/docs/guide-upgrade/##shared-layout-animations")
+          be(!1, "AnimateSharedLayout is deprecated: https://www.framer.com/docs/guide-upgrade/##shared-layout-animations")
         }), []), s.createElement(Ur, {
           id: Rt((() => "asl-" + Ol++))
         }, t)),

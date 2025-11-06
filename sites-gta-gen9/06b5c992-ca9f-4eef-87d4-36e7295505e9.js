@@ -44,7 +44,7 @@ try {
       t.r(o), t.d(o, {
         FormattedMessage: () => r.A,
         POSIXLocales: () => w,
-        ReactIntlProviderForMocking: () => i.A,
+        ReactIntlProviderForMocking: () => a.A,
         createDevLocaleHook: () => E,
         createIntl: () => n.E,
         defineMessages: () => s.YK,
@@ -56,14 +56,14 @@ try {
         locales: () => h,
         onLanguageChange: () => j,
         splitLocale: () => $,
-        useIntl: () => a.A,
+        useIntl: () => i.A,
         withIntl: () => O
       });
       var s = t(24944),
         r = t(62486),
         n = t(47497),
-        a = t(30597),
-        i = t(9872),
+        i = t(30597),
+        a = t(9872),
         l = t(42295),
         c = t(62229),
         u = t(79867);
@@ -195,10 +195,10 @@ try {
             return o?.split("=")[1]
           })(e), r = b;
           let n = r;
-          const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            i = p(a);
-          n = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === i)) || r;
-          const [, l] = m(a, n.iso);
+          const i = `rockstarweb_lang.${o.cookieIdentifier}`,
+            a = p(i);
+          n = o.currentSite?.site === u.C.www ? h.find((e => e.subdomaincom === s)) || h.find((e => e.subdomaincom === t)) || r : h.find((e => e.iso === a)) || r;
+          const [, l] = m(i, n.iso);
           return [n, l]
         };
       var k = t(55422);
@@ -231,7 +231,7 @@ try {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, l.jsx)(i.A, {
+          return (0, l.jsx)(a.A, {
             locale: n?.locale || _(),
             messages: {
               ...n?.messages
@@ -301,8 +301,8 @@ try {
           if (s)
             for (const [r, {
                 regex: n,
-                isSubdomain: a,
-                isLocaleInUrl: i,
+                isSubdomain: i,
+                isLocaleInUrl: a,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries(x)) {
@@ -310,10 +310,10 @@ try {
               const u = t[r];
               if (!u) continue;
               let d = "";
-              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (d += "/"));
+              "en" !== o.subdomaincom && a && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === r && "/" === s.pathname && (d += "/"));
               const p = s.host.split(".");
               let m = "";
-              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (m += `https://${u}`, m += a ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`, {
+              return "www" !== r || c?.some((e => e.test(s.pathname))) ? (m += `https://${u}`, m += i ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`, {
                 link: `${m}${d}${"/"===s.pathname?"":s.pathname}${s.search}`,
                 isExternal: !0
               }) : {
@@ -338,19 +338,19 @@ try {
             [, r] = g(),
             {
               subdomaincom: n,
-              iso: a
+              iso: i
             } = e,
-            i = (e => {
+            a = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
               return h.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(n);
           o?.({
             event: "cta_other",
-            link_url: i,
+            link_url: a,
             text: n,
             element_placement: t?.toLowerCase()
-          }), r(a), window.location.href = i
+          }), r(i), window.location.href = a
         }
     },
     33019: (e, o, t) => {
@@ -440,8 +440,8 @@ try {
       var s = t(62229),
         r = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
-        i = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        i = Object.prototype.hasOwnProperty,
+        a = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -453,7 +453,7 @@ try {
         var s, n = {},
           c = null,
           u = null;
-        for (s in void 0 !== t && (c = "" + t), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) a.call(o, s) && !l.hasOwnProperty(s) && (n[s] = o[s]);
+        for (s in void 0 !== t && (c = "" + t), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) i.call(o, s) && !l.hasOwnProperty(s) && (n[s] = o[s]);
         if (e && e.defaultProps)
           for (s in o = e.defaultProps) void 0 === n[s] && (n[s] = o[s]);
         return {
@@ -462,7 +462,7 @@ try {
           key: c,
           ref: u,
           props: n,
-          _owner: i.current
+          _owner: a.current
         }
       }
       o.Fragment = n, o.jsx = c, o.jsxs = c

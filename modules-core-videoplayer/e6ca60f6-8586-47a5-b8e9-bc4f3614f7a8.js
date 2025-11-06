@@ -19,12 +19,12 @@ try {
       });
       var s = t(2295),
         n = t(2229),
-        d = t(5413),
-        r = t(2649),
+        r = t(5413),
+        d = t(2649),
         l = t(1915),
         o = t(3497),
-        c = t(5966),
-        i = t(2918);
+        i = t(5966),
+        c = t(2918);
       const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,7 +35,7 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, c.withTranslations)((({
+        g = (0, i.withTranslations)((({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
@@ -43,20 +43,20 @@ try {
           t: m
         }) => {
           const {
-            data: p
-          } = (0, i.useRockstarUser)(), {
-            track: b
-          } = (0, i.useGtmTrack)(), y = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+            data: b
+          } = (0, c.useRockstarUser)(), {
+            track: p
+          } = (0, c.useGtmTrack)(), y = (0, i.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
           } = t;
           return (0, n.useEffect)((() => {
-            b({
+            p({
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }), []), h === f.PASSED || !1 === p?.isAMinor ? a : h === f.FAILED ? (0, s.jsxs)("div", {
+          }), []), h === f.PASSED || !1 === b?.isAMinor ? a : h === f.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: j,
             children: [t?.header, (0, s.jsx)("h2", {
@@ -78,13 +78,13 @@ try {
               onSubmit: async a => {
                 a.preventDefault();
                 const t = new Date(D?.current?.value, I?.current?.value, x?.current?.value),
-                  s = (0, d.j)(new Date, {
+                  s = (0, r.j)(new Date, {
                     years: 150
                   }),
-                  n = (0, r.f)(t) && (0, l.d)(t, s);
+                  n = (0, d.f)(t) && (0, l.d)(t, s);
                 if (k(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
-                  b(a ? {
+                  p(a ? {
                     event: "age_gate_passed",
                     element_placement: g.element_placement ?? ""
                   } : {
@@ -93,7 +93,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";
-                  (0, c.setCookieValue)("UAGC", s), _(s)
+                  (0, i.setCookieValue)("UAGC", s), _(s)
                 }
               },
               "data-testid": "agegate-form",

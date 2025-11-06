@@ -25,8 +25,8 @@ try {
         g = i(92440),
         l = i(7545),
         r = i(24162),
-        c = i(85045),
-        o = i(2918);
+        o = i(85045),
+        c = i(2918);
       const d = (0, n.defineMessages)({
           cph_highlights_heading: {
             id: "cph_highlights_heading",
@@ -88,11 +88,11 @@ try {
           highlightsCount: l,
           ...r
         }) => {
-          const o = (0, n.useIntl)(),
+          const c = (0, n.useIntl)(),
             _ = (0, s.useRef)(null);
-          return (0, a.jsxs)(c.motion.div, {
+          return (0, a.jsxs)(o.motion.div, {
             "aria-hidden": !h,
-            "aria-label": o.formatMessage(d.cph_highlights_group_aria, {
+            "aria-label": c.formatMessage(d.cph_highlights_group_aria, {
               index: g + 1,
               total: l
             }),
@@ -108,11 +108,11 @@ try {
             "data-testid": "textWrapper",
             ...r,
             children: [e && (0, a.jsx)("h1", {
-              children: e || o.formatMessage(d.cph_highlights_heading)
+              children: e || c.formatMessage(d.cph_highlights_heading)
             }), t && (0, a.jsx)("h2", {
               className: p.heading,
               children: t
-            }), (0, a.jsx)(c.motion.div, {
+            }), (0, a.jsx)(o.motion.div, {
               ref: _,
               className: p.summaryText,
               dangerouslySetInnerHTML: {
@@ -153,7 +153,7 @@ try {
             }),
             {
               track: u
-            } = (0, o.useGtmTrack)(),
+            } = (0, c.useGtmTrack)(),
             [f, x] = (0, s.useState)(!1),
             [v, k] = (0, s.useState)(!1),
             [y, w] = (0, s.useState)(0),
@@ -202,7 +202,7 @@ try {
                 k(!1)
               },
               children: [e.length > 1 && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(c.motion.button, {
+                children: [(0, a.jsx)(o.motion.button, {
                   ref: T,
                   type: "button",
                   "aria-label": i.formatMessage(d.cph_highlights_previous),
@@ -214,7 +214,7 @@ try {
                     }), I && I.slidePrev()
                   },
                   disabled: y < 1
-                }), (0, a.jsx)(c.motion.button, {
+                }), (0, a.jsx)(o.motion.button, {
                   ref: R,
                   type: "button",
                   "aria-label": i.formatMessage(d.cph_highlights_next),

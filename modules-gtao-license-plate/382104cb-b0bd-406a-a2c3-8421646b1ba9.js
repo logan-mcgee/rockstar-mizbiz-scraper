@@ -108,8 +108,8 @@ try {
           var f = c.dataLocale,
             p = _[f];
           (0, n.invariant)(!!p, "Missing locale data for ".concat(f));
-          var y = p[d][u];
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
+          var b = p[d][u];
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", b.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", b.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", b.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", b.end)
         }
         return e.prototype.format = function(t) {
           o(this, "format");

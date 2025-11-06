@@ -52,8 +52,8 @@ try {
           return o.getFullYear() - r.getFullYear()
         }(o, d));
         o.setFullYear(1584), d.setFullYear(1584);
-        const f = s * (i - +(r(o, d) === -s));
-        return 0 === f ? 0 : f
+        const u = s * (i - +(r(o, d) === -s));
+        return 0 === u ? 0 : u
       }
     },
     5e3: (e, t, n) => {
@@ -97,11 +97,11 @@ try {
           years: o = 0,
           months: s = 0,
           weeks: i = 0,
-          days: f = 0,
-          hours: u = 0,
+          days: u = 0,
+          hours: f = 0,
           minutes: l = 0,
           seconds: c = 0
-        } = t, b = r(d(e, s + 12 * o, n), f + 7 * i, n), y = 1e3 * (c + 60 * (l + 60 * u));
+        } = t, b = r(d(e, s + 12 * o, n), u + 7 * i, n), y = 1e3 * (c + 60 * (l + 60 * f));
         return (0, a.w)(n?.in || e, +b - y)
       }
     },

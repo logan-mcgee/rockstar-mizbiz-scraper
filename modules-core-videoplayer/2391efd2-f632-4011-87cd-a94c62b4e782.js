@@ -13,35 +13,35 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [1773, 4154], {
-    4154: (e, n, d) => {
-      d.r(n), d.d(n, {
-        useGSAP: () => u
+    4154: (e, n, t) => {
+      t.r(n), t.d(n, {
+        useGSAP: () => c
       });
-      var t = d(2229),
-        a = d(3581),
-        r = d.n(a);
-      let o = "undefined" != typeof document ? t.useLayoutEffect : t.useEffect,
+      var d = t(2229),
+        r = t(3581),
+        o = t.n(r);
+      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         l = {},
-        c = r();
-      const u = (e, n = f) => {
-        let d = l;
-        s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : f) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        u = o();
+      const c = (e, n = f) => {
+        let t = l;
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: a,
-          revertOnUpdate: r
-        } = d, u = (0, t.useRef)(!1), i = (0, t.useRef)(c.context((() => {}), a)), y = (0, t.useRef)((e => i.current.add(null, e))), p = n && n.length && !r;
-        return p && o((() => (u.current = !0, () => i.current.revert())), f), o((() => {
-          if (e && i.current.add(e, a), !p || !u.current) return () => i.current.revert()
+          scope: r,
+          revertOnUpdate: o
+        } = t, c = (0, d.useRef)(!1), i = (0, d.useRef)(u.context((() => {}), r)), b = (0, d.useRef)((e => i.current.add(null, e))), y = n && n.length && !o;
+        return y && a((() => (c.current = !0, () => i.current.revert())), f), a((() => {
+          if (e && i.current.add(e, r), !y || !c.current) return () => i.current.revert()
         }), n), {
           context: i.current,
-          contextSafe: y.current
+          contextSafe: b.current
         }
       };
-      u.register = e => {
-        c = e
-      }, u.headless = !0
+      c.register = e => {
+        u = e
+      }, c.headless = !0
     }
   }
 ]);

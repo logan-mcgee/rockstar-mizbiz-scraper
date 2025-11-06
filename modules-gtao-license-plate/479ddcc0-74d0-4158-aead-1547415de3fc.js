@@ -16,25 +16,25 @@ try {
     30068: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => c,
+        Lightbox_Close_Button_Tooltip: () => l,
+        Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => p
+        default: () => c
       });
       var _ = "Cerrar",
-        a = "Presiona {shortcut}",
-        l = "Acercar",
+        l = "Presiona {shortcut}",
+        a = "Acercar",
         i = "Presiona {shortcut}",
         n = "Alejar",
         d = "Presiona {shortcut}",
@@ -46,11 +46,11 @@ try {
         h = "Descargar",
         L = "Abrir imagen",
         f = "Imagen",
-        c = "Texto alt: {alt}",
-        p = {
+        p = "Texto alt: {alt}",
+        c = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Close_Button_Tooltip: l,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: d,
@@ -62,7 +62,7 @@ try {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Description: p
         }
     }
   }

@@ -173,7 +173,7 @@ try {
       "use strict";
       t.d(o, {
         YK: () => s.YK,
-        JK: () => b,
+        JK: () => f,
         tz: () => r.A,
         QY: () => g
       });
@@ -182,8 +182,8 @@ try {
         n = t(2295),
         i = t(2229),
         a = t(1514),
-        d = t(9867);
-      const u = (e, o) => {
+        u = t(9867);
+      const d = (e, o) => {
           if (!e || !o) return void console.log(`Couldn't set cookie (${e}) to value (${o})`);
           const t = window.location.hostname.split("."),
             s = t.slice(t.length - 2).join(".");
@@ -289,12 +289,12 @@ try {
           store: "zh-CN"
         }],
         p = c[0],
-        f = c,
-        b = () => {
+        b = c,
+        f = () => {
           const {
             location: e
-          } = window, o = (0, d.A)(), t = (e => {
-            const o = f.map((e => e.subdomaincom)),
+          } = window, o = (0, u.A)(), t = (e => {
+            const o = b.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               s = "detect-locals" === t[0] ? 1 : 0;
             return -1 !== o.indexOf(t[s]) ? t[s] : null
@@ -305,11 +305,11 @@ try {
           let n = r;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
             a = l(i);
-          n = o.currentSite?.site === d.C.www ? f.find((e => e.subdomaincom === s)) || f.find((e => e.subdomaincom === t)) || r : f.find((e => e.iso === a)) || r;
+          n = o.currentSite?.site === u.C.www ? b.find((e => e.subdomaincom === s)) || b.find((e => e.subdomaincom === t)) || r : b.find((e => e.iso === a)) || r;
           const [, c] = ((e, o, t = !1) => {
             const s = l(e);
-            return s && !t || u(e, o), [s, (r = e, e => {
-              u(r, e)
+            return s && !t || d(e, o), [s, (r = e, e => {
+              d(r, e)
             })];
             var r
           })(i, n.iso);
@@ -329,10 +329,10 @@ try {
 
       function g(e, o, t, s) {
         return r => {
-          const d = (0, i.useMemo)((() => {
+          const u = (0, i.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
-                const t = o ?? b()[0].iso ?? w(),
+                const t = o ?? f()[0].iso ?? w(),
                   [, s] = [h(t), k(e, t)];
                 var r;
                 return {
@@ -346,12 +346,12 @@ try {
             }(o, t)
           }), [t]);
           return (0, n.jsx)(a.A, {
-            locale: d?.locale || w(),
+            locale: u?.locale || w(),
             messages: {
-              ...d?.messages
+              ...u?.messages
             },
             onError: s,
-            children: d && (0, n.jsx)(e, {
+            children: u && (0, n.jsx)(e, {
               ...r
             })
           }, "intl-provider")

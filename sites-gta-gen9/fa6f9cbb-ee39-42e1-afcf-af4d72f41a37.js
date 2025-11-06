@@ -20,11 +20,11 @@ try {
         throw new Error("setTimeout has not been defined")
       }
 
-      function a() {
+      function i() {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function i(e) {
+      function a(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -43,31 +43,31 @@ try {
           t = o
         }
         try {
-          n = "function" == typeof clearTimeout ? clearTimeout : a
+          n = "function" == typeof clearTimeout ? clearTimeout : i
         } catch (e) {
-          n = a
+          n = i
         }
       }();
       var s, f = [],
         u = !1,
-        d = -1;
+        l = -1;
 
-      function l() {
-        u && s && (u = !1, s.length ? f = s.concat(f) : d = -1, f.length && c())
+      function d() {
+        u && s && (u = !1, s.length ? f = s.concat(f) : l = -1, f.length && c())
       }
 
       function c() {
         if (!u) {
-          var e = i(l);
+          var e = a(d);
           u = !0;
           for (var t = f.length; t;) {
-            for (s = f, f = []; ++d < t;) s && s[d].run();
-            d = -1, t = f.length
+            for (s = f, f = []; ++l < t;) s && s[l].run();
+            l = -1, t = f.length
           }
           s = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
-              if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+              if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
               try {
                 return n(e)
               } catch (t) {
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        f.push(new h(e, t)), 1 !== f.length || u || i(c)
+        f.push(new h(e, t)), 1 !== f.length || u || a(c)
       }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = g, r.addListener = g, r.once = g, r.off = g, r.removeListener = g, r.removeAllListeners = g, r.emit = g, r.prependListener = g, r.prependOnceListener = g, r.listeners = function(e) {

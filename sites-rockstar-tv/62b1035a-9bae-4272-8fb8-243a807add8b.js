@@ -21,11 +21,11 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var d = String(e).split("."),
-              t = d[0],
-              n = !d[1],
-              l = t.slice(-1),
-              o = t.slice(-2);
+            var t = String(e).split("."),
+              d = t[0],
+              n = !t[1],
+              l = d.slice(-1),
+              o = d.slice(-2);
             return a ? "other" : n && 1 == l && 11 != o ? "one" : n && l >= 2 && l <= 4 && (o < 12 || o > 14) ? "few" : n && 0 == l || n && l >= 5 && l <= 9 || n && o >= 11 && o <= 14 ? "many" : "other"
           }
         },

@@ -77,12 +77,12 @@ try {
       v("Background Image Gradient"), ((e = "Label") => {
         e.toLowerCase().split(" ").join("_")
       })("Background Image Gradient"), v("Background Image Gradient"), i(8613);
-      const g = (e = "") => ({
+      const b = (e = "") => ({
         label: `${e} Line`,
         name: `${e}_line`,
         component: () => (0, n.jsx)("hr", {})
       });
-      var b, w = i(1098),
+      var g, w = i(1098),
         y = function() {
           return y = Object.assign || function(e) {
             for (var t, i = 1, n = arguments.length; i < n; i++)
@@ -172,22 +172,22 @@ try {
             children: o
           })
         })),
-        E = (b = function(e, t) {
-          return b = Object.setPrototypeOf || {
+        E = (g = function(e, t) {
+          return g = Object.setPrototypeOf || {
             __proto__: []
           }
           instanceof Array && function(e, t) {
             e.__proto__ = t
           } || function(e, t) {
             for (var i in t) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i])
-          }, b(e, t)
+          }, g(e, t)
         }, function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
 
           function i() {
             this.constructor = e
           }
-          b(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i)
+          g(e, t), e.prototype = null === t ? Object.create(t) : (i.prototype = t.prototype, new i)
         }),
         R = function() {
           return R = Object.assign || function(e) {
@@ -404,8 +404,8 @@ try {
               f = d.width,
               m = d.height,
               v = c || 0,
-              g = u || 0;
-            return j("right", l) && (f = d.width + (e - d.x) * s / n, p && (m = (f - g) / this.ratio + v)), j("left", l) && (f = d.width - (e - d.x) * s / n, p && (m = (f - g) / this.ratio + v)), j("bottom", l) && (m = d.height + (t - d.y) * r / n, p && (f = (m - v) * this.ratio + g)), j("top", l) && (m = d.height - (t - d.y) * r / n, p && (f = (m - v) * this.ratio + g)), {
+              b = u || 0;
+            return j("right", l) && (f = d.width + (e - d.x) * s / n, p && (m = (f - b) / this.ratio + v)), j("left", l) && (f = d.width - (e - d.x) * s / n, p && (m = (f - b) / this.ratio + v)), j("bottom", l) && (m = d.height + (t - d.y) * r / n, p && (f = (m - v) * this.ratio + b)), j("top", l) && (m = d.height - (t - d.y) * r / n, p && (f = (m - v) * this.ratio + b)), {
               newWidth: f,
               newHeight: m
             }
@@ -424,12 +424,12 @@ try {
               var f = (h - c) * this.ratio + u,
                 m = (p - c) * this.ratio + u,
                 v = (l - u) / this.ratio + c,
-                g = (d - u) / this.ratio + c,
-                b = Math.max(l, f),
+                b = (d - u) / this.ratio + c,
+                g = Math.max(l, f),
                 w = Math.min(d, m),
                 y = Math.max(h, v),
-                k = Math.min(p, g);
-              e = L(e, b, w), t = L(t, y, k)
+                k = Math.min(p, b);
+              e = L(e, g, w), t = L(t, y, k)
             } else e = L(e, l, d), t = L(t, h, p);
             return {
               newWidth: e,
@@ -522,42 +522,42 @@ try {
                 }(f, this.window.innerWidth, this.window.innerHeight, n, o, s, r);
               n = m.maxWidth, o = m.maxHeight, s = m.minWidth, r = m.minHeight;
               var v = this.calculateNewSizeFromDirection(a, l),
-                g = v.newHeight,
-                b = v.newWidth,
+                b = v.newHeight,
+                g = v.newWidth,
                 y = this.calculateNewMaxFromBoundary(n, o);
-              this.props.snap && this.props.snap.x && (b = D(b, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (g = D(g, this.props.snap.y, this.props.snapGap));
-              var k = this.calculateNewSizeFromAspectRatio(b, g, {
+              this.props.snap && this.props.snap.x && (g = D(g, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (b = D(b, this.props.snap.y, this.props.snapGap));
+              var k = this.calculateNewSizeFromAspectRatio(g, b, {
                 width: y.maxWidth,
                 height: y.maxHeight
               }, {
                 width: s,
                 height: r
               });
-              if (b = k.newWidth, g = k.newHeight, this.props.grid) {
-                var z = W(b, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
-                  x = W(g, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
+              if (g = k.newWidth, b = k.newHeight, this.props.grid) {
+                var z = W(g, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
+                  x = W(b, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
                   S = this.props.snapGap || 0;
-                b = 0 === S || Math.abs(z - b) <= S ? z : b, g = 0 === S || Math.abs(x - g) <= S ? x : g
+                g = 0 === S || Math.abs(z - g) <= S ? z : g, b = 0 === S || Math.abs(x - b) <= S ? x : b
               }
               var N = {
-                width: b - p.width,
-                height: g - p.height
+                width: g - p.width,
+                height: b - p.height
               };
               if (this.delta = N, c && "string" == typeof c)
                 if (c.endsWith("%")) {
-                  var E = b / f.width * 100;
-                  b = "".concat(E, "%")
+                  var E = g / f.width * 100;
+                  g = "".concat(E, "%")
                 } else if (c.endsWith("vw")) {
-                var R = b / this.window.innerWidth * 100;
-                b = "".concat(R, "vw")
+                var R = g / this.window.innerWidth * 100;
+                g = "".concat(R, "vw")
               } else if (c.endsWith("vh")) {
-                var _ = b / this.window.innerHeight * 100;
-                b = "".concat(_, "vh")
+                var _ = g / this.window.innerHeight * 100;
+                g = "".concat(_, "vh")
               }
-              u && "string" == typeof u && (u.endsWith("%") ? (E = g / f.height * 100, g = "".concat(E, "%")) : u.endsWith("vw") ? (R = g / this.window.innerWidth * 100, g = "".concat(R, "vw")) : u.endsWith("vh") && (_ = g / this.window.innerHeight * 100, g = "".concat(_, "vh")));
+              u && "string" == typeof u && (u.endsWith("%") ? (E = b / f.height * 100, b = "".concat(E, "%")) : u.endsWith("vw") ? (R = b / this.window.innerWidth * 100, b = "".concat(R, "vw")) : u.endsWith("vh") && (_ = b / this.window.innerHeight * 100, b = "".concat(_, "vh")));
               var L = {
-                width: this.createSizeForCssProperty(b, "width"),
-                height: this.createSizeForCssProperty(g, "height")
+                width: this.createSizeForCssProperty(g, "width"),
+                height: this.createSizeForCssProperty(b, "height")
               };
               "row" === this.flexDir ? L.flexBasis = L.width : "column" === this.flexDir && (L.flexBasis = L.height);
               var j = this.state.width !== L.width,
@@ -706,9 +706,9 @@ try {
             })]
           })
         },
-        P = (g("Background Image Gradient"), ((e = "Label") => {
+        P = (b("Background Image Gradient"), ((e = "Label") => {
           e.toLowerCase().split(" ").join("_")
-        })("Background Image Gradient"), g("Background Image Gradient"), () => ({
+        })("Background Image Gradient"), b("Background Image Gradient"), () => ({
           name: "hero",
           label: "Is this a lead asset?",
           component: "toggle",

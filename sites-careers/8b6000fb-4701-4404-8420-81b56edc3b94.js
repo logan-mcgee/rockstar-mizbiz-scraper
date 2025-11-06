@@ -157,11 +157,11 @@ try {
             y = void 0 !== p && p,
             m = s.id,
             h = void 0 === m ? "" : m,
-            g = s.appendTo,
-            b = h || "google-recaptcha-v3";
+            b = s.appendTo,
+            g = h || "google-recaptcha-v3";
           if (function(e) {
               return !!document.querySelector("#" + e)
-            }(b)) o();
+            }(g)) o();
           else {
             var v = function(e) {
                 return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
@@ -170,7 +170,7 @@ try {
                 useRecaptchaNet: a
               }),
               w = document.createElement("script");
-            w.id = b, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+            w.id = g, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === b ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
           }
         },
         l = function(e) {
@@ -193,10 +193,10 @@ try {
           y = e.scriptProps,
           m = e.language,
           h = e.container,
-          g = e.children,
-          b = (0, o.useState)(null),
-          v = b[0],
-          w = b[1],
+          b = e.children,
+          g = (0, o.useState)(null),
+          v = g[0],
+          w = g[1],
           C = (0, o.useRef)(t),
           S = JSON.stringify(y),
           E = JSON.stringify(null == h ? void 0 : h.parameters);
@@ -251,7 +251,7 @@ try {
           }), [T, v, null == h ? void 0 : h.element]);
         return a().createElement(f.Provider, {
           value: P
-        }, g)
+        }, b)
       }
       var y = function() {
         return (0, o.useContext)(f)
@@ -388,31 +388,31 @@ try {
           exports: {}
         }, t.exports), t.exports
       }
-      var g = "function" == typeof Symbol && Symbol.for,
-        b = g ? Symbol.for("react.element") : 60103,
-        v = g ? Symbol.for("react.portal") : 60106,
-        w = g ? Symbol.for("react.fragment") : 60107,
-        C = g ? Symbol.for("react.strict_mode") : 60108,
-        S = g ? Symbol.for("react.profiler") : 60114,
-        E = g ? Symbol.for("react.provider") : 60109,
-        T = g ? Symbol.for("react.context") : 60110,
-        P = g ? Symbol.for("react.async_mode") : 60111,
-        R = g ? Symbol.for("react.concurrent_mode") : 60111,
-        x = g ? Symbol.for("react.forward_ref") : 60112,
-        $ = g ? Symbol.for("react.suspense") : 60113,
-        k = g ? Symbol.for("react.suspense_list") : 60120,
-        _ = g ? Symbol.for("react.memo") : 60115,
-        M = g ? Symbol.for("react.lazy") : 60116,
-        N = g ? Symbol.for("react.block") : 60121,
-        O = g ? Symbol.for("react.fundamental") : 60117,
-        L = g ? Symbol.for("react.responder") : 60118,
-        G = g ? Symbol.for("react.scope") : 60119;
+      var b = "function" == typeof Symbol && Symbol.for,
+        g = b ? Symbol.for("react.element") : 60103,
+        v = b ? Symbol.for("react.portal") : 60106,
+        w = b ? Symbol.for("react.fragment") : 60107,
+        C = b ? Symbol.for("react.strict_mode") : 60108,
+        S = b ? Symbol.for("react.profiler") : 60114,
+        E = b ? Symbol.for("react.provider") : 60109,
+        T = b ? Symbol.for("react.context") : 60110,
+        P = b ? Symbol.for("react.async_mode") : 60111,
+        R = b ? Symbol.for("react.concurrent_mode") : 60111,
+        x = b ? Symbol.for("react.forward_ref") : 60112,
+        $ = b ? Symbol.for("react.suspense") : 60113,
+        k = b ? Symbol.for("react.suspense_list") : 60120,
+        _ = b ? Symbol.for("react.memo") : 60115,
+        M = b ? Symbol.for("react.lazy") : 60116,
+        N = b ? Symbol.for("react.block") : 60121,
+        O = b ? Symbol.for("react.fundamental") : 60117,
+        L = b ? Symbol.for("react.responder") : 60118,
+        G = b ? Symbol.for("react.scope") : 60119;
 
       function j(e) {
         if ("object" == typeof e && null !== e) {
           var t = e.$$typeof;
           switch (t) {
-            case b:
+            case g:
               switch (e = e.type) {
                 case P:
                 case R:
@@ -447,7 +447,7 @@ try {
           ConcurrentMode: R,
           ContextConsumer: T,
           ContextProvider: E,
-          Element: b,
+          Element: g,
           ForwardRef: x,
           Fragment: w,
           Lazy: M,
@@ -467,7 +467,7 @@ try {
             return j(e) === E
           },
           isElement: function(e) {
-            return "object" == typeof e && null !== e && e.$$typeof === b
+            return "object" == typeof e && null !== e && e.$$typeof === g
           },
           isForwardRef: function(e) {
             return j(e) === x
