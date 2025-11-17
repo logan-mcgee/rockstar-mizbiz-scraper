@@ -1,0 +1,64 @@
+try {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    s = (new e.Error).stack;
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "d0f5e9d9-2ed0-47e2-87fd-49bc981e606c", e._sentryDebugIdIdentifier = "sentry-dbid-d0f5e9d9-2ed0-47e2-87fd-49bc981e606c")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+    release: "sentry-release-id",
+    packageName: "@rockstargames/sites-rockstargames",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
+  [9831], {
+    56992: (e, s, t) => {
+      t.r(s), t.d(s, {
+        default: () => f
+      });
+      var d = t(42295),
+        a = t(62229),
+        o = t(9623),
+        n = t(15221),
+        l = t(31879),
+        i = t(95966),
+        r = t(87790);
+      const f = (0, i.withTranslations)(({
+        t: e
+      }) => {
+        const [s] = (0, o.useSearchParams)(), t = (0, o.useNavigate)(), {
+          setNormalLogo: i,
+          setBreadcrumb: f,
+          setTitle: c
+        } = (0, r.b)(), {
+          videoId: u
+        } = (0, o.useParams)(), {
+          video: g,
+          related: b
+        } = (0, l.useVideoData)({
+          id: u
+        }), y = s.get("resolution") ?? "_auto";
+        return (0, a.useEffect)(() => (f([{
+          href: "/videos",
+          title: e("Videos")
+        }]), i(!1), () => {
+          i(!0), f()
+        }), []), (0, a.useEffect)(() => {
+          g && c(`${g.game.title} - ${g.title}`)
+        }, [g]), g && u ? (0, d.jsxs)(d.Fragment, {
+          children: [(0, d.jsx)(l.PlayerWithInfo, {
+            resolution: y,
+            videoId: u,
+            videoChangeCallback: e => {
+              t(`../videos/${e}`)
+            }
+          }), b?.results?.length ? (0, d.jsx)(n.A, {
+            vids: b.results,
+            title: e("Related Videos")
+          }) : ""]
+        }) : null
+      })
+    }
+  }
+]);
