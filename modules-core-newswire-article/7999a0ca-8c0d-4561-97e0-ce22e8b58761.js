@@ -45,12 +45,12 @@ try {
         a = n(93452),
         i = n(9482),
         c = n(58128),
-        d = n(45547);
-      const u = {
+        u = n(45547);
+      const d = {
           token: (0, o.UT)("")
         },
         l = (0, i.A)({
-          context: (0, s.createContext)(u),
+          context: (0, s.createContext)(d),
           key: "utilsTokenProvider"
         }),
         w = ({
@@ -79,7 +79,7 @@ try {
           }) => {
             const {
               pingBearer: t
-            } = (0, d.A)();
+            } = (0, u.A)();
             try {
               const n = e?.() ?? "";
               if (n) {
@@ -129,14 +129,14 @@ try {
           graphEnv: a,
           queryManifest: i,
           scHost: c,
-          hostname: d,
-          cdnBase: u,
+          hostname: u,
+          cdnBase: d,
           key: l,
           marketingAuthTLD: w
         }) => {
           const m = r?.apiHost ?? e,
             h = r?.authHost ?? t,
-            f = r?.cdnBase ?? u,
+            f = r?.cdnBase ?? d,
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
@@ -145,7 +145,7 @@ try {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: v,
-            hostname: d,
+            hostname: u,
             cdnBase: f,
             key: l,
             clientId: g,
@@ -239,7 +239,7 @@ try {
             max: 99999
           }
         },
-        d = () => {
+        u = () => {
           const e = window.innerWidth,
             t = window.innerHeight,
             n = c;
@@ -262,31 +262,31 @@ try {
             windowHeight: t
           }
         },
-        u = (0, i.A)({
-          context: (0, s.createContext)(d()),
+        d = (0, i.A)({
+          context: (0, s.createContext)(u()),
           key: "resizeContext"
         }),
         {
           Consumer: l
-        } = u,
-        w = (0, a.UT)(d()),
+        } = d,
+        w = (0, a.UT)(u()),
         m = ({
           children: e
         }) => {
           const t = (0, o.q)(w);
           return (0, s.useEffect)(() => {
             const e = () => {
-              w(d())
+              w(u())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }, []), (0, r.jsx)(u.Provider, {
+          }, []), (0, r.jsx)(d.Provider, {
             value: t,
             children: e
           })
         },
-        h = () => (0, s.useContext)(u)
+        h = () => (0, s.useContext)(d)
     },
     52690: (e, t, n) => {
       n.d(t, {
@@ -303,17 +303,17 @@ try {
       n.d(t, {
         RK: () => s,
         bn: () => L,
-        vx: () => b,
+        vx: () => k,
         sb: () => x,
         Ym: () => a.A,
         CA: () => y.useNewswirePost,
         OG: () => i,
-        ZC: () => u,
-        sq: () => d,
+        ZC: () => d,
+        sq: () => u,
         OH: () => p,
         zP: () => v,
         Cb: () => m,
-        N6: () => k,
+        N6: () => b,
         GA: () => T,
         JE: () => M
       });
@@ -339,13 +339,13 @@ try {
         }, [e]), [t, a]
       };
       var c = n(9623);
-      const d = () => {
+      const u = () => {
           const {
             search: e
           } = (0, c.useLocation)();
           return new URLSearchParams(e)
         },
-        u = e => {
+        d = e => {
           const t = (0, o.useRef)();
           return (0, o.useEffect)(() => {
             t.current = e
@@ -360,31 +360,31 @@ try {
       }) => {
         const s = (0, l.Es)(),
           [a, i] = (0, o.useState)(null),
-          [c, d] = (0, o.useState)(!1),
-          [u, m] = (0, o.useState)(null),
+          [c, u] = (0, o.useState)(!1),
+          [d, m] = (0, o.useState)(null),
           h = (0, o.useCallback)(async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: a = {}
               } = t;
-              m(null), i(null), d(!0);
+              m(null), i(null), u(!0);
               const c = await (0, w.A)(o ?? e, {
                 pingBearer: s,
                 fetchOptions: n,
                 finalFetchOptions: a,
                 query: r
               });
-              return c?.status || m(JSON.stringify(c?.error)), i(c), d(!1), c
+              return c?.status || m(JSON.stringify(c?.error)), i(c), u(!1), c
             } catch (e) {
-              m(String(e)), d(!1)
+              m(String(e)), u(!1)
             }
             return null
           }, [e, n, r]);
         return (0, o.useEffect)(() => {
-          null === a && null === u && !c && t && h()
-        }, [t, a, u, c, h]), {
+          null === a && null === d && !c && t && h()
+        }, [t, a, d, c, h]), {
           data: a,
-          error: u,
+          error: d,
           loading: c,
           fetch: h
         }
@@ -427,7 +427,7 @@ try {
         };
       var y = n(89656),
         E = (n(95342), n(17954));
-      const k = e => {
+      const b = e => {
         const {
           signup: t,
           login: n
@@ -439,7 +439,7 @@ try {
         }
       };
       n(50437);
-      const b = () => {
+      const k = () => {
           const [e, t] = (0, o.useState)(!1);
           return (0, o.useEffect)(() => {
             const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
@@ -477,7 +477,7 @@ try {
             numberOfLogicalProcessors: s
           } = (0, S.xV)(), {
             saveData: a
-          } = (0, S.zp)(), i = b(), c = () => {
+          } = (0, S.zp)(), i = k(), c = () => {
             const o = (() => {
               const e = e => !1 === e;
               if (i) return !1;
@@ -485,9 +485,9 @@ try {
               const t = "Safari" === C.C0,
                 o = "Firefox" === C.C0,
                 c = r && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(r),
-                d = s && s >= 4,
-                u = n && n >= 4;
-              return !(e(!a) || e(c) || e(d) || !t && !o && e(u))
+                u = s && s >= 4,
+                d = n && n >= 4;
+              return !(e(!a) || e(c) || e(u) || !t && !o && e(d))
             })();
             o !== e && t(o)
           };
@@ -552,16 +552,16 @@ try {
         a = n(16188),
         i = n.n(a),
         c = n(45547),
-        d = n(17954);
+        u = n(17954);
       const {
-        apiHost: u
-      } = (0, c.A)(), l = (0, d.t)(document.documentElement.lang), w = {}, m = async (e, {
+        apiHost: d
+      } = (0, c.A)(), l = (0, u.t)(document.documentElement.lang), w = {}, m = async (e, {
         fetchOptions: t = {},
         finalFetchOptions: n = {},
         query: s = null,
         pingBearer: a,
         requireBearerToken: c = !0,
-        useCache: d = !0
+        useCache: u = !0
       } = {}) => {
         try {
           const {
@@ -574,7 +574,7 @@ try {
               "X-lang": l
             }
           };
-          let f = `${u}/${e}`;
+          let f = `${d}/${e}`;
           if (null === s || i().isEmpty(s) || (f += `?${new URLSearchParams(s)}`), !m && c) return null;
           m && (h.Authorization = `Bearer ${m}`);
           const g = {
@@ -586,7 +586,7 @@ try {
               url: f
             }),
             y = await (0, r.sc)(v);
-          if (d) {
+          if (u) {
             if (w[y]?.response) return w[y].response;
             if (w[y]?.loading) return {
               error: null,
@@ -597,11 +597,11 @@ try {
             }
           }
           const E = await fetch(f, p),
-            k = await E.json();
-          return d && (w[y] = {
-            response: k,
+            b = await E.json();
+          return u && (w[y] = {
+            response: b,
             loading: !1
-          }), k
+          }), b
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -656,12 +656,12 @@ try {
           key: "freezeUserShouldSeeMoreReactive",
           value: (0, a.UT)(!1)
         }),
-        d = e => c(e),
-        u = (0, i.A)({
+        u = e => c(e),
+        d = (0, i.A)({
           context: (0, s.createContext)(null),
           key: "scrollContext"
         }),
-        l = () => (0, s.useContext)(u),
+        l = () => (0, s.useContext)(d),
         w = ({
           children: e
         }) => {
@@ -682,12 +682,12 @@ try {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [l, m]), (0, s.useMemo)(() => (0, r.jsx)(u.Provider, {
+          }, [l, m]), (0, s.useMemo)(() => (0, r.jsx)(d.Provider, {
             value: {
               freezeUserShouldSeeMore: m,
               pageYOffset: t,
               pauseUserShouldSeeMore: f,
-              setFreezeUserShouldSeeMore: d,
+              setFreezeUserShouldSeeMore: u,
               userShouldSeeMore: a
             },
             children: e

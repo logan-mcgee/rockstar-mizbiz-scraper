@@ -15,33 +15,33 @@ try {
   [1773, 4154], {
     44154: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => l
+        useGSAP: () => u
       });
-      var d = t(62229),
-        a = t(42828),
-        s = t.n(a);
-      let r = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+      var a = t(62229),
+        d = t(42828),
+        s = t.n(d);
+      let r = "undefined" != typeof document ? a.useLayoutEffect : a.useEffect,
         o = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
-        c = {},
-        i = s();
-      const l = (e, n = f) => {
-        let t = c;
+        i = {},
+        l = s();
+      const u = (e, n = f) => {
+        let t = i;
         o(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : o(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: a,
+          scope: d,
           revertOnUpdate: s
-        } = t, l = (0, d.useRef)(!1), u = (0, d.useRef)(i.context(() => {}, a)), b = (0, d.useRef)(e => u.current.add(null, e)), g = n && n.length && !s;
-        return g && r(() => (l.current = !0, () => u.current.revert()), f), r(() => {
-          if (e && u.current.add(e, a), !g || !l.current) return () => u.current.revert()
+        } = t, u = (0, a.useRef)(!1), c = (0, a.useRef)(l.context(() => {}, d)), b = (0, a.useRef)(e => c.current.add(null, e)), g = n && n.length && !s;
+        return g && r(() => (u.current = !0, () => c.current.revert()), f), r(() => {
+          if (e && c.current.add(e, d), !g || !u.current) return () => c.current.revert()
         }, n), {
-          context: u.current,
+          context: c.current,
           contextSafe: b.current
         }
       };
-      l.register = e => {
-        i = e
-      }, l.headless = !0
+      u.register = e => {
+        l = e
+      }, u.headless = !0
     }
   }
 ]);

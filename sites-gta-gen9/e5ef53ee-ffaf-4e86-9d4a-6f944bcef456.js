@@ -70,9 +70,9 @@ try {
               p = Object.prototype.toString.call(u),
               y = t(u),
               m = "[object Object]" === p || "[object Array]" === p,
-              g = c ? c + o + a(d) : a(d);
-            if (!f && !y && m && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, g, l + 1);
-            i[g] = u
+              b = c ? c + o + a(d) : a(d);
+            if (!f && !y && m && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, b, l + 1);
+            i[b] = u
           })
         }(e), i
       }
@@ -126,7 +126,7 @@ try {
         useImageParser: () => S.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => f.i,
-        useTranslations: () => g
+        useTranslations: () => b
       });
       var r = n(42295),
         o = n(62229),
@@ -152,7 +152,7 @@ try {
         p = n(90287),
         y = n.n(p),
         m = n(42783);
-      const g = ({
+      const b = ({
         payload: e,
         variables: t
       }) => {
@@ -176,7 +176,7 @@ try {
           })(n)
         }), o
       };
-      var b = n(11206),
+      var g = n(11206),
         _ = n(2918);
       const h = {
           event: "page_section_impression",
@@ -248,7 +248,7 @@ try {
                   }
                 }),
                 f = [...i?.translations ?? []].reverse(),
-                p = `componentProps_${(0,b.A)()}`;
+                p = `componentProps_${(0,g.A)()}`;
               return (0, o.createElement)(u, {
                 ...t?.meta,
                 ...i,
@@ -309,13 +309,13 @@ try {
             }, [e]), t
           })({
             payload: i
-          }), b = g({
+          }), g = b({
             payload: i,
             variables: l
           });
           return (0, o.useMemo)(() => {
             if (!i) return null;
-            const t = b,
+            const t = g,
               o = i?.meta?.prod ?? i?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
               a = {
                 ...i,
@@ -338,7 +338,7 @@ try {
                 })
               })
             })
-          }, [s, i, JSON.stringify(m), JSON.stringify(b)])
+          }, [s, i, JSON.stringify(m), JSON.stringify(g)])
         };
       var S = n(34725);
       const v = (e = "", t = 0, n = {}, r = () => {}) => {

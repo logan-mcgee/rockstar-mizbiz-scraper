@@ -1,26 +1,26 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     n = (new e.Error).stack;
-  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "d11dd64c-b38f-4e34-98dd-e067c3183a58", e._sentryDebugIdIdentifier = "sentry-dbid-d11dd64c-b38f-4e34-98dd-e067c3183a58")
+  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "3fb50e0b-c6af-44a4-bf73-e99422a4da79", e._sentryDebugIdIdentifier = "sentry-dbid-3fb50e0b-c6af-44a4-bf73-e99422a4da79")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
     release: "sentry-release-id",
-    packageName: "@rockstargames/modules-core-newswire-article",
+    packageName: "@rockstargames/sites-gta-gen9",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [7678], {
-    25022: (e, n, a) => {
+}, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
+  [4502], {
+    86: (e, n, a) => {
       a.r(n), a.d(n, {
         default: () => ee
       });
       var t = a(42295),
-        r = a(62229),
+        s = a(62229),
         i = a(9623),
-        s = a(22557),
+        r = a(62665),
         o = a(61128),
         l = a(95966),
         c = a(2918),
@@ -95,13 +95,13 @@ try {
         for (var n = 1; n < arguments.length; n++) {
           var a = null != arguments[n] ? arguments[n] : {};
           n % 2 ? T(Object(a), !0).forEach(function(n) {
-            var t, r, i;
-            t = e, r = n, i = a[n], (r = v(r)) in t ? Object.defineProperty(t, r, {
+            var t, s, i;
+            t = e, s = n, i = a[n], (s = v(s)) in t ? Object.defineProperty(t, s, {
               value: i,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : t[r] = i
+            }) : t[s] = i
           }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : T(Object(a)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(a, n))
           })
@@ -114,79 +114,79 @@ try {
         for (var t in e) a[t] = n(e[t], t);
         return a
       }
-      var j, A, S = (e, n, a) => {
+      var w, j, A = (e, n, a) => {
           for (var t of Object.keys(e)) {
-            var r;
-            if (e[t] !== (null !== (r = n[t]) && void 0 !== r ? r : a[t])) return !1
+            var s;
+            if (e[t] !== (null !== (s = n[t]) && void 0 !== s ? s : a[t])) return !1
           }
           return !0
         },
-        w = "_1238r7l",
-        y = (j = {
-          defaultClassName: "_1238r7n",
+        S = "_1ow0arsl",
+        y = (w = {
+          defaultClassName: "_1ow0arsn",
           variantClassNames: {
             slideName: {
-              success: "_1238r7o",
-              error: "_1238r7p"
+              success: "_1ow0arso",
+              error: "_1ow0arsp"
             }
           },
           defaultVariants: {},
           compoundVariants: []
-        }, (A = e => {
-          var n = j.defaultClassName,
-            a = k(k({}, j.defaultVariants), e);
+        }, (j = e => {
+          var n = w.defaultClassName,
+            a = k(k({}, w.defaultVariants), e);
           for (var t in a) {
-            var r, i = null !== (r = a[t]) && void 0 !== r ? r : j.defaultVariants[t];
+            var s, i = null !== (s = a[t]) && void 0 !== s ? s : w.defaultVariants[t];
             if (null != i) {
-              var s = i;
-              "boolean" == typeof s && (s = !0 === s ? "true" : "false");
-              var o = j.variantClassNames[t][s];
+              var r = i;
+              "boolean" == typeof r && (r = !0 === r ? "true" : "false");
+              var o = w.variantClassNames[t][r];
               o && (n += " " + o)
             }
           }
-          for (var [l, c] of j.compoundVariants) S(l, a, j.defaultVariants) && (n += " " + c);
+          for (var [l, c] of w.compoundVariants) A(l, a, w.defaultVariants) && (n += " " + c);
           return n
-        }).variants = () => Object.keys(j.variantClassNames), A.classNames = {
+        }).variants = () => Object.keys(w.variantClassNames), j.classNames = {
           get base() {
-            return j.defaultClassName.split(" ")[0]
+            return w.defaultClassName.split(" ")[0]
           },
           get variants() {
-            return x(j.variantClassNames, e => x(e, e => e.split(" ")[0]))
+            return x(w.variantClassNames, e => x(e, e => e.split(" ")[0]))
           }
-        }, A),
-        N = "_1238r7m",
-        G = "_1238r7i",
-        E = "_1238r7g",
-        O = "_1238r75",
-        q = "_1238r76",
-        C = "_1238r7q",
-        L = "_1238r7j",
-        P = "_1238r73",
-        z = "_1238r78",
-        I = "_1238r7z",
-        R = "_1238r7a",
-        M = "_1238r7h",
-        F = "_1238r77";
+        }, j),
+        N = "_1ow0arsm",
+        G = "_1ow0arsi",
+        E = "_1ow0arsg",
+        O = "_1ow0ars5",
+        q = "_1ow0ars6",
+        C = "_1ow0arsq",
+        L = "_1ow0arsj",
+        z = "_1ow0ars3",
+        P = "_1ow0ars8",
+        I = "_1ow0arsz",
+        R = "_1ow0arsa",
+        M = "_1ow0arsh",
+        F = "_1ow0ars7";
       const U = ({
         content: e,
         loggedIn: n,
         addClaim: a,
-        signin: r,
+        signin: s,
         landingSlide: i
       }) => (0, t.jsxs)("div", {
-        className: h()(O, "_1238r7c _1238r7b", "onScreen" === i ? z : "", "hidden" === i ? q : "", "visible" === i ? F : ""),
+        className: h()(O, "_1ow0arsc _1ow0arsb", "onScreen" === i ? P : "", "hidden" === i ? q : "", "visible" === i ? F : ""),
         children: [e?.introScreen?.image?.sources?.mobile && (0, t.jsx)("img", {
           src: e.introScreen.image.sources.mobile,
-          className: P,
+          className: z,
           alt: e.introScreen.image.alt
         }), (0, t.jsxs)("div", {
           className: M,
           children: [(0, t.jsx)("div", {
             className: R,
             children: (0, t.jsxs)("div", {
-              className: w,
+              className: S,
               children: [(0, t.jsx)(_.Badge.Root, {
-                className: "_1238r7k",
+                className: "_1ow0arsk",
                 appearance: "primary",
                 children: (0, t.jsx)(_.Badge.Label, {
                   children: e.introScreen.tag
@@ -207,7 +207,7 @@ try {
                   className: I,
                   appearance: "primary",
                   size: "MD",
-                  onClick: n ? a : r,
+                  onClick: n ? a : s,
                   children: n ? e.introScreen.btnText.loggedIn : e.introScreen.btnText.loggedOut
                 })
               })]
@@ -233,39 +233,39 @@ try {
         successSlide: n,
         characterList: a,
         linkAccountUrl: i,
-        linkMoreAccounts: s,
+        linkMoreAccounts: r,
         linkAccountBtn: o
       }) => {
-        const l = (0, r.createRef)(),
-          c = (0, r.createRef)(),
-          d = (0, r.createRef)(),
-          [u, g] = (0, r.useState)(),
-          [m, f] = (0, r.useState)(!1),
-          [p, v] = (0, r.useState)(),
-          [T, k] = (0, r.useState)(!1),
-          [x, j] = (0, r.useState)(!0);
-        return (0, r.useEffect)(() => {
+        const l = (0, s.createRef)(),
+          c = (0, s.createRef)(),
+          d = (0, s.createRef)(),
+          [u, g] = (0, s.useState)(),
+          [m, f] = (0, s.useState)(!1),
+          [p, v] = (0, s.useState)(),
+          [T, k] = (0, s.useState)(!1),
+          [x, w] = (0, s.useState)(!0);
+        return (0, s.useEffect)(() => {
           const e = () => {
             l?.current && f(l?.current?.scrollWidth > l?.current?.offsetWidth)
           };
           return e(), window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
           }
-        }, [l]), (0, r.useEffect)(() => {
+        }, [l]), (0, s.useEffect)(() => {
           g({
             nextEl: c?.current,
             prevEl: d?.current
           })
         }, [d?.current, c?.current]), (0, t.jsxs)("div", {
-          className: h()(O, "_1238r7d _1238r7b", "onScreen" === n ? z : "", "hidden" === n ? q : "", "visible" === n ? F : ""),
+          className: h()(O, "_1ow0arsd _1ow0arsb", "onScreen" === n ? P : "", "hidden" === n ? q : "", "visible" === n ? F : ""),
           children: [e?.introScreen?.image?.sources?.mobile && (0, t.jsx)("img", {
             src: e.introScreen.image.sources.mobile,
-            className: P,
+            className: z,
             alt: e.introScreen.image.alt
           }), (0, t.jsxs)("div", {
             className: M,
             children: [(0, t.jsxs)("div", {
-              className: w,
+              className: S,
               children: [(0, t.jsx)("div", {
                 className: y({
                   slideName: "success"
@@ -285,9 +285,9 @@ try {
                   }
                 })]
               }), (0, t.jsxs)("div", {
-                className: "_1238r7s",
+                className: "_1ow0arss",
                 children: [(0, t.jsx)("div", {
-                  className: "_1238r7t",
+                  className: "_1ow0arst",
                   ref: l,
                   children: (0, t.jsx)(B.RC, {
                     mousewheel: {
@@ -305,12 +305,12 @@ try {
                       v(e)
                     },
                     onSlideChange: e => {
-                      k(e?.isEnd), j(e?.isBeginning)
+                      k(e?.isEnd), w(e?.isBeginning)
                     },
                     children: a.map(e => (0, t.jsx)(B.qr, {
                       tabIndex: 0,
                       children: (0, t.jsxs)(H.Root, {
-                        className: "_1238r7x",
+                        className: "_1ow0arsx",
                         children: [(0, t.jsx)(H.Avatar, {
                           src: e.mugshotUrl
                         }, `${e.platformUsername}-${e.platform}-${e.characterSlot}`), (0, t.jsxs)(H.Content, {
@@ -337,13 +337,13 @@ try {
                   iconRightLabel: "",
                   asChild: !0,
                   children: (0, t.jsx)(W.A, {
-                    className: "_1238r7r",
+                    className: "_1ow0arsr",
                     to: i,
-                    onClick: s,
+                    onClick: r,
                     children: o
                   })
                 }), (0, t.jsx)(_.Button, {
-                  className: "_1238r7u",
+                  className: "_1ow0arsu",
                   size: "SM",
                   appearance: "ghost",
                   iconRight: "ArrowLeft",
@@ -355,7 +355,7 @@ try {
                   isDisabled: x,
                   "data-hidden": !m
                 }), (0, t.jsx)(_.Button, {
-                  className: "_1238r7v",
+                  className: "_1ow0arsv",
                   size: "SM",
                   appearance: "ghost",
                   iconRight: "ArrowRight",
@@ -385,19 +385,19 @@ try {
           content: e,
           unlinkedSlide: n,
           returnUrl: a,
-          giftId: r
+          giftId: s
         }) => {
           const i = (0, l.useRockstarTokenPing)(),
             {
-              track: s
+              track: r
             } = (0, c.useGtmTrack)(),
             o = async e => {
               const n = (0, l.findPlatform)(e)?.onlineService;
               if (n && "sc" !== n) {
-                s({
+                r({
                   element_placement: "woc",
                   event: "cta_link_account",
-                  o_id: r,
+                  o_id: s,
                   text: `link ${n}`
                 });
                 const e = await (0, l.generateTpaLink)({
@@ -409,17 +409,17 @@ try {
               }
             };
           return (0, t.jsxs)("div", {
-            className: h()(O, "_1238r7e _1238r7b", "onScreen" === n ? z : "", "hidden" === n ? q : "", "visible" === n ? F : ""),
+            className: h()(O, "_1ow0arse _1ow0arsb", "onScreen" === n ? P : "", "hidden" === n ? q : "", "visible" === n ? F : ""),
             children: [e?.introScreen?.image?.sources?.mobile && (0, t.jsx)("img", {
               src: e.introScreen.image.sources.mobile,
-              className: P,
+              className: z,
               alt: e.introScreen.image.alt
             }), (0, t.jsxs)("div", {
               className: M,
               children: [(0, t.jsx)("div", {
                 className: R,
                 children: (0, t.jsxs)("div", {
-                  className: w,
+                  className: S,
                   children: [(0, t.jsx)("div", {
                     className: y({
                       slideName: "error"
@@ -439,7 +439,7 @@ try {
                       }
                     })]
                   }), (0, t.jsxs)("div", {
-                    className: "_1238r710",
+                    className: "_1ow0ars10",
                     children: [(0, t.jsx)(Q.U, {
                       buttonText: (0, l.findPlatform)("xbox")?.friendlyName,
                       platform: "xbox",
@@ -471,17 +471,17 @@ try {
           errorSlide: e,
           content: n
         }) => (0, t.jsxs)("div", {
-          className: h()(O, "_1238r7f _1238r7b", "onScreen" === e ? z : "", "hidden" === e ? q : "", "visible" === e ? F : ""),
+          className: h()(O, "_1ow0arsf _1ow0arsb", "onScreen" === e ? P : "", "hidden" === e ? q : "", "visible" === e ? F : ""),
           children: [n?.introScreen?.image?.sources?.mobile && (0, t.jsx)("img", {
             src: n.introScreen.image.sources.mobile,
-            className: P,
+            className: z,
             alt: n.introScreen.image.alt
           }), (0, t.jsxs)("div", {
             className: M,
             children: [(0, t.jsx)("div", {
               className: R,
               children: (0, t.jsxs)("div", {
-                className: w,
+                className: S,
                 children: [(0, t.jsx)("div", {
                   className: y({
                     slideName: "error"
@@ -574,18 +574,18 @@ try {
                 headline: _?.unlinkedHeadline || ""
               }
             },
-            [j] = (0, i.useSearchParams)(),
+            [w] = (0, i.useSearchParams)(),
             {
-              data: A,
-              loggedIn: S
+              data: j,
+              loggedIn: A
             } = (0, c.useRockstarUser)(),
-            w = (0, l.useRockstarTokenPing)(),
+            S = (0, l.useRockstarTokenPing)(),
             y = `https://${Z}.rockstargames.com/settings/linkedaccounts`,
             N = (0, u.useIntl)(),
             {
               track: G
             } = (0, c.useGtmTrack)(),
-            E = (0, r.useRef)(null),
+            E = (0, s.useRef)(null),
             {
               ref: O,
               inView: q
@@ -593,21 +593,21 @@ try {
               threshold: .6
             }),
             C = 1280,
-            L = (0, r.createRef)(),
-            [P, z] = (0, r.useState)(null),
-            [I, R] = (0, r.useState)([]),
-            [M, F] = (0, r.useState)(!1),
-            [D, B] = (0, r.useState)(),
-            [V, H] = (0, r.useState)("hidden"),
-            [W, Q] = (0, r.useState)("hidden"),
-            [ee, ne] = (0, r.useState)("hidden"),
-            [ae, te] = (0, r.useState)("hidden"),
-            [re, ie] = (0, r.useState)(!1),
-            [se, oe] = (0, r.useState)(K.landing),
-            [le, ce] = (0, r.useState)(x.introScreen.image.sources.mobile || X),
+            L = (0, s.createRef)(),
+            [z, P] = (0, s.useState)(null),
+            [I, R] = (0, s.useState)([]),
+            [M, F] = (0, s.useState)(!1),
+            [D, B] = (0, s.useState)(),
+            [V, H] = (0, s.useState)("hidden"),
+            [W, Q] = (0, s.useState)("hidden"),
+            [ee, ne] = (0, s.useState)("hidden"),
+            [ae, te] = (0, s.useState)("hidden"),
+            [se, ie] = (0, s.useState)(!1),
+            [re, oe] = (0, s.useState)(K.landing),
+            [le, ce] = (0, s.useState)(x.introScreen.image.sources.mobile || X),
             de = `${document.location.pathname}${document.location.search}#${b}`,
             ue = (0, l.usePrevious)(D),
-            ge = (0, l.usePrevious)(S),
+            ge = (0, l.usePrevious)(A),
             {
               signInUrl: me
             } = (0, l.useScAuthLinks)(de),
@@ -626,7 +626,7 @@ try {
                 ne("onScreen")
               }, 100))
             };
-          return (0, r.useEffect)(() => {
+          return (0, s.useEffect)(() => {
             let e;
             return b && window.location.hash === `#${b}` && E.current && (e = window.setTimeout(() => {
               E.current?.scrollIntoView({
@@ -634,67 +634,67 @@ try {
                 block: "start"
               })
             }, 1e3)), () => window.clearTimeout(e)
-          }, [b]), (0, r.useEffect)(() => {
+          }, [b]), (0, s.useEffect)(() => {
             const e = () => {
-                window.innerWidth > 2560 && "newswire" !== n ? ce(x.introScreen.image.sources.mobile || X) : ce(x.introScreen.image.sources.desktop || X)
+                window.innerWidth >= 2560 && "newswire" !== n ? ce(x.introScreen.image.sources.mobile || X) : ce(x.introScreen.image.sources.desktop || X)
               },
               a = () => {
-                window.innerWidth <= C && !M ? (F(!0), fe(se)) : window.innerWidth > C && M && F(!1), e()
+                window.innerWidth <= C && !M ? (F(!0), fe(re)) : window.innerWidth > C && M && F(!1), e()
               };
             return F(window.innerWidth <= C), e(), window.addEventListener("resize", a), () => {
               window.removeEventListener("resize", a)
             }
-          }, [se, M]), (0, r.useEffect)(() => {
-            const e = A?.characters?.gtao;
+          }, [re, M]), (0, s.useEffect)(() => {
+            const e = j?.characters?.gtao;
             R(e || [])
-          }, [A?.characters?.gtao]), (0, r.useEffect)(() => {
-            "boolean" != typeof ue && "boolean" != typeof ge || !e || D && S && (async () => {
+          }, [j?.characters?.gtao]), (0, s.useEffect)(() => {
+            "boolean" != typeof ue && "boolean" != typeof ge || !e || D && A && (async () => {
               try {
                 const {
                   result: n
                 } = await (0, l.coreScApiFetch)("marketing/engagement/claim/exists", {
-                  pingBearer: w,
+                  pingBearer: S,
                   query: {
                     giftUId: e
                   }
                 });
-                z("boolean" == typeof n && n)
+                P("boolean" == typeof n && n)
               } catch (e) {
-                z(!1)
+                P(!1)
               }
             })()
-          }, [D, S, e]), (0, r.useEffect)(() => {
-            "boolean" == typeof S ? S ? B(!0) : (B(!1), Q("onScreen")) : B(!0)
-          }, [S]), (0, r.useEffect)(() => {
-            "boolean" == typeof P && A?.accountSynced && B(!1)
-          }, [P, A?.accountSynced, B]), (0, r.useEffect)(() => {
+          }, [D, A, e]), (0, s.useEffect)(() => {
+            "boolean" == typeof A ? A ? B(!0) : (B(!1), Q("onScreen")) : B(!0)
+          }, [A]), (0, s.useEffect)(() => {
+            "boolean" == typeof z && j?.accountSynced && B(!1)
+          }, [z, j?.accountSynced, B]), (0, s.useEffect)(() => {
             D || (async () => {
-              I.length > 0 && P ? fe(K.success) : fe(P ? K.unlinked : K.landing)
+              I.length > 0 && z ? fe(K.success) : fe(z ? K.unlinked : K.landing)
             })()
-          }, [D]), (0, r.useEffect)(() => {
-            if (q && !re) {
-              if (void 0 === S) return;
+          }, [D]), (0, s.useEffect)(() => {
+            if (q && !se) {
+              if (void 0 === A) return;
               G({
                 element_placement: "WOC",
                 event: "page_section_impression",
-                section_layout: S ? "signed in" : "signed out"
+                section_layout: A ? "signed in" : "signed out"
               }), ie(!0)
             }
-          }, [q, S]), (0, r.useEffect)(() => {
+          }, [q, A]), (0, s.useEffect)(() => {
             "onScreen" === V && G({
               element_placement: "WOC",
               event: "alert_update",
               o_id: e,
               text: "Almost there!"
             })
-          }, [V]), (0, r.useEffect)(() => {
+          }, [V]), (0, s.useEffect)(() => {
             "onScreen" === ee && G({
               element_placement: "WOC",
               event: "alert_error",
               o_id: e,
               text: "No Qualifying Character Found"
             })
-          }, [ee]), (0, r.useEffect)(() => {
+          }, [ee]), (0, s.useEffect)(() => {
             "onScreen" === ae && G({
               element_placement: "event_label",
               event: "alert_error",
@@ -703,13 +703,13 @@ try {
             })
           }, [ae]), (0, t.jsx)(t.Fragment, {
             children: (0, t.jsx)("div", {
-              className: "_1238r70",
+              className: "_1ow0ars0",
               "data-font": T,
               "data-use-padding": k,
               ref: E,
               id: b || "",
-              children: (0, t.jsxs)(s.P.div, {
-                className: "_1238r71",
+              children: (0, t.jsxs)(r.motion.div, {
+                className: "_1ow0ars1",
                 initial: {
                   opacity: 0
                 },
@@ -727,30 +727,30 @@ try {
                 "data-context": "interestTracker",
                 ref: O,
                 children: [(0, t.jsx)("div", {
-                  className: "_1238r72",
+                  className: "_1ow0ars2",
                   style: {
                     "--engagement-image": `url(${le})`
                   }
                 }), (0, t.jsx)("div", {
-                  className: h()("_1238r74", D ? "loader" : ""),
+                  className: h()("_1ow0ars4", D ? "loader" : ""),
                   ref: L,
                   children: D ? (0, t.jsx)("div", {
-                    className: "_1238r7w",
+                    className: "_1ow0arsw",
                     children: (0, t.jsx)(d.A, {
                       type: "SPINNING"
                     })
                   }) : (0, t.jsxs)(t.Fragment, {
-                    children: [se === K.landing && (0, t.jsx)(U, {
+                    children: [re === K.landing && (0, t.jsx)(U, {
                       content: x,
-                      loggedIn: S,
+                      loggedIn: A,
                       addClaim: async () => {
                         const a = {
                             giftUId: e,
                             location: n,
-                            utmCampaign: j.get("utm_campaign"),
-                            utmContent: j.get("utm_content"),
-                            utmMedium: j.get("utm_medium"),
-                            utmSource: j.get("utm_source")
+                            utmCampaign: w.get("utm_campaign"),
+                            utmContent: w.get("utm_content"),
+                            utmMedium: w.get("utm_medium"),
+                            utmSource: w.get("utm_source")
                           },
                           {
                             status: t
@@ -758,7 +758,7 @@ try {
                             fetchOptions: {
                               method: "POST"
                             },
-                            pingBearer: w,
+                            pingBearer: S,
                             query: a
                           }) ?? [];
                         fe(t ? K.success : K.error), G({
@@ -779,7 +779,7 @@ try {
                         }), window.location.href = me
                       },
                       landingSlide: W
-                    }), se === K.success && (0, t.jsx)($, {
+                    }), re === K.success && (0, t.jsx)($, {
                       content: x,
                       successSlide: V,
                       characterList: I,
@@ -793,12 +793,12 @@ try {
                         })
                       },
                       linkAccountBtn: N.formatMessage(m.engagement_link_account)
-                    }), se === K.unlinked && (0, t.jsx)(J, {
+                    }), re === K.unlinked && (0, t.jsx)(J, {
                       content: x,
                       unlinkedSlide: ee,
                       returnUrl: de,
                       giftId: e
-                    }), se === K.error && (0, t.jsx)(Y, {
+                    }), re === K.error && (0, t.jsx)(Y, {
                       errorSlide: ae,
                       content: x
                     })]

@@ -17,28 +17,28 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => r,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => L,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => n,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => a,
-        Lightbox_Zoom_Out_Button__Tooltip: () => d,
+        Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => p
+        default: () => x
       });
       var _ = "라이트박스 닫기",
         i = "{shortcut} 누르기",
         n = "확대",
         l = "{shortcut} 누르기",
         a = "축소",
-        d = "{shortcut} 누르기",
-        b = "초기화",
+        b = "{shortcut} 누르기",
+        d = "초기화",
         s = "{shortcut} 누르기",
         g = "줌 레벨",
         u = "{zoom}%",
@@ -46,15 +46,15 @@ try {
         h = "다운로드",
         L = "라이트박스에서 이미지 열기",
         r = "라이트박스 이미지",
-        c = "대체 문구: {alt}",
-        p = {
+        p = "대체 문구: {alt}",
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: n,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: a,
-          Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: u,
@@ -62,7 +62,7 @@ try {
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: r,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Description: p
         }
     }
   }

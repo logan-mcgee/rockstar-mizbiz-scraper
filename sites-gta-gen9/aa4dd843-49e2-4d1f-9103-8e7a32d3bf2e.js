@@ -201,7 +201,7 @@ try {
         style: k = {},
         className: v
       }) => {
-        const [_, b] = (0, i.useState)(!1), {
+        const [b, _] = (0, i.useState)(!1), {
           inView: h
         } = (0, o.useInView)({
           threshold: .6
@@ -223,10 +223,10 @@ try {
         if ((0, i.useEffect)(() => {
             w && x(w?.game)
           }, [w]), (0, i.useEffect)(() => {
-            h && !_ && y.img_rating && (N({
+            h && !b && y.img_rating && (N({
               event: "page_section_impression",
               element_placement: "rating"
-            }), b(!0))
+            }), _(!0))
           }, [h]), !y.ratingImg) return null;
         const j = !!y.ratingDescriptors;
         return (0, s.jsxs)("div", {
@@ -596,8 +596,8 @@ try {
           foreign_id: p = document.location.pathname,
           foreign_type: k = "url",
           className: v = "",
-          actionFooterHelperText: _,
-          actionFooterLinkText: b,
+          actionFooterHelperText: b,
+          actionFooterLinkText: _,
           actionFooterLink: h,
           trackingData: y = {},
           actionFooterLinkTrackingData: x = {},
@@ -677,9 +677,9 @@ try {
                 })]
               }), (0, s.jsxs)("div", {
                 className: g.actionBlock,
-                children: [O, _ && (0, s.jsx)(u, {
-                  helperText: _,
-                  linkText: b,
+                children: [O, b && (0, s.jsx)(u, {
+                  helperText: b,
+                  linkText: _,
                   link: h,
                   trackingData: x
                 })]

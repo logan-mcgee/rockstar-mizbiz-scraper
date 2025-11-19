@@ -72,7 +72,7 @@ try {
       function r(e, t) {
         for (var n = 0; n < t.length; n++) {
           var o = t[n];
-          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, c(o.key), o)
+          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, u(o.key), o)
         }
       }
 
@@ -97,7 +97,7 @@ try {
         }, s(e, t)
       }
 
-      function c(e) {
+      function u(e) {
         var t = function(e) {
           if ("object" != o(e) || !e) return e;
           var t = e[Symbol.toPrimitive];
@@ -110,13 +110,13 @@ try {
         }(e);
         return "symbol" == o(t) ? t : t + ""
       }
-      var u = n(62229),
+      var c = n(62229),
         l = n(97465),
         d = n(87236).createFocusTrap,
         f = n(86337).isFocusable,
         p = function(e) {
           function t(e) {
-            var n, r, s, u;
+            var n, r, s, c;
             ! function(e, t) {
               if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
             }(this, t), n = function(e, t, n) {
@@ -129,7 +129,7 @@ try {
                     return e
                   }(e)
                 }(e, a() ? Reflect.construct(t, n || [], i(e).constructor) : t.apply(e, n))
-            }(this, t, [e]), r = n, u = function(e) {
+            }(this, t, [e]), r = n, c = function(e) {
               var t, n = null !== (t = this.internalOptions[e]) && void 0 !== t ? t : this.originalOptions[e];
               if ("function" == typeof n) {
                 for (var o = arguments.length, r = new Array(o > 1 ? o - 1 : 0), a = 1; a < o; a++) r[a - 1] = arguments[a];
@@ -142,12 +142,12 @@ try {
               var i, s = n;
               if ("string" == typeof n && !(s = null === (i = this.getDocument()) || void 0 === i ? void 0 : i.querySelector(n))) throw new Error("`".concat(e, "` as selector refers to no known node"));
               return s
-            }, (s = c(s = "getNodeForOption")) in r ? Object.defineProperty(r, s, {
-              value: u,
+            }, (s = u(s = "getNodeForOption")) in r ? Object.defineProperty(r, s, {
+              value: c,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : r[s] = u, n.handleDeactivate = n.handleDeactivate.bind(n), n.handlePostDeactivate = n.handlePostDeactivate.bind(n), n.handleClickOutsideDeactivates = n.handleClickOutsideDeactivates.bind(n), n.internalOptions = {
+            }) : r[s] = c, n.handleDeactivate = n.handleDeactivate.bind(n), n.handlePostDeactivate = n.handlePostDeactivate.bind(n), n.handleClickOutsideDeactivates = n.handleClickOutsideDeactivates.bind(n), n.internalOptions = {
               returnFocusOnDeactivate: !1,
               checkCanReturnFocus: null,
               onDeactivate: n.handleDeactivate,
@@ -262,10 +262,10 @@ try {
             key: "render",
             value: function() {
               var e = this,
-                t = this.props.children ? u.Children.only(this.props.children) : void 0;
+                t = this.props.children ? c.Children.only(this.props.children) : void 0;
               if (t) {
-                if (t.type && t.type === u.Fragment) throw new Error("A focus-trap cannot use a Fragment as its child container. Try replacing it with a <div> element.");
-                return u.cloneElement(t, {
+                if (t.type && t.type === c.Fragment) throw new Error("A focus-trap cannot use a Fragment as its child container. Try replacing it with a <div> element.");
+                return c.cloneElement(t, {
                   ref: function(n) {
                     var o = e.props.containerElements;
                     t && ("function" == typeof t.ref ? t.ref(n) : t.ref && (t.ref.current = n)), e.focusTrapElements = o || [n]
@@ -278,7 +278,7 @@ try {
             writable: !1
           }), n;
           var n, l
-        }(u.Component),
+        }(c.Component),
         v = "undefined" == typeof Element ? Function : Element;
       p.propTypes = {
         active: l.bool,
@@ -343,39 +343,39 @@ try {
         } : function(e) {
           return null == e ? void 0 : e.ownerDocument
         },
-        c = function e(t, n) {
+        u = function e(t, n) {
           var o;
           void 0 === n && (n = !0);
           var r = null == t || null === (o = t.getAttribute) || void 0 === o ? void 0 : o.call(t, "inert");
           return "" === r || "true" === r || n && t && e(t.parentNode)
         },
-        u = function(e, t, n) {
-          if (c(e)) return [];
+        c = function(e, t, n) {
+          if (u(e)) return [];
           var o = Array.prototype.slice.apply(e.querySelectorAll(r));
           return t && i.call(e, r) && o.unshift(e), o.filter(n)
         },
         l = function e(t, n, o) {
           for (var a = [], s = Array.from(t); s.length;) {
-            var u = s.shift();
-            if (!c(u, !1))
-              if ("SLOT" === u.tagName) {
-                var l = u.assignedElements(),
-                  d = e(l.length ? l : u.children, !0, o);
+            var c = s.shift();
+            if (!u(c, !1))
+              if ("SLOT" === c.tagName) {
+                var l = c.assignedElements(),
+                  d = e(l.length ? l : c.children, !0, o);
                 o.flatten ? a.push.apply(a, d) : a.push({
-                  scopeParent: u,
+                  scopeParent: c,
                   candidates: d
                 })
               } else {
-                i.call(u, r) && o.filter(u) && (n || !t.includes(u)) && a.push(u);
-                var f = u.shadowRoot || "function" == typeof o.getShadowRoot && o.getShadowRoot(u),
-                  p = !c(f, !1) && (!o.shadowRootFilter || o.shadowRootFilter(u));
+                i.call(c, r) && o.filter(c) && (n || !t.includes(c)) && a.push(c);
+                var f = c.shadowRoot || "function" == typeof o.getShadowRoot && o.getShadowRoot(c),
+                  p = !u(f, !1) && (!o.shadowRootFilter || o.shadowRootFilter(c));
                 if (f && p) {
-                  var v = e(!0 === f ? u.children : f.children, !0, o);
+                  var v = e(!0 === f ? c.children : f.children, !0, o);
                   o.flatten ? a.push.apply(a, v) : a.push({
-                    scopeParent: u,
+                    scopeParent: c,
                     candidates: v
                   })
-                } else s.unshift.apply(s, u.children)
+                } else s.unshift.apply(s, c.children)
               }
           }
           return a
@@ -403,7 +403,7 @@ try {
           return 0 === n && 0 === o
         },
         h = function(e, t) {
-          return !(t.disabled || c(t) || function(e) {
+          return !(t.disabled || u(t) || function(e) {
             return v(e) && "hidden" === e.type
           }(t) || function(e, t) {
             var n = t.displayCheck,
@@ -416,23 +416,23 @@ try {
             } else {
               if ("function" == typeof o) {
                 for (var a = e; e;) {
-                  var c = e.parentElement,
-                    u = s(e);
-                  if (c && !c.shadowRoot && !0 === o(c)) return b(e);
-                  e = e.assignedSlot ? e.assignedSlot : c || u === e.ownerDocument ? c : u.host
+                  var u = e.parentElement,
+                    c = s(e);
+                  if (u && !u.shadowRoot && !0 === o(u)) return b(e);
+                  e = e.assignedSlot ? e.assignedSlot : u || c === e.ownerDocument ? u : c.host
                 }
                 e = a
               }
               if (function(e) {
                   var t, n, o, r, a = e && s(e),
                     i = null === (t = a) || void 0 === t ? void 0 : t.host,
-                    c = !1;
+                    u = !1;
                   if (a && a !== e)
-                    for (c = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !c && i;) {
-                      var u, l, d;
-                      c = !(null === (l = i = null === (u = a = s(i)) || void 0 === u ? void 0 : u.host) || void 0 === l || null === (d = l.ownerDocument) || void 0 === d || !d.contains(i))
+                    for (u = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !u && i;) {
+                      var c, l, d;
+                      u = !(null === (l = i = null === (c = a = s(i)) || void 0 === c ? void 0 : c.host) || void 0 === l || null === (d = l.ownerDocument) || void 0 === d || !d.contains(i))
                     }
-                  return c
+                  return u
                 }(e)) return !e.getClientRects().length;
               if ("legacy-full" !== n) return !0
             }
@@ -494,13 +494,13 @@ try {
                 var n = f(e);
                 return n < 0 && t && !d(e) ? 0 : n
               }(i, a),
-              c = a ? e(t.candidates) : i;
-            0 === s ? a ? n.push.apply(n, c) : n.push(i) : o.push({
+              u = a ? e(t.candidates) : i;
+            0 === s ? a ? n.push.apply(n, u) : n.push(i) : o.push({
               documentOrder: r,
               tabIndex: s,
               item: t,
               isScope: a,
-              content: c
+              content: u
             })
           }), o.sort(p).reduce(function(e, t) {
             return t.isScope ? e.push.apply(e, t.content) : e.push(t.content), e
@@ -513,14 +513,14 @@ try {
             flatten: !1,
             getShadowRoot: t.getShadowRoot,
             shadowRootFilter: m
-          }) : u(e, t.includeContainer, y.bind(null, t)), g(n)
+          }) : c(e, t.includeContainer, y.bind(null, t)), g(n)
         },
         O = function(e, t) {
           return (t = t || {}).getShadowRoot ? l([e], t.includeContainer, {
             filter: h.bind(null, t),
             flatten: !0,
             getShadowRoot: t.getShadowRoot
-          }) : u(e, t.includeContainer, h.bind(null, t))
+          }) : c(e, t.includeContainer, h.bind(null, t))
         },
         T = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");
@@ -588,14 +588,14 @@ try {
         }
         return e
       }
-      var c = function(e) {
+      var u = function(e) {
           return "Tab" === (null == e ? void 0 : e.key) || 9 === (null == e ? void 0 : e.keyCode)
         },
-        u = function(e) {
-          return c(e) && !e.shiftKey
+        c = function(e) {
+          return u(e) && !e.shiftKey
         },
         l = function(e) {
-          return c(e) && e.shiftKey
+          return u(e) && e.shiftKey
         },
         d = function(e) {
           return setTimeout(e, 0)
@@ -615,7 +615,7 @@ try {
               returnFocusOnDeactivate: !0,
               escapeDeactivates: !0,
               delayInitialFocus: !0,
-              isKeyForward: u,
+              isKeyForward: c,
               isKeyBackward: l
             }, t),
             h = {
@@ -648,11 +648,11 @@ try {
                 o = n.hasFallback,
                 i = void 0 !== o && o,
                 s = n.params,
-                c = void 0 === s ? [] : s,
-                u = b[e];
-              if ("function" == typeof u && (u = u.apply(void 0, function(e) {
+                u = void 0 === s ? [] : s,
+                c = b[e];
+              if ("function" == typeof c && (c = c.apply(void 0, function(e) {
                   if (Array.isArray(e)) return r(e)
-                }(t = c) || function(e) {
+                }(t = u) || function(e) {
                   if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
                 }(t) || function(e, t) {
                   if (e) {
@@ -662,14 +662,14 @@ try {
                   }
                 }(t) || function() {
                   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-                }())), !0 === u && (u = void 0), !u) {
-                if (void 0 === u || !1 === u) return u;
+                }())), !0 === c && (c = void 0), !c) {
+                if (void 0 === c || !1 === c) return c;
                 throw new Error("`".concat(e, "` was specified but was not a node, or did not return a node"))
               }
-              var l = u;
-              if ("string" == typeof u) {
+              var l = c;
+              if ("string" == typeof c) {
                 try {
-                  l = a.querySelector(u)
+                  l = a.querySelector(c)
                 } catch (t) {
                   throw new Error("`".concat(e, '` appears to be an invalid selector; error="').concat(t.message, '"'))
                 }
@@ -704,14 +704,14 @@ try {
                     s = n.slice().reverse().find(function(e) {
                       return (0, o.isTabbable)(e)
                     }),
-                    c = !!t.find(function(e) {
+                    u = !!t.find(function(e) {
                       return (0, o.getTabIndex)(e) > 0
                     });
                   return {
                     container: e,
                     tabbableNodes: t,
                     focusableNodes: n,
-                    posTabIndexesFound: c,
+                    posTabIndexesFound: u,
                     firstTabbableNode: r,
                     lastTabbableNode: a,
                     firstDomTabbableNode: i,
@@ -759,28 +759,28 @@ try {
               var i = null;
               if (h.tabbableGroups.length > 0) {
                 var s = m(t, n),
-                  u = s >= 0 ? h.containerGroups[s] : void 0;
+                  c = s >= 0 ? h.containerGroups[s] : void 0;
                 if (s < 0) i = a ? h.tabbableGroups[h.tabbableGroups.length - 1].lastTabbableNode : h.tabbableGroups[0].firstTabbableNode;
                 else if (a) {
                   var l = h.tabbableGroups.findIndex(function(e) {
                     var n = e.firstTabbableNode;
                     return t === n
                   });
-                  if (l < 0 && (u.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !u.nextTabbableNode(t, !1)) && (l = s), l >= 0) {
+                  if (l < 0 && (c.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !c.nextTabbableNode(t, !1)) && (l = s), l >= 0) {
                     var d = 0 === l ? h.tabbableGroups.length - 1 : l - 1,
                       f = h.tabbableGroups[d];
                     i = (0, o.getTabIndex)(t) >= 0 ? f.lastTabbableNode : f.lastDomTabbableNode
-                  } else c(n) || (i = u.nextTabbableNode(t, !1))
+                  } else u(n) || (i = c.nextTabbableNode(t, !1))
                 } else {
                   var v = h.tabbableGroups.findIndex(function(e) {
                     var n = e.lastTabbableNode;
                     return t === n
                   });
-                  if (v < 0 && (u.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !u.nextTabbableNode(t)) && (v = s), v >= 0) {
+                  if (v < 0 && (c.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !c.nextTabbableNode(t)) && (v = s), v >= 0) {
                     var y = v === h.tabbableGroups.length - 1 ? 0 : v + 1,
                       w = h.tabbableGroups[y];
                     i = (0, o.getTabIndex)(t) >= 0 ? w.firstTabbableNode : w.firstDomTabbableNode
-                  } else c(n) || (i = u.nextTabbableNode(t))
+                  } else u(n) || (i = c.nextTabbableNode(t))
                 }
               } else i = g("fallbackFocus");
               return i
@@ -804,10 +804,10 @@ try {
                     var i = m(h.mostRecentlyFocusedNode),
                       s = h.containerGroups[i].tabbableNodes;
                     if (s.length > 0) {
-                      var c = s.findIndex(function(e) {
+                      var u = s.findIndex(function(e) {
                         return e === h.mostRecentlyFocusedNode
                       });
-                      c >= 0 && (b.isKeyForward(h.recentNavEvent) ? c + 1 < s.length && (r = s[c + 1], a = !1) : c - 1 >= 0 && (r = s[c - 1], a = !1))
+                      u >= 0 && (b.isKeyForward(h.recentNavEvent) ? u + 1 < s.length && (r = s[u + 1], a = !1) : u - 1 >= 0 && (r = s[u - 1], a = !1))
                     }
                   } else h.containerGroups.some(function(e) {
                     return e.tabbableNodes.some(function(e) {
@@ -830,7 +830,7 @@ try {
                   event: e,
                   isBackward: t
                 });
-                n && (c(e) && e.preventDefault(), E(n))
+                n && (u(e) && e.preventDefault(), E(n))
               }(e, b.isKeyBackward(e))
             },
             N = function(e) {
@@ -914,14 +914,14 @@ try {
               var o = y(t, "onDeactivate"),
                 r = y(t, "onPostDeactivate"),
                 a = y(t, "checkCanReturnFocus"),
-                c = y(t, "returnFocus", "returnFocusOnDeactivate");
+                u = y(t, "returnFocus", "returnFocusOnDeactivate");
               null == o || o();
-              var u = function() {
+              var c = function() {
                 d(function() {
-                  c && E(k(h.nodeFocusedBeforeActivation)), null == r || r()
+                  u && E(k(h.nodeFocusedBeforeActivation)), null == r || r()
                 })
               };
-              return c && a ? (a(k(h.nodeFocusedBeforeActivation)).then(u, u), this) : (u(), this)
+              return u && a ? (a(k(h.nodeFocusedBeforeActivation)).then(c, c), this) : (c(), this)
             },
             pause: function(e) {
               return h.active ? (h.manuallyPaused = !0, this._setPausedState(!0, e)) : this

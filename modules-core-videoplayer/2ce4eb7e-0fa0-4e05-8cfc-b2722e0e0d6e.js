@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7cbb5e48-75c3-4be7-b985-9113bd47e199", e._sentryDebugIdIdentifier = "sentry-dbid-7cbb5e48-75c3-4be7-b985-9113bd47e199")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2ce4eb7e-0fa0-4e05-8cfc-b2722e0e0d6e", e._sentryDebugIdIdentifier = "sentry-dbid-2ce4eb7e-0fa0-4e05-8cfc-b2722e0e0d6e")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -1340,8 +1340,8 @@ try {
             })
           })
         };
-      var H = l(2918);
-      const D = ({
+      var D = l(2918);
+      const H = ({
           alt: e = "",
           className: a = "",
           clipRule: l = "evenodd",
@@ -1371,7 +1371,7 @@ try {
             fill: r
           })]
         }),
-        O = (0, c.defineMessages)({
+        I = (0, c.defineMessages)({
           videoplayer_play_pause_button_label: {
             id: "videoplayer_play_pause_button_label",
             description: "Accessibility label for button that plays/pauses the video.",
@@ -1393,9 +1393,9 @@ try {
             defaultMessage: "Replay"
           }
         }),
-        I = "rockstargames-modules-core-videoplayere2bb62f7d1ed11e190e89b6d7f17eb02",
+        O = "rockstargames-modules-core-videoplayere2bb62f7d1ed11e190e89b6d7f17eb02",
         F = () => {
-          (0, H.useGtmTrack)();
+          (0, D.useGtmTrack)();
           const {
             formatMessage: e
           } = (0, c.useIntl)(), {
@@ -1408,8 +1408,8 @@ try {
             playing: n
           } = a;
           return (0, t.jsx)(B, {
-            tooltipLabel: e(i ? O.videoplayer_replay_hover_label : n ? O.videoplayer_pause_hover_label : O.videoplayer_play_hover_label),
-            "aria-label": e(O.videoplayer_play_pause_button_label),
+            tooltipLabel: e(i ? I.videoplayer_replay_hover_label : n ? I.videoplayer_pause_hover_label : I.videoplayer_play_hover_label),
+            "aria-label": e(I.videoplayer_play_pause_button_label),
             onMouseDown: e => {
               i && "function" == typeof o ? (r({
                 event: "video_replay"
@@ -1420,12 +1420,12 @@ try {
             onKeyDown: e => {
               "Enter" === e.code && (e.preventDefault(), l("playing", !n))
             },
-            children: i ? (0, t.jsx)(D, {
-              className: I
+            children: i ? (0, t.jsx)(H, {
+              className: O
             }) : n ? (0, t.jsx)(v, {
-              className: I
+              className: O
             }) : (0, t.jsx)(m.A, {
-              className: I
+              className: O
             })
           })
         };
@@ -3020,7 +3020,7 @@ try {
             fill: o
           })]
         }),
-        He = (0, c.defineMessages)({
+        De = (0, c.defineMessages)({
           videoplayer_airplay_menu_header: {
             id: "videoplayer_airplay_menu_header",
             description: "Header label for the AirPlay/ScreenCast menu.",
@@ -3047,7 +3047,7 @@ try {
             id: "videoplayer_video_not_found_error"
           }
         }),
-        De = ({
+        He = ({
           collapsed: e = !1,
           onClick: a
         }) => {
@@ -3064,19 +3064,19 @@ try {
               const e = n.current;
               if (e.webkitShowPlaybackTargetPicker) e.webkitShowPlaybackTargetPicker();
               else {
-                const a = l(He.videoplayer_airplay_not_supported_error);
+                const a = l(De.videoplayer_airplay_not_supported_error);
                 e.textContent = a
               }
             } else {
               if (!n?.current) return;
-              const e = l(He.videoplayer_video_not_found_error);
+              const e = l(De.videoplayer_video_not_found_error);
               n.current.textContent = e
             }
             a()
           };
           return i ? (0, t.jsx)(B, {
-            tooltipLabel: l(He.videoplayer_airplay_button_label),
-            "aria-label": l(He.videoplayer_airplay_button_label),
+            tooltipLabel: l(De.videoplayer_airplay_button_label),
+            "aria-label": l(De.videoplayer_airplay_button_label),
             onClick: s,
             onKeyUp: s,
             hideTooltip: r.isAirPlayMenuOpen,
@@ -3086,12 +3086,12 @@ try {
                 className: "rockstargames-modules-core-videoplayerea5d369ad6b480b69c6dc65a82844444"
               }), e && (0, t.jsx)("span", {
                 className: "rockstargames-modules-core-videoplayerdc5ef32629c87c7d0381855d06b27434",
-                children: l(He.videoplayer_airplay_button_label)
+                children: l(De.videoplayer_airplay_button_label)
               })]
             })
           }) : null
         },
-        Oe = ({
+        Ie = ({
           alt: e = "",
           className: a = "",
           clipRule: l = "evenodd",
@@ -3126,7 +3126,7 @@ try {
             fill: o
           })]
         }),
-        Ie = (0, c.defineMessages)({
+        Oe = (0, c.defineMessages)({
           videoplayer_collapsed_menu_label: {
             id: "videoplayer_collapsed_menu_label",
             description: "Accessibility label for button that opens additional (collapsed) settings menus.",
@@ -3149,13 +3149,13 @@ try {
             "function" == typeof e && e()
           };
           return (0, t.jsx)("button", {
-            "aria-label": a(Ie.videoplayer_collapsed_menu_label),
+            "aria-label": a(Oe.videoplayer_collapsed_menu_label),
             type: "button",
             onClick: l,
             onKeyUp: l,
             tabIndex: 0,
             className: "rockstargames-modules-core-videoplayerc1e2a883d91ed4410e6d2c24b64c586b",
-            children: (0, t.jsx)(Oe, {
+            children: (0, t.jsx)(Ie, {
               className: Fe
             })
           })
@@ -3278,7 +3278,7 @@ try {
                 c = i.slice(s, i.length),
                 u = new Map([
                   ["airplay", {
-                    button: (0, t.jsx)(De, {
+                    button: (0, t.jsx)(He, {
                       collapsed: d.some(e => "airplay" === e),
                       onClick: () => E("isAirplayMenuOpen")
                     }, "airplay_button")
@@ -3357,10 +3357,10 @@ try {
                   className: "rockstargames-modules-core-videoplayeraa248530d71bb9ad7c3a60badcc5c8f5",
                   children: (0, t.jsxs)("div", {
                     className: "rockstargames-modules-core-videoplayerf3f60b73622da5aa98cd8e0aefd8f3eb",
-                    children: [(0, t.jsx)(Oe, {
+                    children: [(0, t.jsx)(Ie, {
                       className: Fe
                     }), (0, t.jsx)("span", {
-                      children: m(Ie.videoplayer_collapsed_menu_header_label)
+                      children: m(Oe.videoplayer_collapsed_menu_header_label)
                     })]
                   })
                 }), (0, t.jsx)("div", {
@@ -3912,7 +3912,10 @@ try {
                       }
                       break;
                     case "infoDelivery":
-                      e.current && window.parent.postMessage(t, "*")
+                      e.current && window.parent.postMessage({
+                        ...t,
+                        event: "rsInfoDelivery"
+                      }, "*")
                   }
                 },
                 t = () => {
@@ -3928,7 +3931,7 @@ try {
               let a = ta.Unstarted;
               a = c || r ? c ? n ? ta.Ended : s ? ta.Playing : ta.Paused : ta.VideoCued : ta.Unstarted;
               const l = {
-                event: "infoDelivery",
+                event: "rsInfoDelivery",
                 info: {
                   playerState: a,
                   currentTime: i,
@@ -3946,7 +3949,7 @@ try {
             }, [s, n, r, e.current]), (0, o.useEffect)(() => {
               if (e.current) return;
               const a = {
-                event: "infoDelivery",
+                event: "rsInfoDelivery",
                 info: {
                   playbackQuality: d
                 }
@@ -3955,7 +3958,7 @@ try {
             }, [d, e.current]), (0, o.useEffect)(() => {
               if (e.current) return;
               const a = {
-                event: "infoDelivery",
+                event: "rsInfoDelivery",
                 info: {
                   volume: m,
                   muted: 0 === m

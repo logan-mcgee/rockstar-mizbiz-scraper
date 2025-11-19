@@ -18,7 +18,7 @@ try {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => f
+        useInView: () => b
       });
       var n = i(62229),
         s = Object.defineProperty,
@@ -164,16 +164,16 @@ try {
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...f
+            ...b
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...f
+            ...b
           }, e)
         }
       };
 
-      function f({
+      function b({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -186,18 +186,18 @@ try {
         onChange: h
       } = {}) {
         var u;
-        const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+        const [b, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        b.current = h, n.useEffect(() => {
-          if (a || !f) return;
+        p.current = h, n.useEffect(() => {
+          if (a || !b) return;
           let n;
-          return n = c(f, (e, t) => {
+          return n = c(b, (e, t) => {
             y({
               inView: e,
               entry: t
-            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), p.current && p.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }, {
             root: r,
             rootMargin: s,
@@ -207,14 +207,14 @@ try {
           }, l), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, l, t]);
+        }, [Array.isArray(e) ? e.toString() : e, b, r, s, o, a, i, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
+        b || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!d,
           entry: void 0
         }));
-        const k = [p, g.inView, g.entry];
+        const k = [f, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

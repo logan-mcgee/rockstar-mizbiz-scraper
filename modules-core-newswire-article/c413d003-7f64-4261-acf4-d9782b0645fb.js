@@ -58,7 +58,7 @@ try {
       function y(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var w = function(e) {
+      var b = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -112,24 +112,24 @@ try {
               u = this._parent,
               l = this._child,
               p = (0, d.innerWidth)(u),
-              w = (0, d.innerHeight)(u);
-            if (w <= 0 || isNaN(w)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              b = (0, d.innerHeight)(u);
+            if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, f.default)();
-              this.pid = b;
+              var w = (0, f.default)();
+              this.pid = w;
               var m = function() {
-                  return b !== e.pid
+                  return w !== e.pid
                 },
                 g = "multi" === o ? function() {
-                  return y(l, w)
+                  return y(l, b)
                 } : function() {
                   return h(l, p)
                 },
                 _ = "multi" === o ? function() {
                   return h(l, p)
                 } : function() {
-                  return y(l, w)
+                  return y(l, b)
                 },
                 v = void 0,
                 T = n,
@@ -155,7 +155,7 @@ try {
                   v = parseInt((T + O) / 2, 10), e.setState({
                     fontSize: v
                   }, function() {
-                    return b !== e.pid ? t(!0) : (_() ? T = v + 1 : O = v - 1, t())
+                    return w !== e.pid ? t(!0) : (_() ? T = v + 1 : O = v - 1, t())
                   })
                 }, t))
               }, function(t) {
@@ -209,7 +209,7 @@ try {
           }
         }]), t
       }(i.default.Component);
-      w.propTypes = {
+      b.propTypes = {
         children: a.default.node,
         text: a.default.string,
         min: a.default.number,
@@ -218,7 +218,7 @@ try {
         forceSingleModeWidth: a.default.bool,
         throttle: a.default.number,
         onReady: a.default.func
-      }, w.defaultProps = {
+      }, b.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -226,7 +226,7 @@ try {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = w
+      }, t.default = b
     },
     6306: e => {
       function t(e, t) {

@@ -43,8 +43,8 @@ try {
         o = m(r(62229)),
         s = m(r(97465)),
         i = m(r(11524)),
-        c = m(r(52321)),
-        l = m(r(92701)),
+        l = m(r(52321)),
+        c = m(r(92701)),
         d = m(r(51364)),
         u = m(r(34738)),
         f = r(96143);
@@ -140,8 +140,8 @@ try {
                 _ = n;
               this.setState({
                 ready: !1
-              }), (0, c.default)([function(t) {
-                return (0, l.default)(function() {
+              }), (0, l.default)([function(t) {
+                return (0, c.default)(function() {
                   return k <= _
                 }, function(t) {
                   if (w()) return t(!0);
@@ -152,7 +152,7 @@ try {
                   })
                 }, t)
               }, function(t) {
-                return "single" === a && o || v() ? t() : (k = r, _ = x, (0, l.default)(function() {
+                return "single" === a && o || v() ? t() : (k = r, _ = x, (0, c.default)(function() {
                   return k < _
                 }, function(t) {
                   if (w()) return t(!0);
@@ -185,14 +185,14 @@ try {
               a = t.text,
               s = t.style,
               i = (t.min, t.max, t.mode),
-              c = (t.forceWidth, t.forceSingleModeWidth, t.throttle, t.autoResize, t.onReady, function(e, t) {
+              l = (t.forceWidth, t.forceSingleModeWidth, t.throttle, t.autoResize, t.onReady, function(e, t) {
                 var r = {};
                 for (var n in e) t.indexOf(n) >= 0 || Object.prototype.hasOwnProperty.call(e, n) && (r[n] = e[n]);
                 return r
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
-              l = this.state,
-              d = l.fontSize,
-              u = l.ready,
+              c = this.state,
+              d = c.fontSize,
+              u = c.ready,
               f = n({}, s, {
                 fontSize: d
               }),
@@ -204,7 +204,7 @@ try {
                 return e._parent = t
               },
               style: f
-            }, c), o.default.createElement("div", {
+            }, l), o.default.createElement("div", {
               ref: function(t) {
                 return e._child = t
               },
@@ -235,7 +235,7 @@ try {
     4407: (e, t, r) => {
       "use strict";
       r.d(t, {
-        A: () => c
+        A: () => l
       });
       var n = r(42295),
         a = r(34725),
@@ -247,33 +247,33 @@ try {
           src: a,
           style: s
         }) => {
-          const [i, c] = (0, o.usePreloadImg)(a);
-          let l = a;
-          !1 === i && ("rockstargames-modules-core-newswire-articlea6a06e2d5c4f1811ea39d17312ca2e67" === t && (l = r(28839)), l = r(9333));
+          const [i, l] = (0, o.usePreloadImg)(a);
+          let c = a;
+          !1 === i && ("rockstargames-modules-core-newswire-articlea6a06e2d5c4f1811ea39d17312ca2e67" === t && (c = r(28839)), c = r(9333));
           const {
             width: d,
             height: u
-          } = c, f = {
+          } = l, f = {
             "--aspect-ratio": Number.isNaN(d / u) ? "" : d / u,
             ...s
           };
           return (0, n.jsx)("img", {
-            src: l,
+            src: c,
             className: t ?? "",
             alt: e,
             style: f
           })
         },
-        c = ({
+        l = ({
           className: e,
           style: t = {},
-          image: c = {},
-          imageStyle: l = {}
+          image: l = {},
+          imageStyle: c = {}
         }) => {
           let {
             alt: d,
             src: u
-          } = (0, a.S1)(c);
+          } = (0, a.S1)(l);
           const {
             isMobile: f
           } = (0, o.useWindowResize)();
@@ -281,14 +281,14 @@ try {
             mobile: r(28839),
             desktop: r(9333)
           });
-          let m = c.frame ? `${c.frame} ${s}` : s;
+          let m = l.frame ? `${l.frame} ${s}` : s;
           return (0, n.jsx)("div", {
             className: m,
             style: t,
             children: (0, n.jsx)(i, {
               style: {
-                ...l,
-                ...c?.style
+                ...c,
+                ...l?.style
               },
               src: f ? u.mobile || u.desktop : u?.desktop || u?.mobile,
               alt: d,
@@ -315,8 +315,8 @@ try {
         o = r(95966),
         s = r(4572),
         i = r.n(s),
-        c = r(84927),
-        l = r(4407);
+        l = r(84927),
+        c = r(4407);
       const d = ({
           hero: e,
           children: t
@@ -337,7 +337,7 @@ try {
           hero: g = !1
         }) => {
           const b = (0, a.useMemo)(() => {
-            if (u?.badge || u?.discountTxt || e || r) return (0, n.jsx)(c.A, {
+            if (u?.badge || u?.discountTxt || e || r) return (0, n.jsx)(l.A, {
               badge: u?.discountTxt ?? u?.badge ?? e ?? r,
               badgeType: t,
               splitter: u?.splitter ?? s,
@@ -354,7 +354,7 @@ try {
                   ...p?.style
                 }),
                 ...p,
-                children: [(0, n.jsx)(l.A, {
+                children: [(0, n.jsx)(c.A, {
                   image: u,
                   className: m
                 }), b, u?.caption && (0, n.jsx)("figcaption", {
@@ -396,10 +396,10 @@ try {
     34725: (e, t, r) => {
       "use strict";
       r.d(t, {
-        C1: () => c,
+        C1: () => l,
         S1: () => i,
         XC: () => f,
-        jS: () => l,
+        jS: () => c,
         qg: () => d,
         z0: () => u
       });
@@ -419,45 +419,45 @@ try {
           mobile: t = null,
           desktop: r = null,
           ariaLabel: i = null,
-          sources: c = null,
-          prod: l = null
+          sources: l = null,
+          prod: c = null
         }) => {
           const d = (0, a.useLocale)(),
             {
               meta: u = {}
             } = (0, o.i)() ?? {},
-            [f, m] = (0, n.useState)(l ?? u?.cdn ?? u?.prod ?? !0);
+            [f, m] = (0, n.useState)(c ?? u?.cdn ?? u?.prod ?? !0);
           (0, n.useEffect)(() => {
-            m(l ?? u?.cdn ?? u?.prod ?? !0)
-          }, [l, u]);
+            m(c ?? u?.cdn ?? u?.prod ?? !0)
+          }, [c, u]);
           const p = (0, n.useCallback)(e => {
-            const t = null !== c,
+            const t = null !== l,
               r = e?.previewSrc ?? e ?? null;
             if (null === r || "string" != typeof r) return null;
             if (r.startsWith("http")) return s(r);
             const n = `${t?(0,a.getCdnPrefix)(f):""}${r}`;
             return s(n)
-          }, [f, c]);
+          }, [f, l]);
           return {
             alt: e,
             ariaLabel: i,
             src: {
-              mobile: p(c?.[d]?.mobile ?? c?.en_us?.mobile ?? t),
-              desktop: p(c?.[d]?.desktop ?? c?.en_us?.desktop ?? r)
+              mobile: p(l?.[d]?.mobile ?? l?.en_us?.mobile ?? t),
+              desktop: p(l?.[d]?.desktop ?? l?.en_us?.desktop ?? r)
             }
           }
         },
-        c = e => {
+        l = e => {
           const t = (0, o.i)() ?? {},
             {
               meta: r = {}
             } = t,
-            [i, c] = (0, n.useState)(r?.cdn ?? r?.prod ?? !1);
+            [i, l] = (0, n.useState)(r?.cdn ?? r?.prod ?? !1);
           return (0, n.useEffect)(() => {
-            c(r?.cdn ?? r?.prod ?? !1)
+            l(r?.cdn ?? r?.prod ?? !1)
           }, [r]), e ? e?.startsWith("http") ? s(e) : s(`${(0,a.getCdnPrefix)(i)}${e}`) : null
         },
-        l = () => {
+        c = () => {
           const e = (0, o.i)() ?? {},
             {
               meta: t = {}
@@ -592,7 +592,7 @@ try {
     74767: (e, t, r) => {
       "use strict";
       r.d(t, {
-        i: () => c,
+        i: () => l,
         o: () => i
       });
       var n = r(42295),
@@ -611,12 +611,12 @@ try {
           value: t,
           children: e
         }),
-        c = () => (0, a.useContext)(o)
+        l = () => (0, a.useContext)(o)
     },
     84927: (e, t, r) => {
       "use strict";
       r.d(t, {
-        A: () => c
+        A: () => l
       });
       var n = r(42295),
         a = r(4407),
@@ -633,35 +633,35 @@ try {
           role: r,
           splitter: n
         }) => n || r ? e(t) : t,
-        c = ({
+        l = ({
           badge: e,
           badgeType: t,
-          role: c,
-          splitter: l
+          role: l,
+          splitter: c
         }) => {
           const d = [];
-          return l ? e.split(l).map((e, t) => d.push(e)) : d.push(e), (0, n.jsxs)(i, {
-            splitter: l,
-            role: c,
+          return c ? e.split(c).map((e, t) => d.push(e)) : d.push(e), (0, n.jsxs)(i, {
+            splitter: c,
+            role: l,
             wrapper: e => (0, n.jsx)("div", {
               className: `${s.badge} ${t?s[t]:""} `,
               children: e
             }),
             children: [(0, n.jsx)(n.Fragment, {
-              children: c && (0, n.jsx)(a.A, {
+              children: l && (0, n.jsx)(a.A, {
                 image: {
-                  alt: c,
-                  desktop: r(65287)(`./${c}.png`)
+                  alt: l,
+                  desktop: r(65287)(`./${l}.png`)
                 }
               })
             }), (0, n.jsx)(o.A, {
-              className: `${l||c?"":s.badge} ${t?s[t]:""}`,
+              className: `${c||l?"":s.badge} ${t?s[t]:""}`,
               min: 8,
               max: 1e3,
-              mode: l || c ? "single" : "multi",
+              mode: c || l ? "single" : "multi",
               children: d[0]
             }), (0, n.jsx)(n.Fragment, {
-              children: d.shift() && l && d.length >= 1 && (0, n.jsx)(o.A, {
+              children: d.shift() && c && d.length >= 1 && (0, n.jsx)(o.A, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -682,8 +682,8 @@ try {
         o = r(85827),
         s = r(24162),
         i = r(10632),
-        c = r(4572),
-        l = r.n(c);
+        l = r(4572),
+        c = r.n(l);
       const d = {
           active: "rockstargames-modules-core-newswire-articleff176766f8bcd61f0d409caa3d43cdef",
           backgroundContent: "rockstargames-modules-core-newswire-articlefbee414bfae93f3621f4445ff9c4bf7c",
@@ -707,7 +707,7 @@ try {
           className: r,
           children: a
         }) => (0, n.jsx)("div", {
-          className: l()(r, e ? d.fadeIn : "", t ? d.active : ""),
+          className: c()(r, e ? d.fadeIn : "", t ? d.active : ""),
           children: a
         }),
         f = ({
@@ -725,7 +725,7 @@ try {
         }) => e && e?.content ? (0, n.jsx)(u, {
           shouldFade: e?.fadeIn,
           condition: e?.fadeIn,
-          className: l()(d.slot, d[t], d[r]),
+          className: c()(d.slot, d[t], d[r]),
           children: (0, n.jsx)(i.A, {
             ...e.content[0]
           })
@@ -762,7 +762,7 @@ try {
           centeredSlides: r = !0,
           slides: i = null
         }) => {
-          const [c, u] = (0, a.useState)(null);
+          const [l, u] = (0, a.useState)(null);
           return i ? (0, n.jsx)("div", {
             className: d.panoramaCarouselWrapper,
             children: (0, n.jsxs)(s.RC, {
@@ -790,17 +790,17 @@ try {
                 }
               },
               children: [(0, n.jsxs)("div", {
-                className: l()(d.slotContainer, d.top),
+                className: c()(d.slotContainer, d.top),
                 children: [(0, n.jsx)(m, {
-                  item: c?.topLeftSlot,
+                  item: l?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
                 }), (0, n.jsx)(m, {
-                  item: c?.topCenterSlot,
+                  item: l?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
                 }), (0, n.jsx)(m, {
-                  item: c?.topRightSlot,
+                  item: l?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
                 })]
@@ -812,18 +812,18 @@ try {
                   ...e
                 })
               }, e?.key)), (0, n.jsxs)("div", {
-                className: l()(d.slotContainer, d.bottom),
+                className: c()(d.slotContainer, d.bottom),
                 children: [(0, n.jsx)(m, {
-                  item: c?.bottomLeftSlot,
+                  item: l?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
                 }), (0, n.jsx)(m, {
-                  item: c?.bottomRightSlot,
+                  item: l?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
               }), (0, n.jsx)(f, {
-                currentSlide: c
+                currentSlide: l
               })]
             })
           }) : null

@@ -50,7 +50,7 @@ try {
           className: l()(s, e ? c.fadeIn : "", a ? c.active : ""),
           children: t
         }),
-        m = ({
+        b = ({
           currentSlide: e
         }) => (0, r.jsx)("div", {
           className: c.customPagination,
@@ -58,7 +58,7 @@ try {
             children: e?.itemName ?? "Item"
           })
         }),
-        u = ({
+        m = ({
           item: e,
           vertical: a,
           horizontal: s
@@ -70,7 +70,7 @@ try {
             ...e.content[0]
           })
         }) : null,
-        b = ({
+        u = ({
           active: e = !1,
           backgroundContent: a,
           foregroundContent: s
@@ -131,15 +131,15 @@ try {
               },
               children: [(0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.top),
-                children: [(0, r.jsx)(u, {
+                children: [(0, r.jsx)(m, {
                   item: i?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
-                }), (0, r.jsx)(u, {
+                }), (0, r.jsx)(m, {
                   item: i?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
-                }), (0, r.jsx)(u, {
+                }), (0, r.jsx)(m, {
                   item: i?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
@@ -147,22 +147,22 @@ try {
               }), n.map(e => (0, r.jsx)(d.qr, {
                 children: ({
                   isActive: a
-                }) => (0, r.jsx)(b, {
+                }) => (0, r.jsx)(u, {
                   active: a,
                   ...e
                 })
               }, e?.key)), (0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.bottom),
-                children: [(0, r.jsx)(u, {
+                children: [(0, r.jsx)(m, {
                   item: i?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
-                }), (0, r.jsx)(u, {
+                }), (0, r.jsx)(m, {
                   item: i?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
-              }), (0, r.jsx)(m, {
+              }), (0, r.jsx)(b, {
                 currentSlide: i
               })]
             })

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "969683d6-5406-49b2-a1c0-1cb3dc57c824", e._sentryDebugIdIdentifier = "sentry-dbid-969683d6-5406-49b2-a1c0-1cb3dc57c824")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "969683d6-5406-49b2-a1c0-1cb3dc57c824", e._sentryDebugIdIdentifier = "sentry-dbid-969683d6-5406-49b2-a1c0-1cb3dc57c824")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,93 +13,93 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [5827], {
-    85827: (e, t, a) => {
-      a.d(t, {
+    85827: (e, a, t) => {
+      t.d(a, {
         Jq: () => d,
         U1: () => p,
         Vx: () => l,
         dK: () => o,
         WO: () => c
       });
-      var s = a(60272),
-        i = a(96501);
+      var s = t(60272),
+        i = t(96501);
 
-      function n(e, t, a, s) {
+      function n(e, a, t, s) {
         return e.params.createElements && Object.keys(s).forEach(n => {
-          if (!a[n] && !0 === a.auto) {
+          if (!t[n] && !0 === t.auto) {
             let l = (0, i.e)(e.el, `.${s[n]}`)[0];
-            l || (l = (0, i.c)("div", s[n]), l.className = s[n], e.el.append(l)), a[n] = l, t[n] = l
+            l || (l = (0, i.c)("div", s[n]), l.className = s[n], e.el.append(l)), t[n] = l, a[n] = l
           }
-        }), a
+        }), t
       }
 
       function l(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           on: s,
           emit: l
         } = e;
 
         function r(e) {
-          let a;
-          return e && "string" == typeof e && t.isElement && (a = t.el.querySelector(e) || t.hostEl.querySelector(e), a) ? a : (e && ("string" == typeof e && (a = [...document.querySelectorAll(e)]), t.params.uniqueNavElements && "string" == typeof e && a && a.length > 1 && 1 === t.el.querySelectorAll(e).length ? a = t.el.querySelector(e) : a && 1 === a.length && (a = a[0])), e && !a ? e : a)
+          let t;
+          return e && "string" == typeof e && a.isElement && (t = a.el.querySelector(e) || a.hostEl.querySelector(e), t) ? t : (e && ("string" == typeof e && (t = [...document.querySelectorAll(e)]), a.params.uniqueNavElements && "string" == typeof e && t && t.length > 1 && 1 === a.el.querySelectorAll(e).length ? t = a.el.querySelector(e) : t && 1 === t.length && (t = t[0])), e && !t ? e : t)
         }
 
-        function o(e, a) {
-          const s = t.params.navigation;
+        function o(e, t) {
+          const s = a.params.navigation;
           (e = (0, i.m)(e)).forEach(e => {
-            e && (e.classList[a ? "add" : "remove"](...s.disabledClass.split(" ")), "BUTTON" === e.tagName && (e.disabled = a), t.params.watchOverflow && t.enabled && e.classList[t.isLocked ? "add" : "remove"](s.lockClass))
+            e && (e.classList[t ? "add" : "remove"](...s.disabledClass.split(" ")), "BUTTON" === e.tagName && (e.disabled = t), a.params.watchOverflow && a.enabled && e.classList[a.isLocked ? "add" : "remove"](s.lockClass))
           })
         }
 
         function d() {
           const {
             nextEl: e,
-            prevEl: a
-          } = t.navigation;
-          if (t.params.loop) return o(a, !1), void o(e, !1);
-          o(a, t.isBeginning && !t.params.rewind), o(e, t.isEnd && !t.params.rewind)
+            prevEl: t
+          } = a.navigation;
+          if (a.params.loop) return o(t, !1), void o(e, !1);
+          o(t, a.isBeginning && !a.params.rewind), o(e, a.isEnd && !a.params.rewind)
         }
 
         function c(e) {
-          e.preventDefault(), (!t.isBeginning || t.params.loop || t.params.rewind) && (t.slidePrev(), l("navigationPrev"))
+          e.preventDefault(), (!a.isBeginning || a.params.loop || a.params.rewind) && (a.slidePrev(), l("navigationPrev"))
         }
 
         function p(e) {
-          e.preventDefault(), (!t.isEnd || t.params.loop || t.params.rewind) && (t.slideNext(), l("navigationNext"))
+          e.preventDefault(), (!a.isEnd || a.params.loop || a.params.rewind) && (a.slideNext(), l("navigationNext"))
         }
 
         function u() {
-          const e = t.params.navigation;
-          if (t.params.navigation = n(t, t.originalParams.navigation, t.params.navigation, {
+          const e = a.params.navigation;
+          if (a.params.navigation = n(a, a.originalParams.navigation, a.params.navigation, {
               nextEl: "swiper-button-next",
               prevEl: "swiper-button-prev"
             }), !e.nextEl && !e.prevEl) return;
-          let a = r(e.nextEl),
+          let t = r(e.nextEl),
             s = r(e.prevEl);
-          Object.assign(t.navigation, {
-            nextEl: a,
+          Object.assign(a.navigation, {
+            nextEl: t,
             prevEl: s
-          }), a = (0, i.m)(a), s = (0, i.m)(s);
-          const l = (a, s) => {
-            a && a.addEventListener("click", "next" === s ? p : c), !t.enabled && a && a.classList.add(...e.lockClass.split(" "))
+          }), t = (0, i.m)(t), s = (0, i.m)(s);
+          const l = (t, s) => {
+            t && t.addEventListener("click", "next" === s ? p : c), !a.enabled && t && t.classList.add(...e.lockClass.split(" "))
           };
-          a.forEach(e => l(e, "next")), s.forEach(e => l(e, "prev"))
+          t.forEach(e => l(e, "next")), s.forEach(e => l(e, "prev"))
         }
 
         function m() {
           let {
             nextEl: e,
-            prevEl: a
-          } = t.navigation;
-          e = (0, i.m)(e), a = (0, i.m)(a);
-          const s = (e, a) => {
-            e.removeEventListener("click", "next" === a ? p : c), e.classList.remove(...t.params.navigation.disabledClass.split(" "))
+            prevEl: t
+          } = a.navigation;
+          e = (0, i.m)(e), t = (0, i.m)(t);
+          const s = (e, t) => {
+            e.removeEventListener("click", "next" === t ? p : c), e.classList.remove(...a.params.navigation.disabledClass.split(" "))
           };
-          e.forEach(e => s(e, "next")), a.forEach(e => s(e, "prev"))
+          e.forEach(e => s(e, "next")), t.forEach(e => s(e, "prev"))
         }
-        a({
+        t({
           navigation: {
             nextEl: null,
             prevEl: null,
@@ -109,11 +109,11 @@ try {
             lockClass: "swiper-button-lock",
             navigationDisabledClass: "swiper-navigation-disabled"
           }
-        }), t.navigation = {
+        }), a.navigation = {
           nextEl: null,
           prevEl: null
         }, s("init", () => {
-          !1 === t.params.navigation.enabled ? g() : (u(), d())
+          !1 === a.params.navigation.enabled ? g() : (u(), d())
         }), s("toEdge fromEdge lock unlock", () => {
           d()
         }), s("destroy", () => {
@@ -121,33 +121,33 @@ try {
         }), s("enable disable", () => {
           let {
             nextEl: e,
-            prevEl: a
-          } = t.navigation;
-          e = (0, i.m)(e), a = (0, i.m)(a), t.enabled ? d() : [...e, ...a].filter(e => !!e).forEach(e => e.classList.add(t.params.navigation.lockClass))
-        }), s("click", (e, a) => {
+            prevEl: t
+          } = a.navigation;
+          e = (0, i.m)(e), t = (0, i.m)(t), a.enabled ? d() : [...e, ...t].filter(e => !!e).forEach(e => e.classList.add(a.params.navigation.lockClass))
+        }), s("click", (e, t) => {
           let {
             nextEl: s,
             prevEl: n
-          } = t.navigation;
+          } = a.navigation;
           s = (0, i.m)(s), n = (0, i.m)(n);
-          const r = a.target;
+          const r = t.target;
           let o = n.includes(r) || s.includes(r);
-          if (t.isElement && !o) {
-            const e = a.path || a.composedPath && a.composedPath();
+          if (a.isElement && !o) {
+            const e = t.path || t.composedPath && t.composedPath();
             e && (o = e.find(e => s.includes(e) || n.includes(e)))
           }
-          if (t.params.navigation.hideOnClick && !o) {
-            if (t.pagination && t.params.pagination && t.params.pagination.clickable && (t.pagination.el === r || t.pagination.el.contains(r))) return;
+          if (a.params.navigation.hideOnClick && !o) {
+            if (a.pagination && a.params.pagination && a.params.pagination.clickable && (a.pagination.el === r || a.pagination.el.contains(r))) return;
             let e;
-            s.length ? e = s[0].classList.contains(t.params.navigation.hiddenClass) : n.length && (e = n[0].classList.contains(t.params.navigation.hiddenClass)), l(!0 === e ? "navigationShow" : "navigationHide"), [...s, ...n].filter(e => !!e).forEach(e => e.classList.toggle(t.params.navigation.hiddenClass))
+            s.length ? e = s[0].classList.contains(a.params.navigation.hiddenClass) : n.length && (e = n[0].classList.contains(a.params.navigation.hiddenClass)), l(!0 === e ? "navigationShow" : "navigationHide"), [...s, ...n].filter(e => !!e).forEach(e => e.classList.toggle(a.params.navigation.hiddenClass))
           }
         });
         const g = () => {
-          t.el.classList.add(...t.params.navigation.navigationDisabledClass.split(" ")), m()
+          a.el.classList.add(...a.params.navigation.navigationDisabledClass.split(" ")), m()
         };
-        Object.assign(t.navigation, {
+        Object.assign(a.navigation, {
           enable: () => {
-            t.el.classList.remove(...t.params.navigation.navigationDisabledClass.split(" ")), u(), d()
+            a.el.classList.remove(...a.params.navigation.navigationDisabledClass.split(" ")), u(), d()
           },
           disable: g,
           update: d,
@@ -162,14 +162,14 @@ try {
 
       function o(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           on: s,
           emit: l
         } = e;
         const o = "swiper-pagination";
         let d;
-        a({
+        t({
           pagination: {
             el: null,
             bulletElement: "span",
@@ -199,199 +199,199 @@ try {
             verticalClass: `${o}-vertical`,
             paginationDisabledClass: `${o}-disabled`
           }
-        }), t.pagination = {
+        }), a.pagination = {
           el: null,
           bullets: []
         };
         let c = 0;
 
         function p() {
-          return !t.params.pagination.el || !t.pagination.el || Array.isArray(t.pagination.el) && 0 === t.pagination.el.length
+          return !a.params.pagination.el || !a.pagination.el || Array.isArray(a.pagination.el) && 0 === a.pagination.el.length
         }
 
-        function u(e, a) {
+        function u(e, t) {
           const {
             bulletActiveClass: s
-          } = t.params.pagination;
-          e && (e = e[("prev" === a ? "previous" : "next") + "ElementSibling"]) && (e.classList.add(`${s}-${a}`), (e = e[("prev" === a ? "previous" : "next") + "ElementSibling"]) && e.classList.add(`${s}-${a}-${a}`))
+          } = a.params.pagination;
+          e && (e = e[("prev" === t ? "previous" : "next") + "ElementSibling"]) && (e.classList.add(`${s}-${t}`), (e = e[("prev" === t ? "previous" : "next") + "ElementSibling"]) && e.classList.add(`${s}-${t}-${t}`))
         }
 
         function m(e) {
-          const a = e.target.closest(r(t.params.pagination.bulletClass));
-          if (!a) return;
+          const t = e.target.closest(r(a.params.pagination.bulletClass));
+          if (!t) return;
           e.preventDefault();
-          const s = (0, i.i)(a) * t.params.slidesPerGroup;
-          if (t.params.loop) {
-            if (t.realIndex === s) return;
-            const e = (n = t.realIndex, l = s, (l %= o = t.slides.length) === 1 + (n %= o) ? "next" : l === n - 1 ? "previous" : void 0);
-            "next" === e ? t.slideNext() : "previous" === e ? t.slidePrev() : t.slideToLoop(s)
-          } else t.slideTo(s);
+          const s = (0, i.i)(t) * a.params.slidesPerGroup;
+          if (a.params.loop) {
+            if (a.realIndex === s) return;
+            const e = (n = a.realIndex, l = s, (l %= o = a.slides.length) === 1 + (n %= o) ? "next" : l === n - 1 ? "previous" : void 0);
+            "next" === e ? a.slideNext() : "previous" === e ? a.slidePrev() : a.slideToLoop(s)
+          } else a.slideTo(s);
           var n, l, o
         }
 
         function g() {
-          const e = t.rtl,
-            a = t.params.pagination;
+          const e = a.rtl,
+            t = a.params.pagination;
           if (p()) return;
-          let s, n, o = t.pagination.el;
+          let s, n, o = a.pagination.el;
           o = (0, i.m)(o);
-          const m = t.virtual && t.params.virtual.enabled ? t.virtual.slides.length : t.slides.length,
-            g = t.params.loop ? Math.ceil(m / t.params.slidesPerGroup) : t.snapGrid.length;
-          if (t.params.loop ? (n = t.previousRealIndex || 0, s = t.params.slidesPerGroup > 1 ? Math.floor(t.realIndex / t.params.slidesPerGroup) : t.realIndex) : void 0 !== t.snapIndex ? (s = t.snapIndex, n = t.previousSnapIndex) : (n = t.previousIndex || 0, s = t.activeIndex || 0), "bullets" === a.type && t.pagination.bullets && t.pagination.bullets.length > 0) {
-            const l = t.pagination.bullets;
+          const m = a.virtual && a.params.virtual.enabled ? a.virtual.slides.length : a.slides.length,
+            g = a.params.loop ? Math.ceil(m / a.params.slidesPerGroup) : a.snapGrid.length;
+          if (a.params.loop ? (n = a.previousRealIndex || 0, s = a.params.slidesPerGroup > 1 ? Math.floor(a.realIndex / a.params.slidesPerGroup) : a.realIndex) : void 0 !== a.snapIndex ? (s = a.snapIndex, n = a.previousSnapIndex) : (n = a.previousIndex || 0, s = a.activeIndex || 0), "bullets" === t.type && a.pagination.bullets && a.pagination.bullets.length > 0) {
+            const l = a.pagination.bullets;
             let r, p, m;
-            if (a.dynamicBullets && (d = (0, i.h)(l[0], t.isHorizontal() ? "width" : "height", !0), o.forEach(e => {
-                e.style[t.isHorizontal() ? "width" : "height"] = d * (a.dynamicMainBullets + 4) + "px"
-              }), a.dynamicMainBullets > 1 && void 0 !== n && (c += s - (n || 0), c > a.dynamicMainBullets - 1 ? c = a.dynamicMainBullets - 1 : c < 0 && (c = 0)), r = Math.max(s - c, 0), p = r + (Math.min(l.length, a.dynamicMainBullets) - 1), m = (p + r) / 2), l.forEach(e => {
-                const t = [...["", "-next", "-next-next", "-prev", "-prev-prev", "-main"].map(e => `${a.bulletActiveClass}${e}`)].map(e => "string" == typeof e && e.includes(" ") ? e.split(" ") : e).flat();
-                e.classList.remove(...t)
+            if (t.dynamicBullets && (d = (0, i.h)(l[0], a.isHorizontal() ? "width" : "height", !0), o.forEach(e => {
+                e.style[a.isHorizontal() ? "width" : "height"] = d * (t.dynamicMainBullets + 4) + "px"
+              }), t.dynamicMainBullets > 1 && void 0 !== n && (c += s - (n || 0), c > t.dynamicMainBullets - 1 ? c = t.dynamicMainBullets - 1 : c < 0 && (c = 0)), r = Math.max(s - c, 0), p = r + (Math.min(l.length, t.dynamicMainBullets) - 1), m = (p + r) / 2), l.forEach(e => {
+                const a = [...["", "-next", "-next-next", "-prev", "-prev-prev", "-main"].map(e => `${t.bulletActiveClass}${e}`)].map(e => "string" == typeof e && e.includes(" ") ? e.split(" ") : e).flat();
+                e.classList.remove(...a)
               }), o.length > 1) l.forEach(e => {
               const n = (0, i.i)(e);
-              n === s ? e.classList.add(...a.bulletActiveClass.split(" ")) : t.isElement && e.setAttribute("part", "bullet"), a.dynamicBullets && (n >= r && n <= p && e.classList.add(...`${a.bulletActiveClass}-main`.split(" ")), n === r && u(e, "prev"), n === p && u(e, "next"))
+              n === s ? e.classList.add(...t.bulletActiveClass.split(" ")) : a.isElement && e.setAttribute("part", "bullet"), t.dynamicBullets && (n >= r && n <= p && e.classList.add(...`${t.bulletActiveClass}-main`.split(" ")), n === r && u(e, "prev"), n === p && u(e, "next"))
             });
             else {
               const e = l[s];
-              if (e && e.classList.add(...a.bulletActiveClass.split(" ")), t.isElement && l.forEach((e, t) => {
-                  e.setAttribute("part", t === s ? "bullet-active" : "bullet")
-                }), a.dynamicBullets) {
+              if (e && e.classList.add(...t.bulletActiveClass.split(" ")), a.isElement && l.forEach((e, a) => {
+                  e.setAttribute("part", a === s ? "bullet-active" : "bullet")
+                }), t.dynamicBullets) {
                 const e = l[r],
-                  t = l[p];
-                for (let e = r; e <= p; e += 1) l[e] && l[e].classList.add(...`${a.bulletActiveClass}-main`.split(" "));
-                u(e, "prev"), u(t, "next")
+                  a = l[p];
+                for (let e = r; e <= p; e += 1) l[e] && l[e].classList.add(...`${t.bulletActiveClass}-main`.split(" "));
+                u(e, "prev"), u(a, "next")
               }
             }
-            if (a.dynamicBullets) {
-              const s = Math.min(l.length, a.dynamicMainBullets + 4),
+            if (t.dynamicBullets) {
+              const s = Math.min(l.length, t.dynamicMainBullets + 4),
                 i = (d * s - d) / 2 - m * d,
                 n = e ? "right" : "left";
               l.forEach(e => {
-                e.style[t.isHorizontal() ? n : "top"] = `${i}px`
+                e.style[a.isHorizontal() ? n : "top"] = `${i}px`
               })
             }
           }
           o.forEach((e, n) => {
-            if ("fraction" === a.type && (e.querySelectorAll(r(a.currentClass)).forEach(e => {
-                e.textContent = a.formatFractionCurrent(s + 1)
-              }), e.querySelectorAll(r(a.totalClass)).forEach(e => {
-                e.textContent = a.formatFractionTotal(g)
-              })), "progressbar" === a.type) {
+            if ("fraction" === t.type && (e.querySelectorAll(r(t.currentClass)).forEach(e => {
+                e.textContent = t.formatFractionCurrent(s + 1)
+              }), e.querySelectorAll(r(t.totalClass)).forEach(e => {
+                e.textContent = t.formatFractionTotal(g)
+              })), "progressbar" === t.type) {
               let i;
-              i = a.progressbarOpposite ? t.isHorizontal() ? "vertical" : "horizontal" : t.isHorizontal() ? "horizontal" : "vertical";
+              i = t.progressbarOpposite ? a.isHorizontal() ? "vertical" : "horizontal" : a.isHorizontal() ? "horizontal" : "vertical";
               const n = (s + 1) / g;
               let l = 1,
                 o = 1;
-              "horizontal" === i ? l = n : o = n, e.querySelectorAll(r(a.progressbarFillClass)).forEach(e => {
-                e.style.transform = `translate3d(0,0,0) scaleX(${l}) scaleY(${o})`, e.style.transitionDuration = `${t.params.speed}ms`
+              "horizontal" === i ? l = n : o = n, e.querySelectorAll(r(t.progressbarFillClass)).forEach(e => {
+                e.style.transform = `translate3d(0,0,0) scaleX(${l}) scaleY(${o})`, e.style.transitionDuration = `${a.params.speed}ms`
               })
             }
-            "custom" === a.type && a.renderCustom ? ((0, i.s)(e, a.renderCustom(t, s + 1, g)), 0 === n && l("paginationRender", e)) : (0 === n && l("paginationRender", e), l("paginationUpdate", e)), t.params.watchOverflow && t.enabled && e.classList[t.isLocked ? "add" : "remove"](a.lockClass)
+            "custom" === t.type && t.renderCustom ? ((0, i.s)(e, t.renderCustom(a, s + 1, g)), 0 === n && l("paginationRender", e)) : (0 === n && l("paginationRender", e), l("paginationUpdate", e)), a.params.watchOverflow && a.enabled && e.classList[a.isLocked ? "add" : "remove"](t.lockClass)
           })
         }
 
         function f() {
-          const e = t.params.pagination;
+          const e = a.params.pagination;
           if (p()) return;
-          const a = t.virtual && t.params.virtual.enabled ? t.virtual.slides.length : t.grid && t.params.grid.rows > 1 ? t.slides.length / Math.ceil(t.params.grid.rows) : t.slides.length;
-          let s = t.pagination.el;
+          const t = a.virtual && a.params.virtual.enabled ? a.virtual.slides.length : a.grid && a.params.grid.rows > 1 ? a.slides.length / Math.ceil(a.params.grid.rows) : a.slides.length;
+          let s = a.pagination.el;
           s = (0, i.m)(s);
           let n = "";
           if ("bullets" === e.type) {
-            let s = t.params.loop ? Math.ceil(a / t.params.slidesPerGroup) : t.snapGrid.length;
-            t.params.freeMode && t.params.freeMode.enabled && s > a && (s = a);
-            for (let a = 0; a < s; a += 1) e.renderBullet ? n += e.renderBullet.call(t, a, e.bulletClass) : n += `<${e.bulletElement} ${t.isElement?'part="bullet"':""} class="${e.bulletClass}"></${e.bulletElement}>`
+            let s = a.params.loop ? Math.ceil(t / a.params.slidesPerGroup) : a.snapGrid.length;
+            a.params.freeMode && a.params.freeMode.enabled && s > t && (s = t);
+            for (let t = 0; t < s; t += 1) e.renderBullet ? n += e.renderBullet.call(a, t, e.bulletClass) : n += `<${e.bulletElement} ${a.isElement?'part="bullet"':""} class="${e.bulletClass}"></${e.bulletElement}>`
           }
-          "fraction" === e.type && (n = e.renderFraction ? e.renderFraction.call(t, e.currentClass, e.totalClass) : `<span class="${e.currentClass}"></span> / <span class="${e.totalClass}"></span>`), "progressbar" === e.type && (n = e.renderProgressbar ? e.renderProgressbar.call(t, e.progressbarFillClass) : `<span class="${e.progressbarFillClass}"></span>`), t.pagination.bullets = [], s.forEach(a => {
-            "custom" !== e.type && (0, i.s)(a, n || ""), "bullets" === e.type && t.pagination.bullets.push(...a.querySelectorAll(r(e.bulletClass)))
+          "fraction" === e.type && (n = e.renderFraction ? e.renderFraction.call(a, e.currentClass, e.totalClass) : `<span class="${e.currentClass}"></span> / <span class="${e.totalClass}"></span>`), "progressbar" === e.type && (n = e.renderProgressbar ? e.renderProgressbar.call(a, e.progressbarFillClass) : `<span class="${e.progressbarFillClass}"></span>`), a.pagination.bullets = [], s.forEach(t => {
+            "custom" !== e.type && (0, i.s)(t, n || ""), "bullets" === e.type && a.pagination.bullets.push(...t.querySelectorAll(r(e.bulletClass)))
           }), "custom" !== e.type && l("paginationRender", s[0])
         }
 
-        function v() {
-          t.params.pagination = n(t, t.originalParams.pagination, t.params.pagination, {
+        function b() {
+          a.params.pagination = n(a, a.originalParams.pagination, a.params.pagination, {
             el: "swiper-pagination"
           });
-          const e = t.params.pagination;
+          const e = a.params.pagination;
           if (!e.el) return;
-          let a;
-          "string" == typeof e.el && t.isElement && (a = t.el.querySelector(e.el)), a || "string" != typeof e.el || (a = [...document.querySelectorAll(e.el)]), a || (a = e.el), a && 0 !== a.length && (t.params.uniqueNavElements && "string" == typeof e.el && Array.isArray(a) && a.length > 1 && (a = [...t.el.querySelectorAll(e.el)], a.length > 1 && (a = a.find(e => (0, i.b)(e, ".swiper")[0] === t.el))), Array.isArray(a) && 1 === a.length && (a = a[0]), Object.assign(t.pagination, {
-            el: a
-          }), a = (0, i.m)(a), a.forEach(a => {
-            "bullets" === e.type && e.clickable && a.classList.add(...(e.clickableClass || "").split(" ")), a.classList.add(e.modifierClass + e.type), a.classList.add(t.isHorizontal() ? e.horizontalClass : e.verticalClass), "bullets" === e.type && e.dynamicBullets && (a.classList.add(`${e.modifierClass}${e.type}-dynamic`), c = 0, e.dynamicMainBullets < 1 && (e.dynamicMainBullets = 1)), "progressbar" === e.type && e.progressbarOpposite && a.classList.add(e.progressbarOppositeClass), e.clickable && a.addEventListener("click", m), t.enabled || a.classList.add(e.lockClass)
+          let t;
+          "string" == typeof e.el && a.isElement && (t = a.el.querySelector(e.el)), t || "string" != typeof e.el || (t = [...document.querySelectorAll(e.el)]), t || (t = e.el), t && 0 !== t.length && (a.params.uniqueNavElements && "string" == typeof e.el && Array.isArray(t) && t.length > 1 && (t = [...a.el.querySelectorAll(e.el)], t.length > 1 && (t = t.find(e => (0, i.b)(e, ".swiper")[0] === a.el))), Array.isArray(t) && 1 === t.length && (t = t[0]), Object.assign(a.pagination, {
+            el: t
+          }), t = (0, i.m)(t), t.forEach(t => {
+            "bullets" === e.type && e.clickable && t.classList.add(...(e.clickableClass || "").split(" ")), t.classList.add(e.modifierClass + e.type), t.classList.add(a.isHorizontal() ? e.horizontalClass : e.verticalClass), "bullets" === e.type && e.dynamicBullets && (t.classList.add(`${e.modifierClass}${e.type}-dynamic`), c = 0, e.dynamicMainBullets < 1 && (e.dynamicMainBullets = 1)), "progressbar" === e.type && e.progressbarOpposite && t.classList.add(e.progressbarOppositeClass), e.clickable && t.addEventListener("click", m), a.enabled || t.classList.add(e.lockClass)
           }))
         }
 
-        function b() {
-          const e = t.params.pagination;
+        function v() {
+          const e = a.params.pagination;
           if (p()) return;
-          let a = t.pagination.el;
-          a && (a = (0, i.m)(a), a.forEach(a => {
-            a.classList.remove(e.hiddenClass), a.classList.remove(e.modifierClass + e.type), a.classList.remove(t.isHorizontal() ? e.horizontalClass : e.verticalClass), e.clickable && (a.classList.remove(...(e.clickableClass || "").split(" ")), a.removeEventListener("click", m))
-          })), t.pagination.bullets && t.pagination.bullets.forEach(t => t.classList.remove(...e.bulletActiveClass.split(" ")))
+          let t = a.pagination.el;
+          t && (t = (0, i.m)(t), t.forEach(t => {
+            t.classList.remove(e.hiddenClass), t.classList.remove(e.modifierClass + e.type), t.classList.remove(a.isHorizontal() ? e.horizontalClass : e.verticalClass), e.clickable && (t.classList.remove(...(e.clickableClass || "").split(" ")), t.removeEventListener("click", m))
+          })), a.pagination.bullets && a.pagination.bullets.forEach(a => a.classList.remove(...e.bulletActiveClass.split(" ")))
         }
         s("changeDirection", () => {
-          if (!t.pagination || !t.pagination.el) return;
-          const e = t.params.pagination;
+          if (!a.pagination || !a.pagination.el) return;
+          const e = a.params.pagination;
           let {
-            el: a
-          } = t.pagination;
-          a = (0, i.m)(a), a.forEach(a => {
-            a.classList.remove(e.horizontalClass, e.verticalClass), a.classList.add(t.isHorizontal() ? e.horizontalClass : e.verticalClass)
+            el: t
+          } = a.pagination;
+          t = (0, i.m)(t), t.forEach(t => {
+            t.classList.remove(e.horizontalClass, e.verticalClass), t.classList.add(a.isHorizontal() ? e.horizontalClass : e.verticalClass)
           })
         }), s("init", () => {
-          !1 === t.params.pagination.enabled ? h() : (v(), f(), g())
+          !1 === a.params.pagination.enabled ? h() : (b(), f(), g())
         }), s("activeIndexChange", () => {
-          void 0 === t.snapIndex && g()
+          void 0 === a.snapIndex && g()
         }), s("snapIndexChange", () => {
           g()
         }), s("snapGridLengthChange", () => {
           f(), g()
         }), s("destroy", () => {
-          b()
+          v()
         }), s("enable disable", () => {
           let {
             el: e
-          } = t.pagination;
-          e && (e = (0, i.m)(e), e.forEach(e => e.classList[t.enabled ? "remove" : "add"](t.params.pagination.lockClass)))
+          } = a.pagination;
+          e && (e = (0, i.m)(e), e.forEach(e => e.classList[a.enabled ? "remove" : "add"](a.params.pagination.lockClass)))
         }), s("lock unlock", () => {
           g()
-        }), s("click", (e, a) => {
-          const s = a.target,
-            n = (0, i.m)(t.pagination.el);
-          if (t.params.pagination.el && t.params.pagination.hideOnClick && n && n.length > 0 && !s.classList.contains(t.params.pagination.bulletClass)) {
-            if (t.navigation && (t.navigation.nextEl && s === t.navigation.nextEl || t.navigation.prevEl && s === t.navigation.prevEl)) return;
-            const e = n[0].classList.contains(t.params.pagination.hiddenClass);
-            l(!0 === e ? "paginationShow" : "paginationHide"), n.forEach(e => e.classList.toggle(t.params.pagination.hiddenClass))
+        }), s("click", (e, t) => {
+          const s = t.target,
+            n = (0, i.m)(a.pagination.el);
+          if (a.params.pagination.el && a.params.pagination.hideOnClick && n && n.length > 0 && !s.classList.contains(a.params.pagination.bulletClass)) {
+            if (a.navigation && (a.navigation.nextEl && s === a.navigation.nextEl || a.navigation.prevEl && s === a.navigation.prevEl)) return;
+            const e = n[0].classList.contains(a.params.pagination.hiddenClass);
+            l(!0 === e ? "paginationShow" : "paginationHide"), n.forEach(e => e.classList.toggle(a.params.pagination.hiddenClass))
           }
         });
         const h = () => {
-          t.el.classList.add(t.params.pagination.paginationDisabledClass);
+          a.el.classList.add(a.params.pagination.paginationDisabledClass);
           let {
             el: e
-          } = t.pagination;
-          e && (e = (0, i.m)(e), e.forEach(e => e.classList.add(t.params.pagination.paginationDisabledClass))), b()
+          } = a.pagination;
+          e && (e = (0, i.m)(e), e.forEach(e => e.classList.add(a.params.pagination.paginationDisabledClass))), v()
         };
-        Object.assign(t.pagination, {
+        Object.assign(a.pagination, {
           enable: () => {
-            t.el.classList.remove(t.params.pagination.paginationDisabledClass);
+            a.el.classList.remove(a.params.pagination.paginationDisabledClass);
             let {
               el: e
-            } = t.pagination;
-            e && (e = (0, i.m)(e), e.forEach(e => e.classList.remove(t.params.pagination.paginationDisabledClass))), v(), f(), g()
+            } = a.pagination;
+            e && (e = (0, i.m)(e), e.forEach(e => e.classList.remove(a.params.pagination.paginationDisabledClass))), b(), f(), g()
           },
           disable: h,
           render: f,
           update: g,
-          init: v,
-          destroy: b
+          init: b,
+          destroy: v
         })
       }
 
       function d(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           on: n
         } = e;
-        a({
+        t({
           a11y: {
             enabled: !0,
             notificationClass: "swiper-notification",
@@ -409,15 +409,15 @@ try {
             id: null,
             scrollOnFocus: !0
           }
-        }), t.a11y = {
+        }), a.a11y = {
           clicked: !1
         };
         let l, o, d = null,
           c = (new Date).getTime();
 
         function p(e) {
-          const t = d;
-          0 !== t.length && (0, i.s)(t, e)
+          const a = d;
+          0 !== a.length && (0, i.s)(a, e)
         }
 
         function u(e) {
@@ -432,25 +432,25 @@ try {
           })
         }
 
-        function g(e, t) {
+        function g(e, a) {
           (e = (0, i.m)(e)).forEach(e => {
-            e.setAttribute("role", t)
+            e.setAttribute("role", a)
           })
         }
 
-        function f(e, t) {
+        function f(e, a) {
           (e = (0, i.m)(e)).forEach(e => {
-            e.setAttribute("aria-roledescription", t)
+            e.setAttribute("aria-roledescription", a)
           })
         }
 
-        function v(e, t) {
+        function b(e, a) {
           (e = (0, i.m)(e)).forEach(e => {
-            e.setAttribute("aria-label", t)
+            e.setAttribute("aria-label", a)
           })
         }
 
-        function b(e) {
+        function v(e) {
           (e = (0, i.m)(e)).forEach(e => {
             e.setAttribute("aria-disabled", !0)
           })
@@ -464,39 +464,39 @@ try {
 
         function y(e) {
           if (13 !== e.keyCode && 32 !== e.keyCode) return;
-          const a = t.params.a11y,
+          const t = a.params.a11y,
             s = e.target;
-          if (!t.pagination || !t.pagination.el || s !== t.pagination.el && !t.pagination.el.contains(e.target) || e.target.matches(r(t.params.pagination.bulletClass))) {
-            if (t.navigation && t.navigation.prevEl && t.navigation.nextEl) {
-              const e = (0, i.m)(t.navigation.prevEl);
-              (0, i.m)(t.navigation.nextEl).includes(s) && (t.isEnd && !t.params.loop || t.slideNext(), t.isEnd ? p(a.lastSlideMessage) : p(a.nextSlideMessage)), e.includes(s) && (t.isBeginning && !t.params.loop || t.slidePrev(), t.isBeginning ? p(a.firstSlideMessage) : p(a.prevSlideMessage))
+          if (!a.pagination || !a.pagination.el || s !== a.pagination.el && !a.pagination.el.contains(e.target) || e.target.matches(r(a.params.pagination.bulletClass))) {
+            if (a.navigation && a.navigation.prevEl && a.navigation.nextEl) {
+              const e = (0, i.m)(a.navigation.prevEl);
+              (0, i.m)(a.navigation.nextEl).includes(s) && (a.isEnd && !a.params.loop || a.slideNext(), a.isEnd ? p(t.lastSlideMessage) : p(t.nextSlideMessage)), e.includes(s) && (a.isBeginning && !a.params.loop || a.slidePrev(), a.isBeginning ? p(t.firstSlideMessage) : p(t.prevSlideMessage))
             }
-            t.pagination && s.matches(r(t.params.pagination.bulletClass)) && s.click()
+            a.pagination && s.matches(r(a.params.pagination.bulletClass)) && s.click()
           }
         }
 
         function E() {
-          return t.pagination && t.pagination.bullets && t.pagination.bullets.length
+          return a.pagination && a.pagination.bullets && a.pagination.bullets.length
         }
 
         function w() {
-          return E() && t.params.pagination.clickable
+          return E() && a.params.pagination.clickable
         }
-        const C = (e, t, a) => {
-            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), v(e, a),
-              function(e, t) {
+        const C = (e, a, t) => {
+            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), b(e, t),
+              function(e, a) {
                 (e = (0, i.m)(e)).forEach(e => {
-                  e.setAttribute("aria-controls", t)
+                  e.setAttribute("aria-controls", a)
                 })
-              }(e, t)
+              }(e, a)
           },
           x = e => {
-            o && o !== e.target && !o.contains(e.target) && (l = !0), t.a11y.clicked = !0
+            o && o !== e.target && !o.contains(e.target) && (l = !0), a.a11y.clicked = !0
           },
           M = () => {
             l = !1, requestAnimationFrame(() => {
               requestAnimationFrame(() => {
-                t.destroyed || (t.a11y.clicked = !1)
+                a.destroyed || (a.a11y.clicked = !1)
               })
             })
           },
@@ -504,94 +504,94 @@ try {
             c = (new Date).getTime()
           },
           k = e => {
-            if (t.a11y.clicked || !t.params.a11y.scrollOnFocus) return;
+            if (a.a11y.clicked || !a.params.a11y.scrollOnFocus) return;
             if ((new Date).getTime() - c < 100) return;
-            const a = e.target.closest(`.${t.params.slideClass}, swiper-slide`);
-            if (!a || !t.slides.includes(a)) return;
-            o = a;
-            const s = t.slides.indexOf(a) === t.activeIndex,
-              i = t.params.watchSlidesProgress && t.visibleSlides && t.visibleSlides.includes(a);
-            s || i || e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents || (t.isHorizontal() ? t.el.scrollLeft = 0 : t.el.scrollTop = 0, requestAnimationFrame(() => {
-              l || (t.params.loop ? t.slideToLoop(t.getSlideIndexWhenGrid(parseInt(a.getAttribute("data-swiper-slide-index"))), 0) : t.slideTo(t.getSlideIndexWhenGrid(t.slides.indexOf(a)), 0), l = !1)
+            const t = e.target.closest(`.${a.params.slideClass}, swiper-slide`);
+            if (!t || !a.slides.includes(t)) return;
+            o = t;
+            const s = a.slides.indexOf(t) === a.activeIndex,
+              i = a.params.watchSlidesProgress && a.visibleSlides && a.visibleSlides.includes(t);
+            s || i || e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents || (a.isHorizontal() ? a.el.scrollLeft = 0 : a.el.scrollTop = 0, requestAnimationFrame(() => {
+              l || (a.params.loop ? a.slideToLoop(a.getSlideIndexWhenGrid(parseInt(t.getAttribute("data-swiper-slide-index"))), 0) : a.slideTo(a.getSlideIndexWhenGrid(a.slides.indexOf(t)), 0), l = !1)
             }))
           },
           T = () => {
-            const e = t.params.a11y;
-            e.itemRoleDescriptionMessage && f(t.slides, e.itemRoleDescriptionMessage), e.slideRole && g(t.slides, e.slideRole);
-            const a = t.slides.length;
-            e.slideLabelMessage && t.slides.forEach((s, i) => {
-              const n = t.params.loop ? parseInt(s.getAttribute("data-swiper-slide-index"), 10) : i;
-              v(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, a))
+            const e = a.params.a11y;
+            e.itemRoleDescriptionMessage && f(a.slides, e.itemRoleDescriptionMessage), e.slideRole && g(a.slides, e.slideRole);
+            const t = a.slides.length;
+            e.slideLabelMessage && a.slides.forEach((s, i) => {
+              const n = a.params.loop ? parseInt(s.getAttribute("data-swiper-slide-index"), 10) : i;
+              b(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, t))
             })
           };
         n("beforeInit", () => {
-          d = (0, i.c)("span", t.params.a11y.notificationClass), d.setAttribute("aria-live", "assertive"), d.setAttribute("aria-atomic", "true")
+          d = (0, i.c)("span", a.params.a11y.notificationClass), d.setAttribute("aria-live", "assertive"), d.setAttribute("aria-atomic", "true")
         }), n("afterInit", () => {
-          t.params.a11y.enabled && (() => {
-            const e = t.params.a11y;
-            t.el.append(d);
-            const a = t.el;
-            e.containerRoleDescriptionMessage && f(a, e.containerRoleDescriptionMessage), e.containerMessage && v(a, e.containerMessage), e.containerRole && g(a, e.containerRole);
-            const n = t.wrapperEl,
+          a.params.a11y.enabled && (() => {
+            const e = a.params.a11y;
+            a.el.append(d);
+            const t = a.el;
+            e.containerRoleDescriptionMessage && f(t, e.containerRoleDescriptionMessage), e.containerMessage && b(t, e.containerMessage), e.containerRole && g(t, e.containerRole);
+            const n = a.wrapperEl,
               l = e.id || n.getAttribute("id") || `swiper-wrapper-${r=16,void 0===r&&(r=16),"x".repeat(r).replace(/x/g,()=>Math.round(16*Math.random()).toString(16))}`;
             var r;
-            const o = t.params.autoplay && t.params.autoplay.enabled ? "off" : "polite";
+            const o = a.params.autoplay && a.params.autoplay.enabled ? "off" : "polite";
             var c, p;
             c = n, p = l, (c = (0, i.m)(c)).forEach(e => {
                 e.setAttribute("id", p)
               }),
-              function(e, t) {
+              function(e, a) {
                 (e = (0, i.m)(e)).forEach(e => {
-                  e.setAttribute("aria-live", t)
+                  e.setAttribute("aria-live", a)
                 })
               }(n, o), T();
             let {
               nextEl: u,
               prevEl: m
-            } = t.navigation ? t.navigation : {};
-            u = (0, i.m)(u), m = (0, i.m)(m), u && u.forEach(t => C(t, l, e.nextSlideMessage)), m && m.forEach(t => C(t, l, e.prevSlideMessage)), w() && (0, i.m)(t.pagination.el).forEach(e => {
+            } = a.navigation ? a.navigation : {};
+            u = (0, i.m)(u), m = (0, i.m)(m), u && u.forEach(a => C(a, l, e.nextSlideMessage)), m && m.forEach(a => C(a, l, e.prevSlideMessage)), w() && (0, i.m)(a.pagination.el).forEach(e => {
               e.addEventListener("keydown", y)
-            }), (0, s.g)().addEventListener("visibilitychange", L), t.el.addEventListener("focus", k, !0), t.el.addEventListener("focus", k, !0), t.el.addEventListener("pointerdown", x, !0), t.el.addEventListener("pointerup", M, !0)
+            }), (0, s.g)().addEventListener("visibilitychange", L), a.el.addEventListener("focus", k, !0), a.el.addEventListener("focus", k, !0), a.el.addEventListener("pointerdown", x, !0), a.el.addEventListener("pointerup", M, !0)
           })()
         }), n("slidesLengthChange snapGridLengthChange slidesGridLengthChange", () => {
-          t.params.a11y.enabled && T()
+          a.params.a11y.enabled && T()
         }), n("fromEdge toEdge afterInit lock unlock", () => {
-          t.params.a11y.enabled && function() {
-            if (t.params.loop || t.params.rewind || !t.navigation) return;
+          a.params.a11y.enabled && function() {
+            if (a.params.loop || a.params.rewind || !a.navigation) return;
             const {
               nextEl: e,
-              prevEl: a
-            } = t.navigation;
-            a && (t.isBeginning ? (b(a), m(a)) : (h(a), u(a))), e && (t.isEnd ? (b(e), m(e)) : (h(e), u(e)))
+              prevEl: t
+            } = a.navigation;
+            t && (a.isBeginning ? (v(t), m(t)) : (h(t), u(t))), e && (a.isEnd ? (v(e), m(e)) : (h(e), u(e)))
           }()
         }), n("paginationUpdate", () => {
-          t.params.a11y.enabled && function() {
-            const e = t.params.a11y;
-            E() && t.pagination.bullets.forEach(a => {
-              t.params.pagination.clickable && (u(a), t.params.pagination.renderBullet || (g(a, "button"), v(a, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.i)(a) + 1)))), a.matches(r(t.params.pagination.bulletActiveClass)) ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")
+          a.params.a11y.enabled && function() {
+            const e = a.params.a11y;
+            E() && a.pagination.bullets.forEach(t => {
+              a.params.pagination.clickable && (u(t), a.params.pagination.renderBullet || (g(t, "button"), b(t, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.i)(t) + 1)))), t.matches(r(a.params.pagination.bulletActiveClass)) ? t.setAttribute("aria-current", "true") : t.removeAttribute("aria-current")
             })
           }()
         }), n("destroy", () => {
-          t.params.a11y.enabled && function() {
+          a.params.a11y.enabled && function() {
             d && d.remove();
             let {
               nextEl: e,
-              prevEl: a
-            } = t.navigation ? t.navigation : {};
-            e = (0, i.m)(e), a = (0, i.m)(a), e && e.forEach(e => e.removeEventListener("keydown", y)), a && a.forEach(e => e.removeEventListener("keydown", y)), w() && (0, i.m)(t.pagination.el).forEach(e => {
+              prevEl: t
+            } = a.navigation ? a.navigation : {};
+            e = (0, i.m)(e), t = (0, i.m)(t), e && e.forEach(e => e.removeEventListener("keydown", y)), t && t.forEach(e => e.removeEventListener("keydown", y)), w() && (0, i.m)(a.pagination.el).forEach(e => {
               e.removeEventListener("keydown", y)
-            }), (0, s.g)().removeEventListener("visibilitychange", L), t.el && "string" != typeof t.el && (t.el.removeEventListener("focus", k, !0), t.el.removeEventListener("pointerdown", x, !0), t.el.removeEventListener("pointerup", M, !0))
+            }), (0, s.g)().removeEventListener("visibilitychange", L), a.el && "string" != typeof a.el && (a.el.removeEventListener("focus", k, !0), a.el.removeEventListener("pointerdown", x, !0), a.el.removeEventListener("pointerup", M, !0))
           }()
         })
       }
 
       function c(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           on: n
         } = e;
-        a({
+        t({
           thumbs: {
             swiper: null,
             multipleActiveThumbs: !0,
@@ -604,101 +604,101 @@ try {
           r = !1;
 
         function o() {
-          const e = t.thumbs.swiper;
+          const e = a.thumbs.swiper;
           if (!e || e.destroyed) return;
-          const a = e.clickedIndex,
+          const t = e.clickedIndex,
             s = e.clickedSlide;
-          if (s && s.classList.contains(t.params.thumbs.slideThumbActiveClass)) return;
-          if (null == a) return;
+          if (s && s.classList.contains(a.params.thumbs.slideThumbActiveClass)) return;
+          if (null == t) return;
           let i;
-          i = e.params.loop ? parseInt(e.clickedSlide.getAttribute("data-swiper-slide-index"), 10) : a, t.params.loop ? t.slideToLoop(i) : t.slideTo(i)
+          i = e.params.loop ? parseInt(e.clickedSlide.getAttribute("data-swiper-slide-index"), 10) : t, a.params.loop ? a.slideToLoop(i) : a.slideTo(i)
         }
 
         function d() {
           const {
             thumbs: e
-          } = t.params;
+          } = a.params;
           if (l) return !1;
           l = !0;
-          const a = t.constructor;
-          if (e.swiper instanceof a) {
+          const t = a.constructor;
+          if (e.swiper instanceof t) {
             if (e.swiper.destroyed) return l = !1, !1;
-            t.thumbs.swiper = e.swiper, Object.assign(t.thumbs.swiper.originalParams, {
+            a.thumbs.swiper = e.swiper, Object.assign(a.thumbs.swiper.originalParams, {
               watchSlidesProgress: !0,
               slideToClickedSlide: !1
-            }), Object.assign(t.thumbs.swiper.params, {
+            }), Object.assign(a.thumbs.swiper.params, {
               watchSlidesProgress: !0,
               slideToClickedSlide: !1
-            }), t.thumbs.swiper.update()
+            }), a.thumbs.swiper.update()
           } else if ((0, i.o)(e.swiper)) {
             const s = Object.assign({}, e.swiper);
             Object.assign(s, {
               watchSlidesProgress: !0,
               slideToClickedSlide: !1
-            }), t.thumbs.swiper = new a(s), r = !0
+            }), a.thumbs.swiper = new t(s), r = !0
           }
-          return t.thumbs.swiper.el.classList.add(t.params.thumbs.thumbsContainerClass), t.thumbs.swiper.on("tap", o), !0
+          return a.thumbs.swiper.el.classList.add(a.params.thumbs.thumbsContainerClass), a.thumbs.swiper.on("tap", o), !0
         }
 
         function c(e) {
-          const a = t.thumbs.swiper;
-          if (!a || a.destroyed) return;
-          const s = "auto" === a.params.slidesPerView ? a.slidesPerViewDynamic() : a.params.slidesPerView;
+          const t = a.thumbs.swiper;
+          if (!t || t.destroyed) return;
+          const s = "auto" === t.params.slidesPerView ? t.slidesPerViewDynamic() : t.params.slidesPerView;
           let n = 1;
-          const l = t.params.thumbs.slideThumbActiveClass;
-          if (t.params.slidesPerView > 1 && !t.params.centeredSlides && (n = t.params.slidesPerView), t.params.thumbs.multipleActiveThumbs || (n = 1), n = Math.floor(n), a.slides.forEach(e => e.classList.remove(l)), a.params.loop || a.params.virtual && a.params.virtual.enabled)
-            for (let e = 0; e < n; e += 1)(0, i.e)(a.slidesEl, `[data-swiper-slide-index="${t.realIndex+e}"]`).forEach(e => {
+          const l = a.params.thumbs.slideThumbActiveClass;
+          if (a.params.slidesPerView > 1 && !a.params.centeredSlides && (n = a.params.slidesPerView), a.params.thumbs.multipleActiveThumbs || (n = 1), n = Math.floor(n), t.slides.forEach(e => e.classList.remove(l)), t.params.loop || t.params.virtual && t.params.virtual.enabled)
+            for (let e = 0; e < n; e += 1)(0, i.e)(t.slidesEl, `[data-swiper-slide-index="${a.realIndex+e}"]`).forEach(e => {
               e.classList.add(l)
             });
           else
-            for (let e = 0; e < n; e += 1) a.slides[t.realIndex + e] && a.slides[t.realIndex + e].classList.add(l);
-          const r = t.params.thumbs.autoScrollOffset,
-            o = r && !a.params.loop;
-          if (t.realIndex !== a.realIndex || o) {
-            const i = a.activeIndex;
+            for (let e = 0; e < n; e += 1) t.slides[a.realIndex + e] && t.slides[a.realIndex + e].classList.add(l);
+          const r = a.params.thumbs.autoScrollOffset,
+            o = r && !t.params.loop;
+          if (a.realIndex !== t.realIndex || o) {
+            const i = t.activeIndex;
             let n, l;
-            if (a.params.loop) {
-              const e = a.slides.find(e => e.getAttribute("data-swiper-slide-index") === `${t.realIndex}`);
-              n = a.slides.indexOf(e), l = t.activeIndex > t.previousIndex ? "next" : "prev"
-            } else n = t.realIndex, l = n > t.previousIndex ? "next" : "prev";
-            o && (n += "next" === l ? r : -1 * r), a.visibleSlidesIndexes && a.visibleSlidesIndexes.indexOf(n) < 0 && (a.params.centeredSlides ? n = n > i ? n - Math.floor(s / 2) + 1 : n + Math.floor(s / 2) - 1 : n > i && a.params.slidesPerGroup, a.slideTo(n, e ? 0 : void 0))
+            if (t.params.loop) {
+              const e = t.slides.find(e => e.getAttribute("data-swiper-slide-index") === `${a.realIndex}`);
+              n = t.slides.indexOf(e), l = a.activeIndex > a.previousIndex ? "next" : "prev"
+            } else n = a.realIndex, l = n > a.previousIndex ? "next" : "prev";
+            o && (n += "next" === l ? r : -1 * r), t.visibleSlidesIndexes && t.visibleSlidesIndexes.indexOf(n) < 0 && (t.params.centeredSlides ? n = n > i ? n - Math.floor(s / 2) + 1 : n + Math.floor(s / 2) - 1 : n > i && t.params.slidesPerGroup, t.slideTo(n, e ? 0 : void 0))
           }
         }
-        t.thumbs = {
+        a.thumbs = {
           swiper: null
         }, n("beforeInit", () => {
           const {
             thumbs: e
-          } = t.params;
+          } = a.params;
           if (e && e.swiper)
             if ("string" == typeof e.swiper || e.swiper instanceof HTMLElement) {
-              const a = (0, s.g)(),
+              const t = (0, s.g)(),
                 i = () => {
-                  const s = "string" == typeof e.swiper ? a.querySelector(e.swiper) : e.swiper;
+                  const s = "string" == typeof e.swiper ? t.querySelector(e.swiper) : e.swiper;
                   if (s && s.swiper) e.swiper = s.swiper, d(), c(!0);
                   else if (s) {
-                    const a = `${t.params.eventsPrefix}init`,
+                    const t = `${a.params.eventsPrefix}init`,
                       i = n => {
-                        e.swiper = n.detail[0], s.removeEventListener(a, i), d(), c(!0), e.swiper.update(), t.update()
+                        e.swiper = n.detail[0], s.removeEventListener(t, i), d(), c(!0), e.swiper.update(), a.update()
                       };
-                    s.addEventListener(a, i)
+                    s.addEventListener(t, i)
                   }
                   return s
                 },
                 n = () => {
-                  t.destroyed || i() || requestAnimationFrame(n)
+                  a.destroyed || i() || requestAnimationFrame(n)
                 };
               requestAnimationFrame(n)
             } else d(), c(!0)
         }), n("slideChange update resize observerUpdate", () => {
           c()
-        }), n("setTransition", (e, a) => {
-          const s = t.thumbs.swiper;
-          s && !s.destroyed && s.setTransition(a)
+        }), n("setTransition", (e, t) => {
+          const s = a.thumbs.swiper;
+          s && !s.destroyed && s.setTransition(t)
         }), n("beforeDestroy", () => {
-          const e = t.thumbs.swiper;
+          const e = a.thumbs.swiper;
           e && !e.destroyed && r && e.destroy()
-        }), Object.assign(t.thumbs, {
+        }), Object.assign(a.thumbs, {
           init: d,
           update: c
         })
@@ -706,12 +706,12 @@ try {
 
       function p(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           emit: s,
           once: n
         } = e;
-        a({
+        t({
           freeMode: {
             enabled: !1,
             momentum: !0,
@@ -722,92 +722,92 @@ try {
             sticky: !1,
             minimumVelocity: .02
           }
-        }), Object.assign(t, {
+        }), Object.assign(a, {
           freeMode: {
             onTouchStart: function() {
-              if (t.params.cssMode) return;
-              const e = t.getTranslate();
-              t.setTranslate(e), t.setTransition(0), t.touchEventsData.velocities.length = 0, t.freeMode.onTouchEnd({
-                currentPos: t.rtl ? t.translate : -t.translate
+              if (a.params.cssMode) return;
+              const e = a.getTranslate();
+              a.setTranslate(e), a.setTransition(0), a.touchEventsData.velocities.length = 0, a.freeMode.onTouchEnd({
+                currentPos: a.rtl ? a.translate : -a.translate
               })
             },
             onTouchMove: function() {
-              if (t.params.cssMode) return;
+              if (a.params.cssMode) return;
               const {
                 touchEventsData: e,
-                touches: a
-              } = t;
+                touches: t
+              } = a;
               0 === e.velocities.length && e.velocities.push({
-                position: a[t.isHorizontal() ? "startX" : "startY"],
+                position: t[a.isHorizontal() ? "startX" : "startY"],
                 time: e.touchStartTime
               }), e.velocities.push({
-                position: a[t.isHorizontal() ? "currentX" : "currentY"],
+                position: t[a.isHorizontal() ? "currentX" : "currentY"],
                 time: (0, i.f)()
               })
             },
             onTouchEnd: function(e) {
               let {
-                currentPos: a
+                currentPos: t
               } = e;
-              if (t.params.cssMode) return;
+              if (a.params.cssMode) return;
               const {
                 params: l,
                 wrapperEl: r,
                 rtlTranslate: o,
                 snapGrid: d,
                 touchEventsData: c
-              } = t, p = (0, i.f)() - c.touchStartTime;
-              if (a < -t.minTranslate()) t.slideTo(t.activeIndex);
-              else if (a > -t.maxTranslate()) t.slides.length < d.length ? t.slideTo(d.length - 1) : t.slideTo(t.slides.length - 1);
+              } = a, p = (0, i.f)() - c.touchStartTime;
+              if (t < -a.minTranslate()) a.slideTo(a.activeIndex);
+              else if (t > -a.maxTranslate()) a.slides.length < d.length ? a.slideTo(d.length - 1) : a.slideTo(a.slides.length - 1);
               else {
                 if (l.freeMode.momentum) {
                   if (c.velocities.length > 1) {
                     const e = c.velocities.pop(),
-                      a = c.velocities.pop(),
-                      s = e.position - a.position,
-                      n = e.time - a.time;
-                    t.velocity = s / n, t.velocity /= 2, Math.abs(t.velocity) < l.freeMode.minimumVelocity && (t.velocity = 0), (n > 150 || (0, i.f)() - e.time > 300) && (t.velocity = 0)
-                  } else t.velocity = 0;
-                  t.velocity *= l.freeMode.momentumVelocityRatio, c.velocities.length = 0;
+                      t = c.velocities.pop(),
+                      s = e.position - t.position,
+                      n = e.time - t.time;
+                    a.velocity = s / n, a.velocity /= 2, Math.abs(a.velocity) < l.freeMode.minimumVelocity && (a.velocity = 0), (n > 150 || (0, i.f)() - e.time > 300) && (a.velocity = 0)
+                  } else a.velocity = 0;
+                  a.velocity *= l.freeMode.momentumVelocityRatio, c.velocities.length = 0;
                   let e = 1e3 * l.freeMode.momentumRatio;
-                  const a = t.velocity * e;
-                  let p = t.translate + a;
+                  const t = a.velocity * e;
+                  let p = a.translate + t;
                   o && (p = -p);
                   let u, m = !1;
-                  const g = 20 * Math.abs(t.velocity) * l.freeMode.momentumBounceRatio;
+                  const g = 20 * Math.abs(a.velocity) * l.freeMode.momentumBounceRatio;
                   let f;
-                  if (p < t.maxTranslate()) l.freeMode.momentumBounce ? (p + t.maxTranslate() < -g && (p = t.maxTranslate() - g), u = t.maxTranslate(), m = !0, c.allowMomentumBounce = !0) : p = t.maxTranslate(), l.loop && l.centeredSlides && (f = !0);
-                  else if (p > t.minTranslate()) l.freeMode.momentumBounce ? (p - t.minTranslate() > g && (p = t.minTranslate() + g), u = t.minTranslate(), m = !0, c.allowMomentumBounce = !0) : p = t.minTranslate(), l.loop && l.centeredSlides && (f = !0);
+                  if (p < a.maxTranslate()) l.freeMode.momentumBounce ? (p + a.maxTranslate() < -g && (p = a.maxTranslate() - g), u = a.maxTranslate(), m = !0, c.allowMomentumBounce = !0) : p = a.maxTranslate(), l.loop && l.centeredSlides && (f = !0);
+                  else if (p > a.minTranslate()) l.freeMode.momentumBounce ? (p - a.minTranslate() > g && (p = a.minTranslate() + g), u = a.minTranslate(), m = !0, c.allowMomentumBounce = !0) : p = a.minTranslate(), l.loop && l.centeredSlides && (f = !0);
                   else if (l.freeMode.sticky) {
                     let e;
-                    for (let t = 0; t < d.length; t += 1)
-                      if (d[t] > -p) {
-                        e = t;
+                    for (let a = 0; a < d.length; a += 1)
+                      if (d[a] > -p) {
+                        e = a;
                         break
-                      } p = Math.abs(d[e] - p) < Math.abs(d[e - 1] - p) || "next" === t.swipeDirection ? d[e] : d[e - 1], p = -p
+                      } p = Math.abs(d[e] - p) < Math.abs(d[e - 1] - p) || "next" === a.swipeDirection ? d[e] : d[e - 1], p = -p
                   }
                   if (f && n("transitionEnd", () => {
-                      t.loopFix()
-                    }), 0 !== t.velocity) {
-                    if (e = o ? Math.abs((-p - t.translate) / t.velocity) : Math.abs((p - t.translate) / t.velocity), l.freeMode.sticky) {
-                      const a = Math.abs((o ? -p : p) - t.translate),
-                        s = t.slidesSizesGrid[t.activeIndex];
-                      e = a < s ? l.speed : a < 2 * s ? 1.5 * l.speed : 2.5 * l.speed
+                      a.loopFix()
+                    }), 0 !== a.velocity) {
+                    if (e = o ? Math.abs((-p - a.translate) / a.velocity) : Math.abs((p - a.translate) / a.velocity), l.freeMode.sticky) {
+                      const t = Math.abs((o ? -p : p) - a.translate),
+                        s = a.slidesSizesGrid[a.activeIndex];
+                      e = t < s ? l.speed : t < 2 * s ? 1.5 * l.speed : 2.5 * l.speed
                     }
-                  } else if (l.freeMode.sticky) return void t.slideToClosest();
-                  l.freeMode.momentumBounce && m ? (t.updateProgress(u), t.setTransition(e), t.setTranslate(p), t.transitionStart(!0, t.swipeDirection), t.animating = !0, (0, i.l)(r, () => {
-                    t && !t.destroyed && c.allowMomentumBounce && (s("momentumBounce"), t.setTransition(l.speed), setTimeout(() => {
-                      t.setTranslate(u), (0, i.l)(r, () => {
-                        t && !t.destroyed && t.transitionEnd()
+                  } else if (l.freeMode.sticky) return void a.slideToClosest();
+                  l.freeMode.momentumBounce && m ? (a.updateProgress(u), a.setTransition(e), a.setTranslate(p), a.transitionStart(!0, a.swipeDirection), a.animating = !0, (0, i.l)(r, () => {
+                    a && !a.destroyed && c.allowMomentumBounce && (s("momentumBounce"), a.setTransition(l.speed), setTimeout(() => {
+                      a.setTranslate(u), (0, i.l)(r, () => {
+                        a && !a.destroyed && a.transitionEnd()
                       })
                     }, 0))
-                  })) : t.velocity ? (s("_freeModeNoMomentumRelease"), t.updateProgress(p), t.setTransition(e), t.setTranslate(p), t.transitionStart(!0, t.swipeDirection), t.animating || (t.animating = !0, (0, i.l)(r, () => {
-                    t && !t.destroyed && t.transitionEnd()
-                  }))) : t.updateProgress(p), t.updateActiveIndex(), t.updateSlidesClasses()
+                  })) : a.velocity ? (s("_freeModeNoMomentumRelease"), a.updateProgress(p), a.setTransition(e), a.setTranslate(p), a.transitionStart(!0, a.swipeDirection), a.animating || (a.animating = !0, (0, i.l)(r, () => {
+                    a && !a.destroyed && a.transitionEnd()
+                  }))) : a.updateProgress(p), a.updateActiveIndex(), a.updateSlidesClasses()
                 } else {
-                  if (l.freeMode.sticky) return void t.slideToClosest();
+                  if (l.freeMode.sticky) return void a.slideToClosest();
                   l.freeMode && s("_freeModeNoMomentumRelease")
-                }(!l.freeMode.momentum || p >= l.longSwipesMs) && (s("_freeModeStaticRelease"), t.updateProgress(), t.updateActiveIndex(), t.updateSlidesClasses())
+                }(!l.freeMode.momentum || p >= l.longSwipesMs) && (s("_freeModeStaticRelease"), a.updateProgress(), a.updateActiveIndex(), a.updateSlidesClasses())
               }
             }
           }

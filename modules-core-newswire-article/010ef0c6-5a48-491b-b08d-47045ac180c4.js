@@ -17,7 +17,7 @@ try {
       "use strict";
       s.r(t), s.d(t, {
         Avatar: () => u,
-        Content: () => f,
+        Content: () => b,
         PlatformTag: () => p,
         PlatformTagSizes: () => l.YT,
         Platforms: () => l.lv,
@@ -25,7 +25,7 @@ try {
         Root: () => m,
         RpCategory: () => w,
         TextContent: () => h,
-        TopRow: () => b,
+        TopRow: () => f,
         UserName: () => g
       });
       var a = s(42295),
@@ -82,7 +82,7 @@ try {
             })
           })
         }),
-        f = (0, r.forwardRef)(function({
+        b = (0, r.forwardRef)(function({
           asChild: e,
           testId: t,
           className: s,
@@ -98,7 +98,7 @@ try {
             ..._
           })
         }),
-        b = (0, r.forwardRef)(function({
+        f = (0, r.forwardRef)(function({
           children: e,
           testId: t,
           ...s
@@ -244,20 +244,20 @@ try {
           role: d = "link",
           onClick: m = () => {},
           focused: u = !1,
-          ...f
+          ...b
         }) => {
-          const b = (0, r.useRef)(null),
+          const f = (0, r.useRef)(null),
             p = (0, i.useIntl)(),
             g = !/^(https?|mailto):/i.test(t),
             k = /^#/.test(t),
-            w = f?.target ?? (_ ? "_blank" : "_self"),
+            w = b?.target ?? (_ ? "_blank" : "_self"),
             {
               ...h
-            } = f;
+            } = b;
           let x = "";
           if ("aria-label" in h && h["aria-label"] && (x = "_blank" === w ? `${h["aria-label"]} ${p.formatMessage(n.aria_label_open_new_window)}` : h["aria-label"]), (0, r.useEffect)(() => {
-              u && b?.current && b.current.focus()
-            }, [b?.current, u]), k) {
+              u && f?.current && f.current.focus()
+            }, [f?.current, u]), k) {
             const s = e => {
               e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
                 behavior: "smooth",
@@ -270,7 +270,7 @@ try {
               onClick: s,
               ...h,
               "aria-label": x,
-              ref: b,
+              ref: f,
               role: d,
               children: [e, "_blank" === w && !x && (0, a.jsx)("span", {
                 className: c,
@@ -284,7 +284,7 @@ try {
             onClick: m,
             ...h,
             "aria-label": x,
-            ref: b,
+            ref: f,
             reloadDocument: s,
             children: [e, "_blank" === w && !x && (0, a.jsx)("span", {
               className: c,
@@ -293,7 +293,7 @@ try {
           });
           const v = Object.keys(h).filter(e => !["activeClassName", "key", "end"].includes(e)).reduce((e, t) => ({
             ...e,
-            [t]: f[t]
+            [t]: b[t]
           }), {});
           return "function" == typeof v?.className && delete v.className, (0, a.jsxs)("a", {
             href: t,
@@ -302,7 +302,7 @@ try {
             target: w,
             ...v,
             "aria-label": x,
-            ref: b,
+            ref: f,
             role: d,
             children: [e, "_blank" === w && !x && (0, a.jsx)("span", {
               className: c,
@@ -573,7 +573,7 @@ try {
             }
           }
         },
-        f = {
+        b = {
           open: {
             "--cta-border-color": "var(--white-15)",
             "--cta-background-color": "rgba(255,255,255,.1)",
@@ -602,7 +602,7 @@ try {
             }
           }
         },
-        b = {
+        f = {
           applestore: "rockstargames-modules-core-newswire-articlee68d88a0e9f24a2f0bcf7da8a0e1b388",
           buttonText: "rockstargames-modules-core-newswire-articlec240c5768c5acdd2bc6022568ef877f0",
           closeButton: "rockstargames-modules-core-newswire-articleee432a5defea7b8181973d3a9ad3190b",
@@ -636,14 +636,14 @@ try {
           ...l
         }) => {
           const _ = n ?? (t.startsWith(document.location.origin) ? "_self" : "_blank"),
-            d = [b.platformButton, b[r]].join(" "),
+            d = [f.platformButton, f[r]].join(" "),
             m = r ? s(5328)(`./${r}.svg`) : null,
             u = (0, a.jsxs)(a.Fragment, {
               children: [m ? (0, a.jsx)("img", {
                 src: m,
                 alt: e
               }) : "", !m && (0, a.jsx)("div", {
-                className: b.buttonText,
+                className: f.buttonText,
                 children: e
               })]
             });
@@ -753,9 +753,9 @@ try {
             }
           };
           return (0, a.jsxs)("div", {
-            className: d()(b.container, o),
+            className: d()(f.container, o),
             children: [(0, a.jsx)(n.P.div, {
-              className: b.content,
+              className: f.content,
               animate: z ? "open" : "close",
               variants: u,
               "aria-hidden": !!z,
@@ -763,13 +763,13 @@ try {
             }), (0, a.jsxs)(n.P.div, {
               "data-variant": e,
               "data-animating": C,
-              className: d()(z ? b.expandedButton : b.unexpandedButton),
+              className: d()(z ? f.expandedButton : f.unexpandedButton),
               animate: z ? "open" : "closed",
-              variants: f,
+              variants: b,
               initial: !1,
               ref: A,
               children: [(0, a.jsx)(n.P.button, {
-                className: d()(b.buttonText, i),
+                className: d()(f.buttonText, i),
                 "aria-expanded": z,
                 onClick: () => {
                   if (R(!0), j(!z), !z) switch (k) {
@@ -813,7 +813,7 @@ try {
                 tabIndex: z ? -1 : 0,
                 children: "string" == typeof t ? t : "Subscribe"
               }), (0, a.jsx)("div", {
-                className: b.expandedArea,
+                className: f.expandedArea,
                 ref: P,
                 "data-animate": z ? "open" : "closed",
                 "aria-hidden": !z,
@@ -833,7 +833,7 @@ try {
                   },
                   children: (0, a.jsxs)("div", {
                     children: [(0, a.jsx)("button", {
-                      className: b.closeButton,
+                      className: f.closeButton,
                       onClick: () => {
                         j(!1), R(!0), E({
                           element_placement: w?.toLowerCase(),
@@ -848,7 +848,7 @@ try {
                         alt: "Close"
                       })
                     }), (0, a.jsx)("div", {
-                      className: b.platformButtons,
+                      className: f.platformButtons,
                       children: g.length ? g.map(e => (0, a.jsx)(p, {
                         buttonText: e.buttonText ?? (0, l.findPlatform)(e.platform)?.friendlyName ?? "",
                         link: e.href,

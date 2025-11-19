@@ -16,7 +16,7 @@ try {
     40173: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => i,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
@@ -24,7 +24,7 @@ try {
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => i,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -33,8 +33,8 @@ try {
         default: () => x
       });
       var _ = "Cerrar Lightbox",
-        i = "Pulsa {shortcut}",
-        a = "Acercar zoom",
+        a = "Pulsa {shortcut}",
+        i = "Acercar zoom",
         l = "Pulsa {shortcut}",
         n = "Alejar zoom",
         b = "Pulsa {shortcut}",
@@ -49,8 +49,8 @@ try {
         c = "Texto alternativo: {alt}",
         x = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,

@@ -26,7 +26,7 @@ try {
         u = (0, r.withIntl)(() => {
           const [e, d] = (0, l.useSearchParams)(), [{
             iso: t
-          }] = (0, r.getLocale)(), n = "true" === e.get("autoplay"), c = e.get("id"), f = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", g = Number(e.get("start") ?? 0);
+          }] = (0, r.getLocale)(), n = "true" === e.get("autoplay"), c = e.get("id"), f = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
           return (0, o.jsx)(a.ResizeProvider, {
             children: (0, o.jsx)(s.GtmProvider, {
               children: (0, o.jsx)(i.A, {
@@ -35,7 +35,7 @@ try {
                 locale: u,
                 id: c,
                 resolution: f,
-                start: g,
+                start: b,
                 wrapper: !1,
                 videoChangeCallback: e => {
                   d({
@@ -48,17 +48,17 @@ try {
             })
           })
         }, c),
-        g = (0, a.withRockstarGraph)(() => (0, o.jsx)(l.BrowserRouter, {
+        b = (0, a.withRockstarGraph)(() => (0, o.jsx)(l.BrowserRouter, {
           children: (0, o.jsx)(u, {})
         }), {
           env: f
         }),
-        y = window?.env?.gtmId ?? null;
+        g = window?.env?.gtmId ?? null;
       (0, a.gtmInit)({
-        id: y
+        id: g
       });
-      const b = document.createElement("main");
-      document.body.appendChild(b), (0, n.H)(b).render((0, o.jsx)(g, {}))
+      const y = document.createElement("main");
+      document.body.appendChild(y), (0, n.H)(y).render((0, o.jsx)(b, {}))
     },
     9827: (e, d, t) => {
       var o = t(4853);

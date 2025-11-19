@@ -45,14 +45,14 @@ try {
           const {
             data: p
           } = (0, i.useRockstarUser)(), {
-            track: y
-          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+            track: b
+          } = (0, i.useGtmTrack)(), y = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
           } = t;
           return (0, n.useEffect)(() => {
-            y({
+            b({
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
@@ -84,7 +84,7 @@ try {
                   n = (0, r.f)(t) && (0, l.d)(t, s);
                 if (k(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
-                  y(a ? {
+                  b(a ? {
                     event: "age_gate_passed",
                     element_placement: g.element_placement ?? ""
                   } : {

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    d = (new e.Error).stack;
-  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "58978ff5-59d2-4ede-a890-da24394e9772", e._sentryDebugIdIdentifier = "sentry-dbid-58978ff5-59d2-4ede-a890-da24394e9772")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "58978ff5-59d2-4ede-a890-da24394e9772", e._sentryDebugIdIdentifier = "sentry-dbid-58978ff5-59d2-4ede-a890-da24394e9772")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -20,15 +20,15 @@ try {
             cardinal: ["one", "many", "other"],
             ordinal: ["many", "other"]
           },
-          fn: function(e, d) {
-            var a = String(e),
-              n = a.split(/[ce]/),
+          fn: function(e, a) {
+            var d = String(e),
+              n = d.split(/[ce]/),
               l = n[1] || 0,
-              o = String(l ? Number(n[0]) * Math.pow(10, l) : a).split("."),
+              o = String(l ? Number(n[0]) * Math.pow(10, l) : d).split("."),
               t = o[0],
               s = !o[1],
               r = t.slice(-6);
-            return d ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == l && 0 != t && 0 == r && s || l < 0 || l > 5 ? "many" : "other"
+            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == l && 0 != t && 0 == r && s || l < 0 || l > 5 ? "many" : "other"
           }
         },
         locale: "it"

@@ -1069,14 +1069,14 @@ try {
         });
       var v = n(9623),
         m = n(92440),
-        p = n(66603),
-        b = n(25268),
+        b = n(66603),
+        p = n(25268),
         k = n(61938),
         g = n(29982);
       const f = "rockstargames-sites-gta-gen9e1700f22ef2633cdb13fe46819b9250f",
         h = {
-          BuyNow: p.A,
-          TinaWrapper: b.A
+          BuyNow: b.A,
+          TinaWrapper: p.A
         },
         y = () => {
           const {
@@ -1243,17 +1243,17 @@ try {
         }) => {
           const {
             track: a
-          } = (0, s.useGtmTrack)(), n = (0, r.hY)(), [o, l] = (0, t.useState)(!1), [d, u] = (0, t.useState)(null), [_, m] = (0, t.useState)(null), [p] = (0, v.useSearchParams)();
+          } = (0, s.useGtmTrack)(), n = (0, r.hY)(), [o, l] = (0, t.useState)(!1), [d, u] = (0, t.useState)(null), [_, m] = (0, t.useState)(null), [b] = (0, v.useSearchParams)();
           if ((0, t.useEffect)(() => {
               C().cloneDeepWith(n, (a, n, i) => {
                 e === a && u(i?.children ?? null)
               })
-            }, [e, n, p.get("section")]), (0, t.useEffect)(() => {
+            }, [e, n, b.get("section")]), (0, t.useEffect)(() => {
               m(null), C().cloneDeepWith(d, (e, a, n) => {
-                "id_hash" === a && p.get("section") === e && m(n)
+                "id_hash" === a && b.get("section") === e && m(n)
               })
-            }, [d, p.get("section")]), !d) return null;
-          const b = () => {
+            }, [d, b.get("section")]), !d) return null;
+          const p = () => {
             l(!1), a({
               event: "nav_click",
               element_placement: "guide nav"
@@ -1272,7 +1272,7 @@ try {
                 }) => (0, i.jsx)(c.A, {
                   className: e === _?.id_hash ? B.activeSection : "",
                   to: n,
-                  onClick: b,
+                  onClick: p,
                   children: a
                 }, n))
               }), (0, i.jsx)("button", {

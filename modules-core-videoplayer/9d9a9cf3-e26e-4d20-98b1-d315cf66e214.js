@@ -68,11 +68,11 @@ try {
             }
           }
           const E = await fetch(h, g),
-            k = await E.json();
+            b = await E.json();
           return d && (w[y] = {
-            response: k,
+            response: b,
             loading: !1
-          }), k
+          }), b
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -404,7 +404,7 @@ try {
       n.d(t, {
         RK: () => s,
         bn: () => L,
-        vx: () => b,
+        vx: () => k,
         sb: () => x,
         Ym: () => a.A,
         CA: () => y.useNewswirePost,
@@ -414,7 +414,7 @@ try {
         OH: () => g,
         zP: () => v,
         Cb: () => m,
-        N6: () => k,
+        N6: () => b,
         GA: () => T,
         JE: () => M
       });
@@ -528,7 +528,7 @@ try {
         };
       var y = n(9656),
         E = (n(5342), n(7954));
-      const k = e => {
+      const b = e => {
         const {
           signup: t,
           login: n
@@ -540,7 +540,7 @@ try {
         }
       };
       n(437);
-      const b = () => {
+      const k = () => {
           const [e, t] = (0, o.useState)(!1);
           return (0, o.useEffect)(() => {
             const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
@@ -578,7 +578,7 @@ try {
             numberOfLogicalProcessors: s
           } = (0, S.xV)(), {
             saveData: a
-          } = (0, S.zp)(), i = b(), c = () => {
+          } = (0, S.zp)(), i = k(), c = () => {
             const o = (() => {
               const e = e => !1 === e;
               if (i) return !1;

@@ -19,9 +19,9 @@ try {
       });
       var t = s(42295),
         l = s(26708),
-        d = s(10632),
-        i = s(24769);
-      const r = {
+        i = s(10632),
+        r = s(24769);
+      const d = {
           carouselTitle: "rockstargames-modules-core-newswire-articlee9e0ef1bfc3699b1e50c33dd0ce8e76a",
           carouselWrapper: "rockstargames-modules-core-newswire-articlefabefc39343f6c494eb3d049757d89c5",
           padding: "rockstargames-modules-core-newswire-articleac767e959939b4d56b2358cb263d07ad"
@@ -43,12 +43,12 @@ try {
         }) => e?.length ? (0, t.jsxs)("div", {
           id: o,
           "data-testid": `carousel${n&&`-${n}`}-group-of-items`,
-          children: [(0, t.jsx)(i.A, {
+          children: [(0, t.jsx)(r.A, {
             style: s,
-            className: [n, r.carouselWrapper].join(" "),
+            className: [n, d.carouselWrapper].join(" "),
             children: e.map(e => (0, t.jsxs)("div", {
               id: e?.id ?? null,
-              children: [(0, t.jsx)(d.A, {
+              children: [(0, t.jsx)(i.A, {
                 image: e?.image,
                 badge: e?.badge ?? e?.image?.badge,
                 badgeType: "badge3",
@@ -57,22 +57,22 @@ try {
                 type: e?.type,
                 ariaLabel: e?.image?.ariaLabel ?? e.description,
                 style: e?.style,
-                className: [r.img, e?.className].join(" ")
+                className: [d.img, e?.className].join(" ")
               }), e.title && (0, t.jsx)(c, {
                 to: e?.to,
                 children: (0, t.jsx)("h4", {
-                  className: r.carouselTitle,
+                  className: d.carouselTitle,
                   children: e.title
                 })
               }), e.description && (0, t.jsx)("span", {
-                className: r.description,
+                className: d.description,
                 dangerouslySetInnerHTML: {
                   __html: e.description
                 }
               })]
             }, e?.key ?? e?.title))
           }), a?.title || a?.description ? (0, t.jsx)("div", {
-            className: r.padding,
+            className: d.padding,
             style: a?.style ?? {},
             children: (0, t.jsx)(l.A, {
               item: a
@@ -82,9 +82,9 @@ try {
       var o = s(31879),
         m = s.n(o),
         g = s(92440),
-        f = s(4572),
-        u = s.n(f);
-      const b = ({
+        b = s(4572),
+        u = s.n(b);
+      const f = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
@@ -108,7 +108,7 @@ try {
           context: "site",
           autoplay: !1,
           id: e.videoId
-        }) : (0, t.jsx)(d.A, {
+        }) : (0, t.jsx)(i.A, {
           image: e?.image,
           badge: e?.badge ?? e?.image?.badge,
           badgeType: "badge3",
@@ -122,13 +122,13 @@ try {
           items: e,
           style: a = {},
           className: s = "",
-          id: d = null
+          id: i = null
         }) => (0, t.jsx)("div", {
           style: a,
           className: u()("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
-          id: d,
+          id: i,
           "data-testid": "standard-group-of-items",
-          children: e.map(e => (0, t.jsx)(b, {
+          children: e.map(e => (0, t.jsx)(f, {
             impressionTracking: e?.impressionTracking,
             gtm: e?.gtm,
             children: (0, t.jsx)(p, {
@@ -152,9 +152,9 @@ try {
           text: a = {},
           items: s = [],
           renderTemplate: l = "",
-          style: d = {},
-          id: i = null,
-          ...r
+          style: i = {},
+          id: r = null,
+          ...d
         }) => {
           if (!s.length) return null;
           switch (l) {
@@ -162,25 +162,25 @@ try {
               return (0, t.jsx)(n, {
                 text: a,
                 items: s,
-                style: d,
-                id: i,
+                style: i,
+                id: r,
                 children: e
               });
             case "carousel-panorama":
               return (0, t.jsx)(n, {
                 text: a,
                 items: s,
-                style: d,
+                style: i,
                 className: "panorama",
-                id: i,
+                id: r,
                 children: e
               });
             default:
               return (0, t.jsx)(h, {
                 items: s,
-                style: d,
-                id: i,
-                ...r,
+                style: i,
+                id: r,
+                ...d,
                 children: e
               })
           }
