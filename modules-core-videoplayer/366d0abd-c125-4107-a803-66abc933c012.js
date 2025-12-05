@@ -22,21 +22,21 @@ try {
         o = t.n(r);
       let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
-        f = [],
-        c = {},
+        c = [],
+        f = {},
         l = o();
-      const u = (e, n = f) => {
-        let t = c;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+      const u = (e, n = c) => {
+        let t = f;
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : c) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : c), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: r,
           revertOnUpdate: o
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, r)), b = (0, d.useRef)(e => i.current.add(null, e)), y = n && n.length && !o;
-        return y && a(() => (u.current = !0, () => i.current.revert()), f), a(() => {
-          if (e && i.current.add(e, r), !y || !u.current) return () => i.current.revert()
+        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, r)), y = (0, d.useRef)(e => i.current.add(null, e)), b = n && n.length && !o;
+        return b && a(() => (u.current = !0, () => i.current.revert()), c), a(() => {
+          if (e && i.current.add(e, r), !b || !u.current) return () => i.current.revert()
         }, n), {
           context: i.current,
-          contextSafe: b.current
+          contextSafe: y.current
         }
       };
       u.register = e => {

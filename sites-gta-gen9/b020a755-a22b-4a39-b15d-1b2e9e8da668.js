@@ -52,13 +52,13 @@ try {
         l = !1,
         f = -1;
 
-      function d() {
-        l && s && (l = !1, s.length ? u = s.concat(u) : f = -1, u.length && c())
+      function c() {
+        l && s && (l = !1, s.length ? u = s.concat(u) : f = -1, u.length && d())
       }
 
-      function c() {
+      function d() {
         if (!l) {
-          var e = a(d);
+          var e = a(c);
           l = !0;
           for (var t = u.length; t;) {
             for (s = u, u = []; ++f < t;) s && s[f].run();
@@ -81,19 +81,19 @@ try {
         }
       }
 
-      function b(e, t) {
+      function h(e, t) {
         this.fun = e, this.array = t
       }
 
-      function h() {}
+      function g() {}
       r.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new b(e, t)), 1 !== u.length || l || a(c)
-      }, b.prototype.run = function() {
+        u.push(new h(e, t)), 1 !== u.length || l || a(d)
+      }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
+      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = g, r.addListener = g, r.once = g, r.off = g, r.removeListener = g, r.removeAllListeners = g, r.emit = g, r.prependListener = g, r.prependOnceListener = g, r.listeners = function(e) {
         return []
       }, r.binding = function(e) {
         throw new Error("process.binding is not supported")

@@ -99,9 +99,9 @@ try {
           weeks: f = 0,
           days: i = 0,
           hours: u = 0,
-          minutes: l = 0,
-          seconds: c = 0
-        } = t, b = r(s(e, d + 12 * a, n), i + 7 * f, n), y = 1e3 * (c + 60 * (l + 60 * u));
+          minutes: c = 0,
+          seconds: l = 0
+        } = t, b = r(s(e, d + 12 * a, n), i + 7 * f, n), y = 1e3 * (l + 60 * (c + 60 * u));
         return (0, o.w)(n?.in || e, +b - y)
       }
     },

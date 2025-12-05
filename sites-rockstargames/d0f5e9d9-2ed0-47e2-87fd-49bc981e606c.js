@@ -30,14 +30,14 @@ try {
         const [s] = (0, o.useSearchParams)(), t = (0, o.useNavigate)(), {
           setNormalLogo: i,
           setBreadcrumb: f,
-          setTitle: c
+          setTitle: u
         } = (0, r.b)(), {
-          videoId: u
+          videoId: c
         } = (0, o.useParams)(), {
           video: g,
           related: b
         } = (0, l.useVideoData)({
-          id: u
+          id: c
         }), y = s.get("resolution") ?? "_auto";
         return (0, a.useEffect)(() => (f([{
           href: "/videos",
@@ -45,11 +45,11 @@ try {
         }]), i(!1), () => {
           i(!0), f()
         }), []), (0, a.useEffect)(() => {
-          g && c(`${g.game.title} - ${g.title}`)
-        }, [g]), g && u ? (0, d.jsxs)(d.Fragment, {
+          g && u(`${g.game.title} - ${g.title}`)
+        }, [g]), g && c ? (0, d.jsxs)(d.Fragment, {
           children: [(0, d.jsx)(l.PlayerWithInfo, {
             resolution: y,
-            videoId: u,
+            videoId: c,
             videoChangeCallback: e => {
               t(`../videos/${e}`)
             }

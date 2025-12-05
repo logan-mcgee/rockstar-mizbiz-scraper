@@ -141,14 +141,14 @@ try {
           }),
           defaultItem: () => (0, t.Q)()
         }),
-        c = () => ({
+        p = () => ({
           name: "modal",
           label: "Modal Content",
           description: "Modify modal content details in here.",
           component: "group",
           fields: []
         }),
-        p = () => ({
+        c = () => ({
           name: "helperText",
           label: "Helper Link Section",
           component: "group",
@@ -265,7 +265,7 @@ try {
               description: "Modify expanding platform button details in here.",
               component: "group",
               fields: [b()]
-            }, c()],
+            }, p()],
             itemProps: e => (0, t.Rv)(e, {
               label: `${e?.name??"New"} [SubHero Button]`
             }),
@@ -338,14 +338,14 @@ try {
             itemProps: e => (0, t.Rv)(e, {
               label: `${e?.name??"New"} ${e.type??""} [Platform]`
             })
-          }, p()],
+          }, c()],
           itemProps: e => (0, t.Rv)(e, {
             label: `${e?.name??"New"} [Sub Hero]`
           }),
           defaultItem: {
             description: "",
             buttons: [],
-            helperLink: (0, t.Q)(p().defaultItem ?? {})
+            helperLink: (0, t.Q)(c().defaultItem ?? {})
           }
         }),
         f = () => ({

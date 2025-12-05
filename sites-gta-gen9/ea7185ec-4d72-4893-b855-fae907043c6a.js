@@ -17,26 +17,26 @@ try {
       t.r(n), t.d(n, {
         useGSAP: () => l
       });
-      var a = t(62229),
-        d = t(42828),
-        s = t.n(d);
-      let r = "undefined" != typeof document ? a.useLayoutEffect : a.useEffect,
+      var d = t(62229),
+        s = t(42828),
+        r = t.n(s);
+      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         o = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         c = {},
-        i = s();
+        i = r();
       const l = (e, n = f) => {
         let t = c;
         o(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : o(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: d,
-          revertOnUpdate: s
-        } = t, l = (0, a.useRef)(!1), u = (0, a.useRef)(i.context(() => {}, d)), b = (0, a.useRef)(e => u.current.add(null, e)), g = n && n.length && !s;
-        return g && r(() => (l.current = !0, () => u.current.revert()), f), r(() => {
-          if (e && u.current.add(e, d), !g || !l.current) return () => u.current.revert()
+          scope: s,
+          revertOnUpdate: r
+        } = t, l = (0, d.useRef)(!1), u = (0, d.useRef)(i.context(() => {}, s)), g = (0, d.useRef)(e => u.current.add(null, e)), b = n && n.length && !r;
+        return b && a(() => (l.current = !0, () => u.current.revert()), f), a(() => {
+          if (e && u.current.add(e, s), !b || !l.current) return () => u.current.revert()
         }, n), {
           context: u.current,
-          contextSafe: b.current
+          contextSafe: g.current
         }
       };
       l.register = e => {

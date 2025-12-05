@@ -24,11 +24,11 @@ try {
             var t = String(e),
               n = t.split(/[ce]/),
               o = n[1] || 0,
-              d = String(o ? Number(n[0]) * Math.pow(10, o) : t).split("."),
-              l = d[0],
-              s = !d[1],
-              r = l.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != l && 0 == r && s || o < 0 || o > 5 ? "many" : "other"
+              l = String(o ? Number(n[0]) * Math.pow(10, o) : t).split("."),
+              d = l[0],
+              s = !l[1],
+              r = d.slice(-6);
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != d && 0 == r && s || o < 0 || o > 5 ? "many" : "other"
           }
         },
         locale: "fr"

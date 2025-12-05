@@ -180,7 +180,7 @@ try {
       });
       a(24325), a(95966), a(84343), a(43582);
       var u = a(93935);
-      const b = ({
+      const g = ({
           game: e = null,
           parent: t = null
         }) => {
@@ -271,7 +271,7 @@ try {
             })
           }
         },
-        g = (e, t = "0") => (0, n.Q)({
+        b = (e, t = "0") => (0, n.Q)({
           title: `Item ${e}`,
           image: (0, n.Q)(n.m9),
           _template: t
@@ -333,7 +333,7 @@ try {
               desktop: 1
             },
             discountsGridList: {
-              content: [g(1), g(2), g(3), g(4)]
+              content: [b(1), b(2), b(3), b(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -360,7 +360,7 @@ try {
               desktop: 1
             },
             limitedGridList: {
-              content: [g(1), g(2), g(3), g(4)]
+              content: [b(1), b(2), b(3), b(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -405,7 +405,7 @@ try {
             name: "Large Carousel",
             noInfiniteScroll: !1,
             limitedList: {
-              content: [g(1), g(2), g(3), g(4)]
+              content: [b(1), b(2), b(3), b(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -459,7 +459,7 @@ try {
                   game: t
                 }), m({
                   parent: e
-                }), b({
+                }), g({
                   game: t
                 })]
               }
@@ -660,7 +660,7 @@ try {
               label: "Top Text Section",
               component: "html"
             }), (0, n.sE)(e)]
-          }, b(e), {
+          }, g(e), {
             name: "bottom",
             label: "Bottom Section",
             component: "group",
@@ -901,8 +901,8 @@ try {
           marketingAuthTLD: p
         }) => {
           const u = n?.apiHost ?? e,
-            b = n?.authHost ?? t,
-            g = n?.cdnBase ?? d,
+            g = n?.authHost ?? t,
+            b = n?.cdnBase ?? d,
             h = n?.clientId ?? a,
             f = l?.marketingAuthTLD ?? p,
             w = n?.scHost ?? r,
@@ -912,16 +912,16 @@ try {
             graphEnv: n?.graphEnv ?? i,
             host: w,
             hostname: m,
-            cdnBase: g,
+            cdnBase: b,
             key: c,
             clientId: h,
             cms: `https://${o}.rockstargames.com/graphql`,
-            authHost: b,
+            authHost: g,
             queryManifest: s,
             scBase: `https://${w}.rockstargames.com/`,
-            login: `https://${b}.rockstargames.com/connect/authorize/${h}`,
-            silentCheck: `https://${b}.rockstargames.com/connect/cors/check/${h}`,
-            signup: `https://${b}.rockstargames.com/create/?cid=${h}`,
+            login: `https://${g}.rockstargames.com/connect/authorize/${h}`,
+            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${h}`,
+            signup: `https://${g}.rockstargames.com/create/?cid=${h}`,
             gateway: `https://${f}/auth/gateway.json`,
             logout: `https://${f}/auth/sc-auth-logout`,
             pingBearer: `https://${f}/${v}`

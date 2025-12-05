@@ -30,14 +30,14 @@ try {
         }) : e[t] = i)(e, "symbol" != typeof t ? t + "" : t, i),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function c(e) {
-        l = e
+        d = e
       }
 
-      function h(e, t, i = {}, n = l) {
+      function h(e, t, i = {}, n = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const s = e.getBoundingClientRect();
           return t(n, {
@@ -57,7 +57,7 @@ try {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter(t => void 0 !== e[t]).map(t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(l+=1,a.set(i,l.toString())),a.get(i)):"0"):e[t]}`;
               var i
             }).toString()
           }(e);
@@ -159,8 +159,8 @@ try {
             root: r,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: c,
             initialInView: h,
             fallbackInView: u,
@@ -181,13 +181,13 @@ try {
         root: r,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: c
       } = {}) {
         var u;
         const [f, p] = n.useState(null), b = n.useRef(c), [g, y] = n.useState({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         });
         b.current = c, n.useEffect(() => {
@@ -204,14 +204,14 @@ try {
             threshold: e,
             trackVisibility: i,
             delay: t
-          }, l), () => {
+          }, d), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, l, t]);
+        }, [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, d, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
         f || !w || o || a || v.current === w || (v.current = w, y({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         }));
         const k = [p, g.inView, g.entry];

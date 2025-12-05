@@ -16,7 +16,7 @@ try {
     11206: (t, e, i) => {
       "use strict";
       i.d(e, {
-        A: () => h
+        A: () => a
       });
       const s = {
         randomUUID: "undefined" != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto)
@@ -28,9 +28,9 @@ try {
         if (!o && (o = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !o)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
         return o(n)
       }
-      const a = [];
-      for (let t = 0; t < 256; ++t) a.push((t + 256).toString(16).slice(1));
-      const h = function(t, e, i) {
+      const h = [];
+      for (let t = 0; t < 256; ++t) h.push((t + 256).toString(16).slice(1));
+      const a = function(t, e, i) {
         if (s.randomUUID && !e && !t) return s.randomUUID();
         const o = (t = t || {}).random || (t.rng || r)();
         if (o[6] = 15 & o[6] | 64, o[8] = 63 & o[8] | 128, e) {
@@ -39,7 +39,7 @@ try {
           return e
         }
         return function(t, e = 0) {
-          return a[t[e + 0]] + a[t[e + 1]] + a[t[e + 2]] + a[t[e + 3]] + "-" + a[t[e + 4]] + a[t[e + 5]] + "-" + a[t[e + 6]] + a[t[e + 7]] + "-" + a[t[e + 8]] + a[t[e + 9]] + "-" + a[t[e + 10]] + a[t[e + 11]] + a[t[e + 12]] + a[t[e + 13]] + a[t[e + 14]] + a[t[e + 15]]
+          return h[t[e + 0]] + h[t[e + 1]] + h[t[e + 2]] + h[t[e + 3]] + "-" + h[t[e + 4]] + h[t[e + 5]] + "-" + h[t[e + 6]] + h[t[e + 7]] + "-" + h[t[e + 8]] + h[t[e + 9]] + "-" + h[t[e + 10]] + h[t[e + 11]] + h[t[e + 12]] + h[t[e + 13]] + h[t[e + 14]] + h[t[e + 15]]
         }(o)
       }
     },
@@ -48,14 +48,14 @@ try {
       var s, o = i(42295),
         n = i(62229),
         r = i(44853),
-        a = function() {
-          return a = Object.assign || function(t) {
+        h = function() {
+          return h = Object.assign || function(t) {
             for (var e, i = 1, s = arguments.length; i < s; i++)
               for (var o in e = arguments[i]) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
             return t
-          }, a.apply(this, arguments)
+          }, h.apply(this, arguments)
         },
-        h = {
+        a = {
           width: "100%",
           height: "10px",
           top: "0px",
@@ -76,68 +76,68 @@ try {
           zIndex: 1
         },
         l = {
-          top: a(a({}, h), {
+          top: h(h({}, a), {
             top: "-5px"
           }),
-          right: a(a({}, p), {
+          right: h(h({}, p), {
             left: void 0,
             right: "-5px"
           }),
-          bottom: a(a({}, h), {
+          bottom: h(h({}, a), {
             top: void 0,
             bottom: "-5px"
           }),
-          left: a(a({}, p), {
+          left: h(h({}, p), {
             left: "-5px"
           }),
-          topRight: a(a({}, d), {
+          topRight: h(h({}, d), {
             right: "-10px",
             top: "-10px",
             cursor: "ne-resize"
           }),
-          bottomRight: a(a({}, d), {
+          bottomRight: h(h({}, d), {
             right: "-10px",
             bottom: "-10px",
             cursor: "se-resize"
           }),
-          bottomLeft: a(a({}, d), {
+          bottomLeft: h(h({}, d), {
             left: "-10px",
             bottom: "-10px",
             cursor: "sw-resize"
           }),
-          topLeft: a(a({}, d), {
+          topLeft: h(h({}, d), {
             left: "-10px",
             top: "-10px",
             cursor: "nw-resize"
           })
         },
-        c = (0, n.memo)(function(t) {
+        u = (0, n.memo)(function(t) {
           var e = t.onResizeStart,
             i = t.direction,
             s = t.children,
             r = t.replaceStyles,
-            h = t.className,
+            a = t.className,
             p = (0, n.useCallback)(function(t) {
               e(t, i)
             }, [e, i]),
             d = (0, n.useCallback)(function(t) {
               e(t, i)
             }, [e, i]),
-            c = (0, n.useMemo)(function() {
-              return a(a({
+            u = (0, n.useMemo)(function() {
+              return h(h({
                 position: "absolute",
                 userSelect: "none"
               }, l[i]), null != r ? r : {})
             }, [r, i]);
           return (0, o.jsx)("div", {
-            className: h || void 0,
-            style: c,
+            className: a || void 0,
+            style: u,
             onMouseDown: p,
             onTouchStart: d,
             children: s
           })
         }),
-        u = (s = function(t, e) {
+        c = (s = function(t, e) {
           return s = Object.setPrototypeOf || {
             __proto__: []
           }
@@ -242,7 +242,7 @@ try {
             flexBasis: void 0
           }, r.onResizeStart = r.onResizeStart.bind(r), r.onMouseMove = r.onMouseMove.bind(r), r.onMouseUp = r.onMouseUp.bind(r), r
         }
-        u(e, t), Object.defineProperty(e.prototype, "parentNode", {
+        c(e, t), Object.defineProperty(e.prototype, "parentNode", {
           get: function() {
             return this.resizable ? this.resizable.parentNode : null
           },
@@ -345,11 +345,11 @@ try {
           var i, s, o = this.props.boundsByDirection,
             n = this.state.direction,
             r = o && v("left", n),
-            a = o && v("top", n);
+            h = o && v("top", n);
           if ("parent" === this.props.bounds) {
-            var h = this.parentNode;
-            h && (i = r ? this.resizableRight - this.parentLeft : h.offsetWidth + (this.parentLeft - this.resizableLeft), s = a ? this.resizableBottom - this.parentTop : h.offsetHeight + (this.parentTop - this.resizableTop))
-          } else "window" === this.props.bounds ? this.window && (i = r ? this.resizableRight : this.window.innerWidth - this.resizableLeft, s = a ? this.resizableBottom : this.window.innerHeight - this.resizableTop) : this.props.bounds && (i = r ? this.resizableRight - this.targetLeft : this.props.bounds.offsetWidth + (this.targetLeft - this.resizableLeft), s = a ? this.resizableBottom - this.targetTop : this.props.bounds.offsetHeight + (this.targetTop - this.resizableTop));
+            var a = this.parentNode;
+            a && (i = r ? this.resizableRight - this.parentLeft : a.offsetWidth + (this.parentLeft - this.resizableLeft), s = h ? this.resizableBottom - this.parentTop : a.offsetHeight + (this.parentTop - this.resizableTop))
+          } else "window" === this.props.bounds ? this.window && (i = r ? this.resizableRight : this.window.innerWidth - this.resizableLeft, s = h ? this.resizableBottom : this.window.innerHeight - this.resizableTop) : this.props.bounds && (i = r ? this.resizableRight - this.targetLeft : this.props.bounds.offsetWidth + (this.targetLeft - this.resizableLeft), s = h ? this.resizableBottom - this.targetTop : this.props.bounds.offsetHeight + (this.targetTop - this.resizableTop));
           return i && Number.isFinite(i) && (t = t && t < i ? t : i), s && Number.isFinite(s) && (e = e && e < s ? e : s), {
             maxWidth: t,
             maxHeight: e
@@ -359,18 +359,18 @@ try {
             o = (i = this.props.resizeRatio || 1, Array.isArray(i) ? i : [i, i]),
             n = o[0],
             r = o[1],
-            a = this.state,
-            h = a.direction,
-            p = a.original,
+            h = this.state,
+            a = h.direction,
+            p = h.original,
             d = this.props,
             l = d.lockAspectRatio,
-            c = d.lockAspectRatioExtraHeight,
-            u = d.lockAspectRatioExtraWidth,
+            u = d.lockAspectRatioExtraHeight,
+            c = d.lockAspectRatioExtraWidth,
             f = p.width,
             g = p.height,
-            b = c || 0,
-            w = u || 0;
-          return v("right", h) && (f = p.width + (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("left", h) && (f = p.width - (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("bottom", h) && (g = p.height + (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), v("top", h) && (g = p.height - (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), {
+            b = u || 0,
+            w = c || 0;
+          return v("right", a) && (f = p.width + (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("left", a) && (f = p.width - (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("bottom", a) && (g = p.height + (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), v("top", a) && (g = p.height - (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), {
             newWidth: f,
             newHeight: g
           }
@@ -378,24 +378,24 @@ try {
           var o = this.props,
             n = o.lockAspectRatio,
             r = o.lockAspectRatioExtraHeight,
-            a = o.lockAspectRatioExtraWidth,
-            h = void 0 === s.width ? 10 : s.width,
+            h = o.lockAspectRatioExtraWidth,
+            a = void 0 === s.width ? 10 : s.width,
             p = void 0 === i.width || i.width < 0 ? t : i.width,
             d = void 0 === s.height ? 10 : s.height,
             l = void 0 === i.height || i.height < 0 ? e : i.height,
-            c = r || 0,
-            u = a || 0;
+            u = r || 0,
+            c = h || 0;
           if (n) {
-            var f = (d - c) * this.ratio + u,
-              g = (l - c) * this.ratio + u,
-              w = (h - u) / this.ratio + c,
-              v = (p - u) / this.ratio + c,
-              y = Math.max(h, f),
+            var f = (d - u) * this.ratio + c,
+              g = (l - u) * this.ratio + c,
+              w = (a - c) / this.ratio + u,
+              v = (p - c) / this.ratio + u,
+              y = Math.max(a, f),
               m = Math.min(p, g),
               z = Math.max(d, w),
               x = Math.min(l, v);
             t = b(t, y, m), e = b(e, z, x)
-          } else t = b(t, h, p), e = b(e, d, l);
+          } else t = b(t, a, p), e = b(e, d, l);
           return {
             newWidth: t,
             newHeight: e
@@ -417,9 +417,9 @@ try {
             var o = this.resizable.getBoundingClientRect(),
               n = o.left,
               r = o.top,
-              a = o.right,
-              h = o.bottom;
-            this.resizableLeft = n * t, this.resizableRight = a * t, this.resizableTop = r * t, this.resizableBottom = h * t
+              h = o.right,
+              a = o.bottom;
+            this.resizableLeft = n * t, this.resizableRight = h * t, this.resizableTop = r * t, this.resizableBottom = a * t
           }
         }, e.prototype.onResizeStart = function(t, e) {
           if (this.resizable && this.window) {
@@ -437,12 +437,12 @@ try {
             if ("auto" !== n.flexBasis) {
               var r = this.parentNode;
               if (r) {
-                var a = this.window.getComputedStyle(r).flexDirection;
-                this.flexDir = a.startsWith("row") ? "row" : "column", i = n.flexBasis
+                var h = this.window.getComputedStyle(r).flexDirection;
+                this.flexDir = h.startsWith("row") ? "row" : "column", i = n.flexBasis
               }
             }
             this.setBoundingClientRect(), this.bindEvents();
-            var h = {
+            var a = {
               original: {
                 x: s,
                 y: o,
@@ -456,7 +456,7 @@ try {
               direction: e,
               flexBasis: i
             };
-            this.setState(h)
+            this.setState(a)
           }
         }, e.prototype.onMouseMove = function(t) {
           var e = this;
@@ -468,13 +468,13 @@ try {
               s = i.maxWidth,
               o = i.maxHeight,
               n = i.minWidth,
-              a = i.minHeight,
-              h = y(t) ? t.touches[0].clientX : t.clientX,
+              h = i.minHeight,
+              a = y(t) ? t.touches[0].clientX : t.clientX,
               p = y(t) ? t.touches[0].clientY : t.clientY,
               d = this.state,
               l = d.direction,
-              c = d.original,
-              u = d.width,
+              u = d.original,
+              c = d.width,
               f = d.height,
               g = this.getParentSize(),
               b = function(t, e, i, s, o, n, r) {
@@ -484,9 +484,9 @@ try {
                   minWidth: void 0 === n ? void 0 : Number(n),
                   minHeight: void 0 === r ? void 0 : Number(r)
                 }
-              }(g, this.window.innerWidth, this.window.innerHeight, s, o, n, a);
-            s = b.maxWidth, o = b.maxHeight, n = b.minWidth, a = b.minHeight;
-            var v = this.calculateNewSizeFromDirection(h, p),
+              }(g, this.window.innerWidth, this.window.innerHeight, s, o, n, h);
+            s = b.maxWidth, o = b.maxHeight, n = b.minWidth, h = b.minHeight;
+            var v = this.calculateNewSizeFromDirection(a, p),
               z = v.newHeight,
               S = v.newWidth,
               R = this.calculateNewMaxFromBoundary(s, o);
@@ -496,7 +496,7 @@ try {
               height: R.maxHeight
             }, {
               width: n,
-              height: a
+              height: h
             });
             if (S = W.newWidth, z = W.newHeight, this.props.grid) {
               var j = w(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
@@ -505,17 +505,17 @@ try {
               S = 0 === k || Math.abs(j - S) <= k ? j : S, z = 0 === k || Math.abs(M - z) <= k ? M : z
             }
             var E = {
-              width: S - c.width,
-              height: z - c.height
+              width: S - u.width,
+              height: z - u.height
             };
-            if (this.delta = E, u && "string" == typeof u)
-              if (u.endsWith("%")) {
+            if (this.delta = E, c && "string" == typeof c)
+              if (c.endsWith("%")) {
                 var N = S / g.width * 100;
                 S = "".concat(N, "%")
-              } else if (u.endsWith("vw")) {
+              } else if (c.endsWith("vw")) {
               var O = S / this.window.innerWidth * 100;
               S = "".concat(O, "vw")
-            } else if (u.endsWith("vh")) {
+            } else if (c.endsWith("vh")) {
               var B = S / this.window.innerHeight * 100;
               S = "".concat(B, "vh")
             }
@@ -559,20 +559,20 @@ try {
             s = e.handleStyles,
             n = e.handleClasses,
             r = e.handleWrapperStyle,
-            a = e.handleWrapperClass,
-            h = e.handleComponent;
+            h = e.handleWrapperClass,
+            a = e.handleComponent;
           if (!i) return null;
           var p = Object.keys(i).map(function(e) {
-            return !1 !== i[e] ? (0, o.jsx)(c, {
+            return !1 !== i[e] ? (0, o.jsx)(u, {
               direction: e,
               onResizeStart: t.onResizeStart,
               replaceStyles: s && s[e],
               className: n && n[e],
-              children: h && h[e] ? h[e] : null
+              children: a && a[e] ? a[e] : null
             }, e) : null
           });
           return (0, o.jsx)("div", {
-            className: a,
+            className: h,
             style: r,
             children: p
           })
@@ -645,24 +645,24 @@ try {
         const o = (s = s || {}).delimiter || ".",
           n = s.maxDepth,
           r = s.transformKey || i,
-          a = {};
-        return function t(i, h, p) {
+          h = {};
+        return function t(i, a, p) {
           p = p || 1, Object.keys(i).forEach(function(d) {
             const l = i[d],
-              c = s.safe && Array.isArray(l),
-              u = Object.prototype.toString.call(l),
+              u = s.safe && Array.isArray(l),
+              c = Object.prototype.toString.call(l),
               f = e(l),
-              g = "[object Object]" === u || "[object Array]" === u,
-              b = h ? h + o + r(d) : r(d);
-            if (!c && !f && g && Object.keys(l).length && (!s.maxDepth || p < n)) return t(l, b, p + 1);
-            a[b] = l
+              g = "[object Object]" === c || "[object Array]" === c,
+              b = a ? a + o + r(d) : r(d);
+            if (!u && !f && g && Object.keys(l).length && (!s.maxDepth || p < n)) return t(l, b, p + 1);
+            h[b] = l
           })
-        }(t), a
+        }(t), h
       }
       t.exports = s, s.flatten = s, s.unflatten = function t(o, n) {
         const r = (n = n || {}).delimiter || ".",
-          a = n.overwrite || !1,
-          h = n.transformKey || i,
+          h = n.overwrite || !1,
+          a = n.transformKey || i,
           p = {};
         if (e(o) || "[object Object]" !== Object.prototype.toString.call(o)) return o;
 
@@ -682,18 +682,18 @@ try {
             }, e)
           }(e, t, s(o[e], n))
         }, {}), Object.keys(o).forEach(function(e) {
-          const i = e.split(r).map(h);
+          const i = e.split(r).map(a);
           let s = d(i.shift()),
             l = d(i[0]),
-            c = p;
+            u = p;
           for (; void 0 !== l;) {
             if ("__proto__" === s) return;
-            const t = Object.prototype.toString.call(c[s]),
+            const t = Object.prototype.toString.call(u[s]),
               e = "[object Object]" === t || "[object Array]" === t;
-            if (!a && !e && void 0 !== c[s]) return;
-            (a && !e || !a && null == c[s]) && (c[s] = "number" != typeof l || n.object ? {} : []), c = c[s], i.length > 0 && (s = d(i.shift()), l = d(i[0]))
+            if (!h && !e && void 0 !== u[s]) return;
+            (h && !e || !h && null == u[s]) && (u[s] = "number" != typeof l || n.object ? {} : []), u = u[s], i.length > 0 && (s = d(i.shift()), l = d(i[0]))
           }
-          c[s] = t(o[e], n)
+          u[s] = t(o[e], n)
         }), p
       }
     }

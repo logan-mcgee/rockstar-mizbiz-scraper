@@ -29,8 +29,8 @@ try {
           value: i
         }) : e[t] = i)(e, "symbol" != typeof t ? t + "" : t, i),
         o = new Map,
-        a = new WeakMap,
-        d = 0,
+        d = new WeakMap,
+        a = 0,
         l = void 0;
 
       function h(e) {
@@ -57,7 +57,7 @@ try {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter(t => void 0 !== e[t]).map(t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(d.has(i)||(a+=1,d.set(i,a.toString())),d.get(i)):"0"):e[t]}`;
               var i
             }).toString()
           }(e);
@@ -158,8 +158,8 @@ try {
             threshold: r,
             root: s,
             rootMargin: o,
-            onChange: a,
-            skip: d,
+            onChange: d,
+            skip: a,
             trackVisibility: l,
             delay: h,
             initialInView: c,
@@ -180,24 +180,24 @@ try {
         rootMargin: r,
         root: s,
         triggerOnce: o,
-        skip: a,
-        initialInView: d,
+        skip: d,
+        initialInView: a,
         fallbackInView: l,
         onChange: h
       } = {}) {
         var u;
-        const [f, b] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
-          inView: !!d,
+        const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+          inView: !!a,
           entry: void 0
         });
-        p.current = h, n.useEffect(() => {
-          if (a || !f) return;
+        b.current = h, n.useEffect(() => {
+          if (d || !f) return;
           let n;
           return n = c(f, (e, t) => {
             y({
               inView: e,
               entry: t
-            }), p.current && p.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }, {
             root: s,
             rootMargin: r,
@@ -207,14 +207,14 @@ try {
           }, l), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, f, s, r, o, a, i, l, t]);
+        }, [Array.isArray(e) ? e.toString() : e, f, s, r, o, d, i, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
-          inView: !!d,
+        f || !w || o || d || v.current === w || (v.current = w, y({
+          inView: !!a,
           entry: void 0
         }));
-        const k = [b, g.inView, g.entry];
+        const k = [p, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

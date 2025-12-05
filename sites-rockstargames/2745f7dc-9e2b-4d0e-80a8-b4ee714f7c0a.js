@@ -22,11 +22,11 @@ try {
           },
           fn: function(e, a) {
             var t = String(e).split("."),
-              d = t[0],
-              n = !t[1],
-              s = d.slice(-1),
-              l = d.slice(-2);
-            return a ? "other" : n && 1 == s && 11 != l ? "one" : n && s >= 2 && s <= 4 && (l < 12 || l > 14) ? "few" : n && 0 == s || n && s >= 5 && s <= 9 || n && l >= 11 && l <= 14 ? "many" : "other"
+              n = t[0],
+              d = !t[1],
+              s = n.slice(-1),
+              l = n.slice(-2);
+            return a ? "other" : d && 1 == s && 11 != l ? "one" : d && s >= 2 && s <= 4 && (l < 12 || l > 14) ? "few" : d && 0 == s || d && s >= 5 && s <= 9 || d && l >= 11 && l <= 14 ? "many" : "other"
           }
         },
         locale: "ru"

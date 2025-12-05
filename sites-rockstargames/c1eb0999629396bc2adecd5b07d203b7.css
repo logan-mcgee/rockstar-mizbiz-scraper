@@ -1,0 +1,25 @@
+@layer foundry_v1yii70;
+
+@layer foundry_v1yii70 {
+  .foundry_v1yii72 {
+    width: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+    height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  }
+
+  .foundry_v1yii73 {
+    width: var(--foundry-global-spacing-dimensions-250-1db78665);
+    height: var(--foundry-global-spacing-dimensions-250-1db78665);
+  }
+
+  .foundry_v1yii74 {
+    width: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+    height: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+  }
+
+  .foundry_v1yii75 {
+    width: var(--foundry-global-spacing-dimensions-400-b120da78);
+    height: var(--foundry-global-spacing-dimensions-400-b120da78);
+  }
+}
+
+/*# sourceMappingURL=c1eb0999629396bc2adecd5b07d203b7.css.map*/

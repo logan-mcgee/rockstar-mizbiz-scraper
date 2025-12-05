@@ -158,19 +158,19 @@ try {
             m = s.id,
             h = void 0 === m ? "" : m,
             g = s.appendTo,
-            v = h || "google-recaptcha-v3";
+            b = h || "google-recaptcha-v3";
           if (function(e) {
               return !!document.querySelector("#" + e)
-            }(v)) o();
+            }(b)) o();
           else {
-            var b = function(e) {
+            var v = function(e) {
                 return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
               }({
                 useEnterprise: c,
                 useRecaptchaNet: a
               }),
               w = document.createElement("script");
-            w.id = v, w.src = b + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+            w.id = b, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
           }
         },
         l = function(e) {
@@ -194,9 +194,9 @@ try {
           m = e.language,
           h = e.container,
           g = e.children,
-          v = (0, o.useState)(null),
-          b = v[0],
-          w = v[1],
+          b = (0, o.useState)(null),
+          v = b[0],
+          w = b[1],
           C = (0, o.useRef)(t),
           S = JSON.stringify(y),
           E = JSON.stringify(null == h ? void 0 : h.parameters);
@@ -238,17 +238,17 @@ try {
           l("<GoogleReCaptchaProvider /> recaptcha key not provided")
         }, [c, p, S, E, m, t, null == h ? void 0 : h.element]);
         var T = (0, o.useCallback)(function(e) {
-            if (!b || !b.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
-            return b.execute(C.current, {
+            if (!v || !v.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
+            return v.execute(C.current, {
               action: e
             })
-          }, [b, C]),
+          }, [v, C]),
           P = (0, o.useMemo)(function() {
             return {
-              executeRecaptcha: b ? T : void 0,
+              executeRecaptcha: v ? T : void 0,
               container: null == h ? void 0 : h.element
             }
-          }, [T, b, null == h ? void 0 : h.element]);
+          }, [T, v, null == h ? void 0 : h.element]);
         return a().createElement(f.Provider, {
           value: P
         }, g)
@@ -389,8 +389,8 @@ try {
         }, t.exports), t.exports
       }
       var g = "function" == typeof Symbol && Symbol.for,
-        v = g ? Symbol.for("react.element") : 60103,
-        b = g ? Symbol.for("react.portal") : 60106,
+        b = g ? Symbol.for("react.element") : 60103,
+        v = g ? Symbol.for("react.portal") : 60106,
         w = g ? Symbol.for("react.fragment") : 60107,
         C = g ? Symbol.for("react.strict_mode") : 60108,
         S = g ? Symbol.for("react.profiler") : 60114,
@@ -412,7 +412,7 @@ try {
         if ("object" == typeof e && null !== e) {
           var t = e.$$typeof;
           switch (t) {
-            case v:
+            case b:
               switch (e = e.type) {
                 case P:
                 case R:
@@ -433,7 +433,7 @@ try {
                       return t
                   }
               }
-            case b:
+            case v:
               return t
           }
         }
@@ -447,12 +447,12 @@ try {
           ConcurrentMode: R,
           ContextConsumer: T,
           ContextProvider: E,
-          Element: v,
+          Element: b,
           ForwardRef: x,
           Fragment: w,
           Lazy: M,
           Memo: _,
-          Portal: b,
+          Portal: v,
           Profiler: S,
           StrictMode: C,
           Suspense: $,
@@ -467,7 +467,7 @@ try {
             return j(e) === E
           },
           isElement: function(e) {
-            return "object" == typeof e && null !== e && e.$$typeof === v
+            return "object" == typeof e && null !== e && e.$$typeof === b
           },
           isForwardRef: function(e) {
             return j(e) === x
@@ -482,7 +482,7 @@ try {
             return j(e) === _
           },
           isPortal: function(e) {
-            return j(e) === b
+            return j(e) === v
           },
           isProfiler: function(e) {
             return j(e) === S

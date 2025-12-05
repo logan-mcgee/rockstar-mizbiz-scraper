@@ -275,7 +275,7 @@ try {
     5843: (e, a, i) => {
       "use strict";
       i.d(a, {
-        A: () => l
+        A: () => f
       });
       var o = i(2295),
         n = i(2229),
@@ -319,35 +319,35 @@ try {
           const {
             desktop: d = null,
             mobile: t = null
-          } = e, [l, c] = (0, n.useState)(!0), u = {
+          } = e, [f, c] = (0, n.useState)(!0), u = {
             autoPlay: !a,
             hover: a,
             loop: i,
             sound: r,
-            muted: l
+            muted: f
           };
           return (0, o.jsxs)("div", {
-            onClick: () => c(!l),
-            children: [d && (0, o.jsx)(f, {
+            onClick: () => c(!f),
+            children: [d && (0, o.jsx)(l, {
               className: [t ? s.hiddenMobile : "", s.videoDesktop].join(" "),
               hash: d,
               ...u
-            }), t && (0, o.jsx)(f, {
+            }), t && (0, o.jsx)(l, {
               className: [d ? s.hiddenLarge : "", s.videoMobile].join(" "),
               hash: t,
               ...u
             }), u.sound ? (0, o.jsx)("div", {
-              className: [s.muteBtn, l ? "" : s.unMuted].join(" ")
+              className: [s.muteBtn, f ? "" : s.unMuted].join(" ")
             }) : ""]
           })
         },
-        f = ({
+        l = ({
           className: e,
           hash: a,
           hover: i,
           autoPlay: t,
-          loop: f,
-          muted: l,
+          loop: l,
+          muted: f,
           sound: c
         }) => {
           const {
@@ -365,21 +365,21 @@ try {
               ref: m,
               src: u.gifInfo.file,
               autoPlay: t,
-              loop: f,
-              muted: l,
+              loop: l,
+              muted: f,
               playsInline: !0
             })
           }) : null
         },
-        l = ({
+        f = ({
           hash: e,
           style: a,
           title: i,
           caption: n,
           hero: r = !1,
           loop: d = !0,
-          sound: f = !1,
-          hover: l = !1
+          sound: l = !1,
+          hover: f = !1
         }) => {
           if (!e) return null;
           const c = "object" == typeof e ? e : Object.keys(e).map(a => ({
@@ -390,9 +390,9 @@ try {
             style: a,
             children: [(0, o.jsx)(t, {
               hashes: c,
-              hover: l,
+              hover: f,
               loop: d,
-              sound: f,
+              sound: l,
               title: i ?? "R* Games"
             }), n && (0, o.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
@@ -417,16 +417,16 @@ try {
 
       function t(e, a, i) {
         var o, t = {},
-          f = null,
-          l = null;
-        for (o in void 0 !== i && (f = "" + i), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (l = a.ref), a) r.call(a, o) && !d.hasOwnProperty(o) && (t[o] = a[o]);
+          l = null,
+          f = null;
+        for (o in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, o) && !d.hasOwnProperty(o) && (t[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
-          key: f,
-          ref: l,
+          key: l,
+          ref: f,
           props: t,
           _owner: s.current
         }

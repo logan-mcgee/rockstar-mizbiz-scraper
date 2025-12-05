@@ -22,7 +22,7 @@ try {
         r = a(4578);
 
       function o(e, t) {
-        if (!(e instanceof d)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof _)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
       function i(e) {
@@ -79,7 +79,7 @@ try {
         }
         return a
       }
-      var d = function() {
+      var _ = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.ListFormat must be called with 'new'");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "initializedListFormat", !0);
@@ -89,16 +89,16 @@ try {
             s = (0, n.GetOption)(i, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
           o.localeMatcher = s;
           var c = e.localeData,
-            d = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, c, e.getDefaultLocale);
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", d.locale);
-          var _ = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", _);
+            _ = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, c, e.getDefaultLocale);
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", _.locale);
+          var d = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", d);
           var u = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", u);
-          var f = d.dataLocale,
+          var f = _.dataLocale,
             p = c[f];
           (0, n.invariant)(!!p, "Missing locale data for ".concat(f));
-          var y = p[_][u];
+          var y = p[d][u];
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {
@@ -113,8 +113,8 @@ try {
           var a = s(e.__INTERNAL_SLOT_MAP__, this, i(t));
           if (!Array.isArray(a)) return [a];
           for (var n = [], r = 0, c = a; r < c.length; r++) {
-            var d = c[r];
-            n.push(l.__assign({}, d))
+            var _ = c[r];
+            n.push(l.__assign({}, _))
           }
           return n
         }, e.prototype.resolvedOptions = function() {
@@ -138,19 +138,19 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e.__INTERNAL_SLOT_MAP__ = new WeakMap, e
       }();
-      t.default = d;
+      t.default = _;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(d.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(_.prototype, Symbol.toStringTag, {
           value: "Intl.ListFormat",
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(d.prototype.constructor, "length", {
+        }), Object.defineProperty(_.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(d.supportedLocalesOf, "length", {
+        }), Object.defineProperty(_.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,

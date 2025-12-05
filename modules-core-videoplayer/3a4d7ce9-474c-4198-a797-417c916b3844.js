@@ -15,13 +15,13 @@ try {
   [4598], {
     2217: (e, a, t) => {
       t.r(a), t.d(a, {
-        AgeGate: () => g
+        AgeGate: () => f
       });
       var s = t(2295),
         n = t(2229),
-        d = t(5413),
-        r = t(2649),
-        l = t(1915),
+        r = t(5413),
+        l = t(2649),
+        d = t(1915),
         o = t(3497),
         c = t(5966),
         i = t(2918);
@@ -30,33 +30,33 @@ try {
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
           inputs: "rockstargames-modules-core-videoplayerca3ab235303ed1b84f9c867fe5393c3a"
         },
-        f = Object.freeze({
+        g = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, c.withTranslations)(({
+        f = (0, c.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
-          ga: g = {},
+          ga: f = {},
           t: m
         }) => {
           const {
             data: p
           } = (0, i.useRockstarUser)(), {
-            track: b
-          } = (0, i.useGtmTrack)(), y = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+            track: y
+          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? g.PASSED : "0" === v ? g.FAILED : g.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
           } = t;
           return (0, n.useEffect)(() => {
-            b({
+            y({
               event: "age_gate_popup",
-              element_placement: g.element_placement ?? ""
+              element_placement: f.element_placement ?? ""
             })
-          }, []), h === f.PASSED || !1 === p?.isAMinor ? a : h === f.FAILED ? (0, s.jsxs)("div", {
+          }, []), h === g.PASSED || !1 === p?.isAMinor ? a : h === g.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: j,
             children: [t?.header, (0, s.jsx)("h2", {
@@ -78,18 +78,18 @@ try {
               onSubmit: async a => {
                 a.preventDefault();
                 const t = new Date(D?.current?.value, I?.current?.value, x?.current?.value),
-                  s = (0, d.j)(new Date, {
+                  s = (0, r.j)(new Date, {
                     years: 150
                   }),
-                  n = (0, r.f)(t) && (0, l.d)(t, s);
+                  n = (0, l.f)(t) && (0, d.d)(t, s);
                 if (k(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
-                  b(a ? {
+                  y(a ? {
                     event: "age_gate_passed",
-                    element_placement: g.element_placement ?? ""
+                    element_placement: f.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: g.element_placement ?? "",
+                    element_placement: f.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";

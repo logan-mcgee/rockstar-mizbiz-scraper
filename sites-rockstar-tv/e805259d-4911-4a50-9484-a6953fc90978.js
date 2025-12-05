@@ -7776,51 +7776,51 @@ try {
         return !0
       }, n.isUnicodeRegionSubtag = G, n.isUnicodeScriptSubtag = c, n.isUnicodeVariantSubtag = p, n.parseUnicodeLanguageId = h, n.parseUnicodeLocaleId = function(a) {
         var t = a.split(n.SEPARATOR),
-          r = h(t);
+          b = h(t);
         return L.__assign({
-          lang: r
+          lang: b
         }, function(a) {
           if (!a.length) return {
             extensions: []
           };
-          var n, t, L, r = [],
-            b = {};
+          var n, t, L, b = [],
+            r = {};
           do {
             var m = a.shift();
             switch (m) {
               case "u":
               case "U":
                 if (n) throw new RangeError("There can only be 1 -u- extension");
-                n = y(a), r.push(n);
+                n = y(a), b.push(n);
                 break;
               case "t":
               case "T":
                 if (t) throw new RangeError("There can only be 1 -t- extension");
-                t = N(a), r.push(t);
+                t = N(a), b.push(t);
                 break;
               case "x":
               case "X":
                 if (L) throw new RangeError("There can only be 1 -x- extension");
-                L = P(a), r.push(L);
+                L = P(a), b.push(L);
                 break;
               default:
                 if (!e.test(m)) throw new RangeError("Malformed extension type");
-                if (m in b) throw new RangeError("There can only be 1 -".concat(m, "- extension"));
+                if (m in r) throw new RangeError("There can only be 1 -".concat(m, "- extension"));
                 var k = {
                   type: m,
                   value: I(a)
                 };
-                b[k.type] = k, r.push(k)
+                r[k.type] = k, b.push(k)
             }
           } while (a.length);
           return {
-            extensions: r
+            extensions: b
           }
         }(t))
       };
       var L = t(8322),
-        r = /^[a-z0-9]{1,8}$/i,
-        b = /^[a-z0-9]{2,8}$/i,
+        b = /^[a-z0-9]{1,8}$/i,
+        r = /^[a-z0-9]{2,8}$/i,
         m = /^[a-z0-9]{3,8}$/i,
         k = /^[a-z0-9][a-z]$/i,
         u = /^[a-z0-9]{3,8}$/i,
@@ -7849,24 +7849,24 @@ try {
 
       function h(a) {
         "string" == typeof a && (a = a.split(n.SEPARATOR));
-        var t, L, r = a.shift();
-        if (!r) throw new RangeError("Missing unicode_language_subtag");
-        if ("root" === r) return {
+        var t, L, b = a.shift();
+        if (!b) throw new RangeError("Missing unicode_language_subtag");
+        if ("root" === b) return {
           lang: "root",
           variants: []
         };
-        if (!g(r)) throw new RangeError("Malformed unicode_language_subtag");
+        if (!g(b)) throw new RangeError("Malformed unicode_language_subtag");
         a.length && c(a[0]) && (t = a.shift()), a.length && G(a[0]) && (L = a.shift());
-        for (var b = {}; a.length && p(a[0]);) {
+        for (var r = {}; a.length && p(a[0]);) {
           var m = a.shift();
-          if (m in b) throw new RangeError('Duplicate variant "'.concat(m, '"'));
-          b[m] = 1
+          if (m in r) throw new RangeError('Duplicate variant "'.concat(m, '"'));
+          r[m] = 1
         }
         return {
-          lang: r,
+          lang: b,
           script: t,
           region: L,
-          variants: Object.keys(b)
+          variants: Object.keys(r)
         }
       }
 
@@ -7892,8 +7892,8 @@ try {
         if (k.test(a[0])) {
           t = a.shift();
           for (var L = []; a.length && u.test(a[0]);) L.push(a.shift());
-          var r = "";
-          return L.length && (r = L.join(n.SEPARATOR)), [t, r]
+          var b = "";
+          return L.length && (b = L.join(n.SEPARATOR)), [t, b]
         }
       }
 
@@ -7903,9 +7903,9 @@ try {
           t = h(a)
         } catch (a) {}
         for (var L = []; a.length && o.test(a[0]);) {
-          for (var r = a.shift(), b = []; a.length && m.test(a[0]);) b.push(a.shift());
-          if (!b.length) throw new RangeError('Missing tvalue for tkey "'.concat(r, '"'));
-          L.push([r, b.join(n.SEPARATOR)])
+          for (var b = a.shift(), r = []; a.length && m.test(a[0]);) r.push(a.shift());
+          if (!r.length) throw new RangeError('Missing tvalue for tkey "'.concat(b, '"'));
+          L.push([b, r.join(n.SEPARATOR)])
         }
         if (L.length) return {
           type: "t",
@@ -7916,7 +7916,7 @@ try {
       }
 
       function P(a) {
-        for (var t = []; a.length && r.test(a[0]);) t.push(a.shift());
+        for (var t = []; a.length && b.test(a[0]);) t.push(a.shift());
         if (t.length) return {
           type: "x",
           value: t.join(n.SEPARATOR)
@@ -7925,7 +7925,7 @@ try {
       }
 
       function I(a) {
-        for (var t = []; a.length && b.test(a[0]);) t.push(a.shift());
+        for (var t = []; a.length && r.test(a[0]);) t.push(a.shift());
         return t.length ? t.join(n.SEPARATOR) : ""
       }
       n.SEPARATOR = "-"
@@ -7940,15 +7940,15 @@ try {
           "string" == typeof a && (a = [a]);
           for (var t = 0, L = a; t < L.length; t++) {
             var k = L[t],
-              u = (0, b.emitUnicodeLocaleId)((0, r.CanonicalizeUnicodeLocaleId)((0, m.parseUnicodeLocaleId)(k)));
+              u = (0, r.emitUnicodeLocaleId)((0, b.CanonicalizeUnicodeLocaleId)((0, m.parseUnicodeLocaleId)(k)));
             n.indexOf(u) < 0 && n.push(u)
           }
           return n
         }(a)
       };
       var L = t(8322),
-        r = t(7077),
-        b = t(3777),
+        b = t(7077),
+        r = t(3777),
         m = t(3524);
       L.__exportStar(t(3777), n);
       var k = t(3524);
@@ -7987,29 +7987,29 @@ try {
     3777: (a, n, t) => {
       Object.defineProperty(n, "__esModule", {
         value: !0
-      }), n.emitUnicodeLanguageId = r, n.emitUnicodeLocaleId = function(a) {
-        for (var n = a.lang, t = a.extensions, b = [r(n)], m = 0, k = t; m < k.length; m++) {
+      }), n.emitUnicodeLanguageId = b, n.emitUnicodeLocaleId = function(a) {
+        for (var n = a.lang, t = a.extensions, r = [b(n)], m = 0, k = t; m < k.length; m++) {
           var u = k[m];
-          switch (b.push(u.type), u.type) {
+          switch (r.push(u.type), u.type) {
             case "u":
-              b.push.apply(b, L.__spreadArray(L.__spreadArray([], u.attributes, !1), u.keywords.reduce(function(a, n) {
+              r.push.apply(r, L.__spreadArray(L.__spreadArray([], u.attributes, !1), u.keywords.reduce(function(a, n) {
                 return a.concat(n)
               }, []), !1));
               break;
             case "t":
-              b.push.apply(b, L.__spreadArray([r(u.lang)], u.fields.reduce(function(a, n) {
+              r.push.apply(r, L.__spreadArray([b(u.lang)], u.fields.reduce(function(a, n) {
                 return a.concat(n)
               }, []), !1));
               break;
             default:
-              b.push(u.value)
+              r.push(u.value)
           }
         }
-        return b.filter(Boolean).join("-")
+        return r.filter(Boolean).join("-")
       };
       var L = t(8322);
 
-      function r(a) {
+      function b(a) {
         return a ? L.__spreadArray([a.lang, a.script, a.region], a.variants || [], !0).filter(Boolean).join("-") : ""
       }
     },
@@ -8018,12 +8018,12 @@ try {
         value: !0
       });
       var L = t(3618),
-        r = t(1303);
+        b = t(1303);
       "undefined" == typeof Intl && ("undefined" != typeof window ? Object.defineProperty(window, "Intl", {
         value: {}
       }) : void 0 !== t.g && Object.defineProperty(t.g, "Intl", {
         value: {}
-      })), (0, r.shouldPolyfill)() && Object.defineProperty(Intl, "getCanonicalLocales", {
+      })), (0, b.shouldPolyfill)() && Object.defineProperty(Intl, "getCanonicalLocales", {
         value: L.getCanonicalLocales,
         writable: !0,
         enumerable: !1,
@@ -8053,8 +8053,8 @@ try {
         return a
       };
       var L = t(8322),
-        r = t(9832),
-        b = t(3777),
+        b = t(9832),
+        r = t(3777),
         m = t(1727),
         k = t(3524);
 
@@ -8065,9 +8065,9 @@ try {
       }
 
       function s(a) {
-        for (var n = {}, t = [], L = 0, r = a; L < r.length; L++) {
-          var b = r[L];
-          b[0] in n || (n[b[0]] = 1, b[1] && "true" !== b[1] ? t.push([b[0].toLowerCase(), b[1].toLowerCase()]) : t.push([b[0].toLowerCase()]))
+        for (var n = {}, t = [], L = 0, b = a; L < b.length; L++) {
+          var r = b[L];
+          r[0] in n || (n[r[0]] = 1, r[1] && "true" !== r[1] ? t.push([r[0].toLowerCase(), r[1].toLowerCase()]) : t.push([r[0].toLowerCase()]))
         }
         return t.sort(e)
       }
@@ -8081,8 +8081,8 @@ try {
       }
 
       function l(a, n) {
-        for (var t = L.__spreadArray([], a, !0), r = 0, b = n; r < b.length; r++) {
-          var m = b[r];
+        for (var t = L.__spreadArray([], a, !0), b = 0, r = n; b < r.length; b++) {
+          var m = r[b];
           a.indexOf(m) < 0 && t.push(m)
         }
         return t
@@ -8093,7 +8093,7 @@ try {
         if (a.variants.length)
           for (var t = "", L = 0, u = a.variants; L < u.length; L++) {
             var s = u[L];
-            if (t = r.languageAlias[(0, b.emitUnicodeLanguageId)({
+            if (t = b.languageAlias[(0, r.emitUnicodeLanguageId)({
                 lang: a.lang,
                 variants: [s]
               })]) {
@@ -8107,7 +8107,7 @@ try {
             }
           }
         if (n.script && n.region) {
-          var e = r.languageAlias[(0, b.emitUnicodeLanguageId)({
+          var e = b.languageAlias[(0, r.emitUnicodeLanguageId)({
             lang: n.lang,
             script: n.script,
             region: n.region,
@@ -8121,7 +8121,7 @@ try {
           })
         }
         if (n.region) {
-          var i = r.languageAlias[(0, b.emitUnicodeLanguageId)({
+          var i = b.languageAlias[(0, r.emitUnicodeLanguageId)({
             lang: n.lang,
             region: n.region,
             variants: []
@@ -8133,7 +8133,7 @@ try {
             variants: n.variants
           })
         }
-        var d, o = r.languageAlias[(0, b.emitUnicodeLanguageId)({
+        var d, o = b.languageAlias[(0, r.emitUnicodeLanguageId)({
           lang: n.lang,
           variants: []
         })];
@@ -8144,12 +8144,12 @@ try {
             variants: n.variants
           }), n.region) {
           var g = n.region.toUpperCase(),
-            G = r.territoryAlias[g],
+            G = b.territoryAlias[g],
             c = void 0;
           if (G) {
             var p = G.split(" ");
             c = p[0];
-            var h = m.likelySubtags[(0, b.emitUnicodeLanguageId)({
+            var h = m.likelySubtags[(0, r.emitUnicodeLanguageId)({
               lang: n.lang,
               script: n.script,
               variants: []
@@ -8161,10 +8161,10 @@ try {
           }
           c && (n.region = c), n.region = n.region.toUpperCase()
         }
-        if (n.script && (n.script = n.script[0].toUpperCase() + n.script.slice(1).toLowerCase(), r.scriptAlias[n.script] && (n.script = r.scriptAlias[n.script])), n.variants.length) {
+        if (n.script && (n.script = n.script[0].toUpperCase() + n.script.slice(1).toLowerCase(), b.scriptAlias[n.script] && (n.script = b.scriptAlias[n.script])), n.variants.length) {
           for (var w = 0; w < n.variants.length; w++)
-            if (s = n.variants[w].toLowerCase(), r.variantAlias[s]) {
-              var N = r.variantAlias[s];
+            if (s = n.variants[w].toLowerCase(), b.variantAlias[s]) {
+              var N = b.variantAlias[s];
               (0, k.isUnicodeVariantSubtag)(N) ? n.variants[w] = N: (0, k.isUnicodeLanguageSubtag)(N) && (n.lang = N)
             } n.variants.sort()
         }

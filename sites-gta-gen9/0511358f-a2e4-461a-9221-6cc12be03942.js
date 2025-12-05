@@ -18,7 +18,7 @@ try {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => f
       });
       var n = i(62229),
         s = Object.defineProperty,
@@ -30,14 +30,14 @@ try {
         }) : e[t] = i)(e, "symbol" != typeof t ? t + "" : t, i),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function h(e) {
-        l = e
+        d = e
       }
 
-      function c(e, t, i = {}, n = l) {
+      function c(e, t, i = {}, n = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const s = e.getBoundingClientRect();
           return t(n, {
@@ -57,7 +57,7 @@ try {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter(t => void 0 !== e[t]).map(t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(l+=1,a.set(i,l.toString())),a.get(i)):"0"):e[t]}`;
               var i
             }).toString()
           }(e);
@@ -159,21 +159,21 @@ try {
             root: r,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...b
+            ...f
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...f
           }, e)
         }
       };
 
-      function b({
+      function f({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -181,19 +181,19 @@ try {
         root: r,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: h
       } = {}) {
         var u;
-        const [b, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
-          inView: !!d,
+        const [f, b] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
+          inView: !!l,
           entry: void 0
         });
         p.current = h, n.useEffect(() => {
-          if (a || !b) return;
+          if (a || !f) return;
           let n;
-          return n = c(b, (e, t) => {
+          return n = c(f, (e, t) => {
             y({
               inView: e,
               entry: t
@@ -204,17 +204,17 @@ try {
             threshold: e,
             trackVisibility: i,
             delay: t
-          }, l), () => {
+          }, d), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, b, r, s, o, a, i, l, t]);
+        }, [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, d, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        b || !w || o || a || v.current === w || (v.current = w, y({
-          inView: !!d,
+        f || !w || o || a || v.current === w || (v.current = w, y({
+          inView: !!l,
           entry: void 0
         }));
-        const k = [f, g.inView, g.entry];
+        const k = [b, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

@@ -69,8 +69,8 @@ try {
         d = r(4853),
         p = r(9005),
         y = r(5098),
-        b = r.n(y),
-        m = [],
+        m = r.n(y),
+        b = [],
         g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
@@ -78,7 +78,7 @@ try {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || m
+              modifiers: r.modifiers || b
             },
             a = n.useState({
               styles: {
@@ -127,7 +127,7 @@ try {
                   enabled: !1
                 }])
               };
-              return b()(o.current, e) ? o.current || e : (o.current = e, e)
+              return m()(o.current, e) ? o.current || e : (o.current = e, e)
             }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, s]),
             g = n.useRef();
           return l(function() {
@@ -165,10 +165,10 @@ try {
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          b = n.useContext(o),
-          m = n.useState(null),
-          E = m[0],
-          _ = m[1],
+          m = n.useContext(o),
+          b = n.useState(null),
+          E = b[0],
+          _ = b[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -189,7 +189,7 @@ try {
               }])
             }
           }, [r, a, d, c, k]),
-          P = g(l || b, E, O),
+          P = g(l || m, E, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,

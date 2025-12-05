@@ -50,7 +50,7 @@ try {
           className: l()(s, e ? c.fadeIn : "", a ? c.active : ""),
           children: t
         }),
-        b = ({
+        m = ({
           currentSlide: e
         }) => (0, r.jsx)("div", {
           className: c.customPagination,
@@ -58,7 +58,7 @@ try {
             children: e?.itemName ?? "Item"
           })
         }),
-        m = ({
+        b = ({
           item: e,
           vertical: a,
           horizontal: s
@@ -131,15 +131,15 @@ try {
               },
               children: [(0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.top),
-                children: [(0, r.jsx)(m, {
+                children: [(0, r.jsx)(b, {
                   item: i?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
-                }), (0, r.jsx)(m, {
+                }), (0, r.jsx)(b, {
                   item: i?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
-                }), (0, r.jsx)(m, {
+                }), (0, r.jsx)(b, {
                   item: i?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
@@ -153,16 +153,16 @@ try {
                 })
               }, e?.key)), (0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.bottom),
-                children: [(0, r.jsx)(m, {
+                children: [(0, r.jsx)(b, {
                   item: i?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
-                }), (0, r.jsx)(m, {
+                }), (0, r.jsx)(b, {
                   item: i?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
-              }), (0, r.jsx)(b, {
+              }), (0, r.jsx)(m, {
                 currentSlide: i
               })]
             })

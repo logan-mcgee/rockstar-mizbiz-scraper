@@ -153,11 +153,11 @@ try {
         var y = (0, r.CanonicalizeLocaleList)(t),
           p = Object.create(null),
           v = (0, r.CoerceOptionsToObject)(a),
-          m = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        p.localeMatcher = m;
-        var b = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        p.nu = b;
+          b = (0, r.GetOption)(v, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        p.localeMatcher = b;
+        var m = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== m && !o.test(m)) throw new RangeError("Invalid numbering system ".concat(m));
+        p.nu = m;
         var g = (0, n.ResolveLocale)(s, y, p, u, c, f),
           w = g.locale,
           h = g.nu;
@@ -201,14 +201,14 @@ try {
           p = u.numberFormat,
           v = s;
         "short" === f ? v = "".concat(s, "-short") : "narrow" === f && (v = "".concat(s, "-narrow")), v in c || (v = s);
-        var m = c[v];
-        if ("auto" === d && (0, r.ToString)(t) in m) return [{
+        var b = c[v];
+        if ("auto" === d && (0, r.ToString)(t) in b) return [{
           type: "literal",
-          value: m[(0, r.ToString)(t)]
+          value: b[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = m[b],
+        var m = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (m = "past");
+        var g = b[m],
           w = "function" == typeof p.formatToParts ? p.formatToParts(Math.abs(t)) : [{
             type: "literal",
             value: p.format(Math.abs(t)),

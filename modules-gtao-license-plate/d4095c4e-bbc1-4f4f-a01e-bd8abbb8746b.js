@@ -31,7 +31,7 @@ try {
         animated: () => vs,
         config: () => Ut,
         createInterpolator: () => he,
-        easings: () => we,
+        easings: () => be,
         inferTo: () => Tt,
         interpolate: () => ns,
         to: () => ts,
@@ -49,15 +49,15 @@ try {
         useTrail: () => Qn,
         useTransition: () => Nn
       });
-      var s = w(),
+      var s = b(),
         r = e => m(e, s),
-        i = w();
+        i = b();
       r.write = e => m(e, i);
-      var a = w();
+      var a = b();
       r.onStart = e => m(e, a);
-      var o = w();
+      var o = b();
       r.onFrame = e => m(e, o);
-      var u = w();
+      var u = b();
       r.onFinish = e => m(e, u);
       var c = [];
       r.setTimeout = (e, t) => {
@@ -120,10 +120,10 @@ try {
         const e = h;
         h = r.now();
         const t = l(h);
-        t && (b(c.splice(0, t), e => e.handler()), p -= t), p ? (a.flush(), s.flush(e ? Math.min(64, h - e) : 16.667), o.flush(), i.flush(), u.flush()) : h = -1
+        t && (w(c.splice(0, t), e => e.handler()), p -= t), p ? (a.flush(), s.flush(e ? Math.min(64, h - e) : 16.667), o.flush(), i.flush(), u.flush()) : h = -1
       }
 
-      function w() {
+      function b() {
         let e = new Set,
           t = e;
         return {
@@ -132,12 +132,12 @@ try {
           },
           delete: n => (p -= t == e && e.has(n) ? 1 : 0, e.delete(n)),
           flush(n) {
-            t.size && (e = new Set, p -= t.size, b(t, t => t(n) && e.add(t)), p += e.size, t = e)
+            t.size && (e = new Set, p -= t.size, w(t, t => t(n) && e.add(t)), p += e.size, t = e)
           }
         }
       }
 
-      function b(e, t) {
+      function w(e, t) {
         e.forEach(e => {
           try {
             t(e)
@@ -349,7 +349,7 @@ try {
             n = 2.75;
           return e < 1 / n ? t * e * e : e < 2 / n ? t * (e -= 1.5 / n) * e + .75 : e < 2.5 / n ? t * (e -= 2.25 / n) * e + .9375 : t * (e -= 2.625 / n) * e + .984375
         },
-        we = {
+        be = {
           linear: e => e,
           easeInQuad: e => e * e,
           easeOutQuad: e => 1 - (1 - e) * (1 - e),
@@ -387,10 +387,10 @@ try {
             var r
           }
         },
-        be = Symbol.for("FluidValue.get"),
+        we = Symbol.for("FluidValue.get"),
         _e = Symbol.for("FluidValue.observers"),
-        ke = e => Boolean(e && e[be]),
-        xe = e => e && e[be] ? e[be]() : e,
+        ke = e => Boolean(e && e[we]),
+        xe = e => e && e[we] ? e[we]() : e,
         Me = e => e[_e] || null;
 
       function Ie(e, t) {
@@ -407,10 +407,10 @@ try {
             Pe(this, e)
           }
         },
-        Pe = (e, t) => Ce(e, be, t);
+        Pe = (e, t) => Ce(e, we, t);
 
       function Ae(e, t) {
-        if (e[be]) {
+        if (e[we]) {
           let n = e[_e];
           n || Ce(e, _e, n = new Set), n.has(t) || (n.add(t), e.observerAdded && e.observerAdded(n.size, t))
         }
@@ -665,10 +665,10 @@ try {
             })), this._value = 0, super.reset()
           }
         },
-        wt = {
+        bt = {
           dependencies: null
         },
-        bt = class extends gt {
+        wt = class extends gt {
           constructor(e) {
             super(), this.source = e, this.setValue(e)
           }
@@ -692,12 +692,12 @@ try {
             }
           }
           _addToPayload(e) {
-            wt.dependencies && ke(e) && wt.dependencies.add(e);
+            bt.dependencies && ke(e) && bt.dependencies.add(e);
             const t = mt(e);
             t && P(t, e => this.add(e))
           }
         },
-        _t = class e extends bt {
+        _t = class e extends wt {
           constructor(e) {
             super(e)
           }
@@ -732,10 +732,10 @@ try {
               }, [i]),
               [u, c] = function(e, t) {
                 const n = new Set;
-                return wt.dependencies = n, e.style && (e = {
+                return bt.dependencies = n, e.style && (e = {
                   ...e,
                   style: t.createAnimatedStyle(e.style)
-                }), e = new bt(e), wt.dependencies = null, [e, n]
+                }), e = new wt(e), bt.dependencies = null, [e, n]
               }(s, t),
               l = ot(),
               d = () => {
@@ -926,7 +926,7 @@ try {
           ...Ut.default,
           mass: 1,
           damping: 1,
-          easing: we.linear,
+          easing: be.linear,
           clamp: !1
         },
         Wt = class {
@@ -1373,38 +1373,38 @@ try {
               } = e;
               I.und(s) || (s < .01 && (s = .01), r < 0 && (r = 0), e.tension = Math.pow(2 * Math.PI / s, 2) * i, e.friction = 4 * Math.PI * r * i / s)
             }(g, Et(t.config, a), t.config !== o.config ? Et(o.config, a) : void 0);
-            let w = pt(this);
-            if (!w || I.und(d)) return n(Kt(this, !0));
-            const b = I.und(t.reset) ? i && !t.default : !I.und(h) && Ot(t.reset, a),
-              _ = b ? h : this.get(),
+            let b = pt(this);
+            if (!b || I.und(d)) return n(Kt(this, !0));
+            const w = I.und(t.reset) ? i && !t.default : !I.und(h) && Ot(t.reset, a),
+              _ = w ? h : this.get(),
               k = $t(d),
               x = I.num(k) || I.arr(k) || Ge(k),
               M = !m && (!x || Ot(o.immediate || t.immediate, a));
             if (f) {
               const e = xt(d);
-              if (e !== w.constructor) {
-                if (!M) throw Error(`Cannot animate between ${w.constructor.name} and ${e.name}, as the "to" prop suggests`);
-                w = this._set(k)
+              if (e !== b.constructor) {
+                if (!M) throw Error(`Cannot animate between ${b.constructor.name} and ${e.name}, as the "to" prop suggests`);
+                b = this._set(k)
               }
             }
-            const A = w.constructor;
+            const A = b.constructor;
             let O = ke(d),
               C = !1;
             if (!O) {
-              const e = b || !ln(this) && p;
+              const e = w || !ln(this) && p;
               (f || e) && (C = S($t(_), k), O = !C), (S(u.immediate, M) || M) && S(g.decay, y) && S(g.velocity, v) || (O = !0)
             }
-            if (C && dn(this) && (u.changed && !b ? O = !0 : O || this._stop(c)), !m && ((O || ke(c)) && (u.values = w.getPayload(), u.toValues = ke(d) ? null : A == vt ? [1] : E(k)), u.immediate != M && (u.immediate = M, M || b || this._set(c)), O)) {
+            if (C && dn(this) && (u.changed && !w ? O = !0 : O || this._stop(c)), !m && ((O || ke(c)) && (u.values = b.getPayload(), u.toValues = ke(d) ? null : A == vt ? [1] : E(k)), u.immediate != M && (u.immediate = M, M || w || this._set(c)), O)) {
               const {
                 onRest: e
               } = u;
               P(_n, e => kn(this, t, e));
               const s = Kt(this, gn(this, c));
               V(this._pendingCalls, s), this._pendingCalls.add(n), u.changed && r.batchedUpdates(() => {
-                u.changed = !b, e?.(s, this), b ? Et(o.onRest, s) : u.onStart?.(s, this)
+                u.changed = !w, e?.(s, this), w ? Et(o.onRest, s) : u.onStart?.(s, this)
               })
             }
-            b && this._set(_), m ? n(tn(t.to, t, this._state, this)) : O ? this._start() : dn(this) && !f ? this._pendingCalls.add(n) : n(Jt(_))
+            w && this._set(_), m ? n(tn(t.to, t, this._state, this)) : O ? this._start() : dn(this) && !f ? this._pendingCalls.add(n) : n(Jt(_))
           }
           _focus(e) {
             const t = this.animation;
@@ -1495,15 +1495,15 @@ try {
           to: t,
           from: n
         } = e = Tt(e), s = new Set;
-        return I.obj(t) && bn(t, s), I.obj(n) && bn(n, s), e.keys = s.size ? Array.from(s) : null, e
+        return I.obj(t) && wn(t, s), I.obj(n) && wn(n, s), e.keys = s.size ? Array.from(s) : null, e
       }
 
-      function wn(e) {
+      function bn(e) {
         const t = vn(e);
         return I.und(t.default) && (t.default = jt(t)), t
       }
 
-      function bn(e, t) {
+      function wn(e, t) {
         A(e, (e, n) => null != e && t.add(n))
       }
       var _n = ["onStart", "onRest", "onChange", "onPause", "onResume"];
@@ -1785,7 +1785,7 @@ try {
           for (let r = e; r < n; r++) {
             const e = u.current[r] || (u.current[r] = new Sn(null, o.flush)),
               n = s ? s(r, e) : t[r];
-            n && (c.current[r] = wn(n))
+            n && (c.current[r] = bn(n))
           }
         }(0, _.useMemo)(() => {
           P(u.current.slice(e, l), e => {
@@ -1915,9 +1915,9 @@ try {
         }) => {
           Qt(e, h), Et(c, t, n)
         }));
-        const w = [];
+        const b = [];
         if (g && P(g, (e, t) => {
-            e.expired ? (clearTimeout(e.expirationId), v.push(e)) : ~(t = w[t] = y.indexOf(e.key)) && (f[t] = e)
+            e.expired ? (clearTimeout(e.expirationId), v.push(e)) : ~(t = b[t] = y.indexOf(e.key)) && (f[t] = e)
           }), P(p, (e, t) => {
             f[t] || (f[t] = {
               key: y[t],
@@ -1925,12 +1925,12 @@ try {
               phase: "mount",
               ctrl: new Sn
             }, f[t].ctrl.item = e)
-          }), w.length) {
+          }), b.length) {
           let e = -1;
           const {
             leave: n
           } = s ? s() : t;
-          P(w, (t, s) => {
+          P(b, (t, s) => {
             const r = g[s];
             ~t ? (e = f.indexOf(r), f[e] = {
               ...r,
@@ -1939,7 +1939,7 @@ try {
           })
         }
         I.fun(i) && f.sort((e, t) => i(e.item, t.item));
-        let b = -a;
+        let w = -a;
         const k = ot(),
           x = jt(t),
           M = new Map,
@@ -1971,10 +1971,10 @@ try {
             const t = d || x.config;
             h.config = Et(t, e.item, n, p)
           }
-          b += a;
+          w += a;
           const v = {
             ...x,
-            delay: f + b,
+            delay: f + w,
             ref: l,
             immediate: c.immediate,
             reset: !1,
@@ -1986,10 +1986,10 @@ try {
             v.from = Et(i, e.item, n)
           }
           const {
-            onResolve: w
+            onResolve: b
           } = v;
           v.onResolve = e => {
-            Et(w, e);
+            Et(b, e);
             const t = m.current,
               n = t.find(e => e.key === r);
             if (n && (!e.cancelled || "update" == n.phase) && n.ctrl.idle) {
@@ -2327,7 +2327,7 @@ try {
         hs = /^(rotate|skew)/,
         ps = (e, t) => I.num(e) && 0 !== e ? e + t : e,
         fs = (e, t) => I.arr(e) ? e.every(e => fs(e, t)) : I.num(e) ? e === t : parseFloat(e) === t,
-        ms = class extends bt {
+        ms = class extends wt {
           constructor({
             x: e,
             y: t,
@@ -2530,7 +2530,7 @@ try {
       });
       var ys = ((e, {
           applyAnimatedValues: t = () => !1,
-          createAnimatedStyle: n = e => new bt(e),
+          createAnimatedStyle: n = e => new wt(e),
           getComponentProps: s = e => e
         } = {}) => {
           const r = {

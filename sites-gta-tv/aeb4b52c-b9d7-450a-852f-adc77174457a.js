@@ -32,16 +32,16 @@ try {
         var i = n.availableLocales,
           o = n.relevantExtensionKeys,
           u = n.localeData,
-          c = n.getDefaultLocale,
-          s = n.getInternalSlots,
+          s = n.getDefaultLocale,
+          c = n.getInternalSlots,
           d = (0, l.CanonicalizeLocaleList)(t),
           f = Object.create(null),
           b = (0, l.CoerceOptionsToObject)(a),
-          g = s(e);
+          g = c(e);
         g.initializedPluralRules = !0;
         var p = (0, l.GetOption)(b, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
         f.localeMatcher = p;
-        var v = (0, r.ResolveLocale)(i, d, f, o, u, c);
+        var v = (0, r.ResolveLocale)(i, d, f, o, u, s);
         return g.locale = v.locale, g.type = (0, l.GetOption)(b, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, l.SetNumberFormatDigitOptions)(g, b, 0, 3, "standard"), e
       };
       var l = a(2306),
@@ -65,19 +65,19 @@ try {
         (0, l.invariant)(t.isFinite(), "n should be finite");
         var a, r, n, i = e.indexOf("."),
           o = ""; - 1 === i ? (a = t, r = l.ZERO, n = 0) : (a = e.slice(0, i), o = e.slice(i, e.length), r = (0, l.ToNumber)(o), n = o.length);
-        var u, c, s = (0, l.ToNumber)(a).abs();
-        if (r.isZero()) u = 0, c = l.ZERO;
+        var u, s, c = (0, l.ToNumber)(a).abs();
+        if (r.isZero()) u = 0, s = l.ZERO;
         else {
           var d = o.replace(/0+$/, "");
-          u = d.length, c = (0, l.ToNumber)(d)
+          u = d.length, s = (0, l.ToNumber)(d)
         }
         return {
           Number: t,
-          IntegerDigits: s.toNumber(),
+          IntegerDigits: c.toNumber(),
           NumberOfFractionDigits: n,
           NumberOfFractionDigitsWithoutTrailing: u,
           FractionDigits: r.toNumber(),
-          FractionDigitsWithoutTrailing: c.toNumber()
+          FractionDigitsWithoutTrailing: s.toNumber()
         }
       };
       var l = a(2306)
@@ -91,9 +91,9 @@ try {
           o = n(e);
         if ((0, l.invariant)("Object" === (0, l.Type)(o), "pl has to be an object"), (0, l.invariant)("initializedPluralRules" in o, "pluralrules must be initialized"), !t.isFinite()) return "other";
         var u = o.locale,
-          c = o.type,
-          s = (0, l.FormatNumericToString)(o, t).formattedString;
-        return i(u, c, t, (0, r.GetOperands)(s))
+          s = o.type,
+          c = (0, l.FormatNumericToString)(o, t).formattedString;
+        return i(u, s, t, (0, r.GetOperands)(c))
       };
       var l = a(2306),
         r = a(7663)
@@ -109,16 +109,16 @@ try {
         o = l.__importDefault(a(6618));
 
       function u(e, t) {
-        if (!(e instanceof s)) throw new TypeError("Method Intl.PluralRules.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof c)) throw new TypeError("Method Intl.PluralRules.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
-      function c(e, t, a, l) {
+      function s(e, t, a, l) {
         var r = l.IntegerDigits,
           n = l.NumberOfFractionDigits,
           i = l.FractionDigits;
-        return s.localeData[e].fn(n ? "".concat(r, ".").concat(i) : r, "ordinal" === t)
+        return c.localeData[e].fn(n ? "".concat(r, ".").concat(i) : r, "ordinal" === t)
       }
-      var s = function() {
+      var c = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.PluralRules must be called with 'new'");
           return (0, n.InitializePluralRules)(this, t, a, {
@@ -142,7 +142,7 @@ try {
           var t = (0, r.ToNumber)(e);
           return (0, i.ResolvePlural)(this, t, {
             getInternalSlots: o.default,
-            PluralRuleSelect: c
+            PluralRuleSelect: s
           })
         }, e.prototype.toString = function() {
           return "[object Intl.PluralRules]"
@@ -160,33 +160,33 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e
       }();
-      t.PluralRules = s;
+      t.PluralRules = c;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(s.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(c.prototype, Symbol.toStringTag, {
           value: "Intl.PluralRules",
           writable: !1,
           enumerable: !1,
           configurable: !0
         });
         try {
-          Object.defineProperty(s, "length", {
+          Object.defineProperty(c, "length", {
             value: 0,
             writable: !1,
             enumerable: !1,
             configurable: !0
           })
         } catch (e) {}
-        Object.defineProperty(s.prototype.constructor, "length", {
+        Object.defineProperty(c.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(s.supportedLocalesOf, "length", {
+        }), Object.defineProperty(c.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(s, "name", {
+        }), Object.defineProperty(c, "name", {
           value: "PluralRules",
           writable: !1,
           enumerable: !1,

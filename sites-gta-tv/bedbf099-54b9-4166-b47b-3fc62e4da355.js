@@ -78,25 +78,25 @@ try {
             r.localeMatcher = s;
             var d = (0, o.ResolveLocale)(Array.from(e.availableLocales), l, r, [], e.localeData, e.getDefaultLocale),
               c = (0, n.GetOption)(t, "style", "string", ["narrow", "short", "long"], "long");
-            f(this, "style", c);
-            var u = (0, n.GetOption)(t, "type", "string", ["language", "region", "script", "currency", "calendar", "dateTimeField"], void 0);
-            if (void 0 === u) throw TypeError('Intl.DisplayNames constructor requires "type" option');
-            f(this, "type", u), f(this, "fallback", (0, n.GetOption)(t, "fallback", "string", ["code", "none"], "code")), f(this, "locale", d.locale);
+            u(this, "style", c);
+            var f = (0, n.GetOption)(t, "type", "string", ["language", "region", "script", "currency", "calendar", "dateTimeField"], void 0);
+            if (void 0 === f) throw TypeError('Intl.DisplayNames constructor requires "type" option');
+            u(this, "type", f), u(this, "fallback", (0, n.GetOption)(t, "fallback", "string", ["code", "none"], "code")), u(this, "locale", d.locale);
             var p = d.dataLocale,
               g = i[p];
-            (0, n.invariant)(!!g, "Missing locale data for ".concat(p)), f(this, "localeData", g), (0, n.invariant)(void 0 !== g, "locale data for ".concat(d.locale, " does not exist."));
+            (0, n.invariant)(!!g, "Missing locale data for ".concat(p)), u(this, "localeData", g), (0, n.invariant)(void 0 !== g, "locale data for ".concat(d.locale, " does not exist."));
             var y = g.types;
             (0, n.invariant)("object" == typeof y && null != y, "invalid types data");
-            var v = y[u];
-            (0, n.invariant)("object" == typeof v && null != v, "invalid typeFields data");
-            var b = (0, n.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
-            if ("language" === u) {
-              f(this, "languageDisplay", b);
-              var h = y[u][b];
+            var b = y[f];
+            (0, n.invariant)("object" == typeof b && null != b, "invalid typeFields data");
+            var v = (0, n.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
+            if ("language" === f) {
+              u(this, "languageDisplay", v);
+              var h = y[f][v];
               (0, n.invariant)("object" == typeof h && null != h, "invalid language typeFields data")
             }
-            var w = "language" === u ? y[u][b][c] : y[u][c];
-            (0, n.invariant)("object" == typeof w && null != w, "invalid styleFields data"), f(this, "fields", w)
+            var w = "language" === f ? y[f][v][c] : y[f][c];
+            (0, n.invariant)("object" == typeof w && null != w, "invalid styleFields data"), u(this, "fields", w)
           }
           return e.supportedLocalesOf = function(a, t) {
             return (0, n.SupportedLocales)(e.availableLocales, (0, n.CanonicalizeLocaleList)(a), t)
@@ -110,7 +110,7 @@ try {
               e.localeData[o] = e.localeData[s] = i, e.availableLocales.add(s), e.availableLocales.add(o), e.__defaultLocale || (e.__defaultLocale = s)
             }
           }, e.prototype.of = function(e) {
-            u(this, "of");
+            f(this, "of");
             var a = c(this, "type"),
               t = (0, n.ToString)(e);
             if (! function(e, a) {
@@ -131,7 +131,7 @@ try {
               }(a, t)) throw RangeError("invalid code for Intl.DisplayNames.prototype.of");
             var l, o = (0, n.getMultiInternalSlots)(d, this, "localeData", "style", "fallback"),
               s = o.localeData,
-              f = o.style,
+              u = o.style,
               p = o.fallback,
               g = (0, r.CanonicalCodeForDisplayNames)(a, t);
             if ("language" === a) l = function(e, a, t, l, n) {
@@ -144,18 +144,18 @@ try {
                   d = o[1],
                   c = r[t][s] || r.long[s];
                 if (void 0 === c || !d) return c;
-                var f = a.types.region,
-                  u = f[t][d] || f.long[d];
-                if (u || "code" === n) return a.patterns.locale.replace("{0}", c).replace("{1}", u || d)
+                var u = a.types.region,
+                  f = u[t][d] || u.long[d];
+                if (f || "code" === n) return a.patterns.locale.replace("{0}", c).replace("{1}", f || d)
               }
-            }(c(this, "languageDisplay"), s, f, g, p);
+            }(c(this, "languageDisplay"), s, u, g, p);
             else {
               var y = s.types[a];
-              l = y[f][g] || y.long[g]
+              l = y[u][g] || y.long[g]
             }
             return void 0 !== l ? l : "code" === p ? t : void 0
           }, e.prototype.resolvedOptions = function() {
-            return u(this, "resolvedOptions"), l.__assign({}, (0, n.getMultiInternalSlots)(d, this, "locale", "style", "type", "fallback", "languageDisplay"))
+            return f(this, "resolvedOptions"), l.__assign({}, (0, n.getMultiInternalSlots)(d, this, "locale", "style", "type", "fallback", "languageDisplay"))
           }, e.getDefaultLocale = function() {
             return e.__defaultLocale
           }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.polyfilled = !0, e
@@ -180,11 +180,11 @@ try {
         return (0, n.getInternalSlot)(d, e, a)
       }
 
-      function f(e, a, t) {
+      function u(e, a, t) {
         (0, n.setInternalSlot)(d, e, a, t)
       }
 
-      function u(e, a) {
+      function f(e, a) {
         if (!(e instanceof s)) throw TypeError("Method Intl.DisplayNames.prototype.".concat(a, " called on incompatible receiver"))
       }
     },
