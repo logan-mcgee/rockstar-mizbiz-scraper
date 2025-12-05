@@ -21,11 +21,11 @@ try {
       var o = n(71127),
         r = n(95362),
         u = n(78004),
-        c = n(76286),
-        s = n(42295),
+        s = n(76286),
+        c = n(42295),
         d = "focusScope.autoFocusOnMount",
-        a = "focusScope.autoFocusOnUnmount",
-        i = {
+        i = "focusScope.autoFocusOnUnmount",
+        a = {
           bubbles: !1,
           cancelable: !0
         },
@@ -34,9 +34,9 @@ try {
             loop: n = !1,
             trapped: f = !1,
             onMountAutoFocus: m,
-            onUnmountAutoFocus: b,
+            onUnmountAutoFocus: y,
             ...E
-          } = e, [h, g] = o.useState(null), w = (0, c.c)(m), T = (0, c.c)(b), _ = o.useRef(null), N = (0, r.s)(t, e => g(e)), S = o.useRef({
+          } = e, [h, g] = o.useState(null), w = (0, s.c)(m), T = (0, s.c)(y), _ = o.useRef(null), N = (0, r.s)(t, e => g(e)), S = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -76,10 +76,10 @@ try {
             }
           }, [f, h, S.paused]), o.useEffect(() => {
             if (h) {
-              y.add(S);
+              b.add(S);
               const e = document.activeElement;
               if (!h.contains(e)) {
-                const t = new CustomEvent(d, i);
+                const t = new CustomEvent(d, a);
                 h.addEventListener(d, w), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
@@ -94,10 +94,10 @@ try {
               }
               return () => {
                 h.removeEventListener(d, w), setTimeout(() => {
-                  const t = new CustomEvent(a, i);
-                  h.addEventListener(a, T), h.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
+                  const t = new CustomEvent(i, a);
+                  h.addEventListener(i, T), h.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
                     select: !0
-                  }), h.removeEventListener(a, T), y.remove(S)
+                  }), h.removeEventListener(i, T), b.remove(S)
                 }, 0)
               }
             }
@@ -120,7 +120,7 @@ try {
               })) : o === t && e.preventDefault()
             }
           }, [n, f, S.paused]);
-          return (0, s.jsx)(u.sG.div, {
+          return (0, c.jsx)(u.sG.div, {
             tabIndex: -1,
             ...E,
             ref: N,
@@ -172,20 +172,20 @@ try {
         }
       }
       f.displayName = "FocusScope";
-      var y = function() {
+      var b = function() {
         let e = [];
         return {
           add(t) {
             const n = e[0];
-            t !== n && n?.pause(), e = b(e, t), e.unshift(t)
+            t !== n && n?.pause(), e = y(e, t), e.unshift(t)
           },
           remove(t) {
-            e = b(e, t), e[0]?.resume()
+            e = y(e, t), e[0]?.resume()
           }
         }
       }();
 
-      function b(e, t) {
+      function y(e, t) {
         const n = [...e],
           o = n.indexOf(t);
         return -1 !== o && n.splice(o, 1), n
@@ -208,20 +208,20 @@ try {
     78004: (e, t, n) => {
       n.d(t, {
         hO: () => d,
-        sG: () => s
+        sG: () => c
       });
       var o = n(71127),
         r = n(31062),
         u = n(21222),
-        c = n(42295),
-        s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, t) => {
+        s = n(42295),
+        c = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, t) => {
           const n = (0, u.createSlot)(`Primitive.${t}`),
             r = o.forwardRef((e, o) => {
               const {
                 asChild: r,
                 ...u
-              } = e, s = r ? n : t;
-              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, c.jsx)(s, {
+              } = e, c = r ? n : t;
+              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(c, {
                 ...u,
                 ref: o
               })
@@ -238,7 +238,7 @@ try {
     },
     95362: (e, t, n) => {
       n.d(t, {
-        s: () => c,
+        s: () => s,
         t: () => u
       });
       var o = n(71127);
@@ -264,7 +264,7 @@ try {
         }
       }
 
-      function c(...e) {
+      function s(...e) {
         return o.useCallback(u(...e), e)
       }
     }

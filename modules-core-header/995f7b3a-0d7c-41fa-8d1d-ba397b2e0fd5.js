@@ -13,18 +13,18 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [1436, 2295, 4676, 7533, 9055], {
-    42295: (e, d, a) => {
-      e.exports = a(69245)
+    42295: (e, d, r) => {
+      e.exports = r(69245)
     },
-    69055: (e, d, a) => {
-      a.r(d), a.d(d, {
-        Root: () => f,
+    69055: (e, d, r) => {
+      r.r(d), r.d(d, {
+        Root: () => l,
         VISUALLY_HIDDEN_STYLES: () => n,
         VisuallyHidden: () => s
       });
-      var r = a(71127),
-        o = a(78004),
-        t = a(42295),
+      var o = r(71127),
+        a = r(78004),
+        t = r(42295),
         n = Object.freeze({
           position: "absolute",
           border: 0,
@@ -37,7 +37,7 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        s = r.forwardRef((e, d) => (0, t.jsx)(o.sG.span, {
+        s = o.forwardRef((e, d) => (0, t.jsx)(a.sG.span, {
           ...e,
           ref: d,
           style: {
@@ -46,68 +46,68 @@ try {
           }
         }));
       s.displayName = "VisuallyHidden";
-      var f = s
+      var l = s
     },
-    69245: (e, d, a) => {
-      var r = a(71127),
-        o = Symbol.for("react.element"),
+    69245: (e, d, r) => {
+      var o = r(71127),
+        a = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        s = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, d, a) {
-        var r, t = {},
-          l = null,
+      function f(e, d, r) {
+        var o, t = {},
+          f = null,
           i = null;
-        for (r in void 0 !== a && (l = "" + a), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (i = d.ref), d) n.call(d, r) && !f.hasOwnProperty(r) && (t[r] = d[r]);
+        for (o in void 0 !== r && (f = "" + r), void 0 !== d.key && (f = "" + d.key), void 0 !== d.ref && (i = d.ref), d) n.call(d, o) && !l.hasOwnProperty(o) && (t[o] = d[o]);
         if (e && e.defaultProps)
-          for (r in d = e.defaultProps) void 0 === t[r] && (t[r] = d[r]);
+          for (o in d = e.defaultProps) void 0 === t[o] && (t[o] = d[o]);
         return {
-          $$typeof: o,
+          $$typeof: a,
           type: e,
-          key: l,
+          key: f,
           ref: i,
           props: t,
           _owner: s.current
         }
       }
-      d.Fragment = t, d.jsx = l, d.jsxs = l
+      d.Fragment = t, d.jsx = f, d.jsxs = f
     },
-    78004: (e, d, a) => {
-      a.d(d, {
-        hO: () => f,
+    78004: (e, d, r) => {
+      r.d(d, {
+        hO: () => l,
         sG: () => s
       });
-      var r = a(71127),
-        o = a(31062),
-        t = a(21222),
-        n = a(42295),
+      var o = r(71127),
+        a = r(31062),
+        t = r(21222),
+        n = r(42295),
         s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, d) => {
-          const a = (0, t.createSlot)(`Primitive.${d}`),
-            o = r.forwardRef((e, r) => {
+          const r = (0, t.createSlot)(`Primitive.${d}`),
+            a = o.forwardRef((e, o) => {
               const {
-                asChild: o,
+                asChild: a,
                 ...t
-              } = e, s = o ? a : d;
+              } = e, s = a ? r : d;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(s, {
                 ...t,
-                ref: r
+                ref: o
               })
             });
-          return o.displayName = `Primitive.${d}`, {
+          return a.displayName = `Primitive.${d}`, {
             ...e,
-            [d]: o
+            [d]: a
           }
         }, {});
 
-      function f(e, d) {
-        e && o.flushSync(() => e.dispatchEvent(d))
+      function l(e, d) {
+        e && a.flushSync(() => e.dispatchEvent(d))
       }
     }
   }

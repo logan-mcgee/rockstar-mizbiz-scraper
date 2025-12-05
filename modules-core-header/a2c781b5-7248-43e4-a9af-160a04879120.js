@@ -167,10 +167,10 @@ try {
         y = o(19690),
         m = o(94926),
         h = o(21222),
-        _ = o(42295),
-        b = "Dialog",
-        [D, v] = (0, i.A)(b),
-        [w, R] = D(b),
+        b = o(42295),
+        _ = "Dialog",
+        [D, v] = (0, i.A)(_),
+        [w, R] = D(_),
         E = e => {
           const {
             __scopeDialog: t,
@@ -183,9 +183,9 @@ try {
             prop: r,
             defaultProp: a ?? !1,
             onChange: i,
-            caller: b
+            caller: _
           });
-          return (0, _.jsx)(w, {
+          return (0, b.jsx)(w, {
             scope: t,
             triggerRef: d,
             contentRef: u,
@@ -199,14 +199,14 @@ try {
             children: o
           })
         };
-      E.displayName = b;
+      E.displayName = _;
       var x = "DialogTrigger",
         A = n.forwardRef((e, t) => {
           const {
             __scopeDialog: o,
             ...n
           } = e, i = R(x, o), s = (0, a.s)(t, i.triggerRef);
-          return (0, _.jsx)(p.sG.button, {
+          return (0, b.jsx)(p.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": i.open,
@@ -229,12 +229,12 @@ try {
             children: r,
             container: a
           } = e, i = R(C, t);
-          return (0, _.jsx)(I, {
+          return (0, b.jsx)(I, {
             scope: t,
             forceMount: o,
-            children: n.Children.map(r, e => (0, _.jsx)(f.C, {
+            children: n.Children.map(r, e => (0, b.jsx)(f.C, {
               present: o || i.open,
-              children: (0, _.jsx)(u.Portal, {
+              children: (0, b.jsx)(u.Portal, {
                 asChild: !0,
                 container: a,
                 children: e
@@ -251,9 +251,9 @@ try {
               ...r
             } = e,
             a = R(k, e.__scopeDialog);
-          return a.modal ? (0, _.jsx)(f.C, {
+          return a.modal ? (0, b.jsx)(f.C, {
             present: n || a.open,
-            children: (0, _.jsx)(S, {
+            children: (0, b.jsx)(S, {
               ...r,
               ref: t
             })
@@ -266,11 +266,11 @@ try {
             __scopeDialog: o,
             ...n
           } = e, r = R(k, o);
-          return (0, _.jsx)(y.RemoveScroll, {
+          return (0, b.jsx)(y.RemoveScroll, {
             as: N,
             allowPinchZoom: !0,
             shards: [r.contentRef],
-            children: (0, _.jsx)(p.sG.div, {
+            children: (0, b.jsx)(p.sG.div, {
               "data-state": Y(r.open),
               ...n,
               ref: t,
@@ -289,12 +289,12 @@ try {
               ...r
             } = e,
             a = R(F, e.__scopeDialog);
-          return (0, _.jsx)(f.C, {
+          return (0, b.jsx)(f.C, {
             present: n || a.open,
-            children: a.modal ? (0, _.jsx)(P, {
+            children: a.modal ? (0, b.jsx)(P, {
               ...r,
               ref: t
-            }) : (0, _.jsx)(W, {
+            }) : (0, b.jsx)(W, {
               ...r,
               ref: t
             })
@@ -308,7 +308,7 @@ try {
           return n.useEffect(() => {
             const e = i.current;
             if (e) return (0, m.Eq)(e)
-          }, []), (0, _.jsx)(q, {
+          }, []), (0, b.jsx)(q, {
             ...e,
             ref: s,
             trapFocus: o.open,
@@ -328,7 +328,7 @@ try {
           const o = R(F, e.__scopeDialog),
             r = n.useRef(!1),
             a = n.useRef(!1);
-          return (0, _.jsx)(q, {
+          return (0, b.jsx)(q, {
             ...e,
             ref: t,
             trapFocus: !1,
@@ -352,14 +352,14 @@ try {
             onCloseAutoFocus: s,
             ...l
           } = e, u = R(F, o), f = n.useRef(null), p = (0, a.s)(t, f);
-          return (0, g.Oh)(), (0, _.jsxs)(_.Fragment, {
-            children: [(0, _.jsx)(d.FocusScope, {
+          return (0, g.Oh)(), (0, b.jsxs)(b.Fragment, {
+            children: [(0, b.jsx)(d.FocusScope, {
               asChild: !0,
               loop: !0,
               trapped: r,
               onMountAutoFocus: i,
               onUnmountAutoFocus: s,
-              children: (0, _.jsx)(c.qW, {
+              children: (0, b.jsx)(c.qW, {
                 role: "dialog",
                 id: u.contentId,
                 "aria-describedby": u.descriptionId,
@@ -369,10 +369,10 @@ try {
                 ref: p,
                 onDismiss: () => u.onOpenChange(!1)
               })
-            }), (0, _.jsxs)(_.Fragment, {
-              children: [(0, _.jsx)(z, {
+            }), (0, b.jsxs)(b.Fragment, {
+              children: [(0, b.jsx)(z, {
                 titleId: u.titleId
-              }), (0, _.jsx)(J, {
+              }), (0, b.jsx)(J, {
                 contentRef: f,
                 descriptionId: u.descriptionId
               })]
@@ -385,7 +385,7 @@ try {
             __scopeDialog: o,
             ...n
           } = e, r = R($, o);
-          return (0, _.jsx)(p.sG.h2, {
+          return (0, b.jsx)(p.sG.h2, {
             id: r.titleId,
             ...n,
             ref: t
@@ -398,7 +398,7 @@ try {
             __scopeDialog: o,
             ...n
           } = e, r = R(G, o);
-          return (0, _.jsx)(p.sG.p, {
+          return (0, b.jsx)(p.sG.p, {
             id: r.descriptionId,
             ...n,
             ref: t
@@ -411,7 +411,7 @@ try {
             __scopeDialog: o,
             ...n
           } = e, a = R(L, o);
-          return (0, _.jsx)(p.sG.button, {
+          return (0, b.jsx)(p.sG.button, {
             type: "button",
             ...n,
             ref: t,
