@@ -65,9 +65,9 @@ try {
             loop: n = !1,
             trapped: f = !1,
             onMountAutoFocus: m,
-            onUnmountAutoFocus: b,
+            onUnmountAutoFocus: y,
             ...E
-          } = e, [_, h] = o.useState(null), g = (0, s.c)(m), w = (0, s.c)(b), T = o.useRef(null), S = (0, r.s)(t, e => h(e)), k = o.useRef({
+          } = e, [_, h] = o.useState(null), g = (0, s.c)(m), w = (0, s.c)(y), T = o.useRef(null), S = (0, r.s)(t, e => h(e)), k = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -81,20 +81,20 @@ try {
               let e = function(e) {
                   if (k.paused || !_) return;
                   const t = e.target;
-                  _.contains(t) ? T.current = t : v(T.current, {
+                  _.contains(t) ? T.current = t : b(T.current, {
                     select: !0
                   })
                 },
                 t = function(e) {
                   if (k.paused || !_) return;
                   const t = e.relatedTarget;
-                  null !== t && (_.contains(t) || v(T.current, {
+                  null !== t && (_.contains(t) || b(T.current, {
                     select: !0
                   }))
                 },
                 n = function(e) {
                   if (document.activeElement === document.body)
-                    for (const t of e) t.removedNodes.length > 0 && v(_)
+                    for (const t of e) t.removedNodes.length > 0 && b(_)
                 };
               document.addEventListener("focusin", e), document.addEventListener("focusout", t);
               const o = new MutationObserver(n);
@@ -107,7 +107,7 @@ try {
             }
           }, [f, _, k.paused]), o.useEffect(() => {
             if (_) {
-              y.add(k);
+              v.add(k);
               const e = document.activeElement;
               if (!_.contains(e)) {
                 const t = new CustomEvent(d, a);
@@ -116,19 +116,19 @@ try {
                 } = {}) {
                   const n = document.activeElement;
                   for (const o of e)
-                    if (v(o, {
+                    if (b(o, {
                         select: t
                       }), document.activeElement !== n) return
                 }(l(_).filter(e => "A" !== e.tagName), {
                   select: !0
-                }), document.activeElement === e && v(_))
+                }), document.activeElement === e && b(_))
               }
               return () => {
                 _.removeEventListener(d, g), setTimeout(() => {
                   const t = new CustomEvent(i, a);
-                  _.addEventListener(i, w), _.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
+                  _.addEventListener(i, w), _.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
                     select: !0
-                  }), _.removeEventListener(i, w), y.remove(k)
+                  }), _.removeEventListener(i, w), v.remove(k)
                 }, 0)
               }
             }
@@ -144,9 +144,9 @@ try {
                   const t = l(e);
                   return [p(t, e), p(t.reverse(), e)]
                 }(t);
-              r && u ? e.shiftKey || o !== u ? e.shiftKey && o === r && (e.preventDefault(), n && v(u, {
+              r && u ? e.shiftKey || o !== u ? e.shiftKey && o === r && (e.preventDefault(), n && b(u, {
                 select: !0
-              })) : (e.preventDefault(), n && v(r, {
+              })) : (e.preventDefault(), n && b(r, {
                 select: !0
               })) : o === t && e.preventDefault()
             }
@@ -190,7 +190,7 @@ try {
         return !1
       }
 
-      function v(e, {
+      function b(e, {
         select: t = !1
       } = {}) {
         if (e && e.focus) {
@@ -203,20 +203,20 @@ try {
         }
       }
       f.displayName = "FocusScope";
-      var y = function() {
+      var v = function() {
         let e = [];
         return {
           add(t) {
             const n = e[0];
-            t !== n && n?.pause(), e = b(e, t), e.unshift(t)
+            t !== n && n?.pause(), e = y(e, t), e.unshift(t)
           },
           remove(t) {
-            e = b(e, t), e[0]?.resume()
+            e = y(e, t), e[0]?.resume()
           }
         }
       }();
 
-      function b(e, t) {
+      function y(e, t) {
         const n = [...e],
           o = n.indexOf(t);
         return -1 !== o && n.splice(o, 1), n

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     s = (new e.Error).stack;
-  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "5d0dd6f5-9242-44d4-a9a9-acdd2dc0fbee", e._sentryDebugIdIdentifier = "sentry-dbid-5d0dd6f5-9242-44d4-a9a9-acdd2dc0fbee")
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "9810d8d9-572e-459e-a748-23018f3ffb82", e._sentryDebugIdIdentifier = "sentry-dbid-9810d8d9-572e-459e-a748-23018f3ffb82")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [1281], {
+  [2924], {
     78795: (e, s, t) => {
       t.d(s, {
         A: () => c

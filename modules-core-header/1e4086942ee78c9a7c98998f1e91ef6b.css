@@ -426,142 +426,6 @@
   font-weight: var(--foundry-alias-font-weight-bold-751d319e);
 }
 
-@font-face {
-  font-family: "Helvetica Now Text";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Now Text";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Now Text";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Now Display";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8a7bed18c779bf815ff56c24ab6207e5.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Now Display";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Neue LT W1G";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/7ad84c2813f87a82c6a0e99155374469.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Neue LT W1G";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/456fa3c812ea53d87ef804ee8a5cf56f.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Neue LT W1G";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/54d7959b8dc5988297af29247518fccc.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Helvetica Neue LT W1G";
-  font-style: italic;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc54229b8bf9e63b8a1525c51be60a84.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c31221106dc90ced1c3479d73a5fe115.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/76a3f4e73b6671642a161e05923a968b.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0cd5b1e38f54ef83942d288ce01980e6.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/010014d365bcd4b2fedd44df3f0e9728.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans SC";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8517df1baaad4b49346c1293b195088a.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans SC";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0782dca93011dc6ab08f338b6c31e1d6.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/90ef908f0a56e2fa2b7d9b2056d81bcc.woff) format("woff");
-}
-
-@font-face {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f3472849022d6ce77ee5fc572d732db8.woff) format("woff");
-}
-
 .siteHeaderContainer .foundry_nu8bkp3 {
   --foundry_nu8bkp0: Helvetica Now Display;
   --foundry_nu8bkp1: Helvetica Now Text;
@@ -1976,4 +1840,141 @@
   --foundry-alias-color-brand-rockstar-gold-28436c1a: #b87a00;
 }
 
-/*# sourceMappingURL=66ac2922437dd3a7d6e7755abe626b6c.css.map*/
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8a7bed18c779bf815ff56c24ab6207e5.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT W1G";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/7ad84c2813f87a82c6a0e99155374469.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT W1G";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/456fa3c812ea53d87ef804ee8a5cf56f.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT W1G";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/54d7959b8dc5988297af29247518fccc.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT W1G";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc54229b8bf9e63b8a1525c51be60a84.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c31221106dc90ced1c3479d73a5fe115.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/76a3f4e73b6671642a161e05923a968b.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0cd5b1e38f54ef83942d288ce01980e6.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/010014d365bcd4b2fedd44df3f0e9728.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8517df1baaad4b49346c1293b195088a.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0782dca93011dc6ab08f338b6c31e1d6.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/90ef908f0a56e2fa2b7d9b2056d81bcc.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f3472849022d6ce77ee5fc572d732db8.woff) format("woff");
+}
+
+
+/*# sourceMappingURL=1e4086942ee78c9a7c98998f1e91ef6b.css.map*/

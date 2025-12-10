@@ -17,9 +17,9 @@ try {
       t.r(n), t.d(n, {
         Root: () => i,
         Slot: () => i,
-        Slottable: () => f,
+        Slottable: () => c,
         createSlot: () => a,
-        createSlottable: () => c
+        createSlottable: () => f
       });
       var r = t(71127),
         o = t(95362),
@@ -91,7 +91,7 @@ try {
       }
       var s = Symbol("radix.slottable");
 
-      function c(e) {
+      function f(e) {
         const n = ({
           children: e
         }) => (0, l.jsx)(l.Fragment, {
@@ -99,7 +99,7 @@ try {
         });
         return n.displayName = `${e}.Slottable`, n.__radixId = s, n
       }
-      var f = c("Slottable");
+      var c = f("Slottable");
 
       function u(e) {
         return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === s

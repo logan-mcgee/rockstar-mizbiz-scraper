@@ -15,7 +15,7 @@ try {
   [2295, 4676, 5656, 7533, 9627], {
     25656: (e, t, n) => {
       n.r(t), n.d(t, {
-        FocusScope: () => f,
+        FocusScope: () => i,
         Root: () => E
       });
       var o = n(71127),
@@ -24,15 +24,15 @@ try {
         s = n(76286),
         c = n(42295),
         d = "focusScope.autoFocusOnMount",
-        i = "focusScope.autoFocusOnUnmount",
-        a = {
+        a = "focusScope.autoFocusOnUnmount",
+        f = {
           bubbles: !1,
           cancelable: !0
         },
-        f = o.forwardRef((e, t) => {
+        i = o.forwardRef((e, t) => {
           const {
             loop: n = !1,
-            trapped: f = !1,
+            trapped: i = !1,
             onMountAutoFocus: m,
             onUnmountAutoFocus: b,
             ...E
@@ -46,7 +46,7 @@ try {
             }
           }).current;
           o.useEffect(() => {
-            if (f) {
+            if (i) {
               let e = function(e) {
                   if (k.paused || !_) return;
                   const t = e.target;
@@ -74,12 +74,12 @@ try {
                 document.removeEventListener("focusin", e), document.removeEventListener("focusout", t), o.disconnect()
               }
             }
-          }, [f, _, k.paused]), o.useEffect(() => {
+          }, [i, _, k.paused]), o.useEffect(() => {
             if (_) {
               y.add(k);
               const e = document.activeElement;
               if (!_.contains(e)) {
-                const t = new CustomEvent(d, a);
+                const t = new CustomEvent(d, f);
                 _.addEventListener(d, g), _.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
@@ -94,16 +94,16 @@ try {
               }
               return () => {
                 _.removeEventListener(d, g), setTimeout(() => {
-                  const t = new CustomEvent(i, a);
-                  _.addEventListener(i, w), _.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
+                  const t = new CustomEvent(a, f);
+                  _.addEventListener(a, w), _.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
                     select: !0
-                  }), _.removeEventListener(i, w), y.remove(k)
+                  }), _.removeEventListener(a, w), y.remove(k)
                 }, 0)
               }
             }
           }, [_, g, w, k]);
           const N = o.useCallback(e => {
-            if (!n && !f) return;
+            if (!n && !i) return;
             if (k.paused) return;
             const t = "Tab" === e.key && !e.altKey && !e.ctrlKey && !e.metaKey,
               o = document.activeElement;
@@ -119,7 +119,7 @@ try {
                 select: !0
               })) : o === t && e.preventDefault()
             }
-          }, [n, f, k.paused]);
+          }, [n, i, k.paused]);
           return (0, c.jsx)(u.sG.div, {
             tabIndex: -1,
             ...E,
@@ -171,7 +171,7 @@ try {
           }(e) && t && e.select()
         }
       }
-      f.displayName = "FocusScope";
+      i.displayName = "FocusScope";
       var y = function() {
         let e = [];
         return {
@@ -190,7 +190,7 @@ try {
           o = n.indexOf(t);
         return -1 !== o && n.splice(o, 1), n
       }
-      var E = f
+      var E = i
     },
     42295: (e, t, n) => {
       e.exports = n(69245)
@@ -208,23 +208,23 @@ try {
           __source: !0
         };
 
-      function i(e, t, n) {
+      function a(e, t, n) {
         var o, u = {},
-          i = null,
-          a = null;
-        for (o in void 0 !== n && (i = "" + n), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (a = t.ref), t) s.call(t, o) && !d.hasOwnProperty(o) && (u[o] = t[o]);
+          a = null,
+          f = null;
+        for (o in void 0 !== n && (a = "" + n), void 0 !== t.key && (a = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, o) && !d.hasOwnProperty(o) && (u[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === u[o] && (u[o] = t[o]);
         return {
           $$typeof: r,
           type: e,
-          key: i,
-          ref: a,
+          key: a,
+          ref: f,
           props: u,
           _owner: c.current
         }
       }
-      t.Fragment = u, t.jsx = i, t.jsxs = i
+      t.Fragment = u, t.jsx = a, t.jsxs = a
     },
     76286: (e, t, n) => {
       n.d(t, {

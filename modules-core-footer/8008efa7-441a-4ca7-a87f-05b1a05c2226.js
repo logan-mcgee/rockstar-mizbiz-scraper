@@ -17,7 +17,7 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -26,8 +26,8 @@ try {
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
-        Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => r,
+        Lightbox_Zoom_Slider_Label: () => f,
+        Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => L
       });
       var _ = "{description} - Zobacz obraz w podglądzie",
@@ -39,9 +39,9 @@ try {
         d = "Naciśnij {shortcut}",
         s = "Zresetuj",
         u = "Naciśnij {shortcut}",
-        g = "Poziom powiększenia",
-        r = "{zoom}%",
-        f = "Pobierz",
+        f = "Poziom powiększenia",
+        g = "{zoom}%",
+        r = "Pobierz",
         h = "Pobierz",
         L = {
           Lightbox_Open_Button_Label: _,
@@ -53,9 +53,9 @@ try {
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
-          Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: f,
+          Lightbox_Zoom_Slider_Label: f,
+          Lightbox_Zoom_Slider_Tooltip: g,
+          Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: h
         }
     }

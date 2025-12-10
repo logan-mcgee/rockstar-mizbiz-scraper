@@ -1,174 +1,174 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     l = (new e.Error).stack;
-  l && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[l] = "3a00bb17-19ee-4e83-8c75-e1f3fa300c01", e._sentryDebugIdIdentifier = "sentry-dbid-3a00bb17-19ee-4e83-8c75-e1f3fa300c01")
+  l && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[l] = "cb3b7f15-6d90-4d9f-b94b-65989ba90f6b", e._sentryDebugIdIdentifier = "sentry-dbid-cb3b7f15-6d90-4d9f-b94b-65989ba90f6b")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
     release: "sentry-release-id",
-    packageName: "@rockstargames/modules-core-footer",
+    packageName: "@rockstargames/modules-core-header",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
   })
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [1665], {
+}, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
+  [5021], {
     45021: (e, l, a) => {
       a.r(l), a.d(l, {
-        Activity: () => ua,
-        ArrowDown: () => ir,
-        ArrowLeft: () => Pa,
-        ArrowRight: () => vr,
-        ArrowRightLeft: () => Qa,
+        Activity: () => ja,
+        ArrowDown: () => or,
+        ArrowLeft: () => Oa,
+        ArrowRight: () => wr,
+        ArrowRightLeft: () => Ja,
         ArrowUp: () => Xa,
         ArrowUpDown: () => Wa,
         Book: () => Ff,
-        Bug: () => ce,
-        BugOff: () => ge,
-        Calendar: () => id,
-        CalendarOff: () => vd,
-        Car: () => en,
-        CarSide: () => on,
-        ChartSpline: () => zo,
-        Check: () => Jn,
-        ChevronDown: () => br,
-        ChevronFirst: () => Yr,
+        Bug: () => ne,
+        BugOff: () => xe,
+        Calendar: () => dd,
+        CalendarOff: () => fd,
+        Car: () => eh,
+        CarSide: () => sh,
+        ChartSpline: () => zs,
+        Check: () => Kh,
+        ChevronDown: () => mr,
+        ChevronFirst: () => Zr,
         ChevronLast: () => $r,
         ChevronLeft: () => Rr,
-        ChevronRight: () => Hr,
+        ChevronRight: () => Ar,
         ChevronUp: () => rr,
-        ChevronsDownUp: () => Sr,
-        ChevronsLeftRight: () => Er,
+        ChevronsDownUp: () => yr,
+        ChevronsLeftRight: () => Tr,
         ChevronsUpDown: () => tt,
-        CircleCheck: () => ac,
-        CircleDollarSign: () => Gh,
-        CircleHelp: () => k,
-        CircleMinus: () => Cc,
-        CirclePerson: () => Le,
+        CircleCheck: () => ln,
+        CircleDollarSign: () => qc,
+        CircleHelp: () => P,
+        CircleMinus: () => Hn,
+        CirclePerson: () => ze,
         CircleSlash: () => Fe,
-        CircleX: () => Ic,
-        Clipboard: () => Rd,
-        Clock: () => bd,
-        CloudAlert: () => Tf,
-        CloudDownload: () => nt,
-        CloudUpload: () => Gr,
+        CircleX: () => Sn,
+        Clipboard: () => Md,
+        Clock: () => jd,
+        CloudAlert: () => Uf,
+        CloudDownload: () => ht,
+        CloudUpload: () => qr,
         CodeXml: () => Kf,
         Copy: () => Hd,
-        Cpu: () => rd,
-        Database: () => lv,
-        Discord: () => $d,
-        DollarSign: () => Eh,
-        Download: () => yt,
-        EllipsisVertical: () => rh,
-        Envelope: () => xl,
-        EnvelopeOpen: () => Pc,
-        EpicGames: () => ki,
-        ExternalLink: () => At,
-        Eye: () => y,
-        EyeClosed: () => A,
-        EyeOff: () => q,
-        Facebook: () => ni,
-        FastForward: () => Yh,
-        FileText: () => Rh,
-        Files: () => Hh,
-        Filter: () => ih,
-        Flag: () => Ve,
-        FlagOff: () => De,
+        Cpu: () => ad,
+        Database: () => lw,
+        Discord: () => Jd,
+        DollarSign: () => Tc,
+        Download: () => Lt,
+        EllipsisVertical: () => rc,
+        Envelope: () => gl,
+        EnvelopeOpen: () => On,
+        EpicGames: () => Po,
+        ExternalLink: () => Vt,
+        Eye: () => L,
+        EyeClosed: () => V,
+        EyeOff: () => D,
+        Facebook: () => ho,
+        FastForward: () => Zc,
+        FileText: () => Rc,
+        Files: () => Ac,
+        Filter: () => oc,
+        Flag: () => Be,
+        FlagOff: () => Ge,
         Gear: () => Nl,
-        Globe: () => uc,
-        Handshake: () => _l,
-        Headset: () => as,
-        Heart: () => bh,
-        HeartPulse: () => Mc,
-        House: () => ho,
-        Image: () => _n,
-        Info: () => Z,
-        Instagram: () => ti,
-        LayoutGrid: () => Ps,
-        Lightbulb: () => Un,
+        Globe: () => jn,
+        Handshake: () => kl,
+        Headset: () => li,
+        Heart: () => mc,
+        HeartPulse: () => Mn,
+        House: () => ns,
+        Image: () => Fh,
+        Info: () => Y,
+        Instagram: () => ro,
+        LayoutGrid: () => ki,
+        Lightbulb: () => Uh,
         Link: () => ll,
         List: () => Sd,
-        ListFilter: () => Gd,
-        ListMusic: () => Df,
-        LockKeyhole: () => Bn,
-        LockPassword: () => Nn,
+        ListFilter: () => Xd,
+        ListMusic: () => Gf,
+        LockKeyhole: () => Bh,
+        LockPassword: () => Gh,
         LogOut: () => Ma,
-        MapPin: () => ml,
-        Maximize: () => Ws,
-        Maximize2: () => wt,
+        MapPin: () => bl,
+        Maximize: () => _i,
+        Maximize2: () => vt,
         Menu: () => fa,
-        MessageSquareText: () => xn,
-        Minimize: () => Qs,
-        Minimize2: () => eo,
-        Minus: () => Xc,
-        Monitor: () => Ms,
+        MessageSquareText: () => xh,
+        Minimize: () => Qi,
+        Minimize2: () => es,
+        Minus: () => Xn,
+        Monitor: () => bi,
         Moon: () => p,
-        PaperPlane: () => Bo,
-        Paperclip: () => Wc,
-        PartialCircle: () => zn,
-        Pause: () => $h,
-        Pencil: () => Cs,
-        PencilOff: () => Is,
-        Person: () => je,
+        PaperPlane: () => Bs,
+        Paperclip: () => Wn,
+        PartialCircle: () => zh,
+        Pause: () => $c,
+        Pencil: () => Ci,
+        PencilOff: () => Ii,
+        Person: () => ue,
         PersonBlock: () => aa,
-        PersonMinus: () => Ul,
-        PersonPlus: () => hl,
+        PersonMinus: () => _l,
+        PersonPlus: () => cl,
         Play: () => tf,
-        Plus: () => Xs,
-        Power: () => ds,
-        Property: () => xo,
-        Reddit: () => qi,
-        RefreshCcw: () => oo,
-        RefreshCw: () => qt,
-        RefreshCwOff: () => Zt,
-        Replay: () => kt,
-        Rewind: () => cf,
-        Save: () => Sh,
-        Search: () => mn,
-        Server: () => sv,
-        ShieldAlert: () => sl,
-        ShieldCheck: () => zl,
-        ShoppingBag: () => hn,
-        SkipBack: () => gf,
-        SkipForward: () => jf,
-        Star: () => Jl,
-        StarOff: () => Lf,
-        Steam: () => Oi,
-        Stop: () => Vf,
-        Store: () => mo,
-        Sun: () => O,
+        Plus: () => Ni,
+        Power: () => ii,
+        Property: () => xs,
+        Reddit: () => Do,
+        RefreshCcw: () => ss,
+        RefreshCw: () => Dt,
+        RefreshCwOff: () => Yt,
+        Replay: () => Pt,
+        Rewind: () => nf,
+        Save: () => yc,
+        Search: () => uh,
+        Server: () => iw,
+        ShieldAlert: () => il,
+        ShieldCheck: () => Cl,
+        ShoppingBag: () => nh,
+        SkipBack: () => xf,
+        SkipForward: () => uf,
+        Star: () => Ql,
+        StarOff: () => zf,
+        Steam: () => Eo,
+        Stop: () => Bf,
+        Store: () => us,
+        Sun: () => E,
         ThumbsDown: () => Ke,
-        ThumbsUp: () => Te,
-        Tiktok: () => Ai,
-        Trash: () => Qc,
-        TriangleAlert: () => dc,
-        Trophy: () => Yd,
-        Twitch: () => wi,
-        Twitter: () => yi,
+        ThumbsUp: () => Ue,
+        Tiktok: () => Vo,
+        Trash: () => Jn,
+        TriangleAlert: () => dn,
+        Trophy: () => Wd,
+        Twitch: () => vo,
+        Twitter: () => Lo,
         TwoPeople: () => da,
-        Undo: () => Ot,
-        Unlink: () => Ed,
+        Undo: () => Et,
+        Unlink: () => Od,
         Upload: () => pt,
-        UserCouple: () => Ca,
-        UserGroup: () => Ia,
-        Volume: () => No,
-        Volume1: () => _o,
-        Volume2: () => Uo,
-        VolumeX: () => Jo,
-        Weapon: () => vh,
-        Wifi: () => fs,
-        WifiOff: () => us,
-        Wrench: () => Bl,
-        X: () => fc,
-        Xbox: () => Zi,
-        Youtube: () => pi,
+        UserCouple: () => Ha,
+        UserGroup: () => Sa,
+        Volume: () => Gs,
+        Volume1: () => Fs,
+        Volume2: () => Us,
+        VolumeX: () => Ks,
+        Weapon: () => wc,
+        Wifi: () => ci,
+        WifiOff: () => gi,
+        Wrench: () => Il,
+        X: () => fn,
+        Xbox: () => Yo,
+        Youtube: () => po,
         ZoomIn: () => ee,
-        ZoomOut: () => oe
+        ZoomOut: () => se
       });
       var r = a(42295),
         t = a(71753),
-        o = a(75523),
-        s = a(71127);
+        s = a(64836),
+        i = a(71127);
 
       function d(e) {
         var l = function(e, l) {
@@ -184,7 +184,7 @@ try {
         return "symbol" == typeof l ? l : String(l)
       }
 
-      function i(e, l) {
+      function o(e, l) {
         var a = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -195,37 +195,37 @@ try {
         return a
       }
 
-      function n(e) {
+      function h(e) {
         for (var l = 1; l < arguments.length; l++) {
           var a = null != arguments[l] ? arguments[l] : {};
-          l % 2 ? i(Object(a), !0).forEach(function(l) {
-            var r, t, o;
-            r = e, t = l, o = a[l], (t = d(t)) in r ? Object.defineProperty(r, t, {
-              value: o,
+          l % 2 ? o(Object(a), !0).forEach(function(l) {
+            var r, t, s;
+            r = e, t = l, s = a[l], (t = d(t)) in r ? Object.defineProperty(r, t, {
+              value: s,
               enumerable: !0,
               configurable: !0,
               writable: !0
-            }) : r[t] = o
-          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : i(Object(a)).forEach(function(l) {
+            }) : r[t] = s
+          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : o(Object(a)).forEach(function(l) {
             Object.defineProperty(e, l, Object.getOwnPropertyDescriptor(a, l))
           })
         }
         return e
       }
 
-      function c(e, l) {
+      function n(e, l) {
         var a = {};
         for (var r in e) a[r] = l(e[r], r);
         return a
       }
-      var h, f, v = (e, l, a) => {
+      var c, f, w = (e, l, a) => {
           for (var r of Object.keys(e)) {
             var t;
             if (e[r] !== (null !== (t = l[r]) && void 0 !== t ? t : a[r])) return !1
           }
           return !0
         },
-        w = (h = {
+        v = (c = {
           defaultClassName: "foundry_v1yii71",
           variantClassNames: {
             size: {
@@ -238,41 +238,41 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }, (f = e => {
-          var l = h.defaultClassName,
-            a = n(n({}, h.defaultVariants), e);
+          var l = c.defaultClassName,
+            a = h(h({}, c.defaultVariants), e);
           for (var r in a) {
-            var t, o = null !== (t = a[r]) && void 0 !== t ? t : h.defaultVariants[r];
-            if (null != o) {
-              var s = o;
-              "boolean" == typeof s && (s = !0 === s ? "true" : "false");
-              var d = h.variantClassNames[r][s];
+            var t, s = null !== (t = a[r]) && void 0 !== t ? t : c.defaultVariants[r];
+            if (null != s) {
+              var i = s;
+              "boolean" == typeof i && (i = !0 === i ? "true" : "false");
+              var d = c.variantClassNames[r][i];
               d && (l += " " + d)
             }
           }
-          for (var [i, c] of h.compoundVariants) v(i, a, h.defaultVariants) && (l += " " + c);
+          for (var [o, n] of c.compoundVariants) w(o, a, c.defaultVariants) && (l += " " + n);
           return l
-        }).variants = () => Object.keys(h.variantClassNames), f.classNames = {
+        }).variants = () => Object.keys(c.variantClassNames), f.classNames = {
           get base() {
-            return h.defaultClassName.split(" ")[0]
+            return c.defaultClassName.split(" ")[0]
           },
           get variants() {
-            return c(h.variantClassNames, e => c(e, e => e.split(" ")[0]))
+            return n(c.variantClassNames, e => n(e, e => e.split(" ")[0]))
           }
         }, f);
-      const g = (0, s.forwardRef)(({
+      const x = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -283,20 +283,20 @@ try {
             })
           })
         })),
-        x = (0, s.forwardRef)(({
+        g = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -307,20 +307,20 @@ try {
             })
           })
         })),
-        u = (0, s.forwardRef)(({
+        j = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -329,20 +329,20 @@ try {
             })
           })
         })),
-        b = (0, s.forwardRef)(({
+        m = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -353,46 +353,46 @@ try {
             })
           })
         })),
-        p = (0, s.forwardRef)(({
+        p = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(g, {
+            children: ["SM" === e && (0, r.jsx)(x, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(x, {
+            }), "LG" === e && (0, r.jsx)(g, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(u, {
+            }), "MD" === e && (0, r.jsx)(j, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(b, {
+            }), "XL" === e && (0, r.jsx)(m, {
               ...t,
               ref: a
             })]
           })
         });
-      p.displayName = "Moon", p.categories = ["accessibility"], p.tags = ["dark", "night", "lightness", "theme", "brightness"], p.SM = g, p.LG = x, p.MD = u, p.XL = b;
-      const j = (0, s.forwardRef)(({
+      p.displayName = "Moon", p.categories = ["accessibility"], p.tags = ["dark", "night", "lightness", "theme", "brightness"], p.SM = x, p.LG = g, p.MD = j, p.XL = m;
+      const u = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -401,20 +401,20 @@ try {
             })
           })
         })),
-        m = (0, s.forwardRef)(({
+        b = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -423,20 +423,20 @@ try {
             })
           })
         })),
-        M = (0, s.forwardRef)(({
+        M = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -445,20 +445,20 @@ try {
             })
           })
         })),
-        R = (0, s.forwardRef)(({
+        R = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -467,20 +467,20 @@ try {
             })
           })
         })),
-        y = (0, s.forwardRef)(({
+        L = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(j, {
+            children: ["SM" === e && (0, r.jsx)(u, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(m, {
+            }), "LG" === e && (0, r.jsx)(b, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(M, {
@@ -492,21 +492,21 @@ try {
             })]
           })
         });
-      y.displayName = "Eye", y.categories = ["accessibility", "photography", "design", "security"], y.tags = ["view", "watch", "see", "show", "expose", "reveal", "display", "visible", "visibility", "vision", "preview", "read", "password", "sign", "vision", "look"], y.SM = j, y.LG = m, y.MD = M, y.XL = R;
-      const L = (0, s.forwardRef)(({
+      L.displayName = "Eye", L.categories = ["accessibility", "photography", "design", "security"], L.tags = ["view", "watch", "see", "show", "expose", "reveal", "display", "visible", "visibility", "vision", "preview", "read", "password", "sign", "vision", "look"], L.SM = u, L.LG = b, L.MD = M, L.XL = R;
+      const z = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -517,20 +517,20 @@ try {
             })
           })
         })),
-        z = (0, s.forwardRef)(({
+        C = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -541,20 +541,20 @@ try {
             })
           })
         })),
-        C = (0, s.forwardRef)(({
+        H = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -563,20 +563,20 @@ try {
             })
           })
         })),
-        H = (0, s.forwardRef)(({
+        A = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -587,46 +587,46 @@ try {
             })
           })
         })),
-        A = (0, s.forwardRef)(({
+        V = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(L, {
+            children: ["SM" === e && (0, r.jsx)(z, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(z, {
+            }), "LG" === e && (0, r.jsx)(C, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(C, {
+            }), "MD" === e && (0, r.jsx)(H, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(H, {
+            }), "XL" === e && (0, r.jsx)(A, {
               ...t,
               ref: a
             })]
           })
         });
-      A.displayName = "EyeClosed", A.categories = ["accessibility", "photography", "design", "security"], A.tags = ["view", "watch", "see", "hide", "conceal", "mask", "hidden", "visibility", "vision"], A.SM = L, A.LG = z, A.MD = C, A.XL = H;
-      const V = (0, s.forwardRef)(({
+      V.displayName = "EyeClosed", V.categories = ["accessibility", "photography", "design", "security"], V.tags = ["view", "watch", "see", "hide", "conceal", "mask", "hidden", "visibility", "vision"], V.SM = z, V.LG = C, V.MD = H, V.XL = A;
+      const B = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -637,20 +637,20 @@ try {
             })
           })
         })),
-        B = (0, s.forwardRef)(({
+        I = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -661,20 +661,20 @@ try {
             })
           })
         })),
-        I = (0, s.forwardRef)(({
+        S = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -683,20 +683,20 @@ try {
             })
           })
         })),
-        S = (0, s.forwardRef)(({
+        y = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -707,46 +707,46 @@ try {
             })
           })
         })),
-        q = (0, s.forwardRef)(({
+        D = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(V, {
+            children: ["SM" === e && (0, r.jsx)(B, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(B, {
+            }), "LG" === e && (0, r.jsx)(I, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(I, {
+            }), "MD" === e && (0, r.jsx)(S, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(S, {
+            }), "XL" === e && (0, r.jsx)(y, {
               ...t,
               ref: a
             })]
           })
         });
-      q.displayName = "EyeOff", q.categories = ["accessibility", "photography", "design", "security"], q.tags = ["view", "watch", "see", "hide", "conceal", "mask", "hidden", "visibility", "vision", "lock", "password", "private", "invisible"], q.SM = V, q.LG = B, q.MD = I, q.XL = S;
-      const D = (0, s.forwardRef)(({
+      D.displayName = "EyeOff", D.categories = ["accessibility", "photography", "design", "security"], D.tags = ["view", "watch", "see", "hide", "conceal", "mask", "hidden", "visibility", "vision", "lock", "password", "private", "invisible"], D.SM = B, D.LG = I, D.MD = S, D.XL = y;
+      const G = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -757,20 +757,20 @@ try {
             })
           })
         })),
-        N = (0, s.forwardRef)(({
+        N = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -781,20 +781,20 @@ try {
             })
           })
         })),
-        X = (0, s.forwardRef)(({
+        X = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -803,20 +803,20 @@ try {
             })
           })
         })),
-        G = (0, s.forwardRef)(({
+        q = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -827,17 +827,17 @@ try {
             })
           })
         })),
-        k = (0, s.forwardRef)(({
+        P = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(D, {
+            children: ["SM" === e && (0, r.jsx)(G, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(N, {
@@ -846,27 +846,27 @@ try {
             }), "MD" === e && (0, r.jsx)(X, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(G, {
+            }), "XL" === e && (0, r.jsx)(q, {
               ...t,
               ref: a
             })]
           })
         });
-      k.displayName = "CircleHelp", k.categories = ["accessibility", "text", "notifications"], k.tags = ["question mark", "help", "support", "assistance", "doubt", "FAQ", "tooltip"], k.SM = D, k.LG = N, k.MD = X, k.XL = G;
-      const F = (0, s.forwardRef)(({
+      P.displayName = "CircleHelp", P.categories = ["accessibility", "text", "notifications"], P.tags = ["question mark", "help", "support", "assistance", "doubt", "FAQ", "tooltip"], P.SM = G, P.LG = N, P.MD = X, P.XL = q;
+      const F = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -877,20 +877,20 @@ try {
             })
           })
         })),
-        _ = (0, s.forwardRef)(({
+        k = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -901,20 +901,20 @@ try {
             })
           })
         })),
-        P = (0, s.forwardRef)(({
+        O = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -923,20 +923,20 @@ try {
             })
           })
         })),
-        E = (0, s.forwardRef)(({
+        T = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -947,12 +947,12 @@ try {
             })
           })
         })),
-        O = (0, s.forwardRef)(({
+        E = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -960,33 +960,33 @@ try {
             children: ["SM" === e && (0, r.jsx)(F, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(_, {
+            }), "LG" === e && (0, r.jsx)(k, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(P, {
+            }), "MD" === e && (0, r.jsx)(O, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(E, {
+            }), "XL" === e && (0, r.jsx)(T, {
               ...t,
               ref: a
             })]
           })
         });
-      O.displayName = "Sun", O.categories = ["accessibility", "weather", "seasons", "sustainability"], O.tags = ["brightness", "weather", "light", "summer", "day", "lightness", "theme", "brightness"], O.SM = F, O.LG = _, O.MD = P, O.XL = E;
-      const T = (0, s.forwardRef)(({
+      E.displayName = "Sun", E.categories = ["accessibility", "weather", "seasons", "sustainability"], E.tags = ["brightness", "weather", "light", "summer", "day", "lightness", "theme", "brightness"], E.SM = F, E.LG = k, E.MD = O, E.XL = T;
+      const U = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -997,20 +997,20 @@ try {
             })
           })
         })),
-        U = (0, s.forwardRef)(({
+        _ = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1021,20 +1021,20 @@ try {
             })
           })
         })),
-        W = (0, s.forwardRef)(({
+        W = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1043,20 +1043,20 @@ try {
             })
           })
         })),
-        Y = (0, s.forwardRef)(({
+        Z = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1067,46 +1067,46 @@ try {
             })
           })
         })),
-        Z = (0, s.forwardRef)(({
+        Y = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(T, {
+            children: ["SM" === e && (0, r.jsx)(U, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(U, {
+            }), "LG" === e && (0, r.jsx)(_, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(W, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Y, {
+            }), "XL" === e && (0, r.jsx)(Z, {
               ...t,
               ref: a
             })]
           })
         });
-      Z.displayName = "Info", Z.categories = ["accessibility", "notifications"], Z.tags = ["help", "info", "information", "support"], Z.SM = T, Z.LG = U, Z.MD = W, Z.XL = Y;
-      const K = (0, s.forwardRef)(({
+      Y.displayName = "Info", Y.categories = ["accessibility", "notifications"], Y.tags = ["help", "info", "information", "support"], Y.SM = U, Y.LG = _, Y.MD = W, Y.XL = Z;
+      const K = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1117,20 +1117,20 @@ try {
             })
           })
         })),
-        J = (0, s.forwardRef)(({
+        Q = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1141,20 +1141,20 @@ try {
             })
           })
         })),
-        Q = (0, s.forwardRef)(({
+        J = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1163,20 +1163,20 @@ try {
             })
           })
         })),
-        $ = (0, s.forwardRef)(({
+        $ = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1187,12 +1187,12 @@ try {
             })
           })
         })),
-        ee = (0, s.forwardRef)(({
+        ee = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -1200,10 +1200,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(K, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(J, {
+            }), "LG" === e && (0, r.jsx)(Q, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Q, {
+            }), "MD" === e && (0, r.jsx)(J, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)($, {
@@ -1212,21 +1212,21 @@ try {
             })]
           })
         });
-      ee.displayName = "ZoomIn", ee.categories = ["accessibility", "layout", "design", "text", "photography"], ee.tags = ["magnifying glass", "plus", "zoom", "view", "see", "more", "closer"], ee.SM = K, ee.LG = J, ee.MD = Q, ee.XL = $;
-      const le = (0, s.forwardRef)(({
+      ee.displayName = "ZoomIn", ee.categories = ["accessibility", "layout", "design", "text", "photography"], ee.tags = ["magnifying glass", "plus", "zoom", "view", "see", "more", "closer"], ee.SM = K, ee.LG = Q, ee.MD = J, ee.XL = $;
+      const le = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1237,20 +1237,20 @@ try {
             })
           })
         })),
-        ae = (0, s.forwardRef)(({
+        ae = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1261,20 +1261,20 @@ try {
             })
           })
         })),
-        re = (0, s.forwardRef)(({
+        re = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1283,20 +1283,20 @@ try {
             })
           })
         })),
-        te = (0, s.forwardRef)(({
+        te = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1307,12 +1307,12 @@ try {
             })
           })
         })),
-        oe = (0, s.forwardRef)(({
+        se = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -1332,21 +1332,21 @@ try {
             })]
           })
         });
-      oe.displayName = "ZoomOut", oe.categories = ["accessibility", "layout", "design", "text", "photography"], oe.tags = ["magnifying glass", "plus", "zoom", "view", "see", "less", "further"], oe.SM = le, oe.LG = ae, oe.MD = re, oe.XL = te;
-      const se = (0, s.forwardRef)(({
+      se.displayName = "ZoomOut", se.categories = ["accessibility", "layout", "design", "text", "photography"], se.tags = ["magnifying glass", "plus", "zoom", "view", "see", "less", "further"], se.SM = le, se.LG = ae, se.MD = re, se.XL = te;
+      const ie = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1357,20 +1357,20 @@ try {
             })
           })
         })),
-        de = (0, s.forwardRef)(({
+        de = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1381,20 +1381,20 @@ try {
             })
           })
         })),
-        ie = (0, s.forwardRef)(({
+        oe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1403,20 +1403,20 @@ try {
             })
           })
         })),
-        ne = (0, s.forwardRef)(({
+        he = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1427,46 +1427,46 @@ try {
             })
           })
         })),
-        ce = (0, s.forwardRef)(({
+        ne = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(se, {
+            children: ["SM" === e && (0, r.jsx)(ie, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(de, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ie, {
+            }), "MD" === e && (0, r.jsx)(oe, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ne, {
+            }), "XL" === e && (0, r.jsx)(he, {
               ...t,
               ref: a
             })]
           })
         });
-      ce.displayName = "Bug", ce.categories = ["development", "animals"], ce.tags = ["issue", "report", "debug", "code", "insect"], ce.SM = se, ce.LG = de, ce.MD = ie, ce.XL = ne;
-      const he = (0, s.forwardRef)(({
+      ne.displayName = "Bug", ne.categories = ["development", "animals"], ne.tags = ["issue", "report", "debug", "code", "insect"], ne.SM = ie, ne.LG = de, ne.MD = oe, ne.XL = he;
+      const ce = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1477,20 +1477,20 @@ try {
             })
           })
         })),
-        fe = (0, s.forwardRef)(({
+        fe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1501,20 +1501,20 @@ try {
             })
           })
         })),
-        ve = (0, s.forwardRef)(({
+        we = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1525,20 +1525,20 @@ try {
             })
           })
         })),
-        we = (0, s.forwardRef)(({
+        ve = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1547,46 +1547,46 @@ try {
             })
           })
         })),
-        ge = (0, s.forwardRef)(({
+        xe = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(he, {
+            children: ["SM" === e && (0, r.jsx)(ce, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(fe, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ve, {
+            }), "XL" === e && (0, r.jsx)(we, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(we, {
+            }), "MD" === e && (0, r.jsx)(ve, {
               ...t,
               ref: a
             })]
           })
         });
-      ge.displayName = "BugOff", ge.categories = ["development", "animals"], ge.tags = ["issue", "report", "debug", "code", "insect"], ge.SM = he, ge.LG = fe, ge.XL = ve, ge.MD = we;
-      const xe = (0, s.forwardRef)(({
+      xe.displayName = "BugOff", xe.categories = ["development", "animals"], xe.tags = ["issue", "report", "debug", "code", "insect"], xe.SM = ce, xe.LG = fe, xe.XL = we, xe.MD = ve;
+      const ge = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1597,20 +1597,20 @@ try {
             })
           })
         })),
-        ue = (0, s.forwardRef)(({
+        je = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1621,20 +1621,20 @@ try {
             })
           })
         })),
-        be = (0, s.forwardRef)(({
+        me = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1643,20 +1643,20 @@ try {
             })
           })
         })),
-        pe = (0, s.forwardRef)(({
+        pe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1667,23 +1667,23 @@ try {
             })
           })
         })),
-        je = (0, s.forwardRef)(({
+        ue = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(xe, {
+            children: ["SM" === e && (0, r.jsx)(ge, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ue, {
+            }), "LG" === e && (0, r.jsx)(je, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(be, {
+            }), "MD" === e && (0, r.jsx)(me, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(pe, {
@@ -1692,21 +1692,21 @@ try {
             })]
           })
         });
-      je.displayName = "Person", je.categories = ["account"], je.tags = ["person", "account", "contact", "profile", "avatar", "user", "people", "human"], je.SM = xe, je.LG = ue, je.MD = be, je.XL = pe;
-      const me = (0, s.forwardRef)(({
+      ue.displayName = "Person", ue.categories = ["account"], ue.tags = ["person", "account", "contact", "profile", "avatar", "user", "people", "human"], ue.SM = ge, ue.LG = je, ue.MD = me, ue.XL = pe;
+      const be = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1717,20 +1717,20 @@ try {
             })
           })
         })),
-        Me = (0, s.forwardRef)(({
+        Me = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1741,20 +1741,20 @@ try {
             })
           })
         })),
-        Re = (0, s.forwardRef)(({
+        Re = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1763,20 +1763,20 @@ try {
             })
           })
         })),
-        ye = (0, s.forwardRef)(({
+        Le = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1787,17 +1787,17 @@ try {
             })
           })
         })),
-        Le = (0, s.forwardRef)(({
+        ze = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(me, {
+            children: ["SM" === e && (0, r.jsx)(be, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Me, {
@@ -1806,27 +1806,27 @@ try {
             }), "MD" === e && (0, r.jsx)(Re, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ye, {
+            }), "XL" === e && (0, r.jsx)(Le, {
               ...t,
               ref: a
             })]
           })
         });
-      Le.displayName = "CirclePerson", Le.categories = ["account"], Le.tags = ["person", "account", "contact"], Le.SM = me, Le.LG = Me, Le.MD = Re, Le.XL = ye;
-      const ze = (0, s.forwardRef)(({
+      ze.displayName = "CirclePerson", ze.categories = ["account"], ze.tags = ["person", "account", "contact"], ze.SM = be, ze.LG = Me, ze.MD = Re, ze.XL = Le;
+      const Ce = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1837,20 +1837,20 @@ try {
             })
           })
         })),
-        Ce = (0, s.forwardRef)(({
+        He = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1861,20 +1861,20 @@ try {
             })
           })
         })),
-        He = (0, s.forwardRef)(({
+        Ae = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -1885,20 +1885,20 @@ try {
             })
           })
         })),
-        Ae = (0, s.forwardRef)(({
+        Ve = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -1907,46 +1907,46 @@ try {
             })
           })
         })),
-        Ve = (0, s.forwardRef)(({
+        Be = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ze, {
+            children: ["SM" === e && (0, r.jsx)(Ce, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ce, {
+            }), "LG" === e && (0, r.jsx)(He, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(He, {
+            }), "XL" === e && (0, r.jsx)(Ae, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ae, {
+            }), "MD" === e && (0, r.jsx)(Ve, {
               ...t,
               ref: a
             })]
           })
         });
-      Ve.displayName = "Flag", Ve.categories = ["account", "social"], Ve.tags = ["report"], Ve.SM = ze, Ve.LG = Ce, Ve.XL = He, Ve.MD = Ae;
-      const Be = (0, s.forwardRef)(({
+      Be.displayName = "Flag", Be.categories = ["account", "social"], Be.tags = ["report"], Be.SM = Ce, Be.LG = He, Be.XL = Ae, Be.MD = Ve;
+      const Ie = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -1957,20 +1957,20 @@ try {
             })
           })
         })),
-        Ie = (0, s.forwardRef)(({
+        Se = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -1981,20 +1981,20 @@ try {
             })
           })
         })),
-        Se = (0, s.forwardRef)(({
+        ye = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2005,20 +2005,20 @@ try {
             })
           })
         })),
-        qe = (0, s.forwardRef)(({
+        De = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2027,46 +2027,46 @@ try {
             })
           })
         })),
-        De = (0, s.forwardRef)(({
+        Ge = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Be, {
+            children: ["SM" === e && (0, r.jsx)(Ie, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ie, {
+            }), "LG" === e && (0, r.jsx)(Se, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Se, {
+            }), "XL" === e && (0, r.jsx)(ye, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(qe, {
+            }), "MD" === e && (0, r.jsx)(De, {
               ...t,
               ref: a
             })]
           })
         });
-      De.displayName = "FlagOff", De.categories = ["account", "social"], De.tags = ["unflag"], De.SM = Be, De.LG = Ie, De.XL = Se, De.MD = qe;
-      const Ne = (0, s.forwardRef)(({
+      Ge.displayName = "FlagOff", Ge.categories = ["account", "social"], Ge.tags = ["unflag"], Ge.SM = Ie, Ge.LG = Se, Ge.XL = ye, Ge.MD = De;
+      const Ne = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2077,20 +2077,20 @@ try {
             })
           })
         })),
-        Xe = (0, s.forwardRef)(({
+        Xe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2101,20 +2101,20 @@ try {
             })
           })
         })),
-        Ge = (0, s.forwardRef)(({
+        qe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2125,20 +2125,20 @@ try {
             })
           })
         })),
-        ke = (0, s.forwardRef)(({
+        Pe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2147,12 +2147,12 @@ try {
             })
           })
         })),
-        Fe = (0, s.forwardRef)(({
+        Fe = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -2163,30 +2163,30 @@ try {
             }), "LG" === e && (0, r.jsx)(Xe, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ge, {
+            }), "XL" === e && (0, r.jsx)(qe, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ke, {
+            }), "MD" === e && (0, r.jsx)(Pe, {
               ...t,
               ref: a
             })]
           })
         });
-      Fe.displayName = "CircleSlash", Fe.categories = ["account"], Fe.tags = ["cancel", "no", "stop", "forbidden", "prohibited", "error", "incorrect", "mistake", "wrong", "failure", "circle", "slash", "null", "void", "ban", "Blocked", "Restricted", "Denied", "Unavailable", "Stop", "Alert"], Fe.SM = Ne, Fe.LG = Xe, Fe.XL = Ge, Fe.MD = ke;
-      const _e = (0, s.forwardRef)(({
+      Fe.displayName = "CircleSlash", Fe.categories = ["account"], Fe.tags = ["cancel", "no", "stop", "forbidden", "prohibited", "error", "incorrect", "mistake", "wrong", "failure", "circle", "slash", "null", "void", "ban", "Blocked", "Restricted", "Denied", "Unavailable", "Stop", "Alert"], Fe.SM = Ne, Fe.LG = Xe, Fe.XL = qe, Fe.MD = Pe;
+      const ke = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2197,20 +2197,20 @@ try {
             })
           })
         })),
-        Pe = (0, s.forwardRef)(({
+        Oe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2221,20 +2221,20 @@ try {
             })
           })
         })),
-        Ee = (0, s.forwardRef)(({
+        Te = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2245,20 +2245,20 @@ try {
             })
           })
         })),
-        Oe = (0, s.forwardRef)(({
+        Ee = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2267,46 +2267,46 @@ try {
             })
           })
         })),
-        Te = (0, s.forwardRef)(({
+        Ue = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(_e, {
+            children: ["SM" === e && (0, r.jsx)(ke, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Pe, {
+            }), "LG" === e && (0, r.jsx)(Oe, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ee, {
+            }), "XL" === e && (0, r.jsx)(Te, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Oe, {
+            }), "MD" === e && (0, r.jsx)(Ee, {
               ...t,
               ref: a
             })]
           })
         });
-      Te.displayName = "ThumbsUp", Te.categories = ["account", "social", "emoji"], Te.tags = ["like", "good", "emotion", "rate", "social", "review", "feedback", "positive"], Te.SM = _e, Te.LG = Pe, Te.XL = Ee, Te.MD = Oe;
-      const Ue = (0, s.forwardRef)(({
+      Ue.displayName = "ThumbsUp", Ue.categories = ["account", "social", "emoji"], Ue.tags = ["like", "good", "emotion", "rate", "social", "review", "feedback", "positive"], Ue.SM = ke, Ue.LG = Oe, Ue.XL = Te, Ue.MD = Ee;
+      const _e = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2317,20 +2317,20 @@ try {
             })
           })
         })),
-        We = (0, s.forwardRef)(({
+        We = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2341,20 +2341,20 @@ try {
             })
           })
         })),
-        Ye = (0, s.forwardRef)(({
+        Ze = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2363,20 +2363,20 @@ try {
             })
           })
         })),
-        Ze = (0, s.forwardRef)(({
+        Ye = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2387,46 +2387,46 @@ try {
             })
           })
         })),
-        Ke = (0, s.forwardRef)(({
+        Ke = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ue, {
+            children: ["SM" === e && (0, r.jsx)(_e, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(We, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ye, {
+            }), "MD" === e && (0, r.jsx)(Ze, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ze, {
+            }), "XL" === e && (0, r.jsx)(Ye, {
               ...t,
               ref: a
             })]
           })
         });
-      Ke.displayName = "ThumbsDown", Ke.categories = ["account", "social", "emoji"], Ke.tags = ["dislike", "bad", "emotion", "rate", "social", "review", "feedback", "negative"], Ke.SM = Ue, Ke.LG = We, Ke.MD = Ye, Ke.XL = Ze;
-      const Je = (0, s.forwardRef)(({
+      Ke.displayName = "ThumbsDown", Ke.categories = ["account", "social", "emoji"], Ke.tags = ["dislike", "bad", "emotion", "rate", "social", "review", "feedback", "negative"], Ke.SM = _e, Ke.LG = We, Ke.MD = Ze, Ke.XL = Ye;
+      const Qe = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2437,20 +2437,20 @@ try {
             })
           })
         })),
-        Qe = (0, s.forwardRef)(({
+        Je = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2461,20 +2461,20 @@ try {
             })
           })
         })),
-        $e = (0, s.forwardRef)(({
+        $e = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2485,20 +2485,20 @@ try {
             })
           })
         })),
-        el = (0, s.forwardRef)(({
+        el = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2507,20 +2507,20 @@ try {
             })
           })
         })),
-        ll = (0, s.forwardRef)(({
+        ll = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Je, {
+            children: ["SM" === e && (0, r.jsx)(Qe, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Qe, {
+            }), "LG" === e && (0, r.jsx)(Je, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)($e, {
@@ -2532,21 +2532,21 @@ try {
             })]
           })
         });
-      ll.displayName = "Link", ll.categories = ["text", "account"], ll.tags = ["chain", "url", "links", "hyperlink"], ll.SM = Je, ll.LG = Qe, ll.XL = $e, ll.MD = el;
-      const al = (0, s.forwardRef)(({
+      ll.displayName = "Link", ll.categories = ["text", "account"], ll.tags = ["chain", "url", "links", "hyperlink"], ll.SM = Qe, ll.LG = Je, ll.XL = $e, ll.MD = el;
+      const al = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2557,20 +2557,20 @@ try {
             })
           })
         })),
-        rl = (0, s.forwardRef)(({
+        rl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2581,20 +2581,20 @@ try {
             })
           })
         })),
-        tl = (0, s.forwardRef)(({
+        tl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2605,20 +2605,20 @@ try {
             })
           })
         })),
-        ol = (0, s.forwardRef)(({
+        sl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2627,12 +2627,12 @@ try {
             })
           })
         })),
-        sl = (0, s.forwardRef)(({
+        il = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -2646,27 +2646,27 @@ try {
             }), "XL" === e && (0, r.jsx)(tl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ol, {
+            }), "MD" === e && (0, r.jsx)(sl, {
               ...t,
               ref: a
             })]
           })
         });
-      sl.displayName = "ShieldAlert", sl.categories = ["account", "security", "development", "notifications", "gaming"], sl.tags = ["unshielded", "cybersecurity", "insecure", "unsecured", "safety", "unsafe", "protection", "unprotected", "guardian", "unguarded", "unarmored", "unarmoured", "defenseless", "defenceless", "undefended", "defender", "blocked", "stopped", "intercepted", "interception", "saved", "thwarted", "threat", "prevention", "unprevented", "antivirus", "vigilance", "vigilant", "detection", "detected", "scanned", "found", "exploit", "vulnerability", "vulnerable", "weakness", "infection", "infected", "comprimised", "data leak", "audited", "admin", "verification", "unverified", "uncertified", "warning", "emergency", "attention", "urgent", "alarm", "crest", "bravery", "strength", "tough", "attacked", "damaged", "injured", "hit", "expired", "disabled", "inactive", "error", "exclamation mark", "!"], sl.SM = al, sl.LG = rl, sl.XL = tl, sl.MD = ol;
-      const dl = (0, s.forwardRef)(({
+      il.displayName = "ShieldAlert", il.categories = ["account", "security", "development", "notifications", "gaming"], il.tags = ["unshielded", "cybersecurity", "insecure", "unsecured", "safety", "unsafe", "protection", "unprotected", "guardian", "unguarded", "unarmored", "unarmoured", "defenseless", "defenceless", "undefended", "defender", "blocked", "stopped", "intercepted", "interception", "saved", "thwarted", "threat", "prevention", "unprevented", "antivirus", "vigilance", "vigilant", "detection", "detected", "scanned", "found", "exploit", "vulnerability", "vulnerable", "weakness", "infection", "infected", "comprimised", "data leak", "audited", "admin", "verification", "unverified", "uncertified", "warning", "emergency", "attention", "urgent", "alarm", "crest", "bravery", "strength", "tough", "attacked", "damaged", "injured", "hit", "expired", "disabled", "inactive", "error", "exclamation mark", "!"], il.SM = al, il.LG = rl, il.XL = tl, il.MD = sl;
+      const dl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2677,20 +2677,20 @@ try {
             })
           })
         })),
-        il = (0, s.forwardRef)(({
+        ol = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2701,20 +2701,20 @@ try {
             })
           })
         })),
-        nl = (0, s.forwardRef)(({
+        hl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2725,20 +2725,20 @@ try {
             })
           })
         })),
-        cl = (0, s.forwardRef)(({
+        nl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2747,12 +2747,12 @@ try {
             })
           })
         })),
-        hl = (0, s.forwardRef)(({
+        cl = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -2760,33 +2760,33 @@ try {
             children: ["SM" === e && (0, r.jsx)(dl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(il, {
+            }), "LG" === e && (0, r.jsx)(ol, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(nl, {
+            }), "XL" === e && (0, r.jsx)(hl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(cl, {
+            }), "MD" === e && (0, r.jsx)(nl, {
               ...t,
               ref: a
             })]
           })
         });
-      hl.displayName = "PersonPlus", hl.categories = ["account"], hl.tags = ["new", "add", "create", "follow", "subscribe"], hl.SM = dl, hl.LG = il, hl.XL = nl, hl.MD = cl;
-      const fl = (0, s.forwardRef)(({
+      cl.displayName = "PersonPlus", cl.categories = ["account"], cl.tags = ["new", "add", "create", "follow", "subscribe"], cl.SM = dl, cl.LG = ol, cl.XL = hl, cl.MD = nl;
+      const fl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2797,20 +2797,20 @@ try {
             })
           })
         })),
-        vl = (0, s.forwardRef)(({
+        wl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2821,20 +2821,20 @@ try {
             })
           })
         })),
-        wl = (0, s.forwardRef)(({
+        vl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2845,20 +2845,20 @@ try {
             })
           })
         })),
-        gl = (0, s.forwardRef)(({
+        xl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2867,12 +2867,12 @@ try {
             })
           })
         })),
-        xl = (0, s.forwardRef)(({
+        gl = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -2880,33 +2880,33 @@ try {
             children: ["SM" === e && (0, r.jsx)(fl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(vl, {
+            }), "LG" === e && (0, r.jsx)(wl, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(wl, {
+            }), "XL" === e && (0, r.jsx)(vl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(gl, {
+            }), "MD" === e && (0, r.jsx)(xl, {
               ...t,
               ref: a
             })]
           })
         });
-      xl.displayName = "Envelope", xl.categories = ["text", "account", "mail"], xl.tags = ["email", "message", "letter", "unread", "inbox", "chat", "letter", "invitation"], xl.SM = fl, xl.LG = vl, xl.XL = wl, xl.MD = gl;
-      const ul = (0, s.forwardRef)(({
+      gl.displayName = "Envelope", gl.categories = ["text", "account", "mail"], gl.tags = ["email", "message", "letter", "unread", "inbox", "chat", "letter", "invitation"], gl.SM = fl, gl.LG = wl, gl.XL = vl, gl.MD = xl;
+      const jl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -2917,20 +2917,20 @@ try {
             })
           })
         })),
-        bl = (0, s.forwardRef)(({
+        ml = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -2941,20 +2941,20 @@ try {
             })
           })
         })),
-        pl = (0, s.forwardRef)(({
+        pl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -2965,20 +2965,20 @@ try {
             })
           })
         })),
-        jl = (0, s.forwardRef)(({
+        ul = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -2987,46 +2987,46 @@ try {
             })
           })
         })),
-        ml = (0, s.forwardRef)(({
+        bl = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ul, {
+            children: ["SM" === e && (0, r.jsx)(jl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(bl, {
+            }), "LG" === e && (0, r.jsx)(ml, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(pl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(jl, {
+            }), "MD" === e && (0, r.jsx)(ul, {
               ...t,
               ref: a
             })]
           })
         });
-      ml.displayName = "MapPin", ml.categories = ["navigation", "travel", "account"], ml.tags = ["location", "waypoint", "marker", "drop"], ml.SM = ul, ml.LG = bl, ml.XL = pl, ml.MD = jl;
-      const Ml = (0, s.forwardRef)(({
+      bl.displayName = "MapPin", bl.categories = ["navigation", "travel", "account"], bl.tags = ["location", "waypoint", "marker", "drop"], bl.SM = jl, bl.LG = ml, bl.XL = pl, bl.MD = ul;
+      const Ml = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3037,20 +3037,20 @@ try {
             })
           })
         })),
-        Rl = (0, s.forwardRef)(({
+        Rl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3061,20 +3061,20 @@ try {
             })
           })
         })),
-        yl = (0, s.forwardRef)(({
+        Ll = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3083,20 +3083,20 @@ try {
             })
           })
         })),
-        Ll = (0, s.forwardRef)(({
+        zl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3107,12 +3107,12 @@ try {
             })
           })
         })),
-        zl = (0, s.forwardRef)(({
+        Cl = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -3123,30 +3123,30 @@ try {
             }), "LG" === e && (0, r.jsx)(Rl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(yl, {
+            }), "MD" === e && (0, r.jsx)(Ll, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ll, {
+            }), "XL" === e && (0, r.jsx)(zl, {
               ...t,
               ref: a
             })]
           })
         });
-      zl.displayName = "ShieldCheck", zl.categories = ["account", "security", "development", "gaming"], zl.tags = ["cybersecurity", "secured", "safety", "protection", "protected", "guardian", "guarded", "armored", "armoured", "defense", "defence", "defended", "blocked", "threat", "prevention", "prevented", "antivirus", "vigilance", "vigilant", "active", "activated", "enabled", "detection", "scanned", "found", "strength", "strong", "tough", "invincible", "invincibility", "invulnerable", "undamaged", "audited", "admin", "verification", "verified", "certification", "certified", "tested", "passed", "qualified", "cleared", "cleaned", "disinfected", "uninfected", "task", "completed", "todo", "done", "ticked", "checked", "crest", "bravery"], zl.SM = Ml, zl.LG = Rl, zl.MD = yl, zl.XL = Ll;
-      const Cl = (0, s.forwardRef)(({
+      Cl.displayName = "ShieldCheck", Cl.categories = ["account", "security", "development", "gaming"], Cl.tags = ["cybersecurity", "secured", "safety", "protection", "protected", "guardian", "guarded", "armored", "armoured", "defense", "defence", "defended", "blocked", "threat", "prevention", "prevented", "antivirus", "vigilance", "vigilant", "active", "activated", "enabled", "detection", "scanned", "found", "strength", "strong", "tough", "invincible", "invincibility", "invulnerable", "undamaged", "audited", "admin", "verification", "verified", "certification", "certified", "tested", "passed", "qualified", "cleared", "cleaned", "disinfected", "uninfected", "task", "completed", "todo", "done", "ticked", "checked", "crest", "bravery"], Cl.SM = Ml, Cl.LG = Rl, Cl.MD = Ll, Cl.XL = zl;
+      const Hl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3157,20 +3157,20 @@ try {
             })
           })
         })),
-        Hl = (0, s.forwardRef)(({
+        Al = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3181,20 +3181,20 @@ try {
             })
           })
         })),
-        Al = (0, s.forwardRef)(({
+        Vl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3205,20 +3205,20 @@ try {
             })
           })
         })),
-        Vl = (0, s.forwardRef)(({
+        Bl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3227,46 +3227,46 @@ try {
             })
           })
         })),
-        Bl = (0, s.forwardRef)(({
+        Il = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Cl, {
+            children: ["SM" === e && (0, r.jsx)(Hl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Hl, {
+            }), "LG" === e && (0, r.jsx)(Al, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Al, {
+            }), "XL" === e && (0, r.jsx)(Vl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Vl, {
+            }), "MD" === e && (0, r.jsx)(Bl, {
               ...t,
               ref: a
             })]
           })
         });
-      Bl.displayName = "Wrench", Bl.categories = ["account", "development", "tools"], Bl.tags = ["account", "settings", "spanner", "diy", "toolbox", "build", "construction"], Bl.SM = Cl, Bl.LG = Hl, Bl.XL = Al, Bl.MD = Vl;
-      const Il = (0, s.forwardRef)(({
+      Il.displayName = "Wrench", Il.categories = ["account", "development", "tools"], Il.tags = ["account", "settings", "spanner", "diy", "toolbox", "build", "construction"], Il.SM = Hl, Il.LG = Al, Il.XL = Vl, Il.MD = Bl;
+      const Sl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -3284,20 +3284,20 @@ try {
             })]
           })
         })),
-        Sl = (0, s.forwardRef)(({
+        yl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -3315,20 +3315,20 @@ try {
             })]
           })
         })),
-        ql = (0, s.forwardRef)(({
+        Dl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -3346,20 +3346,20 @@ try {
             })]
           })
         })),
-        Dl = (0, s.forwardRef)(({
+        Gl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3368,46 +3368,46 @@ try {
             })
           })
         })),
-        Nl = (0, s.forwardRef)(({
+        Nl = (0, i.forwardRef)(({
           size: e = "LG",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["LG" === e && (0, r.jsx)(Il, {
+            children: ["LG" === e && (0, r.jsx)(Sl, {
               ...t,
               ref: a
-            }), "SM" === e && (0, r.jsx)(Sl, {
+            }), "SM" === e && (0, r.jsx)(yl, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ql, {
+            }), "XL" === e && (0, r.jsx)(Dl, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Dl, {
+            }), "MD" === e && (0, r.jsx)(Gl, {
               ...t,
               ref: a
             })]
           })
         });
-      Nl.displayName = "Gear", Nl.categories = ["account"], Nl.tags = ["Cog", "Settings", "Preferences", "Options", "Custom", "Customize"], Nl.LG = Il, Nl.SM = Sl, Nl.XL = ql, Nl.MD = Dl;
-      const Xl = (0, s.forwardRef)(({
+      Nl.displayName = "Gear", Nl.categories = ["account"], Nl.tags = ["Cog", "Settings", "Preferences", "Options", "Custom", "Customize"], Nl.LG = Sl, Nl.SM = yl, Nl.XL = Dl, Nl.MD = Gl;
+      const Xl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3418,20 +3418,20 @@ try {
             })
           })
         })),
-        Gl = (0, s.forwardRef)(({
+        ql = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3442,20 +3442,20 @@ try {
             })
           })
         })),
-        kl = (0, s.forwardRef)(({
+        Pl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3466,20 +3466,20 @@ try {
             })
           })
         })),
-        Fl = (0, s.forwardRef)(({
+        Fl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3488,12 +3488,12 @@ try {
             })
           })
         })),
-        _l = (0, s.forwardRef)(({
+        kl = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -3501,10 +3501,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(Xl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Gl, {
+            }), "LG" === e && (0, r.jsx)(ql, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(kl, {
+            }), "XL" === e && (0, r.jsx)(Pl, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Fl, {
@@ -3513,21 +3513,21 @@ try {
             })]
           })
         });
-      _l.displayName = "Handshake", _l.categories = ["account", "social", "communication", "finance", "security"], _l.tags = ["agreement", "partnership", "deal", "business", "assistance", "cooperation", "friendship", "union", "terms"], _l.SM = Xl, _l.LG = Gl, _l.XL = kl, _l.MD = Fl;
-      const Pl = (0, s.forwardRef)(({
+      kl.displayName = "Handshake", kl.categories = ["account", "social", "communication", "finance", "security"], kl.tags = ["agreement", "partnership", "deal", "business", "assistance", "cooperation", "friendship", "union", "terms"], kl.SM = Xl, kl.LG = ql, kl.XL = Pl, kl.MD = Fl;
+      const Ol = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3538,20 +3538,20 @@ try {
             })
           })
         })),
-        El = (0, s.forwardRef)(({
+        Tl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3562,20 +3562,20 @@ try {
             })
           })
         })),
-        Ol = (0, s.forwardRef)(({
+        El = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3586,20 +3586,20 @@ try {
             })
           })
         })),
-        Tl = (0, s.forwardRef)(({
+        Ul = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3608,46 +3608,46 @@ try {
             })
           })
         })),
-        Ul = (0, s.forwardRef)(({
+        _l = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Pl, {
+            children: ["SM" === e && (0, r.jsx)(Ol, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(El, {
+            }), "LG" === e && (0, r.jsx)(Tl, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ol, {
+            }), "XL" === e && (0, r.jsx)(El, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Tl, {
+            }), "MD" === e && (0, r.jsx)(Ul, {
               ...t,
               ref: a
             })]
           })
         });
-      Ul.displayName = "PersonMinus", Ul.categories = ["account"], Ul.tags = ["delete", "remove", "unfollow", "unsubscribe"], Ul.SM = Pl, Ul.LG = El, Ul.XL = Ol, Ul.MD = Tl;
-      const Wl = (0, s.forwardRef)(({
+      _l.displayName = "PersonMinus", _l.categories = ["account"], _l.tags = ["delete", "remove", "unfollow", "unsubscribe"], _l.SM = Ol, _l.LG = Tl, _l.XL = El, _l.MD = Ul;
+      const Wl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3658,20 +3658,20 @@ try {
             })
           })
         })),
-        Yl = (0, s.forwardRef)(({
+        Zl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3682,20 +3682,20 @@ try {
             })
           })
         })),
-        Zl = (0, s.forwardRef)(({
+        Yl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3706,20 +3706,20 @@ try {
             })
           })
         })),
-        Kl = (0, s.forwardRef)(({
+        Kl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3728,12 +3728,12 @@ try {
             })
           })
         })),
-        Jl = (0, s.forwardRef)(({
+        Ql = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -3741,10 +3741,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(Wl, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Yl, {
+            }), "LG" === e && (0, r.jsx)(Zl, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Zl, {
+            }), "XL" === e && (0, r.jsx)(Yl, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Kl, {
@@ -3753,21 +3753,21 @@ try {
             })]
           })
         });
-      Jl.displayName = "Star", Jl.categories = ["account", "social", "shapes", "multimedia", "weather", "emoji", "gaming"], Jl.tags = ["bookmark", "favorite", "like", "review", "rating"], Jl.SM = Wl, Jl.LG = Yl, Jl.XL = Zl, Jl.MD = Kl;
-      const Ql = (0, s.forwardRef)(({
+      Ql.displayName = "Star", Ql.categories = ["account", "social", "shapes", "multimedia", "weather", "emoji", "gaming"], Ql.tags = ["bookmark", "favorite", "like", "review", "rating"], Ql.SM = Wl, Ql.LG = Zl, Ql.XL = Yl, Ql.MD = Kl;
+      const Jl = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3778,20 +3778,20 @@ try {
             })
           })
         })),
-        $l = (0, s.forwardRef)(({
+        $l = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3802,20 +3802,20 @@ try {
             })
           })
         })),
-        ea = (0, s.forwardRef)(({
+        ea = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3826,20 +3826,20 @@ try {
             })
           })
         })),
-        la = (0, s.forwardRef)(({
+        la = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3850,17 +3850,17 @@ try {
             })
           })
         })),
-        aa = (0, s.forwardRef)(({
+        aa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ql, {
+            children: ["SM" === e && (0, r.jsx)(Jl, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)($l, {
@@ -3875,21 +3875,21 @@ try {
             })]
           })
         });
-      aa.displayName = "PersonBlock", aa.categories = ["account"], aa.tags = ["ban", "block", "delete", "remove", "report"], aa.SM = Ql, aa.LG = $l, aa.MD = ea, aa.XL = la;
-      const ra = (0, s.forwardRef)(({
+      aa.displayName = "PersonBlock", aa.categories = ["account"], aa.tags = ["ban", "block", "delete", "remove", "report"], aa.SM = Jl, aa.LG = $l, aa.MD = ea, aa.XL = la;
+      const ra = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -3900,20 +3900,20 @@ try {
             })
           })
         })),
-        ta = (0, s.forwardRef)(({
+        ta = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -3924,20 +3924,20 @@ try {
             })
           })
         })),
-        oa = (0, s.forwardRef)(({
+        sa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -3948,20 +3948,20 @@ try {
             })
           })
         })),
-        sa = (0, s.forwardRef)(({
+        ia = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -3970,12 +3970,12 @@ try {
             })
           })
         })),
-        da = (0, s.forwardRef)(({
+        da = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -3986,30 +3986,30 @@ try {
             }), "LG" === e && (0, r.jsx)(ta, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(oa, {
+            }), "XL" === e && (0, r.jsx)(sa, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(sa, {
+            }), "MD" === e && (0, r.jsx)(ia, {
               ...t,
               ref: a
             })]
           })
         });
-      da.displayName = "TwoPeople", da.categories = ["account"], da.tags = ["group", "people"], da.SM = ra, da.LG = ta, da.XL = oa, da.MD = sa;
-      const ia = (0, s.forwardRef)(({
+      da.displayName = "TwoPeople", da.categories = ["account"], da.tags = ["group", "people"], da.SM = ra, da.LG = ta, da.XL = sa, da.MD = ia;
+      const oa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4020,20 +4020,20 @@ try {
             })
           })
         })),
-        na = (0, s.forwardRef)(({
+        ha = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4044,20 +4044,20 @@ try {
             })
           })
         })),
-        ca = (0, s.forwardRef)(({
+        na = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4068,20 +4068,20 @@ try {
             })
           })
         })),
-        ha = (0, s.forwardRef)(({
+        ca = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4090,46 +4090,46 @@ try {
             })
           })
         })),
-        fa = (0, s.forwardRef)(({
+        fa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ia, {
+            children: ["SM" === e && (0, r.jsx)(oa, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(na, {
+            }), "LG" === e && (0, r.jsx)(ha, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ca, {
+            }), "XL" === e && (0, r.jsx)(na, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ha, {
+            }), "MD" === e && (0, r.jsx)(ca, {
               ...t,
               ref: a
             })]
           })
         });
-      fa.displayName = "Menu", fa.categories = ["layout", "account"], fa.tags = ["bars", "navigation", "hamburger", "options", "side nav", "triple bar", "item"], fa.SM = ia, fa.LG = na, fa.XL = ca, fa.MD = ha;
-      const va = (0, s.forwardRef)(({
+      fa.displayName = "Menu", fa.categories = ["layout", "account"], fa.tags = ["bars", "navigation", "hamburger", "options", "side nav", "triple bar", "item"], fa.SM = oa, fa.LG = ha, fa.XL = na, fa.MD = ca;
+      const wa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4138,20 +4138,20 @@ try {
             })
           })
         })),
-        wa = (0, s.forwardRef)(({
+        va = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4160,20 +4160,20 @@ try {
             })
           })
         })),
-        ga = (0, s.forwardRef)(({
+        xa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4182,20 +4182,20 @@ try {
             })
           })
         })),
-        xa = (0, s.forwardRef)(({
+        ga = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4204,46 +4204,46 @@ try {
             })
           })
         })),
-        ua = (0, s.forwardRef)(({
+        ja = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(va, {
+            children: ["SM" === e && (0, r.jsx)(wa, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(wa, {
+            }), "MD" === e && (0, r.jsx)(va, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ga, {
+            }), "LG" === e && (0, r.jsx)(xa, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(xa, {
+            }), "XL" === e && (0, r.jsx)(ga, {
               ...t,
               ref: a
             })]
           })
         });
-      ua.displayName = "Activity", ua.categories = ["account"], ua.tags = ["pulse", "action", "motion", "movement", "exercise", "fitness", "healthcare", "heart rate monitor", "vital signs", "vitals", "shockwave", "audio", "waveform", "synthesizer", "synthesiser", "music"], ua.SM = va, ua.MD = wa, ua.LG = ga, ua.XL = xa;
-      const ba = (0, s.forwardRef)(({
+      ja.displayName = "Activity", ja.categories = ["account"], ja.tags = ["pulse", "action", "motion", "movement", "exercise", "fitness", "healthcare", "heart rate monitor", "vital signs", "vitals", "shockwave", "audio", "waveform", "synthesizer", "synthesiser", "music"], ja.SM = wa, ja.MD = va, ja.LG = xa, ja.XL = ga;
+      const ma = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4252,20 +4252,20 @@ try {
             })
           })
         })),
-        pa = (0, s.forwardRef)(({
+        pa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4274,20 +4274,20 @@ try {
             })
           })
         })),
-        ja = (0, s.forwardRef)(({
+        ua = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4296,20 +4296,20 @@ try {
             })
           })
         })),
-        ma = (0, s.forwardRef)(({
+        ba = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4318,126 +4318,146 @@ try {
             })
           })
         })),
-        Ma = (0, s.forwardRef)(({
+        Ma = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ba, {
+            children: ["SM" === e && (0, r.jsx)(ma, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(pa, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ja, {
+            }), "LG" === e && (0, r.jsx)(ua, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ma, {
+            }), "XL" === e && (0, r.jsx)(ba, {
               ...t,
               ref: a
             })]
           })
         });
-      Ma.displayName = "LogOut", Ma.categories = ["account"], Ma.tags = ["sign out", "arrow", "exit", "auth", "log", "out"], Ma.SM = ba, Ma.MD = pa, Ma.LG = ja, Ma.XL = ma;
-      const Ra = (0, s.forwardRef)(({
+      Ma.displayName = "LogOut", Ma.categories = ["account"], Ma.tags = ["sign out", "arrow", "exit", "auth", "log", "out"], Ma.SM = ma, Ma.MD = pa, Ma.LG = ua, Ma.XL = ba;
+      const Ra = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
-          children: (0, r.jsx)("svg", {
+          children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
-            children: (0, r.jsx)("path", {
+            children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M7.826 5.924C7.826 4.838 6.984 4 5.996 4c-.987 0-1.83.838-1.83 1.924 0 1.019.74 1.82 1.646 1.915l.184.01.184-.01c.906-.096 1.646-.896 1.646-1.915m5.507 5.41c0-1.42-1.179-2.595-2.663-2.595l-.001-.001h-.002a.667.667 0 0 1-.135-1.32l.135-.013.146-.007c.722-.072 1.266-.666 1.266-1.362 0-.743-.62-1.37-1.412-1.37a.667.667 0 1 1 0-1.333c1.503 0 2.745 1.197 2.745 2.703 0 .734-.298 1.394-.775 1.879 1.208.672 2.03 1.945 2.03 3.419a.667.667 0 0 1-1.334 0m-4.174-5.41c0 .962-.41 1.834-1.066 2.435 1.533.795 2.574 2.436 2.574 4.307a.667.667 0 0 1-1.334 0c0-1.947-1.515-3.484-3.333-3.484s-3.333 1.537-3.333 3.484a.667.667 0 0 1-1.334 0c0-1.868 1.038-3.508 2.568-4.304a3.3 3.3 0 0 1-1.068-2.438c0-1.775 1.393-3.257 3.163-3.258S9.16 4.15 9.16 5.925"
-            })
+              d: "M6.005 2.09a3.5 3.5 0 0 1 3.501 3.5 3.5 3.5 0 0 1-1.357 2.765 5.33 5.33 0 0 1 3.191 4.884.665.665 0 0 1-1.33 0 4.005 4.005 0 1 0-8.01 0 .665.665 0 0 1-1.33 0 5.34 5.34 0 0 1 3.19-4.884A3.5 3.5 0 0 1 6.005 2.09m0 1.33a2.17 2.17 0 1 0 0 4.34 2.17 2.17 0 0 0 0-4.34",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M11.423 3.39c1.503 0 2.745 1.197 2.745 2.702 0 .774-.331 1.466-.855 1.956.357.236.674.529.942.855.673.822 1.085 1.905 1.085 2.97a.666.666 0 0 1-1.33 0c0-.738-.292-1.526-.783-2.126-.49-.597-1.128-.953-1.801-.953l-.002-.001-.001.001a.665.665 0 1 1 0-1.33c.794 0 1.415-.627 1.415-1.372s-.62-1.372-1.415-1.372a.665.665 0 1 1 0-1.33"
+            })]
           })
         })),
-        ya = (0, s.forwardRef)(({
+        La = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
-          children: (0, r.jsx)("svg", {
+          children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
-            children: (0, r.jsx)("path", {
+            children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M9.783 7.406c0-1.358-1.053-2.407-2.288-2.407S5.208 6.048 5.208 7.406c0 1.273.926 2.272 2.059 2.392l.228.013.23-.013c1.132-.12 2.058-1.12 2.058-2.392m6.884 6.76c0-1.775-1.475-3.244-3.33-3.244h-.004a.833.833 0 0 1-.085-1.662l.085-.004.184-.008c.901-.09 1.582-.833 1.582-1.704 0-.928-.775-1.71-1.766-1.71a.834.834 0 0 1 0-1.668c1.879 0 3.431 1.497 3.432 3.378 0 .919-.37 1.744-.967 2.35 1.51.841 2.535 2.432 2.535 4.272a.833.833 0 1 1-1.666 0m-5.218-6.76a4.13 4.13 0 0 1-1.33 3.045c1.915.995 3.214 3.045 3.214 5.382a.833.833 0 0 1-1.666 0c0-2.434-1.895-4.355-4.167-4.355s-4.167 1.92-4.167 4.355a.833.833 0 0 1-1.666 0c0-2.335 1.296-4.383 3.207-5.38a4.13 4.13 0 0 1-1.333-3.047c0-2.22 1.741-4.072 3.954-4.073 2.213 0 3.954 1.853 3.954 4.073"
-            })
+              d: "M7.497 2.62a4.377 4.377 0 0 1 2.687 7.828 6.67 6.67 0 0 1 3.98 6.1.835.835 0 1 1-1.67 0 4.998 4.998 0 0 0-9.994 0 .835.835 0 1 1-1.67 0 6.67 6.67 0 0 1 3.98-6.1A4.376 4.376 0 0 1 7.496 2.62m0 1.67a2.706 2.706 0 1 0 0 5.413 2.706 2.706 0 0 0 0-5.413",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M14.264 4.244c1.879 0 3.432 1.497 3.432 3.379 0 .967-.41 1.831-1.063 2.444.444.294.839.659 1.172 1.065.84 1.027 1.355 2.38 1.355 3.712a.835.835 0 0 1-1.67 0c0-.92-.365-1.906-.977-2.654-.611-.745-1.406-1.187-2.246-1.187l-.002-.001h-.002a.835.835 0 0 1-.085-1.665l.085-.004.183-.009c.9-.09 1.58-.831 1.58-1.701 0-.928-.773-1.709-1.762-1.709a.835.835 0 1 1 0-1.67"
+            })]
           })
         })),
-        La = (0, s.forwardRef)(({
+        za = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
-          children: (0, r.jsx)("svg", {
+          children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
-            children: (0, r.jsx)("path", {
+            children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M11.74 8.887C11.74 7.257 10.475 6 8.993 6S6.25 7.257 6.25 8.887c0 1.527 1.111 2.728 2.47 2.872l.275.014.276-.014c1.359-.144 2.47-1.345 2.47-2.872M20 17c0-2.13-1.769-3.892-3.995-3.893H16a1 1 0 1 1 0-2c1.19 0 2.118-.938 2.118-2.053S17.19 7 16 7a1 1 0 1 1 0-2c2.255 0 4.118 1.795 4.118 4.054a4 4 0 0 1-1.161 2.819C20.768 12.883 22 14.791 22 17a1 1 0 1 1-2 0m-6.26-8.113a4.95 4.95 0 0 1-1.597 3.654C14.44 13.735 16 16.195 16 19a1 1 0 1 1-2 0c0-2.922-2.273-5.227-5-5.227S4 16.078 4 19a1 1 0 1 1-2 0c0-2.802 1.556-5.26 3.85-6.455a4.95 4.95 0 0 1-1.601-3.658C4.249 6.223 6.339 4 8.994 4s4.745 2.223 4.745 4.887"
-            })
+              d: "M9 3.14a5.25 5.25 0 0 1 3.22 9.394A8 8 0 0 1 17 19.855a1 1 0 1 1-2 0 6 6 0 0 0-5.702-5.992L9 13.855a6 6 0 0 0-6 6 1 1 0 1 1-2 0 8 8 0 0 1 4.778-7.321A5.25 5.25 0 0 1 9 3.14m0 2a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M17.12 5.09c2.255 0 4.118 1.795 4.118 4.053 0 1.16-.494 2.198-1.278 2.933a6.4 6.4 0 0 1 1.408 1.279c1.01 1.232 1.627 2.856 1.627 4.453a1 1 0 0 1-2 0c0-1.105-.438-2.286-1.174-3.184-.733-.895-1.688-1.427-2.696-1.427l-.002-.001h-.003a1 1 0 0 1 0-2c1.19 0 2.118-.938 2.118-2.053S18.31 7.09 17.12 7.09a1 1 0 0 1 0-2"
+            })]
           })
         })),
-        za = (0, s.forwardRef)(({
+        Ca = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
-          children: (0, r.jsx)("svg", {
+          children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
-            children: (0, r.jsx)("path", {
+            children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M15.652 11.85c0-2.174-1.685-3.85-3.66-3.85s-3.66 1.677-3.66 3.85c0 2.104 1.582 3.743 3.477 3.843l.183.005.185-.005c1.894-.1 3.475-1.74 3.475-3.844m11.015 10.817c0-2.84-2.359-5.19-5.327-5.19q-.048-.002-.094-.006a1.331 1.331 0 0 1-.049-2.654l.429-.022c1.443-.142 2.531-1.33 2.531-2.723 0-1.486-1.238-2.738-2.824-2.738a1.334 1.334 0 0 1 0-2.667c3.006 0 5.491 2.394 5.491 5.405 0 1.469-.593 2.79-1.548 3.759 2.416 1.345 4.057 3.89 4.057 6.836a1.333 1.333 0 1 1-2.666 0m-8.348-10.818c0 1.922-.818 3.671-2.129 4.872 3.064 1.592 5.143 4.872 5.143 8.613a1.333 1.333 0 0 1-2.666 0c0-3.896-3.031-6.97-6.667-6.97s-6.667 3.074-6.667 6.97a1.333 1.333 0 0 1-2.666 0c0-3.737 2.074-7.014 5.133-8.608a6.6 6.6 0 0 1-2.134-4.877c0-3.551 2.786-6.515 6.326-6.515s6.327 2.964 6.327 6.515"
-            })
+              d: "M11.998 4.19A7 7 0 0 1 19 11.192a6.99 6.99 0 0 1-2.704 5.524 10.7 10.7 0 0 1 3.246 2.218c2 2 3.125 4.715 3.125 7.544a1.336 1.336 0 0 1-2.67 0 8 8 0 0 0-13.654-5.656A8 8 0 0 0 4 26.478a1.335 1.335 0 0 1-2.67 0 10.67 10.67 0 0 1 6.37-9.762A7.002 7.002 0 0 1 11.998 4.19m0 2.67A4.332 4.332 0 1 0 12 15.524a4.332 4.332 0 0 0-.002-8.664",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M22.825 6.789c3.007 0 5.492 2.394 5.492 5.406a5.34 5.34 0 0 1-1.703 3.911 8.5 8.5 0 0 1 1.876 1.705c1.346 1.643 2.17 3.808 2.17 5.938a1.335 1.335 0 0 1-2.67 0c0-1.474-.584-3.05-1.565-4.247-.977-1.192-2.25-1.9-3.594-1.9h-.006a1.335 1.335 0 0 1-.136-2.663l.43-.021c1.441-.144 2.529-1.33 2.529-2.723s-1.088-2.579-2.53-2.722l-.43-.021a1.335 1.335 0 0 1 .137-2.663"
+            })]
           })
         })),
-        Ca = (0, s.forwardRef)(({
+        Ha = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -4445,147 +4465,155 @@ try {
             children: ["SM" === e && (0, r.jsx)(Ra, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ya, {
+            }), "MD" === e && (0, r.jsx)(La, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(La, {
+            }), "LG" === e && (0, r.jsx)(za, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(za, {
+            }), "XL" === e && (0, r.jsx)(Ca, {
               ...t,
               ref: a
             })]
           })
         });
-      Ca.displayName = "UserCouple", Ca.categories = ["account"], Ca.tags = ["person", "account", "contact", "profile", "avatar", "user", "users", "people", "human", "couple", "two", "group", "partner", "dual", "duo"], Ca.SM = Ra, Ca.MD = ya, Ca.LG = La, Ca.XL = za;
-      const Ha = (0, s.forwardRef)(({
+      Ha.displayName = "UserCouple", Ha.categories = ["account"], Ha.tags = ["person", "account", "contact", "profile", "avatar", "user", "users", "people", "human", "couple", "two", "group", "partner", "dual", "duo"], Ha.SM = Ra, Ha.MD = La, Ha.LG = za, Ha.XL = Ca;
+      const Aa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M9.407 6.703c0-.743-.62-1.37-1.414-1.37S6.58 5.96 6.58 6.704c0 .696.544 1.29 1.267 1.361l.146.008.148-.008c.722-.072 1.266-.665 1.266-1.361M.663 10.666a3.05 3.05 0 0 1 1.331-2.525 2.16 2.16 0 0 1-.456-1.327c0-1.176.94-2.147 2.123-2.147a.667.667 0 0 1 0 1.333.803.803 0 0 0-.79.814c0 .46.364.813.79.813h.002a.667.667 0 0 1 0 1.334c-.91 0-1.666.753-1.666 1.705a.667.667 0 0 1-1.334 0m13.334 0c0-.952-.757-1.705-1.667-1.705h-.001a.667.667 0 0 1-.136-1.32l.135-.014.08-.003c.39-.041.709-.379.71-.81a.8.8 0 0 0-.79-.814.667.667 0 1 1 0-1.333c1.183 0 2.123.972 2.123 2.147 0 .498-.171.959-.456 1.325a3.05 3.05 0 0 1 1.335 2.528.667.667 0 0 1-1.333 0m-3.256-3.963c0 .734-.298 1.393-.776 1.878 1.21.672 2.032 1.945 2.032 3.419a.667.667 0 0 1-1.334 0c0-1.42-1.18-2.595-2.666-2.595S5.33 10.58 5.33 12a.667.667 0 0 1-1.333 0c0-1.472.82-2.743 2.026-3.416a2.66 2.66 0 0 1-.777-1.881C5.246 5.197 6.49 4 7.993 4c1.504 0 2.748 1.196 2.748 2.703"
+              d: "M4.51 1.448A2.646 2.646 0 0 1 7.155 4q.407-.106.847-.107.439 0 .845.107A2.648 2.648 0 1 1 13.4 5.945a3.84 3.84 0 0 1 1.93 3.33.665.665 0 1 1-1.33 0 2.51 2.51 0 0 0-2.51-2.51c-.066 0-.13-.006-.193-.01q.033.23.034.468a3.32 3.32 0 0 1-1.17 2.533 4.666 4.666 0 0 1 2.503 4.132.665.665 0 0 1-1.329 0 3.336 3.336 0 0 0-3.335-3.334 3.335 3.335 0 0 0-3.334 3.334.666.666 0 0 1-1.33 0 4.67 4.67 0 0 1 2.502-4.132 3.32 3.32 0 0 1-1.135-3.019q-.096.01-.193.011A2.51 2.51 0 0 0 2 9.258a.665.665 0 0 1-1.331 0 3.84 3.84 0 0 1 1.928-3.33 2.65 2.65 0 0 1 1.913-4.48m3.491 3.774a2.001 2.001 0 1 0 0 4.002 2.001 2.001 0 0 0 0-4.002m3.49-2.427a1.32 1.32 0 0 0-.136 2.633l.135.007.135-.007a1.32 1.32 0 0 0-.135-2.633m-6.98-.017a1.32 1.32 0 1 0 0 2.64 1.32 1.32 0 0 0 0-2.64",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
             })
           })
         })),
-        Aa = (0, s.forwardRef)(({
+        Va = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M11.767 8.378c0-.928-.775-1.711-1.768-1.711s-1.767.783-1.767 1.711S9.006 10.09 10 10.09s1.768-.782 1.768-1.71M.837 13.334c0-1.31.657-2.474 1.663-3.158a2.7 2.7 0 0 1-.57-1.658c0-1.47 1.175-2.685 2.654-2.685a.833.833 0 0 1 0 1.667c-.532 0-.987.443-.987 1.018 0 .539.4.961.888 1.012l.1.005h.002l.085.005a.834.834 0 0 1-.085 1.662c-1.138 0-2.084.941-2.084 2.132a.833.833 0 1 1-1.666 0m16.666 0c0-1.19-.945-2.132-2.083-2.132l-.002-.001a.833.833 0 0 1 0-1.666c.531 0 .986-.442.986-1.017S15.95 7.5 15.417 7.5a.834.834 0 0 1 0-1.666c1.479 0 2.654 1.215 2.654 2.684 0 .622-.213 1.197-.569 1.655a3.81 3.81 0 0 1 1.668 3.16.833.833 0 0 1-1.667 0m-4.07-4.956a3.33 3.33 0 0 1-.968 2.35c1.51.84 2.538 2.431 2.538 4.273a.833.833 0 0 1-1.666 0c0-1.775-1.476-3.245-3.334-3.245s-3.333 1.47-3.333 3.245a.833.833 0 0 1-1.667 0c0-1.84 1.025-3.43 2.532-4.271a3.33 3.33 0 0 1-.97-2.352C6.565 6.496 8.12 5.001 10 5c1.88 0 3.435 1.496 3.435 3.378"
+              d: "M5.634 1.805a3.314 3.314 0 0 1 3.31 3.185 4.2 4.2 0 0 1 1.051-.133q.546.001 1.05.133a3.316 3.316 0 0 1 6.628.15c0 .887-.35 1.692-.918 2.287a4.804 4.804 0 0 1 2.405 4.161.835.835 0 0 1-1.67 0 3.134 3.134 0 0 0-3.133-3.133q-.119-.001-.236-.01.04.284.041.579c0 1.267-.567 2.4-1.459 3.164a5.83 5.83 0 0 1 3.125 5.166.836.836 0 0 1-1.67 0 4.165 4.165 0 0 0-4.163-4.163 4.163 4.163 0 0 0-4.163 4.163.836.836 0 0 1-1.67 0 5.83 5.83 0 0 1 3.124-5.166 4.16 4.16 0 0 1-1.415-3.762q-.118.01-.238.01A3.133 3.133 0 0 0 2.5 11.569a.835.835 0 1 1-1.67 0 4.8 4.8 0 0 1 2.405-4.161 3.316 3.316 0 0 1 2.398-5.603m4.361 4.722a2.497 2.497 0 0 0-.256 4.981l.256.013.255-.013a2.498 2.498 0 0 0-.255-4.981m4.363-3.032a1.646 1.646 0 0 0-.169 3.282l.168.008.168-.008a1.647 1.647 0 0 0-.167-3.282m-8.724-.02a1.646 1.646 0 1 0 0 3.292 1.646 1.646 0 0 0 0-3.292",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
             })
           })
         })),
-        Va = (0, s.forwardRef)(({
+        Ba = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M14.116 10.054c0-1.114-.929-2.054-2.12-2.054-1.193 0-2.122.94-2.122 2.054s.93 2.053 2.121 2.053c1.192 0 2.121-.94 2.121-2.053M1 16c0-1.572.79-2.967 1.996-3.788a3.23 3.23 0 0 1-.683-1.991C2.313 8.458 3.723 7 5.497 7a1 1 0 0 1 0 2c-.639 0-1.184.53-1.184 1.22 0 .647.479 1.155 1.065 1.215l.12.006H5.5a1 1 0 0 1 0 2C4.135 13.441 3 14.571 3 16a1 1 0 1 1-2 0m20 0c0-1.428-1.135-2.559-2.5-2.559h-.003a1 1 0 0 1-.102-1.994l.102-.006.118-.006a1.207 1.207 0 0 0 1.067-1.214c0-.69-.546-1.22-1.185-1.221a1 1 0 1 1 0-2c1.774 0 3.185 1.458 3.185 3.22 0 .748-.257 1.44-.684 1.989A4.57 4.57 0 0 1 23 16a1 1 0 1 1-2 0m-4.884-5.946a4 4 0 0 1-1.162 2.818C16.767 13.882 18 15.791 18 18a1 1 0 1 1-2 0c0-2.13-1.77-3.893-4-3.893S8 15.871 8 18a1 1 0 1 1-2 0c0-2.206 1.23-4.114 3.038-5.124a4 4 0 0 1-1.164-2.822C7.874 7.794 9.74 6 11.995 6s4.121 1.795 4.121 4.054"
+              d: "M6.764 2.168a3.977 3.977 0 0 1 3.973 3.824 5 5 0 0 1 2.527.001 3.977 3.977 0 1 1 6.847 2.924 5.76 5.76 0 0 1 2.89 4.994 1 1 0 0 1-2 0 3.765 3.765 0 0 0-3.764-3.763q-.144-.001-.287-.013.049.342.05.697c0 1.521-.68 2.883-1.753 3.8a7 7 0 0 1 3.753 6.2 1 1 0 1 1-2 0 5 5 0 0 0-4.752-4.994L12 15.832a5 5 0 0 0-5 5 1 1 0 1 1-2 0 7 7 0 0 1 3.752-6.2 4.99 4.99 0 0 1-1.7-4.52 4 4 0 0 1-.288.011A3.764 3.764 0 0 0 3 13.887a1 1 0 1 1-2 0 5.76 5.76 0 0 1 2.889-4.994 3.978 3.978 0 0 1 2.875-6.725M12 7.832a3 3 0 1 0 0 6 3 3 0 0 0 0-6m5.237-3.64a1.978 1.978 0 0 0-.202 3.946l.202.01.203-.01a1.978 1.978 0 0 0-.202-3.945M6.764 4.168a1.978 1.978 0 1 0 0 3.955 1.978 1.978 0 0 0 0-3.955",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
             })
           })
         })),
-        Ba = (0, s.forwardRef)(({
+        Ia = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M18.825 13.405c0-1.485-1.239-2.738-2.828-2.738s-2.828 1.253-2.828 2.738 1.239 2.738 2.828 2.738c1.59 0 2.828-1.253 2.828-2.738M1.337 21.334a6.1 6.1 0 0 1 2.66-5.051 4.3 4.3 0 0 1-.911-2.655c0-2.35 1.88-4.294 4.246-4.294a1.334 1.334 0 1 1 0 2.667c-.852 0-1.579.708-1.579 1.627 0 .863.64 1.538 1.42 1.62l.16.008h.004l.136.007a1.333 1.333 0 0 1-.136 2.66c-1.82 0-3.334 1.506-3.334 3.41a1.333 1.333 0 1 1-2.666 0m26.666 0c0-1.905-1.513-3.412-3.333-3.412h-.004a1.334 1.334 0 0 1-.137-2.659l.137-.007.157-.008c.782-.081 1.422-.757 1.422-1.62 0-.92-.727-1.627-1.579-1.627a1.334 1.334 0 0 1 0-2.667c2.366 0 4.246 1.944 4.246 4.294 0 .997-.34 1.919-.909 2.652a6.1 6.1 0 0 1 2.667 5.054 1.333 1.333 0 0 1-2.667 0m-6.512-7.93c0 1.47-.593 2.79-1.549 3.76 2.418 1.345 4.061 3.89 4.061 6.836a1.333 1.333 0 0 1-2.666 0c0-2.839-2.361-5.19-5.334-5.19S10.67 21.162 10.67 24a1.333 1.333 0 0 1-2.667 0c0-2.941 1.64-5.485 4.052-6.831a5.33 5.33 0 0 1-1.552-3.764C10.503 10.393 12.99 8 15.997 8s5.494 2.393 5.494 5.405"
+              d: "M9.015 2.885a5.3 5.3 0 0 1 5.297 5.097 6.7 6.7 0 0 1 1.683-.213c.581 0 1.145.075 1.683.215a5.304 5.304 0 1 1 9.131 3.898 7.685 7.685 0 0 1 3.85 6.657 1.335 1.335 0 0 1-2.669 0 5.015 5.015 0 0 0-5.015-5.014q-.192-.001-.38-.016.064.455.066.927a6.65 6.65 0 0 1-2.335 5.064 9.33 9.33 0 0 1 5.001 8.266 1.336 1.336 0 0 1-2.67 0 6.665 6.665 0 0 0-6.662-6.663 6.664 6.664 0 0 0-6.663 6.663 1.336 1.336 0 0 1-2.67 0 9.33 9.33 0 0 1 5-8.265 6.65 6.65 0 0 1-2.266-6.024 5 5 0 0 1-.381.016A5.016 5.016 0 0 0 4 18.508a1.335 1.335 0 0 1-2.67 0 7.69 7.69 0 0 1 3.85-6.658 5.304 5.304 0 0 1 3.835-8.965m6.98 7.554a3.997 3.997 0 0 0-.206 7.99l.206.004.205-.005a3.998 3.998 0 0 0-.205-7.989m6.98-4.853a2.634 2.634 0 0 0-.269 5.255l.268.014.27-.014a2.635 2.635 0 0 0-.268-5.255m-13.96-.03a2.634 2.634 0 1 0 0 5.267 2.634 2.634 0 0 0 0-5.268",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
             })
           })
         })),
-        Ia = (0, s.forwardRef)(({
+        Sa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ha, {
+            children: ["SM" === e && (0, r.jsx)(Aa, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Aa, {
+            }), "MD" === e && (0, r.jsx)(Va, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Va, {
+            }), "LG" === e && (0, r.jsx)(Ba, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ba, {
+            }), "XL" === e && (0, r.jsx)(Ia, {
               ...t,
               ref: a
             })]
           })
         });
-      Ia.displayName = "UserGroup", Ia.categories = ["account"], Ia.tags = ["person", "account", "contact", "profile", "avatar", "user", "users", "people", "human", "couple", "three", "group", "crowd", "team"], Ia.SM = Ha, Ia.MD = Aa, Ia.LG = Va, Ia.XL = Ba;
-      const Sa = (0, s.forwardRef)(({
+      Sa.displayName = "UserGroup", Sa.categories = ["account"], Sa.tags = ["person", "account", "contact", "profile", "avatar", "user", "users", "people", "human", "couple", "three", "group", "crowd", "team"], Sa.SM = Aa, Sa.MD = Va, Sa.LG = Ba, Sa.XL = Ia;
+      const ya = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4596,20 +4624,20 @@ try {
             })
           })
         })),
-        qa = (0, s.forwardRef)(({
+        Da = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4620,20 +4648,20 @@ try {
             })
           })
         })),
-        Da = (0, s.forwardRef)(({
+        Ga = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4642,20 +4670,20 @@ try {
             })
           })
         })),
-        Na = (0, s.forwardRef)(({
+        Na = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4666,23 +4694,23 @@ try {
             })
           })
         })),
-        Xa = (0, s.forwardRef)(({
+        Xa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Sa, {
+            children: ["SM" === e && (0, r.jsx)(ya, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(qa, {
+            }), "LG" === e && (0, r.jsx)(Da, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Da, {
+            }), "MD" === e && (0, r.jsx)(Ga, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(Na, {
@@ -4691,21 +4719,21 @@ try {
             })]
           })
         });
-      Xa.displayName = "ArrowUp", Xa.categories = ["arrows", "navigation"], Xa.tags = ["forward", "direction", "north", "increase"], Xa.SM = Sa, Xa.LG = qa, Xa.MD = Da, Xa.XL = Na;
-      const Ga = (0, s.forwardRef)(({
+      Xa.displayName = "ArrowUp", Xa.categories = ["arrows", "navigation"], Xa.tags = ["forward", "direction", "north", "increase"], Xa.SM = ya, Xa.LG = Da, Xa.MD = Ga, Xa.XL = Na;
+      const qa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4716,20 +4744,20 @@ try {
             })
           })
         })),
-        ka = (0, s.forwardRef)(({
+        Pa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4740,20 +4768,20 @@ try {
             })
           })
         })),
-        Fa = (0, s.forwardRef)(({
+        Fa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4762,20 +4790,20 @@ try {
             })
           })
         })),
-        _a = (0, s.forwardRef)(({
+        ka = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4786,46 +4814,46 @@ try {
             })
           })
         })),
-        Pa = (0, s.forwardRef)(({
+        Oa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ga, {
+            children: ["SM" === e && (0, r.jsx)(qa, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ka, {
+            }), "LG" === e && (0, r.jsx)(Pa, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Fa, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(_a, {
+            }), "XL" === e && (0, r.jsx)(ka, {
               ...t,
               ref: a
             })]
           })
         });
-      Pa.displayName = "ArrowLeft", Pa.categories = ["arrows", "navigation"], Pa.tags = ["previous", "back", "direction", "west", "<-", "Left", "Navigation", "Back"], Pa.SM = Ga, Pa.LG = ka, Pa.MD = Fa, Pa.XL = _a;
-      const Ea = (0, s.forwardRef)(({
+      Oa.displayName = "ArrowLeft", Oa.categories = ["arrows", "navigation"], Oa.tags = ["previous", "back", "direction", "west", "<-", "Left", "Navigation", "Back"], Oa.SM = qa, Oa.LG = Pa, Oa.MD = Fa, Oa.XL = ka;
+      const Ta = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4836,20 +4864,20 @@ try {
             })
           })
         })),
-        Oa = (0, s.forwardRef)(({
+        Ea = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4860,20 +4888,20 @@ try {
             })
           })
         })),
-        Ta = (0, s.forwardRef)(({
+        Ua = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -4882,20 +4910,20 @@ try {
             })
           })
         })),
-        Ua = (0, s.forwardRef)(({
+        _a = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -4906,46 +4934,46 @@ try {
             })
           })
         })),
-        Wa = (0, s.forwardRef)(({
+        Wa = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ea, {
+            children: ["SM" === e && (0, r.jsx)(Ta, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Oa, {
+            }), "LG" === e && (0, r.jsx)(Ea, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ta, {
+            }), "MD" === e && (0, r.jsx)(Ua, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ua, {
+            }), "XL" === e && (0, r.jsx)(_a, {
               ...t,
               ref: a
             })]
           })
         });
-      Wa.displayName = "ArrowUpDown", Wa.categories = ["arrows", "navigation"], Wa.tags = ["bidirectional", "two-way", "2-way", "swap", "switch", "network", "mobile data", "internet", "sort", "reorder", "move", "Sortable", "Control", "Filter", "Sort"], Wa.SM = Ea, Wa.LG = Oa, Wa.MD = Ta, Wa.XL = Ua;
-      const Ya = (0, s.forwardRef)(({
+      Wa.displayName = "ArrowUpDown", Wa.categories = ["arrows", "navigation"], Wa.tags = ["bidirectional", "two-way", "2-way", "swap", "switch", "network", "mobile data", "internet", "sort", "reorder", "move", "Sortable", "Control", "Filter", "Sort"], Wa.SM = Ta, Wa.LG = Ea, Wa.MD = Ua, Wa.XL = _a;
+      const Za = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -4956,20 +4984,20 @@ try {
             })
           })
         })),
-        Za = (0, s.forwardRef)(({
+        Ya = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -4980,20 +5008,20 @@ try {
             })
           })
         })),
-        Ka = (0, s.forwardRef)(({
+        Ka = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5002,20 +5030,20 @@ try {
             })
           })
         })),
-        Ja = (0, s.forwardRef)(({
+        Qa = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5026,46 +5054,46 @@ try {
             })
           })
         })),
-        Qa = (0, s.forwardRef)(({
+        Ja = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ya, {
+            children: ["SM" === e && (0, r.jsx)(Za, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Za, {
+            }), "LG" === e && (0, r.jsx)(Ya, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Ka, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ja, {
+            }), "XL" === e && (0, r.jsx)(Qa, {
               ...t,
               ref: a
             })]
           })
         });
-      Qa.displayName = "ArrowRightLeft", Qa.categories = ["arrows", "navigation"], Qa.tags = ["bidirectional", "two-way", "2-way", "swap", "switch", "transaction", "reorder", "move", "<-", "->"], Qa.SM = Ya, Qa.LG = Za, Qa.MD = Ka, Qa.XL = Ja;
-      const $a = (0, s.forwardRef)(({
+      Ja.displayName = "ArrowRightLeft", Ja.categories = ["arrows", "navigation"], Ja.tags = ["bidirectional", "two-way", "2-way", "swap", "switch", "transaction", "reorder", "move", "<-", "->"], Ja.SM = Za, Ja.LG = Ya, Ja.MD = Ka, Ja.XL = Qa;
+      const $a = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5076,20 +5104,20 @@ try {
             })
           })
         })),
-        er = (0, s.forwardRef)(({
+        er = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5100,20 +5128,20 @@ try {
             })
           })
         })),
-        lr = (0, s.forwardRef)(({
+        lr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5122,20 +5150,20 @@ try {
             })
           })
         })),
-        ar = (0, s.forwardRef)(({
+        ar = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5146,12 +5174,12 @@ try {
             })
           })
         })),
-        rr = (0, s.forwardRef)(({
+        rr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -5172,20 +5200,20 @@ try {
           })
         });
       rr.displayName = "ChevronUp", rr.categories = ["arrows", "navigation", "math", "gaming"], rr.tags = ["caret", "keyboard", "mac", "control", "ctrl", "superscript", "exponential", "power", "ahead", "fast", "^", "dropdown", "up", "direction", "top"], rr.SM = $a, rr.LG = er, rr.MD = lr, rr.XL = ar;
-      const tr = (0, s.forwardRef)(({
+      const tr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5196,20 +5224,20 @@ try {
             })
           })
         })),
-        or = (0, s.forwardRef)(({
+        sr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5220,20 +5248,20 @@ try {
             })
           })
         })),
-        sr = (0, s.forwardRef)(({
+        ir = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5242,20 +5270,20 @@ try {
             })
           })
         })),
-        dr = (0, s.forwardRef)(({
+        dr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5266,12 +5294,12 @@ try {
             })
           })
         })),
-        ir = (0, s.forwardRef)(({
+        or = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -5279,10 +5307,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(tr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(or, {
+            }), "LG" === e && (0, r.jsx)(sr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(sr, {
+            }), "MD" === e && (0, r.jsx)(ir, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(dr, {
@@ -5291,21 +5319,21 @@ try {
             })]
           })
         });
-      ir.displayName = "ArrowDown", ir.categories = ["arrows", "navigation"], ir.tags = ["backwards", "reverse", "direction", "south", "Down", "Navigation", "Decrease"], ir.SM = tr, ir.LG = or, ir.MD = sr, ir.XL = dr;
-      const nr = (0, s.forwardRef)(({
+      or.displayName = "ArrowDown", or.categories = ["arrows", "navigation"], or.tags = ["backwards", "reverse", "direction", "south", "Down", "Navigation", "Decrease"], or.SM = tr, or.LG = sr, or.MD = ir, or.XL = dr;
+      const hr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5316,20 +5344,20 @@ try {
             })
           })
         })),
-        cr = (0, s.forwardRef)(({
+        nr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5340,20 +5368,20 @@ try {
             })
           })
         })),
-        hr = (0, s.forwardRef)(({
+        cr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5362,20 +5390,20 @@ try {
             })
           })
         })),
-        fr = (0, s.forwardRef)(({
+        fr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5386,23 +5414,23 @@ try {
             })
           })
         })),
-        vr = (0, s.forwardRef)(({
+        wr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(nr, {
+            children: ["SM" === e && (0, r.jsx)(hr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(cr, {
+            }), "LG" === e && (0, r.jsx)(nr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(hr, {
+            }), "MD" === e && (0, r.jsx)(cr, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(fr, {
@@ -5411,21 +5439,21 @@ try {
             })]
           })
         });
-      vr.displayName = "ArrowRight", vr.categories = ["arrows", "navigation"], vr.tags = ["forward", "next", "direction", "east", "->"], vr.SM = nr, vr.LG = cr, vr.MD = hr, vr.XL = fr;
-      const wr = (0, s.forwardRef)(({
+      wr.displayName = "ArrowRight", wr.categories = ["arrows", "navigation"], wr.tags = ["forward", "next", "direction", "east", "->"], wr.SM = hr, wr.LG = nr, wr.MD = cr, wr.XL = fr;
+      const vr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5436,20 +5464,20 @@ try {
             })
           })
         })),
-        gr = (0, s.forwardRef)(({
+        xr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5460,20 +5488,20 @@ try {
             })
           })
         })),
-        xr = (0, s.forwardRef)(({
+        gr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5482,20 +5510,20 @@ try {
             })
           })
         })),
-        ur = (0, s.forwardRef)(({
+        jr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5506,46 +5534,46 @@ try {
             })
           })
         })),
-        br = (0, s.forwardRef)(({
+        mr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(wr, {
+            children: ["SM" === e && (0, r.jsx)(vr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(gr, {
+            }), "LG" === e && (0, r.jsx)(xr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(xr, {
+            }), "MD" === e && (0, r.jsx)(gr, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ur, {
+            }), "XL" === e && (0, r.jsx)(jr, {
               ...t,
               ref: a
             })]
           })
         });
-      br.displayName = "ChevronDown", br.categories = ["arrows", "navigation", "gaming"], br.tags = ["backwards", "reverse", "slow", "dropdown", "down", "direction", "bottom"], br.SM = wr, br.LG = gr, br.MD = xr, br.XL = ur;
-      const pr = (0, s.forwardRef)(({
+      mr.displayName = "ChevronDown", mr.categories = ["arrows", "navigation", "gaming"], mr.tags = ["backwards", "reverse", "slow", "dropdown", "down", "direction", "bottom"], mr.SM = vr, mr.LG = xr, mr.MD = gr, mr.XL = jr;
+      const pr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5556,20 +5584,20 @@ try {
             })
           })
         })),
-        jr = (0, s.forwardRef)(({
+        ur = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5580,20 +5608,20 @@ try {
             })
           })
         })),
-        mr = (0, s.forwardRef)(({
+        br = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5602,20 +5630,20 @@ try {
             })
           })
         })),
-        Mr = (0, s.forwardRef)(({
+        Mr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5626,12 +5654,12 @@ try {
             })
           })
         })),
-        Rr = (0, s.forwardRef)(({
+        Rr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -5639,10 +5667,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(pr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(jr, {
+            }), "LG" === e && (0, r.jsx)(ur, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(mr, {
+            }), "MD" === e && (0, r.jsx)(br, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(Mr, {
@@ -5651,21 +5679,21 @@ try {
             })]
           })
         });
-      Rr.displayName = "ChevronLeft", Rr.categories = ["arrows", "navigation"], Rr.tags = ["back", "previous", "less than", "fewer", "menu", "left", "direction", "side"], Rr.SM = pr, Rr.LG = jr, Rr.MD = mr, Rr.XL = Mr;
-      const yr = (0, s.forwardRef)(({
+      Rr.displayName = "ChevronLeft", Rr.categories = ["arrows", "navigation"], Rr.tags = ["back", "previous", "less than", "fewer", "menu", "left", "direction", "side"], Rr.SM = pr, Rr.LG = ur, Rr.MD = br, Rr.XL = Mr;
+      const Lr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5676,20 +5704,20 @@ try {
             })
           })
         })),
-        Lr = (0, s.forwardRef)(({
+        zr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5700,20 +5728,20 @@ try {
             })
           })
         })),
-        zr = (0, s.forwardRef)(({
+        Cr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5722,20 +5750,20 @@ try {
             })
           })
         })),
-        Cr = (0, s.forwardRef)(({
+        Hr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5746,46 +5774,46 @@ try {
             })
           })
         })),
-        Hr = (0, s.forwardRef)(({
+        Ar = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(yr, {
+            children: ["SM" === e && (0, r.jsx)(Lr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Lr, {
+            }), "LG" === e && (0, r.jsx)(zr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(zr, {
+            }), "MD" === e && (0, r.jsx)(Cr, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Cr, {
+            }), "XL" === e && (0, r.jsx)(Hr, {
               ...t,
               ref: a
             })]
           })
         });
-      Hr.displayName = "ChevronRight", Hr.categories = ["arrows", "navigation", "math", "development"], Hr.tags = ["forward", "next", "more than", "greater", "menu", "code", "coding", "command line", "terminal", "prompt", "shell", "right", "direction", "side"], Hr.SM = yr, Hr.LG = Lr, Hr.MD = zr, Hr.XL = Cr;
-      const Ar = (0, s.forwardRef)(({
+      Ar.displayName = "ChevronRight", Ar.categories = ["arrows", "navigation", "math", "development"], Ar.tags = ["forward", "next", "more than", "greater", "menu", "code", "coding", "command line", "terminal", "prompt", "shell", "right", "direction", "side"], Ar.SM = Lr, Ar.LG = zr, Ar.MD = Cr, Ar.XL = Hr;
+      const Vr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5796,20 +5824,20 @@ try {
             })
           })
         })),
-        Vr = (0, s.forwardRef)(({
+        Br = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5820,20 +5848,20 @@ try {
             })
           })
         })),
-        Br = (0, s.forwardRef)(({
+        Ir = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5842,20 +5870,20 @@ try {
             })
           })
         })),
-        Ir = (0, s.forwardRef)(({
+        Sr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5866,46 +5894,46 @@ try {
             })
           })
         })),
-        Sr = (0, s.forwardRef)(({
+        yr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ar, {
+            children: ["SM" === e && (0, r.jsx)(Vr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Vr, {
+            }), "LG" === e && (0, r.jsx)(Br, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Br, {
+            }), "MD" === e && (0, r.jsx)(Ir, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ir, {
+            }), "XL" === e && (0, r.jsx)(Sr, {
               ...t,
               ref: a
             })]
           })
         });
-      Sr.displayName = "ChevronsDownUp", Sr.categories = ["arrows"], Sr.tags = ["collapse", "fold", "vertical"], Sr.SM = Ar, Sr.LG = Vr, Sr.MD = Br, Sr.XL = Ir;
-      const qr = (0, s.forwardRef)(({
+      yr.displayName = "ChevronsDownUp", yr.categories = ["arrows"], yr.tags = ["collapse", "fold", "vertical"], yr.SM = Vr, yr.LG = Br, yr.MD = Ir, yr.XL = Sr;
+      const Dr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -5916,20 +5944,20 @@ try {
             })
           })
         })),
-        Dr = (0, s.forwardRef)(({
+        Gr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -5940,20 +5968,20 @@ try {
             })
           })
         })),
-        Nr = (0, s.forwardRef)(({
+        Nr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -5962,20 +5990,20 @@ try {
             })
           })
         })),
-        Xr = (0, s.forwardRef)(({
+        Xr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -5986,20 +6014,20 @@ try {
             })
           })
         })),
-        Gr = (0, s.forwardRef)(({
+        qr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(qr, {
+            children: ["SM" === e && (0, r.jsx)(Dr, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Dr, {
+            }), "LG" === e && (0, r.jsx)(Gr, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Nr, {
@@ -6011,21 +6039,21 @@ try {
             })]
           })
         });
-      Gr.displayName = "CloudUpload", Gr.categories = ["arrows", "files"], Gr.tags = ["file"], Gr.SM = qr, Gr.LG = Dr, Gr.MD = Nr, Gr.XL = Xr;
-      const kr = (0, s.forwardRef)(({
+      qr.displayName = "CloudUpload", qr.categories = ["arrows", "files"], qr.tags = ["file"], qr.SM = Dr, qr.LG = Gr, qr.MD = Nr, qr.XL = Xr;
+      const Pr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -6036,20 +6064,20 @@ try {
             })
           })
         })),
-        Fr = (0, s.forwardRef)(({
+        Fr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6060,20 +6088,20 @@ try {
             })
           })
         })),
-        _r = (0, s.forwardRef)(({
+        kr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -6082,20 +6110,20 @@ try {
             })
           })
         })),
-        Pr = (0, s.forwardRef)(({
+        Or = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6106,46 +6134,46 @@ try {
             })
           })
         })),
-        Er = (0, s.forwardRef)(({
+        Tr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(kr, {
+            children: ["SM" === e && (0, r.jsx)(Pr, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Fr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(_r, {
+            }), "MD" === e && (0, r.jsx)(kr, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Pr, {
+            }), "XL" === e && (0, r.jsx)(Or, {
               ...t,
               ref: a
             })]
           })
         });
-      Er.displayName = "ChevronsLeftRight", Er.categories = ["arrows"], Er.tags = ["expand", "horizontal", "unfold"], Er.SM = kr, Er.LG = Fr, Er.MD = _r, Er.XL = Pr;
-      const Or = (0, s.forwardRef)(({
+      Tr.displayName = "ChevronsLeftRight", Tr.categories = ["arrows"], Tr.tags = ["expand", "horizontal", "unfold"], Tr.SM = Pr, Tr.LG = Fr, Tr.MD = kr, Tr.XL = Or;
+      const Er = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -6156,20 +6184,20 @@ try {
             })
           })
         })),
-        Tr = (0, s.forwardRef)(({
+        Ur = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6180,20 +6208,20 @@ try {
             })
           })
         })),
-        Ur = (0, s.forwardRef)(({
+        _r = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -6202,20 +6230,20 @@ try {
             })
           })
         })),
-        Wr = (0, s.forwardRef)(({
+        Wr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6226,23 +6254,23 @@ try {
             })
           })
         })),
-        Yr = (0, s.forwardRef)(({
+        Zr = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Or, {
+            children: ["SM" === e && (0, r.jsx)(Er, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Tr, {
+            }), "LG" === e && (0, r.jsx)(Ur, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ur, {
+            }), "MD" === e && (0, r.jsx)(_r, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(Wr, {
@@ -6251,21 +6279,21 @@ try {
             })]
           })
         });
-      Yr.displayName = "ChevronFirst", Yr.categories = ["arrows", "multimedia"], Yr.tags = ["previous", "music"], Yr.SM = Or, Yr.LG = Tr, Yr.MD = Ur, Yr.XL = Wr;
-      const Zr = (0, s.forwardRef)(({
+      Zr.displayName = "ChevronFirst", Zr.categories = ["arrows", "multimedia"], Zr.tags = ["previous", "music"], Zr.SM = Er, Zr.LG = Ur, Zr.MD = _r, Zr.XL = Wr;
+      const Yr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -6276,20 +6304,20 @@ try {
             })
           })
         })),
-        Kr = (0, s.forwardRef)(({
+        Kr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6300,20 +6328,20 @@ try {
             })
           })
         })),
-        Jr = (0, s.forwardRef)(({
+        Qr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -6322,20 +6350,20 @@ try {
             })
           })
         })),
-        Qr = (0, s.forwardRef)(({
+        Jr = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6346,46 +6374,46 @@ try {
             })
           })
         })),
-        $r = (0, s.forwardRef)(({
+        $r = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Zr, {
+            children: ["SM" === e && (0, r.jsx)(Yr, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Kr, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Jr, {
+            }), "MD" === e && (0, r.jsx)(Qr, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Qr, {
+            }), "XL" === e && (0, r.jsx)(Jr, {
               ...t,
               ref: a
             })]
           })
         });
-      $r.displayName = "ChevronLast", $r.categories = ["arrows", "multimedia"], $r.tags = ["skip", "next", "music"], $r.SM = Zr, $r.LG = Kr, $r.MD = Jr, $r.XL = Qr;
-      const et = (0, s.forwardRef)(({
+      $r.displayName = "ChevronLast", $r.categories = ["arrows", "multimedia"], $r.tags = ["skip", "next", "music"], $r.SM = Yr, $r.LG = Kr, $r.MD = Qr, $r.XL = Jr;
+      const et = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -6396,20 +6424,20 @@ try {
             })
           })
         })),
-        lt = (0, s.forwardRef)(({
+        lt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6420,20 +6448,20 @@ try {
             })
           })
         })),
-        at = (0, s.forwardRef)(({
+        at = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -6442,20 +6470,20 @@ try {
             })
           })
         })),
-        rt = (0, s.forwardRef)(({
+        rt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6466,12 +6494,12 @@ try {
             })
           })
         })),
-        tt = (0, s.forwardRef)(({
+        tt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -6492,20 +6520,20 @@ try {
           })
         });
       tt.displayName = "ChevronsUpDown", tt.categories = ["arrows"], tt.tags = ["expand", "unfold", "vertical"], tt.SM = et, tt.LG = lt, tt.MD = at, tt.XL = rt;
-      const ot = (0, s.forwardRef)(({
+      const st = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -6516,20 +6544,20 @@ try {
             })
           })
         })),
-        st = (0, s.forwardRef)(({
+        it = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6540,20 +6568,20 @@ try {
             })
           })
         })),
-        dt = (0, s.forwardRef)(({
+        dt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -6562,20 +6590,20 @@ try {
             })
           })
         })),
-        it = (0, s.forwardRef)(({
+        ot = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6586,192 +6614,190 @@ try {
             })
           })
         })),
-        nt = (0, s.forwardRef)(({
+        ht = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ot, {
+            children: ["SM" === e && (0, r.jsx)(st, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(st, {
+            }), "LG" === e && (0, r.jsx)(it, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(dt, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(it, {
+            }), "XL" === e && (0, r.jsx)(ot, {
               ...t,
               ref: a
             })]
           })
         });
-      nt.displayName = "CloudDownload", nt.categories = ["arrows", "files"], nt.tags = ["import"], nt.SM = ot, nt.LG = st, nt.MD = dt, nt.XL = it;
-      const ct = (0, s.forwardRef)(({
+      ht.displayName = "CloudDownload", ht.categories = ["arrows", "files"], ht.tags = ["import"], ht.SM = st, ht.LG = it, ht.MD = dt, ht.XL = ot;
+      const nt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M13.328 2c.371 0 .672.301.672.672V6.64a.672.672 0 0 1-1.345 0V4.295l-2.84 2.841a.672.672 0 1 1-.951-.95l2.84-2.841H9.362a.672.672 0 1 1 0-1.345zM2.672 14A.67.67 0 0 1 2 13.328V9.36a.672.672 0 0 1 1.345 0v2.344l2.84-2.841a.672.672 0 1 1 .951.95l-2.84 2.841h2.343a.672.672 0 0 1 0 1.345z",
+              d: "M13.914 1.34c.412 0 .746.334.746.746V6.49a.746.746 0 1 1-1.492 0V3.888L10.014 7.04A.746.746 0 0 1 8.96 5.986l3.153-3.154h-2.6a.746.746 0 0 1 0-1.492zM2.086 14.66a.746.746 0 0 1-.746-.746V9.51a.746.746 0 1 1 1.493 0v2.601L5.986 8.96a.746.746 0 1 1 1.056 1.055l-3.154 3.154h2.6a.746.746 0 1 1 0 1.492z",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        ht = (0, s.forwardRef)(({
+        ct = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M19.992 3C20.548 3 21 3.451 21 4.008v5.95a1.008 1.008 0 0 1-2.017 0V6.443l-4.261 4.262a1.008 1.008 0 1 1-1.427-1.427l4.262-4.261h-3.515a1.008 1.008 0 0 1 0-2.017zM4.008 21A1.01 1.01 0 0 1 3 19.992v-5.95a1.008 1.008 0 0 1 2.017 0v3.515l4.261-4.262a1.008 1.008 0 1 1 1.427 1.427l-4.262 4.261h3.515a1.008 1.008 0 0 1 0 2.017z",
+              d: "M20.885 2.02c.618 0 1.12.501 1.12 1.12v6.605a1.12 1.12 0 0 1-2.24 0V5.843l-4.731 4.731a1.12 1.12 0 1 1-1.584-1.583l4.732-4.732H14.28a1.12 1.12 0 1 1 0-2.239zM3.14 22.004a1.12 1.12 0 0 1-1.12-1.12V14.28a1.12 1.12 0 1 1 2.24 0v3.902l4.73-4.732a1.12 1.12 0 1 1 1.584 1.584l-4.731 4.731h3.902a1.12 1.12 0 1 1 0 2.24z",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        ft = (0, s.forwardRef)(({
+        ft = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M16.66 2.5a.84.84 0 0 1 .84.84v4.958a.84.84 0 1 1-1.68 0V5.37l-3.552 3.552a.84.84 0 1 1-1.189-1.189l3.552-3.551H11.7a.84.84 0 1 1 0-1.681zM3.34 17.5a.84.84 0 0 1-.84-.84v-4.958a.84.84 0 1 1 1.68 0v2.929l3.552-3.552a.84.84 0 0 1 1.189 1.189l-3.552 3.551H8.3a.84.84 0 1 1 0 1.681z",
+              d: "M16.947 2.16c.484 0 .877.393.877.877v5.178a.878.878 0 1 1-1.755 0V5.156L12.36 8.865a.878.878 0 0 1-1.24-1.241l3.708-3.709h-3.059a.878.878 0 1 1 0-1.755zM3.038 17.824a.88.88 0 0 1-.878-.878V11.77a.878.878 0 0 1 1.755 0v3.059l3.709-3.709a.878.878 0 0 1 1.24 1.241L5.157 16.07h3.059a.878.878 0 0 1 0 1.755z",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        vt = (0, s.forwardRef)(({
+        wt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M26.655 4C27.398 4 28 4.602 28 5.345v7.932a1.345 1.345 0 0 1-2.69 0V8.591l-5.681 5.682a1.345 1.345 0 1 1-1.902-1.902L23.41 6.69h-4.686a1.345 1.345 0 0 1 0-2.689zM5.345 28A1.345 1.345 0 0 1 4 26.655v-7.932a1.345 1.345 0 0 1 2.69 0v4.686l5.681-5.682a1.345 1.345 0 1 1 1.902 1.902L8.59 25.31h4.686a1.345 1.345 0 0 1 0 2.689z",
+              d: "M27.819 2.7c.823 0 1.49.668 1.49 1.491v8.795a1.49 1.49 0 0 1-2.981 0V7.79l-6.3 6.3a1.49 1.49 0 0 1-2.108-2.108l6.3-6.3h-5.196a1.49 1.49 0 1 1 0-2.982zM4.19 29.31a1.49 1.49 0 0 1-1.49-1.491v-8.795a1.49 1.49 0 0 1 2.982 0v5.196l6.3-6.3a1.49 1.49 0 1 1 2.108 2.108l-6.3 6.3h5.196a1.49 1.49 0 0 1 0 2.982z",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        wt = (0, s.forwardRef)(({
+        vt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ct, {
+            children: ["SM" === e && (0, r.jsx)(nt, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ht, {
+            }), "LG" === e && (0, r.jsx)(ct, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(ft, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(vt, {
+            }), "XL" === e && (0, r.jsx)(wt, {
               ...t,
               ref: a
             })]
           })
         });
-      wt.displayName = "Maximize2", wt.categories = ["arrows", "layout", "design"], wt.tags = ["fullscreen", "arrows", "expand"], wt.SM = ct, wt.LG = ht, wt.MD = ft, wt.XL = vt;
-      const gt = (0, s.forwardRef)(({
+      vt.displayName = "Maximize2", vt.categories = ["arrows", "layout", "design"], vt.tags = ["fullscreen", "arrows", "expand"], vt.SM = nt, vt.LG = ct, vt.MD = ft, vt.XL = wt;
+      const xt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M8.003 14.666A.667.667 0 0 0 8.67 14V6.276l2.862 2.862a.667.667 0 1 0 .943-.943l-4-4a.667.667 0 0 0-.943 0l-4 4a.667.667 0 1 0 .943.943l2.862-2.862V14c0 .368.298.666.666.666M2.67 2c0-.369.299-.667.667-.667h9.333a.667.667 0 1 1 0 1.333H3.337A.667.667 0 0 1 2.67 2",
-              fillRule: "evenodd",
-              clipRule: "evenodd"
+              d: "M7.337 13.997V6.272L4.475 9.135a.666.666 0 1 1-.943-.943l4-4 .105-.086a.67.67 0 0 1 .838.086l4 4a.666.666 0 1 1-.943.943L8.67 6.272v7.725a.667.667 0 1 1-1.333 0M12.67 1.33a.667.667 0 0 1 0 1.334H3.337a.667.667 0 0 1 0-1.334z"
             })
           })
         })),
-        xt = (0, s.forwardRef)(({
+        gt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6782,44 +6808,42 @@ try {
             })
           })
         })),
-        ut = (0, s.forwardRef)(({
+        jt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M9.997 18.334c.46 0 .833-.373.833-.834V7.846l3.577 3.577a.833.833 0 1 0 1.179-1.179l-5-5a.833.833 0 0 0-1.179 0l-5 5a.833.833 0 1 0 1.179 1.179l3.577-3.577V17.5c0 .46.373.834.834.834M3.33 2.5c0-.46.373-.833.833-.833H15.83a.833.833 0 0 1 0 1.667H4.163A.833.833 0 0 1 3.33 2.5",
-              fillRule: "evenodd",
-              clipRule: "evenodd"
+              d: "M9.163 17.006V7.849l-3.577 3.577a.834.834 0 0 1-1.179-1.179l5-5 .064-.058a.834.834 0 0 1 1.115.058l5 5a.834.834 0 0 1-1.179 1.179L10.83 7.849v9.157a.834.834 0 0 1-1.667 0M15.83 2.17a.833.833 0 0 1 0 1.666H4.163a.833.833 0 1 1 0-1.666z"
             })
           })
         })),
-        bt = (0, s.forwardRef)(({
+        mt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6830,70 +6854,68 @@ try {
             })
           })
         })),
-        pt = (0, s.forwardRef)(({
+        pt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(gt, {
+            children: ["SM" === e && (0, r.jsx)(xt, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(xt, {
+            }), "LG" === e && (0, r.jsx)(gt, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ut, {
+            }), "MD" === e && (0, r.jsx)(jt, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(bt, {
+            }), "XL" === e && (0, r.jsx)(mt, {
               ...t,
               ref: a
             })]
           })
         });
-      pt.displayName = "Upload", pt.categories = ["arrows", "files"], pt.tags = ["file", "up", "file", "share"], pt.SM = gt, pt.LG = xt, pt.MD = ut, pt.XL = bt;
-      const jt = (0, s.forwardRef)(({
+      pt.displayName = "Upload", pt.categories = ["arrows", "files"], pt.tags = ["file", "up", "file", "share"], pt.SM = xt, pt.LG = gt, pt.MD = jt, pt.XL = mt;
+      const ut = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "17",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 17",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M8.003 2.333c.369 0 .667.298.667.667v7.724l2.862-2.862a.667.667 0 1 1 .943.942l-4 4a.667.667 0 0 1-.943 0l-4-4a.667.667 0 1 1 .943-.942l2.862 2.861V3c0-.369.298-.667.666-.667M2.67 15c0-.368.299-.667.667-.667h9.333a.667.667 0 0 1 0 1.333H3.337A.667.667 0 0 1 2.67 15",
-              fillRule: "evenodd",
-              clipRule: "evenodd"
+              d: "M12.67 14.33a.667.667 0 0 1 0 1.334H3.337a.667.667 0 0 1 0-1.334zM7.337 2.997a.667.667 0 0 1 1.333 0v7.725l2.862-2.863a.666.666 0 1 1 .943.943l-4 4a.667.667 0 0 1-.943 0l-4-4a.666.666 0 0 1 .943-.943l2.862 2.863z"
             })
           })
         })),
-        mt = (0, s.forwardRef)(({
+        bt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -6904,44 +6926,42 @@ try {
             })
           })
         })),
-        Mt = (0, s.forwardRef)(({
+        Mt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M9.997 1.667c.46 0 .833.373.833.833v9.655l3.577-3.577a.833.833 0 1 1 1.179 1.178l-5 5a.833.833 0 0 1-1.179 0l-5-5a.833.833 0 1 1 1.179-1.178l3.577 3.577V2.5c0-.46.373-.833.834-.833M3.33 17.5c0-.46.373-.833.833-.833H15.83a.833.833 0 0 1 0 1.667H4.163a.833.833 0 0 1-.833-.834",
-              fillRule: "evenodd",
-              clipRule: "evenodd"
+              d: "M15.83 16.17a.833.833 0 0 1 0 1.666H4.163a.833.833 0 1 1 0-1.666zM9.163 3.003a.833.833 0 1 1 1.667 0v8.654l3.577-3.577a.834.834 0 0 1 1.179 1.179l-5 5a.835.835 0 0 1-1.179 0l-5-5A.834.834 0 0 1 5.586 8.08l3.577 3.577z"
             })
           })
         })),
-        Rt = (0, s.forwardRef)(({
+        Rt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -6952,20 +6972,20 @@ try {
             })
           })
         })),
-        yt = (0, s.forwardRef)(({
+        Lt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(jt, {
+            children: ["SM" === e && (0, r.jsx)(ut, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(mt, {
+            }), "LG" === e && (0, r.jsx)(bt, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Mt, {
@@ -6977,21 +6997,21 @@ try {
             })]
           })
         });
-      yt.displayName = "Download", yt.categories = ["arrows", "files"], yt.tags = ["import", "export", "save", "down"], yt.SM = jt, yt.LG = mt, yt.MD = Mt, yt.XL = Rt;
-      const Lt = (0, s.forwardRef)(({
+      Lt.displayName = "Download", Lt.categories = ["arrows", "files"], Lt.tags = ["import", "export", "save", "down"], Lt.SM = ut, Lt.LG = bt, Lt.MD = Mt, Lt.XL = Rt;
+      const zt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -7002,20 +7022,20 @@ try {
             })
           })
         })),
-        zt = (0, s.forwardRef)(({
+        Ct = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -7026,20 +7046,20 @@ try {
             })
           })
         })),
-        Ct = (0, s.forwardRef)(({
+        Ht = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -7048,20 +7068,20 @@ try {
             })
           })
         })),
-        Ht = (0, s.forwardRef)(({
+        At = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -7072,208 +7092,208 @@ try {
             })
           })
         })),
-        At = (0, s.forwardRef)(({
+        Vt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Lt, {
+            children: ["SM" === e && (0, r.jsx)(zt, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(zt, {
+            }), "LG" === e && (0, r.jsx)(Ct, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ct, {
+            }), "MD" === e && (0, r.jsx)(Ht, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ht, {
+            }), "XL" === e && (0, r.jsx)(At, {
               ...t,
               ref: a
             })]
           })
         });
-      At.displayName = "ExternalLink", At.categories = ["arrows", "text", "social"], At.tags = ["outbound", "share", "link", "new tab", "new window", "open", "URL", "hyperlink", "external"], At.SM = Lt, At.LG = zt, At.MD = Ct, At.XL = Ht;
-      const Vt = (0, s.forwardRef)(({
+      Vt.displayName = "ExternalLink", Vt.categories = ["arrows", "text", "social"], Vt.tags = ["outbound", "share", "link", "new tab", "new window", "open", "URL", "hyperlink", "external"], Vt.SM = zt, Vt.LG = Ct, Vt.MD = Ht, Vt.XL = At;
+      const Bt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M8.003 2.667H8a5.33 5.33 0 0 0-5.278 4.571.667.667 0 0 0 1.32.19A4 4 0 0 1 7.998 4a4.4 4.4 0 0 1 3.029 1.23l1.168 1.167a.667.667 0 1 0 .942-.942l-1.171-1.172-.008-.008a5.72 5.72 0 0 0-3.956-1.608",
+              d: "M8.003 1.36H8a6.64 6.64 0 0 0-6.572 5.692.83.83 0 0 0 1.643.237A4.98 4.98 0 0 1 8 3.019a5.46 5.46 0 0 1 3.77 1.532l1.455 1.454a.83.83 0 0 0 1.174-1.174l-1.46-1.46-.01-.009A7.12 7.12 0 0 0 8.003 1.36",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M12.667 2.667a.667.667 0 0 0-.667.666v2h-2a.667.667 0 0 0 0 1.334h2.667A.667.667 0 0 0 13.334 6V3.333a.667.667 0 0 0-.667-.666M12.714 8.007a.667.667 0 0 0-.755.565A4 4 0 0 1 8.002 12a4.4 4.4 0 0 1-3.03-1.23L3.806 9.604a.667.667 0 1 0-.943.943l1.172 1.171.008.008a5.72 5.72 0 0 0 3.956 1.608H8a5.33 5.33 0 0 0 5.279-4.571.667.667 0 0 0-.565-.755",
+              d: "M13.81 1.36a.83.83 0 0 0-.83.83v2.49h-2.49a.83.83 0 0 0 0 1.66h3.32a.83.83 0 0 0 .83-.83V2.19a.83.83 0 0 0-.83-.83M13.87 8.009a.83.83 0 0 0-.94.703 4.98 4.98 0 0 1-4.928 4.268 5.46 5.46 0 0 1-3.771-1.53L2.777 9.996a.83.83 0 0 0-1.174 1.173l1.46 1.46.01.01a7.13 7.13 0 0 0 4.924 2.002H8a6.64 6.64 0 0 0 6.573-5.692.83.83 0 0 0-.703-.94",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M6.667 10A.667.667 0 0 0 6 9.333H3.334a.667.667 0 0 0-.667.667v2.667a.667.667 0 0 0 1.333 0v-2h2A.667.667 0 0 0 6.667 10",
+              d: "M6.34 10.49a.83.83 0 0 0-.83-.83H2.19a.83.83 0 0 0-.83.83v3.32a.83.83 0 1 0 1.66 0v-2.49h2.49a.83.83 0 0 0 .83-.83",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        Bt = (0, s.forwardRef)(({
+        It = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M12.004 4H12a8 8 0 0 0-7.918 6.857 1 1 0 0 0 1.98.286A6 6 0 0 1 11.998 6a6.58 6.58 0 0 1 4.543 1.844l1.752 1.752a1 1 0 1 0 1.414-1.414L17.95 6.424l-.012-.012A8.58 8.58 0 0 0 12.004 4",
+              d: "M12.005 2.063H12a9.94 9.94 0 0 0-9.836 8.517 1.242 1.242 0 0 0 2.46.355 7.45 7.45 0 0 1 7.374-6.388 8.18 8.18 0 0 1 5.643 2.291l2.176 2.176a1.242 1.242 0 1 0 1.757-1.757L19.39 5.074l-.015-.015a10.66 10.66 0 0 0-7.37-2.996",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M19 4a1 1 0 0 0-1 1v3h-3a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1M19.071 12.01a1 1 0 0 0-1.133.847A6 6 0 0 1 12.003 18a6.58 6.58 0 0 1-4.543-1.844l-1.752-1.752a1 1 0 0 0-1.414 1.414l1.758 1.758.012.012A8.58 8.58 0 0 0 11.996 20H12a8 8 0 0 0 7.918-6.857 1 1 0 0 0-.847-1.133",
+              d: "M20.695 2.063c-.686 0-1.242.556-1.242 1.242V7.03h-3.726a1.242 1.242 0 1 0 0 2.485h4.968c.686 0 1.242-.557 1.242-1.243V3.305c0-.686-.556-1.242-1.242-1.242M20.784 12.013a1.24 1.24 0 0 0-1.407 1.052 7.454 7.454 0 0 1-7.375 6.388 8.18 8.18 0 0 1-5.643-2.291l-2.176-2.176a1.242 1.242 0 1 0-1.757 1.757l2.184 2.183.015.015a10.66 10.66 0 0 0 7.37 2.997H12a9.94 9.94 0 0 0 9.836-8.518 1.24 1.24 0 0 0-1.052-1.407",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M10 15a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-3h3a1 1 0 0 0 1-1",
+              d: "M9.516 15.727c0-.687-.557-1.243-1.243-1.243H3.305c-.686 0-1.243.556-1.243 1.243v4.968a1.242 1.242 0 1 0 2.485 0V16.97h3.726c.686 0 1.243-.556 1.243-1.242",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        It = (0, s.forwardRef)(({
+        St = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M10.003 3.333H10A6.67 6.67 0 0 0 3.4 9.047a.833.833 0 1 0 1.65.238A5 5 0 0 1 9.998 5a5.49 5.49 0 0 1 3.786 1.537l1.46 1.46a.833.833 0 1 0 1.178-1.18l-1.465-1.464-.01-.01a7.15 7.15 0 0 0-4.944-2.01",
+              d: "M10.324 2.2h-.004a7.82 7.82 0 0 0-7.74 6.703.978.978 0 0 0 1.935.28 5.865 5.865 0 0 1 5.803-5.028 6.44 6.44 0 0 1 4.441 1.803l1.712 1.712a.978.978 0 1 0 1.383-1.382L16.136 4.57l-.012-.012a8.4 8.4 0 0 0-5.8-2.358",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M15.833 3.333a.833.833 0 0 0-.833.833v2.5h-2.5a.833.833 0 1 0 0 1.667h3.333c.46 0 .833-.373.833-.833V4.166a.833.833 0 0 0-.833-.833M15.892 10.008a.833.833 0 0 0-.944.706A5 5 0 0 1 10.001 15a5.49 5.49 0 0 1-3.786-1.537l-1.46-1.46a.833.833 0 0 0-1.178 1.178l1.465 1.465.01.01a7.15 7.15 0 0 0 4.945 2.01H10a6.666 6.666 0 0 0 6.598-5.714.833.833 0 0 0-.706-.944",
+              d: "M17.163 2.2a.977.977 0 0 0-.978.978V6.11h-2.932a.977.977 0 1 0 0 1.955h3.91c.54 0 .977-.437.977-.977v-3.91a.977.977 0 0 0-.977-.978M17.232 10.03a.98.98 0 0 0-1.107.828 5.866 5.866 0 0 1-5.803 5.027 6.44 6.44 0 0 1-4.441-1.803L4.169 12.37a.978.978 0 0 0-1.383 1.383l1.719 1.718.011.011a8.4 8.4 0 0 0 5.8 2.358h.004a7.82 7.82 0 0 0 7.74-6.703.977.977 0 0 0-.828-1.107",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M8.333 12.5a.833.833 0 0 0-.833-.834H4.166a.833.833 0 0 0-.833.834v3.333a.833.833 0 1 0 1.667 0v-2.5h2.5c.46 0 .833-.373.833-.833",
+              d: "M8.365 12.953a.977.977 0 0 0-.977-.978h-3.91a.977.977 0 0 0-.978.978v3.91a.977.977 0 1 0 1.955 0V13.93h2.933c.54 0 .977-.437.977-.977",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        St = (0, s.forwardRef)(({
+        yt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M16.005 5.333H16a10.67 10.67 0 0 0-10.557 9.143 1.333 1.333 0 0 0 2.64.38A8 8 0 0 1 15.997 8c2.26.009 4.43.89 6.057 2.459l2.336 2.335a1.333 1.333 0 1 0 1.885-1.885l-2.343-2.344-.017-.016a11.44 11.44 0 0 0-7.91-3.216",
+              d: "M16.007 2.626H16A13.374 13.374 0 0 0 2.763 14.088a1.672 1.672 0 0 0 3.31.478 10.03 10.03 0 0 1 9.924-8.598 11 11 0 0 1 7.596 3.084l2.928 2.928a1.672 1.672 0 1 0 2.364-2.364l-2.938-2.94-.02-.019a14.35 14.35 0 0 0-9.92-4.032",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M25.334 5.333c-.737 0-1.334.597-1.334 1.333v4h-4a1.333 1.333 0 1 0 0 2.667h5.334c.736 0 1.333-.597 1.333-1.333V6.666c0-.736-.597-1.333-1.334-1.333M25.428 16.013a1.333 1.333 0 0 0-1.51 1.13A8 8 0 0 1 16.003 24a8.78 8.78 0 0 1-6.058-2.46L7.61 19.206a1.333 1.333 0 0 0-1.886 1.886l2.344 2.343.016.016a11.44 11.44 0 0 0 7.911 3.216H16a10.67 10.67 0 0 0 10.558-9.143 1.333 1.333 0 0 0-1.13-1.51",
+              d: "M27.703 2.626c-.923 0-1.672.748-1.672 1.671v5.016h-5.015a1.672 1.672 0 1 0 0 3.343h6.687c.923 0 1.672-.748 1.672-1.671V4.297c0-.923-.749-1.671-1.672-1.671M27.822 16.017a1.67 1.67 0 0 0-1.893 1.416 10.03 10.03 0 0 1-9.925 8.598 11 11 0 0 1-7.596-3.084L5.48 20.02a1.672 1.672 0 0 0-2.364 2.364l2.939 2.939.02.02a14.35 14.35 0 0 0 9.92 4.032H16A13.374 13.374 0 0 0 29.238 17.91a1.67 1.67 0 0 0-1.416-1.893",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M13.334 20c0-.737-.598-1.334-1.334-1.334H6.667c-.737 0-1.333.597-1.333 1.334v5.333a1.333 1.333 0 1 0 2.666 0v-4h4c.736 0 1.334-.597 1.334-1.333",
+              d: "M12.657 21.015c0-.923-.748-1.672-1.672-1.672H4.298c-.923 0-1.672.749-1.672 1.672v6.687a1.672 1.672 0 0 0 3.344 0v-5.015h5.015c.924 0 1.672-.748 1.672-1.672",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        qt = (0, s.forwardRef)(({
+        Dt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Vt, {
+            children: ["SM" === e && (0, r.jsx)(Bt, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Bt, {
+            }), "LG" === e && (0, r.jsx)(It, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(It, {
+            }), "MD" === e && (0, r.jsx)(St, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(St, {
+            }), "XL" === e && (0, r.jsx)(yt, {
               ...t,
               ref: a
             })]
           })
         });
-      qt.displayName = "RefreshCw", qt.categories = ["arrows"], qt.tags = ["rotate", "reload", "rerun", "synchronise", "synchronize", "arrows", "circular", "cycle", "loop", "repeat", "sync", "update", "reset", "restore", "clockwise"], qt.SM = Vt, qt.LG = Bt, qt.MD = It, qt.XL = St;
-      const Dt = (0, s.forwardRef)(({
+      Dt.displayName = "RefreshCw", Dt.categories = ["arrows"], Dt.tags = ["rotate", "reload", "rerun", "synchronise", "synchronize", "arrows", "circular", "cycle", "loop", "repeat", "sync", "update", "reset", "restore", "clockwise"], Dt.SM = Bt, Dt.LG = It, Dt.MD = St, Dt.XL = yt;
+      const Gt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -7284,20 +7304,20 @@ try {
             })
           })
         })),
-        Nt = (0, s.forwardRef)(({
+        Nt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -7308,20 +7328,20 @@ try {
             })
           })
         })),
-        Xt = (0, s.forwardRef)(({
+        Xt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -7330,20 +7350,20 @@ try {
             })
           })
         })),
-        Gt = (0, s.forwardRef)(({
+        qt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -7354,17 +7374,17 @@ try {
             })
           })
         })),
-        kt = (0, s.forwardRef)(({
+        Pt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Dt, {
+            children: ["SM" === e && (0, r.jsx)(Gt, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Nt, {
@@ -7373,27 +7393,27 @@ try {
             }), "MD" === e && (0, r.jsx)(Xt, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Gt, {
+            }), "XL" === e && (0, r.jsx)(qt, {
               ...t,
               ref: a
             })]
           })
         });
-      kt.displayName = "Replay", kt.categories = ["arrows", "design", "photography"], kt.tags = ["arrow", "right", "clockwise", "refresh", "reload", "rerun", "redo"], kt.SM = Dt, kt.LG = Nt, kt.MD = Xt, kt.XL = Gt;
-      const Ft = (0, s.forwardRef)(({
+      Pt.displayName = "Replay", Pt.categories = ["arrows", "design", "photography"], Pt.tags = ["arrow", "right", "clockwise", "refresh", "reload", "rerun", "redo"], Pt.SM = Gt, Pt.LG = Nt, Pt.MD = Xt, Pt.XL = qt;
+      const Ft = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -7404,20 +7424,20 @@ try {
             })
           })
         })),
-        _t = (0, s.forwardRef)(({
+        kt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -7428,20 +7448,20 @@ try {
             })
           })
         })),
-        Pt = (0, s.forwardRef)(({
+        Ot = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -7450,20 +7470,20 @@ try {
             })
           })
         })),
-        Et = (0, s.forwardRef)(({
+        Tt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -7474,12 +7494,12 @@ try {
             })
           })
         })),
-        Ot = (0, s.forwardRef)(({
+        Et = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -7487,147 +7507,147 @@ try {
             children: ["SM" === e && (0, r.jsx)(Ft, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(_t, {
+            }), "LG" === e && (0, r.jsx)(kt, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Pt, {
+            }), "MD" === e && (0, r.jsx)(Ot, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Et, {
+            }), "XL" === e && (0, r.jsx)(Tt, {
               ...t,
               ref: a
             })]
           })
         });
-      Ot.displayName = "Undo", Ot.categories = ["text", "arrows"], Ot.tags = ["redo", "rerun", "history", "back", "return", "reverse", "revert", "direction", "u-turn", "undo", "arrow", "navigation"], Ot.SM = Ft, Ot.LG = _t, Ot.MD = Pt, Ot.XL = Et;
-      const Tt = (0, s.forwardRef)(({
+      Et.displayName = "Undo", Et.categories = ["text", "arrows"], Et.tags = ["redo", "rerun", "history", "back", "return", "reverse", "revert", "direction", "u-turn", "undo", "arrow", "navigation"], Et.SM = Ft, Et.LG = kt, Et.MD = Ot, Et.XL = Tt;
+      const Ut = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M2.195 2.195c.26-.26.683-.26.944 0l10.667 10.667a.667.667 0 0 1-.944.943l-1.593-1.593A5.33 5.33 0 0 1 8 13.333h-.002a5.72 5.72 0 0 1-3.956-1.607.025.025 0 0 0-.042.017v.924a.666.666 0 0 1-1.333 0V10c0-.368.299-.667.667-.667H6a.667.667 0 0 1 0 1.334h-.984a.06.06 0 0 0-.043.104A4.4 4.4 0 0 0 8.003 12c.834 0 1.642-.264 2.314-.741L4.739 5.683a4 4 0 0 0-.698 1.746.667.667 0 0 1-1.32-.19 5.34 5.34 0 0 1 1.065-2.51l-1.59-1.59a.667.667 0 0 1 0-.944M12.715 8.007c.364.053.617.39.564.755a5.3 5.3 0 0 1-.207.884c-.14.43-.677.513-.997.194l-.047-.048a.75.75 0 0 1-.171-.73q.066-.241.102-.49a.67.67 0 0 1 .756-.565M8.003 2.667a5.72 5.72 0 0 1 3.956 1.607l.008.01A.02.02 0 0 0 12 4.268v-.936a.667.667 0 0 1 1.334 0V6a.667.667 0 0 1-.667.667H10a.667.667 0 0 1 0-1.334h.986a.06.06 0 0 0 .042-.104A4.4 4.4 0 0 0 8 4a4 4 0 0 0-1.061.144.75.75 0 0 1-.73-.172l-.05-.05c-.318-.318-.235-.855.195-.994A5.3 5.3 0 0 1 8 2.667z"
+              d: "M.876 1.356c.26-.26.683-.26.943 0l13.305 13.305a.667.667 0 0 1-.943.943l-1.961-1.961A6.65 6.65 0 0 1 8 15.153h-.003a7.14 7.14 0 0 1-4.934-2.005.03.03 0 0 0-.052.022v1.152a.832.832 0 0 1-1.663 0v-3.326c0-.459.372-.83.83-.831h3.327a.832.832 0 0 1 0 1.663H4.277a.076.076 0 0 0-.053.129A5.48 5.48 0 0 0 8 13.491a5 5 0 0 0 3.034-1.033L4.041 5.465a5 5 0 0 0-.98 2.324.831.831 0 0 1-1.645-.237 6.65 6.65 0 0 1 1.442-3.27L.876 2.3a.667.667 0 0 1 0-.944M13.88 8.51c.454.065.77.488.704.942a6.6 6.6 0 0 1-.394 1.483c-.164.414-.693.489-1.007.174l-.29-.29a.73.73 0 0 1-.159-.749q.14-.417.204-.855a.833.833 0 0 1 .942-.705M8.003 1.85a7.14 7.14 0 0 1 4.934 2.005.03.03 0 0 0 .052-.021V2.68a.831.831 0 0 1 1.663 0v3.326c0 .459-.372.832-.832.832h-3.326a.832.832 0 0 1 0-1.663h1.229a.076.076 0 0 0 .053-.13 5.48 5.48 0 0 0-3.778-1.533c-.538 0-1.066.087-1.567.254a.73.73 0 0 1-.75-.16l-.288-.289c-.315-.314-.24-.844.173-1.007A6.7 6.7 0 0 1 8 1.85z"
             })
           })
         })),
-        Ut = (0, s.forwardRef)(({
+        _t = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M3.293 3.293a1 1 0 0 1 1.414 0l16 16a1 1 0 0 1-1.414 1.414l-2.39-2.39A8 8 0 0 1 12 20h-.004a8.58 8.58 0 0 1-5.933-2.412.037.037 0 0 0-.063.025V19a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1h4a1 1 0 0 1 0 2H7.523a.09.09 0 0 0-.064.155A6.58 6.58 0 0 0 12.002 18a6 6 0 0 0 3.473-1.111L7.11 8.525a6 6 0 0 0-1.048 2.618 1 1 0 0 1-1.98-.285 8 8 0 0 1 1.599-3.763L3.293 4.707a1 1 0 0 1 0-1.414M19.071 12.01a1 1 0 0 1 .847 1.133 8 8 0 0 1-.397 1.582c-.236.649-1.058.761-1.546.273-.31-.309-.386-.775-.254-1.191q.146-.465.218-.95a1 1 0 0 1 1.132-.846M12.004 4a8.58 8.58 0 0 1 5.934 2.412.037.037 0 0 0 .062-.026V5a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1h-4a1 1 0 0 1 0-2h1.477a.091.091 0 0 0 .064-.155A6.58 6.58 0 0 0 11.998 6c-.618 0-1.226.097-1.805.28-.416.131-.882.054-1.191-.254-.488-.489-.376-1.31.273-1.546A8 8 0 0 1 12 4z"
+              d: "M1.353 1.863a1 1 0 0 1 1.414 0L22.645 21.74a1.001 1.001 0 0 1-1.415 1.415l-2.948-2.947a9.94 9.94 0 0 1-6.284 2.24h-.005a10.66 10.66 0 0 1-7.37-2.997.046.046 0 0 0-.08.032v1.722a1.243 1.243 0 1 1-2.483 0v-4.969c0-.686.556-1.242 1.242-1.242h4.97a1.242 1.242 0 0 1 0 2.485H6.436c-.101 0-.152.122-.08.193A8.18 8.18 0 0 0 12 19.962c1.64 0 3.222-.542 4.512-1.524L6.068 7.993a7.46 7.46 0 0 0-1.447 3.451 1.243 1.243 0 0 1-2.46-.355A9.94 9.94 0 0 1 4.3 6.225L1.353 3.277a1 1 0 0 1 0-1.414m19.43 10.658c.68.098 1.15.729 1.052 1.408a10 10 0 0 1-.6 2.246c-.31.781-1.308.905-1.903.31-.394-.393-.482-.992-.298-1.517q.238-.678.342-1.394c.098-.679.728-1.15 1.407-1.053m-8.78-9.95a10.66 10.66 0 0 1 7.371 2.996l.016.015c.023.023.062.006.062-.026V3.812a1.243 1.243 0 0 1 2.485 0v4.97c0 .686-.557 1.242-1.243 1.242h-4.968a1.242 1.242 0 0 1 0-2.484h1.835c.1 0 .15-.122.08-.193a8.18 8.18 0 0 0-5.645-2.292c-.844 0-1.674.144-2.456.419-.526.184-1.124.096-1.518-.297-.595-.595-.472-1.595.31-1.906a9.9 9.9 0 0 1 3.666-.7z"
             })
           })
         })),
-        Wt = (0, s.forwardRef)(({
+        Wt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M2.741 2.744a.833.833 0 0 1 1.178 0l13.33 13.333a.834.834 0 0 1-1.178 1.179l-1.989-1.99A6.67 6.67 0 0 1 10 16.668h-.004a7.16 7.16 0 0 1-4.944-2.01.03.03 0 0 0-.052.02v1.156a.834.834 0 0 1-1.667 0V12.5c0-.46.373-.833.833-.833H7.5a.833.833 0 0 1 0 1.666H6.27a.076.076 0 0 0-.054.13A5.5 5.5 0 0 0 10.001 15a5 5 0 0 0 2.89-.924L5.924 7.105a5 5 0 0 0-.872 2.18.834.834 0 0 1-1.65-.237 6.67 6.67 0 0 1 1.33-3.135l-1.99-1.991a.83.83 0 0 1 0-1.178M15.893 10.009c.455.066.77.488.705.943a6.6 6.6 0 0 1-.222.989c-.174.57-.886.684-1.308.262-.245-.246-.316-.613-.229-.95q.07-.266.11-.539a.834.834 0 0 1 .944-.705M10.003 3.333a7.15 7.15 0 0 1 4.944 2.01c.02.02.053.006.053-.022V4.167a.834.834 0 1 1 1.666 0V7.5c0 .46-.373.833-.833.833H12.5a.834.834 0 1 1 0-1.666h1.23a.076.076 0 0 0 .054-.13A5.49 5.49 0 0 0 9.998 5c-.425 0-.846.054-1.25.16-.338.087-.705.016-.951-.23-.422-.422-.308-1.134.263-1.308A6.7 6.7 0 0 1 10 3.333z"
+              d: "M1.908 2.101a.83.83 0 0 1 1.178 0l15.637 15.64a.834.834 0 0 1-1.179 1.179l-2.32-2.32a7.82 7.82 0 0 1-4.904 1.73h-.004a8.4 8.4 0 0 1-5.8-2.358l-.011-.011c-.018-.018-.05-.005-.05.021v1.37a.978.978 0 0 1-1.955 0v-3.91c0-.54.438-.977.978-.977h3.91a.978.978 0 0 1 0 1.955H5.943a.09.09 0 0 0-.062.152 6.44 6.44 0 0 0 4.441 1.803 5.87 5.87 0 0 0 3.51-1.169L5.625 6.997a5.87 5.87 0 0 0-1.11 2.675.978.978 0 0 1-1.935-.28 7.8 7.8 0 0 1 1.652-3.789L1.908 3.28a.833.833 0 0 1 0-1.178M17.233 10.52a.98.98 0 0 1 .827 1.107 8 8 0 0 1-.316 1.336c-.216.654-1.037.777-1.524.29-.295-.295-.375-.738-.26-1.139q.109-.376.165-.766a.98.98 0 0 1 1.108-.829M10.324 2.69a8.4 8.4 0 0 1 5.8 2.358.036.036 0 0 0 .062-.026V3.667a.978.978 0 0 1 1.955 0v3.91c0 .54-.438.977-.978.978h-3.91a.978.978 0 0 1 0-1.955h1.444a.089.089 0 0 0 .063-.152 6.44 6.44 0 0 0-4.441-1.804c-.547 0-1.086.078-1.603.225-.401.114-.843.034-1.138-.26-.487-.488-.364-1.308.29-1.524a7.8 7.8 0 0 1 2.452-.396z"
             })
           })
         })),
-        Yt = (0, s.forwardRef)(({
+        Zt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M4.39 4.388a1.334 1.334 0 0 1 1.886-.001l21.334 21.33a1.334 1.334 0 0 1-1.886 1.885l-3.182-3.181A10.67 10.67 0 0 1 16 26.667h-.005a11.45 11.45 0 0 1-7.911-3.217l-.017-.016a.04.04 0 0 0-.067.028v1.87a1.334 1.334 0 1 1-2.666 0V20c0-.736.596-1.333 1.333-1.333H12a1.334 1.334 0 1 1 0 2.666H10.03a.122.122 0 0 0-.086.208A8.78 8.78 0 0 0 16.003 24c1.672 0 3.29-.526 4.634-1.484L9.481 11.362a8 8 0 0 0-1.4 3.495 1.333 1.333 0 0 1-2.638-.38 10.7 10.7 0 0 1 2.133-5.02L4.391 6.273a1.334 1.334 0 0 1 0-1.885M25.429 16.014a1.333 1.333 0 0 1 1.128 1.51c-.11.763-.303 1.51-.573 2.227-.322.855-1.409.998-2.056.351-.416-.416-.514-1.045-.33-1.604q.22-.662.32-1.356a1.334 1.334 0 0 1 1.51-1.128M16.005 5.333a11.45 11.45 0 0 1 7.912 3.217c.03.03.083.009.083-.035V6.667a1.335 1.335 0 0 1 2.667 0V12c0 .736-.597 1.333-1.333 1.333H20a1.333 1.333 0 0 1 0-2.666h1.97a.122.122 0 0 0 .085-.208 8.78 8.78 0 0 0-6.057-2.46c-.857.001-1.7.14-2.5.402-.559.184-1.188.085-1.604-.33-.646-.647-.503-1.733.352-2.055A10.7 10.7 0 0 1 16 5.333z"
+              d: "M1.682 2.179a1.334 1.334 0 0 1 1.886-.001l26.75 26.745a1.334 1.334 0 0 1-1.887 1.886l-3.96-3.96A13.38 13.38 0 0 1 16 29.874h-.006a14.35 14.35 0 0 1-9.92-4.033.061.061 0 0 0-.104.043v2.318a1.672 1.672 0 0 1-3.344 0v-6.687c0-.923.749-1.672 1.672-1.672h6.687a1.672 1.672 0 0 1 0 3.344H8.516a.153.153 0 0 0-.108.26 11 11 0 0 0 7.595 3.083 10.03 10.03 0 0 0 6.086-2.063L8.03 10.41a10.03 10.03 0 0 0-1.958 4.656 1.672 1.672 0 0 1-3.31-.477A13.4 13.4 0 0 1 5.65 8.031L1.683 4.065a1.334 1.334 0 0 1 0-1.886M27.821 16.517c.914.132 1.548.98 1.416 1.893a13.3 13.3 0 0 1-.84 3.107c-.424 1.043-1.76 1.204-2.557.408-.533-.533-.649-1.343-.395-2.052a10 10 0 0 0 .482-1.94 1.67 1.67 0 0 1 1.894-1.416M16.007 3.125a14.35 14.35 0 0 1 9.919 4.033l.02.02a.05.05 0 0 0 .085-.035V4.797a1.672 1.672 0 0 1 3.344 0v6.688c0 .922-.75 1.671-1.672 1.671h-6.688a1.672 1.672 0 0 1 0-3.343h2.47a.152.152 0 0 0 .108-.26 11 11 0 0 0-7.596-3.084c-1.16 0-2.299.203-3.37.587-.71.254-1.521.138-2.054-.395-.797-.797-.636-2.134.408-2.557 1.58-.64 3.282-.979 5.019-.979z"
             })
           })
         })),
-        Zt = (0, s.forwardRef)(({
+        Yt = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Tt, {
+            children: ["SM" === e && (0, r.jsx)(Ut, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ut, {
+            }), "LG" === e && (0, r.jsx)(_t, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Wt, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Yt, {
+            }), "XL" === e && (0, r.jsx)(Zt, {
               ...t,
               ref: a
             })]
           })
         });
-      Zt.displayName = "RefreshCwOff", Zt.categories = ["arrows"], Zt.tags = ["rotate", "reload", "rerun", "synchronise", "synchronize", "arrows", "circular", "cycle", "cancel", "no", "stop", "error", "disconnect", "ignore", "reset", "clockwise"], Zt.SM = Tt, Zt.LG = Ut, Zt.MD = Wt, Zt.XL = Yt;
-      const Kt = (0, s.forwardRef)(({
+      Yt.displayName = "RefreshCwOff", Yt.categories = ["arrows"], Yt.tags = ["rotate", "reload", "rerun", "synchronise", "synchronize", "arrows", "circular", "cycle", "cancel", "no", "stop", "error", "disconnect", "ignore", "reset", "clockwise"], Yt.SM = Ut, Yt.LG = _t, Yt.MD = Wt, Yt.XL = Zt;
+      const Kt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -7638,20 +7658,20 @@ try {
             })
           })
         })),
-        Jt = (0, s.forwardRef)(({
+        Qt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -7662,20 +7682,20 @@ try {
             })
           })
         })),
-        Qt = (0, s.forwardRef)(({
+        Jt = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -7684,20 +7704,20 @@ try {
             })
           })
         })),
-        $t = (0, s.forwardRef)(({
+        $t = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -7708,12 +7728,12 @@ try {
             })
           })
         })),
-        eo = (0, s.forwardRef)(({
+        es = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -7721,10 +7741,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(Kt, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Jt, {
+            }), "LG" === e && (0, r.jsx)(Qt, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Qt, {
+            }), "MD" === e && (0, r.jsx)(Jt, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)($t, {
@@ -7733,183 +7753,183 @@ try {
             })]
           })
         });
-      eo.displayName = "Minimize2", eo.categories = ["arrows", "layout", "design"], eo.tags = ["exit fullscreen", "arrows", "close", "shrink"], eo.SM = Kt, eo.LG = Jt, eo.MD = Qt, eo.XL = $t;
-      const lo = (0, s.forwardRef)(({
+      es.displayName = "Minimize2", es.categories = ["arrows", "layout", "design"], es.tags = ["exit fullscreen", "arrows", "close", "shrink"], es.SM = Kt, es.LG = Qt, es.MD = Jt, es.XL = $t;
+      const ls = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M7.997 2.667H8a5.33 5.33 0 0 1 5.278 4.571.667.667 0 0 1-1.32.19A4 4 0 0 0 8.002 4a4.4 4.4 0 0 0-3.029 1.23L3.804 6.397a.667.667 0 1 1-.942-.942l1.172-1.172.008-.008a5.72 5.72 0 0 1 3.955-1.608",
+              d: "M7.997 1.36H8a6.64 6.64 0 0 1 6.572 5.691.83.83 0 1 1-1.643.237A4.98 4.98 0 0 0 8.002 3.02 5.46 5.46 0 0 0 4.23 4.55L2.777 6.006A.83.83 0 1 1 1.603 4.83l1.459-1.46.01-.009A7.12 7.12 0 0 1 7.997 1.36",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M3.333 2.667c.368 0 .667.298.667.666v2h2a.667.667 0 0 1 0 1.334H3.333A.667.667 0 0 1 2.666 6V3.333c0-.368.299-.666.667-.666M3.286 8.007c.364-.053.702.2.755.565A4 4 0 0 0 7.998 12a4.4 4.4 0 0 0 3.03-1.23l1.167-1.167a.667.667 0 1 1 .943.943l-1.172 1.171-.008.008a5.72 5.72 0 0 1-3.956 1.608H8A5.33 5.33 0 0 1 2.72 8.762a.667.667 0 0 1 .565-.755",
+              d: "M2.19 1.36a.83.83 0 0 1 .83.83v2.49h2.49a.83.83 0 0 1 0 1.66H2.19a.83.83 0 0 1-.83-.83V2.19a.83.83 0 0 1 .83-.83M2.131 8.008a.83.83 0 0 1 .94.703 4.98 4.98 0 0 0 4.927 4.269 5.46 5.46 0 0 0 3.771-1.531l1.454-1.454a.83.83 0 1 1 1.174 1.174l-1.46 1.459-.01.01a7.13 7.13 0 0 1-4.924 2.002H8a6.64 6.64 0 0 1-6.572-5.692.83.83 0 0 1 .703-.94",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M9.333 10c0-.368.299-.667.667-.667h2.666c.369 0 .667.299.667.667v2.667a.667.667 0 0 1-1.333 0v-2h-2A.667.667 0 0 1 9.333 10",
+              d: "M9.66 10.49a.83.83 0 0 1 .83-.83h3.32a.83.83 0 0 1 .83.83v3.32a.83.83 0 1 1-1.66 0v-2.49h-2.49a.83.83 0 0 1-.83-.83",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        ao = (0, s.forwardRef)(({
+        as = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M9.997 3.333H10a6.67 6.67 0 0 1 6.598 5.715.833.833 0 0 1-1.65.238A5 5 0 0 0 10.003 5a5.49 5.49 0 0 0-3.786 1.537l-1.46 1.46a.833.833 0 0 1-1.179-1.179l1.465-1.465.01-.01a7.15 7.15 0 0 1 4.945-2.01",
+              d: "M10.316 2.2h.004a7.82 7.82 0 0 1 7.74 6.703.978.978 0 0 1-1.935.28 5.866 5.866 0 0 0-5.803-5.028A6.44 6.44 0 0 0 5.88 5.958L4.169 7.67a.978.978 0 0 1-1.383-1.382L4.505 4.57l.011-.012a8.4 8.4 0 0 1 5.8-2.358",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M4.167 3.333c.46 0 .833.373.833.834v2.5h2.5a.833.833 0 0 1 0 1.666H4.167a.833.833 0 0 1-.834-.833V4.167c0-.46.373-.834.834-.834M4.107 10.009a.833.833 0 0 1 .944.705A5 5 0 0 0 9.998 15a5.49 5.49 0 0 0 3.787-1.537l1.46-1.46a.833.833 0 1 1 1.178 1.179l-1.465 1.465-.01.01a7.15 7.15 0 0 1-4.945 2.01H10a6.67 6.67 0 0 1-6.598-5.715.833.833 0 0 1 .705-.944",
+              d: "M3.478 2.2c.54 0 .977.438.977.978V6.11h2.933a.977.977 0 1 1 0 1.955h-3.91a.977.977 0 0 1-.978-.977v-3.91c0-.54.438-.978.978-.978M3.408 10.03a.98.98 0 0 1 1.107.828 5.865 5.865 0 0 0 5.803 5.027 6.44 6.44 0 0 0 4.441-1.803l1.712-1.712a.978.978 0 0 1 1.383 1.383l-1.718 1.718-.012.011a8.4 8.4 0 0 1-5.8 2.358h-.004a7.82 7.82 0 0 1-7.74-6.703.977.977 0 0 1 .828-1.107",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M11.667 12.5c0-.46.373-.833.833-.833h3.333c.46 0 .834.373.834.833v3.333a.833.833 0 0 1-1.667 0v-2.5h-2.5a.833.833 0 0 1-.833-.833",
+              d: "M12.275 12.953c0-.54.438-.978.977-.978h3.91c.54 0 .978.438.978.978v3.91a.977.977 0 1 1-1.955 0V13.93h-2.932a.977.977 0 0 1-.978-.977",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        ro = (0, s.forwardRef)(({
+        rs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M11.996 4H12a8 8 0 0 1 7.918 6.857 1 1 0 0 1-1.98.286A6 6 0 0 0 12.002 6a6.58 6.58 0 0 0-4.543 1.844L5.707 9.596a1 1 0 1 1-1.414-1.414L6.05 6.424l.012-.012A8.58 8.58 0 0 1 11.996 4",
+              d: "M11.596 2.06h.004a9.54 9.54 0 0 1 9.442 8.177 1.192 1.192 0 1 1-2.36.34 7.155 7.155 0 0 0-7.08-6.132 7.85 7.85 0 0 0-5.417 2.2l-2.09 2.088A1.193 1.193 0 0 1 2.41 7.047L4.505 4.95l.015-.014a10.24 10.24 0 0 1 7.076-2.877",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M5 4a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1M4.929 12.01a1 1 0 0 1 1.132.847A6 6 0 0 0 11.998 18a6.58 6.58 0 0 0 4.543-1.844l1.752-1.752a1 1 0 0 1 1.414 1.414l-1.758 1.758-.012.012A8.58 8.58 0 0 1 12.004 20H12a8 8 0 0 1-7.918-6.857 1 1 0 0 1 .847-1.133",
+              d: "M3.253 2.06c.658 0 1.192.534 1.192 1.193V6.83h3.578a1.193 1.193 0 0 1 0 2.385h-4.77A1.19 1.19 0 0 1 2.06 8.023v-4.77c0-.659.534-1.193 1.193-1.193M3.168 11.612a1.19 1.19 0 0 1 1.35 1.01 7.155 7.155 0 0 0 7.08 6.133 7.85 7.85 0 0 0 5.418-2.2l2.088-2.088a1.193 1.193 0 0 1 1.687 1.686l-2.096 2.096-.015.015a10.24 10.24 0 0 1-7.075 2.876H11.6a9.54 9.54 0 0 1-9.442-8.177 1.193 1.193 0 0 1 1.01-1.35",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M14 15a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-3h-3a1 1 0 0 1-1-1",
+              d: "M13.985 15.178c0-.659.534-1.193 1.193-1.193h4.77c.658 0 1.192.534 1.192 1.193v4.77a1.192 1.192 0 1 1-2.385 0V16.37h-3.577a1.19 1.19 0 0 1-1.193-1.192",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        to = (0, s.forwardRef)(({
+        ts = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
               fill: e,
-              d: "M15.995 5.333H16a10.67 10.67 0 0 1 10.557 9.143 1.333 1.333 0 1 1-2.639.381A8 8 0 0 0 16.003 8c-2.261.01-4.43.89-6.058 2.46L7.61 12.794a1.333 1.333 0 0 1-1.886-1.886l2.344-2.344.016-.016a11.44 11.44 0 0 1 7.911-3.216",
+              d: "M15.999 2.63h.006a13.375 13.375 0 0 1 13.238 11.464 1.672 1.672 0 0 1-3.31.478 10.03 10.03 0 0 0-9.925-8.598 11 11 0 0 0-7.595 3.083l-2.929 2.929A1.672 1.672 0 0 1 3.12 9.62l2.938-2.938.02-.02a14.35 14.35 0 0 1 9.92-4.033",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M6.667 5.333C7.403 5.333 8 5.93 8 6.667v4h4a1.333 1.333 0 1 1 0 2.666H6.667A1.333 1.333 0 0 1 5.333 12V6.667c0-.737.597-1.334 1.334-1.334M6.572 16.014c.729-.106 1.405.4 1.51 1.129A8 8 0 0 0 15.998 24c2.26-.01 4.43-.89 6.057-2.46l2.336-2.335a1.333 1.333 0 1 1 1.885 1.886l-2.343 2.344-.017.015a11.44 11.44 0 0 1-7.91 3.217H16a10.67 10.67 0 0 1-10.557-9.143 1.333 1.333 0 0 1 1.129-1.51",
+              d: "M4.302 2.63c.923 0 1.672.748 1.672 1.672v5.015h5.015a1.672 1.672 0 0 1 0 3.344H4.302A1.67 1.67 0 0 1 2.63 10.99V4.302c0-.924.749-1.672 1.672-1.672M4.183 16.022a1.67 1.67 0 0 1 1.894 1.416 10.03 10.03 0 0 0 9.925 8.598 11 11 0 0 0 7.596-3.084l2.928-2.928a1.672 1.672 0 0 1 2.364 2.364l-2.939 2.94-.02.02a14.35 14.35 0 0 1-9.92 4.032h-.006A13.375 13.375 0 0 1 2.767 17.916a1.67 1.67 0 0 1 1.416-1.894",
               fillRule: "evenodd",
               clipRule: "evenodd"
             }), (0, r.jsx)("path", {
               fill: e,
-              d: "M18.667 20c0-.736.597-1.333 1.333-1.333h5.333c.737 0 1.334.596 1.334 1.333v5.333a1.333 1.333 0 0 1-2.667 0v-4h-4A1.333 1.333 0 0 1 18.667 20",
+              d: "M19.349 21.02c0-.923.748-1.671 1.672-1.671h6.687c.924 0 1.672.748 1.672 1.671v6.688a1.672 1.672 0 1 1-3.344 0v-5.016h-5.015a1.67 1.67 0 0 1-1.672-1.672",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })]
           })
         })),
-        oo = (0, s.forwardRef)(({
+        ss = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(lo, {
+            children: ["SM" === e && (0, r.jsx)(ls, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ao, {
+            }), "MD" === e && (0, r.jsx)(as, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ro, {
+            }), "LG" === e && (0, r.jsx)(rs, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(to, {
+            }), "XL" === e && (0, r.jsx)(ts, {
               ...t,
               ref: a
             })]
           })
         });
-      oo.displayName = "RefreshCcw", oo.categories = ["arrows"], oo.tags = ["arrows", "rotate", "reload", "rerun", "synchronise", "synchronize", "circular", "cycle", "loop", "repeat", "sync", "update", "reset", "restore", "counter clockwise"], oo.SM = lo, oo.MD = ao, oo.LG = ro, oo.XL = to;
-      const so = (0, s.forwardRef)(({
+      ss.displayName = "RefreshCcw", ss.categories = ["arrows"], ss.tags = ["arrows", "rotate", "reload", "rerun", "synchronise", "synchronize", "circular", "cycle", "loop", "repeat", "sync", "update", "reset", "restore", "counter clockwise"], ss.SM = ls, ss.MD = as, ss.LG = rs, ss.XL = ts;
+      const is = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -7920,20 +7940,20 @@ try {
             })
           })
         })),
-        io = (0, s.forwardRef)(({
+        ds = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -7944,20 +7964,20 @@ try {
             })
           })
         })),
-        no = (0, s.forwardRef)(({
+        os = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -7966,20 +7986,20 @@ try {
             })
           })
         })),
-        co = (0, s.forwardRef)(({
+        hs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -7990,46 +8010,46 @@ try {
             })
           })
         })),
-        ho = (0, s.forwardRef)(({
+        ns = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(so, {
+            children: ["SM" === e && (0, r.jsx)(is, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(io, {
+            }), "LG" === e && (0, r.jsx)(ds, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(no, {
+            }), "MD" === e && (0, r.jsx)(os, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(co, {
+            }), "XL" === e && (0, r.jsx)(hs, {
               ...t,
               ref: a
             })]
           })
         });
-      ho.displayName = "House", ho.categories = ["buildings", "home"], ho.tags = ["home", "living", "building", "residence", "architecture", "property", "homepage", "city"], ho.SM = so, ho.LG = io, ho.MD = no, ho.XL = co;
-      const fo = (0, s.forwardRef)(({
+      ns.displayName = "House", ns.categories = ["buildings", "home"], ns.tags = ["home", "living", "building", "residence", "architecture", "property", "homepage", "city"], ns.SM = is, ns.LG = ds, ns.MD = os, ns.XL = hs;
+      const cs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8040,20 +8060,20 @@ try {
             })
           })
         })),
-        vo = (0, s.forwardRef)(({
+        fs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8064,20 +8084,20 @@ try {
             })
           })
         })),
-        wo = (0, s.forwardRef)(({
+        ws = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8086,20 +8106,20 @@ try {
             })
           })
         })),
-        go = (0, s.forwardRef)(({
+        vs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8110,46 +8130,46 @@ try {
             })
           })
         })),
-        xo = (0, s.forwardRef)(({
+        xs = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(fo, {
+            children: ["SM" === e && (0, r.jsx)(cs, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(vo, {
+            }), "LG" === e && (0, r.jsx)(fs, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(wo, {
+            }), "MD" === e && (0, r.jsx)(ws, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(go, {
+            }), "XL" === e && (0, r.jsx)(vs, {
               ...t,
               ref: a
             })]
           })
         });
-      xo.displayName = "Property", xo.categories = ["account", "buildings"], xo.tags = ["organization", "building", "house", "city", "GTAO", "structure"], xo.SM = fo, xo.LG = vo, xo.MD = wo, xo.XL = go;
-      const uo = (0, s.forwardRef)(({
+      xs.displayName = "Property", xs.categories = ["account", "buildings"], xs.tags = ["organization", "building", "house", "city", "GTAO", "structure"], xs.SM = cs, xs.LG = fs, xs.MD = ws, xs.XL = vs;
+      const gs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8160,20 +8180,20 @@ try {
             })
           })
         })),
-        bo = (0, s.forwardRef)(({
+        js = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8184,20 +8204,20 @@ try {
             })
           })
         })),
-        po = (0, s.forwardRef)(({
+        ms = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8206,20 +8226,20 @@ try {
             })
           })
         })),
-        jo = (0, s.forwardRef)(({
+        ps = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8230,46 +8250,46 @@ try {
             })
           })
         })),
-        mo = (0, s.forwardRef)(({
+        us = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(uo, {
+            children: ["SM" === e && (0, r.jsx)(gs, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(bo, {
+            }), "LG" === e && (0, r.jsx)(js, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(po, {
+            }), "MD" === e && (0, r.jsx)(ms, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(jo, {
+            }), "XL" === e && (0, r.jsx)(ps, {
               ...t,
               ref: a
             })]
           })
         });
-      mo.displayName = "Store", mo.categories = ["buildings", "navigation", "shopping"], mo.tags = ["shop", "supermarket", "stand", "boutique", "building"], mo.SM = uo, mo.LG = bo, mo.MD = po, mo.XL = jo;
-      const Mo = (0, s.forwardRef)(({
+      us.displayName = "Store", us.categories = ["buildings", "navigation", "shopping"], us.tags = ["shop", "supermarket", "stand", "boutique", "building"], us.SM = gs, us.LG = js, us.MD = ms, us.XL = ps;
+      const bs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8280,20 +8300,20 @@ try {
             })
           })
         })),
-        Ro = (0, s.forwardRef)(({
+        Ms = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8304,20 +8324,20 @@ try {
             })
           })
         })),
-        yo = (0, s.forwardRef)(({
+        Rs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8326,20 +8346,20 @@ try {
             })
           })
         })),
-        Lo = (0, s.forwardRef)(({
+        Ls = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8350,46 +8370,46 @@ try {
             })
           })
         })),
-        zo = (0, s.forwardRef)(({
+        zs = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Mo, {
+            children: ["SM" === e && (0, r.jsx)(bs, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ro, {
+            }), "LG" === e && (0, r.jsx)(Ms, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(yo, {
+            }), "MD" === e && (0, r.jsx)(Rs, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Lo, {
+            }), "XL" === e && (0, r.jsx)(Ls, {
               ...t,
               ref: a
             })]
           })
         });
-      zo.displayName = "ChartSpline", zo.categories = ["charts"], zo.tags = ["statistics", "analytics", "diagram", "graph", "curve", "continuous", "smooth", "polynomial", "quadratic", "function", "interpolation"], zo.SM = Mo, zo.LG = Ro, zo.MD = yo, zo.XL = Lo;
-      const Co = (0, s.forwardRef)(({
+      zs.displayName = "ChartSpline", zs.categories = ["charts"], zs.tags = ["statistics", "analytics", "diagram", "graph", "curve", "continuous", "smooth", "polynomial", "quadratic", "function", "interpolation"], zs.SM = bs, zs.LG = Ms, zs.MD = Rs, zs.XL = Ls;
+      const Cs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8400,20 +8420,20 @@ try {
             })
           })
         })),
-        Ho = (0, s.forwardRef)(({
+        Hs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8424,20 +8444,20 @@ try {
             })
           })
         })),
-        Ao = (0, s.forwardRef)(({
+        As = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8446,20 +8466,20 @@ try {
             })
           })
         })),
-        Vo = (0, s.forwardRef)(({
+        Vs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8470,46 +8490,46 @@ try {
             })
           })
         })),
-        Bo = (0, s.forwardRef)(({
+        Bs = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Co, {
+            children: ["SM" === e && (0, r.jsx)(Cs, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ho, {
+            }), "LG" === e && (0, r.jsx)(Hs, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ao, {
+            }), "MD" === e && (0, r.jsx)(As, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Vo, {
+            }), "XL" === e && (0, r.jsx)(Vs, {
               ...t,
               ref: a
             })]
           })
         });
-      Bo.displayName = "PaperPlane", Bo.categories = ["mail", "communication", "connectivity"], Bo.tags = ["email", "message", "mail", "paper airplane", "paper aeroplane", "submit", "send"], Bo.SM = Co, Bo.LG = Ho, Bo.MD = Ao, Bo.XL = Vo;
-      const Io = (0, s.forwardRef)(({
+      Bs.displayName = "PaperPlane", Bs.categories = ["mail", "communication", "connectivity"], Bs.tags = ["email", "message", "mail", "paper airplane", "paper aeroplane", "submit", "send"], Bs.SM = Cs, Bs.LG = Hs, Bs.MD = As, Bs.XL = Vs;
+      const Is = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8520,20 +8540,20 @@ try {
             })
           })
         })),
-        So = (0, s.forwardRef)(({
+        Ss = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8544,20 +8564,20 @@ try {
             })
           })
         })),
-        qo = (0, s.forwardRef)(({
+        ys = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8566,20 +8586,20 @@ try {
             })
           })
         })),
-        Do = (0, s.forwardRef)(({
+        Ds = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8590,46 +8610,46 @@ try {
             })
           })
         })),
-        No = (0, s.forwardRef)(({
+        Gs = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Io, {
+            children: ["SM" === e && (0, r.jsx)(Is, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(So, {
+            }), "LG" === e && (0, r.jsx)(Ss, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(qo, {
+            }), "MD" === e && (0, r.jsx)(ys, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Do, {
+            }), "XL" === e && (0, r.jsx)(Ds, {
               ...t,
               ref: a
             })]
           })
         });
-      No.displayName = "Volume", No.categories = ["connectivity", "communication", "multimedia"], No.tags = ["music", "sound", "mute", "speaker"], No.SM = Io, No.LG = So, No.MD = qo, No.XL = Do;
-      const Xo = (0, s.forwardRef)(({
+      Gs.displayName = "Volume", Gs.categories = ["connectivity", "communication", "multimedia"], Gs.tags = ["music", "sound", "mute", "speaker"], Gs.SM = Is, Gs.LG = Ss, Gs.MD = ys, Gs.XL = Ds;
+      const Ns = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8640,20 +8660,20 @@ try {
             })
           })
         })),
-        Go = (0, s.forwardRef)(({
+        Xs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8664,20 +8684,20 @@ try {
             })
           })
         })),
-        ko = (0, s.forwardRef)(({
+        qs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8686,20 +8706,20 @@ try {
             })
           })
         })),
-        Fo = (0, s.forwardRef)(({
+        Ps = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8710,46 +8730,46 @@ try {
             })
           })
         })),
-        _o = (0, s.forwardRef)(({
+        Fs = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Xo, {
+            children: ["SM" === e && (0, r.jsx)(Ns, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Go, {
+            }), "LG" === e && (0, r.jsx)(Xs, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ko, {
+            }), "MD" === e && (0, r.jsx)(qs, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Fo, {
+            }), "XL" === e && (0, r.jsx)(Ps, {
               ...t,
               ref: a
             })]
           })
         });
-      _o.displayName = "Volume1", _o.categories = ["connectivity", "communication", "multimedia"], _o.tags = ["music", "sound", "speaker", "control", "volume", "low"], _o.SM = Xo, _o.LG = Go, _o.MD = ko, _o.XL = Fo;
-      const Po = (0, s.forwardRef)(({
+      Fs.displayName = "Volume1", Fs.categories = ["connectivity", "communication", "multimedia"], Fs.tags = ["music", "sound", "speaker", "control", "volume", "low"], Fs.SM = Ns, Fs.LG = Xs, Fs.MD = qs, Fs.XL = Ps;
+      const ks = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8758,20 +8778,20 @@ try {
             })
           })
         })),
-        Eo = (0, s.forwardRef)(({
+        Os = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8780,20 +8800,20 @@ try {
             })
           })
         })),
-        Oo = (0, s.forwardRef)(({
+        Ts = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8802,20 +8822,20 @@ try {
             })
           })
         })),
-        To = (0, s.forwardRef)(({
+        Es = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8826,46 +8846,46 @@ try {
             })
           })
         })),
-        Uo = (0, s.forwardRef)(({
+        Us = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Po, {
+            children: ["SM" === e && (0, r.jsx)(ks, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Eo, {
+            }), "LG" === e && (0, r.jsx)(Os, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Oo, {
+            }), "MD" === e && (0, r.jsx)(Ts, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(To, {
+            }), "XL" === e && (0, r.jsx)(Es, {
               ...t,
               ref: a
             })]
           })
         });
-      Uo.displayName = "Volume2", Uo.categories = ["connectivity", "communication", "multimedia"], Uo.tags = ["music", "sound", "speaker", "control", "volume", "high"], Uo.SM = Po, Uo.LG = Eo, Uo.MD = Oo, Uo.XL = To;
-      const Wo = (0, s.forwardRef)(({
+      Us.displayName = "Volume2", Us.categories = ["connectivity", "communication", "multimedia"], Us.tags = ["music", "sound", "speaker", "control", "volume", "high"], Us.SM = ks, Us.LG = Os, Us.MD = Ts, Us.XL = Es;
+      const _s = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8874,20 +8894,20 @@ try {
             })
           })
         })),
-        Yo = (0, s.forwardRef)(({
+        Ws = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -8896,20 +8916,20 @@ try {
             })
           })
         })),
-        Zo = (0, s.forwardRef)(({
+        Zs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -8918,20 +8938,20 @@ try {
             })
           })
         })),
-        Ko = (0, s.forwardRef)(({
+        Ys = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -8940,46 +8960,46 @@ try {
             })
           })
         })),
-        Jo = (0, s.forwardRef)(({
+        Ks = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Wo, {
+            children: ["SM" === e && (0, r.jsx)(_s, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Yo, {
+            }), "LG" === e && (0, r.jsx)(Ws, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Zo, {
+            }), "MD" === e && (0, r.jsx)(Zs, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ko, {
+            }), "XL" === e && (0, r.jsx)(Ys, {
               ...t,
               ref: a
             })]
           })
         });
-      Jo.displayName = "VolumeX", Jo.categories = ["connectivity", "communication", "multimedia"], Jo.tags = ["music", "sound", "mute", "speaker", "control", "volume"], Jo.SM = Wo, Jo.LG = Yo, Jo.MD = Zo, Jo.XL = Ko;
-      const Qo = (0, s.forwardRef)(({
+      Ks.displayName = "VolumeX", Ks.categories = ["connectivity", "communication", "multimedia"], Ks.tags = ["music", "sound", "mute", "speaker", "control", "volume"], Ks.SM = _s, Ks.LG = Ws, Ks.MD = Zs, Ks.XL = Ys;
+      const Qs = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -8990,20 +9010,20 @@ try {
             })
           })
         })),
-        $o = (0, s.forwardRef)(({
+        Js = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9014,20 +9034,20 @@ try {
             })
           })
         })),
-        es = (0, s.forwardRef)(({
+        $s = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9036,20 +9056,20 @@ try {
             })
           })
         })),
-        ls = (0, s.forwardRef)(({
+        ei = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9060,46 +9080,46 @@ try {
             })
           })
         })),
-        as = (0, s.forwardRef)(({
+        li = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Qo, {
+            children: ["SM" === e && (0, r.jsx)(Qs, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)($o, {
+            }), "LG" === e && (0, r.jsx)(Js, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(es, {
+            }), "MD" === e && (0, r.jsx)($s, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ls, {
+            }), "XL" === e && (0, r.jsx)(ei, {
               ...t,
               ref: a
             })]
           })
         });
-      as.displayName = "Headset", as.categories = ["multimedia", "connectivity", "devices", "files", "gaming"], as.tags = ["music", "audio", "sound", "gaming", "headphones", "headset", "call", "center", "phone", "telephone", "voip", "video"], as.SM = Qo, as.LG = $o, as.MD = es, as.XL = ls;
-      const rs = (0, s.forwardRef)(({
+      li.displayName = "Headset", li.categories = ["multimedia", "connectivity", "devices", "files", "gaming"], li.tags = ["music", "audio", "sound", "gaming", "headphones", "headset", "call", "center", "phone", "telephone", "voip", "video"], li.SM = Qs, li.LG = Js, li.MD = $s, li.XL = ei;
+      const ai = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9110,20 +9130,20 @@ try {
             })
           })
         })),
-        ts = (0, s.forwardRef)(({
+        ri = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9134,20 +9154,20 @@ try {
             })
           })
         })),
-        os = (0, s.forwardRef)(({
+        ti = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9156,20 +9176,20 @@ try {
             })
           })
         })),
-        ss = (0, s.forwardRef)(({
+        si = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9180,46 +9200,46 @@ try {
             })
           })
         })),
-        ds = (0, s.forwardRef)(({
+        ii = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(rs, {
+            children: ["SM" === e && (0, r.jsx)(ai, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ts, {
+            }), "LG" === e && (0, r.jsx)(ri, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(os, {
+            }), "MD" === e && (0, r.jsx)(ti, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ss, {
+            }), "XL" === e && (0, r.jsx)(si, {
               ...t,
               ref: a
             })]
           })
         });
-      ds.displayName = "Power", ds.categories = ["connectivity"], ds.tags = ["on", "off", "device", "switch", "toggle", "binary", "boolean", "reboot", "restart", "button", "keyboard", "troubleshoot"], ds.SM = rs, ds.LG = ts, ds.MD = os, ds.XL = ss;
-      const is = (0, s.forwardRef)(({
+      ii.displayName = "Power", ii.categories = ["connectivity"], ii.tags = ["on", "off", "device", "switch", "toggle", "binary", "boolean", "reboot", "restart", "button", "keyboard", "troubleshoot"], ii.SM = ai, ii.LG = ri, ii.MD = ti, ii.XL = si;
+      const di = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9230,20 +9250,20 @@ try {
             })
           })
         })),
-        ns = (0, s.forwardRef)(({
+        oi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9254,20 +9274,20 @@ try {
             })
           })
         })),
-        cs = (0, s.forwardRef)(({
+        hi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9276,20 +9296,20 @@ try {
             })
           })
         })),
-        hs = (0, s.forwardRef)(({
+        ni = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9300,46 +9320,46 @@ try {
             })
           })
         })),
-        fs = (0, s.forwardRef)(({
+        ci = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(is, {
+            children: ["SM" === e && (0, r.jsx)(di, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ns, {
+            }), "LG" === e && (0, r.jsx)(oi, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(cs, {
+            }), "MD" === e && (0, r.jsx)(hi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(hs, {
+            }), "XL" === e && (0, r.jsx)(ni, {
               ...t,
               ref: a
             })]
           })
         });
-      fs.displayName = "Wifi", fs.categories = ["connectivity", "devices"], fs.tags = ["connection", "signal", "wireless", "internet", "technology", "network"], fs.SM = is, fs.LG = ns, fs.MD = cs, fs.XL = hs;
-      const vs = (0, s.forwardRef)(({
+      ci.displayName = "Wifi", ci.categories = ["connectivity", "devices"], ci.tags = ["connection", "signal", "wireless", "internet", "technology", "network"], ci.SM = di, ci.LG = oi, ci.MD = hi, ci.XL = ni;
+      const fi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9350,20 +9370,20 @@ try {
             })
           })
         })),
-        ws = (0, s.forwardRef)(({
+        wi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9374,20 +9394,20 @@ try {
             })
           })
         })),
-        gs = (0, s.forwardRef)(({
+        vi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9396,20 +9416,20 @@ try {
             })
           })
         })),
-        xs = (0, s.forwardRef)(({
+        xi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9420,46 +9440,46 @@ try {
             })
           })
         })),
-        us = (0, s.forwardRef)(({
+        gi = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(vs, {
+            children: ["SM" === e && (0, r.jsx)(fi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ws, {
+            }), "LG" === e && (0, r.jsx)(wi, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(gs, {
+            }), "MD" === e && (0, r.jsx)(vi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(xs, {
+            }), "XL" === e && (0, r.jsx)(xi, {
               ...t,
               ref: a
             })]
           })
         });
-      us.displayName = "WifiOff", us.categories = ["connectivity", "devices"], us.tags = ["disabled", "connection", "internet", "wireless", "technology", "network", "signal", "no", "off"], us.SM = vs, us.LG = ws, us.MD = gs, us.XL = xs;
-      const bs = (0, s.forwardRef)(({
+      gi.displayName = "WifiOff", gi.categories = ["connectivity", "devices"], gi.tags = ["disabled", "connection", "internet", "wireless", "technology", "network", "signal", "no", "off"], gi.SM = fi, gi.LG = wi, gi.MD = vi, gi.XL = xi;
+      const ji = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9468,20 +9488,20 @@ try {
             })
           })
         })),
-        ps = (0, s.forwardRef)(({
+        mi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9490,20 +9510,20 @@ try {
             })
           })
         })),
-        js = (0, s.forwardRef)(({
+        pi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9512,20 +9532,20 @@ try {
             })
           })
         })),
-        ms = (0, s.forwardRef)(({
+        ui = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9534,46 +9554,46 @@ try {
             })
           })
         })),
-        Ms = (0, s.forwardRef)(({
+        bi = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(bs, {
+            children: ["SM" === e && (0, r.jsx)(ji, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ps, {
+            }), "MD" === e && (0, r.jsx)(mi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(js, {
+            }), "LG" === e && (0, r.jsx)(pi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ms, {
+            }), "XL" === e && (0, r.jsx)(ui, {
               ...t,
               ref: a
             })]
           })
         });
-      Ms.displayName = "Monitor", Ms.categories = ["multimedia", "connectivity", "devices", "files", "gaming"], Ms.tags = ["tv", "computer", "screen", "display", "virtual machine"], Ms.SM = bs, Ms.MD = ps, Ms.LG = js, Ms.XL = ms;
-      const Rs = (0, s.forwardRef)(({
+      bi.displayName = "Monitor", bi.categories = ["multimedia", "connectivity", "devices", "files", "gaming"], bi.tags = ["tv", "computer", "screen", "display", "virtual machine"], bi.SM = ji, bi.MD = mi, bi.LG = pi, bi.XL = ui;
+      const Mi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9584,20 +9604,20 @@ try {
             })
           })
         })),
-        ys = (0, s.forwardRef)(({
+        Ri = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9608,20 +9628,20 @@ try {
             })
           })
         })),
-        Ls = (0, s.forwardRef)(({
+        Li = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9630,20 +9650,20 @@ try {
             })
           })
         })),
-        zs = (0, s.forwardRef)(({
+        zi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9654,46 +9674,46 @@ try {
             })
           })
         })),
-        Cs = (0, s.forwardRef)(({
+        Ci = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Rs, {
+            children: ["SM" === e && (0, r.jsx)(Mi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ys, {
+            }), "LG" === e && (0, r.jsx)(Ri, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ls, {
+            }), "MD" === e && (0, r.jsx)(Li, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(zs, {
+            }), "XL" === e && (0, r.jsx)(zi, {
               ...t,
               ref: a
             })]
           })
         });
-      Cs.displayName = "Pencil", Cs.categories = ["design", "cursors", "tools", "text"], Cs.tags = ["rubber", "edit", "create", "draw", "sketch", "draft", "writer", "writing", "stationery", "artist", "update", "correct", "modify", "note"], Cs.SM = Rs, Cs.LG = ys, Cs.MD = Ls, Cs.XL = zs;
-      const Hs = (0, s.forwardRef)(({
+      Ci.displayName = "Pencil", Ci.categories = ["design", "cursors", "tools", "text"], Ci.tags = ["rubber", "edit", "create", "draw", "sketch", "draft", "writer", "writing", "stationery", "artist", "update", "correct", "modify", "note"], Ci.SM = Mi, Ci.LG = Ri, Ci.MD = Li, Ci.XL = zi;
+      const Hi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9704,20 +9724,20 @@ try {
             })
           })
         })),
-        As = (0, s.forwardRef)(({
+        Ai = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9728,20 +9748,20 @@ try {
             })
           })
         })),
-        Vs = (0, s.forwardRef)(({
+        Vi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9750,20 +9770,20 @@ try {
             })
           })
         })),
-        Bs = (0, s.forwardRef)(({
+        Bi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9774,46 +9794,46 @@ try {
             })
           })
         })),
-        Is = (0, s.forwardRef)(({
+        Ii = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Hs, {
+            children: ["SM" === e && (0, r.jsx)(Hi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(As, {
+            }), "LG" === e && (0, r.jsx)(Ai, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Vs, {
+            }), "MD" === e && (0, r.jsx)(Vi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Bs, {
+            }), "XL" === e && (0, r.jsx)(Bi, {
               ...t,
               ref: a
             })]
           })
         });
-      Is.displayName = "PencilOff", Is.categories = ["design", "cursors", "tools", "text"], Is.tags = ["disabled", "inactive", "non-editable", "locked", "read-only", "unmodifiable", "frozen", "restricted", "rubber", "edit", "create", "draw", "sketch", "draft", "writer", "writing", "stationery", "artist"], Is.SM = Hs, Is.LG = As, Is.MD = Vs, Is.XL = Bs;
-      const Ss = (0, s.forwardRef)(({
+      Ii.displayName = "PencilOff", Ii.categories = ["design", "cursors", "tools", "text"], Ii.tags = ["disabled", "inactive", "non-editable", "locked", "read-only", "unmodifiable", "frozen", "restricted", "rubber", "edit", "create", "draw", "sketch", "draft", "writer", "writing", "stationery", "artist"], Ii.SM = Hi, Ii.LG = Ai, Ii.MD = Vi, Ii.XL = Bi;
+      const Si = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9824,20 +9844,20 @@ try {
             })
           })
         })),
-        qs = (0, s.forwardRef)(({
+        yi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9848,20 +9868,20 @@ try {
             })
           })
         })),
-        Ds = (0, s.forwardRef)(({
+        Di = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9870,20 +9890,20 @@ try {
             })
           })
         })),
-        Ns = (0, s.forwardRef)(({
+        Gi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -9894,46 +9914,46 @@ try {
             })
           })
         })),
-        Xs = (0, s.forwardRef)(({
+        Ni = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ss, {
+            children: ["SM" === e && (0, r.jsx)(Si, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(qs, {
+            }), "LG" === e && (0, r.jsx)(yi, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ds, {
+            }), "MD" === e && (0, r.jsx)(Di, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ns, {
+            }), "XL" === e && (0, r.jsx)(Gi, {
               ...t,
               ref: a
             })]
           })
         });
-      Xs.displayName = "Plus", Xs.categories = ["math", "tools", "development", "text", "cursors", "gaming"], Xs.tags = ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "reticule", "maximum", "upgrade", "extra", "+", "more", "create", "navigation"], Xs.SM = Ss, Xs.LG = qs, Xs.MD = Ds, Xs.XL = Ns;
-      const Gs = (0, s.forwardRef)(({
+      Ni.displayName = "Plus", Ni.categories = ["math", "tools", "development", "text", "cursors", "gaming"], Ni.tags = ["add", "new", "increase", "increment", "positive", "calculate", "toolbar", "crosshair", "aim", "target", "scope", "sight", "reticule", "maximum", "upgrade", "extra", "+", "more", "create", "navigation"], Ni.SM = Si, Ni.LG = yi, Ni.MD = Di, Ni.XL = Gi;
+      const Xi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -9944,20 +9964,20 @@ try {
             })
           })
         })),
-        ks = (0, s.forwardRef)(({
+        qi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -9968,20 +9988,20 @@ try {
             })
           })
         })),
-        Fs = (0, s.forwardRef)(({
+        Pi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -9990,20 +10010,20 @@ try {
             })
           })
         })),
-        _s = (0, s.forwardRef)(({
+        Fi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10014,46 +10034,46 @@ try {
             })
           })
         })),
-        Ps = (0, s.forwardRef)(({
+        ki = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Gs, {
+            children: ["SM" === e && (0, r.jsx)(Xi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ks, {
+            }), "LG" === e && (0, r.jsx)(qi, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Fs, {
+            }), "MD" === e && (0, r.jsx)(Pi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(_s, {
+            }), "XL" === e && (0, r.jsx)(Fi, {
               ...t,
               ref: a
             })]
           })
         });
-      Ps.displayName = "LayoutGrid", Ps.categories = ["design", "layout"], Ps.tags = ["app", "home", "start", "squares", "hub", "menu", "blocks", "options", "items", "gallery"], Ps.SM = Gs, Ps.LG = ks, Ps.MD = Fs, Ps.XL = _s;
-      const Es = (0, s.forwardRef)(({
+      ki.displayName = "LayoutGrid", ki.categories = ["design", "layout"], ki.tags = ["app", "home", "start", "squares", "hub", "menu", "blocks", "options", "items", "gallery"], ki.SM = Xi, ki.LG = qi, ki.MD = Pi, ki.XL = Fi;
+      const Oi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10064,20 +10084,20 @@ try {
             })
           })
         })),
-        Os = (0, s.forwardRef)(({
+        Ti = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10088,20 +10108,20 @@ try {
             })
           })
         })),
-        Ts = (0, s.forwardRef)(({
+        Ei = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10110,20 +10130,20 @@ try {
             })
           })
         })),
-        Us = (0, s.forwardRef)(({
+        Ui = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10134,46 +10154,46 @@ try {
             })
           })
         })),
-        Ws = (0, s.forwardRef)(({
+        _i = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Es, {
+            children: ["SM" === e && (0, r.jsx)(Oi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Os, {
+            }), "LG" === e && (0, r.jsx)(Ti, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ts, {
+            }), "MD" === e && (0, r.jsx)(Ei, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Us, {
+            }), "XL" === e && (0, r.jsx)(Ui, {
               ...t,
               ref: a
             })]
           })
         });
-      Ws.displayName = "Maximize", Ws.categories = ["layout", "design"], Ws.tags = ["full screen", "expand", "dashed", "maximum", "big", "large"], Ws.SM = Es, Ws.LG = Os, Ws.MD = Ts, Ws.XL = Us;
-      const Ys = (0, s.forwardRef)(({
+      _i.displayName = "Maximize", _i.categories = ["layout", "design"], _i.tags = ["full screen", "expand", "dashed", "maximum", "big", "large"], _i.SM = Oi, _i.LG = Ti, _i.MD = Ei, _i.XL = Ui;
+      const Wi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10184,20 +10204,20 @@ try {
             })
           })
         })),
-        Zs = (0, s.forwardRef)(({
+        Zi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10208,20 +10228,20 @@ try {
             })
           })
         })),
-        Ks = (0, s.forwardRef)(({
+        Yi = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10230,20 +10250,20 @@ try {
             })
           })
         })),
-        Js = (0, s.forwardRef)(({
+        Ki = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10254,46 +10274,46 @@ try {
             })
           })
         })),
-        Qs = (0, s.forwardRef)(({
+        Qi = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ys, {
+            children: ["SM" === e && (0, r.jsx)(Wi, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Zs, {
+            }), "LG" === e && (0, r.jsx)(Zi, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ks, {
+            }), "MD" === e && (0, r.jsx)(Yi, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Js, {
+            }), "XL" === e && (0, r.jsx)(Ki, {
               ...t,
               ref: a
             })]
           })
         });
-      Qs.displayName = "Minimize", Qs.categories = ["layout", "design"], Qs.tags = ["exit", "full screen", "close", "shrink", "window", "reduce", "video playback"], Qs.SM = Ys, Qs.LG = Zs, Qs.MD = Ks, Qs.XL = Js;
-      const $s = (0, s.forwardRef)(({
+      Qi.displayName = "Minimize", Qi.categories = ["layout", "design"], Qi.tags = ["exit", "full screen", "close", "shrink", "window", "reduce", "video playback"], Qi.SM = Wi, Qi.LG = Zi, Qi.MD = Yi, Qi.XL = Ki;
+      const Ji = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10302,20 +10322,20 @@ try {
             })
           })
         })),
-        ed = (0, s.forwardRef)(({
+        $i = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10324,20 +10344,20 @@ try {
             })
           })
         })),
-        ld = (0, s.forwardRef)(({
+        ed = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10346,20 +10366,20 @@ try {
             })
           })
         })),
-        ad = (0, s.forwardRef)(({
+        ld = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10368,46 +10388,46 @@ try {
             })
           })
         })),
-        rd = (0, s.forwardRef)(({
+        ad = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)($s, {
+            children: ["SM" === e && (0, r.jsx)(Ji, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ed, {
+            }), "MD" === e && (0, r.jsx)($i, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ld, {
+            }), "LG" === e && (0, r.jsx)(ed, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ad, {
+            }), "XL" === e && (0, r.jsx)(ld, {
               ...t,
               ref: a
             })]
           })
         });
-      rd.displayName = "Cpu", rd.categories = ["devices"], rd.tags = ["processor", "cores", "technology", "computer", "chip", "circuit", "memory", "ram", "specs", "gigahertz", "ghz"], rd.SM = $s, rd.MD = ed, rd.LG = ld, rd.XL = ad;
-      const td = (0, s.forwardRef)(({
+      ad.displayName = "Cpu", ad.categories = ["devices"], ad.tags = ["processor", "cores", "technology", "computer", "chip", "circuit", "memory", "ram", "specs", "gigahertz", "ghz"], ad.SM = Ji, ad.MD = $i, ad.LG = ed, ad.XL = ld;
+      const rd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10418,20 +10438,20 @@ try {
             })
           })
         })),
-        od = (0, s.forwardRef)(({
+        td = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10442,20 +10462,20 @@ try {
             })
           })
         })),
-        sd = (0, s.forwardRef)(({
+        sd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10464,20 +10484,20 @@ try {
             })
           })
         })),
-        dd = (0, s.forwardRef)(({
+        id = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10488,46 +10508,46 @@ try {
             })
           })
         })),
-        id = (0, s.forwardRef)(({
+        dd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(td, {
+            children: ["SM" === e && (0, r.jsx)(rd, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(od, {
+            }), "LG" === e && (0, r.jsx)(td, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(sd, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(dd, {
+            }), "XL" === e && (0, r.jsx)(id, {
               ...t,
               ref: a
             })]
           })
         });
-      id.displayName = "Calendar", id.categories = ["time"], id.tags = ["date", "month", "year", "event", "birthday", "birthdate"], id.SM = td, id.LG = od, id.MD = sd, id.XL = dd;
-      const nd = (0, s.forwardRef)(({
+      dd.displayName = "Calendar", dd.categories = ["time"], dd.tags = ["date", "month", "year", "event", "birthday", "birthdate"], dd.SM = rd, dd.LG = td, dd.MD = sd, dd.XL = id;
+      const od = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10538,20 +10558,20 @@ try {
             })
           })
         })),
-        cd = (0, s.forwardRef)(({
+        hd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10562,20 +10582,20 @@ try {
             })
           })
         })),
-        hd = (0, s.forwardRef)(({
+        nd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10584,20 +10604,20 @@ try {
             })
           })
         })),
-        fd = (0, s.forwardRef)(({
+        cd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10608,46 +10628,46 @@ try {
             })
           })
         })),
-        vd = (0, s.forwardRef)(({
+        fd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(nd, {
+            children: ["SM" === e && (0, r.jsx)(od, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(cd, {
+            }), "LG" === e && (0, r.jsx)(hd, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(hd, {
+            }), "MD" === e && (0, r.jsx)(nd, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(fd, {
+            }), "XL" === e && (0, r.jsx)(cd, {
               ...t,
               ref: a
             })]
           })
         });
-      vd.displayName = "CalendarOff", vd.categories = ["time"], vd.tags = ["date", "day", "month", "year", "event", "delete", "remove"], vd.SM = nd, vd.LG = cd, vd.MD = hd, vd.XL = fd;
-      const wd = (0, s.forwardRef)(({
+      fd.displayName = "CalendarOff", fd.categories = ["time"], fd.tags = ["date", "day", "month", "year", "event", "delete", "remove"], fd.SM = od, fd.LG = hd, fd.MD = nd, fd.XL = cd;
+      const wd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10658,20 +10678,20 @@ try {
             })
           })
         })),
-        gd = (0, s.forwardRef)(({
+        vd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10682,20 +10702,20 @@ try {
             })
           })
         })),
-        xd = (0, s.forwardRef)(({
+        xd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10704,20 +10724,20 @@ try {
             })
           })
         })),
-        ud = (0, s.forwardRef)(({
+        gd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10728,12 +10748,12 @@ try {
             })
           })
         })),
-        bd = (0, s.forwardRef)(({
+        jd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -10741,33 +10761,33 @@ try {
             children: ["SM" === e && (0, r.jsx)(wd, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(gd, {
+            }), "LG" === e && (0, r.jsx)(vd, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(xd, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ud, {
+            }), "XL" === e && (0, r.jsx)(gd, {
               ...t,
               ref: a
             })]
           })
         });
-      bd.displayName = "Clock", bd.categories = ["time"], bd.tags = ["time", "watch", "alarm", "hour", "minute", "second", "planned", "watch"], bd.SM = wd, bd.LG = gd, bd.MD = xd, bd.XL = ud;
-      const pd = (0, s.forwardRef)(({
+      jd.displayName = "Clock", jd.categories = ["time"], jd.tags = ["time", "watch", "alarm", "hour", "minute", "second", "planned", "watch"], jd.SM = wd, jd.LG = vd, jd.MD = xd, jd.XL = gd;
+      const md = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10778,20 +10798,20 @@ try {
             })
           })
         })),
-        jd = (0, s.forwardRef)(({
+        pd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10802,20 +10822,20 @@ try {
             })
           })
         })),
-        md = (0, s.forwardRef)(({
+        ud = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10824,20 +10844,20 @@ try {
             })
           })
         })),
-        Md = (0, s.forwardRef)(({
+        bd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10848,46 +10868,46 @@ try {
             })
           })
         })),
-        Rd = (0, s.forwardRef)(({
+        Md = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(pd, {
+            children: ["SM" === e && (0, r.jsx)(md, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(jd, {
+            }), "LG" === e && (0, r.jsx)(pd, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(md, {
+            }), "MD" === e && (0, r.jsx)(ud, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Md, {
+            }), "XL" === e && (0, r.jsx)(bd, {
               ...t,
               ref: a
             })]
           })
         });
-      Rd.displayName = "Clipboard", Rd.categories = ["text"], Rd.tags = ["copy", "paste"], Rd.SM = pd, Rd.LG = jd, Rd.MD = md, Rd.XL = Md;
-      const yd = (0, s.forwardRef)(({
+      Md.displayName = "Clipboard", Md.categories = ["text"], Md.tags = ["copy", "paste"], Md.SM = md, Md.LG = pd, Md.MD = ud, Md.XL = bd;
+      const Rd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -10898,20 +10918,20 @@ try {
             })
           })
         })),
-        Ld = (0, s.forwardRef)(({
+        Ld = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -10922,20 +10942,20 @@ try {
             })
           })
         })),
-        zd = (0, s.forwardRef)(({
+        zd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -10944,20 +10964,20 @@ try {
             })
           })
         })),
-        Cd = (0, s.forwardRef)(({
+        Cd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -10968,17 +10988,17 @@ try {
             })
           })
         })),
-        Hd = (0, s.forwardRef)(({
+        Hd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(yd, {
+            children: ["SM" === e && (0, r.jsx)(Rd, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Ld, {
@@ -10993,21 +11013,21 @@ try {
             })]
           })
         });
-      Hd.displayName = "Copy", Hd.categories = ["text"], Hd.tags = ["clone", "duplicate", "multiple"], Hd.SM = yd, Hd.LG = Ld, Hd.MD = zd, Hd.XL = Cd;
-      const Ad = (0, s.forwardRef)(({
+      Hd.displayName = "Copy", Hd.categories = ["text"], Hd.tags = ["clone", "duplicate", "multiple"], Hd.SM = Rd, Hd.LG = Ld, Hd.MD = zd, Hd.XL = Cd;
+      const Ad = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11019,20 +11039,20 @@ try {
             })
           })
         })),
-        Vd = (0, s.forwardRef)(({
+        Vd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11044,20 +11064,20 @@ try {
             })
           })
         })),
-        Bd = (0, s.forwardRef)(({
+        Bd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11066,20 +11086,20 @@ try {
             })
           })
         })),
-        Id = (0, s.forwardRef)(({
+        Id = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11091,12 +11111,12 @@ try {
             })
           })
         })),
-        Sd = (0, s.forwardRef)(({
+        Sd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -11117,20 +11137,20 @@ try {
           })
         });
       Sd.displayName = "List", Sd.categories = ["text"], Sd.tags = ["options", "index", "table of contents", "menu", "side nav", "navigation", "bullet", "to do"], Sd.SM = Ad, Sd.LG = Vd, Sd.MD = Bd, Sd.XL = Id;
-      const qd = (0, s.forwardRef)(({
+      const yd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11141,20 +11161,20 @@ try {
             })
           })
         })),
-        Dd = (0, s.forwardRef)(({
+        Dd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11165,20 +11185,20 @@ try {
             })
           })
         })),
-        Nd = (0, s.forwardRef)(({
+        Gd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11187,20 +11207,20 @@ try {
             })
           })
         })),
-        Xd = (0, s.forwardRef)(({
+        Nd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11211,46 +11231,46 @@ try {
             })
           })
         })),
-        Gd = (0, s.forwardRef)(({
+        Xd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(qd, {
+            children: ["SM" === e && (0, r.jsx)(yd, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Dd, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Nd, {
+            }), "MD" === e && (0, r.jsx)(Gd, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Xd, {
+            }), "XL" === e && (0, r.jsx)(Nd, {
               ...t,
               ref: a
             })]
           })
         });
-      Gd.displayName = "ListFilter", Gd.categories = ["text"], Gd.tags = ["options"], Gd.SM = qd, Gd.LG = Dd, Gd.MD = Nd, Gd.XL = Xd;
-      const kd = (0, s.forwardRef)(({
+      Xd.displayName = "ListFilter", Xd.categories = ["text"], Xd.tags = ["options"], Xd.SM = yd, Xd.LG = Dd, Xd.MD = Gd, Xd.XL = Nd;
+      const qd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 20",
             children: (0, r.jsx)("path", {
@@ -11261,20 +11281,20 @@ try {
             })
           })
         })),
-        Fd = (0, s.forwardRef)(({
+        Pd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "28",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 28",
             children: (0, r.jsx)("path", {
@@ -11285,20 +11305,20 @@ try {
             })
           })
         })),
-        _d = (0, s.forwardRef)(({
+        Fd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 24",
             children: (0, r.jsx)("path", {
@@ -11307,20 +11327,20 @@ try {
             })
           })
         })),
-        Pd = (0, s.forwardRef)(({
+        kd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "36",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 36",
             children: (0, r.jsx)("path", {
@@ -11331,46 +11351,46 @@ try {
             })
           })
         })),
-        Ed = (0, s.forwardRef)(({
+        Od = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(kd, {
+            children: ["SM" === e && (0, r.jsx)(qd, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Fd, {
+            }), "LG" === e && (0, r.jsx)(Pd, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(_d, {
+            }), "MD" === e && (0, r.jsx)(Fd, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Pd, {
+            }), "XL" === e && (0, r.jsx)(kd, {
               ...t,
               ref: a
             })]
           })
         });
-      Ed.displayName = "Unlink", Ed.categories = ["text"], Ed.tags = ["url", "unchain"], Ed.SM = kd, Ed.LG = Fd, Ed.MD = _d, Ed.XL = Pd;
-      const Od = (0, s.forwardRef)(({
+      Od.displayName = "Unlink", Od.categories = ["text"], Od.tags = ["url", "unchain"], Od.SM = qd, Od.LG = Pd, Od.MD = Fd, Od.XL = kd;
+      const Td = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11381,20 +11401,20 @@ try {
             })
           })
         })),
-        Td = (0, s.forwardRef)(({
+        Ed = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11405,20 +11425,20 @@ try {
             })
           })
         })),
-        Ud = (0, s.forwardRef)(({
+        Ud = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11427,20 +11447,20 @@ try {
             })
           })
         })),
-        Wd = (0, s.forwardRef)(({
+        _d = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11451,46 +11471,46 @@ try {
             })
           })
         })),
-        Yd = (0, s.forwardRef)(({
+        Wd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Od, {
+            children: ["SM" === e && (0, r.jsx)(Td, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Td, {
+            }), "LG" === e && (0, r.jsx)(Ed, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)(Ud, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Wd, {
+            }), "XL" === e && (0, r.jsx)(_d, {
               ...t,
               ref: a
             })]
           })
         });
-      Yd.displayName = "Trophy", Yd.categories = ["sports", "gaming"], Yd.tags = ["prize", "sports", "winner", "achievement", "award", "champion", "celebration", "victory"], Yd.SM = Od, Yd.LG = Td, Yd.MD = Ud, Yd.XL = Wd;
-      const Zd = (0, s.forwardRef)(({
+      Wd.displayName = "Trophy", Wd.categories = ["sports", "gaming"], Wd.tags = ["prize", "sports", "winner", "achievement", "award", "champion", "celebration", "victory"], Wd.SM = Td, Wd.LG = Ed, Wd.MD = Ud, Wd.XL = _d;
+      const Zd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11499,20 +11519,20 @@ try {
             })
           })
         })),
-        Kd = (0, s.forwardRef)(({
+        Yd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11521,20 +11541,20 @@ try {
             })
           })
         })),
-        Jd = (0, s.forwardRef)(({
+        Kd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11543,20 +11563,20 @@ try {
             })
           })
         })),
-        Qd = (0, s.forwardRef)(({
+        Qd = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11565,12 +11585,12 @@ try {
             })
           })
         })),
-        $d = (0, s.forwardRef)(({
+        Jd = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -11578,10 +11598,10 @@ try {
             children: ["SM" === e && (0, r.jsx)(Zd, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Kd, {
+            }), "LG" === e && (0, r.jsx)(Yd, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Jd, {
+            }), "MD" === e && (0, r.jsx)(Kd, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(Qd, {
@@ -11590,21 +11610,21 @@ try {
             })]
           })
         });
-      $d.displayName = "Discord", $d.categories = ["brands", "social"], $d.tags = ["Social media", "Video", "Player", "Game", "Community", "App", "Share", "Logo"], $d.SM = Zd, $d.LG = Kd, $d.MD = Jd, $d.XL = Qd;
-      const ei = (0, s.forwardRef)(({
+      Jd.displayName = "Discord", Jd.categories = ["brands", "social"], Jd.tags = ["Social media", "Video", "Player", "Game", "Community", "App", "Share", "Logo"], Jd.SM = Zd, Jd.LG = Yd, Jd.MD = Kd, Jd.XL = Qd;
+      const $d = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11613,20 +11633,20 @@ try {
             })
           })
         })),
-        li = (0, s.forwardRef)(({
+        eo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11635,20 +11655,20 @@ try {
             })
           })
         })),
-        ai = (0, s.forwardRef)(({
+        lo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11657,20 +11677,20 @@ try {
             })
           })
         })),
-        ri = (0, s.forwardRef)(({
+        ao = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11679,46 +11699,46 @@ try {
             })
           })
         })),
-        ti = (0, s.forwardRef)(({
+        ro = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ei, {
+            children: ["SM" === e && (0, r.jsx)($d, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(li, {
+            }), "LG" === e && (0, r.jsx)(eo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ai, {
+            }), "MD" === e && (0, r.jsx)(lo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ri, {
+            }), "XL" === e && (0, r.jsx)(ao, {
               ...t,
               ref: a
             })]
           })
         });
-      ti.displayName = "Instagram", ti.categories = ["brands", "social", "photography"], ti.tags = ["logo", "camera", "social media", "photo", "camera", "app", "share"], ti.SM = ei, ti.LG = li, ti.MD = ai, ti.XL = ri;
-      const oi = (0, s.forwardRef)(({
+      ro.displayName = "Instagram", ro.categories = ["brands", "social", "photography"], ro.tags = ["logo", "camera", "social media", "photo", "camera", "app", "share"], ro.SM = $d, ro.LG = eo, ro.MD = lo, ro.XL = ao;
+      const to = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11727,20 +11747,20 @@ try {
             })
           })
         })),
-        si = (0, s.forwardRef)(({
+        so = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11749,20 +11769,20 @@ try {
             })
           })
         })),
-        di = (0, s.forwardRef)(({
+        io = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -11771,20 +11791,20 @@ try {
             })
           })
         })),
-        ii = (0, s.forwardRef)(({
+        oo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -11793,46 +11813,46 @@ try {
             })
           })
         })),
-        ni = (0, s.forwardRef)(({
+        ho = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(oi, {
+            children: ["SM" === e && (0, r.jsx)(to, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(si, {
+            }), "LG" === e && (0, r.jsx)(so, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(di, {
+            }), "MD" === e && (0, r.jsx)(io, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ii, {
+            }), "XL" === e && (0, r.jsx)(oo, {
               ...t,
               ref: a
             })]
           })
         });
-      ni.displayName = "Facebook", ni.categories = ["social", "brands"], ni.tags = ["logo", "social media", "profile", "feed", "app", "share"], ni.SM = oi, ni.LG = si, ni.MD = di, ni.XL = ii;
-      const ci = (0, s.forwardRef)(({
+      ho.displayName = "Facebook", ho.categories = ["social", "brands"], ho.tags = ["logo", "social media", "profile", "feed", "app", "share"], ho.SM = to, ho.LG = so, ho.MD = io, ho.XL = oo;
+      const no = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -11844,20 +11864,20 @@ try {
             })]
           })
         })),
-        hi = (0, s.forwardRef)(({
+        co = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -11869,20 +11889,20 @@ try {
             })]
           })
         })),
-        fi = (0, s.forwardRef)(({
+        fo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -11894,20 +11914,20 @@ try {
             })]
           })
         })),
-        vi = (0, s.forwardRef)(({
+        wo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -11919,46 +11939,46 @@ try {
             })]
           })
         })),
-        wi = (0, s.forwardRef)(({
+        vo = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ci, {
+            children: ["SM" === e && (0, r.jsx)(no, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(hi, {
+            }), "LG" === e && (0, r.jsx)(co, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(fi, {
+            }), "MD" === e && (0, r.jsx)(fo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(vi, {
+            }), "XL" === e && (0, r.jsx)(wo, {
               ...t,
               ref: a
             })]
           })
         });
-      wi.displayName = "Twitch", wi.categories = ["brands", "social", "account", "gaming"], wi.tags = ["logo", "social", "social media", "streaming", "game", "app", "share"], wi.SM = ci, wi.LG = hi, wi.MD = fi, wi.XL = vi;
-      const gi = (0, s.forwardRef)(({
+      vo.displayName = "Twitch", vo.categories = ["brands", "social", "account", "gaming"], vo.tags = ["logo", "social", "social media", "streaming", "game", "app", "share"], vo.SM = no, vo.LG = co, vo.MD = fo, vo.XL = wo;
+      const xo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -11967,20 +11987,20 @@ try {
             })
           })
         })),
-        xi = (0, s.forwardRef)(({
+        go = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -11989,20 +12009,20 @@ try {
             })
           })
         })),
-        ui = (0, s.forwardRef)(({
+        jo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12011,20 +12031,20 @@ try {
             })
           })
         })),
-        bi = (0, s.forwardRef)(({
+        mo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12033,46 +12053,46 @@ try {
             })
           })
         })),
-        pi = (0, s.forwardRef)(({
+        po = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(gi, {
+            children: ["SM" === e && (0, r.jsx)(xo, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(xi, {
+            }), "LG" === e && (0, r.jsx)(go, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ui, {
+            }), "MD" === e && (0, r.jsx)(jo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(bi, {
+            }), "XL" === e && (0, r.jsx)(mo, {
               ...t,
               ref: a
             })]
           })
         });
-      pi.displayName = "Youtube", pi.categories = ["multimedia", "social", "brands"], pi.tags = ["logo", "social", "video", "play", "video", "player", "app", "share"], pi.SM = gi, pi.LG = xi, pi.MD = ui, pi.XL = bi;
-      const ji = (0, s.forwardRef)(({
+      po.displayName = "Youtube", po.categories = ["multimedia", "social", "brands"], po.tags = ["logo", "social", "video", "play", "video", "player", "app", "share"], po.SM = xo, po.LG = go, po.MD = jo, po.XL = mo;
+      const uo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12081,20 +12101,20 @@ try {
             })
           })
         })),
-        mi = (0, s.forwardRef)(({
+        bo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12103,20 +12123,20 @@ try {
             })
           })
         })),
-        Mi = (0, s.forwardRef)(({
+        Mo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12125,20 +12145,20 @@ try {
             })
           })
         })),
-        Ri = (0, s.forwardRef)(({
+        Ro = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12147,46 +12167,46 @@ try {
             })
           })
         })),
-        yi = (0, s.forwardRef)(({
+        Lo = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ji, {
+            children: ["SM" === e && (0, r.jsx)(uo, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(mi, {
+            }), "LG" === e && (0, r.jsx)(bo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Mi, {
+            }), "MD" === e && (0, r.jsx)(Mo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ri, {
+            }), "XL" === e && (0, r.jsx)(Ro, {
               ...t,
               ref: a
             })]
           })
         });
-      yi.displayName = "Twitter", yi.categories = ["brands", "social", "account"], yi.tags = ["logo", "social", "social media", "twitter", "tweet", "app", "share", "x"], yi.SM = ji, yi.LG = mi, yi.MD = Mi, yi.XL = Ri;
-      const Li = (0, s.forwardRef)(({
+      Lo.displayName = "Twitter", Lo.categories = ["brands", "social", "account"], Lo.tags = ["logo", "social", "social media", "twitter", "tweet", "app", "share", "x"], Lo.SM = uo, Lo.LG = bo, Lo.MD = Mo, Lo.XL = Ro;
+      const zo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12197,20 +12217,20 @@ try {
             })
           })
         })),
-        zi = (0, s.forwardRef)(({
+        Co = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12221,20 +12241,20 @@ try {
             })
           })
         })),
-        Ci = (0, s.forwardRef)(({
+        Ho = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12245,20 +12265,20 @@ try {
             })
           })
         })),
-        Hi = (0, s.forwardRef)(({
+        Ao = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12269,46 +12289,46 @@ try {
             })
           })
         })),
-        Ai = (0, s.forwardRef)(({
+        Vo = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Li, {
+            children: ["SM" === e && (0, r.jsx)(zo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(zi, {
+            }), "MD" === e && (0, r.jsx)(Co, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ci, {
+            }), "LG" === e && (0, r.jsx)(Ho, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Hi, {
+            }), "XL" === e && (0, r.jsx)(Ao, {
               ...t,
               ref: a
             })]
           })
         });
-      Ai.displayName = "Tiktok", Ai.categories = ["brands", "social"], Ai.tags = ["Social media", "video", "player", "game", "community", "app", "share", "logo", "photo", "camera"], Ai.SM = Li, Ai.MD = zi, Ai.LG = Ci, Ai.XL = Hi;
-      const Vi = (0, s.forwardRef)(({
+      Vo.displayName = "Tiktok", Vo.categories = ["brands", "social"], Vo.tags = ["Social media", "video", "player", "game", "community", "app", "share", "logo", "photo", "camera"], Vo.SM = zo, Vo.MD = Co, Vo.LG = Ho, Vo.XL = Ao;
+      const Bo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12317,20 +12337,20 @@ try {
             })
           })
         })),
-        Bi = (0, s.forwardRef)(({
+        Io = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12339,20 +12359,20 @@ try {
             })
           })
         })),
-        Ii = (0, s.forwardRef)(({
+        So = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12361,20 +12381,20 @@ try {
             })
           })
         })),
-        Si = (0, s.forwardRef)(({
+        yo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12383,46 +12403,46 @@ try {
             })
           })
         })),
-        qi = (0, s.forwardRef)(({
+        Do = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Vi, {
+            children: ["SM" === e && (0, r.jsx)(Bo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Bi, {
+            }), "MD" === e && (0, r.jsx)(Io, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ii, {
+            }), "LG" === e && (0, r.jsx)(So, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Si, {
+            }), "XL" === e && (0, r.jsx)(yo, {
               ...t,
               ref: a
             })]
           })
         });
-      qi.displayName = "Reddit", qi.categories = ["social", "brands"], qi.tags = ["logo", "social media", "profile", "feed", "app", "share", "forum", "community"], qi.SM = Vi, qi.MD = Bi, qi.LG = Ii, qi.XL = Si;
-      const Di = (0, s.forwardRef)(({
+      Do.displayName = "Reddit", Do.categories = ["social", "brands"], Do.tags = ["logo", "social media", "profile", "feed", "app", "share", "forum", "community"], Do.SM = Bo, Do.MD = Io, Do.LG = So, Do.XL = yo;
+      const Go = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -12441,20 +12461,20 @@ try {
             })]
           })
         })),
-        Ni = (0, s.forwardRef)(({
+        No = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -12473,20 +12493,20 @@ try {
             })]
           })
         })),
-        Xi = (0, s.forwardRef)(({
+        Xo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -12505,20 +12525,20 @@ try {
             })]
           })
         })),
-        Gi = (0, s.forwardRef)(({
+        qo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -12537,46 +12557,46 @@ try {
             })]
           })
         })),
-        ki = (0, s.forwardRef)(({
+        Po = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Di, {
+            children: ["SM" === e && (0, r.jsx)(Go, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ni, {
+            }), "MD" === e && (0, r.jsx)(No, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Xi, {
+            }), "LG" === e && (0, r.jsx)(Xo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Gi, {
+            }), "XL" === e && (0, r.jsx)(qo, {
               ...t,
               ref: a
             })]
           })
         });
-      ki.displayName = "EpicGames", ki.categories = ["platform"], ki.tags = ["games", "gaming", "social", "brand", "third party"], ki.SM = Di, ki.MD = Ni, ki.LG = Xi, ki.XL = Gi;
-      const Fi = (0, s.forwardRef)(({
+      Po.displayName = "EpicGames", Po.categories = ["platform"], Po.tags = ["games", "gaming", "social", "brand", "third party"], Po.SM = Go, Po.MD = No, Po.LG = Xo, Po.XL = qo;
+      const Fo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -12593,20 +12613,20 @@ try {
             })]
           })
         })),
-        _i = (0, s.forwardRef)(({
+        ko = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -12623,20 +12643,20 @@ try {
             })]
           })
         })),
-        Pi = (0, s.forwardRef)(({
+        Oo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -12653,20 +12673,20 @@ try {
             })]
           })
         })),
-        Ei = (0, s.forwardRef)(({
+        To = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -12683,46 +12703,46 @@ try {
             })]
           })
         })),
-        Oi = (0, s.forwardRef)(({
+        Eo = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Fi, {
+            children: ["SM" === e && (0, r.jsx)(Fo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(_i, {
+            }), "MD" === e && (0, r.jsx)(ko, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Pi, {
+            }), "LG" === e && (0, r.jsx)(Oo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ei, {
+            }), "XL" === e && (0, r.jsx)(To, {
               ...t,
               ref: a
             })]
           })
         });
-      Oi.displayName = "Steam", Oi.categories = ["platform"], Oi.tags = ["games", "gaming", "social", "brand", "third party"], Oi.SM = Fi, Oi.MD = _i, Oi.LG = Pi, Oi.XL = Ei;
-      const Ti = (0, s.forwardRef)(({
+      Eo.displayName = "Steam", Eo.categories = ["platform"], Eo.tags = ["games", "gaming", "social", "brand", "third party"], Eo.SM = Fo, Eo.MD = ko, Eo.LG = Oo, Eo.XL = To;
+      const Uo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12731,20 +12751,20 @@ try {
             })
           })
         })),
-        Ui = (0, s.forwardRef)(({
+        _o = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12753,20 +12773,20 @@ try {
             })
           })
         })),
-        Wi = (0, s.forwardRef)(({
+        Wo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12775,20 +12795,20 @@ try {
             })
           })
         })),
-        Yi = (0, s.forwardRef)(({
+        Zo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12797,46 +12817,46 @@ try {
             })
           })
         })),
-        Zi = (0, s.forwardRef)(({
+        Yo = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ti, {
+            children: ["SM" === e && (0, r.jsx)(Uo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ui, {
+            }), "MD" === e && (0, r.jsx)(_o, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Wi, {
+            }), "LG" === e && (0, r.jsx)(Wo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Yi, {
+            }), "XL" === e && (0, r.jsx)(Zo, {
               ...t,
               ref: a
             })]
           })
         });
-      Zi.displayName = "Xbox", Zi.categories = ["platform"], Zi.tags = ["games", "gaming", "social", "brand", "third party"], Zi.SM = Ti, Zi.MD = Ui, Zi.LG = Wi, Zi.XL = Yi;
-      const Ki = (0, s.forwardRef)(({
+      Yo.displayName = "Xbox", Yo.categories = ["platform"], Yo.tags = ["games", "gaming", "social", "brand", "third party"], Yo.SM = Uo, Yo.MD = _o, Yo.LG = Wo, Yo.XL = Zo;
+      const Ko = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12847,20 +12867,20 @@ try {
             })
           })
         })),
-        Ji = (0, s.forwardRef)(({
+        Qo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12871,20 +12891,20 @@ try {
             })
           })
         })),
-        Qi = (0, s.forwardRef)(({
+        Jo = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -12893,20 +12913,20 @@ try {
             })
           })
         })),
-        $i = (0, s.forwardRef)(({
+        $o = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -12917,46 +12937,46 @@ try {
             })
           })
         })),
-        en = (0, s.forwardRef)(({
+        eh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ki, {
+            children: ["SM" === e && (0, r.jsx)(Ko, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ji, {
+            }), "LG" === e && (0, r.jsx)(Qo, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Qi, {
+            }), "MD" === e && (0, r.jsx)(Jo, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)($i, {
+            }), "XL" === e && (0, r.jsx)($o, {
               ...t,
               ref: a
             })]
           })
         });
-      en.displayName = "Car", en.categories = ["transportation"], en.tags = ["vehicle", "drive", "trip", "journey", "automobile", "GTAO", "transport"], en.SM = Ki, en.LG = Ji, en.MD = Qi, en.XL = $i;
-      const ln = (0, s.forwardRef)(({
+      eh.displayName = "Car", eh.categories = ["transportation"], eh.tags = ["vehicle", "drive", "trip", "journey", "automobile", "GTAO", "transport"], eh.SM = Ko, eh.LG = Qo, eh.MD = Jo, eh.XL = $o;
+      const lh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -12967,20 +12987,20 @@ try {
             })
           })
         })),
-        an = (0, s.forwardRef)(({
+        ah = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -12991,20 +13011,20 @@ try {
             })
           })
         })),
-        rn = (0, s.forwardRef)(({
+        rh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13013,20 +13033,20 @@ try {
             })
           })
         })),
-        tn = (0, s.forwardRef)(({
+        th = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13037,160 +13057,160 @@ try {
             })
           })
         })),
-        on = (0, s.forwardRef)(({
+        sh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ln, {
+            children: ["SM" === e && (0, r.jsx)(lh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(an, {
+            }), "LG" === e && (0, r.jsx)(ah, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(rn, {
+            }), "MD" === e && (0, r.jsx)(rh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(tn, {
+            }), "XL" === e && (0, r.jsx)(th, {
               ...t,
               ref: a
             })]
           })
         });
-      on.displayName = "CarSide", on.categories = ["transportation"], on.tags = ["vehicle", "drive", "trip", "journey"], on.SM = ln, on.LG = an, on.MD = rn, on.XL = tn;
-      const sn = (0, s.forwardRef)(({
+      sh.displayName = "CarSide", sh.categories = ["transportation"], sh.tags = ["vehicle", "drive", "trip", "journey"], sh.SM = lh, sh.LG = ah, sh.MD = rh, sh.XL = th;
+      const ih = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M8.667 4a.667.667 0 0 0-1.334 0v.667h1.334zm-4 6.666c0 .369.298.667.666.668h5.322c.37 0 .67-.303.666-.673V6H10v.667a.667.667 0 0 1-1.333 0V6H7.333v.667a.667.667 0 1 1-1.333 0V6H4.667zm5.333-6h1.333l.14.007c.683.071 1.176.656 1.182 1.32v4.656l-.008.206a2 2 0 0 1-1.992 1.811H5.333a2 2 0 0 1-2-2V6c0-.737.598-1.333 1.334-1.333H6V4a2 2 0 0 1 4 0z"
+              d: "M9.146 3.194a1.14 1.14 0 0 0-2.28 0v1.139h2.28zm-5.892 9.03c0 .63.51 1.14 1.14 1.14h7.208a1.14 1.14 0 0 0 1.14-1.15V5.91l-.006-.055a.225.225 0 0 0-.215-.187h-2.043v1.14a.667.667 0 0 1-1.332 0v-1.14h-2.28v1.14a.667.667 0 0 1-1.334 0v-1.14H3.49a.236.236 0 0 0-.236.236zm7.225-7.891h2.043c.883 0 1.546.725 1.553 1.564v6.306l-.01.255a2.474 2.474 0 0 1-2.463 2.24H4.394a2.474 2.474 0 0 1-2.474-2.474V5.903c0-.867.703-1.57 1.57-1.57h2.042v-1.14a2.474 2.474 0 0 1 4.947 0z"
             })
           })
         })),
-        dn = (0, s.forwardRef)(({
+        dh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M10.833 5a.834.834 0 1 0-1.666 0v.833h1.666zm-5 8.334c0 .46.374.832.834.832h6.651a.834.834 0 0 0 .834-.84V7.5H12.5v.834a.833.833 0 0 1-1.667 0V7.5H9.167v.834a.834.834 0 0 1-1.667 0V7.5H5.833zm6.667-7.5h1.667l.174.008c.854.089 1.47.82 1.477 1.65v5.82l-.01.257a2.5 2.5 0 0 1-2.49 2.265H6.667a2.5 2.5 0 0 1-2.5-2.5V7.5c0-.92.746-1.666 1.666-1.666H7.5V5a2.5 2.5 0 0 1 5 0z"
+              d: "M11.338 3.952a1.332 1.332 0 0 0-2.663 0v1.332h2.663zM4.346 14.775c0 .735.596 1.331 1.33 1.331h8.64c.74 0 1.338-.603 1.332-1.342V7.207l-.006-.059a.235.235 0 0 0-.224-.198h-2.414v1.331a.834.834 0 1 1-1.666 0v-1.33H8.675v1.33a.834.834 0 1 1-1.666 0v-1.33H4.595a.25.25 0 0 0-.25.248zm8.658-9.49h2.414c1.08 0 1.888.885 1.896 1.907v7.557l-.003.155a3 3 0 0 1-2.995 2.87h-8.64a3 3 0 0 1-2.996-2.999V7.2c0-1.058.857-1.915 1.915-1.915h2.414V3.952a2.997 2.997 0 0 1 5.995 0z"
             })
           })
         })),
-        nn = (0, s.forwardRef)(({
+        oh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M13 6a1 1 0 1 0-2 0v1h2zM7 16a1 1 0 0 0 1 1h7.982a1 1 0 0 0 1-1.009V9H15v1a1 1 0 1 1-2 0V9h-2v1a1 1 0 1 1-2 0V9H7zm8-9h2c1.132 0 1.973.928 1.982 1.991v6.983a3 3 0 0 1-3 3.026H8a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2h2V6a3 3 0 1 1 6 0z"
+              d: "M13.718 4.745a1.71 1.71 0 1 0-3.42 0v1.709h3.42zM4.88 18.293a1.71 1.71 0 0 0 1.71 1.709h10.814a1.71 1.71 0 0 0 1.71-1.725v-9.46c-.003-.23-.171-.363-.332-.363h-3.064v1.71a1 1 0 0 1-2 0v-1.71h-3.42v1.71a1 1 0 0 1-2 0v-1.71H5.235a.355.355 0 0 0-.354.355zm10.838-11.84h3.064c1.327 0 2.32 1.09 2.331 2.347v9.46l-.003.192a3.71 3.71 0 0 1-3.706 3.55H6.59a3.71 3.71 0 0 1-3.71-3.71V8.81c0-1.3 1.054-2.355 2.354-2.355H8.3v-1.71a3.71 3.71 0 0 1 7.419 0z"
             })
           })
         })),
-        cn = (0, s.forwardRef)(({
+        hh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M17.333 8a1.334 1.334 0 1 0-2.666 0v1.334h2.666zm-8 13.334c0 .736.598 1.332 1.334 1.332h10.644c.74 0 1.339-.604 1.333-1.344v-9.31L22.642 12H20v1.333a1.333 1.333 0 0 1-2.667 0V12h-2.666v1.333a1.334 1.334 0 0 1-2.667 0V12H9.333zM20 9.334h2.667l.278.014c1.367.141 2.353 1.312 2.365 2.64V21.3l-.003.207a4 4 0 0 1-3.996 3.828H10.667a4 4 0 0 1-4-4V12a2.667 2.667 0 0 1 2.666-2.667H12V8a4 4 0 0 1 8 0z"
+              d: "M18.299 6.328a2.284 2.284 0 0 0-4.568 0v2.284h4.568zM6.496 24.414a2.284 2.284 0 0 0 2.284 2.283h14.438a2.283 2.283 0 0 0 2.283-2.302v-12.63l-.01-.109a.45.45 0 0 0-.433-.378h-4.093v2.284a1.333 1.333 0 1 1-2.666 0v-2.284H13.73v2.284a1.333 1.333 0 1 1-2.666 0v-2.284H6.972a.476.476 0 0 0-.476.476zM20.965 8.612h4.093c1.77 0 3.095 1.452 3.11 3.13v12.63l-.005.255a4.95 4.95 0 0 1-4.945 4.737H8.78a4.95 4.95 0 0 1-4.95-4.95v-12.66a3.14 3.14 0 0 1 3.142-3.142h4.093V6.328a4.95 4.95 0 1 1 9.9 0z"
             })
           })
         })),
-        hn = (0, s.forwardRef)(({
+        nh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(sn, {
+            children: ["SM" === e && (0, r.jsx)(ih, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(dn, {
+            }), "MD" === e && (0, r.jsx)(dh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(nn, {
+            }), "LG" === e && (0, r.jsx)(oh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(cn, {
+            }), "XL" === e && (0, r.jsx)(hh, {
               ...t,
               ref: a
             })]
           })
         });
-      hn.displayName = "ShoppingBag", hn.categories = ["shopping"], hn.tags = ["ecommerce", "cart", "purchase", "store", "bag", "shop", "shopping", "tote"], hn.SM = sn, hn.MD = dn, hn.LG = nn, hn.XL = cn;
-      const fn = (0, s.forwardRef)(({
+      nh.displayName = "ShoppingBag", nh.categories = ["shopping"], nh.tags = ["ecommerce", "cart", "purchase", "store", "bag", "shop", "shopping", "tote"], nh.SM = ih, nh.MD = dh, nh.LG = oh, nh.XL = hh;
+      const ch = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13201,20 +13221,20 @@ try {
             })
           })
         })),
-        vn = (0, s.forwardRef)(({
+        fh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13225,20 +13245,20 @@ try {
             })
           })
         })),
-        wn = (0, s.forwardRef)(({
+        wh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13247,20 +13267,20 @@ try {
             })
           })
         })),
-        gn = (0, s.forwardRef)(({
+        vh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13271,46 +13291,46 @@ try {
             })
           })
         })),
-        xn = (0, s.forwardRef)(({
+        xh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(fn, {
+            children: ["SM" === e && (0, r.jsx)(ch, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(vn, {
+            }), "LG" === e && (0, r.jsx)(fh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(wn, {
+            }), "MD" === e && (0, r.jsx)(wh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(gn, {
+            }), "XL" === e && (0, r.jsx)(vh, {
               ...t,
               ref: a
             })]
           })
         });
-      xn.displayName = "MessageSquareText", xn.categories = ["social"], xn.tags = ["comment", "chat", "conversation", "dialog", "feedback", "speech bubble", "clear", "close", "delete", "remove", "cancel", "silence", "mute", "moderate"], xn.SM = fn, xn.LG = vn, xn.MD = wn, xn.XL = gn;
-      const un = (0, s.forwardRef)(({
+      xh.displayName = "MessageSquareText", xh.categories = ["social"], xh.tags = ["comment", "chat", "conversation", "dialog", "feedback", "speech bubble", "clear", "close", "delete", "remove", "cancel", "silence", "mute", "moderate"], xh.SM = ch, xh.LG = fh, xh.MD = wh, xh.XL = vh;
+      const gh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13321,20 +13341,20 @@ try {
             })
           })
         })),
-        bn = (0, s.forwardRef)(({
+        jh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13345,20 +13365,20 @@ try {
             })
           })
         })),
-        pn = (0, s.forwardRef)(({
+        mh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13367,20 +13387,20 @@ try {
             })
           })
         })),
-        jn = (0, s.forwardRef)(({
+        ph = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13391,46 +13411,46 @@ try {
             })
           })
         })),
-        mn = (0, s.forwardRef)(({
+        uh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(un, {
+            children: ["SM" === e && (0, r.jsx)(gh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(bn, {
+            }), "LG" === e && (0, r.jsx)(jh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(pn, {
+            }), "MD" === e && (0, r.jsx)(mh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(jn, {
+            }), "XL" === e && (0, r.jsx)(ph, {
               ...t,
               ref: a
             })]
           })
         });
-      mn.displayName = "Search", mn.categories = ["text", "social"], mn.tags = ["find", "scan", "magnifier", "magnifying glass", "look", "view"], mn.SM = un, mn.LG = bn, mn.MD = pn, mn.XL = jn;
-      const Mn = (0, s.forwardRef)(({
+      uh.displayName = "Search", uh.categories = ["text", "social"], uh.tags = ["find", "scan", "magnifier", "magnifying glass", "look", "view"], uh.SM = gh, uh.LG = jh, uh.MD = mh, uh.XL = ph;
+      const bh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13441,20 +13461,20 @@ try {
             })
           })
         })),
-        Rn = (0, s.forwardRef)(({
+        Mh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13465,20 +13485,20 @@ try {
             })
           })
         })),
-        yn = (0, s.forwardRef)(({
+        Rh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13489,20 +13509,20 @@ try {
             })
           })
         })),
-        Ln = (0, s.forwardRef)(({
+        Lh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13513,46 +13533,46 @@ try {
             })
           })
         })),
-        zn = (0, s.forwardRef)(({
+        zh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Mn, {
+            children: ["SM" === e && (0, r.jsx)(bh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Rn, {
+            }), "LG" === e && (0, r.jsx)(Mh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(yn, {
+            }), "MD" === e && (0, r.jsx)(Rh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ln, {
+            }), "XL" === e && (0, r.jsx)(Lh, {
               ...t,
               ref: a
             })]
           })
         });
-      zn.displayName = "PartialCircle", zn.categories = ["shapes"], zn.tags = ["Partial", "Half", "Middle", "Split"], zn.SM = Mn, zn.LG = Rn, zn.MD = yn, zn.XL = Ln;
-      const Cn = (0, s.forwardRef)(({
+      zh.displayName = "PartialCircle", zh.categories = ["shapes"], zh.tags = ["Partial", "Half", "Middle", "Split"], zh.SM = bh, zh.LG = Mh, zh.MD = Rh, zh.XL = Lh;
+      const Ch = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13563,20 +13583,20 @@ try {
             })
           })
         })),
-        Hn = (0, s.forwardRef)(({
+        Hh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13587,20 +13607,20 @@ try {
             })
           })
         })),
-        An = (0, s.forwardRef)(({
+        Ah = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13609,20 +13629,20 @@ try {
             })
           })
         })),
-        Vn = (0, s.forwardRef)(({
+        Vh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13633,46 +13653,46 @@ try {
             })
           })
         })),
-        Bn = (0, s.forwardRef)(({
+        Bh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Cn, {
+            children: ["SM" === e && (0, r.jsx)(Ch, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Hn, {
+            }), "LG" === e && (0, r.jsx)(Hh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(An, {
+            }), "MD" === e && (0, r.jsx)(Ah, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Vn, {
+            }), "XL" === e && (0, r.jsx)(Vh, {
               ...t,
               ref: a
             })]
           })
         });
-      Bn.displayName = "LockKeyhole", Bn.categories = ["security"], Bn.tags = ["security", "password", "secure", "admin", "lock", "safe", "protection", "security", "latch"], Bn.SM = Cn, Bn.LG = Hn, Bn.MD = An, Bn.XL = Vn;
-      const In = (0, s.forwardRef)(({
+      Bh.displayName = "LockKeyhole", Bh.categories = ["security"], Bh.tags = ["security", "password", "secure", "admin", "lock", "safe", "protection", "security", "latch"], Bh.SM = Ch, Bh.LG = Hh, Bh.MD = Ah, Bh.XL = Vh;
+      const Ih = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13681,20 +13701,20 @@ try {
             })
           })
         })),
-        Sn = (0, s.forwardRef)(({
+        Sh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13703,20 +13723,20 @@ try {
             })
           })
         })),
-        qn = (0, s.forwardRef)(({
+        yh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13725,20 +13745,20 @@ try {
             })
           })
         })),
-        Dn = (0, s.forwardRef)(({
+        Dh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13747,46 +13767,46 @@ try {
             })
           })
         })),
-        Nn = (0, s.forwardRef)(({
+        Gh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(In, {
+            children: ["SM" === e && (0, r.jsx)(Ih, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Sn, {
+            }), "LG" === e && (0, r.jsx)(Sh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(qn, {
+            }), "MD" === e && (0, r.jsx)(yh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Dn, {
+            }), "XL" === e && (0, r.jsx)(Dh, {
               ...t,
               ref: a
             })]
           })
         });
-      Nn.displayName = "LockPassword", Nn.categories = ["security"], Nn.tags = ["security", "password", "secure", "admin"], Nn.SM = In, Nn.LG = Sn, Nn.MD = qn, Nn.XL = Dn;
-      const Xn = (0, s.forwardRef)(({
+      Gh.displayName = "LockPassword", Gh.categories = ["security"], Gh.tags = ["security", "password", "secure", "admin"], Gh.SM = Ih, Gh.LG = Sh, Gh.MD = yh, Gh.XL = Dh;
+      const Nh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13797,20 +13817,20 @@ try {
             })
           })
         })),
-        Gn = (0, s.forwardRef)(({
+        Xh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13821,20 +13841,20 @@ try {
             })
           })
         })),
-        kn = (0, s.forwardRef)(({
+        qh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13843,20 +13863,20 @@ try {
             })
           })
         })),
-        Fn = (0, s.forwardRef)(({
+        Ph = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13867,46 +13887,46 @@ try {
             })
           })
         })),
-        _n = (0, s.forwardRef)(({
+        Fh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Xn, {
+            children: ["SM" === e && (0, r.jsx)(Nh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Gn, {
+            }), "LG" === e && (0, r.jsx)(Xh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(kn, {
+            }), "MD" === e && (0, r.jsx)(qh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Fn, {
+            }), "XL" === e && (0, r.jsx)(Ph, {
               ...t,
               ref: a
             })]
           })
         });
-      _n.displayName = "Image", _n.categories = ["photography", "text", "multimedia", "files"], _n.tags = ["picture", "photo"], _n.SM = Xn, _n.LG = Gn, _n.MD = kn, _n.XL = Fn;
-      const Pn = (0, s.forwardRef)(({
+      Fh.displayName = "Image", Fh.categories = ["photography", "text", "multimedia", "files"], Fh.tags = ["picture", "photo"], Fh.SM = Nh, Fh.LG = Xh, Fh.MD = qh, Fh.XL = Ph;
+      const kh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -13917,20 +13937,20 @@ try {
             })
           })
         })),
-        En = (0, s.forwardRef)(({
+        Oh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -13941,20 +13961,20 @@ try {
             })
           })
         })),
-        On = (0, s.forwardRef)(({
+        Th = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -13963,20 +13983,20 @@ try {
             })
           })
         })),
-        Tn = (0, s.forwardRef)(({
+        Eh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -13987,46 +14007,46 @@ try {
             })
           })
         })),
-        Un = (0, s.forwardRef)(({
+        Uh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Pn, {
+            children: ["SM" === e && (0, r.jsx)(kh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(En, {
+            }), "LG" === e && (0, r.jsx)(Oh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(On, {
+            }), "MD" === e && (0, r.jsx)(Th, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Tn, {
+            }), "XL" === e && (0, r.jsx)(Eh, {
               ...t,
               ref: a
             })]
           })
         });
-      Un.displayName = "Lightbulb", Un.categories = ["photography"], Un.tags = ["idea", "bright", "lights"], Un.SM = Pn, Un.LG = En, Un.MD = On, Un.XL = Tn;
-      const Wn = (0, s.forwardRef)(({
+      Uh.displayName = "Lightbulb", Uh.categories = ["photography"], Uh.tags = ["idea", "bright", "lights"], Uh.SM = kh, Uh.LG = Oh, Uh.MD = Th, Uh.XL = Eh;
+      const _h = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14037,20 +14057,20 @@ try {
             })
           })
         })),
-        Yn = (0, s.forwardRef)(({
+        Wh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14061,20 +14081,20 @@ try {
             })
           })
         })),
-        Zn = (0, s.forwardRef)(({
+        Zh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14083,20 +14103,20 @@ try {
             })
           })
         })),
-        Kn = (0, s.forwardRef)(({
+        Yh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14107,46 +14127,46 @@ try {
             })
           })
         })),
-        Jn = (0, s.forwardRef)(({
+        Kh = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Wn, {
+            children: ["SM" === e && (0, r.jsx)(_h, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Yn, {
+            }), "LG" === e && (0, r.jsx)(Wh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Zn, {
+            }), "MD" === e && (0, r.jsx)(Zh, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Kn, {
+            }), "XL" === e && (0, r.jsx)(Yh, {
               ...t,
               ref: a
             })]
           })
         });
-      Jn.displayName = "Check", Jn.categories = ["notifications"], Jn.tags = ["done", "todo", "tick", "complete", "task", "ready", "yes", "available", "success", "accept"], Jn.SM = Wn, Jn.LG = Yn, Jn.MD = Zn, Jn.XL = Kn;
-      const Qn = (0, s.forwardRef)(({
+      Kh.displayName = "Check", Kh.categories = ["notifications"], Kh.tags = ["done", "todo", "tick", "complete", "task", "ready", "yes", "available", "success", "accept"], Kh.SM = _h, Kh.LG = Wh, Kh.MD = Zh, Kh.XL = Yh;
+      const Qh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14157,20 +14177,20 @@ try {
             })
           })
         })),
-        $n = (0, s.forwardRef)(({
+        Jh = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14181,20 +14201,20 @@ try {
             })
           })
         })),
-        ec = (0, s.forwardRef)(({
+        $h = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14203,20 +14223,20 @@ try {
             })
           })
         })),
-        lc = (0, s.forwardRef)(({
+        en = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14227,46 +14247,46 @@ try {
             })
           })
         })),
-        ac = (0, s.forwardRef)(({
+        ln = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Qn, {
+            children: ["SM" === e && (0, r.jsx)(Qh, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)($n, {
+            }), "LG" === e && (0, r.jsx)(Jh, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(ec, {
+            }), "MD" === e && (0, r.jsx)($h, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(lc, {
+            }), "XL" === e && (0, r.jsx)(en, {
               ...t,
               ref: a
             })]
           })
         });
-      ac.displayName = "CircleCheck", ac.categories = ["notifications"], ac.tags = ["done", "todo", "tick", "complete", "task", "ready", "yes", "available", "circle", "approve", "success"], ac.SM = Qn, ac.LG = $n, ac.MD = ec, ac.XL = lc;
-      const rc = (0, s.forwardRef)(({
+      ln.displayName = "CircleCheck", ln.categories = ["notifications"], ln.tags = ["done", "todo", "tick", "complete", "task", "ready", "yes", "available", "circle", "approve", "success"], ln.SM = Qh, ln.LG = Jh, ln.MD = $h, ln.XL = en;
+      const an = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14277,20 +14297,20 @@ try {
             })
           })
         })),
-        tc = (0, s.forwardRef)(({
+        rn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14301,20 +14321,20 @@ try {
             })
           })
         })),
-        oc = (0, s.forwardRef)(({
+        tn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14323,20 +14343,20 @@ try {
             })
           })
         })),
-        sc = (0, s.forwardRef)(({
+        sn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14347,282 +14367,282 @@ try {
             })
           })
         })),
-        dc = (0, s.forwardRef)(({
+        dn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(rc, {
+            children: ["SM" === e && (0, r.jsx)(an, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(tc, {
+            }), "LG" === e && (0, r.jsx)(rn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(oc, {
+            }), "MD" === e && (0, r.jsx)(tn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(sc, {
+            }), "XL" === e && (0, r.jsx)(sn, {
               ...t,
               ref: a
             })]
           })
         });
-      dc.displayName = "TriangleAlert", dc.categories = ["notifications", "shapes", "development"], dc.tags = ["warning", "alert", "danger", "exclamation mark", "linter", "caution", "attention", "error", "triangle"], dc.SM = rc, dc.LG = tc, dc.MD = oc, dc.XL = sc;
-      const ic = (0, s.forwardRef)(({
+      dn.displayName = "TriangleAlert", dn.categories = ["notifications", "shapes", "development"], dn.tags = ["warning", "alert", "danger", "exclamation mark", "linter", "caution", "attention", "error", "triangle"], dn.SM = an, dn.LG = rn, dn.MD = tn, dn.XL = sn;
+      const on = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M5.168 4.228a.667.667 0 0 0-.943.943L7.053 8l-2.828 2.828a.667.667 0 1 0 .943.943l2.828-2.828 2.829 2.828a.667.667 0 1 0 .943-.943L8.939 8l2.829-2.829a.667.667 0 1 0-.943-.943L7.996 7.057z"
+              d: "M4.784 3.712a.758.758 0 0 0-1.072 1.072L6.928 8l-3.216 3.216a.758.758 0 0 0 1.072 1.072L8 9.072l3.216 3.216a.758.758 0 0 0 1.072-1.072L9.072 8l3.216-3.216a.758.758 0 0 0-1.072-1.072L8 6.928z"
             })
           })
         })),
-        nc = (0, s.forwardRef)(({
+        hn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M7.757 6.343a1 1 0 1 0-1.414 1.414L10.585 12l-4.242 4.243a1 1 0 1 0 1.414 1.414L12 13.414l4.242 4.243a1 1 0 0 0 1.414-1.414L13.414 12l4.242-4.243a1 1 0 0 0-1.414-1.414L12 10.586z"
+              d: "M7.22 5.627A1.127 1.127 0 1 0 5.626 7.22l4.78 4.78-4.78 4.78a1.127 1.127 0 1 0 1.594 1.593l4.78-4.78 4.78 4.78a1.127 1.127 0 0 0 1.593-1.593L13.593 12l4.78-4.78a1.127 1.127 0 0 0-1.593-1.593L12 10.407z"
             })
           })
         })),
-        cc = (0, s.forwardRef)(({
+        nn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M6.463 5.286a.833.833 0 1 0-1.179 1.179L8.82 10l-3.536 3.536a.833.833 0 0 0 1.179 1.178l3.535-3.535 3.536 3.535a.833.833 0 0 0 1.178-1.178L11.177 10l3.535-3.535a.833.833 0 0 0-1.178-1.179L9.998 8.822z"
+              d: "M6.02 4.696a.938.938 0 1 0-1.325 1.326L8.672 10l-3.977 3.977a.938.938 0 0 0 1.325 1.326l3.978-3.977 3.978 3.977a.937.937 0 1 0 1.325-1.326L11.324 10 15.3 6.022a.937.937 0 1 0-1.325-1.326L9.998 8.674z"
             })
           })
         })),
-        hc = (0, s.forwardRef)(({
+        cn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M10.346 8.457a1.333 1.333 0 0 0-1.886 1.886L14.117 16 8.46 21.657a1.333 1.333 0 0 0 1.886 1.885l5.657-5.657 5.657 5.657a1.333 1.333 0 1 0 1.885-1.885L17.888 16l5.657-5.657a1.333 1.333 0 1 0-1.885-1.886l-5.657 5.657z"
+              d: "M9.643 7.52a1.499 1.499 0 1 0-2.12 2.12l6.36 6.36-6.36 6.36a1.499 1.499 0 1 0 2.12 2.12l6.36-6.36 6.36 6.36a1.499 1.499 0 1 0 2.12-2.12L18.123 16l6.36-6.36a1.499 1.499 0 0 0-2.12-2.12l-6.36 6.36z"
             })
           })
         })),
-        fc = (0, s.forwardRef)(({
+        fn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ic, {
+            children: ["SM" === e && (0, r.jsx)(on, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(nc, {
+            }), "LG" === e && (0, r.jsx)(hn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(cc, {
+            }), "MD" === e && (0, r.jsx)(nn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(hc, {
+            }), "XL" === e && (0, r.jsx)(cn, {
               ...t,
               ref: a
             })]
           })
         });
-      fc.displayName = "X", fc.categories = ["notifications", "math"], fc.tags = ["cancel", "close", "delete", "remove", "times", "clear", "math", "multiply", "multiplication", "error", "remove", "clean", "erase", "navigation", "cross", "times"], fc.SM = ic, fc.LG = nc, fc.MD = cc, fc.XL = hc;
-      const vc = (0, s.forwardRef)(({
+      fn.displayName = "X", fn.categories = ["notifications", "math"], fn.tags = ["cancel", "close", "delete", "remove", "times", "clear", "math", "multiply", "multiplication", "error", "remove", "clean", "erase", "navigation", "cross", "times"], fn.SM = on, fn.LG = hn, fn.MD = nn, fn.XL = cn;
+      const wn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M2.705 7.333H5.35c.097-1.603.54-3.15 1.286-4.492a5.34 5.34 0 0 0-3.931 4.492m5.292-4.175C7.249 4.364 6.79 5.81 6.687 7.333h2.62c-.104-1.523-.562-2.97-1.31-4.175m1.31 5.508h-2.62c.103 1.523.562 2.97 1.31 4.176.748-1.207 1.206-2.653 1.31-4.176m-2.67 4.492c-.748-1.341-1.19-2.889-1.287-4.492H2.705a5.34 5.34 0 0 0 3.931 4.492m2.72 0c.747-1.341 1.19-2.889 1.286-4.492h2.646a5.34 5.34 0 0 1-3.932 4.492m3.932-5.825h-2.646c-.096-1.603-.539-3.15-1.286-4.492a5.34 5.34 0 0 1 3.932 4.492M1.33 8a6.667 6.667 0 1 1 13.333 0A6.667 6.667 0 0 1 1.33 8",
+              d: "M2.227 7.273H5.11c.105-1.747.588-3.435 1.403-4.897a5.82 5.82 0 0 0-4.287 4.897m5.77-4.553C7.18 4.036 6.68 5.613 6.567 7.273h2.859c-.114-1.66-.614-3.237-1.43-4.553m1.429 6.007H6.568c.113 1.66.613 3.237 1.429 4.552.815-1.315 1.315-2.892 1.429-4.552m-2.912 4.897c-.815-1.463-1.298-3.15-1.403-4.897H2.227a5.82 5.82 0 0 0 4.287 4.897m2.966 0c.815-1.463 1.297-3.15 1.403-4.897h2.884a5.82 5.82 0 0 1-4.287 4.897m4.287-6.351h-2.884c-.105-1.747-.588-3.435-1.403-4.897a5.82 5.82 0 0 1 4.287 4.897M.728 8a7.269 7.269 0 1 1 14.538 0A7.269 7.269 0 0 1 .728 8",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        wc = (0, s.forwardRef)(({
+        vn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M4.062 11H8.03c.145-2.404.809-4.725 1.93-6.737A8.01 8.01 0 0 0 4.061 11M12 4.737c-1.122 1.81-1.81 3.979-1.966 6.263h3.932C13.81 8.716 13.122 6.546 12 4.737M13.966 13h-3.932c.156 2.284.844 4.454 1.966 6.263 1.122-1.81 1.81-3.979 1.966-6.263m-4.007 6.737C8.84 17.725 8.175 15.404 8.03 13H4.062a8.01 8.01 0 0 0 5.897 6.737m4.082 0c1.12-2.012 1.784-4.333 1.929-6.737h3.968a8.01 8.01 0 0 1-5.897 6.737M19.938 11H15.97c-.145-2.404-.809-4.725-1.93-6.737A8.01 8.01 0 0 1 19.939 11M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12",
+              d: "M3.268 10.9h4.365c.16-2.644.89-5.198 2.122-7.411A8.81 8.81 0 0 0 3.268 10.9M12 4.01c-1.234 1.991-1.99 4.377-2.162 6.89h4.325C13.99 8.387 13.234 6.001 12 4.01m2.162 9.09H9.839c.171 2.513.928 4.899 2.162 6.89 1.234-1.991 1.99-4.377 2.162-6.89m-4.407 7.411c-1.232-2.213-1.963-4.767-2.122-7.411H3.268a8.81 8.81 0 0 0 6.487 7.411m4.49 0c1.232-2.213 1.963-4.767 2.122-7.411h4.365a8.81 8.81 0 0 1-6.487 7.411m6.487-9.611h-4.365c-.16-2.644-.89-5.198-2.122-7.411a8.81 8.81 0 0 1 6.487 7.411M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        gc = (0, s.forwardRef)(({
+        xn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M3.388 9.167h3.307c.12-2.003.674-3.938 1.608-5.614a6.67 6.67 0 0 0-4.915 5.614m6.615-5.22c-.935 1.509-1.508 3.317-1.638 5.22h3.277c-.13-1.903-.704-3.711-1.639-5.22m1.639 6.887H8.365c.13 1.903.703 3.711 1.638 5.219.935-1.508 1.508-3.316 1.639-5.22m-3.34 5.614c-.933-1.677-1.486-3.611-1.607-5.614H3.388a6.67 6.67 0 0 0 4.915 5.614m3.402 0c.934-1.677 1.487-3.611 1.608-5.614h3.306a6.67 6.67 0 0 1-4.914 5.614m4.914-7.281h-3.306c-.121-2.003-.674-3.938-1.608-5.614a6.67 6.67 0 0 1 4.914 5.614M1.67 10a8.333 8.333 0 1 1 16.667 0A8.333 8.333 0 0 1 1.67 10",
+              d: "M2.725 9.088h3.637c.132-2.203.741-4.33 1.768-6.175a7.34 7.34 0 0 0-5.405 6.175M10 3.348c-1.028 1.658-1.658 3.646-1.802 5.74h3.604c-.144-2.094-.774-4.082-1.802-5.74m1.802 7.572H8.198c.144 2.094.774 4.082 1.802 5.74 1.028-1.658 1.658-3.646 1.802-5.74M8.13 17.095c-1.027-1.844-1.636-3.972-1.768-6.175H2.725a7.34 7.34 0 0 0 5.405 6.175m3.74 0c1.027-1.844 1.636-3.972 1.768-6.175h3.637a7.34 7.34 0 0 1-5.405 6.175m5.405-8.007h-3.637c-.133-2.203-.741-4.33-1.768-6.175a7.34 7.34 0 0 1 5.405 6.175m-16.44.916a9.164 9.164 0 1 1 18.33 0 9.164 9.164 0 0 1-18.33 0",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        xc = (0, s.forwardRef)(({
+        gn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
               fill: e,
-              d: "M5.42 14.667h5.29c.193-3.205 1.078-6.3 2.572-8.983a10.68 10.68 0 0 0-7.863 8.983m10.583-8.35c-1.496 2.412-2.413 5.304-2.62 8.35h5.241c-.208-3.046-1.125-5.938-2.62-8.35m2.621 11.017h-5.242c.208 3.045 1.125 5.938 2.621 8.35 1.496-2.412 2.413-5.305 2.621-8.35m-5.342 8.983c-1.494-2.683-2.38-5.778-2.572-8.983H5.42a10.68 10.68 0 0 0 7.862 8.983m5.442 0c1.494-2.683 2.38-5.778 2.573-8.983h5.29a10.68 10.68 0 0 1-7.863 8.983m7.863-11.65h-5.29c-.193-3.205-1.079-6.3-2.573-8.983a10.68 10.68 0 0 1 7.863 8.983M2.67 16c0-7.363 5.97-13.333 13.333-13.333S29.337 8.637 29.337 16s-5.97 13.334-13.334 13.334S2.67 23.364 2.67 16",
+              d: "M4.41 14.537h5.792c.211-3.509 1.18-6.897 2.816-9.834-4.55 1.196-8.014 5.07-8.608 9.834m11.587-9.142c-1.638 2.641-2.642 5.808-2.87 9.142h5.74c-.229-3.334-1.233-6.5-2.87-9.142m2.87 12.062h-5.74c.228 3.334 1.232 6.5 2.87 9.142 1.637-2.641 2.642-5.808 2.87-9.142m-5.849 9.834c-1.635-2.937-2.605-6.325-2.816-9.834H4.41c.594 4.764 4.058 8.637 8.608 9.834m5.958 0c1.635-2.937 2.605-6.325 2.816-9.834h5.792c-.594 4.764-4.058 8.637-8.608 9.834m8.608-12.754h-5.792c-.211-3.509-1.18-6.897-2.816-9.834 4.55 1.196 8.014 5.07 8.608 9.834M1.4 15.997C1.4 7.935 7.935 1.4 15.997 1.4s14.597 6.535 14.597 14.597-6.535 14.597-14.597 14.597S1.4 24.059 1.4 15.997",
               fillRule: "evenodd",
               clipRule: "evenodd"
             })
           })
         })),
-        uc = (0, s.forwardRef)(({
+        jn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(vc, {
+            children: ["SM" === e && (0, r.jsx)(wn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(wc, {
+            }), "LG" === e && (0, r.jsx)(vn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(gc, {
+            }), "MD" === e && (0, r.jsx)(xn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(xc, {
+            }), "XL" === e && (0, r.jsx)(gn, {
               ...t,
               ref: a
             })]
           })
         });
-      uc.displayName = "Globe", uc.categories = ["navigation"], uc.tags = ["world", "browser", "language", "translate", "global", "network", "earth"], uc.SM = vc, uc.LG = wc, uc.MD = gc, uc.XL = xc;
-      const bc = (0, s.forwardRef)(({
+      jn.displayName = "Globe", jn.categories = ["navigation"], jn.tags = ["world", "browser", "language", "translate", "global", "network", "earth"], jn.SM = wn, jn.LG = vn, jn.MD = xn, jn.XL = gn;
+      const mn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14633,20 +14653,20 @@ try {
             })
           })
         })),
-        pc = (0, s.forwardRef)(({
+        pn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14657,20 +14677,20 @@ try {
             })
           })
         })),
-        jc = (0, s.forwardRef)(({
+        un = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14679,20 +14699,20 @@ try {
             })
           })
         })),
-        mc = (0, s.forwardRef)(({
+        bn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14703,46 +14723,46 @@ try {
             })
           })
         })),
-        Mc = (0, s.forwardRef)(({
+        Mn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(bc, {
+            children: ["SM" === e && (0, r.jsx)(mn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(pc, {
+            }), "LG" === e && (0, r.jsx)(pn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(jc, {
+            }), "MD" === e && (0, r.jsx)(un, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(mc, {
+            }), "XL" === e && (0, r.jsx)(bn, {
               ...t,
               ref: a
             })]
           })
         });
-      Mc.displayName = "HeartPulse", Mc.categories = ["medical"], Mc.tags = ["heartbeat", "pulse", "health", "medical", "blood pressure", "cardiac", "systole", "diastole"], Mc.SM = bc, Mc.LG = pc, Mc.MD = jc, Mc.XL = mc;
-      const Rc = (0, s.forwardRef)(({
+      Mn.displayName = "HeartPulse", Mn.categories = ["medical"], Mn.tags = ["heartbeat", "pulse", "health", "medical", "blood pressure", "cardiac", "systole", "diastole"], Mn.SM = mn, Mn.LG = pn, Mn.MD = un, Mn.XL = bn;
+      const Rn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14753,20 +14773,20 @@ try {
             })
           })
         })),
-        yc = (0, s.forwardRef)(({
+        Ln = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14777,20 +14797,20 @@ try {
             })
           })
         })),
-        Lc = (0, s.forwardRef)(({
+        zn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14799,20 +14819,20 @@ try {
             })
           })
         })),
-        zc = (0, s.forwardRef)(({
+        Cn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14823,46 +14843,46 @@ try {
             })
           })
         })),
-        Cc = (0, s.forwardRef)(({
+        Hn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Rc, {
+            children: ["SM" === e && (0, r.jsx)(Rn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(yc, {
+            }), "LG" === e && (0, r.jsx)(Ln, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Lc, {
+            }), "MD" === e && (0, r.jsx)(zn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(zc, {
+            }), "XL" === e && (0, r.jsx)(Cn, {
               ...t,
               ref: a
             })]
           })
         });
-      Cc.displayName = "CircleMinus", Cc.categories = ["math"], Cc.tags = ["subtract", "remove", "decrease", "reduce", "calculate", "line", "operator", "code", "coding", "minimum", "downgrade", "minus", "no", "less", "n/a", "delete"], Cc.SM = Rc, Cc.LG = yc, Cc.MD = Lc, Cc.XL = zc;
-      const Hc = (0, s.forwardRef)(({
+      Hn.displayName = "CircleMinus", Hn.categories = ["math"], Hn.tags = ["subtract", "remove", "decrease", "reduce", "calculate", "line", "operator", "code", "coding", "minimum", "downgrade", "minus", "no", "less", "n/a", "delete"], Hn.SM = Rn, Hn.LG = Ln, Hn.MD = zn, Hn.XL = Cn;
+      const An = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14873,20 +14893,20 @@ try {
             })
           })
         })),
-        Ac = (0, s.forwardRef)(({
+        Vn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -14897,20 +14917,20 @@ try {
             })
           })
         })),
-        Vc = (0, s.forwardRef)(({
+        Bn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -14919,20 +14939,20 @@ try {
             })
           })
         })),
-        Bc = (0, s.forwardRef)(({
+        In = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -14943,46 +14963,46 @@ try {
             })
           })
         })),
-        Ic = (0, s.forwardRef)(({
+        Sn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Hc, {
+            children: ["SM" === e && (0, r.jsx)(An, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Ac, {
+            }), "LG" === e && (0, r.jsx)(Vn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Vc, {
+            }), "MD" === e && (0, r.jsx)(Bn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Bc, {
+            }), "XL" === e && (0, r.jsx)(In, {
               ...t,
               ref: a
             })]
           })
         });
-      Ic.displayName = "CircleX", Ic.categories = ["math", "development"], Ic.tags = ["cancel", "close", "delete", "remove", "times", "clear", "error", "incorrect", "wrong", "mistake", "failure", "linter", "multiply", "multiplication", "clean", "erase", "deprecate", "delete", "navigation"], Ic.SM = Hc, Ic.LG = Ac, Ic.MD = Vc, Ic.XL = Bc;
-      const Sc = (0, s.forwardRef)(({
+      Sn.displayName = "CircleX", Sn.categories = ["math", "development"], Sn.tags = ["cancel", "close", "delete", "remove", "times", "clear", "error", "incorrect", "wrong", "mistake", "failure", "linter", "multiply", "multiplication", "clean", "erase", "deprecate", "delete", "navigation"], Sn.SM = An, Sn.LG = Vn, Sn.MD = Bn, Sn.XL = In;
+      const yn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -14993,20 +15013,20 @@ try {
             })
           })
         })),
-        qc = (0, s.forwardRef)(({
+        Dn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15017,20 +15037,20 @@ try {
             })
           })
         })),
-        Dc = (0, s.forwardRef)(({
+        Gn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15039,20 +15059,20 @@ try {
             })
           })
         })),
-        Nc = (0, s.forwardRef)(({
+        Nn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15063,46 +15083,46 @@ try {
             })
           })
         })),
-        Xc = (0, s.forwardRef)(({
+        Xn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Sc, {
+            children: ["SM" === e && (0, r.jsx)(yn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(qc, {
+            }), "LG" === e && (0, r.jsx)(Dn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Dc, {
+            }), "MD" === e && (0, r.jsx)(Gn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Nc, {
+            }), "XL" === e && (0, r.jsx)(Nn, {
               ...t,
               ref: a
             })]
           })
         });
-      Xc.displayName = "Minus", Xc.categories = ["math", "development", "text", "tools"], Xc.tags = ["subtract", "remove", "decrease", "decrement", "reduce", "negative", "calculate", "line", "divider", "separator", "horizontal rule", "hr", "html", "markup", "markdown", "---", "toolbar", "operator", "code", "coding", "minimum", "downgrade", "less", "delete", "navigation", "minimize"], Xc.SM = Sc, Xc.LG = qc, Xc.MD = Dc, Xc.XL = Nc;
-      const Gc = (0, s.forwardRef)(({
+      Xn.displayName = "Minus", Xn.categories = ["math", "development", "text", "tools"], Xn.tags = ["subtract", "remove", "decrease", "decrement", "reduce", "negative", "calculate", "line", "divider", "separator", "horizontal rule", "hr", "html", "markup", "markdown", "---", "toolbar", "operator", "code", "coding", "minimum", "downgrade", "less", "delete", "navigation", "minimize"], Xn.SM = yn, Xn.LG = Dn, Xn.MD = Gn, Xn.XL = Nn;
+      const qn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15113,20 +15133,20 @@ try {
             })
           })
         })),
-        kc = (0, s.forwardRef)(({
+        Pn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15137,20 +15157,20 @@ try {
             })
           })
         })),
-        Fc = (0, s.forwardRef)(({
+        Fn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15159,20 +15179,20 @@ try {
             })
           })
         })),
-        _c = (0, s.forwardRef)(({
+        kn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15183,46 +15203,46 @@ try {
             })
           })
         })),
-        Pc = (0, s.forwardRef)(({
+        On = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Gc, {
+            children: ["SM" === e && (0, r.jsx)(qn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(kc, {
+            }), "LG" === e && (0, r.jsx)(Pn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Fc, {
+            }), "MD" === e && (0, r.jsx)(Fn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(_c, {
+            }), "XL" === e && (0, r.jsx)(kn, {
               ...t,
               ref: a
             })]
           })
         });
-      Pc.displayName = "EnvelopeOpen", Pc.categories = ["mail"], Pc.tags = ["email", "message", "letter", "read"], Pc.SM = Gc, Pc.LG = kc, Pc.MD = Fc, Pc.XL = _c;
-      const Ec = (0, s.forwardRef)(({
+      On.displayName = "EnvelopeOpen", On.categories = ["mail"], On.tags = ["email", "message", "letter", "read"], On.SM = qn, On.LG = Pn, On.MD = Fn, On.XL = kn;
+      const Tn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15233,20 +15253,20 @@ try {
             })
           })
         })),
-        Oc = (0, s.forwardRef)(({
+        En = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15257,20 +15277,20 @@ try {
             })
           })
         })),
-        Tc = (0, s.forwardRef)(({
+        Un = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15281,20 +15301,20 @@ try {
             })
           })
         })),
-        Uc = (0, s.forwardRef)(({
+        _n = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15305,46 +15325,46 @@ try {
             })
           })
         })),
-        Wc = (0, s.forwardRef)(({
+        Wn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ec, {
+            children: ["SM" === e && (0, r.jsx)(Tn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Oc, {
+            }), "LG" === e && (0, r.jsx)(En, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Tc, {
+            }), "MD" === e && (0, r.jsx)(Un, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Uc, {
+            }), "XL" === e && (0, r.jsx)(_n, {
               ...t,
               ref: a
             })]
           })
         });
-      Wc.displayName = "Paperclip", Wc.categories = ["text", "design", "files", "mail"], Wc.tags = ["attachment", "file", "attach", "clip", "document", "paper"], Wc.SM = Ec, Wc.LG = Oc, Wc.MD = Tc, Wc.XL = Uc;
-      const Yc = (0, s.forwardRef)(({
+      Wn.displayName = "Paperclip", Wn.categories = ["text", "design", "files", "mail"], Wn.tags = ["attachment", "file", "attach", "clip", "document", "paper"], Wn.SM = Tn, Wn.LG = En, Wn.MD = Un, Wn.XL = _n;
+      const Zn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15355,20 +15375,20 @@ try {
             })
           })
         })),
-        Zc = (0, s.forwardRef)(({
+        Yn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15379,20 +15399,20 @@ try {
             })
           })
         })),
-        Kc = (0, s.forwardRef)(({
+        Kn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15401,20 +15421,20 @@ try {
             })
           })
         })),
-        Jc = (0, s.forwardRef)(({
+        Qn = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15425,46 +15445,46 @@ try {
             })
           })
         })),
-        Qc = (0, s.forwardRef)(({
+        Jn = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Yc, {
+            children: ["SM" === e && (0, r.jsx)(Zn, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Zc, {
+            }), "LG" === e && (0, r.jsx)(Yn, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Kc, {
+            }), "MD" === e && (0, r.jsx)(Kn, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Jc, {
+            }), "XL" === e && (0, r.jsx)(Qn, {
               ...t,
               ref: a
             })]
           })
         });
-      Qc.displayName = "Trash", Qc.categories = ["files", "mail"], Qc.tags = ["garbage", "delete", "remove", "bin", "trashcan", "bin", "waste bin", "erase"], Qc.SM = Yc, Qc.LG = Zc, Qc.MD = Kc, Qc.XL = Jc;
-      const $c = (0, s.forwardRef)(({
+      Jn.displayName = "Trash", Jn.categories = ["files", "mail"], Jn.tags = ["garbage", "delete", "remove", "bin", "trashcan", "bin", "waste bin", "erase"], Jn.SM = Zn, Jn.LG = Yn, Jn.MD = Kn, Jn.XL = Qn;
+      const $n = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15475,20 +15495,20 @@ try {
             })
           })
         })),
-        eh = (0, s.forwardRef)(({
+        ec = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15499,20 +15519,20 @@ try {
             })
           })
         })),
-        lh = (0, s.forwardRef)(({
+        lc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15521,20 +15541,20 @@ try {
             })
           })
         })),
-        ah = (0, s.forwardRef)(({
+        ac = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15545,46 +15565,46 @@ try {
             })
           })
         })),
-        rh = (0, s.forwardRef)(({
+        rc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)($c, {
+            children: ["SM" === e && (0, r.jsx)($n, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(eh, {
+            }), "LG" === e && (0, r.jsx)(ec, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(lh, {
+            }), "MD" === e && (0, r.jsx)(lc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ah, {
+            }), "XL" === e && (0, r.jsx)(ac, {
               ...t,
               ref: a
             })]
           })
         });
-      rh.displayName = "EllipsisVertical", rh.categories = ["layout"], rh.tags = ["menu", "options", "spread", "more", "further", "extra", "overflow", "dots", "..."], rh.SM = $c, rh.LG = eh, rh.MD = lh, rh.XL = ah;
-      const th = (0, s.forwardRef)(({
+      rc.displayName = "EllipsisVertical", rc.categories = ["layout"], rc.tags = ["menu", "options", "spread", "more", "further", "extra", "overflow", "dots", "..."], rc.SM = $n, rc.LG = ec, rc.MD = lc, rc.XL = ac;
+      const tc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15595,20 +15615,20 @@ try {
             })
           })
         })),
-        oh = (0, s.forwardRef)(({
+        sc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15619,20 +15639,20 @@ try {
             })
           })
         })),
-        sh = (0, s.forwardRef)(({
+        ic = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15641,20 +15661,20 @@ try {
             })
           })
         })),
-        dh = (0, s.forwardRef)(({
+        dc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15665,46 +15685,46 @@ try {
             })
           })
         })),
-        ih = (0, s.forwardRef)(({
+        oc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(th, {
+            children: ["SM" === e && (0, r.jsx)(tc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(oh, {
+            }), "LG" === e && (0, r.jsx)(sc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(sh, {
+            }), "MD" === e && (0, r.jsx)(ic, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(dh, {
+            }), "XL" === e && (0, r.jsx)(dc, {
               ...t,
               ref: a
             })]
           })
         });
-      ih.displayName = "Filter", ih.categories = ["layout"], ih.tags = ["funnel", "hopper"], ih.SM = th, ih.LG = oh, ih.MD = sh, ih.XL = dh;
-      const nh = (0, s.forwardRef)(({
+      oc.displayName = "Filter", oc.categories = ["layout"], oc.tags = ["funnel", "hopper"], oc.SM = tc, oc.LG = sc, oc.MD = ic, oc.XL = dc;
+      const hc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15713,20 +15733,20 @@ try {
             })
           })
         })),
-        ch = (0, s.forwardRef)(({
+        nc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15735,20 +15755,20 @@ try {
             })
           })
         })),
-        hh = (0, s.forwardRef)(({
+        cc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15757,20 +15777,20 @@ try {
             })
           })
         })),
-        fh = (0, s.forwardRef)(({
+        fc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15779,46 +15799,46 @@ try {
             })
           })
         })),
-        vh = (0, s.forwardRef)(({
+        wc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(nh, {
+            children: ["SM" === e && (0, r.jsx)(hc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(ch, {
+            }), "LG" === e && (0, r.jsx)(nc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(hh, {
+            }), "MD" === e && (0, r.jsx)(cc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(fh, {
+            }), "XL" === e && (0, r.jsx)(fc, {
               ...t,
               ref: a
             })]
           })
         });
-      vh.displayName = "Weapon", vh.categories = ["gaming"], vh.tags = ["gun", "pistol", "GTAO", "fire", "shoot", "death", "danger"], vh.SM = nh, vh.LG = ch, vh.MD = hh, vh.XL = fh;
-      const wh = (0, s.forwardRef)(({
+      wc.displayName = "Weapon", wc.categories = ["gaming"], wc.tags = ["gun", "pistol", "GTAO", "fire", "shoot", "death", "danger"], wc.SM = hc, wc.LG = nc, wc.MD = cc, wc.XL = fc;
+      const vc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15829,20 +15849,20 @@ try {
             })
           })
         })),
-        gh = (0, s.forwardRef)(({
+        xc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15853,20 +15873,20 @@ try {
             })
           })
         })),
-        xh = (0, s.forwardRef)(({
+        gc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15875,20 +15895,20 @@ try {
             })
           })
         })),
-        uh = (0, s.forwardRef)(({
+        jc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -15899,46 +15919,46 @@ try {
             })
           })
         })),
-        bh = (0, s.forwardRef)(({
+        mc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(wh, {
+            children: ["SM" === e && (0, r.jsx)(vc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(gh, {
+            }), "LG" === e && (0, r.jsx)(xc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(xh, {
+            }), "MD" === e && (0, r.jsx)(gc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(uh, {
+            }), "XL" === e && (0, r.jsx)(jc, {
               ...t,
               ref: a
             })]
           })
         });
-      bh.displayName = "Heart", bh.categories = ["medical", "social", "multimedia", "emoji", "gaming", "shapes"], bh.tags = ["like", "love", "emotion", "suit", "playing", "cards"], bh.SM = wh, bh.LG = gh, bh.MD = xh, bh.XL = uh;
-      const ph = (0, s.forwardRef)(({
+      mc.displayName = "Heart", mc.categories = ["medical", "social", "multimedia", "emoji", "gaming", "shapes"], mc.tags = ["like", "love", "emotion", "suit", "playing", "cards"], mc.SM = vc, mc.LG = xc, mc.MD = gc, mc.XL = jc;
+      const pc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -15949,20 +15969,20 @@ try {
             })
           })
         })),
-        jh = (0, s.forwardRef)(({
+        uc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -15973,20 +15993,20 @@ try {
             })
           })
         })),
-        mh = (0, s.forwardRef)(({
+        bc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -15995,20 +16015,20 @@ try {
             })
           })
         })),
-        Mh = (0, s.forwardRef)(({
+        Mc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16019,46 +16039,46 @@ try {
             })
           })
         })),
-        Rh = (0, s.forwardRef)(({
+        Rc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(ph, {
+            children: ["SM" === e && (0, r.jsx)(pc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(jh, {
+            }), "LG" === e && (0, r.jsx)(uc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(mh, {
+            }), "MD" === e && (0, r.jsx)(bc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Mh, {
+            }), "XL" === e && (0, r.jsx)(Mc, {
               ...t,
               ref: a
             })]
           })
         });
-      Rh.displayName = "FileText", Rh.categories = ["files", "text"], Rh.tags = ["data", "txt", "pdf", "document"], Rh.SM = ph, Rh.LG = jh, Rh.MD = mh, Rh.XL = Mh;
-      const yh = (0, s.forwardRef)(({
+      Rc.displayName = "FileText", Rc.categories = ["files", "text"], Rc.tags = ["data", "txt", "pdf", "document"], Rc.SM = pc, Rc.LG = uc, Rc.MD = bc, Rc.XL = Mc;
+      const Lc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16069,20 +16089,20 @@ try {
             })
           })
         })),
-        Lh = (0, s.forwardRef)(({
+        zc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16093,20 +16113,20 @@ try {
             })
           })
         })),
-        zh = (0, s.forwardRef)(({
+        Cc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16115,20 +16135,20 @@ try {
             })
           })
         })),
-        Ch = (0, s.forwardRef)(({
+        Hc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16139,46 +16159,46 @@ try {
             })
           })
         })),
-        Hh = (0, s.forwardRef)(({
+        Ac = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(yh, {
+            children: ["SM" === e && (0, r.jsx)(Lc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Lh, {
+            }), "LG" === e && (0, r.jsx)(zc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(zh, {
+            }), "MD" === e && (0, r.jsx)(Cc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ch, {
+            }), "XL" === e && (0, r.jsx)(Hc, {
               ...t,
               ref: a
             })]
           })
         });
-      Hh.displayName = "Files", Hh.categories = ["files"], Hh.tags = ["multiple", "copy", "documents", "data", "file", "folder", "restore"], Hh.SM = yh, Hh.LG = Lh, Hh.MD = zh, Hh.XL = Ch;
-      const Ah = (0, s.forwardRef)(({
+      Ac.displayName = "Files", Ac.categories = ["files"], Ac.tags = ["multiple", "copy", "documents", "data", "file", "folder", "restore"], Ac.SM = Lc, Ac.LG = zc, Ac.MD = Cc, Ac.XL = Hc;
+      const Vc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16187,20 +16207,20 @@ try {
             })
           })
         })),
-        Vh = (0, s.forwardRef)(({
+        Bc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16209,20 +16229,20 @@ try {
             })
           })
         })),
-        Bh = (0, s.forwardRef)(({
+        Ic = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16231,20 +16251,20 @@ try {
             })
           })
         })),
-        Ih = (0, s.forwardRef)(({
+        Sc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16253,46 +16273,46 @@ try {
             })
           })
         })),
-        Sh = (0, s.forwardRef)(({
+        yc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Ah, {
+            children: ["SM" === e && (0, r.jsx)(Vc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Vh, {
+            }), "MD" === e && (0, r.jsx)(Bc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Bh, {
+            }), "LG" === e && (0, r.jsx)(Ic, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ih, {
+            }), "XL" === e && (0, r.jsx)(Sc, {
               ...t,
               ref: a
             })]
           })
         });
-      Sh.displayName = "Save", Sh.categories = ["files"], Sh.tags = ["floppy disk", "download", "backup", "storage", "disk", "document", "computer", "archive"], Sh.SM = Ah, Sh.MD = Vh, Sh.LG = Bh, Sh.XL = Ih;
-      const qh = (0, s.forwardRef)(({
+      yc.displayName = "Save", yc.categories = ["files"], yc.tags = ["floppy disk", "download", "backup", "storage", "disk", "document", "computer", "archive"], yc.SM = Vc, yc.MD = Bc, yc.LG = Ic, yc.XL = Sc;
+      const Dc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16303,20 +16323,20 @@ try {
             })
           })
         })),
-        Dh = (0, s.forwardRef)(({
+        Gc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16327,20 +16347,20 @@ try {
             })
           })
         })),
-        Nh = (0, s.forwardRef)(({
+        Nc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16349,20 +16369,20 @@ try {
             })
           })
         })),
-        Xh = (0, s.forwardRef)(({
+        Xc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16373,46 +16393,46 @@ try {
             })
           })
         })),
-        Gh = (0, s.forwardRef)(({
+        qc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(qh, {
+            children: ["SM" === e && (0, r.jsx)(Dc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Dh, {
+            }), "LG" === e && (0, r.jsx)(Gc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Nh, {
+            }), "MD" === e && (0, r.jsx)(Nc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Xh, {
+            }), "XL" === e && (0, r.jsx)(Xc, {
               ...t,
               ref: a
             })]
           })
         });
-      Gh.displayName = "CircleDollarSign", Gh.categories = ["finance"], Gh.tags = ["monetization", "marketing", "currency", "money", "payment"], Gh.SM = qh, Gh.LG = Dh, Gh.MD = Nh, Gh.XL = Xh;
-      const kh = (0, s.forwardRef)(({
+      qc.displayName = "CircleDollarSign", qc.categories = ["finance"], qc.tags = ["monetization", "marketing", "currency", "money", "payment"], qc.SM = Dc, qc.LG = Gc, qc.MD = Nc, qc.XL = Xc;
+      const Pc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16423,20 +16443,20 @@ try {
             })
           })
         })),
-        Fh = (0, s.forwardRef)(({
+        Fc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16447,20 +16467,20 @@ try {
             })
           })
         })),
-        _h = (0, s.forwardRef)(({
+        kc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16469,20 +16489,20 @@ try {
             })
           })
         })),
-        Ph = (0, s.forwardRef)(({
+        Oc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16493,46 +16513,46 @@ try {
             })
           })
         })),
-        Eh = (0, s.forwardRef)(({
+        Tc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(kh, {
+            children: ["SM" === e && (0, r.jsx)(Pc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Fh, {
+            }), "LG" === e && (0, r.jsx)(Fc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(_h, {
+            }), "MD" === e && (0, r.jsx)(kc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Ph, {
+            }), "XL" === e && (0, r.jsx)(Oc, {
               ...t,
               ref: a
             })]
           })
         });
-      Eh.displayName = "DollarSign", Eh.categories = ["finance"], Eh.tags = ["currency", "money", "payment"], Eh.SM = kh, Eh.LG = Fh, Eh.MD = _h, Eh.XL = Ph;
-      const Oh = (0, s.forwardRef)(({
+      Tc.displayName = "DollarSign", Tc.categories = ["finance"], Tc.tags = ["currency", "money", "payment"], Tc.SM = Pc, Tc.LG = Fc, Tc.MD = kc, Tc.XL = Oc;
+      const Ec = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -16548,20 +16568,20 @@ try {
             })]
           })
         })),
-        Th = (0, s.forwardRef)(({
+        Uc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -16577,20 +16597,20 @@ try {
             })]
           })
         })),
-        Uh = (0, s.forwardRef)(({
+        _c = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -16606,20 +16626,20 @@ try {
             })]
           })
         })),
-        Wh = (0, s.forwardRef)(({
+        Wc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -16635,46 +16655,46 @@ try {
             })]
           })
         })),
-        Yh = (0, s.forwardRef)(({
+        Zc = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Oh, {
+            children: ["SM" === e && (0, r.jsx)(Ec, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Th, {
+            }), "LG" === e && (0, r.jsx)(Uc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Uh, {
+            }), "MD" === e && (0, r.jsx)(_c, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Wh, {
+            }), "XL" === e && (0, r.jsx)(Wc, {
               ...t,
               ref: a
             })]
           })
         });
-      Yh.displayName = "FastForward", Yh.categories = ["multimedia", "arrows"], Yh.tags = ["music", "audio", "video", "control", "player", "media"], Yh.SM = Oh, Yh.LG = Th, Yh.MD = Uh, Yh.XL = Wh;
-      const Zh = (0, s.forwardRef)(({
+      Zc.displayName = "FastForward", Zc.categories = ["multimedia", "arrows"], Zc.tags = ["music", "audio", "video", "control", "player", "media"], Zc.SM = Ec, Zc.LG = Uc, Zc.MD = _c, Zc.XL = Wc;
+      const Yc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16683,20 +16703,20 @@ try {
             })
           })
         })),
-        Kh = (0, s.forwardRef)(({
+        Kc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16705,20 +16725,20 @@ try {
             })
           })
         })),
-        Jh = (0, s.forwardRef)(({
+        Qc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16727,20 +16747,20 @@ try {
             })
           })
         })),
-        Qh = (0, s.forwardRef)(({
+        Jc = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16749,46 +16769,46 @@ try {
             })
           })
         })),
-        $h = (0, s.forwardRef)(({
+        $c = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Zh, {
+            children: ["SM" === e && (0, r.jsx)(Yc, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Kh, {
+            }), "LG" === e && (0, r.jsx)(Kc, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Jh, {
+            }), "MD" === e && (0, r.jsx)(Qc, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Qh, {
+            }), "XL" === e && (0, r.jsx)(Jc, {
               ...t,
               ref: a
             })]
           })
         });
-      $h.displayName = "Pause", $h.categories = ["multimedia"], $h.tags = ["music", "audio", "video", "stop", "pause", "control", "player", "media"], $h.SM = Zh, $h.LG = Kh, $h.MD = Jh, $h.XL = Qh;
-      const ef = (0, s.forwardRef)(({
+      $c.displayName = "Pause", $c.categories = ["multimedia"], $c.tags = ["music", "audio", "video", "stop", "pause", "control", "player", "media"], $c.SM = Yc, $c.LG = Kc, $c.MD = Qc, $c.XL = Jc;
+      const ef = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -16797,20 +16817,20 @@ try {
             })
           })
         })),
-        lf = (0, s.forwardRef)(({
+        lf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -16819,20 +16839,20 @@ try {
             })
           })
         })),
-        af = (0, s.forwardRef)(({
+        af = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -16841,20 +16861,20 @@ try {
             })
           })
         })),
-        rf = (0, s.forwardRef)(({
+        rf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -16863,12 +16883,12 @@ try {
             })
           })
         })),
-        tf = (0, s.forwardRef)(({
+        tf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -16889,158 +16909,162 @@ try {
           })
         });
       tf.displayName = "Play", tf.categories = ["arrows", "multimedia"], tf.tags = ["music", "audio", "video", "start", "run", "play", "continue", "control", "player", "media"], tf.SM = ef, tf.LG = lf, tf.MD = af, tf.XL = rf;
-      const of = (0, s.forwardRef)(({
-        color: e = "currentColor",
-        testId: l,
-        label: a,
-        ...o
-      }, s) => (0, r.jsx)(t.b, {
-        label: a,
-        children: (0, r.jsxs)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "16",
-          height: "16",
-          fill: "none",
-          ...o,
-          ref: s,
-          "data-testid": l,
-          viewBox: "0 0 16 16",
-          children: [(0, r.jsx)("path", {
-            fill: e,
-            d: "M7.08 3.775c.187.09.305.276.305.48v7.48c0 .205-.118.391-.305.48a.55.55 0 0 1-.573-.057L1.61 8.417a.53.53 0 0 1 0-.844l4.897-3.74a.55.55 0 0 1 .573-.058",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          }), (0, r.jsx)("path", {
-            fill: e,
-            d: "M13.065 3.775c.187.09.305.276.305.48v7.48c0 .205-.118.391-.305.48a.55.55 0 0 1-.573-.057L7.595 8.417a.53.53 0 0 1 0-.844l4.897-3.74a.55.55 0 0 1 .573-.058",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          })]
-        })
-      })), sf = (0, s.forwardRef)(({
-        color: e = "currentColor",
-        testId: l,
-        label: a,
-        ...o
-      }, s) => (0, r.jsx)(t.b, {
-        label: a,
-        children: (0, r.jsxs)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "24",
-          height: "24",
-          fill: "none",
-          ...o,
-          ref: s,
-          "data-testid": l,
-          viewBox: "0 0 24 24",
-          children: [(0, r.jsx)("path", {
-            fill: e,
-            d: "M10.592 6.076c.25.126.408.388.408.674v10.5a.75.75 0 0 1-.408.674.71.71 0 0 1-.766-.082l-6.545-5.25A.76.76 0 0 1 3 12c0-.231.104-.45.28-.592l6.546-5.25a.71.71 0 0 1 .766-.082",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          }), (0, r.jsx)("path", {
-            fill: e,
-            d: "M18.592 6.076c.25.126.408.388.408.674v10.5a.75.75 0 0 1-.408.674.71.71 0 0 1-.766-.082l-6.545-5.25A.76.76 0 0 1 11 12c0-.231.104-.45.28-.592l6.546-5.25a.71.71 0 0 1 .766-.082",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          })]
-        })
-      })), df = (0, s.forwardRef)(({
-        color: e = "currentColor",
-        testId: l,
-        label: a,
-        ...o
-      }, s) => (0, r.jsx)(t.b, {
-        label: a,
-        children: (0, r.jsxs)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "20",
-          height: "20",
-          fill: "none",
-          ...o,
-          ref: s,
-          "data-testid": l,
-          viewBox: "0 0 20 20",
-          children: [(0, r.jsx)("path", {
-            fill: e,
-            d: "M8.541 5.064c.215.104.35.322.35.561v8.75a.625.625 0 0 1-1.008.493l-5.625-4.375a.625.625 0 0 1 0-.986l5.625-4.375a.63.63 0 0 1 .658-.068",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          }), (0, r.jsx)("path", {
-            fill: e,
-            d: "M15.416 5.064c.215.104.35.322.35.561v8.75a.625.625 0 0 1-1.008.493l-5.625-4.375a.625.625 0 0 1 0-.986l5.625-4.375a.63.63 0 0 1 .658-.068",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          })]
-        })
-      })), nf = (0, s.forwardRef)(({
-        color: e = "currentColor",
-        testId: l,
-        label: a,
-        ...o
-      }, s) => (0, r.jsx)(t.b, {
-        label: a,
-        children: (0, r.jsxs)("svg", {
-          xmlns: "http://www.w3.org/2000/svg",
-          width: "32",
-          height: "32",
-          fill: "none",
-          ...o,
-          ref: s,
-          "data-testid": l,
-          viewBox: "0 0 32 32",
-          children: [(0, r.jsx)("path", {
-            fill: e,
-            d: "M13.926 8.102c.333.168.544.516.544.898v14.005c0 .382-.211.73-.544.898a.95.95 0 0 1-1.022-.109l-8.73-7.002a1.01 1.01 0 0 1-.374-.79c0-.308.138-.6.374-.79l8.73-7.001a.95.95 0 0 1 1.022-.11",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          }), (0, r.jsx)("path", {
-            fill: e,
-            d: "M24.596 8.102c.333.168.544.516.544.898v14.005c0 .382-.211.73-.544.898a.95.95 0 0 1-1.022-.109l-8.73-7.002a1.01 1.01 0 0 1-.374-.79c0-.308.138-.6.374-.79l8.73-7.001a.95.95 0 0 1 1.022-.11",
-            fillRule: "evenodd",
-            clipRule: "evenodd"
-          })]
-        })
-      })), cf = (0, s.forwardRef)(({
-        size: e = "SM",
-        ...l
-      }, a) => {
-        const t = (0, o.v6)({
-          className: w({
-            size: e
-          })
-        }, l);
-        return (0, r.jsxs)(r.Fragment, {
-          children: ["SM" === e && (0, r.jsx)(of, {
-            ...t,
-            ref: a
-          }), "LG" === e && (0, r.jsx)(sf, {
-            ...t,
-            ref: a
-          }), "MD" === e && (0, r.jsx)(df, {
-            ...t,
-            ref: a
-          }), "XL" === e && (0, r.jsx)(nf, {
-            ...t,
-            ref: a
-          })]
-        })
-      });
-      cf.displayName = "Rewind", cf.categories = ["arrows", "multimedia"], cf.tags = ["music", "audio", "video", "control", "player", "previous", "back", "reverse", "media"], cf.SM = of, cf.LG = sf, cf.MD = df, cf.XL = nf;
-      const hf = (0, s.forwardRef)(({
+      const sf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
+            "data-testid": l,
+            viewBox: "0 0 16 16",
+            children: [(0, r.jsx)("path", {
+              fill: e,
+              d: "M7.08 3.775c.187.09.305.276.305.48v7.48c0 .205-.118.391-.305.48a.55.55 0 0 1-.573-.057L1.61 8.417a.53.53 0 0 1 0-.844l4.897-3.74a.55.55 0 0 1 .573-.058",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M13.065 3.775c.187.09.305.276.305.48v7.48c0 .205-.118.391-.305.48a.55.55 0 0 1-.573-.057L7.595 8.417a.53.53 0 0 1 0-.844l4.897-3.74a.55.55 0 0 1 .573-.058",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            })]
+          })
+        })),
+        df = (0, i.forwardRef)(({
+          color: e = "currentColor",
+          testId: l,
+          label: a,
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
+          label: a,
+          children: (0, r.jsxs)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "24",
+            height: "24",
+            fill: "none",
+            ...s,
+            ref: i,
+            "data-testid": l,
+            viewBox: "0 0 24 24",
+            children: [(0, r.jsx)("path", {
+              fill: e,
+              d: "M10.592 6.076c.25.126.408.388.408.674v10.5a.75.75 0 0 1-.408.674.71.71 0 0 1-.766-.082l-6.545-5.25A.76.76 0 0 1 3 12c0-.231.104-.45.28-.592l6.546-5.25a.71.71 0 0 1 .766-.082",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M18.592 6.076c.25.126.408.388.408.674v10.5a.75.75 0 0 1-.408.674.71.71 0 0 1-.766-.082l-6.545-5.25A.76.76 0 0 1 11 12c0-.231.104-.45.28-.592l6.546-5.25a.71.71 0 0 1 .766-.082",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            })]
+          })
+        })),
+        of = (0, i.forwardRef)(({
+          color: e = "currentColor",
+          testId: l,
+          label: a,
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
+          label: a,
+          children: (0, r.jsxs)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "20",
+            height: "20",
+            fill: "none",
+            ...s,
+            ref: i,
+            "data-testid": l,
+            viewBox: "0 0 20 20",
+            children: [(0, r.jsx)("path", {
+              fill: e,
+              d: "M8.541 5.064c.215.104.35.322.35.561v8.75a.625.625 0 0 1-1.008.493l-5.625-4.375a.625.625 0 0 1 0-.986l5.625-4.375a.63.63 0 0 1 .658-.068",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M15.416 5.064c.215.104.35.322.35.561v8.75a.625.625 0 0 1-1.008.493l-5.625-4.375a.625.625 0 0 1 0-.986l5.625-4.375a.63.63 0 0 1 .658-.068",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            })]
+          })
+        })),
+        hf = (0, i.forwardRef)(({
+          color: e = "currentColor",
+          testId: l,
+          label: a,
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
+          label: a,
+          children: (0, r.jsxs)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "32",
+            height: "32",
+            fill: "none",
+            ...s,
+            ref: i,
+            "data-testid": l,
+            viewBox: "0 0 32 32",
+            children: [(0, r.jsx)("path", {
+              fill: e,
+              d: "M13.926 8.102c.333.168.544.516.544.898v14.005c0 .382-.211.73-.544.898a.95.95 0 0 1-1.022-.109l-8.73-7.002a1.01 1.01 0 0 1-.374-.79c0-.308.138-.6.374-.79l8.73-7.001a.95.95 0 0 1 1.022-.11",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            }), (0, r.jsx)("path", {
+              fill: e,
+              d: "M24.596 8.102c.333.168.544.516.544.898v14.005c0 .382-.211.73-.544.898a.95.95 0 0 1-1.022-.109l-8.73-7.002a1.01 1.01 0 0 1-.374-.79c0-.308.138-.6.374-.79l8.73-7.001a.95.95 0 0 1 1.022-.11",
+              fillRule: "evenodd",
+              clipRule: "evenodd"
+            })]
+          })
+        })),
+        nf = (0, i.forwardRef)(({
+          size: e = "SM",
+          ...l
+        }, a) => {
+          const t = (0, s.mergeProps)({
+            className: v({
+              size: e
+            })
+          }, l);
+          return (0, r.jsxs)(r.Fragment, {
+            children: ["SM" === e && (0, r.jsx)(sf, {
+              ...t,
+              ref: a
+            }), "LG" === e && (0, r.jsx)(df, {
+              ...t,
+              ref: a
+            }), "MD" === e && (0, r.jsx)(of, {
+              ...t,
+              ref: a
+            }), "XL" === e && (0, r.jsx)(hf, {
+              ...t,
+              ref: a
+            })]
+          })
+        });
+      nf.displayName = "Rewind", nf.categories = ["arrows", "multimedia"], nf.tags = ["music", "audio", "video", "control", "player", "previous", "back", "reverse", "media"], nf.SM = sf, nf.LG = df, nf.MD = of, nf.XL = hf;
+      const cf = (0, i.forwardRef)(({
+          color: e = "currentColor",
+          testId: l,
+          label: a,
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
+          label: a,
+          children: (0, r.jsxs)("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            width: "16",
+            height: "16",
+            fill: "none",
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -17056,20 +17080,20 @@ try {
             })]
           })
         })),
-        ff = (0, s.forwardRef)(({
+        ff = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -17085,20 +17109,20 @@ try {
             })]
           })
         })),
-        vf = (0, s.forwardRef)(({
+        wf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -17114,20 +17138,20 @@ try {
             })]
           })
         })),
-        wf = (0, s.forwardRef)(({
+        vf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -17143,46 +17167,46 @@ try {
             })]
           })
         })),
-        gf = (0, s.forwardRef)(({
+        xf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(hf, {
+            children: ["SM" === e && (0, r.jsx)(cf, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(ff, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(vf, {
+            }), "MD" === e && (0, r.jsx)(wf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(wf, {
+            }), "XL" === e && (0, r.jsx)(vf, {
               ...t,
               ref: a
             })]
           })
         });
-      gf.displayName = "SkipBack", gf.categories = ["multimedia", "arrows"], gf.tags = ["music", "audio", "video", "arrow", "previous", "back", "rewind", "reverse", "control", "player", "media"], gf.SM = hf, gf.LG = ff, gf.MD = vf, gf.XL = wf;
-      const xf = (0, s.forwardRef)(({
+      xf.displayName = "SkipBack", xf.categories = ["multimedia", "arrows"], xf.tags = ["music", "audio", "video", "arrow", "previous", "back", "rewind", "reverse", "control", "player", "media"], xf.SM = cf, xf.LG = ff, xf.MD = wf, xf.XL = vf;
+      const gf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: [(0, r.jsx)("path", {
@@ -17198,20 +17222,20 @@ try {
             })]
           })
         })),
-        uf = (0, s.forwardRef)(({
+        jf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: [(0, r.jsx)("path", {
@@ -17227,20 +17251,20 @@ try {
             })]
           })
         })),
-        bf = (0, s.forwardRef)(({
+        mf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: [(0, r.jsx)("path", {
@@ -17256,20 +17280,20 @@ try {
             })]
           })
         })),
-        pf = (0, s.forwardRef)(({
+        pf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsxs)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: [(0, r.jsx)("path", {
@@ -17285,23 +17309,23 @@ try {
             })]
           })
         })),
-        jf = (0, s.forwardRef)(({
+        uf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(xf, {
+            children: ["SM" === e && (0, r.jsx)(gf, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(uf, {
+            }), "LG" === e && (0, r.jsx)(jf, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(bf, {
+            }), "MD" === e && (0, r.jsx)(mf, {
               ...t,
               ref: a
             }), "XL" === e && (0, r.jsx)(pf, {
@@ -17310,21 +17334,21 @@ try {
             })]
           })
         });
-      jf.displayName = "SkipForward", jf.categories = ["multimedia", "arrows"], jf.tags = ["music", "audio", "video", "arrow", "skip", "next", "forward", "control", "player", "media"], jf.SM = xf, jf.LG = uf, jf.MD = bf, jf.XL = pf;
-      const mf = (0, s.forwardRef)(({
+      uf.displayName = "SkipForward", uf.categories = ["multimedia", "arrows"], uf.tags = ["music", "audio", "video", "arrow", "skip", "next", "forward", "control", "player", "media"], uf.SM = gf, uf.LG = jf, uf.MD = mf, uf.XL = pf;
+      const bf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17335,20 +17359,20 @@ try {
             })
           })
         })),
-        Mf = (0, s.forwardRef)(({
+        Mf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17359,20 +17383,20 @@ try {
             })
           })
         })),
-        Rf = (0, s.forwardRef)(({
+        Rf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17381,20 +17405,20 @@ try {
             })
           })
         })),
-        yf = (0, s.forwardRef)(({
+        Lf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17405,17 +17429,17 @@ try {
             })
           })
         })),
-        Lf = (0, s.forwardRef)(({
+        zf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(mf, {
+            children: ["SM" === e && (0, r.jsx)(bf, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Mf, {
@@ -17424,27 +17448,27 @@ try {
             }), "MD" === e && (0, r.jsx)(Rf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(yf, {
+            }), "XL" === e && (0, r.jsx)(Lf, {
               ...t,
               ref: a
             })]
           })
         });
-      Lf.displayName = "StarOff", Lf.categories = ["multimedia", "social"], Lf.tags = ["dislike", "unlike", "remove", "unrate"], Lf.SM = mf, Lf.LG = Mf, Lf.MD = Rf, Lf.XL = yf;
-      const zf = (0, s.forwardRef)(({
+      zf.displayName = "StarOff", zf.categories = ["multimedia", "social"], zf.tags = ["dislike", "unlike", "remove", "unrate"], zf.SM = bf, zf.LG = Mf, zf.MD = Rf, zf.XL = Lf;
+      const Cf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17453,20 +17477,20 @@ try {
             })
           })
         })),
-        Cf = (0, s.forwardRef)(({
+        Hf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17475,20 +17499,20 @@ try {
             })
           })
         })),
-        Hf = (0, s.forwardRef)(({
+        Af = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17497,20 +17521,20 @@ try {
             })
           })
         })),
-        Af = (0, s.forwardRef)(({
+        Vf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17519,46 +17543,46 @@ try {
             })
           })
         })),
-        Vf = (0, s.forwardRef)(({
+        Bf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(zf, {
+            children: ["SM" === e && (0, r.jsx)(Cf, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Cf, {
+            }), "LG" === e && (0, r.jsx)(Hf, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Hf, {
+            }), "MD" === e && (0, r.jsx)(Af, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Af, {
+            }), "XL" === e && (0, r.jsx)(Vf, {
               ...t,
               ref: a
             })]
           })
         });
-      Vf.displayName = "Stop", Vf.categories = ["multimedia"], Vf.tags = ["music", "audio", "video", "control", "player", "stop", "media"], Vf.SM = zf, Vf.LG = Cf, Vf.MD = Hf, Vf.XL = Af;
-      const Bf = (0, s.forwardRef)(({
+      Bf.displayName = "Stop", Bf.categories = ["multimedia"], Bf.tags = ["music", "audio", "video", "control", "player", "stop", "media"], Bf.SM = Cf, Bf.LG = Hf, Bf.MD = Af, Bf.XL = Vf;
+      const If = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17567,20 +17591,20 @@ try {
             })
           })
         })),
-        If = (0, s.forwardRef)(({
+        Sf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17589,20 +17613,20 @@ try {
             })
           })
         })),
-        Sf = (0, s.forwardRef)(({
+        yf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17611,20 +17635,20 @@ try {
             })
           })
         })),
-        qf = (0, s.forwardRef)(({
+        Df = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17633,46 +17657,46 @@ try {
             })
           })
         })),
-        Df = (0, s.forwardRef)(({
+        Gf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Bf, {
+            children: ["SM" === e && (0, r.jsx)(If, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(If, {
+            }), "MD" === e && (0, r.jsx)(Sf, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Sf, {
+            }), "LG" === e && (0, r.jsx)(yf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(qf, {
+            }), "XL" === e && (0, r.jsx)(Df, {
               ...t,
               ref: a
             })]
           })
         });
-      Df.displayName = "ListMusic", Df.categories = ["multimedia"], Df.tags = ["playlist", "music", "audio", "control", "player", "media", "queue", "playback", "play", "list"], Df.SM = Bf, Df.MD = If, Df.LG = Sf, Df.XL = qf;
-      const Nf = (0, s.forwardRef)(({
+      Gf.displayName = "ListMusic", Gf.categories = ["multimedia"], Gf.tags = ["playlist", "music", "audio", "control", "player", "media", "queue", "playback", "play", "list"], Gf.SM = If, Gf.MD = Sf, Gf.LG = yf, Gf.XL = Df;
+      const Nf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17683,20 +17707,20 @@ try {
             })
           })
         })),
-        Xf = (0, s.forwardRef)(({
+        Xf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17707,20 +17731,20 @@ try {
             })
           })
         })),
-        Gf = (0, s.forwardRef)(({
+        qf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17729,20 +17753,20 @@ try {
             })
           })
         })),
-        kf = (0, s.forwardRef)(({
+        Pf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17753,12 +17777,12 @@ try {
             })
           })
         })),
-        Ff = (0, s.forwardRef)(({
+        Ff = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
@@ -17769,30 +17793,30 @@ try {
             }), "LG" === e && (0, r.jsx)(Xf, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Gf, {
+            }), "MD" === e && (0, r.jsx)(qf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(kf, {
+            }), "XL" === e && (0, r.jsx)(Pf, {
               ...t,
               ref: a
             })]
           })
         });
-      Ff.displayName = "Book", Ff.categories = ["text", "gaming"], Ff.tags = ["code", "coding", "version control", "git", "repository", "remove", "delete", "reading", "misinformation", "disinformation", "misinformed", "charlatan", "sophistry", "false", "lies", "untruth", "propaganda", "censored", "cancelled", "forbidden", "prohibited", "banned", "uneducated", "re-education", "unlearn"], Ff.SM = Nf, Ff.LG = Xf, Ff.MD = Gf, Ff.XL = kf;
-      const _f = (0, s.forwardRef)(({
+      Ff.displayName = "Book", Ff.categories = ["text", "gaming"], Ff.tags = ["code", "coding", "version control", "git", "repository", "remove", "delete", "reading", "misinformation", "disinformation", "misinformed", "charlatan", "sophistry", "false", "lies", "untruth", "propaganda", "censored", "cancelled", "forbidden", "prohibited", "banned", "uneducated", "re-education", "unlearn"], Ff.SM = Nf, Ff.LG = Xf, Ff.MD = qf, Ff.XL = Pf;
+      const kf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17803,20 +17827,20 @@ try {
             })
           })
         })),
-        Pf = (0, s.forwardRef)(({
+        Of = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17827,20 +17851,20 @@ try {
             })
           })
         })),
-        Ef = (0, s.forwardRef)(({
+        Tf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17849,20 +17873,20 @@ try {
             })
           })
         })),
-        Of = (0, s.forwardRef)(({
+        Ef = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17873,46 +17897,46 @@ try {
             })
           })
         })),
-        Tf = (0, s.forwardRef)(({
+        Uf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(_f, {
+            children: ["SM" === e && (0, r.jsx)(kf, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Pf, {
+            }), "LG" === e && (0, r.jsx)(Of, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Ef, {
+            }), "MD" === e && (0, r.jsx)(Tf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Of, {
+            }), "XL" === e && (0, r.jsx)(Ef, {
               ...t,
               ref: a
             })]
           })
         });
-      Tf.displayName = "CloudAlert", Tf.categories = ["development"], Tf.tags = ["weather", "danger", "warning", "alert", "error", "sync", "network", "exclamation"], Tf.SM = _f, Tf.LG = Pf, Tf.MD = Ef, Tf.XL = Of;
-      const Uf = (0, s.forwardRef)(({
+      Uf.displayName = "CloudAlert", Uf.categories = ["development"], Uf.tags = ["weather", "danger", "warning", "alert", "error", "sync", "network", "exclamation"], Uf.SM = kf, Uf.LG = Of, Uf.MD = Tf, Uf.XL = Ef;
+      const _f = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -17923,20 +17947,20 @@ try {
             })
           })
         })),
-        Wf = (0, s.forwardRef)(({
+        Wf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -17947,20 +17971,20 @@ try {
             })
           })
         })),
-        Yf = (0, s.forwardRef)(({
+        Zf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -17969,20 +17993,20 @@ try {
             })
           })
         })),
-        Zf = (0, s.forwardRef)(({
+        Yf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -17993,46 +18017,46 @@ try {
             })
           })
         })),
-        Kf = (0, s.forwardRef)(({
+        Kf = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Uf, {
+            children: ["SM" === e && (0, r.jsx)(_f, {
               ...t,
               ref: a
             }), "LG" === e && (0, r.jsx)(Wf, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(Yf, {
+            }), "MD" === e && (0, r.jsx)(Zf, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(Zf, {
+            }), "XL" === e && (0, r.jsx)(Yf, {
               ...t,
               ref: a
             })]
           })
         });
-      Kf.displayName = "CodeXml", Kf.categories = ["text", "development"], Kf.tags = ["source", "programming", "html", "xml", "code", "computer", "dev", "engineering", "web", "tag"], Kf.SM = Uf, Kf.LG = Wf, Kf.MD = Yf, Kf.XL = Zf;
-      const Jf = (0, s.forwardRef)(({
+      Kf.displayName = "CodeXml", Kf.categories = ["text", "development"], Kf.tags = ["source", "programming", "html", "xml", "code", "computer", "dev", "engineering", "web", "tag"], Kf.SM = _f, Kf.LG = Wf, Kf.MD = Zf, Kf.XL = Yf;
+      const Qf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -18043,20 +18067,20 @@ try {
             })
           })
         })),
-        Qf = (0, s.forwardRef)(({
+        Jf = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -18067,20 +18091,20 @@ try {
             })
           })
         })),
-        $f = (0, s.forwardRef)(({
+        $f = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -18089,20 +18113,20 @@ try {
             })
           })
         })),
-        ev = (0, s.forwardRef)(({
+        ew = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -18113,46 +18137,46 @@ try {
             })
           })
         })),
-        lv = (0, s.forwardRef)(({
+        lw = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(Jf, {
+            children: ["SM" === e && (0, r.jsx)(Qf, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(Qf, {
+            }), "LG" === e && (0, r.jsx)(Jf, {
               ...t,
               ref: a
             }), "MD" === e && (0, r.jsx)($f, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ev, {
+            }), "XL" === e && (0, r.jsx)(ew, {
               ...t,
               ref: a
             })]
           })
         });
-      lv.displayName = "Database", lv.categories = ["devices", "development"], lv.tags = ["storage", "memory", "container", "tin", "pot", "bytes", "servers"], lv.SM = Jf, lv.LG = Qf, lv.MD = $f, lv.XL = ev;
-      const av = (0, s.forwardRef)(({
+      lw.displayName = "Database", lw.categories = ["devices", "development"], lw.tags = ["storage", "memory", "container", "tin", "pot", "bytes", "servers"], lw.SM = Qf, lw.LG = Jf, lw.MD = $f, lw.XL = ew;
+      const aw = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "16",
             height: "16",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 16 16",
             children: (0, r.jsx)("path", {
@@ -18163,20 +18187,20 @@ try {
             })
           })
         })),
-        rv = (0, s.forwardRef)(({
+        rw = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "24",
             height: "24",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 24 24",
             children: (0, r.jsx)("path", {
@@ -18187,20 +18211,20 @@ try {
             })
           })
         })),
-        tv = (0, s.forwardRef)(({
+        tw = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "20",
             height: "20",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 20 20",
             children: (0, r.jsx)("path", {
@@ -18209,20 +18233,20 @@ try {
             })
           })
         })),
-        ov = (0, s.forwardRef)(({
+        sw = (0, i.forwardRef)(({
           color: e = "currentColor",
           testId: l,
           label: a,
-          ...o
-        }, s) => (0, r.jsx)(t.b, {
+          ...s
+        }, i) => (0, r.jsx)(t.b, {
           label: a,
           children: (0, r.jsx)("svg", {
             xmlns: "http://www.w3.org/2000/svg",
             width: "32",
             height: "32",
             fill: "none",
-            ...o,
-            ref: s,
+            ...s,
+            ref: i,
             "data-testid": l,
             viewBox: "0 0 32 32",
             children: (0, r.jsx)("path", {
@@ -18233,1429 +18257,56 @@ try {
             })
           })
         })),
-        sv = (0, s.forwardRef)(({
+        iw = (0, i.forwardRef)(({
           size: e = "SM",
           ...l
         }, a) => {
-          const t = (0, o.v6)({
-            className: w({
+          const t = (0, s.mergeProps)({
+            className: v({
               size: e
             })
           }, l);
           return (0, r.jsxs)(r.Fragment, {
-            children: ["SM" === e && (0, r.jsx)(av, {
+            children: ["SM" === e && (0, r.jsx)(aw, {
               ...t,
               ref: a
-            }), "LG" === e && (0, r.jsx)(rv, {
+            }), "LG" === e && (0, r.jsx)(rw, {
               ...t,
               ref: a
-            }), "MD" === e && (0, r.jsx)(tv, {
+            }), "MD" === e && (0, r.jsx)(tw, {
               ...t,
               ref: a
-            }), "XL" === e && (0, r.jsx)(ov, {
+            }), "XL" === e && (0, r.jsx)(sw, {
               ...t,
               ref: a
             })]
           })
         });
-      sv.displayName = "Server", sv.categories = ["development", "devices"], sv.tags = ["cloud", "storage"], sv.SM = av, sv.LG = rv, sv.MD = tv, sv.XL = ov
-    },
-    57461: (e, l, a) => {
-      function r(e) {
-        var l = function(e, l) {
-          if ("object" != typeof e || !e) return e;
-          var a = e[Symbol.toPrimitive];
-          if (void 0 !== a) {
-            var r = a.call(e, l);
-            if ("object" != typeof r) return r;
-            throw new TypeError("@@toPrimitive must return a primitive value.")
-          }
-          return String(e)
-        }(e, "string");
-        return "symbol" == typeof l ? l : String(l)
-      }
-
-      function t(e, l) {
-        var a = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          l && (r = r.filter(function(l) {
-            return Object.getOwnPropertyDescriptor(e, l).enumerable
-          })), a.push.apply(a, r)
-        }
-        return a
-      }
-
-      function o(e) {
-        for (var l = 1; l < arguments.length; l++) {
-          var a = null != arguments[l] ? arguments[l] : {};
-          l % 2 ? t(Object(a), !0).forEach(function(l) {
-            var t, o, s;
-            t = e, o = l, s = a[l], (o = r(o)) in t ? Object.defineProperty(t, o, {
-              value: s,
-              enumerable: !0,
-              configurable: !0,
-              writable: !0
-            }) : t[o] = s
-          }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(a)) : t(Object(a)).forEach(function(l) {
-            Object.defineProperty(e, l, Object.getOwnPropertyDescriptor(a, l))
-          })
-        }
-        return e
-      }
-
-      function s(e, l) {
-        var a = {};
-        for (var r in e) a[r] = l(e[r], r);
-        return a
-      }
-      a.d(l, {
-        no: () => n
-      });
-      var d = (e, l, a) => {
-          for (var r of Object.keys(e)) {
-            var t;
-            if (e[r] !== (null !== (t = l[r]) && void 0 !== t ? t : a[r])) return !1
-          }
-          return !0
-        },
-        i = e => {
-          var l = l => {
-            var a = e.defaultClassName,
-              r = o(o({}, e.defaultVariants), l);
-            for (var t in r) {
-              var s, i = null !== (s = r[t]) && void 0 !== s ? s : e.defaultVariants[t];
-              if (null != i) {
-                var n = i;
-                "boolean" == typeof n && (n = !0 === n ? "true" : "false");
-                var c = e.variantClassNames[t][n];
-                c && (a += " " + c)
-              }
-            }
-            for (var [h, f] of e.compoundVariants) d(h, r, e.defaultVariants) && (a += " " + f);
-            return a
-          };
-          return l.variants = () => Object.keys(e.variantClassNames), l.classNames = {
-            get base() {
-              return e.defaultClassName.split(" ")[0]
-            },
-            get variants() {
-              return s(e.variantClassNames, e => s(e, e => e.split(" ")[0]))
-            }
-          }, l
-        },
-        n = {
-          enabled: {
-            background: "var(--foundry_1qqcnua0)",
-            border: "var(--foundry_1qqcnua1)",
-            text: "var(--foundry_1qqcnua2)",
-            outline: "var(--foundry_1qqcnua3)"
-          },
-          hover: {
-            background: "var(--foundry_1qqcnua4)",
-            border: "var(--foundry_1qqcnua5)",
-            text: "var(--foundry_1qqcnua6)",
-            outline: "var(--foundry_1qqcnua7)"
-          },
-          focus: {
-            background: "var(--foundry_1qqcnua8)",
-            border: "var(--foundry_1qqcnua9)",
-            text: "var(--foundry_1qqcnuaa)",
-            outline: "var(--foundry_1qqcnuab)"
-          },
-          pressed: {
-            background: "var(--foundry_1qqcnuac)",
-            border: "var(--foundry_1qqcnuad)",
-            text: "var(--foundry_1qqcnuae)",
-            outline: "var(--foundry_1qqcnuaf)"
-          },
-          disabled: {
-            background: "var(--foundry_1qqcnuag)",
-            border: "var(--foundry_1qqcnuah)",
-            text: "var(--foundry_1qqcnuai)",
-            outline: "var(--foundry_1qqcnuaj)"
-          },
-          loading: {
-            background: "var(--foundry_1qqcnuak)",
-            border: "var(--foundry_1qqcnual)",
-            text: "var(--foundry_1qqcnuam)",
-            outline: "var(--foundry_1qqcnuan)"
-          }
-        };
-      i({
-        defaultClassName: "foundry_1qqcnuao",
-        variantClassNames: {
-          appearance: {
-            primary: "foundry_1qqcnuap",
-            secondary: "foundry_1qqcnuaq",
-            tertiary: "foundry_1qqcnuar",
-            ghost: "foundry_1qqcnuas",
-            information: "foundry_1qqcnuat",
-            danger: "foundry_1qqcnuau",
-            accent: "foundry_1qqcnuav",
-            link: "foundry_1qqcnuaw"
-          }
-        },
-        defaultVariants: {},
-        compoundVariants: []
-      }), i({
-        defaultClassName: "foundry_tdsdcda foundry_tdsdcd0",
-        variantClassNames: {
-          size: {
-            LG: "foundry_tdsdcdc",
-            MD: "foundry_tdsdcdd",
-            SM: "foundry_tdsdcde",
-            XS: "foundry_tdsdcdf"
-          },
-          appearance: {
-            default: "foundry_tdsdcdg",
-            bold: "foundry_tdsdcdh",
-            hyperlink: "foundry_tdsdcdi"
-          }
-        },
-        defaultVariants: {},
-        compoundVariants: []
-      }), i({
-        defaultClassName: "foundry_tdsdcdr foundry_tdsdcd0",
-        variantClassNames: {
-          appearance: {
-            default: "foundry_tdsdcdt",
-            bold: "foundry_tdsdcdu"
-          }
-        },
-        defaultVariants: {},
-        compoundVariants: []
-      }), i({
-        defaultClassName: "foundry_tdsdcd2 foundry_tdsdcd0",
-        variantClassNames: {
-          level: {
-            1: "foundry_tdsdcd4",
-            2: "foundry_tdsdcd5",
-            3: "foundry_tdsdcd6",
-            4: "foundry_tdsdcd7",
-            5: "foundry_tdsdcd8",
-            6: "foundry_tdsdcd9"
-          }
-        },
-        defaultVariants: {},
-        compoundVariants: []
-      }), i({
-        defaultClassName: "foundry_tdsdcdj foundry_tdsdcd0",
-        variantClassNames: {
-          size: {
-            LG: "foundry_tdsdcdl",
-            MD: "foundry_tdsdcdm",
-            SM: "foundry_tdsdcdn",
-            XS: "foundry_tdsdcdo"
-          },
-          appearance: {
-            default: "foundry_tdsdcdp",
-            bold: "foundry_tdsdcdq"
-          }
-        },
-        defaultVariants: {},
-        compoundVariants: []
-      }), a(10131)
+      iw.displayName = "Server", iw.categories = ["development", "devices"], iw.tags = ["cloud", "storage"], iw.SM = aw, iw.LG = rw, iw.MD = tw, iw.XL = sw
     },
     71753: (e, l, a) => {
       a.d(l, {
         b: () => d
       });
       var r = a(71127),
-        t = a(69055),
-        o = a(42295),
-        s = ({
+        t = a(63694),
+        s = a(42295),
+        i = ({
           children: e,
           label: l
         }) => {
           const a = r.Children.only(e);
-          return (0, o.jsxs)(o.Fragment, {
+          return (0, s.jsxs)(s.Fragment, {
             children: [r.cloneElement(a, {
               "aria-hidden": "true",
               focusable: "false"
-            }), (0, o.jsx)(t.bL, {
+            }), (0, s.jsx)(t.Root, {
               children: l
             })]
           })
         };
-      s.displayName = "AccessibleIcon";
-      var d = s
-    },
-    93715: (e, l, a) => {
-      a.d(l, {
-        DI: () => t,
-        Tm: () => s,
-        LU: () => o
-      });
-      var r = a(23644);
-
-      function t(e, l) {
-        var a = {};
-        if ("object" == typeof l) {
-          var t = e;
-          (0, r.Bx)(l, (e, l) => {
-            if (null != e) {
-              var o = (0, r.Jt)(t, l);
-              a[(0, r.Tm)(o)] = String(e)
-            }
-          })
-        } else {
-          var o = e;
-          for (var s in o) {
-            var d = o[s];
-            null != d && (a[(0, r.Tm)(s)] = d)
-          }
-        }
-        return Object.defineProperty(a, "toString", {
-          value: function() {
-            return Object.keys(this).map(e => "".concat(e, ":").concat(this[e])).join(";")
-          },
-          writable: !1
-        }), a
-      }
-      a(10131);
-      var o = {
-        global: {
-          color: {
-            grey: {
-              static: {
-                25: "var(--foundry-global-color-grey-static-25-05dae190)",
-                50: "var(--foundry-global-color-grey-static-50-767699a7)",
-                75: "var(--foundry-global-color-grey-static-75-a2172132)",
-                100: "var(--foundry-global-color-grey-static-100-01811cdb)",
-                200: "var(--foundry-global-color-grey-static-200-8230761c)",
-                300: "var(--foundry-global-color-grey-static-300-60d2d1b8)",
-                400: "var(--foundry-global-color-grey-static-400-b9847fcb)",
-                500: "var(--foundry-global-color-grey-static-500-c92b4dd8)",
-                600: "var(--foundry-global-color-grey-static-600-048e9067)",
-                700: "var(--foundry-global-color-grey-static-700-6ebcd800)",
-                800: "var(--foundry-global-color-grey-static-800-35f77231)",
-                900: "var(--foundry-global-color-grey-static-900-a85ec23d)"
-              },
-              adaptive: {
-                25: "var(--foundry-global-color-grey-adaptive-25-4181979c)",
-                50: "var(--foundry-global-color-grey-adaptive-50-2026f5f9)",
-                75: "var(--foundry-global-color-grey-adaptive-75-e832421c)",
-                100: "var(--foundry-global-color-grey-adaptive-100-ed36bf65)",
-                200: "var(--foundry-global-color-grey-adaptive-200-fb12d031)",
-                300: "var(--foundry-global-color-grey-adaptive-300-02700b85)",
-                400: "var(--foundry-global-color-grey-adaptive-400-54ccd69e)",
-                500: "var(--foundry-global-color-grey-adaptive-500-ddc3fb78)",
-                600: "var(--foundry-global-color-grey-adaptive-600-e8d9db01)",
-                700: "var(--foundry-global-color-grey-adaptive-700-e3418aa4)",
-                800: "var(--foundry-global-color-grey-adaptive-800-59c03dd7)",
-                900: "var(--foundry-global-color-grey-adaptive-900-bbecd7df)",
-                1e3: "var(--foundry-global-color-grey-adaptive-1000-020dfb1f)"
-              }
-            },
-            red: {
-              static: {
-                100: "var(--foundry-global-color-red-static-100-5234bf51)",
-                200: "var(--foundry-global-color-red-static-200-9b555022)",
-                300: "var(--foundry-global-color-red-static-300-6ef42061)",
-                400: "var(--foundry-global-color-red-static-400-bd31684b)",
-                500: "var(--foundry-global-color-red-static-500-b89c22c5)",
-                600: "var(--foundry-global-color-red-static-600-ed4f7808)",
-                700: "var(--foundry-global-color-red-static-700-20c326c5)",
-                800: "var(--foundry-global-color-red-static-800-60c90a7b)",
-                900: "var(--foundry-global-color-red-static-900-55f69265)",
-                1e3: "var(--foundry-global-color-red-static-1000-12c1e6bb)",
-                1100: "var(--foundry-global-color-red-static-1100-284ef4c0)",
-                1200: "var(--foundry-global-color-red-static-1200-5d3f7911)",
-                1300: "var(--foundry-global-color-red-static-1300-43fd11f8)",
-                1400: "var(--foundry-global-color-red-static-1400-dff9f9a5)"
-              },
-              adaptive: {
-                100: "var(--foundry-global-color-red-adaptive-100-9f218b31)",
-                200: "var(--foundry-global-color-red-adaptive-200-b287e195)",
-                300: "var(--foundry-global-color-red-adaptive-300-3513afa6)",
-                400: "var(--foundry-global-color-red-adaptive-400-2e43b523)",
-                500: "var(--foundry-global-color-red-adaptive-500-d198b061)",
-                600: "var(--foundry-global-color-red-adaptive-600-7da276f6)",
-                700: "var(--foundry-global-color-red-adaptive-700-6f634812)",
-                800: "var(--foundry-global-color-red-adaptive-800-7f423e03)",
-                900: "var(--foundry-global-color-red-adaptive-900-43f71e11)",
-                1e3: "var(--foundry-global-color-red-adaptive-1000-9f5e2924)",
-                1100: "var(--foundry-global-color-red-adaptive-1100-f2f72614)",
-                1200: "var(--foundry-global-color-red-adaptive-1200-aef5078c)",
-                1300: "var(--foundry-global-color-red-adaptive-1300-3c79c39b)",
-                1400: "var(--foundry-global-color-red-adaptive-1400-918ac2c6)"
-              }
-            },
-            yellow: {
-              static: {
-                100: "var(--foundry-global-color-yellow-static-100-2887d8ce)",
-                200: "var(--foundry-global-color-yellow-static-200-1dceac31)",
-                300: "var(--foundry-global-color-yellow-static-300-bda8dae5)",
-                400: "var(--foundry-global-color-yellow-static-400-e603ca1c)",
-                500: "var(--foundry-global-color-yellow-static-500-b9703bbc)",
-                600: "var(--foundry-global-color-yellow-static-600-828a39a0)",
-                700: "var(--foundry-global-color-yellow-static-700-cb059cba)",
-                800: "var(--foundry-global-color-yellow-static-800-e49b6916)",
-                900: "var(--foundry-global-color-yellow-static-900-ff35761e)",
-                1e3: "var(--foundry-global-color-yellow-static-1000-7c6c4551)",
-                1100: "var(--foundry-global-color-yellow-static-1100-2e821a8c)",
-                1200: "var(--foundry-global-color-yellow-static-1200-aea00231)",
-                1300: "var(--foundry-global-color-yellow-static-1300-7eec7bd0)",
-                1400: "var(--foundry-global-color-yellow-static-1400-0ff6b89d)"
-              },
-              adaptive: {
-                100: "var(--foundry-global-color-yellow-adaptive-100-8f09820e)",
-                200: "var(--foundry-global-color-yellow-adaptive-200-63c3f5ee)",
-                300: "var(--foundry-global-color-yellow-adaptive-300-4deab2f6)",
-                400: "var(--foundry-global-color-yellow-adaptive-400-78286ac3)",
-                500: "var(--foundry-global-color-yellow-adaptive-500-f0427a70)",
-                600: "var(--foundry-global-color-yellow-adaptive-600-3f6d60dc)",
-                700: "var(--foundry-global-color-yellow-adaptive-700-959c799c)",
-                800: "var(--foundry-global-color-yellow-adaptive-800-099fea86)",
-                900: "var(--foundry-global-color-yellow-adaptive-900-9443df02)",
-                1e3: "var(--foundry-global-color-yellow-adaptive-1000-abbedd59)",
-                1100: "var(--foundry-global-color-yellow-adaptive-1100-ff18d083)",
-                1200: "var(--foundry-global-color-yellow-adaptive-1200-4bc40f51)",
-                1300: "var(--foundry-global-color-yellow-adaptive-1300-b3a4b5b4)",
-                1400: "var(--foundry-global-color-yellow-adaptive-1400-3048335a)"
-              }
-            },
-            green: {
-              static: {
-                100: "var(--foundry-global-color-green-static-100-753f09df)",
-                200: "var(--foundry-global-color-green-static-200-b1b43708)",
-                300: "var(--foundry-global-color-green-static-300-d66b3241)",
-                400: "var(--foundry-global-color-green-static-400-a93942e5)",
-                500: "var(--foundry-global-color-green-static-500-2888e254)",
-                600: "var(--foundry-global-color-green-static-600-aebbfb3a)",
-                700: "var(--foundry-global-color-green-static-700-89b4ffdc)",
-                800: "var(--foundry-global-color-green-static-800-87b9bb4f)",
-                900: "var(--foundry-global-color-green-static-900-b42b84da)",
-                1e3: "var(--foundry-global-color-green-static-1000-43ecb25e)",
-                1100: "var(--foundry-global-color-green-static-1100-d4597796)",
-                1200: "var(--foundry-global-color-green-static-1200-a4dad299)",
-                1300: "var(--foundry-global-color-green-static-1300-7861b376)",
-                1400: "var(--foundry-global-color-green-static-1400-4d463023)"
-              },
-              adaptive: {
-                100: "var(--foundry-global-color-green-adaptive-100-e36f5da3)",
-                200: "var(--foundry-global-color-green-adaptive-200-e50d247c)",
-                300: "var(--foundry-global-color-green-adaptive-300-e74a73b3)",
-                400: "var(--foundry-global-color-green-adaptive-400-3e375ae0)",
-                500: "var(--foundry-global-color-green-adaptive-500-5eb32af8)",
-                600: "var(--foundry-global-color-green-adaptive-600-67db0104)",
-                700: "var(--foundry-global-color-green-adaptive-700-b46c5b6e)",
-                800: "var(--foundry-global-color-green-adaptive-800-62f4ea41)",
-                900: "var(--foundry-global-color-green-adaptive-900-456c793d)",
-                1e3: "var(--foundry-global-color-green-adaptive-1000-ebe84050)",
-                1100: "var(--foundry-global-color-green-adaptive-1100-7d1a8857)",
-                1200: "var(--foundry-global-color-green-adaptive-1200-f5a760b2)",
-                1300: "var(--foundry-global-color-green-adaptive-1300-98111c27)",
-                1400: "var(--foundry-global-color-green-adaptive-1400-c7a2c7e4)"
-              }
-            },
-            blue: {
-              static: {
-                100: "var(--foundry-global-color-blue-static-100-e67c243c)",
-                200: "var(--foundry-global-color-blue-static-200-d053fe98)",
-                300: "var(--foundry-global-color-blue-static-300-564f6a4f)",
-                400: "var(--foundry-global-color-blue-static-400-803833dc)",
-                500: "var(--foundry-global-color-blue-static-500-029df7ec)",
-                600: "var(--foundry-global-color-blue-static-600-55155611)",
-                700: "var(--foundry-global-color-blue-static-700-f0d799e8)",
-                800: "var(--foundry-global-color-blue-static-800-6d071594)",
-                900: "var(--foundry-global-color-blue-static-900-92d3b7cc)",
-                1e3: "var(--foundry-global-color-blue-static-1000-cc0c4d91)",
-                1100: "var(--foundry-global-color-blue-static-1100-674881c3)",
-                1200: "var(--foundry-global-color-blue-static-1200-81ade28f)",
-                1300: "var(--foundry-global-color-blue-static-1300-92c235c9)",
-                1400: "var(--foundry-global-color-blue-static-1400-1b5feb14)"
-              },
-              adaptive: {
-                100: "var(--foundry-global-color-blue-adaptive-100-b6c46a86)",
-                200: "var(--foundry-global-color-blue-adaptive-200-0ccc0c81)",
-                300: "var(--foundry-global-color-blue-adaptive-300-e5d80c0e)",
-                400: "var(--foundry-global-color-blue-adaptive-400-44a2af0b)",
-                500: "var(--foundry-global-color-blue-adaptive-500-64093fc7)",
-                600: "var(--foundry-global-color-blue-adaptive-600-41bcc0d5)",
-                700: "var(--foundry-global-color-blue-adaptive-700-6f985a0d)",
-                800: "var(--foundry-global-color-blue-adaptive-800-c66fae2b)",
-                900: "var(--foundry-global-color-blue-adaptive-900-f87fb7ab)",
-                1e3: "var(--foundry-global-color-blue-adaptive-1000-129c45a7)",
-                1100: "var(--foundry-global-color-blue-adaptive-1100-579d2d7f)",
-                1200: "var(--foundry-global-color-blue-adaptive-1200-5b826b61)",
-                1300: "var(--foundry-global-color-blue-adaptive-1300-5864a192)",
-                1400: "var(--foundry-global-color-blue-adaptive-1400-b9e5f8ab)"
-              }
-            },
-            seafoam: {
-              static: {
-                100: "var(--foundry-global-color-seafoam-static-100-a401f55d)",
-                200: "var(--foundry-global-color-seafoam-static-200-157f98a6)",
-                300: "var(--foundry-global-color-seafoam-static-300-f057cb2a)",
-                400: "var(--foundry-global-color-seafoam-static-400-5c314058)",
-                500: "var(--foundry-global-color-seafoam-static-500-4eba9472)",
-                600: "var(--foundry-global-color-seafoam-static-600-bb39e74b)",
-                700: "var(--foundry-global-color-seafoam-static-700-97a0e42c)",
-                800: "var(--foundry-global-color-seafoam-static-800-c898779d)",
-                900: "var(--foundry-global-color-seafoam-static-900-ca1e00fd)",
-                1e3: "var(--foundry-global-color-seafoam-static-1000-97b36592)",
-                1100: "var(--foundry-global-color-seafoam-static-1100-7a540639)",
-                1200: "var(--foundry-global-color-seafoam-static-1200-9d613b2f)",
-                1300: "var(--foundry-global-color-seafoam-static-1300-5d82dc91)",
-                1400: "var(--foundry-global-color-seafoam-static-1400-c9f1799c)"
-              },
-              adaptive: {
-                100: "var(--foundry-global-color-seafoam-adaptive-100-9fd7898d)",
-                200: "var(--foundry-global-color-seafoam-adaptive-200-ad5ea160)",
-                300: "var(--foundry-global-color-seafoam-adaptive-300-339db442)",
-                400: "var(--foundry-global-color-seafoam-adaptive-400-bacc52ab)",
-                500: "var(--foundry-global-color-seafoam-adaptive-500-24d9f0ae)",
-                600: "var(--foundry-global-color-seafoam-adaptive-600-28f1d217)",
-                700: "var(--foundry-global-color-seafoam-adaptive-700-f8862c98)",
-                800: "var(--foundry-global-color-seafoam-adaptive-800-240ff22d)",
-                900: "var(--foundry-global-color-seafoam-adaptive-900-30744fa2)",
-                1e3: "var(--foundry-global-color-seafoam-adaptive-1000-cecc3b2f)",
-                1100: "var(--foundry-global-color-seafoam-adaptive-1100-307fe74e)",
-                1200: "var(--foundry-global-color-seafoam-adaptive-1200-1d61b617)",
-                1300: "var(--foundry-global-color-seafoam-adaptive-1300-26c82681)",
-                1400: "var(--foundry-global-color-seafoam-adaptive-1400-6cf3df35)"
-              }
-            },
-            white: {
-              static: {
-                5: "var(--foundry-global-color-white-static-5-c4aa496e)",
-                10: "var(--foundry-global-color-white-static-10-fc74444e)",
-                15: "var(--foundry-global-color-white-static-15-e98f967d)",
-                20: "var(--foundry-global-color-white-static-20-6326998e)",
-                35: "var(--foundry-global-color-white-static-35-fdd05d92)",
-                40: "var(--foundry-global-color-white-static-40-a06b4074)",
-                50: "var(--foundry-global-color-white-static-50-195bb728)",
-                65: "var(--foundry-global-color-white-static-65-c30f2d6e)",
-                80: "var(--foundry-global-color-white-static-80-1525ba22)",
-                85: "var(--foundry-global-color-white-static-85-79c7cc6b)",
-                90: "var(--foundry-global-color-white-static-90-5959c519)",
-                95: "var(--foundry-global-color-white-static-95-becabaec)",
-                100: "var(--foundry-global-color-white-static-100-d44db539)"
-              }
-            },
-            black: {
-              static: {
-                5: "var(--foundry-global-color-black-static-5-5a16f697)",
-                10: "var(--foundry-global-color-black-static-10-16a76e5e)",
-                15: "var(--foundry-global-color-black-static-15-d198b2a6)",
-                20: "var(--foundry-global-color-black-static-20-3ae064df)",
-                35: "var(--foundry-global-color-black-static-35-1523cb80)",
-                40: "var(--foundry-global-color-black-static-40-32fa6bf3)",
-                50: "var(--foundry-global-color-black-static-50-e761096d)",
-                65: "var(--foundry-global-color-black-static-65-1c288c8d)",
-                80: "var(--foundry-global-color-black-static-80-ceca67af)",
-                85: "var(--foundry-global-color-black-static-85-3cb71ba6)",
-                90: "var(--foundry-global-color-black-static-90-45219d0a)",
-                95: "var(--foundry-global-color-black-static-95-4042e3bb)",
-                100: "var(--foundry-global-color-black-static-100-43aea341)"
-              }
-            },
-            alpha: {
-              adaptive: {
-                5: "var(--foundry-global-color-alpha-adaptive-5-b141acdd)",
-                10: "var(--foundry-global-color-alpha-adaptive-10-2f911b2f)",
-                15: "var(--foundry-global-color-alpha-adaptive-15-695b3a30)",
-                20: "var(--foundry-global-color-alpha-adaptive-20-8e38b04d)",
-                35: "var(--foundry-global-color-alpha-adaptive-35-f9b0b74d)",
-                40: "var(--foundry-global-color-alpha-adaptive-40-29c77778)",
-                50: "var(--foundry-global-color-alpha-adaptive-50-f61afb4a)",
-                65: "var(--foundry-global-color-alpha-adaptive-65-5c75d572)",
-                80: "var(--foundry-global-color-alpha-adaptive-80-6e56c3f3)",
-                85: "var(--foundry-global-color-alpha-adaptive-85-130819b2)",
-                90: "var(--foundry-global-color-alpha-adaptive-90-a416f5ef)",
-                95: "var(--foundry-global-color-alpha-adaptive-95-68274c65)"
-              }
-            }
-          },
-          platformScales: {
-            scale: {
-              0: "var(--foundry-global-platform-scales-scale-0-0804de50)",
-              10: "var(--foundry-global-platform-scales-scale-10-e43007a8)",
-              25: "var(--foundry-global-platform-scales-scale-25-6410d0da)",
-              33: "var(--foundry-global-platform-scales-scale-33-15ea8cb3)",
-              50: "var(--foundry-global-platform-scales-scale-50-ce8d9569)",
-              75: "var(--foundry-global-platform-scales-scale-75-e6cf5003)",
-              100: "var(--foundry-global-platform-scales-scale-100-d27bfb1e)",
-              125: "var(--foundry-global-platform-scales-scale-125-f7e280cb)",
-              150: "var(--foundry-global-platform-scales-scale-150-6ca614ed)",
-              175: "var(--foundry-global-platform-scales-scale-175-55240242)",
-              200: "var(--foundry-global-platform-scales-scale-200-b985b3f2)",
-              225: "var(--foundry-global-platform-scales-scale-225-d561439e)",
-              250: "var(--foundry-global-platform-scales-scale-250-5ace963d)",
-              300: "var(--foundry-global-platform-scales-scale-300-9356406c)",
-              350: "var(--foundry-global-platform-scales-scale-350-a2b3bb07)",
-              400: "var(--foundry-global-platform-scales-scale-400-25879f98)",
-              450: "var(--foundry-global-platform-scales-scale-450-3029ab1a)",
-              500: "var(--foundry-global-platform-scales-scale-500-f82c7fa1)",
-              550: "var(--foundry-global-platform-scales-scale-550-d38e7e5a)",
-              600: "var(--foundry-global-platform-scales-scale-600-396e1774)",
-              650: "var(--foundry-global-platform-scales-scale-650-4291ab1c)",
-              700: "var(--foundry-global-platform-scales-scale-700-251bd5dc)",
-              750: "var(--foundry-global-platform-scales-scale-750-70abde6a)",
-              800: "var(--foundry-global-platform-scales-scale-800-3fe8ece7)",
-              900: "var(--foundry-global-platform-scales-scale-900-703d3bf4)",
-              950: "var(--foundry-global-platform-scales-scale-950-faa06d06)",
-              1e3: "var(--foundry-global-platform-scales-scale-1000-43953c90)",
-              1100: "var(--foundry-global-platform-scales-scale-1100-6e89015f)",
-              1150: "var(--foundry-global-platform-scales-scale-1150-a779c276)",
-              1200: "var(--foundry-global-platform-scales-scale-1200-32a4be13)",
-              1400: "var(--foundry-global-platform-scales-scale-1400-cfe54919)",
-              1600: "var(--foundry-global-platform-scales-scale-1600-54eb9368)",
-              1700: "var(--foundry-global-platform-scales-scale-1700-2581e2fc)",
-              1800: "var(--foundry-global-platform-scales-scale-1800-2a76d411)",
-              2e3: "var(--foundry-global-platform-scales-scale-2000-2558d0f0)",
-              2200: "var(--foundry-global-platform-scales-scale-2200-7289d3db)",
-              2350: "var(--foundry-global-platform-scales-scale-2350-76168f14)",
-              2400: "var(--foundry-global-platform-scales-scale-2400-e83742de)",
-              2500: "var(--foundry-global-platform-scales-scale-2500-24cc854f)",
-              2750: "var(--foundry-global-platform-scales-scale-2750-217f5509)",
-              3e3: "var(--foundry-global-platform-scales-scale-3000-586585a3)",
-              3150: "var(--foundry-global-platform-scales-scale-3150-8caf26b3)",
-              3350: "var(--foundry-global-platform-scales-scale-3350-9395e22d)",
-              3500: "var(--foundry-global-platform-scales-scale-3500-c9791024)",
-              3750: "var(--foundry-global-platform-scales-scale-3750-e5864061)",
-              4e3: "var(--foundry-global-platform-scales-scale-4000-35294825)",
-              4125: "var(--foundry-global-platform-scales-scale-4125-d7f8e5c7)",
-              4250: "var(--foundry-global-platform-scales-scale-4250-3f02afdd)",
-              4500: "var(--foundry-global-platform-scales-scale-4500-4b7f7b1a)",
-              4750: "var(--foundry-global-platform-scales-scale-4750-f39e7cdd)",
-              5e3: "var(--foundry-global-platform-scales-scale-5000-fd5d6798)",
-              5250: "var(--foundry-global-platform-scales-scale-5250-526fbc6e)",
-              5500: "var(--foundry-global-platform-scales-scale-5500-8d4a1c23)",
-              5750: "var(--foundry-global-platform-scales-scale-5750-231d0b96)",
-              6e3: "var(--foundry-global-platform-scales-scale-6000-48c91d9d)",
-              6250: "var(--foundry-global-platform-scales-scale-6250-47fc2cb8)"
-            }
-          },
-          border: {
-            radius: {
-              0: "var(--foundry-global-border-radius-0-df9394ed)",
-              25: "var(--foundry-global-border-radius-25-00f8ef97)",
-              50: "var(--foundry-global-border-radius-50-5b3f01bf)",
-              100: "var(--foundry-global-border-radius-100-742803b2)",
-              150: "var(--foundry-global-border-radius-150-ca109bc3)",
-              200: "var(--foundry-global-border-radius-200-ece22bd6)",
-              300: "var(--foundry-global-border-radius-300-7c6d4daf)",
-              400: "var(--foundry-global-border-radius-400-ddbb88dd)",
-              circle: "var(--foundry-global-border-radius-circle-a97600a9)",
-              pill: "var(--foundry-global-border-radius-pill-8c8d51e6)"
-            },
-            width: {
-              0: "var(--foundry-global-border-width-0-b149a800)",
-              10: "var(--foundry-global-border-width-10-8d34e94d)",
-              25: "var(--foundry-global-border-width-25-52cee49a)",
-              33: "var(--foundry-global-border-width-33-d4281be2)",
-              50: "var(--foundry-global-border-width-50-ed6ae051)"
-            }
-          },
-          spacing: {
-            gap: {
-              10: "var(--foundry-global-spacing-gap-10-33a1fb65)",
-              25: "var(--foundry-global-spacing-gap-25-2a51e690)",
-              33: "var(--foundry-global-spacing-gap-33-ab827c04)",
-              50: "var(--foundry-global-spacing-gap-50-ae99fc48)",
-              75: "var(--foundry-global-spacing-gap-75-397a0da6)",
-              100: "var(--foundry-global-spacing-gap-100-05387de1)",
-              125: "var(--foundry-global-spacing-gap-125-23231511)",
-              150: "var(--foundry-global-spacing-gap-150-7f268a13)",
-              175: "var(--foundry-global-spacing-gap-175-d63af5f3)",
-              200: "var(--foundry-global-spacing-gap-200-7d922174)",
-              225: "var(--foundry-global-spacing-gap-225-b2ca1ee1)",
-              250: "var(--foundry-global-spacing-gap-250-ee21f32b)",
-              300: "var(--foundry-global-spacing-gap-300-2f9fe0c5)",
-              350: "var(--foundry-global-spacing-gap-350-7ac0bb64)",
-              400: "var(--foundry-global-spacing-gap-400-f21302a9)",
-              450: "var(--foundry-global-spacing-gap-450-08746772)",
-              500: "var(--foundry-global-spacing-gap-500-0fe0ec68)",
-              550: "var(--foundry-global-spacing-gap-550-aff30058)",
-              600: "var(--foundry-global-spacing-gap-600-d02b9116)",
-              650: "var(--foundry-global-spacing-gap-650-d67ef995)",
-              700: "var(--foundry-global-spacing-gap-700-936963d7)",
-              750: "var(--foundry-global-spacing-gap-750-66d6e892)",
-              800: "var(--foundry-global-spacing-gap-800-4ee30294)",
-              900: "var(--foundry-global-spacing-gap-900-9531b9b6)",
-              950: "var(--foundry-global-spacing-gap-950-cf297696)",
-              1e3: "var(--foundry-global-spacing-gap-1000-af3eeb0f)",
-              1100: "var(--foundry-global-spacing-gap-1100-6d6ab862)",
-              1150: "var(--foundry-global-spacing-gap-1150-5e5d766c)",
-              1200: "var(--foundry-global-spacing-gap-1200-5eb7c00a)",
-              1400: "var(--foundry-global-spacing-gap-1400-302a953d)",
-              1600: "var(--foundry-global-spacing-gap-1600-f3e8c303)",
-              1700: "var(--foundry-global-spacing-gap-1700-b6c3835e)",
-              1800: "var(--foundry-global-spacing-gap-1800-9826a3ad)",
-              2e3: "var(--foundry-global-spacing-gap-2000-c24e1178)",
-              2200: "var(--foundry-global-spacing-gap-2200-8192be37)",
-              2350: "var(--foundry-global-spacing-gap-2350-1cf77686)",
-              2400: "var(--foundry-global-spacing-gap-2400-c9462d01)",
-              2500: "var(--foundry-global-spacing-gap-2500-442ef530)"
-            },
-            dimensions: {
-              10: "var(--foundry-global-spacing-dimensions-10-7d52ec29)",
-              25: "var(--foundry-global-spacing-dimensions-25-eec1a90b)",
-              33: "var(--foundry-global-spacing-dimensions-33-9d3ffc33)",
-              50: "var(--foundry-global-spacing-dimensions-50-b85610c2)",
-              75: "var(--foundry-global-spacing-dimensions-75-8db9e2a0)",
-              100: "var(--foundry-global-spacing-dimensions-100-97e13da9)",
-              125: "var(--foundry-global-spacing-dimensions-125-ef032ca7)",
-              150: "var(--foundry-global-spacing-dimensions-150-ea1fb93c)",
-              175: "var(--foundry-global-spacing-dimensions-175-6d1e42fb)",
-              200: "var(--foundry-global-spacing-dimensions-200-2fbf5420)",
-              225: "var(--foundry-global-spacing-dimensions-225-f91d4d91)",
-              250: "var(--foundry-global-spacing-dimensions-250-1db78665)",
-              300: "var(--foundry-global-spacing-dimensions-300-8149e8c1)",
-              350: "var(--foundry-global-spacing-dimensions-350-1aeb7130)",
-              400: "var(--foundry-global-spacing-dimensions-400-b120da78)",
-              450: "var(--foundry-global-spacing-dimensions-450-41690cc7)",
-              500: "var(--foundry-global-spacing-dimensions-500-72b67c3c)",
-              550: "var(--foundry-global-spacing-dimensions-550-97601a54)",
-              600: "var(--foundry-global-spacing-dimensions-600-552f3071)",
-              650: "var(--foundry-global-spacing-dimensions-650-61f68482)",
-              700: "var(--foundry-global-spacing-dimensions-700-523e51c1)",
-              750: "var(--foundry-global-spacing-dimensions-750-8a3f1cbf)",
-              800: "var(--foundry-global-spacing-dimensions-800-bbdfa298)",
-              900: "var(--foundry-global-spacing-dimensions-900-efcdb6bf)",
-              950: "var(--foundry-global-spacing-dimensions-950-cc7b4e5e)",
-              1e3: "var(--foundry-global-spacing-dimensions-1000-7e8c9b30)",
-              1100: "var(--foundry-global-spacing-dimensions-1100-aca957c8)",
-              1150: "var(--foundry-global-spacing-dimensions-1150-f8665e69)",
-              1200: "var(--foundry-global-spacing-dimensions-1200-71972197)",
-              1400: "var(--foundry-global-spacing-dimensions-1400-8f4cc278)",
-              1600: "var(--foundry-global-spacing-dimensions-1600-b5e74cd0)",
-              1700: "var(--foundry-global-spacing-dimensions-1700-b22e9e34)",
-              1800: "var(--foundry-global-spacing-dimensions-1800-94e4f433)",
-              2e3: "var(--foundry-global-spacing-dimensions-2000-d510a4b4)",
-              2200: "var(--foundry-global-spacing-dimensions-2200-93c325ca)",
-              2350: "var(--foundry-global-spacing-dimensions-2350-3bd02711)",
-              2400: "var(--foundry-global-spacing-dimensions-2400-8d3906cf)",
-              2500: "var(--foundry-global-spacing-dimensions-2500-4ab359ad)",
-              2750: "var(--foundry-global-spacing-dimensions-2750-165b8e80)",
-              3e3: "var(--foundry-global-spacing-dimensions-3000-27404208)",
-              3150: "var(--foundry-global-spacing-dimensions-3150-c73af8bd)",
-              3350: "var(--foundry-global-spacing-dimensions-3350-d07d3335)",
-              3500: "var(--foundry-global-spacing-dimensions-3500-832dd3e8)",
-              3750: "var(--foundry-global-spacing-dimensions-3750-18293754)",
-              4e3: "var(--foundry-global-spacing-dimensions-4000-981888ae)",
-              4125: "var(--foundry-global-spacing-dimensions-4125-711bd372)",
-              4250: "var(--foundry-global-spacing-dimensions-4250-11e9d696)",
-              4500: "var(--foundry-global-spacing-dimensions-4500-2f90e66f)",
-              4750: "var(--foundry-global-spacing-dimensions-4750-1ff43e79)",
-              5e3: "var(--foundry-global-spacing-dimensions-5000-7c37a31a)",
-              5250: "var(--foundry-global-spacing-dimensions-5250-eed14f39)",
-              5500: "var(--foundry-global-spacing-dimensions-5500-1e6d6f23)",
-              5750: "var(--foundry-global-spacing-dimensions-5750-f63e358c)",
-              6e3: "var(--foundry-global-spacing-dimensions-6000-25c8873a)",
-              6250: "var(--foundry-global-spacing-dimensions-6250-aabe7f2f)"
-            }
-          },
-          font: {
-            family: {
-              arial: "var(--foundry-global-font-family-arial-29a7d878)",
-              helveticaNowDisplay: "var(--foundry-global-font-family-helvetica-now-display-15e86e06)",
-              helveticaNowText: "var(--foundry-global-font-family-helvetica-now-text-2f039cca)",
-              consolas: "var(--foundry-global-font-family-consolas-b260a4d8)"
-            },
-            weight: {
-              400: "var(--foundry-global-font-weight-400-c543d620)",
-              700: "var(--foundry-global-font-weight-700-4d05ca0a)"
-            },
-            size: {
-              150: "var(--foundry-global-font-size-150-198f06c7)",
-              175: "var(--foundry-global-font-size-175-7c044718)",
-              200: "var(--foundry-global-font-size-200-9b30a1c2)",
-              225: "var(--foundry-global-font-size-225-6b268615)",
-              250: "var(--foundry-global-font-size-250-7c909c36)",
-              300: "var(--foundry-global-font-size-300-ed2e8eb5)",
-              400: "var(--foundry-global-font-size-400-310f384e)",
-              500: "var(--foundry-global-font-size-500-ae4c1498)",
-              600: "var(--foundry-global-font-size-600-f98b9cf9)",
-              700: "var(--foundry-global-font-size-700-e55fff7d)",
-              800: "var(--foundry-global-font-size-800-cbeeb437)",
-              900: "var(--foundry-global-font-size-900-195dff23)",
-              1e3: "var(--foundry-global-font-size-1000-de0d9aba)",
-              1100: "var(--foundry-global-font-size-1100-a7f67440)"
-            },
-            letterSpacing: {
-              0: "var(--foundry-global-font-letter-spacing-0-11d3b242)",
-              25: "var(--foundry-global-font-letter-spacing-25-e01b7d49)",
-              100: "var(--foundry-global-font-letter-spacing-100-823e8792)",
-              200: "var(--foundry-global-font-letter-spacing-200-3d4cc27a)",
-              250: "var(--foundry-global-font-letter-spacing-250-c0a207ff)",
-              neg250: "var(--foundry-global-font-letter-spacing-neg-250-6c4f28af)",
-              neg150: "var(--foundry-global-font-letter-spacing-neg-150-d0c75081)",
-              neg100: "var(--foundry-global-font-letter-spacing-neg-100-d1dce193)",
-              neg75: "var(--foundry-global-font-letter-spacing-neg-75-247e228b)",
-              neg50: "var(--foundry-global-font-letter-spacing-neg-50-2f64a6bc)"
-            },
-            lineHeight: {
-              100: "var(--foundry-global-font-line-height-100-d7ba3e93)",
-              110: "var(--foundry-global-font-line-height-110-f2a1d21c)",
-              120: "var(--foundry-global-font-line-height-120-114ddbcd)",
-              130: "var(--foundry-global-font-line-height-130-1468e63f)",
-              150: "var(--foundry-global-font-line-height-150-dc282d1f)"
-            },
-            spacing: {
-              400: "var(--foundry-global-font-spacing-400-d05cce10)"
-            }
-          }
-        },
-        alias: {
-          color: {
-            background: {
-              twotone: {
-                success: "var(--foundry-alias-color-background-twotone-success-aee211b5)",
-                information: "var(--foundry-alias-color-background-twotone-information-433f71ca)",
-                warning: "var(--foundry-alias-color-background-twotone-warning-1b16c91e)",
-                danger: "var(--foundry-alias-color-background-twotone-danger-89bb8777)",
-                seafoam: "var(--foundry-alias-color-background-twotone-seafoam-bbb55e0c)"
-              },
-              bold: {
-                layer0: "var(--foundry-alias-color-background-bold-layer-0-f947e8a3)",
-                layer1: "var(--foundry-alias-color-background-bold-layer-1-a2bc128b)",
-                layer2: "var(--foundry-alias-color-background-bold-layer-2-eddb4873)",
-                layer3: "var(--foundry-alias-color-background-bold-layer-3-aaaf37c3)"
-              },
-              subtle: {
-                layer0: "var(--foundry-alias-color-background-subtle-layer-0-3f1d20b0)",
-                layer1: "var(--foundry-alias-color-background-subtle-layer-1-74c1dd2f)",
-                layer2: "var(--foundry-alias-color-background-subtle-layer-2-b67c0bd1)"
-              },
-              component: {
-                tooltip: "var(--foundry-alias-color-background-component-tooltip-791bcb22)"
-              }
-            },
-            text: {
-              standard: "var(--foundry-alias-color-text-standard-2d241861)",
-              disabled: "var(--foundry-alias-color-text-disabled-6c1b5f99)",
-              subdued: "var(--foundry-alias-color-text-subdued-d5502516)",
-              header: "var(--foundry-alias-color-text-header-c0780da4)",
-              success: "var(--foundry-alias-color-text-success-5fcd04d6)",
-              information: "var(--foundry-alias-color-text-information-5657d70d)",
-              warning: "var(--foundry-alias-color-text-warning-c0b6f339)",
-              danger: "var(--foundry-alias-color-text-danger-bcdfc5ff)",
-              seafoam: "var(--foundry-alias-color-text-seafoam-62ff1b40)"
-            },
-            icon: {
-              standard: "var(--foundry-alias-color-icon-standard-3eef4ce2)",
-              disabled: "var(--foundry-alias-color-icon-disabled-34e2f46b)",
-              illustration: "var(--foundry-alias-color-icon-illustration-9b2d1c8c)",
-              subdued: "var(--foundry-alias-color-icon-subdued-a7a37139)",
-              subduedLowestContrast: "var(--foundry-alias-color-icon-subdued-lowest-contrast-6e35947c)",
-              information: "var(--foundry-alias-color-icon-information-139f1e42)",
-              informationLowerContrast: "var(--foundry-alias-color-icon-information-lower-contrast-bf7ca27d)",
-              informationHigherContrast: "var(--foundry-alias-color-icon-information-higher-contrast-1dc79bef)",
-              informationLowestContrast: "var(--foundry-alias-color-icon-information-lowest-contrast-c97926f1)",
-              informationHighestContrast: "var(--foundry-alias-color-icon-information-highest-contrast-5a450ba5)",
-              success: "var(--foundry-alias-color-icon-success-e23133ed)",
-              successLowerContrast: "var(--foundry-alias-color-icon-success-lower-contrast-a88e4244)",
-              successHigherContrast: "var(--foundry-alias-color-icon-success-higher-contrast-574d0db3)",
-              successLowestContrast: "var(--foundry-alias-color-icon-success-lowest-contrast-bbecce8c)",
-              successHighestContrast: "var(--foundry-alias-color-icon-success-highest-contrast-1add093c)",
-              warning: "var(--foundry-alias-color-icon-warning-72f96436)",
-              warningLowerContrast: "var(--foundry-alias-color-icon-warning-lower-contrast-b6e0d50b)",
-              warningHigherContrast: "var(--foundry-alias-color-icon-warning-higher-contrast-0bba028d)",
-              warningLowestContrast: "var(--foundry-alias-color-icon-warning-lowest-contrast-c396ad20)",
-              warningHighestContrast: "var(--foundry-alias-color-icon-warning-highest-contrast-78003698)",
-              danger: "var(--foundry-alias-color-icon-danger-615a4836)",
-              dangerLowerContrast: "var(--foundry-alias-color-icon-danger-lower-contrast-92eb2f13)",
-              dangerHigherContrast: "var(--foundry-alias-color-icon-danger-higher-contrast-c78869be)",
-              dangerLowestContrast: "var(--foundry-alias-color-icon-danger-lowest-contrast-af0106b8)",
-              dangerHighestContrast: "var(--foundry-alias-color-icon-danger-highest-contrast-ef621d13)",
-              seafoam: "var(--foundry-alias-color-icon-seafoam-7c088ef5)",
-              seafoamLowerContrast: "var(--foundry-alias-color-icon-seafoam-lower-contrast-ec6e11bf)",
-              seafoamHigherContrast: "var(--foundry-alias-color-icon-seafoam-higher-contrast-7245aa5c)",
-              seafoamLowestContrast: "var(--foundry-alias-color-icon-seafoam-lowest-contrast-64031f29)",
-              seafoamHighestContrast: "var(--foundry-alias-color-icon-seafoam-highest-contrast-4a2ef321)"
-            },
-            border: {
-              decorative: "var(--foundry-alias-color-border-decorative-678f338a)",
-              decorativeLowestContrast: "var(--foundry-alias-color-border-decorative-lowest-contrast-f8bbcfca)",
-              field: "var(--foundry-alias-color-border-field-d535e421)",
-              control: "var(--foundry-alias-color-border-control-192e0629)",
-              information: "var(--foundry-alias-color-border-information-b430db7d)",
-              informationLowestContrast: "var(--foundry-alias-color-border-information-lowest-contrast-9d4cedd9)",
-              informationHighestContrast: "var(--foundry-alias-color-border-information-highest-contrast-d8396f29)",
-              success: "var(--foundry-alias-color-border-success-d9400b20)",
-              successLowestContrast: "var(--foundry-alias-color-border-success-lowest-contrast-e656d81a)",
-              successHighestContrast: "var(--foundry-alias-color-border-success-highest-contrast-4e576195)",
-              warning: "var(--foundry-alias-color-border-warning-83f5d462)",
-              warningLowestContrast: "var(--foundry-alias-color-border-warning-lowest-contrast-fd52fff8)",
-              warningHighestContrast: "var(--foundry-alias-color-border-warning-highest-contrast-6f1f8d51)",
-              danger: "var(--foundry-alias-color-border-danger-c58a5d4f)",
-              dangerLowestContrast: "var(--foundry-alias-color-border-danger-lowest-contrast-e645825b)",
-              dangerHighestContrast: "var(--foundry-alias-color-border-danger-highest-contrast-783d81da)",
-              seafoam: "var(--foundry-alias-color-border-seafoam-152722dd)",
-              seafoamLowestContrast: "var(--foundry-alias-color-border-seafoam-lowest-contrast-83343f40)",
-              seafoamHighestContrast: "var(--foundry-alias-color-border-seafoam-highest-contrast-e1935bc9)",
-              disabled: "var(--foundry-alias-color-border-disabled-cacdfb33)",
-              focus: "var(--foundry-alias-color-border-focus-e58b07c7)",
-              shadow: "var(--foundry-alias-color-border-shadow-9f37e9b9)"
-            },
-            decorative: {
-              information: "var(--foundry-alias-color-decorative-information-6d17b386)",
-              informationLowestContrast: "var(--foundry-alias-color-decorative-information-lowest-contrast-a34024fd)",
-              informationHighestContrast: "var(--foundry-alias-color-decorative-information-highest-contrast-68ba8e34)",
-              success: "var(--foundry-alias-color-decorative-success-e509717f)",
-              successLowestContrast: "var(--foundry-alias-color-decorative-success-lowest-contrast-9a2a33f9)",
-              successHighestContrast: "var(--foundry-alias-color-decorative-success-highest-contrast-1fe42830)",
-              warning: "var(--foundry-alias-color-decorative-warning-5a28cd24)",
-              warningLowestContrast: "var(--foundry-alias-color-decorative-warning-lowest-contrast-3c247b72)",
-              warningHighestContrast: "var(--foundry-alias-color-decorative-warning-highest-contrast-a50141af)",
-              danger: "var(--foundry-alias-color-decorative-danger-e7f85ac4)",
-              dangerLowestContrast: "var(--foundry-alias-color-decorative-danger-lowest-contrast-7692d49b)",
-              dangerHighestContrast: "var(--foundry-alias-color-decorative-danger-highest-contrast-ace7b335)",
-              seafoam: "var(--foundry-alias-color-decorative-seafoam-9f1d83a7)",
-              seafoamLowestContrast: "var(--foundry-alias-color-decorative-seafoam-lowest-contrast-7bfe0e03)",
-              seafoamHighestContrast: "var(--foundry-alias-color-decorative-seafoam-highest-contrast-194ae5a1)"
-            },
-            brand: {
-              bully: {
-                blue: "var(--foundry-alias-color-brand-bully-blue-09f992d6)",
-                yellow: "var(--foundry-alias-color-brand-bully-yellow-6124e706)"
-              },
-              rdr: {
-                red: "var(--foundry-alias-color-brand-rdr-red-d730e332)"
-              },
-              rockstar: {
-                gold: "var(--foundry-alias-color-brand-rockstar-gold-28436c1a)"
-              }
-            }
-          },
-          font: {
-            family: {
-              heading: {
-                primary: "var(--foundry-alias-font-family-heading-primary-fab3091b)",
-                fallback: "var(--foundry-alias-font-family-heading-fallback-197c505b)"
-              },
-              body: {
-                primary: "var(--foundry-alias-font-family-body-primary-a0f2e156)",
-                fallback: "var(--foundry-alias-font-family-body-fallback-aa2c93c5)"
-              },
-              code: {
-                primary: "var(--foundry-alias-font-family-code-primary-0731b8b8)",
-                fallback: "var(--foundry-alias-font-family-code-fallback-65a5a9e6)"
-              }
-            },
-            letterSpacing: {
-              heading: {
-                primary: "var(--foundry-alias-font-letter-spacing-heading-primary-4052fb4d)",
-                fallback: "var(--foundry-alias-font-letter-spacing-heading-fallback-0c565619)"
-              },
-              body: {
-                primary: "var(--foundry-alias-font-letter-spacing-body-primary-36e0f114)",
-                fallback: "var(--foundry-alias-font-letter-spacing-body-fallback-1bae4182)"
-              },
-              label: {
-                primary: "var(--foundry-alias-font-letter-spacing-label-primary-ab7f3c8d)",
-                fallback: "var(--foundry-alias-font-letter-spacing-label-fallback-1226b09e)"
-              }
-            },
-            weight: {
-              regular: "var(--foundry-alias-font-weight-regular-c2af3245)",
-              bold: "var(--foundry-alias-font-weight-bold-751d319e)"
-            },
-            spacing: {
-              paragraph: "var(--foundry-alias-font-spacing-paragraph-cdd6040b)"
-            },
-            size: {
-              heading: {
-                display: "var(--foundry-alias-font-size-heading-display-a2892c71)",
-                "01": "var(--foundry-alias-font-size-heading-01-1e8a0727)",
-                "02": "var(--foundry-alias-font-size-heading-02-0fd2c0d9)",
-                "03": "var(--foundry-alias-font-size-heading-03-9a73c535)",
-                "04": "var(--foundry-alias-font-size-heading-04-1fdd08c0)",
-                "05": "var(--foundry-alias-font-size-heading-05-beb13840)",
-                "06": "var(--foundry-alias-font-size-heading-06-40a06748)"
-              },
-              body: {
-                bodyLg: "var(--foundry-alias-font-size-body-body-lg-bec4de18)",
-                bodyMd: "var(--foundry-alias-font-size-body-body-md-caf3b782)",
-                bodySm: "var(--foundry-alias-font-size-body-body-sm-2a8e6da3)",
-                bodyXs: "var(--foundry-alias-font-size-body-body-xs-cf241758)",
-                code: "var(--foundry-alias-font-size-body-code-17a5a27f)"
-              }
-            },
-            lineHeight: {
-              heading: "var(--foundry-alias-font-line-height-heading-5379287f)",
-              body: "var(--foundry-alias-font-line-height-body-3e320cc8)"
-            }
-          }
-        }
-      };
-      a(75523);
-      const s = e => {
-        const l = e.match(/^var\((.*)\)$/);
-        return l ? l[1] : e
-      }
-    },
-    97359: (e, l, a) => {
-      a.d(l, {
-        A: () => _
-      });
-      var r = a(78322),
-        t = a(71127),
-        o = "right-scroll-bar-position",
-        s = "width-before-scroll-bar";
-
-      function d(e, l) {
-        return "function" == typeof e ? e(l) : e && (e.current = l), e
-      }
-      var i = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
-        n = new WeakMap;
-
-      function c(e) {
-        return e
-      }
-      var h = function(e) {
-          void 0 === e && (e = {});
-          var l = function(e, l) {
-            void 0 === l && (l = c);
-            var a = [],
-              r = !1;
-            return {
-              read: function() {
-                if (r) throw new Error("Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.");
-                return a.length ? a[a.length - 1] : e
-              },
-              useMedium: function(e) {
-                var t = l(e, r);
-                return a.push(t),
-                  function() {
-                    a = a.filter(function(e) {
-                      return e !== t
-                    })
-                  }
-              },
-              assignSyncMedium: function(e) {
-                for (r = !0; a.length;) {
-                  var l = a;
-                  a = [], l.forEach(e)
-                }
-                a = {
-                  push: function(l) {
-                    return e(l)
-                  },
-                  filter: function() {
-                    return a
-                  }
-                }
-              },
-              assignMedium: function(e) {
-                r = !0;
-                var l = [];
-                if (a.length) {
-                  var t = a;
-                  a = [], t.forEach(e), l = a
-                }
-                var o = function() {
-                    var a = l;
-                    l = [], a.forEach(e)
-                  },
-                  s = function() {
-                    return Promise.resolve().then(o)
-                  };
-                s(), a = {
-                  push: function(e) {
-                    l.push(e), s()
-                  },
-                  filter: function(e) {
-                    return l = l.filter(e), a
-                  }
-                }
-              }
-            }
-          }(null);
-          return l.options = (0, r.__assign)({
-            async: !0,
-            ssr: !1
-          }, e), l
-        }(),
-        f = function() {},
-        v = t.forwardRef(function(e, l) {
-          var a = t.useRef(null),
-            o = t.useState({
-              onScrollCapture: f,
-              onWheelCapture: f,
-              onTouchMoveCapture: f
-            }),
-            s = o[0],
-            c = o[1],
-            v = e.forwardProps,
-            w = e.children,
-            g = e.className,
-            x = e.removeScrollBar,
-            u = e.enabled,
-            b = e.shards,
-            p = e.sideCar,
-            j = e.noRelative,
-            m = e.noIsolation,
-            M = e.inert,
-            R = e.allowPinchZoom,
-            y = e.as,
-            L = void 0 === y ? "div" : y,
-            z = e.gapMode,
-            C = (0, r.__rest)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            H = p,
-            A = function(e, l) {
-              var a, r, o, s = (a = l || null, r = function(l) {
-                return e.forEach(function(e) {
-                  return d(e, l)
-                })
-              }, (o = (0, t.useState)(function() {
-                return {
-                  value: a,
-                  callback: r,
-                  facade: {
-                    get current() {
-                      return o.value
-                    },
-                    set current(e) {
-                      var l = o.value;
-                      l !== e && (o.value = e, o.callback(e, l))
-                    }
-                  }
-                }
-              })[0]).callback = r, o.facade);
-              return i(function() {
-                var l = n.get(s);
-                if (l) {
-                  var a = new Set(l),
-                    r = new Set(e),
-                    t = s.current;
-                  a.forEach(function(e) {
-                    r.has(e) || d(e, null)
-                  }), r.forEach(function(e) {
-                    a.has(e) || d(e, t)
-                  })
-                }
-                n.set(s, e)
-              }, [e]), s
-            }([a, l]),
-            V = (0, r.__assign)((0, r.__assign)({}, C), s);
-          return t.createElement(t.Fragment, null, u && t.createElement(H, {
-            sideCar: h,
-            removeScrollBar: x,
-            shards: b,
-            noRelative: j,
-            noIsolation: m,
-            inert: M,
-            setCallbacks: c,
-            allowPinchZoom: !!R,
-            lockRef: a,
-            gapMode: z
-          }), v ? t.cloneElement(t.Children.only(w), (0, r.__assign)((0, r.__assign)({}, V), {
-            ref: A
-          })) : t.createElement(L, (0, r.__assign)({}, V, {
-            className: g,
-            ref: A
-          }), w))
-        });
-      v.defaultProps = {
-        enabled: !0,
-        removeScrollBar: !0,
-        inert: !1
-      }, v.classNames = {
-        fullWidth: s,
-        zeroRight: o
-      };
-      var w = function(e) {
-        var l = e.sideCar,
-          a = (0, r.__rest)(e, ["sideCar"]);
-        if (!l) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
-        var o = l.read();
-        if (!o) throw new Error("Sidecar medium not found");
-        return t.createElement(o, (0, r.__assign)({}, a))
-      };
-      w.isSideCarExport = !0;
-      var g = function() {
-          var e = 0,
-            l = null;
-          return {
-            add: function(r) {
-              var t, o;
-              0 == e && (l = function() {
-                if (!document) return null;
-                var e = document.createElement("style");
-                e.type = "text/css";
-                var l = a.nc;
-                return l && e.setAttribute("nonce", l), e
-              }()) && (o = r, (t = l).styleSheet ? t.styleSheet.cssText = o : t.appendChild(document.createTextNode(o)), function(e) {
-                (document.head || document.getElementsByTagName("head")[0]).appendChild(e)
-              }(l)), e++
-            },
-            remove: function() {
-              !--e && l && (l.parentNode && l.parentNode.removeChild(l), l = null)
-            }
-          }
-        },
-        x = function() {
-          var e, l = (e = g(), function(l, a) {
-            t.useEffect(function() {
-              return e.add(l),
-                function() {
-                  e.remove()
-                }
-            }, [l && a])
-          });
-          return function(e) {
-            var a = e.styles,
-              r = e.dynamic;
-            return l(a, r), null
-          }
-        },
-        u = {
-          left: 0,
-          top: 0,
-          right: 0,
-          gap: 0
-        },
-        b = function(e) {
-          return parseInt(e || "", 10) || 0
-        },
-        p = x(),
-        j = "data-scroll-locked",
-        m = function(e, l, a, r) {
-          var t = e.left,
-            d = e.top,
-            i = e.right,
-            n = e.gap;
-          return void 0 === a && (a = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(n, "px ").concat(r, ";\n  }\n  body[").concat(j, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([l && "position: relative ".concat(r, ";"), "margin" === a && "\n    padding-left: ".concat(t, "px;\n    padding-top: ").concat(d, "px;\n    padding-right: ").concat(i, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(n, "px ").concat(r, ";\n    "), "padding" === a && "padding-right: ".concat(n, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(o, " {\n    right: ").concat(n, "px ").concat(r, ";\n  }\n  \n  .").concat(s, " {\n    margin-right: ").concat(n, "px ").concat(r, ";\n  }\n  \n  .").concat(o, " .").concat(o, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(s, " .").concat(s, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(j, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(n, "px;\n  }\n")
-        },
-        M = function() {
-          var e = parseInt(document.body.getAttribute(j) || "0", 10);
-          return isFinite(e) ? e : 0
-        },
-        R = function(e) {
-          var l = e.noRelative,
-            a = e.noImportant,
-            r = e.gapMode,
-            o = void 0 === r ? "margin" : r;
-          t.useEffect(function() {
-            return document.body.setAttribute(j, (M() + 1).toString()),
-              function() {
-                var e = M() - 1;
-                e <= 0 ? document.body.removeAttribute(j) : document.body.setAttribute(j, e.toString())
-              }
-          }, []);
-          var s = t.useMemo(function() {
-            return function(e) {
-              if (void 0 === e && (e = "margin"), "undefined" == typeof window) return u;
-              var l = function(e) {
-                  var l = window.getComputedStyle(document.body),
-                    a = l["padding" === e ? "paddingLeft" : "marginLeft"],
-                    r = l["padding" === e ? "paddingTop" : "marginTop"],
-                    t = l["padding" === e ? "paddingRight" : "marginRight"];
-                  return [b(a), b(r), b(t)]
-                }(e),
-                a = document.documentElement.clientWidth,
-                r = window.innerWidth;
-              return {
-                left: l[0],
-                top: l[1],
-                right: l[2],
-                gap: Math.max(0, r - a + l[2] - l[0])
-              }
-            }(o)
-          }, [o]);
-          return t.createElement(p, {
-            styles: m(s, !l, o, a ? "" : "!important")
-          })
-        },
-        y = !1;
-      if ("undefined" != typeof window) try {
-        var L = Object.defineProperty({}, "passive", {
-          get: function() {
-            return y = !0, !0
-          }
-        });
-        window.addEventListener("test", L, L), window.removeEventListener("test", L, L)
-      } catch (e) {
-        y = !1
-      }
-      var z = !!y && {
-          passive: !1
-        },
-        C = function(e, l) {
-          if (!(e instanceof Element)) return !1;
-          var a = window.getComputedStyle(e);
-          return "hidden" !== a[l] && !(a.overflowY === a.overflowX && ! function(e) {
-            return "TEXTAREA" === e.tagName
-          }(e) && "visible" === a[l])
-        },
-        H = function(e, l) {
-          var a = l.ownerDocument,
-            r = l;
-          do {
-            if ("undefined" != typeof ShadowRoot && r instanceof ShadowRoot && (r = r.host), A(e, r)) {
-              var t = V(e, r);
-              if (t[1] > t[2]) return !0
-            }
-            r = r.parentNode
-          } while (r && r !== a.body);
-          return !1
-        },
-        A = function(e, l) {
-          return "v" === e ? function(e) {
-            return C(e, "overflowY")
-          }(l) : function(e) {
-            return C(e, "overflowX")
-          }(l)
-        },
-        V = function(e, l) {
-          return "v" === e ? [(a = l).scrollTop, a.scrollHeight, a.clientHeight] : function(e) {
-            return [e.scrollLeft, e.scrollWidth, e.clientWidth]
-          }(l);
-          var a
-        },
-        B = function(e) {
-          return "changedTouches" in e ? [e.changedTouches[0].clientX, e.changedTouches[0].clientY] : [0, 0]
-        },
-        I = function(e) {
-          return [e.deltaX, e.deltaY]
-        },
-        S = function(e) {
-          return e && "current" in e ? e.current : e
-        },
-        q = function(e) {
-          return "\n  .block-interactivity-".concat(e, " {pointer-events: none;}\n  .allow-interactivity-").concat(e, " {pointer-events: all;}\n")
-        },
-        D = 0,
-        N = [];
-
-      function X(e) {
-        for (var l = null; null !== e;) e instanceof ShadowRoot && (l = e.host, e = e.host), e = e.parentNode;
-        return l
-      }
-      const G = (k = function(e) {
-        var l = t.useRef([]),
-          a = t.useRef([0, 0]),
-          o = t.useRef(),
-          s = t.useState(D++)[0],
-          d = t.useState(x)[0],
-          i = t.useRef(e);
-        t.useEffect(function() {
-          i.current = e
-        }, [e]), t.useEffect(function() {
-          if (e.inert) {
-            document.body.classList.add("block-interactivity-".concat(s));
-            var l = (0, r.__spreadArray)([e.lockRef.current], (e.shards || []).map(S), !0).filter(Boolean);
-            return l.forEach(function(e) {
-                return e.classList.add("allow-interactivity-".concat(s))
-              }),
-              function() {
-                document.body.classList.remove("block-interactivity-".concat(s)), l.forEach(function(e) {
-                  return e.classList.remove("allow-interactivity-".concat(s))
-                })
-              }
-          }
-        }, [e.inert, e.lockRef.current, e.shards]);
-        var n = t.useCallback(function(e, l) {
-            if ("touches" in e && 2 === e.touches.length || "wheel" === e.type && e.ctrlKey) return !i.current.allowPinchZoom;
-            var r, t = B(e),
-              s = a.current,
-              d = "deltaX" in e ? e.deltaX : s[0] - t[0],
-              n = "deltaY" in e ? e.deltaY : s[1] - t[1],
-              c = e.target,
-              h = Math.abs(d) > Math.abs(n) ? "h" : "v";
-            if ("touches" in e && "h" === h && "range" === c.type) return !1;
-            var f = H(h, c);
-            if (!f) return !0;
-            if (f ? r = h : (r = "v" === h ? "h" : "v", f = H(h, c)), !f) return !1;
-            if (!o.current && "changedTouches" in e && (d || n) && (o.current = r), !r) return !0;
-            var v = o.current || r;
-            return function(e, l, a, r) {
-              var t = function(e, l) {
-                  return "h" === e && "rtl" === l ? -1 : 1
-                }(e, window.getComputedStyle(l).direction),
-                o = t * r,
-                s = a.target,
-                d = l.contains(s),
-                i = !1,
-                n = o > 0,
-                c = 0,
-                h = 0;
-              do {
-                if (!s) break;
-                var f = V(e, s),
-                  v = f[0],
-                  w = f[1] - f[2] - t * v;
-                (v || w) && A(e, s) && (c += w, h += v);
-                var g = s.parentNode;
-                s = g && g.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? g.host : g
-              } while (!d && s !== document.body || d && (l.contains(s) || l === s));
-              return (n && (Math.abs(c) < 1 || !1) || !n && (Math.abs(h) < 1 || !1)) && (i = !0), i
-            }(v, l, e, "h" === v ? d : n)
-          }, []),
-          c = t.useCallback(function(e) {
-            var a = e;
-            if (N.length && N[N.length - 1] === d) {
-              var r = "deltaY" in a ? I(a) : B(a),
-                t = l.current.filter(function(e) {
-                  return e.name === a.type && (e.target === a.target || a.target === e.shadowParent) && (l = e.delta, t = r, l[0] === t[0] && l[1] === t[1]);
-                  var l, t
-                })[0];
-              if (t && t.should) a.cancelable && a.preventDefault();
-              else if (!t) {
-                var o = (i.current.shards || []).map(S).filter(Boolean).filter(function(e) {
-                  return e.contains(a.target)
-                });
-                (o.length > 0 ? n(a, o[0]) : !i.current.noIsolation) && a.cancelable && a.preventDefault()
-              }
-            }
-          }, []),
-          h = t.useCallback(function(e, a, r, t) {
-            var o = {
-              name: e,
-              delta: a,
-              target: r,
-              should: t,
-              shadowParent: X(r)
-            };
-            l.current.push(o), setTimeout(function() {
-              l.current = l.current.filter(function(e) {
-                return e !== o
-              })
-            }, 1)
-          }, []),
-          f = t.useCallback(function(e) {
-            a.current = B(e), o.current = void 0
-          }, []),
-          v = t.useCallback(function(l) {
-            h(l.type, I(l), l.target, n(l, e.lockRef.current))
-          }, []),
-          w = t.useCallback(function(l) {
-            h(l.type, B(l), l.target, n(l, e.lockRef.current))
-          }, []);
-        t.useEffect(function() {
-          return N.push(d), e.setCallbacks({
-              onScrollCapture: v,
-              onWheelCapture: v,
-              onTouchMoveCapture: w
-            }), document.addEventListener("wheel", c, z), document.addEventListener("touchmove", c, z), document.addEventListener("touchstart", f, z),
-            function() {
-              N = N.filter(function(e) {
-                return e !== d
-              }), document.removeEventListener("wheel", c, z), document.removeEventListener("touchmove", c, z), document.removeEventListener("touchstart", f, z)
-            }
-        }, []);
-        var g = e.removeScrollBar,
-          u = e.inert;
-        return t.createElement(t.Fragment, null, u ? t.createElement(d, {
-          styles: q(s)
-        }) : null, g ? t.createElement(R, {
-          noRelative: e.noRelative,
-          gapMode: e.gapMode
-        }) : null)
-      }, h.useMedium(k), w);
-      var k, F = t.forwardRef(function(e, l) {
-        return t.createElement(v, (0, r.__assign)({}, e, {
-          ref: l,
-          sideCar: G
-        }))
-      });
-      F.classNames = v.classNames;
-      const _ = F
+      i.displayName = "AccessibleIcon";
+      var d = i
     }
   }
 ]);

@@ -50,20 +50,20 @@ try {
               let e = function(e) {
                   if (S.paused || !h) return;
                   const t = e.target;
-                  h.contains(t) ? _.current = t : v(_.current, {
+                  h.contains(t) ? _.current = t : b(_.current, {
                     select: !0
                   })
                 },
                 t = function(e) {
                   if (S.paused || !h) return;
                   const t = e.relatedTarget;
-                  null !== t && (h.contains(t) || v(_.current, {
+                  null !== t && (h.contains(t) || b(_.current, {
                     select: !0
                   }))
                 },
                 n = function(e) {
                   if (document.activeElement === document.body)
-                    for (const t of e) t.removedNodes.length > 0 && v(h)
+                    for (const t of e) t.removedNodes.length > 0 && b(h)
                 };
               document.addEventListener("focusin", e), document.addEventListener("focusout", t);
               const o = new MutationObserver(n);
@@ -76,7 +76,7 @@ try {
             }
           }, [f, h, S.paused]), o.useEffect(() => {
             if (h) {
-              b.add(S);
+              v.add(S);
               const e = document.activeElement;
               if (!h.contains(e)) {
                 const t = new CustomEvent(d, a);
@@ -85,19 +85,19 @@ try {
                 } = {}) {
                   const n = document.activeElement;
                   for (const o of e)
-                    if (v(o, {
+                    if (b(o, {
                         select: t
                       }), document.activeElement !== n) return
                 }(l(h).filter(e => "A" !== e.tagName), {
                   select: !0
-                }), document.activeElement === e && v(h))
+                }), document.activeElement === e && b(h))
               }
               return () => {
                 h.removeEventListener(d, w), setTimeout(() => {
                   const t = new CustomEvent(i, a);
-                  h.addEventListener(i, T), h.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
+                  h.addEventListener(i, T), h.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
                     select: !0
-                  }), h.removeEventListener(i, T), b.remove(S)
+                  }), h.removeEventListener(i, T), v.remove(S)
                 }, 0)
               }
             }
@@ -113,9 +113,9 @@ try {
                   const t = l(e);
                   return [p(t, e), p(t.reverse(), e)]
                 }(t);
-              r && u ? e.shiftKey || o !== u ? e.shiftKey && o === r && (e.preventDefault(), n && v(u, {
+              r && u ? e.shiftKey || o !== u ? e.shiftKey && o === r && (e.preventDefault(), n && b(u, {
                 select: !0
-              })) : (e.preventDefault(), n && v(r, {
+              })) : (e.preventDefault(), n && b(r, {
                 select: !0
               })) : o === t && e.preventDefault()
             }
@@ -159,7 +159,7 @@ try {
         return !1
       }
 
-      function v(e, {
+      function b(e, {
         select: t = !1
       } = {}) {
         if (e && e.focus) {
@@ -172,7 +172,7 @@ try {
         }
       }
       f.displayName = "FocusScope";
-      var b = function() {
+      var v = function() {
         let e = [];
         return {
           add(t) {

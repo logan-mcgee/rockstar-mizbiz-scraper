@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "900ba138-b720-4466-a77f-625b94f7d7e8", e._sentryDebugIdIdentifier = "sentry-dbid-900ba138-b720-4466-a77f-625b94f7d7e8")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "3082ec35-dd15-4e18-ba00-12e5c9014953", e._sentryDebugIdIdentifier = "sentry-dbid-3082ec35-dd15-4e18-ba00-12e5c9014953")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [5565], {
+  [7152], {
     32654: (e, t, s) => {
       s.d(t, {
         RC: () => ge,
@@ -396,7 +396,7 @@ try {
             } else
               for (let r = Math.max(i - t, 0); r <= Math.min(n + t, s - 1); r += 1) r !== i && (r > n || r < i) && A(e, r)
         };
-      var N = {
+      var D = {
         updateSize: function() {
           const e = this;
           let t, s;
@@ -739,7 +739,7 @@ try {
         }
       };
 
-      function D(e) {
+      function N(e) {
         let {
           swiper: t,
           runCallbacks: s,
@@ -1554,7 +1554,7 @@ try {
       }
       const Q = {
           eventsEmitter: _,
-          update: N,
+          update: D,
           translate: {
             getTranslate: function(e) {
               void 0 === e && (e = this.isHorizontal() ? "x" : "y");
@@ -1642,7 +1642,7 @@ try {
                 {
                   params: r
                 } = s;
-              r.cssMode || (r.autoHeight && s.updateAutoHeight(), D({
+              r.cssMode || (r.autoHeight && s.updateAutoHeight(), N({
                 swiper: s,
                 runCallbacks: e,
                 direction: t,
@@ -1655,7 +1655,7 @@ try {
                 {
                   params: r
                 } = s;
-              s.animating = !1, r.cssMode || (s.setTransition(0), D({
+              s.animating = !1, r.cssMode || (s.setTransition(0), N({
                 swiper: s,
                 runCallbacks: e,
                 direction: t,
@@ -2576,9 +2576,16 @@ try {
     },
     87927: (e, t, s) => {
       s.d(t, {
+        DP: () => r.DP,
         NP: () => r.NP
       });
       var r = s(50078)
+    },
+    91633: (e, t, s) => {
+      s.d(t, {
+        m: () => r.m
+      });
+      var r = s(25778)
     },
     96369: (e, t, s) => {
       function r(e) {

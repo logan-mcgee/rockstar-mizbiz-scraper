@@ -48,7 +48,7 @@ try {
         createDevLocaleHook: () => L,
         createIntl: () => r.E,
         defineMessages: () => s.YK,
-        englishLocale: () => b,
+        englishLocale: () => f,
         getCookieValueByName: () => m,
         getLocale: () => g,
         linkWithLocale: () => j,
@@ -87,7 +87,7 @@ try {
           })];
           var n
         },
-        f = [{
+        b = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -179,9 +179,9 @@ try {
           iso: "zh-CN",
           store: "zh-CN"
         }],
-        b = f[0],
+        f = b[0],
         h = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        w = f,
+        w = b,
         g = () => {
           const {
             location: e
@@ -193,7 +193,7 @@ try {
           })(e), s = (e => {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
-          })(e), n = b;
+          })(e), n = f;
           let r = n;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = m(a);

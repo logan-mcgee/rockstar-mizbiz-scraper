@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "1108bfd3-42d0-4736-ad63-c74e77f27ce8", e._sentryDebugIdIdentifier = "sentry-dbid-1108bfd3-42d0-4736-ad63-c74e77f27ce8")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "3ba755c8-39ad-425e-80f4-643fe3f7a7bc", e._sentryDebugIdIdentifier = "sentry-dbid-3ba755c8-39ad-425e-80f4-643fe3f7a7bc")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [78, 2295, 2649, 4676, 7533], {
+  [2295, 2649, 4676, 7533, 8379], {
     8324: (e, t, r) => {
       "use strict";
       r.d(t, {
@@ -2655,6 +2655,19 @@ try {
         Tm: () => n
       })
     },
+    25778: (e, t, r) => {
+      "use strict";
+      r.d(t, {
+        m: () => o
+      });
+      var n = r(86825);
+      const i = (e, t) => {
+          const r = "more" === t ? n.xW.lightHc : n.xW.light,
+            i = "more" === t ? n.xW.darkHc : n.xW.dark;
+          return "dark" === e ? i : r
+        },
+        o = (e, t) => [n.xW.tokens, n.xW.typography, i(e, t)].join(" ")
+    },
     28215: (e, t, r) => {
       "use strict";
 
@@ -3576,7 +3589,7 @@ try {
           n = "more" === t ? o.xW.darkHc : o.xW.dark;
         return "dark" === e ? n : r
       };
-      var p = r(63341);
+      var p = r(64836);
       const v = () => p.IS_SERVER ? null : document.body,
         m = (0, s.forwardRef)(({
           children: e,

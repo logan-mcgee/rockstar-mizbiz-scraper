@@ -95,15 +95,15 @@ try {
             (0, r.invariant)(!!y, "Missing locale data for ".concat(p)), f(this, "localeData", y), (0, r.invariant)(void 0 !== y, "locale data for ".concat(d.locale, " does not exist."));
             var g = y.types;
             (0, r.invariant)("object" == typeof g && null != g, "invalid types data");
-            var v = g[u];
-            (0, r.invariant)("object" == typeof v && null != v, "invalid typeFields data");
-            var b = (0, r.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
+            var b = g[u];
+            (0, r.invariant)("object" == typeof b && null != b, "invalid typeFields data");
+            var v = (0, r.GetOption)(t, "languageDisplay", "string", ["dialect", "standard"], "dialect");
             if ("language" === u) {
-              f(this, "languageDisplay", b);
-              var h = g[u][b];
+              f(this, "languageDisplay", v);
+              var h = g[u][v];
               (0, r.invariant)("object" == typeof h && null != h, "invalid language typeFields data")
             }
-            var m = "language" === u ? g[u][b][c] : g[u][c];
+            var m = "language" === u ? g[u][v][c] : g[u][c];
             (0, r.invariant)("object" == typeof m && null != m, "invalid styleFields data"), f(this, "fields", m)
           }
           return e.supportedLocalesOf = function(a, t) {

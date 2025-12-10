@@ -172,7 +172,7 @@ try {
         ScrollProvider: () => Me.N2,
         coreScApiFetch: () => o.A,
         detectIfWeShouldAnchorSomewhere: () => ne,
-        downloadFile: () => we,
+        downloadFile: () => be,
         findPlatform: () => ie,
         generateTpaLink: () => ge,
         getAccentColor: () => r,
@@ -180,7 +180,7 @@ try {
         getCdnPrefix: () => me,
         getConfigForDomain: () => s.A,
         getCookieValueByName: () => de,
-        getGen8Consoles: () => be,
+        getGen8Consoles: () => we,
         getGen9Consoles: () => ye,
         getLanguageLabel: () => xe,
         getUriForGraphEnv: () => i,
@@ -226,7 +226,7 @@ try {
         useScroll: () => Me.Ll,
         useScrollTracking: () => O.GA,
         useScrollVisibility: () => O.JE,
-        useState: () => w,
+        useState: () => b,
         useWindowResize: () => He.G4,
         webSettingsReactive: () => Ve,
         withAutoRouteTracking: () => $e,
@@ -270,12 +270,12 @@ try {
           context: (0, h.createContext)({}),
           key: "graphContextGet"
         }),
-        w = () => (0, h.useContext)(m),
-        b = (0, u.A)({
+        b = () => (0, h.useContext)(m),
+        w = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "graphContextSet"
         }),
-        y = () => (0, h.useContext)(b),
+        y = () => (0, h.useContext)(w),
         v = ({
           children: e,
           state: t
@@ -290,7 +290,7 @@ try {
           }, [t]);
           return (0, g.jsx)(m.Provider, {
             value: t(),
-            children: (0, g.jsx)(b.Provider, {
+            children: (0, g.jsx)(w.Provider, {
               value: n,
               children: e
             })
@@ -595,7 +595,7 @@ try {
       }, {
         key: "prod",
         path: "https://media-rockstargames-com.akamaized.net"
-      }], me = (e = !0) => fe.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null, we = e => {
+      }], me = (e = !0) => fe.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null, be = e => {
         e.preventDefault();
         const t = e.currentTarget.href,
           n = (e => {
@@ -613,7 +613,7 @@ try {
         }).catch(e => {
           console.log(e)
         })
-      }, be = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name], ye = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name], ve = e => ye().includes(e), xe = e => {
+      }, we = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name], ye = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name], ve = e => ye().includes(e), xe = e => {
         const t = new Map([
           ["en-us", "English (United States)"],
           ["de-de", "Deutsch (Deutschland)"],

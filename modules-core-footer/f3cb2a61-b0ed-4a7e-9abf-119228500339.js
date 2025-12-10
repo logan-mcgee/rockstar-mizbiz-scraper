@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "89573364-436f-48b5-947f-fdc2d543ff1d", e._sentryDebugIdIdentifier = "sentry-dbid-89573364-436f-48b5-947f-fdc2d543ff1d")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f3cb2a61-b0ed-4a7e-9abf-119228500339", e._sentryDebugIdIdentifier = "sentry-dbid-f3cb2a61-b0ed-4a7e-9abf-119228500339")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -140,7 +140,7 @@ try {
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -158,7 +158,7 @@ try {
             signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${y}`
+            pingBearer: `https://${p}/${b}`
           }
         },
         a = [o({
@@ -307,12 +307,12 @@ try {
         vx: () => x,
         sb: () => S,
         Ym: () => i.A,
-        CA: () => E.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => c,
         ZC: () => l,
         sq: () => d,
         OH: () => v,
-        zP: () => y,
+        zP: () => b,
         Cb: () => f,
         N6: () => k,
         GA: () => M,
@@ -430,7 +430,7 @@ try {
             dispatch: e
           }), [])
         },
-        y = (e, t) => {
+        b = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)(() => {
             const n = p(e);
@@ -444,13 +444,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var E = n(89656),
-        b = (n(95342), n(17954));
+      var y = n(89656),
+        E = (n(95342), n(17954));
       const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, i.A)(), s = (0, b.t)(r);
+        } = (0, h.A)(), r = (0, i.A)(), s = (0, E.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -604,23 +604,23 @@ try {
               ...p,
               url: h
             }),
-            y = await (0, r.sc)(v);
+            b = await (0, r.sc)(v);
           if (u) {
-            if (w[y]?.response) return w[y].response;
-            if (w[y]?.loading) return {
+            if (w[b]?.response) return w[b].response;
+            if (w[b]?.loading) return {
               error: null,
               result: null
             };
-            w[y] = {
+            w[b] = {
               loading: !0
             }
           }
-          const E = await fetch(h, p),
-            b = await E.json();
-          return u && (w[y] = {
-            response: b,
+          const y = await fetch(h, p),
+            E = await y.json();
+          return u && (w[b] = {
+            response: E,
             loading: !1
-          }), b
+          }), E
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

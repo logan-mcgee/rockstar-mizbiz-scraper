@@ -95,7 +95,7 @@ try {
             onPointerDownOutside: u,
             onFocusOutside: c,
             onInteractOutside: v,
-            onDismiss: b,
+            onDismiss: h,
             ...w
           } = e, E = r.useContext(g), [D, N] = r.useState(null), O = D?.ownerDocument ?? globalThis?.document, [, _] = r.useState({}), C = (0, i.s)(t, e => N(e)), R = Array.from(E.layers), [x] = [...E.layersWithOutsidePointerEventsDisabled].slice(-1), A = R.indexOf(x), M = D ? R.indexOf(D) : -1, P = E.layersWithOutsidePointerEventsDisabled.size > 0, I = M >= A, T = function(e, t = globalThis?.document) {
             const n = (0, d.c)(e),
@@ -105,7 +105,7 @@ try {
               const e = e => {
                   if (e.target && !o.current) {
                     let r = function() {
-                      h("dismissableLayer.pointerDownOutside", n, o, {
+                      b("dismissableLayer.pointerDownOutside", n, o, {
                         discrete: !0
                       })
                     };
@@ -130,13 +130,13 @@ try {
           }(e => {
             const t = e.target,
               n = [...E.branches].some(e => e.contains(t));
-            I && !n && (u?.(e), v?.(e), e.defaultPrevented || b?.())
+            I && !n && (u?.(e), v?.(e), e.defaultPrevented || h?.())
           }, O), j = function(e, t = globalThis?.document) {
             const n = (0, d.c)(e),
               o = r.useRef(!1);
             return r.useEffect(() => {
               const e = e => {
-                e.target && !o.current && h("dismissableLayer.focusOutside", n, {
+                e.target && !o.current && b("dismissableLayer.focusOutside", n, {
                   originalEvent: e
                 }, {
                   discrete: !1
@@ -149,10 +149,10 @@ try {
             }
           }(e => {
             const t = e.target;
-            [...E.branches].some(e => e.contains(t)) || (c?.(e), v?.(e), e.defaultPrevented || b?.())
+            [...E.branches].some(e => e.contains(t)) || (c?.(e), v?.(e), e.defaultPrevented || h?.())
           }, O);
           return (0, f.U)(e => {
-            M === E.layers.size - 1 && (a?.(e), !e.defaultPrevented && b && (e.preventDefault(), b()))
+            M === E.layers.size - 1 && (a?.(e), !e.defaultPrevented && h && (e.preventDefault(), h()))
           }, O), r.useEffect(() => {
             if (D) return n && (0 === E.layersWithOutsidePointerEventsDisabled.size && (s = O.body.style.pointerEvents, O.body.style.pointerEvents = "none"), E.layersWithOutsidePointerEventsDisabled.add(D)), E.layers.add(D), y(), () => {
               n && 1 === E.layersWithOutsidePointerEventsDisabled.size && (O.body.style.pointerEvents = s)
@@ -180,7 +180,7 @@ try {
         document.dispatchEvent(e)
       }
 
-      function h(e, t, n, {
+      function b(e, t, n, {
         discrete: r
       }) {
         const o = n.originalEvent.target,
@@ -207,7 +207,7 @@ try {
           ref: s
         })
       }).displayName = "DismissableLayerBranch";
-      var b = n(56041),
+      var h = n(56041),
         w = n(55856),
         E = n(63155),
         D = e => {
@@ -483,7 +483,7 @@ try {
               1 === O && document.querySelectorAll("[data-radix-focus-guard]").forEach(e => e.remove()), O--
             }
           }, []), (0, p.jsxs)(p.Fragment, {
-            children: [(0, p.jsx)(b.FocusScope, {
+            children: [(0, p.jsx)(h.FocusScope, {
               asChild: !0,
               loop: !0,
               trapped: o,
