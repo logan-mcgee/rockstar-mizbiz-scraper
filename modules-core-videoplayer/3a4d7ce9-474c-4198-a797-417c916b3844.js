@@ -15,7 +15,7 @@ try {
   [4598], {
     2217: (e, a, t) => {
       t.r(a), t.d(a, {
-        AgeGate: () => f
+        AgeGate: () => g
       });
       var s = t(2295),
         n = t(2229),
@@ -30,23 +30,23 @@ try {
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
           inputs: "rockstargames-modules-core-videoplayerca3ab235303ed1b84f9c867fe5393c3a"
         },
-        g = Object.freeze({
+        f = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
         }),
-        f = (0, c.withTranslations)(({
+        g = (0, c.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
-          ga: f = {},
+          ga: g = {},
           t: m
         }) => {
           const {
             data: p
           } = (0, i.useRockstarUser)(), {
             track: y
-          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? g.PASSED : "0" === v ? g.FAILED : g.NOT_SUBMITTED);
+          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
@@ -54,9 +54,9 @@ try {
           return (0, n.useEffect)(() => {
             y({
               event: "age_gate_popup",
-              element_placement: f.element_placement ?? ""
+              element_placement: g.element_placement ?? ""
             })
-          }, []), h === g.PASSED || !1 === p?.isAMinor ? a : h === g.FAILED ? (0, s.jsxs)("div", {
+          }, []), h === f.PASSED || !1 === p?.isAMinor ? a : h === f.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: j,
             children: [t?.header, (0, s.jsx)("h2", {
@@ -86,10 +86,10 @@ try {
                   const a = (0, o.V)(new Date, t) >= e;
                   y(a ? {
                     event: "age_gate_passed",
-                    element_placement: f.element_placement ?? ""
+                    element_placement: g.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: f.element_placement ?? "",
+                    element_placement: g.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";

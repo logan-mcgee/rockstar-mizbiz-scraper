@@ -24,9 +24,9 @@ try {
             var n = String(e).split("."),
               t = n[0],
               l = !n[1],
-              d = t.slice(-1),
-              s = t.slice(-2);
-            return a ? "other" : 1 == e && l ? "one" : l && d >= 2 && d <= 4 && (s < 12 || s > 14) ? "few" : l && 1 != t && (0 == d || 1 == d) || l && d >= 5 && d <= 9 || l && s >= 12 && s <= 14 ? "many" : "other"
+              s = t.slice(-1),
+              d = t.slice(-2);
+            return a ? "other" : 1 == e && l ? "one" : l && s >= 2 && s <= 4 && (d < 12 || d > 14) ? "few" : l && 1 != t && (0 == s || 1 == s) || l && s >= 5 && s <= 9 || l && d >= 12 && d <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

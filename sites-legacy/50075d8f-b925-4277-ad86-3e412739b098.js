@@ -17,8 +17,8 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -41,8 +41,8 @@ try {
         u = "Premi {shortcut}",
         g = "Livello zoom",
         r = "{zoom}%",
-        h = "Scarica",
         f = "Scarica",
+        h = "Scarica",
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: h
         }
     }
   }

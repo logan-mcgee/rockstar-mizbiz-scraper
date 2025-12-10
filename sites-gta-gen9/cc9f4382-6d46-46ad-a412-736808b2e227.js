@@ -305,7 +305,7 @@ try {
         OH: () => p,
         zP: () => v,
         Cb: () => m,
-        N6: () => b,
+        N6: () => y,
         GA: () => M,
         JE: () => $,
         G4: () => k.G4
@@ -419,12 +419,12 @@ try {
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
       var E = n(89656),
-        y = (n(95342), n(95573));
-      const b = e => {
+        b = (n(95342), n(95573));
+      const y = e => {
         const {
           signup: t,
           login: n
-        } = (0, f.A)(), s = (0, a.A)(), r = (0, y.t)(s);
+        } = (0, f.A)(), s = (0, a.A)(), r = (0, b.t)(s);
         let o = "";
         return o += "lang=" + encodeURIComponent(r), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -606,12 +606,12 @@ try {
               loading: !0
             }
           }
-          const y = await fetch(h, p),
-            b = await y.json();
+          const b = await fetch(h, p),
+            y = await b.json();
           return u && (w[E] = {
-            response: b,
+            response: y,
             loading: !1
-          }), b
+          }), y
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

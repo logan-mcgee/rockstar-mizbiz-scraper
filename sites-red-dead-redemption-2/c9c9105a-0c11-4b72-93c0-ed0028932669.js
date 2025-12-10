@@ -21,10 +21,10 @@ try {
             ordinal: ["many", "other"]
           },
           fn: function(e, a) {
-            var d = String(e),
-              t = d.split(/[ce]/),
-              n = t[1] || 0,
-              l = String(n ? Number(t[0]) * Math.pow(10, n) : d).split("."),
+            var t = String(e),
+              d = t.split(/[ce]/),
+              n = d[1] || 0,
+              l = String(n ? Number(d[0]) * Math.pow(10, n) : t).split("."),
               o = l[0],
               s = !l[1],
               r = o.slice(-6);

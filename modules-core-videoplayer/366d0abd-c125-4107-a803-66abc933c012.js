@@ -18,29 +18,29 @@ try {
         useGSAP: () => u
       });
       var d = t(2229),
-        r = t(2828),
-        o = t.n(r);
-      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        a = t(2828),
+        r = t.n(a);
+      let o = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
-        c = [],
-        f = {},
-        l = o();
-      const u = (e, n = c) => {
-        let t = f;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : c) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : c), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        f = [],
+        l = {},
+        c = r();
+      const u = (e, n = f) => {
+        let t = l;
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: r,
-          revertOnUpdate: o
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, r)), y = (0, d.useRef)(e => i.current.add(null, e)), b = n && n.length && !o;
-        return b && a(() => (u.current = !0, () => i.current.revert()), c), a(() => {
-          if (e && i.current.add(e, r), !b || !u.current) return () => i.current.revert()
+          scope: a,
+          revertOnUpdate: r
+        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(c.context(() => {}, a)), y = (0, d.useRef)(e => i.current.add(null, e)), p = n && n.length && !r;
+        return p && o(() => (u.current = !0, () => i.current.revert()), f), o(() => {
+          if (e && i.current.add(e, a), !p || !u.current) return () => i.current.revert()
         }, n), {
           context: i.current,
           contextSafe: y.current
         }
       };
       u.register = e => {
-        l = e
+        c = e
       }, u.headless = !0
     }
   }

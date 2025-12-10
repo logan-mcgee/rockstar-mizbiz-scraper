@@ -18,7 +18,7 @@ try {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => f
+        useInView: () => b
       });
       var n = i(62229),
         s = Object.defineProperty,
@@ -164,16 +164,16 @@ try {
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...f
+            ...b
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...f
+            ...b
           }, e)
         }
       };
 
-      function f({
+      function b({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -186,14 +186,14 @@ try {
         onChange: h
       } = {}) {
         var u;
-        const [f, b] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
+        const [b, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!l,
           entry: void 0
         });
         p.current = h, n.useEffect(() => {
-          if (a || !f) return;
+          if (a || !b) return;
           let n;
-          return n = c(f, (e, t) => {
+          return n = c(b, (e, t) => {
             y({
               inView: e,
               entry: t
@@ -207,14 +207,14 @@ try {
           }, d), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, f, r, s, o, a, i, d, t]);
+        }, [Array.isArray(e) ? e.toString() : e, b, r, s, o, a, i, d, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = n.useRef(void 0);
-        f || !w || o || a || v.current === w || (v.current = w, y({
+        b || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!l,
           entry: void 0
         }));
-        const k = [b, g.inView, g.entry];
+        const k = [f, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

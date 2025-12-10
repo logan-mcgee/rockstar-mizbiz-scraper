@@ -13,24 +13,24 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [4120], {
-    9827: (e, d, o) => {
-      var t = o(44853);
-      d.H = t.createRoot, t.hydrateRoot
+    9827: (e, d, a) => {
+      var o = a(44853);
+      d.H = o.createRoot, o.hydrateRoot
     },
-    84120: (e, d, o) => {
-      o.r(d);
-      var t = o(42295),
-        n = o(9827),
-        a = o(9623),
-        s = o(2918),
-        l = o(95966),
-        r = o(56006);
-      const c = document.createElement("div");
-      document.querySelector("body").append(c), (0, n.H)(c).render((0, t.jsx)(l.ScrollProvider, {
-        children: (0, t.jsx)(a.BrowserRouter, {
+    84120: (e, d, a) => {
+      a.r(d);
+      var o = a(42295),
+        t = a(9827),
+        n = a(9623),
+        s = a(2918),
+        l = a(95966),
+        r = a(56006);
+      const f = document.createElement("div");
+      document.querySelector("body").append(f), (0, t.H)(f).render((0, o.jsx)(l.ScrollProvider, {
+        children: (0, o.jsx)(n.BrowserRouter, {
           basename: "/",
-          children: (0, t.jsx)(s.RockstarUserProvider, {
-            children: (0, t.jsx)(r.A, {})
+          children: (0, o.jsx)(s.RockstarUserProvider, {
+            children: (0, o.jsx)(r.A, {})
           })
         })
       }))

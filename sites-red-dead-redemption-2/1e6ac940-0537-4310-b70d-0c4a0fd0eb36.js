@@ -40,27 +40,27 @@ try {
           children: a,
           options: t = {},
           ga: u = {},
-          t: m
+          t: b
         }) => {
           const {
-            data: p
+            data: m
           } = (0, c.Wx)(), {
-            track: b
+            track: p
           } = (0, c.h)(), h = (0, o.getCookieValueByName)("UAGC"), [y, _] = (0, s.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
           var w;
           const [x, I] = (0, s.useState)(), D = (0, s.createRef)(), j = (0, s.createRef)(), k = (0, s.createRef)(), {
             style: v
           } = t;
           return (0, s.useEffect)(() => {
-            b({
+            p({
               event: "age_gate_popup",
               element_placement: u.element_placement ?? ""
             })
-          }, []), y === g.PASSED || !1 === p?.isAMinor ? a : y === g.FAILED ? (0, n.jsxs)("div", {
+          }, []), y === g.PASSED || !1 === m?.isAMinor ? a : y === g.FAILED ? (0, n.jsxs)("div", {
             className: f.agegate,
             style: v,
             children: [t?.header, (0, n.jsx)("h2", {
-              children: m("agegate_fail")
+              children: b("agegate_fail")
             })]
           }) : (0, n.jsxs)("div", {
             className: f.agegate,
@@ -72,7 +72,7 @@ try {
               } : {}
             }), !1 === x && (0, n.jsx)("h5", {
               className: f.error,
-              children: m("Please enter a valid age")
+              children: b("Please enter a valid age")
             }), (0, n.jsxs)("form", {
               name: "agegate",
               onSubmit: async a => {
@@ -84,7 +84,7 @@ try {
                   s = (0, r.f)(t) && (0, l.d)(t, n);
                 if (I(s), s) {
                   const a = (0, i.V)(new Date, t) >= e;
-                  b(a ? {
+                  p(a ? {
                     event: "age_gate_passed",
                     element_placement: u.element_placement ?? ""
                   } : {
@@ -98,36 +98,36 @@ try {
               },
               "data-testid": "agegate-form",
               children: [(0, n.jsx)("h5", {
-                children: m("agegate_header")
+                children: b("agegate_header")
               }), (0, n.jsxs)("div", {
                 className: f.inputs,
                 children: [(0, n.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [m("Month"), (0, n.jsx)("input", {
+                  children: [b("Month"), (0, n.jsx)("input", {
                     id: "monthInput",
                     ref: D,
-                    placeholder: m("MM"),
+                    placeholder: b("MM"),
                     maxLength: 2,
                     type: "number",
                     required: !0
                   })]
                 }), (0, n.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [m("Day"), (0, n.jsx)("input", {
+                  children: [b("Day"), (0, n.jsx)("input", {
                     id: "dayInput",
                     ref: j,
-                    placeholder: m("DD"),
+                    placeholder: b("DD"),
                     maxLength: 2,
                     type: "number",
                     required: !0
                   })]
                 }), (0, n.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [m("Year"), (0, n.jsx)("input", {
+                  children: [b("Year"), (0, n.jsx)("input", {
                     id: "yearInput",
                     ref: k,
                     className: f.year,
-                    placeholder: m("YYYY"),
+                    placeholder: b("YYYY"),
                     maxLength: 4,
                     type: "number",
                     required: !0
@@ -135,7 +135,7 @@ try {
                 }), (0, n.jsx)("button", {
                   type: "submit",
                   className: f.submit,
-                  children: m("SUBMIT")
+                  children: b("SUBMIT")
                 })]
               })]
             }), t?.footer]

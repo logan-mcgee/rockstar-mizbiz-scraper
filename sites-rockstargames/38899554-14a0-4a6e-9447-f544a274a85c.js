@@ -16,7 +16,7 @@ try {
     29315: (e, n, a) => {
       "use strict";
       a.d(n, {
-        A: () => d
+        A: () => s
       });
       var i = a(42295),
         t = a(62229);
@@ -45,7 +45,7 @@ try {
           }) : this.props.children
         }
       }
-      const d = (e, n = null, a = !1) => {
+      const s = (e, n = null, a = !1) => {
         const t = t => (0, i.jsx)(r, {
           header: n,
           hidden: a,
@@ -310,19 +310,19 @@ try {
         };
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var r = i[n] || new Set,
-          d = new Set,
-          s = new Set;
+          s = new Set,
+          d = new Set;
         for (r.forEach(function(e) {
-            s.add(e)
-          }); s.size > 0;) {
-          var l = s;
-          s = new Set, l.forEach(function(e) {
-            d.has(e) || (d.add(e), (i[e] || new Set).forEach(function(e) {
-              s.add(e)
+            d.add(e)
+          }); d.size > 0;) {
+          var l = d;
+          d = new Set, l.forEach(function(e) {
+            s.has(e) || (s.add(e), (i[e] || new Set).forEach(function(e) {
+              d.add(e)
             }))
           })
         }
-        return d.forEach(function(n) {
+        return s.forEach(function(n) {
           var i = t(e, n);
           i && a.definitions.push(i)
         }), a
@@ -336,18 +336,18 @@ try {
       var i = a(42295),
         t = a(62229),
         r = a(92440),
-        d = a(95966),
-        s = a(29315),
+        s = a(95966),
+        d = a(29315),
         l = a(53169);
-      const o = (0, s.A)(({
+      const o = (0, d.A)(({
         componentsForTinaParser: e,
         root: n,
         url: a,
-        setBrand: s
+        setBrand: d
       }) => {
         const {
           data: o
-        } = (0, d.useQuery)(l.MetaUrlInfo, {
+        } = (0, s.useQuery)(l.MetaUrlInfo, {
           variables: {
             url: a
           },
@@ -356,7 +356,7 @@ try {
         return (0, t.useEffect)(() => {
           const e = o?.metaUrlInfo?.tina ?? null,
             n = e?.payload?.meta?.brand ?? null;
-          n && s?.(n), e && u(e)
+          n && d?.(n), e && u(e)
         }, [o]), c ? (0, i.jsx)("div", {
           "data-root": n,
           className: "rockstargames-sites-rockstargamesb682ae1b0f926c7f6b70f0415bef334f",

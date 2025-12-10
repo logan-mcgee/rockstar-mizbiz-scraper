@@ -18,14 +18,14 @@ try {
       a.r(t), a.d(t, {
         Avatar: () => g,
         Content: () => p,
-        PlatformTag: () => b,
+        PlatformTag: () => u,
         PlatformTagSizes: () => i.YT,
         Platforms: () => i.lv,
         RankContent: () => v,
         Root: () => f,
         RpCategory: () => h,
         TextContent: () => x,
-        TopRow: () => u,
+        TopRow: () => b,
         UserName: () => k
       });
       var s = a(42295),
@@ -98,7 +98,7 @@ try {
             ...m
           })
         }),
-        u = (0, r.forwardRef)(function({
+        b = (0, r.forwardRef)(function({
           children: e,
           testId: t,
           ...a
@@ -113,7 +113,7 @@ try {
             children: e
           })
         }),
-        b = ({
+        u = ({
           testId: e,
           ...t
         }) => {
@@ -626,7 +626,7 @@ try {
     98357: (e, t, a) => {
       "use strict";
       a.d(t, {
-        U: () => b,
+        U: () => u,
         A: () => k
       });
       var s = a(42295),
@@ -685,7 +685,7 @@ try {
             }
           }
         },
-        u = {
+        b = {
           applestore: "rockstargames-sites-gta-gen9e68d88a0e9f24a2f0bcf7da8a0e1b388",
           buttonText: "rockstargames-sites-gta-gen9c240c5768c5acdd2bc6022568ef877f0",
           closeButton: "rockstargames-sites-gta-gen9ee432a5defea7b8181973d3a9ad3190b",
@@ -709,7 +709,7 @@ try {
           xboxone: "rockstargames-sites-gta-gen9c03015dbaf51a94ba1826bb21f5d040f",
           xboxseriesxs: "rockstargames-sites-gta-gen9dde1b553776bdd59373d22a43479de29"
         },
-        b = ({
+        u = ({
           buttonText: e = "",
           link: t = "",
           platform: r = "",
@@ -719,14 +719,14 @@ try {
           ...i
         }) => {
           const m = o ?? (t.startsWith(document.location.origin) ? "_self" : "_blank"),
-            l = [u.platformButton, u[r]].join(" "),
+            l = [b.platformButton, b[r]].join(" "),
             f = r ? a(5328)(`./${r}.svg`) : null,
             g = (0, s.jsxs)(s.Fragment, {
               children: [f ? (0, s.jsx)("img", {
                 src: f,
                 alt: e
               }) : "", !f && (0, s.jsx)("div", {
-                className: u.buttonText,
+                className: b.buttonText,
                 children: e
               })]
             });
@@ -836,9 +836,9 @@ try {
             }
           };
           return (0, s.jsxs)("div", {
-            className: l()(u.container, c),
+            className: l()(b.container, c),
             children: [(0, s.jsx)(o.motion.div, {
-              className: u.content,
+              className: b.content,
               animate: C ? "open" : "close",
               variants: g,
               "aria-hidden": !!C,
@@ -846,13 +846,13 @@ try {
             }), (0, s.jsxs)(o.motion.div, {
               "data-variant": e,
               "data-animating": N,
-              className: l()(C ? u.expandedButton : u.unexpandedButton),
+              className: l()(C ? b.expandedButton : b.unexpandedButton),
               animate: C ? "open" : "closed",
               variants: p,
               initial: !1,
               ref: R,
               children: [(0, s.jsx)(o.motion.button, {
-                className: l()(u.buttonText, n),
+                className: l()(b.buttonText, n),
                 "aria-expanded": C,
                 onClick: () => {
                   if (z(!0), j(!C), !C) switch (v) {
@@ -896,7 +896,7 @@ try {
                 tabIndex: C ? -1 : 0,
                 children: "string" == typeof t ? t : "Subscribe"
               }), (0, s.jsx)("div", {
-                className: u.expandedArea,
+                className: b.expandedArea,
                 ref: I,
                 "data-animate": C ? "open" : "closed",
                 "aria-hidden": !C,
@@ -916,7 +916,7 @@ try {
                   },
                   children: (0, s.jsxs)("div", {
                     children: [(0, s.jsx)("button", {
-                      className: u.closeButton,
+                      className: b.closeButton,
                       onClick: () => {
                         j(!1), z(!0), L({
                           element_placement: h?.toLowerCase(),
@@ -931,8 +931,8 @@ try {
                         alt: "Close"
                       })
                     }), (0, s.jsx)("div", {
-                      className: u.platformButtons,
-                      children: k.length ? k.map(e => (0, s.jsx)(b, {
+                      className: b.platformButtons,
+                      children: k.length ? k.map(e => (0, s.jsx)(u, {
                         buttonText: e.buttonText ?? (0, i.findPlatform)(e.platform)?.friendlyName ?? "",
                         link: e.href,
                         platform: e.platform,

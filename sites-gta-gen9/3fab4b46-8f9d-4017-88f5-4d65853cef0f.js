@@ -26,32 +26,32 @@ try {
       function d(e) {
         const n = e + "CollectionProvider",
           [t, d] = (0, o.A)(n),
-          [c, l] = t(n, {
+          [l, u] = t(n, {
             collectionRef: {
               current: null
             },
             itemMap: new Map
           }),
-          u = e => {
+          c = e => {
             const {
               scope: n,
               children: t
             } = e, o = r.useRef(null), i = r.useRef(new Map).current;
-            return (0, a.jsx)(c, {
+            return (0, a.jsx)(l, {
               scope: n,
               itemMap: i,
               collectionRef: o,
               children: t
             })
           };
-        u.displayName = n;
+        c.displayName = n;
         const f = e + "CollectionSlot",
           m = (0, s.TL)(f),
           p = r.forwardRef((e, n) => {
             const {
               scope: t,
               children: r
-            } = e, o = l(f, t), s = (0, i.s)(n, o.collectionRef);
+            } = e, o = u(f, t), s = (0, i.s)(n, o.collectionRef);
             return (0, a.jsx)(m, {
               ref: s,
               children: r
@@ -59,35 +59,35 @@ try {
           });
         p.displayName = f;
         const y = e + "CollectionItemSlot",
-          g = "data-radix-collection-item",
-          w = (0, s.TL)(y),
-          N = r.forwardRef((e, n) => {
+          b = "data-radix-collection-item",
+          g = (0, s.TL)(y),
+          w = r.forwardRef((e, n) => {
             const {
               scope: t,
               children: o,
               ...s
-            } = e, d = r.useRef(null), c = (0, i.s)(n, d), u = l(y, t);
-            return r.useEffect(() => (u.itemMap.set(d, {
+            } = e, d = r.useRef(null), l = (0, i.s)(n, d), c = u(y, t);
+            return r.useEffect(() => (c.itemMap.set(d, {
               ref: d,
               ...s
             }), () => {
-              u.itemMap.delete(d)
-            })), (0, a.jsx)(w, {
-              [g]: "",
-              ref: c,
+              c.itemMap.delete(d)
+            })), (0, a.jsx)(g, {
+              [b]: "",
+              ref: l,
               children: o
             })
           });
-        return N.displayName = y, [{
-          Provider: u,
+        return w.displayName = y, [{
+          Provider: c,
           Slot: p,
-          ItemSlot: N
+          ItemSlot: w
         }, function(n) {
-          const t = l(e + "CollectionConsumer", n);
+          const t = u(e + "CollectionConsumer", n);
           return r.useCallback(() => {
             const e = t.collectionRef.current;
             if (!e) return [];
-            const n = Array.from(e.querySelectorAll(`[${g}]`));
+            const n = Array.from(e.querySelectorAll(`[${b}]`));
             return Array.from(t.itemMap.values()).sort((e, t) => n.indexOf(e.ref.current) - n.indexOf(t.ref.current))
           }, [t.collectionRef, t.itemMap])
         }, d]
@@ -106,9 +106,9 @@ try {
             present: n,
             children: t
           } = e, s = function(e) {
-            const [n, t] = r.useState(), o = r.useRef(null), s = r.useRef(e), d = r.useRef("none"), c = e ? "mounted" : "unmounted", [l, u] = function(e, n) {
+            const [n, t] = r.useState(), o = r.useRef(null), s = r.useRef(e), d = r.useRef("none"), l = e ? "mounted" : "unmounted", [u, c] = function(e, n) {
               return r.useReducer((e, t) => n[e][t] ?? e, e)
-            }(c, {
+            }(l, {
               mounted: {
                 UNMOUNT: "unmounted",
                 ANIMATION_OUT: "unmountSuspended"
@@ -123,22 +123,22 @@ try {
             });
             return r.useEffect(() => {
               const e = a(o.current);
-              d.current = "mounted" === l ? e : "none"
-            }, [l]), (0, i.N)(() => {
+              d.current = "mounted" === u ? e : "none"
+            }, [u]), (0, i.N)(() => {
               const n = o.current,
                 t = s.current;
               if (t !== e) {
                 const r = d.current,
                   o = a(n);
-                u(e ? "MOUNT" : "none" === o || "none" === n?.display ? "UNMOUNT" : t && r !== o ? "ANIMATION_OUT" : "UNMOUNT"), s.current = e
+                c(e ? "MOUNT" : "none" === o || "none" === n?.display ? "UNMOUNT" : t && r !== o ? "ANIMATION_OUT" : "UNMOUNT"), s.current = e
               }
-            }, [e, u]), (0, i.N)(() => {
+            }, [e, c]), (0, i.N)(() => {
               if (n) {
                 let e;
                 const t = n.ownerDocument.defaultView ?? window,
                   r = r => {
                     const i = a(o.current).includes(CSS.escape(r.animationName));
-                    if (r.target === n && i && (u("ANIMATION_END"), !s.current)) {
+                    if (r.target === n && i && (c("ANIMATION_END"), !s.current)) {
                       const r = n.style.animationFillMode;
                       n.style.animationFillMode = "forwards", e = t.setTimeout(() => {
                         "forwards" === n.style.animationFillMode && (n.style.animationFillMode = r)
@@ -152,22 +152,22 @@ try {
                   t.clearTimeout(e), n.removeEventListener("animationstart", i), n.removeEventListener("animationcancel", r), n.removeEventListener("animationend", r)
                 }
               }
-              u("ANIMATION_END")
-            }, [n, u]), {
-              isPresent: ["mounted", "unmountSuspended"].includes(l),
+              c("ANIMATION_END")
+            }, [n, c]), {
+              isPresent: ["mounted", "unmountSuspended"].includes(u),
               ref: r.useCallback(e => {
                 o.current = e ? getComputedStyle(e) : null, t(e)
               }, [])
             }
           }(n), d = "function" == typeof t ? t({
             present: s.isPresent
-          }) : r.Children.only(t), c = (0, o.s)(s.ref, function(e) {
+          }) : r.Children.only(t), l = (0, o.s)(s.ref, function(e) {
             let n = Object.getOwnPropertyDescriptor(e.props, "ref")?.get,
               t = n && "isReactWarning" in n && n.isReactWarning;
             return t ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, t = n && "isReactWarning" in n && n.isReactWarning, t ? e.props.ref : e.props.ref || e.ref)
           }(d));
           return "function" == typeof t || s.isPresent ? r.cloneElement(d, {
-            ref: c
+            ref: l
           }) : null
         };
 

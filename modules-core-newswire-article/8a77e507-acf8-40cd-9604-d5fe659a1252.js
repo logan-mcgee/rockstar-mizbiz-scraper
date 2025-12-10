@@ -31,7 +31,7 @@ try {
         lv: () => i,
         wC: () => a,
         PE: () => x,
-        rB: () => c,
+        rB: () => d,
         tC: () => w,
         yh: () => v,
         Ap: () => p,
@@ -108,13 +108,13 @@ try {
         }),
         l = Object.freeze(Object.values(i));
 
-      function c(e) {
+      function d(e) {
         if (!e) return;
         if (e instanceof s) return e;
         const t = e.toString().toLowerCase();
         return l.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
-      var d = o(6306),
+      var c = o(6306),
         u = o(12914);
       const p = e => {
           const t = document.cookie.split("; "),
@@ -124,7 +124,7 @@ try {
           return a
         },
         h = (e, t) => {
-          e && void 0 !== t && (0, d.canStoreCookie)(e) && p(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,u.F)()}; path=/;`)
+          e && void 0 !== t && (0, c.canStoreCookie)(e) && p(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,u.F)()}; path=/;`)
         };
       var g = o(81788),
         m = o(45547);
@@ -220,7 +220,7 @@ try {
         mutateWebSettings: () => fe,
         newswirePost: () => G,
         oneTrustInit: () => $,
-        safeStyles: () => d,
+        safeStyles: () => c,
         scrollToElement: () => q.PA,
         setContextItem: () => u.A,
         setCookieValue: () => q.My,
@@ -257,7 +257,7 @@ try {
         useState: () => f,
         useWindowResize: () => ye.G4,
         webSettingsReactive: () => we,
-        withAutoRouteTracking: () => de,
+        withAutoRouteTracking: () => ce,
         withGtmTracking: () => Y,
         withMediaBasedProps: () => K,
         withReactiveState: () => x,
@@ -284,9 +284,9 @@ try {
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
       var l = o(16188),
-        c = o.n(l);
-      const d = e => {
-        const t = c().clone(e);
+        d = o.n(l);
+      const c = e => {
+        const t = d().clone(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
       var u = o(9482),
@@ -488,7 +488,7 @@ try {
             }), t) : t
           };
           return (0, g.useEffect)(() => {
-            const e = c().debounce(() => {
+            const e = d().debounce(() => {
               a(r(t))
             }, o);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -545,11 +545,11 @@ query Translations($locale: String!, $config: String!) {
           })
         };
       var le = o(17954),
-        ce = o(9623);
-      const de = e => t => ((e, t) => {
+        de = o(9623);
+      const ce = e => t => ((e, t) => {
           const {
             pathname: o
-          } = (0, ce.useLocation)();
+          } = (0, de.useLocation)();
           return (0, g.useEffect)(() => {
             Q({
               event: "trackPageview"
@@ -612,23 +612,23 @@ query Translations($locale: String!, $config: String!) {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function d(e, t, o) {
         var n, r = {},
-          c = null,
-          d = null;
-        for (n in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (r[n] = t[n]);
+          d = null,
+          c = null;
+        for (n in void 0 !== o && (d = "" + o), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (c = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (r[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === r[n] && (r[n] = t[n]);
         return {
           $$typeof: a,
           type: e,
-          key: c,
-          ref: d,
+          key: d,
+          ref: c,
           props: r,
           _owner: i.current
         }
       }
-      t.Fragment = r, t.jsx = c, t.jsxs = c
+      t.Fragment = r, t.jsx = d, t.jsxs = d
     },
     79867: (e, t, o) => {
       o.d(t, {
@@ -685,9 +685,9 @@ query Translations($locale: String!, $config: String!) {
         s = o(75102),
         i = o(80701),
         l = o(66591),
-        c = o(46277),
-        d = o(16188),
-        u = o.n(d),
+        d = o(46277),
+        c = o(16188),
+        u = o.n(c),
         p = o(56088);
       const h = (e, t) => {
           const o = (0, p.Ym)(),
@@ -706,7 +706,7 @@ query Translations($locale: String!, $config: String!) {
               loading: s,
               error: i,
               ...l
-            } = (0, c.IT)(e, n);
+            } = (0, d.IT)(e, n);
           return (0, a.useEffect)(() => {
             if (r && n.setTitleDataPath) {
               const e = u().get(r, n.setTitleDataPath) ?? null;

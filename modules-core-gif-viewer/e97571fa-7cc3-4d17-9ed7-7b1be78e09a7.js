@@ -13,14 +13,14 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [2295], {
-    2295: (e, o, d) => {
-      e.exports = d(9245)
+    2295: (e, o, r) => {
+      e.exports = r(9245)
     },
-    9245: (e, o, d) => {
-      var r = d(2229),
-        n = Symbol.for("react.element"),
-        t = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+    9245: (e, o, r) => {
+      var n = r(2229),
+        t = Symbol.for("react.element"),
+        d = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        a = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -28,15 +28,15 @@ try {
           __source: !0
         };
 
-      function s(e, o, d) {
-        var r, s = {},
+      function s(e, o, r) {
+        var n, s = {},
           l = null,
           i = null;
-        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !f.hasOwnProperty(r) && (s[r] = o[r]);
+        for (n in void 0 !== r && (l = "" + r), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, n) && !f.hasOwnProperty(n) && (s[n] = o[n]);
         if (e && e.defaultProps)
-          for (r in o = e.defaultProps) void 0 === s[r] && (s[r] = o[r]);
+          for (n in o = e.defaultProps) void 0 === s[n] && (s[n] = o[n]);
         return {
-          $$typeof: n,
+          $$typeof: t,
           type: e,
           key: l,
           ref: i,

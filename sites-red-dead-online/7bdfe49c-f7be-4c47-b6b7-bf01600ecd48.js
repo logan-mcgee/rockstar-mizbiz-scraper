@@ -17,14 +17,14 @@ try {
       "use strict";
       var o = t(85126);
 
-      function s() {}
-
       function a() {}
-      a.resetWarningCache = s, e.exports = function() {
-        function e(e, n, t, s, a, d) {
-          if (d !== o) {
-            var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw r.name = "Invariant Violation", r
+
+      function s() {}
+      s.resetWarningCache = a, e.exports = function() {
+        function e(e, n, t, a, s, r) {
+          if (r !== o) {
+            var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw d.name = "Invariant Violation", d
           }
         }
 
@@ -52,8 +52,8 @@ try {
           oneOfType: n,
           shape: n,
           exact: n,
-          checkPropTypes: a,
-          resetWarningCache: s
+          checkPropTypes: s,
+          resetWarningCache: a
         };
         return t.PropTypes = t, t
       }

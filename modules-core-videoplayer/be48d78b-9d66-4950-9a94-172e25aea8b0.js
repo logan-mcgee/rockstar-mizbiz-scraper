@@ -23,8 +23,8 @@ try {
         l = t(2649),
         o = t(1915),
         d = t(3497),
-        c = t(5966),
-        i = t(2918);
+        i = t(5966),
+        c = t(2918);
       const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,7 +35,7 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, c.withTranslations)(({
+        g = (0, i.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
@@ -44,9 +44,9 @@ try {
         }) => {
           const {
             data: m
-          } = (0, i.useRockstarUser)(), {
+          } = (0, c.useRockstarUser)(), {
             track: y
-          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [_, h] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+          } = (0, c.useGtmTrack)(), b = (0, i.getCookieValueByName)("UAGC"), [_, h] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), E = (0, n.createRef)(), {
             style: j
@@ -93,7 +93,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const r = a ? "1" : "0";
-                  (0, c.setCookieValue)("UAGC", r), h(r)
+                  (0, i.setCookieValue)("UAGC", r), h(r)
                 }
               },
               "data-testid": "agegate-form",
@@ -158,23 +158,23 @@ try {
           __source: !0
         };
 
-      function c(e, a, t) {
+      function i(e, a, t) {
         var r, s = {},
-          c = null,
-          i = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (s[r] = a[r]);
+          i = null,
+          c = null;
+        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (c = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (s[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === s[r] && (s[r] = a[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: i,
+          key: i,
+          ref: c,
           props: s,
           _owner: o.current
         }
       }
-      a.Fragment = s, a.jsx = c, a.jsxs = c
+      a.Fragment = s, a.jsx = i, a.jsxs = i
     }
   }
 ]);

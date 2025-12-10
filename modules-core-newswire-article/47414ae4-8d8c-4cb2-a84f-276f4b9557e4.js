@@ -180,7 +180,7 @@ try {
       });
       a(24325), a(95966), a(84343), a(43582);
       var u = a(93935);
-      const g = ({
+      const b = ({
           game: e = null,
           parent: t = null
         }) => {
@@ -271,12 +271,12 @@ try {
             })
           }
         },
-        b = (e, t = "0") => (0, n.Q)({
+        g = (e, t = "0") => (0, n.Q)({
           title: `Item ${e}`,
           image: (0, n.Q)(n.m9),
           _template: t
         }),
-        h = ({
+        f = ({
           name: e = "columns"
         }) => ({
           name: e,
@@ -300,7 +300,7 @@ try {
             }
           }
         }),
-        f = ({
+        h = ({
           game: e = null
         }) => ({
           name: "discountsGridList",
@@ -318,7 +318,7 @@ try {
               value: "coupons",
               label: "Coupons"
             }]
-          }, h({
+          }, f({
             name: "discountsGridList.columns"
           }), (0, n.Xt)({
             game: e,
@@ -333,7 +333,7 @@ try {
               desktop: 1
             },
             discountsGridList: {
-              content: [b(1), b(2), b(3), b(4)]
+              content: [g(1), g(2), g(3), g(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -346,7 +346,7 @@ try {
           name: "limitedGridList",
           label: "Limited Time Items Grid",
           component: "group",
-          fields: [(0, n.om)(), h({
+          fields: [(0, n.om)(), f({
             name: "limitedGridList.columns"
           }), (0, n.Xt)({
             game: e,
@@ -360,7 +360,7 @@ try {
               desktop: 1
             },
             limitedGridList: {
-              content: [b(1), b(2), b(3), b(4)]
+              content: [g(1), g(2), g(3), g(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -405,7 +405,7 @@ try {
             name: "Large Carousel",
             noInfiniteScroll: !1,
             limitedList: {
-              content: [b(1), b(2), b(3), b(4)]
+              content: [g(1), g(2), g(3), g(4)]
             }
           }),
           itemProps: e => (0, n.Rv)(e, {
@@ -424,7 +424,7 @@ try {
                   game: t
                 }), w({
                   game: t
-                }), f({
+                }), h({
                   game: t
                 })]
               };
@@ -455,11 +455,11 @@ try {
                 }, v({
                   game: t,
                   label: "Discount Items Carousel"
-                }), f({
+                }), h({
                   game: t
                 }), m({
                   parent: e
-                }), g({
+                }), b({
                   game: t
                 })]
               }
@@ -660,7 +660,7 @@ try {
               label: "Top Text Section",
               component: "html"
             }), (0, n.sE)(e)]
-          }, g(e), {
+          }, b(e), {
             name: "bottom",
             label: "Bottom Section",
             component: "group",
@@ -901,10 +901,10 @@ try {
           marketingAuthTLD: p
         }) => {
           const u = n?.apiHost ?? e,
-            g = n?.authHost ?? t,
-            b = n?.cdnBase ?? d,
-            h = n?.clientId ?? a,
-            f = l?.marketingAuthTLD ?? p,
+            b = n?.authHost ?? t,
+            g = n?.cdnBase ?? d,
+            f = n?.clientId ?? a,
+            h = l?.marketingAuthTLD ?? p,
             w = n?.scHost ?? r,
             v = l?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
@@ -912,19 +912,19 @@ try {
             graphEnv: n?.graphEnv ?? i,
             host: w,
             hostname: m,
-            cdnBase: b,
+            cdnBase: g,
             key: c,
-            clientId: h,
+            clientId: f,
             cms: `https://${o}.rockstargames.com/graphql`,
-            authHost: g,
+            authHost: b,
             queryManifest: s,
             scBase: `https://${w}.rockstargames.com/`,
-            login: `https://${g}.rockstargames.com/connect/authorize/${h}`,
-            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${h}`,
-            signup: `https://${g}.rockstargames.com/create/?cid=${h}`,
-            gateway: `https://${f}/auth/gateway.json`,
-            logout: `https://${f}/auth/sc-auth-logout`,
-            pingBearer: `https://${f}/${v}`
+            login: `https://${b}.rockstargames.com/connect/authorize/${f}`,
+            silentCheck: `https://${b}.rockstargames.com/connect/cors/check/${f}`,
+            signup: `https://${b}.rockstargames.com/create/?cid=${f}`,
+            gateway: `https://${h}/auth/gateway.json`,
+            logout: `https://${h}/auth/sc-auth-logout`,
+            pingBearer: `https://${h}/${v}`
           }
         },
         i = [o({

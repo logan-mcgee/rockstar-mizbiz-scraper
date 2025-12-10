@@ -30,13 +30,13 @@ try {
         return function e(n, c, l) {
           l = l || 1, Object.keys(n).forEach(function(d) {
             const u = n[d],
-              p = r.safe && Array.isArray(u),
-              f = Object.prototype.toString.call(u),
-              y = t(u),
-              m = "[object Object]" === f || "[object Array]" === f,
-              b = c ? c + o + a(d) : a(d);
-            if (!p && !y && m && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, b, l + 1);
-            i[b] = u
+              f = r.safe && Array.isArray(u),
+              p = Object.prototype.toString.call(u),
+              b = t(u),
+              y = "[object Object]" === p || "[object Array]" === p,
+              m = c ? c + o + a(d) : a(d);
+            if (!f && !b && y && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, m, l + 1);
+            i[m] = u
           })
         }(e), i
       }
@@ -66,15 +66,15 @@ try {
           const n = t.split(a).map(c);
           let r = d(n.shift()),
             u = d(n[0]),
-            p = l;
+            f = l;
           for (; void 0 !== u;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(p[r]),
+            const e = Object.prototype.toString.call(f[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!i && !t && void 0 !== p[r]) return;
-            (i && !t || !i && null == p[r]) && (p[r] = "number" != typeof u || s.object ? {} : []), p = p[r], n.length > 0 && (r = d(n.shift()), u = d(n[0]))
+            if (!i && !t && void 0 !== f[r]) return;
+            (i && !t || !i && null == f[r]) && (f[r] = "number" != typeof u || s.object ? {} : []), f = f[r], n.length > 0 && (r = d(n.shift()), u = d(n[0]))
           }
-          p[r] = e(o[t], s)
+          f[r] = e(o[t], s)
         }), l
       }
     },
@@ -83,14 +83,14 @@ try {
       n.r(t), n.d(t, {
         InViewTracker: () => _,
         TinaParser: () => w,
-        TinaPayloadProvider: () => p.o,
+        TinaPayloadProvider: () => f.o,
         recursiveNestedTemplates: () => T,
         useGenerateCdnSource: () => S.jS,
         useGetCdnSource: () => S.C1,
         useImageParser: () => S.S1,
         useTinaComponents: () => u,
-        useTinaPayload: () => p.i,
-        useTranslations: () => b
+        useTinaPayload: () => f.i,
+        useTranslations: () => m
       });
       var r = n(42295),
         o = n(62229),
@@ -112,11 +112,11 @@ try {
           children: e
         }),
         u = () => (0, o.useContext)(c);
-      var p = n(74767),
-        f = n(90287),
-        y = n.n(f),
-        m = n(42783);
-      const b = ({
+      var f = n(74767),
+        p = n(90287),
+        b = n.n(p),
+        y = n(42783);
+      const m = ({
         payload: e,
         variables: t
       }) => {
@@ -125,7 +125,7 @@ try {
             return a().cloneDeepWith(e, (e, r, o) => {
               r === t && e && (n[o.key] = e)
             }), n
-          })(e, m.Qw),
+          })(e, y.Qw),
           r = JSON.parse(JSON.stringify(a().merge(JSON.parse(JSON.stringify(n)), JSON.parse(JSON.stringify(t?.keys ?? {}))))),
           o = JSON.parse(JSON.stringify(e));
         return a().cloneDeepWith(o, (e, t, n) => {
@@ -133,7 +133,7 @@ try {
             if (!e || !a().has(e, "key") || e.translated) return;
             const t = r[e.key] ?? null;
             if (!t) return;
-            const n = y()(t);
+            const n = b()(t);
             Object.keys(n).map(t => {
               a().set(e, t, n[t])
             }), a().set(e, "translated", !0), Object.freeze(e)
@@ -190,7 +190,7 @@ try {
           }) => {
             const s = i => {
               let c = "";
-              if (c = Array.isArray(i?.[m.ZH]) ? i[m.ZH].map(e => s(e)) : i?.[m.ZH] ?? "", !i?._template) return c;
+              if (c = Array.isArray(i?.[y.ZH]) ? i[y.ZH].map(e => s(e)) : i?.[y.ZH] ?? "", !i?._template) return c;
               let l = i._template;
               "0" === l && (console.warn(`The _template "${l}" wasn't found in the available components. The _template "${l}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(e),
@@ -211,17 +211,17 @@ try {
                     whatever: 1
                   }
                 }),
-                p = [...i?.translations ?? []].reverse(),
-                f = `componentProps_${(0,g.A)()}`;
+                f = [...i?.translations ?? []].reverse(),
+                p = `componentProps_${(0,g.A)()}`;
               return (0, o.createElement)(u, {
                 ...t?.meta,
                 ...i,
                 ...n,
-                t: e => p.find(t => t?._key === e)?.value ?? e,
-                key: f
+                t: e => f.find(t => t?._key === e)?.value ?? e,
+                key: p
               }, c)
             };
-            return t?.[m.ZH]?.length ? s(t) : null
+            return t?.[y.ZH]?.length ? s(t) : null
           })({
             components: e,
             payload: t,
@@ -234,16 +234,16 @@ try {
           components: t = {},
           componentProps: n = {}
         }) => {
-          const s = (0, p.i)(),
+          const s = (0, f.i)(),
             [i, c] = (0, o.useState)(null),
-            [l, f] = (0, o.useState)(null);
+            [l, p] = (0, o.useState)(null);
           (0, o.useEffect)(() => {
-            e?.payload && c(e.payload), e?.variables && f(e.variables)
+            e?.payload && c(e.payload), e?.variables && p(e.variables)
           }, [e]);
-          const [y] = (0, o.useState)({
+          const [b] = (0, o.useState)({
             ...t,
             ...u() ?? {}
-          }), m = (({
+          }), y = (({
             payload: e
           }) => {
             const [t, n] = (0, o.useState)(e);
@@ -273,7 +273,7 @@ try {
             }, [e]), t
           })({
             payload: i
-          }), g = b({
+          }), g = m({
             payload: i,
             variables: l
           });
@@ -288,13 +288,13 @@ try {
                   prod: o
                 }
               };
-            return (0, r.jsx)(p.o, {
+            return (0, r.jsx)(f.o, {
               payload: a,
               children: (0, r.jsx)(d, {
-                components: y,
+                components: b,
                 children: (0, r.jsx)(O, {
                   payload: t,
-                  components: y,
+                  components: b,
                   componentProps: {
                     ...n,
                     tina: e
@@ -302,7 +302,7 @@ try {
                 })
               })
             })
-          }, [s, i, JSON.stringify(m), JSON.stringify(g)])
+          }, [s, i, JSON.stringify(y), JSON.stringify(g)])
         };
       var S = n(34725);
       const v = (e = "", t = 0, n = {}, r = () => {}) => {

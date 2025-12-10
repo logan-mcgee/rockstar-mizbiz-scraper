@@ -178,10 +178,10 @@ try {
             else {
               var v = (0, d.default)();
               this.pid = v;
-              var y = function() {
+              var b = function() {
                   return v !== e.pid
                 },
-                b = "multi" === o ? function() {
+                y = "multi" === o ? function() {
                   return m(u, g)
                 } : function() {
                   return h(u, f)
@@ -200,18 +200,18 @@ try {
                 return (0, l.default)(function() {
                   return w <= T
                 }, function(t) {
-                  if (y()) return t(!0);
+                  if (b()) return t(!0);
                   S = parseInt((w + T) / 2, 10), e.setState({
                     fontSize: S
                   }, function() {
-                    return y() ? t(!0) : (b() ? w = S + 1 : T = S - 1, t())
+                    return b() ? t(!0) : (y() ? w = S + 1 : T = S - 1, t())
                   })
                 }, t)
               }, function(t) {
                 return "single" === o && i || _() ? t() : (w = n, T = S, (0, l.default)(function() {
                   return w < T
                 }, function(t) {
-                  if (y()) return t(!0);
+                  if (b()) return t(!0);
                   S = parseInt((w + T) / 2, 10), e.setState({
                     fontSize: S
                   }, function() {
@@ -219,12 +219,12 @@ try {
                   })
                 }, t))
               }, function(t) {
-                if (S = Math.min(w, T), S = Math.max(S, n), S = Math.min(S, r), S = Math.max(S, 0), y()) return t(!0);
+                if (S = Math.min(w, T), S = Math.max(S, n), S = Math.min(S, r), S = Math.max(S, 0), b()) return t(!0);
                 e.setState({
                   fontSize: S
                 }, t)
               }], function(t) {
-                t || y() || e.setState({
+                t || b() || e.setState({
                   ready: !0
                 }, function() {
                   return a(S)
@@ -893,7 +893,7 @@ try {
             column: p
           };
           return function(t) {
-            return t.position = new m(e), b(), t
+            return t.position = new m(e), y(), t
           }
         }
 
@@ -912,7 +912,7 @@ try {
           g.push(n)
         }
 
-        function y(t) {
+        function b(t) {
           var n = t.exec(e);
           if (n) {
             var r = n[0];
@@ -920,8 +920,8 @@ try {
           }
         }
 
-        function b() {
-          y(r)
+        function y() {
+          b(r)
         }
 
         function _(e) {
@@ -945,19 +945,19 @@ try {
 
         function w() {
           var e = h(),
-            n = y(o);
+            n = b(o);
           if (n) {
-            if (S(), !y(i)) return v("property missing ':'");
-            var r = y(a),
+            if (S(), !b(i)) return v("property missing ':'");
+            var r = b(a),
               c = e({
                 type: "declaration",
                 property: u(n[0].replace(t, l)),
                 value: r ? u(r[0].replace(t, l)) : l
               });
-            return y(s), c
+            return b(s), c
           }
         }
-        return b(),
+        return y(),
           function() {
             var e, t = [];
             for (_(t); e = w();) !1 !== e && (t.push(e), _(t));
@@ -1387,11 +1387,11 @@ try {
         var g = Math.abs(l) + Math.abs(u);
         this.totalDistY = r.height + t.height + g;
         var v = r.height + t.height + (u > l ? -1 * g : g),
-          y = Math.abs(f) + Math.abs(h);
-        this.totalDistX = r.width + t.width + y;
-        var b = r.width + t.width + (h > f ? -1 * y : y),
+          b = Math.abs(f) + Math.abs(h);
+        this.totalDistX = r.width + t.width + b;
+        var y = r.width + t.width + (h > f ? -1 * b : b),
           _ = t.originTotalDistY / v,
-          S = t.originTotalDistX / b;
+          S = t.originTotalDistX / y;
         this.top = t.top, this.bottom = t.bottom, l < 0 && (this.top = this.top + l * _), u > 0 && (this.bottom = this.bottom + u * _), this.left = t.left, this.right = t.right, f < 0 && (this.left = this.left + f * S), h > 0 && (this.right = this.right + h * S)
       }
     },
@@ -1418,24 +1418,24 @@ try {
             }
           }
           if ("text" !== g.type) {
-            var y = g,
-              b = {};
-            c(y) ? ((0, a.setStyleProp)(y.attribs.style, y.attribs), b = y.attribs) : y.attribs && (b = (0, i.default)(y.attribs, y.name));
+            var b = g,
+              y = {};
+            c(b) ? ((0, a.setStyleProp)(b.attribs.style, b.attribs), y = b.attribs) : b.attribs && (y = (0, i.default)(b.attribs, b.name));
             var _ = void 0;
             switch (g.type) {
               case "script":
               case "style":
-                g.children[0] && (b.dangerouslySetInnerHTML = {
+                g.children[0] && (y.dangerouslySetInnerHTML = {
                   __html: g.children[0].data
                 });
                 break;
               case "tag":
-                "textarea" === g.name && g.children[0] ? b.defaultValue = g.children[0].data : g.children && g.children.length && (_ = e(g.children, n));
+                "textarea" === g.name && g.children[0] ? y.defaultValue = g.children[0].data : g.children && g.children.length && (_ = e(g.children, n));
                 break;
               default:
                 continue
             }
-            h > 1 && (b.key = m), r.push(l(p(g.name, b, _), g, m))
+            h > 1 && (y.key = m), r.push(l(p(g.name, y, _), g, m))
           } else {
             var S = !g.data.trim().length;
             if (S && g.parent && !(0, a.canTextBeChildOfNode)(g.parent)) continue;
@@ -1546,7 +1546,7 @@ try {
               exception: {
                 values: [{
                   type: (0, o.xH)(t) ? t.constructor.name : i ? "UnhandledRejection" : "Error",
-                  value: y(t, {
+                  value: b(t, {
                     isUnhandledRejection: i
                   })
                 }]
@@ -1595,7 +1595,7 @@ try {
         return i.message = t, i
       }
 
-      function y(e, {
+      function b(e, {
         isUnhandledRejection: t
       }) {
         const n = (0, s.HF)(e),
@@ -2005,12 +2005,12 @@ try {
           m = f ? h.scrollLeft : window.pageXOffset,
           g = f ? h.scrollTop : window.pageYOffset,
           v = new a.Scroll(m, g),
-          y = new i.View({
+          b = new i.View({
             width: 0,
             height: 0,
             scrollContainer: u
           }),
-          b = !1,
+          y = !1,
           _ = (0, r.testForPassiveScroll)();
 
         function S(e) {
@@ -2028,7 +2028,7 @@ try {
         function T() {
           var e = f ? h.scrollLeft : window.pageXOffset,
             t = f ? h.scrollTop : window.pageYOffset;
-          v.setScroll(e, t), !b && p.length > 0 && (b = !0, window.requestAnimationFrame(k))
+          v.setScroll(e, t), !y && p.length > 0 && (y = !0, window.requestAnimationFrame(k))
         }
 
         function E() {
@@ -2040,24 +2040,24 @@ try {
         function k() {
           var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).updateCache;
           p && p.forEach(function(t) {
-            x(t), e && t.setCachedAttributes(y, v)
-          }), b = !1
+            x(t), e && t.setCachedAttributes(b, v)
+          }), y = !1
         }
 
         function x(e) {
-          e.props.disabled || e.updatePosition(y, v)
+          e.props.disabled || e.updatePosition(b, v)
         }
 
         function C() {
           if (f) {
             var e = h.offsetWidth,
               t = h.offsetHeight;
-            return y.setSize(e, t)
+            return b.setSize(e, t)
           }
           var n = document.documentElement,
             r = window.innerWidth || n.clientWidth,
             o = window.innerHeight || n.clientHeight;
-          return y.setSize(r, o)
+          return b.setSize(r, o)
         }
         S(h), C(), this.getElements = function() {
           return p
@@ -2065,7 +2065,7 @@ try {
           var t, r = new s.Element(d(d({}, e), {}, {
             scrollAxis: n
           }));
-          return r.setCachedAttributes(y, v), p = p ? [].concat(function(e) {
+          return r.setCachedAttributes(b, v), p = p ? [].concat(function(e) {
             if (Array.isArray(e)) return l(e)
           }(t = p) || function(e) {
             if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
@@ -2095,7 +2095,7 @@ try {
             updateCache: !0
           })
         }, this.updateScrollContainer = function(e) {
-          w(h), h = e, f = !!e, y = new i.View({
+          w(h), h = e, f = !!e, b = new i.View({
             width: 0,
             height: 0,
             scrollContainer: e
@@ -2183,7 +2183,7 @@ try {
     19492: (e, t, n) => {
       "use strict";
       n.d(t, {
-        BF: () => y,
+        BF: () => b,
         EU: () => g,
         Me: () => k,
         TF: () => S,
@@ -2192,7 +2192,7 @@ try {
         gM: () => v,
         lq: () => x,
         nX: () => w,
-        rm: () => b
+        rm: () => y
       });
       var r = n(18534),
         o = n(90965),
@@ -2417,7 +2417,7 @@ try {
         return x(t, e), n
       }
 
-      function y() {
+      function b() {
         const e = g();
         if (e.__SENTRY__ && e.__SENTRY__.acs) {
           const t = e.__SENTRY__.acs.getCurrentHub();
@@ -2426,8 +2426,8 @@ try {
         return _(e)
       }
 
-      function b() {
-        return y().getIsolationScope()
+      function y() {
+        return b().getIsolationScope()
       }
 
       function _(e = g()) {
@@ -2650,7 +2650,7 @@ try {
     22089: (e, t, n) => {
       "use strict";
       n.d(t, {
-        U: () => y,
+        U: () => b,
         p: () => v
       });
       var r = n(39533),
@@ -2716,7 +2716,7 @@ try {
         }), u.isRecording() && u.initSpanRecorder(l._experiments && l._experiments.maxSpans), c && c.emit && c.emit("startTransaction", u), u
       }
 
-      function y() {
+      function b() {
         const e = (0, i.EU)();
         e.__SENTRY__ && (e.__SENTRY__.extensions = e.__SENTRY__.extensions || {}, e.__SENTRY__.extensions.startTransaction || (e.__SENTRY__.extensions.startTransaction = g), e.__SENTRY__.extensions.traceHeaders || (e.__SENTRY__.extensions.traceHeaders = m), u || (u = !0, (0, s.L)(d), (0, c.r)(d)))
       }
@@ -2751,9 +2751,9 @@ try {
         Q_: () => m,
         Vv: () => v,
         Yj: () => c,
-        c9: () => y,
+        c9: () => b,
         dY: () => d,
-        lG: () => b
+        lG: () => y
       });
       var r = n(11440);
       const o = "?";
@@ -2808,8 +2808,8 @@ try {
           const t = g.exec(e);
           return t ? i(t[5], t[3] || t[4] || o, +t[1], +t[2]) : void 0
         }],
-        y = [c, d, f],
-        b = (0, r.gd)(...y),
+        b = [c, d, f],
+        y = (0, r.gd)(...b),
         _ = (e, t) => {
           const n = -1 !== e.indexOf("safari-extension"),
             r = -1 !== e.indexOf("safari-web-extension");
@@ -3113,7 +3113,7 @@ try {
         configureScope: () => p.PN,
         contextLinesIntegration: () => No.l$,
         continueTrace: () => v.V4,
-        createTransport: () => y.o,
+        createTransport: () => b.o,
         createUserFeedbackEnvelope: () => A.L,
         debugIntegration: () => Fo._,
         dedupeIntegration: () => Lo.sn,
@@ -3126,14 +3126,14 @@ try {
         eventFromMessage: () => M.qv,
         exceptionFromError: () => M.K8,
         extraErrorDataIntegration: () => jo.X,
-        extractTraceparentData: () => b.nc,
+        extractTraceparentData: () => y.nc,
         feedbackIntegration: () => Ao,
         flush: () => p.bX,
         forceLoad: () => P.w7,
         functionToStringIntegration: () => i.Z,
         geckoStackLineParser: () => R.dY,
         getActiveSpan: () => v.Bk,
-        getActiveTransaction: () => b.Z7,
+        getActiveTransaction: () => y.Z7,
         getClient: () => p.KU,
         getCurrentHub: () => a.BF,
         getCurrentScope: () => p.o5,
@@ -3216,8 +3216,8 @@ try {
         m = n(98509),
         g = n(22089),
         v = n(54531),
-        y = n(99369),
-        b = n(42895),
+        b = n(99369),
+        y = n(42895),
         _ = n(32150),
         S = n(5735),
         w = n(95031),
@@ -3305,14 +3305,14 @@ try {
       function ve(e) {
         try {
           const n = e.rules || e.cssRules;
-          return n ? ((t = Array.from(n, ye).join("")).includes(" background-clip: text;") && !t.includes(" -webkit-background-clip: text;") && (t = t.replace(" background-clip: text;", " -webkit-background-clip: text; background-clip: text;")), t) : null
+          return n ? ((t = Array.from(n, be).join("")).includes(" background-clip: text;") && !t.includes(" -webkit-background-clip: text;") && (t = t.replace(" background-clip: text;", " -webkit-background-clip: text; background-clip: text;")), t) : null
         } catch (e) {
           return null
         }
         var t
       }
 
-      function ye(e) {
+      function be(e) {
         let t;
         if (function(e) {
             return "styleSheet" in e
@@ -3332,7 +3332,7 @@ try {
       }! function(e) {
         e[e.Document = 0] = "Document", e[e.DocumentType = 1] = "DocumentType", e[e.Element = 2] = "Element", e[e.Text = 3] = "Text", e[e.CDATA = 4] = "CDATA", e[e.Comment = 5] = "Comment"
       }(he || (he = {}));
-      class be {
+      class ye {
         constructor() {
           this.idNodeMap = new Map, this.nodeMetaMap = new WeakMap
         }
@@ -3567,8 +3567,8 @@ try {
           maskAttributeFn: m,
           maskTextFn: g,
           maskInputFn: v,
-          slimDOMOptions: y,
-          dataURLOptions: b = {},
+          slimDOMOptions: b,
+          dataURLOptions: y = {},
           inlineImages: _ = !1,
           recordCanvas: S = !1,
           onSerialize: w,
@@ -3600,8 +3600,8 @@ try {
             maskTextFn: m,
             maskInputFn: g,
             dataURLOptions: v = {},
-            inlineImages: y,
-            recordCanvas: b,
+            inlineImages: b,
+            recordCanvas: y,
             keepIframeSrcFn: _,
             newlyAddedElement: S = !1
           } = t, w = function(e, t) {
@@ -3642,8 +3642,8 @@ try {
                   rootId: m,
                   maskAllText: g,
                   maskTextClass: v,
-                  unmaskTextClass: y,
-                  maskTextSelector: b,
+                  unmaskTextClass: b,
+                  maskTextSelector: y,
                   unmaskTextSelector: _
                 } = t, S = function(e, t, n, r) {
                   try {
@@ -3684,7 +3684,7 @@ try {
                     r = xe(t, Te(w), n),
                     o = t.checked;
                   if ("submit" !== n && "button" !== n && r) {
-                    const e = We(t, v, b, y, _, _e({
+                    const e = We(t, v, y, b, _, _e({
                       type: n,
                       tagName: Te(w),
                       maskInputOptions: s
@@ -3768,8 +3768,8 @@ try {
                 maskInputOptions: h,
                 maskInputFn: g,
                 dataURLOptions: v,
-                inlineImages: y,
-                recordCanvas: b,
+                inlineImages: b,
+                recordCanvas: y,
                 keepIframeSrcFn: _,
                 newlyAddedElement: S,
                 rootId: w,
@@ -3859,7 +3859,7 @@ try {
           maskAttributeFn: m,
           maskTextFn: g,
           maskInputFn: v,
-          dataURLOptions: b,
+          dataURLOptions: y,
           inlineImages: _,
           recordCanvas: S,
           keepIframeSrcFn: C,
@@ -3882,7 +3882,7 @@ try {
             }
           }
           return !1
-        }(R, y) && (O || R.type !== he.Text || R.isStyle || R.textContent.replace(/^\s+|\s+$/gm, "").length) ? Oe() : -2;
+        }(R, b) && (O || R.type !== he.Text || R.isStyle || R.textContent.replace(/^\s+|\s+$/gm, "").length) ? Oe() : -2;
         const A = Object.assign(R, {
           id: M
         });
@@ -3895,7 +3895,7 @@ try {
           t && ge(t) && (A.isShadowHost = !0)
         }
         if ((A.type === he.Document || A.type === he.Element) && P) {
-          y.headWhitespace && A.type === he.Element && "head" === A.tagName && (O = !1);
+          b.headWhitespace && A.type === he.Element && "head" === A.tagName && (O = !1);
           const t = {
             doc: n,
             mirror: r,
@@ -3913,8 +3913,8 @@ try {
             maskAttributeFn: m,
             maskTextFn: g,
             maskInputFn: v,
-            slimDOMOptions: y,
-            dataURLOptions: b,
+            slimDOMOptions: b,
+            dataURLOptions: y,
             inlineImages: _,
             recordCanvas: S,
             preserveWhiteSpace: O,
@@ -3977,8 +3977,8 @@ try {
               maskAttributeFn: m,
               maskTextFn: g,
               maskInputFn: v,
-              slimDOMOptions: y,
-              dataURLOptions: b,
+              slimDOMOptions: b,
+              dataURLOptions: y,
               inlineImages: _,
               recordCanvas: S,
               preserveWhiteSpace: O,
@@ -4024,8 +4024,8 @@ try {
               maskAttributeFn: m,
               maskTextFn: g,
               maskInputFn: v,
-              slimDOMOptions: y,
-              dataURLOptions: b,
+              slimDOMOptions: b,
+              dataURLOptions: y,
               inlineImages: _,
               recordCanvas: S,
               preserveWhiteSpace: O,
@@ -4084,7 +4084,7 @@ try {
             c = this;
           s <= 0 || s > t ? (r && (function(...e) {
             vt("clearTimeout")(...e)
-          }(r), r = null), o = a, e.apply(c, i)) : r || !1 === n.trailing || (r = yt(() => {
+          }(r), r = null), o = a, e.apply(c, i)) : r || !1 === n.trailing || (r = bt(() => {
             o = !1 === n.leading ? 0 : Date.now(), r = null, e.apply(c, i)
           }, s))
         }
@@ -4094,7 +4094,7 @@ try {
         const i = o.Object.getOwnPropertyDescriptor(e, t);
         return o.Object.defineProperty(e, t, r ? n : {
           set(e) {
-            yt(() => {
+            bt(() => {
               n.set.call(this, e)
             }, 0), i && i.set && i.set.call(this, e)
           }
@@ -4244,10 +4244,10 @@ try {
         return gt[e] = r.bind(window)
       }
 
-      function yt(...e) {
+      function bt(...e) {
         return vt("setTimeout")(...e)
       }
-      var bt = (e => (e[e.DomContentLoaded = 0] = "DomContentLoaded", e[e.Load = 1] = "Load", e[e.FullSnapshot = 2] = "FullSnapshot", e[e.IncrementalSnapshot = 3] = "IncrementalSnapshot", e[e.Meta = 4] = "Meta", e[e.Custom = 5] = "Custom", e[e.Plugin = 6] = "Plugin", e))(bt || {}),
+      var yt = (e => (e[e.DomContentLoaded = 0] = "DomContentLoaded", e[e.Load = 1] = "Load", e[e.FullSnapshot = 2] = "FullSnapshot", e[e.IncrementalSnapshot = 3] = "IncrementalSnapshot", e[e.Meta = 4] = "Meta", e[e.Custom = 5] = "Custom", e[e.Plugin = 6] = "Plugin", e))(yt || {}),
         _t = (e => (e[e.Mutation = 0] = "Mutation", e[e.MouseMove = 1] = "MouseMove", e[e.MouseInteraction = 2] = "MouseInteraction", e[e.Scroll = 3] = "Scroll", e[e.ViewportResize = 4] = "ViewportResize", e[e.Input = 5] = "Input", e[e.TouchMove = 6] = "TouchMove", e[e.MediaInteraction = 7] = "MediaInteraction", e[e.StyleSheetRule = 8] = "StyleSheetRule", e[e.CanvasMutation = 9] = "CanvasMutation", e[e.Font = 10] = "Font", e[e.Log = 11] = "Log", e[e.Drag = 12] = "Drag", e[e.StyleDeclaration = 13] = "StyleDeclaration", e[e.Selection = 14] = "Selection", e[e.AdoptedStyleSheet = 15] = "AdoptedStyleSheet", e[e.CustomElement = 16] = "CustomElement", e))(_t || {}),
         St = (e => (e[e.MouseUp = 0] = "MouseUp", e[e.MouseDown = 1] = "MouseDown", e[e.Click = 2] = "Click", e[e.ContextMenu = 3] = "ContextMenu", e[e.DblClick = 4] = "DblClick", e[e.Focus = 5] = "Focus", e[e.Blur = 6] = "Blur", e[e.TouchStart = 7] = "TouchStart", e[e.TouchMove_Departed = 8] = "TouchMove_Departed", e[e.TouchEnd = 9] = "TouchEnd", e[e.TouchCancel = 10] = "TouchCancel", e))(St || {}),
         wt = (e => (e[e.Mouse = 0] = "Mouse", e[e.Pen = 1] = "Pen", e[e.Touch = 2] = "Touch", e))(wt || {});
@@ -4669,18 +4669,18 @@ try {
           const u = e.isTrusted,
             g = n && Te(n.tagName);
           if ("OPTION" === g && (n = n.parentElement), !n || !g || $t.indexOf(g) < 0 || at(n, r, o, i, !0)) return;
-          const y = n;
-          if (y.classList.contains(a) || s && y.matches(s)) return;
-          const b = ke(n);
-          let _ = xe(y, g, b),
+          const b = n;
+          if (b.classList.contains(a) || s && b.matches(s)) return;
+          const y = ke(n);
+          let _ = xe(b, g, y),
             S = !1;
           const w = _e({
               maskInputOptions: c,
               tagName: g,
-              type: b
+              type: y
             }),
             T = We(n, p, h, f, m, w);
-          "radio" !== b && "checkbox" !== b || (S = n.checked), _ = Se({
+          "radio" !== y && "checkbox" !== y || (S = n.checked), _ = Se({
             isMasked: T,
             element: n,
             value: _,
@@ -4694,12 +4694,12 @@ try {
             isChecked: S
           });
           const E = n.name;
-          "radio" === b && E && S && t.querySelectorAll(`input[type="radio"][name="${E}"]`).forEach(e => {
+          "radio" === y && E && S && t.querySelectorAll(`input[type="radio"][name="${E}"]`).forEach(e => {
             if (e !== n) {
               const t = Se({
                 isMasked: T,
                 element: e,
-                value: xe(e, g, b),
+                value: xe(e, g, y),
                 maskInputFn: l
               });
               v(e, d ? {
@@ -4725,29 +4725,29 @@ try {
             })
           }
         }
-        const y = ("last" === u.input ? ["change"] : ["input", "change"]).map(e => Ye(e, Ft(g), t)),
-          b = t.defaultView;
-        if (!b) return () => {
-          y.forEach(e => e())
+        const b = ("last" === u.input ? ["change"] : ["input", "change"]).map(e => Ye(e, Ft(g), t)),
+          y = t.defaultView;
+        if (!y) return () => {
+          b.forEach(e => e())
         };
-        const _ = b.Object.getOwnPropertyDescriptor(b.HTMLInputElement.prototype, "value"),
+        const _ = y.Object.getOwnPropertyDescriptor(y.HTMLInputElement.prototype, "value"),
           S = [
-            [b.HTMLInputElement.prototype, "value"],
-            [b.HTMLInputElement.prototype, "checked"],
-            [b.HTMLSelectElement.prototype, "value"],
-            [b.HTMLTextAreaElement.prototype, "value"],
-            [b.HTMLSelectElement.prototype, "selectedIndex"],
-            [b.HTMLOptionElement.prototype, "selected"]
+            [y.HTMLInputElement.prototype, "value"],
+            [y.HTMLInputElement.prototype, "checked"],
+            [y.HTMLSelectElement.prototype, "value"],
+            [y.HTMLTextAreaElement.prototype, "value"],
+            [y.HTMLSelectElement.prototype, "selectedIndex"],
+            [y.HTMLOptionElement.prototype, "selected"]
           ];
-        return _ && _.set && y.push(...S.map(e => Qe(e[0], e[1], {
+        return _ && _.set && b.push(...S.map(e => Qe(e[0], e[1], {
           set() {
             Ft(g)({
               target: this,
               isTrusted: !1
             })
           }
-        }, !1, b))), Ft(() => {
-          y.forEach(e => e())
+        }, !1, y))), Ft(() => {
+          b.forEach(e => e())
         })
       }
 
@@ -5143,7 +5143,7 @@ try {
             };
             const a = et(t.fonts, "add", function(t) {
               return function(n) {
-                return yt(Ft(() => {
+                return bt(Ft(() => {
                   const t = o.get(n);
                   t && (e(t), o.delete(n))
                 }), 0), t.apply(this, [n])
@@ -5315,12 +5315,12 @@ try {
         }
         transformCrossOriginEvent(e, t) {
           switch (t.type) {
-            case bt.FullSnapshot: {
+            case yt.FullSnapshot: {
               this.crossOriginIframeMirror.reset(e), this.crossOriginIframeStyleMirror.reset(e), this.replaceIdOnNode(t.data.node, e);
               const n = t.data.node.id;
               return this.crossOriginIframeRootIdMap.set(e, n), this.patchRootIdOnNode(t.data.node, n), {
                 timestamp: t.timestamp,
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.Mutation,
                   adds: [{
@@ -5335,15 +5335,15 @@ try {
                 }
               }
             }
-            case bt.Meta:
-            case bt.Load:
-            case bt.DomContentLoaded:
+            case yt.Meta:
+            case yt.Load:
+            case yt.DomContentLoaded:
               return !1;
-            case bt.Plugin:
+            case yt.Plugin:
               return t;
-            case bt.Custom:
+            case yt.Custom:
               return this.replaceIds(t.data.payload, e, ["id", "parentId", "previousId", "nextId"]), t;
-            case bt.IncrementalSnapshot:
+            case yt.IncrementalSnapshot:
               switch (t.data.source) {
                 case _t.Mutation:
                   return t.data.adds.forEach(t => {
@@ -5438,7 +5438,7 @@ try {
             scrollCb: this.scrollCb,
             doc: e,
             mirror: this.mirror
-          })), yt(() => {
+          })), bt(() => {
             e.adoptedStyleSheets && e.adoptedStyleSheets.length > 0 && this.bypassOptions.stylesheetManager.adoptStyleSheets(e.adoptedStyleSheets, this.mirror.getId(e.host)), this.restoreHandlers.push(Gt({
               mirror: this.mirror,
               stylesheetManager: this.bypassOptions.stylesheetManager
@@ -5503,7 +5503,7 @@ try {
             this.styleMirror.has(t) ? e = this.styleMirror.getId(t) : (e = this.styleMirror.add(t), r.push({
               styleId: e,
               rules: Array.from(t.rules || CSSRule, (e, t) => ({
-                rule: ye(e),
+                rule: be(e),
                 index: t
               }))
             })), n.styleIds.push(e)
@@ -5541,7 +5541,7 @@ try {
         }
       }
       let sn, cn;
-      const ln = new be;
+      const ln = new ye;
 
       function un(e = {}) {
         const {
@@ -5562,8 +5562,8 @@ try {
           maskAllInputs: m,
           maskInputOptions: g,
           slimDOMOptions: v,
-          maskAttributeFn: y,
-          maskInputFn: b,
+          maskAttributeFn: b,
+          maskInputFn: y,
           maskTextFn: _,
           maxCanvasSize: S = null,
           packFn: w,
@@ -5642,7 +5642,7 @@ try {
         };
         sn = (e, o) => {
           const i = e;
-          if (i.timestamp = tt(), !U([jt, "access", e => e[0], "optionalAccess", e => e.isFrozen, "call", e => e()]) || i.type === bt.FullSnapshot || i.type === bt.IncrementalSnapshot && i.data.source === _t.Mutation || jt.forEach(e => e.unfreeze()), j) U([t, "optionalCall", e => e(W(i), o)]);
+          if (i.timestamp = tt(), !U([jt, "access", e => e[0], "optionalAccess", e => e.isFrozen, "call", e => e()]) || i.type === yt.FullSnapshot || i.type === yt.IncrementalSnapshot && i.data.source === _t.Mutation || jt.forEach(e => e.unfreeze()), j) U([t, "optionalCall", e => e(W(i), o)]);
           else if (B) {
             const e = {
               type: "rrweb",
@@ -5652,8 +5652,8 @@ try {
             };
             window.parent.postMessage(e, "*")
           }
-          if (i.type === bt.FullSnapshot) z = i, V = 0;
-          else if (i.type === bt.IncrementalSnapshot) {
+          if (i.type === yt.FullSnapshot) z = i, V = 0;
+          else if (i.type === yt.IncrementalSnapshot) {
             if (i.data.source === _t.Mutation && i.data.isAttachIframe) return;
             V++;
             const e = r && V >= r,
@@ -5663,7 +5663,7 @@ try {
         };
         const q = e => {
             sn({
-              type: bt.IncrementalSnapshot,
+              type: yt.IncrementalSnapshot,
               data: {
                 source: _t.Mutation,
                 ...e
@@ -5671,14 +5671,14 @@ try {
             })
           },
           G = e => sn({
-            type: bt.IncrementalSnapshot,
+            type: yt.IncrementalSnapshot,
             data: {
               source: _t.Scroll,
               ...e
             }
           }),
           K = e => sn({
-            type: bt.IncrementalSnapshot,
+            type: yt.IncrementalSnapshot,
             data: {
               source: _t.CanvasMutation,
               ...e
@@ -5687,7 +5687,7 @@ try {
           Y = new on({
             mutationCb: q,
             adoptedStyleSheetCb: e => sn({
-              type: bt.IncrementalSnapshot,
+              type: yt.IncrementalSnapshot,
               data: {
                 source: _t.AdoptedStyleSheet,
                 ...e
@@ -5717,7 +5717,7 @@ try {
             mirror: ln,
             win: window,
             mutationCb: e => sn({
-              type: bt.IncrementalSnapshot,
+              type: yt.IncrementalSnapshot,
               data: {
                 source: _t.CanvasMutation,
                 ...e
@@ -5748,9 +5748,9 @@ try {
               inlineStylesheet: h,
               maskInputOptions: H,
               dataURLOptions: E,
-              maskAttributeFn: y,
+              maskAttributeFn: b,
               maskTextFn: _,
-              maskInputFn: b,
+              maskInputFn: y,
               recordCanvas: x,
               inlineImages: M,
               sampling: T,
@@ -5765,7 +5765,7 @@ try {
           }),
           ee = (e = !1) => {
             sn({
-              type: bt.Meta,
+              type: yt.Meta,
               data: {
                 href: window.location.href,
                 width: ot(),
@@ -5774,7 +5774,7 @@ try {
             }, e), Y.reset(), Q.init(), jt.forEach(e => e.lock());
             const t = function(e, t) {
               const {
-                mirror: n = new be,
+                mirror: n = new ye,
                 blockClass: r = "rr-block",
                 blockSelector: o = null,
                 unblockSelector: i = null,
@@ -5790,8 +5790,8 @@ try {
                 maskAttributeFn: m,
                 maskTextFn: g,
                 maskInputFn: v,
-                slimDOM: y = !1,
-                dataURLOptions: b,
+                slimDOM: b = !1,
+                dataURLOptions: y,
                 preserveWhiteSpace: _,
                 onSerialize: S,
                 onIframeLoad: w,
@@ -5833,19 +5833,19 @@ try {
                 maskAttributeFn: m,
                 maskTextFn: g,
                 maskInputFn: v,
-                slimDOMOptions: !0 === y || "all" === y ? {
+                slimDOMOptions: !0 === b || "all" === b ? {
                   script: !0,
                   comment: !0,
                   headFavicon: !0,
                   headWhitespace: !0,
-                  headMetaDescKeywords: "all" === y,
+                  headMetaDescKeywords: "all" === b,
                   headMetaSocial: !0,
                   headMetaRobots: !0,
                   headMetaHttpEquiv: !0,
                   headMetaAuthorship: !0,
                   headMetaVerification: !0
-                } : !1 === y ? {} : y,
-                dataURLOptions: b,
+                } : !1 === b ? {} : b,
+                dataURLOptions: y,
                 inlineImages: p,
                 recordCanvas: f,
                 preserveWhiteSpace: _,
@@ -5869,8 +5869,8 @@ try {
               unmaskTextSelector: f,
               inlineStylesheet: h,
               maskAllInputs: H,
-              maskAttributeFn: y,
-              maskInputFn: b,
+              maskAttributeFn: b,
+              maskInputFn: y,
               maskTextFn: _,
               slimDOM: $,
               dataURLOptions: E,
@@ -5889,7 +5889,7 @@ try {
             });
             if (!t) return console.warn("Failed to snapshot the document");
             sn({
-              type: bt.FullSnapshot,
+              type: yt.FullSnapshot,
               data: {
                 node: t,
                 initialOffset: nt(window)
@@ -5903,14 +5903,14 @@ try {
               onMutation: F,
               mutationCb: q,
               mousemoveCb: (e, t) => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: t,
                   positions: e
                 }
               }),
               mouseInteractionCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.MouseInteraction,
                   ...e
@@ -5918,35 +5918,35 @@ try {
               }),
               scrollCb: G,
               viewportResizeCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.ViewportResize,
                   ...e
                 }
               }),
               inputCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.Input,
                   ...e
                 }
               }),
               mediaInteractionCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.MediaInteraction,
                   ...e
                 }
               }),
               styleSheetRuleCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.StyleSheetRule,
                   ...e
                 }
               }),
               styleDeclarationCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.StyleDeclaration,
                   ...e
@@ -5954,7 +5954,7 @@ try {
               }),
               canvasMutationCb: K,
               fontCb: e => sn({
-                type: bt.IncrementalSnapshot,
+                type: yt.IncrementalSnapshot,
                 data: {
                   source: _t.Font,
                   ...e
@@ -5962,7 +5962,7 @@ try {
               }),
               selectionCb: e => {
                 sn({
-                  type: bt.IncrementalSnapshot,
+                  type: yt.IncrementalSnapshot,
                   data: {
                     source: _t.Selection,
                     ...e
@@ -5971,7 +5971,7 @@ try {
               },
               customElementCb: e => {
                 sn({
-                  type: bt.IncrementalSnapshot,
+                  type: yt.IncrementalSnapshot,
                   data: {
                     source: _t.CustomElement,
                     ...e
@@ -5994,8 +5994,8 @@ try {
               userTriggeredOnInput: O,
               collectFonts: R,
               doc: e,
-              maskAttributeFn: y,
-              maskInputFn: b,
+              maskAttributeFn: b,
+              maskInputFn: y,
               maskTextFn: _,
               keepIframeSrcFn: P,
               blockSelector: i,
@@ -6013,7 +6013,7 @@ try {
                 observer: e.observer,
                 options: e.options,
                 callback: t => sn({
-                  type: bt.Plugin,
+                  type: yt.Plugin,
                   data: {
                     plugin: e.name,
                     payload: t
@@ -6033,12 +6033,12 @@ try {
           };
           return "interactive" === document.readyState || "complete" === document.readyState ? n() : (e.push(Ye("DOMContentLoaded", () => {
             sn({
-              type: bt.DomContentLoaded,
+              type: yt.DomContentLoaded,
               data: {}
             }), "DOMContentLoaded" === I && n()
           })), e.push(Ye("load", () => {
             sn({
-              type: bt.Load,
+              type: yt.Load,
               data: {}
             }), "load" === I && n()
           }, window))), () => {
@@ -6059,7 +6059,7 @@ try {
 
       function fn(e, t) {
         "sentry.transaction" !== t.category && (["ui.click", "ui.input"].includes(t.category) ? e.triggerUserActivity() : e.checkAndHandleExpiredSession(), e.addUpdate(() => (e.throttledAddEvent({
-          type: bt.Custom,
+          type: yt.Custom,
           timestamp: 1e3 * (t.timestamp || 0),
           data: {
             tag: "breadcrumb",
@@ -6087,7 +6087,7 @@ try {
         if (!cn) throw new Error("please take full snapshot after start recording");
         cn(e)
       };
-      class yn {
+      class bn {
         constructor(e, t, n = fn) {
           this._lastMutation = 0, this._lastScroll = 0, this._clicks = [], this._timeout = t.timeout / 1e3, this._threshold = t.threshold / 1e3, this._scollTimeout = t.scrollTimeout / 1e3, this._replay = e, this._ignoreSelector = t.ignoreSelector, this._addBreadcrumbEvent = n
         }
@@ -6115,7 +6115,7 @@ try {
         }
         handleClick(e, t) {
           if (function(e, t) {
-              return !bn.includes(e.tagName) || ("INPUT" === e.tagName && !["submit", "button"].includes(e.getAttribute("type") || "") || (!("A" !== e.tagName || !(e.hasAttribute("download") || e.hasAttribute("target") && "_self" !== e.getAttribute("target"))) || !(!t || !e.matches(t))))
+              return !yn.includes(e.tagName) || ("INPUT" === e.tagName && !["submit", "button"].includes(e.getAttribute("type") || "") || (!("A" !== e.tagName || !(e.hasAttribute("download") || e.hasAttribute("target") && "_self" !== e.getAttribute("target"))) || !(!t || !e.matches(t))))
             }(t, this._ignoreSelector) || ! function(e) {
               return !(!e.data || "number" != typeof e.data.nodeId || !e.timestamp)
             }(e)) return;
@@ -6206,7 +6206,7 @@ try {
           this._checkClickTimeout && clearTimeout(this._checkClickTimeout), this._checkClickTimeout = setTimeout(() => this._checkClicks(), 1e3)
         }
       }
-      const bn = ["A", "BUTTON", "INPUT"];
+      const yn = ["A", "BUTTON", "INPUT"];
 
       function _n() {
         return Date.now() / 1e3
@@ -6652,7 +6652,7 @@ try {
           const r = function(e, t) {
             try {
               if ("function" == typeof t && function(e) {
-                  return e.type === bt.Custom
+                  return e.type === yt.Custom
                 }(e)) return t(e)
             } catch (e) {
               return On && Y.vF.error("[Replay] An error occured in the `beforeAddRecordingEvent` callback, skipping the event...", e), null
@@ -6724,7 +6724,7 @@ try {
           data: i
         }) => {
           const a = e.throttledAddEvent({
-            type: bt.Custom,
+            type: yt.Custom,
             timestamp: n,
             data: {
               tag: "performanceSpan",
@@ -6995,7 +6995,7 @@ try {
                           }, {}) : {}
                         }(s), n.networkResponseHeaders),
                         [g, v] = n.networkCaptureBodies ? or(a) : [void 0],
-                        [y, b] = n.networkCaptureBodies ? function(e) {
+                        [b, y] = n.networkCaptureBodies ? function(e) {
                           const t = [];
                           try {
                             return [e.responseText]
@@ -7020,7 +7020,7 @@ try {
                           return On && Y.vF.warn("[Replay] Failed to get xhr response body", ...t), [void 0]
                         }(s) : [void 0],
                         _ = cr(h, d, g),
-                        S = cr(m, p, y);
+                        S = cr(m, p, b);
                       return {
                         startTimestamp: o,
                         endTimestamp: i,
@@ -7028,7 +7028,7 @@ try {
                         method: l,
                         statusCode: u,
                         request: v ? ir(_, v) : _,
-                        response: b ? ir(S, b) : S
+                        response: y ? ir(S, y) : S
                       }
                     }(e, t, n),
                     o = ar("resource.xhr", r);
@@ -7211,7 +7211,7 @@ try {
         return !(!e || !e.on)
       }
 
-      function yr(e) {
+      function br(e) {
         const {
           jsHeapSizeLimit: t,
           totalJSHeapSize: n,
@@ -7232,7 +7232,7 @@ try {
         }
       }
 
-      function br(e) {
+      function yr(e) {
         let t = !1;
         return (n, r) => {
           if (!e.checkAndHandleExpiredSession()) return void(On && Y.vF.warn("[Replay] Received replay event after session expired."));
@@ -7262,7 +7262,7 @@ try {
                 t && e.session && 0 === e.session.segmentId && Gn(e, function(e) {
                   const t = e.getOptions();
                   return {
-                    type: bt.Custom,
+                    type: yt.Custom,
                     timestamp: Date.now(),
                     data: {
                       tag: "options",
@@ -7359,7 +7359,7 @@ try {
                 segment_id: n,
                 replay_type: i.sampled
               },
-              y = await async function({
+              b = await async function({
                 client: e,
                 scope: t,
                 replayId: n,
@@ -7389,9 +7389,9 @@ try {
                 replayId: t,
                 event: v
               });
-            if (!y) return f.recordDroppedEvent("event_processor", "replay", v), void Rn("An event processor returned `null`, will not send event.");
-            delete y.sdkProcessingMetadata;
-            const b = function(e, t, n, r) {
+            if (!b) return f.recordDroppedEvent("event_processor", "replay", v), void Rn("An event processor returned `null`, will not send event.");
+            delete b.sdkProcessingMetadata;
+            const y = function(e, t, n, r) {
               return (0, ne.h4)((0, ne.n2)(e, (0, ne.Cj)(e), r, n), [
                 [{
                   type: "replay_event"
@@ -7401,10 +7401,10 @@ try {
                   length: "string" == typeof t ? (new TextEncoder).encode(t).length : t.length
                 }, t]
               ])
-            }(y, s, g, f.getOptions().tunnel);
+            }(b, s, g, f.getOptions().tunnel);
             let _;
             try {
-              _ = await m.send(b)
+              _ = await m.send(y)
             } catch (e) {
               const t = new Error(le);
               try {
@@ -7505,7 +7505,7 @@ try {
             scrollTimeout: 300,
             ignoreSelector: r ? r.join(",") : ""
           } : void 0;
-          o && (this.clickDetector = new yn(this, o))
+          o && (this.clickDetector = new bn(this, o))
         }
         getContext() {
           return this._context
@@ -7566,7 +7566,7 @@ try {
               ..."buffer" === this.recordingMode && {
                 checkoutEveryNms: 6e4
               },
-              emit: br(this),
+              emit: yr(this),
               onMutation: this._onMutationHandler,
               ...e ? {
                 recordCanvas: e.recordCanvas,
@@ -7843,7 +7843,7 @@ try {
                   if (Zn(t)) return e.flush(), t.contexts.feedback.replay_id = e.getSessionId(),
                     function(e, t) {
                       e.triggerUserActivity(), e.addUpdate(() => !t.timestamp || (e.throttledAddEvent({
-                        type: bt.Custom,
+                        type: yt.Custom,
                         timestamp: 1e3 * t.timestamp,
                         data: {
                           tag: "breadcrumb",
@@ -8023,7 +8023,7 @@ try {
         _createCustomBreadcrumb(e) {
           this.addUpdate(() => {
             this.throttledAddEvent({
-              type: bt.Custom,
+              type: yt.Custom,
               timestamp: e.timestamp || 0,
               data: {
                 tag: "breadcrumb",
@@ -8065,7 +8065,7 @@ try {
           if (this.session && this.eventBuffer && e) {
             if (await this._addPerformanceEntries(), this.eventBuffer && this.eventBuffer.hasEvents && (await async function(e) {
                 try {
-                  return Promise.all(er(e, [yr(se.performance.memory)]))
+                  return Promise.all(er(e, [br(se.performance.memory)]))
                 } catch (e) {
                   return []
                 }
@@ -8178,8 +8178,8 @@ try {
           slowClickTimeout: m = 7e3,
           slowClickIgnoreSelectors: g = [],
           networkDetailAllowUrls: v = [],
-          networkDetailDenyUrls: y = [],
-          networkCaptureBodies: b = !0,
+          networkDetailDenyUrls: b = [],
+          networkCaptureBodies: y = !0,
           networkRequestHeaders: _ = [],
           networkResponseHeaders: S = [],
           mask: w = [],
@@ -8285,8 +8285,8 @@ try {
               slowClickTimeout: m,
               slowClickIgnoreSelectors: g,
               networkDetailAllowUrls: v,
-              networkDetailDenyUrls: y,
-              networkCaptureBodies: b,
+              networkDetailDenyUrls: b,
+              networkCaptureBodies: y,
               networkRequestHeaders: Mr(_),
               networkResponseHeaders: Mr(S),
               beforeAddRecordingEvent: O,
@@ -8939,7 +8939,7 @@ try {
           formContentBorderRadius: "6px"
         },
         vo = go,
-        yo = {
+        bo = {
           ...go,
           background: "#29232f",
           backgroundHover: "#352f3b",
@@ -8948,7 +8948,7 @@ try {
           success: "#2da98c",
           error: "#f55459"
         },
-        bo = "widget",
+        yo = "widget",
         _o = "api";
 
       function So({
@@ -8987,7 +8987,7 @@ try {
             type: "feedback"
           };
           return (0, p.v4)(async e => {
-            e.clearBreadcrumbs(), [_o, bo].includes(String(r)) && e.setLevel("info");
+            e.clearBreadcrumbs(), [_o, yo].includes(String(r)) && e.setLevel("info");
             const t = await async function({
               client: e,
               scope: t,
@@ -9138,10 +9138,10 @@ try {
             }
           }({
             label: c
-          }), y = xo("div", {
+          }), b = xo("div", {
             className: "form__error-container form__error-container--hidden",
             "aria-hidden": "true"
-          }), b = xo("input", {
+          }), y = xo("input", {
             id: "name",
             type: l ? "text" : "hidden",
             "aria-hidden": l ? "false" : "true",
@@ -9189,14 +9189,14 @@ try {
                 }
               } catch (e) {}
             }
-          }, [y, l && xo("label", {
+          }, [b, l && xo("label", {
             htmlFor: "name",
             className: "form__label"
           }, [xo("span", {
             className: "form__label__text"
           }, e, d && xo("span", {
             className: "form__label__text--required"
-          }, ` ${a}`)), b]), !l && b, u && xo("label", {
+          }, ` ${a}`)), y]), !l && y, u && xo("label", {
             htmlFor: "email",
             className: "form__label"
           }, [xo("span", {
@@ -9218,10 +9218,10 @@ try {
               return T
             },
             showError: function(e) {
-              y.textContent = e, y.classList.remove("form__error-container--hidden"), y.setAttribute("aria-hidden", "false")
+              b.textContent = e, b.classList.remove("form__error-container--hidden"), b.setAttribute("aria-hidden", "false")
             },
             hideError: function() {
-              y.textContent = "", y.classList.add("form__error-container--hidden"), y.setAttribute("aria-hidden", "true")
+              b.textContent = "", b.classList.add("form__error-container--hidden"), b.setAttribute("aria-hidden", "true")
             }
           }
         }({
@@ -9313,7 +9313,7 @@ try {
               try {
                 return await So({
                   ...t,
-                  source: bo
+                  source: yo
                 }, n)
               } catch (t) {
                 wo && Y.vF.error(t), e && e.showError("There was a problem submitting feedback, please wait and try again.")
@@ -9564,8 +9564,8 @@ try {
           emailPlaceholder: m = "your.email@example.org",
           emailLabel: g = "Email",
           messagePlaceholder: v = "What's the bug? What did you expect?",
-          messageLabel: y = "Description",
-          namePlaceholder: b = "Your Name",
+          messageLabel: b = "Description",
+          namePlaceholder: y = "Your Name",
           nameLabel: _ = "Name",
           isRequiredLabel: S = "(required)",
           successMessageText: w = "Thank you for your report!",
@@ -9585,7 +9585,7 @@ try {
             useSentryUser: s,
             colorScheme: u,
             themeDark: {
-              ...yo,
+              ...bo,
               ...c
             },
             themeLight: {
@@ -9598,10 +9598,10 @@ try {
             formTitle: h,
             emailLabel: g,
             emailPlaceholder: m,
-            messageLabel: y,
+            messageLabel: b,
             messagePlaceholder: v,
             nameLabel: _,
-            namePlaceholder: b,
+            namePlaceholder: y,
             isRequiredLabel: S,
             successMessageText: w,
             onFormClose: T,
@@ -9903,7 +9903,7 @@ try {
               idleTimeout: t,
               finalTimeout: n,
               heartbeatInterval: r
-            } = this.options, o = "ui.action.click", i = (0, b.Z7)();
+            } = this.options, o = "ui.action.click", i = (0, y.Z7)();
             if (i && i.op && ["navigation", "pageload"].includes(i.op)) return void(Wo.T && Y.vF.warn(`[Tracing] Did not create ${o} transaction because a pageload or navigation transaction is in progress.`));
             if (e && (e.setFinishReason("interactionInterrupted"), e.end(), e = void 0), !this._getCurrentHub) return void(Wo.T && Y.vF.warn(`[Tracing] Did not create ${o} transaction because _getCurrentHub is invalid.`));
             if (!this._latestRoute.name) return void(Wo.T && Y.vF.warn(`[Tracing] Did not create ${o} transaction because _latestRouteName is missing.`));
@@ -9937,7 +9937,7 @@ try {
             const t = (0, p.KU)(),
               n = void 0 !== t && void 0 !== t.getIntegrationByName ? t.getIntegrationByName("Replay") : void 0,
               r = void 0 !== n ? n.getReplayId() : void 0,
-              o = (0, b.Z7)(),
+              o = (0, y.Z7)(),
               i = (0, p.o5)(),
               a = void 0 !== i ? i.getUser() : void 0;
             e.forEach(e => {
@@ -10056,7 +10056,7 @@ try {
         gi = x.jf.navigator && x.jf.navigator.userAgentData;
       var vi;
 
-      function yi(e, t, n, r) {
+      function bi(e, t, n, r) {
         if ("transaction" !== r.type) throw new TypeError("Profiling events may only be attached to transactions, this should never occur.");
         if (null == n) throw new TypeError(`Cannot construct profiling event envelope without a valid profile. Got ${n} instead.`);
         const o = function(e) {
@@ -10153,7 +10153,7 @@ try {
         }
       }
 
-      function bi(e) {
+      function yi(e) {
         return "pageload" === e.op
       }
       "object" == typeof(vi = gi) && null !== vi && "getHighEntropyValues" in vi && gi.getHighEntropyValues(["architecture", "model", "platform", "platformVersion", "fullVersionList"]).then(e => {
@@ -10213,7 +10213,7 @@ try {
       function ki(e, t, n, r) {
         return function(e) {
           return e.samples.length < 2 ? (ai.T && Y.vF.log("[Profiling] Discarding profile because it contains less than 2 samples"), !1) : !!e.frames.length || (ai.T && Y.vF.log("[Profiling] Discarding profile because it contains no frames"), !1)
-        }(n) ? yi(e, t, n, r) : null
+        }(n) ? bi(e, t, n, r) : null
       }
       const xi = new Map;
 
@@ -10228,7 +10228,7 @@ try {
 
       function Oi(e) {
         let t;
-        bi(e) && (t = 1e3 * (0, K.zf)());
+        yi(e) && (t = 1e3 * (0, K.zf)());
         const n = function() {
           const e = x.jf.Profiler;
           if ("function" != typeof e) return void(ai.T && Y.vF.log("[Profiling] Profiling is not supported by this browser, Profiler interface missing on window object."));
@@ -10274,7 +10274,7 @@ try {
           setupOnce() {},
           setup(e) {
             const t = (0, p.o5)().getTransaction();
-            t && bi(t) && Ei(t) && Oi(t), "function" == typeof e.on ? (e.on("startTransaction", e => {
+            t && yi(t) && Ei(t) && Oi(t), "function" == typeof e.on ? (e.on("startTransaction", e => {
               Ei(e) && Oi(e)
             }), e.on("beforeEnvelope", e => {
               if (!xi.size) return;
@@ -10792,10 +10792,10 @@ try {
       n.r(t), n.d(t, {
         BaseClient: () => E.V,
         DEFAULT_ENVIRONMENT: () => ie.U,
-        FunctionToString: () => be.$,
+        FunctionToString: () => ye.$,
         Hub: () => v.YZ,
         IdleTransaction: () => i.zX,
-        InboundFilters: () => ye.H,
+        InboundFilters: () => be.H,
         Integrations: () => ke,
         LinkedErrors: () => Te,
         ModuleMetadata: () => ae.Y,
@@ -10826,7 +10826,7 @@ try {
         captureMessage: () => g.wd,
         captureSession: () => g.J5,
         close: () => g.VN,
-        closeSession: () => y.Vu,
+        closeSession: () => b.Vu,
         configureScope: () => g.PN,
         continueTrace: () => u.V4,
         convertIntegrationFnToClass: () => J.F,
@@ -10840,7 +10840,7 @@ try {
         ensureHubOnCarrier: () => v.TF,
         extractTraceparentData: () => c.nc,
         flush: () => g.bX,
-        functionToStringIntegration: () => be.Z,
+        functionToStringIntegration: () => ye.Z,
         getActiveSpan: () => u.Bk,
         getActiveTransaction: () => c.Z7,
         getClient: () => g.KU,
@@ -10859,7 +10859,7 @@ try {
         getSpanStatusFromHttpCode: () => l.AJ,
         handleCallbackErrors: () => ne.x,
         hasTracingEnabled: () => ee.w,
-        inboundFiltersIntegration: () => ye.D,
+        inboundFiltersIntegration: () => be.D,
         initAndBind: () => W.J,
         isInitialized: () => g.Dp,
         isSentryRequestUrl: () => te.A,
@@ -10869,7 +10869,7 @@ try {
         makeMain: () => v.gM,
         makeMultiplexedTransport: () => K.N,
         makeOfflineTransport: () => G.BP,
-        makeSession: () => y.fj,
+        makeSession: () => b.fj,
         mergeScopeData: () => X.Rg,
         metrics: () => Ee.qd,
         moduleMetadataIntegration: () => ae.Q,
@@ -10903,7 +10903,7 @@ try {
         startSpanManual: () => u.nV,
         startTransaction: () => g.nb,
         trace: () => u.uP,
-        updateSession: () => y.qO,
+        updateSession: () => b.qO,
         withActiveSpan: () => g.hb,
         withIsolationScope: () => g.rB,
         withMonitor: () => g.T$,
@@ -10911,8 +10911,8 @@ try {
       });
       var r = {};
       n.r(r), n.d(r, {
-        FunctionToString: () => be.$,
-        InboundFilters: () => ye.H,
+        FunctionToString: () => ye.$,
+        InboundFilters: () => be.H,
         LinkedErrors: () => Te
       });
       var o = n(22089),
@@ -10929,8 +10929,8 @@ try {
         m = n(49347),
         g = n(73636),
         v = n(19492),
-        y = n(83755),
-        b = n(51526);
+        b = n(83755),
+        y = n(51526);
       class _ {
         constructor(e, t) {
           this._client = e, this.flushTimeout = 60, this._pendingAggregates = {}, this._isEnabled = !0, this._intervalId = setInterval(() => this.flush(), 1e3 * this.flushTimeout), this._intervalId.unref && this._intervalId.unref(), this._sessionAttrs = t
@@ -10945,7 +10945,7 @@ try {
               attrs: this._sessionAttrs,
               aggregates: e
             };
-          return (0, b.Ce)(t)
+          return (0, y.Ce)(t)
         }
         close() {
           clearInterval(this._intervalId), this._isEnabled = !1, this.flush()
@@ -11004,7 +11004,7 @@ try {
         n && n.sdk && (i.sdk = {
           name: n.sdk.name,
           version: n.sdk.version
-        }), r && o && (i.dsn = (0, A.SB)(o)), t && (i.trace = (0, b.Ce)(t));
+        }), r && o && (i.dsn = (0, A.SB)(o)), t && (i.trace = (0, y.Ce)(t));
         const a = function(e) {
           return [{
             type: "check_in"
@@ -11088,7 +11088,7 @@ try {
                     let t = `'${e.name}' captured as exception`;
                     return "message" in e && "string" == typeof e.message && (t += ` with message '${e.message}'`), t
                   }
-                  return "message" in e && "string" == typeof e.message ? e.message : `Object captured as exception with keys: ${(0,b.HF)(e)}`
+                  return "message" in e && "string" == typeof e.message ? e.message : `Object captured as exception with keys: ${(0,y.HF)(e)}`
                 }(n);
                 i = r && r.syntheticException || new Error(t), i.message = t
               } else i = r && r.syntheticException || new Error(n), i.message = n;
@@ -11465,8 +11465,8 @@ try {
           }
         }),
         ve = (0, J.F)(me, ge);
-      var ye = n(23239),
-        be = n(57279),
+      var be = n(23239),
+        ye = n(57279),
         _e = n(10252);
       const Se = "LinkedErrors",
         we = (0, J._C)((e = {}) => {
@@ -11677,9 +11677,9 @@ try {
         m = n(98140),
         g = n(88650),
         v = n(11952),
-        y = n(11766);
+        b = n(11766);
 
-      function b(e) {
+      function y(e) {
         return "number" == typeof e && isFinite(e)
       }
 
@@ -11816,18 +11816,18 @@ try {
               const c = P[r.name],
                 h = s.getOptions(),
                 g = T(d.k3 + r.startTime),
-                y = T(n.value),
-                b = void 0 !== r.interactionId ? e[r.interactionId] : void 0;
-              if (void 0 === b) return;
+                b = T(n.value),
+                y = void 0 !== r.interactionId ? e[r.interactionId] : void 0;
+              if (void 0 === y) return;
               const {
                 routeName: _,
                 parentContext: S,
                 activeTransaction: w,
                 user: E,
                 replayId: k
-              } = b, x = void 0 !== E ? E.email || E.id || E.ip_address : void 0, C = void 0 !== w ? w.getProfileId() : void 0, I = new i.L({
+              } = y, x = void 0 !== E ? E.email || E.id || E.ip_address : void 0, C = void 0 !== w ? w.getProfileId() : void 0, I = new i.L({
                 startTimestamp: g,
-                endTimestamp: g + y,
+                endTimestamp: g + b,
                 op: `ui.interaction.${c}`,
                 name: (0, p.Hd)(r.target),
                 attributes: {
@@ -11959,7 +11959,7 @@ try {
                     startTimestamp: i
                   })
                 }(e, t, r, o, n);
-                const i = (0, y.N)(),
+                const i = (0, b.N)(),
                   a = t.startTime < i.firstHiddenTime;
                 "first-paint" === t.name && a && (m.T && f.vF.log("[Measurements] Adding FP"), I.fp = {
                   value: t.startTime,
@@ -11992,10 +11992,10 @@ try {
             const t = v.j.navigator;
             if (!t) return;
             const n = t.connection;
-            n && (n.effectiveType && e.setTag("effectiveConnectionType", n.effectiveType), n.type && e.setTag("connectionType", n.type), b(n.rtt) && (I["connection.rtt"] = {
+            n && (n.effectiveType && e.setTag("effectiveConnectionType", n.effectiveType), n.type && e.setTag("connectionType", n.type), y(n.rtt) && (I["connection.rtt"] = {
               value: n.rtt,
               unit: "millisecond"
-            })), b(t.deviceMemory) && e.setTag("deviceMemory", `${t.deviceMemory} GB`), b(t.hardwareConcurrency) && e.setTag("hardwareConcurrency", String(t.hardwareConcurrency))
+            })), y(t.deviceMemory) && e.setTag("deviceMemory", `${t.deviceMemory} GB`), y(t.hardwareConcurrency) && e.setTag("hardwareConcurrency", String(t.hardwareConcurrency))
           }(e), "pageload" === o) {
           ! function(e) {
             const t = (0, S.z)();
@@ -12194,8 +12194,8 @@ try {
       function f(e, t, n, f, m, g) {
         const {
           normalizeDepth: v = 3,
-          normalizeMaxBreadth: y = 1e3
-        } = e, b = {
+          normalizeMaxBreadth: b = 1e3
+        } = e, y = {
           ...t,
           event_id: t.event_id || n.event_id || (0, o.eJ)(),
           timestamp: t.timestamp || (0, s.lu)()
@@ -12212,10 +12212,10 @@ try {
           s && s.value && (s.value = (0, a.xv)(s.value, i));
           const l = e.request;
           l && l.url && (l.url = (0, a.xv)(l.url, i))
-        }(b, e),
+        }(y, e),
         function(e, t) {
           t.length > 0 && (e.sdk = e.sdk || {}, e.sdk.integrations = [...e.sdk.integrations || [], ...t])
-        }(b, _), void 0 === t.type && function(e, t) {
+        }(y, _), void 0 === t.type && function(e, t) {
           const n = r.OW._sentryDebugIds;
           if (!n) return;
           let o;
@@ -12241,13 +12241,13 @@ try {
               })
             })
           } catch (e) {}
-        }(b, e.stackParser);
+        }(y, e.stackParser);
         const S = function(e, t) {
           if (!t) return e;
           const n = e ? e.clone() : new u.HG;
           return n.update(t), n
         }(f, n.captureContext);
-        n.mechanism && (0, o.M6)(b, n.mechanism);
+        n.mechanism && (0, o.M6)(y, n.mechanism);
         const w = m && m.getEventProcessors ? m.getEventProcessors() : [],
           T = (0, u.m6)().getScopeData();
         if (g) {
@@ -12259,9 +12259,9 @@ try {
           (0, d.Rg)(T, e)
         }
         const E = [...n.attachments || [], ...T.attachments];
-        E.length && (n.attachments = E), (0, d.e2)(b, T);
+        E.length && (n.attachments = E), (0, d.e2)(y, T);
         const k = [...w, ...(0, l.lG)(), ...T.eventProcessors];
-        return (0, l.jB)(k, b, n).then(e => (e && function(e) {
+        return (0, l.jB)(k, y, n).then(e => (e && function(e) {
           const t = {};
           try {
             e.exception.values.forEach(e => {
@@ -12306,7 +12306,7 @@ try {
             const r = (0, p.et)(e).data;
             return r && (e.data = (0, i.S8)(r, t, n)), e
           })), r
-        }(e, v, y) : e))
+        }(e, v, b) : e))
       }
       const h = new WeakMap;
 
@@ -12910,8 +12910,8 @@ try {
         m = n(98509),
         g = n(44568);
       var v = n(83755),
-        y = n(71255),
-        b = n(37900);
+        b = n(71255),
+        y = n(37900);
       const _ = "Not capturing exception because it's already been captured.";
       class S {
         constructor(e) {
@@ -13088,7 +13088,7 @@ try {
         _prepareEvent(e, t, n, r = (0, h.rm)()) {
           const o = this.getOptions(),
             i = Object.keys(this._integrations);
-          return !t.integrations && i.length > 0 && (t.integrations = i), this.emit("preprocessEvent", e, t), (0, b.mG)(o, e, t, n, this, r).then(e => {
+          return !t.integrations && i.length > 0 && (t.integrations = i), this.emit("preprocessEvent", e, t), (0, y.mG)(o, e, t, n, this, r).then(e => {
             if (null === e) return e;
             const t = {
               ...r.getPropagationContext(),
@@ -13109,7 +13109,7 @@ try {
                 },
                 ...e.contexts
               };
-              const s = a || (0, y.l)(r, this, n);
+              const s = a || (0, b.l)(r, this, n);
               e.sdkProcessingMetadata = {
                 dynamicSamplingContext: s,
                 ...e.sdkProcessingMetadata
@@ -13471,18 +13471,18 @@ try {
           return v.getCurrentHub
         }
       });
-      var y = n(3127);
+      var b = n(3127);
       Object.defineProperty(t, "withSentryRouting", {
         enumerable: !0,
         get: function() {
-          return y.withSentryRouting
+          return b.withSentryRouting
         }
       });
-      var b = n(4917);
+      var y = n(4917);
       Object.defineProperty(t, "createSentryMiddleware", {
         enumerable: !0,
         get: function() {
-          return b.createSentryMiddleware
+          return y.createSentryMiddleware
         }
       });
       var _ = n(7319);
@@ -14496,10 +14496,10 @@ try {
       }
 
       function v(e) {
-        return y(e, new Map)
+        return b(e, new Map)
       }
 
-      function y(e, t) {
+      function b(e, t) {
         if (function(e) {
             if (!(0, i.Qd)(e)) return !1;
             try {
@@ -14513,7 +14513,7 @@ try {
           if (void 0 !== n) return n;
           const r = {};
           t.set(e, r);
-          for (const n of Object.keys(e)) void 0 !== e[n] && (r[n] = y(e[n], t));
+          for (const n of Object.keys(e)) void 0 !== e[n] && (r[n] = b(e[n], t));
           return r
         }
         if (Array.isArray(e)) {
@@ -14521,7 +14521,7 @@ try {
           if (void 0 !== n) return n;
           const r = [];
           return t.set(e, r), e.forEach(e => {
-            r.push(y(e, t))
+            r.push(b(e, t))
           }), r
         }
         return e
@@ -14666,8 +14666,8 @@ try {
         m = n(30359),
         g = n(98140),
         v = n(43426),
-        y = n(88650),
-        b = n(35943),
+        b = n(88650),
+        y = n(35943),
         _ = n(84501),
         S = n(11952);
       const w = {
@@ -14688,9 +14688,9 @@ try {
               ...w,
               ...e
             },
-            o = (0, b.bk)(),
+            o = (0, y.bk)(),
             a = {};
-          n.enableInp && (0, b.ZZ)(a, n.interactionsSampleRate), n.enableLongTask && (0, b.c8)(), n._experiments.enableInteractions && (0, b.DI)();
+          n.enableInp && (0, y.ZZ)(a, n.interactionsSampleRate), n.enableLongTask && (0, y.c8)(), n._experiments.enableInteractions && (0, y.DI)();
           const d = {
             name: void 0,
             context: void 0
@@ -14737,14 +14737,14 @@ try {
             } : m.metadata, d.name = m.name, d.context = m, !1 === m.sampled && g.T && p.vF.log(`[Tracing] Will not send ${m.op} transaction because of beforeNavigate.`), g.T && p.vF.log(`[Tracing] Starting ${m.op} transaction on scope`);
             const {
               location: v
-            } = S.j, y = (0, r.p)(t, m, a, s, !0, {
+            } = S.j, b = (0, r.p)(t, m, a, s, !0, {
               location: v
             }, c, u);
             return u && S.j.document && (S.j.document.addEventListener("readystatechange", () => {
-              ["interactive", "complete"].includes(S.j.document.readyState) && y.sendAutoFinishSignal()
-            }), ["interactive", "complete"].includes(S.j.document.readyState) && y.sendAutoFinishSignal()), y.registerBeforeFinishCallback(e => {
-              o(), (0, b.QU)(e)
-            }), y
+              ["interactive", "complete"].includes(S.j.document.readyState) && b.sendAutoFinishSignal()
+            }), ["interactive", "complete"].includes(S.j.document.readyState) && b.sendAutoFinishSignal()), b.registerBeforeFinishCallback(e => {
+              o(), (0, y.QU)(e)
+            }), b
           }
           return {
             name: "BrowserTracing",
@@ -14753,7 +14753,7 @@ try {
               const o = e.getOptions(),
                 {
                   markBackgroundSpan: h,
-                  traceFetch: b,
+                  traceFetch: y,
                   traceXHR: w,
                   shouldCreateSpanForRequest: x,
                   enableHTTPTimings: O,
@@ -14871,9 +14871,9 @@ try {
                     }
                   })
                 };
-                (0, y.wv)("event", n), (0, y.wv)("first-input", n)
+                (0, b.wv)("event", n), (0, b.wv)("first-input", n)
               }(a, d), (0, _.Qb)({
-                traceFetch: b,
+                traceFetch: y,
                 traceXHR: w,
                 tracePropagationTargets: A,
                 shouldCreateSpanForRequest: x,
@@ -15049,12 +15049,12 @@ try {
     54531: (e, t, n) => {
       "use strict";
       n.d(t, {
-        Bk: () => y,
+        Bk: () => b,
         D7: () => m,
         Lb: () => E,
         Lk: () => h,
         Uk: () => v,
-        V4: () => b,
+        V4: () => y,
         nV: () => g,
         uP: () => f
       });
@@ -15140,7 +15140,7 @@ try {
         if (!(0, p.w)()) return;
         const t = S(e),
           n = (0, s.BF)(),
-          r = e.scope ? e.scope.getSpan() : y();
+          r = e.scope ? e.scope.getSpan() : b();
         if (e.onlyIfParent && !r) return;
         const o = (e.scope || (0, u.o5)()).clone();
         return _(n, {
@@ -15151,10 +15151,10 @@ try {
         })
       }
 
-      function y() {
+      function b() {
         return (0, u.o5)().getSpan()
       }
-      const b = ({
+      const y = ({
         sentryTrace: e,
         baggage: t
       }, n) => {
@@ -15466,7 +15466,7 @@ try {
         Integrations: () => r.Integrations,
         LinkedErrors: () => r.LinkedErrors,
         ModuleMetadata: () => r.ModuleMetadata,
-        Profiler: () => y,
+        Profiler: () => b,
         Replay: () => r.Replay,
         ReplayCanvas: () => r.ReplayCanvas,
         SDK_VERSION: () => r.SDK_VERSION,
@@ -15585,7 +15585,7 @@ try {
         withActiveSpan: () => r.withActiveSpan,
         withErrorBoundary: () => I,
         withIsolationScope: () => r.withIsolationScope,
-        withProfiler: () => b,
+        withProfiler: () => y,
         withScope: () => r.withScope,
         withSentryReactRouterV6Routing: () => he,
         withSentryRouting: () => J,
@@ -15614,7 +15614,7 @@ try {
         m = "ui.react.mount",
         g = "/home/runner/work/sentry-javascript/sentry-javascript/packages/react/src/profiler.tsx",
         v = "unknown";
-      class y extends f.Component {
+      class b extends f.Component {
         static __initStatic() {
           this.defaultProps = {
             disabled: !1,
@@ -15695,9 +15695,9 @@ try {
         }
       }
 
-      function b(e, t) {
+      function y(e, t) {
         const n = t && t.name || e.displayName || e.name || v,
-          r = r => f.createElement(y, {
+          r = r => f.createElement(b, {
             ...t,
             name: n,
             updateProps: r,
@@ -15750,7 +15750,7 @@ try {
           }
         }), [])
       }
-      y.__initStatic();
+      b.__initStatic();
       var S = n(90965),
         w = n(39533);
       const T = "undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__,
@@ -16450,7 +16450,7 @@ try {
                     args: i
                   } = n, [a, c] = i;
                   o && function(e, t, n, o) {
-                    if (y(e, n.status, n.url)) {
+                    if (b(e, n.status, n.url)) {
                       const e = function(e, t) {
                         return !t && e instanceof Request || e instanceof Request && e.bodyUsed ? e : new Request(e, t)
                       }(t, o);
@@ -16489,7 +16489,7 @@ try {
                           cookies: r
                         }
                       }));
-                      const u = b({
+                      const u = y({
                         url: e.url,
                         method: e.method,
                         status: n.status,
@@ -16515,7 +16515,7 @@ try {
                   } = i;
                   try {
                     ! function(e, t, n, o) {
-                      if (y(e, t.status, t.responseURL)) {
+                      if (b(e, t.status, t.responseURL)) {
                         let e, i, a;
                         if (_()) {
                           try {
@@ -16537,7 +16537,7 @@ try {
                           }
                           e = o
                         }
-                        const c = b({
+                        const c = y({
                           url: t.responseURL,
                           method: n,
                           status: t.status,
@@ -16572,14 +16572,14 @@ try {
         }, {})
       }
 
-      function y(e, t, n) {
+      function b(e, t, n) {
         return function(e, t) {
           return e.some(e => "number" == typeof e ? e === t : t >= e[0] && t <= e[1])
         }(e.failedRequestStatusCodes, t) && (o = e.failedRequestTargets, a = n, o.some(e => "string" == typeof e ? a.includes(e) : e.test(a))) && !(0, i.A)(n, (0, r.KU)());
         var o, a
       }
 
-      function b(e) {
+      function y(e) {
         const t = `HTTP Client Error with status code: ${e.status}`,
           n = {
             message: t,
@@ -16987,8 +16987,8 @@ try {
           addAction: m,
           addFilter: g,
           removeAction: v,
-          removeFilter: y,
-          hasAction: b,
+          removeFilter: b,
+          hasAction: y,
           hasFilter: _,
           removeAllActions: S,
           removeAllFilters: w,
@@ -17100,13 +17100,13 @@ try {
         Wt: () => S,
         ZQ: () => v,
         bX: () => R,
-        cx: () => b,
+        cx: () => y,
         gV: () => T,
         hb: () => x,
         ky: () => L,
         l7: () => _,
         nb: () => C,
-        o: () => y,
+        o: () => b,
         o5: () => N,
         r: () => m,
         rB: () => k,
@@ -17148,11 +17148,11 @@ try {
         (0, u.BF)().addBreadcrumb(e, t)
       }
 
-      function y(e, t) {
+      function b(e, t) {
         (0, u.BF)().setContext(e, t)
       }
 
-      function b(e) {
+      function y(e) {
         (0, u.BF)().setExtras(e)
       }
 
@@ -17330,7 +17330,7 @@ try {
       "use strict";
       n.d(t, {
         B: () => _,
-        F: () => b
+        F: () => y
       });
       var r = n(73636),
         o = n(98509),
@@ -17347,8 +17347,8 @@ try {
         m = n(30359),
         g = n(79854),
         v = n(17005);
-      const y = "Breadcrumbs",
-        b = (0, o._C)((e = {}) => {
+      const b = "Breadcrumbs",
+        y = (0, o._C)((e = {}) => {
           const t = {
             console: !0,
             dom: !0,
@@ -17359,7 +17359,7 @@ try {
             ...e
           };
           return {
-            name: y,
+            name: b,
             setupOnce() {},
             setup(e) {
               t.console && (0, d.P)(function(e) {
@@ -17514,7 +17514,7 @@ try {
             }
           }
         }),
-        _ = (0, o.F)(y, b)
+        _ = (0, o.F)(b, y)
     },
     75054: (e, t, n) => {
       "use strict";
@@ -18323,7 +18323,7 @@ try {
                   const {
                     stackParser: n,
                     attachStacktrace: o
-                  } = y();
+                  } = b();
                   if ((0, r.KU)() !== e || (0, p.jN)()) return;
                   const {
                     msg: i,
@@ -18358,7 +18358,7 @@ try {
                   const {
                     stackParser: n,
                     attachStacktrace: o
-                  } = y();
+                  } = b();
                   if ((0, r.KU)() !== e || (0, p.jN)()) return;
                   const i = function(e) {
                       if ((0, a.sO)(e)) return e;
@@ -18413,7 +18413,7 @@ try {
         u.T && s.vF.log(`Global Handler attached: ${e}`)
       }
 
-      function y() {
+      function b() {
         const e = (0, r.KU)();
         return e && e.getOptions() || {
           stackParser: () => [],
@@ -18693,16 +18693,16 @@ try {
         }, v(e)
       }
 
-      function y() {
+      function b() {
         try {
           var e = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function() {}))
         } catch (e) {}
-        return (y = function() {
+        return (b = function() {
           return !!e
         })()
       }
 
-      function b(e) {
+      function y(e) {
         return function(e) {
           if (Array.isArray(e)) return c(e)
         }(e) || function(e) {
@@ -18946,16 +18946,16 @@ try {
       }
 
       function ue(e, t, n, r, o, i, a, s, c) {
-        for (var l = 0, u = 0, d = a, p = 0, f = 0, h = 0, m = 1, g = 1, v = 1, y = 0, b = "", _ = o, S = i, T = r, E = b; g;) switch (h = y, y = H()) {
+        for (var l = 0, u = 0, d = a, p = 0, f = 0, h = 0, m = 1, g = 1, v = 1, b = 0, y = "", _ = o, S = i, T = r, E = y; g;) switch (h = b, b = H()) {
           case 40:
             if (108 != h && 58 == C(E, d - 1)) {
-              -1 != x(E += k(K(y), "&", "&\f"), "&\f") && (v = -1);
+              -1 != x(E += k(K(b), "&", "&\f"), "&\f") && (v = -1);
               break
             }
           case 34:
           case 39:
           case 91:
-            E += K(y);
+            E += K(b);
             break;
           case 9:
           case 10:
@@ -18981,7 +18981,7 @@ try {
           case 125 * m:
           case 59:
           case 0:
-            switch (y) {
+            switch (b) {
               case 0:
               case 125:
                 g = 0;
@@ -18991,28 +18991,28 @@ try {
               case 59:
                 E += ";";
               default:
-                if (M(T = de(E, t, n, l, u, o, s, b, _ = [], S = [], d), i), 123 === y)
+                if (M(T = de(E, t, n, l, u, o, s, y, _ = [], S = [], d), i), 123 === b)
                   if (0 === u) ue(E, t, T, T, _, i, d, s, S);
                   else switch (99 === p && 110 === C(E, 3) ? 100 : p) {
                     case 100:
                     case 108:
                     case 109:
                     case 115:
-                      ue(e, T, T, r && M(de(e, T, T, 0, 0, o, s, b, o, _ = [], d), S), o, S, d, s, r ? _ : S);
+                      ue(e, T, T, r && M(de(e, T, T, 0, 0, o, s, y, o, _ = [], d), S), o, S, d, s, r ? _ : S);
                       break;
                     default:
                       ue(E, T, T, T, [""], S, 0, s, S)
                   }
             }
-            l = u = f = 0, m = v = 1, b = E = "", d = a;
+            l = u = f = 0, m = v = 1, y = E = "", d = a;
             break;
           case 58:
             d = 1 + O(E), f = h;
           default:
             if (m < 1)
-              if (123 == y) --m;
-              else if (125 == y && 0 == m++ && 125 == U()) continue;
-            switch (E += w(y), y * m) {
+              if (123 == b) --m;
+              else if (125 == b && 0 == m++ && 125 == U()) continue;
+            switch (E += w(b), b * m) {
               case 38:
                 v = u > 0 ? 1 : (E += "\f", -1);
                 break;
@@ -19020,7 +19020,7 @@ try {
                 s[l++] = (O(E) - 1) * v, v = 1;
                 break;
               case 64:
-                45 === $() && (E += K(H())), p = $(), u = d = O(b = E += Q(z())), y++;
+                45 === $() && (E += K(H())), p = $(), u = d = O(y = E += Q(z())), b++;
                 break;
               case 45:
                 45 === h && 2 == O(E) && (m = 0)
@@ -19031,7 +19031,7 @@ try {
 
       function de(e, t, n, r, o, i, a, s, c, l, u) {
         for (var d = o - 1, p = 0 === o ? i : [""], f = R(p), h = 0, m = 0, g = 0; h < r; ++h)
-          for (var v = 0, y = I(e, d + 1, d = S(m = a[h])), b = e; v < f; ++v)(b = E(m > 0 ? p[v] + " " + y : k(y, /&\f/g, p[v]))) && (c[g++] = b);
+          for (var v = 0, b = I(e, d + 1, d = S(m = a[h])), y = e; v < f; ++v)(y = E(m > 0 ? p[v] + " " + b : k(b, /&\f/g, p[v]))) && (c[g++] = y);
         return j(e, t, n, 0 === o ? oe : s, c, l, u)
       }
 
@@ -19089,7 +19089,7 @@ try {
           }
         };
 
-      function ye(e, t) {
+      function be(e, t) {
         switch (function(e, t) {
             return 45 ^ C(e, 0) ? (((t << 2 ^ C(e, 0)) << 2 ^ C(e, 1)) << 2 ^ C(e, 2)) << 2 ^ C(e, 3) : 0
           }(e, t)) {
@@ -19176,7 +19176,7 @@ try {
               case 102:
                 return k(e, /(.+:)(.+)-([^]+)/, "$1" + ne + "$2-$3$1" + te + (108 == C(e, t + 3) ? "$3" : "$2-$3")) + e;
               case 115:
-                return ~x(e, "stretch") ? ye(k(e, "stretch", "fill-available"), t) + e : e
+                return ~x(e, "stretch") ? be(k(e, "stretch", "fill-available"), t) + e : e
             }
             break;
           case 4949:
@@ -19202,10 +19202,10 @@ try {
         }
         return e
       }
-      var be = [function(e, t, n, r) {
+      var ye = [function(e, t, n, r) {
           if (e.length > -1 && !e.return) switch (e.type) {
             case ie:
-              e.return = ye(e.value, e.length);
+              e.return = be(e.value, e.length);
               break;
             case ae:
               return se([B(e, {
@@ -19244,7 +19244,7 @@ try {
               -1 !== e.getAttribute("data-emotion").indexOf(" ") && (document.head.appendChild(e), e.setAttribute("data-s", ""))
             })
           }
-          var r, o, i = e.stylisPlugins || be,
+          var r, o, i = e.stylisPlugins || ye,
             a = {},
             s = [];
           r = e.container || document.head, Array.prototype.forEach.call(document.querySelectorAll('style[data-emotion^="' + t + ' "]'), function(e) {
@@ -19629,7 +19629,7 @@ try {
       }
       var gt = ["children", "innerProps"],
         vt = ["children", "innerProps"];
-      var yt, bt, _t, St = function(e) {
+      var bt, yt, _t, St = function(e) {
           return "auto" === e ? "bottom" : e
         },
         wt = (0, p.createContext)(null),
@@ -19648,8 +19648,8 @@ try {
             m = f[1],
             g = u((0, p.useState)(null), 2),
             v = g[0],
-            y = g[1],
-            b = c.spacing.controlHeight;
+            b = g[1],
+            y = c.spacing.controlHeight;
           return Je(function() {
             var e = d.current;
             if (e) {
@@ -19683,15 +19683,15 @@ try {
                     m = p.top,
                     g = n.offsetParent.getBoundingClientRect().top,
                     v = a || ot(u = c) ? window.innerHeight : u.clientHeight,
-                    y = it(c),
-                    b = parseInt(getComputedStyle(n).marginBottom, 10),
+                    b = it(c),
+                    y = parseInt(getComputedStyle(n).marginBottom, 10),
                     _ = parseInt(getComputedStyle(n).marginTop, 10),
                     S = g - _,
                     w = v - m,
-                    T = S + y,
-                    E = d - y - m,
-                    k = f - v + y + b,
-                    x = y + m - _,
+                    T = S + b,
+                    E = d - b - m,
+                    k = f - v + b + y,
+                    x = b + m - _,
                     C = 160;
                   switch (o) {
                     case "auto":
@@ -19706,12 +19706,12 @@ try {
                       };
                       if (!a && E >= r || a && w >= r) return i && st(c, k, C), {
                         placement: "bottom",
-                        maxHeight: a ? w - b : E - b
+                        maxHeight: a ? w - y : E - y
                       };
                       if ("auto" === o || a) {
                         var I = t,
                           O = a ? S : T;
-                        return O >= r && (I = Math.min(O - b - s, t)), {
+                        return O >= r && (I = Math.min(O - y - s, t)), {
                           placement: "top",
                           maxHeight: I
                         }
@@ -19751,11 +19751,11 @@ try {
                   placement: o,
                   shouldScroll: a && !t,
                   isFixedPosition: t,
-                  controlHeight: b
+                  controlHeight: y
                 });
-              m(s.maxHeight), y(s.placement), null == l || l(s.placement)
+              m(s.maxHeight), b(s.placement), null == l || l(s.placement)
             }
-          }, [r, o, i, a, n, l, b]), t({
+          }, [r, o, i, a, n, l, y]), t({
             ref: d,
             placerProps: s(s({}, e), {}, {
               placement: v || St(o),
@@ -19838,7 +19838,7 @@ try {
               return "_EMO_" + this.name + "_" + this.styles + "_EMO_"
             }
           }
-        }(yt || (bt = ["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"], _t || (_t = bt.slice(0)), yt = Object.freeze(Object.defineProperties(bt, {
+        }(bt || (yt = ["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"], _t || (_t = yt.slice(0)), bt = Object.freeze(Object.defineProperties(yt, {
           raw: {
             value: Object.freeze(_t)
           }
@@ -20060,8 +20060,8 @@ try {
                 }
               }, []),
               v = u((0, p.useState)(null), 2),
-              y = v[0],
-              b = v[1],
+              b = v[0],
+              y = v[1],
               _ = (0, p.useCallback)(function() {
                 if (r) {
                   var e = function(e) {
@@ -20077,12 +20077,12 @@ try {
                     }(r),
                     t = "fixed" === a ? 0 : window.pageYOffset,
                     n = e[f] + t;
-                  n === (null == y ? void 0 : y.offset) && e.left === (null == y ? void 0 : y.rect.left) && e.width === (null == y ? void 0 : y.rect.width) || b({
+                  n === (null == b ? void 0 : b.offset) && e.left === (null == b ? void 0 : b.rect.left) && e.width === (null == b ? void 0 : b.rect.width) || y({
                     offset: n,
                     rect: e
                   })
                 }
-              }, [r, a, f, null == y ? void 0 : y.offset, null == y ? void 0 : y.rect.left, null == y ? void 0 : y.rect.width]);
+              }, [r, a, f, null == b ? void 0 : b.offset, null == b ? void 0 : b.rect.left, null == b ? void 0 : b.rect.width]);
             Je(function() {
               _()
             }, [_]);
@@ -20097,13 +20097,13 @@ try {
             var w = (0, p.useCallback)(function(e) {
               c.current = e, S()
             }, [S]);
-            if (!t && "fixed" !== a || !y) return null;
+            if (!t && "fixed" !== a || !b) return null;
             var T = qe("div", h({
               ref: w
             }, rt(s(s({}, e), {}, {
-              offset: y.offset,
+              offset: b.offset,
               position: a,
-              rect: y.rect
+              rect: b.rect
             }), "menuPortal", {
               "menu-portal": !0
             }), o), n);
@@ -20339,8 +20339,8 @@ try {
             m = c.isMulti,
             g = c.isOptionDisabled,
             v = c.isSearchable,
-            y = c.menuIsOpen,
-            b = c.options,
+            b = c.menuIsOpen,
+            y = c.options,
             _ = c.screenReaderStatus,
             S = c.tabSelectsValue,
             w = c.isLoading,
@@ -20391,7 +20391,7 @@ try {
             }, [n, r, f, g, k, o, a, u]),
             I = (0, p.useMemo)(function() {
               var e = "";
-              if (y && b.length && !w && k.onFilter) {
+              if (b && y.length && !w && k.onFilter) {
                 var t = _({
                   count: o.length
                 });
@@ -20401,12 +20401,12 @@ try {
                 })
               }
               return e
-            }, [o, h, y, k, b, _, w]),
+            }, [o, h, b, k, y, _, w]),
             O = "initial-input-focus" === (null == t ? void 0 : t.action),
             R = (0, p.useMemo)(function() {
               var e = "";
               if (k.guidance) {
-                var t = r ? "value" : y ? "menu" : "input";
+                var t = r ? "value" : b ? "menu" : "input";
                 e = k.guidance({
                   "aria-label": T,
                   context: t,
@@ -20418,7 +20418,7 @@ try {
                 })
               }
               return e
-            }, [T, n, r, m, g, v, y, k, a, S, O]),
+            }, [T, n, r, m, g, v, b, k, a, S, O]),
             M = qe(p.Fragment, null, qe("span", {
               id: "aria-selection"
             }, x), qe("span", {
@@ -20786,8 +20786,8 @@ try {
         return "ontouchstart" in window || navigator.maxTouchPoints
       }
       var vn = !("undefined" == typeof window || !window.document || !window.document.createElement),
-        yn = 0,
-        bn = {
+        bn = 0,
+        yn = {
           capture: !1,
           passive: !1
         },
@@ -20882,7 +20882,7 @@ try {
                   if (r && dn.forEach(function(e) {
                       var t = n && n[e];
                       o.current[e] = t
-                    }), r && yn < 1) {
+                    }), r && bn < 1) {
                     var i = parseInt(o.current.paddingRight, 10) || 0,
                       a = document.body ? document.body.clientWidth : 0,
                       s = window.innerWidth - a + i || 0;
@@ -20891,17 +20891,17 @@ try {
                       n && (n[e] = t)
                     }), n && (n.paddingRight = "".concat(s, "px"))
                   }
-                  t && gn() && (t.addEventListener("touchmove", fn, bn), e && (e.addEventListener("touchstart", mn, bn), e.addEventListener("touchmove", hn, bn))), yn += 1
+                  t && gn() && (t.addEventListener("touchmove", fn, yn), e && (e.addEventListener("touchstart", mn, yn), e.addEventListener("touchmove", hn, yn))), bn += 1
                 }
               }, [r]),
               s = (0, p.useCallback)(function(e) {
                 if (vn) {
                   var t = document.body,
                     n = t && t.style;
-                  yn = Math.max(yn - 1, 0), r && yn < 1 && dn.forEach(function(e) {
+                  bn = Math.max(bn - 1, 0), r && bn < 1 && dn.forEach(function(e) {
                     var t = o.current[e];
                     n && (n[e] = t)
-                  }), t && gn() && (t.removeEventListener("touchmove", fn, bn), e && (e.removeEventListener("touchstart", mn, bn), e.removeEventListener("touchmove", hn, bn)))
+                  }), t && gn() && (t.removeEventListener("touchmove", fn, yn), e && (e.removeEventListener("touchstart", mn, yn), e.removeEventListener("touchmove", hn, yn)))
                 }
               }, [r]);
             return (0, p.useEffect)(function() {
@@ -21393,7 +21393,7 @@ try {
 
       function An(e) {
         return e.reduce(function(e, t) {
-          return "group" === t.type ? e.push.apply(e, b(t.options.map(function(e) {
+          return "group" === t.type ? e.push.apply(e, y(t.options.map(function(e) {
             return e.data
           }))) : e.push(t.data), e
         }, [])
@@ -21401,7 +21401,7 @@ try {
 
       function Pn(e, t) {
         return e.reduce(function(e, n) {
-          return "group" === n.type ? e.push.apply(e, b(n.options.map(function(e) {
+          return "group" === n.type ? e.push.apply(e, y(n.options.map(function(e) {
             return {
               data: e.data,
               id: "".concat(t, "-").concat(n.index, "-").concat(e.index)
@@ -21475,7 +21475,7 @@ try {
             }), t && g(e, t)
           }(n, e);
           var t = function(e) {
-            var t = y();
+            var t = b();
             return function() {
               var n, o = v(e);
               if (t) {
@@ -21560,7 +21560,7 @@ try {
                     option: e,
                     name: i
                   });
-                  o ? r.setValue([].concat(b(a), [e]), "select-option", e) : r.setValue(e, "select-option")
+                  o ? r.setValue([].concat(y(a), [e]), "select-option", e) : r.setValue(e, "select-option")
                 }
                 n && r.blurInput()
               }, r.removeValue = function(e) {
@@ -22066,7 +22066,7 @@ try {
                 m = d.ariaSelection,
                 g = this.commonProps,
                 v = r || this.getElementId("input"),
-                y = s(s(s({
+                b = s(s(s({
                   "aria-autocomplete": "list",
                   "aria-expanded": c,
                   "aria-haspopup": !0,
@@ -22102,7 +22102,7 @@ try {
                 form: a,
                 type: "text",
                 value: o
-              }, y)) : p.createElement(un, h({
+              }, b)) : p.createElement(un, h({
                 id: v,
                 innerRef: this.getInputRef,
                 onBlur: this.onInputBlur,
@@ -22113,7 +22113,7 @@ try {
                 inputMode: "none",
                 form: a,
                 value: ""
-              }, y))
+              }, b))
             }
           }, {
             key: "renderPlaceholderOrValue",
@@ -22134,8 +22134,8 @@ try {
                 m = l.inputValue,
                 g = l.placeholder,
                 v = this.state,
-                y = v.selectValue,
-                b = v.focusedValue,
+                b = v.selectValue,
+                y = v.focusedValue,
                 _ = v.isFocused;
               if (!this.hasValue() || !u) return m ? null : p.createElement(s, h({}, c, {
                 key: "placeholder",
@@ -22145,8 +22145,8 @@ try {
                   id: this.getElementId("placeholder")
                 }
               }), g);
-              if (f) return y.map(function(t, a) {
-                var s = t === b,
+              if (f) return b.map(function(t, a) {
+                var s = t === y,
                   l = "".concat(e.getOptionLabel(t), "-").concat(e.getOptionValue(t));
                 return p.createElement(n, h({}, c, {
                   components: {
@@ -22173,7 +22173,7 @@ try {
                 }), e.formatOptionLabel(t, "value"))
               });
               if (m) return null;
-              var S = y[0];
+              var S = b[0];
               return p.createElement(a, h({}, c, {
                 data: S,
                 isDisabled: d
@@ -22269,8 +22269,8 @@ try {
                 m = f.captureMenuScroll,
                 g = f.inputValue,
                 v = f.isLoading,
-                y = f.loadingMessage,
-                b = f.minMenuHeight,
+                b = f.loadingMessage,
+                y = f.minMenuHeight,
                 _ = f.maxMenuHeight,
                 S = f.menuIsOpen,
                 w = f.menuPlacement,
@@ -22297,7 +22297,7 @@ try {
                     return e.selectOption(o)
                   },
                   v = "".concat(e.getElementId("option"), "-").concat(n),
-                  y = {
+                  b = {
                     id: v,
                     onClick: g,
                     onMouseMove: m,
@@ -22307,7 +22307,7 @@ try {
                     "aria-selected": e.state.isAppleDevice ? void 0 : a
                   };
                 return p.createElement(l, h({}, u, {
-                  innerProps: y,
+                  innerProps: b,
                   data: o,
                   isDisabled: i,
                   isSelected: a,
@@ -22343,7 +22343,7 @@ try {
                 if ("option" === t.type) return M(t, "".concat(t.index))
               });
               else if (v) {
-                var A = y({
+                var A = b({
                   inputValue: g
                 });
                 if (null === A) return null;
@@ -22356,7 +22356,7 @@ try {
                 R = p.createElement(c, u, P)
               }
               var D = {
-                  minMenuHeight: b,
+                  minMenuHeight: y,
                   maxMenuHeight: _,
                   menuPlacement: w,
                   menuPosition: T,
@@ -22533,8 +22533,8 @@ try {
                 var v = p ? function(e, t) {
                     return An(Mn(e, t))
                   }(e, m) : [],
-                  y = p ? Pn(Mn(e, m), "".concat(l, "-option")) : [],
-                  b = r ? function(e, t) {
+                  b = p ? Pn(Mn(e, m), "".concat(l, "-option")) : [],
+                  y = r ? function(e, t) {
                     var n = e.focusedValue,
                       r = e.selectValue.indexOf(n);
                     if (r > -1) {
@@ -22550,9 +22550,9 @@ try {
                 g = {
                   selectValue: m,
                   focusedOption: _,
-                  focusedOptionId: Nn(y, _),
-                  focusableOptionsWithIds: y,
-                  focusedValue: b,
+                  focusedOptionId: Nn(b, _),
+                  focusableOptionsWithIds: b,
+                  focusedValue: y,
                   clearFocusValueOnUpdate: !1
                 }
               }
@@ -22589,15 +22589,15 @@ try {
               m = e.onInputChange,
               g = e.onMenuClose,
               v = e.onMenuOpen,
-              y = e.value,
-              b = d(e, f),
+              b = e.value,
+              y = d(e, f),
               _ = u((0, p.useState)(void 0 !== c ? c : n), 2),
               S = _[0],
               w = _[1],
               T = u((0, p.useState)(void 0 !== l ? l : o), 2),
               E = T[0],
               k = T[1],
-              x = u((0, p.useState)(void 0 !== y ? y : a), 2),
+              x = u((0, p.useState)(void 0 !== b ? b : a), 2),
               C = x[0],
               I = x[1],
               O = (0, p.useCallback)(function(e, t) {
@@ -22615,8 +22615,8 @@ try {
               }, [g]),
               P = void 0 !== c ? c : S,
               D = void 0 !== l ? l : E,
-              N = void 0 !== y ? y : C;
-            return s(s({}, b), {}, {
+              N = void 0 !== b ? b : C;
+            return s(s({}, y), {}, {
               inputValue: P,
               menuIsOpen: D,
               onChange: O,
@@ -22684,8 +22684,8 @@ try {
         m = n(98116),
         g = n(39675),
         v = n(37587),
-        y = n(90965);
-      var b = n(88650),
+        b = n(90965);
+      var y = n(88650),
         _ = n(11952);
       const S = ["localhost", /^\/(?!\/)/],
         w = {
@@ -22701,7 +22701,7 @@ try {
           traceFetch: t,
           traceXHR: n,
           tracePropagationTargets: h,
-          tracingOrigins: b,
+          tracingOrigins: y,
           shouldCreateSpanForRequest: _,
           enableHTTPTimings: T
         } = {
@@ -22710,7 +22710,7 @@ try {
           ...e
         }, k = "function" == typeof _ ? _ : e => !0, C = e => function(e, t) {
           return (0, m.Xr)(e, t || S)
-        }(e, h || b), I = {};
+        }(e, h || y), I = {};
         t && (0, d.u)(e => {
           const t = function(e, t, n, d, f = "auto.http.browser") {
             if (!(0, o.w)() || !e.fetchData) return;
@@ -22732,7 +22732,7 @@ try {
               }(n, e), delete d[t]))
             }
             const m = (0, a.o5)(),
-              b = (0, a.KU)(),
+              y = (0, a.KU)(),
               {
                 method: _,
                 url: S
@@ -22758,7 +22758,7 @@ try {
                 },
                 op: "http.client"
               }) : void 0;
-            if (E && (e.fetchData.__span = E.spanContext().spanId, d[E.spanContext().spanId] = E), n(e.fetchData.url) && b) {
+            if (E && (e.fetchData.__span = E.spanContext().spanId, d[E.spanContext().spanId] = E), n(e.fetchData.url) && y) {
               const t = e.args[0];
               e.args[1] = e.args[1] || {};
               const n = e.args[1];
@@ -22776,20 +22776,20 @@ try {
                   },
                   h = a ? (0, r.Qh)(a) : (0, g.TC)(l, d, p),
                   m = (0, v.De)(f || (a ? (0, u.k)(a) : (0, u.l)(l, t, n))),
-                  b = o.headers || ("undefined" != typeof Request && (0, y.tH)(e, Request) ? e.headers : void 0);
-                if (b) {
-                  if ("undefined" != typeof Headers && (0, y.tH)(b, Headers)) {
-                    const e = new Headers(b);
+                  y = o.headers || ("undefined" != typeof Request && (0, b.tH)(e, Request) ? e.headers : void 0);
+                if (y) {
+                  if ("undefined" != typeof Headers && (0, b.tH)(y, Headers)) {
+                    const e = new Headers(y);
                     return e.append("sentry-trace", h), m && e.append(v.hF, m), e
                   }
-                  if (Array.isArray(b)) {
-                    const e = [...b, ["sentry-trace", h]];
+                  if (Array.isArray(y)) {
+                    const e = [...y, ["sentry-trace", h]];
                     return m && e.push([v.hF, m]), e
                   } {
-                    const e = "baggage" in b ? b.baggage : void 0,
+                    const e = "baggage" in y ? y.baggage : void 0,
                       t = [];
                     return Array.isArray(e) ? t.push(...e) : e && t.push(e), m && t.push(m), {
-                      ...b,
+                      ...y,
                       "sentry-trace": h,
                       baggage: t.length > 0 ? t.join(",") : void 0
                     }
@@ -22799,7 +22799,7 @@ try {
                   "sentry-trace": h,
                   baggage: m
                 }
-              }(t, b, m, n, E)
+              }(t, y, m, n, E)
             }
             return E
           }(e, k, C, I);
@@ -22817,18 +22817,18 @@ try {
             const h = e.xhr,
               m = h && h[f.Er];
             if (!(0, o.w)() || !h || h.__sentry_own_request__ || !m) return;
-            const y = t(m.url);
-            if (e.endTimestamp && y) {
+            const b = t(m.url);
+            if (e.endTimestamp && b) {
               const e = h.__sentry_xhr_span_id__;
               if (!e) return;
               const t = d[e];
               return void(t && void 0 !== m.status_code && ((0, i.N8)(t, m.status_code), t.end(), delete d[e]))
             }
-            const b = (0, a.o5)(),
+            const y = (0, a.o5)(),
               _ = (0, s.rm)(),
               S = x(m.url),
               w = S ? (0, p.Dl)(S).host : void 0,
-              T = y ? (0, c.Uk)({
+              T = b ? (0, c.Uk)({
                 name: `${m.method} ${m.url}`,
                 onlyIfParent: !0,
                 attributes: {
@@ -22851,13 +22851,13 @@ try {
                 dsc: o
               } = {
                 ..._.getPropagationContext(),
-                ...b.getPropagationContext()
+                ...y.getPropagationContext()
               };
               ! function(e, t, n) {
                 try {
                   e.setRequestHeader("sentry-trace", t), n && e.setRequestHeader(v.hF, n)
                 } catch (e) {}
-              }(h, T ? (0, r.Qh)(T) : (0, g.TC)(e, t, n), (0, v.De)(o || (T ? (0, u.k)(T) : (0, u.l)(e, E, b))))
+              }(h, T ? (0, r.Qh)(T) : (0, g.TC)(e, t, n), (0, v.De)(o || (T ? (0, u.k)(T) : (0, u.l)(e, E, y))))
             }
             return T
           }(e, k, C, I);
@@ -22870,7 +22870,7 @@ try {
           url: t
         } = (0, r.et)(e).data || {};
         if (!t || "string" != typeof t) return;
-        const n = (0, b.wv)("resource", ({
+        const n = (0, y.wv)("resource", ({
           entries: r
         }) => {
           r.forEach(r => {
@@ -23128,12 +23128,12 @@ try {
           }
           return t
         } : Object.assign;
-        var y = v(function(e, t, n) {
+        var b = v(function(e, t, n) {
             for (var r = Object.keys(t), o = 0; o < r.length;)(!n || n && e[r[o]] === s) && (e[r[o]] = t[r[o]]), o++;
             return e
           }, "extend", "Use `assign`."),
-          b = v(function(e, t) {
-            return y(e, t, !0)
+          y = v(function(e, t) {
+            return b(e, t, !0)
           }, "merge", "Use `assign`.");
 
         function _(e, t, n) {
@@ -23520,8 +23520,8 @@ try {
           me = "compute",
           ge = "auto",
           ve = "manipulation",
-          ye = "none",
-          be = "pan-x",
+          be = "none",
+          ye = "pan-x",
           _e = "pan-y",
           Se = function() {
             if (!he) return !1;
@@ -23548,10 +23548,10 @@ try {
                 w(t.options.enable, [t]) && (e = e.concat(t.getTouchAction()))
               }),
               function(e) {
-                if (C(e, ye)) return ye;
-                var t = C(e, be),
+                if (C(e, be)) return be;
+                var t = C(e, ye),
                   n = C(e, _e);
-                return t && n ? ye : t || n ? t ? be : _e : C(e, ve) ? ve : ge
+                return t && n ? be : t || n ? t ? ye : _e : C(e, ve) ? ve : ge
               }(e.join(" "))
           },
           preventDefaults: function(e) {
@@ -23560,9 +23560,9 @@ try {
             if (this.manager.session.prevented) t.preventDefault();
             else {
               var r = this.actions,
-                o = C(r, ye) && !Se[ye],
+                o = C(r, be) && !Se[be],
                 i = C(r, _e) && !Se[_e],
-                a = C(r, be) && !Se[be];
+                a = C(r, ye) && !Se[ye];
               if (o) {
                 var s = 1 === e.pointers.length,
                   c = e.distance < 2,
@@ -23723,7 +23723,7 @@ try {
           getTouchAction: function() {
             var e = this.options.direction,
               t = [];
-            return 6 & e && t.push(_e), 24 & e && t.push(be), t
+            return 6 & e && t.push(_e), 24 & e && t.push(ye), t
           },
           directionTest: function(e) {
             var t = this.options,
@@ -23749,7 +23749,7 @@ try {
             pointers: 2
           },
           getTouchAction: function() {
-            return [ye]
+            return [be]
           },
           attrTest: function(e) {
             return this._super.attrTest.call(this, e) && (Math.abs(e.scale - 1) > this.options.threshold || 2 & this.state)
@@ -23796,7 +23796,7 @@ try {
             pointers: 2
           },
           getTouchAction: function() {
-            return [ye]
+            return [be]
           },
           attrTest: function(e) {
             return this._super.attrTest.call(this, e) && (Math.abs(e.rotation) > this.options.threshold || 2 & this.state)
@@ -24008,8 +24008,8 @@ try {
           on: E,
           off: k,
           each: g,
-          merge: b,
-          extend: y,
+          merge: y,
+          extend: b,
           assign: c,
           inherit: _,
           bindFn: S,
@@ -24143,15 +24143,15 @@ try {
       };
       let g = 0,
         v = 1 / 0,
-        y = 0;
-      const b = e => {
+        b = 0;
+      const y = e => {
         e.forEach(e => {
-          e.interactionId && (v = Math.min(v, e.interactionId), y = Math.max(y, e.interactionId), g = y ? (y - v) / 7 + 1 : 0)
+          e.interactionId && (v = Math.min(v, e.interactionId), b = Math.max(b, e.interactionId), g = b ? (b - v) / 7 + 1 : 0)
         })
       };
       let _;
       const S = () => {
-          "interactionCount" in performance || _ || (_ = d("event", b, {
+          "interactionCount" in performance || _ || (_ = d("event", y, {
             type: "event",
             buffered: !0,
             durationThreshold: 0
@@ -24616,11 +24616,11 @@ try {
               g = h.className || "";
             delete h.style, delete h.className;
             var v = "parallax-banner-layer-".concat(t).concat(g ? " ".concat(g) : ""),
-              y = u ? {
+              b = u ? {
                 top: 100 * Math.abs(n) * -1 + "%",
                 bottom: 100 * Math.abs(n) * -1 + "%"
               } : {},
-              b = d ? {
+              y = d ? {
                 backgroundImage: "url(".concat(d, ")"),
                 backgroundPosition: "center",
                 backgroundSize: "cover"
@@ -24633,7 +24633,7 @@ try {
               disabled: c
             }, r.default.createElement("div", s({
               className: v,
-              style: l(l(l(l({}, b), p), y), m)
+              style: l(l(l(l({}, y), p), b), m)
             }, h), o))
           }), t)
         };
@@ -24670,10 +24670,10 @@ try {
         gd: () => m,
         mE: () => v,
         sO: () => d,
-        tH: () => b,
+        tH: () => y,
         vq: () => h,
         xH: () => f,
-        yr: () => y
+        yr: () => b
       });
       const r = Object.prototype.toString;
 
@@ -24684,7 +24684,7 @@ try {
           case "[object DOMException]":
             return !0;
           default:
-            return b(e, Error)
+            return y(e, Error)
         }
       }
 
@@ -24721,11 +24721,11 @@ try {
       }
 
       function f(e) {
-        return "undefined" != typeof Event && b(e, Event)
+        return "undefined" != typeof Event && y(e, Event)
       }
 
       function h(e) {
-        return "undefined" != typeof Element && b(e, Element)
+        return "undefined" != typeof Element && y(e, Element)
       }
 
       function m(e) {
@@ -24740,11 +24740,11 @@ try {
         return p(e) && "nativeEvent" in e && "preventDefault" in e && "stopPropagation" in e
       }
 
-      function y(e) {
+      function b(e) {
         return "number" == typeof e && e != e
       }
 
-      function b(e, t) {
+      function y(e, t) {
         try {
           return e instanceof t
         } catch (e) {
@@ -25023,7 +25023,7 @@ try {
             return n
           }
 
-          function y(e) {
+          function b(e) {
             return "boolean" == typeof p ? a.resolve(p) : function(e) {
               return new a(function(t) {
                 var n = e.transaction(d, g),
@@ -25043,7 +25043,7 @@ try {
             })
           }
 
-          function b(e) {
+          function y(e) {
             var t = f[e.name],
               n = {};
             n.promise = new a(function(e, t) {
@@ -25072,7 +25072,7 @@ try {
                   deferredOperations: []
                 }, e.db) {
                 if (!t) return n(e.db);
-                b(e), e.db.close()
+                y(e), e.db.close()
               }
               var i = [e.name];
               t && i.push(e.version);
@@ -25148,7 +25148,7 @@ try {
                 if (!e.db || "NotFoundError" === o.name && !e.db.objectStoreNames.contains(e.storeName) && e.version <= e.db.version) return e.db && (e.version = e.db.version + 1), E(e)
               }).then(function() {
                 return function(e) {
-                  b(e);
+                  y(e);
                   for (var t = f[e.name], n = t.forages, r = 0; r < n.length; r++) {
                     var o = n[r];
                     o._dbInfo.db && (o._dbInfo.db.close(), o._dbInfo.db = null)
@@ -25273,7 +25273,7 @@ try {
               var o = new a(function(n, o) {
                 var i;
                 r.ready().then(function() {
-                  return i = r._dbInfo, "[object Blob]" === h.call(t) ? y(i.db).then(function(e) {
+                  return i = r._dbInfo, "[object Blob]" === h.call(t) ? b(i.db).then(function(e) {
                     return e ? t : (n = t, new a(function(e, t) {
                       var r = new FileReader;
                       r.onerror = t, r.onloadend = function(t) {
@@ -25437,7 +25437,7 @@ try {
                 n = e.storeName ? i.then(function(t) {
                   if (t.objectStoreNames.contains(e.storeName)) {
                     var n = t.version + 1;
-                    b(e);
+                    y(e);
                     var r = f[e.name],
                       i = r.forages;
                     t.close();
@@ -25467,7 +25467,7 @@ try {
                     })
                   }
                 }) : i.then(function(t) {
-                  b(e);
+                  y(e);
                   var n = f[e.name],
                     r = n.forages;
                   t.close();
@@ -26235,10 +26235,10 @@ try {
       var m = n(84931),
         g = n(44603),
         v = n(50237),
-        y = n(98509);
-      const b = "Transaction",
-        _ = (0, y.F)(b, () => ({
-          name: b,
+        b = n(98509);
+      const y = "Transaction",
+        _ = (0, b.F)(y, () => ({
+          name: y,
           setupOnce() {},
           processEvent(e) {
             const t = function(e) {
@@ -26544,11 +26544,11 @@ try {
         return e.type === a.ElementType.CDATA
       }
 
-      function y(e) {
+      function b(e) {
         return e.type === a.ElementType.Text
       }
 
-      function b(e) {
+      function y(e) {
         return e.type === a.ElementType.Comment
       }
 
@@ -26562,8 +26562,8 @@ try {
 
       function w(e, t) {
         var n;
-        if (void 0 === t && (t = !1), y(e)) n = new l(e.data);
-        else if (b(e)) n = new u(e.data);
+        if (void 0 === t && (t = !1), b(e)) n = new l(e.data);
+        else if (y(e)) n = new u(e.data);
         else if (g(e)) {
           var r = t ? T(e.children) : [],
             o = new m(e.name, i({}, e.attribs), r);
@@ -26596,7 +26596,7 @@ try {
           }), n = 1; n < t.length; n++) t[n].prev = t[n - 1], t[n - 1].next = t[n];
         return t
       }
-      t.Element = m, t.isTag = g, t.isCDATA = v, t.isText = y, t.isComment = b, t.isDirective = _, t.isDocument = S, t.hasChildren = function(e) {
+      t.Element = m, t.isTag = g, t.isCDATA = v, t.isText = b, t.isComment = y, t.isDirective = _, t.isDocument = S, t.hasChildren = function(e) {
         return Object.prototype.hasOwnProperty.call(e, "children")
       }, t.cloneNode = w
     },
@@ -26758,8 +26758,8 @@ try {
             unit: h,
             tags: f
           }, this._buckets.set(m, g));
-          const y = "string" == typeof n ? g.metric.weight - v : n;
-          (0, d.r)(e, c, y, h, o, m)
+          const b = "string" == typeof n ? g.metric.weight - v : n;
+          (0, d.r)(e, c, b, h, o, m)
         }
         flush() {
           if (0 !== this._buckets.size) {
@@ -26925,15 +26925,15 @@ try {
         m = n(79854),
         g = n(17005),
         v = n(74504),
-        y = n(75983),
-        b = n(80978),
+        b = n(75983),
+        y = n(80978),
         _ = n(95689),
         S = n(73758),
         w = n(56588),
         T = n(22193),
         E = n(86849),
         k = n(51837);
-      const x = [(0, c.D)(), (0, l.Z)(), (0, w.G)(), (0, v.F)(), (0, b.L)(), (0, S.p)(), (0, y.s)(), (0, _.M)()];
+      const x = [(0, c.D)(), (0, l.Z)(), (0, w.G)(), (0, v.F)(), (0, y.L)(), (0, S.p)(), (0, b.s)(), (0, _.M)()];
 
       function C(e) {
         return [...x]

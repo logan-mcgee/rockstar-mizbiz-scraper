@@ -72,20 +72,20 @@ try {
           consoleBtn: a,
           icon: n = "",
           img: c,
-          labelColor: d = "#000",
-          onClick: i,
+          labelColor: i = "#000",
+          onClick: d,
           secondText: b,
-          size: g,
-          text: f,
+          size: f,
+          text: g,
           to: u,
           type: p = "",
           ariaLabel: k
         }) => {
-          const m = [r.plusButton, r[p] ?? "", r[g] ?? "", r[a] ?? "", t].join(" "),
+          const m = [r.plusButton, r[p] ?? "", r[f] ?? "", r[a] ?? "", t].join(" "),
             h = {
-              "--hvr-color": e ?? d,
-              "--hvr-bg-color": d ?? e,
-              "--hvr-border-color": e ?? d
+              "--hvr-color": e ?? i,
+              "--hvr-bg-color": i ?? e,
+              "--hvr-border-color": e ?? i
             },
             y = (0, s.jsxs)(s.Fragment, {
               children: [c ? (0, s.jsx)("img", {
@@ -94,7 +94,7 @@ try {
               }) : "", (0, s.jsxs)("div", {
                 className: r.btnText,
                 icon: n,
-                children: [f, b ? (0, s.jsx)("span", {
+                children: [g, b ? (0, s.jsx)("span", {
                   children: b
                 }) : ""]
               })]
@@ -103,8 +103,8 @@ try {
             if (u.startsWith("http")) {
               const e = u.startsWith(document.location.origin) ? "_self" : "_blank";
               return (0, s.jsx)("span", {
-                onClick: i,
-                onKeyDown: i,
+                onClick: d,
+                onKeyDown: d,
                 className: m,
                 role: "button",
                 "aria-label": k,
@@ -118,7 +118,7 @@ try {
             }
             return (0, s.jsx)(o, {
               className: m,
-              onClick: i,
+              onClick: d,
               style: {
                 ...h
               },
@@ -129,7 +129,7 @@ try {
           }
           return (0, s.jsx)(l, {
             className: m,
-            onClick: i,
+            onClick: d,
             style: {
               ...h
             },
@@ -142,9 +142,9 @@ try {
       a.d(t, {
         C1: () => c,
         S1: () => o,
-        XC: () => g,
-        jS: () => d,
-        qg: () => i,
+        XC: () => f,
+        jS: () => i,
+        qg: () => d,
         z0: () => b
       });
       var s = a(62229),
@@ -164,30 +164,30 @@ try {
           desktop: a = null,
           ariaLabel: o = null,
           sources: c = null,
-          prod: d = null
+          prod: i = null
         }) => {
-          const i = (0, n.useLocale)(),
+          const d = (0, n.useLocale)(),
             {
               meta: b = {}
             } = (0, r.i)() ?? {},
-            [g, f] = (0, s.useState)(d ?? b?.cdn ?? b?.prod ?? !0);
+            [f, g] = (0, s.useState)(i ?? b?.cdn ?? b?.prod ?? !0);
           (0, s.useEffect)(() => {
-            f(d ?? b?.cdn ?? b?.prod ?? !0)
-          }, [d, b]);
+            g(i ?? b?.cdn ?? b?.prod ?? !0)
+          }, [i, b]);
           const u = (0, s.useCallback)(e => {
             const t = null !== c,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
             if (a.startsWith("http")) return l(a);
-            const s = `${t?(0,n.getCdnPrefix)(g):""}${a}`;
+            const s = `${t?(0,n.getCdnPrefix)(f):""}${a}`;
             return l(s)
-          }, [g, c]);
+          }, [f, c]);
           return {
             alt: e,
             ariaLabel: o,
             src: {
-              mobile: u(c?.[i]?.mobile ?? c?.en_us?.mobile ?? t),
-              desktop: u(c?.[i]?.desktop ?? c?.en_us?.desktop ?? a)
+              mobile: u(c?.[d]?.mobile ?? c?.en_us?.mobile ?? t),
+              desktop: u(c?.[d]?.desktop ?? c?.en_us?.desktop ?? a)
             }
           }
         },
@@ -201,7 +201,7 @@ try {
             c(a?.cdn ?? a?.prod ?? !1)
           }, [a]), e ? e?.startsWith("http") ? l(e) : l(`${(0,n.getCdnPrefix)(o)}${e}`) : null
         },
-        d = () => {
+        i = () => {
           const e = (0, r.i)() ?? {},
             {
               meta: t = {}
@@ -212,12 +212,12 @@ try {
             return e ? e?.startsWith("http") ? l(e) : l(`${(0,n.getCdnPrefix)(s)}${e}`) : null
           }, [a])
         },
-        i = e => e.full_src,
+        d = e => e.full_src,
         b = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,n.getCdnPrefix)(!1)}${t}`
         },
-        g = e => e.meta.uploads_directory
+        f = e => e.meta.uploads_directory
     },
     74767: (e, t, a) => {
       a.d(t, {

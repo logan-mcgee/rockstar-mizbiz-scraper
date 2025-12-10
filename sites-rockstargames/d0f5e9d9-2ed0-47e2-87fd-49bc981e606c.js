@@ -32,12 +32,12 @@ try {
           setBreadcrumb: f,
           setTitle: u
         } = (0, r.b)(), {
-          videoId: c
+          videoId: b
         } = (0, o.useParams)(), {
-          video: g,
-          related: b
+          video: c,
+          related: g
         } = (0, l.useVideoData)({
-          id: c
+          id: b
         }), y = s.get("resolution") ?? "_auto";
         return (0, a.useEffect)(() => (f([{
           href: "/videos",
@@ -45,16 +45,16 @@ try {
         }]), i(!1), () => {
           i(!0), f()
         }), []), (0, a.useEffect)(() => {
-          g && u(`${g.game.title} - ${g.title}`)
-        }, [g]), g && c ? (0, d.jsxs)(d.Fragment, {
+          c && u(`${c.game.title} - ${c.title}`)
+        }, [c]), c && b ? (0, d.jsxs)(d.Fragment, {
           children: [(0, d.jsx)(l.PlayerWithInfo, {
             resolution: y,
-            videoId: c,
+            videoId: b,
             videoChangeCallback: e => {
               t(`../videos/${e}`)
             }
-          }), b?.results?.length ? (0, d.jsx)(n.A, {
-            vids: b.results,
+          }), g?.results?.length ? (0, d.jsx)(n.A, {
+            vids: g.results,
             title: e("Related Videos")
           }) : ""]
         }) : null

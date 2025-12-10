@@ -17,8 +17,8 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => l,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => p,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -28,7 +28,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => f
+        default: () => p
       });
       var _ = "{description} - Voir l'image dans la lightbox",
         l = "Fermer",
@@ -41,9 +41,9 @@ try {
         u = "Appuyer sur {shortcut}",
         r = "Niveau de zoom",
         g = "{zoom} %",
+        f = "Télécharger",
         h = "Télécharger",
-        p = "Télécharger",
-        f = {
+        p = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: l,
           Lightbox_Close_Button_Tooltip: n,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: g,
-          Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: p
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: h
         }
     }
   }

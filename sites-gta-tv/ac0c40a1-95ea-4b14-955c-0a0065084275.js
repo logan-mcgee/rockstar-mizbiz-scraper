@@ -183,13 +183,13 @@ try {
         i = t(2229),
         a = t(1514),
         u = t(9867);
-      const d = (e, o) => {
+      const l = (e, o) => {
           if (!e || !o) return void console.log(`Couldn't set cookie (${e}) to value (${o})`);
           const t = window.location.hostname.split("."),
             s = t.slice(t.length - 2).join(".");
           document.cookie = `${e}=${o}; domain=${s}; path=/;`
         },
-        l = e => {
+        d = e => {
           const o = document.cookie.split("; "),
             t = `${e}=`,
             s = o.find(e => e.startsWith(t)),
@@ -304,12 +304,12 @@ try {
           })(e), r = p;
           let n = r;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
-            a = l(i);
+            a = d(i);
           n = o.currentSite?.site === u.C.www ? b.find(e => e.subdomaincom === s) || b.find(e => e.subdomaincom === t) || r : b.find(e => e.iso === a) || r;
           const [, c] = ((e, o, t = !1) => {
-            const s = l(e);
-            return s && !t || d(e, o), [s, (r = e, e => {
-              d(r, e)
+            const s = d(e);
+            return s && !t || l(e, o), [s, (r = e, e => {
+              l(r, e)
             })];
             var r
           })(i, n.iso);

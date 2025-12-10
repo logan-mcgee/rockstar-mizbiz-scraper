@@ -120,8 +120,8 @@ try {
         WWW_DECORATIVE_VIDEO_FRAGMENT: () => F,
         WWW_DIVIDER_FRAGMENT: () => W,
         WWW_EDITORIAL_GRID_MODULE_FRAGMENT: () => _,
-        WWW_FEATURED_CONTENT_CAROUSEL_FRAGMENT: () => c,
-        WWW_FEATURED_GAME_SECTION_FRAGMENT: () => y,
+        WWW_FEATURED_CONTENT_CAROUSEL_FRAGMENT: () => y,
+        WWW_FEATURED_GAME_SECTION_FRAGMENT: () => c,
         WWW_GRID_FRAGMENT: () => u,
         WWW_GRID_LAYOUT_BREAKPOINT_FRAGMENT: () => R,
         WWW_GRID_WRAPPER_FRAGMENT: () => p,
@@ -329,7 +329,7 @@ fragment WwwEditorialGridModuleFragment on WwwEditorialGridModule {
   }
 }
 `,
-        c = n.gql`
+        y = n.gql`
 fragment WwwFeaturedContentCarouselFragment on WwwFeaturedContentCarousel {
   __typename
   sys {
@@ -364,7 +364,7 @@ fragment WwwFeaturedContentCarouselFragment on WwwFeaturedContentCarousel {
   }
 }
 `,
-        y = n.gql`
+        c = n.gql`
 fragment WwwFeaturedGameSectionFragment on WwwFeaturedGameSection {
   __typename
   sys {
@@ -983,8 +983,8 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   ${F}
   ${W}
   ${_}
-  ${c}
   ${y}
+  ${c}
   ${u}
   ${R}
   ${p}

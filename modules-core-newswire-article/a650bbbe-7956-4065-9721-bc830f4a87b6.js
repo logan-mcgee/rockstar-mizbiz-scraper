@@ -15,10 +15,10 @@ try {
   [6327, 8708], {
     76327: (e, t, i) => {
       i.r(t), i.d(t, {
-        InView: () => u,
-        defaultFallbackInView: () => c,
-        observe: () => h,
-        useInView: () => b
+        InView: () => b,
+        defaultFallbackInView: () => h,
+        observe: () => c,
+        useInView: () => u
       });
       var n = i(62229),
         r = Object.defineProperty,
@@ -33,11 +33,11 @@ try {
         l = 0,
         d = void 0;
 
-      function c(e) {
+      function h(e) {
         d = e
       }
 
-      function h(e, t, i = {}, n = d) {
+      function c(e, t, i = {}, n = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const r = e.getBoundingClientRect();
           return t(n, {
@@ -53,7 +53,7 @@ try {
         const {
           id: r,
           observer: s,
-          elements: c
+          elements: h
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter(t => void 0 !== e[t]).map(t => {
@@ -81,13 +81,13 @@ try {
             }, o.set(t, i)
           }
           return i
-        }(i), h = c.get(e) || [];
-        return c.has(e) || c.set(e, h), h.push(t), s.observe(e),
+        }(i), c = h.get(e) || [];
+        return h.has(e) || h.set(e, c), c.push(t), s.observe(e),
           function() {
-            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), s.unobserve(e)), 0 === c.size && (s.disconnect(), o.delete(r))
+            c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
-      var u = class extends n.Component {
+      var b = class extends n.Component {
         constructor(e) {
           super(e), s(this, "node", null), s(this, "_unobserveCb", null), s(this, "handleNode", e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -126,7 +126,7 @@ try {
             delay: r,
             fallbackInView: s
           } = this.props;
-          this._unobserveCb = h(this.node, this.handleChange, {
+          this._unobserveCb = c(this.node, this.handleChange, {
             threshold: e,
             root: t,
             rootMargin: i,
@@ -161,19 +161,19 @@ try {
             onChange: a,
             skip: l,
             trackVisibility: d,
-            delay: c,
-            initialInView: h,
-            fallbackInView: u,
-            ...b
+            delay: h,
+            initialInView: c,
+            fallbackInView: b,
+            ...u
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...u
           }, e)
         }
       };
 
-      function b({
+      function u({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -183,17 +183,17 @@ try {
         skip: a,
         initialInView: l,
         fallbackInView: d,
-        onChange: c
+        onChange: h
       } = {}) {
-        var u;
-        const [b, f] = n.useState(null), p = n.useRef(c), [g, y] = n.useState({
+        var b;
+        const [u, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!l,
           entry: void 0
         });
-        p.current = c, n.useEffect(() => {
-          if (a || !b) return;
+        p.current = h, n.useEffect(() => {
+          if (a || !u) return;
           let n;
-          return n = h(b, (e, t) => {
+          return n = c(u, (e, t) => {
             y({
               inView: e,
               entry: t
@@ -207,10 +207,10 @@ try {
           }, d), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, d, t]);
-        const w = null == (u = g.entry) ? void 0 : u.target,
+        }, [Array.isArray(e) ? e.toString() : e, u, s, r, o, a, i, d, t]);
+        const w = null == (b = g.entry) ? void 0 : b.target,
           v = n.useRef(void 0);
-        b || !w || o || a || v.current === w || (v.current = w, y({
+        u || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!l,
           entry: void 0
         }));

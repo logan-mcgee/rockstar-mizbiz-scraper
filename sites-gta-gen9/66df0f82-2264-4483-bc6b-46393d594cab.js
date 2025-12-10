@@ -17,7 +17,7 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -27,7 +27,7 @@ try {
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => r,
+        Lightbox_Zoom_Slider_Tooltip: () => f,
         default: () => L
       });
       var _ = "{description} - Visualizza immagine in lightbox",
@@ -40,8 +40,8 @@ try {
         s = "Ripristina",
         u = "Premi {shortcut}",
         g = "Livello zoom",
-        r = "{zoom}%",
-        f = "Scarica",
+        f = "{zoom}%",
+        r = "Scarica",
         h = "Scarica",
         L = {
           Lightbox_Open_Button_Label: _,
@@ -54,8 +54,8 @@ try {
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: f,
+          Lightbox_Zoom_Slider_Tooltip: f,
+          Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: h
         }
     }

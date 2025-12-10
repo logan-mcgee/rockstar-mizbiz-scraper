@@ -81,20 +81,20 @@ try {
         const [, a] = (0, s.h)(), [n, k] = (0, d.useSearchParams)(), {
           pathname: v
         } = (0, d.useLocation)(), {
-          data: g,
-          loading: y
+          data: b,
+          loading: g
         } = (0, c.useQuery)(f.MetaUrlInfo, {
           variables: {
             url: v.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), b = (0, c.useLocale)(), p = g?.metaUrlInfo?.tina;
+        }), y = (0, c.useLocale)(), p = b?.metaUrlInfo?.tina;
         return (0, t.useEffect)(() => {
           const t = n.get("video");
           if (!t || !p) return void a(null);
           const d = Number(p?.payload?.content[0].content[0]?.tag ?? 0);
           let l;
-          l = 40 === d && "ru_ru" === b ? "en_us" : b;
+          l = 40 === d && "ru_ru" === y ? "en_us" : y;
           const r = (0, i.jsx)(u.VideoWithPlaylist, {
               tagIds: [d],
               locale: l,
@@ -116,7 +116,7 @@ try {
             title: "Video Modal",
             contentClassName: "rockstargames-sites-legacyc5573c7aa0bd0a87733a56baa8e82d49"
           })
-        }, [n.get("video"), b, p]), (0, t.useEffect)(() => () => a(null), []), y || p ? y ? (0, i.jsx)("div", {
+        }, [n.get("video"), y, p]), (0, t.useEffect)(() => () => a(null), []), g || p ? g ? (0, i.jsx)("div", {
           className: "rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56",
           children: (0, i.jsx)(l.A, {})
         }) : (0, i.jsx)(o.TinaParser, {

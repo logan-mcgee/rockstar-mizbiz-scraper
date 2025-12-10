@@ -33,10 +33,10 @@ try {
               p = r.safe && Array.isArray(u),
               f = Object.prototype.toString.call(u),
               y = t(u),
-              m = "[object Object]" === f || "[object Array]" === f,
-              b = i ? i + o + a(d) : a(d);
-            if (!p && !y && m && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, b, l + 1);
-            c[b] = u
+              b = "[object Object]" === f || "[object Array]" === f,
+              m = i ? i + o + a(d) : a(d);
+            if (!p && !y && b && Object.keys(u).length && (!r.maxDepth || l < s)) return e(u, m, l + 1);
+            c[m] = u
           })
         }(e), c
       }
@@ -90,7 +90,7 @@ try {
         useImageParser: () => S.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => p.i,
-        useTranslations: () => b
+        useTranslations: () => m
       });
       var r = n(42295),
         o = n(62229),
@@ -115,8 +115,8 @@ try {
       var p = n(74767),
         f = n(90287),
         y = n.n(f),
-        m = n(12323);
-      const b = ({
+        b = n(12323);
+      const m = ({
         payload: e,
         variables: t
       }) => {
@@ -125,7 +125,7 @@ try {
             return a().cloneDeepWith(e, (e, r, o) => {
               r === t && e && (n[o.key] = e)
             }), n
-          })(e, m.Qw),
+          })(e, b.Qw),
           r = JSON.parse(JSON.stringify(a().merge(JSON.parse(JSON.stringify(n)), JSON.parse(JSON.stringify(t?.keys ?? {}))))),
           o = JSON.parse(JSON.stringify(e));
         return a().cloneDeepWith(o, (e, t, n) => {
@@ -190,7 +190,7 @@ try {
           }) => {
             const s = c => {
               let i = "";
-              if (i = Array.isArray(c?.[m.ZH]) ? c[m.ZH].map(e => s(e)) : c?.[m.ZH] ?? "", !c?._template) return i;
+              if (i = Array.isArray(c?.[b.ZH]) ? c[b.ZH].map(e => s(e)) : c?.[b.ZH] ?? "", !c?._template) return i;
               let l = c._template;
               "0" === l && (console.warn(`The _template "${l}" wasn't found in the available components. The _template "${l}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(e),
@@ -221,7 +221,7 @@ try {
                 key: f
               }, i)
             };
-            return t?.[m.ZH]?.length ? s(t) : null
+            return t?.[b.ZH]?.length ? s(t) : null
           })({
             components: e,
             payload: t,
@@ -243,7 +243,7 @@ try {
           const [y] = (0, o.useState)({
             ...t,
             ...u() ?? {}
-          }), m = (({
+          }), b = (({
             payload: e
           }) => {
             const [t, n] = (0, o.useState)(e);
@@ -273,7 +273,7 @@ try {
             }, [e]), t
           })({
             payload: c
-          }), g = b({
+          }), g = m({
             payload: c,
             variables: l
           });
@@ -302,7 +302,7 @@ try {
                 })
               })
             })
-          }, [s, c, JSON.stringify(m), JSON.stringify(g)])
+          }, [s, c, JSON.stringify(b), JSON.stringify(g)])
         };
       var S = n(34725);
       const v = (e = "", t = 0, n = {}, r = () => {}) => {

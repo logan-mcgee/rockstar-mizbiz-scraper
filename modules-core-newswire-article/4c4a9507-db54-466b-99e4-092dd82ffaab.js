@@ -20,8 +20,8 @@ try {
       var r = s(42295),
         t = s(62229),
         o = s(85827),
-        d = s(24162),
-        n = s(10632),
+        n = s(24162),
+        d = s(10632),
         i = s(4572),
         l = s.n(i);
       const c = {
@@ -50,7 +50,7 @@ try {
           className: l()(s, e ? c.fadeIn : "", a ? c.active : ""),
           children: t
         }),
-        m = ({
+        b = ({
           currentSlide: e
         }) => (0, r.jsx)("div", {
           className: c.customPagination,
@@ -58,7 +58,7 @@ try {
             children: e?.itemName ?? "Item"
           })
         }),
-        b = ({
+        m = ({
           item: e,
           vertical: a,
           horizontal: s
@@ -66,7 +66,7 @@ try {
           shouldFade: e?.fadeIn,
           condition: e?.fadeIn,
           className: l()(c.slot, c[a], c[s]),
-          children: (0, r.jsx)(n.A, {
+          children: (0, r.jsx)(d.A, {
             ...e.content[0]
           })
         }) : null,
@@ -81,7 +81,7 @@ try {
             condition: e,
             children: (0, r.jsx)("div", {
               className: c.backgroundContent,
-              children: (0, r.jsx)(n.A, {
+              children: (0, r.jsx)(d.A, {
                 ...a.imageWithBadge
               })
             })
@@ -90,7 +90,7 @@ try {
             condition: e,
             children: (0, r.jsx)("div", {
               className: c.foregroundContent,
-              children: (0, r.jsx)(n.A, {
+              children: (0, r.jsx)(d.A, {
                 ...s.imageWithBadge
               })
             })
@@ -100,12 +100,12 @@ try {
           loop: e = !0,
           grabCursor: a = !0,
           centeredSlides: s = !0,
-          slides: n = null
+          slides: d = null
         }) => {
           const [i, f] = (0, t.useState)(null);
-          return n ? (0, r.jsx)("div", {
+          return d ? (0, r.jsx)("div", {
             className: c.panoramaCarouselWrapper,
-            children: (0, r.jsxs)(d.RC, {
+            children: (0, r.jsxs)(n.RC, {
               modules: [o.Vx],
               loop: e,
               grabCursor: a,
@@ -116,7 +116,7 @@ try {
               pagination: !1,
               speed: 700,
               onActiveIndexChange: e => {
-                f(n[e?.realIndex ?? 0])
+                f(d[e?.realIndex ?? 0])
               },
               breakpoints: {
                 768: {
@@ -131,20 +131,20 @@ try {
               },
               children: [(0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.top),
-                children: [(0, r.jsx)(b, {
+                children: [(0, r.jsx)(m, {
                   item: i?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
-                }), (0, r.jsx)(b, {
+                }), (0, r.jsx)(m, {
                   item: i?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
-                }), (0, r.jsx)(b, {
+                }), (0, r.jsx)(m, {
                   item: i?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
                 })]
-              }), n.map(e => (0, r.jsx)(d.qr, {
+              }), d.map(e => (0, r.jsx)(n.qr, {
                 children: ({
                   isActive: a
                 }) => (0, r.jsx)(u, {
@@ -153,16 +153,16 @@ try {
                 })
               }, e?.key)), (0, r.jsxs)("div", {
                 className: l()(c.slotContainer, c.bottom),
-                children: [(0, r.jsx)(b, {
+                children: [(0, r.jsx)(m, {
                   item: i?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
-                }), (0, r.jsx)(b, {
+                }), (0, r.jsx)(m, {
                   item: i?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
-              }), (0, r.jsx)(m, {
+              }), (0, r.jsx)(b, {
                 currentSlide: i
               })]
             })
@@ -174,12 +174,12 @@ try {
           style: s,
           panoramaCarousel: t
         }) => {
-          return e ? (o = w, d = t, (0, r.jsx)(o, {
+          return e ? (o = w, n = t, (0, r.jsx)(o, {
             className: a,
             style: s,
-            ...d
+            ...n
           })) : null;
-          var o, d
+          var o, n
         }
     }
   }

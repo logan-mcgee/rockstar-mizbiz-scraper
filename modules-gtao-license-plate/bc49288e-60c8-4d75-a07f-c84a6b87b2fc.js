@@ -34,7 +34,7 @@ try {
         o = a(74578);
 
       function r(e, t) {
-        if (!(e instanceof _)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
+        if (!(e instanceof c)) throw new TypeError("Method Intl.ListFormat.prototype.".concat(t, " called on incompatible receiver ").concat(String(e)))
       }
 
       function i(e) {
@@ -52,7 +52,7 @@ try {
       function s(e, t, a) {
         var l = a.length;
         if (0 === l) return [];
-        if (2 === l) return c((0, n.getInternalSlot)(e, t, "templatePair"), {
+        if (2 === l) return _((0, n.getInternalSlot)(e, t, "templatePair"), {
           0: {
             type: "element",
             value: a[0]
@@ -65,7 +65,7 @@ try {
         for (var o = {
             type: "element",
             value: a[l - 1]
-          }, r = l - 2; r >= 0;) o = c(0 === r ? (0, n.getInternalSlot)(e, t, "templateStart") : r < l - 2 ? (0, n.getInternalSlot)(e, t, "templateMiddle") : (0, n.getInternalSlot)(e, t, "templateEnd"), {
+          }, r = l - 2; r >= 0;) o = _(0 === r ? (0, n.getInternalSlot)(e, t, "templateStart") : r < l - 2 ? (0, n.getInternalSlot)(e, t, "templateMiddle") : (0, n.getInternalSlot)(e, t, "templateEnd"), {
           0: {
             type: "element",
             value: a[r]
@@ -75,7 +75,7 @@ try {
         return o
       }
 
-      function c(e, t) {
+      function _(e, t) {
         for (var a = [], l = 0, o = (0, n.PartitionPattern)(e); l < o.length; l++) {
           var r = o[l],
             i = r.type;
@@ -91,7 +91,7 @@ try {
         }
         return a
       }
-      var _ = function() {
+      var c = function() {
         function e(t, a) {
           if (!(this && this instanceof e ? this.constructor : void 0)) throw new TypeError("Intl.ListFormat must be called with 'new'");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "initializedListFormat", !0);
@@ -100,18 +100,18 @@ try {
             i = (0, n.GetOptionsObject)(a),
             s = (0, n.GetOption)(i, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
           r.localeMatcher = s;
-          var c = e.localeData,
-            _ = (0, o.ResolveLocale)(e.availableLocales, l, r, e.relevantExtensionKeys, c, e.getDefaultLocale);
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", _.locale);
+          var _ = e.localeData,
+            c = (0, o.ResolveLocale)(e.availableLocales, l, r, e.relevantExtensionKeys, _, e.getDefaultLocale);
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", c.locale);
           var f = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", f);
-          var d = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", d);
-          var u = _.dataLocale,
-            p = c[u];
-          (0, n.invariant)(!!p, "Missing locale data for ".concat(u));
-          var y = p[f][d];
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
+          var u = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", u);
+          var d = c.dataLocale,
+            p = _[d];
+          (0, n.invariant)(!!p, "Missing locale data for ".concat(d));
+          var b = p[f][u];
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", b.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", b.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", b.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", b.end)
         }
         return e.prototype.format = function(t) {
           r(this, "format");
@@ -124,9 +124,9 @@ try {
           r(this, "format");
           var a = s(e.__INTERNAL_SLOT_MAP__, this, i(t));
           if (!Array.isArray(a)) return [a];
-          for (var n = [], o = 0, c = a; o < c.length; o++) {
-            var _ = c[o];
-            n.push(l.__assign({}, _))
+          for (var n = [], o = 0, _ = a; o < _.length; o++) {
+            var c = _[o];
+            n.push(l.__assign({}, c))
           }
           return n
         }, e.prototype.resolvedOptions = function() {
@@ -150,19 +150,19 @@ try {
           return e.__defaultLocale
         }, e.localeData = {}, e.availableLocales = new Set, e.__defaultLocale = "", e.relevantExtensionKeys = [], e.polyfilled = !0, e.__INTERNAL_SLOT_MAP__ = new WeakMap, e
       }();
-      t.default = _;
+      t.default = c;
       try {
-        "undefined" != typeof Symbol && Object.defineProperty(_.prototype, Symbol.toStringTag, {
+        "undefined" != typeof Symbol && Object.defineProperty(c.prototype, Symbol.toStringTag, {
           value: "Intl.ListFormat",
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(_.prototype.constructor, "length", {
+        }), Object.defineProperty(c.prototype.constructor, "length", {
           value: 0,
           writable: !1,
           enumerable: !1,
           configurable: !0
-        }), Object.defineProperty(_.supportedLocalesOf, "length", {
+        }), Object.defineProperty(c.supportedLocalesOf, "length", {
           value: 1,
           writable: !1,
           enumerable: !1,

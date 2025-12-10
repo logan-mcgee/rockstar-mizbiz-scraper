@@ -226,19 +226,19 @@ try {
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
         var r = n[a] || new Set,
-          d = new Set,
-          s = new Set;
+          s = new Set,
+          d = new Set;
         for (r.forEach(function(e) {
-            s.add(e)
-          }); s.size > 0;) {
-          var t = s;
-          s = new Set, t.forEach(function(e) {
-            d.has(e) || (d.add(e), (n[e] || new Set).forEach(function(e) {
-              s.add(e)
+            d.add(e)
+          }); d.size > 0;) {
+          var t = d;
+          d = new Set, t.forEach(function(e) {
+            s.has(e) || (s.add(e), (n[e] || new Set).forEach(function(e) {
+              d.add(e)
             }))
           })
         }
-        return d.forEach(function(a) {
+        return s.forEach(function(a) {
           var n = o(e, a);
           n && i.definitions.push(n)
         }), i
@@ -258,7 +258,7 @@ try {
       var n = i(2295),
         o = i(2229),
         r = i(5966);
-      const d = {
+      const s = {
         "center-children": "rockstargames-modules-core-gif-viewerf2784956deb5076d08b115ab9f0de65b",
         "full-width": "rockstargames-modules-core-gif-viewera44ea239a96fa21be5803aa8597935f3",
         gifWrapper: "rockstargames-modules-core-gif-viewerf9ae1cdda1f485a1da00edfec5947239",
@@ -287,7 +287,7 @@ try {
         videoDesktop: "rockstargames-modules-core-gif-viewereb026b8ffe62b23b039f9a358c313b09",
         videoMobile: "rockstargames-modules-core-gif-viewere8988d4c734162926922754c59a024e7"
       };
-      var s = i(4235);
+      var d = i(4235);
       const t = ({
           hashes: e,
           hover: a,
@@ -295,7 +295,7 @@ try {
           sound: r
         }) => {
           const {
-            desktop: s = null,
+            desktop: d = null,
             mobile: t = null
           } = e, [l, c] = (0, o.useState)(!0), u = {
             autoPlay: !a,
@@ -306,16 +306,16 @@ try {
           };
           return (0, n.jsxs)("div", {
             onClick: () => c(!l),
-            children: [s && (0, n.jsx)(f, {
-              className: [t ? d.hiddenMobile : "", d.videoDesktop].join(" "),
-              hash: s,
+            children: [d && (0, n.jsx)(f, {
+              className: [t ? s.hiddenMobile : "", s.videoDesktop].join(" "),
+              hash: d,
               ...u
             }), t && (0, n.jsx)(f, {
-              className: [s ? d.hiddenLarge : "", d.videoMobile].join(" "),
+              className: [d ? s.hiddenLarge : "", s.videoMobile].join(" "),
               hash: t,
               ...u
             }), u.sound ? (0, n.jsx)("div", {
-              className: [d.muteBtn, l ? "" : d.unMuted].join(" ")
+              className: [s.muteBtn, l ? "" : s.unMuted].join(" ")
             }) : ""]
           })
         },
@@ -330,13 +330,13 @@ try {
         }) => {
           const {
             data: u
-          } = (0, r.useQuery)(s.GifInfo, {
+          } = (0, r.useQuery)(d.GifInfo, {
             variables: {
               hash: a
             }
           }), m = (0, o.useRef)();
           return u ? (0, n.jsx)("div", {
-            className: [e, d.video, c ? d.mutable : ""].join(" "),
+            className: [e, s.video, c ? s.mutable : ""].join(" "),
             onMouseEnter: () => i && void m.current.play(),
             onMouseLeave: () => i && (m.current.pause(), void(m.current.currentTime = 0)),
             children: (0, n.jsx)("video", {
@@ -355,7 +355,7 @@ try {
           title: i,
           caption: o,
           hero: r = !1,
-          loop: s = !0,
+          loop: d = !0,
           sound: f = !1,
           hover: l = !1
         }) => {
@@ -364,12 +364,12 @@ try {
             [a]: e[a]
           }));
           return (0, n.jsxs)("figure", {
-            className: `${d.gifWrapper} ${r?d.gifWrapperHero:""}`,
+            className: `${s.gifWrapper} ${r?s.gifWrapperHero:""}`,
             style: a,
             children: [(0, n.jsx)(t, {
               hashes: c,
               hover: l,
-              loop: s,
+              loop: d,
               sound: f,
               title: i ?? "R* Games"
             }), o && (0, n.jsx)("figcaption", {
@@ -385,8 +385,8 @@ try {
       var n = i(2229),
         o = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        d = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        d = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -397,7 +397,7 @@ try {
         var n, t = {},
           f = null,
           l = null;
-        for (n in void 0 !== i && (f = "" + i), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (l = a.ref), a) r.call(a, n) && !s.hasOwnProperty(n) && (t[n] = a[n]);
+        for (n in void 0 !== i && (f = "" + i), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (l = a.ref), a) r.call(a, n) && !d.hasOwnProperty(n) && (t[n] = a[n]);
         if (e && e.defaultProps)
           for (n in a = e.defaultProps) void 0 === t[n] && (t[n] = a[n]);
         return {
@@ -406,7 +406,7 @@ try {
           key: f,
           ref: l,
           props: t,
-          _owner: d.current
+          _owner: s.current
         }
       }
       a.jsx = t, a.jsxs = t

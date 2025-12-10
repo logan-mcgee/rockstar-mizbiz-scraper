@@ -65,14 +65,14 @@ try {
           i = {};
         return function e(n, c, l) {
           l = l || 1, Object.keys(n).forEach(function(u) {
-            const d = n[u],
-              f = r.safe && Array.isArray(d),
-              p = Object.prototype.toString.call(d),
-              y = t(d),
+            const f = n[u],
+              d = r.safe && Array.isArray(f),
+              p = Object.prototype.toString.call(f),
+              y = t(f),
               m = "[object Object]" === p || "[object Array]" === p,
-              g = c ? c + o + a(u) : a(u);
-            if (!f && !y && m && Object.keys(d).length && (!r.maxDepth || l < s)) return e(d, g, l + 1);
-            i[g] = d
+              b = c ? c + o + a(u) : a(u);
+            if (!d && !y && m && Object.keys(f).length && (!r.maxDepth || l < s)) return e(f, b, l + 1);
+            i[b] = f
           })
         }(e), i
       }
@@ -101,16 +101,16 @@ try {
         }, {}), Object.keys(o).forEach(function(t) {
           const n = t.split(a).map(c);
           let r = u(n.shift()),
-            d = u(n[0]),
-            f = l;
-          for (; void 0 !== d;) {
+            f = u(n[0]),
+            d = l;
+          for (; void 0 !== f;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(f[r]),
+            const e = Object.prototype.toString.call(d[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!i && !t && void 0 !== f[r]) return;
-            (i && !t || !i && null == f[r]) && (f[r] = "number" != typeof d || s.object ? {} : []), f = f[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
+            if (!i && !t && void 0 !== d[r]) return;
+            (i && !t || !i && null == d[r]) && (d[r] = "number" != typeof f || s.object ? {} : []), d = d[r], n.length > 0 && (r = u(n.shift()), f = u(n[0]))
           }
-          f[r] = e(o[t], s)
+          d[r] = e(o[t], s)
         }), l
       }
     },
@@ -119,14 +119,14 @@ try {
       n.r(t), n.d(t, {
         InViewTracker: () => j,
         TinaParser: () => w,
-        TinaPayloadProvider: () => f.o,
+        TinaPayloadProvider: () => d.o,
         recursiveNestedTemplates: () => T,
         useGenerateCdnSource: () => S.jS,
         useGetCdnSource: () => S.C1,
         useImageParser: () => S.S1,
-        useTinaComponents: () => d,
-        useTinaPayload: () => f.i,
-        useTranslations: () => g
+        useTinaComponents: () => f,
+        useTinaPayload: () => d.i,
+        useTranslations: () => b
       });
       var r = n(42295),
         o = n(62229),
@@ -147,12 +147,12 @@ try {
           value: t,
           children: e
         }),
-        d = () => (0, o.useContext)(c);
-      var f = n(74767),
+        f = () => (0, o.useContext)(c);
+      var d = n(74767),
         p = n(90287),
         y = n.n(p),
         m = n(42783);
-      const g = ({
+      const b = ({
         payload: e,
         variables: t
       }) => {
@@ -176,7 +176,7 @@ try {
           })(n)
         }), o
       };
-      var b = n(11206),
+      var g = n(11206),
         _ = n(2918);
       const h = {
           event: "page_section_impression",
@@ -234,7 +234,7 @@ try {
               }), l = "gen9.Hero");
               const u = a().get(e, l) ?? null;
               if (!u) return null;
-              const d = ((e, t) => n => ((e, t, n) => (0, r.jsx)(O, {
+              const f = ((e, t) => n => ((e, t, n) => (0, r.jsx)(O, {
                   impressionTracking: n?.impressionTracking,
                   gtm: n?.gtm,
                   children: (0, r.jsx)(e, {
@@ -247,13 +247,13 @@ try {
                     whatever: 1
                   }
                 }),
-                f = [...i?.translations ?? []].reverse(),
-                p = `componentProps_${(0,b.A)()}`;
-              return (0, o.createElement)(d, {
+                d = [...i?.translations ?? []].reverse(),
+                p = `componentProps_${(0,g.A)()}`;
+              return (0, o.createElement)(f, {
                 ...t?.meta,
                 ...i,
                 ...n,
-                t: e => f.find(t => t?._key === e)?.value ?? e,
+                t: e => d.find(t => t?._key === e)?.value ?? e,
                 key: p
               }, c)
             };
@@ -270,7 +270,7 @@ try {
           components: t = {},
           componentProps: n = {}
         }) => {
-          const s = (0, f.i)(),
+          const s = (0, d.i)(),
             [i, c] = (0, o.useState)(null),
             [l, p] = (0, o.useState)(null);
           (0, o.useEffect)(() => {
@@ -278,7 +278,7 @@ try {
           }, [e]);
           const [y] = (0, o.useState)({
             ...t,
-            ...d() ?? {}
+            ...f() ?? {}
           }), m = (({
             payload: e
           }) => {
@@ -309,13 +309,13 @@ try {
             }, [e]), t
           })({
             payload: i
-          }), b = g({
+          }), g = b({
             payload: i,
             variables: l
           });
           return (0, o.useMemo)(() => {
             if (!i) return null;
-            const t = b,
+            const t = g,
               o = i?.meta?.prod ?? i?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
               a = {
                 ...i,
@@ -324,7 +324,7 @@ try {
                   prod: o
                 }
               };
-            return (0, r.jsx)(f.o, {
+            return (0, r.jsx)(d.o, {
               payload: a,
               children: (0, r.jsx)(u, {
                 components: y,
@@ -338,7 +338,7 @@ try {
                 })
               })
             })
-          }, [s, i, JSON.stringify(m), JSON.stringify(b)])
+          }, [s, i, JSON.stringify(m), JSON.stringify(g)])
         };
       var S = n(34725);
       const v = (e = "", t = 0, n = {}, r = () => {}) => {

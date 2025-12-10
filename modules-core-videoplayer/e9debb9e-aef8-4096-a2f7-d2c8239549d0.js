@@ -151,7 +151,7 @@ try {
       };
       var o = {};
 
-      function s(e, t) {
+      function a(e, t) {
         for (var i = 0; i < e.definitions.length; i++) {
           var o = e.definitions[i];
           if (o.name && o.name.value == t) return o
@@ -165,13 +165,13 @@ try {
       }), e.exports = t, e.exports.TagList = function(e, t) {
         var i = {
           kind: e.kind,
-          definitions: [s(e, t)]
+          definitions: [a(e, t)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var a = o[t] || new Set,
+        var s = o[t] || new Set,
           n = new Set,
           r = new Set;
-        for (a.forEach(function(e) {
+        for (s.forEach(function(e) {
             r.add(e)
           }); r.size > 0;) {
           var l = r;
@@ -182,7 +182,7 @@ try {
           })
         }
         return n.forEach(function(t) {
-          var o = s(e, t);
+          var o = a(e, t);
           o && i.definitions.push(o)
         }), i
       }(t, "TagList")
@@ -199,8 +199,8 @@ try {
         default: () => J
       });
       var o = i(2295),
-        s = i(6188),
-        a = i.n(s),
+        a = i(6188),
+        s = i.n(a),
         n = i(5966);
       const r = "rockstargames-modules-core-videoplayera19bcd2b98d91e60c43b9de146e20f4e",
         l = ({
@@ -459,7 +459,7 @@ try {
         _ = function() {
           return _ = Object.assign || function(e) {
             for (var t, i = 1, o = arguments.length; i < o; i++)
-              for (var s in t = arguments[i]) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s]);
+              for (var a in t = arguments[i]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
             return e
           }, _.apply(this, arguments)
         },
@@ -522,8 +522,8 @@ try {
         B = (0, p.memo)(function(e) {
           var t = e.onResizeStart,
             i = e.direction,
-            s = e.children,
-            a = e.replaceStyles,
+            a = e.children,
+            s = e.replaceStyles,
             n = e.className,
             r = (0, p.useCallback)(function(e) {
               t(e, i)
@@ -535,14 +535,14 @@ try {
               return _(_({
                 position: "absolute",
                 userSelect: "none"
-              }, E[i]), null != a ? a : {})
-            }, [a, i]);
+              }, E[i]), null != s ? s : {})
+            }, [s, i]);
           return (0, o.jsx)("div", {
             className: n || void 0,
             style: h,
             onMouseDown: r,
             onTouchStart: l,
-            children: s
+            children: a
           })
         }),
         M = (S = function(e, t) {
@@ -565,7 +565,7 @@ try {
         L = function() {
           return L = Object.assign || function(e) {
             for (var t, i = 1, o = arguments.length; i < o; i++)
-              for (var s in t = arguments[i]) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s]);
+              for (var a in t = arguments[i]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
             return e
           }, L.apply(this, arguments)
         },
@@ -588,11 +588,11 @@ try {
         },
         O = function(e, t, i) {
           void 0 === i && (i = 0);
-          var o = t.reduce(function(i, o, s) {
-              return Math.abs(o - e) < Math.abs(t[i] - e) ? s : i
+          var o = t.reduce(function(i, o, a) {
+              return Math.abs(o - e) < Math.abs(t[i] - e) ? a : i
             }, 0),
-            s = Math.abs(t[o] - e);
-          return 0 === i || s < i ? t[o] : e
+            a = Math.abs(t[o] - e);
+          return 0 === i || a < i ? t[o] : e
         },
         D = function(e) {
           return "auto" === (e = e.toString()) || e.endsWith("px") || e.endsWith("%") || e.endsWith("vh") || e.endsWith("vw") || e.endsWith("vmax") || e.endsWith("vmin") ? e : "".concat(e, "px")
@@ -610,7 +610,7 @@ try {
         A = "__resizable_base__",
         G = function(e) {
           function t(t) {
-            var i, o, s, a, n = e.call(this, t) || this;
+            var i, o, a, s, n = e.call(this, t) || this;
             return n.ratio = 1, n.resizable = null, n.parentLeft = 0, n.parentTop = 0, n.resizableLeft = 0, n.resizableRight = 0, n.resizableTop = 0, n.resizableBottom = 0, n.targetLeft = 0, n.targetTop = 0, n.delta = {
               width: 0,
               height: 0
@@ -626,7 +626,7 @@ try {
             }, n.state = {
               isResizing: !1,
               width: null !== (o = null === (i = n.propsSize) || void 0 === i ? void 0 : i.width) && void 0 !== o ? o : "auto",
-              height: null !== (a = null === (s = n.propsSize) || void 0 === s ? void 0 : s.height) && void 0 !== a ? a : "auto",
+              height: null !== (s = null === (a = n.propsSize) || void 0 === a ? void 0 : a.height) && void 0 !== s ? s : "auto",
               direction: "right",
               original: {
                 x: 0,
@@ -675,8 +675,8 @@ try {
               if (this.resizable && this.window) {
                 var i = this.resizable.offsetWidth,
                   o = this.resizable.offsetHeight,
-                  s = this.resizable.style.position;
-                "relative" !== s && (this.resizable.style.position = "relative"), e = "auto" !== this.resizable.style.width ? this.resizable.offsetWidth : i, t = "auto" !== this.resizable.style.height ? this.resizable.offsetHeight : o, this.resizable.style.position = s
+                  a = this.resizable.style.position;
+                "relative" !== a && (this.resizable.style.position = "relative"), e = "auto" !== this.resizable.style.width ? this.resizable.offsetWidth : i, t = "auto" !== this.resizable.style.height ? this.resizable.offsetHeight : o, this.resizable.style.position = a
               }
               return {
                 width: e,
@@ -695,8 +695,8 @@ try {
                   if (e.propsSize && e.propsSize[t] && (null === (i = e.propsSize[t]) || void 0 === i ? void 0 : i.toString().endsWith("%"))) {
                     if (e.state[t].toString().endsWith("%")) return e.state[t].toString();
                     var o = e.getParentSize(),
-                      s = Number(e.state[t].toString().replace("px", "")) / o[t] * 100;
-                    return "".concat(s, "%")
+                      a = Number(e.state[t].toString().replace("px", "")) / o[t] * 100;
+                    return "".concat(a, "%")
                   }
                   return D(e.state[t])
                 };
@@ -750,10 +750,10 @@ try {
             var i = this.propsSize && this.propsSize[t];
             return "auto" !== this.state[t] || this.state.original[t] !== e || void 0 !== i && "auto" !== i ? e : "auto"
           }, t.prototype.calculateNewMaxFromBoundary = function(e, t) {
-            var i, o, s = this.props.boundsByDirection,
-              a = this.state.direction,
-              n = s && I("left", a),
-              r = s && I("top", a);
+            var i, o, a = this.props.boundsByDirection,
+              s = this.state.direction,
+              n = a && I("left", s),
+              r = a && I("top", s);
             if ("parent" === this.props.bounds) {
               var l = this.parentNode;
               l && (i = n ? this.resizableRight - this.parentLeft : l.offsetWidth + (this.parentLeft - this.resizableLeft), o = r ? this.resizableBottom - this.parentTop : l.offsetHeight + (this.parentTop - this.resizableTop))
@@ -764,9 +764,9 @@ try {
             }
           }, t.prototype.calculateNewSizeFromDirection = function(e, t) {
             var i, o = this.props.scale || 1,
-              s = (i = this.props.resizeRatio || 1, Array.isArray(i) ? i : [i, i]),
-              a = s[0],
-              n = s[1],
+              a = (i = this.props.resizeRatio || 1, Array.isArray(i) ? i : [i, i]),
+              s = a[0],
+              n = a[1],
               r = this.state,
               l = r.direction,
               h = r.original,
@@ -778,22 +778,22 @@ try {
               f = h.height,
               g = c || 0,
               b = u || 0;
-            return I("right", l) && (m = h.width + (e - h.x) * a / o, p && (f = (m - b) / this.ratio + g)), I("left", l) && (m = h.width - (e - h.x) * a / o, p && (f = (m - b) / this.ratio + g)), I("bottom", l) && (f = h.height + (t - h.y) * n / o, p && (m = (f - g) * this.ratio + b)), I("top", l) && (f = h.height - (t - h.y) * n / o, p && (m = (f - g) * this.ratio + b)), {
+            return I("right", l) && (m = h.width + (e - h.x) * s / o, p && (f = (m - b) / this.ratio + g)), I("left", l) && (m = h.width - (e - h.x) * s / o, p && (f = (m - b) / this.ratio + g)), I("bottom", l) && (f = h.height + (t - h.y) * n / o, p && (m = (f - g) * this.ratio + b)), I("top", l) && (f = h.height - (t - h.y) * n / o, p && (m = (f - g) * this.ratio + b)), {
               newWidth: m,
               newHeight: f
             }
           }, t.prototype.calculateNewSizeFromAspectRatio = function(e, t, i, o) {
-            var s = this.props,
-              a = s.lockAspectRatio,
-              n = s.lockAspectRatioExtraHeight,
-              r = s.lockAspectRatioExtraWidth,
+            var a = this.props,
+              s = a.lockAspectRatio,
+              n = a.lockAspectRatioExtraHeight,
+              r = a.lockAspectRatioExtraWidth,
               l = void 0 === o.width ? 10 : o.width,
               h = void 0 === i.width || i.width < 0 ? e : i.width,
               d = void 0 === o.height ? 10 : o.height,
               p = void 0 === i.height || i.height < 0 ? t : i.height,
               c = n || 0,
               u = r || 0;
-            if (a) {
+            if (s) {
               var m = (d - c) * this.ratio + u,
                 f = (p - c) * this.ratio + u,
                 g = (l - u) / this.ratio + c,
@@ -822,38 +822,38 @@ try {
               this.targetLeft = o.left * e, this.targetTop = o.top * e
             }
             if (this.resizable) {
-              var s = this.resizable.getBoundingClientRect(),
-                a = s.left,
-                n = s.top,
-                r = s.right,
-                l = s.bottom;
-              this.resizableLeft = a * e, this.resizableRight = r * e, this.resizableTop = n * e, this.resizableBottom = l * e
+              var a = this.resizable.getBoundingClientRect(),
+                s = a.left,
+                n = a.top,
+                r = a.right,
+                l = a.bottom;
+              this.resizableLeft = s * e, this.resizableRight = r * e, this.resizableTop = n * e, this.resizableBottom = l * e
             }
           }, t.prototype.onResizeStart = function(e, t) {
             if (this.resizable && this.window) {
               var i, o = 0,
-                s = 0;
+                a = 0;
               if (e.nativeEvent && function(e) {
                   return Boolean((e.clientX || 0 === e.clientX) && (e.clientY || 0 === e.clientY))
-                }(e.nativeEvent) ? (o = e.nativeEvent.clientX, s = e.nativeEvent.clientY) : e.nativeEvent && H(e.nativeEvent) && (o = e.nativeEvent.touches[0].clientX, s = e.nativeEvent.touches[0].clientY), this.props.onResizeStart && this.resizable && !1 === this.props.onResizeStart(e, t, this.resizable)) return;
+                }(e.nativeEvent) ? (o = e.nativeEvent.clientX, a = e.nativeEvent.clientY) : e.nativeEvent && H(e.nativeEvent) && (o = e.nativeEvent.touches[0].clientX, a = e.nativeEvent.touches[0].clientY), this.props.onResizeStart && this.resizable && !1 === this.props.onResizeStart(e, t, this.resizable)) return;
               this.props.size && (void 0 !== this.props.size.height && this.props.size.height !== this.state.height && this.setState({
                 height: this.props.size.height
               }), void 0 !== this.props.size.width && this.props.size.width !== this.state.width && this.setState({
                 width: this.props.size.width
               })), this.ratio = "number" == typeof this.props.lockAspectRatio ? this.props.lockAspectRatio : this.size.width / this.size.height;
-              var a = this.window.getComputedStyle(this.resizable);
-              if ("auto" !== a.flexBasis) {
+              var s = this.window.getComputedStyle(this.resizable);
+              if ("auto" !== s.flexBasis) {
                 var n = this.parentNode;
                 if (n) {
                   var r = this.window.getComputedStyle(n).flexDirection;
-                  this.flexDir = r.startsWith("row") ? "row" : "column", i = a.flexBasis
+                  this.flexDir = r.startsWith("row") ? "row" : "column", i = s.flexBasis
                 }
               }
               this.setBoundingClientRect(), this.bindEvents();
               var l = {
                 original: {
                   x: o,
-                  y: s,
+                  y: a,
                   width: this.size.width,
                   height: this.size.height
                 },
@@ -874,8 +874,8 @@ try {
               } catch (e) {}
               var i = this.props,
                 o = i.maxWidth,
-                s = i.maxHeight,
-                a = i.minWidth,
+                a = i.maxHeight,
+                s = i.minWidth,
                 n = i.minHeight,
                 r = H(e) ? e.touches[0].clientX : e.clientX,
                 l = H(e) ? e.touches[0].clientY : e.clientY,
@@ -885,25 +885,25 @@ try {
                 c = h.width,
                 u = h.height,
                 m = this.getParentSize(),
-                f = function(e, t, i, o, s, a, n) {
-                  return o = F(o, e.width, t, i), s = F(s, e.height, t, i), a = F(a, e.width, t, i), n = F(n, e.height, t, i), {
+                f = function(e, t, i, o, a, s, n) {
+                  return o = F(o, e.width, t, i), a = F(a, e.height, t, i), s = F(s, e.width, t, i), n = F(n, e.height, t, i), {
                     maxWidth: void 0 === o ? void 0 : Number(o),
-                    maxHeight: void 0 === s ? void 0 : Number(s),
-                    minWidth: void 0 === a ? void 0 : Number(a),
+                    maxHeight: void 0 === a ? void 0 : Number(a),
+                    minWidth: void 0 === s ? void 0 : Number(s),
                     minHeight: void 0 === n ? void 0 : Number(n)
                   }
-                }(m, this.window.innerWidth, this.window.innerHeight, o, s, a, n);
-              o = f.maxWidth, s = f.maxHeight, a = f.minWidth, n = f.minHeight;
+                }(m, this.window.innerWidth, this.window.innerHeight, o, a, s, n);
+              o = f.maxWidth, a = f.maxHeight, s = f.minWidth, n = f.minHeight;
               var g = this.calculateNewSizeFromDirection(r, l),
                 b = g.newHeight,
                 v = g.newWidth,
-                w = this.calculateNewMaxFromBoundary(o, s);
+                w = this.calculateNewMaxFromBoundary(o, a);
               this.props.snap && this.props.snap.x && (v = O(v, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (b = O(b, this.props.snap.y, this.props.snapGap));
               var y = this.calculateNewSizeFromAspectRatio(v, b, {
                 width: w.maxWidth,
                 height: w.maxHeight
               }, {
-                width: a,
+                width: s,
                 height: n
               });
               if (v = y.newWidth, b = y.newHeight, this.props.grid) {
@@ -943,9 +943,9 @@ try {
             }
           }, t.prototype.onMouseUp = function(e) {
             var t, i, o = this.state,
-              s = o.isResizing,
-              a = o.direction;
-            o.original, s && this.resizable && (this.props.onResizeStop && this.props.onResizeStop(e, a, this.resizable, this.delta), this.props.size && this.setState({
+              a = o.isResizing,
+              s = o.direction;
+            o.original, a && this.resizable && (this.props.onResizeStop && this.props.onResizeStop(e, s, this.resizable, this.delta), this.props.size && this.setState({
               width: null !== (t = this.props.size.width) && void 0 !== t ? t : "auto",
               height: null !== (i = this.props.size.height) && void 0 !== i ? i : "auto"
             }), this.unbindEvents(), this.setState({
@@ -964,8 +964,8 @@ try {
             var e = this,
               t = this.props,
               i = t.enable,
-              s = t.handleStyles,
-              a = t.handleClasses,
+              a = t.handleStyles,
+              s = t.handleClasses,
               n = t.handleWrapperStyle,
               r = t.handleWrapperClass,
               l = t.handleComponent;
@@ -974,8 +974,8 @@ try {
               return !1 !== i[t] ? (0, o.jsx)(B, {
                 direction: t,
                 onResizeStart: e.onResizeStart,
-                replaceStyles: s && s[t],
-                className: a && a[t],
+                replaceStyles: a && a[t],
+                className: s && s[t],
                 children: l && l[t] ? l[t] : null
               }, t) : null
             });
@@ -1001,8 +1001,8 @@ try {
                 flexShrink: 0
               });
             this.state.flexBasis && (i.flexBasis = this.state.flexBasis);
-            var s = this.props.as || "div";
-            return (0, o.jsxs)(s, L({
+            var a = this.props.as || "div";
+            return (0, o.jsxs)(a, L({
               style: i,
               className: this.props.className
             }, t, {
@@ -1043,8 +1043,8 @@ try {
           style: e,
           width: t,
           height: i,
-          resizable: s,
-          field: a,
+          resizable: a,
+          field: s,
           input: n,
           meta: r,
           name: l,
@@ -1053,7 +1053,7 @@ try {
           error: c,
           children: u
         }) => {
-          const m = () => s ? (0, o.jsx)(G, {
+          const m = () => a ? (0, o.jsx)(G, {
             defaultSize: {
               width: t || "100%",
               height: i || "500px"
@@ -1068,10 +1068,10 @@ try {
             style: e,
             children: [(0, o.jsxs)("label", {
               className: "rockstargames-modules-core-videoplayerceac2b2784e621f05ce51dade558df8d FieldLabel-sc-custom dzLxXV",
-              htmlFor: l ?? a?.name,
-              children: [h ?? a?.label, (0, o.jsx)("span", {
+              htmlFor: l ?? s?.name,
+              children: [h ?? s?.label, (0, o.jsx)("span", {
                 className: "rockstargames-modules-core-videoplayera0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
-                children: d ?? a?.description
+                children: d ?? s?.description
               })]
             }), (0, o.jsx)(m, {}), (c || r?.error) && (0, o.jsx)("div", {
               className: "FieldError_sc_custom",
@@ -1122,12 +1122,12 @@ query VideosList($locale: String!, $cache: Boolean = true, $limit: Int) {
           meta: i
         }) => {
           const {
-            data: s
+            data: a
           } = (0, n.useQuery)(q, {
             variables: {
               limit: 1e3
             }
-          }), r = a()(s?.videos?.results).groupBy("game.title").map((e, t) => ({
+          }), r = s()(a?.videos?.results).groupBy("game.title").map((e, t) => ({
             gameTitle: t,
             videos: e.map(e => ({
               id: e.id,
@@ -1139,7 +1139,7 @@ query VideosList($locale: String!, $cache: Boolean = true, $limit: Int) {
             label: e.label,
             description: e.description,
             meta: i,
-            children: s && r?.length ? (0, o.jsxs)("select", {
+            children: a && r?.length ? (0, o.jsxs)("select", {
               ...t,
               children: [(0, o.jsx)("option", {
                 value: "",
@@ -1200,8 +1200,8 @@ query VideosList($locale: String!, $cache: Boolean = true, $limit: Int) {
     9245: (e, t, i) => {
       "use strict";
       var o = i(2229),
-        s = Symbol.for("react.element"),
-        a = Symbol.for("react.fragment"),
+        a = Symbol.for("react.element"),
+        s = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
         r = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
@@ -1212,22 +1212,22 @@ query VideosList($locale: String!, $cache: Boolean = true, $limit: Int) {
         };
 
       function h(e, t, i) {
-        var o, a = {},
+        var o, s = {},
           h = null,
           d = null;
-        for (o in void 0 !== i && (h = "" + i), void 0 !== t.key && (h = "" + t.key), void 0 !== t.ref && (d = t.ref), t) n.call(t, o) && !l.hasOwnProperty(o) && (a[o] = t[o]);
+        for (o in void 0 !== i && (h = "" + i), void 0 !== t.key && (h = "" + t.key), void 0 !== t.ref && (d = t.ref), t) n.call(t, o) && !l.hasOwnProperty(o) && (s[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === a[o] && (a[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === s[o] && (s[o] = t[o]);
         return {
-          $$typeof: s,
+          $$typeof: a,
           type: e,
           key: h,
           ref: d,
-          props: a,
+          props: s,
           _owner: r.current
         }
       }
-      t.Fragment = a, t.jsx = h, t.jsxs = h
+      t.Fragment = s, t.jsx = h, t.jsxs = h
     }
   }
 ]);

@@ -81,14 +81,14 @@ try {
         }) : null;
       var o = a(31879),
         g = a.n(o),
-        m = a(92440),
-        b = a(4572),
-        f = a.n(b);
+        b = a(92440),
+        m = a(4572),
+        f = a.n(m);
       const p = ({
           impressionTracking: e,
           gtm: s = {},
           children: a
-        }) => e?.shouldTrack ? (0, t.jsx)(m.InViewTracker, {
+        }) => e?.shouldTrack ? (0, t.jsx)(b.InViewTracker, {
           threshold: e?.threshold,
           gtm: s,
           children: a
