@@ -38,12 +38,12 @@ try {
         __metadata: () => p,
         __param: () => u,
         __propKey: () => f,
-        __read: () => b,
+        __read: () => g,
         __rest: () => i,
         __rewriteRelativeImportExtension: () => F,
         __runInitializers: () => l,
         __setFunctionName: () => d,
-        __spread: () => g,
+        __spread: () => b,
         __spreadArray: () => E,
         __spreadArrays: () => w,
         __values: () => _,
@@ -280,7 +280,7 @@ try {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function b(e, t) {
+      function g(e, t) {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, o, a = n.call(e),
@@ -302,8 +302,8 @@ try {
         return i
       }
 
-      function g() {
-        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(b(arguments[t]));
+      function b() {
+        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(g(arguments[t]));
         return e
       }
 
@@ -539,8 +539,8 @@ try {
         __createBinding: y,
         __exportStar: m,
         __values: _,
-        __read: b,
-        __spread: g,
+        __read: g,
+        __spread: b,
         __spreadArrays: w,
         __spreadArray: E,
         __await: S,
@@ -656,8 +656,8 @@ try {
             y = e.removeScrollBar,
             m = e.enabled,
             _ = e.shards,
-            b = e.sideCar,
-            g = e.noRelative,
+            g = e.sideCar,
+            b = e.noRelative,
             w = e.noIsolation,
             E = e.inert,
             S = e.allowPinchZoom,
@@ -665,7 +665,7 @@ try {
             j = void 0 === O ? "div" : O,
             P = e.gapMode,
             T = (0, r.__rest)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            k = b,
+            k = g,
             R = function(e, t) {
               var n, r, a, i = (n = t || null, r = function(t) {
                 return e.forEach(function(e) {
@@ -706,7 +706,7 @@ try {
             sideCar: f,
             removeScrollBar: y,
             shards: _,
-            noRelative: g,
+            noRelative: b,
             noIsolation: w,
             inert: E,
             setCallbacks: l,
@@ -782,17 +782,17 @@ try {
         _ = function(e) {
           return parseInt(e || "", 10) || 0
         },
-        b = y(),
-        g = "data-scroll-locked",
+        g = y(),
+        b = "data-scroll-locked",
         w = function(e, t, n, r) {
           var o = e.left,
             c = e.top,
             u = e.right,
             s = e.gap;
-          return void 0 === n && (n = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(s, "px ").concat(r, ";\n  }\n  body[").concat(g, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([t && "position: relative ".concat(r, ";"), "margin" === n && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(c, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(s, "px ").concat(r, ";\n    "), "padding" === n && "padding-right: ".concat(s, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(s, "px ").concat(r, ";\n  }\n  \n  .").concat(i, " {\n    margin-right: ").concat(s, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(i, " .").concat(i, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(g, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(s, "px;\n  }\n")
+          return void 0 === n && (n = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(s, "px ").concat(r, ";\n  }\n  body[").concat(b, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([t && "position: relative ".concat(r, ";"), "margin" === n && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(c, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(s, "px ").concat(r, ";\n    "), "padding" === n && "padding-right: ".concat(s, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(s, "px ").concat(r, ";\n  }\n  \n  .").concat(i, " {\n    margin-right: ").concat(s, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(i, " .").concat(i, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(b, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(s, "px;\n  }\n")
         },
         E = function() {
-          var e = parseInt(document.body.getAttribute(g) || "0", 10);
+          var e = parseInt(document.body.getAttribute(b) || "0", 10);
           return isFinite(e) ? e : 0
         },
         S = function(e) {
@@ -801,10 +801,10 @@ try {
             r = e.gapMode,
             a = void 0 === r ? "margin" : r;
           o.useEffect(function() {
-            return document.body.setAttribute(g, (E() + 1).toString()),
+            return document.body.setAttribute(b, (E() + 1).toString()),
               function() {
                 var e = E() - 1;
-                e <= 0 ? document.body.removeAttribute(g) : document.body.setAttribute(g, e.toString())
+                e <= 0 ? document.body.removeAttribute(b) : document.body.setAttribute(b, e.toString())
               }
           }, []);
           var i = o.useMemo(function() {
@@ -827,7 +827,7 @@ try {
               }
             }(a)
           }, [a]);
-          return o.createElement(b, {
+          return o.createElement(g, {
             styles: w(i, !t, a, n ? "" : "!important")
           })
         },

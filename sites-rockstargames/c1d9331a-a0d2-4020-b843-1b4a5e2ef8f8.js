@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    s = (new e.Error).stack;
-  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "c1d9331a-a0d2-4020-b843-1b4a5e2ef8f8", e._sentryDebugIdIdentifier = "sentry-dbid-c1d9331a-a0d2-4020-b843-1b4a5e2ef8f8")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "c1d9331a-a0d2-4020-b843-1b4a5e2ef8f8", e._sentryDebugIdIdentifier = "sentry-dbid-c1d9331a-a0d2-4020-b843-1b4a5e2ef8f8")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,30 +13,30 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [8088], {
-    68088: (e, s, a) => {
-      a.r(s), a.d(s, {
-        default: () => f
+    68088: (e, a, s) => {
+      s.r(a), s.d(a, {
+        default: () => r
       });
-      var t = a(42295),
-        d = a(62229),
-        n = a(9623),
-        o = a(9566),
-        r = a(87790);
-      const f = (0, a(95966).withTranslations)(({
+      var t = s(42295),
+        d = s(62229),
+        n = s(9623),
+        f = s(9566),
+        o = s(87790);
+      const r = (0, s(95966).withTranslations)(({
         t: e
       }) => {
-        const s = (0, n.useParams)(),
+        const a = (0, n.useParams)(),
           {
-            setBreadcrumb: a,
-            setNormalLogo: f
-          } = (0, r.b)();
-        return (0, d.useEffect)(() => (a([{
+            setBreadcrumb: s,
+            setNormalLogo: r
+          } = (0, o.b)();
+        return (0, d.useEffect)(() => (s([{
           href: "/newswire",
           title: e("Newswire")
         }], ""), () => {
-          f(!0), a()
-        }), []), (0, t.jsx)(o.NewswireArticle, {
-          idHash: String(s.articleId)
+          r(!0), s()
+        }), []), (0, t.jsx)(f.NewswireArticle, {
+          idHash: String(a.articleId)
         })
       })
     }

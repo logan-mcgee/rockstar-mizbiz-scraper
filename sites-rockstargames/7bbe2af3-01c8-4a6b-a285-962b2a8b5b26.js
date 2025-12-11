@@ -21,11 +21,11 @@ try {
         a = Symbol.for("react.profiler"),
         f = Symbol.for("react.provider"),
         s = Symbol.for("react.context"),
-        c = Symbol.for("react.forward_ref"),
-        i = Symbol.for("react.suspense"),
+        i = Symbol.for("react.forward_ref"),
+        c = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
-        p = Symbol.for("react.lazy"),
-        d = Symbol.iterator,
+        d = Symbol.for("react.lazy"),
+        p = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -75,8 +75,8 @@ try {
         var s = arguments.length - 2;
         if (1 === s) u.children = n;
         else if (1 < s) {
-          for (var c = Array(s), i = 0; i < s; i++) c[i] = arguments[i + 2];
-          u.children = c
+          for (var i = Array(s), c = 0; c < s; c++) i[c] = arguments[c + 2];
+          u.children = i
         }
         if (e && e.defaultProps)
           for (o in s = e.defaultProps) void 0 === u[o] && (u[o] = s[o]);
@@ -137,13 +137,13 @@ try {
           }
         }(a, o + (!a.key || s && s.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
         if (s = 0, u = "" === u ? "." : u + ":", w(e))
-          for (var c = 0; c < e.length; c++) {
-            var i = u + j(f = e[c], c);
-            s += I(f, t, o, i, a)
-          } else if (i = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
-            }(e), "function" == typeof i)
-            for (e = i.call(e), c = 0; !(f = e.next()).done;) s += I(f = f.value, t, o, i = u + j(f, c++), a);
+          for (var i = 0; i < e.length; i++) {
+            var c = u + j(f = e[i], i);
+            s += I(f, t, o, c, a)
+          } else if (c = function(e) {
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
+            }(e), "function" == typeof c)
+            for (e = c.call(e), i = 0; !(f = e.next()).done;) s += I(f = f.value, t, o, c = u + j(f, i++), a);
           else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return s
       }
@@ -206,7 +206,7 @@ try {
           if (!$(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = i, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
+      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = b({}, e.props),
           u = e.key,
@@ -214,13 +214,13 @@ try {
           f = e._owner;
         if (null != t) {
           if (void 0 !== t.ref && (a = t.ref, f = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var s = e.type.defaultProps;
-          for (c in t) k.call(t, c) && !E.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== s ? s[c] : t[c])
+          for (i in t) k.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== s ? s[i] : t[i])
         }
-        var c = arguments.length - 2;
-        if (1 === c) o.children = n;
-        else if (1 < c) {
-          s = Array(c);
-          for (var i = 0; i < c; i++) s[i] = arguments[i + 2];
+        var i = arguments.length - 2;
+        if (1 === i) o.children = n;
+        else if (1 < i) {
+          s = Array(i);
+          for (var c = 0; c < i; c++) s[c] = arguments[c + 2];
           o.children = s
         }
         return {
@@ -254,12 +254,12 @@ try {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: c,
+          $$typeof: i,
           render: e
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: p,
+          $$typeof: d,
           _payload: {
             _status: -1,
             _result: e

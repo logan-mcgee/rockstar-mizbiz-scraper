@@ -45,8 +45,8 @@ try {
         v = r(78004),
         h = r(21222),
         g = r(79158),
-        b = r(94926),
-        _ = r(19690),
+        _ = r(94926),
+        b = r(19690),
         y = r(42295),
         P = "Popover",
         [w, m] = (0, s.A)(P, [u.Bk]),
@@ -175,8 +175,8 @@ try {
             l = n.useRef(!1);
           return n.useEffect(() => {
             const e = s.current;
-            if (e) return (0, b.Eq)(e)
-          }, []), (0, y.jsx)(_.RemoveScroll, {
+            if (e) return (0, _.Eq)(e)
+          }, []), (0, y.jsx)(b.RemoveScroll, {
             as: N,
             allowPinchZoom: !0,
             children: (0, y.jsx)(U, {
@@ -233,7 +233,7 @@ try {
             onFocusOutside: f,
             onInteractOutside: v,
             ...h
-          } = e, g = x(T, r), b = C(r);
+          } = e, g = x(T, r), _ = C(r);
           return (0, l.Oh)(), (0, y.jsx)(c.FocusScope, {
             asChild: !0,
             loop: !0,
@@ -252,7 +252,7 @@ try {
                 "data-state": G(g.open),
                 role: "dialog",
                 id: g.contentId,
-                ...b,
+                ..._,
                 ...h,
                 ref: o,
                 style: {

@@ -13,39 +13,39 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [2295, 4676, 7533], {
-    42295: (e, o, r) => {
-      e.exports = r(69245)
+    42295: (e, o, d) => {
+      e.exports = d(69245)
     },
-    69245: (e, o, r) => {
-      var a = r(71127),
-        n = Symbol.for("react.element"),
-        t = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
-        s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+    69245: (e, o, d) => {
+      var r = d(71127),
+        a = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        t = Object.prototype.hasOwnProperty,
+        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, o, r) {
-        var a, t = {},
+      function l(e, o, d) {
+        var r, n = {},
           l = null,
-          b = null;
-        for (a in void 0 !== r && (l = "" + r), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (b = o.ref), o) d.call(o, a) && !f.hasOwnProperty(a) && (t[a] = o[a]);
+          i = null;
+        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !s.hasOwnProperty(r) && (n[r] = o[r]);
         if (e && e.defaultProps)
-          for (a in o = e.defaultProps) void 0 === t[a] && (t[a] = o[a]);
+          for (r in o = e.defaultProps) void 0 === n[r] && (n[r] = o[r]);
         return {
-          $$typeof: n,
+          $$typeof: a,
           type: e,
           key: l,
-          ref: b,
-          props: t,
-          _owner: s.current
+          ref: i,
+          props: n,
+          _owner: f.current
         }
       }
-      o.Fragment = t, o.jsx = l, o.jsxs = l
+      o.Fragment = n, o.jsx = l, o.jsxs = l
     }
   }
 ]);

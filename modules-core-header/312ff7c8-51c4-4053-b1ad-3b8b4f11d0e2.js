@@ -20,8 +20,8 @@ try {
       var r = d(71127),
         n = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
-        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = Object.prototype.hasOwnProperty,
+        a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -32,17 +32,17 @@ try {
       function l(e, o, d) {
         var r, t = {},
           l = null,
-          b = null;
-        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (b = o.ref), o) a.call(o, r) && !s.hasOwnProperty(r) && (t[r] = o[r]);
+          i = null;
+        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) f.call(o, r) && !s.hasOwnProperty(r) && (t[r] = o[r]);
         if (e && e.defaultProps)
           for (r in o = e.defaultProps) void 0 === t[r] && (t[r] = o[r]);
         return {
           $$typeof: n,
           type: e,
           key: l,
-          ref: b,
+          ref: i,
           props: t,
-          _owner: f.current
+          _owner: a.current
         }
       }
       o.Fragment = t, o.jsx = l, o.jsxs = l

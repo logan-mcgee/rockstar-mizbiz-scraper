@@ -15,9 +15,9 @@ try {
   [1436], {
     69055: (e, d, a) => {
       a.r(d), a.d(d, {
-        Root: () => i,
+        Root: () => r,
         VISUALLY_HIDDEN_STYLES: () => s,
-        VisuallyHidden: () => r
+        VisuallyHidden: () => f
       });
       var n = a(71127),
         o = a(78004),
@@ -34,7 +34,7 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        r = n.forwardRef((e, d) => (0, t.jsx)(o.sG.span, {
+        f = n.forwardRef((e, d) => (0, t.jsx)(o.sG.span, {
           ...e,
           ref: d,
           style: {
@@ -42,26 +42,26 @@ try {
             ...e.style
           }
         }));
-      r.displayName = "VisuallyHidden";
-      var i = r
+      f.displayName = "VisuallyHidden";
+      var r = f
     },
     78004: (e, d, a) => {
       a.d(d, {
-        hO: () => i,
-        sG: () => r
+        hO: () => r,
+        sG: () => f
       });
       var n = a(71127),
         o = a(31062),
         t = a(21222),
         s = a(42295),
-        r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, d) => {
+        f = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, d) => {
           const a = (0, t.createSlot)(`Primitive.${d}`),
             o = n.forwardRef((e, n) => {
               const {
                 asChild: o,
                 ...t
-              } = e, r = o ? a : d;
-              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(r, {
+              } = e, f = o ? a : d;
+              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(f, {
                 ...t,
                 ref: n
               })
@@ -72,7 +72,7 @@ try {
           }
         }, {});
 
-      function i(e, d) {
+      function r(e, d) {
         e && o.flushSync(() => e.dispatchEvent(d))
       }
     }

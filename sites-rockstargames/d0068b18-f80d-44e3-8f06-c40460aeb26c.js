@@ -99,7 +99,7 @@ try {
         }
       });
       var k = a(52542);
-      const b = {
+      const m = {
           container: "rockstargames-sites-rockstargamesfa99680d2ce0170488cda6b86deb16f2",
           description: "rockstargames-sites-rockstargamesed46eccebadbcbcb9dbd86b418a7933b",
           dialogModal: "rockstargames-sites-rockstargamesdf9ff40c322d5faab31c888742f2d51a",
@@ -112,7 +112,7 @@ try {
           textContent: "rockstargames-sites-rockstargamesdc89c2cc2d679db0db0a41ebe11871f5"
         },
         {
-          host: m
+          host: b
         } = (0, o.getConfigForDomain)(),
         f = (0, c.withIntl)(() => {
           const e = (0, c.useIntl)(),
@@ -120,7 +120,7 @@ try {
               track: s
             } = (0, n.useGtmTrack)(),
             [a, k] = (0, r.useState)(""),
-            f = `https://${m}.rockstargames.com/settings/email`,
+            f = `https://${b}.rockstargames.com/settings/email`,
             p = (0, o.useRockstarTokenPing)(),
             [g] = (0, i.useSearchParams)(),
             h = {
@@ -155,18 +155,18 @@ try {
               view_name: u[`unsubscribe_${a}_header`].defaultMessage
             })
           }, [a]), (0, t.jsx)("div", {
-            className: b.container,
+            className: m.container,
             children: a ? (0, t.jsxs)("div", {
-              className: b.dialogModal,
+              className: m.dialogModal,
               children: [(0, t.jsx)("div", {
-                className: b[`${a}Icon`]
+                className: m[`${a}Icon`]
               }), (0, t.jsxs)("div", {
-                className: b.textContent,
+                className: m.textContent,
                 children: [(0, t.jsx)("h3", {
-                  className: b.heading,
+                  className: m.heading,
                   children: e.formatMessage(u[`unsubscribe_${a}_header`])
                 }), (0, t.jsx)("div", {
-                  className: b.description,
+                  className: m.description,
                   children: e.formatMessage(u[`unsubscribe_${a}_description`])
                 })]
               }), (0, t.jsx)("div", {

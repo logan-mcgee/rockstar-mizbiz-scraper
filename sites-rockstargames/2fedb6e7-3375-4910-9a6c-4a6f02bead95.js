@@ -139,7 +139,7 @@ try {
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            k = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -157,7 +157,7 @@ try {
             signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${b}`
+            pingBearer: `https://${p}/${k}`
           }
         },
         a = [o({
@@ -305,14 +305,14 @@ try {
         vx: () => x,
         sb: () => S,
         Ym: () => i.A,
-        CA: () => k.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => c,
         ZC: () => l,
         sq: () => d,
         OH: () => v,
-        zP: () => b,
+        zP: () => k,
         Cb: () => f,
-        N6: () => E,
+        N6: () => b,
         GA: () => A,
         JE: () => T
       });
@@ -428,7 +428,7 @@ try {
             dispatch: e
           }), [])
         },
-        b = (e, t) => {
+        k = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)(() => {
             const n = p(e);
@@ -442,13 +442,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var k = n(89656),
-        y = (n(95342), n(17954));
-      const E = e => {
+      var y = n(89656),
+        E = (n(95342), n(17954));
+      const b = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, i.A)(), s = (0, y.t)(r);
+        } = (0, h.A)(), r = (0, i.A)(), s = (0, E.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -602,23 +602,23 @@ try {
               ...p,
               url: h
             }),
-            b = await (0, r.sc)(v);
+            k = await (0, r.sc)(v);
           if (u) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            if (w[k]?.response) return w[k].response;
+            if (w[k]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[k] = {
               loading: !0
             }
           }
-          const k = await fetch(h, p),
-            y = await k.json();
-          return u && (w[b] = {
-            response: y,
+          const y = await fetch(h, p),
+            E = await y.json();
+          return u && (w[k] = {
+            response: E,
             loading: !1
-          }), y
+          }), E
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

@@ -40,7 +40,7 @@ try {
           inView: k
         } = (0, s.useInView)({
           threshold: .6
-        }), [x, h] = (0, t.useState)(!1), [v, b] = (0, t.useState)({}), g = (0, y.r)("resource"), {
+        }), [x, h] = (0, t.useState)(!1), [v, g] = (0, t.useState)({}), b = (0, y.r)("resource"), {
           data: N,
           loading: S
         } = (0, r.useQuery)(u(), {
@@ -51,7 +51,7 @@ try {
           content: _
         } = N?.companyInfo ?? "", w = N?.meta ?? "";
         return (0, t.useEffect)(() => {
-          b({
+          g({
             jsonType: "how-to-report",
             jsonLocale: i,
             metaUrl: "/community-resources/how-to-report",
@@ -85,7 +85,7 @@ try {
               }), (0, n.jsx)("div", {
                 className: "_4qtldo4",
                 ref: m,
-                children: g.map(e => (0, n.jsx)(f.A, {
+                children: b.map(e => (0, n.jsx)(f.A, {
                   cardData: e,
                   type: "icon"
                 }, `${e.header}-iconCard`))

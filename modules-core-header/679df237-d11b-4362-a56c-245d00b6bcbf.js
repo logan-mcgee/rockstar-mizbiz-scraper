@@ -172,7 +172,7 @@ try {
         ScrollProvider: () => Me.N2,
         coreScApiFetch: () => o.A,
         detectIfWeShouldAnchorSomewhere: () => ne,
-        downloadFile: () => be,
+        downloadFile: () => we,
         findPlatform: () => ie,
         generateTpaLink: () => ge,
         getAccentColor: () => r,
@@ -180,13 +180,13 @@ try {
         getCdnPrefix: () => me,
         getConfigForDomain: () => s.A,
         getCookieValueByName: () => de,
-        getGen8Consoles: () => we,
+        getGen8Consoles: () => be,
         getGen9Consoles: () => ye,
         getLanguageLabel: () => xe,
         getUriForGraphEnv: () => i,
         gql: () => Le.J1,
         gtmInit: () => Fe,
-        importAll: () => he,
+        importAll: () => fe,
         isGen9Platform: () => ve,
         makeVar: () => S.UT,
         mutateWebSettings: () => We,
@@ -214,7 +214,7 @@ try {
         usePrevious: () => O.ZC,
         useQuery: () => U,
         useQueryParams: () => O.sq,
-        useReactiveVar: () => f.q,
+        useReactiveVar: () => h.q,
         useRockstarEventDispatcher: () => O.OH,
         useRockstarEventSubscriber: () => O.zP,
         useRockstarToken: () => N.e9,
@@ -226,7 +226,7 @@ try {
         useScroll: () => Me.Ll,
         useScrollTracking: () => O.GA,
         useScrollVisibility: () => O.JE,
-        useState: () => b,
+        useState: () => w,
         useWindowResize: () => He.G4,
         webSettingsReactive: () => Ve,
         withAutoRouteTracking: () => $e,
@@ -264,24 +264,24 @@ try {
       var u = n(9482),
         p = n(52690),
         g = n(42295),
-        h = n(71127),
-        f = n(93452);
+        f = n(71127),
+        h = n(93452);
       const m = (0, u.A)({
-          context: (0, h.createContext)({}),
+          context: (0, f.createContext)({}),
           key: "graphContextGet"
         }),
-        b = () => (0, h.useContext)(m),
-        w = (0, u.A)({
-          context: (0, h.createContext)({}),
+        w = () => (0, f.useContext)(m),
+        b = (0, u.A)({
+          context: (0, f.createContext)({}),
           key: "graphContextSet"
         }),
-        y = () => (0, h.useContext)(w),
+        y = () => (0, f.useContext)(b),
         v = ({
           children: e,
           state: t
         }) => {
-          (0, f.q)(t);
-          const n = (0, h.useCallback)(e => {
+          (0, h.q)(t);
+          const n = (0, f.useCallback)(e => {
             const n = {
               ...t(),
               ...e
@@ -290,7 +290,7 @@ try {
           }, [t]);
           return (0, g.jsx)(m.Provider, {
             value: t(),
-            children: (0, g.jsx)(w.Provider, {
+            children: (0, g.jsx)(b.Provider, {
               value: n,
               children: e
             })
@@ -331,7 +331,7 @@ try {
               error: s,
               ...i
             } = (0, A.IT)(e, o);
-          return (0, h.useEffect)(() => {
+          return (0, f.useEffect)(() => {
             if (r && o.setTitleDataPath) {
               const e = l().get(r, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -339,7 +339,7 @@ try {
                 title: e
               })
             }
-          }, [r]), (0, h.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [r]), (0, f.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: a
           }), () => {
@@ -347,7 +347,7 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [a]), (0, h.useEffect)(() => {
+          }), [a]), (0, f.useEffect)(() => {
             if (o.autoSetError && s) throw new Error(String(s))
           }, [s]), {
             loading: a,
@@ -356,7 +356,7 @@ try {
             ...i
           }
         },
-        L = (0, h.createContext)(() => ({
+        L = (0, f.createContext)(() => ({
           data: null
         })),
         R = new Promise(e => {
@@ -372,7 +372,7 @@ try {
           reset: () => null,
           client: window?.["apollo-client"] ?? (window["apollo-client"] = new P.R(_))
         }],
-        M = (0, h.createContext)(() => T),
+        M = (0, f.createContext)(() => T),
         I = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = ({
           children: e
         }) => (0, g.jsx)(M.Provider, {
@@ -382,8 +382,8 @@ try {
             children: e
           })
         })),
-        U = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, h.useContext)(L)(e, t)),
-        D = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, h.useContext)(M)(e));
+        U = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, f.useContext)(L)(e, t)),
+        D = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, f.useContext)(M)(e));
       var N = n(20772),
         B = n(6347);
       var $ = n(83605),
@@ -403,7 +403,7 @@ try {
               ...e,
               uri: n
             },
-            [r] = (0, h.useState)(new k.D({
+            [r] = (0, f.useState)(new k.D({
               typePolicies: t
             })),
             a = V.concat((({
@@ -468,9 +468,9 @@ try {
         Q = (0, S.UT)({}),
         J = "data-disallow-body-scroll",
         Y = e => {
-          const t = (0, f.q)(Q),
+          const t = (0, h.q)(Q),
             n = Object.values(t).some(e => !!e);
-          return (0, h.useEffect)(() => {
+          return (0, f.useEffect)(() => {
             n ? document.documentElement.setAttribute(J, "true") : document.documentElement.removeAttribute(J)
           }, [n]), {
             bodyShouldLock: n,
@@ -589,13 +589,13 @@ try {
           clientId: a
         } = (0, s.A)(), i = await n(), c = new URL(`tpa/${e}/link`, `https://${r}.rockstargames.com`);
         return c.searchParams.append("cid", a), c.searchParams.append("lang", o), c.searchParams.append("returnUrl", t ?? window.location.pathname), i && "boolean" != typeof i && "string" == typeof i.bearerToken && c.searchParams.append("accessToken", i.bearerToken), c
-      }, he = e => e.keys().forEach(e), fe = [{
+      }, fe = e => e.keys().forEach(e), he = [{
         key: "dev",
         path: "https://media-dev-rockstargames-com.akamaized.net"
       }, {
         key: "prod",
         path: "https://media-rockstargames-com.akamaized.net"
-      }], me = (e = !0) => fe.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null, be = e => {
+      }], me = (e = !0) => he.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null, we = e => {
         e.preventDefault();
         const t = e.currentTarget.href,
           n = (e => {
@@ -613,7 +613,7 @@ try {
         }).catch(e => {
           console.log(e)
         })
-      }, we = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name], ye = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name], ve = e => ye().includes(e), xe = e => {
+      }, be = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name], ye = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name], ve = e => ye().includes(e), xe = e => {
         const t = new Map([
           ["en-us", "English (United States)"],
           ["de-de", "Deutsch (Deutschland)"],
@@ -654,7 +654,7 @@ try {
           }
         }))(e, t),
         je = (e, t = 250) => n => ((e, t, n) => {
-          const [o, r] = (0, h.useState)(t), a = e => {
+          const [o, r] = (0, f.useState)(t), a = e => {
             let t = e;
             const n = t?.items;
             if (n?.length) {
@@ -672,7 +672,7 @@ try {
               }
             }), t) : t
           };
-          return (0, h.useEffect)(() => {
+          return (0, f.useEffect)(() => {
             const e = l().debounce(() => {
               r(a(t))
             }, n);
@@ -710,16 +710,16 @@ query Translations($locale: String!, $config: String!) {
         })(e, n, t);
       var Me = n(95342);
       const Ie = (0, u.A)({
-          context: (0, h.createContext)({}),
+          context: (0, f.createContext)({}),
           key: "gtmDatalayer"
         }),
-        Ue = () => (0, h.useContext)(Ie),
+        Ue = () => (0, f.useContext)(Ie),
         De = ({
           children: e,
           ...t
         }) => {
           const n = Ue() ?? {},
-            o = (0, h.useMemo)(() => ({
+            o = (0, f.useMemo)(() => ({
               ...n,
               ...t
             }), [n, t]);
@@ -734,7 +734,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: n
           } = (0, Be.useLocation)();
-          return (0, h.useEffect)(() => {
+          return (0, f.useEffect)(() => {
             Ae({
               event: "trackPageview"
             })
@@ -776,7 +776,7 @@ query Translations($locale: String!, $config: String!) {
           }), Ve(n), n
         },
         Xe = () => ({
-          webSettings: (0, f.q)(Ve),
+          webSettings: (0, h.q)(Ve),
           webSettingsReactive: Ve,
           mutateWebSettings: We
         });

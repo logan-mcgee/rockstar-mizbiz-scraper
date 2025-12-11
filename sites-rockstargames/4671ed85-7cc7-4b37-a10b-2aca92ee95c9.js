@@ -42,7 +42,7 @@ try {
         UNSAFE_useRouteId: () => r.UNSAFE_useRouteId,
         UNSAFE_useScrollRestoration: () => ne,
         createBrowserRouter: () => y,
-        createHashRouter: () => b,
+        createHashRouter: () => R,
         createMemoryRouter: () => r.createMemoryRouter,
         createPath: () => r.createPath,
         createRoutesFromChildren: () => r.createRoutesFromChildren,
@@ -151,7 +151,7 @@ try {
           history: (0, i.zR)({
             window: null == t ? void 0 : t.window
           }),
-          hydrationData: (null == t ? void 0 : t.hydrationData) || R(),
+          hydrationData: (null == t ? void 0 : t.hydrationData) || S(),
           routes: e,
           mapRouteProperties: r.UNSAFE_mapRouteProperties,
           dataStrategy: null == t ? void 0 : t.dataStrategy,
@@ -160,7 +160,7 @@ try {
         }).initialize()
       }
 
-      function b(e, t) {
+      function R(e, t) {
         return (0, i.aE)({
           basename: null == t ? void 0 : t.basename,
           future: s({}, null == t ? void 0 : t.future, {
@@ -169,7 +169,7 @@ try {
           history: (0, i.TM)({
             window: null == t ? void 0 : t.window
           }),
-          hydrationData: (null == t ? void 0 : t.hydrationData) || R(),
+          hydrationData: (null == t ? void 0 : t.hydrationData) || S(),
           routes: e,
           mapRouteProperties: r.UNSAFE_mapRouteProperties,
           dataStrategy: null == t ? void 0 : t.dataStrategy,
@@ -178,15 +178,15 @@ try {
         }).initialize()
       }
 
-      function R() {
+      function S() {
         var e;
         let t = null == (e = window) ? void 0 : e.__staticRouterHydrationData;
         return t && t.errors && (t = s({}, t, {
-          errors: S(t.errors)
+          errors: b(t.errors)
         })), t
       }
 
-      function S(e) {
+      function b(e) {
         if (!e) return null;
         let t = Object.entries(e),
           n = {};
@@ -239,11 +239,11 @@ try {
           isTransitioning: !1
         }), [f, h] = a.useState(), [m, v] = a.useState(), [p, g] = a.useState(), w = a.useRef(new Map), {
           v7_startTransition: y
-        } = o || {}, b = a.useCallback(e => {
+        } = o || {}, R = a.useCallback(e => {
           y ? function(e) {
             C ? C(e) : e()
           }(e) : e()
-        }, [y]), R = a.useCallback((e, t) => {
+        }, [y]), S = a.useCallback((e, t) => {
           let {
             deletedFetchers: a,
             flushSync: o,
@@ -284,16 +284,16 @@ try {
               currentLocation: r.currentLocation,
               nextLocation: r.nextLocation
             }))
-          } else o ? A(() => s(e)) : b(() => s(e))
-        }, [n.window, m, f, w, b]);
-        a.useLayoutEffect(() => n.subscribe(R), [n, R]), a.useEffect(() => {
+          } else o ? A(() => s(e)) : R(() => s(e))
+        }, [n.window, m, f, w, R]);
+        a.useLayoutEffect(() => n.subscribe(S), [n, S]), a.useEffect(() => {
           c.isTransitioning && !c.flushSync && h(new L)
         }, [c]), a.useEffect(() => {
           if (f && u && n.window) {
             let e = u,
               t = f.promise,
               a = n.window.document.startViewTransition(async () => {
-                b(() => s(e)), await t
+                R(() => s(e)), await t
               });
             a.finished.finally(() => {
               h(void 0), v(void 0), l(void 0), d({
@@ -301,7 +301,7 @@ try {
               })
             }), v(a)
           }
-        }, [b, u, f, n.window]), a.useEffect(() => {
+        }, [R, u, f, n.window]), a.useEffect(() => {
           f && u && i.location.key === u.location.key && f.resolve()
         }, [f, m, i.location, u]), a.useEffect(() => {
           !c.isTransitioning && p && (l(p.state), d({
@@ -311,7 +311,7 @@ try {
             nextLocation: p.nextLocation
           }), g(void 0))
         }, [c.isTransitioning, p]), a.useEffect(() => {}, []);
-        let S = a.useMemo(() => ({
+        let b = a.useMemo(() => ({
             createHref: n.createHref,
             encodeLocation: n.encodeLocation,
             go: e => n.navigate(e),
@@ -328,10 +328,10 @@ try {
           N = n.basename || "/",
           T = a.useMemo(() => ({
             router: n,
-            navigator: S,
+            navigator: b,
             static: !1,
             basename: N
-          }), [n, S, N]),
+          }), [n, b, N]),
           x = a.useMemo(() => ({
             v7_relativeSplatPath: n.future.v7_relativeSplatPath
           }), [n.future.v7_relativeSplatPath]);
@@ -347,7 +347,7 @@ try {
           basename: N,
           location: i.location,
           navigationType: i.historyAction,
-          navigator: S,
+          navigator: b,
           future: x
         }, i.initialized || n.future.v7_partialHydration ? a.createElement(F, {
           routes: n.routes,
@@ -471,17 +471,17 @@ try {
             {
               basename: y
             } = a.useContext(r.UNSAFE_NavigationContext),
-            b = !1;
+            R = !1;
           if ("string" == typeof m && O.test(m) && (n = m, M)) try {
             let e = new URL(window.location.href),
               t = m.startsWith("//") ? new URL(e.protocol + m) : new URL(m),
               n = (0, i.pb)(t.pathname, y);
-            t.origin === e.origin && null != n ? m = n + t.search + t.hash : b = !0
+            t.origin === e.origin && null != n ? m = n + t.search + t.hash : R = !0
           } catch (e) {}
-          let R = (0, r.useHref)(m, {
+          let S = (0, r.useHref)(m, {
               relative: l
             }),
-            S = Y(m, {
+            b = Y(m, {
               replace: d,
               state: f,
               target: h,
@@ -490,9 +490,9 @@ try {
               viewTransition: g
             });
           return a.createElement("a", s({}, w, {
-            href: n || R,
-            onClick: b || c ? o : function(e) {
-              o && o(e), e.defaultPrevented || S(e)
+            href: n || S,
+            onClick: R || c ? o : function(e) {
+              o && o(e), e.defaultPrevented || b(e)
             },
             ref: t,
             target: h
@@ -511,20 +511,20 @@ try {
           } = e, v = u(e, g), p = (0, r.useResolvedPath)(f, {
             relative: v.relative
           }), w = (0, r.useLocation)(), y = a.useContext(r.UNSAFE_DataRouterStateContext), {
-            navigator: b,
-            basename: R
-          } = a.useContext(r.UNSAFE_NavigationContext), S = null != y && re(p) && !0 === h, E = b.encodeLocation ? b.encodeLocation(p).pathname : p.pathname, _ = w.pathname, C = y && y.navigation && y.navigation.location ? y.navigation.location.pathname : null;
-          o || (_ = _.toLowerCase(), C = C ? C.toLowerCase() : null, E = E.toLowerCase()), C && R && (C = (0, i.pb)(C, R) || C);
+            navigator: R,
+            basename: S
+          } = a.useContext(r.UNSAFE_NavigationContext), b = null != y && re(p) && !0 === h, E = R.encodeLocation ? R.encodeLocation(p).pathname : p.pathname, _ = w.pathname, C = y && y.navigation && y.navigation.location ? y.navigation.location.pathname : null;
+          o || (_ = _.toLowerCase(), C = C ? C.toLowerCase() : null, E = E.toLowerCase()), C && S && (C = (0, i.pb)(C, S) || C);
           const N = "/" !== E && E.endsWith("/") ? E.length - 1 : E.length;
           let T, A = _ === E || !c && _.startsWith(E) && "/" === _.charAt(N),
             L = null != C && (C === E || !c && C.startsWith(E) && "/" === C.charAt(E.length)),
             x = {
               isActive: A,
               isPending: L,
-              isTransitioning: S
+              isTransitioning: b
             },
             F = A ? n : void 0;
-          T = "function" == typeof l ? l(x) : [l, A ? "active" : null, L ? "pending" : null, S ? "transitioning" : null].filter(Boolean).join(" ");
+          T = "function" == typeof l ? l(x) : [l, A ? "active" : null, L ? "pending" : null, b ? "transitioning" : null].filter(Boolean).join(" ");
           let U = "function" == typeof d ? d(x) : d;
           return a.createElement(V, s({}, v, {
             "aria-current": F,
@@ -548,13 +548,13 @@ try {
             relative: m,
             preventScrollReset: v,
             viewTransition: p
-          } = e, g = u(e, w), y = Q(), b = X(f, {
+          } = e, g = u(e, w), y = Q(), R = X(f, {
             relative: m
-          }), R = "get" === d.toLowerCase() ? "get" : "post";
+          }), S = "get" === d.toLowerCase() ? "get" : "post";
           return a.createElement("form", s({
             ref: t,
-            method: R,
-            action: b,
+            method: S,
+            action: R,
             onSubmit: r ? h : e => {
               if (h && h(e), e.defaultPrevented) return;
               e.preventDefault();
@@ -791,14 +791,14 @@ try {
             ref: t
           }))), [h]),
           y = u.fetchers.get(h) || i.HW,
-          b = l.get(h);
+          R = l.get(h);
         return a.useMemo(() => s({
           Form: w,
           submit: g,
           load: v
         }, y, {
-          data: b
-        }), [w, g, v, y, b])
+          data: R
+        }), [w, g, v, y, R])
       }
 
       function $() {

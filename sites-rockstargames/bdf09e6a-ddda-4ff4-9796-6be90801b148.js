@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    s = (new e.Error).stack;
-  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "bdf09e6a-ddda-4ff4-9796-6be90801b148", e._sentryDebugIdIdentifier = "sentry-dbid-bdf09e6a-ddda-4ff4-9796-6be90801b148")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "bdf09e6a-ddda-4ff4-9796-6be90801b148", e._sentryDebugIdIdentifier = "sentry-dbid-bdf09e6a-ddda-4ff4-9796-6be90801b148")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,39 +13,39 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [886], {
-    77306: (e, s, a) => {
-      a.r(s), a.d(s, {
-        default: () => b
+    77306: (e, a, s) => {
+      s.r(a), s.d(a, {
+        default: () => h
       });
-      var t = a(42295),
-        r = a(62229),
-        d = a(61128),
-        n = a(20820),
-        o = a(2918),
-        l = a(81788),
-        i = a(95966),
-        c = a(4572),
-        u = a.n(c),
-        f = a(61989),
-        _ = a(35270),
-        m = a(45184),
-        p = a(61611),
-        g = a(3963);
-      a(89091);
-      const b = (0, l.withIntl)(() => {
+      var t = s(42295),
+        r = s(62229),
+        d = s(61128),
+        n = s(20820),
+        o = s(2918),
+        l = s(81788),
+        i = s(95966),
+        c = s(4572),
+        u = s.n(c),
+        f = s(61989),
+        _ = s(35270),
+        m = s(45184),
+        p = s(61611),
+        g = s(3963);
+      s(89091);
+      const h = (0, l.withIntl)(() => {
         const {
           track: e
-        } = (0, o.useGtmTrack)(), s = (0, l.useIntl)(), a = (0, i.useLocale)(), {
+        } = (0, o.useGtmTrack)(), a = (0, l.useIntl)(), s = (0, i.useLocale)(), {
           ref: c,
           inView: g
         } = (0, d.useInView)({
           threshold: .6
-        }), [b, h] = (0, r.useState)(!1), w = (0, m.r)("hub");
+        }), [h, b] = (0, r.useState)(!1), w = (0, m.r)("hub");
         return (0, r.useEffect)(() => {
-          g && !b && (e({
+          g && !h && (e({
             event: "page_section_impression",
             element_placement: p.A.support_module_header.defaultMessage?.toLowerCase()
-          }), h(!0))
+          }), b(!0))
         }, [g]), (0, t.jsx)("div", {
           className: "_1ru3mwr0",
           children: (0, t.jsxs)("div", {
@@ -55,48 +55,48 @@ try {
               children: [(0, t.jsx)(n.Heading, {
                 level: 1,
                 className: "_1ru3mwr3",
-                children: s.formatMessage(p.A.community_resources_header)
+                children: a.formatMessage(p.A.community_resources_header)
               }), (0, t.jsx)(n.Heading, {
                 level: 6,
                 className: "_1ru3mwr4",
                 asChild: !0,
                 children: (0, t.jsx)("p", {
-                  children: s.formatMessage(p.A.community_resources_description)
+                  children: a.formatMessage(p.A.community_resources_description)
                 })
               })]
             }), (0, t.jsx)("div", {
               className: "_1ru3mwr5",
-              children: w.map((s, a) => (0, t.jsx)(f.A, {
-                cardData: s,
+              children: w.map((a, s) => (0, t.jsx)(f.A, {
+                cardData: a,
                 type: "article",
-                onCardClick: () => ((s, a) => {
+                onCardClick: () => ((a, s) => {
                   e({
-                    event: s.trackingData?.event,
-                    card_name: s.trackingData?.header.toLowerCase(),
-                    card_id: a + 1,
+                    event: a.trackingData?.event,
+                    card_name: a.trackingData?.header.toLowerCase(),
+                    card_id: s + 1,
                     element_placement: "community resources hub",
-                    link_url: s.button.to,
-                    text: s.trackingData?.buttonText.toLowerCase()
+                    link_url: a.button.to,
+                    text: a.trackingData?.buttonText.toLowerCase()
                   })
-                })(s, a)
-              }, `${s.header}-articleCard`))
+                })(a, s)
+              }, `${a.header}-articleCard`))
             }), (0, t.jsxs)("div", {
               className: "_1ru3mwr6",
               ref: c,
               children: [(0, t.jsx)("img", {
                 className: "_1ru3mwr9",
-                alt: s.formatMessage(p.A.support_logo_alt_text),
+                alt: a.formatMessage(p.A.support_logo_alt_text),
                 src: _
               }), (0, t.jsxs)("div", {
                 className: "_1ru3mwra",
                 children: [(0, t.jsx)(n.Heading, {
                   level: 6,
                   className: "_1ru3mwr7",
-                  children: s.formatMessage(p.A.get_support_card_header)
+                  children: a.formatMessage(p.A.get_support_card_header)
                 }), (0, t.jsx)(n.Body, {
                   size: "SM",
                   className: "_1ru3mwr8",
-                  children: s.formatMessage(p.A.support_module_description)
+                  children: a.formatMessage(p.A.support_module_description)
                 })]
               }), (0, t.jsx)(n.Button, {
                 size: "MD",
@@ -105,14 +105,14 @@ try {
                   e({
                     event: "cta_support",
                     text: p.A.get_support_cta_text.defaultMessage,
-                    link_url: `https://support.rockstargames.com?redirect_lang=${a}`,
+                    link_url: `https://support.rockstargames.com?redirect_lang=${s}`,
                     element_placement: `community resources hub - ${p.A.support_module_header.defaultMessage?.toLowerCase()}`
                   })
                 },
                 asChild: !0,
                 children: (0, t.jsx)("a", {
-                  href: `https://support.rockstargames.com?redirect_lang=${a}`,
-                  children: s.formatMessage(p.A.get_support_cta_text)
+                  href: `https://support.rockstargames.com?redirect_lang=${s}`,
+                  children: a.formatMessage(p.A.get_support_cta_text)
                 })
               })]
             })]

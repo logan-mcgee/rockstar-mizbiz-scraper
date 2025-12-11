@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2a2b3e11-84c8-4f11-8cf3-565b43f1f076", e._sentryDebugIdIdentifier = "sentry-dbid-2a2b3e11-84c8-4f11-8cf3-565b43f1f076")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a18f7f59-93d0-4d86-80fb-77fb6d66a4e3", e._sentryDebugIdIdentifier = "sentry-dbid-a18f7f59-93d0-4d86-80fb-77fb6d66a4e3")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -355,7 +355,7 @@ try {
             G = e => ["/"].includes(e);
           (0, i.useEffect)(() => {
             const e = e => {
-              e.origin === window.origin && "navColorTheme" === e.data.source && e.data.mode ? L(G(window.location.pathname) ? e.data.mode : "dark") : e.origin === window.origin && "dynamicSlideColors" === e.data.source && e.data.values && T(G(window.location.pathname) ? e.data.values : {})
+              e.origin === window.origin && "navColorTheme" === e.data.source && e.data.mode ? L(G(w.pathname) ? e.data.mode : "dark") : e.origin === window.origin && "dynamicSlideColors" === e.data.source && e.data.values && T(G(w.pathname) ? e.data.values : {})
             };
             return window.addEventListener("message", e), () => {
               window.removeEventListener("message", e), L("dark")

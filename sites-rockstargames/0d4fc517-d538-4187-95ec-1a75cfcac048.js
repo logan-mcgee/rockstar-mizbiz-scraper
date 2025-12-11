@@ -98,7 +98,7 @@ try {
         useImageParser: () => g.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => m.i,
-        useTranslations: () => h
+        useTranslations: () => v
       });
       var a = t(42295),
         i = t(62229),
@@ -141,8 +141,8 @@ try {
       y("Background Image Gradient"), ((e = "Label") => {
         e.toLowerCase().split(" ").join("_")
       })("Background Image Gradient"), y("Background Image Gradient"), t(61398);
-      const b = "content",
-        h = ({
+      const h = "content",
+        v = ({
           payload: e,
           variables: n
         }) => {
@@ -166,7 +166,7 @@ try {
             })(t)
           }), i
         };
-      var v = t(11206),
+      var b = t(11206),
         S = t(2918);
       const _ = {
           event: "page_section_impression",
@@ -216,7 +216,7 @@ try {
           }) => {
             const r = s => {
               let l = "";
-              if (l = Array.isArray(s?.[b]) ? s[b].map(e => r(e)) : s?.[b] ?? "", !s?._template) return l;
+              if (l = Array.isArray(s?.[h]) ? s[h].map(e => r(e)) : s?.[h] ?? "", !s?._template) return l;
               let d = s._template;
               "0" === d && (console.warn(`The _template "${d}" wasn't found in the available components. The _template "${d}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(e),
@@ -238,7 +238,7 @@ try {
                   }
                 }),
                 m = [...s?.translations ?? []].reverse(),
-                f = `componentProps_${(0,v.A)()}`;
+                f = `componentProps_${(0,b.A)()}`;
               return (0, i.createElement)(u, {
                 ...n?.meta,
                 ...s,
@@ -247,7 +247,7 @@ try {
                 key: f
               }, l)
             };
-            return n?.[b]?.length ? r(n) : null
+            return n?.[h]?.length ? r(n) : null
           })({
             components: e,
             payload: n,
@@ -299,7 +299,7 @@ try {
             }, [e]), n
           })({
             payload: s
-          }), k = h({
+          }), k = v({
             payload: s,
             variables: d
           });

@@ -27,13 +27,13 @@ try {
           const {
             container: d,
             ...l
-          } = e, [r, b] = o.useState(!1);
-          (0, s.N)(() => b(!0), []);
-          const i = d || r && globalThis?.document?.body;
-          return i ? t.createPortal((0, f.jsx)(n.sG.div, {
+          } = e, [r, i] = o.useState(!1);
+          (0, s.N)(() => i(!0), []);
+          const b = d || r && globalThis?.document?.body;
+          return b ? t.createPortal((0, f.jsx)(n.sG.div, {
             ...l,
             ref: a
-          }), i) : null
+          }), b) : null
         });
       l.displayName = "Portal";
       var r = l

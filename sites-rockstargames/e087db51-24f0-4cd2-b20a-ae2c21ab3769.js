@@ -495,8 +495,8 @@ try {
       }) => {
         const g = (0, l.useIntl)(),
           y = (0, o.useNavigate)(),
-          b = (0, o.useLocation)(),
-          _ = (0, c.useLocale)(),
+          _ = (0, o.useLocation)(),
+          b = (0, c.useLocale)(),
           v = (0, c.useQueryParams)(),
           h = (0, t.useRef)(),
           N = (e, a) => {
@@ -506,7 +506,7 @@ try {
               o = n ?? t ?? null,
               r = v.get("country");
             if (e) {
-              const a = `${b.pathname}${v.get("country")?`?country=${r}`:""}${s}`;
+              const a = `${_.pathname}${v.get("country")?`?country=${r}`:""}${s}`;
               y(a), e.preventDefault()
             }
             o && window.scroll(0, o.offsetTop - h.current.getBoundingClientRect().height - 60)
@@ -523,7 +523,7 @@ try {
         (0, t.useEffect)(() => {
           const s = v.get("country") ?? v.get("locale") ?? null,
             n = void 0 === e,
-            t = n && null !== s ? s : n && _.split("_").length > 1 ? "hans" === _.split("_")[1] ? _.split("_")[0] : _.split("_")[1] : _,
+            t = n && null !== s ? s : n && b.split("_").length > 1 ? "hans" === b.split("_")[1] ? b.split("_")[0] : b.split("_")[1] : b,
             o = a || t || "us";
           S({
             jsonType: r,
@@ -538,13 +538,13 @@ try {
                 const a = v.get("country"),
                   s = e.href.split("#")[1],
                   n = document.getElementsByTagName("base")[0]?.getAttribute("href");
-                e.setAttribute("href", `${n}${b.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${s}`)
+                e.setAttribute("href", `${n}${_.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${s}`)
               }
             })(e), e.addEventListener("click", e => {
               N(e, !1)
             })
-          }), "" !== b.hash && setTimeout(() => {
-            N(!1, b.hash)
+          }), "" !== _.hash && setTimeout(() => {
+            N(!1, _.hash)
           }, 10)
         }, [j]);
         const {
@@ -568,7 +568,7 @@ try {
                   country: g.formatMessage(k[`rockstargames_company_info_${e}`])
                 });
                 return (0, n.jsx)(i.A, {
-                  to: `${b.pathname}?country=${e}`,
+                  to: `${_.pathname}?country=${e}`,
                   className: u[e],
                   title: s,
                   children: (0, n.jsx)(d, {

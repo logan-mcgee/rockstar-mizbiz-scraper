@@ -27,13 +27,13 @@ try {
       });
       var n = a(71127),
         o = a(63155),
-        s = (t || (t = a.t(n, 2)))[" useId ".trim().toString()] || (() => {}),
-        f = 0;
+        f = (t || (t = a.t(n, 2)))[" useId ".trim().toString()] || (() => {}),
+        s = 0;
 
       function l(e) {
-        const [d, a] = n.useState(s());
+        const [d, a] = n.useState(f());
         return (0, o.N)(() => {
-          e || a(e => e ?? String(f++))
+          e || a(e => e ?? String(s++))
         }, [e]), e || (d ? `radix-${d}` : "")
       }
     }

@@ -29,23 +29,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function d(e, t, o) {
         var n, r = {},
-          c = null,
-          d = null;
-        for (n in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (r[n] = t[n]);
+          d = null,
+          c = null;
+        for (n in void 0 !== o && (d = "" + o), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (c = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (r[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === r[n] && (r[n] = t[n]);
         return {
           $$typeof: a,
           type: e,
-          key: c,
-          ref: d,
+          key: d,
+          ref: c,
           props: r,
           _owner: i.current
         }
       }
-      t.Fragment = r, t.jsx = c, t.jsxs = c
+      t.Fragment = r, t.jsx = d, t.jsxs = d
     },
     70426: (e, t, o) => {
       o.r(t), o.d(t, {
@@ -83,7 +83,7 @@ try {
         mutateWebSettings: () => Re,
         newswirePost: () => U,
         oneTrustInit: () => D,
-        safeStyles: () => d,
+        safeStyles: () => c,
         scrollToElement: () => B,
         setContextItem: () => u.A,
         setCookieValue: () => X,
@@ -147,9 +147,9 @@ try {
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
       var l = o(15076),
-        c = o.n(l);
-      const d = e => {
-        const t = c().clone(e);
+        d = o.n(l);
+      const c = e => {
+        const t = d().clone(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
       var u = o(9482),
@@ -448,13 +448,13 @@ try {
       var se = o(89864),
         ie = o.n(se);
       const le = (0, o(79867).A)(),
-        ce = le?.id,
-        de = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        de = le?.id,
+        ce = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         ue = e => {
           const t = {
             ...e,
-            environment: ce,
-            display_type: de
+            environment: de,
+            display_type: ce
           };
           ie().dataLayer({
             dataLayer: t
@@ -486,7 +486,7 @@ try {
             }), t) : t
           };
           return (0, h.useEffect)(() => {
-            const e = c().debounce(() => {
+            const e = d().debounce(() => {
               a(r(t))
             }, o);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -650,7 +650,7 @@ query Translations($locale: String!, $config: String!) {
         s = o(15076),
         i = o.n(s),
         l = o(56088);
-      const c = (e, t) => {
+      const d = (e, t) => {
           const o = (0, l.Ym)(),
             n = {
               autoSetError: !0,
@@ -664,8 +664,8 @@ query Translations($locale: String!, $config: String!) {
             },
             {
               data: s,
-              loading: c,
-              error: d,
+              loading: d,
+              error: c,
               ...u
             } = (0, r.useQuery)(e, n);
           return (0, a.useEffect)(() => {
@@ -678,22 +678,22 @@ query Translations($locale: String!, $config: String!) {
             }
           }, [s]), (0, a.useEffect)(() => (n.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
-            loading: c
+            loading: d
           }), () => {
             n.autoSetLoading && window.postMessage({
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [c]), (0, a.useEffect)(() => {
-            if (n.autoSetError && d) throw new Error(String(d))
-          }, [d]), {
-            loading: c,
-            error: d,
+          }), [d]), (0, a.useEffect)(() => {
+            if (n.autoSetError && c) throw new Error(String(c))
+          }, [c]), {
+            loading: d,
+            error: c,
             data: s,
             ...u
           }
         },
-        d = (0, a.createContext)(() => ({
+        c = (0, a.createContext)(() => ({
           data: null
         })),
         u = new Promise(e => {
@@ -714,12 +714,12 @@ query Translations($locale: String!, $config: String!) {
           children: e
         }) => (0, n.jsx)(h.Provider, {
           value: r.useMutation,
-          children: (0, n.jsx)(d.Provider, {
-            value: c,
+          children: (0, n.jsx)(c.Provider, {
+            value: d,
             children: e
           })
         })),
-        w = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, a.useContext)(d)(e, t)),
+        w = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, a.useContext)(c)(e, t)),
         f = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, a.useContext)(h)(e))
     }
   }

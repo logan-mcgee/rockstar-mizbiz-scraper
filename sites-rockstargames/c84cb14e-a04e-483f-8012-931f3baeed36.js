@@ -202,7 +202,7 @@ try {
         k = a.n(h);
       var v = a(58128),
         y = a(25130);
-      const b = ({
+      const w = ({
           privateToken: e
         }) => {
           const {
@@ -220,17 +220,17 @@ try {
             accountSynced: !1,
             hasGtaPlus: !1,
             gtaPlusPlatforms: []
-          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), g = void 0 === l, [h, b] = (0, s.useState)(1);
+          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), g = void 0 === l, [h, w] = (0, s.useState)(1);
           return (0, s.useEffect)(() => {
             "gtao" !== t || c?.characters?.gtao || (o(e => ({
               ...e,
               accountSynced: !1
-            })), b(e => e + 1))
+            })), w(e => e + 1))
           }, [t, c?.characters?.gtao]), (0, s.useEffect)(() => {
             a && !c?.crews && (o(e => ({
               ...e,
               accountSynced: !1
-            })), b(e => e + 1))
+            })), w(e => e + 1))
           }, [a, c?.crews]), (0, s.useEffect)(() => {
             0 === h && o(e => ({
               ...e,
@@ -329,7 +329,7 @@ try {
                 o(t => ({
                   ...t,
                   crews: e
-                })), b(e => e - 1)
+                })), w(e => e - 1)
               }
             })()
           }, [c?.nickname, a, l, c?.characters]), (0, s.useEffect)(() => {
@@ -366,7 +366,7 @@ try {
               o(t => ({
                 ...t,
                 gamesPlayed: e
-              })), b(e => e - 1)
+              })), w(e => e - 1)
             })()
           }, [c?.nickname, l]), (0, s.useEffect)(() => {
             (async () => {
@@ -452,7 +452,7 @@ try {
                   linkedAccounts: t,
                   hasGtaPlus: a.length > 0,
                   gtaPlusPlatforms: a
-                })), b(e => e - 1)
+                })), w(e => e - 1)
               }
             })()
           }, [t, c?.nickname, l]), (0, s.useEffect)(() => {
@@ -463,16 +463,16 @@ try {
             loading: g
           }
         },
-        w = {},
+        b = {},
         x = (0, n.setContextItem)({
-          context: (0, s.createContext)(w),
+          context: (0, s.createContext)(b),
           key: "userContext"
         }),
         S = ({
           children: e,
           privateToken: t
         }) => {
-          const a = b({
+          const a = w({
               privateToken: t
             }),
             n = (0, s.useMemo)(() => ({

@@ -150,18 +150,18 @@ try {
           c = l.getDefaultLocale,
           d = i(e);
         d.initializedRelativeTimeFormat = !0;
-        var b = (0, r.CanonicalizeLocaleList)(t),
-          y = Object.create(null),
-          m = (0, r.CoerceOptionsToObject)(a),
-          p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        y.localeMatcher = p;
-        var v = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
-        y.nu = v;
-        var g = (0, n.ResolveLocale)(s, b, y, u, f, c),
+        var y = (0, r.CanonicalizeLocaleList)(t),
+          m = Object.create(null),
+          p = (0, r.CoerceOptionsToObject)(a),
+          v = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        m.localeMatcher = v;
+        var b = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
+        m.nu = b;
+        var g = (0, n.ResolveLocale)(s, y, m, u, f, c),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        d.locale = w, d.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var T = f[g.dataLocale];
         return (0, r.invariant)(!!T, "Missing locale data for ".concat(g.dataLocale)), d.fields = T, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
       };
@@ -197,24 +197,24 @@ try {
           f = u.fields,
           c = u.style,
           d = u.numeric,
-          b = u.pluralRules,
-          y = u.numberFormat,
-          m = s;
-        "short" === c ? m = "".concat(s, "-short") : "narrow" === c && (m = "".concat(s, "-narrow")), m in f || (m = s);
-        var p = f[m];
-        if ("auto" === d && (0, r.ToString)(t) in p) return [{
+          y = u.pluralRules,
+          m = u.numberFormat,
+          p = s;
+        "short" === c ? p = "".concat(s, "-short") : "narrow" === c && (p = "".concat(s, "-narrow")), p in f || (p = s);
+        var v = f[p];
+        if ("auto" === d && (0, r.ToString)(t) in v) return [{
           type: "literal",
-          value: p[(0, r.ToString)(t)]
+          value: v[(0, r.ToString)(t)]
         }];
-        var v = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
-        var g = p[v],
-          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
+        var b = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
+        var g = v[b],
+          w = "function" == typeof m.formatToParts ? m.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: y.format(Math.abs(t)),
+            value: m.format(Math.abs(t)),
             unit: a
           }],
-          h = g[b.select(t)];
+          h = g[y.select(t)];
         return (0, o.MakePartsList)(h, s, w)
       };
       var r = a(62306),

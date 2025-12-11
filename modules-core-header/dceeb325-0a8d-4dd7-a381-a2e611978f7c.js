@@ -140,7 +140,7 @@ try {
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -158,7 +158,7 @@ try {
             signup: `https://${h}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${b}`
+            pingBearer: `https://${p}/${y}`
           }
         },
         a = [o({
@@ -306,14 +306,14 @@ try {
         vx: () => k,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => b.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => i,
         ZC: () => u,
         sq: () => d,
         OH: () => p,
         zP: () => v,
         Cb: () => m,
-        N6: () => E,
+        N6: () => b,
         GA: () => T,
         JE: () => M
       });
@@ -425,13 +425,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var b = n(89656),
-        y = (n(95342), n(17954));
-      const E = e => {
+      var y = n(89656),
+        E = (n(95342), n(17954));
+      const b = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, a.A)(), s = (0, y.t)(r);
+        } = (0, h.A)(), r = (0, a.A)(), s = (0, E.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -585,23 +585,23 @@ try {
               ...p,
               url: f
             }),
-            b = await (0, r.sc)(v);
+            y = await (0, r.sc)(v);
           if (d) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            if (w[y]?.response) return w[y].response;
+            if (w[y]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[y] = {
               loading: !0
             }
           }
-          const y = await fetch(f, p),
-            E = await y.json();
-          return d && (w[b] = {
-            response: E,
+          const E = await fetch(f, p),
+            b = await E.json();
+          return d && (w[y] = {
+            response: b,
             loading: !1
-          }), E
+          }), b
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

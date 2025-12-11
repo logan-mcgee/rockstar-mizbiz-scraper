@@ -23,12 +23,12 @@ try {
           fn: function(e, a) {
             var t = String(e),
               n = t.split(/[ce]/),
-              o = n[1] || 0,
-              s = String(o ? Number(n[0]) * Math.pow(10, o) : t).split("."),
-              d = s[0],
-              l = !s[1],
-              r = d.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != d && 0 == r && l || o < 0 || o > 5 ? "many" : "other"
+              d = n[1] || 0,
+              o = String(d ? Number(n[0]) * Math.pow(10, d) : t).split("."),
+              s = o[0],
+              l = !o[1],
+              r = s.slice(-6);
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == d && 0 != s && 0 == r && l || d < 0 || d > 5 ? "many" : "other"
           }
         },
         locale: "fr"

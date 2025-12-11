@@ -40,7 +40,7 @@ try {
           inView: h
         } = (0, s.useInView)({
           threshold: .6
-        }), [v, b] = (0, t.useState)(!1), g = (0, y.r)("resource"), {
+        }), [v, g] = (0, t.useState)(!1), b = (0, y.r)("resource"), {
           data: N,
           loading: _
         } = (0, o.useQuery)(u(), {
@@ -77,7 +77,7 @@ try {
           h && !v && (e({
             event: "page_section_impression",
             element_placement: `${c.A.additional_resources_header.defaultMessage.toLowerCase()} - resource cards`
-          }), b(!0))
+          }), g(!0))
         }, [h, v]), (0, i.jsx)("div", {
           className: "_1betujy6 _1betujy5",
           children: (0, i.jsx)("div", {
@@ -101,7 +101,7 @@ try {
               }), (0, i.jsx)("div", {
                 className: "_16vzj94",
                 ref: x,
-                children: g.map((a, n) => (0, i.jsx)(f.A, {
+                children: b.map((a, n) => (0, i.jsx)(f.A, {
                   cardData: a,
                   type: "icon",
                   onCardClick: () => ((a, n) => {

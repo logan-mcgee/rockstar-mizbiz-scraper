@@ -1,7 +1,7 @@
 try {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     e = (new a.Error).stack;
-  e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "e459f046-6244-468b-b2e1-72a7b9528db2", a._sentryDebugIdIdentifier = "sentry-dbid-e459f046-6244-468b-b2e1-72a7b9528db2")
+  e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "72f22d59-38cb-4c90-b5f8-b805131df211", a._sentryDebugIdIdentifier = "sentry-dbid-72f22d59-38cb-4c90-b5f8-b805131df211")
 } catch (a) {} {
   let a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   a._sentryModuleMetadata = a._sentryModuleMetadata || {}, a._sentryModuleMetadata[(new a.Error).stack] = Object.assign({}, a._sentryModuleMetadata[(new a.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [6275], {
+  [2002], {
     1157: a => {
       "use strict";
       a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
@@ -25,598 +25,7 @@ try {
       "use strict";
       a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/116555df6799e584310484375c97a43f.jpg"
     },
-    6927: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
-    },
-    7509: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/15b671d990b1f3f941c6359b3235abf3.jpg"
-    },
-    8494: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f34231941013a609948485830c84c072.jpg"
-    },
-    10046: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a29e26aa160e7be7e845708c335b3c39.svg"
-    },
-    10111: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg"
-    },
-    10869: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c82125e0b20342dba2008b0dcc6d55f6.jpg"
-    },
-    11016: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    12602: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dd4b0f40e745f4347c822594da56a119.jpg"
-    },
-    13095: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e7d916fcce2bbe9b6419f914f290597.jpg"
-    },
-    13890: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    14724: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/bbcbd2a2bb65ddad76e831c91c17b421.jpg"
-    },
-    14825: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/14448aca4ceaab8680323ce19c963d68.jpg"
-    },
-    16044: (a, e, t) => {
-      var n = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
-      };
-
-      function s(a) {
-        var e = o(a);
-        return t(e)
-      }
-
-      function o(a) {
-        if (!t.o(n, a)) {
-          var e = new Error("Cannot find module '" + a + "'");
-          throw e.code = "MODULE_NOT_FOUND", e
-        }
-        return n[a]
-      }
-      s.keys = function() {
-        return Object.keys(n)
-      }, s.resolve = o, a.exports = s, s.id = 16044
-    },
-    16264: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    18518: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0281770395dc77e41c1f40559a3d5989.jpg"
-    },
-    19552: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/61a79de8dea0228576a18068e4f2660a.jpg"
-    },
-    20144: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
-    },
-    20340: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    22844: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4a1657ff0ab4e3d45469556ba2f899c3.jpg"
-    },
-    23587: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1b95ab415fdd8bec89099d433d23e3c7.jpg"
-    },
-    24808: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8977d6b170f295068d78c5bbb7b6f02d.jpg"
-    },
-    26788: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg"
-    },
-    27064: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5aa471f90eaff248e0fbef79400cbbf3.jpg"
-    },
-    27109: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    28005: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/404be4f04081372768bb660a6c1991ba.jpg"
-    },
-    31248: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg"
-    },
-    32830: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/14312e604f0637a2afd376dd571345d9.jpg"
-    },
-    33055: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    33143: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg"
-    },
-    34416: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    35996: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    36725: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    37098: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    37758: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    38537: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    39003: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    39294: (a, e, t) => {
-      var n = {
-        "./GTAOnline.jpg": 10111,
-        "./GTATrilogy.jpg": 84752,
-        "./IV.jpg": 73483,
-        "./V.jpg": 98754,
-        "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
-        "./agent.jpg": 78323,
-        "./beaterator.jpg": 23587,
-        "./bully-scholarshipedition.jpg": 67181,
-        "./bully.jpg": 85332,
-        "./chinatownwars.jpg": 44596,
-        "./episodesfromlibertycity.jpg": 18518,
-        "./grandtheftauto-gba.jpg": 7509,
-        "./grandtheftauto3.jpg": 42787,
-        "./gta-online.jpg": 26788,
-        "./gta-v.jpg": 33143,
-        "./gta.jpg": 8494,
-        "./gta2.jpg": 59942,
-        "./gtacomplete.jpg": 64923,
-        "./gtalondon.jpg": 85256,
-        "./italianjob.jpg": 42043,
-        "./lanoire-vr-case-files.jpg": 52014,
-        "./lanoire.jpg": 59414,
-        "./lanoire_2.jpg": 52461,
-        "./libertycitystories.jpg": 89273,
-        "./manhunt.jpg": 95903,
-        "./manhunt2.jpg": 3933,
-        "./maxpayne.jpg": 77321,
-        "./maxpayne2.jpg": 13095,
-        "./maxpayne3.jpg": 57258,
-        "./midnightclub.jpg": 12602,
-        "./midnightclub2.jpg": 3818,
-        "./midnightclub3.jpg": 59655,
-        "./midnightclubLA-complete.jpg": 63839,
-        "./midnightclubLA.jpg": 79795,
-        "./oni.jpg": 24808,
-        "./rdr-goty.jpg": 19552,
-        "./reddeadonline.jpg": 73534,
-        "./reddeadredemption.jpg": 27064,
-        "./reddeadredemption2.jpg": 31248,
-        "./reddeadrevolver.jpg": 79114,
-        "./rockstar-games-collection-edition-1.jpg": 93573,
-        "./sanandreas.jpg": 14724,
-        "./skateanddestroy.jpg": 90377,
-        "./smugglersrun.jpg": 73564,
-        "./smugglersrun2.jpg": 22844,
-        "./smugglersrunwarzones.jpg": 84715,
-        "./stateofemergency.jpg": 28005,
-        "./tabletennis.jpg": 84141,
-        "./theballadofgaytony.jpg": 14825,
-        "./thelostanddamned.jpg": 52591,
-        "./thewarriors.jpg": 96148,
-        "./undeadnightmare.jpg": 32830,
-        "./vicecity.jpg": 91480,
-        "./vicecitystories.jpg": 10869,
-        "./wildmetal.jpg": 85613
-      };
-
-      function s(a) {
-        var e = o(a);
-        return t(e)
-      }
-
-      function o(a) {
-        if (!t.o(n, a)) {
-          var e = new Error("Cannot find module '" + a + "'");
-          throw e.code = "MODULE_NOT_FOUND", e
-        }
-        return n[a]
-      }
-      s.keys = function() {
-        return Object.keys(n)
-      }, s.resolve = o, a.exports = s, s.id = 39294
-    },
-    40401: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    42043: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/809c3d6f72a6752f0ebcc6c92d43db67.jpg"
-    },
-    42787: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81001f378e085cd20f8ee0182e23cb7c.jpg"
-    },
-    44596: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a8074783730a47af2fe5c2b67ddf7d31.jpg"
-    },
-    47534: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    51048: (a, e, t) => {
-      var n = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
-      };
-
-      function s(a) {
-        var e = o(a);
-        return t(e)
-      }
-
-      function o(a) {
-        if (!t.o(n, a)) {
-          var e = new Error("Cannot find module '" + a + "'");
-          throw e.code = "MODULE_NOT_FOUND", e
-        }
-        return n[a]
-      }
-      s.keys = function() {
-        return Object.keys(n)
-      }, s.resolve = o, a.exports = s, s.id = 51048
-    },
-    52014: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b13400360d3873aa5ed169d38da1ff9f.jpg"
-    },
-    52461: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b1034f3c525b39db31d9017268a0aeb5.jpg"
-    },
-    52591: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f9b044c847e4c971c6ac5d096fe3e0eb.jpg"
-    },
-    57258: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0f31b4df90bff5bab740485f2d4b8253.jpg"
-    },
-    59414: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b1034f3c525b39db31d9017268a0aeb5.jpg"
-    },
-    59655: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e8ae1f733bc7d3b05c506de67f4b4f7f.jpg"
-    },
-    59942: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/48371205a1d87d858baa85712d1f91bb.jpg"
-    },
-    63365: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    63839: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a549b321910f5308200496f1893c2a5f.jpg"
-    },
-    64923: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/089fe525338554e2120a1aaaf81766d6.jpg"
-    },
-    65667: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    67181: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5704d117b387578dfebe1290e556f963.jpg"
-    },
-    72994: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    73483: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0b01707ef5603a26c1f542088f8f7c09.jpg"
-    },
-    73534: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc01cf29aa31b9d15a5d06483a0a1a3.jpg"
-    },
-    73564: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4393d2466a2f8931669e345898541812.jpg"
-    },
-    77321: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fd74a091e2e5765c8769668cc515e494.jpg"
-    },
-    78323: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d66bfe06a724f04c0941073de283297.jpg"
-    },
-    79114: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2d3ee871568fd751956d5ea1242a4f2d.jpg"
-    },
-    79258: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    79795: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/659db20d7a19cc70a0510c7d197cedf3.jpg"
-    },
-    79867: (a, e, t) => {
-      "use strict";
-      t.d(e, {
-        A: () => o,
-        C: () => n
-      });
-      const n = {
-          www: "www",
-          socialClub: "socialClub",
-          support: "support",
-          store: "store",
-          circoloco: "circoloco",
-          supportNew: "support"
-        },
-        s = [{
-          id: "prod",
-          sites: {
-            www: "www",
-            socialClub: "socialclub",
-            support: "support",
-            store: "store",
-            circoloco: "circolocorecords",
-            supportNew: "support"
-          },
-          cookieIdentifier: "prod"
-        }],
-        o = () => {
-          let a;
-          const {
-            location: e
-          } = window, t = e.hostname.substring(0, e.hostname.indexOf(".rockstargames.com")), n = s.findIndex(e => Object.entries(e.sites).findIndex(([e, n]) => n === t && (a = {
-            site: e,
-            subDomain: n
-          }, !0)) >= 0), o = s[n >= 0 ? n : 0];
-          return a || (a = {
-            site: "www",
-            subDomain: "local"
-          }), {
-            ...o,
-            currentSite: a
-          }
-        }
-    },
-    83118: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84141: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5df3b2d018d1e8e9b424b9eaebc86b16.jpg"
-    },
-    84598: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    84705: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    84715: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/16e65ca64eafabe331ef1d2bef9c6f16.jpg"
-    },
-    84752: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg"
-    },
-    85256: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc4dbe3e1d52c3fc405579090868d08.jpg"
-    },
-    85332: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f58d386594d32f34c887da75032c5be.jpg"
-    },
-    85613: a => {
-      "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d0b53035bf66e851116bd0244ba6ace.jpg"
-    },
-    86751: (a, e, t) => {
-      var n = {
-        "./GTAOnline.jpg": 10111,
-        "./GTATrilogy.jpg": 84752,
-        "./IV.jpg": 73483,
-        "./V.jpg": 98754,
-        "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
-        "./agent.jpg": 78323,
-        "./beaterator.jpg": 23587,
-        "./bully-scholarshipedition.jpg": 67181,
-        "./bully.jpg": 85332,
-        "./chinatownwars.jpg": 44596,
-        "./episodesfromlibertycity.jpg": 18518,
-        "./grandtheftauto-gba.jpg": 7509,
-        "./grandtheftauto3.jpg": 42787,
-        "./gta-online.jpg": 26788,
-        "./gta-v.jpg": 33143,
-        "./gta.jpg": 8494,
-        "./gta2.jpg": 59942,
-        "./gtacomplete.jpg": 64923,
-        "./gtalondon.jpg": 85256,
-        "./italianjob.jpg": 42043,
-        "./lanoire-vr-case-files.jpg": 52014,
-        "./lanoire.jpg": 59414,
-        "./lanoire_2.jpg": 52461,
-        "./libertycitystories.jpg": 89273,
-        "./manhunt.jpg": 95903,
-        "./manhunt2.jpg": 3933,
-        "./maxpayne.jpg": 77321,
-        "./maxpayne2.jpg": 13095,
-        "./maxpayne3.jpg": 57258,
-        "./midnightclub.jpg": 12602,
-        "./midnightclub2.jpg": 3818,
-        "./midnightclub3.jpg": 59655,
-        "./midnightclubLA-complete.jpg": 63839,
-        "./midnightclubLA.jpg": 79795,
-        "./oni.jpg": 24808,
-        "./rdr-goty.jpg": 19552,
-        "./reddeadonline.jpg": 73534,
-        "./reddeadredemption.jpg": 27064,
-        "./reddeadredemption2.jpg": 31248,
-        "./reddeadrevolver.jpg": 79114,
-        "./rockstar-games-collection-edition-1.jpg": 93573,
-        "./sanandreas.jpg": 14724,
-        "./skateanddestroy.jpg": 90377,
-        "./smugglersrun.jpg": 73564,
-        "./smugglersrun2.jpg": 22844,
-        "./smugglersrunwarzones.jpg": 84715,
-        "./stateofemergency.jpg": 28005,
-        "./tabletennis.jpg": 84141,
-        "./theballadofgaytony.jpg": 14825,
-        "./thelostanddamned.jpg": 52591,
-        "./thewarriors.jpg": 96148,
-        "./undeadnightmare.jpg": 32830,
-        "./vicecity.jpg": 91480,
-        "./vicecitystories.jpg": 10869,
-        "./wildmetal.jpg": 85613
-      };
-
-      function s(a) {
-        var e = o(a);
-        return t(e)
-      }
-
-      function o(a) {
-        if (!t.o(n, a)) {
-          var e = new Error("Cannot find module '" + a + "'");
-          throw e.code = "MODULE_NOT_FOUND", e
-        }
-        return n[a]
-      }
-      s.keys = function() {
-        return Object.keys(n)
-      }, s.resolve = o, a.exports = s, s.id = 86751
-    },
-    86859: (a, e, t) => {
+    4542: (a, e, t) => {
       "use strict";
       t.r(e), t.d(e, {
         Actions: () => Mt,
@@ -650,7 +59,7 @@ try {
         SearchFilters: () => Vt,
         SearchTarget: () => Ot,
         SearchTargetDropdown: () => Bt,
-        SiteTitle: () => Kt
+        SiteTitle: () => $t
       });
       var n = {};
       t.r(n), t.d(n, {
@@ -7493,23 +6902,24 @@ try {
       var qt = "_1ffvzhu3",
         Ft = "_1ffvzhu4";
       const Jt = () => (0, _.jsx)(_.Fragment, {
-          children: (0, _.jsx)("div", {
-            className: "_1ffvzhu2",
-            children: (0, _.jsx)("svg", {
-              viewBox: "0 0 32 32",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg",
-              children: [qt, Ft, ""].map((a, e) => (0, _.jsx)("path", {
-                className: a,
-                fillRule: "evenodd",
-                clipRule: "evenodd",
-                d: "M8.61511 10.9978H12.5848C14.3845 10.9978 15.9421 10.4507 15.9421 8.44939C15.9421 6.86148 14.5745 6.52423 13.2595 6.52423H9.56608L8.61511 10.9978ZM24.3357 21.6949H30.6663L24.9533 25.6406L25.8771 31.8581L20.9272 28.1057L14.2842 32.0001L17.3902 25.4102C17.3902 25.4102 13.7775 21.6513 13.7803 21.6513C13.5374 21.3314 13.4563 20.5073 13.4563 20.1527C13.4563 19.7045 13.4849 19.2505 13.5155 18.7669C13.5503 18.2159 13.5875 17.6266 13.5875 16.9637C13.5875 15.3278 12.8632 14.4723 11.0925 14.4723H7.77269L6.32717 21.2249H1.33301L5.30462 2.66675H14.7029C18.1954 2.66675 20.861 3.52407 20.861 7.47735C20.861 10.2601 19.4884 12.2367 16.4605 12.6517V12.7051C17.8843 13.0428 18.4177 14.0037 18.4177 15.7946C18.4177 16.5095 18.3959 17.1369 18.3754 17.7271C18.3572 18.2511 18.34 18.7456 18.34 19.246C18.34 19.8873 18.507 20.9355 18.9277 21.6513H19.6215L23.3316 15.4672L24.3357 21.6949ZM23.5498 22.6019H27.7512L23.9634 25.217L24.6402 29.7765L20.9957 27.0111L16.3688 29.7218L18.4869 25.2341L15.9114 22.5578H20.1458L22.8244 18.093L23.5498 22.6019Z",
-                fill: "currentcolor"
-              }, a + e))
-            })
+        children: (0, _.jsx)("div", {
+          className: "_1ffvzhu2",
+          children: (0, _.jsx)("svg", {
+            viewBox: "0 0 32 32",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: [qt, Ft, ""].map((a, e) => (0, _.jsx)("path", {
+              className: a,
+              fillRule: "evenodd",
+              clipRule: "evenodd",
+              d: "M8.61511 10.9978H12.5848C14.3845 10.9978 15.9421 10.4507 15.9421 8.44939C15.9421 6.86148 14.5745 6.52423 13.2595 6.52423H9.56608L8.61511 10.9978ZM24.3357 21.6949H30.6663L24.9533 25.6406L25.8771 31.8581L20.9272 28.1057L14.2842 32.0001L17.3902 25.4102C17.3902 25.4102 13.7775 21.6513 13.7803 21.6513C13.5374 21.3314 13.4563 20.5073 13.4563 20.1527C13.4563 19.7045 13.4849 19.2505 13.5155 18.7669C13.5503 18.2159 13.5875 17.6266 13.5875 16.9637C13.5875 15.3278 12.8632 14.4723 11.0925 14.4723H7.77269L6.32717 21.2249H1.33301L5.30462 2.66675H14.7029C18.1954 2.66675 20.861 3.52407 20.861 7.47735C20.861 10.2601 19.4884 12.2367 16.4605 12.6517V12.7051C17.8843 13.0428 18.4177 14.0037 18.4177 15.7946C18.4177 16.5095 18.3959 17.1369 18.3754 17.7271C18.3572 18.2511 18.34 18.7456 18.34 19.246C18.34 19.8873 18.507 20.9355 18.9277 21.6513H19.6215L23.3316 15.4672L24.3357 21.6949ZM23.5498 22.6019H27.7512L23.9634 25.217L24.6402 29.7765L20.9957 27.0111L16.3688 29.7218L18.4869 25.2341L15.9114 22.5578H20.1458L22.8244 18.093L23.5498 22.6019Z",
+              fill: "currentcolor"
+            }, a + e))
           })
-        }),
-        Ht = {
+        })
+      });
+      var Ht = "_635dix6";
+      const Wt = {
           open: {
             opacity: 1
           },
@@ -7517,7 +6927,7 @@ try {
             opacity: 0
           }
         },
-        Wt = ({
+        Ut = ({
           children: a
         }) => (0, _.jsx)(_.Fragment, {
           children: (0, _.jsx)("div", {
@@ -7525,7 +6935,7 @@ try {
             children: a
           })
         }),
-        Ut = ({
+        Kt = ({
           children: a
         }) => (0, _.jsx)(_.Fragment, {
           children: (0, _.jsx)("div", {
@@ -7533,7 +6943,7 @@ try {
             children: a
           })
         }),
-        Kt = ({
+        $t = ({
           quickAccessHidden: a,
           children: e,
           href: t,
@@ -7548,14 +6958,15 @@ try {
             g = t || "/";
           return (0, i.useEffect)(() => {
             r(!1)
-          }, [c, a]), (0, _.jsxs)(Wt, {
-            children: [(0, _.jsxs)(Ut, {
+          }, [c, a]), (0, _.jsxs)(Ut, {
+            children: [(0, _.jsxs)(Kt, {
               children: [!l && (0, _.jsx)(Ea, {
                 showOn: "mobile",
                 children: (0, _.jsx)(ka, {
                   to: g,
                   "aria-label": s.formatMessage(Wa.nav_rockstargames_home),
                   onNavigate: n,
+                  className: Ht,
                   children: (0, _.jsx)(Jt, {})
                 })
               }), !e && (0, _.jsx)(Ea, {
@@ -7564,6 +6975,7 @@ try {
                   to: g,
                   "aria-label": s.formatMessage(Wa.nav_rockstargames_home),
                   onNavigate: n,
+                  className: Ht,
                   children: (0, _.jsx)(Jt, {})
                 })
               }), e && (0, _.jsxs)(ie.Root, {
@@ -7588,8 +7000,8 @@ try {
                       align: "start",
                       sideOffset: 24,
                       children: (0, _.jsx)(Fa.motion.div, {
-                        className: "_635dix6",
-                        variants: Ht,
+                        className: "_635dix7",
+                        variants: Wt,
                         initial: "closed",
                         animate: "open",
                         exit: "closed",
@@ -7618,6 +7030,597 @@ try {
             })]
           })
         }
+    },
+    6927: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+    },
+    7509: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/15b671d990b1f3f941c6359b3235abf3.jpg"
+    },
+    8494: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f34231941013a609948485830c84c072.jpg"
+    },
+    10046: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a29e26aa160e7be7e845708c335b3c39.svg"
+    },
+    10111: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg"
+    },
+    10869: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c82125e0b20342dba2008b0dcc6d55f6.jpg"
+    },
+    11016: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
+    },
+    12602: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dd4b0f40e745f4347c822594da56a119.jpg"
+    },
+    13095: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e7d916fcce2bbe9b6419f914f290597.jpg"
+    },
+    13890: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
+    },
+    14724: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/bbcbd2a2bb65ddad76e831c91c17b421.jpg"
+    },
+    14825: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/14448aca4ceaab8680323ce19c963d68.jpg"
+    },
+    16044: (a, e, t) => {
+      var n = {
+        "./VI/mobile/de_de.jpg": 35996,
+        "./VI/mobile/en_us.jpg": 27109,
+        "./VI/mobile/es_es.jpg": 79258,
+        "./VI/mobile/es_mx.jpg": 36725,
+        "./VI/mobile/fr_fr.jpg": 83118,
+        "./VI/mobile/it_it.jpg": 34416,
+        "./VI/mobile/ja_jp.jpg": 84705,
+        "./VI/mobile/ko_kr.jpg": 33055,
+        "./VI/mobile/pl_pl.jpg": 37098,
+        "./VI/mobile/pt_br.jpg": 84598,
+        "./VI/mobile/ru_ru.jpg": 20340,
+        "./VI/mobile/zh_hans.jpg": 16264,
+        "./VI/mobile/zh_tw.jpg": 6927
+      };
+
+      function s(a) {
+        var e = o(a);
+        return t(e)
+      }
+
+      function o(a) {
+        if (!t.o(n, a)) {
+          var e = new Error("Cannot find module '" + a + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
+        }
+        return n[a]
+      }
+      s.keys = function() {
+        return Object.keys(n)
+      }, s.resolve = o, a.exports = s, s.id = 16044
+    },
+    16264: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
+    },
+    18518: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0281770395dc77e41c1f40559a3d5989.jpg"
+    },
+    19552: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/61a79de8dea0228576a18068e4f2660a.jpg"
+    },
+    20144: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+    },
+    20340: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
+    },
+    22844: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4a1657ff0ab4e3d45469556ba2f899c3.jpg"
+    },
+    23587: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1b95ab415fdd8bec89099d433d23e3c7.jpg"
+    },
+    24808: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8977d6b170f295068d78c5bbb7b6f02d.jpg"
+    },
+    26788: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5dc0952c9e5beba577aeffe0289478bd.jpg"
+    },
+    27064: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5aa471f90eaff248e0fbef79400cbbf3.jpg"
+    },
+    27109: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
+    },
+    28005: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/404be4f04081372768bb660a6c1991ba.jpg"
+    },
+    31248: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/082b847bcab37655faf903149f80f1e4.jpg"
+    },
+    32830: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/14312e604f0637a2afd376dd571345d9.jpg"
+    },
+    33055: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
+    },
+    33143: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg"
+    },
+    34416: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
+    },
+    35996: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
+    },
+    36725: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
+    },
+    37098: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
+    },
+    37758: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
+    },
+    38537: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
+    },
+    39003: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
+    },
+    39294: (a, e, t) => {
+      var n = {
+        "./GTAOnline.jpg": 10111,
+        "./GTATrilogy.jpg": 84752,
+        "./IV.jpg": 73483,
+        "./V.jpg": 98754,
+        "./VI.jpg": 1157,
+        "./VI/desktop/de_de.jpg": 20144,
+        "./VI/desktop/en_us.jpg": 40401,
+        "./VI/desktop/es_es.jpg": 47534,
+        "./VI/desktop/es_mx.jpg": 38537,
+        "./VI/desktop/fr_fr.jpg": 72994,
+        "./VI/desktop/it_it.jpg": 93668,
+        "./VI/desktop/ja_jp.jpg": 63365,
+        "./VI/desktop/ko_kr.jpg": 39003,
+        "./VI/desktop/pl_pl.jpg": 37758,
+        "./VI/desktop/pt_br.jpg": 13890,
+        "./VI/desktop/ru_ru.jpg": 11016,
+        "./VI/desktop/zh_hans.jpg": 95732,
+        "./VI/desktop/zh_tw.jpg": 65667,
+        "./VI/mobile/de_de.jpg": 35996,
+        "./VI/mobile/en_us.jpg": 27109,
+        "./VI/mobile/es_es.jpg": 79258,
+        "./VI/mobile/es_mx.jpg": 36725,
+        "./VI/mobile/fr_fr.jpg": 83118,
+        "./VI/mobile/it_it.jpg": 34416,
+        "./VI/mobile/ja_jp.jpg": 84705,
+        "./VI/mobile/ko_kr.jpg": 33055,
+        "./VI/mobile/pl_pl.jpg": 37098,
+        "./VI/mobile/pt_br.jpg": 84598,
+        "./VI/mobile/ru_ru.jpg": 20340,
+        "./VI/mobile/zh_hans.jpg": 16264,
+        "./VI/mobile/zh_tw.jpg": 6927,
+        "./agent.jpg": 78323,
+        "./beaterator.jpg": 23587,
+        "./bully-scholarshipedition.jpg": 67181,
+        "./bully.jpg": 85332,
+        "./chinatownwars.jpg": 44596,
+        "./episodesfromlibertycity.jpg": 18518,
+        "./grandtheftauto-gba.jpg": 7509,
+        "./grandtheftauto3.jpg": 42787,
+        "./gta-online.jpg": 26788,
+        "./gta-v.jpg": 33143,
+        "./gta.jpg": 8494,
+        "./gta2.jpg": 59942,
+        "./gtacomplete.jpg": 64923,
+        "./gtalondon.jpg": 85256,
+        "./italianjob.jpg": 42043,
+        "./lanoire-vr-case-files.jpg": 52014,
+        "./lanoire.jpg": 59414,
+        "./lanoire_2.jpg": 52461,
+        "./libertycitystories.jpg": 89273,
+        "./manhunt.jpg": 95903,
+        "./manhunt2.jpg": 3933,
+        "./maxpayne.jpg": 77321,
+        "./maxpayne2.jpg": 13095,
+        "./maxpayne3.jpg": 57258,
+        "./midnightclub.jpg": 12602,
+        "./midnightclub2.jpg": 3818,
+        "./midnightclub3.jpg": 59655,
+        "./midnightclubLA-complete.jpg": 63839,
+        "./midnightclubLA.jpg": 79795,
+        "./oni.jpg": 24808,
+        "./rdr-goty.jpg": 19552,
+        "./reddeadonline.jpg": 73534,
+        "./reddeadredemption.jpg": 27064,
+        "./reddeadredemption2.jpg": 31248,
+        "./reddeadrevolver.jpg": 79114,
+        "./rockstar-games-collection-edition-1.jpg": 93573,
+        "./sanandreas.jpg": 14724,
+        "./skateanddestroy.jpg": 90377,
+        "./smugglersrun.jpg": 73564,
+        "./smugglersrun2.jpg": 22844,
+        "./smugglersrunwarzones.jpg": 84715,
+        "./stateofemergency.jpg": 28005,
+        "./tabletennis.jpg": 84141,
+        "./theballadofgaytony.jpg": 14825,
+        "./thelostanddamned.jpg": 52591,
+        "./thewarriors.jpg": 96148,
+        "./undeadnightmare.jpg": 32830,
+        "./vicecity.jpg": 91480,
+        "./vicecitystories.jpg": 10869,
+        "./wildmetal.jpg": 85613
+      };
+
+      function s(a) {
+        var e = o(a);
+        return t(e)
+      }
+
+      function o(a) {
+        if (!t.o(n, a)) {
+          var e = new Error("Cannot find module '" + a + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
+        }
+        return n[a]
+      }
+      s.keys = function() {
+        return Object.keys(n)
+      }, s.resolve = o, a.exports = s, s.id = 39294
+    },
+    40401: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
+    },
+    42043: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/809c3d6f72a6752f0ebcc6c92d43db67.jpg"
+    },
+    42787: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81001f378e085cd20f8ee0182e23cb7c.jpg"
+    },
+    44596: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a8074783730a47af2fe5c2b67ddf7d31.jpg"
+    },
+    47534: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
+    },
+    51048: (a, e, t) => {
+      var n = {
+        "./VI/desktop/de_de.jpg": 20144,
+        "./VI/desktop/en_us.jpg": 40401,
+        "./VI/desktop/es_es.jpg": 47534,
+        "./VI/desktop/es_mx.jpg": 38537,
+        "./VI/desktop/fr_fr.jpg": 72994,
+        "./VI/desktop/it_it.jpg": 93668,
+        "./VI/desktop/ja_jp.jpg": 63365,
+        "./VI/desktop/ko_kr.jpg": 39003,
+        "./VI/desktop/pl_pl.jpg": 37758,
+        "./VI/desktop/pt_br.jpg": 13890,
+        "./VI/desktop/ru_ru.jpg": 11016,
+        "./VI/desktop/zh_hans.jpg": 95732,
+        "./VI/desktop/zh_tw.jpg": 65667
+      };
+
+      function s(a) {
+        var e = o(a);
+        return t(e)
+      }
+
+      function o(a) {
+        if (!t.o(n, a)) {
+          var e = new Error("Cannot find module '" + a + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
+        }
+        return n[a]
+      }
+      s.keys = function() {
+        return Object.keys(n)
+      }, s.resolve = o, a.exports = s, s.id = 51048
+    },
+    52014: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b13400360d3873aa5ed169d38da1ff9f.jpg"
+    },
+    52461: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b1034f3c525b39db31d9017268a0aeb5.jpg"
+    },
+    52591: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f9b044c847e4c971c6ac5d096fe3e0eb.jpg"
+    },
+    57258: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0f31b4df90bff5bab740485f2d4b8253.jpg"
+    },
+    59414: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b1034f3c525b39db31d9017268a0aeb5.jpg"
+    },
+    59655: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e8ae1f733bc7d3b05c506de67f4b4f7f.jpg"
+    },
+    59942: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/48371205a1d87d858baa85712d1f91bb.jpg"
+    },
+    63365: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
+    },
+    63839: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a549b321910f5308200496f1893c2a5f.jpg"
+    },
+    64923: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/089fe525338554e2120a1aaaf81766d6.jpg"
+    },
+    65667: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
+    },
+    67181: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5704d117b387578dfebe1290e556f963.jpg"
+    },
+    72994: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
+    },
+    73483: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0b01707ef5603a26c1f542088f8f7c09.jpg"
+    },
+    73534: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc01cf29aa31b9d15a5d06483a0a1a3.jpg"
+    },
+    73564: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4393d2466a2f8931669e345898541812.jpg"
+    },
+    77321: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fd74a091e2e5765c8769668cc515e494.jpg"
+    },
+    78323: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d66bfe06a724f04c0941073de283297.jpg"
+    },
+    79114: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2d3ee871568fd751956d5ea1242a4f2d.jpg"
+    },
+    79258: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
+    },
+    79795: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/659db20d7a19cc70a0510c7d197cedf3.jpg"
+    },
+    79867: (a, e, t) => {
+      "use strict";
+      t.d(e, {
+        A: () => o,
+        C: () => n
+      });
+      const n = {
+          www: "www",
+          socialClub: "socialClub",
+          support: "support",
+          store: "store",
+          circoloco: "circoloco",
+          supportNew: "support"
+        },
+        s = [{
+          id: "prod",
+          sites: {
+            www: "www",
+            socialClub: "socialclub",
+            support: "support",
+            store: "store",
+            circoloco: "circolocorecords",
+            supportNew: "support"
+          },
+          cookieIdentifier: "prod"
+        }],
+        o = () => {
+          let a;
+          const {
+            location: e
+          } = window, t = e.hostname.substring(0, e.hostname.indexOf(".rockstargames.com")), n = s.findIndex(e => Object.entries(e.sites).findIndex(([e, n]) => n === t && (a = {
+            site: e,
+            subDomain: n
+          }, !0)) >= 0), o = s[n >= 0 ? n : 0];
+          return a || (a = {
+            site: "www",
+            subDomain: "local"
+          }), {
+            ...o,
+            currentSite: a
+          }
+        }
+    },
+    83118: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
+    },
+    84141: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5df3b2d018d1e8e9b424b9eaebc86b16.jpg"
+    },
+    84598: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
+    },
+    84705: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
+    },
+    84715: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/16e65ca64eafabe331ef1d2bef9c6f16.jpg"
+    },
+    84752: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/214a1cd1a2e7bb8f9b1e5d3846ca2993.jpg"
+    },
+    85256: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dbc4dbe3e1d52c3fc405579090868d08.jpg"
+    },
+    85332: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f58d386594d32f34c887da75032c5be.jpg"
+    },
+    85613: a => {
+      "use strict";
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d0b53035bf66e851116bd0244ba6ace.jpg"
+    },
+    86751: (a, e, t) => {
+      var n = {
+        "./GTAOnline.jpg": 10111,
+        "./GTATrilogy.jpg": 84752,
+        "./IV.jpg": 73483,
+        "./V.jpg": 98754,
+        "./VI.jpg": 1157,
+        "./VI/desktop/de_de.jpg": 20144,
+        "./VI/desktop/en_us.jpg": 40401,
+        "./VI/desktop/es_es.jpg": 47534,
+        "./VI/desktop/es_mx.jpg": 38537,
+        "./VI/desktop/fr_fr.jpg": 72994,
+        "./VI/desktop/it_it.jpg": 93668,
+        "./VI/desktop/ja_jp.jpg": 63365,
+        "./VI/desktop/ko_kr.jpg": 39003,
+        "./VI/desktop/pl_pl.jpg": 37758,
+        "./VI/desktop/pt_br.jpg": 13890,
+        "./VI/desktop/ru_ru.jpg": 11016,
+        "./VI/desktop/zh_hans.jpg": 95732,
+        "./VI/desktop/zh_tw.jpg": 65667,
+        "./VI/mobile/de_de.jpg": 35996,
+        "./VI/mobile/en_us.jpg": 27109,
+        "./VI/mobile/es_es.jpg": 79258,
+        "./VI/mobile/es_mx.jpg": 36725,
+        "./VI/mobile/fr_fr.jpg": 83118,
+        "./VI/mobile/it_it.jpg": 34416,
+        "./VI/mobile/ja_jp.jpg": 84705,
+        "./VI/mobile/ko_kr.jpg": 33055,
+        "./VI/mobile/pl_pl.jpg": 37098,
+        "./VI/mobile/pt_br.jpg": 84598,
+        "./VI/mobile/ru_ru.jpg": 20340,
+        "./VI/mobile/zh_hans.jpg": 16264,
+        "./VI/mobile/zh_tw.jpg": 6927,
+        "./agent.jpg": 78323,
+        "./beaterator.jpg": 23587,
+        "./bully-scholarshipedition.jpg": 67181,
+        "./bully.jpg": 85332,
+        "./chinatownwars.jpg": 44596,
+        "./episodesfromlibertycity.jpg": 18518,
+        "./grandtheftauto-gba.jpg": 7509,
+        "./grandtheftauto3.jpg": 42787,
+        "./gta-online.jpg": 26788,
+        "./gta-v.jpg": 33143,
+        "./gta.jpg": 8494,
+        "./gta2.jpg": 59942,
+        "./gtacomplete.jpg": 64923,
+        "./gtalondon.jpg": 85256,
+        "./italianjob.jpg": 42043,
+        "./lanoire-vr-case-files.jpg": 52014,
+        "./lanoire.jpg": 59414,
+        "./lanoire_2.jpg": 52461,
+        "./libertycitystories.jpg": 89273,
+        "./manhunt.jpg": 95903,
+        "./manhunt2.jpg": 3933,
+        "./maxpayne.jpg": 77321,
+        "./maxpayne2.jpg": 13095,
+        "./maxpayne3.jpg": 57258,
+        "./midnightclub.jpg": 12602,
+        "./midnightclub2.jpg": 3818,
+        "./midnightclub3.jpg": 59655,
+        "./midnightclubLA-complete.jpg": 63839,
+        "./midnightclubLA.jpg": 79795,
+        "./oni.jpg": 24808,
+        "./rdr-goty.jpg": 19552,
+        "./reddeadonline.jpg": 73534,
+        "./reddeadredemption.jpg": 27064,
+        "./reddeadredemption2.jpg": 31248,
+        "./reddeadrevolver.jpg": 79114,
+        "./rockstar-games-collection-edition-1.jpg": 93573,
+        "./sanandreas.jpg": 14724,
+        "./skateanddestroy.jpg": 90377,
+        "./smugglersrun.jpg": 73564,
+        "./smugglersrun2.jpg": 22844,
+        "./smugglersrunwarzones.jpg": 84715,
+        "./stateofemergency.jpg": 28005,
+        "./tabletennis.jpg": 84141,
+        "./theballadofgaytony.jpg": 14825,
+        "./thelostanddamned.jpg": 52591,
+        "./thewarriors.jpg": 96148,
+        "./undeadnightmare.jpg": 32830,
+        "./vicecity.jpg": 91480,
+        "./vicecitystories.jpg": 10869,
+        "./wildmetal.jpg": 85613
+      };
+
+      function s(a) {
+        var e = o(a);
+        return t(e)
+      }
+
+      function o(a) {
+        if (!t.o(n, a)) {
+          var e = new Error("Cannot find module '" + a + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
+        }
+        return n[a]
+      }
+      s.keys = function() {
+        return Object.keys(n)
+      }, s.resolve = o, a.exports = s, s.id = 86751
     },
     89273: a => {
       "use strict";

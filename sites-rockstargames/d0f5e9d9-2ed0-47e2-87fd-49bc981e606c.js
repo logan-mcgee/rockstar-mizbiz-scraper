@@ -15,46 +15,46 @@ try {
   [9831], {
     56992: (e, s, t) => {
       t.r(s), t.d(s, {
-        default: () => f
+        default: () => r
       });
-      var d = t(42295),
-        a = t(62229),
+      var a = t(42295),
+        d = t(62229),
         o = t(9623),
         n = t(15221),
         l = t(31879),
         i = t(95966),
-        r = t(87790);
-      const f = (0, i.withTranslations)(({
+        f = t(87790);
+      const r = (0, i.withTranslations)(({
         t: e
       }) => {
         const [s] = (0, o.useSearchParams)(), t = (0, o.useNavigate)(), {
           setNormalLogo: i,
-          setBreadcrumb: f,
+          setBreadcrumb: r,
           setTitle: u
-        } = (0, r.b)(), {
-          videoId: b
+        } = (0, f.b)(), {
+          videoId: g
         } = (0, o.useParams)(), {
           video: c,
-          related: g
+          related: b
         } = (0, l.useVideoData)({
-          id: b
+          id: g
         }), y = s.get("resolution") ?? "_auto";
-        return (0, a.useEffect)(() => (f([{
+        return (0, d.useEffect)(() => (r([{
           href: "/videos",
           title: e("Videos")
         }]), i(!1), () => {
-          i(!0), f()
-        }), []), (0, a.useEffect)(() => {
+          i(!0), r()
+        }), []), (0, d.useEffect)(() => {
           c && u(`${c.game.title} - ${c.title}`)
-        }, [c]), c && b ? (0, d.jsxs)(d.Fragment, {
-          children: [(0, d.jsx)(l.PlayerWithInfo, {
+        }, [c]), c && g ? (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(l.PlayerWithInfo, {
             resolution: y,
-            videoId: b,
+            videoId: g,
             videoChangeCallback: e => {
               t(`../videos/${e}`)
             }
-          }), g?.results?.length ? (0, d.jsx)(n.A, {
-            vids: g.results,
+          }), b?.results?.length ? (0, a.jsx)(n.A, {
+            vids: b.results,
             title: e("Related Videos")
           }) : ""]
         }) : null

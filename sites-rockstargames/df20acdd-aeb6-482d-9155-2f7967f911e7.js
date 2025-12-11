@@ -47,7 +47,7 @@ try {
           } = (0, d.useGtmTrack)(), [g] = (0, s.useSearchParams)(), v = i.preview_images_parsed.newswire_block, p = {
             default: 0 !== a || m ? v.square || v.d16x9 || v._fallback : v.d16x9 || v.square || v._fallback,
             mobile: v.square || v._fallback
-          }, [f, b] = (0, r.usePreloadImg)(p.default), w = {
+          }, [f, w] = (0, r.usePreloadImg)(p.default), b = {
             default: {
               backgroundImage: `url(${p.default})`
             },
@@ -72,14 +72,14 @@ try {
             children: (0, n.jsxs)(n.Fragment, {
               children: [0 !== a || g.get("tag_id") ? (0, n.jsx)("div", {
                 className: c.preview,
-                style: w.default
+                style: b.default
               }) : (0, n.jsxs)(n.Fragment, {
                 children: [(0, n.jsx)("div", {
                   className: c.previewMobile,
-                  style: w.mobile
+                  style: b.mobile
                 }), (0, n.jsx)("div", {
                   className: c.preview,
-                  style: w.default
+                  style: b.default
                 })]
               }), (0, n.jsxs)("div", {
                 className: c.info,
@@ -772,7 +772,7 @@ try {
     86546: (e, a, i) => {
       "use strict";
       i.r(a), i.d(a, {
-        default: () => w
+        default: () => b
       });
       var n = i(42295),
         t = i(62229),
@@ -859,9 +859,9 @@ try {
           } = (0, l.useGtmTrack)(),
           [p, f] = (0, s.useSearchParams)(),
           {
-            tagId: b = null
+            tagId: w = null
           } = (0, s.useParams)(),
-          [w, N] = (0, t.useState)(b ?? i ?? p.get("tag_id")),
+          [b, N] = (0, t.useState)(w ?? i ?? p.get("tag_id")),
           [h, _] = (0, t.useState)(1),
           [y, S] = (0, t.useState)(20),
           [x, F] = (0, t.useState)([]),
@@ -871,7 +871,7 @@ try {
             data: A
           }] = (0, r._l)(v(), {
             variables: {
-              tagId: Number(w),
+              tagId: Number(b),
               page: h,
               metaUrl: c,
               limit: y,
@@ -879,8 +879,8 @@ try {
             }
           });
         return (0, t.useEffect)(() => {
-          _(1), F([]), S(20), N(b ?? i ?? p.get("tag_id")), E()
-        }, [p.get("tag_id"), b, i]), (0, t.useEffect)(() => {
+          _(1), F([]), S(20), N(w ?? i ?? p.get("tag_id")), E()
+        }, [p.get("tag_id"), w, i]), (0, t.useEffect)(() => {
           const e = x;
           A?.posts?.paging && T(A?.posts?.paging), A?.posts?.results && F(e.concat(A?.posts?.results))
         }, [A]), (0, t.useEffect)(() => {
@@ -895,7 +895,7 @@ try {
             section: e,
             posts: x,
             relativeTo: a,
-            noSpecialOrder: null !== w
+            noSpecialOrder: null !== b
           }), null !== j && j.nextPage ? (0, n.jsx)(o.A, {
             className: "rockstargames-sites-rockstargamese125d510192feb4ce2844cb97084b838",
             "data-testid": "more-stories",
@@ -919,8 +919,8 @@ try {
         }) : null
       });
       var f = i(87790),
-        b = i(64424);
-      const w = (0, d.withTranslations)(({
+        w = i(64424);
+      const b = (0, d.withTranslations)(({
         t: e
       }) => {
         const {
@@ -940,7 +940,7 @@ try {
               section: "Newswire",
               t: e
             })
-          }), (0, n.jsx)(b.A, {})]
+          }), (0, n.jsx)(w.A, {})]
         })
       })
     },

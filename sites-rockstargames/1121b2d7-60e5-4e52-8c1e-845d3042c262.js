@@ -126,8 +126,8 @@ try {
         WWW_GRID_LAYOUT_BREAKPOINT_FRAGMENT: () => R,
         WWW_GRID_WRAPPER_FRAGMENT: () => p,
         WWW_IMAGE_BLOCK_FRAGMENT: () => I,
-        WWW_IMAGE_CARD_FRAGMENT: () => h,
-        WWW_IMAGE_CAROUSEL_FRAGMENT: () => f,
+        WWW_IMAGE_CARD_FRAGMENT: () => f,
+        WWW_IMAGE_CAROUSEL_FRAGMENT: () => h,
         WWW_IMAGE_MARQUEE_MODULE_FRAGMENT: () => C,
         WWW_LIGHTBOX_IMAGE_FRAGMENT: () => S,
         WWW_LINKOUT_IMAGE_FRAGMENT: () => E,
@@ -530,7 +530,7 @@ fragment WwwImageBlockFragment on WwwImageBlock {
   titleSize
 }
 `,
-        h = n.gql`
+        f = n.gql`
 fragment WwwImageCardFragment on WwwImageCard {
   __typename
   sys {
@@ -558,7 +558,7 @@ fragment WwwImageCardFragment on WwwImageCard {
   ariaLabel
 }
 `,
-        f = n.gql`
+        h = n.gql`
 fragment WwwImageCarouselFragment on WwwImageCarousel {
   __typename
   sys {
@@ -989,8 +989,8 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   ${R}
   ${p}
   ${I}
-  ${h}
   ${f}
+  ${h}
   ${C}
   ${S}
   ${E}
