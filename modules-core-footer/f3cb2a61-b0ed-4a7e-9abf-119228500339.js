@@ -140,7 +140,7 @@ try {
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -158,7 +158,7 @@ try {
             signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${b}`
+            pingBearer: `https://${p}/${y}`
           }
         },
         a = [o({
@@ -307,12 +307,12 @@ try {
         vx: () => x,
         sb: () => S,
         Ym: () => i.A,
-        CA: () => y.useNewswirePost,
+        CA: () => E.useNewswirePost,
         OG: () => c,
         ZC: () => l,
         sq: () => d,
         OH: () => v,
-        zP: () => b,
+        zP: () => y,
         Cb: () => f,
         N6: () => k,
         GA: () => M,
@@ -430,7 +430,7 @@ try {
             dispatch: e
           }), [])
         },
-        b = (e, t) => {
+        y = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)(() => {
             const n = p(e);
@@ -444,13 +444,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var y = n(89656),
-        E = (n(95342), n(17954));
+      var E = n(89656),
+        b = (n(95342), n(17954));
       const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, i.A)(), s = (0, E.t)(r);
+        } = (0, h.A)(), r = (0, i.A)(), s = (0, b.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -604,23 +604,23 @@ try {
               ...p,
               url: h
             }),
-            b = await (0, r.sc)(v);
+            y = await (0, r.sc)(v);
           if (u) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            if (w[y]?.response) return w[y].response;
+            if (w[y]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[y] = {
               loading: !0
             }
           }
-          const y = await fetch(h, p),
-            E = await y.json();
-          return u && (w[b] = {
-            response: E,
+          const E = await fetch(h, p),
+            b = await E.json();
+          return u && (w[y] = {
+            response: b,
             loading: !1
-          }), E
+          }), b
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

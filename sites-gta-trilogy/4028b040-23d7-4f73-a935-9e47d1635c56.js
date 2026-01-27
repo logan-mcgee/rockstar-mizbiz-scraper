@@ -34,17 +34,17 @@ try {
           enqueueReplaceState: function() {},
           enqueueSetState: function() {}
         },
-        b = Object.assign,
-        _ = {};
+        _ = Object.assign,
+        b = {};
 
       function h(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
 
       function m() {}
 
       function g(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
       h.prototype.isReactComponent = {}, h.prototype.setState = function(e, t) {
         if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -53,7 +53,7 @@ try {
         this.updater.enqueueForceUpdate(this, e, "forceUpdate")
       }, m.prototype = h.prototype;
       var v = g.prototype = new m;
-      v.constructor = g, b(v, h.prototype), v.isPureReactComponent = !0;
+      v.constructor = g, _(v, h.prototype), v.isPureReactComponent = !0;
       var w = Array.isArray,
         S = Object.prototype.hasOwnProperty,
         k = {
@@ -204,7 +204,7 @@ try {
         }
       }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-        var o = b({}, e.props),
+        var o = _({}, e.props),
           u = e.key,
           a = e.ref,
           f = e._owner;

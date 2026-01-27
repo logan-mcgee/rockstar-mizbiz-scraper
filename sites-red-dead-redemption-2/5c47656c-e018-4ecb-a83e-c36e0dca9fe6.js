@@ -45,12 +45,12 @@ try {
         a = n(93452),
         i = n(9482),
         c = n(58128),
-        u = n(45547);
-      const d = {
+        d = n(45547);
+      const u = {
           token: (0, o.UT)("")
         },
         l = (0, i.A)({
-          context: (0, r.createContext)(d),
+          context: (0, r.createContext)(u),
           key: "utilsTokenProvider"
         }),
         w = ({
@@ -79,7 +79,7 @@ try {
           }) => {
             const {
               pingBearer: t
-            } = (0, u.A)();
+            } = (0, d.A)();
             try {
               const n = e?.() ?? "";
               if (n) {
@@ -129,23 +129,23 @@ try {
           graphEnv: a,
           queryManifest: i,
           scHost: c,
-          hostname: u,
-          cdnBase: d,
+          hostname: d,
+          cdnBase: u,
           key: l,
           marketingAuthTLD: w
         }) => {
           const m = s?.apiHost ?? e,
             h = s?.authHost ?? t,
-            f = s?.cdnBase ?? d,
+            f = s?.cdnBase ?? u,
             p = s?.clientId ?? n,
             g = r?.marketingAuthTLD ?? w,
             v = s?.scHost ?? c,
-            b = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            y = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: s?.graphEnv ?? a,
             host: v,
-            hostname: u,
+            hostname: d,
             cdnBase: f,
             key: l,
             clientId: p,
@@ -158,7 +158,7 @@ try {
             signup: `https://${h}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${g}/auth/gateway.json`,
             logout: `https://${g}/auth/sc-auth-logout`,
-            pingBearer: `https://${g}/${b}`
+            pingBearer: `https://${g}/${y}`
           }
         },
         a = [o({
@@ -239,7 +239,7 @@ try {
             max: 99999
           }
         },
-        u = () => {
+        d = () => {
           const e = window.innerWidth,
             t = window.innerHeight,
             n = c;
@@ -262,31 +262,31 @@ try {
             windowHeight: t
           }
         },
-        d = (0, i.A)({
-          context: (0, r.createContext)(u()),
+        u = (0, i.A)({
+          context: (0, r.createContext)(d()),
           key: "resizeContext"
         }),
         {
           Consumer: l
-        } = d,
-        w = (0, a.UT)(u()),
+        } = u,
+        w = (0, a.UT)(d()),
         m = ({
           children: e
         }) => {
           const t = (0, o.q)(w);
           return (0, r.useEffect)(() => {
             const e = () => {
-              w(u())
+              w(d())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }, []), (0, s.jsx)(d.Provider, {
+          }, []), (0, s.jsx)(u.Provider, {
             value: t,
             children: e
           })
         },
-        h = () => (0, r.useContext)(d)
+        h = () => (0, r.useContext)(u)
     },
     52690: (e, t, n) => {
       n.d(t, {
@@ -302,17 +302,17 @@ try {
     56088: (e, t, n) => {
       n.d(t, {
         RK: () => r,
-        vx: () => E,
+        vx: () => b,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => b.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => i,
-        ZC: () => d,
-        sq: () => u,
+        ZC: () => u,
+        sq: () => d,
         OH: () => g,
         zP: () => v,
         Cb: () => m,
-        N6: () => k,
+        N6: () => E,
         GA: () => S,
         JE: () => C
       });
@@ -338,13 +338,13 @@ try {
         }, [e]), [t, a]
       };
       var c = n(9623);
-      const u = () => {
+      const d = () => {
           const {
             search: e
           } = (0, c.useLocation)();
           return new URLSearchParams(e)
         },
-        d = e => {
+        u = e => {
           const t = (0, o.useRef)();
           return (0, o.useEffect)(() => {
             t.current = e
@@ -359,31 +359,31 @@ try {
       }) => {
         const r = (0, l.Es)(),
           [a, i] = (0, o.useState)(null),
-          [c, u] = (0, o.useState)(!1),
-          [d, m] = (0, o.useState)(null),
+          [c, d] = (0, o.useState)(!1),
+          [u, m] = (0, o.useState)(null),
           h = (0, o.useCallback)(async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: a = {}
               } = t;
-              m(null), i(null), u(!0);
+              m(null), i(null), d(!0);
               const c = await (0, w.A)(o ?? e, {
                 pingBearer: r,
                 fetchOptions: n,
                 finalFetchOptions: a,
                 query: s
               });
-              return c?.status || m(JSON.stringify(c?.error)), i(c), u(!1), c
+              return c?.status || m(JSON.stringify(c?.error)), i(c), d(!1), c
             } catch (e) {
-              m(String(e)), u(!1)
+              m(String(e)), d(!1)
             }
             return null
           }, [e, n, s]);
         return (0, o.useEffect)(() => {
-          null === a && null === d && !c && t && h()
-        }, [t, a, d, c, h]), {
+          null === a && null === u && !c && t && h()
+        }, [t, a, u, c, h]), {
           data: a,
-          error: d,
+          error: u,
           loading: c,
           fetch: h
         }
@@ -424,13 +424,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var b = n(89656),
-        y = (n(95342), n(17954));
-      const k = e => {
+      var y = n(89656),
+        k = (n(95342), n(17954));
+      const E = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), s = (0, a.A)(), r = (0, y.t)(s);
+        } = (0, h.A)(), s = (0, a.A)(), r = (0, k.t)(s);
         let o = "";
         return o += "lang=" + encodeURIComponent(r), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -438,7 +438,7 @@ try {
         }
       };
       n(50437);
-      const E = () => {
+      const b = () => {
           const [e, t] = (0, o.useState)(!1);
           return (0, o.useEffect)(() => {
             const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
@@ -523,16 +523,16 @@ try {
         a = n(16188),
         i = n.n(a),
         c = n(45547),
-        u = n(17954);
+        d = n(17954);
       const {
-        apiHost: d
-      } = (0, c.A)(), l = (0, u.t)(document.documentElement.lang), w = {}, m = async (e, {
+        apiHost: u
+      } = (0, c.A)(), l = (0, d.t)(document.documentElement.lang), w = {}, m = async (e, {
         fetchOptions: t = {},
         finalFetchOptions: n = {},
         query: r = null,
         pingBearer: a,
         requireBearerToken: c = !0,
-        useCache: u = !0
+        useCache: d = !0
       } = {}) => {
         try {
           const {
@@ -545,7 +545,7 @@ try {
               "X-lang": l
             }
           };
-          let f = `${d}/${e}`;
+          let f = `${u}/${e}`;
           if (null === r || i().isEmpty(r) || (f += `?${new URLSearchParams(r)}`), !m && c) return null;
           m && (h.Authorization = `Bearer ${m}`);
           const p = {
@@ -556,23 +556,23 @@ try {
               ...g,
               url: f
             }),
-            b = await (0, s.sc)(v);
-          if (u) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            y = await (0, s.sc)(v);
+          if (d) {
+            if (w[y]?.response) return w[y].response;
+            if (w[y]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[y] = {
               loading: !0
             }
           }
-          const y = await fetch(f, g),
-            k = await y.json();
-          return u && (w[b] = {
-            response: k,
+          const k = await fetch(f, g),
+            E = await k.json();
+          return d && (w[y] = {
+            response: E,
             loading: !1
-          }), k
+          }), E
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -627,12 +627,12 @@ try {
           key: "freezeUserShouldSeeMoreReactive",
           value: (0, a.UT)(!1)
         }),
-        u = e => c(e),
-        d = (0, i.A)({
+        d = e => c(e),
+        u = (0, i.A)({
           context: (0, r.createContext)(null),
           key: "scrollContext"
         }),
-        l = () => (0, r.useContext)(d),
+        l = () => (0, r.useContext)(u),
         w = ({
           children: e
         }) => {
@@ -653,12 +653,12 @@ try {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [l, m]), (0, r.useMemo)(() => (0, s.jsx)(d.Provider, {
+          }, [l, m]), (0, r.useMemo)(() => (0, s.jsx)(u.Provider, {
             value: {
               freezeUserShouldSeeMore: m,
               pageYOffset: t,
               pauseUserShouldSeeMore: f,
-              setFreezeUserShouldSeeMore: u,
+              setFreezeUserShouldSeeMore: d,
               userShouldSeeMore: a
             },
             children: e

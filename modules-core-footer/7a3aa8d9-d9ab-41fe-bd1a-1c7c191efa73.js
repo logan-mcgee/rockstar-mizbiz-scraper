@@ -24,8 +24,8 @@ try {
       var a = r(42295),
         n = r(71127),
         o = r(95966),
-        c = r(56088);
-      const s = e => "pcalt" === e ? "pc" : e.toString(),
+        s = r(56088);
+      const c = e => "pcalt" === e ? "pc" : e.toString(),
         i = {
           pcalt: "PC",
           pc: "PC",
@@ -57,7 +57,7 @@ try {
               const [t, r] = (0, n.useState)([]), [a, l] = (0, n.useState)(null), {
                 data: d,
                 loggedIn: f
-              } = U(), p = (0, c.bn)(), g = (e, t) => {
+              } = U(), p = (0, s.bn)(), g = (e, t) => {
                 const a = e.length;
                 e.forEach(e => {
                   const r = t ?? {};
@@ -72,11 +72,11 @@ try {
                   const e = ((e, t) => {
                     const r = [],
                       a = [],
-                      n = [...new Set(e.gtaPlusPlatforms.map(e => s(e)))],
+                      n = [...new Set(e.gtaPlusPlatforms.map(e => c(e)))],
                       o = [];
                     return Object.entries(e?.characters ?? []).forEach(([e, t]) => {
                       t.length && t.forEach(t => {
-                        const n = s(t.platform);
+                        const n = c(t.platform);
                         if ("gtao" === e) {
                           a.includes(n) || a.push(n);
                           const r = `${e}_${t.platform}`;
@@ -189,7 +189,7 @@ try {
           const {
             charactersNeeded: t,
             crewsNeeded: r
-          } = P(), a = (0, o.useRockstarToken)(), [c, s] = (0, n.useState)({
+          } = P(), a = (0, o.useRockstarToken)(), [s, c] = (0, n.useState)({
             id: 0,
             avatar: "",
             bearer_token_expired: !0,
@@ -203,17 +203,17 @@ try {
             gtaPlusPlatforms: []
           }), [i] = (0, o.useRockstarTokenReactive)(), u = (0, o.useRockstarTokenPing)(), [l, d] = (0, n.useState)(), [f, p] = (0, n.useState)(!1), g = void 0 === l, [m, h] = (0, n.useState)(1);
           return (0, n.useEffect)(() => {
-            "gtao" !== t || c?.characters?.gtao || (s(e => ({
+            "gtao" !== t || s?.characters?.gtao || (c(e => ({
               ...e,
               accountSynced: !1
             })), h(e => e + 1))
-          }, [t, c?.characters?.gtao]), (0, n.useEffect)(() => {
-            r && !c?.crews && (s(e => ({
+          }, [t, s?.characters?.gtao]), (0, n.useEffect)(() => {
+            r && !s?.crews && (c(e => ({
               ...e,
               accountSynced: !1
             })), h(e => e + 1))
-          }, [r, c?.crews]), (0, n.useEffect)(() => {
-            0 === m && s(e => ({
+          }, [r, s?.crews]), (0, n.useEffect)(() => {
+            0 === m && c(e => ({
               ...e,
               accountSynced: !0
             }))
@@ -242,13 +242,13 @@ try {
                       }
                     }, n = await fetch(r, a);
                     if (200 !== n.status) return void e(!1);
-                    const c = `${t}?code=${await n.json()}`,
-                      s = await fetch(c, {
+                    const s = `${t}?code=${await n.json()}`,
+                      c = await fetch(s, {
                         credentials: "include"
                       }),
                       {
                         bearerToken: i
-                      } = await s.json();
+                      } = await c.json();
                     return e(i), i
                   })({
                     token: i
@@ -264,17 +264,17 @@ try {
                   } = (0, o.getConfigForDomain)(),
                   a = parseInt(t.nameid),
                   n = t["scAuth.Nickname"],
-                  c = "True" === (t?.["scAuth.IsAMinor"] ?? "True"),
-                  s = new Date(t["scAuth.MemberSince"]),
+                  s = "True" === (t?.["scAuth.IsAMinor"] ?? "True"),
+                  c = new Date(t["scAuth.MemberSince"]),
                   i = new Date,
-                  u = (0, R.M)(i, s) < 12,
+                  u = (0, R.M)(i, c) < 12,
                   l = (new Date).getTime() / 1e3;
                 return {
                   id: a,
                   nonExpiredToken: (t?.exp ?? 0) - l > 0,
                   avatar: t["scAuth.AvatarUrl"],
                   bearer_token_expired: t.exp > Date.now(),
-                  isAMinor: c,
+                  isAMinor: s,
                   isNewAccount: u,
                   nickname: n,
                   profile_link: `https://${r}.rockstargames.com/member/${n}?id=${a}`
@@ -282,14 +282,14 @@ try {
               })({
                 bearerToken: a
               });
-              s(t => ({
+              c(t => ({
                 ...t,
                 ...e
               }))
             }
           }, [a, f]), (0, n.useEffect)(() => {
             (async () => {
-              if (l && c && r && !c?.crews && c?.characters) {
+              if (l && s && r && !s?.crews && s?.characters) {
                 const e = await (async ({
                   pingBearer: e,
                   rockstarId: t
@@ -305,17 +305,17 @@ try {
                   return r
                 })({
                   pingBearer: u,
-                  rockstarId: c.id
+                  rockstarId: s.id
                 });
-                s(t => ({
+                c(t => ({
                   ...t,
                   crews: e
                 })), h(e => e - 1)
               }
             })()
-          }, [c?.nickname, r, l, c?.characters]), (0, n.useEffect)(() => {
+          }, [s?.nickname, r, l, s?.characters]), (0, n.useEffect)(() => {
             (async () => {
-              if (!l || !c || null != c?.hasNotification) return;
+              if (!l || !s || null != s?.hasNotification) return;
               const e = await (async ({
                 pingBearer: e
               }) => await (0, o.coreScApiFetch)("notification/count", {
@@ -324,14 +324,14 @@ try {
                 pingBearer: u
               });
               let t = !1;
-              e?.count && (t = e.count > 0), s(e => ({
+              e?.count && (t = e.count > 0), c(e => ({
                 ...e,
                 hasNotification: t
               }))
             })()
-          }, [l, c?.hasNotification]), (0, n.useEffect)(() => {
+          }, [l, s?.hasNotification]), (0, n.useEffect)(() => {
             (async () => {
-              if (!l || !c || c?.gamesPlayed || !1 === t || !1 === r) return;
+              if (!l || !s || s?.gamesPlayed || !1 === t || !1 === r) return;
               const e = await (async ({
                 pingBearer: e
               }) => {
@@ -344,14 +344,14 @@ try {
               })({
                 pingBearer: u
               });
-              s(t => ({
+              c(t => ({
                 ...t,
                 gamesPlayed: e
               })), h(e => e - 1)
             })()
-          }, [c?.nickname, l]), (0, n.useEffect)(() => {
+          }, [s?.nickname, l]), (0, n.useEffect)(() => {
             (async () => {
-              if (l && c && "gtao" === t && !c?.characters?.gtao) {
+              if (l && s && "gtao" === t && !s?.characters?.gtao) {
                 const {
                   gtaoCharacters: e,
                   linkedAccounts: t
@@ -385,15 +385,15 @@ try {
                         }
                       }) : void 0
                     }),
-                    c = (await Promise.all(n)).flat().filter(e => void 0 !== e),
+                    s = (await Promise.all(n)).flat().filter(e => void 0 !== e),
                     {
-                      status: s,
+                      status: c,
                       accounts: i
                     } = await (0, o.coreScApiFetch)(`profile/getprofile?nickname=${t}&maxFriends=0`, {
                       pingBearer: e
                     });
-                  if (!s || !i.length) return {
-                    gtaoCharacters: c,
+                  if (!c || !i.length) return {
+                    gtaoCharacters: s,
                     linkedAccounts: []
                   };
                   const u = i[0],
@@ -402,29 +402,29 @@ try {
                       linkedAccounts: d
                     } = u;
                   if (l?.rockstarId !== r) return {
-                    gtaoCharacters: c,
+                    gtaoCharacters: s,
                     linkedAccounts: []
                   };
-                  if (!c.length) return {
-                    gtaoCharacters: c,
+                  if (!s.length) return {
+                    gtaoCharacters: s,
                     linkedAccounts: u.linkedAccounts
                   };
                   const f = t;
                   let p = "",
                     g = "";
-                  return d?.map(e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (g = e.userName), e)), c.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), c.map((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = g || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e)), {
-                    gtaoCharacters: c,
+                  return d?.map(e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (g = e.userName), e)), s.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), s.map((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = g || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e)), {
+                    gtaoCharacters: s,
                     linkedAccounts: d
                   }
                 })({
                   pingBearer: u,
-                  nickname: c.nickname,
-                  rockstarId: c.id
+                  nickname: s.nickname,
+                  rockstarId: s.id
                 }), r = [];
                 e.forEach(e => {
                   const t = e.platform;
                   r.includes(t) || "1" !== e.stats?.overview?.hasGtaPlus?.value || r.push(t)
-                }), s(a => ({
+                }), c(a => ({
                   ...a,
                   characters: {
                     ...a.characters,
@@ -436,10 +436,10 @@ try {
                 })), h(e => e - 1)
               }
             })()
-          }, [t, c?.nickname, l]), (0, n.useEffect)(() => {
-            c?.id && c?.nonExpiredToken && (d(!0), _(c.id))
-          }, [JSON.stringify(c)]), {
-            data: c,
+          }, [t, s?.nickname, l]), (0, n.useEffect)(() => {
+            s?.id && s?.nonExpiredToken && (d(!0), _(s.id))
+          }, [JSON.stringify(s)]), {
+            data: s,
             loggedIn: l,
             loading: g
           }
@@ -475,8 +475,8 @@ try {
       var a = r(71127),
         n = Symbol.for("react.element"),
         o = Symbol.for("react.fragment"),
-        c = Object.prototype.hasOwnProperty,
-        s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = Object.prototype.hasOwnProperty,
+        c = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         i = {
           key: !0,
           ref: !0,
@@ -488,7 +488,7 @@ try {
         var a, o = {},
           u = null,
           l = null;
-        for (a in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) c.call(t, a) && !i.hasOwnProperty(a) && (o[a] = t[a]);
+        for (a in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) s.call(t, a) && !i.hasOwnProperty(a) && (o[a] = t[a]);
         if (e && e.defaultProps)
           for (a in t = e.defaultProps) void 0 === o[a] && (o[a] = t[a]);
         return {
@@ -497,7 +497,7 @@ try {
           key: u,
           ref: l,
           props: o,
-          _owner: s.current
+          _owner: c.current
         }
       }
       t.Fragment = o, t.jsx = u, t.jsxs = u
@@ -516,7 +516,7 @@ try {
         r = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function a(e, t) {
-        return !1 !== t.clone && t.isMergeableObject(e) ? s((r = e, Array.isArray(r) ? [] : {}), e, t) : e;
+        return !1 !== t.clone && t.isMergeableObject(e) ? c((r = e, Array.isArray(r) ? [] : {}), e, t) : e;
         var r
       }
 
@@ -534,7 +534,7 @@ try {
         }(e))
       }
 
-      function c(e, t) {
+      function s(e, t) {
         try {
           return t in e
         } catch (e) {
@@ -542,7 +542,7 @@ try {
         }
       }
 
-      function s(e, r, i) {
+      function c(e, r, i) {
         (i = i || {}).arrayMerge = i.arrayMerge || n, i.isMergeableObject = i.isMergeableObject || t, i.cloneUnlessOtherwiseSpecified = a;
         var u = Array.isArray(r);
         return u === Array.isArray(e) ? u ? i.arrayMerge(e, r, i) : function(e, t, r) {
@@ -551,22 +551,22 @@ try {
             n[t] = a(e[t], r)
           }), o(t).forEach(function(o) {
             (function(e, t) {
-              return c(e, t) && !(Object.hasOwnProperty.call(e, t) && Object.propertyIsEnumerable.call(e, t))
-            })(e, o) || (c(e, o) && r.isMergeableObject(t[o]) ? n[o] = function(e, t) {
-              if (!t.customMerge) return s;
+              return s(e, t) && !(Object.hasOwnProperty.call(e, t) && Object.propertyIsEnumerable.call(e, t))
+            })(e, o) || (s(e, o) && r.isMergeableObject(t[o]) ? n[o] = function(e, t) {
+              if (!t.customMerge) return c;
               var r = t.customMerge(e);
-              return "function" == typeof r ? r : s
+              return "function" == typeof r ? r : c
             }(o, r)(e[o], t[o], r) : n[o] = a(t[o], r))
           }), n
         }(e, r, i) : a(r, i)
       }
-      s.all = function(e, t) {
+      c.all = function(e, t) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce(function(e, r) {
-          return s(e, r, t)
+          return c(e, r, t)
         }, {})
       };
-      var i = s;
+      var i = c;
       e.exports = i
     }
   }

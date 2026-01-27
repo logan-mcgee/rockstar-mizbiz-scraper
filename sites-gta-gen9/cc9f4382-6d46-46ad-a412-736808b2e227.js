@@ -305,10 +305,10 @@ try {
         OH: () => p,
         zP: () => v,
         Cb: () => m,
-        N6: () => y,
+        N6: () => k,
         GA: () => M,
         JE: () => $,
-        G4: () => k.G4
+        G4: () => b.G4
       });
       const s = (0, n(82690).A)(),
         r = () => s;
@@ -419,19 +419,19 @@ try {
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
       var E = n(89656),
-        b = (n(95342), n(95573));
-      const y = e => {
+        y = (n(95342), n(95573));
+      const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, f.A)(), s = (0, a.A)(), r = (0, b.t)(s);
+        } = (0, f.A)(), s = (0, a.A)(), r = (0, y.t)(s);
         let o = "";
         return o += "lang=" + encodeURIComponent(r), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
           signInUrl: `${n}?${o}`
         }
       };
-      var k = n(50437);
+      var b = n(50437);
       const L = () => {
           const [e, t] = (0, o.useState)(!1);
           return (0, o.useEffect)(() => {
@@ -606,12 +606,12 @@ try {
               loading: !0
             }
           }
-          const b = await fetch(h, p),
-            y = await b.json();
+          const y = await fetch(h, p),
+            k = await y.json();
           return u && (w[E] = {
-            response: y,
+            response: k,
             loading: !1
-          }), y
+          }), k
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

@@ -140,7 +140,7 @@ try {
             g = r?.clientId ?? n,
             p = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -158,7 +158,7 @@ try {
             signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${b}`
+            pingBearer: `https://${p}/${y}`
           }
         },
         a = [o({
@@ -303,17 +303,17 @@ try {
       n.d(t, {
         RK: () => s,
         bn: () => L,
-        vx: () => k,
+        vx: () => b,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => b.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => i,
         ZC: () => d,
         sq: () => u,
         OH: () => p,
         zP: () => v,
         Cb: () => m,
-        N6: () => E,
+        N6: () => k,
         GA: () => T,
         JE: () => M
       });
@@ -425,13 +425,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var b = n(89656),
-        y = (n(95342), n(17954));
-      const E = e => {
+      var y = n(89656),
+        E = (n(95342), n(17954));
+      const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, f.A)(), r = (0, a.A)(), s = (0, y.t)(r);
+        } = (0, f.A)(), r = (0, a.A)(), s = (0, E.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -439,7 +439,7 @@ try {
         }
       };
       n(50437);
-      const k = () => {
+      const b = () => {
           const [e, t] = (0, o.useState)(!1);
           return (0, o.useEffect)(() => {
             const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
@@ -477,7 +477,7 @@ try {
             numberOfLogicalProcessors: s
           } = (0, S.xV)(), {
             saveData: a
-          } = (0, S.zp)(), i = k(), c = () => {
+          } = (0, S.zp)(), i = b(), c = () => {
             const o = (() => {
               const e = e => !1 === e;
               if (i) return !1;
@@ -585,23 +585,23 @@ try {
               ...p,
               url: h
             }),
-            b = await (0, r.sc)(v);
+            y = await (0, r.sc)(v);
           if (u) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            if (w[y]?.response) return w[y].response;
+            if (w[y]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[y] = {
               loading: !0
             }
           }
-          const y = await fetch(h, p),
-            E = await y.json();
-          return u && (w[b] = {
-            response: E,
+          const E = await fetch(h, p),
+            k = await E.json();
+          return u && (w[y] = {
+            response: k,
             loading: !1
-          }), E
+          }), k
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }

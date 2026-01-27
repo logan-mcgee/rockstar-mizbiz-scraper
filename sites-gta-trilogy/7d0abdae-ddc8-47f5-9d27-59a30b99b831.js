@@ -21,17 +21,17 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         FormattedMessage: () => n.A,
-        POSIXLocales: () => m,
+        POSIXLocales: () => _,
         ReactIntlProviderForMocking: () => i.A,
         createDevLocaleHook: () => E,
         createIntl: () => a.E,
         defineMessages: () => o.YK,
-        englishLocale: () => y,
+        englishLocale: () => m,
         getCookieValueByName: () => p,
         getLocale: () => h,
         linkWithLocale: () => P,
         localeCookieHandler: () => d,
-        locales: () => _,
+        locales: () => b,
         onLanguageChange: () => S,
         splitLocale: () => k,
         useIntl: () => s.A,
@@ -65,7 +65,7 @@ try {
           })];
           var n
         },
-        b = [{
+        y = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -157,25 +157,25 @@ try {
           iso: "zh-CN",
           store: "zh-CN"
         }],
-        y = b[0],
-        m = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        _ = b,
+        m = y[0],
+        _ = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        b = y,
         h = () => {
           const {
             location: e
           } = window, t = (0, u.A)(), r = (e => {
-            const t = _.map(e => e.subdomaincom),
+            const t = b.map(e => e.subdomaincom),
               r = e.pathname.substring(1).split("/"),
               o = "detect-locals" === r[0] ? 1 : 0;
             return -1 !== t.indexOf(r[o]) ? r[o] : null
           })(e), o = (e => {
             const t = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return t?.split("=")[1]
-          })(e), n = y;
+          })(e), n = m;
           let a = n;
           const s = `rockstarweb_lang.${t.cookieIdentifier}`,
             i = p(s);
-          a = t.currentSite?.site === u.C.www ? _.find(e => e.subdomaincom === o) || _.find(e => e.subdomaincom === r) || n : _.find(e => e.iso === i) || n;
+          a = t.currentSite?.site === u.C.www ? b.find(e => e.subdomaincom === o) || b.find(e => e.subdomaincom === r) || n : b.find(e => e.iso === i) || n;
           const [, c] = d(s, a.iso);
           return [a, c]
         };
@@ -321,7 +321,7 @@ try {
             i = (e => {
               let t = location.pathname.replace(/^\/|\/$/g, "");
               const r = t.split("/");
-              return _.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
+              return b.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
             })(a);
           t?.({
             event: "cta_other",
@@ -470,17 +470,17 @@ try {
         __asyncGenerator: () => k,
         __asyncValues: () => x,
         __await: () => j,
-        __awaiter: () => b,
+        __awaiter: () => y,
         __classPrivateFieldGet: () => T,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => L,
-        __createBinding: () => m,
+        __createBinding: () => _,
         __decorate: () => i,
         __disposeResources: () => U,
         __esDecorate: () => l,
-        __exportStar: () => _,
+        __exportStar: () => b,
         __extends: () => n,
-        __generator: () => y,
+        __generator: () => m,
         __importDefault: () => D,
         __importStar: () => $,
         __makeTemplateObject: () => P,
@@ -556,22 +556,22 @@ try {
           return e
         }
         for (var i, c = o.kind, l = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? o.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, o.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
-          var b = {};
-          for (var y in o) b[y] = "access" === y ? {} : o[y];
-          for (var y in o.access) b.access[y] = o.access[y];
-          b.addInitializer = function(e) {
+          var y = {};
+          for (var m in o) y[m] = "access" === m ? {} : o[m];
+          for (var m in o.access) y.access[m] = o.access[m];
+          y.addInitializer = function(e) {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(s(e || null))
           };
-          var m = (0, r[d])("accessor" === c ? {
+          var _ = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
-          } : f[l], b);
+          } : f[l], y);
           if ("accessor" === c) {
-            if (void 0 === m) continue;
-            if (null === m || "object" != typeof m) throw new TypeError("Object expected");
-            (i = s(m.get)) && (f.get = i), (i = s(m.set)) && (f.set = i), (i = s(m.init)) && n.unshift(i)
-          } else(i = s(m)) && ("field" === c ? n.unshift(i) : f[l] = i)
+            if (void 0 === _) continue;
+            if (null === _ || "object" != typeof _) throw new TypeError("Object expected");
+            (i = s(_.get)) && (f.get = i), (i = s(_.set)) && (f.set = i), (i = s(_.init)) && n.unshift(i)
+          } else(i = s(_)) && ("field" === c ? n.unshift(i) : f[l] = i)
         }
         u && Object.defineProperty(u, o.name, f), p = !0
       }
@@ -596,7 +596,7 @@ try {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
-      function b(e, t, r, o) {
+      function y(e, t, r, o) {
         return new(r || (r = Promise))(function(n, a) {
           function s(e) {
             try {
@@ -624,7 +624,7 @@ try {
         })
       }
 
-      function y(e, t) {
+      function m(e, t) {
         var r, o, n, a = {
             label: 0,
             sent: function() {
@@ -696,7 +696,7 @@ try {
           }
         }
       }
-      var m = Object.create ? function(e, t, r, o) {
+      var _ = Object.create ? function(e, t, r, o) {
         void 0 === o && (o = r);
         var n = Object.getOwnPropertyDescriptor(t, r);
         n && !("get" in n ? !t.__esModule : n.writable || n.configurable) || (n = {
@@ -709,8 +709,8 @@ try {
         void 0 === o && (o = r), e[o] = t[r]
       };
 
-      function _(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || m(t, e, r)
+      function b(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || _(t, e, r)
       }
 
       function h(e) {
@@ -883,7 +883,7 @@ try {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && m(t, e, r[o]);
+          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && _(t, e, r[o]);
         return S(t, e), t
       }
 
@@ -983,10 +983,10 @@ try {
         __propKey: f,
         __setFunctionName: p,
         __metadata: d,
-        __awaiter: b,
-        __generator: y,
-        __createBinding: m,
-        __exportStar: _,
+        __awaiter: y,
+        __generator: m,
+        __createBinding: _,
+        __exportStar: b,
         __values: h,
         __read: w,
         __spread: v,

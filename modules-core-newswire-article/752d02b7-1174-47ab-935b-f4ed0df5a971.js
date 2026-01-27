@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    n = (new e.Error).stack;
-  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "752d02b7-1174-47ab-935b-f4ed0df5a971", e._sentryDebugIdIdentifier = "sentry-dbid-752d02b7-1174-47ab-935b-f4ed0df5a971")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "752d02b7-1174-47ab-935b-f4ed0df5a971", e._sentryDebugIdIdentifier = "sentry-dbid-752d02b7-1174-47ab-935b-f4ed0df5a971")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,28 +13,28 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [439], {
-    10439: (e, n, d) => {
-      function t(e) {
-        var n, d, a = "";
-        if ("string" == typeof e || "number" == typeof e) a += e;
+    10439: (e, a, n) => {
+      function d(e) {
+        var a, n, t = "";
+        if ("string" == typeof e || "number" == typeof e) t += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
-            var o = e.length;
-            for (n = 0; n < o; n++) e[n] && (d = t(e[n])) && (a && (a += " "), a += d)
+            var f = e.length;
+            for (a = 0; a < f; a++) e[a] && (n = d(e[a])) && (t && (t += " "), t += n)
           } else
-            for (d in e) e[d] && (a && (a += " "), a += d);
-        return a
+            for (n in e) e[n] && (t && (t += " "), t += n);
+        return t
       }
 
-      function a() {
-        for (var e, n, d = 0, a = "", o = arguments.length; d < o; d++)(e = arguments[d]) && (n = t(e)) && (a && (a += " "), a += n);
-        return a
+      function t() {
+        for (var e, a, n = 0, t = "", f = arguments.length; n < f; n++)(e = arguments[n]) && (a = d(e)) && (t && (t += " "), t += a);
+        return t
       }
-      d.r(n), d.d(n, {
-        clsx: () => a,
-        default: () => o
+      n.r(a), n.d(a, {
+        clsx: () => t,
+        default: () => f
       });
-      const o = a
+      const f = t
     }
   }
 ]);

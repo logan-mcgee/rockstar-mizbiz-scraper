@@ -306,7 +306,7 @@ try {
           }), "custom" !== e.type && l("paginationRender", s[0])
         }
 
-        function b() {
+        function v() {
           t.params.pagination = n(t, t.originalParams.pagination, t.params.pagination, {
             el: "swiper-pagination"
           });
@@ -320,7 +320,7 @@ try {
           }))
         }
 
-        function v() {
+        function b() {
           const e = t.params.pagination;
           if (p()) return;
           let a = t.pagination.el;
@@ -338,7 +338,7 @@ try {
             a.classList.remove(e.horizontalClass, e.verticalClass), a.classList.add(t.isHorizontal() ? e.horizontalClass : e.verticalClass)
           })
         }), s("init", () => {
-          !1 === t.params.pagination.enabled ? h() : (b(), f(), g())
+          !1 === t.params.pagination.enabled ? h() : (v(), f(), g())
         }), s("activeIndexChange", () => {
           void 0 === t.snapIndex && g()
         }), s("snapIndexChange", () => {
@@ -346,7 +346,7 @@ try {
         }), s("snapGridLengthChange", () => {
           f(), g()
         }), s("destroy", () => {
-          v()
+          b()
         }), s("enable disable", () => {
           let {
             el: e
@@ -368,7 +368,7 @@ try {
           let {
             el: e
           } = t.pagination;
-          e && (e = (0, i.m)(e), e.forEach(e => e.classList.add(t.params.pagination.paginationDisabledClass))), v()
+          e && (e = (0, i.m)(e), e.forEach(e => e.classList.add(t.params.pagination.paginationDisabledClass))), b()
         };
         Object.assign(t.pagination, {
           enable: () => {
@@ -376,13 +376,13 @@ try {
             let {
               el: e
             } = t.pagination;
-            e && (e = (0, i.m)(e), e.forEach(e => e.classList.remove(t.params.pagination.paginationDisabledClass))), b(), f(), g()
+            e && (e = (0, i.m)(e), e.forEach(e => e.classList.remove(t.params.pagination.paginationDisabledClass))), v(), f(), g()
           },
           disable: h,
           render: f,
           update: g,
-          init: b,
-          destroy: v
+          init: v,
+          destroy: b
         })
       }
 
@@ -534,13 +534,13 @@ try {
           })
         }
 
-        function b(e, t) {
+        function v(e, t) {
           (e = (0, i.m)(e)).forEach(e => {
             e.setAttribute("aria-label", t)
           })
         }
 
-        function v(e) {
+        function b(e) {
           (e = (0, i.m)(e)).forEach(e => {
             e.setAttribute("aria-disabled", !0)
           })
@@ -573,7 +573,7 @@ try {
           return E() && t.params.pagination.clickable
         }
         const w = (e, t, a) => {
-            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), b(e, a),
+            u(e), "BUTTON" !== e.tagName && (g(e, "button"), e.addEventListener("keydown", y)), v(e, a),
               function(e, t) {
                 (e = (0, i.m)(e)).forEach(e => {
                   e.setAttribute("aria-controls", t)
@@ -611,7 +611,7 @@ try {
             const a = t.slides.length;
             e.slideLabelMessage && t.slides.forEach((s, i) => {
               const n = t.params.loop ? parseInt(s.getAttribute("data-swiper-slide-index"), 10) : i;
-              b(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, a))
+              v(s, e.slideLabelMessage.replace(/\{\{index\}\}/, n + 1).replace(/\{\{slidesLength\}\}/, a))
             })
           };
         n("beforeInit", () => {
@@ -621,7 +621,7 @@ try {
             const e = t.params.a11y;
             t.el.append(c);
             const a = t.el;
-            e.containerRoleDescriptionMessage && f(a, e.containerRoleDescriptionMessage), e.containerMessage && b(a, e.containerMessage), e.containerRole && g(a, e.containerRole);
+            e.containerRoleDescriptionMessage && f(a, e.containerRoleDescriptionMessage), e.containerMessage && v(a, e.containerMessage), e.containerRole && g(a, e.containerRole);
             const n = t.wrapperEl,
               l = e.id || n.getAttribute("id") || `swiper-wrapper-${r=16,void 0===r&&(r=16),"x".repeat(r).replace(/x/g,()=>Math.round(16*Math.random()).toString(16))}`;
             var r;
@@ -652,13 +652,13 @@ try {
               nextEl: e,
               prevEl: a
             } = t.navigation;
-            a && (t.isBeginning ? (v(a), m(a)) : (h(a), u(a))), e && (t.isEnd ? (v(e), m(e)) : (h(e), u(e)))
+            a && (t.isBeginning ? (b(a), m(a)) : (h(a), u(a))), e && (t.isEnd ? (b(e), m(e)) : (h(e), u(e)))
           }()
         }), n("paginationUpdate", () => {
           t.params.a11y.enabled && function() {
             const e = t.params.a11y;
             E() && t.pagination.bullets.forEach(a => {
-              t.params.pagination.clickable && (u(a), t.params.pagination.renderBullet || (g(a, "button"), b(a, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.i)(a) + 1)))), a.matches(r(t.params.pagination.bulletActiveClass)) ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")
+              t.params.pagination.clickable && (u(a), t.params.pagination.renderBullet || (g(a, "button"), v(a, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, i.i)(a) + 1)))), a.matches(r(t.params.pagination.bulletActiveClass)) ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")
             })
           }()
         }), n("destroy", () => {

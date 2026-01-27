@@ -22,8 +22,8 @@ try {
         r = n.t(o, 2),
         s = n(63155),
         a = r[" useEffectEvent ".trim().toString()],
-        c = r[" useInsertionEffect ".trim().toString()],
-        l = r[" useInsertionEffect ".trim().toString()] || s.N;
+        l = r[" useInsertionEffect ".trim().toString()],
+        c = r[" useInsertionEffect ".trim().toString()] || s.N;
 
       function f({
         prop: e,
@@ -31,12 +31,12 @@ try {
         onChange: n = () => {},
         caller: r
       }) {
-        const [s, a, c] = function({
+        const [s, a, l] = function({
           defaultProp: e,
           onChange: t
         }) {
           const [n, r] = o.useState(e), s = o.useRef(n), a = o.useRef(t);
-          return l(() => {
+          return c(() => {
             a.current = t
           }, [t]), o.useEffect(() => {
             s.current !== n && (a.current?.(n), s.current = n)
@@ -61,31 +61,31 @@ try {
             const n = function(e) {
               return "function" == typeof e
             }(t) ? t(e) : t;
-            n !== e && c.current?.(n)
+            n !== e && l.current?.(n)
           } else a(t)
-        }, [f, e, a, c]);
+        }, [f, e, a, l]);
         return [u, d]
       }
       var u = Symbol("RADIX:SYNC_STATE");
 
       function d(e, t, n, r) {
         const {
-          prop: l,
+          prop: c,
           defaultProp: f,
           onChange: d,
           caller: i
-        } = t, g = void 0 !== l, p = function(e) {
+        } = t, g = void 0 !== c, p = function(e) {
           if ("function" == typeof a) return a(e);
           const t = o.useRef(() => {
             throw new Error("Cannot call an event handler while rendering.")
           });
-          return "function" == typeof c ? c(() => {
+          return "function" == typeof l ? l(() => {
             t.current = e
           }) : (0, s.N)(() => {
             t.current = e
           }), o.useMemo(() => (...e) => t.current?.(...e), [])
         }(d); {
-          const e = o.useRef(void 0 !== l);
+          const e = o.useRef(void 0 !== c);
           o.useEffect(() => {
             const t = e.current;
             if (t !== g) {
@@ -96,32 +96,32 @@ try {
             e.current = g
           }, [g, i])
         }
-        const b = [{
+        const h = [{
           ...n,
           state: f
         }];
-        r && b.push(r);
-        const [h, y] = o.useReducer((t, n) => {
+        r && h.push(r);
+        const [y, b] = o.useReducer((t, n) => {
           if (n.type === u) return {
             ...t,
             state: n.state
           };
           const o = e(t, n);
           return g && !Object.is(o.state, t.state) && p(o.state), o
-        }, ...b), w = h.state, m = o.useRef(w);
+        }, ...h), w = y.state, m = o.useRef(w);
         o.useEffect(() => {
           m.current !== w && (m.current = w, g || p(w))
         }, [p, w, m, g]);
-        const E = o.useMemo(() => void 0 !== l ? {
-          ...h,
-          state: l
-        } : h, [h, l]);
+        const E = o.useMemo(() => void 0 !== c ? {
+          ...y,
+          state: c
+        } : y, [y, c]);
         return o.useEffect(() => {
-          g && !Object.is(l, h.state) && y({
+          g && !Object.is(c, y.state) && b({
             type: u,
-            state: l
+            state: c
           })
-        }, [l, h.state, g]), [E, y]
+        }, [c, y.state, g]), [E, b]
       }
     },
     63155: (e, t, n) => {

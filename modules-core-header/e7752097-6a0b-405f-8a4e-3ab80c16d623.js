@@ -16,13 +16,13 @@ try {
     58938: (o, e, t) => {
       t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => l,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => d,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description}：在弹窗中查看大图",
         n = "关闭",
-        l = "按{shortcut}",
-        a = "放大",
+        a = "按{shortcut}",
+        l = "放大",
         i = "按{shortcut}",
         d = "缩小",
         b = "按{shortcut}",
@@ -46,8 +46,8 @@ try {
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: d,
           Lightbox_Zoom_Out_Button__Tooltip: b,

@@ -72,8 +72,8 @@ try {
           consoleBtn: a,
           icon: n = "",
           img: c,
-          labelColor: i = "#000",
-          onClick: d,
+          labelColor: d = "#000",
+          onClick: i,
           secondText: b,
           size: f,
           text: g,
@@ -83,9 +83,9 @@ try {
         }) => {
           const m = [r.plusButton, r[p] ?? "", r[f] ?? "", r[a] ?? "", t].join(" "),
             h = {
-              "--hvr-color": e ?? i,
-              "--hvr-bg-color": i ?? e,
-              "--hvr-border-color": e ?? i
+              "--hvr-color": e ?? d,
+              "--hvr-bg-color": d ?? e,
+              "--hvr-border-color": e ?? d
             },
             y = (0, s.jsxs)(s.Fragment, {
               children: [c ? (0, s.jsx)("img", {
@@ -103,8 +103,8 @@ try {
             if (u.startsWith("http")) {
               const e = u.startsWith(document.location.origin) ? "_self" : "_blank";
               return (0, s.jsx)("span", {
-                onClick: d,
-                onKeyDown: d,
+                onClick: i,
+                onKeyDown: i,
                 className: m,
                 role: "button",
                 "aria-label": k,
@@ -118,7 +118,7 @@ try {
             }
             return (0, s.jsx)(o, {
               className: m,
-              onClick: d,
+              onClick: i,
               style: {
                 ...h
               },
@@ -129,7 +129,7 @@ try {
           }
           return (0, s.jsx)(l, {
             className: m,
-            onClick: d,
+            onClick: i,
             style: {
               ...h
             },
@@ -143,8 +143,8 @@ try {
         C1: () => c,
         S1: () => o,
         XC: () => f,
-        jS: () => i,
-        qg: () => d,
+        jS: () => d,
+        qg: () => i,
         z0: () => b
       });
       var s = a(62229),
@@ -164,16 +164,16 @@ try {
           desktop: a = null,
           ariaLabel: o = null,
           sources: c = null,
-          prod: i = null
+          prod: d = null
         }) => {
-          const d = (0, n.useLocale)(),
+          const i = (0, n.useLocale)(),
             {
               meta: b = {}
             } = (0, r.i)() ?? {},
-            [f, g] = (0, s.useState)(i ?? b?.cdn ?? b?.prod ?? !0);
+            [f, g] = (0, s.useState)(d ?? b?.cdn ?? b?.prod ?? !0);
           (0, s.useEffect)(() => {
-            g(i ?? b?.cdn ?? b?.prod ?? !0)
-          }, [i, b]);
+            g(d ?? b?.cdn ?? b?.prod ?? !0)
+          }, [d, b]);
           const u = (0, s.useCallback)(e => {
             const t = null !== c,
               a = e?.previewSrc ?? e ?? null;
@@ -186,8 +186,8 @@ try {
             alt: e,
             ariaLabel: o,
             src: {
-              mobile: u(c?.[d]?.mobile ?? c?.en_us?.mobile ?? t),
-              desktop: u(c?.[d]?.desktop ?? c?.en_us?.desktop ?? a)
+              mobile: u(c?.[i]?.mobile ?? c?.en_us?.mobile ?? t),
+              desktop: u(c?.[i]?.desktop ?? c?.en_us?.desktop ?? a)
             }
           }
         },
@@ -201,7 +201,7 @@ try {
             c(a?.cdn ?? a?.prod ?? !1)
           }, [a]), e ? e?.startsWith("http") ? l(e) : l(`${(0,n.getCdnPrefix)(o)}${e}`) : null
         },
-        i = () => {
+        d = () => {
           const e = (0, r.i)() ?? {},
             {
               meta: t = {}
@@ -212,7 +212,7 @@ try {
             return e ? e?.startsWith("http") ? l(e) : l(`${(0,n.getCdnPrefix)(s)}${e}`) : null
           }, [a])
         },
-        d = e => e.full_src,
+        i = e => e.full_src,
         b = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,n.getCdnPrefix)(!1)}${t}`

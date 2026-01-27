@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    d = (new e.Error).stack;
-  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "dfe8bc07-4ba9-4483-abf5-3d82bee0a0f1", e._sentryDebugIdIdentifier = "sentry-dbid-dfe8bc07-4ba9-4483-abf5-3d82bee0a0f1")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "dfe8bc07-4ba9-4483-abf5-3d82bee0a0f1", e._sentryDebugIdIdentifier = "sentry-dbid-dfe8bc07-4ba9-4483-abf5-3d82bee0a0f1")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {

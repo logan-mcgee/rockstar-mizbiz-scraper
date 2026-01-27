@@ -46,7 +46,7 @@ try {
             data: p
           } = (0, i.useRockstarUser)(), {
             track: y
-          } = (0, i.useGtmTrack)(), b = (0, c.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+          } = (0, i.useGtmTrack)(), h = (0, c.getCookieValueByName)("UAGC"), [b, _] = (0, n.useState)("1" === (v = h) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: j
@@ -56,7 +56,7 @@ try {
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }, []), h === f.PASSED || !1 === p?.isAMinor ? a : h === f.FAILED ? (0, s.jsxs)("div", {
+          }, []), b === f.PASSED || !1 === p?.isAMinor ? a : b === f.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: j,
             children: [t?.header, (0, s.jsx)("h2", {

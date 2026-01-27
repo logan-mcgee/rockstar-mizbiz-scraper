@@ -23,16 +23,16 @@ try {
         a = n(6188),
         i = n.n(a),
         c = n(5547),
-        u = n(7954);
+        d = n(7954);
       const {
-        apiHost: d
-      } = (0, c.A)(), l = (0, u.t)(document.documentElement.lang), w = {}, m = async (e, {
+        apiHost: u
+      } = (0, c.A)(), l = (0, d.t)(document.documentElement.lang), w = {}, m = async (e, {
         fetchOptions: t = {},
         finalFetchOptions: n = {},
         query: s = null,
         pingBearer: a,
         requireBearerToken: c = !0,
-        useCache: u = !0
+        useCache: d = !0
       } = {}) => {
         try {
           const {
@@ -45,7 +45,7 @@ try {
               "X-lang": l
             }
           };
-          let h = `${d}/${e}`;
+          let h = `${u}/${e}`;
           if (null === s || i().isEmpty(s) || (h += `?${new URLSearchParams(s)}`), !m && c) return null;
           m && (f.Authorization = `Bearer ${m}`);
           const p = {
@@ -57,7 +57,7 @@ try {
               url: h
             }),
             y = await (0, r.sc)(v);
-          if (u) {
+          if (d) {
             if (w[y]?.response) return w[y].response;
             if (w[y]?.loading) return {
               error: null,
@@ -69,7 +69,7 @@ try {
           }
           const E = await fetch(h, g),
             k = await E.json();
-          return u && (w[y] = {
+          return d && (w[y] = {
             response: k,
             loading: !1
           }), k
@@ -129,7 +129,7 @@ try {
             max: 99999
           }
         },
-        u = () => {
+        d = () => {
           const e = window.innerWidth,
             t = window.innerHeight,
             n = c;
@@ -152,31 +152,31 @@ try {
             windowHeight: t
           }
         },
-        d = (0, i.A)({
-          context: (0, s.createContext)(u()),
+        u = (0, i.A)({
+          context: (0, s.createContext)(d()),
           key: "resizeContext"
         }),
         {
           Consumer: l
-        } = d,
-        w = (0, a.UT)(u()),
+        } = u,
+        w = (0, a.UT)(d()),
         m = ({
           children: e
         }) => {
           const t = (0, o.q)(w);
           return (0, s.useEffect)(() => {
             const e = () => {
-              w(u())
+              w(d())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }, []), (0, r.jsx)(d.Provider, {
+          }, []), (0, r.jsx)(u.Provider, {
             value: t,
             children: e
           })
         },
-        f = () => (0, s.useContext)(d)
+        f = () => (0, s.useContext)(u)
     },
     772: (e, t, n) => {
       n.d(t, {
@@ -191,12 +191,12 @@ try {
         a = n(3452),
         i = n(9482),
         c = n(8128),
-        u = n(5547);
-      const d = {
+        d = n(5547);
+      const u = {
           token: (0, o.UT)("")
         },
         l = (0, i.A)({
-          context: (0, s.createContext)(d),
+          context: (0, s.createContext)(u),
           key: "utilsTokenProvider"
         }),
         w = ({
@@ -225,7 +225,7 @@ try {
           }) => {
             const {
               pingBearer: t
-            } = (0, u.A)();
+            } = (0, d.A)();
             try {
               const n = e?.() ?? "";
               if (n) {
@@ -278,12 +278,12 @@ try {
           key: "freezeUserShouldSeeMoreReactive",
           value: (0, a.UT)(!1)
         }),
-        u = e => c(e),
-        d = (0, i.A)({
+        d = e => c(e),
+        u = (0, i.A)({
           context: (0, s.createContext)(null),
           key: "scrollContext"
         }),
-        l = () => (0, s.useContext)(d),
+        l = () => (0, s.useContext)(u),
         w = ({
           children: e
         }) => {
@@ -304,12 +304,12 @@ try {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [l, m]), (0, s.useMemo)(() => (0, r.jsx)(d.Provider, {
+          }, [l, m]), (0, s.useMemo)(() => (0, r.jsx)(u.Provider, {
             value: {
               freezeUserShouldSeeMore: m,
               pageYOffset: t,
               pauseUserShouldSeeMore: h,
-              setFreezeUserShouldSeeMore: u,
+              setFreezeUserShouldSeeMore: d,
               userShouldSeeMore: a
             },
             children: e
@@ -330,14 +330,14 @@ try {
           graphEnv: a,
           queryManifest: i,
           scHost: c,
-          hostname: u,
-          cdnBase: d,
+          hostname: d,
+          cdnBase: u,
           key: l,
           marketingAuthTLD: w
         }) => {
           const m = r?.apiHost ?? e,
             f = r?.authHost ?? t,
-            h = r?.cdnBase ?? d,
+            h = r?.cdnBase ?? u,
             p = r?.clientId ?? n,
             g = s?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
@@ -346,7 +346,7 @@ try {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: v,
-            hostname: u,
+            hostname: d,
             cdnBase: h,
             key: l,
             clientId: p,
@@ -409,8 +409,8 @@ try {
         Ym: () => a.A,
         CA: () => y.useNewswirePost,
         OG: () => i,
-        ZC: () => d,
-        sq: () => u,
+        ZC: () => u,
+        sq: () => d,
         OH: () => g,
         zP: () => v,
         Cb: () => m,
@@ -440,13 +440,13 @@ try {
         }, [e]), [t, a]
       };
       var c = n(9623);
-      const u = () => {
+      const d = () => {
           const {
             search: e
           } = (0, c.useLocation)();
           return new URLSearchParams(e)
         },
-        d = e => {
+        u = e => {
           const t = (0, o.useRef)();
           return (0, o.useEffect)(() => {
             t.current = e
@@ -461,31 +461,31 @@ try {
       }) => {
         const s = (0, l.Es)(),
           [a, i] = (0, o.useState)(null),
-          [c, u] = (0, o.useState)(!1),
-          [d, m] = (0, o.useState)(null),
+          [c, d] = (0, o.useState)(!1),
+          [u, m] = (0, o.useState)(null),
           f = (0, o.useCallback)(async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: a = {}
               } = t;
-              m(null), i(null), u(!0);
+              m(null), i(null), d(!0);
               const c = await (0, w.A)(o ?? e, {
                 pingBearer: s,
                 fetchOptions: n,
                 finalFetchOptions: a,
                 query: r
               });
-              return c?.status || m(JSON.stringify(c?.error)), i(c), u(!1), c
+              return c?.status || m(JSON.stringify(c?.error)), i(c), d(!1), c
             } catch (e) {
-              m(String(e)), u(!1)
+              m(String(e)), d(!1)
             }
             return null
           }, [e, n, r]);
         return (0, o.useEffect)(() => {
-          null === a && null === d && !c && t && f()
-        }, [t, a, d, c, f]), {
+          null === a && null === u && !c && t && f()
+        }, [t, a, u, c, f]), {
           data: a,
-          error: d,
+          error: u,
           loading: c,
           fetch: f
         }
@@ -586,9 +586,9 @@ try {
               const t = "Safari" === C.C0,
                 o = "Firefox" === C.C0,
                 c = r && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(r),
-                u = s && s >= 4,
-                d = n && n >= 4;
-              return !(e(!a) || e(c) || e(u) || !t && !o && e(d))
+                d = s && s >= 4,
+                u = n && n >= 4;
+              return !(e(!a) || e(c) || e(d) || !t && !o && e(u))
             })();
             o !== e && t(o)
           };

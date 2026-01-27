@@ -25,12 +25,12 @@ try {
         d = t(3497),
         i = t(5966),
         c = t(2918);
-      const u = {
+      const f = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
           inputs: "rockstargames-modules-core-videoplayerca3ab235303ed1b84f9c867fe5393c3a"
         },
-        f = Object.freeze({
+        u = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
@@ -46,7 +46,7 @@ try {
             data: m
           } = (0, c.useRockstarUser)(), {
             track: y
-          } = (0, c.useGtmTrack)(), b = (0, i.getCookieValueByName)("UAGC"), [_, h] = (0, n.useState)("1" === (v = b) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+          } = (0, c.useGtmTrack)(), b = (0, i.getCookieValueByName)("UAGC"), [_, h] = (0, n.useState)("1" === (v = b) ? u.PASSED : "0" === v ? u.FAILED : u.NOT_SUBMITTED);
           var v;
           const [w, k] = (0, n.useState)(), I = (0, n.createRef)(), x = (0, n.createRef)(), E = (0, n.createRef)(), {
             style: j
@@ -56,22 +56,22 @@ try {
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }, []), _ === f.PASSED || !1 === m?.isAMinor ? a : _ === f.FAILED ? (0, r.jsxs)("div", {
-            className: u.agegate,
+          }, []), _ === u.PASSED || !1 === m?.isAMinor ? a : _ === u.FAILED ? (0, r.jsxs)("div", {
+            className: f.agegate,
             style: j,
             children: [t?.header, (0, r.jsx)("h2", {
               children: p("agegate_fail")
             })]
           }) : (0, r.jsxs)("div", {
-            className: u.agegate,
+            className: f.agegate,
             style: j,
             children: [t?.header, (0, r.jsx)("div", {
-              className: u.bg,
+              className: f.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
             }), !1 === w && (0, r.jsx)("h5", {
-              className: u.error,
+              className: f.error,
               children: p("Please enter a valid age")
             }), (0, r.jsxs)("form", {
               name: "agegate",
@@ -100,7 +100,7 @@ try {
               children: [(0, r.jsx)("h5", {
                 children: p("agegate_header")
               }), (0, r.jsxs)("div", {
-                className: u.inputs,
+                className: f.inputs,
                 children: [(0, r.jsxs)("label", {
                   htmlFor: "monthInput",
                   children: [p("Month"), (0, r.jsx)("input", {
@@ -126,7 +126,7 @@ try {
                   children: [p("Year"), (0, r.jsx)("input", {
                     id: "yearInput",
                     ref: E,
-                    className: u.year,
+                    className: f.year,
                     placeholder: p("YYYY"),
                     maxLength: 4,
                     type: "number",
@@ -134,7 +134,7 @@ try {
                   })]
                 }), (0, r.jsx)("button", {
                   type: "submit",
-                  className: u.submit,
+                  className: f.submit,
                   children: p("SUBMIT")
                 })]
               })]

@@ -40,12 +40,12 @@ try {
           inView: g
         } = (0, d.useInView)({
           threshold: .6
-        }), [h, b] = (0, r.useState)(!1), w = (0, m.r)("hub");
+        }), [h, w] = (0, r.useState)(!1), b = (0, m.r)("hub");
         return (0, r.useEffect)(() => {
           g && !h && (e({
             event: "page_section_impression",
             element_placement: p.A.support_module_header.defaultMessage?.toLowerCase()
-          }), b(!0))
+          }), w(!0))
         }, [g]), (0, t.jsx)("div", {
           className: "_1ru3mwr0",
           children: (0, t.jsxs)("div", {
@@ -66,7 +66,7 @@ try {
               })]
             }), (0, t.jsx)("div", {
               className: "_1ru3mwr5",
-              children: w.map((a, s) => (0, t.jsx)(f.A, {
+              children: b.map((a, s) => (0, t.jsx)(f.A, {
                 cardData: a,
                 type: "article",
                 onCardClick: () => ((a, s) => {

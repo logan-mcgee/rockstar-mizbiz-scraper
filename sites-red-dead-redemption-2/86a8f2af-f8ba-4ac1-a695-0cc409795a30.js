@@ -55,11 +55,11 @@ try {
         value: (0, d.makeVar)(null)
       }), t(39763), t(58128);
       const l = {},
-        c = (0, d.setContextItem)({
+        f = (0, d.setContextItem)({
           context: (0, n.createContext)(l),
           key: "userContext"
         }),
-        i = () => (0, n.useContext)(c)
+        i = () => (0, n.useContext)(f)
     }
   }
 ]);

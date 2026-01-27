@@ -136,8 +136,8 @@ try {
           key: "selectedCharacterTupleReactive",
           value: (0, n.makeVar)(null)
         }),
-        b = e => w(e),
-        _ = (0, n.setMakeVarItem)({
+        _ = e => w(e),
+        b = (0, n.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, n.makeVar)(null)
         }),
@@ -174,7 +174,7 @@ try {
             setCrewsNeeded: C,
             setCurrentCharId: v,
             setNavOpen: m,
-            setSelectedCharacterTuple: b,
+            setSelectedCharacterTuple: _,
             setUserData: P,
             setJumpScMenuFocus: k
           }
@@ -437,7 +437,7 @@ try {
               }
             })()
           }, [t, c?.nickname, u]), (0, s.useEffect)(() => {
-            c?.id && c?.nonExpiredToken && (d(!0), _(c.id))
+            c?.id && c?.nonExpiredToken && (d(!0), b(c.id))
           }, [JSON.stringify(c)]), {
             data: c,
             loggedIn: u,

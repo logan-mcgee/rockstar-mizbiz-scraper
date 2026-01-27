@@ -26,7 +26,7 @@ try {
           carouselWrapper: "rockstargames-modules-core-newswire-articlefabefc39343f6c494eb3d049757d89c5",
           padding: "rockstargames-modules-core-newswire-articleac767e959939b4d56b2358cb263d07ad"
         },
-        c = ({
+        n = ({
           to: e,
           children: a
         }) => e ? (0, t.jsx)("a", {
@@ -34,18 +34,18 @@ try {
           target: "_blank",
           children: a
         }) : a,
-        n = ({
+        c = ({
           items: e = [],
           text: a = {},
           style: s,
-          className: n = "",
+          className: c = "",
           id: o = null
         }) => e?.length ? (0, t.jsxs)("div", {
           id: o,
-          "data-testid": `carousel${n&&`-${n}`}-group-of-items`,
+          "data-testid": `carousel${c&&`-${c}`}-group-of-items`,
           children: [(0, t.jsx)(r.A, {
             style: s,
-            className: [n, d.carouselWrapper].join(" "),
+            className: [c, d.carouselWrapper].join(" "),
             children: e.map(e => (0, t.jsxs)("div", {
               id: e?.id ?? null,
               children: [(0, t.jsx)(i.A, {
@@ -58,7 +58,7 @@ try {
                 ariaLabel: e?.image?.ariaLabel ?? e.description,
                 style: e?.style,
                 className: [d.img, e?.className].join(" ")
-              }), e.title && (0, t.jsx)(c, {
+              }), e.title && (0, t.jsx)(n, {
                 to: e?.to,
                 children: (0, t.jsx)("h4", {
                   className: d.carouselTitle,
@@ -82,9 +82,9 @@ try {
       var o = s(31879),
         m = s.n(o),
         g = s(92440),
-        b = s(4572),
-        f = s.n(b);
-      const u = ({
+        f = s(4572),
+        u = s.n(f);
+      const b = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
@@ -125,16 +125,16 @@ try {
           id: i = null
         }) => (0, t.jsx)("div", {
           style: a,
-          className: f()("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
+          className: u()("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
           id: i,
           "data-testid": "standard-group-of-items",
-          children: e.map(e => (0, t.jsx)(u, {
+          children: e.map(e => (0, t.jsx)(b, {
             impressionTracking: e?.impressionTracking,
             gtm: e?.gtm,
             children: (0, t.jsx)(p, {
               to: e?.to,
               children: (0, t.jsxs)("div", {
-                className: f()("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                className: u()("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                 style: e?.style ?? {},
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(y, {
@@ -159,7 +159,7 @@ try {
           if (!s.length) return null;
           switch (l) {
             case "carousel":
-              return (0, t.jsx)(n, {
+              return (0, t.jsx)(c, {
                 text: a,
                 items: s,
                 style: i,
@@ -167,7 +167,7 @@ try {
                 children: e
               });
             case "carousel-panorama":
-              return (0, t.jsx)(n, {
+              return (0, t.jsx)(c, {
                 text: a,
                 items: s,
                 style: i,

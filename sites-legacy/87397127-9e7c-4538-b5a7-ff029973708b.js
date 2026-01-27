@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "87397127-9e7c-4538-b5a7-ff029973708b", o._sentryDebugIdIdentifier = "sentry-dbid-87397127-9e7c-4538-b5a7-ff029973708b")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "87397127-9e7c-4538-b5a7-ff029973708b", o._sentryDebugIdIdentifier = "sentry-dbid-87397127-9e7c-4538-b5a7-ff029973708b")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,19 +13,19 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [7407], {
-    27407: (o, t, e) => {
-      e.r(t), e.d(t, {
+    27407: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
-        Lightbox_Reset_Zoom_Button_Label: () => s,
+        Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => b,
-        Lightbox_Zoom_Out_Button_Label: () => a,
-        Lightbox_Zoom_Out_Button__Tooltip: () => d,
+        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Tooltip: () => i,
+        Lightbox_Zoom_Out_Button_Label: () => d,
+        Lightbox_Zoom_Out_Button__Tooltip: () => s,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
         default: () => L
@@ -33,11 +33,11 @@ try {
       var _ = "{description} - Bild in Lightbox ansehen",
         n = "Schließen",
         l = "{shortcut} drücken",
-        i = "Heranzoomen",
-        b = "{shortcut} drücken",
-        a = "Herauszoomen",
-        d = "{shortcut} drücken",
-        s = "Zurücksetzen",
+        a = "Heranzoomen",
+        i = "{shortcut} drücken",
+        d = "Herauszoomen",
+        s = "{shortcut} drücken",
+        b = "Zurücksetzen",
         u = "{shortcut} drücken",
         g = "Zoomstufe",
         r = "{zoom} %",
@@ -47,11 +47,11 @@ try {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
           Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: b,
-          Lightbox_Zoom_Out_Button_Label: a,
-          Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: s,
+          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Zoom_In_Button_Tooltip: i,
+          Lightbox_Zoom_Out_Button_Label: d,
+          Lightbox_Zoom_Out_Button__Tooltip: s,
+          Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
