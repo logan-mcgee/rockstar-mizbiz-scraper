@@ -21,7 +21,7 @@ try {
       var t = i(42295),
         n = i(95966),
         s = i(66342);
-      const r = {
+      const d = {
           allCredits: "rockstargames-sites-rockstargamesf7a7c76d475bd09c20a29f84955da885",
           credit: "rockstargames-sites-rockstargamesf4e95ac7ec6e85f321acaf5c2246adf3",
           creditContent: "rockstargames-sites-rockstargamesa5ceeb31417420b65bb64ed995dc4841",
@@ -41,24 +41,24 @@ try {
           position: "rockstargames-sites-rockstargamescc36f0d36534abd657d69e9381d6de02",
           selected: "rockstargames-sites-rockstargamesb8593315bcfc0b018046dfd57cc7876a"
         },
-        d = ({
+        r = ({
           t: e,
           title: a
         }) => (0, t.jsx)("div", {
-          className: [r.hero, r.heroRdr2].join(" "),
+          className: [d.hero, d.heroRdr2].join(" "),
           "data-game": a,
           children: (0, t.jsxs)("div", {
-            className: r.heroContent,
+            className: d.heroContent,
             children: [(0, t.jsxs)("div", {
-              className: r.logos,
+              className: d.logos,
               "data-title": a,
               children: [(0, t.jsx)("div", {
-                className: r.logoLeft
+                className: d.logoLeft
               }), (0, t.jsx)("div", {
-                className: r.logoRight
+                className: d.logoRight
               })]
             }), (0, t.jsx)("p", {
-              className: r.description,
+              className: d.description,
               dangerouslySetInnerHTML: {
                 __html: e(`credits.${a}.desc`)
               },
@@ -69,13 +69,13 @@ try {
         c = ({
           children: e
         }) => (0, t.jsx)("div", {
-          className: r.header,
+          className: d.header,
           children: e
         }),
         o = ({
           data: e
         }) => e ? (0, t.jsxs)("div", {
-          className: r.creditContent,
+          className: d.creditContent,
           children: [(0, t.jsx)(c, {
             children: (0, t.jsx)("h1", {
               children: "Credits"
@@ -83,10 +83,10 @@ try {
           }), (0, t.jsx)("ul", {
             children: e?.map(e => (0, t.jsxs)("li", {
               children: [(0, t.jsx)("span", {
-                className: r.name,
+                className: d.name,
                 children: e.preferred_name
               }), (0, t.jsx)("span", {
-                className: r.position,
+                className: d.position,
                 children: `${e?.business_title?.replace('"',"").trim()}, ${e.division}`
               })]
             }, JSON.stringify(e)))
@@ -98,7 +98,7 @@ try {
           if (!e) return null;
           const a = e[0]?.static_json;
           return (0, t.jsxs)("div", {
-            className: r.originalPeople,
+            className: d.originalPeople,
             children: [(0, t.jsx)(c, {
               children: (0, t.jsx)("h2", {
                 children: "Original Game Credits"
@@ -108,7 +108,7 @@ try {
                 sections: i
               } = a.pageContent[e];
               return (0, t.jsxs)("div", {
-                className: r.creditSection,
+                className: d.creditSection,
                 children: [(0, t.jsx)("h3", {
                   children: (n = e, a.scrollerData.find(({
                     eventName: e
@@ -117,13 +117,13 @@ try {
                   content: e,
                   title: a
                 }) => (0, t.jsxs)("div", {
-                  className: r.creditSectionInner,
+                  className: d.creditSectionInner,
                   children: [(0, t.jsx)("h4", {
                     dangerouslySetInnerHTML: {
                       __html: a
                     }
                   }), (0, t.jsx)("ul", {
-                    className: r.creditContentOld,
+                    className: d.creditContentOld,
                     children: e.map(e => (0, t.jsx)("li", {
                       dangerouslySetInnerHTML: {
                         __html: e
@@ -155,9 +155,9 @@ try {
             creditsIfruit: m
           } = c;
           return (0, t.jsxs)("div", {
-            className: r.allCredits,
+            className: d.allCredits,
             "data-title": a,
-            children: [(0, t.jsx)(d, {
+            children: [(0, t.jsx)(r, {
               title: a,
               t: e
             }), (0, t.jsx)(o, {
@@ -383,19 +383,19 @@ try {
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
         var s = t[a] || new Set,
-          r = new Set,
-          d = new Set;
+          d = new Set,
+          r = new Set;
         for (s.forEach(function(e) {
-            d.add(e)
-          }); d.size > 0;) {
-          var c = d;
-          d = new Set, c.forEach(function(e) {
-            r.has(e) || (r.add(e), (t[e] || new Set).forEach(function(e) {
-              d.add(e)
+            r.add(e)
+          }); r.size > 0;) {
+          var c = r;
+          r = new Set, c.forEach(function(e) {
+            d.has(e) || (d.add(e), (t[e] || new Set).forEach(function(e) {
+              r.add(e)
             }))
           })
         }
-        return r.forEach(function(a) {
+        return d.forEach(function(a) {
           var t = n(e, a);
           t && i.definitions.push(t)
         }), i

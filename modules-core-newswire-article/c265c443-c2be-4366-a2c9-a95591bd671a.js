@@ -82,9 +82,9 @@ try {
       var o = s(31879),
         m = s.n(o),
         g = s(92440),
-        f = s(4572),
-        u = s.n(f);
-      const b = ({
+        b = s(4572),
+        u = s.n(b);
+      const f = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
@@ -128,7 +128,7 @@ try {
           className: u()("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
           id: i,
           "data-testid": "standard-group-of-items",
-          children: e.map(e => (0, t.jsx)(b, {
+          children: e.map(e => (0, t.jsx)(f, {
             impressionTracking: e?.impressionTracking,
             gtm: e?.gtm,
             children: (0, t.jsx)(p, {

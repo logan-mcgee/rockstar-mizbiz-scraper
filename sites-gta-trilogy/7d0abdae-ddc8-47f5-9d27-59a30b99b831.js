@@ -21,17 +21,17 @@ try {
       "use strict";
       r.r(t), r.d(t, {
         FormattedMessage: () => n.A,
-        POSIXLocales: () => _,
+        POSIXLocales: () => b,
         ReactIntlProviderForMocking: () => i.A,
         createDevLocaleHook: () => E,
         createIntl: () => a.E,
         defineMessages: () => o.YK,
         englishLocale: () => m,
-        getCookieValueByName: () => p,
+        getCookieValueByName: () => d,
         getLocale: () => h,
         linkWithLocale: () => P,
-        localeCookieHandler: () => d,
-        locales: () => b,
+        localeCookieHandler: () => p,
+        locales: () => _,
         onLanguageChange: () => S,
         splitLocale: () => k,
         useIntl: () => s.A,
@@ -51,15 +51,15 @@ try {
             o = r.slice(r.length - 2).join(".");
           document.cookie = `${e}=${t}; domain=${o}; path=/;`
         },
-        p = e => {
+        d = e => {
           const t = document.cookie.split("; "),
             r = `${e}=`,
             o = t.find(e => e.startsWith(r)),
             n = o?.substring(r.length, o.length);
           return n
         },
-        d = (e, t, r = !1) => {
-          const o = p(e);
+        p = (e, t, r = !1) => {
+          const o = d(e);
           return o && !r || f(e, t), [o, (n = e, e => {
             f(n, e)
           })];
@@ -158,13 +158,13 @@ try {
           store: "zh-CN"
         }],
         m = y[0],
-        _ = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        b = y,
+        b = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        _ = y,
         h = () => {
           const {
             location: e
           } = window, t = (0, u.A)(), r = (e => {
-            const t = b.map(e => e.subdomaincom),
+            const t = _.map(e => e.subdomaincom),
               r = e.pathname.substring(1).split("/"),
               o = "detect-locals" === r[0] ? 1 : 0;
             return -1 !== t.indexOf(r[o]) ? r[o] : null
@@ -174,9 +174,9 @@ try {
           })(e), n = m;
           let a = n;
           const s = `rockstarweb_lang.${t.cookieIdentifier}`,
-            i = p(s);
-          a = t.currentSite?.site === u.C.www ? b.find(e => e.subdomaincom === o) || b.find(e => e.subdomaincom === r) || n : b.find(e => e.iso === i) || n;
-          const [, c] = d(s, a.iso);
+            i = d(s);
+          a = t.currentSite?.site === u.C.www ? _.find(e => e.subdomaincom === o) || _.find(e => e.subdomaincom === r) || n : _.find(e => e.iso === i) || n;
+          const [, c] = p(s, a.iso);
           return [a, c]
         };
       var w = r(5422);
@@ -289,13 +289,13 @@ try {
               if (!u) continue;
               let f = "";
               "en" !== t.subdomaincom && i && (f = `/${t[c||"subdomaincom"]}`, "circoloco" === n && "/" === o.pathname && (f += "/"));
-              const p = o.host.split(".");
-              let d = "";
-              return "www" !== n || l?.some(e => e.test(o.pathname)) ? (d += `https://${u}`, d += s ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`, {
-                link: `${d}${f}${"/"===o.pathname?"":o.pathname}${o.search}${o.hash}`,
+              const d = o.host.split(".");
+              let p = "";
+              return "www" !== n || l?.some(e => e.test(o.pathname)) ? (p += `https://${u}`, p += s ? `.${d.at(-2)}.${d.at(-1)}` : `.${d.at(-1)}`, {
+                link: `${p}${f}${"/"===o.pathname?"":o.pathname}${o.search}${o.hash}`,
                 isExternal: !0
               }) : {
-                link: `${d}${"/"===o.pathname?"":o.pathname}${o.search}${o.hash}`,
+                link: `${p}${"/"===o.pathname?"":o.pathname}${o.search}${o.hash}`,
                 isExternal: !1
               }
             }
@@ -321,7 +321,7 @@ try {
             i = (e => {
               let t = location.pathname.replace(/^\/|\/$/g, "");
               const r = t.split("/");
-              return b.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
+              return _.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
             })(a);
           t?.({
             event: "cta_other",
@@ -474,24 +474,24 @@ try {
         __classPrivateFieldGet: () => T,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => L,
-        __createBinding: () => _,
+        __createBinding: () => b,
         __decorate: () => i,
         __disposeResources: () => U,
         __esDecorate: () => l,
-        __exportStar: () => b,
+        __exportStar: () => _,
         __extends: () => n,
         __generator: () => m,
         __importDefault: () => D,
         __importStar: () => $,
         __makeTemplateObject: () => P,
-        __metadata: () => d,
+        __metadata: () => p,
         __param: () => c,
         __propKey: () => f,
         __read: () => w,
         __rest: () => s,
         __rewriteRelativeImportExtension: () => A,
         __runInitializers: () => u,
-        __setFunctionName: () => p,
+        __setFunctionName: () => d,
         __spread: () => v,
         __spreadArray: () => O,
         __spreadArrays: () => g,
@@ -555,25 +555,25 @@ try {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var i, c = o.kind, l = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? o.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, o.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
+        for (var i, c = o.kind, l = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? o.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, o.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
           var y = {};
           for (var m in o) y[m] = "access" === m ? {} : o[m];
           for (var m in o.access) y.access[m] = o.access[m];
           y.addInitializer = function(e) {
-            if (p) throw new TypeError("Cannot add initializers after decoration has completed");
+            if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(s(e || null))
           };
-          var _ = (0, r[d])("accessor" === c ? {
+          var b = (0, r[p])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[l], y);
           if ("accessor" === c) {
-            if (void 0 === _) continue;
-            if (null === _ || "object" != typeof _) throw new TypeError("Object expected");
-            (i = s(_.get)) && (f.get = i), (i = s(_.set)) && (f.set = i), (i = s(_.init)) && n.unshift(i)
-          } else(i = s(_)) && ("field" === c ? n.unshift(i) : f[l] = i)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (i = s(b.get)) && (f.get = i), (i = s(b.set)) && (f.set = i), (i = s(b.init)) && n.unshift(i)
+          } else(i = s(b)) && ("field" === c ? n.unshift(i) : f[l] = i)
         }
-        u && Object.defineProperty(u, o.name, f), p = !0
+        u && Object.defineProperty(u, o.name, f), d = !0
       }
 
       function u(e, t, r) {
@@ -585,14 +585,14 @@ try {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
-      function p(e, t, r) {
+      function d(e, t, r) {
         return "symbol" == typeof t && (t = t.description ? "[".concat(t.description, "]") : ""), Object.defineProperty(e, "name", {
           configurable: !0,
           value: r ? "".concat(r, " ", t) : t
         })
       }
 
-      function d(e, t) {
+      function p(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
@@ -696,7 +696,7 @@ try {
           }
         }
       }
-      var _ = Object.create ? function(e, t, r, o) {
+      var b = Object.create ? function(e, t, r, o) {
         void 0 === o && (o = r);
         var n = Object.getOwnPropertyDescriptor(t, r);
         n && !("get" in n ? !t.__esModule : n.writable || n.configurable) || (n = {
@@ -709,8 +709,8 @@ try {
         void 0 === o && (o = r), e[o] = t[r]
       };
 
-      function b(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || _(t, e, r)
+      function _(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function h(e) {
@@ -883,7 +883,7 @@ try {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && _(t, e, r[o]);
+          for (var r = I(e), o = 0; o < r.length; o++) "default" !== r[o] && b(t, e, r[o]);
         return S(t, e), t
       }
 
@@ -981,12 +981,12 @@ try {
         __esDecorate: l,
         __runInitializers: u,
         __propKey: f,
-        __setFunctionName: p,
-        __metadata: d,
+        __setFunctionName: d,
+        __metadata: p,
         __awaiter: y,
         __generator: m,
-        __createBinding: _,
-        __exportStar: b,
+        __createBinding: b,
+        __exportStar: _,
         __values: h,
         __read: w,
         __spread: v,

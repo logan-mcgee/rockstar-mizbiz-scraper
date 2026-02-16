@@ -21,12 +21,12 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var o = String(e).split("."),
-              n = o[0],
-              t = !o[1],
-              d = n.slice(-1),
-              l = n.slice(-2);
-            return a ? "other" : t && 1 == d && 11 != l ? "one" : t && d >= 2 && d <= 4 && (l < 12 || l > 14) ? "few" : t && 0 == d || t && d >= 5 && d <= 9 || t && l >= 11 && l <= 14 ? "many" : "other"
+            var d = String(e).split("."),
+              o = d[0],
+              n = !d[1],
+              t = o.slice(-1),
+              l = o.slice(-2);
+            return a ? "other" : n && 1 == t && 11 != l ? "one" : n && t >= 2 && t <= 4 && (l < 12 || l > 14) ? "few" : n && 0 == t || n && t >= 5 && t <= 9 || n && l >= 11 && l <= 14 ? "many" : "other"
           }
         },
         locale: "ru"

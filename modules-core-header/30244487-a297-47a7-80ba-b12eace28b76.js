@@ -15,8 +15,8 @@ try {
   [1828], {
     39447: (e, n, t) => {
       t.r(n), t.d(n, {
-        Root: () => i,
-        Slot: () => i,
+        Root: () => d,
+        Slot: () => d,
         Slottable: () => c,
         createSlot: () => a,
         createSlottable: () => f
@@ -26,15 +26,15 @@ try {
         l = t(42295);
 
       function a(e) {
-        const n = d(e),
+        const n = i(e),
           t = r.forwardRef((e, t) => {
             const {
               children: o,
               ...a
-            } = e, i = r.Children.toArray(o), d = i.find(u);
-            if (d) {
-              const e = d.props.children,
-                o = i.map(n => n === d ? r.Children.count(e) > 1 ? r.Children.only(null) : r.isValidElement(e) ? e.props.children : null : n);
+            } = e, d = r.Children.toArray(o), i = d.find(u);
+            if (i) {
+              const e = i.props.children,
+                o = d.map(n => n === i ? r.Children.count(e) > 1 ? r.Children.only(null) : r.isValidElement(e) ? e.props.children : null : n);
               return (0, l.jsx)(n, {
                 ...a,
                 ref: t,
@@ -49,9 +49,9 @@ try {
           });
         return t.displayName = `${e}.Slot`, t
       }
-      var i = a("Slot");
+      var d = a("Slot");
 
-      function d(e) {
+      function i(e) {
         const n = r.forwardRef((e, n) => {
           const {
             children: t,

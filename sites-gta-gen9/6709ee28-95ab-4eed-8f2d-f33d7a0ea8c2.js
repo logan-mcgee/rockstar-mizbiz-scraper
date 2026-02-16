@@ -361,9 +361,9 @@ try {
         u = t(53146),
         f = t(86126),
         p = t(42295),
-        m = "Collapsible",
-        [h, b] = (0, o.A)(m),
-        [g, y] = h(m),
+        b = "Collapsible",
+        [m, h] = (0, o.A)(b),
+        [g, y] = m(b),
         v = r.forwardRef((e, n) => {
           const {
             __scopeCollapsible: t,
@@ -372,18 +372,18 @@ try {
             disabled: i,
             onOpenChange: s,
             ...d
-          } = e, [u, h] = (0, c.i)({
+          } = e, [u, m] = (0, c.i)({
             prop: o,
             defaultProp: a ?? !1,
             onChange: s,
-            caller: m
+            caller: b
           });
           return (0, p.jsx)(g, {
             scope: t,
             disabled: i,
             contentId: (0, f.B)(),
             open: u,
-            onOpenToggle: r.useCallback(() => h(e => !e), [h]),
+            onOpenToggle: r.useCallback(() => m(e => !e), [m]),
             children: (0, p.jsx)(l.sG.div, {
               "data-state": A(u),
               "data-disabled": i ? "" : void 0,
@@ -392,7 +392,7 @@ try {
             })
           })
         });
-      v.displayName = m;
+      v.displayName = b;
       var _ = "CollapsibleTrigger",
         w = r.forwardRef((e, n) => {
           const {
@@ -436,19 +436,19 @@ try {
           present: o,
           children: a,
           ...s
-        } = e, c = y(x, t), [u, f] = r.useState(o), m = r.useRef(null), h = (0, i.s)(n, m), b = r.useRef(0), g = b.current, v = r.useRef(0), _ = v.current, w = c.open || u, C = r.useRef(w), j = r.useRef(void 0);
+        } = e, c = y(x, t), [u, f] = r.useState(o), b = r.useRef(null), m = (0, i.s)(n, b), h = r.useRef(0), g = h.current, v = r.useRef(0), _ = v.current, w = c.open || u, C = r.useRef(w), j = r.useRef(void 0);
         return r.useEffect(() => {
           const e = requestAnimationFrame(() => C.current = !1);
           return () => cancelAnimationFrame(e)
         }, []), (0, d.N)(() => {
-          const e = m.current;
+          const e = b.current;
           if (e) {
             j.current = j.current || {
               transitionDuration: e.style.transitionDuration,
               animationName: e.style.animationName
             }, e.style.transitionDuration = "0s", e.style.animationName = "none";
             const n = e.getBoundingClientRect();
-            b.current = n.height, v.current = n.width, C.current || (e.style.transitionDuration = j.current.transitionDuration, e.style.animationName = j.current.animationName), f(o)
+            h.current = n.height, v.current = n.width, C.current || (e.style.transitionDuration = j.current.transitionDuration, e.style.animationName = j.current.animationName), f(o)
           }
         }, [c.open, o]), (0, p.jsx)(l.sG.div, {
           "data-state": A(c.open),
@@ -456,7 +456,7 @@ try {
           id: c.contentId,
           hidden: !w,
           ...s,
-          ref: h,
+          ref: m,
           style: {
             "--radix-collapsible-content-height": g ? `${g}px` : void 0,
             "--radix-collapsible-content-width": _ ? `${_}px` : void 0,
@@ -476,8 +476,8 @@ try {
         E = "Accordion",
         S = ["Home", "End", "ArrowDown", "ArrowUp", "ArrowLeft", "ArrowRight"],
         [O, D, T] = (0, a.N)(E),
-        [$, P] = (0, o.A)(E, [T, b]),
-        M = b(),
+        [$, P] = (0, o.A)(E, [T, h]),
+        M = h(),
         L = r.forwardRef((e, n) => {
           const {
             type: t,
@@ -557,10 +557,10 @@ try {
           dir: a,
           orientation: c = "vertical",
           ...d
-        } = e, u = r.useRef(null), f = (0, i.s)(u, n), m = D(t), h = "ltr" === (0, k.jH)(a), b = (0, s.mK)(e.onKeyDown, e => {
+        } = e, u = r.useRef(null), f = (0, i.s)(u, n), b = D(t), m = "ltr" === (0, k.jH)(a), h = (0, s.mK)(e.onKeyDown, e => {
           if (!S.includes(e.key)) return;
           const n = e.target,
-            t = m().filter(e => !e.ref.current?.disabled),
+            t = b().filter(e => !e.ref.current?.disabled),
             r = t.findIndex(e => e.ref.current === n),
             o = t.length;
           if (-1 === r) return;
@@ -581,13 +581,13 @@ try {
               a = i;
               break;
             case "ArrowRight":
-              "horizontal" === c && (h ? s() : l());
+              "horizontal" === c && (m ? s() : l());
               break;
             case "ArrowDown":
               "vertical" === c && s();
               break;
             case "ArrowLeft":
-              "horizontal" === c && (h ? l() : s());
+              "horizontal" === c && (m ? l() : s());
               break;
             case "ArrowUp":
               "vertical" === c && l()
@@ -606,7 +606,7 @@ try {
               ...d,
               "data-orientation": c,
               ref: f,
-              onKeyDown: o ? void 0 : b
+              onKeyDown: o ? void 0 : h
             })
           })
         })

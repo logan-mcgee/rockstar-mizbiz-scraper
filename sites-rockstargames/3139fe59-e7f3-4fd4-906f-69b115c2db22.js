@@ -47,7 +47,7 @@ try {
         createPath: () => r.createPath,
         createRoutesFromChildren: () => r.createRoutesFromChildren,
         createRoutesFromElements: () => r.createRoutesFromElements,
-        createSearchParams: () => d,
+        createSearchParams: () => f,
         defer: () => r.defer,
         generatePath: () => r.generatePath,
         isRouteErrorResponse: () => r.isRouteErrorResponse,
@@ -61,11 +61,11 @@ try {
         replace: () => r.replace,
         resolvePath: () => r.resolvePath,
         unstable_HistoryRouter: () => P,
-        unstable_usePrompt: () => oe,
+        unstable_usePrompt: () => ae,
         useActionData: () => r.useActionData,
         useAsyncError: () => r.useAsyncError,
         useAsyncValue: () => r.useAsyncValue,
-        useBeforeUnload: () => ae,
+        useBeforeUnload: () => oe,
         useBlocker: () => r.useBlocker,
         useFetcher: () => Z,
         useFetchers: () => $,
@@ -92,8 +92,8 @@ try {
         useSubmit: () => Q,
         useViewTransitionState: () => re
       });
-      var a = n(62229),
-        o = n(18429),
+      var o = n(62229),
+        a = n(18429),
         r = n(33213),
         i = n(17335);
 
@@ -101,7 +101,7 @@ try {
         return s = Object.assign ? Object.assign.bind() : function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = arguments[t];
-            for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+            for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
           }
           return e
         }, s.apply(this, arguments)
@@ -109,23 +109,23 @@ try {
 
       function u(e, t) {
         if (null == e) return {};
-        var n, a, o = {},
+        var n, o, a = {},
           r = Object.keys(e);
-        for (a = 0; a < r.length; a++) n = r[a], t.indexOf(n) >= 0 || (o[n] = e[n]);
-        return o
+        for (o = 0; o < r.length; o++) n = r[o], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        return a
       }
       const l = "get",
         c = "application/x-www-form-urlencoded";
 
-      function f(e) {
+      function d(e) {
         return null != e && "string" == typeof e.tagName
       }
 
-      function d(e) {
+      function f(e) {
         return void 0 === e && (e = ""), new URLSearchParams("string" == typeof e || Array.isArray(e) || e instanceof URLSearchParams ? e : Object.keys(e).reduce((t, n) => {
-          let a = e[n];
-          return t.concat(Array.isArray(a) ? a.map(e => [n, e]) : [
-            [n, a]
+          let o = e[n];
+          return t.concat(Array.isArray(o) ? o.map(e => [n, e]) : [
+            [n, o]
           ])
         }, []))
       }
@@ -190,30 +190,30 @@ try {
         if (!e) return null;
         let t = Object.entries(e),
           n = {};
-        for (let [e, a] of t)
-          if (a && "RouteErrorResponse" === a.__type) n[e] = new i.VV(a.status, a.statusText, a.data, !0 === a.internal);
-          else if (a && "Error" === a.__type) {
-          if (a.__subType) {
-            let t = window[a.__subType];
+        for (let [e, o] of t)
+          if (o && "RouteErrorResponse" === o.__type) n[e] = new i.VV(o.status, o.statusText, o.data, !0 === o.internal);
+          else if (o && "Error" === o.__type) {
+          if (o.__subType) {
+            let t = window[o.__subType];
             if ("function" == typeof t) try {
-              let o = new t(a.message);
-              o.stack = "", n[e] = o
+              let a = new t(o.message);
+              a.stack = "", n[e] = a
             } catch (e) {}
           }
           if (null == n[e]) {
-            let t = new Error(a.message);
+            let t = new Error(o.message);
             t.stack = "", n[e] = t
           }
-        } else n[e] = a;
+        } else n[e] = o;
         return n
       }
-      const E = a.createContext({
+      const E = o.createContext({
           isTransitioning: !1
         }),
-        _ = a.createContext(new Map),
-        C = a.startTransition,
-        N = o.flushSync,
-        T = a.useId;
+        _ = o.createContext(new Map),
+        C = o.startTransition,
+        N = a.flushSync,
+        T = o.useId;
 
       function A(e) {
         N ? N(e) : e()
@@ -234,29 +234,29 @@ try {
         let {
           fallbackElement: t,
           router: n,
-          future: o
-        } = e, [i, s] = a.useState(n.state), [u, l] = a.useState(), [c, f] = a.useState({
+          future: a
+        } = e, [i, s] = o.useState(n.state), [u, l] = o.useState(), [c, d] = o.useState({
           isTransitioning: !1
-        }), [d, h] = a.useState(), [m, v] = a.useState(), [p, g] = a.useState(), w = a.useRef(new Map), {
+        }), [f, h] = o.useState(), [m, v] = o.useState(), [p, g] = o.useState(), w = o.useRef(new Map), {
           v7_startTransition: y
-        } = o || {}, R = a.useCallback(e => {
+        } = a || {}, R = o.useCallback(e => {
           y ? function(e) {
             C ? C(e) : e()
           }(e) : e()
-        }, [y]), S = a.useCallback((e, t) => {
+        }, [y]), S = o.useCallback((e, t) => {
           let {
-            deletedFetchers: a,
-            flushSync: o,
+            deletedFetchers: o,
+            flushSync: a,
             viewTransitionOpts: r
           } = t;
           e.fetchers.forEach((e, t) => {
             void 0 !== e.data && w.current.set(t, e.data)
-          }), a.forEach(e => w.current.delete(e));
+          }), o.forEach(e => w.current.delete(e));
           let i = null == n.window || null == n.window.document || "function" != typeof n.window.document.startViewTransition;
           if (r && !i) {
-            if (o) {
+            if (a) {
               A(() => {
-                m && (d && d.resolve(), m.skipTransition()), f({
+                m && (f && f.resolve(), m.skipTransition()), d({
                   isTransitioning: !0,
                   flushSync: !0,
                   currentLocation: r.currentLocation,
@@ -268,133 +268,133 @@ try {
               });
               return t.finished.finally(() => {
                 A(() => {
-                  h(void 0), v(void 0), l(void 0), f({
+                  h(void 0), v(void 0), l(void 0), d({
                     isTransitioning: !1
                   })
                 })
               }), void A(() => v(t))
             }
-            m ? (d && d.resolve(), m.skipTransition(), g({
+            m ? (f && f.resolve(), m.skipTransition(), g({
               state: e,
               currentLocation: r.currentLocation,
               nextLocation: r.nextLocation
-            })) : (l(e), f({
+            })) : (l(e), d({
               isTransitioning: !0,
               flushSync: !1,
               currentLocation: r.currentLocation,
               nextLocation: r.nextLocation
             }))
-          } else o ? A(() => s(e)) : R(() => s(e))
-        }, [n.window, m, d, w, R]);
-        a.useLayoutEffect(() => n.subscribe(S), [n, S]), a.useEffect(() => {
+          } else a ? A(() => s(e)) : R(() => s(e))
+        }, [n.window, m, f, w, R]);
+        o.useLayoutEffect(() => n.subscribe(S), [n, S]), o.useEffect(() => {
           c.isTransitioning && !c.flushSync && h(new L)
-        }, [c]), a.useEffect(() => {
-          if (d && u && n.window) {
+        }, [c]), o.useEffect(() => {
+          if (f && u && n.window) {
             let e = u,
-              t = d.promise,
-              a = n.window.document.startViewTransition(async () => {
+              t = f.promise,
+              o = n.window.document.startViewTransition(async () => {
                 R(() => s(e)), await t
               });
-            a.finished.finally(() => {
-              h(void 0), v(void 0), l(void 0), f({
+            o.finished.finally(() => {
+              h(void 0), v(void 0), l(void 0), d({
                 isTransitioning: !1
               })
-            }), v(a)
+            }), v(o)
           }
-        }, [R, u, d, n.window]), a.useEffect(() => {
-          d && u && i.location.key === u.location.key && d.resolve()
-        }, [d, m, i.location, u]), a.useEffect(() => {
-          !c.isTransitioning && p && (l(p.state), f({
+        }, [R, u, f, n.window]), o.useEffect(() => {
+          f && u && i.location.key === u.location.key && f.resolve()
+        }, [f, m, i.location, u]), o.useEffect(() => {
+          !c.isTransitioning && p && (l(p.state), d({
             isTransitioning: !0,
             flushSync: !1,
             currentLocation: p.currentLocation,
             nextLocation: p.nextLocation
           }), g(void 0))
-        }, [c.isTransitioning, p]), a.useEffect(() => {}, []);
-        let b = a.useMemo(() => ({
+        }, [c.isTransitioning, p]), o.useEffect(() => {}, []);
+        let b = o.useMemo(() => ({
             createHref: n.createHref,
             encodeLocation: n.encodeLocation,
             go: e => n.navigate(e),
-            push: (e, t, a) => n.navigate(e, {
+            push: (e, t, o) => n.navigate(e, {
               state: t,
-              preventScrollReset: null == a ? void 0 : a.preventScrollReset
+              preventScrollReset: null == o ? void 0 : o.preventScrollReset
             }),
-            replace: (e, t, a) => n.navigate(e, {
+            replace: (e, t, o) => n.navigate(e, {
               replace: !0,
               state: t,
-              preventScrollReset: null == a ? void 0 : a.preventScrollReset
+              preventScrollReset: null == o ? void 0 : o.preventScrollReset
             })
           }), [n]),
           N = n.basename || "/",
-          T = a.useMemo(() => ({
+          T = o.useMemo(() => ({
             router: n,
             navigator: b,
             static: !1,
             basename: N
           }), [n, b, N]),
-          x = a.useMemo(() => ({
+          x = o.useMemo(() => ({
             v7_relativeSplatPath: n.future.v7_relativeSplatPath
           }), [n.future.v7_relativeSplatPath]);
-        return a.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(o, n.future), [o, n.future]), a.createElement(a.Fragment, null, a.createElement(r.UNSAFE_DataRouterContext.Provider, {
+        return o.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(a, n.future), [a, n.future]), o.createElement(o.Fragment, null, o.createElement(r.UNSAFE_DataRouterContext.Provider, {
           value: T
-        }, a.createElement(r.UNSAFE_DataRouterStateContext.Provider, {
+        }, o.createElement(r.UNSAFE_DataRouterStateContext.Provider, {
           value: i
-        }, a.createElement(_.Provider, {
+        }, o.createElement(_.Provider, {
           value: w.current
-        }, a.createElement(E.Provider, {
+        }, o.createElement(E.Provider, {
           value: c
-        }, a.createElement(r.Router, {
+        }, o.createElement(r.Router, {
           basename: N,
           location: i.location,
           navigationType: i.historyAction,
           navigator: b,
           future: x
-        }, i.initialized || n.future.v7_partialHydration ? a.createElement(F, {
+        }, i.initialized || n.future.v7_partialHydration ? o.createElement(F, {
           routes: n.routes,
           future: n.future,
           state: i
         }) : t))))), null)
       }
-      const F = a.memo(U);
+      const F = o.memo(U);
 
       function U(e) {
         let {
           routes: t,
           future: n,
-          state: a
+          state: o
         } = e;
-        return (0, r.UNSAFE_useRoutesImpl)(t, void 0, a, n)
+        return (0, r.UNSAFE_useRoutesImpl)(t, void 0, o, n)
       }
 
       function k(e) {
         let {
           basename: t,
           children: n,
-          future: o,
+          future: a,
           window: s
-        } = e, u = a.useRef();
+        } = e, u = o.useRef();
         null == u.current && (u.current = (0, i.zR)({
           window: s,
           v5Compat: !0
         }));
         let l = u.current,
-          [c, f] = a.useState({
+          [c, d] = o.useState({
             action: l.action,
             location: l.location
           }),
           {
-            v7_startTransition: d
-          } = o || {},
-          h = a.useCallback(e => {
-            d && C ? C(() => f(e)) : f(e)
-          }, [f, d]);
-        return a.useLayoutEffect(() => l.listen(h), [l, h]), a.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(o), [o]), a.createElement(r.Router, {
+            v7_startTransition: f
+          } = a || {},
+          h = o.useCallback(e => {
+            f && C ? C(() => d(e)) : d(e)
+          }, [d, f]);
+        return o.useLayoutEffect(() => l.listen(h), [l, h]), o.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(a), [a]), o.createElement(r.Router, {
           basename: t,
           children: n,
           location: c.location,
           navigationType: c.action,
           navigator: l,
-          future: o
+          future: a
         })
       }
 
@@ -402,31 +402,31 @@ try {
         let {
           basename: t,
           children: n,
-          future: o,
+          future: a,
           window: s
-        } = e, u = a.useRef();
+        } = e, u = o.useRef();
         null == u.current && (u.current = (0, i.TM)({
           window: s,
           v5Compat: !0
         }));
         let l = u.current,
-          [c, f] = a.useState({
+          [c, d] = o.useState({
             action: l.action,
             location: l.location
           }),
           {
-            v7_startTransition: d
-          } = o || {},
-          h = a.useCallback(e => {
-            d && C ? C(() => f(e)) : f(e)
-          }, [f, d]);
-        return a.useLayoutEffect(() => l.listen(h), [l, h]), a.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(o), [o]), a.createElement(r.Router, {
+            v7_startTransition: f
+          } = a || {},
+          h = o.useCallback(e => {
+            f && C ? C(() => d(e)) : d(e)
+          }, [d, f]);
+        return o.useLayoutEffect(() => l.listen(h), [l, h]), o.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(a), [a]), o.createElement(r.Router, {
           basename: t,
           children: n,
           location: c.location,
           navigationType: c.action,
           navigator: l,
-          future: o
+          future: a
         })
       }
 
@@ -434,34 +434,34 @@ try {
         let {
           basename: t,
           children: n,
-          future: o,
+          future: a,
           history: i
-        } = e, [s, u] = a.useState({
+        } = e, [s, u] = o.useState({
           action: i.action,
           location: i.location
         }), {
           v7_startTransition: l
-        } = o || {}, c = a.useCallback(e => {
+        } = a || {}, c = o.useCallback(e => {
           l && C ? C(() => u(e)) : u(e)
         }, [u, l]);
-        return a.useLayoutEffect(() => i.listen(c), [i, c]), a.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(o), [o]), a.createElement(r.Router, {
+        return o.useLayoutEffect(() => i.listen(c), [i, c]), o.useEffect(() => (0, r.UNSAFE_logV6DeprecationWarnings)(a), [a]), o.createElement(r.Router, {
           basename: t,
           children: n,
           location: s.location,
           navigationType: s.action,
           navigator: i,
-          future: o
+          future: a
         })
       }
       const M = "undefined" != typeof window && void 0 !== window.document && void 0 !== window.document.createElement,
         O = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,
-        V = a.forwardRef(function(e, t) {
+        V = o.forwardRef(function(e, t) {
           let n, {
-              onClick: o,
+              onClick: a,
               relative: l,
               reloadDocument: c,
-              replace: f,
-              state: d,
+              replace: d,
+              state: f,
               target: h,
               to: m,
               preventScrollReset: v,
@@ -470,7 +470,7 @@ try {
             w = u(e, p),
             {
               basename: y
-            } = a.useContext(r.UNSAFE_NavigationContext),
+            } = o.useContext(r.UNSAFE_NavigationContext),
             R = !1;
           if ("string" == typeof m && O.test(m) && (n = m, M)) try {
             let e = new URL(window.location.href),
@@ -482,39 +482,39 @@ try {
               relative: l
             }),
             b = Y(m, {
-              replace: f,
-              state: d,
+              replace: d,
+              state: f,
               target: h,
               preventScrollReset: v,
               relative: l,
               viewTransition: g
             });
-          return a.createElement("a", s({}, w, {
+          return o.createElement("a", s({}, w, {
             href: n || S,
-            onClick: R || c ? o : function(e) {
-              o && o(e), e.defaultPrevented || b(e)
+            onClick: R || c ? a : function(e) {
+              a && a(e), e.defaultPrevented || b(e)
             },
             ref: t,
             target: h
           }))
         }),
-        I = a.forwardRef(function(e, t) {
+        I = o.forwardRef(function(e, t) {
           let {
             "aria-current": n = "page",
-            caseSensitive: o = !1,
+            caseSensitive: a = !1,
             className: l = "",
             end: c = !1,
-            style: f,
-            to: d,
+            style: d,
+            to: f,
             viewTransition: h,
             children: m
-          } = e, v = u(e, g), p = (0, r.useResolvedPath)(d, {
+          } = e, v = u(e, g), p = (0, r.useResolvedPath)(f, {
             relative: v.relative
-          }), w = (0, r.useLocation)(), y = a.useContext(r.UNSAFE_DataRouterStateContext), {
+          }), w = (0, r.useLocation)(), y = o.useContext(r.UNSAFE_DataRouterStateContext), {
             navigator: R,
             basename: S
-          } = a.useContext(r.UNSAFE_NavigationContext), b = null != y && re(p) && !0 === h, E = R.encodeLocation ? R.encodeLocation(p).pathname : p.pathname, _ = w.pathname, C = y && y.navigation && y.navigation.location ? y.navigation.location.pathname : null;
-          o || (_ = _.toLowerCase(), C = C ? C.toLowerCase() : null, E = E.toLowerCase()), C && S && (C = (0, i.pb)(C, S) || C);
+          } = o.useContext(r.UNSAFE_NavigationContext), b = null != y && re(p) && !0 === h, E = R.encodeLocation ? R.encodeLocation(p).pathname : p.pathname, _ = w.pathname, C = y && y.navigation && y.navigation.location ? y.navigation.location.pathname : null;
+          a || (_ = _.toLowerCase(), C = C ? C.toLowerCase() : null, E = E.toLowerCase()), C && S && (C = (0, i.pb)(C, S) || C);
           const N = "/" !== E && E.endsWith("/") ? E.length - 1 : E.length;
           let T, A = _ === E || !c && _.startsWith(E) && "/" === _.charAt(N),
             L = null != C && (C === E || !c && C.startsWith(E) && "/" === C.charAt(E.length)),
@@ -525,33 +525,33 @@ try {
             },
             F = A ? n : void 0;
           T = "function" == typeof l ? l(x) : [l, A ? "active" : null, L ? "pending" : null, b ? "transitioning" : null].filter(Boolean).join(" ");
-          let U = "function" == typeof f ? f(x) : f;
-          return a.createElement(V, s({}, v, {
+          let U = "function" == typeof d ? d(x) : d;
+          return o.createElement(V, s({}, v, {
             "aria-current": F,
             className: T,
             ref: t,
             style: U,
-            to: d,
+            to: f,
             viewTransition: h
           }), "function" == typeof m ? m(x) : m)
         }),
-        K = a.forwardRef((e, t) => {
+        K = o.forwardRef((e, t) => {
           let {
             fetcherKey: n,
-            navigate: o,
+            navigate: a,
             reloadDocument: r,
             replace: i,
             state: c,
-            method: f = l,
-            action: d,
+            method: d = l,
+            action: f,
             onSubmit: h,
             relative: m,
             preventScrollReset: v,
             viewTransition: p
-          } = e, g = u(e, w), y = Q(), R = X(d, {
+          } = e, g = u(e, w), y = Q(), R = X(f, {
             relative: m
-          }), S = "get" === f.toLowerCase() ? "get" : "post";
-          return a.createElement("form", s({
+          }), S = "get" === d.toLowerCase() ? "get" : "post";
+          return o.createElement("form", s({
             ref: t,
             method: S,
             action: R,
@@ -559,11 +559,11 @@ try {
               if (h && h(e), e.defaultPrevented) return;
               e.preventDefault();
               let t = e.nativeEvent.submitter,
-                a = (null == t ? void 0 : t.getAttribute("formmethod")) || f;
+                o = (null == t ? void 0 : t.getAttribute("formmethod")) || d;
               y(t || e.currentTarget, {
                 fetcherKey: n,
-                method: a,
-                navigate: o,
+                method: o,
+                navigate: a,
                 replace: i,
                 state: c,
                 relative: m,
@@ -587,34 +587,34 @@ try {
       var j, B;
 
       function W(e) {
-        let t = a.useContext(r.UNSAFE_DataRouterContext);
+        let t = o.useContext(r.UNSAFE_DataRouterContext);
         return t || (0, i.Oi)(!1), t
       }
 
       function z(e) {
-        let t = a.useContext(r.UNSAFE_DataRouterStateContext);
+        let t = o.useContext(r.UNSAFE_DataRouterStateContext);
         return t || (0, i.Oi)(!1), t
       }
 
       function Y(e, t) {
         let {
           target: n,
-          replace: o,
+          replace: a,
           state: i,
           preventScrollReset: s,
           relative: u,
           viewTransition: l
-        } = void 0 === t ? {} : t, c = (0, r.useNavigate)(), f = (0, r.useLocation)(), d = (0, r.useResolvedPath)(e, {
+        } = void 0 === t ? {} : t, c = (0, r.useNavigate)(), d = (0, r.useLocation)(), f = (0, r.useResolvedPath)(e, {
           relative: u
         });
-        return a.useCallback(t => {
+        return o.useCallback(t => {
           if (function(e, t) {
               return !(0 !== e.button || t && "_self" !== t || function(e) {
                 return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
               }(e))
             }(t, n)) {
             t.preventDefault();
-            let n = void 0 !== o ? o : (0, r.createPath)(f) === (0, r.createPath)(d);
+            let n = void 0 !== a ? a : (0, r.createPath)(d) === (0, r.createPath)(f);
             c(e, {
               replace: n,
               state: i,
@@ -623,25 +623,25 @@ try {
               viewTransition: l
             })
           }
-        }, [f, c, d, o, i, n, e, s, u, l])
+        }, [d, c, f, a, i, n, e, s, u, l])
       }
 
       function J(e) {
-        let t = a.useRef(d(e)),
-          n = a.useRef(!1),
-          o = (0, r.useLocation)(),
-          i = a.useMemo(() => function(e, t) {
-            let n = d(e);
-            return t && t.forEach((e, a) => {
-              n.has(a) || t.getAll(a).forEach(e => {
-                n.append(a, e)
+        let t = o.useRef(f(e)),
+          n = o.useRef(!1),
+          a = (0, r.useLocation)(),
+          i = o.useMemo(() => function(e, t) {
+            let n = f(e);
+            return t && t.forEach((e, o) => {
+              n.has(o) || t.getAll(o).forEach(e => {
+                n.append(o, e)
               })
             }), n
-          }(o.search, n.current ? null : t.current), [o.search]),
+          }(a.search, n.current ? null : t.current), [a.search]),
           s = (0, r.useNavigate)(),
-          u = a.useCallback((e, t) => {
-            const a = d("function" == typeof e ? e(i) : e);
-            n.current = !0, s("?" + a, t)
+          u = o.useCallback((e, t) => {
+            const o = f("function" == typeof e ? e(i) : e);
+            n.current = !0, s("?" + o, t)
           }, [s, i]);
         return [i, u]
       }(function(e) {
@@ -658,9 +658,9 @@ try {
           router: e
         } = W(j.UseSubmit), {
           basename: t
-        } = a.useContext(r.UNSAFE_NavigationContext), n = (0, r.UNSAFE_useRouteId)();
-        return a.useCallback(function(a, o) {
-          void 0 === o && (o = {}),
+        } = o.useContext(r.UNSAFE_NavigationContext), n = (0, r.UNSAFE_useRouteId)();
+        return o.useCallback(function(o, a) {
+          void 0 === a && (a = {}),
             function() {
               if ("undefined" == typeof document) throw new Error("You are calling submit during the server render. Try calling submit within a `useEffect` or callback instead.")
             }();
@@ -668,22 +668,22 @@ try {
             action: r,
             method: s,
             encType: u,
-            formData: d,
+            formData: f,
             body: m
           } = function(e, t) {
-            let n, a, o, r, s;
-            if (f(u = e) && "form" === u.tagName.toLowerCase()) {
+            let n, o, a, r, s;
+            if (d(u = e) && "form" === u.tagName.toLowerCase()) {
               let s = e.getAttribute("action");
-              a = s ? (0, i.pb)(s, t) : null, n = e.getAttribute("method") || l, o = v(e.getAttribute("enctype")) || c, r = new FormData(e)
+              o = s ? (0, i.pb)(s, t) : null, n = e.getAttribute("method") || l, a = v(e.getAttribute("enctype")) || c, r = new FormData(e)
             } else if (function(e) {
-                return f(e) && "button" === e.tagName.toLowerCase()
+                return d(e) && "button" === e.tagName.toLowerCase()
               }(e) || function(e) {
-                return f(e) && "input" === e.tagName.toLowerCase()
+                return d(e) && "input" === e.tagName.toLowerCase()
               }(e) && ("submit" === e.type || "image" === e.type)) {
               let s = e.form;
               if (null == s) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
               let u = e.getAttribute("formaction") || s.getAttribute("action");
-              if (a = u ? (0, i.pb)(u, t) : null, n = e.getAttribute("formmethod") || s.getAttribute("method") || l, o = v(e.getAttribute("formenctype")) || v(s.getAttribute("enctype")) || c, r = new FormData(s, e), ! function() {
+              if (o = u ? (0, i.pb)(u, t) : null, n = e.getAttribute("formmethod") || s.getAttribute("method") || l, a = v(e.getAttribute("formenctype")) || v(s.getAttribute("enctype")) || c, r = new FormData(s, e), ! function() {
                   if (null === h) try {
                     new FormData(document.createElement("form"), 0), h = !1
                   } catch (e) {
@@ -694,47 +694,47 @@ try {
                 let {
                   name: t,
                   type: n,
-                  value: a
+                  value: o
                 } = e;
                 if ("image" === n) {
                   let e = t ? t + "." : "";
                   r.append(e + "x", "0"), r.append(e + "y", "0")
-                } else t && r.append(t, a)
+                } else t && r.append(t, o)
               }
             } else {
-              if (f(e)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
-              n = l, a = null, o = c, s = e
+              if (d(e)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
+              n = l, o = null, a = c, s = e
             }
             var u;
-            return r && "text/plain" === o && (s = r, r = void 0), {
-              action: a,
+            return r && "text/plain" === a && (s = r, r = void 0), {
+              action: o,
               method: n.toLowerCase(),
-              encType: o,
+              encType: a,
               formData: r,
               body: s
             }
-          }(a, t);
-          if (!1 === o.navigate) {
-            let t = o.fetcherKey || G();
-            e.fetch(t, n, o.action || r, {
-              preventScrollReset: o.preventScrollReset,
-              formData: d,
+          }(o, t);
+          if (!1 === a.navigate) {
+            let t = a.fetcherKey || G();
+            e.fetch(t, n, a.action || r, {
+              preventScrollReset: a.preventScrollReset,
+              formData: f,
               body: m,
-              formMethod: o.method || s,
-              formEncType: o.encType || u,
-              flushSync: o.flushSync
+              formMethod: a.method || s,
+              formEncType: a.encType || u,
+              flushSync: a.flushSync
             })
-          } else e.navigate(o.action || r, {
-            preventScrollReset: o.preventScrollReset,
-            formData: d,
+          } else e.navigate(a.action || r, {
+            preventScrollReset: a.preventScrollReset,
+            formData: f,
             body: m,
-            formMethod: o.method || s,
-            formEncType: o.encType || u,
-            replace: o.replace,
-            state: o.state,
+            formMethod: a.method || s,
+            formEncType: a.encType || u,
+            replace: a.replace,
+            state: a.state,
             fromRouteId: n,
-            flushSync: o.flushSync,
-            viewTransition: o.viewTransition
+            flushSync: a.flushSync,
+            viewTransition: a.viewTransition
           })
         }, [e, t, n])
       }
@@ -743,14 +743,14 @@ try {
         let {
           relative: n
         } = void 0 === t ? {} : t, {
-          basename: o
-        } = a.useContext(r.UNSAFE_NavigationContext), u = a.useContext(r.UNSAFE_RouteContext);
+          basename: a
+        } = o.useContext(r.UNSAFE_NavigationContext), u = o.useContext(r.UNSAFE_RouteContext);
         u || (0, i.Oi)(!1);
         let [l] = u.matches.slice(-1), c = s({}, (0, r.useResolvedPath)(e || ".", {
           relative: n
-        })), f = (0, r.useLocation)();
+        })), d = (0, r.useLocation)();
         if (null == e) {
-          c.search = f.search;
+          c.search = d.search;
           let e = new URLSearchParams(c.search),
             t = e.getAll("index");
           if (t.some(e => "" === e)) {
@@ -759,7 +759,7 @@ try {
             c.search = n ? "?" + n : ""
           }
         }
-        return e && "." !== e || !l.route.index || (c.search = c.search ? c.search.replace(/^\?/, "?index&") : "?index"), "/" !== o && (c.pathname = "/" === c.pathname ? o : (0, i.HS)([o, c.pathname])), (0, r.createPath)(c)
+        return e && "." !== e || !l.route.index || (c.search = c.search ? c.search.replace(/^\?/, "?index&") : "?index"), "/" !== a && (c.pathname = "/" === c.pathname ? a : (0, i.HS)([a, c.pathname])), (0, r.createPath)(c)
       }
 
       function Z(e) {
@@ -767,32 +767,32 @@ try {
         let {
           key: n
         } = void 0 === e ? {} : e, {
-          router: o
-        } = W(j.UseFetcher), u = z(B.UseFetcher), l = a.useContext(_), c = a.useContext(r.UNSAFE_RouteContext), f = null == (t = c.matches[c.matches.length - 1]) ? void 0 : t.route.id;
-        l || (0, i.Oi)(!1), c || (0, i.Oi)(!1), null == f && (0, i.Oi)(!1);
-        let d = T ? T() : "",
-          [h, m] = a.useState(n || d);
-        n && n !== h ? m(n) : h || m(G()), a.useEffect(() => (o.getFetcher(h), () => {
-          o.deleteFetcher(h)
-        }), [o, h]);
-        let v = a.useCallback((e, t) => {
-            f || (0, i.Oi)(!1), o.fetch(h, f, e, t)
-          }, [h, f, o]),
+          router: a
+        } = W(j.UseFetcher), u = z(B.UseFetcher), l = o.useContext(_), c = o.useContext(r.UNSAFE_RouteContext), d = null == (t = c.matches[c.matches.length - 1]) ? void 0 : t.route.id;
+        l || (0, i.Oi)(!1), c || (0, i.Oi)(!1), null == d && (0, i.Oi)(!1);
+        let f = T ? T() : "",
+          [h, m] = o.useState(n || f);
+        n && n !== h ? m(n) : h || m(G()), o.useEffect(() => (a.getFetcher(h), () => {
+          a.deleteFetcher(h)
+        }), [a, h]);
+        let v = o.useCallback((e, t) => {
+            d || (0, i.Oi)(!1), a.fetch(h, d, e, t)
+          }, [h, d, a]),
           p = Q(),
-          g = a.useCallback((e, t) => {
+          g = o.useCallback((e, t) => {
             p(e, s({}, t, {
               navigate: !1,
               fetcherKey: h
             }))
           }, [h, p]),
-          w = a.useMemo(() => a.forwardRef((e, t) => a.createElement(K, s({}, e, {
+          w = o.useMemo(() => o.forwardRef((e, t) => o.createElement(K, s({}, e, {
             navigate: !1,
             fetcherKey: h,
             ref: t
           }))), [h]),
           y = u.fetchers.get(h) || i.HW,
           R = l.get(h);
-        return a.useMemo(() => s({
+        return o.useMemo(() => s({
           Form: w,
           submit: g,
           load: v
@@ -818,21 +818,21 @@ try {
           getKey: t,
           storageKey: n
         } = void 0 === e ? {} : e, {
-          router: o
+          router: a
         } = W(j.UseScrollRestoration), {
           restoreScrollPosition: u,
           preventScrollReset: l
         } = z(B.UseScrollRestoration), {
           basename: c
-        } = a.useContext(r.UNSAFE_NavigationContext), f = (0, r.useLocation)(), d = (0, r.useMatches)(), h = (0, r.useNavigation)();
-        a.useEffect(() => (window.history.scrollRestoration = "manual", () => {
+        } = o.useContext(r.UNSAFE_NavigationContext), d = (0, r.useLocation)(), f = (0, r.useMatches)(), h = (0, r.useNavigation)();
+        o.useEffect(() => (window.history.scrollRestoration = "manual", () => {
             window.history.scrollRestoration = "auto"
           }), []),
           function(e) {
             let {
               capture: t
             } = {};
-            a.useEffect(() => {
+            o.useEffect(() => {
               let n = null != t ? {
                 capture: t
               } : void 0;
@@ -840,42 +840,42 @@ try {
                 window.removeEventListener("pagehide", e, n)
               }
             }, [e, t])
-          }(a.useCallback(() => {
+          }(o.useCallback(() => {
             if ("idle" === h.state) {
-              let e = (t ? t(f, d) : null) || f.key;
+              let e = (t ? t(d, f) : null) || d.key;
               te[e] = window.scrollY
             }
             try {
               sessionStorage.setItem(n || ee, JSON.stringify(te))
             } catch (e) {}
             window.history.scrollRestoration = "auto"
-          }, [n, t, h.state, f, d])), "undefined" != typeof document && (a.useLayoutEffect(() => {
+          }, [n, t, h.state, d, f])), "undefined" != typeof document && (o.useLayoutEffect(() => {
             try {
               let e = sessionStorage.getItem(n || ee);
               e && (te = JSON.parse(e))
             } catch (e) {}
-          }, [n]), a.useLayoutEffect(() => {
+          }, [n]), o.useLayoutEffect(() => {
             let e = t && "/" !== c ? (e, n) => t(s({}, e, {
                 pathname: (0, i.pb)(e.pathname, c) || e.pathname
               }), n) : t,
-              n = null == o ? void 0 : o.enableScrollRestoration(te, () => window.scrollY, e);
+              n = null == a ? void 0 : a.enableScrollRestoration(te, () => window.scrollY, e);
             return () => n && n()
-          }, [o, c, t]), a.useLayoutEffect(() => {
+          }, [a, c, t]), o.useLayoutEffect(() => {
             if (!1 !== u)
               if ("number" != typeof u) {
-                if (f.hash) {
-                  let e = document.getElementById(decodeURIComponent(f.hash.slice(1)));
+                if (d.hash) {
+                  let e = document.getElementById(decodeURIComponent(d.hash.slice(1)));
                   if (e) return void e.scrollIntoView()
                 }!0 !== l && window.scrollTo(0, 0)
               } else window.scrollTo(0, u)
-          }, [f, u, l]))
+          }, [d, u, l]))
       }
 
-      function ae(e, t) {
+      function oe(e, t) {
         let {
           capture: n
         } = t || {};
-        a.useEffect(() => {
+        o.useEffect(() => {
           let t = null != n ? {
             capture: n
           } : void 0;
@@ -885,30 +885,30 @@ try {
         }, [e, n])
       }
 
-      function oe(e) {
+      function ae(e) {
         let {
           when: t,
           message: n
-        } = e, o = (0, r.useBlocker)(t);
-        a.useEffect(() => {
-          "blocked" === o.state && (window.confirm(n) ? setTimeout(o.proceed, 0) : o.reset())
-        }, [o, n]), a.useEffect(() => {
-          "blocked" !== o.state || t || o.reset()
-        }, [o, t])
+        } = e, a = (0, r.useBlocker)(t);
+        o.useEffect(() => {
+          "blocked" === a.state && (window.confirm(n) ? setTimeout(a.proceed, 0) : a.reset())
+        }, [a, n]), o.useEffect(() => {
+          "blocked" !== a.state || t || a.reset()
+        }, [a, t])
       }
 
       function re(e, t) {
         void 0 === t && (t = {});
-        let n = a.useContext(E);
+        let n = o.useContext(E);
         null == n && (0, i.Oi)(!1);
         let {
-          basename: o
+          basename: a
         } = W(j.useViewTransitionState), s = (0, r.useResolvedPath)(e, {
           relative: t.relative
         });
         if (!n.isTransitioning) return !1;
-        let u = (0, i.pb)(n.currentLocation.pathname, o) || n.currentLocation.pathname,
-          l = (0, i.pb)(n.nextLocation.pathname, o) || n.nextLocation.pathname;
+        let u = (0, i.pb)(n.currentLocation.pathname, a) || n.currentLocation.pathname,
+          l = (0, i.pb)(n.nextLocation.pathname, a) || n.nextLocation.pathname;
         return null != (0, i.B6)(s.pathname, l) || null != (0, i.B6)(s.pathname, u)
       }
     }

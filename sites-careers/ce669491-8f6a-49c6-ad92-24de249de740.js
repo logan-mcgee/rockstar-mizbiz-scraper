@@ -28,10 +28,10 @@ try {
         defineMessages: () => o.YK,
         englishLocale: () => y,
         getCookieValueByName: () => p,
-        getLocale: () => b,
+        getLocale: () => h,
         linkWithLocale: () => P,
         localeCookieHandler: () => d,
-        locales: () => h,
+        locales: () => b,
         onLanguageChange: () => S,
         splitLocale: () => k,
         useIntl: () => s.A,
@@ -159,12 +159,12 @@ try {
         }],
         y = m[0],
         _ = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        h = m,
-        b = () => {
+        b = m,
+        h = () => {
           const {
             location: e
           } = window, t = (0, u.A)(), r = (e => {
-            const t = h.map(e => e.subdomaincom),
+            const t = b.map(e => e.subdomaincom),
               r = e.pathname.substring(1).split("/"),
               o = "detect-locals" === r[0] ? 1 : 0;
             return -1 !== t.indexOf(r[o]) ? r[o] : null
@@ -175,7 +175,7 @@ try {
           let a = n;
           const s = `rockstarweb_lang.${t.cookieIdentifier}`,
             i = p(s);
-          a = t.currentSite?.site === u.C.www ? h.find(e => e.subdomaincom === o) || h.find(e => e.subdomaincom === r) || n : h.find(e => e.iso === i) || n;
+          a = t.currentSite?.site === u.C.www ? b.find(e => e.subdomaincom === o) || b.find(e => e.subdomaincom === r) || n : b.find(e => e.iso === i) || n;
           const [, c] = d(s, a.iso);
           return [a, c]
         };
@@ -196,7 +196,7 @@ try {
           const a = (0, l.useMemo)(() => {
             if (t) return function(e, t) {
               return function(e, t) {
-                const r = t ?? b()[0].iso ?? v(),
+                const r = t ?? h()[0].iso ?? v(),
                   [, o] = [g(r), O(e, r)];
                 var n;
                 return {
@@ -231,7 +231,7 @@ try {
           return () => {
             const [{
               iso: t
-            }] = b(), [r, o] = k(t);
+            }] = h(), [r, o] = k(t);
             return e?.[o] ?? e.us
           }
         },
@@ -267,7 +267,7 @@ try {
           }
         },
         P = e => {
-          const [t] = b(), {
+          const [t] = h(), {
             sites: r
           } = (0, u.A)();
           let o;
@@ -313,7 +313,7 @@ try {
           parent: r = ""
         }) => {
           const o = (0, u.A)(),
-            [, n] = b(),
+            [, n] = h(),
             {
               subdomaincom: a,
               iso: s
@@ -321,7 +321,7 @@ try {
             i = (e => {
               let t = location.pathname.replace(/^\/|\/$/g, "");
               const r = t.split("/");
-              return h.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
+              return b.map(e => e.subdomaincom).includes(r[0]) && (t = r.slice(1).join("/")), o.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${t}${location.search}` : `${window.location.origin}/${e}/${t}${location.search}` : `${window.location.origin}/${t}${location.search}`
             })(a);
           t?.({
             event: "cta_other",
@@ -478,7 +478,7 @@ try {
         __decorate: () => i,
         __disposeResources: () => U,
         __esDecorate: () => l,
-        __exportStar: () => h,
+        __exportStar: () => b,
         __extends: () => n,
         __generator: () => y,
         __importDefault: () => D,
@@ -495,7 +495,7 @@ try {
         __spread: () => v,
         __spreadArray: () => O,
         __spreadArrays: () => g,
-        __values: () => b,
+        __values: () => h,
         default: () => M
       });
       var o = function(e, t) {
@@ -709,11 +709,11 @@ try {
         void 0 === o && (o = r), e[o] = t[r]
       };
 
-      function h(e, t) {
+      function b(e, t) {
         for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || _(t, e, r)
       }
 
-      function b(e) {
+      function h(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           o = 0;
@@ -838,7 +838,7 @@ try {
       function x(e) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var t, r = e[Symbol.asyncIterator];
-        return r ? r.call(e) : (e = b(e), t = {}, o("next"), o("throw"), o("return"), t[Symbol.asyncIterator] = function() {
+        return r ? r.call(e) : (e = h(e), t = {}, o("next"), o("throw"), o("return"), t[Symbol.asyncIterator] = function() {
           return this
         }, t);
 
@@ -986,8 +986,8 @@ try {
         __awaiter: m,
         __generator: y,
         __createBinding: _,
-        __exportStar: h,
-        __values: b,
+        __exportStar: b,
+        __values: h,
         __read: w,
         __spread: v,
         __spreadArrays: g,

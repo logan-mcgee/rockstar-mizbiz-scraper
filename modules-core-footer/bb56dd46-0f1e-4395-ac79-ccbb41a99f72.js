@@ -147,23 +147,23 @@ try {
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
           c = l.localeData,
-          f = l.getDefaultLocale,
-          d = i(e);
-        d.initializedRelativeTimeFormat = !0;
-        var y = (0, r.CanonicalizeLocaleList)(t),
-          b = Object.create(null),
+          d = l.getDefaultLocale,
+          f = i(e);
+        f.initializedRelativeTimeFormat = !0;
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          y = Object.create(null),
           m = (0, r.CoerceOptionsToObject)(a),
           p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        b.localeMatcher = p;
+        y.localeMatcher = p;
         var v = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
-        b.nu = v;
-        var g = (0, n.ResolveLocale)(u, y, b, s, c, f),
+        y.nu = v;
+        var g = (0, n.ResolveLocale)(u, b, y, s, c, d),
           w = g.locale,
           h = g.nu;
-        d.locale = w, d.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
         var _ = c[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(62306),
         n = a(74578),
@@ -195,26 +195,26 @@ try {
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
           c = s.fields,
-          f = s.style,
-          d = s.numeric,
-          y = s.pluralRules,
-          b = s.numberFormat,
+          d = s.style,
+          f = s.numeric,
+          b = s.pluralRules,
+          y = s.numberFormat,
           m = u;
-        "short" === f ? m = "".concat(u, "-short") : "narrow" === f && (m = "".concat(u, "-narrow")), m in c || (m = u);
+        "short" === d ? m = "".concat(u, "-short") : "narrow" === d && (m = "".concat(u, "-narrow")), m in c || (m = u);
         var p = c[m];
-        if ("auto" === d && (0, r.ToString)(t) in p) return [{
+        if ("auto" === f && (0, r.ToString)(t) in p) return [{
           type: "literal",
           value: p[(0, r.ToString)(t)]
         }];
         var v = "future";
         ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
         var g = p[v],
-          w = "function" == typeof b.formatToParts ? b.formatToParts(Math.abs(t)) : [{
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: b.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
-          h = g[y.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, u, w)
       };
       var r = a(62306),

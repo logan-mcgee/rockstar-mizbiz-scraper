@@ -13,27 +13,27 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [1773, 4154], {
-    4154: (e, n, t) => {
-      t.r(n), t.d(n, {
+    4154: (e, n, d) => {
+      d.r(n), d.d(n, {
         useGSAP: () => u
       });
-      var d = t(2229),
-        a = t(2828),
-        r = t.n(a);
-      let o = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+      var t = d(2229),
+        r = d(2828),
+        o = d.n(r);
+      let a = "undefined" != typeof document ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         l = {},
-        c = r();
+        c = o();
       const u = (e, n = f) => {
-        let t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        let d = l;
+        s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : f) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: a,
-          revertOnUpdate: r
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(c.context(() => {}, a)), y = (0, d.useRef)(e => i.current.add(null, e)), p = n && n.length && !r;
-        return p && o(() => (u.current = !0, () => i.current.revert()), f), o(() => {
-          if (e && i.current.add(e, a), !p || !u.current) return () => i.current.revert()
+          scope: r,
+          revertOnUpdate: o
+        } = d, u = (0, t.useRef)(!1), i = (0, t.useRef)(c.context(() => {}, r)), y = (0, t.useRef)(e => i.current.add(null, e)), b = n && n.length && !o;
+        return b && a(() => (u.current = !0, () => i.current.revert()), f), a(() => {
+          if (e && i.current.add(e, r), !b || !u.current) return () => i.current.revert()
         }, n), {
           context: i.current,
           contextSafe: y.current

@@ -19,13 +19,13 @@ try {
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
-        f = Symbol.for("react.provider"),
-        s = Symbol.for("react.context"),
+        s = Symbol.for("react.provider"),
+        f = Symbol.for("react.context"),
         i = Symbol.for("react.forward_ref"),
         c = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
-        p = Symbol.for("react.lazy"),
-        d = Symbol.iterator,
+        d = Symbol.for("react.lazy"),
+        p = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -69,22 +69,22 @@ try {
       function R(e, t, n) {
         var o, u = {},
           a = null,
-          f = null;
+          s = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (f = t.ref), void 0 !== t.key && (a = "" + t.key), t) k.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
-        var s = arguments.length - 2;
-        if (1 === s) u.children = n;
-        else if (1 < s) {
-          for (var i = Array(s), c = 0; c < s; c++) i[c] = arguments[c + 2];
+          for (o in void 0 !== t.ref && (s = t.ref), void 0 !== t.key && (a = "" + t.key), t) k.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
+        var f = arguments.length - 2;
+        if (1 === f) u.children = n;
+        else if (1 < f) {
+          for (var i = Array(f), c = 0; c < f; c++) i[c] = arguments[c + 2];
           u.children = i
         }
         if (e && e.defaultProps)
-          for (o in s = e.defaultProps) void 0 === u[o] && (u[o] = s[o]);
+          for (o in f = e.defaultProps) void 0 === u[o] && (u[o] = f[o]);
         return {
           $$typeof: r,
           type: e,
           key: a,
-          ref: f,
+          ref: s,
           props: u,
           _owner: S.current
         }
@@ -108,23 +108,23 @@ try {
       }
 
       function I(e, t, o, u, a) {
-        var f = typeof e;
-        "undefined" !== f && "boolean" !== f || (e = null);
-        var s = !1;
-        if (null === e) s = !0;
-        else switch (f) {
+        var s = typeof e;
+        "undefined" !== s && "boolean" !== s || (e = null);
+        var f = !1;
+        if (null === e) f = !0;
+        else switch (s) {
           case "string":
           case "number":
-            s = !0;
+            f = !0;
             break;
           case "object":
             switch (e.$$typeof) {
               case r:
               case n:
-                s = !0
+                f = !0
             }
         }
-        if (s) return a = a(s = e), e = "" === u ? "." + j(s, 0) : u, w(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", function(e) {
+        if (f) return a = a(f = e), e = "" === u ? "." + j(f, 0) : u, w(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", function(e) {
           return e
         })) : null != a && ($(a) && (a = function(e, t) {
           return {
@@ -135,17 +135,17 @@ try {
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || s && s.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
-        if (s = 0, u = "" === u ? "." : u + ":", w(e))
+        }(a, o + (!a.key || f && f.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
+        if (f = 0, u = "" === u ? "." : u + ":", w(e))
           for (var i = 0; i < e.length; i++) {
-            var c = u + j(f = e[i], i);
-            s += I(f, t, o, c, a)
+            var c = u + j(s = e[i], i);
+            f += I(s, t, o, c, a)
           } else if (c = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof c)
-            for (e = c.call(e), i = 0; !(f = e.next()).done;) s += I(f = f.value, t, o, c = u + j(f, i++), a);
-          else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
-        return s
+            for (e = c.call(e), i = 0; !(s = e.next()).done;) f += I(s = s.value, t, o, c = u + j(s, i++), a);
+          else if ("object" === s) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+        return f
       }
 
       function O(e, t, r) {
@@ -211,17 +211,17 @@ try {
         var o = b({}, e.props),
           u = e.key,
           a = e.ref,
-          f = e._owner;
+          s = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, f = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var s = e.type.defaultProps;
-          for (i in t) k.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== s ? s[i] : t[i])
+          if (void 0 !== t.ref && (a = t.ref, s = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var f = e.type.defaultProps;
+          for (i in t) k.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== f ? f[i] : t[i])
         }
         var i = arguments.length - 2;
         if (1 === i) o.children = n;
         else if (1 < i) {
-          s = Array(i);
-          for (var c = 0; c < i; c++) s[c] = arguments[c + 2];
-          o.children = s
+          f = Array(i);
+          for (var c = 0; c < i; c++) f[c] = arguments[c + 2];
+          o.children = f
         }
         return {
           $$typeof: r,
@@ -229,11 +229,11 @@ try {
           key: u,
           ref: a,
           props: o,
-          _owner: f
+          _owner: s
         }
       }, t.createContext = function(e) {
         return (e = {
-          $$typeof: s,
+          $$typeof: f,
           _currentValue: e,
           _currentValue2: e,
           _threadCount: 0,
@@ -242,7 +242,7 @@ try {
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: f,
+          $$typeof: s,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {
@@ -259,7 +259,7 @@ try {
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: p,
+          $$typeof: d,
           _payload: {
             _status: -1,
             _result: e

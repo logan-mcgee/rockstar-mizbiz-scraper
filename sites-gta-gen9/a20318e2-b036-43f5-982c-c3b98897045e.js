@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a20318e2-b036-43f5-982c-c3b98897045e", e._sentryDebugIdIdentifier = "sentry-dbid-a20318e2-b036-43f5-982c-c3b98897045e")
+    s = (new e.Error).stack;
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "a20318e2-b036-43f5-982c-c3b98897045e", e._sentryDebugIdIdentifier = "sentry-dbid-a20318e2-b036-43f5-982c-c3b98897045e")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,14 +13,14 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [8503], {
-    90884: (e, a, s) => {
-      s.r(a), s.d(a, {
+    90884: (e, s, a) => {
+      a.r(s), a.d(s, {
         default: () => x
       });
-      var t = s(42295),
-        i = s(26708),
-        l = s(10632),
-        d = s(24769);
+      var t = a(42295),
+        i = a(26708),
+        d = a(10632),
+        l = a(24769);
       const r = {
           carouselTitle: "rockstargames-sites-gta-gen9e9e0ef1bfc3699b1e50c33dd0ce8e76a",
           carouselWrapper: "rockstargames-sites-gta-gen9fabefc39343f6c494eb3d049757d89c5",
@@ -28,27 +28,27 @@ try {
         },
         n = ({
           to: e,
-          children: a
+          children: s
         }) => e ? (0, t.jsx)("a", {
           href: e,
           target: "_blank",
-          children: a
-        }) : a,
+          children: s
+        }) : s,
         c = ({
           items: e = [],
-          text: a = {},
-          style: s,
+          text: s = {},
+          style: a,
           className: c = "",
           id: o = null
         }) => e?.length ? (0, t.jsxs)("div", {
           id: o,
           "data-testid": `carousel${c&&`-${c}`}-group-of-items`,
-          children: [(0, t.jsx)(d.A, {
-            style: s,
+          children: [(0, t.jsx)(l.A, {
+            style: a,
             className: [c, r.carouselWrapper].join(" "),
             children: e.map(e => (0, t.jsxs)("div", {
               id: e?.id ?? null,
-              children: [(0, t.jsx)(l.A, {
+              children: [(0, t.jsx)(d.A, {
                 image: e?.image,
                 badge: e?.badge ?? e?.image?.badge,
                 badgeType: "badge3",
@@ -71,44 +71,44 @@ try {
                 }
               })]
             }, e?.key ?? e?.title))
-          }), a?.title || a?.description ? (0, t.jsx)("div", {
+          }), s?.title || s?.description ? (0, t.jsx)("div", {
             className: r.padding,
-            style: a?.style ?? {},
+            style: s?.style ?? {},
             children: (0, t.jsx)(i.A, {
-              item: a
+              item: s
             })
           }) : ""]
         }) : null;
-      var o = s(31879),
-        g = s.n(o),
-        m = s(92440),
-        f = s(4572),
-        b = s.n(f);
+      var o = a(31879),
+        g = a.n(o),
+        m = a(92440),
+        b = a(4572),
+        f = a.n(b);
       const p = ({
           impressionTracking: e,
-          gtm: a = {},
-          children: s
+          gtm: s = {},
+          children: a
         }) => e?.shouldTrack ? (0, t.jsx)(m.InViewTracker, {
           threshold: e?.threshold,
-          gtm: a,
-          children: s
-        }) : s,
+          gtm: s,
+          children: a
+        }) : a,
         u = ({
           to: e,
-          children: a
+          children: s
         }) => e ? (0, t.jsx)("a", {
           href: e,
           target: "_blank",
           rel: "noreferrer",
-          children: a
-        }) : a,
+          children: s
+        }) : s,
         y = ({
           item: e
         }) => e?.videoId ? (0, t.jsx)(g(), {
           context: "site",
           autoplay: !1,
           id: e.videoId
-        }) : (0, t.jsx)(l.A, {
+        }) : (0, t.jsx)(d.A, {
           image: e?.image,
           badge: e?.badge ?? e?.image?.badge,
           badgeType: "badge3",
@@ -120,13 +120,13 @@ try {
         }),
         h = ({
           items: e,
-          style: a = {},
-          className: s = "",
-          id: l = null
+          style: s = {},
+          className: a = "",
+          id: d = null
         }) => (0, t.jsx)("div", {
-          style: a,
-          className: b()("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
-          id: l,
+          style: s,
+          className: f()("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", a),
+          id: d,
           "data-testid": "standard-group-of-items",
           children: e.map(e => (0, t.jsx)(p, {
             impressionTracking: e?.impressionTracking,
@@ -134,7 +134,7 @@ try {
             children: (0, t.jsx)(u, {
               to: e?.to,
               children: (0, t.jsxs)("div", {
-                className: b()("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                className: f()("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                 style: e?.style ?? {},
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(y, {
@@ -149,37 +149,37 @@ try {
         }),
         x = ({
           children: e = null,
-          text: a = {},
-          items: s = [],
+          text: s = {},
+          items: a = [],
           renderTemplate: i = "",
-          style: l = {},
-          id: d = null,
+          style: d = {},
+          id: l = null,
           ...r
         }) => {
-          if (!s.length) return null;
+          if (!a.length) return null;
           switch (i) {
             case "carousel":
               return (0, t.jsx)(c, {
-                text: a,
-                items: s,
-                style: l,
-                id: d,
+                text: s,
+                items: a,
+                style: d,
+                id: l,
                 children: e
               });
             case "carousel-panorama":
               return (0, t.jsx)(c, {
-                text: a,
-                items: s,
-                style: l,
+                text: s,
+                items: a,
+                style: d,
                 className: "panorama",
-                id: d,
+                id: l,
                 children: e
               });
             default:
               return (0, t.jsx)(h, {
-                items: s,
-                style: l,
-                id: d,
+                items: a,
+                style: d,
+                id: l,
                 ...r,
                 children: e
               })

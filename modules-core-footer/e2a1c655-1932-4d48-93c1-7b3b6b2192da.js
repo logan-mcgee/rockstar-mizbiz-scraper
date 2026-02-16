@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "e2a1c655-1932-4d48-93c1-7b3b6b2192da", o._sentryDebugIdIdentifier = "sentry-dbid-e2a1c655-1932-4d48-93c1-7b3b6b2192da")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "e2a1c655-1932-4d48-93c1-7b3b6b2192da", o._sentryDebugIdIdentifier = "sentry-dbid-e2a1c655-1932-4d48-93c1-7b3b6b2192da")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,16 +13,16 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [9760], {
-    9760: (o, e, t) => {
-      t.r(e), t.d(e, {
+    9760: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => n,
         Lightbox_Download_Button_Tooltip: () => i,
-        Lightbox_Open_Button_Label: () => a,
-        Lightbox_Reset_Zoom_Button_Label: () => d,
-        Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => b,
+        Lightbox_Open_Button_Label: () => d,
+        Lightbox_Reset_Zoom_Button_Label: () => a,
+        Lightbox_Reset_Zoom_Button_Tooltip: () => b,
+        Lightbox_Zoom_In_Button_Label: () => s,
         Lightbox_Zoom_In_Button_Tooltip: () => u,
         Lightbox_Zoom_Out_Button_Label: () => g,
         Lightbox_Zoom_Out_Button__Tooltip: () => r,
@@ -34,10 +34,10 @@ try {
         l = "Press {shortcut}",
         n = "Download",
         i = "Download",
-        a = "{description} - View image in lightbox",
-        d = "Reset",
-        s = "Press {shortcut}",
-        b = "Zoom in",
+        d = "{description} - View image in lightbox",
+        a = "Reset",
+        b = "Press {shortcut}",
+        s = "Zoom in",
         u = "Press {shortcut}",
         g = "Zoom out",
         r = "Press {shortcut}",
@@ -48,10 +48,10 @@ try {
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Download_Button_Label: n,
           Lightbox_Download_Button_Tooltip: i,
-          Lightbox_Open_Button_Label: a,
-          Lightbox_Reset_Zoom_Button_Label: d,
-          Lightbox_Reset_Zoom_Button_Tooltip: s,
-          Lightbox_Zoom_In_Button_Label: b,
+          Lightbox_Open_Button_Label: d,
+          Lightbox_Reset_Zoom_Button_Label: a,
+          Lightbox_Reset_Zoom_Button_Tooltip: b,
+          Lightbox_Zoom_In_Button_Label: s,
           Lightbox_Zoom_In_Button_Tooltip: u,
           Lightbox_Zoom_Out_Button_Label: g,
           Lightbox_Zoom_Out_Button__Tooltip: r,

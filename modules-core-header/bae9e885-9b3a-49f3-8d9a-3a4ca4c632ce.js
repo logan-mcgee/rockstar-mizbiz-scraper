@@ -66,8 +66,8 @@ try {
         i = t(9872),
         l = t(42295),
         c = t(71127),
-        u = t(79867);
-      const d = (e, o) => {
+        d = t(79867);
+      const u = (e, o) => {
           if (!e || !o) return void console.log(`Couldn't set cookie (${e}) to value (${o})`);
           const t = window.location.hostname.split("."),
             s = t.slice(t.length - 2).join(".");
@@ -82,8 +82,8 @@ try {
         },
         p = (e, o, t = !1) => {
           const s = m(e);
-          return s && !t || d(e, o), [s, (n = e, e => {
-            d(n, e)
+          return s && !t || u(e, o), [s, (n = e, e => {
+            u(n, e)
           })];
           var n
         },
@@ -185,7 +185,7 @@ try {
         g = () => {
           const {
             location: e
-          } = window, o = (0, u.A)(), t = (e => {
+          } = window, o = (0, d.A)(), t = (e => {
             const o = w.map(e => e.subdomaincom),
               t = e.pathname.substring(1).split("/"),
               s = "detect-locals" === t[0] ? 1 : 0;
@@ -197,7 +197,7 @@ try {
           let r = n;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = m(a);
-          r = o.currentSite?.site === u.C.www ? w.find(e => e.subdomaincom === s) || w.find(e => e.subdomaincom === t) || n : w.find(e => e.iso === i) || n;
+          r = o.currentSite?.site === d.C.www ? w.find(e => e.subdomaincom === s) || w.find(e => e.subdomaincom === t) || n : w.find(e => e.iso === i) || n;
           const [, l] = p(a, r.iso);
           return [r, l]
         };
@@ -291,7 +291,7 @@ try {
         j = e => {
           const [o] = g(), {
             sites: t
-          } = (0, u.A)();
+          } = (0, d.A)();
           let s;
           try {
             s = new URL(e)
@@ -307,14 +307,14 @@ try {
                 externalPaths: c
               }] of Object.entries(O)) {
               if (!r.test(e.toLowerCase())) continue;
-              const u = t[n];
-              if (!u) continue;
-              let d = "";
-              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === s.pathname && (d += "/"));
+              const d = t[n];
+              if (!d) continue;
+              let u = "";
+              "en" !== o.subdomaincom && i && (u = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === s.pathname && (u += "/"));
               const m = s.host.split(".");
               let p = "";
-              return "www" !== n || c?.some(e => e.test(s.pathname)) ? (p += `https://${u}`, p += a ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
-                link: `${p}${d}${"/"===s.pathname?"":s.pathname}${s.search}${s.hash}`,
+              return "www" !== n || c?.some(e => e.test(s.pathname)) ? (p += `https://${d}`, p += a ? `.${m.at(-2)}.${m.at(-1)}` : `.${m.at(-1)}`, {
+                link: `${p}${u}${"/"===s.pathname?"":s.pathname}${s.search}${s.hash}`,
                 isExternal: !0
               }) : {
                 link: `${p}${"/"===s.pathname?"":s.pathname}${s.search}${s.hash}`,
@@ -334,7 +334,7 @@ try {
           track: o,
           parent: t = ""
         }) => {
-          const s = (0, u.A)(),
+          const s = (0, d.A)(),
             [, n] = g(),
             {
               subdomaincom: r,
@@ -343,7 +343,7 @@ try {
             i = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const t = o.split("/");
-              return w.map(e => e.subdomaincom).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
+              return w.map(e => e.subdomaincom).includes(t[0]) && (o = t.slice(1).join("/")), s.currentSite?.site === d.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
             })(r);
           o?.({
             event: "cta_other",

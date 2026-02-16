@@ -19,7 +19,7 @@ try {
         Manager: () => a,
         Popper: () => E,
         Reference: () => k,
-        usePopper: () => b
+        usePopper: () => g
       });
       var n = r(2229),
         o = n.createContext(),
@@ -70,15 +70,15 @@ try {
         p = r(9005),
         y = r(5098),
         m = r.n(y),
-        g = [],
-        b = function(e, t, r) {
+        b = [],
+        g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
             u = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || g
+              modifiers: r.modifiers || b
             },
             a = n.useState({
               styles: {
@@ -129,23 +129,23 @@ try {
               };
               return m()(o.current, e) ? o.current || e : (o.current = e, e)
             }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, s]),
-            b = n.useRef();
+            g = n.useRef();
           return l(function() {
-            b.current && b.current.setOptions(y)
+            g.current && g.current.setOptions(y)
           }, [y]), l(function() {
             if (null != e && null != t) {
               var n = (r.createPopper || p.createPopper)(e, t, y);
-              return b.current = n,
+              return g.current = n,
                 function() {
-                  n.destroy(), b.current = null
+                  n.destroy(), g.current = null
                 }
             }
           }, [e, t, r.createPopper]), {
-            state: b.current ? b.current.state : null,
+            state: g.current ? g.current.state : null,
             styles: f.styles,
             attributes: f.attributes,
-            update: b.current ? b.current.update : null,
-            forceUpdate: b.current ? b.current.forceUpdate : null
+            update: g.current ? g.current.update : null,
+            forceUpdate: g.current ? g.current.forceUpdate : null
           }
         },
         v = function() {},
@@ -166,9 +166,9 @@ try {
           p = e.innerRef,
           y = e.children,
           m = n.useContext(o),
-          g = n.useState(null),
-          E = g[0],
-          _ = g[1],
+          b = n.useState(null),
+          E = b[0],
+          _ = b[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -189,7 +189,7 @@ try {
               }])
             }
           }, [r, a, d, c, k]),
-          P = b(l || m, E, O),
+          P = g(l || m, E, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,

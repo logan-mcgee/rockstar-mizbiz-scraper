@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "68058923-f78d-4748-b546-17d890f1b5be", e._sentryDebugIdIdentifier = "sentry-dbid-68058923-f78d-4748-b546-17d890f1b5be")
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "68058923-f78d-4748-b546-17d890f1b5be", e._sentryDebugIdIdentifier = "sentry-dbid-68058923-f78d-4748-b546-17d890f1b5be")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,64 +13,64 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [2442], {
-    63155: (e, a, d) => {
-      d.d(a, {
+    63155: (e, d, a) => {
+      a.d(d, {
         N: () => t
       });
-      var o = d(71127),
+      var o = a(71127),
         t = globalThis?.document ? o.useLayoutEffect : () => {}
     },
-    78004: (e, a, d) => {
-      d.d(a, {
+    78004: (e, d, a) => {
+      a.d(d, {
         hO: () => r,
         sG: () => l
       });
-      var o = d(71127),
-        t = d(18429),
-        n = d(21222),
-        s = d(42295),
-        l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, a) => {
-          const d = (0, n.createSlot)(`Primitive.${a}`),
+      var o = a(71127),
+        t = a(18429),
+        n = a(21222),
+        s = a(42295),
+        l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, d) => {
+          const a = (0, n.createSlot)(`Primitive.${d}`),
             t = o.forwardRef((e, o) => {
               const {
                 asChild: t,
                 ...n
-              } = e, l = t ? d : a;
+              } = e, l = t ? a : d;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(l, {
                 ...n,
                 ref: o
               })
             });
-          return t.displayName = `Primitive.${a}`, {
+          return t.displayName = `Primitive.${d}`, {
             ...e,
-            [a]: t
+            [d]: t
           }
         }, {});
 
-      function r(e, a) {
-        e && t.flushSync(() => e.dispatchEvent(a))
+      function r(e, d) {
+        e && t.flushSync(() => e.dispatchEvent(d))
       }
     },
-    80061: (e, a, d) => {
-      d.r(a), d.d(a, {
+    80061: (e, d, a) => {
+      a.r(d), a.d(d, {
         Portal: () => r,
         Root: () => f
       });
-      var o = d(71127),
-        t = d(18429),
-        n = d(78004),
-        s = d(63155),
-        l = d(42295),
-        r = o.forwardRef((e, a) => {
+      var o = a(71127),
+        t = a(18429),
+        n = a(78004),
+        s = a(63155),
+        l = a(42295),
+        r = o.forwardRef((e, d) => {
           const {
-            container: d,
+            container: a,
             ...r
           } = e, [f, i] = o.useState(!1);
           (0, s.N)(() => i(!0), []);
-          const u = d || f && globalThis?.document?.body;
+          const u = a || f && globalThis?.document?.body;
           return u ? t.createPortal((0, l.jsx)(n.sG.div, {
             ...r,
-            ref: a
+            ref: d
           }), u) : null
         });
       r.displayName = "Portal";

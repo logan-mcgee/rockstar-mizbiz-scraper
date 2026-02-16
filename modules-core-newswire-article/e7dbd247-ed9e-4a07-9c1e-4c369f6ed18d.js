@@ -74,22 +74,22 @@ try {
         }
       }();
       var a, u = [],
-        f = !1,
-        l = -1;
+        l = !1,
+        d = -1;
 
-      function c() {
-        f && a && (f = !1, a.length ? u = a.concat(u) : l = -1, u.length && d())
+      function f() {
+        l && a && (l = !1, a.length ? u = a.concat(u) : d = -1, u.length && c())
       }
 
-      function d() {
-        if (!f) {
-          var e = s(c);
-          f = !0;
+      function c() {
+        if (!l) {
+          var e = s(f);
+          l = !0;
           for (var t = u.length; t;) {
-            for (a = u, u = []; ++l < t;) a && a[l].run();
-            l = -1, t = u.length
+            for (a = u, u = []; ++d < t;) a && a[d].run();
+            d = -1, t = u.length
           }
-          a = null, f = !1,
+          a = null, l = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
               if ((r === i || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
@@ -115,7 +115,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        u.push(new y(e, t)), 1 !== u.length || f || s(d)
+        u.push(new y(e, t)), 1 !== u.length || l || s(c)
       }, y.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = p, n.addListener = p, n.once = p, n.off = p, n.removeListener = p, n.removeAllListeners = p, n.emit = p, n.prependListener = p, n.prependOnceListener = p, n.listeners = function(e) {
@@ -144,23 +144,23 @@ try {
           __source: !0
         };
 
-      function f(e, t, r) {
+      function l(e, t, r) {
         var n, i = {},
-          f = null,
-          l = null;
-        for (n in void 0 !== r && (f = "" + r), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (l = t.ref), t) s.call(t, n) && !u.hasOwnProperty(n) && (i[n] = t[n]);
+          l = null,
+          d = null;
+        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, n) && !u.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
           $$typeof: o,
           type: e,
-          key: f,
-          ref: l,
+          key: l,
+          ref: d,
           props: i,
           _owner: a.current
         }
       }
-      t.Fragment = i, t.jsx = f, t.jsxs = f
+      t.Fragment = i, t.jsx = l, t.jsxs = l
     }
   }
 ]);

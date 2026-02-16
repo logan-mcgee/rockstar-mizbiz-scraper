@@ -21,10 +21,10 @@ try {
 
       function o() {}
       o.resetWarningCache = s, e.exports = function() {
-        function e(e, a, t, s, o, r) {
-          if (r !== n) {
-            var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw d.name = "Invariant Violation", d
+        function e(e, a, t, s, o, d) {
+          if (d !== n) {
+            var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw r.name = "Invariant Violation", r
           }
         }
 

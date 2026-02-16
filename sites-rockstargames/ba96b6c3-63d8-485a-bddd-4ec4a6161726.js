@@ -347,8 +347,8 @@ try {
         k = i(16598),
         u = i.n(k),
         p = i(96316),
-        f = i(49896),
-        y = (i(89091), i(61989)),
+        y = i(49896),
+        f = (i(89091), i(61989)),
         x = i(45184);
       const g = (0, d.withIntl)(() => {
         const e = (0, d.useIntl)(),
@@ -403,8 +403,8 @@ try {
                 }), (0, n.jsx)("div", {
                   className: "_1ggpvlp5",
                   style: {
-                    "--community-guidelines-img-desktop": `url(${f.vO})`,
-                    "--community-guidelines-img-mobile": `url(${f.vE})`
+                    "--community-guidelines-img-desktop": `url(${y.vO})`,
+                    "--community-guidelines-img-mobile": `url(${y.vE})`
                   },
                   "aria-label": e.formatMessage(c.A.community_guidelines_image_alt_text)
                 }), (0, n.jsx)("div", {
@@ -418,7 +418,7 @@ try {
               }), (0, n.jsx)("div", {
                 className: "_1ggpvlp4",
                 ref: g,
-                children: N.map((e, a) => (0, n.jsx)(y.A, {
+                children: N.map((e, a) => (0, n.jsx)(f.A, {
                   cardData: e,
                   type: "icon",
                   onCardClick: () => ((e, a) => {

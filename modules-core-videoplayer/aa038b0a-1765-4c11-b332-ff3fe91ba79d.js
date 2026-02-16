@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "aa038b0a-1765-4c11-b332-ff3fe91ba79d", e._sentryDebugIdIdentifier = "sentry-dbid-aa038b0a-1765-4c11-b332-ff3fe91ba79d")
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "aa038b0a-1765-4c11-b332-ff3fe91ba79d", e._sentryDebugIdIdentifier = "sentry-dbid-aa038b0a-1765-4c11-b332-ff3fe91ba79d")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [5055], {
-    7436: (e, a, t) => {
-      var d = t(2295),
+    7436: (e, d, t) => {
+      var a = t(2295),
         o = t(5966),
         n = t(9827),
         r = t(9623),
@@ -24,10 +24,10 @@ try {
         f = t(2542);
       const u = window?.env?.graphEnv ?? "prod",
         c = (0, l.withIntl)(() => {
-          const [e, a] = (0, r.useSearchParams)(), t = "true" === e.get("autoplay"), n = e.get("id"), l = e.get("resolution") ?? "", f = e.get("locale") ?? "en_us", u = Number(e.get("start") ?? 0);
-          return n ? (0, d.jsx)(o.ResizeProvider, {
-            children: (0, d.jsx)(s.GtmProvider, {
-              children: (0, d.jsx)(i.A, {
+          const [e, d] = (0, r.useSearchParams)(), t = "true" === e.get("autoplay"), n = e.get("id"), l = e.get("resolution") ?? "", f = e.get("locale") ?? "en_us", u = Number(e.get("start") ?? 0);
+          return n ? (0, a.jsx)(o.ResizeProvider, {
+            children: (0, a.jsx)(s.GtmProvider, {
+              children: (0, a.jsx)(i.A, {
                 autoplay: t,
                 context: "embed",
                 locale: f,
@@ -35,37 +35,37 @@ try {
                 resolution: l,
                 start: u,
                 wrapper: !1,
-                videoChangeCallback: (e, t, d) => {
+                videoChangeCallback: (e, t, a) => {
                   let o = {
                     id: String(e)
                   };
                   t && (o = {
                     ...o,
                     autoplay: String(t)
-                  }), d && (o = {
+                  }), a && (o = {
                     ...o,
-                    resolution: String(d)
-                  }), a(o)
+                    resolution: String(a)
+                  }), d(o)
                 }
               })
             })
           }) : null
         }, f),
-        g = (0, o.withRockstarGraph)(() => (0, d.jsx)(r.BrowserRouter, {
-          children: (0, d.jsx)(c, {})
+        b = (0, o.withRockstarGraph)(() => (0, a.jsx)(r.BrowserRouter, {
+          children: (0, a.jsx)(c, {})
         }), {
           env: u
         }),
-        y = window?.env?.gtmId ?? null;
+        g = window?.env?.gtmId ?? null;
       (0, o.gtmInit)({
-        id: y
+        id: g
       });
-      const b = document.createElement("main");
-      document.body.appendChild(b), (0, n.H)(b).render((0, d.jsx)(g, {}))
+      const y = document.createElement("main");
+      document.body.appendChild(y), (0, n.H)(y).render((0, a.jsx)(b, {}))
     },
-    9827: (e, a, t) => {
-      var d = t(8429);
-      a.H = d.createRoot, d.hydrateRoot
+    9827: (e, d, t) => {
+      var a = t(8429);
+      d.H = a.createRoot, a.hydrateRoot
     }
   }
 ]);

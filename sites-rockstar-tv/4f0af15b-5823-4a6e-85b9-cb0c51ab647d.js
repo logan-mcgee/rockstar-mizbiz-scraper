@@ -34,14 +34,14 @@ try {
           u = n.localeData,
           s = n.getDefaultLocale,
           c = n.getInternalSlots,
-          f = (0, l.CanonicalizeLocaleList)(t),
-          d = Object.create(null),
+          d = (0, l.CanonicalizeLocaleList)(t),
+          f = Object.create(null),
           b = (0, l.CoerceOptionsToObject)(a),
           g = c(e);
         g.initializedPluralRules = !0;
         var p = (0, l.GetOption)(b, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        d.localeMatcher = p;
-        var v = (0, r.ResolveLocale)(i, f, d, o, u, s);
+        f.localeMatcher = p;
+        var v = (0, r.ResolveLocale)(i, d, f, o, u, s);
         return g.locale = v.locale, g.type = (0, l.GetOption)(b, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, l.SetNumberFormatDigitOptions)(g, b, 0, 3, "standard"), e
       };
       var l = a(2306),
@@ -68,8 +68,8 @@ try {
         var u, s, c = (0, l.ToNumber)(a).abs();
         if (r.isZero()) u = 0, s = l.ZERO;
         else {
-          var f = o.replace(/0+$/, "");
-          u = f.length, s = (0, l.ToNumber)(f)
+          var d = o.replace(/0+$/, "");
+          u = d.length, s = (0, l.ToNumber)(d)
         }
         return {
           Number: t,

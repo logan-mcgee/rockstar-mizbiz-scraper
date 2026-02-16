@@ -114,10 +114,10 @@ try {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var u = 0, s = a; u < s.length; u++) {
-              var c = s[u];
+              var d = s[u];
               n.push({
-                type: c.type,
-                value: c.value,
+                type: d.type,
+                value: d.value,
                 unit: t
               })
             }
@@ -146,23 +146,23 @@ try {
         var i = l.getInternalSlots,
           u = l.availableLocales,
           s = l.relevantExtensionKeys,
-          c = l.localeData,
-          d = l.getDefaultLocale,
+          d = l.localeData,
+          c = l.getDefaultLocale,
           f = i(e);
         f.initializedRelativeTimeFormat = !0;
-        var y = (0, r.CanonicalizeLocaleList)(t),
-          m = Object.create(null),
-          p = (0, r.CoerceOptionsToObject)(a),
-          v = (0, r.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        m.localeMatcher = v;
-        var b = (0, r.GetOption)(p, "numberingSystem", "string", void 0, void 0);
-        if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
-        m.nu = b;
-        var g = (0, n.ResolveLocale)(u, y, m, s, c, d),
+        var b = (0, r.CanonicalizeLocaleList)(t),
+          y = Object.create(null),
+          m = (0, r.CoerceOptionsToObject)(a),
+          p = (0, r.GetOption)(m, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        y.localeMatcher = p;
+        var v = (0, r.GetOption)(m, "numberingSystem", "string", void 0, void 0);
+        if (void 0 !== v && !o.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
+        y.nu = v;
+        var g = (0, n.ResolveLocale)(u, b, y, s, d, c),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
-        var _ = c[g.dataLocale];
+        f.locale = w, f.style = (0, r.GetOption)(m, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(m, "numeric", "string", ["always", "auto"], "always");
+        var _ = d[g.dataLocale];
         return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
       };
       var r = a(62306),
@@ -194,27 +194,27 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var u = (0, n.SingularRelativeTimeUnit)(a),
           s = i(e),
-          c = s.fields,
-          d = s.style,
+          d = s.fields,
+          c = s.style,
           f = s.numeric,
-          y = s.pluralRules,
-          m = s.numberFormat,
-          p = u;
-        "short" === d ? p = "".concat(u, "-short") : "narrow" === d && (p = "".concat(u, "-narrow")), p in c || (p = u);
-        var v = c[p];
-        if ("auto" === f && (0, r.ToString)(t) in v) return [{
+          b = s.pluralRules,
+          y = s.numberFormat,
+          m = u;
+        "short" === c ? m = "".concat(u, "-short") : "narrow" === c && (m = "".concat(u, "-narrow")), m in d || (m = u);
+        var p = d[m];
+        if ("auto" === f && (0, r.ToString)(t) in p) return [{
           type: "literal",
-          value: v[(0, r.ToString)(t)]
+          value: p[(0, r.ToString)(t)]
         }];
-        var b = "future";
-        ((0, r.SameValue)(t, -0) || t < 0) && (b = "past");
-        var g = v[b],
-          w = "function" == typeof m.formatToParts ? m.formatToParts(Math.abs(t)) : [{
+        var v = "future";
+        ((0, r.SameValue)(t, -0) || t < 0) && (v = "past");
+        var g = p[v],
+          w = "function" == typeof y.formatToParts ? y.formatToParts(Math.abs(t)) : [{
             type: "literal",
-            value: m.format(Math.abs(t)),
+            value: y.format(Math.abs(t)),
             unit: a
           }],
-          h = g[y.select(t)];
+          h = g[b.select(t)];
         return (0, o.MakePartsList)(h, u, w)
       };
       var r = a(62306),
