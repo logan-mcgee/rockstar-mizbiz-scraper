@@ -15,33 +15,33 @@ try {
   [1773, 4154], {
     44154: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => u
+        useGSAP: () => l
       });
       var d = t(62229),
         s = t(42828),
-        a = t.n(s);
-      let r = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
-        o = e => e && !Array.isArray(e) && "object" == typeof e,
-        f = [],
-        i = {},
-        l = a();
-      const u = (e, n = f) => {
-        let t = i;
-        o(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : o(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        r = t.n(s);
+      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        f = e => e && !Array.isArray(e) && "object" == typeof e,
+        o = [],
+        c = {},
+        i = r();
+      const l = (e, n = o) => {
+        let t = c;
+        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : o) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : o), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: s,
-          revertOnUpdate: a
-        } = t, u = (0, d.useRef)(!1), c = (0, d.useRef)(l.context(() => {}, s)), g = (0, d.useRef)(e => c.current.add(null, e)), b = n && n.length && !a;
-        return b && r(() => (u.current = !0, () => c.current.revert()), f), r(() => {
-          if (e && c.current.add(e, s), !b || !u.current) return () => c.current.revert()
+          revertOnUpdate: r
+        } = t, l = (0, d.useRef)(!1), u = (0, d.useRef)(i.context(() => {}, s)), g = (0, d.useRef)(e => u.current.add(null, e)), b = n && n.length && !r;
+        return b && a(() => (l.current = !0, () => u.current.revert()), o), a(() => {
+          if (e && u.current.add(e, s), !b || !l.current) return () => u.current.revert()
         }, n), {
-          context: c.current,
+          context: u.current,
           contextSafe: g.current
         }
       };
-      u.register = e => {
-        l = e
-      }, u.headless = !0
+      l.register = e => {
+        i = e
+      }, l.headless = !0
     }
   }
 ]);

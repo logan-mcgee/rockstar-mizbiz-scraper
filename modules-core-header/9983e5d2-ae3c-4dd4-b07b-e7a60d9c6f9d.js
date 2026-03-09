@@ -14,27 +14,27 @@ try {
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [439], {
     10439: (e, d, n) => {
-      function a(e) {
-        var d, n, o = "";
-        if ("string" == typeof e || "number" == typeof e) o += e;
+      function o(e) {
+        var d, n, t = "";
+        if ("string" == typeof e || "number" == typeof e) t += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
-            var t = e.length;
-            for (d = 0; d < t; d++) e[d] && (n = a(e[d])) && (o && (o += " "), o += n)
+            var a = e.length;
+            for (d = 0; d < a; d++) e[d] && (n = o(e[d])) && (t && (t += " "), t += n)
           } else
-            for (n in e) e[n] && (o && (o += " "), o += n);
-        return o
+            for (n in e) e[n] && (t && (t += " "), t += n);
+        return t
       }
 
-      function o() {
-        for (var e, d, n = 0, o = "", t = arguments.length; n < t; n++)(e = arguments[n]) && (d = a(e)) && (o && (o += " "), o += d);
-        return o
+      function t() {
+        for (var e, d, n = 0, t = "", a = arguments.length; n < a; n++)(e = arguments[n]) && (d = o(e)) && (t && (t += " "), t += d);
+        return t
       }
       n.r(d), n.d(d, {
-        clsx: () => o,
-        default: () => t
+        clsx: () => t,
+        default: () => a
       });
-      const t = o
+      const a = t
     }
   }
 ]);

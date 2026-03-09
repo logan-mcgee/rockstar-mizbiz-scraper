@@ -22,8 +22,8 @@ try {
         r = n(95362),
         u = n(78004),
         s = n(76286),
-        d = n(42295),
-        c = "focusScope.autoFocusOnMount",
+        c = n(42295),
+        d = "focusScope.autoFocusOnMount",
         i = "focusScope.autoFocusOnUnmount",
         a = {
           bubbles: !1,
@@ -79,8 +79,8 @@ try {
               b.add(S);
               const e = document.activeElement;
               if (!h.contains(e)) {
-                const t = new CustomEvent(c, a);
-                h.addEventListener(c, w), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(d, a);
+                h.addEventListener(d, w), h.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -93,7 +93,7 @@ try {
                 }), document.activeElement === e && v(h))
               }
               return () => {
-                h.removeEventListener(c, w), setTimeout(() => {
+                h.removeEventListener(d, w), setTimeout(() => {
                   const t = new CustomEvent(i, a);
                   h.addEventListener(i, T), h.dispatchEvent(t), t.defaultPrevented || v(e ?? document.body, {
                     select: !0
@@ -120,7 +120,7 @@ try {
               })) : o === t && e.preventDefault()
             }
           }, [n, f, S.paused]);
-          return (0, d.jsx)(u.sG.div, {
+          return (0, c.jsx)(u.sG.div, {
             tabIndex: -1,
             ...E,
             ref: N,
@@ -207,21 +207,21 @@ try {
     },
     78004: (e, t, n) => {
       n.d(t, {
-        hO: () => c,
-        sG: () => d
+        hO: () => d,
+        sG: () => c
       });
       var o = n(71127),
         r = n(18429),
         u = n(21222),
         s = n(42295),
-        d = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, t) => {
+        c = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, t) => {
           const n = (0, u.createSlot)(`Primitive.${t}`),
             r = o.forwardRef((e, o) => {
               const {
                 asChild: r,
                 ...u
-              } = e, d = r ? n : t;
-              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(d, {
+              } = e, c = r ? n : t;
+              return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, s.jsx)(c, {
                 ...u,
                 ref: o
               })
@@ -232,7 +232,7 @@ try {
           }
         }, {});
 
-      function c(e, t) {
+      function d(e, t) {
         e && r.flushSync(() => e.dispatchEvent(t))
       }
     },

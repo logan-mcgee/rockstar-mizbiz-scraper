@@ -25,8 +25,8 @@ try {
               n = a[0],
               t = !a[1],
               l = n.slice(-1),
-              o = n.slice(-2);
-            return d ? "other" : t && 1 == l && 11 != o ? "one" : t && l >= 2 && l <= 4 && (o < 12 || o > 14) ? "few" : t && 0 == l || t && l >= 5 && l <= 9 || t && o >= 11 && o <= 14 ? "many" : "other"
+              f = n.slice(-2);
+            return d ? "other" : t && 1 == l && 11 != f ? "one" : t && l >= 2 && l <= 4 && (f < 12 || f > 14) ? "few" : t && 0 == l || t && l >= 5 && l <= 9 || t && f >= 11 && f <= 14 ? "many" : "other"
           }
         },
         locale: "ru"

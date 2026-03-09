@@ -21,8 +21,8 @@ try {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var d = !String(e).split(".")[1];
-            return a ? "other" : 1 == e && d ? "one" : "other"
+            var t = !String(e).split(".")[1];
+            return a ? "other" : 1 == e && t ? "one" : "other"
           }
         },
         locale: "de"

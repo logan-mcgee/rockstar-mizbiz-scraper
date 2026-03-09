@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    d = (new e.Error).stack;
-  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "d0f5e9d9-2ed0-47e2-87fd-49bc981e606c", e._sentryDebugIdIdentifier = "sentry-dbid-d0f5e9d9-2ed0-47e2-87fd-49bc981e606c")
+    s = (new e.Error).stack;
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "d0f5e9d9-2ed0-47e2-87fd-49bc981e606c", e._sentryDebugIdIdentifier = "sentry-dbid-d0f5e9d9-2ed0-47e2-87fd-49bc981e606c")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,47 +13,47 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9831], {
-    56992: (e, d, s) => {
-      s.r(d), s.d(d, {
-        default: () => f
+    56992: (e, s, t) => {
+      t.r(s), t.d(s, {
+        default: () => r
       });
-      var t = s(42295),
-        a = s(62229),
-        o = s(9623),
-        n = s(15221),
-        l = s(31879),
-        i = s(95966),
-        r = s(87790);
-      const f = (0, i.withTranslations)(({
+      var d = t(42295),
+        a = t(62229),
+        o = t(9623),
+        n = t(15221),
+        l = t(31879),
+        i = t(95966),
+        f = t(87790);
+      const r = (0, i.withTranslations)(({
         t: e
       }) => {
-        const [d] = (0, o.useSearchParams)(), s = (0, o.useNavigate)(), {
+        const [s] = (0, o.useSearchParams)(), t = (0, o.useNavigate)(), {
           setNormalLogo: i,
-          setBreadcrumb: f,
+          setBreadcrumb: r,
           setTitle: u
-        } = (0, r.b)(), {
-          videoId: g
+        } = (0, f.b)(), {
+          videoId: c
         } = (0, o.useParams)(), {
-          video: c,
+          video: g,
           related: b
         } = (0, l.useVideoData)({
-          id: g
-        }), y = d.get("resolution") ?? "_auto";
-        return (0, a.useEffect)(() => (f([{
+          id: c
+        }), y = s.get("resolution") ?? "_auto";
+        return (0, a.useEffect)(() => (r([{
           href: "/videos",
           title: e("Videos")
         }]), i(!1), () => {
-          i(!0), f()
+          i(!0), r()
         }), []), (0, a.useEffect)(() => {
-          c && u(`${c.game.title} - ${c.title}`)
-        }, [c]), c && g ? (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(l.PlayerWithInfo, {
+          g && u(`${g.game.title} - ${g.title}`)
+        }, [g]), g && c ? (0, d.jsxs)(d.Fragment, {
+          children: [(0, d.jsx)(l.PlayerWithInfo, {
             resolution: y,
-            videoId: g,
+            videoId: c,
             videoChangeCallback: e => {
-              s(`../videos/${e}`)
+              t(`../videos/${e}`)
             }
-          }), b?.results?.length ? (0, t.jsx)(n.A, {
+          }), b?.results?.length ? (0, d.jsx)(n.A, {
             vids: b.results,
             title: e("Related Videos")
           }) : ""]

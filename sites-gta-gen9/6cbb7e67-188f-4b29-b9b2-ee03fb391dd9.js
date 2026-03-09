@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "6cbb7e67-188f-4b29-b9b2-ee03fb391dd9", e._sentryDebugIdIdentifier = "sentry-dbid-6cbb7e67-188f-4b29-b9b2-ee03fb391dd9")
+    s = (new e.Error).stack;
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "6cbb7e67-188f-4b29-b9b2-ee03fb391dd9", e._sentryDebugIdIdentifier = "sentry-dbid-6cbb7e67-188f-4b29-b9b2-ee03fb391dd9")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,11 +13,11 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [1404, 9023], {
-    42295: (e, a, s) => {
-      e.exports = s(69245)
+    42295: (e, s, a) => {
+      e.exports = a(69245)
     },
-    69245: (e, a, s) => {
-      var t = s(62229),
+    69245: (e, s, a) => {
+      var t = a(62229),
         c = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
@@ -29,13 +29,13 @@ try {
           __source: !0
         };
 
-      function g(e, a, s) {
+      function g(e, s, a) {
         var t, r = {},
           g = null,
           f = null;
-        for (t in void 0 !== s && (g = "" + s), void 0 !== a.key && (g = "" + a.key), void 0 !== a.ref && (f = a.ref), a) n.call(a, t) && !d.hasOwnProperty(t) && (r[t] = a[t]);
+        for (t in void 0 !== a && (g = "" + a), void 0 !== s.key && (g = "" + s.key), void 0 !== s.ref && (f = s.ref), s) n.call(s, t) && !d.hasOwnProperty(t) && (r[t] = s[t]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === r[t] && (r[t] = a[t]);
+          for (t in s = e.defaultProps) void 0 === r[t] && (r[t] = s[t]);
         return {
           $$typeof: c,
           type: e,
@@ -45,18 +45,18 @@ try {
           _owner: o.current
         }
       }
-      a.Fragment = r, a.jsx = g, a.jsxs = g
+      s.Fragment = r, s.jsx = g, s.jsxs = g
     },
-    89023: (e, a, s) => {
-      s.r(a), s.d(a, {
+    89023: (e, s, a) => {
+      a.r(s), a.d(s, {
         default: () => l
       });
-      var t = s(42295),
-        c = s(62229),
-        r = s(9623),
-        n = s(81788),
-        o = s(2918),
-        d = s(95966);
+      var t = a(42295),
+        c = a(62229),
+        r = a(9623),
+        n = a(81788),
+        o = a(2918),
+        d = a(95966);
       const g = (0, n.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
@@ -116,15 +116,15 @@ try {
         },
         i = ({
           mutation: e,
-          query: a,
-          type: s,
+          query: s,
+          type: a,
           t: r
         }) => {
           const n = (0, d.useQueryParams)(),
             [o, g] = (0, c.useState)({}),
             {
               data: i
-            } = (0, d.useQuery)(a, {
+            } = (0, d.useQuery)(s, {
               variables: o,
               skip: !Object.entries(o).length
             });
@@ -144,23 +144,23 @@ try {
             }), i && (0, t.jsx)(b, {
               mutation: e,
               tree: i.tree,
-              type: s,
+              type: a,
               t: r
             })]
           })
         },
         b = ({
           mutation: e,
-          tree: a,
-          type: s,
+          tree: s,
+          type: a,
           t: c
         }) => {
-          const n = a.path.map(e => 1 === a.path.length && "_root" === e.feedback_type.name ? null : (0, t.jsx)(r.NavLink, {
+          const n = s.path.map(e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, t.jsx)(r.NavLink, {
               to: `?step=${e.id_hash}`,
               className: f[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash)),
-            o = a.next.map(e => "_root" === e.feedback_type.name ? null : (0, t.jsxs)(r.NavLink, {
+            o = s.next.map(e => "_root" === e.feedback_type.name ? null : (0, t.jsxs)(r.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: f[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -172,7 +172,7 @@ try {
               }) : ""]
             }, e.id_hash));
           return (0, t.jsxs)("div", {
-            className: [f.steps, f[s]].join(" "),
+            className: [f.steps, f[a]].join(" "),
             children: [(0, t.jsx)("div", {
               className: f.stepsPrevious,
               children: n
@@ -180,7 +180,7 @@ try {
               className: f.stepsNext,
               children: o
             }), o.length ? "" : (0, t.jsx)(p, {
-              feedbackStep: a.path[a.path.length - 1].id,
+              feedbackStep: s.path[s.path.length - 1].id,
               mutation: e,
               t: c
             })]
@@ -188,8 +188,8 @@ try {
         },
         p = ({
           feedbackStep: e,
-          mutation: a,
-          t: s
+          mutation: s,
+          t: a
         }) => {
           const {
             formatMessage: r
@@ -198,46 +198,46 @@ try {
           } = (0, o.useRockstarUser)(), b = (0, c.useRef)(), [p, {
             data: l,
             error: m
-          }] = (0, d.useMutation)(a);
+          }] = (0, d.useMutation)(s);
           return i ? l?.submittal?.id ? (0, t.jsx)("div", {
             className: f.success,
             dangerouslySetInnerHTML: {
-              __html: s("feedback.enter_success")
+              __html: a("feedback.enter_success")
             }
           }) : (0, t.jsxs)("form", {
-            onSubmit: a => (a => {
-              a.preventDefault(), (() => {
-                const a = {
+            onSubmit: s => (s => {
+              s.preventDefault(), (() => {
+                const s = {
                   content: b.current.value,
                   feedback_step: e
                 };
                 p({
-                  variables: a
+                  variables: s
                 })
               })()
-            })(a),
+            })(s),
             children: [(0, t.jsx)("textarea", {
               ref: b,
               maxLength: 500,
               rows: 6,
-              placeholder: s("feedback.placeholder")
+              placeholder: a("feedback.placeholder")
             }), m ? (0, t.jsx)("div", {
               className: f.error,
               children: String(m)
             }) : "", (0, t.jsx)("button", {
               type: "submit",
-              children: s("SUBMIT")
+              children: a("SUBMIT")
             })]
           }) : r(g.gtao_feedback_login_cta_text)
         },
         l = ({
           mutation: e,
-          query: a,
-          type: s
-        }) => (0, d.withTranslations)(i, "rdo" === s ? "rdr2" : s)({
+          query: s,
+          type: a
+        }) => (0, d.withTranslations)(i, "rdo" === a ? "rdr2" : a)({
           mutation: e,
-          query: a,
-          type: s
+          query: s,
+          type: a
         })
     }
   }

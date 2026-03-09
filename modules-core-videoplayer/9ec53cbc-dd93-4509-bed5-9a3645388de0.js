@@ -40,7 +40,7 @@ try {
       function s(e, t, a) {
         var l = a.length;
         if (0 === l) return [];
-        if (2 === l) return d((0, n.getInternalSlot)(e, t, "templatePair"), {
+        if (2 === l) return c((0, n.getInternalSlot)(e, t, "templatePair"), {
           0: {
             type: "element",
             value: a[0]
@@ -53,7 +53,7 @@ try {
         for (var r = {
             type: "element",
             value: a[l - 1]
-          }, o = l - 2; o >= 0;) r = d(0 === o ? (0, n.getInternalSlot)(e, t, "templateStart") : o < l - 2 ? (0, n.getInternalSlot)(e, t, "templateMiddle") : (0, n.getInternalSlot)(e, t, "templateEnd"), {
+          }, o = l - 2; o >= 0;) r = c(0 === o ? (0, n.getInternalSlot)(e, t, "templateStart") : o < l - 2 ? (0, n.getInternalSlot)(e, t, "templateMiddle") : (0, n.getInternalSlot)(e, t, "templateEnd"), {
           0: {
             type: "element",
             value: a[o]
@@ -63,7 +63,7 @@ try {
         return r
       }
 
-      function d(e, t) {
+      function c(e, t) {
         for (var a = [], l = 0, r = (0, n.PartitionPattern)(e); l < r.length; l++) {
           var o = r[l],
             i = o.type;
@@ -88,17 +88,17 @@ try {
             i = (0, n.GetOptionsObject)(a),
             s = (0, n.GetOption)(i, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
           o.localeMatcher = s;
-          var d = e.localeData,
-            _ = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, d, e.getDefaultLocale);
+          var c = e.localeData,
+            _ = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, c, e.getDefaultLocale);
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", _.locale);
-          var c = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", c);
-          var u = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", u);
-          var f = _.dataLocale,
-            p = d[f];
-          (0, n.invariant)(!!p, "Missing locale data for ".concat(f));
-          var y = p[c][u];
+          var d = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", d);
+          var f = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", f);
+          var u = _.dataLocale,
+            p = c[u];
+          (0, n.invariant)(!!p, "Missing locale data for ".concat(u));
+          var y = p[d][f];
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {
@@ -112,8 +112,8 @@ try {
           o(this, "format");
           var a = s(e.__INTERNAL_SLOT_MAP__, this, i(t));
           if (!Array.isArray(a)) return [a];
-          for (var n = [], r = 0, d = a; r < d.length; r++) {
-            var _ = d[r];
+          for (var n = [], r = 0, c = a; r < c.length; r++) {
+            var _ = c[r];
             n.push(l.__assign({}, _))
           }
           return n

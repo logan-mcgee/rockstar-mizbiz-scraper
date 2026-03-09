@@ -18,7 +18,7 @@ try {
         GtmProvider: () => d,
         RockstarUserProvider: () => j,
         fetchUnreadNotificationCount: () => R,
-        useGtmTrack: () => f,
+        useGtmTrack: () => p,
         useRockstarUser: () => D,
         useRockstarUserState: () => T
       });
@@ -57,8 +57,8 @@ try {
           const a = ((e = !0) => {
               const [t, a] = (0, n.useState)([]), [r, u] = (0, n.useState)(null), {
                 data: d,
-                loggedIn: p
-              } = D(), f = (0, o.bn)(), m = (e, t) => {
+                loggedIn: f
+              } = D(), p = (0, o.bn)(), m = (e, t) => {
                 const r = e.length;
                 e.forEach(e => {
                   const a = t ?? {};
@@ -69,7 +69,7 @@ try {
                 }), a(e => e.slice(r))
               };
               return (0, n.useEffect)(() => {
-                if (d && null !== p) {
+                if (d && null !== f) {
                   const e = ((e, t) => {
                     const a = [],
                       r = [],
@@ -95,13 +95,13 @@ try {
                       gtao_platforms_played: r.length ? r.map(e => i[e] ?? e).join("|").toUpperCase() : void 0,
                       gta_plus_platforms: n.length ? n.map(e => i[e] ?? e).join("|").toUpperCase() : void 0,
                       gta_plus_active: n.length > 0,
-                      use_enhanced_browser_features: f,
+                      use_enhanced_browser_features: p,
                       section_layout: t ? "signed in" : "signed out"
                     }
-                  })(d, p);
+                  })(d, f);
                   t.length && e && m([...t], e), u(e)
                 } else e || t.length && m([...t])
-              }, [d, p, t, e]), {
+              }, [d, f, t, e]), {
                 track: e => (Boolean(d && r), (0, s.track)({
                   ...l(e),
                   ...r
@@ -114,10 +114,10 @@ try {
             children: t
           })
         },
-        p = {
+        f = {
           track: () => null
         },
-        f = () => (0, n.useContext)(u) ?? p,
+        p = () => (0, n.useContext)(u) ?? f,
         m = (0, s.setMakeVarItem)({
           key: "navOpenReactive",
           value: (0, s.makeVar)(null)
@@ -207,7 +207,7 @@ try {
             accountSynced: !1,
             hasGtaPlus: !1,
             gtaPlusPlatforms: []
-          }), [i] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [u, d] = (0, n.useState)(), [p, f] = (0, n.useState)(!1), m = void 0 === u, [g, h] = (0, n.useState)(1);
+          }), [i] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [u, d] = (0, n.useState)(), [f, p] = (0, n.useState)(!1), m = void 0 === u, [g, h] = (0, n.useState)(1);
           return (0, n.useEffect)(() => {
             "gtao" !== t || o?.characters?.gtao || (c(e => ({
               ...e,
@@ -230,7 +230,7 @@ try {
           }, [r]), (0, n.useEffect)(() => {
             if ("" === r) return;
             const e = !!r;
-            if (e || p || ((async () => {
+            if (e || f || ((async () => {
                 try {
                   await (async ({
                     token: e
@@ -260,7 +260,7 @@ try {
                     token: i
                   })
                 } catch (e) {}
-              })(), f(!0)), !e && p && d(!1), e) {
+              })(), p(!0)), !e && f && d(!1), e) {
               const e = (({
                 bearerToken: e
               }) => {
@@ -293,7 +293,7 @@ try {
                 ...e
               }))
             }
-          }, [r, p]), (0, n.useEffect)(() => {
+          }, [r, f]), (0, n.useEffect)(() => {
             (async () => {
               if (u && o && a && !o?.crews && o?.characters) {
                 const e = await (async ({
@@ -411,10 +411,10 @@ try {
                     gtaoCharacters: o,
                     linkedAccounts: l.linkedAccounts
                   };
-                  const p = t;
-                  let f = "",
+                  const f = t;
+                  let p = "",
                     m = "";
-                  return d?.map(e => ("xbl" === e?.onlineService ? f = e.userName : "np" === e?.onlineService && (m = e.userName), e)), o.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), o.map((e, t) => (e.platformUsername = p, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = m || p), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = f || p), e)), {
+                  return d?.map(e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (m = e.userName), e)), o.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), o.map((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = m || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e)), {
                     gtaoCharacters: o,
                     linkedAccounts: d
                   }

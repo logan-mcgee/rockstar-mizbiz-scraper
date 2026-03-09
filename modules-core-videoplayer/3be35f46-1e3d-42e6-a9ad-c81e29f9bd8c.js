@@ -20,11 +20,11 @@ try {
       var r = t(2295),
         n = t(2229),
         s = t(5413),
-        d = t(2649),
-        l = t(1915),
+        l = t(2649),
+        d = t(1915),
         o = t(3497),
-        i = t(5966),
-        c = t(2918);
+        c = t(5966),
+        i = t(2918);
       const f = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,7 +35,7 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, i.withTranslations)(({
+        g = (0, c.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
@@ -45,9 +45,9 @@ try {
         }) => {
           const {
             data: y
-          } = (0, c.useRockstarUser)(), {
+          } = (0, i.useRockstarUser)(), {
             track: b
-          } = (0, c.useGtmTrack)(), _ = (0, i.getCookieValueByName)("UAGC"), [h, v] = (0, n.useState)("1" === (w = _) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
+          } = (0, i.useGtmTrack)(), _ = (0, c.getCookieValueByName)("UAGC"), [h, v] = (0, n.useState)("1" === (w = _) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, n.useState)(), x = (0, n.createRef)(), E = (0, n.createRef)(), j = (0, n.createRef)(), {
             style: D
@@ -83,7 +83,7 @@ try {
                   r = (0, s.j)(new Date, {
                     years: 150
                   }),
-                  n = (0, d.f)(t) && (0, l.d)(t, r);
+                  n = (0, l.f)(t) && (0, d.d)(t, r);
                 if (I(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
                   b(a ? {
@@ -95,7 +95,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const r = a ? "1" : "0";
-                  (0, i.setCookieValue)("UAGC", r), v(r)
+                  (0, c.setCookieValue)("UAGC", r), v(r)
                 }
               },
               "data-testid": "agegate-form",
@@ -151,8 +151,8 @@ try {
       var r = t(2229),
         n = Symbol.for("react.element"),
         s = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
-        l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = Object.prototype.hasOwnProperty,
+        d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         o = {
           key: !0,
           ref: !0,
@@ -160,23 +160,23 @@ try {
           __source: !0
         };
 
-      function i(e, a, t) {
+      function c(e, a, t) {
         var r, s = {},
-          i = null,
-          c = null;
-        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (c = a.ref), a) d.call(a, r) && !o.hasOwnProperty(r) && (s[r] = a[r]);
+          c = null,
+          i = null;
+        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !o.hasOwnProperty(r) && (s[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === s[r] && (s[r] = a[r]);
         return {
           $$typeof: n,
           type: e,
-          key: i,
-          ref: c,
+          key: c,
+          ref: i,
           props: s,
-          _owner: l.current
+          _owner: d.current
         }
       }
-      a.Fragment = s, a.jsx = i, a.jsxs = i
+      a.Fragment = s, a.jsx = c, a.jsxs = c
     }
   }
 ]);

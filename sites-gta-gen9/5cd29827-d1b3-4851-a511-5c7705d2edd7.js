@@ -21,14 +21,14 @@ try {
             ordinal: ["many", "other"]
           },
           fn: function(e, a) {
-            var d = String(e),
-              t = d.split(/[ce]/),
-              n = t[1] || 0,
-              l = String(n ? Number(t[0]) * Math.pow(10, n) : d).split("."),
+            var t = String(e),
+              d = t.split(/[ce]/),
+              n = d[1] || 0,
+              l = String(n ? Number(d[0]) * Math.pow(10, n) : t).split("."),
               o = l[0],
               s = !l[1],
-              i = o.slice(-6);
-            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == n && 0 != o && 0 == i && s || n < 0 || n > 5 ? "many" : "other"
+              f = o.slice(-6);
+            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && s ? "one" : 0 == n && 0 != o && 0 == f && s || n < 0 || n > 5 ? "many" : "other"
           }
         },
         locale: "it"

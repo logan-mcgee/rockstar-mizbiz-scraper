@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "ffa01bcf-7a54-4a44-b5d6-edef1e9ccfd7", o._sentryDebugIdIdentifier = "sentry-dbid-ffa01bcf-7a54-4a44-b5d6-edef1e9ccfd7")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "ffa01bcf-7a54-4a44-b5d6-edef1e9ccfd7", o._sentryDebugIdIdentifier = "sentry-dbid-ffa01bcf-7a54-4a44-b5d6-edef1e9ccfd7")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9760], {
-    9760: (o, t, e) => {
-      e.r(t), e.d(t, {
+    9760: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => l,
@@ -24,8 +24,8 @@ try {
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => b,
         Lightbox_Zoom_In_Button_Tooltip: () => u,
-        Lightbox_Zoom_Out_Button_Label: () => g,
-        Lightbox_Zoom_Out_Button__Tooltip: () => f,
+        Lightbox_Zoom_Out_Button_Label: () => f,
+        Lightbox_Zoom_Out_Button__Tooltip: () => g,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => h,
         default: () => L
@@ -39,8 +39,8 @@ try {
         d = "Press {shortcut}",
         b = "Zoom in",
         u = "Press {shortcut}",
-        g = "Zoom out",
-        f = "Press {shortcut}",
+        f = "Zoom out",
+        g = "Press {shortcut}",
         r = "Zoom level",
         h = "{zoom}%",
         L = {
@@ -53,8 +53,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: d,
           Lightbox_Zoom_In_Button_Label: b,
           Lightbox_Zoom_In_Button_Tooltip: u,
-          Lightbox_Zoom_Out_Button_Label: g,
-          Lightbox_Zoom_Out_Button__Tooltip: f,
+          Lightbox_Zoom_Out_Button_Label: f,
+          Lightbox_Zoom_Out_Button__Tooltip: g,
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: h
         }

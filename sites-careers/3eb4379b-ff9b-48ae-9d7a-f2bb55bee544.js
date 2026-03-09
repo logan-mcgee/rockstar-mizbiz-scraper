@@ -15,9 +15,9 @@ try {
   [4578], {
     4578: (e, d, a) => {
       a.r(d), a.d(d, {
-        LookupSupportedLocales: () => m,
-        ResolveLocale: () => g,
-        match: () => S
+        LookupSupportedLocales: () => g,
+        ResolveLocale: () => f,
+        match: () => m
       });
       var n = a(8322),
         r = {
@@ -2439,7 +2439,7 @@ try {
         }
       }
 
-      function g(e, d, a, n, r, _) {
+      function f(e, d, a, n, r, _) {
         var i, u;
         u = "lookup" === a.localeMatcher ? function(e, d, a) {
           for (var n = {
@@ -2456,8 +2456,8 @@ try {
           extension: ""
         });
         var o, c, y = u.locale,
-          g = r[y],
-          m = {
+          f = r[y],
+          g = {
             locale: "en",
             dataLocale: y
           };
@@ -2479,8 +2479,8 @@ try {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var S = [], f = function(e) {
-            var d = null !== (i = null == g ? void 0 : g[e]) && void 0 !== i ? i : [];
+        for (var m = [], S = function(e) {
+            var d = null !== (i = null == f ? void 0 : f[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
             s(void 0 === n || "string" == typeof n, "value must be a string or undefined");
@@ -2499,9 +2499,9 @@ try {
               })
             }
             var u, o, y = a[e];
-            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && S.push(r), m[e] = n
-          }, L = 0, G = n; L < G.length; L++) f(G[L]);
-        return S.length > 0 && (y = function(e, d, a) {
+            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && m.push(r), g[e] = n
+          }, L = 0, G = n; L < G.length; L++) S(G[L]);
+        return m.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", r = 0, _ = []; r < _.length; r++) {
             n += "-".concat(_[r])
@@ -2515,10 +2515,10 @@ try {
           if ("-u" === n) return l(e);
           var y = e.indexOf("-x-");
           return l(-1 === y ? e + n : e.slice(0, y) + n + e.slice(y))
-        }(y, 0, S)), m.locale = y, m
+        }(y, 0, m)), g.locale = y, g
       }
 
-      function m(e, d) {
+      function g(e, d) {
         for (var a = [], n = 0, r = d; n < r.length; n++) {
           var _ = M(e, r[n].replace(t, ""));
           _ && a.push(_)
@@ -2526,8 +2526,8 @@ try {
         return a
       }
 
-      function S(e, d, a, n) {
-        return g(d, (r = e, Intl.getCanonicalLocales(r)), {
+      function m(e, d, a, n) {
+        return f(d, (r = e, Intl.getCanonicalLocales(r)), {
           localeMatcher: (null == n ? void 0 : n.algorithm) || "best fit"
         }, [], {}, function() {
           return a

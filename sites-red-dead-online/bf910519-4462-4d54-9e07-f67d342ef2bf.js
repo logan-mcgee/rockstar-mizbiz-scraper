@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "bf910519-4462-4d54-9e07-f67d342ef2bf", e._sentryDebugIdIdentifier = "sentry-dbid-bf910519-4462-4d54-9e07-f67d342ef2bf")
+    s = (new e.Error).stack;
+  s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "bf910519-4462-4d54-9e07-f67d342ef2bf", e._sentryDebugIdIdentifier = "sentry-dbid-bf910519-4462-4d54-9e07-f67d342ef2bf")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,16 +13,16 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [1404, 9023], {
-    89023: (e, a, s) => {
-      s.r(a), s.d(a, {
+    89023: (e, s, a) => {
+      a.r(s), a.d(s, {
         default: () => g
       });
-      var d = s(42295),
-        t = s(62229),
-        c = s(9623),
-        n = s(81788),
-        r = s(32169),
-        o = s(95966);
+      var d = a(42295),
+        t = a(62229),
+        c = a(9623),
+        n = a(81788),
+        r = a(32169),
+        o = a(95966);
       const i = (0, n.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
@@ -82,15 +82,15 @@ try {
         },
         b = ({
           mutation: e,
-          query: a,
-          type: s,
+          query: s,
+          type: a,
           t: c
         }) => {
           const n = (0, o.useQueryParams)(),
             [r, i] = (0, t.useState)({}),
             {
               data: b
-            } = (0, o.useQuery)(a, {
+            } = (0, o.useQuery)(s, {
               variables: r,
               skip: !Object.entries(r).length
             });
@@ -110,23 +110,23 @@ try {
             }), b && (0, d.jsx)(l, {
               mutation: e,
               tree: b.tree,
-              type: s,
+              type: a,
               t: c
             })]
           })
         },
         l = ({
           mutation: e,
-          tree: a,
-          type: s,
+          tree: s,
+          type: a,
           t
         }) => {
-          const n = a.path.map(e => 1 === a.path.length && "_root" === e.feedback_type.name ? null : (0, d.jsx)(c.NavLink, {
+          const n = s.path.map(e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, d.jsx)(c.NavLink, {
               to: `?step=${e.id_hash}`,
               className: f[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash)),
-            r = a.next.map(e => "_root" === e.feedback_type.name ? null : (0, d.jsxs)(c.NavLink, {
+            r = s.next.map(e => "_root" === e.feedback_type.name ? null : (0, d.jsxs)(c.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: f[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -138,7 +138,7 @@ try {
               }) : ""]
             }, e.id_hash));
           return (0, d.jsxs)("div", {
-            className: [f.steps, f[s]].join(" "),
+            className: [f.steps, f[a]].join(" "),
             children: [(0, d.jsx)("div", {
               className: f.stepsPrevious,
               children: n
@@ -146,7 +146,7 @@ try {
               className: f.stepsNext,
               children: r
             }), r.length ? "" : (0, d.jsx)(p, {
-              feedbackStep: a.path[a.path.length - 1].id,
+              feedbackStep: s.path[s.path.length - 1].id,
               mutation: e,
               t
             })]
@@ -154,8 +154,8 @@ try {
         },
         p = ({
           feedbackStep: e,
-          mutation: a,
-          t: s
+          mutation: s,
+          t: a
         }) => {
           const {
             formatMessage: c
@@ -164,46 +164,46 @@ try {
           } = (0, r.Wx)(), l = (0, t.useRef)(), [p, {
             data: g,
             error: m
-          }] = (0, o.useMutation)(a);
+          }] = (0, o.useMutation)(s);
           return b ? g?.submittal?.id ? (0, d.jsx)("div", {
             className: f.success,
             dangerouslySetInnerHTML: {
-              __html: s("feedback.enter_success")
+              __html: a("feedback.enter_success")
             }
           }) : (0, d.jsxs)("form", {
-            onSubmit: a => (a => {
-              a.preventDefault(), (() => {
-                const a = {
+            onSubmit: s => (s => {
+              s.preventDefault(), (() => {
+                const s = {
                   content: l.current.value,
                   feedback_step: e
                 };
                 p({
-                  variables: a
+                  variables: s
                 })
               })()
-            })(a),
+            })(s),
             children: [(0, d.jsx)("textarea", {
               ref: l,
               maxLength: 500,
               rows: 6,
-              placeholder: s("feedback.placeholder")
+              placeholder: a("feedback.placeholder")
             }), m ? (0, d.jsx)("div", {
               className: f.error,
               children: String(m)
             }) : "", (0, d.jsx)("button", {
               type: "submit",
-              children: s("SUBMIT")
+              children: a("SUBMIT")
             })]
           }) : c(i.gtao_feedback_login_cta_text)
         },
         g = ({
           mutation: e,
-          query: a,
-          type: s
-        }) => (0, o.withTranslations)(b, "rdo" === s ? "rdr2" : s)({
+          query: s,
+          type: a
+        }) => (0, o.withTranslations)(b, "rdo" === a ? "rdr2" : a)({
           mutation: e,
-          query: a,
-          type: s
+          query: s,
+          type: a
         })
     }
   }

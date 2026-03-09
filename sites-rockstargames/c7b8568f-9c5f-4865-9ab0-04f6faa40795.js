@@ -19,7 +19,7 @@ try {
         ID: () => n,
         xM: () => o,
         WN: () => c,
-        $n: () => f,
+        $n: () => p,
         II: () => l
       });
       var r = a(95966);
@@ -103,10 +103,10 @@ try {
           gtaoCharacters: c,
           linkedAccounts: u.linkedAccounts
         };
-        const p = t;
-        let f = "",
+        const f = t;
+        let p = "",
           g = "";
-        return d?.map(e => ("xbl" === e?.onlineService ? f = e.userName : "np" === e?.onlineService && (g = e.userName), e)), c.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), c.map((e, t) => (e.platformUsername = p, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = g || p), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = f || p), e)), {
+        return d?.map(e => ("xbl" === e?.onlineService ? p = e.userName : "np" === e?.onlineService && (g = e.userName), e)), c.sort((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter)), c.map((e, t) => (e.platformUsername = f, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = g || f), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = p || f), e)), {
           gtaoCharacters: c,
           linkedAccounts: d
         }
@@ -139,8 +139,8 @@ try {
         return e(i), i
       };
       var d = a(58128),
-        p = a(25130);
-      const f = ({
+        f = a(25130);
+      const p = ({
         bearerToken: e
       }) => {
         const t = (0, d.s)(e),
@@ -152,7 +152,7 @@ try {
           c = "True" === (t?.["scAuth.IsAMinor"] ?? "True"),
           o = new Date(t["scAuth.MemberSince"]),
           i = new Date,
-          u = (0, p.M)(i, o) < 12,
+          u = (0, f.M)(i, o) < 12,
           l = (new Date).getTime() / 1e3;
         return {
           id: s,
@@ -182,7 +182,7 @@ try {
     54709: (e, t, a) => {
       a.d(t, {
         A: () => y,
-        K: () => p
+        K: () => f
       });
       var r = a(95966);
       const s = (0, r.setMakeVarItem)({
@@ -205,15 +205,15 @@ try {
           value: (0, r.makeVar)(null)
         }),
         d = e => l(e),
-        p = (0, r.setMakeVarItem)({
+        f = (0, r.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, r.makeVar)(null)
         }),
-        f = (0, r.setMakeVarItem)({
+        p = (0, r.setMakeVarItem)({
           key: "charactersNeededReactive",
           value: (0, r.makeVar)(!1)
         }),
-        g = e => f(e),
+        g = e => p(e),
         m = (0, r.setMakeVarItem)({
           key: "crewsNeededReactive",
           value: (0, r.makeVar)(!1)
@@ -225,16 +225,16 @@ try {
         }),
         v = e => k(e),
         y = () => {
-          const e = (0, r.useReactiveVar)(f),
+          const e = (0, r.useReactiveVar)(p),
             t = (0, r.useReactiveVar)(m),
             a = (0, r.useReactiveVar)(i),
-            p = (0, r.useReactiveVar)(s),
+            f = (0, r.useReactiveVar)(s),
             y = (0, r.useReactiveVar)(l);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: a,
-            navOpen: p,
+            navOpen: f,
             userData: (0, r.useReactiveVar)(k),
             selectedCharacterTuple: y,
             jumpScMenuFocus: (0, r.useReactiveVar)(c),
@@ -250,7 +250,7 @@ try {
     },
     78066: (e, t, a) => {
       a.d(t, {
-        UN: () => p,
+        UN: () => f,
         iR: () => y,
         h: () => g,
         Wx: () => w
@@ -284,14 +284,14 @@ try {
           context: (0, s.createContext)(void 0),
           key: "gtmContext22"
         }),
-        p = ({
+        f = ({
           checkUser: e,
           children: t
         }) => {
           const a = ((e = !0) => {
               const [t, a] = (0, s.useState)([]), [r, d] = (0, s.useState)(null), {
-                data: p,
-                loggedIn: f
+                data: f,
+                loggedIn: p
               } = (0, c.useRockstarUser)(), g = (0, o.bn)(), m = (e, t) => {
                 const r = e.length;
                 e.forEach(e => {
@@ -303,7 +303,7 @@ try {
                 }), a(e => e.slice(r))
               };
               return (0, s.useEffect)(() => {
-                if (p && null !== f) {
+                if (f && null !== p) {
                   const e = ((e, t) => {
                     const a = [],
                       r = [],
@@ -332,26 +332,26 @@ try {
                       use_enhanced_browser_features: g,
                       section_layout: t ? "signed in" : "signed out"
                     }
-                  })(p, f);
+                  })(f, p);
                   t.length && e && m([...t], e), d(e)
                 } else e || t.length && m([...t])
-              }, [p, f, t, e]), {
-                track: e => (Boolean(p && r), (0, n.track)({
+              }, [f, p, t, e]), {
+                track: e => (Boolean(f && r), (0, n.track)({
                   ...l(e),
                   ...r
                 }))
               }
             })(e),
-            p = (0, s.useMemo)(() => a, [a, e]);
+            f = (0, s.useMemo)(() => a, [a, e]);
           return (0, r.jsx)(d.Provider, {
-            value: p,
+            value: f,
             children: t
           })
         },
-        f = {
+        p = {
           track: () => null
         },
-        g = () => (0, s.useContext)(d) ?? f;
+        g = () => (0, s.useContext)(d) ?? p;
       var m = a(54709),
         h = a(9679);
       const k = {},
@@ -381,7 +381,7 @@ try {
                 accountSynced: !1,
                 hasGtaPlus: !1,
                 gtaPlusPlatforms: []
-              }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), g = void 0 === l, [k, v] = (0, s.useState)(1);
+              }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [f, p] = (0, s.useState)(!1), g = void 0 === l, [k, v] = (0, s.useState)(1);
               return (0, s.useEffect)(() => {
                 "gtao" !== t || c?.characters?.gtao || (o(e => ({
                   ...e,
@@ -404,13 +404,13 @@ try {
               }, [r]), (0, s.useEffect)(() => {
                 if ("" === r) return;
                 const e = !!r;
-                if (e || p || ((async () => {
+                if (e || f || ((async () => {
                     try {
                       await (0, h.II)({
                         token: i
                       })
                     } catch (e) {}
-                  })(), f(!0)), !e && p && d(!1), e) {
+                  })(), p(!0)), !e && f && d(!1), e) {
                   const e = (0, h.$n)({
                     bearerToken: r
                   });
@@ -419,7 +419,7 @@ try {
                     ...e
                   }))
                 }
-              }, [r, p]), (0, s.useEffect)(() => {
+              }, [r, f]), (0, s.useEffect)(() => {
                 (async () => {
                   if (l && c && a && !c?.crews && c?.characters) {
                     const e = await (0, h.Z3)({

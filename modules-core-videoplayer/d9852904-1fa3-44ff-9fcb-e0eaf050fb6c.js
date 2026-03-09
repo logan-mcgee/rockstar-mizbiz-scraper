@@ -19,7 +19,7 @@ try {
         PlayerWithInfo: () => k,
         VideoWithPlaylist: () => E,
         default: () => A,
-        useVideoData: () => p.zY
+        useVideoData: () => f.zY
       });
       var r = t(2295),
         s = t(9623),
@@ -45,8 +45,8 @@ try {
           focused: m = !1,
           ...b
         }) => {
-          const p = (0, i.useRef)(null),
-            f = (0, n.useIntl)(),
+          const f = (0, i.useRef)(null),
+            p = (0, n.useIntl)(),
             g = !/^(https?|mailto):/i.test(a),
             k = /^#/.test(a),
             y = b?.target ?? (_ ? "_blank" : "_self"),
@@ -55,9 +55,9 @@ try {
             } = b,
             v = h["aria-current"] ?? !1;
           let w = "";
-          if ("aria-label" in h && h["aria-label"] && (w = "_blank" === y ? `${h["aria-label"]} ${f.formatMessage(o.aria_label_open_new_window)}` : h["aria-label"]), (0, i.useEffect)(() => {
-              m && p?.current && p.current.focus()
-            }, [p?.current, m]), k) {
+          if ("aria-label" in h && h["aria-label"] && (w = "_blank" === y ? `${h["aria-label"]} ${p.formatMessage(o.aria_label_open_new_window)}` : h["aria-label"]), (0, i.useEffect)(() => {
+              m && f?.current && f.current.focus()
+            }, [f?.current, m]), k) {
             const t = e => {
               e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
                 behavior: "smooth",
@@ -71,11 +71,11 @@ try {
               ...h,
               "aria-label": w,
               "aria-current": v,
-              ref: p,
+              ref: f,
               role: d,
               children: [e, "_blank" === y && !w && (0, r.jsx)("span", {
                 className: c,
-                children: f.formatMessage(o.aria_label_open_new_window)
+                children: p.formatMessage(o.aria_label_open_new_window)
               })]
             })
           }
@@ -86,11 +86,11 @@ try {
             ...h,
             "aria-label": w,
             "aria-current": v,
-            ref: p,
+            ref: f,
             reloadDocument: t,
             children: [e, "_blank" === y && !w && (0, r.jsx)("span", {
               className: c,
-              children: f.formatMessage(o.aria_label_open_new_window)
+              children: p.formatMessage(o.aria_label_open_new_window)
             })]
           });
           const x = Object.keys(h).filter(e => !["activeClassName", "key", "end"].includes(e)).reduce((e, a) => ({
@@ -105,19 +105,19 @@ try {
             ...x,
             "aria-label": w,
             "aria-current": v,
-            ref: p,
+            ref: f,
             role: d,
             children: [e, "_blank" === y && !w && (0, r.jsx)("span", {
               className: c,
-              children: f.formatMessage(o.aria_label_open_new_window)
+              children: p.formatMessage(o.aria_label_open_new_window)
             })]
           })
         }, (0, n.withIntl)(d, l));
       var d, u = t(4805),
         m = t(4257),
         b = t(8517),
-        p = t(1881),
-        f = t(2542);
+        f = t(1881),
+        p = t(2542);
       const g = {
           details: "rockstargames-modules-core-videoplayeradbc37c9f4745c8e0c41c73270d19cce",
           embed: "rockstargames-modules-core-videoplayerbbb062c75e63f4ddb7c68732a626283d",
@@ -133,7 +133,7 @@ try {
           const {
             loading: o,
             video: c
-          } = (0, p.zY)({
+          } = (0, f.zY)({
             id: t
           }), [l] = (0, s.useSearchParams)(), d = Number(l.get("start") ?? 0);
           return !c || o ? (0, r.jsx)(m.A, {
@@ -178,7 +178,7 @@ try {
               })]
             })]
           })
-        }, f);
+        }, p);
       var y = t(6188),
         h = t.n(y),
         v = t(2918),
@@ -264,11 +264,11 @@ try {
             d = (0, i.useRef)(null),
             u = (0, i.createRef)(),
             [m, b] = (0, i.useState)(null),
-            [p, f] = (0, i.useState)(a),
+            [f, p] = (0, i.useState)(a),
             [g, k] = (0, i.useState)(!0),
             [y, h] = (0, i.useState)(!1),
             x = (0, i.useCallback)((e, a) => () => {
-              o && o(e, a), f(e), l({
+              o && o(e, a), p(e), l({
                 event: "video_thumbnail_click",
                 link_url: `${c.pathname}?video=${e}`,
                 video_id: e,
@@ -277,7 +277,7 @@ try {
                 video_language: _,
                 element_placement: "video playlist"
               })
-            }, [o, f]);
+            }, [o, p]);
           return (0, i.useEffect)(() => {
             if (!m) return;
             const e = m.offsetTop - d.current.offsetTop;
@@ -288,7 +288,7 @@ try {
           }, [m, d]), (0, i.useEffect)(() => {
             b(u?.current)
           }, [u]), (0, i.useEffect)(() => {
-            f(a)
+            p(a)
           }, [a]), (0, r.jsxs)("section", {
             className: S.playlist,
             "data-context": n ? "modal" : "standardPage",
@@ -307,10 +307,10 @@ try {
                 0 === e ? k(!0) : e + t === a ? h(!0) : (k(!1), h(!1))
               },
               children: t.map((e, a) => (0, r.jsx)(G, {
-                ref: e.id === p ? u : null,
+                ref: e.id === f ? u : null,
                 title: e.title,
                 thumbnail: `${e.screencap}?im=Resize=400`,
-                active: e.id === p,
+                active: e.id === f,
                 onClick: x(e.id, a),
                 isModal: n
               }, e.id))
@@ -333,18 +333,18 @@ try {
         }) => {
           const {
             track: m
-          } = (0, v.useGtmTrack)(), p = {
+          } = (0, v.useGtmTrack)(), f = {
             groupTypes: c,
             tagIds: n,
             locale: a
-          }, [f, g] = (0, s.useSearchParams)(), k = Number(f.get("start") ?? 0), [y, z] = (0, i.useState)(0), {
+          }, [p, g] = (0, s.useSearchParams)(), k = Number(p.get("start") ?? 0), [y, z] = (0, i.useState)(0), {
             loading: j,
             data: N
           } = (0, w.useQuery)(x.videos, {
-            variables: p
+            variables: f
           }), R = N?.videos?.results;
           return (0, i.useEffect)(() => {
-            const e = f.get("video");
+            const e = p.get("video");
             if (!R || !e) return;
             const a = h().findIndex(R, ({
               id: a
@@ -353,8 +353,8 @@ try {
             })) : g({
               video: R[0].id
             })
-          }, [f.get("video"), R]), (0, i.useEffect)(() => {
-            const e = f.get("video");
+          }, [p.get("video"), R]), (0, i.useEffect)(() => {
+            const e = p.get("video");
             if (R && (_ || e)) {
               const a = R.find(({
                   id: a
@@ -398,7 +398,7 @@ try {
               isModal: d
             })]
           }) : (0, r.jsx)(u.A, {})
-        }, f),
+        }, p),
         A = b.A
     },
     8781: e => {

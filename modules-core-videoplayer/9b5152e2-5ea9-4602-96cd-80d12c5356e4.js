@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [8271], {
-    8271: (e, d, a) => {
-      Promise.all([a.e(5473), a.e(2229), a.e(9623), a.e(8429), a.e(5966), a.e(1788), a.e(1569), a.e(2828), a.e(2918), a.e(8517), a.e(5055)]).then(a.bind(a, 7436))
+    8271: (e, d, o) => {
+      Promise.all([o.e(5473), o.e(2229), o.e(9623), o.e(8429), o.e(5966), o.e(1788), o.e(1569), o.e(2828), o.e(2918), o.e(8517), o.e(5055)]).then(o.bind(o, 7436))
     }
   }
 ]);

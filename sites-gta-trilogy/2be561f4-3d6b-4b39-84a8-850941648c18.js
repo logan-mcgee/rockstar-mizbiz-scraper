@@ -13,28 +13,28 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_trilogy = self.webpackChunk_rockstargames_sites_gta_trilogy || []).push([
   [439], {
-    439: (e, t, d) => {
-      function n(e) {
-        var t, d, a = "";
-        if ("string" == typeof e || "number" == typeof e) a += e;
+    439: (e, t, n) => {
+      function d(e) {
+        var t, n, f = "";
+        if ("string" == typeof e || "number" == typeof e) f += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
-            var o = e.length;
-            for (t = 0; t < o; t++) e[t] && (d = n(e[t])) && (a && (a += " "), a += d)
+            var a = e.length;
+            for (t = 0; t < a; t++) e[t] && (n = d(e[t])) && (f && (f += " "), f += n)
           } else
-            for (d in e) e[d] && (a && (a += " "), a += d);
-        return a
+            for (n in e) e[n] && (f && (f += " "), f += n);
+        return f
       }
 
-      function a() {
-        for (var e, t, d = 0, a = "", o = arguments.length; d < o; d++)(e = arguments[d]) && (t = n(e)) && (a && (a += " "), a += t);
-        return a
+      function f() {
+        for (var e, t, n = 0, f = "", a = arguments.length; n < a; n++)(e = arguments[n]) && (t = d(e)) && (f && (f += " "), f += t);
+        return f
       }
-      d.r(t), d.d(t, {
-        clsx: () => a,
-        default: () => o
+      n.r(t), n.d(t, {
+        clsx: () => f,
+        default: () => a
       });
-      const o = a
+      const a = f
     }
   }
 ]);

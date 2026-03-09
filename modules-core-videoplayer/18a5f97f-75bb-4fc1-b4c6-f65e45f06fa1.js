@@ -19,12 +19,12 @@ try {
       });
       var s = t(2295),
         n = t(2229),
-        d = t(5413),
-        r = t(2649),
-        l = t(1915),
+        r = t(5413),
+        l = t(2649),
+        d = t(1915),
         o = t(3497),
-        i = t(5966),
-        c = t(2918);
+        c = t(5966),
+        i = t(2918);
       const f = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,7 +35,7 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, i.withTranslations)(({
+        g = (0, c.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
@@ -45,9 +45,9 @@ try {
         }) => {
           const {
             data: b
-          } = (0, c.useRockstarUser)(), {
+          } = (0, i.useRockstarUser)(), {
             track: y
-          } = (0, c.useGtmTrack)(), h = (0, i.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
+          } = (0, i.useGtmTrack)(), h = (0, c.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, n.useState)(), x = (0, n.createRef)(), D = (0, n.createRef)(), j = (0, n.createRef)(), {
             style: E
@@ -80,10 +80,10 @@ try {
               onSubmit: async a => {
                 a.preventDefault();
                 const t = new Date(j?.current?.value, x?.current?.value, D?.current?.value),
-                  s = (0, d.j)(new Date, {
+                  s = (0, r.j)(new Date, {
                     years: 150
                   }),
-                  n = (0, r.f)(t) && (0, l.d)(t, s);
+                  n = (0, l.f)(t) && (0, d.d)(t, s);
                 if (I(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
                   y(a ? {
@@ -95,7 +95,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";
-                  (0, i.setCookieValue)("UAGC", s), v(s)
+                  (0, c.setCookieValue)("UAGC", s), v(s)
                 }
               },
               "data-testid": "agegate-form",

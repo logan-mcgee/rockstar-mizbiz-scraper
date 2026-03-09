@@ -46,8 +46,8 @@ try {
         var t, o = n && n.split("/") || [],
           a = e && e.split("/") || [],
           c = n && r(n),
-          s = e && r(e),
-          f = c || s;
+          f = e && r(e),
+          s = c || f;
         if (n && r(n) ? a = o : o.length && (a.pop(), a = a.concat(o)), !a.length) return "/";
         if (a.length) {
           var u = a[a.length - 1];
@@ -57,9 +57,9 @@ try {
           var h = a[l];
           "." === h ? i(a, l) : ".." === h ? (i(a, l), d++) : d && (i(a, l), d--)
         }
-        if (!f)
+        if (!s)
           for (; d--; d) a.unshift("..");
-        !f || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
+        !s || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
         var v = a.join("/");
         return t && "/" !== v.substr(-1) && (v += "/"), v
       };
@@ -67,7 +67,7 @@ try {
       function c(n) {
         return n.valueOf ? n.valueOf() : Object.prototype.valueOf.call(n)
       }
-      const s = function n(e, t) {
+      const f = function n(e, t) {
         if (e === t) return !0;
         if (null == e || null == t) return !1;
         if (Array.isArray(e)) return Array.isArray(t) && e.length === t.length && e.every(function(e, o) {
@@ -82,12 +82,12 @@ try {
         }
         return !1
       };
-      var f = !0,
+      var s = !0,
         u = "Invariant failed";
 
       function d(n, e) {
         if (!n) {
-          if (f) throw new Error(u);
+          if (s) throw new Error(u);
           var t = "function" == typeof e ? e() : e,
             o = t ? "".concat(u, ": ").concat(t) : u;
           throw new Error(o)
@@ -145,7 +145,7 @@ try {
       }
 
       function m(n, e) {
-        return n.pathname === e.pathname && n.search === e.search && n.hash === e.hash && n.key === e.key && s(n.state, e.state)
+        return n.pathname === e.pathname && n.search === e.search && n.hash === e.hash && n.key === e.key && f(n.state, e.state)
       }
 
       function b() {
@@ -208,9 +208,9 @@ try {
           i = !(-1 === window.navigator.userAgent.indexOf("Trident")),
           a = n,
           c = a.forceRefresh,
-          s = void 0 !== c && c,
-          f = a.getUserConfirmation,
-          u = void 0 === f ? P : f,
+          f = void 0 !== c && c,
+          s = a.getUserConfirmation,
+          u = void 0 === s ? P : s,
           h = a.keyLength,
           g = void 0 === h ? 6 : h,
           m = n.basename ? p(l(n.basename)) : "";
@@ -291,10 +291,10 @@ try {
                     if (t.pushState({
                         key: a,
                         state: c
-                      }, null, e), s) window.location.href = e;
+                      }, null, e), f) window.location.href = e;
                     else {
-                      var f = j.indexOf(q.location.key),
-                        u = j.slice(0, f + 1);
+                      var s = j.indexOf(q.location.key),
+                        u = j.slice(0, s + 1);
                       u.push(i.key), j = u, _({
                         action: o,
                         location: i
@@ -316,9 +316,9 @@ try {
                     if (t.replaceState({
                         key: a,
                         state: c
-                      }, null, e), s) window.location.replace(e);
+                      }, null, e), f) window.location.replace(e);
                     else {
-                      var f = j.indexOf(q.location.key); - 1 !== f && (j[f] = i.key), _({
+                      var s = j.indexOf(q.location.key); - 1 !== s && (j[s] = i.key), _({
                         action: o,
                         location: i
                       })
@@ -395,14 +395,14 @@ try {
           i = void 0 === r ? P : r,
           a = t.hashType,
           c = void 0 === a ? "slash" : a,
-          s = n.basename ? p(l(n.basename)) : "",
-          f = L[c],
-          u = f.encodePath,
-          h = f.decodePath;
+          f = n.basename ? p(l(n.basename)) : "",
+          s = L[c],
+          u = s.encodePath,
+          h = s.decodePath;
 
         function g() {
           var n = h(M());
-          return s && (n = v(n, s)), y(n)
+          return f && (n = v(n, f)), y(n)
         }
         var m = b();
 
@@ -463,7 +463,7 @@ try {
             createHref: function(n) {
               var e = document.querySelector("base"),
                 t = "";
-              return e && e.getAttribute("href") && (t = _(window.location.href)), t + "#" + u(s + w(n))
+              return e && e.getAttribute("href") && (t = _(window.location.href)), t + "#" + u(f + w(n))
             },
             push: function(n, e) {
               var t = "PUSH",
@@ -471,7 +471,7 @@ try {
               m.confirmTransitionTo(o, t, i, function(n) {
                 if (n) {
                   var e = w(o),
-                    r = u(s + e);
+                    r = u(f + e);
                   if (M() !== r) {
                     T = e,
                       function(n) {
@@ -493,7 +493,7 @@ try {
               m.confirmTransitionTo(o, t, i, function(n) {
                 if (n) {
                   var e = w(o),
-                    r = u(s + e);
+                    r = u(f + e);
                   M() !== r && (T = e, I(r));
                   var i = j.indexOf(w(F.location)); - 1 !== i && (j[i] = e), k({
                     action: t,
@@ -540,8 +540,8 @@ try {
           i = void 0 === r ? ["/"] : r,
           a = e.initialIndex,
           c = void 0 === a ? 0 : a,
-          s = e.keyLength,
-          f = void 0 === s ? 6 : s,
+          f = e.keyLength,
+          s = void 0 === f ? 6 : f,
           u = b();
 
         function d(n) {
@@ -549,7 +549,7 @@ try {
         }
 
         function l() {
-          return Math.random().toString(36).substr(2, f)
+          return Math.random().toString(36).substr(2, s)
         }
         var h = C(c, 0, i.length - 1),
           v = i.map(function(n) {

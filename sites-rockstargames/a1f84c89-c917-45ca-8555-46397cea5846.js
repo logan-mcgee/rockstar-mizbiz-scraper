@@ -16,8 +16,8 @@ try {
     76327: (e, t, i) => {
       i.r(t), i.d(t, {
         InView: () => u,
-        defaultFallbackInView: () => h,
-        observe: () => c,
+        defaultFallbackInView: () => c,
+        observe: () => h,
         useInView: () => f
       });
       var n = i(62229),
@@ -33,11 +33,11 @@ try {
         d = 0,
         l = void 0;
 
-      function h(e) {
+      function c(e) {
         l = e
       }
 
-      function c(e, t, i = {}, n = l) {
+      function h(e, t, i = {}, n = l) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const s = e.getBoundingClientRect();
           return t(n, {
@@ -53,7 +53,7 @@ try {
         const {
           id: s,
           observer: r,
-          elements: h
+          elements: c
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter(t => void 0 !== e[t]).map(t => {
@@ -81,10 +81,10 @@ try {
             }, o.set(t, i)
           }
           return i
-        }(i), c = h.get(e) || [];
-        return h.has(e) || h.set(e, c), c.push(t), r.observe(e),
+        }(i), h = c.get(e) || [];
+        return c.has(e) || c.set(e, h), h.push(t), r.observe(e),
           function() {
-            c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), r.unobserve(e)), 0 === h.size && (r.disconnect(), o.delete(s))
+            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), r.unobserve(e)), 0 === c.size && (r.disconnect(), o.delete(s))
           }
       }
       var u = class extends n.Component {
@@ -126,7 +126,7 @@ try {
             delay: s,
             fallbackInView: r
           } = this.props;
-          this._unobserveCb = c(this.node, this.handleChange, {
+          this._unobserveCb = h(this.node, this.handleChange, {
             threshold: e,
             root: t,
             rootMargin: i,
@@ -161,8 +161,8 @@ try {
             onChange: a,
             skip: d,
             trackVisibility: l,
-            delay: h,
-            initialInView: c,
+            delay: c,
+            initialInView: h,
             fallbackInView: u,
             ...f
           } = this.props;
@@ -183,17 +183,17 @@ try {
         skip: a,
         initialInView: d,
         fallbackInView: l,
-        onChange: h
+        onChange: c
       } = {}) {
         var u;
-        const [f, p] = n.useState(null), b = n.useRef(h), [g, y] = n.useState({
+        const [f, p] = n.useState(null), b = n.useRef(c), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        b.current = h, n.useEffect(() => {
+        b.current = c, n.useEffect(() => {
           if (a || !f) return;
           let n;
-          return n = c(f, (e, t) => {
+          return n = h(f, (e, t) => {
             y({
               inView: e,
               entry: t

@@ -15,26 +15,26 @@ try {
   [439], {
     10439: (e, n, t) => {
       function d(e) {
-        var n, t, a = "";
-        if ("string" == typeof e || "number" == typeof e) a += e;
+        var n, t, f = "";
+        if ("string" == typeof e || "number" == typeof e) f += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
             var s = e.length;
-            for (n = 0; n < s; n++) e[n] && (t = d(e[n])) && (a && (a += " "), a += t)
+            for (n = 0; n < s; n++) e[n] && (t = d(e[n])) && (f && (f += " "), f += t)
           } else
-            for (t in e) e[t] && (a && (a += " "), a += t);
-        return a
+            for (t in e) e[t] && (f && (f += " "), f += t);
+        return f
       }
 
-      function a() {
-        for (var e, n, t = 0, a = "", s = arguments.length; t < s; t++)(e = arguments[t]) && (n = d(e)) && (a && (a += " "), a += n);
-        return a
+      function f() {
+        for (var e, n, t = 0, f = "", s = arguments.length; t < s; t++)(e = arguments[t]) && (n = d(e)) && (f && (f += " "), f += n);
+        return f
       }
       t.r(n), t.d(n, {
-        clsx: () => a,
+        clsx: () => f,
         default: () => s
       });
-      const s = a
+      const s = f
     }
   }
 ]);

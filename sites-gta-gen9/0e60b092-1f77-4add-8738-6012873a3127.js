@@ -21,8 +21,8 @@ try {
         c = s(62229),
         n = s(9623),
         r = s(81788),
-        d = s(2918),
-        o = s(95966);
+        o = s(2918),
+        d = s(95966);
       const g = (0, r.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
@@ -86,13 +86,13 @@ try {
           type: s,
           t: n
         }) => {
-          const r = (0, o.useQueryParams)(),
-            [d, g] = (0, c.useState)({}),
+          const r = (0, d.useQueryParams)(),
+            [o, g] = (0, c.useState)({}),
             {
               data: i
-            } = (0, o.useQuery)(a, {
-              variables: d,
-              skip: !Object.entries(d).length
+            } = (0, d.useQuery)(a, {
+              variables: o,
+              skip: !Object.entries(o).length
             });
           return (0, c.useEffect)(() => {
             g({
@@ -126,7 +126,7 @@ try {
               className: f[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash)),
-            d = a.next.map(e => "_root" === e.feedback_type.name ? null : (0, t.jsxs)(n.NavLink, {
+            o = a.next.map(e => "_root" === e.feedback_type.name ? null : (0, t.jsxs)(n.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: f[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -144,8 +144,8 @@ try {
               children: r
             }), (0, t.jsx)("div", {
               className: f.stepsNext,
-              children: d
-            }), d.length ? "" : (0, t.jsx)(p, {
+              children: o
+            }), o.length ? "" : (0, t.jsx)(p, {
               feedbackStep: a.path[a.path.length - 1].id,
               mutation: e,
               t: c
@@ -161,10 +161,10 @@ try {
             formatMessage: n
           } = (0, r.useIntl)(), {
             loggedIn: i
-          } = (0, d.useRockstarUser)(), b = (0, c.useRef)(), [p, {
+          } = (0, o.useRockstarUser)(), b = (0, c.useRef)(), [p, {
             data: m,
             error: l
-          }] = (0, o.useMutation)(a);
+          }] = (0, d.useMutation)(a);
           return i ? m?.submittal?.id ? (0, t.jsx)("div", {
             className: f.success,
             dangerouslySetInnerHTML: {
@@ -200,7 +200,7 @@ try {
           mutation: e,
           query: a,
           type: s
-        }) => (0, o.withTranslations)(i, "rdo" === s ? "rdr2" : s)({
+        }) => (0, d.withTranslations)(i, "rdo" === s ? "rdr2" : s)({
           mutation: e,
           query: a,
           type: s

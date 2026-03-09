@@ -53,7 +53,7 @@ try {
     },
     64324: (e, s, a) => {
       a.r(s), a.d(s, {
-        default: () => f
+        default: () => b
       });
       var t = a(42295),
         r = a(62229),
@@ -114,21 +114,21 @@ try {
           textContent: "rockstargames-sites-rockstargamesdc89c2cc2d679db0db0a41ebe11871f5"
         },
         {
-          host: b
+          host: f
         } = (0, o.getConfigForDomain)(),
-        f = (0, c.withIntl)(() => {
+        b = (0, c.withIntl)(() => {
           const e = (0, c.useIntl)(),
             {
               track: s
             } = (0, n.useGtmTrack)(),
             [a, k] = (0, r.useState)(""),
-            f = `https://${b}.rockstargames.com/settings/email`,
+            b = `https://${f}.rockstargames.com/settings/email`,
             p = (0, o.useRockstarTokenPing)(),
             [g] = (0, i.useSearchParams)(),
             h = {
               event: "cta_other",
               text: u.email_settings_cta.defaultMessage,
-              link_url: f,
+              link_url: b,
               element_placement: "unsubscribe"
             },
             x = {
@@ -173,7 +173,7 @@ try {
                 })]
               }), (0, t.jsx)("div", {
                 children: (0, t.jsx)(d.A, {
-                  to: f,
+                  to: b,
                   onClick: h ? () => s({
                     ...h
                   }) : () => {},

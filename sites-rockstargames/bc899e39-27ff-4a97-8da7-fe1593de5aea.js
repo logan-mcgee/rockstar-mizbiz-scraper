@@ -23,7 +23,7 @@ try {
     79142: (t, e, r) => {
       r.r(e), r.d(e, {
         BLOCKS: () => o,
-        CONTAINERS: () => E,
+        CONTAINERS: () => d,
         EMPTY_DOCUMENT: () => m,
         HEADINGS: () => h,
         INLINES: () => i,
@@ -34,9 +34,9 @@ try {
         TOP_LEVEL_BLOCKS: () => f,
         V1_MARKS: () => v,
         V1_NODE_TYPES: () => A,
-        VOID_BLOCKS: () => d,
+        VOID_BLOCKS: () => E,
         helpers: () => n,
-        validateRichTextDocument: () => dt
+        validateRichTextDocument: () => Et
       });
       var n = {};
       r.r(n), r.d(n, {
@@ -73,8 +73,8 @@ try {
       var s, l, f = [o.PARAGRAPH, o.HEADING_1, o.HEADING_2, o.HEADING_3, o.HEADING_4, o.HEADING_5, o.HEADING_6, o.OL_LIST, o.UL_LIST, o.HR, o.QUOTE, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, o.EMBEDDED_RESOURCE, o.TABLE],
         p = [o.PARAGRAPH, o.HEADING_1, o.HEADING_2, o.HEADING_3, o.HEADING_4, o.HEADING_5, o.HEADING_6, o.OL_LIST, o.UL_LIST, o.HR, o.QUOTE, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, o.EMBEDDED_RESOURCE],
         y = [o.TABLE, o.TABLE_ROW, o.TABLE_CELL, o.TABLE_HEADER_CELL],
-        d = [o.HR, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, o.EMBEDDED_RESOURCE],
-        E = (c(s = {}, o.OL_LIST, [o.LIST_ITEM]), c(s, o.UL_LIST, [o.LIST_ITEM]), c(s, o.LIST_ITEM, p), c(s, o.QUOTE, [o.PARAGRAPH]), c(s, o.TABLE, [o.TABLE_ROW]), c(s, o.TABLE_ROW, [o.TABLE_CELL, o.TABLE_HEADER_CELL]), c(s, o.TABLE_CELL, [o.PARAGRAPH, o.UL_LIST, o.OL_LIST]), c(s, o.TABLE_HEADER_CELL, [o.PARAGRAPH]), s),
+        E = [o.HR, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, o.EMBEDDED_RESOURCE],
+        d = (c(s = {}, o.OL_LIST, [o.LIST_ITEM]), c(s, o.UL_LIST, [o.LIST_ITEM]), c(s, o.LIST_ITEM, p), c(s, o.QUOTE, [o.PARAGRAPH]), c(s, o.TABLE, [o.TABLE_ROW]), c(s, o.TABLE_ROW, [o.TABLE_CELL, o.TABLE_HEADER_CELL]), c(s, o.TABLE_CELL, [o.PARAGRAPH, o.UL_LIST, o.OL_LIST]), c(s, o.TABLE_HEADER_CELL, [o.PARAGRAPH]), s),
         h = [o.HEADING_1, o.HEADING_2, o.HEADING_3, o.HEADING_4, o.HEADING_5, o.HEADING_6],
         b = [o.PARAGRAPH].concat(function(t) {
           if (Array.isArray(t)) return u(t)
@@ -667,7 +667,7 @@ try {
           var r = new M(t, e);
           return r.noAdditionalProperties(["colspan", "rowspan"]), r.number("colspan", !0), r.number("rowspan", !0), r.errors
         }),
-        pt = (it(ut = {}, o.DOCUMENT, Z(f)), it(ut, o.PARAGRAPH, ct), it(ut, o.HEADING_1, ct), it(ut, o.HEADING_2, ct), it(ut, o.HEADING_3, ct), it(ut, o.HEADING_4, ct), it(ut, o.HEADING_5, ct), it(ut, o.HEADING_6, ct), it(ut, o.QUOTE, Z(E[o.QUOTE])), it(ut, o.EMBEDDED_ENTRY, lt), it(ut, o.EMBEDDED_ASSET, tt("Asset", q)), it(ut, o.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), it(ut, o.HR, Z(q)), it(ut, o.OL_LIST, st), it(ut, o.UL_LIST, st), it(ut, o.LIST_ITEM, Z(at(p).sort())), it(ut, o.TABLE, Z(function() {
+        pt = (it(ut = {}, o.DOCUMENT, Z(f)), it(ut, o.PARAGRAPH, ct), it(ut, o.HEADING_1, ct), it(ut, o.HEADING_2, ct), it(ut, o.HEADING_3, ct), it(ut, o.HEADING_4, ct), it(ut, o.HEADING_5, ct), it(ut, o.HEADING_6, ct), it(ut, o.QUOTE, Z(d[o.QUOTE])), it(ut, o.EMBEDDED_ENTRY, lt), it(ut, o.EMBEDDED_ASSET, tt("Asset", q)), it(ut, o.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), it(ut, o.HR, Z(q)), it(ut, o.OL_LIST, st), it(ut, o.UL_LIST, st), it(ut, o.LIST_ITEM, Z(at(p).sort())), it(ut, o.TABLE, Z(function() {
           return {
             nodeTypes: [o.TABLE_ROW],
             min: 1
@@ -694,7 +694,7 @@ try {
           return yt(t, e)
         }), n.errors
       }
-      var dt = function(t) {
+      var Et = function(t) {
         var e = new nt,
           r = new M(t, e);
         return r.object() && r.enum("nodeType", [o.DOCUMENT]), r.errors.length > 0 ? r.errors : yt(t, e)

@@ -111,7 +111,7 @@ try {
             cursor: "nw-resize"
           })
         },
-        u = (0, n.memo)(function(t) {
+        c = (0, n.memo)(function(t) {
           var e = t.onResizeStart,
             i = t.direction,
             s = t.children,
@@ -123,7 +123,7 @@ try {
             d = (0, n.useCallback)(function(t) {
               e(t, i)
             }, [e, i]),
-            u = (0, n.useMemo)(function() {
+            c = (0, n.useMemo)(function() {
               return h(h({
                 position: "absolute",
                 userSelect: "none"
@@ -131,13 +131,13 @@ try {
             }, [r, i]);
           return (0, o.jsx)("div", {
             className: a || void 0,
-            style: u,
+            style: c,
             onMouseDown: p,
             onTouchStart: d,
             children: s
           })
         }),
-        c = (s = function(t, e) {
+        u = (s = function(t, e) {
           return s = Object.setPrototypeOf || {
             __proto__: []
           }
@@ -242,7 +242,7 @@ try {
             flexBasis: void 0
           }, r.onResizeStart = r.onResizeStart.bind(r), r.onMouseMove = r.onMouseMove.bind(r), r.onMouseUp = r.onMouseUp.bind(r), r
         }
-        c(e, t), Object.defineProperty(e.prototype, "parentNode", {
+        u(e, t), Object.defineProperty(e.prototype, "parentNode", {
           get: function() {
             return this.resizable ? this.resizable.parentNode : null
           },
@@ -364,12 +364,12 @@ try {
             p = h.original,
             d = this.props,
             l = d.lockAspectRatio,
-            u = d.lockAspectRatioExtraHeight,
-            c = d.lockAspectRatioExtraWidth,
+            c = d.lockAspectRatioExtraHeight,
+            u = d.lockAspectRatioExtraWidth,
             f = p.width,
             g = p.height,
-            b = u || 0,
-            w = c || 0;
+            b = c || 0,
+            w = u || 0;
           return v("right", a) && (f = p.width + (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("left", a) && (f = p.width - (t - p.x) * n / s, l && (g = (f - w) / this.ratio + b)), v("bottom", a) && (g = p.height + (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), v("top", a) && (g = p.height - (e - p.y) * r / s, l && (f = (g - b) * this.ratio + w)), {
             newWidth: f,
             newHeight: g
@@ -383,13 +383,13 @@ try {
             p = void 0 === i.width || i.width < 0 ? t : i.width,
             d = void 0 === s.height ? 10 : s.height,
             l = void 0 === i.height || i.height < 0 ? e : i.height,
-            u = r || 0,
-            c = h || 0;
+            c = r || 0,
+            u = h || 0;
           if (n) {
-            var f = (d - u) * this.ratio + c,
-              g = (l - u) * this.ratio + c,
-              w = (a - c) / this.ratio + u,
-              v = (p - c) / this.ratio + u,
+            var f = (d - c) * this.ratio + u,
+              g = (l - c) * this.ratio + u,
+              w = (a - u) / this.ratio + c,
+              v = (p - u) / this.ratio + c,
               y = Math.max(a, f),
               m = Math.min(p, g),
               z = Math.max(d, w),
@@ -473,8 +473,8 @@ try {
               p = y(t) ? t.touches[0].clientY : t.clientY,
               d = this.state,
               l = d.direction,
-              u = d.original,
-              c = d.width,
+              c = d.original,
+              u = d.width,
               f = d.height,
               g = this.getParentSize(),
               b = function(t, e, i, s, o, n, r) {
@@ -505,17 +505,17 @@ try {
               S = 0 === k || Math.abs(j - S) <= k ? j : S, z = 0 === k || Math.abs(M - z) <= k ? M : z
             }
             var E = {
-              width: S - u.width,
-              height: z - u.height
+              width: S - c.width,
+              height: z - c.height
             };
-            if (this.delta = E, c && "string" == typeof c)
-              if (c.endsWith("%")) {
+            if (this.delta = E, u && "string" == typeof u)
+              if (u.endsWith("%")) {
                 var N = S / g.width * 100;
                 S = "".concat(N, "%")
-              } else if (c.endsWith("vw")) {
+              } else if (u.endsWith("vw")) {
               var O = S / this.window.innerWidth * 100;
               S = "".concat(O, "vw")
-            } else if (c.endsWith("vh")) {
+            } else if (u.endsWith("vh")) {
               var B = S / this.window.innerHeight * 100;
               S = "".concat(B, "vh")
             }
@@ -563,7 +563,7 @@ try {
             a = e.handleComponent;
           if (!i) return null;
           var p = Object.keys(i).map(function(e) {
-            return !1 !== i[e] ? (0, o.jsx)(u, {
+            return !1 !== i[e] ? (0, o.jsx)(c, {
               direction: e,
               onResizeStart: t.onResizeStart,
               replaceStyles: s && s[e],
@@ -649,12 +649,12 @@ try {
         return function t(i, a, p) {
           p = p || 1, Object.keys(i).forEach(function(d) {
             const l = i[d],
-              u = s.safe && Array.isArray(l),
-              c = Object.prototype.toString.call(l),
+              c = s.safe && Array.isArray(l),
+              u = Object.prototype.toString.call(l),
               f = e(l),
-              g = "[object Object]" === c || "[object Array]" === c,
+              g = "[object Object]" === u || "[object Array]" === u,
               b = a ? a + o + r(d) : r(d);
-            if (!u && !f && g && Object.keys(l).length && (!s.maxDepth || p < n)) return t(l, b, p + 1);
+            if (!c && !f && g && Object.keys(l).length && (!s.maxDepth || p < n)) return t(l, b, p + 1);
             h[b] = l
           })
         }(t), h
@@ -685,15 +685,15 @@ try {
           const i = e.split(r).map(a);
           let s = d(i.shift()),
             l = d(i[0]),
-            u = p;
+            c = p;
           for (; void 0 !== l;) {
             if ("__proto__" === s) return;
-            const t = Object.prototype.toString.call(u[s]),
+            const t = Object.prototype.toString.call(c[s]),
               e = "[object Object]" === t || "[object Array]" === t;
-            if (!h && !e && void 0 !== u[s]) return;
-            (h && !e || !h && null == u[s]) && (u[s] = "number" != typeof l || n.object ? {} : []), u = u[s], i.length > 0 && (s = d(i.shift()), l = d(i[0]))
+            if (!h && !e && void 0 !== c[s]) return;
+            (h && !e || !h && null == c[s]) && (c[s] = "number" != typeof l || n.object ? {} : []), c = c[s], i.length > 0 && (s = d(i.shift()), l = d(i[0]))
           }
-          u[s] = t(o[e], n)
+          c[s] = t(o[e], n)
         }), p
       }
     }

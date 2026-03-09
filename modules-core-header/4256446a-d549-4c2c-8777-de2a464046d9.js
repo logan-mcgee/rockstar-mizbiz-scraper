@@ -48,23 +48,23 @@ try {
           n = i
         }
       }();
-      var s, d = [],
-        u = !1,
+      var s, u = [],
+        d = !1,
         l = -1;
 
       function c() {
-        u && s && (u = !1, s.length ? d = s.concat(d) : l = -1, d.length && f())
+        d && s && (d = !1, s.length ? u = s.concat(u) : l = -1, u.length && f())
       }
 
       function f() {
-        if (!u) {
+        if (!d) {
           var e = a(c);
-          u = !0;
-          for (var t = d.length; t;) {
-            for (s = d, d = []; ++l < t;) s && s[l].run();
-            l = -1, t = d.length
+          d = !0;
+          for (var t = u.length; t;) {
+            for (s = u, u = []; ++l < t;) s && s[l].run();
+            l = -1, t = u.length
           }
-          s = null, u = !1,
+          s = null, d = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        d.push(new h(e, t)), 1 !== d.length || u || a(f)
+        u.push(new h(e, t)), 1 !== u.length || d || a(f)
       }, h.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {

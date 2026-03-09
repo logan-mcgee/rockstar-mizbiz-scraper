@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "e2a1c655-1932-4d48-93c1-7b3b6b2192da", o._sentryDebugIdIdentifier = "sentry-dbid-e2a1c655-1932-4d48-93c1-7b3b6b2192da")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "e2a1c655-1932-4d48-93c1-7b3b6b2192da", o._sentryDebugIdIdentifier = "sentry-dbid-e2a1c655-1932-4d48-93c1-7b3b6b2192da")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
   [9760], {
-    9760: (o, t, e) => {
-      e.r(t), e.d(t, {
+    9760: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => n,

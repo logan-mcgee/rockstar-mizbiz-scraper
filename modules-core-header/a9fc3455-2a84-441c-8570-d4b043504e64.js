@@ -21,9 +21,9 @@ try {
       var o = n(71127),
         s = n(95362),
         r = n(23846),
-        d = n(76286),
-        u = n(42295),
-        c = "focusScope.autoFocusOnMount",
+        u = n(76286),
+        c = n(42295),
+        d = "focusScope.autoFocusOnMount",
         a = "focusScope.autoFocusOnUnmount",
         i = {
           bubbles: !1,
@@ -36,7 +36,7 @@ try {
             onMountAutoFocus: m,
             onUnmountAutoFocus: y,
             ...E
-          } = e, [g, h] = o.useState(null), w = (0, d.c)(m), T = (0, d.c)(y), _ = o.useRef(null), L = (0, s.s)(t, e => h(e)), N = o.useRef({
+          } = e, [g, h] = o.useState(null), w = (0, u.c)(m), T = (0, u.c)(y), _ = o.useRef(null), L = (0, s.s)(t, e => h(e)), N = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -79,8 +79,8 @@ try {
               v.add(N);
               const e = document.activeElement;
               if (!g.contains(e)) {
-                const t = new CustomEvent(c, i);
-                g.addEventListener(c, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(d, i);
+                g.addEventListener(d, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -93,7 +93,7 @@ try {
                 }), document.activeElement === e && b(g))
               }
               return () => {
-                g.removeEventListener(c, w), setTimeout(() => {
+                g.removeEventListener(d, w), setTimeout(() => {
                   const t = new CustomEvent(a, i);
                   g.addEventListener(a, T), g.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
                     select: !0
@@ -120,7 +120,7 @@ try {
               })) : o === t && e.preventDefault()
             }
           }, [n, f, N.paused]);
-          return (0, u.jsx)(r.sG.div, {
+          return (0, c.jsx)(r.sG.div, {
             tabIndex: -1,
             ...E,
             ref: L,

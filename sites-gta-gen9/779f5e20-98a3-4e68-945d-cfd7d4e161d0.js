@@ -114,10 +114,10 @@ try {
           else {
             (0, r.invariant)("0" === i.type, "Malformed pattern ".concat(e));
             for (var s = 0, u = a; s < u.length; s++) {
-              var d = u[s];
+              var c = u[s];
               n.push({
-                type: d.type,
-                value: d.value,
+                type: c.type,
+                value: c.value,
                 unit: t
               })
             }
@@ -146,10 +146,10 @@ try {
         var i = l.getInternalSlots,
           s = l.availableLocales,
           u = l.relevantExtensionKeys,
-          d = l.localeData,
-          c = l.getDefaultLocale,
-          f = i(e);
-        f.initializedRelativeTimeFormat = !0;
+          c = l.localeData,
+          f = l.getDefaultLocale,
+          d = i(e);
+        d.initializedRelativeTimeFormat = !0;
         var y = (0, r.CanonicalizeLocaleList)(t),
           p = Object.create(null),
           v = (0, r.CoerceOptionsToObject)(a),
@@ -158,12 +158,12 @@ try {
         var b = (0, r.GetOption)(v, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !o.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         p.nu = b;
-        var g = (0, n.ResolveLocale)(s, y, p, u, d, c),
+        var g = (0, n.ResolveLocale)(s, y, p, u, c, f),
           w = g.locale,
           h = g.nu;
-        f.locale = w, f.style = (0, r.GetOption)(v, "style", "string", ["long", "narrow", "short"], "long"), f.numeric = (0, r.GetOption)(v, "numeric", "string", ["always", "auto"], "always");
-        var _ = d[g.dataLocale];
-        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), f.fields = _, f.numberFormat = (0, r.createMemoizedNumberFormat)(t), f.pluralRules = (0, r.createMemoizedPluralRules)(t), f.numberingSystem = h, e
+        d.locale = w, d.style = (0, r.GetOption)(v, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, r.GetOption)(v, "numeric", "string", ["always", "auto"], "always");
+        var _ = c[g.dataLocale];
+        return (0, r.invariant)(!!_, "Missing locale data for ".concat(g.dataLocale)), d.fields = _, d.numberFormat = (0, r.createMemoizedNumberFormat)(t), d.pluralRules = (0, r.createMemoizedPluralRules)(t), d.numberingSystem = h, e
       };
       var r = a(62306),
         n = a(74578),
@@ -194,15 +194,15 @@ try {
         if ((0, r.invariant)("Number" === (0, r.Type)(t), "value must be number, instead got ".concat(typeof t), TypeError), (0, r.invariant)("String" === (0, r.Type)(a), "unit must be number, instead got ".concat(typeof t), TypeError), isNaN(t) || !isFinite(t)) throw new RangeError("Invalid value ".concat(t));
         var s = (0, n.SingularRelativeTimeUnit)(a),
           u = i(e),
-          d = u.fields,
-          c = u.style,
-          f = u.numeric,
+          c = u.fields,
+          f = u.style,
+          d = u.numeric,
           y = u.pluralRules,
           p = u.numberFormat,
           v = s;
-        "short" === c ? v = "".concat(s, "-short") : "narrow" === c && (v = "".concat(s, "-narrow")), v in d || (v = s);
-        var m = d[v];
-        if ("auto" === f && (0, r.ToString)(t) in m) return [{
+        "short" === f ? v = "".concat(s, "-short") : "narrow" === f && (v = "".concat(s, "-narrow")), v in c || (v = s);
+        var m = c[v];
+        if ("auto" === d && (0, r.ToString)(t) in m) return [{
           type: "literal",
           value: m[(0, r.ToString)(t)]
         }];
