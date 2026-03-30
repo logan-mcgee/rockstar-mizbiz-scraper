@@ -15,8 +15,8 @@ try {
   [68], {
     30068: (o, e, t) => {
       t.r(e), t.d(e, {
-        Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Label: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
@@ -31,8 +31,8 @@ try {
         default: () => L
       });
       var _ = "{description} - Ver imagen",
-        n = "Cerrar",
-        a = "Presiona {shortcut}",
+        a = "Cerrar",
+        n = "Presiona {shortcut}",
         l = "Acercar",
         i = "Presiona {shortcut}",
         d = "Alejar",
@@ -45,8 +45,8 @@ try {
         h = "Descargar",
         L = {
           Lightbox_Open_Button_Label: _,
-          Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Close_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: d,
