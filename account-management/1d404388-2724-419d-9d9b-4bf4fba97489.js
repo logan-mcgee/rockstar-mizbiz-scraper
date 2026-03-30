@@ -135,12 +135,12 @@ try {
         e = /^[a-z]{4}$/i,
         s = /^[0-9a-svwyz]$/i,
         i = /^([a-z]{2}|[0-9]{3})$/i,
-        l = /^([a-z0-9]{5,8}|[0-9][a-z0-9]{3})$/i,
-        d = /^([a-z]{2,3}|[a-z]{5,8})$/i,
+        d = /^([a-z0-9]{5,8}|[0-9][a-z0-9]{3})$/i,
+        l = /^([a-z]{2,3}|[a-z]{5,8})$/i,
         o = /^[a-z][0-9]$/i;
 
       function g(a) {
-        return d.test(a)
+        return l.test(a)
       }
 
       function G(a) {
@@ -152,7 +152,7 @@ try {
       }
 
       function p(a) {
-        return l.test(a)
+        return d.test(a)
       }
 
       function h(a) {
@@ -1391,8 +1391,8 @@ try {
     42784: (a, n, t) => {
       Object.defineProperty(n, "__esModule", {
         value: !0
-      }), n.canonicalizeUnicodeLanguageId = d, n.CanonicalizeUnicodeLocaleId = function(a) {
-        if (a.lang = d(a.lang), a.extensions) {
+      }), n.canonicalizeUnicodeLanguageId = l, n.CanonicalizeUnicodeLocaleId = function(a) {
+        if (a.lang = l(a.lang), a.extensions) {
           for (var n = 0, t = a.extensions; n < t.length; n++) {
             var L = t[n];
             switch (L.type) {
@@ -1400,7 +1400,7 @@ try {
                 L.keywords = e(L.keywords), L.attributes && (L.attributes = u(L.attributes));
                 break;
               case "t":
-                L.lang && (L.lang = d(L.lang)), L.fields = e(L.fields);
+                L.lang && (L.lang = l(L.lang)), L.fields = e(L.fields);
                 break;
               default:
                 L.value = L.value.toLowerCase()
@@ -1438,7 +1438,7 @@ try {
         return a.type < n.type ? -1 : a.type > n.type ? 1 : 0
       }
 
-      function l(a, n) {
+      function d(a, n) {
         for (var t = L.__spreadArray([], a, !0), b = 0, r = n; b < r.length; b++) {
           var m = r[b];
           a.indexOf(m) < 0 && t.push(m)
@@ -1446,7 +1446,7 @@ try {
         return t
       }
 
-      function d(a) {
+      function l(a) {
         var n = a;
         if (a.variants.length)
           for (var t = "", L = 0, u = a.variants; L < u.length; L++) {
@@ -1456,10 +1456,10 @@ try {
                 variants: [e]
               })]) {
               n = {
-                lang: (d = (0, k.parseUnicodeLanguageId)(t.split(k.SEPARATOR))).lang,
-                script: n.script || d.script,
-                region: n.region || d.region,
-                variants: l(n.variants, d.variants)
+                lang: (l = (0, k.parseUnicodeLanguageId)(t.split(k.SEPARATOR))).lang,
+                script: n.script || l.script,
+                region: n.region || l.region,
+                variants: d(n.variants, l.variants)
               };
               break
             }
@@ -1472,9 +1472,9 @@ try {
             variants: []
           })];
           s && (n = {
-            lang: (d = (0, k.parseUnicodeLanguageId)(s.split(k.SEPARATOR))).lang,
-            script: d.script,
-            region: d.region,
+            lang: (l = (0, k.parseUnicodeLanguageId)(s.split(k.SEPARATOR))).lang,
+            script: l.script,
+            region: l.region,
             variants: n.variants
           })
         }
@@ -1485,20 +1485,20 @@ try {
             variants: []
           })];
           i && (n = {
-            lang: (d = (0, k.parseUnicodeLanguageId)(i.split(k.SEPARATOR))).lang,
-            script: n.script || d.script,
-            region: d.region,
+            lang: (l = (0, k.parseUnicodeLanguageId)(i.split(k.SEPARATOR))).lang,
+            script: n.script || l.script,
+            region: l.region,
             variants: n.variants
           })
         }
-        var d, o = b.languageAlias[(0, r.emitUnicodeLanguageId)({
+        var l, o = b.languageAlias[(0, r.emitUnicodeLanguageId)({
           lang: n.lang,
           variants: []
         })];
         if (o && (n = {
-            lang: (d = (0, k.parseUnicodeLanguageId)(o.split(k.SEPARATOR))).lang,
-            script: n.script || d.script,
-            region: n.region || d.region,
+            lang: (l = (0, k.parseUnicodeLanguageId)(o.split(k.SEPARATOR))).lang,
+            script: n.script || l.script,
+            region: n.region || l.region,
             variants: n.variants
           }), n.region) {
           var g = n.region.toUpperCase(),

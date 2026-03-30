@@ -16,13 +16,13 @@ try {
     1423: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => b,
+        Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => u,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Label: () => b,
         Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - ライトボックスでイメージを見る",
         n = "閉じる",
-        b = "{shortcut}を押す",
-        l = "ズームイン",
+        l = "{shortcut}を押す",
+        b = "ズームイン",
         a = "{shortcut}を押す",
         i = "ズームアウト",
         d = "{shortcut}を押す",
@@ -46,8 +46,8 @@ try {
         r = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: b,
-          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Close_Button_Tooltip: l,
+          Lightbox_Zoom_In_Button_Label: b,
           Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: d,

@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "ebbd9322-097b-4364-9761-37abab58aac7", o._sentryDebugIdIdentifier = "sentry-dbid-ebbd9322-097b-4364-9761-37abab58aac7")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "ebbd9322-097b-4364-9761-37abab58aac7", o._sentryDebugIdIdentifier = "sentry-dbid-ebbd9322-097b-4364-9761-37abab58aac7")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,17 +13,17 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunkaccount_management = self.webpackChunkaccount_management || []).push([
   [4471], {
-    34471: (o, t, e) => {
-      e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => a,
-        Lightbox_Close_Button_Tooltip: () => n,
+    34471: (o, e, t) => {
+      t.r(e), t.d(e, {
+        Lightbox_Close_Button_Label: () => n,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => b,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
+        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
@@ -31,10 +31,10 @@ try {
         default: () => L
       });
       var _ = "{description} - Ver imagen",
-        a = "Cerrar",
-        n = "Presiona {shortcut}",
-        b = "Acercar",
-        l = "Presiona {shortcut}",
+        n = "Cerrar",
+        a = "Presiona {shortcut}",
+        l = "Acercar",
+        b = "Presiona {shortcut}",
         i = "Alejar",
         d = "Presiona {shortcut}",
         s = "Restablecer",
@@ -45,10 +45,10 @@ try {
         h = "Descargar",
         L = {
           Lightbox_Open_Button_Label: _,
-          Lightbox_Close_Button_Label: a,
-          Lightbox_Close_Button_Tooltip: n,
-          Lightbox_Zoom_In_Button_Label: b,
-          Lightbox_Zoom_In_Button_Tooltip: l,
+          Lightbox_Close_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Zoom_In_Button_Tooltip: b,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,

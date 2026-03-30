@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "2d3020ed-14a6-4da8-b369-e0506bb53848", e._sentryDebugIdIdentifier = "sentry-dbid-2d3020ed-14a6-4da8-b369-e0506bb53848")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f5255dc0-4b05-4379-9fae-07d31edc0654", e._sentryDebugIdIdentifier = "sentry-dbid-f5255dc0-4b05-4379-9fae-07d31edc0654")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -175,7 +175,7 @@ try {
           ONETRUST_SCRIPT_ID: "cc81fc10-5468-4b73-b37f-93a4686af46f",
           SCAPI_BASE_URL: "https://scapi.rockstargames.com",
           SCAUTH_BASE_URL: "https://signin.rockstargames.com",
-          WWW_BASE_URL: "https://rockstargames.com"
+          WWW_BASE_URL: "https://www.rockstargames.com"
         };
       const m = (u = function(e) {
         for (var t = 1; t < arguments.length; t++) {
