@@ -22,13 +22,13 @@ try {
           },
           fn: function(e, a) {
             var n = String(e),
-              d = n.split(/[ce]/),
-              t = d[1] || 0,
-              l = String(t ? Number(d[0]) * Math.pow(10, t) : n).split("."),
+              t = n.split(/[ce]/),
+              d = t[1] || 0,
+              l = String(d ? Number(t[0]) * Math.pow(10, d) : n).split("."),
               o = l[0],
               s = !l[1],
               r = o.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == t && 0 != o && 0 == r && s || t < 0 || t > 5 ? "many" : "other"
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == d && 0 != o && 0 == r && s || d < 0 || d > 5 ? "many" : "other"
           }
         },
         locale: "fr"

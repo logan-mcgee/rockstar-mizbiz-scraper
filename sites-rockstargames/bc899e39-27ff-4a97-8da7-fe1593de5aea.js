@@ -26,9 +26,9 @@ try {
         CONTAINERS: () => d,
         EMPTY_DOCUMENT: () => m,
         HEADINGS: () => h,
-        INLINES: () => i,
+        INLINES: () => a,
         LIST_ITEM_BLOCKS: () => p,
-        MARKS: () => a,
+        MARKS: () => i,
         TABLE_BLOCKS: () => y,
         TEXT_CONTAINERS: () => b,
         TOP_LEVEL_BLOCKS: () => f,
@@ -49,10 +49,10 @@ try {
       var o = function(t) {
           return t.DOCUMENT = "document", t.PARAGRAPH = "paragraph", t.HEADING_1 = "heading-1", t.HEADING_2 = "heading-2", t.HEADING_3 = "heading-3", t.HEADING_4 = "heading-4", t.HEADING_5 = "heading-5", t.HEADING_6 = "heading-6", t.OL_LIST = "ordered-list", t.UL_LIST = "unordered-list", t.LIST_ITEM = "list-item", t.HR = "hr", t.QUOTE = "blockquote", t.EMBEDDED_ENTRY = "embedded-entry-block", t.EMBEDDED_ASSET = "embedded-asset-block", t.EMBEDDED_RESOURCE = "embedded-resource-block", t.TABLE = "table", t.TABLE_ROW = "table-row", t.TABLE_CELL = "table-cell", t.TABLE_HEADER_CELL = "table-header-cell", t
         }({}),
-        i = function(t) {
+        a = function(t) {
           return t.ASSET_HYPERLINK = "asset-hyperlink", t.EMBEDDED_ENTRY = "embedded-entry-inline", t.EMBEDDED_RESOURCE = "embedded-resource-inline", t.ENTRY_HYPERLINK = "entry-hyperlink", t.HYPERLINK = "hyperlink", t.RESOURCE_HYPERLINK = "resource-hyperlink", t
         }({}),
-        a = function(t) {
+        i = function(t) {
           return t.BOLD = "bold", t.ITALIC = "italic", t.UNDERLINE = "underline", t.CODE = "code", t.SUPERSCRIPT = "superscript", t.SUBSCRIPT = "subscript", t.STRIKETHROUGH = "strikethrough", t
         }({});
 
@@ -89,8 +89,8 @@ try {
         }(l) || function() {
           throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()),
-        A = [o.DOCUMENT, o.PARAGRAPH, o.HEADING_1, o.HEADING_2, o.HEADING_3, o.HEADING_4, o.HEADING_5, o.HEADING_6, o.OL_LIST, o.UL_LIST, o.LIST_ITEM, o.HR, o.QUOTE, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, i.HYPERLINK, i.ENTRY_HYPERLINK, i.ASSET_HYPERLINK, i.EMBEDDED_ENTRY, "text"],
-        v = [a.BOLD, a.CODE, a.ITALIC, a.UNDERLINE],
+        A = [o.DOCUMENT, o.PARAGRAPH, o.HEADING_1, o.HEADING_2, o.HEADING_3, o.HEADING_4, o.HEADING_5, o.HEADING_6, o.OL_LIST, o.UL_LIST, o.LIST_ITEM, o.HR, o.QUOTE, o.EMBEDDED_ENTRY, o.EMBEDDED_ASSET, a.HYPERLINK, a.ENTRY_HYPERLINK, a.ASSET_HYPERLINK, a.EMBEDDED_ENTRY, "text"],
+        v = [i.BOLD, i.CODE, i.ITALIC, i.UNDERLINE],
         m = {
           nodeType: o.DOCUMENT,
           data: {},
@@ -120,13 +120,13 @@ try {
           n = !1,
           o = void 0;
         try {
-          for (var i, a = Object.keys(t)[Symbol.iterator](); !(r = (i = a.next()).done); r = !0)
-            if (e === t[i.value]) return !0
+          for (var a, i = Object.keys(t)[Symbol.iterator](); !(r = (a = i.next()).done); r = !0)
+            if (e === t[a.value]) return !0
         } catch (t) {
           n = !0, o = t
         } finally {
           try {
-            r || null == a.return || a.return()
+            r || null == i.return || i.return()
           } finally {
             if (n) throw o
           }
@@ -135,7 +135,7 @@ try {
       }
 
       function D(t) {
-        return _(i, t.nodeType)
+        return _(a, t.nodeType)
       }
 
       function g(t) {
@@ -286,10 +286,10 @@ try {
             if (t && !n.exists(t)) return !1;
             if (R(e)) return !0;
             var r, o = t ? n.path.of(t) : n.path,
-              i = null !== (r = null != t ? t : n.path.last()) && void 0 !== r ? r : "value";
+              a = null !== (r = null != t ? t : n.path.last()) && void 0 !== r ? r : "value";
             return n.catch(j({
               typeName: "Object",
-              property: i,
+              property: a,
               path: o,
               value: e
             })), !1
@@ -391,10 +391,10 @@ try {
             if (n.array(t)) {
               var r = n.obj[t],
                 o = !1;
-              r.forEach(function(r, i) {
+              r.forEach(function(r, a) {
                 if (!o) {
-                  var a = e(r, n.path.of(t).of(i));
-                  a.length > 0 && (o = !0), n.catch.apply(n, C(a))
+                  var i = e(r, n.path.of(t).of(a));
+                  i.length > 0 && (o = !0), n.catch.apply(n, C(i))
                 }
               })
             }
@@ -524,10 +524,10 @@ try {
                   nodeTypes: this.contentRule
                 } : this.contentRule(t, e),
                 o = n.nodeTypes,
-                i = n.min,
-                a = void 0 === i ? 0 : i;
-              if (0 === o.length && a > 0) throw new Error("Invalid content rule. Cannot have enforce a 'min' of ".concat(a, " with no nodeTypes"));
-              if (r.minLength("content", a), 0 === o.length ? r.empty("content") : r.each("content", function(t, e) {
+                a = n.min,
+                i = void 0 === a ? 0 : a;
+              if (0 === o.length && i > 0) throw new Error("Invalid content rule. Cannot have enforce a 'min' of ".concat(i, " with no nodeTypes"));
+              if (r.minLength("content", i), 0 === o.length ? r.empty("content") : r.each("content", function(t, e) {
                   var r = new M(t, e);
                   return r.object() ? (r.enum("nodeType", o), r.errors) : r.errors
                 }), r.object("data")) {
@@ -548,8 +548,8 @@ try {
             }]), "linkType", void 0), K(n, "type", void 0), K(n, "assertLink", void 0), n.linkType = t, n.assertLink = function(t, e) {
               var r = new M(t, e);
               if (r.object("target")) {
-                var o, i = new M(t.target.sys, e.of("target").of("sys"));
-                i.object() && (i.enum("type", [n.type]), i.enum("linkType", [n.linkType]), "Link" === n.type ? (i.string("id"), i.noAdditionalProperties(["type", "linkType", "id"])) : "ResourceLink" === n.type && (i.string("urn"), i.noAdditionalProperties(["type", "linkType", "urn"]))), (o = r).catch.apply(o, V(i.errors))
+                var o, a = new M(t.target.sys, e.of("target").of("sys"));
+                a.object() && (a.enum("type", [n.type]), a.enum("linkType", [n.linkType]), "Link" === n.type ? (a.string("id"), a.noAdditionalProperties(["type", "linkType", "id"])) : "ResourceLink" === n.type && (a.string("urn"), a.noAdditionalProperties(["type", "linkType", "urn"]))), (o = r).catch.apply(o, V(a.errors))
               }
               return r.noAdditionalProperties(["target"]), r.errors
             }, n.type = n.linkType.startsWith("Contentful:") ? "ResourceLink" : "Link", n
@@ -631,7 +631,7 @@ try {
         return n
       }
 
-      function it(t, e, r) {
+      function at(t, e, r) {
         return e in t ? Object.defineProperty(t, e, {
           value: r,
           enumerable: !0,
@@ -640,7 +640,7 @@ try {
         }) : t[e] = r, t
       }
 
-      function at(t) {
+      function it(t) {
         return function(t) {
           if (Array.isArray(t)) return ot(t)
         }(t) || function(t) {
@@ -655,7 +655,7 @@ try {
           throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
-      var ut, ct = Z(at(Object.values(i)).concat(["text"]).sort()),
+      var ut, ct = Z(it(Object.values(a)).concat(["text"]).sort()),
         st = Z([o.LIST_ITEM]),
         lt = tt("Entry", q),
         ft = Z(function() {
@@ -667,17 +667,17 @@ try {
           var r = new M(t, e);
           return r.noAdditionalProperties(["colspan", "rowspan"]), r.number("colspan", !0), r.number("rowspan", !0), r.errors
         }),
-        pt = (it(ut = {}, o.DOCUMENT, Z(f)), it(ut, o.PARAGRAPH, ct), it(ut, o.HEADING_1, ct), it(ut, o.HEADING_2, ct), it(ut, o.HEADING_3, ct), it(ut, o.HEADING_4, ct), it(ut, o.HEADING_5, ct), it(ut, o.HEADING_6, ct), it(ut, o.QUOTE, Z(d[o.QUOTE])), it(ut, o.EMBEDDED_ENTRY, lt), it(ut, o.EMBEDDED_ASSET, tt("Asset", q)), it(ut, o.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), it(ut, o.HR, Z(q)), it(ut, o.OL_LIST, st), it(ut, o.UL_LIST, st), it(ut, o.LIST_ITEM, Z(at(p).sort())), it(ut, o.TABLE, Z(function() {
+        pt = (at(ut = {}, o.DOCUMENT, Z(f)), at(ut, o.PARAGRAPH, ct), at(ut, o.HEADING_1, ct), at(ut, o.HEADING_2, ct), at(ut, o.HEADING_3, ct), at(ut, o.HEADING_4, ct), at(ut, o.HEADING_5, ct), at(ut, o.HEADING_6, ct), at(ut, o.QUOTE, Z(d[o.QUOTE])), at(ut, o.EMBEDDED_ENTRY, lt), at(ut, o.EMBEDDED_ASSET, tt("Asset", q)), at(ut, o.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), at(ut, o.HR, Z(q)), at(ut, o.OL_LIST, st), at(ut, o.UL_LIST, st), at(ut, o.LIST_ITEM, Z(it(p).sort())), at(ut, o.TABLE, Z(function() {
           return {
             nodeTypes: [o.TABLE_ROW],
             min: 1
           }
-        })), it(ut, o.TABLE_ROW, Z(function() {
+        })), at(ut, o.TABLE_ROW, Z(function() {
           return {
             nodeTypes: [o.TABLE_CELL, o.TABLE_HEADER_CELL],
             min: 1
           }
-        })), it(ut, o.TABLE_CELL, ft), it(ut, o.TABLE_HEADER_CELL, ft), it(ut, i.HYPERLINK, new X), it(ut, i.EMBEDDED_ENTRY, lt), it(ut, i.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), it(ut, i.ENTRY_HYPERLINK, tt("Entry", ["text"])), it(ut, i.ASSET_HYPERLINK, tt("Asset", ["text"])), it(ut, i.RESOURCE_HYPERLINK, tt("Contentful:Entry", ["text"])), ut);
+        })), at(ut, o.TABLE_CELL, ft), at(ut, o.TABLE_HEADER_CELL, ft), at(ut, a.HYPERLINK, new X), at(ut, a.EMBEDDED_ENTRY, lt), at(ut, a.EMBEDDED_RESOURCE, tt("Contentful:Entry", q)), at(ut, a.ENTRY_HYPERLINK, tt("Entry", ["text"])), at(ut, a.ASSET_HYPERLINK, tt("Asset", ["text"])), at(ut, a.RESOURCE_HYPERLINK, tt("Contentful:Entry", ["text"])), ut);
 
       function yt(t, e) {
         if ("text" === t.nodeType) return function(t, e) {
