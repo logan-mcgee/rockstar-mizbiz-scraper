@@ -27,8 +27,8 @@ try {
               o = String(l ? Number(n[0]) * Math.pow(10, l) : t).split("."),
               d = o[0],
               s = !o[1],
-              f = d.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == l && 0 != d && 0 == f && s || l < 0 || l > 5 ? "many" : "other"
+              r = d.slice(-6);
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == l && 0 != d && 0 == r && s || l < 0 || l > 5 ? "many" : "other"
           }
         },
         locale: "fr"

@@ -25,8 +25,8 @@ try {
         Lightbox_Zoom_In_Button_Label: () => b,
         Lightbox_Zoom_In_Button_Tooltip: () => u,
         Lightbox_Zoom_Out_Button_Label: () => g,
-        Lightbox_Zoom_Out_Button__Tooltip: () => f,
-        Lightbox_Zoom_Slider_Label: () => r,
+        Lightbox_Zoom_Out_Button__Tooltip: () => r,
+        Lightbox_Zoom_Slider_Label: () => f,
         Lightbox_Zoom_Slider_Tooltip: () => h,
         default: () => L
       });
@@ -40,8 +40,8 @@ try {
         b = "Zoom in",
         u = "Press {shortcut}",
         g = "Zoom out",
-        f = "Press {shortcut}",
-        r = "Zoom level",
+        r = "Press {shortcut}",
+        f = "Zoom level",
         h = "{zoom}%",
         L = {
           Lightbox_Close_Button_Label: _,
@@ -54,8 +54,8 @@ try {
           Lightbox_Zoom_In_Button_Label: b,
           Lightbox_Zoom_In_Button_Tooltip: u,
           Lightbox_Zoom_Out_Button_Label: g,
-          Lightbox_Zoom_Out_Button__Tooltip: f,
-          Lightbox_Zoom_Slider_Label: r,
+          Lightbox_Zoom_Out_Button__Tooltip: r,
+          Lightbox_Zoom_Slider_Label: f,
           Lightbox_Zoom_Slider_Tooltip: h
         }
     }

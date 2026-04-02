@@ -44,7 +44,7 @@ try {
           "swiper-rtl": "rockstargames-modules-core-newswire-articlec658d9e1c69cce7a4a70ef2d52858eba",
           top: "rockstargames-modules-core-newswire-articleec807ccbb44eb584b15097ea4127de46"
         },
-        b = ({
+        u = ({
           shouldFade: e,
           condition: a,
           className: t,
@@ -53,7 +53,7 @@ try {
           className: c()(t, e ? f.fadeIn : "", a ? f.active : ""),
           children: s
         }),
-        u = ({
+        b = ({
           currentSlide: e,
           prevRef: a,
           nextRef: t
@@ -85,7 +85,7 @@ try {
           item: e,
           vertical: a,
           horizontal: t
-        }) => e && e?.content ? (0, r.jsx)(b, {
+        }) => e && e?.content ? (0, r.jsx)(u, {
           shouldFade: e?.fadeIn,
           condition: e?.fadeIn,
           className: c()(f.slot, f[a], f[t]),
@@ -99,7 +99,7 @@ try {
           foregroundContent: t
         }) => (0, r.jsxs)("div", {
           className: f.slideContent,
-          children: [a && (0, r.jsx)(b, {
+          children: [a && (0, r.jsx)(u, {
             shouldFade: a?.fadeIn,
             condition: e,
             children: (0, r.jsx)("div", {
@@ -108,7 +108,7 @@ try {
                 ...a.imageWithBadge
               })
             })
-          }), t && (0, r.jsx)(b, {
+          }), t && (0, r.jsx)(u, {
             shouldFade: t?.fadeIn,
             condition: e,
             children: (0, r.jsx)("div", {
@@ -125,13 +125,13 @@ try {
           centeredSlides: t = !0,
           slides: i = null
         }) => {
-          const [l, d] = (0, s.useState)(null), b = (0, s.useRef)(null), w = (0, s.useRef)(null), [p, h] = (0, s.useState)();
+          const [l, d] = (0, s.useState)(null), u = (0, s.useRef)(null), w = (0, s.useRef)(null), [p, h] = (0, s.useState)();
           return (0, s.useEffect)(() => {
             h({
               nextEl: w.current,
-              prevEl: b.current
+              prevEl: u.current
             })
-          }, [w, b]), i ? (0, r.jsx)("div", {
+          }, [w, u]), i ? (0, r.jsx)("div", {
             className: f.panoramaCarouselWrapper,
             children: (0, r.jsxs)(n.RC, {
               loop: e,
@@ -147,7 +147,7 @@ try {
                 d(i[e?.realIndex ?? 0])
               },
               onInit: e => {
-                e.params.navigation.prevEl = b.current, e.params.navigation.nextEl = w.current, e?.navigation.init(), e?.navigation.update()
+                e.params.navigation.prevEl = u.current, e.params.navigation.nextEl = w.current, e?.navigation.init(), e?.navigation.update()
               },
               breakpoints: {
                 768: {
@@ -193,9 +193,9 @@ try {
                   vertical: "bottom",
                   horizontal: "right"
                 })]
-              }), (0, r.jsx)(u, {
+              }), (0, r.jsx)(b, {
                 currentSlide: l,
-                prevRef: b,
+                prevRef: u,
                 nextRef: w
               })]
             })

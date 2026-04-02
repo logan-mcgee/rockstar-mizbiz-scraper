@@ -68,7 +68,7 @@ try {
       }
 
       function g(n) {
-        return v(n).map(Number)
+        return b(n).map(Number)
       }
 
       function m(n) {
@@ -83,16 +83,16 @@ try {
         return t === h(n)
       }
 
-      function b(n, t = 0) {
+      function v(n, t = 0) {
         return Array.from(Array(n), (n, e) => t + e)
       }
 
-      function v(n) {
+      function b(n) {
         return Object.keys(n)
       }
 
       function w(n, t) {
-        return [n, t].reduce((n, t) => (v(t).forEach(e => {
+        return [n, t].reduce((n, t) => (b(t).forEach(e => {
           const r = n[e],
             o = t[e],
             i = d(r) && d(o);
@@ -185,7 +185,7 @@ try {
         return a
       }
 
-      function A(n, t, e, r, o, i, c, u, s, d, g, m, h, y, b, v, w, k, A) {
+      function A(n, t, e, r, o, i, c, u, s, d, g, m, h, y, v, b, w, k, A) {
         const {
           cross: M,
           direction: D
@@ -197,7 +197,7 @@ try {
         }, C = {
           mouse: 500,
           touch: 600
-        }, F = b ? 43 : 25;
+        }, F = v ? 43 : 25;
         let _ = !1,
           j = 0,
           R = 0,
@@ -217,16 +217,16 @@ try {
             if (z = c > s, !z) return V(n)
           }
           const a = i.pointerMove(n);
-          c > v && (H = !0), d.useFriction(.3).useDuration(.75), u.start(), o.add(D(a)), n.preventDefault()
+          c > b && (H = !0), d.useFriction(.3).useDuration(.75), u.start(), o.add(D(a)), n.preventDefault()
         }
 
         function V(n) {
           const t = g.byDistance(0, !1).index !== m.get(),
-            e = i.pointerUp(n) * (b ? C : P)[W ? "mouse" : "touch"],
+            e = i.pointerUp(n) * (v ? C : P)[W ? "mouse" : "touch"],
             r = function(n, t) {
               const e = m.add(-1 * f(n)),
-                r = g.byDistance(n, !b).distance;
-              return b || l(n) < N ? r : w && t ? .5 * r : g.byIndex(e.get(), 0).distance
+                r = g.byDistance(n, !v).distance;
+              return v || l(n) < N ? r : w && t ? .5 * r : g.byIndex(e.get(), 0).distance
             }(D(e), t),
             o = function(n, t) {
               if (0 === n || 0 === t) return 0;
@@ -236,7 +236,7 @@ try {
             }(e, r),
             c = F - 10 * o,
             u = k + o / 50;
-          z = !1, $ = !1, T.clear(), d.useDuration(c).useFriction(u), s.distance(r, !b), W = !1, h.emit("pointerUp")
+          z = !1, $ = !1, T.clear(), d.useDuration(c).useFriction(u), s.distance(r, !v), W = !1, h.emit("pointerUp")
         }
 
         function q(n) {
@@ -249,7 +249,7 @@ try {
             function u(u) {
               (a(A) || A(n, u)) && function(n) {
                 const u = x(n, r);
-                W = u, H = b && u && !n.buttons && _, _ = p(o.get(), c.get()) >= 2, u && 0 !== n.button || function(n) {
+                W = u, H = v && u && !n.buttons && _, _ = p(o.get(), c.get()) >= 2, u && 0 !== n.button || function(n) {
                   const t = n.nodeName || "";
                   return L.includes(t)
                 }(n.target) || ($ = !0, i.pointerDown(n), d.useFriction(0).useDuration(0), o.set(c), function() {
@@ -632,13 +632,13 @@ try {
               }(n, e) : function(n) {
                 return n.length ? g(n).reduce((e, u, g) => {
                   const y = m(e) || 0,
-                    b = 0 === y,
-                    v = u === h(n),
+                    v = 0 === y,
+                    b = u === h(n),
                     w = o[d] - i[y][d],
                     x = o[d] - i[u][f],
-                    S = !r && b ? p(c) : 0,
-                    E = l(x - (!r && v ? p(s) : 0) - (w + S));
-                  return g && E > t + a && e.push(u), v && e.push(n.length), e
+                    S = !r && v ? p(c) : 0,
+                    E = l(x - (!r && b ? p(s) : 0) - (w + S));
+                  return g && E > t + a && e.push(u), b && e.push(n.length), e
                 }, []).map((t, e, r) => {
                   const o = Math.max(r[e - 1] || 0);
                   return n.slice(o, t)
@@ -700,7 +700,7 @@ try {
           return {
             limit: E(e ? r - n : m(t), r)
           }
-        }(dn, pn, F), mn = k(h(pn), C, F), hn = mn.clone(), yn = g(e), bn = function(n, t, e, r) {
+        }(dn, pn, F), mn = k(h(pn), C, F), hn = mn.clone(), yn = g(e), vn = function(n, t, e, r) {
           const o = S(),
             i = 1e3 / 60;
           let c = null,
@@ -766,7 +766,7 @@ try {
           h && s.stop();
           const y = e.get() * f + o.get() * (1 - f);
           r.set(y), l && (i.loop(n.direction()), c.loop()), t.to(r.get()), h && a.emit("settle"), m || a.emit("scroll")
-        })(Nn, n)), vn = pn[mn.get()], wn = O(vn), xn = O(vn), Sn = O(vn), En = O(vn), kn = function(n, t, e, r, o) {
+        })(Nn, n)), bn = pn[mn.get()], wn = O(bn), xn = O(bn), Sn = O(bn), En = O(bn), kn = function(n, t, e, r, o) {
           let i = 0,
             c = 0,
             u = o,
@@ -879,7 +879,7 @@ try {
               u(o.byIndex(r.get(), e))
             }
           }
-        }(bn, mn, hn, kn, An, En, c), Dn = function(n) {
+        }(vn, mn, hn, kn, An, En, c), Dn = function(n) {
           const {
             max: t,
             length: e
@@ -913,7 +913,7 @@ try {
               if (n && c) return c;
               if (!n && u) return u;
               const t = function(n) {
-                return v(o).reduce((t, e) => {
+                return b(o).reduce((t, e) => {
                   const r = parseInt(e),
                     {
                       isIntersecting: i
@@ -940,7 +940,7 @@ try {
               return 1 === e.length ? [i] : o ? r : r.slice(u, s).map((n, t, e) => {
                 const r = !t,
                   o = y(e, t);
-                return r ? b(m(e[0]) + 1) : o ? b(h(i) - m(e)[0] + 1, m(e)[0]) : n
+                return r ? v(m(e[0]) + 1) : o ? v(h(i) - m(e)[0] + 1, m(e)[0]) : n
               })
             }()
           }
@@ -974,9 +974,9 @@ try {
           eventHandler: c,
           containerRect: X,
           slideRects: Y,
-          animation: bn,
+          animation: vn,
           axis: J,
-          dragHandler: A(J, n, r, o, En, M(J, o), wn, bn, Mn, kn, An, mn, c, K, j, R, H, .68, q),
+          dragHandler: A(J, n, r, o, En, M(J, o), wn, vn, Mn, kn, An, mn, c, K, j, R, H, .68, q),
           eventStore: Ln,
           percentOfView: K,
           index: mn,
@@ -1038,11 +1038,11 @@ try {
           mergeOptions: t,
           optionsAtMedia: function(e) {
             const r = e.breakpoints || {},
-              o = v(r).filter(t => n.matchMedia(t).matches).map(n => r[n]).reduce((n, e) => t(n, e), {});
+              o = b(r).filter(t => n.matchMedia(t).matches).map(n => r[n]).reduce((n, e) => t(n, e), {});
             return t(e, o)
           },
           optionsMediaQueries: function(t) {
-            return t.map(n => v(n.breakpoints || {})).reduce((n, t) => n.concat(t), []).map(n.matchMedia)
+            return t.map(n => b(n.breakpoints || {})).reduce((n, t) => n.concat(t), []).map(n.matchMedia)
           }
         }
       }
@@ -1103,13 +1103,13 @@ try {
             emit: m
           } = a,
           h = L;
-        let y, b, v, w, x = !1,
+        let y, v, b, w, x = !1,
           E = d(F, j.globalOptions),
           k = d(E),
           A = [];
 
         function M(t) {
-          const e = C(n, v, w, r, o, t, a);
+          const e = C(n, b, w, r, o, t, a);
           return t.loop && !e.slideLooper.canLoop() ? M(Object.assign({}, t, {
             loop: !1
           })) : e
@@ -1121,12 +1121,12 @@ try {
               container: t,
               slides: e
             } = k, r = s(t) ? n.querySelector(t) : t;
-            v = r || n.children[0];
-            const o = s(e) ? v.querySelectorAll(e) : e;
-            w = [].slice.call(o || v.children)
+            b = r || n.children[0];
+            const o = s(e) ? b.querySelectorAll(e) : e;
+            w = [].slice.call(o || b.children)
           }(), y = M(k), f([E, ...A.map(({
             options: n
-          }) => n)]).forEach(n => u.add(n, "change", L)), k.active && (y.translate.to(y.location.get()), y.animation.init(), y.slidesInView.init(), y.slideFocus.init(N), y.eventHandler.init(N), y.resizeHandler.init(N), y.slidesHandler.init(N), y.options.loop && y.slideLooper.loop(), v.offsetParent && w.length && y.dragHandler.init(N), b = c.init(N, A)))
+          }) => n)]).forEach(n => u.add(n, "change", L)), k.active && (y.translate.to(y.location.get()), y.animation.init(), y.slidesInView.init(), y.slideFocus.init(N), y.eventHandler.init(N), y.resizeHandler.init(N), y.slidesHandler.init(N), y.options.loop && y.slideLooper.loop(), b.offsetParent && w.length && y.dragHandler.init(N), v = c.init(N, A)))
         }
 
         function L(n, t) {
@@ -1155,7 +1155,7 @@ try {
             return y.index.add(-1).get() !== T()
           },
           containerNode: function() {
-            return v
+            return b
           },
           internalEngine: function() {
             return y
@@ -1167,7 +1167,7 @@ try {
           on: p,
           emit: m,
           plugins: function() {
-            return b
+            return v
           },
           previousScrollSnap: function() {
             return y.indexPrevious.get()

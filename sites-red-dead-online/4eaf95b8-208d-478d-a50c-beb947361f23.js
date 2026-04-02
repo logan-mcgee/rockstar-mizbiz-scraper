@@ -146,7 +146,7 @@ try {
             g = s?.clientId ?? n,
             p = r?.marketingAuthTLD ?? w,
             v = s?.scHost ?? c,
-            b = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            y = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${h}.rockstargames.com`,
             graphEnv: s?.graphEnv ?? a,
@@ -164,7 +164,7 @@ try {
             signup: `https://${m}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
-            pingBearer: `https://${p}/${b}`,
+            pingBearer: `https://${p}/${y}`,
             authCookieName: "BearerToken"
           }
         },
@@ -312,7 +312,7 @@ try {
         vx: () => E,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => b.useNewswirePost,
+        CA: () => y.useNewswirePost,
         OG: () => i,
         ZC: () => d,
         sq: () => u,
@@ -435,13 +435,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var b = n(89656),
-        y = (n(95342), n(17954));
+      var y = n(89656),
+        b = (n(95342), n(17954));
       const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, m.A)(), s = (0, a.A)(), r = (0, y.t)(s);
+        } = (0, m.A)(), s = (0, a.A)(), r = (0, b.t)(s);
         let o = "";
         return o += "lang=" + encodeURIComponent(r), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -567,20 +567,20 @@ try {
               ...p,
               url: f
             }),
-            b = await (0, s.sc)(v);
+            y = await (0, s.sc)(v);
           if (u) {
-            if (w[b]?.response) return w[b].response;
-            if (w[b]?.loading) return {
+            if (w[y]?.response) return w[y].response;
+            if (w[y]?.loading) return {
               error: null,
               result: null
             };
-            w[b] = {
+            w[y] = {
               loading: !0
             }
           }
-          const y = await fetch(f, p),
-            k = await y.json();
-          return u && (w[b] = {
+          const b = await fetch(f, p),
+            k = await b.json();
+          return u && (w[y] = {
             response: k,
             loading: !1
           }), k

@@ -25,12 +25,12 @@ try {
         o = t(93497),
         i = t(58136),
         c = t(61874);
-      const f = {
+      const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
           inputs: "rockstargames-modules-core-videoplayerca3ab235303ed1b84f9c867fe5393c3a"
         },
-        u = Object.freeze({
+        f = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
@@ -47,7 +47,7 @@ try {
             data: b
           } = (0, c.useRockstarUser)(), {
             track: y
-          } = (0, c.useGtmTrack)(), h = (0, i.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? u.PASSED : "0" === w ? u.FAILED : u.NOT_SUBMITTED);
+          } = (0, c.useGtmTrack)(), h = (0, i.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? f.PASSED : "0" === w ? f.FAILED : f.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, n.useState)(), x = (0, n.createRef)(), D = (0, n.createRef)(), j = (0, n.createRef)(), {
             style: E
@@ -57,23 +57,23 @@ try {
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }, []), _ === u.PASSED || !1 === b?.isAMinor ? a : _ === u.FAILED ? (0, s.jsxs)("div", {
-            className: f.agegate,
+          }, []), _ === f.PASSED || !1 === b?.isAMinor ? a : _ === f.FAILED ? (0, s.jsxs)("div", {
+            className: u.agegate,
             style: E,
             children: [t?.header, (0, s.jsx)("h2", {
               children: m("agegate_fail")
             })]
           }) : (0, s.jsxs)("div", {
-            className: f.agegate,
+            className: u.agegate,
             style: E,
             ...p,
             children: [t?.header, (0, s.jsx)("div", {
-              className: f.bg,
+              className: u.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
             }), !1 === k && (0, s.jsx)("h5", {
-              className: f.error,
+              className: u.error,
               children: m("Please enter a valid age")
             }), (0, s.jsxs)("form", {
               name: "agegate",
@@ -102,7 +102,7 @@ try {
               children: [(0, s.jsx)("h5", {
                 children: m("agegate_header")
               }), (0, s.jsxs)("div", {
-                className: f.inputs,
+                className: u.inputs,
                 children: [(0, s.jsxs)("label", {
                   htmlFor: "monthInput",
                   children: [m("Month"), (0, s.jsx)("input", {
@@ -128,7 +128,7 @@ try {
                   children: [m("Year"), (0, s.jsx)("input", {
                     id: "yearInput",
                     ref: j,
-                    className: f.year,
+                    className: u.year,
                     placeholder: m("YYYY"),
                     maxLength: 4,
                     type: "number",
@@ -136,7 +136,7 @@ try {
                   })]
                 }), (0, s.jsx)("button", {
                   type: "submit",
-                  className: f.submit,
+                  className: u.submit,
                   children: m("SUBMIT")
                 })]
               })]

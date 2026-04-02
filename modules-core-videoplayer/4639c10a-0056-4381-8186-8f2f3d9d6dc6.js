@@ -25,19 +25,19 @@ try {
         l = d(56990),
         s = d(61874),
         i = d(68517),
-        f = d(52542);
-      const u = window?.env?.graphEnv ?? "prod",
+        u = d(52542);
+      const f = window?.env?.graphEnv ?? "prod",
         c = (0, l.withIntl)(() => {
-          const [e, t] = (0, r.useSearchParams)(), d = "true" === e.get("autoplay"), n = e.get("id"), l = e.get("resolution") ?? "", f = e.get("locale") ?? "en_us", u = Number(e.get("start") ?? 0);
+          const [e, t] = (0, r.useSearchParams)(), d = "true" === e.get("autoplay"), n = e.get("id"), l = e.get("resolution") ?? "", u = e.get("locale") ?? "en_us", f = Number(e.get("start") ?? 0);
           return n ? (0, a.jsx)(o.ResizeProvider, {
             children: (0, a.jsx)(s.GtmProvider, {
               children: (0, a.jsx)(i.A, {
                 autoplay: d,
                 context: "embed",
-                locale: f,
+                locale: u,
                 id: n,
                 resolution: l,
-                start: u,
+                start: f,
                 wrapper: !1,
                 videoChangeCallback: (e, d, a) => {
                   let o = {
@@ -54,18 +54,18 @@ try {
               })
             })
           }) : null
-        }, f),
+        }, u),
         g = (0, o.withRockstarGraph)(() => (0, a.jsx)(r.BrowserRouter, {
           children: (0, a.jsx)(c, {})
         }), {
-          env: u
+          env: f
         }),
         y = window?.env?.gtmId ?? null;
       (0, o.gtmInit)({
         id: y
       });
-      const b = document.createElement("main");
-      document.body.appendChild(b), (0, n.H)(b).render((0, a.jsx)(g, {}))
+      const p = document.createElement("main");
+      document.body.appendChild(p), (0, n.H)(p).render((0, a.jsx)(g, {}))
     }
   }
 ]);

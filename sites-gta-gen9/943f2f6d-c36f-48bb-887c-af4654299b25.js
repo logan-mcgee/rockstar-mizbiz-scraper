@@ -34,7 +34,7 @@ try {
         ResizeProvider: () => Ce.uU,
         RockstarGraphProvider: () => z,
         RockstarTokenProvider: () => A.ec,
-        ScrollProvider: () => de.N2,
+        ScrollProvider: () => ce.N2,
         coreScApiFetch: () => o.A,
         detectIfWeShouldAnchorSomewhere: () => Q.wC,
         downloadFile: () => Q.PE,
@@ -57,7 +57,7 @@ try {
         mutateWebSettings: () => Se,
         newswirePost: () => q,
         oneTrustInit: () => X,
-        safeStyles: () => c,
+        safeStyles: () => l,
         scrollToElement: () => Q.PA,
         setContextItem: () => u.A,
         setCookieValue: () => Q.My,
@@ -71,10 +71,10 @@ try {
         useDataLayer: () => pe,
         useHasReduceMotionPreference: () => ie.vx,
         useHasSaveDataPreference: () => ie.sb,
-        useLazyQuery: () => le._,
+        useLazyQuery: () => de._,
         useLocale: () => ie.Ym,
         useMutateState: () => y,
-        useMutation: () => ce.n,
+        useMutation: () => le.n,
         useNewswirePost: () => ie.CA,
         usePreloadImg: () => ie.OG,
         usePrevious: () => ie.ZC,
@@ -89,7 +89,7 @@ try {
         useRockstarWebSettings: () => Pe,
         useScApi: () => ie.Cb,
         useScAuthLinks: () => ie.N6,
-        useScroll: () => de.Ll,
+        useScroll: () => ce.Ll,
         useScrollTracking: () => ie.GA,
         useScrollVisibility: () => ie.JE,
         useState: () => w,
@@ -121,10 +121,10 @@ try {
         }
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
-      var d = n(10336),
-        l = n.n(d);
-      const c = e => {
-        const t = l().clone(e);
+      var c = n(10336),
+        d = n.n(c);
+      const l = e => {
+        const t = d().clone(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), t?.["z-index"] && (t.zIndex = t["z-index"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
       var u = n(9482),
@@ -207,7 +207,7 @@ try {
             } = (0, M.IT)(e, n);
           return (0, h.useEffect)(() => {
             if (o && n.setTitleDataPath) {
-              const e = l().get(o, n.setTitleDataPath) ?? null;
+              const e = d().get(o, n.setTitleDataPath) ?? null;
               e && window.postMessage({
                 type: "graph.titleUpdate",
                 title: e
@@ -372,7 +372,7 @@ try {
             }), t) : t
           };
           return (0, h.useEffect)(() => {
-            const e = l().debounce(() => {
+            const e = d().debounce(() => {
               a(r(t))
             }, n);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -408,9 +408,9 @@ query Translations($locale: String!, $config: String!) {
           }) : null
         })(e, n, t);
       var ie = n(56088),
-        de = n(95342),
-        le = n(66591),
-        ce = n(80701);
+        ce = n(95342),
+        de = n(66591),
+        le = n(80701);
       const ue = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "gtmDatalayer"
@@ -491,7 +491,7 @@ query Translations($locale: String!, $config: String!) {
         lv: () => i,
         wC: () => a,
         PE: () => k,
-        rB: () => l,
+        rB: () => d,
         tC: () => f,
         yh: () => v,
         Ap: () => p,
@@ -566,15 +566,15 @@ query Translations($locale: String!, $config: String!) {
           googlePlay: new s("ggle_play", "Google Play", 1023, "googleplay"),
           pcalt: new s("pcalt", "PC Enhanced", 22, "sc")
         }),
-        d = Object.freeze(Object.values(i));
+        c = Object.freeze(Object.values(i));
 
-      function l(e) {
+      function d(e) {
         if (!e) return;
         if (e instanceof s) return e;
         const t = e.toString().toLowerCase();
-        return d.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
+        return c.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
-      var c = n(6306),
+      var l = n(6306),
         u = n(12914);
       const p = e => {
           const t = document.cookie.split("; "),
@@ -584,7 +584,7 @@ query Translations($locale: String!, $config: String!) {
           return a
         },
         g = (e, t) => {
-          e && void 0 !== t && (0, c.canStoreCookie)(e) && p(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,u.F)()}; path=/;`)
+          e && void 0 !== t && (0, l.canStoreCookie)(e) && p(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,u.F)()}; path=/;`)
         };
       var h = n(56990),
         m = n(45547);
@@ -646,7 +646,7 @@ query Translations($locale: String!, $config: String!) {
     },
     79867: (e, t, n) => {
       n.d(t, {
-        A: () => l,
+        A: () => d,
         C: () => i
       });
       var o = n(56265),
@@ -661,7 +661,7 @@ query Translations($locale: String!, $config: String!) {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        d = [{
+        c = [{
           id: "prod",
           sites: {
             www: "www",
@@ -673,14 +673,14 @@ query Translations($locale: String!, $config: String!) {
           },
           cookieIdentifier: "prod"
         }],
-        l = () => {
+        d = () => {
           let e;
           const {
             location: t
-          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = d.findIndex(t => Object.entries(t.sites).findIndex(([t, o]) => o === n && (e = {
+          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = c.findIndex(t => Object.entries(t.sites).findIndex(([t, o]) => o === n && (e = {
             site: t,
             subDomain: o
-          }, !0)) >= 0), r = d[o >= 0 ? o : 0], i = d.find(e => e.id === r.fallbackEnvironment);
+          }, !0)) >= 0), r = c[o >= 0 ? o : 0], i = c.find(e => e.id === r.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"

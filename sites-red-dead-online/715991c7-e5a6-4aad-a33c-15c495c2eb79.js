@@ -81,7 +81,7 @@ try {
           stepsNext: "rockstargames-sites-red-dead-onlinee9cffe7e98f54fe7ef36b758e750661d",
           stepsPrevious: "rockstargames-sites-red-dead-onlineacf5035830b2f5fbecef86ce7004c918"
         },
-        b = ({
+        l = ({
           mutation: e,
           query: a,
           type: s,
@@ -90,7 +90,7 @@ try {
           const n = (0, o.useQueryParams)(),
             [r, i] = (0, t.useState)({}),
             {
-              data: b
+              data: l
             } = (0, o.useQuery)(a, {
               variables: r,
               skip: !Object.entries(r).length
@@ -108,15 +108,15 @@ try {
               dangerouslySetInnerHTML: {
                 __html: c("online-feedback-desc")
               }
-            }), b && (0, d.jsx)(l, {
+            }), l && (0, d.jsx)(b, {
               mutation: e,
-              tree: b.tree,
+              tree: l.tree,
               type: s,
               t: c
             })]
           })
         },
-        l = ({
+        b = ({
           mutation: e,
           tree: a,
           type: s,
@@ -161,14 +161,14 @@ try {
           const {
             formatMessage: c
           } = (0, n.useIntl)(), {
-            loggedIn: b
-          } = (0, r.Wx)(), l = (0, t.useRef)(null), [g, {
+            loggedIn: l
+          } = (0, r.Wx)(), b = (0, t.useRef)(null), [g, {
             data: p,
             error: m
           }] = (0, o.useMutation)(a), k = (0, t.useMemo)(() => `${(0,o.getBase)()}${location?.pathname}`.replace(/\/\//g, "/"), [location?.pathname]), {
             signInUrl: u
           } = (0, o.useScAuthLinks)(k);
-          return b ? p?.submittal?.id ? (0, d.jsx)("div", {
+          return l ? p?.submittal?.id ? (0, d.jsx)("div", {
             className: f.success,
             dangerouslySetInnerHTML: {
               __html: s("feedback.enter_success")
@@ -177,7 +177,7 @@ try {
             onSubmit: a => (a => {
               a.preventDefault(), (() => {
                 const a = {
-                  content: l.current?.value,
+                  content: b.current?.value,
                   feedback_step: e
                 };
                 g({
@@ -187,7 +187,7 @@ try {
             })(a),
             "data-testid": "feedback-form",
             children: [(0, d.jsx)("textarea", {
-              ref: l,
+              ref: b,
               maxLength: 500,
               rows: 6,
               placeholder: s("feedback.placeholder")
@@ -212,7 +212,7 @@ try {
           mutation: e,
           query: a,
           type: s
-        }) => (0, o.withTranslations)(b, "rdo" === s ? "rdr2" : s)({
+        }) => (0, o.withTranslations)(l, "rdo" === s ? "rdr2" : s)({
           mutation: e,
           query: a,
           type: s

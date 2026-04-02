@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "d16eaecf-d436-4e8f-a8ca-13f8d7f15cbd", o._sentryDebugIdIdentifier = "sentry-dbid-d16eaecf-d436-4e8f-a8ca-13f8d7f15cbd")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "d16eaecf-d436-4e8f-a8ca-13f8d7f15cbd", o._sentryDebugIdIdentifier = "sentry-dbid-d16eaecf-d436-4e8f-a8ca-13f8d7f15cbd")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,11 +13,11 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [5265], {
-    5265: (o, e, t) => {
-      t.r(e), t.d(e, {
+    5265: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => r,
+        Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -26,8 +26,8 @@ try {
         Lightbox_Zoom_In_Button_Tooltip: () => d,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
-        Lightbox_Zoom_Slider_Label: () => f,
-        Lightbox_Zoom_Slider_Tooltip: () => g,
+        Lightbox_Zoom_Slider_Label: () => g,
+        Lightbox_Zoom_Slider_Tooltip: () => r,
         default: () => L
       });
       var _ = "{description} - Zobacz obraz w podglądzie",
@@ -39,9 +39,9 @@ try {
         b = "Naciśnij {shortcut}",
         s = "Zresetuj",
         u = "Naciśnij {shortcut}",
-        f = "Poziom powiększenia",
-        g = "{zoom}%",
-        r = "Pobierz",
+        g = "Poziom powiększenia",
+        r = "{zoom}%",
+        f = "Pobierz",
         h = "Pobierz",
         L = {
           Lightbox_Open_Button_Label: _,
@@ -53,9 +53,9 @@ try {
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
-          Lightbox_Zoom_Slider_Label: f,
-          Lightbox_Zoom_Slider_Tooltip: g,
-          Lightbox_Download_Button_Label: r,
+          Lightbox_Zoom_Slider_Label: g,
+          Lightbox_Zoom_Slider_Tooltip: r,
+          Lightbox_Download_Button_Label: f,
           Lightbox_Download_Button_Tooltip: h
         }
     }

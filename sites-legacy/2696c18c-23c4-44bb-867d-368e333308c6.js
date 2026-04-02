@@ -103,14 +103,14 @@ try {
           var c = e.localeData,
             _ = (0, r.ResolveLocale)(e.availableLocales, l, o, e.relevantExtensionKeys, c, e.getDefaultLocale);
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "locale", _.locale);
-          var f = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", f);
-          var d = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
-          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", d);
-          var u = _.dataLocale,
-            p = c[u];
-          (0, n.invariant)(!!p, "Missing locale data for ".concat(u));
-          var y = p[f][d];
+          var d = (0, n.GetOption)(i, "type", "string", ["conjunction", "disjunction", "unit"], "conjunction");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "type", d);
+          var u = (0, n.GetOption)(i, "style", "string", ["long", "short", "narrow"], "long");
+          (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", u);
+          var f = _.dataLocale,
+            p = c[f];
+          (0, n.invariant)(!!p, "Missing locale data for ".concat(f));
+          var y = p[d][u];
           (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, n.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {

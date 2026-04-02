@@ -35,8 +35,8 @@ try {
     20772: (e, t, n) => {
       n.d(t, {
         ec: () => h,
-        e9: () => f,
-        Es: () => g,
+        e9: () => g,
+        Es: () => f,
         bD: () => m
       });
       var s = n(42295),
@@ -69,11 +69,11 @@ try {
           } = (0, r.useContext)(w);
           return [e]
         },
-        f = () => {
+        g = () => {
           const [e] = m();
           return (0, a.q)(e)
         },
-        g = () => {
+        f = () => {
           const [e] = m();
           return () => (async ({
             token: e
@@ -142,8 +142,8 @@ try {
         }) => {
           const h = s?.apiHost ?? e,
             m = s?.authHost ?? t,
-            f = s?.cdnBase ?? d,
-            g = s?.clientId ?? n,
+            g = s?.cdnBase ?? d,
+            f = s?.clientId ?? n,
             p = r?.marketingAuthTLD ?? w,
             v = s?.scHost ?? c,
             y = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
@@ -152,16 +152,16 @@ try {
             graphEnv: s?.graphEnv ?? a,
             host: v,
             hostname: u,
-            cdnBase: f,
+            cdnBase: g,
             key: l,
-            clientId: g,
+            clientId: f,
             cms: `https://${o}.rockstargames.com/graphql`,
             authHost: m,
             queryManifest: i,
             scBase: `https://${v}.rockstargames.com/`,
-            login: `https://${m}.rockstargames.com/connect/authorize/${g}`,
-            silentCheck: `https://${m}.rockstargames.com/connect/cors/check/${g}`,
-            signup: `https://${m}.rockstargames.com/create/?cid=${g}`,
+            login: `https://${m}.rockstargames.com/connect/authorize/${f}`,
+            silentCheck: `https://${m}.rockstargames.com/connect/cors/check/${f}`,
+            signup: `https://${m}.rockstargames.com/create/?cid=${f}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
             pingBearer: `https://${p}/${y}`,
@@ -368,8 +368,8 @@ try {
           [a, i] = (0, o.useState)(null),
           [c, u] = (0, o.useState)(!1),
           [d, h] = (0, o.useState)(null),
-          [m, f] = (0, o.useState)(!1),
-          g = (0, o.useCallback)(async (t = {}, o = null) => {
+          [m, g] = (0, o.useState)(!1),
+          f = (0, o.useCallback)(async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: a = {}
@@ -385,35 +385,35 @@ try {
             } catch (e) {
               h(String(e)), u(!1)
             } finally {
-              f(!0)
+              g(!0)
             }
             return null
           }, [e, n, s]);
         return (0, o.useEffect)(() => {
-          null === a && null === d && !c && t && g()
-        }, [t, a, d, c, g]), {
+          null === a && null === d && !c && t && f()
+        }, [t, a, d, c, f]), {
           data: a,
           error: d,
           loading: c,
-          fetch: g,
+          fetch: f,
           resolved: m
         }
       };
       var m = n(45547);
-      const f = "__RS_CUSTOM_EVENTS__",
-        g = e => `rsCustomEvent:${e}`;
-      window[f] || (window[f] = {});
+      const g = "__RS_CUSTOM_EVENTS__",
+        f = e => `rsCustomEvent:${e}`;
+      window[g] || (window[g] = {});
       const p = () => {
           const e = (e, t) => {
             if (!e) throw Error("Event name must be provided to work with custom events");
-            const n = g(e),
+            const n = f(e),
               s = new CustomEvent(n, {
                 detail: t
               });
-            window[f][n] || (window[f][n] = {
+            window[g][n] || (window[g][n] = {
               eventQueue: [],
               subscribers: []
-            }), window[f][n].eventQueue.push(s), window[f][n].subscribers.forEach(e => {
+            }), window[g][n].eventQueue.push(s), window[g][n].subscribers.forEach(e => {
               e(s.detail)
             })
           };
@@ -424,14 +424,14 @@ try {
         v = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)(() => {
-            const n = g(e);
-            return window[f][n] || (window[f][n] = {
+            const n = f(e);
+            return window[g][n] || (window[g][n] = {
               eventQueue: [],
               subscribers: []
-            }), window[f][n].subscribers.push(t), window[f][n].eventQueue.forEach(e => {
+            }), window[g][n].subscribers.push(t), window[g][n].eventQueue.forEach(e => {
               t(e.detail)
             }), () => {
-              window[f][n].subscribers = window[f][n].subscribers.filter(e => e !== t), 0 === window[f][n].subscribers.length && delete window[f][n]
+              window[g][n].subscribers = window[g][n].subscribers.filter(e => e !== t), 0 === window[g][n].subscribers.length && delete window[g][n]
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
@@ -556,16 +556,16 @@ try {
               "X-lang": l
             }
           };
-          let f = `${d}/${e}`;
-          if (null === r || i().isEmpty(r) || (f += `?${new URLSearchParams(r)}`), !h && c) return null;
+          let g = `${d}/${e}`;
+          if (null === r || i().isEmpty(r) || (g += `?${new URLSearchParams(r)}`), !h && c) return null;
           h && (m.Authorization = `Bearer ${h}`);
-          const g = {
+          const f = {
               headers: m
             },
-            p = o().all([g, t, n]),
+            p = o().all([f, t, n]),
             v = JSON.stringify({
               ...p,
-              url: f
+              url: g
             }),
             y = await (0, s.sc)(v);
           if (u) {
@@ -578,7 +578,7 @@ try {
               loading: !0
             }
           }
-          const b = await fetch(f, p),
+          const b = await fetch(g, p),
             k = await b.json();
           return u && (w[y] = {
             response: k,
@@ -649,7 +649,7 @@ try {
         }) => {
           const [t, n] = (0, r.useState)(window.pageYOffset), [a, i] = (0, r.useState)(null), [l, w] = (0, r.useState)(!1), h = (0, o.q)(c);
           let m;
-          const f = () => {
+          const g = () => {
             w(!0), clearTimeout(m), m = setTimeout(() => {
               w(!1)
             }, 2e3)
@@ -668,12 +668,12 @@ try {
             value: {
               freezeUserShouldSeeMore: h,
               pageYOffset: t,
-              pauseUserShouldSeeMore: f,
+              pauseUserShouldSeeMore: g,
               setFreezeUserShouldSeeMore: u,
               userShouldSeeMore: a
             },
             children: e
-          }), [h, t, f, a])
+          }), [h, t, g, a])
         }
     }
   }

@@ -81,14 +81,14 @@ try {
         const [, a] = (0, s.h)(), [n, k] = (0, d.useSearchParams)(), {
           pathname: v
         } = (0, d.useLocation)(), {
-          data: b,
-          loading: y
+          data: y,
+          loading: b
         } = (0, c.useQuery)(f.MetaUrlInfo, {
           variables: {
             url: v.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), g = (0, c.useLocale)(), p = b?.metaUrlInfo?.tina;
+        }), g = (0, c.useLocale)(), p = y?.metaUrlInfo?.tina;
         return (0, t.useEffect)(() => {
           const t = n.get("video");
           if (!t || !p) return void a(null);
@@ -116,7 +116,7 @@ try {
             title: "Video Modal",
             contentClassName: "rockstargames-sites-legacyc5573c7aa0bd0a87733a56baa8e82d49"
           })
-        }, [n.get("video"), g, p]), (0, t.useEffect)(() => () => a(null), []), y || p ? y ? (0, i.jsx)("div", {
+        }, [n.get("video"), g, p]), (0, t.useEffect)(() => () => a(null), []), b || p ? b ? (0, i.jsx)("div", {
           className: "rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56",
           children: (0, i.jsx)(l.A, {})
         }) : (0, i.jsx)(o.TinaParser, {

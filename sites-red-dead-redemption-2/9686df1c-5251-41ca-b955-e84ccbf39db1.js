@@ -20,8 +20,8 @@ try {
       var o = n(71127),
         r = Symbol.for("react.element"),
         d = Symbol.for("react.fragment"),
-        f = Object.prototype.hasOwnProperty,
-        a = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        a = Object.prototype.hasOwnProperty,
+        f = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -33,7 +33,7 @@ try {
         var o, d = {},
           l = null,
           i = null;
-        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) f.call(t, o) && !s.hasOwnProperty(o) && (d[o] = t[o]);
+        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) a.call(t, o) && !s.hasOwnProperty(o) && (d[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
         return {
@@ -42,14 +42,14 @@ try {
           key: l,
           ref: i,
           props: d,
-          _owner: a.current
+          _owner: f.current
         }
       }
       t.Fragment = d, t.jsx = l, t.jsxs = l
     },
     95362: (e, t, n) => {
       n.d(t, {
-        s: () => f,
+        s: () => a,
         t: () => d
       });
       var o = n(71127);
@@ -75,7 +75,7 @@ try {
         }
       }
 
-      function f(...e) {
+      function a(...e) {
         return o.useCallback(d(...e), e)
       }
     }

@@ -86,7 +86,7 @@ try {
         useScroll: () => Le.Ll,
         useScrollTracking: () => Ae.GA,
         useScrollVisibility: () => Ae.JE,
-        useState: () => b,
+        useState: () => w,
         useWindowResize: () => qe.G4,
         webSettingsReactive: () => $e,
         withAutoRouteTracking: () => Me,
@@ -130,12 +130,12 @@ try {
           context: (0, m.createContext)({}),
           key: "graphContextGet"
         }),
-        b = () => (0, m.useContext)(f),
-        w = (0, u.A)({
+        w = () => (0, m.useContext)(f),
+        b = (0, u.A)({
           context: (0, m.createContext)({}),
           key: "graphContextSet"
         }),
-        y = () => (0, m.useContext)(w),
+        y = () => (0, m.useContext)(b),
         v = ({
           children: e,
           state: t
@@ -150,7 +150,7 @@ try {
           }, [t]);
           return (0, g.jsx)(f.Provider, {
             value: t(),
-            children: (0, g.jsx)(w.Provider, {
+            children: (0, g.jsx)(b.Provider, {
               value: n,
               children: e
             })
@@ -467,13 +467,13 @@ try {
       };
       var he = n(89864),
         fe = n.n(he);
-      const be = (0, n(79867).A)(),
-        we = be?.id,
+      const we = (0, n(79867).A)(),
+        be = we?.id,
         ye = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         ve = e => {
           const t = {
             ...e,
-            environment: we,
+            environment: be,
             display_type: ye
           };
           fe().dataLayer({

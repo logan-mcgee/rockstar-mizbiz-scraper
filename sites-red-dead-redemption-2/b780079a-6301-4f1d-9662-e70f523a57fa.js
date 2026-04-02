@@ -113,7 +113,7 @@ try {
             locale: e => Promise.all([r.e(6280).then(r.t.bind(r, 29989, 23)), r(94819)(`./${e}`)])
           }
         },
-        b = {
+        h = {
           getcanonicallocales: ["getcanonicallocales"],
           locale: ["getcanonicallocales", "locale"],
           pluralrules: ["getcanonicallocales", "locale", "pluralrules"],
@@ -123,19 +123,19 @@ try {
           displaynames: ["getcanonicallocales", "locale", "displaynames"],
           listformat: ["getcanonicallocales", "locale", "listformat"]
         },
-        h = async (e, t, r) => {
+        b = async (e, t, r) => {
           const {
             shouldPolyfill: o
           } = await e.should();
           return !!o(e.locale ? t : null) && (await e.polyfill(), e.locale && await e.locale(t), !0)
         }, y = async (e, t) => {
           if (!e) throw new Error("Please provide the desired locale");
-          if (!t || !t.length) throw new Error(`Please provide the list of polyfills to load, supported ones are: ${Object.keys(b).join(", ")}`);
+          if (!t || !t.length) throw new Error(`Please provide the list of polyfills to load, supported ones are: ${Object.keys(h).join(", ")}`);
           const r = [];
           let o = 0;
           for (const n of t) {
-            if (!n || !b[n]) throw new Error(`Unsupported polyfill: ${n}. Supported ones are: ${Object.keys(b).join(", ")}`);
-            for (const t of b[n]) - 1 === r.indexOf(t) && (await h(m[t], e) && o++, r.push(t))
+            if (!n || !h[n]) throw new Error(`Unsupported polyfill: ${n}. Supported ones are: ${Object.keys(h).join(", ")}`);
+            for (const t of h[n]) - 1 === r.indexOf(t) && (await b(m[t], e) && o++, r.push(t))
           }
           return o
         };
@@ -578,13 +578,13 @@ try {
         __classPrivateFieldGet: () => D,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => N,
-        __createBinding: () => h,
+        __createBinding: () => b,
         __decorate: () => s,
         __disposeResources: () => R,
         __esDecorate: () => c,
         __exportStar: () => y,
         __extends: () => n,
-        __generator: () => b,
+        __generator: () => h,
         __importDefault: () => T,
         __importStar: () => I,
         __makeTemplateObject: () => x,
@@ -661,21 +661,21 @@ try {
         }
         for (var s, l = o.kind, c = "getter" === l ? "get" : "setter" === l ? "set" : "value", u = !t && e ? o.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, o.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
           var m = {};
-          for (var b in o) m[b] = "access" === b ? {} : o[b];
-          for (var b in o.access) m.access[b] = o.access[b];
+          for (var h in o) m[h] = "access" === h ? {} : o[h];
+          for (var h in o.access) m.access[h] = o.access[h];
           m.addInitializer = function(e) {
             if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var h = (0, r[p])("accessor" === l ? {
+          var b = (0, r[p])("accessor" === l ? {
             get: f.get,
             set: f.set
           } : f[c], m);
           if ("accessor" === l) {
-            if (void 0 === h) continue;
-            if (null === h || "object" != typeof h) throw new TypeError("Object expected");
-            (s = i(h.get)) && (f.get = s), (s = i(h.set)) && (f.set = s), (s = i(h.init)) && n.unshift(s)
-          } else(s = i(h)) && ("field" === l ? n.unshift(s) : f[c] = s)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (s = i(b.get)) && (f.get = s), (s = i(b.set)) && (f.set = s), (s = i(b.init)) && n.unshift(s)
+          } else(s = i(b)) && ("field" === l ? n.unshift(s) : f[c] = s)
         }
         u && Object.defineProperty(u, o.name, f), d = !0
       }
@@ -728,7 +728,7 @@ try {
         })
       }
 
-      function b(e, t) {
+      function h(e, t) {
         var r, o, n, a = {
             label: 0,
             sent: function() {
@@ -800,7 +800,7 @@ try {
           }
         }
       }
-      var h = Object.create ? function(e, t, r, o) {
+      var b = Object.create ? function(e, t, r, o) {
         void 0 === o && (o = r);
         var n = Object.getOwnPropertyDescriptor(t, r);
         n && !("get" in n ? !t.__esModule : n.writable || n.configurable) || (n = {
@@ -814,7 +814,7 @@ try {
       };
 
       function y(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || h(t, e, r)
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function _(e) {
@@ -987,7 +987,7 @@ try {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = $(e), o = 0; o < r.length; o++) "default" !== r[o] && h(t, e, r[o]);
+          for (var r = $(e), o = 0; o < r.length; o++) "default" !== r[o] && b(t, e, r[o]);
         return S(t, e), t
       }
 
@@ -1088,8 +1088,8 @@ try {
         __setFunctionName: d,
         __metadata: p,
         __awaiter: m,
-        __generator: b,
-        __createBinding: h,
+        __generator: h,
+        __createBinding: b,
         __exportStar: y,
         __values: _,
         __read: w,

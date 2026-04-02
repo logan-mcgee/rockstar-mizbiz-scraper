@@ -17,11 +17,11 @@ try {
       e.exports = a(9245)
     },
     9245: (e, o, a) => {
-      var f = a(1127),
-        r = Symbol.for("react.element"),
-        n = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        t = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+      var r = a(1127),
+        n = Symbol.for("react.element"),
+        t = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -29,19 +29,19 @@ try {
         };
 
       function s(e, o, a) {
-        var f, s = {},
+        var r, s = {},
           l = null,
           i = null;
-        for (f in void 0 !== a && (l = "" + a), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, f) && !d.hasOwnProperty(f) && (s[f] = o[f]);
+        for (r in void 0 !== a && (l = "" + a), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !f.hasOwnProperty(r) && (s[r] = o[r]);
         if (e && e.defaultProps)
-          for (f in o = e.defaultProps) void 0 === s[f] && (s[f] = o[f]);
+          for (r in o = e.defaultProps) void 0 === s[r] && (s[r] = o[r]);
         return {
-          $$typeof: r,
+          $$typeof: n,
           type: e,
           key: l,
           ref: i,
           props: s,
-          _owner: t.current
+          _owner: d.current
         }
       }
       o.jsx = s, o.jsxs = s

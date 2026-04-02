@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "6bcdec54-126a-457a-9de8-731e43eedcca", o._sentryDebugIdIdentifier = "sentry-dbid-6bcdec54-126a-457a-9de8-731e43eedcca")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "6bcdec54-126a-457a-9de8-731e43eedcca", o._sentryDebugIdIdentifier = "sentry-dbid-6bcdec54-126a-457a-9de8-731e43eedcca")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,12 +13,12 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
   [5265], {
-    5265: (o, e, t) => {
-      t.r(e), t.d(e, {
+    5265: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => f,
-        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Download_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -28,7 +28,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => L
+        default: () => c
       });
       var _ = "{description} - Zobacz obraz w podglądzie",
         i = "Zamknij",
@@ -41,9 +41,9 @@ try {
         u = "Naciśnij {shortcut}",
         g = "Poziom powiększenia",
         r = "{zoom}%",
-        f = "Pobierz",
         h = "Pobierz",
-        L = {
+        L = "Pobierz",
+        c = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
           Lightbox_Close_Button_Tooltip: n,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: f,
-          Lightbox_Download_Button_Tooltip: h
+          Lightbox_Download_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: L
         }
     }
   }

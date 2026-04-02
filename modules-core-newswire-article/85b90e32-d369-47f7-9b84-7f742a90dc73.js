@@ -50,7 +50,7 @@ try {
         getLanguageLabel: () => Q.rJ,
         getUriForGraphEnv: () => i,
         gql: () => oe.J1,
-        gtmInit: () => we,
+        gtmInit: () => fe,
         importAll: () => Q.pT,
         isGen9Platform: () => Q.lV,
         makeVar: () => x.UT,
@@ -92,10 +92,10 @@ try {
         useScroll: () => le.Ll,
         useScrollTracking: () => ie.GA,
         useScrollVisibility: () => ie.JE,
-        useState: () => w,
+        useState: () => f,
         useWindowResize: () => Ce.G4,
         webSettingsReactive: () => xe,
-        withAutoRouteTracking: () => fe,
+        withAutoRouteTracking: () => we,
         withGtmTracking: () => te,
         withMediaBasedProps: () => ne,
         withReactiveState: () => k,
@@ -132,11 +132,11 @@ try {
         g = n(42295),
         h = n(71127),
         m = n(93452);
-      const f = (0, u.A)({
+      const w = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "graphContextGet"
         }),
-        w = () => (0, h.useContext)(f),
+        f = () => (0, h.useContext)(w),
         b = (0, u.A)({
           context: (0, h.createContext)({}),
           key: "graphContextSet"
@@ -154,7 +154,7 @@ try {
             };
             t(n)
           }, [t]);
-          return (0, g.jsx)(f.Provider, {
+          return (0, g.jsx)(w.Provider, {
             value: t(),
             children: (0, g.jsx)(b.Provider, {
               value: n,
@@ -432,7 +432,7 @@ query Translations($locale: String!, $config: String!) {
         };
       var he = n(17954),
         me = n(10181);
-      const fe = e => t => ((e, t) => {
+      const we = e => t => ((e, t) => {
           const {
             pathname: n
           } = (0, me.useLocation)();
@@ -444,7 +444,7 @@ query Translations($locale: String!, $config: String!) {
             ...t
           })
         })(e, t),
-        we = ({
+        fe = ({
           id: e
         }) => {
           if (!e) return;
@@ -492,13 +492,13 @@ query Translations($locale: String!, $config: String!) {
         wC: () => a,
         PE: () => k,
         rB: () => d,
-        tC: () => f,
+        tC: () => w,
         yh: () => v,
         Ap: () => p,
         Xs: () => x,
         kx: () => S,
         rJ: () => C,
-        pT: () => w,
+        pT: () => f,
         lV: () => P,
         PA: () => o,
         My: () => g,
@@ -588,7 +588,7 @@ query Translations($locale: String!, $config: String!) {
         };
       var h = n(56990),
         m = n(45547);
-      const f = async ({
+      const w = async ({
         service: e,
         returnUrl: t,
         pingBearer: n
@@ -600,7 +600,7 @@ query Translations($locale: String!, $config: String!) {
           clientId: r
         } = (0, m.A)(), s = await n(), i = new URL(`tpa/${e}/link`, `https://${a}.rockstargames.com`);
         return i.searchParams.append("cid", r), i.searchParams.append("lang", o), i.searchParams.append("returnUrl", t ?? window.location.pathname), s && "boolean" != typeof s && "string" == typeof s.bearerToken && i.searchParams.append("accessToken", s.bearerToken), i
-      }, w = e => e.keys().forEach(e), b = e => e.replace(/(<([^>]+)>)/gi, ""), y = [{
+      }, f = e => e.keys().forEach(e), b = e => e.replace(/(<([^>]+)>)/gi, ""), y = [{
         key: "dev",
         path: "https://media-dev-rockstargames-com.akamaized.net"
       }, {

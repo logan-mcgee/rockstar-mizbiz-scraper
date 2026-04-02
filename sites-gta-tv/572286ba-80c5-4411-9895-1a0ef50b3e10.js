@@ -283,24 +283,24 @@ try {
           iso: "zh-CN",
           store: "zh-CN"
         }],
-        f = p[0],
-        b = p,
+        b = p[0],
+        f = p,
         m = () => {
           const {
             location: e
           } = window, o = (0, l.A)(), t = (e => {
-            const o = b.map(e => e.subdomaincom),
+            const o = f.map(e => e.subdomaincom),
               t = e.pathname.substring(1).split("/"),
               s = "detect-locals" === t[0] ? 1 : 0;
             return -1 !== o.indexOf(t[s]) ? t[s] : null
           })(e), s = (e => {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
-          })(e), r = f;
+          })(e), r = b;
           let n;
           const i = `rockstarweb_lang.${o.cookieIdentifier}`,
             a = c(i);
-          n = o.currentSite?.site === l.C.www ? b.find(e => e.subdomaincom === s) || b.find(e => e.subdomaincom === t) || r : b.find(e => e.iso === a) || r;
+          n = o.currentSite?.site === l.C.www ? f.find(e => e.subdomaincom === s) || f.find(e => e.subdomaincom === t) || r : f.find(e => e.iso === a) || r;
           const [, u] = ((e, o, t = !1) => {
             const s = c(e);
             return s && !t || d(e, o), [s, (r = e, e => {

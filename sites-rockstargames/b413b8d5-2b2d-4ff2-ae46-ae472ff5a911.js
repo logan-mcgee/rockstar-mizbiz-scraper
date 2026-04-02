@@ -26,20 +26,20 @@ try {
           y = !0;
         if ("function" != typeof t) throw new TypeError("Expected a function");
 
-        function b(e) {
+        function h(e) {
           var n = u,
             r = s;
           return u = s = void 0, v = e, c = t.apply(r, n)
         }
 
-        function h(t) {
+        function b(t) {
           var n = t - p;
           return void 0 === p || n >= e || n < 0 || w && t - v >= d
         }
 
         function m() {
           var t = o();
-          if (h(t)) return x(t);
+          if (b(t)) return x(t);
           l = setTimeout(m, function(t) {
             var n = e - (t - p);
             return w ? f(n, d - (t - v)) : n
@@ -47,17 +47,17 @@ try {
         }
 
         function x(t) {
-          return l = void 0, y && u ? b(t) : (u = s = void 0, c)
+          return l = void 0, y && u ? h(t) : (u = s = void 0, c)
         }
 
         function _() {
           var t = o(),
-            n = h(t);
+            n = b(t);
           if (u = arguments, s = this, p = t, n) {
             if (void 0 === l) return function(t) {
-              return v = t, l = setTimeout(m, e), g ? b(t) : c
+              return v = t, l = setTimeout(m, e), g ? h(t) : c
             }(p);
-            if (w) return clearTimeout(l), l = setTimeout(m, e), b(p)
+            if (w) return clearTimeout(l), l = setTimeout(m, e), h(p)
           }
           return void 0 === l && (l = setTimeout(m, e)), c
         }

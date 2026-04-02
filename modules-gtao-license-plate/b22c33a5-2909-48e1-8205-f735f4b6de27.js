@@ -17,8 +17,8 @@ try {
       t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Download_Button_Label: () => f,
-        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Download_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -41,8 +41,8 @@ try {
         u = "{shortcut} drücken",
         g = "Zoomstufe",
         r = "{zoom} %",
-        f = "Herunterladen",
         h = "Herunterladen",
+        f = "Herunterladen",
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: f,
-          Lightbox_Download_Button_Tooltip: h
+          Lightbox_Download_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: f
         }
     }
   }

@@ -17,8 +17,8 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Download_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -27,7 +27,7 @@ try {
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => f,
+        Lightbox_Zoom_Slider_Tooltip: () => h,
         default: () => r
       });
       var _ = "{description} - Просмотреть изображение в всплывающем окне",
@@ -40,9 +40,9 @@ try {
         s = "Вернуться к стандартному размеру изображения",
         u = "Нажмите {shortcut}",
         g = "Масштаб",
-        f = "{zoom}%",
-        h = "Загрузить",
+        h = "{zoom}%",
         L = "Загрузить",
+        f = "Загрузить",
         r = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
@@ -54,9 +54,9 @@ try {
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: f,
-          Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: L
+          Lightbox_Zoom_Slider_Tooltip: h,
+          Lightbox_Download_Button_Label: L,
+          Lightbox_Download_Button_Tooltip: f
         }
     }
   }

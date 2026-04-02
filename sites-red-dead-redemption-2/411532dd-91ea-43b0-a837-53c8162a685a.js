@@ -15,7 +15,7 @@ try {
   [2217, 4598], {
     42217: (e, a, t) => {
       t.r(a), t.d(a, {
-        AgeGate: () => u
+        AgeGate: () => f
       });
       var n = t(42295),
         s = t(71127),
@@ -25,21 +25,21 @@ try {
         i = t(44550),
         o = t(58136),
         c = t(32169);
-      const f = {
+      const g = {
           agegate: "rockstargames-sites-red-dead-redemption-2f9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-sites-red-dead-redemption-2aa5cfbd26930aee31e4643edcda52b39",
           inputs: "rockstargames-sites-red-dead-redemption-2ca3ab235303ed1b84f9c867fe5393c3a"
         },
-        g = Object.freeze({
+        u = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
         }),
-        u = (0, o.withTranslations)(({
+        f = (0, o.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
-          ga: u = {},
+          ga: f = {},
           t: m,
           ...p
         }) => {
@@ -47,7 +47,7 @@ try {
             data: b
           } = (0, c.Wx)(), {
             track: h
-          } = (0, c.h)(), y = (0, o.getCookieValueByName)("UAGC"), [_, w] = (0, s.useState)("1" === (x = y) ? g.PASSED : "0" === x ? g.FAILED : g.NOT_SUBMITTED);
+          } = (0, c.h)(), y = (0, o.getCookieValueByName)("UAGC"), [_, w] = (0, s.useState)("1" === (x = y) ? u.PASSED : "0" === x ? u.FAILED : u.NOT_SUBMITTED);
           var x;
           const [I, D] = (0, s.useState)(), j = (0, s.createRef)(), k = (0, s.createRef)(), v = (0, s.createRef)(), {
             style: E
@@ -55,25 +55,25 @@ try {
           return (0, s.useEffect)(() => {
             h({
               event: "age_gate_popup",
-              element_placement: u.element_placement ?? ""
+              element_placement: f.element_placement ?? ""
             })
-          }, []), _ === g.PASSED || !1 === b?.isAMinor ? a : _ === g.FAILED ? (0, n.jsxs)("div", {
-            className: f.agegate,
+          }, []), _ === u.PASSED || !1 === b?.isAMinor ? a : _ === u.FAILED ? (0, n.jsxs)("div", {
+            className: g.agegate,
             style: E,
             children: [t?.header, (0, n.jsx)("h2", {
               children: m("agegate_fail")
             })]
           }) : (0, n.jsxs)("div", {
-            className: f.agegate,
+            className: g.agegate,
             style: E,
             ...p,
             children: [t?.header, (0, n.jsx)("div", {
-              className: f.bg,
+              className: g.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
             }), !1 === I && (0, n.jsx)("h5", {
-              className: f.error,
+              className: g.error,
               children: m("Please enter a valid age")
             }), (0, n.jsxs)("form", {
               name: "agegate",
@@ -88,10 +88,10 @@ try {
                   const a = (0, i.V)(new Date, t) >= e;
                   h(a ? {
                     event: "age_gate_passed",
-                    element_placement: u.element_placement ?? ""
+                    element_placement: f.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: u.element_placement ?? "",
+                    element_placement: f.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
                   const n = a ? "1" : "0";
@@ -102,7 +102,7 @@ try {
               children: [(0, n.jsx)("h5", {
                 children: m("agegate_header")
               }), (0, n.jsxs)("div", {
-                className: f.inputs,
+                className: g.inputs,
                 children: [(0, n.jsxs)("label", {
                   htmlFor: "monthInput",
                   children: [m("Month"), (0, n.jsx)("input", {
@@ -128,7 +128,7 @@ try {
                   children: [m("Year"), (0, n.jsx)("input", {
                     id: "yearInput",
                     ref: v,
-                    className: f.year,
+                    className: g.year,
                     placeholder: m("YYYY"),
                     maxLength: 4,
                     type: "number",
@@ -136,7 +136,7 @@ try {
                   })]
                 }), (0, n.jsx)("button", {
                   type: "submit",
-                  className: f.submit,
+                  className: g.submit,
                   children: m("SUBMIT")
                 })]
               })]

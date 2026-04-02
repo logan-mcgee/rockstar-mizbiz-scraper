@@ -66,12 +66,12 @@ try {
         return function e(n, c, l) {
           l = l || 1, Object.keys(n).forEach(function(u) {
             const d = n[u],
-              f = r.safe && Array.isArray(d),
-              p = Object.prototype.toString.call(d),
+              p = r.safe && Array.isArray(d),
+              f = Object.prototype.toString.call(d),
               y = t(d),
-              m = "[object Object]" === p || "[object Array]" === p,
+              m = "[object Object]" === f || "[object Array]" === f,
               b = c ? c + o + a(u) : a(u);
-            if (!f && !y && m && Object.keys(d).length && (!r.maxDepth || l < s)) return e(d, b, l + 1);
+            if (!p && !y && m && Object.keys(d).length && (!r.maxDepth || l < s)) return e(d, b, l + 1);
             i[b] = d
           })
         }(e), i
@@ -102,15 +102,15 @@ try {
           const n = t.split(a).map(c);
           let r = u(n.shift()),
             d = u(n[0]),
-            f = l;
+            p = l;
           for (; void 0 !== d;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(f[r]),
+            const e = Object.prototype.toString.call(p[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!i && !t && void 0 !== f[r]) return;
-            (i && !t || !i && null == f[r]) && (f[r] = "number" != typeof d || s.object ? {} : []), f = f[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
+            if (!i && !t && void 0 !== p[r]) return;
+            (i && !t || !i && null == p[r]) && (p[r] = "number" != typeof d || s.object ? {} : []), p = p[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
           }
-          f[r] = e(o[t], s)
+          p[r] = e(o[t], s)
         }), l
       }
     },
@@ -119,13 +119,13 @@ try {
       n.r(t), n.d(t, {
         InViewTracker: () => j,
         TinaParser: () => k,
-        TinaPayloadProvider: () => f.o,
+        TinaPayloadProvider: () => p.o,
         recursiveNestedTemplates: () => T,
         useGenerateCdnSource: () => S.jS,
         useGetCdnSource: () => S.C1,
         useImageParser: () => S.S1,
         useTinaComponents: () => d,
-        useTinaPayload: () => f.i,
+        useTinaPayload: () => p.i,
         useTranslations: () => b
       });
       var r = n(42295),
@@ -148,9 +148,9 @@ try {
           children: e
         }),
         d = () => (0, o.useContext)(c);
-      var f = n(74767),
-        p = n(90287),
-        y = n.n(p),
+      var p = n(74767),
+        f = n(90287),
+        y = n.n(f),
         m = n(96130);
       const b = ({
         payload: e,
@@ -247,14 +247,14 @@ try {
                     whatever: 1
                   }
                 }),
-                f = [...i?.translations ?? []].reverse(),
-                p = `componentProps_${(0,g.A)()}`;
+                p = [...i?.translations ?? []].reverse(),
+                f = `componentProps_${(0,g.A)()}`;
               return (0, o.createElement)(d, {
                 ...t?.meta,
                 ...i,
                 ...n,
-                t: e => f.find(t => t?._key === e)?.value ?? e,
-                key: p
+                t: e => p.find(t => t?._key === e)?.value ?? e,
+                key: f
               }, c)
             };
             return t?.[m.ZH]?.length ? s(t) : null
@@ -270,11 +270,11 @@ try {
           components: t = {},
           componentProps: n = {}
         }) => {
-          const s = (0, f.i)(),
+          const s = (0, p.i)(),
             [i, c] = (0, o.useState)(null),
-            [l, p] = (0, o.useState)(null);
+            [l, f] = (0, o.useState)(null);
           (0, o.useEffect)(() => {
-            e?.payload && c(e.payload), e?.variables && p(e.variables)
+            e?.payload && c(e.payload), e?.variables && f(e.variables)
           }, [e]);
           const [y] = (0, o.useState)({
             ...t,
@@ -324,7 +324,7 @@ try {
                   prod: o
                 }
               };
-            return (0, r.jsx)(f.o, {
+            return (0, r.jsx)(p.o, {
               payload: a,
               children: (0, r.jsx)(u, {
                 components: y,

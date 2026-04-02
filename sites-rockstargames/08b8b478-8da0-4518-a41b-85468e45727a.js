@@ -15,26 +15,26 @@ try {
   [8088], {
     68088: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => f
+        default: () => l
       });
       var t = s(42295),
         d = s(71127),
         n = s(10181),
         o = s(9566),
         r = s(87790);
-      const f = (0, s(58136).withTranslations)(({
+      const l = (0, s(58136).withTranslations)(({
         t: e
       }) => {
         const a = (0, n.useParams)(),
           {
             setBreadcrumb: s,
-            setNormalLogo: f
+            setNormalLogo: l
           } = (0, r.b)();
         return (0, d.useEffect)(() => (s([{
           href: "/newswire",
           title: e("Newswire")
         }], ""), () => {
-          f(!0), s()
+          l(!0), s()
         }), []), (0, t.jsx)(o.NewswireArticle, {
           idHash: String(a.articleId)
         })

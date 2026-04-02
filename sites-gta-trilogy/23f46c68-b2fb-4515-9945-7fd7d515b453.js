@@ -52,7 +52,7 @@ try {
         getCookieValueByName: () => d,
         getLocale: () => w,
         linkWithLocale: () => P,
-        localeCookieHandler: () => b,
+        localeCookieHandler: () => m,
         locales: () => h,
         onLanguageChange: () => S,
         splitLocale: () => j,
@@ -81,14 +81,14 @@ try {
             n = o?.substring(r.length, o.length);
           return n
         },
-        b = (e, t, r = !1) => {
+        m = (e, t, r = !1) => {
           const o = d(e);
           return o && !r || p(e, t), [o, (n = e, e => {
             p(n, e)
           })];
           var n
         },
-        m = [{
+        b = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -180,9 +180,9 @@ try {
           iso: "zh-CN",
           store: "zh-CN"
         }],
-        y = m[0],
+        y = b[0],
         _ = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        h = m,
+        h = b,
         w = () => {
           const {
             location: e
@@ -199,7 +199,7 @@ try {
           const s = `rockstarweb_lang.${t.cookieIdentifier}`,
             i = d(s);
           a = t.currentSite?.site === f.C.www ? h.find(e => e.subdomaincom === o) || h.find(e => e.subdomaincom === r) || n : h.find(e => e.iso === i) || n;
-          const [, c] = b(s, a.iso);
+          const [, c] = m(s, a.iso);
           return [a, c]
         },
         v = () => "en-US";
@@ -476,7 +476,7 @@ try {
         __asyncGenerator: () => j,
         __asyncValues: () => x,
         __await: () => k,
-        __awaiter: () => b,
+        __awaiter: () => m,
         __classPrivateFieldGet: () => T,
         __classPrivateFieldIn: () => C,
         __classPrivateFieldSet: () => L,
@@ -486,7 +486,7 @@ try {
         __esDecorate: () => l,
         __exportStar: () => _,
         __extends: () => n,
-        __generator: () => m,
+        __generator: () => b,
         __importDefault: () => D,
         __importStar: () => $,
         __makeTemplateObject: () => P,
@@ -562,17 +562,17 @@ try {
           return e
         }
         for (var i, c = o.kind, l = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? o.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, o.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
-          var b = {};
-          for (var m in o) b[m] = "access" === m ? {} : o[m];
-          for (var m in o.access) b.access[m] = o.access[m];
-          b.addInitializer = function(e) {
+          var m = {};
+          for (var b in o) m[b] = "access" === b ? {} : o[b];
+          for (var b in o.access) m.access[b] = o.access[b];
+          m.addInitializer = function(e) {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(s(e || null))
           };
           var y = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
-          } : f[l], b);
+          } : f[l], m);
           if ("accessor" === c) {
             if (void 0 === y) continue;
             if (null === y || "object" != typeof y) throw new TypeError("Object expected");
@@ -602,7 +602,7 @@ try {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
-      function b(e, t, r, o) {
+      function m(e, t, r, o) {
         return new(r || (r = Promise))(function(n, a) {
           function s(e) {
             try {
@@ -630,7 +630,7 @@ try {
         })
       }
 
-      function m(e, t) {
+      function b(e, t) {
         var r, o, n, a = {
             label: 0,
             sent: function() {
@@ -989,8 +989,8 @@ try {
         __propKey: f,
         __setFunctionName: p,
         __metadata: d,
-        __awaiter: b,
-        __generator: m,
+        __awaiter: m,
+        __generator: b,
         __createBinding: y,
         __exportStar: _,
         __values: h,

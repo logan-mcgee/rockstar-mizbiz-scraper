@@ -52,7 +52,7 @@ try {
         getCookieValueByName: () => p,
         getLocale: () => k,
         linkWithLocale: () => L,
-        localeCookieHandler: () => f,
+        localeCookieHandler: () => b,
         locales: () => g,
         onLanguageChange: () => j,
         splitLocale: () => E,
@@ -81,14 +81,14 @@ try {
             n = s?.substring(t.length, s.length);
           return n
         },
-        f = (e, o, t = !1) => {
+        b = (e, o, t = !1) => {
           const s = p(e);
           return s && !t || m(e, o), [s, (n = e, e => {
             m(n, e)
           })];
           var n
         },
-        b = [{
+        f = [{
           label: "English",
           subdomain: "en-US",
           subdomaincom: "en",
@@ -180,9 +180,9 @@ try {
           iso: "zh-CN",
           store: "zh-CN"
         }],
-        h = b[0],
+        h = f[0],
         w = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        g = b,
+        g = f,
         k = () => {
           const {
             location: e
@@ -199,7 +199,7 @@ try {
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = p(a);
           r = o.currentSite?.site === d.C.www ? g.find(e => e.subdomaincom === s) || g.find(e => e.subdomaincom === t) || n : g.find(e => e.iso === i) || n;
-          const [, l] = f(a, r.iso);
+          const [, l] = b(a, r.iso);
           return [r, l]
         },
         _ = () => "en-US";

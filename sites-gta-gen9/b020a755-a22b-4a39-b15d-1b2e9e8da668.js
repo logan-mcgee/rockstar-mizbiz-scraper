@@ -52,13 +52,13 @@ try {
         f = !1,
         l = -1;
 
-      function d() {
-        f && s && (f = !1, s.length ? u = s.concat(u) : l = -1, u.length && c())
+      function c() {
+        f && s && (f = !1, s.length ? u = s.concat(u) : l = -1, u.length && d())
       }
 
-      function c() {
+      function d() {
         if (!f) {
-          var e = a(d);
+          var e = a(c);
           f = !0;
           for (var t = u.length; t;) {
             for (s = u, u = []; ++l < t;) s && s[l].run();
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new b(e, t)), 1 !== u.length || f || a(c)
+        u.push(new b(e, t)), 1 !== u.length || f || a(d)
       }, b.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {

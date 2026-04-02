@@ -67,12 +67,12 @@ try {
               loading: !0
             }
           }
-          const b = await fetch(f, p),
-            k = await b.json();
+          const k = await fetch(f, p),
+            b = await k.json();
           return u && (w[y] = {
-            response: k,
+            response: b,
             loading: !1
-          }), k
+          }), b
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -420,7 +420,7 @@ try {
         OH: () => p,
         zP: () => v,
         Cb: () => h,
-        N6: () => k,
+        N6: () => b,
         GA: () => S,
         JE: () => C
       });
@@ -537,12 +537,12 @@ try {
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
       var y = n(9656),
-        b = (n(5342), n(7954));
-      const k = e => {
+        k = (n(5342), n(7954));
+      const b = e => {
         const {
           signup: t,
           login: n
-        } = (0, m.A)(), s = (0, a.A)(), r = (0, b.t)(s);
+        } = (0, m.A)(), s = (0, a.A)(), r = (0, k.t)(s);
         let o = "";
         return o += "lang=" + encodeURIComponent(r), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,

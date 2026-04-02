@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "73d84fcf-a882-4353-9421-682cee07ff07", e._sentryDebugIdIdentifier = "sentry-dbid-73d84fcf-a882-4353-9421-682cee07ff07")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "49921643-0385-4a9b-94eb-61893dabafe1", e._sentryDebugIdIdentifier = "sentry-dbid-49921643-0385-4a9b-94eb-61893dabafe1")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,7 +12,7 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [632, 2649], {
+  [2370, 2649], {
     2024: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6e99540df7fd07d75b08a5fbc02d4815.svg"
@@ -246,7 +246,7 @@ try {
             target: "_blank",
             children: (0, s.jsx)("img", {
               alt: S.formatMessage(l.components_ratings_link_alt, {
-                rating: (V = y.ratingImg, V.replace(/_/g, " ").split(".")[0].toUpperCase())
+                rating: (j = y.ratingImg, j.replace(/_/g, " ").split(".")[0].toUpperCase())
               }),
               src: t(8194)(`./${y.ratingImg}`)
             })
@@ -264,7 +264,7 @@ try {
             })]
           })]
         });
-        var V
+        var j
       }))
     },
     21022: e => {
@@ -713,14 +713,14 @@ try {
           } = (0, o.useRockstarUser)(), {
             track: T
           } = (0, o.useGtmTrack)(), z = document.location.pathname, {
-            signInUrl: V
+            signInUrl: j
           } = (0, r.useScAuthLinks)(z), {
-            ref: j,
+            ref: V,
             inView: D
           } = (0, n.useInView)({
             threshold: .6
           }), [E, I] = (0, i.useState)(!1);
-          let F;
+          let C;
           if ((0, i.useEffect)(() => {
               D && !E && (T({
                 event: "page_section_impression",
@@ -730,8 +730,8 @@ try {
           switch (t) {
             case "vote":
               if (!S) {
-                F = (0, s.jsx)(m.A, {
-                  to: V,
+                C = (0, s.jsx)(m.A, {
+                  to: j,
                   className: g.calloutButton,
                   onClick: x ? () => T({
                     ...x
@@ -740,13 +740,13 @@ try {
                 });
                 break
               }
-              F = (0, s.jsx)(l, {
+              C = (0, s.jsx)(l, {
                 foreign_id: p,
                 foreign_type: k
               });
               break;
             case "button":
-              c && d && (F = (0, s.jsx)(m.A, {
+              c && d && (C = (0, s.jsx)(m.A, {
                 to: d,
                 className: g.calloutButton,
                 onClick: x ? () => T({
@@ -756,22 +756,22 @@ try {
               }));
               break;
             case "link":
-              c && d && (F = (0, s.jsx)(f, {
+              c && d && (C = (0, s.jsx)(f, {
                 action_text: c,
                 link: d,
                 trackingData: x
               }));
               break;
             default:
-              F = null
+              C = null
           }
           return (0, s.jsx)("div", {
             className: `${g.calloutContainer} ${v||""}`,
-            ref: j,
+            ref: V,
             children: (0, s.jsxs)("div", {
               className: g.calloutSection,
               children: [(0, s.jsxs)("div", {
-                className: [g.calloutHeaders, F ? g.calloutHeaderMargins : ""].join(" "),
+                className: [g.calloutHeaders, C ? g.calloutHeaderMargins : ""].join(" "),
                 children: [e && (0, s.jsx)("h2", {
                   className: g.calloutHeader,
                   children: N(e)
@@ -781,7 +781,7 @@ try {
                 })]
               }), (0, s.jsxs)("div", {
                 className: g.actionBlock,
-                children: [F, _ && (0, s.jsx)(u, {
+                children: [C, _ && (0, s.jsx)(u, {
                   helperText: _,
                   linkText: b,
                   link: h,
@@ -1182,6 +1182,52 @@ try {
     77404: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d1f569db6c94b4f81417f62e91759082.svg"
+    },
+    79867: (e, a, t) => {
+      "use strict";
+      t.d(a, {
+        A: () => m,
+        C: () => o
+      });
+      var s = t(56265),
+        i = t.n(s),
+        n = t(41972),
+        r = t.n(n);
+      const o = {
+          www: "www",
+          socialClub: "socialClub",
+          support: "support",
+          store: "store",
+          circoloco: "circoloco",
+          supportNew: "support"
+        },
+        c = [{
+          id: "prod",
+          sites: {
+            www: "www",
+            socialClub: "socialclub",
+            support: "support",
+            store: "store",
+            circoloco: "circolocorecords",
+            supportNew: "support"
+          },
+          cookieIdentifier: "prod"
+        }],
+        m = () => {
+          let e;
+          const {
+            location: a
+          } = window, t = a.hostname.substring(0, a.hostname.indexOf(".rockstargames.com")), s = c.findIndex(a => Object.entries(a.sites).findIndex(([a, s]) => s === t && (e = {
+            site: a,
+            subDomain: s
+          }, !0)) >= 0), n = c[s >= 0 ? s : 0], o = c.find(e => e.id === n.fallbackEnvironment);
+          return e || (e = {
+            site: "www",
+            subDomain: "local"
+          }), r()(i()({}, o, {
+            currentSite: e
+          }, n), "fallbackEnvironment")
+        }
     },
     81864: e => {
       "use strict";

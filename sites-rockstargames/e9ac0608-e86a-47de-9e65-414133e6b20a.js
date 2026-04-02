@@ -18,7 +18,7 @@ try {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -28,7 +28,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => L
+        default: () => f
       });
       var _ = "{description} - Visualizza immagine in lightbox",
         i = "Chiudi",
@@ -42,8 +42,8 @@ try {
         g = "Livello zoom",
         r = "{zoom}%",
         h = "Scarica",
-        f = "Scarica",
-        L = {
+        L = "Scarica",
+        f = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
           Lightbox_Close_Button_Tooltip: a,
@@ -56,7 +56,7 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f
+          Lightbox_Download_Button_Tooltip: L
         }
     }
   }

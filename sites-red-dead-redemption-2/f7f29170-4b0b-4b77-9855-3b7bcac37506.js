@@ -1,10 +1,10 @@
 try {
-  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f7f29170-4b0b-4b77-9855-3b7bcac37506", e._sentryDebugIdIdentifier = "sentry-dbid-f7f29170-4b0b-4b77-9855-3b7bcac37506")
-} catch (e) {} {
-  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+  let t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    e = (new t.Error).stack;
+  e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "f7f29170-4b0b-4b77-9855-3b7bcac37506", t._sentryDebugIdIdentifier = "sentry-dbid-f7f29170-4b0b-4b77-9855-3b7bcac37506")
+} catch (t) {} {
+  let t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  t._sentryModuleMetadata = t._sentryModuleMetadata || {}, t._sentryModuleMetadata[(new t.Error).stack] = Object.assign({}, t._sentryModuleMetadata[(new t.Error).stack], {
     release: "sentry-release-id",
     packageName: "@rockstargames/sites-red-dead-redemption-2",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
@@ -13,75 +13,75 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [5523], {
-    9738: (e, t, n) => {
+    9738: (t, e, n) => {
       var r = n(56130),
         o = n(28593),
         i = n(22909),
         a = Math.max,
         d = Math.min;
-      e.exports = function(e, t, n) {
+      t.exports = function(t, e, n) {
         var f, s, u, c, l, p, v = 0,
           w = !1,
-          b = !1,
-          g = !0;
-        if ("function" != typeof e) throw new TypeError("Expected a function");
+          g = !1,
+          b = !0;
+        if ("function" != typeof t) throw new TypeError("Expected a function");
 
-        function y(t) {
+        function y(e) {
           var n = f,
             r = s;
-          return f = s = void 0, v = t, c = e.apply(r, n)
+          return f = s = void 0, v = e, c = t.apply(r, n)
         }
 
-        function h(e) {
-          var n = e - p;
-          return void 0 === p || n >= t || n < 0 || b && e - v >= u
+        function h(t) {
+          var n = t - p;
+          return void 0 === p || n >= e || n < 0 || g && t - v >= u
         }
 
         function m() {
-          var e = o();
-          if (h(e)) return x(e);
-          l = setTimeout(m, function(e) {
-            var n = t - (e - p);
-            return b ? d(n, u - (e - v)) : n
-          }(e))
+          var t = o();
+          if (h(t)) return x(t);
+          l = setTimeout(m, function(t) {
+            var n = e - (t - p);
+            return g ? d(n, u - (t - v)) : n
+          }(t))
         }
 
-        function x(e) {
-          return l = void 0, g && f ? y(e) : (f = s = void 0, c)
+        function x(t) {
+          return l = void 0, b && f ? y(t) : (f = s = void 0, c)
         }
 
         function _() {
-          var e = o(),
-            n = h(e);
-          if (f = arguments, s = this, p = e, n) {
-            if (void 0 === l) return function(e) {
-              return v = e, l = setTimeout(m, t), w ? y(e) : c
+          var t = o(),
+            n = h(t);
+          if (f = arguments, s = this, p = t, n) {
+            if (void 0 === l) return function(t) {
+              return v = t, l = setTimeout(m, e), w ? y(t) : c
             }(p);
-            if (b) return clearTimeout(l), l = setTimeout(m, t), y(p)
+            if (g) return clearTimeout(l), l = setTimeout(m, e), y(p)
           }
-          return void 0 === l && (l = setTimeout(m, t)), c
+          return void 0 === l && (l = setTimeout(m, e)), c
         }
-        return t = i(t) || 0, r(n) && (w = !!n.leading, u = (b = "maxWait" in n) ? a(i(n.maxWait) || 0, t) : u, g = "trailing" in n ? !!n.trailing : g), _.cancel = function() {
+        return e = i(e) || 0, r(n) && (w = !!n.leading, u = (g = "maxWait" in n) ? a(i(n.maxWait) || 0, e) : u, b = "trailing" in n ? !!n.trailing : b), _.cancel = function() {
           void 0 !== l && clearTimeout(l), v = 0, f = p = s = l = void 0
         }, _.flush = function() {
           return void 0 === l ? c : x(o())
         }, _
       }
     },
-    10533: (e, t, n) => {
+    10533: (t, e, n) => {
       var r = n(86601);
-      e.exports = function(e, t, n, o) {
-        return o = "function" == typeof o ? o : void 0, null == e ? e : r(e, t, n, o)
+      t.exports = function(t, e, n, o) {
+        return o = "function" == typeof o ? o : void 0, null == t ? t : r(t, e, n, o)
       }
     },
-    10613: (e, t, n) => {
+    10613: (t, e, n) => {
       var r = n(23117);
-      e.exports = function(e, t, n) {
-        var o = null == e ? void 0 : r(e, t);
+      t.exports = function(t, e, n) {
+        var o = null == t ? void 0 : r(t, e);
         return void 0 === o ? n : o
       }
     },
-    22909: (e, t, n) => {
+    22909: (t, e, n) => {
       var r = n(87625),
         o = n(56130),
         i = n(25733),
@@ -89,78 +89,78 @@ try {
         d = /^0b[01]+$/i,
         f = /^0o[0-7]+$/i,
         s = parseInt;
-      e.exports = function(e) {
-        if ("number" == typeof e) return e;
-        if (i(e)) return NaN;
-        if (o(e)) {
-          var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-          e = o(t) ? t + "" : t
+      t.exports = function(t) {
+        if ("number" == typeof t) return t;
+        if (i(t)) return NaN;
+        if (o(t)) {
+          var e = "function" == typeof t.valueOf ? t.valueOf() : t;
+          t = o(e) ? e + "" : e
         }
-        if ("string" != typeof e) return 0 === e ? e : +e;
-        e = r(e);
-        var n = d.test(e);
-        return n || f.test(e) ? s(e.slice(2), n ? 2 : 8) : a.test(e) ? NaN : +e
+        if ("string" != typeof t) return 0 === t ? t : +t;
+        t = r(t);
+        var n = d.test(t);
+        return n || f.test(t) ? s(t.slice(2), n ? 2 : 8) : a.test(t) ? NaN : +t
       }
     },
-    28593: (e, t, n) => {
+    28593: (t, e, n) => {
       var r = n(15036);
-      e.exports = function() {
+      t.exports = function() {
         return r.Date.now()
       }
     },
-    31454: (e, t, n) => {
+    31454: (t, e, n) => {
       var r = n(49192);
-      e.exports = function(e) {
-        return r(e, 5)
+      t.exports = function(t) {
+        return r(t, 5)
       }
     },
-    51105: (e, t, n) => {
+    51105: (t, e, n) => {
       "use strict";
-      n.d(t, {
+      n.d(e, {
         v: () => d
       });
       var r = n(1556);
       const o = new Map;
 
-      function i(e, t) {
-        if (e === t) return e;
-        const n = o.get(e);
-        if (n) return n.forEach(e => e(t)), t;
-        const r = o.get(t);
-        return r ? (r.forEach(t => t(e)), e) : t
+      function i(t, e) {
+        if (t === e) return t;
+        const n = o.get(t);
+        if (n) return n.forEach(t => t(e)), e;
+        const r = o.get(e);
+        return r ? (r.forEach(e => e(t)), t) : e
       }
 
-      function a(...e) {
-        return (...t) => {
-          for (const n of e) "function" == typeof n && n(...t)
+      function a(...t) {
+        return (...e) => {
+          for (const n of t) "function" == typeof n && n(...e)
         }
       }
 
-      function d(...e) {
-        const t = {
-          ...e[0]
+      function d(...t) {
+        const e = {
+          ...t[0]
         };
-        for (let n = 1; n < e.length; n++) {
-          const o = e[n];
-          for (const e in o) {
-            const n = t[e],
-              d = o[e];
-            "function" == typeof n && "function" == typeof d && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = a(n, d) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof d ? "id" === e && n && d ? t.id = i(n, d) : t[e] = void 0 !== d ? d : n : t[e] = (0, r.clsx)(n, d)
+        for (let n = 1; n < t.length; n++) {
+          const o = t[n];
+          for (const t in o) {
+            const n = e[t],
+              d = o[t];
+            "function" == typeof n && "function" == typeof d && "o" === t[0] && "n" === t[1] && t.charCodeAt(2) >= 65 && t.charCodeAt(2) <= 90 ? e[t] = a(n, d) : "className" !== t && "UNSAFE_className" !== t || "string" != typeof n || "string" != typeof d ? "id" === t && n && d ? e.id = i(n, d) : e[t] = void 0 !== d ? d : n : e[t] = (0, r.clsx)(n, d)
           }
         }
-        return t
+        return e
       }
     },
-    60211: (e, t, n) => {
+    60211: (t, e, n) => {
       "use strict";
-      n.d(t, {
+      n.d(e, {
         X: () => r
       });
       const r = "undefined" == typeof window
     },
-    75523: (e, t, n) => {
+    75523: (t, e, n) => {
       "use strict";
-      n.d(t, {
+      n.d(e, {
         X3: () => r.X,
         fi: () => i,
         IO: () => f,
@@ -169,7 +169,7 @@ try {
         cJ: () => c
       });
       var r = n(60211);
-      const o = e => e - .02,
+      const o = t => t - .02,
         i = {
           mobile: `(min-width: 0px) and (max-width: ${o(768)}px)`,
           tablet: `(min-width: 768px) and (max-width: ${o(1440)}px)`,
@@ -185,80 +185,80 @@ try {
         };
       var a = n(51105);
       const d = "__FOUNDRY_ACCENT__",
-        f = (e, t) => r.X ? t() : (window[d] || (window[d] = new Map), window[d].has(e) || window[d].set(e, t()), window[d].get(e));
+        f = (t, e) => r.X ? e() : (window[d] || (window[d] = new Map), window[d].has(t) || window[d].set(t, e()), window[d].get(t));
       n(98312);
       var s, u = n(41972);
 
-      function c(e, ...t) {
-        return u(e, ...t)
+      function c(t, ...e) {
+        return u(t, ...e)
       }
       n(56265), n(31454), n(10533), n(10613), n(9738),
-        function(e) {
-          e.Pending = "pending", e.Fulfilled = "fulfilled", e.Rejected = "rejected"
+        function(t) {
+          t.Pending = "pending", t.Fulfilled = "fulfilled", t.Rejected = "rejected"
         }(s || (s = {})), Symbol.toStringTag;
-      const l = (...e) => e.filter(e => e).join(" ")
+      const l = (...t) => t.filter(t => t).join(" ")
     },
-    75888: e => {
-      var t = Math.ceil,
+    75888: t => {
+      var e = Math.ceil,
         n = Math.max;
-      e.exports = function(e, r, o, i) {
-        for (var a = -1, d = n(t((r - e) / (o || 1)), 0), f = Array(d); d--;) f[i ? d : ++a] = e, e += o;
+      t.exports = function(t, r, o, i) {
+        for (var a = -1, d = n(e((r - t) / (o || 1)), 0), f = Array(d); d--;) f[i ? d : ++a] = t, t += o;
         return f
       }
     },
-    85531: e => {
-      var t = /\s/;
-      e.exports = function(e) {
-        for (var n = e.length; n-- && t.test(e.charAt(n)););
+    85531: t => {
+      var e = /\s/;
+      t.exports = function(t) {
+        for (var n = t.length; n-- && e.test(t.charAt(n)););
         return n
       }
     },
-    86601: (e, t, n) => {
+    86601: (t, e, n) => {
       var r = n(56312),
         o = n(78328),
         i = n(21574),
         a = n(56130),
         d = n(81966);
-      e.exports = function(e, t, n, f) {
-        if (!a(e)) return e;
-        for (var s = -1, u = (t = o(t, e)).length, c = u - 1, l = e; null != l && ++s < u;) {
-          var p = d(t[s]),
+      t.exports = function(t, e, n, f) {
+        if (!a(t)) return t;
+        for (var s = -1, u = (e = o(e, t)).length, c = u - 1, l = t; null != l && ++s < u;) {
+          var p = d(e[s]),
             v = n;
-          if ("__proto__" === p || "constructor" === p || "prototype" === p) return e;
+          if ("__proto__" === p || "constructor" === p || "prototype" === p) return t;
           if (s != c) {
             var w = l[p];
-            void 0 === (v = f ? f(w, p, l) : void 0) && (v = a(w) ? w : i(t[s + 1]) ? [] : {})
+            void 0 === (v = f ? f(w, p, l) : void 0) && (v = a(w) ? w : i(e[s + 1]) ? [] : {})
           }
           r(l, p, v), l = l[p]
         }
-        return e
+        return t
       }
     },
-    87625: (e, t, n) => {
+    87625: (t, e, n) => {
       var r = n(85531),
         o = /^\s+/;
-      e.exports = function(e) {
-        return e ? e.slice(0, r(e) + 1).replace(o, "") : e
+      t.exports = function(t) {
+        return t ? t.slice(0, r(t) + 1).replace(o, "") : t
       }
     },
-    95187: (e, t, n) => {
+    95187: (t, e, n) => {
       var r = n(22909),
         o = 1 / 0;
-      e.exports = function(e) {
-        return e ? (e = r(e)) === o || e === -1 / 0 ? 17976931348623157e292 * (e < 0 ? -1 : 1) : e == e ? e : 0 : 0 === e ? e : 0
+      t.exports = function(t) {
+        return t ? (t = r(t)) === o || t === -1 / 0 ? 17976931348623157e292 * (t < 0 ? -1 : 1) : t == t ? t : 0 : 0 === t ? t : 0
       }
     },
-    98312: (e, t, n) => {
+    98312: (t, e, n) => {
       var r = n(99335)();
-      e.exports = r
+      t.exports = r
     },
-    99335: (e, t, n) => {
+    99335: (t, e, n) => {
       var r = n(75888),
         o = n(4661),
         i = n(95187);
-      e.exports = function(e) {
-        return function(t, n, a) {
-          return a && "number" != typeof a && o(t, n, a) && (n = a = void 0), t = i(t), void 0 === n ? (n = t, t = 0) : n = i(n), a = void 0 === a ? t < n ? 1 : -1 : i(a), r(t, n, a, e)
+      t.exports = function(t) {
+        return function(e, n, a) {
+          return a && "number" != typeof a && o(e, n, a) && (n = a = void 0), e = i(e), void 0 === n ? (n = e, e = 0) : n = i(n), a = void 0 === a ? e < n ? 1 : -1 : i(a), r(e, n, a, t)
         }
       }
     }
