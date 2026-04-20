@@ -16,24 +16,24 @@ try {
     75415: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => d,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => f
+        default: () => L
       });
       var _ = "{description} - Visualizza immagine in lightbox",
         i = "Chiudi",
-        a = "Premi {shortcut}",
-        n = "Aumenta zoom",
+        n = "Premi {shortcut}",
+        a = "Aumenta zoom",
         d = "Premi {shortcut}",
         l = "Diminuisci zoom",
         b = "Premi {shortcut}",
@@ -42,12 +42,12 @@ try {
         r = "Livello zoom",
         g = "{zoom}%",
         h = "Scarica",
-        L = "Scarica",
-        f = {
+        f = "Scarica",
+        L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: d,
           Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: b,
@@ -56,7 +56,7 @@ try {
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: L
+          Lightbox_Download_Button_Tooltip: f
         }
     }
   }

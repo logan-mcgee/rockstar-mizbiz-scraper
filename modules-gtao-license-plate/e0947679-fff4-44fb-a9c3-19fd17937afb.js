@@ -26,8 +26,8 @@ try {
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
-        Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => f,
+        Lightbox_Zoom_Slider_Label: () => f,
+        Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => r
       });
       var _ = "{description} - ライトボックスでイメージを見る",
@@ -39,8 +39,8 @@ try {
         d = "{shortcut}を押す",
         s = "リセット",
         u = "{shortcut}を押す",
-        g = "ズームの度合",
-        f = "{zoom}%",
+        f = "ズームの度合",
+        g = "{zoom}%",
         h = "ダウンロード",
         L = "ダウンロード",
         r = {
@@ -53,8 +53,8 @@ try {
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
-          Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: f,
+          Lightbox_Zoom_Slider_Label: f,
+          Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
           Lightbox_Download_Button_Tooltip: L
         }

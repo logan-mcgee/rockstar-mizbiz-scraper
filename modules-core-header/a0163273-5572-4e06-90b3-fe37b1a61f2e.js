@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a0163273-5572-4e06-90b3-fe37b1a61f2e", e._sentryDebugIdIdentifier = "sentry-dbid-a0163273-5572-4e06-90b3-fe37b1a61f2e")
+    d = (new e.Error).stack;
+  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "a0163273-5572-4e06-90b3-fe37b1a61f2e", e._sentryDebugIdIdentifier = "sentry-dbid-a0163273-5572-4e06-90b3-fe37b1a61f2e")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,30 +13,30 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6496], {
-    94115: (e, a, d) => {
-      d.r(a), d.d(a, {
+    94115: (e, d, a) => {
+      a.r(d), a.d(d, {
         Root: () => i,
         VISUALLY_HIDDEN_STYLES: () => l,
         VisuallyHidden: () => s
       });
-      var o = d(71127),
-        n = (d(18429), d(47428)),
-        t = d(42295),
-        r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, a) => {
-          const d = (0, n.createSlot)(`Primitive.${a}`),
+      var o = a(71127),
+        n = (a(18429), a(47428)),
+        t = a(42295),
+        r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, d) => {
+          const a = (0, n.createSlot)(`Primitive.${d}`),
             r = o.forwardRef((e, o) => {
               const {
                 asChild: n,
                 ...r
-              } = e, l = n ? d : a;
+              } = e, l = n ? a : d;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, t.jsx)(l, {
                 ...r,
                 ref: o
               })
             });
-          return r.displayName = `Primitive.${a}`, {
+          return r.displayName = `Primitive.${d}`, {
             ...e,
-            [a]: r
+            [d]: r
           }
         }, {}),
         l = Object.freeze({
@@ -51,9 +51,9 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        s = o.forwardRef((e, a) => (0, t.jsx)(r.span, {
+        s = o.forwardRef((e, d) => (0, t.jsx)(r.span, {
           ...e,
-          ref: a,
+          ref: d,
           style: {
             ...l,
             ...e.style

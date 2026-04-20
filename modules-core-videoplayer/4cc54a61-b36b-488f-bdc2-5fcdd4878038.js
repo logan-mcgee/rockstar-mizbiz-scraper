@@ -18,7 +18,7 @@ try {
       t.r(n), t.d(n, {
         NIL: () => R,
         parse: () => h,
-        stringify: () => d,
+        stringify: () => f,
         v1: () => g,
         v3: () => k,
         v4: () => E,
@@ -42,28 +42,28 @@ try {
       function l(e, n = 0) {
         return i[e[n + 0]] + i[e[n + 1]] + i[e[n + 2]] + i[e[n + 3]] + "-" + i[e[n + 4]] + i[e[n + 5]] + "-" + i[e[n + 6]] + i[e[n + 7]] + "-" + i[e[n + 8]] + i[e[n + 9]] + "-" + i[e[n + 10]] + i[e[n + 11]] + i[e[n + 12]] + i[e[n + 13]] + i[e[n + 14]] + i[e[n + 15]]
       }
-      const d = function(e, n = 0) {
+      const f = function(e, n = 0) {
         const t = l(e, n);
         if (!c(t)) throw TypeError("Stringified UUID is invalid");
         return t
       };
-      let f, u, p = 0,
+      let d, u, p = 0,
         y = 0;
       const g = function(e, n, t) {
           let r = n && t || 0;
           const o = n || new Array(16);
-          let a = (e = e || {}).node || f,
+          let a = (e = e || {}).node || d,
             c = void 0 !== e.clockseq ? e.clockseq : u;
           if (null == a || null == c) {
             const n = e.random || (e.rng || s)();
-            null == a && (a = f = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = u = 16383 & (n[6] << 8 | n[7]))
+            null == a && (a = d = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = u = 16383 & (n[6] << 8 | n[7]))
           }
           let i = void 0 !== e.msecs ? e.msecs : Date.now(),
-            d = void 0 !== e.nsecs ? e.nsecs : y + 1;
-          const g = i - p + (d - y) / 1e4;
-          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-          p = i, y = d, u = c, i += 122192928e5;
-          const h = (1e4 * (268435455 & i) + d) % 4294967296;
+            f = void 0 !== e.nsecs ? e.nsecs : y + 1;
+          const g = i - p + (f - y) / 1e4;
+          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+          p = i, y = f, u = c, i += 122192928e5;
+          const h = (1e4 * (268435455 & i) + f) % 4294967296;
           o[r++] = h >>> 24 & 255, o[r++] = h >>> 16 & 255, o[r++] = h >>> 8 & 255, o[r++] = 255 & h;
           const b = i / 4294967296 * 1e4 & 268435455;
           o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = c >>> 8 | 128, o[r++] = 255 & c;

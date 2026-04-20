@@ -19,7 +19,7 @@ try {
         Root: () => c,
         Slot: () => c,
         Slottable: () => b,
-        createSlot: () => s,
+        createSlot: () => f,
         createSlottable: () => y
       });
       var o = t(71127),
@@ -28,24 +28,24 @@ try {
         i = Symbol.for("react.lazy"),
         d = (r || (r = t.t(o, 2)))[" use ".trim().toString()];
 
-      function f(e) {
+      function s(e) {
         return null != e && "object" == typeof e && "$$typeof" in e && e.$$typeof === i && "_payload" in e && "object" == typeof(n = e._payload) && null !== n && "then" in n;
         var n
       }
 
-      function s(e) {
+      function f(e) {
         const n = u(e),
           t = o.forwardRef((e, t) => {
             let {
               children: r,
               ...l
             } = e;
-            f(r) && "function" == typeof d && (r = d(r._payload));
+            s(r) && "function" == typeof d && (r = d(r._payload));
             const i = o.Children.toArray(r),
-              s = i.find(g);
-            if (s) {
-              const e = s.props.children,
-                r = i.map(n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : o.isValidElement(e) ? e.props.children : null : n);
+              f = i.find(g);
+            if (f) {
+              const e = f.props.children,
+                r = i.map(n => n === f ? o.Children.count(e) > 1 ? o.Children.only(null) : o.isValidElement(e) ? e.props.children : null : n);
               return (0, a.jsx)(n, {
                 ...l,
                 ref: t,
@@ -60,7 +60,7 @@ try {
           });
         return t.displayName = `${e}.Slot`, t
       }
-      var c = s("Slot");
+      var c = f("Slot");
 
       function u(e) {
         const n = o.forwardRef((e, n) => {
@@ -68,7 +68,7 @@ try {
             children: t,
             ...r
           } = e;
-          if (f(t) && "function" == typeof d && (t = d(t._payload)), o.isValidElement(t)) {
+          if (s(t) && "function" == typeof d && (t = d(t._payload)), o.isValidElement(t)) {
             const e = function(e) {
                 let n = Object.getOwnPropertyDescriptor(e.props, "ref")?.get,
                   t = n && "isReactWarning" in n && n.isReactWarning;

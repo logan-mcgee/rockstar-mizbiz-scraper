@@ -21,8 +21,8 @@ try {
         a = Symbol.for("react.profiler"),
         s = Symbol.for("react.provider"),
         f = Symbol.for("react.context"),
-        c = Symbol.for("react.forward_ref"),
-        i = Symbol.for("react.suspense"),
+        i = Symbol.for("react.forward_ref"),
+        c = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
         p = Symbol.for("react.lazy"),
         d = Symbol.iterator,
@@ -75,8 +75,8 @@ try {
         var f = arguments.length - 2;
         if (1 === f) u.children = n;
         else if (1 < f) {
-          for (var c = Array(f), i = 0; i < f; i++) c[i] = arguments[i + 2];
-          u.children = c
+          for (var i = Array(f), c = 0; c < f; c++) i[c] = arguments[c + 2];
+          u.children = i
         }
         if (e && e.defaultProps)
           for (o in f = e.defaultProps) void 0 === u[o] && (u[o] = f[o]);
@@ -137,13 +137,13 @@ try {
           }
         }(a, o + (!a.key || f && f.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
         if (f = 0, u = "" === u ? "." : u + ":", w(e))
-          for (var c = 0; c < e.length; c++) {
-            var i = u + j(s = e[c], c);
-            f += I(s, t, o, i, a)
-          } else if (i = function(e) {
+          for (var i = 0; i < e.length; i++) {
+            var c = u + j(s = e[i], i);
+            f += I(s, t, o, c, a)
+          } else if (c = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
-            }(e), "function" == typeof i)
-            for (e = i.call(e), c = 0; !(s = e.next()).done;) f += I(s = s.value, t, o, i = u + j(s, c++), a);
+            }(e), "function" == typeof c)
+            for (e = c.call(e), i = 0; !(s = e.next()).done;) f += I(s = s.value, t, o, c = u + j(s, i++), a);
           else if ("object" === s) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return f
       }
@@ -206,7 +206,7 @@ try {
           if (!$(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = i, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
+      }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = g, t.StrictMode = u, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = P, t.act = D, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = b({}, e.props),
           u = e.key,
@@ -214,13 +214,13 @@ try {
           s = e._owner;
         if (null != t) {
           if (void 0 !== t.ref && (a = t.ref, s = S.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var f = e.type.defaultProps;
-          for (c in t) k.call(t, c) && !E.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== f ? f[c] : t[c])
+          for (i in t) k.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== f ? f[i] : t[i])
         }
-        var c = arguments.length - 2;
-        if (1 === c) o.children = n;
-        else if (1 < c) {
-          f = Array(c);
-          for (var i = 0; i < c; i++) f[i] = arguments[i + 2];
+        var i = arguments.length - 2;
+        if (1 === i) o.children = n;
+        else if (1 < i) {
+          f = Array(i);
+          for (var c = 0; c < i; c++) f[c] = arguments[c + 2];
           o.children = f
         }
         return {
@@ -254,7 +254,7 @@ try {
         }
       }, t.forwardRef = function(e) {
         return {
-          $$typeof: c,
+          $$typeof: i,
           render: e
         }
       }, t.isValidElement = $, t.lazy = function(e) {

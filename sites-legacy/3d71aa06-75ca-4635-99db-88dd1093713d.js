@@ -18,23 +18,23 @@ try {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => a,
-        Lightbox_Zoom_In_Button_Tooltip: () => i,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => d,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => h,
-        default: () => f
+        default: () => r
       });
       var _ = "{description} - ライトボックスでイメージを見る",
         n = "閉じる",
         l = "{shortcut}を押す",
-        a = "ズームイン",
-        i = "{shortcut}を押す",
+        i = "ズームイン",
+        a = "{shortcut}を押す",
         d = "ズームアウト",
         b = "{shortcut}を押す",
         s = "リセット",
@@ -42,13 +42,13 @@ try {
         g = "ズームの度合",
         h = "{zoom}%",
         L = "ダウンロード",
-        r = "ダウンロード",
-        f = {
+        f = "ダウンロード",
+        r = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
           Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
-          Lightbox_Zoom_In_Button_Tooltip: i,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: d,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: s,
@@ -56,7 +56,7 @@ try {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: h,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: r
+          Lightbox_Download_Button_Tooltip: f
         }
     }
   }

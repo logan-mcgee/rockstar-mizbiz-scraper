@@ -17,15 +17,15 @@ try {
       t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => r,
         Lightbox_Zoom_In_Button_Label: () => n,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => s,
-        Lightbox_Zoom_Out_Button__Tooltip: () => d,
+        Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => L
@@ -36,13 +36,13 @@ try {
         n = "Aproximar zoom",
         l = "Pressionar {shortcut}",
         s = "Afastar zoom",
-        d = "Pressionar {shortcut}",
-        b = "Resetar",
+        b = "Pressionar {shortcut}",
+        d = "Resetar",
         r = "Pressionar {shortcut}",
         u = "Nível de zoom",
         g = "{zoom}%",
-        h = "Baixar",
         f = "Baixar",
+        h = "Baixar",
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: a,
@@ -50,13 +50,13 @@ try {
           Lightbox_Zoom_In_Button_Label: n,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: s,
-          Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: r,
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
-          Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: h
         }
     }
   }

@@ -31,12 +31,12 @@ try {
         const {
           scope: r,
           revertOnUpdate: o
-        } = t, i = (0, d.useRef)(!1), c = (0, d.useRef)(u.context(() => {}, r)), y = (0, d.useRef)(e => c.current.add(null, e)), b = n && n.length && !o;
-        return b && a(() => (i.current = !0, () => c.current.revert()), f), a(() => {
-          if (e && c.current.add(e, r), !b || !i.current) return () => c.current.revert()
+        } = t, i = (0, d.useRef)(!1), c = (0, d.useRef)(u.context(() => {}, r)), b = (0, d.useRef)(e => c.current.add(null, e)), y = n && n.length && !o;
+        return y && a(() => (i.current = !0, () => c.current.revert()), f), a(() => {
+          if (e && c.current.add(e, r), !y || !i.current) return () => c.current.revert()
         }, n), {
           context: c.current,
-          contextSafe: y.current
+          contextSafe: b.current
         }
       };
       i.register = e => {

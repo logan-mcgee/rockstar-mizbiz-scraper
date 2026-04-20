@@ -16,13 +16,13 @@ try {
     40173: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => l,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - Ver imagen en Lightbox",
         l = "Cerrar",
-        a = "Pulsa {shortcut}",
-        n = "Acercar zoom",
+        n = "Pulsa {shortcut}",
+        a = "Acercar zoom",
         i = "Pulsa {shortcut}",
         b = "Alejar zoom",
         d = "Pulsa {shortcut}",
@@ -46,8 +46,8 @@ try {
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: l,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: d,

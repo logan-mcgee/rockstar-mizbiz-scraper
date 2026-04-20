@@ -15,7 +15,7 @@ try {
   [2865, 5246], {
     22865: (e, t, n) => {
       n.r(t), n.d(t, {
-        useControllableState: () => f,
+        useControllableState: () => u,
         useControllableStateReducer: () => d
       });
       var o = n(71127),
@@ -25,7 +25,7 @@ try {
         l = r[" useInsertionEffect ".trim().toString()],
         a = r[" useInsertionEffect ".trim().toString()] || s.N;
 
-      function f({
+      function u({
         prop: e,
         defaultProp: t,
         onChange: n = () => {},
@@ -44,34 +44,34 @@ try {
         }({
           defaultProp: t,
           onChange: n
-        }), f = void 0 !== e, u = f ? e : s; {
+        }), u = void 0 !== e, f = u ? e : s; {
           const t = o.useRef(void 0 !== e);
           o.useEffect(() => {
             const e = t.current;
-            if (e !== f) {
+            if (e !== u) {
               const t = e ? "controlled" : "uncontrolled",
-                n = f ? "controlled" : "uncontrolled";
+                n = u ? "controlled" : "uncontrolled";
               console.warn(`${r} is changing from ${t} to ${n}. Components should not switch from controlled to uncontrolled (or vice versa). Decide between using a controlled or uncontrolled value for the lifetime of the component.`)
             }
-            t.current = f
-          }, [f, r])
+            t.current = u
+          }, [u, r])
         }
         const d = o.useCallback(t => {
-          if (f) {
+          if (u) {
             const n = function(e) {
               return "function" == typeof e
             }(t) ? t(e) : t;
             n !== e && l.current?.(n)
           } else c(t)
-        }, [f, e, c, l]);
-        return [u, d]
+        }, [u, e, c, l]);
+        return [f, d]
       }
-      var u = Symbol("RADIX:SYNC_STATE");
+      var f = Symbol("RADIX:SYNC_STATE");
 
       function d(e, t, n, r) {
         const {
           prop: a,
-          defaultProp: f,
+          defaultProp: u,
           onChange: d,
           caller: i
         } = t, b = void 0 !== a, g = function(e) {
@@ -98,11 +98,11 @@ try {
         }
         const p = [{
           ...n,
-          state: f
+          state: u
         }];
         r && p.push(r);
         const [h, y] = o.useReducer((t, n) => {
-          if (n.type === u) return {
+          if (n.type === f) return {
             ...t,
             state: n.state
           };
@@ -118,7 +118,7 @@ try {
         } : h, [h, a]);
         return o.useEffect(() => {
           b && !Object.is(a, h.state) && y({
-            type: u,
+            type: f,
             state: a
           })
         }, [a, h.state, b]), [E, y]

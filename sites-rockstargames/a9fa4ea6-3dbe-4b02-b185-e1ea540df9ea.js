@@ -27,14 +27,14 @@ try {
         } = (0, n.useRockstarUser)(), {
           hasGtaPlus: s,
           accountSynced: o
-        } = e ?? {}, l = (0, d.useNavigate)();
+        } = e ?? {}, f = (0, d.useNavigate)();
         return (0, t.useEffect)(() => {
-          !1 !== a ? o && l(s ? "./benefits" : "./join", {
+          !1 !== a ? o && f(s ? "./benefits" : "./join", {
             replace: !0
-          }) : l("./join", {
+          }) : f("./join", {
             replace: !0
           })
-        }, [s, o, a, l]), null
+        }, [s, o, a, f]), null
       }
     }
   }

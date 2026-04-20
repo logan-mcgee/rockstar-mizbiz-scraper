@@ -17,7 +17,7 @@ try {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Download_Button_Label: () => r,
+        Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -27,7 +27,7 @@ try {
         Lightbox_Zoom_Out_Button_Label: () => d,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => f,
+        Lightbox_Zoom_Slider_Tooltip: () => r,
         default: () => L
       });
       var _ = "{description} - Просмотреть изображение в всплывающем окне",
@@ -40,8 +40,8 @@ try {
         s = "Вернуться к стандартному размеру изображения",
         u = "Нажмите {shortcut}",
         g = "Масштаб",
-        f = "{zoom}%",
-        r = "Загрузить",
+        r = "{zoom}%",
+        f = "Загрузить",
         h = "Загрузить",
         L = {
           Lightbox_Open_Button_Label: _,
@@ -54,8 +54,8 @@ try {
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: f,
-          Lightbox_Download_Button_Label: r,
+          Lightbox_Zoom_Slider_Tooltip: r,
+          Lightbox_Download_Button_Label: f,
           Lightbox_Download_Button_Tooltip: h
         }
     }

@@ -16,13 +16,13 @@ try {
     75415: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => d,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - Visualizza immagine in lightbox",
         i = "Chiudi",
-        a = "Premi {shortcut}",
-        n = "Aumenta zoom",
+        n = "Premi {shortcut}",
+        a = "Aumenta zoom",
         l = "Premi {shortcut}",
         d = "Diminuisci zoom",
         b = "Premi {shortcut}",
@@ -46,8 +46,8 @@ try {
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: d,
           Lightbox_Zoom_Out_Button__Tooltip: b,

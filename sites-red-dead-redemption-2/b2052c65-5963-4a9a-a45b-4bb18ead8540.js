@@ -16,13 +16,13 @@ try {
     59853: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => d,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - 在燈箱中查看圖片",
         n = "關閉",
-        a = "按 {shortcut}",
-        i = "放大",
+        i = "按 {shortcut}",
+        a = "放大",
         l = "按 {shortcut}",
         d = "縮小",
         b = "按 {shortcut}",
@@ -46,8 +46,8 @@ try {
         f = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Close_Button_Tooltip: i,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: d,
           Lightbox_Zoom_Out_Button__Tooltip: b,

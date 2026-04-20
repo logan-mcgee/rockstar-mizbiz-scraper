@@ -19,20 +19,20 @@ try {
       });
       var d = t(71127),
         s = t(90994),
-        r = t.n(s);
-      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        a = t.n(s);
+      let r = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         o = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         c = {},
-        i = r();
+        i = a();
       const l = (e, n = f) => {
         let t = c;
         o(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : f) : o(n) && (t = n, n = "dependencies" in t ? t.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: s,
-          revertOnUpdate: r
-        } = t, l = (0, d.useRef)(!1), u = (0, d.useRef)(i.context(() => {}, s)), b = (0, d.useRef)(e => u.current.add(null, e)), g = n && n.length && !r;
-        return g && a(() => (l.current = !0, () => u.current.revert()), f), a(() => {
+          revertOnUpdate: a
+        } = t, l = (0, d.useRef)(!1), u = (0, d.useRef)(i.context(() => {}, s)), b = (0, d.useRef)(e => u.current.add(null, e)), g = n && n.length && !a;
+        return g && r(() => (l.current = !0, () => u.current.revert()), f), r(() => {
           if (e && u.current.add(e, s), !g || !l.current) return () => u.current.revert()
         }, n), {
           context: u.current,

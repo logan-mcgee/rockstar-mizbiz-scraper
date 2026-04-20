@@ -34,8 +34,8 @@ try {
         } = (0, r.b)(), {
           videoId: g
         } = (0, o.useParams)(), {
-          video: c,
-          related: b
+          video: b,
+          related: c
         } = (0, l.useVideoData)({
           id: g
         }), y = s.get("resolution") ?? "_auto";
@@ -45,16 +45,16 @@ try {
         }]), i(!1), () => {
           i(!0), f()
         }), []), (0, d.useEffect)(() => {
-          c && u(`${c.game.title} - ${c.title}`)
-        }, [c]), c && g ? (0, a.jsxs)(a.Fragment, {
+          b && u(`${b.game.title} - ${b.title}`)
+        }, [b]), b && g ? (0, a.jsxs)(a.Fragment, {
           children: [(0, a.jsx)(l.PlayerWithInfo, {
             resolution: y,
             videoId: g,
             videoChangeCallback: e => {
               t(`../videos/${e}`)
             }
-          }), b?.results?.length ? (0, a.jsx)(n.A, {
-            vids: b.results,
+          }), c?.results?.length ? (0, a.jsx)(n.A, {
+            vids: c.results,
             title: e("Related Videos")
           }) : ""]
         }) : null

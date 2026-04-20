@@ -22,9 +22,9 @@ try {
         }, n(e)
       }
       a.r(t), a.d(t, {
-        BlurStack: () => c,
+        BlurStack: () => b,
         canvasRGB: () => d,
-        canvasRGBA: () => f,
+        canvasRGBA: () => l,
         image: () => i,
         imageDataRGB: () => g,
         imageDataRGBA: () => s
@@ -35,17 +35,17 @@ try {
       function i(e, t, a, n, r, o) {
         if ("string" == typeof e && (e = document.getElementById(e)), e && ("HTMLImageElement" !== Object.prototype.toString.call(e).slice(8, -1) || "naturalWidth" in e)) {
           var i = r ? "offset" : "natural",
-            l = e[i + "Width"],
+            f = e[i + "Width"],
             s = e[i + "Height"];
-          if ("ImageBitmap" === Object.prototype.toString.call(e).slice(8, -1) && (l = e.width, s = e.height), "string" == typeof t && (t = document.getElementById(t)), t && "getContext" in t) {
-            o || (t.style.width = l + "px", t.style.height = s + "px"), t.width = l, t.height = s;
+          if ("ImageBitmap" === Object.prototype.toString.call(e).slice(8, -1) && (f = e.width, s = e.height), "string" == typeof t && (t = document.getElementById(t)), t && "getContext" in t) {
+            o || (t.style.width = f + "px", t.style.height = s + "px"), t.width = f, t.height = s;
             var g = t.getContext("2d");
-            g.clearRect(0, 0, l, s), g.drawImage(e, 0, 0, e.naturalWidth, e.naturalHeight, 0, 0, l, s), isNaN(a) || a < 1 || (n ? f(t, 0, 0, l, s, a) : d(t, 0, 0, l, s, a))
+            g.clearRect(0, 0, f, s), g.drawImage(e, 0, 0, e.naturalWidth, e.naturalHeight, 0, 0, f, s), isNaN(a) || a < 1 || (n ? l(t, 0, 0, f, s, a) : d(t, 0, 0, f, s, a))
           }
         }
       }
 
-      function l(e, t, a, r, o) {
+      function f(e, t, a, r, o) {
         if ("string" == typeof e && (e = document.getElementById(e)), !e || "object" !== n(e) || !("getContext" in e)) throw new TypeError("Expecting canvas with `getContext` method in processCanvasRGB(A) calls!");
         var i = e.getContext("2d");
         try {
@@ -55,30 +55,30 @@ try {
         }
       }
 
-      function f(e, t, a, n, r, o) {
+      function l(e, t, a, n, r, o) {
         if (!(isNaN(o) || o < 1)) {
           o |= 0;
-          var i = l(e, t, a, n, r);
+          var i = f(e, t, a, n, r);
           i = s(i, 0, 0, n, r, o), e.getContext("2d").putImageData(i, t, a)
         }
       }
 
-      function s(e, t, a, n, i, l) {
-        for (var f, s = e.data, d = 2 * l + 1, g = n - 1, u = i - 1, b = l + 1, y = b * (b + 1) / 2, p = new c, v = p, h = 1; h < d; h++) v = v.next = new c, h === b && (f = v);
+      function s(e, t, a, n, i, f) {
+        for (var l, s = e.data, d = 2 * f + 1, g = n - 1, c = i - 1, u = f + 1, y = u * (u + 1) / 2, p = new b, v = p, h = 1; h < d; h++) v = v.next = new b, h === u && (l = v);
         v.next = p;
-        for (var m = null, w = null, x = 0, _ = 0, E = r[l], I = o[l], k = 0; k < i; k++) {
+        for (var m = null, w = null, x = 0, _ = 0, E = r[f], I = o[f], k = 0; k < i; k++) {
           v = p;
-          for (var C = s[_], B = s[_ + 1], S = s[_ + 2], T = s[_ + 3], D = 0; D < b; D++) v.r = C, v.g = B, v.b = S, v.a = T, v = v.next;
-          for (var M = 0, N = 0, R = 0, G = 0, j = b * C, A = b * B, H = b * S, O = b * T, W = y * C, L = y * B, Y = y * S, q = y * T, z = 1; z < b; z++) {
+          for (var C = s[_], B = s[_ + 1], S = s[_ + 2], T = s[_ + 3], D = 0; D < u; D++) v.r = C, v.g = B, v.b = S, v.a = T, v = v.next;
+          for (var M = 0, N = 0, R = 0, G = 0, j = u * C, A = u * B, H = u * S, O = u * T, W = y * C, L = y * B, Y = y * S, q = y * T, z = 1; z < u; z++) {
             var F = _ + ((g < z ? g : z) << 2),
               J = s[F],
               K = s[F + 1],
               P = s[F + 2],
               Q = s[F + 3],
-              U = b - z;
+              U = u - z;
             W += (v.r = J) * U, L += (v.g = K) * U, Y += (v.b = P) * U, q += (v.a = Q) * U, M += J, N += K, R += P, G += Q, v = v.next
           }
-          m = p, w = f;
+          m = p, w = l;
           for (var V = 0; V < n; V++) {
             var X = q * E >>> I;
             if (s[_ + 3] = X, 0 !== X) {
@@ -86,7 +86,7 @@ try {
               s[_] = (W * E >>> I) * Z, s[_ + 1] = (L * E >>> I) * Z, s[_ + 2] = (Y * E >>> I) * Z
             } else s[_] = s[_ + 1] = s[_ + 2] = 0;
             W -= j, L -= A, Y -= H, q -= O, j -= m.r, A -= m.g, H -= m.b, O -= m.a;
-            var $ = V + l + 1;
+            var $ = V + f + 1;
             $ = x + ($ < g ? $ : g) << 2, W += M += m.r = s[$], L += N += m.g = s[$ + 1], Y += R += m.b = s[$ + 2], q += G += m.a = s[$ + 3], m = m.next;
             var ee = w,
               te = ee.r,
@@ -99,28 +99,28 @@ try {
         }
         for (var oe = 0; oe < n; oe++) {
           var ie = s[_ = oe << 2],
-            le = s[_ + 1],
-            fe = s[_ + 2],
+            fe = s[_ + 1],
+            le = s[_ + 2],
             se = s[_ + 3],
-            de = b * ie,
-            ge = b * le,
-            ce = b * fe,
-            ue = b * se,
-            be = y * ie,
-            ye = y * le,
-            pe = y * fe,
+            de = u * ie,
+            ge = u * fe,
+            be = u * le,
+            ce = u * se,
+            ue = y * ie,
+            ye = y * fe,
+            pe = y * le,
             ve = y * se;
           v = p;
-          for (var he = 0; he < b; he++) v.r = ie, v.g = le, v.b = fe, v.a = se, v = v.next;
-          for (var me = n, we = 0, xe = 0, _e = 0, Ee = 0, Ie = 1; Ie <= l; Ie++) {
+          for (var he = 0; he < u; he++) v.r = ie, v.g = fe, v.b = le, v.a = se, v = v.next;
+          for (var me = n, we = 0, xe = 0, _e = 0, Ee = 0, Ie = 1; Ie <= f; Ie++) {
             _ = me + oe << 2;
-            var ke = b - Ie;
-            be += (v.r = ie = s[_]) * ke, ye += (v.g = le = s[_ + 1]) * ke, pe += (v.b = fe = s[_ + 2]) * ke, ve += (v.a = se = s[_ + 3]) * ke, Ee += ie, we += le, xe += fe, _e += se, v = v.next, Ie < u && (me += n)
+            var ke = u - Ie;
+            ue += (v.r = ie = s[_]) * ke, ye += (v.g = fe = s[_ + 1]) * ke, pe += (v.b = le = s[_ + 2]) * ke, ve += (v.a = se = s[_ + 3]) * ke, Ee += ie, we += fe, xe += le, _e += se, v = v.next, Ie < c && (me += n)
           }
-          _ = oe, m = p, w = f;
+          _ = oe, m = p, w = l;
           for (var Ce = 0; Ce < i; Ce++) {
             var Be = _ << 2;
-            s[Be + 3] = se = ve * E >>> I, se > 0 ? (se = 255 / se, s[Be] = (be * E >>> I) * se, s[Be + 1] = (ye * E >>> I) * se, s[Be + 2] = (pe * E >>> I) * se) : s[Be] = s[Be + 1] = s[Be + 2] = 0, be -= de, ye -= ge, pe -= ce, ve -= ue, de -= m.r, ge -= m.g, ce -= m.b, ue -= m.a, Be = oe + ((Be = Ce + b) < u ? Be : u) * n << 2, be += Ee += m.r = s[Be], ye += we += m.g = s[Be + 1], pe += xe += m.b = s[Be + 2], ve += _e += m.a = s[Be + 3], m = m.next, de += ie = w.r, ge += le = w.g, ce += fe = w.b, ue += se = w.a, Ee -= ie, we -= le, xe -= fe, _e -= se, w = w.next, _ += n
+            s[Be + 3] = se = ve * E >>> I, se > 0 ? (se = 255 / se, s[Be] = (ue * E >>> I) * se, s[Be + 1] = (ye * E >>> I) * se, s[Be + 2] = (pe * E >>> I) * se) : s[Be] = s[Be + 1] = s[Be + 2] = 0, ue -= de, ye -= ge, pe -= be, ve -= ce, de -= m.r, ge -= m.g, be -= m.b, ce -= m.a, Be = oe + ((Be = Ce + u) < c ? Be : c) * n << 2, ue += Ee += m.r = s[Be], ye += we += m.g = s[Be + 1], pe += xe += m.b = s[Be + 2], ve += _e += m.a = s[Be + 3], m = m.next, de += ie = w.r, ge += fe = w.g, be += le = w.b, ce += se = w.a, Ee -= ie, we -= fe, xe -= le, _e -= se, w = w.next, _ += n
           }
         }
         return e
@@ -129,50 +129,50 @@ try {
       function d(e, t, a, n, r, o) {
         if (!(isNaN(o) || o < 1)) {
           o |= 0;
-          var i = l(e, t, a, n, r);
+          var i = f(e, t, a, n, r);
           i = g(i, 0, 0, n, r, o), e.getContext("2d").putImageData(i, t, a)
         }
       }
 
-      function g(e, t, a, n, i, l) {
-        for (var f, s = e.data, d = 2 * l + 1, g = n - 1, u = i - 1, b = l + 1, y = b * (b + 1) / 2, p = new c, v = p, h = 1; h < d; h++) v = v.next = new c, h === b && (f = v);
+      function g(e, t, a, n, i, f) {
+        for (var l, s = e.data, d = 2 * f + 1, g = n - 1, c = i - 1, u = f + 1, y = u * (u + 1) / 2, p = new b, v = p, h = 1; h < d; h++) v = v.next = new b, h === u && (l = v);
         v.next = p;
-        for (var m, w, x = null, _ = null, E = r[l], I = o[l], k = 0, C = 0, B = 0; B < i; B++) {
+        for (var m, w, x = null, _ = null, E = r[f], I = o[f], k = 0, C = 0, B = 0; B < i; B++) {
           var S = s[C],
             T = s[C + 1],
             D = s[C + 2],
-            M = b * S,
-            N = b * T,
-            R = b * D,
+            M = u * S,
+            N = u * T,
+            R = u * D,
             G = y * S,
             j = y * T,
             A = y * D;
           v = p;
-          for (var H = 0; H < b; H++) v.r = S, v.g = T, v.b = D, v = v.next;
-          for (var O = 0, W = 0, L = 0, Y = 1; Y < b; Y++) m = C + ((g < Y ? g : Y) << 2), G += (v.r = S = s[m]) * (w = b - Y), j += (v.g = T = s[m + 1]) * w, A += (v.b = D = s[m + 2]) * w, O += S, W += T, L += D, v = v.next;
-          x = p, _ = f;
-          for (var q = 0; q < n; q++) s[C] = G * E >>> I, s[C + 1] = j * E >>> I, s[C + 2] = A * E >>> I, G -= M, j -= N, A -= R, M -= x.r, N -= x.g, R -= x.b, m = k + ((m = q + l + 1) < g ? m : g) << 2, G += O += x.r = s[m], j += W += x.g = s[m + 1], A += L += x.b = s[m + 2], x = x.next, M += S = _.r, N += T = _.g, R += D = _.b, O -= S, W -= T, L -= D, _ = _.next, C += 4;
+          for (var H = 0; H < u; H++) v.r = S, v.g = T, v.b = D, v = v.next;
+          for (var O = 0, W = 0, L = 0, Y = 1; Y < u; Y++) m = C + ((g < Y ? g : Y) << 2), G += (v.r = S = s[m]) * (w = u - Y), j += (v.g = T = s[m + 1]) * w, A += (v.b = D = s[m + 2]) * w, O += S, W += T, L += D, v = v.next;
+          x = p, _ = l;
+          for (var q = 0; q < n; q++) s[C] = G * E >>> I, s[C + 1] = j * E >>> I, s[C + 2] = A * E >>> I, G -= M, j -= N, A -= R, M -= x.r, N -= x.g, R -= x.b, m = k + ((m = q + f + 1) < g ? m : g) << 2, G += O += x.r = s[m], j += W += x.g = s[m + 1], A += L += x.b = s[m + 2], x = x.next, M += S = _.r, N += T = _.g, R += D = _.b, O -= S, W -= T, L -= D, _ = _.next, C += 4;
           k += n
         }
         for (var z = 0; z < n; z++) {
           var F = s[C = z << 2],
             J = s[C + 1],
             K = s[C + 2],
-            P = b * F,
-            Q = b * J,
-            U = b * K,
+            P = u * F,
+            Q = u * J,
+            U = u * K,
             V = y * F,
             X = y * J,
             Z = y * K;
           v = p;
-          for (var $ = 0; $ < b; $++) v.r = F, v.g = J, v.b = K, v = v.next;
-          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= l; ne++) C = re + z << 2, V += (v.r = F = s[C]) * (w = b - ne), X += (v.g = J = s[C + 1]) * w, Z += (v.b = K = s[C + 2]) * w, ee += F, te += J, ae += K, v = v.next, ne < u && (re += n);
-          C = z, x = p, _ = f;
-          for (var oe = 0; oe < i; oe++) s[m = C << 2] = V * E >>> I, s[m + 1] = X * E >>> I, s[m + 2] = Z * E >>> I, V -= P, X -= Q, Z -= U, P -= x.r, Q -= x.g, U -= x.b, m = z + ((m = oe + b) < u ? m : u) * n << 2, V += ee += x.r = s[m], X += te += x.g = s[m + 1], Z += ae += x.b = s[m + 2], x = x.next, P += F = _.r, Q += J = _.g, U += K = _.b, ee -= F, te -= J, ae -= K, _ = _.next, C += n
+          for (var $ = 0; $ < u; $++) v.r = F, v.g = J, v.b = K, v = v.next;
+          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= f; ne++) C = re + z << 2, V += (v.r = F = s[C]) * (w = u - ne), X += (v.g = J = s[C + 1]) * w, Z += (v.b = K = s[C + 2]) * w, ee += F, te += J, ae += K, v = v.next, ne < c && (re += n);
+          C = z, x = p, _ = l;
+          for (var oe = 0; oe < i; oe++) s[m = C << 2] = V * E >>> I, s[m + 1] = X * E >>> I, s[m + 2] = Z * E >>> I, V -= P, X -= Q, Z -= U, P -= x.r, Q -= x.g, U -= x.b, m = z + ((m = oe + u) < c ? m : c) * n << 2, V += ee += x.r = s[m], X += te += x.g = s[m + 1], Z += ae += x.b = s[m + 2], x = x.next, P += F = _.r, Q += J = _.g, U += K = _.b, ee -= F, te -= J, ae -= K, _ = _.next, C += n
         }
         return e
       }
-      var c = function e() {
+      var b = function e() {
         ! function(e, t) {
           if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
         }(this, e), this.r = 0, this.g = 0, this.b = 0, this.a = 0, this.next = null

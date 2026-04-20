@@ -44,20 +44,20 @@ try {
           ...m
         }) => {
           const {
-            data: y
+            data: b
           } = (0, c.useRockstarUser)(), {
-            track: b
+            track: y
           } = (0, c.useGtmTrack)(), _ = (0, i.getCookieValueByName)("UAGC"), [h, v] = (0, n.useState)("1" === (w = _) ? f.PASSED : "0" === w ? f.FAILED : f.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, n.useState)(), x = (0, n.createRef)(), E = (0, n.createRef)(), j = (0, n.createRef)(), {
             style: D
           } = t;
           return (0, n.useEffect)(() => {
-            b({
+            y({
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }, []), h === f.PASSED || !1 === y?.isAMinor ? a : h === f.FAILED ? (0, r.jsxs)("div", {
+          }, []), h === f.PASSED || !1 === b?.isAMinor ? a : h === f.FAILED ? (0, r.jsxs)("div", {
             className: u.agegate,
             style: D,
             children: [t?.header, (0, r.jsx)("h2", {
@@ -86,7 +86,7 @@ try {
                   n = (0, l.f)(t) && (0, d.d)(t, r);
                 if (I(n), n) {
                   const a = (0, o.V)(new Date, t) >= e;
-                  b(a ? {
+                  y(a ? {
                     event: "age_gate_passed",
                     element_placement: g.element_placement ?? ""
                   } : {

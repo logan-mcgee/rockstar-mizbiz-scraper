@@ -16,25 +16,25 @@ try {
     38325: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => l,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => p,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => i,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => L
+        default: () => f
       });
       var _ = "{description} - Voir l'image dans la lightbox",
         l = "Fermer",
+        n = "Appuyer sur {shortcut}",
+        i = "Zoom avant",
         a = "Appuyer sur {shortcut}",
-        n = "Zoom avant",
-        i = "Appuyer sur {shortcut}",
         b = "Zoom arrière",
         d = "Appuyer sur {shortcut}",
         s = "Réinitialiser",
@@ -43,12 +43,12 @@ try {
         g = "{zoom} %",
         h = "Télécharger",
         p = "Télécharger",
-        L = {
+        f = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: l,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: i,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,
