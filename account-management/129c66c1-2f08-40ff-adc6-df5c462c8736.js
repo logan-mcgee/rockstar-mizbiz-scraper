@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f5255dc0-4b05-4379-9fae-07d31edc0654", e._sentryDebugIdIdentifier = "sentry-dbid-f5255dc0-4b05-4379-9fae-07d31edc0654")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "129c66c1-2f08-40ff-adc6-df5c462c8736", e._sentryDebugIdIdentifier = "sentry-dbid-129c66c1-2f08-40ff-adc6-df5c462c8736")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -12,141 +12,11 @@ try {
 }("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunkaccount_management = self.webpackChunkaccount_management || []).push([
-  [5994], {
-    16024: (e, t, n) => {
-      var r = {
-        "./de": [57003, 5639],
-        "./en": [88503, 6267],
-        "./es": [88132, 5742],
-        "./fr": [10352, 2678],
-        "./it": [5573, 6997],
-        "./ja": [29349, 6361],
-        "./ko": [93746, 7452],
-        "./pl": [33208, 2642],
-        "./pt": [60128, 3034],
-        "./ru": [56321, 3941],
-        "./zh": [50974, 5832]
-      };
-
-      function a(e) {
-        if (!n.o(r, e)) return Promise.resolve().then(() => {
-          var t = new Error("Cannot find module '" + e + "'");
-          throw t.code = "MODULE_NOT_FOUND", t
-        });
-        var t = r[e],
-          a = t[0];
-        return n.e(t[1]).then(() => n.t(a, 23))
-      }
-      a.keys = () => Object.keys(r), a.id = 16024, e.exports = a
-    },
-    20704: (e, t, n) => {
-      var r = {
-        "./de": [8411, 299],
-        "./en": [41735, 5663],
-        "./es": [67220, 5530],
-        "./fr": [16768, 2466],
-        "./it": [46677, 7073],
-        "./ja": [77077, 4621],
-        "./ko": [3906, 824],
-        "./pl": [29512, 2398],
-        "./pt": [5424, 9126],
-        "./ru": [97681, 3697],
-        "./zh": [54958, 1868]
-      };
-
-      function a(e) {
-        if (!n.o(r, e)) return Promise.resolve().then(() => {
-          var t = new Error("Cannot find module '" + e + "'");
-          throw t.code = "MODULE_NOT_FOUND", t
-        });
-        var t = r[e],
-          a = t[0];
-        return n.e(t[1]).then(() => n.t(a, 23))
-      }
-      a.keys = () => Object.keys(r), a.id = 20704, e.exports = a
-    },
-    33044: (e, t, n) => {
-      var r = {
-        "./de": [97131, 5259],
-        "./en": [37687, 4799],
-        "./es": [21860, 3370],
-        "./fr": [58480, 7010],
-        "./it": [88389, 4913],
-        "./ja": [83365, 6285],
-        "./ko": [99858, 6664],
-        "./pl": [72824, 1054],
-        "./pt": [83904, 662],
-        "./ru": [76161, 5233],
-        "./zh": [19390, 4700]
-      };
-
-      function a(e) {
-        if (!n.o(r, e)) return Promise.resolve().then(() => {
-          var t = new Error("Cannot find module '" + e + "'");
-          throw t.code = "MODULE_NOT_FOUND", t
-        });
-        var t = r[e],
-          a = t[0];
-        return n.e(t[1]).then(() => n.t(a, 23))
-      }
-      a.keys = () => Object.keys(r), a.id = 33044, e.exports = a
-    },
-    33366: (e, t, n) => {
-      var r = {
-        "./de": [75700, 4710],
-        "./en": [89436, 3486],
-        "./es": [72415, 4011],
-        "./fr": [15235, 4851],
-        "./it": [37106, 9936],
-        "./ja": [14002, 2156],
-        "./ko": [24241, 3885],
-        "./pl": [29343, 6891],
-        "./pt": [34983, 3475],
-        "./ru": [72518, 4528],
-        "./zh": [60905, 4861]
-      };
-
-      function a(e) {
-        if (!n.o(r, e)) return Promise.resolve().then(() => {
-          var t = new Error("Cannot find module '" + e + "'");
-          throw t.code = "MODULE_NOT_FOUND", t
-        });
-        var t = r[e],
-          a = t[0];
-        return n.e(t[1]).then(() => n.t(a, 23))
-      }
-      a.keys = () => Object.keys(r), a.id = 33366, e.exports = a
-    },
-    34940: (e, t, n) => {
-      var r = {
-        "./de": [87015, 6879],
-        "./en": [64147, 2243],
-        "./es": [28920, 278],
-        "./fr": [33940, 9022],
-        "./it": [56681, 2365],
-        "./ja": [17649, 9377],
-        "./ko": [49814, 9028],
-        "./pl": [90300, 1242],
-        "./pt": [88692, 7970],
-        "./ru": [76165, 7453],
-        "./zh": [39530, 8880]
-      };
-
-      function a(e) {
-        if (!n.o(r, e)) return Promise.resolve().then(() => {
-          var t = new Error("Cannot find module '" + e + "'");
-          throw t.code = "MODULE_NOT_FOUND", t
-        });
-        var t = r[e],
-          a = t[0];
-        return n.e(t[1]).then(() => n.t(a, 23))
-      }
-      a.keys = () => Object.keys(r), a.id = 34940, e.exports = a
-    },
-    48482: (e, t, n) => {
+  [7723], {
+    8515: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
-        default: () => Yo
+        default: () => Zo
       });
       var r = n(74848),
         a = n(44914),
@@ -164,7 +34,7 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var u, f, _ = function(e) {
+      var u, _, f = function(e) {
           var t = new URLSearchParams(window.location.search);
           return t.set("lang", e), "".concat(window.location.pathname, "?").concat(t.toString())
         },
@@ -175,6 +45,7 @@ try {
           ONETRUST_SCRIPT_ID: "cc81fc10-5468-4b73-b37f-93a4686af46f",
           SCAPI_BASE_URL: "https://scapi.rockstargames.com",
           SCAUTH_BASE_URL: "https://signin.rockstargames.com",
+          SUPPORT_BASE_URL: "https://support.rockstargames.com",
           WWW_BASE_URL: "https://www.rockstargames.com"
         };
       const m = (u = function(e) {
@@ -188,7 +59,10 @@ try {
           })
         }
         return e
-      }({}, p), f = null != (f = {
+      }({}, p), _ = null != (_ = {
+        getAccountLinkingSupportUrl: function() {
+          return "".concat(p.SUPPORT_BASE_URL, "/request/account/account-settings/linking-unlinking-accounts")
+        },
         getAovUrl: function(e) {
           var t = e.lang,
             n = new URL("".concat(p.SCAUTH_BASE_URL, "/aov?cid=").concat(p.CLIENT_ID));
@@ -196,14 +70,19 @@ try {
         },
         getAuthorizeUrl: function(e) {
           var t = new URL("".concat(p.SCAUTH_BASE_URL, "/connect/authorize/").concat(p.CLIENT_ID));
-          return t.searchParams.set("returnUrl", _(e)), t.toString()
+          return t.searchParams.set("returnUrl", f(e)), t.toString()
+        },
+        getDataAccessAovUrl: function(e) {
+          var t = e.lang,
+            n = new URL("".concat(p.SCAUTH_BASE_URL, "/aov?cid=").concat(p.CLIENT_ID));
+          return n.searchParams.append("lang", t), n.searchParams.append("redirectUrl", "".concat(p.WWW_BASE_URL, "/account/privacy?lang=").concat(t)), n.toString()
         },
         getLinkUrl: function(e) {
           var t = e.accessToken,
             n = e.lang,
             r = e.onlineService,
             a = new URL("".concat(p.SCAUTH_BASE_URL, "/tpa/").concat(r, "/link"));
-          return a.searchParams.set("cid", p.CLIENT_ID), a.searchParams.set("accessToken", t), a.searchParams.set("returnUrl", _(n)), a.searchParams.set("lang", n), a.toString()
+          return a.searchParams.set("cid", p.CLIENT_ID), a.searchParams.set("accessToken", t), a.searchParams.set("returnUrl", f(n)), a.searchParams.set("lang", n), a.toString()
         },
         getDeleteAccountLogoutUrl: function(e) {
           var t = e.lang,
@@ -218,17 +97,17 @@ try {
             n = e.lang,
             r = e.onlineService,
             a = new URL("".concat(p.SCAUTH_BASE_URL, "/tpa/").concat(r, "/unlink"));
-          return a.searchParams.set("cid", p.CLIENT_ID), a.searchParams.set("accessToken", t), a.searchParams.set("returnUrl", _(n)), a.searchParams.set("lang", n), a.toString()
+          return a.searchParams.set("cid", p.CLIENT_ID), a.searchParams.set("accessToken", t), a.searchParams.set("returnUrl", f(n)), a.searchParams.set("lang", n), a.toString()
         }
-      }) ? f : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(f)) : function(e) {
+      }) ? _ : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(_)) : function(e) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           t.push.apply(t, n)
         }
         return t
-      }(Object(f)).forEach(function(e) {
-        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(f, e))
+      }(Object(_)).forEach(function(e) {
+        Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(_, e))
       }), u);
       var h = n(76455);
 
@@ -255,78 +134,6 @@ try {
           support: "support"
         },
         cookieIdentifier: "prod"
-      }, {
-        id: "stage-cert",
-        sites: {
-          www: "stage-cert",
-          socialClub: "stage-cert.sc",
-          store: "store",
-          support: "stagecert.support"
-        },
-        cookieIdentifier: "stage-cert"
-      }, {
-        id: "cert",
-        sites: {
-          www: "cert",
-          socialClub: "cert.sc",
-          store: "store",
-          support: "cert.support"
-        },
-        cookieIdentifier: "cert"
-      }, {
-        id: "preprod",
-        sites: {
-          www: "preprod",
-          socialClub: "preprod.sc",
-          store: "store",
-          support: "preprod.support"
-        },
-        cookieIdentifier: "preprod"
-      }, {
-        id: "stage-prod",
-        sites: {
-          www: "stage-prod",
-          socialClub: "stage-prod.sc",
-          store: "store",
-          support: "stageprod.support"
-        },
-        cookieIdentifier: "stageprod"
-      }, {
-        id: "stage-dev",
-        sites: {
-          www: "stage-dev",
-          socialClub: "stage-dev.sc",
-          store: "store",
-          support: "stagedev.support"
-        },
-        cookieIdentifier: "stagedev"
-      }, {
-        id: "devlive",
-        sites: {
-          www: "devlive",
-          socialClub: "devlive.sc",
-          store: "store",
-          support: "devlive.support"
-        },
-        cookieIdentifier: "devlive"
-      }, {
-        id: "dev",
-        sites: {
-          www: "dev",
-          socialClub: "dev.sc",
-          store: "store",
-          support: "dev.support"
-        },
-        cookieIdentifier: "dev"
-      }, {
-        id: "local",
-        sites: {
-          www: "local",
-          socialClub: "local.socialclub",
-          store: "store",
-          support: "local.support"
-        },
-        cookieIdentifier: "local"
       }];
       const v = function() {
         var e = void 0,
@@ -668,7 +475,7 @@ try {
         }) : e[t] = n, e
       }
 
-      function N(e) {
+      function L(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -680,12 +487,12 @@ try {
         }
         return e
       }
-      var L = n(6442),
+      var N = n(6442),
         E = n(23342),
         R = n(92396),
-        G = n(66708),
-        U = "_125nfjqb",
-        V = (0, G.c)({
+        q = n(66708),
+        G = "_125nfjqb",
+        U = (0, q.c)({
           defaultClassName: "_125nfjqg foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdm foundry_tdsdcdq",
           variantClassNames: {
             overflowEllipsis: {
@@ -695,7 +502,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }),
-        q = (0, G.c)({
+        V = (0, q.c)({
           defaultClassName: "_125nfjq7",
           variantClassNames: {
             disabled: {
@@ -711,7 +518,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }),
-        F = (0, G.c)({
+        F = (0, q.c)({
           defaultClassName: "_125nfjqi foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdn",
           variantClassNames: {
             overflowEllipsis: {
@@ -755,7 +562,7 @@ try {
         return e
       }
 
-      function X(e, t) {
+      function W(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -768,7 +575,7 @@ try {
         }), e
       }
 
-      function Z(e, t) {
+      function X(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -783,16 +590,16 @@ try {
         }
         return a
       }
-      var W = (0, a.forwardRef)(function(e, t) {
+      var Z = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq0", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -802,12 +609,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq4", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -817,12 +624,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq5", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -832,12 +639,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq2 foundry_tdsdcd2 foundry_tdsdcd0 foundry_tdsdcd8", n)
             }, o);
-          return (0, r.jsx)("h5", X(Y({
+          return (0, r.jsx)("h5", W(Y({
             ref: t
           }, s), {
             children: a
@@ -847,12 +654,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq3", n)
             }, o);
-          return (0, r.jsx)("p", X(Y({
+          return (0, r.jsx)("p", W(Y({
             ref: t
           }, s), {
             children: a
@@ -862,12 +669,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjq6", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -881,11 +688,11 @@ try {
             s = e.label,
             c = e.shouldStackMobile,
             l = e.testId,
-            d = Z(e, ["className", "children", "isDisabled", "isInteractable", "label", "shouldStackMobile", "testId"]),
-            u = (0, R.v6)(Y(X(Y({}, s && {
+            d = X(e, ["className", "children", "isDisabled", "isInteractable", "label", "shouldStackMobile", "testId"]),
+            u = (0, R.v6)(Y(W(Y({}, s && {
               "aria-label": s
             }), {
-              className: (0, z.A)(q({
+              className: (0, z.A)(V({
                 disabled: i,
                 interactable: o,
                 stackMobile: c
@@ -894,7 +701,7 @@ try {
             }), o && {
               tabIndex: -1
             }), d);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, u), {
             children: a
@@ -914,12 +721,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjqd", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -929,12 +736,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjqe", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -944,12 +751,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjqf", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -960,14 +767,14 @@ try {
             a = e.children,
             i = e.shouldEllipsis,
             o = e.testId,
-            s = Z(e, ["className", "children", "shouldEllipsis", "testId"]),
+            s = X(e, ["className", "children", "shouldEllipsis", "testId"]),
             c = (0, R.v6)({
               "data-testid": o,
-              className: (0, z.A)(V({
+              className: (0, z.A)(U({
                 overflowEllipsis: i
               }), n)
             }, s);
-          return (0, r.jsx)("p", X(Y({
+          return (0, r.jsx)("p", W(Y({
             ref: t
           }, c), {
             children: a
@@ -978,14 +785,14 @@ try {
             a = e.children,
             i = e.shouldEllipsis,
             o = e.testId,
-            s = Z(e, ["className", "children", "shouldEllipsis", "testId"]),
+            s = X(e, ["className", "children", "shouldEllipsis", "testId"]),
             c = (0, R.v6)({
               "data-testid": o,
               className: (0, z.A)(F({
                 overflowEllipsis: i
               }), n)
             }, s);
-          return (0, r.jsx)("p", X(Y({
+          return (0, r.jsx)("p", W(Y({
             ref: t
           }, c), {
             children: a
@@ -995,12 +802,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjqk", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -1010,12 +817,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjql foundry_tdsdcda foundry_tdsdcd0 foundry_tdsdcde foundry_tdsdcdi", n)
             }, o);
-          return (0, r.jsx)(E.Button, X(Y({
+          return (0, r.jsx)(E.Button, W(Y({
             ref: t
           }, s), {
             children: a
@@ -1025,12 +832,12 @@ try {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Z(e, ["className", "children", "testId"]),
+            o = X(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("_125nfjqm", n)
             }, o);
-          return (0, r.jsx)("div", X(Y({
+          return (0, r.jsx)("div", W(Y({
             ref: t
           }, s), {
             children: a
@@ -1079,9 +886,9 @@ try {
             })
           })
         });
-      const fe = ue;
-      var _e = n(72267);
-      const pe = (0, _e.YK)({
+      const _e = ue;
+      var fe = n(72267);
+      const pe = (0, fe.YK)({
         profile_delete_thanks_title: {
           defaultMessage: "Thank you for using Rockstar Games",
           description: "The heading for the final page.",
@@ -1099,12 +906,12 @@ try {
         }
       });
       var me = function() {
-          var e = (0, L.A)();
+          var e = (0, N.A)();
           return (0, r.jsx)("div", {
             className: "b32tmb0",
             children: (0, r.jsxs)("div", {
               className: "b32tmb1",
-              children: [(0, r.jsx)(fe, {
+              children: [(0, r.jsx)(_e, {
                 className: "b32tmb3",
                 label: "Rockstar Games",
                 testId: "rockstarLogo"
@@ -1272,7 +1079,7 @@ try {
             }
           }
         },
-        Oe = (0, _e.YK)({
+        Oe = (0, fe.YK)({
           toast_provider_label: {
             defaultMessage: "Alert",
             description: "Label for the error toast provider.",
@@ -1302,9 +1109,27 @@ try {
             defaultMessage: "Unable to update your profile due to being classed as underage for the selected country / region",
             description: "The error message for trying to change to a country with an underage account.",
             id: "invalid_date_of_birth"
+          },
+          verify_email_changed_incorrect_logged_in_user: {
+            defaultMessage: "You are logged in to the wrong account. Please login to the correct account and try again.",
+            description: "Error message for when the user is attempting to verify their new email address while being logged into the wrong account",
+            id: "verify_email_changed_incorrect_logged_in_user"
+          },
+          verify_email_changed_email_cookie_expired: {
+            defaultMessage: "Your verification link has expired, please try again.",
+            description: "Error message for when the user's email cookie has expired",
+            id: "verify_email_changed_email_cookie_expired"
+          },
+          security_already_enrolled_in_mfa: {
+            defaultMessage: "Your account is already enrolled in two-factor authentication.",
+            description: "Error message for when the user is already enrolled in two-factor authentication",
+            id: "security_already_enrolled_in_mfa"
           }
         }),
         Se = {
+          "0.3300.7": Oe.security_already_enrolled_in_mfa,
+          "0.3800.7": Oe.verify_email_changed_incorrect_logged_in_user,
+          "0.3800.8": Oe.verify_email_changed_email_cookie_expired,
           "8.400.1": Oe.castle_or_rate_limit_error,
           "8.600.1": Oe.castle_or_rate_limit_error,
           "141.100.3": Oe.castle_or_rate_limit_error,
@@ -1328,7 +1153,8 @@ try {
       const Ie = function(e) {
         var t, n, i, o = e.error,
           s = e.id,
-          c = (n = (0, a.useState)(!0), i = 2, function(e) {
+          c = e.errorMessage,
+          l = (n = (0, a.useState)(!0), i = 2, function(e) {
             if (Array.isArray(e)) return e
           }(n) || function(e, t) {
             var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
@@ -1358,17 +1184,17 @@ try {
           }(n, i) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
-          l = c[0],
-          d = c[1],
-          u = Ee(),
-          f = (0, L.A)(),
-          _ = f.formatMessage(null !== (t = Se[o.code]) && void 0 !== t ? t : Oe.generic_error);
+          d = l[0],
+          u = l[1],
+          _ = qe(),
+          f = (0, N.A)(),
+          p = o ? f.formatMessage(null !== (t = Se[o.code]) && void 0 !== t ? t : Oe.generic_error) : c;
         return (0, r.jsxs)(E.Toast.Root, {
           appearance: "danger",
           className: "_1tpz0j30",
-          open: l,
+          open: d,
           onOpenChange: function(e) {
-            d(e), e || u.removeToast(s)
+            u(e), e || _.removeToast(s)
           },
           type: "foreground",
           duration: 1 / 0,
@@ -1378,8 +1204,8 @@ try {
             className: "_1tpz0j31",
             children: [(0, r.jsx)("div", {
               "data-testid": "errorMessage",
-              children: _
-            }), (0, r.jsxs)("div", {
+              children: p
+            }), o && (0, r.jsxs)("div", {
               className: "_1tpz0j32",
               children: [(0, r.jsx)("div", {
                 "data-testid": "errorLogId",
@@ -1395,7 +1221,7 @@ try {
           })]
         })
       };
-      var Pe = (0, G.c)({
+      var Pe = (0, q.c)({
         defaultClassName: "_1momhrh0",
         variantClassNames: {
           hidden: {
@@ -1416,7 +1242,7 @@ try {
           o = e.message,
           s = e.title,
           c = e.id,
-          l = (0, L.A)(),
+          l = (0, N.A)(),
           d = (t = (0, a.useState)(!0), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
@@ -1448,14 +1274,14 @@ try {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           u = d[0],
-          f = d[1],
-          _ = Ee();
+          _ = d[1],
+          f = qe();
         return (0, r.jsxs)(E.Toast.Root, {
           appearance: i,
           className: "jb6xbj2",
           open: u,
           onOpenChange: function(e) {
-            f(e), e || _.removeToast(c)
+            _(e), e || f.removeToast(c)
           },
           testId: "globalToast",
           children: [(0, r.jsx)(E.Toast.Icon, {}), (0, r.jsxs)(E.Toast.Description, {
@@ -1480,28 +1306,50 @@ try {
         return r
       }
 
-      function Ne(e, t) {
+      function Le(e, t, n) {
+        return t in e ? Object.defineProperty(e, t, {
+          value: n,
+          enumerable: !0,
+          configurable: !0,
+          writable: !0
+        }) : e[t] = n, e
+      }
+
+      function Ne(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            Le(e, t, n[t])
+          })
+        }
+        return e
+      }
+
+      function Ee(e, t) {
         if (e) {
           if ("string" == typeof e) return Te(e, t);
           var n = Object.prototype.toString.call(e).slice(8, -1);
           return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Te(e, t) : void 0
         }
       }
-      var Le = (0, a.createContext)(null),
-        Ee = function() {
-          var e = (0, a.useContext)(Le);
+      var Re = (0, a.createContext)(null),
+        qe = function() {
+          var e = (0, a.useContext)(Re);
           if (!e) throw new Error("Not used in GlobalToastContext");
           return e
         },
-        Re = function() {
-          return Ee().toasts.map(function(e) {
+        Ge = function() {
+          return qe().toasts.map(function(e) {
             return (0, r.jsx)(a.Fragment, {
               children: e
             }, e.props.id)
           })
         },
-        Ge = function() {
-          var e = Ee();
+        Ue = function() {
+          var e = qe();
           return (0, r.jsx)(E.Toast.Viewport, {
             className: Pe({
               hidden: e.toasts.length <= 0
@@ -1510,9 +1358,9 @@ try {
             testId: "globalToastViewport"
           })
         },
-        Ue = function(e) {
+        Ve = function(e) {
           var t, n, i, o, s, c = e.children,
-            l = (0, L.A)(),
+            l = (0, N.A)(),
             d = (o = (0, a.useState)([]), s = 2, t = function(e) {
               if (Array.isArray(e)) return e
             }(o) || function(e, t) {
@@ -1534,7 +1382,7 @@ try {
                 }
                 return i
               }
-            }(o, s) || Ne(o, s) || function() {
+            }(o, s) || Ee(o, s) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }(), n = t[0], {
               displayNewError: function(e) {
@@ -1545,10 +1393,15 @@ try {
                     a = t.filter(function(e) {
                       return e.type === Ie
                     });
-                  return a.length >= 3 && a.shift(), a.push((0, r.jsx)(Ie, {
-                    error: e,
+                  a.length >= 3 && a.shift();
+                  var i = Ne({
                     id: crypto.randomUUID()
-                  })), a.concat(n)
+                  }, "string" == typeof e ? {
+                    errorMessage: e
+                  } : {
+                    error: e
+                  });
+                  return a.push((0, r.jsx)(Ie, Ne({}, i))), a.concat(n)
                 })
               },
               displayNewToast: function(e) {
@@ -1561,7 +1414,7 @@ try {
                       if (Array.isArray(e)) return Te(e)
                     }(e) || function(e) {
                       if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                    }(e) || Ne(e) || function() {
+                    }(e) || Ee(e) || function() {
                       throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                     }()
                   }(e);
@@ -1581,18 +1434,18 @@ try {
               setToasts: i = t[1],
               toasts: n
             });
-          return (0, r.jsx)(Le.Provider, {
+          return (0, r.jsx)(Re.Provider, {
             value: d,
             children: (0, r.jsxs)(E.Toast.Provider, {
               duration: 1e4,
               label: l.formatMessage(Oe.toast_provider_label),
-              children: [c, (0, r.jsx)(Re, {}), (0, r.jsx)(Ge, {})]
+              children: [c, (0, r.jsx)(Ge, {}), (0, r.jsx)(Ue, {})]
             })
           })
         },
-        Ve = n(52035);
+        Fe = n(52035);
 
-      function qe(e, t, n) {
+      function ze(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -1600,82 +1453,90 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var Fe, ze, Be = function(e) {
-          return e.ProfileOverview = "account/settings", e.UpdateLanguage = "account/language/update", e.PasswordRequirements = "account/password/requirements", e.GetCountries = "profile/getCountries", e.RequestUpdateEmail = "account/email/request", e.UpdateEmail = "account/email/update", e.UpdatePassword = "account/password", e.UpdateNickname = "account/nickname", e.UpdateCountry = "account/country", e.VerifyEmail = "account/email/verify", e.GetAvatars = "account/avatars", e.UpdateAvatars = "account/avatars/update", e.GetMfaDevices = "account/mfaDevices", e.GetMfaRememberedMachines = "account/mfaRememberedMachines", e.ForgetMfaRememberedMachine = "account/mfaRememberedMachines/delete", e.RequestRegisterMfa = "account/requestRegisterMfa", e.VerifyMfaRegistration = "account/verifyMfaRegistration", e.RequestDeregisterMfa = "account/requestDeregisterMfa", e.VerifyMfaDeregistration = "account/verifyMfaDeregistration", e.GetPrivacySettings = "settings/privacy", e.GetPlayerAccountVisibility = "settings/playerAccountVisibility", e.UpdateEmailNotificationSettings = "settings/updateEmailNotificationSettings", e.UpdatePrivacySettings = "settings/updatePrivacySettings", e.UpdatePlayerAccountVisibility = "settings/updatePlayerAccountVisibility", e.GetSubscriptionStatus = "marketing/status", e.Subscribe = "marketing/update?subscribe=true", e.Unsubscribe = "marketing/update?subscribe=false", e.GetLinkedAccounts = "account/linkedaccounts", e.DeleteAccount = "account/delete", e.CancelAccountDeletion = "account/delete/cancel", e.DeleteCheck = "account/delete/check", e.GetBlockedUsers = "friends/blocked", e.UnblockUser = "friends/unblockPlayer", e.GetGoogleTagManagerSetupData = "account/googleTagManagerSetupData", e
+      var Be, He, Ye = function(e) {
+          return e.ProfileOverview = "account/settings", e.UpdateLanguage = "account/language/update", e.PasswordRequirements = "account/password/requirements", e.GetCountries = "profile/getCountries", e.RequestUpdateEmail = "account/email/request", e.UpdateEmail = "account/email/update", e.UpdatePassword = "account/password", e.UpdateNickname = "account/nickname", e.UpdateCountry = "account/country", e.VerifyEmail = "account/email/verify", e.GetAvatars = "account/avatars", e.UpdateAvatars = "account/avatars/update", e.GetMfaDevices = "account/mfaDevices", e.GetMfaRememberedMachines = "account/mfaRememberedMachines", e.ForgetMfaRememberedMachine = "account/mfaRememberedMachines/delete", e.RequestRegisterMfa = "account/requestRegisterMfa", e.VerifyMfaRegistration = "account/verifyMfaRegistration", e.RequestDeregisterMfa = "account/requestDeregisterMfa", e.VerifyMfaDeregistration = "account/verifyMfaDeregistration", e.GetPrivacySettings = "settings/privacy", e.GetPlayerAccountVisibility = "settings/playerAccountVisibility", e.UpdateEmailNotificationSettings = "settings/updateEmailNotificationSettings", e.UpdatePrivacySettings = "settings/updatePrivacySettings", e.UpdatePlayerAccountVisibility = "settings/updatePlayerAccountVisibility", e.GetSubscriptionStatus = "marketing/status", e.Subscribe = "marketing/update?subscribe=true", e.Unsubscribe = "marketing/update?subscribe=false", e.GetLinkedAccounts = "account/linkedaccounts", e.DeleteAccount = "account/delete", e.CancelAccountDeletion = "account/delete/cancel", e.DeleteCheck = "account/delete/check", e.GetBlockedUsers = "friends/blocked", e.UnblockUser = "friends/unblockPlayer", e.GetGoogleTagManagerSetupData = "account/googleTagManagerSetupData", e.GetDataSubjectAccessRequestStatus = "data-subject-access-request/status", e.CancelDataSubjectAccessRequest = "data-subject-access-request/cancel", e.SubmitDataSubjectAccessRequest = "data-subject-access-request/initiate", e.DownloadDataSubjectAccessRequest = "data-subject-access-request/download", e
         }({}),
-        He = (qe(Fe = {}, "account/settings", {
+        We = (ze(Be = {}, "account/settings", {
           method: "get"
-        }), qe(Fe, "account/language/update", {
+        }), ze(Be, "account/language/update", {
           method: "post"
-        }), qe(Fe, "account/password/requirements", {
+        }), ze(Be, "account/password/requirements", {
           method: "get"
-        }), qe(Fe, "profile/getCountries", {
+        }), ze(Be, "profile/getCountries", {
           method: "get"
-        }), qe(Fe, "account/avatars", {
+        }), ze(Be, "account/avatars", {
           method: "get"
-        }), qe(Fe, "account/avatars/update", {
+        }), ze(Be, "account/avatars/update", {
           method: "post"
-        }), qe(Fe, "account/mfaDevices", {
+        }), ze(Be, "account/mfaDevices", {
           method: "get"
-        }), qe(Fe, "account/mfaRememberedMachines", {
+        }), ze(Be, "account/mfaRememberedMachines", {
           method: "get"
-        }), qe(Fe, "account/mfaRememberedMachines/delete", {
+        }), ze(Be, "account/mfaRememberedMachines/delete", {
           method: "delete"
-        }), qe(Fe, "account/requestRegisterMfa", {
+        }), ze(Be, "account/requestRegisterMfa", {
           method: "post"
-        }), qe(Fe, "account/verifyMfaRegistration", {
+        }), ze(Be, "account/verifyMfaRegistration", {
           method: "post"
-        }), qe(Fe, "account/requestDeregisterMfa", {
+        }), ze(Be, "account/requestDeregisterMfa", {
           method: "post"
-        }), qe(Fe, "account/verifyMfaDeregistration", {
+        }), ze(Be, "account/verifyMfaDeregistration", {
           method: "post"
-        }), qe(Fe, "settings/privacy", {
+        }), ze(Be, "settings/privacy", {
           method: "get"
-        }), qe(Fe, "settings/playerAccountVisibility", {
+        }), ze(Be, "settings/playerAccountVisibility", {
           method: "get"
-        }), qe(Fe, "settings/updatePrivacySettings", {
+        }), ze(Be, "settings/updatePrivacySettings", {
           method: "post"
-        }), qe(Fe, "settings/updatePlayerAccountVisibility", {
+        }), ze(Be, "settings/updatePlayerAccountVisibility", {
           method: "post"
-        }), qe(Fe, "settings/updateEmailNotificationSettings", {
+        }), ze(Be, "settings/updateEmailNotificationSettings", {
           method: "post"
-        }), qe(Fe, "marketing/status", {
+        }), ze(Be, "marketing/status", {
           method: "get"
-        }), qe(Fe, "marketing/update?subscribe=true", {
+        }), ze(Be, "marketing/update?subscribe=true", {
           method: "post"
-        }), qe(Fe, "marketing/update?subscribe=false", {
+        }), ze(Be, "marketing/update?subscribe=false", {
           method: "post"
-        }), qe(Fe, "account/linkedaccounts", {
+        }), ze(Be, "account/linkedaccounts", {
           method: "get"
-        }), qe(Fe, "account/delete", {
+        }), ze(Be, "account/delete", {
           method: "post"
-        }), qe(Fe, "account/delete/cancel", {
+        }), ze(Be, "account/delete/cancel", {
           method: "get",
           isUnauthenticated: !0
-        }), qe(Fe, "account/delete/check", {
+        }), ze(Be, "account/delete/check", {
           method: "get"
-        }), qe(Fe, "friends/blocked", {
+        }), ze(Be, "friends/blocked", {
           method: "get"
-        }), qe(Fe, "friends/unblockPlayer", {
+        }), ze(Be, "friends/unblockPlayer", {
           method: "post"
-        }), qe(Fe, "account/googleTagManagerSetupData", {
+        }), ze(Be, "account/googleTagManagerSetupData", {
           method: "get"
-        }), qe(Fe, "account/email/request", {
+        }), ze(Be, "account/email/request", {
           method: "post"
-        }), qe(Fe, "account/email/update", {
+        }), ze(Be, "account/email/update", {
           method: "post"
-        }), qe(Fe, "account/password", {
+        }), ze(Be, "account/password", {
           method: "post"
-        }), qe(Fe, "account/nickname", {
+        }), ze(Be, "account/nickname", {
           method: "post"
-        }), qe(Fe, "account/country", {
+        }), ze(Be, "account/country", {
           method: "post"
-        }), qe(Fe, "account/email/verify", {
+        }), ze(Be, "data-subject-access-request/status", {
+          method: "get"
+        }), ze(Be, "data-subject-access-request/cancel", {
+          method: "post"
+        }), ze(Be, "account/email/verify", {
           method: "post",
           isUnauthenticated: !0
-        }), Fe);
+        }), ze(Be, "data-subject-access-request/initiate", {
+          method: "post"
+        }), ze(Be, "data-subject-access-request/download", {
+          method: "get"
+        }), Be);
 
-      function Ye(e, t, n) {
+      function Xe(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -1683,8 +1544,8 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      const Xe = (0, Ve.eU)((Ye(ze = {}, Be.ProfileOverview, (0, Ve.eU)()), Ye(ze, Be.GetCountries, (0, Ve.eU)()), Ye(ze, Be.GetAvatars, (0, Ve.eU)()), Ye(ze, Be.UpdateAvatars, (0, Ve.eU)()), Ye(ze, Be.ForgetMfaRememberedMachine, (0, Ve.eU)()), Ye(ze, Be.GetMfaDevices, (0, Ve.eU)()), Ye(ze, Be.GetMfaRememberedMachines, (0, Ve.eU)()), Ye(ze, Be.RequestRegisterMfa, (0, Ve.eU)()), Ye(ze, Be.VerifyMfaRegistration, (0, Ve.eU)()), Ye(ze, Be.RequestDeregisterMfa, (0, Ve.eU)()), Ye(ze, Be.VerifyMfaDeregistration, (0, Ve.eU)()), Ye(ze, Be.GetPrivacySettings, (0, Ve.eU)()), Ye(ze, Be.GetPlayerAccountVisibility, (0, Ve.eU)()), Ye(ze, Be.UpdatePrivacySettings, (0, Ve.eU)()), Ye(ze, Be.UpdatePlayerAccountVisibility, (0, Ve.eU)()), Ye(ze, Be.UpdateEmailNotificationSettings, (0, Ve.eU)()), Ye(ze, Be.GetSubscriptionStatus, (0, Ve.eU)()), Ye(ze, Be.Subscribe, (0, Ve.eU)()), Ye(ze, Be.Unsubscribe, (0, Ve.eU)()), Ye(ze, Be.GetLinkedAccounts, (0, Ve.eU)()), Ye(ze, Be.DeleteAccount, (0, Ve.eU)()), Ye(ze, Be.CancelAccountDeletion, (0, Ve.eU)()), Ye(ze, Be.DeleteCheck, (0, Ve.eU)()), Ye(ze, Be.GetBlockedUsers, (0, Ve.eU)()), Ye(ze, Be.UnblockUser, (0, Ve.eU)()), Ye(ze, Be.RequestUpdateEmail, (0, Ve.eU)()), Ye(ze, Be.UpdateEmail, (0, Ve.eU)()), Ye(ze, Be.UpdateLanguage, (0, Ve.eU)()), Ye(ze, Be.GetGoogleTagManagerSetupData, (0, Ve.eU)()), Ye(ze, Be.PasswordRequirements, (0, Ve.eU)()), Ye(ze, Be.UpdatePassword, (0, Ve.eU)()), Ye(ze, Be.UpdateNickname, (0, Ve.eU)()), Ye(ze, Be.UpdateCountry, (0, Ve.eU)()), Ye(ze, Be.VerifyEmail, (0, Ve.eU)()), ze)),
-        Ze = (0, _e.YK)({
+      const Ze = (0, Fe.eU)((Xe(He = {}, Ye.ProfileOverview, (0, Fe.eU)()), Xe(He, Ye.GetCountries, (0, Fe.eU)()), Xe(He, Ye.GetAvatars, (0, Fe.eU)()), Xe(He, Ye.UpdateAvatars, (0, Fe.eU)()), Xe(He, Ye.ForgetMfaRememberedMachine, (0, Fe.eU)()), Xe(He, Ye.GetMfaDevices, (0, Fe.eU)()), Xe(He, Ye.GetMfaRememberedMachines, (0, Fe.eU)()), Xe(He, Ye.RequestRegisterMfa, (0, Fe.eU)()), Xe(He, Ye.VerifyMfaRegistration, (0, Fe.eU)()), Xe(He, Ye.RequestDeregisterMfa, (0, Fe.eU)()), Xe(He, Ye.VerifyMfaDeregistration, (0, Fe.eU)()), Xe(He, Ye.GetPrivacySettings, (0, Fe.eU)()), Xe(He, Ye.GetPlayerAccountVisibility, (0, Fe.eU)()), Xe(He, Ye.UpdatePrivacySettings, (0, Fe.eU)()), Xe(He, Ye.UpdatePlayerAccountVisibility, (0, Fe.eU)()), Xe(He, Ye.UpdateEmailNotificationSettings, (0, Fe.eU)()), Xe(He, Ye.GetSubscriptionStatus, (0, Fe.eU)()), Xe(He, Ye.Subscribe, (0, Fe.eU)()), Xe(He, Ye.Unsubscribe, (0, Fe.eU)()), Xe(He, Ye.GetLinkedAccounts, (0, Fe.eU)()), Xe(He, Ye.DeleteAccount, (0, Fe.eU)()), Xe(He, Ye.CancelAccountDeletion, (0, Fe.eU)()), Xe(He, Ye.DeleteCheck, (0, Fe.eU)()), Xe(He, Ye.GetBlockedUsers, (0, Fe.eU)()), Xe(He, Ye.UnblockUser, (0, Fe.eU)()), Xe(He, Ye.RequestUpdateEmail, (0, Fe.eU)()), Xe(He, Ye.UpdateEmail, (0, Fe.eU)()), Xe(He, Ye.UpdateLanguage, (0, Fe.eU)()), Xe(He, Ye.GetGoogleTagManagerSetupData, (0, Fe.eU)()), Xe(He, Ye.PasswordRequirements, (0, Fe.eU)()), Xe(He, Ye.UpdatePassword, (0, Fe.eU)()), Xe(He, Ye.UpdateNickname, (0, Fe.eU)()), Xe(He, Ye.UpdateCountry, (0, Fe.eU)()), Xe(He, Ye.GetDataSubjectAccessRequestStatus, (0, Fe.eU)()), Xe(He, Ye.CancelDataSubjectAccessRequest, (0, Fe.eU)()), Xe(He, Ye.VerifyEmail, (0, Fe.eU)()), Xe(He, Ye.SubmitDataSubjectAccessRequest, (0, Fe.eU)()), Xe(He, Ye.DownloadDataSubjectAccessRequest, (0, Fe.eU)()), He)),
+        Ke = (0, fe.YK)({
           email_change_new_email_label: {
             defaultMessage: "New Email Address",
             description: "The label for new email field.",
@@ -1776,8 +1637,8 @@ try {
             id: "email_change_verifying_new_email"
           }
         });
-      var We = n(8620);
-      const Ke = {
+      var $e = n(8620);
+      const Je = {
         action: {
           menu_profile: "Settings_Menu_Profile",
           menu_privacy: "Settings_Menu_Privacy",
@@ -1953,11 +1814,11 @@ try {
           memberSince: "memberSince"
         }
       };
-      var $e = n(49785),
-        Je = n(52542),
-        Qe = n(92791),
-        et = n(47177),
-        tt = (0, G.c)({
+      var Qe = n(49785),
+        et = n(52542),
+        tt = n(92791),
+        nt = n(47177),
+        rt = (0, q.c)({
           defaultClassName: "se5i7a0",
           variantClassNames: {
             disabled: {
@@ -1967,7 +1828,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         });
-      const nt = (0, _e.YK)({
+      const at = (0, fe.YK)({
         form_confirmation_error_icon_label: {
           defaultMessage: "Error Icon",
           description: "Label to describe the icon image for form error",
@@ -1975,7 +1836,7 @@ try {
         }
       });
 
-      function rt(e, t, n) {
+      function it(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -1984,20 +1845,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function at(e) {
+      function ot(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            rt(e, t, n[t])
+            it(e, t, n[t])
           })
         }
         return e
       }
 
-      function it(e, t) {
+      function st(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -2010,7 +1871,7 @@ try {
         }), e
       }
 
-      function ot(e, t) {
+      function ct(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -2025,66 +1886,66 @@ try {
         }
         return a
       }
-      var st = (0, a.createContext)(null);
+      var lt = (0, a.createContext)(null);
 
-      function ct() {
-        var e = (0, a.useContext)(st);
+      function dt() {
+        var e = (0, a.useContext)(lt);
         if (!e) throw Error("useConfirmationContext can only be used in a Form ConfirmationRoot");
         return e
       }
-      var lt = (0, a.forwardRef)(function(e, t) {
+      var ut = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.name,
             o = e.asChild,
             s = e.children,
-            c = ot(e, ["className", "testId", "name", "asChild", "children"]),
-            l = o ? Qe.DX : "div",
-            d = Jt().isDisabled,
+            c = ct(e, ["className", "testId", "name", "asChild", "children"]),
+            l = o ? tt.DX : "div",
+            d = en().isDisabled,
             u = (0, R.v6)({
               "data-testid": a,
               className: (0, z.A)("e3xv9j0", n)
             }, c);
-          return (0, r.jsx)(st.Provider, {
+          return (0, r.jsx)(lt.Provider, {
             value: {
               name: i,
               isDisabled: d
             },
-            children: (0, r.jsx)(l, it(at({
+            children: (0, r.jsx)(l, st(ot({
               ref: t
             }, u), {
               children: s
             }))
           })
         }),
-        dt = (0, a.forwardRef)(function(e, t) {
+        _t = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.asChild,
             o = e.children,
-            s = ot(e, ["className", "testId", "asChild", "children"]),
-            c = ct().name,
-            l = (0, $e.xW)().formState.errors,
-            d = i ? Qe.DX : "div",
+            s = ct(e, ["className", "testId", "asChild", "children"]),
+            c = dt().name,
+            l = (0, Qe.xW)().formState.errors,
+            d = i ? tt.DX : "div",
             u = (0, R.v6)({
               "data-testid": a,
               className: (0, z.A)("b5ba6t0", {
                 invalid: Boolean(l[c])
               }, n)
             }, s);
-          return (0, r.jsx)(d, it(at({
+          return (0, r.jsx)(d, st(ot({
             ref: t
           }, u), {
             children: o
           }))
         }),
-        ut = (0, a.forwardRef)(function(e, t) {
+        ft = (0, a.forwardRef)(function(e, t) {
           var n = e.testId,
-            a = ot(e, ["testId"]),
-            i = (0, $e.xW)().control,
-            o = ct().name,
-            s = ct().isDisabled;
-          return (0, r.jsx)($e.xI, {
+            a = ct(e, ["testId"]),
+            i = (0, Qe.xW)().control,
+            o = dt().name,
+            s = dt().isDisabled;
+          return (0, r.jsx)(Qe.xI, {
             control: i,
             name: o,
             render: function(e) {
@@ -2102,7 +1963,7 @@ try {
                   onCheckedChange: c,
                   testId: n
                 }), (0, r.jsx)(E.Checkbox.Label, {
-                  className: tt({
+                  className: rt({
                     disabled: s
                   }),
                   hideVisually: a.hideLabel,
@@ -2112,13 +1973,13 @@ try {
             }
           })
         }),
-        ft = (0, a.forwardRef)(function(e, t) {
+        pt = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             i = e.testId,
-            o = ot(e, ["className", "testId"]),
-            s = (0, $e.xW)().formState.errors,
-            c = ct().name,
-            l = (0, L.A)(),
+            o = ct(e, ["className", "testId"]),
+            s = (0, Qe.xW)().formState.errors,
+            c = dt().name,
+            l = (0, N.A)(),
             d = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("e3xv9j3", n)
@@ -2127,19 +1988,19 @@ try {
               var e;
               return "string" == typeof(null === (e = s[c]) || void 0 === e ? void 0 : e.message) ? s[c].message : ""
             }, [s[c]]);
-          return u && (0, r.jsxs)(E.Body, it(at({
+          return u && (0, r.jsxs)(E.Body, st(ot({
             size: "SM",
             appearance: "bold",
             ref: t
           }, d), {
-            children: [(0, r.jsx)(et.X, {
+            children: [(0, r.jsx)(nt.X, {
               size: "MD",
-              label: l.formatMessage(nt.form_confirmation_error_icon_label),
+              label: l.formatMessage(at.form_confirmation_error_icon_label),
               className: "e3xv9j2"
             }), u]
           }))
         });
-      const _t = (0, _e.YK)({
+      const mt = (0, fe.YK)({
         hide_password_label: {
           defaultMessage: "Hide password",
           description: "The label for the hide password icon.",
@@ -2152,7 +2013,7 @@ try {
         }
       });
 
-      function pt(e, t, n) {
+      function ht(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -2161,20 +2022,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function mt(e) {
+      function gt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            pt(e, t, n[t])
+            ht(e, t, n[t])
           })
         }
         return e
       }
 
-      function ht(e, t) {
+      function bt(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -2187,7 +2048,7 @@ try {
         }), e
       }
 
-      function gt(e, t) {
+      function yt(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -2202,8 +2063,8 @@ try {
         }
         return a
       }
-      var bt = (0, a.createContext)(null),
-        yt = (0, a.forwardRef)(function(e, t) {
+      var vt = (0, a.createContext)(null),
+        wt = (0, a.forwardRef)(function(e, t) {
           var n, a, i = e.children,
             o = e.overrideErrorMessage,
             s = e.valibotErrorTypesToOverride,
@@ -2211,21 +2072,21 @@ try {
             l = e.isDisabled,
             d = void 0 !== l && l,
             u = e.testId,
-            f = gt(e, ["children", "overrideErrorMessage", "valibotErrorTypesToOverride", "name", "isDisabled", "testId"]),
-            _ = (0, $e.xW)().formState.errors,
-            p = Jt().isDisabled,
+            _ = yt(e, ["children", "overrideErrorMessage", "valibotErrorTypesToOverride", "name", "isDisabled", "testId"]),
+            f = (0, Qe.xW)().formState.errors,
+            p = en().isDisabled,
             m = (0, R.v6)({
               "data-testid": u
-            }, f),
+            }, _),
             h = p || d,
-            g = Boolean(_[c]),
-            b = (null == s ? void 0 : s.includes(null === (n = _[c]) || void 0 === n ? void 0 : n.type)) && o;
-          return (0, r.jsx)(bt.Provider, {
+            g = Boolean(f[c]),
+            b = (null == s ? void 0 : s.includes(null === (n = f[c]) || void 0 === n ? void 0 : n.type)) && o;
+          return (0, r.jsx)(vt.Provider, {
             value: {
               name: c,
               isDisabled: h
             },
-            children: (0, r.jsx)(E.TextField.Root, ht(mt({
+            children: (0, r.jsx)(E.TextField.Root, bt(gt({
               isDisabled: h,
               ref: t
             }, m), {
@@ -2234,69 +2095,69 @@ try {
                 children: [i, g && (0, r.jsxs)(E.TextField.StatusRoot, {
                   testId: "".concat(c, "-error"),
                   children: [(0, r.jsx)(E.TextField.StatusIcon, {}), (0, r.jsx)(E.TextField.StatusText, {
-                    children: b ? o : null === (a = _[c]) || void 0 === a ? void 0 : a.message
+                    children: b ? o : null === (a = f[c]) || void 0 === a ? void 0 : a.message
                   })]
                 })]
               })
             }))
           })
         }),
-        vt = function(e) {
+        jt = function(e) {
           var t = e.testId,
             n = e.type,
             i = e.linkedValidationFields,
-            o = gt(e, ["testId", "type", "linkedValidationFields"]),
-            s = (0, L.A)(),
-            c = (0, $e.xW)(),
+            o = yt(e, ["testId", "type", "linkedValidationFields"]),
+            s = (0, N.A)(),
+            c = (0, Qe.xW)(),
             l = c.register,
             d = c.watch,
             u = c.trigger,
-            f = c.formState.submitCount,
-            _ = Jt().validationMode,
+            _ = c.formState.submitCount,
+            f = en().validationMode,
             p = function() {
-              var e = (0, a.useContext)(bt);
+              var e = (0, a.useContext)(vt);
               if (!e) throw Error("useFieldRootContext can only be used in a Form FieldRoot");
               return e
             }().name,
             m = l(p),
             h = m.ref,
-            g = gt(m, ["ref"]),
-            b = (0, R.v6)(ht(mt({}, g), {
+            g = yt(m, ["ref"]),
+            b = (0, R.v6)(bt(gt({}, g), {
               "data-testid": t,
               type: n
             }), o),
             y = d(p);
           return (0, a.useEffect)(function() {
             var e;
-            null !== (e = null == i ? void 0 : i.length) && void 0 !== e && e && y && "onSubmit" === _ && f > 0 && u(i)
+            null !== (e = null == i ? void 0 : i.length) && void 0 !== e && e && y && "onSubmit" === f && _ > 0 && u(i)
           }, [y]), (0, r.jsxs)(E.TextField.Control, {
-            children: [(0, r.jsx)(E.TextField.Input, mt({
+            children: [(0, r.jsx)(E.TextField.Input, gt({
               ref: h
             }, b)), "password" === n && (0, r.jsx)(E.TextField.PasswordButton, {
-              hidePasswordLabel: s.formatMessage(_t.hide_password_label),
-              showPasswordLabel: s.formatMessage(_t.show_password_label),
+              hidePasswordLabel: s.formatMessage(mt.hide_password_label),
+              showPasswordLabel: s.formatMessage(mt.show_password_label),
               type: "button"
             })]
           })
         },
-        wt = (0, a.forwardRef)(function(e, t) {
+        xt = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.children,
-            o = gt(e, ["className", "testId", "children"]),
+            o = yt(e, ["className", "testId", "children"]),
             s = (0, R.v6)({
               "data-testid": a,
               className: (0, z.A)("_1mutbcz0 foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdq foundry_tdsdcdm", n)
             }, o);
-          return (0, r.jsx)(E.TextField.Label, ht(mt({
+          return (0, r.jsx)(E.TextField.Label, bt(gt({
             ref: t
           }, s), {
             children: i
           }))
         }),
-        jt = n(46855),
-        xt = n(98876),
-        Mt = (0, G.c)({
+        Mt = n(46855),
+        kt = n(98876),
+        Ot = (0, q.c)({
           defaultClassName: "_3bsh524 foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdn",
           variantClassNames: {
             value: {
@@ -2310,7 +2171,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         });
-      const kt = (0, _e.YK)({
+      const St = (0, fe.YK)({
         password_summary_grade_0: {
           defaultMessage: "Very Weak",
           description: "The label for the password summary score = 0.",
@@ -2352,12 +2213,12 @@ try {
           id: "password_requirement_met"
         }
       });
-      var Ot = n(59593),
-        St = n(98249),
-        At = n(58671),
-        It = n(88082);
+      var At = n(59593),
+        It = n(98249),
+        Pt = n(58671),
+        Ct = n(88082);
 
-      function Pt(e, t, n) {
+      function Dt(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -2365,9 +2226,9 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var Ct = {
-        translations: At.A,
-        graphs: St.K,
+      var Tt = {
+        translations: Pt.A,
+        graphs: It.K,
         dictionary: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -2375,27 +2236,27 @@ try {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              Pt(e, t, n[t])
+              Dt(e, t, n[t])
             })
           }
           return e
-        }({}, St.z, It.z)
+        }({}, It.z, Ct.z)
       };
-      Ot.u2.setOptions(Ct);
-      var Dt = function(e) {
+      At.u2.setOptions(Tt);
+      var Lt = function(e) {
         var t = [];
         return e.message && t.push(e.message), e.pipe && e.pipe.length > 0 && (t = t.concat(e.pipe.map(function(e) {
-          return Dt(e)
+          return Lt(e)
         }).flat())), t
       };
 
-      function Tt(e, t) {
+      function Nt(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Nt(e, t, n) {
+      function Et(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -2404,20 +2265,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Lt(e) {
+      function Rt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Nt(e, t, n[t])
+            Et(e, t, n[t])
           })
         }
         return e
       }
 
-      function Et(e, t) {
+      function qt(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -2430,7 +2291,7 @@ try {
         }), e
       }
 
-      function Rt(e, t) {
+      function Gt(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -2445,36 +2306,36 @@ try {
         }
         return a
       }
-      var Gt = (0, a.createContext)(null);
+      var Ut = (0, a.createContext)(null);
 
-      function Ut() {
-        var e = (0, a.useContext)(Gt);
+      function Vt() {
+        var e = (0, a.useContext)(Ut);
         if (!e) throw Error("usePasswordSummaryContext can only be used in a Form PasswordSummaryRoot");
         return e
       }
-      var Vt = (0, a.forwardRef)(function(e, t) {
+      var Ft = (0, a.forwardRef)(function(e, t) {
           var n, i, o, s, c, l = e.className,
             d = e.testId,
             u = e.passwordFieldName,
-            f = e.userInputs,
-            _ = e.asChild,
+            _ = e.userInputs,
+            f = e.asChild,
             p = e.children,
-            m = Rt(e, ["className", "testId", "passwordFieldName", "userInputs", "asChild", "children"]),
-            h = (0, $e.xW)(),
+            m = Gt(e, ["className", "testId", "passwordFieldName", "userInputs", "asChild", "children"]),
+            h = (0, Qe.xW)(),
             g = h.trigger,
             b = h.formState,
             y = b.errors,
             v = b.dirtyFields,
             w = b.isSubmitted,
-            j = Jt(),
+            j = en(),
             x = j.schema,
             M = j.isDisabled,
-            k = (0, $e.xW)().control,
-            O = (0, $e.FH)({
+            k = (0, Qe.xW)().control,
+            O = (0, Qe.FH)({
               control: k,
               name: u
             }),
-            S = (0, L.A)(),
+            S = (0, N.A)(),
             A = (s = (0, a.useState)({
               value: 0,
               grade: ""
@@ -2501,9 +2362,9 @@ try {
               }
             }(s, c) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return Tt(e, t);
+                if ("string" == typeof e) return Nt(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Tt(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Nt(e, t) : void 0
               }
             }(s, c) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -2511,13 +2372,13 @@ try {
             I = A[0],
             P = A[1],
             C = new Set(Object.values(null !== (o = null === (n = y[u]) || void 0 === n ? void 0 : n.types) && void 0 !== o ? o : {}).flat()),
-            D = (0, a.useCallback)((0, jt.A)(function(e, t) {
+            D = (0, a.useCallback)((0, Mt.A)(function(e, t) {
               var n, r = !e || 0 === e.length,
                 a = t.size > 0;
               n = r ? 0 : a ? 1 : function(e, t) {
-                return (0, Ot.K1)(e, t).score
-              }(e, f);
-              var i = S.formatMessage(kt["password_summary_grade_".concat(n)]);
+                return (0, At.K1)(e, t).score
+              }(e, _);
+              var i = S.formatMessage(St["password_summary_grade_".concat(n)]);
               P({
                 grade: i,
                 value: n
@@ -2528,14 +2389,14 @@ try {
           }, [O, null === (i = y[u]) || void 0 === i ? void 0 : i.type]);
           var T = (0, a.useMemo)(function() {
               if (!x.entries[u]) throw Error("passwordFieldName must be a valid form field in the current Form context");
-              return new Set(Dt(x.entries[u]))
+              return new Set(Lt(x.entries[u]))
             }, [x.entries[u]]),
-            N = _ ? Qe.DX : "div",
+            L = f ? tt.DX : "div",
             E = (0, R.v6)({
               "data-testid": d,
               className: (0, z.A)("_3bsh520 b5ba6t0", l)
             }, m),
-            G = {
+            q = {
               passwordFieldName: u,
               passwordState: C,
               passwordRequirements: T,
@@ -2544,61 +2405,27 @@ try {
               passwordStrengthScore: I,
               isDisabled: M
             };
-          return (0, r.jsx)(Gt.Provider, {
-            value: G,
-            children: (0, r.jsx)(N, Et(Lt({
+          return (0, r.jsx)(Ut.Provider, {
+            value: q,
+            children: (0, r.jsx)(L, qt(Rt({
               ref: t
             }, E), {
               children: p
             }))
           })
         }),
-        qt = (0, a.forwardRef)(function(e, t) {
-          var n = e.className,
-            a = e.testId,
-            i = e.asChild,
-            o = e.children,
-            s = Rt(e, ["className", "testId", "asChild", "children"]),
-            c = i ? Qe.DX : "div",
-            l = (0, R.v6)({
-              "data-testid": a,
-              className: (0, z.A)("_3bsh521", n)
-            }, s);
-          return (0, r.jsx)(c, Et(Lt({
-            ref: t
-          }, l), {
-            children: o
-          }))
-        }),
-        Ft = (0, a.forwardRef)(function(e, t) {
-          var n = e.className,
-            a = e.testId,
-            i = e.asChild,
-            o = e.children,
-            s = Rt(e, ["className", "testId", "asChild", "children"]),
-            c = i ? Qe.DX : "div",
-            l = (0, R.v6)({
-              "data-testid": a,
-              className: (0, z.A)("_3bsh522", n)
-            }, s);
-          return (0, r.jsx)(c, Et(Lt({
-            ref: t
-          }, l), {
-            children: o
-          }))
-        }),
         zt = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.asChild,
             o = e.children,
-            s = Rt(e, ["className", "testId", "asChild", "children"]),
-            c = i ? Qe.DX : "p",
+            s = Gt(e, ["className", "testId", "asChild", "children"]),
+            c = i ? tt.DX : "div",
             l = (0, R.v6)({
               "data-testid": a,
-              className: (0, z.A)("_3bsh523 foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdm foundry_tdsdcdq", n)
+              className: (0, z.A)("_3bsh521", n)
             }, s);
-          return (0, r.jsx)(c, Et(Lt({
+          return (0, r.jsx)(c, qt(Rt({
             ref: t
           }, l), {
             children: o
@@ -2607,73 +2434,107 @@ try {
         Bt = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
-            i = Rt(e, ["className", "testId"]),
-            o = Ut().passwordStrengthScore,
-            s = o.grade,
-            c = o.value,
+            i = e.asChild,
+            o = e.children,
+            s = Gt(e, ["className", "testId", "asChild", "children"]),
+            c = i ? tt.DX : "div",
             l = (0, R.v6)({
               "data-testid": a,
-              className: (0, z.A)(Mt({
-                value: c
-              }), n)
-            }, i);
-          return (0, r.jsx)("p", Et(Lt({
+              className: (0, z.A)("_3bsh522", n)
+            }, s);
+          return (0, r.jsx)(c, qt(Rt({
             ref: t
           }, l), {
-            children: s
+            children: o
           }))
         }),
         Ht = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
-            i = Rt(e, ["className", "testId"]),
-            o = Ut().passwordStrengthScore.value,
+            i = e.asChild,
+            o = e.children,
+            s = Gt(e, ["className", "testId", "asChild", "children"]),
+            c = i ? tt.DX : "p",
+            l = (0, R.v6)({
+              "data-testid": a,
+              className: (0, z.A)("_3bsh523 foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdm foundry_tdsdcdq", n)
+            }, s);
+          return (0, r.jsx)(c, qt(Rt({
+            ref: t
+          }, l), {
+            children: o
+          }))
+        }),
+        Yt = (0, a.forwardRef)(function(e, t) {
+          var n = e.className,
+            a = e.testId,
+            i = Gt(e, ["className", "testId"]),
+            o = Vt().passwordStrengthScore,
+            s = o.grade,
+            c = o.value,
+            l = (0, R.v6)({
+              "data-testid": a,
+              className: (0, z.A)(Ot({
+                value: c
+              }), n)
+            }, i);
+          return (0, r.jsx)("p", qt(Rt({
+            ref: t
+          }, l), {
+            children: s
+          }))
+        }),
+        Wt = (0, a.forwardRef)(function(e, t) {
+          var n = e.className,
+            a = e.testId,
+            i = Gt(e, ["className", "testId"]),
+            o = Vt().passwordStrengthScore.value,
             s = (0, R.v6)({
               "data-testid": a,
               value: o,
               max: 4,
               className: (0, z.A)("_3bsh52a", n)
             }, i);
-          return (0, r.jsx)("progress", Lt({
+          return (0, r.jsx)("progress", Rt({
             ref: t
           }, s))
         }),
-        Yt = (0, a.forwardRef)(function(e, t) {
+        Xt = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
-            i = Rt(e, ["className", "testId"]),
-            o = Ut(),
+            i = Gt(e, ["className", "testId"]),
+            o = Vt(),
             s = o.passwordState,
             c = o.passwordRequirements,
             l = o.fieldIsDirty,
-            d = (0, L.A)(),
+            d = (0, N.A)(),
             u = (0, R.v6)({
               "data-testid": a,
               className: (0, z.A)("_3bsh52b", n)
             }, i),
-            f = function(e) {
-              return l ? s.has(e) ? (0, r.jsx)(et.Info, {
-                color: xt.LU.alias.color.icon.danger,
-                label: d.formatMessage(kt.password_requirement_fail),
+            _ = function(e) {
+              return l ? s.has(e) ? (0, r.jsx)(nt.Info, {
+                color: kt.LU.alias.color.icon.danger,
+                label: d.formatMessage(St.password_requirement_fail),
                 size: "MD"
-              }) : (0, r.jsx)(et.CircleCheck, {
-                color: xt.LU.alias.color.icon.success,
-                label: d.formatMessage(kt.password_requirement_success),
+              }) : (0, r.jsx)(nt.CircleCheck, {
+                color: kt.LU.alias.color.icon.success,
+                label: d.formatMessage(St.password_requirement_success),
                 size: "MD"
-              }) : (0, r.jsx)(et.Circle, {
-                color: xt.LU.alias.color.icon.disabled,
-                label: d.formatMessage(kt.password_requirement_untested),
+              }) : (0, r.jsx)(nt.Circle, {
+                color: kt.LU.alias.color.icon.disabled,
+                label: d.formatMessage(St.password_requirement_untested),
                 size: "MD",
                 testId: e
               })
             };
-          return (0, r.jsx)("div", Et(Lt({
+          return (0, r.jsx)("div", qt(Rt({
             ref: t
           }, u), {
             children: Array.from(c).map(function(e) {
               return (0, r.jsxs)("div", {
                 className: "_3bsh52c",
-                children: [f(e), (0, r.jsx)("p", {
+                children: [_(e), (0, r.jsx)("p", {
                   className: "_3bsh52d foundry_tdsdcdj foundry_tdsdcd0 foundry_tdsdcdn",
                   children: e
                 })]
@@ -2682,7 +2543,7 @@ try {
           }))
         });
 
-      function Xt(e, t, n) {
+      function Zt(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -2691,20 +2552,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Zt(e) {
+      function Kt(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Xt(e, t, n[t])
+            Zt(e, t, n[t])
           })
         }
         return e
       }
 
-      function Wt(e, t) {
+      function $t(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -2717,7 +2578,7 @@ try {
         }), e
       }
 
-      function Kt(e, t) {
+      function Jt(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -2732,14 +2593,14 @@ try {
         }
         return a
       }
-      var $t = (0, a.createContext)(null);
+      var Qt = (0, a.createContext)(null);
 
-      function Jt() {
-        var e = (0, a.useContext)($t);
+      function en() {
+        var e = (0, a.useContext)(Qt);
         if (!e) throw Error("useFormContext can only be used in a Form Root");
         return e
       }
-      var Qt = (0, a.forwardRef)(function(e, t) {
+      var tn = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             i = e.testId,
             o = e.asChild,
@@ -2748,14 +2609,14 @@ try {
             l = e.defaultValues,
             d = e.passwordField,
             u = e.validationMode,
-            f = void 0 === u ? "onSubmit" : u,
-            _ = e.isDisabled,
+            _ = void 0 === u ? "onSubmit" : u,
+            f = e.isDisabled,
             p = e.onSubmit,
             m = e.onFormInvalid,
-            h = Kt(e, ["className", "testId", "asChild", "children", "schema", "defaultValues", "passwordField", "validationMode", "isDisabled", "onSubmit", "onFormInvalid"]),
-            g = (0, $e.mN)({
-              resolver: (0, Je.c)(c),
-              mode: f,
+            h = Jt(e, ["className", "testId", "asChild", "children", "schema", "defaultValues", "passwordField", "validationMode", "isDisabled", "onSubmit", "onFormInvalid"]),
+            g = (0, Qe.mN)({
+              resolver: (0, et.c)(c),
+              mode: _,
               defaultValues: l,
               criteriaMode: "all"
             }),
@@ -2766,29 +2627,29 @@ try {
             j = y.isValid,
             x = y.submitCount,
             M = g.setError,
-            k = o ? Qe.DX : "form";
+            k = o ? tt.DX : "form";
           (0, a.useEffect)(function() {
-            !_ && !j && w && Object.keys(v).length > 0 && (null == m || m(v))
+            !f && !j && w && Object.keys(v).length > 0 && (null == m || m(v))
           }, [x]);
           var O = (0, R.v6)({
             "data-testid": i,
             className: (0, z.$)("b5ba6t1", n),
             noValidate: !0
           }, h);
-          return (0, r.jsx)($t.Provider, {
+          return (0, r.jsx)(Qt.Provider, {
             value: {
               schema: c,
-              isDisabled: null != _ && _,
+              isDisabled: null != f && f,
               passwordField: d,
               fieldNames: Object.keys(c.entries),
-              validationMode: f
+              validationMode: _
             },
-            children: (0, r.jsx)($e.Op, Wt(Zt({}, g), {
-              children: (0, r.jsx)(k, Wt(Zt({
+            children: (0, r.jsx)(Qe.Op, $t(Kt({}, g), {
+              children: (0, r.jsx)(k, $t(Kt({
                 ref: t
               }, O), {
                 onSubmit: function(e) {
-                  e.preventDefault(), _ || b(function(e) {
+                  e.preventDefault(), f || b(function(e) {
                     return p({
                       formData: e,
                       setError: M
@@ -2800,48 +2661,48 @@ try {
             }))
           })
         }),
-        en = (0, a.forwardRef)(function(e, t) {
+        nn = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.asChild,
             o = e.children,
-            s = Kt(e, ["className", "testId", "asChild", "children"]),
-            c = i ? Qe.DX : "div",
+            s = Jt(e, ["className", "testId", "asChild", "children"]),
+            c = i ? tt.DX : "div",
             l = (0, R.v6)({
               "data-testid": a,
               className: (0, z.$)("b5ba6t2", n)
             }, s);
-          return (0, r.jsx)(c, Wt(Zt({
+          return (0, r.jsx)(c, $t(Kt({
             ref: t
           }, l), {
             children: o
           }))
         }),
-        tn = (0, a.forwardRef)(function(e, t) {
+        rn = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.testId,
             i = e.asChild,
             o = e.children,
-            s = Kt(e, ["className", "testId", "asChild", "children"]),
-            c = Jt().isDisabled,
-            l = (0, $e.xW)().formState,
+            s = Jt(e, ["className", "testId", "asChild", "children"]),
+            c = en().isDisabled,
+            l = (0, Qe.xW)().formState,
             d = l.isSubmitting,
             u = l.errors,
-            f = i ? Qe.DX : E.Button,
-            _ = (0, R.v6)({
+            _ = i ? tt.DX : E.Button,
+            f = (0, R.v6)({
               isDisabled: c || d || Object.keys(u).length > 0,
               "data-testid": a,
               className: (0, z.$)("b5ba6t3", n)
             }, s);
-          return (0, r.jsx)(f, Wt(Zt({
+          return (0, r.jsx)(_, $t(Kt({
             ref: t
-          }, _), {
+          }, f), {
             type: "submit",
             children: o
           }))
         });
 
-      function nn(e, t, n) {
+      function an(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -2850,20 +2711,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function rn(e) {
+      function on(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            nn(e, t, n[t])
+            an(e, t, n[t])
           })
         }
         return e
       }
 
-      function an(e, t) {
+      function sn(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -2876,7 +2737,7 @@ try {
         }), e
       }
 
-      function on(e, t) {
+      function cn(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -2891,61 +2752,61 @@ try {
         }
         return a
       }
-      var sn = (0, a.forwardRef)(function(e, t) {
+      var ln = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
-            i = on(e, ["children", "testId"]),
+            i = cn(e, ["children", "testId"]),
             o = (0, R.v6)({
               "data-testid": a,
               className: "_17my3do0"
             }, i);
-          return (0, r.jsx)("div", an(rn({
+          return (0, r.jsx)("div", sn(on({
             ref: t
           }, o), {
             children: n
           }))
         }),
-        cn = (0, a.forwardRef)(function(e, t) {
+        dn = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
             i = e.asChild,
-            o = on(e, ["children", "testId", "asChild"]),
-            s = i ? Qe.DX : "a",
+            o = cn(e, ["children", "testId", "asChild"]),
+            s = i ? tt.DX : "a",
             c = (0, R.v6)({
               "data-testid": a,
               className: "_17my3do1"
             }, o);
-          return (0, r.jsx)(s, an(rn({
+          return (0, r.jsx)(s, sn(on({
             ref: t
           }, c), {
             children: n
           }))
         }),
-        ln = (0, a.forwardRef)(function(e, t) {
+        un = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
-            i = on(e, ["children", "testId"]),
+            i = cn(e, ["children", "testId"]),
             o = (0, R.v6)({
               "data-testid": a,
               className: "_17my3do2"
             }, i);
-          return (0, r.jsx)("div", an(rn({
+          return (0, r.jsx)("div", sn(on({
             ref: t
           }, o), {
             children: n
           }))
         }),
-        dn = n(45357);
-      const un = function(e) {
+        _n = n(45357);
+      const fn = function(e) {
           var t = e.isLoading,
             n = e.children;
-          return t ? (0, r.jsx)(W, {
+          return t ? (0, r.jsx)(Z, {
             className: "_125nfjq1 _125nfjq0",
             "data-testid": "loader-wrapper",
-            children: (0, r.jsx)(dn.a, {})
+            children: (0, r.jsx)(_n.a, {})
           }) : n
         },
-        fn = (0, _e.YK)({
+        pn = (0, fe.YK)({
           security_title: {
             defaultMessage: "2-Step Verification",
             description: "The title for the account settings security page",
@@ -2982,12 +2843,12 @@ try {
             id: "security_no_auth_label"
           },
           security_no_auth_navigation_aria_label: {
-            defaultMessage: "Navigate to the set up MFA page",
+            defaultMessage: "Set up 2-step verification",
             description: "Aria label text for the MFA navigation button on the landing page for no auth",
             id: "security_no_auth_navigation_icon_aria_label"
           },
           security_header_nav_aria_label: {
-            defaultMessage: "Navigate back to the no auth page",
+            defaultMessage: "Back to the security landing page",
             description: "Aria label text for the MFA back navigation button on the header for auth setup",
             id: "security_header_nav_aria_label"
           },
@@ -3107,7 +2968,7 @@ try {
             id: "security_status_remembered_devices_spinner_label"
           }
         }),
-        _n = (0, _e.YK)({
+        mn = (0, fe.YK)({
           overview_created_prefix: {
             defaultMessage: "Created on",
             description: "The prefix before showing the account created date label.",
@@ -3144,7 +3005,7 @@ try {
             id: "overview_profile_details_change_email_link_description"
           },
           overview_email_button_label: {
-            defaultMessage: "Navigate to change email",
+            defaultMessage: "Change email",
             description: "The aria-label for the e-mail button link.",
             id: "overview_email_button_label"
           },
@@ -3159,7 +3020,7 @@ try {
             id: "overview_profile_details_change_password_link_description"
           },
           overview_password_button_label: {
-            defaultMessage: "Navigate to change password",
+            defaultMessage: "Change password",
             description: "The aria-label for the password button link.",
             id: "overview_password_button_label"
           },
@@ -3174,7 +3035,7 @@ try {
             id: "overview_profile_details_change_nickname_link_description"
           },
           overview_nickname_button_label: {
-            defaultMessage: "Navigate to edit nickname",
+            defaultMessage: "Edit nickname",
             description: "The aria-label for the nickname button link.",
             id: "overview_nickname_button_label"
           },
@@ -3229,7 +3090,7 @@ try {
             id: "overview_delete_account_button_label"
           },
           overview_delete_account_button_aria_label: {
-            defaultMessage: "Navigate to delete account",
+            defaultMessage: "Delete account",
             description: "The button text to delete an account.",
             id: "overview_delete_account_button_aria_label"
           },
@@ -3239,7 +3100,7 @@ try {
             id: "overview_profile_back_button_label"
           }
         }),
-        pn = (0, _e.YK)({
+        hn = (0, fe.YK)({
           password_change_title: {
             defaultMessage: "Password",
             description: "The label for new email field.",
@@ -3337,13 +3198,13 @@ try {
           }
         });
 
-      function mn(e, t) {
+      function gn(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function hn(e, t, n, r, a, i, o) {
+      function bn(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -3353,7 +3214,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function gn(e, t, n) {
+      function yn(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -3361,16 +3222,16 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var bn = "confirm",
-        yn = "email",
-        vn = "mfaCode",
-        wn = "password",
-        jn = (0, Ve.eU)(!1);
-      const xn = function() {
-        var e, t, n, o = (0, L.A)(),
+      var vn = "confirm",
+        wn = "email",
+        jn = "mfaCode",
+        xn = "password",
+        Mn = (0, Fe.eU)(!1);
+      const kn = function() {
+        var e, t, n, o = (0, N.A)(),
           s = (0, i.useNavigate)(),
-          c = Ee(),
-          l = (t = (0, he.fp)(jn), n = 2, function(e) {
+          c = qe(),
+          l = (t = (0, he.fp)(Mn), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
             var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
@@ -3393,40 +3254,40 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return mn(e, t);
+              if ("string" == typeof e) return gn(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? mn(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? gn(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           d = l[0],
           u = l[1],
-          f = rr({
+          _ = ir({
             fetchOnInitial: !1,
-            route: Be.RequestUpdateEmail
+            route: Ye.RequestUpdateEmail
           }),
-          _ = f.fetch,
-          p = f.loading,
-          m = rr({
-            route: Be.GetMfaDevices
+          f = _.fetch,
+          p = _.loading,
+          m = ir({
+            route: Ye.GetMfaDevices
           }),
           h = m.data,
           g = m.loading,
-          b = rr({
+          b = ir({
             fetchOnInitial: !1,
-            route: Be.PasswordRequirements
+            route: Ye.PasswordRequirements
           }),
           y = b.data,
           v = b.loading,
-          w = rr({
+          w = ir({
             fetchOnInitial: !1,
-            route: Be.ProfileOverview
+            route: Ye.ProfileOverview
           }).data,
           j = Number(null == h ? void 0 : h.length) > 0,
           x = (0, a.useMemo)(function() {
             var e;
-            return We.pipe(We.object(function(e, t) {
+            return $e.pipe($e.object(function(e, t) {
               return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                 var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -3444,38 +3305,38 @@ try {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                  gn(e, t, n[t])
+                  yn(e, t, n[t])
                 })
               }
               return e
-            }((gn(e = {}, yn, We.pipe(We.string(), We.nonEmpty(o.formatMessage(Ze.email_change_error_email)), We.email(o.formatMessage(Ze.email_change_error_email)), We.toLowerCase(), We.notValue(null == w ? void 0 : w.email.toLowerCase(), o.formatMessage(Ze.email_change_must_not_match_error_email)))), gn(e, wn, We.pipe(We.string(), We.nonEmpty(o.formatMessage(pn.password_change_error_password_required)))), e), j ? gn({}, vn, We.pipe(We.string(), We.minLength(6, o.formatMessage(fn.security_setup_verification_code_field_error_text)))) : null), gn({}, bn, We.pipe(We.boolean(), We.check(function(e) {
+            }((yn(e = {}, wn, $e.pipe($e.string(), $e.nonEmpty(o.formatMessage(Ke.email_change_error_email)), $e.email(o.formatMessage(Ke.email_change_error_email)), $e.regex(/^[^\\+]*$/, o.formatMessage(Ke.email_change_error_email)), $e.toLowerCase(), $e.notValue(null == w ? void 0 : w.email.toLowerCase(), o.formatMessage(Ke.email_change_must_not_match_error_email)))), yn(e, xn, $e.pipe($e.string(), $e.nonEmpty(o.formatMessage(hn.password_change_error_password_required)))), e), j ? yn({}, jn, $e.pipe($e.string(), $e.minLength(6, o.formatMessage(pn.security_setup_verification_code_field_error_text)))) : null), yn({}, vn, $e.pipe($e.boolean(), $e.check(function(e) {
               return !0 === e
-            }, o.formatMessage(Ze.email_change_confirm_checkbox_error)))))))
+            }, o.formatMessage(Ke.email_change_confirm_checkbox_error)))))))
           }, [y, j, w]),
           M = g || v;
-        return (0, r.jsx)(un, {
+        return (0, r.jsx)(fn, {
           isLoading: M,
           children: (0, r.jsxs)("div", {
             className: "pb0kad0",
             "data-testid": "emailPage",
-            children: [(0, r.jsxs)(sn, {
-              children: [(0, r.jsx)(cn, {
+            children: [(0, r.jsxs)(ln, {
+              children: [(0, r.jsx)(dn, {
                 asChild: !0,
                 children: (0, r.jsx)(E.IconButton, {
                   icon: "ChevronLeft",
                   appearance: "tertiary",
                   size: "LG",
-                  label: o.formatMessage(_n.overview_profile_back_button_label),
+                  label: o.formatMessage(mn.overview_profile_back_button_label),
                   testId: "emailPageBackButton",
-                  "data-ga": Ke.action.close_edit_email,
+                  "data-ga": Je.action.close_edit_email,
                   onClick: function() {
                     s("/account")
                   }
                 })
-              }), (0, r.jsx)(ln, {
+              }), (0, r.jsx)(un, {
                 children: (0, r.jsx)(E.Heading, {
                   level: 6,
-                  children: o.formatMessage(Ze.email_change_page_title)
+                  children: o.formatMessage(Ke.email_change_page_title)
                 })
               })]
             }), d && (0, r.jsxs)(E.Alert.Root, {
@@ -3486,7 +3347,7 @@ try {
                 children: [(0, r.jsx)(E.Alert.Icon, {
                   size: "XL"
                 }), (0, r.jsx)(E.Alert.Title, {
-                  children: o.formatMessage(Ze.email_change_alert_title)
+                  children: o.formatMessage(Ke.email_change_alert_title)
                 }), (0, r.jsx)(E.Alert.CloseButton, {
                   label: "close",
                   onPress: function() {
@@ -3496,10 +3357,10 @@ try {
                 })]
               }), (0, r.jsx)(E.Alert.Body, {
                 children: (0, r.jsx)(E.Alert.Description, {
-                  children: o.formatMessage(Ze.email_change_alert_description)
+                  children: o.formatMessage(Ke.email_change_alert_description)
                 })
               })]
-            }), (0, r.jsxs)(Qt, {
+            }), (0, r.jsxs)(tn, {
               schema: x,
               defaultValues: {
                 email: "",
@@ -3587,18 +3448,18 @@ try {
                     switch (l.label) {
                       case 0:
                         return e = {
-                          email: n[yn],
-                          password: n[wn]
-                        }, j && (e.mfaCode = n[vn]), [4, _({
+                          email: n[wn],
+                          password: n[xn]
+                        }, j && (e.mfaCode = n[jn]), [4, f({
                           body: e
                         })];
                       case 1:
-                        return t = l.sent(), (a = t.error) ? (u(!1), (i = Zn[a.code]) && r(i.field, {
+                        return t = l.sent(), (a = t.error) ? (u(!1), (i = Kn[a.code]) && r(i.field, {
                           message: o.formatMessage(i.message)
                         })) : (u(!0), c.displayNewToast({
                           appearance: "information",
-                          message: o.formatMessage(Ze.email_change_alert_description),
-                          title: o.formatMessage(Ze.email_change_alert_title)
+                          message: o.formatMessage(Ke.email_change_alert_description),
+                          title: o.formatMessage(Ke.email_change_alert_title)
                         }), s("/account")), [2]
                     }
                   })
@@ -3609,74 +3470,74 @@ try {
                     var i = t.apply(e, n);
 
                     function o(e) {
-                      hn(i, r, a, o, s, "next", e)
+                      bn(i, r, a, o, s, "next", e)
                     }
 
                     function s(e) {
-                      hn(i, r, a, o, s, "throw", e)
+                      bn(i, r, a, o, s, "throw", e)
                     }
                     o(void 0)
                   })
                 })()
               },
-              children: [(0, r.jsxs)(en, {
-                children: [(0, r.jsxs)(yt, {
-                  name: yn,
-                  isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: o.formatMessage(Ze.email_change_new_email_label)
-                  }), (0, r.jsx)(vt, {
-                    type: "email",
-                    maxLength: 254,
-                    placeholder: o.formatMessage(Ze.email_change_new_email_placeholder),
-                    testId: "changeEmailNewEmail"
-                  })]
-                }), (0, r.jsxs)(yt, {
+              children: [(0, r.jsxs)(nn, {
+                children: [(0, r.jsxs)(wt, {
                   name: wn,
                   isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: o.formatMessage(Ze.email_change_password_label)
-                  }), (0, r.jsx)(vt, {
+                  children: [(0, r.jsx)(xt, {
+                    children: o.formatMessage(Ke.email_change_new_email_label)
+                  }), (0, r.jsx)(jt, {
+                    type: "email",
+                    maxLength: 254,
+                    placeholder: o.formatMessage(Ke.email_change_new_email_placeholder),
+                    testId: "changeEmailNewEmail"
+                  })]
+                }), (0, r.jsxs)(wt, {
+                  name: xn,
+                  isRequired: !0,
+                  children: [(0, r.jsx)(xt, {
+                    children: o.formatMessage(Ke.email_change_password_label)
+                  }), (0, r.jsx)(jt, {
                     type: "password",
-                    placeholder: o.formatMessage(Ze.email_change_password_placeholder),
+                    placeholder: o.formatMessage(Ke.email_change_password_placeholder),
                     testId: "changeEmailPassword",
                     maxLength: null !== (e = null == y ? void 0 : y.maximumLoginLength) && void 0 !== e ? e : 128
                   })]
-                }), j && (0, r.jsxs)(yt, {
-                  name: vn,
+                }), j && (0, r.jsxs)(wt, {
+                  name: jn,
                   isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: o.formatMessage(fn.security_setup_authenticator_code_field_label)
-                  }), (0, r.jsx)(vt, {
-                    placeholder: o.formatMessage(fn.security_setup_verification_code_field_placeholder),
+                  children: [(0, r.jsx)(xt, {
+                    children: o.formatMessage(pn.security_setup_authenticator_code_field_label)
+                  }), (0, r.jsx)(jt, {
+                    placeholder: o.formatMessage(pn.security_setup_verification_code_field_placeholder),
                     testId: "changeEmailMfaCode"
                   })]
                 })]
-              }), (0, r.jsxs)(lt, {
-                name: bn,
-                children: [(0, r.jsx)(dt, {
-                  children: (0, r.jsx)(ut, {
-                    label: o.formatMessage(Ze.email_change_terms_body),
+              }), (0, r.jsxs)(ut, {
+                name: vn,
+                children: [(0, r.jsx)(_t, {
+                  children: (0, r.jsx)(ft, {
+                    label: o.formatMessage(Ke.email_change_terms_body),
                     testId: "changeEmailConfirmation"
                   })
-                }), (0, r.jsx)(ft, {
+                }), (0, r.jsx)(pt, {
                   testId: "confirm-error"
                 })]
-              }), (0, r.jsx)(tn, {
+              }), (0, r.jsx)(rn, {
                 appearance: "primary",
-                "data-ga": Ke.action.save_email,
+                "data-ga": Je.action.save_email,
                 isDisabled: p,
                 isLoading: p,
                 size: "LG",
                 testId: "changeEmailSubmitButton",
-                children: o.formatMessage(Ze.email_change_submit_button)
+                children: o.formatMessage(Ke.email_change_submit_button)
               })]
             })]
           })
         })
       };
 
-      function Mn(e, t, n) {
+      function On(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -3684,58 +3545,58 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var kn = "password",
-        On = "verificationCode",
-        Sn = function(e) {
+      var Sn = "password",
+        An = "verificationCode",
+        In = function(e) {
           var t, n = e.isLoading,
             i = e.onFormInvalid,
             o = e.onSubmit,
-            s = (0, L.A)(),
-            c = rr({
-              route: Be.PasswordRequirements,
+            s = (0, N.A)(),
+            c = ir({
+              route: Ye.PasswordRequirements,
               fetchOnInitial: !1
             }).data,
             l = (0, a.useMemo)(function() {
               var e;
-              return We.pipe(We.object((Mn(e = {}, On, We.pipe(We.string(), We.nonEmpty(s.formatMessage(fn.security_setup_verification_code_field_error_text)), We.minLength(6, s.formatMessage(fn.security_setup_verification_code_field_error_text)))), Mn(e, kn, We.pipe(We.string(), We.nonEmpty(s.formatMessage(pn.password_change_error_password_required)))), e)))
+              return $e.pipe($e.object((On(e = {}, An, $e.pipe($e.string(), $e.nonEmpty(s.formatMessage(pn.security_setup_verification_code_field_error_text)), $e.minLength(6, s.formatMessage(pn.security_setup_verification_code_field_error_text)))), On(e, Sn, $e.pipe($e.string(), $e.nonEmpty(s.formatMessage(hn.password_change_error_password_required)))), e)))
             }, [c]);
-          return (0, r.jsxs)(Qt, {
+          return (0, r.jsxs)(tn, {
             onFormInvalid: i,
             onSubmit: o,
             schema: l,
             testId: "password-mfa-code-form",
-            children: [(0, r.jsxs)(en, {
-              children: [(0, r.jsxs)(yt, {
+            children: [(0, r.jsxs)(nn, {
+              children: [(0, r.jsxs)(wt, {
                 isRequired: !0,
-                name: On,
-                children: [(0, r.jsx)(wt, {
-                  children: s.formatMessage(fn.security_setup_authenticator_code_field_label)
-                }), (0, r.jsx)(vt, {
-                  placeholder: s.formatMessage(fn.security_setup_verification_code_field_placeholder),
+                name: An,
+                children: [(0, r.jsx)(xt, {
+                  children: s.formatMessage(pn.security_setup_authenticator_code_field_label)
+                }), (0, r.jsx)(jt, {
+                  placeholder: s.formatMessage(pn.security_setup_verification_code_field_placeholder),
                   testId: "mfa-code-verification-input"
                 })]
-              }), (0, r.jsxs)(yt, {
-                name: kn,
+              }), (0, r.jsxs)(wt, {
+                name: Sn,
                 isRequired: !0,
-                children: [(0, r.jsx)(wt, {
-                  children: s.formatMessage(fn.security_setup_password_field_label)
-                }), (0, r.jsx)(vt, {
-                  placeholder: s.formatMessage(fn.security_setup_password_field_placeholder),
+                children: [(0, r.jsx)(xt, {
+                  children: s.formatMessage(pn.security_setup_password_field_label)
+                }), (0, r.jsx)(jt, {
+                  placeholder: s.formatMessage(pn.security_setup_password_field_placeholder),
                   testId: "mfa-password-verification-input",
                   type: "password",
                   maxLength: null !== (t = null == c ? void 0 : c.maximumLoginLength) && void 0 !== t ? t : 128
                 })]
               })]
-            }), (0, r.jsx)(tn, {
+            }), (0, r.jsx)(rn, {
               appearance: "primary",
               isLoading: n,
               size: "LG",
               testId: "mfa-verification-submit",
-              children: s.formatMessage(fn.security_setup_verify_button_text)
+              children: s.formatMessage(pn.security_setup_verify_button_text)
             })]
           })
         };
-      const An = (0, _e.YK)({
+      const Pn = (0, fe.YK)({
         nickname_change_title: {
           defaultMessage: "Nickname",
           description: "Title of the page.",
@@ -3837,7 +3698,7 @@ try {
           id: "nickname_change_success"
         }
       });
-      var In = function(e) {
+      var Cn = function(e) {
           var t = e.dateString,
             n = e.locale;
           return (0, new Intl.DateTimeFormat(n, {
@@ -3846,7 +3707,7 @@ try {
             day: "2-digit"
           }).format)(Date.parse(t))
         },
-        Pn = function(e) {
+        Dn = function(e) {
           var t = e.dateString,
             n = e.locale;
           return (0, new Intl.DateTimeFormat(n, {
@@ -3859,7 +3720,7 @@ try {
           }).format)(Date.parse(t))
         };
 
-      function Cn(e, t, n, r, a, i, o) {
+      function Tn(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -3869,7 +3730,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Dn(e, t, n) {
+      function Ln(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -3877,35 +3738,35 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var Tn = "nickname",
-        Nn = "password",
-        Ln = "mfaCode",
-        En = "confirm";
-      const Rn = function() {
-        var e, t = (0, L.A)(),
+      var Nn = "nickname",
+        En = "password",
+        Rn = "mfaCode",
+        qn = "confirm";
+      const Gn = function() {
+        var e, t = (0, N.A)(),
           n = (0, i.useNavigate)(),
-          o = Ee(),
-          s = rr({
-            route: Be.GetMfaDevices
+          o = qe(),
+          s = ir({
+            route: Ye.GetMfaDevices
           }),
           c = s.loading,
           l = s.data,
-          d = rr({
-            route: Be.UpdateNickname,
+          d = ir({
+            route: Ye.UpdateNickname,
             fetchOnInitial: !1
           }),
           u = d.fetch,
-          f = d.loading,
-          _ = rr({
-            route: Be.ProfileOverview,
+          _ = d.loading,
+          f = ir({
+            route: Ye.ProfileOverview,
             fetchOnInitial: !1
           }),
-          p = _.fetch,
-          m = _.loading,
-          h = _.data,
-          g = _.loading,
-          b = rr({
-            route: Be.PasswordRequirements,
+          p = f.fetch,
+          m = f.loading,
+          h = f.data,
+          g = f.loading,
+          b = ir({
+            route: Ye.PasswordRequirements,
             fetchOnInitial: !1
           }),
           y = b.data,
@@ -3913,7 +3774,7 @@ try {
           w = Number(null == l ? void 0 : l.length) > 0,
           j = (0, a.useMemo)(function() {
             var e;
-            return We.pipe(We.object(function(e, t) {
+            return $e.pipe($e.object(function(e, t) {
               return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                 var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -3931,43 +3792,43 @@ try {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                  Dn(e, t, n[t])
+                  Ln(e, t, n[t])
                 })
               }
               return e
-            }((Dn(e = {}, Tn, We.pipe(We.string(), We.nonEmpty(t.formatMessage(An.nickname_change_error_nickname_required)), We.minLength(6, t.formatMessage(An.nickname_change_error_min_length, {
+            }((Ln(e = {}, Nn, $e.pipe($e.string(), $e.nonEmpty(t.formatMessage(Pn.nickname_change_error_nickname_required)), $e.minLength(6, t.formatMessage(Pn.nickname_change_error_min_length, {
               number: 6
-            })), We.maxLength(16, t.formatMessage(An.nickname_change_error_max_length, {
+            })), $e.maxLength(16, t.formatMessage(Pn.nickname_change_error_max_length, {
               number: 16
-            })), We.regex(/^([a-zA-Z0-9_-]*)$/, t.formatMessage(An.nickname_change_error_invalid_characters)))), Dn(e, Nn, We.pipe(We.string(), We.nonEmpty(t.formatMessage(pn.password_change_error_password_required)))), e), w ? Dn({}, Ln, We.pipe(We.string(), We.minLength(6, t.formatMessage(fn.security_setup_verification_code_field_error_text)))) : null), Dn({}, En, We.pipe(We.boolean(), We.check(function(e) {
+            })), $e.regex(/^([a-zA-Z0-9_-]*)$/, t.formatMessage(Pn.nickname_change_error_invalid_characters)))), Ln(e, En, $e.pipe($e.string(), $e.nonEmpty(t.formatMessage(hn.password_change_error_password_required)))), e), w ? Ln({}, Rn, $e.pipe($e.string(), $e.minLength(6, t.formatMessage(pn.security_setup_verification_code_field_error_text)))) : null), Ln({}, qn, $e.pipe($e.boolean(), $e.check(function(e) {
               return !0 === e
-            }, t.formatMessage(An.nickname_change_confirm_checkbox_error)))))))
+            }, t.formatMessage(Pn.nickname_change_confirm_checkbox_error)))))))
           }, [w, v]),
           x = c || g || v,
           M = Boolean(!(null == h ? void 0 : h.nicknameCanBeUpdated) && (null == h ? void 0 : h.nicknameLastUpdatedDate) && (null == h ? void 0 : h.nicknameUpdateLastCooldownDate));
-        return (0, r.jsx)(un, {
+        return (0, r.jsx)(fn, {
           isLoading: x,
           children: h && (0, r.jsxs)("div", {
             className: "_1jp5d9t0",
             "data-testid": "nicknamePage",
-            children: [(0, r.jsxs)(sn, {
-              children: [(0, r.jsx)(cn, {
+            children: [(0, r.jsxs)(ln, {
+              children: [(0, r.jsx)(dn, {
                 asChild: !0,
                 children: (0, r.jsx)(E.IconButton, {
                   icon: "ChevronLeft",
                   appearance: "tertiary",
                   size: "LG",
-                  label: t.formatMessage(_n.overview_profile_back_button_label),
+                  label: t.formatMessage(mn.overview_profile_back_button_label),
                   testId: "nicknamePageBackButton",
-                  "data-ga": Ke.action.close_edit_nickname,
+                  "data-ga": Je.action.close_edit_nickname,
                   onClick: function() {
                     n("/account")
                   }
                 })
-              }), (0, r.jsx)(ln, {
+              }), (0, r.jsx)(un, {
                 children: (0, r.jsx)(E.Heading, {
                   level: 6,
-                  children: t.formatMessage(An.nickname_change_title)
+                  children: t.formatMessage(Pn.nickname_change_title)
                 })
               })]
             }), M && (0, r.jsxs)(E.Alert.Root, {
@@ -3978,23 +3839,23 @@ try {
                 children: [(0, r.jsx)(E.Alert.Icon, {
                   size: "XL"
                 }), (0, r.jsx)(E.Alert.Title, {
-                  children: t.formatMessage(An.nickname_change_alert_title)
+                  children: t.formatMessage(Pn.nickname_change_alert_title)
                 })]
               }), (0, r.jsx)(E.Alert.Body, {
                 children: (0, r.jsx)(E.Alert.Description, {
-                  children: t.formatMessage(An.nickname_change_alert_description, {
-                    lastChangedDate: In({
+                  children: t.formatMessage(Pn.nickname_change_alert_description, {
+                    lastChangedDate: Cn({
                       dateString: h.nicknameLastUpdatedDate,
                       locale: t.locale
                     }),
-                    unlockedDate: In({
+                    unlockedDate: Cn({
                       dateString: h.nicknameUpdateLastCooldownDate,
                       locale: t.locale
                     })
                   })
                 })
               })]
-            }), (0, r.jsxs)(Qt, {
+            }), (0, r.jsxs)(tn, {
               defaultValues: {
                 email: "",
                 password: "",
@@ -4082,19 +3943,19 @@ try {
                     switch (l.label) {
                       case 0:
                         return e = {
-                          password: a[Nn],
-                          nickname: a[Tn]
-                        }, w && (e.mfaCode = a[Ln]), [4, u({
+                          password: a[En],
+                          nickname: a[Nn]
+                        }, w && (e.mfaCode = a[Rn]), [4, u({
                           body: e
                         })];
                       case 1:
-                        return r = l.sent(), (s = r.error) ? ((c = Zn[s.code]) && i(c.field, {
+                        return r = l.sent(), (s = r.error) ? ((c = Kn[s.code]) && i(c.field, {
                           message: t.formatMessage(c.message)
                         }), [3, 4]) : [3, 2];
                       case 2:
                         return o.displayNewToast({
                           appearance: "success",
-                          message: t.formatMessage(An.nickname_change_success)
+                          message: t.formatMessage(Pn.nickname_change_success)
                         }), [4, p({})];
                       case 3:
                         l.sent(), n("/account"), l.label = 4;
@@ -4109,79 +3970,79 @@ try {
                     var i = r.apply(e, t);
 
                     function o(e) {
-                      Cn(i, n, a, o, s, "next", e)
+                      Tn(i, n, a, o, s, "next", e)
                     }
 
                     function s(e) {
-                      Cn(i, n, a, o, s, "throw", e)
+                      Tn(i, n, a, o, s, "throw", e)
                     }
                     o(void 0)
                   })
                 })()
               },
               schema: j,
-              children: [(0, r.jsxs)(en, {
-                children: [(0, r.jsxs)(yt, {
-                  name: Tn,
-                  isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: t.formatMessage(An.nickname_change_nickname_label)
-                  }), (0, r.jsx)(vt, {
-                    placeholder: t.formatMessage(An.nickname_change_nickname_placeholder),
-                    testId: "newNicknameInput"
-                  })]
-                }), (0, r.jsxs)(yt, {
+              children: [(0, r.jsxs)(nn, {
+                children: [(0, r.jsxs)(wt, {
                   name: Nn,
                   isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: t.formatMessage(An.nickname_change_current_password_label)
-                  }), (0, r.jsx)(vt, {
+                  children: [(0, r.jsx)(xt, {
+                    children: t.formatMessage(Pn.nickname_change_nickname_label)
+                  }), (0, r.jsx)(jt, {
+                    placeholder: t.formatMessage(Pn.nickname_change_nickname_placeholder),
+                    testId: "newNicknameInput"
+                  })]
+                }), (0, r.jsxs)(wt, {
+                  name: En,
+                  isRequired: !0,
+                  children: [(0, r.jsx)(xt, {
+                    children: t.formatMessage(Pn.nickname_change_current_password_label)
+                  }), (0, r.jsx)(jt, {
                     type: "password",
-                    placeholder: t.formatMessage(An.nickname_change_current_password_placeholder),
+                    placeholder: t.formatMessage(Pn.nickname_change_current_password_placeholder),
                     testId: "updateNicknamePasswordInput",
                     maxLength: null !== (e = null == y ? void 0 : y.maximumLoginLength) && void 0 !== e ? e : 128
                   })]
-                }), w && (0, r.jsxs)(yt, {
-                  name: Ln,
+                }), w && (0, r.jsxs)(wt, {
+                  name: Rn,
                   isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: t.formatMessage(fn.security_setup_authenticator_code_field_label)
-                  }), (0, r.jsx)(vt, {
-                    placeholder: t.formatMessage(fn.security_setup_verification_code_field_placeholder),
+                  children: [(0, r.jsx)(xt, {
+                    children: t.formatMessage(pn.security_setup_authenticator_code_field_label)
+                  }), (0, r.jsx)(jt, {
+                    placeholder: t.formatMessage(pn.security_setup_verification_code_field_placeholder),
                     testId: "updateNicknameMfaCodeInput"
                   })]
-                }), (0, r.jsxs)(lt, {
-                  name: En,
-                  children: [(0, r.jsx)(dt, {
-                    children: (0, r.jsx)(ut, {
+                }), (0, r.jsxs)(ut, {
+                  name: qn,
+                  children: [(0, r.jsx)(_t, {
+                    children: (0, r.jsx)(ft, {
                       testId: "termsConfirmation",
-                      label: t.formatMessage(An.nickname_change_confirm_terms)
+                      label: t.formatMessage(Pn.nickname_change_confirm_terms)
                     })
-                  }), (0, r.jsx)(ft, {
+                  }), (0, r.jsx)(pt, {
                     testId: "confirm-error"
                   })]
                 })]
-              }), (0, r.jsx)(tn, {
+              }), (0, r.jsx)(rn, {
                 testId: "submitNicknameButton",
                 size: "LG",
                 appearance: "primary",
-                isDisabled: !h.nicknameCanBeUpdated || f || m,
-                isLoading: f || m,
-                "data-ga": Ke.action.save_nickname,
-                children: t.formatMessage(An.nickname_change_save_changes)
+                isDisabled: !h.nicknameCanBeUpdated || _ || m,
+                isLoading: _ || m,
+                "data-ga": Je.action.save_nickname,
+                children: t.formatMessage(Pn.nickname_change_save_changes)
               })]
             })]
           })
         })
       };
 
-      function Gn(e, t) {
+      function Un(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Un(e, t, n, r, a, i, o) {
+      function Vn(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -4191,7 +4052,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Vn(e, t, n) {
+      function Fn(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -4200,20 +4061,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function qn(e) {
+      function zn(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Vn(e, t, n[t])
+            Fn(e, t, n[t])
           })
         }
         return e
       }
 
-      function Fn(e, t) {
+      function Bn(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -4225,87 +4086,87 @@ try {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e
       }
-      var zn = "currentPassword",
-        Bn = "mfaCode",
-        Hn = "newPassword",
-        Yn = "confirmPassword";
-      const Xn = function() {
-          var e, t, n = (0, L.A)(),
+      var Hn = "currentPassword",
+        Yn = "mfaCode",
+        Wn = "newPassword",
+        Xn = "confirmPassword";
+      const Zn = function() {
+          var e, t, n = (0, N.A)(),
             o = (0, i.useNavigate)(),
-            s = Ee(),
-            c = rr({
+            s = qe(),
+            c = ir({
               fetchOnInitial: !1,
-              route: Be.PasswordRequirements
+              route: Ye.PasswordRequirements
             }),
             l = c.data,
             d = c.loading,
-            u = rr({
-              route: Be.GetMfaDevices
+            u = ir({
+              route: Ye.GetMfaDevices
             }),
-            f = u.data,
-            _ = u.loading,
-            p = rr({
+            _ = u.data,
+            f = u.loading,
+            p = ir({
               fetchOnInitial: !1,
-              route: Be.UpdatePassword
+              route: Ye.UpdatePassword
             }),
             m = p.fetch,
             h = p.loading,
-            g = Number(null == f ? void 0 : f.length) > 0,
+            g = Number(null == _ ? void 0 : _.length) > 0,
             b = (0, a.useMemo)(function() {
               var e, t, r = [];
-              return l && (r.push(We.minLength(l.minimumLength, n.formatMessage(pn.password_change_error_min_length, {
+              return l && (r.push($e.minLength(l.minimumLength, n.formatMessage(hn.password_change_error_min_length, {
                 number: l.minimumLength
-              }))), r.push(We.maxLength(l.maximumLength, n.formatMessage(pn.password_change_error_max_length, {
+              }))), r.push($e.maxLength(l.maximumLength, n.formatMessage(hn.password_change_error_max_length, {
                 number: l.maximumLength
-              }))), l.enforceLower && r.push(We.regex(/[a-z]/, n.formatMessage(pn.password_change_error_lowercase_letters))), l.enforceUpper && r.push(We.regex(/[A-Z]/, n.formatMessage(pn.password_change_error_capital_letters))), l.enforceNumber && r.push(We.regex(/[0-9]/, n.formatMessage(pn.password_change_error_numerical))), l.enforceSymbol && r.push(We.regex(new RegExp("[".concat(l.validSymbols, "]")), n.formatMessage(pn.password_change_error_symbol, {
+              }))), l.enforceLower && r.push($e.regex(/[a-z]/, n.formatMessage(hn.password_change_error_lowercase_letters))), l.enforceUpper && r.push($e.regex(/[A-Z]/, n.formatMessage(hn.password_change_error_capital_letters))), l.enforceNumber && r.push($e.regex(/[0-9]/, n.formatMessage(hn.password_change_error_numerical))), l.enforceSymbol && r.push($e.regex(new RegExp("[".concat(l.validSymbols, "]")), n.formatMessage(hn.password_change_error_symbol, {
                 symbols: l.validSymbols
-              })))), (e = We).pipe.apply(e, [We.string()].concat(function(e) {
-                if (Array.isArray(e)) return Gn(e)
+              })))), (e = $e).pipe.apply(e, [$e.string()].concat(function(e) {
+                if (Array.isArray(e)) return Un(e)
               }(t = r) || function(e) {
                 if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
               }(t) || function(e, t) {
                 if (e) {
-                  if ("string" == typeof e) return Gn(e, t);
+                  if ("string" == typeof e) return Un(e, t);
                   var n = Object.prototype.toString.call(e).slice(8, -1);
-                  return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Gn(e, t) : void 0
+                  return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Un(e, t) : void 0
                 }
               }(t) || function() {
                 throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
               }()))
             }, [l]),
-            y = d || _;
-          return (0, r.jsx)(un, {
+            y = d || f;
+          return (0, r.jsx)(fn, {
             isLoading: y,
             children: (0, r.jsxs)("div", {
               className: "_9ww4010",
               "data-testid": "passwordPage",
-              children: [(0, r.jsxs)(sn, {
-                children: [(0, r.jsx)(cn, {
+              children: [(0, r.jsxs)(ln, {
+                children: [(0, r.jsx)(dn, {
                   asChild: !0,
                   children: (0, r.jsx)(E.IconButton, {
                     icon: "ChevronLeft",
                     appearance: "tertiary",
                     size: "LG",
-                    label: n.formatMessage(_n.overview_profile_back_button_label),
+                    label: n.formatMessage(mn.overview_profile_back_button_label),
                     testId: "passwordPageBackButton",
-                    "data-ga": Ke.action.close_edit_password,
+                    "data-ga": Je.action.close_edit_password,
                     onClick: function() {
                       o("/account")
                     }
                   })
-                }), (0, r.jsx)(ln, {
+                }), (0, r.jsx)(un, {
                   children: (0, r.jsx)(E.Heading, {
                     level: 6,
-                    children: n.formatMessage(pn.password_change_title)
+                    children: n.formatMessage(hn.password_change_title)
                   })
                 })]
-              }), (0, r.jsxs)(Qt, {
-                schema: We.pipe(We.object(Fn(qn(Vn({}, zn, We.pipe(We.string(), We.nonEmpty(n.formatMessage(pn.password_change_error_password_required)))), g ? Vn({}, Bn, We.pipe(We.string(), We.minLength(6, n.formatMessage(fn.security_setup_verification_code_field_error_text)))) : null), (t = {}, Vn(t, Hn, b), Vn(t, Yn, We.pipe(We.string(), We.nonEmpty(n.formatMessage(pn.password_change_error_password_required)))), t))), We.forward(We.partialCheck([
-                  [Hn],
-                  [Yn]
+              }), (0, r.jsxs)(tn, {
+                schema: $e.pipe($e.object(Bn(zn(Fn({}, Hn, $e.pipe($e.string(), $e.nonEmpty(n.formatMessage(hn.password_change_error_password_required)))), g ? Fn({}, Yn, $e.pipe($e.string(), $e.minLength(6, n.formatMessage(pn.security_setup_verification_code_field_error_text)))) : null), (t = {}, Fn(t, Wn, b), Fn(t, Xn, $e.pipe($e.string(), $e.nonEmpty(n.formatMessage(hn.password_change_error_password_required)))), t))), $e.forward($e.partialCheck([
+                  [Wn],
+                  [Xn]
                 ], function(e) {
                   return e.newPassword === e.confirmPassword
-                }, n.formatMessage(pn.password_change_error_must_match)), [Yn])),
+                }, n.formatMessage(hn.password_change_error_must_match)), [Xn])),
                 defaultValues: {
                   currentPassword: "",
                   mfaCode: "",
@@ -4392,18 +4253,18 @@ try {
                       switch (l.label) {
                         case 0:
                           return e = {
-                            password: r[zn],
-                            newPassword: r[Hn],
-                            confirmNewPassword: r[Yn]
-                          }, g && (e.mfaCode = r[Bn]), [4, m({
+                            password: r[Hn],
+                            newPassword: r[Wn],
+                            confirmNewPassword: r[Xn]
+                          }, g && (e.mfaCode = r[Yn]), [4, m({
                             body: e
                           })];
                         case 1:
-                          return t = l.sent(), (i = t.error) ? (c = Zn[i.code]) && a(c.field, {
+                          return t = l.sent(), (i = t.error) ? (c = Kn[i.code]) && a(c.field, {
                             message: n.formatMessage(c.message)
                           }) : (o("/account"), s.displayNewToast({
                             appearance: "success",
-                            message: n.formatMessage(pn.password_change_success)
+                            message: n.formatMessage(hn.password_change_success)
                           })), [2]
                       }
                     })
@@ -4414,195 +4275,195 @@ try {
                       var i = t.apply(e, n);
 
                       function o(e) {
-                        Un(i, r, a, o, s, "next", e)
+                        Vn(i, r, a, o, s, "next", e)
                       }
 
                       function s(e) {
-                        Un(i, r, a, o, s, "throw", e)
+                        Vn(i, r, a, o, s, "throw", e)
                       }
                       o(void 0)
                     })
                   })()
                 },
                 validationMode: "onSubmit",
-                children: [(0, r.jsxs)(en, {
-                  children: [(0, r.jsxs)(yt, {
-                    name: zn,
+                children: [(0, r.jsxs)(nn, {
+                  children: [(0, r.jsxs)(wt, {
+                    name: Hn,
                     isRequired: !0,
-                    children: [(0, r.jsx)(wt, {
-                      children: n.formatMessage(pn.password_change_current_password_label)
-                    }), (0, r.jsx)(vt, {
+                    children: [(0, r.jsx)(xt, {
+                      children: n.formatMessage(hn.password_change_current_password_label)
+                    }), (0, r.jsx)(jt, {
                       testId: "currentPasswordInput",
                       type: "password",
-                      placeholder: n.formatMessage(pn.password_change_current_password_label)
+                      placeholder: n.formatMessage(hn.password_change_current_password_label)
                     })]
-                  }), g && (0, r.jsxs)(yt, {
-                    name: Bn,
+                  }), g && (0, r.jsxs)(wt, {
+                    name: Yn,
                     isRequired: !0,
-                    children: [(0, r.jsx)(wt, {
-                      children: n.formatMessage(fn.security_setup_authenticator_code_field_label)
-                    }), (0, r.jsx)(vt, {
-                      placeholder: n.formatMessage(fn.security_setup_verification_code_field_placeholder),
+                    children: [(0, r.jsx)(xt, {
+                      children: n.formatMessage(pn.security_setup_authenticator_code_field_label)
+                    }), (0, r.jsx)(jt, {
+                      placeholder: n.formatMessage(pn.security_setup_verification_code_field_placeholder),
                       testId: "updatePasswordMfaCodeInput"
                     })]
-                  }), (0, r.jsxs)(yt, {
-                    overrideErrorMessage: n.formatMessage(pn.password_change_requirements_not_met),
+                  }), (0, r.jsxs)(wt, {
+                    overrideErrorMessage: n.formatMessage(hn.password_change_requirements_not_met),
                     valibotErrorTypesToOverride: ["min_length", "max_length", "regex"],
                     isRequired: !0,
-                    name: Hn,
-                    children: [(0, r.jsx)(wt, {
-                      children: n.formatMessage(pn.password_change_new_password_label)
-                    }), (0, r.jsx)(vt, {
-                      linkedValidationFields: [Yn],
+                    name: Wn,
+                    children: [(0, r.jsx)(xt, {
+                      children: n.formatMessage(hn.password_change_new_password_label)
+                    }), (0, r.jsx)(jt, {
+                      linkedValidationFields: [Xn],
                       maxLength: null !== (e = null == l ? void 0 : l.maximumLength) && void 0 !== e ? e : 30,
                       testId: "newPasswordInput",
                       type: "password",
-                      placeholder: n.formatMessage(pn.password_change_new_password_label)
+                      placeholder: n.formatMessage(hn.password_change_new_password_label)
                     })]
                   })]
-                }), (0, r.jsxs)(Vt, {
-                  passwordFieldName: Hn,
+                }), (0, r.jsxs)(Ft, {
+                  passwordFieldName: Wn,
                   testId: "passwordStrengthSummary",
-                  children: [(0, r.jsxs)(qt, {
-                    children: [(0, r.jsxs)(Ft, {
-                      children: [(0, r.jsx)(zt, {
-                        children: n.formatMessage(pn.password_change_password_strength_label)
-                      }), (0, r.jsx)(Bt, {
+                  children: [(0, r.jsxs)(zt, {
+                    children: [(0, r.jsxs)(Bt, {
+                      children: [(0, r.jsx)(Ht, {
+                        children: n.formatMessage(hn.password_change_password_strength_label)
+                      }), (0, r.jsx)(Yt, {
                         testId: "newPasswordStrengthResult"
                       })]
-                    }), (0, r.jsx)(Ht, {
+                    }), (0, r.jsx)(Wt, {
                       testId: "newPasswordProgressBar"
                     })]
-                  }), (0, r.jsx)(Yt, {})]
-                }), (0, r.jsxs)(yt, {
-                  name: Yn,
+                  }), (0, r.jsx)(Xt, {})]
+                }), (0, r.jsxs)(wt, {
+                  name: Xn,
                   isRequired: !0,
-                  children: [(0, r.jsx)(wt, {
-                    children: n.formatMessage(pn.password_change_confirm_password_label)
-                  }), (0, r.jsx)(vt, {
+                  children: [(0, r.jsx)(xt, {
+                    children: n.formatMessage(hn.password_change_confirm_password_label)
+                  }), (0, r.jsx)(jt, {
                     testId: "confirmPasswordInput",
                     type: "password",
-                    placeholder: n.formatMessage(pn.password_change_confirm_password_label)
+                    placeholder: n.formatMessage(hn.password_change_confirm_password_label)
                   })]
-                }), (0, r.jsx)(tn, {
+                }), (0, r.jsx)(rn, {
                   appearance: "primary",
-                  "data-ga": Ke.action.save_password,
+                  "data-ga": Je.action.save_password,
                   isDisabled: h,
                   isLoading: h,
                   size: "LG",
                   testId: "submitNewPassword",
-                  children: n.formatMessage(pn.password_change_save_changes_label)
+                  children: n.formatMessage(hn.password_change_save_changes_label)
                 })]
               })]
             })
           })
         },
-        Zn = {
+        Kn = {
           "0.2900.5": {
-            field: zn,
-            message: pn.password_change_current_password_error_text
+            field: Hn,
+            message: hn.password_change_current_password_error_text
           },
           "0.2900.6": {
-            field: Bn,
-            message: pn.password_change_error_mfa
+            field: Yn,
+            message: hn.password_change_error_mfa
           },
           "0.2900.11": {
-            field: zn,
-            message: pn.password_change_current_password_error_text
+            field: Hn,
+            message: hn.password_change_current_password_error_text
           },
           "0.2900.12": {
-            field: zn,
-            message: pn.password_change_current_password_error_text
+            field: Hn,
+            message: hn.password_change_current_password_error_text
           },
           "0.2900.13": {
-            field: Hn,
-            message: pn.password_change_error_cannot_be_the_same
+            field: Wn,
+            message: hn.password_change_error_cannot_be_the_same
           },
           "0.3000.5": {
-            field: wn,
-            message: fn.security_setup_password_field_error_text
+            field: xn,
+            message: pn.security_setup_password_field_error_text
           },
           "0.3000.7": {
-            field: vn,
-            message: fn.security_setup_verification_code_field_error_text
+            field: jn,
+            message: pn.security_setup_verification_code_field_error_text
           },
           "0.3000.8": {
-            field: vn,
-            message: fn.security_setup_verification_code_field_error_text
+            field: jn,
+            message: pn.security_setup_verification_code_field_error_text
           },
           "0.3000.10": {
-            field: yn,
-            message: Ze.email_change_new_email_invalid
+            field: wn,
+            message: Ke.email_change_new_email_invalid
           },
           "0.3100.5": {
-            field: Nn,
-            message: fn.security_setup_password_field_error_text
+            field: En,
+            message: pn.security_setup_password_field_error_text
           },
           "0.3100.7": {
-            field: Ln,
-            message: fn.security_setup_verification_code_field_error_text
+            field: Rn,
+            message: pn.security_setup_verification_code_field_error_text
           },
           "0.3100.11": {
-            field: Tn,
-            message: An.nickname_change_new_nickname_invalid
+            field: Nn,
+            message: Pn.nickname_change_new_nickname_invalid
           },
           "0.3100.12": {
-            field: Tn,
-            message: An.nickname_change_error_valid_nickname
+            field: Nn,
+            message: Pn.nickname_change_error_valid_nickname
           },
           "0.3100.13": {
-            field: Tn,
-            message: An.nickname_change_error_already_used
+            field: Nn,
+            message: Pn.nickname_change_error_already_used
           },
           "0.3400.15": {
-            field: kn,
-            message: fn.security_setup_password_field_error_text
+            field: Sn,
+            message: pn.security_setup_password_field_error_text
           },
           "0.3400.17": {
-            field: On,
-            message: fn.security_setup_verification_code_field_error_text
+            field: An,
+            message: pn.security_setup_verification_code_field_error_text
           },
           "0.3600.15": {
-            field: kn,
-            message: fn.security_setup_password_field_error_text
+            field: Sn,
+            message: pn.security_setup_password_field_error_text
           },
           "0.3600.17": {
-            field: On,
-            message: fn.security_setup_verification_code_field_error_text
+            field: An,
+            message: pn.security_setup_verification_code_field_error_text
           },
           "8.400.2": {
-            field: zn,
-            message: pn.password_change_current_password_error_text
+            field: Hn,
+            message: hn.password_change_current_password_error_text
           },
           "8.600.2": {
-            field: wn,
-            message: pn.password_change_current_password_error_text
+            field: xn,
+            message: hn.password_change_current_password_error_text
           },
           "8.700.1": {
-            field: Tn,
-            message: An.nickname_change_new_nickname_same
+            field: Nn,
+            message: Pn.nickname_change_new_nickname_same
           },
           "8.700.7": {
-            field: Nn,
-            message: pn.password_change_current_password_error_text
+            field: En,
+            message: hn.password_change_current_password_error_text
           },
           "8.1000.1": {
-            field: kn,
-            message: pn.password_change_current_password_error_text
+            field: Sn,
+            message: hn.password_change_current_password_error_text
           },
           "8.1200.1": {
-            field: kn,
-            message: pn.password_change_current_password_error_text
+            field: Sn,
+            message: hn.password_change_current_password_error_text
           }
         };
 
-      function Wn(e, t) {
+      function $n(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Kn(e, t, n, r, a, i, o) {
+      function Jn(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -4612,7 +4473,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function $n(e) {
+      function Qn(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -4620,18 +4481,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              Kn(i, r, a, o, s, "next", e)
+              Jn(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              Kn(i, r, a, o, s, "throw", e)
+              Jn(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function Jn(e, t, n) {
+      function er(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -4640,20 +4501,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Qn(e) {
+      function tr(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Jn(e, t, n[t])
+            er(e, t, n[t])
           })
         }
         return e
       }
 
-      function er(e, t) {
+      function nr(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -4666,7 +4527,7 @@ try {
         }), e
       }
 
-      function tr(e, t) {
+      function rr(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -4690,16 +4551,16 @@ try {
           }
         }(e, t) || function(e, t) {
           if (e) {
-            if ("string" == typeof e) return Wn(e, t);
+            if ("string" == typeof e) return $n(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
-            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Wn(e, t) : void 0
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? $n(e, t) : void 0
           }
         }(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
 
-      function nr(e, t) {
+      function ar(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -4771,43 +4632,43 @@ try {
           }
         }
       }
-      var rr = function(e) {
+      var ir = function(e) {
           var t = e.fetchOnInitial,
             n = void 0 === t || t,
             r = e.queryOrRoute,
             i = void 0 === r ? "" : r,
             o = e.route,
-            s = Ee(),
-            c = tr((0, a.useState)(n), 2),
+            s = qe(),
+            c = rr((0, a.useState)(n), 2),
             l = c[0],
             d = c[1],
-            u = tr((0, a.useState)(), 2),
-            f = u[0],
-            _ = u[1],
+            u = rr((0, a.useState)(), 2),
+            _ = u[0],
+            f = u[1],
             p = ke().getAccessToken,
-            m = tr((0, he.fp)(Xe), 1)[0],
-            h = tr((0, he.fp)(m[o]), 2),
+            m = rr((0, he.fp)(Ze), 1)[0],
+            h = rr((0, he.fp)(m[o]), 2),
             g = h[0],
             b = h[1],
-            y = tr((0, a.useState)(!1), 2),
+            y = rr((0, a.useState)(!1), 2),
             v = y[0],
             w = y[1],
             j = function(e) {
               var t = e.body,
                 n = e.queryOrRoute,
                 r = void 0 === n ? i : n;
-              return $n(function() {
+              return Qn(function() {
                 var e, n, a, i;
-                return nr(this, function(c) {
+                return ar(this, function(c) {
                   switch (c.label) {
                     case 0:
-                      return d(!0), w(!1), He[o].isUnauthenticated ? [3, 2] : [4, p()];
+                      return d(!0), w(!1), We[o].isUnauthenticated ? [3, 2] : [4, p()];
                     case 1:
                       e = c.sent(), c.label = 2;
                     case 2:
-                      return n = {}, [4, ar(o, He[o].method, t, e, r)];
+                      return n = {}, [4, or(o, We[o].method, t, e, r)];
                     case 3:
-                      return (a = c.sent()).status ? (a.result ? i = a.result : a.list && (i = a.list), b(i), n.data = i) : (_(a.error), n.error = a.error, Zn[a.error.code] || s.displayNewError(a.error)), d(!1), w(!0), [2, n]
+                      return (a = c.sent()).status ? (a.result ? i = a.result : a.list && (i = a.list), b(i), n.data = i) : (f(a.error), n.error = a.error, Kn[a.error.code] || s.displayNewError(a.error)), d(!1), w(!0), [2, n]
                   }
                 })
               })()
@@ -4818,15 +4679,15 @@ try {
             loading: l,
             fetch: j,
             data: g,
-            error: f,
+            error: _,
             setData: b,
             isRequestComplete: v
           }
         },
-        ar = function(e, t, n, r, a) {
-          return $n(function() {
+        or = function(e, t, n, r, a) {
+          return Qn(function() {
             var i, o;
-            return nr(this, function(s) {
+            return ar(this, function(s) {
               switch (s.label) {
                 case 0:
                   return [4, c().createCastleRequestToken()];
@@ -4834,7 +4695,7 @@ try {
                   return i = s.sent(), o = M(), [4, fetch("".concat(m.SCAPI_BASE_URL, "/").concat(e).concat(a), {
                     method: t,
                     body: JSON.stringify(n),
-                    headers: er(Qn({}, r && {
+                    headers: nr(tr({}, r && {
                       Authorization: "Bearer ".concat(r)
                     }), {
                       "Content-Type": "application/json",
@@ -4849,11 +4710,11 @@ try {
             })
           })()
         },
-        ir = n(39583),
-        or = n(49284),
-        sr = n.n(or);
+        sr = n(39583),
+        cr = n(49284),
+        lr = n.n(cr);
 
-      function cr(e, t, n) {
+      function dr(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -4861,13 +4722,13 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var lr = function(e, t) {
-          sr().trackEvent("Settings", e, t)
+      var ur = function(e, t) {
+          lr().trackEvent("Settings", e, t)
         },
-        dr = function(e, t) {
+        _r = function(e, t) {
           return function() {
             var n;
-            sr().updateCustomDimensionsOrMetrics(function(e, t) {
+            lr().updateCustomDimensionsOrMetrics(function(e, t) {
               return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                 var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -4885,99 +4746,59 @@ try {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                  cr(e, t, n[t])
+                  dr(e, t, n[t])
                 })
               }
               return e
-            }({}, e), (cr(n = {}, Ke.dimensionsMetricsMap.environment, m.ENVIRONMENT), cr(n, Ke.dimensionsMetricsMap.loginState, !0), cr(n, Ke.dimensionsMetricsMap.validationStatus, "verified"), cr(n, Ke.dimensionsMetricsMap.linkedAccounts, t.map(function(e) {
+            }({}, e), (dr(n = {}, Je.dimensionsMetricsMap.environment, m.ENVIRONMENT), dr(n, Je.dimensionsMetricsMap.loginState, !0), dr(n, Je.dimensionsMetricsMap.validationStatus, "verified"), dr(n, Je.dimensionsMetricsMap.linkedAccounts, t.map(function(e) {
               return e.onlineServiceName
             }).join("|")), n))), document.addEventListener("click", function(e) {
               var t = e.target.closest("[data-ga]");
-              t && lr(t.getAttribute("data-ga"))
+              t && ur(t.getAttribute("data-ga"))
             })
           }
+        },
+        fr = function(e) {
+          var t = ir({
+              route: Ye.GetGoogleTagManagerSetupData,
+              fetchOnInitial: !1
+            }),
+            n = t.data,
+            r = t.fetch;
+          (0, a.useEffect)(function() {
+            ! function() {
+              var e = !1,
+                t = function() {
+                  (0, sr.canStoreCookie)("_ga") && (r({}), e = !0)
+                };
+              if (t(), !e) var n = setInterval(function() {
+                window.OneTrust && (window.OneTrust.OnConsentChanged(function() {
+                  t()
+                }), clearInterval(n))
+              }, 100)
+            }()
+          }, []), (0, a.useEffect)(function() {
+            n && e && function(e, t) {
+              var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : _r,
+                r = {
+                  isEnabled: !0,
+                  isEnabledEc: !0,
+                  isUserIdEnabled: !0,
+                  userIdKey: "memberId",
+                  isEnabledCd: !0,
+                  cdDataKey: "cdData",
+                  lifeTimeCookie: "ga4cdlftm",
+                  clearDataCookie: "ga4cdcln",
+                  customDimensionsMetricsMap: Je.dimensionsMetricsMap,
+                  gaTimeout: 30,
+                  promiseCallback: null
+                };
+              lr().initialize("GTM-WX5T79", r, Je.tmTriggers, Je.tmVariables, n(e, t))
+            }(n, e)
+          }, [n, e])
         };
 
-      function ur(e, t) {
-        (null == t || t > e.length) && (t = e.length);
-        for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
-        return r
-      }
-      var fr = function(e) {
-        var t, n, r = (0, i.useLocation)(),
-          o = (t = (0, a.useState)(""), n = 2, function(e) {
-            if (Array.isArray(e)) return e
-          }(t) || function(e, t) {
-            var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-            if (null != n) {
-              var r, a, i = [],
-                o = !0,
-                s = !1;
-              try {
-                for (n = n.call(e); !(o = (r = n.next()).done) && (i.push(r.value), !t || i.length !== t); o = !0);
-              } catch (e) {
-                s = !0, a = e
-              } finally {
-                try {
-                  o || null == n.return || n.return()
-                } finally {
-                  if (s) throw a
-                }
-              }
-              return i
-            }
-          }(t, n) || function(e, t) {
-            if (e) {
-              if ("string" == typeof e) return ur(e, t);
-              var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ur(e, t) : void 0
-            }
-          }(t, n) || function() {
-            throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-          }()),
-          s = o[0],
-          c = o[1],
-          l = rr({
-            route: Be.GetGoogleTagManagerSetupData,
-            fetchOnInitial: !1
-          }),
-          d = l.data,
-          u = l.fetch;
-        (0, a.useEffect)(function() {
-          ! function() {
-            var e = !1,
-              t = function() {
-                (0, ir.canStoreCookie)("_ga") && (u({}), e = !0)
-              };
-            if (t(), !e) var n = setInterval(function() {
-              window.OneTrust && (window.OneTrust.OnConsentChanged(function() {
-                t()
-              }), clearInterval(n))
-            }, 100)
-          }()
-        }, []), (0, a.useEffect)(function() {
-          var t;
-          d && e && function(e, t) {
-            var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : dr,
-              r = {
-                isEnabled: !0,
-                isEnabledEc: !0,
-                isUserIdEnabled: !0,
-                userIdKey: "memberId",
-                isEnabledCd: !0,
-                cdDataKey: "cdData",
-                lifeTimeCookie: "ga4cdlftm",
-                clearDataCookie: "ga4cdcln",
-                customDimensionsMetricsMap: Ke.dimensionsMetricsMap,
-                gaTimeout: 30,
-                promiseCallback: null
-              };
-            sr().initialize("GTM-WX5T79", r, Ke.tmTriggers, Ke.tmVariables, n(e, t))
-          }(d, e), r.pathname !== s && (c(r.pathname), t = (t = r.pathname).replace(/\/$/, ""), sr().trackPage(t))
-        }, [d, r.pathname, e, s])
-      };
-
-      function _r(e, t, n) {
+      function pr(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -4986,20 +4807,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function pr(e) {
+      function mr(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            _r(e, t, n[t])
+            pr(e, t, n[t])
           })
         }
         return e
       }
 
-      function mr(e, t) {
+      function hr(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -5012,7 +4833,7 @@ try {
         }), e
       }
 
-      function hr(e, t) {
+      function gr(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -5027,10 +4848,10 @@ try {
         }
         return a
       }
-      var gr = function(e) {
+      var br = function(e) {
           var t = e.children,
             n = e.testId,
-            i = hr(e, ["children", "testId"]),
+            i = gr(e, ["children", "testId"]),
             o = (0, a.useRef)(null),
             s = (0, R.v6)({
               "data-testid": n,
@@ -5054,17 +4875,17 @@ try {
                 }
               })
             }
-          }, []), (0, r.jsx)("div", mr(pr({
+          }, []), (0, r.jsx)("div", hr(mr({
             ref: o
           }, s), {
             children: t
           }))
         },
-        br = function(e) {
+        yr = function(e) {
           var t = e.active,
             n = e.children,
             i = e.testId,
-            o = hr(e, ["active", "children", "testId"]),
+            o = gr(e, ["active", "children", "testId"]),
             s = (0, a.useRef)(null),
             c = (0, R.v6)({
               "data-testid": i,
@@ -5076,14 +4897,14 @@ try {
               block: "nearest",
               inline: "start"
             })
-          }, [t]), (0, r.jsx)("div", mr(pr({
+          }, [t]), (0, r.jsx)("div", hr(mr({
             ref: s
           }, c), {
             children: n
           }))
         };
 
-      function yr(e, t, n) {
+      function vr(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -5091,7 +4912,7 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var vr = (0, a.forwardRef)(function(e, t) {
+      var wr = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
             i = function(e, t) {
@@ -5131,7 +4952,7 @@ try {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                yr(e, t, n[t])
+                vr(e, t, n[t])
               })
             }
             return e
@@ -5141,9 +4962,9 @@ try {
             children: n
           }))
         }),
-        wr = "_1bwmedc4",
-        jr = "_1bwmedch",
-        xr = (0, G.c)({
+        jr = "_1bwmedc4",
+        xr = "_1bwmedch",
+        Mr = (0, q.c)({
           defaultClassName: "_1bwmedc0",
           variantClassNames: {
             alignments: {
@@ -5154,7 +4975,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }),
-        Mr = (0, G.c)({
+        kr = (0, q.c)({
           defaultClassName: "_1bwmedc7",
           variantClassNames: {
             interactable: {
@@ -5164,9 +4985,9 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }),
-        kr = "_1bwmedc5";
+        Or = "_1bwmedc5";
 
-      function Or(e, t, n) {
+      function Sr(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -5175,20 +4996,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Sr(e) {
+      function Ar(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Or(e, t, n[t])
+            Sr(e, t, n[t])
           })
         }
         return e
       }
 
-      function Ar(e, t) {
+      function Ir(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -5201,7 +5022,7 @@ try {
         }), e
       }
 
-      function Ir(e, t) {
+      function Pr(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -5216,90 +5037,120 @@ try {
         }
         return a
       }
-      var Pr = (0, a.forwardRef)(function(e, t) {
+      var Cr = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Ir(e, ["className", "children", "testId"]),
+            o = Pr(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
-              className: (0, z.A)(Mr({
+              className: (0, z.A)(kr({
                 interactable: !0
               }), n)
             }, o);
-          return (0, r.jsx)(E.Button, Ar(Sr({
+          return (0, r.jsx)(E.Button, Ir(Ar({
             ref: t
           }, s), {
             children: a
           }))
         }),
-        Cr = (0, a.forwardRef)(function(e, t) {
+        Dr = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Ir(e, ["className", "children", "testId"]),
+            o = Pr(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
-              className: (0, z.A)(jr, n)
+              className: (0, z.A)(xr, n)
             }, o);
-          return (0, r.jsx)("button", Ar(Sr({
+          return (0, r.jsx)("button", Ir(Ar({
             ref: t
           }, s), {
             children: a
           }))
+        }),
+        Tr = (0, q.c)({
+          defaultClassName: "_1p8rtf81",
+          variantClassNames: {
+            loading: {
+              true: "_1p8rtf82"
+            }
+          },
+          defaultVariants: {},
+          compoundVariants: []
         });
+      const Lr = (0, fe.YK)({
+        loading_spinner_label: {
+          defaultMessage: "Loading spinner",
+          description: "Label describing the avatar loading spinner",
+          id: "avatar_spinner_label"
+        }
+      });
 
-      function Dr(e, t) {
+      function Nr(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var Tr = (0, a.createContext)(null),
-        Nr = function() {
-          var e = (0, a.useContext)(Tr);
+
+      function Er(e, t) {
+        return function(e) {
+          if (Array.isArray(e)) return e
+        }(e) || function(e, t) {
+          var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
+          if (null != n) {
+            var r, a, i = [],
+              o = !0,
+              s = !1;
+            try {
+              for (n = n.call(e); !(o = (r = n.next()).done) && (i.push(r.value), !t || i.length !== t); o = !0);
+            } catch (e) {
+              s = !0, a = e
+            } finally {
+              try {
+                o || null == n.return || n.return()
+              } finally {
+                if (s) throw a
+              }
+            }
+            return i
+          }
+        }(e, t) || function(e, t) {
+          if (e) {
+            if ("string" == typeof e) return Nr(e, t);
+            var n = Object.prototype.toString.call(e).slice(8, -1);
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Nr(e, t) : void 0
+          }
+        }(e, t) || function() {
+          throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+        }()
+      }
+      var Rr = (0, a.createContext)(null),
+        qr = function() {
+          var e = (0, a.useContext)(Rr);
           if (!e) throw new Error("Not used in WizardContext");
           return e
         },
-        Lr = function(e) {
-          var t, n, i = e.children,
-            o = e.onCancel,
-            s = e.onFinish,
-            c = (t = (0, a.useState)(0), n = 2, function(e) {
-              if (Array.isArray(e)) return e
-            }(t) || function(e, t) {
-              var n = null == e ? null : "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
-              if (null != n) {
-                var r, a, i = [],
-                  o = !0,
-                  s = !1;
-                try {
-                  for (n = n.call(e); !(o = (r = n.next()).done) && (i.push(r.value), !t || i.length !== t); o = !0);
-                } catch (e) {
-                  s = !0, a = e
-                } finally {
-                  try {
-                    o || null == n.return || n.return()
-                  } finally {
-                    if (s) throw a
-                  }
-                }
-                return i
-              }
-            }(t, n) || function(e, t) {
-              if (e) {
-                if ("string" == typeof e) return Dr(e, t);
-                var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Dr(e, t) : void 0
-              }
-            }(t, n) || function() {
-              throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
-            }()),
+        Gr = function(e) {
+          var t = e.children,
+            n = e.onCancel,
+            i = e.onFinish,
+            o = e.loading,
+            s = e.testId,
+            c = Er((0, a.useState)(0), 2),
             l = c[0],
-            d = c[1];
-          return (0, r.jsx)(Tr.Provider, {
+            d = c[1],
+            u = Er((0, a.useState)("auto"), 2),
+            _ = u[0],
+            f = u[1],
+            p = (0, a.useRef)(null),
+            m = (0, N.A)();
+          return (0, a.useEffect)(function() {
+            (null == p ? void 0 : p.current) && !o && (0 !== l ? p.current.style.height = "".concat(_, "px") : f(p.current.offsetHeight.toString()))
+          }, [l, o]), (0, r.jsx)(Rr.Provider, {
             value: {
-              onCancel: o,
-              onFinish: s,
+              onCancel: n,
+              onFinish: i,
               nextStep: function() {
                 return d(l + 1)
               },
@@ -5307,18 +5158,35 @@ try {
                 return d(l - 1)
               },
               finalStep: function() {
-                return d(i.length - 1)
+                return d(t.length - 1)
               }
             },
-            children: i[l]
+            children: (0, r.jsx)(E.Dialog.Content, {
+              testId: s,
+              ref: p,
+              "aria-describedby": void 0,
+              className: Tr({
+                loading: o
+              }),
+              children: o ? (0, r.jsx)(E.Dialog.Layout, {
+                className: "_1p8rtf80",
+                children: (0, r.jsx)(E.Spinner, {
+                  size: "inlineLG",
+                  label: m.formatMessage(Lr.loading_spinner_label),
+                  testId: "avatar-loading-spinner"
+                })
+              }) : (0, r.jsx)(r.Fragment, {
+                children: t[l]
+              })
+            })
           })
         },
-        Er = "_1ivls7k0",
-        Rr = (0, a.createContext)(null);
-      const Gr = function() {
-          return (0, a.useContext)(Rr)
+        Ur = "_1ivls7k0",
+        Vr = (0, a.createContext)(null);
+      const Fr = function() {
+          return (0, a.useContext)(Vr)
         },
-        Ur = (0, _e.YK)({
+        zr = (0, fe.YK)({
           avatar_groups_button_label: {
             defaultMessage: "View all",
             description: "The button text to view all avatars in a group",
@@ -5358,11 +5226,6 @@ try {
             defaultMessage: "Edit Avatar pencil icon",
             description: "Label describing the edit avatar button icon",
             id: "avatar_edit_button_icon_label"
-          },
-          avatar_spinner_label: {
-            defaultMessage: "Avatar loading spinner",
-            description: "Label describing the avatar loading spinner",
-            id: "avatar_spinner_label"
           },
           avatar_Category_Beaterator: {
             defaultMessage: "Beaterator",
@@ -5545,16 +5408,16 @@ try {
             id: "avatar_Category_RDO"
           }
         });
-      var Vr = function(e, t, n, r, a) {
+      var Br = function(e, t, n, r, a) {
           r(t), a(n), e()
         },
-        qr = function(e) {
+        Hr = function(e) {
           var t, n = e.avatarGroup,
             a = e.testId,
-            i = (0, L.A)(),
-            o = Nr(),
-            s = i.formatMessage(Ur.avatar_groups_button_label),
-            c = Gr(),
+            i = (0, N.A)(),
+            o = qr(),
+            s = i.formatMessage(zr.avatar_groups_button_label),
+            c = Fr(),
             l = c.setSelectedAvatarGroup,
             d = c.setSelectedAvatar;
           return (0, r.jsxs)("div", {
@@ -5573,31 +5436,31 @@ try {
                 appearance: "bold",
                 className: "_1bwmedcc",
                 children: n.name
-              }), (0, r.jsx)(et.ChevronRight, {
+              }), (0, r.jsx)(nt.ChevronRight, {
                 size: "MD",
                 label: s
               })]
             }), (0, r.jsx)("div", {
               className: "_1bwmedce",
               children: null == n || null === (t = n.avatars) || void 0 === t ? void 0 : t.slice(0, 6).map(function(e) {
-                return (0, r.jsx)(Pr, {
+                return (0, r.jsx)(Cr, {
                   size: "LG",
                   appearance: "ghost",
                   testId: "select-avatar-clickable-icon",
                   onClick: function() {
-                    return Vr(o.finalStep, e, n, d, l)
+                    return Br(o.finalStep, e, n, d, l)
                   },
                   children: (0, r.jsx)("img", {
                     src: e.url,
                     alt: e.name,
-                    className: kr
+                    className: Or
                   })
                 }, e.id)
               })
             })]
           })
         };
-      const Fr = (0, _e.YK)({
+      const Yr = (0, fe.YK)({
         modal_close_modal_button_label: {
           defaultMessage: "Close modal",
           description: "Label to describe the close modal button",
@@ -5610,32 +5473,32 @@ try {
         }
       });
 
-      function zr(e, t) {
+      function Wr(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var Br = ["GTAV", "GTAO", "RDR2", "RDR", "RDO", "UndeadNightmare", "LAN", "Bully"],
-        Hr = function(e) {
+      var Xr = ["GTAV", "GTAO", "RDR2", "RDR", "RDO", "UndeadNightmare", "LAN", "Bully"],
+        Zr = function(e) {
           var t = e.avatarGroups,
-            n = (0, L.A)(),
-            i = Nr(),
-            o = n.formatMessage(Ur.avatar_group_heading),
+            n = (0, N.A)(),
+            i = qr(),
+            o = n.formatMessage(zr.avatar_group_heading),
             s = function(e, t) {
-              var n = Br.indexOf(e.game),
-                r = Br.indexOf(t.game);
+              var n = Xr.indexOf(e.game),
+                r = Xr.indexOf(t.game);
               return n > -1 && r > -1 ? n - r : -1 === n && -1 === r ? 0 : r > -1 ? 1 : -1
             },
             c = (0, a.useMemo)(function() {
               return t ? (e = t, function(e) {
-                if (Array.isArray(e)) return zr(e)
+                if (Array.isArray(e)) return Wr(e)
               }(e) || function(e) {
                 if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
               }(e) || function(e, t) {
                 if (e) {
-                  if ("string" == typeof e) return zr(e, t);
+                  if ("string" == typeof e) return Wr(e, t);
                   var n = Object.prototype.toString.call(e).slice(8, -1);
-                  return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? zr(e, t) : void 0
+                  return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Wr(e, t) : void 0
                 }
               }(e) || function() {
                 throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -5645,20 +5508,21 @@ try {
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(E.Dialog.Header, {
               children: [(0, r.jsx)(E.Dialog.CloseButton, {
-                label: n.formatMessage(Fr.modal_close_modal_button_label),
+                label: n.formatMessage(Yr.modal_close_modal_button_label),
                 onPress: function() {
                   return i.onCancel && i.onCancel()
                 },
                 testId: "select-avatar-close-modal-button"
               }), (0, r.jsx)(E.Dialog.HeaderTitle, {
                 testId: "avatar-groups-header-title",
-                className: wr,
+                className: jr,
                 children: o
               })]
             }), (0, r.jsx)(E.Dialog.ScrollArea, {
+              type: "auto",
               children: (0, r.jsx)(E.Dialog.Layout, {
                 children: c.map(function(e) {
-                  return (0, r.jsx)(qr, {
+                  return (0, r.jsx)(Hr, {
                     avatarGroup: e,
                     testId: "avatar-group-row"
                   }, e.id)
@@ -5667,28 +5531,28 @@ try {
             })]
           })
         },
-        Yr = function() {
-          var e = Gr(),
+        Kr = function() {
+          var e = Fr(),
             t = e.selectedAvatarGroup,
             n = e.setSelectedAvatar,
             a = e.setSelectedAvatarGroup,
-            i = Nr(),
-            o = (0, L.A)();
+            i = qr(),
+            o = (0, N.A)();
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(E.Dialog.Header, {
               children: [(0, r.jsx)(E.Dialog.HeaderButton, {
                 icon: "ArrowLeft",
                 testId: "select-avatar-previous-page",
-                label: o.formatMessage(Fr.modal_previous_page_button_label),
+                label: o.formatMessage(Yr.modal_previous_page_button_label),
                 onPress: function() {
                   return i.previousStep && i.previousStep()
                 }
               }), (0, r.jsx)(E.Dialog.HeaderTitle, {
                 testId: "avatar-fullpage-title",
-                className: wr,
+                className: jr,
                 children: null == t ? void 0 : t.name
               }), (0, r.jsx)(E.Dialog.CloseButton, {
-                label: o.formatMessage(Fr.modal_close_modal_button_label),
+                label: o.formatMessage(Yr.modal_close_modal_button_label),
                 onPress: function() {
                   return i.onCancel && i.onCancel()
                 },
@@ -5696,21 +5560,22 @@ try {
               })]
             }), (0, r.jsx)(E.Dialog.ScrollArea, {
               testId: "avatar-modal-test-body",
+              type: "auto",
               children: (0, r.jsx)(E.Dialog.Layout, {
                 children: (0, r.jsx)("div", {
                   className: "_1bwmedcg",
                   children: null == t ? void 0 : t.avatars.map(function(e) {
-                    return (0, r.jsx)(Pr, {
+                    return (0, r.jsx)(Cr, {
                       size: "LG",
                       appearance: "ghost",
                       testId: "select-avatar-full-group-icon",
                       onClick: function() {
-                        return Vr(i.finalStep, e, t, n, a)
+                        return Br(i.finalStep, e, t, n, a)
                       },
                       children: (0, r.jsx)("img", {
                         src: e.url,
                         alt: e.name,
-                        className: kr
+                        className: Or
                       })
                     }, e.id)
                   })
@@ -5720,7 +5585,7 @@ try {
           })
         };
 
-      function Xr(e, t, n) {
+      function $r(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -5728,7 +5593,7 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var Zr = (0, a.forwardRef)(function(e, t) {
+      var Jr = (0, a.forwardRef)(function(e, t) {
           var n = e.testId,
             a = e.userImageSrc,
             i = e.label,
@@ -5760,7 +5625,7 @@ try {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                Xr(e, t, n[t])
+                $r(e, t, n[t])
               })
             }
             return e
@@ -5768,12 +5633,12 @@ try {
             ref: t
           }, s))
         }),
-        Wr = function() {
-          var e = (0, L.A)(),
-            t = Nr(),
-            n = e.formatMessage(Ur.update_avatar_header_label),
-            a = e.formatMessage(Ur.update_avatar_button_label),
-            i = Gr(),
+        Qr = function() {
+          var e = (0, N.A)(),
+            t = qr(),
+            n = e.formatMessage(zr.update_avatar_header_label),
+            a = e.formatMessage(zr.update_avatar_button_label),
+            i = Fr(),
             o = i.selectedAvatar,
             s = i.selectedAvatarGroup,
             c = i.setSelectedAvatarGroup,
@@ -5781,7 +5646,7 @@ try {
           return o && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(E.Dialog.Header, {
               children: [(0, r.jsx)(E.Dialog.HeaderButton, {
-                label: e.formatMessage(Fr.modal_previous_page_button_label),
+                label: e.formatMessage(Yr.modal_previous_page_button_label),
                 icon: "ArrowLeft",
                 onPress: function() {
                   c(s), t.previousStep()
@@ -5791,20 +5656,20 @@ try {
                 testId: "select-avatar-update-header",
                 children: n
               }), (0, r.jsx)(E.Dialog.CloseButton, {
-                label: e.formatMessage(Fr.modal_close_modal_button_label),
+                label: e.formatMessage(Yr.modal_close_modal_button_label),
                 onPress: function() {
                   return t.onCancel && t.onCancel()
                 },
                 testId: "select-avatar-close-modal-button"
               })]
             }), (0, r.jsx)(E.Dialog.Layout, {
-              className: (0, z.A)(xr({
+              className: (0, z.A)(Mr({
                 alignments: "center"
               })),
               children: (0, r.jsxs)(E.Dialog.ActionArea, {
                 testId: "update-avatar-modal-body",
                 className: "_1bwmedc3",
-                children: [(0, r.jsx)(Zr, {
+                children: [(0, r.jsx)(Jr, {
                   userImageSrc: o.url,
                   label: o.name,
                   testId: "select-avatar-update-avatar-icon"
@@ -5823,13 +5688,13 @@ try {
           })
         };
 
-      function Kr(e, t) {
+      function ea(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function $r(e, t, n, r, a, i, o) {
+      function ta(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -5839,7 +5704,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Jr(e) {
+      function na(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -5847,18 +5712,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              $r(i, r, a, o, s, "next", e)
+              ta(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              $r(i, r, a, o, s, "throw", e)
+              ta(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function Qr(e, t, n) {
+      function ra(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -5867,7 +5732,7 @@ try {
         }) : e[t] = n, e
       }
 
-      function ea(e, t) {
+      function aa(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -5891,16 +5756,16 @@ try {
           }
         }(e, t) || function(e, t) {
           if (e) {
-            if ("string" == typeof e) return Kr(e, t);
+            if ("string" == typeof e) return ea(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
-            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Kr(e, t) : void 0
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ea(e, t) : void 0
           }
         }(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
 
-      function ta(e, t) {
+      function ia(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -5972,40 +5837,40 @@ try {
           }
         }
       }
-      const na = function(e) {
+      const oa = function(e) {
         var t = e.initialAvatarUrl,
           n = e.nickName,
-          i = (0, L.A)(),
-          o = Ee(),
-          s = ea((0, a.useState)(t), 2),
+          i = (0, N.A)(),
+          o = qe(),
+          s = aa((0, a.useState)(t), 2),
           c = s[0],
           l = s[1],
-          d = ea((0, a.useState)(void 0), 2),
+          d = aa((0, a.useState)(void 0), 2),
           u = d[0],
-          f = d[1],
-          _ = ea((0, a.useState)(void 0), 2),
-          p = _[0],
-          m = _[1],
-          h = ea((0, a.useState)(void 0), 2),
+          _ = d[1],
+          f = aa((0, a.useState)(void 0), 2),
+          p = f[0],
+          m = f[1],
+          h = aa((0, a.useState)(void 0), 2),
           g = h[0],
           b = h[1],
-          y = rr({
-            route: Be.GetAvatars,
+          y = ir({
+            route: Ye.GetAvatars,
             fetchOnInitial: !1
           }),
           v = y.fetch,
           w = y.loading,
-          j = rr({
-            route: Be.UpdateAvatars,
+          j = ir({
+            route: Ye.UpdateAvatars,
             fetchOnInitial: !1
           }).fetch,
           x = (0, a.useCallback)(function() {
             M()
           }, [u]),
           M = function() {
-            return Jr(function() {
+            return na(function() {
               var e, t, n;
-              return ta(this, function(r) {
+              return ia(this, function(r) {
                 switch (r.label) {
                   case 0:
                     return u ? [2] : [4, v({})];
@@ -6020,7 +5885,7 @@ try {
                         });
                         if (-1 === r) {
                           var a = "avatar_Category_".concat(e.game),
-                            o = Ur[a] ? i.formatMessage(Ur[a]) : e.name;
+                            o = zr[a] ? i.formatMessage(zr[a]) : e.name;
                           n.push(function(e, t) {
                             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                               var t = Object.keys(e);
@@ -6039,7 +5904,7 @@ try {
                               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                                 return Object.getOwnPropertyDescriptor(n, e).enumerable
                               }))), r.forEach(function(t) {
-                                Qr(e, t, n[t])
+                                ra(e, t, n[t])
                               })
                             }
                             return e
@@ -6056,21 +5921,21 @@ try {
                           })
                         }
                       }
-                    }), f(n), [2]
+                    }), _(n), [2]
                 }
               })
             })()
           };
-        return (0, r.jsx)(Rr.Provider, {
+        return (0, r.jsx)(Vr.Provider, {
           value: {
             selectedAvatar: p,
             selectedAvatarGroup: g,
             setSelectedAvatar: m,
             setSelectedAvatarGroup: b,
             updateAvatarIcon: function(e, t) {
-              return Jr(function() {
+              return na(function() {
                 var n;
-                return ta(this, function(r) {
+                return ia(this, function(r) {
                   switch (r.label) {
                     case 0:
                       return e ? [4, j({
@@ -6081,7 +5946,7 @@ try {
                     case 1:
                       (null == (n = r.sent()) ? void 0 : n.error) || (l(t), o.displayNewToast({
                         appearance: "success",
-                        message: i.formatMessage(Ur.update_avatar_toast_message)
+                        message: i.formatMessage(zr.update_avatar_toast_message)
                       })), r.label = 2;
                     case 2:
                       return [2]
@@ -6093,11 +5958,11 @@ try {
           children: (0, r.jsxs)(E.Dialog.Root, {
             children: [(0, r.jsx)(E.Dialog.Trigger, {
               asChild: !0,
-              children: (0, r.jsxs)(Cr, {
+              children: (0, r.jsxs)(Dr, {
                 testId: "hero-avatar",
                 onClick: x,
-                className: jr,
-                "aria-label": i.formatMessage(Ur.avatar_edit_button_label),
+                className: xr,
+                "aria-label": i.formatMessage(zr.avatar_edit_button_label),
                 children: [(0, r.jsx)("img", {
                   src: c,
                   alt: n,
@@ -6107,8 +5972,8 @@ try {
                   className: "_1bwmedci",
                   "data-testid": "edit-avatar-btn",
                   tabIndex: -1,
-                  children: (0, r.jsx)(et.Pencil, {
-                    label: i.formatMessage(Ur.avatar_edit_button_icon_label),
+                  children: (0, r.jsx)(nt.Pencil, {
+                    label: i.formatMessage(zr.avatar_edit_button_icon_label),
                     size: "SM",
                     className: "_1bwmedcj"
                   })
@@ -6116,35 +5981,22 @@ try {
               })
             }), (0, r.jsxs)(E.Dialog.Overlay, {
               testId: "selectAvatarModalOverlay",
-              className: Er,
-              children: [(0, r.jsx)(E.Dialog.HeaderTitle, {}), (0, r.jsx)(E.Dialog.Content, {
+              className: Ur,
+              children: [(0, r.jsx)(E.Dialog.HeaderTitle, {}), (0, r.jsxs)(Gr, {
+                loading: w,
                 testId: "selectAvatarModal",
-                "aria-describedby": void 0,
-                children: w ? (0, r.jsx)(E.Dialog.ScrollArea, {
-                  children: (0, r.jsx)(E.Dialog.Layout, {
-                    className: xr({
-                      alignments: "center"
-                    }),
-                    children: (0, r.jsx)(E.Spinner, {
-                      size: "inlineLG",
-                      label: i.formatMessage(Ur.avatar_spinner_label),
-                      testId: "avatar-loading-spinner"
-                    })
-                  })
-                }) : (0, r.jsxs)(Lr, {
-                  children: [(0, r.jsx)(Hr, {
-                    avatarGroups: u
-                  }), (0, r.jsx)(Yr, {}), (0, r.jsx)(Wr, {})]
-                })
+                children: [(0, r.jsx)(Zr, {
+                  avatarGroups: u
+                }), (0, r.jsx)(Kr, {}), (0, r.jsx)(Qr, {})]
               })]
             })]
           })
         })
       };
-      var ra = "_1g6tovv3";
-      const aa = n.p + "3c8ce9c65cc1acff9a84ff94583ab4c6.jpg";
+      var sa = "_1g6tovv3";
+      const ca = n.p + "3c8ce9c65cc1acff9a84ff94583ab4c6.jpg";
 
-      function ia(e, t, n) {
+      function la(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -6153,20 +6005,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function oa(e) {
+      function da(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            ia(e, t, n[t])
+            la(e, t, n[t])
           })
         }
         return e
       }
 
-      function sa(e, t) {
+      function ua(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -6179,7 +6031,7 @@ try {
         }), e
       }
 
-      function ca(e, t) {
+      function _a(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -6194,76 +6046,76 @@ try {
         }
         return a
       }
-      var la = (0, a.forwardRef)(function(e, t) {
+      var fa = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
-            i = ca(e, ["children", "testId"]),
+            i = _a(e, ["children", "testId"]),
             o = (0, R.v6)({
               "data-testid": a,
               className: "_1g6tovv1",
-              style: (0, xt.DI)(ia({}, "var(--_1g6tovv0)", "url(".concat(aa, ")")))
+              style: (0, kt.DI)(la({}, "var(--_1g6tovv0)", "url(".concat(ca, ")")))
             }, i);
-          return (0, r.jsx)("header", sa(oa({
+          return (0, r.jsx)("header", ua(da({
             ref: t
           }, o), {
             children: n
           }))
         }),
-        da = (0, a.forwardRef)(function(e, t) {
+        pa = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
             a = e.testId,
-            i = ca(e, ["children", "testId"]),
+            i = _a(e, ["children", "testId"]),
             o = (0, R.v6)({
               "data-testid": a,
               className: "_1g6tovv2"
             }, i);
-          return (0, r.jsx)("div", sa(oa({
+          return (0, r.jsx)("div", ua(da({
             ref: t
           }, o), {
             children: n
           }))
         }),
-        ua = (0, a.forwardRef)(function(e, t) {
+        ma = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
-            a = ca(e, ["children"]),
+            a = _a(e, ["children"]),
             i = (0, R.v6)({
-              className: ra
+              className: sa
             }, a);
-          return (0, r.jsx)(E.Heading, sa(oa({
+          return (0, r.jsx)(E.Heading, ua(da({
             ref: t,
             level: 5
           }, i), {
             children: n
           }))
         }),
-        fa = (0, a.forwardRef)(function(e, t) {
+        ha = (0, a.forwardRef)(function(e, t) {
           var n = e.children,
-            a = ca(e, ["children"]),
+            a = _a(e, ["children"]),
             i = (0, R.v6)({
-              className: ra
+              className: sa
             }, a);
-          return (0, r.jsx)(E.Body, sa(oa({
+          return (0, r.jsx)(E.Body, ua(da({
             ref: t,
             size: "SM"
           }, i), {
             children: n
           }))
         });
-      const _a = function(e) {
+      const ga = function(e) {
           var t = e.account,
-            n = (0, L.A)();
-          return t && (0, r.jsx)(W, {
+            n = (0, N.A)();
+          return t && (0, r.jsx)(Z, {
             children: (0, r.jsx)(K, {
-              children: (0, r.jsxs)(la, {
-                children: [t.avatarUrl && (0, r.jsx)(na, {
+              children: (0, r.jsxs)(fa, {
+                children: [t.avatarUrl && (0, r.jsx)(oa, {
                   nickName: t.nickName,
                   initialAvatarUrl: t.avatarUrl
-                }), (0, r.jsxs)(da, {
+                }), (0, r.jsxs)(pa, {
                   "data-testid": "hero-avatar-nickname",
-                  children: [(0, r.jsx)(ua, {
+                  children: [(0, r.jsx)(ma, {
                     children: t.nickName
-                  }), (0, r.jsx)(fa, {
-                    children: "".concat(n.formatMessage(_n.overview_created_prefix), " ").concat(In({
+                  }), (0, r.jsx)(ha, {
+                    children: "".concat(n.formatMessage(mn.overview_created_prefix), " ").concat(Cn({
                       dateString: t.createdDate,
                       locale: n.locale
                     }))
@@ -6273,7 +6125,7 @@ try {
             })
           })
         },
-        pa = (0, _e.YK)({
+        ba = (0, fe.YK)({
           info_tooltip_label: {
             defaultMessage: "Information icon displaying additional text",
             description: "The data usage tooltip icon description",
@@ -6281,16 +6133,16 @@ try {
           }
         });
 
-      function ma(e, t) {
+      function ya(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var ha = function(e) {
+      var va = function(e) {
         var t, n, i = e.testIdPrefix,
           o = e.message,
           s = e.side,
-          c = (0, L.A)(),
+          c = (0, N.A)(),
           l = (t = (0, a.useState)(!1), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
@@ -6314,9 +6166,9 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return ma(e, t);
+              if ("string" == typeof e) return ya(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ma(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ya(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -6341,7 +6193,7 @@ try {
               appearance: "ghost",
               icon: "CircleHelp",
               size: "MD",
-              label: c.formatMessage(pa.info_tooltip_label)
+              label: c.formatMessage(ba.info_tooltip_label)
             })
           }), (0, r.jsx)(E.Tooltip.Portal, {
             children: (0, r.jsx)(E.Tooltip.Content, {
@@ -6353,7 +6205,7 @@ try {
         })
       };
 
-      function ga(e, t, n) {
+      function wa(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -6362,19 +6214,19 @@ try {
         }) : e[t] = n, e
       }
 
-      function ba(e) {
+      function ja(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            ga(e, t, n[t])
+            wa(e, t, n[t])
           })
         }
         return e
       }
-      var ya = function(e) {
+      var xa = function(e) {
         var t = e.to,
           n = e.subLabel,
           a = e.label,
@@ -6386,7 +6238,7 @@ try {
           u = function() {
             d(t)
           },
-          f = s + a;
+          _ = s + a;
         return (0, r.jsx)(te, {
           "aria-labelledby": "".concat(n, "-row ").concat(a),
           "data-ga": c,
@@ -6410,7 +6262,7 @@ try {
             }), (0, r.jsx)(E.IconButton, {
               appearance: "ghost",
               icon: "ChevronRight",
-              label: f,
+              label: _,
               onClick: u,
               size: "LG",
               testId: "".concat(l, "-button")
@@ -6418,34 +6270,34 @@ try {
           })
         })
       };
-      const va = function(e) {
+      const Ma = function(e) {
         var t = e.nickname,
           n = e.email,
           i = e.dob,
-          o = (0, L.A)(),
+          o = (0, N.A)(),
           s = [{
             to: "details/email",
-            subLabel: o.formatMessage(_n.overview_email_sub_label),
+            subLabel: o.formatMessage(mn.overview_email_sub_label),
             label: n,
-            ariaLabel: o.formatMessage(_n.overview_profile_details_change_email_link_description),
-            buttonLabel: o.formatMessage(_n.overview_email_button_label),
-            gaAction: Ke.action.edit_email,
+            ariaLabel: o.formatMessage(mn.overview_profile_details_change_email_link_description),
+            buttonLabel: o.formatMessage(mn.overview_email_button_label),
+            gaAction: Je.action.edit_email,
             testId: "changeEmailRow"
           }, {
             to: "details/password",
-            subLabel: o.formatMessage(_n.overview_password_sub_label),
+            subLabel: o.formatMessage(mn.overview_password_sub_label),
             label: "**********",
-            ariaLabel: o.formatMessage(_n.overview_profile_details_change_password_link_description),
-            buttonLabel: o.formatMessage(_n.overview_password_button_label),
-            gaAction: Ke.action.edit_password,
+            ariaLabel: o.formatMessage(mn.overview_profile_details_change_password_link_description),
+            buttonLabel: o.formatMessage(mn.overview_password_button_label),
+            gaAction: Je.action.edit_password,
             testId: "changePasswordRow"
           }, {
             to: "details/nickname",
-            subLabel: o.formatMessage(_n.overview_nickname_sub_label),
+            subLabel: o.formatMessage(mn.overview_nickname_sub_label),
             label: t,
-            ariaLabel: o.formatMessage(_n.overview_profile_details_change_nickname_link_description),
-            buttonLabel: o.formatMessage(_n.overview_nickname_button_label),
-            gaAction: Ke.action.edit_nickname,
+            ariaLabel: o.formatMessage(mn.overview_profile_details_change_nickname_link_description),
+            buttonLabel: o.formatMessage(mn.overview_nickname_button_label),
+            gaAction: Je.action.edit_nickname,
             testId: "changeNicknameRow"
           }];
         return (0, r.jsxs)(K, {
@@ -6453,15 +6305,15 @@ try {
             testId: "profile-details-section",
             children: (0, r.jsxs)(J, {
               testId: "profile-details-header",
-              children: [o.formatMessage(_n.overview_heading_profile_details), (0, r.jsx)(ha, {
+              children: [o.formatMessage(mn.overview_heading_profile_details), (0, r.jsx)(va, {
                 testIdPrefix: "profile-details",
-                message: o.formatMessage(_n.overview_data_usage)
+                message: o.formatMessage(mn.overview_data_usage)
               })]
             })
           }), (0, r.jsxs)(ee, {
             children: [s.map(function(e) {
               return (0, r.jsxs)(a.Fragment, {
-                children: [(0, r.jsx)(ya, ba({}, e)), (0, r.jsx)(ne, {
+                children: [(0, r.jsx)(xa, ja({}, e)), (0, r.jsx)(ne, {
                   thickness: "thin"
                 })]
               }, e.to)
@@ -6469,10 +6321,10 @@ try {
               children: (0, r.jsx)(ae, {
                 children: (0, r.jsxs)(ie, {
                   children: [(0, r.jsx)(se, {
-                    children: o.formatMessage(_n.overview_dateofbirth_sub_label)
+                    children: o.formatMessage(mn.overview_dateofbirth_sub_label)
                   }), i && (0, r.jsx)(oe, {
                     testId: "profile-details-dob",
-                    children: In({
+                    children: Cn({
                       dateString: i,
                       locale: o.locale
                     })
@@ -6483,18 +6335,18 @@ try {
           })]
         })
       };
-      var wa = n(1665),
-        ja = "_1md0fdx6",
-        xa = "_1md0fdx8",
-        Ma = "_1md0fdx7";
+      var ka = n(1665),
+        Oa = "_1md0fdx6",
+        Sa = "_1md0fdx8",
+        Aa = "_1md0fdx7";
 
-      function ka(e, t) {
+      function Ia(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Oa(e, t, n, r, a, i, o) {
+      function Pa(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -6504,7 +6356,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Sa(e) {
+      function Ca(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -6512,18 +6364,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              Oa(i, r, a, o, s, "next", e)
+              Pa(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              Oa(i, r, a, o, s, "throw", e)
+              Pa(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function Aa(e, t, n) {
+      function Da(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -6532,20 +6384,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Ia(e) {
+      function Ta(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Aa(e, t, n[t])
+            Da(e, t, n[t])
           })
         }
         return e
       }
 
-      function Pa(e, t) {
+      function La(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -6558,7 +6410,7 @@ try {
         }), e
       }
 
-      function Ca(e, t) {
+      function Na(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -6582,16 +6434,16 @@ try {
           }
         }(e, t) || function(e, t) {
           if (e) {
-            if ("string" == typeof e) return ka(e, t);
+            if ("string" == typeof e) return Ia(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
-            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ka(e, t) : void 0
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ia(e, t) : void 0
           }
         }(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
 
-      function Da(e, t) {
+      function Ea(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -6663,17 +6515,17 @@ try {
           }
         }
       }
-      const Ta = function() {
-        var e, t, n, i, o = (0, L.A)(),
+      const Ra = function() {
+        var e, t, n, i, o = (0, N.A)(),
           s = M(),
-          c = Ca((0, a.useState)(!1), 2),
+          c = Na((0, a.useState)(!1), 2),
           l = c[0],
           d = c[1],
-          u = Ca((0, a.useState)(!1), 2),
-          f = u[0],
-          _ = u[1],
-          p = rr({
-            route: Be.ProfileOverview,
+          u = Na((0, a.useState)(!1), 2),
+          _ = u[0],
+          f = u[1],
+          p = ir({
+            route: Ye.ProfileOverview,
             fetchOnInitial: !1
           }),
           m = p.setData,
@@ -6682,19 +6534,19 @@ try {
             return e.subdomain === n || e.subdomaincom === n
           })) || void 0 === e ? void 0 : e.subdomain) && void 0 !== t ? t : s.subdomain,
           b = null !== (i = null == h ? void 0 : h.country) && void 0 !== i ? i : s.country,
-          y = rr({
-            route: Be.GetCountries
+          y = ir({
+            route: Ye.GetCountries
           }),
           v = y.data,
           j = y.loading,
-          k = rr({
-            route: Be.UpdateCountry,
+          k = ir({
+            route: Ye.UpdateCountry,
             fetchOnInitial: !1
           }),
           O = k.fetch,
           S = k.loading,
-          A = rr({
-            route: Be.UpdateLanguage,
+          A = ir({
+            route: Ye.UpdateLanguage,
             fetchOnInitial: !1
           }),
           I = A.fetch,
@@ -6706,7 +6558,7 @@ try {
           children: [(0, r.jsx)($, {
             testId: "regional-details-section",
             children: (0, r.jsx)(J, {
-              children: o.formatMessage(_n.overview_heading_regional_details)
+              children: o.formatMessage(mn.overview_heading_regional_details)
             })
           }), (0, r.jsxs)(ee, {
             children: [(0, r.jsxs)(te, {
@@ -6719,35 +6571,35 @@ try {
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: o.formatMessage(_n.overview_country_sub_label)
+                    children: o.formatMessage(mn.overview_country_sub_label)
                   })
                 })
               }), (0, r.jsx)(de, {
-                children: j ? (0, r.jsx)(wa.y, {
+                children: j ? (0, r.jsx)(ka.y, {
                   size: "inlineLG",
-                  label: o.formatMessage(_n.overview_country_spinner_label),
+                  label: o.formatMessage(mn.overview_country_spinner_label),
                   testId: "countryLoader"
                 }) : (0, r.jsxs)(E.Dropdown.Root, {
-                  className: ja,
+                  className: Oa,
                   isOpen: l,
                   onClick: C,
                   onOpenChange: function() {
                     var e = !l,
-                      t = e ? Ke.action.edit_country : Ke.action.close_edit_country;
-                    lr(t), d(e)
+                      t = e ? Je.action.edit_country : Je.action.close_edit_country;
+                    ur(t), d(e)
                   },
                   onValueChange: function(e) {
-                    return Sa(function() {
-                      return Da(this, function(t) {
+                    return Ca(function() {
+                      return Ea(this, function(t) {
                         switch (t.label) {
                           case 0:
-                            return lr(Ke.action.select_country), [4, O({
+                            return ur(Je.action.select_country), [4, O({
                               queryOrRoute: "?country=".concat(e)
                             })];
                           case 1:
-                            return t.sent().error || (m(Pa(Ia({}, h), {
+                            return t.sent().error || (m(La(Ta({}, h), {
                               country: e
-                            })), lr(Ke.action.save_country)), [2]
+                            })), ur(Je.action.save_country)), [2]
                         }
                       })
                     })()
@@ -6755,16 +6607,16 @@ try {
                   value: b,
                   children: [(0, r.jsx)(E.Dropdown.Label, {
                     hideVisually: !0,
-                    children: o.formatMessage(_n.overview_country_sub_label)
+                    children: o.formatMessage(mn.overview_country_sub_label)
                   }), (0, r.jsxs)(E.Dropdown.Trigger, {
                     testId: "countryDropdown",
-                    className: Ma,
+                    className: Aa,
                     children: [(0, r.jsx)(E.Dropdown.TriggerText, {
                       placeholder: b
                     }), (0, r.jsx)(E.Dropdown.TriggerIcon, {})]
                   }), (0, r.jsx)(E.Dropdown.Portal, {
                     children: (0, r.jsx)(E.Dropdown.Content, {
-                      className: xa,
+                      className: Sa,
                       children: (0, r.jsx)(E.Dropdown.ScrollArea, {
                         children: null == v ? void 0 : v.map(function(e) {
                           return (0, r.jsx)(E.Dropdown.Option, {
@@ -6786,37 +6638,37 @@ try {
               isDisabled: P,
               isInteractable: !0,
               onClick: function() {
-                return _(!0)
+                return f(!0)
               },
               testId: "languageRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: o.formatMessage(_n.overview_language_sub_label)
+                    children: o.formatMessage(mn.overview_language_sub_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Dropdown.Root, {
-                  className: ja,
-                  isOpen: f,
+                  className: Oa,
+                  isOpen: _,
                   onClick: C,
                   onOpenChange: function() {
-                    var e = !f,
-                      t = e ? Ke.action.edit_language : Ke.action.close_edit_language;
-                    lr(t), _(e)
+                    var e = !_,
+                      t = e ? Je.action.edit_language : Je.action.close_edit_language;
+                    ur(t), f(e)
                   },
                   onValueChange: function(e) {
-                    return Sa(function() {
-                      return Da(this, function(t) {
+                    return Ca(function() {
+                      return Ea(this, function(t) {
                         switch (t.label) {
                           case 0:
-                            return lr(Ke.action["select_language_".concat(e)]), [4, I({
+                            return ur(Je.action["select_language_".concat(e)]), [4, I({
                               queryOrRoute: "?language=".concat(e)
                             })];
                           case 1:
-                            return t.sent().error || (m(Pa(Ia({}, h), {
+                            return t.sent().error || (m(La(Ta({}, h), {
                               language: e
-                            })), lr(Ke.action.save_language)), [2]
+                            })), ur(Je.action.save_language)), [2]
                         }
                       })
                     })()
@@ -6824,16 +6676,16 @@ try {
                   value: g,
                   children: [(0, r.jsx)(E.Dropdown.Label, {
                     hideVisually: !0,
-                    children: o.formatMessage(_n.overview_language_dropdown_label)
+                    children: o.formatMessage(mn.overview_language_dropdown_label)
                   }), (0, r.jsxs)(E.Dropdown.Trigger, {
                     testId: "languageDropdown",
-                    className: Ma,
+                    className: Aa,
                     children: [(0, r.jsx)(E.Dropdown.TriggerText, {
                       placeholder: ""
                     }), (0, r.jsx)(E.Dropdown.TriggerIcon, {})]
                   }), (0, r.jsx)(E.Dropdown.Portal, {
                     children: (0, r.jsx)(E.Dropdown.Content, {
-                      className: xa,
+                      className: Sa,
                       children: (0, r.jsx)(E.Dropdown.ScrollArea, {
                         children: x.map(function(e) {
                           var t = e.label,
@@ -6855,8 +6707,8 @@ try {
           })]
         })
       };
-      var Na = "_1arzw2p0";
-      const La = (0, _e.YK)({
+      var qa = "_1arzw2p0";
+      const Ga = (0, fe.YK)({
           profile_delete_account_button_label: {
             defaultMessage: "Delete Account",
             description: "The button text to delete an account.",
@@ -7003,47 +6855,47 @@ try {
             id: "profile_delete_notice_agree_button_label"
           }
         }),
-        Ea = function(e) {
+        Ua = function(e) {
           var t = e.deleteReason,
             n = e.setDeleteReason,
-            a = (0, L.A)(),
-            i = Nr(),
+            a = (0, N.A)(),
+            i = qr(),
             o = [{
-              label: a.formatMessage(La.profile_delete_radio_option_one),
+              label: a.formatMessage(Ga.profile_delete_radio_option_one),
               value: "product_game_dissatisfaction"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_two),
+              label: a.formatMessage(Ga.profile_delete_radio_option_two),
               value: "harassment_bad_actor"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_three),
+              label: a.formatMessage(Ga.profile_delete_radio_option_three),
               value: "compromised_hacked_account"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_four),
+              label: a.formatMessage(Ga.profile_delete_radio_option_four),
               value: "account_service_ban"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_five),
+              label: a.formatMessage(Ga.profile_delete_radio_option_five),
               value: "technical_issue"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_six),
+              label: a.formatMessage(Ga.profile_delete_radio_option_six),
               value: "privacy_information"
             }, {
-              label: a.formatMessage(La.profile_delete_radio_option_seven),
+              label: a.formatMessage(Ga.profile_delete_radio_option_seven),
               value: "something_else"
             }];
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(E.Dialog.CloseButton, {
-              label: a.formatMessage(La.profile_delete_close_button_label),
+              label: a.formatMessage(Ga.profile_delete_close_button_label),
               onPress: function() {
                 var e;
-                lr(Ke.action.close_delete_account_modal, Ke.labels.close_delete_account_modal), null === (e = i.onCancel) || void 0 === e || e.call(i)
+                ur(Je.action.close_delete_account_modal, Je.labels.close_delete_account_modal), null === (e = i.onCancel) || void 0 === e || e.call(i)
               },
               testId: "closeDeleteAccountModal"
             }), (0, r.jsx)(E.Dialog.ScrollArea, {
               children: (0, r.jsxs)(E.Dialog.Layout, {
-                className: Na,
+                className: qa,
                 children: [(0, r.jsx)(E.Dialog.Title, {
                   testId: "feedbackHeader",
-                  children: a.formatMessage(La.profile_delete_page_two_heading)
+                  children: a.formatMessage(Ga.profile_delete_page_two_heading)
                 }), (0, r.jsxs)(E.RadioGroup.Root, {
                   appearance: "primary",
                   isRequired: !0,
@@ -7054,7 +6906,7 @@ try {
                   children: [(0, r.jsx)(E.RadioGroup.Label, {
                     hideRequiredAsterisk: !0,
                     hideVisually: !0,
-                    children: a.formatMessage(La.profile_delete_radio_group_label)
+                    children: a.formatMessage(Ga.profile_delete_radio_group_label)
                   }), (0, r.jsx)(E.RadioGroup.Options, {
                     children: o.map(function(e) {
                       var t = e.value,
@@ -7073,24 +6925,24 @@ try {
                   appearance: "primary",
                   isDisabled: !t,
                   onClick: function() {
-                    lr(Ke.action.confirm_account_deletion, Ke.labels.account_deletion_reason + t), i.nextStep()
+                    ur(Je.action.confirm_account_deletion, Je.labels.account_deletion_reason + t), i.nextStep()
                   },
                   size: "LG",
                   testId: "continueButton",
-                  children: a.formatMessage(La.profile_delete_continue_button_label)
+                  children: a.formatMessage(Ga.profile_delete_continue_button_label)
                 })]
               })
             })]
           })
         };
 
-      function Ra(e, t) {
+      function Va(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Ga(e, t, n, r, a, i, o) {
+      function Fa(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -7099,10 +6951,10 @@ try {
         }
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
-      const Ua = function(e) {
+      const za = function(e) {
         var t, n, i = e.deleteReason,
           o = e.token,
-          s = Nr(),
+          s = qr(),
           c = (t = (0, a.useState)(!1), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
@@ -7126,41 +6978,42 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return Ra(e, t);
+              if ("string" == typeof e) return Va(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ra(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Va(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           l = c[0],
           d = c[1],
-          u = (0, L.A)(),
-          f = rr({
-            route: Be.DeleteAccount,
+          u = (0, N.A)(),
+          _ = ir({
+            route: Ye.DeleteAccount,
             fetchOnInitial: !1
           }),
-          _ = f.fetch,
-          p = f.loading;
+          f = _.fetch,
+          p = _.loading;
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Dialog.CloseButton, {
-            label: u.formatMessage(La.profile_delete_close_button_label),
+            label: u.formatMessage(Ga.profile_delete_close_button_label),
             onPress: function() {
               var e;
-              lr(Ke.action.close_delete_account_modal, Ke.labels.close_delete_account_modal), null === (e = s.onCancel) || void 0 === e || e.call(s)
+              ur(Je.action.close_delete_account_modal, Je.labels.close_delete_account_modal), null === (e = s.onCancel) || void 0 === e || e.call(s)
             },
             testId: "closeDeleteAccountModal"
           }), (0, r.jsx)(E.Dialog.ScrollArea, {
             className: "_1arzw2p3",
+            type: "auto",
             children: (0, r.jsxs)(E.Dialog.Layout, {
-              className: Na,
+              className: qa,
               tabIndex: 0,
               children: [(0, r.jsx)(E.Dialog.Title, {
                 testId: "noticeHeader",
-                children: u.formatMessage(La.profile_delete_page_three_heading)
+                children: u.formatMessage(Ga.profile_delete_page_three_heading)
               }), (0, r.jsx)(E.Body, {
                 size: "MD",
-                children: u.formatMessage(La.profile_delete_notice_copy_one)
+                children: u.formatMessage(Ga.profile_delete_notice_copy_one)
               }), (0, r.jsx)(E.Alert.Root, {
                 className: "_1arzw2p1",
                 status: "information",
@@ -7169,7 +7022,7 @@ try {
                   children: [(0, r.jsx)(E.Alert.Icon, {
                     size: "LG"
                   }), (0, r.jsx)(E.Alert.Description, {
-                    children: u.formatMessage(La.profile_delete_notice_alert_description)
+                    children: u.formatMessage(Ga.profile_delete_notice_alert_description)
                   })]
                 })
               }), (0, r.jsx)(E.Body, {
@@ -7178,29 +7031,29 @@ try {
                 children: (0, r.jsxs)("ul", {
                   className: "_1arzw2p2",
                   children: [(0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_one)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_one)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_two)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_two)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_three)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_three)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_four)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_four)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_five)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_five)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_six)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_six)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_seven)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_seven)
                   }), (0, r.jsx)("li", {
-                    children: u.formatMessage(La.profile_delete_notice_bullet_eight)
+                    children: u.formatMessage(Ga.profile_delete_notice_bullet_eight)
                   })]
                 })
               }), (0, r.jsx)(E.Body, {
                 size: "MD",
-                children: u.formatMessage(La.profile_delete_notice_copy_two)
+                children: u.formatMessage(Ga.profile_delete_notice_copy_two)
               }), (0, r.jsx)(E.Body, {
                 size: "MD",
-                children: u.formatMessage(La.profile_delete_notice_copy_three)
+                children: u.formatMessage(Ga.profile_delete_notice_copy_three)
               })]
             })
           }), (0, r.jsxs)(E.Dialog.Footer, {
@@ -7217,8 +7070,8 @@ try {
                 },
                 testId: "noticeCheckbox"
               }), (0, r.jsx)(E.Checkbox.Label, {
-                className: tt(),
-                children: u.formatMessage(La.profile_delete_notice_checkbox_label)
+                className: rt(),
+                children: u.formatMessage(Ga.profile_delete_notice_checkbox_label)
               })]
             }), (0, r.jsx)(E.Button, {
               appearance: "primary",
@@ -7301,11 +7154,11 @@ try {
                   }(this, function(t) {
                     switch (t.label) {
                       case 0:
-                        return lr(Ke.action.agree_to_account_deletion_notices, Ke.labels.account_deletion_notice_agree), [4, _({
+                        return ur(Je.action.agree_to_account_deletion_notices, Je.labels.account_deletion_notice_agree), [4, f({
                           body: o
                         })];
                       case 1:
-                        return (null == (e = t.sent()) ? void 0 : e.error) ? lr(Ke.action.delete_account_error) : (lr(Ke.action.delete_account_success, Ke.labels.account_deletion_success + i), window.location.replace(m.getDeleteAccountLogoutUrl({
+                        return (null == (e = t.sent()) ? void 0 : e.error) ? ur(Je.action.delete_account_error) : (ur(Je.action.delete_account_success, Je.labels.account_deletion_success + i), window.location.replace(m.getDeleteAccountLogoutUrl({
                           lang: u.locale
                         }))), [2]
                     }
@@ -7317,11 +7170,11 @@ try {
                     var i = e.apply(t, n);
 
                     function o(e) {
-                      Ga(i, r, a, o, s, "next", e)
+                      Fa(i, r, a, o, s, "next", e)
                     }
 
                     function s(e) {
-                      Ga(i, r, a, o, s, "throw", e)
+                      Fa(i, r, a, o, s, "throw", e)
                     }
                     o(void 0)
                   })
@@ -7330,19 +7183,19 @@ try {
               },
               size: "LG",
               testId: "confirmDeleteAccount",
-              children: u.formatMessage(La.profile_delete_notice_agree_button_label)
+              children: u.formatMessage(Ga.profile_delete_notice_agree_button_label)
             })]
           })]
         })
       };
 
-      function Va(e, t) {
+      function Ba(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function qa(e, t) {
+      function Ha(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -7366,61 +7219,52 @@ try {
           }
         }(e, t) || function(e, t) {
           if (e) {
-            if ("string" == typeof e) return Va(e, t);
+            if ("string" == typeof e) return Ba(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
-            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Va(e, t) : void 0
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ba(e, t) : void 0
           }
         }(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
-      const Fa = function() {
-        var e = qa((0, a.useState)(""), 2),
+      const Ya = function() {
+        var e = Ha((0, a.useState)(""), 2),
           t = e[0],
           n = e[1],
-          o = qa((0, a.useState)(!1), 2),
+          o = Ha((0, a.useState)(!1), 2),
           s = o[0],
           c = o[1],
-          l = qa((0, a.useState)(""), 2),
+          l = Ha((0, a.useState)(""), 2),
           d = l[0],
           u = l[1],
-          f = (0, i.useLocation)();
+          _ = (0, i.useLocation)();
         return (0, a.useEffect)(function() {
-          var e = new URLSearchParams(f.hash.substring(1)).get("token");
+          var e = new URLSearchParams(_.hash.substring(1)).get("token");
           e && (n(e), c(!0), window.location.hash = "")
         }, []), (0, r.jsx)(E.Dialog.Root, {
           isOpen: s,
           onOpenChange: c,
           children: (0, r.jsx)(E.Dialog.Overlay, {
-            className: Er,
+            className: Ur,
             testId: "deleteAccountModalOverlay",
-            children: (0, r.jsx)(E.Dialog.Content, {
-              "aria-describedby": void 0,
-              onEscapeKeyDown: function(e) {
-                return e.preventDefault()
-              },
-              onInteractOutside: function(e) {
-                return e.preventDefault()
+            children: (0, r.jsxs)(Gr, {
+              onCancel: function() {
+                return c(!1)
               },
               testId: "deleteAccountModal",
-              children: (0, r.jsxs)(Lr, {
-                onCancel: function() {
-                  return c(!1)
-                },
-                children: [(0, r.jsx)(Ea, {
-                  deleteReason: d,
-                  setDeleteReason: u
-                }), (0, r.jsx)(Ua, {
-                  deleteReason: d,
-                  token: t
-                })]
-              })
+              children: [(0, r.jsx)(Ua, {
+                deleteReason: d,
+                setDeleteReason: u
+              }), (0, r.jsx)(za, {
+                deleteReason: d,
+                token: t
+              })]
             })
           })
         })
       };
 
-      function za(e, t, n, r, a, i, o) {
+      function Wa(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -7429,10 +7273,10 @@ try {
         }
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
-      var Ba = function() {
-        var e = (0, L.A)(),
-          t = rr({
-            route: Be.DeleteCheck,
+      var Xa = function() {
+        var e = (0, N.A)(),
+          t = ir({
+            route: Ye.DeleteCheck,
             fetchOnInitial: !1
           }),
           n = t.fetch,
@@ -7441,7 +7285,7 @@ try {
           children: [(0, r.jsx)($, {
             testId: "delete-account-section",
             children: (0, r.jsx)(J, {
-              children: e.formatMessage(_n.overview_heading_delete_account)
+              children: e.formatMessage(mn.overview_heading_delete_account)
             })
           }), (0, r.jsxs)(ee, {
             className: "_1s8x9ff0",
@@ -7449,11 +7293,11 @@ try {
             children: [(0, r.jsx)(ie, {
               children: (0, r.jsx)(se, {
                 className: "whld273",
-                children: e.formatMessage(_n.overview_delete_account_description)
+                children: e.formatMessage(mn.overview_delete_account_description)
               })
             }), (0, r.jsx)(E.Button, {
               appearance: "danger",
-              "aria-label": e.formatMessage(_n.overview_delete_account_button_aria_label),
+              "aria-label": e.formatMessage(mn.overview_delete_account_button_aria_label),
               className: "_1s8x9ff1",
               isDisabled: a,
               isLoading: a,
@@ -7536,7 +7380,7 @@ try {
                       case 0:
                         return [4, n({})];
                       case 1:
-                        return (null == (t = r.sent()) ? void 0 : t.error) || (lr(Ke.action.start_account_deletion, Ke.labels.start_account_deletion), window.location.href = m.getAovUrl({
+                        return (null == (t = r.sent()) ? void 0 : t.error) || (ur(Je.action.start_account_deletion, Je.labels.start_account_deletion), window.location.href = m.getAovUrl({
                           lang: e.locale
                         })), [2]
                     }
@@ -7548,11 +7392,11 @@ try {
                     var i = t.apply(e, n);
 
                     function o(e) {
-                      za(i, r, a, o, s, "next", e)
+                      Wa(i, r, a, o, s, "next", e)
                     }
 
                     function s(e) {
-                      za(i, r, a, o, s, "throw", e)
+                      Wa(i, r, a, o, s, "throw", e)
                     }
                     o(void 0)
                   })
@@ -7561,36 +7405,36 @@ try {
               },
               size: "MD",
               testId: "startAccountDeletion",
-              children: e.formatMessage(_n.overview_delete_account_button_label)
+              children: e.formatMessage(mn.overview_delete_account_button_label)
             })]
-          }), (0, r.jsx)(Fa, {})]
+          }), (0, r.jsx)(Ya, {})]
         })
       };
-      const Ha = function(e) {
+      const Za = function(e) {
         var t = e.account;
         return t && (0, r.jsx)("div", {
           className: "whld270",
-          children: (0, r.jsxs)(W, {
-            children: [(0, r.jsx)(_a, {
+          children: (0, r.jsxs)(Z, {
+            children: [(0, r.jsx)(ga, {
               account: t
-            }), (0, r.jsx)(va, {
+            }), (0, r.jsx)(Ma, {
               nickname: t.nickName,
               email: t.email,
               dob: t.dob
-            }), (0, r.jsx)(Ta, {}), (0, r.jsx)(Ba, {})]
+            }), (0, r.jsx)(Ra, {}), (0, r.jsx)(Xa, {})]
           })
         })
       };
-      var Ya = function(e) {
+      var Ka = function(e) {
           return e.None = "none", e.Friends = "friends", e.FriendsAndCrews = "friendsAndCrews", e.Everyone = "everyone", e
         }({}),
-        Xa = function(e) {
+        $a = function(e) {
           return e.ProfileVisibility = "profileVisibility", e.ProfileFriends = "profileFriends", e.ProfileLocation = "profileLocation", e.GameplayVisibility = "gameplayVisibility", e.GameplayComparison = "gameplayComparison", e
         }({}),
-        Za = function(e) {
+        Ja = function(e) {
           return e.CrewInviteEmails = "crewInviteEmails", e.DirectMessageEmails = "directMessageEmails", e.FriendRequestEmails = "friendRequestEmails", e
         }({});
-      const Wa = (0, _e.YK)({
+      const Qa = (0, fe.YK)({
         privacy_settings_title: {
           defaultMessage: "Profile Page and Info",
           description: "The headline for the Privacy Info section.",
@@ -7702,23 +7546,98 @@ try {
           id: "privacy_request_data_label"
         },
         privacy_request_data_description: {
-          defaultMessage: "You can request a copy of the personal data we've collected about you at any time. Simply click the \"Request My Data button\", and we'll prepare your information and send it to your account email.",
+          defaultMessage: "You can request a copy of the personal data we've collected about you at any time. Simply click the \"Request My Data\" button, and we'll prepare your information and send it to your account email.",
           description: "The description for what requesting data will do",
           id: "privacy_request_data_description"
+        },
+        privacy_request_data_being_processed: {
+          defaultMessage: "Your data is currently being prepared. Please check back soon.",
+          description: "The description for when requesting data is processing.",
+          id: "privacy_request_data_being_processed"
+        },
+        privacy_request_data_delivered: {
+          defaultMessage: "Check your email {email} for instructions on how to download it. You will be able to request your data again in {numberOfDays} days.",
+          description: "The description for when requesting data is delivered.",
+          id: "privacy_request_data_delivered"
+        },
+        privacy_request_data_delivered_header: {
+          defaultMessage: "Your data request is ready",
+          description: "The header for when requesting data is delivered.",
+          id: "privacy_request_data_delivered_header"
+        },
+        privacy_request_data_cancel: {
+          defaultMessage: "Cancel Request",
+          description: "The description for cancelling a DSAR.",
+          id: "privacy_request_data_cancel"
+        },
+        privacy_request_data_status_failed: {
+          defaultMessage: "There was an unexpected error retrieving the status of you data request. Please contact Rockstar Games Support.",
+          description: "The description when getting a dsar status fails (unexpected).",
+          id: "privacy_request_data_status_failed"
+        },
+        privacy_request_data_confirm_cancellation_description: {
+          defaultMessage: "Selecting Confirm Cancellation will cancel your current Data Request. We limit the number of cancellations you can submit per data request. As a result, you will hit a cancellation limit preventing you from requesting your data again for one month should you repeatedly cancel and re-request your data.",
+          description: "The description when confirming a dsar cancellation.",
+          id: "privacy_request_data_confirm_cancellation_description"
+        },
+        privacy_request_data_confirm_cancellation_button: {
+          defaultMessage: "Confirm Cancellation",
+          description: "The button label when confirming a dsar cancellation.",
+          id: "privacy_request_data_confirm_cancellation_button"
+        },
+        privacy_request_data_canceled: {
+          defaultMessage: "Data request successfully canceled.",
+          description: "The toast message after a successful cancellation",
+          id: "privacy_request_data_canceled"
+        },
+        privacy_request_data_cancellation_failed: {
+          defaultMessage: "There was an unexpected error cancelling your data request. Please contact Rockstar Games Support.",
+          description: "The description when getting a dsar cancellation fails (unexpected).",
+          id: "privacy_request_data_cancellation_failed"
+        },
+        privacy_request_data_initiated: {
+          defaultMessage: "You will receive a notification at your account email once your data is ready. Please note that it may take up to 24 hours to arrive, and you will not be able to submit another request for one month.",
+          description: "The description when a dsar initialization is successful.",
+          id: "privacy_request_data_initiated"
+        },
+        privacy_request_data_download_limit_reached_title: {
+          defaultMessage: "Download Limit Reached",
+          description: "Download limit reached modal title text.",
+          id: "privacy_request_data_download_limit_reached_title"
+        },
+        privacy_request_data_download_limit_reached_description: {
+          defaultMessage: "You have reached the download limit for this Data Request. You can make a new Data Request next month.",
+          description: "Download limit reached modal description text.",
+          id: "privacy_request_data_download_limit_reached_description"
+        },
+        privacy_request_data_download_reaching_limit_confirm: {
+          defaultMessage: "Confirm Download",
+          description: "Confirm Download button text",
+          id: "privacy_request_data_download_reaching_limit_confirm"
+        },
+        privacy_request_data_download_reaching_limit_title: {
+          defaultMessage: "Reaching Download Limit",
+          description: "Download reaching limit modal title text.",
+          id: "privacy_request_data_download_reaching_limit_title"
+        },
+        privacy_request_data_download_reaching_limit_description: {
+          defaultMessage: "You are about to reach the download limit for this Data Request. Selecting Confirm Download will provide a final copy of the data we've collected. Downloading this request means you will not be able to make another request for a month.",
+          description: "Download reaching limit modal description text.",
+          id: "privacy_request_data_download_reaching_limit_description"
         }
       });
 
-      function Ka(e, t) {
+      function ei(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var $a = function(e) {
+      var ti = function(e) {
         var t, n, i = e.gameplayVisibility,
           o = e.gameplayComparison,
           s = e.updatePrivacySettings,
           c = e.visibilityOptions,
-          l = (0, L.A)(),
+          l = (0, N.A)(),
           d = (t = (0, a.useState)(!1), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
@@ -7742,67 +7661,67 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return Ka(e, t);
+              if ("string" == typeof e) return ei(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ka(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ei(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           u = d[0],
-          f = d[1],
-          _ = function(e) {
-            var t = e ? Ke.labels.profile_privacy_yes : Ke.labels.profile_privacy_no;
-            lr(Ke.action.profile_privacy_gameplay_comparison, t), s(Xa.GameplayComparison, e ? Ya.Everyone : Ya.None)
+          _ = d[1],
+          f = function(e) {
+            var t = e ? Je.labels.profile_privacy_yes : Je.labels.profile_privacy_no;
+            ur(Je.action.profile_privacy_gameplay_comparison, t), s($a.GameplayComparison, e ? Ka.Everyone : Ka.None)
           },
-          p = o === Ya.Everyone;
+          p = o === Ka.Everyone;
         return (0, r.jsxs)(K, {
           children: [(0, r.jsxs)($, {
             children: [(0, r.jsx)(J, {
-              children: l.formatMessage(Wa.privacy_game_stats_title)
+              children: l.formatMessage(Qa.privacy_game_stats_title)
             }), (0, r.jsx)(Q, {
-              children: l.formatMessage(Wa.privacy_game_stats_description)
+              children: l.formatMessage(Qa.privacy_game_stats_description)
             })]
           }), (0, r.jsxs)(ee, {
             children: [(0, r.jsxs)(te, {
               isInteractable: !0,
               onClick: function() {
-                return f(!0)
+                return _(!0)
               },
               testId: "gameStatsVisibilityRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: l.formatMessage(Wa.privacy_game_stats_stats_visibility_sublabel)
+                    children: l.formatMessage(Qa.privacy_game_stats_stats_visibility_sublabel)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Dropdown.Root, {
-                  className: ja,
+                  className: Oa,
                   isOpen: u,
                   onClick: function(e) {
                     return e.stopPropagation()
                   },
-                  onOpenChange: f,
+                  onOpenChange: _,
                   onValueChange: function(e) {
                     var t, n = null === (t = c.find(function(t) {
                       return t.value === e
                     })) || void 0 === t ? void 0 : t.gaLabel;
-                    lr(Ke.action.profile_privacy_gameplay_visibility, n), s(Xa.GameplayVisibility, e)
+                    ur(Je.action.profile_privacy_gameplay_visibility, n), s($a.GameplayVisibility, e)
                   },
                   value: i,
                   children: [(0, r.jsx)(E.Dropdown.Label, {
                     hideVisually: !0,
-                    children: l.formatMessage(Wa.privacy_game_stats_stats_visibility_dropdown_label)
+                    children: l.formatMessage(Qa.privacy_game_stats_stats_visibility_dropdown_label)
                   }), (0, r.jsxs)(E.Dropdown.Trigger, {
                     testId: "gameplayVisibilityDropdown",
-                    className: Ma,
+                    className: Aa,
                     children: [(0, r.jsx)(E.Dropdown.TriggerText, {
-                      placeholder: l.formatMessage(Wa.privacy_game_stats_stats_visibility_dropdown_placeholder)
+                      placeholder: l.formatMessage(Qa.privacy_game_stats_stats_visibility_dropdown_placeholder)
                     }), (0, r.jsx)(E.Dropdown.TriggerIcon, {})]
                   }), (0, r.jsx)(E.Dropdown.Portal, {
                     children: (0, r.jsx)(E.Dropdown.Content, {
-                      className: xa,
+                      className: Sa,
                       children: (0, r.jsx)(E.Dropdown.ScrollArea, {
                         children: c.filter(function(e) {
                           return !e.hide
@@ -7824,27 +7743,27 @@ try {
               thickness: "thin"
             }), (0, r.jsxs)(te, {
               isInteractable: !0,
-              label: l.formatMessage(Wa.privacy_game_stats_allow_platform_comparison_switch_label),
+              label: l.formatMessage(Qa.privacy_game_stats_allow_platform_comparison_switch_label),
               onClick: function() {
-                return _(!p)
+                return f(!p)
               },
               testId: "gameStatsFriendComparisonRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: l.formatMessage(Wa.privacy_game_stats_allow_platform_comparison_label)
+                    children: l.formatMessage(Qa.privacy_game_stats_allow_platform_comparison_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
-                    onSelectedChange: _,
+                    className: G,
+                    onSelectedChange: f,
                     isSelected: p,
                     testId: "gameplayComparison"
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: l.formatMessage(Wa.privacy_game_stats_allow_platform_comparison_switch_label)
+                    children: l.formatMessage(Qa.privacy_game_stats_allow_platform_comparison_switch_label)
                   })]
                 })
               })]
@@ -7853,18 +7772,18 @@ try {
         })
       };
 
-      function Ja(e, t) {
+      function ni(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var Qa = function(e) {
+      var ri = function(e) {
         var t, n, i = e.profileVisibility,
           o = e.profileFriends,
           s = e.profileLocation,
           c = e.visibilityOptions,
           l = e.updatePrivacySettings,
-          d = (0, L.A)(),
+          d = (0, N.A)(),
           u = (t = (0, a.useState)(!1), n = 2, function(e) {
             if (Array.isArray(e)) return e
           }(t) || function(e, t) {
@@ -7888,76 +7807,76 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return Ja(e, t);
+              if ("string" == typeof e) return ni(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ja(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ni(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
-          f = u[0],
-          _ = u[1],
+          _ = u[0],
+          f = u[1],
           p = function(e) {
-            var t = e ? Ke.labels.profile_privacy_yes : Ke.labels.profile_privacy_no;
-            lr(Ke.action.profile_privacy_friends_visibility, t), l(Xa.ProfileFriends, e ? Ya.Everyone : Ya.None)
+            var t = e ? Je.labels.profile_privacy_yes : Je.labels.profile_privacy_no;
+            ur(Je.action.profile_privacy_friends_visibility, t), l($a.ProfileFriends, e ? Ka.Everyone : Ka.None)
           },
           m = function(e) {
-            var t = e ? Ke.labels.profile_privacy_yes : Ke.labels.profile_privacy_no;
-            lr(Ke.action.profile_privacy_country_visibility, t), l(Xa.ProfileLocation, e ? Ya.Everyone : Ya.None)
+            var t = e ? Je.labels.profile_privacy_yes : Je.labels.profile_privacy_no;
+            ur(Je.action.profile_privacy_country_visibility, t), l($a.ProfileLocation, e ? Ka.Everyone : Ka.None)
           },
-          h = o === Ya.Everyone,
-          g = s === Ya.Everyone;
+          h = o === Ka.Everyone,
+          g = s === Ka.Everyone;
         return (0, r.jsxs)(K, {
           children: [(0, r.jsxs)($, {
             children: [(0, r.jsxs)(J, {
-              children: [d.formatMessage(Wa.privacy_settings_title), (0, r.jsx)(ha, {
+              children: [d.formatMessage(Qa.privacy_settings_title), (0, r.jsx)(va, {
                 side: "bottom",
                 testIdPrefix: "privacy-settings",
-                message: d.formatMessage(Wa.privacy_settings_tooltip_disclaimer)
+                message: d.formatMessage(Qa.privacy_settings_tooltip_disclaimer)
               })]
             }), (0, r.jsx)(Q, {
-              children: d.formatMessage(Wa.privacy_settings_description)
+              children: d.formatMessage(Qa.privacy_settings_description)
             })]
           }), (0, r.jsxs)(ee, {
             children: [(0, r.jsxs)(te, {
               isInteractable: !0,
               onClick: function() {
-                return _(!0)
+                return f(!0)
               },
               testId: "profileVisibilityRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: d.formatMessage(Wa.privacy_settings_visibility_sublabel)
+                    children: d.formatMessage(Qa.privacy_settings_visibility_sublabel)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Dropdown.Root, {
-                  className: ja,
-                  isOpen: f,
+                  className: Oa,
+                  isOpen: _,
                   onClick: function(e) {
                     return e.stopPropagation()
                   },
-                  onOpenChange: _,
+                  onOpenChange: f,
                   onValueChange: function(e) {
                     var t, n = null === (t = c.find(function(t) {
                       return t.value === e
                     })) || void 0 === t ? void 0 : t.gaLabel;
-                    lr(Ke.action.profile_privacy_visibility, n), l(Xa.ProfileVisibility, e)
+                    ur(Je.action.profile_privacy_visibility, n), l($a.ProfileVisibility, e)
                   },
                   value: i,
                   children: [(0, r.jsx)(E.Dropdown.Label, {
                     hideVisually: !0,
-                    children: d.formatMessage(Wa.privacy_settings_visibility_dropdown_label)
+                    children: d.formatMessage(Qa.privacy_settings_visibility_dropdown_label)
                   }), (0, r.jsxs)(E.Dropdown.Trigger, {
                     testId: "profileVisibilityDropdown",
-                    className: Ma,
+                    className: Aa,
                     children: [(0, r.jsx)(E.Dropdown.TriggerText, {
-                      placeholder: d.formatMessage(Wa.privacy_settings_visibility_dropdown_placeholder)
+                      placeholder: d.formatMessage(Qa.privacy_settings_visibility_dropdown_placeholder)
                     }), (0, r.jsx)(E.Dropdown.TriggerIcon, {})]
                   }), (0, r.jsx)(E.Dropdown.Portal, {
                     children: (0, r.jsx)(E.Dropdown.Content, {
-                      className: xa,
+                      className: Sa,
                       children: (0, r.jsx)(E.Dropdown.ScrollArea, {
                         children: c.filter(function(e) {
                           return !e.hide
@@ -7979,7 +7898,7 @@ try {
               thickness: "thin"
             }), (0, r.jsxs)(te, {
               isInteractable: !0,
-              label: d.formatMessage(Wa.privacy_settings_showfriends_switch_label),
+              label: d.formatMessage(Qa.privacy_settings_showfriends_switch_label),
               onClick: function() {
                 return p(!h)
               },
@@ -7987,13 +7906,13 @@ try {
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: d.formatMessage(Wa.privacy_settings_showfriends_label)
+                    children: d.formatMessage(Qa.privacy_settings_showfriends_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
+                    className: G,
                     onSelectedChange: p,
                     isSelected: h,
                     testId: "profileFriends",
@@ -8002,7 +7921,7 @@ try {
                     }
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: d.formatMessage(Wa.privacy_settings_showfriends_switch_label)
+                    children: d.formatMessage(Qa.privacy_settings_showfriends_switch_label)
                   })]
                 })
               })]
@@ -8010,7 +7929,7 @@ try {
               thickness: "thin"
             }), (0, r.jsxs)(te, {
               isInteractable: !0,
-              label: d.formatMessage(Wa.privacy_settings_showcountry_switch_label),
+              label: d.formatMessage(Qa.privacy_settings_showcountry_switch_label),
               onClick: function() {
                 return m(!g)
               },
@@ -8018,13 +7937,13 @@ try {
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: d.formatMessage(Wa.privacy_settings_showcountry_label)
+                    children: d.formatMessage(Qa.privacy_settings_showcountry_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
+                    className: G,
                     onSelectedChange: m,
                     isSelected: g,
                     testId: "profileLocation",
@@ -8033,7 +7952,7 @@ try {
                     }
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: d.formatMessage(Wa.privacy_settings_showcountry_switch_label)
+                    children: d.formatMessage(Qa.privacy_settings_showcountry_switch_label)
                   })]
                 })
               })]
@@ -8042,7 +7961,7 @@ try {
         })
       };
 
-      function ei(e, t, n, r, a, i, o) {
+      function ai(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -8052,7 +7971,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function ti(e, t, n) {
+      function ii(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -8060,41 +7979,41 @@ try {
           writable: !0
         }) : e[t] = n, e
       }
-      var ni = function(e) {
+      var oi = function(e) {
         var t = e.isMinor,
-          n = (0, L.A)(),
+          n = (0, N.A)(),
           i = [{
-            text: n.formatMessage(Wa.privacy_settings_visibility_me_only_option),
-            value: Ya.None,
+            text: n.formatMessage(Qa.privacy_settings_visibility_me_only_option),
+            value: Ka.None,
             hide: !1,
-            gaLabel: Ke.labels.profile_privacy_visibility_me_only
+            gaLabel: Je.labels.profile_privacy_visibility_me_only
           }, {
-            text: n.formatMessage(Wa.privacy_settings_visibility_friends_option),
-            value: Ya.Friends,
+            text: n.formatMessage(Qa.privacy_settings_visibility_friends_option),
+            value: Ka.Friends,
             hide: !1,
-            gaLabel: Ke.labels.profile_privacy_visibility_friends
+            gaLabel: Je.labels.profile_privacy_visibility_friends
           }, {
-            text: n.formatMessage(Wa.privacy_settings_visibility_friends_and_crews_option),
-            value: Ya.FriendsAndCrews,
+            text: n.formatMessage(Qa.privacy_settings_visibility_friends_and_crews_option),
+            value: Ka.FriendsAndCrews,
             hide: t,
-            gaLabel: Ke.labels.profile_privacy_visibility_friends_and_crews
+            gaLabel: Je.labels.profile_privacy_visibility_friends_and_crews
           }, {
-            text: n.formatMessage(Wa.privacy_settings_visibility_everyone_option),
-            value: Ya.Everyone,
+            text: n.formatMessage(Qa.privacy_settings_visibility_everyone_option),
+            value: Ka.Everyone,
             hide: t,
-            gaLabel: Ke.labels.profile_privacy_visibility_everyone
+            gaLabel: Je.labels.profile_privacy_visibility_everyone
           }],
-          o = rr({
-            route: Be.GetPrivacySettings
+          o = ir({
+            route: Ye.GetPrivacySettings
           }),
           s = o.data,
           c = o.setData,
           l = o.loading,
-          d = rr({
-            route: Be.UpdatePrivacySettings,
+          d = ir({
+            route: Ye.UpdatePrivacySettings,
             fetchOnInitial: !1
           }).fetch,
-          u = (0, a.useCallback)((0, jt.A)(function(e, t) {
+          u = (0, a.useCallback)((0, Mt.A)(function(e, t) {
             return (n = function() {
               var n;
               return function(e, t) {
@@ -8185,18 +8104,18 @@ try {
                 var i = n.apply(e, t);
 
                 function o(e) {
-                  ei(i, r, a, o, s, "next", e)
+                  ai(i, r, a, o, s, "next", e)
                 }
 
                 function s(e) {
-                  ei(i, r, a, o, s, "throw", e)
+                  ai(i, r, a, o, s, "throw", e)
                 }
                 o(void 0)
               })
             })();
             var n
           }, 1e3), []),
-          f = function(e, t) {
+          _ = function(e, t) {
             var n = function(e, t) {
               return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                 var t = Object.keys(e);
@@ -8215,35 +8134,35 @@ try {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                  ti(e, t, n[t])
+                  ii(e, t, n[t])
                 })
               }
               return e
-            }({}, s), ti({}, e, t));
+            }({}, s), ii({}, e, t));
             u(n, s), c(n)
           };
-        return (0, r.jsx)(un, {
+        return (0, r.jsx)(fn, {
           isLoading: l,
-          children: s && (0, r.jsxs)(W, {
+          children: s && (0, r.jsxs)(Z, {
             testId: "privacySettings",
-            children: [(0, r.jsx)(Qa, {
+            children: [(0, r.jsx)(ri, {
               profileVisibility: s.profileVisibility,
               profileFriends: s.profileFriends,
               profileLocation: s.profileLocation,
               visibilityOptions: i,
-              updatePrivacySettings: f
-            }), (0, r.jsx)($a, {
+              updatePrivacySettings: _
+            }), (0, r.jsx)(ti, {
               gameplayVisibility: s.gameplayVisibility,
               gameplayComparison: s.gameplayComparison,
               visibilityOptions: i,
-              updatePrivacySettings: f
+              updatePrivacySettings: _
             })]
           })
         })
       };
-      const ri = function(e) {
+      const si = function(e) {
         var t = e.isLoading,
-          n = (0, L.A)();
+          n = (0, N.A)();
         return (0, r.jsx)(E.Dialog.Root, {
           isOpen: t,
           children: (0, r.jsx)(E.Dialog.Overlay, {
@@ -8265,7 +8184,7 @@ try {
                     size: "LG",
                     testId: "loader"
                   }), (0, r.jsx)(E.Dialog.Title, {
-                    children: n.formatMessage(Ze.email_change_verifying_new_email)
+                    children: n.formatMessage(Ke.email_change_verifying_new_email)
                   })]
                 })
               })
@@ -8274,14 +8193,14 @@ try {
         })
       };
 
-      function ai(e, t) {
+      function ci(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      const ii = function() {
-          var e, t, n = (0, L.A)(),
-            o = Ee(),
+      const li = function() {
+          var e, t, n = (0, N.A)(),
+            o = qe(),
             s = (e = (0, i.useSearchParams)(), t = 1, function(e) {
               if (Array.isArray(e)) return e
             }(e) || function(e, t) {
@@ -8305,27 +8224,27 @@ try {
               }
             }(e, t) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return ai(e, t);
+                if ("string" == typeof e) return ci(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ai(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ci(e, t) : void 0
               }
             }(e, t) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }())[0],
             c = (0, i.useNavigate)(),
             l = s.get("emailCookie"),
-            d = rr({
+            d = ir({
               fetchOnInitial: !1,
-              route: Be.UpdateEmail
+              route: Ye.UpdateEmail
             }),
             u = d.fetch,
-            f = d.loading,
-            _ = rr({
+            _ = d.loading,
+            f = ir({
               fetchOnInitial: !1,
-              route: Be.ProfileOverview
+              route: Ye.ProfileOverview
             }),
-            p = _.fetch,
-            m = _.loading;
+            p = f.fetch,
+            m = f.loading;
           (0, a.useEffect)(function() {
             l && u({
               body: {
@@ -8335,17 +8254,17 @@ try {
               e.error || p({}).then(function(e) {
                 e.error || o.displayNewToast({
                   appearance: "success",
-                  message: n.formatMessage(Ze.email_change_success)
+                  message: n.formatMessage(Ke.email_change_success)
                 })
               }), c("/account")
             })
           }, []);
-          var h = Boolean(l) && (f || m);
-          return (0, r.jsx)(ri, {
+          var h = Boolean(l) && (_ || m);
+          return (0, r.jsx)(si, {
             isLoading: h
           })
         },
-        oi = (0, _e.YK)({
+        di = (0, fe.YK)({
           connections_title: {
             defaultMessage: "Connections",
             description: "Title for the connections page",
@@ -8417,7 +8336,7 @@ try {
             id: "connections_link_button_aria_label"
           },
           connections_linked_navigation_aria_label: {
-            defaultMessage: "Navigate to the details page for {connection}",
+            defaultMessage: "{connection} details",
             description: "Aria label text for the linked account navigation button on each connection row",
             id: "connections_linked_navigation_aria_label"
           },
@@ -8447,7 +8366,7 @@ try {
             id: "connections_visibility_label"
           },
           connections_visibility_aria_label: {
-            defaultMessage: "Dropdown to select the account visibility setting for the current account connection",
+            defaultMessage: "Account visibility",
             description: "Visibility aria label on the details page for a specific connection",
             id: "connections_visibility_aria_label"
           },
@@ -8477,7 +8396,7 @@ try {
             id: "connections_unlink_button_text"
           },
           connections_unlink_button_aria_label: {
-            defaultMessage: "Navigate to unlink {connection}",
+            defaultMessage: "Unlink {connection}",
             description: "Text for the unlink button aria label on the connection details page",
             id: "connections_unlink_button_aria_label"
           },
@@ -8487,7 +8406,7 @@ try {
             id: "connections_unlinkable_footer_text"
           }
         });
-      var si = (0, a.forwardRef)(function(e, t) {
+      var ui = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
@@ -8534,8 +8453,8 @@ try {
           })]
         })
       });
-      si.displayName = "amazon";
-      var ci = (0, a.forwardRef)(function(e, t) {
+      ui.displayName = "amazon";
+      var _i = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsx)("svg", {
           id: "Discord-Logo",
@@ -8551,8 +8470,8 @@ try {
           })
         })
       });
-      ci.displayName = "discord";
-      var li = (0, a.forwardRef)(function(e, t) {
+      _i.displayName = "discord";
+      var fi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsx)("svg", {
           version: "1.1",
@@ -8579,8 +8498,8 @@ try {
           })
         })
       });
-      li.displayName = "epic games";
-      var di = (0, a.forwardRef)(function(e, t) {
+      fi.displayName = "epic games";
+      var pi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
@@ -8605,8 +8524,8 @@ try {
           })]
         })
       });
-      di.displayName = "google";
-      var ui = (0, a.forwardRef)(function(e, t) {
+      pi.displayName = "google";
+      var mi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           viewBox: "0 0 283.5 283.5",
@@ -8623,8 +8542,8 @@ try {
           })]
         })
       });
-      ui.displayName = "nintendo switch";
-      var fi = (0, a.forwardRef)(function(e, t) {
+      mi.displayName = "nintendo switch";
+      var hi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
@@ -8646,8 +8565,8 @@ try {
           })]
         })
       });
-      fi.displayName = "playstation";
-      var _i = (0, a.forwardRef)(function(e, t) {
+      hi.displayName = "playstation";
+      var gi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           fill: "#fff",
@@ -8704,8 +8623,8 @@ try {
           })]
         })
       });
-      _i.displayName = "steam";
-      var pi = (0, a.forwardRef)(function(e, t) {
+      gi.displayName = "steam";
+      var bi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsxs)("svg", {
           viewBox: "0 0 37.71 44",
@@ -8746,8 +8665,8 @@ try {
           })]
         })
       });
-      pi.displayName = "twitch";
-      var mi = (0, a.forwardRef)(function(e, t) {
+      bi.displayName = "twitch";
+      var yi = (0, a.forwardRef)(function(e, t) {
         var n = e.label;
         return (0, r.jsx)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
@@ -8763,28 +8682,28 @@ try {
           })
         })
       });
-      mi.displayName = "xbox";
-      var hi = {
-        amazon: si,
-        discord: ci,
-        epic: li,
-        google: di,
-        nintendoswitch: ui,
-        np: fi,
-        steam: _i,
-        twitch: pi,
-        xbl: mi,
-        xblpc: mi
+      yi.displayName = "xbox";
+      var vi = {
+        amazon: ui,
+        discord: _i,
+        epic: fi,
+        google: pi,
+        nintendoswitch: mi,
+        np: hi,
+        steam: gi,
+        twitch: bi,
+        xbl: yi,
+        xblpc: yi
       };
-      const gi = n.p + "9860050e61fdc8409fe27a5988edaff1.png";
+      const wi = n.p + "9860050e61fdc8409fe27a5988edaff1.png";
 
-      function bi(e, t) {
+      function ji(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function yi(e, t, n, r, a, i, o) {
+      function xi(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -8794,7 +8713,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function vi(e) {
+      function Mi(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -8802,18 +8721,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              yi(i, r, a, o, s, "next", e)
+              xi(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              yi(i, r, a, o, s, "throw", e)
+              xi(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function wi(e, t, n) {
+      function ki(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -8822,20 +8741,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function ji(e) {
+      function Oi(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            wi(e, t, n[t])
+            ki(e, t, n[t])
           })
         }
         return e
       }
 
-      function xi(e, t) {
+      function Si(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -8848,7 +8767,7 @@ try {
         }), e
       }
 
-      function Mi(e, t) {
+      function Ai(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -8920,11 +8839,11 @@ try {
           }
         }
       }
-      var ki = function(e) {
+      var Ii = function(e) {
         var t, n, i = e.currentConnection,
           o = e.clearSelectedService,
           s = e.setSelectedService,
-          c = (0, L.A)(),
+          c = (0, N.A)(),
           l = ke().getAccessToken,
           d = (t = (0, a.useState)(!1), n = 2, function(e) {
             if (Array.isArray(e)) return e
@@ -8949,31 +8868,31 @@ try {
             }
           }(t, n) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return bi(e, t);
+              if ("string" == typeof e) return ji(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? bi(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ji(e, t) : void 0
             }
           }(t, n) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           u = d[0],
-          f = d[1],
-          _ = rr({
-            route: Be.UpdatePlayerAccountVisibility,
+          _ = d[1],
+          f = ir({
+            route: Ye.UpdatePlayerAccountVisibility,
             fetchOnInitial: !1
           }),
-          p = _.fetch,
-          h = _.loading,
-          g = rr({
+          p = f.fetch,
+          h = f.loading,
+          g = ir({
             fetchOnInitial: !1,
-            route: Be.GetLinkedAccounts
+            route: Ye.GetLinkedAccounts
           }),
           b = g.data,
           y = g.setData,
           v = function() {
-            return vi(function() {
+            return Mi(function() {
               var e, t;
-              return Mi(this, function(n) {
+              return Ai(this, function(n) {
                 switch (n.label) {
                   case 0:
                     return [4, l()];
@@ -8988,17 +8907,17 @@ try {
             })()
           },
           w = [{
-            level: Ya.None,
-            message: oi.connections_visibility_me_only
+            level: Ka.None,
+            message: di.connections_visibility_me_only
           }, {
-            level: Ya.Friends,
-            message: oi.connections_visibility_friends
+            level: Ka.Friends,
+            message: di.connections_visibility_friends
           }, {
-            level: Ya.FriendsAndCrews,
-            message: oi.connections_visibility_friends_and_crews
+            level: Ka.FriendsAndCrews,
+            message: di.connections_visibility_friends_and_crews
           }, {
-            level: Ya.Everyone,
-            message: oi.connections_visibility_everyone
+            level: Ka.Everyone,
+            message: di.connections_visibility_everyone
           }],
           j = function(e) {
             var t = w.find(function(t) {
@@ -9006,10 +8925,10 @@ try {
             });
             return c.formatMessage(t.message)
           },
-          x = c.formatMessage(oi.connections_unlink_button_text),
-          M = i.gamerTag ? i.gamerTag : c.formatMessage(oi.connections_account_name_unavailable),
-          k = c.formatMessage(oi.connections_linked_date, {
-            date: In({
+          x = c.formatMessage(di.connections_unlink_button_text),
+          M = i.gamerTag ? i.gamerTag : c.formatMessage(di.connections_account_name_unavailable),
+          k = c.formatMessage(di.connections_linked_date, {
+            date: Cn({
               dateString: i.linkedDate,
               locale: c.locale
             })
@@ -9017,23 +8936,23 @@ try {
           O = x + M + k;
         return (0, r.jsx)("div", {
           className: "_1si1s9p0",
-          children: (0, r.jsx)(W, {
+          children: (0, r.jsx)(Z, {
             testId: "connections-details-root",
             children: (0, r.jsxs)(K, {
               children: [(0, r.jsx)($, {
-                children: (0, r.jsxs)(sn, {
-                  children: [(0, r.jsx)(cn, {
+                children: (0, r.jsxs)(ln, {
+                  children: [(0, r.jsx)(dn, {
                     children: (0, r.jsx)(E.IconButton, {
                       icon: "ChevronLeft",
                       appearance: "tertiary",
                       size: "LG",
                       testId: "backButton",
-                      label: c.formatMessage(oi.connections_header_nav_aria_label),
+                      label: c.formatMessage(di.connections_header_nav_aria_label),
                       onClick: function() {
                         return o()
                       }
                     })
-                  }), (0, r.jsx)(ln, {
+                  }), (0, r.jsx)(un, {
                     children: (0, r.jsx)(E.Heading, {
                       level: 6,
                       testId: "serviceName",
@@ -9042,7 +8961,7 @@ try {
                   })]
                 })
               }), (0, r.jsxs)(ee, {
-                children: [(0, r.jsxs)(te, xi(ji({}, i.isUnlinkable && {
+                children: [(0, r.jsxs)(te, Si(Oi({}, i.isUnlinkable && {
                   isInteractable: !0,
                   label: O,
                   onClick: v
@@ -9054,11 +8973,11 @@ try {
                         className: "_1si1s9p1",
                         "data-testid": "linked-account-avatar",
                         src: i.avatarUrl,
-                        alt: c.formatMessage(oi.connections_linked_avatar_icon_aria_label, {
+                        alt: c.formatMessage(di.connections_linked_avatar_icon_aria_label, {
                           connection: i.serviceDisplayName
                         }),
                         onError: function(e) {
-                          e.target.src = gi
+                          e.target.src = wi
                         }
                       })
                     }), (0, r.jsxs)(ie, {
@@ -9074,7 +8993,7 @@ try {
                     })]
                   }), i.isUnlinkable && (0, r.jsx)(de, {
                     children: (0, r.jsx)(E.Button, {
-                      "aria-label": c.formatMessage(oi.connections_unlink_button_aria_label, {
+                      "aria-label": c.formatMessage(di.connections_unlink_button_aria_label, {
                         connection: i.serviceDisplayName
                       }),
                       fullWidth: !0,
@@ -9091,30 +9010,30 @@ try {
                   isDisabled: h,
                   isInteractable: !0,
                   onClick: function() {
-                    return f(!0)
+                    return _(!0)
                   },
                   testId: "connectionVisibilityRow",
                   children: [(0, r.jsx)(ae, {
                     children: (0, r.jsx)(ie, {
                       children: (0, r.jsx)(oe, {
-                        children: c.formatMessage(oi.connections_visibility_label)
+                        children: c.formatMessage(di.connections_visibility_label)
                       })
                     })
                   }), (0, r.jsx)(de, {
                     children: (0, r.jsxs)(E.Dropdown.Root, {
-                      className: ja,
+                      className: Oa,
                       isOpen: u,
                       onClick: function(e) {
                         return e.stopPropagation()
                       },
-                      onOpenChange: f,
+                      onOpenChange: _,
                       onValueChange: function(e) {
-                        return vi(function() {
+                        return Mi(function() {
                           var t, n;
-                          return Mi(this, function(r) {
+                          return Ai(this, function(r) {
                             switch (r.label) {
                               case 0:
-                                return lr(Ke.action["linked_accounts_visibility_".concat(e, "_").concat(i.onlineServiceName)]), t = {
+                                return ur(Je.action["linked_accounts_visibility_".concat(e, "_").concat(i.onlineServiceName)]), t = {
                                   onlineService: null == i ? void 0 : i.onlineServiceName,
                                   visibilityLevel: e
                                 }, [4, p({
@@ -9123,7 +9042,7 @@ try {
                               case 1:
                                 return r.sent().error || ((n = null == b ? void 0 : b.linkedAccounts.find(function(e) {
                                   return e.onlineServiceName === i.onlineServiceName
-                                })) && (n.privacy = e, y(b)), s(xi(ji({}, i), {
+                                })) && (n.privacy = e, y(b)), s(Si(Oi({}, i), {
                                   privacy: e
                                 }))), [2]
                             }
@@ -9133,41 +9052,41 @@ try {
                       value: i.isPrivacyReadOnly ? "none" : i.privacy,
                       children: [(0, r.jsx)(E.Dropdown.Label, {
                         hideVisually: !0,
-                        children: c.formatMessage(oi.connections_visibility_aria_label)
+                        children: c.formatMessage(di.connections_visibility_aria_label)
                       }), (0, r.jsxs)(E.Dropdown.Trigger, {
                         testId: "connectionVisibilityDropdown",
-                        className: Ma,
+                        className: Aa,
                         children: [(0, r.jsx)(E.Dropdown.TriggerText, {
                           placeholder: ""
                         }), (0, r.jsx)(E.Dropdown.TriggerIcon, {})]
                       }), (0, r.jsx)(E.Dropdown.Portal, {
                         children: (0, r.jsx)(E.Dropdown.Content, {
-                          className: xa,
+                          className: Sa,
                           children: (0, r.jsxs)(E.Dropdown.ScrollArea, {
                             children: [(0, r.jsx)(E.Dropdown.Option, {
                               testId: "meOnlyOption",
                               value: "none",
                               children: (0, r.jsx)(E.Dropdown.OptionText, {
-                                children: j(Ya.None)
+                                children: j(Ka.None)
                               })
                             }), !i.isPrivacyReadOnly && (0, r.jsxs)(r.Fragment, {
                               children: [(0, r.jsx)(E.Dropdown.Option, {
                                 testId: "friendsOption",
                                 value: "friends",
                                 children: (0, r.jsx)(E.Dropdown.OptionText, {
-                                  children: j(Ya.Friends)
+                                  children: j(Ka.Friends)
                                 })
                               }), (0, r.jsx)(E.Dropdown.Option, {
                                 testId: "friendsAndCrewsOption",
                                 value: "friendsAndCrews",
                                 children: (0, r.jsx)(E.Dropdown.OptionText, {
-                                  children: j(Ya.FriendsAndCrews)
+                                  children: j(Ka.FriendsAndCrews)
                                 })
                               }), (0, r.jsx)(E.Dropdown.Option, {
                                 testId: "everyoneOption",
                                 value: "everyone",
                                 children: (0, r.jsx)(E.Dropdown.OptionText, {
-                                  children: j(Ya.Everyone)
+                                  children: j(Ka.Everyone)
                                 })
                               })]
                             })]
@@ -9181,14 +9100,15 @@ try {
                 size: "SM",
                 className: "_1si1s9p2",
                 testId: "supportFooter",
-                children: c.formatMessage(oi.connections_unlinkable_footer_text, {
+                children: c.formatMessage(di.connections_unlinkable_footer_text, {
                   connection: i.serviceDisplayName,
                   steamSupportAnchor: function(e) {
                     return (0, r.jsx)("a", {
                       className: "_1si1s9p3",
                       target: "_blank",
                       rel: "noopener noreferrer",
-                      href: "https://support.rockstargames.com/request/account/account-settings/linking-unlinking-accounts",
+                      href: m.getAccountLinkingSupportUrl(),
+                      "data-testid": "accountLinkingSupportUrl",
                       children: e
                     })
                   }
@@ -9199,13 +9119,13 @@ try {
         })
       };
 
-      function Oi(e, t) {
+      function Pi(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function Si(e, t, n, r, a, i, o) {
+      function Ci(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -9215,28 +9135,28 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Ai(e) {
+      function Di(e) {
         return function(e) {
-          if (Array.isArray(e)) return Oi(e)
+          if (Array.isArray(e)) return Pi(e)
         }(e) || function(e) {
           if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-        }(e) || Ii(e) || function() {
+        }(e) || Ti(e) || function() {
           throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
 
-      function Ii(e, t) {
+      function Ti(e, t) {
         if (e) {
-          if ("string" == typeof e) return Oi(e, t);
+          if ("string" == typeof e) return Pi(e, t);
           var n = Object.prototype.toString.call(e).slice(8, -1);
-          return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Oi(e, t) : void 0
+          return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Pi(e, t) : void 0
         }
       }
-      var Pi = ["np", "xbl", "xblpc", "nintendoswitch", "steam", "epic", "google", "amazon", "twitch", "discord"],
-        Ci = function(e) {
+      var Li = ["np", "xbl", "xblpc", "nintendoswitch", "steam", "epic", "google", "amazon", "twitch", "discord"],
+        Ni = function(e) {
           var t, n, o = e.data,
             s = e.loading,
-            c = (0, L.A)(),
+            c = (0, N.A)(),
             l = (0, i.useLocation)(),
             d = (t = (0, a.useState)(), n = 2, function(e) {
               if (Array.isArray(e)) return e
@@ -9259,65 +9179,65 @@ try {
                 }
                 return i
               }
-            }(t, n) || Ii(t, n) || function() {
+            }(t, n) || Ti(t, n) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }()),
             u = d[0],
-            f = d[1];
+            _ = d[1];
           (0, a.useEffect)(function() {
-            u && _(void 0)
+            u && f(void 0)
           }, [l.key]);
-          var _ = function(e) {
-              f(e), window.scrollTo(0, 0)
+          var f = function(e) {
+              _(e), window.scrollTo(0, 0)
             },
             p = function(e) {
               e.forEach(function(e) {
-                e.serviceDisplayName = c.formatMessage(oi["connections_".concat(e.onlineServiceName)])
+                e.serviceDisplayName = c.formatMessage(di["connections_".concat(e.onlineServiceName)])
               })
             },
             m = function(e, t) {
-              return Pi.indexOf(e.onlineServiceName) - Pi.indexOf(t.onlineServiceName)
+              return Li.indexOf(e.onlineServiceName) - Li.indexOf(t.onlineServiceName)
             },
             h = (0, a.useMemo)(function() {
               if (!(null == o ? void 0 : o.linkedAccounts)) return [];
-              var e = Ai(o.linkedAccounts).sort(m);
+              var e = Di(o.linkedAccounts).sort(m);
               return p(e), e
             }, [null == o ? void 0 : o.linkedAccounts]),
             g = (0, a.useMemo)(function() {
               if (!(null == o ? void 0 : o.unlinkedAccounts)) return [];
-              var e = Ai(o.unlinkedAccounts).sort(m);
+              var e = Di(o.unlinkedAccounts).sort(m);
               return p(e), e
             }, [null == o ? void 0 : o.unlinkedAccounts]);
-          return u && !s ? (0, r.jsx)(ki, {
+          return u && !s ? (0, r.jsx)(Ii, {
             currentConnection: u,
             clearSelectedService: function() {
-              return _(void 0)
+              return f(void 0)
             },
-            setSelectedService: f
-          }) : (0, r.jsx)(un, {
+            setSelectedService: _
+          }) : (0, r.jsx)(fn, {
             isLoading: s,
-            children: (0, r.jsx)(W, {
+            children: (0, r.jsx)(Z, {
               children: (0, r.jsxs)(K, {
                 testId: "connectionsSections",
                 children: [(0, r.jsxs)($, {
                   children: [(0, r.jsx)(J, {
-                    children: c.formatMessage(oi.connections_title)
+                    children: c.formatMessage(di.connections_title)
                   }), (0, r.jsx)(Q, {
-                    children: c.formatMessage(oi.connections_subtitle)
+                    children: c.formatMessage(di.connections_subtitle)
                   })]
                 }), o && (0, r.jsxs)(ee, {
                   children: [h.map(function(e) {
                     return (0, r.jsxs)(a.Fragment, {
-                      children: [(0, r.jsx)(Di, {
+                      children: [(0, r.jsx)(Ei, {
                         onlineService: e,
-                        navigateSelectedService: _
+                        navigateSelectedService: f
                       }), (0, r.jsx)(ne, {
                         thickness: "thin"
                       })]
                     }, e.onlineServiceName)
                   }), g.map(function(e, t) {
                     return (0, r.jsxs)(a.Fragment, {
-                      children: [(0, r.jsx)(Ti, {
+                      children: [(0, r.jsx)(Ri, {
                         onlineService: e
                       }), t !== Object.values(o.unlinkedAccounts).length - 1 && (0, r.jsx)(ne, {
                         thickness: "thin"
@@ -9329,21 +9249,21 @@ try {
             })
           })
         },
-        Di = function(e) {
+        Ei = function(e) {
           var t = e.onlineService,
             n = e.navigateSelectedService,
-            i = (0, L.A)(),
+            i = (0, N.A)(),
             o = (0, a.useMemo)(function() {
-              return hi[t.onlineServiceName]
+              return vi[t.onlineServiceName]
             }, [t.onlineServiceName]),
             s = function() {
               n(t)
             },
-            c = i.formatMessage(oi.connections_linked_navigation_aria_label, {
+            c = i.formatMessage(di.connections_linked_navigation_aria_label, {
               connection: t.serviceDisplayName
             }),
-            l = i.formatMessage(oi.connections_linked_date, {
-              date: In({
+            l = i.formatMessage(di.connections_linked_date, {
+              date: Cn({
                 dateString: t.linkedDate,
                 locale: i.locale
               })
@@ -9359,7 +9279,7 @@ try {
                 className: "_71w2ba0",
                 children: [(0, r.jsx)(ce, {
                   children: (0, r.jsx)(o, {
-                    label: i.formatMessage(oi["connections_".concat(t.onlineServiceName)])
+                    label: i.formatMessage(di["connections_".concat(t.onlineServiceName)])
                   })
                 }), (0, r.jsxs)(ie, {
                   children: [(0, r.jsx)(oe, {
@@ -9382,11 +9302,11 @@ try {
             })
           })
         },
-        Ti = function(e) {
+        Ri = function(e) {
           var t = e.onlineService,
-            n = (0, L.A)(),
+            n = (0, N.A)(),
             i = (0, a.useMemo)(function() {
-              return hi[t.onlineServiceName]
+              return vi[t.onlineServiceName]
             }, [null == t ? void 0 : t.onlineServiceName]),
             o = ke().getAccessToken,
             s = function() {
@@ -9466,7 +9386,7 @@ try {
                 }(this, function(a) {
                   switch (a.label) {
                     case 0:
-                      return lr(Ke.action["linked_accounts_link_".concat(t.onlineServiceName)]), [4, o()];
+                      return ur(Je.action["linked_accounts_link_".concat(t.onlineServiceName)]), [4, o()];
                     case 1:
                       return e = a.sent(), r = m.getLinkUrl({
                         accessToken: e,
@@ -9482,18 +9402,18 @@ try {
                   var i = e.apply(t, n);
 
                   function o(e) {
-                    Si(i, r, a, o, s, "next", e)
+                    Ci(i, r, a, o, s, "next", e)
                   }
 
                   function s(e) {
-                    Si(i, r, a, o, s, "throw", e)
+                    Ci(i, r, a, o, s, "throw", e)
                   }
                   o(void 0)
                 })
               })();
               var e
             },
-            c = n.formatMessage(oi.connections_link_button_aria_label, {
+            c = n.formatMessage(di.connections_link_button_aria_label, {
               connection: t.serviceDisplayName
             });
           return (0, r.jsxs)(te, {
@@ -9504,7 +9424,7 @@ try {
             children: [(0, r.jsxs)(ae, {
               children: [(0, r.jsx)(ce, {
                 children: (0, r.jsx)(i, {
-                  label: n.formatMessage(oi["connections_".concat(t.onlineServiceName)])
+                  label: n.formatMessage(di["connections_".concat(t.onlineServiceName)])
                 })
               }), (0, r.jsx)(ie, {
                 children: (0, r.jsx)(oe, {
@@ -9521,12 +9441,12 @@ try {
                 onPress: s,
                 size: "MD",
                 testId: "link-".concat(t.onlineServiceName),
-                children: n.formatMessage(oi.connections_link_button_text)
+                children: n.formatMessage(di.connections_link_button_text)
               })
             })]
           })
         };
-      const Ni = (0, _e.YK)({
+      const qi = (0, fe.YK)({
         communications_mailing_list_title: {
           defaultMessage: "Mailing list",
           description: "Title for the communications page mailing list section",
@@ -9621,33 +9541,43 @@ try {
           defaultMessage: "You are subscribed to the Mailing List",
           description: "Subscribed icon circle check element description label",
           id: "communications_you_are_subscribed_label"
+        },
+        communications_subscribe_mailing_list_not_possible: {
+          defaultMessage: "We cannot sign up this email address to our newsletter at this time.",
+          description: "Message for when mailing list subscription is not possible, such as when a user is underage.",
+          id: "communications_subscribe_mailing_list_not_possible"
+        },
+        communications_subscribe_mailing_list_confirm: {
+          defaultMessage: "Thank you. Please check your email to finish updating your subscription preferences.",
+          description: "Message for when mailing list subscription requires email confirmation",
+          id: "communications_subscribe_mailing_list_confirm"
         }
       });
-      var Li = function(e) {
+      var Gi = function(e) {
           var t = e.crewInviteEmails,
             n = e.directMessageEmails,
             a = e.friendRequestEmails,
             i = e.updateEmailNotificationSetting,
-            o = (0, L.A)(),
+            o = (0, N.A)(),
             s = function(e) {
-              lr(Ke.action["friend_request_emails_".concat(e)]), i(Za.FriendRequestEmails, e ? Ya.Everyone : Ya.None)
+              ur(Je.action["friend_request_emails_".concat(e)]), i(Ja.FriendRequestEmails, e ? Ka.Everyone : Ka.None)
             },
             c = function(e) {
-              lr(Ke.action["crew_invite_emails_".concat(e)]), i(Za.CrewInviteEmails, e ? Ya.Everyone : Ya.None)
+              ur(Je.action["crew_invite_emails_".concat(e)]), i(Ja.CrewInviteEmails, e ? Ka.Everyone : Ka.None)
             },
             l = function(e) {
-              lr(Ke.action["direct_message_emails_".concat(e)]), i(Za.DirectMessageEmails, e ? Ya.Everyone : Ya.None)
+              ur(Je.action["direct_message_emails_".concat(e)]), i(Ja.DirectMessageEmails, e ? Ka.Everyone : Ka.None)
             },
             d = function(e) {
               return e.stopPropagation()
             },
-            u = a === Ya.Everyone,
-            f = t === Ya.Everyone,
-            _ = n === Ya.Everyone;
+            u = a === Ka.Everyone,
+            _ = t === Ka.Everyone,
+            f = n === Ka.Everyone;
           return (0, r.jsxs)(ee, {
             children: [(0, r.jsxs)(te, {
               isInteractable: !0,
-              label: o.formatMessage(Ni.communications_friend_request_email_toggle_aria_label),
+              label: o.formatMessage(qi.communications_friend_request_email_toggle_aria_label),
               onClick: function() {
                 return s(!u)
               },
@@ -9655,20 +9585,20 @@ try {
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: o.formatMessage(Ni.communications_friend_request_email_label)
+                    children: o.formatMessage(qi.communications_friend_request_email_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
+                    className: G,
                     onPress: d,
                     onSelectedChange: s,
                     isSelected: u,
                     testId: "friendRequestEmails"
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: o.formatMessage(Ni.communications_friend_request_email_toggle_aria_label)
+                    children: o.formatMessage(qi.communications_friend_request_email_toggle_aria_label)
                   })]
                 })
               })]
@@ -9676,28 +9606,28 @@ try {
               thickness: "thin"
             }), (0, r.jsxs)(te, {
               isInteractable: !0,
-              label: o.formatMessage(Ni.communications_crew_invite_email_toggle_aria_label),
+              label: o.formatMessage(qi.communications_crew_invite_email_toggle_aria_label),
               onClick: function() {
-                return c(!f)
+                return c(!_)
               },
               testId: "crewInviteRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: o.formatMessage(Ni.communications_crew_invite_email_label)
+                    children: o.formatMessage(qi.communications_crew_invite_email_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
+                    className: G,
                     onPress: d,
                     onSelectedChange: c,
-                    isSelected: f,
+                    isSelected: _,
                     testId: "crewInviteEmails"
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: o.formatMessage(Ni.communications_crew_invite_email_toggle_aria_label)
+                    children: o.formatMessage(qi.communications_crew_invite_email_toggle_aria_label)
                   })]
                 })
               })]
@@ -9705,44 +9635,44 @@ try {
               thickness: "thin"
             }), (0, r.jsxs)(te, {
               isInteractable: !0,
-              label: o.formatMessage(Ni.communications_direct_message_email_toggle_aria_label),
+              label: o.formatMessage(qi.communications_direct_message_email_toggle_aria_label),
               onClick: function() {
-                return l(!_)
+                return l(!f)
               },
               testId: "directMessageRow",
               children: [(0, r.jsx)(ae, {
                 children: (0, r.jsx)(ie, {
                   children: (0, r.jsx)(oe, {
-                    children: o.formatMessage(Ni.communications_direct_message_email_label)
+                    children: o.formatMessage(qi.communications_direct_message_email_label)
                   })
                 })
               }), (0, r.jsx)(de, {
                 children: (0, r.jsxs)(E.Switch.Root, {
                   children: [(0, r.jsx)(E.Switch.Input, {
-                    className: U,
+                    className: G,
                     onPress: d,
                     onSelectedChange: l,
-                    isSelected: _,
+                    isSelected: f,
                     testId: "directMessageEmails"
                   }), (0, r.jsx)(E.Switch.Label, {
                     hideVisually: !0,
-                    children: o.formatMessage(Ni.communications_direct_message_email_toggle_aria_label)
+                    children: o.formatMessage(qi.communications_direct_message_email_toggle_aria_label)
                   })]
                 })
               })]
             })]
           })
         },
-        Ei = "_1ehoiwp0",
-        Ri = function(e) {
+        Ui = "_1ehoiwp0",
+        Vi = function(e) {
           var t = e.isLoadingSubscription,
             n = e.subscribeCallback,
-            a = (0, L.A)(),
-            i = a.formatMessage(Ni.communications_subscribe_button_text),
-            o = a.formatMessage(Ni.communications_subscribe_label),
-            s = a.formatMessage(Ni.communications_subscribe_sub_label);
+            a = (0, N.A)(),
+            i = a.formatMessage(qi.communications_subscribe_button_text),
+            o = a.formatMessage(qi.communications_subscribe_label),
+            s = a.formatMessage(qi.communications_subscribe_sub_label);
           return (0, r.jsxs)(ee, {
-            className: Ei,
+            className: Ui,
             testId: "subscribeRowContainer",
             children: [(0, r.jsxs)(ie, {
               children: [(0, r.jsx)(oe, {
@@ -9752,7 +9682,7 @@ try {
               })]
             }), (0, r.jsx)(E.Button, {
               appearance: "primary",
-              "aria-label": a.formatMessage(Ni.communications_subscribe_button_aria_label),
+              "aria-label": a.formatMessage(qi.communications_subscribe_button_aria_label),
               isDisabled: t,
               isLoading: t,
               onClick: n,
@@ -9762,23 +9692,23 @@ try {
             })]
           })
         },
-        Gi = function(e) {
+        Fi = function(e) {
           var t = e.isLoadingSubscription,
             n = e.unsubscribeCallback,
-            a = (0, L.A)(),
-            i = a.formatMessage(Ni.communications_unsubscribe_button_text),
-            o = a.formatMessage(Ni.communications_unsubscribe_label),
-            s = a.formatMessage(Ni.communications_unsubscribe_sub_label);
+            a = (0, N.A)(),
+            i = a.formatMessage(qi.communications_unsubscribe_button_text),
+            o = a.formatMessage(qi.communications_unsubscribe_label),
+            s = a.formatMessage(qi.communications_unsubscribe_sub_label);
           return (0, r.jsxs)(ee, {
-            className: Ei,
+            className: Ui,
             testId: "unsubscribeRowContainer",
             children: [(0, r.jsxs)("div", {
               className: "_1ehoiwp1",
               children: [(0, r.jsx)(ce, {
-                children: (0, r.jsx)(et.CircleCheckFilled, {
-                  color: xt.LU.alias.color.icon.success,
+                children: (0, r.jsx)(nt.CircleCheckFilled, {
+                  color: kt.LU.alias.color.icon.success,
                   size: "LG",
-                  label: a.formatMessage(Ni.communications_you_are_subscribed_label)
+                  label: a.formatMessage(qi.communications_you_are_subscribed_label)
                 })
               }), (0, r.jsxs)(ie, {
                 children: [(0, r.jsx)(oe, {
@@ -9789,7 +9719,7 @@ try {
               })]
             }), (0, r.jsx)(E.Button, {
               appearance: "tertiary",
-              "aria-label": a.formatMessage(Ni.communications_unsubscribe_button_aria_label),
+              "aria-label": a.formatMessage(qi.communications_unsubscribe_button_aria_label),
               isDisabled: t,
               isLoading: t,
               onClick: n,
@@ -9800,7 +9730,7 @@ try {
           })
         };
 
-      function Ui(e, t, n, r, a, i, o) {
+      function zi(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -9810,7 +9740,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function Vi(e) {
+      function Bi(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -9818,18 +9748,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              Ui(i, r, a, o, s, "next", e)
+              zi(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              Ui(i, r, a, o, s, "throw", e)
+              zi(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function qi(e, t, n) {
+      function Hi(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -9838,7 +9768,7 @@ try {
         }) : e[t] = n, e
       }
 
-      function Fi(e, t) {
+      function Yi(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -9910,41 +9840,41 @@ try {
           }
         }
       }
-      var zi = function() {
-        var e = (0, L.A)(),
-          t = Ee(),
-          n = rr({
-            route: Be.GetPrivacySettings
+      var Wi = function() {
+        var e = (0, N.A)(),
+          t = qe(),
+          n = ir({
+            route: Ye.GetPrivacySettings
           }),
           i = n.data,
           o = n.setData,
           s = n.loading,
-          c = rr({
-            route: Be.GetSubscriptionStatus
+          c = ir({
+            route: Ye.GetSubscriptionStatus
           }),
           l = c.data,
           d = c.setData,
           u = c.loading,
-          f = rr({
-            route: Be.Subscribe,
+          _ = ir({
+            route: Ye.Subscribe,
             fetchOnInitial: !1
           }),
-          _ = f.fetch,
-          p = f.loading,
-          m = rr({
-            route: Be.Unsubscribe,
+          f = _.fetch,
+          p = _.loading,
+          m = ir({
+            route: Ye.Unsubscribe,
             fetchOnInitial: !1
           }),
           h = m.fetch,
           g = m.loading,
-          b = rr({
-            route: Be.UpdateEmailNotificationSettings,
+          b = ir({
+            route: Ye.UpdateEmailNotificationSettings,
             fetchOnInitial: !1
           }).fetch,
-          y = (0, a.useCallback)((0, jt.A)(function(e, t) {
-            return Vi(function() {
+          y = (0, a.useCallback)((0, Mt.A)(function(e, t) {
+            return Bi(function() {
               var n;
-              return Fi(this, function(r) {
+              return Yi(this, function(r) {
                 switch (r.label) {
                   case 0:
                     return [4, b({
@@ -9957,48 +9887,61 @@ try {
             })()
           }, 1e3), []),
           v = p || g;
-        return (0, r.jsx)(un, {
+        return (0, r.jsx)(fn, {
           isLoading: s || u,
-          children: i && l && (0, r.jsxs)(W, {
+          children: i && l && (0, r.jsxs)(Z, {
             testId: "communications",
             children: [(0, r.jsxs)(K, {
               testId: "subscription",
               children: [(0, r.jsx)($, {
                 children: (0, r.jsx)(J, {
-                  children: e.formatMessage(Ni.communications_mailing_list_title)
+                  children: e.formatMessage(qi.communications_mailing_list_title)
                 })
-              }), 1 === l.status ? (0, r.jsx)(Gi, {
+              }), 1 === l.status ? (0, r.jsx)(Fi, {
                 isLoadingSubscription: v,
                 unsubscribeCallback: function() {
-                  return Vi(function() {
+                  return Bi(function() {
                     var n, r, a;
-                    return Fi(this, function(i) {
+                    return Yi(this, function(i) {
                       switch (i.label) {
                         case 0:
-                          return lr(Ke.action.toggle_subscribe_to_mailing_list, Ke.labels.unsubscribed_from_mailing_list), [4, h({})];
+                          return ur(Je.action.toggle_subscribe_to_mailing_list, Je.labels.unsubscribed_from_mailing_list), [4, h({})];
                         case 1:
                           return n = i.sent(), r = n.data, a = n.error, r && !a && (d(r), t.displayNewToast({
                             appearance: "success",
-                            message: e.formatMessage(Ni.communications_toast_unsubscribed_text)
+                            message: e.formatMessage(qi.communications_toast_unsubscribed_text)
                           })), [2]
                       }
                     })
                   })()
                 }
-              }) : (0, r.jsx)(Ri, {
+              }) : (0, r.jsx)(Vi, {
                 isLoadingSubscription: v,
                 subscribeCallback: function() {
-                  return Vi(function() {
+                  return Bi(function() {
                     var n, r, a;
-                    return Fi(this, function(i) {
+                    return Yi(this, function(i) {
                       switch (i.label) {
                         case 0:
-                          return lr(Ke.action.toggle_subscribe_to_mailing_list, Ke.labels.subscribed_to_mailing_list), [4, _({})];
+                          return ur(Je.action.toggle_subscribe_to_mailing_list, Je.labels.subscribed_to_mailing_list), [4, f({})];
                         case 1:
-                          return n = i.sent(), r = n.data, a = n.error, r && !a && (d(r), t.displayNewToast({
-                            appearance: "success",
-                            message: e.formatMessage(Ni.communications_toast_subscribed_text)
-                          })), [2]
+                          if (n = i.sent(), r = n.data, a = n.error, r && !a) switch (r.status) {
+                            case 1:
+                              return d(r), t.displayNewToast({
+                                appearance: "success",
+                                message: e.formatMessage(qi.communications_toast_subscribed_text)
+                              }), [2];
+                            case 2:
+                              return t.displayNewToast({
+                                appearance: "information",
+                                message: e.formatMessage(qi.communications_subscribe_mailing_list_confirm)
+                              }), [2];
+                            case 4:
+                              return t.displayNewError(e.formatMessage(qi.communications_subscribe_mailing_list_not_possible)), [2];
+                            default:
+                              t.displayNewError(e.formatMessage(Oe.generic_error))
+                          }
+                          return [2]
                       }
                     })
                   })()
@@ -10007,16 +9950,16 @@ try {
             }), (0, r.jsxs)(K, {
               children: [(0, r.jsx)($, {
                 children: (0, r.jsx)(J, {
-                  children: e.formatMessage(Ni.communications_notifications_title)
+                  children: e.formatMessage(qi.communications_notifications_title)
                 })
-              }), (0, r.jsx)(Li, {
+              }), (0, r.jsx)(Gi, {
                 crewInviteEmails: i.crewInviteEmails,
                 directMessageEmails: i.directMessageEmails,
                 friendRequestEmails: i.friendRequestEmails,
                 updateEmailNotificationSetting: function(e, t) {
-                  return Vi(function() {
+                  return Bi(function() {
                     var n, r;
-                    return Fi(this, function(a) {
+                    return Yi(this, function(a) {
                       return n = function(e, t) {
                         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
                           var t = Object.keys(e);
@@ -10035,11 +9978,11 @@ try {
                           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                             return Object.getOwnPropertyDescriptor(n, e).enumerable
                           }))), r.forEach(function(t) {
-                            qi(e, t, n[t])
+                            Hi(e, t, n[t])
                           })
                         }
                         return e
-                      }({}, i), qi({}, e, t)), r = {
+                      }({}, i), Hi({}, e, t)), r = {
                         crewInviteEmails: n.crewInviteEmails,
                         directMessageEmails: n.directMessageEmails,
                         friendRequestEmails: n.friendRequestEmails
@@ -10053,7 +9996,7 @@ try {
         })
       };
 
-      function Bi(e, t, n) {
+      function Xi(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -10062,20 +10005,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Hi(e) {
+      function Zi(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            Bi(e, t, n[t])
+            Xi(e, t, n[t])
           })
         }
         return e
       }
 
-      function Yi(e, t) {
+      function Ki(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -10088,7 +10031,7 @@ try {
         }), e
       }
 
-      function Xi(e, t) {
+      function $i(e, t) {
         if (null == e) return {};
         var n, r, a = function(e, t) {
           if (null == e) return {};
@@ -10103,25 +10046,25 @@ try {
         }
         return a
       }
-      var Zi = (0, a.forwardRef)(function(e, t) {
+      var Ji = (0, a.forwardRef)(function(e, t) {
           var n = e.className,
             a = e.children,
             i = e.testId,
-            o = Xi(e, ["className", "children", "testId"]),
+            o = $i(e, ["className", "children", "testId"]),
             s = (0, R.v6)({
               "data-testid": i,
               className: (0, z.A)("lofjyg0", n)
             }, o);
-          return (0, r.jsx)("div", Yi(Hi({
+          return (0, r.jsx)("div", Ki(Zi({
             ref: t
           }, s), {
             children: a
           }))
         }),
-        Wi = (0, a.forwardRef)(function(e, t) {
+        Qi = (0, a.forwardRef)(function(e, t) {
           var n = e.testId,
             i = e.qrCodeString,
-            o = Xi(e, ["testId", "qrCodeString"]),
+            o = $i(e, ["testId", "qrCodeString"]),
             s = (0, R.v6)({
               "data-testid": n,
               className: "lofjyg1"
@@ -10137,7 +10080,7 @@ try {
                 return n
               })
             }, [i]);
-          return (0, r.jsxs)("svg", Yi(Hi({
+          return (0, r.jsxs)("svg", Ki(Zi({
             viewBox: "0 0 ".concat(c.length, " ").concat(c.length),
             ref: t
           }, s), {
@@ -10156,7 +10099,7 @@ try {
           }))
         });
 
-      function Ki() {
+      function eo() {
         var e, t = (e = navigator.userAgent.toLowerCase()).indexOf("firefox") >= 0 ? "Firefox" : e.indexOf("ucbrowser") >= 0 ? "UC Browser" : e.indexOf("maxthon") >= 0 ? "Maxthon" : e.indexOf("opera") >= 0 || e.indexOf("opr") >= 0 ? "Opera" : e.indexOf("edge") >= 0 || e.indexOf("edg") >= 0 ? "Microsoft Edge" : e.indexOf("chrome") >= 0 || e.indexOf("crios") >= 0 ? "Chrome" : e.indexOf("playstation") >= 0 ? "PlayStation" : e.indexOf("safari") >= 0 ? "Safari" : e.indexOf("trident") >= 0 ? "Internet Explorer" : e.indexOf("nintendobrowser") >= 0 ? "Nintendo" : "Unknown browser",
           n = function() {
             var e = navigator.userAgent.toLowerCase();
@@ -10170,9 +10113,9 @@ try {
             return t + " on " + n
         }
       }
-      var $i = "_15h4nzg7";
+      var to = "_15h4nzg7";
 
-      function Ji(e, t, n, r, a, i, o) {
+      function no(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -10181,54 +10124,54 @@ try {
         }
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
-      var Qi = function(e) {
+      var ro = function(e) {
           var t = e.backNav,
             n = e.setMfaDevice,
-            i = (0, L.A)(),
-            o = rr({
-              route: Be.RequestRegisterMfa,
+            i = (0, N.A)(),
+            o = ir({
+              route: Ye.RequestRegisterMfa,
               fetchOnInitial: !1
             }),
             s = o.data,
             c = o.fetch,
-            l = rr({
-              route: Be.VerifyMfaRegistration,
+            l = ir({
+              route: Ye.VerifyMfaRegistration,
               fetchOnInitial: !1
             }),
             d = l.fetch,
             u = l.loading,
-            f = rr({
-              route: Be.GetMfaDevices,
+            _ = ir({
+              route: Ye.GetMfaDevices,
               fetchOnInitial: !1
             }).fetch;
           return (0, a.useEffect)(function() {
-            lr(Ke.action.mfa_request_device_registration_request, Ke.labels.device_type_google), c({}).then(function(e) {
-              e.error && lr(Ke.action.mfa_request_device_registration_error, Ke.labels.device_type_google)
+            ur(Je.action.mfa_request_device_registration_request, Je.labels.device_type_google), c({}).then(function(e) {
+              e.error && ur(Je.action.mfa_request_device_registration_error, Je.labels.device_type_google)
             })
           }, []), (0, r.jsxs)("div", {
             className: "_15h4nzg0",
             "data-testid": "auth-setup",
-            children: [(0, r.jsxs)(sn, {
-              children: [(0, r.jsx)(cn, {
+            children: [(0, r.jsxs)(ln, {
+              children: [(0, r.jsx)(dn, {
                 asChild: !0,
                 children: (0, r.jsx)(E.IconButton, {
                   icon: "ChevronLeft",
                   size: "LG",
                   appearance: "tertiary",
                   onClick: t,
-                  label: i.formatMessage(fn.security_header_nav_aria_label),
+                  label: i.formatMessage(pn.security_header_nav_aria_label),
                   testId: "auth-setup-back"
                 })
-              }), (0, r.jsx)(ln, {
+              }), (0, r.jsx)(un, {
                 children: (0, r.jsx)(E.Heading, {
                   level: 6,
-                  children: i.formatMessage(fn.security_title)
+                  children: i.formatMessage(pn.security_title)
                 })
               })]
-            }), (0, r.jsxs)(un, {
+            }), (0, r.jsxs)(fn, {
               isLoading: !s,
               children: [(0, r.jsxs)(E.Dialog.Root, {
-                children: [(0, r.jsx)(W, {
+                children: [(0, r.jsx)(Z, {
                   testId: "auth-setup-body",
                   children: (0, r.jsx)(K, {
                     children: (0, r.jsx)(ee, {
@@ -10239,9 +10182,9 @@ try {
                           children: (0, r.jsxs)(ie, {
                             className: "_15h4nzg3 _125nfjqf",
                             children: [(0, r.jsx)(oe, {
-                              children: i.formatMessage(fn.security_setup_qrcode_label)
+                              children: i.formatMessage(pn.security_setup_qrcode_label)
                             }), (0, r.jsx)(se, {
-                              children: i.formatMessage(fn.security_setup_qrcode_sublabel)
+                              children: i.formatMessage(pn.security_setup_qrcode_sublabel)
                             }), (0, r.jsx)(E.Dialog.Trigger, {
                               asChild: !0,
                               testId: "secret-key-modal-trigger",
@@ -10249,14 +10192,14 @@ try {
                                 size: "LG",
                                 appearance: "link",
                                 className: "_15h4nzg9",
-                                children: i.formatMessage(fn.security_setup_qrcode_link)
+                                children: i.formatMessage(pn.security_setup_qrcode_link)
                               })
                             })]
                           })
                         }), (0, r.jsx)(de, {
-                          children: (null == s ? void 0 : s.qrCode) && (0, r.jsx)(Zi, {
+                          children: (null == s ? void 0 : s.qrCode) && (0, r.jsx)(Ji, {
                             className: "_15h4nzg1",
-                            children: (0, r.jsx)(Wi, {
+                            children: (0, r.jsx)(Qi, {
                               qrCodeString: s.qrCode,
                               testId: "qrcode-matrix"
                             })
@@ -10265,14 +10208,14 @@ try {
                       })
                     })
                   })
-                }), (null == s ? void 0 : s.secretKey) && (0, r.jsx)(eo, {
+                }), (null == s ? void 0 : s.secretKey) && (0, r.jsx)(ao, {
                   secretKey: s.secretKey
                 })]
-              }), (0, r.jsx)(Sn, {
+              }), (0, r.jsx)(In, {
                 isLoading: u,
                 onFormInvalid: function(e) {
                   var t;
-                  "non_empty" === (null == e || null === (t = e[kn]) || void 0 === t ? void 0 : t.type) && lr(Ke.action.mfa_enroll_verify_error_password_missing), (null == e ? void 0 : e[On]) && lr(Ke.action.mfa_enroll_verify_error_invalid_verification_code)
+                  "non_empty" === (null == e || null === (t = e[Sn]) || void 0 === t ? void 0 : t.type) && ur(Je.action.mfa_enroll_verify_error_password_missing), (null == e ? void 0 : e[An]) && ur(Je.action.mfa_enroll_verify_error_invalid_verification_code)
                 },
                 onSubmit: function(e) {
                   var t, r = e.formData,
@@ -10353,20 +10296,20 @@ try {
                     }(this, function(l) {
                       switch (l.label) {
                         case 0:
-                          return lr(Ke.action.mfa_enroll_verify_request, Ke.labels.device_type_google), [4, d({
+                          return ur(Je.action.mfa_enroll_verify_request, Je.labels.device_type_google), [4, d({
                             body: {
-                              code: r[On],
-                              machineName: Ki(),
+                              code: r[An],
+                              machineName: eo(),
                               mfaDeviceRegistrationCookie: s.mfaDeviceRegistrationCookie,
-                              password: r[kn]
+                              password: r[Sn]
                             }
                           })];
                         case 1:
-                          return (null == (e = l.sent()) ? void 0 : e.error) ? (lr(Ke.action.mfa_enroll_verify_error), t = e.error.code, (o = Zn[t]) && a(o.field, {
+                          return (null == (e = l.sent()) ? void 0 : e.error) ? (ur(Je.action.mfa_enroll_verify_error), t = e.error.code, (o = Kn[t]) && a(o.field, {
                             message: i.formatMessage(o.message)
                           }), [3, 4]) : [3, 2];
                         case 2:
-                          return lr(Ke.action.mfa_enroll_success, Ke.labels.device_type), [4, f({})];
+                          return ur(Je.action.mfa_enroll_success, Je.labels.device_type), [4, _({})];
                         case 3:
                           (null == (c = l.sent()) ? void 0 : c.data) && n(c.data[0]), l.label = 4;
                         case 4:
@@ -10380,11 +10323,11 @@ try {
                       var i = t.apply(e, n);
 
                       function o(e) {
-                        Ji(i, r, a, o, s, "next", e)
+                        no(i, r, a, o, s, "next", e)
                       }
 
                       function s(e) {
-                        Ji(i, r, a, o, s, "throw", e)
+                        no(i, r, a, o, s, "throw", e)
                       }
                       o(void 0)
                     })
@@ -10394,32 +10337,32 @@ try {
             })]
           })
         },
-        eo = function(e) {
+        ao = function(e) {
           var t = e.secretKey,
-            n = Ee(),
-            i = (0, L.A)(),
+            n = qe(),
+            i = (0, N.A)(),
             o = (0, a.useMemo)(function() {
               return t.replace(/(.{4})/g, "$1 - ")
             }, [t]);
           return (0, r.jsx)(E.Dialog.Overlay, {
-            className: Er,
+            className: Ur,
             children: (0, r.jsxs)(E.Dialog.Content, {
               "aria-describedby": void 0,
               testId: "secret-key-modal",
               children: [(0, r.jsx)(E.Dialog.CloseButton, {
-                label: i.formatMessage(Fr.modal_close_modal_button_label),
+                label: i.formatMessage(Yr.modal_close_modal_button_label),
                 testId: "secret-key-modal-close"
               }), (0, r.jsx)(E.Dialog.ScrollArea, {
                 children: (0, r.jsxs)(E.Dialog.Layout, {
                   className: "_15h4nzg4",
                   children: [(0, r.jsx)(E.Dialog.Title, {
-                    children: i.formatMessage(fn.security_setup_modal_title)
+                    children: i.formatMessage(pn.security_setup_modal_title)
                   }), (0, r.jsx)(E.Dialog.Description, {
                     asChild: !0,
                     children: (0, r.jsx)(E.Body, {
                       size: "MD",
                       className: "_15h4nzg5",
-                      children: i.formatMessage(fn.security_setup_modal_description)
+                      children: i.formatMessage(pn.security_setup_modal_description)
                     })
                   }), (0, r.jsx)(E.Heading, {
                     level: 5,
@@ -10434,12 +10377,12 @@ try {
                       onClick: function() {
                         navigator.clipboard.writeText(t), n.displayNewToast({
                           appearance: "success",
-                          message: i.formatMessage(fn.security_setup_modal_copy_toast_text)
+                          message: i.formatMessage(pn.security_setup_modal_copy_toast_text)
                         })
                       },
                       size: "LG",
                       testId: "secret-key-copy",
-                      children: i.formatMessage(fn.security_setup_modal_copy_button_text)
+                      children: i.formatMessage(pn.security_setup_modal_copy_button_text)
                     })
                   })]
                 })
@@ -10448,13 +10391,13 @@ try {
           })
         };
 
-      function to(e, t) {
+      function io(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function no(e, t, n, r, a, i, o) {
+      function oo(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -10464,7 +10407,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function ro(e) {
+      function so(e) {
         return function() {
           var t = this,
             n = arguments;
@@ -10472,18 +10415,18 @@ try {
             var i = e.apply(t, n);
 
             function o(e) {
-              no(i, r, a, o, s, "next", e)
+              oo(i, r, a, o, s, "next", e)
             }
 
             function s(e) {
-              no(i, r, a, o, s, "throw", e)
+              oo(i, r, a, o, s, "throw", e)
             }
             o(void 0)
           })
         }
       }
 
-      function ao(e, t) {
+      function co(e, t) {
         var n, r, a, i = {
             label: 0,
             sent: function() {
@@ -10555,7 +10498,7 @@ try {
           }
         }
       }
-      var io = function(e) {
+      var lo = function(e) {
           var t, n, i = e.device,
             o = e.removeMfaDevice,
             s = (t = (0, a.useState)(!1), n = 2, function(e) {
@@ -10581,57 +10524,57 @@ try {
               }
             }(t, n) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return to(e, t);
+                if ("string" == typeof e) return io(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? to(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? io(e, t) : void 0
               }
             }(t, n) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }()),
             c = s[0],
             l = s[1],
-            d = (0, L.A)(),
-            u = Ke.labels.device_type_fill + i.deviceType,
-            f = rr({
-              route: Be.RequestDeregisterMfa,
+            d = (0, N.A)(),
+            u = Je.labels.device_type_fill + i.deviceType,
+            _ = ir({
+              route: Ye.RequestDeregisterMfa,
               fetchOnInitial: !1
             }),
-            _ = f.data,
-            p = f.fetch,
-            m = f.loading,
-            h = rr({
-              route: Be.VerifyMfaDeregistration,
+            f = _.data,
+            p = _.fetch,
+            m = _.loading,
+            h = ir({
+              route: Ye.VerifyMfaDeregistration,
               fetchOnInitial: !1
             }),
             g = h.fetch,
             b = h.loading,
             y = function() {
-              return ro(function() {
+              return so(function() {
                 var e;
-                return ao(this, function(t) {
+                return co(this, function(t) {
                   switch (t.label) {
                     case 0:
-                      return lr(Ke.action.mfa_remove_device_request, u), [4, p({
+                      return ur(Je.action.mfa_remove_device_request, u), [4, p({
                         body: {
                           deviceId: i.id
                         }
                       })];
                     case 1:
-                      return (null == (e = t.sent()) ? void 0 : e.error) ? lr(Ke.action.mfa_remove_device_request_error, u) : l(!0), [2]
+                      return (null == (e = t.sent()) ? void 0 : e.error) ? ur(Je.action.mfa_remove_device_request_error, u) : l(!0), [2]
                   }
                 })
               })()
             },
-            v = d.formatMessage(fn.security_status_unlink_button_text),
-            w = d.formatMessage(fn.security_status_sublabel_text),
+            v = d.formatMessage(pn.security_status_unlink_button_text),
+            w = d.formatMessage(pn.security_status_sublabel_text),
             j = v + i.deviceAddress + w;
           return (0, r.jsxs)(K, {
             testId: "mfa-device-section",
             children: [(0, r.jsxs)($, {
               children: [(0, r.jsx)(J, {
-                children: d.formatMessage(fn.security_mfa_device_title)
+                children: d.formatMessage(pn.security_mfa_device_title)
               }), (0, r.jsx)(Q, {
-                children: d.formatMessage(fn.security_mfa_device_title_aside)
+                children: d.formatMessage(pn.security_mfa_device_title_aside)
               })]
             }), (0, r.jsx)(ee, {
               children: (0, r.jsxs)(te, {
@@ -10642,7 +10585,7 @@ try {
                 testId: "deregisterRow",
                 children: [(0, r.jsx)(ae, {
                   children: (0, r.jsxs)(ie, {
-                    className: $i,
+                    className: to,
                     children: [(0, r.jsx)(oe, {
                       className: "_15h4nzg8",
                       testId: "mfa-device-address",
@@ -10666,31 +10609,31 @@ try {
                   })
                 })]
               })
-            }), c && (0, r.jsx)(Sn, {
+            }), c && (0, r.jsx)(In, {
               isLoading: b,
               onFormInvalid: function(e) {
                 var t;
-                "non_empty" === (null == e || null === (t = e[kn]) || void 0 === t ? void 0 : t.type) && lr(Ke.action.mfa_remove_device_verify_error_password_missing), (null == e ? void 0 : e[On]) && lr(Ke.action.mfa_remove_device_verify_error_invalid_verification_code)
+                "non_empty" === (null == e || null === (t = e[Sn]) || void 0 === t ? void 0 : t.type) && ur(Je.action.mfa_remove_device_verify_error_password_missing), (null == e ? void 0 : e[An]) && ur(Je.action.mfa_remove_device_verify_error_invalid_verification_code)
               },
               onSubmit: function(e) {
                 var t = e.formData,
                   n = e.setError;
-                return ro(function() {
+                return so(function() {
                   var e, r, a;
-                  return ao(this, function(i) {
+                  return co(this, function(i) {
                     switch (i.label) {
                       case 0:
-                        return lr(Ke.action.mfa_remove_device_verify_request, u), [4, g({
+                        return ur(Je.action.mfa_remove_device_verify_request, u), [4, g({
                           body: {
-                            code: t[On],
-                            mfaDeviceDeregistrationCookie: _.mfaDeviceDeregistrationCookie,
-                            password: t[kn]
+                            code: t[An],
+                            mfaDeviceDeregistrationCookie: f.mfaDeviceDeregistrationCookie,
+                            password: t[Sn]
                           }
                         })];
                       case 1:
-                        return (null == (e = i.sent()) ? void 0 : e.error) ? (lr(Ke.action.mfa_remove_device_verify_error, u), r = e.error.code, (a = Zn[r]) && n(a.field, {
+                        return (null == (e = i.sent()) ? void 0 : e.error) ? (ur(Je.action.mfa_remove_device_verify_error, u), r = e.error.code, (a = Kn[r]) && n(a.field, {
                           message: d.formatMessage(a.message)
-                        })) : (lr(Ke.action.mfa_remove_device_success, u), o()), [2]
+                        })) : (ur(Je.action.mfa_remove_device_success, u), o()), [2]
                     }
                   })
                 })()
@@ -10698,36 +10641,36 @@ try {
             })]
           })
         },
-        oo = function() {
-          var e = (0, L.A)();
+        uo = function() {
+          var e = (0, N.A)();
           return (0, r.jsx)(ee, {
             testId: "noRememberedDevices",
             children: (0, r.jsx)(te, {
-              label: e.formatMessage(fn.security_status_no_remembered_devices_title),
+              label: e.formatMessage(pn.security_status_no_remembered_devices_title),
               testId: "noRememberedDevicesRow",
               children: (0, r.jsxs)(ie, {
                 children: [(0, r.jsx)(E.Body, {
                   size: "MD",
                   appearance: "bold",
                   className: "_15h4nzga",
-                  children: e.formatMessage(fn.security_status_no_remembered_devices_title)
+                  children: e.formatMessage(pn.security_status_no_remembered_devices_title)
                 }), (0, r.jsx)(E.Body, {
                   size: "SM",
                   testId: "no-remembered-devices",
-                  children: e.formatMessage(fn.security_status_no_remembered_devices_title_aside)
+                  children: e.formatMessage(pn.security_status_no_remembered_devices_title_aside)
                 })]
               })
             })
           })
         };
 
-      function so(e, t) {
+      function _o(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function co(e, t, n, r, a, i, o) {
+      function fo(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -10736,9 +10679,9 @@ try {
         }
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
-      var lo = function() {
-          var e, t, n = (0, L.A)(),
-            i = Ee(),
+      var po = function() {
+          var e, t, n = (0, N.A)(),
+            i = qe(),
             o = (e = (0, a.useState)(new Set), t = 2, function(e) {
               if (Array.isArray(e)) return e
             }(e) || function(e, t) {
@@ -10762,40 +10705,40 @@ try {
               }
             }(e, t) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return so(e, t);
+                if ("string" == typeof e) return _o(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? so(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? _o(e, t) : void 0
               }
             }(e, t) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
             }()),
             s = o[0],
             c = o[1],
-            l = rr({
-              route: Be.ForgetMfaRememberedMachine,
+            l = ir({
+              route: Ye.ForgetMfaRememberedMachine,
               fetchOnInitial: !1
             }).fetch,
-            d = rr({
-              route: Be.GetMfaRememberedMachines
+            d = ir({
+              route: Ye.GetMfaRememberedMachines
             }),
             u = d.data,
-            f = d.fetch,
-            _ = d.loading;
+            _ = d.fetch,
+            f = d.loading;
           return (0, r.jsxs)(K, {
             testId: "mfa-remembered-machines-section",
             children: [(0, r.jsxs)($, {
               testId: "mfa-remembered-machines-header",
               children: [(0, r.jsx)(J, {
-                children: n.formatMessage(fn.security_remembered_machines_title)
+                children: n.formatMessage(pn.security_remembered_machines_title)
               }), (0, r.jsx)(Q, {
                 testId: "mfa-remembered-machines-sub-header",
-                children: n.formatMessage(fn.security_remembered_machines_aside)
+                children: n.formatMessage(pn.security_remembered_machines_aside)
               })]
-            }), _ && !u && (0, r.jsx)(E.Spinner, {
+            }), f && !u && (0, r.jsx)(E.Spinner, {
               size: "inlineLG",
-              label: n.formatMessage(fn.security_status_remembered_devices_spinner_label),
+              label: n.formatMessage(pn.security_status_remembered_devices_spinner_label),
               testId: "remembered-machines-loading-spinner"
-            }), !_ && u && u.length > 0 ? (0, r.jsx)(uo, {
+            }), !f && u && u.length > 0 ? (0, r.jsx)(mo, {
               rememberedMachines: u,
               rowsForgetting: s,
               forgetMachine: function(e) {
@@ -10877,7 +10820,7 @@ try {
                       case 0:
                         return c(function(t) {
                           return t.add(e)
-                        }), lr(Ke.action.mfa_forget_remembered_machine), [4, l({
+                        }), ur(Je.action.mfa_forget_remembered_machine), [4, l({
                           body: {
                             machineId: e
                           }
@@ -10885,8 +10828,8 @@ try {
                       case 1:
                         return (null == (t = r.sent()) ? void 0 : t.error) ? [3, 3] : (i.displayNewToast({
                           appearance: "success",
-                          message: n.formatMessage(fn.security_status_forgot_device_toast_confirmation_text)
-                        }), [4, f({})]);
+                          message: n.formatMessage(pn.security_status_forgot_device_toast_confirmation_text)
+                        }), [4, _({})]);
                       case 2:
                         r.sent(), r.label = 3;
                       case 3:
@@ -10903,29 +10846,31 @@ try {
                     var i = t.apply(e, n);
 
                     function o(e) {
-                      co(i, r, a, o, s, "next", e)
+                      fo(i, r, a, o, s, "next", e)
                     }
 
                     function s(e) {
-                      co(i, r, a, o, s, "throw", e)
+                      fo(i, r, a, o, s, "throw", e)
                     }
                     o(void 0)
                   })
                 })();
                 var t
               }
-            }) : (0, r.jsx)(oo, {})]
+            }) : (0, r.jsx)(uo, {})]
           })
         },
-        uo = function(e) {
+        mo = function(e) {
           var t = e.rememberedMachines,
             n = e.rowsForgetting,
             i = e.forgetMachine;
           return (0, r.jsx)(ee, {
             testId: "mfa-remembered-machines-row-container",
-            children: null == t ? void 0 : t.map(function(e, o) {
+            children: null == t ? void 0 : t.sort(function(e, t) {
+              return t.lastSeenDate.localeCompare(e.lastSeenDate)
+            }).map(function(e, o) {
               return (0, r.jsxs)(a.Fragment, {
-                children: [(0, r.jsx)(fo, {
+                children: [(0, r.jsx)(ho, {
                   forgetMachine: i,
                   rememberedMachine: e,
                   rowsForgetting: n
@@ -10937,19 +10882,19 @@ try {
             })
           })
         },
-        fo = function(e) {
+        ho = function(e) {
           var t = e.forgetMachine,
             n = e.rememberedMachine,
             a = e.rowsForgetting,
-            i = (0, L.A)(),
-            o = i.formatMessage(fn.security_status_forget_machine_button_text),
-            s = i.formatMessage(fn.security_status_remembered_machine_last_seen, {
-              lastSeen: Pn({
+            i = (0, N.A)(),
+            o = i.formatMessage(pn.security_status_forget_machine_button_text),
+            s = i.formatMessage(pn.security_status_remembered_machine_last_seen, {
+              lastSeen: Dn({
                 dateString: n.lastSeenDate,
                 locale: i.locale
               })
             }),
-            c = i.formatMessage(fn.security_status_remembered_machine_last_ip, {
+            c = i.formatMessage(pn.security_status_remembered_machine_last_ip, {
               ip: n.lastSeenIp
             }),
             l = o + n.name + s + c;
@@ -10964,7 +10909,7 @@ try {
             children: [(0, r.jsx)(ae, {
               testId: "rememberedMachine",
               children: (0, r.jsxs)(ie, {
-                className: $i,
+                className: to,
                 children: [(0, r.jsx)(oe, {
                   testId: "mfa-remembered-machine-name",
                   children: n.name
@@ -10993,65 +10938,58 @@ try {
             })]
           })
         },
-        _o = function(e) {
+        go = function(e) {
           var t = e.device,
             n = e.removeMfaDevice;
-          return (0, r.jsxs)(W, {
+          return (0, r.jsxs)(Z, {
             testId: "auth-status",
-            children: [(0, r.jsx)(io, {
+            children: [(0, r.jsx)(lo, {
               device: t,
               removeMfaDevice: n
-            }), (0, r.jsx)(lo, {})]
+            }), (0, r.jsx)(po, {})]
+          })
+        },
+        bo = function(e) {
+          var t = e.toggleSetup,
+            n = (0, N.A)();
+          return (0, r.jsx)(Z, {
+            testId: "no-auth",
+            children: (0, r.jsxs)(K, {
+              children: [(0, r.jsxs)($, {
+                children: [(0, r.jsx)(J, {
+                  children: n.formatMessage(pn.security_title)
+                }), (0, r.jsx)(Q, {
+                  children: n.formatMessage(pn.security_title_aside)
+                })]
+              }), (0, r.jsx)(te, {
+                isInteractable: !0,
+                label: n.formatMessage(pn.security_no_auth_navigation_aria_label),
+                onClick: t,
+                testId: "start-mfa-setup",
+                children: (0, r.jsxs)(re, {
+                  children: [(0, r.jsx)(oe, {
+                    children: n.formatMessage(pn.security_no_auth_label)
+                  }), (0, r.jsx)(E.IconButton, {
+                    appearance: "ghost",
+                    icon: "ChevronRight",
+                    label: n.formatMessage(pn.security_no_auth_navigation_aria_label),
+                    onClick: t,
+                    size: "LG",
+                    testId: "startMfaSetupButton"
+                  })]
+                })
+              })]
+            })
           })
         };
-      const po = (0, _e.YK)({
-        layout_chevron_right_icon_label: {
-          defaultMessage: "Right-facing chevron",
-          description: "Label to describe a right-facing chevron",
-          id: "layout_chevron_right_icon_label"
-        }
-      });
-      var mo = function(e) {
-        var t = e.toggleSetup,
-          n = (0, L.A)();
-        return (0, r.jsx)(W, {
-          testId: "no-auth",
-          children: (0, r.jsxs)(K, {
-            children: [(0, r.jsxs)($, {
-              children: [(0, r.jsx)(J, {
-                children: n.formatMessage(fn.security_title)
-              }), (0, r.jsx)(Q, {
-                children: n.formatMessage(fn.security_title_aside)
-              })]
-            }), (0, r.jsx)(te, {
-              isInteractable: !0,
-              label: n.formatMessage(fn.security_no_auth_navigation_aria_label),
-              onClick: t,
-              testId: "start-mfa-setup",
-              children: (0, r.jsxs)(re, {
-                children: [(0, r.jsx)(oe, {
-                  children: n.formatMessage(fn.security_no_auth_label)
-                }), (0, r.jsx)(E.IconButton, {
-                  appearance: "ghost",
-                  icon: "ChevronRight",
-                  label: n.formatMessage(po.layout_chevron_right_icon_label),
-                  onClick: t,
-                  size: "LG",
-                  testId: "startMfaSetupButton"
-                })]
-              })
-            })]
-          })
-        })
-      };
 
-      function ho(e, t) {
+      function yo(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function go(e, t) {
+      function vo(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -11075,58 +11013,58 @@ try {
           }
         }(e, t) || function(e, t) {
           if (e) {
-            if ("string" == typeof e) return ho(e, t);
+            if ("string" == typeof e) return yo(e, t);
             var n = Object.prototype.toString.call(e).slice(8, -1);
-            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? ho(e, t) : void 0
+            return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? yo(e, t) : void 0
           }
         }(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
-      var bo = function() {
+      var wo = function() {
         var e = (0, i.useLocation)(),
-          t = go((0, a.useState)(!1), 2),
+          t = vo((0, a.useState)(!1), 2),
           n = t[0],
           o = t[1],
-          s = go((0, a.useState)(void 0), 2),
+          s = vo((0, a.useState)(void 0), 2),
           c = s[0],
           l = s[1],
-          d = rr({
-            route: Be.GetMfaDevices
+          d = ir({
+            route: Ye.GetMfaDevices
           }),
           u = d.data,
-          f = d.loading;
+          _ = d.loading;
         (0, a.useEffect)(function() {
           l(null == u ? void 0 : u[0])
         }, [u]), (0, a.useEffect)(function() {
           p()
         }, [e.key]);
-        var _ = function() {
-            o(!0), window.scrollTo(0, 0), lr(Ke.action.mfa_enroll_start, Ke.labels.device_priority), lr(Ke.action.mfa_enroll_select_device_type, Ke.labels.device_type_google)
+        var f = function() {
+            o(!0), window.scrollTo(0, 0), ur(Je.action.mfa_enroll_start, Je.labels.device_priority), ur(Je.action.mfa_enroll_select_device_type, Je.labels.device_type_google)
           },
           p = function() {
-            o(!1), window.scrollTo(0, 0), lr(Ke.action.mfa_enroll_cancel, Ke.labels.device_type)
+            o(!1), window.scrollTo(0, 0), ur(Je.action.mfa_enroll_cancel, Je.labels.device_type)
           },
           m = function() {
             o(!1), l(void 0), window.scrollTo(0, 0)
           },
           h = (0, a.useMemo)(function() {
-            return c ? (0, r.jsx)(_o, {
+            return c ? (0, r.jsx)(go, {
               device: c,
               removeMfaDevice: m
-            }) : n ? (0, r.jsx)(Qi, {
+            }) : n ? (0, r.jsx)(ro, {
               backNav: p,
               setMfaDevice: l
-            }) : (0, r.jsx)(mo, {
-              toggleSetup: _
+            }) : (0, r.jsx)(bo, {
+              toggleSetup: f
             })
           }, [n, c]);
-        return (0, r.jsx)(un, {
-          isLoading: f,
+        return (0, r.jsx)(fn, {
+          isLoading: _,
           children: h
         })
       };
-      const yo = (0, _e.YK)({
+      const jo = (0, fe.YK)({
         social_page_title: {
           defaultMessage: "Blocked List",
           description: "Title of the social page.",
@@ -11193,29 +11131,29 @@ try {
           id: "social_page_infinite_scroll_spinner_label"
         }
       });
-      var vo = function() {
-        var e = (0, L.A)();
+      var xo = function() {
+        var e = (0, N.A)();
         return (0, r.jsxs)("div", {
           className: "_1kvmuad2",
           "data-testid": "noBlockedUsers",
           children: [(0, r.jsx)(E.Heading, {
             level: 6,
-            children: e.formatMessage(yo.social_page_no_blocked_title)
+            children: e.formatMessage(jo.social_page_no_blocked_title)
           }), (0, r.jsx)(E.Body, {
             size: "MD",
             className: "_1kvmuad3",
-            children: e.formatMessage(yo.social_page_no_blocked_description)
+            children: e.formatMessage(jo.social_page_no_blocked_description)
           })]
         })
       };
 
-      function wo(e, t) {
+      function Mo(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function jo(e, t, n, r, a, i, o) {
+      function ko(e, t, n, r, a, i, o) {
         try {
           var s = e[i](o),
             c = s.value
@@ -11225,7 +11163,7 @@ try {
         s.done ? t(c) : Promise.resolve(c).then(r, a)
       }
 
-      function xo(e, t) {
+      function Oo(e, t) {
         return function(e) {
           if (Array.isArray(e)) return e
         }(e) || function(e, t) {
@@ -11247,65 +11185,65 @@ try {
             }
             return i
           }
-        }(e, t) || Mo(e, t) || function() {
+        }(e, t) || So(e, t) || function() {
           throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
         }()
       }
 
-      function Mo(e, t) {
+      function So(e, t) {
         if (e) {
-          if ("string" == typeof e) return wo(e, t);
+          if ("string" == typeof e) return Mo(e, t);
           var n = Object.prototype.toString.call(e).slice(8, -1);
-          return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? wo(e, t) : void 0
+          return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Mo(e, t) : void 0
         }
       }
-      var ko = {
+      var Ao = {
           code: "0.0.1",
           logId: ""
         },
-        Oo = function() {
-          var e = (0, L.A)(),
-            t = xo((0, a.useState)(0), 2),
+        Io = function() {
+          var e = (0, N.A)(),
+            t = Oo((0, a.useState)(0), 2),
             n = t[0],
             i = t[1],
-            o = xo((0, a.useState)(!1), 2),
+            o = Oo((0, a.useState)(!1), 2),
             s = o[0],
             c = o[1],
-            l = xo((0, a.useState)([]), 2),
+            l = Oo((0, a.useState)([]), 2),
             d = l[0],
             u = l[1],
-            f = (0, a.useRef)(null),
-            _ = Ee(),
+            _ = (0, a.useRef)(null),
+            f = qe(),
             p = (0, a.useMemo)(function() {
               return new IntersectionObserver(function(e) {
-                var t = xo(e, 1)[0];
+                var t = Oo(e, 1)[0];
                 c(t.isIntersecting)
               })
-            }, [f]);
+            }, [_]);
           (0, a.useEffect)(function() {
-            return f.current && p.observe(f.current),
+            return _.current && p.observe(_.current),
               function() {
                 return p.disconnect()
               }
-          }, [f.current]);
-          var m = rr({
+          }, [_.current]);
+          var m = ir({
               queryOrRoute: "?index=".concat(n, "&pageSize=").concat(30),
-              route: Be.GetBlockedUsers
+              route: Ye.GetBlockedUsers
             }),
             h = m.data,
             g = m.fetch,
             b = m.loading,
-            y = rr({
+            y = ir({
               fetchOnInitial: !1,
-              route: Be.UnblockUser
+              route: Ye.UnblockUser
             }).fetch;
           (0, a.useEffect)(function() {
             if (h && h.users.length > 0) {
               var e = function(e) {
-                if (Array.isArray(e)) return wo(e)
+                if (Array.isArray(e)) return Mo(e)
               }(t = d) || function(e) {
                 if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-              }(t) || Mo(t) || function() {
+              }(t) || So(t) || function() {
                 throw new TypeError("Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
               }();
               e[n] = {
@@ -11415,12 +11353,12 @@ try {
                         users: i.users.filter(function(e) {
                           return e.rockstarId !== n.rockstarId
                         })
-                      }, _.displayNewToast({
+                      }, f.displayNewToast({
                         appearance: "success",
-                        message: e.formatMessage(yo.social_page_toast_confirmation_text, {
+                        message: e.formatMessage(jo.social_page_toast_confirmation_text, {
                           nickname: n.displayName
                         })
-                      })) : _.displayNewError(ko), [2]
+                      })) : f.displayNewError(Ao), [2]
                   }
                 })
               }, function() {
@@ -11430,11 +11368,11 @@ try {
                   var i = r.apply(e, t);
 
                   function o(e) {
-                    jo(i, n, a, o, s, "next", e)
+                    ko(i, n, a, o, s, "next", e)
                   }
 
                   function s(e) {
-                    jo(i, n, a, o, s, "throw", e)
+                    ko(i, n, a, o, s, "throw", e)
                   }
                   o(void 0)
                 })
@@ -11444,23 +11382,23 @@ try {
             w = d.some(function(e) {
               return e.users.length > 0
             });
-          return (0, r.jsxs)(un, {
+          return (0, r.jsxs)(fn, {
             isLoading: !w && b,
-            children: [w ? (0, r.jsx)(W, {
+            children: [w ? (0, r.jsx)(Z, {
               testId: "blockedUsers",
               children: (0, r.jsxs)(K, {
                 children: [(0, r.jsxs)($, {
                   children: [(0, r.jsx)(J, {
-                    children: e.formatMessage(yo.social_page_title)
+                    children: e.formatMessage(jo.social_page_title)
                   }), (0, r.jsx)(Q, {
-                    children: e.formatMessage(yo.social_page_description)
+                    children: e.formatMessage(jo.social_page_description)
                   })]
                 }), (0, r.jsxs)(ee, {
                   children: [d.map(function(e) {
                     return (0, r.jsxs)(a.Fragment, {
                       children: [e.users.map(function(t, n) {
                         return (0, r.jsxs)(a.Fragment, {
-                          children: [(0, r.jsx)(So, {
+                          children: [(0, r.jsx)(Po, {
                             pageIndex: e.index,
                             unblockUser: v,
                             userToUnblock: t
@@ -11474,48 +11412,48 @@ try {
                     }, "blocked-users-page-".concat(e.index))
                   }), b && s && (0, r.jsx)(E.Spinner, {
                     className: "_1kvmuad4",
-                    label: e.formatMessage(yo.social_page_infinte_scroll_spinner_label),
+                    label: e.formatMessage(jo.social_page_infinte_scroll_spinner_label),
                     testId: "infiniteScrollSpinner"
                   })]
                 })]
               })
-            }) : (0, r.jsx)(vo, {}), (0, r.jsx)("div", {
+            }) : (0, r.jsx)(xo, {}), (0, r.jsx)("div", {
               "data-testid": "loadMore",
-              ref: f
+              ref: _
             })]
           })
         },
-        So = function(e) {
+        Po = function(e) {
           var t = e.pageIndex,
             n = e.unblockUser,
             i = e.userToUnblock,
-            o = (0, L.A)(),
-            s = xo((0, a.useState)(!1), 2),
+            o = (0, N.A)(),
+            s = Oo((0, a.useState)(!1), 2),
             c = s[0],
             l = s[1],
-            d = xo((0, a.useState)(!1), 2),
+            d = Oo((0, a.useState)(!1), 2),
             u = d[0],
-            f = d[1],
-            _ = function() {
-              return f(!0)
+            _ = d[1],
+            f = function() {
+              return _(!0)
             },
             p = function() {
-              return f(!1)
+              return _(!1)
             },
-            m = o.formatMessage(yo.social_page_date_prefix, {
-              date: In({
+            m = o.formatMessage(jo.social_page_date_prefix, {
+              date: Cn({
                 dateString: i.lastUpdatedDateUtc,
                 locale: o.locale
               })
             }),
-            h = o.formatMessage(yo.social_page_unblock_button_label),
+            h = o.formatMessage(jo.social_page_unblock_button_label),
             g = h + i.displayName + m;
           return (0, r.jsxs)(te, {
             "aria-haspopup": "dialog",
             isDisabled: c,
             isInteractable: !0,
             label: g,
-            onClick: _,
+            onClick: f,
             testId: "row-".concat(i.displayName),
             children: [(0, r.jsxs)(ae, {
               testId: "blockedUser",
@@ -11540,7 +11478,7 @@ try {
             }), (0, r.jsx)(de, {
               children: (0, r.jsxs)(E.Dialog.Root, {
                 isOpen: u,
-                onOpenChange: f,
+                onOpenChange: _,
                 children: [(0, r.jsx)(E.Dialog.Trigger, {
                   asChild: !0,
                   children: (0, r.jsx)(E.Button, {
@@ -11548,13 +11486,13 @@ try {
                     fullWidth: !0,
                     isDisabled: c,
                     isLoading: c,
-                    onPress: _,
+                    onPress: f,
                     size: "MD",
                     testId: "modalButton-".concat(i.displayName),
                     children: h
                   })
                 }), (0, r.jsx)(E.Dialog.Overlay, {
-                  className: Er,
+                  className: Ur,
                   onClick: function(e) {
                     e.stopPropagation(), p()
                   },
@@ -11566,14 +11504,14 @@ try {
                     },
                     testId: "unblockModal",
                     children: [(0, r.jsx)(E.Dialog.CloseButton, {
-                      label: o.formatMessage(Fr.modal_close_modal_button_label),
+                      label: o.formatMessage(Yr.modal_close_modal_button_label),
                       onPress: p
                     }), (0, r.jsx)(E.Dialog.ScrollArea, {
                       children: (0, r.jsxs)(E.Dialog.Layout, {
                         className: "_1kvmuad5",
                         children: [(0, r.jsx)(E.Dialog.Title, {
                           testId: "unblockModalNickname",
-                          children: o.formatMessage(yo.social_page_unblock_modal_title, {
+                          children: o.formatMessage(jo.social_page_unblock_modal_title, {
                             nickName: i.displayName
                           })
                         }), (0, r.jsx)("img", {
@@ -11592,7 +11530,7 @@ try {
                             },
                             size: "LG",
                             testId: "modalUnblock",
-                            children: o.formatMessage(yo.social_page_unblock_button_label)
+                            children: o.formatMessage(jo.social_page_unblock_button_label)
                           }), (0, r.jsx)(E.Dialog.Button, {
                             appearance: "ghost",
                             isDisabled: c,
@@ -11600,7 +11538,7 @@ try {
                             onPress: p,
                             size: "MD",
                             testId: "modalCancel",
-                            children: o.formatMessage(yo.social_page_unblock_modal_cancel_button_text)
+                            children: o.formatMessage(jo.social_page_unblock_modal_cancel_button_text)
                           })]
                         })]
                       })
@@ -11611,7 +11549,7 @@ try {
             })]
           })
         };
-      const Ao = (0, _e.YK)({
+      const Co = (0, fe.YK)({
         account_layout_privacy_menu_item: {
           defaultMessage: "Privacy",
           description: "privacy_menu_item",
@@ -11643,45 +11581,45 @@ try {
           id: "account_layout_profile_menu_item"
         }
       });
-      var Io = [{
+      var Do = [{
         path: "",
-        Icon: et.Person,
-        label: Ao.account_layout_profile_menu_item,
+        Icon: nt.Person,
+        label: Co.account_layout_profile_menu_item,
         nestedPath: "/account/details/",
-        ga: Ke.action.menu_profile,
+        ga: Je.action.menu_profile,
         testId: "menuProfile"
       }, {
         path: "privacy",
-        Icon: et.LockKeyhole,
-        label: Ao.account_layout_privacy_menu_item,
-        ga: Ke.action.menu_privacy,
+        Icon: nt.LockKeyhole,
+        label: Co.account_layout_privacy_menu_item,
+        ga: Je.action.menu_privacy,
         testId: "menuPrivacy"
       }, {
         path: "connections",
-        Icon: et.CircleCheck,
-        label: Ao.account_layout_connections_menu_item,
-        ga: Ke.action.menu_linked_accounts,
+        Icon: nt.CircleCheck,
+        label: Co.account_layout_connections_menu_item,
+        ga: Je.action.menu_linked_accounts,
         testId: "menuConnections"
       }, {
         path: "communications",
-        Icon: et.Envelope,
-        label: Ao.account_layout_communications_menu_item,
-        ga: Ke.action.menu_communications,
+        Icon: nt.Envelope,
+        label: Co.account_layout_communications_menu_item,
+        ga: Je.action.menu_communications,
         testId: "menuCommunications"
       }, {
         path: "security",
-        Icon: et.ShieldCheck,
-        label: Ao.account_layout_security_menu_item,
-        ga: Ke.action.menu_security,
+        Icon: nt.ShieldCheck,
+        label: Co.account_layout_security_menu_item,
+        ga: Je.action.menu_security,
         testId: "menuSecurity"
       }, {
         path: "social",
-        Icon: et.TwoPeople,
-        label: Ao.account_layout_social_menu_item,
-        ga: Ke.action.menu_social,
+        Icon: nt.TwoPeople,
+        label: Co.account_layout_social_menu_item,
+        ga: Je.action.menu_social,
         testId: "menuSocial"
       }];
-      const Po = (0, _e.YK)({
+      const To = (0, fe.YK)({
           document_title_profile: {
             defaultMessage: "Account Settings",
             description: "HTML document title for /account",
@@ -11743,79 +11681,79 @@ try {
             id: "document_title_email_verify"
           }
         }),
-        Co = {
+        Lo = {
           catchAll: {
             route: "*",
-            title: Po.document_title_profile
+            title: To.document_title_profile
           },
           profile: {
             route: "/",
-            title: Po.document_title_profile
+            title: To.document_title_profile
           },
           email: {
             route: "/details/email",
-            title: Po.document_title_email
+            title: To.document_title_email
           },
           password: {
             route: "/details/password",
-            title: Po.document_title_password
+            title: To.document_title_password
           },
           nickname: {
             route: "/details/nickname",
-            title: Po.document_title_nickname
+            title: To.document_title_nickname
           },
           privacy: {
             route: "/privacy",
-            title: Po.document_title_privacy
+            title: To.document_title_privacy
           },
           connections: {
             route: "/connections",
-            title: Po.document_title_connections
+            title: To.document_title_connections
           },
           communications: {
             route: "/communications",
-            title: Po.document_title_communications
+            title: To.document_title_communications
           },
           security: {
             route: "/security",
-            title: Po.document_title_security
+            title: To.document_title_security
           },
           social: {
             route: "/social",
-            title: Po.document_title_social
+            title: To.document_title_social
           },
           deleteCancel: {
             route: "/delete/cancel",
-            title: Po.document_title_delete_cancel
+            title: To.document_title_delete_cancel
           },
           deleteComplete: {
             route: "/delete/complete",
-            title: Po.document_title_delete_complete
+            title: To.document_title_delete_complete
           },
           emailVerify: {
             route: "/verify",
-            title: Po.document_title_email_verify
+            title: To.document_title_email_verify
           }
         };
-      var Do = function() {
-        var e, t = (0, L.A)(),
+      var No = function() {
+        var e, t = (0, N.A)(),
           n = (0, i.useLocation)(),
-          a = rr({
-            route: Be.ProfileOverview
+          a = ir({
+            route: Ye.ProfileOverview
           }),
           o = a.data,
           s = a.loading,
-          c = rr({
-            route: Be.GetLinkedAccounts
+          c = ir({
+            route: Ye.GetLinkedAccounts
           }),
           l = c.data,
           d = c.loading;
-        return fr(null == l ? void 0 : l.linkedAccounts), rr({
-          route: Be.PasswordRequirements
+        return fr(null == l ? void 0 : l.linkedAccounts), ir({
+          route: Ye.PasswordRequirements
         }), (0, r.jsxs)("div", {
           className: "_1md0fdx0 dhzzuw5 dhzzuw4",
-          children: [(0, r.jsx)(gr, {
-            children: Io.map(function(e) {
+          children: [(0, r.jsx)(br, {
+            children: Do.map(function(e) {
               var a = e.path,
                 o = e.Icon,
                 s = e.label,
@@ -11834,7 +11772,7 @@ try {
                 draggable: !1,
                 children: function(e) {
                   var n = e.isActive;
-                  return (0, r.jsxs)(br, {
+                  return (0, r.jsxs)(yr, {
                     active: n || u,
                     children: [(0, r.jsx)(o, {
                       className: "_1md0fdx4",
@@ -11853,57 +11791,57 @@ try {
                 }
               }, a)
             })
-          }), (0, r.jsx)(vr, {
+          }), (0, r.jsx)(wr, {
             className: "_1md0fdx1",
             children: (0, r.jsxs)(i.Routes, {
               children: [(0, r.jsx)(i.Route, {
                 index: !0,
-                element: (0, r.jsx)(un, {
+                element: (0, r.jsx)(fn, {
                   isLoading: s,
-                  children: (0, r.jsx)(Ha, {
+                  children: (0, r.jsx)(Za, {
                     account: o
                   })
                 })
               }), (0, r.jsx)(i.Route, {
-                path: Co.email.route,
-                element: (0, r.jsx)(xn, {})
+                path: Lo.email.route,
+                element: (0, r.jsx)(kn, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.password.route,
-                element: (0, r.jsx)(Xn, {})
+                path: Lo.password.route,
+                element: (0, r.jsx)(Zn, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.nickname.route,
-                element: (0, r.jsx)(Rn, {})
+                path: Lo.nickname.route,
+                element: (0, r.jsx)(Gn, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.privacy.route,
-                element: (0, r.jsx)(ni, {
+                path: Lo.privacy.route,
+                element: (0, r.jsx)(oi, {
                   isMinor: null !== (e = null == o ? void 0 : o.isMinor) && void 0 !== e && e
                 })
               }), (0, r.jsx)(i.Route, {
-                path: Co.connections.route,
-                element: (0, r.jsx)(Ci, {
+                path: Lo.connections.route,
+                element: (0, r.jsx)(Ni, {
                   data: l,
                   loading: d
                 })
               }), (0, r.jsx)(i.Route, {
-                path: Co.communications.route,
-                element: (0, r.jsx)(zi, {})
+                path: Lo.communications.route,
+                element: (0, r.jsx)(Wi, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.security.route,
-                element: (0, r.jsx)(bo, {})
+                path: Lo.security.route,
+                element: (0, r.jsx)(wo, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.social.route,
-                element: (0, r.jsx)(Oo, {})
+                path: Lo.social.route,
+                element: (0, r.jsx)(Io, {})
               }), (0, r.jsx)(i.Route, {
-                path: Co.catchAll.route,
+                path: Lo.catchAll.route,
                 element: (0, r.jsx)(i.Navigate, {
-                  to: Co.profile.route
+                  to: Lo.profile.route
                 })
               })]
             })
-          }), (0, r.jsx)(ii, {})]
+          }), (0, r.jsx)(li, {})]
         })
       };
-      const To = (0, _e.YK)({
+      const Eo = (0, fe.YK)({
         cancel_account_deletion_request_received_title: {
           defaultMessage: "Account Deletion Cancellation Request Received",
           description: "The title for the account deletion cancellation request received alert.",
@@ -11946,13 +11884,13 @@ try {
         }
       });
 
-      function No(e, t) {
+      function Ro(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var Lo = function() {
-        var e, t, n = (0, L.A)(),
+      var qo = function() {
+        var e, t, n = (0, N.A)(),
           o = (0, i.useNavigate)(),
           s = (e = (0, i.useSearchParams)(), t = 1, function(e) {
             if (Array.isArray(e)) return e
@@ -11977,40 +11915,40 @@ try {
             }
           }(e, t) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return No(e, t);
+              if ("string" == typeof e) return Ro(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? No(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ro(e, t) : void 0
             }
           }(e, t) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }())[0].get("token"),
-          c = rr({
-            route: Be.CancelAccountDeletion,
+          c = ir({
+            route: Ye.CancelAccountDeletion,
             fetchOnInitial: !1,
             queryOrRoute: "/".concat(s)
           }),
           l = c.data,
           d = c.error,
           u = c.fetch,
-          f = c.isRequestComplete;
+          _ = c.isRequestComplete;
         return (0, a.useEffect)(function() {
           s ? u({
             queryOrRoute: "/".concat(s)
           }) : o("/account")
-        }, [s]), s && (0, r.jsx)(un, {
-          isLoading: !f,
+        }, [s]), s && (0, r.jsx)(fn, {
+          isLoading: !_,
           children: (0, r.jsx)("div", {
             className: "_16mxz470",
             children: (0, r.jsxs)("div", {
               className: "_16mxz471",
-              children: [(0, r.jsx)(fe, {
+              children: [(0, r.jsx)(_e, {
                 className: "_16mxz473",
                 label: "Rockstar Games",
                 testId: "rockstarLogo"
               }), (0, r.jsx)($, {
                 children: (0, r.jsx)(J, {
                   testId: "cancelTitle",
-                  children: d ? n.formatMessage(To.cancel_account_deletion_error_title) : (null == l ? void 0 : l.hasConflicts) ? n.formatMessage(To.cancel_account_deletion_request_already_received_title) : n.formatMessage(To.cancel_account_deletion_request_received_title)
+                  children: d ? n.formatMessage(Eo.cancel_account_deletion_error_title) : (null == l ? void 0 : l.hasConflicts) ? n.formatMessage(Eo.cancel_account_deletion_request_already_received_title) : n.formatMessage(Eo.cancel_account_deletion_request_received_title)
                 })
               }), (0, r.jsx)("div", {
                 className: "_16mxz472",
@@ -12018,21 +11956,21 @@ try {
                 children: d ? (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)(E.Body, {
                     size: "SM",
-                    children: n.formatMessage(To.cancel_account_deletion_error_description)
+                    children: n.formatMessage(Eo.cancel_account_deletion_error_description)
                   }), (0, r.jsx)(E.Body, {
                     size: "SM",
-                    children: n.formatMessage(To.cancel_account_deletion_support_text)
+                    children: n.formatMessage(Eo.cancel_account_deletion_support_text)
                   })]
                 }) : (null == l ? void 0 : l.hasConflicts) ? (0, r.jsx)(E.Body, {
                   size: "SM",
-                  children: n.formatMessage(To.cancel_account_deletion_request_already_received_description)
+                  children: n.formatMessage(Eo.cancel_account_deletion_request_already_received_description)
                 }) : (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)(E.Body, {
                     size: "SM",
-                    children: n.formatMessage(To.cancel_account_deletion_request_received_description)
+                    children: n.formatMessage(Eo.cancel_account_deletion_request_received_description)
                   }), (0, r.jsx)(E.Body, {
                     size: "SM",
-                    children: n.formatMessage(To.cancel_account_deletion_thank_you_text)
+                    children: n.formatMessage(Eo.cancel_account_deletion_thank_you_text)
                   })]
                 })
               })]
@@ -12041,12 +11979,12 @@ try {
         })
       };
 
-      function Eo(e, t) {
+      function Go(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      const Ro = function() {
+      const Uo = function() {
           var e, t, n = (0, i.useLocation)(),
             r = (e = (0, i.useSearchParams)(), t = 2, function(e) {
               if (Array.isArray(e)) return e
@@ -12071,9 +12009,9 @@ try {
               }
             }(e, t) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return Eo(e, t);
+                if ("string" == typeof e) return Go(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Eo(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Go(e, t) : void 0
               }
             }(e, t) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -12085,7 +12023,7 @@ try {
             o.get("lang") && (o.delete("lang"), s(o), c && (window.location.hash = c))
           }, [o])
         },
-        Go = (0, _e.YK)({
+        Vo = (0, fe.YK)({
           verify_email_title: {
             defaultMessage: "Email Verification",
             description: "The heading for the verify email page.",
@@ -12113,13 +12051,13 @@ try {
           }
         });
 
-      function Uo(e, t) {
+      function Fo(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
-      var Vo = function() {
-          var e, t, n = (0, L.A)(),
+      var zo = function() {
+          var e, t, n = (0, N.A)(),
             o = (e = (0, i.useSearchParams)(), t = 1, function(e) {
               if (Array.isArray(e)) return e
             }(e) || function(e, t) {
@@ -12143,9 +12081,9 @@ try {
               }
             }(e, t) || function(e, t) {
               if (e) {
-                if ("string" == typeof e) return Uo(e, t);
+                if ("string" == typeof e) return Fo(e, t);
                 var n = Object.prototype.toString.call(e).slice(8, -1);
-                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Uo(e, t) : void 0
+                return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Fo(e, t) : void 0
               }
             }(e, t) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
@@ -12153,33 +12091,33 @@ try {
             s = (0, i.useNavigate)(),
             c = o.get("ID"),
             l = o.get("code"),
-            d = rr({
+            d = ir({
               fetchOnInitial: !1,
-              route: Be.VerifyEmail
+              route: Ye.VerifyEmail
             }),
             u = d.error,
-            f = d.isRequestComplete,
-            _ = d.fetch;
+            _ = d.isRequestComplete,
+            f = d.fetch;
           return (0, a.useEffect)(function() {
-            c && l ? _({
+            c && l ? f({
               body: {
                 rockstarId: Number(c),
                 validationCode: l
               }
             }) : s("/account")
-          }, []), c && l && (0, r.jsx)(un, {
-            isLoading: !f,
+          }, []), c && l && (0, r.jsx)(fn, {
+            isLoading: !_,
             children: (0, r.jsx)("div", {
               className: "t0s62b0",
               children: (0, r.jsxs)("div", {
                 className: "t0s62b1",
-                children: [(0, r.jsx)(fe, {
+                children: [(0, r.jsx)(_e, {
                   className: "t0s62b3",
                   label: "Rockstar Games",
                   testId: "rockstarLogo"
                 }), (0, r.jsx)($, {
                   children: (0, r.jsx)(J, {
-                    children: n.formatMessage(Go.verify_email_title)
+                    children: n.formatMessage(Vo.verify_email_title)
                   })
                 }), (0, r.jsxs)("div", {
                   className: "t0s62b2",
@@ -12187,39 +12125,39 @@ try {
                     size: "LG",
                     appearance: "bold",
                     testId: "alertTitle",
-                    children: u ? n.formatMessage(Go.verify_email_alert_failure_title) : n.formatMessage(Go.verify_email_alert_success_title)
+                    children: u ? n.formatMessage(Vo.verify_email_alert_failure_title) : n.formatMessage(Vo.verify_email_alert_success_title)
                   }), (0, r.jsx)(E.Body, {
                     size: "SM",
                     testId: "alertDescription",
-                    children: u ? n.formatMessage(Go.verify_email_alert_failure_description) : n.formatMessage(Go.verify_email_alert_success_description)
+                    children: u ? n.formatMessage(Vo.verify_email_alert_failure_description) : n.formatMessage(Vo.verify_email_alert_success_description)
                   })]
                 })]
               })
             })
           })
         },
-        qo = function(e) {
+        Bo = function(e) {
           var t = e.children,
             n = ke().getAccessToken,
-            i = (0, L.A)(),
+            i = (0, N.A)(),
             o = be();
           return (0, a.useEffect)(function() {
             n()
           }, []), (0, a.useEffect)(function() {
             !1 === o.isAuthenticated && !1 === o.isAuthPending && window.location.replace(m.getAuthorizeUrl(i.locale))
-          }, [o.isAuthenticated, o.isAuthPending]), (0, r.jsx)(un, {
+          }, [o.isAuthenticated, o.isAuthPending]), (0, r.jsx)(fn, {
             isLoading: !o.isAuthenticated,
             children: t
           })
         };
 
-      function Fo(e, t) {
+      function Ho(e, t) {
         (null == t || t > e.length) && (t = e.length);
         for (var n = 0, r = new Array(t); n < t; n++) r[n] = e[n];
         return r
       }
 
-      function zo(e, t, n) {
+      function Yo(e, t, n) {
         return t in e ? Object.defineProperty(e, t, {
           value: n,
           enumerable: !0,
@@ -12228,20 +12166,20 @@ try {
         }) : e[t] = n, e
       }
 
-      function Bo(e) {
+      function Wo(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            zo(e, t, n[t])
+            Yo(e, t, n[t])
           })
         }
         return e
       }
 
-      function Ho(e, t) {
+      function Xo(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : function(e) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -12253,12 +12191,12 @@ try {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e
       }
-      const Yo = (Xo = function() {
+      const Zo = (Ko = function() {
         var e, t;
-        Ro(), e = (0, L.A)(), t = (0, i.useLocation)(), (0, a.useEffect)(function() {
-          var n, r = null !== (n = Object.values(Co).find(function(e) {
+        Uo(), e = (0, N.A)(), t = (0, i.useLocation)(), (0, a.useEffect)(function() {
+          var n, r = null !== (n = Object.values(Lo).find(function(e) {
             return "/account".concat(e.route) === t.pathname
-          })) && void 0 !== n ? n : Co.catchAll;
+          })) && void 0 !== n ? n : Lo.catchAll;
           window.postMessage({
             title: e.formatMessage(r.title),
             type: "graph.titleUpdate"
@@ -12296,19 +12234,19 @@ try {
             }
           }(n, c) || function(e, t) {
             if (e) {
-              if ("string" == typeof e) return Fo(e, t);
+              if ("string" == typeof e) return Ho(e, t);
               var n = Object.prototype.toString.call(e).slice(8, -1);
-              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Fo(e, t) : void 0
+              return "Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n ? Array.from(n) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? Ho(e, t) : void 0
             }
           }(n, c) || function() {
             throw new TypeError("Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }()),
           u = d[0],
-          f = d[1],
-          _ = (0, a.useMemo)(function() {
-            return Ho(Bo({}, u), {
+          _ = d[1],
+          f = (0, a.useMemo)(function() {
+            return Xo(Wo({}, u), {
               setAccessToken: function(e, t) {
-                return f(Ho(Bo({}, u), {
+                return _(Xo(Wo({}, u), {
                   isAuthPending: !1,
                   isAuthenticated: !!e,
                   accessToken: e,
@@ -12318,26 +12256,26 @@ try {
             })
           }, [u.isAuthPending, u.isAuthenticated]);
         return (0, r.jsx)(ge.Provider, {
-          value: _,
+          value: f,
           children: (0, r.jsx)(o.NP, {
             colorScheme: "dark",
             defaultColorScheme: "dark",
             defaultPlatformScale: "desktop",
-            children: (0, r.jsx)(Ue, {
+            children: (0, r.jsx)(Ve, {
               children: (0, r.jsxs)(i.Routes, {
                 children: [(0, r.jsx)(i.Route, {
-                  path: Co.deleteCancel.route,
-                  element: (0, r.jsx)(Lo, {})
+                  path: Lo.deleteCancel.route,
+                  element: (0, r.jsx)(qo, {})
                 }), (0, r.jsx)(i.Route, {
-                  path: Co.deleteComplete.route,
+                  path: Lo.deleteComplete.route,
                   element: (0, r.jsx)(me, {})
                 }), (0, r.jsx)(i.Route, {
-                  path: Co.emailVerify.route,
-                  element: (0, r.jsx)(Vo, {})
+                  path: Lo.emailVerify.route,
+                  element: (0, r.jsx)(zo, {})
                 }), (0, r.jsx)(i.Route, {
-                  path: Co.catchAll.route,
-                  element: (0, r.jsx)(qo, {
-                    children: (0, r.jsx)(Do, {})
+                  path: Lo.catchAll.route,
+                  element: (0, r.jsx)(Bo, {
+                    children: (0, r.jsx)(No, {})
                   })
                 })]
               })
@@ -12516,11 +12454,141 @@ try {
           })()
         }, []), (0, r.jsx)(h.A, {
           locale: (null == o ? void 0 : o.locale) || "en-US",
-          messages: N({}, null == o ? void 0 : o.messages),
-          children: o && (0, r.jsx)(Xo, N({}, e))
+          messages: L({}, null == o ? void 0 : o.messages),
+          children: o && (0, r.jsx)(Ko, L({}, e))
         }, "intl-provider")
       });
-      var Xo
+      var Ko
+    },
+    16024: (e, t, n) => {
+      var r = {
+        "./de": [57003, 5639],
+        "./en": [88503, 6267],
+        "./es": [88132, 5742],
+        "./fr": [10352, 2678],
+        "./it": [5573, 6997],
+        "./ja": [29349, 6361],
+        "./ko": [93746, 7452],
+        "./pl": [33208, 2642],
+        "./pt": [60128, 3034],
+        "./ru": [56321, 3941],
+        "./zh": [50974, 5832]
+      };
+
+      function a(e) {
+        if (!n.o(r, e)) return Promise.resolve().then(() => {
+          var t = new Error("Cannot find module '" + e + "'");
+          throw t.code = "MODULE_NOT_FOUND", t
+        });
+        var t = r[e],
+          a = t[0];
+        return n.e(t[1]).then(() => n.t(a, 23))
+      }
+      a.keys = () => Object.keys(r), a.id = 16024, e.exports = a
+    },
+    20704: (e, t, n) => {
+      var r = {
+        "./de": [8411, 299],
+        "./en": [41735, 5663],
+        "./es": [67220, 5530],
+        "./fr": [16768, 2466],
+        "./it": [46677, 7073],
+        "./ja": [77077, 4621],
+        "./ko": [3906, 824],
+        "./pl": [29512, 2398],
+        "./pt": [5424, 9126],
+        "./ru": [97681, 3697],
+        "./zh": [54958, 1868]
+      };
+
+      function a(e) {
+        if (!n.o(r, e)) return Promise.resolve().then(() => {
+          var t = new Error("Cannot find module '" + e + "'");
+          throw t.code = "MODULE_NOT_FOUND", t
+        });
+        var t = r[e],
+          a = t[0];
+        return n.e(t[1]).then(() => n.t(a, 23))
+      }
+      a.keys = () => Object.keys(r), a.id = 20704, e.exports = a
+    },
+    33044: (e, t, n) => {
+      var r = {
+        "./de": [97131, 5259],
+        "./en": [37687, 4799],
+        "./es": [21860, 3370],
+        "./fr": [58480, 7010],
+        "./it": [88389, 4913],
+        "./ja": [83365, 6285],
+        "./ko": [99858, 6664],
+        "./pl": [72824, 1054],
+        "./pt": [83904, 662],
+        "./ru": [76161, 5233],
+        "./zh": [19390, 4700]
+      };
+
+      function a(e) {
+        if (!n.o(r, e)) return Promise.resolve().then(() => {
+          var t = new Error("Cannot find module '" + e + "'");
+          throw t.code = "MODULE_NOT_FOUND", t
+        });
+        var t = r[e],
+          a = t[0];
+        return n.e(t[1]).then(() => n.t(a, 23))
+      }
+      a.keys = () => Object.keys(r), a.id = 33044, e.exports = a
+    },
+    33366: (e, t, n) => {
+      var r = {
+        "./de": [75700, 4710],
+        "./en": [89436, 3486],
+        "./es": [72415, 4011],
+        "./fr": [15235, 4851],
+        "./it": [37106, 9936],
+        "./ja": [14002, 2156],
+        "./ko": [24241, 3885],
+        "./pl": [29343, 6891],
+        "./pt": [34983, 3475],
+        "./ru": [72518, 4528],
+        "./zh": [60905, 4861]
+      };
+
+      function a(e) {
+        if (!n.o(r, e)) return Promise.resolve().then(() => {
+          var t = new Error("Cannot find module '" + e + "'");
+          throw t.code = "MODULE_NOT_FOUND", t
+        });
+        var t = r[e],
+          a = t[0];
+        return n.e(t[1]).then(() => n.t(a, 23))
+      }
+      a.keys = () => Object.keys(r), a.id = 33366, e.exports = a
+    },
+    34940: (e, t, n) => {
+      var r = {
+        "./de": [87015, 6879],
+        "./en": [64147, 2243],
+        "./es": [28920, 278],
+        "./fr": [33940, 9022],
+        "./it": [56681, 2365],
+        "./ja": [17649, 9377],
+        "./ko": [49814, 9028],
+        "./pl": [90300, 1242],
+        "./pt": [88692, 7970],
+        "./ru": [76165, 7453],
+        "./zh": [39530, 8880]
+      };
+
+      function a(e) {
+        if (!n.o(r, e)) return Promise.resolve().then(() => {
+          var t = new Error("Cannot find module '" + e + "'");
+          throw t.code = "MODULE_NOT_FOUND", t
+        });
+        var t = r[e],
+          a = t[0];
+        return n.e(t[1]).then(() => n.t(a, 23))
+      }
+      a.keys = () => Object.keys(r), a.id = 34940, e.exports = a
     },
     83222: (e, t, n) => {
       var r = {

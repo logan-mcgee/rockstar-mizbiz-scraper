@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "919cad12-78be-46ed-bce8-67bb74672350", o._sentryDebugIdIdentifier = "sentry-dbid-919cad12-78be-46ed-bce8-67bb74672350")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "919cad12-78be-46ed-bce8-67bb74672350", o._sentryDebugIdIdentifier = "sentry-dbid-919cad12-78be-46ed-bce8-67bb74672350")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,12 +13,12 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunkaccount_management = self.webpackChunkaccount_management || []).push([
   [5110], {
-    85110: (o, e, t) => {
-      t.r(e), t.d(e, {
+    85110: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => u,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
@@ -41,8 +41,8 @@ try {
         s = "Appuyer sur {shortcut}",
         r = "Niveau de zoom",
         g = "{zoom} %",
-        h = "Télécharger",
         f = "Télécharger",
+        h = "Télécharger",
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: s,
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: g,
-          Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: f
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: h
         }
     }
   }

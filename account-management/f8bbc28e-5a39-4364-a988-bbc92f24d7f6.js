@@ -26,8 +26,8 @@ try {
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
-        Lightbox_Zoom_Slider_Label: () => g,
-        Lightbox_Zoom_Slider_Tooltip: () => f,
+        Lightbox_Zoom_Slider_Label: () => f,
+        Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => L
       });
       var _ = "{description} - Visualizza immagine in lightbox",
@@ -39,8 +39,8 @@ try {
         d = "Premi {shortcut}",
         u = "Ripristina",
         s = "Premi {shortcut}",
-        g = "Livello zoom",
-        f = "{zoom}%",
+        f = "Livello zoom",
+        g = "{zoom}%",
         h = "Scarica",
         r = "Scarica",
         L = {
@@ -53,8 +53,8 @@ try {
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: u,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
-          Lightbox_Zoom_Slider_Label: g,
-          Lightbox_Zoom_Slider_Tooltip: f,
+          Lightbox_Zoom_Slider_Label: f,
+          Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
           Lightbox_Download_Button_Tooltip: r
         }

@@ -114,7 +114,7 @@ body {
   }
 
   ._1md0fdx6 {
-    max-width: unset;
+    max-width: var(--foundry-global-spacing-dimensions-3350-d07d3335);
   }
 }
 
@@ -843,6 +843,8 @@ body {
 
 ._1bwmedc2 {
   justify-content: center;
+  align-content: center;
+  height: stretch;
 }
 
 ._1bwmedc3 {
@@ -1046,6 +1048,28 @@ body {
 
   ._1bwmedcg {
     grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+._1p8rtf80 {
+  display: flex;
+  justify-content: center;
+}
+
+._1p8rtf82 {
+  height: 50dvh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  ._1p8rtf81 {
+    max-height: var(--foundry-global-spacing-dimensions-6250-aabe7f2f);
+  }
+
+  ._1p8rtf82 {
+    height: var(--foundry-global-spacing-dimensions-6250-aabe7f2f);
   }
 }
 
@@ -1457,4 +1481,4 @@ body {
   min-height: 62px;
 }
 
-/*# sourceMappingURL=a0feb3f04fdfa4c6e396.css.map*/
+/*# sourceMappingURL=76acc0e574947ef0e6ef.css.map*/
