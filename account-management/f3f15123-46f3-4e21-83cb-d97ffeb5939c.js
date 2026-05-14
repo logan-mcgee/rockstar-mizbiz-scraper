@@ -23,10 +23,10 @@ try {
           fn: function(e, a) {
             var n = String(e).split("."),
               t = n[0],
-              f = !n[1],
-              l = t.slice(-1),
-              d = t.slice(-2);
-            return a ? "other" : 1 == e && f ? "one" : f && l >= 2 && l <= 4 && (d < 12 || d > 14) ? "few" : f && 1 != t && (0 == l || 1 == l) || f && l >= 5 && l <= 9 || f && d >= 12 && d <= 14 ? "many" : "other"
+              d = !n[1],
+              f = t.slice(-1),
+              l = t.slice(-2);
+            return a ? "other" : 1 == e && d ? "one" : d && f >= 2 && f <= 4 && (l < 12 || l > 14) ? "few" : d && 1 != t && (0 == f || 1 == f) || d && f >= 5 && f <= 9 || d && l >= 12 && l <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

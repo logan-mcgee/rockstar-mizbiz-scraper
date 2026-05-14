@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "2d02e953-39fc-4104-a799-3cc4cf205036", o._sentryDebugIdIdentifier = "sentry-dbid-2d02e953-39fc-4104-a799-3cc4cf205036")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "2d02e953-39fc-4104-a799-3cc4cf205036", o._sentryDebugIdIdentifier = "sentry-dbid-2d02e953-39fc-4104-a799-3cc4cf205036")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunkaccount_management = self.webpackChunkaccount_management || []).push([
   [8348], {
-    68348: (o, e, t) => {
-      t.r(e), t.d(e, {
+    68348: (o, t, e) => {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => r,

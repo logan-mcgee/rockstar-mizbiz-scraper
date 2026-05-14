@@ -409,11 +409,15 @@
   font-size: var(--foundry-alias-font-size-body-body-xs-cf241758);
 }
 
-.foundry_tdsdcdq {
-  font-weight: var(--foundry-alias-font-weight-bold-751d319e);
+.foundry_tdsdcdp {
+  font-size: var(--foundry-alias-font-size-body-body-xxs-828e0ccb);
 }
 
 .foundry_tdsdcdr {
+  font-weight: var(--foundry-alias-font-weight-bold-751d319e);
+}
+
+.foundry_tdsdcds {
   font-family: var(--foundry_nu8bkp2), 'SF Mono', 'Monaco', 'DejaVu Sans Mono';
   line-height: var(--foundry-global-font-line-height-150-dc282d1f);
   font-style: normal;
@@ -422,8 +426,30 @@
   letter-spacing: var(--foundry-global-font-letter-spacing-0-11d3b242);
 }
 
-.foundry_tdsdcdu {
+.foundry_tdsdcdv {
   font-weight: var(--foundry-alias-font-weight-bold-751d319e);
+}
+
+.foundry_1vfthjv2 {
+  --foundry_1vfthjv0: var(--foundry-global-color-grey-adaptive-500-ddc3fb78);
+  --foundry_1vfthjv1: transparent;
+  scrollbar-width: auto;
+  scrollbar-color: var(--foundry_1vfthjv0) var(--foundry_1vfthjv1);
+  scrollbar-gutter: stable;
+}
+
+.foundry_1vfthjv2::-webkit-scrollbar {
+  width: var(--foundry-global-spacing-gap-100-05387de1);
+}
+
+.foundry_1vfthjv2::-webkit-scrollbar-track {
+  background: var(--foundry_1vfthjv1);
+}
+
+.foundry_1vfthjv2::-webkit-scrollbar-thumb {
+  background-color: var(--foundry_1vfthjv0);
+  border-radius: var(--foundry-global-border-radius-pill-8c8d51e6);
+  border: none;
 }
 
 @font-face {
@@ -872,6 +898,7 @@
   --foundry-global-font-family-consolas-b260a4d8: Consolas;
   --foundry-global-font-weight-400-c543d620: 400;
   --foundry-global-font-weight-700-4d05ca0a: 700;
+  --foundry-global-font-size-125-7465ed8a: calc(10px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-global-font-size-150-198f06c7: calc(12px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-global-font-size-175-7c044718: calc(14px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-global-font-size-200-9b30a1c2: calc(16px * var(--foundry-platform-scales-ratio-65afb887));
@@ -928,12 +955,22 @@
   --foundry-alias-font-size-body-body-md-caf3b782: calc(16px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-alias-font-size-body-body-sm-2a8e6da3: calc(14px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-alias-font-size-body-body-xs-cf241758: calc(12px * var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-xxs-828e0ccb: calc(10px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-alias-font-size-body-code-17a5a27f: calc(16px * var(--foundry-platform-scales-ratio-65afb887));
   --foundry-alias-font-line-height-heading-5379287f: 130%;
   --foundry-alias-font-line-height-body-3e320cc8: 150%;
 }
 
-.foundry_nu8bkp5 {
+.foundry_nu8bkpb {
+  --foundry_nu8bkp5: 4;
+  --foundry_nu8bkp6: 7.5vw;
+  --foundry_nu8bkp7: var(--foundry-global-spacing-gap-200-7d922174);
+  --foundry_nu8bkp8: var(--foundry-global-spacing-gap-1000-af3eeb0f);
+  --foundry_nu8bkp9: var(--foundry-global-spacing-gap-500-0fe0ec68);
+  --foundry_nu8bkpa: 2560px;
+}
+
+.foundry_nu8bkpc {
   --foundry-global-color-grey-static-25-05dae190: #fdfdfd;
   --foundry-global-color-grey-static-50-767699a7: #fdfdfd;
   --foundry-global-color-grey-static-75-a2172132: #fdfdfd;
@@ -1232,7 +1269,7 @@
   --foundry-alias-color-brand-rockstar-gold-28436c1a: #fcaf17;
 }
 
-.foundry_nu8bkp6 {
+.foundry_nu8bkpd {
   --foundry-global-color-grey-static-25-05dae190: #fdfdfd;
   --foundry-global-color-grey-static-50-767699a7: #fdfdfd;
   --foundry-global-color-grey-static-75-a2172132: #fdfdfd;
@@ -1555,7 +1592,55 @@
   }
 }
 
+@media (min-width: 768px) {
+  .foundry_nu8bkpb {
+    --foundry_nu8bkp5: 12;
+  }
+}
+
+@media (min-width: 1440px) {
+  .foundry_nu8bkpb {
+    --foundry_nu8bkp6: 13vw;
+    --foundry_nu8bkp8: var(--foundry-global-spacing-gap-1600-f3e8c303);
+    --foundry_nu8bkp9: var(--foundry-global-spacing-gap-800-4ee30294);
+  }
+}
+
+@media (min-width: 1920px) {
+  .foundry_nu8bkpb {
+    --foundry_nu8bkp6: min(16vw, calc(var(--foundry_nu8bkpa) * 0.16));
+  }
+}
+
 @layer foundry_v1yii70;
+
+.foundry_v1yii76 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-500-0fe0ec68);
+  width: 300px;
+}
+
+.foundry_v1yii77 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--foundry-global-spacing-gap-150-7f268a13);
+  width: 100%;
+}
+
+.foundry_v1yii78 {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  justify-items: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-250-ee21f32b);
+  width: 100%;
+  color: var(--foundry-alias-color-icon-standard-3eef4ce2);
+}
 
 @layer foundry_v1yii70 {
   .foundry_v1yii72 {
@@ -1776,4 +1861,4 @@
   animation-iteration-count: infinite;
 }
 
-/*# sourceMappingURL=bfbbe3558d2731786f68.css.map*/
+/*# sourceMappingURL=c8e386d108e1094aa16c.css.map*/
