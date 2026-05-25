@@ -1,0 +1,164 @@
+.siteHeaderContainer .rockstargames-modules-core-headerd87037fda2ea106061c7a614036a89df {
+  --aspect-ratio-desktop: 64/79;
+  --aspect-ratio-mobile: var(--aspect-ratio-desktop);
+  border-radius: var(--image-rounding-dynamic, 0);
+  --image-rounding-dynamic: var(--image-rounding-static-sm);
+  aspect-ratio: var(--aspect-ratio-mobile);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  width: 100%
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerd87037fda2ea106061c7a614036a89df.rockstargames-modules-core-headerdc444c089b89129c0a39bc61845d531f {
+  --aspect-ratio-desktop: 10/3;
+  --aspect-ratio-mobile: 16/9
+}
+
+@media (min-width:768px) {
+  .siteHeaderContainer .rockstargames-modules-core-headerd87037fda2ea106061c7a614036a89df {
+    aspect-ratio: var(--aspect-ratio-desktop)
+  }
+}
+
+.siteHeaderContainer .rockstargames-modules-core-headerb9f3c994ce8a97ac6530cf0a85e5abe0 {
+  --aspect-ratio-desktop: 4/5
+}
+
+.siteHeaderContainer ._1d7cd9q0 {
+  flex-grow: 1;
+  border: 1px solid var(--foundry-alias-color-border-shadow-9f37e9b9);
+  border-radius: var(--foundry-global-border-radius-100-742803b2);
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1), box-shadow 0.3s cubic-bezier(0, 0, 0.5, 1);
+  box-shadow: 0px 0px 40px -25px rgba(0, 0, 0, 0);
+}
+
+.siteHeaderContainer ._1d7cd9q0:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 30px 40px -25px rgba(0, 0, 0, 1);
+}
+
+.siteHeaderContainer ._1d7cd9q1 {
+  display: block;
+  aspect-ratio: 0.81 / 1;
+}
+
+.siteHeaderContainer ._1d7cd9q1:focus-visible {
+  outline: none;
+  border: 1px solid var(--foundry-global-color-white-static-100-d44db539);
+}
+
+@media (min-width: 1024px) {
+  .siteHeaderContainer ._1d7cd9q0 {
+    width: 20%;
+  }
+}
+
+.siteHeaderContainer ._1lj6mra0 {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.siteHeaderContainer ._1lj6mra1 {
+  padding: var(--foundry-global-spacing-gap-400-f21302a9) var(--foundry-global-spacing-gap-600-d02b9116);
+  border-bottom: var(--foundry-global-border-width-10-8d34e94d) solid var(--foundry-alias-color-border-decorative-lowest-contrast-f8bbcfca);
+  z-index: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.siteHeaderContainer ._1lj6mra2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--foundry-global-spacing-gap-100-05387de1);
+  padding: 0 var(--foundry-global-spacing-gap-400-f21302a9);
+  width: 100%;
+  max-width: 1920px;
+}
+
+.siteHeaderContainer ._1lj6mra3 {
+  display: flex;
+  align-items: center;
+  color: var(--foundry-global-color-grey-adaptive-1000-020dfb1f);
+  padding: 0;
+}
+
+.siteHeaderContainer ._1lj6mra4 {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--foundry-global-spacing-gap-200-7d922174);
+  padding: 0 var(--foundry-global-spacing-gap-400-f21302a9);
+  max-width: 1920px;
+  width: 100%;
+}
+
+.siteHeaderContainer ._1lj6mra5 {
+  position: fixed;
+  width: 100%;
+  height: 0;
+  top: var(--k8we7i0);
+  left: 0 !important;
+  right: 0;
+  z-index: 100;
+  overflow: hidden;
+  background: var(--foundry-alias-color-background-bold-layer-1-a2bc128b);
+  box-shadow: var(--k8we7i4);
+  border-radius: 0;
+  opacity: 1 !important;
+}
+
+.siteHeaderContainer ._1lj6mra6 {
+  padding: 0;
+}
+
+.siteHeaderContainer ._1lj6mra6 .swiper {
+  padding: 0 var(--foundry-global-spacing-gap-400-f21302a9) var(--foundry-global-spacing-gap-400-f21302a9);
+}
+
+.siteHeaderContainer ._1lj6mra7 {
+  padding: var(--foundry-global-spacing-gap-200-7d922174) var(--foundry-global-spacing-gap-400-f21302a9);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.siteHeaderContainer ._1lj6mra8 {
+  color: var(--foundry-global-color-alpha-adaptive-80-6e56c3f3);
+}
+
+.siteHeaderContainer ._1lj6mra9 {
+  overflow: hidden;
+}
+
+.siteHeaderContainer ._1lj6mra9 .swiper-wrapper {
+  box-sizing: initial;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1;
+  transition-duration: 0ms;
+}
+
+.siteHeaderContainer ._1lj6mraa {
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .siteHeaderContainer ._1lj6mra1 {
+    padding: var(--foundry-global-spacing-gap-600-d02b9116) var(--foundry-global-spacing-gap-1600-f3e8c303) var(--foundry-global-spacing-gap-800-4ee30294);
+  }
+}
+
+/*# sourceMappingURL=6cf2cfa51258f7bbc33f7ef4120df583.css.map*/
