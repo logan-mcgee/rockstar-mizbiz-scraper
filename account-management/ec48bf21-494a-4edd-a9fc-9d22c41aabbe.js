@@ -16,13 +16,13 @@ try {
     44781: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => u,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - 라이트박스에서 이미지 보기",
         n = "닫기",
-        a = "{shortcut} 누르기",
-        l = "확대",
+        l = "{shortcut} 누르기",
+        a = "확대",
         i = "{shortcut} 누르기",
         b = "축소",
         d = "{shortcut} 누르기",
@@ -46,8 +46,8 @@ try {
         r = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Close_Button_Tooltip: l,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: d,

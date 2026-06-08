@@ -84,7 +84,7 @@ try {
       t.r(n), t.d(n, {
         Root: () => c,
         Slot: () => c,
-        Slottable: () => _,
+        Slottable: () => b,
         createSlot: () => s,
         createSlottable: () => y
       });
@@ -108,7 +108,7 @@ try {
             } = e;
             d(r) && "function" == typeof f && (r = f(r._payload));
             const i = o.Children.toArray(r),
-              s = i.find(b);
+              s = i.find(_);
             if (s) {
               const e = s.props.children,
                 r = i.map(n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : o.isValidElement(e) ? e.props.children : null : n);
@@ -176,9 +176,9 @@ try {
         });
         return n.displayName = `${e}.Slottable`, n.__radixId = p, n
       }
-      var _ = y("Slottable");
+      var b = y("Slottable");
 
-      function b(e) {
+      function _(e) {
         return o.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === p
       }
     }

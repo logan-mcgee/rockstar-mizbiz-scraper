@@ -1,0 +1,53 @@
+@layer foundry_v1yii70;
+
+.siteFooterContainer .foundry_v1yii76 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-500-0fe0ec68);
+  width: 300px;
+}
+
+.siteFooterContainer .foundry_v1yii77 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--foundry-global-spacing-gap-150-7f268a13);
+  width: 100%;
+}
+
+.siteFooterContainer .foundry_v1yii78 {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  justify-items: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-250-ee21f32b);
+  width: 100%;
+  color: var(--foundry-alias-color-icon-standard-3eef4ce2);
+}
+
+@layer foundry_v1yii70 {
+  .siteFooterContainer .foundry_v1yii72 {
+    width: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+    height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  }
+
+  .siteFooterContainer .foundry_v1yii73 {
+    width: var(--foundry-global-spacing-dimensions-250-1db78665);
+    height: var(--foundry-global-spacing-dimensions-250-1db78665);
+  }
+
+  .siteFooterContainer .foundry_v1yii74 {
+    width: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+    height: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+  }
+
+  .siteFooterContainer .foundry_v1yii75 {
+    width: var(--foundry-global-spacing-dimensions-400-b120da78);
+    height: var(--foundry-global-spacing-dimensions-400-b120da78);
+  }
+}
+
+/*# sourceMappingURL=d2745e930c785d241cc9f63c62148327.css.map*/

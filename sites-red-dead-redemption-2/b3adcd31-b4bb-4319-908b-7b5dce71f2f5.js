@@ -1,0 +1,63 @@
+try {
+  let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "b3adcd31-b4bb-4319-908b-7b5dce71f2f5", o._sentryDebugIdIdentifier = "sentry-dbid-b3adcd31-b4bb-4319-908b-7b5dce71f2f5")
+} catch (o) {} {
+  let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
+    release: "sentry-release-id",
+    packageName: "@rockstargames/sites-red-dead-redemption-2",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
+  [622], {
+    90622(o, t, e) {
+      e.r(t), e.d(t, {
+        Lightbox_Close_Button_Label: () => n,
+        Lightbox_Close_Button_Tooltip: () => d,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => _,
+        Lightbox_Reset_Zoom_Button_Label: () => s,
+        Lightbox_Reset_Zoom_Button_Tooltip: () => u,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => l,
+        Lightbox_Zoom_Out_Button__Tooltip: () => a,
+        Lightbox_Zoom_Slider_Label: () => g,
+        Lightbox_Zoom_Slider_Tooltip: () => r,
+        default: () => L
+      });
+      var _ = "{description} - ライトボックスでイメージを見る",
+        n = "閉じる",
+        d = "{shortcut}を押す",
+        i = "ズームイン",
+        b = "{shortcut}を押す",
+        l = "ズームアウト",
+        a = "{shortcut}を押す",
+        s = "リセット",
+        u = "{shortcut}を押す",
+        g = "ズームの度合",
+        r = "{zoom}%",
+        f = "ダウンロード",
+        h = "ダウンロード",
+        L = {
+          Lightbox_Open_Button_Label: _,
+          Lightbox_Close_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: d,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: l,
+          Lightbox_Zoom_Out_Button__Tooltip: a,
+          Lightbox_Reset_Zoom_Button_Label: s,
+          Lightbox_Reset_Zoom_Button_Tooltip: u,
+          Lightbox_Zoom_Slider_Label: g,
+          Lightbox_Zoom_Slider_Tooltip: r,
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: h
+        }
+    }
+  }
+]);

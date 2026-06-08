@@ -17,8 +17,8 @@ try {
       s.r(a), s.d(a, {
         default: () => o
       });
-      var d = s(93082),
-        t = s(36416),
+      var t = s(93082),
+        d = s(36416),
         n = s(82199);
       const o = () => {
         const {
@@ -27,8 +27,8 @@ try {
         } = (0, n.useRockstarUser)(), {
           hasGtaPlus: s,
           accountSynced: o
-        } = e ?? {}, l = (0, t.useNavigate)();
-        return (0, d.useEffect)(() => {
+        } = e ?? {}, l = (0, d.useNavigate)();
+        return (0, t.useEffect)(() => {
           !1 !== a ? o && l(s ? "./benefits" : "./join", {
             replace: !0
           }) : l("./join", {

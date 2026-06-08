@@ -1,0 +1,58 @@
+@layer foundry_v1yii70;
+
+.foundry_v1yii76 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-500-0fe0ec68);
+  width: 300px;
+}
+
+.foundry_v1yii77 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--foundry-global-spacing-gap-150-7f268a13);
+  width: 100%;
+}
+
+.foundry_v1yii78 {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  justify-items: center;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-250-ee21f32b);
+  width: 100%;
+  color: var(--foundry-alias-color-icon-standard-3eef4ce2);
+}
+
+@layer foundry_v1yii70 {
+  .foundry_v1yii72 {
+    width: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+    height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  }
+
+  .foundry_v1yii73 {
+    width: var(--foundry-global-spacing-dimensions-250-1db78665);
+    height: var(--foundry-global-spacing-dimensions-250-1db78665);
+  }
+
+  .foundry_v1yii74 {
+    width: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+    height: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+  }
+
+  .foundry_v1yii75 {
+    width: var(--foundry-global-spacing-dimensions-400-b120da78);
+    height: var(--foundry-global-spacing-dimensions-400-b120da78);
+  }
+}
+
+.p5vfye0 {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=c5961ff45ab2f26ffb7e50308f79c617.css.map*/

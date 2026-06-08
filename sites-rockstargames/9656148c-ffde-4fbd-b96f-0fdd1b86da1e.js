@@ -13,11 +13,11 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7078], {
-    7078(e, d, a) {
-      a.r(d), a.d(d, {
-        default: () => s
+    7078(e, d, s) {
+      s.r(d), s.d(d, {
+        default: () => a
       });
-      const s = {}
+      const a = {}
     }
   }
 ]);

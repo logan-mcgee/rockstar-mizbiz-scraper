@@ -78,10 +78,10 @@ try {
           u = Object.freeze,
           f = Object.seal,
           m = Object.create,
-          d = "undefined" != typeof Reflect && Reflect,
-          p = d.apply,
-          g = d.construct;
-        p || (p = function(e, t, n) {
+          p = "undefined" != typeof Reflect && Reflect,
+          d = p.apply,
+          g = p.construct;
+        d || (d = function(e, t, n) {
           return e.apply(t, n)
         }), u || (u = function(e) {
           return e
@@ -108,7 +108,7 @@ try {
         function x(e) {
           return function(t) {
             for (var n = arguments.length, r = new Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++) r[o - 1] = arguments[o];
-            return p(e, t, r)
+            return d(e, t, r)
           }
         }
 
@@ -128,7 +128,7 @@ try {
 
         function M(e) {
           var t, n = m(null);
-          for (t in e) !0 === p(a, e, [t]) && (n[t] = e[t]);
+          for (t in e) !0 === d(a, e, [t]) && (n[t] = e[t]);
           return n
         }
 
@@ -182,8 +182,8 @@ try {
             s = n.Node,
             f = n.Element,
             m = n.NodeFilter,
-            d = n.NamedNodeMap,
-            p = void 0 === d ? n.NamedNodeMap || n.MozNamedAttrMap : d,
+            p = n.NamedNodeMap,
+            d = void 0 === p ? n.NamedNodeMap || n.MozNamedAttrMap : p,
             g = n.HTMLFormElement,
             h = n.DOMParser,
             x = n.trustedTypes,
@@ -221,13 +221,13 @@ try {
             ue = ce.createNodeIterator,
             fe = ce.createDocumentFragment,
             me = ce.getElementsByTagName,
-            de = a.importNode,
-            pe = {};
+            pe = a.importNode,
+            de = {};
           try {
-            pe = M(i).documentMode ? i.documentMode : {}
+            de = M(i).documentMode ? i.documentMode : {}
           } catch (e) {}
           var ge = {};
-          o.isSupported = "function" == typeof oe && se && void 0 !== se.createHTMLDocument && 9 !== pe;
+          o.isSupported = "function" == typeof oe && se && void 0 !== se.createHTMLDocument && 9 !== de;
           var he, ye, be = G,
             Te = W,
             ve = q,
@@ -296,11 +296,11 @@ try {
             ut = ["application/xhtml+xml", "text/html"],
             ft = null,
             mt = i.createElement("form"),
-            dt = function(e) {
+            pt = function(e) {
               return e instanceof RegExp || e instanceof Function
             },
-            pt = function(t) {
-              ft && ft === t || (t && "object" === e(t) || (t = {}), t = M(t), he = he = -1 === ut.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, ye = "application/xhtml+xml" === he ? N : v, ke = "ALLOWED_TAGS" in t ? O({}, t.ALLOWED_TAGS, ye) : xe, Oe = "ALLOWED_ATTR" in t ? O({}, t.ALLOWED_ATTR, ye) : Me, ct = "ALLOWED_NAMESPACES" in t ? O({}, t.ALLOWED_NAMESPACES, N) : st, tt = "ADD_URI_SAFE_ATTR" in t ? O(M(nt), t.ADD_URI_SAFE_ATTR, ye) : nt, Qe = "ADD_DATA_URI_TAGS" in t ? O(M(et), t.ADD_DATA_URI_TAGS, ye) : et, Ze = "FORBID_CONTENTS" in t ? O({}, t.FORBID_CONTENTS, ye) : Je, Le = "FORBID_TAGS" in t ? O({}, t.FORBID_TAGS, ye) : {}, De = "FORBID_ATTR" in t ? O({}, t.FORBID_ATTR, ye) : {}, Xe = "USE_PROFILES" in t && t.USE_PROFILES, Re = !1 !== t.ALLOW_ARIA_ATTR, Ie = !1 !== t.ALLOW_DATA_ATTR, Fe = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Ue = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, He = t.SAFE_FOR_TEMPLATES || !1, ze = !1 !== t.SAFE_FOR_XML, Pe = t.WHOLE_DOCUMENT || !1, Ge = t.RETURN_DOM || !1, We = t.RETURN_DOM_FRAGMENT || !1, qe = t.RETURN_TRUSTED_TYPE || !1, je = t.FORCE_BODY || !1, Ye = !1 !== t.SANITIZE_DOM, $e = t.SANITIZE_NAMED_PROPS || !1, Ke = !1 !== t.KEEP_CONTENT, Ve = t.IN_PLACE || !1, Se = t.ALLOWED_URI_REGEXP || Se, it = t.NAMESPACE || at, Ce = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && dt(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Ce.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && dt(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Ce.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Ce.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), He && (Ie = !1), We && (Ge = !0), Xe && (ke = O({}, r(H)), Oe = [], !0 === Xe.html && (O(ke, L), O(Oe, z)), !0 === Xe.svg && (O(ke, D), O(Oe, P), O(Oe, j)), !0 === Xe.svgFilters && (O(ke, R), O(Oe, P), O(Oe, j)), !0 === Xe.mathMl && (O(ke, F), O(Oe, B), O(Oe, j))), t.ADD_TAGS && (ke === xe && (ke = M(ke)), O(ke, t.ADD_TAGS, ye)), t.ADD_ATTR && (Oe === Me && (Oe = M(Oe)), O(Oe, t.ADD_ATTR, ye)), t.ADD_URI_SAFE_ATTR && O(tt, t.ADD_URI_SAFE_ATTR, ye), t.FORBID_CONTENTS && (Ze === Je && (Ze = M(Ze)), O(Ze, t.FORBID_CONTENTS, ye)), Ke && (ke["#text"] = !0), Pe && O(ke, ["html", "head", "body"]), ke.table && (O(ke, ["tbody"]), delete Le.tbody), u && u(t), ft = t)
+            dt = function(t) {
+              ft && ft === t || (t && "object" === e(t) || (t = {}), t = M(t), he = he = -1 === ut.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, ye = "application/xhtml+xml" === he ? N : v, ke = "ALLOWED_TAGS" in t ? O({}, t.ALLOWED_TAGS, ye) : xe, Oe = "ALLOWED_ATTR" in t ? O({}, t.ALLOWED_ATTR, ye) : Me, ct = "ALLOWED_NAMESPACES" in t ? O({}, t.ALLOWED_NAMESPACES, N) : st, tt = "ADD_URI_SAFE_ATTR" in t ? O(M(nt), t.ADD_URI_SAFE_ATTR, ye) : nt, Qe = "ADD_DATA_URI_TAGS" in t ? O(M(et), t.ADD_DATA_URI_TAGS, ye) : et, Ze = "FORBID_CONTENTS" in t ? O({}, t.FORBID_CONTENTS, ye) : Je, Le = "FORBID_TAGS" in t ? O({}, t.FORBID_TAGS, ye) : {}, De = "FORBID_ATTR" in t ? O({}, t.FORBID_ATTR, ye) : {}, Xe = "USE_PROFILES" in t && t.USE_PROFILES, Re = !1 !== t.ALLOW_ARIA_ATTR, Ie = !1 !== t.ALLOW_DATA_ATTR, Fe = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Ue = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, He = t.SAFE_FOR_TEMPLATES || !1, ze = !1 !== t.SAFE_FOR_XML, Pe = t.WHOLE_DOCUMENT || !1, Ge = t.RETURN_DOM || !1, We = t.RETURN_DOM_FRAGMENT || !1, qe = t.RETURN_TRUSTED_TYPE || !1, je = t.FORCE_BODY || !1, Ye = !1 !== t.SANITIZE_DOM, $e = t.SANITIZE_NAMED_PROPS || !1, Ke = !1 !== t.KEEP_CONTENT, Ve = t.IN_PLACE || !1, Se = t.ALLOWED_URI_REGEXP || Se, it = t.NAMESPACE || at, Ce = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && pt(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Ce.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && pt(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Ce.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Ce.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), He && (Ie = !1), We && (Ge = !0), Xe && (ke = O({}, r(H)), Oe = [], !0 === Xe.html && (O(ke, L), O(Oe, z)), !0 === Xe.svg && (O(ke, D), O(Oe, P), O(Oe, j)), !0 === Xe.svgFilters && (O(ke, R), O(Oe, P), O(Oe, j)), !0 === Xe.mathMl && (O(ke, F), O(Oe, B), O(Oe, j))), t.ADD_TAGS && (ke === xe && (ke = M(ke)), O(ke, t.ADD_TAGS, ye)), t.ADD_ATTR && (Oe === Me && (Oe = M(Oe)), O(Oe, t.ADD_ATTR, ye)), t.ADD_URI_SAFE_ATTR && O(tt, t.ADD_URI_SAFE_ATTR, ye), t.FORBID_CONTENTS && (Ze === Je && (Ze = M(Ze)), O(Ze, t.FORBID_CONTENTS, ye)), Ke && (ke["#text"] = !0), Pe && O(ke, ["html", "head", "body"]), ke.table && (O(ke, ["tbody"]), delete Le.tbody), u && u(t), ft = t)
             },
             gt = O({}, ["mi", "mo", "mn", "ms", "mtext"]),
             ht = O({}, ["annotation-xml"]),
@@ -367,7 +367,7 @@ try {
               return ue.call(e.ownerDocument || e, e, m.SHOW_ELEMENT | m.SHOW_COMMENT | m.SHOW_TEXT | m.SHOW_PROCESSING_INSTRUCTION | m.SHOW_CDATA_SECTION, null, !1)
             },
             wt = function(e) {
-              return e instanceof g && ("string" != typeof e.nodeName || "string" != typeof e.textContent || "function" != typeof e.removeChild || !(e.attributes instanceof p) || "function" != typeof e.removeAttribute || "function" != typeof e.setAttribute || "string" != typeof e.namespaceURI || "function" != typeof e.insertBefore || "function" != typeof e.hasChildNodes)
+              return e instanceof g && ("string" != typeof e.nodeName || "string" != typeof e.textContent || "function" != typeof e.removeChild || !(e.attributes instanceof d) || "function" != typeof e.removeAttribute || "function" != typeof e.setAttribute || "string" != typeof e.namespaceURI || "function" != typeof e.insertBefore || "function" != typeof e.hasChildNodes)
             },
             _t = function(t) {
               return "object" === e(s) ? t instanceof s : t && "object" === e(t) && "number" == typeof t.nodeType && "string" == typeof t.nodeName
@@ -492,10 +492,10 @@ try {
               }
               return t
             }
-            if (Be || pt(m), o.removed = [], "string" == typeof t && (Ve = !1), Ve) {
+            if (Be || dt(m), o.removed = [], "string" == typeof t && (Ve = !1), Ve) {
               if (t.nodeName) {
-                var d = ye(t.nodeName);
-                if (!ke[d] || Le[d]) throw k("root node is forbidden and cannot be sanitized in-place")
+                var p = ye(t.nodeName);
+                if (!ke[p] || Le[p]) throw k("root node is forbidden and cannot be sanitized in-place")
               }
             } else if (t instanceof s) 1 === (i = (r = Et("\x3c!----\x3e")).ownerDocument.importNode(t, !0)).nodeType && "BODY" === i.nodeName || "HTML" === i.nodeName ? r = i : r.appendChild(i);
             else {
@@ -503,22 +503,22 @@ try {
               if (!(r = Et(t))) return Ge ? null : qe ? le : ""
             }
             r && je && vt(r.firstChild);
-            for (var p = At(Ve ? t : r); c = p.nextNode();) 3 === c.nodeType && c === u || (kt(c), Mt(c), c.content instanceof l && Ct(c.content), u = c);
+            for (var d = At(Ve ? t : r); c = d.nextNode();) 3 === c.nodeType && c === u || (kt(c), Mt(c), c.content instanceof l && Ct(c.content), u = c);
             if (u = null, Ve) return t;
             if (Ge) {
               if (We)
                 for (f = fe.call(r.ownerDocument); r.firstChild;) f.appendChild(r.firstChild);
               else f = r;
-              return (Oe.shadowroot || Oe.shadowrootmod) && (f = de.call(a, f, !0)), f
+              return (Oe.shadowroot || Oe.shadowrootmod) && (f = pe.call(a, f, !0)), f
             }
             var g = Pe ? r.outerHTML : r.innerHTML;
             return Pe && ke["!doctype"] && r.ownerDocument && r.ownerDocument.doctype && r.ownerDocument.doctype.name && S(Z, r.ownerDocument.doctype.name) && (g = "<!DOCTYPE " + r.ownerDocument.doctype.name + ">\n" + g), He && (g = A(g, be, " "), g = A(g, Te, " "), g = A(g, ve, " ")), ie && qe ? ie.createHTML(g) : g
           }, o.setConfig = function(e) {
-            pt(e), Be = !0
+            dt(e), Be = !0
           }, o.clearConfig = function() {
             ft = null, Be = !1
           }, o.isValidAttribute = function(e, t, n) {
-            ft || pt({});
+            ft || dt({});
             var r = ye(e),
               o = ye(t);
             return xt(r, o, n)

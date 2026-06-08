@@ -18,24 +18,24 @@ try {
         useGSAP: () => l
       });
       var d = n(93082),
-        a = n(35812);
-      let s = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        s = n(35812);
+      let a = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
         r = e => e && !Array.isArray(e) && "object" == typeof e,
         f = [],
         o = {},
-        c = a.default;
+        c = s.default;
       const l = (e, t = f) => {
         let n = o;
         r(e) ? (n = e, e = null, t = "dependencies" in n ? n.dependencies : f) : r(t) && (n = t, t = "dependencies" in n ? n.dependencies : f), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
-          scope: a,
+          scope: s,
           revertOnUpdate: l
-        } = n, i = (0, d.useRef)(!1), u = (0, d.useRef)(c.context(() => {}, a)), g = (0, d.useRef)(e => u.current.add(null, e)), b = t && t.length && !l;
-        return b && s(() => (i.current = !0, () => u.current.revert()), f), s(() => {
-          if (e && u.current.add(e, a), !b || !i.current) return () => u.current.revert()
+        } = n, i = (0, d.useRef)(!1), u = (0, d.useRef)(c.context(() => {}, s)), b = (0, d.useRef)(e => u.current.add(null, e)), g = t && t.length && !l;
+        return g && a(() => (i.current = !0, () => u.current.revert()), f), a(() => {
+          if (e && u.current.add(e, s), !g || !i.current) return () => u.current.revert()
         }, t), {
           context: u.current,
-          contextSafe: g.current
+          contextSafe: b.current
         }
       };
       l.register = e => {

@@ -22,8 +22,8 @@ try {
         s = n(50446),
         d = n(66704),
         r = n(38351),
-        u = n(39793),
-        c = "focusScope.autoFocusOnMount",
+        c = n(39793),
+        u = "focusScope.autoFocusOnMount",
         a = "focusScope.autoFocusOnUnmount",
         i = {
           bubbles: !1,
@@ -79,8 +79,8 @@ try {
               v.add(N);
               const e = document.activeElement;
               if (!g.contains(e)) {
-                const t = new CustomEvent(c, i);
-                g.addEventListener(c, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(u, i);
+                g.addEventListener(u, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -93,7 +93,7 @@ try {
                 }), document.activeElement === e && b(g))
               }
               return () => {
-                g.removeEventListener(c, w), setTimeout(() => {
+                g.removeEventListener(u, w), setTimeout(() => {
                   const t = new CustomEvent(a, i);
                   g.addEventListener(a, T), g.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
                     select: !0
@@ -120,7 +120,7 @@ try {
               })) : o === t && e.preventDefault()
             }
           }, [n, f, N.paused]);
-          return (0, u.jsx)(d.sG.div, {
+          return (0, c.jsx)(d.sG.div, {
             tabIndex: -1,
             ...E,
             ref: L,

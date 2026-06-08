@@ -158,8 +158,8 @@ try {
       function x(t) {
         return t.includes("start") ? t.replace("start", "end") : t.replace("end", "start")
       }
-      const v = ["left", "right"],
-        b = ["right", "left"],
+      const b = ["left", "right"],
+        v = ["right", "left"],
         A = ["top", "bottom"],
         R = ["bottom", "top"];
 
@@ -284,20 +284,20 @@ try {
           y: o,
           width: a.floating.width,
           height: a.floating.height
-        } : a.reference, x = await (null == i.getOffsetParent ? void 0 : i.getOffsetParent(l.floating)), v = await (null == i.isElement ? void 0 : i.isElement(x)) && await (null == i.getScale ? void 0 : i.getScale(x)) || {
+        } : a.reference, x = await (null == i.getOffsetParent ? void 0 : i.getOffsetParent(l.floating)), b = await (null == i.isElement ? void 0 : i.isElement(x)) && await (null == i.getScale ? void 0 : i.getScale(x)) || {
           x: 1,
           y: 1
-        }, b = O(i.convertOffsetParentRelativeRectToViewportRelativeRect ? await i.convertOffsetParentRelativeRectToViewportRelativeRect({
+        }, v = O(i.convertOffsetParentRelativeRectToViewportRelativeRect ? await i.convertOffsetParentRelativeRectToViewportRelativeRect({
           elements: l,
           rect: w,
           offsetParent: x,
           strategy: s
         }) : w);
         return {
-          top: (y.top - b.top + m.top) / v.y,
-          bottom: (b.bottom - y.bottom + m.bottom) / v.y,
-          left: (y.left - b.left + m.left) / v.x,
-          right: (b.right - y.right + m.right) / v.x
+          top: (y.top - v.top + m.top) / b.y,
+          bottom: (v.bottom - y.bottom + m.bottom) / b.y,
+          left: (y.left - v.left + m.left) / b.x,
+          right: (v.right - y.right + m.right) / b.x
         }
       }
 
@@ -809,7 +809,7 @@ try {
                   switch (t) {
                     case "top":
                     case "bottom":
-                      return n ? e ? b : v : e ? v : b;
+                      return n ? e ? v : b : e ? b : v;
                     case "left":
                     case "right":
                       return e ? A : R;
@@ -900,26 +900,26 @@ try {
                 y: r
               },
               x = w(o),
-              v = g(x),
-              b = await l.getDimensions(f),
+              b = g(x),
+              v = await l.getDimensions(f),
               A = "y" === x,
               R = A ? "top" : "left",
               S = A ? "bottom" : "right",
               O = A ? "clientHeight" : "clientWidth",
-              P = a.reference[v] + a.reference[x] - y[x] - a.floating[v],
+              P = a.reference[b] + a.reference[x] - y[x] - a.floating[b],
               T = y[x] - a.reference[x],
               k = await (null == l.getOffsetParent ? void 0 : l.getOffsetParent(f));
             let D = k ? k[O] : 0;
-            D && await (null == l.isElement ? void 0 : l.isElement(k)) || (D = s.floating[O] || a.floating[v]);
+            D && await (null == l.isElement ? void 0 : l.isElement(k)) || (D = s.floating[O] || a.floating[b]);
             const L = P / 2 - T / 2,
-              C = D / 2 - b[v] / 2 - 1,
+              C = D / 2 - v[b] / 2 - 1,
               M = i(m[R], C),
               _ = i(m[S], C),
               W = M,
-              H = D - b[v] - _,
-              F = D / 2 - b[v] / 2 + L,
+              H = D - v[b] - _,
+              F = D / 2 - v[b] / 2 + L,
               j = u(W, F, H),
-              B = !c.arrow && null != h(o) && F !== j && a.reference[v] / 2 - (F < W ? M : _) - b[v] / 2 < 0,
+              B = !c.arrow && null != h(o) && F !== j && a.reference[b] / 2 - (F < W ? M : _) - v[b] / 2 < 0,
               N = B ? F < W ? F - W : F - H : 0;
             return {
               [x]: y[x] + N,
@@ -934,7 +934,7 @@ try {
             }
           }
         }),
-        vt = function(t) {
+        bt = function(t) {
           return void 0 === t && (t = {}), {
             options: t,
             fn(e) {
@@ -955,7 +955,7 @@ try {
               let g = f[h],
                 w = f[u];
               const x = d(l, e),
-                v = "number" == typeof x ? {
+                b = "number" == typeof x ? {
                   mainAxis: x,
                   crossAxis: 0
                 } : {
@@ -965,16 +965,16 @@ try {
                 };
               if (s) {
                 const t = "y" === h ? "height" : "width",
-                  e = i.reference[h] - i.floating[t] + v.mainAxis,
-                  n = i.reference[h] + i.reference[t] - v.mainAxis;
+                  e = i.reference[h] - i.floating[t] + b.mainAxis,
+                  n = i.reference[h] + i.reference[t] - b.mainAxis;
                 g < e ? g = e : g > n && (g = n)
               }
               if (c) {
-                var b, A;
+                var v, A;
                 const t = "y" === h ? "width" : "height",
                   e = L.has(p(o)),
-                  n = i.reference[u] - i.floating[t] + (e && (null == (b = a.offset) ? void 0 : b[u]) || 0) + (e ? 0 : v.crossAxis),
-                  r = i.reference[u] + i.reference[t] + (e ? 0 : (null == (A = a.offset) ? void 0 : A[u]) || 0) - (e ? v.crossAxis : 0);
+                  n = i.reference[u] - i.floating[t] + (e && (null == (v = a.offset) ? void 0 : v[u]) || 0) + (e ? 0 : b.crossAxis),
+                  r = i.reference[u] + i.reference[t] + (e ? 0 : (null == (A = a.offset) ? void 0 : A[u]) || 0) - (e ? b.crossAxis : 0);
                 w < n ? w = n : w > r && (w = r)
               }
               return {
@@ -984,7 +984,7 @@ try {
             }
           }
         },
-        bt = (t, e, n) => {
+        vt = (t, e, n) => {
           const r = new Map,
             o = {
               platform: gt,
@@ -1025,8 +1025,8 @@ try {
               } = m, {
                 x: w,
                 y: x,
-                data: v,
-                reset: b
+                data: b,
+                reset: v
               } = await y({
                 x: f,
                 y: u,
@@ -1043,12 +1043,12 @@ try {
               });
               f = null != w ? w : f, u = null != x ? x : u, h[g] = {
                 ...h[g],
-                ...v
-              }, b && p < 50 && (p++, "object" == typeof b && (b.placement && (d = b.placement), b.rects && (c = !0 === b.rects ? await a.getElementRects({
+                ...b
+              }, v && p < 50 && (p++, "object" == typeof v && (v.placement && (d = v.placement), v.rects && (c = !0 === v.rects ? await a.getElementRects({
                 reference: t,
                 floating: e,
                 strategy: o
-              }) : b.rects), ({
+              }) : v.rects), ({
                 x: f,
                 y: u
               } = P(c, d, s))), n = -1)
@@ -1195,25 +1195,25 @@ try {
                   y: r
                 }, h = await i.detectOverflow(e, c), g = y(p(o)), w = m(g);
                 let x = f[w],
-                  v = f[g];
+                  b = f[g];
                 if (a) {
                   const t = "y" === w ? "bottom" : "right";
                   x = u(x + h["y" === w ? "top" : "left"], x, x - h[t])
                 }
                 if (l) {
                   const t = "y" === g ? "bottom" : "right";
-                  v = u(v + h["y" === g ? "top" : "left"], v, v - h[t])
+                  b = u(b + h["y" === g ? "top" : "left"], b, b - h[t])
                 }
-                const b = s.fn({
+                const v = s.fn({
                   ...e,
                   [w]: x,
-                  [g]: v
+                  [g]: b
                 });
                 return {
-                  ...b,
+                  ...v,
                   data: {
-                    x: b.x - n,
-                    y: b.y - r,
+                    x: v.x - n,
+                    y: v.y - r,
                     enabled: {
                       [w]: a,
                       [g]: l
@@ -1253,15 +1253,15 @@ try {
                   apply: f = () => {},
                   ...u
                 } = d(t, e), m = await s.detectOverflow(e, u), g = p(o), w = h(o), x = "y" === y(o), {
-                  width: v,
-                  height: b
+                  width: b,
+                  height: v
                 } = l.floating;
                 let A, R;
                 "top" === g || "bottom" === g ? (A = g, R = w === (await (null == s.isRTL ? void 0 : s.isRTL(c.floating)) ? "start" : "end") ? "left" : "right") : (R = g, A = "end" === w ? "top" : "bottom");
-                const S = b - m.top - m.bottom,
-                  E = v - m.left - m.right,
-                  O = i(b - m[A], S),
-                  P = i(v - m[R], E),
+                const S = v - m.top - m.bottom,
+                  E = b - m.left - m.right,
+                  O = i(v - m[A], S),
+                  P = i(b - m[R], E),
                   T = !e.middlewareData.shift;
                 let k = O,
                   D = P;
@@ -1270,7 +1270,7 @@ try {
                     e = a(m.right, 0),
                     n = a(m.top, 0),
                     r = a(m.bottom, 0);
-                  x ? D = v - 2 * (0 !== t || 0 !== e ? t + e : a(m.left, m.right)) : k = b - 2 * (0 !== n || 0 !== r ? n + r : a(m.top, m.bottom))
+                  x ? D = b - 2 * (0 !== t || 0 !== e ? t + e : a(m.left, m.right)) : k = v - 2 * (0 !== n || 0 !== r ? n + r : a(m.top, m.bottom))
                 }
                 await f({
                   ...e,
@@ -1278,7 +1278,7 @@ try {
                   availableHeight: k
                 });
                 const L = await s.getDimensions(c.floating);
-                return v !== L.width || b !== L.height ? {
+                return b !== L.width || v !== L.height ? {
                   reset: {
                     rects: !0
                   }
@@ -1445,7 +1445,7 @@ try {
             updatePositionStrategy: y = "optimized",
             onPlaced: w,
             ...x
-          } = t, v = qt(Kt, n), [b, A] = r.useState(null), R = (0, jt.s)(e, t => A(t)), [S, E] = r.useState(null), O = (0, $t.X)(S), P = O?.width ?? 0, T = O?.height ?? 0, k = o + ("center" !== c ? "-" + c : ""), D = "number" == typeof h ? h : {
+          } = t, b = qt(Kt, n), [v, A] = r.useState(null), R = (0, jt.s)(e, t => A(t)), [S, E] = r.useState(null), O = (0, $t.X)(S), P = O?.width ?? 0, T = O?.height ?? 0, k = o + ("center" !== c ? "-" + c : ""), D = "number" == typeof h ? h : {
             top: 0,
             right: 0,
             bottom: 0,
@@ -1486,16 +1486,16 @@ try {
             St(p, o) || h(o);
             const [m, g] = r.useState(null), [y, w] = r.useState(null), x = r.useCallback(t => {
               t !== R.current && (R.current = t, g(t))
-            }, []), v = r.useCallback(t => {
+            }, []), b = r.useCallback(t => {
               t !== S.current && (S.current = t, w(t))
-            }, []), b = a || m, A = l || y, R = r.useRef(null), S = r.useRef(null), E = r.useRef(u), O = null != c, P = Pt(c), T = Pt(i), k = Pt(f), D = r.useCallback(() => {
+            }, []), v = a || m, A = l || y, R = r.useRef(null), S = r.useRef(null), E = r.useRef(u), O = null != c, P = Pt(c), T = Pt(i), k = Pt(f), D = r.useCallback(() => {
               if (!R.current || !S.current) return;
               const t = {
                 placement: e,
                 strategy: n,
                 middleware: p
               };
-              T.current && (t.platform = T.current), bt(R.current, S.current, t).then(t => {
+              T.current && (t.platform = T.current), vt(R.current, S.current, t).then(t => {
                 const e = {
                   ...t,
                   isPositioned: !1 !== k.current
@@ -1515,21 +1515,21 @@ try {
             Rt(() => (L.current = !0, () => {
               L.current = !1
             }), []), Rt(() => {
-              if (b && (R.current = b), A && (S.current = A), b && A) {
-                if (P.current) return P.current(b, A, D);
+              if (v && (R.current = v), A && (S.current = A), v && A) {
+                if (P.current) return P.current(v, A, D);
                 D()
               }
-            }, [b, A, D, P, O]);
+            }, [v, A, D, P, O]);
             const C = r.useMemo(() => ({
                 reference: R,
                 floating: S,
                 setReference: x,
-                setFloating: v
-              }), [x, v]),
+                setFloating: b
+              }), [x, b]),
               M = r.useMemo(() => ({
-                reference: b,
+                reference: v,
                 floating: A
-              }), [b, A]),
+              }), [v, A]),
               _ = r.useMemo(() => {
                 const t = {
                   position: n,
@@ -1643,7 +1643,7 @@ try {
               animationFrame: "always" === y
             }),
             elements: {
-              reference: v.anchor
+              reference: b.anchor
             },
             middleware: [Tt({
               mainAxis: l + T,
@@ -1652,7 +1652,7 @@ try {
               mainAxis: !0,
               crossAxis: !1,
               limiter: "partial" === m ? {
-                fn: vt(N).fn,
+                fn: bt(N).fn,
                 options: [N, void 0]
               } : void 0,
               ...M
@@ -1693,8 +1693,8 @@ try {
             Y = 0 !== B.arrow?.centerOffset,
             [q, G] = r.useState();
           return (0, zt.N)(() => {
-            b && G(window.getComputedStyle(b).zIndex)
-          }, [b]), (0, Wt.jsx)("div", {
+            v && G(window.getComputedStyle(v).zIndex)
+          }, [v]), (0, Wt.jsx)("div", {
             ref: _.setFloating,
             "data-radix-popper-content-wrapper": "",
             style: {

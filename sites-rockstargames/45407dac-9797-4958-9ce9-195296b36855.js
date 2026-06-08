@@ -1003,20 +1003,20 @@ try {
           to: l,
           onClick: r,
           target: o = "_self",
-          ...m
+          ...c
         }) => {
-          const c = (0, t.default)(d.button, d[i], e);
+          const m = (0, t.default)(d.button, d[i], e);
           return l ? (0, n.jsx)(s.A, {
-            ...m,
+            ...c,
             to: l,
-            className: c,
+            className: m,
             onClick: r,
             target: o,
             children: a
           }) : (0, n.jsx)("button", {
-            ...m,
+            ...c,
             type: "button",
-            className: c,
+            className: m,
             onClick: r,
             children: a
           })
@@ -1034,8 +1034,8 @@ try {
         l = i(13331),
         r = i(42909),
         o = i(36038),
-        m = i.n(o),
-        c = i(38044),
+        c = i.n(o),
+        m = i(38044),
         u = i(1e4),
         k = i(13821);
       const v = {
@@ -1085,7 +1085,7 @@ try {
             h = (0, t.useRef)(null);
           (0, t.useEffect)(() => {
             if (!S.current || !h.current) return;
-            const a = new(m())(S.current);
+            const a = new(c())(S.current);
             a.get("press").set({
               time: 0
             }), a.get("tap").set({
@@ -1111,11 +1111,11 @@ try {
               r = () => {
                 i() && o(!1), S.current && S.current.classList.remove(`${v.disableClick}`)
               },
-              c = () => {
+              m = () => {
                 i() && o(!1)
               };
-            return h.current.addEventListener("transitionend", c), a.on("swiperight", n), a.on("swipeleft", t), a.on("pan", s), a.on("panend", d), a.on("press tap", l), a.on("pressup", r), () => {
-              a.off("swiperight", n), a.off("swipeleft", t), a.off("pan", s), a.off("panend", d), a.off("press tap", l), a.off("pressup", r), h.current && h.current.removeEventListener("transitionend", c), p(0)
+            return h.current.addEventListener("transitionend", m), a.on("swiperight", n), a.on("swipeleft", t), a.on("pan", s), a.on("panend", d), a.on("press tap", l), a.on("pressup", r), () => {
+              a.off("swiperight", n), a.off("swipeleft", t), a.off("pan", s), a.off("panend", d), a.off("press tap", l), a.off("pressup", r), h.current && h.current.removeEventListener("transitionend", m), p(0)
             }
           }, [S.current, f]);
           const V = e => {
@@ -1135,7 +1135,7 @@ try {
                 },
                 children: e.map((e, a) => {
                   const [i, t, s] = V(e);
-                  return (0, n.jsx)(c.A, {
+                  return (0, n.jsx)(m.A, {
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through screencap",
                     "data-gtm-label": t,
@@ -1158,7 +1158,7 @@ try {
                 className: v.text,
                 children: e.map((e, i) => {
                   const [t, d, l, r] = V(e);
-                  return (0, n.jsxs)(c.A, {
+                  return (0, n.jsxs)(m.A, {
                     className: [v.info, i === f ? v.active : ""].join(" "),
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through footer",
@@ -1224,17 +1224,17 @@ try {
           setBreadcrumb: a,
           setNormalLogo: i
         } = (0, N.b)(), d = (0, l.useQueryParams)(), [r, o] = (0, t.useState)({}), {
-          data: m
+          data: c
         } = (0, l.useQuery)(S.VideosList, {
           variables: r,
           skip: !Object.entries(r).length,
           autoSetLoading: !0
         }), {
-          search: c
+          search: m
         } = (0, s.useLocation)();
         if ((0, t.useEffect)(() => {
             window.scrollTo(0, 0)
-          }, [c]), (0, t.useEffect)(() => (a([{
+          }, [m]), (0, t.useEffect)(() => (a([{
             href: "/videos",
             title: e("Videos")
           }]), () => {
@@ -1247,14 +1247,14 @@ try {
               index: null === d.get("type"),
               gtaoSessionsEpisodes: "78cs3289" === d.get("gameId")
             })
-          }, [d.get("type"), d.get("gameId")]), (0, t.useEffect)(() => (i(!1), () => i(!0)), []), !m) return null;
-        if (m?.game && m?.gameVideos) return (0, n.jsxs)("div", {
+          }, [d.get("type"), d.get("gameId")]), (0, t.useEffect)(() => (i(!1), () => i(!0)), []), !c) return null;
+        if (c?.game && c?.gameVideos) return (0, n.jsxs)("div", {
           className: p,
           children: [(0, n.jsx)(b.A, {
-            vids: m.gameVideos.results,
-            title: e("Videos from %s").replace("%s", m.game.title)
-          }), m?.gtaosessions?.results && (0, n.jsx)(b.A, {
-            vids: m.gtaosessions.results,
+            vids: c.gameVideos.results,
+            title: e("Videos from %s").replace("%s", c.game.title)
+          }), c?.gtaosessions?.results && (0, n.jsx)(b.A, {
+            vids: c.gtaosessions.results,
             title: e("GTA Online Sessions Episodes")
           })]
         });
@@ -1264,7 +1264,7 @@ try {
           gtaVI: v,
           latest: g,
           rdo: h
-        } = m;
+        } = c;
         return (0, n.jsx)("div", {
           className: p,
           children: r.type ? "" : (0, n.jsxs)(n.Fragment, {

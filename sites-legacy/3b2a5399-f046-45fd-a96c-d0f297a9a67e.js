@@ -14,11 +14,11 @@ try {
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [9793], {
     94931(e, a, t) {
-      var d = t(93082),
-        n = Symbol.for("react.element"),
+      var n = t(93082),
+        d = Symbol.for("react.element"),
         o = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
-        s = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -27,14 +27,14 @@ try {
         };
 
       function l(e, a, t) {
-        var d, o = {},
+        var n, o = {},
           l = null,
           i = null;
-        for (d in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, d) && !f.hasOwnProperty(d) && (o[d] = a[d]);
+        for (n in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, n) && !f.hasOwnProperty(n) && (o[n] = a[n]);
         if (e && e.defaultProps)
-          for (d in a = e.defaultProps) void 0 === o[d] && (o[d] = a[d]);
+          for (n in a = e.defaultProps) void 0 === o[n] && (o[n] = a[n]);
         return {
-          $$typeof: n,
+          $$typeof: d,
           type: e,
           key: l,
           ref: i,
