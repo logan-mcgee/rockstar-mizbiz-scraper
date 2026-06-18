@@ -103,9 +103,9 @@ try {
           weeks: i = 0,
           days: f = 0,
           hours: u = 0,
-          minutes: c = 0,
-          seconds: l = 0
-        } = t, b = r(d(e, s + 12 * o, n), f + 7 * i, n), g = 1e3 * (l + 60 * (c + 60 * u));
+          minutes: l = 0,
+          seconds: c = 0
+        } = t, b = r(d(e, s + 12 * o, n), f + 7 * i, n), g = 1e3 * (c + 60 * (l + 60 * u));
         return (0, a.w)(n?.in || e, +b - g)
       }
     },

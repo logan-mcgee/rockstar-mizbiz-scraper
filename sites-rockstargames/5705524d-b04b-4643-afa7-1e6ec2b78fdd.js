@@ -18,7 +18,7 @@ try {
         Actions: () => ea,
         AvatarMenu: () => xe,
         AvatarMenuLanguageLabel: () => _e,
-        AvatarMenuSection: () => ge,
+        AvatarMenuSection: () => fe,
         AvatarMenuSectionContent: () => Me,
         AvatarMenuSectionHeader: () => pe,
         AvatarMenuSectionHeaderDropdown: () => be,
@@ -71,8 +71,8 @@ try {
         m = n(39793),
         v = (n(54446), n(79067)),
         x = n(96883),
-        f = n(52457),
-        g = n(38957),
+        g = n(52457),
+        f = n(38957),
         p = n(66760),
         b = n(69669),
         M = n(13517),
@@ -379,7 +379,7 @@ try {
           simpleMenu: d = !1,
           locale: u
         }) => {
-          const [h, v] = (0, i.useState)(!1), [x, f] = (0, i.useState)(!0), [g, p] = (0, i.useState)(!1), [b, M] = (0, i.useState)(!1), [_, j] = (0, i.useState)(!1), N = (0, i.useRef)(null), C = (0, i.useRef)(null), [y, k] = (0, i.useState)(null), [w, S] = (0, i.useState)(r), O = (0, i.useMemo)(() => "visible" !== c && ("hidden" === c || h), [h, c]);
+          const [h, v] = (0, i.useState)(!1), [x, g] = (0, i.useState)(!0), [f, p] = (0, i.useState)(!1), [b, M] = (0, i.useState)(!1), [_, j] = (0, i.useState)(!1), N = (0, i.useRef)(null), C = (0, i.useRef)(null), [y, k] = (0, i.useState)(null), [w, S] = (0, i.useState)(r), O = (0, i.useMemo)(() => "visible" !== c && ("hidden" === c || h), [h, c]);
           (0, i.useEffect)(() => {
             let e = window.scrollY;
             const a = () => {
@@ -388,7 +388,7 @@ try {
                 v(a && n), e = window.scrollY
               },
               n = () => {
-                f(0 === window.scrollY)
+                g(0 === window.scrollY)
               };
             return window.addEventListener("scroll", a), window.addEventListener("scroll", n), () => {
               window.removeEventListener("scroll", a), window.removeEventListener("scroll", n)
@@ -432,7 +432,7 @@ try {
                     navContentRef: C,
                     simpleMenu: d,
                     setForceBackground: S,
-                    avatarMenuOpened: g,
+                    avatarMenuOpened: f,
                     setAvatarMenuOpened: p,
                     mainMenuOpened: b,
                     setMainMenuOpened: M,
@@ -526,7 +526,7 @@ try {
       const J = ({
           showOn: e,
           ...a
-        }) => (0, m.jsx)(g.DX, {
+        }) => (0, m.jsx)(f.DX, {
           className: e ? Z[e] : "",
           ...a
         }),
@@ -610,7 +610,7 @@ try {
           }, [n]), (0, i.useEffect)(() => {
             const e = e => {
               const a = e?.target;
-              n && a.innerWidth >= 1024 && g()
+              n && a.innerWidth >= 1024 && f()
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -632,7 +632,7 @@ try {
                 transition: K.hamburgerClose
               }
             },
-            g = () => {
+            f = () => {
               t(!n), r(!1)
             };
           return v ? null : (0, m.jsx)(te.Provider, {
@@ -649,7 +649,7 @@ try {
               children: [(0, m.jsx)(J, {
                 showOn: "mobile",
                 children: (0, m.jsx)(re, {
-                  onClick: g,
+                  onClick: f,
                   isMenuOpen: n
                 })
               }), (0, m.jsx)(M.AnimatePresence, {
@@ -669,7 +669,7 @@ try {
                       forceMount: !0,
                       onEscapeKeyDown: () => t(!1),
                       children: (0, m.jsxs)(M.motion.div, {
-                        className: (0, o.default)((0, f.m)("dark"), "vkitev4", "vkitev7"),
+                        className: (0, o.default)((0, g.m)("dark"), "vkitev4", "vkitev7"),
                         variants: x,
                         animate: "show",
                         initial: "hidden",
@@ -824,7 +824,7 @@ try {
               mainMenuOpened: v,
               setMainMenuOpened: x
             } = (0, i.useContext)(G),
-            [g, p] = (0, i.useState)(!1),
+            [f, p] = (0, i.useState)(!1),
             [b, k] = (0, i.useState)(!1),
             [w, S] = (0, i.useState)(d),
             O = () => {
@@ -835,16 +835,16 @@ try {
             c(["open", ...e.filter(e => "open" !== e)])
           };
           return (0, i.useEffect)(() => {
-            const e = g || b;
+            const e = f || b;
             e && v && x(!1), u(e)
-          }, [g, b, v, x, u]), (0, m.jsxs)(de.Provider, {
+          }, [f, b, v, x, u]), (0, m.jsxs)(de.Provider, {
             value: {
               inAvatarMenu: !0,
               avatarMenuOpenItems: l,
               closeAvatarMenu: O
             },
             children: [(0, m.jsx)(C.bL, {
-              open: g,
+              open: f,
               onOpenChange: e => {
                 s?.(e), p(e)
               },
@@ -856,11 +856,11 @@ try {
                     asChild: !0,
                     children: (0, m.jsx)(N.IconButton, {
                       size: "SM",
-                      label: r.formatMessage(g ? E.avatar_menu_close : E.avatar_menu_open),
+                      label: r.formatMessage(f ? E.avatar_menu_close : E.avatar_menu_open),
                       appearance: "ghost",
                       icon: "Person",
                       className: le,
-                      "aria-label": r.formatMessage(g ? E.avatar_menu_close : E.avatar_menu_open),
+                      "aria-label": r.formatMessage(f ? E.avatar_menu_close : E.avatar_menu_open),
                       "data-testid": "avatarMenuButtonDesktop",
                       "data-logged-in": n,
                       children: e && (0, m.jsx)("img", {
@@ -870,13 +870,13 @@ try {
                       })
                     })
                   }), (0, m.jsx)(M.AnimatePresence, {
-                    children: g && (0, m.jsx)(C.UC, {
+                    children: f && (0, m.jsx)(C.UC, {
                       forceMount: !0,
                       align: "end",
                       alignOffset: -40,
                       sideOffset: 24,
                       onOpenAutoFocus: e => e.preventDefault(),
-                      className: (0, f.m)("dark"),
+                      className: (0, g.m)("dark"),
                       children: (0, m.jsx)(M.motion.div, {
                         variants: ue,
                         initial: "closed",
@@ -915,11 +915,11 @@ try {
                     "data-logged-in": n,
                     children: (0, m.jsx)(N.IconButton, {
                       size: "SM",
-                      label: r.formatMessage(g ? E.avatar_menu_close : E.avatar_menu_open),
+                      label: r.formatMessage(f ? E.avatar_menu_close : E.avatar_menu_open),
                       appearance: "ghost",
                       icon: "Person",
                       className: le,
-                      "aria-label": r.formatMessage(g ? E.avatar_menu_close : E.avatar_menu_open),
+                      "aria-label": r.formatMessage(f ? E.avatar_menu_close : E.avatar_menu_open),
                       children: e && (0, m.jsx)("img", {
                         className: "m27a3y8",
                         src: e || o
@@ -930,7 +930,7 @@ try {
                       asChild: !0,
                       children: (0, m.jsxs)(_.UC, {
                         forceMount: !0,
-                        className: (0, f.m)("dark"),
+                        className: (0, g.m)("dark"),
                         children: [(0, m.jsxs)(j.s6, {
                           children: [(0, m.jsx)(_.hE, {
                             children: r.formatMessage(E.nav_avatarmenu_title)
@@ -970,15 +970,15 @@ try {
             })]
           })
         },
-        fe = (0, i.createContext)({
+        ge = (0, i.createContext)({
           avatarMenuItemId: ""
         }),
-        ge = ({
+        fe = ({
           children: e,
           value: a
         }) => {
           const n = (0, i.useId)();
-          return (0, m.jsx)(fe.Provider, {
+          return (0, m.jsx)(ge.Provider, {
             value: {
               avatarMenuItemId: a || n
             },
@@ -1029,7 +1029,7 @@ try {
             avatarMenuOpenItems: n
           } = (0, i.useContext)(de), {
             avatarMenuItemId: t
-          } = (0, i.useContext)(fe), s = n.indexOf(t) >= 0;
+          } = (0, i.useContext)(ge), s = n.indexOf(t) >= 0;
           return (0, m.jsx)(y.UC, {
             forceMount: !0,
             asChild: !0,
@@ -1089,7 +1089,7 @@ try {
               y: 0,
               transition: K.staggerFade
             }
-          }, r = (0, o.default)((0, f.m)("dark"), "_1xtz6n0");
+          }, r = (0, o.default)((0, g.m)("dark"), "_1xtz6n0");
           return (0, i.useEffect)(() => (n?.(!0), () => {
             n?.(!1)
           }), []), a ? (0, m.jsx)(je.Provider, {
@@ -1147,8 +1147,8 @@ try {
             {
               isNavHidden: u,
               mainMenuOpened: x,
-              avatarMenuOpened: f,
-              setMainMenuOpened: g
+              avatarMenuOpened: g,
+              setMainMenuOpened: f
             } = (0, i.useContext)(G),
             {
               inAvatarMenu: p
@@ -1190,8 +1190,8 @@ try {
           }, []), (0, i.useEffect)(() => {
             x || "" === n || t("")
           }, [x]), (0, i.useEffect)(() => {
-            g("" !== n)
-          }, [n, f, x, p]);
+            f("" !== n)
+          }, [n, g, x, p]);
           const M = V({
               visibility: "visible"
             }),
@@ -1495,7 +1495,7 @@ try {
           } = (0, i.useContext)(Le), {
             inMobileMenu: x
           } = (0, i.useContext)(te), {
-            isHidden: g
+            isHidden: f
           } = (0, i.useContext)(we), {
             inAvatarMenu: p
           } = (0, i.useContext)(de), b = (0, i.useRef)(null), _ = [l, c, d].includes(u);
@@ -1504,7 +1504,7 @@ try {
               _ && b.current && (e = b.current, document.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
                 acceptNode: e => e.disabled || e.hidden ? NodeFilter.FILTER_SKIP : e.tabIndex >= 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
               }).nextNode())?.focus()
-            }, [_]), g) return null;
+            }, [_]), f) return null;
           const j = "_1pgq6b18 _1r3j5az0 _1pgq6b17",
             N = "_1pgq6b19",
             C = "_1pgq6b1a",
@@ -1512,7 +1512,7 @@ try {
           return (0, m.jsx)(M.AnimatePresence, {
             children: _ && (0, m.jsx)(v.UC, {
               ref: ie(t, b),
-              className: (0, o.default)((0, f.m)("dark"), {
+              className: (0, o.default)((0, g.m)("dark"), {
                 [j]: !x,
                 [N]: x,
                 [C]: r && !x,
@@ -1662,20 +1662,20 @@ try {
             {
               closeMobileMenu: u
             } = (0, i.useContext)(te),
-            x = s ? g.DX : "a",
-            f = (0, o.default)(U({
+            x = s ? f.DX : "a",
+            g = (0, o.default)(U({
               context: "mainMenu"
             }), a);
           return (0, m.jsx)(v.N_, {
             onSelect: e => {
               d?.(), u?.(), n?.(e)
             },
-            className: f,
+            className: g,
             asChild: !0,
             ...r,
             children: (0, m.jsxs)(x, {
               ref: l,
-              children: [(0, m.jsx)(g.xV, {
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), t && (0, m.jsx)(p.ExternalLink, {
                 label: c.formatMessage(E.nav_rockstargames_external_link),
@@ -1698,7 +1698,7 @@ try {
             closeMobileMenu: d
           } = (0, i.useContext)(te), u = (0, o.default)(U({
             context: "mobileMenu"
-          }), n), h = a ? g.DX : "a";
+          }), n), h = a ? f.DX : "a";
           return (0, m.jsx)(v.N_, {
             asChild: !0,
             onSelect: e => {
@@ -1708,7 +1708,7 @@ try {
             children: (0, m.jsxs)(h, {
               ref: l,
               className: u,
-              children: [(0, m.jsx)(g.xV, {
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), s && (0, m.jsx)(p.ExternalLink, {
                 size: "LG",
@@ -1736,17 +1736,17 @@ try {
             x = (0, o.default)(U({
               context: "quickMenu"
             }), n),
-            f = a ? g.DX : "a";
+            g = a ? f.DX : "a";
           return (0, m.jsx)(v.N_, {
             asChild: !0,
             onSelect: e => {
               d?.(), u?.(), t?.(e)
             },
             ...r,
-            children: (0, m.jsxs)(f, {
+            children: (0, m.jsxs)(g, {
               ref: l,
               className: x,
-              children: [(0, m.jsx)(g.xV, {
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), s && (0, m.jsx)(p.ExternalLink, {
                 label: c.formatMessage(E.nav_rockstargames_external_link),
@@ -1771,10 +1771,10 @@ try {
             {
               closeMobileMenu: x
             } = (0, i.useContext)(te),
-            f = (0, o.default)(U({
+            g = (0, o.default)(U({
               context: "subMenu"
             }), n, r ? ["_1pgq6b1q"] : null),
-            b = a ? g.DX : "a";
+            b = a ? f.DX : "a";
           return (0, m.jsx)(v.N_, {
             asChild: !0,
             onSelect: e => {
@@ -1783,8 +1783,8 @@ try {
             ...l,
             children: (0, m.jsxs)(b, {
               ref: c,
-              className: f,
-              children: [(0, m.jsx)(g.xV, {
+              className: g,
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), s && (0, m.jsx)(p.ExternalLink, {
                 label: d.formatMessage(E.nav_rockstargames_external_link),
@@ -1811,17 +1811,17 @@ try {
             x = (0, o.default)(U({
               context: "avatarMenu"
             }), n),
-            f = a ? g.DX : "a";
+            g = a ? f.DX : "a";
           return (0, m.jsx)(v.N_, {
             asChild: !0,
             onSelect: e => {
               d?.(), u?.(), t?.(e)
             },
             ...r,
-            children: (0, m.jsxs)(f, {
+            children: (0, m.jsxs)(g, {
               ref: l,
               className: x,
-              children: [(0, m.jsx)(g.xV, {
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), s && (0, m.jsx)(p.ExternalLink, {
                 label: c.formatMessage(E.nav_rockstargames_external_link),
@@ -1848,17 +1848,17 @@ try {
             x = (0, o.default)(U({
               context: "nestedMenu"
             }), n),
-            f = a ? g.DX : "a";
+            g = a ? f.DX : "a";
           return (0, m.jsx)(v.N_, {
             asChild: !0,
             onSelect: e => {
               d?.(), u?.(), t?.(e)
             },
             ...r,
-            children: (0, m.jsxs)(f, {
+            children: (0, m.jsxs)(g, {
               ref: l,
               className: x,
-              children: [(0, m.jsx)(g.xV, {
+              children: [(0, m.jsx)(f.xV, {
                 children: e
               }), s && (0, m.jsx)(p.ExternalLink, {
                 label: c.formatMessage(E.nav_rockstargames_external_link),
@@ -1967,7 +1967,7 @@ try {
                         exit: "close",
                         variants: sa,
                         "data-testid": "searchBar",
-                        className: (0, f.m)("dark"),
+                        className: (0, g.m)("dark"),
                         children: e
                       })
                     })
@@ -2008,8 +2008,8 @@ try {
             formatMessage: v
           } = (0, h.A)(), {
             inMobileMenu: x,
-            closeMobileMenu: f
-          } = (0, i.useContext)(te), [g, b] = (0, L.i)({
+            closeMobileMenu: g
+          } = (0, i.useContext)(te), [f, b] = (0, L.i)({
             prop: s,
             onChange: r,
             defaultProp: ""
@@ -2024,13 +2024,13 @@ try {
             O(!1)
           }), []);
           const I = (e, a) => {
-              t(e, a, f), S(!0)
+              t(e, a, g), S(!0)
             },
             A = {
               inSearchMenu: !0,
               searchTarget: _,
               setSearchTarget: e => {
-                j(e), g && g.length >= a && I(g, e)
+                j(e), f && f.length >= a && I(f, e)
               },
               onChange: r
             },
@@ -2070,7 +2070,7 @@ try {
               "data-testid": "searchBar",
               children: [(0, m.jsx)(N.IconButton, {
                 onClick: () => {
-                  I(g, _)
+                  I(f, _)
                 },
                 appearance: "ghost",
                 icon: "Search",
@@ -2081,12 +2081,12 @@ try {
                 children: (0, m.jsx)("input", {
                   className: "_11eee6mh",
                   type: "search",
-                  value: g,
+                  value: f,
                   onChange: e => (e => {
                     b(e), S(!1)
                   })(e.target.value),
                   onKeyUp: e => {
-                    "Enter" === e.key && g && _ && I(g, _)
+                    "Enter" === e.key && f && _ && I(f, _)
                   },
                   onFocus: () => k(!0),
                   placeholder: v(E.search_placeholder),
@@ -2139,22 +2139,22 @@ try {
               key: a,
               title: n
             })
-          }, f = t || Boolean(d) && (d === a || d === v.key);
+          }, g = t || Boolean(d) && (d === a || d === v.key);
           return u ? (0, m.jsx)("button", {
             ref: l,
             type: "button",
             className: (0, o.default)("_11eee6mq", {
-              [ta]: f
+              [ta]: g
             }),
             onClick: () => x(a),
             value: a,
             ...r,
             role: "radio",
-            "aria-checked": f,
+            "aria-checked": g,
             children: e
           }) : (0, m.jsx)(N.Tag.Root, {
             className: "_11eee6mj",
-            color: f ? "monochrome" : "grey",
+            color: g ? "monochrome" : "grey",
             size: "LG",
             background: "static",
             onClick: () => x(a),
@@ -2166,7 +2166,7 @@ try {
               ref: l,
               value: a,
               role: "radio",
-              "aria-checked": f,
+              "aria-checked": g,
               children: [(0, m.jsx)(N.Tag.Label, {
                 asChild: !0,
                 children: (0, m.jsx)(N.Body, {
@@ -2268,14 +2268,14 @@ try {
           })
         };
       var xa = "_13sb4ht3",
-        fa = "_13sb4ht4";
-      const ga = () => (0, m.jsx)("div", {
+        ga = "_13sb4ht4";
+      const fa = () => (0, m.jsx)("div", {
         className: "_13sb4ht2",
         children: (0, m.jsx)("svg", {
           viewBox: "0 0 32 32",
           fill: "none",
           xmlns: "http://www.w3.org/2000/svg",
-          children: [xa, fa, ""].map((e, a) => (0, m.jsx)("path", {
+          children: [xa, ga, ""].map((e, a) => (0, m.jsx)("path", {
             className: e,
             fillRule: "evenodd",
             clipRule: "evenodd",
@@ -2306,13 +2306,13 @@ try {
             {
               brand: v,
               brandTitle: x,
-              isNavHidden: f,
-              simpleMenu: g
+              isNavHidden: g,
+              simpleMenu: f
             } = (0, i.useContext)(G),
             p = n || "/";
           return (0, i.useEffect)(() => {
             l(!1)
-          }, [f, e]), (0, i.useEffect)(() => {
+          }, [g, e]), (0, i.useEffect)(() => {
             const e = () => {
               const e = c.current?.getBoundingClientRect().width || 0,
                 a = c.current?.children;
@@ -2334,7 +2334,7 @@ try {
                     "aria-label": s.formatMessage(E.nav_rockstargames_home),
                     onNavigate: t,
                     className: "corzs39",
-                    children: (0, m.jsx)(ga, {})
+                    children: (0, m.jsx)(fa, {})
                   }), a && (0, m.jsxs)(C.bL, {
                     open: r,
                     onOpenChange: l,
@@ -2346,7 +2346,7 @@ try {
                           type: "button",
                           className: "corzs38",
                           "aria-label": s.formatMessage(E.nav_rockstargames_logo),
-                          children: (0, m.jsx)(ga, {})
+                          children: (0, m.jsx)(fa, {})
                         })
                       })
                     }), (0, m.jsx)(M.AnimatePresence, {
@@ -2392,7 +2392,7 @@ try {
                 ref: c,
                 children: [(0, m.jsx)("div", {
                   className: pa,
-                  children: (!v || g) && (0, m.jsx)(va, {
+                  children: (!v || f) && (0, m.jsx)(va, {
                     to: p,
                     "aria-label": s.formatMessage(E.nav_rockstargames_home),
                     onNavigate: t,
@@ -2400,13 +2400,13 @@ try {
                       corzs3b: d
                     }),
                     tabIndex: d ? -1 : 0,
-                    children: (0, m.jsx)(ga, {})
+                    children: (0, m.jsx)(fa, {})
                   })
                 }), (v || x) && (0, m.jsxs)("div", {
                   className: (0, o.clsx)("corzs34", {
                     corzs3b: x && !d
                   }),
-                  children: [g && (0, m.jsx)("div", {
+                  children: [f && (0, m.jsx)("div", {
                     className: "corzs35"
                   }), v && (0, m.jsx)("div", {
                     className: "corzs36",

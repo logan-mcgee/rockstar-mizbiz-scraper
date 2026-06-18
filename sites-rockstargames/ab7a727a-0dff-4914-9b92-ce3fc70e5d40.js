@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "87010370-7018-460f-9850-c64eee5e40d6", e._sentryDebugIdIdentifier = "sentry-dbid-87010370-7018-460f-9850-c64eee5e40d6")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ab7a727a-0dff-4914-9b92-ce3fc70e5d40", e._sentryDebugIdIdentifier = "sentry-dbid-ab7a727a-0dff-4914-9b92-ce3fc70e5d40")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -909,14 +909,14 @@ try {
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = i[a] || new Set,
           d = new Set,
-          m = new Set;
+          r = new Set;
         for (n.forEach(function(e) {
-            m.add(e)
-          }); m.size > 0;) {
-          var r = m;
-          m = new Set, r.forEach(function(e) {
+            r.add(e)
+          }); r.size > 0;) {
+          var m = r;
+          r = new Set, m.forEach(function(e) {
             d.has(e) || (d.add(e), (i[e] || new Set).forEach(function(e) {
-              m.add(e)
+              r.add(e)
             }))
           })
         }
@@ -935,7 +935,7 @@ try {
     78995(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => m
+        A: () => r
       });
       var i = t(39793),
         s = t(93082),
@@ -946,28 +946,28 @@ try {
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f"
       };
       (0, n.importAll)(t(86751));
-      const m = ({
+      const r = ({
         isWideCard: e = !1,
         size: a = 640,
-        title: m,
-        titleSlug: r,
+        title: r,
+        titleSlug: m,
         inGlobalNav: o = !1
       }) => {
         const {
           isMobile: c
-        } = (0, n.useWindowResize)(), g = (0, n.useLocale)(), p = (0, s.useMemo)(() => {
+        } = (0, n.useWindowResize)(), l = (0, s.useMemo)(() => {
           let i = "";
-          return e && (i = c ? t(16044)(`./${r}/mobile/${g}.jpg`) : t(51048)(`./${r}/desktop/${g}.jpg`)), i || (i = t(39294)(`./${r}.jpg`), i += `?im=Resize=${a}`), i
-        }, [c, r]), [l] = (0, n.usePreloadImg)(p);
-        let k = p;
+          return e && (i = c ? t(25087)(`./${m}/mobile/global.jpg`) : t(58963)(`./${m}/desktop/global.jpg`)), i || (i = t(39294)(`./${m}.jpg`), i += `?im=Resize=${a}`), i
+        }, [c, m]), [g] = (0, n.usePreloadImg)(l);
+        let p = l;
         return (0, i.jsx)("div", {
           role: "img",
-          "aria-label": m,
+          "aria-label": r,
           style: {
-            backgroundImage: `url(${k})`,
+            backgroundImage: `url(${p})`,
             borderRadius: o ? "unset" : ""
           },
-          className: [d.img, l ? d.startAnimation : "", e ? d.wide : ""].join(" ")
+          className: [d.img, g ? d.startAnimation : "", e ? d.wide : ""].join(" ")
         })
       }
     },
@@ -975,7 +975,7 @@ try {
       "use strict";
       t.d(a, {
         s: () => i.A,
-        N: () => m
+        N: () => r
       });
       var i = t(78995),
         s = t(39793),
@@ -984,28 +984,28 @@ try {
           fobLink: "rockstargames-sites-rockstargamesd30ff40ba02b7ed14124da3ca9cd4f2b",
           wide: "rockstargames-sites-rockstargamesc9686ec502f78b05e47568667e90bd17"
         },
-        m = ({
+        r = ({
           game: e,
           to: a
         }) => {
           const {
             titleSlug: t,
-            urlOfficial: m = ""
-          } = e, r = ["VI"].includes(t.toUpperCase());
+            urlOfficial: r = ""
+          } = e, m = ["VI"].includes(t.toUpperCase());
           return (0, s.jsx)(n.A, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": t,
             "data-testid": `${t}-gamecard`,
-            to: a ?? m,
+            to: a ?? r,
             target: "_self",
-            className: [d.fobLink, r ? d.wide : ""].join(" "),
-            reloadDocument: r,
+            className: [d.fobLink, m ? d.wide : ""].join(" "),
+            reloadDocument: m,
             children: (0, s.jsx)(i.A, {
               title: e.title,
               titleSlug: t,
-              isWideCard: r,
-              size: r ? 1740 : 480
+              isWideCard: m,
+              size: m ? 1740 : 480
             })
           })
         }
@@ -1013,18 +1013,18 @@ try {
     5180(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => p
       });
       var i = t(39793),
         s = t(93082),
         n = t(36416),
         d = t(13331),
-        m = t(82199),
-        r = t(45970),
+        r = t(82199),
+        m = t(45970),
         o = t(27859),
         c = t(38044),
-        g = t(45074);
-      const p = {
+        l = t(45074);
+      const g = {
           info: "rockstargames-sites-rockstargamesea1c51ae745531c2aeabbe3fcf603842",
           newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
           newswireBlockNoSpecialOrder: "rockstargames-sites-rockstargamesc06d09374e8b5cc41f1732c691ee8e25",
@@ -1034,27 +1034,27 @@ try {
           title: "rockstargames-sites-rockstargamesf1dfe59c3d981dbe132559620885ecea",
           top: "rockstargames-sites-rockstargameseee9c5d3b714a61ac265369800a6d4e0"
         },
-        l = ({
+        p = ({
           section: e = "",
           index: a,
           post: t,
-          noSpecialOrder: l = !1,
-          focused: k
+          noSpecialOrder: p = !1,
+          focused: u
         }) => {
           const {
-            track: u
-          } = (0, m.useGtmTrack)(), [f] = (0, n.useSearchParams)(), b = t.preview_images_parsed.newswire_block, j = (0, r.Ub)(o.fi.mobile), _ = {
-            default: 0 !== a || l ? b.square || b.d16x9 || b._fallback : b.d16x9 || b.square || b._fallback,
+            track: k
+          } = (0, r.useGtmTrack)(), [f] = (0, n.useSearchParams)(), b = t.preview_images_parsed.newswire_block, v = (0, m.Ub)(o.fi.mobile), j = {
+            default: 0 !== a || p ? b.square || b.d16x9 || b._fallback : b.d16x9 || b.square || b._fallback,
             mobile: b.square || b._fallback
-          }, [v] = (0, d.usePreloadImg)(_.default), h = {
+          }, [h] = (0, d.usePreloadImg)(j.default), _ = {
             default: {
-              backgroundImage: `url(${_.default})`
+              backgroundImage: `url(${j.default})`
             },
             mobile: {
-              backgroundImage: `url(${_.mobile})`
+              backgroundImage: `url(${j.mobile})`
             }
           }, N = (0, s.useCallback)(() => {
-            u({
+            k({
               event: "card_click",
               card_id: t.id,
               card_name: t.name_slug.replace(/-/g, " "),
@@ -1065,28 +1065,28 @@ try {
           }, [t]);
           return (0, i.jsx)(c.A, {
             to: t.url,
-            className: [p.newswireBlock, l ? p.newswireBlockNoSpecialOrder : "", null !== v ? p.startAnimation : ""].join(" "),
-            focused: k,
+            className: [g.newswireBlock, p ? g.newswireBlockNoSpecialOrder : "", null !== h ? g.startAnimation : ""].join(" "),
+            focused: u,
             onClick: N,
             children: (0, i.jsxs)(i.Fragment, {
               children: [0 !== a || f.get("tag_id") ? (0, i.jsx)("div", {
-                className: p.preview,
-                style: h.default
+                className: g.preview,
+                style: _.default
               }) : (0, i.jsx)("div", {
-                className: j ? p.previewMobile : p.preview,
-                style: j ? h.mobile : h.default
+                className: v ? g.previewMobile : g.preview,
+                style: v ? _.mobile : _.default
               }), (0, i.jsxs)("div", {
-                className: p.info,
+                className: g.info,
                 children: [(0, i.jsxs)("div", {
-                  className: p.top,
-                  children: [t.primary_tags.length ? (0, i.jsx)(g.A, {
+                  className: g.top,
+                  children: [t.primary_tags.length ? (0, i.jsx)(l.A, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, i.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
                 }), (0, i.jsx)("h5", {
-                  className: p.title,
+                  className: g.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -1112,22 +1112,22 @@ try {
           title: t,
           style: d
         }) => {
-          const m = (0, i.jsxs)("div", {
+          const r = (0, i.jsxs)("div", {
             style: d,
             className: [n.tag, e].join(" "),
             children: [(0, i.jsx)("i", {}), t]
           });
           return void 0 !== a ? (0, i.jsx)(s.A, {
             to: a,
-            children: m
-          }) : m
+            children: r
+          }) : r
         }
     },
     13821(e, a, t) {
       "use strict";
       t.d(a, {
-        s: () => m,
-        N: () => r
+        s: () => r,
+        N: () => m
       });
       var i = t(39793),
         s = t(13331),
@@ -1141,7 +1141,7 @@ try {
           title: "rockstargames-sites-rockstargamesfd87597d0f90ed6d8a2081da933f53bc",
           videoPreview: "rockstargames-sites-rockstargamesa626ad482ff0be0336e75929516654d5"
         },
-        m = ({
+        r = ({
           video: e,
           size: a = 640
         }) => {
@@ -1156,23 +1156,23 @@ try {
             }
           })
         },
-        r = ({
+        m = ({
           gameTitleNecessary: e = !0,
           openInNewWindow: a = !1,
           video: t,
           size: s,
-          toExplicit: r
+          toExplicit: m
         }) => {
-          const o = r ?? `/videos/${t.id}`,
+          const o = m ?? `/videos/${t.id}`,
             c = {
               className: d.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": o
             },
-            g = (0, i.jsxs)("div", {
+            l = (0, i.jsxs)("div", {
               className: d.card,
-              children: [(0, i.jsx)(m, {
+              children: [(0, i.jsx)(r, {
                 video: t,
                 size: s
               }), (0, i.jsxs)("div", {
@@ -1194,25 +1194,25 @@ try {
             href: o,
             target: "_blank",
             ...c,
-            children: g
+            children: l
           }) : (0, i.jsx)(n.A, {
             to: o,
             ...c,
-            children: g
+            children: l
           })
         }
     },
     6479(e, a, t) {
       "use strict";
       t.r(a), t.d(a, {
-        default: () => v
+        default: () => h
       });
       var i = t(39793),
         s = t(93082),
         n = t(36416),
         d = t(31655),
-        m = t(5180);
-      const r = "rockstargames-sites-rockstargamesb013d77f453d7053bbcf06f173ff326c",
+        r = t(5180);
+      const m = "rockstargames-sites-rockstargamesb013d77f453d7053bbcf06f173ff326c",
         o = ({
           children: e,
           data: a,
@@ -1236,7 +1236,7 @@ try {
           const s = new Array(Math.min(e.pageCount, 8)),
             n = Math.max(e.pageCount - 8, 1),
             d = Math.max(2, e.page - 4),
-            m = Array.from(s, (e, a) => a + Math.min(n, d));
+            r = Array.from(s, (e, a) => a + Math.min(n, d));
           return (0, i.jsxs)("div", {
             className: `rockstargames-sites-rockstargamese480f25872ae2a8b3fcd1e492d838301 ${t??""}`,
             children: [e.pageCount > 8 ? (0, i.jsxs)(i.Fragment, {
@@ -1245,19 +1245,19 @@ try {
                 onPageUpdate: a,
                 page: 1,
                 children: "1"
-              }), 2 !== m[0] ? (0, i.jsx)("div", {
-                className: r,
+              }), 2 !== r[0] ? (0, i.jsx)("div", {
+                className: m,
                 children: "..."
               }) : ""]
-            }) : "", m.map(s => (0, i.jsx)(o, {
+            }) : "", r.map(s => (0, i.jsx)(o, {
               data: e,
               onPageUpdate: a,
               page: s,
               className: t,
               children: s
             }, s)), e.pageCount > 8 ? (0, i.jsxs)(i.Fragment, {
-              children: [m.slice(-1)[0] + 1 < e.pageCount ? (0, i.jsx)("div", {
-                className: r,
+              children: [r.slice(-1)[0] + 1 < e.pageCount ? (0, i.jsx)("div", {
+                className: m,
                 children: "..."
               }) : "", (0, i.jsx)(o, {
                 data: e,
@@ -1268,47 +1268,47 @@ try {
             }) : ""]
           })
         };
-      var g = t(68993),
-        p = t(13821),
-        l = t(4067),
-        k = t(13331),
-        u = t(18234),
+      var l = t(68993),
+        g = t(13821),
+        p = t(4067),
+        u = t(13331),
+        k = t(18234),
         f = t(14786);
       const b = "rockstargames-sites-rockstargamesfd5351e921b874473f5256931420f405",
-        j = "rockstargames-sites-rockstargamescfd48749550b301dcc13f82e4b478494",
-        _ = ({
+        v = "rockstargames-sites-rockstargamescfd48749550b301dcc13f82e4b478494",
+        j = ({
           loading: e,
           searchResponse: a,
           activeTab: t
         }) => {
           const [s, d] = (0, n.useSearchParams)();
-          let r;
+          let m;
           switch (t) {
             case "posts":
-              r = a.posts.results.map(e => (0, i.jsx)(m.A, {
+              m = a.posts.results.map(e => (0, i.jsx)(r.A, {
                 post: e,
                 noSpecialOrder: !0
               }, e.id));
               break;
             case "games":
-              r = a.games.results.map(e => (0, i.jsx)(l.N, {
+              m = a.games.results.map(e => (0, i.jsx)(p.N, {
                 game: e
               }, e.id));
               break;
             case "videos":
-              r = a.videos.results.map(e => (0, i.jsx)(p.N, {
+              m = a.videos.results.map(e => (0, i.jsx)(g.N, {
                 video: e
               }, e.id));
               break;
             default:
-              r = null
+              m = null
           }
           return (0, i.jsxs)(i.Fragment, {
             children: [e ? "" : (0, i.jsx)("section", {
               className: "rockstargames-sites-rockstargamesfd11aba08f1048b65f7622be1a6b951d",
               children: (0, i.jsx)("div", {
                 className: "rockstargames-sites-rockstargamesf0dd8d4498e6c2c72fa698ba6fa3ad15",
-                children: r
+                children: m
               })
             }), a[t]?.paging ? (0, i.jsx)("section", {
               className: "rockstargames-sites-rockstargamesa181f90d52be1b1d67d871d5df02c04e",
@@ -1324,7 +1324,7 @@ try {
             }) : ""]
           })
         },
-        v = (0, k.withTranslations)(({
+        h = (0, u.withTranslations)(({
           t: e
         }) => {
           const {
@@ -1333,54 +1333,54 @@ try {
             },
             setSearch: t,
             setTitle: n
-          } = (0, u.b)(), m = (0, k.useQueryParams)(), [r, o] = (0, s.useState)(null), [c, p] = (0, s.useState)({}), [l, v] = (0, s.useState)(m.get("tab") ?? "games"), {
-            data: h = {},
+          } = (0, k.b)(), r = (0, u.useQueryParams)(), [m, o] = (0, s.useState)(null), [c, g] = (0, s.useState)({}), [p, h] = (0, s.useState)(r.get("tab") ?? "games"), {
+            data: _ = {},
             loading: N
-          } = (0, k.useQuery)(f.SearchData, {
+          } = (0, u.useQuery)(f.SearchData, {
             variables: c,
             skip: !Object.entries(c).length || !c.q,
             autoSetLoading: !0
           });
           return (0, s.useEffect)(() => {
             const e = {
-              q: m.get("q"),
-              page: Number(m.get("page") ?? 1),
+              q: r.get("q"),
+              page: Number(r.get("page") ?? 1),
               withGames: !0,
               withPosts: !0,
               withVideos: !0
             };
-            p(e), t(m.get("q"))
-          }, [m.get("q"), m.get("page"), m.get("tab"), l]), (0, s.useEffect)(() => {
-            const e = Object.entries(h).find(([, e]) => e?.paging?.count > 0)?.[0];
-            v(m.get("tab") ?? e ?? "games")
-          }, [h, m.get("tab")]), (0, s.useEffect)(() => {
-            void 0 !== h?.games?.paging?.count && (o((h?.games?.paging?.count ?? 0) + (h?.videos?.paging?.count ?? 0) + (h?.posts?.paging?.count ?? 0)), n(h?.meta?.title.replace("%s", a)))
-          }, [h, l]), Object.entries(c).length ? c.q ? null === r || N ? null : (0, i.jsxs)("div", {
+            g(e), t(r.get("q"))
+          }, [r.get("q"), r.get("page"), r.get("tab"), p]), (0, s.useEffect)(() => {
+            const e = Object.entries(_).find(([, e]) => e?.paging?.count > 0)?.[0];
+            h(r.get("tab") ?? e ?? "games")
+          }, [_, r.get("tab")]), (0, s.useEffect)(() => {
+            void 0 !== _?.games?.paging?.count && (o((_?.games?.paging?.count ?? 0) + (_?.videos?.paging?.count ?? 0) + (_?.posts?.paging?.count ?? 0)), n(_?.meta?.title.replace("%s", a)))
+          }, [_, p]), Object.entries(c).length ? c.q ? null === m || N ? null : (0, i.jsxs)("div", {
             className: b,
             children: [(0, i.jsx)("section", {
-              className: j,
+              className: v,
               children: (0, i.jsxs)("div", {
                 className: "rockstargames-sites-rockstargamese054deca2519c2462fc96246266a5fbc",
                 children: [(0, i.jsxs)("h4", {
-                  children: [N ? e("search-active") : "", N || r ? N ? "" : e("Search results for:") : e("search-over-empty")]
+                  children: [N ? e("search-active") : "", N || m ? N ? "" : e("Search results for:") : e("search-over-empty")]
                 }), (0, i.jsx)(d.Body, {
                   size: "MD",
-                  children: e("%s").replace("%s", m.get("q"))
+                  children: e("%s").replace("%s", r.get("q"))
                 })]
               })
-            }), !N && r ? (0, i.jsx)(_, {
-              searchResponse: h,
+            }), !N && m ? (0, i.jsx)(j, {
+              searchResponse: _,
               searchTerm: a,
-              activeTab: l,
+              activeTab: p,
               t: e
             }) : ""]
           }) : (0, i.jsx)("div", {
             className: b,
             children: (0, i.jsxs)("section", {
-              className: j,
+              className: v,
               children: [(0, i.jsx)("h3", {
                 children: e("Search")
-              }), (0, i.jsx)(g.A, {})]
+              }), (0, i.jsx)(l.A, {})]
             })
           }) : null
         })
@@ -1392,32 +1392,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -1493,32 +1469,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -1587,21 +1539,9 @@ try {
         return Object.keys(i)
       }, s.resolve = n, e.exports = s, s.id = 39294
     },
-    51048(e, a, t) {
+    58963(e, a, t) {
       var i = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function s(e) {
@@ -1618,23 +1558,11 @@ try {
       }
       s.keys = function() {
         return Object.keys(i)
-      }, s.resolve = n, e.exports = s, s.id = 51048
+      }, s.resolve = n, e.exports = s, s.id = 58963
     },
-    16044(e, a, t) {
+    25087(e, a, t) {
       var i = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function s(e) {
@@ -1651,7 +1579,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(i)
-      }, s.resolve = n, e.exports = s, s.id = 16044
+      }, s.resolve = n, e.exports = s, s.id = 25087
     },
     10111(e) {
       "use strict";
@@ -1671,111 +1599,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    13890(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

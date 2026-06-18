@@ -58,16 +58,16 @@ try {
       var _ = a(17301),
         p = a(31655),
         h = a(81270);
-      const T = ({
+      const b = ({
         legalText: e
       }) => (0, t.jsx)("div", {
         dangerouslySetInnerHTML: {
           __html: e
         }
       });
-      var b = a(16630),
+      var T = a(16630),
         x = "_1238r7l",
-        k = (0, b.c)({
+        k = (0, T.c)({
           defaultClassName: "_1238r7n",
           variantClassNames: {
             slideName: {
@@ -140,7 +140,7 @@ try {
             className: A,
             children: (0, t.jsx)("div", {
               className: (0, h.default)(G, "override"),
-              children: (0, t.jsx)(T, {
+              children: (0, t.jsx)(b, {
                 legalText: e.legalText
               })
             })
@@ -165,7 +165,7 @@ try {
           d = (0, i.createRef)(),
           [u, g] = (0, i.useState)(),
           [m, f] = (0, i.useState)(!1),
-          [_, b] = (0, i.useState)(),
+          [_, T] = (0, i.useState)(),
           [S, O] = (0, i.useState)(!1),
           [q, z] = (0, i.useState)(!0);
         return (0, i.useEffect)(() => {
@@ -226,7 +226,7 @@ try {
                     navigation: u,
                     modules: [M.Vx, M.Jq],
                     onInit: e => {
-                      b(e)
+                      T(e)
                     },
                     onSlideChange: e => {
                       O(e?.isEnd), z(e?.isBeginning)
@@ -297,7 +297,7 @@ try {
               className: A,
               children: (0, t.jsx)("div", {
                 className: (0, h.default)(G, "override"),
-                children: (0, t.jsx)(T, {
+                children: (0, t.jsx)(b, {
                   legalText: e.legalText
                 })
               })
@@ -384,7 +384,7 @@ try {
                 className: A,
                 children: (0, t.jsx)("div", {
                   className: (0, h.default)(G, "override"),
-                  children: (0, t.jsx)(T, {
+                  children: (0, t.jsx)(b, {
                     legalText: e.legalText
                   })
                 })
@@ -440,7 +440,7 @@ try {
               className: A,
               children: (0, t.jsx)("div", {
                 className: (0, h.default)(G, "override"),
-                children: (0, t.jsx)(T, {
+                children: (0, t.jsx)(b, {
                   legalText: n.legalText
                 })
               })
@@ -461,8 +461,8 @@ try {
           errorScreen: c,
           unlinkedScreen: m,
           successScreen: p,
-          jumpLinkId: T,
-          legalText: b,
+          jumpLinkId: b,
+          legalText: T,
           fontTheme: x = "chalet",
           usePadding: k = !0,
           ...v
@@ -489,7 +489,7 @@ try {
                 },
                 tag: a?.tag || ""
               },
-              legalText: b,
+              legalText: T,
               successScreen: {
                 body: p?.successContent || "",
                 headline: p?.successHeadline || ""
@@ -531,7 +531,7 @@ try {
             [se, oe] = (0, i.useState)(!1),
             [re, le] = (0, i.useState)(V.landing),
             [ce, de] = (0, i.useState)(A.introScreen.image.sources.mobile || W),
-            ue = `${document.location.pathname}${document.location.search}#${T}`,
+            ue = `${document.location.pathname}${document.location.search}#${b}`,
             ge = (0, l.usePrevious)(J),
             me = (0, l.usePrevious)(j),
             {
@@ -554,13 +554,13 @@ try {
             };
           return (0, i.useEffect)(() => {
             let e;
-            return T && window.location.hash === `#${T}` && O.current && (e = window.setTimeout(() => {
+            return b && window.location.hash === `#${b}` && O.current && (e = window.setTimeout(() => {
               O.current?.scrollIntoView({
                 behavior: "smooth",
                 block: "start"
               })
             }, 1e3)), () => window.clearTimeout(e)
-          }, [T]), (0, i.useEffect)(() => {
+          }, [b]), (0, i.useEffect)(() => {
             const e = () => {
                 window.innerWidth >= 2560 && "newswire" !== n ? de(A.introScreen.image.sources.mobile || W) : de(A.introScreen.image.sources.desktop || W)
               },
@@ -633,7 +633,7 @@ try {
               "data-font": x,
               "data-use-padding": k,
               ref: O,
-              id: T || "",
+              id: b || "",
               ...v,
               children: (0, t.jsxs)(o.P.div, {
                 className: "_1238r71",

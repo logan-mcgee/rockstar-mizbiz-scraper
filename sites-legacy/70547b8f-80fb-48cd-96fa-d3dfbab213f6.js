@@ -24,8 +24,8 @@ try {
         l = i(42909),
         n = i(17301),
         r = i(50662),
-        c = i(14653),
-        g = i(13517),
+        g = i(14653),
+        c = i(13517),
         o = i(82199);
       const d = (0, l.defineMessages)({
           cph_highlights_heading: {
@@ -86,11 +86,11 @@ try {
           isActive: h,
           index: n,
           highlightsCount: r,
-          ...c
+          ...g
         }) => {
           const o = (0, l.useIntl)(),
             _ = (0, s.useRef)(null);
-          return (0, a.jsxs)(g.motion.div, {
+          return (0, a.jsxs)(c.motion.div, {
             "aria-hidden": !h,
             "aria-label": o.formatMessage(d.cph_highlights_group_aria, {
               index: n + 1,
@@ -106,13 +106,13 @@ try {
             variants: f,
             animate: h ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...c,
+            ...g,
             children: [e && (0, a.jsx)("h1", {
               children: e || o.formatMessage(d.cph_highlights_heading)
             }), t && (0, a.jsx)("h2", {
               className: p.heading,
               children: t
-            }), (0, a.jsx)(g.motion.div, {
+            }), (0, a.jsx)(c.motion.div, {
               ref: _,
               className: p.summaryText,
               dangerouslySetInnerHTML: {
@@ -202,7 +202,7 @@ try {
                 v(!1)
               },
               children: [e.length > 1 && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(g.motion.button, {
+                children: [(0, a.jsx)(c.motion.button, {
                   ref: N,
                   type: "button",
                   "aria-label": i.formatMessage(d.cph_highlights_previous),
@@ -214,7 +214,7 @@ try {
                     }), S && S.slidePrev()
                   },
                   disabled: k < 1
-                }), (0, a.jsx)(g.motion.button, {
+                }), (0, a.jsx)(c.motion.button, {
                   ref: R,
                   type: "button",
                   "aria-label": i.formatMessage(d.cph_highlights_next),
@@ -227,7 +227,7 @@ try {
                   },
                   disabled: k === e.length - 1
                 })]
-              }), (0, a.jsx)(c.RC, {
+              }), (0, a.jsx)(g.RC, {
                 onInit: e => E(e),
                 onBeforeInit: e => {
                   M.current = e
@@ -262,7 +262,7 @@ try {
                     element_placement: "highlights"
                   })
                 },
-                children: e.map((e, t) => (0, a.jsx)(c.qr, {
+                children: e.map((e, t) => (0, a.jsx)(g.qr, {
                   children: (0, a.jsx)("img", {
                     alt: e.altText ?? e.title,
                     "aria-label": e.altText ?? e.title,
@@ -276,7 +276,7 @@ try {
               className: m.contentContainer,
               children: [(0, a.jsx)("div", {
                 className: m.carouselContainer,
-                children: (0, a.jsx)(c.RC, {
+                children: (0, a.jsx)(g.RC, {
                   onInit: e => {
                     T.current = e
                   },
@@ -287,7 +287,7 @@ try {
                   modules: j,
                   slidesPerView: "auto",
                   initialSlide: k,
-                  children: e.map((t, i) => (0, a.jsx)(c.qr, {
+                  children: e.map((t, i) => (0, a.jsx)(g.qr, {
                     children: (0, a.jsx)("button", {
                       type: "button",
                       onClick: () => (t => {

@@ -75,23 +75,23 @@ try {
           options: a = {},
           ga: g = {},
           t: p,
-          ...m
+          ...b
         }) => {
           const {
-            data: y
+            data: m
           } = (0, f.Wx)(), {
-            track: _
-          } = (0, f.h)(), b = (0, i.getCookieValueByName)("UAGC"), [h, w] = (0, r.useState)("1" === (x = b) ? u.PASSED : "0" === x ? u.FAILED : u.NOT_SUBMITTED);
+            track: y
+          } = (0, f.h)(), _ = (0, i.getCookieValueByName)("UAGC"), [h, w] = (0, r.useState)("1" === (x = _) ? u.PASSED : "0" === x ? u.FAILED : u.NOT_SUBMITTED);
           var x;
           const [I, j] = (0, r.useState)(), k = (0, r.createRef)(), v = (0, r.createRef)(), E = (0, r.createRef)(), {
             style: D
           } = a;
           return (0, r.useEffect)(() => {
-            _({
+            y({
               event: "age_gate_popup",
               element_placement: g.element_placement ?? ""
             })
-          }, []), h === u.PASSED || !1 === y?.isAMinor ? t : h === u.FAILED ? (0, n.jsxs)("div", {
+          }, []), h === u.PASSED || !1 === m?.isAMinor ? t : h === u.FAILED ? (0, n.jsxs)("div", {
             className: c.agegate,
             style: D,
             children: [a?.header, (0, n.jsx)("h2", {
@@ -100,7 +100,7 @@ try {
           }) : (0, n.jsxs)("div", {
             className: c.agegate,
             style: D,
-            ...m,
+            ...b,
             children: [a?.header, (0, n.jsx)("div", {
               className: c.bg,
               style: a?.bgImg ? {
@@ -120,7 +120,7 @@ try {
                   r = (0, d.f)(a) && (0, l.d)(a, n);
                 if (j(r), r) {
                   const t = (0, o.V)(new Date, a) >= e;
-                  _(t ? {
+                  y(t ? {
                     event: "age_gate_passed",
                     element_placement: g.element_placement ?? ""
                   } : {

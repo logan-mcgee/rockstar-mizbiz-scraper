@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "64242d3f-5c6c-4fe0-b9a1-19f01674b667", o._sentryDebugIdIdentifier = "sentry-dbid-64242d3f-5c6c-4fe0-b9a1-19f01674b667")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "64242d3f-5c6c-4fe0-b9a1-19f01674b667", o._sentryDebugIdIdentifier = "sentry-dbid-64242d3f-5c6c-4fe0-b9a1-19f01674b667")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [2316], {
-    22316(o, t, e) {
-      e.r(t), e.d(t, {
+    22316(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Download_Button_Label: () => f,
@@ -24,8 +24,8 @@ try {
         Lightbox_Reset_Zoom_Button_Tooltip: () => r,
         Lightbox_Zoom_In_Button_Label: () => n,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => s,
-        Lightbox_Zoom_Out_Button__Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => b,
+        Lightbox_Zoom_Out_Button__Tooltip: () => s,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => L
@@ -35,8 +35,8 @@ try {
         i = "Pressionar {shortcut}",
         n = "Aproximar zoom",
         l = "Pressionar {shortcut}",
-        s = "Afastar zoom",
-        b = "Pressionar {shortcut}",
+        b = "Afastar zoom",
+        s = "Pressionar {shortcut}",
         d = "Resetar",
         r = "Pressionar {shortcut}",
         u = "Nível de zoom",
@@ -49,8 +49,8 @@ try {
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: n,
           Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: s,
-          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: b,
+          Lightbox_Zoom_Out_Button__Tooltip: s,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: r,
           Lightbox_Zoom_Slider_Label: u,

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "31d71597-bb27-4b31-b834-b30d6dd9f6ad", e._sentryDebugIdIdentifier = "sentry-dbid-31d71597-bb27-4b31-b834-b30d6dd9f6ad")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ddbec681-46c6-414f-9e47-5e1a10dfa2ab", e._sentryDebugIdIdentifier = "sentry-dbid-ddbec681-46c6-414f-9e47-5e1a10dfa2ab")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -195,19 +195,19 @@ try {
         };
         e.hasOwnProperty("loc") && (s.loc = e.loc);
         var o = t[a] || new Set,
-          m = new Set,
-          c = new Set;
+          c = new Set,
+          m = new Set;
         for (o.forEach(function(e) {
-            c.add(e)
-          }); c.size > 0;) {
-          var d = c;
-          c = new Set, d.forEach(function(e) {
-            m.has(e) || (m.add(e), (t[e] || new Set).forEach(function(e) {
-              c.add(e)
+            m.add(e)
+          }); m.size > 0;) {
+          var d = m;
+          m = new Set, d.forEach(function(e) {
+            c.has(e) || (c.add(e), (t[e] || new Set).forEach(function(e) {
+              m.add(e)
             }))
           })
         }
-        return m.forEach(function(a) {
+        return c.forEach(function(a) {
           var t = r(e, a);
           t && s.definitions.push(t)
         }), s
@@ -291,8 +291,8 @@ try {
       var t = s(39793),
         r = s(93082),
         o = s(79955),
-        m = s.n(o);
-      const c = {
+        c = s.n(o);
+      const m = {
           dropdownWrapper: "rockstargames-sites-rockstargamesbbf48ac7e790ff47ad1d5ee6fb7da4d9",
           items: "rockstargames-sites-rockstargamesa9afd60434d032bdba4ce040dbeb13b7",
           open: "rockstargames-sites-rockstargamesdf17f0cb21e0947d4f391f915bd797d2",
@@ -305,21 +305,21 @@ try {
           title: s
         }) => {
           const [o, d] = (0, r.useState)(!1);
-          return (0, t.jsx)(m(), {
+          return (0, t.jsx)(c(), {
             active: o,
             focusTrapOptions: {
               onDeactivate: () => d(!1),
               clickOutsideDeactivates: !0
             },
             children: (0, t.jsxs)("div", {
-              className: [c.dropdownWrapper, o ? c.open : "", void 0 !== a ? a : ""].join(" "),
+              className: [m.dropdownWrapper, o ? m.open : "", void 0 !== a ? a : ""].join(" "),
               children: [(0, t.jsx)("button", {
-                className: c.opener,
+                className: m.opener,
                 "aria-expanded": o,
                 onClick: () => d(!o),
                 children: s
               }), o && (0, t.jsx)("div", {
-                className: c.items,
+                className: m.items,
                 onClick: () => d(!1),
                 children: e
               })]
@@ -330,55 +330,55 @@ try {
     78995(e, a, s) {
       "use strict";
       s.d(a, {
-        A: () => c
+        A: () => m
       });
       var t = s(39793),
         r = s(93082),
         o = s(13331);
-      const m = {
+      const c = {
         img: "rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0",
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f"
       };
       (0, o.importAll)(s(86751));
-      const c = ({
+      const m = ({
         isWideCard: e = !1,
         size: a = 640,
-        title: c,
+        title: m,
         titleSlug: d,
         inGlobalNav: i = !1
       }) => {
         const {
-          isMobile: g
-        } = (0, o.useWindowResize)(), p = (0, o.useLocale)(), n = (0, r.useMemo)(() => {
+          isMobile: n
+        } = (0, o.useWindowResize)(), g = (0, r.useMemo)(() => {
           let t = "";
-          return e && (t = g ? s(16044)(`./${d}/mobile/${p}.jpg`) : s(51048)(`./${d}/desktop/${p}.jpg`)), t || (t = s(39294)(`./${d}.jpg`), t += `?im=Resize=${a}`), t
-        }, [g, d]), [f] = (0, o.usePreloadImg)(n);
-        let b = n;
+          return e && (t = n ? s(25087)(`./${d}/mobile/global.jpg`) : s(58963)(`./${d}/desktop/global.jpg`)), t || (t = s(39294)(`./${d}.jpg`), t += `?im=Resize=${a}`), t
+        }, [n, d]), [f] = (0, o.usePreloadImg)(g);
+        let p = g;
         return (0, t.jsx)("div", {
           role: "img",
-          "aria-label": c,
+          "aria-label": m,
           style: {
-            backgroundImage: `url(${b})`,
+            backgroundImage: `url(${p})`,
             borderRadius: i ? "unset" : ""
           },
-          className: [m.img, f ? m.startAnimation : "", e ? m.wide : ""].join(" ")
+          className: [c.img, f ? c.startAnimation : "", e ? c.wide : ""].join(" ")
         })
       }
     },
     41031(e, a, s) {
       "use strict";
       s.r(a), s.d(a, {
-        default: () => g
+        default: () => n
       });
       var t = s(39793),
         r = s(87081),
         o = s(13331),
-        m = s(31435),
-        c = s(87384),
-        d = s.n(c),
+        c = s(31435),
+        m = s(87384),
+        d = s.n(m),
         i = s(78995);
-      const g = (0, o.withTranslations)(({
+      const n = (0, o.withTranslations)(({
         t: e
       }) => {
         const {
@@ -391,19 +391,19 @@ try {
           manuals: s
         } = a;
         return (0, t.jsxs)("div", {
-          className: m.Ay.manuals,
+          className: c.Ay.manuals,
           children: [(0, t.jsx)("h2", {
             children: e("Manuals")
           }), (0, t.jsx)("div", {
-            className: m.Ay.list,
+            className: c.Ay.list,
             children: s.map(e => (0, t.jsxs)("div", {
-              className: m.Ay.item,
+              className: c.Ay.item,
               children: [(0, t.jsx)(i.A, {
                 title: e.game.title,
                 titleSlug: e.game.titleSlug
               }), (0, t.jsx)(r.A, {
                 title: e.game.title,
-                className: m.Ay.dropdown,
+                className: c.Ay.dropdown,
                 children: e.manuals_platforms.map(e => (0, t.jsxs)("p", {
                   children: [(0, t.jsx)("span", {
                     children: e.platform
@@ -427,32 +427,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -528,32 +504,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -622,21 +574,9 @@ try {
         return Object.keys(t)
       }, r.resolve = o, e.exports = r, r.id = 39294
     },
-    51048(e, a, s) {
+    58963(e, a, s) {
       var t = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function r(e) {
@@ -653,23 +593,11 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = o, e.exports = r, r.id = 51048
+      }, r.resolve = o, e.exports = r, r.id = 58963
     },
-    16044(e, a, s) {
+    25087(e, a, s) {
       var t = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function r(e) {
@@ -686,7 +614,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = o, e.exports = r, r.id = 16044
+      }, r.resolve = o, e.exports = r, r.id = 25087
     },
     10111(e) {
       "use strict";
@@ -706,111 +634,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    13890(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

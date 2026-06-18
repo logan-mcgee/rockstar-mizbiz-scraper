@@ -37,7 +37,7 @@ try {
         }, {})
       }
 
-      function f(e, t) {
+      function m(e, t) {
         if (!t) return e;
         var r = o.S.formats;
         return (0, n.Cl)((0, n.Cl)((0, n.Cl)({}, r), e), {
@@ -45,27 +45,27 @@ try {
           time: u(s(r.time, t), s(e.time || {}, t))
         })
       }
-      var m = function(e, t, r, o, s) {
+      var f = function(e, t, r, o, s) {
           var u = e.locale,
-            m = e.formats,
+            f = e.formats,
             c = e.messages,
             d = e.defaultLocale,
             g = e.defaultFormats,
             p = e.fallbackOnEmptyString,
             y = e.onError,
-            v = e.timeZone,
-            h = e.defaultRichTextElements;
+            b = e.timeZone,
+            v = e.defaultRichTextElements;
           void 0 === r && (r = {
             id: ""
           });
-          var b = r.id,
+          var h = r.id,
             E = r.defaultMessage;
-          (0, l.V1)(!!b, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
-          var w = String(b),
+          (0, l.V1)(!!h, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
+          var w = String(h),
             T = c && Object.prototype.hasOwnProperty.call(c, w) && c[w];
           if (Array.isArray(T) && 1 === T.length && T[0].type === a.ZE.literal) return T[0].value;
-          if (!o && T && "string" == typeof T && !h) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
-          if (o = (0, n.Cl)((0, n.Cl)({}, h), o || {}), m = f(m, v), g = f(g, v), !T) {
+          if (!o && T && "string" == typeof T && !v) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
+          if (o = (0, n.Cl)((0, n.Cl)({}, v), o || {}), f = m(f, b), g = m(g, b), !T) {
             if (!1 === p && "" === T) return T;
             if ((!E || u && u.toLowerCase() !== d.toLowerCase()) && y(new i.sb(r, u)), E) try {
               return t.getMessageFormat(E, d, g, s).format(o)
@@ -75,7 +75,7 @@ try {
             return w
           }
           try {
-            return t.getMessageFormat(T, u, m, (0, n.Cl)({
+            return t.getMessageFormat(T, u, f, (0, n.Cl)({
               formatters: t
             }, s || {})).format(o)
           } catch (e) {
@@ -96,11 +96,11 @@ try {
           s = e.onError,
           u = e.timeZone;
         void 0 === a && (a = {});
-        var f = a.format,
-          m = (0, n.Cl)((0, n.Cl)({}, u && {
+        var m = a.format,
+          f = (0, n.Cl)((0, n.Cl)({}, u && {
             timeZone: u
-          }), f && (0, l.F3)(i, t, f, s)),
-          d = (0, l.J9)(a, c, m);
+          }), m && (0, l.F3)(i, t, m, s)),
+          d = (0, l.J9)(a, c, f);
         return "time" !== t || d.hour || d.minute || d.second || d.timeStyle || d.dateStyle || (d = (0, n.Cl)((0, n.Cl)({}, d), {
           hour: "numeric",
           minute: "numeric"
@@ -142,16 +142,16 @@ try {
           l = r[2],
           s = void 0 === l ? {} : l,
           u = "string" == typeof a ? new Date(a || 0) : a,
-          f = "string" == typeof o ? new Date(o || 0) : o;
+          m = "string" == typeof o ? new Date(o || 0) : o;
         try {
-          return d(e, "dateTimeRange", t, s).formatRange(u, f)
+          return d(e, "dateTimeRange", t, s).formatRange(u, m)
         } catch (t) {
           e.onError(new i.pg("Error formatting date time range.", e.locale, t))
         }
         return String(u)
       }
 
-      function v(e, t) {
+      function b(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var a = r[0],
           o = r[1],
@@ -165,7 +165,7 @@ try {
         return []
       }
 
-      function h(e, t) {
+      function v(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var a = r[0],
           o = r[1],
@@ -178,13 +178,13 @@ try {
         }
         return []
       }
-      var b = r(22506),
+      var h = r(22506),
         E = ["style", "type", "fallback", "languageDisplay"];
 
       function w(e, t, r, n) {
         var a = e.locale,
           o = e.onError;
-        Intl.DisplayNames || o(new b.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', b.O4.MISSING_INTL_API));
+        Intl.DisplayNames || o(new h.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', h.O4.MISSING_INTL_API));
         var s = (0, l.J9)(n, E);
         try {
           return t(a, s).of(r)
@@ -207,22 +207,22 @@ try {
       function I(e, t, r, a) {
         var o = e.locale,
           s = e.onError;
-        void 0 === a && (a = {}), Intl.ListFormat || s(new b.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', b.O4.MISSING_INTL_API));
+        void 0 === a && (a = {}), Intl.ListFormat || s(new h.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', h.O4.MISSING_INTL_API));
         var u = (0, l.J9)(a, T);
         try {
-          var f = {},
-            m = Array.from(r).map(function(e, t) {
+          var m = {},
+            f = Array.from(r).map(function(e, t) {
               if ("object" == typeof e && null !== e) {
                 var r = function(e) {
                   return "".concat(F, "_").concat(e, "_").concat(F)
                 }(t);
-                return f[r] = e, r
+                return m[r] = e, r
               }
               return String(e)
             });
-          return t(o, u).formatToParts(m).map(function(e) {
+          return t(o, u).formatToParts(f).map(function(e) {
             return "literal" === e.type ? e : (0, n.Cl)((0, n.Cl)({}, e), {
-              value: f[e.value] || e.value
+              value: m[e.value] || e.value
             })
           })
         } catch (e) {
@@ -266,7 +266,7 @@ try {
       function N(e, t, r, n) {
         var a = e.locale,
           o = e.onError;
-        void 0 === n && (n = {}), Intl.PluralRules || o(new b.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', b.O4.MISSING_INTL_API));
+        void 0 === n && (n = {}), Intl.PluralRules || o(new h.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', h.O4.MISSING_INTL_API));
         var s = (0, l.J9)(n, k);
         try {
           return t(a, s).select(r)
@@ -278,7 +278,7 @@ try {
       var R = ["numeric", "style"];
 
       function j(e, t, r, n, a) {
-        void 0 === a && (a = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new b.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', b.O4.MISSING_INTL_API));
+        void 0 === a && (a = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new h.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', h.O4.MISSING_INTL_API));
         try {
           return function(e, t, r) {
             var n = e.locale,
@@ -306,7 +306,7 @@ try {
       var x = function(e, t, r, a) {
           for (var o = [], i = 4; i < arguments.length; i++) o[i - 4] = arguments[i];
           var l = O(a),
-            s = m.apply(void 0, (0, n.fX)([e, t, r, l], o, !1));
+            s = f.apply(void 0, (0, n.fX)([e, t, r, l], o, !1));
           return Array.isArray(s) ? (0, L.SP)(s) : s
         },
         A = function(e, t) {
@@ -329,13 +329,13 @@ try {
                   formatNumberToParts: _.bind(null, a, r.getNumberFormat),
                   formatRelativeTime: j.bind(null, a, r.getRelativeTimeFormat),
                   formatDate: g.bind(null, a, r.getDateTimeFormat),
-                  formatDateToParts: v.bind(null, a, r.getDateTimeFormat),
+                  formatDateToParts: b.bind(null, a, r.getDateTimeFormat),
                   formatTime: p.bind(null, a, r.getDateTimeFormat),
                   formatDateTimeRange: y.bind(null, a, r.getDateTimeFormat),
-                  formatTimeToParts: h.bind(null, a, r.getDateTimeFormat),
+                  formatTimeToParts: v.bind(null, a, r.getDateTimeFormat),
                   formatPlural: N.bind(null, a, r.getPluralRules),
-                  formatMessage: m.bind(null, a, r),
-                  $t: m.bind(null, a, r),
+                  formatMessage: f.bind(null, a, r),
+                  $t: f.bind(null, a, r),
                   formatList: C.bind(null, a, r.getListFormat),
                   formatListToParts: I.bind(null, a, r.getListFormat),
                   formatDisplayName: w.bind(null, a, r.getDisplayNames)
@@ -377,18 +377,18 @@ try {
           l = e.id,
           s = e.description,
           u = e.defaultMessage,
-          f = e.values,
-          m = e.children,
+          m = e.values,
+          f = e.children,
           c = e.tagName,
           d = void 0 === c ? o : c,
           g = r({
             id: l,
             description: s,
             defaultMessage: u
-          }, f, {
+          }, m, {
             ignoreTag: e.ignoreTag
           });
-        return "function" == typeof m ? m(Array.isArray(g) ? g : [g]) : d ? a.createElement(d, null, g) : a.createElement(a.Fragment, null, g)
+        return "function" == typeof f ? f(Array.isArray(g) ? g : [g]) : d ? a.createElement(d, null, g) : a.createElement(a.Fragment, null, g)
       }
       l.displayName = "FormattedMessage";
       var s = a.memo(l, function(e, t) {
@@ -403,7 +403,7 @@ try {
     },
     54422(e, t, r) {
       r.d(t, {
-        A: () => m
+        A: () => f
       });
       var n = r(51177),
         a = r(98373),
@@ -428,7 +428,7 @@ try {
           defaultRichTextElements: e.defaultRichTextElements
         }
       }
-      var f = function(e) {
+      var m = function(e) {
         function t() {
           var t = null !== e && e.apply(this, arguments) || this;
           return t.cache = (0, a.MT)(), t.state = {
@@ -451,7 +451,7 @@ try {
           }, this.props.children)
         }, t.displayName = "IntlProvider", t.defaultProps = i.JF, t
       }(o.PureComponent);
-      const m = f
+      const f = m
     }
   }
 ]);

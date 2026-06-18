@@ -15,32 +15,32 @@ try {
   [206, 825], {
     9206(e, n, t) {
       t.r(n), t.d(n, {
-        useGSAP: () => c
+        useGSAP: () => u
       });
       var d = t(3082),
         r = t(5812);
       let o = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
-        a = [],
+        a = e => e && !Array.isArray(e) && "object" == typeof e,
+        s = [],
         f = {},
         l = r.default;
-      const c = (e, n = a) => {
+      const u = (e, n = s) => {
         let t = f;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : a) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : a), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        a(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : s) : a(n) && (t = n, n = "dependencies" in t ? t.dependencies : s), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: r,
-          revertOnUpdate: c
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, r)), y = (0, d.useRef)(e => i.current.add(null, e)), b = n && n.length && !c;
-        return b && o(() => (u.current = !0, () => i.current.revert()), a), o(() => {
-          if (e && i.current.add(e, r), !b || !u.current) return () => i.current.revert()
+          revertOnUpdate: u
+        } = t, i = (0, d.useRef)(!1), c = (0, d.useRef)(l.context(() => {}, r)), b = (0, d.useRef)(e => c.current.add(null, e)), y = n && n.length && !u;
+        return y && o(() => (i.current = !0, () => c.current.revert()), s), o(() => {
+          if (e && c.current.add(e, r), !y || !i.current) return () => c.current.revert()
         }, n), {
-          context: i.current,
-          contextSafe: y.current
+          context: c.current,
+          contextSafe: b.current
         }
       };
-      c.register = e => {
+      u.register = e => {
         l = e
-      }, c.headless = !0
+      }, u.headless = !0
     }
   }
 ]);

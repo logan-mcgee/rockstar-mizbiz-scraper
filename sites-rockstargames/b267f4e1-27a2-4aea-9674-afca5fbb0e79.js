@@ -15,12 +15,12 @@ try {
   [392], {
     28011(e, a, s) {
       s.r(a), s.d(a, {
-        default: () => d
+        default: () => n
       });
       var t = s(39793),
-        n = s(36416);
-      const d = () => {
-        const [e] = (0, n.useSearchParams)(), a = e.get("src") ?? null;
+        d = s(36416);
+      const n = () => {
+        const [e] = (0, d.useSearchParams)(), a = e.get("src") ?? null;
         if (!a) return null;
         const {
           hostname: s

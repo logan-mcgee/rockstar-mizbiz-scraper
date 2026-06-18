@@ -15,27 +15,27 @@ try {
   [692], {
     38311(e, a, s) {
       s.r(a), s.d(a, {
-        default: () => f
+        default: () => l
       });
-      var t = s(39793),
-        d = s(93082),
+      var d = s(39793),
+        t = s(93082),
         n = s(36416),
         o = s(9566),
         r = s(18234);
-      const f = (0, s(13331).withTranslations)(({
+      const l = (0, s(13331).withTranslations)(({
         t: e
       }) => {
         const a = (0, n.useParams)(),
           {
             setBreadcrumb: s,
-            setNormalLogo: f
+            setNormalLogo: l
           } = (0, r.b)();
-        return (0, d.useEffect)(() => (s([{
+        return (0, t.useEffect)(() => (s([{
           href: "/newswire",
           title: e("Newswire")
         }], ""), () => {
-          f(!0), s()
-        }), []), (0, t.jsx)(o.NewswireArticle, {
+          l(!0), s()
+        }), []), (0, d.jsx)(o.NewswireArticle, {
           idHash: String(a.articleId)
         })
       })

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "5ecba185-8218-4dfb-b23a-3233324aed70", e._sentryDebugIdIdentifier = "sentry-dbid-5ecba185-8218-4dfb-b23a-3233324aed70")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a205c2b7-7fd0-4104-9c84-8f5995973371", e._sentryDebugIdIdentifier = "sentry-dbid-a205c2b7-7fd0-4104-9c84-8f5995973371")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -3407,8 +3407,8 @@ try {
           trackBounds: _,
           setAutoNext: u
         }) => {
-          const p = (0, s.useRef)(null),
-            b = (0, s.useRef)(null),
+          const b = (0, s.useRef)(null),
+            p = (0, s.useRef)(null),
             g = (0, s.useRef)(null),
             [f, k] = (0, s.useState)(null),
             [v, h] = (0, s.useState)(!1),
@@ -3419,19 +3419,19 @@ try {
               return `${t.toString().padStart(2,"0")}:${r.toString().padStart(2,"0")}`
             };
           return (0, s.useEffect)(() => {
-            if (!b.current || !g.current) return;
+            if (!p.current || !g.current) return;
             const e = () => {
-              g.current && b.current && k(g.current.clientWidth > b.current.clientWidth)
+              g.current && p.current && k(g.current.clientWidth > p.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }, [g, b, e]), (0, s.useEffect)(() => {
-            if (!p.current || !e?.duration) return;
+          }, [g, p, e]), (0, s.useEffect)(() => {
+            if (!b.current || !e?.duration) return;
             let a = null;
-            const r = new(o())(p.current),
+            const r = new(o())(b.current),
               s = a => {
-                if (p.current) {
-                  const r = p.current.clientWidth;
-                  if (!p.current.contains(a.srcEvent.target)) return;
+                if (b.current) {
+                  const r = b.current.clientWidth;
+                  if (!b.current.contains(a.srcEvent.target)) return;
                   const s = Math.max(0, a.srcEvent.offsetX),
                     i = Number(s / r * e.duration);
                   t.currentTime = i
@@ -3446,7 +3446,7 @@ try {
             return r.on("panstart", n), r.on("panleft", s), r.on("panright", s), r.on("panend", i), r.on("tap", s), () => {
               r.off("panstart", n), r.off("panleft", s), r.off("panright", s), r.off("panend", i), r.off("tap", s)
             }
-          }, [p.current, e.duration]), (0, s.useEffect)(() => {
+          }, [b.current, e.duration]), (0, s.useEffect)(() => {
             const e = Number(t?.currentTime);
             (a || !isNaN(e) && 0 !== e) && h(!0)
           }, [a, t?.currentTime]), (0, r.jsxs)("div", {
@@ -3460,7 +3460,7 @@ try {
               className: [l.controlsCurrentBg, v ? l.controlsCurrentBgVisible : ""].join(" ")
             }), (0, r.jsx)("div", {
               className: l.controlsTrack,
-              ref: b,
+              ref: p,
               children: (0, r.jsx)("span", {
                 className: [l.controlsTrackTitle, f ? l.controlsTrackAnimating : ""].join(" "),
                 ref: g,
@@ -3499,7 +3499,7 @@ try {
                 children: w(e.current)
               }), (0, r.jsx)("div", {
                 className: l.controlsScrubTrack,
-                ref: p
+                ref: b
               }), (0, r.jsx)("span", {
                 children: w(e.duration)
               })]
@@ -3556,14 +3556,14 @@ try {
             variables: {
               id: e
             }
-          }), [i, o] = (0, s.useState)(), [u, p] = (0, s.useState)(), [b, g] = (0, s.useState)(), [f, k] = (0, s.useState)(!1), [v, h] = (0, s.useState)(!1), [w, y] = (0, s.useState)(), [j, x] = (0, s.useState)({
+          }), [i, o] = (0, s.useState)(), [u, b] = (0, s.useState)(), [p, g] = (0, s.useState)(), [f, k] = (0, s.useState)(!1), [v, h] = (0, s.useState)(!1), [w, y] = (0, s.useState)(), [j, x] = (0, s.useState)({
             current: 0,
             duration: 0
           }), [N, S] = (0, s.useState)(!0);
           return (0, s.useEffect)(() => {
             const e = "audio",
               a = a => {
-                a?.data?.rockstarAudioPlayerPlayTrackId && (p(a.data.rockstarAudioPlayerPlayTrackId), S(!1), h(!0)), v && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && h(!1)
+                a?.data?.rockstarAudioPlayerPlayTrackId && (b(a.data.rockstarAudioPlayerPlayTrackId), S(!1), h(!0)), v && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && h(!1)
               };
             return v && window.postMessage({
               attentionBlurredElsewhere: !0,
@@ -3578,7 +3578,7 @@ try {
                 })
               },
               a = () => {
-                N && i && p(i[1])
+                N && i && b(i[1])
               };
             return w.addEventListener("loadedmetadata", e), w.addEventListener("timeupdate", e), w.addEventListener("ended", a), () => {
               w.removeEventListener("loadedmetadata", e), w.removeEventListener("timeupdate", e), w.removeEventListener("ended", a)
@@ -3590,40 +3590,40 @@ try {
             })
           }, [v]), (0, s.useEffect)(() => {
             w && (v ? w.play() : w.pause(), k(!1))
-          }, [v, w, b?.id]), (0, s.useEffect)(() => {
+          }, [v, w, p?.id]), (0, s.useEffect)(() => {
             if (!u) return;
             const {
               tracks: e
             } = t.audioAlbum, a = t.audioAlbum.tracks.findIndex(e => e.id === u);
             o([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), g(e[a])
           }, [u]), (0, s.useEffect)(() => {
-            t && p(t.audioAlbum.tracks[0].id)
-          }, [t]), b ? (0, r.jsxs)("div", {
+            t && b(t.audioAlbum.tracks[0].id)
+          }, [t]), p ? (0, r.jsxs)("div", {
             className: [l.player, l[a], f ? l.tracksOpen : ""].join(" "),
             children: [(0, r.jsx)("audio", {
               ref: e => {
                 y(e)
               },
-              src: b.mp3_src
+              src: p.mp3_src
             }), (0, r.jsx)(_, {
               tracks: t.audioAlbum.tracks,
-              setTrackId: p,
+              setTrackId: b,
               trackId: u,
               tracksOpen: f,
               setTracksOpen: k,
               setPlaying: h,
               setAutoNext: S
             }), (0, r.jsx)(d, {
-              src: b.cover_src
+              src: p.cover_src
             }), (0, r.jsx)(m, {
-              setTrackId: p,
+              setTrackId: b,
               trackBounds: i,
               tracksOpen: f,
               setTracksOpen: k,
               playing: v,
               setPlaying: h,
               timing: j,
-              trackData: b,
+              trackData: p,
               audioRef: w,
               setAutoNext: S
             })]
@@ -3633,7 +3633,7 @@ try {
     30489(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => b
+        A: () => p
       });
       var r = t(39793),
         s = t(93082),
@@ -3763,7 +3763,7 @@ try {
             })
           })
         },
-        p = ({
+        b = ({
           helperText: e,
           linkText: a,
           link: t,
@@ -3783,13 +3783,13 @@ try {
             })]
           })
         },
-        b = (0, o.withTranslations)(({
+        p = (0, o.withTranslations)(({
           header: e,
           subheader: a,
           type: t,
           action_text: c,
           link: d,
-          foreign_id: b = document.location.pathname,
+          foreign_id: p = document.location.pathname,
           foreign_type: g = "url",
           className: f = "",
           actionFooterHelperText: k,
@@ -3807,18 +3807,18 @@ try {
           } = (0, n.useGtmTrack)(), C = document.location.pathname, {
             signInUrl: T
           } = (0, o.useScAuthLinks)(C), {
-            ref: I,
-            inView: z
+            ref: A,
+            inView: I
           } = (0, i.useInView)({
             threshold: .6
-          }), [A, E] = (0, s.useState)(!1);
+          }), [E, z] = (0, s.useState)(!1);
           let P;
           if ((0, s.useEffect)(() => {
-              z && !A && (S({
+              I && !E && (S({
                 event: "page_section_impression",
                 element_placement: `callout section - ${x?.sectionName??x?._memoq?.header}`
-              }), E(!0))
-            }, [z]), !e && !a) return null;
+              }), z(!0))
+            }, [I]), !e && !a) return null;
           switch (t) {
             case "vote":
               if (!N) {
@@ -3833,7 +3833,7 @@ try {
                 break
               }
               P = (0, r.jsx)(_, {
-                foreign_id: b,
+                foreign_id: p,
                 foreign_type: g
               });
               break;
@@ -3859,7 +3859,7 @@ try {
           }
           return (0, r.jsx)("div", {
             className: `${m.calloutContainer} ${f||""}`,
-            ref: I,
+            ref: A,
             children: (0, r.jsxs)("div", {
               className: m.calloutSection,
               children: [(0, r.jsxs)("div", {
@@ -3873,7 +3873,7 @@ try {
                 })]
               }), (0, r.jsxs)("div", {
                 className: m.actionBlock,
-                children: [P, k && (0, r.jsx)(p, {
+                children: [P, k && (0, r.jsx)(b, {
                   helperText: k,
                   linkText: v,
                   link: h,
@@ -3887,7 +3887,7 @@ try {
     75138(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => b
+        A: () => p
       });
       var r = t(39793),
         s = t(93082),
@@ -3934,7 +3934,7 @@ try {
             item: e
           })]
         }),
-        p = ({
+        b = ({
           current: e,
           total: a
         }) => (0, r.jsx)("div", {
@@ -3947,12 +3947,12 @@ try {
             className: "swiper-scrollbar-drag"
           })
         }),
-        b = ({
+        p = ({
           children: e,
           items: a = [],
           style: t = {},
           noInfiniteScroll: _ = !1,
-          className: b = "",
+          className: p = "",
           renderTemplate: g = "standard",
           text: f,
           customSpaceBetween: k = null,
@@ -3986,7 +3986,7 @@ try {
             }
           };
           return (0, r.jsxs)("div", {
-            className: (0, c.default)(d.deprecatedCarousel, d[g], d.infinite_true, e ? d.renderedWithChildren : "", b),
+            className: (0, c.default)(d.deprecatedCarousel, d[g], d.infinite_true, e ? d.renderedWithChildren : "", p),
             style: t,
             "data-testid": "carousel",
             children: [(0, r.jsxs)(i.RC, {
@@ -4028,7 +4028,7 @@ try {
                     children: e
                   }, S && S[a]))]
                 })
-              }), (0, r.jsx)(p, {
+              }), (0, r.jsx)(b, {
                 current: y,
                 total: e ? e.length : a.length
               })]
@@ -4054,14 +4054,14 @@ try {
         m = t(32903),
         _ = t(81715),
         u = t(49429),
-        p = t(11008);
-      const b = {
+        b = t(11008);
+      const p = {
           ps: c,
           ps3: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d118a14a73ce72b4687d9eb69724f4d2.svg",
           ps4: l,
           ps5: d,
-          switch: p,
-          nintendoswitch: p,
+          switch: b,
+          nintendoswitch: b,
           nintendoswitch2: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7696cbc8ff9dc5f2ed3f618ea7252e3b.svg",
           xbox: m,
           xboxone: u,
@@ -4076,7 +4076,7 @@ try {
           netflix: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fc13a3a816ffa3f7e379ea32a79f99a3.svg",
           default: ""
         },
-        g = e => b[e] || null,
+        g = e => p[e] || null,
         f = {
           applestore: "rockstargames-modules-core-newswire-articlee97115f479fca9697b140bfbfa6534f2",
           border: "rockstargames-modules-core-newswire-articleaab360f8b5cf6965c56e5f86813b8620",
@@ -4135,8 +4135,8 @@ try {
           icon: m,
           iconPosition: _ = "none",
           iconStyle: u,
-          badge: p,
-          badgeStyle: b,
+          badge: b,
+          badgeStyle: p,
           platformItem: h,
           platformStyle: w = "border",
           gtm: y = {},
@@ -4147,7 +4147,7 @@ try {
         }) => {
           const {
             track: C
-          } = (0, o.useGtmTrack)(), T = (0, n.useDataLayer)(), I = c ?? e, z = (0, n.findPlatform)(h)?.friendlyName, A = (0, s.useMemo)(() => {
+          } = (0, o.useGtmTrack)(), T = (0, n.useDataLayer)(), A = c ?? e, I = (0, n.findPlatform)(h)?.friendlyName, E = (0, s.useMemo)(() => {
             const e = window.location.hostname;
             let t;
             try {
@@ -4156,7 +4156,7 @@ try {
               t = e
             }
             return e === t
-          }, [a]), E = (0, s.useCallback)(() => {
+          }, [a]), z = (0, s.useCallback)(() => {
             j || C({
               event: "cta_other",
               text: c?.toLowerCase() ?? e ?? void 0,
@@ -4175,27 +4175,27 @@ try {
           }) : null;
           return (0, r.jsx)(i.Link, {
             to: a,
-            target: A ? "_self" : "_blank",
+            target: E ? "_self" : "_blank",
             className: (0, k.default)(f.cta, "platform" === l && h ? f[h] : "", w && f[w], j ? f.disabled : "", N),
             style: t,
             "data-variant": l,
             "data-size": d,
-            onClick: E,
-            "aria-label": I,
+            onClick: z,
+            "aria-label": A,
             reloadDocument: x,
             role: S,
             children: "platform" === l && h ? (0, r.jsx)(v, {
               platform: h,
-              altText: z || I
+              altText: I || A
             }) : (0, r.jsxs)("div", {
               className: f.btnContent,
               children: ["left" === _ && P(), (0, r.jsx)("span", {
                 className: f.label,
-                children: I
-              }), "right" === _ && P(), p ? (0, r.jsx)("span", {
+                children: A
+              }), "right" === _ && P(), b ? (0, r.jsx)("span", {
                 className: f.badge,
-                style: b,
-                children: p
+                style: p,
+                children: b
               }) : null]
             })
           })
@@ -4473,12 +4473,12 @@ try {
           loop: t = !1,
           navigation: _ = !1,
           slideChildren: u = [],
-          variants: p = {
+          variants: b = {
             parent: void 0,
             main: void 0,
             thumbs: void 0
           },
-          transition: b = {
+          transition: p = {
             parent: void 0,
             main: void 0,
             thumbs: void 0
@@ -4498,14 +4498,14 @@ try {
             y(e)
           }, [u]), w ? (0, r.jsxs)(i.P.div, {
             className: "rockstargames-modules-core-newswire-articlef2d55de974817e455a162843125a8771",
-            variants: p.parent,
-            transition: b.parent,
+            variants: b.parent,
+            transition: p.parent,
             initial: "initial",
             animate: "animate",
             children: [(0, r.jsx)(i.P.div, {
               className: l,
-              variants: p.main,
-              transition: b.main,
+              variants: b.main,
+              transition: p.main,
               initial: "initial",
               animate: "animate",
               children: (0, r.jsx)(n.RC, {
@@ -4542,8 +4542,8 @@ try {
               })
             }), (0, r.jsx)(i.P.div, {
               className: d,
-              variants: p.thumbs,
-              transition: b.thumbs,
+              variants: b.thumbs,
+              transition: p.thumbs,
               initial: "initial",
               animate: "animate",
               children: (0, r.jsx)(n.RC, {
@@ -4723,19 +4723,19 @@ try {
       "use strict";
       t.r(a), t.d(a, {
         A: () => s.A,
-        AlertDialog: () => De,
+        AlertDialog: () => Re,
         AudioPlayer: () => i.A,
         Badge: () => o.A,
         Brands: () => c,
         Button: () => l.A,
         ButtonGroup: () => v,
-        CalloutSection: () => I.A,
+        CalloutSection: () => A.A,
         Carousel: () => h.A,
         CharacterCard: () => w,
         ConditionalBlock: () => T,
         CookieAB: () => M,
         CountryInputField: () => P,
-        Cta: () => V.A,
+        Cta: () => D.A,
         DescriptionArea: () => Y.A,
         DiscountsBadge: () => X.A,
         DotLoader: () => Z,
@@ -4746,20 +4746,20 @@ try {
         FoundryButton: () => $,
         FoundryIconButton: () => G,
         Gen9Button: () => k,
-        Gen9CoreCarousel: () => be,
+        Gen9CoreCarousel: () => pe,
         Grid: () => re.A,
         HTMLElement: () => Ne.A,
         Hero: () => xe,
         HookStore: () => N,
         ImageTextGroup: () => U,
         ImageTextGroupGroup: () => K,
-        ImageWithBadge: () => Ee.A,
-        LayeredImage: () => Ie,
-        Lightbox: () => Ae,
+        ImageWithBadge: () => ze.A,
+        LayeredImage: () => Ae,
+        Lightbox: () => Ee,
         LoadingAnimation: () => et.A,
         MultiSourceImage: () => Se.A,
         NewswireBlocks: () => qe,
-        NewswireCard: () => Re.A,
+        NewswireCard: () => Ve.A,
         NewswireList: () => Ge,
         NewswireRelated: () => Oe.A,
         NewswireTag: () => Be.A,
@@ -4776,8 +4776,8 @@ try {
         ResponsiveFlexItem: () => ma.A,
         ResponsiveGridBox: () => _a.A,
         ResponsiveGridItem: () => ua.A,
-        ResponsiveImg: () => pa.A,
-        ResponsiveSection: () => ba.A,
+        ResponsiveImg: () => ba.A,
+        ResponsiveSection: () => pa.A,
         RockstarLogo: () => ga,
         RpCategory: () => at,
         SafeHtml: () => fa.A,
@@ -4793,8 +4793,8 @@ try {
         TinaModuleFetchNRender: () => Ca.A,
         TinaWrapper: () => Ta,
         TrackList: () => Na.A,
-        UnorderedList: () => Ia.A,
-        UserVote: () => Ea,
+        UnorderedList: () => Aa.A,
+        UserVote: () => za,
         VideoCard: () => r,
         VideoCarousel: () => $a,
         VideoList: () => Wa,
@@ -4807,8 +4807,8 @@ try {
       });
       var r = {};
       t.r(r), t.d(r, {
-        Art: () => Va,
-        Link: () => Da
+        Art: () => Da,
+        Link: () => Ra
       });
       var s = t(38044),
         i = t(81207),
@@ -4830,14 +4830,14 @@ try {
         m = t(36416),
         _ = t(9441),
         u = t(42909);
-      const p = (0, u.defineMessages)({
+      const b = (0, u.defineMessages)({
           aria_label_open_new_window: {
             id: "aria_label_open_new_window",
             description: "Aria label to indicate when a link opens in new window/tab",
             defaultMessage: "(Opens in a new window)"
           }
         }),
-        b = {
+        p = {
           blackBtn: "rockstargames-modules-core-newswire-articled3207a3907ff5e6cc1498c67d5562087",
           btnText: "rockstargames-modules-core-newswire-articlee146813e6b911567a15379239351bb9f",
           btnTexticon: "rockstargames-modules-core-newswire-articleadd785fa73d6a7f8cdf490add2819974",
@@ -4901,7 +4901,7 @@ try {
         }) => {
           const {
             formatMessage: h
-          } = (0, u.useIntl)(), w = [b.plusButton, b[k] ?? "", b[l] ?? "", b[t] ?? "", a].join(" "), y = {
+          } = (0, u.useIntl)(), w = [p.plusButton, p[k] ?? "", p[l] ?? "", p[t] ?? "", a].join(" "), y = {
             "--hvr-color": e ?? i,
             "--hvr-bg-color": i ?? e,
             "--hvr-border-color": e ?? i
@@ -4910,7 +4910,7 @@ try {
               src: s,
               alt: ""
             }) : "", (0, n.jsxs)("div", {
-              className: b.btnText,
+              className: p.btnText,
               icon: r,
               children: [d, c ? (0, n.jsx)("span", {
                 children: c
@@ -4929,7 +4929,7 @@ try {
                 "aria-label": v,
                 tabIndex: 0,
                 children: [j, "_blank" === e && (0, n.jsx)(_.ExternalLink, {
-                  label: h(p.aria_label_open_new_window)
+                  label: h(b.aria_label_open_new_window)
                 })]
               })
             }
@@ -5027,18 +5027,18 @@ try {
         }) => y.Children.map(y.Children.toArray(e), e => (0, n.jsx)(C, {
           ...e?.props
         })));
-      var I = t(30489),
-        z = t(67127),
-        A = t(56386),
-        E = t.n(A);
+      var A = t(30489),
+        I = t(67127),
+        E = t(56386),
+        z = t.n(E);
       const P = ({
         isMulti: e,
         allowSelectAll: a,
         label: t,
         miscProps: r
       }) => {
-        const [s, i] = (0, y.useState)(""), o = (0, y.useMemo)(() => E()().getData(), []);
-        return (0, n.jsx)(z.Ay, {
+        const [s, i] = (0, y.useState)(""), o = (0, y.useMemo)(() => z()().getData(), []);
+        return (0, n.jsx)(I.Ay, {
           unstyled: !0,
           value: s,
           isMulti: e,
@@ -5071,9 +5071,9 @@ try {
           e && a && (document.cookie = `${e}=${a}; domain=${(0,L.F)()}; path=/;`)
         })(e, i), s === a || i === a ? t : r
       };
-      var V = t(98906),
-        D = t(27859),
-        R = t(74645),
+      var D = t(98906),
+        R = t(27859),
+        V = t(74645),
         F = t(91318);
       const $ = (0, y.forwardRef)(function({
           testId: e,
@@ -5085,11 +5085,11 @@ try {
           ...o
         }, c) {
           const l = (0, F.m)(a, "normal"),
-            d = (0, D.v6)({
+            d = (0, R.v6)({
               "data-testid": e,
               className: l
             }, o);
-          return (0, n.jsx)(R.Button, {
+          return (0, n.jsx)(V.Button, {
             ref: c,
             ...d,
             asChild: !0,
@@ -5112,11 +5112,11 @@ try {
           ...i
         }, o) {
           const c = (0, F.m)(a, "normal"),
-            l = (0, D.v6)({
+            l = (0, R.v6)({
               "data-testid": e,
               className: c
             }, i);
-          return (0, n.jsx)(R.IconButton, {
+          return (0, n.jsx)(V.IconButton, {
             ref: o,
             ...l,
             asChild: !0,
@@ -5163,22 +5163,22 @@ try {
           ...u
         }) => {
           const {
-            track: p
+            track: b
           } = (0, x.useGtmTrack)(), {
-            ref: b,
+            ref: p,
             inView: g
           } = (0, H.useInView)({
             threshold: .6
           }), [f, k] = (0, y.useState)(!1), h = (0, B.useGetCdnSource)(s?.full_src ?? null) ?? null;
           return (0, y.useEffect)(() => {
-            g && !f && (p({
+            g && !f && (b({
               event: "page_section_impression",
               element_placement: u?._memoq?.title?.toLowerCase()
             }), k(!0))
           }, [g]), (0, n.jsxs)("div", {
             className: (0, d.default)("rockstargames-modules-core-newswire-articlee74584d7bd5e5fb4f95b021aea5552e9", i ? "rockstargames-modules-core-newswire-articleecfb600d2677601c52a9b2ba82ea92a0" : "", l ? "rockstargames-modules-core-newswire-articlec1c30f86159b786afa96b64de61d4581" : "", h ? "" : "rockstargames-modules-core-newswire-articlea66c759349419a25e6ac54202d7fc085", _),
             style: m,
-            ref: b,
+            ref: p,
             children: [h ? (0, n.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlec6a4abbe875f9c0cadd82e5b2b2ad16c",
               style: {
@@ -5359,7 +5359,7 @@ try {
             defaultMessage: "Next Slide"
           }
         }),
-        pe = ({
+        be = ({
           prevRef: e,
           nextRef: a,
           onNextClicked: t,
@@ -5387,7 +5387,7 @@ try {
             })]
           })
         },
-        be = (0, me.A)((0, _e.g)(({
+        pe = (0, me.A)((0, _e.g)(({
           description: e,
           slideChildren: a,
           size: t,
@@ -5400,17 +5400,17 @@ try {
           className: m,
           cardSizeBreakpoints: _,
           customAspectRatio: u,
-          titleBadge: p,
-          theme: b
+          titleBadge: b,
+          theme: p
         }) => {
           const {
             track: g
-          } = (0, x.useGtmTrack)(), f = (0, y.useRef)(null), k = (0, y.useRef)(null), v = (0, y.useRef)(null), [h, w] = (0, y.useState)(null), [j, N] = (0, y.useState)(!1), [S, C] = (0, y.useState)(null), [T, I] = (0, y.useState)(), [z, A] = (0, y.useState)(), {
-            ref: E,
+          } = (0, x.useGtmTrack)(), f = (0, y.useRef)(null), k = (0, y.useRef)(null), v = (0, y.useRef)(null), [h, w] = (0, y.useState)(null), [j, N] = (0, y.useState)(!1), [S, C] = (0, y.useState)(null), [T, A] = (0, y.useState)(), [I, E] = (0, y.useState)(), {
+            ref: z,
             inView: P
           } = (0, H.useInView)({
             threshold: .6
-          }), [L, M] = (0, y.useState)(!1), [V, D] = (0, y.useState)(null), [R, F] = (0, y.useState)(!1), [$, G] = (0, y.useState)(0), [O, B] = (0, y.useState)(0);
+          }), [L, M] = (0, y.useState)(!1), [D, R] = (0, y.useState)(null), [V, F] = (0, y.useState)(!1), [$, G] = (0, y.useState)(0), [O, B] = (0, y.useState)(0);
           (0, y.useEffect)(() => {
             const e = () => {
               F(window.innerWidth < 1024)
@@ -5456,17 +5456,17 @@ try {
             if (!a) return;
             let e = !1;
             a.forEach(a => {
-              "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, D(a))
+              "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, R(a))
             }), M(e);
-            const t = a.map((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && R ? null : (0, n.jsx)(de.qr, {
+            const t = a.map((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && V ? null : (0, n.jsx)(de.qr, {
               className: "rockstargames-modules-core-newswire-articlead67cb8db28ddf18d185f85a3d54b06f",
               onFocus: () => K(a),
               role: "button",
               children: e
             }, e.key));
             w(t)
-          }, [a, R]), (0, y.useEffect)(() => {
-            A({
+          }, [a, V]), (0, y.useEffect)(() => {
+            E({
               nextEl: v.current,
               prevEl: k.current
             })
@@ -5505,15 +5505,15 @@ try {
             "data-has-covercard": L,
             "data-new-carousel-nav": !0,
             id: `${r}-carousel`,
-            "data-theme": b,
+            "data-theme": p,
             ref: f,
             style: U,
             children: [(0, n.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articleaeafe767d91d07fab61f307b5bbffeef",
-              ref: E
-            }), L && R && (0, n.jsx)("div", {
+              ref: z
+            }), L && V && (0, n.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articledef6705cfe82c4e562f3c71c78bc5248",
-              children: V
+              children: D
             }), (0, n.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articleb093fac5b0d056a4a00f34d0418c6577",
               children: (0, n.jsxs)("div", {
@@ -5524,11 +5524,11 @@ try {
                     className: "rockstargames-modules-core-newswire-articlec8e04a547988dacbae8960776862f15f",
                     children: [(0, n.jsx)("h2", {
                       children: r
-                    }), p && (0, n.jsx)("span", {
+                    }), b && (0, n.jsx)("span", {
                       className: "rockstargames-modules-core-newswire-articlec3de2db74771fdba023cc2b11b216955",
-                      children: p
+                      children: b
                     })]
-                  }), (0, n.jsx)(pe, {
+                  }), (0, n.jsx)(be, {
                     prevRef: k,
                     nextRef: v,
                     onNextClicked: () => {},
@@ -5540,7 +5540,7 @@ try {
                       }
                     },
                     title: r,
-                    theme: b
+                    theme: p
                   })]
                 }), e && (0, n.jsx)("div", {
                   className: "rockstargames-modules-core-newswire-articlea1497e1cd7844ff158955c0afe2fd3b8",
@@ -5552,7 +5552,7 @@ try {
             }), S ? (0, n.jsx)(de.RC, {
               slidesPerView: S,
               onInit: e => {
-                I(e);
+                A(e);
                 const a = setInterval(() => {
                   const {
                     height: t
@@ -5561,7 +5561,7 @@ try {
                 }, 500)
               },
               grabCursor: !0,
-              navigation: z,
+              navigation: I,
               modules: [le.Vx],
               breakpoints: q,
               slideClass: (0, d.default)("swiper-slide", c),
@@ -5682,7 +5682,7 @@ try {
             }, []))
           }, [t]), r ? (0, n.jsx)("div", {
             className: ve.shardsCarousel,
-            children: (0, n.jsx)(be, {
+            children: (0, n.jsx)(pe, {
               title: e,
               name: a,
               slideChildren: r,
@@ -5774,7 +5774,7 @@ try {
             className: l ? ve.verticalCtaBlock : ve.ctaBlock,
             children: (0, n.jsx)(B.TinaParser, {
               components: {
-                Cta: V.A,
+                Cta: D.A,
                 ExpandingPlatformButton: oe.A
               },
               tina: {
@@ -5813,8 +5813,8 @@ try {
           layeredImageSettings: m,
           legalText: _,
           shardsSection: u,
-          stackButtons: p = !1,
-          theme: b = "gen9",
+          stackButtons: b = !1,
+          theme: p = "gen9",
           title: g = ""
         }) => {
           const {
@@ -5869,7 +5869,7 @@ try {
             animate: "visible",
             variants: e ? fe : void 0,
             "data-type": "hero",
-            theme: b,
+            theme: p,
             children: [(0, n.jsxs)("div", {
               className: ve.images,
               children: [x && w ? (0, n.jsx)("div", {
@@ -5889,7 +5889,7 @@ try {
               description: o,
               expandingButtonLabel: c,
               legalText: _,
-              stackButtons: p,
+              stackButtons: b,
               title: g
             }), u?.shards && (0, n.jsx)(we, {
               shards: u.shards
@@ -5949,7 +5949,7 @@ try {
             }
           })
         },
-        Ie = e => e?.images ? (0, n.jsx)("div", {
+        Ae = e => e?.images ? (0, n.jsx)("div", {
           className: (0, d.default)(Ce.layeredImage, Ce[e?.variantClass], Ce[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
@@ -5968,7 +5968,7 @@ try {
                 className: m,
                 style: _,
                 alt: u,
-                displayClass: p
+                displayClass: b
               } = e;
               return (0, n.jsx)(Se.A, {
                 image: t,
@@ -5976,7 +5976,7 @@ try {
                   zIndex: l ?? a + 1
                 },
                 imageStyle: _,
-                className: (0, d.default)(m, p, Ce.imageLayer, Ce[r], Ce[s], Ce[i], Ce[o], Ce[c]),
+                className: (0, d.default)(m, b, Ce.imageLayer, Ce[r], Ce[s], Ce[i], Ce[o], Ce[c]),
                 alt: u
               }, l ?? a + 1)
             }), e?.borderImage && (0, n.jsx)(Te, {
@@ -5985,8 +5985,8 @@ try {
             })]
           })
         }) : null;
-      var ze = t(25993);
-      const Ae = e => {
+      var Ie = t(25993);
+      const Ee = e => {
         const {
           image: a,
           alt: t,
@@ -6000,46 +6000,46 @@ try {
           showZoomControls: m
         } = e, _ = (0, j.useLocale)(), {
           isMobile: u
-        } = (0, j.useWindowResize)(), p = a?.sources ?? {}, b = r?.image?.sources ?? {}, g = (0, ze.C1)(p?.[_] ?? p?.en_us) ?? "", f = (0, ze.C1)(b?.[_] ?? b?.en_us) ?? g, k = u ? o : c, v = u ? l : d;
+        } = (0, j.useWindowResize)(), b = a?.sources ?? {}, p = r?.image?.sources ?? {}, g = (0, Ie.C1)(b?.[_] ?? b?.en_us) ?? "", f = (0, Ie.C1)(p?.[_] ?? p?.en_us) ?? g, k = u ? o : c, v = u ? l : d;
         return (0, n.jsx)("div", {
           style: i,
           className: "rockstargames-modules-core-newswire-articleadbaa0167219cd891249a29faec00e8f",
-          children: (0, n.jsxs)(R.Lightbox.Root, {
+          children: (0, n.jsxs)(V.Lightbox.Root, {
             altText: t || "",
-            children: [(0, n.jsxs)(R.Lightbox.Trigger, {
+            children: [(0, n.jsxs)(V.Lightbox.Trigger, {
               className: "rockstargames-modules-core-newswire-articled769ad0525fc8e1ea83ce616ce6959bb",
               style: {
                 aspectRatio: r?.thumbnailAspectRatio
               },
-              children: [(0, n.jsx)(R.Lightbox.Thumbnail, {
+              children: [(0, n.jsx)(V.Lightbox.Thumbnail, {
                 src: f,
                 style: {
                   objectPosition: r?.thumbnailPosition
                 }
-              }), k && (0, n.jsx)(R.Lightbox.OpenIcon, {
+              }), k && (0, n.jsx)(V.Lightbox.OpenIcon, {
                 style: {
                   boxSizing: "content-box"
                 }
               })]
-            }), (0, n.jsxs)(R.Lightbox.Portal, {
-              children: [(0, n.jsx)(R.Lightbox.Overlay, {}), (0, n.jsxs)(R.Lightbox.Content, {
-                children: [(0, n.jsx)(R.Lightbox.ZoomPan, {
-                  children: (0, n.jsx)(R.Lightbox.Image, {
+            }), (0, n.jsxs)(V.Lightbox.Portal, {
+              children: [(0, n.jsx)(V.Lightbox.Overlay, {}), (0, n.jsxs)(V.Lightbox.Content, {
+                children: [(0, n.jsx)(V.Lightbox.ZoomPan, {
+                  children: (0, n.jsx)(V.Lightbox.Image, {
                     src: g
                   })
-                }), (0, n.jsxs)(R.Lightbox.Controls, {
-                  children: [s && (0, n.jsx)(R.Lightbox.Caption, {
+                }), (0, n.jsxs)(V.Lightbox.Controls, {
+                  children: [s && (0, n.jsx)(V.Lightbox.Caption, {
                     children: s
-                  }), (0, n.jsx)(R.Lightbox.Close, {
+                  }), (0, n.jsx)(V.Lightbox.Close, {
                     showTooltip: !1
-                  }), m && (0, n.jsx)(R.Lightbox.Zoom, {}), v && (0, n.jsx)(R.Lightbox.Download, {})]
+                  }), m && (0, n.jsx)(V.Lightbox.Zoom, {}), v && (0, n.jsx)(V.Lightbox.Download, {})]
                 })]
               })]
             })]
           })
         })
       };
-      var Ee = t(44453);
+      var ze = t(44453);
       const Pe = {
           animatePlaceholder: "rockstargames-modules-core-newswire-articlef6f51dbe7c2f79f974e9573386bba9da",
           "loader-keyframes": "rockstargames-modules-core-newswire-articlec3684b80c99c860036d9337843a7be58",
@@ -6097,7 +6097,7 @@ try {
             onClick: m,
             testId: _
           } = e;
-          return c ? s && (0, n.jsx)(R.Button, {
+          return c ? s && (0, n.jsx)(V.Button, {
             asChild: !0,
             appearance: t,
             size: "LG",
@@ -6108,7 +6108,7 @@ try {
               },
               children: s
             })
-          }) : (0, n.jsx)(R.Button, {
+          }) : (0, n.jsx)(V.Button, {
             autoFocus: !0,
             iconRight: r,
             className: (0, d.default)(i),
@@ -6126,7 +6126,7 @@ try {
             children: s
           })
         },
-        Ve = {
+        De = {
           actions: "rockstargames-modules-core-newswire-articled35d1125eabb9ae0e941bd585003c4fc",
           check: "rockstargames-modules-core-newswire-articleb63b9588fb98b439d19028797670c6c5",
           content: "rockstargames-modules-core-newswire-articleefe65f5c39de5d044fdc6b13c1771125",
@@ -6141,7 +6141,7 @@ try {
           selected: "rockstargames-modules-core-newswire-articlea6cab397bf3a16564fcc531ef4c16130",
           "slide-up": "rockstargames-modules-core-newswire-articleb2b3117a07a11b3ec5897e4718e24373"
         },
-        De = ({
+        Re = ({
           icon: e,
           title: a,
           secondaryText: t,
@@ -6163,7 +6163,7 @@ try {
           };
           if (s) return (0, n.jsxs)("dialog", {
             ref: l,
-            className: Ve.dialog,
+            className: De.dialog,
             onClick: e => (e => {
               if (!e.currentTarget) return;
               const a = e.currentTarget.getBoundingClientRect();
@@ -6171,20 +6171,20 @@ try {
             })(e),
             "data-testid": "alert-dialog",
             children: [e && (0, n.jsx)("i", {
-              className: [Ve.icon, Ve[e]].join(" ")
+              className: [De.icon, De[e]].join(" ")
             }), (0, n.jsxs)("div", {
-              className: [Ve.content, c?.content].join(" "),
+              className: [De.content, c?.content].join(" "),
               children: [(0, n.jsx)("h3", {
-                className: [Ve.heading, c?.heading].join(" "),
+                className: [De.heading, c?.heading].join(" "),
                 children: a
               }), t && (0, n.jsx)("div", {
-                className: [Ve.message, c?.message].join(" "),
+                className: [De.message, c?.message].join(" "),
                 dangerouslySetInnerHTML: {
                   __html: t
                 }
               })]
             }), r && (0, n.jsx)("div", {
-              className: Ve.actions,
+              className: De.actions,
               children: r.slice(0, 2).map((e, a) => (0, n.jsx)(Me, {
                 style: e?.style ?? (0 === a ? "primary" : "secondary"),
                 button: e,
@@ -6193,7 +6193,7 @@ try {
             })]
           })
         };
-      var Re = t(5180),
+      var Ve = t(5180),
         Fe = t(27750),
         $e = t.n(Fe);
       const Ge = (0, j.withTranslations)(({
@@ -6211,8 +6211,8 @@ try {
           {
             tagId: _ = null
           } = (0, m.useParams)(),
-          [u, p] = (0, y.useState)(_ ?? t ?? c.get("tag_id")),
-          [b, g] = (0, y.useState)(1),
+          [u, b] = (0, y.useState)(_ ?? t ?? c.get("tag_id")),
+          [p, g] = (0, y.useState)(1),
           [f, k] = (0, y.useState)(20),
           [v, h] = (0, y.useState)([]),
           [w, N] = (0, y.useState)(null),
@@ -6222,14 +6222,14 @@ try {
           }] = (0, j.useLazyQuery)($e(), {
             variables: {
               tagId: Number(u),
-              page: b,
+              page: p,
               metaUrl: r,
               limit: f,
               locale: i
             }
           });
         return (0, y.useEffect)(() => {
-          g(1), h([]), k(20), p(_ ?? t ?? c.get("tag_id")), S()
+          g(1), h([]), k(20), b(_ ?? t ?? c.get("tag_id")), S()
         }, [c.get("tag_id"), _, t]), (0, y.useEffect)(() => {
           const e = v;
           T?.posts?.paging && N(T?.posts?.paging), T?.posts?.results && h(e.concat(T?.posts?.results))
@@ -6252,7 +6252,7 @@ try {
             "data-testid": "more-stories",
             onClick: () => {
               const e = c.get("page"),
-                a = Number(e ?? b) + 1;
+                a = Number(e ?? p) + 1;
               g(a), 20 !== f && k(20), S(), d({
                 page: String(a),
                 ...u && {
@@ -6304,7 +6304,7 @@ try {
           }, [t.length]), (0, n.jsx)("div", {
             "data-testid": "newswire-blocks-container",
             className: [He.newswireBlocks, a ? He.noSpecialOrder : "", He.contextHome].join(" "),
-            children: t.map((t, r) => (0, n.jsx)(Re.A, {
+            children: t.map((t, r) => (0, n.jsx)(Ve.A, {
               section: e,
               index: r,
               noSpecialOrder: a,
@@ -6484,8 +6484,8 @@ try {
           title: m = "",
           name: _ = "",
           style: u,
-          imageStyle: p,
-          _memoq: b
+          imageStyle: b,
+          _memoq: p
         }) => {
           const [g, f] = (0, y.useState)(!1), {
             ref: v,
@@ -6496,13 +6496,13 @@ try {
             isMobile: w
           } = (0, j.useWindowResize)(), {
             track: N
-          } = (0, x.useGtmTrack)(), S = (0, B.useImageParser)(l), C = (0, B.useGetCdnSource)(o), T = w ? S?.src?.mobile : S?.src?.desktop, I = S?.alt ?? "", z = {
+          } = (0, x.useGtmTrack)(), S = (0, B.useImageParser)(l), C = (0, B.useGetCdnSource)(o), T = w ? S?.src?.mobile : S?.src?.desktop, A = S?.alt ?? "", I = {
             ...u,
             "--promo-background": e ?? "var(--black-200)",
             "--promo-image": `url(${T??C??"var(--promo-background)"})`,
             "--promo-order": "left" === d ? "row" : "row-reverse"
-          }, A = {
-            ...p
+          }, E = {
+            ...b
           };
           return (0, y.useEffect)(() => {
             h && !g && (N({
@@ -6515,7 +6515,7 @@ try {
               children: (0, n.jsxs)(ge.P.div, {
                 className: ra.promoModule,
                 style: {
-                  ...z
+                  ...I
                 },
                 initial: {
                   opacity: 0
@@ -6534,10 +6534,10 @@ try {
                 ref: v,
                 children: [(0, n.jsx)("div", {
                   role: "img",
-                  "aria-label": I,
+                  "aria-label": A,
                   className: [ra.promoModuleImage, i ? ra.gradient : "", "left" === d ? ra.left : ra.right].join(" "),
                   style: {
-                    ...A
+                    ...E
                   }
                 }), (0, n.jsxs)("div", {
                   className: ra.promoModuleContentContainer,
@@ -6558,7 +6558,7 @@ try {
                         event: "cta_learn",
                         element_placement: "promo module",
                         link_url: s,
-                        text: b?.ctaLabel?.toLowerCase()
+                        text: p?.ctaLabel?.toLowerCase()
                       })
                     }
                   })]
@@ -6593,10 +6593,10 @@ try {
         ...d
       }) => {
         const [m, _] = (0, y.useState)(!1), {
-          inView: p
+          inView: b
         } = (0, H.useInView)({
           threshold: .6
-        }), [b, g] = (0, y.useState)({
+        }), [p, g] = (0, y.useState)({
           ratingDescriptors: e,
           ratingFooter: a,
           ratingImg: i,
@@ -6614,36 +6614,36 @@ try {
         if ((0, y.useEffect)(() => {
             v && g(v?.game)
           }, [v]), (0, y.useEffect)(() => {
-            p && !m && b.ratingImg && (f({
+            b && !m && p.ratingImg && (f({
               event: "page_section_impression",
               element_placement: "rating"
             }), _(!0))
-          }, [p]), !b.ratingImg) return null;
-        const h = !!b.ratingDescriptors;
+          }, [b]), !p.ratingImg) return null;
+        const h = !!p.ratingDescriptors;
         return (0, n.jsxs)("div", {
           className: [oa.rating, h ? oa.withDescriptors : oa.withOutDescriptors, l || ""].join(" "),
           style: (0, j.safeStyles)(c),
           "data-testid": "rating",
           ...d,
           children: [(0, n.jsx)(s.A, {
-            to: b.ratingUrl,
+            to: p.ratingUrl,
             target: "_blank",
             children: (0, n.jsx)("img", {
               alt: k.formatMessage(na.components_ratings_link_alt, {
-                rating: (w = b.ratingImg, w.replace(/_/g, " ").split(".")[0].toUpperCase())
+                rating: (w = p.ratingImg, w.replace(/_/g, " ").split(".")[0].toUpperCase())
               }),
-              src: t(8194)(`./${b.ratingImg}`)
+              src: t(8194)(`./${p.ratingImg}`)
             })
           }), h && (0, n.jsxs)("div", {
             className: oa.text,
             children: [(0, n.jsx)("p", {
               className: oa.descriptors,
               dangerouslySetInnerHTML: {
-                __html: b?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
+                __html: p?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
               }
-            }), b.ratingFooter && (0, n.jsx)("hr", {}), b.ratingFooter && (0, n.jsx)("p", {
+            }), p.ratingFooter && (0, n.jsx)("hr", {}), p.ratingFooter && (0, n.jsx)("p", {
               dangerouslySetInnerHTML: {
-                __html: b.ratingFooter.replace(/ \//g, ", ")
+                __html: p.ratingFooter.replace(/ \//g, ", ")
               }
             })]
           })]
@@ -6654,8 +6654,8 @@ try {
         ma = t(43312),
         _a = t(63831),
         ua = t(47519),
-        pa = t(67359),
-        ba = t(76893);
+        ba = t(67359),
+        pa = t(76893);
       const ga = ({
         disableLink: e,
         className: a,
@@ -6751,9 +6751,9 @@ try {
           children: e
         })
       };
-      var Ia = t(12334),
-        za = t(69138);
-      const Aa = {
+      var Aa = t(12334),
+        Ia = t(69138);
+      const Ea = {
           downVote: "rockstargames-modules-core-newswire-articlee23b13b0d0be49814d3770c10365c096",
           info: "rockstargames-modules-core-newswire-articlecee10f330f3ac6fba73fc06ac99bc951",
           loggedOutButtons: "rockstargames-modules-core-newswire-articlec393b8f2d3b5b3e9204881ae6ff0fdc5",
@@ -6765,7 +6765,7 @@ try {
           voteButtons: "rockstargames-modules-core-newswire-articledda673f7473820d8884c017373c780f6",
           voteContent: "rockstargames-modules-core-newswire-articleaad01ad44bcc6161ad363910e931515f"
         },
-        Ea = ({
+        za = ({
           description: e,
           foreign_id: a = document.location.pathname,
           foreign_type: t = "url",
@@ -6777,9 +6777,9 @@ try {
             loggedIn: i
           } = (0, x.useRockstarUser)(), {
             refetch: o
-          } = (0, j.useQuery)(za.UserGetVote, {
+          } = (0, j.useQuery)(Ia.UserGetVote, {
             skip: !0
-          }), [c] = (0, j.useMutation)(za.UserCastVote), [l, d] = (0, y.useState)(null), m = (0, y.useCallback)(async e => {
+          }), [c] = (0, j.useMutation)(Ia.UserCastVote), [l, d] = (0, y.useState)(null), m = (0, y.useCallback)(async e => {
             s({
               event: "cta_" + (e ? "like" : "dislike"),
               text: `${t} ${a}`
@@ -6804,25 +6804,25 @@ try {
               d(e?.data?.userGetVote?.vote ?? null)
             })()
           }, [a, t, i]), (0, n.jsx)("div", {
-            className: Aa.userVote,
+            className: Ea.userVote,
             children: (0, n.jsxs)("div", {
-              className: Aa.voteContent,
+              className: Ea.voteContent,
               children: [(0, n.jsxs)("div", {
-                className: Aa.info,
+                className: Ea.info,
                 children: [(0, n.jsx)("h3", {
                   children: r
                 }), (0, n.jsx)("p", {
                   children: e
                 })]
               }), (0, n.jsxs)("div", {
-                className: [Aa.voteButtons, i ? "" : Aa.loggedOutButtons].join(" "),
+                className: [Ea.voteButtons, i ? "" : Ea.loggedOutButtons].join(" "),
                 children: [(0, n.jsx)("button", {
                   onClick: () => m(!0),
-                  className: [Aa.upVote, l ? Aa.voteButtonActive : ""].join(" "),
+                  className: [Ea.upVote, l ? Ea.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, n.jsx)("button", {
-                  className: [Aa.downVote, !1 === l ? Aa.voteButtonActive : ""].join(" "),
+                  className: [Ea.downVote, !1 === l ? Ea.voteButtonActive : ""].join(" "),
                   onClick: () => m(!1),
                   type: "button",
                   "aria-label": "Vote down"
@@ -6842,7 +6842,7 @@ try {
           title: "rockstargames-modules-core-newswire-articlefd87597d0f90ed6d8a2081da933f53bc",
           videoPreview: "rockstargames-modules-core-newswire-articlea626ad482ff0be0336e75929516654d5"
         },
-        Va = ({
+        Da = ({
           video: e,
           size: a = 640
         }) => {
@@ -6857,7 +6857,7 @@ try {
             }
           })
         },
-        Da = ({
+        Ra = ({
           gameTitleNecessary: e = !0,
           openInNewWindow: a = !1,
           video: t,
@@ -6873,7 +6873,7 @@ try {
             },
             l = (0, n.jsxs)("div", {
               className: Ma.card,
-              children: [(0, n.jsx)(Va, {
+              children: [(0, n.jsx)(Da, {
                 video: t,
                 size: r
               }), (0, n.jsxs)("div", {
@@ -6902,7 +6902,7 @@ try {
             children: l
           })
         },
-        Ra = {
+        Va = {
           active: "rockstargames-modules-core-newswire-articlee35688e0d87409e3aef95ffb624d94f4",
           carousel: "rockstargames-modules-core-newswire-articlebc3f1abaac4c17c0e9aaac5fccfc6f7e",
           cta: "rockstargames-modules-core-newswire-articlef40c40ed1bc4242a32bc0628eea34048",
@@ -6946,9 +6946,9 @@ try {
             [o, c] = (0, y.useState)(0),
             [d, m] = (0, y.useState)(0),
             _ = (0, y.useRef)(null),
-            p = (0, y.useRef)(null);
+            b = (0, y.useRef)(null);
           (0, y.useEffect)(() => {
-            if (!_.current || !p.current) return;
+            if (!_.current || !b.current) return;
             const a = new(La())(_.current);
             a.get("press").set({
               time: 0
@@ -6964,52 +6964,52 @@ try {
                 c(a), m(0)
               },
               n = e => {
-                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.type && "panright" !== e.type || !p.current?.classList.contains(Ra.dragging) || t() && i(!0)
+                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.type && "panright" !== e.type || !b.current?.classList.contains(Va.dragging) || t() && i(!0)
               },
               l = () => {
                 t() && i(!1), m(0)
               },
               d = e => {
-                "press" === e.type && _.current?.classList.add(`${Ra.disableClick}`), "tap" === e.type && (_.current?.classList.remove(`${Ra.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && _.current?.classList.add(`${Va.disableClick}`), "tap" === e.type && (_.current?.classList.remove(`${Va.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               u = () => {
-                t() && i(!1), _.current && _.current.classList.remove(`${Ra.disableClick}`)
+                t() && i(!1), _.current && _.current.classList.remove(`${Va.disableClick}`)
               },
-              b = () => {
+              p = () => {
                 t() && i(!1)
               };
-            return p.current.addEventListener("transitionend", b), a.on("swiperight", r), a.on("swipeleft", s), a.on("pan", n), a.on("panend", l), a.on("press tap", d), a.on("pressup", u), () => {
-              a.off("swiperight", r), a.off("swipeleft", s), a.off("pan", n), a.off("panend", l), a.off("press tap", d), a.off("pressup", u), p.current && p.current.removeEventListener("transitionend", b), m(0)
+            return b.current.addEventListener("transitionend", p), a.on("swiperight", r), a.on("swipeleft", s), a.on("pan", n), a.on("panend", l), a.on("press tap", d), a.on("pressup", u), () => {
+              a.off("swiperight", r), a.off("swipeleft", s), a.off("pan", n), a.off("panend", l), a.off("press tap", d), a.off("pressup", u), b.current && b.current.removeEventListener("transitionend", p), m(0)
             }
           }, [_.current, o]);
-          const b = e => {
+          const p = e => {
             const a = "VI" === e.game?.titleSlug;
             return [e?.titleHomepage ?? e?.title, a ? "/VI" : `/videos/${e.id}`, a ? "_blank" : "_self", t(a ? Fa.learn_more : Fa.watch_more)]
           };
           return (0, n.jsxs)("section", {
-            className: Ra.carousel,
+            className: Va.carousel,
             children: [(0, n.jsx)("div", {
-              className: Ra.track,
+              className: Va.track,
               ref: _,
               children: (0, n.jsx)("div", {
-                className: `${Ra.items} ${0!==d?Ra.dragging:""}`,
-                ref: p,
+                className: `${Va.items} ${0!==d?Va.dragging:""}`,
+                ref: b,
                 style: {
                   transform: `translateX(calc(-${100*o}% + ${d}px))`
                 },
                 children: e.map((e, a) => {
-                  const [t, r, i] = b(e);
+                  const [t, r, i] = p(e);
                   return (0, n.jsx)(s.A, {
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through screencap",
                     "data-gtm-label": r,
                     to: r,
-                    className: o === a ? Ra.active : "",
+                    className: o === a ? Va.active : "",
                     role: "link",
                     title: t,
                     tabIndex: o === a ? 0 : -1,
                     target: i,
-                    children: (0, n.jsx)(Va, {
+                    children: (0, n.jsx)(Da, {
                       video: e,
                       size: 1280
                     })
@@ -7017,13 +7017,13 @@ try {
                 })
               })
             }), (0, n.jsxs)("div", {
-              className: Ra.slidesContent,
+              className: Va.slidesContent,
               children: [(0, n.jsx)("div", {
-                className: Ra.text,
+                className: Va.text,
                 children: e.map((e, t) => {
-                  const [i, c, d, m] = b(e);
+                  const [i, c, d, m] = p(e);
                   return (0, n.jsxs)(s.A, {
-                    className: [Ra.info, t === o ? Ra.active : ""].join(" "),
+                    className: [Va.info, t === o ? Va.active : ""].join(" "),
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through footer",
                     "data-gtm-label": c,
@@ -7041,26 +7041,26 @@ try {
                       })
                     }),
                     children: [(0, n.jsxs)("div", {
-                      className: Ra.title,
+                      className: Va.title,
                       children: [(0, n.jsxs)("div", {
-                        className: Ra.gameTitle,
+                        className: Va.gameTitle,
                         children: [e.game.title, "fr_fr" === a && " "]
                       }), (0, n.jsx)("h2", {
-                        className: Ra.videoTitle,
+                        className: Va.videoTitle,
                         children: i
                       })]
                     }), (0, n.jsx)(l.A, {
                       tabIndex: -1,
                       role: "presentation",
                       "aria-hidden": !0,
-                      className: Ra.cta,
+                      className: Va.cta,
                       children: m
                     })]
                   }, e.id);
                   var _
                 })
               }), (0, n.jsx)("section", {
-                className: Ra.dots,
+                className: Va.dots,
                 "aria-controls": "video-carousel",
                 "aria-label": "video carousel buttons",
                 role: "group",
@@ -7070,7 +7070,7 @@ try {
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
                   onClick: () => c(a),
-                  className: o === a ? Ra.active : "",
+                  className: o === a ? Va.active : "",
                   type: "button"
                 }, e.id))
               })]
@@ -7104,19 +7104,19 @@ try {
         }) => {
           const {
             isMobile: o
-          } = (0, j.useWindowResize)(), c = (0, j.useLocale)(), l = (0, y.useMemo)(() => {
+          } = (0, j.useWindowResize)(), c = (0, y.useMemo)(() => {
             let r = "";
-            return e && (r = o ? t(16044)(`./${s}/mobile/${c}.jpg`) : t(51048)(`./${s}/desktop/${c}.jpg`)), r || (r = t(39294)(`./${s}.jpg`), r += `?im=Resize=${a}`), r
-          }, [o, s]), [d] = (0, j.usePreloadImg)(l);
-          let m = l;
+            return e && (r = o ? t(25087)(`./${s}/mobile/global.jpg`) : t(58963)(`./${s}/desktop/global.jpg`)), r || (r = t(39294)(`./${s}.jpg`), r += `?im=Resize=${a}`), r
+          }, [o, s]), [l] = (0, j.usePreloadImg)(c);
+          let d = c;
           return (0, n.jsx)("div", {
             role: "img",
             "aria-label": r,
             style: {
-              backgroundImage: `url(${m})`,
+              backgroundImage: `url(${d})`,
               borderRadius: i ? "unset" : ""
             },
-            className: [Oa.img, d ? Oa.startAnimation : "", e ? Oa.wide : ""].join(" ")
+            className: [Oa.img, l ? Oa.startAnimation : "", e ? Oa.wide : ""].join(" ")
           })
         },
         Ha = {
@@ -7174,7 +7174,7 @@ try {
             o = void 0 !== a ? "games" : "videos",
             [c, l] = (0, y.useState)(),
             [m, _] = (0, y.useState)(),
-            [p, b] = (0, y.useState)(0),
+            [b, p] = (0, y.useState)(0),
             g = (0, y.useRef)(null),
             f = (0, y.useRef)(null),
             k = (0, y.useRef)(null);
@@ -7187,12 +7187,12 @@ try {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches;
               let a = 4;
-              e("768px") ? a = 1 : e("990px") || e("1440px") ? a = 2.2 : e("1920px") && (a = 3.2), b(a)
+              e("768px") ? a = 1 : e("990px") || e("1440px") ? a = 2.2 : e("1920px") && (a = 3.2), p(a)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }, [p]);
+          }, [b]);
           const v = e => {
             g.current && (g.current.scrollLeft = 0), c?.slideTo(e)
           };
@@ -7211,7 +7211,7 @@ try {
             children: e.map((e, a) => (0, n.jsx)(de.qr, {
               className: Ua.slide,
               onFocus: () => v(a),
-              children: (0, n.jsx)(Da, {
+              children: (0, n.jsx)(Ra, {
                 video: e,
                 gameTitleNecessary: r
               })
@@ -7245,13 +7245,13 @@ try {
                 })]
               })]
             }), (0, n.jsx)("div", {
-              className: (0, d.default)(Ua.items, p % 1 != 0 ? Ua.partial : ""),
+              className: (0, d.default)(Ua.items, b % 1 != 0 ? Ua.partial : ""),
               children: (0, n.jsx)("div", {
                 className: Ua.trackWrapper,
                 ref: g,
-                children: p && (0, n.jsx)(de.RC, {
+                children: b && (0, n.jsx)(de.RC, {
                   className: Ua.track,
-                  slidesPerView: p,
+                  slidesPerView: b,
                   spaceBetween: 24,
                   onInit: e => {
                     l(e)
@@ -7441,27 +7441,27 @@ try {
         className: _ = "",
         id: u = null
       }) => {
-        const p = (0, s.S1)(n ?? {}),
-          b = {
+        const b = (0, s.S1)(n ?? {}),
+          p = {
             ...c
           };
-        if (p?.src?.desktop) {
+        if (b?.src?.desktop) {
           const e = (n?.style && n?.style["--background-image-size"]) ?? "var(--grid-background-size, cover)",
             a = (n?.style && n?.style["--background-image-repeat"]) ?? "var(--grid-background-repeat, no-repeat)",
             t = `var(--grid-background-position, center)/${e??"cover"}`;
-          if (b.background = `url(${p?.src?.desktop}) ${a} ${t}`, n?.style && n?.style["--linear-gradient"]) b.background = `linear-gradient(${n?.style["--linear-gradient"]}), url(${p?.src?.desktop}) ${a} ${t}`;
+          if (p.background = `url(${b?.src?.desktop}) ${a} ${t}`, n?.style && n?.style["--linear-gradient"]) p.background = `linear-gradient(${n?.style["--linear-gradient"]}), url(${b?.src?.desktop}) ${a} ${t}`;
           else if (n?.style && n?.style["--gradient-height"]) {
             const e = n?.style["--gradient-height"] || "3",
               r = n?.style["--gradient-start-color"] || "var(--background-color, transparent)",
               s = n?.style["--gradient-end-color"] || "var(--background-color, transparent)";
-            b.background = `linear-gradient(180deg, ${r}, transparent ${e}%, transparent ${100-e}%, ${s}), url(${p?.src?.desktop}) ${a} ${t}`
+            p.background = `linear-gradient(180deg, ${r}, transparent ${e}%, transparent ${100-e}%, ${s}), url(${b?.src?.desktop}) ${a} ${t}`
           }
         }
         return (0, r.jsx)("div", {
           id: u,
           className: (0, o.default)("rockstargames-modules-core-newswire-articleda87ead760b989fbe90a0b89c60b0653", m ? "rockstargames-modules-core-newswire-articledfbda195073626bc6a7690dc73fba873" : "", _),
           "data-game": "community" === l ? null : t,
-          style: (0, i.safeStyles)(b),
+          style: (0, i.safeStyles)(p),
           "data-context": a,
           "data-template": l,
           "data-theme": d,
@@ -7697,7 +7697,7 @@ try {
       t.r(a), t.d(a, {
         Animations: () => r,
         LiteMotion: () => d,
-        withFadeIn: () => b,
+        withFadeIn: () => p,
         withFadeUp: () => v
       });
       var r = {};
@@ -7740,7 +7740,7 @@ try {
           ease: "easeIn",
           duration: .4
         },
-        p = ({
+        b = ({
           children: e
         }) => (0, s.jsx)(m.P.div, Object.assign({
           className: "rockstargames-modules-core-newswire-articlef38982805188b64825a72d2c5fac938c",
@@ -7755,7 +7755,7 @@ try {
         }, {
           children: e
         })),
-        b = e => a => (0, s.jsx)(p, {
+        p = e => a => (0, s.jsx)(b, {
           children: (0, s.jsx)(e, Object.assign({}, a))
         }),
         g = {
@@ -7998,10 +7998,10 @@ try {
           index: a,
           post: t,
           noSpecialOrder: u = !1,
-          focused: p
+          focused: b
         }) => {
           const {
-            track: b
+            track: p
           } = (0, n.useGtmTrack)(), [g] = (0, i.useSearchParams)(), f = t.preview_images_parsed.newswire_block, k = (0, c.Ub)(l.fi.mobile), v = {
             default: 0 !== a || u ? f.square || f.d16x9 || f._fallback : f.d16x9 || f.square || f._fallback,
             mobile: f.square || f._fallback
@@ -8013,7 +8013,7 @@ try {
               backgroundImage: `url(${v.mobile})`
             }
           }, y = (0, s.useCallback)(() => {
-            b({
+            p({
               event: "card_click",
               card_id: t.id,
               card_name: t.name_slug.replace(/-/g, " "),
@@ -8025,7 +8025,7 @@ try {
           return (0, r.jsx)(d.A, {
             to: t.url,
             className: [_.newswireBlock, u ? _.newswireBlockNoSpecialOrder : "", null !== h ? _.startAnimation : ""].join(" "),
-            focused: p,
+            focused: b,
             onClick: y,
             children: (0, r.jsxs)(r.Fragment, {
               children: [0 !== a || g.get("tag_id") ? (0, r.jsx)("div", {
@@ -8149,13 +8149,13 @@ try {
           textOverlay: "rockstargames-modules-core-newswire-articleca83475001f5d512b9ffcd89f1117561"
         },
         {
-          LiteMotion: p,
-          Animations: b
+          LiteMotion: b,
+          Animations: p
         } = n,
         {
           variants: g,
           transitions: f
-        } = b,
+        } = p,
         k = ({
           title: e,
           hasTag: a,
@@ -8164,7 +8164,7 @@ try {
           description: i,
           fadesOut: o = !1,
           badges: n
-        }) => (0, r.jsx)(p, {
+        }) => (0, r.jsx)(b, {
           initial: g.fade.out.initial,
           animate: {
             opacity: o ? 0 : 1
@@ -8302,20 +8302,20 @@ try {
         S = t(49429),
         C = t(32903),
         T = t(85719),
-        I = t(11008);
-      const z = {
+        A = t(11008);
+      const I = {
           ps5: x,
           ps4: j,
           ps: y,
           xboxone: S,
           xbox: C,
           xboxseriesxs: N,
-          nintendoswitch: I,
+          nintendoswitch: A,
           pc: T,
           googleplay: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2ef574ea2aa502447d579267ff37e251.svg",
           applestore: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c6affc8b37ec4c75486ab6d12b2de395.svg"
         },
-        A = ({
+        E = ({
           title: e,
           showTitle: a = !0,
           showBackground: t = !0,
@@ -8353,13 +8353,13 @@ try {
                 }) => (0, r.jsx)("img", {
                   className: "rockstargames-modules-core-newswire-articleff5cde8853312ffb892472d100c684cd",
                   alt: a,
-                  src: z[e]
+                  src: I[e]
                 }, e))
               })]
             })]
           })
         },
-        E = ({
+        z = ({
           textOverlayProps: e,
           title: a,
           size: t,
@@ -8412,7 +8412,7 @@ try {
               size: t,
               expandedView: i
             })), m, _ && (0, r.jsxs)(r.Fragment, {
-              children: [!0 === d?.hasPlatformOptions && (0, r.jsx)(A, {
+              children: [!0 === d?.hasPlatformOptions && (0, r.jsx)(E, {
                 title: a,
                 platformOptions: d,
                 pricingOptions: n,
@@ -8436,15 +8436,15 @@ try {
         {
           transitions: M
         } = L,
-        V = ({
+        D = ({
           components: e,
           payload: a,
           prod: t,
           size: n,
           title: m,
           initial: u = "initial",
-          animate: p = "animate",
-          variants: b,
+          animate: b = "animate",
+          variants: p,
           type: g = null,
           context: f = null,
           textOverlayProps: k,
@@ -8458,21 +8458,21 @@ try {
           platformOptions: C,
           isProductCard: T = !1
         }) => {
-          const I = (0, s.useRef)(null),
-            z = (0, s.useRef)(null),
+          const A = (0, s.useRef)(null),
+            I = (0, s.useRef)(null),
             {
-              tag: A,
+              tag: E,
               expandedHasTag: L,
-              badges: V
+              badges: D
             } = k;
           (0, i.set)(a, "meta.prod", t);
-          const D = h?.props?.images.length > 0;
-          let R = (0, r.jsx)("h1", {
+          const R = h?.props?.images.length > 0;
+          let V = (0, r.jsx)("h1", {
             children: m
           });
-          return S && (R = null), (0, s.useEffect)(() => {
+          return S && (V = null), (0, s.useEffect)(() => {
             const e = () => {
-              I.current && I.current.scrollTop > 0 && window.innerWidth >= window.innerHeight && (I.current.scrollTop = 0)
+              A.current && A.current.scrollTop > 0 && window.innerWidth >= window.innerHeight && (A.current.scrollTop = 0)
             };
             return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           }, []), (0, r.jsx)(l.DataLayerProvider, {
@@ -8480,12 +8480,12 @@ try {
             card_name: m?.toLowerCase(),
             children: (0, r.jsx)(c.A, {
               threshold: [25, 50, 75, 90, 100],
-              trackRef: "long" === g ? I : z,
+              trackRef: "long" === g ? A : I,
               children: (0, r.jsxs)(P, {
-                ref: I,
+                ref: A,
                 initial: u,
-                animate: p,
-                variants: b.expanded,
+                animate: b,
+                variants: p.expanded,
                 transition: M.cardOpen,
                 className: (0, d.default)("rockstargames-modules-core-newswire-articlec2289ce1bf0de6ad8a4a8ce7e90a4b66", v),
                 "data-type": g,
@@ -8496,7 +8496,7 @@ try {
                 style: {
                   "--product-card-pricing-info-height": `${N||0}px`
                 },
-                children: [D && (0, r.jsx)(E, {
+                children: [R && (0, r.jsx)(z, {
                   size: n,
                   title: m,
                   textOverlayProps: k,
@@ -8506,9 +8506,9 @@ try {
                   isCoverCard: S,
                   children: h
                 }), (0, r.jsxs)(P, {
-                  ref: z,
+                  ref: I,
                   className: "rockstargames-modules-core-newswire-articlee461568802b56e8c21b8b82d9c3a1fb4",
-                  variants: b.expandedContents,
+                  variants: p.expandedContents,
                   transition: M.afterCardOpen,
                   "data-theme": y,
                   tabindex: -1,
@@ -8516,9 +8516,9 @@ try {
                     className: "rockstargames-modules-core-newswire-articlec4c35e83dbf962aa44c3f94b313361b3",
                     children: [(0, r.jsx)(_, {
                       hasTag: L,
-                      tag: A,
-                      badges: V
-                    }), R, T && (0, r.jsxs)(r.Fragment, {
+                      tag: E,
+                      badges: D
+                    }), V, T && (0, r.jsxs)(r.Fragment, {
                       children: [!0 === C?.hasPlatformOptions && (0, r.jsx)("div", {
                         className: "rockstargames-modules-core-newswire-articlecd635452588eda421bdea19f00660efc",
                         children: (0, r.jsx)(_, {
@@ -8547,8 +8547,8 @@ try {
             })
           })
         };
-      var D = t(16157),
-        R = t(44453),
+      var R = t(16157),
+        V = t(44453),
         F = t(75138),
         $ = t(72527),
         G = t(36416),
@@ -8576,8 +8576,8 @@ try {
           isProductCard: m,
           cardIds: _ = null,
           theme: u = "none",
-          isCoverCard: p,
-          platformOptions: b,
+          isCoverCard: b,
+          platformOptions: p,
           pricingOptions: g
         }) => {
           const {
@@ -8585,13 +8585,13 @@ try {
             formatList: k
           } = (0, v.useIntl)(), [w, y] = (0, G.useSearchParams)(), j = (0, s.useRef)(null), [, x] = (0, s.useContext)(H), {
             track: N
-          } = (0, O.useGtmTrack)(), [S, C] = (0, s.useState)(!1), T = window.location.href.includes("cms5"), I = () => {
+          } = (0, O.useGtmTrack)(), [S, C] = (0, s.useState)(!1), T = window.location.href.includes("cms5"), A = () => {
             C(!1), x(null), T || y(e => (e.delete("info"), e), {
               replace: !0
             }), N({
               event: "trackPageview"
             })
-          }, z = () => {
+          }, I = () => {
             if (!c?.content || !j.current || !n || "linkout" === n) return;
             const r = j.current,
               s = window.getComputedStyle(r),
@@ -8600,18 +8600,18 @@ try {
               d = r.getBoundingClientRect(),
               {
                 content: m,
-                className: p,
-                contentClassName: b
+                className: b,
+                contentClassName: p
               } = c,
               g = "fob" === i ? "fob" : "default";
             x({
               content: m,
-              onClose: I,
+              onClose: A,
               rect: d,
               width: o,
               height: l,
-              className: p,
-              contentClassName: b,
+              className: b,
+              contentClassName: p,
               fadeIn: !1,
               cardIds: _,
               theme: u,
@@ -8635,14 +8635,14 @@ try {
             })
           };
           (0, s.useEffect)(() => {
-            S && z()
+            S && I()
           }, [S]), (0, s.useEffect)(() => {
             C(w.get("info") === e)
           }, [w.get("info"), e]);
-          const A = (0, s.useMemo)(() => {
-            const e = b?._memoq?.platformTag || "";
-            if (b?.platformsAndLinks?.length > 0) {
-              const a = b?.platformsAndLinks?.map(({
+          const E = (0, s.useMemo)(() => {
+            const e = p?._memoq?.platformTag || "";
+            if (p?.platformsAndLinks?.length > 0) {
+              const a = p?.platformsAndLinks?.map(({
                   buttonText: e
                 }) => e).filter(Boolean),
                 r = k(a, {
@@ -8661,22 +8661,22 @@ try {
               tag: e,
               title: t
             }) : !0 === g?.hasPricingOptions ? null : t
-          }, [b, t]);
-          return p || "linkout" === n ? (0, r.jsx)("div", {
+          }, [p, t]);
+          return b || "linkout" === n ? (0, r.jsx)("div", {
             ref: j,
             className: l,
             "data-size": i,
             "data-type": n,
             "data-product": m,
             role: "button",
-            "aria-label": A,
+            "aria-label": E,
             children: d
           }) : (0, r.jsx)("button", {
             ref: j,
             onClick: r => {
               r.preventDefault(), r.stopPropagation(), e ? y({
                 info: e
-              }) : z(), N({
+              }) : I(), N({
                 event: "card_click",
                 element_placement: o?.toLowerCase(),
                 position: a,
@@ -8690,7 +8690,7 @@ try {
             "data-type": n,
             "data-product": m,
             tabIndex: "linkout" !== n ? 0 : -1,
-            "aria-label": A,
+            "aria-label": E,
             type: "button",
             children: d
           })
@@ -8717,8 +8717,8 @@ try {
           id: m,
           position: _,
           sectionTitle: u,
-          expandedType: p,
-          context: b,
+          expandedType: b,
+          context: p,
           children: g,
           expandedCardContents: f,
           textOverlayProps: k = {
@@ -8740,22 +8740,22 @@ try {
           isProductCard: C = !1
         }) => {
           const T = (0, o.useTinaComponents)(),
-            I = (0, s.useMemo)(() => ({
+            A = (0, s.useMemo)(() => ({
               ...T,
-              HTMLElement: D.A,
-              ImageWithBadge: R.A,
+              HTMLElement: R.A,
+              ImageWithBadge: V.A,
               Carousel: F.A,
               GroupOfItems: $.default
             }), [T]),
-            z = (0, s.useMemo)(() => (0, r.jsx)(V, {
-              type: p,
-              components: I,
+            I = (0, s.useMemo)(() => (0, r.jsx)(D, {
+              type: b,
+              components: A,
               payload: e,
               prod: a,
               images: t,
               size: i,
               title: n,
-              context: b,
+              context: p,
               textOverlayProps: k,
               initial: c,
               animate: l,
@@ -8769,22 +8769,22 @@ try {
               platformOptions: x,
               isProductCard: C,
               children: f
-            }), [p, t, a, i, n, k, f, c, l, d, I, e, C]),
-            A = [W.card, S ? W.coverCardWrapper : ""].join(" ");
+            }), [b, t, a, i, n, k, f, c, l, d, A, e, C]),
+            E = [W.card, S ? W.coverCardWrapper : ""].join(" ");
           return (0, r.jsx)(U, {
             id: m,
             position: _,
             sectionTitle: u,
             title: n,
             size: i,
-            expandedType: p,
+            expandedType: b,
             images: t,
             deckProps: v,
             modalProps: {
-              content: z,
+              content: I,
               ...h
             },
-            className: A,
+            className: E,
             isProductCard: C,
             cardIds: y,
             theme: w,
@@ -9019,11 +9019,11 @@ try {
           to: m,
           image: _,
           deckProps: u,
-          tina: p = {},
-          position: b
+          tina: b = {},
+          position: p
         }) => {
           const g = (0, o.useTinaPayload)(),
-            f = p?.payload?.meta?.cdn ?? g?.meta?.prod ?? !1,
+            f = b?.payload?.meta?.cdn ?? g?.meta?.prod ?? !1,
             k = {
               image: {
                 ..._,
@@ -9040,7 +9040,7 @@ try {
             images: k,
             deckProps: u,
             prod: f,
-            position: b,
+            position: p,
             modalProps: {
               className: de.clrCardModal,
               contentClassName: de.clrCardModalContent
@@ -9074,15 +9074,15 @@ try {
           })
         };
       var ue = t(12334),
-        pe = t(79113);
-      const be = ({
+        be = t(79113);
+      const pe = ({
           images: e,
           title: a,
           expandedView: t,
           variants: i,
           transition: o
         }) => {
-          const n = (0, s.useMemo)(() => e && 0 !== e?.length ? e.map((e, a) => e?.image?.sources ? (0, s.createElement)(R.A, {
+          const n = (0, s.useMemo)(() => e && 0 !== e?.length ? e.map((e, a) => e?.image?.sources ? (0, s.createElement)(V.A, {
             ...e,
             key: a,
             style: {
@@ -9090,7 +9090,7 @@ try {
               "--object-position": e?.objectPosition ?? ""
             }
           }) : null) : null, [e]);
-          return !n?.length || n?.length < 1 ? null : 1 === n.length ? n : (0, r.jsx)(pe.A, {
+          return !n?.length || n?.length < 1 ? null : 1 === n.length ? n : (0, r.jsx)(be.A, {
             slideChildren: n,
             title: a,
             navigation: t,
@@ -9128,8 +9128,8 @@ try {
           tina: m = {},
           payload: _,
           position: u = 0,
-          sectionTitle: p = "",
-          cardIds: b
+          sectionTitle: b = "",
+          cardIds: p
         }) => {
           const g = (0, o.useTinaPayload)(),
             f = _ ?? g,
@@ -9152,7 +9152,7 @@ try {
           }, [d?.size, i]), (0, r.jsx)(K, {
             id: e,
             position: u,
-            sectionTitle: p,
+            sectionTitle: b,
             payload: {
               content: t,
               meta: {},
@@ -9170,7 +9170,7 @@ try {
               className: ge.customModal,
               contentClassName: ge.customModalContent
             },
-            expandedCardContents: (0, r.jsx)(be, {
+            expandedCardContents: (0, r.jsx)(pe, {
               images: v,
               title: a,
               navigation: !0,
@@ -9186,14 +9186,14 @@ try {
                 thumbs: fe.cardOpen
               }
             }),
-            cardIds: b,
+            cardIds: p,
             children: (0, r.jsx)("div", {
               className: ge.content,
-              children: (0, r.jsx)(E, {
+              children: (0, r.jsx)(z, {
                 title: a,
                 size: h,
                 textOverlayProps: c,
-                children: (0, r.jsx)(be, {
+                children: (0, r.jsx)(pe, {
                   images: v,
                   title: a,
                   navigation: !1,
@@ -9239,8 +9239,8 @@ try {
         element: d,
         upNext: _,
         mobileMode: u,
-        refDeck: p,
-        components: b,
+        refDeck: b,
+        components: p,
         tina: g,
         prevPage: f,
         nextPage: k,
@@ -9254,15 +9254,15 @@ try {
       }) => {
         const T = (0, v.useIntl)(),
           {
-            track: I
+            track: A
           } = (0, O.useGtmTrack)(),
-          z = (0, s.createRef)(),
-          A = (0, s.createRef)(),
+          I = (0, s.createRef)(),
           E = (0, s.createRef)(),
+          z = (0, s.createRef)(),
           P = (0, s.createRef)(),
           [L, M] = (0, s.useState)(!1),
-          [V, D] = (0, s.useState)(0),
-          [R, F] = (0, s.useState)(0),
+          [D, R] = (0, s.useState)(0),
+          [V, F] = (0, s.useState)(0),
           [$, G] = (0, s.useState)(0),
           [B, H] = (0, s.useState)(0),
           [q, U] = (0, s.useState)(0),
@@ -9276,29 +9276,29 @@ try {
           [ce, le] = (0, s.useState)(0),
           [de, me] = (0, s.useState)(0),
           [_e, ue] = (0, s.useState)(!1),
-          [pe, be] = (0, s.useState)(""),
+          [be, pe] = (0, s.useState)(""),
           [ge, fe] = (0, s.useState)(null),
           [ke, ve] = (0, s.useState)(!1),
           [he, we] = (0, s.useState)(null),
           [Se, Ce] = (0, s.useState)(!1),
-          [Te, Ie] = (0, s.useState)(!1),
-          ze = (0, o.useTinaPayload)(),
-          Ae = g?.payload?.meta?.cdn ?? !1 ?? ze?.meta?.prod ?? !1,
-          Ee = (0, o.useTranslations)({
+          [Te, Ae] = (0, s.useState)(!1),
+          Ie = (0, o.useTinaPayload)(),
+          Ee = g?.payload?.meta?.cdn ?? !1 ?? Ie?.meta?.prod ?? !1,
+          ze = (0, o.useTranslations)({
             payload: g?.payload,
             variables: g?.variables
           }),
-          Pe = Ee?.meta ?? {},
-          Le = Ne(Ee?.content?.[0], Ae),
+          Pe = ze?.meta ?? {},
+          Le = Ne(ze?.content?.[0], Ee),
           Me = (0, s.useMemo)(() => Le?.images?.[0]?.image?.badge, [Le]),
-          Ve = (0, s.useMemo)(() => Le.title ?? t ?? Pe?.title, [t, Pe?.title, Le.title]),
-          De = (0, ae.S1)({
+          De = (0, s.useMemo)(() => Le.title ?? t ?? Pe?.title, [t, Pe?.title, Le.title]),
+          Re = (0, ae.S1)({
             alt: Le?.images?.[0]?.image?.alt ?? "",
             ariaLabel: Le?.images?.[0]?.image?.alt ?? "",
             sources: Le?.images?.[0]?.image?.sources ?? [],
-            prod: Ae
+            prod: Ee
           }),
-          Re = De?.src?.mobile ?? De?.src?.desktop ?? !1,
+          Ve = Re?.src?.mobile ?? Re?.src?.desktop ?? !1,
           Fe = (0, s.useMemo)(() => Pe?.foreignId, [Pe]),
           $e = (0, s.useMemo)(() => Pe?.foreignTitle, [Pe]),
           [Ge, Oe] = (0, s.useState)(0),
@@ -9323,7 +9323,7 @@ try {
             const a = je(e),
               t = a.x > Ge ? 1 : -1,
               r = Math.abs(Ge - a.x);
-            c && !u && r > Qe ? (sa(!0), be(t > 0 ? "prev" : "next"), la()) : (Xe(!0), Ze(r * t), S(r * t))
+            c && !u && r > Qe ? (sa(!0), pe(t > 0 ? "prev" : "next"), la()) : (Xe(!0), Ze(r * t), S(r * t))
           },
           ca = e => {
             if (!0 === W || !c && !u || ke) return;
@@ -9331,16 +9331,16 @@ try {
               t = a.x > Ge ? 1 : -1,
               r = Math.abs(Ge - a.x),
               s = Math.abs(Be - a.y);
-            c && !u ? (la(), be("")) : r > Qe && s < 25 ? (sa(!0), be(t > 0 ? "prev" : "next"), la()) : la()
+            c && !u ? (la(), pe("")) : r > Qe && s < 25 ? (sa(!0), pe(t > 0 ? "prev" : "next"), la()) : la()
           },
           la = () => {
             K(!0), Oe(0), He(0), Xe(!1), Ze(0), S(0)
           },
           da = e => {
             e ? (c || M(!0), c || u || (clearTimeout(se), ie(setTimeout(() => {
-              I({
+              A({
                 event: "card_title_hover",
-                card_name: Ve,
+                card_name: De,
                 card_id: n,
                 position: n,
                 view_name: `${Fe}/${$e}`,
@@ -9351,30 +9351,30 @@ try {
           };
         return (0, s.useEffect)(() => {
           let e = Y;
-          L ? e = 0 : c && !u && (e = Y), D(e)
-        }, [L, u, c, R, B, J, Q, $, Y]), (0, s.useEffect)(() => {
+          L ? e = 0 : c && !u && (e = Y), R(e)
+        }, [L, u, c, V, B, J, Q, $, Y]), (0, s.useEffect)(() => {
           M(!(!c || !u))
         }, [c, u]), (0, s.useEffect)(() => {
-          c && e && I({
+          c && e && A({
             event: "virtualPageview",
             display_type: u ? "mobile" : "desktop",
-            view_name: `${Fe}/${Ve}`,
+            view_name: `${Fe}/${De}`,
             source_content_id: Fe,
             source_content_name: $e
           })
         }, [c, e]), (0, s.useEffect)(() => {
           const e = (0, i.debounce)((e, a) => {
             let t = 18;
-            if (e?.documentElement && (t = ye(e?.documentElement, "--root-font-size")), ce !== a.innerHeight && le(a.innerHeight), p?.current) {
-              ee(ye(p.current, "--eventDeck-marginSm") * t);
-              const e = t * ye(p?.current, "--eventDeck-modalGutters"),
+            if (e?.documentElement && (t = ye(e?.documentElement, "--root-font-size")), ce !== a.innerHeight && le(a.innerHeight), b?.current) {
+              ee(ye(b.current, "--eventDeck-marginSm") * t);
+              const e = t * ye(b?.current, "--eventDeck-modalGutters"),
                 r = a?.innerWidth,
                 s = r - 2 * e;
-              F(s), E.current && u && G(s), H(ye(p.current, "--eventDeck-itemSize") * t), me(ye(p.current, "--eventDeck-phaseOneTransitionDuration"));
-              const i = ye(p?.current, "--eventDeck-itemImageTitleMargins") * t,
-                o = A?.current?.clientHeight,
+              F(s), z.current && u && G(s), H(ye(b.current, "--eventDeck-itemSize") * t), me(ye(b.current, "--eventDeck-phaseOneTransitionDuration"));
+              const i = ye(b?.current, "--eventDeck-itemImageTitleMargins") * t,
+                o = E?.current?.clientHeight,
                 n = o + i;
-              Number.isNaN(n) || X(n), ne(ye(p?.current, "--eventDeck-headerHeight") * t)
+              Number.isNaN(n) || X(n), ne(ye(b?.current, "--eventDeck-headerHeight") * t)
             }
             let r = Math.min(700, a.innerWidth);
             u || (r = 900), re(`${r}`)
@@ -9386,23 +9386,23 @@ try {
               e(document, window)
             })
           }
-        }, [p, u]), (0, s.useEffect)(() => {
-          if (z.current) {
-            const e = z.current.clientHeight;
+        }, [b, u]), (0, s.useEffect)(() => {
+          if (I.current) {
+            const e = I.current.clientHeight;
             Number.isNaN(e) || Z(e)
           }
-        }, [z]), (0, s.useEffect)(() => {
-          if (c && u && E.current && (E.current.style.transform = "scale(1) translate3d(0, 0, 0)"), !c && u && E.current) {
-            const e = 228 / R;
-            E.current.style.transform = `scale(${e}) translate3d(0, 0, 0)`
-          }!u && E.current && (E.current.style.transform = null)
-        }, [c, u, R, $]), (0, s.useEffect)(() => {
-          const e = .5 * R,
+        }, [I]), (0, s.useEffect)(() => {
+          if (c && u && z.current && (z.current.style.transform = "scale(1) translate3d(0, 0, 0)"), !c && u && z.current) {
+            const e = 228 / V;
+            z.current.style.transform = `scale(${e}) translate3d(0, 0, 0)`
+          }!u && z.current && (z.current.style.transform = null)
+        }, [c, u, V, $]), (0, s.useEffect)(() => {
+          const e = .5 * V,
             a = ce - oe - 3 * Q;
-          U(R - (e < a ? e : a))
-        }, [R, Q, ce]), (0, s.useEffect)(() => {
-          "next" === pe ? (k(null, !0), be("")) : "prev" === pe && (f(null, !0), be(""))
-        }, [pe]), (0, s.useEffect)(() => {
+          U(V - (e < a ? e : a))
+        }, [V, Q, ce]), (0, s.useEffect)(() => {
+          "next" === be ? (k(null, !0), pe("")) : "prev" === be && (f(null, !0), pe(""))
+        }, [be]), (0, s.useEffect)(() => {
           Ue(0), Ke(0)
         }, [u]), (0, s.useEffect)(() => {
           u ? ea(c ? 35 : 20) : c && ea(50)
@@ -9435,7 +9435,7 @@ try {
         }, [c]), (0, s.useEffect)(() => (document.body.addEventListener("mouseleave", la), () => {
           document.body.removeEventListener("mouseleave", la)
         }), []), (0, s.useEffect)(() => {
-          P.current ? Ce(xe(P.current)) : Ce(!1), void 0 !== d && d.current ? Ie(xe(d.current)) : Ie(!1)
+          P.current ? Ce(xe(P.current)) : Ce(!1), void 0 !== d && d.current ? Ae(xe(d.current)) : Ae(!1)
         }, [d, P, e, c, _e]), Le ? (0, r.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlec02ee363d47108460ab7916fc955cd9b",
           ref: d,
@@ -9470,21 +9470,21 @@ try {
           onKeyDown: e => {
             "Tab" === e.key && e.shiftKey && c && (e.preventDefault(), C("backwards")), "Space" === e.code && e.preventDefault()
           },
-          "aria-label": c ? T.formatMessage(h.events_deck_modal_group_label) : Ve,
+          "aria-label": c ? T.formatMessage(h.events_deck_modal_group_label) : De,
           role: c ? "dialog" : "button",
           tabIndex: c ? -1 : 0,
           children: [(0, r.jsxs)("div", {
             className: "rockstargames-modules-core-newswire-articledee75b8e3614051c8f0fc97e373e78e5",
             "data-full-header": L,
             style: {
-              height: c && u ? `${R}px` : null,
-              width: c && u ? `${R}px` : null
+              height: c && u ? `${V}px` : null,
+              width: c && u ? `${V}px` : null
             },
             role: "figure",
-            children: [Re && (0, r.jsx)("img", {
-              ref: E,
-              src: `${De?.src?.mobile??De?.src?.desktop}?im=Resize,width=${te}`,
-              alt: De?.alt ?? "",
+            children: [Ve && (0, r.jsx)("img", {
+              ref: z,
+              src: `${Re?.src?.mobile??Re?.src?.desktop}?im=Resize,width=${te}`,
+              alt: Re?.alt ?? "",
               style: {
                 width: 0 !== $ && u ? `${$}px` : null,
                 height: 0 !== $ && u ? `${$}px` : null
@@ -9493,20 +9493,20 @@ try {
               className: "rockstargames-modules-core-newswire-articledc279f97c134d6e7d30602288b8b10ae",
               "aria-hidden": "true",
               style: {
-                transform: !u || u && c ? `translate3d(0, ${V}px, 0)` : null
+                transform: !u || u && c ? `translate3d(0, ${D}px, 0)` : null
               },
               children: [Me && (0, r.jsx)("div", {
                 className: "rockstargames-modules-core-newswire-articlecfe252d5613a21c1d308c98566cabd21",
-                ref: z,
+                ref: I,
                 children: (0, r.jsx)(m.A, {
                   text: Me
                 })
               }), (0, r.jsx)("span", {
                 className: "rockstargames-modules-core-newswire-articleb311a78aea53383ab6bd5cbccb52ceeb",
                 tabIndex: -1,
-                ref: A,
+                ref: E,
                 "aria-hidden": "true",
-                children: Ve
+                children: De
               })]
             })]
           }), (0, r.jsxs)("div", {
@@ -9522,19 +9522,19 @@ try {
               we(e)
             },
             style: {
-              top: c && u ? `${R}px` : null,
+              top: c && u ? `${V}px` : null,
               width: c && !u && e ? `${q}px` : null,
               touchAction: Se || u ? "unset" : "none"
             },
-            children: [Ve && (0, r.jsx)("span", {
+            children: [De && (0, r.jsx)("span", {
               className: "rockstargames-modules-core-newswire-articleda9ef865674c108ffd53cfab2ed2971a",
               role: "heading",
-              children: Ve
+              children: De
             }), (0, r.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articleabad8b0c98a7216d91b672492397e6a6",
               role: "text",
               children: (0, r.jsx)(o.TinaParser, {
-                components: b,
+                components: p,
                 tina: {
                   meta: Pe,
                   payload: {
@@ -9555,7 +9555,7 @@ try {
       });
       var Ce = t(2183);
       const Te = "rockstargames-modules-core-newswire-articleeff7810cc71a3b63bfc3e58cbe4a0279",
-        Ie = ({
+        Ae = ({
           prevPage: e,
           prevBtnDisabled: a,
           nextPage: t,
@@ -9569,23 +9569,23 @@ try {
           focusTrapDirection: _,
           setTriggerFocusCard: u
         }) => {
-          const p = (0, v.useIntl)(),
-            b = (0, s.createRef)(),
+          const b = (0, v.useIntl)(),
+            p = (0, s.createRef)(),
             g = (0, s.createRef)(),
             f = (0, s.createRef)();
           return (0, s.useEffect)(() => {
-            m && ("backwards" === _ ? f?.current?.focus() : a ? g?.current?.focus() : b?.current?.focus())
+            m && ("backwards" === _ ? f?.current?.focus() : a ? g?.current?.focus() : p?.current?.focus())
           }, [m, a]), (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
               className: "rockstargames-modules-core-newswire-articlea13ee8af1dd8f09d28c65e56abd782ef",
               "aria-hidden": d || "false",
               children: [(0, r.jsx)("button", {
                 className: Te,
-                ref: b,
+                ref: p,
                 type: "button",
                 onClick: e,
                 disabled: a,
-                "aria-label": l ? p.formatMessage(h.events_deck_modal_previous_aria_label) : p.formatMessage(h.events_deck_previous_aria_label),
+                "aria-label": l ? b.formatMessage(h.events_deck_modal_previous_aria_label) : b.formatMessage(h.events_deck_previous_aria_label),
                 onKeyDown: e => {
                   "Tab" === e.key && e.shiftKey && l && (e.preventDefault(), u(!0))
                 }
@@ -9594,7 +9594,7 @@ try {
                 "aria-hidden": !l,
                 children: [(0, r.jsx)(Ce.A, {
                   "aria-live": "polite",
-                  children: p.formatMessage(h.events_deck_paging_label, {
+                  children: b.formatMessage(h.events_deck_paging_label, {
                     currentPage: o + 1,
                     totalPages: n.length
                   })
@@ -9614,7 +9614,7 @@ try {
                   "Tab" === e.key && e.shiftKey && a && l && (e.preventDefault(), u(!0))
                 },
                 disabled: i,
-                "aria-label": l ? p.formatMessage(h.events_deck_modal_next_aria_label) : p.formatMessage(h.events_deck_next_aria_label)
+                "aria-label": l ? b.formatMessage(h.events_deck_modal_next_aria_label) : b.formatMessage(h.events_deck_next_aria_label)
               })]
             }), (0, r.jsx)("button", {
               className: "rockstargames-modules-core-newswire-articlefb0b7933375b44858b7e92cdea86ee81",
@@ -9624,7 +9624,7 @@ try {
               onKeyDown: e => {
                 "Tab" === e.key && !e.shiftKey && l && (e.preventDefault(), u(!0))
               },
-              "aria-label": p.formatMessage(h.events_deck_modal_close_label),
+              "aria-label": b.formatMessage(h.events_deck_modal_close_label),
               "aria-hidden": !l,
               tabIndex: l ? 0 : -1
             })]
@@ -9650,7 +9650,7 @@ try {
           return (0, he.X)({
             ids: t
           })
-        })(), [_, u] = (0, s.useState)([]), [p, b] = (0, s.useState)(null), [g, f] = (0, s.useState)(0), [k, v] = (0, s.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [h, w] = (0, s.useState)(!1), y = (0, s.createRef)(), [j, x] = (0, s.useState)(null), N = (0, s.createRef)(), S = (0, s.createRef)(), [C, T] = (0, s.useState)([]), [I, z] = (0, s.useState)(!0), [A, E] = (0, s.useState)(!1), [P, L] = (0, s.useState)(!1), [M, V] = (0, s.useState)([]), [G, B] = (0, s.useState)(404), [H, q] = (0, s.useState)(808), [U, W] = (0, s.useState)(672), [K, Y] = (0, s.useState)(336), [X, J] = (0, s.useState)(0), [Z, Q] = (0, s.useState)(0), [ee, ae] = (0, s.useState)(0), [te, re] = (0, s.useState)(0), [se, ie] = (0, s.useState)(0), [oe, ne] = (0, s.useState)(!1), ce = !!(0, l.usePrevious)(oe), [le, de] = (0, s.useState)(window.innerWidth), [me, _e] = (0, s.useState)(0), [pe, be] = (0, s.useState)(0), [ge, fe] = (0, s.useState)(0), [ke, xe] = (0, s.useState)(0), [Ne, Ce] = (0, s.useState)(0), [Te, ze] = (0, s.useState)(0), [Ae, Ee] = (0, s.useState)(0), [Pe, Le] = (0, s.useState)(0), [Me, Ve] = (0, s.useState)(-1e3), [De, Re] = (0, s.useState)(0), [Fe, $e] = (0, s.useState)(50), [Ge, Oe] = (0, s.useState)(0), [Be, He] = (0, s.useState)(!1), [qe, Ue] = (0, s.useState)(768), [We, Ke] = (0, s.useState)(!1), [Ye, Xe] = (0, s.useState)(!1), [Je, Ze] = (0, s.useState)(!1), [Qe, ea] = (0, s.useState)(!1), [aa, ta] = (0, s.useState)(!1), [ra, sa] = (0, s.useState)(1e3), [ia, oa] = (0, s.useState)(1.2), [na, ca] = (0, s.useState)(0), [la, da] = (0, s.useState)(!1), [ma, _a] = (0, s.useState)(!1), [ua, pa] = (0, s.useState)(!0), [ba, ga] = (0, s.useState)(!1), [fa, ka] = (0, s.useState)(!1), [va, ha] = (0, s.useState)(null), [wa, ya] = (0, s.useState)(100), [ja, xa] = (0, s.useState)(!1), [Na, Sa] = (0, s.useState)({}), [Ca, Ta] = (0, s.useState)(""), [Ia, za] = (0, s.useState)(0), [Aa, Ea] = (0, s.useState)(!1), [Pa, La] = (0, s.useState)(!1), [Ma, Va] = (0, s.useState)(0), [Da, Ra] = (0, s.useState)(0), [Fa, $a] = (0, s.useState)(100), [Ga, Oa] = (0, s.useState)(!1), [Ba, Ha] = (0, s.useState)(!1), [qa, Ua] = (0, s.useState)(!1), [Wa, Ka] = (0, s.useState)(!1), [Ya, Xa] = (0, s.useState)("forward"), Ja = () => le * me + Fe, Za = () => !1 === Be ? ia : 1, Qa = e => e === Ae - 1 || e === Ae + 1, et = () => -1 * Te - ke, at = (e, a = !0) => {
+        })(), [_, u] = (0, s.useState)([]), [b, p] = (0, s.useState)(null), [g, f] = (0, s.useState)(0), [k, v] = (0, s.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [h, w] = (0, s.useState)(!1), y = (0, s.createRef)(), [j, x] = (0, s.useState)(null), N = (0, s.createRef)(), S = (0, s.createRef)(), [C, T] = (0, s.useState)([]), [A, I] = (0, s.useState)(!0), [E, z] = (0, s.useState)(!1), [P, L] = (0, s.useState)(!1), [M, D] = (0, s.useState)([]), [G, B] = (0, s.useState)(404), [H, q] = (0, s.useState)(808), [U, W] = (0, s.useState)(672), [K, Y] = (0, s.useState)(336), [X, J] = (0, s.useState)(0), [Z, Q] = (0, s.useState)(0), [ee, ae] = (0, s.useState)(0), [te, re] = (0, s.useState)(0), [se, ie] = (0, s.useState)(0), [oe, ne] = (0, s.useState)(!1), ce = !!(0, l.usePrevious)(oe), [le, de] = (0, s.useState)(window.innerWidth), [me, _e] = (0, s.useState)(0), [be, pe] = (0, s.useState)(0), [ge, fe] = (0, s.useState)(0), [ke, xe] = (0, s.useState)(0), [Ne, Ce] = (0, s.useState)(0), [Te, Ie] = (0, s.useState)(0), [Ee, ze] = (0, s.useState)(0), [Pe, Le] = (0, s.useState)(0), [Me, De] = (0, s.useState)(-1e3), [Re, Ve] = (0, s.useState)(0), [Fe, $e] = (0, s.useState)(50), [Ge, Oe] = (0, s.useState)(0), [Be, He] = (0, s.useState)(!1), [qe, Ue] = (0, s.useState)(768), [We, Ke] = (0, s.useState)(!1), [Ye, Xe] = (0, s.useState)(!1), [Je, Ze] = (0, s.useState)(!1), [Qe, ea] = (0, s.useState)(!1), [aa, ta] = (0, s.useState)(!1), [ra, sa] = (0, s.useState)(1e3), [ia, oa] = (0, s.useState)(1.2), [na, ca] = (0, s.useState)(0), [la, da] = (0, s.useState)(!1), [ma, _a] = (0, s.useState)(!1), [ua, ba] = (0, s.useState)(!0), [pa, ga] = (0, s.useState)(!1), [fa, ka] = (0, s.useState)(!1), [va, ha] = (0, s.useState)(null), [wa, ya] = (0, s.useState)(100), [ja, xa] = (0, s.useState)(!1), [Na, Sa] = (0, s.useState)({}), [Ca, Ta] = (0, s.useState)(""), [Aa, Ia] = (0, s.useState)(0), [Ea, za] = (0, s.useState)(!1), [Pa, La] = (0, s.useState)(!1), [Ma, Da] = (0, s.useState)(0), [Ra, Va] = (0, s.useState)(0), [Fa, $a] = (0, s.useState)(100), [Ga, Oa] = (0, s.useState)(!1), [Ba, Ha] = (0, s.useState)(!1), [qa, Ua] = (0, s.useState)(!1), [Wa, Ka] = (0, s.useState)(!1), [Ya, Xa] = (0, s.useState)("forward"), Ja = () => le * me + Fe, Za = () => !1 === Be ? ia : 1, Qa = e => e === Ee - 1 || e === Ee + 1, et = () => -1 * Te - ke, at = (e, a = !0) => {
           if (!0 === Be) return 0;
           const t = e.itemNumber % 2 == 0,
             r = G * ia;
@@ -9665,24 +9665,24 @@ try {
           !1 === t && (r = 0);
           const s = le * me,
             i = !1 === Be ? G * Za() : s;
-          return e.inModalMode && Be ? -1 === a ? Ja() * (Ae - e.itemNumber) * -1 - e.styles.left : Ja() * (e.itemNumber - Ae) - e.styles.left : -1 === a ? -1 * e.styles.left - i - Fe + r : s - e.styles.left + Fe + r
+          return e.inModalMode && Be ? -1 === a ? Ja() * (Ee - e.itemNumber) * -1 - e.styles.left : Ja() * (e.itemNumber - Ee) - e.styles.left : -1 === a ? -1 * e.styles.left - i - Fe + r : s - e.styles.left + Fe + r
         }, rt = (e, a, t) => {
-          -1 === a && (E(!1), z(!0)), E(!1 === t && e >= a || !0 === t && e + 1 === a), z(e <= 0)
+          -1 === a && (z(!1), I(!0)), z(!1 === t && e >= a || !0 === t && e + 1 === a), I(e <= 0)
         }, st = (e, a = !1) => {
-          if (fa || ba) return;
+          if (fa || pa) return;
           if (ka(!0), oe) return void((e = !1) => {
-            if (Ae + 1 >= _.length) return;
-            const a = C[Ae + 1]?.tina?.payload?.meta?.title ?? `card-${Ae+1}`;
+            if (Ee + 1 >= _.length) return;
+            const a = C[Ee + 1]?.tina?.payload?.meta?.title ?? `card-${Ee+1}`;
             n({
               event: e ? "modal_swipe" : "modal_next",
               card_name: a,
-              card_id: Ae + 1,
-              position: Ae + 1,
-              view_name: `${C[Ae+1].source_content_id}/${a}`,
-              source_content_id: C[Ae + 1].source_content_id,
-              source_content_name: C[Ae + 1].source_content_name
-            }), rt(Ae + 1, _.length, !0), Be ? Be && T(C.map(e => {
-              e.itemNumber === Ae - 1 ? e.upNext = !1 : e.itemNumber === Ae + 2 ? e.upNext = !0 : e.itemNumber === Ae + 1 ? e.active = !0 : e.itemNumber === Ae && (e.upNext = !0, e.active = !1);
+              card_id: Ee + 1,
+              position: Ee + 1,
+              view_name: `${C[Ee+1].source_content_id}/${a}`,
+              source_content_id: C[Ee + 1].source_content_id,
+              source_content_name: C[Ee + 1].source_content_name
+            }), rt(Ee + 1, _.length, !0), Be ? Be && T(C.map(e => {
+              e.itemNumber === Ee - 1 ? e.upNext = !1 : e.itemNumber === Ee + 2 ? e.upNext = !0 : e.itemNumber === Ee + 1 ? e.active = !0 : e.itemNumber === Ee && (e.upNext = !0, e.active = !1);
               const a = e.styles.transform.replace("translate3d(", "").split(",");
               let t = Number(a[0].replace("px", ""));
               t -= Ja();
@@ -9691,14 +9691,14 @@ try {
                 ...e.styles,
                 transform: r
               }, e
-            })) : T(C.map(e => (e.itemNumber === Ae - 1 ? e.upNext = !1 : e.itemNumber === Ae + 2 ? e.upNext = !0 : e.itemNumber === Ae + 1 ? (e.active = !0, e.styles = {
+            })) : T(C.map(e => (e.itemNumber === Ee - 1 ? e.upNext = !1 : e.itemNumber === Ee + 2 ? e.upNext = !0 : e.itemNumber === Ee + 1 ? (e.active = !0, e.styles = {
               left: 0,
               top: 0,
               transform: `translate3d(${et()}px, ${na}px, 0) scale(1)`
-            }) : e.itemNumber === Ae && (e.upNext = !0, e.active = !1, e.styles = {
+            }) : e.itemNumber === Ee && (e.upNext = !0, e.active = !1, e.styles = {
               ...e.styles,
               transform: `translate3d(${tt(e,-1)}px, ${at(e)}px, 0) scale(${Za()})`
-            }), e))), Ee(Ae + 1)
+            }), e))), ze(Ee + 1)
           })(a);
           const r = Ne + 1;
           if (!(r > se))
@@ -9707,38 +9707,38 @@ try {
                 element_placement: t?.toLowerCase() ?? ""
               }), rt(r, se, !1), Be) {
               let e = r * K * -1;
-              e < Me && (e = Me, E(!0), z(!1), Ce(se)), Ce(r), T(C.map(a => (a.styles = {
+              e < Me && (e = Me, z(!0), I(!1), Ce(se)), Ce(r), T(C.map(a => (a.styles = {
                 ...a.styles,
                 transform: `translate3d(${e}px, 0, 0)`
               }, a)))
             } else {
               let e = Te - Z;
-              Ce(r), e < Me && (e = Me, E(!0), z(!1), Ce(se)), ze(e)
+              Ce(r), e < Me && (e = Me, z(!0), I(!1), Ce(se)), Ie(e)
             }
         }, it = (e, a = !1) => {
-          if (fa || ba) return;
+          if (fa || pa) return;
           if (ka(!0), !0 === oe) return void((e = !1) => {
             if (fa) return;
-            if (Ae - 1 < 0) return;
-            const a = C[Ae - 1]?.tina?.payload?.meta?.title ?? "card-" + (Ae - 1);
+            if (Ee - 1 < 0) return;
+            const a = C[Ee - 1]?.tina?.payload?.meta?.title ?? "card-" + (Ee - 1);
             n({
               event: e ? "modal_swipe" : "modal_previous",
               element_placement: t?.toLowerCase(),
               card_name: a,
-              card_id: Ae - 1,
-              position: Ae - 1,
-              view_name: `${C[Ae-1].source_content_id}/${a}`,
-              source_content_id: C[Ae - 1].source_content_id,
-              source_content_name: C[Ae - 1].source_content_name
-            }), rt(Ae - 1, _.length, !0), Be || T(C.map(e => (e.itemNumber === Ae + 1 ? e.upNext = !1 : e.itemNumber === Ae - 2 ? e.upNext = !0 : e.itemNumber === Ae ? (e.upNext = !0, e.active = !1, e.styles = {
+              card_id: Ee - 1,
+              position: Ee - 1,
+              view_name: `${C[Ee-1].source_content_id}/${a}`,
+              source_content_id: C[Ee - 1].source_content_id,
+              source_content_name: C[Ee - 1].source_content_name
+            }), rt(Ee - 1, _.length, !0), Be || T(C.map(e => (e.itemNumber === Ee + 1 ? e.upNext = !1 : e.itemNumber === Ee - 2 ? e.upNext = !0 : e.itemNumber === Ee ? (e.upNext = !0, e.active = !1, e.styles = {
               ...e.styles,
               transform: `translate3d(${tt(e,1)}px, ${at(e)}px, 0) scale(${Za()})`
-            }) : e.itemNumber === Ae - 1 && (e.active = !0, e.styles = {
+            }) : e.itemNumber === Ee - 1 && (e.active = !0, e.styles = {
               left: 0,
               top: 0,
               transform: `translate3d(${et()}px, ${na}px, 0) scale(1)`
             }), e))), Be && T(C.map(e => {
-              e.itemNumber === Ae + 1 ? e.upNext = !1 : e.itemNumber === Ae - 2 ? e.upNext = !0 : e.itemNumber === Ae ? (e.upNext = !0, e.active = !1) : e.itemNumber === Ae - 1 && (e.active = !0);
+              e.itemNumber === Ee + 1 ? e.upNext = !1 : e.itemNumber === Ee - 2 ? e.upNext = !0 : e.itemNumber === Ee ? (e.upNext = !0, e.active = !1) : e.itemNumber === Ee - 1 && (e.active = !0);
               const a = e.styles.transform.replace("translate3d(", "").split(",");
               let t = Number(a[0].replace("px", ""));
               t += Ja();
@@ -9747,7 +9747,7 @@ try {
                 ...e.styles,
                 transform: r
               }, e
-            })), Ee(Ae - 1)
+            })), ze(Ee - 1)
           })(a);
           const r = Ne - 1;
           if (!(r < 0))
@@ -9756,32 +9756,32 @@ try {
                 element_placement: t?.toLowerCase()
               }), rt(r, se, !1), Be) {
               let e = r * K * -1;
-              e > 0 && (e = 0, z(!0), E(!1), Ce(0)), Ce(r), T(C.map(a => (a.styles = {
+              e > 0 && (e = 0, I(!0), z(!1), Ce(0)), Ce(r), T(C.map(a => (a.styles = {
                 ...a.styles,
                 transform: `translate3d(${e}px, 0, 0)`
               }, a)))
             } else {
               let e = Te + Z;
-              Ce(r), (e > 0 || 0 === e || -1 * e < H) && (e = 0, z(!0), E(!1), Ce(0)), ze(e)
+              Ce(r), (e > 0 || 0 === e || -1 * e < H) && (e = 0, I(!0), z(!1), Ce(0)), Ie(e)
             }
         }, ot = e => {
-          if (Aa || oe || Be) return;
+          if (Ea || oe || Be) return;
           const a = je(e);
-          za(a.x)
+          Ia(a.x)
         }, nt = e => {
-          if (Aa || 0 === Ia || oe || Be) return;
+          if (Ea || 0 === Aa || oe || Be) return;
           const a = je(e),
-            t = a.x > Ia ? 1 : -1;
-          let r = Math.abs(Ia - a.x) * t;
-          (0 === Ne && 1 === t || Ne === se && -1 === t) && (r *= .35), La(!0), Va(r)
+            t = a.x > Aa ? 1 : -1;
+          let r = Math.abs(Aa - a.x) * t;
+          (0 === Ne && 1 === t || Ne === se && -1 === t) && (r *= .35), La(!0), Da(r)
         }, ct = e => {
-          if (Aa || oe || Be) return;
+          if (Ea || oe || Be) return;
           const a = je(e),
-            t = a.x > Ia ? 1 : -1,
-            r = Math.abs(Ia - a.x);
+            t = a.x > Aa ? 1 : -1,
+            r = Math.abs(Aa - a.x);
           Ta(r > Fa ? t > 0 ? "prev" : "next" : ""), lt()
         }, lt = () => {
-          Ea(!0), za(0), Va(0), La(!1)
+          za(!0), Ia(0), Da(0), La(!1)
         }, dt = e => {
           Pa && (ct(e), La(!1))
         }, mt = (e, a, t = "") => e.map((e, r) => {
@@ -9797,7 +9797,7 @@ try {
             inModalMode: !1,
             upNext: !0,
             active: !1,
-            openModalMode: pt,
+            openModalMode: bt,
             element: o,
             transitionStyle: a,
             styles: {
@@ -9806,7 +9806,7 @@ try {
               height: null,
               top: null
             },
-            trapFocus: bt
+            trapFocus: pt
           }
         }), _t = e => {
           if (Be) return;
@@ -9814,24 +9814,24 @@ try {
           const a = Math.ceil((C[e].columnNumber + 1) / X) - 1;
           Ce(a);
           let t = a * Z * -1;
-          Ge < pe ? (t = 0, z(!0), E(!0), Ce(0)) : t < Me ? (t = Me, z(!1), E(!0), Ce(se)) : rt(a, se, !1), ze(t), Ee(0)
+          Ge < be ? (t = 0, I(!0), z(!0), Ce(0)) : t < Me ? (t = Me, I(!1), z(!0), Ce(se)) : rt(a, se, !1), Ie(t), ze(0)
         }, ut = () => {
-          const e = C[Ae]?.tina?.payload?.meta?.title ?? `card-${Ae}`;
+          const e = C[Ee]?.tina?.payload?.meta?.title ?? `card-${Ee}`;
           n({
             event: "modal_close",
             element_placement: t?.toLowerCase(),
             card_name: e,
-            card_id: Ae,
-            position: Ae,
-            view_name: `${C[Ae].source_content_id}/${e}`,
-            source_content_id: C[Ae].source_content_id,
-            source_content_name: C[Ae].source_content_name
+            card_id: Ee,
+            position: Ee,
+            view_name: `${C[Ee].source_content_id}/${e}`,
+            source_content_id: C[Ee].source_content_id,
+            source_content_name: C[Ee].source_content_name
           });
-          const a = C[Ae]?.element?.current;
+          const a = C[Ee]?.element?.current;
           if (Be) {
-            let e = Ae * K * -1;
-            e < Me && (e = Me, E(!0), z(!1), Ce(se)), Ce(Ae), rt(Ae, se, !1), T(mt(_, "cardClose", `translate3d(${e}px, 0, 0)`))
-          } else _t(Ae);
+            let e = Ee * K * -1;
+            e < Me && (e = Me, z(!0), I(!1), Ce(se)), Ce(Ee), rt(Ee, se, !1), T(mt(_, "cardClose", `translate3d(${e}px, 0, 0)`))
+          } else _t(Ee);
           N.current.style.transform = "translate(0px, 0px)", N.current.style.transition = "all var(--eventDeck-transitionCardClose)", da(!1), ea(!1), ne(!1), Xe(!1), Ke(!1), ta(!1), setTimeout(() => {
             Ze(!0), a.focus()
           }, ra)
@@ -9839,29 +9839,29 @@ try {
         (0, s.useEffect)(() => {
           !1 !== Je && (Ze(!1), da(!1), j.style.zIndex = null, T(C.map(e => (e.transitionStyle = "", e))))
         }, [Je]);
-        const pt = e => {
+        const bt = e => {
             setTimeout(() => {
               Sa(e), xa(!0)
             }, 1)
           },
-          bt = e => {
+          pt = e => {
             Ka(!0), Xa(e), setTimeout(() => {
               Ka(!1)
             }, 1e3)
           };
         (0, s.useEffect)(() => {
-          qa && (Ua(!1), C[Ae]?.element?.current?.focus())
+          qa && (Ua(!1), C[Ee]?.element?.current?.focus())
         }, [qa]), (0, s.useEffect)(() => {
           if (!ja) return;
           if (xa(!1), fa) return;
-          Ee(Number(Na?.target?.dataset?.itemPosition)), Xe(!0), ga(!0), ua && pa(!1);
+          ze(Number(Na?.target?.dataset?.itemPosition)), Xe(!0), ga(!0), ua && ba(!1);
           const e = C[Na?.target?.dataset?.itemPosition].source_content_id,
             a = C[Na?.target?.dataset?.itemPosition].source_content_name,
             r = C[Na?.target?.dataset?.itemPosition]?.tina?.payload?.meta?.title;
           n({
             event: "card_click",
             element_placement: t?.toLowerCase(),
-            card_name: r ?? `card-${Ae}`,
+            card_name: r ?? `card-${Ee}`,
             card_id: Na?.target?.dataset?.itemPosition,
             position: Na?.target?.dataset?.itemPosition,
             view_name: `${e}/${r}`,
@@ -9876,7 +9876,7 @@ try {
             return ca(-1 * (e - g)), -1 * (e - 140)
           })();
           Be && T(C.map(e => {
-            const a = e.itemNumber > Ae + 3 || e.itemNumber < Ae - 3;
+            const a = e.itemNumber > Ee + 3 || e.itemNumber < Ee - 3;
             return e.styles = {
               ...e.styles,
               display: a ? "none" : null,
@@ -9888,22 +9888,22 @@ try {
         }, [Ye]);
         const gt = () => {
           T(C.map((e, a) => {
-            e.active = a === Ae, e.inModalMode = !0, e.transitionStyle = "cardOpen", Be && (e.upNext = Qa(e.itemNumber));
+            e.active = a === Ee, e.inModalMode = !0, e.transitionStyle = "cardOpen", Be && (e.upNext = Qa(e.itemNumber));
             const t = !Be;
             let r = 0;
             if (Be) {
               const e = Pe + 5 * g;
               r = window.innerHeight - e
             }
-            return e.itemNumber < Ae ? e.styles = {
+            return e.itemNumber < Ee ? e.styles = {
               ...e.styles,
               height: Be ? `${r}px` : null,
               transform: `translate3d(${tt(e,-1,t)}px, ${na}px, 0) scale(${Za()})`
-            } : e.itemNumber > Ae ? e.styles = {
+            } : e.itemNumber > Ee ? e.styles = {
               ...e.styles,
               height: Be ? `${r}px` : null,
               transform: `translate3d(${tt(e,1,t)}px, ${na}px, 0) scale(1)`
-            } : e.itemNumber === Ae && (e.styles = Be ? {
+            } : e.itemNumber === Ee && (e.styles = Be ? {
               ...e.styles,
               height: `${r}px`,
               transform: `translate3d(${-1*e.styles.left}px, ${na}px, 0) scale(1)`
@@ -9915,19 +9915,19 @@ try {
           }))
         };
         (0, s.useEffect)(() => {
-          !1 !== We && !0 !== oe && (ne(!0), Ke(!1), rt(Ae, C.length, !0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*ke}px, ${na}px)`), gt(), Be ? (ze(0), ga(!1), _a(!0)) : ta(!0))
+          !1 !== We && !0 !== oe && (ne(!0), Ke(!1), rt(Ee, C.length, !0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*ke}px, ${na}px)`), gt(), Be ? (Ie(0), ga(!1), _a(!0)) : ta(!0))
         }, [We]), (0, s.useEffect)(() => {
           ma && (_a(!1), T(C.map(e => ("none" === e.styles.display && (e.styles.display = null, e.styles.transition = null), e))))
         }, [ma]);
         const ft = (e = !1) => {
           T(C.map(a => {
-            if (a.upNext = Qa(a.itemNumber), a.itemNumber !== Ae) {
+            if (a.upNext = Qa(a.itemNumber), a.itemNumber !== Ee) {
               let e = tt(a, 1);
-              a.itemNumber < Ae && (e = tt(a, -1)), a.styles = {
+              a.itemNumber < Ee && (e = tt(a, -1)), a.styles = {
                 ...a.styles,
                 transform: `translate3d(${e}px, ${at(a)}px, 0) scale(${Za()})`
               }
-            } else a.itemNumber === Ae && !Be && e && (a.styles = {
+            } else a.itemNumber === Ee && !Be && e && (a.styles = {
               left: 0,
               top: 0,
               transform: `translate3d(${et()}px, ${na}px, 0) scale(1)`
@@ -9962,7 +9962,7 @@ try {
             w(!1)
           }, 3e3)
         }, [h]), (0, s.useEffect)(() => {
-          w(!0), ze(0), Ce(0);
+          w(!0), Ie(0), Ce(0);
           let e = Math.ceil(Math.ceil(Ge / K) / X);
           Be && (e = C.length - 1), e < 0 && (e = 1), rt(0, e, !1), oe && ut()
         }, [Be]), (0, s.useEffect)(() => {
@@ -9980,7 +9980,7 @@ try {
           });
           e.length > 10 && (e.length = 10), u(e)
         }, [m]), (0, s.useEffect)(() => {
-          V(_.map(() => (0, s.createRef)()))
+          D(_.map(() => (0, s.createRef)()))
         }, [_]), (0, s.useEffect)(() => {
           const e = e => {
             const {
@@ -9991,7 +9991,7 @@ try {
           return document.addEventListener("keydown", e), () => {
             document.removeEventListener("keydown", e)
           }
-        }, [fa, ba, oe, N]), (0, s.useEffect)(() => {
+        }, [fa, pa, oe, N]), (0, s.useEffect)(() => {
           if (N.current) {
             let e = N?.current?.clientHeight;
             e += ye(N?.current, "margin-top"), e += ye(N?.current, "margin-bottom"), Le(e)
@@ -10016,7 +10016,7 @@ try {
             }
           })()
         }, [Be, oe, na]), (0, s.useEffect)(() => {
-          oe || (Ge < me * le && 0 === Ne ? (ze(0), E(!0), z(!0)) : Te < Me ? (E(!0), z(!1), Ce(se), ze(Me)) : Te < 0 && (E(!1), Ce(se - 1)), Ge > me * le && A && E(!1))
+          oe || (Ge < me * le && 0 === Ne ? (Ie(0), z(!0), I(!0)) : Te < Me ? (z(!0), I(!1), Ce(se), Ie(Me)) : Te < 0 && (z(!1), Ce(se - 1)), Ge > me * le && E && z(!1))
         }, [Me]), (0, s.useEffect)(() => {
           if (y.current) {
             x(y.current);
@@ -10025,7 +10025,7 @@ try {
               t = ye(y.current, "--eventDeck-collapsedMaxWidth");
             fe(t);
             let r = le - 2 * a;
-            r > t && (r = t), be(r), _e(r / le);
+            r > t && (r = t), pe(r), _e(r / le);
             const s = 2 * a + r;
             let i = 0;
             s < le && (i = .5 * (le - s)), xe(i);
@@ -10046,11 +10046,11 @@ try {
             const g = l + m;
             Y(g);
             let k = Math.ceil(.5 * (_.length - 1)) * g + u;
-            Be && (k = _.length * g), Oe(k), 0 !== Ge && Ve(-1 * Ge + r);
+            Be && (k = _.length * g), Oe(k), 0 !== Ge && De(-1 * Ge + r);
             let v = Math.ceil(Math.ceil(k / g) / X);
             (Be || oe) && (v = C.length - 1), ie(v);
             const h = ye(y.current, "--eventDeck-itemScaleUpAmount");
-            oa(h), sa(ye(y.current, "--eventDeck-cardCloseTransitionDuration")), f(ye(y.current, "--eventDeck-itemImageTitleMargins") * e), null !== p && e !== p && (b(e), oe && ft()), null === p && b(e)
+            oa(h), sa(ye(y.current, "--eventDeck-cardCloseTransitionDuration")), f(ye(y.current, "--eventDeck-itemImageTitleMargins") * e), null !== b && e !== b && (p(e), oe && ft()), null === b && p(e)
           }
         }, [y, _]), (0, s.useEffect)(() => {
           if (oe && !Be) {
@@ -10060,13 +10060,13 @@ try {
             a !== na && ca(a)
           }
         }, [k]), (0, s.useEffect)(() => {
-          L(!(!I || !A || oe))
-        }, [I, A]), (0, s.useEffect)(() => {
+          L(!(!A || !E || oe))
+        }, [A, E]), (0, s.useEffect)(() => {
           const e = (0, i.debounce)(e => {
             de(e), He(e < qe);
             const a = (1 - me) / 2;
-            Re(e * a);
-            const t = Math.floor(pe / K);
+            Ve(e * a);
+            const t = Math.floor(be / K);
             J(t);
             let r = t * K;
             r > ge && (r = ge), Q(r), re(e - e * a);
@@ -10088,12 +10088,12 @@ try {
           }
         }, [K, me, oe, Be]), (0, s.useEffect)(() => {
           !1 !== oe && !0 !== h && (Be ? gt() : ft(!0))
-        }, [te, Z, Fe, G, le, De, ee, na]), (0, s.useEffect)(() => {
+        }, [te, Z, Fe, G, le, Re, ee, na]), (0, s.useEffect)(() => {
           const e = () => {
             if (y.current && ua) {
               const e = y.current.getBoundingClientRect(),
                 a = .2 * window.innerHeight;
-              window.innerHeight - e.top >= a && pa(!1)
+              window.innerHeight - e.top >= a && ba(!1)
             }
           };
           return e(), window.addEventListener("scroll", e), () => window.removeEventListener("scroll", e)
@@ -10120,10 +10120,10 @@ try {
         }, [y, Pa]), (0, s.useEffect)(() => (document.body.addEventListener("mouseleave", dt), () => {
           document.body.removeEventListener("mouseleave", dt)
         }), [Pa]), (0, s.useEffect)(() => {
-          Aa && setTimeout(() => {
-            Ea(!1), za(0)
+          Ea && setTimeout(() => {
+            za(!1), Ia(0)
           }, wa)
-        }, [Aa]), (0, s.useEffect)(() => {
+        }, [Ea]), (0, s.useEffect)(() => {
           $a(Be ? 20 : 100)
         }, [Be]), (0, s.useEffect)(() => {
           ya(oe ? 500 : 100)
@@ -10135,8 +10135,8 @@ try {
           wt = (0, s.useMemo)(() => ({
             ...ht,
             CardWithImageGallery: ve,
-            HTMLElement: D.A,
-            ImageWithBadge: R.A,
+            HTMLElement: R.A,
+            ImageWithBadge: V.A,
             Carousel: F.A,
             GroupOfItems: $.default,
             UnorderedList: ue.A
@@ -10150,11 +10150,11 @@ try {
             nextPage: st,
             onFocus: vt,
             loadCssRawValue: ye,
-            selectedItemNumber: Ae,
+            selectedItemNumber: Ee,
             carouselTitle: t,
-            sharedDraggingDelta: Da,
-            setSharedDraggingDelta: Ra
-          })), [C, y, wt, it, st, Ae]);
+            sharedDraggingDelta: Ra,
+            setSharedDraggingDelta: Va
+          })), [C, y, wt, it, st, Ee]);
         return !yt?.length || yt.length <= 0 ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: "rockstargames-modules-core-newswire-articleb3206f796ddd61f3b6d1974ea73a4f22",
@@ -10184,12 +10184,12 @@ try {
               children: [(0, r.jsx)("h2", {
                 className: "rockstargames-modules-core-newswire-articlebe12152c36226103d53925a82ba66452",
                 children: t
-              }), (0, r.jsx)(Ie, {
+              }), (0, r.jsx)(Ae, {
                 prevPage: it,
-                prevBtnDisabled: I,
+                prevBtnDisabled: A,
                 nextPage: st,
-                nextBtnDisabled: A,
-                selectedItemNumber: Ae,
+                nextBtnDisabled: E,
+                selectedItemNumber: Ee,
                 itemsData: _,
                 closeModalMode: ut,
                 inModalMode: oe,
@@ -10202,7 +10202,7 @@ try {
                 id: "eventsDeck-content",
                 role: "region",
                 "aria-live": "polite",
-                children: `${Ae+1}/${_.length} ${C[Ae]?.tina?.payload?.meta?.title}`
+                children: `${Ee+1}/${_.length} ${C[Ee]?.tina?.payload?.meta?.title}`
               })]
             }), (0, r.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlef369e1390b3aa251df43bea9c55634f2",
@@ -10218,26 +10218,26 @@ try {
           })]
         })
       }, q);
-      const ze = {
+      const Ie = {
           content: "rockstargames-modules-core-newswire-articlec65ddebc8ee2173143d87e1079f2455a",
           customModalContent: "rockstargames-modules-core-newswire-articlefc96cdfdaeb2ad81b1b409fcb233657e",
           pillBtn: "rockstargames-modules-core-newswire-articleddaada7b150b18de710c9f77384c6537",
           selected: "rockstargames-modules-core-newswire-articleb4fbb4006fc27b899dac5e522ef574e3"
         },
         {
-          variants: Ae
+          variants: Ee
         } = n.Animations;
       t(98906), t(5004), t(30489), t(58585), t(1e4);
       const {
-        variants: Ee
+        variants: ze
       } = n.Animations;
       var Pe = t(65977),
         Le = t(41926);
       var Me = t(12540);
       const {
-        Gen9CoreCarousel: Ve,
-        framer: De,
-        useTinaModuleFetchByIds: Re,
+        Gen9CoreCarousel: De,
+        framer: Re,
+        useTinaModuleFetchByIds: Ve,
         withSimpleErrorBoundary: Fe
       } = Pe, $e = {
         Card: ({
@@ -10259,8 +10259,8 @@ try {
           to: m = null,
           tina: _ = {},
           position: u = 0,
-          sectionTitle: p = "",
-          theme: b,
+          sectionTitle: b = "",
+          theme: p,
           pricingOptions: g,
           cardIds: f,
           platformOptions: k = null
@@ -10284,11 +10284,11 @@ try {
               content: t,
               meta: {}
             },
-            variants: Ae.plainCard,
+            variants: Ee.plainCard,
             textOverlayProps: c,
             modalProps: {
-              className: ze.customModal,
-              contentClassName: ze.customModalContent
+              className: Ie.customModal,
+              contentClassName: Ie.customModalContent
             },
             expandedCardContents: (0, r.jsx)(le, {
               images: l,
@@ -10296,8 +10296,8 @@ try {
               expandedView: !0
             }),
             position: u,
-            sectionTitle: p,
-            theme: b,
+            sectionTitle: b,
+            theme: p,
             cardIds: f,
             pricingOptions: g,
             platformOptions: k,
@@ -10306,14 +10306,14 @@ try {
             children: (0, r.jsx)(ee, {
               expandedType: n,
               to: m,
-              sectionTitle: p,
+              sectionTitle: b,
               id: e,
               cardTitle: a,
               position: u,
               children: (0, r.jsx)("div", {
-                className: ze.content,
+                className: Ie.content,
                 "data-product": N,
-                children: (0, r.jsx)(E, {
+                children: (0, r.jsx)(z, {
                   title: a,
                   size: w,
                   textOverlayProps: c,
@@ -10338,7 +10338,7 @@ try {
         }) => {
           const i = {
             ...(0, o.useTinaComponents)(),
-            HTMLElement: D.A,
+            HTMLElement: R.A,
             UnorderedList: ue.A,
             ListItem: Le.A
           };
@@ -10367,7 +10367,7 @@ try {
           })
         },
         ...Pe
-      }, Ge = De.withFadeIn(Fe(({
+      }, Ge = Re.withFadeIn(Fe(({
         cards: e = [],
         size: a,
         name: t,
@@ -10378,12 +10378,12 @@ try {
         theme: m = "none",
         cardSizeBreakpoints: _ = {},
         customAspectRatio: u = "3/1",
-        titleBadge: p = null,
-        id: b = ""
+        titleBadge: b = null,
+        id: p = ""
       }) => {
         const g = (0, s.useRef)(null),
           f = (0, i.map)(e, "id"),
-          k = Re({
+          k = Ve({
             ids: f
           }),
           [v, h] = (0, s.useState)(d),
@@ -10422,7 +10422,7 @@ try {
                 tina: _
               } = l, u = (0, i.clone)(_);
               (0, i.set)(u, "payload.meta.id", d);
-              const p = f.filter(e => e !== t || e === t && !s);
+              const b = f.filter(e => e !== t || e === t && !s);
               c.push((0, r.jsx)(o.TinaParser, {
                 components: $e,
                 tina: u,
@@ -10435,7 +10435,7 @@ try {
                   position: e,
                   sectionTitle: n,
                   theme: m,
-                  cardIds: p
+                  cardIds: b
                 }
               }, d)), e += 1
             }
@@ -10446,8 +10446,8 @@ try {
           className: "rockstargames-modules-core-newswire-articlecf8eaaa96e41e0c9b5a5a1745ded9986",
           "data-theme": m,
           ref: g,
-          id: b,
-          children: [(0, r.jsx)(Ve, {
+          id: p,
+          children: [(0, r.jsx)(De, {
             description: c,
             size: a,
             cardSizeBreakpoints: _,
@@ -10456,7 +10456,7 @@ try {
             name: t,
             customSlidesPerView: v,
             customAspectRatio: u,
-            titleBadge: p,
+            titleBadge: b,
             theme: m
           }), l && (0, r.jsx)("div", {
             className: "rockstargames-modules-core-newswire-articled6d0f9d842469dec608825829148dff6",
@@ -10474,7 +10474,7 @@ try {
       "use strict";
       t.r(a), t.d(a, {
         Jsx0: () => i,
-        Jsx1: () => A,
+        Jsx1: () => E,
         Jsx2: () => L
       });
       var r = t(39793),
@@ -10523,8 +10523,8 @@ try {
         m = t(44453),
         _ = t(38044),
         u = t(1e4),
-        p = t(98906),
-        b = t(32858),
+        b = t(98906),
+        p = t(32858),
         g = t(5004),
         f = t(16157),
         k = t(95967),
@@ -10538,9 +10538,9 @@ try {
         S = t(12334),
         C = t(72527),
         T = t(64064),
-        I = t.n(T),
-        z = t(83721);
-      const A = (0, c.withTranslations)(({
+        A = t.n(T),
+        I = t(83721);
+      const E = (0, c.withTranslations)(({
         article: e,
         children: a,
         t
@@ -10550,7 +10550,7 @@ try {
             A: e => (0, r.jsx)(_.A, {
               ...e
             }),
-            AnchorLink: e => (0, r.jsx)(z.AnchorLink, {
+            AnchorLink: e => (0, r.jsx)(I.AnchorLink, {
               ...e
             }),
             ArticleTag: e => (0, r.jsx)(s.A, {
@@ -10565,25 +10565,25 @@ try {
             Carousel: e => (0, r.jsx)(d.A, {
               ...e
             }),
-            Cta: e => (0, r.jsx)(p.A, {
+            Cta: e => (0, r.jsx)(b.A, {
               ...e
             }),
-            Discounts: e => (0, r.jsx)(z.Discounts, {
+            Discounts: e => (0, r.jsx)(I.Discounts, {
               ...e
             }),
-            Donate: e => (0, r.jsx)(z.Donate, {
+            Donate: e => (0, r.jsx)(I.Donate, {
               ...e
             }),
-            FadeInContent: e => (0, r.jsx)(b.A, {
+            FadeInContent: e => (0, r.jsx)(p.A, {
               ...e
             }),
-            FontClip: e => (0, r.jsx)(z.FontClip, {
+            FontClip: e => (0, r.jsx)(I.FontClip, {
               ...e
             }),
-            GamingRewards: e => (0, r.jsx)(z.GamingRewards, {
+            GamingRewards: e => (0, r.jsx)(I.GamingRewards, {
               ...e
             }),
-            Gif: e => (0, r.jsx)(I(), {
+            Gif: e => (0, r.jsx)(A(), {
               ...e
             }),
             Grid: e => (0, r.jsx)(g.A, {
@@ -10592,7 +10592,7 @@ try {
             GroupOfItems: e => (0, r.jsx)(C.default, {
               ...e
             }),
-            HeroImage: e => (0, r.jsx)(z.HeroImage, {
+            HeroImage: e => (0, r.jsx)(I.HeroImage, {
               ...e
             }),
             HTMLElement: e => (0, r.jsx)(f.A, {
@@ -10604,16 +10604,16 @@ try {
             MultiSourceImage: e => (0, r.jsx)(k.A, {
               ...e
             }),
-            NewswireFull: e => (0, r.jsx)(z.NewswireFull, {
+            NewswireFull: e => (0, r.jsx)(I.NewswireFull, {
               ...e
             }),
-            Title: e => (0, r.jsx)(z.NewswireTitle, {
+            Title: e => (0, r.jsx)(I.NewswireTitle, {
               ...e
             }),
-            PctBar: e => (0, r.jsx)(z.PctBar, {
+            PctBar: e => (0, r.jsx)(I.PctBar, {
               ...e
             }),
-            Podium: e => (0, r.jsx)(z.Podium, {
+            Podium: e => (0, r.jsx)(I.Podium, {
               ...e
             }),
             ResponsiveGridBox: e => (0, r.jsx)(v.A, {
@@ -10644,8 +10644,8 @@ try {
               ...e
             })
           },
-          A = e.posts_jsx.variables_us_defaulted,
-          [E] = (0, o.useState)((0, r.jsx)(n.default, {
+          E = e.posts_jsx.variables_us_defaulted,
+          [z] = (0, o.useState)((0, r.jsx)(n.default, {
             renderInWrapper: !1,
             bindings: {
               getArray: (e, a) => e[a],
@@ -10653,11 +10653,11 @@ try {
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
-              }, E),
+              }, z),
               article: e,
               locale: i,
               t,
-              variables: A
+              variables: E
             },
             components: T,
             jsx: e.posts_jsx.markup,
@@ -10667,10 +10667,10 @@ try {
           }));
         return (0, r.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlece2d8080309005e155e5422fd38faa5d",
-          children: [E, a]
+          children: [z, a]
         })
       });
-      var E = t(17301),
+      var z = t(17301),
         P = t(38951);
       const L = ({
         children: e,
@@ -10678,7 +10678,7 @@ try {
         variablesKeys: t
       }) => (0, r.jsxs)("div", {
         className: "rockstargames-modules-core-newswire-articledad06d3570a3cd17332c2bfb19d8f611",
-        children: [(0, r.jsx)(E.TinaParser, {
+        children: [(0, r.jsx)(z.TinaParser, {
           tina: {
             payload: a,
             variables: {
@@ -10694,7 +10694,7 @@ try {
       t.r(a), t.d(a, {
         AnchorLink: () => o,
         Discounts: () => S,
-        Donate: () => z,
+        Donate: () => I,
         Engagement: () => r.default,
         EventInfo: () => H,
         FeaturedEventInfo: () => q,
@@ -10751,7 +10751,7 @@ try {
           style: _ = {}
         }) => {
           const u = (0, i.useRef)(null),
-            [p, b] = (0, i.useState)(null),
+            [b, p] = (0, i.useState)(null),
             [g, f] = (0, i.useState)(t);
           return (0, i.useEffect)(() => {
             !t && r && f(1 === r ? "lg" : "sm"), t || r || (f("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
@@ -10759,7 +10759,7 @@ try {
             if (!u.current) return;
             const e = () => {
               const e = o || window.getComputedStyle(u.current).getPropertyValue("--slides-per-view");
-              b(e)
+              p(e)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
@@ -10775,7 +10775,7 @@ try {
                 noInfiniteScroll: a,
                 style: {
                   ..._,
-                  "--per-page": p,
+                  "--per-page": b,
                   "--carousel-column-gap": "1rem"
                 },
                 children: e
@@ -10801,8 +10801,8 @@ try {
           }) : (console.error('Error: DiscountsCarousel expects a prop "items" that contains an array of objects.'), null)
         };
       var u = t(12334),
-        p = t(73951);
-      const b = {
+        b = t(73951);
+      const p = {
           carouselDesc: "rockstargames-modules-core-newswire-articlee9bfd17e6e24970ba255a08b588a037d",
           carouselOnMobile: "rockstargames-modules-core-newswire-articlea560549799c4dc8483f97da50f1981b6",
           columnsDesktop2: "rockstargames-modules-core-newswire-articlef23776fba4cb02462ec7d4f659513b29",
@@ -10855,7 +10855,7 @@ try {
                 let e = 0;
                 do {
                   t.push((0, s.jsx)("div", {
-                    className: `${b.gridItem} ${b.extraDiv}`
+                    className: `${p.gridItem} ${p.extraDiv}`
                   }, "limited-grid-" + e++)), a++
                 } while (a % m !== 0)
               }
@@ -10863,30 +10863,30 @@ try {
             }
             return window.addEventListener("resize", t), t(), () => window.removeEventListener("resize", t)
           }, [m, u]), (0, s.jsxs)("div", {
-            className: `${b.limitedGrid} ${r?b.carouselOnMobile:""}`,
+            className: `${p.limitedGrid} ${r?p.carouselOnMobile:""}`,
             children: [(0, s.jsxs)("div", {
               ref: u,
               style: {
                 "--divisible-desktop": o.desktop,
                 "--divisible-mobile": o.mobile
               },
-              className: `\n                    ${b.limitedGridContent}\n                    ${2===o.desktop?b.columnsDesktop2:""}\n                    ${3===o.desktop?b.columnsDesktop3:""}\n                    ${o.desktop>=4?b.columnsDesktop4:""}\n                    ${a?b.noTextFit:""}\n                    ${t?b[t]:""}\n                `,
+              className: `\n                    ${p.limitedGridContent}\n                    ${2===o.desktop?p.columnsDesktop2:""}\n                    ${3===o.desktop?p.columnsDesktop3:""}\n                    ${o.desktop>=4?p.columnsDesktop4:""}\n                    ${a?p.noTextFit:""}\n                    ${t?p[t]:""}\n                `,
               children: [(0, s.jsx)("div", {
-                className: b.thirdLine
+                className: p.thirdLine
               }), e.content.map((e, t) => (0, s.jsx)("div", {
-                className: b.gridItem,
+                className: p.gridItem,
                 children: (0, s.jsxs)(g, {
                   to: e?.href ?? e?.to,
-                  children: [!a && (0, s.jsx)(p.Root, {
-                    className: b.gridText,
+                  children: [!a && (0, s.jsx)(b.Root, {
+                    className: p.gridText,
                     min: 16,
                     max: 1e3,
                     mode: "single",
-                    children: (0, s.jsx)(p.Text, {
+                    children: (0, s.jsx)(b.Text, {
                       children: e.title
                     })
                   }), (0, s.jsx)("div", {
-                    className: b.imageArea,
+                    className: p.imageArea,
                     children: (0, s.jsx)(l.A, {
                       image: e.image,
                       ariaLabel: e.ariaLabel,
@@ -10899,20 +10899,20 @@ try {
                 })
               }, t)), c]
             }), r && (0, s.jsx)("div", {
-              className: b.gridCarousel,
+              className: p.gridCarousel,
               children: (0, s.jsx)(n.A, {
                 children: e.content.map((e, a) => (0, s.jsxs)("div", {
                   children: [(0, s.jsx)("div", {
-                    className: `${b.imageArea} ${b.imageAreaBg}`,
+                    className: `${p.imageArea} ${p.imageAreaBg}`,
                     children: (0, s.jsx)(l.A, {
-                      className: t ? b[t] : "",
+                      className: t ? p[t] : "",
                       image: e.image,
                       ariaLabel: e.ariaLabel,
                       badgeType: "badge2",
                       badge: e.badge
                     })
                   }), e.title && (0, s.jsx)("p", {
-                    className: b.carouselDesc,
+                    className: p.carouselDesc,
                     children: (0, s.jsx)(g, {
                       to: e?.href ?? e?.to,
                       children: e.title
@@ -11098,18 +11098,18 @@ try {
         });
       var C = t(91681),
         T = t.n(C);
-      const I = {
+      const A = {
           donate: "rockstargames-modules-core-newswire-articleca3a67499205086cce3ec4006dde027a",
           largePaddingSides: "rockstargames-modules-core-newswire-articlee9aa6553439a489ffff3140708eb84c9"
         },
-        z = ({
+        I = ({
           text: e
         }) => {
           const {
             sanitize: a
           } = T();
           return (0, s.jsx)("div", {
-            className: [I.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
+            className: [A.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
             children: (0, s.jsx)("p", {
               dangerouslySetInnerHTML: {
                 __html: a(e)
@@ -11117,14 +11117,14 @@ try {
             })
           })
         };
-      var A = t(40283),
-        E = t(17301),
+      var E = t(40283),
+        z = t(17301),
         P = t(81270),
         L = t(64064),
         M = t.n(L),
-        V = t(31879),
-        D = t.n(V),
-        R = t(38044),
+        D = t(31879),
+        R = t.n(D),
+        V = t(38044),
         F = t(13331);
       const $ = {
           breadcrumbs: "rockstargames-modules-core-newswire-articlea300b88d467c420e15084fc2eeeb1e09",
@@ -11148,17 +11148,17 @@ try {
             m = {},
             _ = m?.meta?.title ?? d?.title,
             u = m?.meta?.subtitle ?? d?.subtitle,
-            p = u ? (0, s.jsx)("h3", {
+            b = u ? (0, s.jsx)("h3", {
               "data-context": "newswire-subtitle",
               children: u
             }) : "",
-            b = [{
+            p = [{
               text: i("Newswire"),
               to: "/newswire"
             }],
             {
               src: g
-            } = (0, E.useImageParser)(t),
+            } = (0, z.useImageParser)(t),
             f = (0, s.jsxs)(s.Fragment, {
               children: [(0, s.jsx)("time", {
                 dateTime: d.created,
@@ -11167,17 +11167,17 @@ try {
                 item: a
               }) : "", e]
             });
-          d?.primary_tags?.length && b.push({
+          d?.primary_tags?.length && p.push({
             text: d.primary_tags[0].name,
             to: `/newswire?tag_id=${d.primary_tags[0].id}`
-          }), d?.secondary_tags?.length && b.push({
+          }), d?.secondary_tags?.length && p.push({
             text: d.secondary_tags[0].name,
             to: `/newswire?tag_id=${d.secondary_tags[0].id}`
           });
           const k = (0, s.jsx)("div", {
             className: $.breadcrumbs,
             "data-cms-breadcrumbs": !0,
-            children: b.map(e => (0, s.jsx)(R.A, {
+            children: p.map(e => (0, s.jsx)(V.A, {
               to: e.to,
               children: e.text
             }, e.to))
@@ -11196,7 +11196,7 @@ try {
                 })]
               }), (0, s.jsxs)("footer", {
                 "data-context": "title",
-                children: [p, f]
+                children: [b, f]
               })]
             }) : (0, s.jsxs)(s.Fragment, {
               children: [k, (0, s.jsxs)("div", {
@@ -11204,7 +11204,7 @@ try {
                 children: [(0, s.jsx)("h1", {
                   "data-context": "newswire-title",
                   children: _
-                }), p]
+                }), b]
               }), f]
             })
           })
@@ -11244,15 +11244,15 @@ try {
           videoInHeroProps: n,
           hideNewswireTitle: c = !1
         }) => {
-          const d = (0, E.useTinaPayload)(),
+          const d = (0, z.useTinaPayload)(),
             m = d?.meta?.prod ?? !1,
-            _ = (0, E.useTinaComponents)();
-          (0, A.set)(d, "meta.prod", m);
+            _ = (0, z.useTinaComponents)();
+          (0, E.set)(d, "meta.prod", m);
           let u = n?.gifVideoProps?.hasVideoInHero || !1;
-          const p = n?.htmlVideoProps?.id || !1,
-            b = !!n?.htmlVideoProps?.hasHtmlVideoInHero && p;
-          b && u && (u = !1);
-          const g = void 0 === n || !u && !b,
+          const b = n?.htmlVideoProps?.id || !1,
+            p = !!n?.htmlVideoProps?.hasHtmlVideoInHero && b;
+          p && u && (u = !1);
+          const g = void 0 === n || !u && !p,
             f = (0, i.useMemo)(() => ({
               ..._,
               HTMLElement: y.A,
@@ -11270,11 +11270,11 @@ try {
                 },
                 loop: n?.gifVideoProps?.isLooping
               })
-            }), b && p && (0, s.jsx)("div", {
+            }), p && b && (0, s.jsx)("div", {
               className: O.videoWrapper,
-              children: (0, s.jsx)(D(), {
+              children: (0, s.jsx)(R(), {
                 autoplay: n?.htmlVideoProps?.autoPlay || !1,
-                id: p
+                id: b
               })
             }), g && (0, s.jsx)(B, {
               images: e
@@ -11283,7 +11283,7 @@ try {
               children: [!r && !c && (0, s.jsx)("h3", {
                 className: O.eventTitle,
                 children: a
-              }), (0, s.jsx)(E.TinaParser, {
+              }), (0, s.jsx)(z.TinaParser, {
                 components: f,
                 tina: {
                   payload: {
@@ -11349,17 +11349,17 @@ try {
             } = (0, J.useGtmTrack)(),
             {
               ref: _,
-              inView: p
+              inView: b
             } = (0, Z.useInView)({
               threshold: .6
             }),
-            [b, g] = (0, i.useState)(!1);
+            [p, g] = (0, i.useState)(!1);
           return (0, i.useEffect)(() => {
-            p && !b && (m({
+            b && !p && (m({
               element_placement: "newswire-article-gaming-rewards",
               event: "page_section_impression"
             }), g(!0))
-          }, [p]), "primeGaming" === c && ["ru", "kr", "ko_kr", "ru_ru"].includes(d) ? null : (0, s.jsx)("div", {
+          }, [b]), "primeGaming" === c && ["ru", "kr", "ko_kr", "ru_ru"].includes(d) ? null : (0, s.jsx)("div", {
             className: Q.gamingWrapper,
             ref: _,
             children: (0, s.jsx)("div", {
@@ -11436,7 +11436,7 @@ try {
         deckHash: a = "",
         perPage: t = null
       }) => {
-        const [r, o] = (0, i.useState)(null), n = (0, E.useGetCdnSource)(e?.backgroundImg?.full_src ?? null), c = (0, E.useGetCdnSource)(e?.layeredImg?.full_src ?? null), l = (0, i.useRef)(null), {
+        const [r, o] = (0, i.useState)(null), n = (0, z.useGetCdnSource)(e?.backgroundImg?.full_src ?? null), c = (0, z.useGetCdnSource)(e?.layeredImg?.full_src ?? null), l = (0, i.useRef)(null), {
           data: d,
           error: m
         } = (0, F.useQuery)(re.TinaModulesInfo, {
@@ -11452,8 +11452,8 @@ try {
                 id: a,
                 tina: t
               } = e,
-              r = (0, A.clone)(t);
-            (0, A.set)(r, "payload.meta.id", a), o(r)
+              r = (0, E.clone)(t);
+            (0, E.set)(r, "payload.meta.id", a), o(r)
           }
         }, [d]), d && r ? m ? (0, s.jsx)(te.A, {
           error: m
@@ -11471,7 +11471,7 @@ try {
               className: "rockstargames-modules-core-newswire-articleaa9b5909de87ec85fc53e12a7f9ca2d5"
             }) : "", (0, s.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlee3ff669c62cc2088728385fb58ef2969",
-              children: (0, s.jsx)(E.TinaParser, {
+              children: (0, s.jsx)(z.TinaParser, {
                 components: {
                   Deck: ae.E$
                 },
@@ -11617,8 +11617,8 @@ try {
         Content: () => ge,
         Description: () => we,
         Disclaimer: () => ye,
-        Footer: () => be,
-        Header: () => pe,
+        Footer: () => pe,
+        Header: () => be,
         Heading: () => he,
         Image: () => fe,
         LinkPSButton: () => Se,
@@ -11637,11 +11637,11 @@ try {
         m = t.n(d),
         _ = t(30544),
         u = t(83721),
-        p = t(39793),
-        b = t(93082),
+        b = t(39793),
+        p = t(93082),
         g = t(10639),
         f = t(25847);
-      const k = (0, b.createContext)({
+      const k = (0, p.createContext)({
           themeOptions: {
             themeName: void 0,
             themeLevel: void 0,
@@ -11665,11 +11665,11 @@ try {
               themeLevel: t?.themeLevel,
               cssVars: r
             };
-          return (0, p.jsx)(k.Provider, {
+          return (0, b.jsx)(k.Provider, {
             value: {
               themeOptions: s
             },
-            children: (0, p.jsx)("div", {
+            children: (0, b.jsx)("div", {
               "data-theme": s?.themeName,
               "data-level": s?.themeLevel,
               style: s?.cssVars,
@@ -11686,17 +11686,17 @@ try {
         }) => {
           switch (e.jsx) {
             case 0:
-              return (0, p.jsx)(w.Jsx0, {
+              return (0, b.jsx)(w.Jsx0, {
                 article: e,
                 children: a
               });
             case 1:
-              return (0, p.jsx)(w.Jsx1, {
+              return (0, b.jsx)(w.Jsx1, {
                 article: e,
                 children: a
               });
             default:
-              return (0, p.jsx)(w.Jsx2, {
+              return (0, b.jsx)(w.Jsx2, {
                 payload: e.tina.payload,
                 variablesKeys: e.tina.variables.keys,
                 children: a
@@ -11716,18 +11716,18 @@ try {
             setTitleDataPath: "post.title",
             autoSetLoading: !0
           }), r = a?.post ?? null, s = a?.related?.results ?? null;
-          if ((0, b.useEffect)(() => {
+          if ((0, p.useEffect)(() => {
               r && (window?.instgrm?.Embeds?.process?.(), window?.twttr?.widgets?.load?.())
             }, [r]), !r || t) return null;
           const i = r?.tina?.payload?.meta,
-            o = s && r.show_related ? (0, p.jsx)(g.A, {
+            o = s && r.show_related ? (0, b.jsx)(g.A, {
               posts: s
             }) : "";
-          return (0, p.jsx)(h.newswirePost.Provider, {
+          return (0, b.jsx)(h.newswirePost.Provider, {
             article: r,
-            children: (0, p.jsx)(v, {
+            children: (0, b.jsx)(v, {
               meta: i,
-              children: (0, p.jsx)(j, {
+              children: (0, b.jsx)(j, {
                 article: r,
                 relatedBlock: o
               })
@@ -11738,36 +11738,36 @@ try {
         S = t(36416),
         C = t(17301),
         T = t(31655),
-        I = t(42909);
-      const z = JSON.parse('{"de-DE":{"bottom_sheet_modal_close_icon":"Schließen","carousel_next_button":"Weiter","carousel_prev_button":"Zurück","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Abspielen","decorative_video_replay_button_label":"Wiederholen","featured_game_breadcrumbs_parent_item":"Spiele","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Abspielen","hero_carousel_scroll_down_label":"Nach unten scrollen","hp_hero_play_button_label":"Video wird wiedergegeben","hp_hero_stop_button_label":"Video angehalten","image_carousel_screen_reader_announcer_label":"Jetzt angezeigt: {selectedTab} von {total}","job_card_bookmark_action":"Markieren","job_card_created_by":"Erstellt von","job_card_image_alt_text":"Screenshot vom Job {name}","job_card_report_action":"Melden","job_card_share_action":"Teilen","job_card_updated_date":"Aktualisiert: {date}","job_card_verified_by":"Verifiziert von","job_dialog_bookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen markierten Job sehen zu können – Jobs können nur im Spiel bewertet werden, nachdem sie gespielt wurden.","job_dialog_bookmarked_heading":"Job markiert: <b>{name}</b>","job_dialog_bookmarked_title":"Job markiert","job_dialog_confirmation_button":"OKAY","job_dialog_error_body":"Es gab einen Fehler bei dem Versuch, einen Job zu markieren/eine Markierung zu entfernen. Bitte versuche es erneut.","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Fehler","job_dialog_unbookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen Job nicht länger in deinen Markierungen sehen zu können.","job_dialog_unbookmarked_heading":"Job nicht mehr markiert: <b>{name}</b>","job_dialog_unbookmarked_title":"Job nicht mehr markiert","job_type_adversary_mode":"Gegner-Modus","job_type_air_race":"Luftrennen","job_type_arena_deathmatch":"Arena-Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Radrennen","job_type_capture":"Capture","job_type_contact_mission":"Kontaktmission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Dragsterrennen","job_type_drift_race":"Driftrennen","job_type_foot_race":"Rennen zu Fuß","job_type_hao_special_works_race":"HSW-Rennen","job_type_heist":"Raubüberfall","job_type_heist_prep":"Raubüberfall-Austrüstungsmission","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Landrennen","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission-Creator","job_type_open_wheel_race":"Open-Wheel-Rennen","job_type_parachuting":"Fallschirmsprung","job_type_pursuit_race":"Verfolgungsrennen","job_type_race":"Rennen","job_type_random_mission":"Zufällige Mission","job_type_special_race":"Spezialrennen","job_type_street_race":"Straßenrennen","job_type_stunt_race":"Stuntrennen","job_type_survival":"Überlebenskampf","job_type_target":"Zielscheibenrennen","job_type_team_deathmatch":"Team-Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Verwandlungsrennen","job_type_unknown":"Unbekannt","job_type_vehicle_deathmatch":"Fahrzeug-Deathmatch","job_type_water_race":"Seerennen","lightbox_close_button":"Schließen","login_dialog_body":"Du musst dich erst anmelden, um diese Inhalte zu sehen.","login_dialog_signin_button":"Anmelden","login_dialog_signup_button":"Registrieren","login_dialog_title":"Anmelden erforderlich","masonry_grid_external_store_link":"Externer Link zum Store","ns_already_subbed_details_amp":"Du erhältst bereits Newsletter-Updates an diese E-Mail-Adresse. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_already_subbed_title":"Bereits abonniert","ns_check_email_details":"Bitte verifiziere deine E-Mail-Adresse über den Link, der an die E-Mail-Adresse geschickt wurde, mit der du dich angemeldet hast, um dein Abo für die E-Mail-Liste von Rockstar Games zu bestätigen.","ns_check_email_title":"Überprüfe deine E-Mails","ns_confirm_after_register_details":"Du hast dich während der Kontoerstellung nicht für Werbe-E-Mails angemeldet. Möchtest du immer noch unseren Newsletter abonnieren?","ns_confirm_after_register_title":"Bestätige dein Abo","ns_confirm_details":"Bitte drücke auf den Knopf unten, um zu bestätigen, dass du den Newsletter von Rockstar Games abonnieren möchtest.","ns_confirm_title":"Bestätige dein Abo","ns_error_generic_details":"Wir können diese E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden.","ns_error_generic_title":"Fehler","ns_error_preferences_details":"Wir können deine E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden. Ändere deine Präferenzen bezüglich E-Mails in den Einstellungen deines Kontos oder versuche es später erneut.","ns_error_preferences_title":"Fehler","ns_go_back_text":"Nein, zurückkehren","ns_manage_prefs_button_text":"Präferenzen verwalten","ns_ok_button_text":"OKAY","ns_successfully_subscribed_details_amp":"Du hast dich bei der E-Mail-Liste von Rockstar Games angemeldet und erhältst regelmäßig Updates an die E-Mail-Adresse, mit der du dich angemeldet hast. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_successfully_subscribed_title":"Erfolgreich abonniert","ns_yes_subscribe_text":"Ja, abonnieren","web_offer_claim_dialog_close":"schließen","web_offer_claim_error_state_button":"Erneut versuchen","web_offer_claim_error_state_icon_label":"Fehler-Symbol","web_offer_claim_exists_state_icon_label":"Erfolgssymbol","web_offer_claim_link_account_state_icon_label":"Fehler-Symbol","web_offer_claim_loading_state":"lädt","web_offer_claim_success_state_icon_label":"Erfolgssymbol"},"en-US":{"bottom_sheet_modal_close_icon":"Close","carousel_next_button":"Next","carousel_prev_button":"Previous","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Play","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Games","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Play","hero_carousel_scroll_down_label":"Scroll Down","hp_hero_play_button_label":"Video Playing","hp_hero_stop_button_label":"Video Stopped","image_carousel_screen_reader_announcer_label":"Now showing {selectedTab} of {total}","job_card_bookmark_action":"Bookmark","job_card_created_by":"Created by","job_card_image_alt_text":"Screenshot of {name} job","job_card_report_action":"Report","job_card_share_action":"Share","job_card_updated_date":"Updated {date}","job_card_verified_by":"Verified by","job_dialog_bookmarked_body":"You will need to restart Grand Theft Auto Online to see this bookmarked job - jobs can only be rated in-game, after they have been played.","job_dialog_bookmarked_heading":"Job Bookmarked: <b>{name}</b>","job_dialog_bookmarked_title":"Job Bookmarked","job_dialog_confirmation_button":"OK","job_dialog_error_body":"There was an error when attempting to bookmark/unbookmark the job. Please try again","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"You will need to restart Grand Theft Auto Online to no longer see this job in your bookmarks.","job_dialog_unbookmarked_heading":"Job Unbookmarked: <b>{name}</b>","job_dialog_unbookmarked_title":"Job Unbookmarked","job_type_adversary_mode":"Adversary Mode","job_type_air_race":"Air Race","job_type_arena_deathmatch":"Arena Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Bike Race","job_type_capture":"Capture","job_type_contact_mission":"Contact Mission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Drag Race","job_type_drift_race":"Drift Race","job_type_foot_race":"Foot Race","job_type_hao_special_works_race":"Hao\'s Special Works Race","job_type_heist":"Heist","job_type_heist_prep":"Heist Prep","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Land Race","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission Creator","job_type_open_wheel_race":"Open Wheel Race","job_type_parachuting":"Parachuting","job_type_pursuit_race":"Pursuit Race","job_type_race":"Race","job_type_random_mission":"Random Mission","job_type_special_race":"Special Vehicle Race","job_type_street_race":"Street Race","job_type_stunt_race":"Stunt Race","job_type_survival":"Survival","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Team Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Transform Race","job_type_unknown":"Unknown","job_type_vehicle_deathmatch":"Vehicle Deathmatch","job_type_water_race":"Sea Race","lightbox_close_button":"Close","login_dialog_body":"You need to sign in first to interact with this content","login_dialog_signin_button":"Sign In","login_dialog_signup_button":"Sign Up","login_dialog_title":"Sign In Required","masonry_grid_external_store_link":"External link to Store","ns_already_subbed_details_amp":"You are already receiving newsletter updates at this email address. Manage your communication preferences at any time in your account settings.","ns_already_subbed_title":"Already Subscribed","ns_check_email_details":"To confirm your subscription to the Rockstar Games Email List, please verify your email address via the link sent to the email address you’ve signed up with.","ns_check_email_title":"Check Your Email","ns_confirm_after_register_details":"You did not opt-in to receive marketing emails during account creation. Would you still like to subscribe to our newsletter?","ns_confirm_after_register_title":"Confirm your subscription","ns_confirm_details":"Please confirm that you would like to subscribe to the Rockstar Games Newsletter by clicking the button below.","ns_confirm_title":"Confirm your subscription","ns_error_generic_details":"We cannot sign up this email address to our newsletter at this time.","ns_error_generic_title":"Error","ns_error_preferences_details":"We cannot sign up your email address to our newsletter at this time. Change your email preferences on your account settings page or try again later.","ns_error_preferences_title":"Error","ns_go_back_text":"No, Go Back","ns_manage_prefs_button_text":"Manage Preferences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"You are now signed up to the Rockstar Games Email List and will receive regular updates to the email address you’ve signed up with. Manage your communication preferences at any time in your account settings.","ns_successfully_subscribed_title":"Successfully Subscribed","ns_yes_subscribe_text":"Yes, Subscribe","web_offer_claim_dialog_close":"close","web_offer_claim_error_state_button":"Try Again","web_offer_claim_error_state_icon_label":"Error Icon","web_offer_claim_exists_state_icon_label":"Success Icon","web_offer_claim_link_account_state_icon_label":"Error Icon","web_offer_claim_loading_state":"loading","web_offer_claim_success_state_icon_label":"Success Icon"},"es-ES":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Volver a ver","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo vídeo","hp_hero_stop_button_label":"Vídeo en pausa","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creada por","job_card_image_alt_text":"Captura de pantalla de la actividad {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizada el {date}","job_card_verified_by":"Verificada por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Ha habido un error al intentar marcar o eliminar la marca de esta actividad. Vuelve a intentarlo","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tu lista de actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad no marcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad no marcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena War","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misiones de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de drift","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar del golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de coches de competición","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Partida de supervivencia","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Para interactuar con este contenido debes iniciar sesión.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Debes iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín de noticias en este correo electrónico. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_already_subbed_title":"Ya tienes una suscripción","ns_check_email_details":"Para confirmar tu suscripción a la lista de correo de Rockstar Games, verifica tu correo electrónico a través del enlace enviado al correo electrónico con el que te has suscrito.","ns_check_email_title":"Comprueba tu correo electrónico","ns_confirm_after_register_details":"No te has suscrito a los correos electrónicos comerciales al crear tu cuenta. ¿Quieres suscribirte a nuestro boletín de noticias?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz click en el botón para confirmar que quieres suscribirte al boletín de noticias de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con este correo electrónico.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con tu correo electrónico. Cambia tus preferencias de correo electrónico en la página de ajustes de tu cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar tus preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Te has suscrito a la lista de correo de Rockstar Games y recibirás actualizaciones en el correo electrónico con el que te has suscrito. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_successfully_subscribed_title":"Te has suscrito","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"Cerrar","web_offer_claim_error_state_button":"Vuelve a intentarlo","web_offer_claim_error_state_icon_label":"Icono de error","web_offer_claim_exists_state_icon_label":"Icono de aprobación","web_offer_claim_link_account_state_icon_label":"Icono de error","web_offer_claim_loading_state":"Cargando","web_offer_claim_success_state_icon_label":"Icono de aprobación"},"es-MX":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Repetir","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo video","hp_hero_stop_button_label":"Video detenido","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creado por","job_card_image_alt_text":"Captura de pantalla del trabajo {name}","job_card_report_action":"Reportar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizado {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Las actividades solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Se produjo un error al intentar marcar o desmarcar la actividad. Inténtalo de nuevo.","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tus actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad desmarcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad desmarcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena de Motores","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misión de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de derrapes","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar de golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de ruedas descubiertas","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Supervivencia","job_type_target":"Carrera de ataque al objetivo","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Necesitas iniciar sesión para poder interactuar con este contenido.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Necesitas iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín en esta dirección de correo electrónico. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_already_subbed_title":"Ya cuentas con una suscripción","ns_check_email_details":"Verifica tu dirección de correo electrónico mediante el enlace que enviamos al correo con el que te registraste para confirmar la suscripción a la lista de correos de Rockstar Games.","ns_check_email_title":"Verifica tu dirección de correo electrónico","ns_confirm_after_register_details":"No optaste por recibir correos con publicidad durante la creación de la cuenta. ¿Quieres suscribirte a nuestro boletín de todos modos?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz clic en el botón a continuación para confirmar que quieres suscribirte al boletín de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento, no podemos registrar esta dirección de correo electrónico a nuestro boletín.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento, no podemos registrar tu dirección de correo electrónico a nuestro boletín. Modifica las preferencias de tu correo desde la página de ajustes de la cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Cuentas con una suscripción a la lista de correos de Rockstar Games y recibirás actualizaciones habituales a la dirección de correo electrónico con la que te registraste. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_successfully_subscribed_title":"Suscripción exitosa","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"cerrar","web_offer_claim_error_state_button":"Volver a intentar","web_offer_claim_error_state_icon_label":"Ícono de error","web_offer_claim_exists_state_icon_label":"Ícono de aprobado","web_offer_claim_link_account_state_icon_label":"Ícono de error","web_offer_claim_loading_state":"cargando","web_offer_claim_success_state_icon_label":"Ícono de aprobado"},"fr-FR":{"bottom_sheet_modal_close_icon":"Fermer","carousel_next_button":"Suivant","carousel_prev_button":"Précédent","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Lecture","decorative_video_replay_button_label":"Relire","featured_game_breadcrumbs_parent_item":"Jeux","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Lecture","hero_carousel_scroll_down_label":"Faire défiler vers le bas","hp_hero_play_button_label":"Vidéo en cours de lecture","hp_hero_stop_button_label":"Vidéo arrêtée","image_carousel_screen_reader_announcer_label":"Affichage de {selectedTab} sur {total}","job_card_bookmark_action":"Ajouter aux favoris","job_card_created_by":"Créé par","job_card_image_alt_text":"Capture d\'écran de la mission {name}","job_card_report_action":"Effectuer un signalement","job_card_share_action":"Partager","job_card_updated_date":"Dernière modification : {date}","job_card_verified_by":"Vérifié par","job_dialog_bookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour voir cette mission ajoutée aux favoris. Les missions ne peuvent être notées qu\'en jeu, après avoir été jouées.","job_dialog_bookmarked_heading":"Mission ajoutée aux favoris : <b>{name}</b>","job_dialog_bookmarked_title":"Mission ajoutée aux favoris","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Une erreur est survenue lors de l\'ajout/du retrait de la mission de la liste des favoris. Veuillez réessayer.","job_dialog_error_heading":"Mission : <b>{name}</b>","job_dialog_error_title":"Erreur","job_dialog_unbookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour ne plus voir cette mission dans vos favoris.","job_dialog_unbookmarked_heading":"Mission retirée des favoris : <b>{name}</b>","job_dialog_unbookmarked_title":"Mission retirée des favoris","job_type_adversary_mode":"Mode rivalité","job_type_air_race":"Course aérienne","job_type_arena_deathmatch":"Affrontement en arène","job_type_arena_war":"Guerre d\'arène","job_type_bike_race":"Course à moto","job_type_capture":"Capture","job_type_contact_mission":"Mission de contact","job_type_deathmatch":"Affrontement","job_type_drag_race":"Course de dragster","job_type_drift_race":"Course de drift","job_type_foot_race":"Course à pied","job_type_hao_special_works_race":"Course d\'Hao\'s Special Works","job_type_heist":"Braquage","job_type_heist_prep":"Préparation de braquage","job_type_king_of_the_hill":"Conquête","job_type_land_race":"Course terrestre","job_type_last_team_standing":"Extermination","job_type_mission":"Mission","job_type_mission_creator":"Éditeur de missions","job_type_open_wheel_race":"Course d\'ultralégères","job_type_parachuting":"Saut en parachute","job_type_pursuit_race":"Course de poursuite","job_type_race":"Course","job_type_random_mission":"Mission aléatoire","job_type_special_race":"Course de véhicules spéciaux","job_type_street_race":"Course de rue","job_type_stunt_race":"Course nautique","job_type_survival":"Survie","job_type_target":"Course aux points","job_type_team_deathmatch":"Affrontement en équipe","job_type_team_king_of_the_hill":"Conquête en équipe","job_type_transform_race":"Course polymorphes","job_type_unknown":"Inconnu","job_type_vehicle_deathmatch":"Affrontement motorisé","job_type_water_race":"Course nautique","lightbox_close_button":"Fermer","login_dialog_body":"Vous devez vous connecter pour interagir avec ce contenu.","login_dialog_signin_button":"Se connecter","login_dialog_signup_button":"Créer un compte","login_dialog_title":"Connexion requise","masonry_grid_external_store_link":"Lien externe vers la boutique","ns_already_subbed_details_amp":"Vous êtes déjà abonné(e) à la newsletter avec cette adresse e-mail. Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_already_subbed_title":"Vous êtes déjà abonné(e)","ns_check_email_details":"Pour confirmer votre abonnement à la liste de diffusion de Rockstar Games, veuillez vérifier votre adresse e-mail en cliquant sur le lien envoyé à l\'adresse e-mail avec laquelle vous vous êtes abonné(e).","ns_check_email_title":"Vérifiez votre adresse e-mail","ns_confirm_after_register_details":"Vous avez choisi de ne pas recevoir d\'e-mails publicitaires lors de la création de votre compte. Voulez-vous toujours vous abonner à notre newsletter ?","ns_confirm_after_register_title":"Confirmez votre abonnement","ns_confirm_details":"Veuillez confirmer que vous souhaitez vous abonner à la newsletter de Rockstar Games en cliquant sur le bouton ci-dessous.","ns_confirm_title":"Confirmez votre abonnement","ns_error_generic_details":"Nous ne pouvons pas abonner cette adresse e-mail à notre newsletter pour l\'instant.","ns_error_generic_title":"Erreur","ns_error_preferences_details":"Nous ne pouvons pas abonner votre adresse e-mail à notre newsletter pour l\'instant. Modifiez vos préférences concernant les e-mails sur la page des paramètres de votre compte ou réessayez plus tard.","ns_error_preferences_title":"Erreur","ns_go_back_text":"Non, retour","ns_manage_prefs_button_text":"Gérer vos préférences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Vous êtes désormais abonné(e) à la liste de diffusion de Rockstar Games. Vous recevrez des mises à jour régulières à l\'adresse e-mail avec laquelle vous vous êtes abonné(e). Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_successfully_subscribed_title":"Abonnement effectué","ns_yes_subscribe_text":"Oui, je m\'abonne","web_offer_claim_dialog_close":"Fermer","web_offer_claim_error_state_button":"Réessayer","web_offer_claim_error_state_icon_label":"Icône d\'erreur","web_offer_claim_exists_state_icon_label":"Icône de réussite","web_offer_claim_link_account_state_icon_label":"Icône d\'erreur","web_offer_claim_loading_state":"Chargement","web_offer_claim_success_state_icon_label":"Icône de réussite"},"it-IT":{"bottom_sheet_modal_close_icon":"Chiudi","carousel_next_button":"Successivo","carousel_prev_button":"Precedente","decorative_video_pause_button_label":"Pausa","decorative_video_play_button_label":"Riproduci","decorative_video_replay_button_label":"Riproduci di nuovo","featured_game_breadcrumbs_parent_item":"Giochi","hero_carousel_pause_button":"Pausa","hero_carousel_play_button":"Riproduci","hero_carousel_scroll_down_label":"Scorri in basso","hp_hero_play_button_label":"Video in riproduzione","hp_hero_stop_button_label":"Riproduzione video interrotta","image_carousel_screen_reader_announcer_label":"In riproduzione: {selectedTab} di {total}","job_card_bookmark_action":"Aggiungi ai preferiti","job_card_created_by":"Creato da","job_card_image_alt_text":"Screenshot dell\'attività {name}","job_card_report_action":"Segnala","job_card_share_action":"Condividi","job_card_updated_date":"Aggiornato il {date}","job_card_verified_by":"Verificato da","job_dialog_bookmarked_body":"Per visualizzare questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online. Le attività possono essere valutate solo all\'interno del gioco, dopo averle giocate.","job_dialog_bookmarked_heading":"Attività aggiunta ai preferiti: <b>{name}</b>","job_dialog_bookmarked_title":"Attività aggiunta ai preferiti","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Si è verificato un errore durante l’aggiunta ai/la rimozione dai preferiti dell’attività. Riprova più tardi","job_dialog_error_heading":"Attività: <b>{name}</b>","job_dialog_error_title":"Errore","job_dialog_unbookmarked_body":"Per non visualizzare più questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online.","job_dialog_unbookmarked_heading":"Attività rimossa dai preferiti: <b>{name}</b>","job_dialog_unbookmarked_title":"Attività rimossa dai preferiti","job_type_adversary_mode":"Modalità Competizione","job_type_air_race":"Gara aerea","job_type_arena_deathmatch":"Deathmatch nell\'Arena","job_type_arena_war":"Arena War","job_type_bike_race":"Gara su due ruote","job_type_capture":"Cattura","job_type_contact_mission":"Missione dei contatti","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Gara drag","job_type_drift_race":"Gara drift","job_type_foot_race":"Gara a piedi","job_type_hao_special_works_race":"Gara di Hao\'s Special Works","job_type_heist":"Colpi","job_type_heist_prep":"Missione preliminare del colpo","job_type_king_of_the_hill":"Re della collina","job_type_land_race":"Gara terrestre","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Missione","job_type_mission_creator":"Creatore di missioni","job_type_open_wheel_race":"Gara per ruote scoperte","job_type_parachuting":"Paracadutismo","job_type_pursuit_race":"Inseguimenti","job_type_race":"Gara","job_type_random_mission":"Missione casuale","job_type_special_race":"Gara con veicoli speciali","job_type_street_race":"Gara clandestina","job_type_stunt_race":"Gara stunt","job_type_survival":"Sopravvivenza","job_type_target":"Gara al bersaglio","job_type_team_deathmatch":"Deathmatch a squadre","job_type_team_king_of_the_hill":"Re della collina a squadre","job_type_transform_race":"Gara multiveicolo","job_type_unknown":"Sconosciuto","job_type_vehicle_deathmatch":"Deathmatch con veicoli","job_type_water_race":"Gara acquatica","lightbox_close_button":"Chiudi","login_dialog_body":"È necessario eseguire l’accesso prima di poter interagire con questo contenuto","login_dialog_signin_button":"Accedi","login_dialog_signup_button":"Registrati","login_dialog_title":"È necessario eseguire l’accesso","masonry_grid_external_store_link":"Link esterno per il Negozio","ns_already_subbed_details_amp":"Stai già usando questo indirizzo email per ricevere la newsletter. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_already_subbed_title":"Sei già iscritto","ns_check_email_details":"Per confermare la tua iscrizione alla mailing list di Rockstar Games, verifica il tuo indirizzo email tramite il link che ti abbiamo inviato all’indirizzo email che hai usato per iscriverti.","ns_check_email_title":"Controlla la tua mail","ns_confirm_after_register_details":"Non hai acconsentito a ricevere le email di marketing durante la creazione dell\'account. Vuoi ancora iscriverti alla nostra newsletter?","ns_confirm_after_register_title":"Conferma la tua iscrizione","ns_confirm_details":"Conferma che vuoi iscriverti alla Newsletter di Rockstar Games cliccando sul pulsante qui sotto.","ns_confirm_title":"Conferma la tua iscrizione","ns_error_generic_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento.","ns_error_generic_title":"Errore","ns_error_preferences_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento. Modifica le preferenze della tua email nella pagina delle impostazioni dell’account o riprova più tardi.","ns_error_preferences_title":"Errore","ns_go_back_text":"No, torna indietro","ns_manage_prefs_button_text":"Gestisci le preferenze","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Hai effettuato l’iscrizione alla mailing list di Rockstar Games e riceverai regolarmente gli aggiornamenti all’indirizzo email che hai usato per iscriverti. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_successfully_subscribed_title":"Iscrizione effettuata con successo","ns_yes_subscribe_text":"Sì, iscriviti","web_offer_claim_dialog_close":"chiudi","web_offer_claim_error_state_button":"Riprova","web_offer_claim_error_state_icon_label":"Icona Errore","web_offer_claim_exists_state_icon_label":"Icona di successo","web_offer_claim_link_account_state_icon_label":"Icona Errore","web_offer_claim_loading_state":"caricamento","web_offer_claim_success_state_icon_label":"Icona di successo"},"ja-JP":{"bottom_sheet_modal_close_icon":"閉じる","carousel_next_button":"次へ","carousel_prev_button":"前へ","decorative_video_pause_button_label":"一時停止","decorative_video_play_button_label":"再生","decorative_video_replay_button_label":"もう一回見る","featured_game_breadcrumbs_parent_item":"ゲーム","hero_carousel_pause_button":"一時停止","hero_carousel_play_button":"再生","hero_carousel_scroll_down_label":"下にスクロール","hp_hero_play_button_label":"ビデオ再生中","hp_hero_stop_button_label":"ビデオ停止中","image_carousel_screen_reader_announcer_label":"{total}のうち{selectedTab}を表示中","job_card_bookmark_action":"ブックマーク","job_card_created_by":"により作成","job_card_image_alt_text":"ジョブ{name}のスクリーンショット","job_card_report_action":"報告","job_card_share_action":"共有","job_card_updated_date":"{date}に更新","job_card_verified_by":"により認証","job_dialog_bookmarked_body":"ブックマークされたジョブを閲覧するには「GTAオンライン」を再起動する必要があります - ジョブは実際にプレイした後でなければ、ゲーム内で評価することはできません。","job_dialog_bookmarked_heading":"ブックマークされたジョブ: <b>{name}</b>","job_dialog_bookmarked_title":"ブックマークされたジョブ","job_dialog_confirmation_button":"OK","job_dialog_error_body":"ジョブをブックマーク/ブックマーク解除を試みた際にエラーが起こりました。もう一度お試しください","job_dialog_error_heading":"ジョブ: <b>{name}</b>","job_dialog_error_title":"エラー","job_dialog_unbookmarked_body":"ブックマークから解除たジョブを削除するには「GTAオンライン」を再起動する必要があります。","job_dialog_unbookmarked_heading":"ブックマークから解除されたジョブ: <b>{name}</b>","job_dialog_unbookmarked_title":"ブックマークから解除されたジョブ","job_type_adversary_mode":"敵対モード","job_type_air_race":"エアレース","job_type_arena_deathmatch":"アリーナデスマッチ","job_type_arena_war":"アリーナウォーズ","job_type_bike_race":"バイクレース","job_type_capture":"キャプチャー","job_type_contact_mission":"コンタクトのミッション","job_type_deathmatch":"デスマッチ","job_type_drag_race":"ドラッグレース","job_type_drift_race":"ドリフトレース","job_type_foot_race":"徒競走","job_type_hao_special_works_race":"ハオ・スペシャルワークスレース","job_type_heist":"強盗","job_type_heist_prep":"強盗調達","job_type_king_of_the_hill":"キングオブザヒル","job_type_land_race":"ランドレース","job_type_last_team_standing":"ラスト・チーム・アライブ","job_type_mission":"ミッション","job_type_mission_creator":"ミッションクリエイター","job_type_open_wheel_race":"オープンホイールレース","job_type_parachuting":"パラシューティング","job_type_pursuit_race":"追跡レース","job_type_race":"レース","job_type_random_mission":"ランダムなミッション","job_type_special_race":"特殊車両レース","job_type_street_race":"ストリートレース","job_type_stunt_race":"スタントレース","job_type_survival":"サバイバル","job_type_target":"ターゲットアサルトレース","job_type_team_deathmatch":"チームデスマッチ","job_type_team_king_of_the_hill":"チーム・キングオブザヒル","job_type_transform_race":"トランスフォームレース","job_type_unknown":"不明","job_type_vehicle_deathmatch":"マシンデスマッチ","job_type_water_race":"シーレース","lightbox_close_button":"閉じる","login_dialog_body":"このコンテンツを利用するには、サインインする必要があります","login_dialog_signin_button":"サインイン","login_dialog_signup_button":"サインアップ","login_dialog_title":"サインインが必要","masonry_grid_external_store_link":"ストアへの外部リンク","ns_already_subbed_details_amp":"このメールアドレスで既にニュースレターアップデートを受け取っています。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_already_subbed_title":"サブスクリプション登録済み","ns_check_email_details":"ロックスター・ゲームスのメールリストへのサブスクリプション登録を確認するため、登録に使用したメールアドレスに送られたリンクからメールアドレスを認証してください。","ns_check_email_title":"メールを確認してください","ns_confirm_after_register_details":"アカウント作成時にマーケティングメールを受け取ることを選択していません。ニュースレターのサブスクリプション登録をしますか？","ns_confirm_after_register_title":"サブスクリプション登録を承認してください","ns_confirm_details":"下のボタンをクリックすることでロックスター・ゲームスのニュースレターにサブスクリプション登録をすることを承認してください。","ns_confirm_title":"サブスクリプション登録を承認してください","ns_error_generic_details":"現在このメールアドレスをニュースレターに登録することができません。","ns_error_generic_title":"エラー","ns_error_preferences_details":"現在お客様のメールアドレスをニュースレターに登録することができません。アカウント設定のページからメール受信設定を変更するか、後ほど再度お試しください。","ns_error_preferences_title":"エラー","ns_go_back_text":"いいえ、戻ります","ns_manage_prefs_button_text":"受信設定を管理する","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"ロックスター・ゲームスのメールリストに登録されました。登録したメールアドレスに定期的にアップデートが送信されます。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_successfully_subscribed_title":"サブスクリプション登録が完了しました","ns_yes_subscribe_text":"はい、サブスクリプション登録します","web_offer_claim_dialog_close":"閉じる","web_offer_claim_error_state_button":"もう一度試す","web_offer_claim_error_state_icon_label":"エラーアイコン","web_offer_claim_exists_state_icon_label":"成功のアイコン","web_offer_claim_link_account_state_icon_label":"エラーアイコン","web_offer_claim_loading_state":"ロード中","web_offer_claim_success_state_icon_label":"成功のアイコン"},"ko-KR":{"bottom_sheet_modal_close_icon":"닫기","carousel_next_button":"다음","carousel_prev_button":"이전","decorative_video_pause_button_label":"일시 정지","decorative_video_play_button_label":"재생","decorative_video_replay_button_label":"다시 재생","featured_game_breadcrumbs_parent_item":"게임","hero_carousel_pause_button":"일시 정지","hero_carousel_play_button":"재생","hero_carousel_scroll_down_label":"아래로 스크롤","hp_hero_play_button_label":"비디오 재생 중","hp_hero_stop_button_label":"비디오 정지","image_carousel_screen_reader_announcer_label":"{total}의 {selectedTab} 이미지","job_card_bookmark_action":"즐겨찾기","job_card_created_by":"생성됨","job_card_image_alt_text":"{name} 작업 스크린샷","job_card_report_action":"신고","job_card_share_action":"공유","job_card_updated_date":"{date} 업데이트됨","job_card_verified_by":"인증됨","job_dialog_bookmarked_body":"즐겨찾기에 등록한 작업을 보려면 Grand Theft Auto 온라인을 다시 시작해야 합니다 - 작업은 플레이한 후에만 게임 내에서 평가할 수 있습니다.","job_dialog_bookmarked_heading":"즐겨찾기에 등록한 작업: <b>{name}</b>","job_dialog_bookmarked_title":"즐겨찾기에 등록한 작업","job_dialog_confirmation_button":"확인","job_dialog_error_body":"작업 즐겨찾기 등록/해제 중 오류가 발생했습니다. 다시 시도하십시오","job_dialog_error_heading":"작업: <b>{name}</b>","job_dialog_error_title":"오류","job_dialog_unbookmarked_body":"즐겨찾기에서 이 작업을 표시하지 않으려면 Grand Theft Auto 온라인을 다시 시작해야 합니다.","job_dialog_unbookmarked_heading":"즐겨찾기 해제한 작업: <b>{name}</b>","job_dialog_unbookmarked_title":"즐겨찾기 해제한 작업","job_type_adversary_mode":"대적 모드","job_type_air_race":"항공 레이스","job_type_arena_deathmatch":"아레나 데스매치","job_type_arena_war":"아레나 워","job_type_bike_race":"바이크 레이스","job_type_capture":"점령","job_type_contact_mission":"연락책 임무","job_type_deathmatch":"데스매치","job_type_drag_race":"드래그 레이스","job_type_drift_race":"드리프트 레이스","job_type_foot_race":"도보 레이스","job_type_hao_special_works_race":"하오의 스페셜 웍스 레이스 ","job_type_heist":"습격","job_type_heist_prep":"습격 준비","job_type_king_of_the_hill":"킹 오브 더 힐","job_type_land_race":"지상 레이스","job_type_last_team_standing":"라스트 팀 스탠딩","job_type_mission":"임무","job_type_mission_creator":"임무 생성기","job_type_open_wheel_race":"오픈 휠 레이스","job_type_parachuting":"낙하산 강하","job_type_pursuit_race":"추격전 레이스","job_type_race":"레이스","job_type_random_mission":"무작위 임무","job_type_special_race":"특수 차량 레이스","job_type_street_race":"길거리 레이스","job_type_stunt_race":"스턴트 레이스","job_type_survival":"서바이벌","job_type_target":"타겟 어썰트 레이스","job_type_team_deathmatch":"팀 데스매치","job_type_team_king_of_the_hill":"팀 킹 오브 더 힐","job_type_transform_race":"변신 레이스","job_type_unknown":"알 수 없음","job_type_vehicle_deathmatch":"이동 수단 데스매치","job_type_water_race":"해상 레이스","lightbox_close_button":"닫기","login_dialog_body":"이 콘텐츠에 댓글을 남기거나 좋아요를 누르려면 먼저 로그인하십시오","login_dialog_signin_button":"로그인","login_dialog_signup_button":"가입","login_dialog_title":"로그인 필요","masonry_grid_external_store_link":"스토어 외부 링크","ns_already_subbed_details_amp":"이미 이 이메일 주소로 최신 뉴스레터 정보를 수신하고 있습니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_already_subbed_title":"이미 구독 중","ns_check_email_details":"Rockstar Games 이메일 리스트 구독을 확인하려면 가입 시 사용한 이메일 주소로 전송된 링크를 통해 이메일 주소를 인증하십시오.","ns_check_email_title":"이메일 확인하기","ns_confirm_after_register_details":"계정을 생성할 때 마케팅 이메일 수신 동의를 선택하지 않았습니다. 그래도 뉴스레터를 구독하시겠습니까?","ns_confirm_after_register_title":"구독 확인하기","ns_confirm_details":"Rockstar Games 뉴스레터 구독을 확인하려면 아래 버튼을 클릭하십시오.","ns_confirm_title":"구독 확인하기","ns_error_generic_details":"현재 이 이메일 주소로 뉴스레터를 구독할 수 없습니다.","ns_error_generic_title":"오류","ns_error_preferences_details":"현재 해당 이메일 주소로 뉴스레터를 구독할 수 없습니다. 계정 설정 페이지에서 이메일 설정을 변경하거나 나중에 다시 시도하십시오.","ns_error_preferences_title":"오류","ns_go_back_text":"아니오, 뒤로 갑니다","ns_manage_prefs_button_text":"설정 관리","ns_ok_button_text":"확인","ns_successfully_subscribed_details_amp":"Rockstar Games 이메일 리스트를 구독합니다. 가입하신 이메일 주소로 최신 정보가 정기적으로 전달됩니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_successfully_subscribed_title":"구독 완료","ns_yes_subscribe_text":"네, 구독합니다","web_offer_claim_dialog_close":"닫기","web_offer_claim_error_state_button":"다시 시도하기","web_offer_claim_error_state_icon_label":"오류 아이콘","web_offer_claim_exists_state_icon_label":"성공 아이콘","web_offer_claim_link_account_state_icon_label":"오류 아이콘","web_offer_claim_loading_state":"불러오는 중","web_offer_claim_success_state_icon_label":"성공 아이콘"},"pl-PL":{"bottom_sheet_modal_close_icon":"Zamknij","carousel_next_button":"Dalej","carousel_prev_button":"Poprzednie","decorative_video_pause_button_label":"Zatrzymaj","decorative_video_play_button_label":"Odtwórz","decorative_video_replay_button_label":"Odtwórz ponownie","featured_game_breadcrumbs_parent_item":"Gry","hero_carousel_pause_button":"Zatrzymaj","hero_carousel_play_button":"Odtwórz","hero_carousel_scroll_down_label":"Przewiń w dół","hp_hero_play_button_label":"Teraz odtwarzane","hp_hero_stop_button_label":"Wideo zatrzymane","image_carousel_screen_reader_announcer_label":"Wyświetlane {selectedTab} z {total}","job_card_bookmark_action":"Dodaj do zakładek","job_card_created_by":"Stworzone przez","job_card_image_alt_text":"Zrzut ekranu akcji {name}","job_card_report_action":"Zgłoś","job_card_share_action":"Udostępnij","job_card_updated_date":"Zaktualizowano {date}","job_card_verified_by":"Zweryfikowane przez","job_dialog_bookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby zobaczyć tę dodaną do ulubionych akcję. Akcje mogą być ocenione tylko i wyłącznie w grze po ich rozegraniu.","job_dialog_bookmarked_heading":"Akcja dodana do ulubionych: <b>{name}</b>","job_dialog_bookmarked_title":"Akcja dodana do ulubionych","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Wystąpił błąd podczas dodawania/usuwania tej akcji z sekcji ulubionych. Spróbuj ponownie.","job_dialog_error_heading":"Akcja: <b>{name}</b>","job_dialog_error_title":"Błąd","job_dialog_unbookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby akcja nie pojawiała się dłużej w sekcji ulubionych akcji.","job_dialog_unbookmarked_heading":"Akcja usunięta z ulubionych: <b>{name}</b>","job_dialog_unbookmarked_title":"Akcja usunięta z ulubionych","job_type_adversary_mode":"Tryb adwerszarza","job_type_air_race":"Wyścig powietrzny","job_type_arena_deathmatch":"Deathmatch na arenie","job_type_arena_war":"Arena wojny","job_type_bike_race":"Wyścig jednośladów","job_type_capture":"Zdobywanie","job_type_contact_mission":"Misja od kontaktów","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Wyścig równoległy","job_type_drift_race":"Wyścig driftowe","job_type_foot_race":"Wyścig pieszy","job_type_hao_special_works_race":"Wyścigi Hao’s Special Works","job_type_heist":"Napad","job_type_heist_prep":"Misja w terenie","job_type_king_of_the_hill":"Król wzgórza","job_type_land_race":"Wyścig lądowy","job_type_last_team_standing":"Ostatnia drużyna wygrywa","job_type_mission":"Misja","job_type_mission_creator":"Kreator misji","job_type_open_wheel_race":"Wyścig bolidów","job_type_parachuting":"Skoki spadochronowe","job_type_pursuit_race":"Pościg","job_type_race":"Wyścig","job_type_random_mission":"Losowa misja","job_type_special_race":"Wyścig pojazdów specjalnych","job_type_street_race":"Wyścig uliczny","job_type_stunt_race":"Wyścig kaskaderski","job_type_survival":"Walka o przetrwanie","job_type_target":"Wyścig strzelecki","job_type_team_deathmatch":"Deathmatch drużynowy","job_type_team_king_of_the_hill":"Drużynowy Król wzgórza","job_type_transform_race":"Wyścig z transformacją","job_type_unknown":"Nieznane","job_type_vehicle_deathmatch":"Deathmatch w pojazdach","job_type_water_race":"Wyścig morski","lightbox_close_button":"Zamknij","login_dialog_body":"Zaloguj się, aby zapoznać się z zawartością.","login_dialog_signin_button":"Zaloguj się","login_dialog_signup_button":"Zarejestruj się","login_dialog_title":"Wymagane zalogowanie się","masonry_grid_external_store_link":"Odnośnik zewnętrzny do sklepu","ns_already_subbed_details_amp":"Otrzymujesz już powiadomienia o nowościach na ten adres e-mail. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_already_subbed_title":"Subskrypcja jest już aktywna","ns_check_email_details":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej.","ns_check_email_title":"Sprawdź swoją pocztę","ns_confirm_after_register_details":"Nie udzielono zgody na otrzymywanie powiadomień marketingowych przy zakładaniu konta. Czy chcesz subskrybować naszą listę mailingową?","ns_confirm_after_register_title":"Potwierdź swoją subskrypcję","ns_confirm_details":"Potwierdź swoją subskrypcję listy mailingowej Rockstar Games poprzez kliknięcie poniższego przycisku.","ns_confirm_title":"Potwierdź swoją subskrypcję","ns_error_generic_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej.","ns_error_generic_title":"Błąd","ns_error_preferences_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej. Zmień swoje preferencje w ustawieniach swojego konta lub spróbuj ponownie później.","ns_error_preferences_title":"Błąd","ns_go_back_text":"Nie, wróć","ns_manage_prefs_button_text":"Aktualizuj swoje preferencje","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_successfully_subscribed_title":"Pomyślnie zasubskrybowano","ns_yes_subscribe_text":"Tak, subskrybuj","web_offer_claim_dialog_close":"Zamknij","web_offer_claim_error_state_button":"Spróbuj ponownie","web_offer_claim_error_state_icon_label":"Ikona błędu","web_offer_claim_exists_state_icon_label":"Ikona sukcesu","web_offer_claim_link_account_state_icon_label":"Ikona błędu","web_offer_claim_loading_state":"Ładowanie","web_offer_claim_success_state_icon_label":"Ikona sukcesu"},"pt-BR":{"bottom_sheet_modal_close_icon":"Fechar","carousel_next_button":"Próximo","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Iniciar","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Jogos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Iniciar","hero_carousel_scroll_down_label":"Role para baixo","hp_hero_play_button_label":"Vídeo em reprodução","hp_hero_stop_button_label":"Vídeo parado","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Adicionar aos Favoritos","job_card_created_by":"Criado por","job_card_image_alt_text":"Captura de tela do Serviço {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartilhar","job_card_updated_date":"Atualização {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para ver este serviço como um de seus Favoritos. Serviços só podem ser avaliados no jogo, após terem sido jogados.","job_dialog_bookmarked_heading":"Serviço adicionado aos Favoritos: <b>{name}</b>","job_dialog_bookmarked_title":"Serviço adicionado aos Favoritos","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Houve um erro ao tentar adicionar/remover esse serviço aos Favoritos. Tente novamente.","job_dialog_error_heading":"Serviço: <b>{name}</b>","job_dialog_error_title":"Erro","job_dialog_unbookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para não ver mais este serviço como um de seus Favoritos.","job_dialog_unbookmarked_heading":"Serviço removido dos Favoritos: <b>{name}</b>","job_dialog_unbookmarked_title":"Serviço removido dos Favoritos","job_type_adversary_mode":"Modo Adversário","job_type_air_race":"Corrida Aérea","job_type_arena_deathmatch":"Mata-mata da Arena","job_type_arena_war":"Arena de Guerra","job_type_bike_race":"Corrida sobre duas rodas","job_type_capture":"Captura","job_type_contact_mission":"Missão de Contato","job_type_deathmatch":"Mata-mata","job_type_drag_race":"Corrida de Arrancada","job_type_drift_race":"Corrida de Drift","job_type_foot_race":"Corrida a pé","job_type_hao_special_works_race":"Corrida da Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Preliminar do Golpe","job_type_king_of_the_hill":"Marcando Território","job_type_land_race":"Corrida Terrestre","job_type_last_team_standing":"Última Equipe Sobrevivente","job_type_mission":"Missão","job_type_mission_creator":"Criador de Missões","job_type_open_wheel_race":"Corrida de Roda Exposta","job_type_parachuting":"Paraquedismo","job_type_pursuit_race":"Corrida de Perseguição","job_type_race":"Corrida","job_type_random_mission":"Missão aleatória","job_type_special_race":"Corrida de Veículo Especial","job_type_street_race":"Corrida de Rua","job_type_stunt_race":"Corrida Acrobática","job_type_survival":"Sobrevivência","job_type_target":"Corrida de Assalto com Alvos","job_type_team_deathmatch":"Mata-mata em Equipe","job_type_team_king_of_the_hill":"Marcando Território em Equipe","job_type_transform_race":"Corrida Metamorfose","job_type_unknown":"Desconhecido","job_type_vehicle_deathmatch":"Mata-mata em Veículos","job_type_water_race":"Corrida Marítima","lightbox_close_button":"Fechar","login_dialog_body":"É necessário iniciar sessão para interagir com esse conteúdo","login_dialog_signin_button":"Iniciar sessão","login_dialog_signup_button":"Criar conta","login_dialog_title":"É necessário iniciar sessão","masonry_grid_external_store_link":"Link externo para a Loja","ns_already_subbed_details_amp":"Você já está recebendo atualizações da newsletter neste endereço de e-mail. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_already_subbed_title":"Você já se inscreveu","ns_check_email_details":"Para confirmar sua inscrição na lista de e-mails da Rockstar Games, verifique seu endereço de e-mail pelo link enviado para o endereço que você usou para se inscrever.","ns_check_email_title":"Verifique seu e-mail","ns_confirm_after_register_details":"Você escolheu não receber e-mails de marketing quando criou a sua conta. Deseja se inscrever na nosso newsletter?","ns_confirm_after_register_title":"Confirme sua inscrição","ns_confirm_details":"Confirme que você deseja se inscrever na newsletter da Rockstar Games clicando no botão abaixo.","ns_confirm_title":"Confirme sua inscrição","ns_error_generic_details":"No momento, não é possível se inscrever na nossa newsletter usando este endereço de e-mail.","ns_error_generic_title":"Erro","ns_error_preferences_details":"No momento, não é possível se inscrever na nossa newsletter usando o seu endereço de e-mail. Mude suas preferências de e-mail a qualquer momento na página de configurações da sua conta ou tente de novo mais tarde.","ns_error_preferences_title":"Erro","ns_go_back_text":"Não, voltar","ns_manage_prefs_button_text":"Gerenciar preferências","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Você está inscrito na lista de e-mails da Rockstar Games e receberá atualizações periódicas no endereço de e-mail que usou para se inscrever. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_successfully_subscribed_title":"Inscrição confirmada","ns_yes_subscribe_text":"Sim, fazer inscrição","web_offer_claim_dialog_close":"fechar","web_offer_claim_error_state_button":"Tentar novamente","web_offer_claim_error_state_icon_label":"Ícone de erro","web_offer_claim_exists_state_icon_label":"Ícone de êxito","web_offer_claim_link_account_state_icon_label":"Ícone de erro","web_offer_claim_loading_state":"carregando","web_offer_claim_success_state_icon_label":"Ícone de êxito"},"ru-RU":{"bottom_sheet_modal_close_icon":"Закрыть","carousel_next_button":"Далее","carousel_prev_button":"Назад","decorative_video_pause_button_label":"Пауза","decorative_video_play_button_label":"Воспроизвести","decorative_video_replay_button_label":"Повтор","featured_game_breadcrumbs_parent_item":"Игры","hero_carousel_pause_button":"Пауза","hero_carousel_play_button":"Воспроизвести","hero_carousel_scroll_down_label":"Прокрутить вниз","hp_hero_play_button_label":"Воспроизведение видео","hp_hero_stop_button_label":"Видео остановлено","image_carousel_screen_reader_announcer_label":"На экране слайд {selectedTab} из {total}","job_card_bookmark_action":"Отметить","job_card_created_by":"Создан","job_card_image_alt_text":"Снимок экрана дела {name}","job_card_report_action":"Пожаловаться","job_card_share_action":"Поделиться","job_card_updated_date":"Обновлен {date}","job_card_verified_by":"Проверен","job_dialog_bookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы увидеть добавленное в закладки дело. Оценивать дела можно только в игре после прохождения.","job_dialog_bookmarked_heading":"Дело добавлено в закладки: <b>{name}</b>","job_dialog_bookmarked_title":"Дело добавлено в закладки","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Произошла ошибка при попытке добавить дело в закладки или удалить его из закладок. Пожалуйста, повторите попытку","job_dialog_error_heading":"Дело: <b>{name}</b>","job_dialog_error_title":"Ошибка","job_dialog_unbookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы удалить это дело из закладок.","job_dialog_unbookmarked_heading":"Дело удалено из закладок: <b>{name}</b>","job_dialog_unbookmarked_title":"Дело удалено из закладок","job_type_adversary_mode":"Режим противоборства","job_type_air_race":"Гонка по воздуху","job_type_arena_deathmatch":"Перестрелка на арене","job_type_arena_war":"Битва на арене","job_type_bike_race":"Велогонка","job_type_capture":"Захват","job_type_contact_mission":"Задание знакомого","job_type_deathmatch":"Перестрелка","job_type_drag_race":"Драг-гонка","job_type_drift_race":"Дрифтовая гонка","job_type_foot_race":"Пешая гонка","job_type_hao_special_works_race":"Гонка Hao’s Special Works","job_type_heist":"Ограбление","job_type_heist_prep":"Подготовка к ограблению","job_type_king_of_the_hill":"Король горы","job_type_land_race":"Гонка по суше","job_type_last_team_standing":"«Команда уцелевших»","job_type_mission":"Задание","job_type_mission_creator":"Редактор заданий","job_type_open_wheel_race":"Гонки на болидах","job_type_parachuting":"Парашютизм","job_type_pursuit_race":"Гонка «Погоня»","job_type_race":"Гонка","job_type_random_mission":"Случайная миссия","job_type_special_race":"Гонка для особого транспорта","job_type_street_race":"Уличная гонка","job_type_stunt_race":"Каскадерская гонка","job_type_survival":"Выживание","job_type_target":"Гонка с мишенями","job_type_team_deathmatch":"Командная перестрелка","job_type_team_king_of_the_hill":"Команда «Король горы»","job_type_transform_race":"Гонка «Трансформации»","job_type_unknown":"Неизвестно","job_type_vehicle_deathmatch":"Перестрелка на транспорте","job_type_water_race":"Морская гонка","lightbox_close_button":"Закрыть","login_dialog_body":"Выполните вход, чтобы взаимодействовать с этим контентом.","login_dialog_signin_button":"Войти","login_dialog_signup_button":"Регистрация","login_dialog_title":"Необходимо выполнить вход","masonry_grid_external_store_link":"Внешняя ссылка на магазин","ns_already_subbed_details_amp":"Вы уже получаете письма по рассылке на этот адрес электронной почты. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_already_subbed_title":"Подписка уже оформлена","ns_check_email_details":"Чтобы подтвердить подписку на рассылку электронных писем Rockstar Games, пожалуйста, подтвердите адрес электронной почты, нажав на ссылку в письме, полученном на адрес электронной почты, который вы указали при оформлении подписки.","ns_check_email_title":"Проверьте электронную почту","ns_confirm_after_register_details":"Вы не дали согласия на получение рекламных писем во время создания учетной записи. Вы все еще хотите оформить подписку на нашу рассылку?","ns_confirm_after_register_title":"Подтвердите подписку","ns_confirm_details":"Пожалуйста, подтвердите, что вы хотите подписаться на рассылку электронных писем Rockstar Games, нажав на кнопку ниже.","ns_confirm_title":"Подтвердите подписку","ns_error_generic_details":"Невозможно оформить подписку на нашу рассылку для этого адреса электронной почты в данный момент.","ns_error_generic_title":"Ошибка","ns_error_preferences_details":"Невозможно оформить подписку на нашу рассылку для вашего адреса электронной почты в данный момент. Вы можете изменить настройки электронной почты на странице настроек учетной записи или повторить попытку позже.","ns_error_preferences_title":"Ошибка","ns_go_back_text":"Нет, вернуться","ns_manage_prefs_button_text":"Изменить настройки учетной записи","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Подписка на рассылку электронных писем Rockstar Games оформлена, и вы будете регулярно получать новости на адрес электронной почты, указанный при оформлении. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_successfully_subscribed_title":"Подписка оформлена","ns_yes_subscribe_text":"Да, подписаться","web_offer_claim_dialog_close":"закрыть","web_offer_claim_error_state_button":"Попробовать снова","web_offer_claim_error_state_icon_label":"Значок ошибки","web_offer_claim_exists_state_icon_label":"Значок «Успех»","web_offer_claim_link_account_state_icon_label":"Значок ошибки","web_offer_claim_loading_state":"загрузка","web_offer_claim_success_state_icon_label":"Значок «Успех»"},"zh-CN":{"bottom_sheet_modal_close_icon":"关闭","carousel_next_button":"下一个","carousel_prev_button":"上一个","decorative_video_pause_button_label":"暂停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"回放","featured_game_breadcrumbs_parent_item":"游戏","hero_carousel_pause_button":"暂停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下滚动","hp_hero_play_button_label":"视频播放中","hp_hero_stop_button_label":"视频已停止","image_carousel_screen_reader_announcer_label":"正在显示{selectedTab}（共{total}）","job_card_bookmark_action":"收藏","job_card_created_by":"制作者","job_card_image_alt_text":"{name}差事的截图","job_card_report_action":"举报","job_card_share_action":"分享","job_card_updated_date":"更新于{date}","job_card_verified_by":"认证者","job_dialog_bookmarked_body":"您需要重新启动Grand Theft Auto在线模式来查看这项已收藏的差事。只有在游玩了差事后才能在游戏内对它们进行评价。","job_dialog_bookmarked_heading":"已收藏差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏差事","job_dialog_confirmation_button":"确定","job_dialog_error_body":"收藏/取消收藏此差事时出现了一个错误。请稍候再试","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"错误","job_dialog_unbookmarked_body":"需要您重新启动Grand Theft Auto在线模式后，这项差事才会从您的收藏中消失。","job_dialog_unbookmarked_heading":"已取消收藏差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏差事","job_type_adversary_mode":"对抗模式","job_type_air_race":"空中竞速","job_type_arena_deathmatch":"竞技场死斗","job_type_arena_war":"竞技场之战","job_type_bike_race":"两轮车竞速","job_type_capture":"夺取","job_type_contact_mission":"联系人任务","job_type_deathmatch":"死斗游戏","job_type_drag_race":"直线竞速","job_type_drift_race":"漂移竞速","job_type_foot_race":"徒步竞速","job_type_hao_special_works_race":"阿浩特别工坊竞速","job_type_heist":"抢劫任务","job_type_heist_prep":"抢劫前置任务","job_type_king_of_the_hill":"占山为王","job_type_land_race":"陆地竞速","job_type_last_team_standing":"团队生存游戏","job_type_mission":"任务","job_type_mission_creator":"任务制作器","job_type_open_wheel_race":"开轮式竞速","job_type_parachuting":"跳伞","job_type_pursuit_race":"追逐竞速","job_type_race":"竞速","job_type_random_mission":"随机任务","job_type_special_race":"特殊载具竞速","job_type_street_race":"街头竞速","job_type_stunt_race":"特技竞速","job_type_survival":"生存战","job_type_target":"标靶射击竞速","job_type_team_deathmatch":"团队死斗游戏","job_type_team_king_of_the_hill":"团队占山为王","job_type_transform_race":"幻变竞速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"载具死斗游戏","job_type_water_race":"水上竞速","lightbox_close_button":"关闭","login_dialog_body":"您需要先登录才能与该内容进行互动","login_dialog_signin_button":"登录","login_dialog_signup_button":"注册","login_dialog_title":"需要登录","masonry_grid_external_store_link":"前往商店的外部链接","ns_already_subbed_details_amp":"您的电子邮件地址已在接收新闻通讯更新。您可以在账户设置中随时管理您的通信偏好。","ns_already_subbed_title":"已订阅","ns_check_email_details":"要确认您已订阅Rockstar Games电子邮件列表，请通过发送到您订阅时使用的电子邮件地址中的链接验证邮箱。","ns_check_email_title":"检查您的电子邮箱","ns_confirm_after_register_details":"您在创建账户时没有选择接收营销邮件。您还想要订阅我们的新闻通讯吗？","ns_confirm_after_register_title":"确认您的订阅","ns_confirm_details":"请点击下方按钮以确认您想订阅Rockstar Games新闻通讯。","ns_confirm_title":"确认您的订阅","ns_error_generic_details":"我们目前无法用此电子邮件地址订阅新闻通讯。","ns_error_generic_title":"错误","ns_error_preferences_details":"我们目前无法用您的电子邮件地址订阅新闻通讯。请在账户设置页面中修改您的电子邮件偏好，或稍后再试。","ns_error_preferences_title":"错误","ns_go_back_text":"不，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"确定","ns_successfully_subscribed_details_amp":"您现已订阅Rockstar Games邮件通知，您将会在您订阅时使用的电子邮件地址中收到定期更新。您可以在账户设置中随时管理您的通信偏好。","ns_successfully_subscribed_title":"订阅成功","ns_yes_subscribe_text":"是，订阅","web_offer_claim_dialog_close":"关闭","web_offer_claim_error_state_button":"再次尝试","web_offer_claim_error_state_icon_label":"错误图标","web_offer_claim_exists_state_icon_label":"成功图标","web_offer_claim_link_account_state_icon_label":"错误图标","web_offer_claim_loading_state":"正在加载","web_offer_claim_success_state_icon_label":"成功图标"},"zh-TW":{"bottom_sheet_modal_close_icon":"關閉","carousel_next_button":"下一個","carousel_prev_button":"上一個","decorative_video_pause_button_label":"暫停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"重播","featured_game_breadcrumbs_parent_item":"遊戲","hero_carousel_pause_button":"暫停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下捲動","hp_hero_play_button_label":"正播放影片","hp_hero_stop_button_label":"影片已停止","image_carousel_screen_reader_announcer_label":"現正顯示 {selectedTab}（共 {total} 個）","job_card_bookmark_action":"收藏","job_card_created_by":"創作者：","job_card_image_alt_text":"差事 {name} 的擷圖","job_card_report_action":"檢舉","job_card_share_action":"分享","job_card_updated_date":"更新於 {date}","job_card_verified_by":"驗證者：","job_dialog_bookmarked_body":"您需要重啟 GTA 線上模式才能看見此已收藏的差事。您需要完成該差事，才能在遊戲內對其評價。","job_dialog_bookmarked_heading":"已收藏的差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏的差事","job_dialog_confirmation_button":"確定","job_dialog_error_body":"解決這個請求時出現錯誤。請再試一次。","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"錯誤","job_dialog_unbookmarked_body":"您需要重啟 GTA 線上模式才不會再在收藏中看見此差事。","job_dialog_unbookmarked_heading":"已取消收藏的差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏的差事","job_type_adversary_mode":"競爭模式","job_type_air_race":"空中競速","job_type_arena_deathmatch":"鬥技場死鬥遊戲","job_type_arena_war":"決戰鬥技場","job_type_bike_race":"雙輪車競速","job_type_capture":"奪取","job_type_contact_mission":"聯絡人任務","job_type_deathmatch":"死鬥遊戲","job_type_drag_race":"直線競速","job_type_drift_race":"甩尾競速","job_type_foot_race":"賽跑","job_type_hao_special_works_race":"阿浩特製改裝競速","job_type_heist":"搶劫任務","job_type_heist_prep":"搶劫前置任務","job_type_king_of_the_hill":"山頭之王","job_type_land_race":"陸上競速","job_type_last_team_standing":"團隊生存遊戲","job_type_mission":"任務","job_type_mission_creator":"任務製作器","job_type_open_wheel_race":"開輪式競速","job_type_parachuting":"跳傘活動","job_type_pursuit_race":"追緝競速","job_type_race":"競速","job_type_random_mission":"隨機任務","job_type_special_race":"特殊載具競速","job_type_street_race":"街頭競速","job_type_stunt_race":"特技競速","job_type_survival":"生存戰","job_type_target":"射靶競速","job_type_team_deathmatch":"團隊死鬥遊戲","job_type_team_king_of_the_hill":"團隊山頭之王","job_type_transform_race":"變形狂飆競速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"載具死鬥遊戲","job_type_water_race":"水上競速","lightbox_close_button":"關閉","login_dialog_body":"您需要先登入才能進行操作","login_dialog_signin_button":"登入","login_dialog_signup_button":"註冊","login_dialog_title":"必須登入","masonry_grid_external_store_link":"前往商店的外部連結","ns_already_subbed_details_amp":"電子報更新已以此電子郵件地址寄送給您。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_already_subbed_title":"已經訂閱","ns_check_email_details":"為了確認您的 Rockstar Games 電子郵件通知訂閱，請以寄送到您訂閱電子郵件地址的連結，驗證您的電子郵件地址。","ns_check_email_title":"檢查您的電子郵件","ns_confirm_after_register_details":"在建立帳戶時，您並沒有選擇可接收行銷電子郵件。您仍想訂閱我們的電子報？","ns_confirm_after_register_title":"確認您的訂閱","ns_confirm_details":"請點擊以下按鈕，以確認您想訂閱 Rockstar Games 電子報。","ns_confirm_title":"確認您的訂閱","ns_error_generic_details":"我們現在無法將此電子郵件地址訂閱到我們的電子報。","ns_error_generic_title":"錯誤","ns_error_preferences_details":"我們現在無法將您的電子郵件地址訂閱到我們的電子報。在帳戶設定頁面變更您的電子郵件偏好設定，或稍後再試。","ns_error_preferences_title":"錯誤","ns_go_back_text":"否，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"確定","ns_successfully_subscribed_details_amp":"您現在已訂閱 Rockstar Games 電子郵件通知，將會在訂閱的電子郵件地址收到定期更新。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_successfully_subscribed_title":"成功訂閱","ns_yes_subscribe_text":"是，訂閱","web_offer_claim_dialog_close":"關閉","web_offer_claim_error_state_button":"再試一次","web_offer_claim_error_state_icon_label":"錯誤圖示","web_offer_claim_exists_state_icon_label":"成功圖示","web_offer_claim_link_account_state_icon_label":"錯誤圖示","web_offer_claim_loading_state":"正在載入","web_offer_claim_success_state_icon_label":"成功圖示"}}'),
-        A = e => (0, I.withIntl)(e, z);
-      var E = t(84173),
+        A = t(42909);
+      const I = JSON.parse('{"de-DE":{"bottom_sheet_modal_close_icon":"Schließen","carousel_next_button":"Weiter","carousel_prev_button":"Zurück","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Abspielen","decorative_video_replay_button_label":"Wiederholen","featured_game_breadcrumbs_parent_item":"Spiele","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Abspielen","hero_carousel_scroll_down_label":"Nach unten scrollen","hp_hero_play_button_label":"Video wird wiedergegeben","hp_hero_stop_button_label":"Video angehalten","image_carousel_screen_reader_announcer_label":"Jetzt angezeigt: {selectedTab} von {total}","job_card_bookmark_action":"Markieren","job_card_created_by":"Erstellt von","job_card_image_alt_text":"Screenshot vom Job {name}","job_card_report_action":"Melden","job_card_share_action":"Teilen","job_card_updated_date":"Aktualisiert: {date}","job_card_verified_by":"Verifiziert von","job_dialog_bookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen markierten Job sehen zu können – Jobs können nur im Spiel bewertet werden, nachdem sie gespielt wurden.","job_dialog_bookmarked_heading":"Job markiert: <b>{name}</b>","job_dialog_bookmarked_title":"Job markiert","job_dialog_confirmation_button":"OKAY","job_dialog_error_body":"Es gab einen Fehler bei dem Versuch, einen Job zu markieren/eine Markierung zu entfernen. Bitte versuche es erneut.","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Fehler","job_dialog_unbookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen Job nicht länger in deinen Markierungen sehen zu können.","job_dialog_unbookmarked_heading":"Job nicht mehr markiert: <b>{name}</b>","job_dialog_unbookmarked_title":"Job nicht mehr markiert","job_type_adversary_mode":"Gegner-Modus","job_type_air_race":"Luftrennen","job_type_arena_deathmatch":"Arena-Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Radrennen","job_type_capture":"Capture","job_type_contact_mission":"Kontaktmission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Dragsterrennen","job_type_drift_race":"Driftrennen","job_type_foot_race":"Rennen zu Fuß","job_type_hao_special_works_race":"HSW-Rennen","job_type_heist":"Raubüberfall","job_type_heist_prep":"Raubüberfall-Austrüstungsmission","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Landrennen","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission-Creator","job_type_open_wheel_race":"Open-Wheel-Rennen","job_type_parachuting":"Fallschirmsprung","job_type_pursuit_race":"Verfolgungsrennen","job_type_race":"Rennen","job_type_random_mission":"Zufällige Mission","job_type_special_race":"Spezialrennen","job_type_street_race":"Straßenrennen","job_type_stunt_race":"Stuntrennen","job_type_survival":"Überlebenskampf","job_type_target":"Zielscheibenrennen","job_type_team_deathmatch":"Team-Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Verwandlungsrennen","job_type_unknown":"Unbekannt","job_type_vehicle_deathmatch":"Fahrzeug-Deathmatch","job_type_water_race":"Seerennen","lightbox_close_button":"Schließen","login_dialog_body":"Du musst dich erst anmelden, um diese Inhalte zu sehen.","login_dialog_signin_button":"Anmelden","login_dialog_signup_button":"Registrieren","login_dialog_title":"Anmelden erforderlich","masonry_grid_external_store_link":"Externer Link zum Store","ns_already_subbed_details_amp":"Du erhältst bereits Newsletter-Updates an diese E-Mail-Adresse. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_already_subbed_title":"Bereits abonniert","ns_check_email_details":"Bitte verifiziere deine E-Mail-Adresse über den Link, der an die E-Mail-Adresse geschickt wurde, mit der du dich angemeldet hast, um dein Abo für die E-Mail-Liste von Rockstar Games zu bestätigen.","ns_check_email_title":"Überprüfe deine E-Mails","ns_confirm_after_register_details":"Du hast dich während der Kontoerstellung nicht für Werbe-E-Mails angemeldet. Möchtest du immer noch unseren Newsletter abonnieren?","ns_confirm_after_register_title":"Bestätige dein Abo","ns_confirm_details":"Bitte drücke auf den Knopf unten, um zu bestätigen, dass du den Newsletter von Rockstar Games abonnieren möchtest.","ns_confirm_title":"Bestätige dein Abo","ns_error_generic_details":"Wir können diese E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden.","ns_error_generic_title":"Fehler","ns_error_preferences_details":"Wir können deine E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden. Ändere deine Präferenzen bezüglich E-Mails in den Einstellungen deines Kontos oder versuche es später erneut.","ns_error_preferences_title":"Fehler","ns_go_back_text":"Nein, zurückkehren","ns_manage_prefs_button_text":"Präferenzen verwalten","ns_ok_button_text":"OKAY","ns_successfully_subscribed_details_amp":"Du hast dich bei der E-Mail-Liste von Rockstar Games angemeldet und erhältst regelmäßig Updates an die E-Mail-Adresse, mit der du dich angemeldet hast. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_successfully_subscribed_title":"Erfolgreich abonniert","ns_yes_subscribe_text":"Ja, abonnieren","web_offer_claim_dialog_close":"schließen","web_offer_claim_error_state_button":"Erneut versuchen","web_offer_claim_error_state_icon_label":"Fehler-Symbol","web_offer_claim_exists_state_icon_label":"Erfolgssymbol","web_offer_claim_link_account_state_icon_label":"Fehler-Symbol","web_offer_claim_loading_state":"lädt","web_offer_claim_success_state_icon_label":"Erfolgssymbol"},"en-US":{"bottom_sheet_modal_close_icon":"Close","carousel_next_button":"Next","carousel_prev_button":"Previous","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Play","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Games","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Play","hero_carousel_scroll_down_label":"Scroll Down","hp_hero_play_button_label":"Video Playing","hp_hero_stop_button_label":"Video Stopped","image_carousel_screen_reader_announcer_label":"Now showing {selectedTab} of {total}","job_card_bookmark_action":"Bookmark","job_card_created_by":"Created by","job_card_image_alt_text":"Screenshot of {name} job","job_card_report_action":"Report","job_card_share_action":"Share","job_card_updated_date":"Updated {date}","job_card_verified_by":"Verified by","job_dialog_bookmarked_body":"You will need to restart Grand Theft Auto Online to see this bookmarked job - jobs can only be rated in-game, after they have been played.","job_dialog_bookmarked_heading":"Job Bookmarked: <b>{name}</b>","job_dialog_bookmarked_title":"Job Bookmarked","job_dialog_confirmation_button":"OK","job_dialog_error_body":"There was an error when attempting to bookmark/unbookmark the job. Please try again","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"You will need to restart Grand Theft Auto Online to no longer see this job in your bookmarks.","job_dialog_unbookmarked_heading":"Job Unbookmarked: <b>{name}</b>","job_dialog_unbookmarked_title":"Job Unbookmarked","job_type_adversary_mode":"Adversary Mode","job_type_air_race":"Air Race","job_type_arena_deathmatch":"Arena Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Bike Race","job_type_capture":"Capture","job_type_contact_mission":"Contact Mission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Drag Race","job_type_drift_race":"Drift Race","job_type_foot_race":"Foot Race","job_type_hao_special_works_race":"Hao\'s Special Works Race","job_type_heist":"Heist","job_type_heist_prep":"Heist Prep","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Land Race","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission Creator","job_type_open_wheel_race":"Open Wheel Race","job_type_parachuting":"Parachuting","job_type_pursuit_race":"Pursuit Race","job_type_race":"Race","job_type_random_mission":"Random Mission","job_type_special_race":"Special Vehicle Race","job_type_street_race":"Street Race","job_type_stunt_race":"Stunt Race","job_type_survival":"Survival","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Team Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Transform Race","job_type_unknown":"Unknown","job_type_vehicle_deathmatch":"Vehicle Deathmatch","job_type_water_race":"Sea Race","lightbox_close_button":"Close","login_dialog_body":"You need to sign in first to interact with this content","login_dialog_signin_button":"Sign In","login_dialog_signup_button":"Sign Up","login_dialog_title":"Sign In Required","masonry_grid_external_store_link":"External link to Store","ns_already_subbed_details_amp":"You are already receiving newsletter updates at this email address. Manage your communication preferences at any time in your account settings.","ns_already_subbed_title":"Already Subscribed","ns_check_email_details":"To confirm your subscription to the Rockstar Games Email List, please verify your email address via the link sent to the email address you’ve signed up with.","ns_check_email_title":"Check Your Email","ns_confirm_after_register_details":"You did not opt-in to receive marketing emails during account creation. Would you still like to subscribe to our newsletter?","ns_confirm_after_register_title":"Confirm your subscription","ns_confirm_details":"Please confirm that you would like to subscribe to the Rockstar Games Newsletter by clicking the button below.","ns_confirm_title":"Confirm your subscription","ns_error_generic_details":"We cannot sign up this email address to our newsletter at this time.","ns_error_generic_title":"Error","ns_error_preferences_details":"We cannot sign up your email address to our newsletter at this time. Change your email preferences on your account settings page or try again later.","ns_error_preferences_title":"Error","ns_go_back_text":"No, Go Back","ns_manage_prefs_button_text":"Manage Preferences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"You are now signed up to the Rockstar Games Email List and will receive regular updates to the email address you’ve signed up with. Manage your communication preferences at any time in your account settings.","ns_successfully_subscribed_title":"Successfully Subscribed","ns_yes_subscribe_text":"Yes, Subscribe","web_offer_claim_dialog_close":"close","web_offer_claim_error_state_button":"Try Again","web_offer_claim_error_state_icon_label":"Error Icon","web_offer_claim_exists_state_icon_label":"Success Icon","web_offer_claim_link_account_state_icon_label":"Error Icon","web_offer_claim_loading_state":"loading","web_offer_claim_success_state_icon_label":"Success Icon"},"es-ES":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Volver a ver","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo vídeo","hp_hero_stop_button_label":"Vídeo en pausa","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creada por","job_card_image_alt_text":"Captura de pantalla de la actividad {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizada el {date}","job_card_verified_by":"Verificada por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Ha habido un error al intentar marcar o eliminar la marca de esta actividad. Vuelve a intentarlo","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tu lista de actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad no marcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad no marcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena War","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misiones de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de drift","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar del golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de coches de competición","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Partida de supervivencia","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Para interactuar con este contenido debes iniciar sesión.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Debes iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín de noticias en este correo electrónico. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_already_subbed_title":"Ya tienes una suscripción","ns_check_email_details":"Para confirmar tu suscripción a la lista de correo de Rockstar Games, verifica tu correo electrónico a través del enlace enviado al correo electrónico con el que te has suscrito.","ns_check_email_title":"Comprueba tu correo electrónico","ns_confirm_after_register_details":"No te has suscrito a los correos electrónicos comerciales al crear tu cuenta. ¿Quieres suscribirte a nuestro boletín de noticias?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz click en el botón para confirmar que quieres suscribirte al boletín de noticias de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con este correo electrónico.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con tu correo electrónico. Cambia tus preferencias de correo electrónico en la página de ajustes de tu cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar tus preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Te has suscrito a la lista de correo de Rockstar Games y recibirás actualizaciones en el correo electrónico con el que te has suscrito. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_successfully_subscribed_title":"Te has suscrito","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"Cerrar","web_offer_claim_error_state_button":"Vuelve a intentarlo","web_offer_claim_error_state_icon_label":"Icono de error","web_offer_claim_exists_state_icon_label":"Icono de aprobación","web_offer_claim_link_account_state_icon_label":"Icono de error","web_offer_claim_loading_state":"Cargando","web_offer_claim_success_state_icon_label":"Icono de aprobación"},"es-MX":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Repetir","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo video","hp_hero_stop_button_label":"Video detenido","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creado por","job_card_image_alt_text":"Captura de pantalla del trabajo {name}","job_card_report_action":"Reportar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizado {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Las actividades solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Se produjo un error al intentar marcar o desmarcar la actividad. Inténtalo de nuevo.","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tus actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad desmarcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad desmarcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena de Motores","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misión de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de derrapes","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar de golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de ruedas descubiertas","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Supervivencia","job_type_target":"Carrera de ataque al objetivo","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Necesitas iniciar sesión para poder interactuar con este contenido.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Necesitas iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín en esta dirección de correo electrónico. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_already_subbed_title":"Ya cuentas con una suscripción","ns_check_email_details":"Verifica tu dirección de correo electrónico mediante el enlace que enviamos al correo con el que te registraste para confirmar la suscripción a la lista de correos de Rockstar Games.","ns_check_email_title":"Verifica tu dirección de correo electrónico","ns_confirm_after_register_details":"No optaste por recibir correos con publicidad durante la creación de la cuenta. ¿Quieres suscribirte a nuestro boletín de todos modos?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz clic en el botón a continuación para confirmar que quieres suscribirte al boletín de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento, no podemos registrar esta dirección de correo electrónico a nuestro boletín.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento, no podemos registrar tu dirección de correo electrónico a nuestro boletín. Modifica las preferencias de tu correo desde la página de ajustes de la cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Cuentas con una suscripción a la lista de correos de Rockstar Games y recibirás actualizaciones habituales a la dirección de correo electrónico con la que te registraste. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_successfully_subscribed_title":"Suscripción exitosa","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"cerrar","web_offer_claim_error_state_button":"Volver a intentar","web_offer_claim_error_state_icon_label":"Ícono de error","web_offer_claim_exists_state_icon_label":"Ícono de aprobado","web_offer_claim_link_account_state_icon_label":"Ícono de error","web_offer_claim_loading_state":"cargando","web_offer_claim_success_state_icon_label":"Ícono de aprobado"},"fr-FR":{"bottom_sheet_modal_close_icon":"Fermer","carousel_next_button":"Suivant","carousel_prev_button":"Précédent","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Lecture","decorative_video_replay_button_label":"Relire","featured_game_breadcrumbs_parent_item":"Jeux","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Lecture","hero_carousel_scroll_down_label":"Faire défiler vers le bas","hp_hero_play_button_label":"Vidéo en cours de lecture","hp_hero_stop_button_label":"Vidéo arrêtée","image_carousel_screen_reader_announcer_label":"Affichage de {selectedTab} sur {total}","job_card_bookmark_action":"Ajouter aux favoris","job_card_created_by":"Créé par","job_card_image_alt_text":"Capture d\'écran de la mission {name}","job_card_report_action":"Effectuer un signalement","job_card_share_action":"Partager","job_card_updated_date":"Dernière modification : {date}","job_card_verified_by":"Vérifié par","job_dialog_bookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour voir cette mission ajoutée aux favoris. Les missions ne peuvent être notées qu\'en jeu, après avoir été jouées.","job_dialog_bookmarked_heading":"Mission ajoutée aux favoris : <b>{name}</b>","job_dialog_bookmarked_title":"Mission ajoutée aux favoris","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Une erreur est survenue lors de l\'ajout/du retrait de la mission de la liste des favoris. Veuillez réessayer.","job_dialog_error_heading":"Mission : <b>{name}</b>","job_dialog_error_title":"Erreur","job_dialog_unbookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour ne plus voir cette mission dans vos favoris.","job_dialog_unbookmarked_heading":"Mission retirée des favoris : <b>{name}</b>","job_dialog_unbookmarked_title":"Mission retirée des favoris","job_type_adversary_mode":"Mode rivalité","job_type_air_race":"Course aérienne","job_type_arena_deathmatch":"Affrontement en arène","job_type_arena_war":"Guerre d\'arène","job_type_bike_race":"Course à moto","job_type_capture":"Capture","job_type_contact_mission":"Mission de contact","job_type_deathmatch":"Affrontement","job_type_drag_race":"Course de dragster","job_type_drift_race":"Course de drift","job_type_foot_race":"Course à pied","job_type_hao_special_works_race":"Course d\'Hao\'s Special Works","job_type_heist":"Braquage","job_type_heist_prep":"Préparation de braquage","job_type_king_of_the_hill":"Conquête","job_type_land_race":"Course terrestre","job_type_last_team_standing":"Extermination","job_type_mission":"Mission","job_type_mission_creator":"Éditeur de missions","job_type_open_wheel_race":"Course d\'ultralégères","job_type_parachuting":"Saut en parachute","job_type_pursuit_race":"Course de poursuite","job_type_race":"Course","job_type_random_mission":"Mission aléatoire","job_type_special_race":"Course de véhicules spéciaux","job_type_street_race":"Course de rue","job_type_stunt_race":"Course nautique","job_type_survival":"Survie","job_type_target":"Course aux points","job_type_team_deathmatch":"Affrontement en équipe","job_type_team_king_of_the_hill":"Conquête en équipe","job_type_transform_race":"Course polymorphes","job_type_unknown":"Inconnu","job_type_vehicle_deathmatch":"Affrontement motorisé","job_type_water_race":"Course nautique","lightbox_close_button":"Fermer","login_dialog_body":"Vous devez vous connecter pour interagir avec ce contenu.","login_dialog_signin_button":"Se connecter","login_dialog_signup_button":"Créer un compte","login_dialog_title":"Connexion requise","masonry_grid_external_store_link":"Lien externe vers la boutique","ns_already_subbed_details_amp":"Vous êtes déjà abonné(e) à la newsletter avec cette adresse e-mail. Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_already_subbed_title":"Vous êtes déjà abonné(e)","ns_check_email_details":"Pour confirmer votre abonnement à la liste de diffusion de Rockstar Games, veuillez vérifier votre adresse e-mail en cliquant sur le lien envoyé à l\'adresse e-mail avec laquelle vous vous êtes abonné(e).","ns_check_email_title":"Vérifiez votre adresse e-mail","ns_confirm_after_register_details":"Vous avez choisi de ne pas recevoir d\'e-mails publicitaires lors de la création de votre compte. Voulez-vous toujours vous abonner à notre newsletter ?","ns_confirm_after_register_title":"Confirmez votre abonnement","ns_confirm_details":"Veuillez confirmer que vous souhaitez vous abonner à la newsletter de Rockstar Games en cliquant sur le bouton ci-dessous.","ns_confirm_title":"Confirmez votre abonnement","ns_error_generic_details":"Nous ne pouvons pas abonner cette adresse e-mail à notre newsletter pour l\'instant.","ns_error_generic_title":"Erreur","ns_error_preferences_details":"Nous ne pouvons pas abonner votre adresse e-mail à notre newsletter pour l\'instant. Modifiez vos préférences concernant les e-mails sur la page des paramètres de votre compte ou réessayez plus tard.","ns_error_preferences_title":"Erreur","ns_go_back_text":"Non, retour","ns_manage_prefs_button_text":"Gérer vos préférences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Vous êtes désormais abonné(e) à la liste de diffusion de Rockstar Games. Vous recevrez des mises à jour régulières à l\'adresse e-mail avec laquelle vous vous êtes abonné(e). Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_successfully_subscribed_title":"Abonnement effectué","ns_yes_subscribe_text":"Oui, je m\'abonne","web_offer_claim_dialog_close":"Fermer","web_offer_claim_error_state_button":"Réessayer","web_offer_claim_error_state_icon_label":"Icône d\'erreur","web_offer_claim_exists_state_icon_label":"Icône de réussite","web_offer_claim_link_account_state_icon_label":"Icône d\'erreur","web_offer_claim_loading_state":"Chargement","web_offer_claim_success_state_icon_label":"Icône de réussite"},"it-IT":{"bottom_sheet_modal_close_icon":"Chiudi","carousel_next_button":"Successivo","carousel_prev_button":"Precedente","decorative_video_pause_button_label":"Pausa","decorative_video_play_button_label":"Riproduci","decorative_video_replay_button_label":"Riproduci di nuovo","featured_game_breadcrumbs_parent_item":"Giochi","hero_carousel_pause_button":"Pausa","hero_carousel_play_button":"Riproduci","hero_carousel_scroll_down_label":"Scorri in basso","hp_hero_play_button_label":"Video in riproduzione","hp_hero_stop_button_label":"Riproduzione video interrotta","image_carousel_screen_reader_announcer_label":"In riproduzione: {selectedTab} di {total}","job_card_bookmark_action":"Aggiungi ai preferiti","job_card_created_by":"Creato da","job_card_image_alt_text":"Screenshot dell\'attività {name}","job_card_report_action":"Segnala","job_card_share_action":"Condividi","job_card_updated_date":"Aggiornato il {date}","job_card_verified_by":"Verificato da","job_dialog_bookmarked_body":"Per visualizzare questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online. Le attività possono essere valutate solo all\'interno del gioco, dopo averle giocate.","job_dialog_bookmarked_heading":"Attività aggiunta ai preferiti: <b>{name}</b>","job_dialog_bookmarked_title":"Attività aggiunta ai preferiti","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Si è verificato un errore durante l’aggiunta ai/la rimozione dai preferiti dell’attività. Riprova più tardi","job_dialog_error_heading":"Attività: <b>{name}</b>","job_dialog_error_title":"Errore","job_dialog_unbookmarked_body":"Per non visualizzare più questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online.","job_dialog_unbookmarked_heading":"Attività rimossa dai preferiti: <b>{name}</b>","job_dialog_unbookmarked_title":"Attività rimossa dai preferiti","job_type_adversary_mode":"Modalità Competizione","job_type_air_race":"Gara aerea","job_type_arena_deathmatch":"Deathmatch nell\'Arena","job_type_arena_war":"Arena War","job_type_bike_race":"Gara su due ruote","job_type_capture":"Cattura","job_type_contact_mission":"Missione dei contatti","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Gara drag","job_type_drift_race":"Gara drift","job_type_foot_race":"Gara a piedi","job_type_hao_special_works_race":"Gara di Hao\'s Special Works","job_type_heist":"Colpi","job_type_heist_prep":"Missione preliminare del colpo","job_type_king_of_the_hill":"Re della collina","job_type_land_race":"Gara terrestre","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Missione","job_type_mission_creator":"Creatore di missioni","job_type_open_wheel_race":"Gara per ruote scoperte","job_type_parachuting":"Paracadutismo","job_type_pursuit_race":"Inseguimenti","job_type_race":"Gara","job_type_random_mission":"Missione casuale","job_type_special_race":"Gara con veicoli speciali","job_type_street_race":"Gara clandestina","job_type_stunt_race":"Gara stunt","job_type_survival":"Sopravvivenza","job_type_target":"Gara al bersaglio","job_type_team_deathmatch":"Deathmatch a squadre","job_type_team_king_of_the_hill":"Re della collina a squadre","job_type_transform_race":"Gara multiveicolo","job_type_unknown":"Sconosciuto","job_type_vehicle_deathmatch":"Deathmatch con veicoli","job_type_water_race":"Gara acquatica","lightbox_close_button":"Chiudi","login_dialog_body":"È necessario eseguire l’accesso prima di poter interagire con questo contenuto","login_dialog_signin_button":"Accedi","login_dialog_signup_button":"Registrati","login_dialog_title":"È necessario eseguire l’accesso","masonry_grid_external_store_link":"Link esterno per il Negozio","ns_already_subbed_details_amp":"Stai già usando questo indirizzo email per ricevere la newsletter. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_already_subbed_title":"Sei già iscritto","ns_check_email_details":"Per confermare la tua iscrizione alla mailing list di Rockstar Games, verifica il tuo indirizzo email tramite il link che ti abbiamo inviato all’indirizzo email che hai usato per iscriverti.","ns_check_email_title":"Controlla la tua mail","ns_confirm_after_register_details":"Non hai acconsentito a ricevere le email di marketing durante la creazione dell\'account. Vuoi ancora iscriverti alla nostra newsletter?","ns_confirm_after_register_title":"Conferma la tua iscrizione","ns_confirm_details":"Conferma che vuoi iscriverti alla Newsletter di Rockstar Games cliccando sul pulsante qui sotto.","ns_confirm_title":"Conferma la tua iscrizione","ns_error_generic_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento.","ns_error_generic_title":"Errore","ns_error_preferences_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento. Modifica le preferenze della tua email nella pagina delle impostazioni dell’account o riprova più tardi.","ns_error_preferences_title":"Errore","ns_go_back_text":"No, torna indietro","ns_manage_prefs_button_text":"Gestisci le preferenze","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Hai effettuato l’iscrizione alla mailing list di Rockstar Games e riceverai regolarmente gli aggiornamenti all’indirizzo email che hai usato per iscriverti. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_successfully_subscribed_title":"Iscrizione effettuata con successo","ns_yes_subscribe_text":"Sì, iscriviti","web_offer_claim_dialog_close":"chiudi","web_offer_claim_error_state_button":"Riprova","web_offer_claim_error_state_icon_label":"Icona Errore","web_offer_claim_exists_state_icon_label":"Icona di successo","web_offer_claim_link_account_state_icon_label":"Icona Errore","web_offer_claim_loading_state":"caricamento","web_offer_claim_success_state_icon_label":"Icona di successo"},"ja-JP":{"bottom_sheet_modal_close_icon":"閉じる","carousel_next_button":"次へ","carousel_prev_button":"前へ","decorative_video_pause_button_label":"一時停止","decorative_video_play_button_label":"再生","decorative_video_replay_button_label":"もう一回見る","featured_game_breadcrumbs_parent_item":"ゲーム","hero_carousel_pause_button":"一時停止","hero_carousel_play_button":"再生","hero_carousel_scroll_down_label":"下にスクロール","hp_hero_play_button_label":"ビデオ再生中","hp_hero_stop_button_label":"ビデオ停止中","image_carousel_screen_reader_announcer_label":"{total}のうち{selectedTab}を表示中","job_card_bookmark_action":"ブックマーク","job_card_created_by":"により作成","job_card_image_alt_text":"ジョブ{name}のスクリーンショット","job_card_report_action":"報告","job_card_share_action":"共有","job_card_updated_date":"{date}に更新","job_card_verified_by":"により認証","job_dialog_bookmarked_body":"ブックマークされたジョブを閲覧するには「GTAオンライン」を再起動する必要があります - ジョブは実際にプレイした後でなければ、ゲーム内で評価することはできません。","job_dialog_bookmarked_heading":"ブックマークされたジョブ: <b>{name}</b>","job_dialog_bookmarked_title":"ブックマークされたジョブ","job_dialog_confirmation_button":"OK","job_dialog_error_body":"ジョブをブックマーク/ブックマーク解除を試みた際にエラーが起こりました。もう一度お試しください","job_dialog_error_heading":"ジョブ: <b>{name}</b>","job_dialog_error_title":"エラー","job_dialog_unbookmarked_body":"ブックマークから解除たジョブを削除するには「GTAオンライン」を再起動する必要があります。","job_dialog_unbookmarked_heading":"ブックマークから解除されたジョブ: <b>{name}</b>","job_dialog_unbookmarked_title":"ブックマークから解除されたジョブ","job_type_adversary_mode":"敵対モード","job_type_air_race":"エアレース","job_type_arena_deathmatch":"アリーナデスマッチ","job_type_arena_war":"アリーナウォーズ","job_type_bike_race":"バイクレース","job_type_capture":"キャプチャー","job_type_contact_mission":"コンタクトのミッション","job_type_deathmatch":"デスマッチ","job_type_drag_race":"ドラッグレース","job_type_drift_race":"ドリフトレース","job_type_foot_race":"徒競走","job_type_hao_special_works_race":"ハオ・スペシャルワークスレース","job_type_heist":"強盗","job_type_heist_prep":"強盗調達","job_type_king_of_the_hill":"キングオブザヒル","job_type_land_race":"ランドレース","job_type_last_team_standing":"ラスト・チーム・アライブ","job_type_mission":"ミッション","job_type_mission_creator":"ミッションクリエイター","job_type_open_wheel_race":"オープンホイールレース","job_type_parachuting":"パラシューティング","job_type_pursuit_race":"追跡レース","job_type_race":"レース","job_type_random_mission":"ランダムなミッション","job_type_special_race":"特殊車両レース","job_type_street_race":"ストリートレース","job_type_stunt_race":"スタントレース","job_type_survival":"サバイバル","job_type_target":"ターゲットアサルトレース","job_type_team_deathmatch":"チームデスマッチ","job_type_team_king_of_the_hill":"チーム・キングオブザヒル","job_type_transform_race":"トランスフォームレース","job_type_unknown":"不明","job_type_vehicle_deathmatch":"マシンデスマッチ","job_type_water_race":"シーレース","lightbox_close_button":"閉じる","login_dialog_body":"このコンテンツを利用するには、サインインする必要があります","login_dialog_signin_button":"サインイン","login_dialog_signup_button":"サインアップ","login_dialog_title":"サインインが必要","masonry_grid_external_store_link":"ストアへの外部リンク","ns_already_subbed_details_amp":"このメールアドレスで既にニュースレターアップデートを受け取っています。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_already_subbed_title":"サブスクリプション登録済み","ns_check_email_details":"ロックスター・ゲームスのメールリストへのサブスクリプション登録を確認するため、登録に使用したメールアドレスに送られたリンクからメールアドレスを認証してください。","ns_check_email_title":"メールを確認してください","ns_confirm_after_register_details":"アカウント作成時にマーケティングメールを受け取ることを選択していません。ニュースレターのサブスクリプション登録をしますか？","ns_confirm_after_register_title":"サブスクリプション登録を承認してください","ns_confirm_details":"下のボタンをクリックすることでロックスター・ゲームスのニュースレターにサブスクリプション登録をすることを承認してください。","ns_confirm_title":"サブスクリプション登録を承認してください","ns_error_generic_details":"現在このメールアドレスをニュースレターに登録することができません。","ns_error_generic_title":"エラー","ns_error_preferences_details":"現在お客様のメールアドレスをニュースレターに登録することができません。アカウント設定のページからメール受信設定を変更するか、後ほど再度お試しください。","ns_error_preferences_title":"エラー","ns_go_back_text":"いいえ、戻ります","ns_manage_prefs_button_text":"受信設定を管理する","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"ロックスター・ゲームスのメールリストに登録されました。登録したメールアドレスに定期的にアップデートが送信されます。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_successfully_subscribed_title":"サブスクリプション登録が完了しました","ns_yes_subscribe_text":"はい、サブスクリプション登録します","web_offer_claim_dialog_close":"閉じる","web_offer_claim_error_state_button":"もう一度試す","web_offer_claim_error_state_icon_label":"エラーアイコン","web_offer_claim_exists_state_icon_label":"成功のアイコン","web_offer_claim_link_account_state_icon_label":"エラーアイコン","web_offer_claim_loading_state":"ロード中","web_offer_claim_success_state_icon_label":"成功のアイコン"},"ko-KR":{"bottom_sheet_modal_close_icon":"닫기","carousel_next_button":"다음","carousel_prev_button":"이전","decorative_video_pause_button_label":"일시 정지","decorative_video_play_button_label":"재생","decorative_video_replay_button_label":"다시 재생","featured_game_breadcrumbs_parent_item":"게임","hero_carousel_pause_button":"일시 정지","hero_carousel_play_button":"재생","hero_carousel_scroll_down_label":"아래로 스크롤","hp_hero_play_button_label":"비디오 재생 중","hp_hero_stop_button_label":"비디오 정지","image_carousel_screen_reader_announcer_label":"{total}의 {selectedTab} 이미지","job_card_bookmark_action":"즐겨찾기","job_card_created_by":"생성됨","job_card_image_alt_text":"{name} 작업 스크린샷","job_card_report_action":"신고","job_card_share_action":"공유","job_card_updated_date":"{date} 업데이트됨","job_card_verified_by":"인증됨","job_dialog_bookmarked_body":"즐겨찾기에 등록한 작업을 보려면 Grand Theft Auto 온라인을 다시 시작해야 합니다 - 작업은 플레이한 후에만 게임 내에서 평가할 수 있습니다.","job_dialog_bookmarked_heading":"즐겨찾기에 등록한 작업: <b>{name}</b>","job_dialog_bookmarked_title":"즐겨찾기에 등록한 작업","job_dialog_confirmation_button":"확인","job_dialog_error_body":"작업 즐겨찾기 등록/해제 중 오류가 발생했습니다. 다시 시도하십시오","job_dialog_error_heading":"작업: <b>{name}</b>","job_dialog_error_title":"오류","job_dialog_unbookmarked_body":"즐겨찾기에서 이 작업을 표시하지 않으려면 Grand Theft Auto 온라인을 다시 시작해야 합니다.","job_dialog_unbookmarked_heading":"즐겨찾기 해제한 작업: <b>{name}</b>","job_dialog_unbookmarked_title":"즐겨찾기 해제한 작업","job_type_adversary_mode":"대적 모드","job_type_air_race":"항공 레이스","job_type_arena_deathmatch":"아레나 데스매치","job_type_arena_war":"아레나 워","job_type_bike_race":"바이크 레이스","job_type_capture":"점령","job_type_contact_mission":"연락책 임무","job_type_deathmatch":"데스매치","job_type_drag_race":"드래그 레이스","job_type_drift_race":"드리프트 레이스","job_type_foot_race":"도보 레이스","job_type_hao_special_works_race":"하오의 스페셜 웍스 레이스 ","job_type_heist":"습격","job_type_heist_prep":"습격 준비","job_type_king_of_the_hill":"킹 오브 더 힐","job_type_land_race":"지상 레이스","job_type_last_team_standing":"라스트 팀 스탠딩","job_type_mission":"임무","job_type_mission_creator":"임무 생성기","job_type_open_wheel_race":"오픈 휠 레이스","job_type_parachuting":"낙하산 강하","job_type_pursuit_race":"추격전 레이스","job_type_race":"레이스","job_type_random_mission":"무작위 임무","job_type_special_race":"특수 차량 레이스","job_type_street_race":"길거리 레이스","job_type_stunt_race":"스턴트 레이스","job_type_survival":"서바이벌","job_type_target":"타겟 어썰트 레이스","job_type_team_deathmatch":"팀 데스매치","job_type_team_king_of_the_hill":"팀 킹 오브 더 힐","job_type_transform_race":"변신 레이스","job_type_unknown":"알 수 없음","job_type_vehicle_deathmatch":"이동 수단 데스매치","job_type_water_race":"해상 레이스","lightbox_close_button":"닫기","login_dialog_body":"이 콘텐츠에 댓글을 남기거나 좋아요를 누르려면 먼저 로그인하십시오","login_dialog_signin_button":"로그인","login_dialog_signup_button":"가입","login_dialog_title":"로그인 필요","masonry_grid_external_store_link":"스토어 외부 링크","ns_already_subbed_details_amp":"이미 이 이메일 주소로 최신 뉴스레터 정보를 수신하고 있습니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_already_subbed_title":"이미 구독 중","ns_check_email_details":"Rockstar Games 이메일 리스트 구독을 확인하려면 가입 시 사용한 이메일 주소로 전송된 링크를 통해 이메일 주소를 인증하십시오.","ns_check_email_title":"이메일 확인하기","ns_confirm_after_register_details":"계정을 생성할 때 마케팅 이메일 수신 동의를 선택하지 않았습니다. 그래도 뉴스레터를 구독하시겠습니까?","ns_confirm_after_register_title":"구독 확인하기","ns_confirm_details":"Rockstar Games 뉴스레터 구독을 확인하려면 아래 버튼을 클릭하십시오.","ns_confirm_title":"구독 확인하기","ns_error_generic_details":"현재 이 이메일 주소로 뉴스레터를 구독할 수 없습니다.","ns_error_generic_title":"오류","ns_error_preferences_details":"현재 해당 이메일 주소로 뉴스레터를 구독할 수 없습니다. 계정 설정 페이지에서 이메일 설정을 변경하거나 나중에 다시 시도하십시오.","ns_error_preferences_title":"오류","ns_go_back_text":"아니오, 뒤로 갑니다","ns_manage_prefs_button_text":"설정 관리","ns_ok_button_text":"확인","ns_successfully_subscribed_details_amp":"Rockstar Games 이메일 리스트를 구독합니다. 가입하신 이메일 주소로 최신 정보가 정기적으로 전달됩니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_successfully_subscribed_title":"구독 완료","ns_yes_subscribe_text":"네, 구독합니다","web_offer_claim_dialog_close":"닫기","web_offer_claim_error_state_button":"다시 시도하기","web_offer_claim_error_state_icon_label":"오류 아이콘","web_offer_claim_exists_state_icon_label":"성공 아이콘","web_offer_claim_link_account_state_icon_label":"오류 아이콘","web_offer_claim_loading_state":"불러오는 중","web_offer_claim_success_state_icon_label":"성공 아이콘"},"pl-PL":{"bottom_sheet_modal_close_icon":"Zamknij","carousel_next_button":"Dalej","carousel_prev_button":"Poprzednie","decorative_video_pause_button_label":"Zatrzymaj","decorative_video_play_button_label":"Odtwórz","decorative_video_replay_button_label":"Odtwórz ponownie","featured_game_breadcrumbs_parent_item":"Gry","hero_carousel_pause_button":"Zatrzymaj","hero_carousel_play_button":"Odtwórz","hero_carousel_scroll_down_label":"Przewiń w dół","hp_hero_play_button_label":"Teraz odtwarzane","hp_hero_stop_button_label":"Wideo zatrzymane","image_carousel_screen_reader_announcer_label":"Wyświetlane {selectedTab} z {total}","job_card_bookmark_action":"Dodaj do zakładek","job_card_created_by":"Stworzone przez","job_card_image_alt_text":"Zrzut ekranu akcji {name}","job_card_report_action":"Zgłoś","job_card_share_action":"Udostępnij","job_card_updated_date":"Zaktualizowano {date}","job_card_verified_by":"Zweryfikowane przez","job_dialog_bookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby zobaczyć tę dodaną do ulubionych akcję. Akcje mogą być ocenione tylko i wyłącznie w grze po ich rozegraniu.","job_dialog_bookmarked_heading":"Akcja dodana do ulubionych: <b>{name}</b>","job_dialog_bookmarked_title":"Akcja dodana do ulubionych","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Wystąpił błąd podczas dodawania/usuwania tej akcji z sekcji ulubionych. Spróbuj ponownie.","job_dialog_error_heading":"Akcja: <b>{name}</b>","job_dialog_error_title":"Błąd","job_dialog_unbookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby akcja nie pojawiała się dłużej w sekcji ulubionych akcji.","job_dialog_unbookmarked_heading":"Akcja usunięta z ulubionych: <b>{name}</b>","job_dialog_unbookmarked_title":"Akcja usunięta z ulubionych","job_type_adversary_mode":"Tryb adwerszarza","job_type_air_race":"Wyścig powietrzny","job_type_arena_deathmatch":"Deathmatch na arenie","job_type_arena_war":"Arena wojny","job_type_bike_race":"Wyścig jednośladów","job_type_capture":"Zdobywanie","job_type_contact_mission":"Misja od kontaktów","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Wyścig równoległy","job_type_drift_race":"Wyścig driftowe","job_type_foot_race":"Wyścig pieszy","job_type_hao_special_works_race":"Wyścigi Hao’s Special Works","job_type_heist":"Napad","job_type_heist_prep":"Misja w terenie","job_type_king_of_the_hill":"Król wzgórza","job_type_land_race":"Wyścig lądowy","job_type_last_team_standing":"Ostatnia drużyna wygrywa","job_type_mission":"Misja","job_type_mission_creator":"Kreator misji","job_type_open_wheel_race":"Wyścig bolidów","job_type_parachuting":"Skoki spadochronowe","job_type_pursuit_race":"Pościg","job_type_race":"Wyścig","job_type_random_mission":"Losowa misja","job_type_special_race":"Wyścig pojazdów specjalnych","job_type_street_race":"Wyścig uliczny","job_type_stunt_race":"Wyścig kaskaderski","job_type_survival":"Walka o przetrwanie","job_type_target":"Wyścig strzelecki","job_type_team_deathmatch":"Deathmatch drużynowy","job_type_team_king_of_the_hill":"Drużynowy Król wzgórza","job_type_transform_race":"Wyścig z transformacją","job_type_unknown":"Nieznane","job_type_vehicle_deathmatch":"Deathmatch w pojazdach","job_type_water_race":"Wyścig morski","lightbox_close_button":"Zamknij","login_dialog_body":"Zaloguj się, aby zapoznać się z zawartością.","login_dialog_signin_button":"Zaloguj się","login_dialog_signup_button":"Zarejestruj się","login_dialog_title":"Wymagane zalogowanie się","masonry_grid_external_store_link":"Odnośnik zewnętrzny do sklepu","ns_already_subbed_details_amp":"Otrzymujesz już powiadomienia o nowościach na ten adres e-mail. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_already_subbed_title":"Subskrypcja jest już aktywna","ns_check_email_details":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej.","ns_check_email_title":"Sprawdź swoją pocztę","ns_confirm_after_register_details":"Nie udzielono zgody na otrzymywanie powiadomień marketingowych przy zakładaniu konta. Czy chcesz subskrybować naszą listę mailingową?","ns_confirm_after_register_title":"Potwierdź swoją subskrypcję","ns_confirm_details":"Potwierdź swoją subskrypcję listy mailingowej Rockstar Games poprzez kliknięcie poniższego przycisku.","ns_confirm_title":"Potwierdź swoją subskrypcję","ns_error_generic_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej.","ns_error_generic_title":"Błąd","ns_error_preferences_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej. Zmień swoje preferencje w ustawieniach swojego konta lub spróbuj ponownie później.","ns_error_preferences_title":"Błąd","ns_go_back_text":"Nie, wróć","ns_manage_prefs_button_text":"Aktualizuj swoje preferencje","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_successfully_subscribed_title":"Pomyślnie zasubskrybowano","ns_yes_subscribe_text":"Tak, subskrybuj","web_offer_claim_dialog_close":"Zamknij","web_offer_claim_error_state_button":"Spróbuj ponownie","web_offer_claim_error_state_icon_label":"Ikona błędu","web_offer_claim_exists_state_icon_label":"Ikona sukcesu","web_offer_claim_link_account_state_icon_label":"Ikona błędu","web_offer_claim_loading_state":"Ładowanie","web_offer_claim_success_state_icon_label":"Ikona sukcesu"},"pt-BR":{"bottom_sheet_modal_close_icon":"Fechar","carousel_next_button":"Próximo","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Iniciar","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Jogos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Iniciar","hero_carousel_scroll_down_label":"Role para baixo","hp_hero_play_button_label":"Vídeo em reprodução","hp_hero_stop_button_label":"Vídeo parado","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Adicionar aos Favoritos","job_card_created_by":"Criado por","job_card_image_alt_text":"Captura de tela do Serviço {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartilhar","job_card_updated_date":"Atualização {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para ver este serviço como um de seus Favoritos. Serviços só podem ser avaliados no jogo, após terem sido jogados.","job_dialog_bookmarked_heading":"Serviço adicionado aos Favoritos: <b>{name}</b>","job_dialog_bookmarked_title":"Serviço adicionado aos Favoritos","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Houve um erro ao tentar adicionar/remover esse serviço aos Favoritos. Tente novamente.","job_dialog_error_heading":"Serviço: <b>{name}</b>","job_dialog_error_title":"Erro","job_dialog_unbookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para não ver mais este serviço como um de seus Favoritos.","job_dialog_unbookmarked_heading":"Serviço removido dos Favoritos: <b>{name}</b>","job_dialog_unbookmarked_title":"Serviço removido dos Favoritos","job_type_adversary_mode":"Modo Adversário","job_type_air_race":"Corrida Aérea","job_type_arena_deathmatch":"Mata-mata da Arena","job_type_arena_war":"Arena de Guerra","job_type_bike_race":"Corrida sobre duas rodas","job_type_capture":"Captura","job_type_contact_mission":"Missão de Contato","job_type_deathmatch":"Mata-mata","job_type_drag_race":"Corrida de Arrancada","job_type_drift_race":"Corrida de Drift","job_type_foot_race":"Corrida a pé","job_type_hao_special_works_race":"Corrida da Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Preliminar do Golpe","job_type_king_of_the_hill":"Marcando Território","job_type_land_race":"Corrida Terrestre","job_type_last_team_standing":"Última Equipe Sobrevivente","job_type_mission":"Missão","job_type_mission_creator":"Criador de Missões","job_type_open_wheel_race":"Corrida de Roda Exposta","job_type_parachuting":"Paraquedismo","job_type_pursuit_race":"Corrida de Perseguição","job_type_race":"Corrida","job_type_random_mission":"Missão aleatória","job_type_special_race":"Corrida de Veículo Especial","job_type_street_race":"Corrida de Rua","job_type_stunt_race":"Corrida Acrobática","job_type_survival":"Sobrevivência","job_type_target":"Corrida de Assalto com Alvos","job_type_team_deathmatch":"Mata-mata em Equipe","job_type_team_king_of_the_hill":"Marcando Território em Equipe","job_type_transform_race":"Corrida Metamorfose","job_type_unknown":"Desconhecido","job_type_vehicle_deathmatch":"Mata-mata em Veículos","job_type_water_race":"Corrida Marítima","lightbox_close_button":"Fechar","login_dialog_body":"É necessário iniciar sessão para interagir com esse conteúdo","login_dialog_signin_button":"Iniciar sessão","login_dialog_signup_button":"Criar conta","login_dialog_title":"É necessário iniciar sessão","masonry_grid_external_store_link":"Link externo para a Loja","ns_already_subbed_details_amp":"Você já está recebendo atualizações da newsletter neste endereço de e-mail. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_already_subbed_title":"Você já se inscreveu","ns_check_email_details":"Para confirmar sua inscrição na lista de e-mails da Rockstar Games, verifique seu endereço de e-mail pelo link enviado para o endereço que você usou para se inscrever.","ns_check_email_title":"Verifique seu e-mail","ns_confirm_after_register_details":"Você escolheu não receber e-mails de marketing quando criou a sua conta. Deseja se inscrever na nosso newsletter?","ns_confirm_after_register_title":"Confirme sua inscrição","ns_confirm_details":"Confirme que você deseja se inscrever na newsletter da Rockstar Games clicando no botão abaixo.","ns_confirm_title":"Confirme sua inscrição","ns_error_generic_details":"No momento, não é possível se inscrever na nossa newsletter usando este endereço de e-mail.","ns_error_generic_title":"Erro","ns_error_preferences_details":"No momento, não é possível se inscrever na nossa newsletter usando o seu endereço de e-mail. Mude suas preferências de e-mail a qualquer momento na página de configurações da sua conta ou tente de novo mais tarde.","ns_error_preferences_title":"Erro","ns_go_back_text":"Não, voltar","ns_manage_prefs_button_text":"Gerenciar preferências","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Você está inscrito na lista de e-mails da Rockstar Games e receberá atualizações periódicas no endereço de e-mail que usou para se inscrever. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_successfully_subscribed_title":"Inscrição confirmada","ns_yes_subscribe_text":"Sim, fazer inscrição","web_offer_claim_dialog_close":"fechar","web_offer_claim_error_state_button":"Tentar novamente","web_offer_claim_error_state_icon_label":"Ícone de erro","web_offer_claim_exists_state_icon_label":"Ícone de êxito","web_offer_claim_link_account_state_icon_label":"Ícone de erro","web_offer_claim_loading_state":"carregando","web_offer_claim_success_state_icon_label":"Ícone de êxito"},"ru-RU":{"bottom_sheet_modal_close_icon":"Закрыть","carousel_next_button":"Далее","carousel_prev_button":"Назад","decorative_video_pause_button_label":"Пауза","decorative_video_play_button_label":"Воспроизвести","decorative_video_replay_button_label":"Повтор","featured_game_breadcrumbs_parent_item":"Игры","hero_carousel_pause_button":"Пауза","hero_carousel_play_button":"Воспроизвести","hero_carousel_scroll_down_label":"Прокрутить вниз","hp_hero_play_button_label":"Воспроизведение видео","hp_hero_stop_button_label":"Видео остановлено","image_carousel_screen_reader_announcer_label":"На экране слайд {selectedTab} из {total}","job_card_bookmark_action":"Отметить","job_card_created_by":"Создан","job_card_image_alt_text":"Снимок экрана дела {name}","job_card_report_action":"Пожаловаться","job_card_share_action":"Поделиться","job_card_updated_date":"Обновлен {date}","job_card_verified_by":"Проверен","job_dialog_bookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы увидеть добавленное в закладки дело. Оценивать дела можно только в игре после прохождения.","job_dialog_bookmarked_heading":"Дело добавлено в закладки: <b>{name}</b>","job_dialog_bookmarked_title":"Дело добавлено в закладки","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Произошла ошибка при попытке добавить дело в закладки или удалить его из закладок. Пожалуйста, повторите попытку","job_dialog_error_heading":"Дело: <b>{name}</b>","job_dialog_error_title":"Ошибка","job_dialog_unbookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы удалить это дело из закладок.","job_dialog_unbookmarked_heading":"Дело удалено из закладок: <b>{name}</b>","job_dialog_unbookmarked_title":"Дело удалено из закладок","job_type_adversary_mode":"Режим противоборства","job_type_air_race":"Гонка по воздуху","job_type_arena_deathmatch":"Перестрелка на арене","job_type_arena_war":"Битва на арене","job_type_bike_race":"Велогонка","job_type_capture":"Захват","job_type_contact_mission":"Задание знакомого","job_type_deathmatch":"Перестрелка","job_type_drag_race":"Драг-гонка","job_type_drift_race":"Дрифтовая гонка","job_type_foot_race":"Пешая гонка","job_type_hao_special_works_race":"Гонка Hao’s Special Works","job_type_heist":"Ограбление","job_type_heist_prep":"Подготовка к ограблению","job_type_king_of_the_hill":"Король горы","job_type_land_race":"Гонка по суше","job_type_last_team_standing":"«Команда уцелевших»","job_type_mission":"Задание","job_type_mission_creator":"Редактор заданий","job_type_open_wheel_race":"Гонки на болидах","job_type_parachuting":"Парашютизм","job_type_pursuit_race":"Гонка «Погоня»","job_type_race":"Гонка","job_type_random_mission":"Случайная миссия","job_type_special_race":"Гонка для особого транспорта","job_type_street_race":"Уличная гонка","job_type_stunt_race":"Каскадерская гонка","job_type_survival":"Выживание","job_type_target":"Гонка с мишенями","job_type_team_deathmatch":"Командная перестрелка","job_type_team_king_of_the_hill":"Команда «Король горы»","job_type_transform_race":"Гонка «Трансформации»","job_type_unknown":"Неизвестно","job_type_vehicle_deathmatch":"Перестрелка на транспорте","job_type_water_race":"Морская гонка","lightbox_close_button":"Закрыть","login_dialog_body":"Выполните вход, чтобы взаимодействовать с этим контентом.","login_dialog_signin_button":"Войти","login_dialog_signup_button":"Регистрация","login_dialog_title":"Необходимо выполнить вход","masonry_grid_external_store_link":"Внешняя ссылка на магазин","ns_already_subbed_details_amp":"Вы уже получаете письма по рассылке на этот адрес электронной почты. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_already_subbed_title":"Подписка уже оформлена","ns_check_email_details":"Чтобы подтвердить подписку на рассылку электронных писем Rockstar Games, пожалуйста, подтвердите адрес электронной почты, нажав на ссылку в письме, полученном на адрес электронной почты, который вы указали при оформлении подписки.","ns_check_email_title":"Проверьте электронную почту","ns_confirm_after_register_details":"Вы не дали согласия на получение рекламных писем во время создания учетной записи. Вы все еще хотите оформить подписку на нашу рассылку?","ns_confirm_after_register_title":"Подтвердите подписку","ns_confirm_details":"Пожалуйста, подтвердите, что вы хотите подписаться на рассылку электронных писем Rockstar Games, нажав на кнопку ниже.","ns_confirm_title":"Подтвердите подписку","ns_error_generic_details":"Невозможно оформить подписку на нашу рассылку для этого адреса электронной почты в данный момент.","ns_error_generic_title":"Ошибка","ns_error_preferences_details":"Невозможно оформить подписку на нашу рассылку для вашего адреса электронной почты в данный момент. Вы можете изменить настройки электронной почты на странице настроек учетной записи или повторить попытку позже.","ns_error_preferences_title":"Ошибка","ns_go_back_text":"Нет, вернуться","ns_manage_prefs_button_text":"Изменить настройки учетной записи","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Подписка на рассылку электронных писем Rockstar Games оформлена, и вы будете регулярно получать новости на адрес электронной почты, указанный при оформлении. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_successfully_subscribed_title":"Подписка оформлена","ns_yes_subscribe_text":"Да, подписаться","web_offer_claim_dialog_close":"закрыть","web_offer_claim_error_state_button":"Попробовать снова","web_offer_claim_error_state_icon_label":"Значок ошибки","web_offer_claim_exists_state_icon_label":"Значок «Успех»","web_offer_claim_link_account_state_icon_label":"Значок ошибки","web_offer_claim_loading_state":"загрузка","web_offer_claim_success_state_icon_label":"Значок «Успех»"},"zh-CN":{"bottom_sheet_modal_close_icon":"关闭","carousel_next_button":"下一个","carousel_prev_button":"上一个","decorative_video_pause_button_label":"暂停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"回放","featured_game_breadcrumbs_parent_item":"游戏","hero_carousel_pause_button":"暂停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下滚动","hp_hero_play_button_label":"视频播放中","hp_hero_stop_button_label":"视频已停止","image_carousel_screen_reader_announcer_label":"正在显示{selectedTab}（共{total}）","job_card_bookmark_action":"收藏","job_card_created_by":"制作者","job_card_image_alt_text":"{name}差事的截图","job_card_report_action":"举报","job_card_share_action":"分享","job_card_updated_date":"更新于{date}","job_card_verified_by":"认证者","job_dialog_bookmarked_body":"您需要重新启动Grand Theft Auto在线模式来查看这项已收藏的差事。只有在游玩了差事后才能在游戏内对它们进行评价。","job_dialog_bookmarked_heading":"已收藏差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏差事","job_dialog_confirmation_button":"确定","job_dialog_error_body":"收藏/取消收藏此差事时出现了一个错误。请稍候再试","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"错误","job_dialog_unbookmarked_body":"需要您重新启动Grand Theft Auto在线模式后，这项差事才会从您的收藏中消失。","job_dialog_unbookmarked_heading":"已取消收藏差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏差事","job_type_adversary_mode":"对抗模式","job_type_air_race":"空中竞速","job_type_arena_deathmatch":"竞技场死斗","job_type_arena_war":"竞技场之战","job_type_bike_race":"两轮车竞速","job_type_capture":"夺取","job_type_contact_mission":"联系人任务","job_type_deathmatch":"死斗游戏","job_type_drag_race":"直线竞速","job_type_drift_race":"漂移竞速","job_type_foot_race":"徒步竞速","job_type_hao_special_works_race":"阿浩特别工坊竞速","job_type_heist":"抢劫任务","job_type_heist_prep":"抢劫前置任务","job_type_king_of_the_hill":"占山为王","job_type_land_race":"陆地竞速","job_type_last_team_standing":"团队生存游戏","job_type_mission":"任务","job_type_mission_creator":"任务制作器","job_type_open_wheel_race":"开轮式竞速","job_type_parachuting":"跳伞","job_type_pursuit_race":"追逐竞速","job_type_race":"竞速","job_type_random_mission":"随机任务","job_type_special_race":"特殊载具竞速","job_type_street_race":"街头竞速","job_type_stunt_race":"特技竞速","job_type_survival":"生存战","job_type_target":"标靶射击竞速","job_type_team_deathmatch":"团队死斗游戏","job_type_team_king_of_the_hill":"团队占山为王","job_type_transform_race":"幻变竞速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"载具死斗游戏","job_type_water_race":"水上竞速","lightbox_close_button":"关闭","login_dialog_body":"您需要先登录才能与该内容进行互动","login_dialog_signin_button":"登录","login_dialog_signup_button":"注册","login_dialog_title":"需要登录","masonry_grid_external_store_link":"前往商店的外部链接","ns_already_subbed_details_amp":"您的电子邮件地址已在接收新闻通讯更新。您可以在账户设置中随时管理您的通信偏好。","ns_already_subbed_title":"已订阅","ns_check_email_details":"要确认您已订阅Rockstar Games电子邮件列表，请通过发送到您订阅时使用的电子邮件地址中的链接验证邮箱。","ns_check_email_title":"检查您的电子邮箱","ns_confirm_after_register_details":"您在创建账户时没有选择接收营销邮件。您还想要订阅我们的新闻通讯吗？","ns_confirm_after_register_title":"确认您的订阅","ns_confirm_details":"请点击下方按钮以确认您想订阅Rockstar Games新闻通讯。","ns_confirm_title":"确认您的订阅","ns_error_generic_details":"我们目前无法用此电子邮件地址订阅新闻通讯。","ns_error_generic_title":"错误","ns_error_preferences_details":"我们目前无法用您的电子邮件地址订阅新闻通讯。请在账户设置页面中修改您的电子邮件偏好，或稍后再试。","ns_error_preferences_title":"错误","ns_go_back_text":"不，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"确定","ns_successfully_subscribed_details_amp":"您现已订阅Rockstar Games邮件通知，您将会在您订阅时使用的电子邮件地址中收到定期更新。您可以在账户设置中随时管理您的通信偏好。","ns_successfully_subscribed_title":"订阅成功","ns_yes_subscribe_text":"是，订阅","web_offer_claim_dialog_close":"关闭","web_offer_claim_error_state_button":"再次尝试","web_offer_claim_error_state_icon_label":"错误图标","web_offer_claim_exists_state_icon_label":"成功图标","web_offer_claim_link_account_state_icon_label":"错误图标","web_offer_claim_loading_state":"正在加载","web_offer_claim_success_state_icon_label":"成功图标"},"zh-TW":{"bottom_sheet_modal_close_icon":"關閉","carousel_next_button":"下一個","carousel_prev_button":"上一個","decorative_video_pause_button_label":"暫停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"重播","featured_game_breadcrumbs_parent_item":"遊戲","hero_carousel_pause_button":"暫停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下捲動","hp_hero_play_button_label":"正播放影片","hp_hero_stop_button_label":"影片已停止","image_carousel_screen_reader_announcer_label":"現正顯示 {selectedTab}（共 {total} 個）","job_card_bookmark_action":"收藏","job_card_created_by":"創作者：","job_card_image_alt_text":"差事 {name} 的擷圖","job_card_report_action":"檢舉","job_card_share_action":"分享","job_card_updated_date":"更新於 {date}","job_card_verified_by":"驗證者：","job_dialog_bookmarked_body":"您需要重啟 GTA 線上模式才能看見此已收藏的差事。您需要完成該差事，才能在遊戲內對其評價。","job_dialog_bookmarked_heading":"已收藏的差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏的差事","job_dialog_confirmation_button":"確定","job_dialog_error_body":"解決這個請求時出現錯誤。請再試一次。","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"錯誤","job_dialog_unbookmarked_body":"您需要重啟 GTA 線上模式才不會再在收藏中看見此差事。","job_dialog_unbookmarked_heading":"已取消收藏的差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏的差事","job_type_adversary_mode":"競爭模式","job_type_air_race":"空中競速","job_type_arena_deathmatch":"鬥技場死鬥遊戲","job_type_arena_war":"決戰鬥技場","job_type_bike_race":"雙輪車競速","job_type_capture":"奪取","job_type_contact_mission":"聯絡人任務","job_type_deathmatch":"死鬥遊戲","job_type_drag_race":"直線競速","job_type_drift_race":"甩尾競速","job_type_foot_race":"賽跑","job_type_hao_special_works_race":"阿浩特製改裝競速","job_type_heist":"搶劫任務","job_type_heist_prep":"搶劫前置任務","job_type_king_of_the_hill":"山頭之王","job_type_land_race":"陸上競速","job_type_last_team_standing":"團隊生存遊戲","job_type_mission":"任務","job_type_mission_creator":"任務製作器","job_type_open_wheel_race":"開輪式競速","job_type_parachuting":"跳傘活動","job_type_pursuit_race":"追緝競速","job_type_race":"競速","job_type_random_mission":"隨機任務","job_type_special_race":"特殊載具競速","job_type_street_race":"街頭競速","job_type_stunt_race":"特技競速","job_type_survival":"生存戰","job_type_target":"射靶競速","job_type_team_deathmatch":"團隊死鬥遊戲","job_type_team_king_of_the_hill":"團隊山頭之王","job_type_transform_race":"變形狂飆競速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"載具死鬥遊戲","job_type_water_race":"水上競速","lightbox_close_button":"關閉","login_dialog_body":"您需要先登入才能進行操作","login_dialog_signin_button":"登入","login_dialog_signup_button":"註冊","login_dialog_title":"必須登入","masonry_grid_external_store_link":"前往商店的外部連結","ns_already_subbed_details_amp":"電子報更新已以此電子郵件地址寄送給您。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_already_subbed_title":"已經訂閱","ns_check_email_details":"為了確認您的 Rockstar Games 電子郵件通知訂閱，請以寄送到您訂閱電子郵件地址的連結，驗證您的電子郵件地址。","ns_check_email_title":"檢查您的電子郵件","ns_confirm_after_register_details":"在建立帳戶時，您並沒有選擇可接收行銷電子郵件。您仍想訂閱我們的電子報？","ns_confirm_after_register_title":"確認您的訂閱","ns_confirm_details":"請點擊以下按鈕，以確認您想訂閱 Rockstar Games 電子報。","ns_confirm_title":"確認您的訂閱","ns_error_generic_details":"我們現在無法將此電子郵件地址訂閱到我們的電子報。","ns_error_generic_title":"錯誤","ns_error_preferences_details":"我們現在無法將您的電子郵件地址訂閱到我們的電子報。在帳戶設定頁面變更您的電子郵件偏好設定，或稍後再試。","ns_error_preferences_title":"錯誤","ns_go_back_text":"否，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"確定","ns_successfully_subscribed_details_amp":"您現在已訂閱 Rockstar Games 電子郵件通知，將會在訂閱的電子郵件地址收到定期更新。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_successfully_subscribed_title":"成功訂閱","ns_yes_subscribe_text":"是，訂閱","web_offer_claim_dialog_close":"關閉","web_offer_claim_error_state_button":"再試一次","web_offer_claim_error_state_icon_label":"錯誤圖示","web_offer_claim_exists_state_icon_label":"成功圖示","web_offer_claim_link_account_state_icon_label":"錯誤圖示","web_offer_claim_loading_state":"正在載入","web_offer_claim_success_state_icon_label":"成功圖示"}}'),
+        E = e => (0, A.withIntl)(e, I);
+      var z = t(84173),
         P = t(69353);
-      const L = (0, b.createContext)(null),
-        M = (0, b.forwardRef)(function({
+      const L = (0, p.createContext)(null),
+        M = (0, p.forwardRef)(function({
           jumpLinkId: e,
           currentStep: a = "unclaimed",
           testId: t = "web-offer-claim-root",
           asChild: r,
           ...s
         }, i) {
-          const o = r ? E.DX : "div",
+          const o = r ? z.DX : "div",
             n = (0, P.v6)({
               "data-testid": t,
               className: "ryxcfo0"
             }, s);
-          return (0, p.jsx)(L.Provider, {
+          return (0, b.jsx)(L.Provider, {
             value: {
               currentStep: a
             },
-            children: (0, p.jsx)(o, {
+            children: (0, b.jsx)(o, {
               id: e,
               ref: i,
               ...n
             })
           })
         }),
-        V = (0, b.forwardRef)(function({
+        D = (0, p.forwardRef)(function({
           stepIndex: e,
           asChild: a,
           ...t
@@ -11776,47 +11776,47 @@ try {
               const {
                 currentStep: e
               } = (() => {
-                const e = (0, b.useContext)(L);
+                const e = (0, p.useContext)(L);
                 if (!e) throw new Error("Warning, must use inside a WebOfferClaim.Root provider");
                 return e
               })();
               return e
             })(),
-            i = a ? E.DX : "div",
+            i = a ? z.DX : "div",
             o = (0, P.v6)({
               className: "ryxcfo1"
             }, t);
-          return s === e ? (0, p.jsx)(i, {
+          return s === e ? (0, b.jsx)(i, {
             ref: r,
             ...o
           }) : null
         }),
-        D = (0, b.forwardRef)(function({
+        R = (0, p.forwardRef)(function({
           view: e = "default",
           ...a
         }, t) {
           const r = (0, P.v6)({
             className: "ryxcfo2"
           }, a);
-          return "dialog" === e ? (0, p.jsx)(T.Dialog.Trigger, {
+          return "dialog" === e ? (0, b.jsx)(T.Dialog.Trigger, {
             asChild: !0,
-            children: (0, p.jsx)(T.Button, {
+            children: (0, b.jsx)(T.Button, {
               ref: t,
               ...r
             })
-          }) : (0, p.jsx)(T.Button, {
+          }) : (0, b.jsx)(T.Button, {
             ref: t,
             ...r
           })
         });
-      const R = () => {
+      const V = () => {
           const {
             view: e
           } = F();
           return e
         },
         F = () => {
-          const e = (0, b.useContext)(me);
+          const e = (0, p.useContext)(me);
           if (!e) throw new Error("Warning, must use inside a WebOfferClaim.Root provider");
           return e
         };
@@ -11897,7 +11897,7 @@ try {
         }),
         ce = "var(--_171mcfn3)",
         le = t(819);
-      const de = (0, b.forwardRef)(function({
+      const de = (0, p.forwardRef)(function({
           orientation: e = "vertical",
           fadeStart: a = !0,
           fadeEnd: t = !0,
@@ -11926,105 +11926,105 @@ try {
                 orientation: e
               })
             }, o),
-            b = {
+            p = {
               ...s,
               ..._
             };
-          return (0, p.jsxs)(T.ScrollArea.Root, {
+          return (0, b.jsxs)(T.ScrollArea.Root, {
             ...u,
             ref: n,
-            style: b,
-            children: [(0, p.jsx)(T.ScrollArea.Viewport, {
+            style: p,
+            children: [(0, b.jsx)(T.ScrollArea.Viewport, {
               className: "_171mcfn9",
               children: i
-            }), (0, p.jsx)(T.ScrollArea.Scrollbar, {
+            }), (0, b.jsx)(T.ScrollArea.Scrollbar, {
               orientation: e,
-              children: (0, p.jsx)(T.ScrollArea.Thumb, {})
-            }), (0, p.jsx)(T.ScrollArea.Corner, {})]
+              children: (0, b.jsx)(T.ScrollArea.Thumb, {})
+            }), (0, b.jsx)(T.ScrollArea.Corner, {})]
           })
         }),
-        me = (0, b.createContext)({
+        me = (0, p.createContext)({
           view: "default"
         }),
-        _e = (0, b.forwardRef)(function({
+        _e = (0, p.forwardRef)(function({
           asChild: e,
           testId: a = "web-offer-claim-root",
           view: t = "default",
           ...r
         }, s) {
-          const i = e ? E.DX : "div",
+          const i = e ? z.DX : "div",
             o = (0, P.v6)({
               "data-testid": a,
               className: B({
                 view: t
               })
             }, r);
-          return (0, p.jsx)(me.Provider, {
+          return (0, b.jsx)(me.Provider, {
             value: {
               view: t
             },
-            children: (0, p.jsx)(i, {
+            children: (0, b.jsx)(i, {
               ref: s,
               ...o
             })
           })
         }),
-        ue = (0, b.forwardRef)(function({
+        ue = (0, p.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const r = R(),
-            s = e ? E.DX : "div",
+          const r = V(),
+            s = e ? z.DX : "div",
             i = (0, P.v6)({
               className: G({
                 view: r
               })
             }, a);
-          return (0, p.jsx)(s, {
+          return (0, b.jsx)(s, {
             ref: t,
             ...i
           })
         }),
-        pe = (0, b.forwardRef)(function({
+        be = (0, p.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const r = e ? E.DX : "header",
+          const r = e ? z.DX : "header",
             s = (0, P.v6)({}, a);
-          return (0, p.jsx)(r, {
+          return (0, b.jsx)(r, {
             ref: t,
             ...s
           })
         }),
-        be = (0, b.forwardRef)(function({
+        pe = (0, p.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const r = e ? E.DX : "footer",
+          const r = e ? z.DX : "footer",
             s = (0, P.v6)({
               className: "_1fcycesd"
             }, a);
-          return (0, p.jsx)(r, {
+          return (0, b.jsx)(r, {
             ref: t,
             ...s
           })
         }),
-        ge = (0, b.forwardRef)(function({
+        ge = (0, p.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const r = R(),
-            s = e ? E.DX : "div",
+          const r = V(),
+            s = e ? z.DX : "div",
             i = (0, P.v6)({
               className: "_1fcyces8"
             }, a);
-          return "dialog" === r ? (0, p.jsx)(T.Dialog.Description, {
+          return "dialog" === r ? (0, b.jsx)(T.Dialog.Description, {
             ref: t,
             asChild: !0,
-            children: (0, p.jsx)(s, {
+            children: (0, b.jsx)(s, {
               ...i
             })
-          }) : (0, p.jsx)(de, {
+          }) : (0, b.jsx)(de, {
             stops: [{
               color: "transparent",
               position: "0%"
@@ -12032,13 +12032,13 @@ try {
               color: "black",
               position: "15%"
             }],
-            children: (0, p.jsx)(s, {
+            children: (0, b.jsx)(s, {
               ref: t,
               ...i
             })
           })
         }),
-        fe = (0, b.forwardRef)(function({
+        fe = (0, p.forwardRef)(function({
           alt: e,
           src: {
             mobile: a,
@@ -12046,27 +12046,27 @@ try {
           },
           ...r
         }, s) {
-          const i = R(),
+          const i = V(),
             o = (0, P.v6)({
               className: "_1fcyces3"
             }, r);
-          return "dialog" !== i && (0, p.jsxs)("picture", {
+          return "dialog" !== i && (0, b.jsxs)("picture", {
             ref: s,
             ...o,
-            children: [(0, p.jsx)("source", {
+            children: [(0, b.jsx)("source", {
               media: "(max-width: 1279.98px)",
               srcSet: a
-            }), (0, p.jsx)("source", {
+            }), (0, b.jsx)("source", {
               media: "(min-width: 1280px)",
               srcSet: t
-            }), (0, p.jsx)("img", {
+            }), (0, b.jsx)("img", {
               src: t,
               className: "_1fcyces4",
               alt: e
             })]
           })
         }),
-        ke = (0, b.forwardRef)(function({
+        ke = (0, p.forwardRef)(function({
           children: e,
           appearance: a = "secondary",
           ...t
@@ -12076,77 +12076,77 @@ try {
             testId: "woc.step.badge",
             className: "_1fcycesb"
           }, t);
-          return (0, p.jsx)(T.Badge.Root, {
+          return (0, b.jsx)(T.Badge.Root, {
             ref: r,
             ...s,
             asChild: !0,
-            children: (0, p.jsx)(T.Badge.Label, {
+            children: (0, b.jsx)(T.Badge.Label, {
               children: e
             })
           })
         }),
-        ve = (0, b.forwardRef)(function({
+        ve = (0, p.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const r = e ? E.DX : "div",
+          const r = e ? z.DX : "div",
             s = (0, P.v6)({
               className: "_1fcycesa"
             }, a);
-          return (0, p.jsx)(r, {
+          return (0, b.jsx)(r, {
             ref: t,
             ...s
           })
         }),
-        he = (0, b.forwardRef)(function({
+        he = (0, p.forwardRef)(function({
           ...e
         }, a) {
-          const t = R(),
+          const t = V(),
             r = (0, P.v6)({
               className: "_1fcyces9"
             }, e);
-          return "dialog" === t ? (0, p.jsx)(T.Dialog.Title, {
+          return "dialog" === t ? (0, b.jsx)(T.Dialog.Title, {
             asChild: !0,
-            children: (0, p.jsx)(T.Heading, {
+            children: (0, b.jsx)(T.Heading, {
               ref: a,
               ...r
             })
-          }) : (0, p.jsx)(T.Heading, {
+          }) : (0, b.jsx)(T.Heading, {
             ref: a,
             ...r
           })
         }),
-        we = (0, b.forwardRef)(function({
+        we = (0, p.forwardRef)(function({
           ...e
         }, a) {
           const t = (0, P.v6)({
             testId: "woc.step.description",
             className: "_1fcycesc"
           }, e);
-          return (0, p.jsx)(T.Body, {
+          return (0, b.jsx)(T.Body, {
             ref: a,
             ...t
           })
         }),
-        ye = (0, b.forwardRef)(function({
+        ye = (0, p.forwardRef)(function({
           ...e
         }, a) {
           const t = (0, P.v6)({
             testId: "woc.step.disclaimer",
             className: "_1fcycese"
           }, e);
-          return (0, p.jsx)(T.Body, {
+          return (0, b.jsx)(T.Body, {
             ref: a,
             ...t,
             size: "XS",
             color: "subdued"
           })
         }),
-        je = (0, b.forwardRef)(function({
+        je = (0, p.forwardRef)(function({
           size: e = "LG",
           ...a
         }, t) {
-          return (0, p.jsx)(T.Button, {
+          return (0, b.jsx)(T.Button, {
             ref: t,
             ...a,
             size: e
@@ -12162,11 +12162,11 @@ try {
               platform: a
             })
           }, t);
-          return (0, p.jsx)(T.Button, {
+          return (0, b.jsx)(T.Button, {
             ...s,
             appearance: "secondary",
             size: "MD",
-            children: (0, p.jsx)("img", {
+            children: (0, b.jsx)("img", {
               src: r[a],
               alt: e
             })
@@ -12174,34 +12174,34 @@ try {
         },
         Ne = ({
           ...e
-        }) => (0, p.jsx)(xe, {
+        }) => (0, b.jsx)(xe, {
           ...e,
           label: (0, h.findPlatform)("xbox")?.friendlyName ?? "Xbox",
           platform: "xbox"
         }),
         Se = ({
           ...e
-        }) => (0, p.jsx)(xe, {
+        }) => (0, b.jsx)(xe, {
           ...e,
           label: (0, h.findPlatform)("ps")?.friendlyName ?? "PlayStation",
           platform: "ps"
         }),
         Ce = ({
           label: e
-        }) => (0, p.jsx)("div", {
+        }) => (0, b.jsx)("div", {
           className: "_1fcycesv",
-          children: (0, p.jsx)(T.Spinner, {
+          children: (0, b.jsx)(T.Spinner, {
             size: "pageXL",
             label: e
           })
         }),
-        Te = Object.assign(V, s);
-      var Ie = t(82199),
-        ze = t(42285);
-      const Ae = "claimOffer",
-        Ee = (0, b.createContext)(null),
+        Te = Object.assign(D, s);
+      var Ae = t(82199),
+        Ie = t(42285);
+      const Ee = "claimOffer",
+        ze = (0, p.createContext)(null),
         Pe = () => {
-          const e = (0, b.useContext)(Ee);
+          const e = (0, p.useContext)(ze);
           if (!e) throw new Error("useClaimContext must be used within a ClaimContext.Provider");
           return e
         },
@@ -12296,26 +12296,26 @@ try {
               return e
           }
         },
-        Ve = () => {
+        De = () => {
           const {
             state: e,
             dispatch: a
           } = Pe(), {
             charactersNeeded: t,
             setCharactersNeeded: r
-          } = (0, Ie.useRockstarUserState)(), {
+          } = (0, Ae.useRockstarUserState)(), {
             track: s
-          } = (0, Ie.useGtmTrack)(), {
+          } = (0, Ae.useGtmTrack)(), {
             loggedIn: i,
             data: o
-          } = (0, Ie.useRockstarUser)(), {
+          } = (0, Ae.useRockstarUser)(), {
             signInUrl: n
           } = (0, h.useScAuthLinks)(e.returnUrl), {
             redirect: c
           } = (() => {
             const e = (0, S.useNavigate)();
             return {
-              redirect: (0, b.useCallback)((a, t = {}) => {
+              redirect: (0, p.useCallback)((a, t = {}) => {
                 try {
                   const r = new URL(a);
                   if (r.origin === window.location.origin) {
@@ -12332,21 +12332,21 @@ try {
             inView: d,
             trackSectionImpression: m
           } = (() => {
-            const e = (0, b.useRef)(!1),
-              a = (0, b.useRef)(!1),
+            const e = (0, p.useRef)(!1),
+              a = (0, p.useRef)(!1),
               {
                 track: t
-              } = (0, Ie.useGtmTrack)(),
+              } = (0, Ae.useGtmTrack)(),
               {
                 ref: r
-              } = (0, ze.useInView)({
+              } = (0, Ie.useInView)({
                 threshold: .6,
                 triggerOnce: !0,
                 onChange: a => {
                   e.current = a
                 }
               }),
-              s = (0, b.useCallback)(r => {
+              s = (0, p.useCallback)(r => {
                 e.current && !a.current && (t({
                   event: "page_section_impression",
                   ...r
@@ -12357,7 +12357,7 @@ try {
               inView: e.current,
               trackSectionImpression: s
             }
-          })(), [_] = (0, S.useSearchParams)(), u = _.has(Ae, e.giftId), p = "stateful" === e.variant || "stateful-trigger" === e.variant, g = (() => {
+          })(), [_] = (0, S.useSearchParams)(), u = _.has(Ee, e.giftId), b = "stateful" === e.variant || "stateful-trigger" === e.variant, g = (() => {
             const {
               state: e,
               dispatch: a
@@ -12372,7 +12372,7 @@ try {
               }
             }));
             var r;
-            return (0, b.useCallback)(async () => {
+            return (0, p.useCallback)(async () => {
               a({
                 type: "FETCH_EXISTS"
               });
@@ -12425,7 +12425,7 @@ try {
                 })
               }
             })(r);
-            return (0, b.useCallback)(async () => {
+            return (0, p.useCallback)(async () => {
               try {
                 const e = await s();
                 if (null === e) return void a({
@@ -12447,8 +12447,8 @@ try {
               }
             }, [s, a])
           })();
-          return (0, b.useEffect)(() => {
-            if ("IDLE" === e.status && i && p) g();
+          return (0, p.useEffect)(() => {
+            if ("IDLE" === e.status && i && b) g();
             else if (u && "IDLE" === e.status) a({
               type: "TRIGGER_CLAIM"
             });
@@ -12460,7 +12460,7 @@ try {
                 section_state: e.variant
               }), a({
                 type: "LOGIN"
-              }), c(n)), i && (u && ("TRIGGERED" === e.status || "UNCLAIMED" === e.status) || !p && "TRIGGERED" === e.status)) t && o.accountSynced || o.characters ? a({
+              }), c(n)), i && (u && ("TRIGGERED" === e.status || "UNCLAIMED" === e.status) || !b && "TRIGGERED" === e.status)) t && o.accountSynced || o.characters ? a({
               type: "USER_SYNCED"
             }) : (r("gtao"), a({
               type: "FETCH_CHARACTERS"
@@ -12509,7 +12509,7 @@ try {
             }) : a({
               type: "LINK_ACCOUNT"
             })
-          }, [i, u, o, e.status]), (0, b.useEffect)(() => {
+          }, [i, u, o, e.status]), (0, p.useEffect)(() => {
             m({
               element_placement: "WOC",
               section_state: `${e.variant}|${e.status}`
@@ -12518,9 +12518,9 @@ try {
             ref: l
           }
         };
-      var De = t(32760);
-      const Re = e => 0 === (new DOMParser).parseFromString(e, "text/html").body.textContent.trim().length,
-        Fe = (0, I.defineMessages)({
+      var Re = t(32760);
+      const Ve = e => 0 === (new DOMParser).parseFromString(e, "text/html").body.textContent.trim().length,
+        Fe = (0, A.defineMessages)({
           web_offer_claim_error_state_button: {
             id: "web_offer_claim_error_state_button",
             description: "Button label for when web offer claims enter an error state",
@@ -12562,10 +12562,10 @@ try {
         }) => {
           const {
             formatMessage: a
-          } = (0, I.useIntl)(), {
+          } = (0, A.useIntl)(), {
             state: t,
             dispatch: r
-          } = Pe(), s = (0, b.useCallback)(() => {
+          } = Pe(), s = (0, p.useCallback)(() => {
             r({
               type: "TRIGGER_CLAIM",
               payload: {
@@ -12579,40 +12579,40 @@ try {
             heading: n,
             description: c,
             disclaimer: l
-          } = t.steps.error, d = Re(l ?? ""), m = t.steps.unclaimed.disclaimer, _ = t.steps.unclaimed.image, {
+          } = t.steps.error, d = Ve(l ?? ""), m = t.steps.unclaimed.disclaimer, _ = t.steps.unclaimed.image, {
             alt: u,
             src: g
           } = (0, C.useImageParser)(o ?? _ ?? {});
-          return (0, p.jsxs)(Te.Root, {
+          return (0, b.jsxs)(Te.Root, {
             view: e,
-            children: [(0, p.jsx)(Te.Image, {
+            children: [(0, b.jsx)(Te.Image, {
               alt: u ?? "",
               src: g ?? {
                 mobile: "",
                 desktop: ""
               }
-            }), (0, p.jsxs)(Te.Container, {
-              children: [(0, p.jsxs)(Te.Content, {
-                children: [(0, p.jsx)(De.TriangleAlert, {
+            }), (0, b.jsxs)(Te.Container, {
+              children: [(0, b.jsxs)(Te.Content, {
+                children: [(0, b.jsx)(Re.TriangleAlert, {
                   size: "XL",
                   color: le.LU.alias.color.icon.danger,
                   label: a(Fe.web_offer_claim_error_state_icon_label)
-                }), (0, p.jsx)(Te.Heading, {
+                }), (0, b.jsx)(Te.Heading, {
                   level: 4,
                   children: n
-                }), c && (0, p.jsx)(Te.Description, {
+                }), c && (0, b.jsx)(Te.Description, {
                   children: i({
                     children: c
                   })
                 })]
-              }), (0, p.jsxs)(Te.Footer, {
-                children: [(0, p.jsx)(Te.Actions, {
-                  children: (0, p.jsx)(Te.Button, {
+              }), (0, b.jsxs)(Te.Footer, {
+                children: [(0, b.jsx)(Te.Actions, {
+                  children: (0, b.jsx)(Te.Button, {
                     appearance: "primary",
                     onClick: s,
                     children: a(Fe.web_offer_claim_error_state_button)
                   })
-                }), "stateful" === t.variant && (l || m) && (0, p.jsx)(Te.Disclaimer, {
+                }), "stateful" === t.variant && (l || m) && (0, b.jsx)(Te.Disclaimer, {
                   children: i({
                     children: d ? m : l
                   })
@@ -12628,7 +12628,7 @@ try {
           label: t,
           target: r,
           ...s
-        }) => (0, p.jsx)(Te.Button, {
+        }) => (0, b.jsx)(Te.Button, {
           ...s,
           onClick: () => {
             e && e({
@@ -12638,7 +12638,7 @@ try {
           },
           asChild: !0,
           "data-testid": "success-link",
-          children: (0, p.jsx)("a", {
+          children: (0, b.jsx)("a", {
             href: a,
             target: r,
             children: t
@@ -12650,10 +12650,10 @@ try {
         }) => {
           const {
             data: t
-          } = (0, Ie.useRockstarUser)(), {
+          } = (0, Ae.useRockstarUser)(), {
             charactersNeeded: r,
             setCharactersNeeded: s
-          } = (0, Ie.useRockstarUserState)();
+          } = (0, Ae.useRockstarUserState)();
           r || s("gtao");
           const i = t.gamesPlayed?.gtav,
             o = !t.accountSynced,
@@ -12661,7 +12661,7 @@ try {
               label: n,
               href: c,
               target: l
-            } = (0, b.useMemo)(() => {
+            } = (0, p.useMemo)(() => {
               const a = e.default ?? {
                 label: "",
                 href: "",
@@ -12675,7 +12675,7 @@ try {
               }
               return a
             }, [i, t, e]);
-          return (0, p.jsx)(Oe, {
+          return (0, b.jsx)(Oe, {
             label: n,
             href: c,
             target: l,
@@ -12687,17 +12687,17 @@ try {
         qe = e => {
           const {
             data: a
-          } = (0, Ie.useRockstarUser)(), {
+          } = (0, Ae.useRockstarUser)(), {
             charactersNeeded: t,
             setCharactersNeeded: r
-          } = (0, Ie.useRockstarUserState)();
+          } = (0, Ae.useRockstarUserState)();
           t || r("gtao");
           const s = a.gamesPlayed?.gtav,
-            i = (0, b.useMemo)(() => !!s && He.includes(s), [s]),
+            i = (0, p.useMemo)(() => !!s && He.includes(s), [s]),
             {
               hasGtaPlus: o
             } = a;
-          return !o && i && (0, p.jsx)(Oe, {
+          return !o && i && (0, b.jsx)(Oe, {
             href: "https://www.rockstargames.com/gta-plus/join",
             target: "_self",
             ...e
@@ -12706,7 +12706,7 @@ try {
         Ue = e => {
           const {
             track: a
-          } = (0, Ie.useGtmTrack)(), {
+          } = (0, Ae.useGtmTrack)(), {
             state: t
           } = Pe();
           switch (e.type) {
@@ -12728,7 +12728,7 @@ try {
               }, o = (0, P.v6)({
                 trackingHandler: i
               }, s);
-              return (0, p.jsx)(Be, {
+              return (0, b.jsx)(Be, {
                 ...o
               })
             }
@@ -12750,7 +12750,7 @@ try {
               }, o = (0, P.v6)({
                 trackingHandler: i
               }, s);
-              return (0, p.jsx)(qe, {
+              return (0, b.jsx)(qe, {
                 ...o
               })
             }
@@ -12770,7 +12770,7 @@ try {
               }, o = (0, P.v6)({
                 trackingHandler: i
               }, s);
-              return (0, p.jsx)(Oe, {
+              return (0, b.jsx)(Oe, {
                 ...o
               })
             }
@@ -12781,7 +12781,7 @@ try {
         }) => {
           const {
             formatMessage: a
-          } = (0, I.useIntl)(), {
+          } = (0, A.useIntl)(), {
             state: t
           } = Pe(), {
             RichTextComponent: r
@@ -12791,40 +12791,40 @@ try {
             description: o,
             ctas: n,
             disclaimer: c
-          } = t.steps[t.currentStep], l = t.steps.unclaimed.image, d = Re(c ?? ""), m = t.steps.unclaimed.disclaimer, {
+          } = t.steps[t.currentStep], l = t.steps.unclaimed.image, d = Ve(c ?? ""), m = t.steps.unclaimed.disclaimer, {
             alt: _,
             src: u
           } = (0, C.useImageParser)(s ?? l ?? {});
-          return (0, p.jsxs)(Te.Root, {
+          return (0, b.jsxs)(Te.Root, {
             view: e,
-            children: [(0, p.jsx)(Te.Image, {
+            children: [(0, b.jsx)(Te.Image, {
               alt: _ ?? "",
               src: u ?? {
                 mobile: "",
                 desktop: ""
               }
-            }), (0, p.jsxs)(Te.Container, {
-              children: [(0, p.jsxs)(Te.Content, {
-                children: [(0, p.jsx)(Te.Header, {
-                  children: (0, p.jsx)(De.Check, {
+            }), (0, b.jsxs)(Te.Container, {
+              children: [(0, b.jsxs)(Te.Content, {
+                children: [(0, b.jsx)(Te.Header, {
+                  children: (0, b.jsx)(Re.Check, {
                     size: "XL",
                     color: Ge.LU.alias.color.icon.success,
                     label: a(Fe.web_offer_claim_success_state_icon_label)
                   })
-                }), (0, p.jsx)(Te.Heading, {
+                }), (0, b.jsx)(Te.Heading, {
                   level: 4,
                   children: i
-                }), o && (0, p.jsx)(Te.Description, {
+                }), o && (0, b.jsx)(Te.Description, {
                   children: r({
                     children: o
                   })
                 })]
-              }), (0, p.jsxs)(Te.Footer, {
-                children: [n && n.length > 0 && (0, p.jsx)(Te.Actions, {
-                  children: n.map((e, a) => (0, p.jsx)(Ue, {
+              }), (0, b.jsxs)(Te.Footer, {
+                children: [n && n.length > 0 && (0, b.jsx)(Te.Actions, {
+                  children: n.map((e, a) => (0, b.jsx)(Ue, {
                     ...e
                   }, a))
-                }), "stateful" === t.variant && (c || m) && (0, p.jsx)(Te.Disclaimer, {
+                }), "stateful" === t.variant && (c || m) && (0, b.jsx)(Te.Disclaimer, {
                   children: r({
                     children: d ? m : c
                   })
@@ -12838,18 +12838,18 @@ try {
         }) => {
           const {
             formatMessage: a
-          } = (0, I.useIntl)(), t = (0, h.useGetTpaLinkGenerator)(), {
+          } = (0, A.useIntl)(), t = (0, h.useGetTpaLinkGenerator)(), {
             state: r
           } = Pe(), {
             track: s
-          } = (0, Ie.useGtmTrack)(), {
+          } = (0, Ae.useGtmTrack)(), {
             RichTextComponent: i
           } = r, {
             image: o,
             heading: n,
             description: c,
             disclaimer: l
-          } = r.steps["link-account"], d = (0, b.useCallback)(async e => {
+          } = r.steps["link-account"], d = (0, p.useCallback)(async e => {
             const a = (0, h.findPlatform)(e)?.onlineService;
             if (a && "sc" !== a) {
               s({
@@ -12864,46 +12864,46 @@ try {
               });
               window.location.assign(e.href)
             }
-          }, [t, s, r.returnUrl, r.giftId]), m = (0, b.useCallback)(() => {
+          }, [t, s, r.returnUrl, r.giftId]), m = (0, p.useCallback)(() => {
             d("xbox")
-          }, [d]), _ = (0, b.useCallback)(() => {
+          }, [d]), _ = (0, p.useCallback)(() => {
             d("ps")
-          }, [d]), u = Re(l ?? ""), g = r.steps.unclaimed.disclaimer, f = r.steps.unclaimed.image, {
+          }, [d]), u = Ve(l ?? ""), g = r.steps.unclaimed.disclaimer, f = r.steps.unclaimed.image, {
             alt: k,
             src: v
           } = (0, C.useImageParser)(o ?? f ?? {});
-          return (0, p.jsxs)(Te.Root, {
+          return (0, b.jsxs)(Te.Root, {
             view: e,
-            children: [(0, p.jsx)(Te.Image, {
+            children: [(0, b.jsx)(Te.Image, {
               alt: k ?? "",
               src: v ?? {
                 mobile: "",
                 desktop: ""
               }
-            }), (0, p.jsxs)(Te.Container, {
-              children: [(0, p.jsxs)(Te.Content, {
-                children: [(0, p.jsx)(De.TriangleAlert, {
+            }), (0, b.jsxs)(Te.Container, {
+              children: [(0, b.jsxs)(Te.Content, {
+                children: [(0, b.jsx)(Re.TriangleAlert, {
                   size: "XL",
                   color: le.LU.alias.color.icon.danger,
                   label: a(Fe.web_offer_claim_link_account_state_icon_label)
-                }), (0, p.jsx)(Te.Heading, {
+                }), (0, b.jsx)(Te.Heading, {
                   level: 4,
                   children: n
-                }), c && (0, p.jsx)(Te.Description, {
+                }), c && (0, b.jsx)(Te.Description, {
                   children: i({
                     children: c
                   })
                 })]
-              }), (0, p.jsxs)(Te.Footer, {
-                children: [(0, p.jsxs)(Te.Actions, {
-                  children: [(0, p.jsx)(Te.LinkXBoxButton, {
+              }), (0, b.jsxs)(Te.Footer, {
+                children: [(0, b.jsxs)(Te.Actions, {
+                  children: [(0, b.jsx)(Te.LinkXBoxButton, {
                     target: "_self",
                     onClick: m
-                  }), (0, p.jsx)(Te.LinkPSButton, {
+                  }), (0, b.jsx)(Te.LinkPSButton, {
                     target: "_self",
                     onClick: _
                   })]
-                }), "stateful" === r.variant && (l || g) && (0, p.jsx)(Te.Disclaimer, {
+                }), "stateful" === r.variant && (l || g) && (0, b.jsx)(Te.Disclaimer, {
                   children: i({
                     children: u ? g : l
                   })
@@ -12917,7 +12917,7 @@ try {
         }) => {
           const {
             formatMessage: a
-          } = (0, I.useIntl)(), {
+          } = (0, A.useIntl)(), {
             state: t
           } = Pe(), {
             image: r
@@ -12925,26 +12925,26 @@ try {
             alt: s,
             src: i
           } = (0, C.useImageParser)(r ?? {});
-          return (0, p.jsxs)(Te.Root, {
+          return (0, b.jsxs)(Te.Root, {
             view: e,
-            children: [(0, p.jsx)(Te.Image, {
+            children: [(0, b.jsx)(Te.Image, {
               alt: s ?? "",
               src: i ?? {
                 mobile: "",
                 desktop: ""
               }
-            }), (0, p.jsxs)(Te.Container, {
-              children: [(0, p.jsx)(Te.Header, {
-                children: (0, p.jsx)(E.s6, {
-                  children: (0, p.jsx)(Te.Heading, {
+            }), (0, b.jsxs)(Te.Container, {
+              children: [(0, b.jsx)(Te.Header, {
+                children: (0, b.jsx)(z.s6, {
+                  children: (0, b.jsx)(Te.Heading, {
                     level: 5,
                     children: a(Fe.web_offer_claim_loading_state)
                   })
                 })
-              }), (0, p.jsx)(Te.Content, {
-                children: (0, p.jsx)(Te.Description, {
+              }), (0, b.jsx)(Te.Content, {
+                children: (0, b.jsx)(Te.Description, {
                   asChild: !0,
-                  children: (0, p.jsx)(Te.Loading, {
+                  children: (0, b.jsx)(Te.Loading, {
                     label: a(Fe.web_offer_claim_loading_state)
                   })
                 })
@@ -12958,10 +12958,10 @@ try {
         }) => {
           const {
             loggedIn: t
-          } = (0, Ie.useRockstarUser)(), {
+          } = (0, Ae.useRockstarUser)(), {
             state: r,
             dispatch: s
-          } = Pe(), [, i] = (0, S.useSearchParams)(), o = (0, b.useCallback)(() => {
+          } = Pe(), [, i] = (0, S.useSearchParams)(), o = (0, p.useCallback)(() => {
             t && i(e => (e.set("claimOffer", r.giftId), e), {
               replace: !0
             });
@@ -12981,7 +12981,7 @@ try {
           }, [s, t, i, r.giftId, r.jumpLinkId]), n = (0, P.v6)({
             appearance: a.appearance ?? "primary"
           }, a);
-          return (0, p.jsx)(D, {
+          return (0, b.jsx)(R, {
             onPress: o,
             ...n,
             view: "stateful" !== r.variant ? "dialog" : "default",
@@ -13005,35 +13005,35 @@ try {
             alt: c,
             src: l
           } = (0, C.useImageParser)(r ?? {}), d = a.steps.unclaimed["button-label"];
-          return (0, p.jsxs)(Te.Root, {
+          return (0, b.jsxs)(Te.Root, {
             view: e,
-            children: [(0, p.jsx)(Te.Image, {
+            children: [(0, b.jsx)(Te.Image, {
               alt: c ?? "",
               src: l ?? {
                 mobile: "",
                 desktop: ""
               }
-            }), (0, p.jsxs)(Te.Container, {
-              children: [(0, p.jsxs)(Te.Content, {
-                children: [s && (0, p.jsx)(Te.Badge, {
+            }), (0, b.jsxs)(Te.Container, {
+              children: [(0, b.jsxs)(Te.Content, {
+                children: [s && (0, b.jsx)(Te.Badge, {
                   children: s
-                }), (0, p.jsx)(Te.Heading, {
+                }), (0, b.jsx)(Te.Heading, {
                   level: 4,
                   children: i
-                }), o && (0, p.jsx)(Te.Description, {
+                }), o && (0, b.jsx)(Te.Description, {
                   children: t({
                     children: o
                   })
                 })]
-              }), (0, p.jsxs)(Te.Footer, {
-                children: [d && (0, p.jsx)(Te.Actions, {
-                  children: (0, p.jsx)(Xe, {
+              }), (0, b.jsxs)(Te.Footer, {
+                children: [d && (0, b.jsx)(Te.Actions, {
+                  children: (0, b.jsx)(Xe, {
                     appearance: "primary",
                     size: "LG",
                     label: d,
                     view: "stateful" !== a.variant ? "dialog" : "default"
                   })
-                }), n && (0, p.jsx)(Te.Disclaimer, {
+                }), n && (0, b.jsx)(Te.Disclaimer, {
                   children: t({
                     children: n
                   })
@@ -13047,37 +13047,37 @@ try {
             state: e
           } = Pe(), {
             ref: a
-          } = Ve();
-          return (0, p.jsx)(M, {
+          } = De();
+          return (0, b.jsx)(M, {
             jumpLinkId: e.jumpLinkId,
             currentStep: e.currentStep,
             "data-exclude-legacy-typography-css": !0,
             ref: a,
-            children: "stateful" === e.variant ? (0, p.jsx)(Qe, {}) : (0, p.jsx)(ea, {})
+            children: "stateful" === e.variant ? (0, b.jsx)(Qe, {}) : (0, b.jsx)(ea, {})
           })
         },
-        Qe = A(() => (0, p.jsxs)(p.Fragment, {
-          children: [(0, p.jsx)(Te, {
+        Qe = E(() => (0, b.jsxs)(b.Fragment, {
+          children: [(0, b.jsx)(Te, {
             stepIndex: "loading",
-            children: (0, p.jsx)(Ye, {})
-          }), (0, p.jsx)(Te, {
+            children: (0, b.jsx)(Ye, {})
+          }), (0, b.jsx)(Te, {
             stepIndex: "unclaimed",
-            children: (0, p.jsx)(Je, {})
-          }), (0, p.jsx)(Te, {
+            children: (0, b.jsx)(Je, {})
+          }), (0, b.jsx)(Te, {
             stepIndex: "success",
-            children: (0, p.jsx)(We, {})
-          }), (0, p.jsx)(Te, {
+            children: (0, b.jsx)(We, {})
+          }), (0, b.jsx)(Te, {
             stepIndex: "error",
-            children: (0, p.jsx)($e, {})
-          }), (0, p.jsx)(Te, {
+            children: (0, b.jsx)($e, {})
+          }), (0, b.jsx)(Te, {
             stepIndex: "link-account",
-            children: (0, p.jsx)(Ke, {})
+            children: (0, b.jsx)(Ke, {})
           })]
         })),
-        ea = A(() => {
+        ea = E(() => {
           const {
             formatMessage: e
-          } = (0, I.useIntl)(), {
+          } = (0, A.useIntl)(), {
             state: a
           } = Pe(), {
             isOpen: t,
@@ -13089,14 +13089,14 @@ try {
               const [, e] = (0, S.useSearchParams)(), {
                 dispatch: a
               } = Pe();
-              return (0, b.useCallback)(() => {
-                e(e => (e.delete(Ae), e), {
+              return (0, p.useCallback)(() => {
+                e(e => (e.delete(Ee), e), {
                   replace: !0
                 }), a({
                   type: "RESET"
                 })
               }, [a, e])
-            })(), t = (0, b.useCallback)(e => {
+            })(), t = (0, p.useCallback)(e => {
               e || a()
             }, [a]);
             return {
@@ -13104,45 +13104,45 @@ try {
               setIsOpen: t
             }
           })(), s = "dialog";
-          return (0, p.jsxs)(T.Dialog.Root, {
+          return (0, b.jsxs)(T.Dialog.Root, {
             isOpen: t,
             onOpenChange: r,
-            children: ["static" === a.variant && (0, p.jsx)(Je, {
+            children: ["static" === a.variant && (0, b.jsx)(Je, {
               view: "default"
-            }), (0, p.jsx)(T.Dialog.Portal, {
-              children: (0, p.jsx)(T.Dialog.Overlay, {
-                children: (0, p.jsxs)(T.Dialog.Content, {
-                  children: [(0, p.jsx)(T.Dialog.CloseButton, {
+            }), (0, b.jsx)(T.Dialog.Portal, {
+              children: (0, b.jsx)(T.Dialog.Overlay, {
+                children: (0, b.jsxs)(T.Dialog.Content, {
+                  children: [(0, b.jsx)(T.Dialog.CloseButton, {
                     label: e(Fe.web_offer_claim_dialog_close),
                     onPress: () => r(!1)
-                  }), (0, p.jsx)(T.Dialog.ScrollArea, {
+                  }), (0, b.jsx)(T.Dialog.ScrollArea, {
                     style: {
                       overflowY: "auto"
                     },
-                    children: (0, p.jsxs)(T.Dialog.Layout, {
-                      children: [(0, p.jsx)(Te, {
+                    children: (0, b.jsxs)(T.Dialog.Layout, {
+                      children: [(0, b.jsx)(Te, {
                         stepIndex: "loading",
-                        children: (0, p.jsx)(Ye, {
+                        children: (0, b.jsx)(Ye, {
                           view: s
                         })
-                      }), (0, p.jsx)(Te, {
+                      }), (0, b.jsx)(Te, {
                         stepIndex: "success",
-                        children: (0, p.jsx)(We, {
+                        children: (0, b.jsx)(We, {
                           view: s
                         })
-                      }), (0, p.jsx)(Te, {
+                      }), (0, b.jsx)(Te, {
                         stepIndex: "error",
-                        children: (0, p.jsx)($e, {
+                        children: (0, b.jsx)($e, {
                           view: s
                         })
-                      }), (0, p.jsx)(Te, {
+                      }), (0, b.jsx)(Te, {
                         stepIndex: "link-account",
-                        children: (0, p.jsx)(Ke, {
+                        children: (0, b.jsx)(Ke, {
                           view: s
                         })
-                      }), (0, p.jsx)(Te, {
+                      }), (0, b.jsx)(Te, {
                         stepIndex: "exists",
-                        children: (0, p.jsx)(We, {
+                        children: (0, b.jsx)(We, {
                           view: s
                         })
                       })]
@@ -13153,17 +13153,17 @@ try {
             })]
           })
         }),
-        aa = (A(Ze), ({
+        aa = (E(Ze), ({
           children: e
-        }) => e ? "string" != typeof e ? (console.error("RichText expects to be a string"), null) : (0, p.jsx)(C.TinaRichText, {
+        }) => e ? "string" != typeof e ? (console.error("RichText expects to be a string"), null) : (0, b.jsx)(C.TinaRichText, {
           html: e
         }) : null),
         ta = ({
           children: e,
           initialState: a
         }) => {
-          const [t, r] = (0, b.useReducer)(Me, a);
-          return (0, p.jsx)(Ee.Provider, {
+          const [t, r] = (0, p.useReducer)(Me, a);
+          return (0, b.jsx)(ze.Provider, {
             value: {
               state: t,
               dispatch: r
@@ -13171,7 +13171,7 @@ try {
             children: e
           })
         },
-        ra = A(({
+        ra = E(({
           giftId: e,
           location: a,
           jumpLinkId: t,
@@ -13192,15 +13192,15 @@ try {
             {
               hash: c
             } = (0, S.useLocation)();
-          return (0, b.useLayoutEffect)(() => {
+          return (0, p.useLayoutEffect)(() => {
             const e = document.getElementById(t);
             e && c.includes(t) && e.scrollIntoView({
               behavior: "instant",
               block: "center"
             })
-          }, []), (0, p.jsx)(ta, {
+          }, []), (0, b.jsx)(ta, {
             initialState: n,
-            children: s && (0, p.jsx)(Ze, {})
+            children: s && (0, b.jsx)(Ze, {})
           })
         }),
         sa = {
@@ -13399,32 +13399,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -13500,32 +13476,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -13594,21 +13546,9 @@ try {
         return Object.keys(r)
       }, s.resolve = i, e.exports = s, s.id = 39294
     },
-    51048(e, a, t) {
+    58963(e, a, t) {
       var r = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function s(e) {
@@ -13625,23 +13565,11 @@ try {
       }
       s.keys = function() {
         return Object.keys(r)
-      }, s.resolve = i, e.exports = s, s.id = 51048
+      }, s.resolve = i, e.exports = s, s.id = 58963
     },
-    16044(e, a, t) {
+    25087(e, a, t) {
       var r = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function s(e) {
@@ -13658,7 +13586,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(r)
-      }, s.resolve = i, e.exports = s, s.id = 16044
+      }, s.resolve = i, e.exports = s, s.id = 25087
     },
     97558(e) {
       "use strict";
@@ -13950,111 +13878,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    13890(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

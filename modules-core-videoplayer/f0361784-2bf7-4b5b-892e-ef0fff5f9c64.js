@@ -57,12 +57,12 @@ try {
               } else {
                 a.call(l, r) && n.filter(l) && (t || !e.includes(l)) && o.push(l);
                 var p = l.shadowRoot || "function" == typeof n.getShadowRoot && n.getShadowRoot(l),
-                  h = !d(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(l));
-                if (p && h) {
-                  var y = c(!0 === p ? l.children : p.children, !0, n);
-                  n.flatten ? o.push.apply(o, y) : o.push({
+                  b = !d(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(l));
+                if (p && b) {
+                  var h = c(!0 === p ? l.children : p.children, !0, n);
+                  n.flatten ? o.push.apply(o, h) : o.push({
                     scopeParent: l,
-                    candidates: y
+                    candidates: h
                   })
                 } else i.unshift.apply(i, l.children)
               }
@@ -82,18 +82,18 @@ try {
         p = function(e, t) {
           return e.tabIndex === t.tabIndex ? e.documentOrder - t.documentOrder : e.tabIndex - t.tabIndex
         },
-        h = function(e) {
+        b = function(e) {
           return "INPUT" === e.tagName
         },
-        y = function(e) {
+        h = function(e) {
           var t = e.getBoundingClientRect(),
             n = t.width,
             o = t.height;
           return 0 === n && 0 === o
         },
-        b = function(e, t) {
+        y = function(e, t) {
           return !(t.disabled || function(e) {
-            return h(e) && "hidden" === e.type
+            return b(e) && "hidden" === e.type
           }(t) || function(e, t) {
             var n = t.displayCheck,
               o = t.getShadowRoot;
@@ -108,13 +108,13 @@ try {
             var r = a.call(e, "details>summary:first-of-type") ? e.parentElement : e;
             if (a.call(r, "details:not([open]) *")) return !0;
             if (n && "full" !== n && "full-native" !== n && "legacy-full" !== n) {
-              if ("non-zero-area" === n) return y(e)
+              if ("non-zero-area" === n) return h(e)
             } else {
               if ("function" == typeof o) {
                 for (var i = e; e;) {
                   var d = e.parentElement,
                     u = l(e);
-                  if (d && !d.shadowRoot && !0 === o(d)) return y(e);
+                  if (d && !d.shadowRoot && !0 === o(d)) return h(e);
                   e = e.assignedSlot ? e.assignedSlot : d || u === e.ownerDocument ? d : u.host
                 }
                 e = i
@@ -155,7 +155,7 @@ try {
         g = function(e, t) {
           return !(function(e) {
             return function(e) {
-              return h(e) && "radio" === e.type
+              return b(e) && "radio" === e.type
             }(e) && ! function(e) {
               if (!e.name) return !0;
               var t, n = e.form || l(e),
@@ -174,7 +174,7 @@ try {
               }(t, e.form);
               return !r || r === e
             }(e)
-          }(t) || s(t) < 0 || !b(e, t))
+          }(t) || s(t) < 0 || !y(e, t))
         },
         v = function(e) {
           var t = parseInt(e.getAttribute("tabindex"), 10);
@@ -213,10 +213,10 @@ try {
         },
         S = function(e, t) {
           return (t = t || {}).getShadowRoot ? c([e], t.includeContainer, {
-            filter: b.bind(null, t),
+            filter: y.bind(null, t),
             flatten: !0,
             getShadowRoot: t.getShadowRoot
-          }) : u(e, t.includeContainer, b.bind(null, t))
+          }) : u(e, t.includeContainer, y.bind(null, t))
         },
         E = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");
@@ -225,7 +225,7 @@ try {
         N = o.concat("iframe:not([inert]):not([inert] *)").join(","),
         I = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");
-          return !1 !== a.call(e, N) && b(t, e)
+          return !1 !== a.call(e, N) && y(t, e)
         }
     }
   }

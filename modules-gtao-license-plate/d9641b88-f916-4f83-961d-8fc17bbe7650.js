@@ -22,7 +22,7 @@ try {
         }, n(e)
       }
       a.r(t), a.d(t, {
-        BlurStack: () => c,
+        BlurStack: () => b,
         canvasRGB: () => s,
         canvasRGBA: () => l,
         image: () => i,
@@ -64,18 +64,18 @@ try {
       }
 
       function d(e, t, a, n, i, f) {
-        for (var l, d = e.data, s = 2 * f + 1, g = n - 1, u = i - 1, b = f + 1, y = b * (b + 1) / 2, p = new c, v = p, h = 1; h < s; h++) v = v.next = new c, h === b && (l = v);
+        for (var l, d = e.data, s = 2 * f + 1, g = n - 1, u = i - 1, c = f + 1, y = c * (c + 1) / 2, p = new b, v = p, h = 1; h < s; h++) v = v.next = new b, h === c && (l = v);
         v.next = p;
         for (var m = null, w = null, x = 0, _ = 0, E = r[f], I = o[f], k = 0; k < i; k++) {
           v = p;
-          for (var C = d[_], B = d[_ + 1], S = d[_ + 2], T = d[_ + 3], D = 0; D < b; D++) v.r = C, v.g = B, v.b = S, v.a = T, v = v.next;
-          for (var M = 0, N = 0, R = 0, G = 0, j = b * C, A = b * B, H = b * S, O = b * T, W = y * C, L = y * B, Y = y * S, q = y * T, z = 1; z < b; z++) {
+          for (var C = d[_], B = d[_ + 1], S = d[_ + 2], T = d[_ + 3], D = 0; D < c; D++) v.r = C, v.g = B, v.b = S, v.a = T, v = v.next;
+          for (var M = 0, N = 0, R = 0, G = 0, j = c * C, A = c * B, H = c * S, O = c * T, W = y * C, L = y * B, Y = y * S, q = y * T, z = 1; z < c; z++) {
             var F = _ + ((g < z ? g : z) << 2),
               J = d[F],
               K = d[F + 1],
               P = d[F + 2],
               Q = d[F + 3],
-              U = b - z;
+              U = c - z;
             W += (v.r = J) * U, L += (v.g = K) * U, Y += (v.b = P) * U, q += (v.a = Q) * U, M += J, N += K, R += P, G += Q, v = v.next
           }
           m = p, w = l;
@@ -102,25 +102,25 @@ try {
             fe = d[_ + 1],
             le = d[_ + 2],
             de = d[_ + 3],
-            se = b * ie,
-            ge = b * fe,
-            ce = b * le,
-            ue = b * de,
-            be = y * ie,
+            se = c * ie,
+            ge = c * fe,
+            be = c * le,
+            ue = c * de,
+            ce = y * ie,
             ye = y * fe,
             pe = y * le,
             ve = y * de;
           v = p;
-          for (var he = 0; he < b; he++) v.r = ie, v.g = fe, v.b = le, v.a = de, v = v.next;
+          for (var he = 0; he < c; he++) v.r = ie, v.g = fe, v.b = le, v.a = de, v = v.next;
           for (var me = n, we = 0, xe = 0, _e = 0, Ee = 0, Ie = 1; Ie <= f; Ie++) {
             _ = me + oe << 2;
-            var ke = b - Ie;
-            be += (v.r = ie = d[_]) * ke, ye += (v.g = fe = d[_ + 1]) * ke, pe += (v.b = le = d[_ + 2]) * ke, ve += (v.a = de = d[_ + 3]) * ke, Ee += ie, we += fe, xe += le, _e += de, v = v.next, Ie < u && (me += n)
+            var ke = c - Ie;
+            ce += (v.r = ie = d[_]) * ke, ye += (v.g = fe = d[_ + 1]) * ke, pe += (v.b = le = d[_ + 2]) * ke, ve += (v.a = de = d[_ + 3]) * ke, Ee += ie, we += fe, xe += le, _e += de, v = v.next, Ie < u && (me += n)
           }
           _ = oe, m = p, w = l;
           for (var Ce = 0; Ce < i; Ce++) {
             var Be = _ << 2;
-            d[Be + 3] = de = ve * E >>> I, de > 0 ? (de = 255 / de, d[Be] = (be * E >>> I) * de, d[Be + 1] = (ye * E >>> I) * de, d[Be + 2] = (pe * E >>> I) * de) : d[Be] = d[Be + 1] = d[Be + 2] = 0, be -= se, ye -= ge, pe -= ce, ve -= ue, se -= m.r, ge -= m.g, ce -= m.b, ue -= m.a, Be = oe + ((Be = Ce + b) < u ? Be : u) * n << 2, be += Ee += m.r = d[Be], ye += we += m.g = d[Be + 1], pe += xe += m.b = d[Be + 2], ve += _e += m.a = d[Be + 3], m = m.next, se += ie = w.r, ge += fe = w.g, ce += le = w.b, ue += de = w.a, Ee -= ie, we -= fe, xe -= le, _e -= de, w = w.next, _ += n
+            d[Be + 3] = de = ve * E >>> I, de > 0 ? (de = 255 / de, d[Be] = (ce * E >>> I) * de, d[Be + 1] = (ye * E >>> I) * de, d[Be + 2] = (pe * E >>> I) * de) : d[Be] = d[Be + 1] = d[Be + 2] = 0, ce -= se, ye -= ge, pe -= be, ve -= ue, se -= m.r, ge -= m.g, be -= m.b, ue -= m.a, Be = oe + ((Be = Ce + c) < u ? Be : u) * n << 2, ce += Ee += m.r = d[Be], ye += we += m.g = d[Be + 1], pe += xe += m.b = d[Be + 2], ve += _e += m.a = d[Be + 3], m = m.next, se += ie = w.r, ge += fe = w.g, be += le = w.b, ue += de = w.a, Ee -= ie, we -= fe, xe -= le, _e -= de, w = w.next, _ += n
           }
         }
         return e
@@ -135,21 +135,21 @@ try {
       }
 
       function g(e, t, a, n, i, f) {
-        for (var l, d = e.data, s = 2 * f + 1, g = n - 1, u = i - 1, b = f + 1, y = b * (b + 1) / 2, p = new c, v = p, h = 1; h < s; h++) v = v.next = new c, h === b && (l = v);
+        for (var l, d = e.data, s = 2 * f + 1, g = n - 1, u = i - 1, c = f + 1, y = c * (c + 1) / 2, p = new b, v = p, h = 1; h < s; h++) v = v.next = new b, h === c && (l = v);
         v.next = p;
         for (var m, w, x = null, _ = null, E = r[f], I = o[f], k = 0, C = 0, B = 0; B < i; B++) {
           var S = d[C],
             T = d[C + 1],
             D = d[C + 2],
-            M = b * S,
-            N = b * T,
-            R = b * D,
+            M = c * S,
+            N = c * T,
+            R = c * D,
             G = y * S,
             j = y * T,
             A = y * D;
           v = p;
-          for (var H = 0; H < b; H++) v.r = S, v.g = T, v.b = D, v = v.next;
-          for (var O = 0, W = 0, L = 0, Y = 1; Y < b; Y++) m = C + ((g < Y ? g : Y) << 2), G += (v.r = S = d[m]) * (w = b - Y), j += (v.g = T = d[m + 1]) * w, A += (v.b = D = d[m + 2]) * w, O += S, W += T, L += D, v = v.next;
+          for (var H = 0; H < c; H++) v.r = S, v.g = T, v.b = D, v = v.next;
+          for (var O = 0, W = 0, L = 0, Y = 1; Y < c; Y++) m = C + ((g < Y ? g : Y) << 2), G += (v.r = S = d[m]) * (w = c - Y), j += (v.g = T = d[m + 1]) * w, A += (v.b = D = d[m + 2]) * w, O += S, W += T, L += D, v = v.next;
           x = p, _ = l;
           for (var q = 0; q < n; q++) d[C] = G * E >>> I, d[C + 1] = j * E >>> I, d[C + 2] = A * E >>> I, G -= M, j -= N, A -= R, M -= x.r, N -= x.g, R -= x.b, m = k + ((m = q + f + 1) < g ? m : g) << 2, G += O += x.r = d[m], j += W += x.g = d[m + 1], A += L += x.b = d[m + 2], x = x.next, M += S = _.r, N += T = _.g, R += D = _.b, O -= S, W -= T, L -= D, _ = _.next, C += 4;
           k += n
@@ -158,21 +158,21 @@ try {
           var F = d[C = z << 2],
             J = d[C + 1],
             K = d[C + 2],
-            P = b * F,
-            Q = b * J,
-            U = b * K,
+            P = c * F,
+            Q = c * J,
+            U = c * K,
             V = y * F,
             X = y * J,
             Z = y * K;
           v = p;
-          for (var $ = 0; $ < b; $++) v.r = F, v.g = J, v.b = K, v = v.next;
-          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= f; ne++) C = re + z << 2, V += (v.r = F = d[C]) * (w = b - ne), X += (v.g = J = d[C + 1]) * w, Z += (v.b = K = d[C + 2]) * w, ee += F, te += J, ae += K, v = v.next, ne < u && (re += n);
+          for (var $ = 0; $ < c; $++) v.r = F, v.g = J, v.b = K, v = v.next;
+          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= f; ne++) C = re + z << 2, V += (v.r = F = d[C]) * (w = c - ne), X += (v.g = J = d[C + 1]) * w, Z += (v.b = K = d[C + 2]) * w, ee += F, te += J, ae += K, v = v.next, ne < u && (re += n);
           C = z, x = p, _ = l;
-          for (var oe = 0; oe < i; oe++) d[m = C << 2] = V * E >>> I, d[m + 1] = X * E >>> I, d[m + 2] = Z * E >>> I, V -= P, X -= Q, Z -= U, P -= x.r, Q -= x.g, U -= x.b, m = z + ((m = oe + b) < u ? m : u) * n << 2, V += ee += x.r = d[m], X += te += x.g = d[m + 1], Z += ae += x.b = d[m + 2], x = x.next, P += F = _.r, Q += J = _.g, U += K = _.b, ee -= F, te -= J, ae -= K, _ = _.next, C += n
+          for (var oe = 0; oe < i; oe++) d[m = C << 2] = V * E >>> I, d[m + 1] = X * E >>> I, d[m + 2] = Z * E >>> I, V -= P, X -= Q, Z -= U, P -= x.r, Q -= x.g, U -= x.b, m = z + ((m = oe + c) < u ? m : u) * n << 2, V += ee += x.r = d[m], X += te += x.g = d[m + 1], Z += ae += x.b = d[m + 2], x = x.next, P += F = _.r, Q += J = _.g, U += K = _.b, ee -= F, te -= J, ae -= K, _ = _.next, C += n
         }
         return e
       }
-      var c = function e() {
+      var b = function e() {
         ! function(e, t) {
           if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
         }(this, e), this.r = 0, this.g = 0, this.b = 0, this.a = 0, this.next = null

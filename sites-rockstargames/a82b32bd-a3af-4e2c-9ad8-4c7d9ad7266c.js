@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3c35b959-8cbf-4c70-a4b7-2e8e098159ee", e._sentryDebugIdIdentifier = "sentry-dbid-3c35b959-8cbf-4c70-a4b7-2e8e098159ee")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a82b32bd-a3af-4e2c-9ad8-4c7d9ad7266c", e._sentryDebugIdIdentifier = "sentry-dbid-a82b32bd-a3af-4e2c-9ad8-4c7d9ad7266c")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -1605,8 +1605,8 @@ try {
         for (d.forEach(function(e) {
             l.add(e)
           }); l.size > 0;) {
-          var m = l;
-          l = new Set, m.forEach(function(e) {
+          var r = l;
+          l = new Set, r.forEach(function(e) {
             s.has(e) || (s.add(e), (n[e] || new Set).forEach(function(e) {
               l.add(e)
             }))
@@ -3227,8 +3227,8 @@ try {
         for (d.forEach(function(e) {
             l.add(e)
           }); l.size > 0;) {
-          var m = l;
-          l = new Set, m.forEach(function(e) {
+          var r = l;
+          l = new Set, r.forEach(function(e) {
             s.has(e) || (s.add(e), (n[e] || new Set).forEach(function(e) {
               l.add(e)
             }))
@@ -3257,8 +3257,8 @@ try {
           children: a,
           context: i = "",
           to: l,
-          onClick: m,
-          target: r = "_self",
+          onClick: r,
+          target: m = "_self",
           ...o
         }) => {
           const c = (0, t.default)(s.button, s[i], e);
@@ -3266,14 +3266,14 @@ try {
             ...o,
             to: l,
             className: c,
-            onClick: m,
-            target: r,
+            onClick: r,
+            target: m,
             children: a
           }) : (0, n.jsx)("button", {
             ...o,
             type: "button",
             className: c,
-            onClick: m,
+            onClick: r,
             children: a
           })
         }
@@ -3296,31 +3296,31 @@ try {
         isWideCard: e = !1,
         size: a = 640,
         title: l,
-        titleSlug: m,
-        inGlobalNav: r = !1
+        titleSlug: r,
+        inGlobalNav: m = !1
       }) => {
         const {
           isMobile: o
-        } = (0, d.useWindowResize)(), c = (0, d.useLocale)(), u = (0, t.useMemo)(() => {
+        } = (0, d.useWindowResize)(), c = (0, t.useMemo)(() => {
           let n = "";
-          return e && (n = o ? i(16044)(`./${m}/mobile/${c}.jpg`) : i(51048)(`./${m}/desktop/${c}.jpg`)), n || (n = i(39294)(`./${m}.jpg`), n += `?im=Resize=${a}`), n
-        }, [o, m]), [k] = (0, d.usePreloadImg)(u);
-        let g = u;
+          return e && (n = o ? i(25087)(`./${r}/mobile/global.jpg`) : i(58963)(`./${r}/desktop/global.jpg`)), n || (n = i(39294)(`./${r}.jpg`), n += `?im=Resize=${a}`), n
+        }, [o, r]), [u] = (0, d.usePreloadImg)(c);
+        let k = c;
         return (0, n.jsx)("div", {
           role: "img",
           "aria-label": l,
           style: {
-            backgroundImage: `url(${g})`,
-            borderRadius: r ? "unset" : ""
+            backgroundImage: `url(${k})`,
+            borderRadius: m ? "unset" : ""
           },
-          className: [s.img, k ? s.startAnimation : "", e ? s.wide : ""].join(" ")
+          className: [s.img, u ? s.startAnimation : "", e ? s.wide : ""].join(" ")
         })
       }
     },
     890(e, a, i) {
       "use strict";
       i.r(a), i.d(a, {
-        default: () => T
+        default: () => I
       });
       var n = i(39793),
         t = i(93082),
@@ -3343,14 +3343,14 @@ try {
           defaultMessage: "{width} by {height} pixels."
         }
       });
-      var m = i(38044),
-        r = i(78995),
+      var r = i(38044),
+        m = i(78995),
         o = i(1e4),
         c = i(79955),
         u = i.n(c),
         k = i(91681),
         g = i.n(k);
-      const p = {
+      const v = {
           card: "rockstargames-sites-rockstargamesdeb2cdef430300fe77edd9d2561405e6",
           caret: "rockstargames-sites-rockstargamesb702c853993aa4c167933ef1eaaebb1a",
           collection: "rockstargames-sites-rockstargamesf00e37c4c6751a2a963089d28a7db25d",
@@ -3384,39 +3384,39 @@ try {
           title: "rockstargames-sites-rockstargamesb0dc7b7a2afd9c043d8781b8286d4846",
           viewAll: "rockstargames-sites-rockstargamesfba9c5949f3095c0d199f1abe7d7d13f"
         },
-        v = (0, d.withTranslations)(({
+        p = (0, d.withTranslations)(({
           links: e,
           collectionId: a,
           name: i,
-          title: r,
+          title: m,
           label: o,
           t: c
         }) => {
           const k = (0, s.useIntl)(),
-            [v, f] = (0, t.useState)(!1),
+            [p, f] = (0, t.useState)(!1),
             {
               sanitize: b
             } = g(),
             N = [11, 10, 12, 13, 14, 15].includes(a),
             h = i || c("Select Retailer"),
-            j = (0, t.useRef)(),
-            _ = e => {
-              j.current.contains(e.target) || f(!1)
+            w = (0, t.useRef)(),
+            j = e => {
+              w.current.contains(e.target) || f(!1)
             },
-            w = () => {
+            _ = () => {
               f(!1)
             },
-            x = e => {
-              (0, d.downloadFile)(e), w()
-            },
             y = e => {
+              (0, d.downloadFile)(e), _()
+            },
+            x = e => {
               "Escape" === e.key && f(!1)
             };
-          (0, t.useEffect)(() => (v ? window.addEventListener("keyup", y) : window.removeEventListener("keyup", y), () => window.removeEventListener("keyup", y)), [y, v]), g().addHook("afterSanitizeAttributes", function(e) {
-            e.hasAttribute("target") && e.setAttribute("tabindex", v ? 0 : -1)
-          }), (0, t.useEffect)(() => (v ? document.addEventListener("mousedown", _) : document.removeEventListener("mousedown", _), () => {
-            document.removeEventListener("mousedown", _)
-          }), [v]);
+          (0, t.useEffect)(() => (p ? window.addEventListener("keyup", x) : window.removeEventListener("keyup", x), () => window.removeEventListener("keyup", x)), [x, p]), g().addHook("afterSanitizeAttributes", function(e) {
+            e.hasAttribute("target") && e.setAttribute("tabindex", p ? 0 : -1)
+          }), (0, t.useEffect)(() => (p ? document.addEventListener("mousedown", j) : document.removeEventListener("mousedown", j), () => {
+            document.removeEventListener("mousedown", j)
+          }), [p]);
           const S = e => {
             if (!e) return null;
             const a = e.trim().match(/(\d{1,4})x(\d{1,4})/);
@@ -3431,26 +3431,26 @@ try {
             return null
           };
           return (0, n.jsx)("div", {
-            ref: j,
-            className: p.dropdownWrapper,
+            ref: w,
+            className: v.dropdownWrapper,
             children: (0, n.jsx)(u(), {
-              active: v,
+              active: p,
               children: (0, n.jsxs)("div", {
                 children: [(0, n.jsx)("button", {
-                  className: p.dropdownButton,
-                  onClick: () => f(!v),
+                  className: v.dropdownButton,
+                  onClick: () => f(!p),
                   type: "select",
                   "aria-label": `${o?o+", ":""}${h}`,
                   children: (0, n.jsxs)("div", {
-                    className: p.title,
+                    className: v.title,
                     children: [(0, n.jsx)("p", {
                       children: h
                     }), (0, n.jsx)("div", {
-                      className: [p.caret, v ? p.open : ""].join(" ")
+                      className: [v.caret, p ? v.open : ""].join(" ")
                     })]
                   })
                 }), (0, n.jsx)("ul", {
-                  className: [p.list, v ? p.open : ""].join(" "),
+                  className: [v.list, p ? v.open : ""].join(" "),
                   children: N ? (0, n.jsx)(n.Fragment, {
                     children: (e => {
                       const a = (new DOMParser).parseFromString(b(e, {
@@ -3473,12 +3473,12 @@ try {
                           }
                           t[a] = e.value
                         }), (0, n.jsx)("li", {
-                          className: p.item,
-                          children: (0, n.jsx)(m.A, {
+                          className: v.item,
+                          children: (0, n.jsx)(r.A, {
                             ...t,
-                            tabIndex: v ? 0 : -1,
+                            tabIndex: p ? 0 : -1,
                             target: "_blank",
-                            onClick: w,
+                            onClick: _,
                             children: e.textContent
                           })
                         }, `link_${a}`)
@@ -3486,14 +3486,14 @@ try {
                     })(e)
                   }) : e.map(e => {
                     if ("thumb" !== e.label) return (0, n.jsx)("li", {
-                      className: p.item,
-                      children: (0, n.jsx)(m.A, {
+                      className: v.item,
+                      children: (0, n.jsx)(r.A, {
                         to: e.src,
                         "data-gtm-category": "Downloads",
-                        "data-gtm-action": `Collection : ${r}`,
+                        "data-gtm-action": `Collection : ${m}`,
                         "data-gtm-label": e.src,
-                        tabIndex: v ? 0 : -1,
-                        onClick: x,
+                        tabIndex: p ? 0 : -1,
+                        onClick: y,
                         "aria-label": S(e.label),
                         children: e.label
                       })
@@ -3510,25 +3510,25 @@ try {
           homepage: i = !1,
           t
         }) => (0, n.jsxs)("div", {
-          className: p.collection,
+          className: v.collection,
           children: [(0, n.jsx)("h2", {
-            className: p.sectionHeader,
+            className: v.sectionHeader,
             children: e.title
           }), (0, n.jsx)("div", {
-            className: p.grid,
+            className: v.grid,
             children: a.results.map(a => (0, n.jsxs)("div", {
-              className: p.downloadItem,
-              children: [(0, n.jsx)(r.A, {
+              className: v.downloadItem,
+              children: [(0, n.jsx)(m.A, {
                 title: a.title,
                 titleSlug: a.titleSlug
-              }), (0, n.jsx)(v, {
+              }), (0, n.jsx)(p, {
                 collectionId: e.id,
                 links: a.downloadsGame.platform,
                 label: a.title
               })]
             }, a.titleSlug))
           }), i ? (0, n.jsx)("div", {
-            className: p.viewAll,
+            className: v.viewAll,
             children: (0, n.jsx)(o.A, {
               role: "link",
               "data-gtm-category": "Downloads",
@@ -3545,28 +3545,28 @@ try {
           homepage: a = !1,
           t: i
         }) => (0, n.jsxs)("div", {
-          className: p.collection,
+          className: v.collection,
           children: [(0, n.jsx)("h2", {
-            className: p.sectionHeader,
+            className: v.sectionHeader,
             children: e.title
           }), (0, n.jsx)("div", {
-            className: p.grid,
+            className: v.grid,
             children: e.apps.slice(0, a ? 4 : 100).map(a => (0, n.jsxs)("div", {
-              className: p.downloadItem,
+              className: v.downloadItem,
               children: [(0, n.jsx)("div", {
-                className: p.img,
+                className: v.img,
                 style: {
                   backgroundImage: `url(${a.preview})`,
                   "--aspect-ratio": "1/1"
                 },
                 "aria-label": a.title
-              }), (0, n.jsx)(v, {
+              }), (0, n.jsx)(p, {
                 collectionId: e.id,
                 links: a.platform
               })]
             }, a.id))
           }), a ? (0, n.jsx)("div", {
-            className: p.viewAll,
+            className: v.viewAll,
             children: (0, n.jsx)(o.A, {
               role: "link",
               "data-gtm-category": "Downloads",
@@ -3583,27 +3583,27 @@ try {
         }) => {
           const a = (0, s.useIntl)();
           return (0, n.jsxs)("div", {
-            className: p.collection,
+            className: v.collection,
             children: [(0, n.jsx)("h4", {
-              className: p.collectionTitle,
-              children: (0, n.jsx)(m.A, {
+              className: v.collectionTitle,
+              children: (0, n.jsx)(r.A, {
                 to: "/downloads",
                 children: a.formatMessage(l.rockstargames_downloads_go_back)
               })
             }), (0, n.jsx)("h2", {
-              className: p.sectionHeader,
+              className: v.sectionHeader,
               children: e.title
             }), (0, n.jsx)("div", {
-              className: p.grid,
+              className: v.grid,
               children: e.gold_bars.map(a => (0, n.jsxs)("div", {
-                className: p.downloadItem,
+                className: v.downloadItem,
                 children: [(0, n.jsx)("div", {
-                  className: p.img,
+                  className: v.img,
                   style: {
                     backgroundImage: `url(${a.preview})`,
                     "--aspect-ratio": "1/1"
                   }
-                }), (0, n.jsx)(v, {
+                }), (0, n.jsx)(p, {
                   collectionId: e.id,
                   links: a.platform
                 })]
@@ -3616,19 +3616,19 @@ try {
         }) => {
           const a = (0, s.useIntl)();
           return (0, n.jsxs)("div", {
-            className: p.collection,
+            className: v.collection,
             children: [(0, n.jsx)("h4", {
-              className: p.collectionTitle,
-              children: (0, n.jsx)(m.A, {
+              className: v.collectionTitle,
+              children: (0, n.jsx)(r.A, {
                 to: "/downloads",
                 children: a.formatMessage(l.rockstargames_downloads_go_back)
               })
             }), (0, n.jsx)("h2", {
-              className: p.sectionHeader,
+              className: v.sectionHeader,
               children: e.title
             }), (0, n.jsx)("div", {
-              className: p.grid,
-              children: e.patches.map(i => (0, n.jsx)(m.A, {
+              className: v.grid,
+              children: e.patches.map(i => (0, n.jsx)(r.A, {
                 to: i.support_url,
                 target: "_blank",
                 "data-gtm-category": "Downloads",
@@ -3639,8 +3639,8 @@ try {
                   collection: e.title
                 }),
                 children: (0, n.jsx)("div", {
-                  className: p.card,
-                  children: (0, n.jsx)(r.A, {
+                  className: v.card,
+                  children: (0, n.jsx)(m.A, {
                     title: i.game.title,
                     titleSlug: i?.game?.titleSlug ?? i.game.title_slug
                   })
@@ -3649,39 +3649,39 @@ try {
             })]
           })
         },
-        j = ({
+        w = ({
           collection: e
         }) => {
           const a = (0, s.useIntl)();
           return (0, n.jsxs)("div", {
-            className: p.collection,
+            className: v.collection,
             children: [(0, n.jsx)("h4", {
-              className: p.collectionTitle,
-              children: (0, n.jsx)(m.A, {
+              className: v.collectionTitle,
+              children: (0, n.jsx)(r.A, {
                 to: "/downloads",
                 children: a.formatMessage(l.rockstargames_downloads_go_back)
               })
             }), (0, n.jsx)("h2", {
-              className: p.sectionHeader,
+              className: v.sectionHeader,
               children: e.title
             }), (0, n.jsx)("div", {
-              className: p.grid,
+              className: v.grid,
               children: e.shark_cards.map(a => (0, n.jsxs)("div", {
-                className: p.downloadItem,
+                className: v.downloadItem,
                 children: [(0, n.jsx)("div", {
-                  className: p.img,
+                  className: v.img,
                   style: {
                     backgroundImage: `url(${a.preview})`,
                     "--aspect-ratio": "7/5"
                   }
                 }), (0, n.jsxs)("div", {
-                  className: p.label,
+                  className: v.label,
                   children: [(0, n.jsx)("h5", {
                     children: a.title
                   }), (0, n.jsx)("p", {
                     children: a.desc
                   })]
-                }), (0, n.jsx)(v, {
+                }), (0, n.jsx)(p, {
                   collectionId: e.id,
                   links: a.platform
                 })]
@@ -3689,33 +3689,33 @@ try {
             })]
           })
         },
-        _ = ({
+        j = ({
           collection: e,
           imgRatio: a
         }) => {
           const i = (0, s.useIntl)(),
             d = (0, t.useRef)(),
-            r = e.title_slug,
-            o = !["music", "dlc"].includes(r);
+            m = e.title_slug,
+            o = !["music", "dlc"].includes(m);
           return (0, t.useEffect)(() => {
             d?.current && d.current.focus()
           }, [d]), (0, n.jsxs)("div", {
-            className: p.collection,
+            className: v.collection,
             ref: d,
             "aria-label": e?.title,
             role: "region",
             children: [(0, n.jsx)("h4", {
-              className: p.collectionTitle,
-              children: (0, n.jsx)(m.A, {
+              className: v.collectionTitle,
+              children: (0, n.jsx)(r.A, {
                 to: "/downloads",
                 children: i.formatMessage(l.rockstargames_downloads_go_back)
               })
             }), (0, n.jsx)("h2", {
-              className: p.sectionHeader,
+              className: v.sectionHeader,
               children: e.title
             }), (0, n.jsx)("div", {
-              className: p.grid,
-              children: e.series.map(t => (0, n.jsx)(m.A, {
+              className: v.grid,
+              children: e.series.map(t => (0, n.jsx)(r.A, {
                 to: `/downloads?collection=${e.id}&series=${t.id}`,
                 "data-gtm-category": "Downloads",
                 "data-gtm-action": `Collection : ${e.title}`,
@@ -3725,15 +3725,15 @@ try {
                   collection: e.title
                 }),
                 children: (0, n.jsxs)("div", {
-                  className: p.card,
+                  className: v.card,
                   children: [(0, n.jsx)("div", {
-                    className: p.img,
+                    className: v.img,
                     style: {
                       backgroundImage: `url(${t?.musics?.[0]?.thumb??t?.dlcs?.[0]?.thumb??t.preview})`,
                       "--aspect-ratio": a
                     }
                   }), o ? (0, n.jsx)("h5", {
-                    className: p.title,
+                    className: v.title,
                     "aria-hidden": !0,
                     children: t.title
                   }) : ""]
@@ -3742,7 +3742,7 @@ try {
             })]
           })
         },
-        w = ({
+        _ = ({
           collection: e,
           games: a = []
         }) => {
@@ -3766,7 +3766,7 @@ try {
                 collection: e
               });
             case "sharkcards":
-              return (0, n.jsx)(j, {
+              return (0, n.jsx)(w, {
                 collection: e
               });
             case "dlc":
@@ -3775,15 +3775,15 @@ try {
             case "avatars":
             case "gamewallpaper":
             case "rockstarwallpaper":
-              return (0, n.jsx)(_, {
+              return (0, n.jsx)(j, {
                 collection: e,
                 imgRatio: i
               })
           }
         },
-        x = ({
+        y = ({
           collection: e
-        }) => (0, n.jsx)(m.A, {
+        }) => (0, n.jsx)(r.A, {
           to: `/downloads?collection=${e.id}`,
           "data-gtm-category": "Downloads",
           "data-gtm-action": "Collection : Misc",
@@ -3792,30 +3792,30 @@ try {
             window.scrollTo(0, 0)
           },
           children: (0, n.jsxs)("div", {
-            className: p.card,
+            className: v.card,
             children: [(0, n.jsx)("div", {
-              className: p.img,
+              className: v.img,
               style: {
                 "--aspect-ratio": "1/1",
                 backgroundImage: `url(${e.preview})`
               }
             }), (0, n.jsx)("h5", {
-              className: p.title,
+              className: v.title,
               children: e.title
             })]
           })
         }),
-        y = (0, d.withTranslations)(({
+        x = (0, d.withTranslations)(({
           collections: e,
           t: a
         }) => (0, n.jsxs)("div", {
-          className: p.collection,
+          className: v.collection,
           children: [(0, n.jsx)("h2", {
-            className: p.sectionHeader,
+            className: v.sectionHeader,
             children: a("Miscellaneous")
           }), (0, n.jsx)("div", {
-            className: p.grid,
-            children: e.map(e => (0, n.jsx)(x, {
+            className: v.grid,
+            children: e.map(e => (0, n.jsx)(y, {
               collection: e
             }, e.id))
           })]
@@ -3829,18 +3829,18 @@ try {
         }) => {
           const t = (0, s.useIntl)();
           return (0, n.jsxs)("div", {
-            className: p.featured,
+            className: v.featured,
             children: [(0, n.jsxs)("div", {
-              className: [p.gridLarge, p.hero].join(" "),
+              className: [v.gridLarge, v.hero].join(" "),
               children: [(0, n.jsx)("div", {
                 style: {
                   "--aspect-ratio": "1/1"
                 },
-                className: [p.img, p[a.titleSlug]].join(" ")
+                className: [v.img, v[a.titleSlug]].join(" ")
               }), (0, n.jsxs)("div", {
-                className: p.featuredDesc,
+                className: v.featuredDesc,
                 children: [(0, n.jsxs)("div", {
-                  className: p.text,
+                  className: v.text,
                   children: [(0, n.jsx)("h2", {
                     children: a.title
                   }), (0, n.jsx)("p", {
@@ -3862,25 +3862,25 @@ try {
                 })]
               })]
             }), (0, n.jsx)("h2", {
-              className: p.sectionHeader,
+              className: v.sectionHeader,
               children: i("Featured Downloads")
             }), (0, n.jsx)("div", {
-              className: p.gridLarge,
-              children: e.map(e => (0, n.jsx)(m.A, {
+              className: v.gridLarge,
+              children: e.map(e => (0, n.jsx)(r.A, {
                 to: e.href,
                 target: e.href.startsWith("http") ? "_blank" : "_self",
                 "data-gtm-category": "Downloads",
                 "data-gtm-action": `Featured: ${e.title_key}`,
                 "data-gtm-label": e.href,
                 children: (0, n.jsxs)("div", {
-                  className: p.card,
+                  className: v.card,
                   children: [(0, n.jsx)("div", {
                     style: {
                       "--aspect-ratio": "780/373"
                     },
-                    className: [p[e.name], p.img].join(" ")
+                    className: [v[e.name], v.img].join(" ")
                   }), (0, n.jsx)("h5", {
-                    className: p.title,
+                    className: v.title,
                     children: i(e.title_key)
                   })]
                 })
@@ -3888,7 +3888,7 @@ try {
             })]
           })
         }),
-        V = (0, d.withTranslations)(({
+        F = (0, d.withTranslations)(({
           collection: e,
           imgRatio: a,
           t: i
@@ -3901,35 +3901,35 @@ try {
             ref: s,
             "aria-label": `${e.title}${e?.series?.[0]?.title?", "+e?.series?.[0]?.title:""}`,
             children: [(0, n.jsxs)("div", {
-              className: [p.sectionHeader, p.series].join(" "),
+              className: [v.sectionHeader, v.series].join(" "),
               children: [(0, n.jsx)("h4", {
-                className: p.collectionTitle,
-                children: (0, n.jsx)(m.A, {
+                className: v.collectionTitle,
+                children: (0, n.jsx)(r.A, {
                   to: `/downloads?collection=${e.id}`,
                   children: e.title
                 })
               }), (0, n.jsx)("h2", {
-                className: p.seriesTitle,
+                className: v.seriesTitle,
                 children: `${e?.series?.[0]?.title??""}`
               })]
             }), (0, n.jsx)("div", {
-              className: p.grid,
+              className: v.grid,
               children: e.series.map(({
                 groups: t
               }) => t.map(t => (0, n.jsxs)("div", {
-                className: p.downloadItem,
+                className: v.downloadItem,
                 children: [(0, n.jsx)("div", {
-                  className: p.img,
+                  className: v.img,
                   "aria-label": t.label,
                   style: {
                     backgroundImage: `url(${t?.thumb??t?.preview})`,
                     "--aspect-ratio": a
                   }
                 }), (0, n.jsxs)("div", {
-                  className: p.label,
+                  className: v.label,
                   children: [(0, n.jsx)("h5", {
                     children: i(t.label)
-                  }), (0, n.jsx)(v, {
+                  }), (0, n.jsx)(p, {
                     links: "dlc" === d || "music" === d ? t.platform : "gamescreensaver" === d ? t.screensavers : "gamewallpaper" === d || "rockstarwallpaper" === d ? t.wallpapers : t.avatars,
                     collectionId: e.id,
                     label: t.label,
@@ -3941,25 +3941,25 @@ try {
             })]
           })
         });
-      var F = i(18234),
-        I = i(82696),
-        D = i(53573);
-      const A = I.Downloads ?? D.Downloads,
-        T = (0, d.withTranslations)(({
+      var V = i(18234),
+        D = i(82696),
+        A = i(53573);
+      const T = D.Downloads ?? A.Downloads,
+        I = (0, d.withTranslations)(({
           t: e
         }) => {
           const {
             setBreadcrumb: a
-          } = (0, F.b)(), i = (0, d.useQueryParams)(), [s, l] = (0, t.useState)(null), [m, r] = (0, t.useState)(null), {
+          } = (0, V.b)(), i = (0, d.useQueryParams)(), [s, l] = (0, t.useState)(null), [r, m] = (0, t.useState)(null), {
             loading: o,
             refetch: c
-          } = (0, d.useQuery)(A, {
+          } = (0, d.useQuery)(T, {
             variables: s,
             skip: !0,
             autoSetLoading: !0
           });
           if ((0, t.useEffect)(() => {
-              r(null);
+              m(null);
               const e = null !== i.get("series"),
                 a = {
                   seriesId: Number(i.get("series")),
@@ -3979,56 +3979,56 @@ try {
                   withSharkCards: "14" === i.get("collection")
                 };
               l(a)
-            }, [i.get("series"), i.get("collection"), r]), (0, t.useEffect)(() => {
+            }, [i.get("series"), i.get("collection"), m]), (0, t.useEffect)(() => {
               let i = [{
                 href: "/downloads",
                 title: e("Downloads")
               }];
-              return m?.collection?.id && s.withSeries && (i = [...i, {
-                href: `/downloads?collection=${m.collection.id}`,
-                title: m.collection.title
+              return r?.collection?.id && s.withSeries && (i = [...i, {
+                href: `/downloads?collection=${r.collection.id}`,
+                title: r.collection.title
               }]), a(i), () => {
                 a()
               }
-            }, [m, s]), (0, t.useEffect)(() => {
+            }, [r, s]), (0, t.useEffect)(() => {
               s && (async () => {
                 const e = await c(s);
-                r(e.data)
+                m(e.data)
               })()
-            }, [c, s]), !m || o) return null;
+            }, [c, s]), !r || o) return null;
           if (s.withIndex) return (0, n.jsx)("div", {
-            className: p.index,
+            className: v.index,
             children: (0, n.jsxs)("div", {
-              className: p.sections,
+              className: v.sections,
               children: [(0, n.jsx)(S, {
-                data: m
+                data: r
               }), (0, n.jsx)(f, {
                 homepage: !0,
-                games: m.pcMacGames,
-                collection: m.collections.find(e => "gamespcmac" === e.title_slug)
+                games: r.pcMacGames,
+                collection: r.collections.find(e => "gamespcmac" === e.title_slug)
               }), (0, n.jsx)(b, {
                 homepage: !0,
-                collection: m.collections.find(e => "apps" === e.title_slug)
-              }), (0, n.jsx)(y, {
-                collections: m.collections.filter(e => !["apps", "gamespcmac", "sharkcards"].includes(e.title_slug))
+                collection: r.collections.find(e => "apps" === e.title_slug)
+              }), (0, n.jsx)(x, {
+                collections: r.collections.filter(e => !["apps", "gamespcmac", "sharkcards"].includes(e.title_slug))
               })]
             })
           });
           if (s.withSeries) {
             const e = [6, 12, 13].includes(s.collectionId) ? "1/1" : "16/9";
             return (0, n.jsx)("div", {
-              className: p.index,
-              children: (0, n.jsx)(V, {
-                collection: m.collection,
+              className: v.index,
+              children: (0, n.jsx)(F, {
+                collection: r.collection,
                 imgRatio: e
               })
             })
           }
           return s.withCollection ? (0, n.jsx)("div", {
-            className: p.index,
-            children: (0, n.jsx)(w, {
-              collection: m.collection,
-              games: m.pcMacGames
+            className: v.index,
+            children: (0, n.jsx)(_, {
+              collection: r.collection,
+              games: r.pcMacGames
             })
           }) : null
         })
@@ -4040,32 +4040,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -4141,32 +4117,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -4235,21 +4187,9 @@ try {
         return Object.keys(n)
       }, t.resolve = d, e.exports = t, t.id = 39294
     },
-    51048(e, a, i) {
+    58963(e, a, i) {
       var n = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function t(e) {
@@ -4266,23 +4206,11 @@ try {
       }
       t.keys = function() {
         return Object.keys(n)
-      }, t.resolve = d, e.exports = t, t.id = 51048
+      }, t.resolve = d, e.exports = t, t.id = 58963
     },
-    16044(e, a, i) {
+    25087(e, a, i) {
       var n = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function t(e) {
@@ -4299,7 +4227,7 @@ try {
       }
       t.keys = function() {
         return Object.keys(n)
-      }, t.resolve = d, e.exports = t, t.id = 16044
+      }, t.resolve = d, e.exports = t, t.id = 25087
     },
     10111(e) {
       "use strict";
@@ -4319,111 +4247,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    13890(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

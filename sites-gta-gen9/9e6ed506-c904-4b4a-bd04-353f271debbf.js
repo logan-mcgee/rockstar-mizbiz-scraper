@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "9e6ed506-c904-4b4a-bd04-353f271debbf", o._sentryDebugIdIdentifier = "sentry-dbid-9e6ed506-c904-4b4a-bd04-353f271debbf")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "9e6ed506-c904-4b4a-bd04-353f271debbf", o._sentryDebugIdIdentifier = "sentry-dbid-9e6ed506-c904-4b4a-bd04-353f271debbf")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [9447], {
-    69447(o, t, e) {
-      e.r(t), e.d(t, {
+    69447(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => i,
         Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
@@ -22,9 +22,9 @@ try {
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => a,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => b,
+        Lightbox_Zoom_In_Button_Label: () => b,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
@@ -33,9 +33,9 @@ try {
       var _ = "{description} - Zobacz obraz w podglądzie",
         i = "Zamknij",
         n = "Naciśnij {shortcut}",
-        a = "Powiększ",
-        l = "Naciśnij {shortcut}",
-        b = "Pomniejsz",
+        b = "Powiększ",
+        a = "Naciśnij {shortcut}",
+        l = "Pomniejsz",
         d = "Naciśnij {shortcut}",
         s = "Zresetuj",
         g = "Naciśnij {shortcut}",
@@ -47,9 +47,9 @@ try {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
           Lightbox_Close_Button_Tooltip: n,
-          Lightbox_Zoom_In_Button_Label: a,
-          Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: b,
+          Lightbox_Zoom_In_Button_Label: b,
+          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: g,

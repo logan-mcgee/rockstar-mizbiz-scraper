@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "f30a295c-cec2-430c-85f2-a5331a81b1ea", o._sentryDebugIdIdentifier = "sentry-dbid-f30a295c-cec2-430c-85f2-a5331a81b1ea")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "f30a295c-cec2-430c-85f2-a5331a81b1ea", o._sentryDebugIdIdentifier = "sentry-dbid-f30a295c-cec2-430c-85f2-a5331a81b1ea")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,11 +13,11 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [229], {
-    229(o, t, e) {
-      e.r(t), e.d(t, {
+    229(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Download_Button_Label: () => n,
+        Lightbox_Close_Button_Tooltip: () => n,
+        Lightbox_Download_Button_Label: () => a,
         Lightbox_Download_Button_Tooltip: () => l,
         Lightbox_Open_Button_Label: () => i,
         Lightbox_Reset_Zoom_Button_Label: () => s,
@@ -31,8 +31,8 @@ try {
         default: () => L
       });
       var _ = "Close",
-        a = "Press {shortcut}",
-        n = "Download",
+        n = "Press {shortcut}",
+        a = "Download",
         l = "Download",
         i = "{description} - View image in lightbox",
         s = "Reset",
@@ -45,8 +45,8 @@ try {
         h = "{zoom}%",
         L = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Download_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Download_Button_Label: a,
           Lightbox_Download_Button_Tooltip: l,
           Lightbox_Open_Button_Label: i,
           Lightbox_Reset_Zoom_Button_Label: s,

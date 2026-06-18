@@ -262,7 +262,7 @@ try {
         RockstarGraphProvider: () => he,
         RockstarTokenProvider: () => V,
         ScrollProvider: () => kt,
-        coreScApiFetch: () => v,
+        coreScApiFetch: () => b,
         createDeferredScrollTriggerRefresh: () => x,
         cx: () => o,
         detectIfWeShouldAnchorSomewhere: () => Te,
@@ -291,12 +291,12 @@ try {
         setContextItem: () => L,
         setCookieValue: () => _e,
         setMakeVarItem: () => M,
-        supportedBrowsers: () => be,
+        supportedBrowsers: () => ve,
         toScLocaleString: () => h,
         track: () => Ye,
         useApolloClient: () => ue,
         useBase: () => it,
-        useBodyScrollable: () => ve,
+        useBodyScrollable: () => be,
         useDataLayer: () => It,
         useGetTpaLinkGenerator: () => _t,
         useHasReduceMotionPreference: () => Mt,
@@ -367,12 +367,12 @@ try {
             g = d?.cdnBase ?? c,
             w = d?.clientId ?? n,
             f = l?.marketingAuthTLD ?? m,
-            v = d?.scHost ?? a,
-            b = l?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = d?.scHost ?? a,
+            v = l?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${p}.rockstargames.com`,
             graphEnv: d?.graphEnv ?? r,
-            host: v,
+            host: b,
             hostname: i,
             cdnBase: g,
             key: u,
@@ -380,13 +380,13 @@ try {
             cms: `https://${o}.rockstargames.com/graphql`,
             authHost: h,
             queryManifest: s,
-            scBase: `https://${v}.rockstargames.com/`,
+            scBase: `https://${b}.rockstargames.com/`,
             login: `https://${h}.rockstargames.com/connect/authorize/${w}`,
             silentCheck: `https://${h}.rockstargames.com/connect/cors/check/${w}`,
             signup: `https://${h}.rockstargames.com/create/?cid=${w}`,
             gateway: `https://${f}/auth/gateway.json`,
             logout: `https://${f}/auth/sc-auth-logout`,
-            pingBearer: `https://${f}/${b}`,
+            pingBearer: `https://${f}/${v}`,
             authCookieName: "BearerToken"
           }
         },
@@ -436,7 +436,7 @@ try {
         } = p(),
         w = h(document.documentElement.lang),
         f = {},
-        v = async (e, {
+        b = async (e, {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: o = null,
@@ -462,25 +462,25 @@ try {
                 headers: u
               },
               h = i().all([p, t, n]),
-              v = JSON.stringify({
+              b = JSON.stringify({
                 ...h,
                 url: m
               }),
-              b = await (0, s.sc)(v);
+              v = await (0, s.sc)(b);
             if (d) {
-              if (f[b]?.response) return f[b].response;
-              if (f[b]?.loading) return {
+              if (f[v]?.response) return f[v].response;
+              if (f[v]?.loading) return {
                 error: null,
                 result: null
               };
-              f[b] = {
+              f[v] = {
                 loading: !0
               }
             }
             const x = await fetch(m, h);
             if (!x.ok) throw new Error(`ScApi fetch error for ${e} with status code ${x.status}`);
             const k = await x.json();
-            return d && (f[b] = {
+            return d && (f[v] = {
               response: k,
               loading: !1
             }), k
@@ -488,14 +488,14 @@ try {
             console.error(`ScApi fetch error ${e}:`, t)
           }
         };
-      var b = n(7978);
+      var v = n(7978);
       const x = () => {
           let e = 0;
           return {
             refresh: () => {
               cancelAnimationFrame(e), e = requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                  b.u.refresh()
+                  v.u.refresh()
                 })
               })
             },
@@ -816,7 +816,7 @@ try {
         },
         we = (0, O.UT)({}),
         fe = "data-disallow-body-scroll",
-        ve = e => {
+        be = e => {
           const t = (0, U.q)(we),
             n = Object.values(t).some(e => !!e);
           return (0, j.useEffect)(() => {
@@ -829,7 +829,7 @@ try {
             })
           }
         },
-        be = /Edge?\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[5-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(17\.([6-9]|\d{2,})|(1[89]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}[3-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[6-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/,
+        ve = /Edge?\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[5-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(17\.([6-9]|\d{2,})|(1[89]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}[3-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[6-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/,
         xe = ({
           id: e,
           init: t
@@ -1126,7 +1126,7 @@ query Translations($locale: String!, $config: String!) {
                   fetchOptions: d = {}
                 } = t;
                 m(null), c(null), l(!0);
-                const u = await v(i ?? e, {
+                const u = await b(i ?? e, {
                   pingBearer: a,
                   fetchOptions: n,
                   finalFetchOptions: d,
@@ -1191,12 +1191,12 @@ query Translations($locale: String!, $config: String!) {
           key: "freezeUserShouldSeeMoreReactive",
           value: (0, O.UT)(!1)
         }),
-        vt = e => ft(e),
-        bt = L({
+        bt = e => ft(e),
+        vt = L({
           context: (0, j.createContext)(null),
           key: "scrollContext"
         }),
-        xt = () => (0, j.useContext)(bt),
+        xt = () => (0, j.useContext)(vt),
         kt = ({
           children: e
         }) => {
@@ -1217,12 +1217,12 @@ query Translations($locale: String!, $config: String!) {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [s, i]), (0, j.useMemo)(() => (0, A.jsx)(bt.Provider, {
+          }, [s, i]), (0, j.useMemo)(() => (0, A.jsx)(vt.Provider, {
             value: {
               freezeUserShouldSeeMore: i,
               pageYOffset: t,
               pauseUserShouldSeeMore: d,
-              setFreezeUserShouldSeeMore: vt,
+              setFreezeUserShouldSeeMore: bt,
               userShouldSeeMore: o
             },
             children: e

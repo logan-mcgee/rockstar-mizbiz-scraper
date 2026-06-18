@@ -26,14 +26,14 @@ try {
         PromiseState: () => E,
         adjustBreakpoint: () => o,
         breakpoints: () => s,
-        clone: () => b,
+        clone: () => w,
         cubicBezier: () => I,
         debounce: () => x,
         filterEventProps: () => a.b,
         get: () => v,
         getOrSet: () => c,
         joinStrings: () => L,
-        merge: () => g,
+        merge: () => b,
         mergeProps: () => i.v,
         omit: () => p,
         range: () => f,
@@ -71,13 +71,13 @@ try {
       }
       var h = n(54028);
 
-      function g(e, t) {
+      function b(e, t) {
         return h(e, t)
       }
-      var w = n(74143);
+      var g = n(74143);
 
-      function b(e) {
-        return w(e)
+      function w(e) {
+        return g(e)
       }
       var _ = n(88584);
 
@@ -168,10 +168,10 @@ try {
           u = f * f * f,
           p = 3 / o,
           h = 3 * t - 3 * r + 1,
-          g = r - 2 * t,
-          w = 3 * t,
-          b = o ? A : M;
-        return e => 0 === e || 1 === e ? e : ((e, t, n, r) => ((t * e + 3 * n) * e + r) * e)(b(e, l, p, u, c), h, g, w)
+          b = r - 2 * t,
+          g = 3 * t,
+          w = o ? A : M;
+        return e => 0 === e || 1 === e ? e : ((e, t, n, r) => ((t * e + 3 * n) * e + r) * e)(w(e, l, p, u, c), h, b, g)
       }
       const L = (...e) => e.filter(e => e).join(" ")
     },

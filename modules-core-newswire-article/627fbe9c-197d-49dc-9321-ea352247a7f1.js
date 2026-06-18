@@ -49,22 +49,22 @@ try {
         }
       }();
       var s, u = [],
-        c = !1,
-        l = -1;
+        l = !1,
+        c = -1;
 
       function d() {
-        c && s && (c = !1, s.length ? u = s.concat(u) : l = -1, u.length && f())
+        l && s && (l = !1, s.length ? u = s.concat(u) : c = -1, u.length && f())
       }
 
       function f() {
-        if (!c) {
+        if (!l) {
           var e = a(d);
-          c = !0;
+          l = !0;
           for (var t = u.length; t;) {
-            for (s = u, u = []; ++l < t;) s && s[l].run();
-            l = -1, t = u.length
+            for (s = u, u = []; ++c < t;) s && s[c].run();
+            c = -1, t = u.length
           }
-          s = null, c = !1,
+          s = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -81,19 +81,19 @@ try {
         }
       }
 
-      function h(e, t) {
+      function b(e, t) {
         this.fun = e, this.array = t
       }
 
-      function w() {}
+      function h() {}
       r.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new h(e, t)), 1 !== u.length || c || a(f)
-      }, h.prototype.run = function() {
+        u.push(new b(e, t)), 1 !== u.length || l || a(f)
+      }, b.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = w, r.addListener = w, r.once = w, r.off = w, r.removeListener = w, r.removeAllListeners = w, r.emit = w, r.prependListener = w, r.prependOnceListener = w, r.listeners = function(e) {
+      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
         return []
       }, r.binding = function(e) {
         throw new Error("process.binding is not supported")

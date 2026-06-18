@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function l(e, t, o) {
         var r, s = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === s[r] && (s[r] = t[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: s,
           _owner: i.current
         }
       }
-      t.Fragment = s, t.jsx = c, t.jsxs = c
+      t.Fragment = s, t.jsx = l, t.jsxs = l
     },
     39793(e, t, o) {
       e.exports = o(94931)
@@ -111,15 +111,15 @@ try {
         findPlatform: () => te.rB,
         generateTpaLink: () => te.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => te.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => te.Ap,
         getGen8Consoles: () => te.Xs,
         getGen9Consoles: () => te.kx,
         getLanguageLabel: () => te.rJ,
         getUriForGraphEnv: () => u,
-        gql: () => le.J1,
+        gql: () => ce.J1,
         gtmInit: () => Te,
         importAll: () => te.pT,
         isGen9Platform: () => te.lV,
@@ -169,7 +169,7 @@ try {
         webSettingsReactive: () => _e,
         withAutoRouteTracking: () => Se,
         withGtmTracking: () => de,
-        withMediaBasedProps: () => ce,
+        withMediaBasedProps: () => le,
         withReactiveState: () => T,
         withRockstarGraph: () => Q,
         withTranslations: () => fe
@@ -197,8 +197,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(17473),
-        l = o(39991);
+      var l = o(17473),
+        c = o(39991);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -475,7 +475,7 @@ try {
             ie(e)
           }
         }))(e, t),
-        ce = (e, t = 250) => o => ((e, t, o) => {
+        le = (e, t = 250) => o => ((e, t, o) => {
           const [r, n] = (0, w.useState)(t), s = e => {
             let t = e;
             const o = t?.items;
@@ -503,9 +503,9 @@ try {
             ...r
           })
         })(e, o, t);
-      var le = o(23066),
+      var ce = o(23066),
         ue = o(12879);
-      const ge = le.J1`
+      const ge = ce.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key

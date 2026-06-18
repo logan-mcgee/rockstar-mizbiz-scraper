@@ -23,8 +23,8 @@ try {
         n = s(31655),
         o = s(82199),
         l = s(42909),
-        c = s(13331),
-        i = s(81270),
+        i = s(13331),
+        c = s(81270),
         u = s(8157),
         m = s(35270),
         _ = s(39620),
@@ -34,21 +34,21 @@ try {
       const p = (0, l.withIntl)(() => {
         const {
           track: e
-        } = (0, o.useGtmTrack)(), a = (0, l.useIntl)(), s = (0, c.useLocale)(), {
+        } = (0, o.useGtmTrack)(), a = (0, l.useIntl)(), s = (0, i.useLocale)(), {
           ref: g,
           inView: p
         } = (0, d.useInView)({
           threshold: .6
-        }), [h, b] = (0, r.useState)(!1), w = (0, _.r)("hub");
+        }), [b, h] = (0, r.useState)(!1), w = (0, _.r)("hub");
         return (0, r.useEffect)(() => {
-          p && !h && (e({
+          p && !b && (e({
             event: "page_section_impression",
             element_placement: f.A.support_module_header.defaultMessage?.toLowerCase()
-          }), b(!0))
+          }), h(!0))
         }, [p]), (0, t.jsx)("div", {
           className: "_1ru3mwr0",
           children: (0, t.jsxs)("div", {
-            className: (0, i.default)(["_1betujy6 _1betujy5", "_1ru3mwr1"]),
+            className: (0, c.default)(["_1betujy6 _1betujy5", "_1ru3mwr1"]),
             children: [(0, t.jsxs)("div", {
               className: "_1ru3mwr2",
               children: [(0, t.jsx)(n.Heading, {

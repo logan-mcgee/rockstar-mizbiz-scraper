@@ -17,8 +17,8 @@ try {
       var r = o(3082),
         n = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
-        f = Object.prototype.hasOwnProperty,
-        a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        a = Object.prototype.hasOwnProperty,
+        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -30,7 +30,7 @@ try {
         var r, t = {},
           s = null,
           i = null;
-        for (r in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (i = d.ref), d) f.call(d, r) && !l.hasOwnProperty(r) && (t[r] = d[r]);
+        for (r in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (i = d.ref), d) a.call(d, r) && !l.hasOwnProperty(r) && (t[r] = d[r]);
         if (e && e.defaultProps)
           for (r in d = e.defaultProps) void 0 === t[r] && (t[r] = d[r]);
         return {
@@ -39,7 +39,7 @@ try {
           key: s,
           ref: i,
           props: t,
-          _owner: a.current
+          _owner: f.current
         }
       }
       d.Fragment = t, d.jsx = s, d.jsxs = s

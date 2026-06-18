@@ -47,7 +47,7 @@ try {
         },
         i = {};
 
-      function c(e) {
+      function l(e) {
         return r.isMemo(e) ? a : i[e.$$typeof] || s
       }
       i[r.ForwardRef] = {
@@ -57,7 +57,7 @@ try {
         displayName: !0,
         propTypes: !0
       }, i[r.Memo] = a;
-      var l = Object.defineProperty,
+      var c = Object.defineProperty,
         u = Object.getOwnPropertyNames,
         d = Object.getOwnPropertySymbols,
         p = Object.getOwnPropertyDescriptor,
@@ -71,12 +71,12 @@ try {
           }
           var a = u(t);
           d && (a = a.concat(d(t)));
-          for (var i = c(o), b = c(t), y = 0; y < a.length; ++y) {
+          for (var i = l(o), b = l(t), y = 0; y < a.length; ++y) {
             var g = a[y];
             if (!(n[g] || r && r[g] || b && b[g] || i && i[g])) {
               var w = p(t, g);
               try {
-                l(o, g, w)
+                c(o, g, w)
               } catch (e) {}
             }
           }
@@ -91,8 +91,8 @@ try {
         n = t ? Symbol.for("react.fragment") : 60107,
         a = t ? Symbol.for("react.strict_mode") : 60108,
         i = t ? Symbol.for("react.profiler") : 60114,
-        c = t ? Symbol.for("react.provider") : 60109,
-        l = t ? Symbol.for("react.context") : 60110,
+        l = t ? Symbol.for("react.provider") : 60109,
+        c = t ? Symbol.for("react.context") : 60110,
         u = t ? Symbol.for("react.async_mode") : 60111,
         d = t ? Symbol.for("react.concurrent_mode") : 60111,
         p = t ? Symbol.for("react.forward_ref") : 60112,
@@ -120,11 +120,11 @@ try {
                   return e;
                 default:
                   switch (e = e && e.$$typeof) {
-                    case l:
+                    case c:
                     case p:
                     case y:
                     case b:
-                    case c:
+                    case l:
                       return e;
                     default:
                       return o
@@ -139,12 +139,12 @@ try {
       function k(e) {
         return _(e) === d
       }
-      o.AsyncMode = u, o.ConcurrentMode = d, o.ContextConsumer = l, o.ContextProvider = c, o.Element = r, o.ForwardRef = p, o.Fragment = n, o.Lazy = y, o.Memo = b, o.Portal = s, o.Profiler = i, o.StrictMode = a, o.Suspense = m, o.isAsyncMode = function(e) {
+      o.AsyncMode = u, o.ConcurrentMode = d, o.ContextConsumer = c, o.ContextProvider = l, o.Element = r, o.ForwardRef = p, o.Fragment = n, o.Lazy = y, o.Memo = b, o.Portal = s, o.Profiler = i, o.StrictMode = a, o.Suspense = m, o.isAsyncMode = function(e) {
         return k(e) || _(e) === u
       }, o.isConcurrentMode = k, o.isContextConsumer = function(e) {
-        return _(e) === l
-      }, o.isContextProvider = function(e) {
         return _(e) === c
+      }, o.isContextProvider = function(e) {
+        return _(e) === l
       }, o.isElement = function(e) {
         return "object" == typeof e && null !== e && e.$$typeof === r
       }, o.isForwardRef = function(e) {
@@ -164,7 +164,7 @@ try {
       }, o.isSuspense = function(e) {
         return _(e) === m
       }, o.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === n || e === d || e === i || e === a || e === m || e === f || "object" == typeof e && null !== e && (e.$$typeof === y || e.$$typeof === b || e.$$typeof === c || e.$$typeof === l || e.$$typeof === p || e.$$typeof === w || e.$$typeof === h || e.$$typeof === $ || e.$$typeof === g)
+        return "string" == typeof e || "function" == typeof e || e === n || e === d || e === i || e === a || e === m || e === f || "object" == typeof e && null !== e && (e.$$typeof === y || e.$$typeof === b || e.$$typeof === l || e.$$typeof === c || e.$$typeof === p || e.$$typeof === w || e.$$typeof === h || e.$$typeof === $ || e.$$typeof === g)
       }, o.typeOf = _
     },
     70502(e, o, t) {
@@ -172,7 +172,7 @@ try {
     },
     68403(e, o, t) {
       t.r(o), t.d(o, {
-        FormattedMessage: () => l,
+        FormattedMessage: () => c,
         POSIXLocales: () => $,
         ReactIntlProviderForMocking: () => p.A,
         createDevLocaleHook: () => v,
@@ -200,31 +200,31 @@ try {
           r = o.textComponent,
           n = void 0 === r ? s.Fragment : r,
           i = e.id,
-          c = e.description,
-          l = e.defaultMessage,
+          l = e.description,
+          c = e.defaultMessage,
           u = e.values,
           d = e.children,
           p = e.tagName,
           m = void 0 === p ? n : p,
           f = t({
             id: i,
-            description: c,
-            defaultMessage: l
+            description: l,
+            defaultMessage: c
           }, u, {
             ignoreTag: e.ignoreTag
           });
         return "function" == typeof d ? d(Array.isArray(f) ? f : [f]) : m ? s.createElement(m, null, f) : s.createElement(s.Fragment, null, f)
       }
       i.displayName = "FormattedMessage";
-      var c = s.memo(i, function(e, o) {
+      var l = s.memo(i, function(e, o) {
         var t = e.values,
           s = (0, r.Tt)(e, ["values"]),
           a = o.values,
           i = (0, r.Tt)(o, ["values"]);
         return (0, n.bN)(a, t) && (0, n.bN)(s, i)
       });
-      c.displayName = "MemoizedFormattedMessage";
-      const l = c;
+      l.displayName = "MemoizedFormattedMessage";
+      const c = l;
       var u = t(57338),
         d = t(73747),
         p = t(54422),
@@ -374,8 +374,8 @@ try {
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = y(a);
           n = o.currentSite?.site === f.C.www ? _.find(e => e.subdomaincom === r) || _.find(e => e.subdomaincom === t) || s : _.find(e => e.iso === i) || s;
-          const [, c] = g(a, n.iso);
-          return [n, c]
+          const [, l] = g(a, n.iso);
+          return [n, l]
         };
 
       function x(e, o, t, r) {
@@ -470,17 +470,17 @@ try {
                 regex: n,
                 isSubdomain: a,
                 isLocaleInUrl: i,
-                fieldName: c,
-                externalPaths: l
+                fieldName: l,
+                externalPaths: c
               }] of Object.entries(M)) {
               if (!n.test(e.toLowerCase())) continue;
               const u = t[s];
               if (!u) continue;
               let d = "";
-              "en" !== o.subdomaincom && i && (d = `/${o[c||"subdomaincom"]}`, "circoloco" === s && "/" === r.pathname && (d += "/"));
+              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === s && "/" === r.pathname && (d += "/"));
               const p = r.host.split(".");
               let m = "";
-              return "www" !== s || l?.some(e => e.test(r.pathname)) ? ("www" !== s && (m += `https://${u}`, m += a ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
+              return "www" !== s || c?.some(e => e.test(r.pathname)) ? ("www" !== s && (m += `https://${u}`, m += a ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
                 link: `${m}${d}${"/"===r.pathname?"":r.pathname}${r.search}${r.hash}`,
                 isExternal: !0
               }) : {

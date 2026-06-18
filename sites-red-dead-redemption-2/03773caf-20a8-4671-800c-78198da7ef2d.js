@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "03773caf-20a8-4671-800c-78198da7ef2d", o._sentryDebugIdIdentifier = "sentry-dbid-03773caf-20a8-4671-800c-78198da7ef2d")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "03773caf-20a8-4671-800c-78198da7ef2d", o._sentryDebugIdIdentifier = "sentry-dbid-03773caf-20a8-4671-800c-78198da7ef2d")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [298], {
-    69298(o, t, e) {
-      e.r(t), e.d(t, {
+    69298(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => d,
         Lightbox_Download_Button_Label: () => f,

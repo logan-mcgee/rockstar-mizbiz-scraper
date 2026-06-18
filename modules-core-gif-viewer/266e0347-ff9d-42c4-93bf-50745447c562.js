@@ -18,30 +18,30 @@ try {
         n = Symbol.for("react.element"),
         t = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        a = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function a(e, o, d) {
-        var r, a = {},
+      function s(e, o, d) {
+        var r, s = {},
           l = null,
           i = null;
-        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !s.hasOwnProperty(r) && (a[r] = o[r]);
+        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !a.hasOwnProperty(r) && (s[r] = o[r]);
         if (e && e.defaultProps)
-          for (r in o = e.defaultProps) void 0 === a[r] && (a[r] = o[r]);
+          for (r in o = e.defaultProps) void 0 === s[r] && (s[r] = o[r]);
         return {
           $$typeof: n,
           type: e,
           key: l,
           ref: i,
-          props: a,
+          props: s,
           _owner: f.current
         }
       }
-      o.jsx = a, o.jsxs = a
+      o.jsx = s, o.jsxs = s
     },
     9793(e, o, d) {
       e.exports = d(4931)

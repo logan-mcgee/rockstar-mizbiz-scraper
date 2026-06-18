@@ -130,17 +130,17 @@ try {
         s = Function.prototype,
         f = Object.prototype,
         p = s.toString,
-        d = f.hasOwnProperty,
-        y = RegExp("^" + p.call(d).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
-      const b = function(e) {
-          return !(!(0, u.A)(e) || (t = e, a && a in t)) && ((0, n.A)(e) ? y : l).test((0, i.A)(e));
+        b = f.hasOwnProperty,
+        d = RegExp("^" + p.call(b).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+      const y = function(e) {
+          return !(!(0, u.A)(e) || (t = e, a && a in t)) && ((0, n.A)(e) ? d : l).test((0, i.A)(e));
           var t
         },
         A = function(e, t) {
           var r = function(e, t) {
             return null == e ? void 0 : e[t]
           }(e, t);
-          return b(r) ? r : void 0
+          return y(r) ? r : void 0
         }
     },
     61105(e, t, r) {
@@ -157,9 +157,9 @@ try {
       var s = r(86204),
         f = r(51836),
         p = "[object Map]",
-        d = "[object Promise]",
-        y = "[object Set]",
-        b = "[object WeakMap]",
+        b = "[object Promise]",
+        d = "[object Set]",
+        y = "[object WeakMap]",
         A = "[object DataView]",
         j = (0, f.A)(c),
         v = (0, f.A)(a.A),
@@ -167,7 +167,7 @@ try {
         h = (0, f.A)(i),
         w = (0, f.A)(l),
         O = s.A;
-      (c && O(new c(new ArrayBuffer(1))) != A || a.A && O(new a.A) != p || u && O(u.resolve()) != d || i && O(new i) != y || l && O(new l) != b) && (O = function(e) {
+      (c && O(new c(new ArrayBuffer(1))) != A || a.A && O(new a.A) != p || u && O(u.resolve()) != b || i && O(new i) != d || l && O(new l) != y) && (O = function(e) {
         var t = (0, s.A)(e),
           r = "[object Object]" == t ? e.constructor : void 0,
           n = r ? (0, f.A)(r) : "";
@@ -177,11 +177,11 @@ try {
           case v:
             return p;
           case g:
-            return d;
+            return b;
           case h:
-            return y;
+            return d;
           case w:
-            return b
+            return y
         }
         return t
       });

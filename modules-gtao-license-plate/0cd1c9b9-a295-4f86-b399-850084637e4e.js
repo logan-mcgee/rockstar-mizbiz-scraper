@@ -66,13 +66,13 @@ try {
               loading: !0
             }
           }
-          const k = await fetch(h, p);
-          if (!k.ok) throw new Error(`ScApi fetch error for ${e} with status code ${k.status}`);
-          const E = await k.json();
+          const b = await fetch(h, p);
+          if (!b.ok) throw new Error(`ScApi fetch error for ${e} with status code ${b.status}`);
+          const k = await b.json();
           return w && (l[y] = {
-            response: E,
+            response: k,
             loading: !1
-          }), E
+          }), k
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -226,7 +226,7 @@ try {
     },
     85997(e, t, n) {
       n.d(t, {
-        U4: () => E.U4,
+        U4: () => k.U4,
         RK: () => o,
         bn: () => U,
         ri: () => a,
@@ -234,7 +234,7 @@ try {
         vx: () => C,
         sb: () => T,
         Ym: () => i.A,
-        CA: () => k.useNewswirePost,
+        CA: () => b.useNewswirePost,
         OG: () => c,
         ZC: () => l,
         sq: () => d,
@@ -380,14 +380,14 @@ try {
             }
           }, [e, t]), (0, s.useMemo)(() => ({}), [])
         };
-      var k = n(22636),
-        E = n(17714),
-        b = n(93022);
+      var b = n(22636),
+        k = n(17714),
+        E = n(93022);
       const x = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, i.A)(), o = (0, b.t)(r);
+        } = (0, h.A)(), r = (0, i.A)(), o = (0, E.t)(r);
         let s = "";
         return s += "lang=" + encodeURIComponent(o), s += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${s}`,

@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "feac9235-70bb-4f2f-b469-e6813fbb622d", o._sentryDebugIdIdentifier = "sentry-dbid-feac9235-70bb-4f2f-b469-e6813fbb622d")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "feac9235-70bb-4f2f-b469-e6813fbb622d", o._sentryDebugIdIdentifier = "sentry-dbid-feac9235-70bb-4f2f-b469-e6813fbb622d")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [6109], {
-    66109(o, t, e) {
-      e.r(t), e.d(t, {
+    66109(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => f,
@@ -23,8 +23,8 @@ try {
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => b,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => s,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => u,
@@ -34,8 +34,8 @@ try {
         n = "Cerrar",
         a = "Presiona {shortcut}",
         i = "Acercar",
-        l = "Presiona {shortcut}",
-        b = "Alejar",
+        b = "Presiona {shortcut}",
+        l = "Alejar",
         s = "Presiona {shortcut}",
         d = "Restablecer",
         g = "Presiona {shortcut}",
@@ -48,8 +48,8 @@ try {
           Lightbox_Close_Button_Label: n,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: b,
+          Lightbox_Zoom_In_Button_Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: s,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: g,

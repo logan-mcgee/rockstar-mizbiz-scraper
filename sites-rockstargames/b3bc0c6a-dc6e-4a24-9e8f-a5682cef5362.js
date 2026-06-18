@@ -131,7 +131,7 @@ try {
         d = a(42909),
         l = a(1e4),
         u = a(72132);
-      const f = (0, d.defineMessages)({
+      const b = (0, d.defineMessages)({
         unsubscribe_success_header: {
           id: "unsubscribe_success_header",
           description: "Header to let user know they have successfully unsubscribed",
@@ -169,7 +169,7 @@ try {
         }
       });
       var p = a(52542);
-      const b = {
+      const k = {
           container: "rockstargames-sites-rockstargamesfa99680d2ce0170488cda6b86deb16f2",
           description: "rockstargames-sites-rockstargamesed46eccebadbcbcb9dbd86b418a7933b",
           dialogModal: "rockstargames-sites-rockstargamesdf9ff40c322d5faab31c888742f2d51a",
@@ -182,7 +182,7 @@ try {
           textContent: "rockstargames-sites-rockstargamesdc89c2cc2d679db0db0a41ebe11871f5"
         },
         {
-          currentSite: k
+          currentSite: f
         } = (0, n.A)(),
         m = (0, d.withIntl)(() => {
           const e = (0, d.useIntl)(),
@@ -191,12 +191,12 @@ try {
             } = (0, c.useGtmTrack)(),
             [a, n] = (0, r.useState)("");
           let p;
-          p = `https://${k?.subDomain}.rockstargames.com/account/communications`;
+          p = `https://${f?.subDomain}.rockstargames.com/account/communications`;
           const m = (0, o.useRockstarTokenPing)(),
             [g] = (0, i.useSearchParams)(),
             h = {
               event: "cta_other",
-              text: f.email_settings_cta.defaultMessage,
+              text: b.email_settings_cta.defaultMessage,
               link_url: p,
               element_placement: "unsubscribe"
             },
@@ -223,22 +223,22 @@ try {
           }, [g.get("token")]), (0, r.useEffect)(() => {
             a && s({
               event: "virtualPageview",
-              view_name: f[`unsubscribe_${a}_header`].defaultMessage
+              view_name: b[`unsubscribe_${a}_header`].defaultMessage
             })
           }, [a]), (0, t.jsx)("div", {
-            className: b.container,
+            className: k.container,
             children: a ? (0, t.jsxs)("div", {
-              className: b.dialogModal,
+              className: k.dialogModal,
               children: [(0, t.jsx)("div", {
-                className: b[`${a}Icon`]
+                className: k[`${a}Icon`]
               }), (0, t.jsxs)("div", {
-                className: b.textContent,
+                className: k.textContent,
                 children: [(0, t.jsx)("h3", {
-                  className: b.heading,
-                  children: e.formatMessage(f[`unsubscribe_${a}_header`])
+                  className: k.heading,
+                  children: e.formatMessage(b[`unsubscribe_${a}_header`])
                 }), (0, t.jsx)("div", {
-                  className: b.description,
-                  children: e.formatMessage(f[`unsubscribe_${a}_description`])
+                  className: k.description,
+                  children: e.formatMessage(b[`unsubscribe_${a}_description`])
                 })]
               }), (0, t.jsx)("div", {
                 children: (0, t.jsx)(l.A, {
@@ -246,7 +246,7 @@ try {
                   onClick: h ? () => s({
                     ...h
                   }) : () => {},
-                  children: e.formatMessage(f.email_settings_cta)
+                  children: e.formatMessage(b.email_settings_cta)
                 })
               })]
             }) : (0, t.jsx)(u.A, {})
@@ -288,15 +288,15 @@ try {
         }(s))]
       };
       var u = a(57502),
-        f = a(58634);
+        b = a(58634);
       const p = function(e) {
-        return (0, f.A)(e) ? void 0 : e
+        return (0, b.A)(e) ? void 0 : e
       };
-      var b = a(68071),
-        k = a(94508),
+      var k = a(68071),
+        f = a(94508),
         m = a(48348),
         g = a(6700),
-        h = k.A ? k.A.isConcatSpreadable : void 0;
+        h = f.A ? f.A.isConcatSpreadable : void 0;
       const x = function(e) {
           return (0, g.A)(e) || (0, m.A)(e) || !!(h && e && e[h])
         },
@@ -305,7 +305,7 @@ try {
             n = s.length;
           for (t || (t = x), i || (i = []); ++o < n;) {
             var c = s[o];
-            a > 0 && t(c) ? a > 1 ? e(c, a - 1, t, r, i) : (0, b.A)(i, c) : r || (i[i.length] = c)
+            a > 0 && t(c) ? a > 1 ? e(c, a - 1, t, r, i) : (0, k.A)(i, c) : r || (i[i.length] = c)
           }
           return i
         },

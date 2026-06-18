@@ -51,25 +51,25 @@ try {
               headers: v
             },
             g = s().all([m, t, n]),
-            p = JSON.stringify({
+            b = JSON.stringify({
               ...g,
               url: h
             }),
-            y = await (0, r.sc)(p);
+            p = await (0, r.sc)(b);
           if (w) {
-            if (l[y]?.response) return l[y].response;
-            if (l[y]?.loading) return {
+            if (l[p]?.response) return l[p].response;
+            if (l[p]?.loading) return {
               error: null,
               result: null
             };
-            l[y] = {
+            l[p] = {
               loading: !0
             }
           }
-          const b = await fetch(h, g);
-          if (!b.ok) throw new Error(`ScApi fetch error for ${e} with status code ${b.status}`);
-          const E = await b.json();
-          return w && (l[y] = {
+          const y = await fetch(h, g);
+          if (!y.ok) throw new Error(`ScApi fetch error for ${e} with status code ${y.status}`);
+          const E = await y.json();
+          return w && (l[p] = {
             response: E,
             loading: !1
           }), E
@@ -127,13 +127,13 @@ try {
         vx: () => x,
         sb: () => C,
         Ym: () => i.A,
-        CA: () => y.useNewswirePost,
+        CA: () => p.useNewswirePost,
         OG: () => a,
         ZC: () => d,
         sq: () => u,
         Vq: () => O,
         OH: () => g,
-        zP: () => p,
+        zP: () => b,
         Cb: () => f,
         N6: () => E,
         GA: () => U,
@@ -187,7 +187,7 @@ try {
           [d, f] = (0, s.useState)(!1),
           [v, h] = (0, s.useState)(null),
           [m, g] = (0, s.useState)(!1),
-          p = (0, s.useCallback)(async (t = {}, s = null) => {
+          b = (0, s.useCallback)(async (t = {}, s = null) => {
             try {
               const {
                 fetchOptions: c = {}
@@ -210,12 +210,12 @@ try {
             return null
           }, [e, n, r]);
         return (0, s.useEffect)(() => {
-          null === c && null === v && !d && t && p()
-        }, [t, c, v, d, p]), {
+          null === c && null === v && !d && t && b()
+        }, [t, c, v, d, b]), {
           data: c,
           error: v,
           loading: d,
-          fetch: p,
+          fetch: b,
           resolved: m
         }
       };
@@ -241,7 +241,7 @@ try {
             dispatch: e
           }), [])
         },
-        p = (e, t) => {
+        b = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, s.useEffect)(() => {
             const n = m(e);
@@ -255,13 +255,13 @@ try {
             }
           }, [e, t]), (0, s.useMemo)(() => ({}), [])
         };
-      var y = n(22636),
-        b = (n(17714), n(93022));
+      var p = n(22636),
+        y = (n(17714), n(93022));
       const E = e => {
         const {
           signup: t,
           login: n
-        } = (0, v.A)(), r = (0, i.A)(), o = (0, b.t)(r);
+        } = (0, v.A)(), r = (0, i.A)(), o = (0, y.t)(r);
         let s = "";
         return s += "lang=" + encodeURIComponent(o), s += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${s}`,

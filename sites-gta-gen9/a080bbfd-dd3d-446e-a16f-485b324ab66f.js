@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "a080bbfd-dd3d-446e-a16f-485b324ab66f", o._sentryDebugIdIdentifier = "sentry-dbid-a080bbfd-dd3d-446e-a16f-485b324ab66f")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "a080bbfd-dd3d-446e-a16f-485b324ab66f", o._sentryDebugIdIdentifier = "sentry-dbid-a080bbfd-dd3d-446e-a16f-485b324ab66f")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [8915], {
-    8915(o, t, e) {
-      e.r(t), e.d(t, {
+    8915(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
@@ -23,9 +23,9 @@ try {
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => d,
-        Lightbox_Zoom_Out_Button__Tooltip: () => b,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => l,
+        Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => L
@@ -34,9 +34,9 @@ try {
         a = "Fechar",
         n = "Pressionar {shortcut}",
         i = "Aproximar zoom",
-        l = "Pressionar {shortcut}",
-        d = "Afastar zoom",
         b = "Pressionar {shortcut}",
+        l = "Afastar zoom",
+        d = "Pressionar {shortcut}",
         s = "Resetar",
         g = "Pressionar {shortcut}",
         r = "Nível de zoom",
@@ -48,9 +48,9 @@ try {
           Lightbox_Close_Button_Label: a,
           Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: d,
-          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Zoom_In_Button_Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: l,
+          Lightbox_Zoom_Out_Button__Tooltip: d,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_Slider_Label: r,

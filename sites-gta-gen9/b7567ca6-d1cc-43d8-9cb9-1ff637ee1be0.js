@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7bb6be82-8607-456d-9270-21d9aa1e1d22", e._sentryDebugIdIdentifier = "sentry-dbid-7bb6be82-8607-456d-9270-21d9aa1e1d22")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b7567ca6-d1cc-43d8-9cb9-1ff637ee1be0", e._sentryDebugIdIdentifier = "sentry-dbid-b7567ca6-d1cc-43d8-9cb9-1ff637ee1be0")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -252,19 +252,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -549,19 +549,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -872,19 +872,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -1169,19 +1169,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -1772,19 +1772,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -2084,19 +2084,19 @@ try {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var n = s[a] || new Set,
-          o = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (n.forEach(function(e) {
-            i.add(e)
-          }); i.size > 0;) {
-          var c = i;
-          i = new Set, c.forEach(function(e) {
-            o.has(e) || (o.add(e), (s[e] || new Set).forEach(function(e) {
-              i.add(e)
+            o.add(e)
+          }); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach(function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach(function(e) {
+              o.add(e)
             }))
           })
         }
-        return o.forEach(function(a) {
+        return i.forEach(function(a) {
           var s = r(e, a);
           s && t.definitions.push(s)
         }), t
@@ -2105,16 +2105,16 @@ try {
     30489(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => p
+        A: () => b
       });
       var s = t(39793),
         r = t(93082),
         n = t(42285),
-        o = t(13331),
-        i = t(82199),
+        i = t(13331),
+        o = t(82199),
         c = t(30026),
-        d = t(1e4);
-      const l = ({
+        l = t(1e4);
+      const d = ({
           className: e
         }) => (0, s.jsxs)("svg", {
           className: e,
@@ -2163,13 +2163,13 @@ try {
         }) => {
           const {
             track: t
-          } = (0, i.useGtmTrack)(), {
+          } = (0, o.useGtmTrack)(), {
             refetch: n
-          } = (0, o.useQuery)(c.UserGetVote, {
+          } = (0, i.useQuery)(c.UserGetVote, {
             skip: !0
-          }), [d] = (0, o.useMutation)(c.UserCastVote), [l, m] = (0, r.useState)(null), u = (0, r.useCallback)(s => {
+          }), [l] = (0, i.useMutation)(c.UserCastVote), [d, m] = (0, r.useState)(null), u = (0, r.useCallback)(s => {
             (async () => {
-              if (s === l && null !== l) m(null);
+              if (s === d && null !== d) m(null);
               else {
                 m(s), t({
                   event: "cta_" + (s ? "like" : "dislike"),
@@ -2180,12 +2180,12 @@ try {
                   foreignType: a,
                   vote: s
                 };
-                await d({
+                await l({
                   variables: r
                 })
               }
             })()
-          }, [e, a, l]);
+          }, [e, a, d]);
           return (0, r.useEffect)(() => {
             e && a && (async () => {
               const t = await n({
@@ -2198,13 +2198,13 @@ try {
             className: _.calloutVoteForm,
             children: [(0, s.jsx)("button", {
               "aria-label": "upvote",
-              className: [_.upvote, _.voteButton, l ? _.active : ""].join(" "),
+              className: [_.upvote, _.voteButton, d ? _.active : ""].join(" "),
               name: "upvote",
               onClick: () => u(!0),
               type: "button"
             }), (0, s.jsx)("button", {
               "aria-label": "downvote",
-              className: [_.downvote, _.voteButton, !1 === l ? _.active : ""].join(" "),
+              className: [_.downvote, _.voteButton, !1 === d ? _.active : ""].join(" "),
               name: "downvote",
               onClick: () => u(!1),
               type: "button"
@@ -2218,7 +2218,7 @@ try {
         }) => {
           const {
             track: r
-          } = (0, i.useGtmTrack)();
+          } = (0, o.useGtmTrack)();
           return (0, s.jsx)("a", {
             href: a,
             target: "_blank",
@@ -2229,7 +2229,7 @@ try {
               onClick: t ? () => r({
                 ...t
               }) : () => {},
-              children: [e, (0, s.jsx)(l, {
+              children: [e, (0, s.jsx)(d, {
                 className: _.calloutLinkIcon
               })]
             })
@@ -2243,7 +2243,7 @@ try {
         }) => {
           const {
             track: n
-          } = (0, i.useGtmTrack)();
+          } = (0, o.useGtmTrack)();
           return (0, s.jsxs)("div", {
             className: _.actionFooter,
             children: [e, a && " ", a && (0, s.jsx)("a", {
@@ -2255,14 +2255,14 @@ try {
             })]
           })
         },
-        p = (0, o.withTranslations)(({
+        b = (0, i.withTranslations)(({
           header: e,
           subheader: a,
           type: t,
           action_text: c,
-          link: l,
-          foreign_id: p = document.location.pathname,
-          foreign_type: b = "url",
+          link: d,
+          foreign_id: b = document.location.pathname,
+          foreign_type: p = "url",
           className: f = "",
           actionFooterHelperText: k,
           actionFooterLinkText: h,
@@ -2274,27 +2274,27 @@ try {
         }) => {
           const {
             loggedIn: N
-          } = (0, i.useRockstarUser)(), {
+          } = (0, o.useRockstarUser)(), {
             track: S
-          } = (0, i.useGtmTrack)(), C = document.location.pathname, {
+          } = (0, o.useGtmTrack)(), C = document.location.pathname, {
             signInUrl: T
-          } = (0, o.useScAuthLinks)(C), {
-            ref: I,
-            inView: E
+          } = (0, i.useScAuthLinks)(C), {
+            ref: E,
+            inView: I
           } = (0, n.useInView)({
             threshold: .6
           }), [z, A] = (0, r.useState)(!1);
           let M;
           if ((0, r.useEffect)(() => {
-              E && !z && (S({
+              I && !z && (S({
                 event: "page_section_impression",
                 element_placement: `callout section - ${w?.sectionName??w?._memoq?.header}`
               }), A(!0))
-            }, [E]), !e && !a) return null;
+            }, [I]), !e && !a) return null;
           switch (t) {
             case "vote":
               if (!N) {
-                M = (0, s.jsx)(d.A, {
+                M = (0, s.jsx)(l.A, {
                   to: T,
                   className: _.calloutButton,
                   onClick: y ? () => S({
@@ -2305,13 +2305,13 @@ try {
                 break
               }
               M = (0, s.jsx)(m, {
-                foreign_id: p,
-                foreign_type: b
+                foreign_id: b,
+                foreign_type: p
               });
               break;
             case "button":
-              c && l && (M = (0, s.jsx)(d.A, {
-                to: l,
+              c && d && (M = (0, s.jsx)(l.A, {
+                to: d,
                 className: _.calloutButton,
                 onClick: y ? () => S({
                   ...y
@@ -2320,9 +2320,9 @@ try {
               }));
               break;
             case "link":
-              c && l && (M = (0, s.jsx)(u, {
+              c && d && (M = (0, s.jsx)(u, {
                 action_text: c,
-                link: l,
+                link: d,
                 trackingData: y
               }));
               break;
@@ -2331,7 +2331,7 @@ try {
           }
           return (0, s.jsx)("div", {
             className: `${_.calloutContainer} ${f||""}`,
-            ref: I,
+            ref: E,
             children: (0, s.jsxs)("div", {
               className: _.calloutSection,
               children: [(0, s.jsxs)("div", {
@@ -2359,16 +2359,16 @@ try {
     75138(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => p
+        A: () => b
       });
       var s = t(39793),
         r = t(93082),
         n = t(14653),
-        o = t(50662),
-        i = t(39279),
+        i = t(50662),
+        o = t(39279),
         c = t(81270),
-        d = t(74631);
-      const l = {
+        l = t(74631);
+      const d = {
         active: "rockstargames-sites-gta-gen9fdc2ec652cbb7469f602e73cd10ef997",
         deprecatedCarousel: "rockstargames-sites-gta-gen9a531264d5417d2198d4e14aa72335af1",
         dotsSlide: "rockstargames-sites-gta-gen9b8fd11776fba32f9663bbb6292a5c901",
@@ -2401,7 +2401,7 @@ try {
             type: e?.type,
             ariaLabel: e?.image?.ariaLabel ?? e.description,
             style: e?.style,
-            className: (0, c.default)(l.img, e?.className)
+            className: (0, c.default)(d.img, e?.className)
           }), (e?.title || e?.description) && (0, s.jsx)(_.A, {
             item: e
           })]
@@ -2419,22 +2419,22 @@ try {
             className: "swiper-scrollbar-drag"
           })
         }),
-        p = ({
+        b = ({
           children: e,
           items: a = [],
           style: t = {},
           noInfiniteScroll: m = !1,
-          className: p = "",
-          renderTemplate: b = "standard",
+          className: b = "",
+          renderTemplate: p = "standard",
           text: f,
           customSpaceBetween: k = null,
           centerSlides: h = !0,
           centeredSlidesBounds: v = !1
         }) => {
-          const y = (0, d.Ub)("(min-width: 0px) and (max-width: 768px)"),
+          const y = (0, l.Ub)("(min-width: 0px) and (max-width: 768px)"),
             [j, x] = (0, r.useState)(0),
             [w, N] = (0, r.useState)(null),
-            S = (0, r.useMemo)(() => e && Array.isArray(e) ? e.map(() => (0, i.A)()) : null, [e, y]),
+            S = (0, r.useMemo)(() => e && Array.isArray(e) ? e.map(() => (0, o.A)()) : null, [e, y]),
             C = e => {
               if (!e) return;
               let a = 0;
@@ -2458,11 +2458,11 @@ try {
             }
           };
           return (0, s.jsxs)("div", {
-            className: (0, c.default)(l.deprecatedCarousel, l[b], l.infinite_true, e ? l.renderedWithChildren : "", p),
+            className: (0, c.default)(d.deprecatedCarousel, d[p], d.infinite_true, e ? d.renderedWithChildren : "", b),
             style: t,
             "data-testid": "carousel",
             children: [(0, s.jsxs)(n.RC, {
-              modules: [o.dK, o.Jq],
+              modules: [i.dK, i.Jq],
               pagination: !0,
               a11y: {
                 enabled: !0,
@@ -2488,9 +2488,9 @@ try {
                 N(a)
               },
               children: [(0, s.jsx)("div", {
-                className: l.trackWrapper,
+                className: d.trackWrapper,
                 children: (0, s.jsxs)("div", {
-                  className: l.track,
+                  className: d.track,
                   children: [a?.map(e => (0, s.jsx)(n.qr, {
                     tabIndex: 0,
                     children: (0, s.jsx)(u, {
@@ -2513,15 +2513,15 @@ try {
     68291(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => d
       });
       var s = t(39793),
         r = t(81270),
         n = t(95967),
-        o = t(12334),
-        i = t(5413);
+        i = t(12334),
+        o = t(5413);
       const c = "rockstargames-sites-gta-gen9acd27eff2209196752622710f7b27558",
-        d = ({
+        l = ({
           to: e,
           children: a
         }) => e ? (0, s.jsx)("a", {
@@ -2530,17 +2530,17 @@ try {
           rel: "noreferrer",
           children: a
         }) : a,
-        l = ({
+        d = ({
           item: e,
           className: a = ""
         }) => (0, s.jsxs)("div", {
           className: (0, r.default)("rockstargames-sites-gta-gen9f8bc9589974046cdac4a2264be12d2df", a),
-          children: [e.title && (0, s.jsx)(d, {
+          children: [e.title && (0, s.jsx)(l, {
             to: e?.href ?? e?.to,
             children: (0, s.jsx)("h3", {
               children: e.title
             })
-          }), Array.isArray(e?.description?.content) ? e.description.content?.map((e, a) => e?.unorderedList ? (0, s.jsx)(o.A, {
+          }), Array.isArray(e?.description?.content) ? e.description.content?.map((e, a) => e?.unorderedList ? (0, s.jsx)(i.A, {
             columns: e.unorderedList.columns ?? null,
             style: {
               "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -2555,7 +2555,7 @@ try {
             style: {
               margin: `${e.separator.spacing} 0`
             },
-            children: (0, s.jsx)(i.A, {})
+            children: (0, s.jsx)(o.A, {})
           }, a) : (0, s.jsx)("p", {
             children: (0, s.jsx)("span", {
               className: c,
@@ -2574,17 +2574,17 @@ try {
     63218(e, a, t) {
       "use strict";
       t.d(a, {
-        YT: () => o,
-        lv: () => i,
+        YT: () => i,
+        lv: () => o,
         Ay: () => c
       });
       var s = t(39793),
         r = t(90067);
       var n = t(81270);
-      var o = function(e) {
+      var i = function(e) {
           return e.small = "small", e.large = "large", e
         }({}),
-        i = function(e) {
+        o = function(e) {
           return e.pc = "pc", e.pcAlt = "pcalt", e.ps4 = "ps4", e.ps5 = "ps5", e.ps = "ps", e.np = "np", e.xboxOne = "xboxone", e.xboxSeries = "xboxsx", e.xbox = "xbl", e
         }({});
       const c = ({
@@ -2593,8 +2593,8 @@ try {
         className: t = ""
       }) => {
         const {
-          src: o,
-          alt: i
+          src: i,
+          alt: o
         } = ((e, a) => {
           const t = "small" === a;
           switch (e) {
@@ -2643,11 +2643,11 @@ try {
             "data-testid": "platform-tag",
             "data-platform": a,
             "data-tag-size": e,
-            src: o,
+            src: i,
             alt: "",
             "aria-hidden": !0
           }), (0, s.jsx)(r.s6, {
-            children: i
+            children: o
           })]
         })
       }
@@ -2655,16 +2655,16 @@ try {
     44293(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => p
+        A: () => b
       });
       var s = t(39793),
         r = t(93082),
         n = t(42909),
-        o = t(13331),
-        i = t(42285),
+        i = t(13331),
+        o = t(42285),
         c = t(82199),
-        d = t(38044),
-        l = t(59426);
+        l = t(38044),
+        d = t(59426);
       const _ = {
           rating: "rockstargames-sites-gta-gen9c3e95c84902dd75b827d3c95532e22dc",
           text: "rockstargames-sites-gta-gen9babdd6ae2ff83f380dadc6982effa011",
@@ -2680,35 +2680,35 @@ try {
         });
       var u = t(70386),
         g = t(30433);
-      (0, o.importAll)(t(36672));
-      const p = (0, l.A)((0, g.g)(({
+      (0, i.importAll)(t(36672));
+      const b = (0, d.A)((0, g.g)(({
         descriptors: e = null,
         footer: a = null,
-        href: l,
+        href: d,
         img: g = null,
-        titleSlug: p = null,
-        style: b = {},
+        titleSlug: b = null,
+        style: p = {},
         className: f,
         ...k
       }) => {
         const [h, v] = (0, r.useState)(!1), {
           inView: y
-        } = (0, i.useInView)({
+        } = (0, o.useInView)({
           threshold: .6
         }), [j, x] = (0, r.useState)({
           ratingDescriptors: e,
           ratingFooter: a,
           ratingImg: g,
-          ratingUrl: l
+          ratingUrl: d
         }), {
           track: w
         } = (0, c.useGtmTrack)(), N = (0, n.useIntl)(), {
           data: S
-        } = (0, o.useQuery)(u.GameData, {
+        } = (0, i.useQuery)(u.GameData, {
           variables: {
-            titleSlug: p
+            titleSlug: b
           },
-          skip: !p
+          skip: !b
         });
         if ((0, r.useEffect)(() => {
             S && x(S?.game)
@@ -2721,10 +2721,10 @@ try {
         const C = !!j.ratingDescriptors;
         return (0, s.jsxs)("div", {
           className: [_.rating, C ? _.withDescriptors : _.withOutDescriptors, f || ""].join(" "),
-          style: (0, o.safeStyles)(b),
+          style: (0, i.safeStyles)(p),
           "data-testid": "rating",
           ...k,
-          children: [(0, s.jsx)(d.A, {
+          children: [(0, s.jsx)(l.A, {
             to: j.ratingUrl,
             target: "_blank",
             children: (0, s.jsx)("img", {
@@ -2776,29 +2776,29 @@ try {
     51550(e, a, t) {
       "use strict";
       t.r(a), t.d(a, {
-        RpCategory: () => d,
+        RpCategory: () => l,
         rpCategoryTestIds: () => c
       });
       var s = t(39793),
         r = t(93082),
         n = t(52710);
-      var o = t(81270);
-      const i = e => e < 100 ? "#2d6eb9" : e > 99 && e < 500 ? "#b482619a" : e > 499 && e < 750 ? "#9699a1" : "#D6B563",
+      var i = t(81270);
+      const o = e => e < 100 ? "#2d6eb9" : e > 99 && e < 500 ? "#b482619a" : e > 499 && e < 750 ? "#9699a1" : "#D6B563",
         c = {
           RANK_VALUE: "rpCategory:rankValue"
         },
-        d = (0, r.forwardRef)(function({
+        l = (0, r.forwardRef)(function({
           rank: e,
           size: a = "large",
           className: t,
           alt: r,
-          testId: d,
-          ...l
+          testId: l,
+          ...d
         }, _) {
-          const m = i(e),
-            u = (0, n.mergeProps)(l, {
-              className: (0, o.default)("rockstargames-sites-gta-gen9f54750ef62f8600000c94f0caba85986", t),
-              "data-testid": d
+          const m = o(e),
+            u = (0, n.mergeProps)(d, {
+              className: (0, i.default)("rockstargames-sites-gta-gen9f54750ef62f8600000c94f0caba85986", t),
+              "data-testid": l
             });
           return (0, s.jsxs)("div", {
             "data-size": a,
@@ -2808,7 +2808,7 @@ try {
               role: "svg",
               "aria-label": r,
               className: "rockstargames-sites-gta-gen9a3beb1e9c88e2938879ea4df25b63eb1",
-              "data-rank": i(e),
+              "data-rank": o(e),
               "data-testid": "rp-icon",
               width: "44",
               height: "44",
@@ -2829,21 +2829,21 @@ try {
     68993(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => i
+        A: () => o
       });
       var s = t(39793),
         r = t(93082),
         n = t(36416),
-        o = t(13331);
-      const i = (0, o.withTranslations)(({
+        i = t(13331);
+      const o = (0, i.withTranslations)(({
         t: e
       }) => {
-        const [a] = (0, r.useState)(""), t = (0, n.useNavigate)(), i = (0, o.useMutateState)();
+        const [a] = (0, r.useState)(""), t = (0, n.useNavigate)(), o = (0, i.useMutateState)();
         return (0, s.jsxs)("form", {
           action: "#",
           className: "rockstargames-sites-gta-gen9c9f16d9c2f4a943ae8f1f900f31b5f4b",
           onSubmit: e => {
-            e.preventDefault(), i({
+            e.preventDefault(), o({
               navOpen: !1
             }), document.activeElement?.blur?.();
             const a = e.currentTarget.elements.namedItem("q").value;
@@ -2872,13 +2872,13 @@ try {
       var s = t(39793),
         r = t(95967),
         n = t(57927);
-      const o = {
+      const i = {
           badge: "rockstargames-sites-gta-gen9b7268b0e907630904b6689af83fee8e3",
           badge2: "rockstargames-sites-gta-gen9d08ce7145bc9562355a3984f8ccc9313",
           badge3: "rockstargames-sites-gta-gen9c7c60cfb12b6e9be68893c60814b3ed7",
           badgeSizeUpdate: "rockstargames-sites-gta-gen9ce8632d7464b556158a1d549f653498c"
         },
-        i = ({
+        o = ({
           wrapper: e,
           children: a,
           role: t,
@@ -2888,14 +2888,14 @@ try {
           badge: e,
           badgeType: a,
           role: c,
-          splitter: d
+          splitter: l
         }) => {
-          const l = [];
-          return d ? e.split(d).map(e => l.push(e)) : l.push(e), (0, s.jsxs)(i, {
-            splitter: d,
+          const d = [];
+          return l ? e.split(l).map(e => d.push(e)) : d.push(e), (0, s.jsxs)(o, {
+            splitter: l,
             role: c,
             wrapper: e => (0, s.jsx)("div", {
-              className: `${o.badge} ${a?o[a]:""} `,
+              className: `${i.badge} ${a?i[a]:""} `,
               children: e
             }),
             children: [(0, s.jsx)(s.Fragment, {
@@ -2906,20 +2906,20 @@ try {
                 }
               })
             }), (0, s.jsx)(n.Root, {
-              className: `${d||c?"":o.badge} ${a?o[a]:""}`,
+              className: `${l||c?"":i.badge} ${a?i[a]:""}`,
               min: 8,
               max: 1e3,
-              mode: d || c ? "single" : "multi",
+              mode: l || c ? "single" : "multi",
               children: (0, s.jsx)(n.Text, {
-                children: l[0]
+                children: d[0]
               })
             }), (0, s.jsx)(s.Fragment, {
-              children: l.shift() && d && l.length >= 1 && (0, s.jsx)(n.Root, {
+              children: d.shift() && l && d.length >= 1 && (0, s.jsx)(n.Root, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
                 children: (0, s.jsx)(n.Text, {
-                  children: l.join(" ")
+                  children: d.join(" ")
                 })
               })
             })]
@@ -2929,46 +2929,46 @@ try {
     44453(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => l
+        A: () => d
       });
       var s = t(39793),
         r = t(93082),
         n = t(13331),
-        o = t(81270),
-        i = t(76862),
+        i = t(81270),
+        o = t(76862),
         c = t(95967);
-      const d = ({
+      const l = ({
           hero: e,
           children: a
         }) => e ? (0, s.jsx)("div", {
           className: "rockstargames-sites-gta-gen9a429886d721550d02521f7f5c9de7f5b",
           children: a
         }) : a,
-        l = ({
+        d = ({
           badge: e = null,
           badgeType: a,
           discountTxt: t,
-          splitter: l,
+          splitter: d,
           image: _,
           style: m,
           className: u = "",
           attributes: g = {},
-          role: p,
-          hero: b = !1
+          role: b,
+          hero: p = !1
         }) => {
           const f = (0, r.useMemo)(() => {
-            if (_?.badge || _?.discountTxt || e || t) return (0, s.jsx)(i.A, {
+            if (_?.badge || _?.discountTxt || e || t) return (0, s.jsx)(o.A, {
               badge: _?.discountTxt ?? _?.badge ?? e ?? t,
               badgeType: a,
-              splitter: _?.splitter ?? l,
-              role: _?.role ?? p
+              splitter: _?.splitter ?? d,
+              role: _?.role ?? b
             })
-          }, [e, a, t, _, p, l]);
-          return (0, s.jsx)(d, {
-            hero: b,
+          }, [e, a, t, _, b, d]);
+          return (0, s.jsx)(l, {
+            hero: p,
             children: (0, s.jsx)("figure", {
               children: (0, s.jsxs)("div", {
-                className: (0, o.default)("rockstargames-sites-gta-gen9d9ac792281efe15bcd4589b028d1c27b", b ? "rockstargames-sites-gta-gen9e430c4662cd185f58259d4a8d8b322de" : "", g?.hiddenMobile ? "hiddenMobile" : "", g?.hiddenLarge ? "hiddenLarge" : "", g?.className, u),
+                className: (0, i.default)("rockstargames-sites-gta-gen9d9ac792281efe15bcd4589b028d1c27b", p ? "rockstargames-sites-gta-gen9e430c4662cd185f58259d4a8d8b322de" : "", g?.hiddenMobile ? "hiddenMobile" : "", g?.hiddenLarge ? "hiddenLarge" : "", g?.className, u),
                 style: (0, n.safeStyles)({
                   ...m,
                   ...g?.style
@@ -2991,13 +2991,13 @@ try {
     2122(e, a, t) {
       "use strict";
       t.r(a), t.d(a, {
-        Avatar: () => b,
+        Avatar: () => p,
         Content: () => f,
         PlatformTag: () => h,
         PlatformTagSizes: () => c.YT,
         Platforms: () => c.lv,
         RankContent: () => y,
-        Root: () => p,
+        Root: () => b,
         RpCategory: () => j,
         TextContent: () => x,
         TopRow: () => k,
@@ -3006,11 +3006,11 @@ try {
       var s = t(39793),
         r = t(93082),
         n = t(90067),
-        o = t(52710),
-        i = t(81270),
+        i = t(52710),
+        o = t(81270),
         c = t(63218),
-        d = t(51550),
-        l = t(30433),
+        l = t(51550),
+        d = t(30433),
         _ = t(42909);
       const m = (0, _.defineMessages)({
           character_card_a11y_intro: {
@@ -3037,27 +3037,27 @@ try {
           ...r
         }, c) {
           const {
-            formatMessage: d
-          } = (0, _.useIntl)(), l = (0, o.mergeProps)(r, {
+            formatMessage: l
+          } = (0, _.useIntl)(), d = (0, i.mergeProps)(r, {
             "data-testid": t,
-            className: (0, i.default)("rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1", a)
+            className: (0, o.default)("rockstargames-sites-gta-gen9d738b88fa09e0960678501900af6dae1", a)
           });
           return (0, s.jsxs)("div", {
             ref: c,
-            ...l,
+            ...d,
             children: [(0, s.jsx)(n.s6, {
-              children: d(m.character_card_a11y_intro)
+              children: l(m.character_card_a11y_intro)
             }), e]
           })
         }),
-        p = (0, l.g)(g),
-        b = (0, r.forwardRef)(function({
+        b = (0, d.g)(g),
+        p = (0, r.forwardRef)(function({
           src: e,
           alt: a,
           testId: n,
-          ...i
+          ...o
         }, c) {
-          const [d, l] = (0, r.useState)(e), _ = (0, o.mergeProps)(i, {
+          const [l, d] = (0, r.useState)(e), _ = (0, i.mergeProps)(o, {
             className: "rockstargames-sites-gta-gen9a0e1daf7fc3c029353d5ef13f291348f",
             "data-testid": n
           });
@@ -3066,9 +3066,9 @@ try {
             ..._,
             children: (0, s.jsx)("img", {
               className: u,
-              src: d,
+              src: l,
               alt: a ?? "",
-              onError: () => l(t(14804)),
+              onError: () => d(t(14804)),
               "aria-hidden": !a
             })
           }) : (0, s.jsx)("div", {
@@ -3088,14 +3088,14 @@ try {
           className: t,
           ...r
         }, c) {
-          const d = e ? n.DX : "div",
-            l = (0, o.mergeProps)(r, {
-              className: (0, i.default)("rockstargames-sites-gta-gen9fbe57172570573357e040787d9307835", t),
+          const l = e ? n.DX : "div",
+            d = (0, i.mergeProps)(r, {
+              className: (0, o.default)("rockstargames-sites-gta-gen9fbe57172570573357e040787d9307835", t),
               "data-testid": a
             });
-          return (0, s.jsx)(d, {
+          return (0, s.jsx)(l, {
             ref: c,
-            ...l
+            ...d
           })
         }),
         k = (0, r.forwardRef)(function({
@@ -3103,7 +3103,7 @@ try {
           testId: a,
           ...t
         }, r) {
-          const n = (0, o.mergeProps)(t, {
+          const n = (0, i.mergeProps)(t, {
             className: "rockstargames-sites-gta-gen9d9b917b7fb3a2b20d4af0d526ddbb8ff",
             "data-testid": a
           });
@@ -3117,7 +3117,7 @@ try {
           testId: e,
           ...a
         }) => {
-          const t = (0, o.mergeProps)(a, {
+          const t = (0, i.mergeProps)(a, {
             "data-testid": e
           });
           return (0, s.jsx)(c.Ay, {
@@ -3129,17 +3129,17 @@ try {
           testId: a,
           userName: t,
           ...r
-        }, i) {
+        }, o) {
           const {
             formatMessage: c
-          } = (0, _.useIntl)(), d = (0, o.mergeProps)(r, {
+          } = (0, _.useIntl)(), l = (0, i.mergeProps)(r, {
             "data-testid": a
           });
           return (0, s.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9cd5023e2864561e1f962ac435e70156b",
             "data-size": "small",
-            ...d,
-            ref: i,
+            ...l,
+            ref: o,
             children: [(0, s.jsx)(n.s6, {
               children: c(m.character_card_a11y_player, {
                 player: t
@@ -3155,7 +3155,7 @@ try {
           children: a,
           ...t
         }, r) {
-          const n = (0, o.mergeProps)(t, {
+          const n = (0, i.mergeProps)(t, {
             "data-testid": e
           });
           return (0, s.jsx)("div", {
@@ -3170,7 +3170,7 @@ try {
         }) => {
           const {
             formatMessage: t
-          } = (0, _.useIntl)(), r = (0, o.mergeProps)(a, {
+          } = (0, _.useIntl)(), r = (0, i.mergeProps)(a, {
             "data-testid": e
           });
           return (0, s.jsxs)(s.Fragment, {
@@ -3178,7 +3178,7 @@ try {
               children: t(m.character_card_a11y_rank, {
                 rank: a.rank
               })
-            }), (0, s.jsx)(d.RpCategory, {
+            }), (0, s.jsx)(l.RpCategory, {
               ...r,
               "aria-hidden": !0
             })]
@@ -3189,15 +3189,15 @@ try {
           children: a,
           testId: t,
           ...r
-        }, i) {
+        }, o) {
           const c = e ? n.DX : "div",
-            d = (0, o.mergeProps)(r, {
+            l = (0, i.mergeProps)(r, {
               className: "rockstargames-sites-gta-gen9e8daa457f5b09f3a79915a1355aa3332",
               "data-testid": t
             });
           return (0, s.jsx)(c, {
-            ref: i,
-            ...d,
+            ref: o,
+            ...l,
             children: a
           })
         })
@@ -3205,34 +3205,34 @@ try {
     1e4(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => i
+        A: () => o
       });
       var s = t(39793),
         r = t(81270),
         n = t(38044);
-      const o = {
+      const i = {
           button: "rockstargames-sites-gta-gen9bc25ec64410308d56e4dc097e81fb129",
           secondary: "rockstargames-sites-gta-gen9a3e6439dcaa4870840298d683db4831c"
         },
-        i = ({
+        o = ({
           className: e = "",
           children: a,
           context: t = "",
-          to: i,
+          to: o,
           onClick: c,
-          target: d = "_self",
-          ...l
+          target: l = "_self",
+          ...d
         }) => {
-          const _ = (0, r.default)(o.button, o[t], e);
-          return i ? (0, s.jsx)(n.A, {
-            ...l,
-            to: i,
+          const _ = (0, r.default)(i.button, i[t], e);
+          return o ? (0, s.jsx)(n.A, {
+            ...d,
+            to: o,
             className: _,
             onClick: c,
-            target: d,
+            target: l,
             children: a
           }) : (0, s.jsx)("button", {
-            ...l,
+            ...d,
             type: "button",
             className: _,
             onClick: c,
@@ -3276,10 +3276,10 @@ try {
       var s = t(39793),
         r = t(93082),
         n = t(50062),
-        o = t.n(n),
-        i = t(13331),
+        i = t.n(n),
+        o = t(13331),
         c = t(81270);
-      const d = {
+      const l = {
           blue: "rockstargames-sites-gta-gen9bffe0939bda9e26ad14f6b01669338a8",
           custom: "rockstargames-sites-gta-gen9cc2c26a3dd80cf9db62c4c7f389b7859",
           darkBlue: "rockstargames-sites-gta-gen9e2b6f722952b5d61d2a3b725166bfc9b",
@@ -3303,48 +3303,48 @@ try {
           yellow: "rockstargames-sites-gta-gen9ce372826eac3cc73094d69c0c5d9a530"
         },
         {
-          sanitize: l
-        } = o(),
+          sanitize: d
+        } = i(),
         _ = ({
           list: e,
           string: a,
           starColor: t,
           style: n,
-          className: o,
+          className: i,
           game: _,
           noImg: m,
           columns: u,
           mobileColumns: g
         }) => {
-          const [p, b] = (0, r.useState)(null);
+          const [b, p] = (0, r.useState)(null);
           if ((0, r.useEffect)(() => {
-              b(e)
+              p(e)
             }, [e]), !a && !e) return null;
           const f = {
             color: n?.color
           };
-          return delete n?.color, u && p ? (0, s.jsx)("div", {
-            className: d.grid,
+          return delete n?.color, u && b ? (0, s.jsx)("div", {
+            className: l.grid,
             style: {
               "--ordered-list-grid-column": u,
               "--ordered-list-grid-column-mobile": g ?? u
             },
             children: (0, s.jsx)("ol", {
-              className: (0, c.default)(d.itemList, d.noImg, d[t], d[_]),
-              style: (0, i.safeStyles)(n),
-              children: p.map(e => (0, s.jsx)("li", {
+              className: (0, c.default)(l.itemList, l.noImg, l[t], l[_]),
+              style: (0, o.safeStyles)(n),
+              children: b.map(e => (0, s.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: l(e.content)
+                  __html: d(e.content)
                 },
                 style: f
               }, e.content))
             })
           }) : (0, s.jsx)("ol", {
-            style: (0, i.safeStyles)(n),
-            className: (0, c.default)(d.itemList, d.custom, m ? d.noImg : "", t ? d[t] : "", _ ? d[_] : "", o ?? ""),
+            style: (0, o.safeStyles)(n),
+            className: (0, c.default)(l.itemList, l.custom, m ? l.noImg : "", t ? l[t] : "", _ ? l[_] : "", i ?? ""),
             children: e.map(e => (0, s.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: l(e?.content ?? e)
+                __html: d(e?.content ?? e)
               }
             }, e?.content))
           })
@@ -3373,15 +3373,15 @@ try {
     14159(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => d
+        A: () => l
       });
       var s = t(39793),
         r = t(93082),
         n = function(e) {
           return e.Fatal = "fatal", e.Error = "error", e.Warning = "warning", e.Log = "log", e.Info = "info", e.Debug = "debug", e
         }({}),
-        o = t(57208),
-        i = t(60982);
+        i = t(57208),
+        o = t(60982);
       class c extends r.Component {
         constructor(e) {
           super(e), this.state = {
@@ -3406,22 +3406,22 @@ try {
           }
         }
         componentDidCatch(e, a) {
-          (0, o.ZQ)({
+          (0, i.ZQ)({
             category: "ErrorBoundary",
             message: e.message || "E399 triggered",
             data: {
               error: e,
               errorInfo: a
             }
-          }), (0, o.wd)("ErrorBoundary", n.Error)
+          }), (0, i.wd)("ErrorBoundary", n.Error)
         }
         render() {
-          return null !== this.state.error.code ? (0, s.jsx)(i.A, {
+          return null !== this.state.error.code ? (0, s.jsx)(o.A, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const d = (e, a = null) => {
+      const l = (e, a = null) => {
         const t = t => (0, s.jsx)(c, {
           header: a,
           children: (0, s.jsx)(e, {
@@ -3434,13 +3434,13 @@ try {
     60982(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => d
+        A: () => l
       });
       var s = t(39793),
         r = t(93082),
         n = t(42909),
-        o = t(38044),
-        i = t(68993);
+        i = t(38044),
+        o = t(68993);
       const c = (0, n.defineMessages)({
           wasted_error_404_new: {
             id: "wasted_error_404_new",
@@ -3453,7 +3453,7 @@ try {
             defaultMessage: "Home"
           }
         }),
-        d = ({
+        l = ({
           error: e,
           domain: a = ""
         }) => {
@@ -3463,9 +3463,9 @@ try {
           const {
             formatMessage: t
           } = (0, n.useIntl)();
-          let d = e?.message ?? t(c.wasted_error_404_new);
-          d = t(c.wasted_error_404_new);
-          const l = e?.code ?? 398,
+          let l = e?.message ?? t(c.wasted_error_404_new);
+          l = t(c.wasted_error_404_new);
+          const d = e?.code ?? 398,
             _ = (0, r.useRef)(null);
           return (0, r.useEffect)(() => {
             _ && _?.current && _.current.focus()
@@ -3474,12 +3474,12 @@ try {
             children: [(0, s.jsx)("h3", {
               tabIndex: -1,
               ref: _,
-              children: `${d} (${l})`
-            }), (0, s.jsx)(o.A, {
+              children: `${l} (${d})`
+            }), (0, s.jsx)(i.A, {
               to: "/",
               reloadDocument: !1,
               children: t(c.wasted_home)
-            }), "clr" !== a && (0, s.jsx)(i.A, {})]
+            }), "clr" !== a && (0, s.jsx)(o.A, {})]
           })
         }
     },
@@ -3491,38 +3491,38 @@ try {
       var s = t(39793),
         r = t(25993),
         n = t(13331);
-      const o = ({
+      const i = ({
           alt: e,
           className: a,
           src: r,
-          role: o,
-          style: i
+          role: i,
+          style: o
         }) => {
-          const [c, d] = (0, n.usePreloadImg)(r);
-          let l = r;
-          !1 === c && (l = t(9333));
+          const [c, l] = (0, n.usePreloadImg)(r);
+          let d = r;
+          !1 === c && (d = t(9333));
           const {
             width: _,
             height: m
-          } = d, u = {
+          } = l, u = {
             "--aspect-ratio": Number.isNaN(_ / m) ? "" : _ / m,
-            ...i
+            ...o
           };
           return (0, s.jsx)("img", {
-            src: l,
+            src: d,
             className: a ?? "",
             alt: e,
             style: u,
-            role: o
+            role: i
           })
         },
-        i = "rockstargames-sites-gta-gen9c8dc03880ce2e12f3fdea5b5b587f27f",
+        o = "rockstargames-sites-gta-gen9c8dc03880ce2e12f3fdea5b5b587f27f",
         c = ({
           className: e,
           style: a = {},
           image: c = {},
-          imageStyle: d = {},
-          role: l = "img"
+          imageStyle: l = {},
+          role: d = "img"
         }) => {
           let {
             alt: _,
@@ -3535,19 +3535,19 @@ try {
             mobile: t(28839),
             desktop: t(9333)
           });
-          let p = c.frame ? `${c.frame} ${i}` : i;
+          let b = c.frame ? `${c.frame} ${o}` : o;
           return (0, s.jsx)("div", {
-            className: p,
+            className: b,
             style: a,
-            children: (0, s.jsx)(o, {
+            children: (0, s.jsx)(i, {
               style: {
-                ...d,
+                ...l,
                 ...c?.style,
                 ...g
               },
               src: u ? m.mobile || m.desktop : m?.desktop || m?.mobile,
               alt: _,
-              role: l,
+              role: d,
               className: e
             })
           })
@@ -3556,17 +3556,17 @@ try {
     46775(e, a, t) {
       "use strict";
       t.d(a, {
-        Z: () => b,
-        h: () => p
+        Z: () => p,
+        h: () => b
       });
       var s = t(39793),
         r = t(93082),
         n = t(13331),
-        o = t(36416),
-        i = t(79955),
-        c = t.n(i),
-        d = t(13517),
-        l = t(82199),
+        i = t(36416),
+        o = t(79955),
+        c = t.n(o),
+        l = t(13517),
+        d = t(82199),
         _ = t(81270);
       const m = ({
           modal: e
@@ -3575,15 +3575,15 @@ try {
             content: a,
             className: t,
             height: n,
-            onClose: i,
+            onClose: o,
             rect: m = {
               left: 0,
               top: 0
             },
             contentStyle: u = {},
             contentClassName: g = "",
-            width: p,
-            fadeIn: b = !0,
+            width: b,
+            fadeIn: p = !0,
             cardIds: f,
             activeId: k,
             theme: h,
@@ -3595,23 +3595,23 @@ try {
             left: w,
             top: N
           } = m, S = f?.indexOf(k), [C, T] = (0, r.useState)(f?.length || 0), {
-            track: I
-          } = (0, l.useGtmTrack)(), E = null !== f && (f?.length || 0) > 1 && ("flag_bg" === h || "fob" === x?.size), z = window.location.href.includes("cms5"), [A, M] = (0, o.useSearchParams)(), [P, L] = (0, r.useState)(!1), [R, D] = (0, r.useState)(!1), [V, O] = (0, r.useState)(), B = e => {
+            track: E
+          } = (0, d.useGtmTrack)(), I = null !== f && (f?.length || 0) > 1 && ("flag_bg" === h || "fob" === x?.size), z = window.location.href.includes("cms5"), [A, M] = (0, i.useSearchParams)(), [P, L] = (0, r.useState)(!1), [R, D] = (0, r.useState)(!1), [O, B] = (0, r.useState)(), G = e => {
             "number" == typeof e && f && e < f.length && e > -1 && M({
               info: f[e].toString()
             })
           }, $ = () => {
             const e = "number" == typeof S && S > -1 ? S - 1 : 0;
-            B(e), I({
+            G(e), E({
               event: "modal_previous",
               card_name: `card-${e+1}`,
               card_id: e + 1,
               element_placement: v?.toLowerCase(),
               position: S
             })
-          }, G = () => {
+          }, V = () => {
             const e = "number" == typeof S && S > -1 ? S + 1 : 0;
-            B(e), I({
+            G(e), E({
               event: "modal_next",
               card_name: `card-${e+1}`,
               card_id: e + 1,
@@ -3622,7 +3622,7 @@ try {
           (0, r.useEffect)(() => {
             T(f?.length || 0)
           }, [f?.length]), (0, r.useEffect)(() => {
-            null !== S && null !== f && B(S)
+            null !== S && null !== f && G(S)
           }, [S, f]), (0, r.useEffect)(() => {
             const e = f?.findIndex(e => e === k);
             "number" == typeof e && (D(e <= 0), L(e >= C - 1))
@@ -3632,11 +3632,11 @@ try {
             x: w,
             top: 0,
             left: 0,
-            width: p,
+            width: b,
             height: n,
             border: "0px solid transparent",
             background: "transparent",
-            marginTop: E ? "0" : ""
+            marginTop: I ? "0" : ""
           }), H = {
             opacity: 1
           }, U = (0, r.useRef)(null), q = {
@@ -3655,7 +3655,7 @@ try {
             height: "var(--modal-height)",
             border: "1px solid var(--border-color, #2d2d2d)",
             background: "var(--black-100)",
-            marginTop: E ? "calc(var(--modal-controlsHeight) - var(--modal-padding))" : "",
+            marginTop: I ? "calc(var(--modal-controlsHeight) - var(--modal-padding))" : "",
             transition: {
               x: q,
               y: q,
@@ -3679,7 +3679,7 @@ try {
             })
           }, [F, K]), (0, r.useEffect)(() => {
             const e = e => {
-              "function" == typeof i && "Escape" === e.key && (i(), I({
+              "function" == typeof o && "Escape" === e.key && (o(), E({
                 event: "modal_close",
                 element_placement: v?.toLowerCase(),
                 ...y
@@ -3688,7 +3688,7 @@ try {
             return document.addEventListener("keydown", e, !1), () => document.removeEventListener("keydown", e, !1)
           }, []);
           const Z = () => {
-              "function" == typeof i && (i(), I({
+              "function" == typeof o && (o(), E({
                 event: "modal_close",
                 element_placement: v?.toLowerCase(),
                 ...y
@@ -3713,7 +3713,7 @@ try {
                   case "ArrowUp":
                     a = (e => {
                       let a;
-                      return V?.queried ? a = V.element : (a = J(e, 2), O({
+                      return O?.queried ? a = O.element : (a = J(e, 2), B({
                         queried: !0,
                         element: a
                       })), a
@@ -3721,9 +3721,9 @@ try {
                 }
               }
             },
-            ee = b ? 0 : 1,
+            ee = p ? 0 : 1,
             ae = (0, r.useRef)(null),
-            te = (0, s.jsx)(d.motion.button, {
+            te = (0, s.jsx)(l.motion.button, {
               className: "rockstargames-sites-gta-gen9f462dceb5efde1dd4885f34f45132e3d",
               "aria-label": "Close",
               initial: {
@@ -3743,7 +3743,7 @@ try {
             re = z ? r.Fragment : c();
           return (0, r.useMemo)(() => (0, s.jsx)("div", {
             className: "rockstargames-sites-gta-gen9a1a5465ff4d4669854d9beb4e863413e",
-            "data-show-nav": E,
+            "data-show-nav": I,
             "data-aspect-ratio": j,
             children: (0, s.jsx)(re, {
               children: (0, s.jsxs)("div", {
@@ -3752,7 +3752,7 @@ try {
                 "aria-modal": "true",
                 "aria-label": se ? v : void 0,
                 role: "dialog",
-                children: [(0, s.jsx)(d.motion.div, {
+                children: [(0, s.jsx)(l.motion.div, {
                   className: "rockstargames-sites-gta-gen9cf4f951d4ea408858a9b48c822007342",
                   initial: {
                     opacity: 0
@@ -3760,9 +3760,9 @@ try {
                   animate: H,
                   transition: q,
                   onClick: () => Z()
-                }), E && (0, s.jsxs)("div", {
+                }), I && (0, s.jsxs)("div", {
                   className: "rockstargames-sites-gta-gen9d5753adf78798ed2e5e2ab02678cfe1b",
-                  children: [(0, s.jsxs)(d.motion.div, {
+                  children: [(0, s.jsxs)(l.motion.div, {
                     className: "rockstargames-sites-gta-gen9dbb0055ba799f28f1a2e41026b8781e8",
                     initial: {
                       opacity: 0
@@ -3787,14 +3787,14 @@ try {
                     }), (0, s.jsx)("button", {
                       type: "button",
                       "aria-label": "Next",
-                      onClick: G,
+                      onClick: V,
                       disabled: P,
                       onKeyDown: Q,
                       onKeyUp: Q,
                       "data-autofocus": !0
                     })]
                   }), te]
-                }), (0, s.jsx)(d.motion.div, {
+                }), (0, s.jsx)(l.motion.div, {
                   className: "rockstargames-sites-gta-gen9e708da42918d8bbff9a8e1a36a2c4366",
                   ref: U,
                   initial: "initial",
@@ -3802,9 +3802,9 @@ try {
                   variants: Y,
                   transition: q,
                   style: u,
-                  children: (0, s.jsxs)(d.motion.div, {
+                  children: (0, s.jsxs)(l.motion.div, {
                     className: (0, _.default)("rockstargames-sites-gta-gen9a7d77f83f629e9ae93f6934c8ba007b0", t),
-                    children: [!E && te, (0, s.jsx)(d.motion.div, {
+                    children: [!I && te, (0, s.jsx)(l.motion.div, {
                       className: (0, _.default)("rockstargames-sites-gta-gen9f26fc1babb8dd1284d4c03b3dabff714", g),
                       initial: {
                         opacity: ee
@@ -3827,21 +3827,21 @@ try {
           context: (0, r.createContext)(u),
           key: "modalContext"
         }),
-        p = () => (0, r.useContext)(g),
-        b = ({
+        b = () => (0, r.useContext)(g),
+        p = ({
           children: e
         }) => {
           const [a, t] = (0, r.useState)(), {
-            setBodyIsLocked: o
-          } = (0, n.useBodyScrollable)("ModalProvider"), i = (0, r.useMemo)(() => a?.content ? (0, s.jsx)(m, {
+            setBodyIsLocked: i
+          } = (0, n.useBodyScrollable)("ModalProvider"), o = (0, r.useMemo)(() => a?.content ? (0, s.jsx)(m, {
             modal: a
-          }) : null, [a]), c = () => o(!1);
+          }) : null, [a]), c = () => i(!1);
           return (0, r.useEffect)(() => (window.addEventListener("popstate", c), () => {
             window.removeEventListener("popstate", c)
           }), []), (0, r.useEffect)(() => {
-            o(!!i)
-          }, [i]), (0, s.jsx)(g.Provider, {
-            value: [i, t],
+            i(!!o)
+          }, [o]), (0, s.jsx)(g.Provider, {
+            value: [o, t],
             children: e
           })
         }
@@ -3849,7 +3849,7 @@ try {
     47279(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => o,
+        A: () => i,
         C: () => r
       });
       var s = t(40283);
@@ -3873,20 +3873,20 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        o = () => {
+        i = () => {
           let e;
           const {
             location: a
           } = window, t = a.hostname.substring(0, a.hostname.indexOf(".rockstargames.com")), r = n.findIndex(a => Object.entries(a.sites).findIndex(([a, s]) => s === t && (e = {
             site: a,
             subDomain: s
-          }, !0)) >= 0), o = n[r >= 0 ? r : 0], i = n.find(e => e.id === o.fallbackEnvironment);
+          }, !0)) >= 0), i = n[r >= 0 ? r : 0], o = n.find(e => e.id === i.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
-          }), (0, s.omit)((0, s.merge)({}, i, {
+          }), (0, s.omit)((0, s.merge)({}, o, {
             currentSite: e
-          }, o), "fallbackEnvironment")
+          }, i), "fallbackEnvironment")
         }
     },
     77678(e, a, t) {
@@ -3914,16 +3914,16 @@ try {
         const [{
           iso: n
         }] = (0, s.getLocale)(), {
-          authHost: o,
-          clientId: i
-        } = (0, r.A)(), c = await t(), d = new URL(`tpa/${e}/link`, `https://${o}.rockstargames.com`);
-        return d.searchParams.append("cid", i), d.searchParams.append("lang", n), d.searchParams.append("returnUrl", a ?? window.location.pathname), c && "boolean" != typeof c && "string" == typeof c.bearerToken && d.searchParams.append("accessToken", c.bearerToken), d
+          authHost: i,
+          clientId: o
+        } = (0, r.A)(), c = await t(), l = new URL(`tpa/${e}/link`, `https://${i}.rockstargames.com`);
+        return l.searchParams.append("cid", o), l.searchParams.append("lang", n), l.searchParams.append("returnUrl", a ?? window.location.pathname), c && "boolean" != typeof c && "string" == typeof c.bearerToken && l.searchParams.append("accessToken", c.bearerToken), l
       }
     },
     39991(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => i
+        A: () => o
       });
       const s = window?.env?.sc,
         r = window?.env?.marketing,
@@ -3932,43 +3932,43 @@ try {
           authHost: a,
           clientId: t,
           cms: n,
-          graphEnv: o,
-          queryManifest: i,
+          graphEnv: i,
+          queryManifest: o,
           scHost: c,
-          hostname: d,
-          cdnBase: l,
+          hostname: l,
+          cdnBase: d,
           key: _,
           marketingAuthTLD: m
         }) => {
           const u = s?.apiHost ?? e,
             g = s?.authHost ?? a,
-            p = s?.cdnBase ?? l,
-            b = s?.clientId ?? t,
+            b = s?.cdnBase ?? d,
+            p = s?.clientId ?? t,
             f = r?.marketingAuthTLD ?? m,
             k = s?.scHost ?? c,
             h = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${u}.rockstargames.com`,
-            graphEnv: s?.graphEnv ?? o,
+            graphEnv: s?.graphEnv ?? i,
             host: k,
-            hostname: d,
-            cdnBase: p,
+            hostname: l,
+            cdnBase: b,
             key: _,
-            clientId: b,
+            clientId: p,
             cms: `https://${n}.rockstargames.com/graphql`,
             authHost: g,
-            queryManifest: i,
+            queryManifest: o,
             scBase: `https://${k}.rockstargames.com/`,
-            login: `https://${g}.rockstargames.com/connect/authorize/${b}`,
-            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${b}`,
-            signup: `https://${g}.rockstargames.com/create/?cid=${b}`,
+            login: `https://${g}.rockstargames.com/connect/authorize/${p}`,
+            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${p}`,
+            signup: `https://${g}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${f}/auth/gateway.json`,
             logout: `https://${f}/auth/sc-auth-logout`,
             pingBearer: `https://${f}/${h}`,
             authCookieName: "BearerToken"
           }
         },
-        o = [n({
+        i = [n({
           key: "prod",
           clientId: "rsg",
           cms: "cms-prod.ros",
@@ -3993,34 +3993,34 @@ try {
           cdnBase: "https://s.rsg.sc/sc",
           marketingAuthTLD: "www.rockstargames.com"
         })],
-        i = () => {
+        o = () => {
           const e = window?.env?.scEnv ?? null;
           if (e) {
-            const a = o.find(({
+            const a = i.find(({
               key: a
             }) => a === e) ?? null;
             if (a) return a
           }
-          return o.find(({
+          return i.find(({
             hostname: e
-          }) => new RegExp(e).test(document.location.hostname)) || o[0]
+          }) => new RegExp(e).test(document.location.hostname)) || i[0]
         }
     },
     25847(e, a, t) {
       "use strict";
       t.d(a, {
-        OD: () => o,
-        lv: () => i,
+        OD: () => i,
+        lv: () => o,
         wC: () => r,
         PE: () => v,
-        rB: () => d,
-        tC: () => p.t,
+        rB: () => l,
+        tC: () => b.t,
         yh: () => h,
         Ap: () => m,
         Xs: () => y,
         kx: () => j,
         rJ: () => w,
-        pT: () => b,
+        pT: () => p,
         lV: () => x,
         PA: () => s,
         My: () => u,
@@ -4059,7 +4059,7 @@ try {
             }
           }
         };
-      class o {
+      class i {
         name;
         friendlyName;
         id;
@@ -4070,33 +4070,33 @@ try {
           this.name = e, this.friendlyName = a, this.id = t, this.onlineService = s, this.aliasOnlineService = r, this.alias = n
         }
       }
-      const i = Object.freeze({
-          pc: new o("pc", "PC Legacy", 8, "sc"),
-          ps: new o("ps", "PlayStation", 3, "np", "ps"),
-          ps3: new o("ps3", "PlayStation 3", 2, "np", "ps"),
-          ps4: new o("ps4", "PlayStation 4", 11, "np", "ps"),
-          ps5: new o("ps5", "PlayStation 5", 20, "np", "ps"),
-          xbox: new o("xbox", "Xbox", 4, "xbl"),
-          xbox360: new o("xbox360", "Xbox 360", 1, "xbl"),
-          xboxone: new o("xboxone", "Xbox One", 12, "xbl"),
-          xboxsx: new o("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
-          switch: new o("switch", "Nintendo Switch™", 18, "nintendoswitch"),
-          nintendoswitch: new o("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
-          applestore: new o("applestore", "App Store", 102, "applestore"),
-          googleplay: new o("googleplay", "Google Play", 1023, "googleplay"),
-          appStore: new o("app_store", "App Store", 102, "applestore"),
-          googlePlay: new o("ggle_play", "Google Play", 1023, "googleplay"),
-          pcalt: new o("pcalt", "PC Enhanced", 22, "sc")
+      const o = Object.freeze({
+          pc: new i("pc", "PC Legacy", 8, "sc"),
+          ps: new i("ps", "PlayStation", 3, "np", "ps"),
+          ps3: new i("ps3", "PlayStation 3", 2, "np", "ps"),
+          ps4: new i("ps4", "PlayStation 4", 11, "np", "ps"),
+          ps5: new i("ps5", "PlayStation 5", 20, "np", "ps"),
+          xbox: new i("xbox", "Xbox", 4, "xbl"),
+          xbox360: new i("xbox360", "Xbox 360", 1, "xbl"),
+          xboxone: new i("xboxone", "Xbox One", 12, "xbl"),
+          xboxsx: new i("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
+          switch: new i("switch", "Nintendo Switch™", 18, "nintendoswitch"),
+          nintendoswitch: new i("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
+          applestore: new i("applestore", "App Store", 102, "applestore"),
+          googleplay: new i("googleplay", "Google Play", 1023, "googleplay"),
+          appStore: new i("app_store", "App Store", 102, "applestore"),
+          googlePlay: new i("ggle_play", "Google Play", 1023, "googleplay"),
+          pcalt: new i("pcalt", "PC Enhanced", 22, "sc")
         }),
-        c = Object.freeze(Object.values(i));
+        c = Object.freeze(Object.values(o));
 
-      function d(e) {
+      function l(e) {
         if (!e) return;
-        if (e instanceof o) return e;
+        if (e instanceof i) return e;
         const a = e.toString().toLowerCase();
         return c.find(e => a === e.name || a === e.id.toString() || a === e.friendlyName.toLowerCase() || a === e.onlineService?.toLowerCase() || a === e.aliasOnlineService?.toLowerCase() || a === e.alias?.toLowerCase())
       }
-      var l = t(23058),
+      var d = t(23058),
         _ = t(77678);
       const m = e => {
           const a = document.cookie.split("; "),
@@ -4106,12 +4106,12 @@ try {
           return r
         },
         u = (e, a) => {
-          e && void 0 !== a && (0, l.canStoreCookie)(e) && m(e) !== a && (document.cookie = `${e}=${a}; domain=${(0,_.F)()}; path=/;`)
+          e && void 0 !== a && (0, d.canStoreCookie)(e) && m(e) !== a && (document.cookie = `${e}=${a}; domain=${(0,_.F)()}; path=/;`)
         };
       var g = t(87605);
       Object.values(g.d), g.d.BL;
-      var p = t(32118);
-      const b = e => e.keys().forEach(e),
+      var b = t(32118);
+      const p = e => e.keys().forEach(e),
         f = e => e.replace(/(<([^>]+)>)/gi, ""),
         k = [{
           key: "dev",
@@ -4140,8 +4140,8 @@ try {
             console.log(e)
           })
         },
-        y = () => [i.xbox360.name, i.xboxone.name, i.ps3.name, i.ps4.name, i.pc.name],
-        j = () => [i.xboxsx.name, i.ps5.name, i.pcalt.name],
+        y = () => [o.xbox360.name, o.xboxone.name, o.ps3.name, o.ps4.name, o.pc.name],
+        j = () => [o.xboxsx.name, o.ps5.name, o.pcalt.name],
         x = e => j().includes(e),
         w = e => {
           const a = new Map([
@@ -4180,40 +4180,40 @@ try {
       });
       var s = {};
       t.r(s), t.d(s, {
-        Art: () => is,
+        Art: () => os,
         Link: () => cs
       });
       var r = {};
       t.r(r), t.d(r, {
-        A: () => ba.A,
+        A: () => pa.A,
         AlertDialog: () => J,
         AudioPlayer: () => Xa,
         Badge: () => Ae,
-        Brands: () => V.A,
-        Button: () => Oa.A,
-        ButtonGroup: () => O.A,
-        CalloutSection: () => d.A,
-        Carousel: () => l.A,
+        Brands: () => O.A,
+        Button: () => Ba.A,
+        ButtonGroup: () => B.A,
+        CalloutSection: () => l.A,
+        Carousel: () => d.A,
         CharacterCard: () => Za,
         ConditionalBlock: () => h,
         CookieAB: () => st,
         CountryInputField: () => at,
         Cta: () => v.A,
-        DescriptionArea: () => ot.A,
-        DiscountsBadge: () => it.A,
-        DotLoader: () => dt,
+        DescriptionArea: () => it.A,
+        DiscountsBadge: () => ot.A,
+        DotLoader: () => lt,
         Dropdown: () => ut,
-        Embed: () => pt,
+        Embed: () => bt,
         ExpandingPlatformButton: () => S.A,
         FadeInContent: () => ft,
         FoundryButton: () => w,
         FoundryIconButton: () => N,
         Gen9Button: () => he.A,
         Gen9CoreCarousel: () => P.A,
-        Grid: () => I,
+        Grid: () => E,
         HTMLElement: () => H,
-        Hero: () => G,
-        HookStore: () => b,
+        Hero: () => V,
+        HookStore: () => p,
         ImageTextGroup: () => rt.A,
         ImageTextGroupGroup: () => nt.A,
         ImageWithBadge: () => ke.A,
@@ -4226,17 +4226,17 @@ try {
         NewswireList: () => zt,
         NewswireRelated: () => Mt,
         NewswireTag: () => St,
-        OrderedList: () => de.A,
-        Paging: () => Vt,
+        OrderedList: () => le.A,
+        Paging: () => Ot,
         ParallaxCacheBuster: () => ge,
         ParallaxInnerLayer: () => _e,
         ParallaxOuterLayer: () => ue,
-        ParallaxWrapper: () => be,
+        ParallaxWrapper: () => pe,
         PlatformTag: () => ws.Ay,
         PromoModule: () => je,
         Rating: () => xe.A,
-        ResponsiveFlexBox: () => Bt,
-        ResponsiveFlexItem: () => Gt,
+        ResponsiveFlexBox: () => Gt,
+        ResponsiveFlexItem: () => Vt,
         ResponsiveGridBox: () => Ht,
         ResponsiveGridItem: () => qt,
         ResponsiveImg: () => Kt,
@@ -4281,13 +4281,13 @@ try {
         ps5: () => Sr,
         right: () => Cr,
         switch: () => Tr,
-        x: () => Ir,
-        xbox: () => Er,
+        x: () => Er,
+        xbox: () => Ir,
         xboxone: () => zr,
         xboxseriesxs: () => Ar
       });
-      var o = {};
-      t.r(o), t.d(o, {
+      var i = {};
+      t.r(i), t.d(i, {
         Actions: () => Wr,
         Badge: () => qr,
         Button: () => Zr,
@@ -4296,42 +4296,42 @@ try {
         Description: () => Yr,
         Disclaimer: () => Xr,
         Footer: () => Fr,
-        Header: () => Gr,
+        Header: () => Vr,
         Heading: () => Kr,
         Image: () => Ur,
         LinkPSButton: () => en,
         LinkXBoxButton: () => Qr,
         Loading: () => an,
         PlatformButton: () => Jr,
-        Root: () => Br,
-        RootContext: () => Or
+        Root: () => Gr,
+        RootContext: () => Br
       });
-      var i = t(31879),
-        c = t.n(i),
-        d = t(30489),
-        l = t(75138),
+      var o = t(31879),
+        c = t.n(o),
+        l = t(30489),
+        d = t(75138),
         _ = t(39793),
         m = t(93082),
         u = t(36416),
         g = t(13331),
-        p = t(82199);
-      const b = (0, t(54472).FF)(),
+        b = t(82199);
+      const p = (0, t(54472).FF)(),
         f = e => e.some(e => !e),
         k = ({
           condition: e = null,
           children: a
         }) => {
           const [t, s] = (0, m.useState)(!1), r = (e => {
-            const [a] = (0, u.useSearchParams)(), [t, s] = (0, m.useState)(null), r = (0, p.useRockstarUser)(), {
+            const [a] = (0, u.useSearchParams)(), [t, s] = (0, m.useState)(null), r = (0, b.useRockstarUser)(), {
               loggedIn: n,
-              data: o
+              data: i
             } = r, {
-              hasGtaPlus: i
-            } = o ?? {};
+              hasGtaPlus: o
+            } = i ?? {};
             return (0, m.useEffect)(() => {
               const t = "true" === a.get("conditionPreview");
               if (!e?.length > 0) return;
-              b.applyFilters("preview_conditions", e);
+              p.applyFilters("preview_conditions", e);
               const r = [];
               return e.forEach(e => {
                 const {
@@ -4347,17 +4347,17 @@ try {
                     r.push(!1 === n);
                     break;
                   case "user:is:gtaPlus":
-                    r.push(!0 === i);
+                    r.push(!0 === o);
                     break;
                   case "user:not:gtaPlus":
-                    r.push(!1 === i || void 0 === i);
+                    r.push(!1 === o || void 0 === o);
                     break;
                   default:
                     r.push(!1)
                 }
                 return null
               }), s(!f(r)), () => {}
-            }, [a, e, i, r, n]), t
+            }, [a, e, o, r, n]), t
           })(e);
           return (0, m.useEffect)(() => {
             s(r)
@@ -4379,16 +4379,16 @@ try {
           href: s,
           target: r,
           justifySelf: n = "center",
-          ...o
-        }, i) {
+          ...i
+        }, o) {
           const c = (0, x.m)(a, "normal"),
-            d = (0, y.mergeProps)({
+            l = (0, y.mergeProps)({
               "data-testid": e,
               className: c
-            }, o);
+            }, i);
           return (0, _.jsx)(j.Button, {
-            ref: i,
-            ...d,
+            ref: o,
+            ...l,
             asChild: !0,
             children: (0, _.jsx)(u.Link, {
               to: s,
@@ -4407,14 +4407,14 @@ try {
           target: s,
           justifySelf: r = "center",
           ...n
-        }, o) {
-          const i = (0, x.m)(a, "normal"),
+        }, i) {
+          const o = (0, x.m)(a, "normal"),
             c = (0, y.mergeProps)({
               "data-testid": e,
-              className: i
+              className: o
             }, n);
           return (0, _.jsx)(j.IconButton, {
-            ref: o,
+            ref: i,
             ...c,
             asChild: !0,
             children: (0, _.jsx)(u.Link, {
@@ -4429,46 +4429,46 @@ try {
       var S = t(11251),
         C = t(25993),
         T = t(81270);
-      const I = ({
+      const E = ({
         children: e,
         context: a = null,
         game: t,
         image: s = {},
         style: r = {},
         template: n = null,
-        theme: o = null,
-        reversedOnMobile: i = !1,
+        theme: i = null,
+        reversedOnMobile: o = !1,
         className: c = "",
-        id: d = null
+        id: l = null
       }) => {
-        const l = (0, C.S1)(s ?? {}),
+        const d = (0, C.S1)(s ?? {}),
           m = {
             ...r
           };
-        if (l?.src?.desktop) {
+        if (d?.src?.desktop) {
           const e = (s?.style && s?.style["--background-image-size"]) ?? "var(--grid-background-size, cover)",
             a = (s?.style && s?.style["--background-image-repeat"]) ?? "var(--grid-background-repeat, no-repeat)",
             t = `var(--grid-background-position, center)/${e??"cover"}`;
-          if (m.background = `url(${l?.src?.desktop}) ${a} ${t}`, s?.style && s?.style["--linear-gradient"]) m.background = `linear-gradient(${s?.style["--linear-gradient"]}), url(${l?.src?.desktop}) ${a} ${t}`;
+          if (m.background = `url(${d?.src?.desktop}) ${a} ${t}`, s?.style && s?.style["--linear-gradient"]) m.background = `linear-gradient(${s?.style["--linear-gradient"]}), url(${d?.src?.desktop}) ${a} ${t}`;
           else if (s?.style && s?.style["--gradient-height"]) {
             const e = s?.style["--gradient-height"] || "3",
               r = s?.style["--gradient-start-color"] || "var(--background-color, transparent)",
               n = s?.style["--gradient-end-color"] || "var(--background-color, transparent)";
-            m.background = `linear-gradient(180deg, ${r}, transparent ${e}%, transparent ${100-e}%, ${n}), url(${l?.src?.desktop}) ${a} ${t}`
+            m.background = `linear-gradient(180deg, ${r}, transparent ${e}%, transparent ${100-e}%, ${n}), url(${d?.src?.desktop}) ${a} ${t}`
           }
         }
         return (0, _.jsx)("div", {
-          id: d,
-          className: (0, T.default)("rockstargames-sites-gta-gen9da87ead760b989fbe90a0b89c60b0653", i ? "rockstargames-sites-gta-gen9dfbda195073626bc6a7690dc73fba873" : "", c),
+          id: l,
+          className: (0, T.default)("rockstargames-sites-gta-gen9da87ead760b989fbe90a0b89c60b0653", o ? "rockstargames-sites-gta-gen9dfbda195073626bc6a7690dc73fba873" : "", c),
           "data-game": "community" === n ? null : t,
           style: (0, g.safeStyles)(m),
           "data-context": a,
           "data-template": n,
-          "data-theme": o,
+          "data-theme": i,
           children: e
         })
       };
-      var E = t(13517),
+      var I = t(13517),
         z = t(17301);
       const A = {
           visible: {
@@ -4574,14 +4574,14 @@ try {
             })
           }) : null
         };
-      var V = t(34242),
-        O = t(39707);
-      const B = ({
+      var O = t(34242),
+        B = t(39707);
+      const G = ({
           animated: e = !1,
           ctas: a = [],
           expandingButtonLabel: t = "Subscribe"
         }) => {
-          const [s, r] = (0, m.useState)([]), [n, o] = (0, m.useState)([]);
+          const [s, r] = (0, m.useState)([]), [n, i] = (0, m.useState)([]);
           return (0, m.useEffect)(() => {
             const {
               expandingButtonsArray: e,
@@ -4598,25 +4598,25 @@ try {
               expandingButtonsArray: [],
               plainButtonsArray: []
             });
-            r(e), o(t)
-          }, [a]), s.length ? (0, _.jsx)(E.motion.div, {
+            r(e), i(t)
+          }, [a]), s.length ? (0, _.jsx)(I.motion.div, {
             variants: e ? M : void 0,
             children: (0, _.jsx)(S.A, {
               variant: "gen9",
               buttonText: t,
               platformsAndLinks: s,
-              children: !!n.length && (0, _.jsx)(E.motion.div, {
+              children: !!n.length && (0, _.jsx)(I.motion.div, {
                 variants: M,
-                children: (0, _.jsx)(O.A, {
+                children: (0, _.jsx)(B.A, {
                   buttons: n,
                   className: L.buttonGroup
                 })
               })
             })
           }) : (0, _.jsx)(_.Fragment, {
-            children: !!n.length && (0, _.jsx)(E.motion.div, {
+            children: !!n.length && (0, _.jsx)(I.motion.div, {
               variants: M,
-              children: (0, _.jsx)(O.A, {
+              children: (0, _.jsx)(B.A, {
                 buttons: n,
                 className: L.buttonGroup
               })
@@ -4630,20 +4630,20 @@ try {
           ctas: s = [],
           description: r = "",
           expandingButtonLabel: n = "Subscribe",
-          legalText: o,
-          stackButtons: i,
+          legalText: i,
+          stackButtons: o,
           title: c = ""
-        }) => (0, _.jsxs)(E.motion.div, {
+        }) => (0, _.jsxs)(I.motion.div, {
           className: L.content,
           initial: "hidden",
           animate: "visible",
           variants: e ? A : void 0,
-          children: [(0, _.jsx)(E.motion.div, {
+          children: [(0, _.jsx)(I.motion.div, {
             variants: e ? M : void 0,
-            children: (0, _.jsx)(V.A, {
+            children: (0, _.jsx)(O.A, {
               brands: a
             })
-          }), (c || r) && (0, _.jsxs)(E.motion.div, {
+          }), (c || r) && (0, _.jsxs)(I.motion.div, {
             className: L.descriptions,
             variants: e ? M : void 0,
             children: [c && (0, _.jsx)("h2", {
@@ -4656,7 +4656,7 @@ try {
               }
             })]
           }), !!t.length && (0, _.jsx)("div", {
-            className: i ? L.verticalCtaBlock : L.ctaBlock,
+            className: o ? L.verticalCtaBlock : L.ctaBlock,
             children: (0, _.jsx)(z.TinaParser, {
               components: {
                 Cta: v.A,
@@ -4670,36 +4670,36 @@ try {
             })
           }), !!s.length && (0, _.jsx)("div", {
             className: L.ctaBlock,
-            children: (0, _.jsx)(B, {
+            children: (0, _.jsx)(G, {
               animated: e,
               ctas: s,
               expandingButtonLabel: n
             })
-          }), o && (0, _.jsx)(E.motion.div, {
+          }), i && (0, _.jsx)(I.motion.div, {
             className: L.legalText,
             variants: e ? M : void 0,
             children: (0, _.jsx)("p", {
               dangerouslySetInnerHTML: {
-                __html: o
+                __html: i
               }
             })
           })]
         }),
-        G = ({
+        V = ({
           animated: e = !1,
           backgroundImage: a,
           brands: t = [],
           className: s,
           ctas: r = [],
           cta: n,
-          description: o = "",
-          expandingButtonLabel: i = "Subscribe",
+          description: i = "",
+          expandingButtonLabel: o = "Subscribe",
           layeredImage: c,
-          layeredImageSettings: d,
-          legalText: l,
+          layeredImageSettings: l,
+          legalText: d,
           shardsSection: u,
-          stackButtons: p = !1,
-          theme: b = "gen9",
+          stackButtons: b = !1,
+          theme: p = "gen9",
           title: f = ""
         }) => {
           const {
@@ -4723,15 +4723,15 @@ try {
               if (t.has(s)) {
                 const e = t.get(s);
                 Object.entries(r).forEach(r => {
-                  const [n, o] = r;
+                  const [n, i] = r;
                   if (t.has(s) && t.has(n)) {
                     const s = `${t.get(n)}${e}`;
-                    a[s] = "imageWidth" !== n ? o ? `${o}px` : "0px" : o ? `${o}vw` : "100vw"
+                    a[s] = "imageWidth" !== n ? i ? `${i}px` : "0px" : i ? `${i}vw` : "100vw"
                   }
                 })
               }
             }), a
-          })(d), j = (0, z.useGetCdnSource)(a?.mobile?.full_src ?? null), x = (0, z.useGetCdnSource)(a?.desktop?.full_src ?? j), w = (0, z.useGetCdnSource)(c?.mobile?.full_src ?? null), N = (0, z.useGetCdnSource)(c?.desktop?.full_src ?? w), S = (0, m.useMemo)(() => {
+          })(l), j = (0, z.useGetCdnSource)(a?.mobile?.full_src ?? null), x = (0, z.useGetCdnSource)(a?.desktop?.full_src ?? j), w = (0, z.useGetCdnSource)(c?.mobile?.full_src ?? null), N = (0, z.useGetCdnSource)(c?.desktop?.full_src ?? w), S = (0, m.useMemo)(() => {
             const {
               mobileStyle: e,
               desktopStyle: t,
@@ -4742,7 +4742,7 @@ try {
               ...h >= v ? (0, g.safeStyles)(t) : (0, g.safeStyles)(e)
             }
           }, [h, a?.style, a?.mobileStyle, a?.desktopStyle]);
-          return (0, _.jsxs)(E.motion.div, {
+          return (0, _.jsxs)(I.motion.div, {
             className: (0, T.default)(L.hero, s),
             style: {
               "--background-image-desktop": `url(${x})`,
@@ -4754,7 +4754,7 @@ try {
             animate: "visible",
             variants: e ? A : void 0,
             "data-type": "hero",
-            theme: b,
+            theme: p,
             children: [(0, _.jsxs)("div", {
               className: L.images,
               children: [x && j ? (0, _.jsx)("div", {
@@ -4762,7 +4762,7 @@ try {
                 style: S ?? {}
               }) : "", w && N ? (0, _.jsx)("div", {
                 className: L.layered,
-                style: d ? y : {}
+                style: l ? y : {}
               }) : "", (0, _.jsx)("div", {
                 className: L.gradient
               })]
@@ -4771,10 +4771,10 @@ try {
               brands: t,
               cta: n,
               ctas: r,
-              description: o,
-              expandingButtonLabel: i,
-              legalText: l,
-              stackButtons: p,
+              description: i,
+              expandingButtonLabel: o,
+              legalText: d,
+              stackButtons: b,
               title: f
             }), u?.shards && (0, _.jsx)(D, {
               shards: u.shards
@@ -4821,20 +4821,20 @@ try {
             buttonIcon: s,
             buttonText: r,
             extraClasses: n,
-            isDisabled: o,
-            isLink: i,
+            isDisabled: i,
+            isLink: o,
             link: c,
-            onClick: d,
-            testId: l
+            onClick: l,
+            testId: d
           } = e;
-          return i ? r && (0, _.jsx)(j.Button, {
+          return o ? r && (0, _.jsx)(j.Button, {
             asChild: !0,
             appearance: t,
             size: "LG",
             children: (0, _.jsx)("a", {
               href: c,
-              ...l && {
-                "data-testid": l
+              ...d && {
+                "data-testid": d
               },
               children: r
             })
@@ -4842,16 +4842,16 @@ try {
             autoFocus: !0,
             iconRight: s,
             className: (0, T.default)(n),
-            isDisabled: o,
+            isDisabled: i,
             onPress: e => (e => {
-              d && d(), a && a(), "function" == typeof e?.stopPropagation && e?.stopPropagation()
+              l && l(), a && a(), "function" == typeof e?.stopPropagation && e?.stopPropagation()
             })(e),
             type: "button",
             appearance: t,
             size: "LG",
             "aria-label": r,
-            ...l && {
-              "data-testid": l
+            ...d && {
+              "data-testid": d
             },
             children: r
           })
@@ -4878,18 +4878,18 @@ try {
           buttons: s,
           showDialog: r,
           onClose: n = () => {},
-          closeOnOutsideClick: o = !0,
-          extraClasses: i
+          closeOnOutsideClick: i = !0,
+          extraClasses: o
         }) => {
           const c = (0, m.useRef)(null),
             {
-              setBodyIsLocked: d
+              setBodyIsLocked: l
             } = (0, g.useBodyScrollable)("AlertDialog");
           (0, m.useEffect)(() => {
-            r && c?.current && (c.current?.showModal?.(), d(!0))
+            r && c?.current && (c.current?.showModal?.(), l(!0))
           }, [r]);
-          const l = () => {
-            d(!1), n(), c.current?.close?.()
+          const d = () => {
+            l(!1), n(), c.current?.close?.()
           };
           if (r) return (0, _.jsxs)("dialog", {
             ref: c,
@@ -4897,18 +4897,18 @@ try {
             onClick: e => (e => {
               if (!e.currentTarget) return;
               const a = e.currentTarget.getBoundingClientRect();
-              (a.left > e.clientX || a.right < e.clientX || a.top > e.clientY || a.bottom < e.clientY) && o && (d(!1), n(), e.currentTarget.close())
+              (a.left > e.clientX || a.right < e.clientX || a.top > e.clientY || a.bottom < e.clientY) && i && (l(!1), n(), e.currentTarget.close())
             })(e),
             "data-testid": "alert-dialog",
             children: [e && (0, _.jsx)("i", {
               className: [Z.icon, Z[e]].join(" ")
             }), (0, _.jsxs)("div", {
-              className: [Z.content, i?.content].join(" "),
+              className: [Z.content, o?.content].join(" "),
               children: [(0, _.jsx)("h3", {
-                className: [Z.heading, i?.heading].join(" "),
+                className: [Z.heading, o?.heading].join(" "),
                 children: a
               }), t && (0, _.jsx)("div", {
-                className: [Z.message, i?.message].join(" "),
+                className: [Z.message, o?.message].join(" "),
                 dangerouslySetInnerHTML: {
                   __html: t
                 }
@@ -4918,7 +4918,7 @@ try {
               children: s.slice(0, 2).map((e, a) => (0, _.jsx)(X, {
                 style: e?.style ?? (0 === a ? "primary" : "secondary"),
                 button: e,
-                closeDialog: l
+                closeDialog: d
               }, e.buttonText))
             })]
           })
@@ -5056,34 +5056,34 @@ try {
           handleSubscribeButton: s,
           isButtonLoading: r,
           showDialog: n,
-          setShowDialog: o,
-          dialog: i,
+          setShowDialog: i,
+          dialog: o,
           isSubscribed: c,
-          variant: d
+          variant: l
         }) => {
-          const [l, g] = (0, m.useState)(!1), b = (0, U.useIntl)(), {
+          const [d, g] = (0, m.useState)(!1), p = (0, U.useIntl)(), {
             track: f
-          } = (0, p.useGtmTrack)(), {
+          } = (0, b.useGtmTrack)(), {
             ref: k,
             inView: h
           } = (0, W.useInView)({
             threshold: .6
-          }), v = i?.buttons || [{
-            buttonText: b.formatMessage(Q.ns_ok_button_text),
+          }), v = o?.buttons || [{
+            buttonText: p.formatMessage(Q.ns_ok_button_text),
             onClick: () => {
-              o(!1)
+              i(!1)
             },
             testId: "ok-btn",
             style: "secondary"
           }, {
-            buttonText: i?.showManagePreferences ? b.formatMessage(Q.ns_manage_prefs_button_text) : "",
+            buttonText: o?.showManagePreferences ? p.formatMessage(Q.ns_manage_prefs_button_text) : "",
             isLink: !0,
             link: t.preferences,
             testId: "preferences-btn",
             style: "ghost"
           }];
           return (0, m.useEffect)(() => {
-            h && !l && (f({
+            h && !d && (f({
               event: "page_section_impression",
               section_layout: a ? "signed in" : "signed out",
               element_placement: "newsletter subscribe"
@@ -5106,7 +5106,7 @@ try {
                       children: [(0, _.jsx)(j.Heading, {
                         level: 5,
                         className: [ee.heading, ee.fadeIn].join(" "),
-                        children: "twitchdrops" === d ? (0, _.jsx)(U.FormattedMessage, {
+                        children: "twitchdrops" === l ? (0, _.jsx)(U.FormattedMessage, {
                           ...Q.ns_cta_title_twitchdrops
                         }) : (0, _.jsx)(U.FormattedMessage, {
                           ...Q.ns_cta_title
@@ -5156,18 +5156,18 @@ try {
                   })
                 })
               })
-            }), i && (0, _.jsx)(J, {
-              icon: i.icon,
-              title: b.formatMessage(i.heading),
-              secondaryText: b.formatMessage(i.bodyText),
-              closeOnOutsideClick: i.closeOnOutsideClick,
+            }), o && (0, _.jsx)(J, {
+              icon: o.icon,
+              title: p.formatMessage(o.heading),
+              secondaryText: p.formatMessage(o.bodyText),
+              closeOnOutsideClick: o.closeOnOutsideClick,
               buttons: [{
                 ...v[0]
               }, {
                 ...v[1]
               }],
               showDialog: n,
-              onClose: () => o(!1)
+              onClose: () => i(!1)
             })]
           })
         },
@@ -5225,27 +5225,27 @@ try {
           value: (0, g.makeVar)(void 0)
         }),
         ne = e => re(e),
-        oe = (e, a) => {
-          const [t, s] = (0, m.useState)(), [r, n] = (0, m.useState)(!1), [o, i] = (0, m.useState)(!1), [c, d] = (0, m.useState)(!1), [l, _] = (0, m.useState)(!1), u = (0, g.useReactiveVar)(re), b = (0, U.useIntl)(), {
+        ie = (e, a) => {
+          const [t, s] = (0, m.useState)(), [r, n] = (0, m.useState)(!1), [i, o] = (0, m.useState)(!1), [c, l] = (0, m.useState)(!1), [d, _] = (0, m.useState)(!1), u = (0, g.useReactiveVar)(re), p = (0, U.useIntl)(), {
             track: f
-          } = (0, p.useGtmTrack)(), k = {
+          } = (0, b.useGtmTrack)(), k = {
             preferences: `https://${e.www}.rockstargames.com/account/communications`,
             auth: `${e.login}?returnUrl=${window.location.pathname}%3Fmarketing%3Dtrue&lang=${e.lang}&newsletter=true`
           }, h = e => {
-            s(e), i(!0), d(!1)
+            s(e), o(!0), l(!1)
           }, v = {
             ...te.NEW_ACCOUNT,
             closeOnOutsideClick: !1,
             buttons: [{
-              buttonText: b.formatMessage(Q.ns_yes_subscribe_text),
+              buttonText: p.formatMessage(Q.ns_yes_subscribe_text),
               style: "monochrome",
               onClick: () => {
                 y()
               }
             }, {
-              buttonText: b.formatMessage(Q.ns_go_back_text),
+              buttonText: p.formatMessage(Q.ns_go_back_text),
               onClick: () => {
-                s(null), i(!1)
+                s(null), o(!1)
               }
             }]
           }, y = async () => (f({
@@ -5302,11 +5302,11 @@ try {
               await (async () => {
                 a.loggedIn ? await (async () => {
                   if (-1 === u) return;
-                  ne(-1), d(!0);
+                  ne(-1), l(!0);
                   const t = await (0, g.coreScApiFetch)("marketing/status", {
                     pingBearer: a.pingBearer
                   });
-                  if (!t || t.error) ne(0), d(!1);
+                  if (!t || t.error) ne(0), l(!1);
                   else {
                     const s = t.result.status;
                     ne(s), a.isFromAuth && (t => {
@@ -5341,26 +5341,26 @@ try {
                             element_placement: "newsletter subscribe"
                           })) : j()
                       }
-                    })(s), d(!1)
+                    })(s), l(!1)
                   }
-                })() : !1 === a.loggedIn && d(!1)
+                })() : !1 === a.loggedIn && l(!1)
               })()
             })()
           }, [a.loggedIn]), {
             dialog: t,
             handleSubscribeButton: y,
-            isButtonLoading: l,
+            isButtonLoading: d,
             isLoading: c,
             isSubscribed: r,
-            setShowDialog: i,
-            showDialog: o,
+            setShowDialog: o,
+            showDialog: i,
             subscriptionStatus: u,
             urls: k,
             setDialog: s
           }
         };
-      var ie = t(30433);
-      const ce = (0, ie.g)(() => {
+      var oe = t(30433);
+      const ce = (0, oe.g)(() => {
         const e = (0, g.useRockstarTokenPing)(),
           a = (0, q.A)(),
           [{
@@ -5371,29 +5371,29 @@ try {
             login: r
           } = (0, g.getConfigForDomain)(),
           [n] = (0, u.useSearchParams)(),
-          o = (0, u.useNavigate)(),
-          i = (0, u.useLocation)(),
+          i = (0, u.useNavigate)(),
+          o = (0, u.useLocation)(),
           {
             loggedIn: c,
-            data: d,
-            loading: l
-          } = (0, p.useRockstarUser)(),
+            data: l,
+            loading: d
+          } = (0, b.useRockstarUser)(),
           m = "true" === n.get("marketing"),
-          b = {
+          p = {
             lang: s,
-            location: i.pathname,
+            location: o.pathname,
             login: r,
-            navigate: o,
+            navigate: i,
             www: a.sites.www
           },
           f = {
-            ...d,
+            ...l,
             isFromAuth: m || !1,
             loggedIn: c,
             pingBearer: e,
-            userLoading: l
+            userLoading: d
           },
-          k = oe(b, f),
+          k = ie(p, f),
           {
             dialog: h,
             setDialog: v,
@@ -5409,7 +5409,7 @@ try {
           children: (0, _.jsx)(ae, {
             handleSubscribeButton: y,
             loggedIn: c || !1,
-            loading: l || x,
+            loading: d || x,
             urls: C,
             isButtonLoading: j,
             setShowDialog: N,
@@ -5421,8 +5421,8 @@ try {
           })
         })
       });
-      var de = t(28851),
-        le = t(14143);
+      var le = t(28851),
+        de = t(14143);
       const _e = ({
           layers: e = [],
           displayClass: a = "",
@@ -5440,7 +5440,7 @@ try {
             style: void 0,
             image: s(e?.image ?? null)
           }));
-          return (0, _.jsx)(le.y, {
+          return (0, _.jsx)(de.y, {
             className: (0, T.default)("rockstargames-sites-gta-gen9c1c689cf47230fa80bccc9b20515d4fa", a),
             layers: r,
             style: t
@@ -5454,12 +5454,12 @@ try {
           displayClass: s = "",
           style: r = {},
           children: n
-        }) => "horizontal" === t ? (0, _.jsx)(le.kQ, {
+        }) => "horizontal" === t ? (0, _.jsx)(de.kQ, {
           x: [e, a],
           className: (0, T.default)(me, s),
           styleOuter: r,
           children: n
-        }) : (0, _.jsx)(le.kQ, {
+        }) : (0, _.jsx)(de.kQ, {
           y: [e, a],
           className: (0, T.default)(me, s),
           styleOuter: r,
@@ -5470,7 +5470,7 @@ try {
         }) => {
           const {
             parallaxController: a
-          } = (0, le.as)();
+          } = (0, de.as)();
           return (0, m.useLayoutEffect)(() => {
             if (!a) return;
             const e = setInterval(() => {
@@ -5479,22 +5479,22 @@ try {
             return () => clearInterval(e)
           }, [a]), e
         },
-        pe = {
+        be = {
           large: "rockstargames-sites-gta-gen9e15ce487b25ba576b6e2b31df308098f",
           medium: "rockstargames-sites-gta-gen9dfdaa6f63f8e8bd10576fa2debcbc1fc",
           parallaxWrapper: "rockstargames-sites-gta-gen9e30c08cf0e042f7fc7bed0c23c0bfb31",
           small: "rockstargames-sites-gta-gen9c32a973dbc862a43cc5d4a2aac19ed9b"
         },
-        be = ({
+        pe = ({
           scrollAxis: e = "vertical",
           size: a = "",
           style: t = {},
           children: s
-        }) => (0, _.jsx)(le.zE, {
+        }) => (0, _.jsx)(de.zE, {
           scrollAxis: e,
           children: (0, _.jsx)(ge, {
             children: (0, _.jsx)("div", {
-              className: (0, T.default)(pe.parallaxWrapper, pe[a]),
+              className: (0, T.default)(be.parallaxWrapper, be[a]),
               style: t,
               "data-context": "parallax-wrapper",
               children: s ? s.map((a, t) => (0, m.cloneElement)(a, {
@@ -5533,13 +5533,13 @@ try {
           ctaLabel: s,
           ctaLink: r = "https://rockstargames.com",
           gradient: n = !0,
-          image: o,
-          promoImg: i = ye,
+          image: i,
+          promoImg: o = ye,
           imageOrientation: c = "right",
-          title: d = "",
-          name: l = "",
+          title: l = "",
+          name: d = "",
           style: u,
-          imageStyle: b,
+          imageStyle: p,
           _memoq: f
         }) => {
           const [k, h] = (0, m.useState)(!1), {
@@ -5551,23 +5551,23 @@ try {
             isMobile: j
           } = (0, g.useWindowResize)(), {
             track: x
-          } = (0, p.useGtmTrack)(), w = (0, z.useImageParser)(i), N = (0, z.useGetCdnSource)(o), S = j ? w?.src?.mobile : w?.src?.desktop, C = w?.alt ?? "", T = {
+          } = (0, b.useGtmTrack)(), w = (0, z.useImageParser)(o), N = (0, z.useGetCdnSource)(i), S = j ? w?.src?.mobile : w?.src?.desktop, C = w?.alt ?? "", T = {
             ...u,
             "--promo-background": e ?? "var(--black-200)",
             "--promo-image": `url(${S??N??"var(--promo-background)"})`,
             "--promo-order": "left" === c ? "row" : "row-reverse"
-          }, I = {
-            ...b
+          }, E = {
+            ...p
           };
           return (0, m.useEffect)(() => {
             y && !k && (x({
               event: "page_section_impression",
-              element_placement: l?.toLowerCase()
+              element_placement: d?.toLowerCase()
             }), h(!0))
           }, [y]), (0, _.jsx)(_.Fragment, {
             children: (0, _.jsx)("div", {
               className: ve.promoModuleWrapper,
-              children: (0, _.jsxs)(E.motion.div, {
+              children: (0, _.jsxs)(I.motion.div, {
                 className: ve.promoModule,
                 style: {
                   ...T
@@ -5592,16 +5592,16 @@ try {
                   "aria-label": C,
                   className: [ve.promoModuleImage, n ? ve.gradient : "", "left" === c ? ve.left : ve.right].join(" "),
                   style: {
-                    ...I
+                    ...E
                   }
                 }), (0, _.jsxs)("div", {
                   className: ve.promoModuleContentContainer,
-                  children: [(0, _.jsx)(V.A, {
+                  children: [(0, _.jsx)(O.A, {
                     brands: a
                   }), (0, _.jsxs)("div", {
                     className: ve.promoModuleTextContent,
-                    children: [d && (0, _.jsx)("h3", {
-                      children: d
+                    children: [l && (0, _.jsx)("h3", {
+                      children: l
                     }), t && (0, _.jsx)("p", {
                       children: t
                     })]
@@ -5644,13 +5644,13 @@ try {
         }) => {
           const {
             track: r
-          } = (0, p.useGtmTrack)(), {
+          } = (0, b.useGtmTrack)(), {
             loggedIn: n
-          } = (0, p.useRockstarUser)(), {
-            refetch: o
+          } = (0, b.useRockstarUser)(), {
+            refetch: i
           } = (0, g.useQuery)(we.UserGetVote, {
             skip: !0
-          }), [i] = (0, g.useMutation)(we.UserCastVote), [c, d] = (0, m.useState)(null), l = (0, m.useCallback)(async e => {
+          }), [o] = (0, g.useMutation)(we.UserCastVote), [c, l] = (0, m.useState)(null), d = (0, m.useCallback)(async e => {
             r({
               event: "cta_" + (e ? "like" : "dislike"),
               text: `${t} ${a}`
@@ -5660,19 +5660,19 @@ try {
                 foreign_type: t,
                 vote: e
               },
-              n = await i({
+              n = await o({
                 variables: s
               });
-            d(n?.data?.userCastVote?.vote ?? null)
+            l(n?.data?.userCastVote?.vote ?? null)
           }, [a, t]);
           return (0, m.useEffect)(() => {
             (async () => {
               if (!n || !a || !t) return;
-              const e = await o({
+              const e = await i({
                 foreign_id: a,
                 foreign_type: t
               });
-              d(e?.data?.userGetVote?.vote ?? null)
+              l(e?.data?.userGetVote?.vote ?? null)
             })()
           }, [a, t, n]), (0, _.jsx)("div", {
             className: Ne.userVote,
@@ -5688,13 +5688,13 @@ try {
               }), (0, _.jsxs)("div", {
                 className: [Ne.voteButtons, n ? "" : Ne.loggedOutButtons].join(" "),
                 children: [(0, _.jsx)("button", {
-                  onClick: () => l(!0),
+                  onClick: () => d(!0),
                   className: [Ne.upVote, c ? Ne.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, _.jsx)("button", {
                   className: [Ne.downVote, !1 === c ? Ne.voteButtonActive : ""].join(" "),
-                  onClick: () => l(!1),
+                  onClick: () => d(!1),
                   type: "button",
                   "aria-label": "Vote down"
                 })]
@@ -5704,45 +5704,45 @@ try {
         };
       var Ce = t(32255),
         Te = t(28097),
-        Ie = t(72527);
-      const Ee = (e = [], a, t) => {
+        Ee = t(72527);
+      const Ie = (e = [], a, t) => {
           const s = (0, m.useRef)(null),
             r = (0, m.useRef)(new Set),
             n = (0, m.useRef)([]),
-            o = (0, m.useRef)(0),
             i = (0, m.useRef)(0),
+            o = (0, m.useRef)(0),
             c = (0, m.useRef)(!1),
-            d = (0, m.useMemo)(() => Array.from(new Set(e.filter(e => e >= 0 && e <= 100))).sort((e, a) => e - a), [e]);
+            l = (0, m.useMemo)(() => Array.from(new Set(e.filter(e => e >= 0 && e <= 100))).sort((e, a) => e - a), [e]);
           return (0, m.useEffect)(() => {
-            r.current = new Set, n.current = d.slice()
-          }, [d]), (0, m.useEffect)(() => {
+            r.current = new Set, n.current = l.slice()
+          }, [l]), (0, m.useEffect)(() => {
             s.current = t ?? window
           }, [t]), (0, m.useEffect)(() => {
             const e = s.current;
             if (!e) return;
-            const d = () => {
+            const l = () => {
               c.current || (c.current = !0, requestAnimationFrame(() => {
                 (() => {
                   const {
                     scrollTop: s,
                     scrollHeight: c,
-                    percent: l
+                    percent: d
                   } = (() => {
                     const e = t,
                       a = document.documentElement,
                       s = document.body,
                       r = e ? e.scrollTop : a.scrollTop || s.scrollTop || window.scrollY || 0,
                       n = e ? e.scrollHeight : a.scrollHeight || s.scrollHeight || 0,
-                      o = e ? e.clientHeight : a.clientHeight || window.innerHeight || 0,
-                      i = Math.max(1, n - o);
+                      i = e ? e.clientHeight : a.clientHeight || window.innerHeight || 0,
+                      o = Math.max(1, n - i);
                     return {
                       scrollTop: r,
                       scrollHeight: n,
-                      percent: Math.max(0, Math.min(100, r / i * 100))
+                      percent: Math.max(0, Math.min(100, r / o * 100))
                     }
                   })();
-                  o.current = l, i.current = s;
-                  const _ = n.current.find(e => l >= e);
+                  i.current = d, o.current = s;
+                  const _ = n.current.find(e => d >= e);
                   if (!_) return;
                   if (r.current.has(_)) return;
                   r.current.add(_), n.current = n.current.filter(e => e !== _);
@@ -5750,22 +5750,22 @@ try {
                   a?.({
                     scrollY: _,
                     scrollLength: m
-                  }), 0 === n.current.length && e.removeEventListener("scroll", d, {
+                  }), 0 === n.current.length && e.removeEventListener("scroll", l, {
                     capture: !1
                   })
                 })(), c.current = !1
               }))
             };
-            return d(), e.addEventListener("scroll", d, {
+            return l(), e.addEventListener("scroll", l, {
               passive: !0
             }), () => {
-              e.removeEventListener("scroll", d, {
+              e.removeEventListener("scroll", l, {
                 capture: !1
               })
             }
-          }, [a, t, d.join(",")]), {
-            scrollY: o.current,
-            scrollLength: i.current
+          }, [a, t, l.join(",")]), {
+            scrollY: i.current,
+            scrollLength: o.current
           }
         },
         ze = ({
@@ -5775,8 +5775,8 @@ try {
         }) => {
           const {
             track: s
-          } = (0, p.useGtmTrack)();
-          return Ee(e, ({
+          } = (0, b.useGtmTrack)();
+          return Ie(e, ({
             scrollY: e,
             scrollLength: a
           }) => {
@@ -5820,29 +5820,29 @@ try {
         } = Te,
         {
           variants: De,
-          transitions: Ve
+          transitions: Oe
         } = Re,
-        Oe = ({
+        Be = ({
           title: e,
           hasTag: a,
           tag: t,
           hasDescription: s,
           description: r,
           fadesOut: n = !1,
-          badges: o
+          badges: i
         }) => (0, _.jsx)(Le, {
           initial: De.fade.out.initial,
           animate: {
             opacity: n ? 0 : 1
           },
-          transition: Ve.fade,
+          transition: Oe.fade,
           className: Pe.textOverlay,
           children: (0, _.jsxs)("div", {
             className: Pe.content,
             children: [(0, _.jsx)(Me, {
               hasTag: a,
               tag: t,
-              badges: o?.filter(e => e?.isPrimary)
+              badges: i?.filter(e => e?.isPrimary)
             }), (0, _.jsx)("h3", {
               children: e
             }), s && r && (0, _.jsx)("div", {
@@ -5851,7 +5851,7 @@ try {
             })]
           })
         }),
-        Be = (0, U.defineMessages)({
+        Ge = (0, U.defineMessages)({
           card_label_platforms: {
             id: "card_label_platforms",
             description: "The aria label used for cards when they have platforms.",
@@ -5920,16 +5920,16 @@ try {
           tag: s,
           tagStyle: r,
           discountPrice: n,
-          originalPrice: o,
-          setPricingContainerHeight: i = null
+          originalPrice: i,
+          setPricingContainerHeight: o = null
         }) => {
           const c = (0, m.createRef)(),
             {
-              formatMessage: d
+              formatMessage: l
             } = (0, U.useIntl)();
           return (0, m.useEffect)(() => {
             const e = () => {
-              c.current && null !== i && i(c.current.clientHeight)
+              c.current && null !== o && o(c.current.clientHeight)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -5950,17 +5950,17 @@ try {
               }), (0, _.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9cdaaa9655747e4d129d6c22080bdd33d",
                 children: n
-              }), o && (0, _.jsx)("span", {
+              }), i && (0, _.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9d2cd2139f671e2976f60b0002f59fd77",
-                children: d(Be.card_sr_only_discount_label)
+                children: l(Ge.card_sr_only_discount_label)
               }), (0, _.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9af3db4eb6d14c1f4ee5689b4e6386715",
-                children: o
+                children: i
               })]
             })]
           })
         };
-      var Ge = t(80391),
+      var Ve = t(80391),
         Fe = t(28985),
         He = t(47240),
         Ue = t(81715),
@@ -5971,7 +5971,7 @@ try {
       const Xe = {
           ps5: He,
           ps4: Fe,
-          ps: Ge,
+          ps: Ve,
           xboxone: qe,
           xbox: We,
           xboxseriesxs: Ue,
@@ -5988,17 +5988,17 @@ try {
           setPricingContainerHeight: r = () => {},
           expandedView: n
         }) => {
-          const o = (0, m.createRef)();
+          const i = (0, m.createRef)();
           return (0, m.useEffect)(() => {
             const e = () => {
-              o.current && null !== r && r(o.current.clientHeight)
+              i.current && null !== r && r(i.current.clientHeight)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }, [o]), (0, _.jsxs)("div", {
+          }, [i]), (0, _.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9ee81f54f31ab2cd10a67313b9689bf96",
-            ref: o,
+            ref: i,
             "data-show-background": t,
             "data-show-platforms": !n,
             children: [a && (0, _.jsx)("span", {
@@ -6031,57 +6031,57 @@ try {
           expandedView: s = !1,
           children: r,
           pricingOptions: n,
-          setPricingContainerHeight: o,
-          isCoverCard: i = !1,
+          setPricingContainerHeight: i,
+          isCoverCard: o = !1,
           platformOptions: c
         }) => {
-          const [d] = (({
+          const [l] = (({
             hasTextOverlay: e,
             tag: a,
             collapsedHasTag: t,
             description: s,
             collapsedHasDescription: r,
             size: n,
-            title: o,
-            expandedView: i,
+            title: i,
+            expandedView: o,
             badges: c
           }) => {
-            const [d, l] = (0, m.useState)(null), u = (0, m.useMemo)(() => {
+            const [l, d] = (0, m.useState)(null), u = (0, m.useMemo)(() => {
               if (!e) return null;
-              const d = "sm" !== n && r;
-              return (0, _.jsx)(Oe, {
-                title: o,
+              const l = "sm" !== n && r;
+              return (0, _.jsx)(Be, {
+                title: i,
                 hasTag: t,
                 tag: a,
-                hasDescription: d,
+                hasDescription: l,
                 description: s,
-                fadesOut: i,
+                fadesOut: o,
                 badges: c
               })
-            }, [e, a, t, s, r, n, o, i, c]);
+            }, [e, a, t, s, r, n, i, o, c]);
             return (0, m.useEffect)(() => {
-              l(u)
-            }, [u]), [d, l]
+              d(u)
+            }, [u]), [l, d]
           })({
             ...e,
             size: t,
             title: a,
             expandedView: s
-          }), l = void 0 !== n?.hasPricingOptions || null !== c;
+          }), d = void 0 !== n?.hasPricingOptions || null !== c;
           return (0, _.jsxs)("header", {
             className: "rockstargames-sites-gta-gen9cab36c59e0808c47183ef125bd12c511",
-            "data-is-covercard": i,
+            "data-is-covercard": o,
             "data-expanded-view": s,
             children: [m.Children.map(r, e => (0, m.cloneElement)(e, {
               title: a,
               size: t,
               expandedView: s
-            })), d, l && (0, _.jsxs)(_.Fragment, {
+            })), l, d && (0, _.jsxs)(_.Fragment, {
               children: [!0 === c?.hasPlatformOptions && (0, _.jsx)(Ze, {
                 title: a,
                 platformOptions: c,
                 pricingOptions: n,
-                setPricingContainerHeight: o,
+                setPricingContainerHeight: i,
                 expandedView: s
               }), !0 === n?.hasPricingOptions && (0, _.jsx)($e, {
                 title: a,
@@ -6089,7 +6089,7 @@ try {
                 tagStyle: n?._memoq?.tagStyle || "free",
                 discountPrice: n?._memoq?.discountPrice,
                 originalPrice: n?._memoq?.originalPrice,
-                setPricingContainerHeight: o
+                setPricingContainerHeight: i
               })]
             })]
           })
@@ -6108,14 +6108,14 @@ try {
           size: s,
           title: r,
           initial: n = "initial",
-          animate: o = "animate",
-          variants: i,
+          animate: i = "animate",
+          variants: o,
           type: c = null,
-          context: d = null,
-          textOverlayProps: l,
+          context: l = null,
+          textOverlayProps: d,
           className: u,
-          children: p,
-          theme: b = "none",
+          children: b,
+          theme: p = "none",
           id: f,
           pricingOptions: k,
           pricingContainerHeight: h,
@@ -6129,13 +6129,13 @@ try {
               tag: N,
               expandedHasTag: S,
               badges: C
-            } = l;
+            } = d;
           (0, F.set)(a, "meta.prod", t);
-          const I = p?.props?.images.length > 0;
-          let E = (0, _.jsx)("h1", {
+          const E = b?.props?.images.length > 0;
+          let I = (0, _.jsx)("h1", {
             children: r
           });
-          return v && (E = null), (0, m.useEffect)(() => {
+          return v && (I = null), (0, m.useEffect)(() => {
             const e = () => {
               x.current && x.current.scrollTop > 0 && window.innerWidth >= window.innerHeight && (x.current.scrollTop = 0)
             };
@@ -6149,33 +6149,33 @@ try {
               children: (0, _.jsxs)(Qe, {
                 ref: x,
                 initial: n,
-                animate: o,
-                variants: i.expanded,
+                animate: i,
+                variants: o.expanded,
                 transition: aa.cardOpen,
                 className: (0, T.default)("rockstargames-sites-gta-gen9c2289ce1bf0de6ad8a4a8ce7e90a4b66", u),
                 "data-type": c,
                 "data-size": s,
                 "data-product": j,
                 "data-covercard": v || !1,
-                "data-context": d,
+                "data-context": l,
                 style: {
                   "--product-card-pricing-info-height": `${h||0}px`
                 },
-                children: [I && (0, _.jsx)(Je, {
+                children: [E && (0, _.jsx)(Je, {
                   size: s,
                   title: r,
-                  textOverlayProps: l,
+                  textOverlayProps: d,
                   expandedView: !0,
                   pricingOptions: k,
                   platformOptions: y,
                   isCoverCard: v,
-                  children: p
+                  children: b
                 }), (0, _.jsxs)(Qe, {
                   ref: w,
                   className: "rockstargames-sites-gta-gen9e461568802b56e8c21b8b82d9c3a1fb4",
-                  variants: i.expandedContents,
+                  variants: o.expandedContents,
                   transition: aa.afterCardOpen,
-                  "data-theme": b,
+                  "data-theme": p,
                   tabindex: -1,
                   children: [(0, _.jsxs)("div", {
                     className: "rockstargames-sites-gta-gen9c4c35e83dbf962aa44c3f94b313361b3",
@@ -6183,7 +6183,7 @@ try {
                       hasTag: S,
                       tag: N,
                       badges: C
-                    }), E, j && (0, _.jsxs)(_.Fragment, {
+                    }), I, j && (0, _.jsxs)(_.Fragment, {
                       children: [!0 === y?.hasPlatformOptions && (0, _.jsx)("div", {
                         className: "rockstargames-sites-gta-gen9cd635452588eda421bdea19f00660efc",
                         children: (0, _.jsx)(Me, {
@@ -6221,17 +6221,17 @@ try {
           size: s = "md",
           sectionTitle: r = "",
           expandedType: n = null,
-          modalProps: o = {
+          modalProps: i = {
             content: null,
             className: "",
             contentClassName: ""
           },
-          className: i,
+          className: o,
           children: c,
-          isProductCard: d,
-          cardIds: l = null,
+          isProductCard: l,
+          cardIds: d = null,
           theme: g = "none",
-          isCoverCard: b,
+          isCoverCard: p,
           platformOptions: f,
           pricingOptions: k
         }) => {
@@ -6240,35 +6240,35 @@ try {
             formatList: v
           } = (0, U.useIntl)(), [y, j] = (0, u.useSearchParams)(), x = (0, m.useRef)(null), [, w] = (0, sa.h)(), {
             track: N
-          } = (0, p.useGtmTrack)(), [S, C] = (0, m.useState)(!1), T = window.location.href.includes("cms5"), I = () => {
+          } = (0, b.useGtmTrack)(), [S, C] = (0, m.useState)(!1), T = window.location.href.includes("cms5"), E = () => {
             C(!1), w(null), T || j(e => (e.delete("info"), e), {
               replace: !0
             }), N({
               event: "trackPageview"
             })
-          }, E = () => {
-            if (!o?.content || !x.current || !n || "linkout" === n) return;
+          }, I = () => {
+            if (!i?.content || !x.current || !n || "linkout" === n) return;
             const r = x.current,
-              i = window.getComputedStyle(r),
-              c = parseInt(i.getPropertyValue("width"), 10),
-              d = parseInt(i.getPropertyValue("height"), 10),
+              o = window.getComputedStyle(r),
+              c = parseInt(o.getPropertyValue("width"), 10),
+              l = parseInt(o.getPropertyValue("height"), 10),
               _ = r.getBoundingClientRect(),
               {
                 content: m,
                 className: u,
-                contentClassName: p
-              } = o,
-              b = "fob" === s ? "fob" : "default";
+                contentClassName: b
+              } = i,
+              p = "fob" === s ? "fob" : "default";
             w({
               content: m,
-              onClose: I,
+              onClose: E,
               rect: _,
               width: c,
-              height: d,
+              height: l,
               className: u,
-              contentClassName: p,
+              contentClassName: b,
               fadeIn: !1,
-              cardIds: l,
+              cardIds: d,
               theme: g,
               activeId: e,
               gtm: {
@@ -6276,7 +6276,7 @@ try {
                 card_name: t?.toLowerCase(),
                 position: a
               },
-              aspectRatio: b,
+              aspectRatio: p,
               cardDimensions: {
                 size: s,
                 type: n
@@ -6290,7 +6290,7 @@ try {
             })
           };
           (0, m.useEffect)(() => {
-            S && E()
+            S && I()
           }, [S]), (0, m.useEffect)(() => {
             C(y.get("info") === e)
           }, [y.get("info"), e]);
@@ -6303,26 +6303,26 @@ try {
                 s = v(a, {
                   type: "conjunction"
                 });
-              return e ? h(Be.card_label_platforms_tag, {
+              return e ? h(Ge.card_label_platforms_tag, {
                 tag: e,
                 title: t,
                 platformList: s
-              }) : h(Be.card_label_platforms, {
+              }) : h(Ge.card_label_platforms, {
                 title: t,
                 platformList: s
               })
             }
-            return e ? h(Be.card_label_tag, {
+            return e ? h(Ge.card_label_tag, {
               tag: e,
               title: t
             }) : !0 === k?.hasPricingOptions ? null : t
           }, [f, t]);
-          return b || "linkout" === n ? (0, _.jsx)("div", {
+          return p || "linkout" === n ? (0, _.jsx)("div", {
             ref: x,
-            className: i,
+            className: o,
             "data-size": s,
             "data-type": n,
-            "data-product": d,
+            "data-product": l,
             role: "button",
             "aria-label": z,
             children: c
@@ -6331,7 +6331,7 @@ try {
             onClick: s => {
               s.preventDefault(), s.stopPropagation(), e ? j({
                 info: e
-              }) : E(), N({
+              }) : I(), N({
                 event: "card_click",
                 element_placement: r?.toLowerCase(),
                 position: a,
@@ -6340,17 +6340,17 @@ try {
                 link_url: window.location.href
               })
             },
-            className: i,
+            className: o,
             "data-size": s,
             "data-type": n,
-            "data-product": d,
+            "data-product": l,
             tabIndex: "linkout" !== n ? 0 : -1,
             "aria-label": z,
             type: "button",
             children: c
           })
         }, ra),
-        oa = {
+        ia = {
           card: "rockstargames-sites-gta-gen9c49a3d41905733d6aa83dcd3463df7d5",
           content: "rockstargames-sites-gta-gen9b41eac21ba69f02fe26f8dafa8433207",
           coverCardWrapper: "rockstargames-sites-gta-gen9dd482c08ed9fdc5cef20f63dd6720e13",
@@ -6360,21 +6360,21 @@ try {
           selected: "rockstargames-sites-gta-gen9a03c60979e8d6882b5b8ce0f0301b7e9",
           text: "rockstargames-sites-gta-gen9e961062768d06292ff6cb598ae1c5e69"
         },
-        ia = ({
+        oa = ({
           payload: e,
           prod: a,
           images: t,
           size: s,
           title: r,
           initial: n,
-          animate: o,
-          variants: i,
+          animate: i,
+          variants: o,
           id: c,
-          position: d,
+          position: l,
           sectionTitle: u,
           expandedType: g,
-          context: p,
-          children: b,
+          context: b,
+          children: p,
           expandedCardContents: f,
           textOverlayProps: k = {
             hasTextOverlay: !1,
@@ -6395,26 +6395,26 @@ try {
           isProductCard: C = !1
         }) => {
           const T = (0, z.useTinaComponents)(),
-            I = (0, m.useMemo)(() => ({
+            E = (0, m.useMemo)(() => ({
               ...T,
               HTMLElement: H,
               ImageWithBadge: ke.A,
-              Carousel: l.A,
-              GroupOfItems: Ie.default
+              Carousel: d.A,
+              GroupOfItems: Ee.default
             }), [T]),
-            E = (0, m.useMemo)(() => (0, _.jsx)(ta, {
+            I = (0, m.useMemo)(() => (0, _.jsx)(ta, {
               type: g,
-              components: I,
+              components: E,
               payload: e,
               prod: a,
               images: t,
               size: s,
               title: r,
-              context: p,
+              context: b,
               textOverlayProps: k,
               initial: n,
-              animate: o,
-              variants: i,
+              animate: i,
+              variants: o,
               theme: y,
               cardIds: j,
               pricingOptions: x,
@@ -6424,11 +6424,11 @@ try {
               platformOptions: w,
               isProductCard: C,
               children: f
-            }), [g, t, a, s, r, k, f, n, o, i, I, e, C]),
-            A = [oa.card, S ? oa.coverCardWrapper : ""].join(" ");
+            }), [g, t, a, s, r, k, f, n, i, o, E, e, C]),
+            A = [ia.card, S ? ia.coverCardWrapper : ""].join(" ");
           return (0, _.jsx)(na, {
             id: c,
-            position: d,
+            position: l,
             sectionTitle: u,
             title: r,
             size: s,
@@ -6436,7 +6436,7 @@ try {
             images: t,
             deckProps: h,
             modalProps: {
-              content: E,
+              content: I,
               ...v
             },
             className: A,
@@ -6446,7 +6446,7 @@ try {
             isCoverCard: S,
             platformOptions: w,
             pricingOptions: x,
-            children: b
+            children: p
           })
         },
         ca = {
@@ -6458,14 +6458,14 @@ try {
           "sm-horizontal": "rockstargames-sites-gta-gen9f5ab2fbb234fc0631784968dc2b1da75"
         },
         {
-          LiteMotion: da,
-          Animations: la
+          LiteMotion: la,
+          Animations: da
         } = Te,
         {
           getVariant: _a,
           variants: ma,
           transitions: ua
-        } = la,
+        } = da,
         ga = ({
           image: e,
           i: a,
@@ -6486,20 +6486,20 @@ try {
             }
           })
         },
-        pa = ({
+        ba = ({
           images: e = [],
           className: a = "",
           prod: t = !1,
           expandedView: s = !1,
           style: r = {}
         }) => {
-          const [n, o] = (0, m.useState)({
+          const [n, i] = (0, m.useState)({
             height: window.innerHeight,
             width: window.innerWidth
           });
           (0, m.useEffect)(() => {
             function e() {
-              o({
+              i({
                 height: window.innerHeight,
                 width: window.innerWidth
               })
@@ -6508,7 +6508,7 @@ try {
               window.removeEventListener("resize", e)
             }
           }, [n]);
-          const i = (0, m.useMemo)(() => e?.length && 0 !== e.length ? e.map(e => (0, _.jsx)(da, {
+          const o = (0, m.useMemo)(() => e?.length && 0 !== e.length ? e.map(e => (0, _.jsx)(la, {
             className: (0, T.default)(ca[e?.specialClass] ?? ca.imageMask, ca[e?.sizeClass], e?.className),
             variants: _a(e?.specialClass ?? "imageMask", s ? "expanded" : "collapsed"),
             initial: "initial",
@@ -6519,17 +6519,17 @@ try {
               prod: t
             })
           }, e.key)) : null, [e, n, s, t]);
-          return (0, _.jsx)(da, {
+          return (0, _.jsx)(la, {
             className: (0, T.default)(ca.layeredImageFrame, e.length > 1 ? ca.layered : ca.flat, a),
             style: r,
             initial: ma.fade.in.initial,
             animate: ma.fade.in.animate,
             transition: ua.instantFade,
             "data-expanded-view": s,
-            children: i
+            children: o
           })
         };
-      var ba = t(38044);
+      var pa = t(38044);
       const fa = ({
           expandedType: e,
           to: a,
@@ -6537,26 +6537,26 @@ try {
           style: s,
           sectionTitle: r = "",
           id: n,
-          cardTitle: o,
-          position: i
+          cardTitle: i,
+          position: o
         }) => {
           const {
             track: c
-          } = (0, p.useGtmTrack)(), d = (0, m.useCallback)(() => {
+          } = (0, b.useGtmTrack)(), l = (0, m.useCallback)(() => {
             c({
               event: "card_click",
               link_url: a,
               card_id: n,
-              card_name: o,
+              card_name: i,
               element_placement: r.toLowerCase(),
-              position: i
+              position: o
             })
-          }, [r, a, n, o, r, i]);
-          return "linkout" === e && a ? (0, _.jsx)(ba.A, {
+          }, [r, a, n, i, r, o]);
+          return "linkout" === e && a ? (0, _.jsx)(pa.A, {
             to: a,
             style: s,
             target: a?.startsWith("http") ? "_blank" : "_self",
-            onClick: d,
+            onClick: l,
             children: t
           }) : t
         },
@@ -6583,31 +6583,31 @@ try {
             description: "",
             collapsedHasDescription: !1
           },
-          images: o = [],
-          deckProps: i = {},
+          images: i = [],
+          deckProps: o = {},
           to: c = null,
-          tina: d = {},
-          position: l = 0,
+          tina: l = {},
+          position: d = 0,
           sectionTitle: u = "",
           theme: g,
-          pricingOptions: p,
-          cardIds: b,
+          pricingOptions: b,
+          cardIds: p,
           platformOptions: f = null
         }) => {
           const k = (0, z.useTinaPayload)(),
-            h = d?.payload?.meta?.cdn ?? k?.meta?.prod ?? !1,
-            [v, y] = (0, m.useState)(i?.size ?? s),
+            h = l?.payload?.meta?.cdn ?? k?.meta?.prod ?? !1,
+            [v, y] = (0, m.useState)(o?.size ?? s),
             [j, x] = (0, m.useState)(0),
-            w = void 0 !== p?.hasPricingOptions || void 0 !== f?.hasPlatformOptions;
+            w = void 0 !== b?.hasPricingOptions || void 0 !== f?.hasPlatformOptions;
           return (0, m.useEffect)(() => {
-            y(i?.size ?? s)
-          }, [i?.size, s]), (0, _.jsx)(ia, {
+            y(o?.size ?? s)
+          }, [o?.size, s]), (0, _.jsx)(oa, {
             id: e,
             title: a,
             size: v,
             expandedType: r,
-            images: o,
-            deckProps: i,
+            images: i,
+            deckProps: o,
             prod: h,
             payload: {
               content: t,
@@ -6619,16 +6619,16 @@ try {
               className: ka.customModal,
               contentClassName: ka.customModalContent
             },
-            expandedCardContents: (0, _.jsx)(pa, {
-              images: o,
+            expandedCardContents: (0, _.jsx)(ba, {
+              images: i,
               prod: h,
               expandedView: !0
             }),
-            position: l,
+            position: d,
             sectionTitle: u,
             theme: g,
-            cardIds: b,
-            pricingOptions: p,
+            cardIds: p,
+            pricingOptions: b,
             platformOptions: f,
             pricingContainerHeight: j,
             isProductCard: w,
@@ -6638,7 +6638,7 @@ try {
               sectionTitle: u,
               id: e,
               cardTitle: a,
-              position: l,
+              position: d,
               children: (0, _.jsx)("div", {
                 className: ka.content,
                 "data-product": w,
@@ -6646,11 +6646,11 @@ try {
                   title: a,
                   size: v,
                   textOverlayProps: n,
-                  pricingOptions: p,
+                  pricingOptions: b,
                   platformOptions: f,
                   setPricingContainerHeight: x,
-                  children: (0, _.jsx)(pa, {
-                    images: o,
+                  children: (0, _.jsx)(ba, {
+                    images: i,
                     prod: h
                   })
                 })
@@ -6680,7 +6680,7 @@ try {
             children: a
           })]
         }),
-        wa = (0, ie.g)(({
+        wa = (0, oe.g)(({
           content: e = []
         }) => (0, _.jsxs)("div", {
           className: "rockstargames-sites-gta-gen9e2587587f57e43c9ca90d1e16e4a6ca6",
@@ -6706,8 +6706,8 @@ try {
       } = Te.Animations;
       var Ca = t(42249),
         Ta = t(14653),
-        Ia = t(50662);
-      const Ea = "rockstargames-sites-gta-gen9b7d3d1587271986440f5870d8d02eb3b",
+        Ea = t(50662);
+      const Ia = "rockstargames-sites-gta-gen9b7d3d1587271986440f5870d8d02eb3b",
         za = "rockstargames-sites-gta-gen9fcffcc6e594fbf9a4a6e9ab5a8d034c7",
         Aa = {
           0: {
@@ -6737,34 +6737,34 @@ try {
             main: void 0,
             thumbs: void 0
           },
-          transition: o = {
+          transition: i = {
             parent: void 0,
             main: void 0,
             thumbs: void 0
           }
         }) => {
           const {
-            track: i
-          } = (0, p.useGtmTrack)(), [c, d] = (0, m.useState)([Ia.U1, Ia.WO, Ia.dK]), [l, u] = (0, m.useState)(null), [g, b] = (0, m.useState)(null);
+            track: o
+          } = (0, b.useGtmTrack)(), [c, l] = (0, m.useState)([Ea.U1, Ea.WO, Ea.dK]), [d, u] = (0, m.useState)(null), [g, p] = (0, m.useState)(null);
           return (0, m.useEffect)(() => {
-            const e = [Ia.U1, Ia.WO, Ia.dK];
-            s && e.push(Ia.Vx), d(e)
+            const e = [Ea.U1, Ea.WO, Ea.dK];
+            s && e.push(Ea.Vx), l(e)
           }, [s]), (0, m.useEffect)(() => {
             if (!r) return;
             const e = r.map((e, a) => (0, _.jsx)(Ta.qr, {
               children: e
             }, Symbol(a).toString()));
-            b(e)
-          }, [r]), g ? (0, _.jsxs)(E.motion.div, {
+            p(e)
+          }, [r]), g ? (0, _.jsxs)(I.motion.div, {
             className: "rockstargames-sites-gta-gen9f2d55de974817e455a162843125a8771",
             variants: n.parent,
-            transition: o.parent,
+            transition: i.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, _.jsx)(E.motion.div, {
-              className: Ea,
+            children: [(0, _.jsx)(I.motion.div, {
+              className: Ia,
               variants: n.main,
-              transition: o.main,
+              transition: i.main,
               initial: "initial",
               animate: "animate",
               children: (0, _.jsx)(Ta.RC, {
@@ -6774,35 +6774,35 @@ try {
                   clickable: !0
                 },
                 thumbs: {
-                  swiper: l
+                  swiper: d
                 },
                 modules: c,
                 breakpoints: Aa,
-                className: Ea,
+                className: Ia,
                 onSlideNextTransitionEnd: () => {
-                  i({
+                  o({
                     event: "carousel_next",
                     element_placement: e?.toLowerCase() ?? ""
                   })
                 },
                 onSlidePrevTransitionEnd: () => {
-                  i({
+                  o({
                     event: "carousel_previous",
                     element_placement: e?.toLowerCase() ?? ""
                   })
                 },
                 onSlideChangeTransitionEnd: () => {
-                  i({
+                  o({
                     event: "carousel_swipe",
                     element_placement: e?.toLowerCase() ?? ""
                   })
                 },
                 children: g
               })
-            }), (0, _.jsx)(E.motion.div, {
+            }), (0, _.jsx)(I.motion.div, {
               className: za,
               variants: n.thumbs,
-              transition: o.thumbs,
+              transition: i.thumbs,
               initial: "initial",
               animate: "animate",
               children: (0, _.jsx)(Ta.RC, {
@@ -6854,7 +6854,7 @@ try {
           transitions: Ra,
           variants: Da
         } = Te.Animations,
-        Va = ({
+        Oa = ({
           id: e,
           title: a,
           content: t,
@@ -6868,46 +6868,46 @@ try {
             description: "",
             collapsedHasDescription: !1
           },
-          images: o = [],
-          deckProps: i = {},
+          images: i = [],
+          deckProps: o = {},
           tina: c = {},
-          payload: d,
-          position: l = 0,
+          payload: l,
+          position: d = 0,
           sectionTitle: u = "",
           cardIds: g
         }) => {
-          const p = (0, z.useTinaPayload)(),
-            b = d ?? p,
-            f = c?.payload?.meta?.cdn ?? b?.meta?.prod ?? !1,
+          const b = (0, z.useTinaPayload)(),
+            p = l ?? b,
+            f = c?.payload?.meta?.cdn ?? p?.meta?.prod ?? !1,
             k = ((e, a) => e?.map(e => e?.image ? {
               ...e,
               image: {
                 ...e.image,
                 prod: a
               }
-            } : e))(o, f),
-            [h, v] = (0, m.useState)(i?.size ?? s),
+            } : e))(i, f),
+            [h, v] = (0, m.useState)(o?.size ?? s),
             {
               parent: y,
               main: j,
               thumbs: x
             } = Da?.cardWithImageGallery?.gallery ?? {};
           return (0, m.useEffect)(() => {
-            v(i?.size ?? s)
-          }, [i?.size, s]), (0, _.jsx)(ia, {
+            v(o?.size ?? s)
+          }, [o?.size, s]), (0, _.jsx)(oa, {
             id: e,
-            position: l,
+            position: d,
             sectionTitle: u,
             payload: {
               content: t,
               meta: {},
-              payload: b
+              payload: p
             },
             title: a,
             size: h,
             expandedType: r,
             images: k,
-            deckProps: i,
+            deckProps: o,
             prod: f,
             variants: Da.cardWithImageGallery,
             textOverlayProps: n,
@@ -6948,8 +6948,8 @@ try {
             })
           })
         };
-      var Oa = t(1e4);
-      const Ba = {
+      var Ba = t(1e4);
+      const Ga = {
           content: "rockstargames-sites-gta-gen9db8d475894c24c580268644776443fa6",
           customModalContent: "rockstargames-sites-gta-gen9c758020ea3f5943e5f8a7d89ade3da69",
           logo: "rockstargames-sites-gta-gen9f5649436402db0dddc6a55b41c5556cc",
@@ -6960,18 +6960,18 @@ try {
         {
           variants: $a
         } = Te.Animations,
-        Ga = ({
+        Va = ({
           id: e,
           logoImage: a = null,
           logoImageHeight: t = "auto",
           name: s = null,
           title: r,
           titleSizeClass: n = null,
-          content: o,
-          ctaText: i,
+          content: i,
+          ctaText: o,
           ctaURL: c,
-          size: d = "md",
-          expandedType: l = "short",
+          size: l = "md",
+          expandedType: d = "short",
           textOverlayProps: u = {
             hasTextOverlay: !1,
             tag: "",
@@ -6981,8 +6981,8 @@ try {
             collapsedHasDescription: !1
           },
           images: g = [],
-          deckProps: p = {},
-          to: b = null,
+          deckProps: b = {},
+          to: p = null,
           tina: f = {},
           cardIds: k,
           theme: h
@@ -6992,31 +6992,31 @@ try {
               payload: f?.payload,
               variables: f?.variables ?? {}
             }),
-            [j, x] = (0, m.useState)(p?.size ?? d),
+            [j, x] = (0, m.useState)(b?.size ?? l),
             w = (0, z.useGetCdnSource)(a ?? null),
             N = y?.content?.[0],
             S = N?.body ?? N?._memoq?.body;
           return (0, m.useEffect)(() => {
-            x(p?.size ?? d)
-          }, [p?.size, d]), (0, _.jsx)(ia, {
+            x(b?.size ?? l)
+          }, [b?.size, l]), (0, _.jsx)(oa, {
             id: e,
             title: r,
             sectionTitle: s || r,
             size: j,
-            expandedType: l,
+            expandedType: d,
             images: g,
-            deckProps: p,
+            deckProps: b,
             payload: {
-              content: o,
+              content: i,
               meta: {}
             },
             variants: $a.plainCard,
             textOverlayProps: u,
             modalProps: {
-              className: Ba.customModal,
-              contentClassName: Ba.customModalContent
+              className: Ga.customModal,
+              contentClassName: Ga.customModalContent
             },
-            expandedCardContents: (0, _.jsx)(pa, {
+            expandedCardContents: (0, _.jsx)(ba, {
               images: g,
               expandedView: !0
             }),
@@ -7024,13 +7024,13 @@ try {
             cardIds: k,
             isCoverCard: !0,
             children: (0, _.jsx)(fa, {
-              expandedType: l,
-              to: b,
+              expandedType: d,
+              to: p,
               sectionTitle: s || r,
               children: (0, _.jsxs)("div", {
-                className: Ba.content,
+                className: Ga.content,
                 children: [a && (0, _.jsx)("img", {
-                  className: Ba.logo,
+                  className: Ga.logo,
                   alt: "logo",
                   src: w,
                   style: {
@@ -7041,10 +7041,10 @@ try {
                   children: r
                 }), S && (0, _.jsx)("p", {
                   children: S
-                }), (0, _.jsx)(Oa.A, {
-                  target: "newtab" === l ? "_blank" : "_self",
+                }), (0, _.jsx)(Ba.A, {
+                  target: "newtab" === d ? "_blank" : "_self",
                   to: c || void 0,
-                  children: i || v.formatMessage(Be.card_learn_more)
+                  children: o || v.formatMessage(Ge.card_learn_more)
                 })]
               })
             })
@@ -7098,15 +7098,15 @@ try {
           setPlaying: s,
           tracksOpen: r,
           setTracksOpen: n,
-          trackData: o,
-          setTrackId: i,
+          trackData: i,
+          setTrackId: o,
           trackBounds: c,
-          setAutoNext: d
+          setAutoNext: l
         }) => {
-          const l = (0, m.useRef)(null),
+          const d = (0, m.useRef)(null),
             u = (0, m.useRef)(null),
             g = (0, m.useRef)(null),
-            [p, b] = (0, m.useState)(null),
+            [b, p] = (0, m.useState)(null),
             [f, k] = (0, m.useState)(!1),
             h = e => {
               const a = new Date(1e3 * e),
@@ -7117,17 +7117,17 @@ try {
           return (0, m.useEffect)(() => {
             if (!u.current || !g.current) return;
             const e = () => {
-              g.current && u.current && b(g.current.clientWidth > u.current.clientWidth)
+              g.current && u.current && p(g.current.clientWidth > u.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
           }, [g, u, e]), (0, m.useEffect)(() => {
-            if (!l.current || !e?.duration) return;
+            if (!d.current || !e?.duration) return;
             let a = null;
-            const s = new(Ha())(l.current),
+            const s = new(Ha())(d.current),
               r = a => {
-                if (l.current) {
-                  const s = l.current.clientWidth;
-                  if (!l.current.contains(a.srcEvent.target)) return;
+                if (d.current) {
+                  const s = d.current.clientWidth;
+                  if (!d.current.contains(a.srcEvent.target)) return;
                   const r = Math.max(0, a.srcEvent.offsetX),
                     n = Number(r / s * e.duration);
                   t.currentTime = n
@@ -7136,20 +7136,20 @@ try {
               n = () => {
                 a ? t.pause() : t.play()
               },
-              o = () => {
+              i = () => {
                 a = t.paused, t.pause()
               };
-            return s.on("panstart", o), s.on("panleft", r), s.on("panright", r), s.on("panend", n), s.on("tap", r), () => {
-              s.off("panstart", o), s.off("panleft", r), s.off("panright", r), s.off("panend", n), s.off("tap", r)
+            return s.on("panstart", i), s.on("panleft", r), s.on("panright", r), s.on("panend", n), s.on("tap", r), () => {
+              s.off("panstart", i), s.off("panleft", r), s.off("panright", r), s.off("panend", n), s.off("tap", r)
             }
-          }, [l.current, e.duration]), (0, m.useEffect)(() => {
+          }, [d.current, e.duration]), (0, m.useEffect)(() => {
             const e = Number(t?.currentTime);
             (a || !isNaN(e) && 0 !== e) && k(!0)
           }, [a, t?.currentTime]), (0, _.jsxs)("div", {
             className: qa.controls,
             style: {
-              "--track-color": o.color,
-              "--track-mix-blend-mode": o.mix_blend_mode,
+              "--track-color": i.color,
+              "--track-mix-blend-mode": i.mix_blend_mode,
               "--current-pct": e.current / e.duration
             },
             children: [(0, _.jsx)("div", {
@@ -7158,16 +7158,16 @@ try {
               className: qa.controlsTrack,
               ref: u,
               children: (0, _.jsx)("span", {
-                className: [qa.controlsTrackTitle, p ? qa.controlsTrackAnimating : ""].join(" "),
+                className: [qa.controlsTrackTitle, b ? qa.controlsTrackAnimating : ""].join(" "),
                 ref: g,
-                children: o.title
+                children: i.title
               })
             }), (0, _.jsxs)("div", {
               className: qa.controlsButtons,
               children: [(0, _.jsx)("div", {
                 className: qa.controlsPrevTrack,
                 onClick: () => {
-                  c && (i(c[0]), d(!0), s(!0))
+                  c && (o(c[0]), l(!0), s(!0))
                 }
               }), (0, _.jsx)("div", {
                 className: [qa.controlsPlayPause, a ? qa.controlsPlayPausePlaying : ""].join(" "),
@@ -7177,7 +7177,7 @@ try {
               }), (0, _.jsx)("div", {
                 className: qa.controlsNextTrack,
                 onClick: () => {
-                  c && (i(c[1]), d(!0), s(!0))
+                  c && (o(c[1]), l(!0), s(!0))
                 }
               })]
             }), (0, _.jsx)("div", {
@@ -7195,7 +7195,7 @@ try {
                 children: h(e.current)
               }), (0, _.jsx)("div", {
                 className: qa.controlsScrubTrack,
-                ref: l
+                ref: d
               }), (0, _.jsx)("span", {
                 children: h(e.duration)
               })]
@@ -7209,7 +7209,7 @@ try {
           tracksOpen: s,
           setTracksOpen: r,
           setPlaying: n,
-          setAutoNext: o
+          setAutoNext: i
         }) => (0, _.jsxs)("div", {
           className: qa.tracks,
           children: [(0, _.jsx)("h4", {
@@ -7227,7 +7227,7 @@ try {
               },
               className: a === e.id ? qa.trackActive : "",
               onClick: () => {
-                t(e.id), n(!0), o(!0)
+                t(e.id), n(!0), i(!0)
               },
               children: [(0, _.jsx)("span", {
                 className: qa.trackIndex,
@@ -7252,75 +7252,75 @@ try {
             variables: {
               id: e
             }
-          }), [s, r] = (0, m.useState)(), [n, o] = (0, m.useState)(), [i, c] = (0, m.useState)(), [d, l] = (0, m.useState)(!1), [u, p] = (0, m.useState)(!1), [b, f] = (0, m.useState)(), [k, h] = (0, m.useState)({
+          }), [s, r] = (0, m.useState)(), [n, i] = (0, m.useState)(), [o, c] = (0, m.useState)(), [l, d] = (0, m.useState)(!1), [u, b] = (0, m.useState)(!1), [p, f] = (0, m.useState)(), [k, h] = (0, m.useState)({
             current: 0,
             duration: 0
           }), [v, y] = (0, m.useState)(!0);
           return (0, m.useEffect)(() => {
             const e = "audio",
               a = a => {
-                a?.data?.rockstarAudioPlayerPlayTrackId && (o(a.data.rockstarAudioPlayerPlayTrackId), y(!1), p(!0)), u && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && p(!1)
+                a?.data?.rockstarAudioPlayerPlayTrackId && (i(a.data.rockstarAudioPlayerPlayTrackId), y(!1), b(!0)), u && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && b(!1)
               };
             return u && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", a, !1), () => window.removeEventListener("message", a, !1)
           }, [u]), (0, m.useEffect)(() => {
-            if (!b) return;
+            if (!p) return;
             const e = () => {
-                isNaN(b.duration) || h({
-                  duration: b?.duration ?? 0,
-                  current: b?.currentTime ?? 0
+                isNaN(p.duration) || h({
+                  duration: p?.duration ?? 0,
+                  current: p?.currentTime ?? 0
                 })
               },
               a = () => {
-                v && s && o(s[1])
+                v && s && i(s[1])
               };
-            return b.addEventListener("loadedmetadata", e), b.addEventListener("timeupdate", e), b.addEventListener("ended", a), () => {
-              b.removeEventListener("loadedmetadata", e), b.removeEventListener("timeupdate", e), b.removeEventListener("ended", a)
+            return p.addEventListener("loadedmetadata", e), p.addEventListener("timeupdate", e), p.addEventListener("ended", a), () => {
+              p.removeEventListener("loadedmetadata", e), p.removeEventListener("timeupdate", e), p.removeEventListener("ended", a)
             }
-          }, [b, s, v]), (0, m.useEffect)(() => {
+          }, [p, s, v]), (0, m.useEffect)(() => {
             u && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
           }, [u]), (0, m.useEffect)(() => {
-            b && (u ? b.play() : b.pause(), l(!1))
-          }, [u, b, i?.id]), (0, m.useEffect)(() => {
+            p && (u ? p.play() : p.pause(), d(!1))
+          }, [u, p, o?.id]), (0, m.useEffect)(() => {
             if (!n) return;
             const {
               tracks: e
             } = t.audioAlbum, a = t.audioAlbum.tracks.findIndex(e => e.id === n);
             r([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), c(e[a])
           }, [n]), (0, m.useEffect)(() => {
-            t && o(t.audioAlbum.tracks[0].id)
-          }, [t]), i ? (0, _.jsxs)("div", {
-            className: [qa.player, qa[a], d ? qa.tracksOpen : ""].join(" "),
+            t && i(t.audioAlbum.tracks[0].id)
+          }, [t]), o ? (0, _.jsxs)("div", {
+            className: [qa.player, qa[a], l ? qa.tracksOpen : ""].join(" "),
             children: [(0, _.jsx)("audio", {
               ref: e => {
                 f(e)
               },
-              src: i.mp3_src
+              src: o.mp3_src
             }), (0, _.jsx)(Ya, {
               tracks: t.audioAlbum.tracks,
-              setTrackId: o,
+              setTrackId: i,
               trackId: n,
-              tracksOpen: d,
-              setTracksOpen: l,
-              setPlaying: p,
+              tracksOpen: l,
+              setTracksOpen: d,
+              setPlaying: b,
               setAutoNext: y
             }), (0, _.jsx)(Wa, {
-              src: i.cover_src
+              src: o.cover_src
             }), (0, _.jsx)(Ka, {
-              setTrackId: o,
+              setTrackId: i,
               trackBounds: s,
-              tracksOpen: d,
-              setTracksOpen: l,
+              tracksOpen: l,
+              setTracksOpen: d,
               playing: u,
-              setPlaying: p,
+              setPlaying: b,
               timing: k,
-              trackData: i,
-              audioRef: b,
+              trackData: o,
+              audioRef: p,
               setAutoNext: y
             })]
           }) : null
@@ -7335,13 +7335,13 @@ try {
         label: t,
         miscProps: s
       }) => {
-        const [r, n] = (0, m.useState)(""), o = (0, m.useMemo)(() => et()().getData(), []);
+        const [r, n] = (0, m.useState)(""), i = (0, m.useMemo)(() => et()().getData(), []);
         return (0, _.jsx)(Ja.Ay, {
           unstyled: !0,
           value: r,
           isMulti: e,
           allowSelectAll: a,
-          options: o,
+          options: i,
           placeholder: t,
           onChange: e => {
             return a = e?.target?.value, void n(a);
@@ -7371,10 +7371,10 @@ try {
       };
       var rt = t(64581),
         nt = t(81140),
-        ot = t(68291),
-        it = t(76862);
+        it = t(68291),
+        ot = t(76862);
       const ct = "rockstargames-sites-gta-gen9a19bcd2b98d91e60c43b9de146e20f4e",
-        dt = ({
+        lt = ({
           color: e
         }) => (0, _.jsxs)("div", {
           className: "rockstargames-sites-gta-gen9e83fe07aa054242e9023d2f9e7a3fd25",
@@ -7389,8 +7389,8 @@ try {
             className: ct
           })]
         });
-      var lt = t(79955),
-        _t = t.n(lt);
+      var dt = t(79955),
+        _t = t.n(dt);
       const mt = {
           dropdownWrapper: "rockstargames-sites-gta-gen9bbf48ac7e790ff47ad1d5ee6fb7da4d9",
           items: "rockstargames-sites-gta-gen9a9afd60434d032bdba4ce040dbeb13b7",
@@ -7437,17 +7437,17 @@ try {
             }
           })]
         }) : a,
-        pt = ({
+        bt = ({
           componentTitle: e,
           type: a,
           items: t
         }) => t?.length ? (0, _.jsx)("div", {
           className: "rockstargames-sites-gta-gen9aee2a98f97e777758e2d9bec034314ee",
           type: a,
-          children: (0, _.jsxs)(I, {
+          children: (0, _.jsxs)(E, {
             children: [e && (0, _.jsx)("h3", {
               children: e
-            }), (0, _.jsx)(I, {
+            }), (0, _.jsx)(E, {
               className: "rockstargames-sites-gta-gen9dba17b5c55f8d40e2600765f1a60d6af",
               children: t.map((e, a) => {
                 return e?.embed ? (0, _.jsx)(gt, {
@@ -7468,7 +7468,7 @@ try {
             })]
           })
         }) : null,
-        bt = {
+        pt = {
           animateBox: "rockstargames-sites-gta-gen9b07a3be6338e0ba4b346b072762582e3",
           animateMe: "rockstargames-sites-gta-gen9f7adfd0186421cac9ad0b300911cc9af",
           bar: "rockstargames-sites-gta-gen9bbb7e636ac00581aed0b7e148916cc11",
@@ -7484,12 +7484,12 @@ try {
           return (0, m.useEffect)(() => {
             new IntersectionObserver(e => {
               e.forEach(e => {
-                e.isIntersecting && e.target.classList.add([bt.visible])
+                e.isIntersecting && e.target.classList.add([pt.visible])
               })
             }).observe(t?.current)
           }, []), (0, _.jsx)("div", {
             style: a,
-            className: [bt.fadeArea].join(" "),
+            className: [pt.fadeArea].join(" "),
             ref: t,
             children: e
           })
@@ -7558,11 +7558,11 @@ try {
                 paddingClass: s,
                 imageSizeClass: r,
                 objectFitClass: n,
-                positionClassX: o,
-                positionClassY: i,
+                positionClassX: i,
+                positionClassY: o,
                 zIndex: c,
-                className: d,
-                style: l,
+                className: l,
+                style: d,
                 alt: m,
                 displayClass: u
               } = e;
@@ -7571,8 +7571,8 @@ try {
                 style: {
                   zIndex: c ?? a + 1
                 },
-                imageStyle: l,
-                className: (0, T.default)(d, u, kt.imageLayer, kt[s], kt[r], kt[n], kt[o], kt[i]),
+                imageStyle: d,
+                className: (0, T.default)(l, u, kt.imageLayer, kt[s], kt[r], kt[n], kt[i], kt[o]),
                 alt: m
               }, c ?? a + 1)
             }), e?.borderImage && (0, _.jsx)(ht, {
@@ -7588,14 +7588,14 @@ try {
             thumbnail: s,
             caption: r,
             style: n,
-            showOpenButtonMobile: o,
-            showOpenButton: i,
+            showOpenButtonMobile: i,
+            showOpenButton: o,
             showDownloadButtonMobile: c,
-            showDownloadButton: d,
-            showZoomControls: l
+            showDownloadButton: l,
+            showZoomControls: d
           } = e, m = (0, g.useLocale)(), {
             isMobile: u
-          } = (0, g.useWindowResize)(), p = a?.sources ?? {}, b = s?.image?.sources ?? {}, f = (0, C.C1)(p?.[m] ?? p?.en_us) ?? "", k = (0, C.C1)(b?.[m] ?? b?.en_us) ?? f, h = u ? o : i, v = u ? c : d;
+          } = (0, g.useWindowResize)(), b = a?.sources ?? {}, p = s?.image?.sources ?? {}, f = (0, C.C1)(b?.[m] ?? b?.en_us) ?? "", k = (0, C.C1)(p?.[m] ?? p?.en_us) ?? f, h = u ? i : o, v = u ? c : l;
           return (0, _.jsx)("div", {
             style: n,
             className: "rockstargames-sites-gta-gen9adbaa0167219cd891249a29faec00e8f",
@@ -7627,7 +7627,7 @@ try {
                       children: r
                     }), (0, _.jsx)(j.Lightbox.Close, {
                       showTooltip: !1
-                    }), l && (0, _.jsx)(j.Lightbox.Zoom, {}), v && (0, _.jsx)(j.Lightbox.Download, {})]
+                    }), d && (0, _.jsx)(j.Lightbox.Zoom, {}), v && (0, _.jsx)(j.Lightbox.Download, {})]
                   })]
                 })]
               })]
@@ -7649,12 +7649,12 @@ try {
           style: s,
           lazy: r = !1,
           decoding: n = "auto",
-          sizes: o = [320, 480, 768, 1024, 1440, 1920, 2560]
+          sizes: i = [320, 480, 768, 1024, 1440, 1920, 2560]
         }) => {
-          const [i, c] = (0, m.useState)(!1);
+          const [o, c] = (0, m.useState)(!1);
           return (0, _.jsxs)("div", {
             className: jt.multiSourceContainer,
-            children: [!i && (0, _.jsx)("img", {
+            children: [!o && (0, _.jsx)("img", {
               className: [a, jt.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
@@ -7663,7 +7663,7 @@ try {
             }), (0, _.jsx)("img", {
               className: [jt.multiSourceImage, a].join(" "),
               src: `${e}?im=Resize=1920`,
-              srcSet: (d = e, o.map(e => `${d}?im=Resize=${e} ${e}w`).join(", ")),
+              srcSet: (l = e, i.map(e => `${l}?im=Resize=${e} ${e}w`).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
               alt: t ?? "Multi-Source Image",
               style: s,
@@ -7674,7 +7674,7 @@ try {
               decoding: n
             })]
           });
-          var d
+          var l
         };
       var wt = t(74631);
       const Nt = {
@@ -7691,7 +7691,7 @@ try {
             className: [Nt.tag, e].join(" "),
             children: [(0, _.jsx)("i", {}), t]
           });
-          return void 0 !== a ? (0, _.jsx)(ba.A, {
+          return void 0 !== a ? (0, _.jsx)(pa.A, {
             to: a,
             children: r
           }) : r
@@ -7715,15 +7715,15 @@ try {
         }) => {
           const {
             track: n
-          } = (0, p.useGtmTrack)(), [o] = (0, u.useSearchParams)(), i = t.preview_images_parsed.newswire_block, c = (0, wt.Ub)(y.breakpoints.mobile), d = {
-            default: 0 !== a || s ? i.square || i.d16x9 || i._fallback : i.d16x9 || i.square || i._fallback,
-            mobile: i.square || i._fallback
-          }, [l] = (0, g.usePreloadImg)(d.default), b = {
+          } = (0, b.useGtmTrack)(), [i] = (0, u.useSearchParams)(), o = t.preview_images_parsed.newswire_block, c = (0, wt.Ub)(y.breakpoints.mobile), l = {
+            default: 0 !== a || s ? o.square || o.d16x9 || o._fallback : o.d16x9 || o.square || o._fallback,
+            mobile: o.square || o._fallback
+          }, [d] = (0, g.usePreloadImg)(l.default), p = {
             default: {
-              backgroundImage: `url(${d.default})`
+              backgroundImage: `url(${l.default})`
             },
             mobile: {
-              backgroundImage: `url(${d.mobile})`
+              backgroundImage: `url(${l.mobile})`
             }
           }, f = (0, m.useCallback)(() => {
             n({
@@ -7735,18 +7735,18 @@ try {
               element_placement: e?.toLowerCase()
             })
           }, [t]);
-          return (0, _.jsx)(ba.A, {
+          return (0, _.jsx)(pa.A, {
             to: t.url,
-            className: [Ct.newswireBlock, s ? Ct.newswireBlockNoSpecialOrder : "", null !== l ? Ct.startAnimation : ""].join(" "),
+            className: [Ct.newswireBlock, s ? Ct.newswireBlockNoSpecialOrder : "", null !== d ? Ct.startAnimation : ""].join(" "),
             focused: r,
             onClick: f,
             children: (0, _.jsxs)(_.Fragment, {
-              children: [0 !== a || o.get("tag_id") ? (0, _.jsx)("div", {
+              children: [0 !== a || i.get("tag_id") ? (0, _.jsx)("div", {
                 className: Ct.preview,
-                style: b.default
+                style: p.default
               }) : (0, _.jsx)("div", {
                 className: c ? Ct.previewMobile : Ct.preview,
-                style: c ? b.mobile : b.default
+                style: c ? p.mobile : p.default
               }), (0, _.jsxs)("div", {
                 className: Ct.info,
                 children: [(0, _.jsxs)("div", {
@@ -7767,8 +7767,8 @@ try {
             })
           })
         };
-      var It = t(27750),
-        Et = t.n(It);
+      var Et = t(27750),
+        It = t.n(Et);
       const zt = (0, g.withTranslations)(({
           section: e = "",
           relativeTo: a = "",
@@ -7778,13 +7778,13 @@ try {
         }) => {
           const n = (0, g.useLocale)(),
             {
-              track: o
-            } = (0, p.useGtmTrack)(),
-            [i, c] = (0, u.useSearchParams)(),
+              track: i
+            } = (0, b.useGtmTrack)(),
+            [o, c] = (0, u.useSearchParams)(),
             {
-              tagId: d = null
+              tagId: l = null
             } = (0, u.useParams)(),
-            [l, b] = (0, m.useState)(d ?? t ?? i.get("tag_id")),
+            [d, p] = (0, m.useState)(l ?? t ?? o.get("tag_id")),
             [f, k] = (0, m.useState)(1),
             [h, v] = (0, m.useState)(20),
             [y, j] = (0, m.useState)([]),
@@ -7792,9 +7792,9 @@ try {
             [N, {
               loading: S,
               data: C
-            }] = (0, g.useLazyQuery)(Et(), {
+            }] = (0, g.useLazyQuery)(It(), {
               variables: {
-                tagId: Number(l),
+                tagId: Number(d),
                 page: f,
                 metaUrl: s,
                 limit: h,
@@ -7802,13 +7802,13 @@ try {
               }
             });
           return (0, m.useEffect)(() => {
-            k(1), j([]), v(20), b(d ?? t ?? i.get("tag_id")), N()
-          }, [i.get("tag_id"), d, t]), (0, m.useEffect)(() => {
+            k(1), j([]), v(20), p(l ?? t ?? o.get("tag_id")), N()
+          }, [o.get("tag_id"), l, t]), (0, m.useEffect)(() => {
             const e = y;
             C?.posts?.paging && w(C?.posts?.paging), C?.posts?.results && j(e.concat(C?.posts?.results))
           }, [C]), (0, m.useEffect)(() => {
             (() => {
-              const e = i.get("page"),
+              const e = o.get("page"),
                 a = Number(e ?? 1);
               v(20 * a), N()
             })()
@@ -7819,21 +7819,21 @@ try {
               section: e,
               posts: y,
               relativeTo: a,
-              noSpecialOrder: null !== l
-            }), null !== x && x.nextPage ? (0, _.jsx)(Oa.A, {
+              noSpecialOrder: null !== d
+            }), null !== x && x.nextPage ? (0, _.jsx)(Ba.A, {
               className: "rockstargames-sites-gta-gen9e125d510192feb4ce2844cb97084b838",
               "data-testid": "more-stories",
               onClick: () => {
-                const e = i.get("page"),
+                const e = o.get("page"),
                   a = Number(e ?? f) + 1;
                 k(a), 20 !== h && v(20), N(), c({
                   page: String(a),
-                  ...l && {
-                    tag_id: String(l)
+                  ...d && {
+                    tag_id: String(d)
                   }
                 }, {
                   replace: !0
-                }), o({
+                }), i({
                   event: "cta_learn",
                   text: "more stories",
                   element_placement: "newswire"
@@ -7921,7 +7921,7 @@ try {
           },
           children: e
         }),
-        Vt = ({
+        Ot = ({
           data: e,
           onPageUpdate: a,
           className: t
@@ -7930,7 +7930,7 @@ try {
           const s = new Array(Math.min(e.pageCount, 8)),
             r = Math.max(e.pageCount - 8, 1),
             n = Math.max(2, e.page - 4),
-            o = Array.from(s, (e, a) => a + Math.min(r, n));
+            i = Array.from(s, (e, a) => a + Math.min(r, n));
           return (0, _.jsxs)("div", {
             className: `rockstargames-sites-gta-gen9e480f25872ae2a8b3fcd1e492d838301 ${t??""}`,
             children: [e.pageCount > 8 ? (0, _.jsxs)(_.Fragment, {
@@ -7939,18 +7939,18 @@ try {
                 onPageUpdate: a,
                 page: 1,
                 children: "1"
-              }), 2 !== o[0] ? (0, _.jsx)("div", {
+              }), 2 !== i[0] ? (0, _.jsx)("div", {
                 className: Rt,
                 children: "..."
               }) : ""]
-            }) : "", o.map(s => (0, _.jsx)(Dt, {
+            }) : "", i.map(s => (0, _.jsx)(Dt, {
               data: e,
               onPageUpdate: a,
               page: s,
               className: t,
               children: s
             }, s)), e.pageCount > 8 ? (0, _.jsxs)(_.Fragment, {
-              children: [o.slice(-1)[0] + 1 < e.pageCount ? (0, _.jsx)("div", {
+              children: [i.slice(-1)[0] + 1 < e.pageCount ? (0, _.jsx)("div", {
                 className: Rt,
                 children: "..."
               }) : "", (0, _.jsx)(Dt, {
@@ -7962,24 +7962,24 @@ try {
             }) : ""]
           })
         },
-        Ot = {
+        Bt = {
           responsiveFlexBox: "rockstargames-sites-gta-gen9fad65f02dd0ee292c36ec9d50b9c249a",
           responsiveFlexItem: "rockstargames-sites-gta-gen9f5215494f66727858110c9c73e2d882a",
           responsiveImage: "rockstargames-sites-gta-gen9d437a700a9b768227a114e70db78af03"
         },
-        Bt = ({
+        Gt = ({
           children: e,
           className: a,
           style: t
         }) => (0, _.jsx)("div", {
-          className: [Ot.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
+          className: [Bt.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
           style: t,
           children: e
         }),
         $t = {
           responsiveFlexItem: "rockstargames-sites-gta-gen9e7371144db2e94a049204d4b178416ec"
         },
-        Gt = ({
+        Vt = ({
           children: e,
           className: a,
           style: t
@@ -8031,17 +8031,17 @@ try {
           ariaLabel: s,
           style: r = {}
         }) => {
-          const [n, o] = (0, g.usePreloadImg)(e);
+          const [n, i] = (0, g.usePreloadImg)(e);
           if (!n) return null;
           r.backgroundImage = `url(${e})`;
-          const i = {
+          const o = {
             ...r
           };
-          return o && (i["--aspect-ratio"] = o.width / o.height), (0, _.jsx)("div", {
+          return i && (o["--aspect-ratio"] = i.width / i.height), (0, _.jsx)("div", {
             role: "img",
             "aria-label": s ?? "R* Games",
             className: [Wt.responsiveImage, t ? Wt.animateBox : "", a].join(" "),
-            style: i
+            style: o
           })
         },
         Yt = {
@@ -8106,7 +8106,7 @@ try {
             children: e
           })
         },
-        os = {
+        is = {
           card: "rockstargames-sites-gta-gen9f93031694e202c791c00e5ae3497250a",
           gameTitle: "rockstargames-sites-gta-gen9a1fe577b937c0e16250bf38e9d775061",
           info: "rockstargames-sites-gta-gen9dabce30c906fad181d7cc188f1632c04",
@@ -8115,14 +8115,14 @@ try {
           title: "rockstargames-sites-gta-gen9fd87597d0f90ed6d8a2081da933f53bc",
           videoPreview: "rockstargames-sites-gta-gen9a626ad482ff0be0336e75929516654d5"
         },
-        is = ({
+        os = ({
           video: e,
           size: a = 640
         }) => {
           const t = () => e.screencap.includes("akamai") ? `${e.screencap}?im=Resize=${a}` : e.screencap,
             [s] = (0, g.usePreloadImg)(t());
           return (0, _.jsx)("div", {
-            className: [os.screencap, s ? os.screencapLoaded : ""].join(" "),
+            className: [is.screencap, s ? is.screencapLoaded : ""].join(" "),
             "aria-hidden": "true",
             role: "img",
             style: {
@@ -8138,26 +8138,26 @@ try {
           toExplicit: r
         }) => {
           const n = r ?? `/videos/${t.id}`,
-            o = {
-              className: os.videoPreview,
+            i = {
+              className: is.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": n
             },
-            i = (0, _.jsxs)("div", {
-              className: os.card,
-              children: [(0, _.jsx)(is, {
+            o = (0, _.jsxs)("div", {
+              className: is.card,
+              children: [(0, _.jsx)(os, {
                 video: t,
                 size: s
               }), (0, _.jsxs)("div", {
-                className: os.info,
+                className: is.info,
                 children: [e ? (0, _.jsx)("div", {
-                  className: os.gameTitle,
+                  className: is.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: t.game.title
                   }
                 }) : "", (0, _.jsx)("h5", {
-                  className: os.title,
+                  className: is.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -8167,15 +8167,15 @@ try {
           return a ? (0, _.jsx)("a", {
             href: n,
             target: "_blank",
-            ...o,
-            children: i
-          }) : (0, _.jsx)(ba.A, {
+            ...i,
+            children: o
+          }) : (0, _.jsx)(pa.A, {
             to: n,
-            ...o,
-            children: i
+            ...i,
+            children: o
           })
         },
-        ds = {
+        ls = {
           active: "rockstargames-sites-gta-gen9e35688e0d87409e3aef95ffb624d94f4",
           carousel: "rockstargames-sites-gta-gen9bc3f1abaac4c17c0e9aaac5fccfc6f7e",
           cta: "rockstargames-sites-gta-gen9f40c40ed1bc4242a32bc0628eea34048",
@@ -8191,7 +8191,7 @@ try {
           track: "rockstargames-sites-gta-gen9efe7112432da76c65f293853b4c942d1",
           videoTitle: "rockstargames-sites-gta-gen9ed4138b1e7fecd4b6d29f0e1bef1fdfd"
         },
-        ls = (0, U.defineMessages)({
+        ds = (0, U.defineMessages)({
           learn_more: {
             id: "carousel_learn_more",
             description: "Carousel learn more button text",
@@ -8203,7 +8203,7 @@ try {
             defaultMessage: "Watch Now"
           }
         }),
-        _s = (0, ie.g)(({
+        _s = (0, oe.g)(({
           videos: e
         }) => {
           const a = (0, g.useLocale)(),
@@ -8212,17 +8212,17 @@ try {
             } = (0, U.useIntl)(),
             {
               track: s
-            } = (0, p.useGtmTrack)(),
+            } = (0, b.useGtmTrack)(),
             {
               setBodyIsLocked: r
             } = (0, g.useBodyScrollable)("VideoCarousel"),
-            [n, o] = (0, m.useState)(0),
-            [i, c] = (0, m.useState)(0),
-            d = (0, m.useRef)(null),
-            l = (0, m.useRef)(null);
+            [n, i] = (0, m.useState)(0),
+            [o, c] = (0, m.useState)(0),
+            l = (0, m.useRef)(null),
+            d = (0, m.useRef)(null);
           (0, m.useEffect)(() => {
-            if (!d.current || !l.current) return;
-            const a = new(Ha())(d.current);
+            if (!l.current || !d.current) return;
+            const a = new(Ha())(l.current);
             a.get("press").set({
               time: 0
             }), a.get("tap").set({
@@ -8230,59 +8230,59 @@ try {
             });
             const t = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
               s = () => {
-                o(n - 1 < 0 ? 0 : n - 1), c(0)
+                i(n - 1 < 0 ? 0 : n - 1), c(0)
               },
-              i = () => {
+              o = () => {
                 const a = n + 1 >= e.length - 1 ? e.length - 1 : n + 1;
-                o(a), c(0)
+                i(a), c(0)
               },
               _ = e => {
-                c(e.isFinal ? 0 : e.deltaX), "panleft" !== e.type && "panright" !== e.type || !l.current?.classList.contains(ds.dragging) || t() && r(!0)
+                c(e.isFinal ? 0 : e.deltaX), "panleft" !== e.type && "panright" !== e.type || !d.current?.classList.contains(ls.dragging) || t() && r(!0)
               },
               m = () => {
                 t() && r(!1), c(0)
               },
               u = e => {
-                "press" === e.type && d.current?.classList.add(`${ds.disableClick}`), "tap" === e.type && (d.current?.classList.remove(`${ds.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && l.current?.classList.add(`${ls.disableClick}`), "tap" === e.type && (l.current?.classList.remove(`${ls.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               g = () => {
-                t() && r(!1), d.current && d.current.classList.remove(`${ds.disableClick}`)
+                t() && r(!1), l.current && l.current.classList.remove(`${ls.disableClick}`)
               },
-              p = () => {
+              b = () => {
                 t() && r(!1)
               };
-            return l.current.addEventListener("transitionend", p), a.on("swiperight", s), a.on("swipeleft", i), a.on("pan", _), a.on("panend", m), a.on("press tap", u), a.on("pressup", g), () => {
-              a.off("swiperight", s), a.off("swipeleft", i), a.off("pan", _), a.off("panend", m), a.off("press tap", u), a.off("pressup", g), l.current && l.current.removeEventListener("transitionend", p), c(0)
+            return d.current.addEventListener("transitionend", b), a.on("swiperight", s), a.on("swipeleft", o), a.on("pan", _), a.on("panend", m), a.on("press tap", u), a.on("pressup", g), () => {
+              a.off("swiperight", s), a.off("swipeleft", o), a.off("pan", _), a.off("panend", m), a.off("press tap", u), a.off("pressup", g), d.current && d.current.removeEventListener("transitionend", b), c(0)
             }
-          }, [d.current, n]);
+          }, [l.current, n]);
           const u = e => {
             const a = "VI" === e.game?.titleSlug;
-            return [e?.titleHomepage ?? e?.title, a ? "/VI" : `/videos/${e.id}`, a ? "_blank" : "_self", t(a ? ls.learn_more : ls.watch_more)]
+            return [e?.titleHomepage ?? e?.title, a ? "/VI" : `/videos/${e.id}`, a ? "_blank" : "_self", t(a ? ds.learn_more : ds.watch_more)]
           };
           return (0, _.jsxs)("section", {
-            className: ds.carousel,
+            className: ls.carousel,
             children: [(0, _.jsx)("div", {
-              className: ds.track,
-              ref: d,
+              className: ls.track,
+              ref: l,
               children: (0, _.jsx)("div", {
-                className: `${ds.items} ${0!==i?ds.dragging:""}`,
-                ref: l,
+                className: `${ls.items} ${0!==o?ls.dragging:""}`,
+                ref: d,
                 style: {
-                  transform: `translateX(calc(-${100*n}% + ${i}px))`
+                  transform: `translateX(calc(-${100*n}% + ${o}px))`
                 },
                 children: e.map((e, a) => {
                   const [t, s, r] = u(e);
-                  return (0, _.jsx)(ba.A, {
+                  return (0, _.jsx)(pa.A, {
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through screencap",
                     "data-gtm-label": s,
                     to: s,
-                    className: n === a ? ds.active : "",
+                    className: n === a ? ls.active : "",
                     role: "link",
                     title: t,
                     tabIndex: n === a ? 0 : -1,
                     target: r,
-                    children: (0, _.jsx)(is, {
+                    children: (0, _.jsx)(os, {
                       video: e,
                       size: 1280
                     })
@@ -8290,50 +8290,50 @@ try {
                 })
               })
             }), (0, _.jsxs)("div", {
-              className: ds.slidesContent,
+              className: ls.slidesContent,
               children: [(0, _.jsx)("div", {
-                className: ds.text,
+                className: ls.text,
                 children: e.map((e, t) => {
-                  const [r, o, i, c] = u(e);
-                  return (0, _.jsxs)(ba.A, {
-                    className: [ds.info, t === n ? ds.active : ""].join(" "),
+                  const [r, i, o, c] = u(e);
+                  return (0, _.jsxs)(pa.A, {
+                    className: [ls.info, t === n ? ls.active : ""].join(" "),
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through footer",
-                    "data-gtm-label": o,
-                    to: o,
+                    "data-gtm-label": i,
+                    to: i,
                     role: "link",
                     tabIndex: n === t ? 0 : -1,
-                    target: i,
+                    target: o,
                     "aria-label": `${e.game.title} ${r}`,
-                    onClick: (d = o, () => {
+                    onClick: (l = i, () => {
                       s({
                         event: "cta_watch_video",
                         text: "watch now",
-                        link_url: d,
+                        link_url: l,
                         element_placement: "video carousel"
                       })
                     }),
                     children: [(0, _.jsxs)("div", {
-                      className: ds.title,
+                      className: ls.title,
                       children: [(0, _.jsxs)("div", {
-                        className: ds.gameTitle,
+                        className: ls.gameTitle,
                         children: [e.game.title, "fr_fr" === a && " "]
                       }), (0, _.jsx)("h2", {
-                        className: ds.videoTitle,
+                        className: ls.videoTitle,
                         children: r
                       })]
-                    }), (0, _.jsx)(Oa.A, {
+                    }), (0, _.jsx)(Ba.A, {
                       tabIndex: -1,
                       role: "presentation",
                       "aria-hidden": !0,
-                      className: ds.cta,
+                      className: ls.cta,
                       children: c
                     })]
                   }, e.id);
-                  var d
+                  var l
                 })
               }), (0, _.jsx)("section", {
-                className: ds.dots,
+                className: ls.dots,
                 "aria-controls": "video-carousel",
                 "aria-label": "video carousel buttons",
                 role: "group",
@@ -8342,8 +8342,8 @@ try {
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
-                  onClick: () => o(a),
-                  className: n === a ? ds.active : "",
+                  onClick: () => i(a),
+                  className: n === a ? ls.active : "",
                   type: "button"
                 }, e.id))
               })]
@@ -8376,12 +8376,12 @@ try {
           inGlobalNav: n = !1
         }) => {
           const {
-            isMobile: o
-          } = (0, g.useWindowResize)(), i = (0, g.useLocale)(), c = (0, m.useMemo)(() => {
+            isMobile: i
+          } = (0, g.useWindowResize)(), o = (0, m.useMemo)(() => {
             let s = "";
-            return e && (s = o ? t(16044)(`./${r}/mobile/${i}.jpg`) : t(51048)(`./${r}/desktop/${i}.jpg`)), s || (s = t(39294)(`./${r}.jpg`), s += `?im=Resize=${a}`), s
-          }, [o, r]), [d] = (0, g.usePreloadImg)(c);
-          let l = c;
+            return e && (s = i ? t(25087)(`./${r}/mobile/global.jpg`) : t(58963)(`./${r}/desktop/global.jpg`)), s || (s = t(39294)(`./${r}.jpg`), s += `?im=Resize=${a}`), s
+          }, [i, r]), [c] = (0, g.usePreloadImg)(o);
+          let l = o;
           return (0, _.jsx)("div", {
             role: "img",
             "aria-label": s,
@@ -8389,14 +8389,14 @@ try {
               backgroundImage: `url(${l})`,
               borderRadius: n ? "unset" : ""
             },
-            className: [us.img, d ? us.startAnimation : "", e ? us.wide : ""].join(" ")
+            className: [us.img, c ? us.startAnimation : "", e ? us.wide : ""].join(" ")
           })
         },
-        ps = {
+        bs = {
           fobLink: "rockstargames-sites-gta-gen9d30ff40ba02b7ed14124da3ca9cd4f2b",
           wide: "rockstargames-sites-gta-gen9c9686ec502f78b05e47568667e90bd17"
         },
-        bs = ({
+        ps = ({
           game: e,
           to: a
         }) => {
@@ -8404,14 +8404,14 @@ try {
             titleSlug: t,
             urlOfficial: s = ""
           } = e, r = ["VI"].includes(t.toUpperCase());
-          return (0, _.jsx)(ba.A, {
+          return (0, _.jsx)(pa.A, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": t,
             "data-testid": `${t}-gamecard`,
             to: a ?? s,
             target: "_self",
-            className: [ps.fobLink, r ? ps.wide : ""].join(" "),
+            className: [bs.fobLink, r ? bs.wide : ""].join(" "),
             reloadDocument: r,
             children: (0, _.jsx)(gs, {
               title: e.title,
@@ -8434,7 +8434,7 @@ try {
           trackWrapper: "rockstargames-sites-gta-gen9bd79ab04bc93e3bcf79be808e0a06e9b",
           videoList: "rockstargames-sites-gta-gen9bacddb57787eca7b621a046e6f23aaf5"
         },
-        ks = (0, ie.g)(({
+        ks = (0, oe.g)(({
           vids: e,
           games: a,
           title: t,
@@ -8443,16 +8443,16 @@ try {
           const r = (0, U.useIntl)(),
             {
               track: n
-            } = (0, p.useGtmTrack)(),
-            o = void 0 !== a ? "games" : "videos",
-            [i, c] = (0, m.useState)(),
-            [d, l] = (0, m.useState)(),
+            } = (0, b.useGtmTrack)(),
+            i = void 0 !== a ? "games" : "videos",
+            [o, c] = (0, m.useState)(),
+            [l, d] = (0, m.useState)(),
             [u, g] = (0, m.useState)(0),
-            b = (0, m.useRef)(null),
+            p = (0, m.useRef)(null),
             f = (0, m.useRef)(null),
             k = (0, m.useRef)(null);
           (0, m.useEffect)(() => {
-            l({
+            d({
               nextEl: k.current,
               prevEl: f.current
             })
@@ -8467,14 +8467,14 @@ try {
             }
           }, [u]);
           const h = e => {
-            b.current && (b.current.scrollLeft = 0), i?.slideTo(e)
+            p.current && (p.current.scrollLeft = 0), o?.slideTo(e)
           };
           let v;
-          return v = "games" === o ? (0, _.jsx)(_.Fragment, {
+          return v = "games" === i ? (0, _.jsx)(_.Fragment, {
             children: a.results.filter(e => "775700as" !== e.id).map((e, a) => (0, _.jsx)(Ta.qr, {
               className: fs.slide,
               onFocus: () => h(a),
-              children: (0, _.jsx)(bs, {
+              children: (0, _.jsx)(ps, {
                 game: e,
                 dontOverrideTo: !0,
                 to: `/videos?type=game&gameId=${e.id}`
@@ -8501,7 +8501,7 @@ try {
                   ref: f,
                   "aria-label": r.formatMessage(ms.previous_button_label),
                   onKeyDown: e => {
-                    "Enter" !== e.key && " " !== e.key && "Spacebar" !== e.key || (e.preventDefault(), i?.slidePrev())
+                    "Enter" !== e.key && " " !== e.key && "Spacebar" !== e.key || (e.preventDefault(), o?.slidePrev())
                   }
                 }), (0, _.jsx)("button", {
                   className: (0, T.default)(fs.arrow, fs.next),
@@ -8509,9 +8509,9 @@ try {
                   ref: k,
                   "aria-label": r.formatMessage(ms.next_button_label),
                   onKeyDown: e => {
-                    if ("Tab" !== e.key || e.shiftKey) "Enter" !== e.key && " " !== e.key && "Spacebar" !== e.key || (e.preventDefault(), i?.slideNext());
+                    if ("Tab" !== e.key || e.shiftKey) "Enter" !== e.key && " " !== e.key && "Spacebar" !== e.key || (e.preventDefault(), o?.slideNext());
                     else {
-                      const a = i?.slides[i?.activeIndex].querySelector('a, button, [role="button"]');
+                      const a = o?.slides[o?.activeIndex].querySelector('a, button, [role="button"]');
                       a && (e.preventDefault(), a.focus())
                     }
                   }
@@ -8521,7 +8521,7 @@ try {
               className: (0, T.default)(fs.items, u % 1 != 0 ? fs.partial : ""),
               children: (0, _.jsx)("div", {
                 className: fs.trackWrapper,
-                ref: b,
+                ref: p,
                 children: u && (0, _.jsx)(Ta.RC, {
                   className: fs.track,
                   slidesPerView: u,
@@ -8530,8 +8530,8 @@ try {
                     c(e)
                   },
                   grabCursor: !0,
-                  navigation: d,
-                  modules: [Ia.Vx],
+                  navigation: l,
+                  modules: [Ea.Vx],
                   slideClass: (0, T.default)("swiper-slide"),
                   onSlideNextTransitionEnd: () => {
                     n({
@@ -8610,50 +8610,50 @@ try {
         {
           Gen9CoreCarousel: Cs,
           framer: Ts,
-          useTinaModuleFetchByIds: Is,
-          withSimpleErrorBoundary: Es
+          useTinaModuleFetchByIds: Es,
+          withSimpleErrorBoundary: Is
         } = r,
         zs = {
           Card: va,
-          CardWithImageGallery: Va,
+          CardWithImageGallery: Oa,
           TextCard: Ss,
           ...r
         },
-        As = Ts.withFadeIn(Es(({
+        As = Ts.withFadeIn(Is(({
           cards: e = [],
           size: a,
           name: t,
           title: s,
           description: r,
           disclaimer: n,
-          customSlidesPerView: o = null,
-          theme: i = "none",
+          customSlidesPerView: i = null,
+          theme: o = "none",
           cardSizeBreakpoints: c = {},
-          customAspectRatio: d = "3/1",
-          titleBadge: l = null,
+          customAspectRatio: l = "3/1",
+          titleBadge: d = null,
           id: g = ""
         }) => {
-          const p = (0, m.useRef)(null),
-            b = (0, F.map)(e, "id"),
-            f = Is({
-              ids: b
+          const b = (0, m.useRef)(null),
+            p = (0, F.map)(e, "id"),
+            f = Es({
+              ids: p
             }),
-            [k, h] = (0, m.useState)(o),
+            [k, h] = (0, m.useState)(i),
             [v] = (0, u.useSearchParams)(),
             [y, j] = (0, m.useState)(!1);
           (0, m.useEffect)(() => {
             if ("fob" === a) {
               const e = v.get("section");
-              if (e && "games" === e && !y && (j(!0), p.current)) {
+              if (e && "games" === e && !y && (j(!0), b.current)) {
                 const e = 100;
-                window.scrollTo(0, p.current.offsetTop - e)
+                window.scrollTo(0, b.current.offsetTop - e)
               }
             }
           }, []), (0, m.useEffect)(() => {
-            if (!p.current) return;
+            if (!b.current) return;
             const e = () => {
-              if (!p.current) return;
-              const e = o || window.getComputedStyle(p.current).getPropertyValue("--slides-per-view");
+              if (!b.current) return;
+              const e = i || window.getComputedStyle(b.current).getPropertyValue("--slides-per-view");
               h(e)
             };
             return window.addEventListener("resize", e), e(), () => {
@@ -8667,26 +8667,26 @@ try {
               r = !1;
             return f.forEach(e => {
               "cover-card" === e?.tina?.payload?.meta?.type && (t = e?.id, void 0 !== e?.tina?.payload?.content[0]?.excludeFromModal && (r = e.tina.payload.content[0].excludeFromModal))
-            }), f.reduce((n, o) => {
-              if (o) {
+            }), f.reduce((n, i) => {
+              if (i) {
                 const {
                   id: c,
-                  tina: d
-                } = o, l = (0, F.clone)(d);
-                (0, F.set)(l, "payload.meta.id", c);
-                const m = b.filter(e => e !== t || e === t && !r);
+                  tina: l
+                } = i, d = (0, F.clone)(l);
+                (0, F.set)(d, "payload.meta.id", c);
+                const m = p.filter(e => e !== t || e === t && !r);
                 n.push((0, _.jsx)(z.TinaParser, {
                   components: zs,
-                  tina: l,
+                  tina: d,
                   componentProps: {
                     deckProps: {
                       size: a
                     },
-                    tina: l,
+                    tina: d,
                     id: c,
                     position: e,
                     sectionTitle: s,
-                    theme: i,
+                    theme: o,
                     cardIds: m
                   }
                 }, c)), e += 1
@@ -8696,8 +8696,8 @@ try {
           }, [f, a]);
           return (0, _.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9cf8eaaa96e41e0c9b5a5a1745ded9986",
-            "data-theme": i,
-            ref: p,
+            "data-theme": o,
+            ref: b,
             id: g,
             children: [(0, _.jsx)(Cs, {
               description: r,
@@ -8707,9 +8707,9 @@ try {
               title: s,
               name: t,
               customSlidesPerView: k,
-              customAspectRatio: d,
-              titleBadge: l,
-              theme: i
+              customAspectRatio: l,
+              titleBadge: d,
+              theme: o
             }), n && (0, _.jsx)("div", {
               className: "rockstargames-sites-gta-gen9d6d0f9d842469dec608825829148dff6",
               children: (0, _.jsx)("span", {
@@ -8746,21 +8746,21 @@ try {
           } else(0, F.isObject)(e) && !(0, F.isArray)(e) ? Ds(e, a) : (0, F.isArray)(e) && (t[s] = e.map(e => (0, F.isObject)(e) ? Ds(e, a) : e))
         }), t
       }
-      const Vs = (0, g.withTranslations)(({
+      const Os = (0, g.withTranslations)(({
           active: e,
           styles: a,
           title: t,
           itemNumber: s,
           inModalMode: r,
           openModalMode: n,
-          element: o,
-          upNext: i,
+          element: i,
+          upNext: o,
           mobileMode: c,
-          refDeck: d,
-          components: l,
+          refDeck: l,
+          components: d,
           tina: u,
           prevPage: g,
-          nextPage: b,
+          nextPage: p,
           onFocus: f,
           transitionStyle: k,
           selectedItemNumber: h,
@@ -8772,17 +8772,17 @@ try {
           const w = (0, U.useIntl)(),
             {
               track: N
-            } = (0, p.useGtmTrack)(),
+            } = (0, b.useGtmTrack)(),
             S = (0, m.createRef)(),
             T = (0, m.createRef)(),
-            I = (0, m.createRef)(),
             E = (0, m.createRef)(),
+            I = (0, m.createRef)(),
             [A, M] = (0, m.useState)(!1),
             [P, L] = (0, m.useState)(0),
             [R, D] = (0, m.useState)(0),
-            [V, O] = (0, m.useState)(0),
-            [B, $] = (0, m.useState)(0),
-            [G, H] = (0, m.useState)(0),
+            [O, B] = (0, m.useState)(0),
+            [G, $] = (0, m.useState)(0),
+            [V, H] = (0, m.useState)(0),
             [q, W] = (0, m.useState)(!1),
             [K, Y] = (0, m.useState)(0),
             [X, Z] = (0, m.useState)(0),
@@ -8790,12 +8790,12 @@ try {
             [ee, ae] = (0, m.useState)("700"),
             [te, se] = (0, m.useState)(-1),
             [re, ne] = (0, m.useState)(0),
-            [oe, ie] = (0, m.useState)(0),
-            [ce, de] = (0, m.useState)(0),
-            [le, _e] = (0, m.useState)(!1),
+            [ie, oe] = (0, m.useState)(0),
+            [ce, le] = (0, m.useState)(0),
+            [de, _e] = (0, m.useState)(!1),
             [me, ue] = (0, m.useState)(""),
-            [ge, pe] = (0, m.useState)(null),
-            [be, fe] = (0, m.useState)(!1),
+            [ge, be] = (0, m.useState)(null),
+            [pe, fe] = (0, m.useState)(!1),
             [ke, he] = (0, m.useState)(null),
             [ve, ye] = (0, m.useState)(!1),
             [je, xe] = (0, m.useState)(!1),
@@ -8807,8 +8807,8 @@ try {
             }),
             Ce = Se?.meta ?? {},
             Te = Ds(Se?.content?.[0], Ne),
-            Ie = (0, m.useMemo)(() => Te?.images?.[0]?.image?.badge, [Te]),
-            Ee = (0, m.useMemo)(() => Te.title ?? t ?? Ce?.title, [t, Ce?.title, Te.title]),
+            Ee = (0, m.useMemo)(() => Te?.images?.[0]?.image?.badge, [Te]),
+            Ie = (0, m.useMemo)(() => Te.title ?? t ?? Ce?.title, [t, Ce?.title, Te.title]),
             ze = (0, C.S1)({
               alt: Te?.images?.[0]?.image?.alt ?? "",
               ariaLabel: Te?.images?.[0]?.image?.alt ?? "",
@@ -8819,8 +8819,8 @@ try {
             Pe = (0, m.useMemo)(() => Ce?.foreignId, [Ce]),
             Le = (0, m.useMemo)(() => Ce?.foreignTitle, [Ce]),
             [Re, De] = (0, m.useState)(0),
-            [Ve, Oe] = (0, m.useState)(0),
-            [$e, Ge] = (0, m.useState)(0),
+            [Oe, Be] = (0, m.useState)(0),
+            [$e, Ve] = (0, m.useState)(0),
             [Fe, He] = (0, m.useState)(0),
             [Ue, qe] = (0, m.useState)(!1),
             [We, Ke] = (0, m.useState)(0),
@@ -8828,36 +8828,36 @@ try {
             [Ze, Je] = (0, m.useState)(null),
             [Qe, ea] = (0, m.useState)(!1),
             aa = (0, m.useCallback)(e => {
-              if (!0 === q || !r && !c || be) return;
+              if (!0 === q || !r && !c || pe) return;
               const a = Ls(e);
-              De(a.x), Oe(a.y)
+              De(a.x), Be(a.y)
             }, [q, r]),
             ta = e => {
               aa(e)
             },
             sa = e => {
-              if (!0 === q || 0 === Re || !r && !c || be) return;
+              if (!0 === q || 0 === Re || !r && !c || pe) return;
               const a = Ls(e),
                 t = a.x > Re ? 1 : -1,
                 s = Math.abs(Re - a.x);
               r && !c && s > Ye ? (ea(!0), ue(t > 0 ? "prev" : "next"), na()) : (qe(!0), Ke(s * t), j(s * t))
             },
             ra = e => {
-              if (!0 === q || !r && !c || be) return;
+              if (!0 === q || !r && !c || pe) return;
               const a = Ls(e),
                 t = a.x > Re ? 1 : -1,
                 s = Math.abs(Re - a.x),
-                n = Math.abs(Ve - a.y);
+                n = Math.abs(Oe - a.y);
               r && !c ? (na(), ue("")) : s > Ye && n < 25 ? (ea(!0), ue(t > 0 ? "prev" : "next"), na()) : na()
             },
             na = () => {
-              W(!0), De(0), Oe(0), qe(!1), Ke(0), j(0)
+              W(!0), De(0), Be(0), qe(!1), Ke(0), j(0)
             },
-            oa = e => {
+            ia = e => {
               e ? (r || M(!0), r || c || (clearTimeout(te), se(setTimeout(() => {
                 N({
                   event: "card_title_hover",
-                  card_name: Ee,
+                  card_name: Ie,
                   card_id: s,
                   position: s,
                   view_name: `${Pe}/${Le}`,
@@ -8869,29 +8869,29 @@ try {
           return (0, m.useEffect)(() => {
             let e = K;
             A ? e = 0 : r && !c && (e = K), L(e)
-          }, [A, c, r, R, B, X, J, V, K]), (0, m.useEffect)(() => {
+          }, [A, c, r, R, G, X, J, O, K]), (0, m.useEffect)(() => {
             M(!(!r || !c))
           }, [r, c]), (0, m.useEffect)(() => {
             r && e && N({
               event: "virtualPageview",
               display_type: c ? "mobile" : "desktop",
-              view_name: `${Pe}/${Ee}`,
+              view_name: `${Pe}/${Ie}`,
               source_content_id: Pe,
               source_content_name: Le
             })
           }, [r, e]), (0, m.useEffect)(() => {
             const e = (0, F.debounce)((e, a) => {
               let t = 18;
-              if (e?.documentElement && (t = Ps(e?.documentElement, "--root-font-size")), oe !== a.innerHeight && ie(a.innerHeight), d?.current) {
-                Q(Ps(d.current, "--eventDeck-marginSm") * t);
-                const e = t * Ps(d?.current, "--eventDeck-modalGutters"),
+              if (e?.documentElement && (t = Ps(e?.documentElement, "--root-font-size")), ie !== a.innerHeight && oe(a.innerHeight), l?.current) {
+                Q(Ps(l.current, "--eventDeck-marginSm") * t);
+                const e = t * Ps(l?.current, "--eventDeck-modalGutters"),
                   s = a?.innerWidth,
                   r = s - 2 * e;
-                D(r), I.current && c && O(r), $(Ps(d.current, "--eventDeck-itemSize") * t), de(Ps(d.current, "--eventDeck-phaseOneTransitionDuration"));
-                const n = Ps(d?.current, "--eventDeck-itemImageTitleMargins") * t,
-                  o = T?.current?.clientHeight,
-                  i = o + n;
-                Number.isNaN(i) || Y(i), ne(Ps(d?.current, "--eventDeck-headerHeight") * t)
+                D(r), E.current && c && B(r), $(Ps(l.current, "--eventDeck-itemSize") * t), le(Ps(l.current, "--eventDeck-phaseOneTransitionDuration"));
+                const n = Ps(l?.current, "--eventDeck-itemImageTitleMargins") * t,
+                  i = T?.current?.clientHeight,
+                  o = i + n;
+                Number.isNaN(o) || Y(o), ne(Ps(l?.current, "--eventDeck-headerHeight") * t)
               }
               let s = Math.min(700, a.innerWidth);
               c || (s = 900), ae(`${s}`)
@@ -8903,24 +8903,24 @@ try {
                 e(document, window)
               })
             }
-          }, [d, c]), (0, m.useEffect)(() => {
+          }, [l, c]), (0, m.useEffect)(() => {
             if (S.current) {
               const e = S.current.clientHeight;
               Number.isNaN(e) || Z(e)
             }
           }, [S]), (0, m.useEffect)(() => {
-            if (r && c && I.current && (I.current.style.transform = "scale(1) translate3d(0, 0, 0)"), !r && c && I.current) {
+            if (r && c && E.current && (E.current.style.transform = "scale(1) translate3d(0, 0, 0)"), !r && c && E.current) {
               const e = 228 / R;
-              I.current.style.transform = `scale(${e}) translate3d(0, 0, 0)`
-            }!c && I.current && (I.current.style.transform = null)
-          }, [r, c, R, V]), (0, m.useEffect)(() => {
+              E.current.style.transform = `scale(${e}) translate3d(0, 0, 0)`
+            }!c && E.current && (E.current.style.transform = null)
+          }, [r, c, R, O]), (0, m.useEffect)(() => {
             const e = .5 * R,
-              a = oe - re - 3 * J;
+              a = ie - re - 3 * J;
             H(R - (e < a ? e : a))
-          }, [R, J, oe]), (0, m.useEffect)(() => {
-            "next" === me ? (b(null, !0), ue("")) : "prev" === me && (g(null, !0), ue(""))
+          }, [R, J, ie]), (0, m.useEffect)(() => {
+            "next" === me ? (p(null, !0), ue("")) : "prev" === me && (g(null, !0), ue(""))
           }, [me]), (0, m.useEffect)(() => {
-            Ge(0), He(0)
+            Ve(0), He(0)
           }, [c]), (0, m.useEffect)(() => {
             c ? Xe(r ? 35 : 20) : r && Xe(50)
           }, [r, c]), (0, m.useEffect)(() => {
@@ -8929,7 +8929,7 @@ try {
                 t = e[0].split("("),
                 s = Number(t[1].replace("px", "")),
                 r = Number(e[1].replace("px", ""));
-              Ge(s), He(r)
+              Ve(s), He(r)
             }
           }, [a]), (0, m.useEffect)(() => {
             if (!q) return;
@@ -8937,7 +8937,7 @@ try {
             const e = setTimeout(() => {
               W(!1), De(0)
             }, 200);
-            pe(e)
+            be(e)
           }, [q, 200]), (0, m.useEffect)(() => {
             if (!Qe) return;
             clearTimeout(Ze);
@@ -8947,19 +8947,19 @@ try {
             Je(e)
           }, [Qe]), (0, m.useEffect)(() => {
             r && clearTimeout(te), setTimeout(() => {
-              _e(!le)
+              _e(!de)
             }, ce)
           }, [r]), (0, m.useEffect)(() => (document.body.addEventListener("mouseleave", na), () => {
             document.body.removeEventListener("mouseleave", na)
           }), []), (0, m.useEffect)(() => {
-            E.current ? ye(Rs(E.current)) : ye(!1), void 0 !== o && o.current ? xe(Rs(o.current)) : xe(!1)
-          }, [o, E, e, r, le]), Te ? (0, _.jsxs)("div", {
+            I.current ? ye(Rs(I.current)) : ye(!1), void 0 !== i && i.current ? xe(Rs(i.current)) : xe(!1)
+          }, [i, I, e, r, de]), Te ? (0, _.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9c02ee363d47108460ab7916fc955cd9b",
-            ref: o,
+            ref: i,
             "data-item-position": s,
             "data-modal-mode": r,
             "data-active-item": e,
-            "data-up-next": i,
+            "data-up-next": o,
             "data-transition": Ue || 0 !== y ? "none" : k,
             "data-scrollable": je,
             style: {
@@ -8967,14 +8967,14 @@ try {
               transform: r && e && !c ? `translate3d(${$e+We}px, ${Fe}px, 0)` : c && !r ? `translate3d(${$e+y}px, ${Fe}px, 0)` : a?.transform
             },
             onClick: e => {
-              Qe || (r ? r && !c && (s < h ? g(e, !0) : s > h && b(e, !0)) : n(e))
+              Qe || (r ? r && !c && (s < h ? g(e, !0) : s > h && p(e, !0)) : n(e))
             },
-            onMouseEnter: () => oa(!0),
-            onMouseLeave: () => oa(!1),
+            onMouseEnter: () => ia(!0),
+            onMouseLeave: () => ia(!1),
             onFocus: e => (e => {
-              f?.(e), oa(!0)
+              f?.(e), ia(!0)
             })(e),
-            onBlur: () => oa(!1),
+            onBlur: () => ia(!1),
             onTouchStart: ta,
             onTouchMove: sa,
             onTouchEnd: ra,
@@ -8987,7 +8987,7 @@ try {
             onKeyDown: e => {
               "Tab" === e.key && e.shiftKey && r && (e.preventDefault(), x("backwards")), "Space" === e.code && e.preventDefault()
             },
-            "aria-label": r ? w.formatMessage(Be.events_deck_modal_group_label) : Ee,
+            "aria-label": r ? w.formatMessage(Ge.events_deck_modal_group_label) : Ie,
             role: r ? "dialog" : "button",
             tabIndex: r ? -1 : 0,
             children: [(0, _.jsxs)("div", {
@@ -8999,12 +8999,12 @@ try {
               },
               role: "figure",
               children: [Me && (0, _.jsx)("img", {
-                ref: I,
+                ref: E,
                 src: `${ze?.src?.mobile??ze?.src?.desktop}?im=Resize,width=${ee}`,
                 alt: ze?.alt ?? "",
                 style: {
-                  width: 0 !== V && c ? `${V}px` : null,
-                  height: 0 !== V && c ? `${V}px` : null
+                  width: 0 !== O && c ? `${O}px` : null,
+                  height: 0 !== O && c ? `${O}px` : null
                 }
               }), (0, _.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9dc279f97c134d6e7d30602288b8b10ae",
@@ -9012,23 +9012,23 @@ try {
                 style: {
                   transform: !c || c && r ? `translate3d(0, ${P}px, 0)` : null
                 },
-                children: [Ie && (0, _.jsx)("div", {
+                children: [Ee && (0, _.jsx)("div", {
                   className: "rockstargames-sites-gta-gen9cfe252d5613a21c1d308c98566cabd21",
                   ref: S,
                   children: (0, _.jsx)(Ae, {
-                    text: Ie
+                    text: Ee
                   })
                 }), (0, _.jsx)("span", {
                   className: "rockstargames-sites-gta-gen9b311a78aea53383ab6bd5cbccb52ceeb",
                   tabIndex: -1,
                   ref: T,
                   "aria-hidden": "true",
-                  children: Ee
+                  children: Ie
                 })]
               })]
             }), (0, _.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9d212586e74ea4b4fe934beed9e339f78",
-              ref: E,
+              ref: I,
               "aria-hidden": !r,
               tabIndex: r ? 0 : -1,
               onScroll: () => {
@@ -9040,18 +9040,18 @@ try {
               },
               style: {
                 top: r && c ? `${R}px` : null,
-                width: r && !c && e ? `${G}px` : null,
+                width: r && !c && e ? `${V}px` : null,
                 touchAction: ve || c ? "unset" : "none"
               },
-              children: [Ee && (0, _.jsx)("span", {
+              children: [Ie && (0, _.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9da9ef865674c108ffd53cfab2ed2971a",
                 role: "heading",
-                children: Ee
+                children: Ie
               }), (0, _.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9abad8b0c98a7216d91b672492397e6a6",
                 role: "text",
                 children: (0, _.jsx)(z.TinaParser, {
-                  components: l,
+                  components: d,
                   tina: {
                     meta: Ce,
                     payload: {
@@ -9070,47 +9070,47 @@ try {
             })]
           }) : null
         }),
-        Os = "rockstargames-sites-gta-gen9eff7810cc71a3b63bfc3e58cbe4a0279",
-        Bs = ({
+        Bs = "rockstargames-sites-gta-gen9eff7810cc71a3b63bfc3e58cbe4a0279",
+        Gs = ({
           prevPage: e,
           prevBtnDisabled: a,
           nextPage: t,
           nextBtnDisabled: s,
           selectedItemNumber: r,
           itemsData: n,
-          closeModalMode: o,
-          inModalMode: i,
+          closeModalMode: i,
+          inModalMode: o,
           controlsHidden: c,
-          focusTrapControl: d,
-          focusTrapDirection: l,
+          focusTrapControl: l,
+          focusTrapDirection: d,
           setTriggerFocusCard: u
         }) => {
           const g = (0, U.useIntl)(),
-            p = (0, m.createRef)(),
             b = (0, m.createRef)(),
+            p = (0, m.createRef)(),
             f = (0, m.createRef)();
           return (0, m.useEffect)(() => {
-            d && ("backwards" === l ? f?.current?.focus() : a ? b?.current?.focus() : p?.current?.focus())
-          }, [d, a]), (0, _.jsxs)(_.Fragment, {
+            l && ("backwards" === d ? f?.current?.focus() : a ? p?.current?.focus() : b?.current?.focus())
+          }, [l, a]), (0, _.jsxs)(_.Fragment, {
             children: [(0, _.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9a13ee8af1dd8f09d28c65e56abd782ef",
               "aria-hidden": c || "false",
               children: [(0, _.jsx)("button", {
-                className: Os,
-                ref: p,
+                className: Bs,
+                ref: b,
                 type: "button",
                 onClick: e,
                 disabled: a,
-                "aria-label": i ? g.formatMessage(Be.events_deck_modal_previous_aria_label) : g.formatMessage(Be.events_deck_previous_aria_label),
+                "aria-label": o ? g.formatMessage(Ge.events_deck_modal_previous_aria_label) : g.formatMessage(Ge.events_deck_previous_aria_label),
                 onKeyDown: e => {
-                  "Tab" === e.key && e.shiftKey && i && (e.preventDefault(), u(!0))
+                  "Tab" === e.key && e.shiftKey && o && (e.preventDefault(), u(!0))
                 }
               }), (0, _.jsxs)("span", {
                 className: "rockstargames-sites-gta-gen9a6b11adaa46a0c2acc5893d2f5da04f1",
-                "aria-hidden": !i,
+                "aria-hidden": !o,
                 children: [(0, _.jsx)(hs, {
                   "aria-live": "polite",
-                  children: g.formatMessage(Be.events_deck_paging_label, {
+                  children: g.formatMessage(Ge.events_deck_paging_label, {
                     currentPage: r + 1,
                     totalPages: n.length
                   })
@@ -9122,27 +9122,27 @@ try {
                   }), n.length]
                 })]
               }), (0, _.jsx)("button", {
-                className: Os,
-                ref: b,
+                className: Bs,
+                ref: p,
                 type: "button",
                 onClick: t,
                 onKeyDown: e => {
-                  "Tab" === e.key && e.shiftKey && a && i && (e.preventDefault(), u(!0))
+                  "Tab" === e.key && e.shiftKey && a && o && (e.preventDefault(), u(!0))
                 },
                 disabled: s,
-                "aria-label": i ? g.formatMessage(Be.events_deck_modal_next_aria_label) : g.formatMessage(Be.events_deck_next_aria_label)
+                "aria-label": o ? g.formatMessage(Ge.events_deck_modal_next_aria_label) : g.formatMessage(Ge.events_deck_next_aria_label)
               })]
             }), (0, _.jsx)("button", {
               className: "rockstargames-sites-gta-gen9fb0b7933375b44858b7e92cdea86ee81",
               type: "button",
-              onClick: o,
+              onClick: i,
               ref: f,
               onKeyDown: e => {
-                "Tab" === e.key && !e.shiftKey && i && (e.preventDefault(), u(!0))
+                "Tab" === e.key && !e.shiftKey && o && (e.preventDefault(), u(!0))
               },
-              "aria-label": g.formatMessage(Be.events_deck_modal_close_label),
-              "aria-hidden": !i,
-              tabIndex: i ? 0 : -1
+              "aria-label": g.formatMessage(Ge.events_deck_modal_close_label),
+              "aria-hidden": !o,
+              tabIndex: o ? 0 : -1
             })]
           })
         },
@@ -9153,7 +9153,7 @@ try {
             title: t
           } = e, {
             track: s
-          } = (0, p.useGtmTrack)(), [r, n] = (0, m.useState)(!1), o = (() => {
+          } = (0, b.useGtmTrack)(), [r, n] = (0, m.useState)(!1), i = (() => {
             const {
               data: e
             } = (0, g.useQuery)(Ca.TinaModulesList, {
@@ -9166,10 +9166,10 @@ try {
             return (0, Ce.X)({
               ids: t
             })
-          })(), [i, c] = (0, m.useState)([]), [d, u] = (0, m.useState)(null), [b, f] = (0, m.useState)(0), [k, h] = (0, m.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [v, y] = (0, m.useState)(!1), j = (0, m.createRef)(), [x, w] = (0, m.useState)(null), N = (0, m.createRef)(), S = (0, m.createRef)(), [C, T] = (0, m.useState)([]), [I, E] = (0, m.useState)(!0), [A, M] = (0, m.useState)(!1), [P, L] = (0, m.useState)(!1), [R, D] = (0, m.useState)([]), [V, O] = (0, m.useState)(404), [B, $] = (0, m.useState)(808), [G, U] = (0, m.useState)(672), [q, W] = (0, m.useState)(336), [K, Y] = (0, m.useState)(0), [X, Z] = (0, m.useState)(0), [J, Q] = (0, m.useState)(0), [ee, ae] = (0, m.useState)(0), [te, se] = (0, m.useState)(0), [re, ne] = (0, m.useState)(!1), oe = !!(0, g.usePrevious)(re), [ie, ce] = (0, m.useState)(window.innerWidth), [de, le] = (0, m.useState)(0), [_e, me] = (0, m.useState)(0), [ue, ge] = (0, m.useState)(0), [pe, be] = (0, m.useState)(0), [he, ve] = (0, m.useState)(0), [ye, je] = (0, m.useState)(0), [xe, we] = (0, m.useState)(0), [Ne, Se] = (0, m.useState)(0), [Te, Ee] = (0, m.useState)(-1e3), [ze, Ae] = (0, m.useState)(0), [Me, Pe] = (0, m.useState)(50), [Le, Re] = (0, m.useState)(0), [De, Ve] = (0, m.useState)(!1), [Oe, Be] = (0, m.useState)(768), [$e, Ge] = (0, m.useState)(!1), [Fe, He] = (0, m.useState)(!1), [Ue, qe] = (0, m.useState)(!1), [We, Ke] = (0, m.useState)(!1), [Ye, Xe] = (0, m.useState)(!1), [Ze, Je] = (0, m.useState)(1e3), [Qe, ea] = (0, m.useState)(1.2), [aa, ta] = (0, m.useState)(0), [sa, ra] = (0, m.useState)(!1), [na, oa] = (0, m.useState)(!1), [ia, ca] = (0, m.useState)(!0), [da, la] = (0, m.useState)(!1), [_a, ma] = (0, m.useState)(!1), [ua, ga] = (0, m.useState)(null), [pa, ba] = (0, m.useState)(100), [fa, ka] = (0, m.useState)(!1), [ha, va] = (0, m.useState)({}), [ya, ja] = (0, m.useState)(""), [xa, wa] = (0, m.useState)(0), [Na, Sa] = (0, m.useState)(!1), [Ta, Ia] = (0, m.useState)(!1), [Ea, za] = (0, m.useState)(0), [Aa, Ma] = (0, m.useState)(0), [Pa, La] = (0, m.useState)(100), [Ra, Da] = (0, m.useState)(!1), [Oa, Ba] = (0, m.useState)(!1), [$a, Ga] = (0, m.useState)(!1), [Fa, Ha] = (0, m.useState)(!1), [Ua, qa] = (0, m.useState)("forward"), Wa = () => ie * de + Me, Ka = () => !1 === De ? Qe : 1, Ya = e => e === xe - 1 || e === xe + 1, Xa = () => -1 * ye - pe, Za = (e, a = !0) => {
+          })(), [o, c] = (0, m.useState)([]), [l, u] = (0, m.useState)(null), [p, f] = (0, m.useState)(0), [k, h] = (0, m.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [v, y] = (0, m.useState)(!1), j = (0, m.createRef)(), [x, w] = (0, m.useState)(null), N = (0, m.createRef)(), S = (0, m.createRef)(), [C, T] = (0, m.useState)([]), [E, I] = (0, m.useState)(!0), [A, M] = (0, m.useState)(!1), [P, L] = (0, m.useState)(!1), [R, D] = (0, m.useState)([]), [O, B] = (0, m.useState)(404), [G, $] = (0, m.useState)(808), [V, U] = (0, m.useState)(672), [q, W] = (0, m.useState)(336), [K, Y] = (0, m.useState)(0), [X, Z] = (0, m.useState)(0), [J, Q] = (0, m.useState)(0), [ee, ae] = (0, m.useState)(0), [te, se] = (0, m.useState)(0), [re, ne] = (0, m.useState)(!1), ie = !!(0, g.usePrevious)(re), [oe, ce] = (0, m.useState)(window.innerWidth), [le, de] = (0, m.useState)(0), [_e, me] = (0, m.useState)(0), [ue, ge] = (0, m.useState)(0), [be, pe] = (0, m.useState)(0), [he, ve] = (0, m.useState)(0), [ye, je] = (0, m.useState)(0), [xe, we] = (0, m.useState)(0), [Ne, Se] = (0, m.useState)(0), [Te, Ie] = (0, m.useState)(-1e3), [ze, Ae] = (0, m.useState)(0), [Me, Pe] = (0, m.useState)(50), [Le, Re] = (0, m.useState)(0), [De, Oe] = (0, m.useState)(!1), [Be, Ge] = (0, m.useState)(768), [$e, Ve] = (0, m.useState)(!1), [Fe, He] = (0, m.useState)(!1), [Ue, qe] = (0, m.useState)(!1), [We, Ke] = (0, m.useState)(!1), [Ye, Xe] = (0, m.useState)(!1), [Ze, Je] = (0, m.useState)(1e3), [Qe, ea] = (0, m.useState)(1.2), [aa, ta] = (0, m.useState)(0), [sa, ra] = (0, m.useState)(!1), [na, ia] = (0, m.useState)(!1), [oa, ca] = (0, m.useState)(!0), [la, da] = (0, m.useState)(!1), [_a, ma] = (0, m.useState)(!1), [ua, ga] = (0, m.useState)(null), [ba, pa] = (0, m.useState)(100), [fa, ka] = (0, m.useState)(!1), [ha, va] = (0, m.useState)({}), [ya, ja] = (0, m.useState)(""), [xa, wa] = (0, m.useState)(0), [Na, Sa] = (0, m.useState)(!1), [Ta, Ea] = (0, m.useState)(!1), [Ia, za] = (0, m.useState)(0), [Aa, Ma] = (0, m.useState)(0), [Pa, La] = (0, m.useState)(100), [Ra, Da] = (0, m.useState)(!1), [Ba, Ga] = (0, m.useState)(!1), [$a, Va] = (0, m.useState)(!1), [Fa, Ha] = (0, m.useState)(!1), [Ua, qa] = (0, m.useState)("forward"), Wa = () => oe * le + Me, Ka = () => !1 === De ? Qe : 1, Ya = e => e === xe - 1 || e === xe + 1, Xa = () => -1 * ye - be, Za = (e, a = !0) => {
             if (!0 === De) return 0;
             const t = e.itemNumber % 2 == 0,
-              s = V * Qe;
+              s = O * Qe;
             if (!0 === t && 0 !== e.itemNumber) {
               const t = Ps(e?.element?.current, "top");
               let r = t - J;
@@ -9179,15 +9179,15 @@ try {
           }, Ja = (e, a, t = !0) => {
             let s = Xa();
             !1 === t && (s = 0);
-            const r = ie * de,
-              n = !1 === De ? V * Ka() : r;
+            const r = oe * le,
+              n = !1 === De ? O * Ka() : r;
             return e.inModalMode && De ? -1 === a ? Wa() * (xe - e.itemNumber) * -1 - e.styles.left : Wa() * (e.itemNumber - xe) - e.styles.left : -1 === a ? -1 * e.styles.left - n - Me + s : r - e.styles.left + Me + s
           }, Qa = (e, a, t) => {
-            -1 === a && (M(!1), E(!0)), M(!1 === t && e >= a || !0 === t && e + 1 === a), E(e <= 0)
+            -1 === a && (M(!1), I(!0)), M(!1 === t && e >= a || !0 === t && e + 1 === a), I(e <= 0)
           }, et = (e, a = !1) => {
-            if (_a || da) return;
+            if (_a || la) return;
             if (ma(!0), re) return void((e = !1) => {
-              if (xe + 1 >= i.length) return;
+              if (xe + 1 >= o.length) return;
               const a = C[xe + 1]?.tina?.payload?.meta?.title ?? `card-${xe+1}`;
               s({
                 event: e ? "modal_swipe" : "modal_next",
@@ -9197,7 +9197,7 @@ try {
                 view_name: `${C[xe+1].source_content_id}/${a}`,
                 source_content_id: C[xe + 1].source_content_id,
                 source_content_name: C[xe + 1].source_content_name
-              }), Qa(xe + 1, i.length, !0), De ? De && T(C.map(e => {
+              }), Qa(xe + 1, o.length, !0), De ? De && T(C.map(e => {
                 e.itemNumber === xe - 1 ? e.upNext = !1 : e.itemNumber === xe + 2 ? e.upNext = !0 : e.itemNumber === xe + 1 ? e.active = !0 : e.itemNumber === xe && (e.upNext = !0, e.active = !1);
                 const a = e.styles.transform.replace("translate3d(", "").split(",");
                 let t = Number(a[0].replace("px", ""));
@@ -9223,16 +9223,16 @@ try {
                   element_placement: t?.toLowerCase() ?? ""
                 }), Qa(r, te, !1), De) {
                 let e = r * q * -1;
-                e < Te && (e = Te, M(!0), E(!1), ve(te)), ve(r), T(C.map(a => (a.styles = {
+                e < Te && (e = Te, M(!0), I(!1), ve(te)), ve(r), T(C.map(a => (a.styles = {
                   ...a.styles,
                   transform: `translate3d(${e}px, 0, 0)`
                 }, a)))
               } else {
                 let e = ye - X;
-                ve(r), e < Te && (e = Te, M(!0), E(!1), ve(te)), je(e)
+                ve(r), e < Te && (e = Te, M(!0), I(!1), ve(te)), je(e)
               }
           }, at = (e, a = !1) => {
-            if (_a || da) return;
+            if (_a || la) return;
             if (ma(!0), !0 === re) return void((e = !1) => {
               if (_a) return;
               if (xe - 1 < 0) return;
@@ -9246,7 +9246,7 @@ try {
                 view_name: `${C[xe-1].source_content_id}/${a}`,
                 source_content_id: C[xe - 1].source_content_id,
                 source_content_name: C[xe - 1].source_content_name
-              }), Qa(xe - 1, i.length, !0), De || T(C.map(e => (e.itemNumber === xe + 1 ? e.upNext = !1 : e.itemNumber === xe - 2 ? e.upNext = !0 : e.itemNumber === xe ? (e.upNext = !0, e.active = !1, e.styles = {
+              }), Qa(xe - 1, o.length, !0), De || T(C.map(e => (e.itemNumber === xe + 1 ? e.upNext = !1 : e.itemNumber === xe - 2 ? e.upNext = !0 : e.itemNumber === xe ? (e.upNext = !0, e.active = !1, e.styles = {
                 ...e.styles,
                 transform: `translate3d(${Ja(e,1)}px, ${Za(e)}px, 0) scale(${Ka()})`
               }) : e.itemNumber === xe - 1 && (e.active = !0, e.styles = {
@@ -9272,13 +9272,13 @@ try {
                   element_placement: t?.toLowerCase()
                 }), Qa(r, te, !1), De) {
                 let e = r * q * -1;
-                e > 0 && (e = 0, E(!0), M(!1), ve(0)), ve(r), T(C.map(a => (a.styles = {
+                e > 0 && (e = 0, I(!0), M(!1), ve(0)), ve(r), T(C.map(a => (a.styles = {
                   ...a.styles,
                   transform: `translate3d(${e}px, 0, 0)`
                 }, a)))
               } else {
                 let e = ye + X;
-                ve(r), (e > 0 || 0 === e || -1 * e < B) && (e = 0, E(!0), M(!1), ve(0)), je(e)
+                ve(r), (e > 0 || 0 === e || -1 * e < G) && (e = 0, I(!0), M(!1), ve(0)), je(e)
               }
           }, tt = e => {
             if (Na || re || De) return;
@@ -9289,7 +9289,7 @@ try {
             const a = Ls(e),
               t = a.x > xa ? 1 : -1;
             let s = Math.abs(xa - a.x) * t;
-            (0 === he && 1 === t || he === te && -1 === t) && (s *= .35), Ia(!0), za(s)
+            (0 === he && 1 === t || he === te && -1 === t) && (s *= .35), Ea(!0), za(s)
           }, rt = e => {
             if (Na || re || De) return;
             const a = Ls(e),
@@ -9297,15 +9297,15 @@ try {
               s = Math.abs(xa - a.x);
             ja(s > Pa ? t > 0 ? "prev" : "next" : ""), nt()
           }, nt = () => {
-            Sa(!0), wa(0), za(0), Ia(!1)
-          }, ot = e => {
-            Ta && (rt(e), Ia(!1))
-          }, it = (e, a, t = "") => e.map((e, s) => {
+            Sa(!0), wa(0), za(0), Ea(!1)
+          }, it = e => {
+            Ta && (rt(e), Ea(!1))
+          }, ot = (e, a, t = "") => e.map((e, s) => {
             let r = s * q,
               n = s;
-            !1 === De && (n = Math.ceil(.5 * s) + 1, s > 0 && (r = 2 === n ? G : G + q * (n - 2)));
-            const o = R[s];
-            return o?.current && (o.current.scrollTop = 0), {
+            !1 === De && (n = Math.ceil(.5 * s) + 1, s > 0 && (r = 2 === n ? V : V + q * (n - 2)));
+            const i = R[s];
+            return i?.current && (i.current.scrollTop = 0), {
               ...e,
               mobileMode: De,
               itemNumber: s,
@@ -9313,8 +9313,8 @@ try {
               inModalMode: !1,
               upNext: !0,
               active: !1,
-              openModalMode: lt,
-              element: o,
+              openModalMode: dt,
+              element: i,
               transitionStyle: a,
               styles: {
                 left: r,
@@ -9326,12 +9326,12 @@ try {
             }
           }), ct = e => {
             if (De) return;
-            T(it(i, "cardClose"));
+            T(ot(o, "cardClose"));
             const a = Math.ceil((C[e].columnNumber + 1) / K) - 1;
             ve(a);
             let t = a * X * -1;
-            Le < _e ? (t = 0, E(!0), M(!0), ve(0)) : t < Te ? (t = Te, E(!1), M(!0), ve(te)) : Qa(a, te, !1), je(t), we(0)
-          }, dt = () => {
+            Le < _e ? (t = 0, I(!0), M(!0), ve(0)) : t < Te ? (t = Te, I(!1), M(!0), ve(te)) : Qa(a, te, !1), je(t), we(0)
+          }, lt = () => {
             const e = C[xe]?.tina?.payload?.meta?.title ?? `card-${xe}`;
             s({
               event: "modal_close",
@@ -9346,16 +9346,16 @@ try {
             const a = C[xe]?.element?.current;
             if (De) {
               let e = xe * q * -1;
-              e < Te && (e = Te, M(!0), E(!1), ve(te)), ve(xe), Qa(xe, te, !1), T(it(i, "cardClose", `translate3d(${e}px, 0, 0)`))
+              e < Te && (e = Te, M(!0), I(!1), ve(te)), ve(xe), Qa(xe, te, !1), T(ot(o, "cardClose", `translate3d(${e}px, 0, 0)`))
             } else ct(xe);
-            N.current.style.transform = "translate(0px, 0px)", N.current.style.transition = "all var(--eventDeck-transitionCardClose)", ra(!1), Ke(!1), ne(!1), He(!1), Ge(!1), Xe(!1), setTimeout(() => {
+            N.current.style.transform = "translate(0px, 0px)", N.current.style.transition = "all var(--eventDeck-transitionCardClose)", ra(!1), Ke(!1), ne(!1), He(!1), Ve(!1), Xe(!1), setTimeout(() => {
               qe(!0), a.focus()
             }, Ze)
           };
           (0, m.useEffect)(() => {
             !1 !== Ue && (qe(!1), ra(!1), x.style.zIndex = null, T(C.map(e => (e.transitionStyle = "", e))))
           }, [Ue]);
-          const lt = e => {
+          const dt = e => {
               setTimeout(() => {
                 va(e), ka(!0)
               }, 1)
@@ -9366,11 +9366,11 @@ try {
               }, 1e3)
             };
           (0, m.useEffect)(() => {
-            $a && (Ga(!1), C[xe]?.element?.current?.focus())
+            $a && (Va(!1), C[xe]?.element?.current?.focus())
           }, [$a]), (0, m.useEffect)(() => {
             if (!fa) return;
             if (ka(!1), _a) return;
-            we(Number(ha?.target?.dataset?.itemPosition)), He(!0), la(!0), ia && ca(!1);
+            we(Number(ha?.target?.dataset?.itemPosition)), He(!0), da(!0), oa && ca(!1);
             const e = C[ha?.target?.dataset?.itemPosition].source_content_id,
               a = C[ha?.target?.dataset?.itemPosition].source_content_name,
               r = C[ha?.target?.dataset?.itemPosition]?.tina?.payload?.meta?.title;
@@ -9389,7 +9389,7 @@ try {
             He(!1);
             const e = (() => {
               const e = x?.getBoundingClientRect().top;
-              return ta(-1 * (e - b)), -1 * (e - 140)
+              return ta(-1 * (e - p)), -1 * (e - 140)
             })();
             De && T(C.map(e => {
               const a = e.itemNumber > xe + 3 || e.itemNumber < xe - 3;
@@ -9398,8 +9398,8 @@ try {
                 display: a ? "none" : null,
                 transition: a ? "none" : null
               }, e
-            })), x.style.zIndex = "var(--eventDeck-zIndexOverlay)", ra(!0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*pe}px, ${e}px)`), Ke(!0), setTimeout(() => {
-              Ge(!0)
+            })), x.style.zIndex = "var(--eventDeck-zIndexOverlay)", ra(!0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*be}px, ${e}px)`), Ke(!0), setTimeout(() => {
+              Ve(!0)
             }, 1)
           }, [Fe]);
           const mt = () => {
@@ -9408,7 +9408,7 @@ try {
               const t = !De;
               let s = 0;
               if (De) {
-                const e = Ne + 5 * b;
+                const e = Ne + 5 * p;
                 s = window.innerHeight - e
               }
               return e.itemNumber < xe ? e.styles = {
@@ -9431,9 +9431,9 @@ try {
             }))
           };
           (0, m.useEffect)(() => {
-            !1 !== $e && !0 !== re && (ne(!0), Ge(!1), Qa(xe, C.length, !0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*pe}px, ${aa}px)`), mt(), De ? (je(0), la(!1), oa(!0)) : Xe(!0))
+            !1 !== $e && !0 !== re && (ne(!0), Ve(!1), Qa(xe, C.length, !0), N.current && (N.current.style.transition = "all var(--eventDeck-transitionCardOpen)", N.current.style.transform = `translate(${-1*be}px, ${aa}px)`), mt(), De ? (je(0), da(!1), ia(!0)) : Xe(!0))
           }, [$e]), (0, m.useEffect)(() => {
-            na && (oa(!1), T(C.map(e => ("none" === e.styles.display && (e.styles.display = null, e.styles.transition = null), e))))
+            na && (ia(!1), T(C.map(e => ("none" === e.styles.display && (e.styles.display = null, e.styles.transition = null), e))))
           }, [na]);
           const ut = (e = !1) => {
             T(C.map(a => {
@@ -9453,17 +9453,17 @@ try {
           };
           (0, m.useEffect)(() => {
             !1 !== Ye && !0 !== De && (Xe(!1), setTimeout(() => {
-              ut(), la(!1)
+              ut(), da(!1)
             }, 1))
           }, [Ye]), (0, m.useEffect)(() => {
-            T(it(i, ""))
-          }, [G, q, i]), (0, m.useEffect)(() => {
+            T(ot(o, ""))
+          }, [V, q, o]), (0, m.useEffect)(() => {
             const e = window.navigator?.userAgentData?.platform || window.navigator?.platform;
             Da(["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(e))
           }, []), (0, m.useEffect)(() => {
-            const e = oe !== re,
+            const e = ie !== re,
               t = window.document.body.style.overflowY;
-            return re ? (e && (window.document.body.style.overflowY = "hidden", a(!0)), Ra && Ba(!0)) : Ta || re || (e && (window.document.body.style.overflowY = t, a(!1)), Ra && Oa && Ba(!1)), () => {
+            return re ? (e && (window.document.body.style.overflowY = "hidden", a(!0)), Ra && Ga(!0)) : Ta || re || (e && (window.document.body.style.overflowY = t, a(!1)), Ra && Ba && Ga(!1)), () => {
               window.document.body.style.overflowY = t
             }
           }, [re, Ta]), (0, m.useEffect)(() => {
@@ -9471,7 +9471,7 @@ try {
             clearTimeout(ua);
             const e = setTimeout(() => {
               ma(!1)
-            }, pa);
+            }, ba);
             ga(e)
           }, [_a]), (0, m.useEffect)(() => {
             v && setTimeout(() => {
@@ -9480,11 +9480,11 @@ try {
           }, [v]), (0, m.useEffect)(() => {
             y(!0), je(0), ve(0);
             let e = Math.ceil(Math.ceil(Le / q) / K);
-            De && (e = C.length - 1), e < 0 && (e = 1), Qa(0, e, !1), re && dt()
+            De && (e = C.length - 1), e < 0 && (e = 1), Qa(0, e, !1), re && lt()
           }, [De]), (0, m.useEffect)(() => {
             N.current && !re && (N.current.style.transform = "")
           }, [N, De, re]), (0, m.useEffect)(() => {
-            const e = (o ?? []).map(e => {
+            const e = (i ?? []).map(e => {
               let a = null;
               return "FeaturedEventInfo" === e?.tina?.payload?.content[0]?._template && e?.tina?.variables?.keys?.meta && (a = e?.tina?.variables?.keys?.meta?.title), {
                 ...e,
@@ -9495,19 +9495,19 @@ try {
               }
             });
             e.length > 10 && (e.length = 10), c(e)
-          }, [o]), (0, m.useEffect)(() => {
-            D(i.map(() => (0, m.createRef)()))
           }, [i]), (0, m.useEffect)(() => {
+            D(o.map(() => (0, m.createRef)()))
+          }, [o]), (0, m.useEffect)(() => {
             const e = e => {
               const {
                 key: a
               } = e;
-              "ArrowLeft" === a ? at(0, !1) : "ArrowRight" === a ? et(0, !1) : "Escape" === a && re && dt()
+              "ArrowLeft" === a ? at(0, !1) : "ArrowRight" === a ? et(0, !1) : "Escape" === a && re && lt()
             };
             return document.addEventListener("keydown", e), () => {
               document.removeEventListener("keydown", e)
             }
-          }, [_a, da, re, N]), (0, m.useEffect)(() => {
+          }, [_a, la, re, N]), (0, m.useEffect)(() => {
             if (N.current) {
               let e = N?.current?.clientHeight;
               e += Ps(N?.current, "margin-top"), e += Ps(N?.current, "margin-bottom"), Se(e)
@@ -9515,7 +9515,7 @@ try {
           }, [N, S]), (0, m.useEffect)(() => {
             re && (() => {
               const e = x?.getBoundingClientRect().top,
-                a = -1 * (e - b);
+                a = -1 * (e - p);
               if (T(C.map(e => {
                   if (e.styles.transform) {
                     const t = e.styles.transform.split(","),
@@ -9527,12 +9527,12 @@ try {
                   }
                   return e
                 })), N.current) {
-                const a = -1 * (e - b);
-                N.current.style.transform = `translate(${-1*pe}px, ${a}px)`
+                const a = -1 * (e - p);
+                N.current.style.transform = `translate(${-1*be}px, ${a}px)`
               }
             })()
           }, [De, re, aa]), (0, m.useEffect)(() => {
-            re || (Le < de * ie && 0 === he ? (je(0), M(!0), E(!0)) : ye < Te ? (M(!0), E(!1), ve(te), je(Te)) : ye < 0 && (M(!1), ve(te - 1)), Le > de * ie && A && M(!1))
+            re || (Le < le * oe && 0 === he ? (je(0), M(!0), I(!0)) : ye < Te ? (M(!0), I(!1), ve(te), je(Te)) : ye < 0 && (M(!1), ve(te - 1)), Le > le * oe && A && M(!1))
           }, [Te]), (0, m.useEffect)(() => {
             if (j.current) {
               w(j.current);
@@ -9540,47 +9540,47 @@ try {
                 a = Ps(j.current, "--eventDeck-modalGutters") * e,
                 t = Ps(j.current, "--eventDeck-collapsedMaxWidth");
               ge(t);
-              let s = ie - 2 * a;
-              s > t && (s = t), me(s), le(s / ie);
+              let s = oe - 2 * a;
+              s > t && (s = t), me(s), de(s / oe);
               const r = 2 * a + s;
               let n = 0;
-              r < ie && (n = .5 * (ie - r)), be(n);
-              let o = Ps(j.current, "--eventDeck-modalBottomGutter");
-              o *= e;
-              const c = window.innerHeight - (Ne + o);
+              r < oe && (n = .5 * (oe - r)), pe(n);
+              let i = Ps(j.current, "--eventDeck-modalBottomGutter");
+              i *= e;
+              const c = window.innerHeight - (Ne + i);
               Q(.5 * s < c ? s / 4 : .5 * c);
-              const l = Ps(j.current, "--eventDeck-mobileBreakpoint");
-              Be(l);
+              const d = Ps(j.current, "--eventDeck-mobileBreakpoint");
+              Ge(d);
               let _ = Ps(j.current, "--eventDeck-itemSize");
-              _ *= e, O(_);
+              _ *= e, B(_);
               let m = Ps(j.current, "--eventDeck-modalGutterGap");
               m *= e, Pe(m);
               let g = Ps(j.current, "--eventDeck-insideMargin");
               g *= e;
-              const p = !1 === De ? 2 * _ + g : _ + g;
-              $(p), U(p + g);
-              const b = _ + g;
-              W(b);
-              let k = Math.ceil(.5 * (i.length - 1)) * b + p;
-              De && (k = i.length * b), Re(k), 0 !== Le && Ee(-1 * Le + s);
-              let h = Math.ceil(Math.ceil(k / b) / K);
+              const b = !1 === De ? 2 * _ + g : _ + g;
+              $(b), U(b + g);
+              const p = _ + g;
+              W(p);
+              let k = Math.ceil(.5 * (o.length - 1)) * p + b;
+              De && (k = o.length * p), Re(k), 0 !== Le && Ie(-1 * Le + s);
+              let h = Math.ceil(Math.ceil(k / p) / K);
               (De || re) && (h = C.length - 1), se(h);
               const v = Ps(j.current, "--eventDeck-itemScaleUpAmount");
-              ea(v), Je(Ps(j.current, "--eventDeck-cardCloseTransitionDuration")), f(Ps(j.current, "--eventDeck-itemImageTitleMargins") * e), null !== d && e !== d && (u(e), re && ut()), null === d && u(e)
+              ea(v), Je(Ps(j.current, "--eventDeck-cardCloseTransitionDuration")), f(Ps(j.current, "--eventDeck-itemImageTitleMargins") * e), null !== l && e !== l && (u(e), re && ut()), null === l && u(e)
             }
-          }, [j, i]), (0, m.useEffect)(() => {
+          }, [j, o]), (0, m.useEffect)(() => {
             if (re && !De) {
               ut();
               const e = x?.getBoundingClientRect().top,
-                a = -1 * (e - b);
+                a = -1 * (e - p);
               a !== aa && ta(a)
             }
           }, [k]), (0, m.useEffect)(() => {
-            L(!(!I || !A || re))
-          }, [I, A]), (0, m.useEffect)(() => {
+            L(!(!E || !A || re))
+          }, [E, A]), (0, m.useEffect)(() => {
             const e = (0, F.debounce)(e => {
-              ce(e), Ve(e < Oe);
-              const a = (1 - de) / 2;
+              ce(e), Oe(e < Be);
+              const a = (1 - le) / 2;
               Ae(e * a);
               const t = Math.floor(_e / q);
               Y(t);
@@ -9589,7 +9589,7 @@ try {
               const r = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
               if (r !== k && h(r), re && r === k && !v) {
                 const e = x?.getBoundingClientRect().top,
-                  a = -1 * (e - b);
+                  a = -1 * (e - p);
                 a !== aa && ta(a)
               }
             }, 300);
@@ -9602,11 +9602,11 @@ try {
                 e(window.innerWidth)
               })
             }
-          }, [q, de, re, De]), (0, m.useEffect)(() => {
+          }, [q, le, re, De]), (0, m.useEffect)(() => {
             !1 !== re && !0 !== v && (De ? mt() : ut(!0))
-          }, [ee, X, Me, V, ie, ze, J, aa]), (0, m.useEffect)(() => {
+          }, [ee, X, Me, O, oe, ze, J, aa]), (0, m.useEffect)(() => {
             const e = () => {
-              if (j.current && ia) {
+              if (j.current && oa) {
                 const e = j.current.getBoundingClientRect(),
                   a = .2 * window.innerHeight;
                 window.innerHeight - e.top >= a && ca(!1)
@@ -9633,38 +9633,38 @@ try {
             j.current && j.current.addEventListener("mouseleave", () => {
               Ta && nt()
             })
-          }, [j, Ta]), (0, m.useEffect)(() => (document.body.addEventListener("mouseleave", ot), () => {
-            document.body.removeEventListener("mouseleave", ot)
+          }, [j, Ta]), (0, m.useEffect)(() => (document.body.addEventListener("mouseleave", it), () => {
+            document.body.removeEventListener("mouseleave", it)
           }), [Ta]), (0, m.useEffect)(() => {
             Na && setTimeout(() => {
               Sa(!1), wa(0)
-            }, pa)
+            }, ba)
           }, [Na]), (0, m.useEffect)(() => {
             La(De ? 20 : 100)
           }, [De]), (0, m.useEffect)(() => {
-            ba(re ? 500 : 100)
+            pa(re ? 500 : 100)
           }, [re]);
-          const pt = e => {
+          const bt = e => {
               e.currentTarget !== e.target || re || ct(e.target.dataset.itemPosition)
             },
-            bt = (0, z.useTinaComponents)(),
+            pt = (0, z.useTinaComponents)(),
             ft = (0, m.useMemo)(() => ({
-              ...bt,
-              CardWithImageGallery: Va,
+              ...pt,
+              CardWithImageGallery: Oa,
               HTMLElement: H,
               ImageWithBadge: ke.A,
-              Carousel: l.A,
-              GroupOfItems: Ie.default,
+              Carousel: d.A,
+              GroupOfItems: Ee.default,
               UnorderedList: fe.A
-            }), [bt]),
-            kt = (0, m.useMemo)(() => C.map(e => (0, m.createElement)(Vs, {
+            }), [pt]),
+            kt = (0, m.useMemo)(() => C.map(e => (0, m.createElement)(Os, {
               ...e,
               refDeck: j,
               key: e?.id ?? e?.sync_hash,
               components: ft,
               prevPage: at,
               nextPage: et,
-              onFocus: pt,
+              onFocus: bt,
               loadCssRawValue: Ps,
               selectedItemNumber: xe,
               carouselTitle: t,
@@ -9679,7 +9679,7 @@ try {
             }), (0, _.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9e623ea950c02afbb9d28949ca4701ca4",
               "data-modal-mode": re,
-              "data-faded": ia,
+              "data-faded": oa,
               ref: j,
               onTouchStart: tt,
               onTouchMove: st,
@@ -9700,32 +9700,32 @@ try {
                 children: [(0, _.jsx)("h2", {
                   className: "rockstargames-sites-gta-gen9be12152c36226103d53925a82ba66452",
                   children: t
-                }), (0, _.jsx)(Bs, {
+                }), (0, _.jsx)(Gs, {
                   prevPage: at,
-                  prevBtnDisabled: I,
+                  prevBtnDisabled: E,
                   nextPage: et,
                   nextBtnDisabled: A,
                   selectedItemNumber: xe,
-                  itemsData: i,
-                  closeModalMode: dt,
+                  itemsData: o,
+                  closeModalMode: lt,
                   inModalMode: re,
                   controlsHidden: P,
                   focusTrapControl: Fa,
-                  setTriggerFocusCard: Ga,
+                  setTriggerFocusCard: Va,
                   focusTrapDirection: Ua
                 }), (0, _.jsx)("div", {
                   className: "rockstargames-sites-gta-gen9c4f4d692febb9861a621596f22e32d93",
                   id: "eventsDeck-content",
                   role: "region",
                   "aria-live": "polite",
-                  children: `${xe+1}/${i.length} ${C[xe]?.tina?.payload?.meta?.title}`
+                  children: `${xe+1}/${o.length} ${C[xe]?.tina?.payload?.meta?.title}`
                 })]
               }), (0, _.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9f369e1390b3aa251df43bea9c55634f2",
                 "data-modal-mode": re,
                 "data-is-dragging": Ta,
                 style: {
-                  transform: `translate3d(${ye+Ea}px, 0, 0)`,
+                  transform: `translate3d(${ye+Ia}px, 0, 0)`,
                   width: `${Le}px`
                 },
                 ref: S,
@@ -9734,7 +9734,7 @@ try {
             })]
           })
         }, ra);
-      var Gs = t(34649),
+      var Vs = t(34649),
         Fs = t(59139),
         Hs = t(539),
         Us = t(88023),
@@ -9752,18 +9752,18 @@ try {
         sr = t(31655);
       const rr = JSON.parse('{"de-DE":{"bottom_sheet_modal_close_icon":"Schließen","carousel_next_button":"Weiter","carousel_prev_button":"Zurück","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Abspielen","decorative_video_replay_button_label":"Wiederholen","featured_game_breadcrumbs_parent_item":"Spiele","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Abspielen","hero_carousel_scroll_down_label":"Nach unten scrollen","hp_hero_play_button_label":"Video wird wiedergegeben","hp_hero_stop_button_label":"Video angehalten","image_carousel_screen_reader_announcer_label":"Jetzt angezeigt: {selectedTab} von {total}","job_card_bookmark_action":"Markieren","job_card_created_by":"Erstellt von","job_card_image_alt_text":"Screenshot vom Job {name}","job_card_report_action":"Melden","job_card_share_action":"Teilen","job_card_updated_date":"Aktualisiert: {date}","job_card_verified_by":"Verifiziert von","job_dialog_bookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen markierten Job sehen zu können – Jobs können nur im Spiel bewertet werden, nachdem sie gespielt wurden.","job_dialog_bookmarked_heading":"Job markiert: <b>{name}</b>","job_dialog_bookmarked_title":"Job markiert","job_dialog_confirmation_button":"OKAY","job_dialog_error_body":"Es gab einen Fehler bei dem Versuch, einen Job zu markieren/eine Markierung zu entfernen. Bitte versuche es erneut.","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Fehler","job_dialog_unbookmarked_body":"Du musst Grand Theft Auto Online neu starten, um diesen Job nicht länger in deinen Markierungen sehen zu können.","job_dialog_unbookmarked_heading":"Job nicht mehr markiert: <b>{name}</b>","job_dialog_unbookmarked_title":"Job nicht mehr markiert","job_type_adversary_mode":"Gegner-Modus","job_type_air_race":"Luftrennen","job_type_arena_deathmatch":"Arena-Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Radrennen","job_type_capture":"Capture","job_type_contact_mission":"Kontaktmission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Dragsterrennen","job_type_drift_race":"Driftrennen","job_type_foot_race":"Rennen zu Fuß","job_type_hao_special_works_race":"HSW-Rennen","job_type_heist":"Raubüberfall","job_type_heist_prep":"Raubüberfall-Austrüstungsmission","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Landrennen","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission-Creator","job_type_open_wheel_race":"Open-Wheel-Rennen","job_type_parachuting":"Fallschirmsprung","job_type_pursuit_race":"Verfolgungsrennen","job_type_race":"Rennen","job_type_random_mission":"Zufällige Mission","job_type_special_race":"Spezialrennen","job_type_street_race":"Straßenrennen","job_type_stunt_race":"Stuntrennen","job_type_survival":"Überlebenskampf","job_type_target":"Zielscheibenrennen","job_type_team_deathmatch":"Team-Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Verwandlungsrennen","job_type_unknown":"Unbekannt","job_type_vehicle_deathmatch":"Fahrzeug-Deathmatch","job_type_water_race":"Seerennen","lightbox_close_button":"Schließen","login_dialog_body":"Du musst dich erst anmelden, um diese Inhalte zu sehen.","login_dialog_signin_button":"Anmelden","login_dialog_signup_button":"Registrieren","login_dialog_title":"Anmelden erforderlich","masonry_grid_external_store_link":"Externer Link zum Store","ns_already_subbed_details_amp":"Du erhältst bereits Newsletter-Updates an diese E-Mail-Adresse. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_already_subbed_title":"Bereits abonniert","ns_check_email_details":"Bitte verifiziere deine E-Mail-Adresse über den Link, der an die E-Mail-Adresse geschickt wurde, mit der du dich angemeldet hast, um dein Abo für die E-Mail-Liste von Rockstar Games zu bestätigen.","ns_check_email_title":"Überprüfe deine E-Mails","ns_confirm_after_register_details":"Du hast dich während der Kontoerstellung nicht für Werbe-E-Mails angemeldet. Möchtest du immer noch unseren Newsletter abonnieren?","ns_confirm_after_register_title":"Bestätige dein Abo","ns_confirm_details":"Bitte drücke auf den Knopf unten, um zu bestätigen, dass du den Newsletter von Rockstar Games abonnieren möchtest.","ns_confirm_title":"Bestätige dein Abo","ns_error_generic_details":"Wir können diese E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden.","ns_error_generic_title":"Fehler","ns_error_preferences_details":"Wir können deine E-Mail-Adresse derzeit nicht bei unserem Newsletter anmelden. Ändere deine Präferenzen bezüglich E-Mails in den Einstellungen deines Kontos oder versuche es später erneut.","ns_error_preferences_title":"Fehler","ns_go_back_text":"Nein, zurückkehren","ns_manage_prefs_button_text":"Präferenzen verwalten","ns_ok_button_text":"OKAY","ns_successfully_subscribed_details_amp":"Du hast dich bei der E-Mail-Liste von Rockstar Games angemeldet und erhältst regelmäßig Updates an die E-Mail-Adresse, mit der du dich angemeldet hast. Verwalte jederzeit deine Präferenzen bezüglich der Kommunikation in den Einstellungen deines Kontos.","ns_successfully_subscribed_title":"Erfolgreich abonniert","ns_yes_subscribe_text":"Ja, abonnieren","web_offer_claim_dialog_close":"schließen","web_offer_claim_error_state_button":"Erneut versuchen","web_offer_claim_error_state_icon_label":"Fehler-Symbol","web_offer_claim_exists_state_icon_label":"Erfolgssymbol","web_offer_claim_link_account_state_icon_label":"Fehler-Symbol","web_offer_claim_loading_state":"lädt","web_offer_claim_success_state_icon_label":"Erfolgssymbol"},"en-US":{"bottom_sheet_modal_close_icon":"Close","carousel_next_button":"Next","carousel_prev_button":"Previous","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Play","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Games","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Play","hero_carousel_scroll_down_label":"Scroll Down","hp_hero_play_button_label":"Video Playing","hp_hero_stop_button_label":"Video Stopped","image_carousel_screen_reader_announcer_label":"Now showing {selectedTab} of {total}","job_card_bookmark_action":"Bookmark","job_card_created_by":"Created by","job_card_image_alt_text":"Screenshot of {name} job","job_card_report_action":"Report","job_card_share_action":"Share","job_card_updated_date":"Updated {date}","job_card_verified_by":"Verified by","job_dialog_bookmarked_body":"You will need to restart Grand Theft Auto Online to see this bookmarked job - jobs can only be rated in-game, after they have been played.","job_dialog_bookmarked_heading":"Job Bookmarked: <b>{name}</b>","job_dialog_bookmarked_title":"Job Bookmarked","job_dialog_confirmation_button":"OK","job_dialog_error_body":"There was an error when attempting to bookmark/unbookmark the job. Please try again","job_dialog_error_heading":"Job: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"You will need to restart Grand Theft Auto Online to no longer see this job in your bookmarks.","job_dialog_unbookmarked_heading":"Job Unbookmarked: <b>{name}</b>","job_dialog_unbookmarked_title":"Job Unbookmarked","job_type_adversary_mode":"Adversary Mode","job_type_air_race":"Air Race","job_type_arena_deathmatch":"Arena Deathmatch","job_type_arena_war":"Arena War","job_type_bike_race":"Bike Race","job_type_capture":"Capture","job_type_contact_mission":"Contact Mission","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Drag Race","job_type_drift_race":"Drift Race","job_type_foot_race":"Foot Race","job_type_hao_special_works_race":"Hao\'s Special Works Race","job_type_heist":"Heist","job_type_heist_prep":"Heist Prep","job_type_king_of_the_hill":"King of the Hill","job_type_land_race":"Land Race","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Mission","job_type_mission_creator":"Mission Creator","job_type_open_wheel_race":"Open Wheel Race","job_type_parachuting":"Parachuting","job_type_pursuit_race":"Pursuit Race","job_type_race":"Race","job_type_random_mission":"Random Mission","job_type_special_race":"Special Vehicle Race","job_type_street_race":"Street Race","job_type_stunt_race":"Stunt Race","job_type_survival":"Survival","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Team Deathmatch","job_type_team_king_of_the_hill":"Team King of the Hill","job_type_transform_race":"Transform Race","job_type_unknown":"Unknown","job_type_vehicle_deathmatch":"Vehicle Deathmatch","job_type_water_race":"Sea Race","lightbox_close_button":"Close","login_dialog_body":"You need to sign in first to interact with this content","login_dialog_signin_button":"Sign In","login_dialog_signup_button":"Sign Up","login_dialog_title":"Sign In Required","masonry_grid_external_store_link":"External link to Store","ns_already_subbed_details_amp":"You are already receiving newsletter updates at this email address. Manage your communication preferences at any time in your account settings.","ns_already_subbed_title":"Already Subscribed","ns_check_email_details":"To confirm your subscription to the Rockstar Games Email List, please verify your email address via the link sent to the email address you’ve signed up with.","ns_check_email_title":"Check Your Email","ns_confirm_after_register_details":"You did not opt-in to receive marketing emails during account creation. Would you still like to subscribe to our newsletter?","ns_confirm_after_register_title":"Confirm your subscription","ns_confirm_details":"Please confirm that you would like to subscribe to the Rockstar Games Newsletter by clicking the button below.","ns_confirm_title":"Confirm your subscription","ns_error_generic_details":"We cannot sign up this email address to our newsletter at this time.","ns_error_generic_title":"Error","ns_error_preferences_details":"We cannot sign up your email address to our newsletter at this time. Change your email preferences on your account settings page or try again later.","ns_error_preferences_title":"Error","ns_go_back_text":"No, Go Back","ns_manage_prefs_button_text":"Manage Preferences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"You are now signed up to the Rockstar Games Email List and will receive regular updates to the email address you’ve signed up with. Manage your communication preferences at any time in your account settings.","ns_successfully_subscribed_title":"Successfully Subscribed","ns_yes_subscribe_text":"Yes, Subscribe","web_offer_claim_dialog_close":"close","web_offer_claim_error_state_button":"Try Again","web_offer_claim_error_state_icon_label":"Error Icon","web_offer_claim_exists_state_icon_label":"Success Icon","web_offer_claim_link_account_state_icon_label":"Error Icon","web_offer_claim_loading_state":"loading","web_offer_claim_success_state_icon_label":"Success Icon"},"es-ES":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Volver a ver","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo vídeo","hp_hero_stop_button_label":"Vídeo en pausa","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creada por","job_card_image_alt_text":"Captura de pantalla de la actividad {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizada el {date}","job_card_verified_by":"Verificada por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Ha habido un error al intentar marcar o eliminar la marca de esta actividad. Vuelve a intentarlo","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tu lista de actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad no marcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad no marcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena War","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misiones de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de drift","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar del golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de coches de competición","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Partida de supervivencia","job_type_target":"Target Assault Race","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Para interactuar con este contenido debes iniciar sesión.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Debes iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín de noticias en este correo electrónico. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_already_subbed_title":"Ya tienes una suscripción","ns_check_email_details":"Para confirmar tu suscripción a la lista de correo de Rockstar Games, verifica tu correo electrónico a través del enlace enviado al correo electrónico con el que te has suscrito.","ns_check_email_title":"Comprueba tu correo electrónico","ns_confirm_after_register_details":"No te has suscrito a los correos electrónicos comerciales al crear tu cuenta. ¿Quieres suscribirte a nuestro boletín de noticias?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz click en el botón para confirmar que quieres suscribirte al boletín de noticias de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con este correo electrónico.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento no puedes suscribirte a nuestro boletín de noticias con tu correo electrónico. Cambia tus preferencias de correo electrónico en la página de ajustes de tu cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar tus preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Te has suscrito a la lista de correo de Rockstar Games y recibirás actualizaciones en el correo electrónico con el que te has suscrito. Cambia tus preferencias de comunicación en cualquier momento en los ajustes de tu cuenta.","ns_successfully_subscribed_title":"Te has suscrito","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"Cerrar","web_offer_claim_error_state_button":"Vuelve a intentarlo","web_offer_claim_error_state_icon_label":"Icono de error","web_offer_claim_exists_state_icon_label":"Icono de aprobación","web_offer_claim_link_account_state_icon_label":"Icono de error","web_offer_claim_loading_state":"Cargando","web_offer_claim_success_state_icon_label":"Icono de aprobación"},"es-MX":{"bottom_sheet_modal_close_icon":"Cerrar","carousel_next_button":"Siguiente","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Reproducir","decorative_video_replay_button_label":"Repetir","featured_game_breadcrumbs_parent_item":"Juegos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Reproducir","hero_carousel_scroll_down_label":"Desplazarse hacia abajo","hp_hero_play_button_label":"Reproduciendo video","hp_hero_stop_button_label":"Video detenido","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Marcar","job_card_created_by":"Creado por","job_card_image_alt_text":"Captura de pantalla del trabajo {name}","job_card_report_action":"Reportar","job_card_share_action":"Compartir","job_card_updated_date":"Actualizado {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para ver esta actividad marcada. Las actividades solo se pueden calificar en el juego una vez jugadas.","job_dialog_bookmarked_heading":"Actividad marcada: <b>{name}</b>","job_dialog_bookmarked_title":"Actividad marcada","job_dialog_confirmation_button":"ACEPTAR","job_dialog_error_body":"Se produjo un error al intentar marcar o desmarcar la actividad. Inténtalo de nuevo.","job_dialog_error_heading":"Actividad: <b>{name}</b>","job_dialog_error_title":"Error","job_dialog_unbookmarked_body":"Necesitas reiniciar Grand Theft Auto Online para dejar de ver esta actividad en tus actividades marcadas.","job_dialog_unbookmarked_heading":"Actividad desmarcada: <b>{name}</b>","job_dialog_unbookmarked_title":"Actividad desmarcada","job_type_adversary_mode":"Modo Adversario","job_type_air_race":"Carrera aérea","job_type_arena_deathmatch":"Partida a muerte de arena","job_type_arena_war":"Arena de Motores","job_type_bike_race":"Carrera a dos ruedas","job_type_capture":"Captura","job_type_contact_mission":"Misión de contacto","job_type_deathmatch":"Partida a muerte","job_type_drag_race":"Carrera de aceleración","job_type_drift_race":"Carrera de derrapes","job_type_foot_race":"Carrera a pie","job_type_hao_special_works_race":"Carrera de Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Misión preliminar de golpe","job_type_king_of_the_hill":"Rey de la colina","job_type_land_race":"Carrera terrestre","job_type_last_team_standing":"Último equipo en pie","job_type_mission":"Misión","job_type_mission_creator":"Creador de misiones","job_type_open_wheel_race":"Carrera de ruedas descubiertas","job_type_parachuting":"Paracaidismo","job_type_pursuit_race":"Carrera de persecución","job_type_race":"Carrera","job_type_random_mission":"Misión aleatoria","job_type_special_race":"Carrera de vehículos especiales","job_type_street_race":"Carrera urbana","job_type_stunt_race":"Carrera acrobática","job_type_survival":"Supervivencia","job_type_target":"Carrera de ataque al objetivo","job_type_team_deathmatch":"Partida a muerte por equipos","job_type_team_king_of_the_hill":"Rey de la colina por equipos","job_type_transform_race":"Carrera de transformación","job_type_unknown":"Sin especificar","job_type_vehicle_deathmatch":"Partida a muerte con vehículos","job_type_water_race":"Carrera marítima","lightbox_close_button":"Cerrar","login_dialog_body":"Necesitas iniciar sesión para poder interactuar con este contenido.","login_dialog_signin_button":"Iniciar sesión","login_dialog_signup_button":"Registrarse","login_dialog_title":"Necesitas iniciar sesión","masonry_grid_external_store_link":"Enlace externo a la tienda","ns_already_subbed_details_amp":"Ya recibes actualizaciones del boletín en esta dirección de correo electrónico. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_already_subbed_title":"Ya cuentas con una suscripción","ns_check_email_details":"Verifica tu dirección de correo electrónico mediante el enlace que enviamos al correo con el que te registraste para confirmar la suscripción a la lista de correos de Rockstar Games.","ns_check_email_title":"Verifica tu dirección de correo electrónico","ns_confirm_after_register_details":"No optaste por recibir correos con publicidad durante la creación de la cuenta. ¿Quieres suscribirte a nuestro boletín de todos modos?","ns_confirm_after_register_title":"Confirma tu suscripción","ns_confirm_details":"Haz clic en el botón a continuación para confirmar que quieres suscribirte al boletín de Rockstar Games.","ns_confirm_title":"Confirma tu suscripción","ns_error_generic_details":"En este momento, no podemos registrar esta dirección de correo electrónico a nuestro boletín.","ns_error_generic_title":"Error","ns_error_preferences_details":"En este momento, no podemos registrar tu dirección de correo electrónico a nuestro boletín. Modifica las preferencias de tu correo desde la página de ajustes de la cuenta o inténtalo de nuevo más tarde.","ns_error_preferences_title":"Error","ns_go_back_text":"No, volver","ns_manage_prefs_button_text":"Gestionar preferencias","ns_ok_button_text":"ACEPTAR","ns_successfully_subscribed_details_amp":"Cuentas con una suscripción a la lista de correos de Rockstar Games y recibirás actualizaciones habituales a la dirección de correo electrónico con la que te registraste. Gestiona las preferencias de comunicación cuando quieras desde los ajustes de la cuenta.","ns_successfully_subscribed_title":"Suscripción exitosa","ns_yes_subscribe_text":"Sí, suscribirse","web_offer_claim_dialog_close":"cerrar","web_offer_claim_error_state_button":"Volver a intentar","web_offer_claim_error_state_icon_label":"Ícono de error","web_offer_claim_exists_state_icon_label":"Ícono de aprobado","web_offer_claim_link_account_state_icon_label":"Ícono de error","web_offer_claim_loading_state":"cargando","web_offer_claim_success_state_icon_label":"Ícono de aprobado"},"fr-FR":{"bottom_sheet_modal_close_icon":"Fermer","carousel_next_button":"Suivant","carousel_prev_button":"Précédent","decorative_video_pause_button_label":"Pause","decorative_video_play_button_label":"Lecture","decorative_video_replay_button_label":"Relire","featured_game_breadcrumbs_parent_item":"Jeux","hero_carousel_pause_button":"Pause","hero_carousel_play_button":"Lecture","hero_carousel_scroll_down_label":"Faire défiler vers le bas","hp_hero_play_button_label":"Vidéo en cours de lecture","hp_hero_stop_button_label":"Vidéo arrêtée","image_carousel_screen_reader_announcer_label":"Affichage de {selectedTab} sur {total}","job_card_bookmark_action":"Ajouter aux favoris","job_card_created_by":"Créé par","job_card_image_alt_text":"Capture d\'écran de la mission {name}","job_card_report_action":"Effectuer un signalement","job_card_share_action":"Partager","job_card_updated_date":"Dernière modification : {date}","job_card_verified_by":"Vérifié par","job_dialog_bookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour voir cette mission ajoutée aux favoris. Les missions ne peuvent être notées qu\'en jeu, après avoir été jouées.","job_dialog_bookmarked_heading":"Mission ajoutée aux favoris : <b>{name}</b>","job_dialog_bookmarked_title":"Mission ajoutée aux favoris","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Une erreur est survenue lors de l\'ajout/du retrait de la mission de la liste des favoris. Veuillez réessayer.","job_dialog_error_heading":"Mission : <b>{name}</b>","job_dialog_error_title":"Erreur","job_dialog_unbookmarked_body":"Vous devrez redémarrer Grand Theft Auto Online pour ne plus voir cette mission dans vos favoris.","job_dialog_unbookmarked_heading":"Mission retirée des favoris : <b>{name}</b>","job_dialog_unbookmarked_title":"Mission retirée des favoris","job_type_adversary_mode":"Mode rivalité","job_type_air_race":"Course aérienne","job_type_arena_deathmatch":"Affrontement en arène","job_type_arena_war":"Guerre d\'arène","job_type_bike_race":"Course à moto","job_type_capture":"Capture","job_type_contact_mission":"Mission de contact","job_type_deathmatch":"Affrontement","job_type_drag_race":"Course de dragster","job_type_drift_race":"Course de drift","job_type_foot_race":"Course à pied","job_type_hao_special_works_race":"Course d\'Hao\'s Special Works","job_type_heist":"Braquage","job_type_heist_prep":"Préparation de braquage","job_type_king_of_the_hill":"Conquête","job_type_land_race":"Course terrestre","job_type_last_team_standing":"Extermination","job_type_mission":"Mission","job_type_mission_creator":"Éditeur de missions","job_type_open_wheel_race":"Course d\'ultralégères","job_type_parachuting":"Saut en parachute","job_type_pursuit_race":"Course de poursuite","job_type_race":"Course","job_type_random_mission":"Mission aléatoire","job_type_special_race":"Course de véhicules spéciaux","job_type_street_race":"Course de rue","job_type_stunt_race":"Course nautique","job_type_survival":"Survie","job_type_target":"Course aux points","job_type_team_deathmatch":"Affrontement en équipe","job_type_team_king_of_the_hill":"Conquête en équipe","job_type_transform_race":"Course polymorphes","job_type_unknown":"Inconnu","job_type_vehicle_deathmatch":"Affrontement motorisé","job_type_water_race":"Course nautique","lightbox_close_button":"Fermer","login_dialog_body":"Vous devez vous connecter pour interagir avec ce contenu.","login_dialog_signin_button":"Se connecter","login_dialog_signup_button":"Créer un compte","login_dialog_title":"Connexion requise","masonry_grid_external_store_link":"Lien externe vers la boutique","ns_already_subbed_details_amp":"Vous êtes déjà abonné(e) à la newsletter avec cette adresse e-mail. Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_already_subbed_title":"Vous êtes déjà abonné(e)","ns_check_email_details":"Pour confirmer votre abonnement à la liste de diffusion de Rockstar Games, veuillez vérifier votre adresse e-mail en cliquant sur le lien envoyé à l\'adresse e-mail avec laquelle vous vous êtes abonné(e).","ns_check_email_title":"Vérifiez votre adresse e-mail","ns_confirm_after_register_details":"Vous avez choisi de ne pas recevoir d\'e-mails publicitaires lors de la création de votre compte. Voulez-vous toujours vous abonner à notre newsletter ?","ns_confirm_after_register_title":"Confirmez votre abonnement","ns_confirm_details":"Veuillez confirmer que vous souhaitez vous abonner à la newsletter de Rockstar Games en cliquant sur le bouton ci-dessous.","ns_confirm_title":"Confirmez votre abonnement","ns_error_generic_details":"Nous ne pouvons pas abonner cette adresse e-mail à notre newsletter pour l\'instant.","ns_error_generic_title":"Erreur","ns_error_preferences_details":"Nous ne pouvons pas abonner votre adresse e-mail à notre newsletter pour l\'instant. Modifiez vos préférences concernant les e-mails sur la page des paramètres de votre compte ou réessayez plus tard.","ns_error_preferences_title":"Erreur","ns_go_back_text":"Non, retour","ns_manage_prefs_button_text":"Gérer vos préférences","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Vous êtes désormais abonné(e) à la liste de diffusion de Rockstar Games. Vous recevrez des mises à jour régulières à l\'adresse e-mail avec laquelle vous vous êtes abonné(e). Gérez vos préférences concernant les communications à tout moment sur la page des paramètres de votre compte.","ns_successfully_subscribed_title":"Abonnement effectué","ns_yes_subscribe_text":"Oui, je m\'abonne","web_offer_claim_dialog_close":"Fermer","web_offer_claim_error_state_button":"Réessayer","web_offer_claim_error_state_icon_label":"Icône d\'erreur","web_offer_claim_exists_state_icon_label":"Icône de réussite","web_offer_claim_link_account_state_icon_label":"Icône d\'erreur","web_offer_claim_loading_state":"Chargement","web_offer_claim_success_state_icon_label":"Icône de réussite"},"it-IT":{"bottom_sheet_modal_close_icon":"Chiudi","carousel_next_button":"Successivo","carousel_prev_button":"Precedente","decorative_video_pause_button_label":"Pausa","decorative_video_play_button_label":"Riproduci","decorative_video_replay_button_label":"Riproduci di nuovo","featured_game_breadcrumbs_parent_item":"Giochi","hero_carousel_pause_button":"Pausa","hero_carousel_play_button":"Riproduci","hero_carousel_scroll_down_label":"Scorri in basso","hp_hero_play_button_label":"Video in riproduzione","hp_hero_stop_button_label":"Riproduzione video interrotta","image_carousel_screen_reader_announcer_label":"In riproduzione: {selectedTab} di {total}","job_card_bookmark_action":"Aggiungi ai preferiti","job_card_created_by":"Creato da","job_card_image_alt_text":"Screenshot dell\'attività {name}","job_card_report_action":"Segnala","job_card_share_action":"Condividi","job_card_updated_date":"Aggiornato il {date}","job_card_verified_by":"Verificato da","job_dialog_bookmarked_body":"Per visualizzare questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online. Le attività possono essere valutate solo all\'interno del gioco, dopo averle giocate.","job_dialog_bookmarked_heading":"Attività aggiunta ai preferiti: <b>{name}</b>","job_dialog_bookmarked_title":"Attività aggiunta ai preferiti","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Si è verificato un errore durante l’aggiunta ai/la rimozione dai preferiti dell’attività. Riprova più tardi","job_dialog_error_heading":"Attività: <b>{name}</b>","job_dialog_error_title":"Errore","job_dialog_unbookmarked_body":"Per non visualizzare più questa attività tra i preferiti, è necessario riavviare Grand Theft Auto Online.","job_dialog_unbookmarked_heading":"Attività rimossa dai preferiti: <b>{name}</b>","job_dialog_unbookmarked_title":"Attività rimossa dai preferiti","job_type_adversary_mode":"Modalità Competizione","job_type_air_race":"Gara aerea","job_type_arena_deathmatch":"Deathmatch nell\'Arena","job_type_arena_war":"Arena War","job_type_bike_race":"Gara su due ruote","job_type_capture":"Cattura","job_type_contact_mission":"Missione dei contatti","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Gara drag","job_type_drift_race":"Gara drift","job_type_foot_race":"Gara a piedi","job_type_hao_special_works_race":"Gara di Hao\'s Special Works","job_type_heist":"Colpi","job_type_heist_prep":"Missione preliminare del colpo","job_type_king_of_the_hill":"Re della collina","job_type_land_race":"Gara terrestre","job_type_last_team_standing":"Last Team Standing","job_type_mission":"Missione","job_type_mission_creator":"Creatore di missioni","job_type_open_wheel_race":"Gara per ruote scoperte","job_type_parachuting":"Paracadutismo","job_type_pursuit_race":"Inseguimenti","job_type_race":"Gara","job_type_random_mission":"Missione casuale","job_type_special_race":"Gara con veicoli speciali","job_type_street_race":"Gara clandestina","job_type_stunt_race":"Gara stunt","job_type_survival":"Sopravvivenza","job_type_target":"Gara al bersaglio","job_type_team_deathmatch":"Deathmatch a squadre","job_type_team_king_of_the_hill":"Re della collina a squadre","job_type_transform_race":"Gara multiveicolo","job_type_unknown":"Sconosciuto","job_type_vehicle_deathmatch":"Deathmatch con veicoli","job_type_water_race":"Gara acquatica","lightbox_close_button":"Chiudi","login_dialog_body":"È necessario eseguire l’accesso prima di poter interagire con questo contenuto","login_dialog_signin_button":"Accedi","login_dialog_signup_button":"Registrati","login_dialog_title":"È necessario eseguire l’accesso","masonry_grid_external_store_link":"Link esterno per il Negozio","ns_already_subbed_details_amp":"Stai già usando questo indirizzo email per ricevere la newsletter. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_already_subbed_title":"Sei già iscritto","ns_check_email_details":"Per confermare la tua iscrizione alla mailing list di Rockstar Games, verifica il tuo indirizzo email tramite il link che ti abbiamo inviato all’indirizzo email che hai usato per iscriverti.","ns_check_email_title":"Controlla la tua mail","ns_confirm_after_register_details":"Non hai acconsentito a ricevere le email di marketing durante la creazione dell\'account. Vuoi ancora iscriverti alla nostra newsletter?","ns_confirm_after_register_title":"Conferma la tua iscrizione","ns_confirm_details":"Conferma che vuoi iscriverti alla Newsletter di Rockstar Games cliccando sul pulsante qui sotto.","ns_confirm_title":"Conferma la tua iscrizione","ns_error_generic_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento.","ns_error_generic_title":"Errore","ns_error_preferences_details":"Non è stato possibile procedere con l’iscrizione di questo indirizzo email alla nostra newsletter in questo momento. Modifica le preferenze della tua email nella pagina delle impostazioni dell’account o riprova più tardi.","ns_error_preferences_title":"Errore","ns_go_back_text":"No, torna indietro","ns_manage_prefs_button_text":"Gestisci le preferenze","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Hai effettuato l’iscrizione alla mailing list di Rockstar Games e riceverai regolarmente gli aggiornamenti all’indirizzo email che hai usato per iscriverti. Gestisci le tue preferenze di comunicazione in qualsiasi momento nelle impostazioni del tuo account.","ns_successfully_subscribed_title":"Iscrizione effettuata con successo","ns_yes_subscribe_text":"Sì, iscriviti","web_offer_claim_dialog_close":"chiudi","web_offer_claim_error_state_button":"Riprova","web_offer_claim_error_state_icon_label":"Icona Errore","web_offer_claim_exists_state_icon_label":"Icona di successo","web_offer_claim_link_account_state_icon_label":"Icona Errore","web_offer_claim_loading_state":"caricamento","web_offer_claim_success_state_icon_label":"Icona di successo"},"ja-JP":{"bottom_sheet_modal_close_icon":"閉じる","carousel_next_button":"次へ","carousel_prev_button":"前へ","decorative_video_pause_button_label":"一時停止","decorative_video_play_button_label":"再生","decorative_video_replay_button_label":"もう一回見る","featured_game_breadcrumbs_parent_item":"ゲーム","hero_carousel_pause_button":"一時停止","hero_carousel_play_button":"再生","hero_carousel_scroll_down_label":"下にスクロール","hp_hero_play_button_label":"ビデオ再生中","hp_hero_stop_button_label":"ビデオ停止中","image_carousel_screen_reader_announcer_label":"{total}のうち{selectedTab}を表示中","job_card_bookmark_action":"ブックマーク","job_card_created_by":"により作成","job_card_image_alt_text":"ジョブ{name}のスクリーンショット","job_card_report_action":"報告","job_card_share_action":"共有","job_card_updated_date":"{date}に更新","job_card_verified_by":"により認証","job_dialog_bookmarked_body":"ブックマークされたジョブを閲覧するには「GTAオンライン」を再起動する必要があります - ジョブは実際にプレイした後でなければ、ゲーム内で評価することはできません。","job_dialog_bookmarked_heading":"ブックマークされたジョブ: <b>{name}</b>","job_dialog_bookmarked_title":"ブックマークされたジョブ","job_dialog_confirmation_button":"OK","job_dialog_error_body":"ジョブをブックマーク/ブックマーク解除を試みた際にエラーが起こりました。もう一度お試しください","job_dialog_error_heading":"ジョブ: <b>{name}</b>","job_dialog_error_title":"エラー","job_dialog_unbookmarked_body":"ブックマークから解除たジョブを削除するには「GTAオンライン」を再起動する必要があります。","job_dialog_unbookmarked_heading":"ブックマークから解除されたジョブ: <b>{name}</b>","job_dialog_unbookmarked_title":"ブックマークから解除されたジョブ","job_type_adversary_mode":"敵対モード","job_type_air_race":"エアレース","job_type_arena_deathmatch":"アリーナデスマッチ","job_type_arena_war":"アリーナウォーズ","job_type_bike_race":"バイクレース","job_type_capture":"キャプチャー","job_type_contact_mission":"コンタクトのミッション","job_type_deathmatch":"デスマッチ","job_type_drag_race":"ドラッグレース","job_type_drift_race":"ドリフトレース","job_type_foot_race":"徒競走","job_type_hao_special_works_race":"ハオ・スペシャルワークスレース","job_type_heist":"強盗","job_type_heist_prep":"強盗調達","job_type_king_of_the_hill":"キングオブザヒル","job_type_land_race":"ランドレース","job_type_last_team_standing":"ラスト・チーム・アライブ","job_type_mission":"ミッション","job_type_mission_creator":"ミッションクリエイター","job_type_open_wheel_race":"オープンホイールレース","job_type_parachuting":"パラシューティング","job_type_pursuit_race":"追跡レース","job_type_race":"レース","job_type_random_mission":"ランダムなミッション","job_type_special_race":"特殊車両レース","job_type_street_race":"ストリートレース","job_type_stunt_race":"スタントレース","job_type_survival":"サバイバル","job_type_target":"ターゲットアサルトレース","job_type_team_deathmatch":"チームデスマッチ","job_type_team_king_of_the_hill":"チーム・キングオブザヒル","job_type_transform_race":"トランスフォームレース","job_type_unknown":"不明","job_type_vehicle_deathmatch":"マシンデスマッチ","job_type_water_race":"シーレース","lightbox_close_button":"閉じる","login_dialog_body":"このコンテンツを利用するには、サインインする必要があります","login_dialog_signin_button":"サインイン","login_dialog_signup_button":"サインアップ","login_dialog_title":"サインインが必要","masonry_grid_external_store_link":"ストアへの外部リンク","ns_already_subbed_details_amp":"このメールアドレスで既にニュースレターアップデートを受け取っています。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_already_subbed_title":"サブスクリプション登録済み","ns_check_email_details":"ロックスター・ゲームスのメールリストへのサブスクリプション登録を確認するため、登録に使用したメールアドレスに送られたリンクからメールアドレスを認証してください。","ns_check_email_title":"メールを確認してください","ns_confirm_after_register_details":"アカウント作成時にマーケティングメールを受け取ることを選択していません。ニュースレターのサブスクリプション登録をしますか？","ns_confirm_after_register_title":"サブスクリプション登録を承認してください","ns_confirm_details":"下のボタンをクリックすることでロックスター・ゲームスのニュースレターにサブスクリプション登録をすることを承認してください。","ns_confirm_title":"サブスクリプション登録を承認してください","ns_error_generic_details":"現在このメールアドレスをニュースレターに登録することができません。","ns_error_generic_title":"エラー","ns_error_preferences_details":"現在お客様のメールアドレスをニュースレターに登録することができません。アカウント設定のページからメール受信設定を変更するか、後ほど再度お試しください。","ns_error_preferences_title":"エラー","ns_go_back_text":"いいえ、戻ります","ns_manage_prefs_button_text":"受信設定を管理する","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"ロックスター・ゲームスのメールリストに登録されました。登録したメールアドレスに定期的にアップデートが送信されます。コミュニケーション設定はアカウント設定からいつでも管理できます。","ns_successfully_subscribed_title":"サブスクリプション登録が完了しました","ns_yes_subscribe_text":"はい、サブスクリプション登録します","web_offer_claim_dialog_close":"閉じる","web_offer_claim_error_state_button":"もう一度試す","web_offer_claim_error_state_icon_label":"エラーアイコン","web_offer_claim_exists_state_icon_label":"成功のアイコン","web_offer_claim_link_account_state_icon_label":"エラーアイコン","web_offer_claim_loading_state":"ロード中","web_offer_claim_success_state_icon_label":"成功のアイコン"},"ko-KR":{"bottom_sheet_modal_close_icon":"닫기","carousel_next_button":"다음","carousel_prev_button":"이전","decorative_video_pause_button_label":"일시 정지","decorative_video_play_button_label":"재생","decorative_video_replay_button_label":"다시 재생","featured_game_breadcrumbs_parent_item":"게임","hero_carousel_pause_button":"일시 정지","hero_carousel_play_button":"재생","hero_carousel_scroll_down_label":"아래로 스크롤","hp_hero_play_button_label":"비디오 재생 중","hp_hero_stop_button_label":"비디오 정지","image_carousel_screen_reader_announcer_label":"{total}의 {selectedTab} 이미지","job_card_bookmark_action":"즐겨찾기","job_card_created_by":"생성됨","job_card_image_alt_text":"{name} 작업 스크린샷","job_card_report_action":"신고","job_card_share_action":"공유","job_card_updated_date":"{date} 업데이트됨","job_card_verified_by":"인증됨","job_dialog_bookmarked_body":"즐겨찾기에 등록한 작업을 보려면 Grand Theft Auto 온라인을 다시 시작해야 합니다 - 작업은 플레이한 후에만 게임 내에서 평가할 수 있습니다.","job_dialog_bookmarked_heading":"즐겨찾기에 등록한 작업: <b>{name}</b>","job_dialog_bookmarked_title":"즐겨찾기에 등록한 작업","job_dialog_confirmation_button":"확인","job_dialog_error_body":"작업 즐겨찾기 등록/해제 중 오류가 발생했습니다. 다시 시도하십시오","job_dialog_error_heading":"작업: <b>{name}</b>","job_dialog_error_title":"오류","job_dialog_unbookmarked_body":"즐겨찾기에서 이 작업을 표시하지 않으려면 Grand Theft Auto 온라인을 다시 시작해야 합니다.","job_dialog_unbookmarked_heading":"즐겨찾기 해제한 작업: <b>{name}</b>","job_dialog_unbookmarked_title":"즐겨찾기 해제한 작업","job_type_adversary_mode":"대적 모드","job_type_air_race":"항공 레이스","job_type_arena_deathmatch":"아레나 데스매치","job_type_arena_war":"아레나 워","job_type_bike_race":"바이크 레이스","job_type_capture":"점령","job_type_contact_mission":"연락책 임무","job_type_deathmatch":"데스매치","job_type_drag_race":"드래그 레이스","job_type_drift_race":"드리프트 레이스","job_type_foot_race":"도보 레이스","job_type_hao_special_works_race":"하오의 스페셜 웍스 레이스 ","job_type_heist":"습격","job_type_heist_prep":"습격 준비","job_type_king_of_the_hill":"킹 오브 더 힐","job_type_land_race":"지상 레이스","job_type_last_team_standing":"라스트 팀 스탠딩","job_type_mission":"임무","job_type_mission_creator":"임무 생성기","job_type_open_wheel_race":"오픈 휠 레이스","job_type_parachuting":"낙하산 강하","job_type_pursuit_race":"추격전 레이스","job_type_race":"레이스","job_type_random_mission":"무작위 임무","job_type_special_race":"특수 차량 레이스","job_type_street_race":"길거리 레이스","job_type_stunt_race":"스턴트 레이스","job_type_survival":"서바이벌","job_type_target":"타겟 어썰트 레이스","job_type_team_deathmatch":"팀 데스매치","job_type_team_king_of_the_hill":"팀 킹 오브 더 힐","job_type_transform_race":"변신 레이스","job_type_unknown":"알 수 없음","job_type_vehicle_deathmatch":"이동 수단 데스매치","job_type_water_race":"해상 레이스","lightbox_close_button":"닫기","login_dialog_body":"이 콘텐츠에 댓글을 남기거나 좋아요를 누르려면 먼저 로그인하십시오","login_dialog_signin_button":"로그인","login_dialog_signup_button":"가입","login_dialog_title":"로그인 필요","masonry_grid_external_store_link":"스토어 외부 링크","ns_already_subbed_details_amp":"이미 이 이메일 주소로 최신 뉴스레터 정보를 수신하고 있습니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_already_subbed_title":"이미 구독 중","ns_check_email_details":"Rockstar Games 이메일 리스트 구독을 확인하려면 가입 시 사용한 이메일 주소로 전송된 링크를 통해 이메일 주소를 인증하십시오.","ns_check_email_title":"이메일 확인하기","ns_confirm_after_register_details":"계정을 생성할 때 마케팅 이메일 수신 동의를 선택하지 않았습니다. 그래도 뉴스레터를 구독하시겠습니까?","ns_confirm_after_register_title":"구독 확인하기","ns_confirm_details":"Rockstar Games 뉴스레터 구독을 확인하려면 아래 버튼을 클릭하십시오.","ns_confirm_title":"구독 확인하기","ns_error_generic_details":"현재 이 이메일 주소로 뉴스레터를 구독할 수 없습니다.","ns_error_generic_title":"오류","ns_error_preferences_details":"현재 해당 이메일 주소로 뉴스레터를 구독할 수 없습니다. 계정 설정 페이지에서 이메일 설정을 변경하거나 나중에 다시 시도하십시오.","ns_error_preferences_title":"오류","ns_go_back_text":"아니오, 뒤로 갑니다","ns_manage_prefs_button_text":"설정 관리","ns_ok_button_text":"확인","ns_successfully_subscribed_details_amp":"Rockstar Games 이메일 리스트를 구독합니다. 가입하신 이메일 주소로 최신 정보가 정기적으로 전달됩니다. 계정 설정 페이지에서 언제든지 커뮤니케이션 선호 사항을 관리할 수 있습니다.","ns_successfully_subscribed_title":"구독 완료","ns_yes_subscribe_text":"네, 구독합니다","web_offer_claim_dialog_close":"닫기","web_offer_claim_error_state_button":"다시 시도하기","web_offer_claim_error_state_icon_label":"오류 아이콘","web_offer_claim_exists_state_icon_label":"성공 아이콘","web_offer_claim_link_account_state_icon_label":"오류 아이콘","web_offer_claim_loading_state":"불러오는 중","web_offer_claim_success_state_icon_label":"성공 아이콘"},"pl-PL":{"bottom_sheet_modal_close_icon":"Zamknij","carousel_next_button":"Dalej","carousel_prev_button":"Poprzednie","decorative_video_pause_button_label":"Zatrzymaj","decorative_video_play_button_label":"Odtwórz","decorative_video_replay_button_label":"Odtwórz ponownie","featured_game_breadcrumbs_parent_item":"Gry","hero_carousel_pause_button":"Zatrzymaj","hero_carousel_play_button":"Odtwórz","hero_carousel_scroll_down_label":"Przewiń w dół","hp_hero_play_button_label":"Teraz odtwarzane","hp_hero_stop_button_label":"Wideo zatrzymane","image_carousel_screen_reader_announcer_label":"Wyświetlane {selectedTab} z {total}","job_card_bookmark_action":"Dodaj do zakładek","job_card_created_by":"Stworzone przez","job_card_image_alt_text":"Zrzut ekranu akcji {name}","job_card_report_action":"Zgłoś","job_card_share_action":"Udostępnij","job_card_updated_date":"Zaktualizowano {date}","job_card_verified_by":"Zweryfikowane przez","job_dialog_bookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby zobaczyć tę dodaną do ulubionych akcję. Akcje mogą być ocenione tylko i wyłącznie w grze po ich rozegraniu.","job_dialog_bookmarked_heading":"Akcja dodana do ulubionych: <b>{name}</b>","job_dialog_bookmarked_title":"Akcja dodana do ulubionych","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Wystąpił błąd podczas dodawania/usuwania tej akcji z sekcji ulubionych. Spróbuj ponownie.","job_dialog_error_heading":"Akcja: <b>{name}</b>","job_dialog_error_title":"Błąd","job_dialog_unbookmarked_body":"Musisz uruchomić ponownie Grand Theft Auto Online, aby akcja nie pojawiała się dłużej w sekcji ulubionych akcji.","job_dialog_unbookmarked_heading":"Akcja usunięta z ulubionych: <b>{name}</b>","job_dialog_unbookmarked_title":"Akcja usunięta z ulubionych","job_type_adversary_mode":"Tryb adwerszarza","job_type_air_race":"Wyścig powietrzny","job_type_arena_deathmatch":"Deathmatch na arenie","job_type_arena_war":"Arena wojny","job_type_bike_race":"Wyścig jednośladów","job_type_capture":"Zdobywanie","job_type_contact_mission":"Misja od kontaktów","job_type_deathmatch":"Deathmatch","job_type_drag_race":"Wyścig równoległy","job_type_drift_race":"Wyścig driftowe","job_type_foot_race":"Wyścig pieszy","job_type_hao_special_works_race":"Wyścigi Hao’s Special Works","job_type_heist":"Napad","job_type_heist_prep":"Misja w terenie","job_type_king_of_the_hill":"Król wzgórza","job_type_land_race":"Wyścig lądowy","job_type_last_team_standing":"Ostatnia drużyna wygrywa","job_type_mission":"Misja","job_type_mission_creator":"Kreator misji","job_type_open_wheel_race":"Wyścig bolidów","job_type_parachuting":"Skoki spadochronowe","job_type_pursuit_race":"Pościg","job_type_race":"Wyścig","job_type_random_mission":"Losowa misja","job_type_special_race":"Wyścig pojazdów specjalnych","job_type_street_race":"Wyścig uliczny","job_type_stunt_race":"Wyścig kaskaderski","job_type_survival":"Walka o przetrwanie","job_type_target":"Wyścig strzelecki","job_type_team_deathmatch":"Deathmatch drużynowy","job_type_team_king_of_the_hill":"Drużynowy Król wzgórza","job_type_transform_race":"Wyścig z transformacją","job_type_unknown":"Nieznane","job_type_vehicle_deathmatch":"Deathmatch w pojazdach","job_type_water_race":"Wyścig morski","lightbox_close_button":"Zamknij","login_dialog_body":"Zaloguj się, aby zapoznać się z zawartością.","login_dialog_signin_button":"Zaloguj się","login_dialog_signup_button":"Zarejestruj się","login_dialog_title":"Wymagane zalogowanie się","masonry_grid_external_store_link":"Odnośnik zewnętrzny do sklepu","ns_already_subbed_details_amp":"Otrzymujesz już powiadomienia o nowościach na ten adres e-mail. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_already_subbed_title":"Subskrypcja jest już aktywna","ns_check_email_details":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej.","ns_check_email_title":"Sprawdź swoją pocztę","ns_confirm_after_register_details":"Nie udzielono zgody na otrzymywanie powiadomień marketingowych przy zakładaniu konta. Czy chcesz subskrybować naszą listę mailingową?","ns_confirm_after_register_title":"Potwierdź swoją subskrypcję","ns_confirm_details":"Potwierdź swoją subskrypcję listy mailingowej Rockstar Games poprzez kliknięcie poniższego przycisku.","ns_confirm_title":"Potwierdź swoją subskrypcję","ns_error_generic_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej.","ns_error_generic_title":"Błąd","ns_error_preferences_details":"Nie możemy w tym momencie dodać twojego adresu do listy mailingowej. Zmień swoje preferencje w ustawieniach swojego konta lub spróbuj ponownie później.","ns_error_preferences_title":"Błąd","ns_go_back_text":"Nie, wróć","ns_manage_prefs_button_text":"Aktualizuj swoje preferencje","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Aby potwierdzić swoją subskrypcję listy mailingowej Rockstar Games, zweryfikuj swój adres e-mail poprzez link wysłany do twojej skrzynki odbiorczej. Zmień swoje preferencje w dowolnym momencie w ustawieniach swojego konta.","ns_successfully_subscribed_title":"Pomyślnie zasubskrybowano","ns_yes_subscribe_text":"Tak, subskrybuj","web_offer_claim_dialog_close":"Zamknij","web_offer_claim_error_state_button":"Spróbuj ponownie","web_offer_claim_error_state_icon_label":"Ikona błędu","web_offer_claim_exists_state_icon_label":"Ikona sukcesu","web_offer_claim_link_account_state_icon_label":"Ikona błędu","web_offer_claim_loading_state":"Ładowanie","web_offer_claim_success_state_icon_label":"Ikona sukcesu"},"pt-BR":{"bottom_sheet_modal_close_icon":"Fechar","carousel_next_button":"Próximo","carousel_prev_button":"Anterior","decorative_video_pause_button_label":"Pausar","decorative_video_play_button_label":"Iniciar","decorative_video_replay_button_label":"Replay","featured_game_breadcrumbs_parent_item":"Jogos","hero_carousel_pause_button":"Pausar","hero_carousel_play_button":"Iniciar","hero_carousel_scroll_down_label":"Role para baixo","hp_hero_play_button_label":"Vídeo em reprodução","hp_hero_stop_button_label":"Vídeo parado","image_carousel_screen_reader_announcer_label":"Mostrando {selectedTab} de {total}","job_card_bookmark_action":"Adicionar aos Favoritos","job_card_created_by":"Criado por","job_card_image_alt_text":"Captura de tela do Serviço {name}","job_card_report_action":"Denunciar","job_card_share_action":"Compartilhar","job_card_updated_date":"Atualização {date}","job_card_verified_by":"Verificado por","job_dialog_bookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para ver este serviço como um de seus Favoritos. Serviços só podem ser avaliados no jogo, após terem sido jogados.","job_dialog_bookmarked_heading":"Serviço adicionado aos Favoritos: <b>{name}</b>","job_dialog_bookmarked_title":"Serviço adicionado aos Favoritos","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Houve um erro ao tentar adicionar/remover esse serviço aos Favoritos. Tente novamente.","job_dialog_error_heading":"Serviço: <b>{name}</b>","job_dialog_error_title":"Erro","job_dialog_unbookmarked_body":"Será preciso reiniciar Grand Theft Auto Online para não ver mais este serviço como um de seus Favoritos.","job_dialog_unbookmarked_heading":"Serviço removido dos Favoritos: <b>{name}</b>","job_dialog_unbookmarked_title":"Serviço removido dos Favoritos","job_type_adversary_mode":"Modo Adversário","job_type_air_race":"Corrida Aérea","job_type_arena_deathmatch":"Mata-mata da Arena","job_type_arena_war":"Arena de Guerra","job_type_bike_race":"Corrida sobre duas rodas","job_type_capture":"Captura","job_type_contact_mission":"Missão de Contato","job_type_deathmatch":"Mata-mata","job_type_drag_race":"Corrida de Arrancada","job_type_drift_race":"Corrida de Drift","job_type_foot_race":"Corrida a pé","job_type_hao_special_works_race":"Corrida da Hao\'s Special Works","job_type_heist":"Golpe","job_type_heist_prep":"Preliminar do Golpe","job_type_king_of_the_hill":"Marcando Território","job_type_land_race":"Corrida Terrestre","job_type_last_team_standing":"Última Equipe Sobrevivente","job_type_mission":"Missão","job_type_mission_creator":"Criador de Missões","job_type_open_wheel_race":"Corrida de Roda Exposta","job_type_parachuting":"Paraquedismo","job_type_pursuit_race":"Corrida de Perseguição","job_type_race":"Corrida","job_type_random_mission":"Missão aleatória","job_type_special_race":"Corrida de Veículo Especial","job_type_street_race":"Corrida de Rua","job_type_stunt_race":"Corrida Acrobática","job_type_survival":"Sobrevivência","job_type_target":"Corrida de Assalto com Alvos","job_type_team_deathmatch":"Mata-mata em Equipe","job_type_team_king_of_the_hill":"Marcando Território em Equipe","job_type_transform_race":"Corrida Metamorfose","job_type_unknown":"Desconhecido","job_type_vehicle_deathmatch":"Mata-mata em Veículos","job_type_water_race":"Corrida Marítima","lightbox_close_button":"Fechar","login_dialog_body":"É necessário iniciar sessão para interagir com esse conteúdo","login_dialog_signin_button":"Iniciar sessão","login_dialog_signup_button":"Criar conta","login_dialog_title":"É necessário iniciar sessão","masonry_grid_external_store_link":"Link externo para a Loja","ns_already_subbed_details_amp":"Você já está recebendo atualizações da newsletter neste endereço de e-mail. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_already_subbed_title":"Você já se inscreveu","ns_check_email_details":"Para confirmar sua inscrição na lista de e-mails da Rockstar Games, verifique seu endereço de e-mail pelo link enviado para o endereço que você usou para se inscrever.","ns_check_email_title":"Verifique seu e-mail","ns_confirm_after_register_details":"Você escolheu não receber e-mails de marketing quando criou a sua conta. Deseja se inscrever na nosso newsletter?","ns_confirm_after_register_title":"Confirme sua inscrição","ns_confirm_details":"Confirme que você deseja se inscrever na newsletter da Rockstar Games clicando no botão abaixo.","ns_confirm_title":"Confirme sua inscrição","ns_error_generic_details":"No momento, não é possível se inscrever na nossa newsletter usando este endereço de e-mail.","ns_error_generic_title":"Erro","ns_error_preferences_details":"No momento, não é possível se inscrever na nossa newsletter usando o seu endereço de e-mail. Mude suas preferências de e-mail a qualquer momento na página de configurações da sua conta ou tente de novo mais tarde.","ns_error_preferences_title":"Erro","ns_go_back_text":"Não, voltar","ns_manage_prefs_button_text":"Gerenciar preferências","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Você está inscrito na lista de e-mails da Rockstar Games e receberá atualizações periódicas no endereço de e-mail que usou para se inscrever. Gerencie suas preferências de comunicação a qualquer momento nas configurações da sua conta.","ns_successfully_subscribed_title":"Inscrição confirmada","ns_yes_subscribe_text":"Sim, fazer inscrição","web_offer_claim_dialog_close":"fechar","web_offer_claim_error_state_button":"Tentar novamente","web_offer_claim_error_state_icon_label":"Ícone de erro","web_offer_claim_exists_state_icon_label":"Ícone de êxito","web_offer_claim_link_account_state_icon_label":"Ícone de erro","web_offer_claim_loading_state":"carregando","web_offer_claim_success_state_icon_label":"Ícone de êxito"},"ru-RU":{"bottom_sheet_modal_close_icon":"Закрыть","carousel_next_button":"Далее","carousel_prev_button":"Назад","decorative_video_pause_button_label":"Пауза","decorative_video_play_button_label":"Воспроизвести","decorative_video_replay_button_label":"Повтор","featured_game_breadcrumbs_parent_item":"Игры","hero_carousel_pause_button":"Пауза","hero_carousel_play_button":"Воспроизвести","hero_carousel_scroll_down_label":"Прокрутить вниз","hp_hero_play_button_label":"Воспроизведение видео","hp_hero_stop_button_label":"Видео остановлено","image_carousel_screen_reader_announcer_label":"На экране слайд {selectedTab} из {total}","job_card_bookmark_action":"Отметить","job_card_created_by":"Создан","job_card_image_alt_text":"Снимок экрана дела {name}","job_card_report_action":"Пожаловаться","job_card_share_action":"Поделиться","job_card_updated_date":"Обновлен {date}","job_card_verified_by":"Проверен","job_dialog_bookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы увидеть добавленное в закладки дело. Оценивать дела можно только в игре после прохождения.","job_dialog_bookmarked_heading":"Дело добавлено в закладки: <b>{name}</b>","job_dialog_bookmarked_title":"Дело добавлено в закладки","job_dialog_confirmation_button":"OK","job_dialog_error_body":"Произошла ошибка при попытке добавить дело в закладки или удалить его из закладок. Пожалуйста, повторите попытку","job_dialog_error_heading":"Дело: <b>{name}</b>","job_dialog_error_title":"Ошибка","job_dialog_unbookmarked_body":"Перезапустите Grand Theft Auto Online, чтобы удалить это дело из закладок.","job_dialog_unbookmarked_heading":"Дело удалено из закладок: <b>{name}</b>","job_dialog_unbookmarked_title":"Дело удалено из закладок","job_type_adversary_mode":"Режим противоборства","job_type_air_race":"Гонка по воздуху","job_type_arena_deathmatch":"Перестрелка на арене","job_type_arena_war":"Битва на арене","job_type_bike_race":"Велогонка","job_type_capture":"Захват","job_type_contact_mission":"Задание знакомого","job_type_deathmatch":"Перестрелка","job_type_drag_race":"Драг-гонка","job_type_drift_race":"Дрифтовая гонка","job_type_foot_race":"Пешая гонка","job_type_hao_special_works_race":"Гонка Hao’s Special Works","job_type_heist":"Ограбление","job_type_heist_prep":"Подготовка к ограблению","job_type_king_of_the_hill":"Король горы","job_type_land_race":"Гонка по суше","job_type_last_team_standing":"«Команда уцелевших»","job_type_mission":"Задание","job_type_mission_creator":"Редактор заданий","job_type_open_wheel_race":"Гонки на болидах","job_type_parachuting":"Парашютизм","job_type_pursuit_race":"Гонка «Погоня»","job_type_race":"Гонка","job_type_random_mission":"Случайная миссия","job_type_special_race":"Гонка для особого транспорта","job_type_street_race":"Уличная гонка","job_type_stunt_race":"Каскадерская гонка","job_type_survival":"Выживание","job_type_target":"Гонка с мишенями","job_type_team_deathmatch":"Командная перестрелка","job_type_team_king_of_the_hill":"Команда «Король горы»","job_type_transform_race":"Гонка «Трансформации»","job_type_unknown":"Неизвестно","job_type_vehicle_deathmatch":"Перестрелка на транспорте","job_type_water_race":"Морская гонка","lightbox_close_button":"Закрыть","login_dialog_body":"Выполните вход, чтобы взаимодействовать с этим контентом.","login_dialog_signin_button":"Войти","login_dialog_signup_button":"Регистрация","login_dialog_title":"Необходимо выполнить вход","masonry_grid_external_store_link":"Внешняя ссылка на магазин","ns_already_subbed_details_amp":"Вы уже получаете письма по рассылке на этот адрес электронной почты. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_already_subbed_title":"Подписка уже оформлена","ns_check_email_details":"Чтобы подтвердить подписку на рассылку электронных писем Rockstar Games, пожалуйста, подтвердите адрес электронной почты, нажав на ссылку в письме, полученном на адрес электронной почты, который вы указали при оформлении подписки.","ns_check_email_title":"Проверьте электронную почту","ns_confirm_after_register_details":"Вы не дали согласия на получение рекламных писем во время создания учетной записи. Вы все еще хотите оформить подписку на нашу рассылку?","ns_confirm_after_register_title":"Подтвердите подписку","ns_confirm_details":"Пожалуйста, подтвердите, что вы хотите подписаться на рассылку электронных писем Rockstar Games, нажав на кнопку ниже.","ns_confirm_title":"Подтвердите подписку","ns_error_generic_details":"Невозможно оформить подписку на нашу рассылку для этого адреса электронной почты в данный момент.","ns_error_generic_title":"Ошибка","ns_error_preferences_details":"Невозможно оформить подписку на нашу рассылку для вашего адреса электронной почты в данный момент. Вы можете изменить настройки электронной почты на странице настроек учетной записи или повторить попытку позже.","ns_error_preferences_title":"Ошибка","ns_go_back_text":"Нет, вернуться","ns_manage_prefs_button_text":"Изменить настройки учетной записи","ns_ok_button_text":"OK","ns_successfully_subscribed_details_amp":"Подписка на рассылку электронных писем Rockstar Games оформлена, и вы будете регулярно получать новости на адрес электронной почты, указанный при оформлении. ы можете изменить настройки обратной связи в любое время на странице настроек учетной записи.","ns_successfully_subscribed_title":"Подписка оформлена","ns_yes_subscribe_text":"Да, подписаться","web_offer_claim_dialog_close":"закрыть","web_offer_claim_error_state_button":"Попробовать снова","web_offer_claim_error_state_icon_label":"Значок ошибки","web_offer_claim_exists_state_icon_label":"Значок «Успех»","web_offer_claim_link_account_state_icon_label":"Значок ошибки","web_offer_claim_loading_state":"загрузка","web_offer_claim_success_state_icon_label":"Значок «Успех»"},"zh-CN":{"bottom_sheet_modal_close_icon":"关闭","carousel_next_button":"下一个","carousel_prev_button":"上一个","decorative_video_pause_button_label":"暂停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"回放","featured_game_breadcrumbs_parent_item":"游戏","hero_carousel_pause_button":"暂停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下滚动","hp_hero_play_button_label":"视频播放中","hp_hero_stop_button_label":"视频已停止","image_carousel_screen_reader_announcer_label":"正在显示{selectedTab}（共{total}）","job_card_bookmark_action":"收藏","job_card_created_by":"制作者","job_card_image_alt_text":"{name}差事的截图","job_card_report_action":"举报","job_card_share_action":"分享","job_card_updated_date":"更新于{date}","job_card_verified_by":"认证者","job_dialog_bookmarked_body":"您需要重新启动Grand Theft Auto在线模式来查看这项已收藏的差事。只有在游玩了差事后才能在游戏内对它们进行评价。","job_dialog_bookmarked_heading":"已收藏差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏差事","job_dialog_confirmation_button":"确定","job_dialog_error_body":"收藏/取消收藏此差事时出现了一个错误。请稍候再试","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"错误","job_dialog_unbookmarked_body":"需要您重新启动Grand Theft Auto在线模式后，这项差事才会从您的收藏中消失。","job_dialog_unbookmarked_heading":"已取消收藏差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏差事","job_type_adversary_mode":"对抗模式","job_type_air_race":"空中竞速","job_type_arena_deathmatch":"竞技场死斗","job_type_arena_war":"竞技场之战","job_type_bike_race":"两轮车竞速","job_type_capture":"夺取","job_type_contact_mission":"联系人任务","job_type_deathmatch":"死斗游戏","job_type_drag_race":"直线竞速","job_type_drift_race":"漂移竞速","job_type_foot_race":"徒步竞速","job_type_hao_special_works_race":"阿浩特别工坊竞速","job_type_heist":"抢劫任务","job_type_heist_prep":"抢劫前置任务","job_type_king_of_the_hill":"占山为王","job_type_land_race":"陆地竞速","job_type_last_team_standing":"团队生存游戏","job_type_mission":"任务","job_type_mission_creator":"任务制作器","job_type_open_wheel_race":"开轮式竞速","job_type_parachuting":"跳伞","job_type_pursuit_race":"追逐竞速","job_type_race":"竞速","job_type_random_mission":"随机任务","job_type_special_race":"特殊载具竞速","job_type_street_race":"街头竞速","job_type_stunt_race":"特技竞速","job_type_survival":"生存战","job_type_target":"标靶射击竞速","job_type_team_deathmatch":"团队死斗游戏","job_type_team_king_of_the_hill":"团队占山为王","job_type_transform_race":"幻变竞速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"载具死斗游戏","job_type_water_race":"水上竞速","lightbox_close_button":"关闭","login_dialog_body":"您需要先登录才能与该内容进行互动","login_dialog_signin_button":"登录","login_dialog_signup_button":"注册","login_dialog_title":"需要登录","masonry_grid_external_store_link":"前往商店的外部链接","ns_already_subbed_details_amp":"您的电子邮件地址已在接收新闻通讯更新。您可以在账户设置中随时管理您的通信偏好。","ns_already_subbed_title":"已订阅","ns_check_email_details":"要确认您已订阅Rockstar Games电子邮件列表，请通过发送到您订阅时使用的电子邮件地址中的链接验证邮箱。","ns_check_email_title":"检查您的电子邮箱","ns_confirm_after_register_details":"您在创建账户时没有选择接收营销邮件。您还想要订阅我们的新闻通讯吗？","ns_confirm_after_register_title":"确认您的订阅","ns_confirm_details":"请点击下方按钮以确认您想订阅Rockstar Games新闻通讯。","ns_confirm_title":"确认您的订阅","ns_error_generic_details":"我们目前无法用此电子邮件地址订阅新闻通讯。","ns_error_generic_title":"错误","ns_error_preferences_details":"我们目前无法用您的电子邮件地址订阅新闻通讯。请在账户设置页面中修改您的电子邮件偏好，或稍后再试。","ns_error_preferences_title":"错误","ns_go_back_text":"不，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"确定","ns_successfully_subscribed_details_amp":"您现已订阅Rockstar Games邮件通知，您将会在您订阅时使用的电子邮件地址中收到定期更新。您可以在账户设置中随时管理您的通信偏好。","ns_successfully_subscribed_title":"订阅成功","ns_yes_subscribe_text":"是，订阅","web_offer_claim_dialog_close":"关闭","web_offer_claim_error_state_button":"再次尝试","web_offer_claim_error_state_icon_label":"错误图标","web_offer_claim_exists_state_icon_label":"成功图标","web_offer_claim_link_account_state_icon_label":"错误图标","web_offer_claim_loading_state":"正在加载","web_offer_claim_success_state_icon_label":"成功图标"},"zh-TW":{"bottom_sheet_modal_close_icon":"關閉","carousel_next_button":"下一個","carousel_prev_button":"上一個","decorative_video_pause_button_label":"暫停","decorative_video_play_button_label":"播放","decorative_video_replay_button_label":"重播","featured_game_breadcrumbs_parent_item":"遊戲","hero_carousel_pause_button":"暫停","hero_carousel_play_button":"播放","hero_carousel_scroll_down_label":"向下捲動","hp_hero_play_button_label":"正播放影片","hp_hero_stop_button_label":"影片已停止","image_carousel_screen_reader_announcer_label":"現正顯示 {selectedTab}（共 {total} 個）","job_card_bookmark_action":"收藏","job_card_created_by":"創作者：","job_card_image_alt_text":"差事 {name} 的擷圖","job_card_report_action":"檢舉","job_card_share_action":"分享","job_card_updated_date":"更新於 {date}","job_card_verified_by":"驗證者：","job_dialog_bookmarked_body":"您需要重啟 GTA 線上模式才能看見此已收藏的差事。您需要完成該差事，才能在遊戲內對其評價。","job_dialog_bookmarked_heading":"已收藏的差事：<b>{name}</b>","job_dialog_bookmarked_title":"已收藏的差事","job_dialog_confirmation_button":"確定","job_dialog_error_body":"解決這個請求時出現錯誤。請再試一次。","job_dialog_error_heading":"差事：<b>{name}</b>","job_dialog_error_title":"錯誤","job_dialog_unbookmarked_body":"您需要重啟 GTA 線上模式才不會再在收藏中看見此差事。","job_dialog_unbookmarked_heading":"已取消收藏的差事：<b>{name}</b>","job_dialog_unbookmarked_title":"已取消收藏的差事","job_type_adversary_mode":"競爭模式","job_type_air_race":"空中競速","job_type_arena_deathmatch":"鬥技場死鬥遊戲","job_type_arena_war":"決戰鬥技場","job_type_bike_race":"雙輪車競速","job_type_capture":"奪取","job_type_contact_mission":"聯絡人任務","job_type_deathmatch":"死鬥遊戲","job_type_drag_race":"直線競速","job_type_drift_race":"甩尾競速","job_type_foot_race":"賽跑","job_type_hao_special_works_race":"阿浩特製改裝競速","job_type_heist":"搶劫任務","job_type_heist_prep":"搶劫前置任務","job_type_king_of_the_hill":"山頭之王","job_type_land_race":"陸上競速","job_type_last_team_standing":"團隊生存遊戲","job_type_mission":"任務","job_type_mission_creator":"任務製作器","job_type_open_wheel_race":"開輪式競速","job_type_parachuting":"跳傘活動","job_type_pursuit_race":"追緝競速","job_type_race":"競速","job_type_random_mission":"隨機任務","job_type_special_race":"特殊載具競速","job_type_street_race":"街頭競速","job_type_stunt_race":"特技競速","job_type_survival":"生存戰","job_type_target":"射靶競速","job_type_team_deathmatch":"團隊死鬥遊戲","job_type_team_king_of_the_hill":"團隊山頭之王","job_type_transform_race":"變形狂飆競速","job_type_unknown":"未知","job_type_vehicle_deathmatch":"載具死鬥遊戲","job_type_water_race":"水上競速","lightbox_close_button":"關閉","login_dialog_body":"您需要先登入才能進行操作","login_dialog_signin_button":"登入","login_dialog_signup_button":"註冊","login_dialog_title":"必須登入","masonry_grid_external_store_link":"前往商店的外部連結","ns_already_subbed_details_amp":"電子報更新已以此電子郵件地址寄送給您。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_already_subbed_title":"已經訂閱","ns_check_email_details":"為了確認您的 Rockstar Games 電子郵件通知訂閱，請以寄送到您訂閱電子郵件地址的連結，驗證您的電子郵件地址。","ns_check_email_title":"檢查您的電子郵件","ns_confirm_after_register_details":"在建立帳戶時，您並沒有選擇可接收行銷電子郵件。您仍想訂閱我們的電子報？","ns_confirm_after_register_title":"確認您的訂閱","ns_confirm_details":"請點擊以下按鈕，以確認您想訂閱 Rockstar Games 電子報。","ns_confirm_title":"確認您的訂閱","ns_error_generic_details":"我們現在無法將此電子郵件地址訂閱到我們的電子報。","ns_error_generic_title":"錯誤","ns_error_preferences_details":"我們現在無法將您的電子郵件地址訂閱到我們的電子報。在帳戶設定頁面變更您的電子郵件偏好設定，或稍後再試。","ns_error_preferences_title":"錯誤","ns_go_back_text":"否，返回","ns_manage_prefs_button_text":"管理偏好","ns_ok_button_text":"確定","ns_successfully_subscribed_details_amp":"您現在已訂閱 Rockstar Games 電子郵件通知，將會在訂閱的電子郵件地址收到定期更新。您可以在帳戶設定隨時管理您的聯絡偏好設定。","ns_successfully_subscribed_title":"成功訂閱","ns_yes_subscribe_text":"是，訂閱","web_offer_claim_dialog_close":"關閉","web_offer_claim_error_state_button":"再試一次","web_offer_claim_error_state_icon_label":"錯誤圖示","web_offer_claim_exists_state_icon_label":"成功圖示","web_offer_claim_link_account_state_icon_label":"錯誤圖示","web_offer_claim_loading_state":"正在載入","web_offer_claim_success_state_icon_label":"成功圖示"}}'),
         nr = e => (0, U.withIntl)(e, rr);
-      var or = t(84173),
-        ir = t(59236);
+      var ir = t(84173),
+        or = t(59236);
       const cr = (0, m.createContext)(null),
-        dr = (0, m.forwardRef)(function({
+        lr = (0, m.forwardRef)(function({
           jumpLinkId: e,
           currentStep: a = "unclaimed",
           testId: t = "web-offer-claim-root",
           asChild: s,
           ...r
         }, n) {
-          const o = s ? or.DX : "div",
-            i = (0, ir.mergeProps)({
+          const i = s ? ir.DX : "div",
+            o = (0, or.mergeProps)({
               "data-testid": t,
               className: "bfo5lc0"
             }, r);
@@ -9771,14 +9771,14 @@ try {
             value: {
               currentStep: a
             },
-            children: (0, _.jsx)(o, {
+            children: (0, _.jsx)(i, {
               id: e,
               ref: n,
-              ...i
+              ...o
             })
           })
         }),
-        lr = (0, m.forwardRef)(function({
+        dr = (0, m.forwardRef)(function({
           stepIndex: e,
           asChild: a,
           ...t
@@ -9793,20 +9793,20 @@ try {
               })();
               return e
             })(),
-            n = a ? or.DX : "div",
-            o = (0, ir.mergeProps)({
+            n = a ? ir.DX : "div",
+            i = (0, or.mergeProps)({
               className: "bfo5lc1"
             }, t);
           return r === e ? (0, _.jsx)(n, {
             ref: s,
-            ...o
+            ...i
           }) : null
         }),
         _r = (0, m.forwardRef)(function({
           view: e = "default",
           ...a
         }, t) {
-          const s = (0, ir.mergeProps)({
+          const s = (0, or.mergeProps)({
             className: "bfo5lc2"
           }, a);
           return "dialog" === e ? (0, _.jsx)(sr.Dialog.Trigger, {
@@ -9827,12 +9827,12 @@ try {
           return e
         },
         ur = () => {
-          const e = (0, m.useContext)(Or);
+          const e = (0, m.useContext)(Br);
           if (!e) throw new Error("Warning, must use inside a WebOfferClaim.Root provider");
           return e
         };
       var gr = t(16630),
-        pr = (0, gr.c)({
+        br = (0, gr.c)({
           defaultClassName: "_1vpanoc5",
           variantClassNames: {
             view: {
@@ -9843,7 +9843,7 @@ try {
           defaultVariants: {},
           compoundVariants: []
         }),
-        br = (0, gr.c)({
+        pr = (0, gr.c)({
           defaultClassName: "_1vpanocf",
           variantClassNames: {
             platform: {
@@ -9889,8 +9889,8 @@ try {
         Sr = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b12e4e9678e7a4ebea34905926feeb90.svg",
         Cr = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/cf1b78cec82c717ea9c2155ce4093736.svg",
         Tr = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/925d3b2d0b0e784c366e20d3f1a660da.svg",
-        Ir = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7c453a914f0b049334120adfcba614e5.svg",
-        Er = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f74e871585118640ffd9ce881181a176.svg",
+        Er = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7c453a914f0b049334120adfcba614e5.svg",
+        Ir = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f74e871585118640ffd9ce881181a176.svg",
         zr = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f91e4753c491fb23c2b364f69480c9e.svg",
         Ar = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5bd8456deb2338503b8fd44786b5fa07.svg";
       var Mr = "var(--_1htcsun5)",
@@ -9908,7 +9908,7 @@ try {
         }),
         Rr = "var(--_1htcsun3)",
         Dr = t(819);
-      const Vr = (0, m.forwardRef)(function({
+      const Or = (0, m.forwardRef)(function({
           orientation: e = "vertical",
           fadeStart: a = !0,
           fadeEnd: t = !0,
@@ -9921,30 +9921,30 @@ try {
           }],
           style: r,
           children: n,
-          ...o
-        }, i) {
+          ...i
+        }, o) {
           const c = s.map(e => `${e.color}${e.position?` calc(${e.position} * var(--_1htcsun0))`:""}`).join(", "),
-            d = s.map(e => `${e.color}${e.position?` calc(${e.position} * var(--_1htcsun1))`:""}`).join(", "),
-            l = "vertical" === e ? "to bottom" : "to right",
+            l = s.map(e => `${e.color}${e.position?` calc(${e.position} * var(--_1htcsun1))`:""}`).join(", "),
+            d = "vertical" === e ? "to bottom" : "to right",
             m = "vertical" === e ? "to top" : "to left",
             u = (0, Dr.DI)({
-              [Rr]: a ? `linear-gradient(${l}, ${c})` : "linear-gradient(black 0%)",
-              [Pr]: t ? `linear-gradient(${m}, ${d})` : "linear-gradient(black 0%)",
+              [Rr]: a ? `linear-gradient(${d}, ${c})` : "linear-gradient(black 0%)",
+              [Pr]: t ? `linear-gradient(${m}, ${l})` : "linear-gradient(black 0%)",
               [Mr]: "vertical" === e ? "y" : "x"
             }),
-            g = (0, ir.mergeProps)({
+            g = (0, or.mergeProps)({
               className: Lr({
                 orientation: e
               })
-            }, o),
-            p = {
+            }, i),
+            b = {
               ...r,
               ...u
             };
           return (0, _.jsxs)(sr.ScrollArea.Root, {
             ...g,
-            ref: i,
-            style: p,
+            ref: o,
+            style: b,
             children: [(0, _.jsx)(sr.ScrollArea.Viewport, {
               className: "_1htcsun9",
               children: n
@@ -9954,29 +9954,29 @@ try {
             }), (0, _.jsx)(sr.ScrollArea.Corner, {})]
           })
         }),
-        Or = (0, m.createContext)({
+        Br = (0, m.createContext)({
           view: "default"
         }),
-        Br = (0, m.forwardRef)(function({
+        Gr = (0, m.forwardRef)(function({
           asChild: e,
           testId: a = "web-offer-claim-root",
           view: t = "default",
           ...s
         }, r) {
-          const n = e ? or.DX : "div",
-            o = (0, ir.mergeProps)({
+          const n = e ? ir.DX : "div",
+            i = (0, or.mergeProps)({
               "data-testid": a,
               className: fr({
                 view: t
               })
             }, s);
-          return (0, _.jsx)(Or.Provider, {
+          return (0, _.jsx)(Br.Provider, {
             value: {
               view: t
             },
             children: (0, _.jsx)(n, {
               ref: r,
-              ...o
+              ...i
             })
           })
         }),
@@ -9985,9 +9985,9 @@ try {
           ...a
         }, t) {
           const s = mr(),
-            r = e ? or.DX : "div",
-            n = (0, ir.mergeProps)({
-              className: pr({
+            r = e ? ir.DX : "div",
+            n = (0, or.mergeProps)({
+              className: br({
                 view: s
               })
             }, a);
@@ -9996,12 +9996,12 @@ try {
             ...n
           })
         }),
-        Gr = (0, m.forwardRef)(function({
+        Vr = (0, m.forwardRef)(function({
           asChild: e,
           ...a
         }, t) {
-          const s = e ? or.DX : "header",
-            r = (0, ir.mergeProps)({}, a);
+          const s = e ? ir.DX : "header",
+            r = (0, or.mergeProps)({}, a);
           return (0, _.jsx)(s, {
             ref: t,
             ...r
@@ -10011,8 +10011,8 @@ try {
           asChild: e,
           ...a
         }, t) {
-          const s = e ? or.DX : "footer",
-            r = (0, ir.mergeProps)({
+          const s = e ? ir.DX : "footer",
+            r = (0, or.mergeProps)({
               className: "_1vpanocd"
             }, a);
           return (0, _.jsx)(s, {
@@ -10025,8 +10025,8 @@ try {
           ...a
         }, t) {
           const s = mr(),
-            r = e ? or.DX : "div",
-            n = (0, ir.mergeProps)({
+            r = e ? ir.DX : "div",
+            n = (0, or.mergeProps)({
               className: "_1vpanoc8"
             }, a);
           return "dialog" === s ? (0, _.jsx)(sr.Dialog.Description, {
@@ -10035,7 +10035,7 @@ try {
             children: (0, _.jsx)(r, {
               ...n
             })
-          }) : (0, _.jsx)(Vr, {
+          }) : (0, _.jsx)(Or, {
             stops: [{
               color: "transparent",
               position: "0%"
@@ -10058,12 +10058,12 @@ try {
           ...s
         }, r) {
           const n = mr(),
-            o = (0, ir.mergeProps)({
+            i = (0, or.mergeProps)({
               className: "_1vpanoc3"
             }, s);
           return "dialog" !== n && (0, _.jsxs)("picture", {
             ref: r,
-            ...o,
+            ...i,
             children: [(0, _.jsx)("source", {
               media: "(max-width: 1279.98px)",
               srcSet: a
@@ -10082,7 +10082,7 @@ try {
           appearance: a = "secondary",
           ...t
         }, s) {
-          const r = (0, ir.mergeProps)({
+          const r = (0, or.mergeProps)({
             appearance: a,
             testId: "woc.step.badge",
             className: "_1vpanocb"
@@ -10100,8 +10100,8 @@ try {
           asChild: e,
           ...a
         }, t) {
-          const s = e ? or.DX : "div",
-            r = (0, ir.mergeProps)({
+          const s = e ? ir.DX : "div",
+            r = (0, or.mergeProps)({
               className: "_1vpanoca"
             }, a);
           return (0, _.jsx)(s, {
@@ -10113,7 +10113,7 @@ try {
           ...e
         }, a) {
           const t = mr(),
-            s = (0, ir.mergeProps)({
+            s = (0, or.mergeProps)({
               className: "_1vpanoc9"
             }, e);
           return "dialog" === t ? (0, _.jsx)(sr.Dialog.Title, {
@@ -10130,7 +10130,7 @@ try {
         Yr = (0, m.forwardRef)(function({
           ...e
         }, a) {
-          const t = (0, ir.mergeProps)({
+          const t = (0, or.mergeProps)({
             testId: "woc.step.description",
             className: "_1vpanocc"
           }, e);
@@ -10142,7 +10142,7 @@ try {
         Xr = (0, m.forwardRef)(function({
           ...e
         }, a) {
-          const t = (0, ir.mergeProps)({
+          const t = (0, or.mergeProps)({
             testId: "woc.step.disclaimer",
             className: "_1vpanoce"
           }, e);
@@ -10168,8 +10168,8 @@ try {
           platform: a,
           ...t
         }) => {
-          const s = (0, ir.mergeProps)({
-            className: br({
+          const s = (0, or.mergeProps)({
+            className: pr({
               platform: a
             })
           }, t);
@@ -10206,7 +10206,7 @@ try {
             label: e
           })
         }),
-        tn = Object.assign(lr, o),
+        tn = Object.assign(dr, i),
         sn = "claimOffer",
         rn = (0, m.createContext)(null),
         nn = () => {
@@ -10221,7 +10221,7 @@ try {
           returnUrl: s,
           steps: r,
           variant: n,
-          RichTextComponent: o
+          RichTextComponent: i
         }) => ({
           giftId: e,
           location: a,
@@ -10229,7 +10229,7 @@ try {
           jumpLinkId: t,
           variant: n,
           steps: r,
-          RichTextComponent: o,
+          RichTextComponent: i,
           loading: !1,
           status: "IDLE",
           currentStep: "unclaimed",
@@ -10305,20 +10305,20 @@ try {
               return e
           }
         },
-        dn = () => {
+        ln = () => {
           const {
             state: e,
             dispatch: a
           } = nn(), {
             charactersNeeded: t,
             setCharactersNeeded: s
-          } = (0, p.useRockstarUserState)(), {
+          } = (0, b.useRockstarUserState)(), {
             track: r
-          } = (0, p.useGtmTrack)(), {
+          } = (0, b.useGtmTrack)(), {
             loggedIn: n,
-            data: o
-          } = (0, p.useRockstarUser)(), {
-            signInUrl: i
+            data: i
+          } = (0, b.useRockstarUser)(), {
+            signInUrl: o
           } = (0, g.useScAuthLinks)(e.returnUrl), {
             redirect: c
           } = (() => {
@@ -10337,15 +10337,15 @@ try {
               }, [e])
             }
           })(), {
-            ref: d,
-            inView: l,
+            ref: l,
+            inView: d,
             trackSectionImpression: _
           } = (() => {
             const e = (0, m.useRef)(!1),
               a = (0, m.useRef)(!1),
               {
                 track: t
-              } = (0, p.useGtmTrack)(),
+              } = (0, b.useGtmTrack)(),
               {
                 ref: s
               } = (0, W.useInView)({
@@ -10366,7 +10366,7 @@ try {
               inView: e.current,
               trackSectionImpression: r
             }
-          })(), [b] = (0, u.useSearchParams)(), f = b.has(sn, e.giftId), k = "stateful" === e.variant || "stateful-trigger" === e.variant, h = (() => {
+          })(), [p] = (0, u.useSearchParams)(), f = p.has(sn, e.giftId), k = "stateful" === e.variant || "stateful-trigger" === e.variant, h = (() => {
             const {
               state: e,
               dispatch: a
@@ -10464,17 +10464,17 @@ try {
             else if ("TRIGGERED" !== e.status || n || (r({
                 element_placement: "WOC",
                 event: "cta_claim",
-                link_url: i,
+                link_url: o,
                 text: e.steps.unclaimed["button-label"] ?? "claim now",
                 section_state: e.variant
               }), a({
                 type: "LOGIN"
-              }), c(i)), n && (f && ("TRIGGERED" === e.status || "UNCLAIMED" === e.status) || !k && "TRIGGERED" === e.status)) t && o.accountSynced || o.characters ? a({
+              }), c(o)), n && (f && ("TRIGGERED" === e.status || "UNCLAIMED" === e.status) || !k && "TRIGGERED" === e.status)) t && i.accountSynced || i.characters ? a({
               type: "USER_SYNCED"
             }) : (s("gtao"), a({
               type: "FETCH_CHARACTERS"
             }));
-            else if ("FETCHING_CHARACTERS" === e.status && o.accountSynced) a({
+            else if ("FETCHING_CHARACTERS" === e.status && i.accountSynced) a({
               type: "USER_SYNCED"
             });
             else if ("USER_SYNCED" !== e.status) {
@@ -10513,21 +10513,21 @@ try {
                 type: "FINISHED"
               })) : void 0;
               v()
-            } else o && o.characters && o.characters.gtao.length > 0 ? a({
+            } else i && i.characters && i.characters.gtao.length > 0 ? a({
               type: "START_CLAIM"
             }) : a({
               type: "LINK_ACCOUNT"
             })
-          }, [n, f, o, e.status]), (0, m.useEffect)(() => {
+          }, [n, f, i, e.status]), (0, m.useEffect)(() => {
             _({
               element_placement: "WOC",
               section_state: `${e.variant}|${e.status}`
             })
-          }, [l, e.variant, e.status, _]), {
-            ref: d
+          }, [d, e.variant, e.status, _]), {
+            ref: l
           }
         };
-      var ln = t(66760);
+      var dn = t(66760);
       const _n = e => 0 === (new DOMParser).parseFromString(e, "text/html").body.textContent.trim().length,
         mn = (0, U.defineMessages)({
           web_offer_claim_error_state_button: {
@@ -10584,31 +10584,31 @@ try {
           }, [s]), {
             RichTextComponent: n
           } = t, {
-            image: o,
-            heading: i,
+            image: i,
+            heading: o,
             description: c,
-            disclaimer: d
-          } = t.steps.error, l = _n(d ?? ""), u = t.steps.unclaimed.disclaimer, g = t.steps.unclaimed.image, {
-            alt: p,
-            src: b
-          } = (0, z.useImageParser)(o ?? g ?? {});
+            disclaimer: l
+          } = t.steps.error, d = _n(l ?? ""), u = t.steps.unclaimed.disclaimer, g = t.steps.unclaimed.image, {
+            alt: b,
+            src: p
+          } = (0, z.useImageParser)(i ?? g ?? {});
           return (0, _.jsxs)(tn.Root, {
             view: e,
             children: [(0, _.jsx)(tn.Image, {
-              alt: p ?? "",
-              src: b ?? {
+              alt: b ?? "",
+              src: p ?? {
                 mobile: "",
                 desktop: ""
               }
             }), (0, _.jsxs)(tn.Container, {
               children: [(0, _.jsxs)(tn.Content, {
-                children: [(0, _.jsx)(ln.TriangleAlert, {
+                children: [(0, _.jsx)(dn.TriangleAlert, {
                   size: "XL",
                   color: Dr.LU.alias.color.icon.danger,
                   label: a(mn.web_offer_claim_error_state_icon_label)
                 }), (0, _.jsx)(tn.Heading, {
                   level: 4,
-                  children: i
+                  children: o
                 }), c && (0, _.jsx)(tn.Description, {
                   children: n({
                     children: c
@@ -10621,9 +10621,9 @@ try {
                     onClick: r,
                     children: a(mn.web_offer_claim_error_state_button)
                   })
-                }), "stateful" === t.variant && (d || u) && (0, _.jsx)(tn.Disclaimer, {
+                }), "stateful" === t.variant && (l || u) && (0, _.jsx)(tn.Disclaimer, {
                   children: n({
-                    children: l ? u : d
+                    children: d ? u : l
                   })
                 })]
               })]
@@ -10631,7 +10631,7 @@ try {
           })
         };
       var gn = t(46966);
-      const pn = ({
+      const bn = ({
           trackingHandler: e,
           href: a,
           label: t,
@@ -10653,23 +10653,23 @@ try {
             children: t
           })
         }),
-        bn = ({
+        pn = ({
           platformConfigs: e,
           ...a
         }) => {
           const {
             data: t
-          } = (0, p.useRockstarUser)(), {
+          } = (0, b.useRockstarUser)(), {
             charactersNeeded: s,
             setCharactersNeeded: r
-          } = (0, p.useRockstarUserState)();
+          } = (0, b.useRockstarUserState)();
           s || r("gtao");
           const n = t.gamesPlayed?.gtav,
-            o = !t.accountSynced,
+            i = !t.accountSynced,
             {
-              label: i,
+              label: o,
               href: c,
-              target: d
+              target: l
             } = (0, m.useMemo)(() => {
               const a = e.default ?? {
                 label: "",
@@ -10679,16 +10679,16 @@ try {
               if (n) {
                 const {
                   hasGtaPlus: s
-                } = t, r = n.includes("pc") ? "pc" : n, o = s ? `gtaPlus-${r}` : r;
-                return Object.hasOwn(e, o) ? e[o] : a
+                } = t, r = n.includes("pc") ? "pc" : n, i = s ? `gtaPlus-${r}` : r;
+                return Object.hasOwn(e, i) ? e[i] : a
               }
               return a
             }, [n, t, e]);
-          return (0, _.jsx)(pn, {
-            label: i,
+          return (0, _.jsx)(bn, {
+            label: o,
             href: c,
-            target: d,
-            isLoading: o,
+            target: l,
+            isLoading: i,
             ...a
           })
         },
@@ -10696,17 +10696,17 @@ try {
         kn = e => {
           const {
             data: a
-          } = (0, p.useRockstarUser)(), {
+          } = (0, b.useRockstarUser)(), {
             charactersNeeded: t,
             setCharactersNeeded: s
-          } = (0, p.useRockstarUserState)();
+          } = (0, b.useRockstarUserState)();
           t || s("gtao");
           const r = a.gamesPlayed?.gtav,
             n = (0, m.useMemo)(() => !!r && fn.includes(r), [r]),
             {
-              hasGtaPlus: o
+              hasGtaPlus: i
             } = a;
-          return !o && n && (0, _.jsx)(pn, {
+          return !i && n && (0, _.jsx)(bn, {
             href: "https://www.rockstargames.com/gta-plus/join",
             target: "_self",
             ...e
@@ -10715,7 +10715,7 @@ try {
         hn = e => {
           const {
             track: a
-          } = (0, p.useGtmTrack)(), {
+          } = (0, b.useGtmTrack)(), {
             state: t
           } = nn();
           switch (e.type) {
@@ -10734,11 +10734,11 @@ try {
                   text: e,
                   link_url: s
                 })
-              }, o = (0, ir.mergeProps)({
+              }, i = (0, or.mergeProps)({
                 trackingHandler: n
               }, r);
-              return (0, _.jsx)(bn, {
-                ...o
+              return (0, _.jsx)(pn, {
+                ...i
               })
             }
             case "gta-plus-subscribe": {
@@ -10756,11 +10756,11 @@ try {
                   text: e,
                   link_url: s
                 })
-              }, o = (0, ir.mergeProps)({
+              }, i = (0, or.mergeProps)({
                 trackingHandler: n
               }, r);
               return (0, _.jsx)(kn, {
-                ...o
+                ...i
               })
             }
             default: {
@@ -10776,11 +10776,11 @@ try {
                   o_id: t.giftId,
                   text: e
                 })
-              }, o = (0, ir.mergeProps)({
+              }, i = (0, or.mergeProps)({
                 trackingHandler: n
               }, r);
-              return (0, _.jsx)(pn, {
-                ...o
+              return (0, _.jsx)(bn, {
+                ...i
               })
             }
           }
@@ -10797,13 +10797,13 @@ try {
           } = t, {
             image: r,
             heading: n,
-            description: o,
-            ctas: i,
+            description: i,
+            ctas: o,
             disclaimer: c
-          } = t.steps[t.currentStep], d = t.steps.unclaimed.image, l = _n(c ?? ""), m = t.steps.unclaimed.disclaimer, {
+          } = t.steps[t.currentStep], l = t.steps.unclaimed.image, d = _n(c ?? ""), m = t.steps.unclaimed.disclaimer, {
             alt: u,
             src: g
-          } = (0, z.useImageParser)(r ?? d ?? {});
+          } = (0, z.useImageParser)(r ?? l ?? {});
           return (0, _.jsxs)(tn.Root, {
             view: e,
             children: [(0, _.jsx)(tn.Image, {
@@ -10815,7 +10815,7 @@ try {
             }), (0, _.jsxs)(tn.Container, {
               children: [(0, _.jsxs)(tn.Content, {
                 children: [(0, _.jsx)(tn.Header, {
-                  children: (0, _.jsx)(ln.Check, {
+                  children: (0, _.jsx)(dn.Check, {
                     size: "XL",
                     color: gn.LU.alias.color.icon.success,
                     label: a(mn.web_offer_claim_success_state_icon_label)
@@ -10823,19 +10823,19 @@ try {
                 }), (0, _.jsx)(tn.Heading, {
                   level: 4,
                   children: n
-                }), o && (0, _.jsx)(tn.Description, {
+                }), i && (0, _.jsx)(tn.Description, {
                   children: s({
-                    children: o
+                    children: i
                   })
                 })]
               }), (0, _.jsxs)(tn.Footer, {
-                children: [i && i.length > 0 && (0, _.jsx)(tn.Actions, {
-                  children: i.map((e, a) => (0, _.jsx)(hn, {
+                children: [o && o.length > 0 && (0, _.jsx)(tn.Actions, {
+                  children: o.map((e, a) => (0, _.jsx)(hn, {
                     ...e
                   }, a))
                 }), "stateful" === t.variant && (c || m) && (0, _.jsx)(tn.Disclaimer, {
                   children: s({
-                    children: l ? m : c
+                    children: d ? m : c
                   })
                 })]
               })]
@@ -10851,14 +10851,14 @@ try {
             state: s
           } = nn(), {
             track: r
-          } = (0, p.useGtmTrack)(), {
+          } = (0, b.useGtmTrack)(), {
             RichTextComponent: n
           } = s, {
-            image: o,
-            heading: i,
+            image: i,
+            heading: o,
             description: c,
-            disclaimer: d
-          } = s.steps["link-account"], l = (0, m.useCallback)(async e => {
+            disclaimer: l
+          } = s.steps["link-account"], d = (0, m.useCallback)(async e => {
             const a = (0, g.findPlatform)(e)?.onlineService;
             if (a && "sc" !== a) {
               r({
@@ -10874,13 +10874,13 @@ try {
               window.location.assign(e.href)
             }
           }, [t, r, s.returnUrl, s.giftId]), u = (0, m.useCallback)(() => {
-            l("xbox")
-          }, [l]), b = (0, m.useCallback)(() => {
-            l("ps")
-          }, [l]), f = _n(d ?? ""), k = s.steps.unclaimed.disclaimer, h = s.steps.unclaimed.image, {
+            d("xbox")
+          }, [d]), p = (0, m.useCallback)(() => {
+            d("ps")
+          }, [d]), f = _n(l ?? ""), k = s.steps.unclaimed.disclaimer, h = s.steps.unclaimed.image, {
             alt: v,
             src: y
-          } = (0, z.useImageParser)(o ?? h ?? {});
+          } = (0, z.useImageParser)(i ?? h ?? {});
           return (0, _.jsxs)(tn.Root, {
             view: e,
             children: [(0, _.jsx)(tn.Image, {
@@ -10891,13 +10891,13 @@ try {
               }
             }), (0, _.jsxs)(tn.Container, {
               children: [(0, _.jsxs)(tn.Content, {
-                children: [(0, _.jsx)(ln.TriangleAlert, {
+                children: [(0, _.jsx)(dn.TriangleAlert, {
                   size: "XL",
                   color: Dr.LU.alias.color.icon.danger,
                   label: a(mn.web_offer_claim_link_account_state_icon_label)
                 }), (0, _.jsx)(tn.Heading, {
                   level: 4,
-                  children: i
+                  children: o
                 }), c && (0, _.jsx)(tn.Description, {
                   children: n({
                     children: c
@@ -10910,11 +10910,11 @@ try {
                     onClick: u
                   }), (0, _.jsx)(tn.LinkPSButton, {
                     target: "_self",
-                    onClick: b
+                    onClick: p
                   })]
-                }), "stateful" === s.variant && (d || k) && (0, _.jsx)(tn.Disclaimer, {
+                }), "stateful" === s.variant && (l || k) && (0, _.jsx)(tn.Disclaimer, {
                   children: n({
-                    children: f ? k : d
+                    children: f ? k : l
                   })
                 })]
               })]
@@ -10944,7 +10944,7 @@ try {
               }
             }), (0, _.jsxs)(tn.Container, {
               children: [(0, _.jsx)(tn.Header, {
-                children: (0, _.jsx)(or.s6, {
+                children: (0, _.jsx)(ir.s6, {
                   children: (0, _.jsx)(tn.Heading, {
                     level: 5,
                     children: a(mn.web_offer_claim_loading_state)
@@ -10967,10 +10967,10 @@ try {
         }) => {
           const {
             loggedIn: t
-          } = (0, p.useRockstarUser)(), {
+          } = (0, b.useRockstarUser)(), {
             state: s,
             dispatch: r
-          } = nn(), [, n] = (0, u.useSearchParams)(), o = (0, m.useCallback)(() => {
+          } = nn(), [, n] = (0, u.useSearchParams)(), i = (0, m.useCallback)(() => {
             t && n(e => (e.set("claimOffer", s.giftId), e), {
               replace: !0
             });
@@ -10987,12 +10987,12 @@ try {
             } catch {
               console.warn("invalid params")
             }
-          }, [r, t, n, s.giftId, s.jumpLinkId]), i = (0, ir.mergeProps)({
+          }, [r, t, n, s.giftId, s.jumpLinkId]), o = (0, or.mergeProps)({
             appearance: a.appearance ?? "primary"
           }, a);
           return (0, _.jsx)(_r, {
-            onPress: o,
-            ...i,
+            onPress: i,
+            ...o,
             view: "stateful" !== s.variant ? "dialog" : "default",
             children: e
           })
@@ -11008,17 +11008,17 @@ try {
             image: s,
             badge: r,
             heading: n,
-            description: o,
-            disclaimer: i
+            description: i,
+            disclaimer: o
           } = a.steps.unclaimed, {
             alt: c,
-            src: d
-          } = (0, z.useImageParser)(s ?? {}), l = a.steps.unclaimed["button-label"];
+            src: l
+          } = (0, z.useImageParser)(s ?? {}), d = a.steps.unclaimed["button-label"];
           return (0, _.jsxs)(tn.Root, {
             view: e,
             children: [(0, _.jsx)(tn.Image, {
               alt: c ?? "",
-              src: d ?? {
+              src: l ?? {
                 mobile: "",
                 desktop: ""
               }
@@ -11029,22 +11029,22 @@ try {
                 }), (0, _.jsx)(tn.Heading, {
                   level: 4,
                   children: n
-                }), o && (0, _.jsx)(tn.Description, {
+                }), i && (0, _.jsx)(tn.Description, {
                   children: t({
-                    children: o
+                    children: i
                   })
                 })]
               }), (0, _.jsxs)(tn.Footer, {
-                children: [l && (0, _.jsx)(tn.Actions, {
+                children: [d && (0, _.jsx)(tn.Actions, {
                   children: (0, _.jsx)(xn, {
                     appearance: "primary",
                     size: "LG",
-                    label: l,
+                    label: d,
                     view: "stateful" !== a.variant ? "dialog" : "default"
                   })
-                }), i && (0, _.jsx)(tn.Disclaimer, {
+                }), o && (0, _.jsx)(tn.Disclaimer, {
                   children: t({
-                    children: i
+                    children: o
                   })
                 })]
               })]
@@ -11056,8 +11056,8 @@ try {
             state: e
           } = nn(), {
             ref: a
-          } = dn();
-          return (0, _.jsx)(dr, {
+          } = ln();
+          return (0, _.jsx)(lr, {
             jumpLinkId: e.jumpLinkId,
             currentStep: e.currentStep,
             "data-exclude-legacy-typography-css": !0,
@@ -11167,7 +11167,7 @@ try {
         }) => e ? "string" != typeof e ? (console.error("RichText expects to be a string"), null) : (0, _.jsx)(z.TinaRichText, {
           html: e
         }) : null),
-        In = ({
+        En = ({
           children: e,
           initialState: a
         }) => {
@@ -11180,7 +11180,7 @@ try {
             children: e
           })
         },
-        En = nr(({
+        In = nr(({
           giftId: e,
           location: a,
           jumpLinkId: t,
@@ -11188,13 +11188,13 @@ try {
           steps: r
         }) => {
           const n = `${document.location.pathname}${document.location.search}#${t}`,
-            o = (0, z.usePrunedTinaKeys)(r),
-            i = on({
+            i = (0, z.usePrunedTinaKeys)(r),
+            o = on({
               giftId: e,
               location: a,
               returnUrl: n,
               jumpLinkId: t,
-              steps: o,
+              steps: i,
               variant: s,
               RichTextComponent: Tn
             }),
@@ -11207,42 +11207,42 @@ try {
               behavior: "instant",
               block: "center"
             })
-          }, []), (0, _.jsx)(In, {
-            initialState: i,
+          }, []), (0, _.jsx)(En, {
+            initialState: o,
             children: r && (0, _.jsx)(Nn, {})
           })
         }),
         zn = {
-          CalloutSection: d.A,
+          CalloutSection: l.A,
           Card: va,
-          CardWithImageGallery: Va,
+          CardWithImageGallery: Oa,
           ConditionalBlock: h,
           CommunityChallenges: Hs.default,
-          CoverCard: Ga,
+          CoverCard: Va,
           Cta: v.A,
           FoundryButton: w,
           FoundryIconButton: N,
           DiscoveryCallout: Ws.A,
           EventsDeck: $s,
-          PageTemplate: Gs.default,
+          PageTemplate: Vs.default,
           ExpandingPlatformButton: S.A,
           TextCard: Ss,
           Deck: As,
-          Grid: I,
-          Hero: G,
+          Grid: E,
+          Hero: V,
           Highlights: Ms.Highlights,
           HighlightsItem: Ms.HighlightsItem,
           HTMLElement: H,
           NewsletterSubscription: ce,
-          OrderedList: de.A,
+          OrderedList: le.A,
           ParallaxInnerLayer: _e,
           ParallaxOuterLayer: ue,
-          ParallaxWrapper: be,
+          ParallaxWrapper: pe,
           UnorderedList: fe.A,
           ImageWithBadge: ke.A,
           ImageTextGroupGroup: nt.A,
-          Carousel: l.A,
-          GroupOfItems: Ie.default,
+          Carousel: d.A,
+          GroupOfItems: Ee.default,
           Rating: xe.A,
           gen9: tr,
           TinaModuleFetchNRender: Ce.A,
@@ -11250,27 +11250,27 @@ try {
           PromoModule: je,
           RockstarVideoPlayer: c(),
           Engagement: Fs.default,
-          WebOfferClaim: En
+          WebOfferClaim: In
         },
         An = {
-          CalloutSection: d.A,
+          CalloutSection: l.A,
           Card: va,
-          CardWithImageGallery: Va,
+          CardWithImageGallery: Oa,
           ConditionalBlock: h,
-          CoverCard: Ga,
-          Carousel: l.A,
+          CoverCard: Va,
+          Carousel: d.A,
           ExpandingPlatformButton: S.A,
-          Hero: G,
-          Grid: I,
+          Hero: V,
+          Grid: E,
           TextCard: Ss,
           Deck: As,
-          GroupOfItems: Ie.default,
+          GroupOfItems: Ee.default,
           ParallaxInnerLayer: _e,
           ParallaxOuterLayer: ue,
-          ParallaxWrapper: be,
+          ParallaxWrapper: pe,
           PromoModule: je,
           Engagement: Fs.default,
-          WebOfferClaim: En,
+          WebOfferClaim: In,
           NewsletterSubscription: ce,
           gen9: {
             BuyNow: qs.A,
@@ -11280,14 +11280,14 @@ try {
             GuideGroup: Zs.A,
             GuideIntro: Js.A,
             GuideSection: Qs.A,
-            Hero: G,
+            Hero: V,
             ImageTextGroupGroup: nt.A,
             LinkoutSection: er.A,
             TinaWrapper: ar.A,
             UserVote: () => null
           },
           HTMLElement: H,
-          OrderedList: de.A,
+          OrderedList: le.A,
           UnorderedList: fe.A,
           ImageWithBadge: ke.A,
           Rating: xe.A,
@@ -11503,32 +11503,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 91509,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -11604,32 +11580,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 91509,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -11698,21 +11650,9 @@ try {
         return Object.keys(s)
       }, r.resolve = n, e.exports = r, r.id = 39294
     },
-    51048(e, a, t) {
+    58963(e, a, t) {
       var s = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 91509,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function r(e) {
@@ -11729,23 +11669,11 @@ try {
       }
       r.keys = function() {
         return Object.keys(s)
-      }, r.resolve = n, e.exports = r, r.id = 51048
+      }, r.resolve = n, e.exports = r, r.id = 58963
     },
-    16044(e, a, t) {
+    25087(e, a, t) {
       var s = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function r(e) {
@@ -11762,7 +11690,7 @@ try {
       }
       r.keys = function() {
         return Object.keys(s)
-      }, r.resolve = n, e.exports = r, r.id = 16044
+      }, r.resolve = n, e.exports = r, r.id = 25087
     },
     97558(e) {
       "use strict";
@@ -12078,111 +12006,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    91509(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

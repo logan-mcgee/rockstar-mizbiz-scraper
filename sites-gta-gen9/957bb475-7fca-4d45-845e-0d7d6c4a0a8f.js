@@ -104,20 +104,20 @@ try {
         useApolloClient: () => V,
         useBase: () => me.RK,
         useBodyScrollable: () => K,
-        useDataLayer: () => be,
+        useDataLayer: () => we,
         useGetTpaLinkGenerator: () => me.gd,
         useHasReduceMotionPreference: () => me.vx,
         useHasSaveDataPreference: () => me.sb,
         useLazyQuery: () => pe._,
         useLocale: () => me.Ym,
         useMutateState: () => x,
-        useMutation: () => ve.n,
+        useMutation: () => be.n,
         useNewswirePost: () => me.CA,
         usePreloadImg: () => me.OG,
         usePrevious: () => me.ZC,
         useQuery: () => J,
         useQueryParams: () => me.sq,
-        useReactiveVar: () => w.q,
+        useReactiveVar: () => v.q,
         useRelativeTime: () => me.Vq,
         useRockstarEventDispatcher: () => me.OH,
         useRockstarEventSubscriber: () => me.zP,
@@ -188,31 +188,31 @@ try {
       var m = o(81038),
         f = o(94662),
         p = o(39793),
-        v = o(93082),
-        w = o(37927);
-      const b = (0, m.A)({
-          context: (0, v.createContext)({}),
+        b = o(93082),
+        v = o(37927);
+      const w = (0, m.A)({
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        k = () => (0, v.useContext)(b),
+        k = () => (0, b.useContext)(w),
         y = (0, m.A)({
-          context: (0, v.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        x = () => (0, v.useContext)(y),
+        x = () => (0, b.useContext)(y),
         S = ({
           children: e,
           state: t
         }) => {
-          (0, w.q)(t);
-          const o = (0, v.useCallback)(e => {
+          (0, v.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
             };
             t(o)
           }, [t]);
-          return (0, p.jsx)(b.Provider, {
+          return (0, p.jsx)(w.Provider, {
             value: t(),
             children: (0, p.jsx)(y.Provider, {
               value: o,
@@ -272,7 +272,7 @@ try {
               error: s,
               ...a
             } = (0, B.IT)(e, o);
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (r && o.setTitleDataPath) {
               const e = (0, g.get)(r, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -280,7 +280,7 @@ try {
                 title: e
               })
             }
-          }, [r]), (0, v.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [r]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: n
           }), () => {
@@ -288,7 +288,7 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [n]), (0, v.useEffect)(() => {
+          }), [n]), (0, b.useEffect)(() => {
             if (o.autoSetError && s) throw new Error(s.message)
           }, [s]), {
             loading: n,
@@ -307,7 +307,7 @@ try {
               ...e,
               uri: o
             },
-            [n] = (0, v.useState)(new A.D({
+            [n] = (0, b.useState)(new A.D({
               typePolicies: t
             })),
             {
@@ -354,8 +354,8 @@ try {
             link: a
           })
         },
-        $ = (0, v.createContext)(z),
-        J = (e, t) => (0, v.useContext)($)(e, t),
+        $ = (0, b.createContext)(z),
+        J = (e, t) => (0, b.useContext)($)(e, t),
         Q = (0, C.withIntl)(({
           children: e,
           graphOptions: t,
@@ -396,9 +396,9 @@ try {
         H = (0, P.UT)({}),
         X = "data-disallow-body-scroll",
         K = e => {
-          const t = (0, w.q)(H),
+          const t = (0, v.q)(H),
             o = Object.values(t).some(e => !!e);
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(X, "true") : document.documentElement.removeAttribute(X)
           }, [o]), {
             bodyShouldLock: o,
@@ -442,7 +442,7 @@ try {
           }
         }))(e, t),
         ce = (e, t = 250) => o => ((e, t, o) => {
-          const [r, n] = (0, v.useState)(t), s = e => {
+          const [r, n] = (0, b.useState)(t), s = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
@@ -460,7 +460,7 @@ try {
               }
             }), t) : t
           };
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             const e = (0, g.debounce)(() => {
               n(s(t))
             }, o);
@@ -499,22 +499,22 @@ query Translations($locale: String!, $config: String!) {
       var me = o(85997),
         fe = o(17714),
         pe = o(52746),
-        ve = o(54812);
-      const we = (0, m.A)({
-          context: (0, v.createContext)({}),
+        be = o(54812);
+      const ve = (0, m.A)({
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        be = () => (0, v.useContext)(we),
+        we = () => (0, b.useContext)(ve),
         ke = ({
           children: e,
           ...t
         }) => {
-          const o = be() ?? {},
-            r = (0, v.useMemo)(() => ({
+          const o = we() ?? {},
+            r = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
-          return (0, p.jsx)(we.Provider, {
+          return (0, p.jsx)(ve.Provider, {
             value: r,
             children: e
           })
@@ -525,7 +525,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, xe.useLocation)();
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             ie({
               event: "trackPageview"
             })
@@ -568,7 +568,7 @@ query Translations($locale: String!, $config: String!) {
           }), Re(o), o
         },
         qe = () => ({
-          webSettings: (0, w.q)(Re),
+          webSettings: (0, v.q)(Re),
           webSettingsReactive: Re,
           mutateWebSettings: Me
         });

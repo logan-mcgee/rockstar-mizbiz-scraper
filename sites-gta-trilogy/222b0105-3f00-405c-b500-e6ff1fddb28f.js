@@ -16,11 +16,11 @@ try {
     7279(e, t, o) {
       o.d(t, {
         A: () => i,
-        C: () => r
+        C: () => a
       });
       var n = o(8861),
         s = o(573);
-      const r = {
+      const a = {
           www: "www",
           socialClub: "socialClub",
           support: "support",
@@ -28,7 +28,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        a = [{
+        r = [{
           id: "prod",
           sites: {
             www: "www",
@@ -44,10 +44,10 @@ try {
           let e;
           const {
             location: t
-          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = a.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
+          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), a = r.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
             site: t,
             subDomain: n
-          }, !0)) >= 0), i = a[r >= 0 ? r : 0], d = a.find(e => e.id === i.fallbackEnvironment);
+          }, !0)) >= 0), i = r[a >= 0 ? a : 0], d = r.find(e => e.id === i.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
@@ -63,23 +63,23 @@ try {
         DataLayerProvider: () => Ne,
         InMemoryCache: () => T.D,
         PAGE_THEMES: () => pe,
-        Platform: () => re,
-        Platforms: () => ae,
+        Platform: () => ae,
+        Platforms: () => re,
         ReactiveStateProvider: () => S,
         ResizeProvider: () => Ze.uU,
         RockstarGraphProvider: () => J,
         RockstarTokenProvider: () => R.ec,
         ScrollProvider: () => _e.N2,
         coreScApiFetch: () => s.A,
-        createDeferredScrollTriggerRefresh: () => a,
+        createDeferredScrollTriggerRefresh: () => r,
         cx: () => n,
         detectIfWeShouldAnchorSomewhere: () => ne,
-        downloadFile: () => be,
+        downloadFile: () => we,
         findPlatform: () => de,
         generateTpaLink: () => he.t,
         getAccentColor: () => d,
         getBase: () => l.A,
-        getCdnPrefix: () => we,
+        getCdnPrefix: () => be,
         getConfigForDomain: () => c.A,
         getCookieValueByName: () => ue,
         getGen8Consoles: () => ve,
@@ -118,7 +118,7 @@ try {
         usePrevious: () => De.ZC,
         useQuery: () => W,
         useQueryParams: () => De.sq,
-        useReactiveVar: () => b.q,
+        useReactiveVar: () => w.q,
         useRelativeTime: () => De.Vq,
         useRockstarEventDispatcher: () => De.OH,
         useRockstarEventSubscriber: () => De.zP,
@@ -146,14 +146,14 @@ try {
         default: () => i
       });
       var s = o(959),
-        r = o(7978);
-      const a = () => {
+        a = o(7978);
+      const r = () => {
           let e = 0;
           return {
             refresh: () => {
               cancelAnimationFrame(e), e = requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                  r.u.refresh()
+                  a.u.refresh()
                 })
               })
             },
@@ -189,24 +189,24 @@ try {
       var h = o(1038),
         m = o(4662),
         f = o(9793),
-        w = o(3082),
-        b = o(7927);
+        b = o(3082),
+        w = o(7927);
       const v = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        x = () => (0, w.useContext)(v),
+        x = () => (0, b.useContext)(v),
         y = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        k = () => (0, w.useContext)(y),
+        k = () => (0, b.useContext)(y),
         S = ({
           children: e,
           state: t
         }) => {
-          (0, b.q)(t);
-          const o = (0, w.useCallback)(e => {
+          (0, w.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
@@ -271,10 +271,10 @@ try {
             {
               data: n,
               loading: s,
-              error: r,
-              ...a
+              error: a,
+              ...r
             } = (0, F.IT)(e, o);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (n && o.setTitleDataPath) {
               const e = (0, z.A)(n, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -282,7 +282,7 @@ try {
                 title: e
               })
             }
-          }, [n]), (0, w.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [n]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: s
           }), () => {
@@ -290,13 +290,13 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [s]), (0, w.useEffect)(() => {
-            if (o.autoSetError && r) throw new Error(r.message)
-          }, [r]), {
+          }), [s]), (0, b.useEffect)(() => {
+            if (o.autoSetError && a) throw new Error(a.message)
+          }, [a]), {
             loading: s,
-            error: r,
+            error: a,
             data: n,
-            ...a
+            ...r
           }
         },
         $ = JSON.parse('{"de-DE":{"g.1.2.1":"The requested video does not exist."},"en-US":{"g.1.2.1":"The requested video does not exist."},"es-ES":{"g.1.2.1":"The requested video does not exist."},"es-MX":{"g.1.2.1":"The requested video does not exist."},"fr-FR":{"g.1.2.1":"The requested video does not exist."},"it-IT":{"g.1.2.1":"The requested video does not exist."},"ja-JP":{"g.1.2.1":"The requested video does not exist."},"ko-KR":{"g.1.2.1":"The requested video does not exist."},"pl-PL":{"g.1.2.1":"The requested video does not exist."},"pt-BR":{"g.1.2.1":"The requested video does not exist."},"ru-RU":{"g.1.2.1":"The requested video does not exist."},"zh-CN":{"g.1.2.1":"The requested video does not exist."},"zh-TW":{"g.1.2.1":"The requested video does not exist."}}'),
@@ -309,13 +309,13 @@ try {
               ...e,
               uri: o
             },
-            [s] = (0, w.useState)(new T.D({
+            [s] = (0, b.useState)(new T.D({
               typePolicies: t
             })),
             {
-              formatMessage: r
+              formatMessage: a
             } = (0, A.useIntl)(),
-            a = B.concat((({
+            r = B.concat((({
               formatMessage: e
             }) => (0, M.S)(t => {
               const {
@@ -332,7 +332,7 @@ try {
                 return t
               }))
             }))({
-              formatMessage: r
+              formatMessage: a
             }).concat((({
               token: e
             }) => (0, j.o)((t, {
@@ -353,11 +353,11 @@ try {
             }))(n))));
           return new E.R({
             cache: s,
-            link: a
+            link: r
           })
         },
-        X = (0, w.createContext)(G),
-        W = (e, t) => (0, w.useContext)(X)(e, t),
+        X = (0, b.createContext)(G),
+        W = (e, t) => (0, b.useContext)(X)(e, t),
         J = (0, A.withIntl)(({
           children: e,
           graphOptions: t,
@@ -398,9 +398,9 @@ try {
         H = (0, C.UT)({}),
         K = "data-disallow-body-scroll",
         Y = e => {
-          const t = (0, b.q)(H),
+          const t = (0, w.q)(H),
             o = Object.values(t).some(e => !!e);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(K, "true") : document.documentElement.removeAttribute(K)
           }, [o]), {
             bodyShouldLock: o,
@@ -454,40 +454,40 @@ try {
             }
           }
         };
-      class re {
+      class ae {
         name;
         friendlyName;
         id;
         onlineService;
         aliasOnlineService;
         alias;
-        constructor(e, t, o, n, s = null, r = null) {
-          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = s, this.alias = r
+        constructor(e, t, o, n, s = null, a = null) {
+          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = s, this.alias = a
         }
       }
-      const ae = Object.freeze({
-          pc: new re("pc", "PC Legacy", 8, "sc"),
-          ps: new re("ps", "PlayStation", 3, "np", "ps"),
-          ps3: new re("ps3", "PlayStation 3", 2, "np", "ps"),
-          ps4: new re("ps4", "PlayStation 4", 11, "np", "ps"),
-          ps5: new re("ps5", "PlayStation 5", 20, "np", "ps"),
-          xbox: new re("xbox", "Xbox", 4, "xbl"),
-          xbox360: new re("xbox360", "Xbox 360", 1, "xbl"),
-          xboxone: new re("xboxone", "Xbox One", 12, "xbl"),
-          xboxsx: new re("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
-          switch: new re("switch", "Nintendo Switch™", 18, "nintendoswitch"),
-          nintendoswitch: new re("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
-          applestore: new re("applestore", "App Store", 102, "applestore"),
-          googleplay: new re("googleplay", "Google Play", 1023, "googleplay"),
-          appStore: new re("app_store", "App Store", 102, "applestore"),
-          googlePlay: new re("ggle_play", "Google Play", 1023, "googleplay"),
-          pcalt: new re("pcalt", "PC Enhanced", 22, "sc")
+      const re = Object.freeze({
+          pc: new ae("pc", "PC Legacy", 8, "sc"),
+          ps: new ae("ps", "PlayStation", 3, "np", "ps"),
+          ps3: new ae("ps3", "PlayStation 3", 2, "np", "ps"),
+          ps4: new ae("ps4", "PlayStation 4", 11, "np", "ps"),
+          ps5: new ae("ps5", "PlayStation 5", 20, "np", "ps"),
+          xbox: new ae("xbox", "Xbox", 4, "xbl"),
+          xbox360: new ae("xbox360", "Xbox 360", 1, "xbl"),
+          xboxone: new ae("xboxone", "Xbox One", 12, "xbl"),
+          xboxsx: new ae("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
+          switch: new ae("switch", "Nintendo Switch™", 18, "nintendoswitch"),
+          nintendoswitch: new ae("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
+          applestore: new ae("applestore", "App Store", 102, "applestore"),
+          googleplay: new ae("googleplay", "Google Play", 1023, "googleplay"),
+          appStore: new ae("app_store", "App Store", 102, "applestore"),
+          googlePlay: new ae("ggle_play", "Google Play", 1023, "googleplay"),
+          pcalt: new ae("pcalt", "PC Enhanced", 22, "sc")
         }),
-        ie = Object.freeze(Object.values(ae));
+        ie = Object.freeze(Object.values(re));
 
       function de(e) {
         if (!e) return;
-        if (e instanceof re) return e;
+        if (e instanceof ae) return e;
         const t = e.toString().toLowerCase();
         return ie.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
@@ -519,8 +519,8 @@ try {
           key: "prod",
           path: "https://media-rockstargames-com.akamaized.net"
         }],
-        we = (e = !0) => fe.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
-        be = e => {
+        be = (e = !0) => fe.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
+        we = e => {
           e.preventDefault();
           const t = e.currentTarget.href,
             o = (e => {
@@ -539,8 +539,8 @@ try {
             console.log(e)
           })
         },
-        ve = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name],
-        xe = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name],
+        ve = () => [re.xbox360.name, re.xboxone.name, re.ps3.name, re.ps4.name, re.pc.name],
+        xe = () => [re.xboxsx.name, re.ps5.name, re.pcalt.name],
         ye = e => xe().includes(e),
         ke = e => {
           const t = new Map([
@@ -584,11 +584,11 @@ try {
         }))(e, t);
       var Re = o(9098);
       const je = (e, t = 250) => o => ((e, t, o) => {
-        const [n, s] = (0, w.useState)(t), r = e => {
+        const [n, s] = (0, b.useState)(t), a = e => {
           let t = e;
           const o = t?.items;
           if (o?.length) {
-            const e = o.map(e => r(e));
+            const e = o.map(e => a(e));
             t = {
               ...t,
               items: e
@@ -602,9 +602,9 @@ try {
             }
           }), t) : t
         };
-        return (0, w.useEffect)(() => {
+        return (0, b.useEffect)(() => {
           const e = (0, Re.A)(() => {
-            s(r(t))
+            s(a(t))
           }, o);
           return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
         }), (0, f.jsx)(e, {
@@ -643,16 +643,16 @@ query Translations($locale: String!, $config: String!) {
         Ue = o(2746),
         Be = o(4812);
       const Fe = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        ze = () => (0, w.useContext)(Fe),
+        ze = () => (0, b.useContext)(Fe),
         Ne = ({
           children: e,
           ...t
         }) => {
           const o = ze() ?? {},
-            n = (0, w.useMemo)(() => ({
+            n = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
@@ -667,7 +667,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, $e.useLocation)();
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             Ee({
               event: "trackPageview"
             })
@@ -709,7 +709,7 @@ query Translations($locale: String!, $config: String!) {
           }), He(o), o
         },
         Ye = () => ({
-          webSettings: (0, b.q)(He),
+          webSettings: (0, w.q)(He),
           webSettingsReactive: He,
           mutateWebSettings: Ke
         });

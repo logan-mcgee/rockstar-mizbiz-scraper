@@ -174,8 +174,8 @@ try {
             m = e.removeScrollBar,
             g = e.enabled,
             y = e.shards,
-            w = e.sideCar,
-            b = e.noRelative,
+            b = e.sideCar,
+            w = e.noRelative,
             E = e.noIsolation,
             C = e.inert,
             S = e.allowPinchZoom,
@@ -183,7 +183,7 @@ try {
             M = void 0 === k ? "div" : k,
             N = e.gapMode,
             R = (0, r.Tt)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            A = w,
+            A = b,
             x = function(e, n) {
               var t, r, a, c = (t = n || null, r = function(n) {
                 return e.forEach(function(e) {
@@ -224,7 +224,7 @@ try {
             sideCar: s,
             removeScrollBar: m,
             shards: y,
-            noRelative: b,
+            noRelative: w,
             noIsolation: E,
             inert: C,
             setCallbacks: d,
@@ -300,17 +300,17 @@ try {
         y = function(e) {
           return parseInt(e || "", 10) || 0
         },
-        w = m(),
-        b = "data-scroll-locked",
+        b = m(),
+        w = "data-scroll-locked",
         E = function(e, n, t, r) {
           var o = e.left,
             i = e.top,
             u = e.right,
             l = e.gap;
-          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body[").concat(b, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(b, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
+          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body[").concat(w, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(w, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
         C = function() {
-          var e = parseInt(document.body.getAttribute(b) || "0", 10);
+          var e = parseInt(document.body.getAttribute(w) || "0", 10);
           return isFinite(e) ? e : 0
         },
         S = function(e) {
@@ -319,10 +319,10 @@ try {
             r = e.gapMode,
             a = void 0 === r ? "margin" : r;
           o.useEffect(function() {
-            return document.body.setAttribute(b, (C() + 1).toString()),
+            return document.body.setAttribute(w, (C() + 1).toString()),
               function() {
                 var e = C() - 1;
-                e <= 0 ? document.body.removeAttribute(b) : document.body.setAttribute(b, e.toString())
+                e <= 0 ? document.body.removeAttribute(w) : document.body.setAttribute(w, e.toString())
               }
           }, []);
           var c = o.useMemo(function() {
@@ -345,7 +345,7 @@ try {
               }
             }(a)
           }, [a]);
-          return o.createElement(w, {
+          return o.createElement(b, {
             styles: E(c, !n, a, t ? "" : "!important")
           })
         },

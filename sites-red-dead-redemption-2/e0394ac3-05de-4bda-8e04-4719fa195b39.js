@@ -107,7 +107,7 @@ try {
         createDeferredScrollTriggerRefresh: () => s,
         cx: () => n,
         detectIfWeShouldAnchorSomewhere: () => oe,
-        downloadFile: () => we,
+        downloadFile: () => be,
         findPlatform: () => ie,
         generateTpaLink: () => ge.t,
         getAccentColor: () => d,
@@ -115,7 +115,7 @@ try {
         getCdnPrefix: () => fe,
         getConfigForDomain: () => c.A,
         getCookieValueByName: () => ce,
-        getGen8Consoles: () => be,
+        getGen8Consoles: () => we,
         getGen9Consoles: () => ve,
         getLanguageLabel: () => ye,
         getUriForGraphEnv: () => u,
@@ -151,7 +151,7 @@ try {
         usePrevious: () => Ie.ZC,
         useQuery: () => W,
         useQueryParams: () => Ie.sq,
-        useReactiveVar: () => b.q,
+        useReactiveVar: () => w.q,
         useRelativeTime: () => Ie.Vq,
         useRockstarEventDispatcher: () => Ie.OH,
         useRockstarEventSubscriber: () => Ie.zP,
@@ -222,24 +222,24 @@ try {
       var h = o(81038),
         m = o(94662),
         f = o(39793),
-        w = o(93082),
-        b = o(37927);
+        b = o(93082),
+        w = o(37927);
       const v = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        x = () => (0, w.useContext)(v),
+        x = () => (0, b.useContext)(v),
         y = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        S = () => (0, w.useContext)(y),
+        S = () => (0, b.useContext)(y),
         k = ({
           children: e,
           state: t
         }) => {
-          (0, b.q)(t);
-          const o = (0, w.useCallback)(e => {
+          (0, w.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
@@ -306,7 +306,7 @@ try {
               error: a,
               ...s
             } = (0, F.IT)(e, o);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (n && o.setTitleDataPath) {
               const e = (0, p.get)(n, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -314,7 +314,7 @@ try {
                 title: e
               })
             }
-          }, [n]), (0, w.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [n]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: r
           }), () => {
@@ -322,7 +322,7 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [r]), (0, w.useEffect)(() => {
+          }), [r]), (0, b.useEffect)(() => {
             if (o.autoSetError && a) throw new Error(a.message)
           }, [a]), {
             loading: r,
@@ -341,7 +341,7 @@ try {
               ...e,
               uri: o
             },
-            [r] = (0, w.useState)(new T.D({
+            [r] = (0, b.useState)(new T.D({
               typePolicies: t
             })),
             {
@@ -388,8 +388,8 @@ try {
             link: s
           })
         },
-        V = (0, w.createContext)(z),
-        W = (e, t) => (0, w.useContext)(V)(e, t),
+        V = (0, b.createContext)(z),
+        W = (e, t) => (0, b.useContext)(V)(e, t),
         X = (0, E.withIntl)(({
           children: e,
           graphOptions: t,
@@ -430,9 +430,9 @@ try {
         Q = (0, C.UT)({}),
         H = "data-disallow-body-scroll",
         K = e => {
-          const t = (0, b.q)(Q),
+          const t = (0, w.q)(Q),
             o = Object.values(t).some(e => !!e);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(H, "true") : document.documentElement.removeAttribute(H)
           }, [o]), {
             bodyShouldLock: o,
@@ -552,7 +552,7 @@ try {
           path: "https://media-rockstargames-com.akamaized.net"
         }],
         fe = (e = !0) => me.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
-        we = e => {
+        be = e => {
           e.preventDefault();
           const t = e.currentTarget.href,
             o = (e => {
@@ -571,7 +571,7 @@ try {
             console.log(e)
           })
         },
-        be = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name],
+        we = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name],
         ve = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name],
         xe = e => ve().includes(e),
         ye = e => {
@@ -615,7 +615,7 @@ try {
           }
         }))(e, t),
         _e = (e, t = 250) => o => ((e, t, o) => {
-          const [n, r] = (0, w.useState)(t), a = e => {
+          const [n, r] = (0, b.useState)(t), a = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
@@ -633,7 +633,7 @@ try {
               }
             }), t) : t
           };
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             const e = (0, p.debounce)(() => {
               r(a(t))
             }, o);
@@ -674,16 +674,16 @@ query Translations($locale: String!, $config: String!) {
         De = o(52746),
         qe = o(54812);
       const Ue = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        Be = () => (0, w.useContext)(Ue),
+        Be = () => (0, b.useContext)(Ue),
         Fe = ({
           children: e,
           ...t
         }) => {
           const o = Be() ?? {},
-            n = (0, w.useMemo)(() => ({
+            n = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
@@ -698,7 +698,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, ze.useLocation)();
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             Te({
               event: "trackPageview"
             })
@@ -740,7 +740,7 @@ query Translations($locale: String!, $config: String!) {
           }), Je(o), o
         },
         He = () => ({
-          webSettings: (0, b.q)(Je),
+          webSettings: (0, w.q)(Je),
           webSettingsReactive: Je,
           mutateWebSettings: Qe
         });

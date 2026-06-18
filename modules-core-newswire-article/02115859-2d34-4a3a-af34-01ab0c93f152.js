@@ -16,7 +16,7 @@ try {
     11251(e, a, t) {
       "use strict";
       t.d(a, {
-        U: () => b,
+        U: () => p,
         A: () => f
       });
       var r = t(39793),
@@ -74,7 +74,7 @@ try {
             }
           }
         },
-        p = {
+        b = {
           applestore: "rockstargames-modules-core-newswire-articlee68d88a0e9f24a2f0bcf7da8a0e1b388",
           buttonText: "rockstargames-modules-core-newswire-articlec240c5768c5acdd2bc6022568ef877f0",
           closeButton: "rockstargames-modules-core-newswire-articleee432a5defea7b8181973d3a9ad3190b",
@@ -98,7 +98,7 @@ try {
           xboxone: "rockstargames-modules-core-newswire-articlec03015dbaf51a94ba1826bb21f5d040f",
           xboxseriesxs: "rockstargames-modules-core-newswire-articledde1b553776bdd59373d22a43479de29"
         },
-        b = ({
+        p = ({
           buttonText: e = "",
           link: a = "",
           platform: s = "",
@@ -109,14 +109,14 @@ try {
           ..._
         }) => {
           const d = i ?? (a.startsWith(document.location.origin) ? "_self" : "_blank"),
-            m = [p.platformButton, p[s], l].join(" "),
+            m = [b.platformButton, b[s], l].join(" "),
             u = s ? t(5328)(`./${s}.svg`) : null,
-            b = (0, r.jsxs)(r.Fragment, {
+            p = (0, r.jsxs)(r.Fragment, {
               children: [u ? (0, r.jsx)("img", {
                 src: u,
                 alt: e
               }) : "", !u && (0, r.jsx)("div", {
-                className: p.buttonText,
+                className: b.buttonText,
                 children: e
               })]
             });
@@ -128,21 +128,21 @@ try {
             "aria-label": e,
             tabIndex: c,
             ..._,
-            children: b
+            children: p
           }) : (0, r.jsx)(n.NavLink, {
             className: m,
             onClick: o,
             to: a,
             "aria-label": e,
             ..._,
-            children: b
+            children: p
           }) : (0, r.jsx)("button", {
             className: m,
             onClick: o,
             "aria-label": e,
             tabIndex: c,
             ..._,
-            children: b
+            children: p
           })
         },
         f = ({
@@ -249,9 +249,9 @@ try {
             }
           };
           return "string" != typeof a ? null : (0, r.jsxs)("div", {
-            className: (0, _.default)(p.container, o),
+            className: (0, _.default)(b.container, o),
             children: [(0, r.jsx)(i.P.div, {
-              className: p.content,
+              className: b.content,
               animate: z ? "open" : "close",
               variants: m,
               "aria-hidden": !!z,
@@ -259,13 +259,13 @@ try {
             }), (0, r.jsxs)(i.P.div, {
               "data-variant": e,
               "data-animating": C,
-              className: (0, _.default)(z ? p.expandedButton : p.unexpandedButton),
+              className: (0, _.default)(z ? b.expandedButton : b.unexpandedButton),
               animate: z ? "open" : "closed",
               variants: u,
               initial: !1,
               ref: S,
               children: [(0, r.jsx)(i.P.button, {
-                className: (0, _.default)(p.buttonText, n),
+                className: (0, _.default)(b.buttonText, n),
                 "aria-expanded": z,
                 onClick: () => {
                   if (R(!0), j(!z), !z) switch (k) {
@@ -309,7 +309,7 @@ try {
                 ref: A,
                 children: a
               }), (0, r.jsx)("div", {
-                className: p.expandedArea,
+                className: b.expandedArea,
                 ref: T,
                 "data-animate": z ? "open" : "closed",
                 "aria-hidden": !z,
@@ -332,7 +332,7 @@ try {
                   },
                   children: (0, r.jsxs)("div", {
                     children: [(0, r.jsx)("button", {
-                      className: p.closeButton,
+                      className: b.closeButton,
                       onClick: D,
                       "aria-label": "Close",
                       tabIndex: z ? 0 : -1,
@@ -342,8 +342,8 @@ try {
                         alt: "Close"
                       })
                     }), (0, r.jsx)("div", {
-                      className: p.platformButtons,
-                      children: g.length ? g.map(e => (0, r.jsx)(b, {
+                      className: b.platformButtons,
+                      children: g.length ? g.map(e => (0, r.jsx)(p, {
                         buttonText: e.buttonText ?? (0, l.findPlatform)(e.platform)?.friendlyName ?? "",
                         link: e.href,
                         platform: e.platform,
@@ -528,7 +528,7 @@ try {
         PlatformTagSizes: () => c.YT,
         Platforms: () => c.lv,
         RankContent: () => y,
-        Root: () => b,
+        Root: () => p,
         RpCategory: () => x,
         TextContent: () => v,
         TopRow: () => k,
@@ -561,7 +561,7 @@ try {
           }
         }),
         u = "rockstargames-modules-core-newswire-articleb2d75ee6d468c7fde9ad28ba90ca2804",
-        p = (0, s.forwardRef)(function({
+        b = (0, s.forwardRef)(function({
           children: e,
           className: a,
           testId: t,
@@ -581,7 +581,7 @@ try {
             }), e]
           })
         }),
-        b = (0, _.g)(p),
+        p = (0, _.g)(b),
         f = (0, s.forwardRef)(function({
           src: e,
           alt: a,
@@ -759,21 +759,21 @@ try {
           role: d = "link",
           onClick: m = () => {},
           focused: u = !1,
-          ...p
+          ...b
         }) => {
-          const b = (0, s.useRef)(null),
+          const p = (0, s.useRef)(null),
             f = (0, n.useIntl)(),
             g = !/^(https?|mailto):/i.test(a),
             k = /^#/.test(a),
-            h = p?.target ?? (_ ? "_blank" : "_self"),
+            h = b?.target ?? (_ ? "_blank" : "_self"),
             {
               ...w
-            } = p,
+            } = b,
             y = w["aria-current"] ?? !1;
           let x = "";
           if ("aria-label" in w && w["aria-label"] && (x = "_blank" === h ? `${w["aria-label"]} ${f.formatMessage(i.aria_label_open_new_window)}` : w["aria-label"]), (0, s.useEffect)(() => {
-              u && b?.current && b.current.focus()
-            }, [b?.current, u]), k) {
+              u && p?.current && p.current.focus()
+            }, [p?.current, u]), k) {
             const t = e => {
               e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
                 behavior: "smooth",
@@ -787,7 +787,7 @@ try {
               ...w,
               "aria-label": x,
               "aria-current": y,
-              ref: b,
+              ref: p,
               role: d,
               children: [e, "_blank" === h && !x && (0, r.jsx)("span", {
                 className: c,
@@ -802,7 +802,7 @@ try {
             ...w,
             "aria-label": x,
             "aria-current": y,
-            ref: b,
+            ref: p,
             reloadDocument: t,
             children: [e, "_blank" === h && !x && (0, r.jsx)("span", {
               className: c,
@@ -811,7 +811,7 @@ try {
           });
           const v = Object.keys(w).filter(e => !["activeClassName", "key", "end"].includes(e)).reduce((e, a) => ({
             ...e,
-            [a]: p[a]
+            [a]: b[a]
           }), {});
           return "function" == typeof v?.className && delete v.className, (0, r.jsxs)("a", {
             href: a,
@@ -821,7 +821,7 @@ try {
             ...v,
             "aria-label": x,
             "aria-current": y,
-            ref: b,
+            ref: p,
             role: d,
             children: [e, "_blank" === h && !x && (0, r.jsx)("span", {
               className: c,

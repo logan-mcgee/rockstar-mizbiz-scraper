@@ -697,14 +697,14 @@ try {
           columns: f,
           mobileColumns: k
         }) => {
-          const [g, b] = (0, n.useState)(null);
+          const [b, g] = (0, n.useState)(null);
           if ((0, n.useEffect)(() => {
-              b(e)
+              g(e)
             }, [e]), !a && !e) return null;
           const w = {
             color: r?.color
           };
-          return delete r?.color, f && g ? (0, s.jsx)("div", {
+          return delete r?.color, f && b ? (0, s.jsx)("div", {
             className: l.grid,
             style: {
               "--ordered-list-grid-column": f,
@@ -713,7 +713,7 @@ try {
             children: (0, s.jsx)("ol", {
               className: (0, c.default)(l.itemList, l.noImg, l[i], l[m]),
               style: (0, d.safeStyles)(r),
-              children: g.map(e => (0, s.jsx)("li", {
+              children: b.map(e => (0, s.jsx)("li", {
                 dangerouslySetInnerHTML: {
                   __html: o(e.content)
                 },
@@ -810,14 +810,14 @@ try {
           columns: f,
           mobileColumns: k
         }) => {
-          const [g, b] = (0, n.useState)(null), w = a ? a.split("_#_") : e;
+          const [b, g] = (0, n.useState)(null), w = a ? a.split("_#_") : e;
           if ((0, n.useEffect)(() => {
-              b(e)
+              g(e)
             }, [e]), !a && !e) return null;
           const v = {
             color: r?.color
           };
-          return delete r?.color, f && g ? (0, s.jsx)("div", {
+          return delete r?.color, f && b ? (0, s.jsx)("div", {
             className: l.grid,
             style: {
               "--unordered-list-grid-column": f,
@@ -826,7 +826,7 @@ try {
             children: (0, s.jsx)("ul", {
               className: (0, c.default)(l.itemList, l.noImg, l[i], l[m]),
               style: (0, d.safeStyles)(r),
-              children: g.map((e, a) => (0, s.jsx)("li", {
+              children: b.map((e, a) => (0, s.jsx)("li", {
                 style: v,
                 dangerouslySetInnerHTML: {
                   __html: o(e.content)
@@ -887,8 +887,8 @@ try {
         }) => {
           const f = s?.apiHost ?? e,
             k = s?.authHost ?? a,
-            g = s?.cdnBase ?? o,
-            b = s?.clientId ?? i,
+            b = s?.cdnBase ?? o,
+            g = s?.clientId ?? i,
             w = n?.marketingAuthTLD ?? u,
             v = s?.scHost ?? c,
             p = n?.pingBearerEndpoint ?? "auth/ping-bearer.json";
@@ -897,16 +897,16 @@ try {
             graphEnv: s?.graphEnv ?? t,
             host: v,
             hostname: l,
-            cdnBase: g,
+            cdnBase: b,
             key: m,
-            clientId: b,
+            clientId: g,
             cms: `https://${r}.rockstargames.com/graphql`,
             authHost: k,
             queryManifest: d,
             scBase: `https://${v}.rockstargames.com/`,
-            login: `https://${k}.rockstargames.com/connect/authorize/${b}`,
-            silentCheck: `https://${k}.rockstargames.com/connect/cors/check/${b}`,
-            signup: `https://${k}.rockstargames.com/create/?cid=${b}`,
+            login: `https://${k}.rockstargames.com/connect/authorize/${g}`,
+            silentCheck: `https://${k}.rockstargames.com/connect/cors/check/${g}`,
+            signup: `https://${k}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${w}/auth/gateway.json`,
             logout: `https://${w}/auth/sc-auth-logout`,
             pingBearer: `https://${w}/${p}`,

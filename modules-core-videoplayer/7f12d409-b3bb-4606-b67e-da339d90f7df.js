@@ -15,7 +15,7 @@ try {
   [122, 654], {
     7279(e, t, o) {
       o.d(t, {
-        A: () => a,
+        A: () => s,
         C: () => r
       });
       var n = o(283);
@@ -27,7 +27,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        s = [{
+        a = [{
           id: "prod",
           sites: {
             www: "www",
@@ -39,20 +39,20 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        s = () => {
           let e;
           const {
             location: t
-          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = s.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
+          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = a.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
             site: t,
             subDomain: n
-          }, !0)) >= 0), a = s[r >= 0 ? r : 0], i = s.find(e => e.id === a.fallbackEnvironment);
+          }, !0)) >= 0), s = a[r >= 0 ? r : 0], i = a.find(e => e.id === s.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), (0, n.omit)((0, n.merge)({}, i, {
             currentSite: e
-          }, a), "fallbackEnvironment")
+          }, s), "fallbackEnvironment")
         }
     },
     597(e, t, o) {
@@ -63,17 +63,17 @@ try {
         InMemoryCache: () => E.D,
         PAGE_THEMES: () => ge,
         Platform: () => re,
-        Platforms: () => se,
+        Platforms: () => ae,
         ReactiveStateProvider: () => S,
         ResizeProvider: () => Ke.uU,
         RockstarGraphProvider: () => W,
         RockstarTokenProvider: () => R.ec,
         ScrollProvider: () => qe.N2,
         coreScApiFetch: () => r.A,
-        createDeferredScrollTriggerRefresh: () => a,
+        createDeferredScrollTriggerRefresh: () => s,
         cx: () => n,
         detectIfWeShouldAnchorSomewhere: () => oe,
-        downloadFile: () => we,
+        downloadFile: () => be,
         findPlatform: () => ie,
         generateTpaLink: () => pe.t,
         getAccentColor: () => d,
@@ -81,7 +81,7 @@ try {
         getCdnPrefix: () => fe,
         getConfigForDomain: () => c.A,
         getCookieValueByName: () => ce,
-        getGen8Consoles: () => be,
+        getGen8Consoles: () => we,
         getGen9Consoles: () => ve,
         getLanguageLabel: () => ye,
         getUriForGraphEnv: () => u,
@@ -117,7 +117,7 @@ try {
         usePrevious: () => Oe.ZC,
         useQuery: () => X,
         useQueryParams: () => Oe.sq,
-        useReactiveVar: () => b.q,
+        useReactiveVar: () => w.q,
         useRelativeTime: () => Oe.Vq,
         useRockstarEventDispatcher: () => Oe.OH,
         useRockstarEventSubscriber: () => Oe.zP,
@@ -145,14 +145,14 @@ try {
         default: () => i
       });
       var r = o(959),
-        s = o(7978);
-      const a = () => {
+        a = o(7978);
+      const s = () => {
           let e = 0;
           return {
             refresh: () => {
               cancelAnimationFrame(e), e = requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                  s.u.refresh()
+                  a.u.refresh()
                 })
               })
             },
@@ -188,24 +188,24 @@ try {
       var h = o(8657),
         m = o(4662),
         f = o(9793),
-        w = o(3082),
-        b = o(7927);
+        b = o(3082),
+        w = o(7927);
       const v = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        x = () => (0, w.useContext)(v),
+        x = () => (0, b.useContext)(v),
         y = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        k = () => (0, w.useContext)(y),
+        k = () => (0, b.useContext)(y),
         S = ({
           children: e,
           state: t
         }) => {
-          (0, b.q)(t);
-          const o = (0, w.useCallback)(e => {
+          (0, w.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
@@ -269,10 +269,10 @@ try {
             {
               data: n,
               loading: r,
-              error: s,
-              ...a
+              error: a,
+              ...s
             } = (0, F.IT)(e, o);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (n && o.setTitleDataPath) {
               const e = (0, g.get)(n, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -280,7 +280,7 @@ try {
                 title: e
               })
             }
-          }, [n]), (0, w.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [n]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: r
           }), () => {
@@ -288,13 +288,13 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [r]), (0, w.useEffect)(() => {
-            if (o.autoSetError && s) throw new Error(s.message)
-          }, [s]), {
+          }), [r]), (0, b.useEffect)(() => {
+            if (o.autoSetError && a) throw new Error(a.message)
+          }, [a]), {
             loading: r,
-            error: s,
+            error: a,
             data: n,
-            ...a
+            ...s
           }
         },
         G = JSON.parse('{"de-DE":{"g.1.2.1":"The requested video does not exist."},"en-US":{"g.1.2.1":"The requested video does not exist."},"es-ES":{"g.1.2.1":"The requested video does not exist."},"es-MX":{"g.1.2.1":"The requested video does not exist."},"fr-FR":{"g.1.2.1":"The requested video does not exist."},"it-IT":{"g.1.2.1":"The requested video does not exist."},"ja-JP":{"g.1.2.1":"The requested video does not exist."},"ko-KR":{"g.1.2.1":"The requested video does not exist."},"pl-PL":{"g.1.2.1":"The requested video does not exist."},"pt-BR":{"g.1.2.1":"The requested video does not exist."},"ru-RU":{"g.1.2.1":"The requested video does not exist."},"zh-CN":{"g.1.2.1":"The requested video does not exist."},"zh-TW":{"g.1.2.1":"The requested video does not exist."}}'),
@@ -307,13 +307,13 @@ try {
               ...e,
               uri: o
             },
-            [r] = (0, w.useState)(new E.D({
+            [r] = (0, b.useState)(new E.D({
               typePolicies: t
             })),
             {
-              formatMessage: s
+              formatMessage: a
             } = (0, T.useIntl)(),
-            a = B.concat((({
+            s = B.concat((({
               formatMessage: e
             }) => (0, M.S)(t => {
               const {
@@ -330,7 +330,7 @@ try {
                 return t
               }))
             }))({
-              formatMessage: s
+              formatMessage: a
             }).concat((({
               token: e
             }) => (0, j.o)((t, {
@@ -351,11 +351,11 @@ try {
             }))(n))));
           return new A.R({
             cache: r,
-            link: a
+            link: s
           })
         },
-        V = (0, w.createContext)(N),
-        X = (e, t) => (0, w.useContext)(V)(e, t),
+        V = (0, b.createContext)(N),
+        X = (e, t) => (0, b.useContext)(V)(e, t),
         W = (0, T.withIntl)(({
           children: e,
           graphOptions: t,
@@ -396,9 +396,9 @@ try {
         Q = (0, C.UT)({}),
         H = "data-disallow-body-scroll",
         K = e => {
-          const t = (0, b.q)(Q),
+          const t = (0, w.q)(Q),
             o = Object.values(t).some(e => !!e);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(H, "true") : document.documentElement.removeAttribute(H)
           }, [o]), {
             bodyShouldLock: o,
@@ -459,11 +459,11 @@ try {
         onlineService;
         aliasOnlineService;
         alias;
-        constructor(e, t, o, n, r = null, s = null) {
-          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = r, this.alias = s
+        constructor(e, t, o, n, r = null, a = null) {
+          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = r, this.alias = a
         }
       }
-      const se = Object.freeze({
+      const ae = Object.freeze({
           pc: new re("pc", "PC Legacy", 8, "sc"),
           ps: new re("ps", "PlayStation", 3, "np", "ps"),
           ps3: new re("ps3", "PlayStation 3", 2, "np", "ps"),
@@ -481,13 +481,13 @@ try {
           googlePlay: new re("ggle_play", "Google Play", 1023, "googleplay"),
           pcalt: new re("pcalt", "PC Enhanced", 22, "sc")
         }),
-        ae = Object.freeze(Object.values(se));
+        se = Object.freeze(Object.values(ae));
 
       function ie(e) {
         if (!e) return;
         if (e instanceof re) return e;
         const t = e.toString().toLowerCase();
-        return ae.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
+        return se.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
       var de = o(3058);
       const le = () => {
@@ -518,7 +518,7 @@ try {
           path: "https://media-rockstargames-com.akamaized.net"
         }],
         fe = (e = !0) => me.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
-        we = e => {
+        be = e => {
           e.preventDefault();
           const t = e.currentTarget.href,
             o = (e => {
@@ -537,8 +537,8 @@ try {
             console.log(e)
           })
         },
-        be = () => [se.xbox360.name, se.xboxone.name, se.ps3.name, se.ps4.name, se.pc.name],
-        ve = () => [se.xboxsx.name, se.ps5.name, se.pcalt.name],
+        we = () => [ae.xbox360.name, ae.xboxone.name, ae.ps3.name, ae.ps4.name, ae.pc.name],
+        ve = () => [ae.xboxsx.name, ae.ps5.name, ae.pcalt.name],
         xe = e => ve().includes(e),
         ye = e => {
           const t = new Map([
@@ -581,11 +581,11 @@ try {
           }
         }))(e, t),
         Le = (e, t = 250) => o => ((e, t, o) => {
-          const [n, r] = (0, w.useState)(t), s = e => {
+          const [n, r] = (0, b.useState)(t), a = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
-              const e = o.map(e => s(e));
+              const e = o.map(e => a(e));
               t = {
                 ...t,
                 items: e
@@ -599,9 +599,9 @@ try {
               }
             }), t) : t
           };
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             const e = (0, g.debounce)(() => {
-              r(s(t))
+              r(a(t))
             }, o);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           }), (0, f.jsx)(e, {
@@ -640,16 +640,16 @@ query Translations($locale: String!, $config: String!) {
         De = o(2746),
         _e = o(4812);
       const Ue = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        Be = () => (0, w.useContext)(Ue),
+        Be = () => (0, b.useContext)(Ue),
         Fe = ({
           children: e,
           ...t
         }) => {
           const o = Be() ?? {},
-            n = (0, w.useMemo)(() => ({
+            n = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
@@ -664,7 +664,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, Ne.useLocation)();
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             Ee({
               event: "trackPageview"
             })
@@ -706,7 +706,7 @@ query Translations($locale: String!, $config: String!) {
           }), Je(o), o
         },
         He = () => ({
-          webSettings: (0, b.q)(Je),
+          webSettings: (0, w.q)(Je),
           webSettingsReactive: Je,
           mutateWebSettings: Qe
         });

@@ -148,9 +148,9 @@ try {
         return !!e && n
       }
       var w = t(32951);
-      const h = /^(on.*)$/,
-        g = /^(onPress.*)$/;
-      var b = t(31985);
+      const b = /^(on.*)$/,
+        h = /^(onPress.*)$/;
+      var g = t(31985);
       const m = ({
         inert: e,
         className: n,
@@ -168,7 +168,7 @@ try {
         }) {
           const t = {},
             r = {};
-          for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (g.test(o) ? n ? t[o] = e[o] : r[o] = e[o] : h.test(o) ? t[o] = e[o] : r[o] = e[o]);
+          for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (h.test(o) ? n ? t[o] = e[o] : r[o] = e[o] : b.test(o) ? t[o] = e[o] : r[o] = e[o]);
           return {
             events: t,
             others: r
@@ -196,7 +196,7 @@ try {
         };
         return {
           isPressed: !e && c,
-          buttonProps: (0, b.v)(e ? {} : u, {
+          buttonProps: (0, g.v)(e ? {} : u, {
             ...a,
             className: n
           })

@@ -54,18 +54,18 @@ try {
             p = e.fallbackOnEmptyString,
             y = e.onError,
             v = e.timeZone,
-            h = e.defaultRichTextElements;
+            b = e.defaultRichTextElements;
           void 0 === r && (r = {
             id: ""
           });
-          var b = r.id,
+          var h = r.id,
             E = r.defaultMessage;
-          (0, l.V1)(!!b, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
-          var w = String(b),
+          (0, l.V1)(!!h, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.github.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.github.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.github.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
+          var w = String(h),
             T = c && Object.prototype.hasOwnProperty.call(c, w) && c[w];
           if (Array.isArray(T) && 1 === T.length && T[0].type === a.ZE.literal) return T[0].value;
-          if (!o && T && "string" == typeof T && !h) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
-          if (o = (0, n.Cl)((0, n.Cl)({}, h), o || {}), f = m(f, v), d = m(d, v), !T) {
+          if (!o && T && "string" == typeof T && !b) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
+          if (o = (0, n.Cl)((0, n.Cl)({}, b), o || {}), f = m(f, v), d = m(d, v), !T) {
             if (!1 === p && "" === T) return T;
             if ((!E || u && u.toLowerCase() !== g.toLowerCase()) && y(new i.sb(r, u)), E) try {
               return t.getMessageFormat(E, g, d, s).format(o)
@@ -165,7 +165,7 @@ try {
         return []
       }
 
-      function h(e, t) {
+      function b(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var a = r[0],
           o = r[1],
@@ -178,13 +178,13 @@ try {
         }
         return []
       }
-      var b = r(22506),
+      var h = r(22506),
         E = ["style", "type", "fallback", "languageDisplay"];
 
       function w(e, t, r, n) {
         var a = e.locale,
           o = e.onError;
-        Intl.DisplayNames || o(new b.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', b.O4.MISSING_INTL_API));
+        Intl.DisplayNames || o(new h.IF('Intl.DisplayNames is not available in this environment.\nTry polyfilling it using "@formatjs/intl-displaynames"\n', h.O4.MISSING_INTL_API));
         var s = (0, l.J9)(n, E);
         try {
           return t(a, s).of(r)
@@ -207,7 +207,7 @@ try {
       function I(e, t, r, a) {
         var o = e.locale,
           s = e.onError;
-        void 0 === a && (a = {}), Intl.ListFormat || s(new b.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', b.O4.MISSING_INTL_API));
+        void 0 === a && (a = {}), Intl.ListFormat || s(new h.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', h.O4.MISSING_INTL_API));
         var u = (0, l.J9)(a, T);
         try {
           var m = {},
@@ -266,7 +266,7 @@ try {
       function N(e, t, r, n) {
         var a = e.locale,
           o = e.onError;
-        void 0 === n && (n = {}), Intl.PluralRules || o(new b.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', b.O4.MISSING_INTL_API));
+        void 0 === n && (n = {}), Intl.PluralRules || o(new h.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', h.O4.MISSING_INTL_API));
         var s = (0, l.J9)(n, k);
         try {
           return t(a, s).select(r)
@@ -278,7 +278,7 @@ try {
       var R = ["numeric", "style"];
 
       function j(e, t, r, n, a) {
-        void 0 === a && (a = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new b.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', b.O4.MISSING_INTL_API));
+        void 0 === a && (a = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new h.IF('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', h.O4.MISSING_INTL_API));
         try {
           return function(e, t, r) {
             var n = e.locale,
@@ -332,7 +332,7 @@ try {
                   formatDateToParts: v.bind(null, a, r.getDateTimeFormat),
                   formatTime: p.bind(null, a, r.getDateTimeFormat),
                   formatDateTimeRange: y.bind(null, a, r.getDateTimeFormat),
-                  formatTimeToParts: h.bind(null, a, r.getDateTimeFormat),
+                  formatTimeToParts: b.bind(null, a, r.getDateTimeFormat),
                   formatPlural: N.bind(null, a, r.getPluralRules),
                   formatMessage: f.bind(null, a, r),
                   $t: f.bind(null, a, r),

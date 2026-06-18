@@ -55,24 +55,24 @@ try {
               ...g,
               url: f
             }),
-            y = await (0, r.sc)(v);
+            b = await (0, r.sc)(v);
           if (m) {
-            if (l[y]?.response) return l[y].response;
-            if (l[y]?.loading) return {
+            if (l[b]?.response) return l[b].response;
+            if (l[b]?.loading) return {
               error: null,
               result: null
             };
-            l[y] = {
+            l[b] = {
               loading: !0
             }
           }
-          const k = await fetch(f, g);
-          if (!k.ok) throw new Error(`ScApi fetch error for ${e} with status code ${k.status}`);
-          const b = await k.json();
-          return m && (l[y] = {
-            response: b,
+          const y = await fetch(f, g);
+          if (!y.ok) throw new Error(`ScApi fetch error for ${e} with status code ${y.status}`);
+          const k = await y.json();
+          return m && (l[b] = {
+            response: k,
             loading: !1
-          }), b
+          }), k
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -134,7 +134,7 @@ try {
             p = r?.clientId ?? n,
             g = s?.marketingAuthTLD ?? m,
             v = r?.scHost ?? c,
-            y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${w}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -152,7 +152,7 @@ try {
             signup: `https://${h}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${g}/auth/gateway.json`,
             logout: `https://${g}/auth/sc-auth-logout`,
-            pingBearer: `https://${g}/${y}`,
+            pingBearer: `https://${g}/${b}`,
             authCookieName: "BearerToken"
           }
         },
@@ -231,7 +231,7 @@ try {
         vx: () => E,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => y.useNewswirePost,
+        CA: () => b.useNewswirePost,
         OG: () => i,
         ZC: () => d,
         sq: () => u,
@@ -239,7 +239,7 @@ try {
         OH: () => g,
         zP: () => v,
         Cb: () => w,
-        N6: () => b,
+        N6: () => k,
         GA: () => C,
         JE: () => T
       });
@@ -359,13 +359,13 @@ try {
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
-      var y = n(22636),
-        k = (n(17714), n(93022));
-      const b = e => {
+      var b = n(22636),
+        y = (n(17714), n(93022));
+      const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, a.A)(), s = (0, k.t)(r);
+        } = (0, h.A)(), r = (0, a.A)(), s = (0, y.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,

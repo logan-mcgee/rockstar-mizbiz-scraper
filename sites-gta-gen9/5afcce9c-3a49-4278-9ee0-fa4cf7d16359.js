@@ -46,7 +46,7 @@ try {
             defaultMessage: "Give Feedback"
           }
         }),
-        f = {
+        b = {
           desc: "rockstargames-sites-gta-gen9d72e70db4d8f2e2475325b0ec8c822cd",
           error: "rockstargames-sites-gta-gen9e8b9707f598c854597530de876d5c0ef",
           feedback: "rockstargames-sites-gta-gen9c386be0dcd753031c7c8370a05206972",
@@ -146,7 +146,7 @@ try {
           submitButton: "rockstargames-sites-gta-gen9bea9546fd8d466de07af468b8c217aa7",
           visuallyHidden: "rockstargames-sites-gta-gen9d4ac21d330eca73cb9bf6cb5fd11aa97"
         };
-      var b = t(81270);
+      var f = t(81270);
       const p = ({
           mutation: e,
           query: a,
@@ -166,11 +166,11 @@ try {
               step: n.get("step")
             })
           }, [n.get("step")]), (0, s.jsxs)("div", {
-            className: f.feedback,
+            className: b.feedback,
             children: [(0, s.jsx)("h1", {
               children: r("online-feedback-h1")
             }), (0, s.jsx)("div", {
-              className: f.desc,
+              className: b.desc,
               dangerouslySetInnerHTML: {
                 __html: r("online-feedback-desc")
               }
@@ -195,26 +195,26 @@ try {
             suggestions: o(d.suggestions_button_label)
           }, p = a.path.map(e => 1 === a.path.length && "_root" === e.feedback_type.name ? null : (0, s.jsx)(r.NavLink, {
             to: `?step=${e.id_hash}`,
-            className: f[`stepIcon${e.feedback_type.name}`],
+            className: b[`stepIcon${e.feedback_type.name}`],
             children: e.feedback_type.title
           }, e.id_hash)), m = a.next.map(e => "_root" === e.feedback_type.name ? null : !e?.message || "bug" !== e.feedback_type.name && "suggestions" !== e.feedback_type.name ? (0, s.jsxs)(r.NavLink, {
             target: e?.feedback_type?.href ? "_blank" : "_self",
-            className: f[`stepIcon${e.feedback_type.name}`],
+            className: b[`stepIcon${e.feedback_type.name}`],
             to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
             children: [e.feedback_type.title, e?.feedback_type?.href ? (0, s.jsx)("span", {
-              className: f.visuallyHidden,
+              className: b.visuallyHidden,
               children: o(d.aria_label_open_new_window)
             }) : ""]
           }, e.id_hash) : (0, s.jsxs)("div", {
-            className: f.primaryStepSection,
+            className: b.primaryStepSection,
             children: [(0, s.jsxs)("div", {
-              className: f.primaryStepSectionTextContent,
+              className: b.primaryStepSectionTextContent,
               children: [(0, s.jsx)("div", {
-                className: (0, b.default)(f.feedbackIcon, f[`primaryStepSection${e.feedback_type.name}`])
+                className: (0, f.default)(b.feedbackIcon, b[`primaryStepSection${e.feedback_type.name}`])
               }), (0, s.jsx)("h4", {
                 children: e?.feedback_type.title
               }), (0, s.jsx)("div", {
-                className: f.stepMessage,
+                className: b.stepMessage,
                 dangerouslySetInnerHTML: {
                   __html: e.message
                 }
@@ -226,7 +226,7 @@ try {
               "aria-label": e?.feedback_type?.href && `${g[e.feedback_type.name]} ${o(d.aria_label_open_new_window)}`,
               asChild: !0,
               children: (0, s.jsx)(r.NavLink, {
-                className: f.primaryStepLink,
+                className: b.primaryStepLink,
                 target: e?.feedback_type?.href ? "_blank" : "_self",
                 to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
                 children: g[e.feedback_type.name]
@@ -234,12 +234,12 @@ try {
             })]
           }, e.id_hash));
           return (0, s.jsxs)("div", {
-            className: [f.steps, f[t]].join(" "),
+            className: [b.steps, b[t]].join(" "),
             children: [(0, s.jsx)("div", {
-              className: f.stepsPrevious,
+              className: b.stepsPrevious,
               children: p
             }), (0, s.jsx)("div", {
-              className: f.stepsNext,
+              className: b.stepsNext,
               children: m
             }), m.length ? "" : (0, s.jsx)(l, {
               feedbackStep: a.path[a.path.length - 1].id,
@@ -257,14 +257,14 @@ try {
             formatMessage: r
           } = (0, i.useIntl)(), {
             loggedIn: n
-          } = (0, o.useRockstarUser)(), b = (0, c.useRef)(null), [p, {
+          } = (0, o.useRockstarUser)(), f = (0, c.useRef)(null), [p, {
             data: m,
             error: l
           }] = (0, g.useMutation)(a), k = (0, c.useMemo)(() => `${(0,g.getBase)()}${location?.pathname}`.replace(/\/\//g, "/"), [location?.pathname]), {
             signInUrl: u
           } = (0, g.useScAuthLinks)(k);
           return n ? m?.submittal?.id ? (0, s.jsx)("div", {
-            className: f.success,
+            className: b.success,
             dangerouslySetInnerHTML: {
               __html: t("feedback.enter_success")
             }
@@ -272,7 +272,7 @@ try {
             onSubmit: a => (a => {
               a.preventDefault(), (() => {
                 const a = {
-                  content: b.current?.value,
+                  content: f.current?.value,
                   feedback_step: e
                 };
                 p({
@@ -282,22 +282,22 @@ try {
             })(a),
             "data-testid": "feedback-form",
             children: [(0, s.jsx)("textarea", {
-              ref: b,
+              ref: f,
               maxLength: 500,
               rows: 6,
               placeholder: t("feedback.placeholder")
             }), l ? (0, s.jsx)("div", {
-              className: f.error,
+              className: b.error,
               children: String(l)
             }) : "", (0, s.jsx)("button", {
-              className: f.submitButton,
+              className: b.submitButton,
               type: "submit",
               children: t("SUBMIT")
             })]
           }) : (0, s.jsx)(s.Fragment, {
             children: r(d.gtao_feedback_login_cta_text, {
               SignInLink: e => (0, s.jsx)("a", {
-                className: f.signInLink,
+                className: b.signInLink,
                 href: u,
                 children: e
               })

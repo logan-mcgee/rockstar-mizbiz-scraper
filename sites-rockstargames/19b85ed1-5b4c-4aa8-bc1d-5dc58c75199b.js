@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "19b85ed1-5b4c-4aa8-bc1d-5dc58c75199b", o._sentryDebugIdIdentifier = "sentry-dbid-19b85ed1-5b4c-4aa8-bc1d-5dc58c75199b")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "19b85ed1-5b4c-4aa8-bc1d-5dc58c75199b", o._sentryDebugIdIdentifier = "sentry-dbid-19b85ed1-5b4c-4aa8-bc1d-5dc58c75199b")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9062], {
-    9062(o, t, e) {
-      e.r(t), e.d(t, {
+    9062(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => h,
@@ -28,7 +28,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => c
+        default: () => f
       });
       var _ = "{description} - Bild in Lightbox ansehen",
         n = "Schließen",
@@ -43,7 +43,7 @@ try {
         g = "{zoom} %",
         h = "Herunterladen",
         L = "Herunterladen",
-        c = {
+        f = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
           Lightbox_Close_Button_Tooltip: a,

@@ -81,13 +81,13 @@ try {
         }) : null;
       var o = s(31879),
         g = s.n(o),
-        m = s(17301),
-        b = s(81270);
+        b = s(17301),
+        m = s(81270);
       const f = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
-        }) => e?.shouldTrack ? (0, t.jsx)(m.InViewTracker, {
+        }) => e?.shouldTrack ? (0, t.jsx)(b.InViewTracker, {
           threshold: e?.threshold,
           gtm: a,
           children: s
@@ -124,7 +124,7 @@ try {
           id: d = null
         }) => (0, t.jsx)("div", {
           style: a,
-          className: (0, b.default)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
+          className: (0, m.default)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
           id: d,
           "data-testid": "standard-group-of-items",
           children: e.map(e => (0, t.jsx)(f, {
@@ -133,7 +133,7 @@ try {
             children: (0, t.jsx)(p, {
               to: e?.to,
               children: (0, t.jsxs)("div", {
-                className: (0, b.default)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                className: (0, m.default)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                 style: e?.style ?? {},
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(u, {

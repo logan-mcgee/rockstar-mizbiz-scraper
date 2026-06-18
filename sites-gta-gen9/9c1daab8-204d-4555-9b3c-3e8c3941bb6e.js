@@ -15,10 +15,10 @@ try {
   [3939, 6320], {
     26320(e, t, i) {
       i.r(t), i.d(t, {
-        InView: () => u,
+        InView: () => b,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => u
       });
       var n = i(93082),
         s = Object.defineProperty,
@@ -87,7 +87,7 @@ try {
             c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), r.unobserve(e)), 0 === h.size && (r.disconnect(), o.delete(s))
           }
       }
-      var u = class extends n.Component {
+      var b = class extends n.Component {
         constructor(e) {
           super(e), r(this, "node", null), r(this, "_unobserveCb", null), r(this, "handleNode", e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -163,17 +163,17 @@ try {
             trackVisibility: l,
             delay: h,
             initialInView: c,
-            fallbackInView: u,
-            ...b
+            fallbackInView: b,
+            ...u
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...u
           }, e)
         }
       };
 
-      function b({
+      function u({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -185,15 +185,15 @@ try {
         fallbackInView: l,
         onChange: h
       } = {}) {
-        var u;
-        const [b, p] = n.useState(null), f = n.useRef(h), [g, y] = n.useState({
+        var b;
+        const [u, p] = n.useState(null), f = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
         f.current = h, n.useEffect(() => {
-          if (a || !b) return;
+          if (a || !u) return;
           let n;
-          return n = c(b, (e, t) => {
+          return n = c(u, (e, t) => {
             y({
               inView: e,
               entry: t
@@ -207,10 +207,10 @@ try {
           }, l), () => {
             n && n()
           }
-        }, [Array.isArray(e) ? e.toString() : e, b, r, s, o, a, i, l, t]);
-        const w = null == (u = g.entry) ? void 0 : u.target,
+        }, [Array.isArray(e) ? e.toString() : e, u, r, s, o, a, i, l, t]);
+        const w = null == (b = g.entry) ? void 0 : b.target,
           v = n.useRef(void 0);
-        b || !w || o || a || v.current === w || (v.current = w, y({
+        u || !w || o || a || v.current === w || (v.current = w, y({
           inView: !!d,
           entry: void 0
         }));

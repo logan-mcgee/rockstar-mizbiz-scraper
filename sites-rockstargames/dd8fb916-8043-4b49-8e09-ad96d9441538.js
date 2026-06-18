@@ -30,8 +30,8 @@ try {
       const i = {},
         d = "routing.react_router_match",
         l = "routing.legacy_route",
-        c = "routing.instrumentation",
-        p = "__SENTRY_IMPORT_MAP__",
+        p = "routing.instrumentation",
+        c = "__SENTRY_IMPORT_MAP__",
         g = e => {
           const a = e => e.replace(/^@(rockstargames|rockstar)\//, "").replace(/[/\\.]/g, "-"),
             t = (e?.exception?.values?.[0].stacktrace?.frames || []).filter(e => e.module_metadata && e.module_metadata.packageName).map(e => e.module_metadata).pop(),
@@ -43,7 +43,7 @@ try {
               const a = e?.dsn,
                 t = e?.packageName ?? "",
                 r = (e => {
-                  const a = window[p] || {};
+                  const a = window[c] || {};
                   return a.microFrontends?.[e]?.[0]?.metadata?.version
                 })(t) || e?.version;
               return {
@@ -65,7 +65,7 @@ try {
           }
           return e
         },
-        f = ({
+        u = ({
           getEvent: e
         }) => {
           const a = e();
@@ -73,14 +73,14 @@ try {
             dsn: i[a?.event_id ?? ""]
           }] : []
         };
-      var u = t(98485),
+      var f = t(98485),
         m = t(29613),
         _ = t(19719),
-        y = t(88178),
-        b = t(46287);
+        b = t(88178),
+        y = t(46287);
       const w = e => {
         const a = [];
-        return a.push((0, u.sn)()), a.push((0, m.X)()), a.push((0, _.Q)()), e?.performanceTracing?.enabled && a.push((0, y.dp)(e?.performanceTracing?.options ?? {})), e?.sessionReplay?.enabled && a.push((0, b.J$)(e?.sessionReplay?.options ?? {})), a
+        return a.push((0, f.sn)()), a.push((0, m.X)()), a.push((0, _.Q)()), e?.performanceTracing?.enabled && a.push((0, b.dp)(e?.performanceTracing?.options ?? {})), e?.sessionReplay?.enabled && a.push((0, y.J$)(e?.sessionReplay?.options ?? {})), a
       };
       var k = function(e) {
         return e.Fatal = "fatal", e.Error = "error", e.Warning = "warning", e.Log = "log", e.Info = "info", e.Debug = "debug", e
@@ -88,7 +88,7 @@ try {
       const E = e => e && e.map(e => new RegExp(e, "i")) || [];
       var R = t(43031);
       const h = e => {
-          window[p] || (window[p] = e)
+          window[c] || (window[c] = e)
         },
         v = () => {
           const e = {
@@ -118,7 +118,7 @@ try {
               replaysOnErrorSampleRate: e.replaysOnErrorSampleRate ?? 0,
               sampleRate: e?.errorReporting?.options?.sampleRate ?? 0,
               tracePropagationTargets: e.tracePropagationTargets ?? [],
-              transport: (0, o.N)(r._, f),
+              transport: (0, o.N)(r._, u),
               tracesSampler: e.tracesSampler,
               tracesSampleRate: e.tracesSampleRate ?? 0
             };
@@ -132,7 +132,7 @@ try {
                 else if ("deadline_exceeded" === t) e.transaction = "sentry-incomplete-pageload";
               else if (a?.tags?.[l]) e.transaction = "sentry-legacy-pageload";
               else {
-                const t = a?.tags?.[c];
+                const t = a?.tags?.[p];
                 if ("string" == typeof t) {
                   const r = t?.includes("react-router");
                   r && a?.tags && !a.tags[d] && (e.transaction = "sentry-unmatched-path-pageload")

@@ -133,11 +133,11 @@ try {
           value: (0, n.makeVar)((0, n.webSettingsReactive)()?.currentCharId)
         }),
         v = e => y(e),
-        w = (0, n.setMakeVarItem)({
+        b = (0, n.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, n.makeVar)(null)
         }),
-        b = e => w(e),
+        w = e => b(e),
         S = (0, n.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, n.makeVar)(null)
@@ -162,7 +162,7 @@ try {
             t = (0, n.useReactiveVar)(C),
             a = (0, n.useReactiveVar)(y),
             r = (0, n.useReactiveVar)(h),
-            s = (0, n.useReactiveVar)(w);
+            s = (0, n.useReactiveVar)(b);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -175,7 +175,7 @@ try {
             setCrewsNeeded: P,
             setCurrentCharId: v,
             setNavOpen: g,
-            setSelectedCharacterTuple: b,
+            setSelectedCharacterTuple: w,
             setUserData: I,
             setJumpScMenuFocus: k
           }

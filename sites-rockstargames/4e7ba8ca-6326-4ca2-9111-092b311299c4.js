@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "4e7ba8ca-6326-4ca2-9111-092b311299c4", o._sentryDebugIdIdentifier = "sentry-dbid-4e7ba8ca-6326-4ca2-9111-092b311299c4")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "4e7ba8ca-6326-4ca2-9111-092b311299c4", o._sentryDebugIdIdentifier = "sentry-dbid-4e7ba8ca-6326-4ca2-9111-092b311299c4")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,12 +13,12 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [649], {
-    50649(o, t, e) {
-      e.r(t), e.d(t, {
+    50649(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Download_Button_Label: () => n,
-        Lightbox_Download_Button_Tooltip: () => l,
+        Lightbox_Close_Button_Tooltip: () => n,
+        Lightbox_Download_Button_Label: () => l,
+        Lightbox_Download_Button_Tooltip: () => a,
         Lightbox_Open_Button_Label: () => i,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => b,
@@ -31,9 +31,9 @@ try {
         default: () => f
       });
       var _ = "Close",
-        a = "Press {shortcut}",
-        n = "Download",
+        n = "Press {shortcut}",
         l = "Download",
+        a = "Download",
         i = "{description} - View image in lightbox",
         s = "Reset",
         b = "Press {shortcut}",
@@ -45,9 +45,9 @@ try {
         L = "{zoom}%",
         f = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Download_Button_Label: n,
-          Lightbox_Download_Button_Tooltip: l,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Download_Button_Label: l,
+          Lightbox_Download_Button_Tooltip: a,
           Lightbox_Open_Button_Label: i,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: b,

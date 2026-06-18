@@ -31,7 +31,7 @@ try {
         animated: () => ys,
         config: () => Dt,
         createInterpolator: () => he,
-        easings: () => we,
+        easings: () => be,
         inferTo: () => zt,
         interpolate: () => ts,
         to: () => es,
@@ -49,15 +49,15 @@ try {
         useTrail: () => Ln,
         useTransition: () => Qn
       });
-      var s = w(),
+      var s = b(),
         r = e => m(e, s),
-        i = w();
+        i = b();
       r.write = e => m(e, i);
-      var a = w();
+      var a = b();
       r.onStart = e => m(e, a);
-      var o = w();
+      var o = b();
       r.onFrame = e => m(e, o);
-      var u = w();
+      var u = b();
       r.onFinish = e => m(e, u);
       var c = [];
       r.setTimeout = (e, t) => {
@@ -120,10 +120,10 @@ try {
         const e = h;
         h = r.now();
         const t = l(h);
-        t && (b(c.splice(0, t), e => e.handler()), p -= t), p ? (a.flush(), s.flush(e ? Math.min(64, h - e) : 16.667), o.flush(), i.flush(), u.flush()) : h = -1
+        t && (w(c.splice(0, t), e => e.handler()), p -= t), p ? (a.flush(), s.flush(e ? Math.min(64, h - e) : 16.667), o.flush(), i.flush(), u.flush()) : h = -1
       }
 
-      function w() {
+      function b() {
         let e = new Set,
           t = e;
         return {
@@ -132,12 +132,12 @@ try {
           },
           delete: n => (p -= t == e && e.has(n) ? 1 : 0, e.delete(n)),
           flush(n) {
-            t.size && (e = new Set, p -= t.size, b(t, t => t(n) && e.add(t)), p += e.size, t = e)
+            t.size && (e = new Set, p -= t.size, w(t, t => t(n) && e.add(t)), p += e.size, t = e)
           }
         }
       }
 
-      function b(e, t) {
+      function w(e, t) {
         e.forEach(e => {
           try {
             t(e)
@@ -349,7 +349,7 @@ try {
             n = 2.75;
           return e < 1 / n ? t * e * e : e < 2 / n ? t * (e -= 1.5 / n) * e + .75 : e < 2.5 / n ? t * (e -= 2.25 / n) * e + .9375 : t * (e -= 2.625 / n) * e + .984375
         },
-        we = {
+        be = {
           linear: e => e,
           easeInQuad: e => e * e,
           easeOutQuad: e => 1 - (1 - e) * (1 - e),
@@ -387,10 +387,10 @@ try {
             var r
           }
         },
-        be = Symbol.for("FluidValue.get"),
+        we = Symbol.for("FluidValue.get"),
         _e = Symbol.for("FluidValue.observers"),
-        ke = e => Boolean(e && e[be]),
-        xe = e => e && e[be] ? e[be]() : e,
+        ke = e => Boolean(e && e[we]),
+        xe = e => e && e[we] ? e[we]() : e,
         Me = e => e[_e] || null;
 
       function Ie(e, t) {
@@ -407,10 +407,10 @@ try {
             Pe(this, e)
           }
         },
-        Pe = (e, t) => Ce(e, be, t);
+        Pe = (e, t) => Ce(e, we, t);
 
       function Ae(e, t) {
-        if (e[be]) {
+        if (e[we]) {
           let n = e[_e];
           n || Ce(e, _e, n = new Set), n.has(t) || (n.add(t), e.observerAdded && e.observerAdded(n.size, t))
         }
@@ -667,7 +667,7 @@ try {
         vt = {
           dependencies: null
         },
-        wt = class extends mt {
+        bt = class extends mt {
           constructor(e) {
             super(), this.source = e, this.setValue(e)
           }
@@ -696,7 +696,7 @@ try {
             t && P(t, e => this.add(e))
           }
         },
-        bt = class e extends wt {
+        wt = class e extends bt {
           constructor(e) {
             super(e)
           }
@@ -718,7 +718,7 @@ try {
 
       function kt(e) {
         const t = ht(e);
-        return t ? t.constructor : I.arr(e) ? bt : Ge(e) ? yt : gt
+        return t ? t.constructor : I.arr(e) ? wt : Ge(e) ? yt : gt
       }
       var xt = (e, t) => {
           const n = !I.fun(e) || e.prototype && e.prototype.isReactComponent;
@@ -734,7 +734,7 @@ try {
                 return vt.dependencies = n, e.style && (e = {
                   ...e,
                   style: t.createAnimatedStyle(e.style)
-                }), e = new wt(e), vt.dependencies = null, [e, n]
+                }), e = new bt(e), vt.dependencies = null, [e, n]
               }(s, t),
               l = at(),
               d = () => {
@@ -925,7 +925,7 @@ try {
           ...Dt.default,
           mass: 1,
           damping: 1,
-          easing: we.linear,
+          easing: be.linear,
           clamp: !1
         },
         Bt = class {
@@ -1372,38 +1372,38 @@ try {
               } = e;
               I.und(s) || (s < .01 && (s = .01), r < 0 && (r = 0), e.tension = Math.pow(2 * Math.PI / s, 2) * i, e.friction = 4 * Math.PI * r * i / s)
             }(g, At(t.config, a), t.config !== o.config ? At(o.config, a) : void 0);
-            let w = ht(this);
-            if (!w || I.und(d)) return n(Jt(this, !0));
-            const b = I.und(t.reset) ? i && !t.default : !I.und(h) && Et(t.reset, a),
-              _ = b ? h : this.get(),
+            let b = ht(this);
+            if (!b || I.und(d)) return n(Jt(this, !0));
+            const w = I.und(t.reset) ? i && !t.default : !I.und(h) && Et(t.reset, a),
+              _ = w ? h : this.get(),
               k = Tt(d),
               x = I.num(k) || I.arr(k) || Ge(k),
               M = !m && (!x || Et(o.immediate || t.immediate, a));
             if (f) {
               const e = kt(d);
-              if (e !== w.constructor) {
-                if (!M) throw Error(`Cannot animate between ${w.constructor.name} and ${e.name}, as the "to" prop suggests`);
-                w = this._set(k)
+              if (e !== b.constructor) {
+                if (!M) throw Error(`Cannot animate between ${b.constructor.name} and ${e.name}, as the "to" prop suggests`);
+                b = this._set(k)
               }
             }
-            const A = w.constructor;
+            const A = b.constructor;
             let O = ke(d),
               C = !1;
             if (!O) {
-              const e = b || !cn(this) && p;
+              const e = w || !cn(this) && p;
               (f || e) && (C = S(Tt(_), k), O = !C), (S(u.immediate, M) || M) && S(g.decay, y) && S(g.velocity, v) || (O = !0)
             }
-            if (C && ln(this) && (u.changed && !b ? O = !0 : O || this._stop(c)), !m && ((O || ke(c)) && (u.values = w.getPayload(), u.toValues = ke(d) ? null : A == yt ? [1] : E(k)), u.immediate != M && (u.immediate = M, M || b || this._set(c)), O)) {
+            if (C && ln(this) && (u.changed && !w ? O = !0 : O || this._stop(c)), !m && ((O || ke(c)) && (u.values = b.getPayload(), u.toValues = ke(d) ? null : A == yt ? [1] : E(k)), u.immediate != M && (u.immediate = M, M || w || this._set(c)), O)) {
               const {
                 onRest: e
               } = u;
-              P(bn, e => _n(this, t, e));
+              P(wn, e => _n(this, t, e));
               const s = Jt(this, mn(this, c));
               V(this._pendingCalls, s), this._pendingCalls.add(n), u.changed && r.batchedUpdates(() => {
-                u.changed = !b, e?.(s, this), b ? At(o.onRest, s) : u.onStart?.(s, this)
+                u.changed = !w, e?.(s, this), w ? At(o.onRest, s) : u.onStart?.(s, this)
               })
             }
-            b && this._set(_), m ? n(en(t.to, t, this._state, this)) : O ? this._start() : ln(this) && !f ? this._pendingCalls.add(n) : n(Zt(_))
+            w && this._set(_), m ? n(en(t.to, t, this._state, this)) : O ? this._start() : ln(this) && !f ? this._pendingCalls.add(n) : n(Zt(_))
           }
           _focus(e) {
             const t = this.animation;
@@ -1494,7 +1494,7 @@ try {
           to: t,
           from: n
         } = e = zt(e), s = new Set;
-        return I.obj(t) && wn(t, s), I.obj(n) && wn(n, s), e.keys = s.size ? Array.from(s) : null, e
+        return I.obj(t) && bn(t, s), I.obj(n) && bn(n, s), e.keys = s.size ? Array.from(s) : null, e
       }
 
       function vn(e) {
@@ -1502,10 +1502,10 @@ try {
         return I.und(t.default) && (t.default = Vt(t)), t
       }
 
-      function wn(e, t) {
+      function bn(e, t) {
         A(e, (e, n) => null != e && t.add(n))
       }
-      var bn = ["onStart", "onRest", "onChange", "onPause", "onResume"];
+      var wn = ["onStart", "onRest", "onChange", "onPause", "onResume"];
 
       function _n(e, t, n) {
         e.animation[n] = t[n] !== Ct(t, n) ? Ot(t[n], e.key) : void 0
@@ -1914,9 +1914,9 @@ try {
         }) => {
           Lt(e, h), At(c, t, n)
         }));
-        const w = [];
+        const b = [];
         if (g && P(g, (e, t) => {
-            e.expired ? (clearTimeout(e.expirationId), v.push(e)) : ~(t = w[t] = y.indexOf(e.key)) && (f[t] = e)
+            e.expired ? (clearTimeout(e.expirationId), v.push(e)) : ~(t = b[t] = y.indexOf(e.key)) && (f[t] = e)
           }), P(p, (e, t) => {
             f[t] || (f[t] = {
               key: y[t],
@@ -1924,12 +1924,12 @@ try {
               phase: "mount",
               ctrl: new In
             }, f[t].ctrl.item = e)
-          }), w.length) {
+          }), b.length) {
           let e = -1;
           const {
             leave: n
           } = s ? s() : t;
-          P(w, (t, s) => {
+          P(b, (t, s) => {
             const r = g[s];
             ~t ? (e = f.indexOf(r), f[e] = {
               ...r,
@@ -1938,7 +1938,7 @@ try {
           })
         }
         I.fun(i) && f.sort((e, t) => i(e.item, t.item));
-        let b = -a;
+        let w = -a;
         const k = at(),
           x = Vt(t),
           M = new Map,
@@ -1970,10 +1970,10 @@ try {
             const t = d || x.config;
             h.config = At(t, e.item, n, p)
           }
-          b += a;
+          w += a;
           const v = {
             ...x,
-            delay: f + b,
+            delay: f + w,
             ref: l,
             immediate: c.immediate,
             reset: !1,
@@ -1985,10 +1985,10 @@ try {
             v.from = At(i, e.item, n)
           }
           const {
-            onResolve: w
+            onResolve: b
           } = v;
           v.onResolve = e => {
-            At(w, e);
+            At(b, e);
             const t = m.current,
               n = t.find(e => e.key === r);
             if (n && (!e.cancelled || "update" == n.phase) && n.ctrl.idle) {
@@ -2326,7 +2326,7 @@ try {
         ds = /^(rotate|skew)/,
         hs = (e, t) => I.num(e) && 0 !== e ? e + t : e,
         ps = (e, t) => I.arr(e) ? e.every(e => ps(e, t)) : I.num(e) ? e === t : parseFloat(e) === t,
-        fs = class extends wt {
+        fs = class extends bt {
           constructor({
             x: e,
             y: t,
@@ -2529,7 +2529,7 @@ try {
       });
       var gs = ((e, {
           applyAnimatedValues: t = () => !1,
-          createAnimatedStyle: n = e => new wt(e),
+          createAnimatedStyle: n = e => new bt(e),
           getComponentProps: s = e => e
         } = {}) => {
           const r = {

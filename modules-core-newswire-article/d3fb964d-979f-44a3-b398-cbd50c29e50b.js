@@ -40,7 +40,7 @@ try {
         lV: () => A,
         p0: () => m,
         PA: () => r,
-        My: () => F,
+        My: () => b,
         _e: () => x
       }), t(39793), t(40283);
       const r = ({
@@ -122,14 +122,14 @@ try {
             s = r?.substring(t.length, r.length);
           return s
         },
-        F = (e, a) => {
+        b = (e, a) => {
           e && void 0 !== a && (0, c.canStoreCookie)(e) && u(e) !== a && (document.cookie = `${e}=${a}; domain=${(0,p.F)()}; path=/;`)
         };
-      var g = t(87605);
-      const h = Object.values(g.d),
-        b = ["0", "1", "2", "3"],
+      var F = t(87605);
+      const g = Object.values(F.d),
+        h = ["0", "1", "2", "3"],
         y = {
-          [g.d.BL]: {
+          [F.d.BL]: {
             0: {
               background: {
                 solid: "#18182D",
@@ -305,7 +305,7 @@ try {
             themeName: a,
             themeLevel: t
           } = e;
-          if ("string" != typeof(r = a) || !h.includes(r) || !(e => "string" == typeof e && b.includes(e))(t)) return null;
+          if ("string" != typeof(r = a) || !g.includes(r) || !(e => "string" == typeof e && h.includes(e))(t)) return null;
           var r;
           const s = y[a]?.[t];
           return (e => {

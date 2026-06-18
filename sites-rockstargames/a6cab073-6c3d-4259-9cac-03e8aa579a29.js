@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     a = (new e.Error).stack;
-  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "71abf89b-0ea0-4bb8-af17-c159ea06db74", e._sentryDebugIdIdentifier = "sentry-dbid-71abf89b-0ea0-4bb8-af17-c159ea06db74")
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a6cab073-6c3d-4259-9cac-03e8aa579a29", e._sentryDebugIdIdentifier = "sentry-dbid-a6cab073-6c3d-4259-9cac-03e8aa579a29")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -311,20 +311,20 @@ try {
           definitions: [s(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var o = m[a] || new Set,
-          r = new Set,
+        var r = m[a] || new Set,
+          o = new Set,
           c = new Set;
-        for (o.forEach(function(e) {
+        for (r.forEach(function(e) {
             c.add(e)
           }); c.size > 0;) {
           var d = c;
           c = new Set, d.forEach(function(e) {
-            r.has(e) || (r.add(e), (m[e] || new Set).forEach(function(e) {
+            o.has(e) || (o.add(e), (m[e] || new Set).forEach(function(e) {
               c.add(e)
             }))
           })
         }
-        return r.forEach(function(a) {
+        return o.forEach(function(a) {
           var m = s(e, a);
           m && t.definitions.push(m)
         }), t
@@ -961,26 +961,26 @@ try {
         }
       }
 
-      function o(e, a) {
+      function r(e, a) {
         var t = {
           kind: e.kind,
           definitions: [s(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var o = m[a] || new Set,
-          r = new Set,
+        var r = m[a] || new Set,
+          o = new Set,
           c = new Set;
-        for (o.forEach(function(e) {
+        for (r.forEach(function(e) {
             c.add(e)
           }); c.size > 0;) {
           var d = c;
           c = new Set, d.forEach(function(e) {
-            r.has(e) || (r.add(e), (m[e] || new Set).forEach(function(e) {
+            o.has(e) || (o.add(e), (m[e] || new Set).forEach(function(e) {
               c.add(e)
             }))
           })
         }
-        return r.forEach(function(a) {
+        return o.forEach(function(a) {
           var m = s(e, a);
           m && t.definitions.push(m)
         }), t
@@ -990,7 +990,7 @@ try {
           var a = new Set;
           t(e, a), m[e.name.value] = a
         }
-      }), e.exports = a, e.exports.postFields = o(a, "postFields"), e.exports.videoFields = o(a, "videoFields"), e.exports.GameInfo = o(a, "GameInfo")
+      }), e.exports = a, e.exports.postFields = r(a, "postFields"), e.exports.videoFields = r(a, "videoFields"), e.exports.GameInfo = r(a, "GameInfo")
     },
     44293(e, a, t) {
       "use strict";
@@ -999,19 +999,19 @@ try {
       });
       var m = t(39793),
         s = t(93082),
-        o = t(42909),
-        r = t(13331),
+        r = t(42909),
+        o = t(13331),
         c = t(42285),
         d = t(82199),
         i = t(38044),
-        p = t(59426);
-      const g = {
+        g = t(59426);
+      const p = {
           rating: "rockstargames-sites-rockstargamesc3e95c84902dd75b827d3c95532e22dc",
           text: "rockstargames-sites-rockstargamesbabdd6ae2ff83f380dadc6982effa011",
           withDescriptors: "rockstargames-sites-rockstargamesb98963abfc7a63295bebc6c6d15b391a",
           withOutDescriptors: "rockstargames-sites-rockstargamesb6339480b5fd086fb0c025930bfb7dcd"
         },
-        n = (0, o.defineMessages)({
+        n = (0, r.defineMessages)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             description: "Ratings link alt text",
@@ -1020,11 +1020,11 @@ try {
         });
       var f = t(70386),
         k = t(30433);
-      (0, r.importAll)(t(36672));
-      const _ = (0, p.A)((0, k.g)(({
+      (0, o.importAll)(t(36672));
+      const _ = (0, g.A)((0, k.g)(({
         descriptors: e = null,
         footer: a = null,
-        href: p,
+        href: g,
         img: k = null,
         titleSlug: _ = null,
         style: j = {},
@@ -1035,59 +1035,59 @@ try {
           inView: x
         } = (0, c.useInView)({
           threshold: .6
-        }), [z, v] = (0, s.useState)({
+        }), [v, z] = (0, s.useState)({
           ratingDescriptors: e,
           ratingFooter: a,
           ratingImg: k,
-          ratingUrl: p
+          ratingUrl: g
         }), {
           track: N
-        } = (0, d.useGtmTrack)(), y = (0, o.useIntl)(), {
+        } = (0, d.useGtmTrack)(), y = (0, r.useIntl)(), {
           data: S
-        } = (0, r.useQuery)(f.GameData, {
+        } = (0, o.useQuery)(f.GameData, {
           variables: {
             titleSlug: _
           },
           skip: !_
         });
         if ((0, s.useEffect)(() => {
-            S && v(S?.game)
+            S && z(S?.game)
           }, [S]), (0, s.useEffect)(() => {
-            x && !l && z.ratingImg && (N({
+            x && !l && v.ratingImg && (N({
               event: "page_section_impression",
               element_placement: "rating"
             }), h(!0))
-          }, [x]), !z.ratingImg) return null;
-        const w = !!z.ratingDescriptors;
+          }, [x]), !v.ratingImg) return null;
+        const w = !!v.ratingDescriptors;
         return (0, m.jsxs)("div", {
-          className: [g.rating, w ? g.withDescriptors : g.withOutDescriptors, b || ""].join(" "),
-          style: (0, r.safeStyles)(j),
+          className: [p.rating, w ? p.withDescriptors : p.withOutDescriptors, b || ""].join(" "),
+          style: (0, o.safeStyles)(j),
           "data-testid": "rating",
           ...u,
           children: [(0, m.jsx)(i.A, {
-            to: z.ratingUrl,
+            to: v.ratingUrl,
             target: "_blank",
             children: (0, m.jsx)("img", {
               alt: y.formatMessage(n.components_ratings_link_alt, {
-                rating: (V = z.ratingImg, V.replace(/_/g, " ").split(".")[0].toUpperCase())
+                rating: (F = v.ratingImg, F.replace(/_/g, " ").split(".")[0].toUpperCase())
               }),
-              src: t(8194)(`./${z.ratingImg}`)
+              src: t(8194)(`./${v.ratingImg}`)
             })
           }), w && (0, m.jsxs)("div", {
-            className: g.text,
+            className: p.text,
             children: [(0, m.jsx)("p", {
-              className: g.descriptors,
+              className: p.descriptors,
               dangerouslySetInnerHTML: {
-                __html: z?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
+                __html: v?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
               }
-            }), z.ratingFooter && (0, m.jsx)("hr", {}), z.ratingFooter && (0, m.jsx)("p", {
+            }), v.ratingFooter && (0, m.jsx)("hr", {}), v.ratingFooter && (0, m.jsx)("p", {
               dangerouslySetInnerHTML: {
-                __html: z.ratingFooter.replace(/ \//g, ", ")
+                __html: v.ratingFooter.replace(/ \//g, ", ")
               }
             })]
           })]
         });
-        var V
+        var F
       }))
     },
     1e4(e, a, t) {
@@ -1097,8 +1097,8 @@ try {
       });
       var m = t(39793),
         s = t(81270),
-        o = t(38044);
-      const r = {
+        r = t(38044);
+      const o = {
           button: "rockstargames-sites-rockstargamesbc25ec64410308d56e4dc097e81fb129",
           secondary: "rockstargames-sites-rockstargamesa3e6439dcaa4870840298d683db4831c"
         },
@@ -1109,20 +1109,20 @@ try {
           to: c,
           onClick: d,
           target: i = "_self",
-          ...p
+          ...g
         }) => {
-          const g = (0, s.default)(r.button, r[t], e);
-          return c ? (0, m.jsx)(o.A, {
-            ...p,
+          const p = (0, s.default)(o.button, o[t], e);
+          return c ? (0, m.jsx)(r.A, {
+            ...g,
             to: c,
-            className: g,
+            className: p,
             onClick: d,
             target: i,
             children: a
           }) : (0, m.jsx)("button", {
-            ...p,
+            ...g,
             type: "button",
-            className: g,
+            className: p,
             onClick: d,
             children: a
           })
@@ -1135,8 +1135,8 @@ try {
       });
       var m = t(39793),
         s = t(93082),
-        o = t(79955),
-        r = t.n(o);
+        r = t(79955),
+        o = t.n(r);
       const c = {
           dropdownWrapper: "rockstargames-sites-rockstargamesbbf48ac7e790ff47ad1d5ee6fb7da4d9",
           items: "rockstargames-sites-rockstargamesa9afd60434d032bdba4ce040dbeb13b7",
@@ -1149,21 +1149,21 @@ try {
           className: a,
           title: t
         }) => {
-          const [o, d] = (0, s.useState)(!1);
-          return (0, m.jsx)(r(), {
-            active: o,
+          const [r, d] = (0, s.useState)(!1);
+          return (0, m.jsx)(o(), {
+            active: r,
             focusTrapOptions: {
               onDeactivate: () => d(!1),
               clickOutsideDeactivates: !0
             },
             children: (0, m.jsxs)("div", {
-              className: [c.dropdownWrapper, o ? c.open : "", void 0 !== a ? a : ""].join(" "),
+              className: [c.dropdownWrapper, r ? c.open : "", void 0 !== a ? a : ""].join(" "),
               children: [(0, m.jsx)("button", {
                 className: c.opener,
-                "aria-expanded": o,
-                onClick: () => d(!o),
+                "aria-expanded": r,
+                onClick: () => d(!r),
                 children: t
-              }), o && (0, m.jsx)("div", {
+              }), r && (0, m.jsx)("div", {
                 className: c.items,
                 onClick: () => d(!1),
                 children: e
@@ -1175,11 +1175,11 @@ try {
     59426(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => r
+        A: () => o
       });
       var m = t(39793),
         s = t(93082);
-      class o extends s.Component {
+      class r extends s.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null,
@@ -1204,8 +1204,8 @@ try {
           }) : this.props.children
         }
       }
-      const r = (e, a = null, t = !1) => {
-        const s = s => (0, m.jsx)(o, {
+      const o = (e, a = null, t = !1) => {
+        const s = s => (0, m.jsx)(r, {
           header: a,
           hidden: t,
           children: (0, m.jsx)(e, {
@@ -1222,13 +1222,13 @@ try {
       });
       var m = t(39793),
         s = t(93082),
-        o = t(13331);
-      const r = {
+        r = t(13331);
+      const o = {
         img: "rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0",
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f"
       };
-      (0, o.importAll)(t(86751));
+      (0, r.importAll)(t(86751));
       const c = ({
         isWideCard: e = !1,
         size: a = 640,
@@ -1237,20 +1237,20 @@ try {
         inGlobalNav: i = !1
       }) => {
         const {
-          isMobile: p
-        } = (0, o.useWindowResize)(), g = (0, o.useLocale)(), n = (0, s.useMemo)(() => {
+          isMobile: g
+        } = (0, r.useWindowResize)(), p = (0, s.useMemo)(() => {
           let m = "";
-          return e && (m = p ? t(16044)(`./${d}/mobile/${g}.jpg`) : t(51048)(`./${d}/desktop/${g}.jpg`)), m || (m = t(39294)(`./${d}.jpg`), m += `?im=Resize=${a}`), m
-        }, [p, d]), [f] = (0, o.usePreloadImg)(n);
-        let k = n;
+          return e && (m = g ? t(25087)(`./${d}/mobile/global.jpg`) : t(58963)(`./${d}/desktop/global.jpg`)), m || (m = t(39294)(`./${d}.jpg`), m += `?im=Resize=${a}`), m
+        }, [g, d]), [n] = (0, r.usePreloadImg)(p);
+        let f = p;
         return (0, m.jsx)("div", {
           role: "img",
           "aria-label": c,
           style: {
-            backgroundImage: `url(${k})`,
+            backgroundImage: `url(${f})`,
             borderRadius: i ? "unset" : ""
           },
-          className: [r.img, f ? r.startAnimation : "", e ? r.wide : ""].join(" ")
+          className: [o.img, n ? o.startAnimation : "", e ? o.wide : ""].join(" ")
         })
       }
     },
@@ -1262,8 +1262,8 @@ try {
       });
       var m = t(78995),
         s = t(39793),
-        o = t(38044);
-      const r = {
+        r = t(38044);
+      const o = {
           fobLink: "rockstargames-sites-rockstargamesd30ff40ba02b7ed14124da3ca9cd4f2b",
           wide: "rockstargames-sites-rockstargamesc9686ec502f78b05e47568667e90bd17"
         },
@@ -1275,14 +1275,14 @@ try {
             titleSlug: t,
             urlOfficial: c = ""
           } = e, d = ["VI"].includes(t.toUpperCase());
-          return (0, s.jsx)(o.A, {
+          return (0, s.jsx)(r.A, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": t,
             "data-testid": `${t}-gamecard`,
             to: a ?? c,
             target: "_self",
-            className: [r.fobLink, d ? r.wide : ""].join(" "),
+            className: [o.fobLink, d ? o.wide : ""].join(" "),
             reloadDocument: d,
             children: (0, s.jsx)(m.A, {
               title: e.title,
@@ -1300,13 +1300,13 @@ try {
       });
       var m = t(39793),
         s = t(93082),
-        o = t(36416),
-        r = t(13331),
+        r = t(36416),
+        o = t(13331),
         c = t(82199),
         d = t(45970),
         i = t(27859),
-        p = t(38044),
-        g = t(45074);
+        g = t(38044),
+        p = t(45074);
       const n = {
           info: "rockstargames-sites-rockstargamesea1c51ae745531c2aeabbe3fcf603842",
           newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
@@ -1326,17 +1326,17 @@ try {
         }) => {
           const {
             track: _
-          } = (0, c.useGtmTrack)(), [j] = (0, o.useSearchParams)(), b = t.preview_images_parsed.newswire_block, u = (0, d.Ub)(i.fi.mobile), l = {
+          } = (0, c.useGtmTrack)(), [j] = (0, r.useSearchParams)(), b = t.preview_images_parsed.newswire_block, u = (0, d.Ub)(i.fi.mobile), l = {
             default: 0 !== a || f ? b.square || b.d16x9 || b._fallback : b.d16x9 || b.square || b._fallback,
             mobile: b.square || b._fallback
-          }, [h] = (0, r.usePreloadImg)(l.default), x = {
+          }, [h] = (0, o.usePreloadImg)(l.default), x = {
             default: {
               backgroundImage: `url(${l.default})`
             },
             mobile: {
               backgroundImage: `url(${l.mobile})`
             }
-          }, z = (0, s.useCallback)(() => {
+          }, v = (0, s.useCallback)(() => {
             _({
               event: "card_click",
               card_id: t.id,
@@ -1346,11 +1346,11 @@ try {
               element_placement: e?.toLowerCase()
             })
           }, [t]);
-          return (0, m.jsx)(p.A, {
+          return (0, m.jsx)(g.A, {
             to: t.url,
             className: [n.newswireBlock, f ? n.newswireBlockNoSpecialOrder : "", null !== h ? n.startAnimation : ""].join(" "),
             focused: k,
-            onClick: z,
+            onClick: v,
             children: (0, m.jsxs)(m.Fragment, {
               children: [0 !== a || j.get("tag_id") ? (0, m.jsx)("div", {
                 className: n.preview,
@@ -1362,7 +1362,7 @@ try {
                 className: n.info,
                 children: [(0, m.jsxs)("div", {
                   className: n.top,
-                  children: [t.primary_tags.length ? (0, m.jsx)(g.A, {
+                  children: [t.primary_tags.length ? (0, m.jsx)(p.A, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, m.jsx)("time", {
                     dateTime: t.created,
@@ -1382,22 +1382,22 @@ try {
     45074(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => r
+        A: () => o
       });
       var m = t(39793),
         s = t(38044);
-      const o = {
+      const r = {
           tag: "rockstargames-sites-rockstargamesb660bb706132d84852c02df01cc6ed5a"
         },
-        r = ({
+        o = ({
           className: e,
           href: a,
           title: t,
-          style: r
+          style: o
         }) => {
           const c = (0, m.jsxs)("div", {
-            style: r,
-            className: [o.tag, e].join(" "),
+            style: o,
+            className: [r.tag, e].join(" "),
             children: [(0, m.jsx)("i", {}), t]
           });
           return void 0 !== a ? (0, m.jsx)(s.A, {
@@ -1414,8 +1414,8 @@ try {
       });
       var m = t(39793),
         s = t(13331),
-        o = t(38044);
-      const r = {
+        r = t(38044);
+      const o = {
           card: "rockstargames-sites-rockstargamesf93031694e202c791c00e5ae3497250a",
           gameTitle: "rockstargames-sites-rockstargamesa1fe577b937c0e16250bf38e9d775061",
           info: "rockstargames-sites-rockstargamesdabce30c906fad181d7cc188f1632c04",
@@ -1429,9 +1429,9 @@ try {
           size: a = 640
         }) => {
           const t = () => e.screencap.includes("akamai") ? `${e.screencap}?im=Resize=${a}` : e.screencap,
-            [o] = (0, s.usePreloadImg)(t());
+            [r] = (0, s.usePreloadImg)(t());
           return (0, m.jsx)("div", {
-            className: [r.screencap, o ? r.screencapLoaded : ""].join(" "),
+            className: [o.screencap, r ? o.screencapLoaded : ""].join(" "),
             "aria-hidden": "true",
             role: "img",
             style: {
@@ -1447,26 +1447,26 @@ try {
           toExplicit: d
         }) => {
           const i = d ?? `/videos/${t.id}`,
-            p = {
-              className: r.videoPreview,
+            g = {
+              className: o.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": i
             },
-            g = (0, m.jsxs)("div", {
-              className: r.card,
+            p = (0, m.jsxs)("div", {
+              className: o.card,
               children: [(0, m.jsx)(c, {
                 video: t,
                 size: s
               }), (0, m.jsxs)("div", {
-                className: r.info,
+                className: o.info,
                 children: [e ? (0, m.jsx)("div", {
-                  className: r.gameTitle,
+                  className: o.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: t.game.title
                   }
                 }) : "", (0, m.jsx)("h5", {
-                  className: r.title,
+                  className: o.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -1476,12 +1476,12 @@ try {
           return a ? (0, m.jsx)("a", {
             href: i,
             target: "_blank",
-            ...p,
-            children: g
-          }) : (0, m.jsx)(o.A, {
+            ...g,
+            children: p
+          }) : (0, m.jsx)(r.A, {
             to: i,
-            ...p,
-            children: g
+            ...g,
+            children: p
           })
         }
     },
@@ -1492,13 +1492,13 @@ try {
       });
       var m = t(39793),
         s = t(93082),
-        o = t(36416),
-        r = t(38044),
+        r = t(36416),
+        o = t(38044),
         c = t(1e4),
         d = t(87081),
         i = t(5180),
-        p = t(44293),
-        g = t(13821),
+        g = t(44293),
+        p = t(13821),
         n = t(4067),
         f = t(13331),
         k = t(42909),
@@ -1508,8 +1508,8 @@ try {
         game: e,
         t: a
       }) => {
-        const o = (0, k.useIntl)(),
-          [r, c] = (0, s.useState)([]),
+        const r = (0, k.useIntl)(),
+          [o, c] = (0, s.useState)([]),
           {
             id: d,
             title: i
@@ -1521,18 +1521,18 @@ try {
             e.push(m)
           } catch (e) {}
           c(e)
-        }, []), r.length ? (0, m.jsxs)("section", {
+        }, []), o.length ? (0, m.jsxs)("section", {
           className: "rockstargames-sites-rockstargamesa781ca361caa47e247f5734a9c28e212",
           children: [(0, m.jsx)("h4", {
             children: a("Screens")
           }), (0, m.jsx)("div", {
             className: "rockstargames-sites-rockstargamesf681812afa193178d2747f442d8a6f9d",
-            children: r.map((e, a) => (0, m.jsx)("img", {
+            children: o.map((e, a) => (0, m.jsx)("img", {
               src: e,
-              alt: o.formatMessage(_.A.game_screens_alt_text, {
+              alt: r.formatMessage(_.A.game_screens_alt_text, {
                 title: i,
                 id: a + 1,
-                total: r.length
+                total: o.length
               })
             }, e))
           })]
@@ -1546,7 +1546,7 @@ try {
         }) => e?.length > 1 ? (0, m.jsx)(d.A, {
           title: a("Buy Now"),
           children: e.map(e => {
-            if (e?.platform?.name) return (0, m.jsx)(r.A, {
+            if (e?.platform?.name) return (0, m.jsx)(o.A, {
               target: "_blank",
               to: e.href,
               children: e.platform.name
@@ -1554,7 +1554,7 @@ try {
           })
         }) : 1 === e?.length ? (0, m.jsx)("div", {
           className: "rockstargames-sites-rockstargamesb875cad94e523a19f3219bd7de10c224",
-          children: (0, m.jsx)(r.A, {
+          children: (0, m.jsx)(o.A, {
             target: "_blank",
             to: e[0].href,
             children: a("Buy Now")
@@ -1572,7 +1572,7 @@ try {
         }) => {
           const t = e?.platforms?.map(e => e?.name) ?? [],
             s = e?.developers?.map(e => e?.title) ?? [],
-            o = ["libertycitystories", "vicecitystories"].includes(e.title_slug);
+            r = ["libertycitystories", "vicecitystories"].includes(e.title_slug);
           return (0, m.jsx)(S, {
             title: a("Specifications"),
             children: (0, m.jsxs)("div", {
@@ -1592,9 +1592,9 @@ try {
                   children: a("Rating")
                 }), (0, m.jsxs)("dd", {
                   className: "rockstargames-sites-rockstargameseee85500f16a01fcb7e7c62936e17d11",
-                  children: [(0, m.jsx)(p.A, {
+                  children: [(0, m.jsx)(g.A, {
                     titleSlug: e.titleSlug
-                  }), o ? (0, m.jsx)("div", {
+                  }), r ? (0, m.jsx)("div", {
                     className: "rockstargames-sites-rockstargamesa51dec4f27b0a95f82c67d360e99a87b"
                   }) : ""]
                 })]
@@ -1602,7 +1602,7 @@ try {
             })
           })
         },
-        z = ({
+        v = ({
           game: e,
           t: a
         }) => (0, m.jsx)(S, {
@@ -1614,7 +1614,7 @@ try {
             }
           })
         }),
-        v = ({
+        z = ({
           game: e,
           posts: a,
           t
@@ -1645,7 +1645,7 @@ try {
           className: "rockstargames-sites-rockstargamesda8dc17916740860c74e2b3c1a25faa9",
           children: [(0, m.jsx)("div", {
             className: "rockstargames-sites-rockstargamesec79287ca93eceb8e0834f49bad57b32",
-            children: a.map(e => (0, m.jsx)(g.N, {
+            children: a.map(e => (0, m.jsx)(p.N, {
               video: e,
               gameTitleNecessary: !1
             }, e.id))
@@ -1691,12 +1691,12 @@ try {
           const {
             setBreadcrumb: a,
             setTitle: t
-          } = (0, b.b)(), r = (0, o.useParams)(), {
+          } = (0, b.b)(), o = (0, r.useParams)(), {
             data: c
           } = (0, f.useQuery)(u.GameInfo, {
             autoSetLoading: !0,
             variables: {
-              titleSlug: r.gameTitlelug
+              titleSlug: o.gameTitlelug
             }
           }), d = c?.game ?? null;
           return (0, s.useEffect)(() => (d && t(d.title), a([{
@@ -1726,14 +1726,14 @@ try {
               })]
             }), (0, m.jsxs)("div", {
               className: "rockstargames-sites-rockstargamesa879fe6862783116ef26ce110c03bf86",
-              children: [(0, m.jsx)(z, {
+              children: [(0, m.jsx)(v, {
                 game: d,
                 t: e
               }), d?.tags?.[0]?.videos?.length ? (0, m.jsx)(N, {
                 game: d,
                 videos: d.tags[0].videos,
                 t: e
-              }) : "", d?.tags?.[0]?.posts?.length ? (0, m.jsx)(v, {
+              }) : "", d?.tags?.[0]?.posts?.length ? (0, m.jsx)(z, {
                 game: d,
                 posts: d.tags[0].posts,
                 t: e
@@ -1821,11 +1821,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -1834,7 +1834,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 36672
+      }, s.resolve = r, e.exports = s, s.id = 36672
     },
     8194(e, a, t) {
       var m = {
@@ -1909,11 +1909,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -1922,7 +1922,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 8194
+      }, s.resolve = r, e.exports = s, s.id = 8194
     },
     86751(e, a, t) {
       var m = {
@@ -1931,32 +1931,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -2010,11 +1986,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2023,7 +1999,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 86751
+      }, s.resolve = r, e.exports = s, s.id = 86751
     },
     39294(e, a, t) {
       var m = {
@@ -2032,32 +2008,8 @@ try {
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
         "./VI.jpg": 1157,
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667,
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927,
+        "./VI/desktop/global.jpg": 57156,
+        "./VI/mobile/global.jpg": 52640,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -2111,11 +2063,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2124,31 +2076,19 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 39294
+      }, s.resolve = r, e.exports = s, s.id = 39294
     },
-    51048(e, a, t) {
+    58963(e, a, t) {
       var m = {
-        "./VI/desktop/de_de.jpg": 20144,
-        "./VI/desktop/en_us.jpg": 40401,
-        "./VI/desktop/es_es.jpg": 47534,
-        "./VI/desktop/es_mx.jpg": 38537,
-        "./VI/desktop/fr_fr.jpg": 72994,
-        "./VI/desktop/it_it.jpg": 93668,
-        "./VI/desktop/ja_jp.jpg": 63365,
-        "./VI/desktop/ko_kr.jpg": 39003,
-        "./VI/desktop/pl_pl.jpg": 37758,
-        "./VI/desktop/pt_br.jpg": 13890,
-        "./VI/desktop/ru_ru.jpg": 11016,
-        "./VI/desktop/zh_hans.jpg": 95732,
-        "./VI/desktop/zh_tw.jpg": 65667
+        "./VI/desktop/global.jpg": 57156
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2157,31 +2097,19 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 51048
+      }, s.resolve = r, e.exports = s, s.id = 58963
     },
-    16044(e, a, t) {
+    25087(e, a, t) {
       var m = {
-        "./VI/mobile/de_de.jpg": 35996,
-        "./VI/mobile/en_us.jpg": 27109,
-        "./VI/mobile/es_es.jpg": 79258,
-        "./VI/mobile/es_mx.jpg": 36725,
-        "./VI/mobile/fr_fr.jpg": 83118,
-        "./VI/mobile/it_it.jpg": 34416,
-        "./VI/mobile/ja_jp.jpg": 84705,
-        "./VI/mobile/ko_kr.jpg": 33055,
-        "./VI/mobile/pl_pl.jpg": 37098,
-        "./VI/mobile/pt_br.jpg": 84598,
-        "./VI/mobile/ru_ru.jpg": 20340,
-        "./VI/mobile/zh_hans.jpg": 16264,
-        "./VI/mobile/zh_tw.jpg": 6927
+        "./VI/mobile/global.jpg": 52640
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2190,7 +2118,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 16044
+      }, s.resolve = r, e.exports = s, s.id = 25087
     },
     72992(e, a, t) {
       var m = {
@@ -2343,11 +2271,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2356,7 +2284,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 72992
+      }, s.resolve = r, e.exports = s, s.id = 72992
     },
     75471(e, a, t) {
       var m = {
@@ -2743,11 +2671,11 @@ try {
       };
 
       function s(e) {
-        var a = o(e);
+        var a = r(e);
         return t(a)
       }
 
-      function o(e) {
+      function r(e) {
         if (!t.o(m, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -2756,7 +2684,7 @@ try {
       }
       s.keys = function() {
         return Object.keys(m)
-      }, s.resolve = o, e.exports = s, s.id = 75471
+      }, s.resolve = r, e.exports = s, s.id = 75471
     },
     97558(e) {
       "use strict";
@@ -3048,111 +2976,15 @@ try {
     },
     1157(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/090acda789de843d56780aa60c1f7056.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b34d21a2564258ce247662c7edeb6f00.jpg"
     },
-    20144(e) {
+    57156(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5050d09bf65a09d316c5c4344c2c38fb.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6934dc5e822bb457e127873c6114b38b.jpg"
     },
-    40401(e) {
+    52640(e) {
       "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5486652b229530cf4b752c25531e251f.jpg"
-    },
-    47534(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    38537(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e66ce9502ddace9f8b0a8496f0cdcda.jpg"
-    },
-    72994(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    93668(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04fad38dffabad52092b45f9a3cee88b.jpg"
-    },
-    63365(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    39003(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1293618750cb6ba3f62e73c5633032f8.jpg"
-    },
-    37758(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/42eaeed54ffe28ca0cf5ca0babdc19a4.jpg"
-    },
-    13890(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4eaaed791df32e91f97107b262830371.jpg"
-    },
-    11016(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/74576fdc36948700777d06f9b8db2eec.jpg"
-    },
-    95732(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6205f3bd39adb33d23221501f6506dc5.jpg"
-    },
-    65667(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3ce78f679abdee82651d753a47e38532.jpg"
-    },
-    35996(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/44a3bdc0a87eb98dc369735737deaf33.jpg"
-    },
-    27109(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9184d16412d42140f30a1d0c16db22b1.jpg"
-    },
-    79258(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    36725(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b48f3ad2d0327e0b1b30934487535181.jpg"
-    },
-    83118(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    34416(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5d748d12cf8cc854121e8be9860ed409.jpg"
-    },
-    84705(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    33055(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4fb18f10480c1ce10ca7faaad9a2aea7.jpg"
-    },
-    37098(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/79aabd673e6726aec41e898bb1b4dca5.jpg"
-    },
-    84598(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d33532ed9c8c08388d6ab4a0613520aa.jpg"
-    },
-    20340(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/524705aa18bd4ecfe65a7604fe553bea.jpg"
-    },
-    16264(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a9ff3cac0e6f01352186a60a37f17a8f.jpg"
-    },
-    6927(e) {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/81f92d6438abb2b88c813d8eaeab8d3f.jpg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5f8798f0d7d5f37162b70cbf70894f34.jpg"
     },
     78323(e) {
       "use strict";

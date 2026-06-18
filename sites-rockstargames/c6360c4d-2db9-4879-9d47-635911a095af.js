@@ -15,10 +15,10 @@ try {
   [4144], {
     34144(o, t, e) {
       e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => a,
-        Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => f,
-        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Close_Button_Label: () => n,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Download_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
@@ -28,11 +28,11 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => L
+        default: () => f
       });
       var _ = "{description} - 在燈箱中查看圖片",
-        a = "關閉",
-        n = "按 {shortcut}",
+        n = "關閉",
+        a = "按 {shortcut}",
         i = "放大",
         l = "按 {shortcut}",
         b = "縮小",
@@ -41,12 +41,12 @@ try {
         u = "按 {shortcut}",
         g = "縮放比例",
         r = "{zoom}%",
-        f = "下載",
         h = "下載",
-        L = {
+        L = "下載",
+        f = {
           Lightbox_Open_Button_Label: _,
-          Lightbox_Close_Button_Label: a,
-          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Close_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,
@@ -55,8 +55,8 @@ try {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: f,
-          Lightbox_Download_Button_Tooltip: h
+          Lightbox_Download_Button_Label: h,
+          Lightbox_Download_Button_Tooltip: L
         }
     }
   }

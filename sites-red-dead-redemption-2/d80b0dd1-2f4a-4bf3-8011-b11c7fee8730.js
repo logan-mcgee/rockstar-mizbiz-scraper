@@ -1,10 +1,10 @@
 try {
-  let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "d80b0dd1-2f4a-4bf3-8011-b11c7fee8730", o._sentryDebugIdIdentifier = "sentry-dbid-d80b0dd1-2f4a-4bf3-8011-b11c7fee8730")
-} catch (o) {} {
-  let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
-  o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    o = (new e.Error).stack;
+  o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "d80b0dd1-2f4a-4bf3-8011-b11c7fee8730", e._sentryDebugIdIdentifier = "sentry-dbid-d80b0dd1-2f4a-4bf3-8011-b11c7fee8730")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
     release: "sentry-release-id",
     packageName: "@rockstargames/sites-red-dead-redemption-2",
     dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [62], {
-    9062(o, e, t) {
-      t.r(e), t.d(e, {
+    9062(e, o, t) {
+      t.r(o), t.d(o, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => d,
         Lightbox_Download_Button_Label: () => f,
@@ -24,8 +24,8 @@ try {
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
         Lightbox_Zoom_In_Button_Label: () => i,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => a,
-        Lightbox_Zoom_Out_Button__Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => b,
+        Lightbox_Zoom_Out_Button__Tooltip: () => a,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => L
@@ -35,8 +35,8 @@ try {
         d = "{shortcut} drücken",
         i = "Heranzoomen",
         l = "{shortcut} drücken",
-        a = "Herauszoomen",
-        b = "{shortcut} drücken",
+        b = "Herauszoomen",
+        a = "{shortcut} drücken",
         s = "Zurücksetzen",
         u = "{shortcut} drücken",
         r = "Zoomstufe",
@@ -49,8 +49,8 @@ try {
           Lightbox_Close_Button_Tooltip: d,
           Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: a,
-          Lightbox_Zoom_Out_Button__Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: b,
+          Lightbox_Zoom_Out_Button__Tooltip: a,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: r,

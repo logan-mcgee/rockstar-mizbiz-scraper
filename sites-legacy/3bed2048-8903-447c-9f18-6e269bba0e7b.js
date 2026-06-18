@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function l(e, t, o) {
         var r, s = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === s[r] && (s[r] = t[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: s,
           _owner: i.current
         }
       }
-      t.Fragment = s, t.jsx = c, t.jsxs = c
+      t.Fragment = s, t.jsx = l, t.jsxs = l
     },
     39793(e, t, o) {
       e.exports = o(94931)
@@ -103,7 +103,7 @@ try {
         ResizeProvider: () => je.uU,
         RockstarGraphProvider: () => Q,
         RockstarTokenProvider: () => _.ec,
-        ScrollProvider: () => ve.N2,
+        ScrollProvider: () => be.N2,
         coreScApiFetch: () => n.A,
         createDeferredScrollTriggerRefresh: () => a,
         cx: () => r,
@@ -112,9 +112,9 @@ try {
         findPlatform: () => oe.rB,
         generateTpaLink: () => oe.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => oe.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => oe.Ap,
         getGen8Consoles: () => oe.Xs,
         getGen9Consoles: () => oe.kx,
@@ -143,16 +143,16 @@ try {
         useGetTpaLinkGenerator: () => pe.gd,
         useHasReduceMotionPreference: () => pe.vx,
         useHasSaveDataPreference: () => pe.sb,
-        useLazyQuery: () => we._,
+        useLazyQuery: () => ve._,
         useLocale: () => pe.Ym,
         useMutateState: () => x,
-        useMutation: () => be.n,
+        useMutation: () => we.n,
         useNewswirePost: () => pe.CA,
         usePreloadImg: () => pe.OG,
         usePrevious: () => pe.ZC,
         useQuery: () => W,
         useQueryParams: () => pe.sq,
-        useReactiveVar: () => w.q,
+        useReactiveVar: () => v.q,
         useRelativeTime: () => pe.Vq,
         useRockstarEventDispatcher: () => pe.OH,
         useRockstarEventSubscriber: () => pe.zP,
@@ -162,14 +162,14 @@ try {
         useRockstarWebSettings: () => Le,
         useScApi: () => pe.Cb,
         useScAuthLinks: () => pe.N6,
-        useScroll: () => ve.Ll,
+        useScroll: () => be.Ll,
         useScrollTracking: () => pe.GA,
         useScrollVisibility: () => pe.JE,
         useState: () => y,
         useWindowResize: () => je.G4,
         webSettingsReactive: () => Me,
         withAutoRouteTracking: () => Pe,
-        withGtmTracking: () => ce,
+        withGtmTracking: () => le,
         withMediaBasedProps: () => ue,
         withReactiveState: () => T,
         withRockstarGraph: () => H,
@@ -198,8 +198,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(17473),
-        l = o(39991);
+      var l = o(17473),
+        c = o(39991);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -223,31 +223,31 @@ try {
       var h = o(81038),
         m = o(94662),
         p = o(39793),
-        v = o(93082),
-        w = o(37927);
-      const b = (0, h.A)({
-          context: (0, v.createContext)({}),
+        b = o(93082),
+        v = o(37927);
+      const w = (0, h.A)({
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        y = () => (0, v.useContext)(b),
+        y = () => (0, b.useContext)(w),
         k = (0, h.A)({
-          context: (0, v.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        x = () => (0, v.useContext)(k),
+        x = () => (0, b.useContext)(k),
         S = ({
           children: e,
           state: t
         }) => {
-          (0, w.q)(t);
-          const o = (0, v.useCallback)(e => {
+          (0, v.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
             };
             t(o)
           }, [t]);
-          return (0, p.jsx)(b.Provider, {
+          return (0, p.jsx)(w.Provider, {
             value: t(),
             children: (0, p.jsx)(k.Provider, {
               value: o,
@@ -308,7 +308,7 @@ try {
               error: s,
               ...a
             } = (0, B.IT)(e, o);
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (r && o.setTitleDataPath) {
               const e = (0, G.A)(r, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -316,7 +316,7 @@ try {
                 title: e
               })
             }
-          }, [r]), (0, v.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [r]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: n
           }), () => {
@@ -324,7 +324,7 @@ try {
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [n]), (0, v.useEffect)(() => {
+          }), [n]), (0, b.useEffect)(() => {
             if (o.autoSetError && s) throw new Error(s.message)
           }, [s]), {
             loading: n,
@@ -343,7 +343,7 @@ try {
               ...e,
               uri: o
             },
-            [n] = (0, v.useState)(new C.D({
+            [n] = (0, b.useState)(new C.D({
               typePolicies: t
             })),
             {
@@ -390,8 +390,8 @@ try {
             link: a
           })
         },
-        J = (0, v.createContext)(z),
-        W = (e, t) => (0, v.useContext)(J)(e, t),
+        J = (0, b.createContext)(z),
+        W = (e, t) => (0, b.useContext)(J)(e, t),
         Q = (0, A.withIntl)(({
           children: e,
           graphOptions: t,
@@ -432,9 +432,9 @@ try {
         X = (0, P.UT)({}),
         K = "data-disallow-body-scroll",
         Y = e => {
-          const t = (0, w.q)(X),
+          const t = (0, v.q)(X),
             o = Object.values(t).some(e => !!e);
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(K, "true") : document.documentElement.removeAttribute(K)
           }, [o]), {
             bodyShouldLock: o,
@@ -471,15 +471,15 @@ try {
             dataLayer: t
           })
         },
-        ce = e => t => ((e, t) => (0, p.jsx)(e, {
+        le = e => t => ((e, t) => (0, p.jsx)(e, {
           ...t,
           gtmTrack: e => {
             de(e)
           }
         }))(e, t);
-      var le = o(79098);
+      var ce = o(79098);
       const ue = (e, t = 250) => o => ((e, t, o) => {
-        const [r, n] = (0, v.useState)(t), s = e => {
+        const [r, n] = (0, b.useState)(t), s = e => {
           let t = e;
           const o = t?.items;
           if (o?.length) {
@@ -497,8 +497,8 @@ try {
             }
           }), t) : t
         };
-        return (0, v.useEffect)(() => {
-          const e = (0, le.A)(() => {
+        return (0, b.useEffect)(() => {
+          const e = (0, ce.A)(() => {
             n(s(t))
           }, o);
           return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
@@ -534,20 +534,20 @@ query Translations($locale: String!, $config: String!) {
           }) : null
         })(e, o, t);
       var pe = o(85997),
-        ve = o(17714),
-        we = o(52746),
-        be = o(54812);
+        be = o(17714),
+        ve = o(52746),
+        we = o(54812);
       const ye = (0, h.A)({
-          context: (0, v.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        ke = () => (0, v.useContext)(ye),
+        ke = () => (0, b.useContext)(ye),
         xe = ({
           children: e,
           ...t
         }) => {
           const o = ke() ?? {},
-            r = (0, v.useMemo)(() => ({
+            r = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
@@ -562,7 +562,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, Te.useLocation)();
-          return (0, v.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             de({
               event: "trackPageview"
             })
@@ -605,7 +605,7 @@ query Translations($locale: String!, $config: String!) {
           }), Me(o), o
         },
         Le = () => ({
-          webSettings: (0, w.q)(Me),
+          webSettings: (0, v.q)(Me),
           webSettingsReactive: Me,
           mutateWebSettings: Oe
         });

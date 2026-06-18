@@ -16,13 +16,13 @@ try {
     69447(o, t, e) {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => i,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
-        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => b,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => s,
@@ -32,8 +32,8 @@ try {
       });
       var _ = "{description} - Zobacz obraz w podglądzie",
         i = "Zamknij",
-        a = "Naciśnij {shortcut}",
-        n = "Powiększ",
+        n = "Naciśnij {shortcut}",
+        a = "Powiększ",
         b = "Naciśnij {shortcut}",
         l = "Pomniejsz",
         s = "Naciśnij {shortcut}",
@@ -46,8 +46,8 @@ try {
         L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: i,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: b,
           Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: s,

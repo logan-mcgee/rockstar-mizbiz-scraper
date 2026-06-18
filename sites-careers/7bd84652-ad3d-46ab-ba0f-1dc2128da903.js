@@ -147,8 +147,8 @@ try {
           y = e.children,
           m = (0, o.useState)(null),
           h = m[0],
-          g = m[1],
-          b = (0, o.useRef)(t),
+          b = m[1],
+          g = (0, o.useRef)(t),
           v = JSON.stringify(f),
           w = JSON.stringify(null == p ? void 0 : p.parameters);
         (0, o.useEffect)(function() {
@@ -162,7 +162,7 @@ try {
                     size: "invisible",
                     sitekey: t
                   }, (null == p ? void 0 : p.parameters) || {});
-                b.current = e.render(null == p ? void 0 : p.element, r)
+                g.current = e.render(null == p ? void 0 : p.element, r)
               },
               function(e) {
                 var t = e.render,
@@ -181,11 +181,11 @@ try {
                   y = void 0 !== p && p,
                   m = s.id,
                   h = void 0 === m ? "" : m,
-                  g = s.appendTo,
-                  b = h || "google-recaptcha-v3";
+                  b = s.appendTo,
+                  g = h || "google-recaptcha-v3";
                 if (function(e) {
                     return !!document.querySelector("#" + e)
-                  }(b)) o();
+                  }(g)) o();
                 else {
                   var v = function(e) {
                       return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
@@ -194,7 +194,7 @@ try {
                       useRecaptchaNet: a
                     }),
                     w = document.createElement("script");
-                  w.id = b, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+                  w.id = g, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === b ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
                 }
               }({
                 render: (null == p ? void 0 : p.element) ? "explicit" : t,
@@ -207,7 +207,7 @@ try {
                   if (window && window.grecaptcha) {
                     var e = a ? window.grecaptcha.enterprise : window.grecaptcha;
                     e.ready(function() {
-                      g(e)
+                      b(e)
                     })
                   } else i("<GoogleRecaptchaProvider /> " + n.SCRIPT_NOT_AVAILABLE)
                 },
@@ -237,10 +237,10 @@ try {
         }, [a, l, v, w, d, t, null == p ? void 0 : p.element]);
         var C = (0, o.useCallback)(function(e) {
             if (!h || !h.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
-            return h.execute(b.current, {
+            return h.execute(g.current, {
               action: e
             })
-          }, [h, b]),
+          }, [h, g]),
           S = (0, o.useMemo)(function() {
             return {
               executeRecaptcha: h ? C : void 0,
@@ -389,8 +389,8 @@ try {
       var y = "function" == typeof Symbol && Symbol.for,
         m = y ? Symbol.for("react.element") : 60103,
         h = y ? Symbol.for("react.portal") : 60106,
-        g = y ? Symbol.for("react.fragment") : 60107,
-        b = y ? Symbol.for("react.strict_mode") : 60108,
+        b = y ? Symbol.for("react.fragment") : 60107,
+        g = y ? Symbol.for("react.strict_mode") : 60108,
         v = y ? Symbol.for("react.profiler") : 60114,
         w = y ? Symbol.for("react.provider") : 60109,
         C = y ? Symbol.for("react.context") : 60110,
@@ -414,9 +414,9 @@ try {
               switch (e = e.type) {
                 case S:
                 case E:
-                case g:
-                case v:
                 case b:
+                case v:
+                case g:
                 case P:
                   return e;
                 default:
@@ -447,12 +447,12 @@ try {
           ContextProvider: w,
           Element: m,
           ForwardRef: T,
-          Fragment: g,
+          Fragment: b,
           Lazy: $,
           Memo: x,
           Portal: h,
           Profiler: v,
-          StrictMode: b,
+          StrictMode: g,
           Suspense: P,
           isAsyncMode: function(e) {
             return L(e) || O(e) === S
@@ -471,7 +471,7 @@ try {
             return O(e) === T
           },
           isFragment: function(e) {
-            return O(e) === g
+            return O(e) === b
           },
           isLazy: function(e) {
             return O(e) === $
@@ -486,13 +486,13 @@ try {
             return O(e) === v
           },
           isStrictMode: function(e) {
-            return O(e) === b
+            return O(e) === g
           },
           isSuspense: function(e) {
             return O(e) === P
           },
           isValidElementType: function(e) {
-            return "string" == typeof e || "function" == typeof e || e === g || e === E || e === v || e === b || e === P || e === R || "object" == typeof e && null !== e && (e.$$typeof === $ || e.$$typeof === x || e.$$typeof === w || e.$$typeof === C || e.$$typeof === T || e.$$typeof === _ || e.$$typeof === M || e.$$typeof === N || e.$$typeof === k)
+            return "string" == typeof e || "function" == typeof e || e === b || e === E || e === v || e === g || e === P || e === R || "object" == typeof e && null !== e && (e.$$typeof === $ || e.$$typeof === x || e.$$typeof === w || e.$$typeof === C || e.$$typeof === T || e.$$typeof === _ || e.$$typeof === M || e.$$typeof === N || e.$$typeof === k)
           },
           typeOf: O
         },

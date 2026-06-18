@@ -15,24 +15,24 @@ try {
   [7477], {
     37477(e, s, a) {
       a.r(s), a.d(s, {
-        default: () => d
+        default: () => o
       });
       var t = a(39793);
-      const o = {
+      const d = {
           content: "rockstargames-sites-rockstargamesf5e7ab9c74f01e6dc42bea36681208d9",
           logo: "rockstargames-sites-rockstargamesd8b754695ff6e6ac5f4e44b7dd6a6446",
           maint: "rockstargames-sites-rockstargamesb2ef0f4b0fa8e8140d3b77bff10095b7"
         },
-        d = () => (0, t.jsx)("div", {
-          className: o.maint,
+        o = () => (0, t.jsx)("div", {
+          className: d.maint,
           children: (0, t.jsxs)("div", {
-            className: o.content,
+            className: d.content,
             children: [(0, t.jsx)("div", {
-              className: o.logo
+              className: d.logo
             }), (0, t.jsx)("p", {
               children: "The Rockstar Games Social Club is currently undergoing maintenance. Please check back soon."
             }), (0, t.jsx)("a", {
-              className: o.support,
+              className: d.support,
               href: "https://support.rockstargames.com/",
               children: "https://support.rockstargames.com/"
             })]

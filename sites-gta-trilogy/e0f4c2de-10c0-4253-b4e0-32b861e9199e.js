@@ -19,9 +19,9 @@ try {
         i = /^0b[01]+$/i,
         u = /^0o[0-7]+$/i,
         s = parseInt,
-        c = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
-        a = "object" == typeof self && self && self.Object === Object && self,
-        l = c || a || Function("return this")(),
+        a = "object" == typeof n.g && n.g && n.g.Object === Object && n.g,
+        c = "object" == typeof self && self && self.Object === Object && self,
+        l = a || c || Function("return this")(),
         d = Object.prototype.toString,
         f = Math.max,
         h = Math.min,
@@ -51,49 +51,49 @@ try {
         return n || u.test(e) ? s(e.slice(2), n ? 2 : 8) : o.test(e) ? NaN : +e
       }
       e.exports = function(e, t, n) {
-        var r, o, i, u, s, c, a = 0,
+        var r, o, i, u, s, a, c = 0,
           l = !1,
           d = !1,
           w = !0;
         if ("function" != typeof e) throw new TypeError("Expected a function");
 
-        function p(t) {
+        function b(t) {
           var n = r,
             i = o;
-          return r = o = void 0, a = t, u = e.apply(i, n)
+          return r = o = void 0, c = t, u = e.apply(i, n)
         }
 
-        function b(e) {
-          var n = e - c;
-          return void 0 === c || n >= t || n < 0 || d && e - a >= i
+        function p(e) {
+          var n = e - a;
+          return void 0 === a || n >= t || n < 0 || d && e - c >= i
         }
 
         function m() {
           var e = v();
-          if (b(e)) return k(e);
+          if (p(e)) return k(e);
           s = setTimeout(m, function(e) {
-            var n = t - (e - c);
-            return d ? h(n, i - (e - a)) : n
+            var n = t - (e - a);
+            return d ? h(n, i - (e - c)) : n
           }(e))
         }
 
         function k(e) {
-          return s = void 0, w && r ? p(e) : (r = o = void 0, u)
+          return s = void 0, w && r ? b(e) : (r = o = void 0, u)
         }
 
         function S() {
           var e = v(),
-            n = b(e);
-          if (r = arguments, o = this, c = e, n) {
+            n = p(e);
+          if (r = arguments, o = this, a = e, n) {
             if (void 0 === s) return function(e) {
-              return a = e, s = setTimeout(m, t), l ? p(e) : u
-            }(c);
-            if (d) return s = setTimeout(m, t), p(c)
+              return c = e, s = setTimeout(m, t), l ? b(e) : u
+            }(a);
+            if (d) return s = setTimeout(m, t), b(a)
           }
           return void 0 === s && (s = setTimeout(m, t)), u
         }
         return t = y(t) || 0, g(n) && (l = !!n.leading, i = (d = "maxWait" in n) ? f(y(n.maxWait) || 0, t) : i, w = "trailing" in n ? !!n.trailing : w), S.cancel = function() {
-          void 0 !== s && clearTimeout(s), a = 0, r = c = o = s = void 0
+          void 0 !== s && clearTimeout(s), c = 0, r = a = o = s = void 0
         }, S.flush = function() {
           return void 0 === s ? u : k(v())
         }, S
@@ -103,11 +103,11 @@ try {
       "use strict";
       n.r(t), n.d(t, {
         useBoolean: () => i,
-        useClickAnyWhere: () => c,
-        useCopyToClipboard: () => a,
+        useClickAnyWhere: () => a,
+        useCopyToClipboard: () => c,
         useCountdown: () => f,
         useCounter: () => l,
-        useDarkMode: () => b,
+        useDarkMode: () => p,
         useDebounce: () => m,
         useDebounceCallback: () => S,
         useDebounceValue: () => E,
@@ -182,13 +182,13 @@ try {
         }, [e, n, o])
       }
 
-      function c(e) {
+      function a(e) {
         s("click", t => {
           e(t)
         })
       }
 
-      function a() {
+      function c() {
         const [e, t] = (0, r.useState)(null);
         return [e, (0, r.useCallback)(async e => {
           if (!(null == navigator ? void 0 : navigator.clipboard)) return console.warn("Clipboard not supported"), !1;
@@ -241,8 +241,8 @@ try {
           countStop: u
         } = e), n = n ?? 1e3, o = o ?? !1, u = u ?? 0;
         const {
-          count: c,
-          increment: a,
+          count: a,
+          increment: c,
           decrement: f,
           reset: h
         } = l(t), {
@@ -253,12 +253,12 @@ try {
           y(), h()
         };
         return d((0, r.useCallback)(() => {
-          c !== u ? o ? a() : f() : y()
-        }, [c, u, f, a, o, y]), v ? n : null), s ? [c, {
+          a !== u ? o ? c() : f() : y()
+        }, [a, u, f, c, o, y]), v ? n : null), s ? [a, {
           start: g,
           stop: y,
           reset: w
-        }] : [c, {
+        }] : [a, {
           startCountdown: g,
           stopCountdown: y,
           resetCountdown: w
@@ -289,7 +289,7 @@ try {
             return console.error("Error parsing JSON:", e), r
           }
           return o
-        }, [n, t]), c = (0, r.useCallback)(() => {
+        }, [n, t]), a = (0, r.useCallback)(() => {
           const n = t instanceof Function ? t() : t;
           if (v) return n;
           try {
@@ -298,10 +298,10 @@ try {
           } catch (t) {
             return console.warn(`Error reading localStorage key “${e}”:`, t), n
           }
-        }, [t, e, u]), [a, l] = (0, r.useState)(() => o ? c() : t instanceof Function ? t() : t), d = h(t => {
+        }, [t, e, u]), [c, l] = (0, r.useState)(() => o ? a() : t instanceof Function ? t() : t), d = h(t => {
           v && console.warn(`Tried setting localStorage key “${e}” even though environment is not a client`);
           try {
-            const n = t instanceof Function ? t(c()) : t;
+            const n = t instanceof Function ? t(a()) : t;
             window.localStorage.setItem(e, i(n)), l(n), window.dispatchEvent(new StorageEvent("local-storage", {
               key: e
             }))
@@ -310,12 +310,12 @@ try {
           }
         });
         (0, r.useEffect)(() => {
-          l(c())
+          l(a())
         }, [e]);
         const f = (0, r.useCallback)(t => {
-          (null == t ? void 0 : t.key) && t.key !== e || l(c())
-        }, [e, c]);
-        return s("storage", f), s("local-storage", f), [a, d]
+          (null == t ? void 0 : t.key) && t.key !== e || l(a())
+        }, [e, a]);
+        return s("storage", f), s("local-storage", f), [c, d]
       }
       var y = "undefined" == typeof window;
 
@@ -323,47 +323,47 @@ try {
         const n = "boolean" == typeof t ? t : (null == t ? void 0 : t.defaultValue) ?? !1,
           o = "boolean" == typeof t ? void 0 : (null == t ? void 0 : t.initializeWithValue) ?? void 0,
           i = e => y ? n : window.matchMedia(e).matches,
-          [s, c] = (0, r.useState)(() => o ? i(e) : n);
+          [s, a] = (0, r.useState)(() => o ? i(e) : n);
 
-        function a() {
-          c(i(e))
+        function c() {
+          a(i(e))
         }
         return u(() => {
           const t = window.matchMedia(e);
-          return a(), t.addListener ? t.addListener(a) : t.addEventListener("change", a), () => {
-            t.removeListener ? t.removeListener(a) : t.removeEventListener("change", a)
+          return c(), t.addListener ? t.addListener(c) : t.addEventListener("change", c), () => {
+            t.removeListener ? t.removeListener(c) : t.removeEventListener("change", c)
           }
         }, [e]), s
       }
-      var p = "usehooks-ts-dark-mode";
+      var b = "usehooks-ts-dark-mode";
 
-      function b(e, t = p) {
+      function p(e, t = b) {
         (0, r.useRef)(0).current++;
         const n = "boolean" == typeof e ? e : null == e ? void 0 : e.defaultValue,
-          o = "boolean" == typeof e ? t ?? p : (null == e ? void 0 : e.localStorageKey) ?? p,
+          o = "boolean" == typeof e ? t ?? b : (null == e ? void 0 : e.localStorageKey) ?? b,
           i = "boolean" == typeof e ? void 0 : (null == e ? void 0 : e.initializeWithValue) ?? void 0,
           s = w("(prefers-color-scheme: dark)", {
             initializeWithValue: i,
             defaultValue: n
           }),
-          [c, a] = g(o, n ?? s ?? !1, {
+          [a, c] = g(o, n ?? s ?? !1, {
             initializeWithValue: i
           });
         return u(() => {
-          s !== c && a(s)
+          s !== a && c(s)
         }, [s]), {
-          isDarkMode: c,
+          isDarkMode: a,
           toggle: () => {
-            a(e => !e)
+            c(e => !e)
           },
           enable: () => {
-            a(!0)
+            c(!0)
           },
           disable: () => {
-            a(!1)
+            c(!1)
           },
           set: e => {
-            a(e)
+            c(e)
           }
         }
       }
@@ -408,9 +408,9 @@ try {
         const o = (null == n ? void 0 : n.equalityFn) ?? ((e, t) => e === t),
           i = e instanceof Function ? e() : e,
           [u, s] = (0, r.useState)(i),
-          c = (0, r.useRef)(i),
-          a = S(s, t, n);
-        return o(c.current, i) || (a(i), c.current = i), [u, a]
+          a = (0, r.useRef)(i),
+          c = S(s, t, n);
+        return o(a.current, i) || (c(i), a.current = i), [u, c]
       }
 
       function C(e, t = {}) {
@@ -436,17 +436,17 @@ try {
         } = e, [n, o] = (0, r.useState)(null), i = (0, r.useCallback)(() => ({
           width: (null == n ? void 0 : n.offsetWidth) ?? void 0,
           height: (null == n ? void 0 : n.offsetHeight) ?? void 0
-        }), [null == n ? void 0 : n.offsetHeight, null == n ? void 0 : n.offsetWidth]), [c, a] = (0, r.useState)(() => t ? i() : {
+        }), [null == n ? void 0 : n.offsetHeight, null == n ? void 0 : n.offsetWidth]), [a, c] = (0, r.useState)(() => t ? i() : {
           width: void 0,
           height: void 0
         }), l = (0, r.useCallback)(() => {
-          a(i())
+          c(i())
         }, [null == n ? void 0 : n.offsetHeight, null == n ? void 0 : n.offsetWidth]);
         s("resize", l), u(() => {
           l()
         }, [null == n ? void 0 : n.offsetHeight, null == n ? void 0 : n.offsetWidth]);
-        const d = [o, c];
-        return d.ref = d[0], d.width = c.width, d.height = c.height, d
+        const d = [o, a];
+        return d.ref = d[0], d.width = a.width, d.height = a.height, d
       }
 
       function T(e, t) {
@@ -542,8 +542,8 @@ try {
           {
             threshold: u = 0,
             root: s = null,
-            rootMargin: c = "0%",
-            freezeOnceVisible: a = !1,
+            rootMargin: a = "0%",
+            freezeOnceVisible: c = !1,
             initialIsIntersecting: l = !1
           } = i ?? {},
           [d, f] = (0, r.useState)(null),
@@ -554,7 +554,7 @@ try {
           })),
           y = (0, r.useRef)();
         y.current = null == i ? void 0 : i.onChange;
-        const w = (null == (n = v.entry) ? void 0 : n.isIntersecting) && a;
+        const w = (null == (n = v.entry) ? void 0 : n.isIntersecting) && c;
         (0, r.useEffect)(() => {
           if (!h) return;
           if (!("IntersectionObserver" in window)) return;
@@ -567,27 +567,27 @@ try {
               g({
                 isIntersecting: n,
                 entry: t
-              }), y.current && y.current(n, t), n && a && e && (e(), e = void 0)
+              }), y.current && y.current(n, t), n && c && e && (e(), e = void 0)
             })
           }, {
             threshold: u,
             root: s,
-            rootMargin: c
+            rootMargin: a
           });
           return t.observe(h), () => {
             t.disconnect()
           }
-        }, [h, JSON.stringify(u), s, c, w, a]);
-        const p = (0, r.useRef)(null);
+        }, [h, JSON.stringify(u), s, a, w, c]);
+        const b = (0, r.useRef)(null);
         if ((0, r.useEffect)(() => {
             var e;
-            h || !(null == (e = v.entry) ? void 0 : e.target) || a || w || p.current === v.entry.target || (p.current = v.entry.target, g({
+            h || !(null == (e = v.entry) ? void 0 : e.target) || c || w || b.current === v.entry.target || (b.current = v.entry.target, g({
               isIntersecting: l,
               entry: void 0
             }))
-          }, [h, v.entry, a, w, l]), o) return v.entry;
-        const b = [f, !!v.isIntersecting, v.entry];
-        return b.ref = b[0], b.isIntersecting = b[1], b.entry = b[2], b
+          }, [h, v.entry, c, w, l]), o) return v.entry;
+        const p = [f, !!v.isIntersecting, v.entry];
+        return p.ref = p[0], p.isIntersecting = p[1], p.entry = p[2], p
       }
 
       function L() {
@@ -683,16 +683,16 @@ try {
               return console.warn(`Error reading localStorage key “${e}”:`, t), null
             }
           }, [e, o]),
-          [u, c] = (0, r.useState)(() => {
+          [u, a] = (0, r.useState)(() => {
             if (n) return i()
           });
         (0, r.useEffect)(() => {
-          c(i())
+          a(i())
         }, [e]);
-        const a = (0, r.useCallback)(t => {
-          (null == t ? void 0 : t.key) && t.key !== e || c(i())
+        const c = (0, r.useCallback)(t => {
+          (null == t ? void 0 : t.key) && t.key !== e || a(i())
         }, [e, i]);
-        return s("storage", a), s("local-storage", a), u
+        return s("storage", c), s("local-storage", c), u
       }
       var $ = {
         width: void 0,
@@ -706,22 +706,22 @@ try {
         } = e, [{
           width: o,
           height: i
-        }, u] = (0, r.useState)($), s = x(), c = (0, r.useRef)({
+        }, u] = (0, r.useState)($), s = x(), a = (0, r.useRef)({
           ...$
-        }), a = (0, r.useRef)(void 0);
-        return a.current = null == e ? void 0 : e.onResize, (0, r.useEffect)(() => {
+        }), c = (0, r.useRef)(void 0);
+        return c.current = null == e ? void 0 : e.onResize, (0, r.useEffect)(() => {
           if (!(null == t ? void 0 : t.current)) return;
           if ("undefined" == typeof window || !("ResizeObserver" in window)) return;
           const e = new ResizeObserver(([e]) => {
             const t = "border-box" === n ? "borderBoxSize" : "device-pixel-content-box" === n ? "devicePixelContentBoxSize" : "contentBoxSize",
               r = j(e, t, "inlineSize"),
               o = j(e, t, "blockSize");
-            if (c.current.width !== r || c.current.height !== o) {
+            if (a.current.width !== r || a.current.height !== o) {
               const e = {
                 width: r,
                 height: o
               };
-              c.current.width = r, c.current.height = o, (null == a ? void 0 : a.current) ? a.current(e) : s() && u(e)
+              a.current.width = r, a.current.height = o, (null == c ? void 0 : c.current) ? c.current(e) : s() && u(e)
             }
           });
           return e.observe(t.current, {
@@ -751,11 +751,11 @@ try {
           [o, i] = (0, r.useState)(() => {
             if (t) return n()
           }),
-          c = S(i, null == e ? void 0 : e.debounceDelay);
+          a = S(i, null == e ? void 0 : e.debounceDelay);
 
-        function a() {
+        function c() {
           const t = n(),
-            r = (null == e ? void 0 : e.debounceDelay) ? c : i;
+            r = (null == e ? void 0 : e.debounceDelay) ? a : i;
           if (t) {
             const {
               width: e,
@@ -764,7 +764,7 @@ try {
               availWidth: i,
               colorDepth: u,
               orientation: s,
-              pixelDepth: c
+              pixelDepth: a
             } = t;
             r({
               width: e,
@@ -773,12 +773,12 @@ try {
               availWidth: i,
               colorDepth: u,
               orientation: s,
-              pixelDepth: c
+              pixelDepth: a
             })
           }
         }
-        return s("resize", a), u(() => {
-          a()
+        return s("resize", c), u(() => {
+          c()
         }, []), o
       }
       var B = new Map;
@@ -823,28 +823,28 @@ try {
           autoLock: t = !0,
           lockTarget: n,
           widthReflow: o = !0
-        } = e, [i, s] = (0, r.useState)(!1), c = (0, r.useRef)(null), a = (0, r.useRef)(null), l = () => {
-          if (c.current) {
+        } = e, [i, s] = (0, r.useState)(!1), a = (0, r.useRef)(null), c = (0, r.useRef)(null), l = () => {
+          if (a.current) {
             const {
               overflow: e,
               paddingRight: t
-            } = c.current.style;
-            if (a.current = {
+            } = a.current.style;
+            if (c.current = {
                 overflow: e,
                 paddingRight: t
               }, o) {
-              const e = c.current === document.body ? window.innerWidth : c.current.offsetWidth,
-                t = parseInt(window.getComputedStyle(c.current).paddingRight, 10) || 0,
-                n = e - c.current.scrollWidth;
-              c.current.style.paddingRight = `${n+t}px`
+              const e = a.current === document.body ? window.innerWidth : a.current.offsetWidth,
+                t = parseInt(window.getComputedStyle(a.current).paddingRight, 10) || 0,
+                n = e - a.current.scrollWidth;
+              a.current.style.paddingRight = `${n+t}px`
             }
-            c.current.style.overflow = "hidden", s(!0)
+            a.current.style.overflow = "hidden", s(!0)
           }
         }, d = () => {
-          c.current && a.current && (c.current.style.overflow = a.current.overflow, o && (c.current.style.paddingRight = a.current.paddingRight)), s(!1)
+          a.current && c.current && (a.current.style.overflow = c.current.overflow, o && (a.current.style.paddingRight = c.current.paddingRight)), s(!1)
         };
         return u(() => {
-          if (!U) return n && (c.current = "string" == typeof n ? document.querySelector(n) : n), c.current || (c.current = document.body), t && l(), () => {
+          if (!U) return n && (a.current = "string" == typeof n ? document.querySelector(n) : n), a.current || (a.current = document.body), t && l(), () => {
             d()
           }
         }, [t, n, o]), {
@@ -869,7 +869,7 @@ try {
             return console.error("Error parsing JSON:", e), r
           }
           return o
-        }, [n, t]), c = (0, r.useCallback)(() => {
+        }, [n, t]), a = (0, r.useCallback)(() => {
           const n = t instanceof Function ? t() : t;
           if (G) return n;
           try {
@@ -878,10 +878,10 @@ try {
           } catch (t) {
             return console.warn(`Error reading sessionStorage key “${e}”:`, t), n
           }
-        }, [t, e, u]), [a, l] = (0, r.useState)(() => o ? c() : t instanceof Function ? t() : t), d = h(t => {
+        }, [t, e, u]), [c, l] = (0, r.useState)(() => o ? a() : t instanceof Function ? t() : t), d = h(t => {
           G && console.warn(`Tried setting sessionStorage key “${e}” even though environment is not a client`);
           try {
-            const n = t instanceof Function ? t(c()) : t;
+            const n = t instanceof Function ? t(a()) : t;
             window.sessionStorage.setItem(e, i(n)), l(n), window.dispatchEvent(new StorageEvent("session-storage", {
               key: e
             }))
@@ -890,12 +890,12 @@ try {
           }
         });
         (0, r.useEffect)(() => {
-          l(c())
+          l(a())
         }, [e]);
         const f = (0, r.useCallback)(t => {
-          (null == t ? void 0 : t.key) && t.key !== e || l(c())
-        }, [e, c]);
-        return s("storage", f), s("session-storage", f), [a, d]
+          (null == t ? void 0 : t.key) && t.key !== e || l(a())
+        }, [e, a]);
+        return s("storage", f), s("session-storage", f), [c, d]
       }
 
       function Q() {
@@ -914,18 +914,18 @@ try {
           n(o)
         }, [e, t]), s = (0, r.useCallback)(() => {
           o && n(e => e + 1)
-        }, [o]), c = (0, r.useCallback)(() => {
+        }, [o]), a = (0, r.useCallback)(() => {
           i && n(e => e - 1)
-        }, [i]), a = (0, r.useCallback)(() => {
+        }, [i]), c = (0, r.useCallback)(() => {
           n(1)
         }, []);
         return [t, {
           goToNextStep: s,
-          goToPrevStep: c,
+          goToPrevStep: a,
           canGoToNextStep: o,
           canGoToPrevStep: i,
           setStep: u,
-          reset: a
+          reset: c
         }]
       }
 
@@ -996,14 +996,14 @@ try {
           height: void 0
         }), i = S(o, null == e ? void 0 : e.debounceDelay);
 
-        function c() {
+        function a() {
           ((null == e ? void 0 : e.debounceDelay) ? i : o)({
             width: window.innerWidth,
             height: window.innerHeight
           })
         }
-        return s("resize", c), u(() => {
-          c()
+        return s("resize", a), u(() => {
+          a()
         }, []), n
       }
     }

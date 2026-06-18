@@ -128,16 +128,16 @@ try {
           value: (0, n.makeVar)(!1)
         }),
         k = e => m(e),
-        y = (0, n.setMakeVarItem)({
+        b = (0, n.setMakeVarItem)({
           key: "currentCharIdReactive",
           value: (0, n.makeVar)((0, n.webSettingsReactive)()?.currentCharId)
         }),
-        v = e => y(e),
-        w = (0, n.setMakeVarItem)({
+        y = e => b(e),
+        v = (0, n.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, n.makeVar)(null)
         }),
-        b = e => w(e),
+        w = e => v(e),
         _ = (0, n.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, n.makeVar)(null)
@@ -160,9 +160,9 @@ try {
         x = () => {
           const e = (0, n.useReactiveVar)(S),
             t = (0, n.useReactiveVar)(C),
-            a = (0, n.useReactiveVar)(y),
+            a = (0, n.useReactiveVar)(b),
             r = (0, n.useReactiveVar)(h),
-            s = (0, n.useReactiveVar)(w);
+            s = (0, n.useReactiveVar)(v);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -173,9 +173,9 @@ try {
             jumpScMenuFocus: (0, n.useReactiveVar)(m),
             setCharactersNeeded: E,
             setCrewsNeeded: P,
-            setCurrentCharId: v,
+            setCurrentCharId: y,
             setNavOpen: g,
-            setSelectedCharacterTuple: b,
+            setSelectedCharacterTuple: w,
             setUserData: I,
             setJumpScMenuFocus: k
           }

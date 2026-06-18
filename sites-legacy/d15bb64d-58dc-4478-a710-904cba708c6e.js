@@ -64,28 +64,28 @@ try {
           const m = a?.apiHost ?? e,
             u = a?.authHost ?? t,
             g = a?.cdnBase ?? d,
-            w = a?.clientId ?? n,
-            f = s?.marketingAuthTLD ?? h,
-            b = a?.scHost ?? i,
+            b = a?.clientId ?? n,
+            w = s?.marketingAuthTLD ?? h,
+            f = a?.scHost ?? i,
             y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: a?.graphEnv ?? r,
-            host: b,
+            host: f,
             hostname: l,
             cdnBase: g,
             key: p,
-            clientId: w,
+            clientId: b,
             cms: `https://${o}.rockstargames.com/graphql`,
             authHost: u,
             queryManifest: c,
-            scBase: `https://${b}.rockstargames.com/`,
-            login: `https://${u}.rockstargames.com/connect/authorize/${w}`,
-            silentCheck: `https://${u}.rockstargames.com/connect/cors/check/${w}`,
-            signup: `https://${u}.rockstargames.com/create/?cid=${w}`,
-            gateway: `https://${f}/auth/gateway.json`,
-            logout: `https://${f}/auth/sc-auth-logout`,
-            pingBearer: `https://${f}/${y}`,
+            scBase: `https://${f}.rockstargames.com/`,
+            login: `https://${u}.rockstargames.com/connect/authorize/${b}`,
+            silentCheck: `https://${u}.rockstargames.com/connect/cors/check/${b}`,
+            signup: `https://${u}.rockstargames.com/create/?cid=${b}`,
+            gateway: `https://${w}/auth/gateway.json`,
+            logout: `https://${w}/auth/sc-auth-logout`,
+            pingBearer: `https://${w}/${y}`,
             authCookieName: "BearerToken"
           }
         },
@@ -140,11 +140,11 @@ try {
         Xs: () => x,
         kx: () => v,
         rJ: () => S,
-        pT: () => w,
+        pT: () => b,
         lV: () => E,
         PA: () => a,
         My: () => m,
-        _e: () => f
+        _e: () => w
       }), n(39793);
       const a = ({
           element: e
@@ -231,16 +231,16 @@ try {
       var u = n(87605);
       Object.values(u.d), u.d.BL;
       var g = n(32118);
-      const w = e => e.keys().forEach(e),
-        f = e => e.replace(/(<([^>]+)>)/gi, ""),
-        b = [{
+      const b = e => e.keys().forEach(e),
+        w = e => e.replace(/(<([^>]+)>)/gi, ""),
+        f = [{
           key: "dev",
           path: "https://media-dev-rockstargames-com.akamaized.net"
         }, {
           key: "prod",
           path: "https://media-rockstargames-com.akamaized.net"
         }],
-        y = (e = !0) => b.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
+        y = (e = !0) => f.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
         k = e => {
           e.preventDefault();
           const t = e.currentTarget.href,

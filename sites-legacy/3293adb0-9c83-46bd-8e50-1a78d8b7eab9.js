@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new o.Error).stack;
-  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "3293adb0-9c83-46bd-8e50-1a78d8b7eab9", o._sentryDebugIdIdentifier = "sentry-dbid-3293adb0-9c83-46bd-8e50-1a78d8b7eab9")
+    e = (new o.Error).stack;
+  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "3293adb0-9c83-46bd-8e50-1a78d8b7eab9", o._sentryDebugIdIdentifier = "sentry-dbid-3293adb0-9c83-46bd-8e50-1a78d8b7eab9")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,14 +13,14 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [649], {
-    50649(o, t, e) {
-      e.r(t), e.d(t, {
+    50649(o, e, t) {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => n,
         Lightbox_Download_Button_Tooltip: () => i,
-        Lightbox_Open_Button_Label: () => a,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Open_Button_Label: () => b,
+        Lightbox_Reset_Zoom_Button_Label: () => a,
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => s,
         Lightbox_Zoom_In_Button_Tooltip: () => u,
@@ -34,8 +34,8 @@ try {
         l = "Press {shortcut}",
         n = "Download",
         i = "Download",
-        a = "{description} - View image in lightbox",
-        b = "Reset",
+        b = "{description} - View image in lightbox",
+        a = "Reset",
         d = "Press {shortcut}",
         s = "Zoom in",
         u = "Press {shortcut}",
@@ -48,8 +48,8 @@ try {
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Download_Button_Label: n,
           Lightbox_Download_Button_Tooltip: i,
-          Lightbox_Open_Button_Label: a,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Open_Button_Label: b,
+          Lightbox_Reset_Zoom_Button_Label: a,
           Lightbox_Reset_Zoom_Button_Tooltip: d,
           Lightbox_Zoom_In_Button_Label: s,
           Lightbox_Zoom_In_Button_Tooltip: u,

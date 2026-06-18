@@ -50,7 +50,7 @@ try {
     83792(e, i, t) {
       t.r(i), t.d(i, {
         Highlights: () => w,
-        HighlightsItem: () => m
+        HighlightsItem: () => b
       });
       var a = t(39793),
         s = t(93082),
@@ -113,7 +113,7 @@ try {
             }
           }
         },
-        m = (0, l.withIntl)(({
+        b = (0, l.withIntl)(({
           heading: e,
           title: i,
           summary: t,
@@ -156,7 +156,7 @@ try {
           });
           var p
         }, _),
-        b = {
+        m = {
           active: "rockstargames-modules-core-newswire-articleffe479fc6d12e441bdd869bfadbad9d8",
           carouselContainer: "rockstargames-modules-core-newswire-articlecb2067c71495e79af319174e21f5b456",
           circleIndicators: "rockstargames-modules-core-newswire-articlec6b6ee15075db13060d681d7ef8ea8e1",
@@ -224,11 +224,11 @@ try {
               })
             }
           }), [j]), e?.length ? (0, a.jsxs)("section", {
-            className: b.mainContainer,
+            className: m.mainContainer,
             ref: _,
             children: [(0, a.jsxs)("div", {
               ref: C,
-              className: b.mainCarousel,
+              className: m.mainCarousel,
               onMouseEnter: () => {
                 v(!0)
               },
@@ -240,7 +240,7 @@ try {
                   ref: R,
                   type: "button",
                   "aria-label": t.formatMessage(d.cph_highlights_previous),
-                  className: [b.controlBtn, b.prevBtn, x ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.prevBtn, x ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     p({
                       event: "carousel_previous",
@@ -252,7 +252,7 @@ try {
                   ref: N,
                   type: "button",
                   "aria-label": t.formatMessage(d.cph_highlights_next),
-                  className: [b.controlBtn, b.nextBtn, x ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.nextBtn, x ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     p({
                       event: "carousel_next",
@@ -307,9 +307,9 @@ try {
                 }, `${e.title}-${i}`))
               })]
             }), (0, a.jsxs)("div", {
-              className: b.contentContainer,
+              className: m.contentContainer,
               children: [(0, a.jsx)("div", {
-                className: b.carouselContainer,
+                className: m.carouselContainer,
                 children: (0, a.jsx)(o.RC, {
                   onInit: e => {
                     M.current = e
@@ -332,7 +332,7 @@ try {
                           card_name: e[i]?.title
                         }), y(i), T.current?.slideTo(i), M.current?.slideTo(i)
                       })(t),
-                      className: `${t===k?b.active:""}`,
+                      className: `${t===k?m.active:""}`,
                       "aria-label": i.altText ?? i.title,
                       "aria-current": t === k,
                       children: (0, a.jsx)("img", {
@@ -343,8 +343,8 @@ try {
                   }, i.key))
                 })
               }), (0, a.jsx)("div", {
-                className: b.textContainer,
-                children: e.map((t, s) => (0, a.jsx)(m, {
+                className: m.textContainer,
+                children: e.map((t, s) => (0, a.jsx)(b, {
                   heading: i || t.heading,
                   title: t.title,
                   summary: t.summary,

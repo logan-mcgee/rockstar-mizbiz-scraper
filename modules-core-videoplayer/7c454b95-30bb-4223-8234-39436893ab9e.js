@@ -15,7 +15,7 @@ try {
   [680], {
     299(e, a, t) {
       t.r(a), t.d(a, {
-        AgeGate: () => f
+        AgeGate: () => b
       });
       var s = t(9793),
         n = t(3082),
@@ -23,8 +23,8 @@ try {
         r = t(6388),
         d = t(7824),
         o = t(8004),
-        c = t(3331),
-        i = t(2199);
+        i = t(3331),
+        c = t(2199);
       const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,19 +35,19 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        f = (0, c.withTranslations)(({
+        b = (0, i.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
-          ga: f = {},
-          t: m,
-          ...p
+          ga: b = {},
+          t: f,
+          ...m
         }) => {
           const {
-            data: b
-          } = (0, i.useRockstarUser)(), {
+            data: p
+          } = (0, c.useRockstarUser)(), {
             track: y
-          } = (0, i.useGtmTrack)(), h = (0, c.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
+          } = (0, c.useGtmTrack)(), h = (0, i.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
           var w;
           const [k, x] = (0, n.useState)(), I = (0, n.createRef)(), j = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: E
@@ -55,18 +55,18 @@ try {
           return (0, n.useEffect)(() => {
             y({
               event: "age_gate_popup",
-              element_placement: f.element_placement ?? ""
+              element_placement: b.element_placement ?? ""
             })
-          }, []), _ === g.PASSED || !1 === b?.isAMinor ? a : _ === g.FAILED ? (0, s.jsxs)("div", {
+          }, []), _ === g.PASSED || !1 === p?.isAMinor ? a : _ === g.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: E,
             children: [t?.header, (0, s.jsx)("h2", {
-              children: m("agegate_fail")
+              children: f("agegate_fail")
             })]
           }) : (0, s.jsxs)("div", {
             className: u.agegate,
             style: E,
-            ...p,
+            ...m,
             children: [t?.header, (0, s.jsx)("div", {
               className: u.bg,
               style: t?.bgImg ? {
@@ -74,7 +74,7 @@ try {
               } : {}
             }), !1 === k && (0, s.jsx)("h5", {
               className: u.error,
-              children: m("Please enter a valid age")
+              children: f("Please enter a valid age")
             }), (0, s.jsx)("form", {
               name: "agegate",
               onSubmit: async a => {
@@ -88,49 +88,49 @@ try {
                   const a = (0, o.V)(new Date, t) >= e;
                   y(a ? {
                     event: "age_gate_passed",
-                    element_placement: f.element_placement ?? ""
+                    element_placement: b.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: f.element_placement ?? "",
+                    element_placement: b.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";
-                  (0, c.setCookieValue)("UAGC", s), v(s)
+                  (0, i.setCookieValue)("UAGC", s), v(s)
                 }
               },
               "data-testid": "agegate-form",
               children: (0, s.jsxs)("fieldset", {
                 children: [(0, s.jsx)("legend", {
-                  children: m("agegate_header")
+                  children: f("agegate_header")
                 }), (0, s.jsxs)("div", {
                   className: u.inputs,
                   children: [(0, s.jsxs)("label", {
                     htmlFor: "monthInput",
-                    children: [m("Month"), (0, s.jsx)("input", {
+                    children: [f("Month"), (0, s.jsx)("input", {
                       id: "monthInput",
                       ref: I,
-                      placeholder: m("MM"),
+                      placeholder: f("MM"),
                       maxLength: 2,
                       type: "number",
                       required: !0
                     })]
                   }), (0, s.jsxs)("label", {
                     htmlFor: "dayInput",
-                    children: [m("Day"), (0, s.jsx)("input", {
+                    children: [f("Day"), (0, s.jsx)("input", {
                       id: "dayInput",
                       ref: j,
-                      placeholder: m("DD"),
+                      placeholder: f("DD"),
                       maxLength: 2,
                       type: "number",
                       required: !0
                     })]
                   }), (0, s.jsxs)("label", {
                     htmlFor: "yearInput",
-                    children: [m("Year"), (0, s.jsx)("input", {
+                    children: [f("Year"), (0, s.jsx)("input", {
                       id: "yearInput",
                       ref: D,
                       className: u.year,
-                      placeholder: m("YYYY"),
+                      placeholder: f("YYYY"),
                       maxLength: 4,
                       type: "number",
                       required: !0
@@ -138,7 +138,7 @@ try {
                   }), (0, s.jsx)("button", {
                     type: "submit",
                     className: u.submit,
-                    children: m("SUBMIT")
+                    children: f("SUBMIT")
                   })]
                 })]
               })

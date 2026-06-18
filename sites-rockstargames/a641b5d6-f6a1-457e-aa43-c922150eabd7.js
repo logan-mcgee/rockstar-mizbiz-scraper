@@ -18,7 +18,7 @@ try {
         C6: () => o,
         Cl: () => a,
         Tt: () => l,
-        YH: () => f,
+        YH: () => i,
         fX: () => u,
         gz: () => s,
         sH: () => c
@@ -64,7 +64,7 @@ try {
         return new(n || (n = Promise))(function(o, a) {
           function l(e) {
             try {
-              f(r.next(e))
+              i(r.next(e))
             } catch (e) {
               a(e)
             }
@@ -72,23 +72,23 @@ try {
 
           function c(e) {
             try {
-              f(r.throw(e))
+              i(r.throw(e))
             } catch (e) {
               a(e)
             }
           }
 
-          function f(e) {
+          function i(e) {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof n ? t : new n(function(e) {
               e(t)
             })).then(l, c)
           }
-          f((r = r.apply(e, t || [])).next())
+          i((r = r.apply(e, t || [])).next())
         })
       }
 
-      function f(e, t) {
+      function i(e, t) {
         var n, r, o, a = {
             label: 0,
             sent: function() {
@@ -104,7 +104,7 @@ try {
         }), l;
 
         function c(c) {
-          return function(f) {
+          return function(i) {
             return function(c) {
               if (n) throw new TypeError("Generator is already executing.");
               for (; l && (l = 0, c[0] && (a = 0)), a;) try {
@@ -156,12 +156,12 @@ try {
                 value: c[0] ? c[1] : void 0,
                 done: !0
               }
-            }([c, f])
+            }([c, i])
           }
         }
       }
 
-      function i(e, t) {
+      function f(e, t) {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, o, a = n.call(e),
@@ -184,7 +184,7 @@ try {
       }
 
       function s() {
-        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(i(arguments[t]));
+        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(f(arguments[t]));
         return e
       }
 

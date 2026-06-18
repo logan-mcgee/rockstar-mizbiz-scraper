@@ -15,11 +15,11 @@ try {
   [978], {
     47279(e, t, o) {
       o.d(t, {
-        A: () => a,
-        C: () => r
+        A: () => s,
+        C: () => a
       });
       var n = o(40283);
-      const r = {
+      const a = {
           www: "www",
           socialClub: "socialClub",
           support: "support",
@@ -27,7 +27,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        s = [{
+        r = [{
           id: "prod",
           sites: {
             www: "www",
@@ -39,20 +39,20 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        s = () => {
           let e;
           const {
             location: t
-          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = s.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
+          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), a = r.findIndex(t => Object.entries(t.sites).findIndex(([t, n]) => n === o && (e = {
             site: t,
             subDomain: n
-          }, !0)) >= 0), a = s[r >= 0 ? r : 0], i = s.find(e => e.id === a.fallbackEnvironment);
+          }, !0)) >= 0), s = r[a >= 0 ? a : 0], i = r.find(e => e.id === s.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), (0, n.omit)((0, n.merge)({}, i, {
             currentSite: e
-          }, a), "fallbackEnvironment")
+          }, s), "fallbackEnvironment")
         }
     },
     60597(e, t, o) {
@@ -62,18 +62,18 @@ try {
         DataLayerProvider: () => Fe,
         InMemoryCache: () => E.D,
         PAGE_THEMES: () => ge,
-        Platform: () => re,
-        Platforms: () => se,
+        Platform: () => ae,
+        Platforms: () => re,
         ReactiveStateProvider: () => S,
         ResizeProvider: () => Ke.uU,
         RockstarGraphProvider: () => W,
         RockstarTokenProvider: () => R.ec,
         ScrollProvider: () => _e.N2,
-        coreScApiFetch: () => r.A,
-        createDeferredScrollTriggerRefresh: () => a,
+        coreScApiFetch: () => a.A,
+        createDeferredScrollTriggerRefresh: () => s,
         cx: () => n,
         detectIfWeShouldAnchorSomewhere: () => oe,
-        downloadFile: () => we,
+        downloadFile: () => be,
         findPlatform: () => ie,
         generateTpaLink: () => pe.t,
         getAccentColor: () => d,
@@ -81,7 +81,7 @@ try {
         getCdnPrefix: () => fe,
         getConfigForDomain: () => c.A,
         getCookieValueByName: () => ce,
-        getGen8Consoles: () => be,
+        getGen8Consoles: () => we,
         getGen9Consoles: () => ve,
         getLanguageLabel: () => ye,
         getUriForGraphEnv: () => u,
@@ -117,7 +117,7 @@ try {
         usePrevious: () => Oe.ZC,
         useQuery: () => X,
         useQueryParams: () => Oe.sq,
-        useReactiveVar: () => b.q,
+        useReactiveVar: () => w.q,
         useRelativeTime: () => Oe.Vq,
         useRockstarEventDispatcher: () => Oe.OH,
         useRockstarEventSubscriber: () => Oe.zP,
@@ -144,15 +144,15 @@ try {
       o.r(n), o.d(n, {
         default: () => i
       });
-      var r = o(10959),
-        s = o(57978);
-      const a = () => {
+      var a = o(10959),
+        r = o(57978);
+      const s = () => {
           let e = 0;
           return {
             refresh: () => {
               cancelAnimationFrame(e), e = requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                  s.u.refresh()
+                  r.u.refresh()
                 })
               })
             },
@@ -188,24 +188,24 @@ try {
       var h = o(81038),
         m = o(94662),
         f = o(39793),
-        w = o(93082),
-        b = o(37927);
+        b = o(93082),
+        w = o(37927);
       const v = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextGet"
         }),
-        x = () => (0, w.useContext)(v),
+        x = () => (0, b.useContext)(v),
         y = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "graphContextSet"
         }),
-        k = () => (0, w.useContext)(y),
+        k = () => (0, b.useContext)(y),
         S = ({
           children: e,
           state: t
         }) => {
-          (0, b.q)(t);
-          const o = (0, w.useCallback)(e => {
+          (0, w.q)(t);
+          const o = (0, b.useCallback)(e => {
             const o = {
               ...t(),
               ...e
@@ -268,11 +268,11 @@ try {
             },
             {
               data: n,
-              loading: r,
-              error: s,
-              ...a
+              loading: a,
+              error: r,
+              ...s
             } = (0, F.IT)(e, o);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             if (n && o.setTitleDataPath) {
               const e = (0, g.get)(n, o.setTitleDataPath) ?? null;
               e && window.postMessage({
@@ -280,21 +280,21 @@ try {
                 title: e
               })
             }
-          }, [n]), (0, w.useEffect)(() => (o.autoSetLoading && window.postMessage({
+          }, [n]), (0, b.useEffect)(() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
-            loading: r
+            loading: a
           }), () => {
             o.autoSetLoading && window.postMessage({
               type: "graph.loadingUpdate",
               loading: !1
             })
-          }), [r]), (0, w.useEffect)(() => {
-            if (o.autoSetError && s) throw new Error(s.message)
-          }, [s]), {
-            loading: r,
-            error: s,
+          }), [a]), (0, b.useEffect)(() => {
+            if (o.autoSetError && r) throw new Error(r.message)
+          }, [r]), {
+            loading: a,
+            error: r,
             data: n,
-            ...a
+            ...s
           }
         },
         G = JSON.parse('{"de-DE":{"g.1.2.1":"The requested video does not exist."},"en-US":{"g.1.2.1":"The requested video does not exist."},"es-ES":{"g.1.2.1":"The requested video does not exist."},"es-MX":{"g.1.2.1":"The requested video does not exist."},"fr-FR":{"g.1.2.1":"The requested video does not exist."},"it-IT":{"g.1.2.1":"The requested video does not exist."},"ja-JP":{"g.1.2.1":"The requested video does not exist."},"ko-KR":{"g.1.2.1":"The requested video does not exist."},"pl-PL":{"g.1.2.1":"The requested video does not exist."},"pt-BR":{"g.1.2.1":"The requested video does not exist."},"ru-RU":{"g.1.2.1":"The requested video does not exist."},"zh-CN":{"g.1.2.1":"The requested video does not exist."},"zh-TW":{"g.1.2.1":"The requested video does not exist."}}'),
@@ -307,13 +307,13 @@ try {
               ...e,
               uri: o
             },
-            [r] = (0, w.useState)(new E.D({
+            [a] = (0, b.useState)(new E.D({
               typePolicies: t
             })),
             {
-              formatMessage: s
+              formatMessage: r
             } = (0, T.useIntl)(),
-            a = B.concat((({
+            s = B.concat((({
               formatMessage: e
             }) => (0, M.S)(t => {
               const {
@@ -330,7 +330,7 @@ try {
                 return t
               }))
             }))({
-              formatMessage: s
+              formatMessage: r
             }).concat((({
               token: e
             }) => (0, j.o)((t, {
@@ -350,12 +350,12 @@ try {
               fetch: q()
             }))(n))));
           return new A.R({
-            cache: r,
-            link: a
+            cache: a,
+            link: s
           })
         },
-        V = (0, w.createContext)(N),
-        X = (e, t) => (0, w.useContext)(V)(e, t),
+        V = (0, b.createContext)(N),
+        X = (e, t) => (0, b.useContext)(V)(e, t),
         W = (0, T.withIntl)(({
           children: e,
           graphOptions: t,
@@ -396,9 +396,9 @@ try {
         Q = (0, C.UT)({}),
         H = "data-disallow-body-scroll",
         K = e => {
-          const t = (0, b.q)(Q),
+          const t = (0, w.q)(Q),
             o = Object.values(t).some(e => !!e);
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             o ? document.documentElement.setAttribute(H, "true") : document.documentElement.removeAttribute(H)
           }, [o]), {
             bodyShouldLock: o,
@@ -452,42 +452,42 @@ try {
             }
           }
         };
-      class re {
+      class ae {
         name;
         friendlyName;
         id;
         onlineService;
         aliasOnlineService;
         alias;
-        constructor(e, t, o, n, r = null, s = null) {
-          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = r, this.alias = s
+        constructor(e, t, o, n, a = null, r = null) {
+          this.name = e, this.friendlyName = t, this.id = o, this.onlineService = n, this.aliasOnlineService = a, this.alias = r
         }
       }
-      const se = Object.freeze({
-          pc: new re("pc", "PC Legacy", 8, "sc"),
-          ps: new re("ps", "PlayStation", 3, "np", "ps"),
-          ps3: new re("ps3", "PlayStation 3", 2, "np", "ps"),
-          ps4: new re("ps4", "PlayStation 4", 11, "np", "ps"),
-          ps5: new re("ps5", "PlayStation 5", 20, "np", "ps"),
-          xbox: new re("xbox", "Xbox", 4, "xbl"),
-          xbox360: new re("xbox360", "Xbox 360", 1, "xbl"),
-          xboxone: new re("xboxone", "Xbox One", 12, "xbl"),
-          xboxsx: new re("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
-          switch: new re("switch", "Nintendo Switch™", 18, "nintendoswitch"),
-          nintendoswitch: new re("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
-          applestore: new re("applestore", "App Store", 102, "applestore"),
-          googleplay: new re("googleplay", "Google Play", 1023, "googleplay"),
-          appStore: new re("app_store", "App Store", 102, "applestore"),
-          googlePlay: new re("ggle_play", "Google Play", 1023, "googleplay"),
-          pcalt: new re("pcalt", "PC Enhanced", 22, "sc")
+      const re = Object.freeze({
+          pc: new ae("pc", "PC Legacy", 8, "sc"),
+          ps: new ae("ps", "PlayStation", 3, "np", "ps"),
+          ps3: new ae("ps3", "PlayStation 3", 2, "np", "ps"),
+          ps4: new ae("ps4", "PlayStation 4", 11, "np", "ps"),
+          ps5: new ae("ps5", "PlayStation 5", 20, "np", "ps"),
+          xbox: new ae("xbox", "Xbox", 4, "xbl"),
+          xbox360: new ae("xbox360", "Xbox 360", 1, "xbl"),
+          xboxone: new ae("xboxone", "Xbox One", 12, "xbl"),
+          xboxsx: new ae("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
+          switch: new ae("switch", "Nintendo Switch™", 18, "nintendoswitch"),
+          nintendoswitch: new ae("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
+          applestore: new ae("applestore", "App Store", 102, "applestore"),
+          googleplay: new ae("googleplay", "Google Play", 1023, "googleplay"),
+          appStore: new ae("app_store", "App Store", 102, "applestore"),
+          googlePlay: new ae("ggle_play", "Google Play", 1023, "googleplay"),
+          pcalt: new ae("pcalt", "PC Enhanced", 22, "sc")
         }),
-        ae = Object.freeze(Object.values(se));
+        se = Object.freeze(Object.values(re));
 
       function ie(e) {
         if (!e) return;
-        if (e instanceof re) return e;
+        if (e instanceof ae) return e;
         const t = e.toString().toLowerCase();
-        return ae.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
+        return se.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
       var de = o(23058);
       const le = () => {
@@ -498,8 +498,8 @@ try {
           const t = document.cookie.split("; "),
             o = `${e}=`,
             n = t.find(e => e.startsWith(o)),
-            r = n?.substring(o.length, n.length);
-          return r
+            a = n?.substring(o.length, n.length);
+          return a
         },
         ue = (e, t) => {
           e && void 0 !== t && (0, de.canStoreCookie)(e) && ce(e) !== t && (document.cookie = `${e}=${t}; domain=${le()}; path=/;`)
@@ -518,7 +518,7 @@ try {
           path: "https://media-rockstargames-com.akamaized.net"
         }],
         fe = (e = !0) => me.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
-        we = e => {
+        be = e => {
           e.preventDefault();
           const t = e.currentTarget.href,
             o = (e => {
@@ -537,8 +537,8 @@ try {
             console.log(e)
           })
         },
-        be = () => [se.xbox360.name, se.xboxone.name, se.ps3.name, se.ps4.name, se.pc.name],
-        ve = () => [se.xboxsx.name, se.ps5.name, se.pcalt.name],
+        we = () => [re.xbox360.name, re.xboxone.name, re.ps3.name, re.ps4.name, re.pc.name],
+        ve = () => [re.xboxsx.name, re.ps5.name, re.pcalt.name],
         xe = e => ve().includes(e),
         ye = e => {
           const t = new Map([
@@ -581,11 +581,11 @@ try {
           }
         }))(e, t),
         Le = (e, t = 250) => o => ((e, t, o) => {
-          const [n, r] = (0, w.useState)(t), s = e => {
+          const [n, a] = (0, b.useState)(t), r = e => {
             let t = e;
             const o = t?.items;
             if (o?.length) {
-              const e = o.map(e => s(e));
+              const e = o.map(e => r(e));
               t = {
                 ...t,
                 items: e
@@ -599,9 +599,9 @@ try {
               }
             }), t) : t
           };
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             const e = (0, g.debounce)(() => {
-              r(s(t))
+              a(r(t))
             }, o);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           }), (0, f.jsx)(e, {
@@ -640,16 +640,16 @@ query Translations($locale: String!, $config: String!) {
         qe = o(52746),
         De = o(54812);
       const Ue = (0, h.A)({
-          context: (0, w.createContext)({}),
+          context: (0, b.createContext)({}),
           key: "gtmDatalayer"
         }),
-        Be = () => (0, w.useContext)(Ue),
+        Be = () => (0, b.useContext)(Ue),
         Fe = ({
           children: e,
           ...t
         }) => {
           const o = Be() ?? {},
-            n = (0, w.useMemo)(() => ({
+            n = (0, b.useMemo)(() => ({
               ...o,
               ...t
             }), [o, t]);
@@ -664,7 +664,7 @@ query Translations($locale: String!, $config: String!) {
           const {
             pathname: o
           } = (0, Ne.useLocation)();
-          return (0, w.useEffect)(() => {
+          return (0, b.useEffect)(() => {
             Ee({
               event: "trackPageview"
             })
@@ -706,7 +706,7 @@ query Translations($locale: String!, $config: String!) {
           }), Je(o), o
         },
         He = () => ({
-          webSettings: (0, b.q)(Je),
+          webSettings: (0, w.q)(Je),
           webSettingsReactive: Je,
           mutateWebSettings: Qe
         });

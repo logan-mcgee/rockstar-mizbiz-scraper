@@ -19,8 +19,8 @@ try {
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
-        c = Symbol.for("react.provider"),
-        i = Symbol.for("react.context"),
+        i = Symbol.for("react.provider"),
+        c = Symbol.for("react.context"),
         f = Symbol.for("react.forward_ref"),
         s = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
@@ -69,22 +69,22 @@ try {
       function R(e, t, n) {
         var o, u = {},
           a = null,
-          c = null;
+          i = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (c = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
-        var i = arguments.length - 2;
-        if (1 === i) u.children = n;
-        else if (1 < i) {
-          for (var f = Array(i), s = 0; s < i; s++) f[s] = arguments[s + 2];
+          for (o in void 0 !== t.ref && (i = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
+        var c = arguments.length - 2;
+        if (1 === c) u.children = n;
+        else if (1 < c) {
+          for (var f = Array(c), s = 0; s < c; s++) f[s] = arguments[s + 2];
           u.children = f
         }
         if (e && e.defaultProps)
-          for (o in i = e.defaultProps) void 0 === u[o] && (u[o] = i[o]);
+          for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
         return {
           $$typeof: r,
           type: e,
           key: a,
-          ref: c,
+          ref: i,
           props: u,
           _owner: k.current
         }
@@ -108,23 +108,23 @@ try {
       }
 
       function I(e, t, o, u, a) {
-        var c = typeof e;
-        "undefined" !== c && "boolean" !== c || (e = null);
-        var i = !1;
-        if (null === e) i = !0;
-        else switch (c) {
+        var i = typeof e;
+        "undefined" !== i && "boolean" !== i || (e = null);
+        var c = !1;
+        if (null === e) c = !0;
+        else switch (i) {
           case "string":
           case "number":
-            i = !0;
+            c = !0;
             break;
           case "object":
             switch (e.$$typeof) {
               case r:
               case n:
-                i = !0
+                c = !0
             }
         }
-        if (i) return a = a(i = e), e = "" === u ? "." + j(i, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", function(e) {
+        if (c) return a = a(c = e), e = "" === u ? "." + j(c, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", function(e) {
           return e
         })) : null != a && ($(a) && (a = function(e, t) {
           return {
@@ -135,17 +135,17 @@ try {
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || i && i.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
-        if (i = 0, u = "" === u ? "." : u + ":", g(e))
+        }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
+        if (c = 0, u = "" === u ? "." : u + ":", g(e))
           for (var f = 0; f < e.length; f++) {
-            var s = u + j(c = e[f], f);
-            i += I(c, t, o, s, a)
+            var s = u + j(i = e[f], f);
+            c += I(i, t, o, s, a)
           } else if (s = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof s)
-            for (e = s.call(e), f = 0; !(c = e.next()).done;) i += I(c = c.value, t, o, s = u + j(c, f++), a);
-          else if ("object" === c) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
-        return i
+            for (e = s.call(e), f = 0; !(i = e.next()).done;) c += I(i = i.value, t, o, s = u + j(i, f++), a);
+          else if ("object" === i) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+        return c
       }
 
       function O(e, t, r) {
@@ -211,17 +211,17 @@ try {
         var o = b({}, e.props),
           u = e.key,
           a = e.ref,
-          c = e._owner;
+          i = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, c = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var i = e.type.defaultProps;
-          for (f in t) S.call(t, f) && !E.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== i ? i[f] : t[f])
+          if (void 0 !== t.ref && (a = t.ref, i = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
+          for (f in t) S.call(t, f) && !E.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== c ? c[f] : t[f])
         }
         var f = arguments.length - 2;
         if (1 === f) o.children = n;
         else if (1 < f) {
-          i = Array(f);
-          for (var s = 0; s < f; s++) i[s] = arguments[s + 2];
-          o.children = i
+          c = Array(f);
+          for (var s = 0; s < f; s++) c[s] = arguments[s + 2];
+          o.children = c
         }
         return {
           $$typeof: r,
@@ -229,11 +229,11 @@ try {
           key: u,
           ref: a,
           props: o,
-          _owner: c
+          _owner: i
         }
       }, t.createContext = function(e) {
         return (e = {
-          $$typeof: i,
+          $$typeof: c,
           _currentValue: e,
           _currentValue2: e,
           _threadCount: 0,
@@ -242,7 +242,7 @@ try {
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: c,
+          $$typeof: i,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {

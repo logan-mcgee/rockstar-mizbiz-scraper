@@ -218,8 +218,8 @@ try {
         S1: () => r,
         XC: () => p,
         jS: () => m,
-        qg: () => c,
-        z0: () => d
+        qg: () => d,
+        z0: () => c
       });
       var l = t(93082),
         n = t(13331),
@@ -239,33 +239,33 @@ try {
           desktop: r = null,
           imageDesktopStyle: s = {},
           ariaLabel: m = null,
-          sources: c = null,
-          prod: d = null
+          sources: d = null,
+          prod: c = null
         }) => {
           const p = (0, n.useLocale)(),
             {
               meta: u = {}
             } = (0, o.i)() ?? {},
-            [b, g] = (0, l.useState)(d ?? u?.cdn ?? u?.prod ?? !0);
+            [b, g] = (0, l.useState)(c ?? u?.cdn ?? u?.prod ?? !0);
           (0, l.useEffect)(() => {
-            g(d ?? u?.cdn ?? u?.prod ?? !0)
-          }, [d, u]);
+            g(c ?? u?.cdn ?? u?.prod ?? !0)
+          }, [c, u]);
           const h = (0, l.useCallback)(e => {
-            const a = null !== c,
+            const a = null !== d,
               t = e?.previewSrc ?? e ?? null;
             if (null === t || "string" != typeof t) return null;
             if (t.startsWith("http")) return i(t);
             const l = `${a?(0,n.getCdnPrefix)(b):""}${t}`;
             return i(l)
-          }, [b, c]);
+          }, [b, d]);
           return {
             alt: e,
             ariaLabel: m,
             src: {
-              mobile: h(c?.[p]?.mobile ?? c?.en_us?.mobile ?? a),
-              imageMobileStyle: c?.[p]?.imageMobileStyle ?? c?.en_us?.imageMobileStyle ?? t,
-              imageDesktopStyle: c?.[p]?.imageDesktopStyle ?? c?.en_us?.imageDesktopStyle ?? s,
-              desktop: h(c?.[p]?.desktop ?? c?.en_us?.desktop ?? r)
+              mobile: h(d?.[p]?.mobile ?? d?.en_us?.mobile ?? a),
+              imageMobileStyle: d?.[p]?.imageMobileStyle ?? d?.en_us?.imageMobileStyle ?? t,
+              imageDesktopStyle: d?.[p]?.imageDesktopStyle ?? d?.en_us?.imageDesktopStyle ?? s,
+              desktop: h(d?.[p]?.desktop ?? d?.en_us?.desktop ?? r)
             }
           }
         },
@@ -290,8 +290,8 @@ try {
             return e ? e?.startsWith("http") ? i(e) : i(`${(0,n.getCdnPrefix)(l)}${e}`) : null
           }, [t])
         },
-        c = e => e.full_src,
-        d = e => {
+        d = e => e.full_src,
+        c = e => {
           const a = e?.previewSrc ?? e?.preview_src ?? e;
           return a?.startsWith("http") ? a : `${(0,n.getCdnPrefix)(!1)}${a}`
         },
@@ -301,7 +301,7 @@ try {
       "use strict";
       t.d(a, {
         SF: () => r,
-        F2: () => de,
+        F2: () => ce,
         Ju: () => p,
         cn: () => be,
         ml: () => ve,
@@ -331,7 +331,7 @@ try {
         sV: () => Qe,
         Oy: () => ba,
         JP: () => Pe,
-        sE: () => ce,
+        sE: () => de,
         Qw: () => n,
         ZH: () => o,
         UP: () => Ze,
@@ -387,7 +387,7 @@ try {
             component: "color"
           }]
         }],
-        c = (e = {
+        d = (e = {
           parent: "",
           post: null,
           filter: null
@@ -418,7 +418,7 @@ try {
             component: "text"
           }], t
         },
-        d = (e = {
+        c = (e = {
           parent: "",
           post: null,
           filter: null
@@ -1099,9 +1099,9 @@ try {
               ...u("Background..")
             }, ...m({
               filter: e
-            }), ...c({
-              filter: e
             }), ...d({
+              filter: e
+            }), ...c({
               filter: e
             }), {
               ...b("Background")
@@ -1171,7 +1171,7 @@ try {
             ...D
           }), "title" === e && (r.push(K), r.push(J)), r
         },
-        ce = ({
+        de = ({
           filter: e = null,
           name: a = "style",
           label: t = "CSS Variables"
@@ -1184,7 +1184,7 @@ try {
             filter: e
           })]
         }),
-        de = ({
+        ce = ({
           parent: e = null,
           filter: a = null
         }) => ({
@@ -1214,7 +1214,7 @@ try {
             component: "toggle"
           }, r({
             parent: e
-          }), ce({
+          }), de({
             filter: a
           })]
         }),
@@ -1446,11 +1446,11 @@ try {
             uploadDir: ue.XC,
             parse: ue.qg,
             previewSrc: ue.z0
-          }, ce({
+          }, de({
             name: "imageMobileStyle",
             label: "Mobile CSS Style",
             filter: "image"
-          }), ce({
+          }), de({
             name: "imageDesktopStyle",
             label: "Desktop CSS Style",
             filter: "image"
@@ -1919,7 +1919,7 @@ try {
             label: "Link",
             name: "to",
             component: "text"
-          }), ce({
+          }), de({
             filter: "title"
           })), {
             label: "Image/Title/Text Block",
@@ -2479,7 +2479,7 @@ try {
           component: sa,
           clearable: !0
         }),
-        ca = ({
+        da = ({
           name: e,
           label: a = e
         }) => ({
@@ -2505,7 +2505,7 @@ try {
             previewSrc: ue.z0
           }]
         }),
-        da = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        ca = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
         pa = ({
           name: e = "image",
           label: a = "Image configuration"
@@ -2517,7 +2517,7 @@ try {
             name: "alt",
             label: "Alt Text",
             component: "text"
-          }), ca({
+          }), da({
             name: "sources.en_us",
             label: "Upload global images"
           }), {
@@ -2525,7 +2525,7 @@ try {
             label: "Upload local images",
             description: "The site will default to the global value, but use a local one on local sites if it exists here.",
             component: "group",
-            fields: da.map(e => ca({
+            fields: ca.map(e => da({
               name: e
             }))
           }, va({
@@ -2604,8 +2604,8 @@ try {
         field: r,
         input: s,
         meta: m,
-        name: c,
-        label: d,
+        name: d,
+        label: c,
         description: p,
         error: u,
         children: b
@@ -2625,8 +2625,8 @@ try {
           style: e,
           children: [(0, l.jsxs)("label", {
             className: "rockstargames-sites-gta-gen9ceac2b2784e621f05ce51dade558df8d FieldLabel-sc-custom dzLxXV",
-            htmlFor: c ?? r?.name,
-            children: [d ?? r?.label, (0, l.jsx)("span", {
+            htmlFor: d ?? r?.name,
+            children: [c ?? r?.label, (0, l.jsx)("span", {
               className: "rockstargames-sites-gta-gen9a0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
               children: p ?? r?.description
             })]

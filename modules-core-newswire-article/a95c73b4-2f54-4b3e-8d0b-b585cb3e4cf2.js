@@ -55,21 +55,21 @@ try {
               ...g,
               url: f
             }),
-            y = await (0, r.sc)(v);
+            b = await (0, r.sc)(v);
           if (w) {
-            if (l[y]?.response) return l[y].response;
-            if (l[y]?.loading) return {
+            if (l[b]?.response) return l[b].response;
+            if (l[b]?.loading) return {
               error: null,
               result: null
             };
-            l[y] = {
+            l[b] = {
               loading: !0
             }
           }
-          const b = await fetch(f, g);
-          if (!b.ok) throw new Error(`ScApi fetch error for ${e} with status code ${b.status}`);
-          const k = await b.json();
-          return w && (l[y] = {
+          const y = await fetch(f, g);
+          if (!y.ok) throw new Error(`ScApi fetch error for ${e} with status code ${y.status}`);
+          const k = await y.json();
+          return w && (l[b] = {
             response: k,
             loading: !1
           }), k
@@ -134,7 +134,7 @@ try {
             p = r?.clientId ?? n,
             g = o?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
-            y = o?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = o?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
@@ -152,7 +152,7 @@ try {
             signup: `https://${h}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${g}/auth/gateway.json`,
             logout: `https://${g}/auth/sc-auth-logout`,
-            pingBearer: `https://${g}/${y}`,
+            pingBearer: `https://${g}/${b}`,
             authCookieName: "BearerToken"
           }
         },
@@ -232,7 +232,7 @@ try {
         vx: () => E,
         sb: () => x,
         Ym: () => a.A,
-        CA: () => y.useNewswirePost,
+        CA: () => b.useNewswirePost,
         OG: () => i,
         ZC: () => d,
         sq: () => u,
@@ -360,13 +360,13 @@ try {
             }
           }, [e, t]), (0, s.useMemo)(() => ({}), [])
         };
-      var y = n(22636),
-        b = (n(17714), n(93022));
+      var b = n(22636),
+        y = (n(17714), n(93022));
       const k = e => {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, a.A)(), o = (0, b.t)(r);
+        } = (0, h.A)(), r = (0, a.A)(), o = (0, y.t)(r);
         let s = "";
         return s += "lang=" + encodeURIComponent(o), s += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${s}`,

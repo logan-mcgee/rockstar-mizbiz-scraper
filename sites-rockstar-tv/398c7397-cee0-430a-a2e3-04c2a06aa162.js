@@ -26,15 +26,15 @@ try {
         ResizeProvider: () => Lt,
         RockstarGraphProvider: () => ge,
         RockstarTokenProvider: () => W,
-        ScrollProvider: () => yt,
+        ScrollProvider: () => kt,
         coreScApiFetch: () => v,
-        createDeferredScrollTriggerRefresh: () => k,
+        createDeferredScrollTriggerRefresh: () => x,
         cx: () => r,
         detectIfWeShouldAnchorSomewhere: () => Te,
         downloadFile: () => De,
         findPlatform: () => Ae,
         generateTpaLink: () => Oe,
-        getAccentColor: () => b,
+        getAccentColor: () => y,
         getBase: () => S,
         getCdnPrefix: () => _e,
         getConfigForDomain: () => m,
@@ -50,13 +50,13 @@ try {
         makeVar: () => _.UT,
         mutateWebSettings: () => Xt,
         newswirePost: () => o,
-        oneTrustInit: () => ke,
+        oneTrustInit: () => xe,
         safeStyles: () => T,
         scrollToElement: () => Ce,
         setContextItem: () => L,
         setCookieValue: () => Be,
         setMakeVarItem: () => R,
-        supportedBrowsers: () => xe,
+        supportedBrowsers: () => be,
         toScLocaleString: () => g,
         track: () => Ye,
         useApolloClient: () => ue,
@@ -84,8 +84,8 @@ try {
         useRockstarTokenReactive: () => J,
         useRockstarWebSettings: () => Qt,
         useScApi: () => ht,
-        useScAuthLinks: () => bt,
-        useScroll: () => kt,
+        useScAuthLinks: () => yt,
+        useScroll: () => xt,
         useScrollTracking: () => qt,
         useScrollVisibility: () => Ut,
         useState: () => B,
@@ -100,11 +100,11 @@ try {
       });
       var r = {};
       n.r(r), n.d(r, {
-        default: () => y
+        default: () => k
       });
       var o = {};
       n.r(o), n.d(o, {
-        Consumer: () => be,
+        Consumer: () => ye,
         Provider: () => Se,
         useNewswirePost: () => Ee
       });
@@ -133,7 +133,7 @@ try {
             w = d?.clientId ?? n,
             f = l?.marketingAuthTLD ?? h,
             v = d?.scHost ?? a,
-            x = l?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+            b = l?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
             graphEnv: d?.graphEnv ?? o,
@@ -151,7 +151,7 @@ try {
             signup: `https://${g}.rockstargames.com/create/?cid=${w}`,
             gateway: `https://${f}/auth/gateway.json`,
             logout: `https://${f}/auth/sc-auth-logout`,
-            pingBearer: `https://${f}/${x}`,
+            pingBearer: `https://${f}/${b}`,
             authCookieName: "BearerToken"
           }
         },
@@ -231,36 +231,36 @@ try {
                 ...g,
                 url: h
               }),
-              x = await (0, s.sc)(v);
+              b = await (0, s.sc)(v);
             if (d) {
-              if (f[x]?.response) return f[x].response;
-              if (f[x]?.loading) return {
+              if (f[b]?.response) return f[b].response;
+              if (f[b]?.loading) return {
                 error: null,
                 result: null
               };
-              f[x] = {
+              f[b] = {
                 loading: !0
               }
             }
-            const k = await fetch(h, g);
-            if (!k.ok) throw new Error(`ScApi fetch error for ${e} with status code ${k.status}`);
-            const y = await k.json();
-            return d && (f[x] = {
-              response: y,
+            const x = await fetch(h, g);
+            if (!x.ok) throw new Error(`ScApi fetch error for ${e} with status code ${x.status}`);
+            const k = await x.json();
+            return d && (f[b] = {
+              response: k,
               loading: !1
-            }), y
+            }), k
           } catch (t) {
             console.error(`ScApi fetch error ${e}:`, t)
           }
         };
-      var x = n(7978);
-      const k = () => {
+      var b = n(7978);
+      const x = () => {
           let e = 0;
           return {
             refresh: () => {
               cancelAnimationFrame(e), e = requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
-                  x.u.refresh()
+                  b.u.refresh()
                 })
               })
             },
@@ -269,8 +269,8 @@ try {
             }
           }
         },
-        y = (...e) => e.filter(Boolean).join(" "),
-        b = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17",
+        k = (...e) => e.filter(Boolean).join(" "),
+        y = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17",
         S = () => {
           const e = document.currentScript,
             t = e?.src ? new URL(e.src).origin : "";
@@ -594,8 +594,8 @@ try {
             })
           }
         },
-        xe = /Edge?\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[5-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(17\.([6-9]|\d{2,})|(1[89]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}[3-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[6-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/,
-        ke = ({
+        be = /Edge?\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[5-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(17\.([6-9]|\d{2,})|(1[89]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}[3-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[6-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/,
+        xe = ({
           id: e,
           init: t
         }) => {
@@ -604,21 +604,21 @@ try {
             n.onload = () => t(), n.onerror = () => t(), n.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", n.setAttribute("data-domain-script", e), n.setAttribute("data-document-language", "true"), document.head.appendChild(n)
           } else t()
         },
-        ye = L({
+        ke = L({
           context: (0, q.createContext)(null),
           key: "newswirePost"
         }),
         {
-          Consumer: be
-        } = ye,
+          Consumer: ye
+        } = ke,
         Se = ({
           article: e,
           children: t
-        }) => (0, A.jsx)(ye.Provider, {
+        }) => (0, A.jsx)(ke.Provider, {
           value: e,
           children: t
         }),
-        Ee = () => (0, q.useContext)(ye),
+        Ee = () => (0, q.useContext)(ke),
         Ce = ({
           element: e
         }) => {
@@ -957,12 +957,12 @@ query Translations($locale: String!, $config: String!) {
           value: (0, _.UT)(!1)
         }),
         vt = e => ft(e),
-        xt = L({
+        bt = L({
           context: (0, q.createContext)(null),
           key: "scrollContext"
         }),
-        kt = () => (0, q.useContext)(xt),
-        yt = ({
+        xt = () => (0, q.useContext)(bt),
+        kt = ({
           children: e
         }) => {
           const [t, n] = (0, q.useState)(window.pageYOffset), [r, o] = (0, q.useState)(null), [s, a] = (0, q.useState)(!1), i = (0, U.q)(ft);
@@ -982,7 +982,7 @@ query Translations($locale: String!, $config: String!) {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [s, i]), (0, q.useMemo)(() => (0, A.jsx)(xt.Provider, {
+          }, [s, i]), (0, q.useMemo)(() => (0, A.jsx)(bt.Provider, {
             value: {
               freezeUserShouldSeeMore: i,
               pageYOffset: t,
@@ -993,7 +993,7 @@ query Translations($locale: String!, $config: String!) {
             children: e
           }), [i, t, d, r])
         },
-        bt = e => {
+        yt = e => {
           const {
             signup: t,
             login: n

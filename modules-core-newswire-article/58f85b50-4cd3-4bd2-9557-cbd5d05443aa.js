@@ -221,7 +221,7 @@ try {
         usePrunedTinaKeys: () => m,
         useTinaComponents: () => c,
         useTinaPayload: () => u.i,
-        useTranslations: () => _
+        useTranslations: () => b
       });
       var r = n(39793),
         a = n(93082),
@@ -248,7 +248,7 @@ try {
       var f = n(97773),
         y = n.n(f),
         g = n(76589);
-      const _ = ({
+      const b = ({
         payload: e,
         variables: t
       }) => {
@@ -272,7 +272,7 @@ try {
           })(n)
         }), a
       };
-      var b = n(39279),
+      var _ = n(39279),
         h = n(82199);
       const S = {
           event: "page_section_impression",
@@ -344,7 +344,7 @@ try {
                   }
                 }),
                 p = [...l?.translations ?? []].reverse(),
-                m = `componentProps_${(0,b.A)()}`;
+                m = `componentProps_${(0,_.A)()}`;
               return (0, a.createElement)(u, {
                 ...t?.meta,
                 ...l,
@@ -405,7 +405,7 @@ try {
             }, [e]), t
           })({
             payload: l
-          }), g = _({
+          }), g = b({
             payload: l,
             variables: p
           });

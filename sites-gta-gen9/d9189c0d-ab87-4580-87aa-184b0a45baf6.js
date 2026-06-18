@@ -15,7 +15,7 @@ try {
   [6825, 9206], {
     99206(e, t, n) {
       n.r(t), n.d(t, {
-        useGSAP: () => l
+        useGSAP: () => i
       });
       var d = n(93082),
         a = n(35812);
@@ -23,24 +23,24 @@ try {
         r = e => e && !Array.isArray(e) && "object" == typeof e,
         o = [],
         f = {},
-        c = a.default;
-      const l = (e, t = o) => {
+        l = a.default;
+      const i = (e, t = o) => {
         let n = f;
         r(e) ? (n = e, e = null, t = "dependencies" in n ? n.dependencies : o) : r(t) && (n = t, t = "dependencies" in n ? n.dependencies : o), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: a,
-          revertOnUpdate: l
-        } = n, i = (0, d.useRef)(!1), u = (0, d.useRef)(c.context(() => {}, a)), b = (0, d.useRef)(e => u.current.add(null, e)), g = t && t.length && !l;
-        return g && s(() => (i.current = !0, () => u.current.revert()), o), s(() => {
-          if (e && u.current.add(e, a), !g || !i.current) return () => u.current.revert()
+          revertOnUpdate: i
+        } = n, u = (0, d.useRef)(!1), c = (0, d.useRef)(l.context(() => {}, a)), b = (0, d.useRef)(e => c.current.add(null, e)), g = t && t.length && !i;
+        return g && s(() => (u.current = !0, () => c.current.revert()), o), s(() => {
+          if (e && c.current.add(e, a), !g || !u.current) return () => c.current.revert()
         }, t), {
-          context: u.current,
+          context: c.current,
           contextSafe: b.current
         }
       };
-      l.register = e => {
-        c = e
-      }, l.headless = !0
+      i.register = e => {
+        l = e
+      }, i.headless = !0
     }
   }
 ]);

@@ -15,32 +15,32 @@ try {
   [206, 825], {
     9206(e, n, t) {
       t.r(n), t.d(n, {
-        useGSAP: () => c
+        useGSAP: () => u
       });
       var d = t(3082),
         r = t(5812);
       let o = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
-        a = [],
-        f = {},
-        l = r.default;
-      const c = (e, n = a) => {
-        let t = f;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : a) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : a), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        a = e => e && !Array.isArray(e) && "object" == typeof e,
+        s = [],
+        l = {},
+        f = r.default;
+      const u = (e, n = s) => {
+        let t = l;
+        a(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : s) : a(n) && (t = n, n = "dependencies" in t ? t.dependencies : s), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: r,
-          revertOnUpdate: c
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, r)), b = (0, d.useRef)(e => i.current.add(null, e)), y = n && n.length && !c;
-        return y && o(() => (u.current = !0, () => i.current.revert()), a), o(() => {
-          if (e && i.current.add(e, r), !y || !u.current) return () => i.current.revert()
+          revertOnUpdate: u
+        } = t, i = (0, d.useRef)(!1), b = (0, d.useRef)(f.context(() => {}, r)), c = (0, d.useRef)(e => b.current.add(null, e)), y = n && n.length && !u;
+        return y && o(() => (i.current = !0, () => b.current.revert()), s), o(() => {
+          if (e && b.current.add(e, r), !y || !i.current) return () => b.current.revert()
         }, n), {
-          context: i.current,
-          contextSafe: b.current
+          context: b.current,
+          contextSafe: c.current
         }
       };
-      c.register = e => {
-        l = e
-      }, c.headless = !0
+      u.register = e => {
+        f = e
+      }, u.headless = !0
     }
   }
 ]);

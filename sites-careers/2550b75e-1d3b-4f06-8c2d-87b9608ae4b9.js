@@ -15,14 +15,14 @@ try {
   [331], {
     55(e, t, n) {
       "use strict";
-      var s = n(2528);
+      var a = n(2528);
 
-      function a() {}
+      function s() {}
 
       function o() {}
-      o.resetWarningCache = a, e.exports = function() {
-        function e(e, t, n, a, o, r) {
-          if (r !== s) {
+      o.resetWarningCache = s, e.exports = function() {
+        function e(e, t, n, s, o, r) {
+          if (r !== a) {
             var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw d.name = "Invariant Violation", d
           }
@@ -53,7 +53,7 @@ try {
           shape: t,
           exact: t,
           checkPropTypes: o,
-          resetWarningCache: a
+          resetWarningCache: s
         };
         return n.PropTypes = n, n
       }

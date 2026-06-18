@@ -40,7 +40,7 @@ try {
     },
     53846(e, n, r) {
       r.d(n, {
-        $: () => b
+        $: () => g
       });
       var t = r(51177),
         i = r(23023),
@@ -57,14 +57,14 @@ try {
         h = r(67122),
         m = r(42846),
         y = r(76408),
-        g = (0, i.no)(function() {
+        b = (0, i.no)(function() {
           return fetch
         }),
-        b = function(e) {
+        g = function(e) {
           void 0 === e && (e = {});
           var n = e.uri,
             r = void 0 === n ? "/graphql" : n,
-            b = e.fetch,
+            g = e.fetch,
             E = e.print,
             w = void 0 === E ? d.i1 : E,
             _ = e.includeExtensions,
@@ -73,7 +73,7 @@ try {
             k = e.includeUnusedVariables,
             I = void 0 !== k && k,
             N = (0, t.Tt)(e, ["uri", "fetch", "print", "includeExtensions", "preserveHeaderCase", "useGETForQueries", "includeUnusedVariables"]);
-          !1 !== globalThis.__DEV__ && (0, f.S)(b || g);
+          !1 !== globalThis.__DEV__ && (0, f.S)(g || b);
           var S = {
             http: {
               includeExtensions: _,
@@ -137,9 +137,9 @@ try {
               return (0, p.N)(J)
             }
             return new u.c(function(r) {
-              var t = b || (0, i.no)(function() {
+              var t = g || (0, i.no)(function() {
                   return fetch
-                }) || g,
+                }) || b,
                 a = r.next.bind(r);
               return t(n, F).then(function(n) {
                   var r;
@@ -283,7 +283,7 @@ try {
 
       function f(e, n) {
         return (0, t.sH)(this, void 0, void 0, function() {
-          var r, i, a, u, c, f, p, h, m, y, g, b, E, w, _, O, C, k, I, N, S, x, T, D;
+          var r, i, a, u, c, f, p, h, m, y, b, g, E, w, _, O, C, k, I, N, S, x, T, D;
           return (0, t.YH)(this, function(V) {
             switch (V.label) {
               case 0:
@@ -292,7 +292,7 @@ try {
               case 1:
                 return h ? [4, p.next()] : [3, 3];
               case 2:
-                for (m = V.sent(), y = m.value, g = m.done, b = "string" == typeof y ? y : r.decode(y), E = f.length - c.length + 1, h = !g, w = (f += b).indexOf(c, E); w > -1;) {
+                for (m = V.sent(), y = m.value, b = m.done, g = "string" == typeof y ? y : r.decode(y), E = f.length - c.length + 1, h = !b, w = (f += g).indexOf(c, E); w > -1;) {
                   if (_ = void 0, x = [f.slice(0, w), f.slice(w + c.length)], f = x[1], O = (_ = x[0]).indexOf("\r\n\r\n"), C = d(_.slice(0, O)), (k = C["content-type"]) && -1 === k.toLowerCase().indexOf("application/json")) throw new Error("Unsupported patch content type: application/json is required.");
                   if (I = _.slice(O))
                     if (N = v(e, I), Object.keys(N).length > 1 || "data" in N || "incremental" in N || "errors" in N || "payload" in N)
@@ -699,7 +699,7 @@ try {
         XY: () => h,
         er: () => y,
         iz: () => p,
-        x3: () => g,
+        x3: () => b,
         zc: () => m
       });
       var t = r(51177),
@@ -756,16 +756,16 @@ try {
               t(e) && (n = r)
             }), n
           }),
-          g = function(e) {
+          b = function(e) {
             return (0, l.E)(e) && e.map(y).some(function(e) {
               return e && e.remove
             })
           },
-          b = new Map,
+          g = new Map,
           E = !1,
           w = {
             enter: function(e) {
-              if (g(e.directives)) return E = !0, null
+              if (b(e.directives)) return E = !0, null
             }
           },
           _ = (0, a.visit)(n, {
@@ -784,17 +784,17 @@ try {
             },
             FragmentSpread: {
               enter: function(e, n, r, t, i) {
-                if (g(e.directives)) return E = !0, null;
+                if (b(e.directives)) return E = !0, null;
                 var a = s(i);
                 a && a.fragmentSpreads.add(e.name.value)
               }
             },
             FragmentDefinition: {
               enter: function(e, n, r, t) {
-                b.set(JSON.stringify(t), e)
+                g.set(JSON.stringify(t), e)
               },
               leave: function(e, n, r, t) {
-                return e === b.get(JSON.stringify(t)) ? e : c > 0 && e.selectionSet.selections.every(function(e) {
+                return e === g.get(JSON.stringify(t)) ? e : c > 0 && e.selectionSet.selections.every(function(e) {
                   return e.kind === a.Kind.FIELD && "__typename" === e.name.value
                 }) ? (u(e.name.value).removed = !0, E = !0, null) : void 0
               }
@@ -893,7 +893,7 @@ try {
         }], e)
       }
 
-      function g(e) {
+      function b(e) {
         return (0, o.sw)(e), (0, a.visit)(e, {
           FragmentSpread: function(e) {
             var n;

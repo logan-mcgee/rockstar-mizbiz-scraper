@@ -148,8 +148,8 @@ try {
         return !!e && n
       }
       var w = t(32951);
-      const g = /^(on.*)$/,
-        b = /^(onPress.*)$/;
+      const b = /^(on.*)$/,
+        g = /^(onPress.*)$/;
       var h = t(31985);
       const m = ({
         inert: e,
@@ -168,7 +168,7 @@ try {
         }) {
           const t = {},
             o = {};
-          for (const r in e) Object.prototype.hasOwnProperty.call(e, r) && (b.test(r) ? n ? t[r] = e[r] : o[r] = e[r] : g.test(r) ? t[r] = e[r] : o[r] = e[r]);
+          for (const r in e) Object.prototype.hasOwnProperty.call(e, r) && (g.test(r) ? n ? t[r] = e[r] : o[r] = e[r] : b.test(r) ? t[r] = e[r] : o[r] = e[r]);
           return {
             events: t,
             others: o

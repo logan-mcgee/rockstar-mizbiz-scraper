@@ -15,7 +15,7 @@ try {
   [2860, 4053], {
     75138(e, a, s) {
       s.d(a, {
-        A: () => b
+        A: () => g
       });
       var r = s(39793),
         t = s(93082),
@@ -62,7 +62,7 @@ try {
             item: e
           })]
         }),
-        g = ({
+        b = ({
           current: e,
           total: a
         }) => (0, r.jsx)("div", {
@@ -75,12 +75,12 @@ try {
             className: "swiper-scrollbar-drag"
           })
         }),
-        b = ({
+        g = ({
           children: e,
           items: a = [],
           style: s = {},
           noInfiniteScroll: u = !1,
-          className: b = "",
+          className: g = "",
           renderTemplate: w = "standard",
           text: p,
           customSpaceBetween: h = null,
@@ -114,7 +114,7 @@ try {
             }
           };
           return (0, r.jsxs)("div", {
-            className: (0, i.default)(n.deprecatedCarousel, n[w], n.infinite_true, e ? n.renderedWithChildren : "", b),
+            className: (0, i.default)(n.deprecatedCarousel, n[w], n.infinite_true, e ? n.renderedWithChildren : "", g),
             style: s,
             "data-testid": "carousel",
             children: [(0, r.jsxs)(d.RC, {
@@ -156,7 +156,7 @@ try {
                     children: e
                   }, I && I[a]))]
                 })
-              }), (0, r.jsx)(g, {
+              }), (0, r.jsx)(b, {
                 current: j,
                 total: e ? e.length : a.length
               })]
@@ -290,25 +290,25 @@ try {
           game: m,
           noImg: u,
           columns: f,
-          mobileColumns: g
+          mobileColumns: b
         }) => {
-          const [b, w] = (0, t.useState)(null), p = a ? a.split("_#_") : e;
+          const [g, w] = (0, t.useState)(null), p = a ? a.split("_#_") : e;
           if ((0, t.useEffect)(() => {
               w(e)
             }, [e]), !a && !e) return null;
           const h = {
             color: d?.color
           };
-          return delete d?.color, f && b ? (0, r.jsx)("div", {
+          return delete d?.color, f && g ? (0, r.jsx)("div", {
             className: o.grid,
             style: {
               "--unordered-list-grid-column": f,
-              "--unordered-list-grid-column-mobile": g ?? f
+              "--unordered-list-grid-column-mobile": b ?? f
             },
             children: (0, r.jsx)("ul", {
               className: (0, i.default)(o.itemList, o.noImg, o[s], o[m]),
               style: (0, l.safeStyles)(d),
-              children: b.map((e, a) => (0, r.jsx)("li", {
+              children: g.map((e, a) => (0, r.jsx)("li", {
                 style: h,
                 dangerouslySetInnerHTML: {
                   __html: n(e.content)
@@ -396,7 +396,7 @@ try {
         m = s.n(n),
         u = s(17301),
         f = s(81270);
-      const g = ({
+      const b = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
@@ -405,7 +405,7 @@ try {
           gtm: a,
           children: s
         }) : s,
-        b = ({
+        g = ({
           to: e,
           children: a
         }) => e ? (0, r.jsx)("a", {
@@ -440,10 +440,10 @@ try {
           className: (0, f.default)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
           id: d,
           "data-testid": "standard-group-of-items",
-          children: e.map(e => (0, r.jsx)(g, {
+          children: e.map(e => (0, r.jsx)(b, {
             impressionTracking: e?.impressionTracking,
             gtm: e?.gtm,
-            children: (0, r.jsx)(b, {
+            children: (0, r.jsx)(g, {
               to: e?.to,
               children: (0, r.jsxs)("div", {
                 className: (0, f.default)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
