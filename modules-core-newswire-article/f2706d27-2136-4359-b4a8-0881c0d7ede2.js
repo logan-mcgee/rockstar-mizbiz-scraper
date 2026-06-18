@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "f2706d27-2136-4359-b4a8-0881c0d7ede2", o._sentryDebugIdIdentifier = "sentry-dbid-f2706d27-2136-4359-b4a8-0881c0d7ede2")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "f2706d27-2136-4359-b4a8-0881c0d7ede2", o._sentryDebugIdIdentifier = "sentry-dbid-f2706d27-2136-4359-b4a8-0881c0d7ede2")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [622], {
-    90622(o, e, t) {
-      t.r(e), t.d(e, {
+    90622(o, t, e) {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => h,

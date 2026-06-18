@@ -426,7 +426,7 @@ try {
           inView: v
         } = (0, s.useInView)({
           threshold: .6
-        }), [g, b] = (0, t.useState)(!1), N = (0, y.r)("resource"), _ = {
+        }), [b, g] = (0, t.useState)(!1), N = (0, y.r)("resource"), _ = {
           variables: m,
           skip: !Object.entries(m).length,
           autoSetLoading: !0
@@ -464,11 +464,11 @@ try {
             })
           }
         }, [S, w]), (0, t.useEffect)(() => {
-          v && !g && (e({
+          v && !b && (e({
             event: "page_section_impression",
             element_placement: `${c.A.additional_resources_header.defaultMessage.toLowerCase()} - resource cards`
-          }), b(!0))
-        }, [v, g]), (0, i.jsx)("div", {
+          }), g(!0))
+        }, [v, b]), (0, i.jsx)("div", {
           className: "_1betujy6 _1betujy5",
           children: (0, i.jsx)("div", {
             className: "_16vzj90",

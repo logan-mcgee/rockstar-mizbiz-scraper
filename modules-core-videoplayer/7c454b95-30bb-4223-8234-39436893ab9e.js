@@ -23,8 +23,8 @@ try {
         r = t(6388),
         d = t(7824),
         o = t(8004),
-        i = t(3331),
-        c = t(2199);
+        c = t(3331),
+        i = t(2199);
       const u = {
           agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
           bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39",
@@ -35,19 +35,19 @@ try {
           PASSED: "1",
           FAILED: "0"
         }),
-        f = (0, i.withTranslations)(({
+        f = (0, c.withTranslations)(({
           ageGatePassAge: e = 17,
           children: a,
           options: t = {},
           ga: f = {},
           t: m,
-          ...b
+          ...p
         }) => {
           const {
-            data: p
-          } = (0, c.useRockstarUser)(), {
+            data: b
+          } = (0, i.useRockstarUser)(), {
             track: y
-          } = (0, c.useGtmTrack)(), h = (0, i.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
+          } = (0, i.useGtmTrack)(), h = (0, c.getCookieValueByName)("UAGC"), [_, v] = (0, n.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
           var w;
           const [k, x] = (0, n.useState)(), I = (0, n.createRef)(), j = (0, n.createRef)(), D = (0, n.createRef)(), {
             style: E
@@ -57,7 +57,7 @@ try {
               event: "age_gate_popup",
               element_placement: f.element_placement ?? ""
             })
-          }, []), _ === g.PASSED || !1 === p?.isAMinor ? a : _ === g.FAILED ? (0, s.jsxs)("div", {
+          }, []), _ === g.PASSED || !1 === b?.isAMinor ? a : _ === g.FAILED ? (0, s.jsxs)("div", {
             className: u.agegate,
             style: E,
             children: [t?.header, (0, s.jsx)("h2", {
@@ -66,7 +66,7 @@ try {
           }) : (0, s.jsxs)("div", {
             className: u.agegate,
             style: E,
-            ...b,
+            ...p,
             children: [t?.header, (0, s.jsx)("div", {
               className: u.bg,
               style: t?.bgImg ? {
@@ -95,7 +95,7 @@ try {
                     text: "you may not view this content at this time"
                   });
                   const s = a ? "1" : "0";
-                  (0, i.setCookieValue)("UAGC", s), v(s)
+                  (0, c.setCookieValue)("UAGC", s), v(s)
                 }
               },
               "data-testid": "agegate-form",

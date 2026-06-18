@@ -15,36 +15,36 @@ try {
   [4016], {
     34016(e, t) {
       var n = [],
-        r = function() {
+        a = function() {
           var e, t;
-          for (t = 0; t < n.length; t += 1) e = n[t], a(e) && (e.style.maxWidth = "", l(e, e.clientHeight, 0, e.clientWidth))
+          for (t = 0; t < n.length; t += 1) e = n[t], l(e) && (e.style.maxWidth = "", r(e, e.clientHeight, 0, e.clientWidth))
         },
-        l = function(e, t, n, r) {
-          var a;
-          n >= r ? e.style.maxWidth = r + "px" : (a = (n + r) / 2, e.style.maxWidth = a + "px", e.clientHeight > t ? l(e, t, a + 1, r) : l(e, t, n + 1, a))
+        r = function(e, t, n, a) {
+          var l;
+          n >= a ? e.style.maxWidth = a + "px" : (l = (n + a) / 2, e.style.maxWidth = l + "px", e.clientHeight > t ? r(e, t, l + 1, a) : r(e, t, n + 1, l))
         },
-        a = function(e) {
-          var t, n, r, l, a;
-          return a = e.innerHTML, r = e.innerHTML.split(" "), (l = document.createElement("span")).id = "element-first-word", l.innerHTML = r[0], r = r.slice(1), e.innerHTML = "", e.appendChild(l), e.innerHTML += " " + r.join(" "), t = (l = document.getElementById("element-first-word")).offsetHeight, n = e.offsetHeight, e.innerHTML = a, n - 10 > t
+        l = function(e) {
+          var t, n, a, r, l;
+          return l = e.innerHTML, a = e.innerHTML.split(" "), (r = document.createElement("span")).id = "element-first-word", r.innerHTML = a[0], a = a.slice(1), e.innerHTML = "", e.appendChild(r), e.innerHTML += " " + a.join(" "), t = (r = document.getElementById("element-first-word")).offsetHeight, n = e.offsetHeight, e.innerHTML = l, n - 10 > t
         };
       t.balanceText = function(e) {
         e ? function(e) {
           selectorArray = e.split(",");
           for (var t = 0; t < selectorArray.length; t += 1)
-            for (var r = document.querySelectorAll(selectorArray[t].trim()), l = 0; l < r.length; l += 1) {
-              var a = r[l];
-              n.push(a)
+            for (var a = document.querySelectorAll(selectorArray[t].trim()), r = 0; r < a.length; r += 1) {
+              var l = a[r];
+              n.push(l)
             }
-        }(e) : n = document.querySelectorAll(".balance-text"), r();
-        var t, l, a, i, d = (t = function() {
-          r()
-        }, l = 100, function() {
+        }(e) : n = document.querySelectorAll(".balance-text"), a();
+        var t, r, l, i, d = (t = function() {
+          a()
+        }, r = 100, function() {
           var e = this,
             n = arguments,
-            r = a && !i;
+            a = l && !i;
           clearTimeout(i), i = setTimeout(function() {
-            i = null, a || t.apply(e, n)
-          }, l), r && t.apply(e, n)
+            i = null, l || t.apply(e, n)
+          }, r), a && t.apply(e, n)
         });
         window.addEventListener("resize", d)
       }

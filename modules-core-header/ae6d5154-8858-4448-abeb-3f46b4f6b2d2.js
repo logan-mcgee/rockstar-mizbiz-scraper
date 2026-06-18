@@ -109,9 +109,9 @@ try {
             h = e.children,
             v = e.className,
             g = e.removeScrollBar,
-            m = e.enabled,
-            y = e.shards,
-            b = e.sideCar,
+            b = e.enabled,
+            m = e.shards,
+            y = e.sideCar,
             w = e.noRelative,
             E = e.noIsolation,
             C = e.inert,
@@ -120,7 +120,7 @@ try {
             M = void 0 === k ? "div" : k,
             T = e.gapMode,
             R = (0, r.Tt)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noRelative", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            _ = b,
+            _ = y,
             O = function(e, t) {
               var n, r, a, c = (n = t || null, r = function(t) {
                 return e.forEach(function(e) {
@@ -157,10 +157,10 @@ try {
               }, [e]), c
             }([n, t]),
             x = (0, r.Cl)((0, r.Cl)({}, R), c);
-          return o.createElement(o.Fragment, null, m && o.createElement(_, {
+          return o.createElement(o.Fragment, null, b && o.createElement(_, {
             sideCar: d,
             removeScrollBar: g,
-            shards: y,
+            shards: m,
             noRelative: w,
             noIsolation: E,
             inert: C,
@@ -228,16 +228,16 @@ try {
             return t(n, r), null
           }
         },
-        m = {
+        b = {
           left: 0,
           top: 0,
           right: 0,
           gap: 0
         },
-        y = function(e) {
+        m = function(e) {
           return parseInt(e || "", 10) || 0
         },
-        b = g(),
+        y = g(),
         w = "data-scroll-locked",
         E = function(e, t, n, r) {
           var o = e.left,
@@ -264,13 +264,13 @@ try {
           }, []);
           var c = o.useMemo(function() {
             return function(e) {
-              if (void 0 === e && (e = "margin"), "undefined" == typeof window) return m;
+              if (void 0 === e && (e = "margin"), "undefined" == typeof window) return b;
               var t = function(e) {
                   var t = window.getComputedStyle(document.body),
                     n = t["padding" === e ? "paddingLeft" : "marginLeft"],
                     r = t["padding" === e ? "paddingTop" : "marginTop"],
                     o = t["padding" === e ? "paddingRight" : "marginRight"];
-                  return [y(n), y(r), y(o)]
+                  return [m(n), m(r), m(o)]
                 }(e),
                 n = document.documentElement.clientWidth,
                 r = window.innerWidth;
@@ -282,7 +282,7 @@ try {
               }
             }(a)
           }, [a]);
-          return o.createElement(b, {
+          return o.createElement(y, {
             styles: E(c, !t, a, n ? "" : "!important")
           })
         },
@@ -467,8 +467,8 @@ try {
             }
         }, []);
         var v = e.removeScrollBar,
-          m = e.inert;
-        return o.createElement(o.Fragment, null, m ? o.createElement(i, {
+          b = e.inert;
+        return o.createElement(o.Fragment, null, b ? o.createElement(i, {
           styles: j(c)
         }) : null, v ? o.createElement(S, {
           noRelative: e.noRelative,

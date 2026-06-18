@@ -25,7 +25,7 @@ try {
       function r(e, t) {
         for (var n = 0; n < t.length; n++) {
           var o = t[n];
-          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, c(o.key), o)
+          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, s(o.key), o)
         }
       }
 
@@ -56,13 +56,13 @@ try {
         }, u(e)
       }
 
-      function s(e, t) {
-        return s = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
+      function c(e, t) {
+        return c = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function(e, t) {
           return e.__proto__ = t, e
-        }, s(e, t)
+        }, c(e, t)
       }
 
-      function c(e) {
+      function s(e) {
         var t = function(e) {
           if ("object" != o(e) || !e) return e;
           var t = e[Symbol.toPrimitive];
@@ -97,7 +97,7 @@ try {
               var i, u = n;
               if ("string" == typeof n && !(u = null === (i = this.getDocument()) || void 0 === i ? void 0 : i.querySelector(n))) throw new Error("`".concat(e, "` as selector refers to no known node"));
               return u
-            }, (r = c(r = "getNodeForOption")) in o ? Object.defineProperty(o, r, {
+            }, (r = s(r = "getNodeForOption")) in o ? Object.defineProperty(o, r, {
               value: i,
               enumerable: !0,
               configurable: !0,
@@ -116,7 +116,7 @@ try {
               clickOutsideDeactivates: !1
             };
             var u = e.focusTrapOptions;
-            for (var s in u) Object.prototype.hasOwnProperty.call(u, s) && ("returnFocusOnDeactivate" !== s && "onDeactivate" !== s && "onPostDeactivate" !== s && "checkCanReturnFocus" !== s && "clickOutsideDeactivates" !== s ? n.internalOptions[s] = u[s] : n.originalOptions[s] = u[s]);
+            for (var c in u) Object.prototype.hasOwnProperty.call(u, c) && ("returnFocusOnDeactivate" !== c && "onDeactivate" !== c && "onPostDeactivate" !== c && "checkCanReturnFocus" !== c && "clickOutsideDeactivates" !== c ? n.internalOptions[c] = u[c] : n.originalOptions[c] = u[c]);
             return n.outsideClick = null, n.focusTrapElements = e.containerElements || [], n.updatePreviousElement(), n
           }
           return function(e, t) {
@@ -129,7 +129,7 @@ try {
               }
             }), Object.defineProperty(e, "prototype", {
               writable: !1
-            }), t && s(e, t)
+            }), t && c(e, t)
           }(t, e), n = t, (o = [{
             key: "getDocument",
             value: function() {
@@ -290,7 +290,7 @@ try {
       function a(e, t) {
         var n = "undefined" != typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
         if (!n) {
-          if (Array.isArray(e) || (n = c(e)) || t) {
+          if (Array.isArray(e) || (n = s(e)) || t) {
             n && (e = n);
             var o = 0,
               r = function() {};
@@ -367,7 +367,7 @@ try {
         return n
       }
 
-      function s(e) {
+      function c(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {};
           t % 2 ? u(Object(n), !0).forEach(function(t) {
@@ -379,7 +379,7 @@ try {
         return e
       }
 
-      function c(e, t) {
+      function s(e, t) {
         if (e) {
           if ("string" == typeof e) return r(e, t);
           var n = {}.toString.call(e).slice(8, -1);
@@ -429,7 +429,7 @@ try {
         m = function(e, t) {
           var n, i = (null == t ? void 0 : t.document) || document,
             u = (null == t ? void 0 : t.trapStack) || y,
-            m = s({
+            m = c({
               returnFocusOnDeactivate: !0,
               escapeDeactivates: !0,
               delayInitialFocus: !0,
@@ -469,13 +469,13 @@ try {
                 o = n.hasFallback,
                 a = void 0 !== o && o,
                 u = n.params,
-                s = void 0 === u ? [] : u,
+                c = void 0 === u ? [] : u,
                 l = m[e];
               if ("function" == typeof l && (l = l.apply(void 0, function(e) {
                   if (Array.isArray(e)) return r(e)
-                }(t = s) || function(e) {
+                }(t = c) || function(e) {
                   if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
-                }(t) || c(t) || function() {
+                }(t) || s(t) || function() {
                   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }())), !0 === l && (l = void 0), !l) {
                 if (void 0 === l || !1 === l) return l;
@@ -519,14 +519,14 @@ try {
                     u = n.slice().reverse().find(function(e) {
                       return (0, o.isTabbable)(e)
                     }),
-                    s = !!t.find(function(e) {
+                    c = !!t.find(function(e) {
                       return (0, o.getTabIndex)(e) > 0
                     });
                   return {
                     container: e,
                     tabbableNodes: t,
                     focusableNodes: n,
-                    posTabIndexesFound: s,
+                    posTabIndexesFound: c,
                     firstTabbableNode: r,
                     lastTabbableNode: a,
                     firstDomTabbableNode: i,
@@ -574,28 +574,28 @@ try {
               var i = null;
               if (g.tabbableGroups.length > 0) {
                 var u = O(t, n),
-                  s = u >= 0 ? g.containerGroups[u] : void 0;
+                  c = u >= 0 ? g.containerGroups[u] : void 0;
                 if (u < 0) i = a ? g.tabbableGroups[g.tabbableGroups.length - 1].lastTabbableNode : g.tabbableGroups[0].firstTabbableNode;
                 else if (a) {
-                  var c = g.tabbableGroups.findIndex(function(e) {
+                  var s = g.tabbableGroups.findIndex(function(e) {
                     var n = e.firstTabbableNode;
                     return t === n
                   });
-                  if (c < 0 && (s.container === t || (0, o.isFocusable)(t, m.tabbableOptions) && !(0, o.isTabbable)(t, m.tabbableOptions) && !s.nextTabbableNode(t, !1)) && (c = u), c >= 0) {
-                    var l = 0 === c ? g.tabbableGroups.length - 1 : c - 1,
+                  if (s < 0 && (c.container === t || (0, o.isFocusable)(t, m.tabbableOptions) && !(0, o.isTabbable)(t, m.tabbableOptions) && !c.nextTabbableNode(t, !1)) && (s = u), s >= 0) {
+                    var l = 0 === s ? g.tabbableGroups.length - 1 : s - 1,
                       f = g.tabbableGroups[l];
                     i = (0, o.getTabIndex)(t) >= 0 ? f.lastTabbableNode : f.lastDomTabbableNode
-                  } else d(n) || (i = s.nextTabbableNode(t, !1))
+                  } else d(n) || (i = c.nextTabbableNode(t, !1))
                 } else {
                   var p = g.tabbableGroups.findIndex(function(e) {
                     var n = e.lastTabbableNode;
                     return t === n
                   });
-                  if (p < 0 && (s.container === t || (0, o.isFocusable)(t, m.tabbableOptions) && !(0, o.isTabbable)(t, m.tabbableOptions) && !s.nextTabbableNode(t)) && (p = u), p >= 0) {
+                  if (p < 0 && (c.container === t || (0, o.isFocusable)(t, m.tabbableOptions) && !(0, o.isTabbable)(t, m.tabbableOptions) && !c.nextTabbableNode(t)) && (p = u), p >= 0) {
                     var v = p === g.tabbableGroups.length - 1 ? 0 : p + 1,
                       b = g.tabbableGroups[v];
                     i = (0, o.getTabIndex)(t) >= 0 ? b.firstTabbableNode : b.firstDomTabbableNode
-                  } else d(n) || (i = s.nextTabbableNode(t))
+                  } else d(n) || (i = c.nextTabbableNode(t))
                 }
               } else i = T("fallbackFocus");
               return i
@@ -619,10 +619,10 @@ try {
                     var i = O(g.mostRecentlyFocusedNode),
                       u = g.containerGroups[i].tabbableNodes;
                     if (u.length > 0) {
-                      var s = u.findIndex(function(e) {
+                      var c = u.findIndex(function(e) {
                         return e === g.mostRecentlyFocusedNode
                       });
-                      s >= 0 && (m.isKeyForward(g.recentNavEvent) ? s + 1 < u.length && (r = u[s + 1], a = !1) : s - 1 >= 0 && (r = u[s - 1], a = !1))
+                      c >= 0 && (m.isKeyForward(g.recentNavEvent) ? c + 1 < u.length && (r = u[c + 1], a = !1) : c - 1 >= 0 && (r = u[c - 1], a = !1))
                     }
                   } else g.containerGroups.some(function(e) {
                     return e.tabbableNodes.some(function(e) {
@@ -703,9 +703,9 @@ try {
               var t, o = w(e, "onActivate"),
                 r = w(e, "onPostActivate"),
                 a = w(e, "checkCanFocusTrap"),
-                s = l.getActiveTrap(u),
-                c = !1;
-              s && !s.paused && (null === (t = s._setSubtreeIsolation) || void 0 === t || t.call(s, !1), c = !0);
+                c = l.getActiveTrap(u),
+                s = !1;
+              c && !c.paused && (null === (t = c._setSubtreeIsolation) || void 0 === t || t.call(c, !1), s = !0);
               try {
                 a || S(), g.active = !0, g.paused = !1, g.nodeFocusedBeforeActivation = k(i), null == o || o();
                 var d = function() {
@@ -715,13 +715,13 @@ try {
                 d()
               } catch (e) {
                 var f;
-                throw s === l.getActiveTrap(u) && c && (null === (f = s._setSubtreeIsolation) || void 0 === f || f.call(s, !0)), e
+                throw c === l.getActiveTrap(u) && s && (null === (f = c._setSubtreeIsolation) || void 0 === f || f.call(c, !0)), e
               }
               return this
             },
             deactivate: function(e) {
               if (!g.active) return this;
-              var t = s({
+              var t = c({
                 onDeactivate: m.onDeactivate,
                 onPostDeactivate: m.onPostDeactivate,
                 checkCanReturnFocus: m.checkCanReturnFocus
@@ -732,12 +732,12 @@ try {
                 a = w(t, "checkCanReturnFocus"),
                 i = w(t, "returnFocus", "returnFocusOnDeactivate");
               null == o || o();
-              var c = function() {
+              var s = function() {
                 v(function() {
                   i && D(F(g.nodeFocusedBeforeActivation)), null == r || r()
                 })
               };
-              return i && a ? (a(F(g.nodeFocusedBeforeActivation)).then(c, c), this) : (c(), this)
+              return i && a ? (a(F(g.nodeFocusedBeforeActivation)).then(s, s), this) : (s(), this)
             },
             pause: function(e) {
               return g.active ? (g.manuallyPaused = !0, this._setPausedState(!0, e)) : this
@@ -758,11 +758,11 @@ try {
                   for (i.s(); !(t = i.n()).done;) {
                     var u = t.value;
                     o.add(u);
-                    for (var s = "undefined" != typeof ShadowRoot && u.getRootNode() instanceof ShadowRoot, c = u; c;) {
-                      o.add(c);
-                      var l = c.parentElement,
+                    for (var c = "undefined" != typeof ShadowRoot && u.getRootNode() instanceof ShadowRoot, s = u; s;) {
+                      o.add(s);
+                      var l = s.parentElement,
                         d = [];
-                      l ? d = l.children : !l && s && (d = c.getRootNode().children, l = c.getRootNode().host, s = "undefined" != typeof ShadowRoot && l.getRootNode() instanceof ShadowRoot);
+                      l ? d = l.children : !l && c && (d = s.getRootNode().children, l = s.getRootNode().host, c = "undefined" != typeof ShadowRoot && l.getRootNode() instanceof ShadowRoot);
                       var f, p = a(d);
                       try {
                         for (p.s(); !(f = p.n()).done;) {
@@ -774,7 +774,7 @@ try {
                       } finally {
                         p.f()
                       }
-                      c = l
+                      s = l
                     }
                   }
                 } catch (e) {
@@ -837,24 +837,24 @@ try {
         } : function(e) {
           return null == e ? void 0 : e.ownerDocument
         },
-        s = function(e, t) {
+        c = function(e, t) {
           var n;
           void 0 === t && (t = !0);
           var o = null == e || null === (n = e.getAttribute) || void 0 === n ? void 0 : n.call(e, "inert");
-          return "" === o || "true" === o || t && e && ("function" == typeof e.closest ? e.closest("[inert]") : s(e.parentNode))
+          return "" === o || "true" === o || t && e && ("function" == typeof e.closest ? e.closest("[inert]") : c(e.parentNode))
         },
-        c = function(e, t, n) {
-          if (s(e)) return [];
+        s = function(e, t, n) {
+          if (c(e)) return [];
           var o = Array.prototype.slice.apply(e.querySelectorAll(r));
           return t && i.call(e, r) && o.unshift(e), o.filter(n)
         },
         l = function(e, t, n) {
           for (var o = [], a = Array.from(e); a.length;) {
             var u = a.shift();
-            if (!s(u, !1))
+            if (!c(u, !1))
               if ("SLOT" === u.tagName) {
-                var c = u.assignedElements(),
-                  d = c.length ? c : u.children,
+                var s = u.assignedElements(),
+                  d = s.length ? s : u.children,
                   f = l(d, !0, n);
                 n.flatten ? o.push.apply(o, f) : o.push({
                   scopeParent: u,
@@ -863,7 +863,7 @@ try {
               } else {
                 i.call(u, r) && n.filter(u) && (t || !e.includes(u)) && o.push(u);
                 var p = u.shadowRoot || "function" == typeof n.getShadowRoot && n.getShadowRoot(u),
-                  v = !s(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(u));
+                  v = !c(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(u));
                 if (p && v) {
                   var b = l(!0 === p ? u.children : p.children, !0, n);
                   n.flatten ? o.push.apply(o, b) : o.push({
@@ -918,23 +918,23 @@ try {
             } else {
               if ("function" == typeof o) {
                 for (var a = e; e;) {
-                  var s = e.parentElement,
-                    c = u(e);
-                  if (s && !s.shadowRoot && !0 === o(s)) return b(e);
-                  e = e.assignedSlot ? e.assignedSlot : s || c === e.ownerDocument ? s : c.host
+                  var c = e.parentElement,
+                    s = u(e);
+                  if (c && !c.shadowRoot && !0 === o(c)) return b(e);
+                  e = e.assignedSlot ? e.assignedSlot : c || s === e.ownerDocument ? c : s.host
                 }
                 e = a
               }
               if (function(e) {
                   var t, n, o, r, a = e && u(e),
                     i = null === (t = a) || void 0 === t ? void 0 : t.host,
-                    s = !1;
+                    c = !1;
                   if (a && a !== e)
-                    for (s = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !s && i;) {
-                      var c, l, d;
-                      s = !(null === (l = i = null === (c = a = u(i)) || void 0 === c ? void 0 : c.host) || void 0 === l || null === (d = l.ownerDocument) || void 0 === d || !d.contains(i))
+                    for (c = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !c && i;) {
+                      var s, l, d;
+                      c = !(null === (l = i = null === (s = a = u(i)) || void 0 === s ? void 0 : s.host) || void 0 === l || null === (d = l.ownerDocument) || void 0 === d || !d.contains(i))
                     }
-                  return s
+                  return c
                 }(e)) return !e.getClientRects().length;
               if ("legacy-full" !== n) return !0
             }
@@ -1015,14 +1015,14 @@ try {
             flatten: !1,
             getShadowRoot: t.getShadowRoot,
             shadowRootFilter: m
-          }) : c(e, t.includeContainer, y.bind(null, t)), g(n)
+          }) : s(e, t.includeContainer, y.bind(null, t)), g(n)
         },
         O = function(e, t) {
           return (t = t || {}).getShadowRoot ? l([e], t.includeContainer, {
             filter: h.bind(null, t),
             flatten: !0,
             getShadowRoot: t.getShadowRoot
-          }) : c(e, t.includeContainer, h.bind(null, t))
+          }) : s(e, t.includeContainer, h.bind(null, t))
         },
         T = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");

@@ -16,9 +16,9 @@ try {
     229(o, t, e) {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => l,
-        Lightbox_Download_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Download_Button_Label: () => n,
+        Lightbox_Download_Button_Tooltip: () => l,
         Lightbox_Open_Button_Label: () => i,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => b,
@@ -31,9 +31,9 @@ try {
         default: () => L
       });
       var _ = "Close",
-        n = "Press {shortcut}",
+        a = "Press {shortcut}",
+        n = "Download",
         l = "Download",
-        a = "Download",
         i = "{description} - View image in lightbox",
         s = "Reset",
         b = "Press {shortcut}",
@@ -45,9 +45,9 @@ try {
         h = "{zoom}%",
         L = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: n,
-          Lightbox_Download_Button_Label: l,
-          Lightbox_Download_Button_Tooltip: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Download_Button_Label: n,
+          Lightbox_Download_Button_Tooltip: l,
           Lightbox_Open_Button_Label: i,
           Lightbox_Reset_Zoom_Button_Label: s,
           Lightbox_Reset_Zoom_Button_Tooltip: b,

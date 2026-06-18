@@ -65,7 +65,7 @@ try {
           }
           return e
         },
-        u = ({
+        f = ({
           getEvent: e
         }) => {
           const a = e();
@@ -73,14 +73,14 @@ try {
             dsn: i[a?.event_id ?? ""]
           }] : []
         };
-      var f = t(98485),
+      var u = t(98485),
         m = t(29613),
         _ = t(19719),
         y = t(88178),
         b = t(46287);
       const w = e => {
         const a = [];
-        return a.push((0, f.sn)()), a.push((0, m.X)()), a.push((0, _.Q)()), e?.performanceTracing?.enabled && a.push((0, y.dp)(e?.performanceTracing?.options ?? {})), e?.sessionReplay?.enabled && a.push((0, b.J$)(e?.sessionReplay?.options ?? {})), a
+        return a.push((0, u.sn)()), a.push((0, m.X)()), a.push((0, _.Q)()), e?.performanceTracing?.enabled && a.push((0, y.dp)(e?.performanceTracing?.options ?? {})), e?.sessionReplay?.enabled && a.push((0, b.J$)(e?.sessionReplay?.options ?? {})), a
       };
       var k = function(e) {
         return e.Fatal = "fatal", e.Error = "error", e.Warning = "warning", e.Log = "log", e.Info = "info", e.Debug = "debug", e
@@ -118,7 +118,7 @@ try {
               replaysOnErrorSampleRate: e.replaysOnErrorSampleRate ?? 0,
               sampleRate: e?.errorReporting?.options?.sampleRate ?? 0,
               tracePropagationTargets: e.tracePropagationTargets ?? [],
-              transport: (0, o.N)(r._, u),
+              transport: (0, o.N)(r._, f),
               tracesSampler: e.tracesSampler,
               tracesSampleRate: e.tracesSampleRate ?? 0
             };

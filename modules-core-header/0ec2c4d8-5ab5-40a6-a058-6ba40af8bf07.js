@@ -29,15 +29,15 @@ try {
       function l(e, d, n) {
         var a, r = {},
           l = null,
-          i = null;
-        for (a in void 0 !== n && (l = "" + n), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (i = d.ref), d) t.call(d, a) && !f.hasOwnProperty(a) && (r[a] = d[a]);
+          b = null;
+        for (a in void 0 !== n && (l = "" + n), void 0 !== d.key && (l = "" + d.key), void 0 !== d.ref && (b = d.ref), d) t.call(d, a) && !f.hasOwnProperty(a) && (r[a] = d[a]);
         if (e && e.defaultProps)
           for (a in d = e.defaultProps) void 0 === r[a] && (r[a] = d[a]);
         return {
           $$typeof: o,
           type: e,
           key: l,
-          ref: i,
+          ref: b,
           props: r,
           _owner: s.current
         }

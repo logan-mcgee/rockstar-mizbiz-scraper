@@ -59,10 +59,10 @@ try {
                 var p = l.shadowRoot || "function" == typeof n.getShadowRoot && n.getShadowRoot(l),
                   h = !d(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(l));
                 if (p && h) {
-                  var b = c(!0 === p ? l.children : p.children, !0, n);
-                  n.flatten ? o.push.apply(o, b) : o.push({
+                  var y = c(!0 === p ? l.children : p.children, !0, n);
+                  n.flatten ? o.push.apply(o, y) : o.push({
                     scopeParent: l,
-                    candidates: b
+                    candidates: y
                   })
                 } else i.unshift.apply(i, l.children)
               }
@@ -85,13 +85,13 @@ try {
         h = function(e) {
           return "INPUT" === e.tagName
         },
-        b = function(e) {
+        y = function(e) {
           var t = e.getBoundingClientRect(),
             n = t.width,
             o = t.height;
           return 0 === n && 0 === o
         },
-        y = function(e, t) {
+        b = function(e, t) {
           return !(t.disabled || function(e) {
             return h(e) && "hidden" === e.type
           }(t) || function(e, t) {
@@ -108,13 +108,13 @@ try {
             var r = a.call(e, "details>summary:first-of-type") ? e.parentElement : e;
             if (a.call(r, "details:not([open]) *")) return !0;
             if (n && "full" !== n && "full-native" !== n && "legacy-full" !== n) {
-              if ("non-zero-area" === n) return b(e)
+              if ("non-zero-area" === n) return y(e)
             } else {
               if ("function" == typeof o) {
                 for (var i = e; e;) {
                   var d = e.parentElement,
                     u = l(e);
-                  if (d && !d.shadowRoot && !0 === o(d)) return b(e);
+                  if (d && !d.shadowRoot && !0 === o(d)) return y(e);
                   e = e.assignedSlot ? e.assignedSlot : d || u === e.ownerDocument ? d : u.host
                 }
                 e = i
@@ -174,7 +174,7 @@ try {
               }(t, e.form);
               return !r || r === e
             }(e)
-          }(t) || s(t) < 0 || !y(e, t))
+          }(t) || s(t) < 0 || !b(e, t))
         },
         v = function(e) {
           var t = parseInt(e.getAttribute("tabindex"), 10);
@@ -213,10 +213,10 @@ try {
         },
         S = function(e, t) {
           return (t = t || {}).getShadowRoot ? c([e], t.includeContainer, {
-            filter: y.bind(null, t),
+            filter: b.bind(null, t),
             flatten: !0,
             getShadowRoot: t.getShadowRoot
-          }) : u(e, t.includeContainer, y.bind(null, t))
+          }) : u(e, t.includeContainer, b.bind(null, t))
         },
         E = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");
@@ -225,7 +225,7 @@ try {
         N = o.concat("iframe:not([inert]):not([inert] *)").join(","),
         I = function(e, t) {
           if (t = t || {}, !e) throw new Error("No node provided");
-          return !1 !== a.call(e, N) && y(t, e)
+          return !1 !== a.call(e, N) && b(t, e)
         }
     }
   }

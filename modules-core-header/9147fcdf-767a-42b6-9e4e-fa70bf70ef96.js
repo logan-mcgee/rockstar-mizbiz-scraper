@@ -14,11 +14,11 @@ try {
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [2174, 4555, 6936, 9793], {
     94931(e, o, d) {
-      var r = d(4637),
-        a = Symbol.for("react.element"),
+      var a = d(4637),
+        r = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
-        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -27,17 +27,17 @@ try {
         };
 
       function l(e, o, d) {
-        var r, n = {},
+        var a, n = {},
           l = null,
-          i = null;
-        for (r in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (i = o.ref), o) t.call(o, r) && !s.hasOwnProperty(r) && (n[r] = o[r]);
+          b = null;
+        for (a in void 0 !== d && (l = "" + d), void 0 !== o.key && (l = "" + o.key), void 0 !== o.ref && (b = o.ref), o) t.call(o, a) && !s.hasOwnProperty(a) && (n[a] = o[a]);
         if (e && e.defaultProps)
-          for (r in o = e.defaultProps) void 0 === n[r] && (n[r] = o[r]);
+          for (a in o = e.defaultProps) void 0 === n[a] && (n[a] = o[a]);
         return {
-          $$typeof: a,
+          $$typeof: r,
           type: e,
           key: l,
-          ref: i,
+          ref: b,
           props: n,
           _owner: f.current
         }

@@ -55,13 +55,13 @@ try {
       }
 
       function s(e, t, n) {
-        const [a, s] = (0, o.x)(n?.in, e, t), d = r(a, s), i = Math.abs(function(e, t, n) {
+        const [a, s] = (0, o.x)(n?.in, e, t), d = r(a, s), f = Math.abs(function(e, t, n) {
           const [a, r] = (0, o.x)(n?.in, e, t);
           return a.getFullYear() - r.getFullYear()
         }(a, s));
         a.setFullYear(1584), s.setFullYear(1584);
-        const f = d * (i - +(r(a, s) === -d));
-        return 0 === f ? 0 : f
+        const i = d * (f - +(r(a, s) === -d));
+        return 0 === i ? 0 : i
       }
     },
     7824(e, t, n) {
@@ -114,13 +114,13 @@ try {
         const {
           years: a = 0,
           months: d = 0,
-          weeks: i = 0,
-          days: f = 0,
-          hours: u = 0,
-          minutes: c = 0,
+          weeks: f = 0,
+          days: i = 0,
+          hours: c = 0,
+          minutes: u = 0,
           seconds: l = 0
-        } = t, b = r(s(e, d + 12 * a, n), f + 7 * i, n), y = 1e3 * (l + 60 * (c + 60 * u));
-        return (0, o.w)(n?.in || e, +b - y)
+        } = t, y = r(s(e, d + 12 * a, n), i + 7 * f, n), b = 1e3 * (l + 60 * (u + 60 * c));
+        return (0, o.w)(n?.in || e, +y - b)
       }
     },
     4929(e, t, n) {

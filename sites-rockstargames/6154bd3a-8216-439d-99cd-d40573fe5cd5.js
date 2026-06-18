@@ -426,9 +426,9 @@ try {
           inView: k
         } = (0, s.useInView)({
           threshold: .6
-        }), [h, v] = (0, t.useState)(!1), [g, b] = (0, t.useState)({}), N = (0, y.r)("resource"), w = {
-          variables: g,
-          skip: !Object.entries(g).length,
+        }), [h, v] = (0, t.useState)(!1), [b, g] = (0, t.useState)({}), N = (0, y.r)("resource"), w = {
+          variables: b,
+          skip: !Object.entries(b).length,
           autoSetLoading: !0
         }, {
           data: S,
@@ -441,7 +441,7 @@ try {
           content: j
         } = S?.companyInfo ?? "", D = S?.meta ?? "";
         return (0, t.useEffect)(() => {
-          b({
+          g({
             jsonType: "how-to-report",
             jsonLocale: i,
             metaUrl: "/community-resources/how-to-report",

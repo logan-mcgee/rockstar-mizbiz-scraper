@@ -15,8 +15,8 @@ try {
   [8915], {
     8915(o, e, t) {
       t.r(e), t.d(e, {
-        Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Label: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => _,
@@ -31,8 +31,8 @@ try {
         default: () => L
       });
       var _ = "{description} - Ver imagem na lightbox",
-        n = "Fechar",
-        a = "Pressionar {shortcut}",
+        a = "Fechar",
+        n = "Pressionar {shortcut}",
         i = "Aproximar zoom",
         l = "Pressionar {shortcut}",
         b = "Afastar zoom",
@@ -45,8 +45,8 @@ try {
         h = "Baixar",
         L = {
           Lightbox_Open_Button_Label: _,
-          Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Close_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,

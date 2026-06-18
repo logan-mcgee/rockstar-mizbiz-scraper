@@ -1,7 +1,7 @@
 try {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    e = (new o.Error).stack;
-  e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "c0c99e98-5c1a-4107-9c8b-07d78ef2510a", o._sentryDebugIdIdentifier = "sentry-dbid-c0c99e98-5c1a-4107-9c8b-07d78ef2510a")
+    t = (new o.Error).stack;
+  t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "c0c99e98-5c1a-4107-9c8b-07d78ef2510a", o._sentryDebugIdIdentifier = "sentry-dbid-c0c99e98-5c1a-4107-9c8b-07d78ef2510a")
 } catch (o) {} {
   let o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   o._sentryModuleMetadata = o._sentryModuleMetadata || {}, o._sentryModuleMetadata[(new o.Error).stack] = Object.assign({}, o._sentryModuleMetadata[(new o.Error).stack], {
@@ -13,8 +13,8 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [4144], {
-    34144(o, e, t) {
-      t.r(e), t.d(e, {
+    34144(o, t, e) {
+      e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => n,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => h,
@@ -28,7 +28,7 @@ try {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => f
+        default: () => c
       });
       var _ = "{description} - 在燈箱中查看圖片",
         n = "關閉",
@@ -43,7 +43,7 @@ try {
         r = "{zoom}%",
         h = "下載",
         L = "下載",
-        f = {
+        c = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: n,
           Lightbox_Close_Button_Tooltip: l,

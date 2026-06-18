@@ -13,12 +13,12 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [2174, 4555, 5047, 6936, 7428, 9793], {
-    94931(e, r, d) {
-      var o = d(4637),
-        a = Symbol.for("react.element"),
+    94931(e, r, a) {
+      var d = a(4637),
+        o = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -26,15 +26,15 @@ try {
           __source: !0
         };
 
-      function i(e, r, d) {
-        var o, t = {},
+      function i(e, r, a) {
+        var d, t = {},
           i = null,
           f = null;
-        for (o in void 0 !== d && (i = "" + d), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) n.call(r, o) && !l.hasOwnProperty(o) && (t[o] = r[o]);
+        for (d in void 0 !== a && (i = "" + a), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) n.call(r, d) && !l.hasOwnProperty(d) && (t[d] = r[d]);
         if (e && e.defaultProps)
-          for (o in r = e.defaultProps) void 0 === t[o] && (t[o] = r[o]);
+          for (d in r = e.defaultProps) void 0 === t[d] && (t[d] = r[d]);
         return {
-          $$typeof: a,
+          $$typeof: o,
           type: e,
           key: i,
           ref: f,
@@ -44,49 +44,49 @@ try {
       }
       r.Fragment = t, r.jsx = i, r.jsxs = i
     },
-    39793(e, r, d) {
-      e.exports = d(94931)
+    39793(e, r, a) {
+      e.exports = a(94931)
     },
-    66704(e, r, d) {
-      d.d(r, {
+    66704(e, r, a) {
+      a.d(r, {
         hO: () => l,
         sG: () => s
       });
-      var o = d(4637),
-        a = d(84017),
-        t = d(19394),
-        n = d(39793),
+      var d = a(4637),
+        o = a(84017),
+        t = a(19394),
+        n = a(39793),
         s = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "select", "span", "svg", "ul"].reduce((e, r) => {
-          const d = (0, t.createSlot)(`Primitive.${r}`),
-            a = o.forwardRef((e, o) => {
+          const a = (0, t.createSlot)(`Primitive.${r}`),
+            o = d.forwardRef((e, d) => {
               const {
-                asChild: a,
+                asChild: o,
                 ...t
-              } = e, s = a ? d : r;
+              } = e, s = o ? a : r;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(s, {
                 ...t,
-                ref: o
+                ref: d
               })
             });
-          return a.displayName = `Primitive.${r}`, {
+          return o.displayName = `Primitive.${r}`, {
             ...e,
-            [r]: a
+            [r]: o
           }
         }, {});
 
       function l(e, r) {
-        e && a.flushSync(() => e.dispatchEvent(r))
+        e && o.flushSync(() => e.dispatchEvent(r))
       }
     },
-    45047(e, r, d) {
-      d.r(r), d.d(r, {
+    45047(e, r, a) {
+      a.r(r), a.d(r, {
         Root: () => l,
         VISUALLY_HIDDEN_STYLES: () => n,
         VisuallyHidden: () => s
       });
-      var o = d(4637),
-        a = d(66704),
-        t = d(39793),
+      var d = a(4637),
+        o = a(66704),
+        t = a(39793),
         n = Object.freeze({
           position: "absolute",
           border: 0,
@@ -99,7 +99,7 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        s = o.forwardRef((e, r) => (0, t.jsx)(a.sG.span, {
+        s = d.forwardRef((e, r) => (0, t.jsx)(o.sG.span, {
           ...e,
           ref: r,
           style: {

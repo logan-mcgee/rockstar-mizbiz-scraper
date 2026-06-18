@@ -354,12 +354,12 @@ try {
           let t = "";
           return e && (t = g ? s(16044)(`./${d}/mobile/${p}.jpg`) : s(51048)(`./${d}/desktop/${p}.jpg`)), t || (t = s(39294)(`./${d}.jpg`), t += `?im=Resize=${a}`), t
         }, [g, d]), [f] = (0, o.usePreloadImg)(n);
-        let k = n;
+        let b = n;
         return (0, t.jsx)("div", {
           role: "img",
           "aria-label": c,
           style: {
-            backgroundImage: `url(${k})`,
+            backgroundImage: `url(${b})`,
             borderRadius: i ? "unset" : ""
           },
           className: [m.img, f ? m.startAnimation : "", e ? m.wide : ""].join(" ")

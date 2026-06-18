@@ -148,8 +148,8 @@ try {
           m = (0, o.useState)(null),
           h = m[0],
           g = m[1],
-          b = (0, o.useRef)(t),
-          v = JSON.stringify(f),
+          v = (0, o.useRef)(t),
+          b = JSON.stringify(f),
           w = JSON.stringify(null == p ? void 0 : p.parameters);
         (0, o.useEffect)(function() {
           if (t) {
@@ -162,7 +162,7 @@ try {
                     size: "invisible",
                     sitekey: t
                   }, (null == p ? void 0 : p.parameters) || {});
-                b.current = e.render(null == p ? void 0 : p.element, r)
+                v.current = e.render(null == p ? void 0 : p.element, r)
               },
               function(e) {
                 var t = e.render,
@@ -182,19 +182,19 @@ try {
                   m = s.id,
                   h = void 0 === m ? "" : m,
                   g = s.appendTo,
-                  b = h || "google-recaptcha-v3";
+                  v = h || "google-recaptcha-v3";
                 if (function(e) {
                     return !!document.querySelector("#" + e)
-                  }(b)) o();
+                  }(v)) o();
                 else {
-                  var v = function(e) {
+                  var b = function(e) {
                       return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
                     }({
                       useEnterprise: c,
                       useRecaptchaNet: a
                     }),
                     w = document.createElement("script");
-                  w.id = b, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+                  w.id = v, w.src = b + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
                 }
               }({
                 render: (null == p ? void 0 : p.element) ? "explicit" : t,
@@ -234,13 +234,13 @@ try {
               }
           }
           i("<GoogleReCaptchaProvider /> recaptcha key not provided")
-        }, [a, l, v, w, d, t, null == p ? void 0 : p.element]);
+        }, [a, l, b, w, d, t, null == p ? void 0 : p.element]);
         var C = (0, o.useCallback)(function(e) {
             if (!h || !h.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
-            return h.execute(b.current, {
+            return h.execute(v.current, {
               action: e
             })
-          }, [h, b]),
+          }, [h, v]),
           S = (0, o.useMemo)(function() {
             return {
               executeRecaptcha: h ? C : void 0,
@@ -390,8 +390,8 @@ try {
         m = y ? Symbol.for("react.element") : 60103,
         h = y ? Symbol.for("react.portal") : 60106,
         g = y ? Symbol.for("react.fragment") : 60107,
-        b = y ? Symbol.for("react.strict_mode") : 60108,
-        v = y ? Symbol.for("react.profiler") : 60114,
+        v = y ? Symbol.for("react.strict_mode") : 60108,
+        b = y ? Symbol.for("react.profiler") : 60114,
         w = y ? Symbol.for("react.provider") : 60109,
         C = y ? Symbol.for("react.context") : 60110,
         S = y ? Symbol.for("react.async_mode") : 60111,
@@ -415,8 +415,8 @@ try {
                 case S:
                 case E:
                 case g:
-                case v:
                 case b:
+                case v:
                 case P:
                   return e;
                 default:
@@ -451,8 +451,8 @@ try {
           Lazy: $,
           Memo: x,
           Portal: h,
-          Profiler: v,
-          StrictMode: b,
+          Profiler: b,
+          StrictMode: v,
           Suspense: P,
           isAsyncMode: function(e) {
             return L(e) || O(e) === S
@@ -483,16 +483,16 @@ try {
             return O(e) === h
           },
           isProfiler: function(e) {
-            return O(e) === v
+            return O(e) === b
           },
           isStrictMode: function(e) {
-            return O(e) === b
+            return O(e) === v
           },
           isSuspense: function(e) {
             return O(e) === P
           },
           isValidElementType: function(e) {
-            return "string" == typeof e || "function" == typeof e || e === g || e === E || e === v || e === b || e === P || e === R || "object" == typeof e && null !== e && (e.$$typeof === $ || e.$$typeof === x || e.$$typeof === w || e.$$typeof === C || e.$$typeof === T || e.$$typeof === _ || e.$$typeof === M || e.$$typeof === N || e.$$typeof === k)
+            return "string" == typeof e || "function" == typeof e || e === g || e === E || e === b || e === v || e === P || e === R || "object" == typeof e && null !== e && (e.$$typeof === $ || e.$$typeof === x || e.$$typeof === w || e.$$typeof === C || e.$$typeof === T || e.$$typeof === _ || e.$$typeof === M || e.$$typeof === N || e.$$typeof === k)
           },
           typeOf: O
         },

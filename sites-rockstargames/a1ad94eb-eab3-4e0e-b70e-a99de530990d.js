@@ -15,8 +15,8 @@ try {
   [4572], {
     74572(o, t, e) {
       e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => n,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Label: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => h,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => _,
@@ -31,8 +31,8 @@ try {
         default: () => f
       });
       var _ = "{description}：在弹窗中查看大图",
-        n = "关闭",
-        a = "按{shortcut}",
+        a = "关闭",
+        n = "按{shortcut}",
         i = "放大",
         l = "按{shortcut}",
         b = "缩小",
@@ -45,8 +45,8 @@ try {
         L = "下载",
         f = {
           Lightbox_Open_Button_Label: _,
-          Lightbox_Close_Button_Label: n,
-          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Close_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,

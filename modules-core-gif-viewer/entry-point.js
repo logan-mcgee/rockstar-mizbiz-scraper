@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     r = (new e.Error).stack;
-  r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "85027ba4-14ae-43fe-a3a1-e472c734fe0f", e._sentryDebugIdIdentifier = "sentry-dbid-85027ba4-14ae-43fe-a3a1-e472c734fe0f")
+  r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "df57d8d3-5f6d-4064-8cd2-61a5f1eb8d50", e._sentryDebugIdIdentifier = "sentry-dbid-df57d8d3-5f6d-4064-8cd2-61a5f1eb8d50")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -15,7 +15,7 @@ try {
   return {
     execute: function() {
       e((() => {
-        var e, t, n, o, a, i, f, l, d, s, u, c, p, h, b, m, g, y, v, w, _, k = {
+        var e, t, n, o, a, i, d, f, l, s, u, c, p, h, b, m, g, y, v, w, _, k = {
             154(e, r, t) {
               (0, t(9160).w)(1)
             },
@@ -45,8 +45,8 @@ try {
               var n = {
                   "./index": () => Promise.all([t.e(82), t.e(331), t.e(721)]).then(() => () => t(6721)),
                   "./lazy": () => Promise.all([t.e(82), t.e(416), t.e(331), t.e(912)]).then(() => () => t(5912)),
-                  "./tina": () => Promise.all([t.e(429), t.e(82), t.e(17), t.e(331), t.e(661)]).then(() => () => t(5661)),
-                  "./tinaBlockTemplates": () => Promise.all([t.e(429), t.e(82), t.e(17), t.e(331), t.e(661)]).then(() => () => t(5661))
+                  "./tina": () => Promise.all([t.e(250), t.e(82), t.e(17), t.e(331), t.e(919)]).then(() => () => t(8919)),
+                  "./tinaBlockTemplates": () => Promise.all([t.e(250), t.e(82), t.e(17), t.e(331), t.e(919)]).then(() => () => t(8919))
                 },
                 o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then(() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -71,11 +71,9 @@ try {
           var r = E[e];
           if (void 0 !== r) return r.exports;
           var t = E[e] = {
-            id: e,
-            loaded: !1,
             exports: {}
           };
-          return k[e].call(t.exports, t, t.exports, S), t.loaded = !0, t.exports
+          return k[e].call(t.exports, t, t.exports, S), t.exports
         }
         return S.m = k, S.c = E, S.y = r, S.amdO = {}, S.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
@@ -101,20 +99,20 @@ try {
             get: r[t]
           })
         }, S.f = {}, S.e = e => Promise.all(Object.keys(S.f).reduce((r, t) => (S.f[t](e, r), r), [])), S.u = e => "js/" + {
-          162: "51bd609b194f602068c4dbb81d940a01",
-          230: "abb52fe1425628af043deacf6baa00d5",
-          240: "469a4e46370d152affc0831a726ede23",
-          269: "a15e850120d670e049b1cd50eca6cd5c",
-          429: "1c0ace4c9139862412500d2e6873a083",
-          581: "5c736547b2a1849309d53aa6d91ecf82",
-          661: "d5f3198b83df8754e213a000b808ccd3",
-          721: "a12c77cc3efb13347af1fb9a19ae717a",
-          793: "8a385dfd3f8b89426445b1a672bd3c61",
-          912: "7a6f35f6029d7d537ae6dabbb75ad4fb"
+          162: "48000aed72729e4a02e833cabdb6fcff",
+          250: "14a20073cbd420e78da0e8f17ecbeca4",
+          269: "3e4686b91e10cfd0f09b5915144d89e3",
+          402: "7324b6ed6c7104d9ee3a1a5ffd8df8e8",
+          581: "27912c74234de5fcbcadaed4327ba5ed",
+          679: "c4e0e676aca224b265d1ed86722c24b7",
+          721: "cd41b61bd6a037e63800d4f9492665d1",
+          793: "3656a1ec888b5023e0de9b54591cafb8",
+          912: "0dca5f8d4704ccecc1b9d6dfee5d5078",
+          919: "20bf151526a397b2b5557b935e6397f3"
         } [e] + ".js", S.miniCssF = e => "css/" + {
-          661: "b5328e2f95f5b178239a08711e5d52f6",
           721: "5e608aa107d624a061bf5c1486a248e3",
-          912: "069b49906581e555f7e91f6dcda37312"
+          912: "069b49906581e555f7e91f6dcda37312",
+          919: "b5328e2f95f5b178239a08711e5d52f6"
         } [e] + ".css", S.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -125,16 +123,16 @@ try {
         }(), S.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), n = {}, o = "@rockstargames/modules-core-gif-viewer:", S.l = (e, r, t, a) => {
           if (n[e]) n[e].push(r);
           else {
-            var i, f;
+            var i, d;
             if (void 0 !== t)
-              for (var l = document.getElementsByTagName("script"), d = 0; d < l.length; d++) {
-                var s = l[d];
+              for (var f = document.getElementsByTagName("script"), l = 0; l < f.length; l++) {
+                var s = f[l];
                 if (s.getAttribute("src") == e || s.getAttribute("data-webpack") == o + t) {
                   i = s;
                   break
                 }
               }
-            i || (f = !0, (i = document.createElement("script")).charset = "utf-8", S.nc && i.setAttribute("nonce", S.nc), i.setAttribute("data-webpack", o + t), i.src = e), n[e] = [r];
+            i || (d = !0, (i = document.createElement("script")).charset = "utf-8", S.nc && i.setAttribute("nonce", S.nc), i.setAttribute("data-webpack", o + t), i.src = e), n[e] = [r];
             var u = (r, t) => {
                 i.onerror = i.onload = null, clearTimeout(c);
                 var o = n[e];
@@ -144,7 +142,7 @@ try {
                 type: "timeout",
                 target: i
               }), 12e4);
-            i.onerror = u.bind(null, i.onerror), i.onload = u.bind(null, i.onload), f && document.head.appendChild(i)
+            i.onerror = u.bind(null, i.onerror), i.onload = u.bind(null, i.onload), d && document.head.appendChild(i)
           }
         }, S.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -152,7 +150,7 @@ try {
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, S.nmd = e => (e.paths = [], e.children || (e.children = []), e), (() => {
+        }, (() => {
           S.S = {};
           var e = {},
             r = {};
@@ -164,17 +162,17 @@ try {
               S.o(S.S, t) || (S.S[t] = {});
               var a = S.S[t],
                 i = "@rockstargames/modules-core-gif-viewer",
-                f = (e, r, t, n) => {
+                d = (e, r, t, n) => {
                   var o = a[e] = a[e] || {},
-                    f = o[r];
-                  (!f || !f.loaded && (!n != !f.eager ? n : i > f.from)) && (o[r] = {
+                    d = o[r];
+                  (!d || !d.loaded && (!n != !d.eager ? n : i > d.from)) && (o[r] = {
                     get: t,
                     from: i,
                     eager: !!n
                   })
                 },
-                l = [];
-              return "default" === t && (f("@rsgweb/utils", "0.0.0-development", () => Promise.all([S.e(429), S.e(230), S.e(82), S.e(416), S.e(240), S.e(793)]).then(() => () => S(7240))), f("react-dom", "18.3.1", () => Promise.all([S.e(162), S.e(82)]).then(() => () => S(162))), f("react-router-dom", "6.30.3", () => Promise.all([S.e(269), S.e(82), S.e(17)]).then(() => () => S(6650))), f("react", "18.3.1", () => S.e(581).then(() => () => S(2581)))), e[t] = l.length ? Promise.all(l).then(() => e[t] = 1) : 1
+                f = [];
+              return "default" === t && (d("@rsgweb/utils", "0.0.0-development", () => Promise.all([S.e(250), S.e(679), S.e(82), S.e(416), S.e(402), S.e(793)]).then(() => () => S(6402))), d("react-dom", "18.3.1", () => Promise.all([S.e(162), S.e(82)]).then(() => () => S(162))), d("react-router-dom", "6.30.3", () => Promise.all([S.e(269), S.e(82), S.e(17)]).then(() => () => S(6650))), d("react", "18.3.1", () => S.e(581).then(() => () => S(2581)))), e[t] = f.length ? Promise.all(f).then(() => e[t] = 1) : 1
             }
           }
         })(), (() => {
@@ -201,12 +199,12 @@ try {
               o = (typeof n)[0];
             if (t >= r.length) return "u" == o;
             var i = r[t],
-              f = (typeof i)[0];
-            if (o != f) return "o" == o && "n" == f || "s" == f || "u" == o;
+              d = (typeof i)[0];
+            if (o != d) return "o" == o && "n" == d || "s" == d || "u" == o;
             if ("o" != o && "u" != o && n != i) return n < i;
             t++
           }
-        }, f = e => {
+        }, d = e => {
           var r = e[0],
             t = "";
           if (1 === e.length) return "*";
@@ -218,52 +216,52 @@ try {
           var a = [];
           for (o = 1; o < e.length; o++) {
             var i = e[o];
-            a.push(0 === i ? "not(" + l() + ")" : 1 === i ? "(" + l() + " || " + l() + ")" : 2 === i ? a.pop() + " " + a.pop() : f(i))
+            a.push(0 === i ? "not(" + f() + ")" : 1 === i ? "(" + f() + " || " + f() + ")" : 2 === i ? a.pop() + " " + a.pop() : d(i))
           }
-          return l();
+          return f();
 
-          function l() {
+          function f() {
             return a.pop().replace(/^\((.+)\)$/, "$1")
           }
-        }, l = (e, r) => {
+        }, f = (e, r) => {
           if (0 in e) {
             r = a(r);
             var t = e[0],
               n = t < 0;
             n && (t = -t - 1);
-            for (var o = 0, i = 1, f = !0;; i++, o++) {
-              var d, s, u = i < e.length ? (typeof e[i])[0] : "";
-              if (o >= r.length || "o" == (s = (typeof(d = r[o]))[0])) return !f || ("u" == u ? i > t && !n : "" == u != n);
+            for (var o = 0, i = 1, d = !0;; i++, o++) {
+              var l, s, u = i < e.length ? (typeof e[i])[0] : "";
+              if (o >= r.length || "o" == (s = (typeof(l = r[o]))[0])) return !d || ("u" == u ? i > t && !n : "" == u != n);
               if ("u" == s) {
-                if (!f || "u" != u) return !1
-              } else if (f)
+                if (!d || "u" != u) return !1
+              } else if (d)
                 if (u == s)
                   if (i <= t) {
-                    if (d != e[i]) return !1
+                    if (l != e[i]) return !1
                   } else {
-                    if (n ? d > e[i] : d < e[i]) return !1;
-                    d != e[i] && (f = !1)
+                    if (n ? l > e[i] : l < e[i]) return !1;
+                    l != e[i] && (d = !1)
                   }
               else if ("s" != u && "n" != u) {
                 if (n || i <= t) return !1;
-                f = !1, i--
+                d = !1, i--
               } else {
                 if (i <= t || s < u != n) return !1;
-                f = !1
-              } else "s" != u && "n" != u && (f = !1, i--)
+                d = !1
+              } else "s" != u && "n" != u && (d = !1, i--)
             }
           }
           var c = [],
             p = c.pop.bind(c);
           for (o = 1; o < e.length; o++) {
             var h = e[o];
-            c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? l(h, r) : !p())
+            c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? f(h, r) : !p())
           }
           return !!p()
-        }, d = (e, r) => e && S.o(e, r), s = e => (e.loaded = 1, e.get()), u = e => Object.keys(e).reduce((r, t) => (e[t].eager && (r[t] = e[t]), r), {}), c = (e, r, t) => {
+        }, l = (e, r) => e && S.o(e, r), s = e => (e.loaded = 1, e.get()), u = e => Object.keys(e).reduce((r, t) => (e[t].eager && (r[t] = e[t]), r), {}), c = (e, r, t) => {
           var n = t ? u(e[r]) : e[r];
           return Object.keys(n).reduce((e, r) => !e || !n[e].loaded && i(e, r) ? r : e, 0)
-        }, p = (e, r, t, n) => "Unsatisfied version " + t + " from " + (t && e[r][t].from) + " of shared singleton module " + r + " (required " + f(n) + ")", h = e => {
+        }, p = (e, r, t, n) => "Unsatisfied version " + t + " from " + (t && e[r][t].from) + " of shared singleton module " + r + " (required " + d(n) + ")", h = e => {
           throw new Error(e)
         }, b = e => {
           "undefined" != typeof console && console.warn && console.warn(e)
@@ -271,12 +269,12 @@ try {
           var i = S.I(r);
           return i && i.then && !n ? i.then(e.bind(e, r, S.S[r], t, !1, o, a)) : e(r, S.S[r], t, n, o, a)
         })((e, r, t, n, o, a) => {
-          if (!d(r, t)) return m(e, t, a);
+          if (!l(r, t)) return m(e, t, a);
           var i = c(r, t, n);
-          return l(o, i) || b(p(r, t, i, o)), s(r[t][i])
+          return f(o, i) || b(p(r, t, i, o)), s(r[t][i])
         }), y = {}, v = {
           3082: () => g("default", "react", !1, [0], () => S.e(581).then(() => () => S(2581))),
-          3331: () => g("default", "@rsgweb/utils", !1, [0], () => Promise.all([S.e(429), S.e(230), S.e(416), S.e(240)]).then(() => () => S(7240))),
+          3331: () => g("default", "@rsgweb/utils", !1, [0], () => Promise.all([S.e(250), S.e(679), S.e(416), S.e(402)]).then(() => () => S(6402))),
           6416: () => g("default", "react-router-dom", !1, [0], () => Promise.all([S.e(269), S.e(17)]).then(() => () => S(6650))),
           4017: () => g("default", "react-dom", !1, [1, 18, 2, 0], () => S.e(162).then(() => () => S(162)))
         }, w = {
@@ -314,9 +312,9 @@ try {
             };
             S.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
-                661: 1,
                 721: 1,
-                912: 1
+                912: 1,
+                919: 1
               } [r] && t.push(e[r] = (e => new Promise((r, t) => {
                 var n = S.miniCssF(e),
                   o = S.p + n;
@@ -337,9 +335,9 @@ try {
                     if (a.onerror = a.onload = null, "load" === t.type) n();
                     else {
                       var i = t && t.type,
-                        f = t && t.target && t.target.href || r,
-                        l = new Error("Loading CSS chunk " + e + " failed.\n(" + i + ": " + f + ")");
-                      l.name = "ChunkLoadError", l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = f, a.parentNode && a.parentNode.removeChild(a), o(l)
+                        d = t && t.target && t.target.href || r,
+                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + i + ": " + d + ")");
+                      f.name = "ChunkLoadError", f.code = "CSS_CHUNK_LOAD_FAILED", f.type = i, f.request = d, a.parentNode && a.parentNode.removeChild(a), o(f)
                     }
                   }, a.href = r, document.head.appendChild(a)
                 })(e, o, 0, r, t)
@@ -374,13 +372,13 @@ try {
             }
           };
           var r = (r, t) => {
-              var n, o, [a, i, f] = t,
-                l = 0;
+              var n, o, [a, i, d] = t,
+                f = 0;
               if (a.some(r => 0 !== e[r])) {
                 for (n in i) S.o(i, n) && (S.m[n] = i[n]);
-                f && f(S)
+                d && d(S)
               }
-              for (r && r(t); l < a.length; l++) o = a[l], S.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (r && r(t); f < a.length; f++) o = a[f], S.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             t = self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))

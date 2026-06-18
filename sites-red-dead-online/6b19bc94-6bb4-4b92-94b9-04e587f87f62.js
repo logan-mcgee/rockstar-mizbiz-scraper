@@ -15,26 +15,26 @@ try {
   [921], {
     4921(e, n, d) {
       function t(e) {
-        var n, d, a = "";
-        if ("string" == typeof e || "number" == typeof e) a += e;
+        var n, d, f = "";
+        if ("string" == typeof e || "number" == typeof e) f += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
             var o = e.length;
-            for (n = 0; n < o; n++) e[n] && (d = t(e[n])) && (a && (a += " "), a += d)
+            for (n = 0; n < o; n++) e[n] && (d = t(e[n])) && (f && (f += " "), f += d)
           } else
-            for (d in e) e[d] && (a && (a += " "), a += d);
-        return a
+            for (d in e) e[d] && (f && (f += " "), f += d);
+        return f
       }
 
-      function a() {
-        for (var e, n, d = 0, a = "", o = arguments.length; d < o; d++)(e = arguments[d]) && (n = t(e)) && (a && (a += " "), a += n);
-        return a
+      function f() {
+        for (var e, n, d = 0, f = "", o = arguments.length; d < o; d++)(e = arguments[d]) && (n = t(e)) && (f && (f += " "), f += n);
+        return f
       }
       d.r(n), d.d(n, {
-        clsx: () => a,
+        clsx: () => f,
         default: () => o
       });
-      const o = a
+      const o = f
     }
   }
 ]);

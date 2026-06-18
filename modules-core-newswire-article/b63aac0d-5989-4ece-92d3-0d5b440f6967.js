@@ -82,8 +82,8 @@ try {
       var o = s(31879),
         m = s.n(o),
         g = s(17301),
-        b = s(81270);
-      const u = ({
+        u = s(81270);
+      const b = ({
           impressionTracking: e,
           gtm: a = {},
           children: s
@@ -124,16 +124,16 @@ try {
           id: d = null
         }) => (0, t.jsx)("div", {
           style: a,
-          className: (0, b.default)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
+          className: (0, u.default)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", s),
           id: d,
           "data-testid": "standard-group-of-items",
-          children: e.map(e => (0, t.jsx)(u, {
+          children: e.map(e => (0, t.jsx)(b, {
             impressionTracking: e?.impressionTracking,
             gtm: e?.gtm,
             children: (0, t.jsx)(f, {
               to: e?.to,
               children: (0, t.jsxs)("div", {
-                className: (0, b.default)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                className: (0, u.default)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                 style: e?.style ?? {},
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(p, {

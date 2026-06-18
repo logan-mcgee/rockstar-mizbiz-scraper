@@ -18,45 +18,45 @@ try {
         Lightbox_Close_Button_Label: () => a,
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Download_Button_Label: () => h,
-        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => _,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => r,
         Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => b,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => s,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => f
+        default: () => L
       });
       var _ = "{description} - Ver imagem na lightbox",
         a = "Fechar",
         i = "Pressionar {shortcut}",
         n = "Aproximar zoom",
-        l = "Pressionar {shortcut}",
-        b = "Afastar zoom",
+        b = "Pressionar {shortcut}",
+        l = "Afastar zoom",
         s = "Pressionar {shortcut}",
         d = "Resetar",
         r = "Pressionar {shortcut}",
         u = "Nível de zoom",
         g = "{zoom}%",
         h = "Baixar",
-        L = "Baixar",
-        f = {
+        f = "Baixar",
+        L = {
           Lightbox_Open_Button_Label: _,
           Lightbox_Close_Button_Label: a,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: b,
+          Lightbox_Zoom_In_Button_Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: s,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: r,
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: h,
-          Lightbox_Download_Button_Tooltip: L
+          Lightbox_Download_Button_Tooltip: f
         }
     }
   }
