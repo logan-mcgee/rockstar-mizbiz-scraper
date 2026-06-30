@@ -23,8 +23,8 @@ try {
         d = n(66704),
         r = n(38351),
         u = n(39793),
-        c = "focusScope.autoFocusOnMount",
-        a = "focusScope.autoFocusOnUnmount",
+        a = "focusScope.autoFocusOnMount",
+        c = "focusScope.autoFocusOnUnmount",
         i = {
           bubbles: !1,
           cancelable: !0
@@ -79,8 +79,8 @@ try {
               v.add(N);
               const e = document.activeElement;
               if (!g.contains(e)) {
-                const t = new CustomEvent(c, i);
-                g.addEventListener(c, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
+                const t = new CustomEvent(a, i);
+                g.addEventListener(a, w), g.dispatchEvent(t), t.defaultPrevented || (function(e, {
                   select: t = !1
                 } = {}) {
                   const n = document.activeElement;
@@ -93,11 +93,11 @@ try {
                 }), document.activeElement === e && m(g))
               }
               return () => {
-                g.removeEventListener(c, w), setTimeout(() => {
-                  const t = new CustomEvent(a, i);
-                  g.addEventListener(a, T), g.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
+                g.removeEventListener(a, w), setTimeout(() => {
+                  const t = new CustomEvent(c, i);
+                  g.addEventListener(c, T), g.dispatchEvent(t), t.defaultPrevented || m(e ?? document.body, {
                     select: !0
-                  }), g.removeEventListener(a, T), v.remove(N)
+                  }), g.removeEventListener(c, T), v.remove(N)
                 }, 0)
               }
             }

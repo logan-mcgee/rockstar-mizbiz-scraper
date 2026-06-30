@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function s(e, n, t) {
+      function f(e, n, t) {
         var r, l = {},
-          s = null,
-          f = null;
-        for (r in void 0 !== t && (s = "" + t), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (f = n.ref), n) a.call(n, r) && !i.hasOwnProperty(r) && (l[r] = n[r]);
+          f = null,
+          s = null;
+        for (r in void 0 !== t && (f = "" + t), void 0 !== n.key && (f = "" + n.key), void 0 !== n.ref && (s = n.ref), n) a.call(n, r) && !i.hasOwnProperty(r) && (l[r] = n[r]);
         if (e && e.defaultProps)
           for (r in n = e.defaultProps) void 0 === l[r] && (l[r] = n[r]);
         return {
           $$typeof: o,
           type: e,
-          key: s,
-          ref: f,
+          key: f,
+          ref: s,
           props: l,
           _owner: d.current
         }
       }
-      n.Fragment = l, n.jsx = s, n.jsxs = s
+      n.Fragment = l, n.jsx = f, n.jsxs = f
     },
     39793(e, n, t) {
       e.exports = t(94931)
@@ -85,7 +85,7 @@ try {
         Slot: () => d,
         Slottable: () => c,
         createSlot: () => a,
-        createSlottable: () => f
+        createSlottable: () => s
       });
       var r = t(4637),
         o = t(50446),
@@ -155,20 +155,20 @@ try {
         });
         return n.displayName = `${e}.SlotClone`, n
       }
-      var s = Symbol("radix.slottable");
+      var f = Symbol("radix.slottable");
 
-      function f(e) {
+      function s(e) {
         const n = ({
           children: e
         }) => (0, l.jsx)(l.Fragment, {
           children: e
         });
-        return n.displayName = `${e}.Slottable`, n.__radixId = s, n
+        return n.displayName = `${e}.Slottable`, n.__radixId = f, n
       }
-      var c = f("Slottable");
+      var c = s("Slottable");
 
       function u(e) {
-        return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === s
+        return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === f
       }
     }
   }

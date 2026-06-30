@@ -16,7 +16,7 @@ try {
     12463(e, t, n) {
       n.r(t), n.d(t, {
         useControllableState: () => d,
-        useControllableStateReducer: () => f
+        useControllableStateReducer: () => u
       });
       var o = n(4637),
         r = n.t(o, 2),
@@ -44,7 +44,7 @@ try {
         }({
           defaultProp: t,
           onChange: n
-        }), d = void 0 !== e, u = d ? e : s; {
+        }), d = void 0 !== e, f = d ? e : s; {
           const t = o.useRef(void 0 !== e);
           o.useEffect(() => {
             const e = t.current;
@@ -56,7 +56,7 @@ try {
             t.current = d
           }, [d, r])
         }
-        const f = o.useCallback(t => {
+        const u = o.useCallback(t => {
           if (d) {
             const n = function(e) {
               return "function" == typeof e
@@ -64,15 +64,15 @@ try {
             n !== e && l.current?.(n)
           } else a(t)
         }, [d, e, a, l]);
-        return [u, f]
+        return [f, u]
       }
-      var u = Symbol("RADIX:SYNC_STATE");
+      var f = Symbol("RADIX:SYNC_STATE");
 
-      function f(e, t, n, r) {
+      function u(e, t, n, r) {
         const {
           prop: c,
           defaultProp: d,
-          onChange: f,
+          onChange: u,
           caller: i
         } = t, b = void 0 !== c, g = function(e) {
           if ("function" == typeof a) return a(e);
@@ -84,7 +84,7 @@ try {
           }) : (0, s.N)(() => {
             t.current = e
           }), o.useMemo(() => (...e) => t.current?.(...e), [])
-        }(f); {
+        }(u); {
           const e = o.useRef(void 0 !== c);
           o.useEffect(() => {
             const t = e.current;
@@ -102,7 +102,7 @@ try {
         }];
         r && p.push(r);
         const [h, y] = o.useReducer((t, n) => {
-          if (n.type === u) return {
+          if (n.type === f) return {
             ...t,
             state: n.state
           };
@@ -118,7 +118,7 @@ try {
         } : h, [h, c]);
         return o.useEffect(() => {
           b && !Object.is(c, h.state) && y({
-            type: u,
+            type: f,
             state: c
           })
         }, [c, h.state, b]), [E, y]

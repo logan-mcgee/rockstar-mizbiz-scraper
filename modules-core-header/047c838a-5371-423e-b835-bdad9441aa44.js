@@ -15,8 +15,8 @@ try {
   [784, 2174, 4555, 6936, 8403, 9793], {
     94931(e, o, s) {
       var t = s(4637),
-        n = Symbol.for("react.element"),
-        a = Symbol.for("react.fragment"),
+        a = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
         i = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
@@ -27,22 +27,22 @@ try {
         };
 
       function c(e, o, s) {
-        var t, a = {},
+        var t, n = {},
           c = null,
           u = null;
-        for (t in void 0 !== s && (c = "" + s), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) r.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
+        for (t in void 0 !== s && (c = "" + s), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) r.call(o, t) && !l.hasOwnProperty(t) && (n[t] = o[t]);
         if (e && e.defaultProps)
-          for (t in o = e.defaultProps) void 0 === a[t] && (a[t] = o[t]);
+          for (t in o = e.defaultProps) void 0 === n[t] && (n[t] = o[t]);
         return {
-          $$typeof: n,
+          $$typeof: a,
           type: e,
           key: c,
           ref: u,
-          props: a,
+          props: n,
           _owner: i.current
         }
       }
-      o.Fragment = a, o.jsx = c, o.jsxs = c
+      o.Fragment = n, o.jsx = c, o.jsxs = c
     },
     39793(e, o, s) {
       e.exports = s(94931)
@@ -67,22 +67,22 @@ try {
         withIntl: () => $
       });
       var t = s(51177),
-        n = s(4637),
-        a = s(2603),
+        a = s(4637),
+        n = s(2603),
         r = s(74775);
 
       function i(e) {
         var o = (0, r.A)(),
           s = o.formatMessage,
           t = o.textComponent,
-          a = void 0 === t ? n.Fragment : t,
+          n = void 0 === t ? a.Fragment : t,
           i = e.id,
           l = e.description,
           c = e.defaultMessage,
           u = e.values,
           d = e.children,
           p = e.tagName,
-          m = void 0 === p ? a : p,
+          m = void 0 === p ? n : p,
           b = s({
             id: i,
             description: l,
@@ -90,15 +90,15 @@ try {
           }, u, {
             ignoreTag: e.ignoreTag
           });
-        return "function" == typeof d ? d(Array.isArray(b) ? b : [b]) : m ? n.createElement(m, null, b) : n.createElement(n.Fragment, null, b)
+        return "function" == typeof d ? d(Array.isArray(b) ? b : [b]) : m ? a.createElement(m, null, b) : a.createElement(a.Fragment, null, b)
       }
       i.displayName = "FormattedMessage";
-      var l = n.memo(i, function(e, o) {
+      var l = a.memo(i, function(e, o) {
         var s = e.values,
-          n = (0, t.Tt)(e, ["values"]),
+          a = (0, t.Tt)(e, ["values"]),
           r = o.values,
           i = (0, t.Tt)(o, ["values"]);
-        return (0, a.bN)(r, s) && (0, a.bN)(n, i)
+        return (0, n.bN)(r, s) && (0, n.bN)(a, i)
       });
       l.displayName = "MemoizedFormattedMessage";
       const c = l;
@@ -117,15 +117,15 @@ try {
           const o = document.cookie.split("; "),
             s = `${e}=`,
             t = o.find(e => e.startsWith(s)),
-            n = t?.substring(s.length, t.length);
-          return n
+            a = t?.substring(s.length, t.length);
+          return a
         },
         g = (e, o, s = !1) => {
           const t = w(e);
-          return t && !s || f(e, o), [t, (n = e, e => {
-            f(n, e)
+          return t && !s || f(e, o), [t, (a = e, e => {
+            f(a, e)
           })];
-          var n
+          var a
         },
         h = [{
           label: "English",
@@ -246,30 +246,30 @@ try {
           })(e), t = (e => {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
-          })(e), n = _;
-          let a;
+          })(e), a = _;
+          let n;
           const r = `rockstarweb_lang.${o.cookieIdentifier}`,
             i = w(r);
-          a = o.currentSite?.site === b.C.www ? y.find(e => e.subdomaincom === t) || y.find(e => e.subdomaincom === s) || n : y.find(e => e.iso === i) || n;
-          const [, l] = g(r, a.iso);
-          return [a, l]
+          n = o.currentSite?.site === b.C.www ? y.find(e => e.subdomaincom === t) || y.find(e => e.subdomaincom === s) || a : y.find(e => e.iso === i) || a;
+          const [, l] = g(r, n.iso);
+          return [n, l]
         };
 
       function $(e, o, s, t) {
-        return a => {
-          const r = (0, n.useMemo)(() => {
+        return n => {
+          const r = (0, a.useMemo)(() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const s = o ?? x()[0].iso ?? "en-US",
                   t = function(e, o) {
                     return e[o] ?? {}
                   }(e, s);
-                var n;
+                var a;
                 return {
                   rsLocale: s,
                   locale: s,
-                  messages: (n = t, {
-                    ...n
+                  messages: (a = t, {
+                    ...a
                   })
                 }
               }(e, o)
@@ -282,7 +282,7 @@ try {
             },
             onError: t,
             children: r && (0, m.jsx)(e, {
-              ...a
+              ...n
             })
           }, "intl-provider")
         }
@@ -343,21 +343,21 @@ try {
             t = null
           }
           if (t)
-            for (const [n, {
-                regex: a,
+            for (const [a, {
+                regex: n,
                 isSubdomain: r,
                 isLocaleInUrl: i,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries(I)) {
-              if (!a.test(e.toLowerCase())) continue;
-              const u = s[n];
+              if (!n.test(e.toLowerCase())) continue;
+              const u = s[a];
               if (!u) continue;
               let d = "";
-              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === t.pathname && (d += "/"));
+              "en" !== o.subdomaincom && i && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === a && "/" === t.pathname && (d += "/"));
               const p = t.host.split(".");
               let m = "";
-              return "www" !== n || c?.some(e => e.test(t.pathname)) ? ("www" !== n && (m += `https://${u}`, m += r ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
+              return "www" !== a || c?.some(e => e.test(t.pathname)) ? ("www" !== a && (m += `https://${u}`, m += r ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
                 link: `${m}${d}${"/"===t.pathname?"":t.pathname}${t.search}${t.hash}`,
                 isExternal: !0
               }) : {
@@ -379,32 +379,32 @@ try {
           parent: s = ""
         }) => {
           const t = (0, b.A)(),
-            [, n] = x(),
+            [, a] = x(),
             {
-              subdomaincom: a,
+              subdomaincom: n,
               iso: r
             } = e,
             i = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const s = o.split("/");
               return y.map(e => e.subdomaincom).includes(s[0]) && (o = s.slice(1).join("/")), t.currentSite?.site === b.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-            })(a);
+            })(n);
           o?.({
             event: "cta_other",
             link_url: i,
-            text: a,
+            text: n,
             element_placement: s?.toLowerCase()
-          }), n(r), window.location.assign(i)
+          }), a(r), window.location.assign(i)
         }
     },
     47279(e, o, s) {
       s.d(o, {
         A: () => i,
-        C: () => a
+        C: () => n
       });
       var t = s(68861),
-        n = s(50573);
-      const a = {
+        a = s(50573);
+      const n = {
           www: "www",
           socialClub: "socialClub",
           support: "support",
@@ -428,14 +428,14 @@ try {
           let e;
           const {
             location: o
-          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), a = r.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
+          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), n = r.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
             site: o,
             subDomain: t
-          }, !0)) >= 0), i = r[a >= 0 ? a : 0], l = r.find(e => e.id === i.fallbackEnvironment);
+          }, !0)) >= 0), i = r[n >= 0 ? n : 0], l = r.find(e => e.id === i.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
-          }), (0, n.A)((0, t.A)({}, l, {
+          }), (0, a.A)((0, t.A)({}, l, {
             currentSite: e
           }, i), "fallbackEnvironment")
         }

@@ -95,9 +95,9 @@ try {
         d = /^\[object .+?Constructor\]$/,
         i = Function.prototype,
         b = Object.prototype,
-        l = i.toString,
-        f = b.hasOwnProperty,
-        A = RegExp("^" + l.call(f).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+        f = i.toString,
+        l = b.hasOwnProperty,
+        A = RegExp("^" + f.call(l).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
       const p = function(e) {
           return !(!(0, u.A)(e) || (t = e, a && a in t)) && ((0, r.A)(e) ? A : d).test((0, s.A)(e));
           var t
@@ -122,8 +122,8 @@ try {
         d = (0, r.A)(n.A, "WeakMap");
       var i = o(86204),
         b = o(51836),
-        l = "[object Map]",
-        f = "[object Promise]",
+        f = "[object Map]",
+        l = "[object Promise]",
         A = "[object Set]",
         p = "[object WeakMap]",
         y = "[object DataView]",
@@ -133,7 +133,7 @@ try {
         w = (0, b.A)(s),
         h = (0, b.A)(d),
         m = i.A;
-      (c && m(new c(new ArrayBuffer(1))) != y || a.A && m(new a.A) != l || u && m(u.resolve()) != f || s && m(new s) != A || d && m(new d) != p) && (m = function(e) {
+      (c && m(new c(new ArrayBuffer(1))) != y || a.A && m(new a.A) != f || u && m(u.resolve()) != l || s && m(new s) != A || d && m(new d) != p) && (m = function(e) {
         var t = (0, i.A)(e),
           o = "[object Object]" == t ? e.constructor : void 0,
           r = o ? (0, b.A)(o) : "";
@@ -141,9 +141,9 @@ try {
           case j:
             return y;
           case g:
-            return l;
-          case v:
             return f;
+          case v:
+            return l;
           case w:
             return A;
           case h:

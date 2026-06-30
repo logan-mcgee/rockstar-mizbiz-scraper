@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    d = (new e.Error).stack;
-  d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "90f07104-a7ad-42c6-87fb-ba9416e485a8", e._sentryDebugIdIdentifier = "sentry-dbid-90f07104-a7ad-42c6-87fb-ba9416e485a8")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "90f07104-a7ad-42c6-87fb-ba9416e485a8", e._sentryDebugIdIdentifier = "sentry-dbid-90f07104-a7ad-42c6-87fb-ba9416e485a8")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,15 +13,15 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [7428], {
-    45047(e, d, a) {
-      a.r(d), a.d(d, {
-        Root: () => r,
+    45047(e, a, d) {
+      d.r(a), d.d(a, {
+        Root: () => f,
         VISUALLY_HIDDEN_STYLES: () => t,
         VisuallyHidden: () => l
       });
-      var o = a(4637),
-        n = a(66704),
-        s = a(39793),
+      var o = d(4637),
+        n = d(66704),
+        s = d(39793),
         t = Object.freeze({
           position: "absolute",
           border: 0,
@@ -34,16 +34,16 @@ try {
           whiteSpace: "nowrap",
           wordWrap: "normal"
         }),
-        l = o.forwardRef((e, d) => (0, s.jsx)(n.sG.span, {
+        l = o.forwardRef((e, a) => (0, s.jsx)(n.sG.span, {
           ...e,
-          ref: d,
+          ref: a,
           style: {
             ...t,
             ...e.style
           }
         }));
       l.displayName = "VisuallyHidden";
-      var r = l
+      var f = l
     }
   }
 ]);
