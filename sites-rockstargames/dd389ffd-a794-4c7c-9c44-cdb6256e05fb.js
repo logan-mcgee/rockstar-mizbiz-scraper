@@ -13,12 +13,12 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [1177, 3411, 4809, 5982], {
-    94931(e, t, n) {
-      var a = n(93082),
+    94931(e, t, a) {
+      var n = a(93082),
         r = Symbol.for("react.element"),
         o = Symbol.for("react.fragment"),
         g = Object.prototype.hasOwnProperty,
-        i = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        i = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         m = {
           key: !0,
           ref: !0,
@@ -26,13 +26,13 @@ try {
           __source: !0
         };
 
-      function l(e, t, n) {
-        var a, o = {},
+      function l(e, t, a) {
+        var n, o = {},
           l = null,
           s = null;
-        for (a in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (s = t.ref), t) g.call(t, a) && !m.hasOwnProperty(a) && (o[a] = t[a]);
+        for (n in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (s = t.ref), t) g.call(t, n) && !m.hasOwnProperty(n) && (o[n] = t[n]);
         if (e && e.defaultProps)
-          for (a in t = e.defaultProps) void 0 === o[a] && (o[a] = t[a]);
+          for (n in t = e.defaultProps) void 0 === o[n] && (o[n] = t[n]);
         return {
           $$typeof: r,
           type: e,
@@ -44,11 +44,11 @@ try {
       }
       t.Fragment = o, t.jsx = l, t.jsxs = l
     },
-    39793(e, t, n) {
-      e.exports = n(94931)
+    39793(e, t, a) {
+      e.exports = a(94931)
     },
-    37840(e, t, n) {
-      n.r(t), n.d(t, {
+    37840(e, t, a) {
+      a.r(t), a.d(t, {
         RSG_CONTENT_RATING_FRAGMENT: () => r,
         RSG_CTA_FRAGMENT: () => o,
         RSG_GAME_FRAGMENT: () => g,
@@ -88,8 +88,8 @@ try {
         wwwBottomSheetQuery: () => B,
         wwwPageQuery: () => P
       });
-      var a = n(3710);
-      const r = a.gql`
+      var n = a(3710);
+      const r = n.gql`
 fragment RsgContentRatingFragment on RsgContentRating {
   __typename
   sys {
@@ -98,7 +98,7 @@ fragment RsgContentRatingFragment on RsgContentRating {
   titleSlug
 }
 `,
-        o = a.gql`
+        o = n.gql`
 fragment RsgCtaFragment on RsgCta {
   sys {
     ...SysFragment
@@ -120,7 +120,7 @@ fragment RsgCtaFragment on RsgCta {
   openInNewTab
 }
 `,
-        g = a.gql`
+        g = n.gql`
 fragment RsgGameFragment on RsgGame {
   title
   slug
@@ -137,13 +137,13 @@ fragment RsgGameFragment on RsgGame {
   }
 }
 `,
-        i = a.gql`
+        i = n.gql`
 fragment RsgIconFragment on RsgIcon {
   icon
   iconLabel
 }
 `,
-        m = a.gql`
+        m = n.gql`
 fragment RsgImageFileFragment on RsgImageFile {
   __typename
   sys {
@@ -159,7 +159,7 @@ fragment RsgImageFileFragment on RsgImageFile {
   }
 }
 `,
-        l = a.gql`
+        l = n.gql`
 fragment RsgImageFragment on RsgImage {
   __typename
   sys {
@@ -179,13 +179,13 @@ fragment RsgImageFragment on RsgImage {
   }
 }
 `,
-        s = a.gql`
+        s = n.gql`
 fragment SysFragment on Sys {
   __typename
   id
 }
 `,
-        w = a.gql`
+        w = n.gql`
 fragment WwwBannerFragment on WwwBanner {
   __typename
   sys {
@@ -205,7 +205,7 @@ fragment WwwBannerFragment on WwwBanner {
   altText
 }
 `,
-        c = a.gql`
+        c = n.gql`
 fragment WwwDeckFragment on WwwDeck {
   sys {
       ...SysFragment
@@ -226,7 +226,7 @@ fragment WwwDeckFragment on WwwDeck {
   }
 }
 `,
-        y = a.gql`
+        y = n.gql`
 fragment WwwDecorativeVideoFragment on WwwDecorativeVideo {
     __typename
     sys {
@@ -246,7 +246,7 @@ fragment WwwDecorativeVideoFragment on WwwDecorativeVideo {
     }
 }
 `,
-        d = a.gql`
+        d = n.gql`
 fragment WwwDividerFragment on WwwDivider {
     __typename
     sys {
@@ -256,7 +256,7 @@ fragment WwwDividerFragment on WwwDivider {
     style
 }
 `,
-        F = a.gql`
+        F = n.gql`
 fragment WwwEditorialGridModuleFragment on WwwEditorialGridModule {
   __typename
   sys {
@@ -273,7 +273,7 @@ fragment WwwEditorialGridModuleFragment on WwwEditorialGridModule {
   }
 }
 `,
-        _ = a.gql`
+        _ = n.gql`
 fragment WwwFeaturedContentCarouselFragment on WwwFeaturedContentCarousel {
   __typename
   sys {
@@ -308,7 +308,7 @@ fragment WwwFeaturedContentCarouselFragment on WwwFeaturedContentCarousel {
   }
 }
 `,
-        W = a.gql`
+        W = n.gql`
 fragment WwwFeaturedGameSectionFragment on WwwFeaturedGameSection {
   __typename
   sys {
@@ -382,7 +382,7 @@ fragment WwwFeaturedGameSectionFragment on WwwFeaturedGameSection {
   }
 }
 `,
-        u = a.gql`
+        u = n.gql`
 fragment WwwGridFragment on WwwGrid {
     __typename
     sys {
@@ -424,7 +424,7 @@ fragment WwwGridFragment on WwwGrid {
     }
 }
 `,
-        p = a.gql`
+        p = n.gql`
 fragment WwwGridLayoutBreakpointFragment on WwwGridLayoutBreakpoint {
     __typename
     sys {
@@ -436,7 +436,7 @@ fragment WwwGridLayoutBreakpointFragment on WwwGridLayoutBreakpoint {
     alignment
 }
 `,
-        f = a.gql`
+        f = n.gql`
 fragment WwwGridWrapperFragment on WwwGridWrapper {
     __typename
     sys {
@@ -456,7 +456,7 @@ fragment WwwGridWrapperFragment on WwwGridWrapper {
     }
 }
 `,
-        R = a.gql`
+        R = n.gql`
 fragment WwwImageBlockFragment on WwwImageBlock {
   __typename
   sys {
@@ -477,7 +477,7 @@ fragment WwwImageBlockFragment on WwwImageBlock {
   titleSize
 }
 `,
-        I = a.gql`
+        I = n.gql`
 fragment WwwImageCardFragment on WwwImageCard {
   __typename
   sys {
@@ -505,7 +505,7 @@ fragment WwwImageCardFragment on WwwImageCard {
   ariaLabel
 }
 `,
-        b = a.gql`
+        b = n.gql`
 fragment WwwImageCarouselFragment on WwwImageCarousel {
   __typename
   sys {
@@ -524,7 +524,7 @@ fragment WwwImageCarouselFragment on WwwImageCarousel {
   }
 }
 `,
-        E = a.gql`
+        E = n.gql`
 fragment WwwImagesMarqueeModuleFragment on WwwImagesMarqueeModule {
   __typename
   sys {
@@ -552,7 +552,7 @@ fragment WwwImagesMarqueeModuleFragment on WwwImagesMarqueeModule {
   }
 }
 `,
-        C = a.gql`
+        C = n.gql`
 fragment WwwLightboxImageFragment on WwwLightboxImage {
   __typename
   sys {
@@ -569,7 +569,7 @@ fragment WwwLightboxImageFragment on WwwLightboxImage {
   zoomControls
 }
 `,
-        S = a.gql`
+        S = n.gql`
 fragment WwwLinkOutImageFragment on WwwLinkOutImage {
   __typename
   sys {
@@ -584,7 +584,7 @@ fragment WwwLinkOutImageFragment on WwwLinkOutImage {
   }
 }
 `,
-        T = a.gql`
+        T = n.gql`
 fragment WwwMasonryGridFragment on WwwMasonryGrid {
   __typename
   sys {
@@ -619,7 +619,7 @@ fragment WwwMasonryGridFragment on WwwMasonryGrid {
   }
 }
 `,
-        G = a.gql`
+        G = n.gql`
 fragment WwwNewsletterSubscribeFragment on WwwNewsletterSubscribe {
   __typename
   sys {
@@ -634,7 +634,7 @@ fragment WwwNewsletterSubscribeFragment on WwwNewsletterSubscribe {
   }
 }
 `,
-        M = a.gql`
+        M = n.gql`
 fragment WwwPromoModuleFragment on WwwPromoModule {
   __typename
   sys {
@@ -661,7 +661,7 @@ fragment WwwPromoModuleFragment on WwwPromoModule {
   contentAlignment
 }
 `,
-        A = a.gql`
+        A = n.gql`
 fragment WwwReactComponentFragment on WwwReactComponent {
   __typename
   sys {
@@ -671,7 +671,7 @@ fragment WwwReactComponentFragment on WwwReactComponent {
   componentProps
 }
 `,
-        h = a.gql`
+        h = n.gql`
 fragment WwwWebOfferClaimFragment on WwwWebOfferClaim {
     __typename
     sys {
@@ -680,7 +680,7 @@ fragment WwwWebOfferClaimFragment on WwwWebOfferClaim {
     tinaPageUrl
 }
 `,
-        k = a.gql`
+        k = n.gql`
 fragment WwwSectionWrapperFragment on WwwSectionWrapper {
   __typename
   sys {
@@ -752,7 +752,7 @@ fragment WwwSectionWrapperFragment on WwwSectionWrapper {
   }
 }
 `,
-        O = a.gql`
+        O = n.gql`
 fragment WwwSupportCalloutModuleFragment on WwwSupportCalloutModule {
   sys {
     ...SysFragment
@@ -764,7 +764,7 @@ fragment WwwSupportCalloutModuleFragment on WwwSupportCalloutModule {
   }
 }
 `,
-        N = a.gql`
+        N = n.gql`
 fragment WwwTextBlockFragment on WwwTextBlock {
     __typename
     sys {
@@ -791,7 +791,7 @@ fragment WwwTextBlockFragment on WwwTextBlock {
     bodyTextWrap
 }
 `,
-        v = a.gql`
+        v = n.gql`
 fragment WwwTextWithBadgeFragment on WwwTextWithBadge {
   __typename
   sys {
@@ -814,7 +814,7 @@ fragment WwwTextWithBadgeFragment on WwwTextWithBadge {
   }
 }
 `,
-        D = a.gql`
+        D = n.gql`
 fragment WwwThemeProviderFragment on WwwThemeProvider {
   __typename
   sys {
@@ -826,7 +826,7 @@ fragment WwwThemeProviderFragment on WwwThemeProvider {
   secondaryAccentColor
 }
 `,
-        x = a.gql`
+        x = n.gql`
 fragment RsgVideoFileFragment on RsgVideoFile {
   __typename
   sys {
@@ -846,7 +846,7 @@ fragment RsgVideoFileFragment on RsgVideoFile {
   width
 }
 `,
-        $ = a.gql`
+        $ = n.gql`
 fragment RsgVideoFragment on RsgVideo {
   __typename
   sys {
@@ -869,7 +869,7 @@ fragment RsgVideoFragment on RsgVideo {
   }
 }
 `,
-        q = a.gql`
+        q = n.gql`
 fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   __typename
   sys {
@@ -888,7 +888,7 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   }
 }
 `,
-        P = a.gql`
+        P = n.gql`
   query WwwPage($locale: String!, $slug: String!) {
     wwwPageCollection(locale: $locale, limit: 1, where: { slug: $slug }) {
       items {
@@ -963,7 +963,7 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   ${D}
   ${h}
 `,
-        B = a.gql`
+        B = n.gql`
   query WwwBottomSheet($locale: String!, $slug: String!) {
     wwwBottomSheetCollection(locale: $locale, limit: 1, where: { slug: $slug }) {
       items {
@@ -992,8 +992,8 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
   ${q}
 `
     },
-    51177(e, t, n) {
-      n.d(t, {
+    51177(e, t, a) {
+      a.d(t, {
         C6: () => r,
         Cl: () => o,
         Tt: () => g,
@@ -1002,48 +1002,48 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
         gz: () => s,
         sH: () => i
       });
-      var a = function(e, t) {
-        return a = Object.setPrototypeOf || {
+      var n = function(e, t) {
+        return n = Object.setPrototypeOf || {
           __proto__: []
         }
         instanceof Array && function(e, t) {
           e.__proto__ = t
         } || function(e, t) {
-          for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
-        }, a(e, t)
+          for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a])
+        }, n(e, t)
       };
 
       function r(e, t) {
         if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
 
-        function n() {
+        function a() {
           this.constructor = e
         }
-        a(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
+        n(e, t), e.prototype = null === t ? Object.create(t) : (a.prototype = t.prototype, new a)
       }
       var o = function() {
         return o = Object.assign || function(e) {
-          for (var t, n = 1, a = arguments.length; n < a; n++)
-            for (var r in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+          for (var t, a = 1, n = arguments.length; a < n; a++)
+            for (var r in t = arguments[a]) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
           return e
         }, o.apply(this, arguments)
       };
 
       function g(e, t) {
-        var n = {};
-        for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && t.indexOf(a) < 0 && (n[a] = e[a]);
+        var a = {};
+        for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (a[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
           var r = 0;
-          for (a = Object.getOwnPropertySymbols(e); r < a.length; r++) t.indexOf(a[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, a[r]) && (n[a[r]] = e[a[r]])
+          for (n = Object.getOwnPropertySymbols(e); r < n.length; r++) t.indexOf(n[r]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[r]) && (a[n[r]] = e[n[r]])
         }
-        return n
+        return a
       }
 
-      function i(e, t, n, a) {
-        return new(n || (n = Promise))(function(r, o) {
+      function i(e, t, a, n) {
+        return new(a || (a = Promise))(function(r, o) {
           function g(e) {
             try {
-              m(a.next(e))
+              m(n.next(e))
             } catch (e) {
               o(e)
             }
@@ -1051,7 +1051,7 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
 
           function i(e) {
             try {
-              m(a.throw(e))
+              m(n.throw(e))
             } catch (e) {
               o(e)
             }
@@ -1059,16 +1059,16 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
 
           function m(e) {
             var t;
-            e.done ? r(e.value) : (t = e.value, t instanceof n ? t : new n(function(e) {
+            e.done ? r(e.value) : (t = e.value, t instanceof a ? t : new a(function(e) {
               e(t)
             })).then(g, i)
           }
-          m((a = a.apply(e, t || [])).next())
+          m((n = n.apply(e, t || [])).next())
         })
       }
 
       function m(e, t) {
-        var n, a, r, o = {
+        var a, n, r, o = {
             label: 0,
             sent: function() {
               if (1 & r[0]) throw r[1];
@@ -1085,10 +1085,10 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
         function i(i) {
           return function(m) {
             return function(i) {
-              if (n) throw new TypeError("Generator is already executing.");
+              if (a) throw new TypeError("Generator is already executing.");
               for (; g && (g = 0, i[0] && (o = 0)), o;) try {
-                if (n = 1, a && (r = 2 & i[0] ? a.return : i[0] ? a.throw || ((r = a.return) && r.call(a), 0) : a.next) && !(r = r.call(a, i[1])).done) return r;
-                switch (a = 0, r && (i = [2 & i[0], r.value]), i[0]) {
+                if (a = 1, n && (r = 2 & i[0] ? n.return : i[0] ? n.throw || ((r = n.return) && r.call(n), 0) : n.next) && !(r = r.call(n, i[1])).done) return r;
+                switch (n = 0, r && (i = [2 & i[0], r.value]), i[0]) {
                   case 0:
                   case 1:
                     r = i;
@@ -1099,7 +1099,7 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
                       done: !1
                     };
                   case 5:
-                    o.label++, a = i[1], i = [0];
+                    o.label++, n = i[1], i = [0];
                     continue;
                   case 7:
                     i = o.ops.pop(), o.trys.pop();
@@ -1126,9 +1126,9 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
                 }
                 i = t.call(e, o)
               } catch (e) {
-                i = [6, e], a = 0
+                i = [6, e], n = 0
               } finally {
-                n = r = 0
+                a = r = 0
               }
               if (5 & i[0]) throw i[1];
               return {
@@ -1141,20 +1141,20 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
       }
 
       function l(e, t) {
-        var n = "function" == typeof Symbol && e[Symbol.iterator];
-        if (!n) return e;
-        var a, r, o = n.call(e),
+        var a = "function" == typeof Symbol && e[Symbol.iterator];
+        if (!a) return e;
+        var n, r, o = a.call(e),
           g = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(a = o.next()).done;) g.push(a.value)
+            (void 0 === t || t-- > 0) && !(n = o.next()).done;) g.push(n.value)
         } catch (e) {
           r = {
             error: e
           }
         } finally {
           try {
-            a && !a.done && (n = o.return) && n.call(o)
+            n && !n.done && (a = o.return) && a.call(o)
           } finally {
             if (r) throw r.error
           }
@@ -1167,10 +1167,10 @@ fragment WwwVideoPlayerFragment on WwwVideoPlayer {
         return e
       }
 
-      function w(e, t, n) {
-        if (n || 2 === arguments.length)
-          for (var a, r = 0, o = t.length; r < o; r++) !a && r in t || (a || (a = Array.prototype.slice.call(t, 0, r)), a[r] = t[r]);
-        return e.concat(a || Array.prototype.slice.call(t))
+      function w(e, t, a) {
+        if (a || 2 === arguments.length)
+          for (var n, r = 0, o = t.length; r < o; r++) !n && r in t || (n || (n = Array.prototype.slice.call(t, 0, r)), n[r] = t[r]);
+        return e.concat(n || Array.prototype.slice.call(t))
       }
       Object.create, Object.create, "function" == typeof SuppressedError && SuppressedError
     }

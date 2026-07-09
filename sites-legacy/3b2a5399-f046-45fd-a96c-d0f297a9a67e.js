@@ -16,10 +16,10 @@ try {
     94931(e, a, t) {
       var n = t(93082),
         d = Symbol.for("react.element"),
-        o = Symbol.for("react.fragment"),
-        r = Object.prototype.hasOwnProperty,
-        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        f = Symbol.for("react.fragment"),
+        o = Object.prototype.hasOwnProperty,
+        r = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -27,22 +27,22 @@ try {
         };
 
       function l(e, a, t) {
-        var n, o = {},
+        var n, f = {},
           l = null,
           i = null;
-        for (n in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, n) && !f.hasOwnProperty(n) && (o[n] = a[n]);
+        for (n in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) o.call(a, n) && !s.hasOwnProperty(n) && (f[n] = a[n]);
         if (e && e.defaultProps)
-          for (n in a = e.defaultProps) void 0 === o[n] && (o[n] = a[n]);
+          for (n in a = e.defaultProps) void 0 === f[n] && (f[n] = a[n]);
         return {
           $$typeof: d,
           type: e,
           key: l,
           ref: i,
-          props: o,
-          _owner: s.current
+          props: f,
+          _owner: r.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      a.Fragment = f, a.jsx = l, a.jsxs = l
     },
     39793(e, a, t) {
       e.exports = t(94931)

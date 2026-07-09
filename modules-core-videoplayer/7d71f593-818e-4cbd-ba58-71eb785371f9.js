@@ -16,9 +16,9 @@ try {
     4931(e, o, s) {
       var t = s(3082),
         n = Symbol.for("react.element"),
-        i = Symbol.for("react.fragment"),
-        r = Object.prototype.hasOwnProperty,
-        a = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        a = Symbol.for("react.fragment"),
+        i = Object.prototype.hasOwnProperty,
+        r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -27,31 +27,31 @@ try {
         };
 
       function c(e, o, s) {
-        var t, i = {},
+        var t, a = {},
           c = null,
           u = null;
-        for (t in void 0 !== s && (c = "" + s), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) r.call(o, t) && !l.hasOwnProperty(t) && (i[t] = o[t]);
+        for (t in void 0 !== s && (c = "" + s), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (u = o.ref), o) i.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
         if (e && e.defaultProps)
-          for (t in o = e.defaultProps) void 0 === i[t] && (i[t] = o[t]);
+          for (t in o = e.defaultProps) void 0 === a[t] && (a[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
           key: c,
           ref: u,
-          props: i,
-          _owner: a.current
+          props: a,
+          _owner: r.current
         }
       }
-      o.Fragment = i, o.jsx = c, o.jsxs = c
+      o.Fragment = a, o.jsx = c, o.jsxs = c
     },
     9793(e, o, s) {
       e.exports = s(4931)
     },
     6602(e, o, s) {
       s.r(o), s.d(o, {
-        FormattedMessage: () => i.A,
+        FormattedMessage: () => a.A,
         POSIXLocales: () => w,
-        ReactIntlProviderForMocking: () => a.A,
+        ReactIntlProviderForMocking: () => r.A,
         createDevLocaleHook: () => y,
         createIntl: () => n.E,
         defineMessages: () => t.YK,
@@ -63,14 +63,14 @@ try {
         locales: () => h,
         onLanguageChange: () => E,
         splitLocale: () => k,
-        useIntl: () => r.A,
+        useIntl: () => i.A,
         withIntl: () => _
       });
       var t = s(7338),
         n = s(3747),
-        i = s(743),
-        r = s(4775),
-        a = s(4422),
+        a = s(743),
+        i = s(4775),
+        r = s(4422),
         l = s(9793),
         c = s(3082),
         u = s(7279);
@@ -214,17 +214,17 @@ try {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
           })(e), n = f;
-          let i;
-          const r = `rockstarweb_lang.${o.cookieIdentifier}`,
-            a = p(r);
-          i = o.currentSite?.site === u.C.www ? h.find(e => e.subdomaincom === t) || h.find(e => e.subdomaincom === s) || n : h.find(e => e.iso === a) || n;
-          const [, l] = m(r, i.iso);
-          return [i, l]
+          let a;
+          const i = `rockstarweb_lang.${o.cookieIdentifier}`,
+            r = p(i);
+          a = o.currentSite?.site === u.C.www ? h.find(e => e.subdomaincom === t) || h.find(e => e.subdomaincom === s) || n : h.find(e => e.iso === r) || n;
+          const [, l] = m(i, a.iso);
+          return [a, l]
         };
 
       function _(e, o, s, t) {
         return n => {
-          const i = (0, c.useMemo)(() => {
+          const a = (0, c.useMemo)(() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const s = o ?? g()[0].iso ?? "en-US",
@@ -242,13 +242,13 @@ try {
               }(e, o)
             }(o, s)
           }, [s]);
-          return (0, l.jsx)(a.A, {
-            locale: i?.locale || "en-US",
+          return (0, l.jsx)(r.A, {
+            locale: a?.locale || "en-US",
             messages: {
-              ...i?.messages
+              ...a?.messages
             },
             onError: t,
-            children: i && (0, l.jsx)(e, {
+            children: a && (0, l.jsx)(e, {
               ...n
             })
           }, "intl-provider")
@@ -311,20 +311,20 @@ try {
           }
           if (t)
             for (const [n, {
-                regex: i,
-                isSubdomain: r,
-                isLocaleInUrl: a,
+                regex: a,
+                isSubdomain: i,
+                isLocaleInUrl: r,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries($)) {
-              if (!i.test(e.toLowerCase())) continue;
+              if (!a.test(e.toLowerCase())) continue;
               const u = s[n];
               if (!u) continue;
               let d = "";
-              "en" !== o.subdomaincom && a && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === t.pathname && (d += "/"));
+              "en" !== o.subdomaincom && r && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === t.pathname && (d += "/"));
               const p = t.host.split(".");
               let m = "";
-              return "www" !== n || c?.some(e => e.test(t.pathname)) ? ("www" !== n && (m += `https://${u}`, m += r ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
+              return "www" !== n || c?.some(e => e.test(t.pathname)) ? ("www" !== n && (m += `https://${u}`, m += i ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
                 link: `${m}${d}${"/"===t.pathname?"":t.pathname}${t.search}${t.hash}`,
                 isExternal: !0
               }) : {
@@ -348,25 +348,25 @@ try {
           const t = (0, u.A)(),
             [, n] = g(),
             {
-              subdomaincom: i,
-              iso: r
+              subdomaincom: a,
+              iso: i
             } = e,
-            a = (e => {
+            r = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const s = o.split("/");
               return h.map(e => e.subdomaincom).includes(s[0]) && (o = s.slice(1).join("/")), t.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-            })(i);
+            })(a);
           o?.({
             event: "cta_other",
-            link_url: a,
-            text: i,
+            link_url: r,
+            text: a,
             element_placement: s?.toLowerCase()
-          }), n(r), window.location.assign(a)
+          }), n(i), window.location.assign(r)
         }
     },
     7279(e, o, s) {
       s.d(o, {
-        A: () => r,
+        A: () => i,
         C: () => n
       });
       var t = s(283);
@@ -378,7 +378,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        i = [{
+        a = [{
           id: "prod",
           sites: {
             www: "www",
@@ -390,20 +390,20 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        r = () => {
+        i = () => {
           let e;
           const {
             location: o
-          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), n = i.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
+          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), n = a.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
             site: o,
             subDomain: t
-          }, !0)) >= 0), r = i[n >= 0 ? n : 0], a = i.find(e => e.id === r.fallbackEnvironment);
+          }, !0)) >= 0), i = a[n >= 0 ? n : 0], r = a.find(e => e.id === i.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
-          }), (0, t.omit)((0, t.merge)({}, a, {
+          }), (0, t.omit)((0, t.merge)({}, r, {
             currentSite: e
-          }, r), "fallbackEnvironment")
+          }, i), "fallbackEnvironment")
         }
     }
   }

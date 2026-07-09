@@ -24,7 +24,7 @@ try {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function s(e) {
+      function a(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -48,23 +48,23 @@ try {
           n = i
         }
       }();
-      var a, u = [],
-        d = !1,
-        f = -1;
+      var s, f = [],
+        u = !1,
+        d = -1;
 
       function l() {
-        d && a && (d = !1, a.length ? u = a.concat(u) : f = -1, u.length && c())
+        u && s && (u = !1, s.length ? f = s.concat(f) : d = -1, f.length && c())
       }
 
       function c() {
-        if (!d) {
-          var e = s(l);
-          d = !0;
-          for (var t = u.length; t;) {
-            for (a = u, u = []; ++f < t;) a && a[f].run();
-            f = -1, t = u.length
+        if (!u) {
+          var e = a(l);
+          u = !0;
+          for (var t = f.length; t;) {
+            for (s = f, f = []; ++d < t;) s && s[d].run();
+            d = -1, t = f.length
           }
-          a = null, d = !1,
+          s = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -90,7 +90,7 @@ try {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new b(e, t)), 1 !== u.length || d || s(c)
+        f.push(new b(e, t)), 1 !== f.length || u || a(c)
       }, b.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {

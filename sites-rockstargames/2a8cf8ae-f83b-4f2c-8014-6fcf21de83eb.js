@@ -31,7 +31,7 @@ try {
       function d(e) {
         return e
       }
-      var s = function(e) {
+      var f = function(e) {
           void 0 === e && (e = {});
           var n = function(e, n) {
             void 0 === n && (n = d);
@@ -95,13 +95,13 @@ try {
             ssr: !1
           }, e), n
         }(),
-        f = function() {},
+        s = function() {},
         h = o.forwardRef(function(e, n) {
           var t = o.useRef(null),
             a = o.useState({
-              onScrollCapture: f,
-              onWheelCapture: f,
-              onTouchMoveCapture: f
+              onScrollCapture: s,
+              onWheelCapture: s,
+              onTouchMoveCapture: s
             }),
             c = a[0],
             d = a[1],
@@ -158,7 +158,7 @@ try {
             }([t, n]),
             _ = (0, r.Cl)((0, r.Cl)({}, T), c);
           return o.createElement(o.Fragment, null, m && o.createElement(N, {
-            sideCar: s,
+            sideCar: f,
             removeScrollBar: g,
             shards: b,
             noRelative: y,
@@ -381,14 +381,14 @@ try {
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
               l = "deltaY" in e ? e.deltaY : c[1] - o[1],
               d = e.target,
-              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === s && "range" === d.type) return !1;
-            var f = window.getSelection(),
-              h = f && f.anchorNode;
+              f = Math.abs(i) > Math.abs(l) ? "h" : "v";
+            if ("touches" in e && "h" === f && "range" === d.type) return !1;
+            var s = window.getSelection(),
+              h = s && s.anchorNode;
             if (h && (h === d || h.contains(d))) return !1;
-            var v = N(s, d);
+            var v = N(f, d);
             if (!v) return !0;
-            if (v ? r = s : (r = "v" === s ? "h" : "v", v = N(s, d)), !v) return !1;
+            if (v ? r = f : (r = "v" === f ? "h" : "v", v = N(f, d)), !v) return !1;
             if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
             var p = a.current || r;
             return function(e, n, t, r) {
@@ -401,17 +401,17 @@ try {
                 u = !1,
                 l = a > 0,
                 d = 0,
-                s = 0;
+                f = 0;
               do {
                 if (!c) break;
-                var f = _(e, c),
-                  h = f[0],
-                  v = f[1] - f[2] - o * h;
-                (h || v) && L(e, c) && (d += v, s += h);
+                var s = _(e, c),
+                  h = s[0],
+                  v = s[1] - s[2] - o * h;
+                (h || v) && L(e, c) && (d += v, f += h);
                 var p = c.parentNode;
                 c = p && p.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? p.host : p
               } while (!i && c !== document.body || i && (n.contains(c) || n === c));
-              return (l && (Math.abs(d) < 1 || !1) || !l && (Math.abs(s) < 1 || !1)) && (u = !0), u
+              return (l && (Math.abs(d) < 1 || !1) || !l && (Math.abs(f) < 1 || !1)) && (u = !0), u
             }(p, n, e, "h" === p ? i : l)
           }, []),
           d = o.useCallback(function(e) {
@@ -431,7 +431,7 @@ try {
               }
             }
           }, []),
-          s = o.useCallback(function(e, t, r, o) {
+          f = o.useCallback(function(e, t, r, o) {
             var a = {
               name: e,
               delta: t,
@@ -445,25 +445,25 @@ try {
               })
             }, 1)
           }, []),
-          f = o.useCallback(function(e) {
+          s = o.useCallback(function(e) {
             t.current = x(e), a.current = void 0
           }, []),
           h = o.useCallback(function(n) {
-            s(n.type, I(n), n.target, l(n, e.lockRef.current))
+            f(n.type, I(n), n.target, l(n, e.lockRef.current))
           }, []),
           v = o.useCallback(function(n) {
-            s(n.type, x(n), n.target, l(n, e.lockRef.current))
+            f(n.type, x(n), n.target, l(n, e.lockRef.current))
           }, []);
         o.useEffect(function() {
           return D.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", d, R), document.addEventListener("touchmove", d, R), document.addEventListener("touchstart", f, R),
+            }), document.addEventListener("wheel", d, R), document.addEventListener("touchmove", d, R), document.addEventListener("touchstart", s, R),
             function() {
               D = D.filter(function(e) {
                 return e !== i
-              }), document.removeEventListener("wheel", d, R), document.removeEventListener("touchmove", d, R), document.removeEventListener("touchstart", f, R)
+              }), document.removeEventListener("wheel", d, R), document.removeEventListener("touchmove", d, R), document.removeEventListener("touchstart", s, R)
             }
         }, []);
         var p = e.removeScrollBar,
@@ -474,7 +474,7 @@ try {
           noRelative: e.noRelative,
           gapMode: e.gapMode
         }) : null)
-      }, s.useMedium(Y), v);
+      }, f.useMedium(Y), v);
       var Y, F = o.forwardRef(function(e, n) {
         return o.createElement(h, (0, r.Cl)({}, e, {
           ref: n,

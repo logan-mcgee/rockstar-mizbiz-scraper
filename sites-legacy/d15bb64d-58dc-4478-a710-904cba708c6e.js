@@ -13,45 +13,45 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [5847], {
-    77678(e, t, n) {
-      n.d(t, {
-        F: () => a
+    77678(e, t, a) {
+      a.d(t, {
+        F: () => n
       });
-      const a = () => {
+      const n = () => {
         const e = window.location.hostname.split(".");
         return e.slice(e.length - 2).join(".")
       }
     },
-    32118(e, t, n) {
-      n.d(t, {
+    32118(e, t, a) {
+      a.d(t, {
         t: () => o
       });
-      var a = n(42909),
-        s = n(39991);
+      var n = a(42909),
+        s = a(39991);
       const o = async ({
         service: e,
         returnUrl: t,
-        pingBearer: n
+        pingBearer: a
       }) => {
         const [{
           iso: o
-        }] = (0, a.getLocale)(), {
+        }] = (0, n.getLocale)(), {
           authHost: r,
           clientId: c
-        } = (0, s.A)(), i = await n(), l = new URL(`tpa/${e}/link`, `https://${r}.rockstargames.com`);
+        } = (0, s.A)(), i = await a(), l = new URL(`tpa/${e}/link`, `https://${r}.rockstargames.com`);
         return l.searchParams.append("cid", c), l.searchParams.append("lang", o), l.searchParams.append("returnUrl", t ?? window.location.pathname), i && "boolean" != typeof i && "string" == typeof i.bearerToken && l.searchParams.append("accessToken", i.bearerToken), l
       }
     },
-    39991(e, t, n) {
-      n.d(t, {
+    39991(e, t, a) {
+      a.d(t, {
         A: () => c
       });
-      const a = window?.env?.sc,
+      const n = window?.env?.sc,
         s = window?.env?.marketing,
         o = ({
           apiHost: e,
           authHost: t,
-          clientId: n,
+          clientId: a,
           cms: o,
           graphEnv: r,
           queryManifest: c,
@@ -61,17 +61,17 @@ try {
           key: p,
           marketingAuthTLD: h
         }) => {
-          const m = a?.apiHost ?? e,
-            u = a?.authHost ?? t,
-            g = a?.cdnBase ?? d,
-            b = a?.clientId ?? n,
-            w = s?.marketingAuthTLD ?? h,
-            f = a?.scHost ?? i,
+          const m = n?.apiHost ?? e,
+            u = n?.authHost ?? t,
+            g = n?.cdnBase ?? d,
+            b = n?.clientId ?? a,
+            f = s?.marketingAuthTLD ?? h,
+            w = n?.scHost ?? i,
             y = s?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${m}.rockstargames.com`,
-            graphEnv: a?.graphEnv ?? r,
-            host: f,
+            graphEnv: n?.graphEnv ?? r,
+            host: w,
             hostname: l,
             cdnBase: g,
             key: p,
@@ -79,13 +79,13 @@ try {
             cms: `https://${o}.rockstargames.com/graphql`,
             authHost: u,
             queryManifest: c,
-            scBase: `https://${f}.rockstargames.com/`,
+            scBase: `https://${w}.rockstargames.com/`,
             login: `https://${u}.rockstargames.com/connect/authorize/${b}`,
             silentCheck: `https://${u}.rockstargames.com/connect/cors/check/${b}`,
             signup: `https://${u}.rockstargames.com/create/?cid=${b}`,
-            gateway: `https://${w}/auth/gateway.json`,
-            logout: `https://${w}/auth/sc-auth-logout`,
-            pingBearer: `https://${w}/${y}`,
+            gateway: `https://${f}/auth/gateway.json`,
+            logout: `https://${f}/auth/sc-auth-logout`,
+            pingBearer: `https://${f}/${y}`,
             authCookieName: "BearerToken"
           }
         },
@@ -127,8 +127,8 @@ try {
           }) => new RegExp(e).test(document.location.hostname)) || r[0]
         }
     },
-    25847(e, t, n) {
-      n.d(t, {
+    25847(e, t, a) {
+      a.d(t, {
         OD: () => r,
         lv: () => c,
         wC: () => s,
@@ -142,11 +142,11 @@ try {
         rJ: () => S,
         pT: () => b,
         lV: () => E,
-        PA: () => a,
+        PA: () => n,
         My: () => m,
-        _e: () => w
-      }), n(39793);
-      const a = ({
+        _e: () => f
+      }), a(39793);
+      const n = ({
           element: e
         }) => {
           const t = setInterval(() => e.scrollIntoView({
@@ -154,27 +154,27 @@ try {
               block: "center",
               inline: "center"
             }), 100),
-            n = e => {
-              e.target === document && (clearInterval(t), document.removeEventListener("scroll", n))
+            a = e => {
+              e.target === document && (clearInterval(t), document.removeEventListener("scroll", a))
             };
-          document.addEventListener("scroll", n)
+          document.addEventListener("scroll", a)
         },
         s = ({
           paramName: e = "section"
         } = {}) => {
           const t = new URLSearchParams(document.location.search),
-            n = document.getElementById(t.get(e) || e);
-          n && (a({
-            element: n
-          }), o(n))
+            a = document.getElementById(t.get(e) || e);
+          a && (n({
+            element: a
+          }), o(a))
         },
         o = e => {
           const t = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
           if (t.includes(e.nodeName.toLowerCase())) e.focus();
           else {
-            const n = e?.querySelectorAll(t.join(", "));
-            if (n?.length) {
-              const e = [...n].find(e => !e?.hasAttribute("disabled"));
+            const a = e?.querySelectorAll(t.join(", "));
+            if (a?.length) {
+              const e = [...a].find(e => !e?.hasAttribute("disabled"));
               e?.focus()
             }
           }
@@ -186,8 +186,8 @@ try {
         onlineService;
         aliasOnlineService;
         alias;
-        constructor(e, t, n, a, s = null, o = null) {
-          this.name = e, this.friendlyName = t, this.id = n, this.onlineService = a, this.aliasOnlineService = s, this.alias = o
+        constructor(e, t, a, n, s = null, o = null) {
+          this.name = e, this.friendlyName = t, this.id = a, this.onlineService = n, this.aliasOnlineService = s, this.alias = o
         }
       }
       const c = Object.freeze({
@@ -216,46 +216,46 @@ try {
         const t = e.toString().toLowerCase();
         return i.find(e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.onlineService?.toLowerCase() || t === e.aliasOnlineService?.toLowerCase() || t === e.alias?.toLowerCase())
       }
-      var d = n(23058),
-        p = n(77678);
+      var d = a(23058),
+        p = a(77678);
       const h = e => {
           const t = document.cookie.split("; "),
-            n = `${e}=`,
-            a = t.find(e => e.startsWith(n)),
-            s = a?.substring(n.length, a.length);
+            a = `${e}=`,
+            n = t.find(e => e.startsWith(a)),
+            s = n?.substring(a.length, n.length);
           return s
         },
         m = (e, t) => {
           e && void 0 !== t && (0, d.canStoreCookie)(e) && h(e) !== t && (document.cookie = `${e}=${t}; domain=${(0,p.F)()}; path=/;`)
         };
-      var u = n(87605);
+      var u = a(87605);
       Object.values(u.d), u.d.BL;
-      var g = n(32118);
+      var g = a(32118);
       const b = e => e.keys().forEach(e),
-        w = e => e.replace(/(<([^>]+)>)/gi, ""),
-        f = [{
+        f = e => e.replace(/(<([^>]+)>)/gi, ""),
+        w = [{
           key: "dev",
           path: "https://media-dev-rockstargames-com.akamaized.net"
         }, {
           key: "prod",
           path: "https://media-rockstargames-com.akamaized.net"
         }],
-        y = (e = !0) => f.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
+        y = (e = !0) => w.filter(t => t.key === (e ? "prod" : "dev"))[0]?.path ?? null,
         k = e => {
           e.preventDefault();
           const t = e.currentTarget.href,
-            n = (e => {
+            a = (e => {
               const t = new URL(e).pathname.split("/"),
-                n = t[t.length - 1];
-              return decodeURIComponent(n)
+                a = t[t.length - 1];
+              return decodeURIComponent(a)
             })(t);
           fetch(t, {
             method: "GET",
             headers: {}
           }).then(e => e.arrayBuffer()).then(e => {
             const t = window.URL.createObjectURL(new Blob([e])),
-              a = document.createElement("a");
-            a.href = t, a.setAttribute("download", n), document.body.appendChild(a), a.click(), document.body.removeChild(a)
+              n = document.createElement("a");
+            n.href = t, n.setAttribute("download", a), document.body.appendChild(n), n.click(), document.body.removeChild(n)
           }).catch(e => {
             console.log(e)
           })
@@ -283,11 +283,11 @@ try {
           return t.has(e) ? t.get(e) : e
         }
     },
-    87605(e, t, n) {
-      n.d(t, {
-        d: () => a
+    87605(e, t, a) {
+      a.d(t, {
+        d: () => n
       });
-      const a = {
+      const n = {
         BL: "bl"
       }
     }

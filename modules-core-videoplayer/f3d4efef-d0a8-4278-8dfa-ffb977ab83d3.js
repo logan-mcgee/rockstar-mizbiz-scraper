@@ -35,8 +35,8 @@ try {
       } = {}) => {
         try {
           const {
-            bearerToken: m = null
-          } = await (i?.()) ?? {}, f = {
+            bearerToken: f = null
+          } = await (i?.()) ?? {}, m = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
             "Content-Type": "application/json",
@@ -45,10 +45,10 @@ try {
             }
           };
           let h = `${u}/${e}`;
-          if (null === o || (0, a.isEmpty)(o) || (h += `?${new URLSearchParams(o)}`), !m && c) return null;
-          m && (f.Authorization = `Bearer ${m}`);
+          if (null === o || (0, a.isEmpty)(o) || (h += `?${new URLSearchParams(o)}`), !f && c) return null;
+          f && (m.Authorization = `Bearer ${f}`);
           const p = {
-              headers: f
+              headers: m
             },
             g = s().all([p, t, n]),
             v = JSON.stringify({
@@ -128,15 +128,15 @@ try {
           key: l,
           marketingAuthTLD: w
         }) => {
-          const m = r?.apiHost ?? e,
-            f = r?.authHost ?? t,
+          const f = r?.apiHost ?? e,
+            m = r?.authHost ?? t,
             h = r?.cdnBase ?? d,
             p = r?.clientId ?? n,
             g = o?.marketingAuthTLD ?? w,
             v = r?.scHost ?? c,
             y = o?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
-            apiHost: `https://${m}.rockstargames.com`,
+            apiHost: `https://${f}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: v,
             hostname: u,
@@ -144,12 +144,12 @@ try {
             key: l,
             clientId: p,
             cms: `https://${s}.rockstargames.com/graphql`,
-            authHost: f,
+            authHost: m,
             queryManifest: i,
             scBase: `https://${v}.rockstargames.com/`,
-            login: `https://${f}.rockstargames.com/connect/authorize/${p}`,
-            silentCheck: `https://${f}.rockstargames.com/connect/cors/check/${p}`,
-            signup: `https://${f}.rockstargames.com/create/?cid=${p}`,
+            login: `https://${m}.rockstargames.com/connect/authorize/${p}`,
+            silentCheck: `https://${m}.rockstargames.com/connect/cors/check/${p}`,
+            signup: `https://${m}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${g}/auth/gateway.json`,
             logout: `https://${g}/auth/sc-auth-logout`,
             pingBearer: `https://${g}/${y}`,
@@ -239,7 +239,7 @@ try {
         Vq: () => _,
         OH: () => g,
         zP: () => v,
-        Cb: () => m,
+        Cb: () => f,
         N6: () => k,
         GA: () => $,
         JE: () => U
@@ -280,7 +280,7 @@ try {
         };
       var l = n(5753),
         w = n(959);
-      const m = (e, {
+      const f = (e, {
         autoFetch: t = !0,
         fetchOptions: n = {},
         query: r = null,
@@ -289,15 +289,15 @@ try {
       }) => {
         const i = (0, l.Es)(),
           [c, u] = (0, s.useState)(null),
-          [d, m] = (0, s.useState)(!1),
-          [f, h] = (0, s.useState)(null),
+          [d, f] = (0, s.useState)(!1),
+          [m, h] = (0, s.useState)(null),
           [p, g] = (0, s.useState)(!1),
           v = (0, s.useCallback)(async (t = {}, s = null) => {
             try {
               const {
                 fetchOptions: c = {}
               } = t;
-              h(null), u(null), m(!0);
+              h(null), u(null), f(!0);
               const d = await (0, w.A)(s ?? e, {
                 pingBearer: i,
                 fetchOptions: n,
@@ -306,25 +306,25 @@ try {
                 requireBearerToken: o,
                 useCache: a
               });
-              return d?.status || h(JSON.stringify(d?.error)), u(d), m(!1), d
+              return d?.status || h(JSON.stringify(d?.error)), u(d), f(!1), d
             } catch (e) {
-              h(String(e)), m(!1)
+              h(String(e)), f(!1)
             } finally {
               g(!0)
             }
             return null
           }, [e, n, r]);
         return (0, s.useEffect)(() => {
-          null === c && null === f && !d && t && v()
-        }, [t, c, f, d, v]), {
+          null === c && null === m && !d && t && v()
+        }, [t, c, m, d, v]), {
           data: c,
-          error: f,
+          error: m,
           loading: d,
           fetch: v,
           resolved: p
         }
       };
-      var f = n(9991);
+      var m = n(9991);
       const h = "__RS_CUSTOM_EVENTS__",
         p = e => `rsCustomEvent:${e}`;
       window[h] || (window[h] = {});
@@ -366,7 +366,7 @@ try {
         const {
           signup: t,
           login: n
-        } = (0, f.A)(), r = (0, a.A)(), o = (0, b.t)(r);
+        } = (0, m.A)(), r = (0, a.A)(), o = (0, b.t)(r);
         let s = "";
         return s += "lang=" + encodeURIComponent(o), s += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${s}`,
@@ -545,10 +545,10 @@ try {
     },
     5753(e, t, n) {
       n.d(t, {
-        ec: () => m,
+        ec: () => f,
         e9: () => h,
         Es: () => p,
-        bD: () => f
+        bD: () => m
       });
       var r = n(9793),
         o = n(3082),
@@ -565,7 +565,7 @@ try {
           context: (0, o.createContext)(l),
           key: "utilsTokenProvider"
         }),
-        m = ({
+        f = ({
           children: e,
           token: t
         }) => (0, r.jsx)(w.Provider, {
@@ -574,18 +574,18 @@ try {
           },
           children: e
         }),
-        f = () => {
+        m = () => {
           const {
             token: e
           } = (0, o.useContext)(w);
           return [e]
         },
         h = () => {
-          const [e] = f();
+          const [e] = m();
           return (0, a.q)(e)
         },
         p = () => {
-          const [e] = f();
+          const [e] = m();
           return () => (async ({
             token: e
           }) => {
@@ -650,8 +650,8 @@ try {
     },
     5633(e, t, n) {
       n.d(t, {
-        G4: () => f,
-        uU: () => m
+        G4: () => m,
+        uU: () => f
       });
       var r = n(9793),
         o = n(3082),
@@ -719,7 +719,7 @@ try {
           Consumer: l
         } = d,
         w = (0, a.UT)(u()),
-        m = ({
+        f = ({
           children: e
         }) => {
           const t = (0, s.q)(w);
@@ -735,7 +735,7 @@ try {
             children: e
           })
         },
-        f = () => (0, o.useContext)(d)
+        m = () => (0, o.useContext)(d)
     },
     7714(e, t, n) {
       n.d(t, {
@@ -760,33 +760,33 @@ try {
         w = ({
           children: e
         }) => {
-          const [t, n] = (0, o.useState)(window.pageYOffset), [a, i] = (0, o.useState)(null), [l, w] = (0, o.useState)(!1), m = (0, s.q)(c);
-          let f;
+          const [t, n] = (0, o.useState)(window.pageYOffset), [a, i] = (0, o.useState)(null), [l, w] = (0, o.useState)(!1), f = (0, s.q)(c);
+          let m;
           const h = () => {
-            w(!0), clearTimeout(f), f = setTimeout(() => {
+            w(!0), clearTimeout(m), m = setTimeout(() => {
               w(!1)
             }, 2e3)
           };
           return (0, o.useEffect)(() => {
             let e;
             const t = () => {
-              if (m) return void i(!1);
+              if (f) return void i(!1);
               const t = Math.max(0, window.pageYOffset);
               n(t), l || i(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }, [l, m]), (0, o.useMemo)(() => (0, r.jsx)(d.Provider, {
+          }, [l, f]), (0, o.useMemo)(() => (0, r.jsx)(d.Provider, {
             value: {
-              freezeUserShouldSeeMore: m,
+              freezeUserShouldSeeMore: f,
               pageYOffset: t,
               pauseUserShouldSeeMore: h,
               setFreezeUserShouldSeeMore: u,
               userShouldSeeMore: a
             },
             children: e
-          }), [m, t, h, a])
+          }), [f, t, h, a])
         }
     }
   }

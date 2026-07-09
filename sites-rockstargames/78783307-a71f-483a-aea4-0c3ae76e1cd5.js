@@ -19,9 +19,9 @@ try {
         CONTAINERS: () => p,
         EMPTY_DOCUMENT: () => T,
         HEADINGS: () => d,
-        INLINES: () => o,
+        INLINES: () => a,
         LIST_ITEM_BLOCKS: () => E,
-        MARKS: () => a,
+        MARKS: () => o,
         TABLE_BLOCKS: () => c,
         TEXT_CONTAINERS: () => l,
         TOP_LEVEL_BLOCKS: () => i,
@@ -34,18 +34,18 @@ try {
       var r = {};
       n.r(r), n.d(r, {
         isBlock: () => y,
-        isEmptyParagraph: () => R,
+        isEmptyParagraph: () => f,
         isInline: () => D,
         isText: () => L,
-        stripEmptyTrailingParagraphFromDocument: () => f
+        stripEmptyTrailingParagraphFromDocument: () => R
       });
       var s = function(e) {
           return e.DOCUMENT = "document", e.PARAGRAPH = "paragraph", e.HEADING_1 = "heading-1", e.HEADING_2 = "heading-2", e.HEADING_3 = "heading-3", e.HEADING_4 = "heading-4", e.HEADING_5 = "heading-5", e.HEADING_6 = "heading-6", e.OL_LIST = "ordered-list", e.UL_LIST = "unordered-list", e.LIST_ITEM = "list-item", e.HR = "hr", e.QUOTE = "blockquote", e.EMBEDDED_ENTRY = "embedded-entry-block", e.EMBEDDED_ASSET = "embedded-asset-block", e.EMBEDDED_RESOURCE = "embedded-resource-block", e.TABLE = "table", e.TABLE_ROW = "table-row", e.TABLE_CELL = "table-cell", e.TABLE_HEADER_CELL = "table-header-cell", e
         }({}),
-        o = function(e) {
+        a = function(e) {
           return e.ASSET_HYPERLINK = "asset-hyperlink", e.EMBEDDED_ENTRY = "embedded-entry-inline", e.EMBEDDED_RESOURCE = "embedded-resource-inline", e.ENTRY_HYPERLINK = "entry-hyperlink", e.HYPERLINK = "hyperlink", e.RESOURCE_HYPERLINK = "resource-hyperlink", e
         }({}),
-        a = function(e) {
+        o = function(e) {
           return e.BOLD = "bold", e.ITALIC = "italic", e.UNDERLINE = "underline", e.CODE = "code", e.SUPERSCRIPT = "superscript", e.SUBSCRIPT = "subscript", e.STRIKETHROUGH = "strikethrough", e
         }({});
       const i = [s.PARAGRAPH, s.HEADING_1, s.HEADING_2, s.HEADING_3, s.HEADING_4, s.HEADING_5, s.HEADING_6, s.OL_LIST, s.UL_LIST, s.HR, s.QUOTE, s.EMBEDDED_ENTRY, s.EMBEDDED_ASSET, s.EMBEDDED_RESOURCE, s.TABLE],
@@ -64,8 +64,8 @@ try {
         },
         d = [s.HEADING_1, s.HEADING_2, s.HEADING_3, s.HEADING_4, s.HEADING_5, s.HEADING_6],
         l = [s.PARAGRAPH, ...d],
-        u = [s.DOCUMENT, s.PARAGRAPH, s.HEADING_1, s.HEADING_2, s.HEADING_3, s.HEADING_4, s.HEADING_5, s.HEADING_6, s.OL_LIST, s.UL_LIST, s.LIST_ITEM, s.HR, s.QUOTE, s.EMBEDDED_ENTRY, s.EMBEDDED_ASSET, o.HYPERLINK, o.ENTRY_HYPERLINK, o.ASSET_HYPERLINK, o.EMBEDDED_ENTRY, "text"],
-        A = [a.BOLD, a.CODE, a.ITALIC, a.UNDERLINE],
+        u = [s.DOCUMENT, s.PARAGRAPH, s.HEADING_1, s.HEADING_2, s.HEADING_3, s.HEADING_4, s.HEADING_5, s.HEADING_6, s.OL_LIST, s.UL_LIST, s.LIST_ITEM, s.HR, s.QUOTE, s.EMBEDDED_ENTRY, s.EMBEDDED_ASSET, a.HYPERLINK, a.ENTRY_HYPERLINK, a.ASSET_HYPERLINK, a.EMBEDDED_ENTRY, "text"],
+        A = [o.BOLD, o.CODE, o.ITALIC, o.UNDERLINE],
         T = {
           nodeType: s.DOCUMENT,
           data: {},
@@ -88,7 +88,7 @@ try {
       }
 
       function D(e) {
-        return _(o, e.nodeType)
+        return _(a, e.nodeType)
       }
 
       function y(e) {
@@ -99,17 +99,17 @@ try {
         return "text" === e.nodeType
       }
 
-      function R(e) {
+      function f(e) {
         if (e.nodeType !== s.PARAGRAPH) return !1;
         if (1 !== e.content.length) return !1;
         const t = e.content[0];
         return "text" === t.nodeType && "" === t.value
       }
 
-      function f(e) {
+      function R(e) {
         return ! function(e) {
           return null != e && "object" == typeof e && "content" in e && Array.isArray(e.content)
-        }(e) || e.content.length < 2 ? e : R(e.content[e.content.length - 1]) ? {
+        }(e) || e.content.length < 2 ? e : f(e.content[e.content.length - 1]) ? {
           ...e,
           content: e.content.slice(0, -1)
         } : e
@@ -269,8 +269,8 @@ try {
           let r = !1;
           n.forEach((n, s) => {
             if (r) return;
-            const o = t(n, this.path.of(e).of(s));
-            o.length > 0 && (r = !0), this.catch(...o)
+            const a = t(n, this.path.of(e).of(s));
+            a.length > 0 && (r = !0), this.catch(...a)
           })
         }
       }
@@ -329,7 +329,7 @@ try {
         last = () => this.path[this.path.length - 1];
         toArray = () => this.path
       }
-      const B = g([...Object.values(o), "text"].sort()),
+      const B = g([...Object.values(a), "text"].sort()),
         P = g([s.LIST_ITEM]),
         G = m("Entry", b),
         C = g(() => ({
@@ -366,7 +366,7 @@ try {
           })),
           [s.TABLE_CELL]: C,
           [s.TABLE_HEADER_CELL]: C,
-          [o.HYPERLINK]: new class extends H {
+          [a.HYPERLINK]: new class extends H {
             constructor() {
               super(["text"], (e, t) => this.assertLink(e, t))
             }
@@ -375,11 +375,11 @@ try {
               return n.string("uri"), n.noAdditionalProperties(["uri"]), n.errors
             }
           },
-          [o.EMBEDDED_ENTRY]: G,
-          [o.EMBEDDED_RESOURCE]: m("Contentful:Entry", b),
-          [o.ENTRY_HYPERLINK]: m("Entry", ["text"]),
-          [o.ASSET_HYPERLINK]: m("Asset", ["text"]),
-          [o.RESOURCE_HYPERLINK]: m("Contentful:Entry", ["text"])
+          [a.EMBEDDED_ENTRY]: G,
+          [a.EMBEDDED_RESOURCE]: m("Contentful:Entry", b),
+          [a.ENTRY_HYPERLINK]: m("Entry", ["text"]),
+          [a.ASSET_HYPERLINK]: m("Asset", ["text"]),
+          [a.RESOURCE_HYPERLINK]: m("Contentful:Entry", ["text"])
         };
 
       function k(e, t) {

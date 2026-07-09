@@ -13,16 +13,16 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [331], {
-    40055(e, t, n) {
+    40055(e, t, a) {
       "use strict";
-      var a = n(42528);
+      var n = a(42528);
 
       function s() {}
 
       function o() {}
       o.resetWarningCache = s, e.exports = function() {
-        function e(e, t, n, s, o, d) {
-          if (d !== a) {
+        function e(e, t, a, s, o, d) {
+          if (d !== n) {
             var r = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw r.name = "Invariant Violation", r
           }
@@ -32,7 +32,7 @@ try {
           return e
         }
         e.isRequired = e;
-        var n = {
+        var a = {
           array: e,
           bigint: e,
           bool: e,
@@ -55,11 +55,11 @@ try {
           checkPropTypes: o,
           resetWarningCache: s
         };
-        return n.PropTypes = n, n
+        return a.PropTypes = a, a
       }
     },
-    60331(e, t, n) {
-      e.exports = n(40055)()
+    60331(e, t, a) {
+      e.exports = a(40055)()
     },
     42528(e) {
       "use strict";

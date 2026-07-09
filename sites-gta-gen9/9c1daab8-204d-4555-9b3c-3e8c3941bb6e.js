@@ -186,18 +186,18 @@ try {
         onChange: h
       } = {}) {
         var b;
-        const [u, p] = n.useState(null), f = n.useRef(h), [g, y] = n.useState({
+        const [u, f] = n.useState(null), p = n.useRef(h), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        f.current = h, n.useEffect(() => {
+        p.current = h, n.useEffect(() => {
           if (a || !u) return;
           let n;
           return n = c(u, (e, t) => {
             y({
               inView: e,
               entry: t
-            }), f.current && f.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), p.current && p.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }, {
             root: r,
             rootMargin: s,
@@ -214,7 +214,7 @@ try {
           inView: !!d,
           entry: void 0
         }));
-        const k = [p, g.inView, g.entry];
+        const k = [f, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

@@ -14,11 +14,11 @@ try {
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [793], {
     4931(e, d, o) {
-      var r = o(3082),
-        n = Symbol.for("react.element"),
-        t = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
-        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+      var a = o(3082),
+        f = Symbol.for("react.element"),
+        r = Symbol.for("react.fragment"),
+        n = Object.prototype.hasOwnProperty,
+        t = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -27,22 +27,22 @@ try {
         };
 
       function s(e, d, o) {
-        var r, t = {},
+        var a, r = {},
           s = null,
           i = null;
-        for (r in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (i = d.ref), d) a.call(d, r) && !l.hasOwnProperty(r) && (t[r] = d[r]);
+        for (a in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (i = d.ref), d) n.call(d, a) && !l.hasOwnProperty(a) && (r[a] = d[a]);
         if (e && e.defaultProps)
-          for (r in d = e.defaultProps) void 0 === t[r] && (t[r] = d[r]);
+          for (a in d = e.defaultProps) void 0 === r[a] && (r[a] = d[a]);
         return {
-          $$typeof: n,
+          $$typeof: f,
           type: e,
           key: s,
           ref: i,
-          props: t,
-          _owner: f.current
+          props: r,
+          _owner: t.current
         }
       }
-      d.Fragment = t, d.jsx = s, d.jsxs = s
+      d.Fragment = r, d.jsx = s, d.jsxs = s
     },
     9793(e, d, o) {
       e.exports = o(4931)

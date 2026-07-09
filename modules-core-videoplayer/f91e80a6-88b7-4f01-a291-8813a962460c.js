@@ -19,22 +19,22 @@ try {
         if ("string" == typeof e || "number" == typeof e) o += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
-            var t = e.length;
-            for (a = 0; a < t; a++) e[a] && (d = n(e[a])) && (o && (o += " "), o += d)
+            var f = e.length;
+            for (a = 0; a < f; a++) e[a] && (d = n(e[a])) && (o && (o += " "), o += d)
           } else
             for (d in e) e[d] && (o && (o += " "), o += d);
         return o
       }
 
       function o() {
-        for (var e, a, d = 0, o = "", t = arguments.length; d < t; d++)(e = arguments[d]) && (a = n(e)) && (o && (o += " "), o += a);
+        for (var e, a, d = 0, o = "", f = arguments.length; d < f; d++)(e = arguments[d]) && (a = n(e)) && (o && (o += " "), o += a);
         return o
       }
       d.r(a), d.d(a, {
         clsx: () => o,
-        default: () => t
+        default: () => f
       });
-      const t = o
+      const f = o
     }
   }
 ]);

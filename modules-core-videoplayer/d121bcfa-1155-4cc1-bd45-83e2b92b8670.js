@@ -16,12 +16,12 @@ try {
     6602(e, o, s) {
       s.r(o), s.d(o, {
         FormattedMessage: () => i.A,
-        POSIXLocales: () => f,
+        POSIXLocales: () => w,
         ReactIntlProviderForMocking: () => r.A,
         createDevLocaleHook: () => $,
         createIntl: () => n.E,
         defineMessages: () => t.YK,
-        englishLocale: () => w,
+        englishLocale: () => f,
         getCookieValueByName: () => p,
         getLocale: () => g,
         linkWithLocale: () => y,
@@ -165,8 +165,8 @@ try {
           store: "zh-CN",
           posix: "zh_hans"
         }],
-        w = b[0],
-        f = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        f = b[0],
+        w = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
         h = b,
         g = () => {
           const {
@@ -179,7 +179,7 @@ try {
           })(e), t = (e => {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
-          })(e), n = w;
+          })(e), n = f;
           let i;
           const a = `rockstarweb_lang.${o.cookieIdentifier}`,
             r = p(a);

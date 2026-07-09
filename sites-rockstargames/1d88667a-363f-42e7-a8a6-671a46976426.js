@@ -233,8 +233,8 @@ try {
         for (s.forEach(function(e) {
             d.add(e)
           }); d.size > 0;) {
-          var c = d;
-          d = new Set, c.forEach(function(e) {
+          var o = d;
+          d = new Set, o.forEach(function(e) {
             r.has(e) || (r.add(e), (t[e] || new Set).forEach(function(e) {
               d.add(e)
             }))
@@ -299,17 +299,17 @@ try {
             })]
           })
         }),
-        c = ({
+        o = ({
           children: e
         }) => (0, t.jsx)("div", {
           className: r.header,
           children: e
         }),
-        o = ({
+        c = ({
           data: e
         }) => e ? (0, t.jsxs)("div", {
           className: r.creditContent,
-          children: [(0, t.jsx)(c, {
+          children: [(0, t.jsx)(o, {
             children: (0, t.jsx)("h1", {
               children: "Credits"
             })
@@ -332,7 +332,7 @@ try {
           const a = e[0]?.static_json;
           return (0, t.jsxs)("div", {
             className: r.originalPeople,
-            children: [(0, t.jsx)(c, {
+            children: [(0, t.jsx)(o, {
               children: (0, t.jsx)("h2", {
                 children: "Original Game Credits"
               })
@@ -375,25 +375,25 @@ try {
         }) => {
           const i = "v" === a,
             {
-              data: c
+              data: o
             } = (0, n.useQuery)(s.CreditData, {
               variables: {
                 needsIfruit: i,
                 title: a
               }
             });
-          if (!c) return null;
+          if (!o) return null;
           const {
             creditsForTitle: f,
             creditsIfruit: m
-          } = c;
+          } = o;
           return (0, t.jsxs)("div", {
             className: r.allCredits,
             "data-title": a,
             children: [(0, t.jsx)(d, {
               title: a,
               t: e
-            }), (0, t.jsx)(o, {
+            }), (0, t.jsx)(c, {
               data: f
             }), "v" === a ? (0, t.jsx)(l, {
               data: m

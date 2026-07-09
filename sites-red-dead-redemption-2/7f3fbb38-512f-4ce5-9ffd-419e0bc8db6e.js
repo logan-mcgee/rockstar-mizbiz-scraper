@@ -36,7 +36,7 @@ try {
         try {
           const {
             bearerToken: w = null
-          } = await (i?.()) ?? {}, h = {
+          } = await (i?.()) ?? {}, f = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
             "Content-Type": "application/json",
@@ -44,16 +44,16 @@ try {
               "X-lang": d
             }
           };
-          let f = `${u}/${e}`;
-          if (null === s || (0, a.isEmpty)(s) || (f += `?${new URLSearchParams(s)}`), !w && c) return null;
-          w && (h.Authorization = `Bearer ${w}`);
+          let h = `${u}/${e}`;
+          if (null === s || (0, a.isEmpty)(s) || (h += `?${new URLSearchParams(s)}`), !w && c) return null;
+          w && (f.Authorization = `Bearer ${w}`);
           const p = {
-              headers: h
+              headers: f
             },
             g = o().all([p, t, n]),
             v = JSON.stringify({
               ...g,
-              url: f
+              url: h
             }),
             b = await (0, r.sc)(v);
           if (m) {
@@ -66,7 +66,7 @@ try {
               loading: !0
             }
           }
-          const y = await fetch(f, g);
+          const y = await fetch(h, g);
           if (!y.ok) throw new Error(`ScApi fetch error for ${e} with status code ${y.status}`);
           const k = await y.json();
           return m && (l[b] = {
@@ -129,8 +129,8 @@ try {
           marketingAuthTLD: m
         }) => {
           const w = r?.apiHost ?? e,
-            h = r?.authHost ?? t,
-            f = r?.cdnBase ?? d,
+            f = r?.authHost ?? t,
+            h = r?.cdnBase ?? d,
             p = r?.clientId ?? n,
             g = s?.marketingAuthTLD ?? m,
             v = r?.scHost ?? c,
@@ -140,16 +140,16 @@ try {
             graphEnv: r?.graphEnv ?? a,
             host: v,
             hostname: u,
-            cdnBase: f,
+            cdnBase: h,
             key: l,
             clientId: p,
             cms: `https://${o}.rockstargames.com/graphql`,
-            authHost: h,
+            authHost: f,
             queryManifest: i,
             scBase: `https://${v}.rockstargames.com/`,
-            login: `https://${h}.rockstargames.com/connect/authorize/${p}`,
-            silentCheck: `https://${h}.rockstargames.com/connect/cors/check/${p}`,
-            signup: `https://${h}.rockstargames.com/create/?cid=${p}`,
+            login: `https://${f}.rockstargames.com/connect/authorize/${p}`,
+            silentCheck: `https://${f}.rockstargames.com/connect/cors/check/${p}`,
+            signup: `https://${f}.rockstargames.com/create/?cid=${p}`,
             gateway: `https://${g}/auth/gateway.json`,
             logout: `https://${g}/auth/sc-auth-logout`,
             pingBearer: `https://${g}/${b}`,
@@ -289,14 +289,14 @@ try {
         const i = (0, l.Es)(),
           [c, u] = (0, o.useState)(null),
           [d, w] = (0, o.useState)(!1),
-          [h, f] = (0, o.useState)(null),
+          [f, h] = (0, o.useState)(null),
           [p, g] = (0, o.useState)(!1),
           v = (0, o.useCallback)(async (t = {}, o = null) => {
             try {
               const {
                 fetchOptions: c = {}
               } = t;
-              f(null), u(null), w(!0);
+              h(null), u(null), w(!0);
               const d = await (0, m.A)(o ?? e, {
                 pingBearer: i,
                 fetchOptions: n,
@@ -305,28 +305,28 @@ try {
                 requireBearerToken: s,
                 useCache: a
               });
-              return d?.status || f(JSON.stringify(d?.error)), u(d), w(!1), d
+              return d?.status || h(JSON.stringify(d?.error)), u(d), w(!1), d
             } catch (e) {
-              f(String(e)), w(!1)
+              h(String(e)), w(!1)
             } finally {
               g(!0)
             }
             return null
           }, [e, n, r]);
         return (0, o.useEffect)(() => {
-          null === c && null === h && !d && t && v()
-        }, [t, c, h, d, v]), {
+          null === c && null === f && !d && t && v()
+        }, [t, c, f, d, v]), {
           data: c,
-          error: h,
+          error: f,
           loading: d,
           fetch: v,
           resolved: p
         }
       };
-      var h = n(39991);
-      const f = "__RS_CUSTOM_EVENTS__",
+      var f = n(39991);
+      const h = "__RS_CUSTOM_EVENTS__",
         p = e => `rsCustomEvent:${e}`;
-      window[f] || (window[f] = {});
+      window[h] || (window[h] = {});
       const g = () => {
           const e = (e, t) => {
             if (!e) throw Error("Event name must be provided to work with custom events");
@@ -334,10 +334,10 @@ try {
               r = new CustomEvent(n, {
                 detail: t
               });
-            window[f][n] || (window[f][n] = {
+            window[h][n] || (window[h][n] = {
               eventQueue: [],
               subscribers: []
-            }), window[f][n].eventQueue.push(r), window[f][n].subscribers.forEach(e => {
+            }), window[h][n].eventQueue.push(r), window[h][n].subscribers.forEach(e => {
               e(r.detail)
             })
           };
@@ -349,13 +349,13 @@ try {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, o.useEffect)(() => {
             const n = p(e);
-            return window[f][n] || (window[f][n] = {
+            return window[h][n] || (window[h][n] = {
               eventQueue: [],
               subscribers: []
-            }), window[f][n].subscribers.push(t), window[f][n].eventQueue.forEach(e => {
+            }), window[h][n].subscribers.push(t), window[h][n].eventQueue.forEach(e => {
               t(e.detail)
             }), () => {
-              window[f][n].subscribers = window[f][n].subscribers.filter(e => e !== t), 0 === window[f][n].subscribers.length && delete window[f][n]
+              window[h][n].subscribers = window[h][n].subscribers.filter(e => e !== t), 0 === window[h][n].subscribers.length && delete window[h][n]
             }
           }, [e, t]), (0, o.useMemo)(() => ({}), [])
         };
@@ -365,7 +365,7 @@ try {
         const {
           signup: t,
           login: n
-        } = (0, h.A)(), r = (0, a.A)(), s = (0, y.t)(r);
+        } = (0, f.A)(), r = (0, a.A)(), s = (0, y.t)(r);
         let o = "";
         return o += "lang=" + encodeURIComponent(s), o += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
           signUpUrl: `${t}&${o}`,
@@ -519,9 +519,9 @@ try {
     95753(e, t, n) {
       n.d(t, {
         ec: () => w,
-        e9: () => f,
+        e9: () => h,
         Es: () => p,
-        bD: () => h
+        bD: () => f
       });
       var r = n(39793),
         s = n(93082),
@@ -547,18 +547,18 @@ try {
           },
           children: e
         }),
-        h = () => {
+        f = () => {
           const {
             token: e
           } = (0, s.useContext)(m);
           return [e]
         },
-        f = () => {
-          const [e] = h();
+        h = () => {
+          const [e] = f();
           return (0, a.q)(e)
         },
         p = () => {
-          const [e] = h();
+          const [e] = f();
           return () => (async ({
             token: e
           }) => {
@@ -623,7 +623,7 @@ try {
     },
     25633(e, t, n) {
       n.d(t, {
-        G4: () => h,
+        G4: () => f,
         uU: () => w
       });
       var r = n(39793),
@@ -708,7 +708,7 @@ try {
             children: e
           })
         },
-        h = () => (0, s.useContext)(d)
+        f = () => (0, s.useContext)(d)
     },
     17714(e, t, n) {
       n.d(t, {
@@ -734,9 +734,9 @@ try {
           children: e
         }) => {
           const [t, n] = (0, s.useState)(window.pageYOffset), [a, i] = (0, s.useState)(null), [l, m] = (0, s.useState)(!1), w = (0, o.q)(c);
-          let h;
-          const f = () => {
-            m(!0), clearTimeout(h), h = setTimeout(() => {
+          let f;
+          const h = () => {
+            m(!0), clearTimeout(f), f = setTimeout(() => {
               m(!1)
             }, 2e3)
           };
@@ -754,12 +754,12 @@ try {
             value: {
               freezeUserShouldSeeMore: w,
               pageYOffset: t,
-              pauseUserShouldSeeMore: f,
+              pauseUserShouldSeeMore: h,
               setFreezeUserShouldSeeMore: u,
               userShouldSeeMore: a
             },
             children: e
-          }), [w, t, f, a])
+          }), [w, t, h, a])
         }
     }
   }

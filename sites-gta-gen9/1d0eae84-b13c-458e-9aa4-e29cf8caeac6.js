@@ -137,8 +137,8 @@ try {
       var p = n(54563);
       const u = (e, t) => Array.isArray(e) ? e.map(e => u(e, t)) : null !== e && "object" == typeof e ? Object.keys(e).reduce((n, a) => (a !== t && (n[a] = u(e[a], t)), n), {}) : e,
         m = e => (0, r.useMemo)(() => u(e, "key"), [e]);
-      var g = n(97773),
-        f = n.n(g),
+      var f = n(97773),
+        g = n.n(f),
         y = n(76589);
       const _ = ({
         payload: e,
@@ -157,7 +157,7 @@ try {
             if (!e || !(0, s.has)(e, "key") || e.translated) return;
             const t = a[e.key] ?? null;
             if (!t) return;
-            const n = f()(t);
+            const n = g()(t);
             Object.keys(n).map(t => {
               (0, s.set)(e, t, n[t])
             }), (0, s.set)(e, "translated", !0), Object.freeze(e)
@@ -264,10 +264,10 @@ try {
           (0, r.useEffect)(() => {
             e?.payload && l(e.payload), e?.variables && m(e.variables)
           }, [e]);
-          const [g] = (0, r.useState)({
+          const [f] = (0, r.useState)({
             ...t,
             ...c() ?? {}
-          }), f = (({
+          }), g = (({
             payload: e
           }) => {
             const [t, n] = (0, r.useState)(e);
@@ -315,10 +315,10 @@ try {
             return (0, a.jsx)(p.o, {
               payload: s,
               children: (0, a.jsx)(d, {
-                components: g,
+                components: f,
                 children: (0, a.jsx)(S, {
                   payload: t,
-                  components: g,
+                  components: f,
                   componentProps: {
                     ...n,
                     tina: e
@@ -326,7 +326,7 @@ try {
                 })
               })
             })
-          }, [o, i, JSON.stringify(f), JSON.stringify(y)])
+          }, [o, i, JSON.stringify(g), JSON.stringify(y)])
         };
       var v = n(25993);
       const I = (e = "", t = 0, n = {}, a = () => {}) => {

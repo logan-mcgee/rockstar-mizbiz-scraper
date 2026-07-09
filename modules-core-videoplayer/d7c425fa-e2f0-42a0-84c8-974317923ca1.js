@@ -278,7 +278,7 @@ try {
             component: "color"
           }]
         }],
-        c = (e = {
+        h = (e = {
           parent: "",
           post: null,
           filter: null
@@ -309,7 +309,7 @@ try {
             component: "text"
           }], i
         },
-        h = (e = {
+        c = (e = {
           parent: "",
           post: null,
           filter: null
@@ -384,13 +384,13 @@ try {
           value: "calc(var(--grid-gap-static-xl) * -1)",
           label: "Xtra Large (Negative)"
         }],
-        v = {
+        f = {
           label: "Top",
           name: "top",
           description: "Distance from top for LAYERS (recommended to use %)",
           component: "text"
         },
-        f = {
+        v = {
           label: "Left",
           name: "left",
           description: "Distance from left for LAYERS (recommended to use %)",
@@ -891,9 +891,9 @@ try {
           const t = [{
               ...u("Position")
             }, {
-              ...v
-            }, {
               ...f
+            }, {
+              ...v
             }, {
               ...y
             }, {
@@ -987,9 +987,9 @@ try {
               ...u("Background..")
             }, ...p({
               filter: e
-            }), ...c({
-              filter: e
             }), ...h({
+              filter: e
+            }), ...c({
               filter: e
             }), {
               ...m("Background")
@@ -1072,21 +1072,21 @@ try {
             filter: e
           })]
         });
-      var ce = i(3082);
-      const he = (0, n.setContextItem)({
-          context: (0, ce.createContext)(),
+      var he = i(3082);
+      const ce = (0, n.setContextItem)({
+          context: (0, he.createContext)(),
           key: "tinaPayloadContext"
         }),
         {
           Provider: ue
-        } = he,
+        } = ce,
         me = e => e.full_src,
         ge = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,n.getCdnPrefix)(!1)}${t}`
         },
         be = e => e.meta.uploads_directory,
-        ve = (e = {
+        fe = (e = {
           label: "TranslationKey",
           description: "This value must begin with `key_` and MUST BE UNIQUE."
         }) => ({
@@ -1094,7 +1094,7 @@ try {
           component: "text",
           ...e
         }),
-        fe = (e = "") => ({
+        ve = (e = "") => ({
           label: `${e} Line`,
           name: `${e}_line`,
           component: () => (0, a.jsx)("hr", {})
@@ -1134,7 +1134,7 @@ try {
           })]
         }),
         xe = [{
-          ...fe("Background Image Gradient")
+          ...ve("Background Image Gradient")
         }, {
           ...((e = "Label") => ({
             label: e,
@@ -1180,7 +1180,7 @@ try {
           label: "Bottom Color",
           component: "color"
         }, {
-          ...fe("Background Image Gradient")
+          ...ve("Background Image Gradient")
         }, {
           label: "CSS for Linear Gradient (Optional)",
           description: "ex: to bottom, rgba(0,0,0,0.5) 80%, #000000",
@@ -1261,7 +1261,7 @@ try {
             name: "caption",
             label: "Caption",
             component: "html"
-          }), ve({
+          }), fe({
             label: "Translation Key",
             description: "Only used for images that were marked as translatable after they were created. This value must begin with `key_` and MUST BE UNIQUE."
           })];
@@ -1388,19 +1388,19 @@ try {
             cursor: "nw-resize"
           })
         },
-        Ee = (0, ce.memo)(function(e) {
+        Ee = (0, he.memo)(function(e) {
           var t = e.onResizeStart,
             i = e.direction,
             o = e.children,
             n = e.replaceStyles,
             l = e.className,
-            r = (0, ce.useCallback)(function(e) {
+            r = (0, he.useCallback)(function(e) {
               t(e, i)
             }, [t, i]),
-            s = (0, ce.useCallback)(function(e) {
+            s = (0, he.useCallback)(function(e) {
               t(e, i)
             }, [t, i]),
-            d = (0, ce.useMemo)(function() {
+            d = (0, he.useMemo)(function() {
               return Me(Me({
                 position: "absolute",
                 userSelect: "none"
@@ -1640,14 +1640,14 @@ try {
               s = r.direction,
               d = r.original,
               p = this.props,
-              c = p.lockAspectRatio,
-              h = p.lockAspectRatioExtraHeight,
+              h = p.lockAspectRatio,
+              c = p.lockAspectRatioExtraHeight,
               u = p.lockAspectRatioExtraWidth,
               m = d.width,
               g = d.height,
-              b = h || 0,
-              v = u || 0;
-            return Ie("right", s) && (m = d.width + (e - d.x) * n / a, c && (g = (m - v) / this.ratio + b)), Ie("left", s) && (m = d.width - (e - d.x) * n / a, c && (g = (m - v) / this.ratio + b)), Ie("bottom", s) && (g = d.height + (t - d.y) * l / a, c && (m = (g - b) * this.ratio + v)), Ie("top", s) && (g = d.height - (t - d.y) * l / a, c && (m = (g - b) * this.ratio + v)), {
+              b = c || 0,
+              f = u || 0;
+            return Ie("right", s) && (m = d.width + (e - d.x) * n / a, h && (g = (m - f) / this.ratio + b)), Ie("left", s) && (m = d.width - (e - d.x) * n / a, h && (g = (m - f) / this.ratio + b)), Ie("bottom", s) && (g = d.height + (t - d.y) * l / a, h && (m = (g - b) * this.ratio + f)), Ie("top", s) && (g = d.height - (t - d.y) * l / a, h && (m = (g - b) * this.ratio + f)), {
               newWidth: m,
               newHeight: g
             }
@@ -1659,20 +1659,20 @@ try {
               s = void 0 === a.width ? 10 : a.width,
               d = void 0 === i.width || i.width < 0 ? e : i.width,
               p = void 0 === a.height ? 10 : a.height,
-              c = void 0 === i.height || i.height < 0 ? t : i.height,
-              h = l || 0,
+              h = void 0 === i.height || i.height < 0 ? t : i.height,
+              c = l || 0,
               u = r || 0;
             if (n) {
-              var m = (p - h) * this.ratio + u,
-                g = (c - h) * this.ratio + u,
-                b = (s - u) / this.ratio + h,
-                v = (d - u) / this.ratio + h,
-                f = Math.max(s, m),
+              var m = (p - c) * this.ratio + u,
+                g = (h - c) * this.ratio + u,
+                b = (s - u) / this.ratio + c,
+                f = (d - u) / this.ratio + c,
+                v = Math.max(s, m),
                 y = Math.min(d, g),
                 x = Math.max(p, b),
-                w = Math.min(c, v);
-              e = je(e, f, y), t = je(t, x, w)
-            } else e = je(e, s, d), t = je(t, p, c);
+                w = Math.min(h, f);
+              e = je(e, v, y), t = je(t, x, w)
+            } else e = je(e, s, d), t = je(t, p, h);
             return {
               newWidth: e,
               newHeight: t
@@ -1750,8 +1750,8 @@ try {
                 s = Pe(e) ? e.touches[0].clientY : e.clientY,
                 d = this.state,
                 p = d.direction,
-                c = d.original,
-                h = d.width,
+                h = d.original,
+                c = d.width,
                 u = d.height,
                 m = this.getParentSize(),
                 g = function(e, t, i, a, o, n, l) {
@@ -1764,42 +1764,42 @@ try {
                 }(m, this.window.innerWidth, this.window.innerHeight, a, o, n, l);
               a = g.maxWidth, o = g.maxHeight, n = g.minWidth, l = g.minHeight;
               var b = this.calculateNewSizeFromDirection(r, s),
-                v = b.newHeight,
-                f = b.newWidth,
+                f = b.newHeight,
+                v = b.newWidth,
                 y = this.calculateNewMaxFromBoundary(a, o);
-              this.props.snap && this.props.snap.x && (f = De(f, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (v = De(v, this.props.snap.y, this.props.snapGap));
-              var x = this.calculateNewSizeFromAspectRatio(f, v, {
+              this.props.snap && this.props.snap.x && (v = De(v, this.props.snap.x, this.props.snapGap)), this.props.snap && this.props.snap.y && (f = De(f, this.props.snap.y, this.props.snapGap));
+              var x = this.calculateNewSizeFromAspectRatio(v, f, {
                 width: y.maxWidth,
                 height: y.maxHeight
               }, {
                 width: n,
                 height: l
               });
-              if (f = x.newWidth, v = x.newHeight, this.props.grid) {
-                var w = Te(f, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
-                  S = Te(v, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
+              if (v = x.newWidth, f = x.newHeight, this.props.grid) {
+                var w = Te(v, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
+                  S = Te(f, this.props.grid[1], this.props.gridGap ? this.props.gridGap[1] : 0),
                   z = this.props.snapGap || 0;
-                f = 0 === z || Math.abs(w - f) <= z ? w : f, v = 0 === z || Math.abs(S - v) <= z ? S : v
+                v = 0 === z || Math.abs(w - v) <= z ? w : v, f = 0 === z || Math.abs(S - f) <= z ? S : f
               }
               var k = {
-                width: f - c.width,
-                height: v - c.height
+                width: v - h.width,
+                height: f - h.height
               };
-              if (this.delta = k, h && "string" == typeof h)
-                if (h.endsWith("%")) {
-                  var M = f / m.width * 100;
-                  f = "".concat(M, "%")
-                } else if (h.endsWith("vw")) {
-                var R = f / this.window.innerWidth * 100;
-                f = "".concat(R, "vw")
-              } else if (h.endsWith("vh")) {
-                var B = f / this.window.innerHeight * 100;
-                f = "".concat(B, "vh")
+              if (this.delta = k, c && "string" == typeof c)
+                if (c.endsWith("%")) {
+                  var M = v / m.width * 100;
+                  v = "".concat(M, "%")
+                } else if (c.endsWith("vw")) {
+                var R = v / this.window.innerWidth * 100;
+                v = "".concat(R, "vw")
+              } else if (c.endsWith("vh")) {
+                var B = v / this.window.innerHeight * 100;
+                v = "".concat(B, "vh")
               }
-              u && "string" == typeof u && (u.endsWith("%") ? (M = v / m.height * 100, v = "".concat(M, "%")) : u.endsWith("vw") ? (R = v / this.window.innerWidth * 100, v = "".concat(R, "vw")) : u.endsWith("vh") && (B = v / this.window.innerHeight * 100, v = "".concat(B, "vh")));
+              u && "string" == typeof u && (u.endsWith("%") ? (M = f / m.height * 100, f = "".concat(M, "%")) : u.endsWith("vw") ? (R = f / this.window.innerWidth * 100, f = "".concat(R, "vw")) : u.endsWith("vh") && (B = f / this.window.innerHeight * 100, f = "".concat(B, "vh")));
               var N = {
-                width: this.createSizeForCssProperty(f, "width"),
-                height: this.createSizeForCssProperty(v, "height")
+                width: this.createSizeForCssProperty(v, "width"),
+                height: this.createSizeForCssProperty(f, "height")
               };
               "row" === this.flexDir ? N.flexBasis = N.width : "column" === this.flexDir && (N.flexBasis = N.height);
               var _ = this.state.width !== N.width,
@@ -1907,7 +1907,7 @@ try {
             resizeRatio: 1,
             snapGap: 0
           }, t
-        }(ce.PureComponent);
+        }(he.PureComponent);
       const $e = ({
         style: e,
         width: t,
@@ -1919,8 +1919,8 @@ try {
         name: s,
         label: d,
         description: p,
-        error: c,
-        children: h
+        error: h,
+        children: c
       }) => {
         const u = () => o ? (0, a.jsx)(Fe, {
           defaultSize: {
@@ -1930,8 +1930,8 @@ try {
           style: {
             paddingBottom: "10px"
           },
-          children: (0, ce.cloneElement)(h, ...l)
-        }) : h;
+          children: (0, he.cloneElement)(c, ...l)
+        }) : c;
         return (0, a.jsxs)("div", {
           className: "rockstargames-modules-core-videoplayere8a5daf12553885a40529a38c92c1d67 FieldWrapper-sc-custom jpQZXK",
           style: e,
@@ -1942,9 +1942,9 @@ try {
               className: "rockstargames-modules-core-videoplayera0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
               children: p ?? n?.description
             })]
-          }), (0, a.jsx)(u, {}), (c || r?.error) && (0, a.jsx)("div", {
+          }), (0, a.jsx)(u, {}), (h || r?.error) && (0, a.jsx)("div", {
             className: "FieldError_sc_custom",
-            children: c ?? r?.error
+            children: h ?? r?.error
           })]
         })
       };

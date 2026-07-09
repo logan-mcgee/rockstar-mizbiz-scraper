@@ -14,11 +14,11 @@ try {
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [3769, 6150, 9793], {
     94931(e, t, n) {
-      var r = n(93082),
-        a = Symbol.for("react.element"),
+      var a = n(93082),
+        r = Symbol.for("react.element"),
         s = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
-        i = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        i = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -27,14 +27,14 @@ try {
         };
 
       function d(e, t, n) {
-        var r, s = {},
+        var a, s = {},
           d = null,
           c = null;
-        for (r in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (c = t.ref), t) o.call(t, r) && !l.hasOwnProperty(r) && (s[r] = t[r]);
+        for (a in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (c = t.ref), t) o.call(t, a) && !l.hasOwnProperty(a) && (s[a] = t[a]);
         if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === s[r] && (s[r] = t[r]);
+          for (a in t = e.defaultProps) void 0 === s[a] && (s[a] = t[a]);
         return {
-          $$typeof: a,
+          $$typeof: r,
           type: e,
           key: d,
           ref: c,
@@ -110,18 +110,18 @@ try {
         useGenerateCdnSource: () => E.jS,
         useGetCdnSource: () => E.C1,
         useImageParser: () => E.S1,
-        usePrunedTinaKeys: () => y,
+        usePrunedTinaKeys: () => f,
         useTinaComponents: () => p,
         useTinaPayload: () => u.i,
         useTranslations: () => F
       });
-      var r = n(39793),
-        a = n(93082),
+      var a = n(39793),
+        r = n(93082),
         s = n(79098),
         o = n(11302);
       var i = n(13331);
       const l = (0, i.setContextItem)({
-          context: (0, a.createContext)({}),
+          context: (0, r.createContext)({}),
           key: "tinaParser"
         }),
         {
@@ -130,16 +130,16 @@ try {
         c = ({
           children: e,
           components: t
-        }) => (0, r.jsx)(d, {
+        }) => (0, a.jsx)(d, {
           value: t,
           children: e
         }),
-        p = () => (0, a.useContext)(l);
+        p = () => (0, r.useContext)(l);
       var u = n(54563);
-      const m = (e, t) => Array.isArray(e) ? e.map(e => m(e, t)) : null !== e && "object" == typeof e ? Object.keys(e).reduce((n, r) => (r !== t && (n[r] = m(e[r], t)), n), {}) : e,
-        y = e => (0, a.useMemo)(() => m(e, "key"), [e]);
-      var f = n(97773),
-        g = n.n(f),
+      const m = (e, t) => Array.isArray(e) ? e.map(e => m(e, t)) : null !== e && "object" == typeof e ? Object.keys(e).reduce((n, a) => (a !== t && (n[a] = m(e[a], t)), n), {}) : e,
+        f = e => (0, r.useMemo)(() => m(e, "key"), [e]);
+      var y = n(97773),
+        g = n.n(y),
         b = n(40415),
         _ = n(97529),
         h = n(58969),
@@ -150,23 +150,23 @@ try {
       }) => {
         const n = ((e, t) => {
             const n = {};
-            return (0, o.A)(e, (e, r, a) => {
-              r === t && e && (n[a.key] = e)
+            return (0, o.A)(e, (e, a, r) => {
+              a === t && e && (n[r.key] = e)
             }), n
           })(e, T.Qw),
-          r = JSON.parse(JSON.stringify((0, b.A)(JSON.parse(JSON.stringify(n)), JSON.parse(JSON.stringify(t?.keys ?? {}))))),
-          a = JSON.parse(JSON.stringify(e));
-        return (0, o.A)(a, (e, t, n) => {
+          a = JSON.parse(JSON.stringify((0, b.A)(JSON.parse(JSON.stringify(n)), JSON.parse(JSON.stringify(t?.keys ?? {}))))),
+          r = JSON.parse(JSON.stringify(e));
+        return (0, o.A)(r, (e, t, n) => {
           (e => {
             if (!e || !(0, _.A)(e, "key") || e.translated) return;
-            const t = r[e.key] ?? null;
+            const t = a[e.key] ?? null;
             if (!t) return;
             const n = g()(t);
             Object.keys(n).map(t => {
               (0, h.A)(e, t, n[t])
             }), (0, h.A)(e, "translated", !0), Object.freeze(e)
           })(n)
-        }), a
+        }), r
       };
       var k = n(26065),
         S = n(39279),
@@ -186,12 +186,12 @@ try {
             ref: o,
             scrollTracked: l
           } = (0, i.useScrollTracking)(e);
-          return (0, a.useEffect)(() => {
+          return (0, r.useEffect)(() => {
             l && s({
               ...v,
               ...n
             })
-          }, [l]), (0, r.jsx)("section", {
+          }, [l]), (0, a.jsx)("section", {
             ref: o,
             children: t
           })
@@ -200,7 +200,7 @@ try {
           impressionTracking: e,
           gtm: t = {},
           children: n
-        }) => e?.shouldTrack ? (0, r.jsx)(I, {
+        }) => e?.shouldTrack ? (0, a.jsx)(I, {
           threshold: e?.threshold,
           gtm: t,
           children: n
@@ -210,8 +210,8 @@ try {
           payload: t,
           componentProps: n = {}
         }) => {
-          const s = (0, a.useMemo)(() => ((0, o.A)(t, (n, r) => {
-            "_template" !== r || Number.isInteger(Number(n)) || (0, k.A)(e, n) || (console.error(`TinaParser:useComponentRenderer: Component ${n} was found in payload, but not in renderable components.`), console.error("Payload:", t), console.error("Components:", e))
+          const s = (0, r.useMemo)(() => ((0, o.A)(t, (n, a) => {
+            "_template" !== a || Number.isInteger(Number(n)) || (0, k.A)(e, n) || (console.error(`TinaParser:useComponentRenderer: Component ${n} was found in payload, but not in renderable components.`), console.error("Payload:", t), console.error("Components:", e))
           }), (({
             components: e,
             payload: t,
@@ -227,10 +227,10 @@ try {
               }), l = "gen9.Hero");
               const d = (0, k.A)(e, l) ?? null;
               if (!d) return null;
-              const c = ((e, t) => n => ((e, t, n) => (0, r.jsx)(O, {
+              const c = ((e, t) => n => ((e, t, n) => (0, a.jsx)(O, {
                   impressionTracking: n?.impressionTracking,
                   gtm: n?.gtm,
-                  children: (0, r.jsx)(e, {
+                  children: (0, a.jsx)(e, {
                     ...t
                   })
                 }))(e, n, t))(d, {
@@ -242,7 +242,7 @@ try {
                 }),
                 p = [...o?.translations ?? []].reverse(),
                 u = `componentProps_${(0,S.A)()}`;
-              return (0, a.createElement)(c, {
+              return (0, r.createElement)(c, {
                 ...t?.meta,
                 ...o,
                 ...n,
@@ -264,19 +264,19 @@ try {
           componentProps: n = {}
         }) => {
           const i = (0, u.i)(),
-            [l, d] = (0, a.useState)(null),
-            [m, y] = (0, a.useState)(null);
-          (0, a.useEffect)(() => {
-            e?.payload && d(e.payload), e?.variables && y(e.variables)
+            [l, d] = (0, r.useState)(null),
+            [m, f] = (0, r.useState)(null);
+          (0, r.useEffect)(() => {
+            e?.payload && d(e.payload), e?.variables && f(e.variables)
           }, [e]);
-          const [f] = (0, a.useState)({
+          const [y] = (0, r.useState)({
             ...t,
             ...p() ?? {}
           }), g = (({
             payload: e
           }) => {
-            const [t, n] = (0, a.useState)(e);
-            return (0, a.useEffect)(() => {
+            const [t, n] = (0, r.useState)(e);
+            return (0, r.useEffect)(() => {
               const t = (0, s.A)(() => {
                 const t = JSON.parse(JSON.stringify(e));
                 (0, o.A)(t, (e, t, n) => {
@@ -306,24 +306,24 @@ try {
             payload: l,
             variables: m
           });
-          return (0, a.useMemo)(() => {
+          return (0, r.useMemo)(() => {
             if (!l) return null;
             const t = b,
-              a = l?.meta?.prod ?? l?.meta?.cdn ?? i?.meta?.prod ?? i?.meta?.cdn ?? !1,
+              r = l?.meta?.prod ?? l?.meta?.cdn ?? i?.meta?.prod ?? i?.meta?.cdn ?? !1,
               s = {
                 ...l,
                 meta: {
                   ...l?.meta ?? {},
-                  prod: a
+                  prod: r
                 }
               };
-            return (0, r.jsx)(u.o, {
+            return (0, a.jsx)(u.o, {
               payload: s,
-              children: (0, r.jsx)(c, {
-                components: f,
-                children: (0, r.jsx)(P, {
+              children: (0, a.jsx)(c, {
+                components: y,
+                children: (0, a.jsx)(P, {
                   payload: t,
-                  components: f,
+                  components: y,
                   componentProps: {
                     ...n,
                     tina: e
@@ -334,27 +334,27 @@ try {
           }, [i, l, JSON.stringify(g), JSON.stringify(b)])
         };
       var E = n(25993);
-      const N = (e = "", t = 0, n = {}, r = () => {}) => {
-          let a = {
+      const N = (e = "", t = 0, n = {}, a = () => {}) => {
+          let r = {
             ...n
           };
           if (t > 0) {
-            const s = N(e, t - 1, n, r);
-            a = {
-              ...a,
-              ...r(e, {
+            const s = N(e, t - 1, n, a);
+            r = {
+              ...r,
+              ...a(e, {
                 templates: s
               })
             }
           }
-          return a
+          return r
         },
         j = N,
         C = ({
           html: e,
           as: t = "span",
           ...n
-        }) => (0, r.jsx)(t, {
+        }) => (0, a.jsx)(t, {
           dangerouslySetInnerHTML: {
             __html: e
           },

@@ -37,7 +37,7 @@ try {
         }, {})
       }
 
-      function m(e, t) {
+      function f(e, t) {
         if (!t) return e;
         var r = o.S.formats;
         return (0, n.Cl)((0, n.Cl)((0, n.Cl)({}, r), e), {
@@ -45,9 +45,9 @@ try {
           time: u(s(r.time, t), s(e.time || {}, t))
         })
       }
-      var f = function(e, t, r, o, s) {
+      var m = function(e, t, r, o, s) {
           var u = e.locale,
-            f = e.formats,
+            m = e.formats,
             c = e.messages,
             g = e.defaultLocale,
             d = e.defaultFormats,
@@ -65,7 +65,7 @@ try {
             T = c && Object.prototype.hasOwnProperty.call(c, w) && c[w];
           if (Array.isArray(T) && 1 === T.length && T[0].type === a.ZE.literal) return T[0].value;
           if (!o && T && "string" == typeof T && !b) return T.replace(/'\{(.*?)\}'/gi, "{$1}");
-          if (o = (0, n.Cl)((0, n.Cl)({}, b), o || {}), f = m(f, v), d = m(d, v), !T) {
+          if (o = (0, n.Cl)((0, n.Cl)({}, b), o || {}), m = f(m, v), d = f(d, v), !T) {
             if (!1 === p && "" === T) return T;
             if ((!E || u && u.toLowerCase() !== g.toLowerCase()) && y(new i.sb(r, u)), E) try {
               return t.getMessageFormat(E, g, d, s).format(o)
@@ -75,7 +75,7 @@ try {
             return w
           }
           try {
-            return t.getMessageFormat(T, u, f, (0, n.Cl)({
+            return t.getMessageFormat(T, u, m, (0, n.Cl)({
               formatters: t
             }, s || {})).format(o)
           } catch (e) {
@@ -96,11 +96,11 @@ try {
           s = e.onError,
           u = e.timeZone;
         void 0 === a && (a = {});
-        var m = a.format,
-          f = (0, n.Cl)((0, n.Cl)({}, u && {
+        var f = a.format,
+          m = (0, n.Cl)((0, n.Cl)({}, u && {
             timeZone: u
-          }), m && (0, l.F3)(i, t, m, s)),
-          g = (0, l.J9)(a, c, f);
+          }), f && (0, l.F3)(i, t, f, s)),
+          g = (0, l.J9)(a, c, m);
         return "time" !== t || g.hour || g.minute || g.second || g.timeStyle || g.dateStyle || (g = (0, n.Cl)((0, n.Cl)({}, g), {
           hour: "numeric",
           minute: "numeric"
@@ -142,9 +142,9 @@ try {
           l = r[2],
           s = void 0 === l ? {} : l,
           u = "string" == typeof a ? new Date(a || 0) : a,
-          m = "string" == typeof o ? new Date(o || 0) : o;
+          f = "string" == typeof o ? new Date(o || 0) : o;
         try {
-          return g(e, "dateTimeRange", t, s).formatRange(u, m)
+          return g(e, "dateTimeRange", t, s).formatRange(u, f)
         } catch (t) {
           e.onError(new i.pg("Error formatting date time range.", e.locale, t))
         }
@@ -210,19 +210,19 @@ try {
         void 0 === a && (a = {}), Intl.ListFormat || s(new h.IF('Intl.ListFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-listformat"\n', h.O4.MISSING_INTL_API));
         var u = (0, l.J9)(a, T);
         try {
-          var m = {},
-            f = Array.from(r).map(function(e, t) {
+          var f = {},
+            m = Array.from(r).map(function(e, t) {
               if ("object" == typeof e && null !== e) {
                 var r = function(e) {
                   return "".concat(F, "_").concat(e, "_").concat(F)
                 }(t);
-                return m[r] = e, r
+                return f[r] = e, r
               }
               return String(e)
             });
-          return t(o, u).formatToParts(f).map(function(e) {
+          return t(o, u).formatToParts(m).map(function(e) {
             return "literal" === e.type ? e : (0, n.Cl)((0, n.Cl)({}, e), {
-              value: m[e.value] || e.value
+              value: f[e.value] || e.value
             })
           })
         } catch (e) {
@@ -306,7 +306,7 @@ try {
       var x = function(e, t, r, a) {
           for (var o = [], i = 4; i < arguments.length; i++) o[i - 4] = arguments[i];
           var l = O(a),
-            s = f.apply(void 0, (0, n.fX)([e, t, r, l], o, !1));
+            s = m.apply(void 0, (0, n.fX)([e, t, r, l], o, !1));
           return Array.isArray(s) ? (0, L.SP)(s) : s
         },
         A = function(e, t) {
@@ -334,8 +334,8 @@ try {
                   formatDateTimeRange: y.bind(null, a, r.getDateTimeFormat),
                   formatTimeToParts: b.bind(null, a, r.getDateTimeFormat),
                   formatPlural: N.bind(null, a, r.getPluralRules),
-                  formatMessage: f.bind(null, a, r),
-                  $t: f.bind(null, a, r),
+                  formatMessage: m.bind(null, a, r),
+                  $t: m.bind(null, a, r),
                   formatList: C.bind(null, a, r.getListFormat),
                   formatListToParts: I.bind(null, a, r.getListFormat),
                   formatDisplayName: w.bind(null, a, r.getDisplayNames)
@@ -377,18 +377,18 @@ try {
           l = e.id,
           s = e.description,
           u = e.defaultMessage,
-          m = e.values,
-          f = e.children,
+          f = e.values,
+          m = e.children,
           c = e.tagName,
           g = void 0 === c ? o : c,
           d = r({
             id: l,
             description: s,
             defaultMessage: u
-          }, m, {
+          }, f, {
             ignoreTag: e.ignoreTag
           });
-        return "function" == typeof f ? f(Array.isArray(d) ? d : [d]) : g ? a.createElement(g, null, d) : a.createElement(a.Fragment, null, d)
+        return "function" == typeof m ? m(Array.isArray(d) ? d : [d]) : g ? a.createElement(g, null, d) : a.createElement(a.Fragment, null, d)
       }
       l.displayName = "FormattedMessage";
       var s = a.memo(l, function(e, t) {
@@ -403,7 +403,7 @@ try {
     },
     54422(e, t, r) {
       r.d(t, {
-        A: () => f
+        A: () => m
       });
       var n = r(51177),
         a = r(98373),
@@ -428,7 +428,7 @@ try {
           defaultRichTextElements: e.defaultRichTextElements
         }
       }
-      var m = function(e) {
+      var f = function(e) {
         function t() {
           var t = null !== e && e.apply(this, arguments) || this;
           return t.cache = (0, a.MT)(), t.state = {
@@ -451,7 +451,7 @@ try {
           }, this.props.children)
         }, t.displayName = "IntlProvider", t.defaultProps = i.JF, t
       }(o.PureComponent);
-      const f = m
+      const m = f
     }
   }
 ]);

@@ -42,14 +42,14 @@ try {
           var o = Array.prototype.slice.apply(e.querySelectorAll(r));
           return t && a.call(e, r) && o.unshift(e), o.filter(n)
         },
-        c = function(e, t, n) {
+        f = function(e, t, n) {
           for (var o = [], i = Array.from(e); i.length;) {
             var l = i.shift();
             if (!d(l, !1))
               if ("SLOT" === l.tagName) {
                 var u = l.assignedElements(),
-                  f = u.length ? u : l.children,
-                  s = c(f, !0, n);
+                  c = u.length ? u : l.children,
+                  s = f(c, !0, n);
                 n.flatten ? o.push.apply(o, s) : o.push({
                   scopeParent: l,
                   candidates: s
@@ -59,7 +59,7 @@ try {
                 var p = l.shadowRoot || "function" == typeof n.getShadowRoot && n.getShadowRoot(l),
                   b = !d(p, !1) && (!n.shadowRootFilter || n.shadowRootFilter(l));
                 if (p && b) {
-                  var h = c(!0 === p ? l.children : p.children, !0, n);
+                  var h = f(!0 === p ? l.children : p.children, !0, n);
                   n.flatten ? o.push.apply(o, h) : o.push({
                     scopeParent: l,
                     candidates: h
@@ -69,7 +69,7 @@ try {
           }
           return o
         },
-        f = function(e) {
+        c = function(e) {
           return !isNaN(parseInt(e.getAttribute("tabindex"), 10))
         },
         s = function(e) {
@@ -77,7 +77,7 @@ try {
           return e.tabIndex < 0 && (/^(AUDIO|VIDEO|DETAILS)$/.test(e.tagName) || function(e) {
             var t, n = null == e || null === (t = e.getAttribute) || void 0 === t ? void 0 : t.call(e, "contenteditable");
             return "" === n || "true" === n
-          }(e)) && !f(e) ? 0 : e.tabIndex
+          }(e)) && !c(e) ? 0 : e.tabIndex
         },
         p = function(e, t) {
           return e.tabIndex === t.tabIndex ? e.documentOrder - t.documentOrder : e.tabIndex - t.tabIndex
@@ -125,8 +125,8 @@ try {
                     d = !1;
                   if (i && i !== e)
                     for (d = !!(null !== (n = a) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(a) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !d && a;) {
-                      var u, c, f;
-                      d = !(null === (c = a = null === (u = i = l(a)) || void 0 === u ? void 0 : u.host) || void 0 === c || null === (f = c.ownerDocument) || void 0 === f || !f.contains(a))
+                      var u, f, c;
+                      d = !(null === (f = a = null === (u = i = l(a)) || void 0 === u ? void 0 : u.host) || void 0 === f || null === (c = f.ownerDocument) || void 0 === c || !c.contains(a))
                     }
                   return d
                 }(e)) return !e.getClientRects().length;
@@ -188,7 +188,7 @@ try {
               i = r ? e.scopeParent : e,
               a = function(e, t) {
                 var n = s(e);
-                return n < 0 && t && !f(e) ? 0 : n
+                return n < 0 && t && !c(e) ? 0 : n
               }(i, r),
               l = r ? m(e.candidates) : i;
             0 === a ? r ? t.push.apply(t, l) : t.push(i) : n.push({
@@ -204,7 +204,7 @@ try {
         },
         w = function(e, t) {
           var n;
-          return n = (t = t || {}).getShadowRoot ? c([e], t.includeContainer, {
+          return n = (t = t || {}).getShadowRoot ? f([e], t.includeContainer, {
             filter: g.bind(null, t),
             flatten: !1,
             getShadowRoot: t.getShadowRoot,
@@ -212,7 +212,7 @@ try {
           }) : u(e, t.includeContainer, g.bind(null, t)), m(n)
         },
         S = function(e, t) {
-          return (t = t || {}).getShadowRoot ? c([e], t.includeContainer, {
+          return (t = t || {}).getShadowRoot ? f([e], t.includeContainer, {
             filter: y.bind(null, t),
             flatten: !0,
             getShadowRoot: t.getShadowRoot

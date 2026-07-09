@@ -94,10 +94,10 @@ try {
         u = r(51836),
         i = /^\[object .+?Constructor\]$/,
         d = Function.prototype,
-        b = Object.prototype,
-        f = d.toString,
-        l = b.hasOwnProperty,
-        A = RegExp("^" + f.call(l).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+        f = Object.prototype,
+        b = d.toString,
+        l = f.hasOwnProperty,
+        A = RegExp("^" + b.call(l).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
       const p = function(e) {
           return !(!(0, s.A)(e) || (t = e, a && a in t)) && ((0, o.A)(e) ? A : i).test((0, u.A)(e));
           var t
@@ -121,27 +121,27 @@ try {
         u = (0, o.A)(n.A, "Set"),
         i = (0, o.A)(n.A, "WeakMap");
       var d = r(86204),
-        b = r(51836),
-        f = "[object Map]",
+        f = r(51836),
+        b = "[object Map]",
         l = "[object Promise]",
         A = "[object Set]",
         p = "[object WeakMap]",
         y = "[object DataView]",
-        j = (0, b.A)(c),
-        g = (0, b.A)(a.A),
-        v = (0, b.A)(s),
-        w = (0, b.A)(u),
-        h = (0, b.A)(i),
+        j = (0, f.A)(c),
+        g = (0, f.A)(a.A),
+        v = (0, f.A)(s),
+        w = (0, f.A)(u),
+        h = (0, f.A)(i),
         m = d.A;
-      (c && m(new c(new ArrayBuffer(1))) != y || a.A && m(new a.A) != f || s && m(s.resolve()) != l || u && m(new u) != A || i && m(new i) != p) && (m = function(e) {
+      (c && m(new c(new ArrayBuffer(1))) != y || a.A && m(new a.A) != b || s && m(s.resolve()) != l || u && m(new u) != A || i && m(new i) != p) && (m = function(e) {
         var t = (0, d.A)(e),
           r = "[object Object]" == t ? e.constructor : void 0,
-          o = r ? (0, b.A)(r) : "";
+          o = r ? (0, f.A)(r) : "";
         if (o) switch (o) {
           case j:
             return y;
           case g:
-            return f;
+            return b;
           case v:
             return l;
           case w:

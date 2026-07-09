@@ -15,7 +15,7 @@ try {
   [602], {
     6602(e, o, s) {
       s.r(o), s.d(o, {
-        FormattedMessage: () => i.A,
+        FormattedMessage: () => a.A,
         POSIXLocales: () => w,
         ReactIntlProviderForMocking: () => r.A,
         createDevLocaleHook: () => $,
@@ -29,13 +29,13 @@ try {
         locales: () => h,
         onLanguageChange: () => I,
         splitLocale: () => _,
-        useIntl: () => a.A,
+        useIntl: () => i.A,
         withIntl: () => k
       });
       var t = s(7338),
         n = s(3747),
-        i = s(3124),
-        a = s(4775),
+        a = s(3124),
+        i = s(4775),
         r = s(4422),
         l = s(9793),
         c = s(3082),
@@ -180,17 +180,17 @@ try {
             const o = e.search.substring(1).split("&").find(e => e.startsWith("lang"));
             return o?.split("=")[1]
           })(e), n = f;
-          let i;
-          const a = `rockstarweb_lang.${o.cookieIdentifier}`,
-            r = p(a);
-          i = o.currentSite?.site === u.C.www ? h.find(e => e.subdomaincom === t) || h.find(e => e.subdomaincom === s) || n : h.find(e => e.iso === r) || n;
-          const [, l] = m(a, i.iso);
-          return [i, l]
+          let a;
+          const i = `rockstarweb_lang.${o.cookieIdentifier}`,
+            r = p(i);
+          a = o.currentSite?.site === u.C.www ? h.find(e => e.subdomaincom === t) || h.find(e => e.subdomaincom === s) || n : h.find(e => e.iso === r) || n;
+          const [, l] = m(i, a.iso);
+          return [a, l]
         };
 
       function k(e, o, s, t) {
         return n => {
-          const i = (0, c.useMemo)(() => {
+          const a = (0, c.useMemo)(() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const s = o ?? g()[0].iso ?? "en-US",
@@ -209,12 +209,12 @@ try {
             }(o, s)
           }, [s]);
           return (0, l.jsx)(r.A, {
-            locale: i?.locale || "en-US",
+            locale: a?.locale || "en-US",
             messages: {
-              ...i?.messages
+              ...a?.messages
             },
             onError: t,
-            children: i && (0, l.jsx)(e, {
+            children: a && (0, l.jsx)(e, {
               ...n
             })
           }, "intl-provider")
@@ -277,20 +277,20 @@ try {
           }
           if (t)
             for (const [n, {
-                regex: i,
-                isSubdomain: a,
+                regex: a,
+                isSubdomain: i,
                 isLocaleInUrl: r,
                 fieldName: l,
                 externalPaths: c
               }] of Object.entries(x)) {
-              if (!i.test(e.toLowerCase())) continue;
+              if (!a.test(e.toLowerCase())) continue;
               const u = s[n];
               if (!u) continue;
               let d = "";
               "en" !== o.subdomaincom && r && (d = `/${o[l||"subdomaincom"]}`, "circoloco" === n && "/" === t.pathname && (d += "/"));
               const p = t.host.split(".");
               let m = "";
-              return "www" !== n || c?.some(e => e.test(t.pathname)) ? ("www" !== n && (m += `https://${u}`, m += a ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
+              return "www" !== n || c?.some(e => e.test(t.pathname)) ? ("www" !== n && (m += `https://${u}`, m += i ? `.${p.at(-2)}.${p.at(-1)}` : `.${p.at(-1)}`), {
                 link: `${m}${d}${"/"===t.pathname?"":t.pathname}${t.search}${t.hash}`,
                 isExternal: !0
               }) : {
@@ -314,25 +314,25 @@ try {
           const t = (0, u.A)(),
             [, n] = g(),
             {
-              subdomaincom: i,
-              iso: a
+              subdomaincom: a,
+              iso: i
             } = e,
             r = (e => {
               let o = location.pathname.replace(/^\/|\/$/g, "");
               const s = o.split("/");
               return h.map(e => e.subdomaincom).includes(s[0]) && (o = s.slice(1).join("/")), t.currentSite?.site === u.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-            })(i);
+            })(a);
           o?.({
             event: "cta_other",
             link_url: r,
-            text: i,
+            text: a,
             element_placement: s?.toLowerCase()
-          }), n(a), window.location.assign(r)
+          }), n(i), window.location.assign(r)
         }
     },
     7279(e, o, s) {
       s.d(o, {
-        A: () => a,
+        A: () => i,
         C: () => n
       });
       var t = s(283);
@@ -344,7 +344,7 @@ try {
           circoloco: "circoloco",
           supportNew: "support"
         },
-        i = [{
+        a = [{
           id: "prod",
           sites: {
             www: "www",
@@ -356,20 +356,20 @@ try {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        i = () => {
           let e;
           const {
             location: o
-          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), n = i.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
+          } = window, s = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), n = a.findIndex(o => Object.entries(o.sites).findIndex(([o, t]) => t === s && (e = {
             site: o,
             subDomain: t
-          }, !0)) >= 0), a = i[n >= 0 ? n : 0], r = i.find(e => e.id === a.fallbackEnvironment);
+          }, !0)) >= 0), i = a[n >= 0 ? n : 0], r = a.find(e => e.id === i.fallbackEnvironment);
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), (0, t.omit)((0, t.merge)({}, r, {
             currentSite: e
-          }, a), "fallbackEnvironment")
+          }, i), "fallbackEnvironment")
         }
     }
   }

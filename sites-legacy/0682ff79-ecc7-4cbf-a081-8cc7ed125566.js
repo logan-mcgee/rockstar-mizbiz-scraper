@@ -76,7 +76,7 @@ try {
         useGenerateCdnSource: () => N.jS,
         useGetCdnSource: () => N.C1,
         useImageParser: () => N.S1,
-        usePrunedTinaKeys: () => g,
+        usePrunedTinaKeys: () => f,
         useTinaComponents: () => p,
         useTinaPayload: () => u.i,
         useTranslations: () => T
@@ -103,9 +103,9 @@ try {
         p = () => (0, r.useContext)(l);
       var u = t(54563);
       const m = (e, n) => Array.isArray(e) ? e.map(e => m(e, n)) : null !== e && "object" == typeof e ? Object.keys(e).reduce((t, a) => (a !== n && (t[a] = m(e[a], n)), t), {}) : e,
-        g = e => (0, r.useMemo)(() => m(e, "key"), [e]);
-      var y = t(97773),
-        f = t.n(y),
+        f = e => (0, r.useMemo)(() => m(e, "key"), [e]);
+      var g = t(97773),
+        y = t.n(g),
         b = t(40415),
         _ = t(97529),
         h = t(58969),
@@ -127,7 +127,7 @@ try {
             if (!e || !(0, _.A)(e, "key") || e.translated) return;
             const n = a[e.key] ?? null;
             if (!n) return;
-            const t = f()(n);
+            const t = y()(n);
             Object.keys(t).map(n => {
               (0, h.A)(e, n, t[n])
             }), (0, h.A)(e, "translated", !0), Object.freeze(e)
@@ -231,14 +231,14 @@ try {
         }) => {
           const i = (0, u.i)(),
             [l, d] = (0, r.useState)(null),
-            [m, g] = (0, r.useState)(null);
+            [m, f] = (0, r.useState)(null);
           (0, r.useEffect)(() => {
-            e?.payload && d(e.payload), e?.variables && g(e.variables)
+            e?.payload && d(e.payload), e?.variables && f(e.variables)
           }, [e]);
-          const [y] = (0, r.useState)({
+          const [g] = (0, r.useState)({
             ...n,
             ...p() ?? {}
-          }), f = (({
+          }), y = (({
             payload: e
           }) => {
             const [n, t] = (0, r.useState)(e);
@@ -286,10 +286,10 @@ try {
             return (0, a.jsx)(u.o, {
               payload: s,
               children: (0, a.jsx)(c, {
-                components: y,
+                components: g,
                 children: (0, a.jsx)(P, {
                   payload: n,
-                  components: y,
+                  components: g,
                   componentProps: {
                     ...t,
                     tina: e
@@ -297,7 +297,7 @@ try {
                 })
               })
             })
-          }, [i, l, JSON.stringify(f), JSON.stringify(b)])
+          }, [i, l, JSON.stringify(y), JSON.stringify(b)])
         };
       var N = t(25993);
       const C = (e = "", n = 0, t = {}, a = () => {}) => {
