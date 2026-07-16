@@ -1,0 +1,182 @@
+try {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    n = (new e.Error).stack;
+  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "98993091-b40a-49ee-96e8-6c91b655f291", e._sentryDebugIdIdentifier = "sentry-dbid-98993091-b40a-49ee-96e8-6c91b655f291")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+    release: "sentry-release-id",
+    packageName: "@rockstargames/sites-red-dead-online",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
+  [2454], {
+    31613(e, n, t) {
+      t.d(n, ["F", 0, () => {
+        const e = window.location.hostname.split(".");
+        return e.slice(e.length - 2).join(".")
+      }])
+    },
+    32454(e, n, t) {
+      t.d(n, {
+        OD: () => l,
+        lv: () => i,
+        wC: () => o,
+        PE: () => y,
+        rB: () => d,
+        tC: () => h.t,
+        yh: () => m,
+        Ap: () => f,
+        Xs: () => x,
+        kx: () => k,
+        rJ: () => v,
+        pT: () => w,
+        lV: () => S,
+        PA: () => a,
+        My: () => u
+      }), t(39793);
+      const a = ({
+          element: e
+        }) => {
+          const n = setInterval(() => e.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+              inline: "center"
+            }), 100),
+            t = e => {
+              e.target === document && (clearInterval(n), document.removeEventListener("scroll", t))
+            };
+          document.addEventListener("scroll", t)
+        },
+        o = ({
+          paramName: e = "section"
+        } = {}) => {
+          const n = new URLSearchParams(document.location.search),
+            t = document.getElementById(n.get(e) || e);
+          t && (a({
+            element: t
+          }), s(t))
+        },
+        s = e => {
+          const n = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
+          if (n.includes(e.nodeName.toLowerCase())) e.focus();
+          else {
+            const t = e?.querySelectorAll(n.join(", "));
+            if (t?.length) {
+              const e = [...t].find(e => !e?.hasAttribute("disabled"));
+              e?.focus()
+            }
+          }
+        };
+      class l {
+        name;
+        friendlyName;
+        id;
+        onlineService;
+        aliasOnlineService;
+        alias;
+        constructor(e, n, t, a, o = null, s = null) {
+          this.name = e, this.friendlyName = n, this.id = t, this.onlineService = a, this.aliasOnlineService = o, this.alias = s
+        }
+      }
+      const i = Object.freeze({
+          pc: new l("pc", "PC Legacy", 8, "sc"),
+          ps: new l("ps", "PlayStation", 3, "np", "ps"),
+          ps3: new l("ps3", "PlayStation 3", 2, "np", "ps"),
+          ps4: new l("ps4", "PlayStation 4", 11, "np", "ps"),
+          ps5: new l("ps5", "PlayStation 5", 20, "np", "ps"),
+          xbox: new l("xbox", "Xbox", 4, "xbl"),
+          xbox360: new l("xbox360", "Xbox 360", 1, "xbl"),
+          xboxone: new l("xboxone", "Xbox One", 12, "xbl"),
+          xboxsx: new l("xboxsx", "Xbox Series X|S", 21, "xbl", null, "xboxseriesxs"),
+          switch: new l("switch", "Nintendo Switch™", 18, "nintendoswitch"),
+          nintendoswitch: new l("nintendoswitch", "Nintendo Switch™", 18, "nintendoswitch"),
+          applestore: new l("applestore", "App Store", 102, "applestore"),
+          googleplay: new l("googleplay", "Google Play", 1023, "googleplay"),
+          appStore: new l("app_store", "App Store", 102, "applestore"),
+          googlePlay: new l("ggle_play", "Google Play", 1023, "googleplay"),
+          pcalt: new l("pcalt", "PC Enhanced", 22, "sc")
+        }),
+        r = Object.freeze(Object.values(i));
+
+      function d(e) {
+        if (!e) return;
+        if (e instanceof l) return e;
+        const n = e.toString().toLowerCase();
+        return r.find(e => n === e.name || n === e.id.toString() || n === e.friendlyName.toLowerCase() || n === e.onlineService?.toLowerCase() || n === e.aliasOnlineService?.toLowerCase() || n === e.alias?.toLowerCase())
+      }
+      var c = t(23058),
+        p = t(31613);
+      const f = e => {
+          const n = document.cookie.split("; "),
+            t = `${e}=`,
+            a = n.find(e => e.startsWith(t)),
+            o = a?.substring(t.length, a.length);
+          return o
+        },
+        u = (e, n) => {
+          e && void 0 !== n && (0, c.canStoreCookie)(e) && f(e) !== n && (document.cookie = `${e}=${n}; domain=${(0,p.F)()}; path=/;`)
+        };
+      var b = t(36244);
+      Object.values(b.d), b.d.BL;
+      var h = t(49345);
+      const w = e => e.keys().forEach(e),
+        g = [{
+          key: "dev",
+          path: "https://media-dev-rockstargames-com.akamaized.net"
+        }, {
+          key: "prod",
+          path: "https://media-rockstargames-com.akamaized.net"
+        }],
+        m = (e = !0) => g.filter(n => n.key === (e ? "prod" : "dev"))[0]?.path ?? null,
+        y = e => {
+          e.preventDefault();
+          const n = e.currentTarget.href,
+            t = (e => {
+              const n = new URL(e).pathname.split("/"),
+                t = n[n.length - 1];
+              return decodeURIComponent(t)
+            })(n);
+          fetch(n, {
+            method: "GET",
+            headers: {}
+          }).then(e => e.arrayBuffer()).then(e => {
+            const n = window.URL.createObjectURL(new Blob([e])),
+              a = document.createElement("a");
+            a.href = n, a.setAttribute("download", t), document.body.appendChild(a), a.click(), document.body.removeChild(a)
+          }).catch(e => {
+            console.log(e)
+          })
+        },
+        x = () => [i.xbox360.name, i.xboxone.name, i.ps3.name, i.ps4.name, i.pc.name],
+        k = () => [i.xboxsx.name, i.ps5.name, i.pcalt.name],
+        S = e => k().includes(e),
+        v = e => {
+          const n = new Map([
+            ["en-us", "English (United States)"],
+            ["de-de", "Deutsch (Deutschland)"],
+            ["fr-fr", "Français (France)"],
+            ["fr-ca", "Français (Canada)"],
+            ["it-it", "Italiano (Italia)"],
+            ["ja-jp", "日本語"],
+            ["ru-ru", "Pусский"],
+            ["es-es", "Español (España)"],
+            ["es-mx", "Español (México)"],
+            ["pt-br", "Português (Brasil)"],
+            ["ko-kr", "한국어"],
+            ["zh-hans", "中文（简体）"],
+            ["zh-hant", "中文（繁體）"],
+            ["pl-pl", "Polski"]
+          ]);
+          return n.has(e) ? n.get(e) : e
+        }
+    },
+    36244(e, n, t) {
+      t.d(n, ["d", 0, {
+        BL: "bl"
+      }])
+    }
+  }
+]);

@@ -149,7 +149,7 @@ try {
         HourFromTime: () => ie,
         InLeapYear: () => H,
         InitializeNumberFormat: () => on,
-        IsSanctionedSimpleUnitIdentifier: () => he,
+        IsSanctionedSimpleUnitIdentifier: () => be,
         IsValidTimeZoneName: () => Fe,
         IsWellFormedCurrencyCode: () => we,
         IsWellFormedUnitIdentifier: () => Se,
@@ -161,7 +161,7 @@ try {
         PartitionPattern: () => ln,
         RangePatternType: () => en,
         SANCTIONED_UNITS: () => ve,
-        SIMPLE_UNITS: () => be,
+        SIMPLE_UNITS: () => he,
         SameValue: () => L,
         SecFromTime: () => ue,
         SetNumberFormatDigitOptions: () => an,
@@ -195,8 +195,8 @@ try {
         isMissingLocaleDataError: () => sn,
         msFromTime: () => ce,
         removeUnitNamespace: () => De,
-        setInternalSlot: () => b,
-        setMultiInternalSlots: () => h
+        setInternalSlot: () => h,
+        setMultiInternalSlots: () => b
       });
       var a = r(76582),
         u = (new a.A(10), new a.A(0)),
@@ -265,14 +265,14 @@ try {
         return r.join("")
       }
 
-      function b(e, n, r, t) {
+      function h(e, n, r, t) {
         e.get(n) || e.set(n, Object.create(null)), e.get(n)[r] = t
       }
 
-      function h(e, n, r) {
+      function b(e, n, r) {
         for (var t = 0, i = Object.keys(r); t < i.length; t++) {
           var a = i[t];
-          b(e, n, a, r[a])
+          h(e, n, a, r[a])
         }
       }
 
@@ -579,10 +579,10 @@ try {
       function De(e) {
         return e.slice(e.indexOf("-") + 1)
       }
-      var be = ve.map(De);
+      var he = ve.map(De);
 
-      function he(e) {
-        return be.indexOf(e) > -1
+      function be(e) {
+        return he.indexOf(e) > -1
       }
 
       function Fe(e, n) {
@@ -608,14 +608,14 @@ try {
       }
 
       function Se(e) {
-        if (he(e = e.replace(/([A-Z])/g, function(e, n) {
+        if (be(e = e.replace(/([A-Z])/g, function(e, n) {
             return n.toLowerCase()
           }))) return !0;
         var n = e.split("-per-");
         if (2 !== n.length) return !1;
         var r = n[0],
           t = n[1];
-        return !(!he(r) || !he(t))
+        return !(!be(r) || !be(t))
       }
 
       function Te(e, n, r, t) {
@@ -732,9 +732,9 @@ try {
         if (Te(e, d, y, i).eq(d) ? (u = m, o = d) : (u = p, o = y), l = u.isZero() ? "0" : u.toString(), 0 !== s) {
           var v = l.length;
           v <= s && (l = D("0", s - v + 1) + l, v = s + 1);
-          var b = l.slice(0, v - s),
-            h = l.slice(l.length - s);
-          l = b + "." + h, c = b.length
+          var h = l.slice(0, v - s),
+            b = l.slice(l.length - s);
+          l = h + "." + b, c = h.length
         } else c = l.length;
         for (var F = r - n; F > 0 && "0" === l[l.length - 1];) l = l.slice(0, l.length - 1), F--;
         return "." === l[l.length - 1] && (l = l.slice(0, l.length - 1)), {
@@ -782,9 +782,9 @@ try {
             }(e, s),
             y = p.n2,
             v = p.e2,
-            b = p.r2,
-            h = void 0;
-          Te(e, g, b, t).eq(g) ? (h = m, o = d.toNumber(), l = g) : (h = y, o = v.toNumber(), l = b), i = h.toString()
+            h = p.r2,
+            b = void 0;
+          Te(e, g, h, t).eq(g) ? (b = m, o = d.toNumber(), l = g) : (b = y, o = v.toNumber(), l = h), i = b.toString()
         }
         if (o >= s - 1 ? (i += D("0", o - s + 1), c = o + 1) : o >= 0 ? (i = i.slice(0, o + 1) + "." + i.slice(i.length - (s - (o + 1))), c = o + 1) : (C(o < 0, "e should be less than 0"), i = "0." + D("0", -o - 1) + i, c = 1), i.includes(".") && r > n) {
           for (var F = r - n; F > 0 && "0" === i[i.length - 1];) i = i.slice(0, i.length - 1), F--;
@@ -958,10 +958,10 @@ try {
         o = p || ("decimal" === m || "unit" === m || "currency" === m && "name" === t.currencyDisplay ? We((n.numbers.decimal[d] || n.numbers.decimal[g]).standard, l) : We("currency" === m ? (D = n.numbers.currency[d] || n.numbers.currency[g])[t.currencySign] : n.numbers.percent[d] || n.numbers.percent[g], l));
         var v = Ze.exec(o)[0];
         if (o = o.replace(Ze, "{0}").replace(/'(.)'/g, "$1"), "currency" === m && "name" !== t.currencyDisplay) {
-          var D, b = (D = n.numbers.currency[d] || n.numbers.currency[g]).currencySpacing.afterInsertBetween;
-          b && !Ue.test(u) && (o = o.replace("¤{0}", "¤".concat(b, "{0}")));
-          var h = D.currencySpacing.beforeInsertBetween;
-          h && !ze.test(u) && (o = o.replace("{0}¤", "{0}".concat(h, "¤")))
+          var D, h = (D = n.numbers.currency[d] || n.numbers.currency[g]).currencySpacing.afterInsertBetween;
+          h && !Ue.test(u) && (o = o.replace("¤{0}", "¤".concat(h, "{0}")));
+          var b = D.currencySpacing.beforeInsertBetween;
+          b && !ze.test(u) && (o = o.replace("{0}¤", "{0}".concat(b, "¤")))
         }
         for (var F = o.split(/({c:[^}]+}|\{0\}|[¤%\-\+])/g), E = [], w = n.numbers.symbols[d] || n.numbers.symbols[g], S = 0, T = F; S < T.length; S++)
           if (q = T[S]) switch (q) {
@@ -1086,25 +1086,25 @@ try {
         v > 0 ? (p = m.slice(0, v), y = m.slice(v + 1)) : p = m;
         var D = !1;
         if ("always" === u ? D = !0 : "min2" === u ? D = d.greaterThanOrEqualTo(1e4) : ("auto" === u || u) && (D = "compact" !== r || d.greaterThanOrEqualTo(1e4)), D) {
-          var b = "currency" === l && null != e.currencyGroup ? e.currencyGroup : e.group,
-            h = [],
+          var h = "currency" === l && null != e.currencyGroup ? e.currencyGroup : e.group,
+            b = [],
             F = o.split(".")[0].split(","),
             E = 3,
             w = 3;
           F.length > 1 && (E = F[F.length - 1].length), F.length > 2 && (w = F[F.length - 2].length);
           var S = p.length - E;
           if (S > 0) {
-            for (h.push(p.slice(S, S + E)), S -= w; S > 0; S -= w) h.push(p.slice(S, S + w));
-            h.push(p.slice(0, S + w))
-          } else h.push(p);
-          for (; h.length > 0;) {
-            var T = h.pop();
+            for (b.push(p.slice(S, S + E)), S -= w; S > 0; S -= w) b.push(p.slice(S, S + w));
+            b.push(p.slice(0, S + w))
+          } else b.push(p);
+          for (; b.length > 0;) {
+            var T = b.pop();
             f.push({
               type: "integer",
               value: T
-            }), h.length > 0 && f.push({
+            }), b.length > 0 && f.push({
               type: "group",
-              value: b
+              value: h
             })
           }
         } else f.push({
@@ -1334,15 +1334,15 @@ try {
         C(!!v, "Missing locale data for ".concat(y.dataLocale));
         var D = a(e);
         D.locale = y.locale, D.dataLocale = y.dataLocale, D.numberingSystem = y.nu, D.dataLocaleData = v, un(D, m);
-        var b, h, F = D.style,
+        var h, b, F = D.style,
           E = ge(m, "notation", "string", ["standard", "scientific", "engineering", "compact"], "standard");
         if (D.notation = E, "currency" === F && "standard" === E) {
           var w = _e(D.currency, {
             currencyDigitsData: s
           });
-          b = w, h = w
-        } else b = 0, h = "percent" === F ? 0 : 3;
-        an(D, m, b, h, E);
+          h = w, b = w
+        } else h = 0, b = "percent" === F ? 0 : 3;
+        an(D, m, h, b, E);
         var S = ge(m, "compactDisplay", "string", ["short", "long"], "short"),
           T = "auto";
         "compact" === E && (D.compactDisplay = S, T = "min2");
@@ -1427,13 +1427,13 @@ try {
         var v = "future";
         ((0, t.SameValue)(n, -0) || n < 0) && (v = "past");
         var D = y[v],
-          b = "function" == typeof g.formatToParts ? g.formatToParts(Math.abs(n)) : [{
+          h = "function" == typeof g.formatToParts ? g.formatToParts(Math.abs(n)) : [{
             type: "literal",
             value: g.format(Math.abs(n)),
             unit: r
           }],
-          h = D[d.select(n)];
-        return (0, a.MakePartsList)(h, l, b)
+          b = D[d.select(n)];
+        return (0, a.MakePartsList)(b, l, h)
       };
       var t = r(48880),
         i = r(88625),
@@ -1459,11 +1459,11 @@ try {
         if (void 0 !== v && !a.test(v)) throw new RangeError("Invalid numbering system ".concat(v));
         g.nu = v;
         var D = (0, i.ResolveLocale)(l, d, g, c, s, f),
-          b = D.locale,
-          h = D.nu;
-        m.locale = b, m.style = (0, t.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), m.numeric = (0, t.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
+          h = D.locale,
+          b = D.nu;
+        m.locale = h, m.style = (0, t.GetOption)(p, "style", "string", ["long", "narrow", "short"], "long"), m.numeric = (0, t.GetOption)(p, "numeric", "string", ["always", "auto"], "always");
         var F = s[D.dataLocale];
-        return (0, t.invariant)(!!F, "Missing locale data for ".concat(D.dataLocale)), m.fields = F, m.numberFormat = (0, t.createMemoizedNumberFormat)(n), m.pluralRules = (0, t.createMemoizedPluralRules)(n), m.numberingSystem = h, e
+        return (0, t.invariant)(!!F, "Missing locale data for ".concat(D.dataLocale)), m.fields = F, m.numberFormat = (0, t.createMemoizedNumberFormat)(n), m.pluralRules = (0, t.createMemoizedPluralRules)(n), m.numberingSystem = b, e
       };
       var t = r(48880),
         i = r(74786),
