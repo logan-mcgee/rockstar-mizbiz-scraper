@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "455f7e51-fb76-44c4-9a9f-00b8f9f1e624", e._sentryDebugIdIdentifier = "sentry-dbid-455f7e51-fb76-44c4-9a9f-00b8f9f1e624")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "13a25807-03bc-40db-92d5-0ce01920717d", e._sentryDebugIdIdentifier = "sentry-dbid-13a25807-03bc-40db-92d5-0ce01920717d")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -16,20 +16,20 @@ try {
     execute: function() {
       e((() => {
         var e = {
-          64801(e, t, a) {
-            (0, a(26745).w)(1)
+          89863(e, t, a) {
+            (0, a(35039).w)(1)
           },
-          26745(e, t, a) {
-            const r = a(86029).y;
+          35039(e, t, a) {
+            const r = a(20103).y;
             t.w = function(e) {
               if (e || (e = 1), !a.y.meta || !a.y.meta.url) throw console.error("__system_context__", a.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
               a.p = r(a.y.meta.url, e)
             }
           },
-          4010(e, t, a) {
-            a(64801)
+          87732(e, t, a) {
+            a(89863)
           },
-          86029(e, t, a) {
+          20103(e, t, a) {
             t.y = function(e, t) {
               var a = document.createElement("a");
               a.href = e;
@@ -43,7 +43,7 @@ try {
           72892(e, t, a) {
             "use strict";
             const r = {
-                "./core": () => Promise.all([a.e(2145), a.e(9167), a.e(6550), a.e(6680), a.e(4637), a.e(1270), a.e(2909), a.e(8019), a.e(3331), a.e(6396)]).then(() => () => a(48996))
+                "./core": () => Promise.all([a.e(2145), a.e(9167), a.e(8203), a.e(2813), a.e(4637), a.e(1270), a.e(2909), a.e(4287), a.e(3331), a.e(3680)]).then(() => () => a(42760))
               },
               n = (e, t) => (a.R = t, t = a.o(r, e) ? r[e]() : Promise.resolve().then(() => {
                 throw new Error('Module "' + e + '" does not exist in container.')
@@ -113,84 +113,84 @@ try {
                 get: t[n]
               })
         }, r.f = {}, r.e = e => Promise.all(Object.keys(r.f).reduce((t, a) => (r.f[a](e, t), t), [])), r.u = e => "js/" + {
-          162: "1f47d5afb554338028293635cceb7f1a",
-          241: "be30e37cc25a26b70e38e5d65ac4aa73",
-          699: "1137572b2e5be6330325cb2f15c27a72",
-          761: "068cf01cfc022e48d9d9f618a84076e5",
-          842: "9378a0d005f6040fe3aab2f575d1f958",
-          1039: "7a15a2a88ff6b7af0ba861ef3434589c",
-          1205: "feffde2f01528688f75d8fd960798b90",
-          1644: "e7b1722e7308abed0479961e13929fa9",
-          1777: "533d1ffc3327fd69a38cfefa36ae2a75",
-          1800: "b3734bdda19e79af3c95eca80bf5889f",
-          1869: "de61c89fc96e30af3808e87852fbd85a",
-          1915: "ab89a0c6678ed92bda86d65359a393b5",
-          2023: "cd31f4894ac9342c23cd00e02c3ccc63",
-          2145: "6ecd041ee2c7fba02988ce543351ec97",
-          2174: "0da2638fdcbd80dcd7949f80ee6bbf88",
-          2321: "f01b04e5235add3fb0cb30fb1ae7f2db",
-          2581: "f681773ebc6f322d8811f5478648f83a",
-          2622: "6d54cea6936d6717fe13abf132a957f8",
-          2841: "0a6610b16aa6a1de253b012d88a6e752",
-          3080: "551865fee5ccb9fffb64305aed06c64c",
-          3296: "05947be588f0ea189b68981ef15edc14",
-          3529: "8eb2f37c9a3bca3d047a64853efc9ce0",
-          4296: "47b28d2e9cdd1ed3626f3e68c3969a76",
-          4404: "28a4e64d3809831647692a4dd1404b90",
-          4429: "e1d6c9586f957c6ec8fe9d0783277b89",
-          4446: "7094e4950d379a27cf0a93257bc4fff9",
-          4555: "80d30566ab0e69a9b392c8a83cabdf72",
-          4592: "958606a02a704bd3e100bb5d156f3054",
-          4693: "24f6ca5407aa36dd3dece95efc2faac5",
-          4791: "80457b7aa68df52c02730a882232336a",
-          4823: "4922d5c98964610d2d85dd4e556b8454",
-          4921: "72e7c2e8c62a1172b9f5c948eeef5862",
-          5339: "aff4af7bb81e0ecbe9166d50452eed8d",
-          5660: "0b5089e789fce9eee3266b32dd9bac95",
-          5710: "95bde1fb88759eb73fe3e707249cce98",
-          5822: "4c49c2e10a3fb549ed0e6168c63d3c78",
-          6325: "89556d568fac1d24abe4f5959a3031d7",
-          6396: "245e7f01d70bc3efbb39ae9e6a53c710",
-          6445: "2add61e40e07c56f2278ce032cdd2e3f",
-          6543: "c6440c6d00c10af74b897639fd6707a1",
-          6550: "60a7b002e8d05caa3de8fbaa87dd5c4a",
-          6596: "66f5240eb46da75d24330fecf7a5a0e7",
-          6680: "abef4229e9479adc70ff4c4985cf2d10",
-          6739: "39d0dfe57ef3c8d63b89c69e04925689",
-          6755: "1bd009c7727cb12675ce8ddba49edb29",
-          6810: "578aa9103d4fb6dfcb81f545ba0d62bd",
-          6898: "2822a92cb6150899d9ce2a8e817188bc",
-          6918: "0384e6fa26f035cc7847dc9285228547",
-          6984: "a0cdb4cc56578291c836096a857d4bed",
-          7129: "480e0ce0f996104a92f9e86dfafcd0cc",
-          7139: "5b1c2adc277637c38f033dea81b9090b",
-          7172: "28fff97ca2dd8b001c16b18ad2c1c2eb",
-          7465: "c632f59151cbf2503dd150ff3abb512c",
-          7720: "295a65c62997421f9adcd2e54345961a",
-          7783: "f7e5f730cc08ea41ccfcd28b8e44fdd1",
-          8095: "d9048db28ee6c1b60f50f871f28b2abc",
-          8461: "270141196a78c6dad25e0b4c9b7906fb",
-          8479: "3d66549613a7961847d2a1e0bcad3deb",
-          8706: "61412e0dc42d59b52ce834e5b16280fb",
-          8826: "a38e3692d278a5463f590f38dd4d3f3b",
-          9046: "c49b1fa8db6d2874e4b4e952d8971d92",
-          9120: "416040c4bf7e6eab0b4974fa21fe1421",
-          9136: "3875c1319d2babd430865712aacc4fc6",
-          9167: "6b5bb96e5080dea963a4e6c5c5ae1995",
-          9510: "e72d0df2d4c2319c5bad7ea94a520ac3",
-          9538: "d049a5de1342b5db216b2331aafbad30",
-          9550: "aa03ebb97265cfa56d01af7ca8ed0cf3",
-          9793: "cf4965e009c15ad7d3f7d2542c43bbde",
-          9802: "e88601e4ee71a6f6b0ed944e7afe2431"
+          4: "7eb1bf3782052d398c8b5748264e6e32",
+          162: "446d889173556321fafbcdae95419ec2",
+          195: "af10605f77e5646842153d0ab7ff30a7",
+          247: "1160f0a70a2c748d842b8a01569f56d7",
+          323: "2718536cc62a87e229a5ca3178630c09",
+          519: "a5624f9c5982c3c30b28f9da188f3762",
+          699: "714572ea038ff9fe1444801cb71c888e",
+          700: "aebedccf0f21a110a3d00cee3b64ea9f",
+          761: "dd394178558ecf64b05896c416dce143",
+          896: "79c40647b0c1ee8e3dd514a4408527b4",
+          1158: "a83c5551c87fb6b1fa7a8ec490709bed",
+          1692: "4b78a0a01adfca70ac5b49bff09dfa44",
+          1777: "101ea38bd40af7d629880e3ec2bb31b3",
+          1827: "b77c966f3516195a85a084ddb537e35c",
+          1915: "42cb834b4c2d84a3fa749e0faa4d2166",
+          2145: "531c898cb5f1a87a60dfb5d33bd4d09a",
+          2174: "298db60c0c9bcf9c8f6caf04f270d67d",
+          2581: "d8bc651445d8c3a2e354431112b2870f",
+          2637: "ecb8a0418d88fd68c86b357af419a131",
+          2662: "a043781dbd5435c25f8c3dc9f972ad1c",
+          2705: "7d58e7d1588404eb95e105d8b54e7384",
+          2813: "ee59216cdd2ebcb5f97c0a00b33c6ee9",
+          2841: "a3c046540d3cc53e88dfbe460dc1ea7c",
+          3080: "6bdd59d11c9dcbfbdfc67cfc74d6ac3b",
+          3296: "d59e95e111359d8beb2d2060fec915bd",
+          3529: "fcef67cd2c64186be92bb83eba0e94ab",
+          3619: "120f24c5900101cfda85ebeb69bc867e",
+          3680: "7dfdcdb4a9fa76f9fed91c7f5fd87735",
+          3767: "095cc1e6e3cc6bff271b257120bdc195",
+          4114: "977fc30ae1cfb745c882b51afb6531eb",
+          4296: "f3d7f2abb5439b1df1254a5b657289f0",
+          4355: "6760b29d55992081313b57499d743a70",
+          4446: "131eb064e1614ec7af9c95fb53736adb",
+          4555: "1bc480c73253fb248bad01f9cdee6343",
+          4791: "ecf8b50ecf1e9febe06a589f2bd5d299",
+          4823: "7be0043da0c0b8ad7dc45e88b445d89c",
+          4921: "f4dfa84d59e373044f8423d1b14ede26",
+          5018: "007ea57082d082b2d1b009ff022ac281",
+          5140: "67a45f2e27ea0f6b2d864c966628666c",
+          5296: "4aa40fa950e2eabdf66524b1f96807ec",
+          5887: "c8c2f877dce6870f780e47d51416c6db",
+          6128: "36c633e8497294d34831e0bc9a0d192b",
+          6148: "5933d8f19b3e3fbb8003fdcaa854fdfa",
+          6382: "5b8e30c3fb7ffea058272f09d5ccb51f",
+          6383: "60980464af67388843639513239b49bd",
+          6736: "bea9404e74e5f89919d50110d51948c5",
+          6739: "2cc36597755679a49d18404c5e95474f",
+          6755: "649cf938ec2e14dce861c4c62dfcd978",
+          6918: "a0980f498647344bbb098a5805011cd0",
+          6994: "eb1b814e557fd8fdfe7ae9e5b690628c",
+          7129: "aa60110544c300ecfbbb3391ff38dbb9",
+          7172: "aef51339fd4c7e33af076bc5c1a3475b",
+          7377: "2050cf167be85e9dbf717546d0973c24",
+          7421: "7da482a6d0ae309dd9103275cf9bb9f2",
+          7489: "baa4a9835bd36f816d8d2a3960a84ff3",
+          8203: "72475ff24e130f75b40565c0b1b9b513",
+          8268: "ca059d465d1b2a45155a84ea285a6f9e",
+          8777: "72e975916f63334575a9a8496ed09a90",
+          8840: "b44433edb41fb5588a2ab40e0b2658b1",
+          8921: "784db714b36317192b94181d03ed189b",
+          9017: "700ff073f9616e059f0565f79fa4cb1b",
+          9022: "03a61a27bee115fe670b90d7acef1e1f",
+          9136: "1f292c63f9c18e32648dae1df90f765e",
+          9167: "9d9d0f3e87737714e08a8e9f31f5d987",
+          9510: "3f8d3c87fbb9e3e2cc4f86628641e5aa",
+          9629: "7c872470b58bb38480d05c704e83b768",
+          9758: "9e87fb5e042e00bb46f7c6da8442a543",
+          9793: "20c3b794576487b1fd27c067c244d3e1",
+          9802: "95af07606f56746158da87e09597e536"
         } [e] + ".js", r.miniCssF = e => "css/" + {
-          787: "60b4a384ad1da4123eed3cda02035b00",
           3080: "60b4a384ad1da4123eed3cda02035b00",
-          3868: "9605e4661b50b9d4fc907ee456d15b70",
-          5660: "9605e4661b50b9d4fc907ee456d15b70",
-          6396: "6cf2cfa51258f7bbc33f7ef4120df583",
-          6445: "418522d0d12f72d80b558f9733dd6579",
-          6550: "eda7209165962e3eebd3ea435c000fbe",
-          8826: "c81d20262580fa6635af5825c270de8e"
+          3680: "6cf2cfa51258f7bbc33f7ef4120df583",
+          6128: "9605e4661b50b9d4fc907ee456d15b70",
+          7256: "60b4a384ad1da4123eed3cda02035b00",
+          7489: "31f1d8b3f9cb952d08d65a7c6149a663",
+          8144: "9605e4661b50b9d4fc907ee456d15b70",
+          8203: "eda7209165962e3eebd3ea435c000fbe",
+          8840: "418522d0d12f72d80b558f9733dd6579"
         } [e] + ".css", r.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -292,10 +292,10 @@ try {
               i = [];
             switch (a) {
               case "default":
-                f("@foundry-int/utils", "6.3.0", () => Promise.all([r.e(5710), r.e(1270)]).then(() => () => r(85710))), f("@foundry/icons", "6.3.0", () => Promise.all([r.e(2321), r.e(4637), r.e(373), r.e(9628), r.e(5660)]).then(() => () => r(52321))), f("@radix-ui/react-accordion", "1.2.14", () => Promise.all([r.e(4637), r.e(5170), r.e(2043), r.e(8706)]).then(() => () => r(98706))), f("@radix-ui/react-dialog", "1.1.17", () => Promise.all([r.e(9550), r.e(4637), r.e(5170), r.e(2043), r.e(4108), r.e(9113), r.e(5339)]).then(() => () => r(85339))), f("@radix-ui/react-focus-scope", "1.1.10", () => Promise.all([r.e(4637), r.e(5170), r.e(6739)]).then(() => () => r(96739))), f("@radix-ui/react-id", "1.1.2", () => Promise.all([r.e(4637), r.e(4296)]).then(() => () => r(94296))), f("@radix-ui/react-navigation-menu", "1.2.16", () => Promise.all([r.e(9550), r.e(7139), r.e(4637), r.e(5170), r.e(2043), r.e(373), r.e(9793)]).then(() => () => r(7139))), f("@radix-ui/react-popover", "1.1.17", () => Promise.all([r.e(9550), r.e(8479), r.e(4637), r.e(5170), r.e(2043), r.e(4108), r.e(9113), r.e(241)]).then(() => () => r(60241))), f("@radix-ui/react-portal", "1.1.12", () => Promise.all([r.e(4637), r.e(5170), r.e(6810)]).then(() => () => r(36810))), f("@radix-ui/react-slot", "1.3.0", () => Promise.all([r.e(4637), r.e(7172)]).then(() => () => r(17172))), f("@radix-ui/react-use-controllable-state", "1.2.3", () => Promise.all([r.e(4637), r.e(6755)]).then(() => () => r(66755))), f("@radix-ui/react-visually-hidden", "1.2.6", () => Promise.all([r.e(4637), r.e(5170), r.e(2023)]).then(() => () => r(92023))), f("@rsgweb/locale-tools", "0.0.0", () => Promise.all([r.e(2145), r.e(761), r.e(9167), r.e(4637), r.e(842)]).then(() => () => r(40842))), f("@rsgweb/modules-core-global-navigation", "0.0.0-development", () => Promise.all([r.e(4823), r.e(6445), r.e(6550), r.e(1800), r.e(4637), r.e(5170), r.e(2043), r.e(4108), r.e(373), r.e(9628), r.e(9499), r.e(1270), r.e(8019), r.e(787), r.e(699)]).then(() => () => r(50699))), f("@rsgweb/rockstar-account", "0.0.0", () => Promise.all([r.e(1777), r.e(9167), r.e(6918), r.e(4637), r.e(6596), r.e(2909), r.e(8095), r.e(3331)]).then(() => () => r(58095))), f("@rsgweb/utils", "0.0.0-development", () => Promise.all([r.e(2145), r.e(1777), r.e(9167), r.e(2841), r.e(4637), r.e(6596), r.e(2909), r.e(9802)]).then(() => () => r(9802))), f("@vanilla-extract/recipes", "0.5.7", () => Promise.all([r.e(4823), r.e(7129)]).then(() => () => r(47129))), f("clsx", "2.1.1", () => r.e(4921).then(() => () => r(4921))), f("framer-motion", "12.42.1", () => Promise.all([r.e(5822), r.e(4637), r.e(2174)]).then(() => () => r(95822))), f("gsap", "3.12.5", () => r.e(3529).then(() => () => r(93529))), f("react-dom", "18.3.1", () => Promise.all([r.e(162), r.e(4637)]).then(() => () => r(30162))), f("react-remove-scroll", "2.7.2", () => Promise.all([r.e(3296), r.e(4637)]).then(() => () => r(33296))), f("react", "18.3.1", () => r.e(2581).then(() => () => r(22581))), f("spatial-navigation-polyfill", "1.3.1", () => r.e(4446).then(() => () => r(54446)));
+                f("@foundry-int/utils", "6.4.0", () => Promise.all([r.e(4114), r.e(1270)]).then(() => () => r(34114))), f("@foundry/icons", "6.4.0", () => Promise.all([r.e(1827), r.e(4637), r.e(1479), r.e(548), r.e(6128)]).then(() => () => r(21827))), f("@radix-ui/react-accordion", "1.2.16", () => Promise.all([r.e(4637), r.e(5170), r.e(2043), r.e(9802)]).then(() => () => r(69802))), f("@radix-ui/react-dialog", "1.1.19", () => Promise.all([r.e(6382), r.e(4637), r.e(5170), r.e(2043), r.e(3710), r.e(9113), r.e(1158)]).then(() => () => r(1158))), f("@radix-ui/react-focus-scope", "1.1.12", () => Promise.all([r.e(4637), r.e(5170), r.e(4355)]).then(() => () => r(64355))), f("@radix-ui/react-id", "1.1.2", () => Promise.all([r.e(4637), r.e(4296)]).then(() => () => r(94296))), f("@radix-ui/react-navigation-menu", "1.2.18", () => Promise.all([r.e(6382), r.e(1692), r.e(4637), r.e(5170), r.e(2043), r.e(1479), r.e(9793)]).then(() => () => r(61692))), f("@radix-ui/react-popover", "1.1.19", () => Promise.all([r.e(6382), r.e(896), r.e(4637), r.e(5170), r.e(2043), r.e(3710), r.e(9113), r.e(6148)]).then(() => () => r(56148))), f("@radix-ui/react-portal", "1.1.13", () => Promise.all([r.e(4637), r.e(5170), r.e(5887)]).then(() => () => r(18268))), f("@radix-ui/react-slot", "1.3.0", () => Promise.all([r.e(4637), r.e(7172)]).then(() => () => r(17172))), f("@radix-ui/react-use-controllable-state", "1.2.3", () => Promise.all([r.e(4637), r.e(6755)]).then(() => () => r(66755))), f("@radix-ui/react-visually-hidden", "1.2.7", () => Promise.all([r.e(4637), r.e(5170), r.e(5018)]).then(() => () => r(32637))), f("@rsgweb/locale-tools", "0.0.0", () => Promise.all([r.e(2145), r.e(761), r.e(9167), r.e(4637), r.e(7377)]).then(() => () => r(77377))), f("@rsgweb/modules-core-global-navigation", "0.0.0-development", () => Promise.all([r.e(4823), r.e(8840), r.e(8203), r.e(2705), r.e(4637), r.e(5170), r.e(2043), r.e(3710), r.e(1479), r.e(548), r.e(6978), r.e(1270), r.e(4287), r.e(7256), r.e(699)]).then(() => () => r(50699))), f("@rsgweb/rockstar-account", "0.0.0", () => Promise.all([r.e(1777), r.e(9167), r.e(6918), r.e(4637), r.e(195), r.e(2909), r.e(323), r.e(3331)]).then(() => () => r(323))), f("@rsgweb/utils", "0.0.0-development", () => Promise.all([r.e(2145), r.e(1777), r.e(9167), r.e(2841), r.e(4637), r.e(195), r.e(2909), r.e(519)]).then(() => () => r(40519))), f("@vanilla-extract/recipes", "0.5.7", () => Promise.all([r.e(4823), r.e(7129)]).then(() => () => r(47129))), f("clsx", "2.1.1", () => r.e(4921).then(() => () => r(4921))), f("framer-motion", "12.42.2", () => Promise.all([r.e(6739), r.e(4637), r.e(2174)]).then(() => () => r(36739))), f("gsap", "3.12.5", () => r.e(3529).then(() => () => r(93529))), f("react-dom", "18.3.1", () => Promise.all([r.e(162), r.e(4637)]).then(() => () => r(30162))), f("react-remove-scroll", "2.7.2", () => Promise.all([r.e(3296), r.e(4637)]).then(() => () => r(33296))), f("react", "18.3.1", () => r.e(2581).then(() => () => r(22581))), f("spatial-navigation-polyfill", "1.3.1", () => r.e(4446).then(() => () => r(54446)));
                 break;
               case "header":
-                f("@foundry/react", "6.3.0", () => Promise.all([r.e(9550), r.e(4823), r.e(6445), r.e(761), r.e(8479), r.e(6550), r.e(8826), r.e(4637), r.e(5170), r.e(2043), r.e(4108), r.e(9113), r.e(373), r.e(9628), r.e(9499), r.e(1270), r.e(5812), r.e(4555)]).then(() => () => r(76445)))
+                f("@foundry/react", "6.4.0", () => Promise.all([r.e(6382), r.e(4823), r.e(8840), r.e(761), r.e(896), r.e(8203), r.e(7489), r.e(4637), r.e(5170), r.e(2043), r.e(3710), r.e(9113), r.e(1479), r.e(548), r.e(6978), r.e(1270), r.e(5812), r.e(4555)]).then(() => () => r(47489)))
             }
             return e[a] = i.length ? Promise.all(i).then(() => e[a] = 1) : 1
           }
@@ -416,47 +416,47 @@ try {
             b = {
               4637: () => s("default", "react", !1, [1, 18, 2, 0], () => r.e(2581).then(() => () => r(22581))),
               81270: () => s("default", "clsx", !1, [1, 2, 1, 1], () => r.e(4921).then(() => () => r(4921))),
-              42909: () => s("default", "@rsgweb/locale-tools", !1, [0], () => Promise.all([r.e(2145), r.e(761), r.e(8461)]).then(() => () => r(40842))),
-              88447: () => s("default", "framer-motion", !1, [1, 12, 38, 0], () => r.e(5822).then(() => () => r(95822))),
-              96925: () => l("header", "@foundry/react", !1, () => Promise.all([r.e(9550), r.e(4823), r.e(6445), r.e(761), r.e(8479), r.e(8826), r.e(5170), r.e(2043), r.e(4108), r.e(9113), r.e(373), r.e(9628), r.e(9499), r.e(5812)]).then(() => () => r(76445))),
-              13331: () => s("default", "@rsgweb/utils", !1, [0], () => Promise.all([r.e(2145), r.e(1777), r.e(2841), r.e(6596), r.e(9802)]).then(() => () => r(9802))),
-              37116: () => s("default", "@rsgweb/modules-core-global-navigation", !1, [0], () => Promise.all([r.e(4823), r.e(6445), r.e(1800), r.e(5170), r.e(2043), r.e(4108), r.e(373), r.e(9628), r.e(9499), r.e(3080)]).then(() => () => r(50699))),
-              82199: () => s("default", "@rsgweb/rockstar-account", !1, [0], () => Promise.all([r.e(1777), r.e(6918), r.e(6596), r.e(8095)]).then(() => () => r(58095))),
-              80373: () => s("default", "@radix-ui/react-visually-hidden", !1, [1, 1, 2, 4], () => Promise.all([r.e(5170), r.e(4404)]).then(() => () => r(92023))),
-              39628: () => s("default", "@foundry-int/utils", !1, [0], () => Promise.all([r.e(5710), r.e(1270)]).then(() => () => r(85710))),
+              42909: () => s("default", "@rsgweb/locale-tools", !1, [0], () => Promise.all([r.e(2145), r.e(761), r.e(9758)]).then(() => () => r(77377))),
+              1612: () => l("header", "@foundry/react", !1, () => Promise.all([r.e(6382), r.e(4823), r.e(8840), r.e(761), r.e(896), r.e(7489), r.e(5170), r.e(2043), r.e(3710), r.e(9113), r.e(1479), r.e(548), r.e(6978), r.e(5812)]).then(() => () => r(47489))),
+              45266: () => s("default", "framer-motion", !1, [1, 12, 38, 0], () => r.e(6739).then(() => () => r(36739))),
+              13331: () => s("default", "@rsgweb/utils", !1, [0], () => Promise.all([r.e(2145), r.e(1777), r.e(2841), r.e(195), r.e(519)]).then(() => () => r(40519))),
+              37116: () => s("default", "@rsgweb/modules-core-global-navigation", !1, [0], () => Promise.all([r.e(4823), r.e(8840), r.e(2705), r.e(5170), r.e(2043), r.e(3710), r.e(1479), r.e(548), r.e(6978), r.e(3080)]).then(() => () => r(50699))),
+              82199: () => s("default", "@rsgweb/rockstar-account", !1, [0], () => Promise.all([r.e(1777), r.e(6918), r.e(195), r.e(323)]).then(() => () => r(323))),
+              91479: () => s("default", "@radix-ui/react-visually-hidden", !1, [1, 1, 2, 4], () => Promise.all([r.e(5170), r.e(2637)]).then(() => () => r(32637))),
+              50548: () => s("default", "@foundry-int/utils", !1, [0], () => Promise.all([r.e(4114), r.e(1270)]).then(() => () => r(34114))),
               50486: () => s("default", "@radix-ui/react-slot", !1, [1, 1, 2, 4], () => r.e(4791).then(() => () => r(17172))),
               84017: () => s("default", "react-dom", !1, [1, 18, 2, 0], () => r.e(162).then(() => () => r(30162))),
               82449: () => s("default", "@radix-ui/react-id", !1, [1, 1, 1, 1], () => r.e(1915).then(() => () => r(94296))),
               92939: () => s("default", "@radix-ui/react-use-controllable-state", !1, [1, 1, 2, 2], () => r.e(9136).then(() => () => r(66755))),
-              2272: () => s("default", "@radix-ui/react-portal", !1, [1, 1, 1, 10], () => r.e(4429).then(() => () => r(36810))),
-              76765: () => s("default", "@radix-ui/react-focus-scope", !1, [1, 1, 1, 8], () => r.e(9120).then(() => () => r(96739))),
+              64190: () => s("default", "@radix-ui/react-portal", !1, [1, 1, 1, 10], () => r.e(8268).then(() => () => r(18268))),
+              95745: () => s("default", "@radix-ui/react-focus-scope", !1, [1, 1, 1, 8], () => r.e(6736).then(() => () => r(64355))),
               59113: () => s("default", "react-remove-scroll", !1, [1, 2, 7, 2], () => r.e(3296).then(() => () => r(33296))),
-              372: () => s("default", "@radix-ui/react-dialog", !1, [1, 1, 1, 15], () => Promise.all([r.e(9550), r.e(9113), r.e(7720)]).then(() => () => r(85339))),
               1249: () => s("default", "@vanilla-extract/recipes", !1, [2, 0, 5, 7], () => r.e(9510).then(() => () => r(47129))),
-              20357: () => s("default", "@foundry/icons", !1, [0], () => Promise.all([r.e(2321), r.e(3868)]).then(() => () => r(52321))),
-              41488: () => s("default", "@radix-ui/react-accordion", !1, [1, 1, 2, 12], () => r.e(6325).then(() => () => r(98706))),
-              42913: () => s("default", "@radix-ui/react-popover", !1, [1, 1, 1, 15], () => Promise.all([r.e(9550), r.e(8479), r.e(9113), r.e(2622)]).then(() => () => r(60241))),
-              51784: () => s("default", "@radix-ui/react-navigation-menu", !1, [1, 1, 2, 14], () => Promise.all([r.e(9550), r.e(7139)]).then(() => () => r(7139))),
+              6195: () => s("default", "@radix-ui/react-dialog", !1, [1, 1, 1, 15], () => Promise.all([r.e(6382), r.e(9113), r.e(8777)]).then(() => () => r(1158))),
+              14046: () => s("default", "@radix-ui/react-accordion", !1, [1, 1, 2, 12], () => r.e(7421).then(() => () => r(69802))),
+              36616: () => s("default", "@foundry/icons", !1, [0], () => Promise.all([r.e(1827), r.e(8144)]).then(() => () => r(21827))),
+              51858: () => s("default", "@radix-ui/react-popover", !1, [1, 1, 1, 15], () => Promise.all([r.e(6382), r.e(896), r.e(9113), r.e(3767)]).then(() => () => r(56148))),
+              50245: () => s("default", "@radix-ui/react-navigation-menu", !1, [1, 1, 2, 14], () => Promise.all([r.e(6382), r.e(1692)]).then(() => () => r(61692))),
               59066: () => s("default", "spatial-navigation-polyfill", !1, [1, 1, 3, 1], () => r.e(4446).then(() => () => r(54446))),
               35812: () => s("default", "gsap", !1, [0], () => r.e(3529).then(() => () => r(93529)))
             },
             h = {
-              373: [80373],
-              787: [51784, 59066],
+              548: [50548],
               1270: [81270],
+              1479: [91479],
               2043: [82449, 92939],
               2909: [42909],
-              3080: [51784, 59066],
+              3080: [50245, 59066],
               3331: [13331],
-              4108: [2272, 76765],
+              3680: [37116, 82199],
+              3710: [64190, 95745],
+              4287: [1612, 45266],
               4637: [4637],
               5170: [50486, 84017],
               5812: [35812],
-              6396: [37116, 82199],
-              8019: [88447, 96925],
-              9113: [59113],
-              9499: [372, 1249, 20357, 41488, 42913],
-              9628: [39628]
+              6978: [1249, 6195, 14046, 36616, 51858],
+              7256: [50245, 59066],
+              9113: [59113]
             },
             p = {};
           r.f.consumes = (e, t) => {
@@ -490,14 +490,14 @@ try {
             };
             r.f.miniCss = (t, a) => {
               e[t] ? a.push(e[t]) : 0 !== e[t] && {
-                787: 1,
                 3080: 1,
-                3868: 1,
-                5660: 1,
-                6396: 1,
-                6445: 1,
-                6550: 1,
-                8826: 1
+                3680: 1,
+                6128: 1,
+                7256: 1,
+                7489: 1,
+                8144: 1,
+                8203: 1,
+                8840: 1
               } [t] && a.push(e[t] = (e => new Promise((t, a) => {
                 var n = r.miniCssF(e),
                   o = r.p + n;
@@ -539,7 +539,7 @@ try {
             let n = r.o(e, t) ? e[t] : void 0;
             if (0 !== n)
               if (n) a.push(n[2]);
-              else if (/^(3(331|73|868)|9(113|499|628)|(12|51)70|2043|2909|4108|4637|5812|787|8019)$/.test(t)) e[t] = 0;
+              else if (/^(5(170|48|812)|1270|1479|2043|2909|3331|3710|4287|4637|6978|7256|8144|9113)$/.test(t)) e[t] = 0;
             else {
               const o = new Promise((a, r) => n = e[t] = [a, r]);
               a.push(n[2] = o);
@@ -566,7 +566,7 @@ try {
             },
             a = self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || [];
           a.forEach(t.bind(null, 0)), a.push = t.bind(null, a.push.bind(a))
-        })(), r.nc = void 0, r(4010), r(72892)
+        })(), r.nc = void 0, r(87732), r(72892)
       })())
     }
   }

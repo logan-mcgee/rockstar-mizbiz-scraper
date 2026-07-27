@@ -1,0 +1,53 @@
+try {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    n = (new e.Error).stack;
+  n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8f539998-3cd8-4291-94c4-ed89bf9de488", e._sentryDebugIdIdentifier = "sentry-dbid-8f539998-3cd8-4291-94c4-ed89bf9de488")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+    release: "sentry-release-id",
+    packageName: "@rockstargames/modules-core-videoplayer",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
+  [997], {
+    997(e, n, o) {
+      o.d(n, {
+        v: () => s
+      });
+      var t = o(1270);
+      const d = new Map;
+
+      function a(e, n) {
+        if (e === n) return e;
+        const o = d.get(e);
+        if (o) return o.forEach(e => e(n)), n;
+        const t = d.get(n);
+        return t ? (t.forEach(n => n(e)), e) : n
+      }
+
+      function f(...e) {
+        return (...n) => {
+          for (const o of e) "function" == typeof o && o(...n)
+        }
+      }
+
+      function s(...e) {
+        const n = {
+          ...e[0]
+        };
+        for (let o = 1; o < e.length; o++) {
+          const d = e[o];
+          for (const e in d) {
+            const o = n[e],
+              s = d[e];
+            "function" == typeof o && "function" == typeof s && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? n[e] = f(o, s) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof o || "string" != typeof s ? "id" === e && o && s ? n.id = a(o, s) : n[e] = void 0 !== s ? s : o : n[e] = (0, t.clsx)(o, s)
+          }
+        }
+        return n
+      }
+    }
+  }
+]);
