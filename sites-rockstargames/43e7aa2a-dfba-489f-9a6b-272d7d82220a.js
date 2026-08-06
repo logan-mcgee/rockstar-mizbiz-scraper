@@ -1003,20 +1003,20 @@ try {
           to: l,
           onClick: r,
           target: o = "_self",
-          ...c
+          ...m
         }) => {
-          const m = (0, t.default)(d.button, d[i], e);
+          const c = (0, t.default)(d.button, d[i], e);
           return l ? (0, n.jsx)(s.A, {
-            ...c,
+            ...m,
             to: l,
-            className: m,
+            className: c,
             onClick: r,
             target: o,
             children: a
           }) : (0, n.jsx)("button", {
-            ...c,
+            ...m,
             type: "button",
-            className: m,
+            className: c,
             onClick: r,
             children: a
           })
@@ -1034,8 +1034,8 @@ try {
         l = i(13331),
         r = i(42909),
         o = i(36038),
-        c = i.n(o),
-        m = i(92511),
+        m = i.n(o),
+        c = i(92511),
         u = i(8251);
       const k = {
           active: "rockstargames-sites-rockstargamese35688e0d87409e3aef95ffb624d94f4",
@@ -1089,7 +1089,7 @@ try {
             h = (0, t.useRef)(null);
           (0, t.useEffect)(() => {
             if (!S.current || !h.current) return;
-            const a = new(c())(S.current);
+            const a = new(m())(S.current);
             a.get("press").set({
               time: 0
             }), a.get("tap").set({
@@ -1178,7 +1178,7 @@ try {
                         className: k.videoTitle,
                         children: t
                       })]
-                    }), (0, n.jsx)(m.A, {
+                    }), (0, n.jsx)(c.A, {
                       to: s,
                       target: d,
                       role: "presentation",
@@ -1226,17 +1226,17 @@ try {
           setBreadcrumb: a,
           setNormalLogo: i
         } = (0, b.b)(), d = (0, l.useQueryParams)(), [r, o] = (0, t.useState)({}), {
-          data: c
+          data: m
         } = (0, l.useQuery)(p.VideosList, {
           variables: r,
           skip: !Object.entries(r).length,
           autoSetLoading: !0
         }), {
-          search: m
+          search: c
         } = (0, s.useLocation)();
         if ((0, t.useEffect)(() => {
             window.scrollTo(0, 0)
-          }, [m]), (0, t.useEffect)(() => (a([{
+          }, [c]), (0, t.useEffect)(() => (a([{
             href: "/videos",
             title: e("Videos")
           }]), () => {
@@ -1249,14 +1249,14 @@ try {
               index: null === d.get("type"),
               gtaoSessionsEpisodes: "78cs3289" === d.get("gameId")
             })
-          }, [d.get("type"), d.get("gameId")]), (0, t.useEffect)(() => (i(!1), () => i(!0)), []), !c) return null;
-        if (c?.game && c?.gameVideos) return (0, n.jsxs)("div", {
+          }, [d.get("type"), d.get("gameId")]), (0, t.useEffect)(() => (i(!1), () => i(!0)), []), !m) return null;
+        if (m?.game && m?.gameVideos) return (0, n.jsxs)("div", {
           className: N,
           children: [(0, n.jsx)(f.A, {
-            vids: c.gameVideos.results,
-            title: e("Videos from %s").replace("%s", c.game.title)
-          }), c?.gtaosessions?.results && (0, n.jsx)(f.A, {
-            vids: c.gtaosessions.results,
+            vids: m.gameVideos.results,
+            title: e("Videos from %s").replace("%s", m.game.title)
+          }), m?.gtaosessions?.results && (0, n.jsx)(f.A, {
+            vids: m.gtaosessions.results,
             title: e("GTA Online Sessions Episodes")
           })]
         });
@@ -1266,7 +1266,7 @@ try {
           gtaVI: v,
           latest: S,
           rdo: h
-        } = c;
+        } = m;
         return (0, n.jsx)("div", {
           className: N,
           children: r.type ? "" : (0, n.jsxs)(n.Fragment, {

@@ -82,11 +82,11 @@ try {
         Tu: () => E,
         eW: () => s,
         oF: () => h,
-        N1: () => d,
+        N1: () => g,
         N6: () => m,
         jA: () => p,
         Jp: () => f,
-        xm: () => g,
+        xm: () => d,
         Qh: () => c,
         qg: () => se
       });
@@ -124,11 +124,11 @@ try {
         return e.type === i.pound
       }
 
-      function g(e) {
+      function d(e) {
         return e.type === i.tag
       }
 
-      function d(e) {
+      function g(e) {
         return !(!e || "object" != typeof e || e.type !== o.number)
       }
 
@@ -1003,8 +1003,8 @@ try {
               if ((H = this.tryParseArgumentClose(s)).err) return H;
               var p = F(s, this.clonePosition());
               if (f && W(null == f ? void 0 : f.style, "::", 0)) {
-                var g = z(f.style.slice(2));
-                if ("number" === u) return (_ = this.parseNumberSkeletonFromString(g, f.styleLocation)).err ? _ : {
+                var d = z(f.style.slice(2));
+                if ("number" === u) return (_ = this.parseNumberSkeletonFromString(d, f.styleLocation)).err ? _ : {
                   val: {
                     type: i.number,
                     value: r,
@@ -1013,9 +1013,9 @@ try {
                   },
                   err: null
                 };
-                if (0 === g.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
-                var d = g;
-                this.locale && (d = function(e, t) {
+                if (0 === d.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
+                var g = d;
+                this.locale && (g = function(e, t) {
                   for (var r = "", n = 0; n < e.length; n++) {
                     var i = e.charAt(n);
                     if ("j" === i) {
@@ -1028,12 +1028,12 @@ try {
                     } else r += "J" === i ? "H" : i
                   }
                   return r
-                }(g, this.locale));
+                }(d, this.locale));
                 var E = {
                   type: o.dateTime,
-                  pattern: d,
+                  pattern: g,
                   location: f.styleLocation,
-                  parsedOptions: this.shouldParseSkeletons ? v(d) : {}
+                  parsedOptions: this.shouldParseSkeletons ? v(g) : {}
                 };
                 return {
                   val: {
@@ -1169,8 +1169,8 @@ try {
             if (!this.bumpIf("{")) return this.error("select" === t ? n.EXPECT_SELECT_ARGUMENT_SELECTOR_FRAGMENT : n.EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT, F(this.clonePosition(), this.clonePosition()));
             var p = this.parseMessage(e + 1, t, r);
             if (p.err) return p;
-            var g = this.tryParseArgumentClose(m);
-            if (g.err) return g;
+            var d = this.tryParseArgumentClose(m);
+            if (d.err) return d;
             s.push([h, {
               value: p.val,
               location: F(m, this.clonePosition())
@@ -1273,7 +1273,7 @@ try {
         e.forEach(function(e) {
           if (delete e.location, f(e) || m(e))
             for (var t in e.options) delete e.options[t].location, ae(e.options[t].value);
-          else h(e) && d(e.style) || (u(e) || c(e)) && E(e.style) ? delete e.style.location : g(e) && ae(e.children)
+          else h(e) && g(e.style) || (u(e) || c(e)) && E(e.style) ? delete e.style.location : d(e) && ae(e.children)
         })
       }
 
@@ -1553,9 +1553,9 @@ try {
           }
           var a = u(r);
           c && (a = a.concat(c(r)));
-          for (var s = l(t), g = l(r), d = 0; d < a.length; ++d) {
-            var E = a[d];
-            if (!(o[E] || n && n[E] || g && g[E] || s && s[E])) {
+          for (var s = l(t), d = l(r), g = 0; g < a.length; ++g) {
+            var E = a[g];
+            if (!(o[E] || n && n[E] || d && d[E] || s && s[E])) {
               var y = f(r, E);
               try {
                 h(t, E, y)
@@ -1786,41 +1786,41 @@ try {
           value: e[0].value
         }];
         for (var f = [], m = 0, p = e; m < p.length; m++) {
-          var g = p[m];
-          if ((0, i.eW)(g)) f.push({
+          var d = p[m];
+          if ((0, i.eW)(d)) f.push({
             type: n.literal,
-            value: g.value
+            value: d.value
           });
-          else if ((0, i.jA)(g)) "number" == typeof u && f.push({
+          else if ((0, i.jA)(d)) "number" == typeof u && f.push({
             type: n.literal,
             value: r.getNumberFormat(t).format(u)
           });
           else {
-            var d = g.value;
-            if (!h || !(d in h)) throw new o.Ei(d, c);
-            var E = h[d];
-            if ((0, i.Im)(g)) E && "string" != typeof E && "number" != typeof E || (E = "string" == typeof E || "number" == typeof E ? String(E) : ""), f.push({
+            var g = d.value;
+            if (!h || !(g in h)) throw new o.Ei(g, c);
+            var E = h[g];
+            if ((0, i.Im)(d)) E && "string" != typeof E && "number" != typeof E || (E = "string" == typeof E || "number" == typeof E ? String(E) : ""), f.push({
               type: "string" == typeof E ? n.literal : n.object,
               value: E
             });
-            else if ((0, i.tv)(g)) {
-              var y = "string" == typeof g.style ? l.date[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : void 0;
+            else if ((0, i.tv)(d)) {
+              var y = "string" == typeof d.style ? l.date[d.style] : (0, i.Tu)(d.style) ? d.style.parsedOptions : void 0;
               f.push({
                 type: n.literal,
                 value: r.getDateTimeFormat(t, y).format(E)
               })
-            } else if ((0, i.Qh)(g)) y = "string" == typeof g.style ? l.time[g.style] : (0, i.Tu)(g.style) ? g.style.parsedOptions : l.time.medium, f.push({
+            } else if ((0, i.Qh)(d)) y = "string" == typeof d.style ? l.time[d.style] : (0, i.Tu)(d.style) ? d.style.parsedOptions : l.time.medium, f.push({
               type: n.literal,
               value: r.getDateTimeFormat(t, y).format(E)
             });
-            else if ((0, i.oF)(g))(y = "string" == typeof g.style ? l.number[g.style] : (0, i.N1)(g.style) ? g.style.parsedOptions : void 0) && y.scale && (E *= y.scale || 1), f.push({
+            else if ((0, i.oF)(d))(y = "string" == typeof d.style ? l.number[d.style] : (0, i.N1)(d.style) ? d.style.parsedOptions : void 0) && y.scale && (E *= y.scale || 1), f.push({
               type: n.literal,
               value: r.getNumberFormat(t, y).format(E)
             });
             else {
-              if ((0, i.xm)(g)) {
-                var b = g.children,
-                  v = g.value,
+              if ((0, i.xm)(d)) {
+                var b = d.children,
+                  v = d.value,
                   T = h[v];
                 if (!a(T)) throw new o.Zo(v, "function", c);
                 var _ = T(s(b, t, r, l, h, u).map(function(e) {
@@ -1833,20 +1833,20 @@ try {
                   }
                 }))
               }
-              if ((0, i.Jp)(g)) {
-                if (!(H = g.options[E] || g.options.other)) throw new o.$x(g.value, E, Object.keys(g.options), c);
+              if ((0, i.Jp)(d)) {
+                if (!(H = d.options[E] || d.options.other)) throw new o.$x(d.value, E, Object.keys(d.options), c);
                 f.push.apply(f, s(H.value, t, r, l, h))
-              } else if ((0, i.N6)(g)) {
+              } else if ((0, i.N6)(d)) {
                 var H;
-                if (!(H = g.options["=".concat(E)])) {
+                if (!(H = d.options["=".concat(E)])) {
                   if (!Intl.PluralRules) throw new o.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', o.O4.MISSING_INTL_API, c);
                   var S = r.getPluralRules(t, {
-                    type: g.pluralType
-                  }).select(E - (g.offset || 0));
-                  H = g.options[S] || g.options.other
+                    type: d.pluralType
+                  }).select(E - (d.offset || 0));
+                  H = d.options[S] || d.options.other
                 }
-                if (!H) throw new o.$x(g.value, E, Object.keys(g.options), c);
-                f.push.apply(f, s(H.value, t, r, l, h, E - (g.offset || 0)))
+                if (!H) throw new o.$x(d.value, E, Object.keys(d.options), c);
+                f.push.apply(f, s(H.value, t, r, l, h, E - (d.offset || 0)))
               }
             }
           }
@@ -1950,8 +1950,8 @@ try {
             f = e.messages,
             m = e.defaultLocale,
             p = e.defaultFormats,
-            g = e.fallbackOnEmptyString,
-            d = e.onError,
+            d = e.fallbackOnEmptyString,
+            g = e.onError,
             E = e.timeZone,
             y = e.defaultRichTextElements;
           void 0 === r && (r = {
@@ -1965,11 +1965,11 @@ try {
           if (Array.isArray(_) && 1 === _.length && _[0].type === i.ZE.literal) return _[0].value;
           if (!o && _ && "string" == typeof _ && !y) return _.replace(/'\{(.*?)\}'/gi, "{$1}");
           if (o = (0, n.Cl)((0, n.Cl)({}, y), o || {}), c = u(c, E), p = u(p, E), !_) {
-            if (!1 === g && "" === _) return _;
-            if ((!v || h && h.toLowerCase() !== m.toLowerCase()) && d(new a.sb(r, h)), v) try {
+            if (!1 === d && "" === _) return _;
+            if ((!v || h && h.toLowerCase() !== m.toLowerCase()) && g(new a.sb(r, h)), v) try {
               return t.getMessageFormat(v, m, p, l).format(o)
             } catch (e) {
-              return d(new a.Ho('Error formatting default message for: "'.concat(T, '", rendering default message verbatim'), h, r, e)), "string" == typeof v ? v : T
+              return g(new a.Ho('Error formatting default message for: "'.concat(T, '", rendering default message verbatim'), h, r, e)), "string" == typeof v ? v : T
             }
             return T
           }
@@ -1978,12 +1978,12 @@ try {
               formatters: t
             }, l || {})).format(o)
           } catch (e) {
-            d(new a.Ho('Error formatting message: "'.concat(T, '", using ').concat(v ? "default message" : "id", " as fallback."), h, r, e))
+            g(new a.Ho('Error formatting message: "'.concat(T, '", using ').concat(v ? "default message" : "id", " as fallback."), h, r, e))
           }
           if (v) try {
             return t.getMessageFormat(v, m, p, l).format(o)
           } catch (e) {
-            d(new a.Ho('Error formatting the default message for: "'.concat(T, '", rendering message verbatim'), h, r, e))
+            g(new a.Ho('Error formatting the default message for: "'.concat(T, '", rendering message verbatim'), h, r, e))
           }
           return "string" == typeof _ ? _ : "string" == typeof v ? v : T
         },
@@ -2020,7 +2020,7 @@ try {
         return String(l)
       }
 
-      function g(e, t) {
+      function d(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var i = r[0],
           o = r[1],
@@ -2034,7 +2034,7 @@ try {
         return String(l)
       }
 
-      function d(e, t) {
+      function g(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         var i = r[0],
           o = r[1],
@@ -2229,8 +2229,8 @@ try {
                   formatRelativeTime: M.bind(null, i, r.getRelativeTimeFormat),
                   formatDate: p.bind(null, i, r.getDateTimeFormat),
                   formatDateToParts: E.bind(null, i, r.getDateTimeFormat),
-                  formatTime: g.bind(null, i, r.getDateTimeFormat),
-                  formatDateTimeRange: d.bind(null, i, r.getDateTimeFormat),
+                  formatTime: d.bind(null, i, r.getDateTimeFormat),
+                  formatDateTimeRange: g.bind(null, i, r.getDateTimeFormat),
                   formatTimeToParts: y.bind(null, i, r.getDateTimeFormat),
                   formatPlural: L.bind(null, i, r.getPluralRules),
                   formatMessage: c.bind(null, i, r),
@@ -2396,8 +2396,8 @@ try {
         f = r ? Symbol.for("react.forward_ref") : 60112,
         m = r ? Symbol.for("react.suspense") : 60113,
         p = r ? Symbol.for("react.suspense_list") : 60120,
-        g = r ? Symbol.for("react.memo") : 60115,
-        d = r ? Symbol.for("react.lazy") : 60116,
+        d = r ? Symbol.for("react.memo") : 60115,
+        g = r ? Symbol.for("react.lazy") : 60116,
         E = r ? Symbol.for("react.block") : 60121,
         y = r ? Symbol.for("react.fundamental") : 60117,
         b = r ? Symbol.for("react.responder") : 60118,
@@ -2420,8 +2420,8 @@ try {
                   switch (e = e && e.$$typeof) {
                     case h:
                     case f:
-                    case d:
                     case g:
+                    case d:
                     case l:
                       return e;
                     default:
@@ -2437,7 +2437,7 @@ try {
       function _(e) {
         return T(e) === c
       }
-      t.AsyncMode = u, t.ConcurrentMode = c, t.ContextConsumer = h, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = o, t.Lazy = d, t.Memo = g, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
+      t.AsyncMode = u, t.ConcurrentMode = c, t.ContextConsumer = h, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = o, t.Lazy = g, t.Memo = d, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
         return _(e) || T(e) === u
       }, t.isConcurrentMode = _, t.isContextConsumer = function(e) {
         return T(e) === h
@@ -2450,9 +2450,9 @@ try {
       }, t.isFragment = function(e) {
         return T(e) === o
       }, t.isLazy = function(e) {
-        return T(e) === d
-      }, t.isMemo = function(e) {
         return T(e) === g
+      }, t.isMemo = function(e) {
+        return T(e) === d
       }, t.isPortal = function(e) {
         return T(e) === i
       }, t.isProfiler = function(e) {
@@ -2462,7 +2462,7 @@ try {
       }, t.isSuspense = function(e) {
         return T(e) === m
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === d || e.$$typeof === g || e.$$typeof === l || e.$$typeof === h || e.$$typeof === f || e.$$typeof === y || e.$$typeof === b || e.$$typeof === v || e.$$typeof === E)
+        return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === d || e.$$typeof === l || e.$$typeof === h || e.$$typeof === f || e.$$typeof === y || e.$$typeof === b || e.$$typeof === v || e.$$typeof === E)
       }, t.typeOf = T
     },
     70502(e, t, r) {

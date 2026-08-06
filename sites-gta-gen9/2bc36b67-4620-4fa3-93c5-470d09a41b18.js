@@ -1,0 +1,44 @@
+try {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
+    t = (new e.Error).stack;
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "2bc36b67-4620-4fa3-93c5-470d09a41b18", e._sentryDebugIdIdentifier = "sentry-dbid-2bc36b67-4620-4fa3-93c5-470d09a41b18")
+} catch (e) {} {
+  let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
+  e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
+    release: "sentry-release-id",
+    packageName: "@rockstargames/sites-gta-gen9",
+    dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+  })
+}("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {}).SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
+  [3968, 6825], {
+    99206(e, t, n) {
+      n.r(t);
+      var d = n(93082),
+        a = n(35812);
+      let s = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+        r = e => e && !Array.isArray(e) && "object" == typeof e,
+        o = [],
+        f = {},
+        l = a.default;
+      const i = (e, t = o) => {
+        let n = f;
+        r(e) ? (n = e, e = null, t = "dependencies" in n ? n.dependencies : o) : r(t) && (n = t, t = "dependencies" in n ? n.dependencies : o), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        const {
+          scope: a,
+          revertOnUpdate: i
+        } = n, u = (0, d.useRef)(!1), c = (0, d.useRef)(l.context(() => {}, a)), b = (0, d.useRef)(e => c.current.add(null, e)), g = t && t.length && !i;
+        return g && s(() => (u.current = !0, () => c.current.revert()), o), s(() => {
+          if (e && c.current.add(e, a), !g || !u.current) return () => c.current.revert()
+        }, t), {
+          context: c.current,
+          contextSafe: b.current
+        }
+      };
+      i.register = e => {
+        l = e
+      }, i.headless = !0, n.d(t, ["useGSAP", 0, i])
+    }
+  }
+]);

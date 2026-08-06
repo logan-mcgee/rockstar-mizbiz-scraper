@@ -73,9 +73,9 @@ try {
         findPlatform: () => re.rB,
         generateTpaLink: () => re.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => re.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => re.Ap,
         getGen8Consoles: () => re.Xs,
         getGen9Consoles: () => re.kx,
@@ -94,10 +94,10 @@ try {
         scrollToElement: () => re.PA,
         setContextItem: () => m.A,
         setCookieValue: () => re.My,
-        setMakeVarItem: () => f.A,
+        setMakeVarItem: () => p.A,
         supportedBrowsers: () => ee,
         toScLocaleString: () => Te.t,
-        track: () => ce,
+        track: () => le,
         useApolloClient: () => $,
         useBase: () => ve.RK,
         useBodyScrollable: () => Y,
@@ -131,11 +131,11 @@ try {
         useWindowResize: () => De.G4,
         webSettingsReactive: () => Le,
         withAutoRouteTracking: () => Pe,
-        withGtmTracking: () => le,
+        withGtmTracking: () => ce,
         withMediaBasedProps: () => ge,
         withReactiveState: () => T,
         withRockstarGraph: () => H,
-        withTranslations: () => pe
+        withTranslations: () => fe
       });
       var r = {};
       o.r(r), o.d(r, {
@@ -160,8 +160,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(92998),
-        l = o(78062);
+      var l = o(92998),
+        c = o(78062);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -183,8 +183,8 @@ try {
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), t?.["z-index"] && (t.zIndex = t["z-index"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
       var m = o(12043),
-        f = o(95967),
-        p = o(39793),
+        p = o(95967),
+        f = o(39793),
         v = o(93082),
         w = o(18849);
       const b = (0, m.A)({
@@ -209,9 +209,9 @@ try {
             };
             t(o)
           }, [t]);
-          return (0, p.jsx)(b.Provider, {
+          return (0, f.jsx)(b.Provider, {
             value: t(),
-            children: (0, p.jsx)(y.Provider, {
+            children: (0, f.jsx)(y.Provider, {
               value: o,
               children: e
             })
@@ -220,9 +220,9 @@ try {
         T = (e, {
           state: t
         }) => function(o) {
-          return (0, p.jsx)(S, {
+          return (0, f.jsx)(S, {
             state: t,
-            children: (0, p.jsx)(e, {
+            children: (0, f.jsx)(e, {
               ...o
             })
           })
@@ -363,11 +363,11 @@ try {
             graphOptions: t,
             typePolicies: o
           });
-          return (0, p.jsx)(R.ec, {
+          return (0, f.jsx)(R.ec, {
             token: t?.token,
-            children: (0, p.jsx)(M.X, {
+            children: (0, f.jsx)(M.X, {
               client: r,
-              children: (0, p.jsx)(J.Provider, {
+              children: (0, f.jsx)(J.Provider, {
                 value: N,
                 children: e
               })
@@ -379,13 +379,13 @@ try {
         }) => {
           const o = (0, A.UT)("");
           return function(r) {
-            return (0, p.jsx)(W, {
+            return (0, f.jsx)(W, {
               graphOptions: {
                 env: t,
                 useGETForQueries: !0,
                 token: o
               },
-              children: (0, p.jsx)(e, {
+              children: (0, f.jsx)(e, {
                 ...r
               })
             })
@@ -424,7 +424,7 @@ try {
       const ae = (0, o(66302).A)(),
         ie = ae?.id,
         de = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        ce = e => {
+        le = e => {
           const t = {
             ...e,
             environment: ie,
@@ -434,10 +434,10 @@ try {
             dataLayer: t
           })
         },
-        le = e => t => ((e, t) => (0, p.jsx)(e, {
+        ce = e => t => ((e, t) => (0, f.jsx)(e, {
           ...t,
           gtmTrack: e => {
-            ce(e)
+            le(e)
           }
         }))(e, t);
       var ue = o(79098);
@@ -465,25 +465,25 @@ try {
             n(s(t))
           }, o);
           return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-        }), (0, p.jsx)(e, {
+        }), (0, f.jsx)(e, {
           ...r
         })
       })(e, o, t);
       var he = o(53967),
         me = o(57880);
-      const fe = he.J1`
+      const pe = he.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key
         value
     }
 }`,
-        pe = (e, t = "default") => o => ((e, t, o) => {
+        fe = (e, t = "default") => o => ((e, t, o) => {
           const r = ((e = "default") => {
             const t = (0, me.A)(),
               {
                 data: o
-              } = Q(fe, {
+              } = Q(pe, {
                 variables: {
                   config: e,
                   locale: t
@@ -491,7 +491,7 @@ query Translations($locale: String!, $config: String!) {
               });
             return o ? e => o?.translations.find(t => t.key === e)?.value ?? e : null
           })(o);
-          return r ? (0, p.jsx)(e, {
+          return r ? (0, f.jsx)(e, {
             ...t,
             t: r
           }) : null
@@ -514,7 +514,7 @@ query Translations($locale: String!, $config: String!) {
               ...o,
               ...t
             }), [o, t]);
-          return (0, p.jsx)(ye.Provider, {
+          return (0, f.jsx)(ye.Provider, {
             value: r,
             children: e
           })
@@ -526,10 +526,10 @@ query Translations($locale: String!, $config: String!) {
             pathname: o
           } = (0, Ae.useLocation)();
           return (0, v.useEffect)(() => {
-            ce({
+            le({
               event: "trackPageview"
             })
-          }, [o]), (0, p.jsx)(e, {
+          }, [o]), (0, f.jsx)(e, {
             ...t
           })
         })(e, t),

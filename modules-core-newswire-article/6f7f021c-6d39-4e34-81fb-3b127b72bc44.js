@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function l(e, t, o) {
         var r, s = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === s[r] && (s[r] = t[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: s,
           _owner: i.current
         }
       }
-      t.Fragment = s, t.jsx = c, t.jsxs = c
+      t.Fragment = s, t.jsx = l, t.jsxs = l
     },
     39793(e, t, o) {
       e.exports = o(94931)
@@ -106,9 +106,9 @@ try {
         findPlatform: () => oe.rB,
         generateTpaLink: () => oe.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => oe.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => oe.Ap,
         getGen8Consoles: () => oe.Xs,
         getGen9Consoles: () => oe.kx,
@@ -123,9 +123,9 @@ try {
         mutateWebSettings: () => Me,
         newswirePost: () => te,
         oneTrustInit: () => ee,
-        safeStyles: () => f,
+        safeStyles: () => m,
         scrollToElement: () => oe.PA,
-        setContextItem: () => m.A,
+        setContextItem: () => f.A,
         setCookieValue: () => oe.My,
         setMakeVarItem: () => h.A,
         supportedBrowsers: () => Z,
@@ -164,11 +164,11 @@ try {
         useWindowResize: () => Le.G4,
         webSettingsReactive: () => Re,
         withAutoRouteTracking: () => Te,
-        withGtmTracking: () => ce,
-        withMediaBasedProps: () => le,
+        withGtmTracking: () => le,
+        withMediaBasedProps: () => ce,
         withReactiveState: () => T,
         withRockstarGraph: () => Q,
-        withTranslations: () => me
+        withTranslations: () => fe
       });
       var r = {};
       o.r(r), o.d(r, {
@@ -193,8 +193,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(92998),
-        l = o(78062);
+      var l = o(92998),
+        c = o(78062);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -211,21 +211,21 @@ try {
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
       var g = o(40283);
-      const f = e => {
+      const m = e => {
         const t = (0, g.clone)(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), t?.["z-index"] && (t.zIndex = t["z-index"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
-      var m = o(12043),
+      var f = o(12043),
         h = o(95967),
         p = o(39793),
         w = o(93082),
         v = o(18849);
-      const b = (0, m.A)({
+      const b = (0, f.A)({
           context: (0, w.createContext)({}),
           key: "graphContextGet"
         }),
         y = () => (0, w.useContext)(b),
-        k = (0, m.A)({
+        k = (0, f.A)({
           context: (0, w.createContext)({}),
           key: "graphContextSet"
         }),
@@ -466,13 +466,13 @@ try {
             dataLayer: t
           })
         },
-        ce = e => t => ((e, t) => (0, p.jsx)(e, {
+        le = e => t => ((e, t) => (0, p.jsx)(e, {
           ...t,
           gtmTrack: e => {
             de(e)
           }
         }))(e, t),
-        le = (e, t = 250) => o => ((e, t, o) => {
+        ce = (e, t = 250) => o => ((e, t, o) => {
           const [r, n] = (0, w.useState)(t), s = e => {
             let t = e;
             const o = t?.items;
@@ -502,19 +502,19 @@ try {
         })(e, o, t);
       var ue = o(53967),
         ge = o(57880);
-      const fe = ue.J1`
+      const me = ue.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key
         value
     }
 }`,
-        me = (e, t = "default") => o => ((e, t, o) => {
+        fe = (e, t = "default") => o => ((e, t, o) => {
           const r = ((e = "default") => {
             const t = (0, ge.A)(),
               {
                 data: o
-              } = J(fe, {
+              } = J(me, {
                 variables: {
                   config: e,
                   locale: t
@@ -531,7 +531,7 @@ query Translations($locale: String!, $config: String!) {
         pe = o(26665),
         we = o(58460),
         ve = o(71374);
-      const be = (0, m.A)({
+      const be = (0, f.A)({
           context: (0, w.createContext)({}),
           key: "gtmDatalayer"
         }),

@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "3d48505b-fc9c-4b1c-bdb9-477c9abe6a08", e._sentryDebugIdIdentifier = "sentry-dbid-3d48505b-fc9c-4b1c-bdb9-477c9abe6a08")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3d48505b-fc9c-4b1c-bdb9-477c9abe6a08", e._sentryDebugIdIdentifier = "sentry-dbid-3d48505b-fc9c-4b1c-bdb9-477c9abe6a08")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,21 +13,21 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [3059], {
-    73059(e, t, a) {
-      a.d(t, {
+    73059(e, a, t) {
+      t.d(a, {
         A: () => o
       });
-      var i = a(37015),
-        n = a(20219),
-        s = a(20212);
+      var i = t(37015),
+        n = t(20219),
+        s = t(20212);
 
       function o(e) {
         let {
-          swiper: t,
-          extendParams: a,
+          swiper: a,
+          extendParams: t,
           on: o
         } = e;
-        a({
+        t({
           a11y: {
             enabled: !0,
             notificationClass: "swiper-notification",
@@ -45,15 +45,15 @@ try {
             id: null,
             scrollOnFocus: !0
           }
-        }), t.a11y = {
+        }), a.a11y = {
           clicked: !1
         };
         let r, l, d = null,
           c = (new Date).getTime();
 
         function g(e) {
-          const t = d;
-          0 !== t.length && (0, s.s)(t, e)
+          const a = d;
+          0 !== a.length && (0, s.s)(a, e)
         }
 
         function p(e) {
@@ -68,21 +68,21 @@ try {
           })
         }
 
-        function f(e, t) {
+        function f(e, a) {
           (e = (0, s.m)(e)).forEach(e => {
-            e.setAttribute("role", t)
+            e.setAttribute("role", a)
           })
         }
 
-        function b(e, t) {
+        function b(e, a) {
           (e = (0, s.m)(e)).forEach(e => {
-            e.setAttribute("aria-roledescription", t)
+            e.setAttribute("aria-roledescription", a)
           })
         }
 
-        function m(e, t) {
+        function m(e, a) {
           (e = (0, s.m)(e)).forEach(e => {
-            e.setAttribute("aria-label", t)
+            e.setAttribute("aria-label", a)
           })
         }
 
@@ -100,39 +100,39 @@ try {
 
         function h(e) {
           if (13 !== e.keyCode && 32 !== e.keyCode) return;
-          const a = t.params.a11y,
+          const t = a.params.a11y,
             i = e.target;
-          if (!t.pagination || !t.pagination.el || i !== t.pagination.el && !t.pagination.el.contains(e.target) || e.target.matches((0, n.c)(t.params.pagination.bulletClass))) {
-            if (t.navigation && t.navigation.prevEl && t.navigation.nextEl) {
-              const e = (0, s.m)(t.navigation.prevEl);
-              (0, s.m)(t.navigation.nextEl).includes(i) && (t.isEnd && !t.params.loop || t.slideNext(), t.isEnd ? g(a.lastSlideMessage) : g(a.nextSlideMessage)), e.includes(i) && (t.isBeginning && !t.params.loop || t.slidePrev(), t.isBeginning ? g(a.firstSlideMessage) : g(a.prevSlideMessage))
+          if (!a.pagination || !a.pagination.el || i !== a.pagination.el && !a.pagination.el.contains(e.target) || e.target.matches((0, n.c)(a.params.pagination.bulletClass))) {
+            if (a.navigation && a.navigation.prevEl && a.navigation.nextEl) {
+              const e = (0, s.m)(a.navigation.prevEl);
+              (0, s.m)(a.navigation.nextEl).includes(i) && (a.isEnd && !a.params.loop || a.slideNext(), a.isEnd ? g(t.lastSlideMessage) : g(t.nextSlideMessage)), e.includes(i) && (a.isBeginning && !a.params.loop || a.slidePrev(), a.isBeginning ? g(t.firstSlideMessage) : g(t.prevSlideMessage))
             }
-            t.pagination && i.matches((0, n.c)(t.params.pagination.bulletClass)) && i.click()
+            a.pagination && i.matches((0, n.c)(a.params.pagination.bulletClass)) && i.click()
           }
         }
 
         function y() {
-          return t.pagination && t.pagination.bullets && t.pagination.bullets.length
+          return a.pagination && a.pagination.bullets && a.pagination.bullets.length
         }
 
         function w() {
-          return y() && t.params.pagination.clickable
+          return y() && a.params.pagination.clickable
         }
-        const M = (e, t, a) => {
-            p(e), "BUTTON" !== e.tagName && (f(e, "button"), e.addEventListener("keydown", h)), m(e, a),
-              function(e, t) {
+        const M = (e, a, t) => {
+            p(e), "BUTTON" !== e.tagName && (f(e, "button"), e.addEventListener("keydown", h)), m(e, t),
+              function(e, a) {
                 (e = (0, s.m)(e)).forEach(e => {
-                  e.setAttribute("aria-controls", t)
+                  e.setAttribute("aria-controls", a)
                 })
-              }(e, t)
+              }(e, a)
           },
           k = e => {
-            l && l !== e.target && !l.contains(e.target) && (r = !0), t.a11y.clicked = !0
+            l && l !== e.target && !l.contains(e.target) && (r = !0), a.a11y.clicked = !0
           },
           x = () => {
             r = !1, requestAnimationFrame(() => {
               requestAnimationFrame(() => {
-                t.destroyed || (t.a11y.clicked = !1)
+                a.destroyed || (a.a11y.clicked = !1)
               })
             })
           },
@@ -140,83 +140,83 @@ try {
             c = (new Date).getTime()
           },
           A = e => {
-            if (t.a11y.clicked || !t.params.a11y.scrollOnFocus) return;
+            if (a.a11y.clicked || !a.params.a11y.scrollOnFocus) return;
             if ((new Date).getTime() - c < 100) return;
-            const a = e.target.closest(`.${t.params.slideClass}, swiper-slide`);
-            if (!a || !t.slides.includes(a)) return;
-            l = a;
-            const i = t.slides.indexOf(a) === t.activeIndex,
-              n = t.params.watchSlidesProgress && t.visibleSlides && t.visibleSlides.includes(a);
-            i || n || e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents || (t.isHorizontal() ? t.el.scrollLeft = 0 : t.el.scrollTop = 0, requestAnimationFrame(() => {
-              r || (t.params.loop ? t.slideToLoop(t.getSlideIndexWhenGrid(parseInt(a.getAttribute("data-swiper-slide-index"))), 0) : t.slideTo(t.getSlideIndexWhenGrid(t.slides.indexOf(a)), 0), r = !1)
+            const t = e.target.closest(`.${a.params.slideClass}, swiper-slide`);
+            if (!t || !a.slides.includes(t)) return;
+            l = t;
+            const i = a.slides.indexOf(t) === a.activeIndex,
+              n = a.params.watchSlidesProgress && a.visibleSlides && a.visibleSlides.includes(t);
+            i || n || e.sourceCapabilities && e.sourceCapabilities.firesTouchEvents || (a.isHorizontal() ? a.el.scrollLeft = 0 : a.el.scrollTop = 0, requestAnimationFrame(() => {
+              r || (a.params.loop ? a.slideToLoop(a.getSlideIndexWhenGrid(parseInt(t.getAttribute("data-swiper-slide-index"))), 0) : a.slideTo(a.getSlideIndexWhenGrid(a.slides.indexOf(t)), 0), r = !1)
             }))
           },
           S = () => {
-            const e = t.params.a11y;
-            e.itemRoleDescriptionMessage && b(t.slides, e.itemRoleDescriptionMessage), e.slideRole && f(t.slides, e.slideRole);
-            const a = t.slides.length;
-            e.slideLabelMessage && t.slides.forEach((i, n) => {
-              const s = t.params.loop ? parseInt(i.getAttribute("data-swiper-slide-index"), 10) : n;
-              m(i, e.slideLabelMessage.replace(/\{\{index\}\}/, s + 1).replace(/\{\{slidesLength\}\}/, a))
+            const e = a.params.a11y;
+            e.itemRoleDescriptionMessage && b(a.slides, e.itemRoleDescriptionMessage), e.slideRole && f(a.slides, e.slideRole);
+            const t = a.slides.length;
+            e.slideLabelMessage && a.slides.forEach((i, n) => {
+              const s = a.params.loop ? parseInt(i.getAttribute("data-swiper-slide-index"), 10) : n;
+              m(i, e.slideLabelMessage.replace(/\{\{index\}\}/, s + 1).replace(/\{\{slidesLength\}\}/, t))
             })
           };
         o("beforeInit", () => {
-          d = (0, s.c)("span", t.params.a11y.notificationClass), d.setAttribute("aria-live", "assertive"), d.setAttribute("aria-atomic", "true")
+          d = (0, s.c)("span", a.params.a11y.notificationClass), d.setAttribute("aria-live", "assertive"), d.setAttribute("aria-atomic", "true")
         }), o("afterInit", () => {
-          t.params.a11y.enabled && (() => {
-            const e = t.params.a11y;
-            t.el.append(d);
-            const a = t.el;
-            e.containerRoleDescriptionMessage && b(a, e.containerRoleDescriptionMessage), e.containerMessage && m(a, e.containerMessage), e.containerRole && f(a, e.containerRole);
-            const n = t.wrapperEl,
+          a.params.a11y.enabled && (() => {
+            const e = a.params.a11y;
+            a.el.append(d);
+            const t = a.el;
+            e.containerRoleDescriptionMessage && b(t, e.containerRoleDescriptionMessage), e.containerMessage && m(t, e.containerMessage), e.containerRole && f(t, e.containerRole);
+            const n = a.wrapperEl,
               o = e.id || n.getAttribute("id") || `swiper-wrapper-${r=16,void 0===r&&(r=16),"x".repeat(r).replace(/x/g,()=>Math.round(16*Math.random()).toString(16))}`;
             var r;
-            const l = t.params.autoplay && t.params.autoplay.enabled ? "off" : "polite";
+            const l = a.params.autoplay && a.params.autoplay.enabled ? "off" : "polite";
             var c, g;
             c = n, g = o, (c = (0, s.m)(c)).forEach(e => {
                 e.setAttribute("id", g)
               }),
-              function(e, t) {
+              function(e, a) {
                 (e = (0, s.m)(e)).forEach(e => {
-                  e.setAttribute("aria-live", t)
+                  e.setAttribute("aria-live", a)
                 })
               }(n, l), S();
             let {
               nextEl: p,
               prevEl: u
-            } = t.navigation ? t.navigation : {};
-            p = (0, s.m)(p), u = (0, s.m)(u), p && p.forEach(t => M(t, o, e.nextSlideMessage)), u && u.forEach(t => M(t, o, e.prevSlideMessage)), w() && (0, s.m)(t.pagination.el).forEach(e => {
+            } = a.navigation ? a.navigation : {};
+            p = (0, s.m)(p), u = (0, s.m)(u), p && p.forEach(a => M(a, o, e.nextSlideMessage)), u && u.forEach(a => M(a, o, e.prevSlideMessage)), w() && (0, s.m)(a.pagination.el).forEach(e => {
               e.addEventListener("keydown", h)
-            }), (0, i.g)().addEventListener("visibilitychange", L), t.el.addEventListener("focus", A, !0), t.el.addEventListener("focus", A, !0), t.el.addEventListener("pointerdown", k, !0), t.el.addEventListener("pointerup", x, !0)
+            }), (0, i.g)().addEventListener("visibilitychange", L), a.el.addEventListener("focus", A, !0), a.el.addEventListener("focus", A, !0), a.el.addEventListener("pointerdown", k, !0), a.el.addEventListener("pointerup", x, !0)
           })()
         }), o("slidesLengthChange snapGridLengthChange slidesGridLengthChange", () => {
-          t.params.a11y.enabled && S()
+          a.params.a11y.enabled && S()
         }), o("fromEdge toEdge afterInit lock unlock", () => {
-          t.params.a11y.enabled && function() {
-            if (t.params.loop || t.params.rewind || !t.navigation) return;
+          a.params.a11y.enabled && function() {
+            if (a.params.loop || a.params.rewind || !a.navigation) return;
             const {
               nextEl: e,
-              prevEl: a
-            } = t.navigation;
-            a && (t.isBeginning ? (v(a), u(a)) : (E(a), p(a))), e && (t.isEnd ? (v(e), u(e)) : (E(e), p(e)))
+              prevEl: t
+            } = a.navigation;
+            t && (a.isBeginning ? (v(t), u(t)) : (E(t), p(t))), e && (a.isEnd ? (v(e), u(e)) : (E(e), p(e)))
           }()
         }), o("paginationUpdate", () => {
-          t.params.a11y.enabled && function() {
-            const e = t.params.a11y;
-            y() && t.pagination.bullets.forEach(a => {
-              t.params.pagination.clickable && (p(a), t.params.pagination.renderBullet || (f(a, "button"), m(a, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, s.i)(a) + 1)))), a.matches((0, n.c)(t.params.pagination.bulletActiveClass)) ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current")
+          a.params.a11y.enabled && function() {
+            const e = a.params.a11y;
+            y() && a.pagination.bullets.forEach(t => {
+              a.params.pagination.clickable && (p(t), a.params.pagination.renderBullet || (f(t, "button"), m(t, e.paginationBulletMessage.replace(/\{\{index\}\}/, (0, s.i)(t) + 1)))), t.matches((0, n.c)(a.params.pagination.bulletActiveClass)) ? t.setAttribute("aria-current", "true") : t.removeAttribute("aria-current")
             })
           }()
         }), o("destroy", () => {
-          t.params.a11y.enabled && function() {
+          a.params.a11y.enabled && function() {
             d && d.remove();
             let {
               nextEl: e,
-              prevEl: a
-            } = t.navigation ? t.navigation : {};
-            e = (0, s.m)(e), a = (0, s.m)(a), e && e.forEach(e => e.removeEventListener("keydown", h)), a && a.forEach(e => e.removeEventListener("keydown", h)), w() && (0, s.m)(t.pagination.el).forEach(e => {
+              prevEl: t
+            } = a.navigation ? a.navigation : {};
+            e = (0, s.m)(e), t = (0, s.m)(t), e && e.forEach(e => e.removeEventListener("keydown", h)), t && t.forEach(e => e.removeEventListener("keydown", h)), w() && (0, s.m)(a.pagination.el).forEach(e => {
               e.removeEventListener("keydown", h)
-            }), (0, i.g)().removeEventListener("visibilitychange", L), t.el && "string" != typeof t.el && (t.el.removeEventListener("focus", A, !0), t.el.removeEventListener("pointerdown", k, !0), t.el.removeEventListener("pointerup", x, !0))
+            }), (0, i.g)().removeEventListener("visibilitychange", L), a.el && "string" != typeof a.el && (a.el.removeEventListener("focus", A, !0), a.el.removeEventListener("pointerdown", k, !0), a.el.removeEventListener("pointerup", x, !0))
           }()
         })
       }

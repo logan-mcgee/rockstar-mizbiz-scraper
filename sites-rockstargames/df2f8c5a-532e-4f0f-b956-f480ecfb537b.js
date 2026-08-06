@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
-    t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "df2f8c5a-532e-4f0f-b956-f480ecfb537b", e._sentryDebugIdIdentifier = "sentry-dbid-df2f8c5a-532e-4f0f-b956-f480ecfb537b")
+    a = (new e.Error).stack;
+  a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "df2f8c5a-532e-4f0f-b956-f480ecfb537b", e._sentryDebugIdIdentifier = "sentry-dbid-df2f8c5a-532e-4f0f-b956-f480ecfb537b")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -13,68 +13,68 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [109, 4871], {
-    94931(e, t, a) {
-      var o = a(93082),
+    94931(e, a, t) {
+      var o = t(93082),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        f = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, t, a) {
+      function l(e, a, t) {
         var o, r = {},
           l = null,
           i = null;
-        for (o in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !d.hasOwnProperty(o) && (r[o] = t[o]);
+        for (o in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) s.call(a, o) && !f.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === r[o] && (r[o] = t[o]);
+          for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
           key: l,
           ref: i,
           props: r,
-          _owner: f.current
+          _owner: d.current
         }
       }
-      t.Fragment = r, t.jsx = l, t.jsxs = l
+      a.Fragment = r, a.jsx = l, a.jsxs = l
     },
-    39793(e, t, a) {
-      e.exports = a(94931)
+    39793(e, a, t) {
+      e.exports = t(94931)
     },
-    60109(e, t, a) {
-      a.r(t);
-      var o = a(39793),
-        n = a(93082),
-        r = a(99225);
-      a.d(t, ["default", 0, ({
+    60109(e, a, t) {
+      t.r(a);
+      var o = t(39793),
+        n = t(93082),
+        r = t(99225);
+      t.d(a, ["default", 0, ({
         basename: e,
-        children: t,
-        history: a
+        children: a,
+        history: t
       }) => {
-        const [s, f] = (0, n.useState)({
-          action: a.action,
-          location: a.location
+        const [s, d] = (0, n.useState)({
+          action: t.action,
+          location: t.location
         });
-        return (0, n.useLayoutEffect)(() => a.listen(({
+        return (0, n.useLayoutEffect)(() => t.listen(({
           location: e,
-          action: t
+          action: a
         }) => {
-          f({
+          d({
             location: e,
-            action: t
+            action: a
           })
-        }), [a]), (0, o.jsx)(r.Router, {
+        }), [t]), (0, o.jsx)(r.Router, {
           basename: e,
           location: s.location,
           navigationType: s.action,
-          navigator: a,
-          children: t
+          navigator: t,
+          children: a
         })
       }])
     }

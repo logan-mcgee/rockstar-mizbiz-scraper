@@ -72,9 +72,9 @@ try {
         findPlatform: () => oe.rB,
         generateTpaLink: () => oe.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => oe.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => oe.Ap,
         getGen8Consoles: () => oe.Xs,
         getGen9Consoles: () => oe.kx,
@@ -130,8 +130,8 @@ try {
         useWindowResize: () => je.G4,
         webSettingsReactive: () => Re,
         withAutoRouteTracking: () => Te,
-        withGtmTracking: () => ce,
-        withMediaBasedProps: () => le,
+        withGtmTracking: () => le,
+        withMediaBasedProps: () => ce,
         withReactiveState: () => T,
         withRockstarGraph: () => W,
         withTranslations: () => me
@@ -159,8 +159,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(92998),
-        l = o(78062);
+      var l = o(92998),
+        c = o(78062);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -432,13 +432,13 @@ try {
             dataLayer: t
           })
         },
-        ce = e => t => ((e, t) => (0, p.jsx)(e, {
+        le = e => t => ((e, t) => (0, p.jsx)(e, {
           ...t,
           gtmTrack: e => {
             de(e)
           }
         }))(e, t),
-        le = (e, t = 250) => o => ((e, t, o) => {
+        ce = (e, t = 250) => o => ((e, t, o) => {
           const [r, n] = (0, w.useState)(t), s = e => {
             let t = e;
             const o = t?.items;

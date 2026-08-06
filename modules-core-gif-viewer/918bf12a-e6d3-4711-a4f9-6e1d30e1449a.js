@@ -20,14 +20,14 @@ try {
       var s, o = i(39793),
         r = i(93082),
         n = i(84017),
-        h = function() {
-          return h = Object.assign || function(t) {
+        a = function() {
+          return a = Object.assign || function(t) {
             for (var e, i = 1, s = arguments.length; i < s; i++)
               for (var o in e = arguments[i]) Object.prototype.hasOwnProperty.call(e, o) && (t[o] = e[o]);
             return t
-          }, h.apply(this, arguments)
+          }, a.apply(this, arguments)
         },
-        a = {
+        h = {
           width: "100%",
           height: "10px",
           top: "0px",
@@ -48,36 +48,36 @@ try {
           zIndex: 1
         },
         l = {
-          top: h(h({}, a), {
+          top: a(a({}, h), {
             top: "-5px"
           }),
-          right: h(h({}, p), {
+          right: a(a({}, p), {
             left: void 0,
             right: "-5px"
           }),
-          bottom: h(h({}, a), {
+          bottom: a(a({}, h), {
             top: void 0,
             bottom: "-5px"
           }),
-          left: h(h({}, p), {
+          left: a(a({}, p), {
             left: "-5px"
           }),
-          topRight: h(h({}, d), {
+          topRight: a(a({}, d), {
             right: "-10px",
             top: "-10px",
             cursor: "ne-resize"
           }),
-          bottomRight: h(h({}, d), {
+          bottomRight: a(a({}, d), {
             right: "-10px",
             bottom: "-10px",
             cursor: "se-resize"
           }),
-          bottomLeft: h(h({}, d), {
+          bottomLeft: a(a({}, d), {
             left: "-10px",
             bottom: "-10px",
             cursor: "sw-resize"
           }),
-          topLeft: h(h({}, d), {
+          topLeft: a(a({}, d), {
             left: "-10px",
             top: "-10px",
             cursor: "nw-resize"
@@ -88,7 +88,7 @@ try {
             i = t.direction,
             s = t.children,
             n = t.replaceStyles,
-            a = t.className,
+            h = t.className,
             p = (0, r.useCallback)(function(t) {
               e(t, i)
             }, [e, i]),
@@ -96,13 +96,13 @@ try {
               e(t, i)
             }, [e, i]),
             u = (0, r.useMemo)(function() {
-              return h(h({
+              return a(a({
                 position: "absolute",
                 userSelect: "none"
               }, l[i]), null != n ? n : {})
             }, [n, i]);
           return (0, o.jsx)("div", {
-            className: a || void 0,
+            className: h || void 0,
             style: u,
             onMouseDown: p,
             onTouchStart: d,
@@ -317,11 +317,11 @@ try {
             var i, s, o = this.props.boundsByDirection,
               r = this.state.direction,
               n = o && b("left", r),
-              h = o && b("top", r);
+              a = o && b("top", r);
             if ("parent" === this.props.bounds) {
-              var a = this.parentNode;
-              a && (i = n ? this.resizableRight - this.parentLeft : a.offsetWidth + (this.parentLeft - this.resizableLeft), s = h ? this.resizableBottom - this.parentTop : a.offsetHeight + (this.parentTop - this.resizableTop))
-            } else "window" === this.props.bounds ? this.window && (i = n ? this.resizableRight : this.window.innerWidth - this.resizableLeft, s = h ? this.resizableBottom : this.window.innerHeight - this.resizableTop) : this.props.bounds && (i = n ? this.resizableRight - this.targetLeft : this.props.bounds.offsetWidth + (this.targetLeft - this.resizableLeft), s = h ? this.resizableBottom - this.targetTop : this.props.bounds.offsetHeight + (this.targetTop - this.resizableTop));
+              var h = this.parentNode;
+              h && (i = n ? this.resizableRight - this.parentLeft : h.offsetWidth + (this.parentLeft - this.resizableLeft), s = a ? this.resizableBottom - this.parentTop : h.offsetHeight + (this.parentTop - this.resizableTop))
+            } else "window" === this.props.bounds ? this.window && (i = n ? this.resizableRight : this.window.innerWidth - this.resizableLeft, s = a ? this.resizableBottom : this.window.innerHeight - this.resizableTop) : this.props.bounds && (i = n ? this.resizableRight - this.targetLeft : this.props.bounds.offsetWidth + (this.targetLeft - this.resizableLeft), s = a ? this.resizableBottom - this.targetTop : this.props.bounds.offsetHeight + (this.targetTop - this.resizableTop));
             return i && Number.isFinite(i) && (t = t && t < i ? t : i), s && Number.isFinite(s) && (e = e && e < s ? e : s), {
               maxWidth: t,
               maxHeight: e
@@ -331,9 +331,9 @@ try {
               o = (i = this.props.resizeRatio || 1, Array.isArray(i) ? i : [i, i]),
               r = o[0],
               n = o[1],
-              h = this.state,
-              a = h.direction,
-              p = h.original,
+              a = this.state,
+              h = a.direction,
+              p = a.original,
               d = this.props,
               l = d.lockAspectRatio,
               u = d.lockAspectRatioExtraHeight,
@@ -342,7 +342,7 @@ try {
               g = p.height,
               w = u || 0,
               v = c || 0;
-            return b("right", a) && (f = p.width + (t - p.x) * r / s, l && (g = (f - v) / this.ratio + w)), b("left", a) && (f = p.width - (t - p.x) * r / s, l && (g = (f - v) / this.ratio + w)), b("bottom", a) && (g = p.height + (e - p.y) * n / s, l && (f = (g - w) * this.ratio + v)), b("top", a) && (g = p.height - (e - p.y) * n / s, l && (f = (g - w) * this.ratio + v)), {
+            return b("right", h) && (f = p.width + (t - p.x) * r / s, l && (g = (f - v) / this.ratio + w)), b("left", h) && (f = p.width - (t - p.x) * r / s, l && (g = (f - v) / this.ratio + w)), b("bottom", h) && (g = p.height + (e - p.y) * n / s, l && (f = (g - w) * this.ratio + v)), b("top", h) && (g = p.height - (e - p.y) * n / s, l && (f = (g - w) * this.ratio + v)), {
               newWidth: f,
               newHeight: g
             }
@@ -350,24 +350,24 @@ try {
             var o = this.props,
               r = o.lockAspectRatio,
               n = o.lockAspectRatioExtraHeight,
-              h = o.lockAspectRatioExtraWidth,
-              a = void 0 === s.width ? 10 : s.width,
+              a = o.lockAspectRatioExtraWidth,
+              h = void 0 === s.width ? 10 : s.width,
               p = void 0 === i.width || i.width < 0 ? t : i.width,
               d = void 0 === s.height ? 10 : s.height,
               l = void 0 === i.height || i.height < 0 ? e : i.height,
               u = n || 0,
-              c = h || 0;
+              c = a || 0;
             if (r) {
               var f = (d - u) * this.ratio + c,
                 g = (l - u) * this.ratio + c,
-                v = (a - c) / this.ratio + u,
+                v = (h - c) / this.ratio + u,
                 b = (p - c) / this.ratio + u,
-                y = Math.max(a, f),
+                y = Math.max(h, f),
                 m = Math.min(p, g),
                 z = Math.max(d, v),
                 x = Math.min(l, b);
               t = w(t, y, m), e = w(e, z, x)
-            } else t = w(t, a, p), e = w(e, d, l);
+            } else t = w(t, h, p), e = w(e, d, l);
             return {
               newWidth: t,
               newHeight: e
@@ -389,9 +389,9 @@ try {
               var o = this.resizable.getBoundingClientRect(),
                 r = o.left,
                 n = o.top,
-                h = o.right,
-                a = o.bottom;
-              this.resizableLeft = r * t, this.resizableRight = h * t, this.resizableTop = n * t, this.resizableBottom = a * t
+                a = o.right,
+                h = o.bottom;
+              this.resizableLeft = r * t, this.resizableRight = a * t, this.resizableTop = n * t, this.resizableBottom = h * t
             }
           }, e.prototype.onResizeStart = function(t, e) {
             if (this.resizable && this.window) {
@@ -409,12 +409,12 @@ try {
               if ("auto" !== r.flexBasis) {
                 var n = this.parentNode;
                 if (n) {
-                  var h = this.window.getComputedStyle(n).flexDirection;
-                  this.flexDir = h.startsWith("row") ? "row" : "column", i = r.flexBasis
+                  var a = this.window.getComputedStyle(n).flexDirection;
+                  this.flexDir = a.startsWith("row") ? "row" : "column", i = r.flexBasis
                 }
               }
               this.setBoundingClientRect(), this.bindEvents();
-              var a = {
+              var h = {
                 original: {
                   x: s,
                   y: o,
@@ -428,7 +428,7 @@ try {
                 direction: e,
                 flexBasis: i
               };
-              this.setState(a)
+              this.setState(h)
             }
           }, e.prototype.onMouseMove = function(t) {
             var e = this;
@@ -440,8 +440,8 @@ try {
                 s = i.maxWidth,
                 o = i.maxHeight,
                 r = i.minWidth,
-                h = i.minHeight,
-                a = y(t) ? t.touches[0].clientX : t.clientX,
+                a = i.minHeight,
+                h = y(t) ? t.touches[0].clientX : t.clientX,
                 p = y(t) ? t.touches[0].clientY : t.clientY,
                 d = this.state,
                 l = d.direction,
@@ -456,9 +456,9 @@ try {
                     minWidth: void 0 === r ? void 0 : Number(r),
                     minHeight: void 0 === n ? void 0 : Number(n)
                   }
-                }(g, this.window.innerWidth, this.window.innerHeight, s, o, r, h);
-              s = w.maxWidth, o = w.maxHeight, r = w.minWidth, h = w.minHeight;
-              var b = this.calculateNewSizeFromDirection(a, p),
+                }(g, this.window.innerWidth, this.window.innerHeight, s, o, r, a);
+              s = w.maxWidth, o = w.maxHeight, r = w.minWidth, a = w.minHeight;
+              var b = this.calculateNewSizeFromDirection(h, p),
                 z = b.newHeight,
                 S = b.newWidth,
                 R = this.calculateNewMaxFromBoundary(s, o);
@@ -468,7 +468,7 @@ try {
                 height: R.maxHeight
               }, {
                 width: r,
-                height: h
+                height: a
               });
               if (S = W.newWidth, z = W.newHeight, this.props.grid) {
                 var E = v(S, this.props.grid[0], this.props.gridGap ? this.props.gridGap[0] : 0),
@@ -531,8 +531,8 @@ try {
               s = e.handleStyles,
               r = e.handleClasses,
               n = e.handleWrapperStyle,
-              h = e.handleWrapperClass,
-              a = e.handleComponent;
+              a = e.handleWrapperClass,
+              h = e.handleComponent;
             if (!i) return null;
             var p = Object.keys(i).map(function(e) {
               return !1 !== i[e] ? (0, o.jsx)(u, {
@@ -540,11 +540,11 @@ try {
                 onResizeStart: t.onResizeStart,
                 replaceStyles: s && s[e],
                 className: r && r[e],
-                children: a && a[e] ? a[e] : null
+                children: h && h[e] ? h[e] : null
               }, e) : null
             });
             return (0, o.jsx)("div", {
-              className: h,
+              className: a,
               style: n,
               children: p
             })
@@ -609,37 +609,37 @@ try {
         o = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         n = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        h = {
+        a = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function a(t, e, i) {
-        var s, a = {},
+      function h(t, e, i) {
+        var s, h = {},
           p = null,
           d = null;
-        for (s in void 0 !== i && (p = "" + i), void 0 !== e.key && (p = "" + e.key), void 0 !== e.ref && (d = e.ref), e) r.call(e, s) && !h.hasOwnProperty(s) && (a[s] = e[s]);
+        for (s in void 0 !== i && (p = "" + i), void 0 !== e.key && (p = "" + e.key), void 0 !== e.ref && (d = e.ref), e) r.call(e, s) && !a.hasOwnProperty(s) && (h[s] = e[s]);
         if (t && t.defaultProps)
-          for (s in e = t.defaultProps) void 0 === a[s] && (a[s] = e[s]);
+          for (s in e = t.defaultProps) void 0 === h[s] && (h[s] = e[s]);
         return {
           $$typeof: o,
           type: t,
           key: p,
           ref: d,
-          props: a,
+          props: h,
           _owner: n.current
         }
       }
-      e.jsx = a, e.jsxs = a
+      e.jsx = h, e.jsxs = h
     },
     39793(t, e, i) {
       t.exports = i(94931)
     },
     39279(t, e, i) {
       i.d(e, {
-        A: () => a
+        A: () => h
       });
       const s = {
         randomUUID: "undefined" != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto)
@@ -651,9 +651,9 @@ try {
         if (!o && (o = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !o)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
         return o(r)
       }
-      const h = [];
-      for (let t = 0; t < 256; ++t) h.push((t + 256).toString(16).slice(1));
-      const a = function(t, e, i) {
+      const a = [];
+      for (let t = 0; t < 256; ++t) a.push((t + 256).toString(16).slice(1));
+      const h = function(t, e, i) {
         if (s.randomUUID && !e && !t) return s.randomUUID();
         const o = (t = t || {}).random || (t.rng || n)();
         if (o[6] = 15 & o[6] | 64, o[8] = 63 & o[8] | 128, e) {
@@ -662,7 +662,7 @@ try {
           return e
         }
         return function(t, e = 0) {
-          return h[t[e + 0]] + h[t[e + 1]] + h[t[e + 2]] + h[t[e + 3]] + "-" + h[t[e + 4]] + h[t[e + 5]] + "-" + h[t[e + 6]] + h[t[e + 7]] + "-" + h[t[e + 8]] + h[t[e + 9]] + "-" + h[t[e + 10]] + h[t[e + 11]] + h[t[e + 12]] + h[t[e + 13]] + h[t[e + 14]] + h[t[e + 15]]
+          return a[t[e + 0]] + a[t[e + 1]] + a[t[e + 2]] + a[t[e + 3]] + "-" + a[t[e + 4]] + a[t[e + 5]] + "-" + a[t[e + 6]] + a[t[e + 7]] + "-" + a[t[e + 8]] + a[t[e + 9]] + "-" + a[t[e + 10]] + a[t[e + 11]] + a[t[e + 12]] + a[t[e + 13]] + a[t[e + 14]] + a[t[e + 15]]
         }(o)
       }
     }

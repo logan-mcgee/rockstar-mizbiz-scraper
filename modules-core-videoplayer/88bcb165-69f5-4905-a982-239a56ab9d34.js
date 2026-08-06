@@ -13,32 +13,32 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [206, 825], {
-    9206(e, n, t) {
-      t.r(n);
-      var d = t(3082),
-        a = t(5812);
-      let r = "undefined" != typeof document ? d.useLayoutEffect : d.useEffect,
+    9206(e, n, d) {
+      d.r(n);
+      var t = d(3082),
+        a = d(5812);
+      let r = "undefined" != typeof document ? t.useLayoutEffect : t.useEffect,
         o = e => e && !Array.isArray(e) && "object" == typeof e,
         s = [],
-        f = {},
-        l = a.default;
-      const c = (e, n = s) => {
-        let t = f;
-        o(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : s) : o(n) && (t = n, n = "dependencies" in t ? t.dependencies : s), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
+        l = {},
+        f = a.default;
+      const u = (e, n = s) => {
+        let d = l;
+        o(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : s) : o(n) && (d = n, n = "dependencies" in d ? d.dependencies : s), e && "function" != typeof e && console.warn("First parameter must be a function or config object");
         const {
           scope: a,
-          revertOnUpdate: c
-        } = t, u = (0, d.useRef)(!1), i = (0, d.useRef)(l.context(() => {}, a)), b = (0, d.useRef)(e => i.current.add(null, e)), y = n && n.length && !c;
-        return y && r(() => (u.current = !0, () => i.current.revert()), s), r(() => {
-          if (e && i.current.add(e, a), !y || !u.current) return () => i.current.revert()
+          revertOnUpdate: u
+        } = d, i = (0, t.useRef)(!1), c = (0, t.useRef)(f.context(() => {}, a)), b = (0, t.useRef)(e => c.current.add(null, e)), y = n && n.length && !u;
+        return y && r(() => (i.current = !0, () => c.current.revert()), s), r(() => {
+          if (e && c.current.add(e, a), !y || !i.current) return () => c.current.revert()
         }, n), {
-          context: i.current,
+          context: c.current,
           contextSafe: b.current
         }
       };
-      c.register = e => {
-        l = e
-      }, c.headless = !0, t.d(n, ["useGSAP", 0, c])
+      u.register = e => {
+        f = e
+      }, u.headless = !0, d.d(n, ["useGSAP", 0, u])
     }
   }
 ]);

@@ -13,26 +13,26 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [3534], {
-    83534(e, a, s) {
-      s.r(a);
-      var d = s(93082),
-        t = s(99225),
-        n = s(82199);
-      s.d(a, ["default", 0, () => {
+    83534(e, a, d) {
+      d.r(a);
+      var s = d(93082),
+        t = d(99225),
+        n = d(82199);
+      d.d(a, ["default", 0, () => {
         const {
           data: e,
           loggedIn: a
         } = (0, n.useRockstarUser)(), {
-          hasGtaPlus: s,
+          hasGtaPlus: d,
           accountSynced: o
-        } = e ?? {}, f = (0, t.useNavigate)();
-        return (0, d.useEffect)(() => {
-          !1 !== a ? o && f(s ? "./benefits" : "./join", {
+        } = e ?? {}, l = (0, t.useNavigate)();
+        return (0, s.useEffect)(() => {
+          !1 !== a ? o && l(d ? "./benefits" : "./join", {
             replace: !0
-          }) : f("./join", {
+          }) : l("./join", {
             replace: !0
           })
-        }, [s, o, a, f]), null
+        }, [d, o, a, l]), null
       }])
     }
   }

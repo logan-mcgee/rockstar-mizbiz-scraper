@@ -25,8 +25,8 @@ try {
         s = a(82199),
         l = a(13331),
         r = a(46638);
-      const f = document.createElement("div");
-      document.querySelector("body").append(f), (0, t.H)(f).render((0, o.jsx)(l.ScrollProvider, {
+      const i = document.createElement("div");
+      document.querySelector("body").append(i), (0, t.H)(i).render((0, o.jsx)(l.ScrollProvider, {
         children: (0, o.jsx)(n.BrowserRouter, {
           basename: "/",
           children: (0, o.jsx)(s.RockstarUserProvider, {

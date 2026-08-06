@@ -24,8 +24,8 @@ try {
         l = i(42909),
         n = i(17301),
         r = i(75027),
-        c = i(84220),
-        g = i(31147),
+        g = i(84220),
+        c = i(31147),
         o = (i(281), i(14653)),
         d = i(45266),
         _ = i(82199);
@@ -88,13 +88,13 @@ try {
           isActive: h,
           index: n,
           highlightsCount: r,
-          ...c
+          ...g
         }) => {
-          const g = (0, l.useIntl)(),
+          const c = (0, l.useIntl)(),
             o = (0, s.useRef)(null);
           return (0, a.jsxs)(d.motion.div, {
             "aria-hidden": !h,
-            "aria-label": g.formatMessage(p.cph_highlights_group_aria, {
+            "aria-label": c.formatMessage(p.cph_highlights_group_aria, {
               index: n + 1,
               total: r
             }),
@@ -108,9 +108,9 @@ try {
             variants: m,
             animate: h ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...c,
+            ...g,
             children: [e && (0, a.jsx)("h1", {
-              children: e || g.formatMessage(p.cph_highlights_heading)
+              children: e || c.formatMessage(p.cph_highlights_heading)
             }), t && (0, a.jsx)("h2", {
               className: f.heading,
               children: t
@@ -159,7 +159,7 @@ try {
             [m, v] = (0, s.useState)(!1),
             [k, w] = (0, s.useState)(!1),
             [j, I] = (0, s.useState)(0),
-            [S, E] = (0, s.useState)([r.A, c.A, g.A]),
+            [S, E] = (0, s.useState)([r.A, g.A, c.A]),
             [C, M] = (0, s.useState)({}),
             T = (0, s.useRef)(null),
             A = (0, s.useRef)(null),
@@ -168,7 +168,7 @@ try {
             P = (0, s.useRef)(null),
             z = (0, n.useGenerateCdnSource)();
           return (0, s.useEffect)(() => {
-            const e = [r.A, c.A, g.A];
+            const e = [r.A, g.A, c.A];
             E(e)
           }, [!1]), (0, s.useEffect)(() => {
             f && !m && (b({

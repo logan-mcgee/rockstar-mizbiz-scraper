@@ -13,31 +13,31 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [6471], {
-    96471(e, a, s) {
-      s.r(a);
-      var d = s(39793),
-        t = s(93082),
-        n = s(99225),
-        o = s(9566),
-        r = s(64081);
-      const l = (0, s(13331).withTranslations)(({
+    96471(e, a, d) {
+      d.r(a);
+      var s = d(39793),
+        t = d(93082),
+        n = d(99225),
+        o = d(9566),
+        r = d(64081);
+      const l = (0, d(13331).withTranslations)(({
         t: e
       }) => {
         const a = (0, n.useParams)(),
           {
-            setBreadcrumb: s,
+            setBreadcrumb: d,
             setNormalLogo: l
           } = (0, r.b)();
-        return (0, t.useEffect)(() => (s([{
+        return (0, t.useEffect)(() => (d([{
           href: "/newswire",
           title: e("Newswire")
         }], ""), () => {
-          l(!0), s()
-        }), []), (0, d.jsx)(o.NewswireArticle, {
+          l(!0), d()
+        }), []), (0, s.jsx)(o.NewswireArticle, {
           idHash: String(a.articleId)
         })
       });
-      s.d(a, ["default", 0, l])
+      d.d(a, ["default", 0, l])
     }
   }
 ]);

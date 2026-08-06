@@ -13,39 +13,39 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [9793], {
-    94931(e, a, t) {
-      var n = t(93082),
-        d = Symbol.for("react.element"),
+    94931(e, a, d) {
+      var t = d(93082),
+        n = Symbol.for("react.element"),
         o = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
-        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, a, t) {
-        var n, o = {},
-          l = null,
+      function f(e, a, d) {
+        var t, o = {},
+          f = null,
           i = null;
-        for (n in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, n) && !f.hasOwnProperty(n) && (o[n] = a[n]);
+        for (t in void 0 !== d && (f = "" + d), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, t) && !l.hasOwnProperty(t) && (o[t] = a[t]);
         if (e && e.defaultProps)
-          for (n in a = e.defaultProps) void 0 === o[n] && (o[n] = a[n]);
+          for (t in a = e.defaultProps) void 0 === o[t] && (o[t] = a[t]);
         return {
-          $$typeof: d,
+          $$typeof: n,
           type: e,
-          key: l,
+          key: f,
           ref: i,
           props: o,
           _owner: s.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      a.Fragment = o, a.jsx = f, a.jsxs = f
     },
-    39793(e, a, t) {
-      e.exports = t(94931)
+    39793(e, a, d) {
+      e.exports = d(94931)
     }
   }
 ]);

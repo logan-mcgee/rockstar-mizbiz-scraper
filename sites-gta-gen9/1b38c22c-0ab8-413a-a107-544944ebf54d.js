@@ -18,8 +18,8 @@ try {
         default: () => h
       });
       var t = s(39793),
-        i = s(18665),
-        d = s(4110),
+        d = s(18665),
+        i = s(4110),
         l = s(15642);
       const r = {
           carouselTitle: "rockstargames-sites-gta-gen9e9e0ef1bfc3699b1e50c33dd0ce8e76a",
@@ -51,7 +51,7 @@ try {
               children: [(0, t.jsx)("div", {
                 className: r.imageWrapper,
                 tabIndex: 0,
-                children: (0, t.jsx)(d.A, {
+                children: (0, t.jsx)(i.A, {
                   image: e?.image,
                   badge: e?.badge ?? e?.image?.badge,
                   badgeType: "badge3",
@@ -78,7 +78,7 @@ try {
           }), a?.title || a?.description ? (0, t.jsx)("div", {
             className: r.padding,
             style: a?.style ?? {},
-            children: (0, t.jsx)(i.A, {
+            children: (0, t.jsx)(d.A, {
               item: a
             })
           }) : ""]
@@ -111,7 +111,7 @@ try {
           context: "site",
           autoplay: !1,
           id: e.videoId
-        }) : (0, t.jsx)(d.A, {
+        }) : (0, t.jsx)(i.A, {
           image: e?.image,
           badge: e?.badge ?? e?.image?.badge,
           badgeType: "badge3",
@@ -125,11 +125,11 @@ try {
           items: e,
           style: a = {},
           className: s = "",
-          id: d = null
+          id: i = null
         }) => (0, t.jsx)("div", {
           style: a,
           className: (0, b.default)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", s),
-          id: d,
+          id: i,
           "data-testid": "standard-group-of-items",
           children: e.map(e => (0, t.jsx)(f, {
             impressionTracking: e?.impressionTracking,
@@ -142,7 +142,7 @@ try {
                 ...e?.props,
                 children: [e?.image || e?.videoId ? (0, t.jsx)(u, {
                   item: e
-                }) : "", e.title || e.description ? (0, t.jsx)(i.A, {
+                }) : "", e.title || e.description ? (0, t.jsx)(d.A, {
                   item: e,
                   className: "rockstargames-sites-gta-gen9bc47d354556b20071313d2c1ccc3debd"
                 }) : ""]
@@ -154,18 +154,18 @@ try {
           children: e = null,
           text: a = {},
           items: s = [],
-          renderTemplate: i = "",
-          style: d = {},
+          renderTemplate: d = "",
+          style: i = {},
           id: l = null,
           ...r
         }) => {
           if (!s.length) return null;
-          switch (i) {
+          switch (d) {
             case "carousel":
               return (0, t.jsx)(c, {
                 text: a,
                 items: s,
-                style: d,
+                style: i,
                 id: l,
                 children: e
               });
@@ -173,7 +173,7 @@ try {
               return (0, t.jsx)(c, {
                 text: a,
                 items: s,
-                style: d,
+                style: i,
                 className: "panorama",
                 id: l,
                 children: e
@@ -181,7 +181,7 @@ try {
             default:
               return (0, t.jsx)(y, {
                 items: s,
-                style: d,
+                style: i,
                 id: l,
                 ...r,
                 children: e

@@ -16,7 +16,7 @@ try {
     18268(e, d, a) {
       a.r(d), a.d(d, {
         Portal: () => r,
-        Root: () => f
+        Root: () => i
       });
       var o = a(4637),
         t = a(84017),
@@ -27,16 +27,16 @@ try {
           const {
             container: a,
             ...r
-          } = e, [f, i] = o.useState(!1);
-          (0, s.N)(() => i(!0), []);
-          const c = a || f && globalThis?.document?.body;
-          return c ? t.createPortal((0, l.jsx)(n.sG.div, {
+          } = e, [i, f] = o.useState(!1);
+          (0, s.N)(() => f(!0), []);
+          const u = a || i && globalThis?.document?.body;
+          return u ? t.createPortal((0, l.jsx)(n.sG.div, {
             ...r,
             ref: d
-          }), c) : null
+          }), u) : null
         });
       r.displayName = "Portal";
-      var f = r
+      var i = r
     },
     31270(e, d, a) {
       a.d(d, {

@@ -32,7 +32,7 @@ try {
     },
     72442(e, a, r) {
       r.d(a, {
-        A: () => c
+        A: () => l
       });
       var s = r(39793),
         t = r(93082),
@@ -46,12 +46,12 @@ try {
       });
       var o = r(99225);
       const _ = "rockstargames-sites-legacyea8cf4797c830e5b5dad68b2ec814e67",
-        c = (0, r(95125).g)(({
+        l = (0, r(95125).g)(({
           children: e,
           to: a = "#",
           reloadDocument: r = !1,
-          alt: c = "",
-          autoBlank: l = !1,
+          alt: l = "",
+          autoBlank: c = !1,
           role: d = "link",
           onClick: u = () => {},
           focused: m = !1,
@@ -61,7 +61,7 @@ try {
             f = (0, n.useIntl)(),
             g = !/^(https?|mailto):/i.test(a),
             k = /^#/.test(a),
-            y = b?.target ?? (l ? "_blank" : "_self"),
+            y = b?.target ?? (c ? "_blank" : "_self"),
             {
               ...w
             } = b,
@@ -77,7 +77,7 @@ try {
               }), u && u(e)
             };
             return (0, s.jsxs)("a", {
-              title: c,
+              title: l,
               href: a,
               onClick: r,
               ...w,
@@ -92,7 +92,7 @@ try {
             })
           }
           if (g) return (0, s.jsxs)(o.NavLink, {
-            title: c,
+            title: l,
             to: a,
             onClick: u,
             ...w,
@@ -111,7 +111,7 @@ try {
           }), {});
           return "function" == typeof x?.className && delete x.className, (0, s.jsxs)("a", {
             href: a,
-            title: c,
+            title: l,
             onClick: u,
             target: y,
             ...x,

@@ -16,21 +16,21 @@ try {
     55109(e, a, t) {
       "use strict";
       t.d(a, {
-        A: () => m
+        A: () => c
       });
       var s = t(39793),
         o = t(93082),
         r = t(13331);
-      const c = {
+      const m = {
         img: "rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0",
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f"
       };
       (0, r.importAll)(t(86751));
-      const m = ({
+      const c = ({
         isWideCard: e = !1,
         size: a = 640,
-        title: m,
+        title: c,
         titleSlug: d,
         inGlobalNav: i = !1
       }) => {
@@ -43,12 +43,12 @@ try {
         let f = g;
         return (0, s.jsx)("div", {
           role: "img",
-          "aria-label": m,
+          "aria-label": c,
           style: {
             backgroundImage: `url(${f})`,
             borderRadius: i ? "unset" : ""
           },
-          className: [c.img, p ? c.startAnimation : "", e ? c.wide : ""].join(" ")
+          className: [m.img, p ? m.startAnimation : "", e ? m.wide : ""].join(" ")
         })
       }
     },
@@ -56,31 +56,31 @@ try {
       "use strict";
       t.d(a, {
         s: () => s.A,
-        N: () => m
+        N: () => c
       });
       var s = t(55109),
         o = t(39793),
         r = t(72442);
-      const c = {
+      const m = {
           fobLink: "rockstargames-sites-rockstargamesd30ff40ba02b7ed14124da3ca9cd4f2b",
           wide: "rockstargames-sites-rockstargamesc9686ec502f78b05e47568667e90bd17"
         },
-        m = ({
+        c = ({
           game: e,
           to: a
         }) => {
           const {
             titleSlug: t,
-            urlOfficial: m = ""
+            urlOfficial: c = ""
           } = e, d = ["VI"].includes(t.toUpperCase());
           return (0, o.jsx)(r.A, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": t,
             "data-testid": `${t}-gamecard`,
-            to: a ?? m,
+            to: a ?? c,
             target: "_self",
-            className: [c.fobLink, d ? c.wide : ""].join(" "),
+            className: [m.fobLink, d ? m.wide : ""].join(" "),
             reloadDocument: d,
             children: (0, o.jsx)(s.A, {
               title: e.title,
@@ -94,13 +94,13 @@ try {
     8251(e, a, t) {
       "use strict";
       t.d(a, {
-        s: () => m,
+        s: () => c,
         N: () => d
       });
       var s = t(39793),
         o = t(13331),
         r = t(72442);
-      const c = {
+      const m = {
           card: "rockstargames-sites-rockstargamesf93031694e202c791c00e5ae3497250a",
           gameTitle: "rockstargames-sites-rockstargamesa1fe577b937c0e16250bf38e9d775061",
           info: "rockstargames-sites-rockstargamesdabce30c906fad181d7cc188f1632c04",
@@ -109,14 +109,14 @@ try {
           title: "rockstargames-sites-rockstargamesfd87597d0f90ed6d8a2081da933f53bc",
           videoPreview: "rockstargames-sites-rockstargamesa626ad482ff0be0336e75929516654d5"
         },
-        m = ({
+        c = ({
           video: e,
           size: a = 640
         }) => {
           const t = () => e.screencap.includes("akamai") ? `${e.screencap}?im=Resize=${a}` : e.screencap,
             [r] = (0, o.usePreloadImg)(t());
           return (0, s.jsx)("div", {
-            className: [c.screencap, r ? c.screencapLoaded : ""].join(" "),
+            className: [m.screencap, r ? m.screencapLoaded : ""].join(" "),
             "aria-hidden": "true",
             role: "img",
             style: {
@@ -133,25 +133,25 @@ try {
         }) => {
           const i = d ?? `/videos/${t.id}`,
             n = {
-              className: c.videoPreview,
+              className: m.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": i
             },
             g = (0, s.jsxs)("div", {
-              className: c.card,
-              children: [(0, s.jsx)(m, {
+              className: m.card,
+              children: [(0, s.jsx)(c, {
                 video: t,
                 size: o
               }), (0, s.jsxs)("div", {
-                className: c.info,
+                className: m.info,
                 children: [e ? (0, s.jsx)("div", {
-                  className: c.gameTitle,
+                  className: m.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: t.game.title
                   }
                 }) : "", (0, s.jsx)("h5", {
-                  className: c.title,
+                  className: m.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -178,8 +178,8 @@ try {
       var s = t(39793),
         o = t(93082),
         r = t(14653),
-        c = t(95787),
-        m = t(8251),
+        m = t(95787),
+        c = t(8251),
         d = t(82199),
         i = t(81270),
         n = t(42909);
@@ -259,7 +259,7 @@ try {
             children: e.map((e, a) => (0, s.jsx)(r.qr, {
               className: f.slide,
               onFocus: () => T(a),
-              children: (0, s.jsx)(m.N, {
+              children: (0, s.jsx)(c.N, {
                 video: e,
                 gameTitleNecessary: l
               })
@@ -306,7 +306,7 @@ try {
                   },
                   grabCursor: !0,
                   navigation: h,
-                  modules: [c.A],
+                  modules: [m.A],
                   slideClass: (0, i.default)("swiper-slide"),
                   onSlideNextTransitionEnd: () => {
                     u({

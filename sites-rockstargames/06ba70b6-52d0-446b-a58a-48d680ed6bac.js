@@ -27,7 +27,7 @@ try {
         t = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function n(e, r) {
-        return !1 !== r.clone && r.isMergeableObject(e) ? s((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
+        return !1 !== r.clone && r.isMergeableObject(e) ? c((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
         var t
       }
 
@@ -45,7 +45,7 @@ try {
         }(e))
       }
 
-      function c(e, r) {
+      function s(e, r) {
         try {
           return r in e
         } catch (e) {
@@ -53,32 +53,32 @@ try {
         }
       }
 
-      function s(e, t, f) {
-        (f = f || {}).arrayMerge = f.arrayMerge || a, f.isMergeableObject = f.isMergeableObject || r, f.cloneUnlessOtherwiseSpecified = n;
-        var i = Array.isArray(t);
-        return i === Array.isArray(e) ? i ? f.arrayMerge(e, t, f) : function(e, r, t) {
+      function c(e, t, i) {
+        (i = i || {}).arrayMerge = i.arrayMerge || a, i.isMergeableObject = i.isMergeableObject || r, i.cloneUnlessOtherwiseSpecified = n;
+        var u = Array.isArray(t);
+        return u === Array.isArray(e) ? u ? i.arrayMerge(e, t, i) : function(e, r, t) {
           var a = {};
           return t.isMergeableObject(e) && o(e).forEach(function(r) {
             a[r] = n(e[r], t)
           }), o(r).forEach(function(o) {
             (function(e, r) {
-              return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, o) || (c(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
-              if (!r.customMerge) return s;
+              return s(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
+            })(e, o) || (s(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
+              if (!r.customMerge) return c;
               var t = r.customMerge(e);
-              return "function" == typeof t ? t : s
+              return "function" == typeof t ? t : c
             }(o, t)(e[o], r[o], t) : a[o] = n(r[o], t))
           }), a
-        }(e, t, f) : n(t, f)
+        }(e, t, i) : n(t, i)
       }
-      s.all = function(e, r) {
+      c.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce(function(e, t) {
-          return s(e, t, r)
+          return c(e, t, r)
         }, {})
       };
-      var f = s;
-      e.exports = f
+      var i = c;
+      e.exports = i
     }
   }
 ]);

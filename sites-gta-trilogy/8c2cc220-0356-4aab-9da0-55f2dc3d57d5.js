@@ -13,28 +13,28 @@ try {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_trilogy = self.webpackChunk_rockstargames_sites_gta_trilogy || []).push([
   [921], {
-    4921(e, d, t) {
-      function a(e) {
-        var d, t, n = "";
+    4921(e, d, a) {
+      function t(e) {
+        var d, a, n = "";
         if ("string" == typeof e || "number" == typeof e) n += e;
         else if ("object" == typeof e)
           if (Array.isArray(e)) {
             var o = e.length;
-            for (d = 0; d < o; d++) e[d] && (t = a(e[d])) && (n && (n += " "), n += t)
+            for (d = 0; d < o; d++) e[d] && (a = t(e[d])) && (n && (n += " "), n += a)
           } else
-            for (t in e) e[t] && (n && (n += " "), n += t);
+            for (a in e) e[a] && (n && (n += " "), n += a);
         return n
       }
 
       function n() {
-        for (var e, d, t = 0, n = "", o = arguments.length; t < o; t++)(e = arguments[t]) && (d = a(e)) && (n && (n += " "), n += d);
+        for (var e, d, a = 0, n = "", o = arguments.length; a < o; a++)(e = arguments[a]) && (d = t(e)) && (n && (n += " "), n += d);
         return n
       }
-      t.r(d), t.d(d, {
+      a.r(d), a.d(d, {
         clsx: () => n
       });
       const o = n;
-      t.d(d, ["default", 0, o])
+      a.d(d, ["default", 0, o])
     }
   }
 ]);

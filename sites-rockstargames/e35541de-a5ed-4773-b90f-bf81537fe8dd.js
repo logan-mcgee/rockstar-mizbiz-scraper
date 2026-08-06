@@ -510,7 +510,7 @@ try {
         InViewTracker: () => z,
         TinaLabel: () => I,
         TinaParser: () => R,
-        TinaPayloadProvider: () => k,
+        TinaPayloadProvider: () => f,
         TinaRichText: () => K,
         TinaThemeProvider: () => ee,
         parse: () => L,
@@ -552,12 +552,12 @@ try {
           key: "tinaPayloadContext"
         }),
         {
-          Provider: f
+          Provider: k
         } = p,
-        k = ({
+        f = ({
           children: e,
           payload: n
-        }) => (0, i.jsx)(f, {
+        }) => (0, i.jsx)(k, {
           value: n,
           children: e
         }),
@@ -602,7 +602,7 @@ try {
           (0, r.useEffect)(() => {
             p(d ?? m?.cdn ?? m?.prod ?? !0)
           }, [d, m]);
-          const f = (0, r.useCallback)(e => {
+          const k = (0, r.useCallback)(e => {
             const n = null !== o,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
@@ -614,10 +614,10 @@ try {
             alt: e,
             ariaLabel: s,
             src: {
-              mobile: f(o?.[c]?.mobile ?? o?.en_us?.mobile ?? n),
+              mobile: k(o?.[c]?.mobile ?? o?.en_us?.mobile ?? n),
               imageMobileStyle: o?.[c]?.imageMobileStyle ?? o?.en_us?.imageMobileStyle ?? a,
               imageDesktopStyle: o?.[c]?.imageDesktopStyle ?? o?.en_us?.imageDesktopStyle ?? i,
-              desktop: f(o?.[c]?.desktop ?? o?.en_us?.desktop ?? t)
+              desktop: k(o?.[c]?.desktop ?? o?.en_us?.desktop ?? t)
             }
           }
         },
@@ -676,7 +676,7 @@ try {
           error: u,
           children: p
         }) => {
-          const f = () => t ? (0, i.jsx)(C.c, {
+          const k = () => t ? (0, i.jsx)(C.c, {
             defaultSize: {
               width: n || "100%",
               height: a || "500px"
@@ -696,7 +696,7 @@ try {
                 className: "rockstargames-sites-rockstargamesa0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
                 children: m ?? s?.description
               })]
-            }), (0, i.jsx)(f, {}), (u || l?.error) && (0, i.jsx)("div", {
+            }), (0, i.jsx)(k, {}), (u || l?.error) && (0, i.jsx)("div", {
               className: "FieldError_sc_custom",
               children: u ?? l?.error
             })]
@@ -869,7 +869,7 @@ try {
           (0, r.useEffect)(() => {
             e?.payload && d(e.payload), e?.variables && p(e.variables)
           }, [e]);
-          const [f] = (0, r.useState)({
+          const [k] = (0, r.useState)({
             ...n,
             ...u() ?? {}
           }), h = (({
@@ -917,13 +917,13 @@ try {
                   prod: r
                 }
               };
-            return (0, i.jsx)(k, {
+            return (0, i.jsx)(f, {
               payload: s,
               children: (0, i.jsx)(m, {
-                components: f,
+                components: k,
                 children: (0, i.jsx)(U, {
                   payload: n,
-                  components: f,
+                  components: k,
                   componentProps: {
                     ...a,
                     tina: e
@@ -1033,8 +1033,8 @@ try {
           marketingAuthTLD: u
         }) => {
           const p = t?.apiHost ?? e,
-            f = t?.authHost ?? n,
-            k = t?.cdnBase ?? c,
+            k = t?.authHost ?? n,
+            f = t?.cdnBase ?? c,
             g = t?.clientId ?? a,
             h = i?.marketingAuthTLD ?? u,
             v = t?.scHost ?? l,
@@ -1044,16 +1044,16 @@ try {
             graphEnv: t?.graphEnv ?? s,
             host: v,
             hostname: d,
-            cdnBase: k,
+            cdnBase: f,
             key: m,
             clientId: g,
             cms: `https://${r}.rockstargames.com/graphql`,
-            authHost: f,
+            authHost: k,
             queryManifest: o,
             scBase: `https://${v}.rockstargames.com/`,
-            login: `https://${f}.rockstargames.com/connect/authorize/${g}`,
-            silentCheck: `https://${f}.rockstargames.com/connect/cors/check/${g}`,
-            signup: `https://${f}.rockstargames.com/create/?cid=${g}`,
+            login: `https://${k}.rockstargames.com/connect/authorize/${g}`,
+            silentCheck: `https://${k}.rockstargames.com/connect/cors/check/${g}`,
+            signup: `https://${k}.rockstargames.com/create/?cid=${g}`,
             gateway: `https://${h}/auth/gateway.json`,
             logout: `https://${h}/auth/sc-auth-logout`,
             pingBearer: `https://${h}/${y}`,

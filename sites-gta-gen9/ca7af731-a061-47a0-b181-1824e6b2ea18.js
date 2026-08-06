@@ -123,43 +123,43 @@ try {
         mutateWebSettings: () => Me,
         newswirePost: () => te,
         oneTrustInit: () => ee,
-        safeStyles: () => f,
+        safeStyles: () => m,
         scrollToElement: () => oe.PA,
-        setContextItem: () => m.A,
+        setContextItem: () => h.A,
         setCookieValue: () => oe.My,
-        setMakeVarItem: () => h.A,
+        setMakeVarItem: () => f.A,
         supportedBrowsers: () => Z,
         toScLocaleString: () => xe.t,
         track: () => de,
         useApolloClient: () => $,
-        useBase: () => he.RK,
+        useBase: () => fe.RK,
         useBodyScrollable: () => K,
         useDataLayer: () => ye,
-        useGetTpaLinkGenerator: () => he.gd,
-        useHasReduceMotionPreference: () => he.vx,
-        useHasSaveDataPreference: () => he.sb,
+        useGetTpaLinkGenerator: () => fe.gd,
+        useHasReduceMotionPreference: () => fe.vx,
+        useHasSaveDataPreference: () => fe.sb,
         useLazyQuery: () => ve._,
-        useLocale: () => he.Ym,
+        useLocale: () => fe.Ym,
         useMutateState: () => x,
         useMutation: () => we.n,
-        useNewswirePost: () => he.CA,
-        usePreloadImg: () => he.OG,
-        usePrevious: () => he.ZC,
+        useNewswirePost: () => fe.CA,
+        usePreloadImg: () => fe.OG,
+        usePrevious: () => fe.ZC,
         useQuery: () => J,
-        useQueryParams: () => he.sq,
+        useQueryParams: () => fe.sq,
         useReactiveVar: () => w.q,
-        useRelativeTime: () => he.Vq,
-        useRockstarEventDispatcher: () => he.OH,
-        useRockstarEventSubscriber: () => he.zP,
+        useRelativeTime: () => fe.Vq,
+        useRockstarEventDispatcher: () => fe.OH,
+        useRockstarEventSubscriber: () => fe.zP,
         useRockstarToken: () => R.e9,
         useRockstarTokenPing: () => R.Es,
         useRockstarTokenReactive: () => R.bD,
         useRockstarWebSettings: () => Oe,
-        useScApi: () => he.Cb,
-        useScAuthLinks: () => he.N6,
+        useScApi: () => fe.Cb,
+        useScAuthLinks: () => fe.N6,
         useScroll: () => pe.Ll,
-        useScrollTracking: () => he.GA,
-        useScrollVisibility: () => he.JE,
+        useScrollTracking: () => fe.GA,
+        useScrollVisibility: () => fe.JE,
         useState: () => y,
         useWindowResize: () => Le.G4,
         webSettingsReactive: () => Re,
@@ -168,7 +168,7 @@ try {
         withMediaBasedProps: () => ce,
         withReactiveState: () => T,
         withRockstarGraph: () => Q,
-        withTranslations: () => me
+        withTranslations: () => he
       });
       var r = {};
       o.r(r), o.d(r, {
@@ -211,21 +211,21 @@ try {
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
       var g = o(40283);
-      const f = e => {
+      const m = e => {
         const t = (0, g.clone)(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), t?.["z-index"] && (t.zIndex = t["z-index"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
-      var m = o(12043),
-        h = o(95967),
+      var h = o(12043),
+        f = o(95967),
         p = o(39793),
         v = o(93082),
         w = o(18849);
-      const b = (0, m.A)({
+      const b = (0, h.A)({
           context: (0, v.createContext)({}),
           key: "graphContextGet"
         }),
         y = () => (0, v.useContext)(b),
-        k = (0, m.A)({
+        k = (0, h.A)({
           context: (0, v.createContext)({}),
           key: "graphContextSet"
         }),
@@ -502,19 +502,19 @@ try {
         })(e, o, t);
       var ue = o(58060),
         ge = o(57880);
-      const fe = ue.J1`
+      const me = ue.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key
         value
     }
 }`,
-        me = (e, t = "default") => o => ((e, t, o) => {
+        he = (e, t = "default") => o => ((e, t, o) => {
           const r = ((e = "default") => {
             const t = (0, ge.A)(),
               {
                 data: o
-              } = J(fe, {
+              } = J(me, {
                 variables: {
                   config: e,
                   locale: t
@@ -527,11 +527,11 @@ query Translations($locale: String!, $config: String!) {
             t: r
           }) : null
         })(e, o, t);
-      var he = o(10195),
+      var fe = o(10195),
         pe = o(26665),
         ve = o(58460),
         we = o(71374);
-      const be = (0, m.A)({
+      const be = (0, h.A)({
           context: (0, v.createContext)({}),
           key: "gtmDatalayer"
         }),

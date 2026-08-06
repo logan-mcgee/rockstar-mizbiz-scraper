@@ -41,8 +41,8 @@ try {
               })
             }(t, Array.isArray(e) ? e : [e]);
             a[o] || (a[o] = new WeakMap);
-            var c = a[o],
-              u = [],
+            var u = a[o],
+              c = [],
               f = new Set,
               p = new Set(d),
               g = function(e) {
@@ -56,8 +56,8 @@ try {
                   var t = e.getAttribute(l),
                     a = null !== t && "false" !== t,
                     s = (n.get(e) || 0) + 1,
-                    i = (c.get(e) || 0) + 1;
-                  n.set(e, s), c.set(e, i), u.push(e), 1 === s && a && r.set(e, !0), 1 === i && e.setAttribute(o, "true"), a || e.setAttribute(l, "true")
+                    i = (u.get(e) || 0) + 1;
+                  n.set(e, s), u.set(e, i), c.push(e), 1 === s && a && r.set(e, !0), 1 === i && e.setAttribute(o, "true"), a || e.setAttribute(l, "true")
                 } catch (t) {
                   console.error("aria-hidden: cannot operate on ", e, t)
                 }
@@ -65,10 +65,10 @@ try {
             };
             return y(t), f.clear(), s++,
               function() {
-                u.forEach(function(e) {
+                c.forEach(function(e) {
                   var t = n.get(e) - 1,
-                    a = c.get(e) - 1;
-                  n.set(e, t), c.set(e, a), t || (r.has(e) || e.removeAttribute(l), r.delete(e)), a || e.removeAttribute(o)
+                    a = u.get(e) - 1;
+                  n.set(e, t), u.set(e, a), t || (r.has(e) || e.removeAttribute(l), r.delete(e)), a || e.removeAttribute(o)
                 }), --s || (n = new WeakMap, n = new WeakMap, r = new WeakMap, a = {})
               }
           }(l, d, o, "aria-hidden")) : function() {
@@ -92,15 +92,15 @@ try {
       function d(e, t, o) {
         var n, a = {},
           d = null,
-          c = null;
-        for (n in void 0 !== o && (d = "" + o), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (c = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (a[n] = t[n]);
+          u = null;
+        for (n in void 0 !== o && (d = "" + o), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (u = t.ref), t) s.call(t, n) && !l.hasOwnProperty(n) && (a[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
         return {
           $$typeof: r,
           type: e,
           key: d,
-          ref: c,
+          ref: u,
           props: a,
           _owner: i.current
         }
@@ -138,8 +138,8 @@ try {
         i = o(82449),
         l = o(92939),
         d = o(64334),
-        c = o(95745),
-        u = o(64190),
+        u = o(95745),
+        c = o(64190),
         f = o(7470),
         p = o(31270),
         g = o(38174),
@@ -158,7 +158,7 @@ try {
             defaultOpen: a,
             onOpenChange: s,
             modal: d = !0
-          } = e, c = n.useRef(null), u = n.useRef(null), [f, p] = (0, l.useControllableState)({
+          } = e, u = n.useRef(null), c = n.useRef(null), [f, p] = (0, l.useControllableState)({
             prop: r,
             defaultProp: a ?? !1,
             onChange: s,
@@ -166,8 +166,8 @@ try {
           });
           return (0, _.jsx)(w, {
             scope: t,
-            triggerRef: c,
-            contentRef: u,
+            triggerRef: u,
+            contentRef: c,
             contentId: (0, i.useId)(),
             titleId: (0, i.useId)(),
             descriptionId: (0, i.useId)(),
@@ -213,7 +213,7 @@ try {
             forceMount: o,
             children: n.Children.map(r, e => (0, _.jsx)(f.C, {
               present: o || s.open,
-              children: (0, _.jsx)(u.Portal, {
+              children: (0, _.jsx)(c.Portal, {
                 asChild: !0,
                 container: a,
                 children: e
@@ -332,7 +332,7 @@ try {
             ...s
           } = e, i = C(F, o);
           return (0, g.Oh)(), (0, _.jsx)(_.Fragment, {
-            children: (0, _.jsx)(c.FocusScope, {
+            children: (0, _.jsx)(u.FocusScope, {
               asChild: !0,
               loop: !0,
               trapped: n,

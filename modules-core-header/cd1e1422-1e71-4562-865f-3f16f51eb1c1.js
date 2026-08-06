@@ -119,10 +119,10 @@ try {
         s = r(51836),
         d = /^\[object .+?Constructor\]$/,
         i = Function.prototype,
-        f = Object.prototype,
-        l = i.toString,
-        b = f.hasOwnProperty,
-        p = RegExp("^" + l.call(b).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+        l = Object.prototype,
+        f = i.toString,
+        b = l.hasOwnProperty,
+        p = RegExp("^" + f.call(b).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
       const y = function(e) {
           return !(!(0, u.A)(e) || (t = e, a && a in t)) && ((0, o.A)(e) ? p : d).test((0, s.A)(e));
           var t
@@ -146,27 +146,27 @@ try {
         s = (0, o.A)(n.A, "Set"),
         d = (0, o.A)(n.A, "WeakMap");
       var i = r(86204),
-        f = r(51836),
-        l = "[object Map]",
+        l = r(51836),
+        f = "[object Map]",
         b = "[object Promise]",
         p = "[object Set]",
         y = "[object WeakMap]",
         A = "[object DataView]",
-        j = (0, f.A)(c),
-        v = (0, f.A)(a.A),
-        g = (0, f.A)(u),
-        _ = (0, f.A)(s),
-        w = (0, f.A)(d),
+        j = (0, l.A)(c),
+        v = (0, l.A)(a.A),
+        g = (0, l.A)(u),
+        _ = (0, l.A)(s),
+        w = (0, l.A)(d),
         O = i.A;
-      (c && O(new c(new ArrayBuffer(1))) != A || a.A && O(new a.A) != l || u && O(u.resolve()) != b || s && O(new s) != p || d && O(new d) != y) && (O = function(e) {
+      (c && O(new c(new ArrayBuffer(1))) != A || a.A && O(new a.A) != f || u && O(u.resolve()) != b || s && O(new s) != p || d && O(new d) != y) && (O = function(e) {
         var t = (0, i.A)(e),
           r = "[object Object]" == t ? e.constructor : void 0,
-          o = r ? (0, f.A)(r) : "";
+          o = r ? (0, l.A)(r) : "";
         if (o) switch (o) {
           case j:
             return A;
           case v:
-            return l;
+            return f;
           case g:
             return b;
           case _:

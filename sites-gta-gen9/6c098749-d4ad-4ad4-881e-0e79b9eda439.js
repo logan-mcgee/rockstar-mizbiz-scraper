@@ -15,7 +15,7 @@ try {
   [323], {
     323(e, t, a) {
       a.r(t), a.d(t, {
-        GtmProvider: () => d,
+        GtmProvider: () => l,
         RockstarUserProvider: () => j,
         fetchUnreadNotificationCount: () => R,
         useGtmTrack: () => f,
@@ -46,17 +46,17 @@ try {
           ggle_play: "GOOGLE PLAY"
         },
         u = e => e ? Object.fromEntries(Object.entries(e).map(([e, t]) => [e, "string" == typeof t ? t.toLowerCase() : t])) : e,
-        l = (0, n.setContextItem)({
+        d = (0, n.setContextItem)({
           context: (0, s.createContext)(void 0),
           key: "gtmContext22"
         }),
-        d = ({
+        l = ({
           checkUser: e,
           children: t
         }) => {
           const a = ((e = !0) => {
-              const [t, a] = (0, s.useState)([]), [r, l] = (0, s.useState)(null), {
-                data: d,
+              const [t, a] = (0, s.useState)([]), [r, d] = (0, s.useState)(null), {
+                data: l,
                 loggedIn: p
               } = U(), f = (0, c.bn)(), g = (e, t) => {
                 const r = e.length;
@@ -69,7 +69,7 @@ try {
                 }), a(e => e.slice(r))
               };
               return (0, s.useEffect)(() => {
-                if (d && null !== p) {
+                if (l && null !== p) {
                   const e = ((e, t) => {
                     const a = [],
                       r = [],
@@ -98,26 +98,26 @@ try {
                       use_enhanced_browser_features: f,
                       section_layout: t ? "signed in" : "signed out"
                     }
-                  })(d, p);
-                  t.length && e && g([...t], e), l(e)
+                  })(l, p);
+                  t.length && e && g([...t], e), d(e)
                 } else e || t.length && g([...t])
-              }, [d, p, t, e]), {
-                track: e => (Boolean(d && r), (0, n.track)({
+              }, [l, p, t, e]), {
+                track: e => (Boolean(l && r), (0, n.track)({
                   ...u(e),
                   ...r
                 }))
               }
             })(e),
-            d = (0, s.useMemo)(() => a, [a, e]);
-          return (0, r.jsx)(l.Provider, {
-            value: d,
+            l = (0, s.useMemo)(() => a, [a, e]);
+          return (0, r.jsx)(d.Provider, {
+            value: l,
             children: t
           })
         },
         p = {
           track: () => null
         },
-        f = () => (0, s.useContext)(l) ?? p,
+        f = () => (0, s.useContext)(d) ?? p,
         g = (0, n.setMakeVarItem)({
           key: "navOpenReactive",
           value: (0, n.makeVar)(null)
@@ -207,7 +207,7 @@ try {
             accountSynced: !1,
             hasGtaPlus: !1,
             gtaPlusPlatforms: []
-          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), g = void 0 === l, [h, m] = (0, s.useState)(1);
+          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [d, l] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), g = void 0 === d, [h, m] = (0, s.useState)(1);
           return (0, s.useEffect)(() => {
             "gtao" !== t || c?.characters?.gtao || (o(e => ({
               ...e,
@@ -260,7 +260,7 @@ try {
                     token: i
                   })
                 } catch (e) {}
-              })(), f(!0)), !e && p && d(!1), e) {
+              })(), f(!0)), !e && p && l(!1), e) {
               const e = (({
                 bearerToken: e
               }) => {
@@ -274,10 +274,10 @@ try {
                   o = new Date(t["scAuth.MemberSince"]),
                   i = new Date,
                   u = (0, N.M)(i, o) < 12,
-                  l = (new Date).getTime() / 1e3;
+                  d = (new Date).getTime() / 1e3;
                 return {
                   id: r,
-                  nonExpiredToken: (t?.exp ?? 0) - l > 0,
+                  nonExpiredToken: (t?.exp ?? 0) - d > 0,
                   avatar: t["scAuth.AvatarUrl"],
                   bearer_token_expired: t.exp > Date.now(),
                   isAMinor: c,
@@ -295,7 +295,7 @@ try {
             }
           }, [r, p]), (0, s.useEffect)(() => {
             (async () => {
-              if (l && c && a && !c?.crews && c?.characters) {
+              if (d && c && a && !c?.crews && c?.characters) {
                 const e = await (async ({
                   pingBearer: e,
                   rockstarId: t
@@ -319,9 +319,9 @@ try {
                 })), m(e => e - 1)
               }
             })()
-          }, [c?.nickname, a, l, c?.characters]), (0, s.useEffect)(() => {
+          }, [c?.nickname, a, d, c?.characters]), (0, s.useEffect)(() => {
             (async () => {
-              if (!l || !c || null != c?.hasNotification) return;
+              if (!d || !c || null != c?.hasNotification) return;
               const e = await R({
                 pingBearer: u
               });
@@ -331,9 +331,9 @@ try {
                 hasNotification: t
               }))
             })()
-          }, [l, c?.hasNotification]), (0, s.useEffect)(() => {
+          }, [d, c?.hasNotification]), (0, s.useEffect)(() => {
             (async () => {
-              if (!l || !c || c?.gamesPlayed || !1 === t || !1 === a) return;
+              if (!d || !c || c?.gamesPlayed || !1 === t || !1 === a) return;
               const e = await (async ({
                 pingBearer: e
               }) => {
@@ -349,9 +349,9 @@ try {
                 gamesPlayed: e
               })), m(e => e - 1)
             })()
-          }, [c?.nickname, l]), (0, s.useEffect)(() => {
+          }, [c?.nickname, d]), (0, s.useEffect)(() => {
             (async () => {
-              if (l && c && "gtao" === t && !c?.characters?.gtao) {
+              if (d && c && "gtao" === t && !c?.characters?.gtao) {
                 const e = (async ({
                     pingBearer: e
                   }) => {
@@ -414,12 +414,12 @@ try {
                 })), m(e => e - 1)
               }
             })()
-          }, [t, c?.nickname, l, c, u]), (0, s.useEffect)(() => {
-            c?.id && c?.nonExpiredToken && (d(!0), S(c.id))
+          }, [t, c?.nickname, d, c, u]), (0, s.useEffect)(() => {
+            c?.id && c?.nonExpiredToken && (l(!0), S(c.id))
           }, [JSON.stringify(c)]), {
             data: c,
             setData: o,
-            loggedIn: l,
+            loggedIn: d,
             loading: g
           }
         },

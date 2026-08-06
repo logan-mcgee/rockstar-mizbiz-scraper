@@ -16,18 +16,18 @@ try {
     60109(e, a, t) {
       t.r(a);
       var n = t(39793),
-        o = t(93082),
-        d = t(99225);
+        d = t(93082),
+        o = t(99225);
       t.d(a, ["default", 0, ({
         basename: e,
         children: a,
         history: t
       }) => {
-        const [s, i] = (0, o.useState)({
+        const [s, i] = (0, d.useState)({
           action: t.action,
           location: t.location
         });
-        return (0, o.useLayoutEffect)(() => t.listen(({
+        return (0, d.useLayoutEffect)(() => t.listen(({
           location: e,
           action: a
         }) => {
@@ -35,7 +35,7 @@ try {
             location: e,
             action: a
           })
-        }), [t]), (0, n.jsx)(d.Router, {
+        }), [t]), (0, n.jsx)(o.Router, {
           basename: e,
           location: s.location,
           navigationType: s.action,

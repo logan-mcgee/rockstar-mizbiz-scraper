@@ -36,8 +36,8 @@ try {
         a = r(64239),
         s = r(1913),
         d = r(64334),
-        c = r(38174),
-        i = r(95745),
+        i = r(38174),
+        c = r(95745),
         l = r(82449),
         u = r(78595),
         p = r(64190),
@@ -60,18 +60,18 @@ try {
             defaultOpen: a,
             onOpenChange: s,
             modal: d = !1
-          } = e, c = m(o), i = n.useRef(null), [p, f] = n.useState(!1), [v, h] = (0, g.useControllableState)({
+          } = e, i = m(o), c = n.useRef(null), [p, f] = n.useState(!1), [v, h] = (0, g.useControllableState)({
             prop: t,
             defaultProp: a ?? !1,
             onChange: s,
             caller: C
           });
           return (0, w.jsx)(u.bL, {
-            ...c,
+            ...i,
             children: (0, w.jsx)(x, {
               scope: o,
               contentId: (0, l.useId)(),
-              triggerRef: i,
+              triggerRef: c,
               open: v,
               onOpenChange: h,
               onOpenToggle: n.useCallback(() => h(e => !e), [h]),
@@ -91,9 +91,9 @@ try {
             ...t
           } = e, a = O(A, r), s = m(r), {
             onCustomAnchorAdd: d,
-            onCustomAnchorRemove: c
+            onCustomAnchorRemove: i
           } = a;
-          return n.useEffect(() => (d(), () => c()), [d, c]), (0, w.jsx)(u.Mz, {
+          return n.useEffect(() => (d(), () => i()), [d, i]), (0, w.jsx)(u.Mz, {
             ...s,
             ...t,
             ref: o
@@ -105,20 +105,20 @@ try {
           const {
             __scopePopover: r,
             ...n
-          } = e, s = O(j, r), d = m(r), c = (0, a.s)(o, s.triggerRef), i = (0, w.jsx)(v.sG.button, {
+          } = e, s = O(j, r), d = m(r), i = (0, a.s)(o, s.triggerRef), c = (0, w.jsx)(v.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": s.open,
             "aria-controls": s.open ? s.contentId : void 0,
             "data-state": U(s.open),
             ...n,
-            ref: c,
+            ref: i,
             onClick: (0, t.mK)(e.onClick, s.onOpenToggle)
           });
-          return s.hasCustomAnchor ? i : (0, w.jsx)(u.Mz, {
+          return s.hasCustomAnchor ? c : (0, w.jsx)(u.Mz, {
             asChild: !0,
             ...d,
-            children: i
+            children: c
           })
         });
       D.displayName = j;
@@ -172,7 +172,7 @@ try {
           const r = O(T, e.__scopePopover),
             s = n.useRef(null),
             d = (0, a.s)(o, s),
-            c = n.useRef(!1);
+            i = n.useRef(!1);
           return n.useEffect(() => {
             const e = s.current;
             if (e) return (0, P.Eq)(e)
@@ -185,13 +185,13 @@ try {
               trapFocus: r.open,
               disableOutsidePointerEvents: !0,
               onCloseAutoFocus: (0, t.mK)(e.onCloseAutoFocus, e => {
-                e.preventDefault(), c.current || r.triggerRef.current?.focus()
+                e.preventDefault(), i.current || r.triggerRef.current?.focus()
               }),
               onPointerDownOutside: (0, t.mK)(e.onPointerDownOutside, e => {
                 const o = e.detail.originalEvent,
                   r = 0 === o.button && !0 === o.ctrlKey,
                   n = 2 === o.button || r;
-                c.current = n
+                i.current = n
               }, {
                 checkForDefaultPrevented: !1
               }),
@@ -234,7 +234,7 @@ try {
             onInteractOutside: v,
             ...h
           } = e, g = O(T, r), P = m(r);
-          return (0, c.Oh)(), (0, w.jsx)(i.FocusScope, {
+          return (0, i.Oh)(), (0, w.jsx)(c.FocusScope, {
             asChild: !0,
             loop: !0,
             trapped: n,

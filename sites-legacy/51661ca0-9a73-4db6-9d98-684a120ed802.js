@@ -19,30 +19,30 @@ try {
         o = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
         s = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, a, d) {
+      function f(e, a, d) {
         var t, o = {},
-          l = null,
+          f = null,
           i = null;
-        for (t in void 0 !== d && (l = "" + d), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, t) && !f.hasOwnProperty(t) && (o[t] = a[t]);
+        for (t in void 0 !== d && (f = "" + d), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (i = a.ref), a) r.call(a, t) && !l.hasOwnProperty(t) && (o[t] = a[t]);
         if (e && e.defaultProps)
           for (t in a = e.defaultProps) void 0 === o[t] && (o[t] = a[t]);
         return {
           $$typeof: n,
           type: e,
-          key: l,
+          key: f,
           ref: i,
           props: o,
           _owner: s.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      a.Fragment = o, a.jsx = f, a.jsxs = f
     },
     39793(e, a, d) {
       e.exports = d(94931)

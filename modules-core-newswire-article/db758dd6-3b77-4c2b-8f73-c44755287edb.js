@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function c(e, i, t) {
+      function o(e, i, t) {
         var a, r = {},
-          c = null,
-          o = null;
-        for (a in void 0 !== t && (c = "" + t), void 0 !== i.key && (c = "" + i.key), void 0 !== i.ref && (o = i.ref), i) l.call(i, a) && !h.hasOwnProperty(a) && (r[a] = i[a]);
+          o = null,
+          c = null;
+        for (a in void 0 !== t && (o = "" + t), void 0 !== i.key && (o = "" + i.key), void 0 !== i.ref && (c = i.ref), i) l.call(i, a) && !h.hasOwnProperty(a) && (r[a] = i[a]);
         if (e && e.defaultProps)
           for (a in i = e.defaultProps) void 0 === r[a] && (r[a] = i[a]);
         return {
           $$typeof: s,
           type: e,
-          key: c,
-          ref: o,
+          key: o,
+          ref: c,
           props: r,
           _owner: n.current
         }
       }
-      i.Fragment = r, i.jsx = c, i.jsxs = c
+      i.Fragment = r, i.jsx = o, i.jsxs = o
     },
     39793(e, i, t) {
       e.exports = t(94931)
@@ -58,8 +58,8 @@ try {
         l = t(42909),
         n = t(17301),
         h = t(75027),
-        c = t(84220),
-        o = t(31147),
+        o = t(84220),
+        c = t(31147),
         d = (t(281), t(14653)),
         g = t(57789),
         _ = t(82199);
@@ -122,13 +122,13 @@ try {
           isActive: r,
           index: n,
           highlightsCount: h,
-          ...c
+          ...o
         }) => {
-          const o = (0, l.useIntl)(),
+          const c = (0, l.useIntl)(),
             d = (0, s.useRef)(null);
           return (0, a.jsxs)(g.P.div, {
             "aria-hidden": !r,
-            "aria-label": o.formatMessage(u.cph_highlights_group_aria, {
+            "aria-label": c.formatMessage(u.cph_highlights_group_aria, {
               index: n + 1,
               total: h
             }),
@@ -142,9 +142,9 @@ try {
             variants: b,
             animate: r ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...c,
+            ...o,
             children: [e && (0, a.jsx)("h1", {
-              children: e || o.formatMessage(u.cph_highlights_heading)
+              children: e || c.formatMessage(u.cph_highlights_heading)
             }), i && (0, a.jsx)("h2", {
               className: f.heading,
               children: i
@@ -193,7 +193,7 @@ try {
             [b, v] = (0, s.useState)(!1),
             [k, y] = (0, s.useState)(!1),
             [S, E] = (0, s.useState)(0),
-            [j, I] = (0, s.useState)([h.A, c.A, o.A]),
+            [j, I] = (0, s.useState)([h.A, o.A, c.A]),
             [C, T] = (0, s.useState)({}),
             M = (0, s.useRef)(null),
             R = (0, s.useRef)(null),
@@ -202,7 +202,7 @@ try {
             A = (0, s.useRef)(null),
             O = (0, n.useGenerateCdnSource)();
           return (0, s.useEffect)(() => {
-            const e = [h.A, c.A, o.A];
+            const e = [h.A, o.A, c.A];
             I(e)
           }, [!1]), (0, s.useEffect)(() => {
             f && !b && (m({

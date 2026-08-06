@@ -26,23 +26,23 @@ try {
           __source: !0
         };
 
-      function c(e, t, o) {
+      function l(e, t, o) {
         var r, s = {},
-          c = null,
-          l = null;
-        for (r in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
+          l = null,
+          c = null;
+        for (r in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !d.hasOwnProperty(r) && (s[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === s[r] && (s[r] = t[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: s,
           _owner: i.current
         }
       }
-      t.Fragment = s, t.jsx = c, t.jsxs = c
+      t.Fragment = s, t.jsx = l, t.jsxs = l
     },
     39793(e, t, o) {
       e.exports = o(94931)
@@ -107,15 +107,15 @@ try {
         findPlatform: () => re.rB,
         generateTpaLink: () => re.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => re.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => re.Ap,
         getGen8Consoles: () => re.Xs,
         getGen9Consoles: () => re.kx,
         getLanguageLabel: () => re.rJ,
         getUriForGraphEnv: () => u,
-        gql: () => fe.J1,
+        gql: () => he.J1,
         gtmInit: () => Ce,
         importAll: () => re.pT,
         isEmptyMarkup: () => Z,
@@ -124,14 +124,14 @@ try {
         mutateWebSettings: () => Le,
         newswirePost: () => oe,
         oneTrustInit: () => te,
-        safeStyles: () => f,
+        safeStyles: () => h,
         scrollToElement: () => re.PA,
-        setContextItem: () => h.A,
+        setContextItem: () => m.A,
         setCookieValue: () => re.My,
-        setMakeVarItem: () => m.A,
+        setMakeVarItem: () => p.A,
         supportedBrowsers: () => ee,
         toScLocaleString: () => Te.t,
-        track: () => ce,
+        track: () => le,
         useApolloClient: () => V,
         useBase: () => ve.RK,
         useBodyScrollable: () => Y,
@@ -165,11 +165,11 @@ try {
         useWindowResize: () => Ie.G4,
         webSettingsReactive: () => Oe,
         withAutoRouteTracking: () => Ae,
-        withGtmTracking: () => le,
+        withGtmTracking: () => ce,
         withMediaBasedProps: () => ge,
         withReactiveState: () => T,
         withRockstarGraph: () => H,
-        withTranslations: () => pe
+        withTranslations: () => fe
       });
       var r = {};
       o.r(r), o.d(r, {
@@ -194,8 +194,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(92998),
-        l = o(78062);
+      var l = o(92998),
+        c = o(78062);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -212,21 +212,21 @@ try {
         return `https://${t}.rockstargames.com?origin=${document.location.origin}`
       };
       var g = o(50628);
-      const f = e => {
+      const h = e => {
         const t = (0, g.A)(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), t?.["z-index"] && (t.zIndex = t["z-index"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
       };
-      var h = o(12043),
-        m = o(95967),
-        p = o(39793),
+      var m = o(12043),
+        p = o(95967),
+        f = o(39793),
         v = o(93082),
         w = o(18849);
-      const b = (0, h.A)({
+      const b = (0, m.A)({
           context: (0, v.createContext)({}),
           key: "graphContextGet"
         }),
         y = () => (0, v.useContext)(b),
-        k = (0, h.A)({
+        k = (0, m.A)({
           context: (0, v.createContext)({}),
           key: "graphContextSet"
         }),
@@ -243,9 +243,9 @@ try {
             };
             t(o)
           }, [t]);
-          return (0, p.jsx)(b.Provider, {
+          return (0, f.jsx)(b.Provider, {
             value: t(),
-            children: (0, p.jsx)(k.Provider, {
+            children: (0, f.jsx)(k.Provider, {
               value: o,
               children: e
             })
@@ -254,9 +254,9 @@ try {
         T = (e, {
           state: t
         }) => function(o) {
-          return (0, p.jsx)(S, {
+          return (0, f.jsx)(S, {
             state: t,
-            children: (0, p.jsx)(e, {
+            children: (0, f.jsx)(e, {
               ...o
             })
           })
@@ -397,11 +397,11 @@ try {
             graphOptions: t,
             typePolicies: o
           });
-          return (0, p.jsx)(_.ec, {
+          return (0, f.jsx)(_.ec, {
             token: t?.token,
-            children: (0, p.jsx)(R.X, {
+            children: (0, f.jsx)(R.X, {
               client: r,
-              children: (0, p.jsx)(J.Provider, {
+              children: (0, f.jsx)(J.Provider, {
                 value: z,
                 children: e
               })
@@ -413,13 +413,13 @@ try {
         }) => {
           const o = (0, P.UT)("");
           return function(r) {
-            return (0, p.jsx)(Q, {
+            return (0, f.jsx)(Q, {
               graphOptions: {
                 env: t,
                 useGETForQueries: !0,
                 token: o
               },
-              children: (0, p.jsx)(e, {
+              children: (0, f.jsx)(e, {
                 ...r
               })
             })
@@ -458,7 +458,7 @@ try {
       const ae = (0, o(66302).A)(),
         ie = ae?.id,
         de = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        ce = e => {
+        le = e => {
           const t = {
             ...e,
             environment: ie,
@@ -468,10 +468,10 @@ try {
             dataLayer: t
           })
         },
-        le = e => t => ((e, t) => (0, p.jsx)(e, {
+        ce = e => t => ((e, t) => (0, f.jsx)(e, {
           ...t,
           gtmTrack: e => {
-            ce(e)
+            le(e)
           }
         }))(e, t);
       var ue = o(79098);
@@ -499,25 +499,25 @@ try {
             n(s(t))
           }, o);
           return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-        }), (0, p.jsx)(e, {
+        }), (0, f.jsx)(e, {
           ...r
         })
       })(e, o, t);
-      var fe = o(58060),
-        he = o(57880);
-      const me = fe.J1`
+      var he = o(58060),
+        me = o(57880);
+      const pe = he.J1`
 query Translations($locale: String!, $config: String!) {
     translations(locale: $locale, config: $config) {
         key
         value
     }
 }`,
-        pe = (e, t = "default") => o => ((e, t, o) => {
+        fe = (e, t = "default") => o => ((e, t, o) => {
           const r = ((e = "default") => {
-            const t = (0, he.A)(),
+            const t = (0, me.A)(),
               {
                 data: o
-              } = W(me, {
+              } = W(pe, {
                 variables: {
                   config: e,
                   locale: t
@@ -525,7 +525,7 @@ query Translations($locale: String!, $config: String!) {
               });
             return o ? e => o?.translations.find(t => t.key === e)?.value ?? e : null
           })(o);
-          return r ? (0, p.jsx)(e, {
+          return r ? (0, f.jsx)(e, {
             ...t,
             t: r
           }) : null
@@ -534,7 +534,7 @@ query Translations($locale: String!, $config: String!) {
         we = o(26665),
         be = o(58460),
         ye = o(71374);
-      const ke = (0, h.A)({
+      const ke = (0, m.A)({
           context: (0, v.createContext)({}),
           key: "gtmDatalayer"
         }),
@@ -548,7 +548,7 @@ query Translations($locale: String!, $config: String!) {
               ...o,
               ...t
             }), [o, t]);
-          return (0, p.jsx)(ke.Provider, {
+          return (0, f.jsx)(ke.Provider, {
             value: r,
             children: e
           })
@@ -560,10 +560,10 @@ query Translations($locale: String!, $config: String!) {
             pathname: o
           } = (0, Pe.useLocation)();
           return (0, v.useEffect)(() => {
-            ce({
+            le({
               event: "trackPageview"
             })
-          }, [o]), (0, p.jsx)(e, {
+          }, [o]), (0, f.jsx)(e, {
             ...t
           })
         })(e, t),

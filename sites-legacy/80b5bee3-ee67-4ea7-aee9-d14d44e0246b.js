@@ -73,9 +73,9 @@ try {
         findPlatform: () => re.rB,
         generateTpaLink: () => re.tC,
         getAccentColor: () => d,
-        getBase: () => c.A,
+        getBase: () => l.A,
         getCdnPrefix: () => re.yh,
-        getConfigForDomain: () => l.A,
+        getConfigForDomain: () => c.A,
         getCookieValueByName: () => re.Ap,
         getGen8Consoles: () => re.Xs,
         getGen9Consoles: () => re.kx,
@@ -97,7 +97,7 @@ try {
         setMakeVarItem: () => p.A,
         supportedBrowsers: () => ee,
         toScLocaleString: () => Te.t,
-        track: () => ce,
+        track: () => le,
         useApolloClient: () => $,
         useBase: () => ve.RK,
         useBodyScrollable: () => Y,
@@ -131,7 +131,7 @@ try {
         useWindowResize: () => Ie.G4,
         webSettingsReactive: () => Le,
         withAutoRouteTracking: () => Pe,
-        withGtmTracking: () => le,
+        withGtmTracking: () => ce,
         withMediaBasedProps: () => ge,
         withReactiveState: () => T,
         withRockstarGraph: () => H,
@@ -160,8 +160,8 @@ try {
         },
         i = (...e) => e.filter(Boolean).join(" "),
         d = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var c = o(92998),
-        l = o(78062);
+      var l = o(92998),
+        c = o(78062);
       const u = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t;
@@ -424,7 +424,7 @@ try {
       const ae = (0, o(66302).A)(),
         ie = ae?.id,
         de = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        ce = e => {
+        le = e => {
           const t = {
             ...e,
             environment: ie,
@@ -434,10 +434,10 @@ try {
             dataLayer: t
           })
         },
-        le = e => t => ((e, t) => (0, f.jsx)(e, {
+        ce = e => t => ((e, t) => (0, f.jsx)(e, {
           ...t,
           gtmTrack: e => {
-            ce(e)
+            le(e)
           }
         }))(e, t);
       var ue = o(79098);
@@ -526,7 +526,7 @@ query Translations($locale: String!, $config: String!) {
             pathname: o
           } = (0, Ae.useLocation)();
           return (0, v.useEffect)(() => {
-            ce({
+            le({
               event: "trackPageview"
             })
           }, [o]), (0, f.jsx)(e, {

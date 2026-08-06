@@ -18,7 +18,7 @@ try {
         GtmProvider: () => d,
         RockstarUserProvider: () => j,
         fetchUnreadNotificationCount: () => R,
-        useGtmTrack: () => p,
+        useGtmTrack: () => f,
         useRockstarUser: () => U,
         useRockstarUserState: () => x
       });
@@ -57,8 +57,8 @@ try {
           const a = ((e = !0) => {
               const [t, a] = (0, s.useState)([]), [r, l] = (0, s.useState)(null), {
                 data: d,
-                loggedIn: f
-              } = U(), p = (0, c.bn)(), h = (e, t) => {
+                loggedIn: p
+              } = U(), f = (0, c.bn)(), h = (e, t) => {
                 const r = e.length;
                 e.forEach(e => {
                   const a = t ?? {};
@@ -69,7 +69,7 @@ try {
                 }), a(e => e.slice(r))
               };
               return (0, s.useEffect)(() => {
-                if (d && null !== f) {
+                if (d && null !== p) {
                   const e = ((e, t) => {
                     const a = [],
                       r = [],
@@ -95,13 +95,13 @@ try {
                       gtao_platforms_played: r.length ? r.map(e => i[e] ?? e).join("|").toUpperCase() : void 0,
                       gta_plus_platforms: s.length ? s.map(e => i[e] ?? e).join("|").toUpperCase() : void 0,
                       gta_plus_active: s.length > 0,
-                      use_enhanced_browser_features: p,
+                      use_enhanced_browser_features: f,
                       section_layout: t ? "signed in" : "signed out"
                     }
-                  })(d, f);
+                  })(d, p);
                   t.length && e && h([...t], e), l(e)
                 } else e || t.length && h([...t])
-              }, [d, f, t, e]), {
+              }, [d, p, t, e]), {
                 track: e => (Boolean(d && r), (0, n.track)({
                   ...u(e),
                   ...r
@@ -114,10 +114,10 @@ try {
             children: t
           })
         },
-        f = {
+        p = {
           track: () => null
         },
-        p = () => (0, s.useContext)(l) ?? f,
+        f = () => (0, s.useContext)(l) ?? p,
         h = (0, n.setMakeVarItem)({
           key: "navOpenReactive",
           value: (0, n.makeVar)(null)
@@ -207,7 +207,7 @@ try {
             accountSynced: !1,
             hasGtaPlus: !1,
             gtaPlusPlatforms: []
-          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [f, p] = (0, s.useState)(!1), h = void 0 === l, [g, m] = (0, s.useState)(1);
+          }), [i] = (0, n.useRockstarTokenReactive)(), u = (0, n.useRockstarTokenPing)(), [l, d] = (0, s.useState)(), [p, f] = (0, s.useState)(!1), h = void 0 === l, [g, m] = (0, s.useState)(1);
           return (0, s.useEffect)(() => {
             "gtao" !== t || c?.characters?.gtao || (o(e => ({
               ...e,
@@ -230,7 +230,7 @@ try {
           }, [r]), (0, s.useEffect)(() => {
             if ("" === r) return;
             const e = !!r;
-            if (e || f || ((async () => {
+            if (e || p || ((async () => {
                 try {
                   await (async ({
                     token: e
@@ -260,7 +260,7 @@ try {
                     token: i
                   })
                 } catch (e) {}
-              })(), p(!0)), !e && f && d(!1), e) {
+              })(), f(!0)), !e && p && d(!1), e) {
               const e = (({
                 bearerToken: e
               }) => {
@@ -293,7 +293,7 @@ try {
                 ...e
               }))
             }
-          }, [r, f]), (0, s.useEffect)(() => {
+          }, [r, p]), (0, s.useEffect)(() => {
             (async () => {
               if (l && c && a && !c?.crews && c?.characters) {
                 const e = await (async ({
