@@ -4130,21 +4130,22 @@ html:has(div[data-loading]) {
   --foundry-global-font-family-consolas-b260a4d8: Consolas;
   --foundry-global-font-weight-400-c543d620: 400;
   --foundry-global-font-weight-700-4d05ca0a: 700;
-  --foundry-global-font-size-125-7465ed8a: calc(10px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-150-198f06c7: calc(12px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-175-7c044718: calc(14px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-200-9b30a1c2: calc(16px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-225-6b268615: calc(18px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-250-7c909c36: calc(20px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-300-ed2e8eb5: calc(24px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-400-310f384e: calc(32px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-500-ae4c1498: calc(40px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-600-f98b9cf9: calc(48px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-700-e55fff7d: calc(56px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-800-cbeeb437: calc(64px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-900-195dff23: calc(72px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-1000-de0d9aba: calc(80px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-global-font-size-1100-a7f67440: calc(88px*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-125-7465ed8a: calc(10px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-150-198f06c7: calc(12px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-175-7c044718: calc(14px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-200-9b30a1c2: calc(16px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-225-6b268615: calc(18px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-250-7c909c36: calc(20px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-300-ed2e8eb5: calc(24px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-400-310f384e: calc(32px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-500-ae4c1498: calc(40px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-600-f98b9cf9: calc(48px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-700-e55fff7d: calc(56px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-800-cbeeb437: calc(64px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-900-195dff23: calc(72px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-1000-de0d9aba: calc(80px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-1100-a7f67440: calc(88px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-global-font-size-multiplier-a0cecbef: 1;
   --foundry-global-font-letter-spacing-0-11d3b242: 0em;
   --foundry-global-font-letter-spacing-25-e01b7d49: 0.0025em;
   --foundry-global-font-letter-spacing-100-823e8792: 0.01em;
@@ -4167,28 +4168,26 @@ html:has(div[data-loading]) {
   --foundry-alias-font-family-body-fallback-aa2c93c5: Arial;
   --foundry-alias-font-family-code-primary-0731b8b8: Consolas;
   --foundry-alias-font-family-code-fallback-65a5a9e6: Consolas;
-  --foundry-alias-font-letter-spacing-heading-primary-4052fb4d: -0.025em;
-  --foundry-alias-font-letter-spacing-heading-fallback-0c565619: -0.025em;
-  --foundry-alias-font-letter-spacing-body-primary-36e0f114: -0.025em;
-  --foundry-alias-font-letter-spacing-body-fallback-1bae4182: -0.025em;
-  --foundry-alias-font-letter-spacing-label-primary-ab7f3c8d: 0.02em;
-  --foundry-alias-font-letter-spacing-label-fallback-1226b09e: 0.02em;
+  --foundry-alias-font-letter-spacing-heading-27815351: -0.025em;
+  --foundry-alias-font-letter-spacing-body-bb85c22f: -0.025em;
+  --foundry-alias-font-letter-spacing-label-aaa33ecc: 0.02em;
   --foundry-alias-font-weight-regular-c2af3245: 400;
   --foundry-alias-font-weight-bold-751d319e: 700;
   --foundry-alias-font-spacing-paragraph-cdd6040b: calc(32px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-display-a2892c71: calc(64px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-01-1e8a0727: calc(56px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-02-0fd2c0d9: calc(48px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-03-9a73c535: calc(40px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-04-1fdd08c0: calc(32px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-05-beb13840: calc(24px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-heading-06-40a06748: calc(20px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-body-lg-bec4de18: calc(18px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-body-md-caf3b782: calc(16px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-body-sm-2a8e6da3: calc(14px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-body-xs-cf241758: calc(12px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-body-xxs-828e0ccb: calc(10px*var(--foundry-platform-scales-ratio-65afb887));
-  --foundry-alias-font-size-body-code-17a5a27f: calc(16px*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-display-a2892c71: calc(64px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-01-1e8a0727: calc(56px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-02-0fd2c0d9: calc(48px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-03-9a73c535: calc(40px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-04-1fdd08c0: calc(32px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-05-beb13840: calc(24px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-06-40a06748: calc(20px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-heading-07-edb7b105: calc(18px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-lg-bec4de18: calc(18px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-md-caf3b782: calc(16px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-sm-2a8e6da3: calc(14px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-xs-cf241758: calc(12px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-body-xxs-828e0ccb: calc(10px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
+  --foundry-alias-font-size-body-code-17a5a27f: calc(16px*var(--foundry-global-font-size-multiplier-a0cecbef)*var(--foundry-platform-scales-ratio-65afb887));
   --foundry-alias-font-line-height-heading-5379287f: 130%;
   --foundry-alias-font-line-height-body-3e320cc8: 150%
 }
@@ -4418,7 +4417,16 @@ html:has(div[data-loading]) {
   --foundry-alias-color-background-subtle-layer-0-3f1d20b0: #f5f5f5;
   --foundry-alias-color-background-subtle-layer-1-74c1dd2f: #e4e4e4;
   --foundry-alias-color-background-subtle-layer-2-b67c0bd1: #fff;
-  --foundry-alias-color-background-component-tooltip-791bcb22: #464646;
+  --foundry-alias-color-background-component-alpha-layer-0-418b021c: transparent;
+  --foundry-alias-color-background-component-alpha-layer-1-a4cb5bce: rgba(0, 0, 0, .05);
+  --foundry-alias-color-background-component-alpha-layer-2-073ba81a: rgba(0, 0, 0, .1);
+  --foundry-alias-color-background-component-alpha-layer-3-769e6e8c: rgba(0, 0, 0, .15);
+  --foundry-alias-color-background-component-solid-layer-0-b7827285: #fff;
+  --foundry-alias-color-background-component-solid-layer-1-2c797cac: #f5f5f5;
+  --foundry-alias-color-background-component-solid-layer-2-c4d465b2: #e4e4e4;
+  --foundry-alias-color-background-component-solid-layer-3-7142b4d2: #fff;
+  --foundry-alias-color-background-component-overlay-layer-0-795ebe6a: rgba(0, 0, 0, .9);
+  --foundry-alias-color-background-component-tooltip-layer-0-a3493d5f: #464646;
   --foundry-alias-color-text-standard-2d241861: #2d2d2d;
   --foundry-alias-color-text-disabled-6c1b5f99: #767676;
   --foundry-alias-color-text-subdued-d5502516: #585858;
@@ -4717,7 +4725,16 @@ html:has(div[data-loading]) {
   --foundry-alias-color-background-subtle-layer-0-3f1d20b0: #1a1a1a;
   --foundry-alias-color-background-subtle-layer-1-74c1dd2f: #141414;
   --foundry-alias-color-background-subtle-layer-2-b67c0bd1: #0e0e0e;
-  --foundry-alias-color-background-component-tooltip-791bcb22: #212121;
+  --foundry-alias-color-background-component-alpha-layer-0-418b021c: hsla(0, 0%, 100%, 0);
+  --foundry-alias-color-background-component-alpha-layer-1-a4cb5bce: hsla(0, 0%, 100%, .05);
+  --foundry-alias-color-background-component-alpha-layer-2-073ba81a: hsla(0, 0%, 100%, .1);
+  --foundry-alias-color-background-component-alpha-layer-3-769e6e8c: hsla(0, 0%, 100%, .15);
+  --foundry-alias-color-background-component-solid-layer-0-b7827285: #000;
+  --foundry-alias-color-background-component-solid-layer-1-2c797cac: #141414;
+  --foundry-alias-color-background-component-solid-layer-2-c4d465b2: #222;
+  --foundry-alias-color-background-component-solid-layer-3-7142b4d2: #3f3f3f;
+  --foundry-alias-color-background-component-overlay-layer-0-795ebe6a: rgba(0, 0, 0, .9);
+  --foundry-alias-color-background-component-tooltip-layer-0-a3493d5f: #212121;
   --foundry-alias-color-text-standard-2d241861: #cecece;
   --foundry-alias-color-text-disabled-6c1b5f99: #797979;
   --foundry-alias-color-text-subdued-d5502516: #989898;
@@ -5848,13 +5865,13 @@ body[data-show-more-content] ._1gigss82 {
 
 ._1gigss87 {
   flex-shrink: 0;
-  height: var(--foundry-global-spacing-dimensions-300-8149e8c1);
+  height: var(--_14bwmxxf);
   width: auto
 }
 
 ._1gigss88 {
   align-items: center;
-  column-gap: var(--foundry-global-spacing-dimensions-150-ea1fb93c);
+  column-gap: var(--_14bwmxx9);
   display: flex;
   grid-area: content;
   height: 100%;
@@ -5887,7 +5904,6 @@ body[data-show-more-content] ._1gigss82 {
 }
 
 ._1gigss8d {
-  display: inline-block;
   font-size: var(--foundry-global-spacing-dimensions-150-ea1fb93c);
   font-weight: 700;
   letter-spacing: .15em;
@@ -5904,17 +5920,21 @@ body[data-show-more-content] ._1gigss82 {
   text-align: center
 }
 
+._1gigss8g {
+  margin-left: var(--_14bwmxx5)
+}
+
 @media (min-width:0px) and (max-width:767.98px) {
   ._1gigss83 {
     gap: var(--_14bwmxx9)
   }
 
   ._1gigss87 {
-    height: var(--foundry-global-spacing-dimensions-350-1aeb7130)
+    height: var(--_14bwmxxe)
   }
 
   ._1gigss88 {
-    column-gap: var(--foundry-global-spacing-dimensions-175-6d1e42fb);
+    column-gap: var(--_14bwmxx8);
     max-width: 65vw
   }
 
@@ -5925,8 +5945,15 @@ body[data-show-more-content] ._1gigss82 {
   }
 
   ._1gigss8d {
+    display: flex;
+    flex-direction: column;
     font-size: var(--foundry-global-spacing-dimensions-175-6d1e42fb);
+    gap: 2px;
     letter-spacing: .1em
+  }
+
+  ._1gigss8g {
+    margin-left: 0
   }
 }
 
@@ -5938,7 +5965,7 @@ body[data-show-more-content] ._1gigss82 {
 
 @media (min-width:479px) and (max-width:767.98px) {
   ._1gigss87 {
-    height: var(--foundry-global-spacing-dimensions-250-1db78665)
+    height: var(--_14bwmxxa)
   }
 }
 
