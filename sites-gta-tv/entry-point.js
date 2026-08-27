@@ -1,7 +1,7 @@
 try {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {},
     t = (new e.Error).stack;
-  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f3f6fc34-d8bd-431b-b1be-698dba5be066", e._sentryDebugIdIdentifier = "sentry-dbid-f3f6fc34-d8bd-431b-b1be-698dba5be066")
+  t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "99580d6a-dcf5-4160-8aa6-863e2eb5389d", e._sentryDebugIdIdentifier = "sentry-dbid-99580d6a-dcf5-4160-8aa6-863e2eb5389d")
 } catch (e) {} {
   let e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : {};
   e._sentryModuleMetadata = e._sentryModuleMetadata || {}, e._sentryModuleMetadata[(new e.Error).stack] = Object.assign({}, e._sentryModuleMetadata[(new e.Error).stack], {
@@ -24,20 +24,20 @@ try {
     execute: function() {
       e((() => {
         var e = {
-          9863(e, t, r) {
-            (0, r(5039).w)(1)
+          5946(e, t, r) {
+            (0, r(9e3).w)(1)
           },
-          5039(e, t, r) {
-            const n = r(103).y;
+          9e3(e, t, r) {
+            const n = r(1364).y;
             t.w = function(e) {
               if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
               r.p = n(r.y.meta.url, e)
             }
           },
-          7732(e, t, r) {
-            r(9863)
+          4769(e, t, r) {
+            r(5946)
           },
-          103(e, t, r) {
+          1364(e, t, r) {
             t.y = function(e, t) {
               var r = document.createElement("a");
               r.href = e;
@@ -51,7 +51,7 @@ try {
           5819(e, t, r) {
             "use strict";
             const n = {
-                "./index": () => Promise.all([r.e(995), r.e(82), r.e(225), r.e(479)]).then(() => () => r(9479))
+                "./index": () => Promise.all([r.e(995), r.e(82), r.e(225), r.e(341)]).then(() => () => r(7341))
               },
               o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then(() => {
                 throw new Error('Module "' + e + '" does not exist in container.')
@@ -123,14 +123,14 @@ try {
                 get: t[n]
               })
         }, o.f = {}, o.e = e => Promise.all(Object.keys(o.f).reduce((t, r) => (o.f[r](e, t), t), [])), o.u = e => "js/" + {
-          162: "e7951aaddfa28bae032e1edf4560a628",
-          319: "4fce8486545c05e6680371f87c1763c7",
-          479: "2624ea89c35b85718c6b3b5b012fa0df",
-          532: "3ed2e66302b90dcb6bae04966599a92d",
-          581: "e2e41e928bb0b9a868409637a7068971",
-          602: "f39c60123cb16fe3783f90b1dcc5488a",
-          860: "44b0a0629c2a27b2ad6bd38cf65de549",
-          995: "706117400077244cf8ace82d54e008df"
+          162: "329e4f7e368c9e77a05c406eec29e749",
+          341: "69a363ed8271642cdf19efbd6af1ae37",
+          581: "b6c252411039c3df4859ef30fcbcb7b6",
+          817: "50f3877232be0ce0c1ec909809fd74bd",
+          830: "282345c52b47ec95019c4da88d9265df",
+          860: "492959fddf8693039dad4ca116c2589f",
+          944: "31970d6f7b8ae678253886161f5837b2",
+          995: "3237be3d47b43ea6207c601dd1c3890f"
         } [e] + ".js", o.miniCssF = e => "css/3131b747dcc23c6bbe32886966efd955.css", o.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -143,28 +143,28 @@ try {
             t = "@rockstargames/sites-gta-tv:";
           o.l = (r, n, a, s) => {
             if (e[r]) return void e[r].push(n);
-            let i, d;
+            let i, c;
             if (void 0 !== a) {
               const e = document.getElementsByTagName("script");
-              for (var f = 0; f < e.length; f++) {
-                const n = e[f];
+              for (var l = 0; l < e.length; l++) {
+                const n = e[l];
                 if (n.getAttribute("src") == r || n.getAttribute("data-webpack") == t + a) {
                   i = n;
                   break
                 }
               }
             }
-            i || (d = !0, i = document.createElement("script"), i.charset = "utf-8", o.nc && i.setAttribute("nonce", o.nc), i.setAttribute("data-webpack", t + a), i.src = r), e[r] = [n];
-            const l = (t, n) => {
-                i.onerror = i.onload = null, clearTimeout(c);
+            i || (c = !0, i = document.createElement("script"), i.charset = "utf-8", o.nc && i.setAttribute("nonce", o.nc), i.setAttribute("data-webpack", t + a), i.src = r), e[r] = [n];
+            const f = (t, n) => {
+                i.onerror = i.onload = null, clearTimeout(d);
                 const o = e[r];
                 if (delete e[r], i.parentNode?.removeChild(i), o?.forEach(e => e(n)), t) return t(n)
               },
-              c = setTimeout(l.bind(null, void 0, {
+              d = setTimeout(f.bind(null, void 0, {
                 type: "timeout",
                 target: i
               }), 12e4);
-            i.onerror = l.bind(null, i.onerror), i.onload = l.bind(null, i.onload), d && document.head.appendChild(i)
+            i.onerror = f.bind(null, i.onerror), i.onload = f.bind(null, i.onload), c && document.head.appendChild(i)
           }
         })(), o.r = e => {
           Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -174,7 +174,7 @@ try {
           })
         }, (() => {
           const e = {
-              479: [1879]
+              341: [1879]
             },
             t = {
               1879: ["default", "./index", 5136]
@@ -191,25 +191,25 @@ try {
                     throw t
                   }, a.p = 0
                 },
-                i = (e, t, r, o, i, d) => {
+                i = (e, t, r, o, i, c) => {
                   try {
-                    const f = e(t, r);
-                    if (!f?.then) return i(f, o, d); {
-                      const e = f.then(e => i(e, o), s);
-                      if (!d) return e;
+                    const l = e(t, r);
+                    if (!l?.then) return i(l, o, c); {
+                      const e = l.then(e => i(e, o), s);
+                      if (!c) return e;
                       n.push(a.p = e)
                     }
                   } catch (e) {
                     s(e)
                   }
                 },
-                d = (e, t, n) => i(t.get, a[1], r, 0, f, n),
-                f = t => {
+                c = (e, t, n) => i(t.get, a[1], r, 0, l, n),
+                l = t => {
                   a.p = 1, o.m[e] = e => {
                     e.exports = t()
                   }
                 };
-              i(o, a[2], 0, 0, (e, t, r) => e ? i(o.I, a[0], 0, e, d, r) : s(), 1)
+              i(o, a[2], 0, 0, (e, t, r) => e ? i(o.I, a[0], 0, e, c, r) : s(), 1)
             })
           }
         })(), (() => {
@@ -224,7 +224,7 @@ try {
             o.o(o.S, r) || (o.S[r] = {});
             const s = o.S[r],
               i = "@rockstargames/sites-gta-tv",
-              d = (e, t, r, n) => {
+              c = (e, t, r, n) => {
                 const o = s[e] = s[e] || {},
                   a = o[t];
                 (!a || !a.loaded && (!n != !a.eager ? n : i > a.from)) && (o[t] = {
@@ -233,8 +233,8 @@ try {
                   eager: !!n
                 })
               },
-              f = [];
-            return "default" === r && (d("@rsgweb/utils", "0.0.0-development", () => Promise.all([o.e(319), o.e(995), o.e(82), o.e(532), o.e(225), o.e(602)]).then(() => () => o(5532))), d("react-dom", "18.3.1", () => Promise.all([o.e(162), o.e(82)]).then(() => () => o(162))), d("react-router-dom", "6.30.4", () => Promise.all([o.e(860), o.e(82), o.e(17)]).then(() => () => o(9860))), d("react", "18.3.1", () => o.e(581).then(() => () => o(2581))), (e => {
+              l = [];
+            return "default" === r && (c("@rsgweb/utils", "0.0.0-development", () => Promise.all([o.e(944), o.e(995), o.e(82), o.e(830), o.e(225), o.e(817)]).then(() => () => o(9830))), c("react-dom", "18.3.1", () => Promise.all([o.e(162), o.e(82)]).then(() => () => o(162))), c("react-router-dom", "6.30.4", () => Promise.all([o.e(860), o.e(82), o.e(17)]).then(() => () => o(9860))), c("react", "18.3.1", () => o.e(581).then(() => () => o(2581))), (e => {
               const t = e => {
                 return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                 var t
@@ -243,13 +243,13 @@ try {
                 const a = o(e);
                 if (!a) return;
                 const s = e => e && e.init && e.init(o.S[r], n);
-                if (a.then) return f.push(a.then(s, t));
+                if (a.then) return l.push(a.then(s, t));
                 const i = s(a);
-                if (i?.then) return f.push(i.catch(t))
+                if (i?.then) return l.push(i.catch(t))
               } catch (e) {
                 t(e)
               }
-            })(5136)), f.length ? e[r] = Promise.all(f).then(() => e[r] = 1) : e[r] = 1
+            })(5136)), l.length ? e[r] = Promise.all(l).then(() => e[r] = 1) : e[r] = 1
           }
         })(), (() => {
           let e;
@@ -283,11 +283,11 @@ try {
               var s = [];
               for (a = 1; a < e.length; a++) {
                 var i = e[a];
-                s.push(0 === i ? "not(" + d() + ")" : 1 === i ? "(" + d() + " || " + d() + ")" : 2 === i ? s.pop() + " " + s.pop() : t(i))
+                s.push(0 === i ? "not(" + c() + ")" : 1 === i ? "(" + c() + " || " + c() + ")" : 2 === i ? s.pop() + " " + s.pop() : t(i))
               }
-              return d();
+              return c();
 
-              function d() {
+              function c() {
                 return s.pop().replace(/^\((.+)\)$/, "$1")
               }
             },
@@ -297,26 +297,26 @@ try {
                 var o = t[0],
                   a = o < 0;
                 a && (o = -o - 1);
-                for (var s = 0, i = 1, d = !0;; i++, s++) {
-                  var f, l, c = i < t.length ? (typeof t[i])[0] : "";
-                  if (s >= n.length || "o" == (l = (typeof(f = n[s]))[0])) return !d || ("u" == c ? i > o && !a : "" == c != a);
-                  if ("u" == l) {
-                    if (!d || "u" != c) return !1
-                  } else if (d)
-                    if (c == l)
+                for (var s = 0, i = 1, c = !0;; i++, s++) {
+                  var l, f, d = i < t.length ? (typeof t[i])[0] : "";
+                  if (s >= n.length || "o" == (f = (typeof(l = n[s]))[0])) return !c || ("u" == d ? i > o && !a : "" == d != a);
+                  if ("u" == f) {
+                    if (!c || "u" != d) return !1
+                  } else if (c)
+                    if (d == f)
                       if (i <= o) {
-                        if (f != t[i]) return !1
+                        if (l != t[i]) return !1
                       } else {
-                        if (a ? f > t[i] : f < t[i]) return !1;
-                        f != t[i] && (d = !1)
+                        if (a ? l > t[i] : l < t[i]) return !1;
+                        l != t[i] && (c = !1)
                       }
-                  else if ("s" != c && "n" != c) {
+                  else if ("s" != d && "n" != d) {
                     if (a || i <= o) return !1;
-                    d = !1, i--
+                    c = !1, i--
                   } else {
-                    if (i <= o || l < c != a) return !1;
-                    d = !1
-                  } else "s" != c && "n" != c && (d = !1, i--)
+                    if (i <= o || f < d != a) return !1;
+                    c = !1
+                  } else "s" != d && "n" != d && (c = !1, i--)
                 }
               }
               var u = [],
@@ -350,43 +350,43 @@ try {
             s = (e => function(t, r, n, a, s) {
               const i = o.I(t);
               return i?.then && !n ? i.then(e.bind(e, t, o.S[t], r, !1, a, s)) : e(t, o.S[t], r, n, a, s)
-            })((e, s, i, d, f, l) => {
-              if (!((e, t) => e && o.o(e, t))(s, i)) return a(e, i, l);
-              const c = n(s, i, d);
-              return r(f, c) || (p = ((e, r, n, o) => "Unsatisfied version " + n + " from " + (n && e[r][n].from) + " of shared singleton module " + r + " (required " + t(o) + ")")(s, i, c, f), "undefined" != typeof console && console.warn && console.warn(p)), (u = s[i][c]).loaded = 1, u.get();
+            })((e, s, i, c, l, f) => {
+              if (!((e, t) => e && o.o(e, t))(s, i)) return a(e, i, f);
+              const d = n(s, i, c);
+              return r(l, d) || (p = ((e, r, n, o) => "Unsatisfied version " + n + " from " + (n && e[r][n].from) + " of shared singleton module " + r + " (required " + t(o) + ")")(s, i, d, l), "undefined" != typeof console && console.warn && console.warn(p)), (u = s[i][d]).loaded = 1, u.get();
               var u, p
             }),
             i = {},
-            d = {
+            c = {
               3082: () => s("default", "react", !1, [0], () => o.e(581).then(() => () => o(2581))),
               9225: () => s("default", "react-router-dom", !1, [0], () => Promise.all([o.e(860), o.e(17)]).then(() => () => o(9860))),
-              3331: () => s("default", "@rsgweb/utils", !1, [0], () => Promise.all([o.e(319), o.e(532)]).then(() => () => o(5532))),
+              3331: () => s("default", "@rsgweb/utils", !1, [0], () => Promise.all([o.e(944), o.e(830)]).then(() => () => o(9830))),
               4017: () => s("default", "react-dom", !1, [1, 18, 2, 0], () => o.e(162).then(() => () => o(162)))
             },
-            f = {
+            l = {
               17: [4017],
               82: [3082],
               225: [9225],
-              479: [3331]
+              341: [3331]
             },
-            l = {};
+            f = {};
           o.f.consumes = (e, t) => {
-            o.o(f, e) && f[e].forEach(e => {
+            o.o(l, e) && l[e].forEach(e => {
               if (o.o(i, e)) return t.push(i[e]);
-              if (!l[e]) {
+              if (!f[e]) {
                 const r = t => {
                   i[e] = 0, o.m[e] = r => {
                     delete o.c[e], r.exports = t()
                   }
                 };
-                l[e] = !0;
+                f[e] = !0;
                 const n = t => {
                   delete i[e], o.m[e] = r => {
                     throw delete o.c[e], t
                   }
                 };
                 try {
-                  const o = d[e]();
+                  const o = c[e]();
                   o.then ? t.push(i[e] = o.then(r).catch(n)) : r(o)
                 } catch (e) {
                   n(e)
@@ -401,7 +401,7 @@ try {
             };
             o.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                479: 1
+                341: 1
               } [t] && r.push(e[t] = (e => new Promise((t, r) => {
                 var n = o.miniCssF(e),
                   a = o.p + n;
@@ -423,8 +423,8 @@ try {
                     else {
                       var o = r && r.type,
                         i = r && r.target && r.target.href || t,
-                        d = new Error("Loading CSS chunk " + e + " failed.\n(" + o + ": " + i + ")");
-                      d.name = "ChunkLoadError", d.code = "CSS_CHUNK_LOAD_FAILED", d.type = o, d.request = i, s.parentNode && s.parentNode.removeChild(s), a(d)
+                        c = new Error("Loading CSS chunk " + e + " failed.\n(" + o + ": " + i + ")");
+                      c.name = "ChunkLoadError", c.code = "CSS_CHUNK_LOAD_FAILED", c.type = o, c.request = i, s.parentNode && s.parentNode.removeChild(s), a(c)
                     }
                   }, s.href = t, document.head.appendChild(s)
                 })(e, a, 0, t, r)
@@ -449,28 +449,28 @@ try {
               r.push(n[2] = a);
               const s = o.p + o.u(t),
                 i = new Error,
-                d = r => {
+                c = r => {
                   if (o.o(e, t) && (n = e[t], 0 !== n && (e[t] = void 0), n)) {
                     const e = r && ("load" === r.type ? "missing" : r.type),
                       o = r && r.target && r.target.src;
-                    i.message = "Loading chunk " + t + " failed.\n(" + e + ": " + o + ")", i.name = "ChunkLoadError", i.type = e, i.request = o, n[1](i)
+                    i.message = "Loading chunk " + t + " failed.\n(" + e + ": " + o + ")", i.name = "ChunkLoadError", i.type = e, i.request = o, i.event = r, n[1](i)
                   }
                 };
-              o.l(s, d, "chunk-" + t, t)
+              o.l(s, c, "chunk-" + t, t)
             }
           };
           const t = (t, r) => {
               let [n, a, s] = r;
-              var i, d, f = 0;
+              var i, c, l = 0;
               if (n.some(t => 0 !== e[t])) {
                 for (i in a) o.o(a, i) && (o.m[i] = a[i]);
                 s && s(o)
               }
-              for (t && t(r); f < n.length; f++) d = n[f], o.o(e, d) && e[d] && e[d][0](), e[d] = 0
+              for (t && t(r); l < n.length; l++) c = n[l], o.o(e, c) && e[c] && e[c][0](), e[c] = 0
             },
             r = self.webpackChunk_rockstargames_sites_gta_tv = self.webpackChunk_rockstargames_sites_gta_tv || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), o(7732), o(5819)
+        })(), o(4769), o(5819)
       })())
     }
   }

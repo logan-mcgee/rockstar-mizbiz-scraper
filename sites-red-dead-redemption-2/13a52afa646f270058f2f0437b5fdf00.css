@@ -1,0 +1,113 @@
+.riuvlz0 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+  flex: 1;
+}
+
+.riuvlz1 {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-300-2f9fe0c5);
+  max-width: var(--foundry-global-spacing-dimensions-4000-981888ae);
+  width: 100%;
+}
+
+.riuvlz2 {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--foundry-global-color-black-static-85-3cb71ba6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.riuvlz3 {
+  background: lightgray center / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.riuvlz4 {
+  text-align: center;
+}
+
+.riuvlz5 {
+  display: flex;
+  gap: var(--foundry-global-spacing-gap-100-05387de1);
+  width: 100%;
+}
+
+.riuvlz6 {
+  grid-template-columns: unset;
+}
+
+.riuvlz8 {
+  width: var(--foundry-global-spacing-dimensions-3750-18293754);
+}
+
+.riuvlz9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--foundry-global-spacing-gap-150-7f268a13);
+  position: relative;
+}
+
+.riuvlza {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--foundry-global-spacing-gap-150-7f268a13);
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  width: var(--foundry-global-spacing-dimensions-3500-832dd3e8);
+  position: absolute;
+  top: 100%;
+  margin-top: var(--foundry-global-spacing-gap-150-7f268a13);
+}
+
+.riuvlza[aria-hidden="false"] {
+  opacity: 1;
+}
+
+.riuvlzb {
+  color: var(--foundry-alias-color-icon-danger-615a4836);
+  min-width: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  margin-top: var(--foundry-global-spacing-dimensions-33-9d3ffc33);
+}
+
+.riuvlzc {
+  color: var(--foundry-alias-color-text-danger-bcdfc5ff);
+}
+
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .riuvlz1 {
+    gap: var(--foundry-global-spacing-gap-200-7d922174);
+  }
+
+  .riuvlz5 {
+    max-width: var(--foundry-global-spacing-dimensions-3750-18293754);
+  }
+
+  .riuvlz7 {
+    height: var(--foundry-global-spacing-dimensions-200-2fbf5420);
+  }
+}
+
+/*# sourceMappingURL=13a52afa646f270058f2f0437b5fdf00.css.map*/
